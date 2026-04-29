@@ -3,13 +3,18 @@
   "name": "J-Learn — Pack d'illustrations",
   "description": "Illustrations pédagogiques pour J-Learn (manuels scolaires Madagascar).",
   "images": [
-    { "id": "peau_coupe",       "url": "/peau_coupe.png",       "type": "image/png" },
-    { "id": "os_coupe",         "url": "/os_coupe.png",         "type": "image/png" },
-    { "id": "squelette_humain", "url": "/squelette_humain.png", "type": "image/png" },
-    { "id": "bras_muscles",     "url": "/bras_muscles.png",     "type": "image/png" },
-    { "id": "dents",            "url": "/dents.png",            "type": "image/png" },
-    { "id": "cycle_eau",        "url": "/cycle_eau.png",        "type": "image/png" },
-    { "id": "plante_organes",   "url": "/plante_organes.png",   "type": "image/png" },
-    { "id": "fleur_coupe",      "url": "/fleur_coupe.png",      "type": "image/png" }
+    { "id": "peau_coupe",          "url": "/peau_coupe.png",          "type": "image/png" },
+    { "id": "os_coupe",            "url": "/os_coupe.png",            "type": "image/png" },
+    { "id": "squelette_humain",    "url": "/squelette_humain.png",    "type": "image/png" },
+    { "id": "bras_muscles",        "url": "/bras_muscles.png",        "type": "image/png" },
+    { "id": "dents",               "url": "/dents.png",               "type": "image/png" },
+    { "id": "cycle_eau",           "url": "/cycle_eau.png",           "type": "image/png" },
+    { "id": "plante_organes",      "url": "/plante_organes.png",      "type": "image/png" },
+    { "id": "fleur_coupe",         "url": "/fleur_coupe.png",         "type": "image/png" },
+    { "id": "criquet_morphologie", "url": "/criquet_morphologie.png", "type": "image/png" },
+    { "id": "rat_champ",           "url": "/rat_champ.png",           "type": "image/png" },
+    { "id": "paludisme_cycle",     "url": "/paludisme_cycle.png",     "type": "image/png" },
+    { "id": "falaise_strates",     "url": "/falaise_strates.png",     "type": "image/png" },
+    { "id": "pollinisation_cycle", "url": "/pollinisation_cycle.png", "type": "image/png" }
   ]
 }
