@@ -92,3 +92,37 @@ Aucun problème détecté sur : structure I/II/III, sectPr/namespaces, sommaire 
 ---
 
 *Souhaitez-vous que je corrige l'erreur de la Séance 47 (priorité 1) et/ou que j'étoffe les exercices à moins de 4 items (priorité 2) ? Je n'appliquerai aucune modification sans votre feu vert, conformément à la règle critique n°1 du skill.*
+
+---
+
+## 9. Corrections appliquées (mise à jour)
+
+Suite à votre validation, les 4 corrections suivantes ont été appliquées dans `work/manuel_v2.docx` (copie de travail dérivée du document original, celui-ci restant inchangé à la racine du dépôt) :
+
+### Fix #1 — Séance 47 : réponse corrigée ✅
+La cellule "corrigé" de l'étape 6. Application (question *"3 semaines = ? jours"*) a été corrigée de **"48 heures"** vers **"21 jours (3 × 7 = 21 jours)"**, pour concorder avec le corrigé déjà correct de la section EXERCICES — Séance 47.
+
+### Fix #2 — Exercices à moins de 4 items étoffés ✅
+Les 74 exercices identifiés (QCM à 1 item, Vrai/Faux à 2 items) ont été complétés à 4 items minimum, dans les deux endroits où ils apparaissent (tableau de déroulement de la séance concernée **et** section récapitulative "EXERCICES — Séance N" correspondante), afin de garder les deux copies cohérentes entre elles. Une vérification automatisée post-correction confirme qu'il ne reste **aucun** groupe d'exercice à moins de 4 items dans le document.
+
+### Fix #3 — Fractions en équations natives Word (OMML) ✅
+Les **485 fractions numériques en texte brut** (ex. "8/11", "3/4") ont été converties en équations mathématiques natives Word (`m:oMath` / `m:f`, avec numérateur et dénominateur), conformément à `mathematiques.md`. Ces équations restent éditables nativement dans Word (contrairement à une image).
+
+Portée volontairement exclue de cette conversion (laissée en texte brut, car non-fractionnaire) :
+- les formules littérales avec variables (ex. *"(A / B) × (C / D) = (A × C) / (B × D)"*) — ce sont des formules générales de référence, pas des fractions numériques ;
+- les items à trous du type "2/6 = **?**/24" — le "?" n'étant pas un nombre, la partie inconnue reste un espace réservé textuel.
+
+### Fix #4 — Division "en potence" (Séance 8 uniquement) ✅
+Sur demande explicite, la mise en page verticale française de la division ("potence" : trait vertical séparant dividende/diviseur, trait horizontal sous le diviseur, quotient sous le diviseur) a été appliquée **uniquement à la Séance 8** (la leçon consacrée à la division), et uniquement à l'exemple travaillé du corps de leçon **"3 696 ÷ 6 = 616"** (partie "a. Exemple posé").
+
+Réalisation : un **tableau Word natif 2×2 avec bordures** (et non une image) simule la potence — cellule dividende (haut-gauche), cellule diviseur avec bordure gauche = trait vertical (haut-droite), cellule vide (bas-gauche), cellule quotient avec bordures haut+gauche = trait horizontal + vertical (bas-droite). Une phrase d'introduction et une phrase de résultat encadrent le tableau pour rester lisible même sans rendu visuel des bordures.
+
+Éléments **laissés inchangés**, par choix de portée assumé :
+- les 2 images déjà présentes dans la Séance 8 (`image26.png` = exemple travaillé "455 ÷ 7 = 65" déjà en potence dessinée, `image27.png` = modèle vierge "104 ÷ 2 = ?" à compléter par l'élève) — elles couvrent déjà visuellement le besoin, aucune duplication nécessaire ;
+- les exercices d'application/évaluation de la Séance 8 restés sous forme "a ÷ b = ?" en texte — ces cellules de tableau sont trop étroites (~2,5-3,5 cm) pour accueillir lisiblement un tableau de potence imbriqué ;
+- les autres occurrences de "÷" ailleurs dans le document (hors Séance 8) — hors du périmètre explicitement demandé.
+
+### Vérifications effectuées
+Toutes les corrections ont été vérifiées **structurellement** (via inspection OOXML/`python-docx`, comptage de paragraphes/tableaux avant/après, recherche ciblée des textes attendus) : aucune régression croisée détectée entre les 4 corrections. Aucun outil de rendu visuel (LibreOffice/Word) n'était disponible dans cet environnement pour une vérification visuelle finale — il est recommandé d'ouvrir `work/manuel_v2.docx` dans Word pour confirmer visuellement le rendu des équations et du tableau de potence avant diffusion finale.
+
+Une copie de sauvegarde `work/manuel_v2_backup_before_fix3.docx` (état après Fix #1/#2/#4, avant Fix #3) a été conservée par précaution.
