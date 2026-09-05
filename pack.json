@@ -402,6 +402,186 @@
       "id": "calc8_temps_gare",
       "url": "/calc8_temps_gare.jpg",
       "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s01_port_tamatave",
+      "url": "/hist3_scene_s01_port_tamatave.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s02_colonne_1895",
+      "url": "/hist3_scene_s02_colonne_1895.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s03_gouverneur_general",
+      "url": "/hist3_scene_s03_gouverneur_general.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s04_chef_canton",
+      "url": "/hist3_scene_s04_chef_canton.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s05_pacte_colonial",
+      "url": "/hist3_scene_s05_pacte_colonial.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s06_prestations_route",
+      "url": "/hist3_scene_s06_prestations_route.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s07_plantation_chemin_fer",
+      "url": "/hist3_scene_s07_plantation_chemin_fer.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s08_menalamba",
+      "url": "/hist3_scene_s08_menalamba.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s09_moramanga_1947",
+      "url": "/hist3_scene_s09_moramanga_1947.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s10_independance_1960",
+      "url": "/hist3_scene_s10_independance_1960.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s11_versailles_1919",
+      "url": "/hist3_scene_s11_versailles_1919.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s12_petrograd_1917",
+      "url": "/hist3_scene_s12_petrograd_1917.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s13_gardes_rouges",
+      "url": "/hist3_scene_s13_gardes_rouges.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s14_kolkhoze_plan",
+      "url": "/hist3_scene_s14_kolkhoze_plan.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s15_wall_street_1929",
+      "url": "/hist3_scene_s15_wall_street_1929.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s16_new_deal",
+      "url": "/hist3_scene_s16_new_deal.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s17_marche_rome",
+      "url": "/hist3_scene_s17_marche_rome.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s18_propagande_nazie",
+      "url": "/hist3_scene_s18_propagande_nazie.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s19_guerre_eclair",
+      "url": "/hist3_scene_s19_guerre_eclair.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s20_ruines_1945",
+      "url": "/hist3_scene_s20_ruines_1945.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s21_berlin_1948",
+      "url": "/hist3_scene_s21_berlin_1948.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s22_mur_berlin_1989",
+      "url": "/hist3_scene_s22_mur_berlin_1989.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s23_bandoeng_1955",
+      "url": "/hist3_scene_s23_bandoeng_1955.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s24_mondialisation",
+      "url": "/hist3_scene_s24_mondialisation.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s25_13_mai_1972",
+      "url": "/hist3_scene_s25_13_mai_1972.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_gallieni",
+      "url": "/hist3_photo_gallieni.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_hitler_1937",
+      "url": "/hist3_photo_hitler_1937.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_kennedy_khrouchtchev_1961",
+      "url": "/hist3_photo_kennedy_khrouchtchev_1961.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_lenine_1919",
+      "url": "/hist3_photo_lenine_1919.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_mussolini",
+      "url": "/hist3_photo_mussolini.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_nasser_nehru_bandung_1955",
+      "url": "/hist3_photo_nasser_nehru_bandung_1955.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_ranavalona3",
+      "url": "/hist3_photo_ranavalona3.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_roosevelt_1933",
+      "url": "/hist3_photo_roosevelt_1933.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_staline",
+      "url": "/hist3_photo_staline.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_tsiranana_1960",
+      "url": "/hist3_photo_tsiranana_1960.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_yalta_1945",
+      "url": "/hist3_photo_yalta_1945.jpg",
+      "type": "image/jpeg"
     }
   ]
 }
