@@ -1,0 +1,16 @@
+{
+  "name": "manuel-calcul-8e",
+  "version": "2.0.0",
+  "description": "Générateur du manuel Calcul 8e J-Learn (V2) — fiches, leçons, exercices corrigés",
+  "scripts": {
+    "figures": "node src/figures.js",
+    "build": "node src/assemble.js",
+    "verify": "node src/verify.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.6.0",
+    "docx": "^9.7.1",
+    "sharp": "^0.35.4"
+  }
+}

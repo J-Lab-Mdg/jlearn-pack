@@ -3,18 +3,585 @@
   "name": "J-Learn — Pack d'illustrations",
   "description": "Illustrations pédagogiques pour J-Learn (manuels scolaires Madagascar).",
   "images": [
-    { "id": "peau_coupe",          "url": "/peau_coupe.png",          "type": "image/png" },
-    { "id": "os_coupe",            "url": "/os_coupe.png",            "type": "image/png" },
-    { "id": "squelette_humain",    "url": "/squelette_humain.png",    "type": "image/png" },
-    { "id": "bras_muscles",        "url": "/bras_muscles.png",        "type": "image/png" },
-    { "id": "dents",               "url": "/dents.png",               "type": "image/png" },
-    { "id": "cycle_eau",           "url": "/cycle_eau.png",           "type": "image/png" },
-    { "id": "plante_organes",      "url": "/plante_organes.png",      "type": "image/png" },
-    { "id": "fleur_coupe",         "url": "/fleur_coupe.png",         "type": "image/png" },
-    { "id": "criquet_morphologie", "url": "/criquet_morphologie.png", "type": "image/png" },
-    { "id": "rat_champ",           "url": "/rat_champ.png",           "type": "image/png" },
-    { "id": "paludisme_cycle",     "url": "/paludisme_cycle.png",     "type": "image/png" },
-    { "id": "falaise_strates",     "url": "/falaise_strates.png",     "type": "image/png" },
-    { "id": "pollinisation_cycle", "url": "/pollinisation_cycle.png", "type": "image/png" }
+    {
+      "id": "geo3_carte_regions_naturelles",
+      "url": "/geo3_carte_regions_naturelles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_population_evolution",
+      "url": "/geo3_population_evolution.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_structure_age",
+      "url": "/geo3_structure_age.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_secteurs_economie",
+      "url": "/geo3_secteurs_economie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "peau_coupe",
+      "url": "/peau_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "os_coupe",
+      "url": "/os_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "squelette_humain",
+      "url": "/squelette_humain.png",
+      "type": "image/png"
+    },
+    {
+      "id": "bras_muscles",
+      "url": "/bras_muscles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "dents",
+      "url": "/dents.png",
+      "type": "image/png"
+    },
+    {
+      "id": "cycle_eau",
+      "url": "/cycle_eau.png",
+      "type": "image/png"
+    },
+    {
+      "id": "plante_organes",
+      "url": "/plante_organes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "fleur_coupe",
+      "url": "/fleur_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "criquet_morphologie",
+      "url": "/criquet_morphologie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "rat_champ",
+      "url": "/rat_champ.png",
+      "type": "image/png"
+    },
+    {
+      "id": "paludisme_cycle",
+      "url": "/paludisme_cycle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "falaise_strates",
+      "url": "/falaise_strates.png",
+      "type": "image/png"
+    },
+    {
+      "id": "pollinisation_cycle",
+      "url": "/pollinisation_cycle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_carte_cultures",
+      "url": "/geo3_carte_cultures.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_carte_elevage_peche",
+      "url": "/geo3_carte_elevage_peche.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_carte_industries",
+      "url": "/geo3_carte_industries.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_carte_transports",
+      "url": "/geo3_carte_transports.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_commerce_exterieur",
+      "url": "/geo3_commerce_exterieur.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_energie_madagascar",
+      "url": "/geo3_energie_madagascar.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_foret_recul",
+      "url": "/geo3_foret_recul.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_riz_production_importation",
+      "url": "/geo3_riz_production_importation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_tourisme_arrivees",
+      "url": "/geo3_tourisme_arrivees.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_blocs_guerre_froide",
+      "url": "/hist3_blocs_guerre_froide.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_carte_1947",
+      "url": "/hist3_carte_1947.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_carte_2gm",
+      "url": "/hist3_carte_2gm.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_carte_conquete",
+      "url": "/hist3_carte_conquete.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_carte_europe_1919",
+      "url": "/hist3_carte_europe_1919.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_chomage_nsdap",
+      "url": "/hist3_chomage_nsdap.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_crise_1929",
+      "url": "/hist3_crise_1929.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_decolonisation",
+      "url": "/hist3_decolonisation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_frise_colonisation",
+      "url": "/hist3_frise_colonisation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_frise_madagascar_1960_2025",
+      "url": "/hist3_frise_madagascar_1960_2025.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_frise_urss",
+      "url": "/hist3_frise_urss.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_organigramme_colonial",
+      "url": "/hist3_organigramme_colonial.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_cube_caisses",
+      "url": "/calc8_cube_caisses.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_division_cantine",
+      "url": "/calc8_division_cantine.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_echanges_ville",
+      "url": "/calc8_echanges_ville.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_epargne_famille",
+      "url": "/calc8_epargne_famille.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_exos_nombres",
+      "url": "/calc8_exos_nombres.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_fig_aire_carreaux",
+      "url": "/calc8_fig_aire_carreaux.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_angles",
+      "url": "/calc8_fig_angles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_balance_roberval",
+      "url": "/calc8_fig_balance_roberval.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_calendrier",
+      "url": "/calc8_fig_calendrier.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_carre",
+      "url": "/calc8_fig_carre.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_cercle",
+      "url": "/calc8_fig_cercle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_cube",
+      "url": "/calc8_fig_cube.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_cube_petit",
+      "url": "/calc8_fig_cube_petit.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droite_10000",
+      "url": "/calc8_fig_droite_10000.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droite_1000000",
+      "url": "/calc8_fig_droite_1000000.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droite_decimaux",
+      "url": "/calc8_fig_droite_decimaux.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droite_fractions",
+      "url": "/calc8_fig_droite_fractions.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droites",
+      "url": "/calc8_fig_droites.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_fraction_disque",
+      "url": "/calc8_fig_fraction_disque.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_hectare",
+      "url": "/calc8_fig_hectare.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge",
+      "url": "/calc8_fig_horloge.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_2_37",
+      "url": "/calc8_fig_horloge_2_37.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_3_06",
+      "url": "/calc8_fig_horloge_3_06.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_4_28",
+      "url": "/calc8_fig_horloge_4_28.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_5_08",
+      "url": "/calc8_fig_horloge_5_08.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_7_07",
+      "url": "/calc8_fig_horloge_7_07.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_litre_dm3",
+      "url": "/calc8_fig_litre_dm3.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_losange",
+      "url": "/calc8_fig_losange.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_metre_ruban",
+      "url": "/calc8_fig_metre_ruban.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_paralleles",
+      "url": "/calc8_fig_paralleles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_parallelogramme",
+      "url": "/calc8_fig_parallelogramme.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_pave",
+      "url": "/calc8_fig_pave.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_pave_petit",
+      "url": "/calc8_fig_pave_petit.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_rapporteur",
+      "url": "/calc8_fig_rapporteur.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_recipient",
+      "url": "/calc8_fig_recipient.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_rectangle",
+      "url": "/calc8_fig_rectangle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_regle",
+      "url": "/calc8_fig_regle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_trapeze",
+      "url": "/calc8_fig_trapeze.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_triangle",
+      "url": "/calc8_fig_triangle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_proportionnalite_legumes",
+      "url": "/calc8_proportionnalite_legumes.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_soustraction_marche",
+      "url": "/calc8_soustraction_marche.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_temps_gare",
+      "url": "/calc8_temps_gare.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s01_port_tamatave",
+      "url": "/hist3_scene_s01_port_tamatave.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s02_colonne_1895",
+      "url": "/hist3_scene_s02_colonne_1895.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s03_gouverneur_general",
+      "url": "/hist3_scene_s03_gouverneur_general.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s04_chef_canton",
+      "url": "/hist3_scene_s04_chef_canton.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s05_pacte_colonial",
+      "url": "/hist3_scene_s05_pacte_colonial.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s06_prestations_route",
+      "url": "/hist3_scene_s06_prestations_route.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s07_plantation_chemin_fer",
+      "url": "/hist3_scene_s07_plantation_chemin_fer.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s08_menalamba",
+      "url": "/hist3_scene_s08_menalamba.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s09_moramanga_1947",
+      "url": "/hist3_scene_s09_moramanga_1947.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s10_independance_1960",
+      "url": "/hist3_scene_s10_independance_1960.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s11_versailles_1919",
+      "url": "/hist3_scene_s11_versailles_1919.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s12_petrograd_1917",
+      "url": "/hist3_scene_s12_petrograd_1917.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s13_gardes_rouges",
+      "url": "/hist3_scene_s13_gardes_rouges.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s14_kolkhoze_plan",
+      "url": "/hist3_scene_s14_kolkhoze_plan.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s15_wall_street_1929",
+      "url": "/hist3_scene_s15_wall_street_1929.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s16_new_deal",
+      "url": "/hist3_scene_s16_new_deal.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s17_marche_rome",
+      "url": "/hist3_scene_s17_marche_rome.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s18_propagande_nazie",
+      "url": "/hist3_scene_s18_propagande_nazie.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s19_guerre_eclair",
+      "url": "/hist3_scene_s19_guerre_eclair.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s20_ruines_1945",
+      "url": "/hist3_scene_s20_ruines_1945.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s21_berlin_1948",
+      "url": "/hist3_scene_s21_berlin_1948.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s22_mur_berlin_1989",
+      "url": "/hist3_scene_s22_mur_berlin_1989.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s23_bandoeng_1955",
+      "url": "/hist3_scene_s23_bandoeng_1955.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s24_mondialisation",
+      "url": "/hist3_scene_s24_mondialisation.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_scene_s25_13_mai_1972",
+      "url": "/hist3_scene_s25_13_mai_1972.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_gallieni",
+      "url": "/hist3_photo_gallieni.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_hitler_1937",
+      "url": "/hist3_photo_hitler_1937.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_kennedy_khrouchtchev_1961",
+      "url": "/hist3_photo_kennedy_khrouchtchev_1961.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_lenine_1919",
+      "url": "/hist3_photo_lenine_1919.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_mussolini",
+      "url": "/hist3_photo_mussolini.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_nasser_nehru_bandung_1955",
+      "url": "/hist3_photo_nasser_nehru_bandung_1955.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_ranavalona3",
+      "url": "/hist3_photo_ranavalona3.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_roosevelt_1933",
+      "url": "/hist3_photo_roosevelt_1933.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_staline",
+      "url": "/hist3_photo_staline.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_tsiranana_1960",
+      "url": "/hist3_photo_tsiranana_1960.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "hist3_photo_yalta_1945",
+      "url": "/hist3_photo_yalta_1945.jpg",
+      "type": "image/jpeg"
+    }
   ]
 }
