@@ -10,10 +10,15 @@ const ASSETS = path.join(__dirname, "..", "assets");
 const OUT = path.join(__dirname, "..", "output");
 fs.mkdirSync(OUT, { recursive: true });
 
-const UNITES = [
+const ALL_UNITES = [
   { num: 1, titre: "Les conditions et les caractères de l'économie malagasy", semaines: 6, data: require("./data-unite1") },
-  // Unités 2 à 4 : à venir (relais suivants)
-];
+  { num: 2, titre: "Les activités agricoles", semaines: 8, data: safeRequire("./data-unite2") },
+  { num: 3, titre: "Les activités industrielles", semaines: 6, data: safeRequire("./data-unite3") },
+  { num: 4, titre: "Les transports, le commerce et le tourisme", semaines: 6, data: safeRequire("./data-unite4") },
+].filter((u) => u.data);
+const ONLY_U = process.env.ONLY ? Number(String(process.env.ONLY).replace(/\D/g, "")) : null;
+const UNITES = ONLY_U ? ALL_UNITES.filter((u) => u.num === ONLY_U) : ALL_UNITES;
+function safeRequire(m) { try { return require(m); } catch (e) { if (e.code === "MODULE_NOT_FOUND" && String(e.message).includes(m.slice(2))) return null; throw e; } }
 const TOTAL_PREVU = 26;
 const seances = UNITES.flatMap((u) => u.data);
 const VERSION = process.env.VERSION || "V2";
@@ -31,7 +36,7 @@ function couverture() {
     B.empty(200),
     B.titled(`Programme officiel malgache — 4 unités thématiques, ${TOTAL_PREVU} séances`, { size: 22, bold: false }),
     B.empty(1200),
-    B.titled(`Version ${VERSION} — ${ONLY ? "Unité 1" : "édition complète"}`, { size: 22, bold: false }),
+    B.titled(`Version ${VERSION} — ${ONLY ? `Unité ${ONLY_U}` : "édition complète"}`, { size: 22, bold: false }),
     B.titled("[Logo et en-tête institutionnel : à insérer par l'éditeur]", { size: 18, bold: false, color: "808080" }),
   ];
 }
@@ -91,7 +96,7 @@ function tableauBord() {
     B.titled("Tableau de bord du manuel", { anchor: "tableaubord", size: 30, color: B.C.rouge, align: AlignmentType.LEFT }),
     B.p("Répartition des séances selon le volume horaire du programme officiel (2 heures par semaine).", { size: 22, italic: true }),
     ...B.dataTable(["Unité", "Programme officiel", "Séances", "Sujet d'examen"], rows, { widths: [4200, 1800, 2400, 1400], size: 20 }),
-    B.p(`Les unités 2 (Les activités agricoles, 8 séances), 3 (Les activités industrielles, 6 séances) et 4 (Les transports, le commerce et le tourisme, 6 séances) complètent le manuel pour un total de ${TOTAL_PREVU} séances.`, { size: 20, italic: true, spacingBefore: 120 }),
+    B.p(`Total : ${seances.length} séances de 2 heures sur les ${TOTAL_PREVU} prévues par le programme (26 semaines), ${Object.keys(annexes.sujets).length} sujets d'examen, un glossaire de ${annexes.glossaire.length} mots et une bibliographie de ${annexes.bibliographie.length} rubriques. Chaque séance comprend une fiche de préparation, une leçon, quatre exercices corrigés.`, { size: 20, italic: true, spacingBefore: 120 }),
   ];
 }
 

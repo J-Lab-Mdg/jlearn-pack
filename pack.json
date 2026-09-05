@@ -3,22 +3,135 @@
   "name": "J-Learn — Pack d'illustrations",
   "description": "Illustrations pédagogiques pour J-Learn (manuels scolaires Madagascar).",
   "images": [
-    { "id": "geo3_carte_regions_naturelles", "url": "/geo3_carte_regions_naturelles.png", "type": "image/png" },
-    { "id": "geo3_population_evolution", "url": "/geo3_population_evolution.png", "type": "image/png" },
-    { "id": "geo3_structure_age", "url": "/geo3_structure_age.png", "type": "image/png" },
-    { "id": "geo3_secteurs_economie", "url": "/geo3_secteurs_economie.png", "type": "image/png" },
-    { "id": "peau_coupe",          "url": "/peau_coupe.png",          "type": "image/png" },
-    { "id": "os_coupe",            "url": "/os_coupe.png",            "type": "image/png" },
-    { "id": "squelette_humain",    "url": "/squelette_humain.png",    "type": "image/png" },
-    { "id": "bras_muscles",        "url": "/bras_muscles.png",        "type": "image/png" },
-    { "id": "dents",               "url": "/dents.png",               "type": "image/png" },
-    { "id": "cycle_eau",           "url": "/cycle_eau.png",           "type": "image/png" },
-    { "id": "plante_organes",      "url": "/plante_organes.png",      "type": "image/png" },
-    { "id": "fleur_coupe",         "url": "/fleur_coupe.png",         "type": "image/png" },
-    { "id": "criquet_morphologie", "url": "/criquet_morphologie.png", "type": "image/png" },
-    { "id": "rat_champ",           "url": "/rat_champ.png",           "type": "image/png" },
-    { "id": "paludisme_cycle",     "url": "/paludisme_cycle.png",     "type": "image/png" },
-    { "id": "falaise_strates",     "url": "/falaise_strates.png",     "type": "image/png" },
-    { "id": "pollinisation_cycle", "url": "/pollinisation_cycle.png", "type": "image/png" }
+    {
+      "id": "geo3_carte_regions_naturelles",
+      "url": "/geo3_carte_regions_naturelles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_population_evolution",
+      "url": "/geo3_population_evolution.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_structure_age",
+      "url": "/geo3_structure_age.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_secteurs_economie",
+      "url": "/geo3_secteurs_economie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "peau_coupe",
+      "url": "/peau_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "os_coupe",
+      "url": "/os_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "squelette_humain",
+      "url": "/squelette_humain.png",
+      "type": "image/png"
+    },
+    {
+      "id": "bras_muscles",
+      "url": "/bras_muscles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "dents",
+      "url": "/dents.png",
+      "type": "image/png"
+    },
+    {
+      "id": "cycle_eau",
+      "url": "/cycle_eau.png",
+      "type": "image/png"
+    },
+    {
+      "id": "plante_organes",
+      "url": "/plante_organes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "fleur_coupe",
+      "url": "/fleur_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "criquet_morphologie",
+      "url": "/criquet_morphologie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "rat_champ",
+      "url": "/rat_champ.png",
+      "type": "image/png"
+    },
+    {
+      "id": "paludisme_cycle",
+      "url": "/paludisme_cycle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "falaise_strates",
+      "url": "/falaise_strates.png",
+      "type": "image/png"
+    },
+    {
+      "id": "pollinisation_cycle",
+      "url": "/pollinisation_cycle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_carte_cultures",
+      "url": "/geo3_carte_cultures.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_carte_elevage_peche",
+      "url": "/geo3_carte_elevage_peche.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_carte_industries",
+      "url": "/geo3_carte_industries.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_carte_transports",
+      "url": "/geo3_carte_transports.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_commerce_exterieur",
+      "url": "/geo3_commerce_exterieur.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_energie_madagascar",
+      "url": "/geo3_energie_madagascar.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_foret_recul",
+      "url": "/geo3_foret_recul.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_riz_production_importation",
+      "url": "/geo3_riz_production_importation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo3_tourisme_arrivees",
+      "url": "/geo3_tourisme_arrivees.png",
+      "type": "image/png"
+    }
   ]
 }
