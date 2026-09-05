@@ -132,6 +132,66 @@
       "id": "geo3_tourisme_arrivees",
       "url": "/geo3_tourisme_arrivees.png",
       "type": "image/png"
+    },
+    {
+      "id": "hist3_blocs_guerre_froide",
+      "url": "/hist3_blocs_guerre_froide.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_carte_1947",
+      "url": "/hist3_carte_1947.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_carte_2gm",
+      "url": "/hist3_carte_2gm.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_carte_conquete",
+      "url": "/hist3_carte_conquete.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_carte_europe_1919",
+      "url": "/hist3_carte_europe_1919.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_chomage_nsdap",
+      "url": "/hist3_chomage_nsdap.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_crise_1929",
+      "url": "/hist3_crise_1929.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_decolonisation",
+      "url": "/hist3_decolonisation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_frise_colonisation",
+      "url": "/hist3_frise_colonisation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_frise_madagascar_1960_2025",
+      "url": "/hist3_frise_madagascar_1960_2025.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_frise_urss",
+      "url": "/hist3_frise_urss.png",
+      "type": "image/png"
+    },
+    {
+      "id": "hist3_organigramme_colonial",
+      "url": "/hist3_organigramme_colonial.png",
+      "type": "image/png"
     }
   ]
 }
