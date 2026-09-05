@@ -579,25 +579,26 @@ function potence(a, b, { mode = "long", decimales = 0, size = 24 } = {}) {
 const racine9 = (n) => { let s = String(n).replace(/\D/g, "").split("").reduce((a, c) => a + +c, 0); while (s >= 10) s = String(s).split("").reduce((a, c) => a + +c, 0); return s === 9 ? 0 : s; };
 function preuve9({ op = "×", a, b, q = null, r = 0, produit = null, size = 22 }) {
   const N = (x) => (typeof x === "string" && /^\d+$/.test(x) ? +x : x); a = N(a); b = N(b); q = N(q); produit = N(produit);
-  // × : gauche = racine(a), droite = racine(b), haut = racine(gauche × droite), bas = racine(produit)
-  // ÷ : a = dividende, b = diviseur, q = quotient, r = reste ; gauche = racine(b), droite = racine(q), haut = racine(g×d + racine(r)), bas = racine(a)
-  let g, d, h, bas, txt;
+  // Disposition habituelle des élèves : les deux nombres réduits en HAUT et en BAS, le produit des deux à GAUCHE, la réduction du résultat à DROITE.
+  // × : haut = racine(a), bas = racine(b), gauche = racine(haut × bas), droite = racine(produit)
+  // ÷ : a = dividende, b = diviseur, q = quotient, r = reste ; haut = racine(b), bas = racine(q), gauche = racine(h×b + racine(r)), droite = racine(a)
+  let h, bas, g, d, txt;
   if (op === "×") {
-    g = racine9(a); d = racine9(b); h = racine9(g * d); bas = racine9(produit);
-    txt = [`Somme des chiffres de ${fmt(a)} → ${g} (à gauche) ; de ${fmt(b)} → ${d} (à droite).`, `${g} × ${d} = ${g * d} → ${h} (en haut).`, `Somme des chiffres du produit ${fmt(produit)} → ${bas} (en bas).`];
+    h = racine9(a); bas = racine9(b); g = racine9(h * bas); d = racine9(produit);
+    txt = [`Somme des chiffres de ${fmt(a)} → ${h} (en haut) ; de ${fmt(b)} → ${bas} (en bas).`, `${h} × ${bas} = ${h * bas} → ${g} (à gauche).`, `Somme des chiffres du produit ${fmt(produit)} → ${d} (à droite).`];
   } else {
-    g = racine9(b); d = racine9(q); const rr = racine9(r); h = racine9(g * d + rr); bas = racine9(a);
-    txt = [`Somme des chiffres du diviseur ${fmt(b)} → ${g} (à gauche) ; du quotient ${fmt(q)} → ${d} (à droite).`, `${g} × ${d} = ${g * d}${r ? ` ; on ajoute le reste réduit (${fmt(r)} → ${rr}) : ${g * d} + ${rr} = ${g * d + rr}` : ""} → ${h} (en haut).`, `Somme des chiffres du dividende ${fmt(a)} → ${bas} (en bas).`];
+    h = racine9(b); bas = racine9(q); const rr = racine9(r); g = racine9(h * bas + rr); d = racine9(a);
+    txt = [`Somme des chiffres du diviseur ${fmt(b)} → ${h} (en haut) ; du quotient ${fmt(q)} → ${bas} (en bas).`, `${h} × ${bas} = ${h * bas}${r ? ` ; on ajoute le reste réduit (${fmt(r)} → ${rr}) : ${h * bas} + ${rr} = ${h * bas + rr}` : ""} → ${g} (à gauche).`, `Somme des chiffres du dividende ${fmt(a)} → ${d} (à droite).`];
   }
-  const ok = h === bas;
+  const ok = g === d;
   const w = 520; const c = (t, col = C.noir) => cell([centered(t ? `**${t}**` : "", { size: size + 4, keyColor: col })], { width: w, margins: 20, borders: noBorders() });
   const cross = new Table({ width: { size: w * 3, type: WidthType.DXA }, columnWidths: [w, w, w], layout: TableLayoutType.FIXED, alignment: AlignmentType.CENTER, borders: noBorders(), rows: [
-    new TableRow({ children: [c(""), c(String(h), C.bleu), c("")] }),
-    new TableRow({ children: [c(String(g)), c("✕", C.gris), c(String(d))] }),
-    new TableRow({ children: [c(""), c(String(bas), C.bleu), c("")] }),
+    new TableRow({ children: [c(""), c(String(h)), c("")] }),
+    new TableRow({ children: [c(String(g), C.bleu), c("✕", C.gris), c(String(d), C.bleu)] }),
+    new TableRow({ children: [c(""), c(String(bas)), c("")] }),
   ]});
   const lines = [p(`**Preuve par 9** (rappel : si la somme des chiffres vaut 9, on écrit 0) :`, { size, keyColor: C.noir, spacingAfter: 20 })];
-  return [ ...lines, cross, ...txt.map((t) => p(t, { size: size - 2, indent: 360, spacingAfter: 10 })), p(ok ? `**Haut = bas (${h} = ${bas}) : l'opération est juste.**` : `Haut ≠ bas : il y a une erreur.`, { size, keyColor: C.vert, color: ok ? C.vert : C.rouge, indent: 360, spacingAfter: 80 }) ];
+  return [ ...lines, cross, ...txt.map((t) => p(t, { size: size - 2, indent: 360, spacingAfter: 10 })), p(ok ? `**Gauche = droite (${g} = ${d}) : l'opération est juste.**` : `Gauche ≠ droite : il y a une erreur.`, { size, keyColor: C.vert, color: ok ? C.vert : C.rouge, indent: 360, spacingAfter: 80 }) ];
 }
 
 module.exports = {
