@@ -73,9 +73,18 @@ function buildFiche(s, total) {
   ];
 }
 
+// Résolution des fichiers d'illustration : "scene:x.jpg" → assets/scenes, "photo:x.jpg" → assets/photos, sinon assets/ (figures par code)
+function resolveFig(assetsDir, file) {
+  if (file.startsWith("scene:")) return path.join(assetsDir, "scenes", file.slice(6));
+  if (file.startsWith("photo:")) return path.join(assetsDir, "photos", file.slice(6));
+  return path.join(assetsDir, file);
+}
+
 function buildLecon(s, assetsDir) {
   const out = [B.pageBreak(), titled("LEÇON", { size: 22, align: AlignmentType.LEFT, spacingAfter: 40 }), B.leconTitre(s.titre, `lecon${s.num}`)];
-  if (s.image) out.push(...B.figure(path.join(assetsDir, s.image.file), s.image.legende, { widthCm: s.image.widthCm || 14, source: s.image.source }));
+  // Scène illustrative en tête de leçon (dessin de manuel scolaire), puis éventuelle figure documentaire (carte, frise…)
+  if (s.scene) out.push(...B.figure(resolveFig(assetsDir, s.scene.file), s.scene.legende, { widthCm: s.scene.widthCm || 15, source: s.scene.source || "illustration J-Learn" }));
+  if (s.image) out.push(...B.figure(resolveFig(assetsDir, s.image.file), s.image.legende, { widthCm: s.image.widthCm || 14, source: s.image.source }));
   s.lecon.forEach((blk) => {
     if (typeof blk === "string") { out.push(B.leconPara(blk)); return; }
     switch (blk.t) {
@@ -84,7 +93,8 @@ function buildLecon(s, assetsDir) {
       case "p": out.push(B.leconPara(blk.x)); break;
       case "ul": blk.x.forEach((li) => out.push(B.leconPuce(li))); break;
       case "table": out.push(...B.dataTable(blk.header, blk.rows, { widths: blk.widths, source: blk.source })); break;
-      case "fig": out.push(...B.figure(path.join(assetsDir, blk.file), blk.legende, { widthCm: blk.widthCm || 14, source: blk.source })); break;
+      case "fig": out.push(...B.figure(resolveFig(assetsDir, blk.file), blk.legende, { widthCm: blk.widthCm || 14, source: blk.source })); break;
+      case "photo": out.push(...B.photoTexte(resolveFig(assetsDir, blk.file), { legende: blk.legende, source: blk.source, texte: blk.texte, widthCm: blk.widthCm || 6 })); break;
     }
   });
   return out;

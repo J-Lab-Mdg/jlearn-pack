@@ -19,25 +19,35 @@ const ONLY_U = process.env.ONLY ? Number(String(process.env.ONLY).replace(/\D/g,
 const UNITES = ONLY_U ? ALL_UNITES.filter((u) => u.num === ONLY_U) : ALL_UNITES;
 function safeRequire(m) { try { return require(m); } catch (e) { if (e.code === "MODULE_NOT_FOUND" && String(e.message).includes(m.slice(2))) return null; throw e; } }
 const TOTAL_PREVU = 25;
-const seances = UNITES.flatMap((u) => u.data);
+const { applyScenes } = require("./illustrations-scenes");
+const seances = applyScenes(UNITES.flatMap((u) => u.data));
 const VERSION = process.env.VERSION || "V2";
 const ONLY = process.env.ONLY ? `_${process.env.ONLY}` : "";
 
 function couverture() {
-  return [
-    B.empty(1800),
+  // Couverture fournie par J-Learn (image pleine page), puis page de titre sobre
+  const cov = path.join(ASSETS, "couverture.jpg");
+  const out = [];
+  if (fs.existsSync(cov)) {
+    const buf = fs.readFileSync(cov);
+    // page A4 = 21 × 29,7 cm, marges 2 cm → zone utile 17 × 25,7 cm ; l'image (2:3) est calée sur la hauteur utile
+    const hcm = 25.6, wcm = hcm * 832 / 1248;
+    out.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 0, after: 0 }, children: [new (require("docx").ImageRun)({ type: "jpg", data: buf, transformation: { width: Math.round(wcm * 37.8), height: Math.round(hcm * 37.8) } })] }));
+    out.push(B.pageBreak());
+  }
+  out.push(
+    B.empty(2400),
     B.titled("COLLECTION J-LEARN", { size: 32 }),
+    B.empty(600),
+    B.titled("HISTOIRE 3ème", { size: 96, color: B.C.rouge }),
     B.empty(400),
-    B.titled("HISTOIRE", { size: 56, color: B.C.rouge }),
-    B.titled("Classe de 3ème", { size: 36 }),
-    B.empty(300),
-    B.titled("Manuel complet : fiches de préparation, leçons, exercices, corrigés et sujets d'examen", { size: 24, bold: false }),
+    B.titled("Fiches de préparation, leçons, exercices, sujets d'examen et corrigés", { size: 24, bold: false }),
     B.empty(200),
-    B.titled(`Programme officiel malgache — 3 unités thématiques, ${TOTAL_PREVU} séances`, { size: 22, bold: false }),
+    B.titled(`${TOTAL_PREVU} séances — 3 unités`, { size: 22, bold: false }),
     B.empty(1200),
-    B.titled(`Version ${VERSION} — ${ONLY ? `Unité ${ONLY_U}` : "édition complète"}`, { size: 22, bold: false }),
-    B.titled("[Logo et en-tête institutionnel : à insérer par l'éditeur]", { size: 18, bold: false, color: "808080" }),
-  ];
+    B.titled("Édition 2026", { size: 22, bold: false }),
+  );
+  return out;
 }
 
 function avantPropos() {
@@ -45,11 +55,10 @@ function avantPropos() {
   return [
     B.pageBreak(),
     B.titled("Avant-propos", { anchor: "avantpropos", size: 30, color: B.C.rouge, align: AlignmentType.LEFT }),
-    P("Ce manuel d'Histoire, destiné à la classe de 3ème, accompagne l'enseignant et l'élève tout au long de l'année scolaire. Il suit fidèlement le programme officiel du Ministère de l'Éducation Nationale (Direction des Curricula et des Intrants), qui organise l'Histoire de 3ème autour du XXe siècle en trois parties : Madagascar, colonie française (10 semaines), le monde de l'entre-deux-guerres (10 semaines) et le monde depuis 1945 (5 semaines), à raison de 2 heures par semaine. Conformément aux instructions officielles, l'accent est mis sur les relations de cause à effet et sur les liens entre l'histoire de Madagascar et le contexte international."),
+    P("Ce manuel d'Histoire, destiné à la classe de 3ème, accompagne l'enseignant et l'élève tout au long de l'année scolaire. Il suit fidèlement le programme officiel qui organise l'Histoire de 3ème autour du XXe siècle en trois parties : Madagascar, colonie française (10 semaines), le monde de l'entre-deux-guerres (10 semaines) et le monde depuis 1945 (5 semaines), à raison de 2 heures par semaine. Conformément aux instructions officielles, l'accent est mis sur les relations de cause à effet et sur les liens entre l'histoire de Madagascar et le contexte international."),
     P(`Le manuel compte ${TOTAL_PREVU} séances de 2 heures réparties en trois unités. Chaque séance propose une fiche de préparation complète, une leçon rédigée et illustrée, puis des exercices notés selon un barème avec leur corrigé détaillé. Chaque unité se termine par un sujet d'examen construit sur le modèle de l'épreuve de fin de cycle (commentaire de document et devoir composé), avec son corrigé. Un glossaire et une bibliographie complètent l'ouvrage.`),
     P("Les dates, les chiffres et les faits ont été vérifiés à partir d'ouvrages de référence sur l'histoire de Madagascar et du XXe siècle (Deschamps, Rajaonah, Randrianja et Ellis, Tronchon, Fremigacci, Archives nationales de Madagascar) et de sources internationales. Les chiffres controversés (pertes humaines, bilans des guerres) sont donnés sous forme de fourchettes avec leur source. Toutes ces références figurent dans la bibliographie en fin de manuel."),
     P("Ce manuel a été conçu pour fonctionner sans matériel particulier : un tableau noir, de la craie et le cahier de l'élève suffisent. Les documents à observer (courts extraits de textes, tableaux, frises chronologiques) sont donnés dans la fiche pour être recopiés au tableau. Le programme officiel recommande toutefois le commentaire de documents et les enquêtes auprès des anciens ; les enseignants qui disposent de ce matériel ou de ce temps trouveront dans chaque fiche une note indiquant comment l'utiliser."),
-    P("Cette édition a été élaborée avec le plus grand soin. Malgré toute l'attention portée à sa rédaction et à sa relecture, quelques erreurs ont pu s'y glisser : nous vous remercions par avance de votre indulgence. L'équipe J-Lab accueille avec attention tous les retours des enseignants et des élèves : signalement d'erreurs, suggestions d'amélioration ou appréciations. Vos remarques contribuent directement à l'amélioration des prochaines éditions."),
     P("Nous remercions chaleureusement les enseignants qui accompagneront leurs élèves avec ce manuel : c'est grâce à leur engagement quotidien que ce travail prend tout son sens."),
   ];
 }
@@ -141,8 +150,9 @@ function tableIllustrations() {
   const out = [B.pageBreak(), B.titled("Table des illustrations", { anchor: "illustrations", size: 30, color: B.C.rouge, align: AlignmentType.LEFT })];
   seances.forEach((s) => {
     const figs = [];
+    if (s.scene) figs.push(s.scene.legende);
     if (s.image) figs.push(s.image.legende);
-    s.lecon.forEach((b) => { if (b && b.t === "fig") figs.push(b.legende); });
+    s.lecon.forEach((b) => { if (b && (b.t === "fig" || b.t === "photo")) figs.push(b.legende); });
     figs.forEach((l) => out.push(B.tocLink(`Séance ${s.num} — ${l}`, `lecon${s.num}`)));
   });
   return out;

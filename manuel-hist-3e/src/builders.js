@@ -219,18 +219,48 @@ function dataTable(header, rows, { widths = null, size = 19, source = null } = {
   return out;
 }
 
+// Dimensions d'une image (PNG ou JPEG) lues dans l'en-tête, sans dépendance
+function imageSize(buf) {
+  if (buf.readUInt32BE(0) === 0x89504e47) return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20), type: "png" };
+  let i = 2;
+  while (i < buf.length) {
+    if (buf[i] !== 0xff) { i++; continue; }
+    const marker = buf[i + 1];
+    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) return { h: buf.readUInt16BE(i + 5), w: buf.readUInt16BE(i + 7), type: "jpg" };
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  throw new Error("format d'image inconnu");
+}
+
+function imageRun(file, widthCm, heightCm = null) {
+  const buf = fs.readFileSync(file);
+  const { w, h, type } = imageSize(buf);
+  const hcm = heightCm || (widthCm * h / w);
+  const px = (cm) => Math.round(cm * 37.8);
+  return new ImageRun({ type, data: buf, transformation: { width: px(widthCm), height: px(hcm) } });
+}
+
 function figure(file, legende, { widthCm = 15, heightCm = null, source = null } = {}) {
   if (!fs.existsSync(file)) return [p(`[Illustration à insérer : ${legende}]`, { italic: true })];
-  const buf = fs.readFileSync(file);
-  const sharpMeta = require("sharp")(buf);
-  // dimensions lues de façon synchrone via png header
-  const wpx = buf.readUInt32BE(16), hpx = buf.readUInt32BE(20);
-  const wcm = widthCm, hcm = heightCm || (wcm * hpx / wpx);
-  const px = (cm) => Math.round(cm * 37.8);
   return [
-    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 120, after: 40 }, children: [new ImageRun({ type: "png", data: buf, transformation: { width: px(wcm), height: px(hcm) } })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 120, after: 40 }, keepNext: true, children: [imageRun(file, widthCm, heightCm)] }),
     p(`${legende}${source ? ` — Source : ${source}` : ""}`, { size: 18, italic: true, align: AlignmentType.CENTER, spacingAfter: 160 }),
   ];
 }
 
-module.exports = { de, miniTable, C, FONT, runs, p, empty, pageBreak, titled, tocLink, metaTable, deroulementTable, sectionRow, stepRow, exoEnonceLines, exoCorrigeLines, exercicesSection, leconTitre, leconSousTitre, leconSousSous, leconPara, leconPuce, dataTable, figure, cell, noBorders, thinBorders, AlignmentType };
+// Photo d'archives (portrait) à gauche, texte de présentation à droite — tableau sans bordures
+function photoTexte(file, { legende, source = null, texte = [], widthCm = 6 }) {
+  if (!fs.existsSync(file)) return [p(`[Photo à insérer : ${legende}]`, { italic: true })];
+  const wImg = Math.round((widthCm + 0.6) * 567), wTxt = 9638 - wImg;
+  const left = cell([
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 40 }, children: [imageRun(file, widthCm)] }),
+    p(`${legende}${source ? ` — Source : ${source}` : ""}`, { size: 16, italic: true, align: AlignmentType.CENTER, spacingAfter: 0 }),
+  ], { width: wImg, margins: 40 });
+  const right = cell(texte.map((t) => p(t, { size: 22, keyColor: C.bleu, align: AlignmentType.JUSTIFIED, spacingAfter: 80 })), { width: wTxt, margins: 80, vAlign: VerticalAlign.CENTER });
+  return [
+    new Table({ width: { size: 9638, type: WidthType.DXA }, columnWidths: [wImg, wTxt], layout: TableLayoutType.FIXED, borders: noBorders(), rows: [new TableRow({ cantSplit: true, children: [left, right] })] }),
+    empty(80),
+  ];
+}
+
+module.exports = { de, miniTable, C, FONT, runs, p, empty, pageBreak, titled, tocLink, metaTable, deroulementTable, sectionRow, stepRow, exoEnonceLines, exoCorrigeLines, exercicesSection, leconTitre, leconSousTitre, leconSousSous, leconPara, leconPuce, dataTable, figure, photoTexte, cell, noBorders, thinBorders, AlignmentType };
