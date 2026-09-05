@@ -3,6 +3,10 @@
   "name": "J-Learn — Pack d'illustrations",
   "description": "Illustrations pédagogiques pour J-Learn (manuels scolaires Madagascar).",
   "images": [
+    { "id": "geo3_carte_regions_naturelles", "url": "/geo3_carte_regions_naturelles.png", "type": "image/png" },
+    { "id": "geo3_population_evolution", "url": "/geo3_population_evolution.png", "type": "image/png" },
+    { "id": "geo3_structure_age", "url": "/geo3_structure_age.png", "type": "image/png" },
+    { "id": "geo3_secteurs_economie", "url": "/geo3_secteurs_economie.png", "type": "image/png" },
     { "id": "peau_coupe",          "url": "/peau_coupe.png",          "type": "image/png" },
     { "id": "os_coupe",            "url": "/os_coupe.png",            "type": "image/png" },
     { "id": "squelette_humain",    "url": "/squelette_humain.png",    "type": "image/png" },
