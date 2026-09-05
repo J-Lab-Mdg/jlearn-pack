@@ -192,6 +192,216 @@
       "id": "hist3_organigramme_colonial",
       "url": "/hist3_organigramme_colonial.png",
       "type": "image/png"
+    },
+    {
+      "id": "calc8_cube_caisses",
+      "url": "/calc8_cube_caisses.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_division_cantine",
+      "url": "/calc8_division_cantine.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_echanges_ville",
+      "url": "/calc8_echanges_ville.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_epargne_famille",
+      "url": "/calc8_epargne_famille.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_exos_nombres",
+      "url": "/calc8_exos_nombres.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_fig_aire_carreaux",
+      "url": "/calc8_fig_aire_carreaux.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_angles",
+      "url": "/calc8_fig_angles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_balance_roberval",
+      "url": "/calc8_fig_balance_roberval.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_calendrier",
+      "url": "/calc8_fig_calendrier.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_carre",
+      "url": "/calc8_fig_carre.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_cercle",
+      "url": "/calc8_fig_cercle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_cube",
+      "url": "/calc8_fig_cube.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_cube_petit",
+      "url": "/calc8_fig_cube_petit.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droite_10000",
+      "url": "/calc8_fig_droite_10000.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droite_1000000",
+      "url": "/calc8_fig_droite_1000000.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droite_decimaux",
+      "url": "/calc8_fig_droite_decimaux.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droite_fractions",
+      "url": "/calc8_fig_droite_fractions.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_droites",
+      "url": "/calc8_fig_droites.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_fraction_disque",
+      "url": "/calc8_fig_fraction_disque.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_hectare",
+      "url": "/calc8_fig_hectare.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge",
+      "url": "/calc8_fig_horloge.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_2_37",
+      "url": "/calc8_fig_horloge_2_37.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_3_06",
+      "url": "/calc8_fig_horloge_3_06.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_4_28",
+      "url": "/calc8_fig_horloge_4_28.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_5_08",
+      "url": "/calc8_fig_horloge_5_08.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_horloge_7_07",
+      "url": "/calc8_fig_horloge_7_07.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_litre_dm3",
+      "url": "/calc8_fig_litre_dm3.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_losange",
+      "url": "/calc8_fig_losange.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_metre_ruban",
+      "url": "/calc8_fig_metre_ruban.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_paralleles",
+      "url": "/calc8_fig_paralleles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_parallelogramme",
+      "url": "/calc8_fig_parallelogramme.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_pave",
+      "url": "/calc8_fig_pave.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_pave_petit",
+      "url": "/calc8_fig_pave_petit.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_rapporteur",
+      "url": "/calc8_fig_rapporteur.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_recipient",
+      "url": "/calc8_fig_recipient.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_rectangle",
+      "url": "/calc8_fig_rectangle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_regle",
+      "url": "/calc8_fig_regle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_trapeze",
+      "url": "/calc8_fig_trapeze.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_fig_triangle",
+      "url": "/calc8_fig_triangle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "calc8_proportionnalite_legumes",
+      "url": "/calc8_proportionnalite_legumes.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_soustraction_marche",
+      "url": "/calc8_soustraction_marche.jpg",
+      "type": "image/jpeg"
+    },
+    {
+      "id": "calc8_temps_gare",
+      "url": "/calc8_temps_gare.jpg",
+      "type": "image/jpeg"
     }
   ]
 }
