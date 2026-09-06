@@ -114,7 +114,7 @@ def auto_caption(scene):
 
 def main():
     files = {}
-    for f in glob.glob('illustrations/s*.png'):
+    for f in glob.glob('illustrations/s*.jpg'):
         m = re.match(r's(\d{2})', os.path.basename(f))
         if m: files[int(m.group(1))] = f
     if not files:
