@@ -1,4 +1,4 @@
-# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°6 (Blocs 1-4)
+# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°7 (Blocs 1-5)
 
 ## 1. ÉTAT D'AVANCEMENT
 
@@ -12,11 +12,15 @@
     (oui, lui, huit, cuire...) : découverte, mots courants, I/U/OUI, paniers, comptine OUI (créée), articulation
     U+I=OUI, prononciation des mots, piège « compris/merci » (I, pas OUI), répétition rythmée (1 syllabe=1 frappe),
     performance finale 3 épreuves + trophée.
-  - Livrable courant : `output/Manuel_Francais_11e_V1_THEMES1-4.docx` (**cumulatif** séances 1-40 :
-    couverture, avant-propos, mode d'emploi, sommaire interactif, 4 thèmes, 40 fiches/leçons/exercices/corrigés).
-- **Bloc en cours si interrompu** : aucun — le Bloc 2 est terminé proprement (docx vérifié : TOUT CONFORME).
-- **Blocs restants** : Thèmes 3 à 8 du manuel existant (Se présenter, son OUI, son U nouveaux mots, Le village,
-  son GN) **+ extension** T1 fin / T2 / T3 d'après la FRA : parties du corps, toilette, espace, temps, famille,
+  - Bloc 5 — Thème 5 « Le son U : nouveaux mots » (Phonétique, séances 41-50) — rédigé d'après la FRA :
+    nouveaux mots jupe/mur/plume/fumée, U de la classe (un/une/du/bureau), **piège U vs OU** (rue/roue,
+    du/doux — ne pas confondre avec le Thème 2 I/U : ici U seul), panier de 11 mots en U, comptine U (créée,
+    pièges : carré/parfait/répète finissent par é), articulation en miroir (U rond court / OU long / I sourire),
+    position du U dans le mot, répétition rythmée, performance finale 3 épreuves + trophée.
+  - Livrable courant : `output/Manuel_Francais_11e_V1_THEMES1-5.docx` (**cumulatif** séances 1-50 :
+    couverture, avant-propos, mode d'emploi, sommaire interactif, 5 thèmes, 50 fiches/leçons/exercices/corrigés).
+- **Bloc en cours si interrompu** : aucun — le Bloc 5 est terminé proprement (docx vérifié : TOUT CONFORME ×50).
+- **Blocs restants** : Thèmes 6 à 8 du manuel existant (Le village, son GN) **+ extension** T1 fin / T2 / T3 d'après la FRA : parties du corps, toilette, espace, temps, famille,
   maison, classe, points cardinaux, carte de Madagascar, épicier, ferme, cultivateur, tâches ménagères
   + sons UN, S-CH, ZE-JE, OUI-UI, AN-ON, ILLE, é-è, EU, IN, IE, OIN.
 
@@ -63,25 +67,28 @@
 
 ## 6. À FAIRE EN PRIORITÉ PAR LE PROCHAIN RELAIS
 
-1. Lire `README.md` du projet et `src/data-theme1.js` (comprendre le format des données d'une séance).
-2. Reproduire l'environnement : `npm install` dans `francais-11e-projet/`, tester `node src/assemble-bloc1.js`,
-   puis `python3 verify_docx.py output/Manuel_Francais_11e_V1_BLOC1.docx` (22 vérifications skill → TOUT CONFORME attendu).
-3. **Bloc 2 = Thème 2 « Les sons I et U » (séances 11-20, Phonétique)** : récupérer le contenu des séances 11-20
-   dans le PDF Drive (chunkIndex ≥ 1 des 6 segments — le Thème 1 a été récupéré ainsi), le reprendre dans un
-   `src/data-theme2.js` sur le modèle de `data-theme1.js`, créer les illustrations dans `illus/generate_illus.py`
-   (réutiliser les helpers : `perso`, `bulle`, `soleil`, `panneau`…), étendre `assemble-bloc1.js` en
-   `assemble-bloc-themes1-2.js` (sommaire cumulatif, numérotation continue 1→20).
-4. Pour les thèmes Phonétique : exercices adaptés à l'oral (répéter, entourer le mot qu'on entend, mimer) —
-   garder ≥ 4 items et la variété des types.
+1. Lire `README.md` du projet et `src/data-theme5.js` (comprendre le format des données d'une séance).
+2. Reproduire l'environnement : `npm install` dans `francais-11e-projet/`, tester `node src/assemble-bloc5.js`,
+   puis `python3 verify_docx.py output/Manuel_Francais_11e_V1_THEMES1-5.docx 50` (22 vérifications skill
+   → TOUT CONFORME ×50 attendu : 6 col=50, 4 col ≥50, signets ≥54).
+3. **Bloc 6 = Thème 6 « Le village » (séances 51-60, Langage)** : rédiger d'après la FRA (le PDF source est
+   illisible au-delà de la page 30 — les thèmes 2-5 ont tous été rédigés ainsi), créer `src/data-theme6.js`
+   sur le gabarit de `data-theme5.js`, illustrations dans `illus/generate_illus.py` (helpers `perso`, `bulle`,
+   `soleil`, `panneau`, `mur_briques`, `roue`…), étendre `assemble-bloc5.js` en `assemble-bloc6.js`
+   (THEMES=[theme1..theme6], OUT THEMES1-6.docx, footer « FIN DU BLOC 6 (SÉANCES 1 À 60) » /
+   « À suivre : Thème 7 — Le son GN »), sommaire cumulatif, numérotation continue 1→60.
+4. Après tout write_file de `data-themeN.js` : vérifier la présence par `ls -la src/` AVANT le pipeline
+   (écriture asynchrone du sandbox — ne pas réécrire immédiatement si absent au 1er ls) ; nettoyer les doubles
+   espaces d'alignement (regex sur les chaînes quotées) avant `node`.
 5. Vérifier chaque illustration générée (read_file) : bulles complètes (utiliser `center_x=`), pas de chevauchement,
-   texte jamais coupé aux bords. Deux défauts corrigés au Bloc 1 : bulle coupée par la séparatrice (s1),
-   triangle qui cachait le visage (s6) — ne pas reproduire.
+   texte jamais coupé aux bords, rien sur les visages. Défauts corrigés récents : légende s36 coupée à droite,
+   textes s43 tronqués (bonjour/Bonjour !/légende), bulles s45 sur le dernier vers — ne pas reproduire.
 6. Lancer systématiquement `verify_docx.py` avant toute livraison : **TOUT CONFORME obligatoire**.
 
 ## 7. QUESTIONS EN SUSPENS POUR L'UTILISATEUR
 
 - Séances 11 à 80 du PDF source non extractibles au-delà de la page 30 du PDF (limite du parseur) :
-  les thèmes 2-8 devront être récupérés soit par re-upload du PDF/docx source dans une session future,
-  soit par rédaction directe depuis la FRA (contenu officiel) — le style du Thème 1 sert de gabarit.
+  les thèmes 2-5 ont été rédigés directement depuis la FRA (contenu officiel) ; thèmes 6-8 : même méthode
+  sauf re-upload du .docx source dans une session future — le style des Thèmes 1-5 sert de gabarit.
 - L'utilisateur a confirmé le périmètre « programme annuel complet » : le découpage définitif des thèmes 9+
   (au-delà des 8 du manuel existant) reste à proposer bloc par bloc, à faire valider à chaque relais.

@@ -697,3 +697,131 @@ img.save(os.path.join(OUT, "s40_performance_oui.png"))
 print("Illustrations générées (thèmes 1+2+3+4) :")
 for f in sorted(os.listdir(OUT)):
     print("  -", f)
+
+# ============================================================
+# THÈME 5 — LE SON U : NOUVEAUX MOTS (séances 41-50, Phonétique)
+# ============================================================
+
+def jupe(d, x, y, t):
+    d.polygon([(x - t // 2, y - t // 2), (x + t // 2, y - t // 2), (x + t, y + t), (x - t, y + t)], fill=ROSE, outline=CONT)
+    d.rectangle([x - t // 2, y - t // 2 - 10, x + t // 2, y - t // 2 + 6], fill=VIOLET, outline=CONT, width=3)
+
+def mur_briques(d, x, y, l, h):
+    d.rectangle([x, y, x + l, y + h], fill=(222, 196, 166), outline=CONT, width=3)
+    for i in range(1, 4):
+        d.line([x, y + i * h // 4, x + l, y + i * h // 4], fill=CONT, width=2)
+    for j, yy in enumerate(range(y + h // 8, y + h, h // 4)):
+        decal = (l // 6) if j % 2 else 0
+        for xx in range(x + decal, x + l, l // 3):
+            d.line([xx, yy, xx, yy + h // 4], fill=CONT, width=2)
+
+def plume(d, x, y):
+    d.ellipse([x - 38, y - 70, x + 38, y + 70], fill=(255, 253, 245), outline=CONT, width=3)
+    d.line([x, y - 85, x, y + 85], fill=CONT, width=4)
+    for yy in (-45, -15, 15, 45):
+        d.line([x, y + yy, x + 26, y + yy + 10], fill=CONT, width=2)
+        d.line([x, y + yy, x - 26, y + yy + 10], fill=CONT, width=2)
+
+def fumee(d, x, y):
+    for i, (dx, dy, r) in enumerate([(0, 0, 20), (14, -34, 15), (26, -62, 11), (36, -86, 8)]):
+        d.ellipse([x + dx - r, y + dy - r, x + dx + r, y + dy + r], fill=(207, 216, 220), outline=CONT, width=3)
+
+def roue(d, cx, cy, r):
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(121, 85, 72), outline=CONT, width=4)
+    d.ellipse([cx - r // 3, cy - r // 3, cx + r // 3, cy + r // 3], fill=GRIS, outline=CONT, width=3)
+    for a in range(0, 360, 45):
+        d.line([cx + (r // 3) * math.cos(math.radians(a)), cy + (r // 3) * math.sin(math.radians(a)),
+                cx + r * math.cos(math.radians(a)), cy + r * math.sin(math.radians(a))], fill=CONT, width=3)
+
+# 28. s41_son_u_nouveaux.png — nouveaux mots avec U
+img, d = nouvelle(1100, 560)
+d.rectangle([40, 30, 260, 190], fill=(255, 253, 245), outline=CONT, width=4)
+grande_lettre(d, 80, 40, "U", BLEU_F)
+d.text((300, 70), "De NOUVEAUX mots avec U :", font=font(40), fill=CONT)
+jupe(d, 360, 250, 60)
+etiquette(d, 360, 420, "la jupe")
+mur_briques(d, 500, 230, 160, 140)
+etiquette(d, 580, 420, "le mur")
+plume(d, 790, 290)
+etiquette(d, 790, 420, "la plume")
+fumee(d, 990, 330)
+etiquette(d, 990, 420, "la fumée")
+img.save(os.path.join(OUT, "s41_son_u_nouveaux.png"))
+
+# 29. s42_classe_u.png — U dans les mots de la classe
+img, d = nouvelle(1100, 560)
+d.text((300, 50), "DANS MA CLASSE, J'ENTENDS U :", font=font(38), fill=CONT)
+# bureau
+d.rectangle([120, 260, 360, 290], fill=(121, 85, 72), outline=CONT, width=3)
+d.line([150, 290, 150, 390], fill=(121, 85, 72), width=12)
+d.line([330, 290, 330, 390], fill=(121, 85, 72), width=12)
+etiquette(d, 240, 410, "le bureau")
+# cahier
+d.rectangle([470, 240, 600, 350], fill=(69, 90, 200), outline=CONT, width=3)
+d.line([500, 240, 500, 350], fill=CIER, width=3)
+etiquette(d, 535, 410, "un cahier")
+# gomme
+d.rounded_rectangle([700, 280, 800, 340], radius=10, fill=ROSE, outline=CONT, width=3)
+etiquette(d, 750, 410, "une gomme")
+# papier
+d.polygon([(900, 240), (1010, 240), (1040, 270), (1040, 360), (900, 360)], fill=CIER, outline=CONT)
+d.polygon([(1010, 240), (1010, 270), (1040, 270)], fill=(224, 231, 240), outline=CONT)
+etiquette(d, 970, 410, "du papier")
+img.save(os.path.join(OUT, "s42_classe_u.png"))
+
+# 30. s43_u_ou_ou.png — U ou OU ?
+img, d = nouvelle(1100, 560)
+d.rectangle([30, 30, 520, 470], fill=(227, 242, 253), outline=CONT, width=4)
+d.text((235, 55), "U", font=font(95), fill=BLEU_F)
+d.text((120, 210), "rue  •  jupe  •  du", font=font(40, bold=False), fill=CONT)
+d.text((120, 300), "bouche : RONDE", font=font(36), fill=BLEU_F)
+d.line([550, 30, 550, 470], fill=CONT, width=4)
+d.rectangle([580, 30, 1070, 470], fill=(232, 245, 233), outline=CONT, width=4)
+d.text((780, 55), "OU", font=font(95), fill=VERT_F)
+d.text((620, 210), "roue • loup • bonjour", font=font(34, bold=False), fill=CONT)
+d.text((620, 300), "comme dans : « Bonjour ! »", font=font(30), fill=VERT_F)
+roue(d, 750, 415, 34)
+ft = font(36)
+bb = d.textbbox((0, 0), "U ou OU ? J'écoute bien !", font=ft)
+d.text(((1100 - (bb[2] - bb[0])) // 2, 490), "U ou OU ? J'écoute bien !", font=ft, fill=CONT)
+img.save(os.path.join(OUT, "s43_u_ou_ou.png"))
+
+# 31. s45_comptine_u.png — affiche comptine U
+img, d = nouvelle(1100, 620)
+d.rounded_rectangle([40, 30, 1060, 590], radius=26, fill=(255, 253, 245), outline=CONT, width=5)
+d.text((390, 60), "MA COMPTINE  U", font=font(44), fill=ROUGE_F)
+vers = [
+    "U, U, la jupe de ma poupée,",
+    "U, U, la plume envolée.",
+    "Une bulle et de la fumée",
+    "montent au-dessus du toit carré.",
+    "Lundi, mardi, je répète :",
+    "U, ma bouche est ronde, c'est parfait !",
+]
+y = 180
+for v in vers:
+    d.text((230, y), v, font=font(36, bold=False), fill=CONT)
+    y += 62
+# bulles décoratives (zone vide haut-droite, loin du texte)
+for bx, by, br in [(920, 215, 22), (968, 185, 17), (1005, 160, 12)]:
+    d.ellipse([bx - br, by - br, bx + br, by + br], fill=(219, 239, 252), outline=(41, 128, 185), width=3)
+img.save(os.path.join(OUT, "s45_comptine_u.png"))
+
+# 32. s50_performance_u.png — performance finale U
+img, d = nouvelle(1100, 520)
+d.polygon([(480, 180), (620, 180), (600, 330), (500, 330)], fill=JAUNE_F, outline=CONT)
+d.rectangle([530, 330, 570, 380], fill=JAUNE_F, outline=CONT)
+d.rectangle([490, 380, 610, 420], fill=(121, 85, 72), outline=CONT)
+d.arc([430, 180, 500, 260], 270, 90, fill=CONT, width=8)
+d.arc([600, 180, 670, 260], 90, 270, fill=CONT, width=8)
+d.text((540, 220), "U", font=font(46), fill=NOIR)
+for sx, sy2 in [(400, 100), (700, 90), (550, 60), (380, 260), (720, 250)]:
+    d.polygon([(sx, sy2 - 22), (sx + 7, sy2 - 7), (sx + 22, sy2 - 5), (sx + 11, sy2 + 5), (sx + 13, sy2 + 20), (sx, sy2 + 12), (sx - 13, sy2 + 20), (sx - 11, sy2 + 5), (sx - 22, sy2 - 5), (sx - 7, sy2 - 7)], fill=JAUNE_F, outline=CONT)
+perso(d, 320, 300, 30, haut=BLEU_F, bras_up=True)
+perso(d, 780, 300, 30, haut=VERT_F, bras_up=True)
+d.rectangle([0, 420, 1100, 520], fill=(180, 205, 150))
+img.save(os.path.join(OUT, "s50_performance_u.png"))
+
+print("Illustrations générées (thèmes 1-5) :")
+for f in sorted(os.listdir(OUT)):
+    print("  -", f)
