@@ -1218,3 +1218,124 @@ perso(d, 780, 300, 30, haut=VERT_F, bras_up=True)
 img.save(os.path.join(OUT, "s70_performance_gn.png"))
 
 print("Illustrations du thème 7 générées.")
+
+# ============================================================
+# THÈME 8 — MON CORPS, LES COULEURS ET LE SON CH (71-80)
+# ============================================================
+
+def ligne(d, x1, y1, x2, y2):
+    d.line([x1, y1, x2, y2], fill=CONT, width=3)
+
+
+# 43. s71_corps.png — les parties du corps
+img, d = nouvelle(1100, 560)
+centre_texte(d, 550, 25, "MON CORPS", 44, CONT)
+perso(d, 300, 200, 70)
+ligne(d, 300, 108, 300, 132)
+etiquette_petite(d, 300, 60, "la tête")
+ligne(d, 420, 385, 470, 300)
+etiquette_petite(d, 505, 265, "la main")
+ligne(d, 290, 485, 195, 490)
+etiquette_petite(d, 140, 470, "le genou")
+ligne(d, 345, 512, 400, 515)
+etiquette_petite(d, 448, 495, "le pied")
+perso(d, 750, 310, 55, haut=VERT_F, bras_up=True)
+perso(d, 920, 300, 48, haut=ROSE, bras_up=True)
+centre_texte(d, 835, 120, "je saute, je danse !", 32, VERT_F)
+img.save(os.path.join(OUT, "s71_corps.png"))
+
+# 44. s72_s_ou_ch.png — S ou CH ?
+img, d = nouvelle(1100, 560)
+d.rounded_rectangle([40, 30, 520, 460], radius=20, fill=(232, 240, 252), outline=CONT, width=4)
+d.rounded_rectangle([580, 30, 1060, 460], radius=20, fill=(232, 245, 233), outline=CONT, width=4)
+centre_texte(d, 280, 48, "S", 58, BLEU_F)
+d.rectangle([130, 205, 210, 285], fill=(160, 110, 60), outline=CONT, width=3)
+d.arc([140, 175, 200, 225], 180, 360, fill=CONT, width=4)
+d.ellipse([260, 230, 350, 275], fill=GRIS, outline=CONT, width=3)
+d.ellipse([268, 212, 288, 234], fill=GRIS, outline=CONT, width=2)
+d.ellipse([276, 240, 282, 246], fill=NOIR)
+d.arc([345, 225, 395, 275], 270, 120, fill=CONT, width=3)
+d.ellipse([390, 225, 470, 265], fill=ROSE, outline=CONT, width=3)
+for bx, by, br in [(450, 205, 9), (470, 190, 6), (485, 178, 4)]:
+    d.ellipse([bx - br, by - br, bx + br, by + br], fill=(219, 239, 252), outline=(41, 128, 185), width=2)
+centre_texte(d, 280, 330, "sac • souris • savon", 26, CONT, bold=False)
+centre_texte(d, 280, 368, "comme dans : « souris »", 28, BLEU_F)
+centre_texte(d, 280, 408, "ssss, comme le serpent !", 25, CONT, bold=False)
+centre_texte(d, 820, 48, "CH", 58, VERT_F)
+chat(d, 690, 235, 34)
+d.ellipse([790, 250, 890, 272], fill=(160, 110, 60), outline=CONT, width=3)
+d.pieslice([805, 205, 875, 272], 180, 360, fill=(160, 110, 60), outline=CONT, width=3)
+d.ellipse([945, 225, 1005, 285], fill=TERRE, outline=CONT, width=3)
+d.pieslice([945, 222, 1005, 270], 180, 360, fill=(121, 85, 72), outline=CONT, width=2)
+centre_texte(d, 820, 330, "chat • chapeau • cheveux", 26, CONT, bold=False)
+centre_texte(d, 820, 368, "comme dans : « chat »", 28, VERT_F)
+centre_texte(d, 820, 408, "chhh, comme le vent !", 25, CONT, bold=False)
+centre_texte(d, 550, 490, "S ou CH ? J'écoute bien !", 36, CONT)
+img.save(os.path.join(OUT, "s72_s_ou_ch.png"))
+
+# 45. s73_couleurs.png — les couleurs
+img, d = nouvelle(1100, 560)
+centre_texte(d, 550, 30, "LES COULEURS", 44, CONT)
+d.ellipse([125, 265, 215, 355], fill=(211, 47, 47), outline=CONT, width=3)
+d.polygon([(170, 265), (150, 245), (190, 245)], fill=VERT_F, outline=CONT)
+etiquette(d, 170, 420, "rouge")
+d.ellipse([365, 285, 475, 335], fill=(255, 213, 79), outline=CONT, width=3)
+etiquette(d, 420, 420, "jaune")
+d.rectangle([600, 300, 740, 345], fill=VERT, outline=CONT, width=3)
+for tx in range(615, 735, 20):
+    d.polygon([(tx, 302), (tx + 6, 275), (tx + 12, 302)], fill=VERT_F, outline=CONT)
+etiquette(d, 670, 420, "vert")
+d.rounded_rectangle([850, 235, 990, 345], radius=14, fill=BLEU, outline=CONT, width=3)
+d.ellipse([940, 250, 975, 285], fill=JAUNE_F, outline=CONT, width=2)
+nuage_simple(d, 885, 300, 26)
+etiquette(d, 920, 420, "bleu")
+centre_texte(d, 550, 510, "Je dis les couleurs : rouge, jaune, vert, bleu !", 34, CONT)
+img.save(os.path.join(OUT, "s73_couleurs.png"))
+
+# 46. s77_comptine_corps.png — affiche comptine du corps
+img, d = nouvelle(1100, 620)
+d.rounded_rectangle([40, 30, 1060, 590], radius=26, fill=(255, 253, 245), outline=CONT, width=5)
+centre_texte(d, 550, 60, "LA COMPTINE DU CORPS", 42, ROUGE_F)
+vers = [
+    "Tête, épaules, mains et pieds,",
+    "je les touche sans me tromper.",
+    "Mes yeux voient, mon nez sent,",
+    "ma bouche parle et mes pieds courent.",
+    "Je saute, je danse, je tourne, je joue :",
+    "tout mon corps est mon ami, bravo !",
+]
+y = 180
+for v in vers:
+    d.text((230, y), v, font=font(34, bold=False), fill=CONT)
+    y += 62
+perso(d, 950, 470, 26, haut=VERT_F, bras_up=True)
+perso(d, 1012, 480, 22, haut=BLEU_F, bras_up=True)
+img.save(os.path.join(OUT, "s77_comptine_corps.png"))
+
+# 47. s80_grande_performance.png — grande performance de l'année
+img, d = nouvelle(1100, 520)
+d.rectangle([0, 420, 1100, 520], fill=(180, 205, 150))
+case_village(d, 50, 350, 100, 72, fenetre=False)
+puits(d, 205, 422, 0.58)
+montagne(d, 850, 422, 150, 150)
+arbre(d, 1035, 422, 0.65)
+d.polygon([(480, 170), (620, 170), (600, 320), (500, 320)], fill=JAUNE_F, outline=CONT)
+d.rectangle([530, 320, 570, 370], fill=JAUNE_F, outline=CONT)
+d.rectangle([490, 370, 610, 410], fill=(121, 85, 72), outline=CONT)
+d.arc([430, 170, 500, 250], 270, 90, fill=CONT, width=8)
+d.arc([600, 170, 670, 250], 90, 270, fill=CONT, width=8)
+d.ellipse([515, 195, 585, 255], fill=CIER, outline=CONT, width=3)
+star = []
+for i in range(10):
+    import math as _m
+    rr = 22 if i % 2 == 0 else 10
+    a = -90 + i * 36
+    star.append((550 + rr * _m.cos(_m.radians(a)), 225 + rr * _m.sin(_m.radians(a))))
+d.polygon(star, fill=ROUGE_F, outline=CONT)
+for sx, sy2 in [(400, 95), (550, 55), (700, 95), (390, 250), (715, 245)]:
+    d.polygon([(sx, sy2 - 22), (sx + 7, sy2 - 7), (sx + 22, sy2 - 5), (sx + 11, sy2 + 5), (sx + 13, sy2 + 20), (sx, sy2 + 12), (sx - 13, sy2 + 20), (sx - 11, sy2 + 5), (sx - 22, sy2 - 5), (sx - 7, sy2 - 7)], fill=JAUNE_F, outline=CONT)
+perso(d, 320, 300, 30, haut=BLEU_F, bras_up=True)
+perso(d, 780, 300, 30, haut=VERT_F, bras_up=True)
+img.save(os.path.join(OUT, "s80_grande_performance.png"))
+
+print("Illustrations du thème 8 générées.")

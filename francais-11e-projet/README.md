@@ -13,7 +13,8 @@ Traitement C (génération de zéro) selon le skill `jlearn-manuel-scolaire` v18
 | 5 | Le son U : nouveaux mots (Phonétique) | 41-50 | ✅ Livré (`output/Manuel_Francais_11e_V1_THEMES1-5.docx`, cumulatif 1-50) |
 | 6 | Le village (Langage) | 51-60 | ✅ Livré (`output/Manuel_Francais_11e_V1_THEMES1-6.docx`, cumulatif 1-60) |
 | 7 | Le son GN (Phonétique) | 61-70 | ✅ Livré (`output/Manuel_Francais_11e_V1_THEMES1-7.docx`, cumulatif 1-70) |
-| 8+ | Corps, énumérations, S-CH, couleurs, possessifs, UN + extension FRA (T2, T3) | 71-… | ⏳ Prochain relais : Bloc 8 = Thème 8 (dernier du manuel existant) |
+| 8 | Mon corps, les couleurs et le son CH (Langage + Phonétique) | 71-80 | ✅ Livré (`output/Manuel_Francais_11e_V1_THEMES1-8.docx`, cumulatif 1-80) — **MANUEL DES 8 THÈMES COMPLET** |
+| 9+ | Extension FRA : T1 fin / T2 / T3 (à faire valider par l'utilisateur) | 81-… | ⏳ Prochain relais : Bloc 9 = extension FRA |
 
 Décisions validées par l'utilisateur : 30 min/séance (FRA officielle), version française seule,
 programme annuel complet (multi-blocs), illustrations scolaires plates intégrées (Pillow/PNG).
@@ -23,8 +24,8 @@ programme annuel complet (multi-blocs), illustrations scolaires plates intégré
 ```bash
 npm install                  # package docx
 python3 illus/generate_illus.py   # illustrations PNG dans assets/
-node src/assemble-bloc7.js        # → output/Manuel_Francais_11e_V1_THEMES1-7.docx (cumulatif)
-python3 verify_docx.py output/Manuel_Francais_11e_V1_THEMES1-7.docx 70   # 22 vérifications skill v18
+node src/assemble-bloc8.js        # → output/Manuel_Francais_11e_V1_THEMES1-8.docx (manuel complet, 80 séances)
+python3 verify_docx.py output/Manuel_Francais_11e_V1_THEMES1-8.docx 80   # 22 vérifications skill v18
 ```
 
 ## Architecture
@@ -39,6 +40,7 @@ src/data-theme4.js    # CONTENU des 10 séances du Thème 4 (Phonétique : le so
 src/data-theme5.js    # CONTENU des 10 séances du Thème 5 (Phonétique : le son U, piège U vs OU)
 src/data-theme6.js    # CONTENU des 10 séances du Thème 6 (Langage : le village)
 src/data-theme7.js    # CONTENU des 10 séances du Thème 7 (Phonétique : le son GN, piège GN vs N)
+src/data-theme8.js    # CONTENU des 10 séances du Thème 8 (corps, couleurs, S-CH, énumération, possessifs, un/une)
 src/assemble-bloc1.js # couverture + avant-propos + mode d'emploi + sommaire interactif + séances
 illus/generate_illus.py  # illustrations scolaires plates (helpers : perso, bulle, soleil, panneau…)
 assets/               # PNG ~1100px (norme illustrations.md)
