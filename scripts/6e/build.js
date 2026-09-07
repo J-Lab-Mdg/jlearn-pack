@@ -9,7 +9,7 @@ const {
 const B = require("./builders");
 const {
   C, SH, p, empty, metaTable, deroulementTable, sectionRow, stepRow, boxed,
-  bookmarkedHeading, tocLink, FONT,
+  bookmarkedHeading, tocLink, figure, FONT,
   Paragraph, TextRun, AlignmentType, HeadingLevel, PageBreak,
 } = B;
 
@@ -159,6 +159,26 @@ function tableauDeBord() {
 }
 
 // ============================================================ UNE SÉANCE
+// ==== FIGURES : titre de seance -> [cle, largeur cm, legende]
+const FIGURES_SEANCE = {
+  "Le cercle : vocabulaire et constructions":
+    ["cercle-vocabulaire", 11, "Le cercle de centre O : rayon, diamètre, corde et arc"],
+  "Les triangles et leur classification":
+    ["triangles", 13, "Les quatre triangles à connaître"],
+  "Les quadrilatères usuels":
+    ["quadrilateres", 13, "Les quadrilatères usuels et leurs codages"],
+  "Construire le symétrique d'un point":
+    ["symetrie-point", 11.5, "Construction du symétrique d'un point par rapport à une droite"],
+  "Les axes de symétrie d'une figure":
+    ["axes-symetrie", 13, "Axes de symétrie des figures usuelles"],
+  "Représenter un pavé en perspective":
+    ["pave-perspective", 12, "Le pavé droit en perspective cavalière"],
+  "Le patron du pavé droit":
+    ["patron-pave", 12, "Un patron du pavé droit : six faces rectangulaires"],
+  "Le cylindre et son patron":
+    ["patron-cylindre", 13, "Patron du cylindre : deux disques et un rectangle"],
+};
+
 function batirSeance(s, numero, periode, indexLocal, totalLocal) {
   const out = [];
   const id = `seance${numero}`;
@@ -248,6 +268,9 @@ function batirSeance(s, numero, periode, indexLocal, totalLocal) {
     }));
     corps.split("\n").forEach((l) => out.push(p(l, { spacing: { after: 60 } })));
   });
+
+  const fig = FIGURES_SEANCE[s.titre];
+  if (fig) out.push(...figure(fig[0], fig[1], fig[2]));
 
   out.push(empty(120));
   out.push(boxed([p(s.syn)], SH.retenir, "À retenir"));
@@ -449,6 +472,9 @@ function batirComposition(co) {
   out.push(new Paragraph({ children: [new PageBreak()] }));
   return out;
 }
+
+module.exports = { batirSeance, batirRevision, batirExamen, batirMemento, batirComposition };
+if (require.main !== module) return;
 
 // ============================================================ ASSEMBLAGE
 const children = [

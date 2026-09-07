@@ -6,7 +6,10 @@ const {
   Paragraph, TextRun, Table, TableRow, TableCell, WidthType, BorderStyle,
   AlignmentType, HeadingLevel, VerticalMerge, ShadingType, InternalHyperlink,
   Bookmark, PageBreak, Math: OMath, MathRun, MathFraction, TabStopType,
+  ImageRun,
 } = require("docx");
+const fsB = require("fs");
+const pathB = require("path");
 
 const FONT = "Times New Roman";
 
@@ -254,6 +257,41 @@ function tocLink(id, label, indent = 0) {
   });
 }
 
+// ============================================================== FIGURE
+const DOSSIER_FIG = pathB.join(__dirname, "..", "..", "figures-6e");
+
+/**
+ * Insere une figure PNG centree, avec sa legende.
+ * `largeurCm` : largeur souhaitee dans la page (13 cm utiles au maximum).
+ * Renvoie [] si le fichier est absent, pour ne jamais casser le build.
+ */
+function figure(nom, largeurCm = 12, legende = null) {
+  const f = pathB.join(DOSSIER_FIG, `${nom}.png`);
+  if (!fsB.existsSync(f)) return [];
+  const buf = fsB.readFileSync(f);
+  // dimensions reelles du PNG (entete IHDR)
+  const wpx = buf.readUInt32BE(16), hpx = buf.readUInt32BE(20);
+  const wpt = Math.round(largeurCm * 28.35);
+  const hpt = Math.round(wpt * hpx / wpx);
+  const out = [new Paragraph({
+    alignment: AlignmentType.CENTER,
+    spacing: { before: 120, after: legende ? 40 : 140 },
+    children: [new ImageRun({
+      data: buf, type: "png",
+      transformation: { width: wpt, height: hpt },
+    })],
+  })];
+  if (legende) {
+    out.push(new Paragraph({
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 140 },
+      children: [new TextRun({
+        text: legende, font: FONT, size: 18, italics: true, color: C.gris })],
+    }));
+  }
+  return out;
+}
+
 // ============================================================== FRACTION
 function frac(num, den) {
   return new OMath({
@@ -272,7 +310,7 @@ function mathPara(children, opt = {}) {
 module.exports = {
   FONT, C, SH, runs, p, empty, cell, noBorders, gridBorders,
   metaTable, deroulementTable, sectionRow, stepRow, boxed,
-  bookmarkedHeading, tocLink, frac, mathPara,
+  bookmarkedHeading, tocLink, frac, mathPara, figure,
   Paragraph, TextRun, Table, TableRow, TableCell, WidthType,
   AlignmentType, HeadingLevel, PageBreak,
 };
