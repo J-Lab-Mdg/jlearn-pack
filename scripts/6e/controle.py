@@ -44,8 +44,9 @@ chk("dates calendaires (attendu 0)", len(dates) + len(annees), not dates and not
 # 4. separateur decimal : jamais un point entre deux chiffres.
 # On ecarte les contre-exemples explicites (« et non 1.250.000 »), qui montrent
 # justement a l'eleve l'ecriture a proscrire.
+CONTRE_EX = ("et non", "On peut écrire", "on écrit")
 pts = [m.group() for m in re.finditer(r"\d\.\d", txt)
-       if "et non" not in txt[max(0, m.start() - 40):m.start()]]
+       if not any(c in txt[max(0, m.start() - 45):m.start()] for c in CONTRE_EX)]
 chk("point decimal (attendu 0)", len(pts), not pts)
 
 # 5. pas de VOAMBOLANA (interdit a partir de la 9e)
