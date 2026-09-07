@@ -9,7 +9,8 @@ Traitement C (génération de zéro) selon le skill `jlearn-manuel-scolaire` v18
 | 1 | Les salutations (Langage) | 1-10 | ✅ Livré (`output/Manuel_Francais_11e_V1_BLOC1.docx`) |
 | 2 | Les sons I et U (Phonétique) | 11-20 | ✅ Livré (`output/Manuel_Francais_11e_V1_THEMES1-2.docx`, cumulatif 1-20) |
 | 3 | Se présenter (Langage) | 21-30 | ✅ Livré (`output/Manuel_Francais_11e_V1_THEMES1-3.docx`, cumulatif 1-30) |
-| 4+ | Son OUI, son U, le village, son GN + extension FRA (T2, T3) | 31-… | ⏳ Prochain relais : Bloc 4 = Thème 4 |
+| 4 | Le son OUI (Phonétique) | 31-40 | ✅ Livré (`output/Manuel_Francais_11e_V1_THEMES1-4.docx`, cumulatif 1-40) |
+| 5+ | Son U nouveaux mots, le village, son GN + extension FRA (T2, T3) | 41-… | ⏳ Prochain relais : Bloc 5 = Thème 5 |
 
 Décisions validées par l'utilisateur : 30 min/séance (FRA officielle), version française seule,
 programme annuel complet (multi-blocs), illustrations scolaires plates intégrées (Pillow/PNG).
@@ -19,8 +20,8 @@ programme annuel complet (multi-blocs), illustrations scolaires plates intégré
 ```bash
 npm install                  # package docx
 python3 illus/generate_illus.py   # illustrations PNG dans assets/
-node src/assemble-bloc3.js        # → output/Manuel_Francais_11e_V1_THEMES1-3.docx (cumulatif)
-python3 verify_docx.py output/Manuel_Francais_11e_V1_THEMES1-3.docx 30   # 22 vérifications skill v18
+node src/assemble-bloc4.js        # → output/Manuel_Francais_11e_V1_THEMES1-4.docx (cumulatif)
+python3 verify_docx.py output/Manuel_Francais_11e_V1_THEMES1-4.docx 40   # 22 vérifications skill v18
 ```
 
 ## Architecture
@@ -31,6 +32,7 @@ src/builders.js       # design skill v18 : méta-table invisible, déroulement 6
 src/data-theme1.js    # CONTENU des 10 séances du Thème 1 (à imiter pour les thèmes suivants)
 src/data-theme2.js    # CONTENU des 10 séances du Thème 2 (Phonétique, rédigé d'après la FRA)
 src/data-theme3.js    # CONTENU des 10 séances du Thème 3 (Langage : se présenter)
+src/data-theme4.js    # CONTENU des 10 séances du Thème 4 (Phonétique : le son OUI)
 src/assemble-bloc1.js # couverture + avant-propos + mode d'emploi + sommaire interactif + séances
 illus/generate_illus.py  # illustrations scolaires plates (helpers : perso, bulle, soleil, panneau…)
 assets/               # PNG ~1100px (norme illustrations.md)

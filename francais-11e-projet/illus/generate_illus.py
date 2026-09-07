@@ -571,3 +571,129 @@ img.save(os.path.join(OUT, "s30_bilan.png"))
 print("Illustrations générées (thèmes 1+2+3) :")
 for f in sorted(os.listdir(OUT)):
     print("  -", f)
+
+# ============================================================
+# THÈME 4 — LE SON OUI (séances 31-40, Phonétique)
+# ============================================================
+
+def nuage(d, x, y, l, gouttes=0):
+    """Nuage ; (x,y)=centre ; gouttes>0 = dessine des gouttes de pluie."""
+    r = l // 4
+    d.ellipse([x - l // 2, y - r, x - l // 2 + 2 * r, y + r], fill=(224, 231, 240), outline=CONT, width=3)
+    d.ellipse([x - r, y - r - r // 2, x + r, y + r + r // 2], fill=(224, 231, 240), outline=CONT, width=3)
+    d.ellipse([x + l // 2 - 2 * r, y - r, x + l // 2, y + r], fill=(224, 231, 240), outline=CONT, width=3)
+    d.rectangle([x - l // 2 + r, y, x + l // 2 - r, y + r], fill=(224, 231, 240))
+    for gx in (-1, 0, 1):
+        d.line([x - l // 2 + r + gx * r, y, x - l // 2 + r + gx * r, y + r], fill=(224, 231, 240), width=6)
+    if gouttes:
+        for i in range(gouttes):
+            gx = x - l // 3 + i * (l // max(1, gouttes - 1))
+            d.polygon([(gx - 7, y + r + 18 + (i % 2) * 18), (gx + 7, y + r + 18 + (i % 2) * 18), (gx, y + r + 40 + (i % 2) * 18)], fill=BLEU, outline=CONT)
+
+def carte_chiffre(d, cx, cy, chiffre, mot):
+    d.rounded_rectangle([cx - 70, cy - 80, cx + 70, cy + 80], radius=16, fill=CIER, outline=CONT, width=4)
+    d.text((cx - 30, cy - 65), chiffre, font=font(90), fill=ROUGE_F)
+    f = font(30)
+    bb = d.textbbox((0, 0), mot, font=f)
+    d.text((cx - (bb[2] - bb[0]) // 2, cy + 28), mot, font=f, fill=CONT)
+
+def pomme(d, x, y, t):
+    d.ellipse([x - t, y - t, x + t, y + t], fill=ROUGE_F, outline=CONT, width=3)
+    d.line([x, y - t, x, y - int(t * 1.5)], fill=(121, 85, 72), width=6)
+    d.ellipse([x + 4, y - int(t * 1.6), x + int(t * 0.9), y - int(t * 1.1)], fill=VERT_F, outline=CONT)
+    d.line([x + t - 6, y - 10, x + t + 6, y - 22], fill=CONT, width=3)
+
+# 22. s31_son_oui.png — découverte du son OUI
+img, d = nouvelle(1100, 560)
+d.rectangle([40, 40, 320, 200], fill=(255, 253, 245), outline=CONT, width=4)
+d.text((75, 55), "OUI", font=font(95), fill=ROUGE_F)
+perso(d, 620, 250, 34, haut=VERT_F)
+bulle(d, 0, 90, "Oui ! Oui ! Oui !", font(38), center_x=620)
+carte_chiffre(d, 890, 240, "8", "huit")
+nuage(d, 280, 330, 190, gouttes=3)
+etiquette(d, 280, 430, "la pluie")
+d.text((430, 70), "J'entends  OUI  dans :", font=font(38), fill=CONT)
+etiquette(d, 890, 350, "le chiffre huit")
+img.save(os.path.join(OUT, "s31_son_oui.png"))
+
+# 23. s32_mots_oui.png — oui dans des mots courants
+img, d = nouvelle(1100, 560)
+d.text((330, 50), "DES MOTS AVEC  OUI :", font=font(42), fill=CONT)
+pomme(d, 200, 300, 60)
+etiquette(d, 200, 420, "le fruit")
+lune(d, 480, 280, 60)
+for i in range(4):
+    sx, sy2 = 560 + (i % 2) * 40, 200 + (i // 2) * 45
+    d.polygon([(sx, sy2 - 12), (sx + 4, sy2 - 4), (sx + 12, sy2 - 3), (sx + 6, sy2 + 3), (sx + 7, sy2 + 11), (sx, sy2 + 7), (sx - 7, sy2 + 11), (sx - 6, sy2 + 3), (sx - 12, sy2 - 3), (sx - 4, sy2 - 4)], fill=JAUNE_F, outline=CONT)
+etiquette(d, 480, 420, "la nuit")
+nuage(d, 780, 290, 200, gouttes=3)
+etiquette(d, 780, 420, "la pluie")
+carte_chiffre(d, 1000, 330, "8", "huit")
+img.save(os.path.join(OUT, "s32_mots_oui.png"))
+
+# 24. s33_oui_i_u.png — trois sons : I, U, OUI
+img, d = nouvelle(1100, 560)
+sons = [("I", "riz, tapis", (227, 242, 253), ROUGE_F, 40), ("U", "lune, rue", (255, 243, 224), BLEU_F, 400), ("OUI", "huit, pluie", (232, 245, 233), VERT_F, 760)]
+for lettre, mots, fond, coul, x in sons:
+    d.rounded_rectangle([x, 40, x + 300, 440], radius=20, fill=fond, outline=CONT, width=4)
+    d.text((x + 90, 70), lettre, font=font(90), fill=coul)
+    f = font(34, bold=False)
+    d.text((x + 60, 220), mots, font=f, fill=CONT)
+    d.text((x + 40, 300), "bouche :", font=font(30), fill=CONT)
+d.text((75, 360), "sourit", font=font(34), fill=ROUGE_F)
+d.text((435, 360), "ronde", font=font(34), fill=BLEU_F)
+d.text((770, 350), "ronde PUIS", font=font(30), fill=VERT_F)
+d.text((770, 390), "sourit !", font=font(30), fill=VERT_F)
+d.text((330, 480), "I, U ou OUI ? J'écoute et je choisis !", font=font(38), fill=CONT)
+img.save(os.path.join(OUT, "s33_oui_i_u.png"))
+
+# 25. s35_comptine_oui.png — affiche comptine OUI
+img, d = nouvelle(1100, 620)
+d.rounded_rectangle([40, 30, 1060, 590], radius=26, fill=(255, 253, 245), outline=CONT, width=5)
+d.text((330, 60), "MA COMPTINE  OUI", font=font(44), fill=ROUGE_F)
+vers = [
+    "Oui, oui, oui ! dit Petit Lui,",
+    "huit gouttes de pluie tombent la nuit.",
+    "Un fruit, deux fruits, j'ai tout compris :",
+    "oui, oui, oui, je les dis : merci !",
+]
+y = 190
+for v in vers:
+    d.text((230, y), v, font=font(38, bold=False), fill=CONT)
+    y += 70
+nuage(d, 230, 520, 150, gouttes=2)
+lune(d, 880, 520, 36)
+img.save(os.path.join(OUT, "s35_comptine_oui.png"))
+
+# 26. s36_articule_oui.png — articulation : U + I = OUI
+img, d = nouvelle(1100, 520)
+visage(d, 280, 230, 130, bouche="u")
+d.text((190, 390), "la bouche RONDE", font=font(32), fill=BLEU_F)
+d.text((240, 60), "U", font=font(80), fill=BLEU_F)
+d.text((470, 200), "+", font=font(90), fill=CONT)
+visage(d, 660, 230, 130, bouche="i")
+d.text((575, 390), "puis elle SOURIT", font=font(32), fill=ROUGE_F)
+d.text((620, 60), "I", font=font(80), fill=ROUGE_F)
+d.text((850, 200), "=", font=font(90), fill=CONT)
+d.text((920, 210), "OUI", font=font(70), fill=VERT_F)
+d.text((110, 460), "La bouche ronde, puis elle sourit : ouiiii !", font=font(30), fill=CONT)
+img.save(os.path.join(OUT, "s36_articule_oui.png"))
+
+# 27. s40_performance_oui.png — performance finale OUI
+img, d = nouvelle(1100, 520)
+d.polygon([(480, 180), (620, 180), (600, 330), (500, 330)], fill=JAUNE_F, outline=CONT)
+d.rectangle([530, 330, 570, 380], fill=JAUNE_F, outline=CONT)
+d.rectangle([490, 380, 610, 420], fill=(121, 85, 72), outline=CONT)
+d.arc([430, 180, 500, 260], 270, 90, fill=CONT, width=8)
+d.arc([600, 180, 670, 260], 90, 270, fill=CONT, width=8)
+d.text((500, 220), "OUI", font=font(46), fill=NOIR)
+for sx, sy2 in [(400, 100), (700, 90), (550, 60), (380, 260), (720, 250)]:
+    d.polygon([(sx, sy2 - 22), (sx + 7, sy2 - 7), (sx + 22, sy2 - 5), (sx + 11, sy2 + 5), (sx + 13, sy2 + 20), (sx, sy2 + 12), (sx - 13, sy2 + 20), (sx - 11, sy2 + 5), (sx - 22, sy2 - 5), (sx - 7, sy2 - 7)], fill=JAUNE_F, outline=CONT)
+perso(d, 320, 300, 30, haut=BLEU_F, bras_up=True)
+perso(d, 780, 300, 30, haut=VERT_F, bras_up=True)
+d.rectangle([0, 420, 1100, 520], fill=(180, 205, 150))
+img.save(os.path.join(OUT, "s40_performance_oui.png"))
+
+print("Illustrations générées (thèmes 1+2+3+4) :")
+for f in sorted(os.listdir(OUT)):
+    print("  -", f)

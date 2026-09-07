@@ -1,4 +1,4 @@
-# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°5 (Blocs 1-3)
+# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°6 (Blocs 1-4)
 
 ## 1. ÉTAT D'AVANCEMENT
 
@@ -8,8 +8,12 @@
     (le PDF source est illisible au-delà de la page 30), gabarit du Bloc 1.
   - Bloc 3 — Thème 3 « Se présenter » (Langage, séances 21-30) — titres repris du PDF, contenu d'après la FRA
     (formules de présentation, structures Qui est-ce / C'est, il/elle s'appelle, adjectifs mon/ma).
-  - Livrable courant : `output/Manuel_Francais_11e_V1_THEMES1-3.docx` (**cumulatif** séances 1-30 :
-    couverture, avant-propos, mode d'emploi, sommaire interactif, 3 thèmes, 30 fiches/leçons/exercices/corrigés).
+  - Bloc 4 — Thème 4 « Le son OUI » (Phonétique, séances 31-40) — rédigé d'après la FRA + mots sources du FRM
+    (oui, lui, huit, cuire...) : découverte, mots courants, I/U/OUI, paniers, comptine OUI (créée), articulation
+    U+I=OUI, prononciation des mots, piège « compris/merci » (I, pas OUI), répétition rythmée (1 syllabe=1 frappe),
+    performance finale 3 épreuves + trophée.
+  - Livrable courant : `output/Manuel_Francais_11e_V1_THEMES1-4.docx` (**cumulatif** séances 1-40 :
+    couverture, avant-propos, mode d'emploi, sommaire interactif, 4 thèmes, 40 fiches/leçons/exercices/corrigés).
 - **Bloc en cours si interrompu** : aucun — le Bloc 2 est terminé proprement (docx vérifié : TOUT CONFORME).
 - **Blocs restants** : Thèmes 3 à 8 du manuel existant (Se présenter, son OUI, son U nouveaux mots, Le village,
   son GN) **+ extension** T1 fin / T2 / T3 d'après la FRA : parties du corps, toilette, espace, temps, famille,
