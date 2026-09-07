@@ -466,3 +466,108 @@ img.save(os.path.join(OUT, "s20_performance.png"))
 print("Illustrations générées (thèmes 1+2) :")
 for f in sorted(os.listdir(OUT)):
     print("  -", f)
+
+# ============================================================
+# THÈME 3 — SE PRÉSENTER (séances 21-30, Langage)
+# ============================================================
+
+# 16. s21_jemappelle.png — l'élève se présente devant la classe
+img, d = nouvelle(1100, 520)
+d.rectangle([0, 0, 1100, 430], fill=MUR)
+d.rectangle([0, 430, 1100, 520], fill=(161, 136, 110))
+d.rectangle([60, 60, 430, 270], fill=(46, 90, 60), outline=CONT, width=4)
+d.text((95, 130), "Je m'appelle...", font=font(42), fill=CIER)
+perso(d, 760, 240, 40, haut=ROSE, bras_up=True)
+bulle(d, 0, 70, "Bonjour ! Je m'appelle Rova !", font(34), center_x=830)
+img.save(os.path.join(OUT, "s21_jemappelle.png"))
+
+# 17. s23_jhabite.png — j'habite à... (maison + panneau du village)
+img, d = nouvelle(1100, 520)
+d.rectangle([0, 0, 1100, 420], fill=(200, 235, 255))
+d.rectangle([0, 420, 1100, 520], fill=(180, 205, 150))
+soleil(d, 120, 90, 42)
+maison(d, 130, 420, 260, 190)
+d.rounded_rectangle([480, 250, 760, 330], radius=14, fill=(121, 85, 72), outline=CONT, width=3)
+d.line([620, 330, 620, 460], fill=CONT, width=8)
+d.text((520, 268), "ANTSIRABE", font=font(40), fill=CIER)
+perso(d, 880, 290, 32, haut=BLEU_F, bras_up=True)
+bulle(d, 0, 130, "J'habite à Antsirabe !", font(34), center_x=860)
+sol(d, 0, 1100, 420)
+img.save(os.path.join(OUT, "s23_jhabite.png"))
+
+# 18. s24_3phrases.png — ma présentation en 3 phrases
+img, d = nouvelle(1100, 620)
+d.rounded_rectangle([30, 30, 1070, 590], radius=24, fill=(255, 253, 245), outline=CONT, width=5)
+d.text((300, 55), "MA PRÉSENTATION EN 3 PHRASES", font=font(38), fill=ROUGE_F)
+phrases = [
+    ("1", "Bonjour ! Je m'appelle Soa.", BLEU),
+    ("2", "J'ai 7 ans.", VERT),
+    ("3", "J'habite à Fianarantsoa.", ORANGE),
+]
+y = 160
+for num, phr, coul in phrases:
+    d.ellipse([80, y, 150, y + 70], fill=coul, outline=CONT, width=3)
+    f = font(40)
+    bb = d.textbbox((0, 0), num, font=f)
+    d.text((115 - (bb[2] - bb[0]) // 2, y + 35 - (bb[3] - bb[1]) // 2 - bb[1]), num, font=f, fill=CIER)
+    d.text((190, y + 12), phr, font=font(40, bold=False), fill=CONT)
+    y += 110
+perso(d, 930, 330, 44, haut=ROSE)
+perso(d, 820, 350, 32, haut=BLEU_F)
+img.save(os.path.join(OUT, "s24_3phrases.png"))
+
+# 19. s26_quiestce.png — Qui est-ce ? C'est...
+img, d = nouvelle(1100, 520)
+d.rectangle([0, 0, 1100, 430], fill=MUR)
+d.rectangle([0, 430, 1100, 520], fill=(161, 136, 110))
+perso(d, 280, 250, 30, haut=BLEU_F)
+perso(d, 480, 250, 30, haut=VERT_F)
+perso(d, 840, 240, 34, haut=ORANGE)
+d.line([520, 300, 790, 260], fill=CONT, width=5)
+bulle(d, 130, 90, "Qui est-ce ?", font(36))
+bulle(d, 560, 60, "C'est Koto !", font(36))
+sol(d, 0, 1100, 430, (161, 136, 110))
+img.save(os.path.join(OUT, "s26_quiestce.png"))
+
+# 20. s27_famille.png — c'est ma famille
+img, d = nouvelle(1100, 560)
+d.rectangle([0, 0, 1100, 460], fill=(255, 243, 224))
+d.rectangle([0, 460, 1100, 560], fill=(161, 136, 110))
+perso(d, 200, 220, 40, haut=(60, 70, 90))
+etiquette(d, 200, 320, "mon papa")
+perso(d, 400, 215, 42, haut=ROSE)
+etiquette(d, 400, 320, "ma maman")
+perso(d, 610, 250, 30, haut=VERT_F)
+etiquette(d, 610, 320, "mon frère")
+perso(d, 790, 255, 28, haut=VIOLET)
+etiquette(d, 790, 320, "ma sœur")
+perso(d, 980, 250, 28, haut=BLEU_F, bras_up=True)
+etiquette(d, 980, 320, "moi")
+d.text((330, 40), "C'est ma famille !", font=font(46), fill=ROUGE_F)
+sol(d, 0, 1100, 460, (161, 136, 110))
+img.save(os.path.join(OUT, "s27_famille.png"))
+
+# 21. s30_bilan.png — affiche bilan : se présenter et présenter
+img, d = nouvelle(1100, 720)
+d.rounded_rectangle([20, 20, 1080, 700], radius=24, fill=(255, 253, 245), outline=CONT, width=5)
+d.text((310, 45), "JE SAIS ME PRÉSENTER", font=font(42), fill=ROUGE_F)
+lignes = [
+    ("Bonjour ! Je m'appelle ....", "mon prénom", BLEU),
+    ("J'ai .... ans.", "mon âge", VERT),
+    ("J'habite à ....", "mon village", ORANGE),
+]
+y = 140
+for phr, emploi, coul in lignes:
+    d.rounded_rectangle([70, y, 700, y + 66], radius=14, fill=coul, outline=CONT, width=3)
+    d.text((90, y + 12), phr, font=font(32), fill=CIER)
+    d.text((730, y + 14), "→ " + emploi, font=font(32, bold=False), fill=CONT)
+    y += 96
+d.text((70, y + 10), "Et pour présenter un camarade :", font=font(34), fill=CONT)
+d.rounded_rectangle([70, y + 70, 700, y + 140], radius=14, fill=ROSE, outline=CONT, width=3)
+d.text((90, y + 84), "C'est .... ! Il s'appelle ....", font=font(32), fill=CIER)
+d.text((730, y + 90), "→ son prénom", font=font(32, bold=False), fill=CONT)
+img.save(os.path.join(OUT, "s30_bilan.png"))
+
+print("Illustrations générées (thèmes 1+2+3) :")
+for f in sorted(os.listdir(OUT)):
+    print("  -", f)

@@ -1,12 +1,15 @@
-# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°4 (Blocs 1-2)
+# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°5 (Blocs 1-3)
 
 ## 1. ÉTAT D'AVANCEMENT
 
 - **Blocs/thèmes terminés** :
   - Bloc 1 — Thème 1 « Les salutations » (Langage, séances 1-10) — repris du manuel existant, mis aux normes v18.
   - Bloc 2 — Thème 2 « Les sons I et U » (Phonétique, séances 11-20) — rédigé d'après la FRA officielle
-    (le PDF source est illisible au-delà de la page 30), gabarit du Bloc 1. Livrable : `output/Manuel_Francais_11e_V1_THEMES1-2.docx`
-    (document **cumulatif** séances 1-20 : couverture, avant-propos, mode d'emploi, sommaire interactif, 2 thèmes).
+    (le PDF source est illisible au-delà de la page 30), gabarit du Bloc 1.
+  - Bloc 3 — Thème 3 « Se présenter » (Langage, séances 21-30) — titres repris du PDF, contenu d'après la FRA
+    (formules de présentation, structures Qui est-ce / C'est, il/elle s'appelle, adjectifs mon/ma).
+  - Livrable courant : `output/Manuel_Francais_11e_V1_THEMES1-3.docx` (**cumulatif** séances 1-30 :
+    couverture, avant-propos, mode d'emploi, sommaire interactif, 3 thèmes, 30 fiches/leçons/exercices/corrigés).
 - **Bloc en cours si interrompu** : aucun — le Bloc 2 est terminé proprement (docx vérifié : TOUT CONFORME).
 - **Blocs restants** : Thèmes 3 à 8 du manuel existant (Se présenter, son OUI, son U nouveaux mots, Le village,
   son GN) **+ extension** T1 fin / T2 / T3 d'après la FRA : parties du corps, toilette, espace, temps, famille,
