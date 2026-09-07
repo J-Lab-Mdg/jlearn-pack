@@ -15,6 +15,7 @@ const {
 
 const progression = require("./progression");
 const seancesP1 = require("./seances-p1");
+const revisions = require("./revisions");
 
 const TOTAL = progression.reduce(
   (s, per) => s + per.chapitres.reduce((a, c) => a + c.seances, 0), 0);
@@ -98,6 +99,10 @@ function sommaire() {
       const from = n + 1; n += c.seances;
       out.push(p(`${c.nom} — séances ${from} à ${n}`, { indent: { left: 340 }, spacing: { after: 30 } }));
     });
+    if (revisions[per.id]) {
+      out.push(tocLink(`revision${per.id}`, revisions[per.id].revision.titre, 340));
+      out.push(tocLink(`examen${per.id}`, revisions[per.id].examen.titre, 340));
+    }
   });
   out.push(empty(120));
   out.push(p(`**Total : ${TOTAL} séances.**`));
@@ -266,6 +271,90 @@ function batirSeance(s, numero, periode, indexLocal, totalLocal) {
   return out;
 }
 
+// ==================================================== RÉVISION / EXAMEN
+function batirRevision(r, periode) {
+  const { Table, TableRow, WidthType } = B;
+  const out = [bookmarkedHeading(
+    `revision${periode.id}`, r.titre, HeadingLevel.HEADING_2, C.titre, 30)];
+  out.push(p(r.intro, { spacing: { after: 140 } }));
+
+  out.push(new Paragraph({
+    spacing: { before: 120, after: 80 },
+    children: [new TextRun({
+      text: "1. Les notions à retenir", font: FONT, size: 23, bold: true, color: C.soustitre })],
+  }));
+  const th = (t) => B.cell([p(t, { bold: true, align: AlignmentType.CENTER })], { shading: SH.entete });
+  const rows = [new TableRow({ children: [th("Notion"), th("Ce qu'il faut retenir")] })];
+  r.notions.forEach(([n, d]) => rows.push(new TableRow({
+    children: [B.cell([p(`**${n}**`)], { width: 30, shading: SH.neutre }),
+               B.cell([p(d)], { width: 70 })],
+  })));
+  out.push(new Table({ width: { size: 100, type: WidthType.PERCENTAGE },
+                       borders: B.gridBorders(), rows }));
+
+  out.push(new Paragraph({
+    spacing: { before: 200, after: 80 },
+    children: [new TextRun({
+      text: "2. Questions de révision", font: FONT, size: 23, bold: true, color: C.soustitre })],
+  }));
+  r.questions.forEach(([q_, a], i) => {
+    out.push(p(`**${i + 1}.** ${q_}`, { spacing: { after: 30 } }));
+    out.push(p(`R.A. : [[${a}]]`, { indent: { left: 280 }, spacing: { after: 70 } }));
+  });
+
+  out.push(new Paragraph({ children: [new PageBreak()] }));
+  return out;
+}
+
+function batirExamen(e, periode) {
+  const out = [bookmarkedHeading(
+    `examen${periode.id}`, e.titre, HeadingLevel.HEADING_2, C.titre, 30)];
+
+  const total = e.parties.reduce(
+    (s, pa) => s + pa.exos.reduce((a, x) => a + x.pts, 0), 0);
+  out.push(p(`**Durée : ${e.duree}**   —   **Barème : ${total} points**`, { spacing: { after: 60 } }));
+  out.push(p(`__${e.consigne}__`, { spacing: { after: 160 } }));
+
+  e.parties.forEach((pa) => {
+    out.push(new Paragraph({
+      spacing: { before: 150, after: 70 },
+      children: [new TextRun({ text: pa.nom, font: FONT, size: 23, bold: true, color: C.soustitre })],
+    }));
+    pa.exos.forEach((x, i) => {
+      out.push(new Paragraph({
+        spacing: { before: 70, after: 30 },
+        children: [
+          new TextRun({ text: `${i + 1}. `, font: FONT, size: 21, bold: true }),
+          new TextRun({ text: `(${x.pts} points)`, font: FONT, size: 20, color: C.gris }),
+        ],
+      }));
+      x.c.split("\n").forEach((l) => out.push(p(l, { spacing: { after: 30 } })));
+    });
+  });
+
+  out.push(new Paragraph({ children: [new PageBreak()] }));
+  out.push(new Paragraph({
+    spacing: { after: 120 },
+    children: [new TextRun({
+      text: `Corrigé — ${e.titre}`, font: FONT, size: 26, bold: true, color: C.titre })],
+  }));
+  e.parties.forEach((pa) => {
+    out.push(new Paragraph({
+      spacing: { before: 130, after: 60 },
+      children: [new TextRun({ text: pa.nom, font: FONT, size: 22, bold: true, color: C.soustitre })],
+    }));
+    const kids = [];
+    pa.exos.forEach((x, i) => {
+      kids.push(p(`**${i + 1}.** (${x.pts} pts) ${x.r.split("\n")[0]}`, { spacing: { after: 40 } }));
+      x.r.split("\n").slice(1).forEach((l) => kids.push(p(l, { spacing: { after: 40 } })));
+    });
+    out.push(boxed(kids, SH.corrige));
+  });
+
+  out.push(new Paragraph({ children: [new PageBreak()] }));
+  return out;
+}
+
 // ============================================================ ASSEMBLAGE
 const children = [
   ...couverture(), ...avantPropos(), ...modeEmploi(), ...sommaire(), ...tableauDeBord(),
@@ -288,6 +377,11 @@ children.push(new Paragraph({ children: [new PageBreak()] }));
 seancesP1.forEach((s, i) => {
   children.push(...batirSeance(s, i + 1, periodeP1, i + 1, totalP1));
 });
+
+if (seancesP1.length >= totalP1 && revisions[periodeP1.id]) {
+  children.push(...batirRevision(revisions[periodeP1.id].revision, periodeP1));
+  children.push(...batirExamen(revisions[periodeP1.id].examen, periodeP1));
+}
 
 const doc = new Document({
   creator: "Collection J-Learn",
