@@ -1,0 +1,23 @@
+{
+  "name": "jlearn-pack",
+  "version": "1.0.0",
+  "description": "Pack officiel d'illustrations pour **J-Learn**, manuels scolaires numériques pour Madagascar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Lab-Mdg/jlearn-pack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Lab-Mdg/jlearn-pack/issues"
+  },
+  "homepage": "https://github.com/J-Lab-Mdg/jlearn-pack#readme",
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}
