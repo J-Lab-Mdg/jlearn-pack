@@ -1027,3 +1027,194 @@ perso(d, 780, 300, 30, haut=VERT_F, bras_up=True)
 img.save(os.path.join(OUT, "s60_performance_village.png"))
 
 print("Illustrations du thème 6 générées.")
+
+# ============================================================
+# THÈME 7 — LE SON GN (séances 61-70, Phonétique)
+# ============================================================
+
+def montagne(d, x, y, l, h):
+    # montagne : 2 pics gris + neige ; (x,y) = base gauche
+    d.polygon([(x + int(0.45 * l), y), (x + int(0.8 * l), y - int(0.75 * h)), (x + int(1.15 * l), y)], fill=GRIS, outline=CONT)
+    d.polygon([(x, y), (x + int(0.55 * l), y - h), (x + l, y)], fill=(150, 158, 165), outline=CONT)
+    d.polygon([(x + int(0.55 * l) - int(0.11 * l), y - int(0.78 * h)), (x + int(0.55 * l), y - h), (x + int(0.55 * l) + int(0.11 * l), y - int(0.78 * h))], fill=CIER, outline=CONT)
+
+
+def agneau(d, cx, cy, t):
+    # petit mouton : corps nuage + tête ; (cx,cy) = centre du corps
+    for dx, dy, rr in [(-0.55, 0.05, 0.5), (0, -0.12, 0.55), (0.55, 0.05, 0.5), (0, 0.12, 0.5)]:
+        r2 = int(rr * t)
+        x0 = cx + int(dx * t) - r2; y0 = cy + int(dy * t) - r2
+        d.ellipse([x0, y0, x0 + 2 * r2, y0 + 2 * r2], fill=CIER, outline=CONT, width=3)
+    for px in [cx - int(0.5 * t), cx - int(0.2 * t), cx + int(0.2 * t), cx + int(0.5 * t)]:
+        d.line([px, cy + int(0.5 * t), px, cy + int(0.95 * t)], fill=CONT, width=4)
+    hr = int(0.3 * t); hx, hy = cx + int(0.85 * t), cy - int(0.5 * t)
+    d.ellipse([hx - hr - 7, hy, hx - hr + 7, hy + 12], fill=TERRE, outline=CONT, width=2)
+    d.ellipse([hx - hr, hy - hr, hx + hr, hy + hr], fill=TERRE, outline=CONT, width=3)
+    er = max(2, t // 16)
+    d.ellipse([hx - 2, hy - 7, hx - 2 + 2 * er, hy - 7 + 2 * er], fill=NOIR)
+
+
+def peigne(d, cx, cy, t):
+    # peigne horizontal : manche + dents ; (cx,cy) = centre
+    d.rounded_rectangle([cx - int(1.2 * t), cy - int(0.45 * t), cx + int(1.2 * t), cy - int(0.1 * t)], radius=8, fill=ROSE, outline=CONT, width=3)
+    tw = int(0.13 * t)
+    for i in range(6):
+        tx = cx - int(1.05 * t) + i * int(0.42 * t)
+        d.rectangle([tx, cy - int(0.1 * t), tx + tw, cy + int(0.5 * t)], fill=ROSE, outline=CONT, width=2)
+
+
+def champ(d, x, y, l, h):
+    # champ de campagne : parcelle + sillons
+    d.rectangle([x, y, x + l, y + h], fill=(206, 226, 166), outline=CONT, width=3)
+    for i in [0.28, 0.55, 0.82]:
+        d.line([x + 6, y + int(i * h), x + l - 6, y + int(i * h)], fill=CONT, width=2)
+    for sx, sy in [(-0.25, 0.12), (0.1, 0.12), (0.42, 0.12)]:
+        x0 = x + int((0.5 + sx) * l); y0 = y + int(sy * h)
+        d.line([x0, y0 + 12, x0, y0], fill=VERT_F, width=4)
+        d.ellipse([x0 - 5, y0 - 6, x0 + 5, y0 + 4], fill=VERT_F, outline=CONT, width=2)
+
+
+def oignon(d, cx, cy, t):
+    # oignon : bulbe doré + pousses ; (cx,cy) = centre du bulbe
+    d.ellipse([cx - int(0.7 * t), cy - int(0.6 * t), cx + int(0.7 * t), cy + int(0.7 * t)], fill=(223, 168, 96), outline=CONT, width=3)
+    d.arc([cx - int(0.28 * t), cy - int(0.55 * t), cx + int(0.28 * t), cy + int(0.65 * t)], 250, 470, fill=CONT, width=2)
+    for dx in (-0.22, 0, 0.22):
+        x0 = cx + int(dx * t)
+        d.line([x0, cy - int(0.5 * t), x0 + int(0.18 * t), cy - int(1.15 * t)], fill=VERT_F, width=5)
+    for dx in (-0.3, -0.1, 0.1, 0.3):
+        d.line([cx + int(dx * t), cy + int(0.66 * t), cx + int(dx * t) + 4, cy + int(0.85 * t)], fill=CONT, width=2)
+
+
+def cigogne(d, cx, cy, t):
+    # cigogne blanche : corps, aile noire, long cou, bec rouge, 1 patte ; (cx,cy) = centre du corps
+    d.line([cx - int(0.2 * t), cy + int(0.5 * t), cx - int(0.2 * t), cy + int(1.15 * t)], fill=CONT, width=4)
+    d.line([cx + int(0.2 * t), cy + int(0.5 * t), cx + int(0.55 * t), cy + int(0.9 * t), cx + int(0.55 * t), cy + int(1.15 * t)], fill=CONT, width=4)
+    d.ellipse([cx - int(0.9 * t), cy - int(0.45 * t), cx + int(0.9 * t), cy + int(0.55 * t)], fill=CIER, outline=CONT, width=3)
+    d.ellipse([cx - int(0.55 * t), cy - int(0.25 * t), cx + int(0.45 * t), cy + int(0.45 * t)], fill=(90, 98, 105), outline=CONT, width=2)
+    d.line([cx + int(0.65 * t), cy - int(0.2 * t), cx + int(0.85 * t), cy - int(0.95 * t)], fill=CONT, width=5)
+    hr = int(0.2 * t); hx, hy = cx + int(0.95 * t), cy - int(1.05 * t)
+    d.ellipse([hx - hr, hy - hr, hx + hr, hy + hr], fill=CIER, outline=CONT, width=3)
+    d.ellipse([hx + int(0.08 * t), hy - 6, hx + int(0.08 * t) + 5, hy - 1], fill=NOIR)
+    d.polygon([(hx + hr - 2, hy - 5), (hx + hr - 2, hy + 6), (hx + int(1.5 * t), hy + 4)], fill=ROUGE_F, outline=CONT)
+
+
+def couronne(d, cx, cy, t):
+    # couronne de reine ; (cx,cy) = centre
+    pts = [(cx - int(0.6 * t), cy + int(0.35 * t)), (cx - int(0.6 * t), cy - int(0.15 * t)),
+           (cx - int(0.3 * t), cy + int(0.05 * t)), (cx, cy - int(0.4 * t)),
+           (cx + int(0.3 * t), cy + int(0.05 * t)), (cx + int(0.6 * t), cy - int(0.15 * t)),
+           (cx + int(0.6 * t), cy + int(0.35 * t))]
+    d.polygon(pts, fill=JAUNE_F, outline=CONT)
+
+
+def nuage_simple(d, cx, cy, t):
+    # petit nuage ; (cx,cy) = centre
+    for dx, dy, rr in [(-0.5, 0.1, 0.45), (0.5, 0.1, 0.45), (0, -0.2, 0.6), (0, 0.15, 0.5)]:
+        r2 = int(rr * t)
+        x0 = cx + int(dx * t) - r2; y0 = cy + int(dy * t) - r2
+        d.ellipse([x0, y0, x0 + 2 * r2, y0 + 2 * r2], fill=(236, 244, 250), outline=CONT, width=3)
+
+
+def centre_texte(d, cx, y, texte, taille, couleur, bold=True):
+    ft = font(taille, bold=bold)
+    bb = d.textbbox((0, 0), texte, font=ft)
+    d.text((cx - (bb[2] - bb[0]) // 2, y), texte, font=ft, fill=couleur)
+
+
+# 38. s61_son_gn.png — nouveaux mots avec GN
+img, d = nouvelle(1100, 560)
+d.rounded_rectangle([40, 40, 260, 190], radius=16, fill=(255, 253, 245), outline=CONT, width=5)
+centre_texte(d, 150, 62, "GN", 95, BLEU_F)
+d.text((300, 92), "De NOUVEAUX mots avec GN :", font=font(42), fill=CONT)
+montagne(d, 240, 400, 150, 165)
+champ(d, 420, 285, 155, 115)
+agneau(d, 690, 330, 50)
+peigne(d, 880, 315, 42)
+def etiquette_petite(d, cx, y, texte):
+    f = font(24)
+    bb = d.textbbox((0, 0), texte, font=f)
+    w = bb[2] - bb[0]
+    d.rounded_rectangle([cx - w // 2 - 14, y, cx + w // 2 + 14, y + 44], radius=10, fill=(255, 253, 245), outline=CONT, width=3)
+    d.text((cx - w // 2, y + 8 - bb[1]), texte, font=f, fill=NOIR)
+etiquette_petite(d, 318, 444, "montagne")
+etiquette_petite(d, 509, 444, "campagne")
+etiquette_petite(d, 690, 444, "agneau")
+etiquette_petite(d, 880, 444, "peigne")
+img.save(os.path.join(OUT, "s61_son_gn.png"))
+
+# 39. s62_mots_gn.png — encore des mots avec GN
+img, d = nouvelle(1100, 560)
+centre_texte(d, 550, 32, "ENCORE DES MOTS AVEC GN :", 42, CONT)
+oignon(d, 300, 320, 55)
+d.rectangle([410, 255, 590, 282], fill=(255, 241, 178), outline=CONT, width=3)
+for tx in range(425, 585, 22):
+    d.line([tx, 255, tx, 268], fill=CONT, width=2)
+d.line([395, 330, 585, 330], fill=BLEU_F, width=5)
+d.polygon([(600, 330), (580, 322), (580, 338)], fill=BLEU_F, outline=CONT)
+d.rectangle([674, 250, 686, 400], fill=GRIS, outline=CONT, width=2)
+d.polygon([(680, 155), (618, 252), (742, 252)], fill=(255, 249, 230), outline=ROUGE_F)
+centre_texte(d, 680, 185, "!", 42, ROUGE_F)
+cigogne(d, 890, 320, 58)
+etiquette(d, 300, 440, "l'oignon")
+etiquette(d, 497, 440, "la ligne")
+etiquette(d, 680, 440, "le signe")
+etiquette(d, 890, 440, "la cigogne")
+img.save(os.path.join(OUT, "s62_mots_gn.png"))
+
+# 40. s63_gn_ou_n.png — GN ou N ?
+img, d = nouvelle(1100, 560)
+d.rounded_rectangle([40, 30, 520, 460], radius=20, fill=(232, 240, 252), outline=CONT, width=4)
+d.rounded_rectangle([580, 30, 1060, 460], radius=20, fill=(232, 245, 233), outline=CONT, width=4)
+centre_texte(d, 280, 48, "GN", 58, BLEU_F)
+montagne(d, 105, 300, 105, 115)
+peigne(d, 345, 265, 38)
+centre_texte(d, 280, 330, "montagne • agneau • peigne", 26, CONT, bold=False)
+centre_texte(d, 280, 368, "comme dans : « montagne »", 28, BLEU_F)
+centre_texte(d, 280, 408, "la langue monte au palais !", 25, CONT, bold=False)
+centre_texte(d, 820, 48, "N", 58, VERT_F)
+nuage_simple(d, 730, 220, 45)
+couronne(d, 940, 255, 42)
+centre_texte(d, 820, 330, "nuage • nage • reine", 26, CONT, bold=False)
+centre_texte(d, 820, 368, "comme dans : « nuage »", 28, VERT_F)
+centre_texte(d, 820, 408, "le N tout simple, sans GN !", 25, CONT, bold=False)
+centre_texte(d, 550, 490, "GN ou N ? J'écoute bien !", 36, CONT)
+img.save(os.path.join(OUT, "s63_gn_ou_n.png"))
+
+# 41. s65_comptine_gn.png — affiche comptine GN
+img, d = nouvelle(1100, 620)
+d.rounded_rectangle([40, 30, 1060, 590], radius=26, fill=(255, 253, 245), outline=CONT, width=5)
+centre_texte(d, 550, 60, "LA COMPTINE GN", 42, ROUGE_F)
+vers = [
+    "GN, GN, la grande montagne,",
+    "GN, GN, la jolie campagne.",
+    "Un agneau gagne le chemin,",
+    "et la cigogne vole au loin.",
+    "Avec mon peigne, mon oignon,",
+    "je gagne la maison, c'est bon !",
+]
+y = 180
+for v in vers:
+    d.text((230, y), v, font=font(34, bold=False), fill=CONT)
+    y += 62
+montagne(d, 820, 552, 115, 85)
+agneau(d, 995, 505, 26)
+img.save(os.path.join(OUT, "s65_comptine_gn.png"))
+
+# 42. s70_performance_gn.png — performance finale GN
+img, d = nouvelle(1100, 520)
+d.rectangle([0, 420, 1100, 520], fill=(180, 205, 150))
+montagne(d, 40, 420, 190, 195)
+montagne(d, 830, 420, 190, 195)
+d.polygon([(480, 170), (620, 170), (600, 320), (500, 320)], fill=JAUNE_F, outline=CONT)
+d.rectangle([530, 320, 570, 370], fill=JAUNE_F, outline=CONT)
+d.rectangle([490, 370, 610, 410], fill=(121, 85, 72), outline=CONT)
+d.arc([430, 170, 500, 250], 270, 90, fill=CONT, width=8)
+d.arc([600, 170, 670, 250], 90, 270, fill=CONT, width=8)
+centre_texte(d, 550, 200, "GN", 44, NOIR)
+for sx, sy2 in [(400, 95), (550, 55), (700, 95), (390, 250), (715, 245)]:
+    d.polygon([(sx, sy2 - 22), (sx + 7, sy2 - 7), (sx + 22, sy2 - 5), (sx + 11, sy2 + 5), (sx + 13, sy2 + 20), (sx, sy2 + 12), (sx - 13, sy2 + 20), (sx - 11, sy2 + 5), (sx - 22, sy2 - 5), (sx - 7, sy2 - 7)], fill=JAUNE_F, outline=CONT)
+perso(d, 320, 300, 30, haut=BLEU_F, bras_up=True)
+perso(d, 780, 300, 30, haut=VERT_F, bras_up=True)
+img.save(os.path.join(OUT, "s70_performance_gn.png"))
+
+print("Illustrations du thème 7 générées.")
