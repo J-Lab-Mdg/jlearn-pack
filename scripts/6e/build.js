@@ -14,8 +14,18 @@ const {
 } = B;
 
 const progression = require("./progression");
-const seancesP1 = require("./seances-p1");
 const revisions = require("./revisions");
+
+// Les séances de chaque période vivent dans leur propre fichier. Une période
+// non encore rédigée est simplement absente : le manuel se construit avec ce
+// qui existe, ce qui permet de livrer période par période.
+function chargerSeances(id) {
+  try { return require(`./seances-${id.toLowerCase()}`); }
+  catch (e) { if (e.code === "MODULE_NOT_FOUND") return []; throw e; }
+}
+const parPeriode = Object.fromEntries(
+  progression.map((per) => [per.id, chargerSeances(per.id)]));
+const rediges = progression.reduce((a, per) => a + parPeriode[per.id].length, 0);
 
 const TOTAL = progression.reduce(
   (s, per) => s + per.chapitres.reduce((a, c) => a + c.seances, 0), 0);
@@ -99,7 +109,7 @@ function sommaire() {
       const from = n + 1; n += c.seances;
       out.push(p(`${c.nom} — séances ${from} à ${n}`, { indent: { left: 340 }, spacing: { after: 30 } }));
     });
-    if (revisions[per.id]) {
+    if (parPeriode[per.id].length && revisions[per.id]) {
       out.push(tocLink(`revision${per.id}`, revisions[per.id].revision.titre, 340));
       out.push(tocLink(`examen${per.id}`, revisions[per.id].examen.titre, 340));
     }
@@ -360,28 +370,34 @@ const children = [
   ...couverture(), ...avantPropos(), ...modeEmploi(), ...sommaire(), ...tableauDeBord(),
 ];
 
-const periodeP1 = progression[0];
-const totalP1 = periodeP1.chapitres.reduce((a, c) => a + c.seances, 0);
+let numero = 0;
+progression.forEach((per) => {
+  const seances = parPeriode[per.id];
+  if (!seances.length) return;
+  const totalLocal = per.chapitres.reduce((a, c) => a + c.seances, 0);
 
-children.push(new Paragraph({
-  alignment: AlignmentType.CENTER, spacing: { before: 400, after: 200 },
-  children: [new TextRun({
-    text: `PÉRIODE ${periodeP1.romain}`, font: FONT, size: 44, bold: true, color: C.titre })],
-}));
-children.push(new Paragraph({
-  alignment: AlignmentType.CENTER, spacing: { after: 300 },
-  children: [new TextRun({ text: periodeP1.titre, font: FONT, size: 26, bold: true })],
-}));
-children.push(new Paragraph({ children: [new PageBreak()] }));
+  children.push(new Paragraph({
+    alignment: AlignmentType.CENTER, spacing: { before: 400, after: 200 },
+    children: [new TextRun({
+      text: `PÉRIODE ${per.romain}`, font: FONT, size: 44, bold: true, color: C.titre })],
+  }));
+  children.push(new Paragraph({
+    alignment: AlignmentType.CENTER, spacing: { after: 300 },
+    children: [new TextRun({ text: per.titre, font: FONT, size: 26, bold: true })],
+  }));
+  children.push(new Paragraph({ children: [new PageBreak()] }));
 
-seancesP1.forEach((s, i) => {
-  children.push(...batirSeance(s, i + 1, periodeP1, i + 1, totalP1));
+  seances.forEach((s, i) => {
+    numero += 1;
+    children.push(...batirSeance(s, numero, per, i + 1, totalLocal));
+  });
+
+  // Révision et sujet d'examen : seulement si la période est complète.
+  if (seances.length >= totalLocal && revisions[per.id]) {
+    children.push(...batirRevision(revisions[per.id].revision, per));
+    children.push(...batirExamen(revisions[per.id].examen, per));
+  }
 });
-
-if (seancesP1.length >= totalP1 && revisions[periodeP1.id]) {
-  children.push(...batirRevision(revisions[periodeP1.id].revision, periodeP1));
-  children.push(...batirExamen(revisions[periodeP1.id].examen, periodeP1));
-}
 
 const doc = new Document({
   creator: "Collection J-Learn",
@@ -414,5 +430,10 @@ const outFile = path.join(outDir, "Manuel-Mathematiques-6e-JLearn-V1.docx");
 Packer.toBuffer(doc).then((buf) => {
   fs.writeFileSync(outFile, buf);
   console.log(`OK  ${outFile}  ${(buf.length / 1024).toFixed(0)} Ko`);
-  console.log(`    ${seancesP1.length} séance(s) rédigée(s) sur ${TOTAL} prévues`);
+  console.log(`    ${rediges} séance(s) rédigée(s) sur ${TOTAL} prévues`);
+  progression.forEach((per) => {
+    const n = parPeriode[per.id].length;
+    const t = per.chapitres.reduce((a, c) => a + c.seances, 0);
+    console.log(`      Période ${per.romain.padEnd(3)} ${String(n).padStart(2)} / ${t}`);
+  });
 });
