@@ -1,4 +1,4 @@
-# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°7 (Blocs 1-5)
+# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°8 (Blocs 1-6)
 
 ## 1. ÉTAT D'AVANCEMENT
 
@@ -17,10 +17,16 @@
     du/doux — ne pas confondre avec le Thème 2 I/U : ici U seul), panier de 11 mots en U, comptine U (créée,
     pièges : carré/parfait/répète finissent par é), articulation en miroir (U rond court / OU long / I sourire),
     position du U dans le mot, répétition rythmée, performance finale 3 épreuves + trophée.
-  - Livrable courant : `output/Manuel_Francais_11e_V1_THEMES1-5.docx` (**cumulatif** séances 1-50 :
-    couverture, avant-propos, mode d'emploi, sommaire interactif, 5 thèmes, 50 fiches/leçons/exercices/corrigés).
-- **Bloc en cours si interrompu** : aucun — le Bloc 5 est terminé proprement (docx vérifié : TOUT CONFORME ×50).
-- **Blocs restants** : Thèmes 6 à 8 du manuel existant (Le village, son GN) **+ extension** T1 fin / T2 / T3 d'après la FRA : parties du corps, toilette, espace, temps, famille,
+  - Bloc 6 — Thème 6 « Le village » (Langage, séances 51-60) — rédigé d'après la FRA (parler de son village) :
+    mon village (case, école, boutique, puits, marché, église) + « J'habite dans un village », lieux et actions
+    (devinettes), **il y a / il n'y a pas**, dialogue « Où habites-tu ? » (jeu du ballon), comptine du village
+    (créée, 6 vers), ma maison (porte/fenêtre/toit/murs), situer avec **sur/sous/dans/devant/derrière**
+    (« Où est le chat ? »), dialogue du marché (mots polis, jeu de rôle fruits), village propre (balayer,
+    poubelle, laver les mains), performance finale 3 épreuves + trophée.
+  - Livrable courant : `output/Manuel_Francais_11e_V1_THEMES1-6.docx` (**cumulatif** séances 1-60 :
+    couverture, avant-propos, mode d'emploi, sommaire interactif, 6 thèmes, 60 fiches/leçons/exercices/corrigés).
+- **Bloc en cours si interrompu** : aucun — le Bloc 6 est terminé proprement (docx vérifié : TOUT CONFORME ×60).
+- **Blocs restants** : Thème 7 « Le son GN » et Thème 8 du manuel existant **+ extension** T1 fin / T2 / T3 d'après la FRA : parties du corps, toilette, espace, temps, famille,
   maison, classe, points cardinaux, carte de Madagascar, épicier, ferme, cultivateur, tâches ménagères
   + sons UN, S-CH, ZE-JE, OUI-UI, AN-ON, ILLE, é-è, EU, IN, IE, OIN.
 
@@ -67,16 +73,17 @@
 
 ## 6. À FAIRE EN PRIORITÉ PAR LE PROCHAIN RELAIS
 
-1. Lire `README.md` du projet et `src/data-theme5.js` (comprendre le format des données d'une séance).
-2. Reproduire l'environnement : `npm install` dans `francais-11e-projet/`, tester `node src/assemble-bloc5.js`,
-   puis `python3 verify_docx.py output/Manuel_Francais_11e_V1_THEMES1-5.docx 50` (22 vérifications skill
-   → TOUT CONFORME ×50 attendu : 6 col=50, 4 col ≥50, signets ≥54).
-3. **Bloc 6 = Thème 6 « Le village » (séances 51-60, Langage)** : rédiger d'après la FRA (le PDF source est
-   illisible au-delà de la page 30 — les thèmes 2-5 ont tous été rédigés ainsi), créer `src/data-theme6.js`
-   sur le gabarit de `data-theme5.js`, illustrations dans `illus/generate_illus.py` (helpers `perso`, `bulle`,
-   `soleil`, `panneau`, `mur_briques`, `roue`…), étendre `assemble-bloc5.js` en `assemble-bloc6.js`
-   (THEMES=[theme1..theme6], OUT THEMES1-6.docx, footer « FIN DU BLOC 6 (SÉANCES 1 À 60) » /
-   « À suivre : Thème 7 — Le son GN »), sommaire cumulatif, numérotation continue 1→60.
+1. Lire `README.md` du projet et `src/data-theme6.js` (comprendre le format des données d'une séance).
+2. Reproduire l'environnement : `npm install` dans `francais-11e-projet/`, tester `node src/assemble-bloc6.js`,
+   puis `python3 verify_docx.py output/Manuel_Francais_11e_V1_THEMES1-6.docx 60` (22 vérifications skill
+   → TOUT CONFORME ×60 attendu : 6 col=60, 4 col ≥60, signets ≥64).
+3. **Bloc 7 = Thème 7 « Le son GN » (séances 61-70, Phonétique)** : rédiger d'après la FRA (le PDF source est
+   illisible au-delà de la page 30 — les thèmes 2-6 ont tous été rédigés ainsi ; mots en GN : montagne,
+   campagne, agneau, peigne, oignon...), créer `src/data-theme7.js` sur le gabarit de `data-theme6.js`,
+   illustrations dans `illus/generate_illus.py` (helpers `perso`, `bulle`, `soleil`, `panneau`, `case_village`,
+   `puits`, `arbre`, `chat`, `boutique`…), étendre `assemble-bloc6.js` en `assemble-bloc7.js`
+   (THEMES=[theme1..theme7], OUT THEMES1-7.docx, footer « FIN DU BLOC 7 (SÉANCES 1 À 70) » /
+   « À suivre : Thème 8 — ... »), sommaire cumulatif, numérotation continue 1→70.
 4. Après tout write_file de `data-themeN.js` : vérifier la présence par `ls -la src/` AVANT le pipeline
    (écriture asynchrone du sandbox — ne pas réécrire immédiatement si absent au 1er ls) ; nettoyer les doubles
    espaces d'alignement (regex sur les chaînes quotées) avant `node`.
@@ -88,7 +95,7 @@
 ## 7. QUESTIONS EN SUSPENS POUR L'UTILISATEUR
 
 - Séances 11 à 80 du PDF source non extractibles au-delà de la page 30 du PDF (limite du parseur) :
-  les thèmes 2-5 ont été rédigés directement depuis la FRA (contenu officiel) ; thèmes 6-8 : même méthode
-  sauf re-upload du .docx source dans une session future — le style des Thèmes 1-5 sert de gabarit.
+  les thèmes 2-6 ont été rédigés directement depuis la FRA (contenu officiel) ; thèmes 7-8 : même méthode
+  sauf re-upload du .docx source dans une session future — le style des Thèmes 1-6 sert de gabarit.
 - L'utilisateur a confirmé le périmètre « programme annuel complet » : le découpage définitif des thèmes 9+
   (au-delà des 8 du manuel existant) reste à proposer bloc par bloc, à faire valider à chaque relais.

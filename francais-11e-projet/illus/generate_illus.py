@@ -825,3 +825,205 @@ img.save(os.path.join(OUT, "s50_performance_u.png"))
 print("Illustrations générées (thèmes 1-5) :")
 for f in sorted(os.listdir(OUT)):
     print("  -", f)
+
+# ============================================================
+# THÈME 6 — LE VILLAGE (séances 51-60, Langage)
+# ============================================================
+
+def case_village(d, x, y, l, h, murcol=MUR, toitcol=TOIT, fenetre=True):
+    # case : murs + toit de chaume ; (x,y) = coin haut-gauche des murs
+    d.rectangle([x, y, x + l, y + h], fill=murcol, outline=CONT, width=3)
+    d.polygon([(x - int(0.12 * l), y), (x + l + int(0.12 * l), y), (x + l // 2, y - int(0.5 * l))], fill=toitcol, outline=CONT)
+    dw = l // 4
+    d.rectangle([x + l // 2 - dw // 2, y + int(0.45 * h), x + l // 2 + dw // 2, y + h], fill=(160, 110, 60), outline=CONT, width=3)
+    if fenetre and l >= 120:
+        ww = l // 6
+        d.rectangle([x + int(0.12 * l), y + int(0.25 * h), x + int(0.12 * l) + ww, y + int(0.25 * h) + ww], fill=BLEU, outline=CONT, width=2)
+        d.rectangle([x + l - int(0.12 * l) - ww, y + int(0.25 * h), x + l - int(0.12 * l), y + int(0.25 * h) + ww], fill=BLEU, outline=CONT, width=2)
+
+
+def puits(d, cx, yb, s=1.0):
+    # puits : bassin en pierre + 2 poteaux + toit + corde et seau ; yb = base au sol
+    w = int(120 * s); h = int(52 * s); ph = int(70 * s)
+    d.rounded_rectangle([cx - w // 2, yb - h, cx + w // 2, yb], radius=8, fill=GRIS, outline=CONT, width=3)
+    d.line([cx - w // 2 + 8, yb - h, cx - w // 2 + 8, yb - h - ph], fill=CONT, width=4)
+    d.line([cx + w // 2 - 8, yb - h, cx + w // 2 - 8, yb - h - ph], fill=CONT, width=4)
+    d.polygon([(cx - w // 2 - int(14 * s), yb - h - ph), (cx + w // 2 + int(14 * s), yb - h - ph), (cx, yb - h - ph - int(38 * s))], fill=TOIT, outline=CONT)
+    d.line([cx, yb - h - ph + 6, cx, yb - h - int(14 * s)], fill=CONT, width=3)
+    bw = int(18 * s)
+    d.rectangle([cx - bw // 2, yb - h - int(14 * s), cx + bw // 2, yb - h - int(2 * s)], fill=(160, 110, 60), outline=CONT, width=2)
+
+
+def arbre(d, cx, yb, s=1.0):
+    # arbre : tronc + feuillage en nuage ; yb = base du tronc au sol
+    tw = int(22 * s); th = int(120 * s)
+    d.rectangle([cx - tw // 2, yb - th, cx + tw // 2, yb], fill=(121, 85, 72), outline=CONT, width=3)
+    fr = int(60 * s); fy = yb - th - fr // 3
+    for dx, dy, rr in [(-0.7, 0.15, 0.7), (0.7, 0.15, 0.7), (0, -0.55, 0.75), (0, 0, 1.0)]:
+        rr2 = int(rr * fr)
+        x0 = cx + int(dx * fr) - rr2; y0 = fy + int(dy * fr) - rr2
+        d.ellipse([x0, y0, x0 + 2 * rr2, y0 + 2 * rr2], fill=VERT, outline=CONT, width=3)
+
+
+def chat(d, cx, cy, t):
+    # petit chat plat ; (cx,cy) = centre du corps
+    d.ellipse([cx - t, cy - t // 2, cx + t, cy + int(1.1 * t)], fill=ORANGE, outline=CONT, width=3)
+    hr = int(0.55 * t); hx, hy = cx, cy - int(0.85 * t)
+    d.polygon([(hx - hr + 2, hy - hr // 2), (hx - hr // 2, hy - hr), (hx - int(0.9 * hr), hy - 2 * hr)], fill=ORANGE, outline=CONT)
+    d.polygon([(hx + hr - 2, hy - hr // 2), (hx + hr // 2, hy - hr), (hx + int(0.9 * hr), hy - 2 * hr)], fill=ORANGE, outline=CONT)
+    d.ellipse([hx - hr, hy - hr, hx + hr, hy + hr], fill=ORANGE, outline=CONT, width=3)
+    er = max(2, t // 10)
+    d.ellipse([hx - hr // 2 - er, hy - er, hx - hr // 2 + er, hy + er], fill=NOIR)
+    d.ellipse([hx + hr // 2 - er, hy - er, hx + hr // 2 + er, hy + er], fill=NOIR)
+    d.arc([cx + t - 8, cy - 4, cx + int(1.7 * t), cy + int(1.2 * t)], 250, 60, fill=CONT, width=5)
+
+
+def boutique(d, x, y, l, h):
+    # boutique : murs + auvent rayé + porte
+    d.rectangle([x, y, x + l, y + h], fill=MUR, outline=CONT, width=3)
+    d.rectangle([x + l // 2 - l // 8, y + int(0.45 * h), x + l // 2 + l // 8, y + h], fill=(160, 110, 60), outline=CONT, width=3)
+    n = 5; sw = l // n
+    for i in range(n):
+        col = ROSE if i % 2 == 0 else CIER
+        d.rectangle([x + i * sw, y, x + (i + 1) * sw, y + int(0.22 * h)], fill=col, outline=CONT, width=2)
+
+
+# 33. s51_mon_village.png — affiche du village
+img, d = nouvelle(1100, 560)
+soleil(d, 90, 90, 45)
+sol(d, 0, 1100, 452)
+case_village(d, 60, 335, 130, 115, fenetre=False)
+case_village(d, 210, 335, 130, 115)
+d.rectangle([400, 305, 610, 452], fill=MUR, outline=CONT, width=3)
+d.polygon([(385, 305), (625, 305), (505, 210)], fill=VERT_F, outline=CONT)
+panneau(d, 435, 316, 140, 44, "ÉCOLE", VERT_F)
+arbre(d, 655, 452, 0.75)
+d.rectangle([487, 380, 523, 452], fill=(160, 110, 60), outline=CONT, width=3)
+d.rectangle([418, 378, 452, 408], fill=BLEU, outline=CONT, width=2)
+d.rectangle([558, 378, 592, 408], fill=BLEU, outline=CONT, width=2)
+boutique(d, 700, 335, 140, 115)
+puits(d, 980, 452, 1.0)
+etiquette(d, 200, 478, "les cases")
+etiquette(d, 505, 478, "l'école")
+etiquette(d, 770, 478, "la boutique")
+etiquette(d, 980, 478, "le puits")
+ft = font(44)
+bb = d.textbbox((0, 0), "MON VILLAGE", font=ft)
+d.text(((1100 - (bb[2] - bb[0])) // 2, 28), "MON VILLAGE", font=ft, fill=CONT)
+img.save(os.path.join(OUT, "s51_mon_village.png"))
+
+# 34. s53_il_y_a.png — il y a / il n'y a pas
+img, d = nouvelle(1100, 560)
+d.rounded_rectangle([40, 30, 520, 460], radius=20, fill=(232, 245, 233), outline=CONT, width=4)
+d.rounded_rectangle([580, 30, 1060, 460], radius=20, fill=(253, 235, 236), outline=CONT, width=4)
+ft = font(58)
+bb = d.textbbox((0, 0), "IL Y A", font=ft)
+d.text((280 - (bb[2] - bb[0]) // 2, 52), "IL Y A", font=ft, fill=VERT_F)
+case_village(d, 100, 265, 110, 95, fenetre=False)
+d.rectangle([240, 255, 380, 360], fill=MUR, outline=CONT, width=3)
+d.polygon([(228, 255), (392, 255), (310, 185)], fill=VERT_F, outline=CONT)
+d.rectangle([292, 305, 328, 360], fill=(160, 110, 60), outline=CONT, width=2)
+puits(d, 455, 360, 0.75)
+ft = font(26)
+bb = d.textbbox((0, 0), "une école, un puits,", font=ft)
+d.text((280 - (bb[2] - bb[0]) // 2, 385), "une école, un puits,", font=ft, fill=CONT)
+bb = d.textbbox((0, 0), "des cases...", font=ft)
+d.text((280 - (bb[2] - bb[0]) // 2, 418), "des cases...", font=ft, fill=CONT)
+ft = font(50)
+bb = d.textbbox((0, 0), "IL N'Y A PAS", font=ft)
+d.text((820 - (bb[2] - bb[0]) // 2, 55), "IL N'Y A PAS", font=ft, fill=ROUGE_F)
+d.rounded_rectangle([710, 225, 930, 300], radius=12, fill=BLEU_F, outline=CONT, width=3)
+d.rectangle([805, 235, 860, 268], fill=CIER, outline=CONT, width=2)
+d.rectangle([722, 190, 748, 225], fill=ROUGE_F, outline=CONT, width=3)
+roue(d, 755, 315, 22)
+roue(d, 885, 315, 22)
+d.line([690, 348, 950, 348], fill=CONT, width=5)
+d.line([680, 180, 960, 345], fill=ROUGE_F, width=12)
+d.line([960, 180, 680, 345], fill=ROUGE_F, width=12)
+ft = font(26)
+bb = d.textbbox((0, 0), "pas de train dans mon village !", font=ft)
+d.text((820 - (bb[2] - bb[0]) // 2, 400), "pas de train dans mon village !", font=ft, fill=CONT)
+ft = font(30)
+msg = "Dans mon village, il y a une école. Il n'y a pas de train."
+bb = d.textbbox((0, 0), msg, font=ft)
+d.text(((1100 - (bb[2] - bb[0])) // 2, 505), msg, font=ft, fill=CONT)
+img.save(os.path.join(OUT, "s53_il_y_a.png"))
+
+# 35. s55_comptine_village.png — affiche comptine du village
+img, d = nouvelle(1100, 620)
+d.rounded_rectangle([40, 30, 1060, 590], radius=26, fill=(255, 253, 245), outline=CONT, width=5)
+ft = font(42)
+bb = d.textbbox((0, 0), "LA COMPTINE DU VILLAGE", font=ft)
+d.text(((1100 - (bb[2] - bb[0])) // 2, 60), "LA COMPTINE DU VILLAGE", font=ft, fill=ROUGE_F)
+vers = [
+    "Mon village, c'est mon chez-moi,",
+    "mes cases dorment sous le toit.",
+    "L'école ouvre ses grands livres,",
+    "au puits, l'eau rit quand on arrive.",
+    "Au marché, je dis bonjour,",
+    "mon village est plein d'amour !",
+]
+y = 180
+for v in vers:
+    d.text((230, y), v, font=font(34, bold=False), fill=CONT)
+    y += 62
+case_village(d, 870, 465, 80, 62, fenetre=False, toitcol=VERT_F)
+case_village(d, 965, 465, 80, 62, fenetre=False)
+puits(d, 880, 560, 0.6)
+img.save(os.path.join(OUT, "s55_comptine_village.png"))
+
+# 36. s57_ou_est_chat.png — où est le chat ? (positions)
+img, d = nouvelle(1100, 560)
+ft = font(42)
+bb = d.textbbox((0, 0), "OÙ EST LE CHAT ?", font=ft)
+d.text(((1100 - (bb[2] - bb[0])) // 2, 30), "OÙ EST LE CHAT ?", font=ft, fill=CONT)
+# scène 1 : sur la table (cx=145)
+d.rectangle([65, 260, 225, 282], fill=(160, 110, 60), outline=CONT, width=3)
+d.rectangle([85, 282, 102, 360], fill=(160, 110, 60), outline=CONT, width=3)
+d.rectangle([188, 282, 205, 360], fill=(160, 110, 60), outline=CONT, width=3)
+chat(d, 145, 232, 24)
+# scène 2 : sous la table (cx=385)
+d.rectangle([305, 260, 465, 282], fill=(160, 110, 60), outline=CONT, width=3)
+d.rectangle([325, 282, 342, 360], fill=(160, 110, 60), outline=CONT, width=3)
+d.rectangle([428, 282, 445, 360], fill=(160, 110, 60), outline=CONT, width=3)
+chat(d, 385, 318, 24)
+# scène 3 : dans la boîte (cx=635)
+chat(d, 635, 275, 24)
+d.rectangle([565, 292, 705, 360], fill=ROSE, outline=CONT, width=4)
+d.polygon([(565, 292), (635, 258), (705, 292)], fill=(247, 173, 200), outline=CONT, width=3)
+# scène 4 : derrière l'arbre (cx=900)
+chat(d, 878, 322, 22)
+d.rectangle([890, 245, 912, 360], fill=(121, 85, 72), outline=CONT, width=3)
+fr = 62
+for dx, dy, rr in [(-0.7, 0.15, 0.7), (0.7, 0.15, 0.7), (0, -0.55, 0.75), (0, 0, 1.0)]:
+    rr2 = int(rr * fr)
+    x0 = 901 + int(dx * fr) - rr2; y0 = 175 + int(dy * fr) - rr2
+    d.ellipse([x0, y0, x0 + 2 * rr2, y0 + 2 * rr2], fill=VERT, outline=CONT, width=3)
+etiquette(d, 145, 408, "sur la table")
+etiquette(d, 385, 408, "sous la table")
+etiquette(d, 635, 408, "dans la boîte")
+etiquette(d, 900, 408, "derrière l'arbre")
+img.save(os.path.join(OUT, "s57_ou_est_chat.png"))
+
+# 37. s60_performance_village.png — performance finale
+img, d = nouvelle(1100, 520)
+d.rectangle([0, 420, 1100, 520], fill=(180, 205, 150))
+case_village(d, 55, 345, 105, 78, fenetre=False)
+puits(d, 225, 422, 0.62)
+case_village(d, 855, 345, 105, 78, fenetre=False)
+arbre(d, 1005, 422, 0.85)
+d.polygon([(480, 170), (620, 170), (600, 320), (500, 320)], fill=JAUNE_F, outline=CONT)
+d.rectangle([530, 320, 570, 370], fill=JAUNE_F, outline=CONT)
+d.rectangle([490, 370, 610, 410], fill=(121, 85, 72), outline=CONT)
+d.arc([430, 170, 500, 250], 270, 90, fill=CONT, width=8)
+d.arc([600, 170, 670, 250], 90, 270, fill=CONT, width=8)
+ft = font(54)
+bb = d.textbbox((0, 0), "V", font=ft)
+d.text((550 - (bb[2] - bb[0]) // 2, 195), "V", font=ft, fill=NOIR)
+for sx, sy2 in [(400, 95), (550, 55), (700, 95), (390, 250), (715, 245)]:
+    d.polygon([(sx, sy2 - 22), (sx + 7, sy2 - 7), (sx + 22, sy2 - 5), (sx + 11, sy2 + 5), (sx + 13, sy2 + 20), (sx, sy2 + 12), (sx - 13, sy2 + 20), (sx - 11, sy2 + 5), (sx - 22, sy2 - 5), (sx - 7, sy2 - 7)], fill=JAUNE_F, outline=CONT)
+perso(d, 320, 300, 30, haut=BLEU_F, bras_up=True)
+perso(d, 780, 300, 30, haut=VERT_F, bras_up=True)
+img.save(os.path.join(OUT, "s60_performance_village.png"))
+
+print("Illustrations du thème 6 générées.")
