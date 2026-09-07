@@ -1,14 +1,17 @@
-# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°3 (Bloc 1)
+# LETTRE DE PASSATION — Manuel Français 11e (CP1) — Relais n°4 (Blocs 1-2)
 
 ## 1. ÉTAT D'AVANCEMENT
 
-- **Blocs/thèmes terminés** : Bloc 1 — Thème 1 « Les salutations » (10 séances sur ~80) :
-  fiche + leçon + exercices + corrigé pour les séances 1 à 10, entièrement mises aux normes du skill v18.
-- **Bloc en cours si interrompu** : aucun — le Bloc 1 est terminé proprement (docx généré et vérifié).
-- **Blocs restants** : Thèmes 2 à 8 du manuel existant (sons I-U, se présenter, son OUI, son U, le village, son GN)
-  **+ extension** pour couvrir le reste de l'année (T1 fin, T2 et T3 complets) d'après la FRA :
-  parties du corps, toilette, espace, temps, famille, maison, classe, points cardinaux, carte de Madagascar,
-  épicier, ferme, cultivateur, tâches ménagères + sons UN, S-CH, ZE-JE, OUI-UI, AN-ON, ILLE, é-è, EU, IN, IE, OIN.
+- **Blocs/thèmes terminés** :
+  - Bloc 1 — Thème 1 « Les salutations » (Langage, séances 1-10) — repris du manuel existant, mis aux normes v18.
+  - Bloc 2 — Thème 2 « Les sons I et U » (Phonétique, séances 11-20) — rédigé d'après la FRA officielle
+    (le PDF source est illisible au-delà de la page 30), gabarit du Bloc 1. Livrable : `output/Manuel_Francais_11e_V1_THEMES1-2.docx`
+    (document **cumulatif** séances 1-20 : couverture, avant-propos, mode d'emploi, sommaire interactif, 2 thèmes).
+- **Bloc en cours si interrompu** : aucun — le Bloc 2 est terminé proprement (docx vérifié : TOUT CONFORME).
+- **Blocs restants** : Thèmes 3 à 8 du manuel existant (Se présenter, son OUI, son U nouveaux mots, Le village,
+  son GN) **+ extension** T1 fin / T2 / T3 d'après la FRA : parties du corps, toilette, espace, temps, famille,
+  maison, classe, points cardinaux, carte de Madagascar, épicier, ferme, cultivateur, tâches ménagères
+  + sons UN, S-CH, ZE-JE, OUI-UI, AN-ON, ILLE, é-è, EU, IN, IE, OIN.
 
 ## 2. FICHIERS À RÉ-UPLOADER AVEC CETTE LETTRE
 

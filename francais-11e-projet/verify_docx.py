@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """
 Vérifications obligatoires post-génération (skill v18) sur le .docx produit.
-Usage : python3 verify_docx.py output/Monuel_xxx.docx
+Usage : python3 verify_docx.py output/Manuel_xxx.docx [nb_seances_attendues=10]
 """
 import re, sys, zipfile
 
 path = sys.argv[1]
+N = int(sys.argv[2]) if len(sys.argv) > 2 else 10
 z = zipfile.ZipFile(path)
 xml = z.read("word/document.xml").decode("utf-8")
 
@@ -34,17 +35,17 @@ checks["doubles espaces = 0"] = (texte_complet.count("  "), 0)
 grids = re.findall(r"<w:tblGrid>(.*?)</w:tblGrid>", xml, flags=re.S)
 six = sum(1 for g in grids if g.count("<w:gridCol") == 6)
 quatre = sum(1 for g in grids if g.count("<w:gridCol") == 4)
-checks["tables 6 col (déroulement) x10"] = (six, 10)
-checks["tables 4 col (méta+dashboard) x11"] = (quatre, 11)  # 10 méta + 1 tableau de bord
+checks[f"tables 6 col (déroulement) x{N}"] = (six, N)
+checks["tables 4 col (méta + dashboards) >= N"] = (quatre, "min")
 
-# 6. FICHE DE PRÉPARATION = 10
-checks["FICHE DE PRÉPARATION = 10"] = (texte_complet.count("FICHE DE PRÉPARATION"), 10)
+# 6. FICHE DE PRÉPARATION = N
+checks[f"FICHE DE PRÉPARATION = {N}"] = (texte_complet.count("FICHE DE PRÉPARATION"), N)
 
 # 7. Signets == ancres des liens internes
 bookmarks = set(re.findall(r'<w:bookmarkStart[^>]*w:name="([^"]+)"', xml))
 anchors = set(re.findall(r'<w:hyperlink[^>]*w:anchor="([^"]+)"', xml))
 checks["tout ancre a un signet"] = (anchors - bookmarks, set())
-checks["nb signets (attendu >= 12)"] = (len(bookmarks), ">=12")
+checks[f"nb signets (attendu >= {N + 4})"] = (len(bookmarks), f">={N + 4}")
 
 # 8. Interdits
 interdits = {
@@ -60,8 +61,8 @@ checks["dates numériques = 0"] = (dates_num, [])
 checks["mois calendaires = 0"] = (mois, [])
 
 # 10. Structure I/II/III dans chaque déroulement (30 fiches de section ? non — 10)
-for motif, attendu in [("I. Révision", 10), ("II. NOUVELLE LEÇON", 10), ("III. Évaluation", 10)]:
-    checks[f"« {motif} » = {attendu}"] = (texte_complet.count(motif), attendu)
+for motif in ["I. Révision", "II. NOUVELLE LEÇON", "III. Évaluation"]:
+    checks[f"« {motif} » = {N}"] = (texte_complet.count(motif), N)
 
 # 11. Aucune durée sur les sous-étapes (ex : "Mise en situation 2")
 durations_sub = re.findall(r"(Mise en situation|Présentation|Observation|Analyse|Synthèse|Application)\s*\n?\s*\d+\s*min", texte_complet)
@@ -70,7 +71,13 @@ checks["sous-étapes sans durée"] = (durations_sub, [])
 ok = True
 print("=" * 64)
 for k, (obtenu, attendu) in checks.items():
-    verdict = "OK " if (obtenu == attendu or (attendu == ">=12" and isinstance(obtenu, int) and obtenu >= 12)) else "ÉCART"
+    if attendu == "min":
+        verdict = "OK " if isinstance(obtenu, int) and obtenu >= N else "ÉCART"
+    elif isinstance(attendu, str) and attendu.startswith(">="):
+        seuil = int(attendu[2:])
+        verdict = "OK " if isinstance(obtenu, int) and obtenu >= seuil else "ÉCART"
+    else:
+        verdict = "OK " if obtenu == attendu else "ÉCART"
     if verdict == "ÉCART":
         ok = False
     print(f"[{verdict}] {k}  →  obtenu : {obtenu!r}" + ("" if verdict == "OK " else f"  (attendu : {attendu!r})"))

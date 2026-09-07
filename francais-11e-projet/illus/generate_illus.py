@@ -267,3 +267,202 @@ img.save(os.path.join(OUT, "s10_bilan.png"))
 print("Illustrations générées :")
 for f in sorted(os.listdir(OUT)):
     print("  -", f)
+
+# ============================================================
+# THÈME 2 — LES SONS I ET U (séances 11-20, Phonétique)
+# ============================================================
+
+def grande_lettre(d, x, y, lettre, coul, sz=130):
+    d.text((x, y), lettre, font=font(sz), fill=coul)
+
+def etiquette(d, cx, y, texte):
+    f = font(30)
+    bb = d.textbbox((0, 0), texte, font=f)
+    w = bb[2] - bb[0]
+    d.rounded_rectangle([cx - w // 2 - 16, y, cx + w // 2 + 16, y + 52], radius=12, fill=(255, 253, 245), outline=CONT, width=3)
+    d.text((cx - w // 2, y + 10 - bb[1]), texte, font=f, fill=NOIR)
+
+def souris(d, x, y, t):
+    """Petite souris grise ; (x,y)=centre du corps."""
+    d.ellipse([x - t, y - t // 2 - t // 4, x + t, y + t], fill=(176, 190, 197), outline=CONT, width=3)
+    d.ellipse([x - t + t // 6, y - t - t // 3, x - t + t // 6 + t // 2, y - t + t // 5], fill=(220, 210, 200), outline=CONT, width=3)
+    d.ellipse([x + t - t // 6 - t // 2, y - t - t // 3, x + t - t // 6, y - t + t // 5], fill=(220, 210, 200), outline=CONT, width=3)
+    er = max(3, t // 9)
+    d.ellipse([x - t // 3 - er // 2, y - t // 3, x - t // 3 + er // 2, y - t // 3 + er], fill=NOIR)
+    d.ellipse([x + t // 3 - er // 2, y - t // 3, x + t // 3 + er // 2, y - t // 3 + er], fill=NOIR)
+    d.ellipse([x - 6, y + t // 5, x + 6, y + t // 5 + 10], fill=ROSE, outline=CONT, width=2)
+    d.arc([x + t, y - t // 3, x + int(t * 2.1), y + t], 270, 90, fill=CONT, width=4)
+
+def bol_riz(d, x, y, l):
+    """Bol de riz ; (x,y)=centre du bol."""
+    d.polygon([(x - l // 2, y), (x + l // 2, y), (x + l // 3, y + int(l * 0.42)), (x - l // 3, y + int(l * 0.42))], fill=BLEU_F, outline=CONT)
+    d.pieslice([x - l // 2, y - int(l * 0.45), x + l // 2, y + int(l * 0.3)], 180, 360, fill=CIER, outline=CONT)
+    for gx in range(-l // 3, l // 3, 14):
+        d.ellipse([x + gx - 4, y - int(l * 0.32) + (gx % 3) * 4, x + gx + 4, y - int(l * 0.32) + 8 + (gx % 3) * 4], fill=(235, 235, 235), outline=CONT, width=1)
+
+def tapis(d, x, y, l, h):
+    d.rounded_rectangle([x, y, x + l, y + h], radius=12, fill=(239, 108, 0), outline=CONT, width=3)
+    for i in range(1, 4):
+        d.line([x + 10, y + i * h // 4, x + l - 10, y + i * h // 4], fill=JAUNE, width=5)
+
+def lune(d, cx, cy, r):
+    d.pieslice([cx - r, cy - r, cx + r, cy + r], 60, 300, fill=JAUNE, outline=CONT, width=3)
+
+def tortue(d, x, y, t):
+    d.pieslice([x - t, y - t, x + t, y + int(t * 0.6)], 180, 360, fill=VERT_F, outline=CONT, width=3)
+    d.polygon([(x - t // 3, y - t + 4), (x, y - int(t * 0.2)), (x + t // 3, y - t + 4)], outline=JAUNE, width=3)
+    d.ellipse([x + t - 4, y - t // 3, x + t + t // 3, y + t // 4], fill=VERT, outline=CONT, width=3)
+    d.ellipse([x + t + t // 5 - 2, y - t // 4, x + t + t // 5 + 4, y - t // 4 + 6], fill=NOIR)
+    for lx in (-t // 2, t // 2 - 6):
+        d.line([x + lx, y + t // 6, x + lx, y + t // 2], fill=VERT, width=max(4, t // 6))
+
+def visage(d, cx, cy, r, bouche="i"):
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=TERRE, outline=CONT, width=4)
+    er = max(4, r // 10)
+    d.ellipse([cx - r // 3 - er // 2, cy - r // 4 - er // 2, cx - r // 3 + er // 2, cy - r // 4 + er // 2], fill=NOIR)
+    d.ellipse([cx + r // 3 - er // 2, cy - r // 4 - er // 2, cx + r // 3 + er // 2, cy - r // 4 + er // 2], fill=NOIR)
+    if bouche == "i":
+        d.line([cx - r // 2, cy + r // 2, cx + r // 2, cy + r // 2], fill=ROUGE_F, width=8)
+        d.line([cx - r // 2, cy + r // 2, cx - int(r * 0.72), cy + int(r * 0.36)], fill=ROUGE_F, width=8)
+        d.line([cx + r // 2, cy + r // 2, cx + int(r * 0.72), cy + int(r * 0.36)], fill=ROUGE_F, width=8)
+    elif bouche == "u":
+        d.ellipse([cx - r // 5, cy + r // 3, cx + r // 5, cy + r // 3 + int(r * 0.42)], fill=ROUGE_F, outline=CONT, width=3)
+
+# 8. s11_son_i.png — le son I : souris, riz, tapis
+img, d = nouvelle(1100, 540)
+d.rectangle([40, 30, 260, 190], fill=(255, 253, 245), outline=CONT, width=4)
+grande_lettre(d, 80, 40, "I", ROUGE_F)
+d.text((160, 105), "i", font=font(90), fill=ROUGE_F)
+souris(d, 430, 300, 70)
+etiquette(d, 430, 400, "la souris")
+bol_riz(d, 690, 320, 150)
+etiquette(d, 690, 400, "le riz")
+tapis(d, 880, 300, 170, 80)
+etiquette(d, 965, 400, "le tapis")
+d.text((330, 70), "J'entends  I  dans :", font=font(40), fill=CONT)
+img.save(os.path.join(OUT, "s11_son_i.png"))
+
+# 9. s12_son_u.png — le son U : lune, tortue, rue
+img, d = nouvelle(1100, 540)
+d.rectangle([40, 30, 260, 190], fill=(255, 253, 245), outline=CONT, width=4)
+grande_lettre(d, 70, 40, "U", BLEU_F)
+lune(d, 430, 280, 75)
+etiquette(d, 430, 400, "la lune")
+tortue(d, 680, 330, 80)
+etiquette(d, 680, 420, "la tortue")
+maison(d, 860, 380, 100, 90)
+maison(d, 980, 380, 100, 90)
+d.line([830, 380, 1090, 380], fill=CONT, width=3)
+etiquette(d, 965, 400, "la rue")
+d.text((330, 70), "J'entends  U  dans :", font=font(40), fill=CONT)
+img.save(os.path.join(OUT, "s12_son_u.png"))
+
+# 10. s13_i_ou_u.png — discrimination I ou U
+img, d = nouvelle(1100, 540)
+d.rectangle([30, 30, 520, 500], fill=(227, 242, 253), outline=CONT, width=4)
+d.rectangle([580, 30, 1070, 500], fill=(255, 243, 224), outline=CONT, width=4)
+grande_lettre(d, 230, 60, "I", ROUGE_F, 110)
+d.text((130, 220), "riz  •  souris", font=font(44, bold=False), fill=CONT)
+d.text((130, 290), "tapis  •  ici", font=font(44, bold=False), fill=CONT)
+d.text((130, 360), "La bouche sourit !", font=font(38), fill=ROUGE_F)
+grande_lettre(d, 780, 60, "U", BLEU_F, 110)
+d.text((680, 220), "lune  •  rue", font=font(44, bold=False), fill=CONT)
+d.text((680, 290), "salut  •  tortue", font=font(44, bold=False), fill=CONT)
+d.text((680, 360), "La bouche est ronde !", font=font(38), fill=BLEU_F)
+d.text((380, 480), "I ou U ? Je choisis !", font=font(40), fill=CONT)
+img.save(os.path.join(OUT, "s13_i_ou_u.png"))
+
+# 11. s15_comptine.png — la comptine I et U
+img, d = nouvelle(1100, 620)
+d.rounded_rectangle([40, 30, 1060, 590], radius=26, fill=(255, 253, 245), outline=CONT, width=5)
+d.text((280, 60), "MA COMPTINE  I  ET  U", font=font(44), fill=ROUGE_F)
+vers = [
+    "I, I, la petite souris,",
+    "court dans toute la maison.",
+    "U, U, la jolie lune,",
+    "éclaire toute votre rue.",
+    "I et U, c'est rigolo,",
+    "je les dis très bien : bravo !",
+]
+y = 170
+for v in vers:
+    d.text((300, y), v, font=font(40, bold=False), fill=CONT)
+    y += 62
+soleil(d, 150, 120, 40)
+lune(d, 950, 130, 40)
+img.save(os.path.join(OUT, "s15_comptine.png"))
+
+# 12. s16_bouche_i.png — l'articulation du son I
+img, d = nouvelle(1000, 520)
+visage(d, 340, 240, 150, bouche="i")
+d.text((250, 430), "La bouche sourit, elle est étirée !", font=font(36), fill=ROUGE_F)
+d.rectangle([640, 60, 950, 210], fill=(255, 253, 245), outline=CONT, width=4)
+grande_lettre(d, 700, 70, "I", ROUGE_F, 90)
+d.text((780, 100), "= iiiii", font=font(56), fill=CONT)
+d.text((640, 260), "Dans : riz, tapis,", font=font(38, bold=False), fill=CONT)
+d.text((640, 320), "souris, midi, ici", font=font(38, bold=False), fill=CONT)
+img.save(os.path.join(OUT, "s16_bouche_i.png"))
+
+# 13. s17_bouche_u.png — l'articulation du son U
+img, d = nouvelle(1000, 520)
+visage(d, 340, 240, 150, bouche="u")
+d.text((255, 430), "La bouche est ronde comme un O !", font=font(36), fill=BLEU_F)
+d.rectangle([640, 60, 950, 210], fill=(255, 253, 245), outline=CONT, width=4)
+grande_lettre(d, 690, 70, "U", BLEU_F, 90)
+d.text((790, 100), "= uuuu", font=font(56), fill=CONT)
+d.text((640, 260), "Astuce : dis I avec", font=font(38, bold=False), fill=CONT)
+d.text((640, 320), "les lèvres de OU !", font=font(38, bold=False), fill=CONT)
+img.save(os.path.join(OUT, "s17_bouche_u.png"))
+
+# 14. s18_tulipe.png — I et U dans le même mot
+img, d = nouvelle(1100, 620)
+# tulipe (polygone stylisé à 3 pointes) + tige + feuille
+d.line([300, 305, 300, 500], fill=VERT_F, width=10)
+d.polygon([(295, 420), (240, 390), (295, 360)], fill=VERT, outline=CONT)
+d.polygon([(300, 310), (262, 250), (278, 262), (300, 222), (322, 262), (338, 250)], fill=ROUGE_F, outline=CONT)
+d.ellipse([270, 255, 330, 315], fill=ROUGE_F, outline=CONT)
+d.polygon([(300, 310), (262, 250), (278, 262), (300, 222), (322, 262), (338, 250)], fill=ROUGE_F, outline=CONT)
+sy = ["tu", "li", "pe"]
+for i, s in enumerate(sy):
+    x0 = 200 + i * 110
+    d.rounded_rectangle([x0, 520, x0 + 90, 580], radius=10, fill=(255, 253, 245), outline=CONT, width=3)
+    f = font(36)
+    bb = d.textbbox((0, 0), s, font=f)
+    d.text((x0 + (90 - (bb[2] - bb[0])) // 2, 520 + (60 - (bb[3] - bb[1])) // 2 - bb[1]), s, font=f, fill=NOIR)
+# musique (note de musique)
+d.ellipse([620, 330, 690, 390], fill=CONT)
+d.line([685, 350, 685, 230], fill=CONT, width=8)
+d.polygon([(685, 230), (745, 250), (685, 270)], fill=CONT)
+etiquette(d, 660, 410, "la musique")
+# lumière (ampoule)
+d.ellipse([880, 240, 980, 340], fill=JAUNE, outline=CONT, width=4)
+d.rectangle([910, 340, 950, 375], fill=GRIS, outline=CONT, width=3)
+for a in range(0, 360, 45):
+    x1 = 930 + 62 * math.cos(math.radians(a))
+    y1 = 290 + 62 * math.sin(math.radians(a))
+    x2 = 930 + 82 * math.cos(math.radians(a))
+    y2 = 290 + 82 * math.sin(math.radians(a))
+    d.line([x1, y1, x2, y2], fill=JAUNE_F, width=5)
+etiquette(d, 930, 410, "la lumière")
+d.text((200, 80), "I  ET  U  dans le même mot :", font=font(42), fill=CONT)
+img.save(os.path.join(OUT, "s18_tulipe.png"))
+
+# 15. s20_performance.png — performance finale I et U
+img, d = nouvelle(1100, 520)
+# trophée
+d.polygon([(480, 180), (620, 180), (600, 330), (500, 330)], fill=JAUNE_F, outline=CONT)
+d.rectangle([530, 330, 570, 380], fill=JAUNE_F, outline=CONT)
+d.rectangle([490, 380, 610, 420], fill=(121, 85, 72), outline=CONT)
+d.arc([430, 180, 500, 260], 270, 90, fill=CONT, width=8)
+d.arc([600, 180, 670, 260], 90, 270, fill=CONT, width=8)
+d.text((520, 220), "I+U", font=font(44), fill=NOIR)
+for sx, sy2 in [(400, 100), (700, 90), (550, 60), (380, 260), (720, 250)]:
+    d.polygon([(sx, sy2 - 22), (sx + 7, sy2 - 7), (sx + 22, sy2 - 5), (sx + 11, sy2 + 5), (sx + 13, sy2 + 20), (sx, sy2 + 12), (sx - 13, sy2 + 20), (sx - 11, sy2 + 5), (sx - 22, sy2 - 5), (sx - 7, sy2 - 7)], fill=JAUNE_F, outline=CONT)
+perso(d, 320, 300, 30, haut=BLEU_F, bras_up=True)
+perso(d, 780, 300, 30, haut=VERT_F, bras_up=True)
+d.rectangle([0, 420, 1100, 520], fill=(180, 205, 150))
+img.save(os.path.join(OUT, "s20_performance.png"))
+
+print("Illustrations générées (thèmes 1+2) :")
+for f in sorted(os.listdir(OUT)):
+    print("  -", f)
