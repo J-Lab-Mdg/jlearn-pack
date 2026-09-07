@@ -47,11 +47,12 @@ function gridBorders() {
 // ---------------------------------------------------------------- runs
 /**
  * Convertit une chaîne balisée en TextRun[].
- * Balises : **gras**, {{mot clé bleu}}, [[corrigé rose]], __italique__
+ * Balises : **gras**, {{mot clé bleu}}, [[corrigé rose]], __italique__,
+ * <<a/b>> fraction en equation native Word (OMML).
  */
 function runs(text, base = {}) {
   const out = [];
-  const re = /(\*\*[^*]+\*\*|\{\{[^}]+\}\}|\[\[[^\]]+\]\]|__[^_]+__)/g;
+  const re = /(\*\*[^*]+\*\*|\{\{[^}]+\}\}|\[\[[^\]]+\]\]|__[^_]+__|<<[^>]+>>)/g;
   let last = 0, m;
   // Word ignore un "\n" a l'interieur d'un w:t : il faut un vrai saut de ligne
   // (<w:br/>). On decoupe donc chaque fragment sur les retours a la ligne.
@@ -67,7 +68,11 @@ function runs(text, base = {}) {
   while ((m = re.exec(text)) !== null) {
     push(text.slice(last, m.index), {});
     const tok = m[0];
-    if (tok.startsWith("**"))      push(tok.slice(2, -2), { bold: true });
+    if (tok.startsWith("<<")) {
+      const [n, d] = tok.slice(2, -2).split("/");
+      out.push(frac(n.trim(), d.trim()));
+    }
+    else if (tok.startsWith("**")) push(tok.slice(2, -2), { bold: true });
     else if (tok.startsWith("{{")) push(tok.slice(2, -2), { bold: true, color: C.motcle });
     else if (tok.startsWith("[[")) push(tok.slice(2, -2), { bold: true, color: C.corrige });
     else                           push(tok.slice(2, -2), { italics: true });
