@@ -15,6 +15,7 @@ const {
 
 const progression = require("./progression");
 const revisions = require("./revisions");
+const annexes = require("./annexes");
 
 // Les séances de chaque période vivent dans leur propre fichier. Une période
 // non encore rédigée est simplement absente : le manuel se construit avec ce
@@ -92,6 +93,8 @@ function modeEmploi() {
   return out;
 }
 
+const complet = rediges >= TOTAL;
+
 function sommaire() {
   const out = [bookmarkedHeading("sommaire", "TABLE DES MATIÈRES", HeadingLevel.HEADING_1, C.titre, 32)];
   out.push(tocLink("avantpropos", "Avant-propos"));
@@ -114,6 +117,16 @@ function sommaire() {
       out.push(tocLink(`examen${per.id}`, revisions[per.id].examen.titre, 340));
     }
   });
+  if (complet) {
+    out.push(new Paragraph({
+      spacing: { before: 140, after: 60 },
+      children: [new TextRun({
+        text: "ANNEXES", font: FONT, size: 22, bold: true, color: C.soustitre })],
+    }));
+    out.push(tocLink("memento", annexes.memento.titre, 340));
+    annexes.compositions.forEach((co) =>
+      out.push(tocLink(`compo${co.id}`, co.titre, 340)));
+  }
   out.push(empty(120));
   out.push(p(`**Total : ${TOTAL} séances.**`));
   out.push(new Paragraph({ children: [new PageBreak()] }));
@@ -365,6 +378,78 @@ function batirExamen(e, periode) {
   return out;
 }
 
+
+// ============================================================ ANNEXES
+function batirMemento(m) {
+  const { Table, TableRow, WidthType } = B;
+  const out = [bookmarkedHeading("memento", m.titre, HeadingLevel.HEADING_1, C.titre, 32)];
+  out.push(p(m.intro, { spacing: { after: 160 } }));
+  const th = (t) => B.cell([p(t, { bold: true, align: AlignmentType.CENTER })], { shading: SH.entete });
+  m.sections.forEach((sec) => {
+    out.push(new Paragraph({
+      spacing: { before: 200, after: 80 },
+      children: [new TextRun({ text: sec.nom, font: FONT, size: 23, bold: true, color: C.soustitre })],
+    }));
+    const rows = [new TableRow({ children: [th("Notion"), th("Règle, définition ou formule")] })];
+    sec.lignes.forEach(([n, d]) => rows.push(new TableRow({
+      children: [B.cell([p(`**${n}**`)], { width: 32, shading: SH.neutre }),
+                 B.cell([p(d)], { width: 68 })],
+    })));
+    out.push(new Table({ width: { size: 100, type: WidthType.PERCENTAGE },
+                         borders: B.gridBorders(), rows }));
+  });
+  out.push(new Paragraph({ children: [new PageBreak()] }));
+  return out;
+}
+
+function batirComposition(co) {
+  const out = [bookmarkedHeading(
+    `compo${co.id}`, co.titre, HeadingLevel.HEADING_1, C.titre, 30)];
+
+  const total = co.parties.reduce(
+    (s2, pa) => s2 + pa.exos.reduce((a, x) => a + x.pts, 0), 0);
+  out.push(p(`**Durée : ${co.duree}**   —   **Barème : ${total} points**`, { spacing: { after: 60 } }));
+  out.push(p(`__${co.consigne}__`, { spacing: { after: 160 } }));
+
+  co.parties.forEach((pa) => {
+    out.push(new Paragraph({
+      spacing: { before: 150, after: 70 },
+      children: [new TextRun({ text: pa.nom, font: FONT, size: 23, bold: true, color: C.soustitre })],
+    }));
+    pa.exos.forEach((x, i) => {
+      out.push(new Paragraph({
+        spacing: { before: 70, after: 30 },
+        children: [
+          new TextRun({ text: `${i + 1}. `, font: FONT, size: 21, bold: true }),
+          new TextRun({ text: `(${x.pts} points)`, font: FONT, size: 20, color: C.gris }),
+        ],
+      }));
+      x.c.split("\n").forEach((l) => out.push(p(l, { spacing: { after: 30 } })));
+    });
+  });
+
+  out.push(new Paragraph({ children: [new PageBreak()] }));
+  out.push(new Paragraph({
+    spacing: { after: 120 },
+    children: [new TextRun({
+      text: `Corrigé — ${co.titre}`, font: FONT, size: 26, bold: true, color: C.titre })],
+  }));
+  co.parties.forEach((pa) => {
+    out.push(new Paragraph({
+      spacing: { before: 130, after: 60 },
+      children: [new TextRun({ text: pa.nom, font: FONT, size: 22, bold: true, color: C.soustitre })],
+    }));
+    const kids = [];
+    pa.exos.forEach((x, i) => {
+      kids.push(p(`**${i + 1}.** (${x.pts} pts) ${x.r.split("\n")[0]}`, { spacing: { after: 40 } }));
+      x.r.split("\n").slice(1).forEach((l) => kids.push(p(l, { spacing: { after: 40 } })));
+    });
+    out.push(boxed(kids, SH.corrige));
+  });
+  out.push(new Paragraph({ children: [new PageBreak()] }));
+  return out;
+}
+
 // ============================================================ ASSEMBLAGE
 const children = [
   ...couverture(), ...avantPropos(), ...modeEmploi(), ...sommaire(), ...tableauDeBord(),
@@ -398,6 +483,23 @@ progression.forEach((per) => {
     children.push(...batirExamen(revisions[per.id].examen, per));
   }
 });
+
+// Annexes : seulement lorsque le manuel est complet.
+if (complet) {
+  children.push(new Paragraph({
+    alignment: AlignmentType.CENTER, spacing: { before: 400, after: 200 },
+    children: [new TextRun({
+      text: "ANNEXES", font: FONT, size: 44, bold: true, color: C.titre })],
+  }));
+  children.push(new Paragraph({
+    alignment: AlignmentType.CENTER, spacing: { after: 300 },
+    children: [new TextRun({
+      text: "Mémento et sujets de composition périodique", font: FONT, size: 26, bold: true })],
+  }));
+  children.push(new Paragraph({ children: [new PageBreak()] }));
+  children.push(...batirMemento(annexes.memento));
+  annexes.compositions.forEach((co) => children.push(...batirComposition(co)));
+}
 
 const doc = new Document({
   creator: "Collection J-Learn",
