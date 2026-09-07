@@ -15,7 +15,14 @@ root = etree.fromstring(xml)
 body = root.find(q("body"))
 # Un saut de ligne entre paragraphes : sinon la fin d'un paragraphe se colle
 # au debut du suivant et cree de faux positifs (ex. « ... 540.4. Encadrer »).
-paras = ["".join(t.text or "" for t in p_.iter(q("t"))) for p_ in root.iter(q("p"))]
+def para_text(p_):
+    """Texte d'un paragraphe, en traitant <w:br/> comme un vrai saut de ligne."""
+    buf = []
+    for node in p_.iter(q("t"), q("br")):
+        buf.append("\n" if node.tag == q("br") else (node.text or ""))
+    return "".join(buf)
+
+paras = [para_text(p_) for p_ in root.iter(q("p"))]
 txt = "\n".join(paras)
 
 res = []
