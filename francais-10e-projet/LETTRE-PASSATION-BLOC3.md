@@ -82,6 +82,10 @@ grammaire et orthographe**, **résumé vocabulaire**. Implémentation :
   data-theme7.js, leçons 32-39, annexe U7 (conjugaison **manger** ; sons in/g/k ; vocabulaire
   repas/table/cuisine), images ia_u7_repas / cuisine / son_in / son_k — TOUT CONFORME ×99
   (39 leçons, 7 annexes, 155 signets, 36 images). Répartition sd : EO s84-93, L s94-96, EE s97-99.
-- **Procédure Bloc 8** (Unité 8 « La ferme », s100-120 — 21 séances, sons œu, ou ; FRA T3) :
-  reprendre le § 3 avec bloc8, plage « 100 à 120 », OUT THEMES1-8.docx, seanceNum `/ 120`,
-  annexe U8 (avoir ; sons œu, ou ; vocabulaire de la ferme et des animaux).
+- **Bloc 8 livré** (Unité 8 « La ferme », s100-120 — 21 séances, sons ou, œu) :
+  data-theme8.js, leçons 40-47, annexe U8 (conjugaison **avoir** ; sons ou/œu ; vocabulaire
+  ferme/animaux), images ia_u8_ferme / poussins / son_ou / son_oeu — TOUT CONFORME ×120
+  (47 leçons, 8 annexes, 186 signets, 40 images). Répartition sd : EO s100-112, L s113-116, EE s117-120.
+  Footer final : « FIN DU MANUEL (SÉANCES 1 À 120) » + « rendez-vous en 9ème (CE) ».
+- **PROGRAMME CP2 TERMINÉ** : 8 unités / 120 séances / 47 leçons fusionnées / 8 annexes / 40 images.
+  Prochaine étape possible : série 9ème (CE, T3) ou enrichissement CP1 (annexes 8 thèmes + scènes L10-L19).

@@ -191,4 +191,31 @@ module.exports = [
       ],
     },
   },
+  {
+    unite: 8,
+    conj: {
+      titre: "A. Conjugaison — avoir au présent",
+      lignes: [
+        ["« ", { t: "j'ai", k: true }, " — ", { t: "tu as", k: true }, " — ", { t: "il a", k: true }, " / ", { t: "elle a", k: true }, " »"],
+        ["« ", { t: "nous avons", k: true }, " — ", { t: "vous avez", k: true }, " — ", { t: "ils ont", k: true }, " / ", { t: "elles ont", k: true }, " »"],
+        ["À la ferme : ", { t: "j'ai", k: true }, " un zébu — ", { t: "nous avons", k: true }, " cinq poules."],
+      ],
+    },
+    gram: {
+      titre: "B. Grammaire et orthographe",
+      lignes: [
+        ["Le son ", { t: "ou", k: true }, " s'écrit ", { t: "o-u", k: true }, " (poule, roue, genou, loup, hibou) — le son ", { t: "œu", k: true }, " s'écrit ", { t: "œ", k: true }, ", un o et un e collés (œuf, bœuf, nœud)."],
+        ["Pour compter : « ", { t: "Il y a + nombre + animal", k: true }, " » — pour décrire : « ", { t: "Il/Elle est..., il/elle mange..., il/elle donne...", k: true }, " »"],
+        ["Les verbes des champs, dans l'ordre : ", { t: "labourer, semer, planter, arroser, récolter", k: true }, "."],
+      ],
+    },
+    vocab: {
+      titre: "C. Vocabulaire du thème",
+      lignes: [
+        ["Les animaux : ", { t: "la vache, le zébu, la poule, le canard, le cochon, la chèvre", k: true }, " — les petits : ", { t: "le veau, le poussin, le caneton, le chaton, le chiot", k: true }],
+        ["La ferme : ", { t: "la rizière, le paysan, la charrette, la mare", k: true }, " — les produits : ", { t: "du lait, des œufs, du riz, des légumes, de la viande", k: true }],
+        ["Mots des sons : ", { t: "poule, poulet, roue, genou, loup, hibou, cour, bisou, doux, œuf, bœuf, nœud", k: true }],
+      ],
+    },
+  },
 ];

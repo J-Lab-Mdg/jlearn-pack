@@ -645,6 +645,96 @@ const F = [
     ],
     retenir: ["Unité 7 réussie : ", { t: "les repas malgaches, la politesse du repas et les sons in, g, k", k: true }, " !"],
   },
+  // ---------- Unité 8 — La ferme ----------
+  {
+    id: "lecon40", apres: 101, num: 40,
+    titre: "LES ANIMAUX DE LA FERME ET LEURS PETITS", titreS: "Les animaux de la ferme et leurs petits",
+    plage: "100 à 101",
+    image: { file: "ia_u8_ferme.jpg", w: 1376, h: 768, legende: "La ferme : le zébu près de sa charrette, les poules qui picorent, le cochon dans son enclos et la chèvre !" },
+    subs: [
+      { t: "A. Les animaux", paras: [[{ t: "la vache", k: true }, " — ", { t: "le zébu", k: true }, " — ", { t: "la poule", k: true }, " — ", { t: "le canard", k: true }, " — ", { t: "le cochon", k: true }, " — ", { t: "la chèvre", k: true }]] },
+      { t: "B. Les petits", paras: [[{ t: "la vache", k: true }, " → ", { t: "le veau", k: true }, " — ", { t: "la poule", k: true }, " → ", { t: "le poussin", k: true }, " — ", { t: "le canard", k: true }, " → ", { t: "le caneton", k: true }, " — ", { t: "la chienne", k: true }, " → ", { t: "le chiot", k: true }]] },
+    ],
+    retenir: ["La ferme : ", { t: "vache, zébu, poule, canard, cochon, chèvre", k: true }, " — et leurs petits : ", { t: "veau, poussin, caneton", k: true }, "."],
+  },
+  {
+    id: "lecon41", apres: 103, num: 41,
+    titre: "LES TRAVAUX DES CHAMPS ET LA RIZIÈRE", titreS: "Les travaux des champs et la rizière",
+    plage: "102 à 103",
+    image: null,
+    subs: [
+      { t: "A. Les verbes", paras: [[{ t: "labourer", k: true }, " — ", { t: "semer", k: true }, " — ", { t: "planter", k: true }, " — ", { t: "arroser", k: true }, " — ", { t: "récolter", k: true }, " — dans l'ordre !"]] },
+      { t: "B. La rizière", paras: [["« ", { t: "Le paysan plante le riz dans la rizière.", k: true }, " » — ", { t: "l'eau, la boue, les collines vertes", k: true }]] },
+    ],
+    retenir: ["Les travaux : ", { t: "labourer, semer, planter, arroser, récolter", k: true }, " — et le riz pousse dans ", { t: "la rizière", k: true }, "."],
+  },
+  {
+    id: "lecon42", apres: 106, num: 42,
+    titre: "LE DIALOGUE, LES CRIS ET LA COMPTINE DE LA FERME", titreS: "Le dialogue, les cris et la comptine de la ferme",
+    plage: "104 à 106",
+    image: { file: "ia_u8_poussins.jpg", w: 1376, h: 768, legende: "« Le coq chante cocorico ; la poule glousse : cot, cot, cot ! » — et le veau reste près de sa maman." },
+    subs: [
+      { t: "A. Le dialogue", paras: [["« — ", { t: "Qu'est-ce que tu vois ?", k: true }, " — ", { t: "Je vois la vache, le zébu et les poules.", k: true }, " » — ", { t: "« Il y a un zébu, deux poules et trois canards. »", k: true }]] },
+      { t: "B. Les cris", paras: [["Le coq ", { t: "chante", k: true }, " (cocorico !) — la poule ", { t: "glousse", k: true }, " (cot, cot !) — la vache ", { t: "meugle", k: true }, " (meuh !) — le chien ", { t: "aboie", k: true }, " (ouaf !)"]] },
+      { t: "C. La comptine", paras: [["« ", { t: "Dans la ferme de mon grand-père,", k: true }, " / ", { t: "le coq chante cocorico ;", k: true }, " »"], ["« ", { t: "la poule glousse : cot, cot, cot !", k: true }, " / ", { t: "et la vache meugle : meuh, meuh, meuh !", k: true }, " »"]] },
+    ],
+    retenir: ["« ", { t: "Qu'est-ce que tu vois ? — Je vois...", k: true }, " » + les cris : ", { t: "cocorico, cot cot, meuh, ouaf", k: true }, " !"],
+  },
+  {
+    id: "lecon43", apres: 112, num: 43,
+    titre: "COMPTER, DÉCRIRE ET PRÉSENTER MA FERME", titreS: "Compter, décrire et présenter ma ferme",
+    plage: "107 à 112",
+    image: null,
+    subs: [
+      { t: "A. Je compte et je décris", paras: [["« ", { t: "Il y a un zébu, deux poules et trois canards.", k: true }, " » — « ", { t: "La vache est noire et blanche. Elle donne du lait.", k: true }, " »"]] },
+      { t: "B. Les produits", paras: [[{ t: "du lait", k: true }, " — ", { t: "des œufs", k: true }, " — ", { t: "du riz", k: true }, " — ", { t: "des légumes", k: true }, " — ", { t: "de la viande", k: true }, " : « ", { t: "Qu'est-ce que la vache donne ? — Elle donne du lait.", k: true }, " »"]] },
+      { t: "C. Ma ferme idéale", paras: [["« ", { t: "Bienvenue ! Voici... Il y a... Ma ferme donne... J'aime ma ferme !", k: true }, " » — mon mini-exposé en 3 phrases."]] },
+    ],
+    retenir: ["Je compte avec ", { t: "« il y a »", k: true }, ", je décris avec ", { t: "« il/elle est... mange... donne... »", k: true }, " et je présente : ", { t: "« Bienvenue ! Voici... »", k: true }],
+  },
+  {
+    id: "lecon44", apres: 113, num: 44,
+    titre: "LE SON OU", titreS: "Le son ou",
+    plage: "113",
+    image: { file: "ia_u8_son_ou.jpg", w: 1376, h: 768, legende: "La poule, le poulet, la roue et le hibou : j'entends le son ou !" },
+    subs: [
+      { t: "A. Le son", paras: [["Le son ", { t: "ou", k: true }, " s'écrit avec ", { t: "deux lettres : o-u", k: true }, " — les lèvres rondes comme un petit tunnel !"]] },
+      { t: "B. Les mots", paras: [[{ t: "la poule", k: true }, " — ", { t: "le poulet", k: true }, " — ", { t: "la roue", k: true }, " — ", { t: "le genou", k: true }, " — ", { t: "le pou", k: true }]] },
+    ],
+    retenir: ["Le son ", { t: "ou", k: true }, " : ", { t: "la poule, le poulet, la roue, le genou", k: true }, "."],
+  },
+  {
+    id: "lecon45", apres: 115, num: 45,
+    titre: "LE SON OU (2) ET LE SON ŒU", titreS: "Le son ou (2) et le son œu",
+    plage: "114 à 115",
+    image: { file: "ia_u8_son_oeu.jpg", w: 1376, h: 768, legende: "L'œuf dans le nid, le bœuf et sa charrette, le nœud sur la corde : voici la lettre collée œ !" },
+    subs: [
+      { t: "A. Le son ou (2)", paras: [[{ t: "le loup", k: true }, " — ", { t: "le hibou", k: true }, " — ", { t: "la cour", k: true }, " — ", { t: "le bisou", k: true }, " — ", { t: "doux", k: true }]] },
+      { t: "B. Le son œu", paras: [["Le son ", { t: "œu", k: true }, " s'écrit ", { t: "œ", k: true }, " : un ", { t: "o et un e collés", k: true }, " — ", { t: "l'œuf", k: true }, ", ", { t: "le bœuf", k: true }, ", ", { t: "le nœud", k: true }]] },
+    ],
+    retenir: ["Encore ", { t: "ou", k: true }, " : ", { t: "loup, hibou, cour", k: true }, " — et ", { t: "œu", k: true }, " : ", { t: "œuf, bœuf, nœud", k: true }, " !"],
+  },
+  {
+    id: "lecon46", apres: 116, num: 46,
+    titre: "LECTURE — OU ET ŒU ENSEMBLE", titreS: "Lecture : ou et œu ensemble",
+    plage: "116",
+    image: null,
+    subs: [
+      { t: "A. Mon texte", paras: [["« ", { t: "La poule picore dans la cour.", k: true }, " » — « ", { t: "Elle pond un œuf.", k: true }, " » — « ", { t: "Le bœuf boit à la mare.", k: true }, " »"]] },
+    ],
+    retenir: ["Je lis ", { t: "ou", k: true }, " et ", { t: "œu", k: true }, " dans un vrai texte — je lis comme un grand !"],
+  },
+  {
+    id: "lecon47", apres: 120, num: 47,
+    titre: "ÉCRIRE OU ET ŒU — BILAN DE L'UNITÉ ET DE L'ANNÉE", titreS: "Écrire ou et œu, bilan",
+    plage: "117 à 120",
+    image: null,
+    subs: [
+      { t: "A. La dictée", paras: [["J'écris : ", { t: "poule, œuf, bœuf", k: true }, " — ", { t: "la poule pond un œuf dans la cour", k: true }]] },
+      { t: "B. Bilan de l'année", paras: [[{ t: "8 unités", k: true }, " : présentation, famille, toilette, école, vêtements, marché, repas, ferme — ", { t: "120 séances, tout est appris !", k: true }]] },
+    ],
+    retenir: ["Unité 8 réussie : ", { t: "la ferme et les sons ou, œu", k: true }, " — et le CP2 terminé, bravo !"],
+  },
 ];
 
 module.exports = F;
