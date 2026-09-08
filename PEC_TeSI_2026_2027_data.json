@@ -1,0 +1,389 @@
+{
+  "annee": "2026-2027",
+  "ecole": {
+    "epp": "ANDRANOMAFANA",
+    "code": "506 090 012",
+    "zap": "TRATRAMARINA",
+    "cisco": "ANOSIBE AN’ALA",
+    "dren": "ALAOTRA MANGORO"
+  },
+  "effectifs": {
+    "taon_dasa": {
+      "V": 71,
+      "L": 72,
+      "T": 143
+    },
+    "taona_diavina": {
+      "V": 82,
+      "L": 63,
+      "T": 145
+    }
+  },
+  "totals": {
+    "RPI": 1039500,
+    "FCE": 397000,
+    "VOI": 7615000,
+    "GRAND": 9051500,
+    "CAISSE": 1436500,
+    "n_lahasa": 11,
+    "n_voi": 5
+  },
+  "st": {
+    "rpi_of": 335500,
+    "fce_of": 170800,
+    "rpi_tr": 122000,
+    "fce_tr": 52000,
+    "voi_tr": 1857000,
+    "rpi_fit": 422000,
+    "fce_fit": 110200,
+    "jp": 730000,
+    "kar": 5000000,
+    "pas": 28000,
+    "sport_rpi": 70000,
+    "gony": 4000,
+    "sfce": 60000,
+    "srpi": 90000
+  },
+  "items": {
+    "rpi_of": [
+      [
+        "Craie couleur RAFAFA",
+        10,
+        6000,
+        60000
+      ],
+      [
+        "Craie blanche RAFAFA",
+        25,
+        5000,
+        125000
+      ],
+      [
+        "Eponge",
+        21,
+        700,
+        14700
+      ],
+      [
+        "Isorel",
+        2,
+        58000,
+        116000
+      ],
+      [
+        "Ody parasy sachets",
+        3,
+        3000,
+        9000
+      ],
+      [
+        "Sifat N°7",
+        6,
+        1800,
+        10800
+      ]
+    ],
+    "fce_of": [
+      [
+        "Ardoisine GM",
+        2,
+        12000,
+        24000
+      ],
+      [
+        "Agrafe 4/6 boîte",
+        6,
+        1800,
+        10800
+      ],
+      [
+        "Angady PM",
+        2,
+        5000,
+        10000
+      ],
+      [
+        "Angady GM",
+        1,
+        16000,
+        16000
+      ],
+      [
+        "Craie Rafafa couleur",
+        10,
+        6000,
+        60000
+      ],
+      [
+        "Craie blanche RAFAFA",
+        10,
+        5000,
+        50000
+      ]
+    ],
+    "rpi_tr": [
+      [
+        "Ciment",
+        2,
+        52000,
+        104000
+      ],
+      [
+        "Pointe 5,6,7,8",
+        2,
+        9000,
+        18000
+      ]
+    ],
+    "fce_tr": [
+      [
+        "Ciment",
+        1,
+        52000,
+        52000
+      ]
+    ],
+    "voi_tr": [
+      [
+        "Andry",
+        60,
+        6000,
+        360000
+      ],
+      [
+        "Chevron",
+        45,
+        6000,
+        270000
+      ],
+      [
+        "Tôle 2,50",
+        30,
+        40000,
+        1200000
+      ],
+      [
+        "Pointe tôle",
+        3,
+        9000,
+        27000
+      ]
+    ],
+    "rpi_fit": [
+      [
+        "Colle bureau",
+        6,
+        1600,
+        9600
+      ],
+      [
+        "Wood Fix 500 g",
+        1,
+        9000,
+        9000
+      ],
+      [
+        "Cahier GF 200 plus",
+        14,
+        5800,
+        81200
+      ],
+      [
+        "Cahier PF 200p lux",
+        12,
+        3600,
+        43200
+      ],
+      [
+        "Chemise à dossier",
+        60,
+        600,
+        36000
+      ],
+      [
+        "Ciseaux PM",
+        6,
+        1800,
+        10800
+      ],
+      [
+        "Enveloppe A4 Kraft",
+        18,
+        500,
+        9000
+      ],
+      [
+        "Marker Dollar 6 BL/ER",
+        12,
+        3000,
+        36000
+      ],
+      [
+        "Papier Velin ram",
+        1,
+        25000,
+        25000
+      ],
+      [
+        "Pinceau N°3",
+        2,
+        2500,
+        5000
+      ],
+      [
+        "Rateau",
+        1,
+        8500,
+        8500
+      ],
+      [
+        "Règle pour TN",
+        1,
+        10500,
+        10500
+      ],
+      [
+        "Stylo Digno R/N/B (6×3)",
+        18,
+        700,
+        12600
+      ],
+      [
+        "Stylo Schneider Bleu",
+        18,
+        1000,
+        18000
+      ],
+      [
+        "Stylo Schneider Rouge",
+        18,
+        1000,
+        18000
+      ],
+      [
+        "Stylo Schneider Noir",
+        18,
+        1000,
+        18000
+      ],
+      [
+        "Stylo Schneider Vert",
+        6,
+        1000,
+        6000
+      ],
+      [
+        "Scotch GM",
+        6,
+        6000,
+        36000
+      ],
+      [
+        "Tadin-tsaina",
+        24,
+        400,
+        9600
+      ],
+      [
+        "Emballage blanc",
+        36,
+        400,
+        14400
+      ],
+      [
+        "Badge",
+        1,
+        2000,
+        2000
+      ],
+      [
+        "Porte feuille",
+        12,
+        300,
+        3600
+      ]
+    ],
+    "fce_fit": [
+      [
+        "Blanco pen",
+        6,
+        2000,
+        12000
+      ],
+      [
+        "Cahier de transmission",
+        1,
+        11000,
+        11000
+      ],
+      [
+        "Cahier de départ",
+        1,
+        8000,
+        8000
+      ],
+      [
+        "Cahier d’arrivée",
+        1,
+        8000,
+        8000
+      ],
+      [
+        "Décamètre à 20 m",
+        1,
+        18000,
+        18000
+      ],
+      [
+        "Masking Tape",
+        6,
+        3000,
+        18000
+      ],
+      [
+        "Nappe de table lambâ/m",
+        1,
+        9000,
+        9000
+      ],
+      [
+        "Papier Velin ram",
+        1,
+        25000,
+        25000
+      ],
+      [
+        "Enveloppe blanc PM",
+        12,
+        100,
+        1200
+      ]
+    ],
+    "jp": [
+      [
+        "Journées Pédagogique",
+        5,
+        72000,
+        360000
+      ],
+      [
+        "Sports scolaires",
+        5,
+        50000,
+        250000
+      ],
+      [
+        "Hetsika « vokatra »",
+        2,
+        35000,
+        70000
+      ],
+      [
+        "Hetsika VFF",
+        1,
+        50000,
+        50000
+      ]
+    ]
+  }
+}
