@@ -327,3 +327,159 @@ etiquette_petite(d, 975, 460, "la fête")
 img.save(os.path.join(OUT, "s10_sons_ea.png"))
 
 print("Illustrations CP2 unité 1 générées.")
+
+# ============================================================
+# CP2 (10ème) — UNITÉ 2 : LES TERMES RELATIFS À LA FAMILLE (13-28)
+# ============================================================
+
+def jupe2(d, cx, yb, t):
+    # jupe trapèze ; (cx,yb) = centre de la ceinture en haut
+    d.polygon([(cx - int(0.35 * t), yb), (cx + int(0.35 * t), yb), (cx + int(0.75 * t), yb + t), (cx - int(0.75 * t), yb + t)], fill=ROSE, outline=CONT)
+    d.rectangle([cx - int(0.38 * t), yb - 8, cx + int(0.38 * t), yb + 6], fill=VIOLET, outline=CONT)
+
+
+def lune(d, cx, cy, r):
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(255, 238, 150), outline=CONT, width=3)
+    d.ellipse([cx - r + int(0.5 * r), cy - int(0.55 * r), cx + r + int(0.4 * r), cy + int(0.75 * r)], fill=CIER)
+
+
+def tortue(d, cx, yb, t):
+    # tortue ; (cx,yb) = base au sol
+    d.pieslice([cx - t, yb - t, cx + t, yb + int(0.35 * t)], 180, 360, fill=VERT, outline=CONT, width=3)
+    d.polygon([(cx - t, yb + int(0.3 * t)), (cx - t - int(0.25 * t), yb + int(0.1 * t)), (cx - t, yb)], fill=VERT, outline=CONT)
+    for px in (cx - int(0.6 * t), cx + int(0.25 * t)):
+        d.rectangle([px, yb + int(0.2 * t), px + int(0.25 * t), yb + int(0.45 * t)], fill=VERT, outline=CONT, width=2)
+    hx = cx + t + int(0.15 * t)
+    d.ellipse([hx - int(0.25 * t), yb - int(0.45 * t), hx + int(0.3 * t), yb + int(0.05 * t)], fill=VERT, outline=CONT, width=3)
+    d.ellipse([hx + int(0.08 * t), yb - int(0.32 * t), hx + int(0.18 * t), yb - int(0.22 * t)], fill=NOIR)
+
+
+def route(d, x1, x2, y):
+    d.rectangle([x1, y, x2, y + 46], fill=GRIS, outline=CONT, width=2)
+    for dx in range(x1 + 10, x2 - 30, 60):
+        d.rectangle([dx, y + 20, dx + 30, y + 26], fill=CIER)
+
+
+def maison_rue(d, x, yb, s=1.0):
+    w = int(90 * s); h = int(70 * s)
+    d.rectangle([x, yb - h, x + w, yb], fill=MUR, outline=CONT, width=3)
+    d.polygon([(x - int(10 * s), yb - h), (x + w + int(10 * s), yb - h), (x + w // 2, yb - h - int(40 * s))], fill=TOIT, outline=CONT)
+    d.rectangle([x + w // 2 - int(12 * s), yb - int(35 * s), x + w // 2 + int(12 * s), yb], fill=(160, 110, 60), outline=CONT, width=2)
+
+
+def flamme(d, cx, cy, t):
+    d.polygon([(cx, cy - t), (cx + int(0.55 * t), cy), (cx + int(0.35 * t), cy + int(0.75 * t)), (cx - int(0.35 * t), cy + int(0.75 * t)), (cx - int(0.55 * t), cy)], fill=ORANGE, outline=CONT)
+    d.polygon([(cx, cy - int(0.45 * t)), (cx + int(0.28 * t), cy + int(0.2 * t)), (cx - int(0.28 * t), cy + int(0.2 * t))], fill=JAUNE_F)
+
+
+def ballon(d, cx, cy, r):
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=BLEU, outline=CONT, width=3)
+    d.polygon([(cx, cy - int(0.3 * r)), (cx + int(0.5 * r), cy - int(0.1 * r)), (cx + int(0.3 * r), cy + int(0.45 * r)), (cx - int(0.3 * r), cy + int(0.45 * r)), (cx - int(0.5 * r), cy - int(0.1 * r))], fill=JAUNE_F, outline=CONT)
+
+
+def cheveux_gris(d, cx, cy, r):
+    d.pieslice([cx - r, cy - r, cx + r, cy + r], 180, 360, fill=GRIS, outline=CONT, width=2)
+
+
+# 8. s13_famille.png — ma famille
+img, d = nouvelle(1100, 560)
+centre_texte(d, 550, 30, "MA FAMILLE", 44, CONT)
+sol(d, 0, 1100, 470)
+perso(d, 170, 280, 48, haut=BLEU_F)
+perso(d, 380, 290, 44, haut=ROSE)
+perso(d, 570, 330, 34, haut=VERT_F)
+perso(d, 740, 335, 32, haut=JAUNE_F)
+perso(d, 900, 365, 22, haut=(245, 200, 160))
+etiquette_petite(d, 170, 505, "papa")
+etiquette_petite(d, 380, 505, "maman")
+etiquette_petite(d, 570, 505, "le frère")
+etiquette_petite(d, 740, 505, "la sœur")
+etiquette_petite(d, 900, 505, "le bébé")
+img.save(os.path.join(OUT, "s13_famille.png"))
+
+# 9. s14_grands_parents.png — la famille élargie
+img, d = nouvelle(1100, 560)
+centre_texte(d, 550, 30, "LA FAMILLE ÉLARGIE", 42, CONT)
+sol(d, 0, 1100, 470)
+perso(d, 180, 275, 48, haut=(90, 90, 110))
+cheveux_gris(d, 180, 241, 40)
+d.line([138, 380, 120, 485], fill=(121, 85, 72), width=6)
+perso(d, 410, 285, 44, haut=ROSE)
+d.ellipse([390, 215, 430, 243], fill=GRIS, outline=CONT, width=2)
+perso(d, 680, 290, 44, haut=VERT_F)
+perso(d, 920, 290, 44, haut=ORANGE)
+etiquette_petite(d, 180, 505, "le grand-père")
+etiquette_petite(d, 410, 505, "la grand-mère")
+etiquette_petite(d, 680, 505, "l'oncle")
+etiquette_petite(d, 920, 505, "la tante")
+img.save(os.path.join(OUT, "s14_grands_parents.png"))
+
+# 10. s15_voici_famille.png — voici ma famille
+img, d = nouvelle(1100, 560)
+sol(d, 0, 1100, 470)
+d.rectangle([440, 300, 660, 470], fill=MUR, outline=CONT, width=3)
+d.polygon([(425, 300), (675, 300), (550, 210)], fill=TOIT, outline=CONT)
+d.rectangle([528, 380, 572, 470], fill=(160, 110, 60), outline=CONT, width=3)
+perso(d, 200, 320, 50, haut=BLEU_F)
+perso(d, 350, 330, 46, haut=ROSE)
+perso(d, 800, 335, 40, haut=VERT_F)
+perso(d, 940, 345, 36, haut=JAUNE_F)
+bulle(d, 350, 105, "Voici ma famille !", center_x=550, f=font(30, bold=False))
+etiquette_petite(d, 550, 505, "j'aime ma famille")
+img.save(os.path.join(OUT, "s15_voici_famille.png"))
+
+# 11. s17_possessifs.png — mon / ma
+img, d = nouvelle(1100, 560)
+d.rounded_rectangle([40, 40, 520, 480], radius=20, fill=(232, 240, 252), outline=CONT, width=4)
+d.rounded_rectangle([580, 40, 1060, 480], radius=20, fill=(253, 235, 240), outline=CONT, width=4)
+centre_texte(d, 280, 55, "MON", 60, BLEU_F)
+centre_texte(d, 280, 150, "mon papa • mon frère", 28, CONT, bold=False)
+centre_texte(d, 280, 190, "mon grand-père • mon oncle", 28, CONT, bold=False)
+perso(d, 230, 305, 38, haut=BLEU_F)
+ballon(d, 400, 330, 45)
+centre_texte(d, 820, 55, "MA", 60, ROSE)
+centre_texte(d, 820, 150, "ma maman • ma sœur", 28, CONT, bold=False)
+centre_texte(d, 820, 190, "ma grand-mère • ma tante", 28, CONT, bold=False)
+perso(d, 770, 305, 38, haut=ROSE)
+jupe2(d, 940, 320, 80)
+centre_texte(d, 550, 515, "MON pour les garçons, MA pour les filles !", 32, CONT)
+img.save(os.path.join(OUT, "s17_possessifs.png"))
+
+# 12. s21_son_u.png — le son u
+img, d = nouvelle(1100, 560)
+d.rounded_rectangle([40, 40, 260, 190], radius=16, fill=(255, 253, 245), outline=CONT, width=5)
+centre_texte(d, 150, 55, "U", 95, BLEU_F)
+d.text((300, 92), "Je lis des mots avec u :", font=font(42), fill=CONT)
+jupe2(d, 330, 290, 120)
+lune(d, 530, 320, 55)
+route(d, 660, 820, 350)
+maison_rue(d, 690, 350, 0.9)
+maison_rue(d, 780, 350, 0.7)
+tortue(d, 950, 400, 55)
+etiquette_petite(d, 330, 450, "la jupe")
+etiquette_petite(d, 530, 450, "la lune")
+etiquette_petite(d, 745, 450, "la rue")
+etiquette_petite(d, 950, 450, "la tortue")
+img.save(os.path.join(OUT, "s21_son_u.png"))
+
+# 13. s25_son_eu.png — le son eu
+img, d = nouvelle(1100, 560)
+d.rounded_rectangle([40, 40, 300, 190], radius=16, fill=(255, 253, 245), outline=CONT, width=5)
+centre_texte(d, 170, 55, "EU", 95, VERT_F)
+d.text((350, 92), "Je lis des mots avec eu :", font=font(42), fill=CONT)
+ballon(d, 320, 330, 60)
+flamme(d, 530, 330, 90)
+centre_texte(d, 740, 250, "2", 110, BLEU_F)
+d.ellipse([875, 245, 985, 355], fill=TERRE, outline=CONT, width=3)
+d.pieslice([875, 245, 985, 325], 180, 360, fill=(121, 85, 72), outline=CONT, width=2)
+d.ellipse([899, 298, 911, 310], fill=NOIR)
+d.ellipse([949, 298, 961, 310], fill=NOIR)
+d.arc([905, 312, 955, 342], 15, 165, fill=NOIR, width=3)
+etiquette_petite(d, 320, 450, "le jeu")
+etiquette_petite(d, 530, 450, "le feu")
+etiquette_petite(d, 740, 450, "deux")
+etiquette_petite(d, 930, 200, "les yeux")
+etiquette_petite(d, 930, 450, "les cheveux")
+img.save(os.path.join(OUT, "s25_son_eu.png"))
+
+print("Illustrations CP2 unité 2 générées.")
