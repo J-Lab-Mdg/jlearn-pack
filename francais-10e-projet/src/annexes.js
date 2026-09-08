@@ -110,4 +110,31 @@ module.exports = [
       ],
     },
   },
+  {
+    unite: 5,
+    conj: {
+      titre: "A. Conjugaison — porter au présent",
+      lignes: [
+        ["« ", { t: "je porte", k: true }, " — ", { t: "tu portes", k: true }, " — ", { t: "il porte", k: true }, " / ", { t: "elle porte", k: true }, " »"],
+        ["« ", { t: "nous portons", k: true }, " — ", { t: "vous portez", k: true }, " — ", { t: "ils portent", k: true }, " / ", { t: "elles portent", k: true }, " »"],
+        ["À l'école : ", { t: "je porte", k: true }, " mon cartable — ", { t: "nous portons", k: true }, " nos chapeaux."],
+      ],
+    },
+    gram: {
+      titre: "B. Grammaire et orthographe",
+      lignes: [
+        ["Le son ", { t: "eil", k: true }, " s'écrit ", { t: "e-i-l", k: true }, " (soleil, oreille, réveil) — le son ", { t: "ail", k: true }, " s'écrit ", { t: "a-i-l", k: true }, " (travail, ail) : même finale, un e ou un a devant !"],
+        ["Le son ", { t: "j", k: true }, " s'écrit ", { t: "j", k: true }, " avec un point dessous (jardin, jouet) — le son ", { t: "z", k: true }, " s'écrit ", { t: "z", k: true }, " (zèbre, zébu, zigzag)."],
+        ["Pour décrire : « ", { t: "Je porte..., il est..., elle est...", k: true }, " » — et je dis merci : « ", { t: "Merci pour ton beau cadeau !", k: true }, " »"],
+      ],
+    },
+    vocab: {
+      titre: "C. Vocabulaire du thème",
+      lignes: [
+        ["Les vêtements : ", { t: "le pantalon, la robe, la chemise, le chapeau, les chaussures, le gilet", k: true }],
+        ["Le cadeau : ", { t: "tiens, c'est pour toi, merci, joli, j'aime bien", k: true }, " — gestes : ", { t: "je mets, j'enlève, je boutonne, j'attache, je porte", k: true }],
+        ["Mots des sons : ", { t: "soleil, oreille, réveil, travail, ail, jardin, jaune, jouet, jambon, zèbre, zébu, zigzag", k: true }],
+      ],
+    },
+  },
 ];

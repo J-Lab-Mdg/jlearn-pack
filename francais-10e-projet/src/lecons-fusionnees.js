@@ -427,6 +427,65 @@ const F = [
     ],
     retenir: ["Unité 4 réussie : ", { t: "l'école, les mots polis et les sons ch, s, on", k: true }, " !"],
   },
+  // ---------- Unité 5 — Les cadeaux et les vêtements ----------
+  {
+    id: "lecon21", apres: 55, num: 21,
+    titre: "LE VOCABULAIRE DES VÊTEMENTS ET DES CADEAUX", titreS: "Le vocabulaire des vêtements et des cadeaux",
+    plage: "53 à 55",
+    image: { file: "ia_u5_tenue.jpg", w: 1376, h: 768, legende: "Je mets ma chemise, mes chaussures ; ma sœur tient sa robe rouge — et un beau cadeau attend sur la table !" },
+    subs: [
+      { t: "A. Les vêtements", paras: [[{ t: "le pantalon", k: true }, " — ", { t: "la robe", k: true }, " — ", { t: "la chemise", k: true }, " — ", { t: "le chapeau", k: true }, " — ", { t: "les chaussures", k: true }, " — ", { t: "le gilet", k: true }]] },
+      { t: "B. Je m'habille", paras: [["« ", { t: "Je mets mon pantalon, je boutonne ma chemise, j'attache mes chaussures.", k: true }, " » — « ", { t: "J'enlève mon chapeau.", k: true }, " »"]] },
+      { t: "C. Le cadeau", paras: [["« — ", { t: "Tiens, c'est pour toi !", k: true }, " — ", { t: "Merci pour ton beau cadeau !", k: true }, " »"]] },
+    ],
+    retenir: ["Mes vêtements : ", { t: "pantalon, robe, chemise, chapeau, chaussures, gilet", k: true }, " — et le mot poli : ", { t: "merci pour ton beau cadeau !", k: true }],
+  },
+  {
+    id: "lecon22", apres: 59, num: 22,
+    titre: "LE DIALOGUE, LA COMPTINE ET LA DESCRIPTION", titreS: "Le dialogue, la comptine et la description",
+    plage: "56 à 59",
+    image: { file: "ia_u5_cadeau.jpg", w: 1376, h: 768, legende: "« Tiens, c'est pour toi ! — Merci pour ton beau cadeau ! »" },
+    subs: [
+      { t: "A. Le dialogue", paras: [["« — ", { t: "Qu'est-ce que tu mets ?", k: true }, " — ", { t: "Je mets ma robe rouge.", k: true }, " — ", { t: "C'est très joli !", k: true }, " »"]] },
+      { t: "B. La comptine", paras: [["« ", { t: "Pantalon, robe et chemise,", k: true }, " / ", { t: "quand je m'habille, tout me plaît ;", k: true }, " »"], ["« ", { t: "chapeau, chaussures et gilet,", k: true }, " / ", { t: "je suis beau, je suis à l'aise !", k: true }, " »"]] },
+      { t: "C. Je décris", paras: [["« ", { t: "Je porte..., ..., et...", k: true }, " » — « ", { t: "C'est un cadeau. Il est joli. Je l'aime bien.", k: true }, " »"]] },
+    ],
+    retenir: ["« ", { t: "Qu'est-ce que tu mets ? — Je mets...", k: true }, " » + une couleur : c'est joli !"],
+  },
+  {
+    id: "lecon23", apres: 61, num: 23,
+    titre: "LE SON EIL ET LE SON AIL", titreS: "Le son eil et le son ail",
+    plage: "60 à 61",
+    image: { file: "ia_u5_son_eil.jpg", w: 1376, h: 768, legende: "Sous le soleil, le réveil sonne : j'ouvre grand mon oreille !" },
+    subs: [
+      { t: "A. Le son eil", paras: [["Le son ", { t: "eil", k: true }, " s'écrit ", { t: "e-i-l", k: true }, " : ", { t: "le soleil", k: true }, " — ", { t: "l'oreille", k: true }, " — ", { t: "le réveil", k: true }, " — ", { t: "pareille", k: true }]] },
+      { t: "B. Le son ail", paras: [["Le son ", { t: "ail", k: true }, " s'écrit ", { t: "a-i-l", k: true }, " : ", { t: "le travail", k: true }, " — ", { t: "l'ail", k: true }]] },
+      { t: "C. La phrase", paras: [["« ", { t: "Sous le soleil, je travaille avec le sourire.", k: true }, " »"]] },
+    ],
+    retenir: ["Le son ", { t: "eil", k: true }, " : ", { t: "soleil, oreille, réveil", k: true }, " — le son ", { t: "ail", k: true }, " : ", { t: "travail, ail", k: true }, " !"],
+  },
+  {
+    id: "lecon24", apres: 63, num: 24,
+    titre: "LE SON J ET LE SON Z", titreS: "Le son j et le son z",
+    plage: "62 à 63",
+    image: { file: "ia_u5_son_z.jpg", w: 1376, h: 768, legende: "Le zèbre et le zébu dans la savane : j'entends le son z ! Et mon doudou, mon jouet : j !"},
+    subs: [
+      { t: "A. Le son j", paras: [["Le son ", { t: "j", k: true }, " s'écrit avec un ", { t: "petit crochet et un point", k: true }, " : ", { t: "le jardin", k: true }, " — ", { t: "jaune", k: true }, " — ", { t: "le jouet", k: true }, " — ", { t: "le jambon", k: true }]] },
+      { t: "B. Le son z", paras: [["Le son ", { t: "z", k: true }, " s'écrit ", { t: "z", k: true }, ", comme une petite vague : ", { t: "le zèbre", k: true }, " — ", { t: "le zébu", k: true }, " — ", { t: "le zigzag", k: true }]] },
+    ],
+    retenir: ["Le son ", { t: "j", k: true }, " : ", { t: "jardin, jouet, jambon", k: true }, " — le son ", { t: "z", k: true }, " : ", { t: "zèbre, zébu, zigzag", k: true }, " !"],
+  },
+  {
+    id: "lecon25", apres: 65, num: 25,
+    titre: "ÉCRIRE J ET Z — BILAN DE L'UNITÉ", titreS: "Écrire j et z, bilan",
+    plage: "64 à 65",
+    image: null,
+    subs: [
+      { t: "A. La dictée", paras: [["J'écris : ", { t: "jardin, jouet, jambon", k: true }, " — ", { t: "zèbre, zébu, zigzag", k: true }]] },
+      { t: "B. Bilan de l'unité", paras: [[{ t: "Les vêtements et les cadeaux", k: true }, " + les sons ", { t: "eil, ail, j, z", k: true }, " : tout est appris !"]] },
+    ],
+    retenir: ["Unité 5 réussie : ", { t: "les vêtements, les cadeaux et les sons eil, ail, j, z", k: true }, " !"],
+  },
 ];
 
 module.exports = F;

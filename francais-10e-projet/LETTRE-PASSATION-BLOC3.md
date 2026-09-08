@@ -70,7 +70,10 @@ grammaire et orthographe**, **résumé vocabulaire**. Implémentation :
   (chat au chapeau + chaussures + mouche), ia_u4_son_on (maison + ballon + bonbons).
 - `src/assemble-bloc4.js` : UNITS ×4, seanceNum `/ 52`, footer « FIN DU BLOC 4 (SÉANCES 1 À 52) »,
   « À suivre : Unité 5 — Les cadeaux et les vêtements. » — TOUT CONFORME ×52 (20 leçons, 4 annexes).
-- **Procédure Bloc 5** (Unité 5 « Les cadeaux et les vêtements », s53-65 — 13 séances, sons
-  eil/ail, j, z ; FRA T2 semaines 5-7) : reprendre le § 3 avec bloc5, plage « 53 à 65 »,
-  OUT THEMES1-5.docx, seanceNum `/ 65`, annexe U5 (porter/mettre ; j, z ; vêtements) —
-  attention : 13 séances (première série non multiple de 4).
+- **Bloc 5 livré** (Unité 5 « Les cadeaux et les vêtements », s53-65 — 13 séances, sons
+  eil/ail, j, z) : data-theme5.js, leçons 21-25, annexe U5 (conjugaison **porter** ; sons
+  eil/ail/j/z ; vocabulaire vêtements/cadeau), images ia_u5_tenue / cadeau / son_eil / son_z —
+  TOUT CONFORME ×65 (25 leçons, 5 annexes, 103 signets, 28 images).
+- **Procédure Bloc 6** (Unité 6 « Le marché », s66-83 — 18 séances, sons oi, ui, ph ; FRA T3,
+  10 semaines) : reprendre le § 3 avec bloc6, plage « 66 à 83 », OUT THEMES1-6.docx, seanceNum
+  `/ 83`, annexe U6 (acheter/vendre ; oi, ui, ph ; vocabulaire du marché).
