@@ -218,3 +218,46 @@ dépôt contient `Guide Calcul 9e T3 CE.pdf` (= 9e, Trimestre 3, niveau CE).
 Deux lectures possibles : **(a)** faire le 9ème en entier (185 séances), ou
 **(b)** ne faire que le Trimestre 3 (65 séances). La lettre de passation du projet
 impose de poser la question plutôt que de deviner.
+
+---
+
+## 10. Liens Google Drive : lisibles en listing, fichiers non téléchargeables
+
+Deux liens fournis : un fichier (`1cVX2ykXDqZUD9zT5MqpJW6ZeN9KS50ej`) et un dossier
+(`116tegygSPQs2-lJD3dBfqCAZRh5NBv0b`).
+
+### Ce qui marche ✅
+Le **listing du dossier** est lisible via l'outil de fetch (7 morceaux, lus en entier).
+
+### Ce qui ne marche pas ❌
+Aucun fichier ne se télécharge. Cinq formes d'URL testées sur le fichier donné :
+
+| URL | Résultat |
+|---|---|
+| `/file/d/ID/view` | HTTP 500 |
+| `/file/d/ID/preview` | HTTP 500 |
+| `/uc?export=download&id=ID` | HTTP 500 |
+| `drive.usercontent.google.com/download?id=ID` | HTTP 500 |
+| `docs.google.com/document/d/ID/export?format=txt` | « Page Not Found » |
+
+Et depuis le sandbox : `drive.google.com` → `SSL_ERROR_SYSCALL` (curl, curl `-4 --tlsv1.2`,
+python urllib), `wget` → exit 4. Le TCP 443 s'ouvre mais le handshake TLS est coupé.
+Seuls `github.com`, npm et PyPI passent.
+
+### Inventaire du dossier (racine, 7 morceaux)
+- **Aucun `Manuel_Francais_9eme`.**
+- Français présent : `Manuel_Francais_7eme_*` (COMPLET, Annexes, Unite1-7),
+  `Manuel_Francais_CM2-7E_*`, `Guide_Francais_8e_COMPLET.docx`,
+  `Guide_Enseignant_Francais8e_Theme1.docx`, `Manuel_Eleve_Francais8e_Theme1.docx`.
+- Sous-dossiers non explorés (pas d'ID récupérable, les liens sont retirés du markdown) :
+  `1- PRÉSCOLAIRE`, `2- PRIMAIRE`, `3- Collège`, `4- Lycée`,
+  `RÉPARTITION ET PROGRAMME SCOLAIRE`, `Matrice FICHE DE PRÉPARATION`, `RAPS COLLÈGE`.
+  → le 9ème étant du primaire, c'est dans `2- PRIMAIRE` qu'il faut regarder.
+
+### Conclusion pratique
+Pour qu'un document Drive soit utilisable, il doit être **déposé dans le dépôt**
+(c'est ainsi que le patch `01a07d83` est arrivé). Le listing ne suffit pas.
+
+**Rappel : ce n'est pas bloquant pour le 9ème.** Le programme officiel
+`FRA FRANCAIS 9ème.docx` est déjà dans `FRA et FRM.zip` (185 séances, 8 unités, lu et
+vérifié — § 9). Un PDF de référence n'améliorerait que la fidélité des premières séances.
