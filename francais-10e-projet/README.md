@@ -13,7 +13,7 @@ Manuel existant de référence : PDF Drive « Francais_10e_.fiche de préparatio
 - **Images mixtes** : scènes IA riches (album scolaire, personnages malgaches, AUCUN texte dans l'image,
   tableau noir vierge) pour la couverture des leçons fusionnées ; dessins plats Pillow conservés pour
   certaines illustrations d'exercices (EXO_IMAGES dans l'assembleur : s6, s13, s17, s21).
-- À faire : régénérer `ia_u2_son_u.jpg` (fillette non malgache sur la v1).
+- `ia_u2_son_u.jpg` régénérée (v2 malgache ✓).
 
 ## Décisions validées
 

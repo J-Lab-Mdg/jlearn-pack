@@ -15,6 +15,17 @@ const { theme3 } = require("./data-theme3");
 const THEMES = [theme1, theme2, theme3];
 const TOTAL = THEMES.reduce((a, t) => a + t.seances.length, 0); // 20
 
+const LECONS = require("./lecons-fusionnees");
+
+// Illustrations d'exercices (dessins scolaires plats — style mixte)
+const EXO_IMAGES = {
+  15: { file: "s15_comptine.png", w: 1100, h: 620, legende: "Je complète la comptine avec i ou u." },
+  26: { file: "s26_quiestce.png", w: 1100, h: 520, legende: "Qui est-ce ? J'entoure le bon prénom." },
+  51: { file: "s51_mon_village.png", w: 1100, h: 560, legende: "Je nomme les lieux de mon village." },
+  61: { file: "s61_son_gn.png", w: 1100, h: 560, legende: "J'entoure les mots avec le son gn." },
+  71: { file: "s71_corps.png", w: 1100, h: 560, legende: "Je relie chaque mot à la bonne partie du corps." },
+};
+
 const ASSETS = path.join(__dirname, "..", "assets");
 const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_11e_V1_THEMES1-3.docx");
 
@@ -44,11 +55,10 @@ function avantPropos() {
     B.bookmarkPara("avant_propos", [{ t: "AVANT-PROPOS", b: true, size: 32 }], { align: AlignmentType.CENTER }),
     t("Ce manuel a été conçu par l'équipe de J-Lab dans le cadre de la Collection J-Learn, une collection de manuels scolaires numériques pensée pour accompagner les enseignants malgaches au quotidien, en classe."),
     t("Il est entièrement conforme au programme scolaire officiel de Français pour la classe de 11ème (CP1), tel que défini par la Fiche de Répartition Annuelle : un enseignement oral, par séances de 30 minutes, alternant le Langage et la Phonétique."),
-    t("Le manuel couvre l'ensemble de l'année : chaque thème du programme (salutations, présentation, le village, la famille, la maison, les points cardinaux, la ferme, le cultivateur... et tous les sons étudiés) y est traité en blocs de séances complets. Chaque séance est organisée en 4 parties :"),
+    t("Le manuel couvre l'ensemble de l'année : chaque thème du programme (salutations, présentation, le village, la famille, la maison, les points cardinaux, la ferme, le cultivateur... et tous les sons étudiés) y est traité en blocs de séances complets. Chaque séance de 30 minutes propose :"),
     t("1. Une fiche de préparation détaillée pour l'enseignant (objectifs, déroulement en 3 grandes étapes, matériel)."),
-    t("2. Le contenu de la leçon à copier au tableau et dans le cahier de l'élève."),
-    t("3. Des exercices notés, variés et progressifs, sur un barème de 20 points."),
-    t("4. Le corrigé complet, avec le détail du barème."),
+    t("1. Des exercices notés, variés et progressifs, sur un barème de 20 points, avec leur corrigé complet."),
+    t("2. Et, après chaque groupe de séances du même grand titre, une LEÇON FUSIONNÉE de 1 à 2 pages illustrées qui rassemble tout le contenu à dicter et à faire copier dans le cahier de l'élève : le titre, les sous-titres, les mots clés et l'essentiel « À retenir »."),
     t("Tous les exemples, prénoms et situations utilisés dans ce manuel s'inscrivent dans le quotidien malgache (le village, le marché, la famille, l'école), afin que chaque élève puisse se reconnaître dans ce qu'il apprend."),
     t("Nous remercions chaleureusement les enseignants qui utilisent ce manuel : leur travail quotidien auprès des plus jeunes élèves est essentiel, et nous espérons que cet outil leur fera gagner du temps dans la préparation de leurs cours tout en enrichissant leurs séances."),
     t("— L'équipe J-Lab", { bold: true }),
@@ -67,7 +77,7 @@ function modeEmploi() {
     t([{ t: "I. Révision (4 min)", b: true }, { t: " — des questions simples sur la séance précédente ; " }, { t: "II. Nouvelle Leçon (22 min)", b: true }, { t: " — en 6 moments (mise en situation, présentation, observation, analyse, synthèse, application) ; " }, { t: "III. Évaluation (4 min)", b: true }, { t: " — de courtes questions orales de contrôle." }]),
     t([{ t: "Conseil pratique : ", b: true }, { t: "lisez la fiche ENTIÈREMENT avant le cours. Adaptez le rythme au vôtre et à celui de votre classe." }]),
     h("B. Le contenu de la leçon"),
-    t("Après la fiche de préparation, le contenu de la leçon est à dicter et à faire copier aux élèves, en général au moment de la synthèse. Ce contenu suit des conventions de couleur constantes dans tout le manuel :"),
+    t("Après les fiches d'un même grand titre (par exemple « Bonjour et bonsoir » ou « Le son I »), la leçon fusionnée rassemble sur une ou deux pages illustrées tout le contenu à dicter et à faire copier aux élèves, en général au moment de la synthèse de chaque séance. Elle suit des conventions de couleur constantes dans tout le manuel :"),
     t([{ t: "Titres (1., 2. ...) → ", b: true }, { t: "ROUGE", b: true, color: B.COLORS.rouge }]),
     t([{ t: "Sous-titres (A., B. ...) → ", b: true }, { t: "VERT", b: true, color: B.COLORS.vert }]),
     t([{ t: "Mots clés → ", b: true }, { t: "BLEU", b: true, color: B.COLORS.bleu }]),
@@ -90,6 +100,8 @@ function sommaire() {
     out.push(B.sommaireLine(`Thème ${th.numero} — ${th.nom.toUpperCase()} (Séances ${first} à ${last} — ${th.sousDiscipline})`, `theme${th.numero}`, false));
     for (const s of th.seances) {
       out.push(B.sommaireLine(`Séance ${s.n} — ${s.titre} (${th.sousDiscipline})`, `seance${s.n}`, true));
+      const L = LECONS.find((x) => x.apres === s.n);
+      if (L) out.push(B.sommaireLine(`Leçon ${L.num} — ${L.titreS} (Séances ${L.plage})`, L.id, false));
     }
   }
   return out;
@@ -160,17 +172,36 @@ function seanceBlock(th, s) {
   out.push(new Paragraph({ children: [], spacing: { after: 120 } }));
   out.push(B.deroulementTable(s));
 
-  out.push(B.pageBreakPara());
-  out.push(new Paragraph({ children: [new TextRun({ text: "CONTENU DE LA LEÇON", font: B.FONT, size: 30, bold: true })], alignment: AlignmentType.CENTER, spacing: { after: 160 } }));
-
-  if (s.image) {
-    out.push(B.imagePara(path.join(ASSETS, s.image.file), s.image.w, s.image.h, 480));
-    out.push(new Paragraph({ children: [new TextRun({ text: s.image.legende, font: B.FONT, size: 20, italics: true, color: "555555" })], alignment: AlignmentType.CENTER, spacing: { after: 160 } }));
+  const exoImg = EXO_IMAGES[s.n];
+  if (exoImg) {
+    out.push(B.imagePara(path.join(ASSETS, exoImg.file), exoImg.w, exoImg.h, 400));
+    out.push(new Paragraph({ children: [new TextRun({ text: exoImg.legende, font: B.FONT, size: 20, italics: true, color: "555555" })], alignment: AlignmentType.CENTER, spacing: { after: 120 } }));
   }
-
-  out.push(...B.leconParas(s.lecon));
   out.push(...B.exercicesParas(s.exercices));
   out.push(...B.corrigeParas(s.corrige));
+  return out;
+}
+
+// ---------------- Leçon fusionnée (1 à 2 pages par grand titre) ----------------
+function leconFusionneeBlock(L) {
+  const out = [];
+  out.push(B.bookmarkPara(L.id, [
+    { t: `LEÇON ${L.num}`, b: true, size: 32, color: B.COLORS.rouge },
+    { t: ` — ${L.titre}`, b: true, size: 28 },
+  ], { align: AlignmentType.CENTER }));
+  out.push(new Paragraph({ children: [new TextRun({ text: `Leçon commune aux séances ${L.plage} — contenu à dicter et à faire copier`, font: B.FONT, size: 22, italics: true, color: "555555" })], alignment: AlignmentType.CENTER, spacing: { after: 200 } }));
+
+  if (L.image) {
+    out.push(B.imagePara(path.join(ASSETS, L.image.file), L.image.w, L.image.h, 500));
+    out.push(new Paragraph({ children: [new TextRun({ text: L.image.legende, font: B.FONT, size: 20, italics: true, color: "555555" })], alignment: AlignmentType.CENTER, spacing: { after: 160 } }));
+  }
+
+  for (const sub of L.subs) {
+    out.push(B.p([{ t: sub.t, b: true }], { base: { size: 24, color: B.COLORS.vert }, spacing: { before: 160, after: 60 } }));
+    for (const para of sub.paras) out.push(B.p(para, { base: { size: 24 } }));
+  }
+
+  out.push(B.p([{ t: "★ À RETENIR : ", b: true }, ...L.retenir], { base: { size: 24 }, spacing: { before: 200, after: 120 } }));
   return out;
 }
 
@@ -191,6 +222,11 @@ async function main() {
     for (const s of th.seances) {
       children.push(...seanceBlock(th, s));
       children.push(B.pageBreakPara());
+      const L = LECONS.find((x) => x.apres === s.n);
+      if (L) {
+        children.push(...leconFusionneeBlock(L));
+        children.push(B.pageBreakPara());
+      }
     }
   }
   children.push(new Paragraph({ children: [new TextRun({ text: "— FIN DU BLOC 3 (SÉANCES 1 À 30) —", font: B.FONT, size: 28, bold: true, color: B.COLORS.rouge })], alignment: AlignmentType.CENTER, spacing: { before: 600 } }));

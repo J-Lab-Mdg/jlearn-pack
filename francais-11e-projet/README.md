@@ -56,3 +56,15 @@ verify_docx.py        # sectPr=1, ns0=0, Times New Roman, 0 double espace, 0 dat
 - Analyse : une ligne par couple question / R.A. Synthèse : commence par « Donc : ».
 - Aucune date calendaire, aucun « ministère », jamais commencer sans feu vert utilisateur.
 - Continuité entre sessions : voir `LETTRE-PASSATION-BLOC1.md`.
+
+
+## Structure v2 (refonte suite retours utilisateur)
+
+- **Fiches de préparation séparées** (une par séance de 30 min, exercices + corrigés après chaque fiche).
+- **19 leçons fusionnées** : après chaque groupe de séances du même grand titre, une page « LEÇON N — … »
+  (1 à 2 pages) rassemble le contenu à dicter, fusionné fidèlement depuis les fiches du groupe
+  (module `src/lecons-fusionnees.js`, clé `apres` ; fusion automatique de data-theme1..8).
+- **Images mixtes** : 9 scènes IA album scolaire malgache pour les leçons fusionnées (t1_a→t4_a) ;
+  5 dessins plats conservés pour des exercices (EXO_IMAGES : s15, s26, s51, s61, s71).
+- Règles images IA : AUCUN texte, personnages malgaches, tableau noir vierge, décor complet.
+- Vérifs après regen : `LEÇON i —` ×1 pour i=1..19, signets ~110, `CONTENU DE LA LEÇON` = 0.
