@@ -482,4 +482,45 @@ etiquette_petite(d, 930, 200, "les yeux")
 etiquette_petite(d, 930, 450, "les cheveux")
 img.save(os.path.join(OUT, "s25_son_eu.png"))
 
+# 14bis. s31_dents.png — les dents (exercice)
+img, d = nouvelle(1100, 560)
+centre_texte(d, 550, 30, "JE ME BROSSE LES DENTS", 42, CONT)
+d.rounded_rectangle([200, 130, 900, 330], radius=90, fill=ROSE, outline=CONT, width=5)
+d.rounded_rectangle([240, 170, 860, 290], radius=60, fill=CIER, outline=CONT, width=4)
+for x in range(280, 840, 80):
+    d.line([x, 170, x, 290], fill=CONT, width=3)
+# brosse
+d.rectangle([420, 380, 680, 440], fill=BLEU, outline=CONT, width=4)
+for x in range(430, 560, 24):
+    d.rectangle([x, 340, x + 14, 382], fill=CIER, outline=CONT, width=2)
+etiquette_petite(d, 550, 470, "la brosse à dents")
+etiquette_petite(d, 250, 380, "le dentifrice")
+etiquette_petite(d, 870, 380, "les dents")
+img.save(os.path.join(OUT, "s31_dents.png"))
+
+# 15bis. s35_son_an.png — le son an (exercice)
+img, d = nouvelle(1100, 560)
+d.rounded_rectangle([40, 40, 280, 190], radius=16, fill=(255, 253, 245), outline=CONT, width=5)
+centre_texte(d, 160, 55, "AN", 95, VERT_F)
+d.text((330, 92), "Je lis des mots avec an :", font=font(42), fill=CONT)
+# lampe
+d.polygon([(180, 350), (280, 350), (255, 260), (205, 260)], fill=JAUNE_F, outline=CONT)
+d.rectangle([222, 350, 238, 420], fill=CONT)
+d.rectangle([195, 420, 265, 435], fill=CONT)
+# banane
+d.arc([400, 260, 560, 400], 20, 160, fill=(230, 180, 40), width=22)
+# canard
+d.ellipse([700, 300, 820, 380], fill=JAUNE_F, outline=CONT, width=3)
+d.ellipse([790, 260, 850, 320], fill=JAUNE_F, outline=CONT, width=3)
+d.polygon([(845, 280), (890, 292), (845, 304)], fill=ORANGE, outline=CONT)
+# pantalon
+d.rectangle([930, 250, 1050, 280], fill=BLEU_F, outline=CONT)
+d.rectangle([930, 280, 980, 420], fill=BLEU_F, outline=CONT, width=3)
+d.rectangle([1000, 280, 1050, 420], fill=BLEU_F, outline=CONT, width=3)
+etiquette_petite(d, 230, 470, "la lampe")
+etiquette_petite(d, 480, 470, "la banane")
+etiquette_petite(d, 775, 470, "le canard")
+etiquette_petite(d, 990, 470, "le pantalon")
+img.save(os.path.join(OUT, "s35_son_an.png"))
+
 print("Illustrations CP2 unité 2 générées.")

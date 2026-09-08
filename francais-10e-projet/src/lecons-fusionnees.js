@@ -300,6 +300,76 @@ const F = [
     ],
     retenir: ["Unité 2 réussie : ", { t: "la famille, les possessifs, les sons u et eu", k: true }, " !"],
   },
+
+  // ---------- Unité 3 — La toilette ----------
+  {
+    id: "lecon10", apres: 30, num: 10,
+    titre: "LE VOCABULAIRE DE LA TOILETTE", titreS: "Le vocabulaire de la toilette",
+    plage: "29 à 30",
+    image: { file: "ia_u3_toilette.jpg", w: 1376, h: 768, legende: "Le savon, la serviette, le lavabo : je me lave les mains !" },
+    subs: [
+      { t: "A. Les objets de la toilette", paras: [[{ t: "le savon", k: true }, " — ", { t: "la serviette", k: true }, " — ", { t: "le lavabo", k: true }, " — ", { t: "l'eau", k: true }, " — ", { t: "la brosse", k: true }, " — ", { t: "le peigne", k: true }]] },
+      { t: "B. Les gestes du bain", paras: [["« ", { t: "Je prends mon bain.", k: true }, " » — ", { t: "je me savonne", k: true }, " — ", { t: "je me rince", k: true }, " — ", { t: "je me sèche", k: true }, " — ", { t: "je suis propre", k: true }, " !"]] },
+    ],
+    retenir: ["Pour la toilette : ", { t: "le savon, la serviette, le lavabo, l'eau", k: true }, " — je prends mon bain et je suis ", { t: "propre", k: true }, " !"],
+  },
+  {
+    id: "lecon11", apres: 32, num: 11,
+    titre: "LES DENTS ; PROPRE OU SALE", titreS: "Les dents ; propre ou sale",
+    plage: "31 à 32",
+    image: { file: "ia_u3_dents.jpg", w: 1376, h: 768, legende: "Matin et soir, je me brosse les dents avec du dentifrice." },
+    subs: [
+      { t: "A. Les mots des dents", paras: [[{ t: "la brosse à dents", k: true }, " — ", { t: "le dentifrice", k: true }, " — ", { t: "se brosser les dents", k: true }, " : matin et soir !"]] },
+      { t: "B. Propre ou sale", paras: [[{ t: "propre", k: true }, " ≠ ", { t: "sale", k: true }, " : après la toilette, ", { t: "il est propre", k: true }, ", ", { t: "elle est propre", k: true }, "."]] },
+    ],
+    retenir: ["Je me brosse les dents ", { t: "matin et soir", k: true }, " — et le contraire de ", { t: "propre", k: true }, ", c'est ", { t: "sale", k: true }, "."],
+  },
+  {
+    id: "lecon12", apres: 34, num: 12,
+    titre: "LA COMPTINE ET LE DIALOGUE DE LA TOILETTE", titreS: "La comptine et le dialogue de la toilette",
+    plage: "33 à 34",
+    image: { file: "ia_u3_comptine.jpg", w: 1376, h: 768, legende: "« Je me lave, je me lave, avec du savon... je suis propre et content ! »" },
+    subs: [
+      { t: "A. La comptine", paras: [["« ", { t: "Je me lave, je me lave,", k: true }, " » — « ", { t: "avec du savon ;", k: true }, " »"], ["« ", { t: "je me rince, je me sèche,", k: true }, " » — « ", { t: "je suis propre et content !", k: true }, " »"]] },
+      { t: "B. Le dialogue", paras: [["« — ", { t: "Tu es propre ?", k: true }, " — ", { t: "Oui, je suis propre !", k: true }, " » — « — Montre tes mains... — ", { t: "Regarde, elles sont propres !", k: true }, " »"]] },
+    ],
+    retenir: ["Ma comptine : ", { t: "« Je suis propre et content ! »", k: true }, " — et le dialogue : « ", { t: "Tu es propre ? — Oui !", k: true }, " »"],
+  },
+  {
+    id: "lecon13", apres: 37, num: 13,
+    titre: "LE SON AN", titreS: "Le son an",
+    plage: "35 à 37",
+    image: { file: "ia_u3_son_an.jpg", w: 1376, h: 768, legende: "La lampe, la banane, le canard, le pantalon : j'entends le son an !" },
+    subs: [
+      { t: "A. Le son", paras: [["Le son ", { t: "an", k: true }, " : j'ouvre la bouche et je dis « aaan ! »"]] },
+      { t: "B. Les mots", paras: [[{ t: "la lampe", k: true }, " — ", { t: "la banane", k: true }, " — ", { t: "le canard", k: true }, " — ", { t: "le pantalon", k: true }, " — ", { t: "la dent", k: true }, " — ", { t: "maman", k: true }, " — ", { t: "le banc", k: true }]] },
+      { t: "C. Sa place", paras: [["Le son an peut être au ", { t: "milieu", k: true }, " (banane, lampe, canard) ou à ", { t: "la fin", k: true }, " (banc, dent, pantalon)."]] },
+      { t: "D. Les phrases", paras: [["« ", { t: "Papa a un pantalon.", k: true }, " » — « ", { t: "La dent de Fara bouge.", k: true }, " » — « ", { t: "Le canard boit à la mare.", k: true }, " » — « ", { t: "Maman allume la lampe.", k: true }, " »"]] },
+    ],
+    retenir: ["Le son ", { t: "an", k: true }, " : ", { t: "lampe, banane, canard, pantalon, dent, maman", k: true }, " — bouche ouverte !"],
+  },
+  {
+    id: "lecon14", apres: 39, num: 14,
+    titre: "ÉCRIRE AN", titreS: "Écrire an",
+    plage: "38 à 39",
+    image: null,
+    subs: [
+      { t: "A. Les lettres", paras: [[{ t: "an", k: true }, " : d'abord ", { t: "a", k: true }, ", puis ", { t: "n", k: true }, " — dans dent, le son an s'écrit ", { t: "en", k: true }, "."]] },
+      { t: "B. La dictée et la phrase", paras: [["J'écris : ", { t: "dent, lampe, banane, pantalon", k: true }, " — et la phrase : « ", { t: "Papa a un pantalon.", k: true }, " » (majuscule, point)."]] },
+    ],
+    retenir: ["J'écris le son ", { t: "an", k: true }, " : ", { t: "dent, lampe, banane, pantalon", k: true }, " — majuscule et point dans la phrase !"],
+  },
+  {
+    id: "lecon15", apres: 40, num: 15,
+    titre: "BILAN DE L'UNITÉ 3", titreS: "Bilan de l'unité 3",
+    plage: "40",
+    image: null,
+    subs: [
+      { t: "A. Ce que je sais dire", paras: [[{ t: "le savon, la serviette, le lavabo", k: true }, " — ", { t: "je prends mon bain", k: true }, " — ", { t: "je me brosse les dents", k: true }, " — ", { t: "propre / sale", k: true }]] },
+      { t: "B. Ce que je sais lire et écrire", paras: [["Le son ", { t: "an", k: true }, " : ", { t: "lampe, banane, canard, pantalon, dent, maman", k: true }, " — « ", { t: "Papa a un pantalon.", k: true }, " »"]] },
+    ],
+    retenir: ["Unité 3 réussie : ", { t: "la toilette, les dents, la comptine et le son an", k: true }, " !"],
+  },
 ];
 
 module.exports = F;

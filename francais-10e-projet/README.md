@@ -14,6 +14,10 @@ Manuel existant de référence : PDF Drive « Francais_10e_.fiche de préparatio
   tableau noir vierge) pour la couverture des leçons fusionnées ; dessins plats Pillow conservés pour
   certaines illustrations d'exercices (EXO_IMAGES dans l'assembleur : s6, s13, s17, s21).
 - `ia_u2_son_u.jpg` régénérée (v2 malgache ✓).
+- **Annexes par thème** (retours utilisateur) : `ANNEXES DU THÈME N` après la dernière leçon
+  fusionnée de chaque unité — A. Conjugaison (s'appeler/être ; avoir ; se laver),
+  B. Grammaire et orthographe, C. Vocabulaire du thème (module `src/annexes.js`, U3 préremplie).
+- Bloc 3 livré : s29-40 toilette (data-theme3.js), leçons 10-15, images ia_u3_* + s31/s35 plates.
 
 ## Décisions validées
 
@@ -33,8 +37,10 @@ Manuel existant de référence : PDF Drive « Francais_10e_.fiche de préparatio
 |---|---|---|---|
 | 1 | Les formules de présentation (EO/L/EE) | 1-12 | ✅ Livré (`output/Manuel_Francais_10e_V1_BLOC1.docx`) |
 | 1-2 | Présentation + Famille (cumulatif) | 1-28 | ✅ Livré (`output/Manuel_Francais_10e_V1_THEMES1-2.docx`) |
+| 1-3 | + Toilette (cumulatif) | 1-40 | ✅ Livré (`output/Manuel_Francais_10e_V1_THEMES1-3.docx`) |
+| 3 | Les termes relatifs à la toilette | 29-40 | ✅ Intégré (EO s29-34, L son an s35-37, EE s38-39, bilan s40 ; 6 leçons fusionnées + annexe) |
 | 2 | Les termes relatifs à la famille | 13-28 | ✅ Intégré au cumulatif (EO s13-20, L sons u/eu s21-23 et s25-27, EE s24 et s28) |
-| 3-8 | Toilette (12), école (12), cadeaux/vêtements (13), marché (18), repas (16), ferme (21) | 29-120 | ⏳ À venir |
+| 4-8 | École (12), cadeaux/vêtements (13), marché (18), repas (16), ferme (21) | 41-120 | ⏳ À venir |
 
 Volumétrie totale : 8 unités, 120 séances (≈ 40 fiches de 3 jours).
 
@@ -47,6 +53,8 @@ node src/assemble-bloc1.js        # → output/Manuel_Francais_10e_V1_BLOC1.docx
 node src/assemble-bloc2.js        # → output/Manuel_Francais_10e_V1_THEMES1-2.docx (28 séances, cumulatif)
 python3 verify_docx.py output/Manuel_Francais_10e_V1_BLOC1.docx 12       # TOUT CONFORME attendu
 python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-2.docx 28   # TOUT CONFORME attendu
+node src/assemble-bloc3.js        # → output/Manuel_Francais_10e_V1_THEMES1-3.docx (40 séances, cumulatif)
+python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-3.docx 40   # TOUT CONFORME attendu
 ```
 
 ## Architecture
@@ -58,6 +66,7 @@ src/data-theme2.js    # CONTENU des 16 séances de l'Unité 2 (famille, sons u p
 src/assemble-bloc1.js # Bloc 1 : couverture + sommaire + Unité 1 seule
 src/assemble-bloc2.js # Bloc 2 : cumulatif — liste UNITS (thème + plage), sommaire multi-unités
 src/lecons-fusionnees.js # Leçons fusionnées par grand titre (structure v2, clé apres)
+src/annexes.js        # Annexe de fin de thème : conjugaison, grammaire-orthographe, vocabulaire
 illus/generate_illus.py  # illustrations scolaires plates (perso, bulle, velo, tasse, fanions…)
 assets/               # PNG ~1100px (cover_hero + 7 illustrations unité 1 + 6 unité 2)
 verify_docx.py        # 22 vérifications skill v18 (paramétrable : <file> <N>)

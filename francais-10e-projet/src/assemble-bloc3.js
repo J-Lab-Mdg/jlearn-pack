@@ -1,5 +1,5 @@
 // ============================================================
-// assemble-bloc2.js — BLOC 2 : Unités 1-2 (cumulatif séances 1-28)
+// assemble-bloc3.js — BLOC 3 : Unités 1-3 (cumulatif séances 1-40)
 // Manuel Français 10e (CP2) — Collection J-Learn — skill v18
 // ============================================================
 const path = require("path");
@@ -10,6 +10,7 @@ const {
 const B = require("./builders");
 const { theme1, DOC } = require("./data-theme1");
 const { theme2 } = require("./data-theme2");
+const { theme3 } = require("./data-theme3");
 const LECONS = require("./lecons-fusionnees");
 const ANNEXES = require("./annexes");
 
@@ -19,15 +20,18 @@ const EXO_IMAGES = {
  13: { file: "s13_famille.png", w: 1100, h: 560, legende: "Je nomme les membres de ma famille." },
  17: { file: "s17_possessifs.png", w: 1100, h: 560, legende: "mon ou ma ? J'entoure la bonne étiquette." },
  21: { file: "s21_son_u.png", w: 1100, h: 560, legende: "J'entoure les mots qui contiennent le son u." },
+ 31: { file: "s31_dents.png", w: 1100, h: 560, legende: "Le dentifrice et la brosse à dents : ce qui sert aux dents !" },
+ 35: { file: "s35_son_an.png", w: 1100, h: 560, legende: "J'entoure les mots qui contiennent le son an." },
 };
 
 const UNITS = [
  { th: theme1, plage: "1 à 12" },
  { th: theme2, plage: "13 à 28" },
+ { th: theme3, plage: "29 à 40" },
 ];
 
 const ASSETS = path.join(__dirname, "..", "assets");
-const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_10e_V1_THEMES1-2.docx");
+const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_10e_V1_THEMES1-3.docx");
 
 const noB = { top: { style: BorderStyle.NONE, size: 0, color: "auto" }, bottom: { style: BorderStyle.NONE, size: 0, color: "auto" }, left: { style: BorderStyle.NONE, size: 0, color: "auto" }, right: { style: BorderStyle.NONE, size: 0, color: "auto" }, insideHorizontal: { style: BorderStyle.NONE, size: 0, color: "auto" }, insideVertical: { style: BorderStyle.NONE, size: 0, color: "auto" } };
 
@@ -165,7 +169,7 @@ function seanceBlock(s, th) {
   documentation: DOC,
   supportFiche: s.supportFiche,
   classe: "10ème (CP2)",
-  seanceNum: `${s.n} / 28`,
+  seanceNum: `${s.n} / 40`,
  }));
 
  out.push(new Paragraph({ children: [], spacing: { after: 120 } }));
@@ -252,12 +256,12 @@ async function main() {
   children.push(...annexeThemeBlock(th));
   children.push(B.pageBreakPara());
  }
- children.push(new Paragraph({ children: [new TextRun({ text: "— FIN DU BLOC 2 (SÉANCES 1 À 28) —", font: B.FONT, size: 28, bold: true, color: B.COLORS.rouge })], alignment: AlignmentType.CENTER, spacing: { before: 600 } }));
- children.push(new Paragraph({ children: [new TextRun({ text: "À suivre : Unité 3 — Les termes relatifs à la toilette.", font: B.FONT, size: 24, italics: true, color: "555555" })], alignment: AlignmentType.CENTER }));
+ children.push(new Paragraph({ children: [new TextRun({ text: "— FIN DU BLOC 3 (SÉANCES 1 À 40) —", font: B.FONT, size: 28, bold: true, color: B.COLORS.rouge })], alignment: AlignmentType.CENTER, spacing: { before: 600 } }));
+ children.push(new Paragraph({ children: [new TextRun({ text: "À suivre : Unité 4 — L'école.", font: B.FONT, size: 24, italics: true, color: "555555" })], alignment: AlignmentType.CENTER }));
 
  const doc = new Document({
   creator: "J-Lab — Collection J-Learn",
-  title: "Manuel de Français 10ème (CP2) — Unités 1 à 2 (cumulatif)",
+  title: "Manuel de Français 10ème (CP2) — Unités 1 à 3 (cumulatif)",
   description: "Manuel J-Learn conforme au programme officiel RAPS — Madagascar",
   styles: { default: { document: { run: { font: B.FONT, size: 24 } } } },
   sections: [{
