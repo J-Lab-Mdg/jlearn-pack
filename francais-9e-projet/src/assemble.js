@@ -9,13 +9,14 @@ const { Document, Packer } = require("docx");
 const B = require("./builders");
 const { theme1, annexe1, DOC } = require("./data-theme1");
 const { theme2, annexe2 } = require("./data-theme2");
+const { theme3, annexe3 } = require("./data-theme3");
 const { buildAnnexe } = require("./annexes9e");
 
 const ASSETS = path.join(__dirname, "..", "assets");
-const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2_THEMES1-2.docx");
+const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2_THEMES1-3.docx");
 const TOTAL = 186;
 const { COLORS } = B;
-const THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }];
+const THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }];
 
 const t = (segs, size) => B.p(segs, { base: { size: size || 22 } });
 

@@ -31,7 +31,7 @@ const gridBorders = { top: B_VIS, bottom: B_VIS, left: B_VIS, right: B_VIS, insi
 // seg : string | { t, k(mot clé bleu), r(rose corrigé), b(bold), i(italic), color, size }
 function segRuns(segs, base = {}) {
   const list = Array.isArray(segs) ? segs : [segs];
-  return list.map((s) => {
+  return (list || []).filter(Boolean).map((s) => {
     if (typeof s === "string") {
       return new TextRun({ text: s, font: FONT, size: base.size || 24, bold: base.bold || false, italics: base.i || false, color: base.color || COLORS.noir });
     }
@@ -77,7 +77,7 @@ function metaTable(m) {
     });
   const row = (cells) => new TableRow({ children: cells });
   const label = (t) => p([{ t, b: true }], { base: { size: 22 }, spacing: { after: 0 } });
-  const val = (segs) => p(segs, { base: { size: 22 }, spacing: { after: 0 } });
+  const val = (segs) => p(segs || [{ t: "" }], { base: { size: 22 }, spacing: { after: 0 } });
   return new Table({
     width: { size: W.reduce((a, b) => a + b, 0), type: WidthType.DXA },
     columnWidths: W,

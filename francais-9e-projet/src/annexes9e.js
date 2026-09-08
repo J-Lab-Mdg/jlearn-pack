@@ -12,7 +12,8 @@ function conjBlock(c) {
   const o = [];
   o.push(SH(c.verbe + " — " + c.temps));
   o.push(B.p([...RUB("Quand l'utiliser :"), { t: c.quand }], { base: { size: 21 } }));
-  o.push(B.p(c.exemplesQuand.map((e, i) => [{ t: "« " + e + " »", i: true, color: COLORS.bleu }].concat(i < c.exemplesQuand.length - 1 ? [" / "] : [])).flat(), { base: { size: 21 } }));
+  const eq = Array.isArray(c.exemplesQuand) ? c.exemplesQuand : [c.exemplesQuand];
+  o.push(B.p(eq.map((e, i) => [{ t: "« " + e + " »", i: true, color: COLORS.bleu }].concat(i < eq.length - 1 ? [" / "] : [])).flat(), { base: { size: 21 } }));
   o.push(B.p([...RUB("Comment le former :"), { t: c.comment }], { base: { size: 21 } }));
   c.tableau.forEach((f) => o.push(B.p([{ t: "• " + f, color: COLORS.noir }], { base: { size: 21 } })));
   o.push(B.p([...RUB("Pourquoi :"), { t: c.pourquoi }], { base: { size: 21 } }));
