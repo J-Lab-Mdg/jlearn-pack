@@ -26,6 +26,7 @@ const TH4 = {
       sd: "Expression Orale",
       objectif: "Nommer les pièces et les meubles et décrire sa maison",
       support: "Image d'une maison malgache, étiquettes des pièces et des meubles.",
+      image: { file: "theme4_maison.png", w: 1100, h: 560, legende: "La maison : la chambre, la cuisine, le salon, la véranda." },
       lecon: {
         titre: "1. La maison et ses pièces",
         blocs: [

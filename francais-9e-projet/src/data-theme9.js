@@ -26,6 +26,7 @@ const TH9 = {
       sd: "Expression Orale",
       objectif: "Nommer les métiers et les lieux de travail et les présenter",
       support: "Images de métiers (instituteur, cultivateur, maçon, couturière, infirmier), étiquettes.",
+      image: { file: "theme9_metiers.png", w: 1100, h: 560, legende: "Les métiers : le lieu de travail et l'outil." },
       lecon: {
         titre: "1. Les métiers et les lieux de travail",
         blocs: [

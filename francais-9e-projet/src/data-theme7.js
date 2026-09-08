@@ -26,6 +26,7 @@ const TH7 = {
       sd: "Expression Orale",
       objectif: "Nommer et raconter les travaux des champs",
       support: "Images des travaux de la rizière, étiquettes des outils.",
+      image: { file: "theme7_champs.png", w: 1100, h: 560, legende: "Les travaux des champs dans l'ordre : labourer, semer, repiquer, sarcler, récolter." },
       lecon: {
         titre: "1. Les travaux des champs",
         blocs: [

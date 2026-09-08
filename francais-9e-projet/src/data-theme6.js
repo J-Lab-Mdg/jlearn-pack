@@ -28,6 +28,7 @@ const TH6 = {
       sd: "Expression Orale",
       objectif: "Nommer les animaux de la ferme, leurs habitats et leurs petits",
       support: "Images d'animaux de la ferme, étiquettes (mâle, femelle, petit, habitat).",
+      image: { file: "theme6_ferme.png", w: 1100, h: 560, legende: "À la ferme : le mâle, la femelle, le petit et l'habitat." },
       lecon: {
         titre: "1. Les animaux de la ferme",
         blocs: [

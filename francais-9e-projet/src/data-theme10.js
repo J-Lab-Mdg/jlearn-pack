@@ -26,6 +26,7 @@ const TH10 = {
       sd: "Expression Orale",
       objectif: "Nommer les moyens de transport et raconter un voyage dans l'ordre",
       support: "Images de transports (taxi-brousse, pirogue, charrette), carte simplifiée.",
+      image: { file: "theme10_voyage.png", w: 1100, h: 560, legende: "Le voyage et les deux saisons : la saison des pluies, la saison sèche." },
       lecon: {
         titre: "1. Le voyage et les transports",
         blocs: [

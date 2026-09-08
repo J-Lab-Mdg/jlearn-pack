@@ -26,6 +26,7 @@ const TH3 = {
       sd: "Conjugaison",
       objectif: "S'exprimer sur ses activités et ses obligations avec vouloir / pouvoir / devoir",
       support: "Images d'activités (réveil, école, corvées, sport, devoirs).",
+      image: { file: "theme3_temps_ecole.png", w: 1100, h: 560, legende: "La journée : le matin, le midi, le soir ; l'école a ses lieux." },
       revision: {
         ens: "« Que fais-tu le matin avant de venir à l'école ? » - Révision des verbes du 1er groupe au présent. Le tableau des verbes en -er est rappelé.",
         app: "Chaque élève nomme une activité du matin. Un élève rappelle la conjugaison de manger au présent.",

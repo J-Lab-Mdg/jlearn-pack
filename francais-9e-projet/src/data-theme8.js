@@ -27,6 +27,7 @@ const TH8 = {
       sd: "Expression Orale",
       objectif: "Nommer les acteurs, les lieux et les marchandises du marché",
       support: "Image d'un marché malgache, étiquettes des marchandises, prix fictifs.",
+      image: { file: "theme8_marche.png", w: 1100, h: 560, legende: "Au marché : le marchand et le client discutent le prix." },
       lecon: {
         titre: "1. Les acteurs et les marchandises du marché",
         blocs: [

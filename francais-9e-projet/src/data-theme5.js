@@ -26,6 +26,7 @@ const TH5 = {
       sd: "Expression Orale",
       objectif: "Nommer les lieux du village et les situer",
       support: "Image d'un village malgache, étiquettes des lieux.",
+      image: { file: "theme5_village.png", w: 1100, h: 560, legende: "Le village : l'école, le marché, l'église, le puits, les rizières." },
       lecon: {
         titre: "1. Le village et ses lieux",
         blocs: [
