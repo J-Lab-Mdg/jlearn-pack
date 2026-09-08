@@ -4,17 +4,18 @@
 // =============================================================
 const TH3 = {
   numero: 3,
-  nom: "Les activités quotidiennes",
+  nom: "Le temps et l'environnement scolaire",
+  source: "RAPE T3 2025-2026 — Période 3",
   periodes: [
-    ["Expression orale", "Dire ce que l'on veut, ce que l'on peut, ce que l'on doit faire."],
-    ["Étude de la langue", "Le genre des noms. Les verbes vouloir, pouvoir, devoir. La phrase simple S+V+C. Les sons [o] / [u]."],
-    ["Lecture", "Lire un emploi du temps, un règlement intérieur."],
-    ["Expression écrite", "Rédiger un emploi du temps, un court règlement de la classe."],
+    ["Procédés et techniques", "La description."],
+    ["Sémantico-lexical", "Le lexique du temps ; les activités de la journée en ordre chronologique (Le matin… Le soir… / D'abord, ensuite, après) ; le lexique de l'environnement scolaire (bâtiments scolaires, point d'eau)."],
+    ["Morphosyntaxe", "Le genre féminin / masculin ; le présent de être, avoir, faire ; vouloir, pouvoir, devoir au présent ; la fonction des mots (sujet, verbe, complément) et l'ordre S + V + C ; mobilisation du présent et de l'imparfait."],
+    ["Phonie-graphie", "Les orthographes du son [o] : eau, ot, aux, ô (seau, pot, taux, tôt) ; le son [u] : ou (sou, chou)."],
   ],
   objectifs: [
     "Nommer les activités de la journée et dire ce que l'on veut, peut ou doit faire.",
     "Conjuguer au présent les verbes vouloir, pouvoir et devoir.",
-    "Former le féminin des noms et repérer les sons [o] et [u].",
+    "Former le féminin des noms et repérer les orthographes des sons [o] et [u].",
     "Construire et analyser la phrase simple S+V+C.",
     "Lire un emploi du temps, rédiger un court règlement.",
   ],
@@ -135,10 +136,9 @@ const TH3 = {
         technique: {
           sous: "II. Les sons [o] et [u]",
           points: [
-            "[o] s'écrit o, ô, au, eau : dos, hôtel, eau, beau.",
-            "[u] s'écrit u ou ou selon le son : rue, mur ; mais [u] ne s'écrit jamais ou (ou = [u] en français se dit « ou » comme dans « loup »).",
-            "Attention : « loup » se dit [lu] et « sous » se dit [su] : ou se prononce [u].",
-            "Pour distinguer : [o] est un son ouvert (dos, beau) ; [u] est un son fermé avec les lèvres en avant (rue, mur, loup).",
+            "[o] s'écrit eau, ot, aux, ô : seau, pot, taux, tôt.",
+            "[u] s'écrit ou : sou, chou, loup, sous.",
+            "Pour distinguer : [o] est ouvert (seau, pot) ; [u] se dit les lèvres en avant (sou, chou).",
           ],
         },
       },
@@ -149,7 +149,7 @@ const TH3 = {
           sous: "III. Application",
           points: [
             "Donnez le féminin : un ami, un acteur, un élève, un musicien.",
-            "Classez selon le son [o] ou [u] : dos, rue, eau, loup, beau, mur.",
+            "Classez selon le son [o] ou [u] : seau, sou, pot, chou, tôt, loup.",
             "Écrivez une phrase avec un nom au féminin.",
           ],
         },
@@ -161,7 +161,7 @@ const TH3 = {
           sous: "IV. Évaluation",
           points: [
             "Donnez le féminin : un acteur, un musicien, un élève.",
-            "Classez selon le son [o] ou [u] : eau, rue, loup.",
+            "Classez selon le son [o] ou [u] : pot, chou, tôt.",
           ],
         },
       },
@@ -247,7 +247,7 @@ const TH3 = {
   // ============================================================
   annexe: {
     theme: 3,
-    nom: "Les activités quotidiennes",
+    nom: "Le temps et l'environnement scolaire",
     conjugaison: [
       {
         verbe: "vouloir, pouvoir, devoir",
@@ -315,11 +315,11 @@ const TH3 = {
     orthographe: [
       {
         notion: "Les sons [o] et [u]",
-        regle: "[o] s'écrit o, ô, au, eau. [u] s'écrit u ; la graphie ou se prononce [u].",
-        exemples: ["dos", "hôtel", "eau", "beau", "rue", "mur", "loup", "sous"],
+        regle: "Le son [o] s'écrit eau, ot, aux, ô. Le son [u] s'écrit ou.",
+        exemples: ["seau", "pot", "taux", "tôt", "sou", "chou", "loup"],
         pieges: [
-          ["« loup » prononcé [lup]", "ou se prononce [u] : loup se dit [lu]"],
-          ["confondre dos et rue", "[o] est ouvert (dos, beau), [u] se dit les lèvres en avant (rue, mur)"],
+          ["« loup » prononcé [lup]", "ou se prononce [u] : loup se dit [lu], comme sou et chou"],
+          ["confondre seau et sou", "[o] est ouvert (seau, pot, tôt), [u] se dit les lèvres en avant (sou, chou)"],
         ],
       },
       {
@@ -333,17 +333,17 @@ const TH3 = {
       },
     ],
     vocabulaire: [
-      { champ: "Les activités du matin", mots: "se lever — se laver — s'habiller — prendre le petit déjeuner — partir — arriver" },
-      { champ: "Les activités de l'école", mots: "étudier — lire — écrire — écouter — expliquer — faire ses devoirs" },
+      { champ: "Les moments de la journée", mots: "le matin — le midi — l'après-midi — le soir — la nuit — aujourd'hui — hier — demain" },
+      { champ: "L'ordre chronologique", mots: "d'abord — ensuite — après — puis — enfin — avant — pendant" },
+      { champ: "L'environnement scolaire", mots: "le bâtiment scolaire — la salle de classe — la cour — le point d'eau — les latrines — le bureau du directeur — le terrain de sport" },
       { champ: "Les obligations", mots: "devoir — il faut — être obligé de — respecter — ranger — aider" },
-      { champ: "Les loisirs", mots: "jouer — courir — chanter — danser — regarder — se promener" },
     ],
   },
 };
 
 // ---- leçon, exercices et corrigé (structure attendue par assemble.js) ----
 TH3.seances[0].lecon = {
-  titre: "1. Vouloir, pouvoir, devoir au présent",
+  titre: "1. Vouloir, pouvoir et devoir au présent",
   blocs: [
     { st: "A. Le sens des trois verbes", txt: "vouloir = le désir — pouvoir = la possibilité — devoir = l'obligation." },
     { st: "B. La conjugaison", txt: "je veux / je peux / je dois — nous voulons / nous pouvons / nous devons — ils veulent / ils peuvent / ils doivent." },
