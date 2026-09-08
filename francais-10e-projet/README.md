@@ -18,6 +18,8 @@ Manuel existant de référence : PDF Drive « Francais_10e_.fiche de préparatio
   fusionnée de chaque unité — A. Conjugaison (s'appeler/être ; avoir ; se laver),
   B. Grammaire et orthographe, C. Vocabulaire du thème (module `src/annexes.js`, U3 préremplie).
 - Bloc 3 livré : s29-40 toilette (data-theme3.js), leçons 10-15, images ia_u3_* + s31/s35 plates.
+- Bloc 4 livré : s41-52 école (data-theme4.js), leçons 16-20, annexe U4 (conjugaison aller),
+  images ia_u4_* (classe, cartable, chat-chapeau, maison-ballon-bonbons) — 20 leçons, 4 annexes.
 
 ## Décisions validées
 
@@ -38,9 +40,11 @@ Manuel existant de référence : PDF Drive « Francais_10e_.fiche de préparatio
 | 1 | Les formules de présentation (EO/L/EE) | 1-12 | ✅ Livré (`output/Manuel_Francais_10e_V1_BLOC1.docx`) |
 | 1-2 | Présentation + Famille (cumulatif) | 1-28 | ✅ Livré (`output/Manuel_Francais_10e_V1_THEMES1-2.docx`) |
 | 1-3 | + Toilette (cumulatif) | 1-40 | ✅ Livré (`output/Manuel_Francais_10e_V1_THEMES1-3.docx`) |
+| 1-4 | + École (cumulatif) | 1-52 | ✅ Livré (`output/Manuel_Francais_10e_V1_THEMES1-4.docx`) |
+| 4 | L'école | 41-52 | ✅ Intégré (EO s41-46, L ch / s,c,ç / on s47-49, EE s50-51, bilan s52 ; 5 leçons + annexe U4) |
 | 3 | Les termes relatifs à la toilette | 29-40 | ✅ Intégré (EO s29-34, L son an s35-37, EE s38-39, bilan s40 ; 6 leçons fusionnées + annexe) |
 | 2 | Les termes relatifs à la famille | 13-28 | ✅ Intégré au cumulatif (EO s13-20, L sons u/eu s21-23 et s25-27, EE s24 et s28) |
-| 4-8 | École (12), cadeaux/vêtements (13), marché (18), repas (16), ferme (21) | 41-120 | ⏳ À venir |
+| 5-8 | Cadeaux/vêtements (13), marché (18), repas (16), ferme (21) | 53-120 | ⏳ À venir |
 
 Volumétrie totale : 8 unités, 120 séances (≈ 40 fiches de 3 jours).
 
@@ -54,7 +58,9 @@ node src/assemble-bloc2.js        # → output/Manuel_Francais_10e_V1_THEMES1-2.
 python3 verify_docx.py output/Manuel_Francais_10e_V1_BLOC1.docx 12       # TOUT CONFORME attendu
 python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-2.docx 28   # TOUT CONFORME attendu
 node src/assemble-bloc3.js        # → output/Manuel_Francais_10e_V1_THEMES1-3.docx (40 séances, cumulatif)
+node src/assemble-bloc4.js        # → output/Manuel_Francais_10e_V1_THEMES1-4.docx (52 séances, cumulatif)
 python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-3.docx 40   # TOUT CONFORME attendu
+python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-4.docx 52   # TOUT CONFORME attendu
 ```
 
 ## Architecture
@@ -63,6 +69,8 @@ python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-3.docx 40   # TOUT 
 src/builders.js       # design skill v18 — DURÉES CP2 : 3/22/5 (différent de CP1 4/22/4)
 src/data-theme1.js    # CONTENU des 12 séances de l'Unité 1 (clé sd par séance)
 src/data-theme2.js    # CONTENU des 16 séances de l'Unité 2 (famille, sons u puis eu)
+src/data-theme3.js    # CONTENU des 12 séances de l'Unité 3 (toilette, son an)
+src/data-theme4.js    # CONTENU des 12 séances de l'Unité 4 (école, sons ch, s/c/ç, on)
 src/assemble-bloc1.js # Bloc 1 : couverture + sommaire + Unité 1 seule
 src/assemble-bloc2.js # Bloc 2 : cumulatif — liste UNITS (thème + plage), sommaire multi-unités
 src/lecons-fusionnees.js # Leçons fusionnées par grand titre (structure v2, clé apres)

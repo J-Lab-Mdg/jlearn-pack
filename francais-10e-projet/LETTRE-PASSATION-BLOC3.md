@@ -55,3 +55,22 @@ grammaire et orthographe**, **résumé vocabulaire**. Implémentation :
 - `node_modules`/pip à réinstaller à chaque reprise ; DOC n'existe pas côté CP2
   (metaTable reçoit DOC depuis data-theme1 dans l'assembleur — vérifier l'import bloc3).
 - Sources : PDF CP2 (chunks 0-3 lus) ; FRA 10ème = autorité (/tmp/frafrm, ré-extraire).
+
+
+---
+
+## 5. Mise à jour — Bloc 4 livré (Unité 4 « L'école », s41-52)
+
+- `src/data-theme4.js` : EO s41-46 (classe, cartable, dialogue « Prête-moi..., s'il te plaît »,
+  « Qu'est-ce que c'est ? », comptine « À l'école j'apprends, c'est ainsi ! », énumérer une liste) ;
+  Lecture s47-49 (ch : chat/chapeau/chaussure/mouche ; s écrit s/c/ç : salade/citron/garçon ;
+  on : maison/ballon/bonbon/pantalon/mouton) ; EE s50-51 (écrire ch, écrire on) ; s52 bilan.
+- Leçons fusionnées 16-20 + annexe U4 (conjugaison **aller**, sons ch/s/on, vocabulaire école).
+- Images : ia_u4_ecole (classe, affiches lémuriens/zébus), ia_u4_cartable, ia_u4_son_ch
+  (chat au chapeau + chaussures + mouche), ia_u4_son_on (maison + ballon + bonbons).
+- `src/assemble-bloc4.js` : UNITS ×4, seanceNum `/ 52`, footer « FIN DU BLOC 4 (SÉANCES 1 À 52) »,
+  « À suivre : Unité 5 — Les cadeaux et les vêtements. » — TOUT CONFORME ×52 (20 leçons, 4 annexes).
+- **Procédure Bloc 5** (Unité 5 « Les cadeaux et les vêtements », s53-65 — 13 séances, sons
+  eil/ail, j, z ; FRA T2 semaines 5-7) : reprendre le § 3 avec bloc5, plage « 53 à 65 »,
+  OUT THEMES1-5.docx, seanceNum `/ 65`, annexe U5 (porter/mettre ; j, z ; vêtements) —
+  attention : 13 séances (première série non multiple de 4).

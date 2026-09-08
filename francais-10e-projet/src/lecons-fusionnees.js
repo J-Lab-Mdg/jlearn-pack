@@ -370,6 +370,63 @@ const F = [
     ],
     retenir: ["Unité 3 réussie : ", { t: "la toilette, les dents, la comptine et le son an", k: true }, " !"],
   },
+
+  // ---------- Unité 4 — L'école ----------
+  {
+    id: "lecon16", apres: 44, num: 16,
+    titre: "LE VOCABULAIRE DE LA CLASSE", titreS: "Le vocabulaire de la classe",
+    plage: "41 à 44",
+    image: { file: "ia_u4_ecole.jpg", w: 1376, h: 768, legende: "Dans ma classe, il y a le cahier, le crayon, la gomme et la règle !" },
+    subs: [
+      { t: "A. Les objets de la classe", paras: [[{ t: "le cahier", k: true }, " — ", { t: "le crayon", k: true }, " — ", { t: "la gomme", k: true }, " — ", { t: "la règle", k: true }, " — ", { t: "le tableau", k: true }, " — ", { t: "la craie", k: true }]] },
+      { t: "B. Le cartable et la liste", paras: [["« ", { t: "Dans mon cartable, il y a mon cahier, mon crayon, ma gomme et ma règle.", k: true }, " » — « ", { t: "Dans ma classe, il y a..., ..., et...", k: true }, " »"]] },
+      { t: "C. Les questions", paras: [["« — ", { t: "Prête-moi ta règle, s'il te plaît.", k: true }, " — ", { t: "Tiens ! — Merci ! — De rien.", k: true }, " »"], ["« — ", { t: "Qu'est-ce que c'est ?", k: true }, " (ma voix monte !) — ", { t: "C'est le cahier.", k: true }, " »"]] },
+    ],
+    retenir: ["Ma classe : ", { t: "cahier, crayon, gomme, règle, tableau, craie", k: true }, " — et les mots polis : ", { t: "s'il te plaît, merci", k: true }, " !"],
+  },
+  {
+    id: "lecon17", apres: 46, num: 17,
+    titre: "LA COMPTINE DE L'ÉCOLE", titreS: "La comptine de l'école",
+    plage: "45 à 46",
+    image: { file: "ia_u4_cartable.jpg", w: 1376, h: 768, legende: "Cahier, crayon, gomme, règle : dans mon cartable, il y a tout !" },
+    subs: [
+      { t: "A. La comptine", paras: [["« ", { t: "Cahier, crayon, gomme et règle,", k: true }, " » — « ", { t: "dans ma classe j'apprends mon rôle :", k: true }, " »"], ["« ", { t: "je lis, j'écris, je compte aussi,", k: true }, " » — « ", { t: "à l'école j'apprends, c'est ainsi !", k: true }, " »"]] },
+    ],
+    retenir: ["Ma comptine : « ", { t: "À l'école j'apprends, c'est ainsi !", k: true }, " » — et ma liste : « ", { t: "il y a..., et...", k: true }, " »."],
+  },
+  {
+    id: "lecon18", apres: 47, num: 18,
+    titre: "LE SON CH", titreS: "Le son ch",
+    plage: "47",
+    image: { file: "ia_u4_son_ch.jpg", w: 1376, h: 768, legende: "Le chat, le chapeau, la chaussure : j'entends le son ch !" },
+    subs: [
+      { t: "A. Le son", paras: [["Le son ", { t: "ch", k: true }, " s'écrit avec ", { t: "deux lettres : c-h", k: true }, " — lèvres en avant !"]] },
+      { t: "B. Les mots", paras: [[{ t: "le chat", k: true }, " — ", { t: "le chapeau", k: true }, " — ", { t: "la chaussure", k: true }, " — ", { t: "la mouche", k: true }]] },
+    ],
+    retenir: ["Le son ", { t: "ch", k: true }, " : ", { t: "chat, chapeau, chaussure, mouche", k: true }, "."],
+  },
+  {
+    id: "lecon19", apres: 49, num: 19,
+    titre: "LE SON S (S, C, Ç) ET LE SON ON", titreS: "Le son s et le son on",
+    plage: "48 à 49",
+    image: { file: "ia_u4_son_on.jpg", w: 1376, h: 768, legende: "La maison, le ballon, le bonbon : j'entends le son on !" },
+    subs: [
+      { t: "A. Le son s : trois écritures", paras: [[{ t: "s", k: true }, " : ", { t: "salade, radis", k: true }, " — ", { t: "c", k: true }, " devant i : ", { t: "citron", k: true }, " — ", { t: "ç", k: true }, " : ", { t: "garçon", k: true }]] },
+      { t: "B. Le son on", paras: [["Le son ", { t: "on", k: true }, " s'écrit ", { t: "o-n", k: true }, " — bouche ronde : ", { t: "la maison", k: true }, ", ", { t: "le ballon", k: true }, ", ", { t: "le bonbon", k: true }, ", ", { t: "le pantalon", k: true }, ", ", { t: "le mouton", k: true }]] },
+    ],
+    retenir: ["Le son ", { t: "s", k: true }, " s'écrit ", { t: "s, c, ç", k: true }, " — le son ", { t: "on", k: true }, " : ", { t: "maison, ballon, bonbon", k: true }, " !"],
+  },
+  {
+    id: "lecon20", apres: 52, num: 20,
+    titre: "ÉCRIRE CH ET ON — BILAN DE L'UNITÉ", titreS: "Écrire ch et on, bilan",
+    plage: "50 à 52",
+    image: null,
+    subs: [
+      { t: "A. La dictée", paras: [["J'écris : ", { t: "chat, chapeau, mouche", k: true }, " — ", { t: "ballon, maison, bonbon", k: true }]] },
+      { t: "B. Bilan de l'unité", paras: [[{ t: "L'école", k: true }, " + les mots polis + les sons ", { t: "ch, s, on", k: true }, " : tout est appris !"]] },
+    ],
+    retenir: ["Unité 4 réussie : ", { t: "l'école, les mots polis et les sons ch, s, on", k: true }, " !"],
+  },
 ];
 
 module.exports = F;

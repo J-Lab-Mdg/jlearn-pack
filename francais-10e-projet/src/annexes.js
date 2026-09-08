@@ -82,4 +82,32 @@ module.exports = [
       ],
     },
   },
+
+  {
+    unite: 4,
+    conj: {
+      titre: "A. Conjugaison — aller au présent",
+      lignes: [
+        ["« ", { t: "je vais", k: true }, " — ", { t: "tu vas", k: true }, " — ", { t: "il va", k: true }, " / ", { t: "elle va", k: true }, " »"],
+        ["« ", { t: "nous allons", k: true }, " — ", { t: "vous allez", k: true }, " — ", { t: "ils vont", k: true }, " / ", { t: "elles vont", k: true }, " »"],
+        ["À l'école : ", { t: "je vais", k: true }, " en classe — ", { t: "nous allons", k: true }, " apprendre."],
+      ],
+    },
+    gram: {
+      titre: "B. Grammaire et orthographe",
+      lignes: [
+        ["Le son ", { t: "ch", k: true }, " s'écrit ", { t: "c-h", k: true }, " (chat, chapeau, mouche) — lèvres en avant !"],
+        ["Le son ", { t: "s", k: true }, " s'écrit ", { t: "s", k: true }, " (salade), ", { t: "c", k: true }, " devant i (citron) ou ", { t: "ç", k: true }, " (garçon) : même son !"],
+        ["Le son ", { t: "on", k: true }, " s'écrit ", { t: "o-n", k: true }, " (ballon, maison) — question avec ma voix qui ", { t: "monte", k: true }, " : « Qu'est-ce que c'est ? »"],
+      ],
+    },
+    vocab: {
+      titre: "C. Vocabulaire du thème",
+      lignes: [
+        ["La classe : ", { t: "le cahier, le crayon, la gomme, la règle, le tableau, la craie, le cartable", k: true }],
+        ["Mots polis : ", { t: "s'il te plaît, tiens, merci, de rien", k: true }, " — question : ", { t: "Qu'est-ce que c'est ? — C'est...", k: true }],
+        ["Mots du son ch : ", { t: "chat, chapeau, chaussure, mouche", k: true }, " — du son on : ", { t: "maison, ballon, bonbon, pantalon, mouton", k: true }],
+      ],
+    },
+  },
 ];
