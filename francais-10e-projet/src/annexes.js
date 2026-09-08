@@ -164,4 +164,31 @@ module.exports = [
       ],
     },
   },
+  {
+    unite: 7,
+    conj: {
+      titre: "A. Conjugaison — manger au présent",
+      lignes: [
+        ["« ", { t: "je mange", k: true }, " — ", { t: "tu manges", k: true }, " — ", { t: "il mange", k: true }, " / ", { t: "elle mange", k: true }, " »"],
+        ["« ", { t: "nous mangeons", k: true }, " — ", { t: "vous mangez", k: true }, " — ", { t: "ils mangent", k: true }, " / ", { t: "elles mangent", k: true }, " »"],
+        ["Au repas : ", { t: "je mange", k: true }, " du riz — ", { t: "nous mangeons", k: true }, " des brèdes."],
+      ],
+    },
+    gram: {
+      titre: "B. Grammaire et orthographe",
+      lignes: [
+        ["Le son ", { t: "in", k: true }, " s'écrit ", { t: "i-n", k: true }, " et se prononce par le nez (main, pain, lapin, jardin)."],
+        ["Le son ", { t: "g", k: true }, " s'écrit ", { t: "g", k: true }, " (gâteau) ou ", { t: "g-u", k: true }, " devant e et i (langue) — le son ", { t: "k", k: true }, " s'écrit ", { t: "k, c ou qu", k: true }, " (kilo, café, coq)."],
+        ["Les moments du repas : ", { t: "le matin, à midi, le soir", k: true }, " — et la politesse : ", { t: "bon appétit, s'il te plaît, merci", k: true }, "."],
+      ],
+    },
+    vocab: {
+      titre: "C. Vocabulaire du thème",
+      lignes: [
+        ["Les repas : ", { t: "le petit-déjeuner, le déjeuner, le dîner", k: true }, " — les aliments : ", { t: "le riz, le laoka, la viande, les brèdes, la soupe, le pain, le lait", k: true }],
+        ["La table et la cuisine : ", { t: "la nappe, l'assiette, la cuillère, le verre, le bol, le feu, la marmite, la casserole", k: true }],
+        ["Mots des sons : ", { t: "main, pain, lapin, jardin, gâteau, goyave, langue, guitare, café, carotte, coq, kilo", k: true }],
+      ],
+    },
+  },
 ];

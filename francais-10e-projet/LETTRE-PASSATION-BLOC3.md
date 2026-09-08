@@ -78,6 +78,10 @@ grammaire et orthographe**, **résumé vocabulaire**. Implémentation :
   data-theme6.js, leçons 26-31, annexe U6 (conjugaison **acheter** ; sons oi/ui/ph ; vocabulaire
   marché/fruits/légumes), images ia_u6_marche / achat / son_oi / son_ph — TOUT CONFORME ×83
   (31 leçons, 6 annexes, 129 signets, 32 images). Répartition sd : EO s66-75, L s76-78, EE s79-83.
-- **Procédure Bloc 7** (Unité 7 « Les repas », s84-99 — 16 séances, sons in, g/gu, k/c ; FRA T3)
-  : reprendre le § 3 avec bloc7, plage « 84 à 99 », OUT THEMES1-7.docx, seanceNum `/ 99`,
-  annexe U7 (manger ; sons in, g/gu, k/c ; vocabulaire des repas malgaches).
+- **Bloc 7 livré** (Unité 7 « Les repas », s84-99 — 16 séances, sons in, g/gu, k/c) :
+  data-theme7.js, leçons 32-39, annexe U7 (conjugaison **manger** ; sons in/g/k ; vocabulaire
+  repas/table/cuisine), images ia_u7_repas / cuisine / son_in / son_k — TOUT CONFORME ×99
+  (39 leçons, 7 annexes, 155 signets, 36 images). Répartition sd : EO s84-93, L s94-96, EE s97-99.
+- **Procédure Bloc 8** (Unité 8 « La ferme », s100-120 — 21 séances, sons œu, ou ; FRA T3) :
+  reprendre le § 3 avec bloc8, plage « 100 à 120 », OUT THEMES1-8.docx, seanceNum `/ 120`,
+  annexe U8 (avoir ; sons œu, ou ; vocabulaire de la ferme et des animaux).

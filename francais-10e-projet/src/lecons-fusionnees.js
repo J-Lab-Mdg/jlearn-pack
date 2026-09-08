@@ -555,6 +555,96 @@ const F = [
     ],
     retenir: ["Unité 6 réussie : ", { t: "le marché, le dialogue de l'achat et les sons oi, ui, ph", k: true }, " !"],
   },
+  // ---------- Unité 7 — Les repas ----------
+  {
+    id: "lecon32", apres: 84, num: 32,
+    titre: "LE VOCABULAIRE DES REPAS", titreS: "Le vocabulaire des repas",
+    plage: "84",
+    image: { file: "ia_u7_repas.jpg", w: 1376, h: 768, legende: "La famille autour du grand plat de riz : brèdes, laoka, soupe, pain et bananes !" },
+    subs: [
+      { t: "A. Les repas", paras: [[{ t: "le petit-déjeuner", k: true }, " (le matin) — ", { t: "le déjeuner", k: true }, " (à midi) — ", { t: "le dîner", k: true }, " (le soir)"]] },
+      { t: "B. Les aliments", paras: [[{ t: "le riz", k: true }, " — ", { t: "le laoka", k: true }, " — ", { t: "la viande", k: true }, " — ", { t: "les brèdes", k: true }, " — ", { t: "la soupe", k: true }, " — ", { t: "le pain", k: true }]] },
+    ],
+    retenir: ["Les repas malgaches : ", { t: "le riz avec le laoka — brèdes, viande, soupe, pain", k: true }, "."],
+  },
+  {
+    id: "lecon33", apres: 86, num: 33,
+    titre: "LE PETIT-DÉJEUNER, LE DÉJEUNER ET LE DÎNER", titreS: "Les repas de la journée",
+    plage: "85 à 86",
+    image: null,
+    subs: [
+      { t: "A. Le petit-déjeuner", paras: [["« ", { t: "Je mange du pain et je bois du lait.", k: true }, " » — ", { t: "le thé, la banane, l'œuf", k: true }]] },
+      { t: "B. Les moments", paras: [[{ t: "le matin", k: true }, " — ", { t: "à midi", k: true }, " — ", { t: "le soir", k: true }, " : « ", { t: "À midi, je mange du riz et des brèdes.", k: true }, " »"]] },
+    ],
+    retenir: ["Les 3 repas : ", { t: "le matin", k: true }, ", ", { t: "à midi", k: true }, ", ", { t: "le soir", k: true }, " — et les mots ", { t: "je mange / je bois", k: true }, "."],
+  },
+  {
+    id: "lecon34", apres: 88, num: 34,
+    titre: "LE DIALOGUE DU REPAS ET LA POLITESSE", titreS: "Le dialogue du repas et la politesse",
+    plage: "87 à 88",
+    image: null,
+    subs: [
+      { t: "A. Le dialogue", paras: [["« — ", { t: "Qu'est-ce que tu manges ?", k: true }, " — ", { t: "Je mange du riz et des brèdes.", k: true }, " — ", { t: "C'est bon ?", k: true }, " — ", { t: "Oui, c'est très bon !", k: true }, " »"]] },
+      { t: "B. La politesse", paras: [["Je ", { t: "me lave les mains", k: true }, " — « ", { t: "Bon appétit !", k: true }, " » — « ", { t: "Encore, s'il te plaît.", k: true }, " » — « ", { t: "Merci, c'était très bon !", k: true }, " »"]] },
+    ],
+    retenir: ["« ", { t: "Qu'est-ce que tu manges ? — Je mange...", k: true }, " » + la politesse : ", { t: "mains lavées, bon appétit, merci", k: true }, " !"],
+  },
+  {
+    id: "lecon35", apres: 91, num: 35,
+    titre: "LA COMPTINE DES REPAS ET LES GOÛTS", titreS: "La comptine des repas et les goûts",
+    plage: "89 à 91",
+    image: null,
+    subs: [
+      { t: "A. La comptine", paras: [["« ", { t: "Le matin, je bois du lait,", k: true }, " / ", { t: "à midi, je mange du riz ;", k: true }, " »"], ["« ", { t: "le soir, une soupe et une banane —", k: true }, " / ", { t: "bon appétit, je grandis !", k: true }, " »"]] },
+      { t: "B. J'énumère", paras: [["« ", { t: "Au petit-déjeuner, je mange du pain, une banane et un œuf.", k: true }, " » — le mot ", { t: "et", k: true }, " avant le dernier !"]] },
+      { t: "C. Mes goûts", paras: [["« ", { t: "J'aime la banane. Je n'aime pas le citron. Et toi ?", k: true }, " » — chacun ses goûts !"]] },
+    ],
+    retenir: ["Ma comptine : « ", { t: "Bon appétit, je grandis !", k: true }, " » — j'énumère avec ", { t: "et", k: true }, " et je dis mes goûts : ", { t: "« J'aime... / Je n'aime pas... »", k: true }],
+  },
+  {
+    id: "lecon36", apres: 93, num: 36,
+    titre: "LA TABLE ET LA CUISINE", titreS: "La table et la cuisine",
+    plage: "92 à 93",
+    image: { file: "ia_u7_cuisine.jpg", w: 1376, h: 768, legende: "Dans la cuisine : maman remue la marmite sur le feu ; je me lave les mains au bidon d'eau — ça sent bon !" },
+    subs: [
+      { t: "A. La table", paras: [[{ t: "la nappe", k: true }, " — ", { t: "l'assiette", k: true }, " — ", { t: "la cuillère", k: true }, " — ", { t: "le verre", k: true }, " — ", { t: "la fourchette", k: true }, " — ", { t: "le bol", k: true }]] },
+      { t: "B. La cuisine", paras: [[{ t: "le feu", k: true }, " — ", { t: "la marmite", k: true }, " — ", { t: "la casserole", k: true }, " : « ", { t: "Maman allume le feu. Ça sent bon !", k: true }, " »"]] },
+    ],
+    retenir: ["Sur la table : ", { t: "nappe, assiette, cuillère, verre", k: true }, " — dans la cuisine : ", { t: "feu, marmite, casserole", k: true }, "."],
+  },
+  {
+    id: "lecon37", apres: 94, num: 37,
+    titre: "LE SON IN", titreS: "Le son in",
+    plage: "94",
+    image: { file: "ia_u7_son_in.jpg", w: 1376, h: 768, legende: "Le lapin tend la main vers le pain, dans le jardin : j'entends le son in !" },
+    subs: [
+      { t: "A. Le son", paras: [["Le son ", { t: "in", k: true }, " s'écrit avec ", { t: "deux lettres : i-n", k: true }, " — la voix passe par le nez !"]] },
+      { t: "B. Les mots", paras: [[{ t: "la main", k: true }, " — ", { t: "le pain", k: true }, " — ", { t: "le lapin", k: true }, " — ", { t: "le vin", k: true }, " — ", { t: "le jardin", k: true }]] },
+    ],
+    retenir: ["Le son ", { t: "in", k: true }, " : ", { t: "la main, le pain, le lapin, le jardin", k: true }, "."],
+  },
+  {
+    id: "lecon38", apres: 96, num: 38,
+    titre: "LE SON G ET LE SON K", titreS: "Le son g et le son k",
+    plage: "95 à 96",
+    image: { file: "ia_u7_son_k.jpg", w: 1376, h: 768, legende: "Le coq, le café, les carottes et le kiwi : trois écritures pour le son k !" },
+    subs: [
+      { t: "A. Le son g", paras: [["Le son ", { t: "g", k: true }, " s'écrit ", { t: "g", k: true }, " (", { t: "gâteau, goyave", k: true }, ") ou ", { t: "g-u", k: true }, " devant e et i (", { t: "langue", k: true }, ")."]] },
+      { t: "B. Le son k", paras: [["Le son ", { t: "k", k: true }, " s'écrit ", { t: "k", k: true }, " (", { t: "kilo", k: true }, "), ", { t: "c", k: true }, " (", { t: "café, carotte", k: true }, ") ou ", { t: "q-u", k: true }, " (", { t: "coq", k: true }, ") — trois écritures, un seul son !"]] },
+    ],
+    retenir: ["Le son ", { t: "g", k: true }, " : ", { t: "gâteau, langue", k: true }, " — le son ", { t: "k", k: true }, " s'écrit ", { t: "k, c ou qu", k: true }, " : ", { t: "kilo, café, coq", k: true }, " !"],
+  },
+  {
+    id: "lecon39", apres: 99, num: 39,
+    titre: "ÉCRIRE IN, G ET K — BILAN DE L'UNITÉ", titreS: "Écrire in, g et k, bilan",
+    plage: "97 à 99",
+    image: null,
+    subs: [
+      { t: "A. La dictée", paras: [["J'écris : ", { t: "pain, gâteau, café", k: true }, " — ", { t: "je lave mes mains avant de manger", k: true }]] },
+      { t: "B. Bilan de l'unité", paras: [[{ t: "Les repas", k: true }, " (aliments, moments, politesse, table) + les sons ", { t: "in, g, k", k: true }, " : tout est appris !"]] },
+    ],
+    retenir: ["Unité 7 réussie : ", { t: "les repas malgaches, la politesse du repas et les sons in, g, k", k: true }, " !"],
+  },
 ];
 
 module.exports = F;
