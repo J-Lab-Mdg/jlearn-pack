@@ -135,3 +135,57 @@ demande.
 | Codebase modèle 10e/11e | ✅ restaurée, compile, `verify_docx.py` TOUT CONFORME |
 | Chaîne Node + docx + Pillow + python-docx | ✅ installée et testée |
 | Skill v19 | ❌ absent (le 10e et le 11e ont été faits en v18) |
+
+---
+
+## 6. ⚠️ RAPE T3 officiel trouvé — et il DIVERGE des autres sources
+
+`hay.education.mg` est **inaccessible depuis le sandbox** (`SSL_ERROR_SYSCALL`) mais
+**lisible via l'outil de fetch**.
+
+Catalogue : `CYCLE PRIMAIRE > T3` → 2 documents, dont :
+
+- **RAPE T3** — « REPARTITION ANNUELLE DES PROGRAMMES D'ÉTUDES DE LA CLASSE DE T3,
+  ANNÉE SCOLAIRE 2025-2026 », 24 pages, PDF, ministère de l'Éducation nationale.
+  Lecture : `https://hay.education.mg/opac_css/doc_num.php?explnum_id=37` (5 morceaux).
+- Sous-catégorie **FRANCAIS** sous T3 : `index.php?lvl=categ_see&id=76&main=1`
+
+### Ce que dit le RAPE (lu, morceau 0)
+
+- **Français : 12 séances × 30 min = 6 h/semaine** → confirme le PDF du Drive.
+- **5 périodes** au calendrier scolaire (pas 3 trimestres).
+  Première période : **08/09/2025 au 24/10/2025**.
+- Période 1, Français : **« LES ALIMENTS »** — procédés et techniques (la description),
+  sémantico-lexical (aliments, plats malgaches, goûts, ustensiles, repas de la journée),
+  « Les 500 mots les plus fréquents en Français (voir la liste, Annexe B) ».
+- Le RAPE précise qu'il « ne comporte pas tous les détails des contenus » et doit être
+  utilisé **parallèlement** au Programme d'Études.
+
+### La divergence
+
+| Source | Période/Thème 1 du Français T3 |
+|---|---|
+| **RAPE T3 2025-2026** (ministère, hay.education.mg) | **LES ALIMENTS** |
+| `FRA FRANCAIS 9ème.docx` (`FRA et FRM.zip`) | La maison |
+| PDF `Francais_9eme_…V1_COMPLET.pdf` (Drive) | La maison |
+
+Les deux dernières se recoupent entre elles mais **pas avec le RAPE 2025-2026**.
+Le `FRA FRANCAIS 9ème.docx` et le manuel du Drive reposent donc sur un programme
+antérieur (ou différent) de la répartition annuelle en vigueur.
+
+### Doctrine du skill applicable — SKILL.md, « Fusion de deux programmes officiels concurrents »
+
+> « Cas rencontré : deux documents de programme officiel différents (ex. RAPS et RAPE)
+> couvrant la même classe/matière, avec des contenus qui ne se recoupent pas entièrement. »
+
+1. **Tout garder** — ne pas trancher en faveur d'un seul programme.
+2. **Taguer ce qui vient d'une seule source** (note de bas de page ou parenthèse).
+3. **Expliquer en avant-propos** que deux programmes officiels ont été utilisés, et pourquoi.
+
+C'est la procédure à appliquer ici, sauf décision contraire explicite de l'utilisateur.
+
+### Portée de lecture du RAPE
+
+24 pages annoncées, 5 morceaux restitués par l'outil → le document est **dans la limite
+des ~30 pages**, donc lisible en entier. Seul le morceau 0 a été lu à ce stade ; les
+périodes 2 à 5 restent à extraire (colonne Français du tableau).
