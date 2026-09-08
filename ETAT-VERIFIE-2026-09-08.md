@@ -152,3 +152,69 @@ ou enrichissement du CP1 (annexes des 8 thèmes + scènes L10-L19).
 - Les 41 images IA d'origine : **perdues**, non comparables.
 - L'état du projet 11e côté build : **non testé** (mêmes 8 `.docx` et 56 images manquants).
 - Le chantier Mathématiques 7e de la racine du dépôt : inchangé, non audité.
+
+---
+
+## 9. Prêt pour le 9ème (CE) ? — inventaire vérifié
+
+### Programme officiel : disponible et lisible ✅
+
+`FRA et FRM.zip` → `9ème/Français/FRA FRANCAIS 9ème.docx` (36 695 o), lu via python-docx.
+3 trimestres (9 + 8 + 10 = 27 semaines), **185 séances**, 8 unités :
+
+| Trimestre | Unité | Séances |
+|---|---|---|
+| T1 (9 sem.) | La maison | 22 |
+| T1 | L'école | 27 |
+| T1 | Le village | 13 |
+| T2 (8 sem.) | Les travaux des champs | 21 |
+| T2 | Les maladies | 22 |
+| T2 + T3 | Les métiers | 15 + 16 = 31 |
+| T3 (10 sem.) | Le temps et les saisons | 28 |
+| T3 | Le voyage | 21 |
+| **Total** | **8 unités** | **185** |
+
+**Méthode calibrée** : le même parseur, appliqué à `FRA FRANCAIS 10ème.docx`,
+retrouve **exactement 120 séances** — la valeur annoncée dans `LETTRE-PASSATION-BLOC3.md`
+§5. Le comptage est donc fiable. (Attention : sommer la colonne « Nombre de séance »
+donne 327 pour le 10e au lieu de 120 — ce n'est pas la bonne métrique.)
+
+Comparaison : **CP2 = 120 séances / 8 unités → CE = 185 séances / 8 unités** (+54 %).
+
+Version malgache également présente : `FRM FRANCAIS 9ème.docx` (18 150 o).
+
+### Ce qui est disponible ✅
+
+- Programme officiel FR + version FRM (ci-dessus)
+- Skill `jlearn-manuel-scolaire` v18 complet (12 fichiers)
+- Codebase modèle **qui compile et passe les contrôles** : `francais-10e-projet/`
+  (`builders.js`, `annexes.js`, `lecons-fusionnees.js`, `data-themeN.js`,
+  `assemble-blocN.js`, `verify_docx.py`, `generate_illus.py`)
+- Chaîne technique vérifiée : Node 22 + docx 9.5, Pillow 12.3.0, python-docx 1.2.0
+- Génération d'images (10 par tour)
+- Tout le dossier 9ème des autres matières (Calcul, CU, EPS, Géographie, HDM,
+  Malagasy, Tantara, FFMOM, Sary, Hetsika Aman-tsapa) pour d'éventuelles séries suivantes
+
+### Ce qui manque ❌
+
+- **Aucun PDF de référence « Francais_9e … fiche de préparation leçon sujet corrigé
+  JLearn »**. Les 4 PDF « 9e » du dépôt sont tous des **maths**
+  (`Guide Calcul 9e T3 CE.pdf`, `Manuel calcul 9e T3 CE.pdf`,
+  `Math 9e fiche de préparation…`, `SUJET D'EXAMEN…9e`).
+  → **Non bloquant** : côté CP2, ce PDF n'a servi que pour les séances 1-12
+  (« chunks 0-3 lus : fiches 1-4 reprises fidèlement ; illisible/vide au-delà »).
+  Les séances 13-120 ont été créées à partir du programme officiel.
+- **Google Drive inaccessible depuis ce sandbox** :
+  `curl drive.google.com` → `SSL_ERROR_SYSCALL`. Idem `raw.githubusercontent.com`.
+  Seuls `github.com` (git), npm et PyPI passent. Je ne peux donc pas aller chercher
+  un Drive moi-même — il faudrait le déposer dans le dépôt.
+
+### Ambiguïté à trancher ⚠️
+
+`LETTRE-PASSATION-BLOC3.md` écrit « série 9ème (CE, **T3**) ». Or partout ailleurs
+dans les lettres, **T = Trimestre** (« FRA : T2 semaines 2-4 », « FRA T3 »), et le
+dépôt contient `Guide Calcul 9e T3 CE.pdf` (= 9e, Trimestre 3, niveau CE).
+
+Deux lectures possibles : **(a)** faire le 9ème en entier (185 séances), ou
+**(b)** ne faire que le Trimestre 3 (65 séances). La lettre de passation du projet
+impose de poser la question plutôt que de deviner.
