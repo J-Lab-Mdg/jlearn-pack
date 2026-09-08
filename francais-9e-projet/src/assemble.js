@@ -12,13 +12,15 @@ const { theme2, annexe2 } = require("./data-theme2");
 const { theme3, annexe3 } = require("./data-theme3");
 const { theme4, annexe4 } = require("./data-theme4");
 const { theme5, annexe5 } = require("./data-theme5");
+const { theme6, annexe6 } = require("./data-theme6");
+const { theme7, annexe7 } = require("./data-theme7");
 const { buildAnnexe } = require("./annexes9e");
 
 const ASSETS = path.join(__dirname, "..", "assets");
-const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2_THEMES1-5.docx");
+const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2_THEMES1-7.docx");
 const TOTAL = 186;
 const { COLORS } = B;
-const THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }, { t: theme4, a: annexe4 }, { t: theme5, a: annexe5 }];
+const THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }, { t: theme4, a: annexe4 }, { t: theme5, a: annexe5 }, { t: theme6, a: annexe6 }, { t: theme7, a: annexe7 }];
 
 const t = (segs, size) => B.p(segs, { base: { size: size || 22 } });
 
