@@ -4,6 +4,17 @@ Traitement C (génération de zéro) selon le skill `jlearn-manuel-scolaire` v18
 Manuel existant de référence : PDF Drive « Francais_10e_.fiche de préparation leçon sujet corrigé JLearn_V2 »
 (8 unités, 120 fiches, 3×30 min par fiche) — illisible au-delà des fiches 4.
 
+## Structure v2 (refonte suite retours utilisateur)
+
+- **Fiches de préparation séparées** (une par séance de 30 min, exercices notés + corrigés après chaque fiche).
+- **Leçons fusionnées** : après chaque groupe de séances du même grand titre, une page « LEÇON N — … »
+  (1 à 2 pages, illustrée) rassemble le contenu à dicter : titre rouge, sous-titres verts, mots clés bleus,
+  ★ À RETENIR. Module : `src/lecons-fusionnees.js` (clé `apres` = séance après laquelle la leçon s'affiche).
+- **Images mixtes** : scènes IA riches (album scolaire, personnages malgaches, AUCUN texte dans l'image,
+  tableau noir vierge) pour la couverture des leçons fusionnées ; dessins plats Pillow conservés pour
+  certaines illustrations d'exercices (EXO_IMAGES dans l'assembleur : s6, s13, s17, s21).
+- À faire : régénérer `ia_u2_son_u.jpg` (fillette non malgache sur la v1).
+
 ## Décisions validées
 
 - Niveau : **10ème (CP2 / T2)** — même série que Français 11e (CP1, terminé : 8 thèmes, 80 séances).
@@ -46,6 +57,7 @@ src/data-theme1.js    # CONTENU des 12 séances de l'Unité 1 (clé sd par séan
 src/data-theme2.js    # CONTENU des 16 séances de l'Unité 2 (famille, sons u puis eu)
 src/assemble-bloc1.js # Bloc 1 : couverture + sommaire + Unité 1 seule
 src/assemble-bloc2.js # Bloc 2 : cumulatif — liste UNITS (thème + plage), sommaire multi-unités
+src/lecons-fusionnees.js # Leçons fusionnées par grand titre (structure v2, clé apres)
 illus/generate_illus.py  # illustrations scolaires plates (perso, bulle, velo, tasse, fanions…)
 assets/               # PNG ~1100px (cover_hero + 7 illustrations unité 1 + 6 unité 2)
 verify_docx.py        # 22 vérifications skill v18 (paramétrable : <file> <N>)

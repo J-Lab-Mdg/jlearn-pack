@@ -84,3 +84,26 @@ Procédure Bloc 3 (reprendre telle quelle) :
 - Le manuel livrable est TOUJOURS le .docx (jamais de PDF livré) ; PDF internes de contrôle ok.
 - « À suivre » en pied de manuel doit pointer l'unité suivante exacte (Bloc 2 → Unité 3
   « Les termes relatifs à la toilette »).
+
+---
+
+## 6. Mise à jour post-livraison — structure v2 (retours utilisateur)
+
+Retours : illustrations trop simplistes ; leçons trop courtes et éparpillées → décisions validées
+par ask_user : images **mixtes** (scènes IA pour les leçons, dessins plats pour les exercices),
+**1 grande scène par unité + 3-4 points clés**, **structure A** (fiches séparées + leçon fusionnée),
+refonte **CP2 d'abord puis CP1**.
+
+Réalisé (structure v2 appliquée aux 28 séances) :
+- `src/lecons-fusionnees.js` : 9 leçons fusionnées (U1 : n°1-4 ; U2 : n°5-9), clé `apres`.
+- Assembleur bloc 2 : suppression du « CONTENU DE LA LEÇON » par séance ; chaque fiche =
+  fiche de préparation + exercices + corrigé ; leçon fusionnée illustrée après la séance repère
+  (s6, s9, s11, s12, s16, s20, s24, s27, s28) ; sommaire enrichi (9 lignes Leçon) ; 42 signets.
+- Illustrations d'exercices plates conservées : s6 (devinette), s13 (famille), s17 (possessifs), s21 (son u).
+- 8 scènes IA générées (2,3 Mo PNG → JPEG q88 ~300-400 Ko) : ia_u1_presentation, ia_u1_dialogue,
+  ia_u1_son_e, ia_u1_sons_ee, ia_u2_famille, ia_u2_possessifs, ia_u2_son_u, ia_u2_son_eu.
+  Règle absolue : AUCUN texte dans les images ; personnages MALGACHES ; tableau noir vierge.
+- Avant-propos + mode d'emploi B réécrits pour la nouvelle organisation. verify TOUT CONFORME ×28.
+- **Reste à faire** : régénérer `ia_u2_son_u.jpg` (v1 : fillette non malgache) ; appliquer la même
+  structure v2 au CP1 (8 assembleurs + lecons-fusionnees.js CP1) ; Bloc 3 directement en v2.
+- Pour le Bloc 3 : écrire data-theme3.js + sections leçons fusionnées dans un module v2 dès le départ.
