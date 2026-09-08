@@ -24,11 +24,10 @@ const TH6 = {
   seances: [
     // ---------- SÉANCE 16 ----------
     {
-      seanceNum: "Séance 16",
-      titreFiche: "Les animaux de la ferme et leurs petits",
+      n: 16, titre: "Les animaux de la ferme et leurs petits", titreFiche: "Les animaux de la ferme et leurs petits.",
+      sd: "Expression Orale",
       objectif: "Nommer les animaux de la ferme, leurs habitats et leurs petits",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Images d'animaux de la ferme, étiquettes (mâle, femelle, petit, habitat).",
+      support: "Images d'animaux de la ferme, étiquettes (mâle, femelle, petit, habitat).",
       lecon: {
         titre: "1. Les animaux de la ferme",
         blocs: [
@@ -116,11 +115,10 @@ const TH6 = {
 
     // ---------- SÉANCE 17 ----------
     {
-      seanceNum: "Séance 17",
-      titreFiche: "Les trois formes de la négation",
+      n: 17, titre: "Les trois formes de la négation", titreFiche: "Les trois formes de la négation.",
+      sd: "Grammaire",
       objectif: "Employer ne…pas, ne…plus et ne…jamais",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Phrases affirmatives à transformer, sons [œ̃] et [y].",
+      support: "Phrases affirmatives à transformer, sons [œ̃] et [y].",
       lecon: {
         titre: "2. La phrase négative",
         blocs: [
@@ -205,11 +203,10 @@ const TH6 = {
 
     // ---------- SÉANCE 18 ----------
     {
-      seanceNum: "Séance 18",
-      titreFiche: "Le futur proche et le passé composé",
+      n: 18, titre: "Le futur proche et le passé composé", titreFiche: "Le futur proche et le passé composé.",
+      sd: "Conjugaison",
       objectif: "Former le futur proche et le passé composé et repérer les sons [œ̃] et [y]",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Tableaux de conjugaison, liste de mots contenant [œ̃] et [y].",
+      support: "Tableaux de conjugaison, liste de mots contenant [œ̃] et [y].",
       lecon: {
         titre: "3. Futur proche, passé composé, sons [œ̃] et [y]",
         blocs: [

@@ -22,11 +22,10 @@ const TH3 = {
   seances: [
     // ---------- SÉANCE 7 ----------
     {
-      seanceNum: "Séance 7",
-      titreFiche: "Dire ce que je veux, ce que je peux, ce que je dois faire",
+      n: 7, titre: "Dire ce que je veux, ce que je peux, ce que je dois faire", titreFiche: "Dire ce que je veux, ce que je peux, ce que je dois faire.",
+      sd: "Conjugaison",
       objectif: "S'exprimer sur ses activités et ses obligations avec vouloir / pouvoir / devoir",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Images d'activités (réveil, école, corvées, sport, devoirs).",
+      support: "Images d'activités (réveil, école, corvées, sport, devoirs).",
       revision: {
         ens: "« Que fais-tu le matin avant de venir à l'école ? » - Révision des verbes du 1er groupe au présent. Le tableau des verbes en -er est rappelé.",
         app: "Chaque élève nomme une activité du matin. Un élève rappelle la conjugaison de manger au présent.",
@@ -95,11 +94,10 @@ const TH3 = {
 
     // ---------- SÉANCE 8 ----------
     {
-      seanceNum: "Séance 8",
-      titreFiche: "Le genre des noms et les sons [o] / [u]",
+      n: 8, titre: "Le genre des noms et les sons [o] / [u]", titreFiche: "Le genre des noms et les sons [o] / [u].",
+      sd: "Orthographe",
       objectif: "Former le féminin des noms et distinguer les sons [o] et [u]",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Paires de noms (ami/amie, acteur/actrice), mots contenant [o] et [u].",
+      support: "Paires de noms (ami/amie, acteur/actrice), mots contenant [o] et [u].",
       revision: {
         ens: "« Comment dit-on le féminin de grand ? » - Révision du féminin des adjectifs. Le professeur rappelle les terminaisons -e, -euse, -rice.",
         app: "Les élèves donnent le féminin de quelques adjectifs connus.",
@@ -169,11 +167,10 @@ const TH3 = {
 
     // ---------- SÉANCE 9 ----------
     {
-      seanceNum: "Séance 9",
-      titreFiche: "La phrase simple sujet + verbe + complément",
+      n: 9, titre: "La phrase simple sujet + verbe + complément", titreFiche: "La phrase simple sujet + verbe + complément.",
+      sd: "Grammaire",
       objectif: "Construire et analyser la phrase simple S+V+C",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Phrases simples, étiquettes mots (sujet, verbe, complément).",
+      support: "Phrases simples, étiquettes mots (sujet, verbe, complément).",
       revision: {
         ens: "« Qui fait l'action dans : Le chat dort ? » - Révision du sujet et du verbe. Le professeur rappelle que le sujet commande l'accord.",
         app: "Les élèves identifient le sujet et le verbe de phrases courtes.",

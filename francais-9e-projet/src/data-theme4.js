@@ -22,11 +22,10 @@ const TH4 = {
   seances: [
     // ---------- SÉANCE 10 ----------
     {
-      seanceNum: "Séance 10",
-      titreFiche: "Les pièces et les meubles de la maison",
+      n: 10, titre: "Les pièces et les meubles de la maison", titreFiche: "Les pièces et les meubles de la maison.",
+      sd: "Expression Orale",
       objectif: "Nommer les pièces et les meubles et décrire sa maison",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Image d'une maison malgache, étiquettes des pièces et des meubles.",
+      support: "Image d'une maison malgache, étiquettes des pièces et des meubles.",
       lecon: {
         titre: "1. La maison et ses pièces",
         blocs: [
@@ -112,11 +111,10 @@ const TH4 = {
 
     // ---------- SÉANCE 11 ----------
     {
-      seanceNum: "Séance 11",
-      titreFiche: "Le verbe AVOIR au présent",
+      n: 11, titre: "Le verbe AVOIR au présent", titreFiche: "Le verbe AVOIR au présent.",
+      sd: "Conjugaison",
       objectif: "Conjuguer et employer le verbe AVOIR au présent",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Tableau de conjugaison, phrases à compléter.",
+      support: "Tableau de conjugaison, phrases à compléter.",
       lecon: {
         titre: "2. AVOIR au présent de l'indicatif",
         blocs: [
@@ -200,11 +198,10 @@ const TH4 = {
 
     // ---------- SÉANCE 12 ----------
     {
-      seanceNum: "Séance 12",
-      titreFiche: "Le verbe AVOIR au passé composé",
+      n: 12, titre: "Le verbe AVOIR au passé composé", titreFiche: "Le verbe AVOIR au passé composé.",
+      sd: "Conjugaison",
       objectif: "Former et employer le passé composé du verbe AVOIR",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Tableau de conjugaison, phrases au passé.",
+      support: "Tableau de conjugaison, phrases au passé.",
       lecon: {
         titre: "3. AVOIR au passé composé",
         blocs: [

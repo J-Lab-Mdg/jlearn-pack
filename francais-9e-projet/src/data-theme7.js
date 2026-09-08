@@ -22,11 +22,10 @@ const TH7 = {
   seances: [
     // ---------- SÉANCE 19 ----------
     {
-      seanceNum: "Séance 19",
-      titreFiche: "Les travaux des champs",
+      n: 19, titre: "Les travaux des champs", titreFiche: "Les travaux des champs.",
+      sd: "Expression Orale",
       objectif: "Nommer et raconter les travaux des champs",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Images des travaux de la rizière, étiquettes des outils.",
+      support: "Images des travaux de la rizière, étiquettes des outils.",
       lecon: {
         titre: "1. Les travaux des champs",
         blocs: [
@@ -112,11 +111,10 @@ const TH7 = {
 
     // ---------- SÉANCE 20 ----------
     {
-      seanceNum: "Séance 20",
-      titreFiche: "Le 1er groupe au présent",
+      n: 20, titre: "Le 1er groupe au présent", titreFiche: "Le 1er groupe au présent.",
+      sd: "Conjugaison",
       objectif: "Conjuguer les verbes du 1er groupe au présent",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Tableau de conjugaison, liste de verbes du thème.",
+      support: "Tableau de conjugaison, liste de verbes du thème.",
       lecon: {
         titre: "2. Le 1er groupe au présent",
         blocs: [
@@ -184,7 +182,7 @@ const TH7 = {
           sous: "IV. Évaluation",
           points: [
             "Conjuguez sarcler au présent (je, vous, ils).",
-            "Complétez : Nous ... le riz en mai.",
+            "Complétez : Nous ... le riz en fin de saison.",
           ],
         },
       },
@@ -200,11 +198,10 @@ const TH7 = {
 
     // ---------- SÉANCE 21 ----------
     {
-      seanceNum: "Séance 21",
-      titreFiche: "Les maladies et le 1er groupe au passé composé",
+      n: 21, titre: "Les maladies et le 1er groupe au passé composé", titreFiche: "Les maladies et le 1er groupe au passé composé.",
+      sd: "Lecture",
       objectif: "Nommer les maladies et conjuguer le 1er groupe au passé composé",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Images de situations de santé, phrases à compléter.",
+      support: "Images de situations de santé, phrases à compléter.",
       lecon: {
         titre: "3. Les maladies et le passé composé",
         blocs: [
@@ -301,7 +298,7 @@ const TH7 = {
         quand: "Pour dire ce que l'on fait maintenant ou ce que l'on fait d'habitude.",
         exemplesQuand: [
           "Je sème le riz.",
-          "Nous récoltons en mai.",
+          "Nous récoltons en fin de saison.",
         ],
         comment: "On enlève -er de l'infinitif et on ajoute : -e, -es, -e, -ons, -ez, -ent.",
         tableau: [

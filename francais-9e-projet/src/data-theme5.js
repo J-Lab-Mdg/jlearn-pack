@@ -22,11 +22,10 @@ const TH5 = {
   seances: [
     // ---------- SÉANCE 13 ----------
     {
-      seanceNum: "Séance 13",
-      titreFiche: "Les lieux du village",
+      n: 13, titre: "Les lieux du village", titreFiche: "Les lieux du village.",
+      sd: "Expression Orale",
       objectif: "Nommer les lieux du village et les situer",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Image d'un village malgache, étiquettes des lieux.",
+      support: "Image d'un village malgache, étiquettes des lieux.",
       lecon: {
         titre: "1. Le village et ses lieux",
         blocs: [
@@ -111,11 +110,10 @@ const TH5 = {
 
     // ---------- SÉANCE 14 ----------
     {
-      seanceNum: "Séance 14",
-      titreFiche: "Le verbe ÊTRE au futur simple",
+      n: 14, titre: "Le verbe ÊTRE au futur simple", titreFiche: "Le verbe ÊTRE au futur simple.",
+      sd: "Conjugaison",
       objectif: "Conjuguer et employer le verbe ÊTRE au futur simple",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Tableau de conjugaison, phrases à compléter.",
+      support: "Tableau de conjugaison, phrases à compléter.",
       lecon: {
         titre: "2. ÊTRE au futur simple",
         blocs: [
@@ -199,11 +197,10 @@ const TH5 = {
 
     // ---------- SÉANCE 15 ----------
     {
-      seanceNum: "Séance 15",
-      titreFiche: "Le verbe AVOIR au futur simple",
+      n: 15, titre: "Le verbe AVOIR au futur simple", titreFiche: "Le verbe AVOIR au futur simple.",
+      sd: "Conjugaison",
       objectif: "Conjuguer et employer le verbe AVOIR au futur simple",
-      documentation: "Programme d'études de la classe de 9e (T3) et RAPE T3 2025-2026.",
-      supportFiche: "Tableau de conjugaison, phrases à compléter.",
+      support: "Tableau de conjugaison, phrases à compléter.",
       lecon: {
         titre: "3. AVOIR au futur simple",
         blocs: [
