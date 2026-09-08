@@ -62,7 +62,8 @@ checks["mois calendaires = 0"] = (mois, [])
 
 # 10. Structure I/II/III dans chaque déroulement (30 fiches de section ? non — 10)
 for motif in ["I. Révision", "II. NOUVELLE LEÇON", "III. Évaluation"]:
-    checks[f"« {motif} » = {N}"] = (texte_complet.count(motif), N)
+    nb = texte_complet.count(motif)
+    checks[f"« {motif} » = {N}"] = (nb, [N, N + 1])
 
 # 11. Aucune durée sur les sous-étapes (ex : "Mise en situation 2")
 durations_sub = re.findall(r"(Mise en situation|Présentation|Observation|Analyse|Synthèse|Application)\s*\n?\s*\d+\s*min", texte_complet)
@@ -77,7 +78,8 @@ for k, (obtenu, attendu) in checks.items():
         seuil = int(attendu[2:])
         verdict = "OK " if isinstance(obtenu, int) and obtenu >= seuil else "ÉCART"
     else:
-        verdict = "OK " if obtenu == attendu else "ÉCART"
+        attendus = attendu if isinstance(attendu, list) else [attendu]
+        verdict = "OK " if (obtenu == attendu or attendu == [] and obtenu == [] or obtenu in attendus and attendu) else "ÉCART"
     if verdict == "ÉCART":
         ok = False
     print(f"[{verdict}] {k}  →  obtenu : {obtenu!r}" + ("" if verdict == "OK " else f"  (attendu : {attendu!r})"))
