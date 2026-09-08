@@ -17,6 +17,7 @@ const theme1 = {
       sd: "Expression Orale",
       objectif: "Nommer les aliments et les plats malgaches du quotidien.",
       support: "Images d'aliments, tableau noir.",
+      image: { file: "theme1_repas.png", w: 1100, h: 560, legende: "Sur la table : le riz, le ravitoto, les fruits." },
       revision: st(["Que mangeons-nous ce matin à la maison ?"], ["R.A. : du riz, du lait, du pain…"], ["Question/réponse, collectif"]),
       miseEnSituation: st(["(montrer une image de repas) Regardez : une famille malgache prend son repas. Que voyez-vous sur la table ?"], ["Écoutent, réagissent."], ["Observation dirigée"]),
       presentation: st(["Aujourd'hui, nous découvrons les noms des aliments."], ["Écoutent."], ["Exposé"]),
