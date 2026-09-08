@@ -14,13 +14,16 @@ const { theme4, annexe4 } = require("./data-theme4");
 const { theme5, annexe5 } = require("./data-theme5");
 const { theme6, annexe6 } = require("./data-theme6");
 const { theme7, annexe7 } = require("./data-theme7");
+const { theme8, annexe8 } = require("./data-theme8");
+const { theme9, annexe9 } = require("./data-theme9");
+const { theme10, annexe10 } = require("./data-theme10");
 const { buildAnnexe } = require("./annexes9e");
 
 const ASSETS = path.join(__dirname, "..", "assets");
-const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2_THEMES1-7.docx");
+const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2_THEMES1-10_30seances.docx");
 const TOTAL = 186;
 const { COLORS } = B;
-const THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }, { t: theme4, a: annexe4 }, { t: theme5, a: annexe5 }, { t: theme6, a: annexe6 }, { t: theme7, a: annexe7 }];
+const THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }, { t: theme4, a: annexe4 }, { t: theme5, a: annexe5 }, { t: theme6, a: annexe6 }, { t: theme7, a: annexe7 }, { t: theme8, a: annexe8 }, { t: theme9, a: annexe9 }, { t: theme10, a: annexe10 }];
 
 const t = (segs, size) => B.p(segs, { base: { size: size || 22 } });
 
