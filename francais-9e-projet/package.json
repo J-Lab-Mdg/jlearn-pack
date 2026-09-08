@@ -1,0 +1,7 @@
+{
+  "name": "francais-9e-jlearn",
+  "version": "2.0.0",
+  "description": "Manuel J-Learn Français 9e (T3/CE) V2 — Traitement C",
+  "scripts": { "bloc1": "node src/assemble-bloc1.js" },
+  "dependencies": { "docx": "^9.5.1", "sharp": "^0.33.0" }
+}
