@@ -74,6 +74,10 @@ grammaire et orthographe**, **résumé vocabulaire**. Implémentation :
   eil/ail, j, z) : data-theme5.js, leçons 21-25, annexe U5 (conjugaison **porter** ; sons
   eil/ail/j/z ; vocabulaire vêtements/cadeau), images ia_u5_tenue / cadeau / son_eil / son_z —
   TOUT CONFORME ×65 (25 leçons, 5 annexes, 103 signets, 28 images).
-- **Procédure Bloc 6** (Unité 6 « Le marché », s66-83 — 18 séances, sons oi, ui, ph ; FRA T3,
-  10 semaines) : reprendre le § 3 avec bloc6, plage « 66 à 83 », OUT THEMES1-6.docx, seanceNum
-  `/ 83`, annexe U6 (acheter/vendre ; oi, ui, ph ; vocabulaire du marché).
+- **Bloc 6 livré** (Unité 6 « Le marché », s66-83 — 18 séances, sons oi, ui, ph ; FRA T3) :
+  data-theme6.js, leçons 26-31, annexe U6 (conjugaison **acheter** ; sons oi/ui/ph ; vocabulaire
+  marché/fruits/légumes), images ia_u6_marche / achat / son_oi / son_ph — TOUT CONFORME ×83
+  (31 leçons, 6 annexes, 129 signets, 32 images). Répartition sd : EO s66-75, L s76-78, EE s79-83.
+- **Procédure Bloc 7** (Unité 7 « Les repas », s84-99 — 16 séances, sons in, g/gu, k/c ; FRA T3)
+  : reprendre le § 3 avec bloc7, plage « 84 à 99 », OUT THEMES1-7.docx, seanceNum `/ 99`,
+  annexe U7 (manger ; sons in, g/gu, k/c ; vocabulaire des repas malgaches).

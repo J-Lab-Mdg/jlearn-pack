@@ -22,6 +22,8 @@ Manuel existant de référence : PDF Drive « Francais_10e_.fiche de préparatio
   images ia_u4_* (classe, cartable, chat-chapeau, maison-ballon-bonbons) — 20 leçons, 4 annexes.
 - Bloc 5 livré : s53-65 cadeaux/vêtements (data-theme5.js), leçons 21-25, annexe U5 (conjugaison porter),
   images ia_u5_* (tenue, cadeau, soleil-réveil, zèbre-zébu) — 25 leçons, 5 annexes.
+- Bloc 6 livré : s66-83 marché (data-theme6.js), leçons 26-31, annexe U6 (conjugaison acheter),
+  images ia_u6_* (marché, achat, oie-voiture-toit, phare-éléphant-dauphin) — 31 leçons, 6 annexes.
 
 ## Décisions validées
 
@@ -44,10 +46,11 @@ Manuel existant de référence : PDF Drive « Francais_10e_.fiche de préparatio
 | 1-3 | + Toilette (cumulatif) | 1-40 | ✅ Livré (`output/Manuel_Francais_10e_V1_THEMES1-3.docx`) |
 | 1-4 | + École (cumulatif) | 1-52 | ✅ Livré (`output/Manuel_Francais_10e_V1_THEMES1-4.docx`) |
 | 1-5 | + Cadeaux et vêtements (cumulatif) | 1-65 | ✅ Livré (`output/Manuel_Francais_10e_V1_THEMES1-5.docx`) |
+| 1-6 | + Le marché (cumulatif) | 1-83 | ✅ Livré (`output/Manuel_Francais_10e_V1_THEMES1-6.docx`) |
 | 4 | L'école | 41-52 | ✅ Intégré (EO s41-46, L ch / s,c,ç / on s47-49, EE s50-51, bilan s52 ; 5 leçons + annexe U4) |
 | 3 | Les termes relatifs à la toilette | 29-40 | ✅ Intégré (EO s29-34, L son an s35-37, EE s38-39, bilan s40 ; 6 leçons fusionnées + annexe) |
 | 2 | Les termes relatifs à la famille | 13-28 | ✅ Intégré au cumulatif (EO s13-20, L sons u/eu s21-23 et s25-27, EE s24 et s28) |
-| 6-8 | Marché (18), repas (16), ferme (21) | 66-120 | ⏳ À venir |
+| 7-8 | Repas (16), ferme (21) | 84-120 | ⏳ À venir |
 
 Volumétrie totale : 8 unités, 120 séances (≈ 40 fiches de 3 jours).
 
@@ -66,6 +69,8 @@ python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-3.docx 40   # TOUT 
 python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-4.docx 52   # TOUT CONFORME attendu
 node src/assemble-bloc5.js        # → output/Manuel_Francais_10e_V1_THEMES1-5.docx (65 séances, cumulatif)
 python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-5.docx 65   # TOUT CONFORME attendu
+node src/assemble-bloc6.js        # → output/Manuel_Francais_10e_V1_THEMES1-6.docx (83 séances, cumulatif)
+python3 verify_docx.py output/Manuel_Francais_10e_V1_THEMES1-6.docx 83   # TOUT CONFORME attendu
 ```
 
 ## Architecture

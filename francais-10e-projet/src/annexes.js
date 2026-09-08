@@ -137,4 +137,31 @@ module.exports = [
       ],
     },
   },
+  {
+    unite: 6,
+    conj: {
+      titre: "A. Conjugaison — acheter au présent",
+      lignes: [
+        ["« ", { t: "j'achète", k: true }, " — ", { t: "tu achètes", k: true }, " — ", { t: "il achète", k: true }, " / ", { t: "elle achète", k: true }, " »"],
+        ["« ", { t: "nous achetons", k: true }, " — ", { t: "vous achetez", k: true }, " — ", { t: "ils achètent", k: true }, " / ", { t: "elles achètent", k: true }, " »"],
+        ["Au marché : ", { t: "j'achète", k: true }, " du riz — ", { t: "nous achetons", k: true }, " des fruits."],
+      ],
+    },
+    gram: {
+      titre: "B. Grammaire et orthographe",
+      lignes: [
+        ["Le son ", { t: "oi", k: true }, " s'écrit ", { t: "o-i", k: true }, " (oie, toit, poire) — le son ", { t: "ui", k: true }, " s'écrit ", { t: "u-i", k: true }, " (fruit, nuit, pluie)."],
+        ["Le son ", { t: "ph", k: true }, " s'écrit ", { t: "p-h", k: true }, " et se prononce ", { t: "f", k: true }, " (phare, éléphant, dauphin, photo)."],
+        ["Pour énumérer : « ", { t: "J'achète..., ..., et...", k: true }, " » — pour demander un prix : « ", { t: "Combien coûte... ? — ... ariary.", k: true }, " »"],
+      ],
+    },
+    vocab: {
+      titre: "C. Vocabulaire du thème",
+      lignes: [
+        ["Les fruits : ", { t: "la banane, la mangue, l'ananas, l'orange, le citron, la pomme", k: true }, " — les légumes : ", { t: "la tomate, l'oignon, la carotte, le chou, la pomme de terre, le brède", k: true }],
+        ["Le marché : ", { t: "l'étal, la marchande, la cliente, le panier, l'argent, le kilo, la balance, lourd, léger", k: true }],
+        ["Mots des sons : ", { t: "oie, voiture, toit, poire, trois, fruit, nuit, pluie, cuit, phare, éléphant, dauphin, photo", k: true }],
+      ],
+    },
+  },
 ];

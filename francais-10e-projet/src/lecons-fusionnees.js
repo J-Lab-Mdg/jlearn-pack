@@ -486,6 +486,75 @@ const F = [
     ],
     retenir: ["Unité 5 réussie : ", { t: "les vêtements, les cadeaux et les sons eil, ail, j, z", k: true }, " !"],
   },
+  // ---------- Unité 6 — Le marché ----------
+  {
+    id: "lecon26", apres: 69, num: 26,
+    titre: "LE VOCABULAIRE DU MARCHÉ", titreS: "Le vocabulaire du marché",
+    plage: "66 à 69",
+    image: { file: "ia_u6_marche.jpg", w: 1376, h: 768, legende: "Au marché : la marchande vend des fruits et des légumes ; la cliente met ses achats dans son panier." },
+    subs: [
+      { t: "A. Les fruits et les légumes", paras: [[{ t: "la banane", k: true }, " — ", { t: "la mangue", k: true }, " — ", { t: "l'ananas", k: true }, " — ", { t: "l'orange", k: true }, " / ", { t: "la tomate", k: true }, " — ", { t: "l'oignon", k: true }, " — ", { t: "le brède", k: true }]] },
+      { t: "B. J'achète", paras: [["« ", { t: "J'achète du riz, de l'huile, des tomates et des bananes.", k: true }, " » — le mot ", { t: "et", k: true }, " avant le dernier !"]] },
+      { t: "C. Les mots du marché", paras: [[{ t: "le marché", k: true }, " — ", { t: "l'étal", k: true }, " — ", { t: "la marchande", k: true }, " — ", { t: "la cliente", k: true }, " — ", { t: "le panier", k: true }, " — ", { t: "l'argent", k: true }]] },
+    ],
+    retenir: ["Au marché : ", { t: "fruits, légumes, étal, marchande, panier, argent", k: true }, " — et j'énumère : « ", { t: "j'achète..., ..., et...", k: true }, " »."],
+  },
+  {
+    id: "lecon27", apres: 71, num: 27,
+    titre: "LE DIALOGUE DU MARCHÉ", titreS: "Le dialogue du marché",
+    plage: "70 à 71",
+    image: { file: "ia_u6_achat.jpg", w: 1376, h: 768, legende: "« Bonjour, Madame ! Je voudrais des bananes, s'il vous plaît. — Voilà. — Merci ! »" },
+    subs: [
+      { t: "A. Le dialogue", paras: [["« — ", { t: "Bonjour, Madame !", k: true }, " — ", { t: "Bonjour ! Qu'est-ce que tu veux ?", k: true }, " »"], ["« — ", { t: "Je voudrais des bananes, s'il vous plaît.", k: true }, " — ", { t: "Voilà. — Merci, au revoir !", k: true }, " »"]] },
+      { t: "B. Le prix", paras: [["« — ", { t: "Combien coûte le kilo de tomates ?", k: true }, " — ", { t: "Cinq cents ariary.", k: true }, " »"]] },
+    ],
+    retenir: ["Au marché je dis : ", { t: "bonjour, je voudrais..., s'il vous plaît, merci", k: true }, " — et je demande : ", { t: "« Combien coûte... ? »", k: true }],
+  },
+  {
+    id: "lecon28", apres: 75, num: 28,
+    titre: "LA COMPTINE DU MARCHÉ ET LA DESCRIPTION", titreS: "La comptine du marché et la description",
+    plage: "72 à 75",
+    image: null,
+    subs: [
+      { t: "A. La comptine", paras: [["« ", { t: "Au marché de mon village,", k: true }, " / ", { t: "j'achète riz et tomates ;", k: true }, " »"], ["« ", { t: "bananes, mangues et oranges,", k: true }, " / ", { t: "mon panier est plein, quel matin !", k: true }, " »"]] },
+      { t: "B. Je pèse", paras: [[{ t: "le kilo", k: true }, " — ", { t: "la balance", k: true }, " — ", { t: "lourd", k: true }, " / ", { t: "léger", k: true }, " : « ", { t: "Un kilo de tomates, s'il vous plaît.", k: true }, " »"]] },
+      { t: "C. Je décris", paras: [["« ", { t: "La mangue est jaune. Elle est sucrée. Je l'aime bien.", k: true }, " » — ", { t: "sucré, acide, juteux", k: true }]] },
+    ],
+    retenir: ["Ma comptine : « ", { t: "Mon panier est plein, quel matin !", k: true }, " » — je pèse ", { t: "un kilo", k: true }, " et je décris : ", { t: "« Il/Elle est..., je l'aime bien. »", k: true }],
+  },
+  {
+    id: "lecon29", apres: 76, num: 29,
+    titre: "LE SON OI", titreS: "Le son oi",
+    plage: "76",
+    image: { file: "ia_u6_son_oi.jpg", w: 1376, h: 768, legende: "L'oie, la voiture, le toit, la poire : j'entends le son oi !" },
+    subs: [
+      { t: "A. Le son", paras: [["Le son ", { t: "oi", k: true }, " s'écrit avec ", { t: "deux lettres : o-i", k: true }, " — la bouche passe de o à i !"]] },
+      { t: "B. Les mots", paras: [[{ t: "l'oie", k: true }, " — ", { t: "la voiture", k: true }, " — ", { t: "le toit", k: true }, " — ", { t: "la poire", k: true }, " — ", { t: "trois", k: true }]] },
+    ],
+    retenir: ["Le son ", { t: "oi", k: true }, " : ", { t: "l'oie, la voiture, le toit, la poire", k: true }, "."],
+  },
+  {
+    id: "lecon30", apres: 78, num: 30,
+    titre: "LE SON UI ET LE SON PH", titreS: "Le son ui et le son ph",
+    plage: "77 à 78",
+    image: { file: "ia_u6_son_ph.jpg", w: 1376, h: 768, legende: "Le phare, l'éléphant, le dauphin, la photo : ph se prononce f !" },
+    subs: [
+      { t: "A. Le son ui", paras: [["Le son ", { t: "ui", k: true }, " s'écrit ", { t: "u-i", k: true }, " : ", { t: "le fruit", k: true }, " — ", { t: "la nuit", k: true }, " — ", { t: "la pluie", k: true }, " — ", { t: "cuit", k: true }]] },
+      { t: "B. Le son ph", paras: [["Le son ", { t: "ph", k: true }, " s'écrit ", { t: "p-h", k: true }, " et se prononce ", { t: "f", k: true }, " : ", { t: "le phare", k: true }, " — ", { t: "l'éléphant", k: true }, " — ", { t: "le dauphin", k: true }, " — ", { t: "la photo", k: true }]] },
+    ],
+    retenir: ["Le son ", { t: "ui", k: true }, " : ", { t: "fruit, nuit, pluie", k: true }, " — le son ", { t: "ph = f", k: true }, " : ", { t: "phare, éléphant, dauphin, photo", k: true }, " !"],
+  },
+  {
+    id: "lecon31", apres: 83, num: 31,
+    titre: "ÉCRIRE OI, UI ET PH — BILAN DE L'UNITÉ", titreS: "Écrire oi, ui et ph, bilan",
+    plage: "79 à 83",
+    image: null,
+    subs: [
+      { t: "A. La dictée", paras: [["J'écris : ", { t: "oie, fruit, phare", k: true }, " — ", { t: "la pluie tombe sur le toit", k: true }]] },
+      { t: "B. Bilan de l'unité", paras: [[{ t: "Le marché", k: true }, " (fruits, légumes, dialogue, prix) + les sons ", { t: "oi, ui, ph", k: true }, " : tout est appris !"]] },
+    ],
+    retenir: ["Unité 6 réussie : ", { t: "le marché, le dialogue de l'achat et les sons oi, ui, ph", k: true }, " !"],
+  },
 ];
 
 module.exports = F;
