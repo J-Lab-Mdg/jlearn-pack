@@ -86,3 +86,30 @@ les maladies, les métiers, le voyage.
 → Aucun thème n'est perdu avec la fusion. Conformément à SKILL.md
 (« Fusion de deux programmes officiels concurrents ») : tout garder, taguer la source,
 expliquer en avant-propos.
+
+## PÉRIODE 4 — du 23/02/2026 au 27/03/2026
+
+**Thème : LA FERME** (procédé : la narration) + suite environnement scolaire
+
+- **Sémantico-lexical** : les animaux (volailles : coq, poule, canard ; bovins : bœuf, vache ;
+  ovins : chèvre, bouc) ; habitats (poulailler, étable) ; aliments (provende, semoule) ;
+  mâles/femelles/petits ; activités (nourrir, nettoyer l'étable) ; outils (abreuvoir, soubique).
+- **Morphosyntaxe** : la phrase simple ; négations *ne…pas, ne…plus, ne…jamais* ;
+  verbes du thème (aimer, préférer, prendre, boire, manger, nourrir, soigner…) ;
+  **futur proche** (être, avoir, aller, faire, -er) ; **passé composé**.
+  Puis : phrases interrogatives et exclamatives ; questions fermées/ouvertes
+  (*est-ce que… ?, quel, pourquoi, quand, combien…*) ; *s'il te/vous plaît*.
+- **Phonie-graphie** : son **[œ̃]** → *un, um* (lundi, parfum…) ; son **[y]** → *u, eu, ût* (pu, eu, fût…).
+
+## PÉRIODE 5 — du 09/04/2026 au 25/06/2026
+
+**Thème : LE MARCHÉ** (procédé : la narration) + environnement (fialam-boly, tontolo iainana)
+
+- **Sémantico-lexical** : acteurs (marchand, vendeur, grossiste, détaillant, épicier, client) ;
+  lieux (épicerie, boucherie) ; prix et qualité ; expressions du commerce ;
+  marchandises (tomate, pomme de terre…).
+- **Morphosyntaxe** : indicateurs temporels (*aujourd'hui, hier, demain, dans… jours*) ;
+  chronologiques (*d'abord, ensuite…*) ; spatiaux (*devant, derrière, au milieu de…*) ;
+  verbes (*acheter, préférer, prendre, marchander, vendre, demander*) ;
+  **imparfait (mobilisation)**.
+- Clôture : « FANONERANA SY FAMERENANA TOMBANA FARANY » (révision et évaluation finales).
