@@ -72,19 +72,53 @@ function field(label, value, align = undefined) {
   });
 }
 
-// Image à partir d'un fichier png (taille cible ~largeur 620px, page A4)
+// Dimensions (largeur, hauteur) d'un PNG / JPEG lues directement dans le buffer
+function imageDims(buf, ext) {
+  try {
+    if (ext === "png" && buf.length > 24 && buf.readUInt32BE(12) === 0x49484452) {
+      return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+    }
+  } catch (e) {}
+  try {
+    if (ext === "jpg") {
+      let i = 2;
+      while (i + 9 < buf.length) {
+        if (buf[i] !== 0xff) { i += 1; continue; }
+        const marker = buf[i + 1];
+        if (marker === 0xd8 || marker === 0xd9) { i += 2; continue; }
+        const len = buf.readUInt16BE(i + 2);
+        if (marker >= 0xc0 && marker <= 0xcf && marker !== 0xc4 && marker !== 0xc8 && marker !== 0xcc) {
+          return { width: buf.readUInt16BE(i + 7), height: buf.readUInt16BE(i + 5) };
+        }
+        i += 2 + len;
+      }
+    }
+  } catch (e) {}
+  return null;
+}
+
+// Image à partir d'un fichier png/jpg (conserve le rapport largeur/hauteur,
+// largeur cible ~560px, hauteur max ~430px, page A4)
 function imageParas(file, legende) {
   if (!file || !fs.existsSync(file)) return [];
   const buf = fs.readFileSync(file);
   const ext = path.extname(file).toLowerCase().replace(".", "");
   const type = ext === "jpg" ? "jpg" : "png";
+  let w = 560, h = Math.round(w * 0.70);
+  const dims = imageDims(buf, ext);
+  if (dims && dims.width && dims.height) {
+    const maxW = 560, maxH = 430;
+    const scale = Math.max(0, Math.min(maxW / dims.width, maxH / dims.height, 1));
+    w = Math.round(dims.width * scale);
+    h = Math.round(dims.height * scale);
+  }
   const out = [new Paragraph({
     alignment: AlignmentType.CENTER,
     spacing: { after: 40 },
     children: [new ImageRun({
       type,
       data: buf,
-      transformation: { width: 560, height: Math.round(560 * 0.70) },
+      transformation: { width: w, height: h },
     })],
   })];
   if (legende) out.push(p(legende, { italic: true, size: 18, align: AlignmentType.CENTER, spacingAfter: 120 }));

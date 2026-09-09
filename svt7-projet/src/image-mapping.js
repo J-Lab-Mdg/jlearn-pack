@@ -1,6 +1,9 @@
 // ============================================================
-// image-mapping.js — association schémas / scènes ↔ séances (SVT T7)
-// Clé : "unité:index" (index = position du topic dans la liste)
+// image-mapping.js — association schémas / illustrations / scènes
+// ↔ séances (SVT T7). Clé : "unité:index".
+//   gen/  : illustrations générées (organes, cellules, microbes)
+//   schémas SVG : processus / schémas « à légender »
+//   scenes/ : contextes Madagascar
 // ============================================================
 function fig(file, legende, place = "lecon") {
   return { file, legende, place };
@@ -9,7 +12,8 @@ function fig(file, legende, place = "lecon") {
 const IMG = {
   // ---- Unité I : Santé et bien-être (appareil digestif) ----
   "I:0": [
-    fig("appareil-digestif.png", "Figure 1 — L'appareil digestif : les organes."),
+    fig("gen/appareil-digestif.jpg", "Figure 1 — L'appareil digestif : les organes du tube digestif et les glandes (illustration complète)."),
+    fig("appareil-digestif.png", "Figure 1a — Même appareil digestif en schéma, à légender."),
     fig("scenes/scene-repas-malagasy.jpg", "Figure 1b — Un repas à Madagascar : le riz et ses accompagnements."),
   ],
   "I:1": [fig("roles-digestifs.png", "Figure 2 — Les rôles du tube digestif et des glandes digestives.")],
@@ -21,19 +25,42 @@ const IMG = {
     fig("puberte.png", "Figure 5 — La puberté : changements et capacités reproductrices."),
     fig("scenes/scene-adolescent.jpg", "Figure 5b — Un adolescent malgache : les changements de la puberté."),
   ],
-  "II:1": [fig("organes-genitaux.png", "Figure 6 — Les organes génitaux internes : gonades et voies génitales.")],
-  "II:2": [fig("cycle-menstruel.png", "Figure 7 — Le cycle menstruel et la période de fécondité.")],
-  "II:3": [fig("fecondation.png", "Figure 8 — La fécondation et les conditions nécessaires.")],
+  "II:1": [
+    fig("gen/appareil-masculin.jpg", "Figure 6 — L'appareil reproducteur masculin : testicules, spermiductes, prostate, urètre (illustration)."),
+    fig("gen/appareil-feminin.jpg", "Figure 6b — L'appareil reproducteur féminin : ovaires, trompes, utérus, vagin (illustration)."),
+    fig("organes-genitaux.png", "Figure 6c — Organes génitaux internes : schéma à légender."),
+  ],
+  "II:2": [
+    fig("gen/cycle-menstruel.jpg", "Figure 7 — Le cycle menstruel : règles, ovulation, fécondité (illustration)."),
+    fig("cycle-menstruel.png", "Figure 7b — Le cycle menstruel : schéma à légender."),
+  ],
+  "II:3": [
+    fig("gen/fecondation.jpg", "Figure 8 — La fécondation : spermatozoïde, ovule, cellule-œuf (illustration)."),
+    fig("fecondation.png", "Figure 8b — Les conditions de la fécondation : schéma à légender."),
+  ],
   "II:4": [
-    fig("grossesse-precoce.png", "Figure 9 — La grossesse précoce : causes, conséquences et prévention."),
-    fig("scenes/scene-grossesse-precoce.jpg", "Figure 9b — Une adolescente accompagnée par un personnel de santé."),
+    fig("gen/grossesse.jpg", "Figure 9 — La grossesse : utérus, embryon et futur bébé (illustration)."),
+    fig("grossesse-precoce.png", "Figure 9b — La grossesse précoce : causes, conséquences et prévention (schéma)."),
+    fig("scenes/scene-grossesse-precoce.jpg", "Figure 9c — Une adolescente accompagnée par un personnel de santé."),
   ],
 
   // ---- Unité III : Maladies infectieuses ----
-  "III:0": [fig("microorganismes.png", "Figure 10 — La découverte des microorganismes.")],
-  "III:1": [fig("bacteries.png", "Figure 11 — Les bactéries.")],
-  "III:2": [fig("champignons.png", "Figure 12 — Les champignons.")],
-  "III:3": [fig("virus-parasites.png", "Figure 13 — Les virus et les parasites.")],
+  "III:0": [
+    fig("gen/microorganismes.jpg", "Figure 10 — Les quatre groupes de microorganismes : bactéries, champignons, virus, parasites (illustration)."),
+    fig("microorganismes.png", "Figure 10b — Les microorganismes : schéma à légender."),
+  ],
+  "III:1": [
+    fig("gen/bacterie.jpg", "Figure 11 — La bactérie : membrane, cytoplasme et division (illustration)."),
+    fig("bacteries.png", "Figure 11b — Les bactéries : schéma à légender."),
+  ],
+  "III:2": [
+    fig("gen/champignons.jpg", "Figure 12 — Les champignons : levure, moisissure et spores (illustration)."),
+    fig("champignons.png", "Figure 12b — Les champignons : schéma à légender."),
+  ],
+  "III:3": [
+    fig("gen/virus-parasites.jpg", "Figure 13 — Les virus, les parasites et leur hôte (illustration)."),
+    fig("virus-parasites.png", "Figure 13b — Les virus et les parasites : schéma à légender."),
+  ],
   "III:4": [fig("infection-immunite.png", "Figure 14 — L'infection microbienne et l'immunité.")],
   "III:5": [fig("prevention-soins.png", "Figure 15 — Antisepsie, asepsie, antibiotiques, vaccins et sérums.")],
   "III:6": [fig("mesures-prevention.png", "Figure 16 — Prévention et lutte contre les maladies infectieuses.")],
@@ -78,9 +105,9 @@ const REVISION_IMAGES = {
 };
 
 const EXAM_IMAGES = {
-  I: [fig("appareil-digestif.png", "Figure E1 — L'appareil digestif.")],
-  II: [fig("cycle-menstruel.png", "Figure E2 — Le cycle menstruel.")],
-  III: [fig("microorganismes.png", "Figure E3 — Les microorganismes.")],
+  I: [fig("gen/appareil-digestif.jpg", "Figure E1 — L'appareil digestif (illustration à légender).")],
+  II: [fig("gen/cycle-menstruel.jpg", "Figure E2 — Le cycle menstruel (illustration à légender).")],
+  III: [fig("gen/microorganismes.jpg", "Figure E3 — Les microorganismes (illustration à légender).")],
   IV: [fig("chaine-alimentaire.png", "Figure E4 — La chaîne alimentaire.")],
   V: [fig("structure-terre.png", "Figure E5 — La structure interne de la Terre.")],
 };
@@ -94,6 +121,8 @@ function apply(unitNum, topics) {
     const key = unitNum + ":" + i;
     if (IMG[key]) {
       t.images = IMG[key].slice();
+      // Pour les exercices et le corrigé on prend la première figure non-scène,
+      // idéalement l'illustration générée (elle est en tête de la liste).
       const firstSchema = t.images.find((im) => !im.file.startsWith("scenes/"));
       t.exoImage = firstSchema || t.images[0] || null;
       t.corrigeImage = t.exoImage || null;
