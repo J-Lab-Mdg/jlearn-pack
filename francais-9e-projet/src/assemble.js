@@ -19,9 +19,10 @@ const { theme9, annexe9 } = require("./data-theme9");
 const { theme10, annexe10 } = require("./data-theme10");
 const { buildAnnexe } = require("./annexes9e");
 const EXTRA = require("./seances-lecture");
+const EX2 = require("./seances-exercices");
 
 const ASSETS = path.join(__dirname, "..", "assets");
-const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2_THEMES1-10_40seances.docx");
+const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2_THEMES1-10_50seances.docx");
 const TOTAL = 186;
 const { COLORS } = B;
 const THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }, { t: theme4, a: annexe4 }, { t: theme5, a: annexe5 }, { t: theme6, a: annexe6 }, { t: theme7, a: annexe7 }, { t: theme8, a: annexe8 }, { t: theme9, a: annexe9 }, { t: theme10, a: annexe10 }];
@@ -95,7 +96,8 @@ function seance(s, nomTheme) {
 }
 
 function main() {
-  THEMES.forEach(({ t: th }) => { if (EXTRA[th.numero]) th.seances.push(...EXTRA[th.numero]); });
+  THEMES.forEach(({ t: th }) => { if (EXTRA[th.numero]) th.seances.push(...EXTRA[th.numero]);
+    if (EX2[th.numero]) th.seances.push(EX2[th.numero]); });
   let SE = 0;
   THEMES.forEach(({ t: th }) => th.seances.forEach((s) => { s.n = ++SE; }));
   const children = [];
