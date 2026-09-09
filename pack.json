@@ -15,6 +15,11 @@
     { "id": "rat_champ",           "url": "/rat_champ.png",           "type": "image/png" },
     { "id": "paludisme_cycle",     "url": "/paludisme_cycle.png",     "type": "image/png" },
     { "id": "falaise_strates",     "url": "/falaise_strates.png",     "type": "image/png" },
-    { "id": "pollinisation_cycle", "url": "/pollinisation_cycle.png", "type": "image/png" }
+    { "id": "pollinisation_cycle", "url": "/pollinisation_cycle.png", "type": "image/png" },
+    { "id": "svt9e_corps_parties",    "url": "/svt9e_corps_parties.png",    "type": "image/png" },
+    { "id": "svt9e_organes",          "url": "/svt9e_organes.png",          "type": "image/png" },
+    { "id": "svt9e_membre_superieur", "url": "/svt9e_membre_superieur.png", "type": "image/png" },
+    { "id": "svt9e_hygiene_mains",    "url": "/svt9e_hygiene_mains.png",    "type": "image/png" },
+    { "id": "svt9e_peau_coupe",       "url": "/svt9e_peau_coupe.png",       "type": "image/png" }
   ]
 }
