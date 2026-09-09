@@ -32,6 +32,15 @@
     { "id": "svt9e_membre_inferieur",       "url": "/svt9e_membre_inferieur.png",       "type": "image/png" },
     { "id": "svt9e_mouvements_bras",        "url": "/svt9e_mouvements_bras.png",        "type": "image/png" },
     { "id": "svt9e_appareil_respiratoire",  "url": "/svt9e_appareil_respiratoire.png",  "type": "image/png" },
-    { "id": "svt9e_pieds_propres",          "url": "/svt9e_pieds_propres.png",          "type": "image/png" }
+    { "id": "svt9e_pieds_propres",          "url": "/svt9e_pieds_propres.png",          "type": "image/png" },
+    { "id": "svt9e_appareil_digestif",     "url": "/svt9e_appareil_digestif.png",     "type": "image/png" },
+    { "id": "svt9e_vers_intestinaux",      "url": "/svt9e_vers_intestinaux.png",      "type": "image/png" },
+    { "id": "svt9e_varicelle",             "url": "/svt9e_varicelle.png",             "type": "image/png" },
+    { "id": "svt9e_vaccination",           "url": "/svt9e_vaccination.png",           "type": "image/png" },
+    { "id": "svt9e_habitat",               "url": "/svt9e_habitat.png",               "type": "image/png" },
+    { "id": "svt9e_poule",                 "url": "/svt9e_poule.png",                 "type": "image/png" },
+    { "id": "svt9e_zebu",                  "url": "/svt9e_zebu.png",                  "type": "image/png" },
+    { "id": "svt9e_arbre",                 "url": "/svt9e_arbre.png",                 "type": "image/png" },
+    { "id": "svt9e_eau_potable",           "url": "/svt9e_eau_potable.png",           "type": "image/png" }
   ]
 }
