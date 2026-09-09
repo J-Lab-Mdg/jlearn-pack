@@ -156,8 +156,8 @@ tb = doc.add_table(rows=7, cols=2, style="Table Grid")
 set_widths(tb, [9.0, 8.0])
 cell_add(tb.rows[0].cells[0], "Thème", bold=True, first=True)
 cell_add(tb.rows[0].cells[1], "Séances", bold=True, first=True)
-lignes = [("Les maladies de la peau", "Séances 1 à 3"), ("Les dents", "Séances 4 à 6"),
-          ("L'hygiène des dents", "Séances 7 à 9"), ("L'œil", "Séances 10 à 12"),
+lignes = [("Le fonctionnement de l'œil", "Séances 1 à 3"), ("La protection et l'hygiène de l'œil", "Séances 4 à 6"),
+          ("L'oreille", "Séances 7 à 9"), ("La langue", "Séances 10 à 12"),
           ("Révision — Bimestre 3", "Après la séance 12"), ("Sujet d'examen 9e — Bimestre 3", "Après la révision")]
 for i, (a, b) in enumerate(lignes, start=1):
     cell_add(tb.rows[i].cells[0], a, first=True)
