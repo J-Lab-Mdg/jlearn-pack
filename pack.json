@@ -24,6 +24,10 @@
     { "id": "svt9e_gale",             "url": "/svt9e_gale.png",             "type": "image/png" },
     { "id": "svt9e_dents",            "url": "/svt9e_dents.png",            "type": "image/png" },
     { "id": "svt9e_brossage_dents",   "url": "/svt9e_brossage_dents.png",   "type": "image/png" },
-    { "id": "svt9e_oeil_parties",     "url": "/svt9e_oeil_parties.png",     "type": "image/png" }
+    { "id": "svt9e_oeil_parties",     "url": "/svt9e_oeil_parties.png",     "type": "image/png" },
+    { "id": "svt9e_oeil_fonctionnement", "url": "/svt9e_oeil_fonctionnement.png", "type": "image/png" },
+    { "id": "svt9e_oeil_hygiene",     "url": "/svt9e_oeil_hygiene.png",     "type": "image/png" },
+    { "id": "svt9e_oreille_parties",  "url": "/svt9e_oreille_parties.png",  "type": "image/png" },
+    { "id": "svt9e_langue",           "url": "/svt9e_langue.png",           "type": "image/png" }
   ]
 }
