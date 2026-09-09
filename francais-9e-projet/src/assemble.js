@@ -17,6 +17,7 @@ const { theme7, annexe7 } = require("./data-theme7");
 const { theme8, annexe8 } = require("./data-theme8");
 const { theme9, annexe9 } = require("./data-theme9");
 const { theme10, annexe10 } = require("./data-theme10");
+const { theme11, annexe11 } = require("./data-theme11");
 const { buildAnnexe } = require("./annexes9e");
 const EXTRA = require("./seances-lecture");
 const EX2 = require("./seances-exercices");
@@ -26,7 +27,9 @@ let MODE = (process.argv[2] || "ALL").toUpperCase();
 let OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2.docx");
 let TOTAL = 186;
 const { COLORS } = B;
-let THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }, { t: theme4, a: annexe4 }, { t: theme5, a: annexe5 }, { t: theme6, a: annexe6 }, { t: theme7, a: annexe7 }, { t: theme8, a: annexe8 }, { t: theme9, a: annexe9 }, { t: theme10, a: annexe10 }];
+const SD_PE = { "Expression Orale": "Production orale", "Conjugaison": "Fonctionnement de la langue", "Grammaire": "Fonctionnement de la langue", "Orthographe": "Fonctionnement de la langue", "Lecture": "Compréhension écrite", "Exercices": "Production écrite" };
+const mapSd = (x) => (MODE === "PE" ? (SD_PE[x] || x) : x);
+let THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }, { t: theme4, a: annexe4 }, { t: theme5, a: annexe5 }, { t: theme6, a: annexe6 }, { t: theme7, a: annexe7 }, { t: theme8, a: annexe8 }, { t: theme9, a: annexe9 }, { t: theme10, a: annexe10 }, { t: theme11, a: annexe11 }];
 
 const t = (segs, size) => B.p(segs, { base: { size: size || 22 } });
 
@@ -74,7 +77,7 @@ function seance(s, nomTheme) {
   o.push(t([{ t: s.titre, b: true }], 24));
   o.push(B.p([{ t: "FICHE DE PRÉPARATION", b: true, color: COLORS.vert }], { base: { size: 24 } }));
   o.push(B.metaTable({
-    discipline: "Français", sousDiscipline: s.sd, theme: nomTheme,
+    discipline: "Français", sousDiscipline: mapSd(s.sd), theme: nomTheme,
     titreFiche: s.titreFiche, objectif: s.objectif, documentation: DOC,
     supportFiche: s.support, classe: "9ème", seanceNum: s.n + " / " + TOTAL,
   }));
@@ -101,7 +104,7 @@ function seance(s, nomTheme) {
 }
 
 function main() {
-  if (MODE === "PE") THEMES = THEMES.filter((x) => [1, 2, 3, 6, 8].includes(x.t.numero));
+  if (MODE === "PE") THEMES = [1, 2, 3, 11, 6, 8].map((n) => THEMES.find((x) => x.t.numero === n));
   if (MODE === "PS") THEMES = THEMES.filter((x) => [4, 5, 7, 9, 10].includes(x.t.numero));
   OUT = path.join(__dirname, "..", "output", MODE === "PE" ? "Manuel_Francais_9e_V2_PE.docx" : MODE === "PS" ? "Manuel_Francais_9e_V2_PS.docx" : "Manuel_Francais_9e_V2_COMPLET.docx");
   THEMES.forEach(({ t: th }) => { if (EXTRA[th.numero]) th.seances.push(...EXTRA[th.numero]);

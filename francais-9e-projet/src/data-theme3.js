@@ -4,7 +4,7 @@
 // =============================================================
 const TH3 = {
   numero: 3,
-  nom: "Le temps et l'environnement scolaire",
+  nom: "Le temps",
   source: "RAPE T3 2025-2026 — Période 3",
   periodes: [
     ["Procédés et techniques", "La description."],
@@ -245,7 +245,7 @@ const TH3 = {
   // ============================================================
   annexe: {
     theme: 3,
-    nom: "Le temps et l'environnement scolaire",
+    nom: "Le temps",
     conjugaison: [
       {
         verbe: "vouloir, pouvoir, devoir",
