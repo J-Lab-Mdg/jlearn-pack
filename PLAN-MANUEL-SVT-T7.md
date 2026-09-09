@@ -5,25 +5,25 @@
 **Livrable cible :** `SVT T7 [PE] Fiche de preparation sujet corrigés J-Learn.docx`
 **Modèle de référence :** `SVT T6 [PE] Fiche de preparation sujet corrigés J-Learn.docx` (travail v18 + illustrations)
 
-## Décisions à confirmer rapidement
-- [ ] **Périmètre :** SVT pur (les 5 thématiques du PE T7) — proposition : **oui**
-- [ ] **Durée :** non affichée (laisser à l'enseignant) — proposition : **oui**
-- [ ] **Langue :** français uniquement — proposition : **oui**
-- [ ] **Illustrations :** schémas + scènes style scolaire, Madagascar — proposition : **oui**
-- [ ] **Sujets d'examen :** 1 révision + 1 sujet d'examen 5e par unité — proposition : **oui**
-- [ ] **Feu vert** du nouveau projet (règle 1 du skill) : **à donner**
-- [ ] **Version du livrable :** V1
+## Décisions validées
+- [x] **Périmètre :** SVT pur (les 5 thématiques du PE T7)
+- [x] **Durée :** non affichée (laisser à l'enseignant)
+- [x] **Langue :** français uniquement
+- [x] **Illustrations :** schémas + scènes style scolaire, Madagascar
+- [x] **Sujets d'examen :** 1 révision + 1 sujet d'examen 5e par unité
+- [x] **Feu vert** du nouveau projet (règle 1 du skill)
+- [x] **Version du livrable :** V1
 
-## Structure proposée (35 séances)
+## Structure retenue (37 séances)
 
 | Unité | Thématique PE | Cours | + Révision | + Examen | Séances |
 |---|---|---|---|---|---|
 | I | Santé et bien-être (appareil digestif) | 4 | 1 | 1 | 6 |
-| II | Reproduction humaine | 4 | 1 | 1 | 6 |
-| III | Maladies infectieuses | 7 | 1 | 1 | 9 |
+| II | Reproduction humaine | 5 | 1 | 1 | 7 |
+| III | Maladies infectieuses | 8 | 1 | 1 | 10 |
 | IV | Organisation des êtres vivants | 6 | 1 | 1 | 8 |
 | V | Géologie | 4 | 1 | 1 | 6 |
-| **Total** | | **25** | **5** | **5** | **35** |
+| **Total** | | **27** | **5** | **5** | **37** |
 
 ## Tableau détaillé des séances
 
@@ -81,9 +81,10 @@
 - Table des illustrations
 - (Option) Schémas-bilan par unité
 
-## Prochaine étape
-1. Confirmer les cases à cocher ci-dessus.
-2. Créer `svt7-projet/` en reprenant `svt6-projet/` comme squelette (builders, assemble, séances, images).
-3. Remplir les données des 25 leçons à partir de `PE-T7-SVT-extrait.md`.
-4. Générer les schémas + scènes (style scolaire, Madagascar).
-5. Assembler et vérifier `SVT T7 [PE] Fiche de preparation sujet corrigés J-Learn.docx`.
+## État d'avancement (2026-09-09)
+1. ✅ `svt7-projet/` créé sur le modèle `svt6-projet/` (builders, exercise-bank, seance-generator).
+2. ✅ `data-unite1.js` … `data-unite5.js` et `data-evaluations.js` créés (27 cours + 5 révisions + 5 examens).
+3. ✅ `schemas-new.js`, `images.js`, `image-mapping.js`, `assemble.js`, `generate.js` créés et adaptés à T7.
+4. ✅ 32 schémas SVG → PNG générés (`output/images/*.png`).
+5. ✅ 8 scènes Madagascar générées et réduites (~1100 px) (`output/images/scenes/*.jpg`).
+6. ✅ Assemblage : `svt7-projet/output/SVT T7 [PE] Fiche de preparation sujet corrigés J-Learn.docx` (37 séances, 27 cours).

@@ -1,0 +1,260 @@
+// ============================================================
+// Unité II — Reproduction humaine (10 h)
+// ============================================================
+const U = {
+  num: "II",
+  titre: "Reproduction humaine",
+  ras: "Mettre en relation la puberté et les capacités reproductrices · Adopter des attitudes responsables face à la grossesse précoce",
+  valeurs: "Responsabilité, confiance en soi",
+  topics: [
+    {
+      type: "cours",
+      titre: "La puberté : changements et capacités reproductrices",
+      theme: "Reproduction humaine",
+      ras: "Mettre en relation la puberté et les capacités reproductrices",
+      valeurs: "Responsabilité, confiance en soi",
+      objectif: "décrire les changements de la puberté et leur lien avec la capacité de reproduction",
+      supportMeta: "Schémas des changements de la puberté (garçon et fille), documents",
+      revision: [
+        ["Qu'est-ce qu'un être vivant assure par la reproduction ?", "Il assure la continuité de son espèce en donnant naissance à de nouveaux individus."],
+        ["Quelles sont les cellules reproductrices de l'homme et de la femme ?", "Les spermatozoïdes chez l'homme, les ovules chez la femme."],
+      ],
+      mise: ["Pourquoi le corps d'un adolescent change-t-il ?", "Parce que la puberté prépare le corps à la reproduction."],
+      observation: "les schémas des changements de la puberté",
+      observationSupport: "Schémas de la puberté",
+      technAna: "Observation guidée",
+      qa: [
+        ["Qu'est-ce que la puberté ?", "C'est la période où le corps de l'adolescent se transforme pour devenir capable de se reproduire."],
+        ["Quels changements apparaissent chez le garçon ?", "La voix devient plus grave, le corps grandit, la pilosité apparaît, les testicules produisent des spermatozoïdes."],
+        ["Quels changements apparaissent chez la fille ?", "Les seins se développent, le corps grandit, la pilosité apparaît, les ovaires produisent des ovules et les règles commencent."],
+        ["Que deviennent les cellules reproductrices ?", "Elles sont produites par les organes génitaux et permettent la reproduction."],
+      ],
+      synthese: "Donc, la puberté est l'ensemble des changements qui transforment le corps de l'enfant en corps capable de se reproduire : elle déclenche la production des spermatozoïdes chez le garçon et des ovules chez la fille.",
+      motsCles: ["puberté", "adolescence", "spermatozoïdes", "ovules", "sexualité"],
+      contenu: [
+        { sousTitre: "1. Définition de la puberté", texte: "La puberté est la période de la vie, pendant l'adolescence, durant laquelle le corps se transforme et devient apte à la reproduction." },
+        { sousTitre: "2. Changements chez le garçon", liste: ["La voix mue et devient plus grave.", "Le corps grandit et se muscle.", "La pilosité apparaît (visage, aisselles, pubis).", "Les testicules commencent à produire des spermatozoïdes."] },
+        { sousTitre: "3. Changements chez la fille", liste: ["Les seins se développent.", "Le corps grandit et s'arrondit.", "La pilosité apparaît.", "Les ovaires commencent à produire des ovules et les règles apparaissent."] },
+        { sousTitre: "4. Lien avec la reproduction", texte: "Grâce à la puberté, l'organisme devient capable de produire des cellules reproductrices : spermatozoïdes chez le garçon, ovules chez la fille. Ces cellules sont indispensables pour donner naissance à un nouvel être humain." },
+      ],
+      appExos: [
+        { type: "qcm", consigne: "Encercle la bonne réponse.", pointsPar: 1, items: [
+          { q: "La puberté est la période où…", opts: ["le corps devient capable de se reproduire", "le corps cesse de grandir", "les dents commencent à tomber"], ok: 0, expl: "La puberté prépare le corps à la reproduction." },
+          { q: "Chez le garçon, les cellules reproductrices sont…", opts: ["les ovules", "les spermatozoïdes", "les globules rouges"], ok: 1, expl: "Les spermatozoïdes sont produits par les testicules." },
+          { q: "Chez la fille, les règles commencent…", opts: ["avant la puberté", "pendant la puberté", "après la vieillesse"], ok: 1, expl: "Les règles apparaissent pendant la puberté." },
+          { q: "Les changements de la puberté sont…", opts: ["identiques chez tous les adolescents", "très variables selon les personnes", "inoffensifs et sans lien avec la reproduction"], ok: 1, expl: "Ils sont variables d'un adolescent à l'autre." },
+        ]},
+        { type: "vf", consigne: "Vrai ou faux ?", pointsPar: 1, items: [
+          { txt: "La puberté prépare le corps à la reproduction.", rep: true, expl: "C'est sa fonction principale." },
+          { txt: "Chez la fille, la production des ovules commence après 30 ans.", rep: false, expl: "Elle commence à la puberté." },
+          { txt: "La voix du garçon devient plus grave à la puberté.", rep: true, expl: "C'est un changement courant." },
+        ]},
+      ],
+      evalExos: [
+        { type: "completion", consigne: "Complète.", pointsPar: 1, items: [
+          { debut: "La période pendant laquelle le corps devient capable de se reproduire s'appelle la", suite: "puberté" },
+          { debut: "Les cellules reproductrices du garçon sont les", suite: "spermatozoïdes" },
+          { debut: "Les cellules reproductrices de la fille sont les", suite: "ovules" },
+        ]},
+      ],
+    },
+    {
+      type: "cours",
+      titre: "Les organes génitaux internes : gonades et voies génitales",
+      theme: "Reproduction humaine",
+      ras: "Mettre en relation la puberté et les capacités reproductrices",
+      valeurs: "Responsabilité, confiance en soi",
+      objectif: "identifier les organes génitaux internes et expliquer leurs rôles",
+      supportMeta: "Schéma de l'appareil reproducteur masculin et féminin",
+      revision: [
+        ["Quels sont les changements au moment de la puberté ?", "Le corps se transforme et les organes génitaux deviennent capables de produire des cellules reproductrices."],
+        ["Quelle est la cellule reproductrice de l'homme ?", "Le spermatozoïde."],
+      ],
+      mise: ["Quels sont les organes qui produisent et transportent les cellules reproductrices ?", "Les gonades et les voies génitales."],
+      observation: "le schéma de l'appareil reproducteur masculin et féminin",
+      observationSupport: "Schéma appareil masculin et féminin",
+      technAna: "Observation dirigée",
+      qa: [
+        ["Qu'est-ce qu'une gonade ?", "C'est un organe qui produit les cellules reproductrices."],
+        ["Comment s'appellent les gonades chez l'homme ?", "Les testicules."],
+        ["Comment s'appellent les gonades chez la femme ?", "Les ovaires."],
+        ["Quelles sont les voies génitales de la femme ?", "Les trompes de Fallope, l'utérus et le vagin."],
+      ],
+      synthese: "Donc, les gonades (testicules chez l'homme, ovaires chez la femme) produisent les cellules reproductrices, et les voies génitales les transportent jusqu'à la rencontre qui donne un nouvel être.",
+      motsCles: ["gonades", "testicules", "ovaires", "voies génitales", "utérus"],
+      contenu: [
+        { sousTitre: "1. Les gonades", liste: ["Testicules : produisent les spermatozoïdes.", "Ovaires : produisent les ovules."] },
+        { sousTitre: "2. Les voies génitales masculines", liste: ["Spermiductes : transportent les spermatozoïdes.", "Prostate et vésicules séminales : produisent les liquides du sperme.", "Urètre : conduit de sortie."] },
+        { sousTitre: "3. Les voies génitales féminines", liste: ["Trompes de Fallope : lieu où se rencontrent ovule et spermatozoïde.", "Utérus : organe où se développe le futur bébé.", "Vagin : conduit du corps vers l'extérieur."] },
+        { sousTitre: "4. Rôle des organes internes", texte: "Les gonades produisent les cellules reproductrices ; les voies génitales les transportent et permettent à l'enfant de se développer pendant la grossesse." },
+      ],
+      appExos: [
+        { type: "qcm", consigne: "Encercle la bonne réponse.", pointsPar: 1, items: [
+          { q: "Les testicules produisent…", opts: ["les ovules", "les spermatozoïdes", "le sang"], ok: 1, expl: "Les testicules produisent les spermatozoïdes." },
+          { q: "Les ovaires produisent…", opts: ["les ovules", "les spermatozoïdes", "l'urine"], ok: 0, expl: "Les ovaires produisent les ovules." },
+          { q: "L'organe où se développe le futur bébé est…", opts: ["l'utérus", "l'ovaire", "le vagin"], ok: 0, expl: "Le bébé se développe dans l'utérus." },
+          { q: "Les trompes de Fallope servent à…", opts: ["transporter l'urine", "transporter l'ovule et permettre la fécondation", "digérer les aliments"], ok: 1, expl: "Les trompes sont le lieu de rencontre des cellules reproductrices." },
+        ]},
+        { type: "appariement", consigne: "Associe.", pointsPar: 1, items: [{ g: ["Testicules", "Ovaires", "Utérus", "Trompes"], d: ["Produisent les ovules", "Produisent les spermatozoïdes", "Lieu de la fécondation", "Développement du bébé"], pairs: [[1,1],[0,0],[2,3],[3,2]] }] },
+      ],
+      evalExos: [
+        { type: "qr", consigne: "Réponds par une phrase.", pointsPar: 2, items: [
+          { q: "Quelle est la différence entre les gonades et les voies génitales ?", r: "Les gonades produisent les cellules reproductrices, tandis que les voies génitales les transportent." },
+          { q: "Cite les deux gonades de la femme et de l'homme.", r: "Chez la femme : les ovaires. Chez l'homme : les testicules." },
+        ]},
+      ],
+    },
+    {
+      type: "cours",
+      titre: "Le cycle menstruel et la période de fécondité",
+      theme: "Reproduction humaine",
+      ras: "Mettre en relation la puberté et les capacités reproductrices",
+      valeurs: "Responsabilité, confiance en soi",
+      objectif: "déterminer l'origine des règles et identifier la période de fécondité",
+      supportMeta: "Schéma du cycle menstruel, calendrier",
+      revision: [
+        ["Quel organe produit les ovules ?", "Les ovaires."],
+        ["Où se développe le futur bébé ?", "Dans l'utérus."],
+      ],
+      mise: ["Pourquoi la femme a-t-elle des règles chaque mois ?", "À cause du fonctionnement cyclique des ovaires de l'utérus."],
+      observation: "le schéma du cycle menstruel et le calendrier",
+      observationSupport: "Schéma du cycle menstruel",
+      technAna: "Analyse de schéma et de calendrier",
+      qa: [
+        ["Qu'est-ce que le cycle menstruel ?", "C'est la suite de transformations qui se répète chaque mois dans le corps de la femme."],
+        ["D'où viennent les règles ?", "Elles viennent de l'élimination de la muqueuse de l'utérus lorsqu'il n'y a eu aucune fécondation."],
+        ["Quelle est la période de fécondité ?", "C'est la période (vers le milieu du cycle, autour de l'ovulation) où la fécondation est la plus probable."],
+        ["Comment déterminer la période de fécondité à partir d'un calendrier ?", "On repère le milieu du cycle, lieu de l'ovulation, ainsi que les jours qui l'entourent."],
+      ],
+      synthese: "Donc, le cycle menstruel est un cycle mensuel ; les règles correspondent à l'élimination de la muqueuse utérine, et la période de fécondité se situe autour de l'ovulation.",
+      motsCles: ["cycle menstruel", "règles", "ovulation", "période de fécondité", "utérus"],
+      contenu: [
+        { sousTitre: "1. Le cycle menstruel", texte: "Le cycle menstruel est un cycle d'environ 28 jours qui se répète chez la femme en âge de procréer, jusqu'à la ménopause." },
+        { sousTitre: "2. Les règles", liste: ["Elles commencent à la puberté.", "Elles correspondent à l'élimination de la muqueuse utérine quand il n'y a pas de fécondation.", "Elles durent quelques jours."] },
+        { sousTitre: "3. L'ovulation", texte: "L'ovulation est la libération d'un ovule mature par un ovaire ; elle se produit vers le milieu du cycle." },
+        { sousTitre: "4. La période de fécondité", texte: "La période de fécondité est la période autour de l'ovulation où une fécondation peut avoir lieu. La connaître est importante pour comprendre la reproduction, et pour éviter une grossesse non souhaitée en cas de rapports non protégés." },
+        { sousTitre: "Exemple", texte: "Si un cycle dure 28 jours avec l'ovulation vers le 14e jour, la période de fécondité se situe environ entre le 10e et le 16e jour." },
+      ],
+      appExos: [
+        { type: "vf", consigne: "Vrai ou faux ?", pointsPar: 1, items: [
+          { txt: "Les règles correspondent à l'élimination de la muqueuse utérine.", rep: true, expl: "C'est ce qui se produit lorsqu'il n'y a pas de fécondation." },
+          { txt: "La période de fécondité se situe uniquement au début des règles.", rep: false, expl: "Elle se situe autour de l'ovulation." },
+          { txt: "La période de fécondité peut être repérée à l'aide d'un calendrier.", rep: true, expl: "C'est l'une des méthodes d'identification." },
+        ]},
+        { type: "qr", consigne: "Réponds par une phrase.", pointsPar: 2, items: [
+          { q: "Qu'est-ce que l'ovulation ?", r: "C'est la libération d'un ovule mature par un ovaire, vers le milieu du cycle." },
+          { q: "Comment identifier la période de fécondité ?", r: "En repérant le milieu du cycle (ovulation) et les jours qui l'entourent sur un calendrier." },
+        ]},
+      ],
+      evalExos: [
+        { type: "completion", consigne: "Complète.", pointsPar: 1, items: [
+          { debut: "Le cycle menstruel dure en moyenne environ", suite: "28 jours" },
+          { debut: "Une femme produit environ un ovule par", suite: "mois" },
+          { debut: "La période autour de l'ovulation s'appelle la période de", suite: "fécondité" },
+        ]},
+      ],
+    },
+    {
+      type: "cours",
+      titre: "La fécondation et les conditions nécessaires",
+      theme: "Reproduction humaine",
+      ras: "Mettre en relation la puberté et les capacités reproductrices",
+      valeurs: "Responsabilité, confiance en soi",
+      objectif: "analyser les conditions et les étapes de la fécondation",
+      supportMeta: "Schéma de la fécondation, modèle de cellules reproductrices",
+      revision: [
+        ["Quels sont les deux types de cellules reproductrices ?", "Le spermatozoïde (mâle) et l'ovule (femelle)."],
+        ["Où se fait normalement la fécondation ?", "Dans la trompe de Fallope."],
+      ],
+      mise: ["Quelles conditions doivent être réunies pour qu'une fécondation ait lieu ?", "Il faut un ovule, un spermatozoïde et un milieu favorable dans les voies génitales."],
+      observation: "le schéma de la fécondation",
+      observationSupport: "Schéma fécondation",
+      technAna: "Observation et analyse de schéma",
+      qa: [
+        ["Quelles conditions sont nécessaires pour qu'il y ait fécondation ?", "L'ovulation doit avoir libéré un ovule, le spermatozoïde doit rencontrer l'ovule dans la trompe, et le milieu doit être favorable."],
+        ["Quelles sont les étapes de la fécondation ?", "Rencontre de l'ovule et du spermatozoïde, pénétration du spermatozoïde dans l'ovule, fusion des noyaux, formation de la cellule-œuf."],
+        ["Qu'est-ce que la cellule-œuf ?", "C'est la première cellule du nouvel être, formée par l'union du spermatozoïde et de l'ovule."],
+        ["Que devient la cellule-œuf ?", "Elle se divise, s'implante dans l'utérus et se développe en embryon, puis en futur bébé."],
+      ],
+      synthese: "Donc, la fécondation exige une ovulation, la rencontre entre le spermatozoïde et l'ovule, et un milieu favorable ; elle aboutit à la formation de la cellule-œuf qui se développe dans l'utérus.",
+      motsCles: ["fécondation", "spermatozoïde", "ovule", "cellule-œuf", "trompe"],
+      contenu: [
+        { sousTitre: "1. Les conditions de la fécondation", liste: ["L'ovulation a libéré un ovule.", "Le spermatozoïde rencontre l'ovule dans la trompe.", "Le milieu est favorable et les cellules peuvent fusionner."] },
+        { sousTitre: "2. Les étapes de la fécondation", liste: ["Rencontre de l'ovule et du spermatozoïde.", "Pénétration du spermatozoïde dans l'ovule.", "Fusion des noyaux → formation de la cellule-œuf.", "Division et implantation de l'embryon dans l'utérus."] },
+        { sousTitre: "3. La cellule-œuf", texte: "La cellule-œuf est la première cellule d'un nouvel être. Elle contient l'information génétique des deux parents et se divise pour donner l'embryon." },
+        { sousTitre: "4. Le développement", texte: "Après l'implantation dans l'utérus, l'embryon continue de se développer pendant environ neuf mois, jusqu'à la naissance." },
+      ],
+      appExos: [
+        { type: "qcm", consigne: "Encercle la bonne réponse.", pointsPar: 1, items: [
+          { q: "La fécondation se produit normalement dans…", opts: ["l'utérus", "la trompe de Fallope", "le vagin"], ok: 1, expl: "La trompe est le lieu de rencontre." },
+          { q: "La cellule-œuf se forme après…", opts: ["l'union du spermatozoïde et de l'ovule", "la sortie de l'ovule", "la division de l'ovaire"], ok: 0, expl: "La cellule-œuf est le résultat de la fusion." },
+          { q: "Sans ovulation, la fécondation…", opts: ["est impossible", "est toujours possible", "se fait dans l'estomac"], ok: 0, expl: "Il faut un ovule pour féconder." },
+          { q: "La cellule-œuf se développe dans…", opts: ["l'utérus", "la trompe", "l'ovaire"], ok: 0, expl: "Elle s'implante dans l'utérus." },
+        ]},
+        { type: "qr", consigne: "Réponds par une phrase.", pointsPar: 2, items: [
+          { q: "Cite deux conditions nécessaires à la fécondation.", r: "L'ovulation doit avoir libéré un ovule, et le spermatozoïde doit rencontrer l'ovule dans la trompe." },
+          { q: "Qu'est-ce que la cellule-œuf ?", r: "C'est la première cellule du nouvel être, formée par l'union du spermatozoïde et de l'ovule." },
+        ]},
+      ],
+      evalExos: [
+        { type: "completion", consigne: "Complète.", pointsPar: 1, items: [
+          { debut: "La rencontre entre un spermatozoïde et un ovule s'appelle la", suite: "fécondation" },
+          { debut: "La première cellule issue de la fécondation est la", suite: "cellule-œuf" },
+          { debut: "La fécondation a lieu dans la trompe de", suite: "Fallope" },
+        ]},
+      ],
+    },
+    {
+      type: "cours",
+      titre: "La grossesse précoce : causes, conséquences et prévention",
+      theme: "Reproduction humaine",
+      ras: "Adopter des attitudes responsables face à la grossesse précoce",
+      valeurs: "Responsabilité, confiance en soi",
+      objectif: "identifier les causes, conséquences et moyens de prévention de la grossesse précoce",
+      supportMeta: "Situations-problèmes, fiche d'enquête, affiche de prévention",
+      revision: [
+        ["Qu'est-ce que la fécondation ?", "La rencontre et l'union d'un spermatozoïde et d'un ovule, avec formation de la cellule-œuf."],
+        ["Où se développe le futur bébé ?", "Dans l'utérus."],
+      ],
+      mise: ["Une jeune fille de 14 ans attend un enfant. Quels peuvent être les dangers pour elle et pour son enfant ?", "Elle risque de ne plus continuer l'école, d'avoir des problèmes de santé, et son enfant peut naître avant que sa mère soit prête."],
+      observation: "les situations-problèmes et l'affiche de prévention",
+      observationSupport: "Fiche d'enquête + affiche prévention",
+      technAna: "Analyse de situations-problèmes et débat",
+      qa: [
+        ["Quelles sont les causes d'une grossesse précoce ?", "L'ignorance, la pression du groupe, l'absence de dialogue avec les adultes et le manque de protection."],
+        ["Quelles sont les conséquences scolaires ?", "L'abandon de l'école et la difficulté à poursuivre les études."],
+        ["Quelles sont les conséquences médicales ?", "Des risques pour la santé de la mère et du nouveau-né, des complications de grossesse."],
+        ["Comment prévenir une grossesse précoce ?", "Par l'information, l'éducation, la responsabilisation, le dialogue avec les parents et le personnel de santé, et des comportements prudents."],
+      ],
+      synthese: "Donc, une grossesse précoce a des causes (ignorance, pression, absence de dialogue) et des conséquences scolaires, médicales, familiales et sociales ; la prévention passe par l'information, la responsabilisation, le dialogue et un accompagnement adapté.",
+      motsCles: ["grossesse précoce", "prévention", "responsabilité", "dialogue", "accompagnement"],
+      contenu: [
+        { sousTitre: "1. Causes", liste: ["Ignorance des risques.", "Pression du groupe et des pairs.", "Absence de dialogue avec les adultes.", "Manque d'information et de protection."] },
+        { sousTitre: "2. Conséquences scolaires", liste: ["Abandon de l'école.", "Interruption des études.", "Difficulté à retrouver une formation."] },
+        { sousTitre: "3. Conséquences médicales", liste: ["Risques pour la santé de la jeune mère.", "Risques pour le nouveau-né.", "Complications pouvant être graves."] },
+        { sousTitre: "4. Conséquences familiales et sociales", liste: ["Charge financière pour la famille.", "Jugements et stigmatisation.", "Difficulté à préparer l'avenir."] },
+        { sousTitre: "5. Prévention", liste: ["S'informer auprès du personnel de santé.", "Parler à un adulte de confiance.", "Adopter des comportements responsables.", "Se protéger et protéger l'autre."] },
+      ],
+      appExos: [
+        { type: "qcm", consigne: "Encercle la bonne réponse.", pointsPar: 1, items: [
+          { q: "Une grossesse précoce peut entraîner…", opts: ["l'abandon de l'école", "une meilleure santé", "plus de temps pour étudier"], ok: 0, expl: "Elle peut interrompre la scolarité." },
+          { q: "Un bon moyen de prévention est…", opts: ["le dialogue et l'information", "cacher le problème", "rester isolé"], ok: 0, expl: "L'information et le dialogue protègent." },
+          { q: "Une cause fréquente de grossesse précoce est…", opts: ["l'ignorance des risques", "une alimentation équilibrée", "le sport"], ok: 0, expl: "Le manque d'information et de protection est fréquent." },
+          { q: "En cas de grossesse précoce, il faut…", opts: ["se faire accompagner et consulter", "rester seul", "quitter l'école sans aide"], ok: 0, expl: "L'accompagnement médical et social est important." },
+        ]},
+        { type: "vf", consigne: "Vrai ou faux ?", pointsPar: 1, items: [
+          { txt: "La grossesse précoce est sans conséquence pour la santé.", rep: false, expl: "Elle peut avoir des conséquences médicales graves." },
+          { txt: "Le dialogue permet de prévenir la grossesse précoce.", rep: true, expl: "L'information et l'accompagnement sont protecteurs." },
+          { txt: "Une jeune mère peut avoir besoin d'un accompagnement médical.", rep: true, expl: "Elle a besoin de soins et d'un suivi." },
+        ]},
+      ],
+      evalExos: [
+        { type: "qr", consigne: "Réponds par une phrase.", pointsPar: 2, items: [
+          { q: "Cite deux conséquences d'une grossesse précoce.", r: "L'abandon de l'école et des risques pour la santé de la mère et de l'enfant." },
+          { q: "Cite un message préventif contre la grossesse précoce.", r: "Parle à un adulte confident et informe-toi auprès du personnel de santé." },
+        ]},
+      ],
+    },
+  ],
+};
+module.exports = U;
