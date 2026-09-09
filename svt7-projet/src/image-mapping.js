@@ -16,13 +16,23 @@ const IMG = {
     fig("appareil-digestif.png", "Figure 1a — Même appareil digestif en schéma, à légender."),
     fig("scenes/scene-repas-malagasy.jpg", "Figure 1b — Un repas à Madagascar : le riz et ses accompagnements."),
   ],
-  "I:1": [fig("roles-digestifs.png", "Figure 2 — Les rôles du tube digestif et des glandes digestives.")],
-  "I:2": [fig("trajet-aliments.png", "Figure 3 — Le trajet et les transformations des aliments.")],
-  "I:3": [fig("digestion-perturbee.png", "Figure 4 — Le devenir des aliments et les conséquences d'une digestion perturbée.")],
+  "I:1": [
+    fig("gen/roles-digestifs.jpg", "Figure 2 — Les rôles du tube digestif et des glandes digestives (illustration)."),
+    fig("roles-digestifs.png", "Figure 2b — Les rôles digestifs : schéma à légender."),
+  ],
+  "I:2": [
+    fig("gen/trajet-aliments.jpg", "Figure 3 — Le trajet et les transformations des aliments (illustration)."),
+    fig("trajet-aliments.png", "Figure 3b — Trajet bouche → anus : schéma à légender."),
+  ],
+  "I:3": [
+    fig("gen/digestion-perturbee.jpg", "Figure 4 — Digestion normale et digestion perturbée (illustration)."),
+    fig("digestion-perturbee.png", "Figure 4b — Le devenir des aliments et les conséquences d'une digestion perturbée."),
+  ],
 
   // ---- Unité II : Reproduction humaine ----
   "II:0": [
-    fig("puberte.png", "Figure 5 — La puberté : changements et capacités reproductrices."),
+    fig("gen/puberte.jpg", "Figure 5 — La puberté : changements chez le garçon et la fille (illustration)."),
+    fig("puberte.png", "Figure 5a — La puberté : schéma à légender."),
     fig("scenes/scene-adolescent.jpg", "Figure 5b — Un adolescent malgache : les changements de la puberté."),
   ],
   "II:1": [
@@ -61,7 +71,10 @@ const IMG = {
     fig("gen/virus-parasites.jpg", "Figure 13 — Les virus, les parasites et leur hôte (illustration)."),
     fig("virus-parasites.png", "Figure 13b — Les virus et les parasites : schéma à légender."),
   ],
-  "III:4": [fig("infection-immunite.png", "Figure 14 — L'infection microbienne et l'immunité.")],
+  "III:4": [
+    fig("gen/immunite.jpg", "Figure 14 — L'infection microbienne et l'immunité (illustration)."),
+    fig("infection-immunite.png", "Figure 14b — Soi / non-soi et rôle des anticorps : schéma à légender."),
+  ],
   "III:5": [fig("prevention-soins.png", "Figure 15 — Antisepsie, asepsie, antibiotiques, vaccins et sérums.")],
   "III:6": [fig("mesures-prevention.png", "Figure 16 — Prévention et lutte contre les maladies infectieuses.")],
   "III:7": [
@@ -71,28 +84,37 @@ const IMG = {
 
   // ---- Unité IV : Organisation des êtres vivants ----
   "IV:0": [
-    fig("ecosysteme.png", "Figure 18 — Qu'est-ce qu'un écosystème ?"),
+    fig("gen/ecosysteme.jpg", "Figure 18 — Qu'est-ce qu'un écosystème ? (illustration)."),
+    fig("ecosysteme.png", "Figure 18a — Écosystème : schéma à légender."),
     fig("scenes/scene-foret-riz-etang.jpg", "Figure 18b — Forêt, rizière et étang : un écosystème malgache."),
   ],
   "IV:1": [fig("conditions-milieu.png", "Figure 19 — Les conditions physiques d'un milieu.")],
   "IV:2": [fig("mode-vie.png", "Figure 20 — Les modes de vie et l'adaptation des êtres vivants.")],
   "IV:3": [fig("interactions.png", "Figure 21 — Les interactions entre les êtres vivants.")],
-  "IV:4": [fig("chaine-alimentaire.png", "Figure 22 — La chaîne alimentaire.")],
+  "IV:4": [
+    fig("gen/chaine-alimentaire.jpg", "Figure 22 — La chaîne alimentaire (illustration)."),
+    fig("chaine-alimentaire.png", "Figure 22b — Producteurs, consommateurs et décomposeurs : schéma à légender."),
+  ],
   "IV:5": [
     fig("extinction.png", "Figure 23 — Modification de l'environnement et menace d'extinction."),
     fig("scenes/scene-deforestation.jpg", "Figure 23b — La déforestation dans les Hautes Terres."),
   ],
 
   // ---- Unité V : Géologie ----
-  "V:0": [fig("structure-terre.png", "Figure 24 — La structure interne de la Terre.")],
+  "V:0": [
+    fig("gen/structure-terre.jpg", "Figure 24 — La structure interne de la Terre (illustration)."),
+    fig("structure-terre.png", "Figure 24b — Croûte, manteau, noyau : schéma à légender."),
+  ],
   "V:1": [fig("activites-terre.png", "Figure 25 — Les activités internes et externes de la Terre.")],
   "V:2": [
-    fig("volcan-seisme.png", "Figure 26 — Volcanisme et séismes."),
-    fig("scenes/scene-volcan.jpg", "Figure 26b — Un volcan et un paysage volcanique."),
+    fig("gen/volcan-seisme.jpg", "Figure 26 — Volcanisme et séismes (illustration)."),
+    fig("volcan-seisme.png", "Figure 26b — Volcan et séisme : schéma à légender."),
+    fig("scenes/scene-volcan.jpg", "Figure 26c — Un volcan et un paysage volcanique."),
   ],
   "V:3": [
-    fig("tectonique-erosion.png", "Figure 27 — Tectonique, montagnes, érosion et lavakisation."),
-    fig("scenes/scene-lavak-erosion.jpg", "Figure 27b — Un lavaka : ravin d'érosion des Hautes Terres."),
+    fig("gen/tectonique-erosion.jpg", "Figure 27 — Tectonique, montagnes, érosion et lavakisation (illustration)."),
+    fig("tectonique-erosion.png", "Figure 27b — Plaques et lavaka : schéma à légender."),
+    fig("scenes/scene-lavak-erosion.jpg", "Figure 27c — Un lavaka : ravin d'érosion des Hautes Terres."),
   ],
 };
 
