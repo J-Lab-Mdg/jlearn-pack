@@ -253,12 +253,22 @@ for s in SEANCES:
     para(doc, "LEÇON", 14, NOIR, True, False, None)
     para(doc, s["titre"], 16, ROUGE, True, False, None, bookmark=f"bm_lecon{n}")
     if s["image"]:
-        from docx.shared import Emu
         from PIL import Image as PILImage
         ipath = os.path.join(ROOT, s["image"][0])
-        iw, ih = PILImage.open(ipath).size
+        img = PILImage.open(ipath)
+        iw, ih = img.size
+        # Version légère pour le docx : max 800 px + palette 256 couleurs.
+        # Les images s'affichent en ~10-13 cm ; ça garde le fichier < 1 Mo
+        # (important pour les téléchargements à débit limité).
+        if max(iw, ih) > 800:
+            r = 800.0 / max(iw, ih)
+            img = img.convert("RGB").resize((int(iw * r), int(ih * r)), PILImage.LANCZOS)
+        img = img.quantize(colors=256, method=PILImage.MEDIANCUT)
+        optpath = os.path.join(os.path.dirname(OUT),
+                               os.path.splitext(os.path.basename(ipath))[0] + "_opt.png")
+        img.save(optpath, optimize=True)
         pic = doc.add_paragraph(); pic.alignment = C
-        pic.add_run().add_picture(ipath, width=Cm(10.0) if ih > iw else Cm(13.0))
+        pic.add_run().add_picture(optpath, width=Cm(10.0) if ih > iw else Cm(13.0))
         para(doc, s["image"][1], 10, NOIR, False, True, C)
     for sous_titre, partes in s["lecon"]:
         if sous_titre:
