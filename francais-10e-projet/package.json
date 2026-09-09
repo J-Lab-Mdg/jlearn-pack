@@ -1,0 +1,12 @@
+{
+  "name": "francais-11e-jlearn",
+  "version": "1.0.0",
+  "description": "Manuel J-Learn Français 11e (CP1) — Traitement C (Node.js + docx)",
+  "main": "src/assemble-bloc1.js",
+  "scripts": {
+    "bloc1": "node src/assemble-bloc1.js"
+  },
+  "dependencies": {
+    "docx": "^9.5.1"
+  }
+}

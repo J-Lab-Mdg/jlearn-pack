@@ -1,0 +1,140 @@
+// =============================================================
+// FRANCAIS 9e - THEME 11 : L'ENVIRONNEMENT SCOLAIRE (PE officiel, titre 4)
+// Uniquement dans le manuel PE. Sous-disciplines = les 6 composantes.
+// =============================================================
+const TH11 = {
+  numero: 11,
+  nom: "L'environnement scolaire",
+  source: "Programme d'Études T3 — L'environnement scolaire (descriptif, 33 h)",
+  periodes: [
+    ["Compréhension orale", "Comprendre une description de l'école et de ses infrastructures."],
+    ["Production orale", "Décrire son école et situer les lieux."],
+    ["Compréhension écrite", "Lire un règlement intérieur et un emploi du temps."],
+    ["Production écrite", "Écrire une consigne et décrire l'école."],
+    ["Fonctionnement de la langue", "Les prépositions de lieu ; le genre et le nombre des noms de l'école."],
+    ["Lecture - Fluidité", "Lire un court texte descriptif sur l'école avec fluidité."],
+  ],
+  objectifs: [
+    "Nommer les infrastructures scolaires (bâtiments, point d'eau, cour, latrines).",
+    "Situer les lieux de l'école avec les prépositions de lieu.",
+    "Lire un règlement intérieur et un emploi du temps.",
+    "Écrire une consigne et décrire son école.",
+  ],
+  seances: [
+    {
+      n: 0, titre: "Les lieux de l'école", titreFiche: "Nommer et situer les infrastructures scolaires.",
+      sd: "Production orale",
+      objectif: "Nommer les infrastructures scolaires et les situer",
+      support: "Image d'une école malgache, étiquettes des lieux.",
+      lecon: {
+        titre: "1. Les infrastructures scolaires",
+        blocs: [
+          { st: "A. Les lieux", txt: "le bâtiment scolaire — la salle de classe — la cour — le point d'eau — les latrines — le bureau du directeur — le terrain de sport." },
+          { st: "B. Situer", txt: "dans — devant — derrière — à côté de — au milieu de — au bord de." },
+        ],
+        aretenir: "Pour décrire l'école, on nomme ses lieux et on les situe avec les prépositions de lieu.",
+      },
+      revision: { ens: "« Quels lieux y a-t-il dans notre école ? » - Révision du lexique du village.", app: "Les élèves citent les lieux connus." },
+      miseEnSituation: { ens: "Le professeur montre l'image de l'école et demande : « Que voyez-vous ? »", app: "Les élèves nomment les lieux visibles." },
+      presentation: { ens: "Le professeur annonce que l'on va nommer et situer les lieux de l'école.", app: "Un élève lit l'objectif." },
+      observation: { ens: "Le professeur écrit : « Le point d'eau est derrière le bâtiment scolaire. »", app: "Les élèves relèvent les lieux et la préposition." },
+      analyse: { ens: "Le professeur fait classer lieux et prépositions.", app: "Les élèves classent.", technique: { sous: "I. Lieux et prépositions", points: ["Les lieux : bâtiment, salle de classe, cour, point d'eau, latrines.", "Les prépositions : dans, devant, derrière, à côté de, au milieu de."] } },
+      synthese: { ens: "Le professeur fait décrire l'école.", app: "Un élève décrit, les autres complètent.", technique: { sous: "II. Décrire l'école", points: ["On nomme les lieux.", "On les situe avec les prépositions.", "On emploie il y a."] } },
+      application: { ens: "Le professeur fait employer le lexique.", app: "Les élèves écrivent et situent.", technique: { sous: "III. Application", points: ["Classez : cour, devant, point d'eau, derrière, latrines.", "Complétez : « Le point d'eau est ... le bâtiment. »", "Décris ton école en trois phrases."] } },
+      evaluation: { ens: "Le professeur vérifie.", app: "Chaque élève décrit correctement.", technique: { sous: "IV. Évaluation", points: ["Citez trois lieux de l'école.", "Situe deux lieux l'un par rapport à l'autre."] } },
+      exercices: [ { t: "Exercice 1 (10 pts)", q: "Classez : cour — devant — point d'eau — derrière — latrines — à côté de.", pts: 10 }, { t: "Exercice 2 (10 pts)", q: "Décris ton école en trois phrases en situant deux lieux.", pts: 10 } ],
+      corrige: [ ["Ex. 1 — ", { t: "lieux : cour, point d'eau, latrines ; prépositions : devant, derrière, à côté de", r: true }, "."], ["Ex. 2 — ", { t: "réponse libre, ex. : Mon école a trois salles. Le point d'eau est derrière le bâtiment. La cour est au milieu de l'école.", r: true }, "."] ],
+    },
+    {
+      n: 0, titre: "Le règlement intérieur", titreFiche: "Lire un règlement intérieur et écrire une consigne.",
+      sd: "Compréhension écrite",
+      objectif: "Lire un règlement intérieur et écrire une consigne",
+      support: "Règlement intérieur affiché, cahiers.",
+      lecon: {
+        titre: "2. Le règlement intérieur",
+        blocs: [
+          { st: "A. Lire le règlement", txt: "le règlement donne des consignes : il faut, il ne faut pas, soyez." },
+          { st: "B. Écrire une consigne", txt: "on utilise l'impératif ou il faut + infinitif." },
+        ],
+        aretenir: "Le règlement intérieur exprime des consignes avec il faut, il ne faut pas, et l'impératif.",
+      },
+      revision: { ens: "« Que doit-on faire en classe ? » - Révision des obligations (devoir, il faut).", app: "Les élèves rappellent deux obligations." },
+      miseEnSituation: { ens: "Le professeur lit une règle : « Il faut respecter le maître. » et demande : « Est-ce une obligation ? »", app: "Les élèves répondent." },
+      presentation: { ens: "Le professeur annonce que l'on va lire un règlement et écrire une consigne.", app: "Un élève lit l'objectif." },
+      observation: { ens: "Le professeur fait lire le règlement : « Il faut arriver à l'heure. Il ne faut pas crier. Soyez propres. »", app: "Les élèves lisent et relèvent les consignes." },
+      analyse: { ens: "Le professeur fait dégager les formes de la consigne.", app: "Les élèves relèvent il faut, il ne faut pas, impératif.", technique: { sous: "I. Les formes de la consigne", points: ["il faut + infinitif", "il ne faut pas + infinitif", "l'impératif : soyez, arrivez, respectez"] } },
+      synthese: { ens: "Le professeur fait récapituler.", app: "Un élève énonce une consigne.", technique: { sous: "II. Écrire une consigne", points: ["On choisit l'action.", "On utilise il faut ou l'impératif.", "On termine par un point."] } },
+      application: { ens: "Le professeur fait écrire des consignes.", app: "Les élèves rédigent deux consignes.", technique: { sous: "III. Application", points: ["Lis le règlement du tableau.", "Écris deux consignes avec il faut.", "Écris une consigne à l'impératif."] } },
+      evaluation: { ens: "Le professeur vérifie.", app: "Chaque élève écrit correctement.", technique: { sous: "IV. Évaluation", points: ["Relève deux consignes du règlement.", "Écris une consigne avec il faut et une à l'impératif."] } },
+      exercices: [ { t: "Exercice 1 (10 pts)", q: "Relève deux consignes du règlement intérieur.", pts: 10 }, { t: "Exercice 2 (10 pts)", q: "Écris une consigne avec il faut et une consigne à l'impératif.", pts: 10 } ],
+      corrige: [ ["Ex. 1 — ", { t: "Il faut arriver à l'heure. Il ne faut pas crier.", r: true }, "."], ["Ex. 2 — ", { t: "Il faut respecter le maître. Soyez propres.", r: true }, "."] ],
+    },
+    {
+      n: 0, titre: "Lire et écrire sur l'école", titreFiche: "Lire un court texte sur l'école et le décrire par écrit.",
+      sd: "Lecture - Fluidité",
+      objectif: "Lire un court texte descriptif sur l'école avec fluidité et décrire l'école par écrit",
+      support: "Court texte descriptif sur l'école, cahiers.",
+      lecon: {
+        titre: "3. Lecture fluide et description écrite",
+        blocs: [
+          { st: "A. Lire avec fluidité", txt: "on lit à voix haute, sans s'arrêter, en respectant les points et les virgules." },
+          { st: "B. Décrire par écrit", txt: "on nomme l'ensemble, les lieux, puis on situe." },
+        ],
+        aretenir: "Lire avec fluidité, c'est lire d'un bon rythme en respectant la ponctuation ; la description part de l'ensemble vers les détails.",
+      },
+      revision: { ens: "« Quels mots situent un lieu ? » - Révision des prépositions.", app: "Les élèves rappellent les prépositions." },
+      miseEnSituation: { ens: "Le professeur lit le texte une première fois avec expression.", app: "Les élèves écoutent." },
+      presentation: { ens: "Le professeur annonce que l'on va lire avec fluidité puis décrire par écrit.", app: "Un élève lit l'objectif." },
+      observation: { ens: "Le professeur fait relire le texte à plusieurs élèves.", app: "Les élèves lisent à tour de rôle." },
+      analyse: { ens: "Le professeur fait repérer les lieux et la ponctuation.", app: "Les élèves relèvent les lieux et les points.", technique: { sous: "I. Le texte descriptif", points: ["Le texte nomme l'école, ses lieux, puis les situe.", "Les points et les virgules guident le rythme de lecture."] } },
+      synthese: { ens: "Le professeur fait récapituler la lecture fluide et la description.", app: "Un élève lit le texte en entier avec fluidité.", technique: { sous: "II. Lire et décrire", points: ["Lire d'un bon rythme.", "Respecter la ponctuation.", "Décrire de l'ensemble vers les détails."] } },
+      application: { ens: "Le professeur fait lire puis écrire.", app: "Les élèves lisent puis rédigent.", technique: { sous: "III. Application", points: ["Lis le texte deux fois avec fluidité.", "Relève les lieux de l'école du texte.", "Décris ton école en trois phrases."] } },
+      evaluation: { ens: "Le professeur vérifie la fluidité et l'écriture.", app: "Chaque élève lit et écrit.", technique: { sous: "IV. Évaluation", points: ["Lis le texte sans t'arrêter.", "Décris ton école en trois phrases."] } },
+      exercices: [ { t: "Exercice 1 (10 pts)", q: "Relève les lieux de l'école nommés dans le texte.", pts: 10 }, { t: "Exercice 2 (10 pts)", q: "Décris ton école en trois phrases.", pts: 10 } ],
+      corrige: [ ["Ex. 1 — ", { t: "le bâtiment, la cour, le point d'eau, les latrines", r: true }, "."], ["Ex. 2 — ", { t: "réponse libre, ex. : Mon école a trois salles de classe. La cour est au milieu. Le point d'eau est derrière le bâtiment.", r: true }, "."] ],
+    },
+  ],
+  annexe: {
+    theme: 11,
+    nom: "L'environnement scolaire",
+    conjugaison: [
+      {
+        verbe: "être et avoir",
+        temps: "Présent de l'indicatif (mobilisation)",
+        quand: "Pour décrire l'école : ce qu'elle est et ce qu'elle a.",
+        exemplesQuand: ["L'école est grande.", "Notre école a un point d'eau."],
+        comment: "être : je suis, tu es, il est, nous sommes, vous êtes, ils sont. avoir : j'ai, tu as, il a, nous avons, vous avez, ils ont.",
+        tableau: ["être : je suis, il est, nous sommes, ils sont", "avoir : j'ai, il a, nous avons, ils ont"],
+        pourquoi: "être et avoir permettent de décrire l'école et ses infrastructures.",
+        pieges: [["il est grand écrit il ai grand", "il est grand"], ["nous avons écrit nous avons", "nous avons"]],
+      },
+      {
+        verbe: "il faut (verbe falloir)",
+        temps: "Présent (impersonnel)",
+        quand: "Pour donner une consigne du règlement intérieur.",
+        exemplesQuand: ["Il faut arriver à l'heure.", "Il faut respecter le maître."],
+        comment: "falloir ne s'emploie qu'à la 3e personne du singulier : il faut.",
+        tableau: ["il faut + infinitif", "il ne faut pas + infinitif"],
+        pourquoi: "C'est la forme la plus simple pour exprimer l'obligation dans un règlement.",
+        pieges: [["je faut", "il faut"], ["il faux", "il faut"]],
+      },
+    ],
+    grammaire: [
+      { notion: "Les prépositions de lieu", regle: "dans, devant, derrière, à côté de, au milieu de, au bord de situent un lieu.", exemple: "Le point d'eau est derrière le bâtiment.", contre: "Ne pas confondre devant (espace) et avant (temps)." },
+      { notion: "La consigne", regle: "La consigne s'exprime avec il faut + infinitif ou l'impératif.", exemple: "Il faut respecter le maître. Soyez propres.", contre: "À l'impératif, pas de pronom sujet : « Sois propre », pas « tu sois propre »." },
+      { notion: "Le genre et le nombre des noms de l'école", regle: "le bâtiment / les bâtiments ; la cour / les cours ; la latrine / les latrines.", exemple: "une salle de classe, des salles de classe.", contre: "latrine s'emploie surtout au pluriel : les latrines." },
+    ],
+    orthographe: [
+      { notion: "La majuscule aux noms propres de lieux", regle: "Les noms propres d'écoles prennent une majuscule : l'école Primaire d'Application.", exemples: ["l'école d'Ambohijatovo", "le collège Saint-Michel"], pieges: [["ecole sans majuscule au nom propre", "École / nom propre avec majuscule"]] },
+      { notion: "Le pluriel des noms en -eau", regle: "les noms en -eau prennent -aux au pluriel.", exemples: ["le bâtiment / les bâtiments", "le tableau / les tableaux"], pieges: [["des bâtimeants", "des bâtiments"]] },
+    ],
+    vocabulaire: [
+      { champ: "Les infrastructures", mots: "le bâtiment scolaire — la salle de classe — la cour — le point d'eau — les latrines — le bureau du directeur — le terrain de sport" },
+      { champ: "Les personnes", mots: "le directeur — la directrice — le maître — la maîtresse — l'élève — le surveillant" },
+      { champ: "Les prépositions de lieu", mots: "dans — devant — derrière — à côté de — au milieu de — au bord de" },
+      { champ: "Le règlement", mots: "il faut — il ne faut pas — respecter — arriver à l'heure — être propre — la consigne" },
+    ],
+  },
+};
+
+module.exports = { theme11: TH11, annexe11: TH11.annexe };
