@@ -3,44 +3,245 @@
   "name": "J-Learn — Pack d'illustrations",
   "description": "Illustrations pédagogiques pour J-Learn (manuels scolaires Madagascar).",
   "images": [
-    { "id": "peau_coupe",          "url": "/peau_coupe.png",          "type": "image/png" },
-    { "id": "os_coupe",            "url": "/os_coupe.png",            "type": "image/png" },
-    { "id": "squelette_humain",    "url": "/squelette_humain.png",    "type": "image/png" },
-    { "id": "bras_muscles",        "url": "/bras_muscles.png",        "type": "image/png" },
-    { "id": "dents",               "url": "/dents.png",               "type": "image/png" },
-    { "id": "cycle_eau",           "url": "/cycle_eau.png",           "type": "image/png" },
-    { "id": "plante_organes",      "url": "/plante_organes.png",      "type": "image/png" },
-    { "id": "fleur_coupe",         "url": "/fleur_coupe.png",         "type": "image/png" },
-    { "id": "criquet_morphologie", "url": "/criquet_morphologie.png", "type": "image/png" },
-    { "id": "rat_champ",           "url": "/rat_champ.png",           "type": "image/png" },
-    { "id": "paludisme_cycle",     "url": "/paludisme_cycle.png",     "type": "image/png" },
-    { "id": "falaise_strates",     "url": "/falaise_strates.png",     "type": "image/png" },
-    { "id": "pollinisation_cycle", "url": "/pollinisation_cycle.png", "type": "image/png" },
-    { "id": "svt9e_corps_parties",    "url": "/svt9e_corps_parties.png",    "type": "image/png" },
-    { "id": "svt9e_organes",          "url": "/svt9e_organes.png",          "type": "image/png" },
-    { "id": "svt9e_membre_superieur", "url": "/svt9e_membre_superieur.png", "type": "image/png" },
-    { "id": "svt9e_hygiene_mains",    "url": "/svt9e_hygiene_mains.png",    "type": "image/png" },
-    { "id": "svt9e_peau_coupe",       "url": "/svt9e_peau_coupe.png",       "type": "image/png" },
-    { "id": "svt9e_gale",             "url": "/svt9e_gale.png",             "type": "image/png" },
-    { "id": "svt9e_dents",            "url": "/svt9e_dents.png",            "type": "image/png" },
-    { "id": "svt9e_brossage_dents",   "url": "/svt9e_brossage_dents.png",   "type": "image/png" },
-    { "id": "svt9e_oeil_parties",     "url": "/svt9e_oeil_parties.png",     "type": "image/png" },
-    { "id": "svt9e_oeil_fonctionnement", "url": "/svt9e_oeil_fonctionnement.png", "type": "image/png" },
-    { "id": "svt9e_oeil_hygiene",     "url": "/svt9e_oeil_hygiene.png",     "type": "image/png" },
-    { "id": "svt9e_oreille_parties",  "url": "/svt9e_oreille_parties.png",  "type": "image/png" },
-    { "id": "svt9e_langue",           "url": "/svt9e_langue.png",           "type": "image/png" },
-    { "id": "svt9e_membre_inferieur",       "url": "/svt9e_membre_inferieur.png",       "type": "image/png" },
-    { "id": "svt9e_mouvements_bras",        "url": "/svt9e_mouvements_bras.png",        "type": "image/png" },
-    { "id": "svt9e_appareil_respiratoire",  "url": "/svt9e_appareil_respiratoire.png",  "type": "image/png" },
-    { "id": "svt9e_pieds_propres",          "url": "/svt9e_pieds_propres.png",          "type": "image/png" },
-    { "id": "svt9e_appareil_digestif",     "url": "/svt9e_appareil_digestif.png",     "type": "image/png" },
-    { "id": "svt9e_vers_intestinaux",      "url": "/svt9e_vers_intestinaux.png",      "type": "image/png" },
-    { "id": "svt9e_varicelle",             "url": "/svt9e_varicelle.png",             "type": "image/png" },
-    { "id": "svt9e_vaccination",           "url": "/svt9e_vaccination.png",           "type": "image/png" },
-    { "id": "svt9e_habitat",               "url": "/svt9e_habitat.png",               "type": "image/png" },
-    { "id": "svt9e_poule",                 "url": "/svt9e_poule.png",                 "type": "image/png" },
-    { "id": "svt9e_zebu",                  "url": "/svt9e_zebu.png",                  "type": "image/png" },
-    { "id": "svt9e_arbre",                 "url": "/svt9e_arbre.png",                 "type": "image/png" },
-    { "id": "svt9e_eau_potable",           "url": "/svt9e_eau_potable.png",           "type": "image/png" }
+    {
+      "id": "peau_coupe",
+      "url": "/peau_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "os_coupe",
+      "url": "/os_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "squelette_humain",
+      "url": "/squelette_humain.png",
+      "type": "image/png"
+    },
+    {
+      "id": "bras_muscles",
+      "url": "/bras_muscles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "dents",
+      "url": "/dents.png",
+      "type": "image/png"
+    },
+    {
+      "id": "cycle_eau",
+      "url": "/cycle_eau.png",
+      "type": "image/png"
+    },
+    {
+      "id": "plante_organes",
+      "url": "/plante_organes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "fleur_coupe",
+      "url": "/fleur_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "criquet_morphologie",
+      "url": "/criquet_morphologie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "rat_champ",
+      "url": "/rat_champ.png",
+      "type": "image/png"
+    },
+    {
+      "id": "paludisme_cycle",
+      "url": "/paludisme_cycle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "falaise_strates",
+      "url": "/falaise_strates.png",
+      "type": "image/png"
+    },
+    {
+      "id": "pollinisation_cycle",
+      "url": "/pollinisation_cycle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_corps_parties",
+      "url": "/svt9e_corps_parties.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_organes",
+      "url": "/svt9e_organes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_membre_superieur",
+      "url": "/svt9e_membre_superieur.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_hygiene_mains",
+      "url": "/svt9e_hygiene_mains.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_peau_coupe",
+      "url": "/svt9e_peau_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_gale",
+      "url": "/svt9e_gale.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_dents",
+      "url": "/svt9e_dents.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_brossage_dents",
+      "url": "/svt9e_brossage_dents.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_oeil_parties",
+      "url": "/svt9e_oeil_parties.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_oeil_fonctionnement",
+      "url": "/svt9e_oeil_fonctionnement.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_oeil_hygiene",
+      "url": "/svt9e_oeil_hygiene.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_oreille_parties",
+      "url": "/svt9e_oreille_parties.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_langue",
+      "url": "/svt9e_langue.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_membre_inferieur",
+      "url": "/svt9e_membre_inferieur.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_mouvements_bras",
+      "url": "/svt9e_mouvements_bras.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_appareil_respiratoire",
+      "url": "/svt9e_appareil_respiratoire.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_pieds_propres",
+      "url": "/svt9e_pieds_propres.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_appareil_digestif",
+      "url": "/svt9e_appareil_digestif.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_vers_intestinaux",
+      "url": "/svt9e_vers_intestinaux.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_varicelle",
+      "url": "/svt9e_varicelle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_vaccination",
+      "url": "/svt9e_vaccination.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_habitat",
+      "url": "/svt9e_habitat.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_poule",
+      "url": "/svt9e_poule.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_zebu",
+      "url": "/svt9e_zebu.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_arbre",
+      "url": "/svt9e_arbre.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt9e_eau_potable",
+      "url": "/svt9e_eau_potable.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt8e_corps_parties",
+      "url": "/svt8e_corps_parties.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt8e_articulations",
+      "url": "/svt8e_articulations.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt8e_muscles",
+      "url": "/svt8e_muscles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt8e_squelette",
+      "url": "/svt8e_squelette.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt8e_os_coupe",
+      "url": "/svt8e_os_coupe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt8e_oeil",
+      "url": "/svt8e_oeil.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt8e_oreille",
+      "url": "/svt8e_oreille.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt8e_langue",
+      "url": "/svt8e_langue.png",
+      "type": "image/png"
+    },
+    {
+      "id": "svt8e_nez",
+      "url": "/svt8e_nez.png",
+      "type": "image/png"
+    }
   ]
 }
