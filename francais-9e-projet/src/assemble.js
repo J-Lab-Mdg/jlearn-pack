@@ -22,10 +22,11 @@ const EXTRA = require("./seances-lecture");
 const EX2 = require("./seances-exercices");
 
 const ASSETS = path.join(__dirname, "..", "assets");
-const OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2_THEMES1-10_50seances.docx");
-const TOTAL = 186;
+let MODE = (process.argv[2] || "ALL").toUpperCase();
+let OUT = path.join(__dirname, "..", "output", "Manuel_Francais_9e_V2.docx");
+let TOTAL = 186;
 const { COLORS } = B;
-const THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }, { t: theme4, a: annexe4 }, { t: theme5, a: annexe5 }, { t: theme6, a: annexe6 }, { t: theme7, a: annexe7 }, { t: theme8, a: annexe8 }, { t: theme9, a: annexe9 }, { t: theme10, a: annexe10 }];
+let THEMES = [{ t: theme1, a: annexe1 }, { t: theme2, a: annexe2 }, { t: theme3, a: annexe3 }, { t: theme4, a: annexe4 }, { t: theme5, a: annexe5 }, { t: theme6, a: annexe6 }, { t: theme7, a: annexe7 }, { t: theme8, a: annexe8 }, { t: theme9, a: annexe9 }, { t: theme10, a: annexe10 }];
 
 const t = (segs, size) => B.p(segs, { base: { size: size || 22 } });
 
@@ -44,7 +45,11 @@ function avantPropos() {
   const o = [];
   o.push(B.pageBreakPara());
   o.push(B.bookmarkPara("avantpropos", [{ t: "AVANT-PROPOS", b: true, color: COLORS.rouge }], { base: { size: 28 } }));
-  o.push(t(["Ce manuel est construit à partir de ", { t: "deux programmes officiels utilisés conjointement", b: true }, " : la Répartition Annuelle du Programme d'Études (RAPE) de la classe de T3, année scolaire 2025-2026, et le programme d'études antérieur. Les thèmes issus d'un seul des deux programmes sont signalés dans le sommaire et en tête de thème."]));
+  o.push(t(MODE === "PE"
+    ? ["Ce manuel suit le ", { t: "Programme d'Études (PE) de la classe de T3", b: true }, " (RAPE 2025-2026) : les six thématiques officielles — les aliments, la famille élargie, le temps, l'environnement scolaire, la ferme, le marché — traitées selon les six composantes (compréhension orale et écrite, production orale et écrite, fonctionnement de la langue, lecture-fluidité)."]
+    : MODE === "PS"
+    ? ["Ce manuel suit le ", { t: "Programme Scolaire (PS) de la classe de 9ème", b: true }, " (arrêté n° 2532/98, Programmes scolaires 2015-2016) : la maison, l'école, le village, les travaux des champs, les maladies, les métiers, le temps et les saisons, le voyage."]
+    : ["Ce manuel est construit à partir de ", { t: "deux programmes officiels utilisés conjointement", b: true }, " : le Programme d'Études (RAPE T3 2025-2026) et le Programme Scolaire antérieur."]));
   o.push(t(["Chaque séance dure 30 minutes, à raison de 12 séances par semaine. Elle comprend une fiche de préparation, la leçon, des exercices notés sur 20 points et leur corrigé détaillé."]));
   o.push(t(["En fin de thème, des annexes détaillées reprennent la conjugaison (quand l'utiliser, comment la former, pourquoi), la grammaire, l'orthographe et le vocabulaire."]));
   return o;
@@ -96,10 +101,14 @@ function seance(s, nomTheme) {
 }
 
 function main() {
+  if (MODE === "PE") THEMES = THEMES.filter((x) => [1, 2, 3, 6, 8].includes(x.t.numero));
+  if (MODE === "PS") THEMES = THEMES.filter((x) => [4, 5, 7, 9, 10].includes(x.t.numero));
+  OUT = path.join(__dirname, "..", "output", MODE === "PE" ? "Manuel_Francais_9e_V2_PE.docx" : MODE === "PS" ? "Manuel_Francais_9e_V2_PS.docx" : "Manuel_Francais_9e_V2_COMPLET.docx");
   THEMES.forEach(({ t: th }) => { if (EXTRA[th.numero]) th.seances.push(...EXTRA[th.numero]);
     if (EX2[th.numero]) th.seances.push(EX2[th.numero]); });
   let SE = 0;
   THEMES.forEach(({ t: th }) => th.seances.forEach((s) => { s.n = ++SE; }));
+  TOTAL = MODE === "PS" ? 186 : SE;
   const children = [];
   children.push(...couverture());
   children.push(...avantPropos());
