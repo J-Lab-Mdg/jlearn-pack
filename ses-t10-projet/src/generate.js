@@ -1,6 +1,6 @@
 // ============================================================
 // generate.js — génération du fichier .docx (Manuel SES T10)
-// Bloc 1 : Unité I — Orientation scolaire et professionnelle
+// Manuel complet : 7 unités, 45 séances (76 heures du Programme d'Études)
 // ============================================================
 const fs = require("fs");
 const path = require("path");
@@ -10,7 +10,7 @@ const { assemble } = require("./assemble");
 
 const OUT_DIR = path.join(__dirname, "..", "output");
 const OUT_FILE = process.env.OUT_FILE
-  || path.join(OUT_DIR, "Manuel_SES_T10_V1_UNITE1.docx");
+  || path.join(OUT_DIR, "Manuel_SES_T10_JLearn.docx");
 
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });

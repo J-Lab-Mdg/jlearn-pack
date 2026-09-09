@@ -1,8 +1,8 @@
 # Plan du manuel SES T10 — Programme d'Études (PE T10)
 
-**Livrable final prévu :** `Manuel_SES_T10_JLearn.docx`
+**Livrable :** `ses-t10-projet/output/Manuel_SES_T10_JLearn.docx` — **manuel complet, 45 séances, généré et vérifié**
 **Généré depuis :** `ses-t10-projet/` (Node.js + `docx`, Traitement C du skill v18)
-**Livraison intermédiaire :** `ses-t10-projet/output/Manuel_SES_T10_V1_UNITE1.docx` (Unité I seule, à valider)
+**Étapes :** Bloc 1 (Unité I) validé → puis génération des unités II à VII dans la foulée
 
 ## Source
 
@@ -21,9 +21,9 @@
 | Illustrations | **Mixte** : figures géométriques générées en script (Pillow) + scènes générées en style « manuel scolaire » |
 | Structure | 7 unités = 7 thématiques · **1 révision + 1 sujet d'examen par unité** |
 | Découpage | 1 séance de cours = **2 h**, 1 révision = **1 h**, 1 sujet d'examen = **1 h** → respect exact des 76 h du PE |
-| Durée affichée | Oui : sur les 3 grandes étapes I/II/III et dans le champ « Durée » de la fiche |
+| Durée affichée | **Non — durée vierge** : champ « Durée » de la fiche laissé à l'enseignant (décision du Bloc 1). Le découpage interne reste 2 h (cours) / 1 h (révision) / 1 h (examen) pour aboutir à 45 séances |
 | Corrigé | Rose bordeaux `#C2185B` (défaut du skill) |
-| Rythme | **Bloc 1 = Unité I seule**, validation, puis blocs suivants |
+| Rythme | Bloc 1 = Unité I seule pour validation, puis unités II à VII enchaînées |
 | Interdits | Aucune mention du Ministère, aucun logo, aucune date calendaire, jamais « Oral » dans la colonne Support |
 
 ## Répartition horaire (contrôle : 76 h)
@@ -43,7 +43,7 @@ Vérification : 31 × 2 h = 62 h + 7 h + 7 h = **76 h** ✓
 
 ## Découpage séance par séance
 
-### Unité I — Orientation scolaire et professionnelle (8 h) — **BLOC 1, livré**
+### Unité I — Orientation scolaire et professionnelle (8 h) — livrée
 | N° | Titre | RAS | Durée |
 |---|---|---|---|
 | 1 | Le diplôme et l'emploi | Déterminer l'importance du diplôme par rapport à l'emploi | 2 h |
@@ -129,23 +129,33 @@ Vérification : 31 × 2 h = 62 h + 7 h + 7 h = **76 h** ✓
 
 Glossaire (18 termes pour l'Unité I, enrichi à chaque bloc) · Auto-évaluation (Acquis / En cours / À revoir) · Index interactif (mots-clés → séances) · Bibliographie et webographie · Table des illustrations
 
-## Contrôles automatiques — Bloc 1 (tous OK)
+## Contrôles automatiques — manuel complet (tous OK)
 
 | Contrôle | Attendu | Obtenu |
 |---|---|---|
-| « FICHE DE PRÉPARATION » | 3 (séances de cours) | 3 |
-| « SÉANCE n / 45 » | 5 | 5 (1→5) |
+| « FICHE DE PRÉPARATION » | 31 (séances de cours) | 31 |
+| « SÉANCE n / 45 » | 45 | 45 (1→45, aucune manquante) |
+| Champ « Durée » vierge | 45 | 45 |
 | `<w:sectPr>` | 1 | 1 |
 | Namespaces `ns0:` | 0 | 0 |
-| Police Times New Roman | > 0 | 4 777 occurrences |
+| Police Times New Roman | > 0 | 44 485 occurrences |
 | Mention « Ministère » | 0 | 0 |
 | « BEPC » | 0 | 0 |
 | Support « Oral » | 0 | 0 |
 | Dates calendaires | 0 | 0 |
-| Images embarquées / liens internes / signets | — | 3 / 35 / 14 |
+| Images embarquées | 13 | 13 |
+| Liens internes / signets | — | 276 / 60 |
 
-## Points encore à trancher
+## Contenu livré
 
-- Validation du gabarit sur l'Unité I (structure de la fiche, ton des leçons, volume d'exercices).
-- Confirmation des durées affichées (2 h / 1 h / 1 h) ou passage à un champ Durée vierge.
-- Confirmation des titres des séances 6 à 45 avant génération des blocs suivants.
+- 31 séances de cours : fiche de préparation + leçon + exercices notés (barème) + corrigé détaillé
+- 7 séances de révision : tableau récapitulatif + 5 questions corrigées
+- 7 sujets d'examen T10 : 5 exercices chacun, barème affiché, corrigé détaillé
+- 13 illustrations : 4 générées par IA en style « manuel scolaire », 9 schémas géométriques en script (Pillow)
+- Annexes : glossaire (111 termes), auto-évaluation, index cliquable, bibliographie et webographie, table des illustrations
+
+## Points fermés
+
+- Gabarit validé sur l'Unité I ✓
+- Durée vierge appliquée partout ✓
+- Titres des séances 6 à 45 validés tels que proposés ✓

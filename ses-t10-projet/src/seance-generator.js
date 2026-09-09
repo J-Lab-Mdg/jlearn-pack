@@ -209,7 +209,7 @@ function generateSeanceDocContent(topic, seanceNum, totalSeances) {
     date: "____________",
     classe: "T10",
     seance: seanceNum + " / " + totalSeances,
-    duree: topic.duree || "2 h", // durée lue dans le Programme d'Études (76 h réparties)
+    duree: "____________", // durée laissée à l'enseignant (demande utilisateur, Bloc 1 validé)
     ras: topic.ras || "",
     valeurs: topic.valeurs || "—",
   };

@@ -14,9 +14,15 @@ const B = require("./builders");
 const EB = require("./exercise-bank");
 const { generateSeanceDocContent } = require("./seance-generator");
 const U1 = require("./data-unite1");
+const U2 = require("./data-unite2");
+const U3 = require("./data-unite3");
+const U4 = require("./data-unite4");
+const U5 = require("./data-unite5");
+const U6 = require("./data-unite6");
+const U7 = require("./data-unite7");
 const { revisions, examens } = require("./data-evaluations");
 
-const UNITS = [U1];
+const UNITS = [U1, U2, U3, U4, U5, U6, U7];
 const TOTAL = 45;
 const IMG_DIR = path.join(__dirname, "..", "output", "images");
 
@@ -40,7 +46,7 @@ function coverPage() {
     B.p("Collection J-Learn", { bold: true, size: 28, align: AlignmentType.CENTER, color: B.BLUE, spacingAfter: 400 }),
     B.p("MANUEL DE SCIENCES ÉCONOMIQUES ET SOCIALES", { bold: true, size: 34, align: AlignmentType.CENTER, color: B.RED, spacingAfter: 120 }),
     B.p("CLASSE DE T10", { bold: true, size: 30, align: AlignmentType.CENTER, spacingAfter: 200 }),
-    B.p("Programme d'Études — 7 unités thématiques", { size: 24, align: AlignmentType.CENTER, spacingAfter: 300 }),
+    B.p("Programme d'Études — 7 unités thématiques · 45 séances", { size: 24, align: AlignmentType.CENTER, spacingAfter: 300 }),
     B.p("Fiches de préparation · Leçons · Exercices corrigés · Sujets d'examen corrigés", { size: 20, align: AlignmentType.CENTER, spacingAfter: 600 }),
     B.p("Madagascar", { size: 22, align: AlignmentType.CENTER, spacingAfter: 60 }),
     new Paragraph({ children: [new PageBreak()] }),
@@ -55,7 +61,7 @@ function avantPropos() {
   out.push(B.sectionHeading("AVANT-PROPOS", "avant", { size: 26 }));
   out.push(B.p("Ce manuel de Sciences Économiques et Sociales pour la classe de T10 a été élaboré à partir du Programme d'Études officiel de Madagascar, section « Sciences Économiques et Sociales ». Il couvre les sept thématiques du programme : l'orientation scolaire et professionnelle, l'introduction à l'étude des sciences économiques et sociales, l'entreprise et la production, le revenu et la consommation, le marché et les prix, l'individu et la société, enfin les sciences politiques et le droit.", { size: 21, spacingAfter: 120 }));
   out.push(B.p("Chaque séance est composée d'une fiche de préparation, d'une leçon, d'exercices notés et de leur corrigé. Le manuel suit la méthode J-Learn organisée en trois grandes étapes : la Révision, la Nouvelle Leçon (six sous-étapes) et l'Évaluation.", { size: 21, spacingAfter: 120 }));
-  out.push(B.p("Le Programme d'Études attribue trois heures par semaine aux Sciences Économiques et Sociales en classe de T10, soit soixante-seize heures pour l'année. Le découpage retenu respecte cette répartition : les séances de cours durent deux heures, chaque unité se termine par une séance de révision d'une heure et un sujet d'examen d'une heure, corrigé et noté selon un barème.", { size: 21, spacingAfter: 120 }));
+  out.push(B.p("Le Programme d'Études attribue trois heures par semaine aux Sciences Économiques et Sociales en classe de T10, soit soixante-seize heures pour l'année. Le découpage en quarante-cinq séances respecte cette répartition : trente et une séances de cours, une séance de révision et un sujet d'examen corrigé par unité. La durée de chaque séance est laissée à l'enseignant, qui la répartit selon le rythme de sa classe, le niveau des apprenants et le matériel disponible.", { size: 21, spacingAfter: 120 }));
   out.push(B.p("Conformément aux orientations pédagogiques du programme, les séances privilégient une approche centrée sur l'apprenant : celui-ci observe, questionne, travaille en groupe et construit lui-même ses savoirs. Les démarches inductive, déductive, comparative, documentaire et argumentative sont mobilisées selon les objets d'étude, et l'enseignant joue le rôle de guide, de médiateur et d'accompagnateur.", { size: 21, spacingAfter: 120 }));
   out.push(B.p("Les séances sont regroupées en sept unités, une par thématique du programme. Les exemples, situations et supports proposés sont ancrés dans la réalité malgache : marché local, entreprise artisanale, coopérative, exploitation agricole, administration et vie associative.", { size: 21, spacingAfter: 120 }));
   out.push(B.p("Pour bien utiliser ce manuel, se reporter au « Mode d'emploi » qui suit.", { size: 21, spacingAfter: 120 }));
@@ -73,7 +79,7 @@ function modeEmploi() {
   out.push(B.p("I. Révision — questions simples sur la séance précédente, avec la réponse attendue (R.A.).", { size: 21, spacingAfter: 60 }));
   out.push(B.p("II. Nouvelle leçon — six sous-étapes : 1. Mise en situation, 2. Présentation, 3. Observation, 4. Analyse, 5. Synthèse (énoncée par l'enseignant), 6. Application.", { size: 21, spacingAfter: 60 }));
   out.push(B.p("III. Évaluation — exercices écrits, avec corrigé.", { size: 21, spacingAfter: 100 }));
-  out.push(B.p("La durée est indiquée sur les trois grandes étapes (I, II, III) ; les six sous-étapes de la Nouvelle Leçon n'affichent pas de durée individuelle, l'enseignant répartit le temps selon sa classe.", { size: 21, spacingAfter: 120 }));
+  out.push(B.p("La durée de chaque séance n'est pas imprimée : elle est laissée à l'enseignant, qui répartit le temps entre les trois grandes étapes selon le rythme de sa classe et la difficulté de la leçon.", { size: 21, spacingAfter: 120 }));
   out.push(B.p("Après la fiche de préparation viennent la page LEÇON (le contenu à retenir) puis la section EXERCICES (exercices notés avec barème, suivis du corrigé détaillé).", { size: 21, spacingAfter: 120 }));
   out.push(B.p("Code couleur utilisé dans ce manuel :", { bold: true, size: 22, color: B.GREEN, spacingAfter: 80 }));
   out.push(B.p("Titre de leçon : rouge.", { size: 21, spacingAfter: 40, color: B.RED }));
@@ -109,13 +115,6 @@ function tableDesMatieres() {
     out.push(B.tocLink("Séance " + n + " — " + examens[u.num].titre, "seance" + n, { size: 19, indent: 360 }));
   });
 
-  out.push(B.p("Unités à venir (découpage complet du manuel) :", { bold: true, size: 21, spacingBefore: 160, spacingAfter: 80 }));
-  let p = n;
-  PLAN.slice(UNITS.length).forEach(([num, titre, nbCours]) => {
-    const nb = nbCours + 2;
-    out.push(B.p("UNITÉ " + num + " — " + titre + " (séances " + (p + 1) + " à " + (p + nb) + ")", { size: 19, italics: true, spacingAfter: 30 }));
-    p += nb;
-  });
 
   out.push(B.tocLink("Annexes", "annexes", { size: 22, bold: true }));
   out.push(B.tocLink("Glossaire", "glossaire", { size: 19, indent: 360 }));
@@ -136,12 +135,11 @@ function tableauDeBord(u, startNum) {
   out.push(B.p("Résultats d'apprentissage spécifiques (Programme d'Études T10) :", { bold: true, size: 20, spacingAfter: 40 }));
   u.ras.split(" · ").forEach((r) => out.push(B.p("• " + r, { size: 20, spacingAfter: 30, indent: { left: 360 } })));
   out.push(B.p("Valeurs à véhiculer : " + u.valeurs, { size: 20, spacingAfter: 60 }));
-  out.push(B.p("Volume horaire : " + u.duree + " (3 heures par semaine sur l'année pour la discipline).", { size: 20, spacingAfter: 100 }));
+  out.push(B.p("Volume horaire de l'unité : " + u.duree + " (la discipline dispose de 3 heures par semaine, soit 76 heures pour l'année). Durée de chaque séance laissée à l'enseignant.", { size: 20, spacingAfter: 100 }));
   const rows = [
     new TableRow({ children: [
       B.cell([B.p("N°", { bold: true, size: 19 })], { shading: "D9E2F3" }),
       B.cell([B.p("Séance", { bold: true, size: 19 })], { shading: "D9E2F3" }),
-      B.cell([B.p("Durée", { bold: true, size: 19 })], { shading: "D9E2F3" }),
     ]}),
   ];
   let n = startNum;
@@ -149,22 +147,19 @@ function tableauDeBord(u, startNum) {
     rows.push(new TableRow({ children: [
       B.cell([B.p("" + n, { size: 19 })]),
       B.cell([B.p(t.titre, { size: 19 })]),
-      B.cell([B.p(t.duree || "2 h", { size: 19 })]),
     ]}));
     n += 1;
   });
   rows.push(new TableRow({ children: [
     B.cell([B.p("" + n, { size: 19, bold: true })]),
     B.cell([B.p(revisions[u.num].titre, { size: 19, bold: true })]),
-    B.cell([B.p("1 h", { size: 19 })]),
   ]}));
   n += 1;
   rows.push(new TableRow({ children: [
     B.cell([B.p("" + n, { size: 19, bold: true })]),
     B.cell([B.p(examens[u.num].titre, { size: 19, bold: true })]),
-    B.cell([B.p("1 h", { size: 19 })]),
   ]}));
-  out.push(B.gridTable(rows, [8, 77, 15]));
+  out.push(B.gridTable(rows, [8, 92]));
   out.push(new Paragraph({ children: [new PageBreak()] }));
   return out;
 }
@@ -178,7 +173,7 @@ function revisionSeance(u, num) {
   out.push(new Paragraph({ children: [new PageBreak()] }));
   out.push(B.sectionHeading("SÉANCE " + num + " / " + TOTAL, "seance" + num, { size: 22, color: B.BLUE }));
   out.push(B.p(rev.titre, { bold: true, size: 26, align: AlignmentType.CENTER, color: B.RED, spacingAfter: 120 }));
-  out.push(B.p("Durée : 1 h — Valeurs à véhiculer : Autonomie, Culture de l'excellence", { size: 20, align: AlignmentType.CENTER, spacingAfter: 120 }));
+  out.push(B.p("Durée : ____________ — Valeurs à véhiculer : " + u.valeurs, { size: 20, align: AlignmentType.CENTER, spacingAfter: 120 }));
   out.push(B.p("Tableau récapitulatif des notions", { bold: true, size: 22, color: B.GREEN, spacingAfter: 60 }));
   const rows = [
     new TableRow({ children: [
@@ -208,7 +203,7 @@ function examenSeance(u, num) {
   out.push(new Paragraph({ children: [new PageBreak()] }));
   out.push(B.sectionHeading("SÉANCE " + num + " / " + TOTAL, "seance" + num, { size: 22, color: B.BLUE }));
   out.push(B.p(ex.titre, { bold: true, size: 26, align: AlignmentType.CENTER, color: B.RED, spacingAfter: 80 }));
-  out.push(B.p("Durée : 1 h   ·   Barème total : " + totalPoints(ex.exercices) + " points", { size: 20, align: AlignmentType.CENTER, spacingAfter: 120 }));
+  out.push(B.p("Durée : ____________   ·   Barème total : " + totalPoints(ex.exercices) + " points", { size: 20, align: AlignmentType.CENTER, spacingAfter: 120 }));
   let total = 0;
   ex.exercices.forEach((exo, i) => {
     const d = EB.buildExo(exo);
@@ -237,24 +232,117 @@ function totalPoints(exos) {
 // Annexes
 // ------------------------------------------------------------
 const GLOSSAIRE = [
+  ["Acteur social", "Individu qui a intériorisé les normes et les valeurs et qui peut agir dans la société."],
+  ["Administration publique", "Organisation qui rend un service public au nom de la collectivité, financée par l'impôt."],
+  ["Agents de socialisation", "Groupes et institutions qui transmettent les normes et les valeurs : famille, école, pairs, institutions religieuses, médias."],
+  ["Appartenance (besoin d')", "Besoin d'être aimé, d'avoir des amis et de faire partie d'un groupe."],
+  ["Association", "Groupe de personnes réunies autour d'un projet non lucratif."],
+  ["Atomicité", "Situation d'un marché où les acheteurs et les vendeurs sont si nombreux qu'aucun ne peut imposer son prix."],
   ["Autonomie", "Capacité à travailler et à prendre des décisions par soi-même, sans être constamment surveillé."],
+  ["Barrière à l'entrée", "Obstacle — coût, licence, éloignement — qui empêche un nouveau concurrent d'arriver sur un marché."],
+  ["Besoin", "Exigence qu'il faut satisfaire pour vivre et vivre correctement."],
+  ["Bien", "Objet matériel que l'on peut toucher, stocker et transporter."],
+  ["But lucratif", "Recherche d'un bénéfice financier par la vente de la production."],
   ["Capacités", "Ce qu'un élève réussit à faire : aptitudes scolaires et compétences développées par le travail."],
+  ["Capital", "Moyens durables de production : machines, outils, bâtiments, véhicules, et l'argent pour les acquérir."],
+  ["Catégorie socio-professionnelle", "Groupe de personnes qui occupent une position proche dans l'activité économique."],
+  ["Charges", "Dépenses de l'entreprise : achats, salaires, loyer, transport, intérêts d'emprunt."],
+  ["Circuit économique", "Ensemble des flux entre ménages, entreprises et administrations : la dépense de l'un est le revenu de l'autre."],
+  ["Combinaison productive", "Manière dont une entreprise associe ses facteurs de production pour produire."],
+  ["Complémentarité", "Fait que les facteurs de production doivent être réunis pour produire : aucun ne produit seul."],
   ["Compétences", "Savoir-faire mobilisés dans une situation professionnelle : rédiger, calculer, utiliser un outil, travailler en équipe."],
-  ["Débouchés", "Études supérieures et métiers auxquels une série ou une formation donne accès."],
+  ["Concurrence", "Rivalité entre offreurs pour obtenir la clientèle ; elle porte sur le prix, la qualité ou le service."],
+  ["Consommation", "Utilisation de biens et de services pour satisfaire un besoin."],
+  ["Consommation collective", "Consommation dont plusieurs personnes profitent en même temps, souvent financée par l'impôt."],
+  ["Consommation ostentatoire", "Consommation faite d'abord pour montrer sa réussite sociale."],
+  ["Coopérative", "Entreprise dont les membres sont à la fois producteurs et décideurs, et à qui reviennent les bénéfices."],
+  ["Culture", "Ensemble des manières de vivre, de penser et de créer d'un groupe : langue, coutumes, cuisine, croyances, arts."],
+  ["Culture de masse", "Productions culturelles diffusées à un très grand nombre de personnes par les médias."],
+  ["Demande", "Quantité d'un bien que les acheteurs sont prêts et capables d'acheter à un prix donné."],
   ["Diplôme", "Document officiel attestant la réussite à un examen et le niveau d'études atteint."],
+  ["Droit", "Ensemble des règles générales, écrites et sanctionnées, qui organisent la vie en société."],
+  ["Duopole", "Marché sur lequel deux offreurs seulement se partagent la clientèle."],
+  ["Débouchés", "Études supérieures et métiers auxquels une série ou une formation donne accès."],
+  ["Déterminant de la consommation", "Facteur qui explique le niveau et la nature de la consommation : économique ou socioculturel."],
+  ["Effet d'imitation", "Tendance à consommer comme le groupe auquel on veut ressembler."],
+  ["Effet de distinction", "Consommation d'objets rares ou coûteux destinée à se démarquer du plus grand nombre."],
+  ["Effet de substitution", "Remplacement d'un bien devenu trop cher par un autre moins coûteux."],
   ["Emploi", "Activité professionnelle occupée par une personne et rémunérée."],
+  ["Entente", "Accord entre offreurs sur les prix, les quantités ou le partage de la clientèle ; interdite par le droit de la concurrence."],
+  ["Entrepreneur", "Personne qui prend l'initiative de créer ou de diriger une entreprise, réunit les moyens de production et assume les risques."],
+  ["Entreprise", "Organisation qui combine travail et capital pour produire des biens ou des services destinés à la vente."],
+  ["Facteurs de production", "Moyens qu'il faut réunir pour produire : le travail, le capital et les ressources naturelles."],
   ["Formation", "Ensemble des études et des apprentissages qui préparent à un métier."],
+  ["Homogénéité", "Caractère de produits identiques ou comparables, interchangeables pour l'acheteur."],
+  ["Libre entrée", "Possibilité pour toute entreprise de s'installer sur un marché ou d'en sortir."],
+  ["Légalité", "Conformité d'une décision aux règles de droit en vigueur."],
+  ["Légitimité", "Reconnaissance, par la population, du droit qu'a le pouvoir de commander."],
+  ["Marché", "Lieu, physique ou non, où se rencontrent l'offre et la demande d'un bien ou d'un service."],
+  ["Microcrédit", "Petit prêt accordé à un entrepreneur qui n'a pas accès au crédit bancaire classique."],
+  ["Mode de vie", "Manière habituelle dont un groupe organise sa vie quotidienne : horaires, repas, loisirs, sociabilités."],
   ["Monde du travail", "Ensemble des entreprises, administrations et activités où s'exercent les emplois, avec leurs exigences."],
+  ["Monopole", "Situation de marché où un seul offreur fait face à de nombreux demandeurs."],
+  ["Mutuelle", "Organisation qui couvre ses membres contre un risque par la mise en commun des cotisations."],
+  ["Média de masse", "Moyen de diffusion qui s'adresse à un public très large : radio, télévision, presse, internet."],
+  ["Ménage", "Ensemble des personnes qui vivent sous le même toit et mettent leurs ressources en commun."],
+  ["Nation", "Communauté humaine qui partage une histoire, une langue, une culture et la conscience d'appartenir au même ensemble."],
+  ["Norme", "Règle de conduite, écrite ou non, que le groupe attend de ses membres."],
+  ["Offre", "Quantité d'un bien que les vendeurs sont prêts et capables de vendre à un prix donné."],
+  ["Oligopole", "Marché dominé par un petit nombre d'offreurs, chacun capable d'influencer le prix."],
+  ["Pacification", "Fonction du droit qui permet de régler les conflits par une procédure plutôt que par la violence."],
+  ["Placement", "Forme d'épargne confiée à un organisme ou investie dans un bien, qui peut rapporter."],
+  ["Pouvoir d'achat", "Quantité de biens et de services qu'un revenu permet d'acheter compte tenu du niveau des prix."],
+  ["Pouvoir politique", "Pouvoir de décider pour l'ensemble d'une société et de faire appliquer les décisions."],
+  ["Pratique culturelle", "Activité par laquelle une personne exprime ou partage la culture de son groupe."],
+  ["Prix", "Somme d'argent à payer pour obtenir une unité d'un bien ou d'un service."],
+  ["Prix d'équilibre", "Prix pour lequel la quantité offerte est égale à la quantité demandée."],
+  ["Productivité", "Rapport entre la quantité produite et les moyens utilisés pour la produire."],
+  ["Profit", "Excédent des recettes sur l'ensemble des charges de l'entreprise."],
+  ["Progrès technique", "Améliorations — machines, méthodes, formation — qui permettent de produire plus ou mieux avec les mêmes moyens."],
   ["Projet d'orientation", "Démarche qui relie les intérêts, les capacités scolaires et le métier visé, en quatre étapes : se connaître, s'informer, décider, s'engager."],
+  ["Puissance publique", "Capacité de l'État de se faire obéir : administration, force publique, justice."],
+  ["Pyramide de Maslow", "Classement des besoins en cinq niveaux : physiologiques, sécurité, appartenance, estime, accomplissement."],
   ["Qualification", "Niveau de formation et de compétences reconnu, qui permet d'occuper un emploi donné."],
-  ["Secteur formel", "Ensemble des activités déclarées et réglementées : entreprises enregistrées, administrations, salariés protégés."],
-  ["Secteur informel", "Ensemble des activités non déclarées : petits commerces de rue, artisanat non enregistré, activités de subsistance."],
-  ["Secteurs porteurs", "Domaines de l'économie qui ont d'importants besoins de main-d'œuvre qualifiée : agriculture, santé, enseignement, bâtiment, numérique, tourisme."],
+  ["Recettes", "Sommes encaissées par l'entreprise grâce à ses ventes."],
+  ["Ressources financières", "Argent dont dispose l'entreprise : épargne, apports, emprunt, trésorerie."],
+  ["Ressources humaines", "Personnes qui travaillent dans l'entreprise, avec leurs compétences et leur expérience."],
+  ["Ressources matérielles", "Moyens physiques de l'entreprise : locaux, équipements, matières premières."],
+  ["Revenu", "Somme d'argent reçue régulièrement en échange d'un travail, d'un bien ou à titre d'aide."],
+  ["Revenu de transfert", "Somme reçue sans contrepartie de production : pension, allocation, bourse."],
+  ["Revenu disponible", "Ce qui reste au ménage après impôts et cotisations, pour consommer et épargner."],
+  ["Revenu mixte", "Revenu d'un travailleur indépendant qui rémunère à la fois son travail et son activité."],
+  ["Revenu primaire", "Revenu reçu en participant à la production : salaire, revenu mixte, revenu du patrimoine."],
+  ["Sanction", "Conséquence prévue par la loi en cas de non-respect d'une règle de droit."],
+  ["Science", "Démarche qui observe, questionne, formule une hypothèse et vérifie avant d'expliquer."],
+  ["Secteur formel", "Ensemble des activités déclarées : entreprises enregistrées, salariés protégés, impôts payés."],
+  ["Secteur informel", "Ensemble des activités non déclarées : revenus immédiats, mais précarité et absence de crédit."],
+  ["Secteurs porteurs", "Domaines de l'économie qui ont d'importants besoins de main-d'œuvre qualifiée."],
+  ["Service", "Activité rendue à quelqu'un, qui se consomme au moment où elle est rendue et ne se stocke pas."],
+  ["Services publics", "Prestations fournies par l'État ou la collectivité : école, santé, sécurité, routes."],
+  ["Socialisation", "Processus par lequel un individu apprend, tout au long de sa vie, les manières d'agir, de penser et de parler de sa société."],
+  ["Socialisation différentielle", "Fait que la socialisation varie selon le groupe social, la région et le genre."],
+  ["Sociologie", "Étude de la vie des groupes humains, des normes, des valeurs et de la socialisation."],
+  ["Société", "Ensemble de personnes qui vivent sur un territoire, partagent des institutions et obéissent à des règles communes."],
+  ["Souveraineté", "Caractère suprême du pouvoir de l'État : intérieure sur le territoire, extérieure face aux autres États."],
+  ["Substituabilité", "Possibilité de remplacer un facteur de production par un autre."],
+  ["Surplus", "Situation où l'offre dépasse la demande : la marchandise reste invendue et le prix baisse."],
+  ["Sécurité juridique", "Fait que les règles de droit sont connues à l'avance, ce qui permet d'agir en connaissance de cause."],
   ["Série L", "Série littéraire du lycée : langues, littérature, philosophie, histoire et géographie."],
   ["Série OSE", "Série de sciences économiques du lycée : sciences économiques et sociales, droit, gestion et comptabilité."],
   ["Série S", "Série scientifique du lycée : mathématiques, sciences physiques, sciences de la vie et de la terre."],
+  ["Territoire", "Espace — sol, eaux, mer territoriale, espace aérien — sur lequel l'État exerce sa puissance."],
+  ["Thésaurisation", "Conservation d'argent chez soi, sans le faire fructifier."],
+  ["Transparence", "Situation d'un marché où les prix et la qualité des produits sont connus de tous."],
+  ["Travail (facteur)", "Activité humaine, physique ou intellectuelle, fournie pour produire."],
   ["Travail indépendant", "Activité exercée à son propre compte : artisan, commerçant, exploitant agricole, entrepreneur."],
   ["Travail salarié", "Activité exercée pour le compte d'un employeur, contre un salaire."],
+  ["Trésorerie", "Argent disponible au jour le jour dans l'entreprise pour payer les charges courantes."],
+  ["Valeur", "Ce qu'un groupe juge important et désirable, et qui sert de repère pour juger les conduites."],
+  ["Économie", "Étude de la manière dont une société produit, répartit et consomme des ressources limitées."],
+  ["Économie sociale", "Ensemble des associations, coopératives et mutuelles qui produisent pour l'utilité de leurs membres."],
+  ["Épargne", "Part du revenu disponible qui n'est pas consommée et qui est mise de côté pour l'avenir."],
+  ["État", "Ensemble des institutions qui exercent le pouvoir politique sur une population et un territoire."],
+  ["État-nation", "État dont le territoire coïncide avec une nation."],
 ];
 
 function glossaireAnnexe() {
