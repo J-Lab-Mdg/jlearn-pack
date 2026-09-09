@@ -20,6 +20,10 @@
     { "id": "svt9e_organes",          "url": "/svt9e_organes.png",          "type": "image/png" },
     { "id": "svt9e_membre_superieur", "url": "/svt9e_membre_superieur.png", "type": "image/png" },
     { "id": "svt9e_hygiene_mains",    "url": "/svt9e_hygiene_mains.png",    "type": "image/png" },
-    { "id": "svt9e_peau_coupe",       "url": "/svt9e_peau_coupe.png",       "type": "image/png" }
+    { "id": "svt9e_peau_coupe",       "url": "/svt9e_peau_coupe.png",       "type": "image/png" },
+    { "id": "svt9e_gale",             "url": "/svt9e_gale.png",             "type": "image/png" },
+    { "id": "svt9e_dents",            "url": "/svt9e_dents.png",            "type": "image/png" },
+    { "id": "svt9e_brossage_dents",   "url": "/svt9e_brossage_dents.png",   "type": "image/png" },
+    { "id": "svt9e_oeil_parties",     "url": "/svt9e_oeil_parties.png",     "type": "image/png" }
   ]
 }
