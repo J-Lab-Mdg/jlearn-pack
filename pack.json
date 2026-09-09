@@ -28,6 +28,10 @@
     { "id": "svt9e_oeil_fonctionnement", "url": "/svt9e_oeil_fonctionnement.png", "type": "image/png" },
     { "id": "svt9e_oeil_hygiene",     "url": "/svt9e_oeil_hygiene.png",     "type": "image/png" },
     { "id": "svt9e_oreille_parties",  "url": "/svt9e_oreille_parties.png",  "type": "image/png" },
-    { "id": "svt9e_langue",           "url": "/svt9e_langue.png",           "type": "image/png" }
+    { "id": "svt9e_langue",           "url": "/svt9e_langue.png",           "type": "image/png" },
+    { "id": "svt9e_membre_inferieur",       "url": "/svt9e_membre_inferieur.png",       "type": "image/png" },
+    { "id": "svt9e_mouvements_bras",        "url": "/svt9e_mouvements_bras.png",        "type": "image/png" },
+    { "id": "svt9e_appareil_respiratoire",  "url": "/svt9e_appareil_respiratoire.png",  "type": "image/png" },
+    { "id": "svt9e_pieds_propres",          "url": "/svt9e_pieds_propres.png",          "type": "image/png" }
   ]
 }
