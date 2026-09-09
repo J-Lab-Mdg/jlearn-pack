@@ -26,6 +26,7 @@ const IMG = {
   ],
   "I:3": [
     fig("gen/digestion-perturbee.jpg", "Figure 4 — Digestion normale et digestion perturbée (illustration)."),
+    fig("gen/sante-digestive.jpg", "Figure 4a — Bien manger et santé digestive (illustration)."),
     fig("digestion-perturbee.png", "Figure 4b — Le devenir des aliments et les conséquences d'une digestion perturbée."),
   ],
 
@@ -73,13 +74,21 @@ const IMG = {
   ],
   "III:4": [
     fig("gen/immunite.jpg", "Figure 14 — L'infection microbienne et l'immunité (illustration)."),
+    fig("gen/infection.jpg", "Figure 14a — Les étapes d'une infection : entrée, multiplication, réaction, défense (illustration)."),
     fig("infection-immunite.png", "Figure 14b — Soi / non-soi et rôle des anticorps : schéma à légender."),
   ],
-  "III:5": [fig("prevention-soins.png", "Figure 15 — Antisepsie, asepsie, antibiotiques, vaccins et sérums.")],
-  "III:6": [fig("mesures-prevention.png", "Figure 16 — Prévention et lutte contre les maladies infectieuses.")],
+  "III:5": [
+    fig("gen/prevention-soins.jpg", "Figure 15 — Antisepsie, asepsie, antibiotiques, vaccins et sérums (illustration)."),
+    fig("prevention-soins.png", "Figure 15b — Antisepsie, asepsie, vaccins, sérums : schéma à légender."),
+  ],
+  "III:6": [
+    fig("gen/mesures-prevention.jpg", "Figure 16 — Prévention et lutte contre les maladies infectieuses (illustration)."),
+    fig("mesures-prevention.png", "Figure 16b — Mesures préventives : schéma à légender."),
+  ],
   "III:7": [
-    fig("maladies-madagascar.png", "Figure 17 — Les principales maladies infectieuses à Madagascar."),
-    fig("scenes/scene-sante-communautaire.jpg", "Figure 17b — Action de santé communautaire dans un village."),
+    fig("gen/maladies-madagascar.jpg", "Figure 17 — Les principales maladies infectieuses à Madagascar (illustration)."),
+    fig("maladies-madagascar.png", "Figure 17b — Les maladies à Madagascar : schéma à légender."),
+    fig("scenes/scene-sante-communautaire.jpg", "Figure 17c — Action de santé communautaire dans un village."),
   ],
 
   // ---- Unité IV : Organisation des êtres vivants ----
@@ -88,15 +97,25 @@ const IMG = {
     fig("ecosysteme.png", "Figure 18a — Écosystème : schéma à légender."),
     fig("scenes/scene-foret-riz-etang.jpg", "Figure 18b — Forêt, rizière et étang : un écosystème malgache."),
   ],
-  "IV:1": [fig("conditions-milieu.png", "Figure 19 — Les conditions physiques d'un milieu.")],
-  "IV:2": [fig("mode-vie.png", "Figure 20 — Les modes de vie et l'adaptation des êtres vivants.")],
-  "IV:3": [fig("interactions.png", "Figure 21 — Les interactions entre les êtres vivants.")],
+  "IV:1": [
+    fig("gen/conditions-milieu.jpg", "Figure 19 — Les conditions physiques d'un milieu (illustration)."),
+    fig("conditions-milieu.png", "Figure 19b — Température, humidité, lumière, sol, altitude : schéma à légender."),
+  ],
+  "IV:2": [
+    fig("gen/mode-vie.jpg", "Figure 20 — Les modes de vie et l'adaptation des êtres vivants (illustration)."),
+    fig("mode-vie.png", "Figure 20b — Adaptation au milieu : schéma à légender."),
+  ],
+  "IV:3": [
+    fig("gen/interactions.jpg", "Figure 21 — Les interactions entre les êtres vivants (illustration)."),
+    fig("interactions.png", "Figure 21b — Prédation, parasitisme, mutualisme : schéma à légender."),
+  ],
   "IV:4": [
     fig("gen/chaine-alimentaire.jpg", "Figure 22 — La chaîne alimentaire (illustration)."),
     fig("chaine-alimentaire.png", "Figure 22b — Producteurs, consommateurs et décomposeurs : schéma à légender."),
   ],
   "IV:5": [
-    fig("extinction.png", "Figure 23 — Modification de l'environnement et menace d'extinction."),
+    fig("gen/extinction.jpg", "Figure 23 — Modification de l'environnement et menace d'extinction (illustration)."),
+    fig("extinction.png", "Figure 23a — Équilibre, déforestation, pollution : schéma à légender."),
     fig("scenes/scene-deforestation.jpg", "Figure 23b — La déforestation dans les Hautes Terres."),
   ],
 
@@ -105,7 +124,10 @@ const IMG = {
     fig("gen/structure-terre.jpg", "Figure 24 — La structure interne de la Terre (illustration)."),
     fig("structure-terre.png", "Figure 24b — Croûte, manteau, noyau : schéma à légender."),
   ],
-  "V:1": [fig("activites-terre.png", "Figure 25 — Les activités internes et externes de la Terre.")],
+  "V:1": [
+    fig("gen/activites-terre.jpg", "Figure 25 — Les activités internes et externes de la Terre (illustration)."),
+    fig("activites-terre.png", "Figure 25b — Activités internes et externes : schéma à légender."),
+  ],
   "V:2": [
     fig("gen/volcan-seisme.jpg", "Figure 26 — Volcanisme et séismes (illustration)."),
     fig("volcan-seisme.png", "Figure 26b — Volcan et séisme : schéma à légender."),
