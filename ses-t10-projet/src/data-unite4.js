@@ -54,6 +54,7 @@ const U = {
       ],
       synthese: "Donc, un ménage vit des revenus qu'il reçoit. On distingue les revenus primaires, gagnés en participant à la production — salaire, revenu mixte de l'indépendant, revenu du patrimoine — et les revenus de transfert, reçus sans contrepartie productive. Après impôts et cotisations, ce qui reste forme le revenu disponible, que le ménage partage entre consommation et épargne.",
       motsCles: ["ménage", "revenu", "revenu primaire", "revenu mixte", "revenu de transfert", "revenu disponible", "salaire"],
+      image: { file: "u4_revenus.jpg", legende: "Figure 13 — Les sources de revenus d'un ménage." },
       contenu: [
         {
           sousTitre: "1. Le ménage",
@@ -164,6 +165,7 @@ const U = {
       ],
       synthese: "Donc, le revenu disponible se partage entre la consommation, qui satisfait les besoins immédiats, et l'épargne, qui prépare l'avenir. La consommation peut être individuelle, collective ou ostentatoire ; l'épargne prend la forme d'un placement, qui rapporte, ou d'une thésaurisation, qui conserve l'argent sans le faire fructifier. Un ménage prudent épargne avant de consommer le superflu.",
       motsCles: ["consommation", "consommation individuelle", "consommation collective", "consommation ostentatoire", "épargne", "placement", "thésaurisation"],
+      image: { file: "u4_epargne.jpg", legende: "Figure 14 — Consommer ou épargner : le partage du revenu disponible." },
       contenu: [
         {
           sousTitre: "1. Consommer",
@@ -280,7 +282,7 @@ const U = {
       ],
       synthese: "Donc, les besoins des ménages ne sont pas tous de même nature ni de même urgence. La pyramide de Maslow les classe en cinq niveaux : les besoins physiologiques, la sécurité, l'appartenance, l'estime et l'accomplissement de soi. La logique de la pyramide est qu'on satisfait d'abord la base avant de chercher les niveaux supérieurs, même si chacun peut nuancer cet ordre selon sa situation.",
       motsCles: ["besoin", "pyramide de Maslow", "besoins physiologiques", "sécurité", "appartenance", "estime", "accomplissement"],
-      image: { file: "u4_maslow.png", legende: "Figure 7 — La pyramide des besoins de Maslow." },
+      image: { file: "u4_maslow.png", legende: "Figure 15 — La pyramide des besoins de Maslow." },
       contenu: [
         {
           sousTitre: "1. Besoins et consommation",
@@ -401,6 +403,7 @@ const U = {
       ],
       synthese: "Donc, la consommation d'un ménage dépend d'abord de facteurs économiques : son revenu, son pouvoir d'achat, donc le niveau des prix, et le prix des autres biens qui peuvent remplacer celui que l'on achète. Quand les prix montent plus vite que les revenus, le ménage réduit ses quantités et renonce aux dépenses non essentielles.",
       motsCles: ["déterminant", "revenu", "pouvoir d'achat", "prix", "effet de substitution", "première nécessité"],
+      image: { file: "u4_pouvoir_achat.png", legende: "Figure 16 — Même somme, moins de riz : la baisse du pouvoir d'achat." },
       contenu: [
         {
           sousTitre: "1. Le revenu",
@@ -511,6 +514,7 @@ const U = {
       ],
       synthese: "Donc, au-delà du revenu et des prix, la consommation dépend de facteurs socioculturels : l'âge, le genre, le milieu social, le lieu d'habitation, le niveau d'instruction et la culture. Deux ménages disposant du même revenu peuvent consommer très différemment selon leur mode de vie et leur appartenance sociale.",
       motsCles: ["déterminants socioculturels", "âge", "genre", "milieu social", "mode de vie", "niveau d'instruction"],
+      image: { file: "u4_determinants.png", legende: "Figure 17 — Deux familles de déterminants de la consommation." },
       contenu: [
         {
           sousTitre: "1. L'âge",
@@ -617,6 +621,7 @@ const U = {
       ],
       synthese: "Donc, la consommation n'obéit pas seulement à des besoins : elle exprime aussi une position sociale. Par l'effet d'imitation, on consomme comme le groupe auquel on veut ressembler ; par l'effet de distinction, on cherche à se démarquer. Les deux mécanismes se combinent et peuvent conduire à dépenser au-delà de ses moyens : d'où l'importance d'une consommation réfléchie.",
       motsCles: ["effet d'imitation", "effet de distinction", "groupe de référence", "publicité", "consommation responsable", "ostentation"],
+      image: { file: "u4_imitation_distinction.png", legende: "Figure 18 — Imiter son groupe ou s'en distinguer." },
       contenu: [
         {
           sousTitre: "1. L'effet d'imitation",

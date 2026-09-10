@@ -54,6 +54,7 @@ const U = {
       ],
       synthese: "Donc, un marché est le lieu, réel ou abstrait, de la rencontre entre l'offre et la demande. La demande est la quantité que les acheteurs veulent et peuvent acheter à un prix donné ; l'offre est la quantité que les vendeurs veulent et peuvent vendre. C'est de leur confrontation que naît le prix.",
       motsCles: ["marché", "offre", "demande", "acheteurs", "vendeurs", "prix", "échange"],
+      image: { file: "u5_marche.jpg", legende: "Figure 19 — Le marché : la rencontre des offreurs et des demandeurs." },
       contenu: [
         {
           sousTitre: "1. Le marché",
@@ -162,6 +163,7 @@ const U = {
       ],
       synthese: "Donc, la loi de l'offre et de la demande énonce deux mouvements contraires : quand le prix monte, la demande baisse et l'offre augmente ; quand le prix baisse, la demande monte et l'offre diminue. Le marché est ainsi ramené vers un prix qui égalise les quantités échangées : le prix d'équilibre.",
       motsCles: ["loi de l'offre et de la demande", "quantité offerte", "quantité demandée", "pénurie", "surplus", "ajustement"],
+      image: { file: "u5_loi.png", legende: "Figure 20 — La demande et l'offre : deux lois de sens contraire." },
       contenu: [
         {
           sousTitre: "1. La loi de la demande",
@@ -274,7 +276,7 @@ const U = {
       ],
       synthese: "Donc, le prix d'équilibre est celui qui égalise les quantités offertes et demandées : ni pénurie ni excédent. Il se lit au croisement des deux courbes et il se déplace dès que l'offre ou la demande se modifie : une mauvaise récolte qui réduit l'offre fait monter le prix ; une offre abondante le fait baisser.",
       motsCles: ["prix d'équilibre", "quantité d'équilibre", "courbe d'offre", "courbe de demande", "croisement", "déplacement de courbe"],
-      image: { file: "u5_equilibre.png", legende: "Figure 8 — Le prix d'équilibre : croisement de l'offre et de la demande." },
+      image: { file: "u5_equilibre.png", legende: "Figure 21 — Le prix d'équilibre : croisement de l'offre et de la demande." },
       contenu: [
         {
           sousTitre: "1. Lire un graphique d'offre et de demande",
@@ -385,6 +387,7 @@ const U = {
       ],
       synthese: "Donc, un marché est en concurrence pure et parfaite lorsqu'il réunit cinq conditions : de très nombreux acheteurs et vendeurs, des produits identiques, la libre entrée et sortie des entreprises, une information transparente et des acteurs mobiles. Aucun participant ne peut alors imposer son prix : le prix s'impose à tous, et les offreurs ne peuvent gagner des parts de marché qu'en améliorant leur productivité ou leur qualité.",
       motsCles: ["concurrence", "atomicité", "homogénéité", "libre entrée", "transparence", "prix unique", "référence"],
+      image: { file: "u5_cpp.png", legende: "Figure 22 — Les cinq conditions de la concurrence pure et parfaite." },
       contenu: [
         {
           sousTitre: "1. La concurrence",
@@ -495,6 +498,7 @@ const U = {
       ],
       synthese: "Donc, la concurrence est imparfaite dès que le nombre d'offreurs devient restreint : monopole avec un seul offreur, duopole avec deux, oligopole avec quelques-uns. Dans ces situations, le prix n'est plus imposé par le marché : chaque offreur peut peser sur lui, au détriment du consommateur, d'où la nécessité d'une régulation publique.",
       motsCles: ["monopole", "duopole", "oligopole", "barrière à l'entrée", "concurrence imparfaite", "régulation", "consommateur"],
+      image: { file: "u5_structures.png", legende: "Figure 23 — Selon le nombre d'offreurs : monopole, duopole, oligopole, concurrence." },
       contenu: [
         {
           sousTitre: "1. Le monopole",
@@ -606,6 +610,7 @@ const U = {
       ],
       synthese: "Donc, une entente entre offreurs remplace la concurrence par une décision commune sur les prix ou les quantités. Elle profite aux entreprises qui la pratiquent et nuit aux consommateurs : prix plus élevés, choix réduit et marché faussé. C'est pourquoi le droit de la concurrence l'interdit et la sanctionne, et pourquoi l'arrivée de nouveaux concurrents reste le meilleur remède.",
       motsCles: ["entente", "prix imposé", "concurrence faussée", "consommateur", "droit de la concurrence", "sanction"],
+      image: { file: "u5_entente.png", legende: "Figure 24 — Le prix d'un même bien avec et sans entente." },
       contenu: [
         {
           sousTitre: "1. Qu'est-ce qu'une entente ?",

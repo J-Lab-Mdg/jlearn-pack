@@ -51,7 +51,7 @@ const U = {
       ],
       synthese: "Donc, le pouvoir politique s'exerce par l'État, qui réunit quatre éléments : une population, un territoire aux frontières délimitées, un gouvernement organisé et la souveraineté. La nation est la communauté qui se reconnaît une histoire et une culture communes ; quand elle coïncide avec les frontières de l'État, on parle d'État-nation. La puissance publique est la capacité de faire appliquer les décisions.",
       motsCles: ["pouvoir politique", "État", "nation", "État-nation", "territoire", "puissance publique", "frontières"],
-      image: { file: "u7_etat.png", legende: "Figure 12 — Les éléments constitutifs de l'État." },
+      image: { file: "u7_etat.png", legende: "Figure 29 — Les éléments constitutifs de l'État." },
       contenu: [
         {
           sousTitre: "1. Le pouvoir politique",
@@ -163,6 +163,7 @@ const U = {
       ],
       synthese: "Donc, la légitimité est la reconnaissance du droit de commander : elle repose sur le respect des règles de désignation, des élections et de la Constitution. La souveraineté est le caractère suprême du pouvoir : intérieure sur le territoire, extérieure face aux autres États. Un pouvoir légitime est plus efficace, car il obtient l'obéissance par l'adhésion et non par la seule contrainte.",
       motsCles: ["légitimité", "légalité", "élections", "Constitution", "souveraineté", "indépendance", "adhésion"],
+      image: { file: "u7_legitimite.jpg", legende: "Figure 30 — La légitimité : un pouvoir reconnu par la population." },
       contenu: [
         {
           sousTitre: "1. La légitimité du pouvoir",
@@ -275,7 +276,7 @@ const U = {
       ],
       synthese: "Donc, le droit remplit trois fonctions essentielles : il garantit les libertés de chacun, il organise la vie en société en fixant des règles connues à l'avance, et il pacifie les relations en offrant une procédure pour régler les conflits sans violence. Il ne se confond pas avec la morale : ses règles sont écrites, générales et sanctionnées.",
       motsCles: ["droit", "libertés", "règle", "sanction", "pacification", "justice", "sécurité juridique"],
-      image: { file: "u7_droit.png", legende: "Figure 13 — Les trois fonctions du droit." },
+      image: { file: "u7_droit.png", legende: "Figure 31 — Les trois fonctions du droit." },
       contenu: [
         {
           sousTitre: "1. Le droit : des règles générales et sanctionnées",

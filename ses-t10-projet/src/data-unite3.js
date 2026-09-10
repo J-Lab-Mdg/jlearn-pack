@@ -55,7 +55,7 @@ const U = {
       ],
       synthese: "Donc, les organisations productives se répartissent en trois ensembles : les entreprises privées, à but lucratif ; les administrations, qui rendent un service public financé par l'impôt ; et les organisations de l'économie sociale — associations, coopératives, mutuelles — qui poursuivent un but d'utilité pour leurs membres. Leur objectif et leur mode de financement les distinguent.",
       motsCles: ["entreprise", "administration", "association", "coopérative", "mutuelle", "économie sociale", "but lucratif"],
-      image: { file: "u3_atelier.png", legende: "Figure 5 — Un atelier de production : des moyens réunis pour produire." },
+      image: { file: "u3_atelier.jpg", legende: "Figure 6 — Un atelier de production : des moyens réunis pour produire." },
       contenu: [
         {
           sousTitre: "1. L'entreprise privée",
@@ -164,6 +164,7 @@ const U = {
       ],
       synthese: "Donc, on distingue les biens, objets matériels que l'on peut stocker, des services, activités rendues sans stockage possible. La même distinction s'applique au mode de financement : une production est marchande quand elle est vendue sur un marché à un prix couvrant son coût, non marchande quand elle est fournie gratuitement ou presque, et financée par l'impôt ou par des cotisations.",
       motsCles: ["bien", "service", "production marchande", "production non marchande", "prix", "impôt"],
+      image: { file: "u3_biens_services.jpg", legende: "Figure 7 — Biens et services : objets stockables et activités rendues." },
       contenu: [
         {
           sousTitre: "1. Biens et services",
@@ -274,6 +275,7 @@ const U = {
       ],
       synthese: "Donc, le secteur formel rassemble les activités déclarées, protégées et imposées, tandis que le secteur informel rassemble les activités non déclarées, souples mais précaires. Le secteur informel occupe une place importante dans l'économie parce qu'il donne du travail et des revenus, mais il laisse ses acteurs sans protection sociale : c'est pourquoi les pouvoirs publics cherchent à faciliter le passage vers le formel.",
       motsCles: ["secteur formel", "secteur informel", "déclaration", "protection sociale", "impôt", "précarité"],
+      image: { file: "u3_informel.jpg", legende: "Figure 8 — Activité déclarée et activité de rue : les deux secteurs." },
       contenu: [
         {
           sousTitre: "1. Le secteur formel",
@@ -388,7 +390,7 @@ const U = {
       ],
       synthese: "Donc, produire suppose de réunir du travail, du capital et des ressources naturelles, que l'entreprise combine selon ses moyens et ses objectifs. Ces facteurs peuvent se remplacer — c'est la substituabilité — mais ils restent aussi nécessairement complémentaires : aucun ne produit seul. La combinaison choisie détermine le coût et la quantité produite.",
       motsCles: ["facteurs de production", "travail", "capital", "terre", "combinaison productive", "substituabilité", "complémentarité"],
-      image: { file: "u3_facteurs.png", legende: "Figure 6 — Les facteurs de production et leur combinaison." },
+      image: { file: "u3_facteurs.png", legende: "Figure 9 — Les facteurs de production et leur combinaison." },
       contenu: [
         {
           sousTitre: "1. Les deux grands facteurs : travail et capital",
@@ -496,6 +498,7 @@ const U = {
       ],
       synthese: "Donc, la productivité mesure l'efficacité de la production : on l'augmente en produisant plus avec les mêmes moyens. Le progrès technique — machines, méthodes, formation, organisation — en est le moteur principal. Une productivité plus élevée réduit les coûts, mais elle demande des travailleurs formés et un matériel entretenu pour durer.",
       motsCles: ["productivité", "progrès technique", "coût de production", "formation", "rendement", "investissement"],
+      image: { file: "u3_productivite.png", legende: "Figure 10 — Le progrès technique multiplie la production obtenue." },
       contenu: [
         {
           sousTitre: "1. Qu'est-ce que la productivité ?",
@@ -610,6 +613,7 @@ const U = {
       ],
       synthese: "Donc, l'entrepreneur est celui qui repère un besoin, réunit les moyens de production, prend les décisions et assume le risque de l'activité. Son objectif est de répondre à des besoins tout en réalisant un profit, c'est-à-dire un excédent des recettes sur les charges. Ce profit n'est jamais garanti : il récompense la prise de risque et permet de faire vivre et grandir l'entreprise.",
       motsCles: ["entrepreneur", "entreprise", "besoin", "profit", "recettes", "charges", "risque"],
+      image: { file: "u3_profit.png", legende: "Figure 11 — Des recettes au profit : recettes moins charges." },
       contenu: [
         {
           sousTitre: "1. L'entrepreneur",
@@ -725,6 +729,7 @@ const U = {
       ],
       synthese: "Donc, produire et vendre suppose de mobiliser trois types de ressources : des ressources humaines, c'est-à-dire des personnes compétentes et organisées ; des ressources matérielles, c'est-à-dire des locaux, des équipements et des matières premières ; des ressources financières, c'est-à-dire l'argent nécessaire pour démarrer, acheter et attendre les paiements. Le rôle de l'entrepreneur est de les réunir et de les garder cohérentes.",
       motsCles: ["ressources humaines", "ressources matérielles", "ressources financières", "compétences", "microcrédit", "commercialisation"],
+      image: { file: "u3_ressources.jpg", legende: "Figure 12 — Les trois ressources réunies par l'entrepreneur." },
       contenu: [
         {
           sousTitre: "1. Les ressources humaines",

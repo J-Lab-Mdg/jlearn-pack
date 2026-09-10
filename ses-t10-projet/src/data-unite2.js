@@ -48,6 +48,7 @@ const U = {
       ],
       synthese: "Donc, les Sciences Économiques et Sociales croisent plusieurs regards sur la réalité : l'économie étudie la production et la consommation des richesses, la sociologie étudie la vie des groupes, les sciences politiques étudient le pouvoir et le droit étudie les règles. Les réunir permet de comprendre les problèmes réels, qui ne sont jamais seulement économiques ou seulement sociaux.",
       motsCles: ["science", "économie", "sociologie", "sciences politiques", "droit", "organisation", "citoyen"],
+      image: { file: "u2_concepts.jpg", legende: "Figure 4 — Les sciences économiques et sociales : quatre regards sur la réalité." },
       contenu: [
         {
           sousTitre: "1. Une science : une démarche, pas une opinion",
@@ -173,7 +174,7 @@ const U = {
       ],
       synthese: "Donc, l'économie fonctionne comme un circuit : les ménages offrent du travail et consomment, les entreprises produisent et vendent, les administrations rendent des services publics et redistribuent. La société, elle, fonctionne par des règles, des valeurs et des institutions ; les organisations, par un objectif, des rôles et des procédures. Ces trois niveaux sont liés : ce qui se passe dans l'un retentit sur les autres.",
       motsCles: ["ménages", "entreprises", "administrations", "circuit économique", "services publics", "règles", "institutions"],
-      image: { file: "u2_circuit.png", legende: "Figure 4 — Le circuit économique : ménages, entreprises et administrations." },
+      image: { file: "u2_circuit.png", legende: "Figure 5 — Le circuit économique : ménages, entreprises et administrations." },
       contenu: [
         {
           sousTitre: "1. Les acteurs de l'économie",

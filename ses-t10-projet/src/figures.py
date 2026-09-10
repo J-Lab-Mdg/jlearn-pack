@@ -429,6 +429,303 @@ def fig_droit():
     print("Figure écrite : u7_droit.png")
 
 
+
+# ------------------------------------------------------------
+# Figure 10 — Productivité et progrès technique
+# ------------------------------------------------------------
+def fig_productivite():
+    W, H = 1240, 620
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le progrès technique augmente la productivité")
+
+    d.rounded_rectangle([60, 140, 600, 560], radius=10, fill=BLANC, outline=GRIS, width=3)
+    d.text((80, 158), "AVANT : travail manuel", font=F_BOLD, fill=GRIS)
+    d.text((80, 196), "5 travailleurs, sans machine", font=F_SMALL, fill=NOIR)
+    d.rectangle([140, 340, 260, 520], fill=BLEU_C, outline=BLEU, width=3)
+    d.text((150, 312), "100 kg", font=F_BOLD, fill=BLEU)
+    d.text((320, 380), "20 kg", font=F_SMALL, fill=NOIR)
+    d.text((320, 410), "par personne", font=F_SMALL, fill=NOIR)
+
+    fleche(d, 610, 350, 630, 350)
+
+    d.rounded_rectangle([640, 140, 1180, 560], radius=10, fill=BLANC, outline=GRIS, width=3)
+    d.text((660, 158), "APRÈS : avec une décortiqueuse", font=F_BOLD, fill=GRIS)
+    d.text((660, 196), "5 travailleurs, une machine", font=F_SMALL, fill=NOIR)
+    d.rectangle([720, 160, 840, 520], fill=VERT_C, outline=VERT, width=3)
+    d.text((730, 132), "400 kg", font=F_BOLD, fill=VERT)
+    d.text((900, 380), "80 kg", font=F_SMALL, fill=NOIR)
+    d.text((900, 410), "par personne", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 572, 1180, 610], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((80, 582), "Même équipe, même durée : la productivité du travail a été multipliée par quatre.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "u3_productivite.png"))
+    print("Figure écrite : u3_productivite.png")
+
+
+# ------------------------------------------------------------
+# Figure 11 — Le calcul du profit
+# ------------------------------------------------------------
+def fig_profit():
+    W, H = 1240, 620
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Du chiffre d'affaires au profit")
+
+    d.text((120, 150), "RECETTES = 600 000 Ar", font=F_BOLD, fill=NOIR)
+    d.rectangle([120, 190, 870, 290], fill=(255, 235, 210), outline=ORANGE, width=3)
+    texte_centre(d, (120, 190, 870, 290), "CHARGES = 500 000 Ar", F_BOLD, ORANGE)
+    d.rectangle([870, 190, 1020, 290], fill=VERT_C, outline=VERT, width=3)
+    texte_centre(d, (870, 190, 1020, 290), "100 000", F_SMALL, VERT)
+    d.text((1040, 210), "PROFIT", font=F_BOLD, fill=VERT)
+
+    d.text((120, 320), "Profit = recettes − charges = 600 000 − 500 000 = 100 000 Ar", font=F_SMALL, fill=NOIR)
+
+    boite(d, 120, 380, 1120, 590, "À quoi sert le profit ?",
+          ["40 000 Ar pour faire vivre la famille de l'entrepreneur",
+           "50 000 Ar réinvestis dans une nouvelle machine",
+           "10 000 Ar gardés en réserve pour les imprévus"],
+          fill=BLEU_C, bord=BLEU)
+    img.save(os.path.join(OUT, "u3_profit.png"))
+    print("Figure écrite : u3_profit.png")
+
+
+# ------------------------------------------------------------
+# Figure 16 — Le pouvoir d'achat
+# ------------------------------------------------------------
+def fig_pouvoir_achat():
+    W, H = 1240, 620
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Même somme, moins de riz : la baisse du pouvoir d'achat")
+
+    d.rounded_rectangle([60, 150, 560, 520], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((90, 172), "MOIS 1", font=F_BOLD, fill=VERT)
+    d.text((90, 214), "Prix du riz : 2 000 Ar le kilo", font=F_SMALL, fill=NOIR)
+    for r in range(4):
+        for c in range(10):
+            d.rounded_rectangle([90 + c * 46, 260 + r * 58, 90 + c * 46 + 34, 260 + r * 58 + 40],
+                                radius=5, fill=BLANC, outline=VERT, width=2)
+    d.text((90, 500), "40 kilos achetés avec 80 000 Ar", font=F_BOLD, fill=VERT)
+
+    d.text((590, 320), "→", font=F_BOLD, fill=NOIR)
+
+    d.rounded_rectangle([680, 150, 1180, 520], radius=10, fill=ROSE_C, outline=(190, 60, 100), width=3)
+    d.text((710, 172), "MOIS 2", font=F_BOLD, fill=(190, 60, 100))
+    d.text((710, 214), "Prix du riz : 2 500 Ar le kilo", font=F_SMALL, fill=NOIR)
+    for r in range(4):
+        for c in range(8):
+            d.rounded_rectangle([710 + c * 46, 260 + r * 58, 710 + c * 46 + 34, 260 + r * 58 + 40],
+                                radius=5, fill=BLANC, outline=(190, 60, 100), width=2)
+    d.text((710, 500), "32 kilos seulement avec 80 000 Ar", font=F_BOLD, fill=(190, 60, 100))
+
+    d.rounded_rectangle([60, 545, 1180, 600], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((80, 562), "Les prix ont monté plus vite que le revenu : le ménage réduit la quantité achetée.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "u4_pouvoir_achat.png"))
+    print("Figure écrite : u4_pouvoir_achat.png")
+
+
+# ------------------------------------------------------------
+# Figure 17 — Les deux familles de déterminants
+# ------------------------------------------------------------
+def fig_determinants():
+    W, H = 1240, 660
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Ce qui fait varier la consommation d'un ménage")
+
+    boite(d, 60, 170, 600, 520, "DÉTERMINANTS ÉCONOMIQUES",
+          ["• Le revenu du ménage", "• Le pouvoir d'achat", "• Le prix des biens",
+           "  et des services", "• Le prix des produits", "  de remplacement"],
+          fill=BLEU_C, bord=BLEU)
+    boite(d, 640, 170, 1180, 520, "DÉTERMINANTS SOCIOCULTURELS",
+          ["• L'âge", "• Le genre", "• Le milieu social", "• Le lieu d'habitation",
+           "• Le niveau d'instruction", "• La culture et les traditions"],
+          fill=VERT_C, bord=VERT)
+
+    d.rounded_rectangle([60, 560, 1180, 630], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((80, 578), "Les deux familles se combinent : deux ménages au même revenu peuvent", font=F_SMALL, fill=NOIR)
+    d.text((80, 606), "consommer très différemment selon leur âge, leur milieu et leur culture.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "u4_determinants.png"))
+    print("Figure écrite : u4_determinants.png")
+
+
+# ------------------------------------------------------------
+# Figure 18 — Imitation et distinction
+# ------------------------------------------------------------
+def fig_imitation_distinction():
+    W, H = 1240, 600
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Imiter son groupe ou s'en distinguer")
+
+    boite(d, 60, 200, 400, 460, "LE GROUPE DE RÉFÉRENCE",
+          ["Amis, camarades,", "jeunes du quartier", "modèles médiatiques"],
+          fill=BLEU_C, bord=BLEU)
+    fleche_label(d, 400, 275, 560, 275, "imiter")
+
+    d.ellipse([560, 200, 800, 440], fill=JAUNE_C, outline=ORANGE, width=3)
+    texte_centre(d, (560, 200, 800, 440), "LE CONSOMMATEUR", F_BOLD, ORANGE)
+
+    fleche_label(d, 800, 395, 960, 395, "se distinguer")
+    boite(d, 960, 200, 1180, 460, "SE DÉMARQUER",
+          ["Objet rare,", "coûteux ou", "original"],
+          fill=ROSE_C, bord=(190, 60, 100))
+
+    d.rounded_rectangle([60, 500, 1180, 580], radius=8, fill=BLANC, outline=GRIS, width=2)
+    d.text((80, 518), "Imitation : consommer comme son groupe pour en faire partie.", font=F_SMALL, fill=NOIR)
+    d.text((80, 548), "Distinction : consommer ce que peu possèdent pour marquer sa position.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "u4_imitation_distinction.png"))
+    print("Figure écrite : u4_imitation_distinction.png")
+
+
+# ------------------------------------------------------------
+# Figure 20 — La loi de l'offre et de la demande
+# ------------------------------------------------------------
+def fig_loi():
+    W, H = 1240, 620
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La loi de la demande et la loi de l'offre")
+
+    for (xa, xb, titre, couleur, montant, desc) in [
+        (60, 600, "LA DEMANDE", BLEU, True, "prix ↑ → quantité demandée ↓"),
+        (640, 1180, "L'OFFRE", VERT, False, "prix ↑ → quantité offerte ↑"),
+    ]:
+        d.rounded_rectangle([xa, 150, xb, 520], radius=10, fill=BLANC, outline=GRIS, width=3)
+        d.text((xa + 20, 168), titre, font=F_BOLD, fill=couleur)
+        ox, oy, ox2, oy2 = xa + 90, 470, xb - 60, 210
+        d.line([ox, oy, ox2, oy2], fill=NOIR, width=3)
+        d.line([ox, oy, ox, oy2], fill=NOIR, width=3)
+        d.text((ox - 40, oy2 - 30), "prix", font=F_SMALL, fill=NOIR)
+        d.text((ox2 - 60, oy + 12), "quantités", font=F_SMALL, fill=NOIR)
+        if desc:
+            d.line([ox + 30, oy2 + 20, ox2 - 40, oy - 20], fill=couleur, width=5)
+            fleche(d, ox2 - 90, oy2 + 60, ox2 - 40, oy - 20, couleur)
+        else:
+            d.line([ox + 30, oy - 20, ox2 - 40, oy2 + 20], fill=couleur, width=5)
+            fleche(d, ox2 - 100, oy - 30, ox2 - 40, oy2 + 20, couleur)
+        d.text((xa + 20, 500), desc, font=F_SMALL, fill=couleur)
+
+    d.rounded_rectangle([60, 545, 1180, 600], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((80, 562), "Les deux courbes vont en sens contraire : leur croisement donne le prix d'équilibre.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "u5_loi.png"))
+    print("Figure écrite : u5_loi.png")
+
+
+# ------------------------------------------------------------
+# Figure 22 — Les conditions de la concurrence pure et parfaite
+# ------------------------------------------------------------
+def fig_cpp():
+    W, H = 1240, 660
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les cinq conditions de la concurrence pure et parfaite")
+
+    boite(d, 40, 150, 1200, 240, "MARCHÉ EN CONCURRENCE PURE ET PARFAITE",
+          ["Aucun participant ne peut imposer son prix : le prix s'impose à tous"],
+          fill=BLEU_C, bord=BLEU, interligne=26)
+
+    conditions = [
+        ("ATOMICITÉ", ["Très grand nombre", "d'acheteurs", "et de vendeurs"], VERT_C, VERT),
+        ("HOMOGÉNÉITÉ", ["Produits", "identiques ou", "comparables"], JAUNE_C, ORANGE),
+        ("LIBRE ENTRÉE", ["Possibilité de", "s'installer", "ou de partir"], VIOLET_C, VIOLET),
+        ("TRANSPARENCE", ["Prix et qualité", "connus", "de tous"], ROSE_C, (190, 60, 100)),
+        ("MOBILITÉ", ["Acheteurs et", "vendeurs", "peuvent changer"], BLEU_C, BLEU),
+    ]
+    for i, (titre, lignes, fc, bc) in enumerate(conditions):
+        x0 = 40 + i * 240
+        boite(d, x0, 280, x0 + 220, 520, titre, lignes, fill=fc, bord=bc)
+        fleche(d, x0 + 110, 280, x0 + 110, 250)
+
+    d.rounded_rectangle([40, 555, 1200, 630], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    for i, l in enumerate(wrap(d, "Modèle de référence : il est rarement réalisé complètement, "
+                                  "mais il sert à mesurer les écarts d'un marché réel.", F_SMALL, 1100)):
+        d.text((60, 575 + i * 28), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "u5_cpp.png"))
+    print("Figure écrite : u5_cpp.png")
+
+
+# ------------------------------------------------------------
+# Figure 23 — Les structures de marché
+# ------------------------------------------------------------
+def fig_structures():
+    W, H = 1240, 680
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Selon le nombre d'offreurs : quatre structures de marché")
+
+    panels = [
+        ("MONOPOLE", 1, ROSE_C, (190, 60, 100), "Un seul vendeur"),
+        ("DUOPOLE", 2, VIOLET_C, VIOLET, "Deux vendeurs"),
+        ("OLIGOPOLE", 4, JAUNE_C, ORANGE, "Quelques vendeurs"),
+        ("CONCURRENCE", 12, VERT_C, VERT, "Une multitude"),
+    ]
+    for i, (titre, n, fc, bc, sous) in enumerate(panels):
+        x0 = 40 + i * 300
+        d.rounded_rectangle([x0, 150, x0 + 280, 560], radius=10, fill=fc, outline=bc, width=3)
+        texte_centre(d, (x0, 160, x0 + 280, 210), titre, F_BOLD, bc)
+        d.text((x0 + 16, 218), sous, font=F_SMALL, fill=NOIR)
+        cy = 290
+        if n == 1:
+            d.ellipse([x0 + 100, cy, x0 + 180, cy + 80], fill=bc)
+        elif n == 2:
+            for k in range(2):
+                d.ellipse([x0 + 50 + k * 110, cy, x0 + 130 + k * 110, cy + 80], fill=bc)
+        elif n == 4:
+            for k in range(2):
+                for j in range(2):
+                    d.ellipse([x0 + 50 + j * 110, cy + k * 95, x0 + 130 + j * 110, cy + 80 + k * 95], fill=bc)
+        else:
+            for k in range(3):
+                for j in range(4):
+                    cx = x0 + 30 + j * 68
+                    d.ellipse([cx, cy + k * 68, cx + 48, cy + 48 + k * 68], fill=bc)
+
+    d.rounded_rectangle([40, 590, 1200, 660], radius=8, fill=BLANC, outline=GRIS, width=2)
+    d.text((60, 610), "Plus les offreurs sont nombreux, moins chacun peut imposer son prix.", font=F_SMALL, fill=NOIR)
+    d.text((60, 638), "Les acheteurs, représentés en petit nombre ici, sont en réalité très nombreux.",
+           font=F_MINI, fill=NOIR)
+    img.save(os.path.join(OUT, "u5_structures.png"))
+    print("Figure écrite : u5_structures.png")
+
+
+# ------------------------------------------------------------
+# Figure 24 — Les conséquences d'une entente
+# ------------------------------------------------------------
+def fig_entente():
+    W, H = 1240, 620
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le prix du ciment avec et sans entente")
+
+    base = 520
+    d.line([120, base, 1120, base], fill=NOIR, width=3)
+    d.line([120, base, 120, 170], fill=NOIR, width=3)
+    d.text((40, 160), "prix", font=F_SMALL, fill=NOIR)
+
+    h1 = 240
+    d.rectangle([300, base - h1, 520, base], fill=VERT_C, outline=VERT, width=3)
+    texte_centre(d, (300, base - h1, 520, base - h1 + 40), "18 000 Ar", F_BOLD, VERT)
+    d.text((290, base + 16), "Prix de concurrence", font=F_SMALL, fill=VERT)
+
+    h2 = 333
+    d.rectangle([700, base - h2, 920, base], fill=ROSE_C, outline=(190, 60, 100), width=3)
+    texte_centre(d, (700, base - h2, 920, base - h2 + 40), "25 000 Ar", F_BOLD, (190, 60, 100))
+    d.text((700, base + 16), "Prix d'entente", font=F_SMALL, fill=(190, 60, 100))
+
+    fleche(d, 540, base - h1, 680, base - h2, (190, 60, 100))
+
+    d.rounded_rectangle([60, 560, 1180, 610], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((80, 578), "Quatre fournisseurs s'entendent : les familles paient plus cher et renoncent à une "
+                      "partie des travaux.", font=F_MINI, fill=NOIR)
+    img.save(os.path.join(OUT, "u5_entente.png"))
+    print("Figure écrite : u5_entente.png")
+
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_series()
@@ -440,3 +737,12 @@ if __name__ == "__main__":
     fig_socialisation()
     fig_etat()
     fig_droit()
+    fig_productivite()
+    fig_profit()
+    fig_pouvoir_achat()
+    fig_determinants()
+    fig_imitation_distinction()
+    fig_loi()
+    fig_cpp()
+    fig_structures()
+    fig_entente()

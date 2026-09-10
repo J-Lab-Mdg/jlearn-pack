@@ -53,7 +53,7 @@ const U = {
       ],
       synthese: "Donc, le diplôme est la reconnaissance officielle d'un niveau d'études et de compétences : il ouvre la porte de l'emploi mais ne le garantit pas. L'obtention d'un emploi dépend aussi de la formation, des compétences, de l'expérience et des qualités personnelles exigées par le monde du travail.",
       motsCles: ["diplôme", "emploi", "formation", "compétences", "monde du travail", "exigences"],
-      image: { file: "u1_emploi.png", legende: "Figure 1 — De l'école à l'emploi : le diplôme, une étape décisive." },
+      image: { file: "u1_emploi.jpg", legende: "Figure 1 — De l'école à l'emploi : le diplôme, une étape décisive." },
       contenu: [
         {
           sousTitre: "1. Les rôles de l'école",

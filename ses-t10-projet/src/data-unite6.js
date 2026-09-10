@@ -52,7 +52,7 @@ const U = {
       ],
       synthese: "Donc, la culture est l'ensemble des manières de vivre et de penser d'un groupe, et les pratiques culturelles en sont l'expression concrète. Elles varient selon la région, la génération, le milieu et la catégorie socio-professionnelle. Cette diversité ne justifie aucune hiérarchie : elle est une richesse à comprendre et à respecter.",
       motsCles: ["culture", "pratique culturelle", "coutume", "catégorie socio-professionnelle", "diversité", "milieu social", "respect"],
-      image: { file: "u6_culture.png", legende: "Figure 9 — La diversité des pratiques culturelles selon les groupes." },
+      image: { file: "u6_culture.jpg", legende: "Figure 25 — La diversité des pratiques culturelles selon les groupes." },
       contenu: [
         {
           sousTitre: "1. La culture",
@@ -166,6 +166,7 @@ const U = {
       ],
       synthese: "Donc, la culture de masse est l'ensemble des contenus diffusés à un très large public par les médias. Elle rapproche les modes de vie en créant des références communes, elle démocratise l'accès aux œuvres, mais elle peut aussi uniformiser les goûts et transformer la culture en produit de consommation. Les cultures locales ne disparaissent pas : elles se recomposent avec elle.",
       motsCles: ["culture de masse", "médias", "industrie culturelle", "mode de vie", "uniformisation", "références communes"],
+      image: { file: "u6_medias.jpg", legende: "Figure 26 — Les médias diffusent les mêmes contenus au plus grand nombre." },
       contenu: [
         {
           sousTitre: "1. La culture de masse",
@@ -278,7 +279,7 @@ const U = {
       ],
       synthese: "Donc, la socialisation est le processus par lequel chacun apprend à vivre en société. Elle transmet des normes, c'est-à-dire des règles de conduite, et des valeurs, c'est-à-dire des principes tenus pour importants. En les intériorisant, l'individu devient un acteur social, capable d'agir dans la société et de la faire évoluer.",
       motsCles: ["socialisation", "norme", "valeur", "société", "intériorisation", "acteur social", "règle"],
-      image: { file: "u6_socialisation.png", legende: "Figure 10 — La socialisation : de l'individu à l'acteur social." },
+      image: { file: "u6_socialisation.png", legende: "Figure 27 — La socialisation : de l'individu à l'acteur social." },
       contenu: [
         {
           sousTitre: "1. La socialisation",
@@ -393,7 +394,7 @@ const U = {
       ],
       synthese: "Donc, plusieurs agents assurent la socialisation : la famille d'abord, puis l'école, les pairs, les institutions religieuses et les médias. Comme ils ne transmettent pas les mêmes contenus selon le milieu, la région et le genre, la socialisation est différentielle : elle produit des manières d'agir et de penser variées à l'intérieur d'une même société.",
       motsCles: ["agents de socialisation", "famille", "école", "pairs", "institutions religieuses", "socialisation différentielle", "genre"],
-      image: { file: "u6_agents.png", legende: "Figure 11 — Les principaux agents de la socialisation." },
+      image: { file: "u6_agents.jpg", legende: "Figure 28 — Les principaux agents de la socialisation." },
       contenu: [
         {
           sousTitre: "1. La famille, premier agent de socialisation",

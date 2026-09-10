@@ -143,7 +143,7 @@ Glossaire (18 termes pour l'Unité I, enrichi à chaque bloc) · Auto-évaluatio
 | « BEPC » | 0 | 0 |
 | Support « Oral » | 0 | 0 |
 | Dates calendaires | 0 | 0 |
-| Images embarquées | 13 | 13 |
+| Images embarquées | 31 (une par séance de cours) | 31 |
 | Liens internes / signets | — | 276 / 60 |
 
 ## Contenu livré
@@ -151,7 +151,7 @@ Glossaire (18 termes pour l'Unité I, enrichi à chaque bloc) · Auto-évaluatio
 - 31 séances de cours : fiche de préparation + leçon + exercices notés (barème) + corrigé détaillé
 - 7 séances de révision : tableau récapitulatif + 5 questions corrigées
 - 7 sujets d'examen T10 : 5 exercices chacun, barème affiché, corrigé détaillé
-- 13 illustrations : 4 générées par IA en style « manuel scolaire », 9 schémas géométriques en script (Pillow)
+- 31 illustrations : 13 scènes générées par IA en style « manuel scolaire » + 18 schémas géométriques en script (Pillow) — une illustration par séance de cours
 - Annexes : glossaire (111 termes), auto-évaluation, index cliquable, bibliographie et webographie, table des illustrations
 
 ## Points fermés
