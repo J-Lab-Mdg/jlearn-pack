@@ -211,14 +211,14 @@ FCE = [
     ("Fanatanterahana ny fianarana (Fianarana sy ny Ora Fanarenana « OF »)", [
         ("Ardoisine GN", 12000, 2, 24000, ""),
         ("Agrafe 24/6 boîte", 1800, 6, 10800, "(1/ens)"),
-        ("Angady PM", 5000, 2, 10000, ""),
-        ("Angady GM", 16000, 1, 16000, ""),
         ("Blanco Pen", 2000, 6, 12000, "(1/ens)"),
         ("Craie couleur RAFAFA", 6000, 10, 60000, ""),
         ("Craie blanche RAFAFA", 5000, 10, 50000, ""),
     ]),
-    ("Tontolo ianarana / fitaovana", [
+    ("Tontolo ianarana / fitaovana (Fanamboarana trano)", [
         ("Ciment", 52000, 1, 52000, ""),
+        ("Angady GM", 16000, 1, 16000, ""),
+        ("Angady PM", 5000, 2, 10000, ""),
     ]),
     ("Fividianana fitaovana ho an’ny mpampianatra", [
         ("Cahier de transmission", 11000, 1, 11000, ""),
@@ -248,16 +248,19 @@ VOI = [
         ("Journées Pédagogiques", 72000, 5, 360000, ""),
         ("Sports scolaires", 50000, 5, 250000, ""),
         ("Hetsika « vokatra »", 35000, 2, 70000, ""),
-        ("Hetsika VFF", 50000, 1, 50000, ""),
     ]),
     ("Fandoavana ny fiantohana « Pascoma »", [
         ("Pascoma", 200, 140, 28000, ""),
     ]),
-    ("Fampisaafoanana an-tsekoly (Fambolena vomanga)", [
-        ("Fambolena vomanga", "N/A", "N/A", "N/A", ""),
+    ("Fampisaafoanana an-tsekoly (Fambolena)", [
+        ("Mangahazo (tokony)", 1000, 60, 60000, ""),
+        ("Siramamy (kg)", 6000, 20, 120000, ""),
+    ]),
+    ("Fampandraharana ny VFF", [
+        ("Hetsika VFF", 50000, 1, 50000, ""),
     ]),
 ]
-VOI_TOTAL = 7615000
+VOI_TOTAL = 7795000
 
 if __name__ == "__main__":
     p1 = build("PE_RPI_2026_2027.docx", "LAMIM-PANDANIANA CAISSE ECOLE ETAT", False,
@@ -274,7 +277,7 @@ if __name__ == "__main__":
                ])
     p3 = build("PE_VOI_2026_2027.docx", "LAMIM-PANDANIANA VONDRON’OLONA IFOTONY", True,
                VOI, "VOI", VOI_TOTAL, [
-                   "Nofaranana tamin’ny tetibola : dimy arivo sy iray alina sy enina hetsy sy fito tapitrisa Ariary (Ar 7 615 000)",
+                   "Nofaranana tamin’ny tetibola : dimy arivo sy sivy alina sy fito hetsy sy fito tapitrisa Ariary (Ar 7 795 000)",
                    "Natao teto Andranomafana, androany faha-…… Septambra 2026",
                ])
     for p in (p1, p2, p3):
