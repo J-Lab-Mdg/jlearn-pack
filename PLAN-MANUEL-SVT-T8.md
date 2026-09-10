@@ -10,7 +10,7 @@ Le manuel suivra la structure J-Learn :
 
 Objectif : produire un manuel enseignant complet, contextualisé à Madagascar, avec fiches de préparation, leçons, exercices, corrigés, révisions et sujets d'examen.
 
-## Découpage maximal proposé : 29 séances
+## Découpage maximal proposé : 37 séances
 
 ### Unité I — Santé et bien-être : respiration, circulation et sang — 12 séances
 
@@ -37,7 +37,7 @@ Objectif : produire un manuel enseignant complet, contextualisé à Madagascar, 
 18. Prévention collective, sensibilisation et lutte contre les discriminations
 19. Révision et examen de l'Unité II
 
-### Unité III — Géologie : roches, cycle et utilisations — 10 séances
+### Unité III — Géologie : roches, cycle et utilisations — 12 séances
 
 20. Reconnaître une roche : propriétés observables
 21. Les roches magmatiques et leur formation
