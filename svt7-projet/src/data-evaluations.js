@@ -108,6 +108,12 @@ const examens = {
         { q: "Décris le trajet d'un aliment dans le tube digestif.", r: "Bouche → pharynx → œsophage → estomac → intestin grêle → gros intestin → anus." },
         { q: "Cite deux glandes digestives.", r: "Les glandes salivaires et le foie (ou le pancréas, les glandes gastriques)." },
       ]},
+      { type: "trous", pointsPar: 1, mots: ["absorption", "enzymes", "sang"], items: [
+        { phrase: "Les substances simples passent dans le ______.", mot: "sang" },
+        { phrase: "Les sucs digestifs contiennent des ______.", mot: "enzymes" },
+        { phrase: "Le passage des nutriments vers le sang est l'______.", mot: "absorption" },
+      ]},
+      { type: "appariement", pointsPar: 1, items: [{ g: ["Bouche", "Estomac", "Intestin grêle", "Foie"], d: ["Produit la bile", "Absorbe les nutriments", "Mastique et mélange avec la salive", "Brasse et transforme les aliments"], pairs: [[0,2],[1,3],[2,1],[3,0]] }]},
     ],
   },
   II: {
@@ -127,6 +133,14 @@ const examens = {
       { type: "qr", pointsPar: 2, items: [
         { q: "Quelle est la différence entre gonades et voies génitales ?", r: "Les gonades produisent les cellules reproductrices ; les voies génitales les transportent." },
         { q: "Comment déterminer la période de fécondité ?", r: "En repérant le milieu du cycle (ovulation) sur un calendrier." },
+      ]},
+      { type: "trous", pointsPar: 1, mots: ["ovulation", "ovule", "fécondation", "utérus"], items: [
+        { phrase: "La libération d'un ovule s'appelle l'______.", mot: "ovulation" },
+        { phrase: "La rencontre des cellules reproductrices est la ______.", mot: "fécondation" },
+        { phrase: "L'embryon se développe dans l'______.", mot: "utérus" },
+      ]},
+      { type: "qr", pointsPar: 3, items: [
+        { q: "Une adolescente enceinte souhaite poursuivre sa scolarité. Cite trois attitudes responsables de son entourage.", r: "L'écouter sans la juger, l'orienter vers un centre de santé et rechercher des solutions pour maintenir sa scolarité et sa sécurité." },
       ]},
     ],
   },
@@ -148,6 +162,12 @@ const examens = {
         { q: "Cite deux mesures individuelles contre les maladies infectieuses.", r: "Se laver les mains et boire de l'eau propre." },
         { q: "Quel est le rôle des cellules immunitaires ?", r: "Elles attaquent et détruisent les microbes." },
       ]},
+      { type: "appariement", pointsPar: 1, items: [{ g: ["Vaccin", "Sérum", "Antibiotique", "Moustiquaire"], d: ["Barrière contre un moustique", "Protection préparée par l'organisme", "Anticorps apportés rapidement", "Médicament contre certaines bactéries"], pairs: [[0,1],[1,2],[2,3],[3,0]] }]},
+      { type: "trous", pointsPar: 1, mots: ["pathogène", "hygiène", "anticorps"], items: [
+        { phrase: "Un microorganisme qui provoque une maladie est ______.", mot: "pathogène" },
+        { phrase: "Les ______ se fixent sur certains microbes.", mot: "anticorps" },
+        { phrase: "Le lavage des mains est une mesure d'______.", mot: "hygiène" },
+      ]},
     ],
   },
   IV: {
@@ -168,6 +188,14 @@ const examens = {
         { q: "Donne une chaîne alimentaire de rizière.", r: "Riz → criquet → oiseau → serpent." },
         { q: "Comment protéger l'équilibre des écosystèmes ?", r: "En protégeant les forêts et en réduisant la pollution et la surexploitation." },
       ]},
+      { type: "completion", pointsPar: 1, items: [
+        { debut: "Une chaîne alimentaire commence généralement par", suite: "un producteur" },
+        { debut: "Les organismes qui recyclent la matière morte sont", suite: "les décomposeurs" },
+        { debut: "La relation où un animal capture et mange une proie est", suite: "la prédation" },
+      ]},
+      { type: "qr", pointsPar: 3, items: [
+        { q: "Dans une rizière, que peut-il se passer si les serpents disparaissent ? Explique.", r: "Les populations de rats ou de grenouilles peuvent augmenter ; cela modifie la chaîne alimentaire et peut réduire les récoltes." },
+      ]},
     ],
   },
   V: {
@@ -187,6 +215,12 @@ const examens = {
       { type: "qr", pointsPar: 2, items: [
         { q: "Cite une conséquence du volcanisme.", r: "La formation de montagnes (ou la dégradation des terres, les risques pour les habitants)." },
         { q: "Qu'est-ce que la lavakisation ?", r: "Le creusement de ravins par l'érosion intense des sols." },
+      ]},
+      { type: "appariement", pointsPar: 1, items: [{ g: ["Croûte", "Manteau", "Volcan", "Lavaka"], d: ["Ravin d'érosion", "Couche externe", "Remontée de magma et éruption", "Couche située sous la croûte"], pairs: [[0,1],[1,3],[2,2],[3,0]] }]},
+      { type: "trous", pointsPar: 1, mots: ["érosion", "plaques", "séisme"], items: [
+        { phrase: "Les grands blocs rigides de la lithosphère sont les ______ tectoniques.", mot: "plaques" },
+        { phrase: "La destruction et le transport des roches constituent l'______.", mot: "érosion" },
+        { phrase: "Une vibration brutale du sol est un ______.", mot: "séisme" },
       ]},
     ],
   },

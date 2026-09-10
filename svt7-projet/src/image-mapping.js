@@ -141,19 +141,19 @@ const IMG = {
 };
 
 const REVISION_IMAGES = {
-  I: fig("bilan-unite-I.png", "Figure R1 — Bilan de l'Unité I : Santé et bien-être."),
-  II: fig("bilan-unite-II.png", "Figure R2 — Bilan de l'Unité II : Reproduction humaine."),
-  III: fig("bilan-unite-III.png", "Figure R3 — Bilan de l'Unité III : Maladies infectieuses."),
-  IV: fig("bilan-unite-IV.png", "Figure R4 — Bilan de l'Unité IV : Organisation des êtres vivants."),
-  V: fig("bilan-unite-V.png", "Figure R5 — Bilan de l'Unité V : Géologie."),
+  I: fig("gen/bilan-sante-digestive.jpg", "Figure R1 — Bilan illustré de la santé digestive."),
+  II: fig("gen/bilan-reproduction.jpg", "Figure R2 — Bilan illustré de la reproduction humaine."),
+  III: fig("gen/bilan-infections.jpg", "Figure R3 — Bilan illustré des maladies infectieuses."),
+  IV: fig("gen/bilan-ecosystemes.jpg", "Figure R4 — Bilan illustré des écosystèmes."),
+  V: fig("gen/bilan-geologie.jpg", "Figure R5 — Bilan illustré de la géologie."),
 };
 
 const EXAM_IMAGES = {
-  I: [fig("gen/appareil-digestif.jpg", "Figure E1 — L'appareil digestif (illustration à légender).")],
-  II: [fig("gen/cycle-menstruel.jpg", "Figure E2 — Le cycle menstruel (illustration à légender).")],
-  III: [fig("gen/microorganismes.jpg", "Figure E3 — Les microorganismes (illustration à légender).")],
-  IV: [fig("chaine-alimentaire.png", "Figure E4 — La chaîne alimentaire.")],
-  V: [fig("structure-terre.png", "Figure E5 — La structure interne de la Terre.")],
+  I: [fig("gen/examen-digestion.jpg", "Figure E1 — L'appareil digestif : document d'examen à légender.")],
+  II: [fig("gen/examen-reproduction.jpg", "Figure E2 — Le cycle menstruel et la fécondation : document d'examen.")],
+  III: [fig("gen/examen-infection.jpg", "Figure E3 — Prévention d'une maladie infectieuse : document d'examen.")],
+  IV: [fig("gen/examen-ecosysteme.jpg", "Figure E4 — Chaîne alimentaire d'une rizière : document d'examen.")],
+  V: [fig("gen/examen-geologie.jpg", "Figure E5 — Structure et activités de la Terre : document d'examen.")],
 };
 
 const ANNEXE_IMAGES = [
