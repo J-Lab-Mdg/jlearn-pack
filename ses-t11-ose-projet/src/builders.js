@@ -1,6 +1,6 @@
 // ============================================================
 // builders.js — fonctions de construction docx (skill v18)
-// Projet : Manuel SES T10 — Collection J-Learn
+// Projet : Manuel SES T11 — série OSE — Collection J-Learn
 // ============================================================
 const {
   Paragraph, TextRun, AlignmentType, Table, TableRow, TableCell,
@@ -139,7 +139,7 @@ function metaTable(meta) {
   ];
   const right = [
     field("Date : ", meta.date || "____________", AlignmentType.RIGHT),
-    field("Classe : ", meta.classe || "T10 — Classe de T10", AlignmentType.RIGHT),
+    field("Classe : ", meta.classe || "T11 — Série OSE", AlignmentType.RIGHT),
     field("Séance n° : ", meta.seance, AlignmentType.RIGHT),
     field("Durée : ", meta.duree || "____________", AlignmentType.RIGHT),
     field("Thématique / RAS : ", meta.ras, AlignmentType.RIGHT),

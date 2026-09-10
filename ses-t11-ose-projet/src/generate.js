@@ -1,6 +1,6 @@
 // ============================================================
-// generate.js — génération du fichier .docx (Manuel SES T10)
-// Manuel complet : 7 unités, 45 séances (76 heures du Programme d'Études)
+// generate.js — génération du fichier .docx (Manuel SES T11, série OSE)
+// Manuel complet : 5 unités, 70 séances (132 heures du Programme d'Études)
 // ============================================================
 const fs = require("fs");
 const path = require("path");
@@ -10,13 +10,13 @@ const { assemble } = require("./assemble");
 
 const OUT_DIR = path.join(__dirname, "..", "output");
 const OUT_FILE = process.env.OUT_FILE
-  || path.join(OUT_DIR, "Manuel_SES_T10_JLearn.docx");
+  || path.join(OUT_DIR, "Manuel_SES_T11_OSE_JLearn.docx");
 
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.mkdirSync(path.join(OUT_DIR, "images"), { recursive: true });
 
-  if (process.env.GEN_FIGURES !== "0") {
+  if (process.env.GEN_FIGURES !== "0" && fs.existsSync(path.join(__dirname, "figures.py"))) {
     console.log("Génération des figures (Pillow)…");
     execFileSync("python3", [path.join(__dirname, "figures.py")], { stdio: "inherit" });
   }

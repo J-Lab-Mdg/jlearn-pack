@@ -1,5 +1,5 @@
 // ============================================================
-// seance-generator.js — génère le contenu d'une séance (SES T10)
+// seance-generator.js — génère le contenu d'une séance (SES T11, série OSE)
 // (fiche + leçon + exercices notés + corrigé)
 // ============================================================
 const B = require("./builders");
@@ -204,10 +204,10 @@ function generateSeanceDocContent(topic, seanceNum, totalSeances) {
     theme: topic.theme,
     titre: topic.titre,
     objectif: topic.objectif,
-    documentation: "Programme d'Études — Classe de T10 (Sciences économiques et sociales)",
+    documentation: "Programme d'Études — Classe de T11, série OSE (Sciences économiques et sociales)",
     support: topic.supportMeta || "",
     date: "____________",
-    classe: "T10",
+    classe: "T11 — Série OSE",
     seance: seanceNum + " / " + totalSeances,
     duree: "____________", // durée laissée à l'enseignant (demande utilisateur, Bloc 1 validé)
     ras: topic.ras || "",
