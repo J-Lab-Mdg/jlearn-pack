@@ -60,7 +60,7 @@ const U = {
       ],
       synthese: "Donc, l'État est l'ensemble des institutions qui exercent un pouvoir souverain sur un territoire et une population. Il se compose de quatre éléments : territoire, population, institutions, souveraineté. Il détient la force publique et prend des décisions qui s'imposent à tous.",
       motsCles: ["État", "territoire", "population", "souveraineté", "institution", "légitimité", "force publique"],
-      image: { file: "t11_u5_etat.png", legende: "Figure 46 — Les quatre éléments constitutifs de l'État." },
+      image: { file: "t11_u5_etat.png", legende: "Figure 50 — Les quatre éléments constitutifs de l'État." },
       contenu: [
         {
           sousTitre: "1. Un pouvoir sur un territoire",
@@ -170,7 +170,7 @@ const U = {
       ],
       synthese: "Donc, l'État assume des rôles sociaux : sécurité, justice, éducation, santé, protection sociale et services essentiels. Ces missions sont financées par l'impôt et mises en œuvre par des services publics, le plus souvent en partenariat avec les communes et les associations.",
       motsCles: ["rôle social", "service public", "sécurité", "éducation", "santé", "protection sociale", "impôt"],
-      image: { file: "t11_u5_sociaux.png", legende: "Figure 47 — Les rôles sociaux de l'État." },
+      image: { file: "t11_u5_sociaux.png", legende: "Figure 51 — Les rôles sociaux de l'État." },
       contenu: [
         {
           sousTitre: "1. Protéger",
@@ -287,7 +287,7 @@ const U = {
       ],
       synthese: "Donc, l'État joue un rôle économique majeur : il fournit les infrastructures, fixe le cadre juridique de l'activité, corrige les défaillances du marché et poursuit la croissance, l'emploi, la stabilité des prix et l'équilibre extérieur. Il peut aussi produire directement, par des entreprises publiques.",
       motsCles: ["rôle économique", "infrastructure", "cadre juridique", "régulation", "politique économique", "entreprise publique", "concurrence"],
-      image: { file: "t11_u5_eco.png", legende: "Figure 48 — Les rôles économiques de l'État." },
+      image: { file: "t11_u5_eco.png", legende: "Figure 52 — Les rôles économiques de l'État." },
       contenu: [
         {
           sousTitre: "1. Fournir les infrastructures",
@@ -401,7 +401,7 @@ const U = {
       ],
       synthese: "Donc, le régime politique décrit la manière dont le pouvoir est organisé et transmis. Dans une monarchie, le pouvoir s'exerce à vie et se transmet souvent par hérédité ; dans une république, il est exercé par des responsables élus pour une durée limitée. Madagascar est une République.",
       motsCles: ["régime politique", "monarchie", "monarchie absolue", "monarchie constitutionnelle", "république", "élection", "Constitution"],
-      image: { file: "t11_u5_regimes.png", legende: "Figure 49 — Monarchie et république : deux manières d'organiser le pouvoir." },
+      image: { file: "t11_u5_regimes.png", legende: "Figure 53 — Monarchie et république : deux manières d'organiser le pouvoir." },
       contenu: [
         {
           sousTitre: "1. Ce que décrit un régime",
@@ -516,7 +516,7 @@ const U = {
       ],
       synthese: "Donc, la démocratie est un régime où le pouvoir appartient au peuple, exercé par des représentants élus au suffrage universel lors d'élections libres, secrètes et sincères. Elle suppose la liberté d'expression, le pluralisme et le respect des résultats, et elle impose au citoyen de s'informer et de participer.",
       motsCles: ["démocratie", "souveraineté nationale", "suffrage universel", "élection", "pluralisme", "débat public", "citoyenneté"],
-      image: { file: "t11_u5_democratie.jpg", legende: "Figure 50 — Le scrutin : voter librement pour choisir ses représentants." },
+      image: { file: "t11_u5_democratie.jpg", legende: "Figure 54 — Le scrutin : voter librement pour choisir ses représentants." },
       contenu: [
         {
           sousTitre: "1. Le pouvoir au peuple",
@@ -627,7 +627,7 @@ const U = {
       ],
       synthese: "Donc, l'État de droit soumet la puissance publique à des règles connues, stables et contrôlées. La séparation des pouvoirs confie à trois organes distincts le soin de légiférer, d'exécuter et de juger, afin qu'aucun ne concentre l'ensemble du pouvoir.",
       motsCles: ["État de droit", "séparation des pouvoirs", "pouvoir législatif", "pouvoir exécutif", "pouvoir judiciaire", "indépendance de la justice", "recours"],
-      image: { file: "t11_u5_etat_droit.png", legende: "Figure 51 — L'État de droit et la séparation des trois pouvoirs." },
+      image: { file: "t11_u5_etat_droit.png", legende: "Figure 55 — L'État de droit et la séparation des trois pouvoirs." },
       contenu: [
         {
           sousTitre: "1. Le pouvoir soumis à la règle",
@@ -739,7 +739,7 @@ const U = {
       ],
       synthese: "Donc, la Constitution est le texte suprême qui organise les pouvoirs, crée les institutions et garantit les droits. Aucune règle ne peut la contredire, et sa révision obéit à une procédure plus exigeante que celle d'une loi ordinaire.",
       motsCles: ["Constitution", "norme suprême", "institution", "révision", "droits fondamentaux", "contrôle de constitutionnalité", "Parlement"],
-      image: { file: "t11_u5_institutions.png", legende: "Figure 52 — De la Constitution aux institutions : l'organisation des pouvoirs." },
+      image: { file: "t11_u5_institutions.png", legende: "Figure 56 — De la Constitution aux institutions : l'organisation des pouvoirs." },
       contenu: [
         {
           sousTitre: "1. Le texte fondamental",
@@ -852,7 +852,7 @@ const U = {
       ],
       synthese: "Donc, les libertés publiques sont des droits fondamentaux garantis par la Constitution et protégés par le juge : expression, réunion, association, circulation, conscience. Elles ne sont pas absolues : elles s'arrêtent devant la liberté d'autrui et l'ordre public.",
       motsCles: ["liberté publique", "liberté d'expression", "liberté d'association", "liberté de réunion", "ordre public", "garantie", "juge"],
-      image: { file: "t11_u5_libertes.png", legende: "Figure 53 — Les libertés publiques, leurs limites et leurs garanties." },
+      image: { file: "t11_u5_libertes.png", legende: "Figure 57 — Les libertés publiques, leurs limites et leurs garanties." },
       contenu: [
         {
           sousTitre: "1. Des droits fondamentaux",
@@ -966,7 +966,7 @@ const U = {
       ],
       synthese: "Donc, le droit coutumier est l'ensemble des règles issues des usages d'une communauté, transmises oralement et appliquées par ses instances. Proche des réalités locales, il règle mariage, terres et conflits de voisinage, mais il ne peut contredire la Constitution ni les lois de la République.",
       motsCles: ["droit coutumier", "usage", "coutume", "droit traditionnel", "médiation", "conciliation", "Constitution"],
-      image: { file: "t11_u5_coutumier.png", legende: "Figure 54 — Le droit coutumier et sa place dans les sources du droit." },
+      image: { file: "t11_u5_coutumier.png", legende: "Figure 58 — Le droit coutumier et sa place dans les sources du droit." },
       contenu: [
         {
           sousTitre: "1. Une règle venue des usages",
@@ -1080,7 +1080,7 @@ const U = {
       ],
       synthese: "Donc, la loi est la règle générale votée par le Parlement, et le règlement l'acte pris par l'exécutif pour l'appliquer. Le règlement doit toujours respecter la loi, qui doit elle-même respecter la Constitution. La publication rend la règle applicable à tous.",
       motsCles: ["loi", "règlement", "décret", "arrêté", "Parlement", "promulgation", "publication"],
-      image: { file: "t11_u5_lois.png", legende: "Figure 55 — De la proposition de loi à son application : la chaîne de la règle." },
+      image: { file: "t11_u5_lois.png", legende: "Figure 59 — De la proposition de loi à son application : la chaîne de la règle." },
       contenu: [
         {
           sousTitre: "1. La loi",
@@ -1193,7 +1193,7 @@ const U = {
       ],
       synthese: "Donc, les sources du droit s'organisent en pyramide : la Constitution au sommet, puis les traités internationaux, les lois, les décrets et les arrêtés, la coutume intervenant là où la loi le permet. Chaque règle doit respecter celle qui lui est supérieure, ce qu'un contrôle de conformité permet de vérifier.",
       motsCles: ["hiérarchie des normes", "sources du droit", "Constitution", "traité international", "loi", "décret", "arrêté"],
-      image: { file: "t11_u5_pyramide.png", legende: "Figure 56 — La pyramide des sources du droit : chaque règle respecte celle qui la domine." },
+      image: { file: "t11_u5_pyramide.png", legende: "Figure 60 — La pyramide des sources du droit : chaque règle respecte celle qui la domine." },
       contenu: [
         {
           sousTitre: "1. Pourquoi une hiérarchie ?",

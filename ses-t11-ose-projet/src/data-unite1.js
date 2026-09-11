@@ -61,6 +61,7 @@ const U = {
       ],
       synthese: "Donc, produire suppose d'associer du travail et du capital, avec les ressources naturelles nécessaires. L'entreprise compare les combinaisons possibles et retient celle qui permet d'obtenir la quantité voulue au moindre coût. Ce choix évolue avec les prix des facteurs et le progrès technique.",
       motsCles: ["facteurs de production", "travail", "capital", "ressources naturelles", "combinaison productive", "substituabilité", "complémentarité"],
+      image: { file: "t11_u1_facteurs.png", legende: "Figure 1 — Les facteurs de production et la combinaison productive." },
       contenu: [
         {
           sousTitre: "1. Les facteurs de production",
@@ -169,7 +170,7 @@ const U = {
       ],
       synthese: "Donc, les coûts se répartissent en coûts fixes, indépendants de la quantité produite, et coûts variables, proportionnels à la production. Le coût total en découle ; divisé par la quantité, il donne le coût moyen, qui mesure le coût de revient d'une unité. Le coût marginal, lui, mesure ce que coûte une unité supplémentaire.",
       motsCles: ["coût de production", "coût fixe", "coût variable", "coût total", "coût moyen", "coût marginal", "seuil de rentabilité"],
-      image: { file: "t11_u1_couts.png", legende: "Figure 1 — Coûts fixes, coûts variables et coût total." },
+      image: { file: "t11_u1_couts.png", legende: "Figure 2 — Coûts fixes, coûts variables et coût total." },
       contenu: [
         {
           sousTitre: "1. Coûts fixes et coûts variables",
@@ -280,6 +281,7 @@ const U = {
       ],
       synthese: "Donc, la recette — ou chiffre d'affaires — est le produit du prix de vente par la quantité vendue. En retranchant les coûts de production, on obtient le profit : positif, il rémunère le risque de l'entrepreneur ; négatif, il devient une perte.",
       motsCles: ["recette", "chiffre d'affaires", "recette moyenne", "recette marginale", "profit", "perte", "trésorerie"],
+      image: { file: "t11_u1_recettes.png", legende: "Figure 3 — Recettes, coûts totaux et profit." },
       contenu: [
         {
           sousTitre: "1. Les recettes de l'entreprise",
@@ -393,7 +395,7 @@ const U = {
       ],
       synthese: "Donc, maximiser le profit consiste à produire tant que la recette apportée par une unité supplémentaire dépasse ce qu'elle coûte, et à s'arrêter lorsque recette marginale et coût marginal s'égalent. Cette règle s'exerce sous contrainte : le marché fixe le prix, et le droit fixe le cadre de l'action.",
       motsCles: ["maximisation du profit", "recette marginale", "coût marginal", "quantité optimale", "contrainte de marché", "responsabilité"],
-      image: { file: "t11_u1_maximisation.png", legende: "Figure 2 — Recette marginale, coût marginal et profit maximal." },
+      image: { file: "t11_u1_maximisation.png", legende: "Figure 4 — Recette marginale, coût marginal et profit maximal." },
       contenu: [
         {
           sousTitre: "1. La règle de la recette marginale et du coût marginal",
@@ -508,6 +510,7 @@ const U = {
       ],
       synthese: "Donc, la valeur ajoutée mesure la richesse réellement créée par l'entreprise : la valeur de la production moins les consommations intermédiaires. Elle se répartit entre les salariés, l'État, l'entreprise elle-même et les apporteurs de capitaux. C'est un indicateur de performance plus pertinent que le seul chiffre d'affaires.",
       motsCles: ["valeur ajoutée", "consommations intermédiaires", "production", "répartition", "autofinancement", "performance"],
+      image: { file: "t11_u1_valeur_aj.png", legende: "Figure 5 — La valeur ajoutée : mesure et répartition." },
       contenu: [
         {
           sousTitre: "1. Mesurer la valeur ajoutée",
@@ -618,7 +621,7 @@ const U = {
       ],
       synthese: "Donc, le bilan présente à une date donnée le patrimoine de l'entreprise : à l'actif, les emplois — immobilisations, stocks, créances, trésorerie ; au passif, les ressources — capitaux propres et dettes. Les deux totaux sont toujours égaux, car tout bien possédé a été financé.",
       motsCles: ["bilan", "actif", "passif", "actif immobilisé", "actif circulant", "capitaux propres", "dettes", "trésorerie"],
-      image: { file: "t11_u1_bilan.png", legende: "Figure 3 — Le bilan : emplois à l'actif, ressources au passif." },
+      image: { file: "t11_u1_bilan.png", legende: "Figure 6 — Le bilan : emplois à l'actif, ressources au passif." },
       contenu: [
         {
           sousTitre: "1. Une photographie du patrimoine",
@@ -729,7 +732,7 @@ const U = {
       ],
       synthese: "Donc, le compte de résultat récapitule les produits et les charges de la période pour dégager le résultat net : bénéfice ou perte. Il complète le bilan, qui décrit le patrimoine à une date. Les deux documents sont complémentaires pour apprécier la performance.",
       motsCles: ["compte de résultat", "produits", "charges", "résultat net", "bénéfice", "perte", "amortissement"],
-      image: { file: "t11_u1_resultat.png", legende: "Figure 4 — Le compte de résultat : des produits au résultat net." },
+      image: { file: "t11_u1_resultat.png", legende: "Figure 7 — Le compte de résultat : des produits au résultat net." },
       contenu: [
         {
           sousTitre: "1. Un document de période",
@@ -849,7 +852,7 @@ const U = {
       ],
       synthese: "Donc, la responsabilité sociétale des entreprises consiste à assumer les impacts sociaux et environnementaux de l'activité, et pas seulement ses résultats financiers. Une performance durable réunit les trois dimensions : économique, sociale et environnementale. Une entreprise qui reporte ses coûts sur la collectivité crée une externalité négative.",
       motsCles: ["RSE", "impact social", "impact environnemental", "externalité", "développement durable", "performance globale", "dialogue social"],
-      image: { file: "t11_u1_rse.jpg", legende: "Figure 5 — Les trois dimensions de la performance d'une entreprise." },
+      image: { file: "t11_u1_rse.jpg", legende: "Figure 8 — Les trois dimensions de la performance d'une entreprise." },
       contenu: [
         {
           sousTitre: "1. La responsabilité sociétale des entreprises",
@@ -961,7 +964,7 @@ const U = {
       ],
       synthese: "Donc, une partie prenante est tout acteur affecté par l'activité de l'entreprise ou capable de l'influencer. Les parties prenantes internes en font partie — dirigeants, salariés, propriétaires ; les parties prenantes externes y sont liées sans en faire partie — clients, fournisseurs, banques, État, riverains. La performance durable suppose de tenir compte de toutes.",
       motsCles: ["parties prenantes", "acteurs internes", "acteurs externes", "dirigeants", "actionnaires", "riverains", "pouvoir d'influence"],
-      image: { file: "t11_u1_parties.png", legende: "Figure 6 — Les parties prenantes internes et externes de l'entreprise." },
+      image: { file: "t11_u1_parties.png", legende: "Figure 9 — Les parties prenantes internes et externes de l'entreprise." },
       contenu: [
         {
           sousTitre: "1. Les parties prenantes internes",
@@ -1073,7 +1076,7 @@ const U = {
       ],
       synthese: "Donc, chaque partie prenante entretient avec l'entreprise un échange : elle contribue — travail, capital, matières, crédit, règles, achats — et attend une contrepartie — salaire, dividende, qualité, paiement, emploi, environnement préservé. Comprendre ce double mouvement permet d'anticiper les désaccords.",
       motsCles: ["contribution", "attente", "salaire", "dividende", "qualité", "impôt", "conditions de travail"],
-      image: { file: "t11_u1_contributions.png", legende: "Figure 7 — Ce que chacun apporte et ce que chacun attend." },
+      image: { file: "t11_u1_contributions.png", legende: "Figure 10 — Ce que chacun apporte et ce que chacun attend." },
       contenu: [
         {
           sousTitre: "1. Le principe de l'échange",
@@ -1185,6 +1188,7 @@ const U = {
       ],
       synthese: "Donc, les intérêts des parties prenantes sont tantôt convergents — tous gagnent à la pérennité de l'entreprise — tantôt divergents — la répartition de la valeur crée des oppositions. Ces conflits se règlent par la négociation, le contrat, la loi, et par le juge en dernier recours. Exprimés à temps, ils sont une chance d'amélioration plutôt qu'une menace.",
       motsCles: ["intérêts convergents", "intérêts divergents", "conflit", "négociation", "dialogue social", "droit du travail", "arbitrage"],
+      image: { file: "t11_u1_conflits.png", legende: "Figure 11 — Intérêts convergents et divergents des parties prenantes." },
       contenu: [
         {
           sousTitre: "1. Des intérêts convergents",

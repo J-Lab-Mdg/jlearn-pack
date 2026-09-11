@@ -65,7 +65,7 @@ const U = {
       ],
       synthese: "Donc, le troc exige une double coïncidence des besoins et ne permet ni mesure commune ni conservation du pouvoir d'achat. La monnaie lève ces trois obstacles. Elle prend aujourd'hui deux formes principales : la monnaie fiduciaire — billets et pièces — et la monnaie scripturale — écritures sur compte, cartes et paiements mobiles.",
       motsCles: ["troc", "monnaie", "monnaie fiduciaire", "monnaie scripturale", "monnaie électronique", "moyen de paiement", "confiance"],
-      image: { file: "t11_u2_troc.jpg", legende: "Figure 8 — Du troc à la monnaie : la double coïncidence des besoins." },
+      image: { file: "t11_u2_troc.jpg", legende: "Figure 12 — Du troc à la monnaie : la double coïncidence des besoins." },
       contenu: [
         {
           sousTitre: "1. Le troc et ses limites",
@@ -175,7 +175,7 @@ const U = {
       ],
       synthese: "Donc, la monnaie remplit trois fonctions : elle mesure la valeur — unité de compte ; elle permet de payer — intermédiaire des échanges ; elle conserve le pouvoir d'achat — réserve de valeur. La dernière est la plus fragile, car elle dépend de l'évolution des prix et de la confiance dans la monnaie.",
       motsCles: ["unité de compte", "intermédiaire des échanges", "réserve de valeur", "pouvoir d'achat", "prix", "confiance"],
-      image: { file: "t11_u2_fonctions.png", legende: "Figure 9 — Les trois fonctions de la monnaie." },
+      image: { file: "t11_u2_fonctions.png", legende: "Figure 13 — Les trois fonctions de la monnaie." },
       contenu: [
         {
           sousTitre: "1. Unité de compte",
@@ -289,7 +289,7 @@ const U = {
       ],
       synthese: "Donc, la masse monétaire mesure la quantité de moyens de paiement en circulation : espèces et dépôts à vue. Le marché monétaire, lui, est le marché de court terme où les banques s'échangent les liquidités dont elles ont besoin pour équilibrer leur trésorerie.",
       motsCles: ["masse monétaire", "agrégat monétaire", "dépôts à vue", "liquidité", "marché monétaire", "court terme", "trésorerie"],
-      image: { file: "t11_u2_masse.png", legende: "Figure 10 — La masse monétaire et le marché monétaire." },
+      image: { file: "t11_u2_masse.png", legende: "Figure 14 — La masse monétaire et le marché monétaire." },
       contenu: [
         {
           sousTitre: "1. La masse monétaire",
@@ -399,7 +399,7 @@ const U = {
       ],
       synthese: "Donc, les banques créent de la monnaie en accordant des crédits : chaque crédit inscrit un dépôt nouveau, qui circule et alimente de nouveaux dépôts. Ce mécanisme est encadré par les réserves obligatoires, le risque de crédit et l'action de la banque centrale : sans ces limites, la création monétaire alimenterait la hausse des prix.",
       motsCles: ["création monétaire", "crédit", "dépôt", "réserves obligatoires", "multiplicateur de crédit", "banque centrale", "liquidité"],
-      image: { file: "t11_u2_creation.png", legende: "Figure 11 — Le mécanisme de la création monétaire par le crédit." },
+      image: { file: "t11_u2_creation.png", legende: "Figure 15 — Le mécanisme de la création monétaire par le crédit." },
       contenu: [
         {
           sousTitre: "1. Le crédit crée le dépôt",
@@ -514,7 +514,7 @@ const U = {
       ],
       synthese: "Donc, la banque centrale est l'institution publique qui émet la monnaie, fixe le taux directeur et les réserves obligatoires, et refinance les banques. Les banques commerciales, elles, collectent les dépôts du public et accordent les crédits. Le taux directeur se transmet aux crédits distribués à l'économie.",
       motsCles: ["banque centrale", "banque commerciale", "taux directeur", "réserves obligatoires", "refinancement", "prêteur en dernier ressort", "stabilité financière"],
-      image: { file: "t11_u2_banques.png", legende: "Figure 12 — Banque centrale et banques commerciales." },
+      image: { file: "t11_u2_banques.png", legende: "Figure 16 — Banque centrale et banques commerciales." },
       contenu: [
         {
           sousTitre: "1. La banque centrale",
@@ -626,7 +626,7 @@ const U = {
       ],
       synthese: "Donc, un agent est en besoin de financement quand ses dépenses dépassent ses ressources ; il est en capacité de financement quand son épargne dépasse ses dépenses. Le système financier met en relation les deux : c'est la fonction essentielle du financement de l'économie.",
       motsCles: ["besoin de financement", "capacité de financement", "épargne", "investissement", "système financier", "taux d'intérêt", "intermédiation"],
-      image: { file: "t11_u2_financement.png", legende: "Figure 13 — Besoin et capacité de financement des agents." },
+      image: { file: "t11_u2_financement.png", legende: "Figure 17 — Besoin et capacité de financement des agents." },
       contenu: [
         {
           sousTitre: "1. Le besoin de financement",
@@ -737,7 +737,7 @@ const U = {
       ],
       synthese: "Donc, l'autofinancement réunit le bénéfice conservé et les amortissements : c'est la ressource interne de l'entreprise. Il ne coûte rien et préserve l'indépendance, mais il dépend du résultat et reste souvent insuffisant pour financer de gros investissements.",
       motsCles: ["financement interne", "autofinancement", "bénéfice conservé", "amortissement", "trésorerie", "indépendance financière", "capacité d'investissement"],
-      image: { file: "t11_u2_autofinancement.png", legende: "Figure 14 — Le financement interne : de la ressource à l'autofinancement." },
+      image: { file: "t11_u2_autofinancement.png", legende: "Figure 18 — Le financement interne : de la ressource à l'autofinancement." },
       contenu: [
         {
           sousTitre: "1. Les ressources internes de l'entreprise",
@@ -853,7 +853,7 @@ const U = {
       ],
       synthese: "Donc, le financement intermédié passe par une banque qui transforme des dépôts en crédits, évalue le risque et exige souvent des garanties. L'emprunteur rembourse par échéances qui mêlent capital et intérêts. Le crédit permet d'investir, mais il crée une dette qu'il faut savoir rembourser.",
       motsCles: ["financement intermédié", "crédit bancaire", "intermédiation", "garantie", "caution", "échéance", "taux"],
-      image: { file: "t11_u2_credit.png", legende: "Figure 15 — Le crédit bancaire : de l'épargne collectée au prêt accordé." },
+      image: { file: "t11_u2_credit.png", legende: "Figure 19 — Le crédit bancaire : de l'épargne collectée au prêt accordé." },
       contenu: [
         {
           sousTitre: "1. L'intermédiation bancaire",
@@ -966,7 +966,7 @@ const U = {
       ],
       synthese: "Donc, le financement désintermédié met directement en relation l'entreprise qui cherche des fonds et les épargnants, par actions ou par obligations. L'action fait entrer de nouveaux propriétaires, l'obligation crée une dette remboursable à terme. Ce mode reste réservé aux entreprises d'une certaine taille : les petites structures continuent de s'adresser à leur banque.",
       motsCles: ["financement désintermédié", "marché financier", "action", "obligation", "dividende", "augmentation de capital", "échéance"],
-      image: { file: "t11_u2_marches.png", legende: "Figure 16 — Financement intermédié et financement désintermédié." },
+      image: { file: "t11_u2_marches.png", legende: "Figure 20 — Financement intermédié et financement désintermédié." },
       contenu: [
         {
           sousTitre: "1. Intermédié et désintermédié",
@@ -1077,7 +1077,7 @@ const U = {
       ],
       synthese: "Donc, le taux d'intérêt est le prix de l'argent : il rémunère le renoncement à la consommation, couvre le risque de défaut et compense la perte de pouvoir d'achat. Avec des intérêts simples, le calcul est Intérêt = capital × taux × durée, les intérêts étant calculés sur le capital initial.",
       motsCles: ["taux d'intérêt", "capital", "durée", "intérêts simples", "prime de risque", "pouvoir d'achat", "coût du crédit"],
-      image: { file: "t11_u2_interets.png", legende: "Figure 17 — Le calcul des intérêts simples : capital × taux × durée." },
+      image: { file: "t11_u2_interets.png", legende: "Figure 21 — Le calcul des intérêts simples : capital × taux × durée." },
       contenu: [
         {
           sousTitre: "1. Le prix de l'argent",
@@ -1190,7 +1190,7 @@ const U = {
       ],
       synthese: "Donc, la valeur acquise est la somme obtenue à l'échéance : le capital augmenté des intérêts simples, soit capital × (1 + taux × durée). Elle croît proportionnellement au taux et à la durée. Pour un emprunteur, c'est la somme totale à rembourser.",
       motsCles: ["valeur acquise", "capital", "intérêts", "échéance", "durée", "remboursement", "placement"],
-      image: { file: "t11_u2_valeur.png", legende: "Figure 18 — Valeur acquise : capital et intérêts à l'échéance." },
+      image: { file: "t11_u2_valeur.png", legende: "Figure 22 — Valeur acquise : capital et intérêts à l'échéance." },
       contenu: [
         {
           sousTitre: "1. Du capital à la valeur acquise",
@@ -1301,7 +1301,7 @@ const U = {
       ],
       synthese: "Donc, le taux nominal est le taux affiché, celui qui calcule les intérêts versés ; le taux réel en retranche la hausse des prix et mesure le gain en pouvoir d'achat. Quand la hausse des prix dépasse le taux nominal, le taux réel devient négatif : le prêteur perd et l'emprunteur gagne.",
       motsCles: ["taux nominal", "taux réel", "hausse des prix", "pouvoir d'achat", "indexation", "épargne", "dette"],
-      image: { file: "t11_u2_taux.png", legende: "Figure 19 — Taux nominal, hausse des prix et taux réel." },
+      image: { file: "t11_u2_taux.png", legende: "Figure 23 — Taux nominal, hausse des prix et taux réel." },
       contenu: [
         {
           sousTitre: "1. Le taux nominal",
@@ -1415,7 +1415,7 @@ const U = {
       ],
       synthese: "Donc, le risque de crédit est le risque de non-remboursement, auquel s'ajoutent le risque de taux, le risque de liquidité et le risque de change. La banque l'évalue par l'étude du dossier, l'exige de garanties et une prime de risque dans le taux. L'emprunteur, lui, se protège en empruntant le juste nécessaire.",
       motsCles: ["risque de crédit", "risque de taux", "risque de liquidité", "garantie", "caution solidaire", "défaut", "prime de risque"],
-      image: { file: "t11_u2_risques.png", legende: "Figure 20 — Les risques de crédit et les moyens de les prévenir." },
+      image: { file: "t11_u2_risques.png", legende: "Figure 24 — Les risques de crédit et les moyens de les prévenir." },
       contenu: [
         {
           sousTitre: "1. Le risque de défaut",

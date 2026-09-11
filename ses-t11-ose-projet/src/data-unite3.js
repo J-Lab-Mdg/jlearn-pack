@@ -64,7 +64,7 @@ const U = {
       ],
       synthese: "Donc, le marché est le lieu réel ou virtuel où se rencontrent l'offre et la demande. Les offreurs proposent un bien ou un service, les demandeurs veulent l'obtenir, et le prix qui se forme coordonne leurs décisions. Le marché fixe le prix et la quantité échangée sans qu'aucune autorité ne les décide.",
       motsCles: ["marché", "offreur", "demandeur", "prix", "échange", "bien et service", "coordination"],
-      image: { file: "t11_u3_marche.jpg", legende: "Figure 21 — Un marché local : la rencontre des offreurs et des demandeurs." },
+      image: { file: "t11_u3_marche.jpg", legende: "Figure 25 — Un marché local : la rencontre des offreurs et des demandeurs." },
       contenu: [
         {
           sousTitre: "1. Le lieu de la rencontre",
@@ -175,7 +175,7 @@ const U = {
       ],
       synthese: "Donc, la demande est la quantité d'un bien que les acheteurs veulent et peuvent acheter à un prix donné. La loi de la demande énonce que la quantité demandée baisse quand le prix monte. Une variation de prix déplace le point le long de la courbe ; une variation du revenu, des goûts ou du nombre d'acheteurs déplace la courbe entière.",
       motsCles: ["demande", "loi de la demande", "quantité demandée", "courbe de demande", "prix", "revenu", "substitution"],
-      image: { file: "t11_u3_demande.png", legende: "Figure 22 — La courbe de demande : prix et quantité demandée." },
+      image: { file: "t11_u3_demande.png", legende: "Figure 26 — La courbe de demande : prix et quantité demandée." },
       contenu: [
         {
           sousTitre: "1. La demande : vouloir et pouvoir",
@@ -290,7 +290,7 @@ const U = {
       ],
       synthese: "Donc, l'offre est la quantité d'un bien que les vendeurs sont prêts à proposer à un prix donné. La loi de l'offre énonce que la quantité offerte augmente avec le prix, parce qu'un prix plus élevé rend la production rentable. Une variation du coût des facteurs, de la technique ou du nombre d'offreurs déplace la courbe entière.",
       motsCles: ["offre", "loi de l'offre", "quantité offerte", "courbe d'offre", "coût de production", "progrès technique", "offre globale"],
-      image: { file: "t11_u3_offre.png", legende: "Figure 23 — La courbe d'offre : prix et quantité offerte." },
+      image: { file: "t11_u3_offre.png", legende: "Figure 27 — La courbe d'offre : prix et quantité offerte." },
       contenu: [
         {
           sousTitre: "1. L'offre : vouloir et pouvoir vendre",
@@ -407,7 +407,7 @@ const U = {
       ],
       synthese: "Donc, l'équilibre du marché est atteint quand la quantité offerte égale la quantité demandée : il détermine à la fois le prix et la quantité échangée. Au-dessus du prix d'équilibre, l'excédent fait baisser le prix ; en dessous, la pénurie le fait monter. Quand l'offre ou la demande se déplace, un nouvel équilibre s'établit.",
       motsCles: ["équilibre", "prix d'équilibre", "quantité d'équilibre", "excédent", "pénurie", "ajustement", "tâtonnement"],
-      image: { file: "t11_u3_equilibre.png", legende: "Figure 24 — La croix offre-demande : le prix d'équilibre." },
+      image: { file: "t11_u3_equilibre.png", legende: "Figure 28 — La croix offre-demande : le prix d'équilibre." },
       contenu: [
         {
           sousTitre: "1. La rencontre des deux courbes",
@@ -521,7 +521,7 @@ const U = {
       ],
       synthese: "Donc, la concurrence pure et parfaite repose sur cinq conditions : atomicité du marché, homogénéité des produits, transparence de l'information, libre entrée et sortie, libre circulation des facteurs. Quand elles sont réunies, personne ne peut imposer son prix : tous les agents sont preneurs de prix et le marché fixe le prix d'équilibre.",
       motsCles: ["concurrence", "concurrence pure et parfaite", "atomicité", "homogénéité", "transparence", "libre entrée", "preneur de prix"],
-      image: { file: "t11_u3_cpp.png", legende: "Figure 25 — Les cinq conditions de la concurrence pure et parfaite." },
+      image: { file: "t11_u3_cpp.png", legende: "Figure 29 — Les cinq conditions de la concurrence pure et parfaite." },
       contenu: [
         {
           sousTitre: "1. L'atomicité du marché",
@@ -634,7 +634,7 @@ const U = {
       ],
       synthese: "Donc, les marchés se distinguent par le nombre d'offreurs, la nature des produits et les barrières à l'entrée. De la concurrence pure et parfaite au monopole, le pouvoir de marché grandit : le prix s'élève et la quantité échangée diminue. C'est pourquoi la puissance publique encadre les marchés concentrés.",
       motsCles: ["structure de marché", "concurrence monopolistique", "oligopole", "monopole", "barrière à l'entrée", "pouvoir de marché", "régulation"],
-      image: { file: "t11_u3_structures.png", legende: "Figure 26 — Les structures de marché, du plus concurrentiel au moins concurrentiel." },
+      image: { file: "t11_u3_structures.png", legende: "Figure 30 — Les structures de marché, du plus concurrentiel au moins concurrentiel." },
       contenu: [
         {
           sousTitre: "1. Le nombre d'offreurs",
@@ -745,7 +745,7 @@ const U = {
       ],
       synthese: "Donc, l'échange volontaire est mutuellement avantageux : chacun y gagne. Le gain de l'acheteur est son surplus de consommateur, égal à sa disposition à payer moins le prix payé. Au prix d'équilibre d'un marché concurrentiel, tous les échanges avantageux se réalisent, ce qui rend ce marché efficace.",
       motsCles: ["gain à l'échange", "disposition à payer", "surplus du consommateur", "échange volontaire", "prix du marché", "utilité", "efficacité"],
-      image: { file: "t11_u3_gain.png", legende: "Figure 27 — Le gain à l'échange : le surplus du consommateur." },
+      image: { file: "t11_u3_gain.png", legende: "Figure 31 — Le gain à l'échange : le surplus du consommateur." },
       contenu: [
         {
           sousTitre: "1. Pourquoi l'échange profite-t-il aux deux ?",
@@ -859,7 +859,7 @@ const U = {
       ],
       synthese: "Donc, le surplus de production est la différence entre le prix reçu et le coût de production. Ajouté au surplus du consommateur, il forme le surplus total, qui mesure la richesse créée par l'échange. Le marché concurrentiel est efficace parce qu'à l'équilibre ce surplus total est maximal : ni trop ni trop peu d'unités ne sont échangées.",
       motsCles: ["surplus de production", "surplus total", "coût de production", "efficacité", "équilibre", "richesse créée", "rente"],
-      image: { file: "t11_u3_surplus.png", legende: "Figure 28 — Le surplus de production et le surplus total à l'équilibre." },
+      image: { file: "t11_u3_surplus.png", legende: "Figure 32 — Le surplus de production et le surplus total à l'équilibre." },
       contenu: [
         {
           sousTitre: "1. Le gain du producteur",
@@ -968,7 +968,7 @@ const U = {
       ],
       synthese: "Donc, un marché est imparfait quand les offreurs disposent d'un pouvoir sur le prix : nombre limité d'offreurs, différenciation des produits, entente et barrières à l'entrée. Le prix s'élève au-dessus du coût de production, la quantité échangée diminue, et la société perd une partie du gain de l'échange.",
       motsCles: ["imperfection du marché", "pouvoir de marché", "différenciation", "entente", "barrière à l'entrée", "perte sèche", "régulation"],
-      image: { file: "t11_u3_imperfections.png", legende: "Figure 29 — Les imperfections du marché et leurs conséquences." },
+      image: { file: "t11_u3_imperfections.png", legende: "Figure 33 — Les imperfections du marché et leurs conséquences." },
       contenu: [
         {
           sousTitre: "1. Le nombre limité d'offreurs",
@@ -1081,7 +1081,7 @@ const U = {
       ],
       synthese: "Donc, l'asymétrie d'information est une défaillance du marché : celui qui en sait plus peut en profiter. Elle provoque la sélection adverse — les mauvais produits chassent les bons — et l'aléa moral — le comportement change après la signature. Information obligatoire, labels, garanties et réputation permettent d'y remédier.",
       motsCles: ["asymétrie d'information", "sélection adverse", "aléa moral", "confiance", "label", "garantie", "régulation"],
-      image: { file: "t11_u3_asymetrie.jpg", legende: "Figure 30 — L'asymétrie d'information sur un marché de l'occasion." },
+      image: { file: "t11_u3_asymetrie.jpg", legende: "Figure 34 — L'asymétrie d'information sur un marché de l'occasion." },
       contenu: [
         {
           sousTitre: "1. Quand l'un en sait plus que l'autre",
@@ -1197,7 +1197,7 @@ const U = {
       ],
       synthese: "Donc, le marché échoue quand le prix ne dit pas tout le coût ni tout l'avantage : l'externalité négative fait produire trop, le bien collectif n'est pas fourni en quantité suffisante. Ces défaillances du marché appellent une action collective, le plus souvent publique.",
       motsCles: ["externalité", "externalité négative", "externalité positive", "bien collectif", "passager clandestin", "bien commun", "taxe"],
-      image: { file: "t11_u3_externalites.png", legende: "Figure 31 — Externalités négatives et biens collectifs." },
+      image: { file: "t11_u3_externalites.png", legende: "Figure 35 — Externalités négatives et biens collectifs." },
       contenu: [
         {
           sousTitre: "1. Un coût que personne ne paie",
@@ -1308,7 +1308,7 @@ const U = {
       ],
       synthese: "Donc, l'État intervient pour corriger les défaillances du marché — externalités, biens collectifs, asymétrie d'information, concurrence imparfaite — et pour réduire les inégalités. Il poursuit quatre objectifs : la croissance, l'emploi, la stabilité des prix et l'équilibre extérieur. Son action a un coût, qu'il faut comparer au bénéfice attendu.",
       motsCles: ["intervention de l'État", "défaillance du marché", "service public", "inégalités", "redistribution", "croissance", "réglementation"],
-      image: { file: "t11_u3_etat.png", legende: "Figure 32 — Les raisons de l'intervention de l'État dans l'économie." },
+      image: { file: "t11_u3_etat.png", legende: "Figure 36 — Les raisons de l'intervention de l'État dans l'économie." },
       contenu: [
         {
           sousTitre: "1. Ce que le marché ne fournit pas",
@@ -1424,7 +1424,7 @@ const U = {
       ],
       synthese: "Donc, la politique conjoncturelle agit à court terme sur l'activité par deux leviers : le budget — dépenses et impôts — et la monnaie — taux d'intérêt et quantité de monnaie en circulation. On dépense davantage pour relancer une économie ralentie, on dépense moins et on relève les taux pour calmer une économie qui surchauffe.",
       motsCles: ["conjoncture", "politique conjoncturelle", "relance", "rigueur", "politique budgétaire", "politique monétaire", "inflation"],
-      image: { file: "t11_u3_politiques.png", legende: "Figure 33 — Relance et rigueur : les deux orientations de la politique conjoncturelle." },
+      image: { file: "t11_u3_politiques.png", legende: "Figure 37 — Relance et rigueur : les deux orientations de la politique conjoncturelle." },
       contenu: [
         {
           sousTitre: "1. La conjoncture",

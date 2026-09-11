@@ -2252,6 +2252,174 @@ def fig_pyramide():
     print("Figure écrite : t11_u5_pyramide.png")
 
 
+# ------------------------------------------------------------
+# Figure 1 — Les facteurs de production et la combinaison productive
+# ------------------------------------------------------------
+def fig_facteurs():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les facteurs de production et la combinaison productive")
+
+    facteurs = [("TRAVAIL", "Effort physique et intellectuel", "des personnes", 70, 140, 370, BLEU, BLEU_C),
+                ("CAPITAL", "Machines, bâtiments, outillage", "et moyens financiers", 70, 300, 370, ORANGE, JAUNE_C),
+                ("RESSOURCES", "Matières premières, énergie", "et ressources naturelles", 70, 460, 370, VERT, VERT_C)]
+    for t, s1, s2, a, b, l, bord, fond in facteurs:
+        d.rounded_rectangle([a, b, a + 340, b + 130], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 340, b + 44), t, F_BOLD, BLANC)
+        texte_centre(d, (a, b + 50, a + 340, b + 90), s1, F_MINI, NOIR)
+        texte_centre(d, (a, b + 90, a + 340, b + 126), s2, F_MINI, NOIR)
+        fleche(d, a + 342, b + 65, 560, 350, GRIS, 3)
+
+    d.rounded_rectangle([562, 260, 830, 440], radius=12, fill=VIOLET_C, outline=VIOLET, width=4)
+    texte_centre(d, (562, 260, 830, 310), "COMBINAISON", F_BOLD, VIOLET)
+    texte_centre(d, (562, 310, 830, 360), "PRODUCTIVE", F_BOLD, VIOLET)
+    texte_centre(d, (562, 380, 830, 434), "la recette retenue par", F_MINI, NOIR)
+    texte_centre(d, (562, 400, 830, 434), "l'entreprise", F_MINI, NOIR)
+    fleche(d, 832, 350, 1000, 350, GRIS, 3)
+
+    d.rounded_rectangle([1000, 250, 1170, 450], radius=12, fill=ROSE_C, outline=ROUGE, width=4)
+    texte_centre(d, (1000, 250, 1170, 310), "PRODUCTION", F_BOLD, ROUGE)
+    texte_centre(d, (1000, 330, 1170, 380), "biens", F_SMALL, NOIR)
+    texte_centre(d, (1000, 370, 1170, 420), "et services", F_SMALL, NOIR)
+
+    d.rounded_rectangle([70, 610, 580, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((94, 632), "Facteurs complémentaires :", font=F_BOLD, fill=BLEU)
+    d.text((94, 664), "on ne produit pas sans les réunir.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 610, 1170, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((664, 632), "Facteurs substituables :", font=F_BOLD, fill=ORANGE)
+    d.text((664, 664), "une machine peut remplacer de la main-d'œuvre.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u1_facteurs.png"))
+    print("Figure écrite : t11_u1_facteurs.png")
+
+
+# ------------------------------------------------------------
+# Figure 3 — Recettes, coûts et profit
+# ------------------------------------------------------------
+def fig_recettes():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Recettes, coûts totaux et profit")
+
+    y0 = 140
+    hauteur = 90
+    d.text((70, y0 - 40), "Recette totale : prix × quantité vendue", font=F_BOLD, fill=BLEU)
+    d.rounded_rectangle([70, y0, 1120, y0 + hauteur], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    texte_centre(d, (70, y0, 1120, y0 + hauteur), "RECETTE TOTALE", F_BOLD, BLEU)
+
+    d.rounded_rectangle([70, y0 + hauteur, 630, y0 + 2 * hauteur], radius=8, fill=JAUNE_C,
+                        outline=ORANGE, width=3)
+    texte_centre(d, (70, y0 + hauteur, 630, y0 + 2 * hauteur), "COÛT TOTAL", F_BOLD, ORANGE)
+    d.rounded_rectangle([630, y0 + hauteur, 1120, y0 + 2 * hauteur], radius=8, fill=VERT_C,
+                        outline=VERT, width=3)
+    texte_centre(d, (630, y0 + hauteur, 1120, y0 + 2 * hauteur), "PROFIT", F_BOLD, VERT)
+    d.line([630, y0 + hauteur, 630, y0 + 2 * hauteur], fill=BLANC, width=3)
+
+    d.text((1170, y0 + 10), "=", font=F_BOLD, fill=NOIR)
+
+    d.rounded_rectangle([70, 400, 600, 600], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((94, 422), "Recette > coût total", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["Situation de bénéfice.", "L'entreprise couvre toutes ses charges"]):
+        d.text((94, 462 + i * 30), l, font=F_SMALL, fill=NOIR)
+    d.text((94, 522), "et dégage un résultat positif.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 400, 1170, 600], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((664, 422), "Recette < coût total", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(["Situation de perte.", "Chaque vente laisse une part des charges"]):
+        d.text((664, 462 + i * 30), l, font=F_SMALL, fill=NOIR)
+    d.text((664, 522), "non couverte.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([70, 620, 1170, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((94, 644), "Le seuil de rentabilité : quantité à partir de laquelle la recette couvre "
+                      "exactement le coût total ; en deçà l'entreprise perd, au-delà elle gagne.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u1_recettes.png"))
+    print("Figure écrite : t11_u1_recettes.png")
+
+
+# ------------------------------------------------------------
+# Figure 5 — La valeur ajoutée : mesure et répartition
+# ------------------------------------------------------------
+def fig_valeur_aj():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La valeur ajoutée : mesure et répartition")
+
+    d.rounded_rectangle([70, 130, 520, 240], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    texte_centre(d, (70, 130, 520, 190), "VALEUR DE LA PRODUCTION", F_BOLD, BLEU)
+    texte_centre(d, (70, 190, 520, 240), "chiffre d'affaires, stocks", F_MINI, NOIR)
+
+    d.rounded_rectangle([720, 130, 1170, 240], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    texte_centre(d, (720, 130, 1170, 190), "CONSOMMATIONS INTERMÉDIAIRES", F_BOLD, ORANGE)
+    texte_centre(d, (720, 190, 1170, 240), "biens et services achetés", F_MINI, NOIR)
+
+    d.line([522, 185, 718, 185], fill=GRIS, width=3)
+    texte_centre(d, (522, 150, 718, 220), "−", F_TITLE, NOIR)
+
+    d.rounded_rectangle([380, 290, 860, 400], radius=10, fill=VERT_C, outline=VERT, width=4)
+    texte_centre(d, (380, 290, 860, 360), "VALEUR AJOUTÉE", F_TITLE, VERT)
+    texte_centre(d, (380, 360, 860, 400), "richesse réellement créée", F_MINI, NOIR)
+    fleche(d, 620, 240, 620, 288, GRIS, 3)
+
+    parts = [("SALAIRES", "rémunération du travail", 70, 470, BLEU, BLEU_C),
+             ("IMPÔTS ET TAXES", "part de la collectivité", 380, 470, ORANGE, JAUNE_C),
+             ("AUTOFINANCEMENT", "investir et rembourser", 690, 470, VIOLET, VIOLET_C),
+             ("DIVIDENDES", "rémunération des propriétaires", 940, 470, ROUGE, ROSE_C)]
+    for t, s, a, b, bord, fond in parts:
+        d.rounded_rectangle([a, b, a + 240, b + 140], radius=10, fill=fond, outline=bord, width=3)
+        for i, l in enumerate(wrap(d, t, F_BOLD, 210)):
+            texte_centre(d, (a, b + 16 + i * 26, a + 240, b + 44 + i * 26), l, F_BOLD, bord)
+        for i, l in enumerate(wrap(d, s, F_MINI, 210)):
+            texte_centre(d, (a, b + 84 + i * 22, a + 240, b + 106 + i * 22), l, F_MINI, NOIR)
+        d.line([a + 120, b + 140, a + 120, 430], fill=GRIS, width=2)
+
+    d.rounded_rectangle([70, 640, 1170, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((94, 662), "La valeur ajoutée se partage : ce que l'entreprise produit revient à ceux qui "
+                      "y ont contribué.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u1_valeur_aj.png"))
+    print("Figure écrite : t11_u1_valeur_aj.png")
+
+
+# ------------------------------------------------------------
+# Figure 11 — Intérêts convergents et divergents
+# ------------------------------------------------------------
+def fig_conflits():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Intérêts convergents et divergents des parties prenantes")
+
+    d.rounded_rectangle([490, 290, 750, 410], radius=14, fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (490, 290, 750, 355), "L'ENTREPRISE", F_BOLD, BLEU)
+    texte_centre(d, (490, 355, 750, 405), "pérennité et résultat", F_MINI, NOIR)
+
+    acteurs = [("SALARIÉS", "Emploi, salaire, conditions", 60, 130, BLEU, BLEU_C),
+               ("ACTIONNAIRES", "Rentabilité, valeur de l'entreprise", 900, 130, ORANGE, JAUNE_C),
+               ("CLIENTS", "Qualité, prix, délais", 60, 470, VERT, VERT_C),
+               ("ÉTAT ET COLLECTIVITÉS", "Impôts, respect des règles", 900, 470, VIOLET, VIOLET_C)]
+    for t, s, a, b, bord, fond in acteurs:
+        d.rounded_rectangle([a, b, a + 280, b + 120], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 280, b + 42], fill=bord)
+        texte_centre(d, (a, b, a + 280, b + 42), t, F_BOLD, BLANC)
+        for i, l in enumerate(wrap(d, s, F_MINI, 240)):
+            d.text((a + 18, b + 56 + i * 22), l, font=F_MINI, fill=NOIR)
+        d.line([a + 140, b + 60, 620, 350], fill=GRIS, width=2)
+
+    d.rounded_rectangle([60, 610, 590, 690], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 632), "Ce qui rapproche", font=F_BOLD, fill=VERT)
+    d.text((84, 664), "La survie de l'entreprise profite à tous.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 610, 1170, 690], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((664, 632), "Ce qui oppose", font=F_BOLD, fill=ROUGE)
+    d.text((664, 664), "Hausse des salaires contre hausse des dividendes.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u1_conflits.png"))
+    print("Figure écrite : t11_u1_conflits.png")
+
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_couts()
@@ -2303,3 +2471,7 @@ if __name__ == "__main__":
     fig_coutumier()
     fig_lois()
     fig_pyramide()
+    fig_facteurs()
+    fig_recettes()
+    fig_valeur_aj()
+    fig_conflits()

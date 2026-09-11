@@ -61,7 +61,7 @@ const U = {
       ],
       synthese: "Donc, la socialisation est le processus par lequel l'individu intériorise les normes, les valeurs et les pratiques de sa société. Elle commence à la naissance et continue toute la vie. Elle est la condition de la vie collective : sans repères partagés, aucune société ne tient.",
       motsCles: ["socialisation", "norme", "valeur", "intériorisation", "inné et acquis", "cohésion sociale", "intégration"],
-      image: { file: "t11_u4_socialisation.jpg", legende: "Figure 34 — La socialisation : la famille, l'école et le groupe de pairs." },
+      image: { file: "t11_u4_socialisation.jpg", legende: "Figure 38 — La socialisation : la famille, l'école et le groupe de pairs." },
       contenu: [
         {
           sousTitre: "1. Devenir membre de la société",
@@ -177,7 +177,7 @@ const U = {
       ],
       synthese: "Donc, la personnalité sociale est l'ensemble des manières d'agir, de penser et de sentir acquises dans son milieu, tandis que l'identité sociale est le sentiment d'appartenir à des groupes. Chacun cumule plusieurs appartenances, qui évoluent au fil de la vie et se construisent dans le regard d'autrui.",
       motsCles: ["personnalité sociale", "identité sociale", "identité individuelle", "groupe d'appartenance", "rôle social", "citoyenneté", "patriotisme"],
-      image: { file: "t11_u4_identite.png", legende: "Figure 35 — Identité individuelle et identités sociales d'une même personne." },
+      image: { file: "t11_u4_identite.png", legende: "Figure 39 — Identité individuelle et identités sociales d'une même personne." },
       contenu: [
         {
           sousTitre: "1. La personnalité sociale",
@@ -289,7 +289,7 @@ const U = {
       ],
       synthese: "Donc, l'imitation est un mécanisme de socialisation par lequel on reproduit une conduite observée chez un modèle. Elle permet d'apprendre vite, mais elle ne suffit pas : elle peut transmettre des conduites peu souhaitables et ne donne pas le sens des règles. L'injonction et l'interaction la complètent.",
       motsCles: ["imitation", "modèle", "observation", "reproduction", "conduite", "médias", "apprentissage social"],
-      image: { file: "t11_u4_imitation.png", legende: "Figure 36 — Le mécanisme de l'imitation : du modèle à la conduite reproduite." },
+      image: { file: "t11_u4_imitation.png", legende: "Figure 40 — Le mécanisme de l'imitation : du modèle à la conduite reproduite." },
       contenu: [
         {
           sousTitre: "1. Observer, retenir, reproduire",
@@ -404,7 +404,7 @@ const U = {
       ],
       synthese: "Donc, l'injonction énonce la règle et l'interdit, l'interaction construit la conduite dans l'échange avec autrui, et l'imitation transmet l'exemple. Ces trois mécanismes agissent ensemble : chacun complète ce que les autres ne peuvent transmettre seuls.",
       motsCles: ["injonction", "interaction", "consigne", "interdit", "obligation", "échange", "regard d'autrui"],
-      image: { file: "t11_u4_mecanismes.png", legende: "Figure 37 — Les trois mécanismes de la socialisation : imitation, injonction, interaction." },
+      image: { file: "t11_u4_mecanismes.png", legende: "Figure 41 — Les trois mécanismes de la socialisation : imitation, injonction, interaction." },
       contenu: [
         {
           sousTitre: "1. L'injonction : la règle énoncée",
@@ -517,7 +517,7 @@ const U = {
       ],
       synthese: "Donc, la socialisation primaire est celle de la petite enfance, assurée par la famille et le proche entourage. Elle transmet le langage, les manières d'être et les interdits fondamentaux, dans un cadre affectif qui marque durablement la personnalité.",
       motsCles: ["socialisation primaire", "famille", "petite enfance", "langage", "interdit", "famille élargie", "personnalité"],
-      image: { file: "t11_u4_primaire.png", legende: "Figure 38 — La socialisation primaire : les agents et les apprentissages." },
+      image: { file: "t11_u4_primaire.png", legende: "Figure 42 — La socialisation primaire : les agents et les apprentissages." },
       contenu: [
         {
           sousTitre: "1. La première socialisation",
@@ -633,7 +633,7 @@ const U = {
       ],
       synthese: "Donc, la socialisation secondaire prolonge la socialisation primaire : l'école, les pairs, le travail, les médias et les associations transmettent des règles plus formelles et des rôles nouveaux. Les deux se complètent, et peuvent parfois se contredire, ce qui oblige l'individu à choisir et à construire sa propre conduite.",
       motsCles: ["socialisation secondaire", "école", "groupe de pairs", "travail", "médias", "rôle social", "socialisation anticipatrice"],
-      image: { file: "t11_u4_secondaire.png", legende: "Figure 39 — Socialisation primaire et socialisation secondaire : continuité et complémentarité." },
+      image: { file: "t11_u4_secondaire.png", legende: "Figure 43 — Socialisation primaire et socialisation secondaire : continuité et complémentarité." },
       contenu: [
         {
           sousTitre: "1. Après la petite enfance",
@@ -746,7 +746,7 @@ const U = {
       ],
       synthese: "Donc, le contrôle social est l'ensemble des moyens par lesquels la société obtient le respect des normes. Il prend deux formes : le contrôle formel, exercé par des institutions spécialisées, et le contrôle informel, exercé par l'entourage au quotidien. Il punit les écarts, mais valorise aussi les conduites conformes.",
       motsCles: ["contrôle social", "contrôle formel", "contrôle informel", "institution", "réprobation", "réputation", "sanction"],
-      image: { file: "t11_u4_controle.png", legende: "Figure 40 — Contrôle social formel et contrôle social informel." },
+      image: { file: "t11_u4_controle.png", legende: "Figure 44 — Contrôle social formel et contrôle social informel." },
       contenu: [
         {
           sousTitre: "1. Obtenir le respect des normes",
@@ -863,7 +863,7 @@ const U = {
       ],
       synthese: "Donc, la norme sociale vient des usages et se sanctionne par la réprobation diffuse, tandis que la norme juridique est écrite, édictée par l'autorité publique et sanctionnée de façon organisée. Les deux se recouvrent souvent : la loi consolide fréquemment une règle sociale devenue essentielle.",
       motsCles: ["norme", "norme sociale", "norme juridique", "usage", "sanction", "loi", "coutume"],
-      image: { file: "t11_u4_normes.png", legende: "Figure 41 — Normes sociales et normes juridiques : origine et sanction." },
+      image: { file: "t11_u4_normes.png", legende: "Figure 45 — Normes sociales et normes juridiques : origine et sanction." },
       contenu: [
         {
           sousTitre: "1. La règle de conduite",
@@ -976,7 +976,7 @@ const U = {
       ],
       synthese: "Donc, la sanction est la réaction du groupe ou de l'institution à un comportement. Positive ou négative, formelle ou informelle, elle rappelle la norme, dissuade, répare et protège. Sa crédibilité dépend de sa proportionnalité : une sanction injuste produit l'effet inverse de celui recherché.",
       motsCles: ["sanction", "sanction positive", "sanction négative", "dissuasion", "réparation", "proportionnalité", "réinsertion"],
-      image: { file: "t11_u4_sanctions.png", legende: "Figure 42 — Les formes et les fonctions de la sanction." },
+      image: { file: "t11_u4_sanctions.png", legende: "Figure 46 — Les formes et les fonctions de la sanction." },
       contenu: [
         {
           sousTitre: "1. La réaction du groupe",
@@ -1094,7 +1094,7 @@ const U = {
       ],
       synthese: "Donc, la déviance est un écart par rapport aux normes admises : elle est toujours relative à un groupe, un lieu et une époque. Elle se manifeste par la transgression des normes sociales ou par le rejet des valeurs. Le regard du groupe suffit parfois à la créer, ce qui montre qu'elle est aussi une construction sociale.",
       motsCles: ["déviance", "transgression", "rejet des valeurs", "relativité", "étiquetage", "marginalité", "incivilité"],
-      image: { file: "t11_u4_deviance.png", legende: "Figure 43 — La déviance : transgression des normes et rejet des valeurs." },
+      image: { file: "t11_u4_deviance.png", legende: "Figure 47 — La déviance : transgression des normes et rejet des valeurs." },
       contenu: [
         {
           sousTitre: "1. L'écart par rapport à la norme",
@@ -1207,7 +1207,7 @@ const U = {
       ],
       synthese: "Donc, l'anomie est l'affaiblissement ou la disparition des repères collectifs : l'individu ne sait plus quelle règle suivre. Elle apparaît dans les périodes de changement rapide et favorise la déviance. La prévention passe par des cadres stables : école, famille, encadrement et perspectives d'avenir.",
       motsCles: ["anomie", "affaiblissement des normes", "changement social", "repères", "désarroi", "prévention", "encadrement"],
-      image: { file: "t11_u4_anomie.png", legende: "Figure 44 — L'anomie : quand les repères s'effacent, la déviance augmente." },
+      image: { file: "t11_u4_anomie.png", legende: "Figure 48 — L'anomie : quand les repères s'effacent, la déviance augmente." },
       contenu: [
         {
           sousTitre: "1. Quand les règles se brouillent",
@@ -1323,7 +1323,7 @@ const U = {
       ],
       synthese: "Donc, l'étiquetage et la stigmatisation montrent que la déviance se construit dans les interactions sociales : désignée durablement, la personne finit par se conformer à l'image qu'on lui renvoie. Nommer l'acte plutôt que la personne, sanctionner proportionnellement et ménager une réinsertion limitent ces effets.",
       motsCles: ["étiquetage", "stigmatisation", "prophétie auto-réalisatrice", "interaction", "exclusion", "dignité", "réinsertion"],
-      image: { file: "t11_u4_stigmatisation.jpg", legende: "Figure 45 — L'étiquetage : quand l'étiquette devient une identité." },
+      image: { file: "t11_u4_stigmatisation.jpg", legende: "Figure 49 — L'étiquetage : quand l'étiquette devient une identité." },
       contenu: [
         {
           sousTitre: "1. Désigner, c'est déjà agir",
