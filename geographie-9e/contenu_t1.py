@@ -7358,3 +7358,487 @@ SEANCES.append(dict(
                 "sous un arbre. Légende : changement de temps, vent, pluie, "
                 "pluie.",
 ))
+
+# ═══════════════════════════ SÉANCE 68 ═══════════════════════════
+SEANCES.append(dict(
+    n=68, semaine=22, titre="La population de la classe",
+    objectif="Donner l'effectif de la population de la classe.",
+    materiel="Schéma d'effectif, liste des élèves, ardoise et craie, cahier.",
+    illustration=("img_s68_a.png",
+                  "Illustration — Compter les élèves de la classe.", 700),
+    revision=[("Que mesure un thermomètre ?", "R.A. : La température."),
+              ("Cite les deux saisons de Madagascar.",
+               "R.A. : La saison des pluies et la saison sèche.")],
+    mes=("Combien sommes-nous dans cette classe aujourd'hui ?",
+         "R.A. : On compte les élèves présents."),
+    analyse=[
+        ("Qu'appelle-t-on la population d'un lieu ?",
+         "R.A. : L'ensemble des personnes qui y vivent."),
+        ("Qu'appelle-t-on l'effectif ?",
+         "R.A. : Le nombre de personnes d'un groupe."),
+        ("Comment compte-t-on la classe ?",
+         "R.A. : En comptant les élèves un par un, sans en oublier."),
+        ("Que fait-on ensuite ?",
+         "R.A. : On écrit le nombre dans un tableau."),
+        ("Pourquoi compte-t-on ?",
+         "R.A. : Pour savoir de combien de places, de livres et de tables on a "
+         "besoin.")],
+    synthese="Donc, la population d'un lieu est l'ensemble des personnes qui y "
+             "vivent. L'effectif est le nombre de personnes d'un groupe. On compte la "
+             "classe pour connaître son effectif.",
+    application=("Compte les élèves de la classe et réponds : a) Combien "
+                 "de garçons ? b) Combien de filles ? c) Quel est l'effectif "
+                 "total ? d) Combien manque-t-il aujourd'hui ?",
+                 "Selon la classe : on additionne garçons et filles pour "
+                 "obtenir le total, et l'on compare avec la liste d'appel."),
+    evaluation=("1. Réponds par vrai ou faux : a) La population est "
+                "l'ensemble des habitants. b) L'effectif est le nombre de "
+                "personnes. c) On peut deviner l'effectif sans compter. d) Le "
+                "total se note dans un tableau.\n"
+                "2. Explique en deux phrases ce qu'est un effectif.",
+                "1. a) Vrai — b) Vrai — c) Faux — d) Vrai.\n"
+                "2. Exemple : « L'effectif est le nombre de personnes d'un "
+                "groupe. On le trouve en comptant chacune d'elles. »"),
+    lecon_titre="La population de la classe",
+    sections=[
+        ("1. Qu'est-ce que la population ?",
+         "La population d'un lieu, c'est l'ensemble des personnes qui y vivent. On "
+         "parle de la population d'une classe, d'une école, d'un village, d'une "
+         "ville ou d'un pays. La géographie s'intéresse beaucoup à la "
+         "population, parce que les hommes sont ceux qui transforment les paysages "
+         "étudiés au trimestre dernier."),
+        ("2. Compter la classe",
+         "La manière la plus sûre de connaître un effectif est de compter. On "
+         "compte les élèves un par un, une seule fois chacun, sans en oublier "
+         "ni en compter deux fois. Au début de l'année, le maître utilise la "
+         "liste d'appel : chaque nom appelé correspond à un élève "
+         "présent."),
+        ("3. L'effectif",
+         "Le résultat du comptage s'appelle l'effectif : c'est le nombre de "
+         "personnes d'un groupe à un moment donné. L'effectif change : il "
+         "baisse les jours d'absence et il change d'une année à l'autre. "
+         "C'est pourquoi on doit toujours dire à quelle date il a été "
+         "relevé."),
+        ("4. À quoi sert de compter ?",
+         "Compter n'est pas un jeu : c'est une nécessité. L'effectif de la "
+         "classe décide du nombre de tables, de manuels et de cahiers à "
+         "commander. Celui du village décide du nombre de salles de classe et "
+         "du nombre de fontaines à construire. Une école, une commune et un "
+         "État ont besoin de chiffres justes."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Le mot population vient du latin populus, qui désignait "
+             "l'ensemble des citoyens d'une ville. Le recensement, lui, existe depuis "
+             "l'Antiquité : on comptait déjà les habitants en Égypte "
+             "il y a plus de trois mille ans."),
+    resume=[
+        "La population est l'ensemble des personnes qui vivent dans un lieu.",
+        "L'effectif est le nombre de personnes d'un groupe.",
+        "On obtient l'effectif en comptant, sans oublier ni doubler personne.",
+        "L'effectif change : il faut toujours dire à quelle date.",
+        "Compter permet de prévoir le matériel et les constructions.",
+    ],
+    lexique=[("Population", "L'ensemble des personnes qui vivent dans un lieu."),
+             ("Effectif", "Le nombre de personnes d'un groupe."),
+             ("Compter", "Énumérer pour connaître le nombre."),
+             ("Total", "Le résultat d'une addition."),
+             ("Recensement", "Le comptage officiel de toute une population.")],
+    exercices=[
+        ("Complète avec : population — effectif — compter — total",
+         ["a) La …… est l'ensemble des habitants d'un lieu.",
+          "b) L'…… est le nombre de personnes d'un groupe.",
+          "c) Pour connaître un effectif, il faut ……",
+          "d) Le …… est le résultat d'une addition."],
+         ["a) La population", "b) L'effectif", "c) il faut compter",
+          "d) Le total"]),
+        ("Réponds par vrai ou faux.",
+         ["a) On peut deviner un effectif sans compter.",
+          "b) L'effectif d'une classe change d'une année à l'autre.",
+          "c) Le recensement compte toute une population.",
+          "d) La population ne concerne que les villes."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Faux"]),
+        ("Relie chaque mot à sa définition.",
+         ["La population", "L'effectif", "Le recensement", "Le total"],
+         ["Le nombre de personnes", "Le résultat de l'addition",
+          "Le comptage officiel", "L'ensemble des habitants"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Qu'appelle-t-on la population d'un lieu ?",
+          "b) Qu'appelle-t-on l'effectif ?",
+          "c) Comment obtient-on un effectif ?",
+          "d) À quoi sert de compter les élèves ?"],
+         ["a) C'est l'ensemble des personnes qui y vivent.",
+          "b) C'est le nombre de personnes d'un groupe.",
+          "c) On compte les personnes une par une.",
+          "d) Cela sert à prévoir tables, manuels et cahiers."]),
+    ],
+    consigne_ex5="Compte les élèves de ta classe, puis construis un tableau : "
+                 "garçons, filles, total, absents du jour.",
+    corrige_ex5="Tableau à quatre lignes avec les nombres de la classe ; le "
+                "total des présents plus les absents doit donner l'effectif de la "
+                "liste.",
+))
+
+# ═══════════════════════════ SÉANCE 69 ═══════════════════════════
+SEANCES.append(dict(
+    n=69, semaine=22, titre="La population de l'école",
+    objectif="Donner l'effectif de la population de l'école.",
+    materiel="Schéma des effectifs par niveau, tableau des classes, ardoise et "
+             "craie, cahier.",
+    illustration=("img_s69_a.png",
+                  "Illustration — Les effectifs de l'école, classe par "
+                  "classe.", 700),
+    revision=[("Qu'appelle-t-on l'effectif ?",
+               "R.A. : Le nombre de personnes d'un groupe."),
+              ("Comment obtient-on un effectif ?", "R.A. : En comptant.")],
+    mes=("Combien d'élèves y a-t-il dans toute l'école ?",
+         "R.A. : On additionne les effectifs de toutes les classes."),
+    analyse=[
+        ("Comment obtient-on l'effectif de l'école ?",
+         "R.A. : En additionnant les effectifs de chaque classe."),
+        ("Que place-t-on dans le tableau ?",
+         "R.A. : Le nom de la classe et son effectif."),
+        ("Comment appelle-t-on l'ensemble des élèves ?",
+         "R.A. : La population scolaire."),
+        ("Que fait-on du total ?",
+         "R.A. : On le compare à celui des autres années."),
+        ("Pourquoi l'école a-t-elle besoin de ce chiffre ?",
+         "R.A. : Pour prévoir les tables, les livres et les maîtres.")],
+    synthese="Donc, l'effectif de l'école s'obtient en additionnant les "
+             "effectifs de toutes les classes. On le présente dans un tableau, puis "
+             "sur un graphique.",
+    application=("Sur le schéma, réponds : a) Quel niveau a le plus "
+                 "d'élèves ? b) Lequel en a le moins ? c) Quel est le "
+                 "total ? d) Comment l'a-t-on trouvé ?",
+                 "a) Le 7e A, avec 34 élèves — b) Le 9e B, avec 26 — "
+                 "c) 180 élèves — d) En additionnant les six effectifs."),
+    evaluation=("1. Réponds par vrai ou faux : a) L'effectif de "
+                "l'école est la somme des classes. b) Un tableau ne sert "
+                "à rien. c) Le graphique montre les différences. d) On "
+                "compare les effectifs d'une année à l'autre.\n"
+                "2. Explique en deux phrases comment trouver l'effectif d'une "
+                "école.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Vrai.\n"
+                "2. Exemple : « On relève l'effectif de chaque classe. "
+                "Puis on additionne tous ces nombres. »"),
+    lecon_titre="La population de l'école",
+    sections=[
+        ("1. Compter toutes les classes",
+         "Connaître l'effectif de sa classe ne suffit pas : le directeur doit "
+         "connaître celui de toute l'école. Il demande donc à chaque "
+         "maître le nombre d'élèves de sa classe, puis il additionne. "
+         "Une école de six classes de trente élèves compte cent "
+         "quatre-vingts élèves."),
+        ("2. Le tableau par niveau",
+         "Les effectifs sont rangés dans un tableau : une ligne par classe, "
+         "avec le nom de la classe et le nombre d'élèves. Ce tableau permet "
+         "de voir aussitôt quelle classe est la plus chargée et laquelle est "
+         "la plus petite. C'est lui qui sert à répartir les fournitures."),
+        ("3. Le total de l'école",
+         "Le total s'obtient par une addition. Il s'appelle la population "
+         "scolaire de l'établissement. On le compare chaque année : si le "
+         "total augmente, il faudra peut-être ouvrir une nouvelle classe ou "
+         "construire une salle. Si elle baisse, il faudra comprendre pourquoi."),
+        ("4. Comparer deux écoles",
+         "On peut aussi comparer deux écoles d'un même village ou de deux "
+         "villages voisins. L'école du chef-lieu accueille souvent plus "
+         "d'élèves que celle du hameau, parce que les familles s'y "
+         "installent près des services et du marché. Cette comparaison "
+         "explique déjà pourquoi les villages grandissent."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "À Madagascar, le nombre d'élèves par classe dépasse "
+             "souvent quarante dans les écoles rurales. C'est l'un des défis "
+             "de l'école malgache depuis plusieurs dizaines d'années."),
+    resume=[
+        "L'effectif de l'école est la somme des effectifs de ses classes.",
+        "On relève d'abord classe par classe.",
+        "Le tableau présente une ligne par classe.",
+        "Le total s'appelle la population scolaire.",
+        "On compare les effectifs d'une année à l'autre et entre "
+        "écoles.",
+    ],
+    lexique=[("Population scolaire", "L'ensemble des élèves d'une "
+              "école."),
+             ("Additionner", "Réunir plusieurs nombres en un seul."),
+             ("Niveau", "La classe considérée : 7e, 8e, 9e."),
+             ("Comparer", "Chercher les ressemblances et les différences."),
+             ("Total", "Le résultat de l'addition.")],
+    exercices=[
+        ("Complète avec : additionne — tableau — total — classes",
+         ["a) On relève les effectifs de chaque ……",
+          "b) On range les nombres dans un ……",
+          "c) On les …… pour obtenir l'effectif de l'école.",
+          "d) Le résultat s'appelle le ……"],
+         ["a) de chaque classe", "b) dans un tableau", "c) On les additionne",
+          "d) le total"]),
+        ("Réponds par vrai ou faux.",
+         ["a) L'effectif de l'école se devine.",
+          "b) Le tableau présente une ligne par classe.",
+          "c) Le total permet de prévoir les besoins.",
+          "d) On ne peut pas comparer deux écoles."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Faux"]),
+        ("Relie chaque mot à son rôle.",
+         ["Le tableau", "Le total", "La comparaison", "Le niveau"],
+         ["La classe considérée", "Montre les différences",
+          "Range les effectifs", "Donne la population scolaire"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Comment obtient-on l'effectif d'une école ?",
+          "b) Que contient le tableau des effectifs ?",
+          "c) À quoi sert le total ?",
+          "d) Pourquoi compare-t-on deux écoles ?"],
+         ["a) On additionne les effectifs de chaque classe.",
+          "b) Il contient le nom de chaque classe et son effectif.",
+          "c) Il sert à prévoir tables, livres et maîtres.",
+          "d) Pour comprendre pourquoi un village attire plus d'élèves."]),
+    ],
+    consigne_ex5="Releve les effectifs de toutes les classes de ton école, "
+                 "construis le tableau, calcule le total et trace le graphique en "
+                 "bâtons.",
+    corrige_ex5="Tableau avec une ligne par classe ; total obtenu par addition ; "
+                "graphique en bâtons de hauteurs proportionnelles aux effectifs.",
+))
+
+# ═══════════════════════════ SÉANCE 70 ═══════════════════════════
+SEANCES.append(dict(
+    n=70, semaine=22, titre="La population du village",
+    objectif="Donner l'effectif de la population du village.",
+    materiel="Schéma classe-école-village, ardoise et craie, cahier.",
+    illustration=("img_s70_a.png",
+                  "Illustration — La classe dans l'école, l'école "
+                  "dans le village.", 700),
+    revision=[("Comment obtient-on l'effectif d'une école ?",
+               "R.A. : En additionnant les effectifs de ses classes."),
+              ("Qu'appelle-t-on la population ?",
+               "R.A. : L'ensemble des personnes qui vivent dans un lieu.")],
+    mes=("Combien d'habitants compte ton village, à ton avis ?",
+         "R.A. : On répond selon le village de l'élève."),
+    analyse=[
+        ("Quel est le plus petit ensemble ?", "R.A. : La classe."),
+        ("Quel est le plus grand ?", "R.A. : Le village."),
+        ("L'école est-elle dans le village ?", "R.A. : Oui."),
+        ("Comment connaît-on la population d'un village ?",
+         "R.A. : Par le recensement, ou par le chef du village."),
+        ("Cite trois lieux où vivent les hommes.",
+         "R.A. : Le village, la ville et la capitale.")],
+    synthese="Donc, la population se compte à plusieurs échelles : la "
+             "classe, l'école, le village, la ville et le pays. Chaque ensemble "
+             "est contenu dans le suivant.",
+    application=("Sur le schéma, réponds : a) Combien d'élèves dans "
+                 "la classe ? b) Dans l'école ? c) Combien d'habitants "
+                 "dans le village ? d) Lequel contient les autres ?",
+                 "a) 30 — b) 180 — c) 1 200 — d) Le village "
+                 "contient l'école, qui contient la classe."),
+    evaluation=("1. Réponds par vrai ou faux : a) Le village contient "
+                "l'école. b) L'école contient le village. c) Le "
+                "recensement compte les habitants. d) La population d'un village "
+                "ne change jamais.\n"
+                "2. Cite trois échelles de population, de la plus petite à "
+                "la plus grande.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Faux.\n"
+                "2. La classe, l'école, le village."),
+    lecon_titre="La population du village",
+    sections=[
+        ("1. Du plus petit au plus grand",
+         "La population se compte à plusieurs échelles, qui "
+         "s'emboîtent les unes dans les autres. La classe est contenue dans "
+         "l'école, l'école dans le village, le village dans la commune, la "
+         "commune dans la région, la région dans le pays. À chaque "
+         "échelle, le nombre d'habitants devient plus grand."),
+        ("2. Comment connaît-on la population d'un village ?",
+         "On ne peut pas compter les habitants un par un chaque année. On utilise "
+         "donc le recensement : une opération officielle au cours de laquelle des "
+         "agents vont de maison en maison noter le nombre de personnes, leur âge "
+         "et leur sexe. Entre deux recensements, le chef du village tient à "
+         "jour la liste des naissances, des décès et des arrivées."),
+        ("3. Le recensement",
+         "Le recensement est conduit par l'État, en général tous les dix ans. "
+         "Il donne la population de chaque village, de chaque ville et du pays "
+         "entier. Ces chiffres servent à décider où construire une "
+         "école, un dispensaire ou une route, et combien de députés "
+         "chaque région aura."),
+        ("4. Village, ville, capitale",
+         "Un village malgache compte en général quelques centaines à "
+         "quelques milliers d'habitants. Une ville en compte des dizaines de "
+         "milliers, et la capitale plus d'un million. Plus le lieu est grand, plus "
+         "il offre de services : hôpital, lycée, marché, banque. C'est "
+         "pour cela que les habitants des villages y viennent, et parfois s'y "
+         "installent."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Madagascar compte environ vingt-huit millions d'habitants. La "
+             "population a plus que doublé en quarante ans : c'est l'une des "
+             "croissances les plus rapides d'Afrique."),
+    resume=[
+        "Les échelles de population s'emboîtent : classe, école, "
+        "village, pays.",
+        "On ne peut pas compter tout le monde chaque année.",
+        "Le recensement compte les habitants, en général tous les dix ans.",
+        "Le chef du village tient à jour naissances et décès.",
+        "Un village compte des centaines d'habitants, une ville des dizaines "
+        "de milliers.",
+    ],
+    lexique=[("Échelle", "Le niveau de grandeur auquel on observe."),
+             ("Recensement", "Le comptage officiel de toute une population."),
+             ("Commune", "La division administrative qui regroupe des "
+              "villages."),
+             ("Habitant", "Une personne qui vit dans un lieu."),
+             ("Emboîtement", "Le fait d'être contenu l'un dans "
+              "l'autre.")],
+    exercices=[
+        ("Complète avec : classe — école — village — recensement",
+         ["a) La …… est contenue dans l'école.",
+          "b) L'…… est contenue dans le village.",
+          "c) Le …… compte quelques centaines d'habitants.",
+          "d) Le …… compte officiellement tous les habitants."],
+         ["a) La classe", "b) L'école", "c) Le village", "d) Le recensement"]),
+        ("Réponds par vrai ou faux.",
+         ["a) L'école contient le village.",
+          "b) Le recensement a lieu en général tous les dix ans.",
+          "c) Le chef du village tient à jour les naissances.",
+          "d) La population d'un village ne change jamais."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Faux"]),
+        ("Relie chaque lieu à son ordre de grandeur.",
+         ["La classe", "L'école", "Le village", "La capitale"],
+         ["Des centaines d'habitants", "Une trentaine d'élèves",
+          "Plus d'un million", "Des centaines d'élèves"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Cite trois échelles de population.",
+          "b) Qu'est-ce qu'un recensement ?",
+          "c) Que fait le chef du village entre deux recensements ?",
+          "d) Cite une différence entre un village et une ville."],
+         ["a) La classe, l'école et le village.",
+          "b) C'est le comptage officiel de toute une population.",
+          "c) Il tient à jour les naissances, les décès et les "
+          "arrivées.",
+          "d) La ville est plus grande et offre plus de services."]),
+    ],
+    consigne_ex5="Dessine les trois ensembles emboîtés : le village, "
+                 "l'école et la classe, avec le nombre de personnes "
+                 "correspondant à chacun dans ton cas.",
+    corrige_ex5="Trois rectangles emboîtés : le plus grand pour le village "
+                "avec son nombre d'habitants, le moyen pour l'école, le petit "
+                "pour la classe avec 30 élèves.",
+))
+
+# ═══════════════════════════ SÉANCE 71 ═══════════════════════════
+SEANCES.append(dict(
+    n=71, semaine=23, titre="La répartition par sexe",
+    objectif="Classifier la population par sexe.",
+    materiel="Schéma de répartition par sexe, tableau de la classe, ardoise et "
+             "craie, cahier.",
+    illustration=("img_s71_a.png",
+                  "Illustration — Garçons et filles, hommes et femmes.", 700),
+    revision=[("Comment obtient-on l'effectif d'une école ?",
+               "R.A. : En additionnant les effectifs de ses classes."),
+              ("Qu'est-ce qu'un recensement ?",
+               "R.A. : Le comptage officiel de toute une population.")],
+    mes=("Y a-t-il plus de garçons ou plus de filles dans ta classe ?",
+         "R.A. : On répond selon la classe."),
+    analyse=[
+        ("Comment répartit-on une population ?",
+         "R.A. : En la classant selon un critère, ici le sexe."),
+        ("Combien de groupes obtient-on ?", "R.A. : Deux : les garçons "
+         "et les filles."),
+        ("Comment présente-t-on le résultat ?",
+         "R.A. : Dans un tableau à deux lignes, avec les totaux."),
+        ("Que vérifie-t-on à la fin ?",
+         "R.A. : Que les deux nombres ajoutés donnent bien l'effectif "
+         "total."),
+        ("Pourquoi cette répartition est-elle utile ?",
+         "R.A. : Elle permet de prévoir les besoins de chaque groupe.")],
+    synthese="Donc, répartir par sexe, c'est classer la population en deux "
+             "groupes : les garçons et les filles, ou les hommes et les femmes. "
+             "Les deux nombres réunis doivent redonner l'effectif total.",
+    application=("Répartis la classe par sexe et réponds : a) Combien de "
+                 "garçons ? b) Combien de filles ? c) Quel groupe est le "
+                 "plus nombreux ? d) Quel est le total ?",
+                 "Selon la classe ; la somme des deux groupes doit donner "
+                 "l'effectif total de la classe."),
+    evaluation=("1. Réponds par vrai ou faux : a) La répartition par "
+                "sexe donne deux groupes. b) On peut oublier une partie de la "
+                "population. c) La somme des deux groupes donne le total. d) Cette "
+                "répartition ne sert à rien.\n"
+                "2. Explique en deux phrases ce qu'est une répartition.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Faux.\n"
+                "2. Exemple : « Une répartition classe une population en "
+                "plusieurs groupes. Chaque personne doit entrer dans un groupe et un "
+                "seul. »"),
+    lecon_titre="La répartition par sexe",
+    sections=[
+        ("1. Répartir, c'est classer",
+         "Répartir une population, c'est la classer selon un critère "
+         "choisi : le sexe, l'âge, l'activité ou le lieu d'habitation. "
+         "Deux règles sont absolues : chaque personne doit entrer dans un groupe, "
+         "et dans un seul. Si une personne est comptée deux fois, ou oubliée, "
+         "toute la répartition est fausse."),
+        ("2. Garçons et filles",
+         "Dans une classe, la répartition par sexe donne deux groupes : les "
+         "garçons et les filles. On compte chaque groupe séparément, "
+         "puis on écrit les deux nombres dans un tableau à deux lignes. La "
+         "somme des deux doit redonner exactement l'effectif total de la classe : "
+         "c'est le contrôle qui prouve que le comptage est juste."),
+        ("3. Hommes et femmes",
+         "Au niveau du village ou du pays, on parle d'hommes et de femmes. Le "
+         "recensement donne ces deux nombres pour chaque localité. On exprime "
+         "souvent le résultat en pourcentage : si un village compte 600 femmes et "
+         "600 hommes, chacun des deux groupes représente la moitié, soit "
+         "cinquante pour cent de la population."),
+        ("4. Lire une répartition",
+         "Lire une répartition, c'est comparer les groupes entre eux et avec le "
+         "total. On peut alors répondre à des questions simples : y a-t-il "
+         "plus de femmes que d'hommes ? Quel groupe est le plus nombreux ? Ces "
+         "réponses servent à prévoir les besoins : une école, un "
+         "dispensaire, des latrines séparées."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Dans la plupart des pays du monde, il naît un peu plus de "
+             "garçons que de filles, environ cent cinq pour cent. Mais les "
+             "femmes vivent en moyenne plus longtemps : au total, la population "
+             "compte légèrement plus de femmes."),
+    resume=[
+        "Répartir, c'est classer la population selon un critère.",
+        "Chaque personne entre dans un groupe, et dans un seul.",
+        "La répartition par sexe donne deux groupes.",
+        "La somme des deux groupes doit redonner l'effectif total.",
+        "On peut exprimer chaque groupe en pourcentage du total.",
+    ],
+    lexique=[("Répartir", "Classer un ensemble en plusieurs groupes."),
+             ("Critère", "Ce qui sert à classer."),
+             ("Groupe", "L'ensemble des personnes d'une même catégorie."),
+             ("Pourcentage", "Une part sur cent."),
+             ("Contrôle", "La vérification d'un calcul.")],
+    exercices=[
+        ("Complète avec : répartir — deux — total — pourcentage",
+         ["a) …… une population, c'est la classer.",
+          "b) La répartition par sexe donne …… groupes.",
+          "c) La somme des groupes redonne le ……",
+          "d) Chaque groupe peut s'exprimer en ……"],
+         ["a) Répartir", "b) donne deux groupes", "c) redonne le total",
+          "d) en pourcentage"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Une personne peut entrer dans deux groupes.",
+          "b) La répartition par sexe donne deux groupes.",
+          "c) La somme des groupes donne le total.",
+          "d) Le pourcentage est une part sur mille."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Faux"]),
+        ("Relie chaque mot à sa définition.",
+         ["Répartir", "Le critère", "Le groupe", "Le pourcentage"],
+         ["Ce qui sert à classer", "Une part sur cent", "Classer",
+          "Une catégorie"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Qu'est-ce que répartir une population ?",
+          "b) Cite deux règles de la répartition.",
+          "c) Comment vérifie-t-on une répartition ?",
+          "d) À quoi sert la répartition par sexe ?"],
+         ["a) C'est la classer selon un critère choisi.",
+          "b) Chaque personne dans un groupe, et dans un seul.",
+          "c) On additionne les groupes : on doit retrouver le total.",
+          "d) Elle sert à prévoir les besoins de chaque groupe."]),
+    ],
+    consigne_ex5="Répartis la population de ta classe par sexe : construis le "
+                 "tableau à deux lignes, calcule les pourcentages et vérifie "
+                 "que la somme fait cent pour cent.",
+    corrige_ex5="Tableau : garçons, filles, total. Pourcentage de chaque "
+                "groupe obtenu en divisant par le total puis en multipliant par "
+                "cent. Les deux pourcentages additionnés font cent.",
+))

@@ -99,6 +99,10 @@ SAUMON = {
     65: ["saisons", "pluies", "sèche", "cyclone", "récolte"],
     66: ["tableau", "graphique", "axe", "courbe", "relevés"],
     67: ["prévoir", "indices", "ciel", "animaux", "météo"],
+    68: ["population", "effectif", "compter", "total", "classe"],
+    69: ["école", "effectifs", "additionner", "tableau", "niveau"],
+    70: ["village", "habitants", "recensement", "échelle", "commune"],
+    71: ["répartir", "sexe", "groupe", "critère", "pourcentage"],
 }
 
 # ── Illustration d'ouverture de leçon ───────────────────────────────────────

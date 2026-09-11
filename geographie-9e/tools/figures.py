@@ -1344,3 +1344,102 @@ def tableau_graphique(path):
 FIGURES_T3["img_s64_a.png"] = calendrier_mois
 FIGURES_T3["img_s65_a.png"] = saisons
 FIGURES_T3["img_s66_a.png"] = tableau_graphique
+
+
+def effectif_classe(path):
+    """Séance 68 — compter la population de la classe."""
+    f = Fig(1100, 620)
+    f.txtc(550, 15, "LA POPULATION DE LA CLASSE", size=36, color=BLEU, bold=True)
+    garcons = [i for i in range(30) if i % 7 != 5]
+    for i in range(30):
+        col, lig = i % 10, i // 10
+        x = 110 + col * 90
+        y = 110 + lig * 150
+        bleu = i in garcons
+        couleur = "#4FA3D1" if bleu else "#F48FB1"
+        f.circle(x, y, 20, fill=couleur, stroke=NOIR, width=3)
+        f.poly([(x - 26, y + 105), (x + 26, y + 105), (x + 18, y + 38),
+                (x - 18, y + 38)], fill=couleur, stroke=NOIR, width=3)
+    f.rect(90, 440, 1010, 520, fill="white", stroke=NOIR, width=3)
+    f.circle(160, 470, 16, fill="#4FA3D1", stroke=NOIR, width=3)
+    f.txtc(280, 455, "garçons : 17", size=26, color=NOIR, bold=True)
+    f.circle(520, 470, 16, fill="#F48FB1", stroke=NOIR, width=3)
+    f.txtc(640, 455, "filles : 13", size=26, color=NOIR, bold=True)
+    f.txtc(880, 455, "total : 30", size=28, color=ROUGE, bold=True)
+    f.txtc(550, 555, "L'effectif est le nombre de personnes d'un groupe.",
+           size=26, color=GRIS)
+    return f.save(path)
+
+
+def effectif_ecole(path):
+    """Séance 69 — la population de l'école, par niveau."""
+    f = Fig(1100, 700)
+    f.txtc(550, 15, "LA POPULATION DE L'ÉCOLE", size=36, color=BLEU, bold=True)
+    niveaux = [("7e A", 34), ("7e B", 32), ("8e A", 30), ("8e B", 28),
+               ("9e A", 30), ("9e B", 26)]
+    x0, y0, large, hmax = 120, 560, 130, 380
+    f.line(x0, y0, 1030, y0, color=NOIR, width=4)
+    f.line(x0, y0, x0, y0 - hmax, color=NOIR, width=4)
+    for deg, y in [(0, 560), (10, 500), (20, 440), (30, 380), (40, 320)]:
+        f.line(x0, y, 1030, y, color="#E0E0E0", width=2)
+        f.txt(60, y - 18, str(deg), size=24, color=NOIR)
+    for i, (niv, n) in enumerate(niveaux):
+        x = x0 + 20 + i * large
+        h = int(n / 40 * hmax)
+        f.rect(x, y0 - h, x + 80, y0, fill="#4FA3D1", stroke=NOIR, width=3)
+        f.txtc(x + 40, y0 - h - 42, str(n), size=26, color=NOIR, bold=True)
+        f.txtc(x + 40, y0 + 15, niv, size=26, color=NOIR, bold=True)
+    f.txtc(550, 640, "Total de l'école : 180 élèves", size=30, color=ROUGE,
+           bold=True)
+    f.txtc(550, 680, "On additionne les effectifs de toutes les classes.",
+           size=26, color=GRIS)
+    return f.save(path)
+
+
+def emboitement_population(path):
+    """Séance 70 — la classe dans l'école, l'école dans le village."""
+    f = Fig(1100, 700)
+    f.txtc(550, 15, "DE LA CLASSE AU VILLAGE", size=36, color=BLEU, bold=True)
+    f.rect(140, 100, 960, 620, fill="#FFF8E1", stroke="#EF6C00", width=5)
+    f.txtc(550, 120, "LE VILLAGE — 1 200 habitants", size=30, color="#EF6C00",
+           bold=True)
+    f.rect(260, 200, 840, 560, fill="#E3F2FD", stroke=BLEU, width=5)
+    f.txtc(550, 220, "L'ÉCOLE — 180 élèves", size=30, color=BLEU,
+           bold=True)
+    f.rect(400, 320, 700, 520, fill="#E8F5E9", stroke=VERT, width=5)
+    f.txtc(550, 340, "LA CLASSE", size=30, color=VERT, bold=True)
+    f.txtc(550, 400, "30 élèves", size=34, color=NOIR, bold=True)
+    f.txtc(550, 650, "Chaque ensemble est contenu dans le suivant.", size=28,
+           color=GRIS)
+    return f.save(path)
+
+
+def repartition_sexe(path):
+    """Séance 71 — répartir la population par sexe."""
+    f = Fig(1100, 620)
+    f.txtc(550, 15, "LA RÉPARTITION PAR SEXE", size=36, color=BLEU, bold=True)
+    # deux colonnes de bonshommes
+    for i in range(17):
+        col, lig = i % 6, i // 6
+        x = 180 + col * 70
+        y = 130 + lig * 140
+        f.circle(x, y, 18, fill="#4FA3D1", stroke=NOIR, width=3)
+        f.poly([(x - 24, y + 100), (x + 24, y + 100), (x + 16, y + 34),
+                (x - 16, y + 34)], fill="#4FA3D1", stroke=NOIR, width=3)
+    for i in range(13):
+        col, lig = i % 6, i // 6
+        x = 700 + col * 70
+        y = 130 + lig * 140
+        f.circle(x, y, 18, fill="#F48FB1", stroke=NOIR, width=3)
+        f.poly([(x - 24, y + 100), (x + 24, y + 100), (x + 16, y + 34),
+                (x - 16, y + 34)], fill="#F48FB1", stroke=NOIR, width=3)
+    f.txtc(345, 545, "garçons : 17", size=28, color=NOIR, bold=True)
+    f.txtc(865, 545, "filles : 13", size=28, color=NOIR, bold=True)
+    f.txtc(550, 590, "total : 30 élèves", size=28, color=ROUGE, bold=True)
+    return f.save(path)
+
+
+FIGURES_T3["img_s68_a.png"] = effectif_classe
+FIGURES_T3["img_s69_a.png"] = effectif_ecole
+FIGURES_T3["img_s70_a.png"] = emboitement_population
+FIGURES_T3["img_s71_a.png"] = repartition_sexe
