@@ -79,8 +79,41 @@ function buildExamen(S, rootDir) {
   return out;
 }
 
+// ---------- Révision + examen combinés (séance 26 T7) ----------
+function buildRevisionExamen(S, rootDir) {
+  const out = [...header(S)];
+  maybeImage(S, rootDir, out);
+
+  out.push(B.p("Première partie : révision de l'unité. Seconde partie : sujet d'examen.", {
+    italics: true, size: 20, align: AlignmentType.CENTER, spacingAfter: 160,
+  }));
+
+  out.push(B.p("L'ESSENTIEL À RETENIR", { bold: true, size: 26, align: AlignmentType.CENTER, spacingAfter: 120 }));
+  for (const bloc of S.recap) {
+    out.push(B.p(bloc.ref, { bold: true, size: 22, color: B.GREEN, spacingAfter: 60, spacingBefore: 60 }));
+    (bloc.points || []).forEach(t => out.push(B.pHighlight("• " + t, bloc.motsCles || [], { size: 21 })));
+  }
+
+  out.push(B.pageBreak());
+  const total = S.exercices.reduce((a, e) => a + (e.points || 0), 0);
+  out.push(B.p(S.sousTitre || "SUJET D'EXAMEN", { bold: true, size: 24, align: AlignmentType.CENTER, spacingAfter: 100 }));
+  out.push(B.p(`Note : …… / ${total}`, { bold: true, size: 22, align: AlignmentType.CENTER, spacingAfter: 60 }));
+  if (S.consignes && S.consignes.length) {
+    out.push(B.p("Consignes :", { bold: true, size: 20, spacingAfter: 40 }));
+    S.consignes.forEach(t => out.push(B.p("• " + t, { size: 20, spacingAfter: 30 })));
+    out.push(B.p("", { size: 10, spacingAfter: 60 }));
+  }
+  out.push(...B.exosToParas(S.exercices, { size: 20, numerote: true }));
+
+  out.push(B.pageBreak());
+  out.push(B.p("CORRIGÉ ET BARÈME", { bold: true, size: 26, color: B.PINK, align: AlignmentType.CENTER, spacingAfter: 120 }));
+  out.push(...B.corrigeToParas(S.exercices, { size: 20, numerote: true }));
+  return out;
+}
+
 function buildSpeciale(S, rootDir) {
   if (S.type === "revision") return buildRevision(S, rootDir);
+  if (S.type === "revisionExamen") return buildRevisionExamen(S, rootDir);
   return buildExamen(S, rootDir);
 }
 
