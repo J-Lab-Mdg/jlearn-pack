@@ -33,16 +33,22 @@ def fmt(n):
 
 
 def set_cell(cell, text, bold=False, size=9, align="left"):
+    """text : str (lignes séparées par \n) ou liste de tuples (ligne, bold, italic)."""
     cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
     cell.text = ""
-    for i, line in enumerate(str(text).split("\n")):
+    if isinstance(text, list):
+        lines = text
+    else:
+        lines = [(ln, bold, False) for ln in str(text).split("\n")]
+    for i, (line, b, it) in enumerate(lines):
         p = cell.paragraphs[0] if i == 0 else cell.add_paragraph()
         p.alignment = {"left": WD_ALIGN_PARAGRAPH.LEFT, "center": WD_ALIGN_PARAGRAPH.CENTER,
                        "right": WD_ALIGN_PARAGRAPH.RIGHT}[align]
         r = p.add_run(line)
         r.font.name = FONT
         r.font.size = Pt(size)
-        r.font.bold = bold
+        r.font.bold = b
+        r.font.italic = it
         p.paragraph_format.space_after = Pt(0)
         p.paragraph_format.space_before = Pt(0)
 
@@ -145,8 +151,9 @@ def build(fname, titre, avec_lahasa, groupes, loharano, total, notes_pied):
             set_cell(t.cell(start, 1), la or "", size=8)
             row = end + 1
 
-    # --- fusion colonne LOHARANO (une seule caisse par document)
-    set_cell(t.cell(2, kc + 4), f"{loharano}\nST : {fmt(total)} Ar", bold=True, align="center")
+    # --- fusion colonne LOHARANO (une seule caisse par document), ST en gras italique
+    set_cell(t.cell(2, kc + 4), [(loharano, True, False), (f"ST : {fmt(total)} Ar", True, True)],
+             align="center")
     if n_data > 1:
         t.cell(2, kc + 4).merge(t.cell(2 + n_data - 1, kc + 4))
 
