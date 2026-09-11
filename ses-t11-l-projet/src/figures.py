@@ -180,6 +180,75 @@ def fig_parties_prenantes():
     save(img, "t11_l_parties_prenantes.png")
 
 
+
+# ------------------------------------------------------------
+# FIGURES — UNITÉ II : Monnaie et financement
+# ------------------------------------------------------------
+def fig_monnaie():
+    img, d = base("La monnaie : fonctions et formes")
+    d.text((40, 100), "Trois fonctions", font=F(23, True), fill=BLEU)
+    box(d, 50, 150, 360, 150, "Intermédiaire\ndes échanges\nElle sert à acheter", size=21)
+    box(d, 440, 150, 360, 150, "Unité de compte\nElle sert à mesurer\net à comparer", size=21)
+    box(d, 830, 150, 360, 150, "Réserve de valeur\nElle permet\nd'épargner", size=21)
+    d.text((40, 340), "Deux formes", font=F(23, True), fill=BLEU)
+    box(d, 50, 390, 540, 170, "Monnaie fiduciaire\nBillets et pièces, avoir physique", fill=VERT_C, line=VERT, size=21)
+    box(d, 650, 390, 540, 170, "Monnaie scripturale\nÉcritures en compte, chèques, virements", fill=VERT_C, line=VERT, size=21)
+    d.text((50, 605), "Une monnaie n'a de valeur que si ceux qui la reçoivent lui font confiance.", font=F(21), fill=(40, 40, 40))
+    legende(d, "Figure 8 — Les fonctions et les formes de la monnaie.", 660)
+    save(img, "t11_l_monnaie.png")
+
+
+def fig_creation_monetaire():
+    img, d = base("La création monétaire")
+    box(d, 40, 130, 280, 150, "Banque centrale\nElle fournit la\nmonnaie de base", fill=BLEU_C, size=21)
+    arrow(d, 330, 205, 470, 205, label="")
+    box(d, 480, 130, 280, 150, "Banques\ncommerciales", fill=BLEU_C, size=22)
+    arrow(d, 770, 205, 900, 205, label="crédits")
+    box(d, 910, 130, 290, 150, "Ménages et\nentreprises", fill=JAUNE_C, line=ORANGE, size=22)
+    arrow(d, 1050, 290, 1050, 470, label="dépenses")
+    box(d, 910, 470, 290, 150, "Dépôts en compte\nnouvelle monnaie", fill=JAUNE_C, line=ORANGE, size=21)
+    arrow(d, 900, 545, 770, 545, label="dépôts")
+    box(d, 480, 470, 280, 150, "Retour dans\nles banques", fill=BLEU_C, size=22)
+    d.text((40, 320), "Le crédit fait naître un dépôt : prêter, c'est créer de la monnaie.", font=F(22, True), fill=ROSE)
+    d.text((40, 370), "La banque centrale encadre ce processus et veille à la valeur de la monnaie.", font=F(21), fill=(40, 40, 40))
+    d.text((40, 660), "Masse monétaire : ensemble des moyens de paiement détenus par les agents.", font=F(20), fill=GRIS)
+    legende(d, "Figure 9 — Du crédit accordé à la monnaie créée.", 700)
+    save(img, "t11_l_creation_monetaire.png")
+
+
+def fig_financement():
+    img, d = base("Financement direct et financement indirect")
+    box(d, 40, 120, 260, 130, "Agent à besoin de\nfinancement\n(entreprise)", fill=ORANGE_C, line=ORANGE, size=20)
+    box(d, 940, 120, 260, 130, "Agent à capacité\nde financement\n(ménage)", fill=VERT_C, line=VERT, size=20)
+    d.text((380, 90), "Financement direct", font=F(22, True), fill=BLEU)
+    box(d, 340, 230, 560, 90, "Marché financier : actions et obligations", fill=BLEU_C, size=21)
+    arrow(d, 320, 190, 360, 240)
+    arrow(d, 900, 250, 930, 200)
+    arrow(d, 360, 330, 320, 380, label="")
+    arrow(d, 930, 380, 900, 330, label="")
+    d.text((380, 400), "Financement indirect", font=F(22, True), fill=BLEU)
+    box(d, 340, 450, 560, 90, "Intermédiaire : la banque collecte et prête", fill=BLEU_C, size=21)
+    arrow(d, 320, 480, 350, 490)
+    arrow(d, 910, 480, 930, 490)
+    d.text((60, 590), "Autofinancement : l'entreprise finance d'abord son investissement sur ses ressources propres.", font=F(21, True), fill=ROSE)
+    d.text((60, 635), "Financement désintermédié = direct ; financement intermédié = indirect.", font=F(20), fill=GRIS)
+    legende(d, "Figure 11 — Les deux voies du financement de l'économie.", 680)
+    save(img, "t11_l_financement.png")
+
+
+def fig_taux_interet():
+    img, d = base("Le taux d'intérêt : calcul et portée")
+    box(d, 60, 110, 520, 130, "Intérêts simples\nIntérêts = capital × taux × durée", fill=BLEU_C, size=23)
+    box(d, 660, 110, 520, 130, "Exemple\n100 000 Ar à 5 % pendant 2 ans\n= 10 000 Ar d'intérêts", fill=JAUNE_C, line=ORANGE, size=20)
+    d.text((60, 280), "Deux lectures du taux", font=F(22, True), fill=BLEU)
+    box(d, 60, 330, 520, 190, "Taux nominal\nTaux affiché par le prêteur,\ncelui que porte le contrat", fill=VERT_C, line=VERT, size=21)
+    box(d, 660, 330, 520, 190, "Taux réel\nTaux nominal diminué de l'inflation\nil mesure le coût réel du crédit", fill=VERT_C, line=VERT, size=21)
+    d.text((60, 560), "Le prêteur exige une prime de risque : plus le risque de crédit est élevé, plus le taux l'est.", font=F(21, True), fill=ROSE)
+    d.text((60, 605), "Le taux d'intérêt rémunère l'épargne, sélectionne les projets et pèse sur l'investissement.", font=F(20), fill=(40, 40, 40))
+    legende(d, "Figure 12 — Calculer des intérêts et lire un taux.", 660)
+    save(img, "t11_l_taux_interet.png")
+
+
 if __name__ == "__main__":
     fig_orga_statuts()
     fig_facteurs()
@@ -187,3 +256,7 @@ if __name__ == "__main__":
     fig_va_bilan()
     fig_rse()
     fig_parties_prenantes()
+    fig_monnaie()
+    fig_creation_monetaire()
+    fig_financement()
+    fig_taux_interet()
