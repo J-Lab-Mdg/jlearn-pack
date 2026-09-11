@@ -1,0 +1,10 @@
+{
+  "name": "ses-t10-projet",
+  "version": "1.0.0",
+  "description": "Manuel SES T10 — Collection J-Learn (génération docx, skill v18)",
+  "main": "generate.js",
+  "license": "ISC",
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}
