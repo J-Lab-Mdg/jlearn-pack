@@ -1872,6 +1872,466 @@ def fig_demarche_strategie():
     img.save(os.path.join(OUT, "t12_u4_demarche.png"))
     print("Figure écrite : t12_u4_demarche.png")
 
+
+# ------------------------------------------------------------
+# Figure 55 — La diversité des groupes sociaux et des liens
+# ------------------------------------------------------------
+def fig_groupes_sociaux():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Groupes sociaux et liens sociaux")
+
+    boite(d, 60, 130, 600, 380, "LES GROUPES SOCIAUX",
+          ["• Groupe primaire : liens directs", "  et personnels — famille, voisins.",
+           "• Groupe secondaire : liens", "  fonctionnels — entreprise,", "  établissement scolaire.",
+           "• Groupe d'appartenance : celui", "  dont on fait partie.",
+           "• Groupe de référence : celui auquel", "  on se compare, sans en être."],
+          fill=BLEU_C, bord=BLEU, interligne=24, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 380, "LES LIENS SOCIAUX",
+          ["• Lien de filiation : la parenté.",
+           "• Lien de voisinage : la proximité",
+           "  géographique.",
+           "• Lien professionnel : le travail", "  partagé.",
+           "• Lien associatif : l'engagement",
+           "  choisi.",
+           "• Lien civique : l'appartenance à",
+           "  la même collectivité."],
+          fill=VERT_C, bord=VERT, interligne=24, font=F_SMALL)
+
+    fleche(d, 604, 250, 636, 250, GRIS, 3)
+
+    d.rounded_rectangle([60, 420, 1180, 630], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 442), "Ce qu'il faut retenir", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• On appartient toujours à plusieurs groupes à la fois : famille, métier, quartier, association.",
+                           "• Ces appartenances multiples se recoupent et tissent le lien social.",
+                           "• Un même individu peut se sentir proche d'un groupe dont il n'est pas membre : c'est le groupe de référence."]):
+        d.text((84, 486 + i * 34), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 673), "Lien social : l'ensemble des relations qui unissent les membres d'une société.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_groupes.png"))
+    print("Figure écrite : t12_u5_groupes.png")
+
+
+# ------------------------------------------------------------
+# Figure 56 — Les instances d'intégration sociale
+# ------------------------------------------------------------
+def fig_instances_integration():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les instances d'intégration sociale")
+
+    d.rounded_rectangle([470, 125, 770, 235], radius=12, fill=BLEU, outline=BLEU, width=3)
+    texte_centre(d, (470, 125, 770, 235), "INTÉGRATION SOCIALE", F_BOLD, BLANC)
+
+    instances = [("LA FAMILLE", "Première instance : elle transmet", "la langue, les règles et les repères.", 60, 280, BLEU, BLEU_C),
+                 ("L'ÉCOLE", "Elle apprend les savoirs communs", "et les règles de la vie collective.", 450, 280, VERT, VERT_C),
+                 ("LE TRAVAIL", "Il donne une place reconnue, un", "revenu et un réseau de relations.", 840, 280, ORANGE, JAUNE_C),
+                 ("L'ÉTAT ET LE DROIT", "Ils fixent des règles communes", "et garantissent les droits de tous.", 255, 470, VIOLET, VIOLET_C),
+                 ("LES ASSOCIATIONS", "Elles offrent un engagement", "choisi et des liens électifs.", 645, 470, ROUGE, ROSE_C)]
+    for t, l1, l2, a, b, bord, fond in instances:
+        d.rounded_rectangle([a, b, a + 340, b + 165], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 340, b + 44), t, F_BOLD, BLANC)
+        texte_centre(d, (a, b + 62, a + 340, b + 105), l1, F_MINI, NOIR)
+        texte_centre(d, (a, b + 105, a + 340, b + 150), l2, F_MINI, NOIR)
+        d.line([a + 170, b + 82, 620, 190], fill=GRIS, width=2)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 673), "Une instance d'intégration relie l'individu à la société : quand l'une d'elles manque, le lien se fragilise.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_integration.png"))
+    print("Figure écrite : t12_u5_integration.png")
+
+
+# ------------------------------------------------------------
+# Figure 57 — La division du travail, fondement du lien social
+# ------------------------------------------------------------
+def fig_division_travail():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La division du travail, fondement du lien social (Durkheim)")
+
+    etapes = [("DIVERSITÉ DES TÂCHES", "chacun exerce un métier", "particulier", 70, 200, BLEU, BLEU_C),
+              ("INTERDÉPENDANCE", "chacun a besoin du travail", "des autres", 850, 200, VERT, VERT_C),
+              ("COOPÉRATION", "l'échange devient nécessaire", "et permanent", 850, 400, ORANGE, JAUNE_C),
+              ("NOUVEAU LIEN SOCIAL", "une solidarité fondée sur", "la complémentarité", 70, 400, VIOLET, VIOLET_C)]
+    for t, l1, l2, a, b, bord, fond in etapes:
+        d.rounded_rectangle([a, b, a + 320, b + 160], radius=12, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 320, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 320, b + 44), t, F_BOLD, BLANC)
+        texte_centre(d, (a, b + 58, a + 320, b + 110), l1, F_MINI, NOIR)
+        texte_centre(d, (a, b + 110, a + 320, b + 150), l2, F_MINI, NOIR)
+
+    fleche(d, 392, 280, 846, 280, GRIS, 3)
+    fleche(d, 1010, 362, 1010, 396, GRIS, 3)
+    fleche(d, 846, 480, 392, 480, GRIS, 3)
+    fleche(d, 230, 396, 230, 362, GRIS, 3)
+
+    d.rounded_rectangle([430, 290, 810, 390], radius=14, fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (430, 290, 810, 350), "SOLIDARITÉ ORGANIQUE", F_BOLD, BLEU)
+    texte_centre(d, (430, 350, 810, 388), "le lien naît de la complémentarité des fonctions", F_MINI, NOIR)
+
+    d.rounded_rectangle([60, 600, 1180, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 622), "La thèse de Durkheim", font=F_BOLD, fill=ORANGE)
+    d.text((84, 664), "Plus les tâches sont spécialisées, plus les individus dépendent les uns des autres : la division du travail ne sépare pas, elle relie.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_division_travail.png"))
+    print("Figure écrite : t12_u5_division_travail.png")
+
+
+# ------------------------------------------------------------
+# Figure 58 — La solidarité mécanique
+# ------------------------------------------------------------
+def fig_solidarite_mecanique():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La solidarité mécanique selon Durkheim")
+
+    d.rounded_rectangle([440, 125, 800, 235], radius=12, fill=BLEU, outline=BLEU, width=3)
+    texte_centre(d, (440, 125, 800, 235), "RESSEMBLANCE", F_BOLD, BLANC)
+
+    traits = [("CONSCIENCE COLLECTIVE", "Croyances et valeurs partagées", "par tous les membres du groupe.", 60, 280, BLEU, BLEU_C),
+              ("MÊMES TÂCHES", "Chacun exerce une activité", "semblable : culture, élevage,", "artisanat.", 450, 280, VERT, VERT_C),
+              ("DROIT RÉPRESSIF", "La règle transgressée appelle", "une sanction, non une réparation.", 840, 280, ORANGE, JAUNE_C),
+              ("FAIBLE INDIVIDUALITÉ", "L'individu se définit par son", "appartenance au groupe.", 60, 470, VIOLET, VIOLET_C),
+              ("COHÉSION PAR LA SIMILITUDE", "On est uni parce que l'on se", "ressemble et que l'on croit", "aux mêmes choses.", 450, 470, ROUGE, ROSE_C)]
+    for item in traits:
+        t = item[0]
+        lignes_txt = [x for x in item[1:-4] if x]
+        a, b, bord, fond = item[-4:]
+        d.rounded_rectangle([a, b, a + 340, b + 190], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 340, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate(lignes_txt):
+            if l:
+                texte_centre(d, (a, b + 68 + i * 28, a + 340, b + 96 + i * 28), l, F_MINI, NOIR)
+        d.line([a + 170, b + 95, 620, 190], fill=GRIS, width=2)
+
+    d.rounded_rectangle([840, 470, 1180, 660], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((864, 492), "Sociétés concernées", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Petites sociétés traditionnelles, à faible division du travail, où la famille et la communauté encadrent toute la vie.",
+                               F_MINI, 290)):
+        d.text((864, 536 + i * 24), l, font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 673), "Le lien tient à la ressemblance : les individus adhèrent aux mêmes croyances et accomplissent des tâches comparables.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_mecanique.png"))
+    print("Figure écrite : t12_u5_mecanique.png")
+
+
+# ------------------------------------------------------------
+# Figure 59 — La solidarité organique
+# ------------------------------------------------------------
+def fig_solidarite_organique():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La solidarité organique selon Durkheim")
+
+    d.rounded_rectangle([440, 125, 800, 235], radius=12, fill=VERT, outline=VERT, width=3)
+    texte_centre(d, (440, 125, 800, 235), "COMPLÉMENTARITÉ", F_BOLD, BLANC)
+
+    traits = [("SPÉCIALISATION", "Chacun occupe une fonction", "précise et différente des autres.", 60, 280, BLEU, BLEU_C),
+              ("INTERDÉPENDANCE", "Aucun ne se suffit : il faut", "échanger pour vivre.", 450, 280, VERT, VERT_C),
+              ("DROIT COOPÉRATIF", "Le litige appelle une réparation", "plutôt qu'une sanction.", 840, 280, ORANGE, JAUNE_C),
+              ("INDIVIDUALISME", "La personne acquiert une", "identité propre, distincte", "du groupe.", 60, 470, VIOLET, VIOLET_C),
+              ("COHÉSION PAR L'ÉCHANGE", "On est uni parce que l'on a", "besoin les uns des autres.", 450, 470, ROUGE, ROSE_C)]
+    for item in traits:
+        t = item[0]
+        lignes_txt = [x for x in item[1:-4] if x]
+        a, b, bord, fond = item[-4:]
+        d.rounded_rectangle([a, b, a + 340, b + 190], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 340, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate(lignes_txt):
+            if l:
+                texte_centre(d, (a, b + 68 + i * 28, a + 340, b + 96 + i * 28), l, F_MINI, NOIR)
+        d.line([a + 170, b + 95, 620, 190], fill=GRIS, width=2)
+
+    d.rounded_rectangle([840, 470, 1180, 660], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((864, 492), "Sociétés concernées", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Sociétés modernes, industrialisées et urbaines, à forte division du travail, où chacun dépend de beaucoup d'autres.",
+                               F_MINI, 290)):
+        d.text((864, 536 + i * 24), l, font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 673), "Le lien tient à la différence : chacun a besoin des autres, et c'est l'échange qui fait la cohésion.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_organique.png"))
+    print("Figure écrite : t12_u5_organique.png")
+
+
+# ------------------------------------------------------------
+# Figure 60 — Solidarité mécanique et sociétés contemporaines
+# ------------------------------------------------------------
+def fig_mecanique_aujourdhui():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La solidarité mécanique subsiste-t-elle aujourd'hui ?")
+
+    boite(d, 60, 130, 600, 420, "CE QUI EN SUBSISTE",
+          ["• La famille reste le premier lieu de",
+           "  solidarité : entraide, garde des",
+           "  enfants, soutien matériel.",
+           "• Les fêtes, les cérémonies et les",
+           "  pratiques religieuses rassemblent.",
+           "• Le sentiment d'appartenance nationale",
+           "  crée une conscience commune.",
+           "• Les voisinages et les solidarités de",
+           "  quartier demeurent actifs."],
+          fill=VERT_C, bord=VERT, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 420, "CE QUI S'EST AFFAIBLI",
+          ["• La mobilité éloigne les familles.",
+           "• Les croyances sont moins",
+           "  uniformes : les valeurs se",
+           "  diversifient.",
+           "• Les métiers se spécialisent :",
+           "  on partage moins les mêmes tâches.",
+           "• Les liens sont davantage choisis",
+           "  que subis."],
+          fill=ROSE_C, bord=ROUGE, interligne=26, font=F_SMALL)
+
+    fleche(d, 604, 275, 636, 275, GRIS, 3)
+
+    d.rounded_rectangle([60, 460, 1180, 640], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 482), "La conclusion", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• La solidarité mécanique n'a pas disparu : elle subsiste dans la famille, la proximité et les appartenances vécues.",
+                           "• Mais elle ne suffit plus à elle seule à faire tenir une société nombreuse et diversifiée.",
+                           "• Les sociétés contemporaines combinent donc les deux formes : ressemblance dans les groupes proches,",
+                           "  complémentarité dans l'ensemble de la société."]):
+        d.text((84, 526 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 673), "C'est ce mélange — et non la disparition de l'une des deux formes — qui caractérise la cohésion sociale actuelle.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_mecanique_aujourdhui.png"))
+    print("Figure écrite : t12_u5_mecanique_aujourdhui.png")
+
+
+# ------------------------------------------------------------
+# Figure 62 — Différence et inégalité
+# ------------------------------------------------------------
+def fig_difference_inegalite():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Différence et inégalité : deux notions à distinguer")
+
+    boite(d, 60, 130, 600, 430, "LA DIFFÉRENCE",
+          ["• Écart constaté entre deux",
+           "  personnes ou deux groupes.",
+           "• Elle n'implique ni supériorité",
+           "  ni infériorité.",
+           "• Exemples : la taille, la langue",
+           "  parlée, la spécialité exercée,",
+           "  le lieu de vie.",
+           "• Une différence peut être",
+           "  revendiquée comme une richesse."],
+          fill=BLEU_C, bord=BLEU, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 430, "L'INÉGALITÉ",
+          ["• Écart qui place les personnes",
+           "  dans un rapport de supériorité",
+           "  ou d'infériorité.",
+           "• Elle porte sur l'accès à un",
+           "  avantage : revenu, école,",
+           "  soins, emploi, pouvoir.",
+           "• Elle se mesure : écart de",
+           "  revenus, de patrimoine, de",
+           "  réussite scolaire."],
+          fill=ROSE_C, bord=ROUGE, interligne=26, font=F_SMALL)
+
+    fleche(d, 604, 280, 636, 280, GRIS, 3)
+
+    d.rounded_rectangle([60, 470, 1180, 640], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 492), "Le passage de l'une à l'autre", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Une différence devient une inégalité lorsqu'elle entraîne un avantage pour les uns et un désavantage pour les autres.",
+                           "• Exemple : parler une langue étrangère est une différence ; en faire une condition d'embauche crée une inégalité.",
+                           "• Lutter contre les inégalités ne signifie donc pas supprimer les différences.",
+                           "• La justice sociale vise à corriger les écarts qui ne sont pas choisis ni justifiés."]):
+        d.text((84, 536 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 673), "Retenez : toute différence n'est pas une inégalité, mais toute inégalité repose sur une différence devenue avantageuse.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_difference.png"))
+    print("Figure écrite : t12_u5_difference.png")
+
+
+# ------------------------------------------------------------
+# Figure 63 — La diversité des inégalités et leur caractère cumulatif
+# ------------------------------------------------------------
+def fig_diversite_inegalites():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La diversité des inégalités et leur caractère cumulatif")
+
+    domaines = [("INÉGALITÉS ÉCONOMIQUES", "revenus, patrimoine,", "accès à l'emploi", 60, 130, BLEU, BLEU_C),
+                ("INÉGALITÉS SCOLAIRES", "réussite, orientation,", "accès aux études", 450, 130, VERT, VERT_C),
+                ("INÉGALITÉS DE SANTÉ", "accès aux soins,", "espérance de vie", 840, 130, ORANGE, JAUNE_C),
+                ("INÉGALITÉS TERRITORIALES", "services publics,", "transports, réseaux", 60, 340, VIOLET, VIOLET_C),
+                ("INÉGALITÉS DE GENRE", "accès aux responsabilités,", "rémunération, sécurité", 450, 340, ROUGE, ROSE_C)]
+    for t, l1, l2, a, b, bord, fond in domaines:
+        d.rounded_rectangle([a, b, a + 340, b + 165], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        for i, l in enumerate(wrap(d, t, F_BOLD, 320)):
+            texte_centre(d, (a, b + 8 + i * 26, a + 340, b + 34 + i * 26), l, F_BOLD, BLANC)
+        texte_centre(d, (a, b + 60, a + 340, b + 105), l1, F_MINI, NOIR)
+        texte_centre(d, (a, b + 105, a + 340, b + 150), l2, F_MINI, NOIR)
+
+    d.rounded_rectangle([840, 340, 1180, 640], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((864, 362), "Le caractère cumulatif", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Les désavantages s'additionnent : un revenu faible limite l'accès aux soins et à l'école, ce qui réduit les chances d'emploi, ce qui entretient le revenu faible.",
+                               F_MINI, 290)):
+        d.text((864, 410 + i * 24), l, font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 545, 800, 640], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 567), "Conséquence", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(wrap(d, "Agir sur un seul domaine ne suffit pas : la lutte contre les inégalités doit porter sur plusieurs fronts à la fois.",
+                               F_SMALL, 690)):
+        d.text((84, 605 + i * 24), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((84, 673), "Les inégalités se cumulent : c'est ce cumul qui rend les situations difficiles à inverser.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_cumul.png"))
+    print("Figure écrite : t12_u5_cumul.png")
+
+
+# ------------------------------------------------------------
+# Figure 64 — Les formes d'égalité
+# ------------------------------------------------------------
+def fig_formes_egalite():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les trois formes d'égalité")
+
+    formes = [("ÉGALITÉ DES DROITS", "Tous les citoyens ont les", "mêmes droits : même loi", "pour tous, mêmes libertés,", "même accès au suffrage.", 60, 150, BLEU, BLEU_C),
+              ("ÉGALITÉ DES CHANCES", "Chacun part avec les mêmes", "possibilités : école pour", "tous, concours ouvert,", "aide à la mobilité.", 450, 150, VERT, VERT_C),
+              ("ÉGALITÉ RÉELLE", "Les situations elles-mêmes", "se rapprochent : écarts de", "revenu réduits, accès", "effectif aux soins.", 840, 150, ORANGE, JAUNE_C)]
+    for t, l1, l2, l3, l4, a, b, bord, fond in formes:
+        d.rounded_rectangle([a, b, a + 340, b + 235], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 340, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate([l1, l2, l3, l4]):
+            texte_centre(d, (a, b + 68 + i * 28, a + 340, b + 96 + i * 28), l, F_MINI, NOIR)
+
+    d.rounded_rectangle([60, 430, 1180, 590], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 452), "De l'une à l'autre", font=F_BOLD, fill=VIOLET)
+    for i, l in enumerate(["• L'égalité des droits est la base : sans elle, aucune autre n'a de sens.",
+                           "• L'égalité des chances veut compenser les handicaps de départ, pour que le mérite décide du parcours.",
+                           "• L'égalité réelle, ou égalité de situation, vise à rapprocher les conditions de vie elles-mêmes.",
+                           "• Ces formes ne s'opposent pas : elles se complètent et se poursuivent l'une l'autre."]):
+        d.text((84, 496 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 610, 1180, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 632), "Exemple", font=F_BOLD, fill=ORANGE)
+    d.text((84, 668), "L'école ouverte à tous relève de l'égalité des droits ; une bourse pour l'élève éloigné relève de l'égalité des chances.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_formes_egalite.png"))
+    print("Figure écrite : t12_u5_formes_egalite.png")
+
+
+# ------------------------------------------------------------
+# Figure 65 — Les conceptions de la justice sociale
+# ------------------------------------------------------------
+def fig_justice_sociale():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les conceptions de la justice sociale")
+
+    principes = [("L'ÉGALITÉ", "Chacun reçoit la même part,", "sans distinction de situation.", 60, 150, BLEU, BLEU_C),
+                 ("L'ÉQUITÉ", "Chacun reçoit selon son", "effort, son mérite ou son", "besoin réel.", 450, 150, VERT, VERT_C),
+                 ("LE BESOIN", "On donne davantage à celui", "qui part de plus loin, pour", "égaliser les situations.", 840, 150, ORANGE, JAUNE_C)]
+    for item in principes:
+        t = item[0]
+        lignes_txt = [x for x in item[1:-4] if x]
+        a, b, bord, fond = item[-4:]
+        d.rounded_rectangle([a, b, a + 340, b + 200], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 340, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate(lignes_txt):
+            texte_centre(d, (a, b + 68 + i * 30, a + 340, b + 98 + i * 30), l, F_MINI, NOIR)
+
+    d.rounded_rectangle([60, 400, 1180, 560], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 422), "Quelles inégalités sont jugées justes ?", font=F_BOLD, fill=VIOLET)
+    for i, l in enumerate(["• Celles qui récompensent l'effort et le travail : elles sont généralement acceptées.",
+                           "• Celles qui résultent d'un choix personnel : orientations, prise de risque.",
+                           "• En revanche, les inégalités héritées — milieu de naissance, lieu de naissance — sont tenues pour injustes.",
+                           "• Le débat porte donc moins sur l'existence des inégalités que sur leur origine."]):
+        d.text((84, 466 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 585, 1180, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 607), "En résumé", font=F_BOLD, fill=ORANGE)
+    d.text((84, 645), "La justice sociale ne supprime pas toute inégalité : elle corrige celles qui ne résultent ni d'un choix ni d'un effort.",
+           font=F_SMALL, fill=NOIR)
+    d.text((84, 673), "C'est cette distinction qui fonde l'intervention des pouvoirs publics.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_justice.png"))
+    print("Figure écrite : t12_u5_justice.png")
+
+
+# ------------------------------------------------------------
+# Figure 66 — Redistribution, protection sociale et fiscalité
+# ------------------------------------------------------------
+def fig_redistribution():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les interventions des pouvoirs publics au service de la justice sociale")
+
+    d.rounded_rectangle([60, 130, 380, 330], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 152), "LA FISCALITÉ", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["Prélèvements sur les revenus",
+                           "et la consommation : impôt sur",
+                           "le revenu, taxes, cotisations.",
+                           "Progressif : le taux s'élève",
+                           "avec le revenu."]):
+        d.text((84, 196 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([430, 130, 810, 330], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((454, 152), "LA REDISTRIBUTION", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["Les ressources prélevées",
+                           "financent des prestations :",
+                           "allocations familiales, aides",
+                           "au logement, minima sociaux,",
+                           "services publics gratuits."]):
+        d.text((454, 196 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([860, 130, 1180, 330], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((884, 152), "LA PROTECTION SOCIALE", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["Elle couvre les risques :",
+                           "maladie, vieillesse, accident",
+                           "du travail, chômage, famille."]):
+        d.text((884, 196 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    fleche(d, 384, 230, 426, 230, GRIS, 3)
+    fleche(d, 814, 230, 856, 230, GRIS, 3)
+
+    d.rounded_rectangle([60, 380, 1180, 560], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 402), "L'effet recherché", font=F_BOLD, fill=VIOLET)
+    for i, l in enumerate(["• Réduire l'écart entre les revenus avant et après intervention publique.",
+                           "• Garantir un socle : personne ne se trouve privé de soins, de ressources ou de scolarisation.",
+                           "• Assurer la cohésion sociale : la solidarité est organisée à l'échelle de la société entière."]):
+        d.text((84, 446 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 585, 1180, 690], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((84, 607), "Les limites invoquées", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(["Le coût de la dépense publique, la complexité des dispositifs et le risque de réduire l'incitation à l'activité."]):
+        d.text((84, 651 + i * 26), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u5_redistribution.png"))
+    print("Figure écrite : t12_u5_redistribution.png")
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_pib()
@@ -1919,3 +2379,14 @@ if __name__ == "__main__":
     fig_swot()
     fig_objectifs_strategiques()
     fig_demarche_strategie()
+    fig_groupes_sociaux()
+    fig_instances_integration()
+    fig_division_travail()
+    fig_solidarite_mecanique()
+    fig_solidarite_organique()
+    fig_mecanique_aujourdhui()
+    fig_difference_inegalite()
+    fig_diversite_inegalites()
+    fig_formes_egalite()
+    fig_justice_sociale()
+    fig_redistribution()
