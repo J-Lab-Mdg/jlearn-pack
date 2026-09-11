@@ -1171,6 +1171,439 @@ def fig_dette():
     img.save(os.path.join(OUT, "t12_u2_dette.png"))
     print("Figure écrite : t12_u2_dette.png")
 
+
+# ------------------------------------------------------------
+# Figure 31 — Croissance, productivité et emploi
+# ------------------------------------------------------------
+def fig_emploi_croissance():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Croissance de la production, productivité et emploi")
+
+    d.rounded_rectangle([60, 130, 1180, 260], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 152), "LA RÈGLE DÉCISIVE", font=F_BOLD, fill=BLEU)
+    d.text((84, 194), "L'emploi augmente quand la production croît plus vite que la productivité du travail :", font=F_SMALL, fill=NOIR)
+    d.text((84, 224), "si la production progresse de 4 % et la productivité de 1 %, l'emploi progresse d'environ 3 %.", font=F_SMALL, fill=NOIR)
+
+    boite(d, 60, 300, 600, 560, "PRODUCTION ET PRODUCTIVITÉ",
+          ["Production : quantité de biens", "et de services créés dans", "le pays.",
+           "Productivité : production", "rapportée aux moyens utilisés,", "par heure de travail.",
+           "Gains de productivité :", "machines, formation,", "organisation."],
+          fill=VERT_C, bord=VERT, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 300, 1180, 560, "L'EFFET SUR L'EMPLOI",
+          ["Si la production progresse", "plus vite que la productivité :", "il faut embaucher.",
+           "Si la productivité progresse", "aussi vite que la production :", "l'emploi stagne.",
+           "Si elle progresse plus vite :", "l'emploi recule à production", "constante."],
+          fill=JAUNE_C, bord=ORANGE, interligne=26, font=F_SMALL)
+
+    fleche(d, 604, 430, 636, 430, GRIS, 3)
+
+    d.rounded_rectangle([60, 600, 1180, 690], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 622), "À retenir", font=F_BOLD, fill=VIOLET)
+    d.text((84, 660), "Une forte croissance de la production reste la condition la plus sûre d'une hausse de l'emploi.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_croissance_emploi.png"))
+    print("Figure écrite : t12_u3_croissance_emploi.png")
+
+
+# ------------------------------------------------------------
+# Figure 32 — Le progrès technique et l'emploi
+# ------------------------------------------------------------
+def fig_progres_emploi():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le progrès technique : destructeur ou créateur d'emplois ?")
+
+    d.rounded_rectangle([470, 130, 770, 230], radius=12, fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (470, 130, 770, 230), "PROGRÈS TECHNIQUE", F_BOLD, BLEU)
+
+    effets = [("EFFET DE DESTRUCTION", "Des tâches disparaissent :", "machines, automatisation,", "suppression de postes", 60, 280, ROUGE, ROSE_C),
+              ("EFFET DE COMPENSATION", "Baisse des prix, hausse du", "pouvoir d'achat, nouveaux", "produits, nouveaux besoins", 460, 280, VERT, VERT_C),
+              ("EFFET DE CRÉATION", "Nouveaux métiers :", "maintenance, informatique,", "services, formation", 860, 280, BLEU, BLEU_C)]
+    for t, l1, l2, l3, a, b, bord, fond in effets:
+        d.rounded_rectangle([a, b, a + 320, b + 200], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 320, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 320, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate([l1, l2, l3]):
+            texte_centre(d, (a, b + 66 + i * 30, a + 320, b + 96 + i * 30), l, F_MINI, NOIR)
+        d.line([a + 160, b + 200, 620, 232], fill=GRIS, width=2)
+
+    d.rounded_rectangle([60, 520, 1180, 640], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 542), "Les canaux de compensation", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Baisse des prix, qui augmente le pouvoir d'achat et soutient la demande d'autres produits ;",
+                           "• nouveaux équipements, qui créent une activité de fabrication, d'installation et de maintenance ;",
+                           "• nouveaux produits, qui ouvrent des marchés et des métiers entièrement nouveaux."]):
+        d.text((84, 584 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 660, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 678), "La compensation n'est ni automatique ni immédiate : elle demande du temps, de la formation et de la mobilité.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_progres_emploi.png"))
+    print("Figure écrite : t12_u3_progres_emploi.png")
+
+
+# ------------------------------------------------------------
+# Figure 33 — Le modèle standard du marché du travail
+# ------------------------------------------------------------
+def fig_marche_travail():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le modèle standard du marché du travail")
+
+    x0, y0, x1, y1 = 180, 560, 1060, 150
+    d.line([x0, y0, x0, y1], fill=NOIR, width=3)
+    d.line([x0, y0, x1, y0], fill=NOIR, width=3)
+    d.text((x0 - 60, y1 - 20), "salaire", font=F_SMALL, fill=NOIR)
+    d.text((x1 - 40, y0 + 14), "quantité de travail", font=F_SMALL, fill=NOIR)
+
+    # offre croissante, demande décroissante
+    d.line([x0 + 60, y0 - 60, x1 - 80, y1 + 90], fill=BLEU, width=5)
+    d.line([x0 + 60, y1 + 90, x1 - 80, y0 - 60], fill=ORANGE, width=5)
+    d.text((x1 - 200, y0 + 70), "OFFRE DE TRAVAIL", font=F_SMALL, fill=BLEU)
+    d.text((x1 - 240, y0 + 30), "DEMANDÉE PAR LES ENTREPRISES", font=F_MINI, fill=NOIR)
+    d.text((x0 + 200, y0 - 60), "DEMANDE DE TRAVAIL", font=F_SMALL, fill=ORANGE)
+
+    eqx, eqy = 620, 350
+    d.ellipse([eqx - 8, eqy - 8, eqx + 8, eqy + 8], fill=ROUGE)
+    d.line([x0, eqy, eqx, eqy], fill=ROUGE, width=2)
+    d.line([eqx, eqy, eqx, y0], fill=ROUGE, width=2)
+    d.text((x0 - 70, eqy - 10), "salaire", font=F_MINI, fill=ROUGE)
+    d.text((x0 - 70, eqy + 12), "d'équilibre", font=F_MINI, fill=ROUGE)
+    d.text((eqx - 30, y0 + 14), "emploi d'équilibre", font=F_MINI, fill=ROUGE)
+
+    d.rounded_rectangle([60, 600, 1180, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 622), "Le mécanisme", font=F_BOLD, fill=BLEU)
+    d.text((84, 660), "Si le salaire est trop élevé, l'offre dépasse la demande : le salaire baisse jusqu'à ce que le marché s'équilibre.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_marche_travail.png"))
+    print("Figure écrite : t12_u3_marche_travail.png")
+
+
+# ------------------------------------------------------------
+# Figure 34 — Les limites du modèle standard
+# ------------------------------------------------------------
+def fig_limites_modele():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Pourquoi le marché du travail ne s'équilibre pas : les limites du modèle")
+
+    limites = [("RIGIDITÉ DES SALAIRES", "Le salaire ne baisse pas", "facilement : conventions,", "législation, résistance", "des salariés.", 60, 130, BLEU, BLEU_C),
+               ("INFORMATION IMPARFAITE", "L'employeur ne connaît", "pas la productivité réelle", "du candidat avant", "l'embauche.", 640, 130, ORANGE, JAUNE_C),
+               ("MOBILITÉ LIMITÉE", "Un chômeur ne peut pas", "toujours déménager ou", "changer de métier", "facilement.", 60, 400, VERT, VERT_C),
+               ("SEGMENTATION", "Le marché se divise en", "emplois stables et emplois", "précaires : les deux ne", "se rejoignent pas.", 640, 400, VIOLET, VIOLET_C)]
+    for t, l1, l2, l3, l4, a, b, bord, fond in limites:
+        d.rounded_rectangle([a, b, a + 540, b + 210], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 540, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 540, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate([l1, l2, l3, l4]):
+            texte_centre(d, (a, b + 62 + i * 28, a + 540, b + 90 + i * 28), l, F_MINI, NOIR)
+
+    d.rounded_rectangle([60, 640, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 660), "Conséquence : le chômage peut durer, alors que le modèle standard prévoyait un retour à l'équilibre.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_limites_modele.png"))
+    print("Figure écrite : t12_u3_limites_modele.png")
+
+
+# ------------------------------------------------------------
+# Figure 35 — Le chômage keynésien
+# ------------------------------------------------------------
+def fig_chomage_keynesien():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le chômage keynésien : quand la demande fait défaut")
+
+    etapes = [("DEMANDE INSUFFISANTE", "les ménages et les entreprises", "achètent moins", 70, 150, BLEU, BLEU_C),
+              ("PRODUCTION RÉDUITE", "les entreprises fabriquent moins", "et écoulent leurs stocks", 800, 150, ORANGE, JAUNE_C),
+              ("EMPLOI EN BAISSE", "les effectifs sont réduits :", "licenciements, non-renouvellements", 800, 420, ROUGE, ROSE_C),
+              ("REVENU EN BAISSE", "les revenus distribués", "diminuent encore", 70, 420, VIOLET, VIOLET_C)]
+    for t, l1, l2, a, b, bord, fond in etapes:
+        d.rounded_rectangle([a, b, a + 370, b + 160], radius=12, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 370, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 370, b + 44), t, F_BOLD, BLANC)
+        texte_centre(d, (a, b + 54, a + 370, b + 90), l1, F_MINI, NOIR)
+        texte_centre(d, (a, b + 90, a + 370, b + 130), l2, F_MINI, NOIR)
+
+    fleche(d, 442, 230, 796, 230, GRIS, 3)
+    fleche(d, 985, 312, 985, 416, GRIS, 3)
+    fleche(d, 796, 500, 442, 500, GRIS, 3)
+    fleche(d, 255, 416, 255, 312, GRIS, 3)
+
+    d.rounded_rectangle([430, 300, 810, 390], radius=14, fill=JAUNE_C, outline=ORANGE, width=4)
+    texte_centre(d, (430, 300, 810, 360), "CERCLE", F_BOLD, ORANGE)
+    texte_centre(d, (430, 360, 810, 388), "de sous-activité", F_MINI, NOIR)
+
+    d.rounded_rectangle([70, 610, 1170, 690], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((94, 632), "La réponse keynésienne", font=F_BOLD, fill=VERT)
+    d.text((94, 668), "Relancer la demande : la dépense publique et le soutien à la consommation relancent la production, donc l'emploi.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_keynesien.png"))
+    print("Figure écrite : t12_u3_keynesien.png")
+
+
+# ------------------------------------------------------------
+# Figure 36 — Le chômage classique
+# ------------------------------------------------------------
+def fig_chomage_classique():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le chômage classique : quand le coût du travail est trop élevé")
+
+    x0, y0, x1, y1 = 220, 520, 1000, 150
+    d.line([x0, y0, x0, y1], fill=NOIR, width=3)
+    d.line([x0, y0, x1, y0], fill=NOIR, width=3)
+    d.text((x0 - 70, y1 - 20), "coût du travail", font=F_SMALL, fill=NOIR)
+    d.text((x1 - 60, y0 + 14), "quantité de travail", font=F_SMALL, fill=NOIR)
+
+    d.line([x0 + 60, y0 - 50, x1 - 80, y1 + 110], fill=BLEU, width=5)
+    d.line([x0 + 60, y1 + 110, x1 - 80, y0 - 50], fill=ORANGE, width=5)
+    d.text((x1 - 190, y0 + 60), "OFFRE", font=F_SMALL, fill=BLEU)
+    d.text((x0 + 200, y0 - 60), "DEMANDE", font=F_SMALL, fill=ORANGE)
+
+    # salaire minimum imposé au-dessus de l'équilibre
+    sy = 300
+    d.line([x0, sy, x1, sy], fill=ROUGE, width=3)
+    d.text((x1 - 150, sy - 26), "salaire réel trop élevé", font=F_SMALL, fill=ROUGE)
+    d.line([x0 + 2, sy, x0 + 2, y0 - 120], fill=BLANC, width=3)
+    d.line([x1 - 2, sy, x1 - 2, y1 + 40], fill=BLANC, width=3)
+    d.double_arrow = None
+    # écart offre/demande au salaire imposé
+    d.line([330, sy + 40, 820, sy + 40], fill=ROUGE, width=3)
+    d.polygon([(330, sy + 40), (348, sy + 32), (348, sy + 48)], fill=ROUGE)
+    d.polygon([(820, sy + 40), (802, sy + 32), (802, sy + 48)], fill=ROUGE)
+    d.text((470, sy + 50), "excédent d'offre de travail : chômage", font=F_SMALL, fill=ROUGE)
+
+    d.rounded_rectangle([60, 570, 1180, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 592), "La réponse classique", font=F_BOLD, fill=BLEU)
+    d.text((84, 630), "Le chômage vient d'un coût du travail supérieur à la productivité : la solution passe par une baisse des charges,", font=F_SMALL, fill=NOIR)
+    d.text((84, 664), "une plus grande flexibilité et une hausse de la productivité.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_classique.png"))
+    print("Figure écrite : t12_u3_classique.png")
+
+
+# ------------------------------------------------------------
+# Figure 37 — Le chômage structurel
+# ------------------------------------------------------------
+def fig_chomage_structurel():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le chômage structurel : quand l'offre et la demande ne se rencontrent pas")
+
+    causes = [("INADÉQUATION DES COMPÉTENCES", "Les qualifications des", "chercheurs d'emploi ne", "correspondent pas aux", "postes offerts.", 60, 130, BLEU, BLEU_C),
+              ("OBSOLESCENCE DES MÉTIERS", "Des activités disparaissent :", "les savoir-faire anciens", "trouvent moins", "de preneurs.", 450, 130, ORANGE, JAUNE_C),
+              ("ÉLOIGNEMENT GÉOGRAPHIQUE", "Les emplois se créent loin", "des bassins de main-d'œuvre,", "et la mobilité coûte cher.", "", 840, 130, VERT, VERT_C),
+              ("RIGIDITÉS DE STRUCTURE", "Procédures d'embauche,", "accès au foncier et au", "crédit freinent la création", "d'activités.", 60, 420, VIOLET, VIOLET_C),
+              ("MUTATIONS TECHNOLOGIQUES", "Les machines remplacent", "certaines tâches plus vite", "que les reconversions", "ne s'opèrent.", 450, 420, ROUGE, ROSE_C)]
+    for t, l1, l2, l3, l4, a, b, bord, fond in causes:
+        d.rounded_rectangle([a, b, a + 340, b + 210], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        for i, l in enumerate(wrap(d, t, F_BOLD, 320)):
+            texte_centre(d, (a, b + 8 + i * 26, a + 340, b + 34 + i * 26), l, F_BOLD, BLANC)
+        for i, l in enumerate([l1, l2, l3, l4]):
+            if l:
+                texte_centre(d, (a, b + 76 + i * 28, a + 340, b + 104 + i * 28), l, F_MINI, NOIR)
+
+    d.rounded_rectangle([840, 420, 1180, 630], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((864, 442), "Le trait commun", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Le chômage structurel dure : il ne disparaît pas avec la reprise, car il tient à la structure même de l'économie.",
+                               F_MINI, 290)):
+        d.text((864, 486 + i * 24), l, font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 660, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 678), "Réponse : formation, reconversion, mobilité et accompagnement des secteurs qui se transforment.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_structurel.png"))
+    print("Figure écrite : t12_u3_structurel.png")
+
+
+# ------------------------------------------------------------
+# Figure 38 — Les conséquences du chômage
+# ------------------------------------------------------------
+def fig_consequences_chomage():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les conséquences du chômage et du sous-emploi")
+
+    boite(d, 60, 130, 600, 460, "CONSÉQUENCES ÉCONOMIQUES",
+          ["• Baisse des revenus des ménages", "  et de la consommation.",
+           "• Production perdue : le travail", "  disponible n'est pas utilisé.",
+           "• Hausse des dépenses sociales", "  et baisse des recettes fiscales.",
+           "• Coût de la formation des jeunes", "  qui ne trouvent pas d'emploi."],
+          fill=BLEU_C, bord=BLEU, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 460, "CONSÉQUENCES SOCIALES",
+          ["• Accroissement de la pauvreté,", "  de la précarité et de", "  l'exclusion sociale.",
+           "• Fragilisation de la famille et", "  du lien social.",
+           "• Perte de compétences : une", "  longue inactivité déqualifie.",
+           "• Risque de découragement et", "  de sortie du marché du travail."],
+          fill=ROSE_C, bord=ROUGE, interligne=26, font=F_SMALL)
+
+    d.rounded_rectangle([60, 500, 1180, 620], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 522), "Le sous-emploi", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["• Un actif est en situation de sous-emploi lorsqu'il travaille moins qu'il ne le voudrait, ou sur un poste",
+                           "  très inférieur à sa qualification.",
+                           "• Le sous-emploi produit une partie des mêmes effets que le chômage, sans apparaître dans ses statistiques."]):
+        d.text((84, 564 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 645, 1180, 690], radius=8, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 665), "Le coût du chômage est donc collectif : il dépasse largement la perte de revenu du seul chômeur.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_consequences.png"))
+    print("Figure écrite : t12_u3_consequences.png")
+
+
+# ------------------------------------------------------------
+# Figure 39 — Les politiques de relance de la demande
+# ------------------------------------------------------------
+def fig_relance():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les politiques de relance de la demande")
+
+    etapes = [("DÉPENSE PUBLIQUE", "routes, écoles, marchés publics", 70, 150, BLEU, BLEU_C),
+              ("REVENU DISTRIBUÉ", "salaires versés aux entreprises", 800, 150, VERT, VERT_C),
+              ("DEMANDE RELANCÉE", "les ménages consomment à nouveau", 800, 420, ORANGE, JAUNE_C),
+              ("EMPLOI CRÉÉ", "les entreprises embauchent", 70, 420, VIOLET, VIOLET_C)]
+    for t, l, a, b, bord, fond in etapes:
+        d.rounded_rectangle([a, b, a + 370, b + 160], radius=12, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 370, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 370, b + 44), t, F_BOLD, BLANC)
+        texte_centre(d, (a, b + 60, a + 370, b + 130), l, F_MINI, NOIR)
+
+    fleche(d, 442, 230, 796, 230, GRIS, 3)
+    fleche(d, 985, 312, 985, 416, GRIS, 3)
+    fleche(d, 796, 500, 442, 500, GRIS, 3)
+    fleche(d, 255, 416, 255, 312, GRIS, 3)
+
+    d.rounded_rectangle([430, 300, 810, 390], radius=14, fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (430, 300, 810, 360), "MULTIPLICATEUR", F_BOLD, BLEU)
+    texte_centre(d, (430, 360, 810, 388), "un euro dépensé crée plus d'un euro d'activité", F_MINI, NOIR)
+
+    d.rounded_rectangle([70, 600, 580, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((94, 622), "Les instruments", font=F_BOLD, fill=ORANGE)
+    d.text((94, 660), "Travaux publics, baisse d'impôts, aides ciblées aux ménages.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 600, 1170, 690], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((664, 622), "Les limites", font=F_BOLD, fill=ROUGE)
+    d.text((664, 660), "Déficit public, délais d'exécution, risque d'inflation si la production ne suit pas.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_relance.png"))
+    print("Figure écrite : t12_u3_relance.png")
+
+
+# ------------------------------------------------------------
+# Figure 40 — Les politiques d'offre
+# ------------------------------------------------------------
+def fig_politiques_offre():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les politiques d'offre et de soutien à l'emploi")
+
+    mesures = [("BAISSE DU COÛT DU TRAVAIL", "allègement de charges,", "aides à l'embauche", "", 60, 130, BLEU, BLEU_C),
+               ("FLEXIBILITÉ ENCADRÉE", "assouplir les conditions", "d'embauche et de travail", "", 450, 130, VERT, VERT_C),
+               ("SOUTIEN AUX ENTREPRISES", "accès au crédit, simplification", "des démarches, marchés publics", "", 840, 130, ORANGE, JAUNE_C),
+               ("INCITATION À L'ACTIVITÉ", "faire en sorte que le retour", "à l'emploi soit financièrement", "avantageux", 60, 400, VIOLET, VIOLET_C),
+               ("SECTEURS PORTEURS", "soutenir les activités à forte", "intensité de main-d'œuvre", "", 450, 400, ROUGE, ROSE_C)]
+    for t, l1, l2, l3, a, b, bord, fond in mesures:
+        d.rounded_rectangle([a, b, a + 340, b + 190], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        for i, l in enumerate(wrap(d, t, F_BOLD, 320)):
+            texte_centre(d, (a, b + 8 + i * 26, a + 340, b + 34 + i * 26), l, F_BOLD, BLANC)
+        for i, l in enumerate([l1, l2, l3]):
+            if l:
+                texte_centre(d, (a, b + 74 + i * 28, a + 340, b + 102 + i * 28), l, F_MINI, NOIR)
+
+    d.rounded_rectangle([840, 400, 1180, 590], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((864, 422), "La logique", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Agir sur les conditions de production, non sur la demande : rendre l'embauche moins coûteuse et plus simple.",
+                               F_MINI, 290)):
+        d.text((864, 466 + i * 24), l, font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 620, 1180, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 642), "Effet attendu et limite", font=F_BOLD, fill=BLEU)
+    d.text((84, 678), "Ces mesures n'agissent qu'à moyen terme, et leur efficacité suppose une activité suffisante : demande et offre se complètent.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_offre.png"))
+    print("Figure écrite : t12_u3_offre.png")
+
+
+# ------------------------------------------------------------
+# Figure 41 — Formation, insertion et reconversion
+# ------------------------------------------------------------
+def fig_formation():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Formation, insertion et reconversion : les politiques d'accompagnement")
+
+    d.rounded_rectangle([520, 130, 720, 240], radius=12, fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (520, 130, 720, 240), "L'EMPLOYABILITÉ", F_BOLD, BLEU)
+
+    dispositifs = [("FORMATION INITIALE", "Donner les bases et une", "qualification reconnue", "avant l'entrée sur le marché.", 60, 300, BLEU, BLEU_C),
+                   ("FORMATION CONTINUE", "Entretenir et élever les", "compétences tout au long", "de la vie active.", 830, 300, VERT, VERT_C),
+                   ("INSERTION", "Accompagner les jeunes et les", "publics éloignés de l'emploi :", "stage, apprentissage, tutorat.", 60, 470, ORANGE, JAUNE_C),
+                   ("RECONVERSION", "Changer de métier après une", "formation adaptée, quand", "l'activité disparaît.", 830, 470, VIOLET, VIOLET_C)]
+    for t, l1, l2, l3, a, b, bord, fond in dispositifs:
+        d.rounded_rectangle([a, b, a + 350, b + 160], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 350, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 350, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate([l1, l2, l3]):
+            texte_centre(d, (a, b + 56 + i * 26, a + 350, b + 84 + i * 26), l, F_MINI, NOIR)
+        d.line([a + 175, b + 80, 620, 185], fill=GRIS, width=2)
+
+    d.rounded_rectangle([60, 660, 1180, 690], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 678), "Objectif : rapprocher les compétences disponibles des besoins des entreprises.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_formation.png"))
+    print("Figure écrite : t12_u3_formation.png")
+
+
+# ------------------------------------------------------------
+# Figure 44 — Les nouvelles formes d'organisation du travail
+# ------------------------------------------------------------
+def fig_nouvelles_formes():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les nouvelles formes d'organisation du travail")
+
+    boite(d, 60, 130, 600, 380, "LE MODÈLE TAYLORIEN-FORDIEN",
+          ["Tâches parcellisées, cadence", "imposée, contrôle hiérarchique,", "production de masse standardisée.",
+           "Gains : productivité élevée.",
+           "Limites : répétitivité, faible", "autonomie, usure professionnelle."],
+          fill=ROSE_C, bord=ROUGE, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 380, "LES FORMES NOUVELLES",
+          ["Polyvalence et rotation des", "postes ; groupes de travail", "autonomes ; production au plus", "juste ; qualité totale ; souplesse", "des horaires ; numérique et", "télétravail ; travail de plateforme."],
+          fill=VERT_C, bord=VERT, interligne=26, font=F_SMALL)
+
+    fleche(d, 604, 255, 636, 255, GRIS, 3)
+
+    d.rounded_rectangle([60, 420, 600, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 442), "Ce que recherchent les entreprises", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Réactivité face à une demande", "  variable et personnalisée ;",
+                           "• qualité et réduction des défauts ;",
+                           "• implication des salariés."]):
+        d.text((84, 486 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 420, 1180, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((664, 442), "Ce que cela change pour les salariés", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Plus d'initiative et de compétences", "  mobilisées, mais plus de",
+                           "  responsabilité individuelle ;",
+                           "• vigilance sur la charge de travail", "  et sur la stabilité de l'emploi."]):
+        d.text((664, 486 + i * 30), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u3_nouvelles_formes.png"))
+    print("Figure écrite : t12_u3_nouvelles_formes.png")
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_pib()
@@ -1199,3 +1632,15 @@ if __name__ == "__main__":
     fig_change()
     fig_crises()
     fig_dette()
+    fig_emploi_croissance()
+    fig_progres_emploi()
+    fig_marche_travail()
+    fig_limites_modele()
+    fig_chomage_keynesien()
+    fig_chomage_classique()
+    fig_chomage_structurel()
+    fig_consequences_chomage()
+    fig_relance()
+    fig_politiques_offre()
+    fig_formation()
+    fig_nouvelles_formes()
