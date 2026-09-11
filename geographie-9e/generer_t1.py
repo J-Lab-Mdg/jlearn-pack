@@ -108,6 +108,12 @@ SAUMON = {
     74: ["naissances", "décès", "migrations", "immigration", "émigration"],
     75: ["solde naturel", "solde migratoire", "natalité", "mortalité",
          "croissance"],
+    76: ["interpréter", "données", "variation", "évolution", "comparer"],
+    77: ["activités", "agriculture", "élevage", "artisanat", "services"],
+    78: ["riziculture", "rizière", "terrasses", "culture vivrière",
+         "culture de rente"],
+    79: ["calendrier cultural", "repiquer", "sarcler", "récolter",
+         "labourer"],
 }
 
 # ── Illustration d'ouverture de leçon ───────────────────────────────────────

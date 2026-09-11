@@ -1562,3 +1562,87 @@ FIGURES_T3["img_s72_a.png"] = groupes_age
 FIGURES_T3["img_s73_a.png"] = tableau_structure
 FIGURES_T3["img_s74_a.png"] = mouvements_population
 FIGURES_T3["img_s75_a.png"] = croissance_population
+
+
+def tableau_population(path):
+    """Séance 76 — lire et interpréter un tableau de population."""
+    f = Fig(1100, 700)
+    f.txtc(550, 12, "LIRE UN TABLEAU DE POPULATION", size=34, color=BLEU,
+           bold=True)
+    x0, y0, cw, ch = 90, 100, 230, 82
+    f.rect(x0, y0, x0 + 4 * cw, y0 + 6 * ch, fill="white", stroke=NOIR, width=4)
+    for i in range(7):
+        y = y0 + i * ch
+        f.line(x0, y, x0 + 4 * cw, y, color=NOIR, width=3)
+    for i in range(5):
+        x = x0 + i * cw
+        f.line(x, y0, x, y0 + 6 * ch, color=NOIR, width=3)
+    for i, t in enumerate(["Village", "Population 2010", "Population 2020",
+                           "Variation"]):
+        f.txtc(x0 + i * cw + cw // 2, y0 + 20, t, size=23, color=BLEU, bold=True)
+    donnees = [("Andranomanelatra", "1 200", "1 450", "+ 250"),
+               ("Ambohimahasoa", "980", "1 150", "+ 170"),
+               ("Antsahabe", "640", "590", "- 50"),
+               ("Manjakandriana", "1 500", "1 680", "+ 180"),
+               ("TOTAL", "4 320", "4 870", "+ 550")]
+    for j, lig in enumerate(donnees):
+        y = y0 + (j + 1) * ch + 26
+        for i, val in enumerate(lig):
+            coul = NOIR
+            if i == 3:
+                coul = VERT if val.startswith("+") else ROUGE
+            f.txtc(x0 + i * cw + cw // 2, y, val, size=25, color=coul,
+                   bold=(j == 4))
+    f.txtc(550, 580, "Trois villages gagnent des habitants, un seul en perd.",
+           size=26, color=NOIR)
+    f.txtc(550, 625, "Le total permet de vérifier : 4 870 - 4 320 = 550.",
+           size=26, color=BLEU)
+    f.txtc(550, 668, "Lire un tableau, c'est comparer les lignes et les "
+                     "colonnes.", size=24, color=GRIS)
+    return f.save(path)
+
+
+def calendrier_cultural(path):
+    """Séance 79 — le calendrier cultural du riz."""
+    f = Fig(1100, 680)
+    f.txtc(550, 12, "LE CALENDRIER CULTURAL DU RIZ", size=34, color=BLEU,
+           bold=True)
+    mois = ["Jan", "Fév", "Mars", "Avr", "Mai", "Juin",
+            "Juil", "Août", "Sep", "Oct", "Nov", "Déc"]
+    xl, x0, cw, y0, rh = 40, 290, 60, 170, 64
+    f.rect(xl, y0 - 60, 1010, y0 + 5 * rh, fill="white", stroke=NOIR, width=4)
+    for i in range(13):
+        f.line(x0 + i * cw, y0 - 60, x0 + i * cw, y0 + 5 * rh, color=NOIR,
+               width=2)
+    for i in range(7):
+        f.line(xl, y0 - 60 + i * rh, 1010, y0 - 60 + i * rh, color=NOIR, width=3)
+    for i, m in enumerate(mois):
+        f.txtc(x0 + i * cw + cw // 2, y0 - 42, m, size=21, color=BLEU, bold=True)
+    activites = [
+        ("Préparer la rizière", [10, 11], "#8D6E63"),
+        ("Repiquer le riz", [0, 1], "#4FA3D1"),
+        ("Entretenir, sarcler", [1, 2, 3], "#8BC34A"),
+        ("Récolter le riz", [4, 5], "#EF6C00"),
+        ("Sécher et stocker", [5, 6, 7], "#C0A020"),
+    ]
+    for k, (nom, idx, coul) in enumerate(activites):
+        y = y0 + k * rh
+        f.txt(50, y + 18, nom, size=22, color=NOIR)
+        for i in idx:
+            f.rect(x0 + i * cw + 3, y + 8, x0 + (i + 1) * cw - 3, y + rh - 8,
+                   fill=coul, stroke=coul)
+    f.rect(xl + 5, y0 + 5 * rh + 20, 520, y0 + 5 * rh + 55, fill="#4FA3D1",
+           stroke=NOIR, width=2)
+    f.txtc(285, y0 + 5 * rh + 30, "SAISON DES PLUIES : novembre à avril",
+           size=22, color="white", bold=True)
+    f.rect(530, y0 + 5 * rh + 20, 1005, y0 + 5 * rh + 55, fill="#E8C66A",
+           stroke=NOIR, width=2)
+    f.txtc(770, y0 + 5 * rh + 30, "SAISON SÈCHE : mai à octobre",
+           size=22, color=NOIR, bold=True)
+    f.txtc(550, 655, "Le travail des champs suit le rythme des deux saisons.",
+           size=24, color=GRIS)
+    return f.save(path)
+
+
+FIGURES_T3["img_s76_a.png"] = tableau_population
+FIGURES_T3["img_s79_a.png"] = calendrier_cultural

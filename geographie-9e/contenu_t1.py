@@ -8340,3 +8340,518 @@ SEANCES.append(dict(
                 "d'abord augmenté grâce aux naissances, puis elle a "
                 "diminué à cause de l'exode rural vers la ville.",
 ))
+
+# ═══════════════════════════ SÉANCE 76 ═══════════════════════════
+SEANCES.append(dict(
+    n=76, semaine=24, titre="Lire un tableau de population",
+    objectif="Interpréter les données de population.",
+    materiel="Schéma du tableau de population, ardoise et craie, cahier.",
+    illustration=("img_s76_a.png",
+                  "Illustration — Lire et interpréter un tableau de "
+                  "population.", 700),
+    revision=[("Qu'est-ce que le solde naturel ?",
+               "R.A. : La différence entre les naissances et les "
+               "décès."),
+              ("Cite les quatre mouvements de la population.",
+               "R.A. : Les naissances, les décès, les arrivées et "
+               "les départs.")],
+    mes=("Comment sait-on si un village gagne ou perd des habitants ?",
+         "R.A. : En comparant sa population à deux dates."),
+    analyse=[
+        ("Que compare le tableau ?",
+         "R.A. : La population de plusieurs villages à deux dates."),
+        ("Combien de villages gagnent des habitants ?", "R.A. : Trois."),
+        ("Lequel en perd ?", "R.A. : Antsahabe, avec cinquante de moins."),
+        ("Comment vérifie-t-on le tableau ?",
+         "R.A. : En additionnant les colonnes et les lignes."),
+        ("Que fait-on après avoir lu ?",
+         "R.A. : On cherche une explication : exode rural, école, "
+         "marché.")],
+    synthese="Donc, lire un tableau, c'est comparer les lignes entre elles et les "
+             "colonnes entre elles, vérifier les totaux par le calcul, puis "
+             "expliquer les différences observées.",
+    application=("Sur le tableau, réponds : a) Quel village a gagné le "
+                 "plus d'habitants ? b) Quel est le total en 2010 ? c) En 2020 "
+                 "? d) De combien le total a-t-il augmenté ?",
+                 "a) Andranomanelatra, avec 250 de plus — b) 4 320 — "
+                 "c) 4 870 — d) De 550 habitants."),
+    evaluation=("1. Réponds par vrai ou faux : a) Lire un tableau, "
+                "c'est le recopier. b) On compare les lignes entre elles. c) Les "
+                "totaux servent à vérifier. d) Une variation négative "
+                "signifie une baisse.\n"
+                "2. Explique en deux phrases comment lire un tableau de "
+                "population.",
+                "1. a) Faux — b) Vrai — c) Vrai — d) Vrai.\n"
+                "2. Exemple : « On compare les villages entre eux et les "
+                "deux dates entre elles. Puis on vérifie les totaux par le "
+                "calcul. »"),
+    lecon_titre="Lire un tableau de population",
+    sections=[
+        ("1. Lire un tableau, c'est quoi ?",
+         "Lire un tableau ne veut pas dire le recopier : cela veut dire en tirer du "
+         "sens. On commence toujours par le titre et les en-têtes, qui disent ce "
+         "que contiennent les colonnes et les lignes. Ici, les lignes sont des "
+         "villages, les colonnes sont des années et une variation. Sans cette "
+         "première lecture, les nombres ne veulent rien dire."),
+        ("2. Comparer les lignes",
+         "On compare d'abord les lignes entre elles, c'est-à-dire les villages. "
+         "Andranomanelatra passe de 1 200 à 1 450 habitants : c'est la plus "
+         "forte hausse. Antsahabe passe de 640 à 590 : c'est le seul village "
+         "qui perd des habitants. Comparer les lignes permet de classer et de "
+         "repérer les cas particuliers."),
+        ("3. Comparer les colonnes",
+         "On compare ensuite les colonnes, c'est-à-dire les deux dates. Le "
+         "total passe de 4 320 à 4 870 habitants : l'ensemble de la commune "
+         "gagne 550 habitants en dix ans. Cette comparaison dans le temps s'appelle "
+         "une évolution. La dernière colonne, la variation, résume cette "
+         "évolution pour chaque ligne."),
+        ("4. Vérifier et expliquer",
+         "Les totaux servent à vérifier : 4 870 moins 4 320 font bien 550, "
+         "et la somme des variations, 250 plus 170 moins 50 plus 180, fait aussi "
+         "550. Une fois les chiffres vérifiés, le géographe cherche "
+         "l'explication : pourquoi Antsahabe perd-il des habitants ? Sans doute "
+         "parce que ses jeunes partent vers la ville. Expliquer, c'est le vrai but "
+         "de la lecture."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Un géographe ne se contente jamais d'un chiffre isolé. "
+             "Il le compare toujours à un autre : celui d'un autre lieu, ou "
+             "celui d'une autre date. C'est ce que l'on appelle la démarche "
+             "comparative."),
+    resume=[
+        "Lire un tableau, c'est en tirer du sens, pas le recopier.",
+        "On commence par le titre et les en-têtes.",
+        "On compare les lignes entre elles : les villages.",
+        "On compare les colonnes entre elles : les dates.",
+        "On vérifie les totaux, puis l'on cherche une explication.",
+    ],
+    lexique=[("Interpréter", "Expliquer le sens des données."),
+             ("Donnée", "Un chiffre relevé et consigné."),
+             ("Évolution", "Le changement entre deux dates."),
+             ("Variation", "La différence entre deux valeurs."),
+             ("Comparer", "Chercher les ressemblances et les différences.")],
+    exercices=[
+        ("Complète avec : titre — lignes — colonnes — vérifier",
+         ["a) On commence par lire le …… du tableau.",
+          "b) On compare les …… entre elles.",
+          "c) On compare les …… entre elles.",
+          "d) Les totaux servent à ……"],
+         ["a) le titre", "b) les lignes", "c) les colonnes",
+          "d) à vérifier"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Lire un tableau, c'est le recopier.",
+          "b) Une variation négative signifie une baisse.",
+          "c) Les totaux permettent de vérifier.",
+          "d) Inutile de chercher une explication."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Faux"]),
+        ("Relie chaque étape à son action.",
+         ["Le titre", "Les lignes", "Les colonnes", "Les totaux"],
+         ["Comparer les villages", "Vérifier le calcul",
+          "Dire ce que contient le tableau", "Comparer les dates"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Que fait-on avant de lire les nombres ?",
+          "b) Que compare-t-on dans les lignes ?",
+          "c) Que montre la colonne de variation ?",
+          "d) Pourquoi cherche-t-on une explication ?"],
+         ["a) On lit le titre et les en-têtes.",
+          "b) On compare les villages entre eux.",
+          "c) Elle montre la hausse ou la baisse de chaque village.",
+          "d) Pour comprendre pourquoi les chiffres changent."]),
+    ],
+    consigne_ex5="Construis le tableau de population de trois villages de ta "
+                 "commune sur deux dates, calcule les variations et le total, puis "
+                 "rédige trois phrases d'interprétation.",
+    corrige_ex5="Tableau à trois lignes et trois colonnes ; variation obtenue "
+                "par soustraction ; interprétation : quel village gagne, lequel "
+                "perd, et une explication par les départs ou les arrivées.",
+))
+
+# ═══════════════════════════ SÉANCE 77 ═══════════════════════════
+SEANCES.append(dict(
+    n=77, semaine=25, titre="Les activités des habitants du village",
+    objectif="Énumérer les activités des habitants.",
+    materiel="Schéma du village, ardoise et craie, cahier.",
+    illustration=("scene_vie_village.png",
+                  "Illustration — La vie d'un village des hautes terres "
+                  "malgaches.", 600),
+    revision=[("Comment lit-on un tableau de population ?",
+               "R.A. : En comparant les lignes, les colonnes et les "
+               "totaux."),
+              ("Qu'est-ce que l'exode rural ?",
+               "R.A. : Le départ des jeunes des campagnes vers les "
+               "villes.")],
+    mes=("Que font les adultes de ton village pour vivre ?",
+         "R.A. : Ils cultivent la terre, élèvent des animaux, "
+         "fabriquent ou vendent des produits."),
+    analyse=[
+        ("Cite une activité du secteur primaire.",
+         "R.A. : La culture du riz, ou l'élevage des zébus."),
+        ("Cite une activité artisanale.",
+         "R.A. : Le tissage, la vannerie ou la forge."),
+        ("Cite une activité commerciale.",
+         "R.A. : La vente au marché du village."),
+        ("Cite un service public du village.",
+         "R.A. : L'école, le dispensaire ou le bureau de la commune."),
+        ("Pourquoi dit-on que les activités sont liées à la "
+         "nature ?",
+         "R.A. : Parce qu'elles dépendent du sol, de l'eau et du "
+         "climat.")],
+    synthese="Donc, les habitants du village vivent d'activités "
+             "variées : agriculture, élevage, pêche, artisanat, commerce et "
+             "services. La plupart dépendent de la nature.",
+    application=("Observe le schéma et réponds : a) Cite trois "
+                 "activités visibles. b) Laquelle occupe le plus de monde ? "
+                 "c) Cite un métier du village. d) Cite un service.",
+                 "a) La riziculture, l'élevage des zébus et le "
+                 "marché — b) La riziculture — c) Le forgeron, le "
+                 "tisserand ou le vannier — d) L'école ou le "
+                 "dispensaire."),
+    evaluation=("1. Réponds par vrai ou faux : a) Toutes les "
+                "activités du village sont agricoles. b) L'élevage des "
+                "zébus est une activité importante. c) Le marché "
+                "permet de vendre les produits. d) L'école est un "
+                "service.\n"
+                "2. Cite quatre activités des habitants du village.",
+                "1. a) Faux — b) Vrai — c) Vrai — d) Vrai.\n"
+                "2. Par exemple : la culture du riz, l'élevage, "
+                "l'artisanat et le commerce."),
+    lecon_titre="Les activités du village",
+    sections=[
+        ("1. Travailler la terre",
+         "La majorité des habitants du village vivent de l'agriculture. Ils "
+         "cultivent le riz dans les rizières, le manioc et la patate douce sur les "
+         "tanety, les collines sèches, et les légumes près des maisons. "
+         "Ce travail occupe presque toute l'année et toute la famille : les "
+         "adultes aux champs, les enfants après l'école, les anciens "
+         "pour garder les récoltes."),
+        ("2. Élever des animaux",
+         "L'élevage accompagne toujours l'agriculture. Les zébus donnent la "
+         "force de travail pour labourer les rizières, le fumier pour engraisser "
+         "les champs, la viande pour les fêtes et le prestige pour la famille. "
+         "On élève aussi des volailles, des porcs et des chèvres, "
+         "gardés près de la maison et vendus au marché en cas de besoin."),
+        ("3. Les métiers du village",
+         "Tout le monde n'est pas paysan. Le village compte des artisans : le "
+         "forgeron fabrique et répare les outils, le tisserand travaille le "
+         "raphia et le coton, le vannier tresse les paniers et les nattes, le "
+         "menuisier fabrique les meubles et les charrettes. Ces métiers se "
+         "transmettent le plus souvent de père en fils."),
+        ("4. Les services",
+         "Le village offre aussi des services : l'école pour les enfants, le "
+         "dispensaire pour les soins, le bureau de la commune pour les papiers, "
+         "l'église ou le temple pour le culte, le marché pour les "
+         "échanges. Plus un village est grand, plus il compte de services ; "
+         "c'est pour cela que les habitants des hameaux viennent au chef-lieu."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Le zébu à bosse est arrivé à Madagascar avec les "
+             "premiers migrants venus d'Indonésie, il y a plus de mille ans. Un "
+             "troupeau de zébus reste aujourd'hui la principale richesse "
+             "d'une famille rurale malgache."),
+    resume=[
+        "La plupart des villageois vivent de l'agriculture.",
+        "L'élevage des zébus complète toujours la culture.",
+        "Les artisans fabriquent outils, paniers et tissus.",
+        "Le marché et les boutiques assurent le commerce.",
+        "L'école et le dispensaire sont des services.",
+    ],
+    lexique=[("Activité", "Le travail que l'on fait pour vivre."),
+             ("Agriculture", "La culture des plantes."),
+             ("Élevage", "Le soin des animaux domestiques."),
+             ("Artisanat", "La fabrication d'objets à la main."),
+             ("Service", "Une activité utile à tous, non "
+              "marchande le plus souvent.")],
+    exercices=[
+        ("Complète avec : agriculture — élevage — artisanat — services",
+         ["a) La culture du riz appartient à l'……",
+          "b) Le soin des zébus est l'……",
+          "c) Le vannier exerce un ……",
+          "d) L'école et le dispensaire sont des ……"],
+         ["a) à l'agriculture", "b) l'élevage", "c) un artisanat",
+          "d) des services"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Tous les villageois sont forgerons.",
+          "b) Le zébu sert à labourer les rizières.",
+          "c) Le marché permet de vendre les produits.",
+          "d) L'école est un service public."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Vrai"]),
+        ("Relie chaque activité à son produit.",
+         ["La riziculture", "L'élevage", "Le tissage", "La vannerie"],
+         ["Les paniers", "Le riz", "Les zébus", "Les nattes"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Cite les quatre grandes activités du village.",
+          "b) Pourquoi le zébu est-il si important ?",
+          "c) Cite trois métiers d'artisan.",
+          "d) Cite deux services du village."],
+         ["a) L'agriculture, l'élevage, l'artisanat et le commerce.",
+          "b) Il laboure, fume les champs et donne de la viande.",
+          "c) Le forgeron, le tisserand et le vannier.",
+          "d) L'école et le dispensaire."]),
+    ],
+    consigne_ex5="Dessine le plan de ton village avec ses activités : les "
+                 "champs, les rizières, l'enclos des zébus, les maisons, "
+                 "l'école, le marché et le puits.",
+    corrige_ex5="Plan à main levée : les rizières dans les bas-fonds, les "
+                "cultures sur les collines, les maisons groupées, l'enclos "
+                "près des maisons, l'école et le marché au centre, "
+                "avec une légende.",
+))
+
+# ═══════════════════════════ SÉANCE 78 ═══════════════════════════
+SEANCES.append(dict(
+    n=78, semaine=25, titre="L'agriculture et les cultures de la région",
+    objectif="Citer les principales cultures pratiquées.",
+    materiel="Schéma de la rizière, ardoise et craie, cahier.",
+    illustration=("scene_riziere.png",
+                  "Illustration — Une rizière en terrasses des "
+                  "hautes terres.", 600),
+    revision=[("Cite les quatre grandes activités du village.",
+               "R.A. : L'agriculture, l'élevage, l'artisanat et le "
+               "commerce."),
+              ("Pourquoi le zébu est-il important ?",
+               "R.A. : Il laboure et fume les champs.")],
+    mes=("Quelles plantes cultive-t-on autour de toi ?",
+         "R.A. : Le riz, le manioc, la patate douce, le maïs, les "
+         "légumes."),
+    analyse=[
+        ("Quelle est la culture principale de Madagascar ?",
+         "R.A. : Le riz."),
+        ("Où le cultive-t-on ?", "R.A. : Dans les rizières, "
+         "en bas de pente et dans les vallées."),
+        ("Que cultive-t-on sur les tanety ?",
+         "R.A. : Le manioc, la patate douce, le maïs et les "
+         "arachides."),
+        ("Cite une culture de rente.",
+         "R.A. : La vanille, le café, le girofle ou la canne à "
+         "sucre."),
+        ("De quoi l'agriculture dépend-elle ?",
+         "R.A. : Du sol, de l'eau et du climat.")],
+    synthese="Donc, la région cultive d'abord le riz dans les rizières "
+             "irriguées, puis des cultures vivrières sur les collines et, "
+             "selon la région, des cultures de rente destinées à la "
+             "vente.",
+    application=("Observe le schéma et réponds : a) Où se trouve la "
+                 "rizière ? b) Pourquoi les parcelles sont-elles en escalier "
+                 "? c) D'où vient l'eau ? d) Cite deux autres cultures.",
+                 "a) Dans le bas de la vallée — b) Pour retenir "
+                 "l'eau et limiter l'érosion — c) D'une source ou "
+                 "d'un canal d'irrigation — d) Le manioc et la patate "
+                 "douce."),
+    evaluation=("1. Réponds par vrai ou faux : a) Le riz pousse sur "
+                "les collines sèches. b) Les rizières sont en terrasses "
+                "dans les vallées. c) Le manioc est une culture vivrière. "
+                "d) La vanille est une culture de rente.\n"
+                "2. Cite deux cultures vivrières et une culture de rente.",
+                "1. a) Faux — b) Vrai — c) Vrai — d) Vrai.\n"
+                "2. Vivrières : le manioc et la patate douce. Rente : la "
+                "vanille."),
+    lecon_titre="L'agriculture et les cultures",
+    sections=[
+        ("1. La riziculture",
+         "Le riz est la base de l'alimentation malgache et la première "
+         "culture du pays. Il pousse dans les rizières, des parcelles plates "
+         "entourées de petites digues de terre qui retiennent l'eau. Dans les "
+         "hautes terres, les rizières sont aménagées en terrasses sur les "
+         "flancs des collines : chaque marche retient l'eau et limite "
+         "l'érosion. Le riz exige beaucoup de travail et beaucoup d'eau."),
+        ("2. Les cultures vivrières",
+         "Les cultures vivrières servent à nourrir la famille. Le manioc "
+         "et la patate douce poussent sur les tanety, les collines sèches, "
+         "où le riz ne peut pas venir. On cultive aussi le maïs, les "
+         "arachides, les haricots et les brèdes, ces feuilles vertes que l'on "
+         "cueille chaque semaine. Ces plantes résistent mieux à la "
+         "sécheresse que le riz."),
+        ("3. Les cultures de rente",
+         "Les cultures de rente sont cultivées pour être vendues, et non "
+         "pour nourrir la famille. Sur la côte est, la vanille et le girofle "
+         "font vivre des milliers de familles ; sur la côte ouest, c'est "
+         "la canne à sucre ; dans le sud, le sisal. Le café, lui, se "
+         "cultive dans les régions humides de l'est et du nord."),
+        ("4. Les conditions de l'agriculture",
+         "L'agriculture dépend de trois conditions : le sol, qui doit être "
+         "assez fertile ; l'eau, apportée par la pluie ou par un canal "
+         "d'irrigation ; et le climat, avec les deux saisons étudiées "
+         "au trimestre dernier. Quand la pluie manque ou arrive trop tard, la "
+         "récolte baisse : c'est pourquoi les paysans surveillent le ciel avec "
+         "attention."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Madagascar est l'un des premiers producteurs mondiaux de vanille. "
+             "La gousse doit être pollinisée à la main, fleur par "
+             "fleur, puis séchée pendant des mois : cela explique son prix "
+             "élevé."),
+    resume=[
+        "Le riz est la première culture de Madagascar.",
+        "Les rizières sont en terrasses dans les vallées.",
+        "Le manioc et la patate douce poussent sur les collines.",
+        "Les cultures de rente sont vendues : vanille, café, girofle.",
+        "Le sol, l'eau et le climat conditionnent les récoltes.",
+    ],
+    lexique=[("Riziculture", "La culture du riz."),
+             ("Rizière", "Le champ inondé où pousse le riz."),
+             ("Terrasse", "Une marche aménagée sur une pente."),
+             ("Culture vivrière", "Une culture qui nourrit la famille."),
+             ("Culture de rente", "Une culture destinée à la "
+              "vente.")],
+    exercices=[
+        ("Complète avec : rizière — terrasses — vivrière — rente",
+         ["a) Le riz pousse dans une ……",
+          "b) Sur les pentes, les parcelles sont en ……",
+          "c) Le manioc est une culture ……",
+          "d) La vanille est une culture de ……"],
+         ["a) une rizière", "b) en terrasses", "c) une culture vivrière",
+          "d) une culture de rente"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Le riz pousse sur les collines sèches.",
+          "b) Les terrasses limitent l'érosion.",
+          "c) La vanille est une culture vivrière.",
+          "d) L'agriculture dépend de l'eau et du climat."],
+         ["a) Faux", "b) Vrai", "c) Faux", "d) Vrai"]),
+        ("Relie chaque culture à son usage.",
+         ["Le riz", "Le manioc", "La vanille", "Le girofle"],
+         ["Nourrit la famille", "Nourrit la famille", "Est vendu",
+          "Est vendu"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Où cultive-t-on le riz ?",
+          "b) Pourquoi aménage-t-on des terrasses ?",
+          "c) Qu'est-ce qu'une culture de rente ?",
+          "d) Cite les trois conditions de l'agriculture."],
+         ["a) Dans les rizières, en bas de vallée.",
+          "b) Pour retenir l'eau et limiter l'érosion.",
+          "c) C'est une culture cultivée pour être vendue.",
+          "d) Le sol, l'eau et le climat."]),
+    ],
+    consigne_ex5="Dessine le profil d'une colline cultivée : la rizière en "
+                 "terrasses en bas, le canal d'irrigation, et les cultures de "
+                 "manioc sur le tanety en haut.",
+    corrige_ex5="Profil en coupe : pente avec marches irrégulières en bas "
+                "(rizières), canal qui longe le flanc, parcelles de manioc "
+                "sur le plateau et la pente sèche, légende.",
+))
+
+# ═══════════════════════════ SÉANCE 79 ═══════════════════════════
+SEANCES.append(dict(
+    n=79, semaine=25, titre="Le calendrier cultural",
+    objectif="Élaborer un calendrier cultural ; relation saisons / culture "
+             "du riz.",
+    materiel="Schéma du calendrier cultural, ardoise et craie, cahier.",
+    illustration=("img_s79_a.png",
+                  "Illustration — Le calendrier cultural du riz, mois par "
+                  "mois.", 700),
+    revision=[("Où cultive-t-on le riz ?",
+               "R.A. : Dans les rizières, en bas de vallée."),
+              ("Cite les deux saisons de Madagascar.",
+               "R.A. : La saison des pluies et la saison sèche.")],
+    mes=("À quel moment de l'année récolte-t-on le riz ?",
+         "R.A. : Vers le mois de mai ou de juin."),
+    analyse=[
+        ("Qu'est-ce qu'un calendrier cultural ?",
+         "R.A. : Un tableau qui montre les travaux des champs mois par "
+         "mois."),
+        ("Quand prépare-t-on la rizière ?",
+         "R.A. : En novembre et décembre."),
+        ("Quand repique-t-on le riz ?",
+         "R.A. : En janvier et février."),
+        ("Quand récolte-t-on ?", "R.A. : En mai et juin."),
+        ("Pourquoi ce calendrier suit-il la pluie ?",
+         "R.A. : Parce que le riz a besoin de beaucoup d'eau.")],
+    synthese="Donc, le calendrier cultural montre les travaux des champs mois par "
+             "mois. Il suit les deux saisons : on prépare et l'on repique "
+             "pendant la saison des pluies, on récolte et l'on sèche "
+             "au début de la saison sèche.",
+    application=("Sur le calendrier, réponds : a) Quand prépare-t-on "
+                 "la rizière ? b) Quand repique-t-on ? c) Quand "
+                 "récolte-t-on ? d) Cite la saison des pluies.",
+                 "a) En novembre et décembre — b) En janvier et "
+                 "février — c) En mai et juin — d) De novembre "
+                 "à avril."),
+    evaluation=("1. Réponds par vrai ou faux : a) Le calendrier "
+                "cultural suit les saisons. b) On repique le riz en saison "
+                "sèche. c) La récolte a lieu en mai et juin. d) Le "
+                "séchage suit la récolte.\n"
+                "2. Explique en deux phrases le lien entre la culture du riz et "
+                "la saison des pluies.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Vrai.\n"
+                "2. Exemple : « Le riz a besoin de beaucoup d'eau. On "
+                "le repique donc pendant la saison des pluies. »"),
+    lecon_titre="Le calendrier cultural",
+    sections=[
+        ("1. Qu'est-ce qu'un calendrier cultural ?",
+         "Un calendrier cultural est un tableau qui montre, mois par mois, les "
+         "travaux que le paysan exécute dans ses champs. Chaque culture a le "
+         "sien. Il ne ressemble pas à un calendrier ordinaire : les cases "
+         "ne portent pas des rendez-vous, mais des travaux, et une même case peut "
+         "en contenir plusieurs qui se chevauchent."),
+        ("2. La saison des pluies : du repiquage à la récolte",
+         "Dès novembre, les premières pluies arrivent : le paysan prépare "
+         "la rizière, laboure la boue avec le zébu et répare les digues. En "
+         "janvier et février, il repique les jeunes plants, un par un, dans la "
+         "boue. De février à avril, il entretient et sarcle : il faut "
+         "arracher les mauvaises herbes et surveiller le niveau de l'eau."),
+        ("3. La saison sèche : la récolte et le repos",
+         "La récolte a lieu en mai et juin, quand le riz est mûr et que "
+         "l'eau a baissé. On coupe les tiges à la faucille, on bat le "
+         "riz pour séparer les grains, puis on le fait sécher au soleil sur "
+         "des bâches. De juillet à octobre, la terre se repose : c'est la "
+         "saison des travaux d'entretien, des réparations et des fêtes."),
+        ("4. Lire le calendrier",
+         "Lire ce calendrier, c'est comprendre une chose essentielle : le travail "
+         "des champs n'est pas choisi au hasard, il obéit au climat. Un retard "
+         "des pluies repousse le repiquage, et donc la récolte. C'est pour "
+         "cela que le paysan observe le ciel, comme nous l'avons fait au "
+         "trimestre dernier avec la girouette et le thermomètre."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Dans les hautes terres, la récolte du riz donne lieu à "
+             "de grandes fêtes familiales. On y invite la parenté venue des "
+             "villages voisins, et l'on remercie les ancêtres pour la "
+             "récolte obtenue."),
+    resume=[
+        "Le calendrier cultural montre les travaux mois par mois.",
+        "On prépare la rizière en novembre et décembre.",
+        "On repique le riz en janvier et février.",
+        "On récolte en mai et juin, puis on sèche le riz.",
+        "Le calendrier suit les deux saisons malgaches.",
+    ],
+    lexique=[("Calendrier cultural", "Le tableau des travaux des champs."),
+             ("Repiquer", "Transplanter un jeune plant dans la rizière."),
+             ("Labourer", "Retourner la terre avant de semer."),
+             ("Sarcler", "Arracher les mauvaises herbes."),
+             ("Récolter", "Cueillir les plantes arrivées à "
+              "maturité.")],
+    exercices=[
+        ("Complète avec : prépare — repique — récolte — sèche",
+         ["a) En novembre, on …… la rizière.",
+          "b) En janvier, on …… le riz.",
+          "c) En mai, on …… le riz.",
+          "d) Ensuite, on le …… au soleil."],
+         ["a) on prépare", "b) on repique", "c) on récolte",
+          "d) on le sèche"]),
+        ("Réponds par vrai ou faux.",
+         ["a) On repique le riz pendant la saison sèche.",
+          "b) La récolte a lieu en mai et juin.",
+          "c) Le calendrier cultural ne dépend pas du climat.",
+          "d) La saison des pluies va de novembre à avril."],
+         ["a) Faux", "b) Vrai", "c) Faux", "d) Vrai"]),
+        ("Relie chaque mois à son travail.",
+         ["Novembre", "Janvier", "Mars", "Juin"],
+         ["Repiquer le riz", "Récolter le riz", "Préparer la rizière",
+          "Sarcler et entretenir"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Qu'est-ce qu'un calendrier cultural ?",
+          "b) Quand repique-t-on le riz ?",
+          "c) Pourquoi la récolte suit-elle la saison des pluies ?",
+          "d) Que fait le paysan pendant la saison sèche ?"],
+         ["a) C'est le tableau des travaux des champs mois par mois.",
+          "b) En janvier et février.",
+          "c) Parce que le riz a mûri et que l'eau a baissé.",
+          "d) Il entretient, répare et participe aux fêtes."]),
+    ],
+    consigne_ex5="Construis le calendrier cultural d'une autre culture de ta "
+                 "région (manioc ou maïs) sur douze mois, puis explique en "
+                 "trois phrases en quoi il diffère de celui du riz.",
+    corrige_ex5="Tableau de douze colonnes avec les travaux ; pour le manioc, "
+                "la plantation peut se faire presque toute l'année et la "
+                "récolte s'étale : le calendrier est moins dépendant des "
+                "pluies que celui du riz.",
+))
