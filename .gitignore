@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+
+# PDF volumineux : garder la branche legere
+PE_T3.pdf
