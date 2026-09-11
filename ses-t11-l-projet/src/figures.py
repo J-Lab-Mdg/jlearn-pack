@@ -249,6 +249,104 @@ def fig_taux_interet():
     save(img, "t11_l_taux_interet.png")
 
 
+
+# ------------------------------------------------------------
+# FIGURES — UNITÉ III : Coordination par le marché et par l'État
+# ------------------------------------------------------------
+def fig_equilibre():
+    img, d = base("La formation du prix d'équilibre")
+    box(d, 50, 130, 350, 210, "Prix trop élevé\nL'offre dépasse la demande :\nles stocks s'accumulent.\n→ le prix baisse",
+        fill=ORANGE_C, line=ORANGE, size=20)
+    box(d, 445, 130, 350, 210, "Prix trop bas\nLa demande dépasse l'offre :\nles acheteurs se font concurrence.\n→ le prix monte",
+        fill=ORANGE_C, line=ORANGE, size=20)
+    box(d, 840, 130, 350, 210, "Prix d'équilibre\nOffre = demande\nLe marché se vide :\nprix et quantité se stabilisent",
+        fill=VERT_C, line=VERT, size=20)
+    d.text((60, 380), "Le marchandage : comment on y arrive", font=F(23, True), fill=BLEU)
+    box(d, 60, 430, 1080, 90, "Le vendeur annonce un prix, l'acheteur propose moins, chacun ajuste : l'échange se conclut au prix qui vide le marché.", fill=BLEU_C, size=21)
+    d.text((60, 560), "Le prix d'équilibre n'est pas décidé par une autorité : il résulte des ajustements entre offreurs et demandeurs.", font=F(21, True), fill=ROSE)
+    d.text((60, 605), "Quantité d'équilibre : la quantité échangée à ce prix, où tous ceux qui veulent acheter trouvent un vendeur.", font=F(20), fill=(40, 40, 40))
+    legende(d, "Figure 14 — Le marchandage conduit au prix qui vide le marché.", 660)
+    save(img, "t11_l_equilibre.png")
+
+
+def fig_structures():
+    img, d = base("Les structures de marché")
+    d.text((50, 100), "Nombre d'offreurs", font=F(22, True), fill=BLEU)
+    d.text((450, 100), "Structure", font=F(22, True), fill=BLEU)
+    d.text((820, 100), "Pouvoir sur le prix", font=F(22, True), fill=BLEU)
+    rows = [
+        ("Très nombreux", "Concurrence", "Aucun : on subit le prix", BLEU_C, BLEU),
+        ("Quelques-uns", "Oligopole", "Partagé : on se surveille", JAUNE_C, ORANGE),
+        ("Deux", "Duopole", "Partagé entre deux offreurs", JAUNE_C, ORANGE),
+        ("Un seul", "Monopole", "Entier : on fixe le prix", ROSE_C, ROSE),
+    ]
+    y = 150
+    for c1, c2, c3, fill, line in rows:
+        box(d, 50, y, 340, 95, c1, fill=fill, line=line, size=21)
+        box(d, 410, y, 380, 95, c2, fill=fill, line=line, size=22)
+        box(d, 810, y, 380, 95, c3, fill=fill, line=line, size=20)
+        y += 110
+    d.text((50, 610), "Plus les offreurs sont nombreux, moins chacun peut imposer son prix.", font=F(21, True), fill=ROSE)
+    legende(d, "Figure 15 — Du monopole à la concurrence.", 660)
+    save(img, "t11_l_structures.png")
+
+
+def _axes(d, x0, y0, x1, y1):
+    d.line([x0, y0, x0, y1], fill=(60, 60, 60), width=3)
+    d.line([x0, y1, x1, y1], fill=(60, 60, 60), width=3)
+    d.text((x1 - 120, y1 + 10), "Quantités", font=F(19), fill=(60, 60, 60))
+    d.text((x0 - 34, y0 - 30), "Prix", font=F(19), fill=(60, 60, 60))
+
+
+def fig_cpp():
+    img, d = base("Concurrence pure et parfaite : conditions et surplus")
+    _axes(d, 90, 120, 560, 470)
+    # offre (montante) et demande (descendante)
+    d.line([120, 430, 520, 180], fill=BLEU, width=4)   # offre
+    d.line([120, 180, 520, 430], fill=ROSE, width=4)   # demande
+    d.ellipse([300, 290, 320, 310], fill=(40, 40, 40))
+    d.text([528, 168], "Offre", font=F(20, True), fill=BLEU)
+    d.text([528, 420], "Demande", font=F(20, True), fill=ROSE)
+    d.polygon([(130, 180), (310, 300), (130, 300)], fill=(198, 224, 180))
+    d.polygon([(130, 300), (310, 300), (130, 420)], fill=(189, 215, 238))
+    d.text([150, 200], "Surplus du", font=F(18), fill=(40, 60, 30))
+    d.text([150, 224], "consommateur", font=F(18), fill=(40, 60, 30))
+    d.text([150, 340], "Surplus du", font=F(18), fill=(20, 50, 80))
+    d.text([150, 364], "producteur", font=F(18), fill=(20, 50, 80))
+    d.text((640, 120), "Cinq conditions de la concurrence pure et parfaite", font=F(22, True), fill=BLEU)
+    conds = [
+        "Atomicité : offreurs et demandeurs très nombreux",
+        "Homogénéité : des produits identiques",
+        "Transparence : information accessible à tous",
+        "Libre entrée et sortie du marché",
+        "Libre circulation des facteurs de production",
+    ]
+    y = 170
+    for c in conds:
+        box(d, 650, y, 550, 60, c, fill=BLEU_C, size=19)
+        y += 72
+    d.text((60, 510), "Efficacité : le marché concurrentiel alloue au mieux les ressources et dégage un gain à l'échange.", font=F(21, True), fill=ROSE)
+    d.text((60, 555), "Le preneur de prix subit le prix du marché : aucun agent ne peut le fixer seul.", font=F(20), fill=(40, 40, 40))
+    legende(d, "Figure 16 — Les conditions de la concurrence et le gain à l'échange.", 660)
+    save(img, "t11_l_cpp.png")
+
+
+def fig_defaillances():
+    img, d = base("Défaillances du marché et intervention de l'État")
+    d.text((50, 100), "Trois défaillances du marché", font=F(23, True), fill=BLEU)
+    box(d, 50, 150, 350, 200, "Asymétrie d'information\nUne partie en sait plus que\nl'autre : le marché se grippe", fill=ORANGE_C, line=ORANGE, size=20)
+    box(d, 430, 150, 350, 200, "Externalités\nUn effet subi par un tiers,\npositif ou négatif", fill=ORANGE_C, line=ORANGE, size=20)
+    box(d, 810, 150, 380, 200, "Biens collectifs\nUtiles à tous, mais que le\nmarché ne fournit pas assez", fill=ORANGE_C, line=ORANGE, size=20)
+    d.text((50, 390), "Trois imperfections qui limitent la concurrence", font=F(23, True), fill=ROSE)
+    box(d, 50, 440, 350, 110, "Nombre limité d'offreurs", fill=ROSE_C, line=ROSE, size=20)
+    box(d, 430, 440, 350, 110, "Différenciation des produits", fill=ROSE_C, line=ROSE, size=20)
+    box(d, 810, 440, 380, 110, "Ententes et barrières à l'entrée", fill=ROSE_C, line=ROSE, size=20)
+    d.text((50, 585), "L'État intervient pour corriger ces défaillances : réglementation, taxation, subvention, fourniture directe.", font=F(21, True), fill=VERT)
+    d.text((50, 625), "Il intervient aussi pour réduire les inégalités et soutenir l'activité par des politiques conjoncturelles.", font=F(20), fill=(40, 40, 40))
+    legende(d, "Figure 17 — Ce que le marché ne fait pas seul.", 665)
+    save(img, "t11_l_defaillances.png")
+
+
 if __name__ == "__main__":
     fig_orga_statuts()
     fig_facteurs()
@@ -260,3 +358,7 @@ if __name__ == "__main__":
     fig_creation_monetaire()
     fig_financement()
     fig_taux_interet()
+    fig_equilibre()
+    fig_structures()
+    fig_cpp()
+    fig_defaillances()
