@@ -148,6 +148,7 @@ function buildEvaluationStep(evalExos, topic) {
 // --- Page LEÇON ---
 function buildLecon(topic, anchor) {
   const out = [new B.Paragraph({ children: [new B.PageBreak()] })];
+  out.push(B.leconBanner());
   out.push(B.leconTitre(topic.titre, anchor));
   if (topic.image && topic.image.file) {
     out.push(...B.imageParas(topic.image.file, topic.image.legende));
