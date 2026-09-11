@@ -226,6 +226,15 @@ function buildFichePage(meta, steps, seanceNum, totalSeances) {
 // ------------------------------------------------------------
 // Titres / texte de la leçon
 // ------------------------------------------------------------
+// Bandeau de section (LECON, REVISION, EXAMEN)
+function banner(text) {
+  return p(text, { bold: true, size: 24, align: AlignmentType.CENTER, color: BLUE, spacingAfter: 60 });
+}
+
+function leconBanner() {
+  return banner("LEÇON");
+}
+
 function leconTitre(text, anchor) {
   const run = new TextRun({ text, bold: true, size: 28, color: RED, font: FONT });
   const children = anchor ? [new BookmarkStart(anchor, ++BOOKMARK_ID), run, new BookmarkEnd(BOOKMARK_ID)] : [run];
@@ -268,7 +277,7 @@ function sectionHeading(text, anchor, opts = {}) {
 module.exports = {
   p, pHighlight, field, imageParas, noBorders, cell, gridTable, metaTable,
   deroulementHeader, sectionRow, stepRow, buildFichePage,
-  leconTitre, leconSousTitre, sousSection, tocLink, sectionHeading,
+  leconTitre, banner, leconBanner, leconSousTitre, sousSection, tocLink, sectionHeading,
   RED, GREEN, BLUE, PINK, BLACK, FONT,
   Paragraph, TextRun, AlignmentType, Table, TableRow, TableCell,
   WidthType, BorderStyle, ShadingType, VerticalMerge, PageBreak,
