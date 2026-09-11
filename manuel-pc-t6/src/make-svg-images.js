@@ -373,7 +373,7 @@ function s26() {
   g += text(660, 200, "L'eau chaude monte,", 20, "#C00000", "middle");
   g += text(660, 226, "l'eau froide descend :", 20, "#1F4E79", "middle");
   g += text(660, 252, "c'est la convection.", 20);
-  return svgDoc(800, 440, g);
+  return svgDoc(800, 340, `<g transform="translate(0,-90)">${g}</g>`);
 }
 
 // ---------- S27 : rayonnement ----------
@@ -436,8 +436,8 @@ function s29() {
   g += line(500, 128, 596, 148, "#666", 1.5) + text(604, 154, "Vide entre les parois", 19, "#1a1a1a", "start");
   g += line(474, 260, 596, 240, "#666", 1.5) + text(604, 246, "Paroi réfléchissante", 19, "#1a1a1a", "start");
   g += line(462, 330, 596, 320, "#666", 1.5) + text(604, 326, "Boisson chaude", 19, "#1a1a1a", "start");
-  g += text(400, 470, "Le vide, la paroi réfléchissante et le bouchon isolant réduisent la perte de chaleur.", 19);
-  return svgDoc(800, 500, g);
+  g += text(420, 470, "Le vide, la paroi réfléchissante et le bouchon isolant réduisent la perte de chaleur.", 19);
+  return svgDoc(840, 500, g);
 }
 
 // ---------- S30 : dilatation des solides (boule et anneau) ----------
