@@ -6,7 +6,7 @@ const {
   ImageRun, Math: DocxMath, MathFraction, MathRun
 } = require('docx');
 
-const OUT = 'Manuel_Mathematiques_T6_V1_UNITE6.docx';
+const OUT = 'Manuel_Mathematiques_T6_V2_UNITE6.docx';
 const C = { red:'C00000', green:'1E7B34', blue:'1F4E79', wine:'C2185B', pale:'EAF2F8', paleGreen:'E9F5EC', gray:'E7E6E6', black:'000000', white:'FFFFFF' };
 const noBorders = {top:{style:BorderStyle.NONE,size:0,color:'FFFFFF'},bottom:{style:BorderStyle.NONE,size:0,color:'FFFFFF'},left:{style:BorderStyle.NONE,size:0,color:'FFFFFF'},right:{style:BorderStyle.NONE,size:0,color:'FFFFFF'},insideHorizontal:{style:BorderStyle.NONE,size:0,color:'FFFFFF'},insideVertical:{style:BorderStyle.NONE,size:0,color:'FFFFFF'}};
 const borders = {top:{style:BorderStyle.SINGLE,size:4,color:'808080'},bottom:{style:BorderStyle.SINGLE,size:4,color:'808080'},left:{style:BorderStyle.SINGLE,size:4,color:'808080'},right:{style:BorderStyle.SINGLE,size:4,color:'808080'},insideHorizontal:{style:BorderStyle.SINGLE,size:4,color:'B0B0B0'},insideVertical:{style:BorderStyle.SINGLE,size:4,color:'B0B0B0'}};
@@ -29,7 +29,8 @@ const title = (text, level=1, bookmark) => {
  return new Paragraph({alignment:level===1?AlignmentType.CENTER:AlignmentType.LEFT, spacing:{before:180,after:140}, children});
 };
 const cell = (text,opt={}) => new TableCell({width:opt.width?{size:opt.width,type:WidthType.PERCENTAGE}:undefined, columnSpan:opt.span, rowSpan:opt.rowSpan, shading:opt.fill?{type:ShadingType.CLEAR,fill:opt.fill}:undefined, margins:{top:80,bottom:80,left:80,right:80}, children:[new Paragraph({alignment:opt.align||AlignmentType.LEFT,children:rich(text,{bold:opt.bold,color:opt.color||C.black,size:opt.size||18})})]});
-const table = rows => new Table({width:{size:100,type:WidthType.PERCENTAGE},borders,rows});
+const table = (rows, columnWidths) => new Table({width:{size:100,type:WidthType.PERCENTAGE},borders,rows,columnWidths});
+const ficheTitle = () => new Paragraph({alignment:AlignmentType.CENTER,spacing:{before:120,after:120},children:[tr('FICHE DE PRÉPARATION',{bold:true,size:28})]});
 const bullet = text => new Paragraph({bullet:{level:0},spacing:{after:70},children:rich(text)});
 const labelPara = (label,text) => new Paragraph({spacing:{after:90},children:[tr(label,{bold:true,color:C.blue}),...rich(text)]});
 const correction = (label,text) => new Paragraph({spacing:{after:70},children:[tr(label,{bold:true,color:C.wine}),...rich(text)]});
@@ -87,29 +88,61 @@ function prep(s,n){
   ['6. Application',s.app[0]+' '+s.app[1],s.ans[0]+' '+s.ans[1],'Travail individuel puis correction collective','Cahier, ardoises','Remédiation'],
   ['III. Évaluation',`Résous sans modèle : ${s.app[0]} Puis explique une réponse de ton choix.`,s.ans[0]+' Une justification correcte utilise la règle de la leçon.','Travail individuel','Feuille, cahier','Maîtrise de l’objectif']
  ].map((r,i)=>new TableRow({children:r.map((x,j)=>cell(x,{fill:i===1?C.paleGreen:undefined,bold:j===0,size:16}))}));
- return table([...heads,...rows]);
+ // 10 % pour Étapes.
+ return table([...heads,...rows],[960,2400,2200,1440,1600,1000]);
 }
 function lesson(s,n){
  const a=[]; a.push(page(),title(`LEÇON — ${s.t}`,1,`u6_l${n}`));
- a.push(title('1. Notion essentielle',2),labelPara('Définition. ',s.concept));
- a.push(title('2. Méthode pas à pas',2));
- a.push(bullet('Lire attentivement les données et identifier les nombres ou représentations utilisés.'));
- a.push(bullet('Choisir la règle adaptée à la situation.'));
- a.push(bullet('Effectuer chaque étape dans l’ordre et écrire les transformations intermédiaires.'));
- a.push(bullet('Vérifier que le résultat répond à la question et qu’il est cohérent.'));
- a.push(title('3. Exemple expliqué',2),labelPara('Exemple. ',s.example));
- if(s.img) a.push(new Paragraph({alignment:AlignmentType.CENTER,children:[new ImageRun({data:s.img,transformation:{width:500,height:s.img===grid100?500:180},type:'png'})]}));
- a.push(title('4. Erreurs à éviter',2));
+ // Image immédiatement après le titre, jamais au début de la fiche.
+ a.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:140},children:[new ImageRun({data:s.img,transformation:{width:500,height:s.img===grid100?420:180},type:'png'})]}));
+ a.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:160},children:[tr(`Support visuel — ${s.t}`,{italics:true,size:19,color:'555555'})]}));
+ a.push(title('1. Prérequis',2));
+ a.push(bullet('Lire et écrire les nombres utilisés dans la situation.'));
+ a.push(bullet('Reconnaître les signes =, < et > et expliquer leur sens.'));
+ a.push(bullet('Effectuer les opérations élémentaires nécessaires à la vérification.'));
+ a.push(title('2. Observer et comprendre',2));
+ a.push(labelPara('Situation de départ. ',s.example));
+ a.push(labelPara('Idée essentielle. ',s.concept));
+ a.push(p('L’enseignant fait décrire les données visibles, nommer les éléments mathématiques et relier la représentation au calcul. Il vérifie que chaque mot nouveau est compris avant de poursuivre.'));
+ a.push(title('3. Méthode 1 — Représenter puis raisonner',2));
+ a.push(bullet('Représenter la quantité avec une bande, une grille, une droite numérique ou un tableau de numération.'));
+ a.push(bullet('Identifier ce que chaque partie de la représentation signifie.'));
+ a.push(bullet('Écrire la relation mathématique correspondant à la représentation.'));
+ a.push(bullet('Contrôler que l’écriture et le dessin décrivent la même quantité.'));
+ if(n!==1 && n!==7){
+  a.push(title('4. Méthode 2 — Utiliser une procédure de calcul',2));
+  a.push(bullet('Repérer les nombres connus et le résultat recherché.'));
+  a.push(bullet('Appliquer la propriété de la leçon, une seule transformation à la fois.'));
+  a.push(bullet('Écrire les étapes intermédiaires sans les effectuer mentalement trop vite.'));
+  a.push(bullet('Vérifier le résultat avec la représentation ou par une opération inverse.'));
+ } else {
+  a.push(title('4. Passer progressivement du concret à l’écriture',2));
+  a.push(p('Pour cette notion, une seconde procédure abstraite n’est pas utile. L’élève manipule ou observe d’abord, verbalise ce qu’il voit, puis écrit seulement le symbole mathématique correspondant.'));
+ }
+ a.push(title('5. Exemple résolu et expliqué',2));
+ a.push(labelPara('Exemple. ',s.example));
+ a.push(p('Explication : on commence par identifier les données. On applique ensuite la règle indiquée dans la leçon. Chaque étape est écrite, puis le résultat est comparé à la représentation initiale pour vérifier sa cohérence.'));
+ a.push(title('6. Questions pour guider les élèves',2));
+ a.push(bullet('Quelles sont les données connues ?'));
+ a.push(bullet('Quelle quantité ou quelle écriture devons-nous trouver ?'));
+ a.push(bullet('Quelle propriété permet de passer des données au résultat ?'));
+ a.push(bullet('Comment pouvons-nous vérifier la réponse autrement ?'));
+ a.push(title('7. Erreurs fréquentes',2));
  a.push(bullet('Modifier un nombre sans appliquer la même transformation à toute l’écriture.'));
- a.push(bullet('Oublier la valeur de position d’un chiffre ou le sens d’un symbole de comparaison.'));
+ a.push(bullet('Confondre la valeur d’un chiffre avec sa position ou inverser le sens d’une comparaison.'));
+ a.push(bullet('Donner un résultat sans montrer la démarche ni effectuer de vérification.'));
+ a.push(title('8. Différenciation pédagogique',2));
+ a.push(labelPara('Soutien. ','Reprendre la situation avec du matériel, des couleurs et des nombres plus simples.'));
+ a.push(labelPara('Niveau attendu. ','Résoudre les quatre items en expliquant au moins une démarche.'));
+ a.push(labelPara('Approfondissement. ','Créer un exemple différent qui respecte la même propriété, puis le faire vérifier par un camarade.'));
  a.push(title('EXERCICES — Total : 20 points',1));
  a.push(p('Exercice 1 — 8 points. '+s.app[0]));
  a.push(p('Exercice 2 — 8 points. '+s.app[1]));
- a.push(p('Exercice 3 — 4 points. Rédige une phrase qui explique la méthode utilisée dans un item de ton choix.'));
+ a.push(p('Exercice 3 — 4 points. Pour chacun des quatre items précédents, indique la règle employée. Développe complètement l’une des quatre vérifications.'));
  a.push(title('CORRIGÉ DÉTAILLÉ',2));
  a.push(correction('Exercice 1. ',s.ans[0]+' Chaque réponse correcte vaut 2 points.'));
  a.push(correction('Exercice 2. ',s.ans[1]+' Chaque réponse correcte vaut 2 points.'));
- a.push(correction('Exercice 3. ','La phrase doit citer la règle appropriée, montrer au moins une étape et conclure par le résultat. Une démarche cohérente et correctement formulée vaut 4 points.'));
+ a.push(correction('Exercice 3. ','Chaque réponse doit nommer la propriété utilisée. La vérification développée reprend les données, montre les étapes, contrôle le résultat et formule une conclusion.'));
  return a;
 }
 function revision(){return [page(),title('SÉANCE 12 / 13 — RÉVISION DE L’UNITÉ VI',1,'u6_l12'),title('Synthèse',2),p('Révise collecte, tableaux, diagrammes, moyenne, médiane, mode et probabilités.'),p('1. Quelle stratégie permet de compter les véhicules ? 2. Calcule la moyenne de 4, 6, 8, 10. 3. Donne la médiane et le mode de 2, 3, 3, 7, 9. 4. Donne P(nombre pair) avec un dé. 5. Convertis 0,35 en pourcentage.'),title('Réponses attendues',2),correction('1. ','L’observation directe.'),correction('2. ','7.'),correction('3. ','Médiane 3 et mode 3.'),correction('4. ','3/6 = 1/2 = 50 %.'),correction('5. ','35 %.')];}
@@ -124,7 +157,7 @@ children.push(new Paragraph({children:[new InternalHyperlink({anchor:'u6',childr
 sessions.forEach((s,i)=>children.push(new Paragraph({indent:{left:360},children:[new InternalHyperlink({anchor:`u6_l${i+1}`,children:[tr(`Séance ${i+1} — ${s.t}`,{color:C.blue})]})]})));
 children.push(new Paragraph({indent:{left:360},children:[new InternalHyperlink({anchor:'u6_l12',children:[tr('Séance 12 — Révision de l’unité I',{color:C.blue})]})]}),new Paragraph({indent:{left:360},children:[new InternalHyperlink({anchor:'u6_l13',children:[tr('Séance 13 — Sujet d’examen',{color:C.blue})]})]}));
 children.push(page(),title('UNITÉ VI — TRAITEMENT DE DONNÉES',1,'u6'),p('Résultat d’apprentissage général : recueillir et traiter des données statistiques ou probabilistes pour faire des prédictions et prendre des décisions éclairées.'),p('Valeurs à véhiculer : goût de l’effort et rigueur.'),title('Tableau de bord',2),table([new TableRow({children:[cell('Séances',{bold:true,fill:C.blue,color:C.white}),cell('Apprentissages',{bold:true,fill:C.blue,color:C.white}),cell('Révision',{bold:true,fill:C.blue,color:C.white}),cell('Examen',{bold:true,fill:C.blue,color:C.white})]}),new TableRow({children:[cell('13'),cell('11'),cell('1'),cell('1')]})]));
-sessions.forEach((s,i)=>{children.push(page(),title(`SÉANCE ${i+1} / 15 — ${s.t.toUpperCase()}`,1,`u6_s${i+1}`),title('FICHE DE PRÉPARATION',2),meta(s,i+1),prep(s,i+1),...lesson(s,i+1));});
+sessions.forEach((s,i)=>{children.push(page(),title(`SÉANCE ${i+1} / 15 — ${s.t.toUpperCase()}`,1,`u6_s${i+1}`),ficheTitle(),meta(s,i+1),prep(s,i+1),...lesson(s,i+1));});
 children.push(...revision(),...exam());
 
 const doc=new Document({styles:{default:{document:{run:{font:'Times New Roman',size:22},paragraph:{spacing:{line:276}}}}},sections:[{properties:{page:{margin:{top:900,right:720,bottom:900,left:720}}},headers:{default:new Header({children:[new Paragraph({alignment:AlignmentType.RIGHT,children:[tr('J-Learn — Mathématiques T6 — Unité VI',{size:18,color:'666666'})]})]})},footers:{default:new Footer({children:[new Paragraph({alignment:AlignmentType.CENTER,children:[tr('Page ',{size:18}),new TextRun({children:[PageNumber.CURRENT],font:'Times New Roman',size:18})]})]})},children}]});

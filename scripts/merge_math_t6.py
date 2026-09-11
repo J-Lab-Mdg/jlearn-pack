@@ -8,7 +8,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 
 R=Path(__file__).resolve().parents[1]; W=R/'work_merge'; W.mkdir(exist_ok=True)
-units=[R/f'Manuel_Mathematiques_T6_V1_UNITE{i}.docx' for i in range(1,7)]
+units=[R/f'Manuel_Mathematiques_T6_V2_UNITE{i}.docx' for i in range(1,7)]
 
 def text(el): return ''.join(el.itertext()).strip()
 def stripped(src,n):
@@ -40,19 +40,23 @@ t=a.add_table(rows=0,cols=2);t.style='Table Grid';t.alignment=WD_TABLE_ALIGNMENT
 for i,row in enumerate(rows):
  c=t.add_row().cells
  for j,s in enumerate(row): font(c[j].paragraphs[0].add_run(s),10,i==0)
-a.add_page_break();head(a,'ANNEXE 3 — AUTO-ÉVALUATION')
+a.add_page_break();head(a,'ANNEXE 3 — RÉSUMÉ DES MÉTHODES')
+methods=[('Comparer des fractions','Chercher un dénominateur commun, comparer les numérateurs, puis vérifier sur une droite numérique.'),('Respecter les priorités','Calculer les parenthèses, puis multiplications et divisions, enfin additions et soustractions.'),('Poser une opération','Écrire d’abord en ligne, aligner les chiffres par rang, calculer de droite à gauche et vérifier.'),('Résoudre une proportionnalité','Vérifier le coefficient constant, choisir passage à l’unité ou coefficient, calculer puis contrôler.'),('Résoudre une équation','Isoler l’inconnue avec l’opération inverse, conserver l’égalité et vérifier par remplacement.'),('Construire une figure','Lire les données, choisir les instruments, tracer dans l’ordre puis contrôler les propriétés.'),('Résoudre un problème de mesure','Choisir une unité, convertir toutes les données, appliquer la formule et écrire l’unité finale.'),('Traiter des données','Formuler la question, collecter, organiser, représenter, interpréter et conclure.'),('Calculer une probabilité','Lister les résultats possibles, compter les favorables, former le rapport et convertir si nécessaire.')]
+for name,steps in methods:
+ p=a.add_paragraph();font(p.add_run(name+' — '),11,True,(31,78,121));font(p.add_run(steps),11)
+a.add_page_break();head(a,'ANNEXE 4 — AUTO-ÉVALUATION')
 skills=['Fractions, décimaux et pourcentages','Priorités des opérations','Échelle, taux et rendement','Proportionnalité et relations','Équations','Quadrilatères et constructions','Angles et transformations','Repérage dans le plan','Conversions de mesures','Périmètres, aires et volumes','Collecte et représentation de données','Moyenne, médiane et mode','Probabilités']
 t=a.add_table(rows=1,cols=4);t.style='Table Grid'
 for i,s in enumerate(['Compétence','Acquis','En cours','À revoir']):font(t.rows[0].cells[i].paragraphs[0].add_run(s),10,True)
 for s in skills:
  c=t.add_row().cells;font(c[0].paragraphs[0].add_run(s),9)
  for i in range(1,4):font(c[i].paragraphs[0].add_run('☐'),14)
-a.add_page_break();head(a,'ANNEXE 4 — INDEX');para(a,', '.join(sorted([x[0] for x in gloss],key=str.lower))+'.')
-a.add_page_break();head(a,'ANNEXE 5 — ÉVALUATIONS FORMAT EXAMEN');para(a,'Six sujets d’examen sur 20 points figurent à la fin des unités Nombre, Opération, Algèbre, Géométrie, Mesure et Traitement de données. Ils comportent tous un corrigé détaillé.')
+a.add_page_break();head(a,'ANNEXE 5 — INDEX');para(a,', '.join(sorted([x[0] for x in gloss],key=str.lower))+'.')
+a.add_page_break();head(a,'ANNEXE 6 — ÉVALUATIONS FORMAT EXAMEN');para(a,'Six sujets d’examen sur 20 points figurent à la fin des unités Nombre, Opération, Algèbre, Géométrie, Mesure et Traitement de données. Ils comportent tous un corrigé détaillé.')
 a.add_page_break();head(a,'BIBLIOGRAPHIE ET SOURCES');para(a,'Ministère de l’Éducation Nationale de Madagascar, Programme d’études — Classe de T6, section Mathématiques, PE_T6.docx.');para(a,'Collection J-Learn, skill de conception des manuels scolaires v18.')
 # Add stable bookmarks to annex headings before composition.
 from docx.oxml import OxmlElement
-annex_marks={'ANNEXES — MATHÉMATIQUES T6':'annexes','ANNEXE 1 — GLOSSAIRE':'annexe1','ANNEXE 2 — FORMULES ET PROPRIÉTÉS':'annexe2','ANNEXE 3 — AUTO-ÉVALUATION':'annexe3','ANNEXE 4 — INDEX':'annexe4','ANNEXE 5 — ÉVALUATIONS FORMAT EXAMEN':'annexe5','BIBLIOGRAPHIE ET SOURCES':'sources'}
+annex_marks={'ANNEXES — MATHÉMATIQUES T6':'annexes','ANNEXE 1 — GLOSSAIRE':'annexe1','ANNEXE 2 — FORMULES ET PROPRIÉTÉS':'annexe2','ANNEXE 3 — RÉSUMÉ DES MÉTHODES':'annexe3','ANNEXE 4 — AUTO-ÉVALUATION':'annexe4','ANNEXE 5 — INDEX':'annexe5','ANNEXE 6 — ÉVALUATIONS FORMAT EXAMEN':'annexe6','BIBLIOGRAPHIE ET SOURCES':'sources'}
 mark_id=5000
 for paragraph in a.paragraphs:
  if paragraph.text in annex_marks:
@@ -86,9 +90,9 @@ for unit_no in range(2,7):
  for k,session_title in enumerate(session_titles,1):
   readable=re.sub(r'^SÉANCE (\d+) / \d+ — ',r'   Séance \1 — ',session_title).title()
   links.append((readable,f'u{unit_no}_l{k}'))
-links.extend([('Annexes','annexes'),('Glossaire','annexe1'),('Formules et propriétés','annexe2'),('Auto-évaluation','annexe3'),('Index','annexe4'),('Évaluations format examen','annexe5'),('Bibliographie et sources','sources')])
+links.extend([('Annexes','annexes'),('Glossaire','annexe1'),('Formules et propriétés','annexe2'),('Résumé des méthodes','annexe3'),('Auto-évaluation','annexe4'),('Index','annexe5'),('Évaluations format examen','annexe6'),('Bibliographie et sources','sources')])
 if insert_before is not None:
  idx=body_el.index(insert_before)
  for label,anchor in links:
   body_el.insert(idx,hyperlink_paragraph(label,anchor));idx+=1
-composer.save(R/'Manuel_Mathematiques_T6_JLearn.docx')
+composer.save(R/'Manuel_Mathematiques_T6_JLearn_V2.docx')
