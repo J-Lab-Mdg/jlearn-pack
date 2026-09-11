@@ -44,8 +44,8 @@ Production en cours. Ce fichier sert de relais entre les sessions (voir
 | N° | Contenu | État |
 |---|---|---|
 | 56 à 67 | ✅ **bloc I : le temps** — terminé (jour et nuit, rotation, ciel, temps, girouette, thermomètre, courbe, mois, deux saisons, tableau et graphique, prévoir) | `output/Manuel_Geographie_9e_V2_T1_livraison7.docx` |
-| 68 à 71 | ✅ **bloc J : la population** (effectif de la classe, de l'école, du village, répartition par sexe) | `output/Manuel_Geographie_9e_V2_T1_livraison8.docx` |
-| 72 à 76 | ⏳ suite du bloc J (groupes d'âge, tableau de structure, naissances et migrations, croissance, lecture de tableau) | — |
+| 68 à 75 | ✅ **bloc J : la population** (effectifs, répartition par sexe et par âge, tableau de structure, mouvements, soldes) | `output/Manuel_Geographie_9e_V2_T1_livraison8.docx` |
+| 76 | ⏳ lire un tableau de population | — |
 | 77 à 85 | ⏳ bloc K : la vie au village | — |
 | 86 | révision de l'unité III | ⏳ |
 | 87 | sujet d'examen 9e — unité III | ⏳ |
@@ -60,8 +60,8 @@ Production en cours. Ce fichier sert de relais entre les sessions (voir
 | N° | Contenu | État |
 |---|---|---|
 | 56 à 67 | ✅ **bloc I : le temps** — terminé (jour et nuit, rotation, ciel, temps, girouette, thermomètre, courbe, mois, deux saisons, tableau et graphique, prévoir) | `output/Manuel_Geographie_9e_V2_T1_livraison7.docx` |
-| 68 à 71 | ✅ **bloc J : la population** (effectif de la classe, de l'école, du village, répartition par sexe) | `output/Manuel_Geographie_9e_V2_T1_livraison8.docx` |
-| 72 à 76 | ⏳ suite du bloc J (groupes d'âge, tableau de structure, naissances et migrations, croissance, lecture de tableau) | — |
+| 68 à 75 | ✅ **bloc J : la population** (effectifs, répartition par sexe et par âge, tableau de structure, mouvements, soldes) | `output/Manuel_Geographie_9e_V2_T1_livraison8.docx` |
+| 76 | ⏳ lire un tableau de population | — |
 | 77 à 85 | ⏳ bloc K : la vie au village | — |
 | 86 | révision de l'unité III | ⏳ |
 | 87 | sujet d'examen 9e — unité III | ⏳ |
@@ -70,7 +70,7 @@ Production en cours. Ce fichier sert de relais entre les sessions (voir
 | 28-29, 54-55, 86-87 | ⏳ révisions + sujets d'examen (1 par unité) | — |
 | Couverture, avant-propos, mode d'emploi, sommaire interactif, 5 annexes | ⏳ à l'assemblage | — |
 
-Chiffres au dernier pointage : **71 séances, 63 images, ~98 000 mots, 2,80 Mo.**
+Chiffres au dernier pointage : **75 séances, 67 images, ~104 000 mots, 2,95 Mo.**
 
 Règle du 2026-09-11 : **chaque leçon ouvre sur une image.** Sujet concret
 (lever du soleil, école, village, quartier, ville) -> **scène générée** ; sujet

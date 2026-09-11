@@ -7842,3 +7842,501 @@ SEANCES.append(dict(
                 "groupe obtenu en divisant par le total puis en multipliant par "
                 "cent. Les deux pourcentages additionnés font cent.",
 ))
+
+# ═══════════════════════════ SÉANCE 72 ═══════════════════════════
+SEANCES.append(dict(
+    n=72, semaine=23, titre="La répartition par groupe d'âge",
+    objectif="Classifier la population par groupe d'âge.",
+    materiel="Schéma des groupes d'âge, tableau de la classe, ardoise et craie, "
+             "cahier.",
+    illustration=("img_s72_a.png",
+                  "Illustration — Les trois groupes d'âge de la "
+                  "population.", 700),
+    revision=[("Qu'est-ce que répartir une population ?",
+               "R.A. : C'est la classer selon un critère."),
+              ("Cite les deux groupes de la répartition par sexe.",
+               "R.A. : Les garçons et les filles.")],
+    mes=("Dans ta famille, y a-t-il des enfants, des adultes et des "
+          "personnes âgées ?",
+         "R.A. : Oui, les trois."),
+    analyse=[
+        ("Cite les trois groupes d'âge.",
+         "R.A. : Les jeunes de 0 à 14 ans, les adultes de 15 à 59 "
+         "ans, les personnes âgées de 60 ans et plus."),
+        ("Quel est le groupe le plus nombreux à Madagascar ?",
+         "R.A. : Les jeunes de 0 à 14 ans."),
+        ("Pourquoi dit-on que la population est jeune ?",
+         "R.A. : Parce que les jeunes y sont très nombreux."),
+        ("Qui travaille aux champs ?", "R.A. : Les adultes de 15 à 59 "
+         "ans."),
+        ("Comment présente-t-on chaque groupe ?",
+         "R.A. : Par un nombre et par un pourcentage.")],
+    synthese="Donc, on répartit la population en trois groupes d'âge : les "
+             "jeunes de 0 à 14 ans, les adultes de 15 à 59 ans et les "
+             "personnes âgées de 60 ans et plus.",
+    application=("Répartis la population de ta classe par âge, puis "
+                 "réponds : a) Quel groupe est le plus nombreux ? b) Cite les "
+                 "trois groupes. c) Comment exprime-t-on chaque groupe ? d) La somme "
+                 "fait-elle cent pour cent ?",
+                 "a) Selon la classe — b) 0-14 ans, 15-59 ans, 60 ans et "
+                 "plus — c) Par un nombre et un pourcentage — d) Oui, "
+                 "toujours."),
+    evaluation=("1. Réponds par vrai ou faux : a) Il y a trois groupes "
+                "d'âge. b) Les adultes vont de 15 à 59 ans. c) Le "
+                "groupe des jeunes va de 0 à 20 ans. d) La somme des groupes "
+                "fait cent pour cent.\n"
+                "2. Cite les trois groupes d'âge et leur borne.",
+                "1. a) Vrai — b) Vrai — c) Faux — d) Vrai.\n"
+                "2. Les jeunes de 0 à 14 ans, les adultes de 15 à 59 "
+                "ans, les personnes âgées de 60 ans et plus."),
+    lecon_titre="La répartition par groupe d'âge",
+    sections=[
+        ("1. Pourquoi classer par âge ?",
+         "Répartir par sexe ne suffit pas : au village, un enfant de huit ans, un "
+         "père de famille de trente-cinq ans et une grand-mère de "
+         "soixante-dix ans n'ont ni les mêmes besoins ni le même rôle. "
+         "C'est pourquoi on classe aussi la population par âge, en trois "
+         "groupes."),
+        ("2. Les trois groupes d'âge",
+         "Le premier groupe va de zéro à quatorze ans : ce sont les jeunes, "
+         "qui vont à l'école et ne travaillent pas encore. Le deuxième "
+         "va de quinze à cinquante-neuf ans : ce sont les adultes, qui "
+         "travaillent aux champs, au marché ou à l'usine. Le troisième "
+         "regroupe les personnes de soixante ans et plus : ce sont les "
+         "anciens, qui conseillent et gardent les enfants."),
+        ("3. Lire la répartition",
+         "Chaque groupe se présente par un nombre et par un pourcentage. Le "
+         "pourcentage est la part du groupe sur cent habitants. On lit les trois "
+         "barres du schéma et l'on repère aussitôt le groupe le plus "
+         "nombreux. La somme des trois pourcentages fait toujours cent."),
+        ("4. Jeunes et vieux : ce que cela change",
+         "Une population où les jeunes sont très nombreux est une "
+         "population jeune : il faut beaucoup d'écoles et de maîtres, et "
+         "les adultes ont beaucoup d'enfants à charge. Une population "
+         "où les personnes âgées dominent est une population "
+         "vieillissante : il faut des dispensaires et des retraites. Madagascar est "
+         "un pays jeune."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "À Madagascar, près de quatre habitants sur dix ont moins de "
+             "quinze ans. C'est l'une des populations les plus jeunes du monde : "
+             "l'école y est un défi considérable."),
+    resume=[
+        "On répartit la population en trois groupes d'âge.",
+        "Les jeunes vont de 0 à 14 ans.",
+        "Les adultes vont de 15 à 59 ans.",
+        "Les personnes âgées ont 60 ans et plus.",
+        "Chaque groupe s'exprime en nombre et en pourcentage.",
+    ],
+    lexique=[("Groupe d'âge", "Une tranche d'âges de la population."),
+             ("Jeune", "Une personne de 0 à 14 ans."),
+             ("Adulte", "Une personne de 15 à 59 ans."),
+             ("Personne âgée", "Une personne de 60 ans et plus."),
+             ("Population jeune", "Une population où les jeunes sont "
+              "nombreux.")],
+    exercices=[
+        ("Complète avec : jeunes — adultes — âgées — pourcentage",
+         ["a) Les …… vont de 0 à 14 ans.",
+          "b) Les …… vont de 15 à 59 ans.",
+          "c) Les personnes …… ont 60 ans et plus.",
+          "d) Chaque groupe s'exprime en ……"],
+         ["a) Les jeunes", "b) Les adultes", "c) Les personnes âgées",
+          "d) en pourcentage"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Un enfant de 10 ans fait partie des jeunes.",
+          "b) Une personne de 65 ans fait partie des adultes.",
+          "c) La somme des pourcentages fait cent.",
+          "d) Madagascar est un pays vieillissant."],
+         ["a) Vrai", "b) Faux", "c) Vrai", "d) Faux"]),
+        ("Relie chaque âge à son groupe.",
+         ["8 ans", "25 ans", "70 ans", "14 ans"],
+         ["Les adultes", "Les personnes âgées", "Les jeunes",
+          "Les jeunes"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Cite les trois groupes d'âge.",
+          "b) Pourquoi classe-t-on la population par âge ?",
+          "c) Qu'est-ce qu'une population jeune ?",
+          "d) Comment exprime-t-on chaque groupe ?"],
+         ["a) Les jeunes, les adultes et les personnes âgées.",
+          "b) Parce que chaque âge a des besoins différents.",
+          "c) C'est une population où les jeunes sont nombreux.",
+          "d) Par un nombre et par un pourcentage."]),
+    ],
+    consigne_ex5="Répartis la population de ta classe en trois groupes d'âge, "
+                 "construis le tableau et calcule le pourcentage de chaque groupe.",
+    corrige_ex5="Tableau à trois lignes avec les effectifs de chaque groupe ; "
+                "pourcentage obtenu en divisant par le total puis en multipliant par "
+                "cent ; les trois pourcentages font cent.",
+))
+
+# ═══════════════════════════ SÉANCE 73 ═══════════════════════════
+SEANCES.append(dict(
+    n=73, semaine=23, titre="Le tableau de structure de la population",
+    objectif="Établir le tableau par sexe et groupe d'âge.",
+    materiel="Schéma du tableau de structure, relevés de la classe, ardoise et "
+             "craie, cahier.",
+    illustration=("img_s73_a.png",
+                  "Illustration — Le tableau à double entrée : "
+                  "sexe et âge.", 700),
+    revision=[("Cite les trois groupes d'âge.",
+               "R.A. : Les jeunes, les adultes et les personnes âgées."),
+              ("Qu'est-ce que répartir ?",
+               "R.A. : Classer selon un critère.")],
+    mes=("Peut-on classer les habitants à la fois par sexe et par "
+          "âge ?",
+         "R.A. : Oui, dans un tableau à double entrée."),
+    analyse=[
+        ("Que croise-t-on dans ce tableau ?",
+         "R.A. : Le sexe et le groupe d'âge."),
+        ("Que contient chaque case ?",
+         "R.A. : Le nombre de personnes du groupe."),
+        ("Comment appelle-t-on ce type de tableau ?",
+         "R.A. : Un tableau à double entrée."),
+        ("Que donne la dernière colonne ?",
+         "R.A. : Le total de chaque ligne, donc de chaque sexe."),
+        ("Que donne la dernière ligne ?",
+         "R.A. : Le total de chaque groupe d'âge.")],
+    synthese="Donc, le tableau de structure croise le sexe et l'âge. Chaque "
+             "case se lit à la croisée d'une ligne et d'une colonne, et "
+             "les totaux permettent de vérifier.",
+    application=("Sur le tableau, réponds : a) Combien de filles de 0 à "
+                 "14 ans ? b) Combien d'hommes de 60 ans et plus ? c) Quel est "
+                 "le total du village ? d) Comment le vérifie-t-on ?",
+                 "a) 115 — b) 40 — c) 605 habitants — d) En "
+                 "additionnant la dernière ligne et la dernière colonne : on "
+                 "doit trouver le même nombre."),
+    evaluation=("1. Réponds par vrai ou faux : a) Le tableau croise deux "
+                "critères. b) Chaque case se lit à la croisée. c) "
+                "Les totaux ne servent à rien. d) Le total général "
+                "est l'effectif du village.\n"
+                "2. Explique en deux phrases comment lire ce tableau.",
+                "1. a) Vrai — b) Vrai — c) Faux — d) Vrai.\n"
+                "2. Exemple : « On suit la ligne jusqu'à la colonne "
+                "voulue. La case indique le nombre de personnes du groupe. »"),
+    lecon_titre="Le tableau de structure",
+    sections=[
+        ("1. Croiser deux critères",
+         "Un tableau de structure croise deux critères en même temps : "
+         "le sexe et l'âge. Les lignes portent le sexe, les colonnes portent "
+         "les groupes d'âge. On obtient ainsi, pour chaque couple, le nombre "
+         "exact de personnes : les garçons de 0 à 14 ans, les filles de 60 "
+         "ans et plus, et ainsi de suite."),
+        ("2. Lire le tableau",
+         "Pour lire une case, on suit la ligne du doigt jusqu'à la colonne "
+         "voulue : la case située à la croisée donne le nombre cherché. "
+         "Ce type de tableau s'appelle un tableau à double entrée, "
+         "parce qu'il faut deux entrées pour s'y repérer : la ligne et la "
+         "colonne."),
+        ("3. Vérifier les totaux",
+         "Chaque ligne se termine par un total, et chaque colonne aussi. Le total "
+         "de la dernière colonne et celui de la dernière ligne doivent donner "
+         "le même nombre : l'effectif total du village. Si les deux diffèrent, "
+         "c'est qu'une erreur s'est glissée dans le comptage. C'est le "
+         "contrôle indispensable de tout tableau."),
+        ("4. Ce que révèle la structure",
+         "La structure d'une population dit beaucoup de choses. Si les jeunes "
+         "dominent, il faudra des écoles. Si les adultes dominent, la main-d'œuvre "
+         "est abondante. Si les personnes âgées sont nombreuses, il faudra "
+         "des soins. Les géographes appellent cela la structure par âge et par "
+         "sexe."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Les démographes dessinent la structure d'une population sous forme "
+             "de pyramide des âges : les jeunes en bas, les vieux en haut, les "
+             "hommes à gauche et les femmes à droite."),
+    resume=[
+        "Le tableau de structure croise le sexe et l'âge.",
+        "Les lignes portent le sexe, les colonnes les groupes d'âge.",
+        "Chaque case se lit à la croisée d'une ligne et d'une "
+        "colonne.",
+        "Les totaux des lignes et des colonnes permettent de vérifier.",
+        "Le total général est l'effectif de la population.",
+    ],
+    lexique=[("Structure", "La façon dont une population est composée."),
+             ("Croiser", "Combiner deux critères dans un tableau."),
+             ("Colonne", "La suite de cases verticales du tableau."),
+             ("Ligne", "La suite de cases horizontales du tableau."),
+             ("Contrôle", "La vérification d'un calcul.")],
+    exercices=[
+        ("Complète avec : croiser — case — colonne — total",
+         ["a) Le tableau de structure sert à …… deux critères.",
+          "b) Chaque …… donne un nombre de personnes.",
+          "c) On suit la ligne jusqu'à la …… voulue.",
+          "d) Le …… général est l'effectif du village."],
+         ["a) à croiser", "b) Chaque case", "c) jusqu'à la colonne",
+          "d) Le total"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Le tableau croise le sexe et l'âge.",
+          "b) Chaque case se lit à la croisée.",
+          "c) Les totaux ne servent à rien.",
+          "d) Le total de la dernière ligne donne chaque groupe d'âge."],
+         ["a) Vrai", "b) Vrai", "c) Faux", "d) Vrai"]),
+        ("Relie chaque élément à son rôle.",
+         ["La ligne", "La colonne", "La case", "Le total"],
+         ["Le groupe d'âge", "Le nombre cherché", "L'effectif", "Le sexe"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Que croise le tableau de structure ?",
+          "b) Comment lit-on une case ?",
+          "c) Comment vérifie-t-on le tableau ?",
+          "d) Que révèle la structure d'une population ?"],
+         ["a) Il croise le sexe et le groupe d'âge.",
+          "b) On suit la ligne jusqu'à la colonne voulue.",
+          "c) On compare le total des lignes et celui des colonnes.",
+          "d) Elle révèle les besoins : écoles, travail ou soins."]),
+    ],
+    consigne_ex5="Construis le tableau de structure de ta classe : deux lignes "
+                 "(garçons, filles), deux colonnes (moins de 13 ans, 13 ans et "
+                 "plus) et les totaux.",
+    corrige_ex5="Tableau à quatre cases plus les marges ; totaux par ligne et "
+                "par colonne ; le total des lignes doit égaler celui des "
+                "colonnes.",
+))
+
+# ═══════════════════════════ SÉANCE 74 ═══════════════════════════
+SEANCES.append(dict(
+    n=74, semaine=24, titre="Les naissances, les décès et les migrations",
+    objectif="Connaître les variables de la croissance de la population.",
+    materiel="Schéma des mouvements de population, ardoise et craie, cahier.",
+    illustration=("img_s74_a.png",
+                  "Illustration — Naissances, décès, arrivées et "
+                  "départs.", 700),
+    revision=[("Cite les trois groupes d'âge.",
+               "R.A. : Les jeunes, les adultes et les personnes âgées."),
+              ("Que croise le tableau de structure ?",
+               "R.A. : Le sexe et l'âge.")],
+    mes=("Pourquoi le nombre d'habitants d'un village change-t-il d'une "
+          "année à l'autre ?",
+         "R.A. : Parce qu'il naît des enfants, que des personnes meurent et "
+         "que d'autres arrivent ou partent."),
+    analyse=[
+        ("Cite deux événements qui font augmenter la population.",
+         "R.A. : Les naissances et les arrivées."),
+        ("Cite deux qui la font diminuer.", "R.A. : Les décès et les "
+         "départs."),
+        ("Comment appelle-t-on l'arrivée dans un village ?",
+         "R.A. : L'immigration."),
+        ("Et le départ ?", "R.A. : L'émigration."),
+        ("Comment appelle-t-on ces changements ?",
+         "R.A. : Les mouvements de la population.")],
+    synthese="Donc, la population change sous l'effet de quatre mouvements : les "
+             "naissances et les arrivées l'augmentent, les décès et les "
+             "départs la diminuent.",
+    application=("Observe le schéma et réponds : a) Cite les deux "
+                 "flèches qui entrent. b) Cite les deux qui sortent. c) "
+                 "Comment appelle-t-on une arrivée ? d) Et un départ ?",
+                 "a) Les naissances et les arrivées — b) Les "
+                 "décès et les départs — c) Une immigration — "
+                 "d) Une émigration."),
+    evaluation=("1. Réponds par vrai ou faux : a) Une naissance fait "
+                "augmenter la population. b) Un décès la fait augmenter. "
+                "c) Une arrivée s'appelle une immigration. d) Un départ "
+                "s'appelle une émigration.\n"
+                "2. Cite les quatre mouvements de la population.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Vrai.\n"
+                "2. Les naissances, les décès, les arrivées et les "
+                "départs."),
+    lecon_titre="Les mouvements de la population",
+    sections=[
+        ("1. Les naissances",
+         "Une naissance ajoute un habitant au village. On mesure les naissances "
+         "par le taux de natalité : le nombre de naissances pour mille "
+         "habitants en un an. À Madagascar, ce taux est élevé : les "
+         "familles ont en moyenne plusieurs enfants. Chaque naissance est "
+         "déclarée à la commune et inscrite sur le registre."),
+        ("2. Les décès",
+         "Un décès retire un habitant du village. On le mesure par le taux de "
+         "mortalité. À Madagascar, la mortalité a beaucoup baissé "
+         "grâce aux vaccins, à l'eau potable et aux dispensaires, mais la "
+         "mortalité des jeunes enfants reste un défi dans les zones "
+         "rurales éloignées."),
+        ("3. Les migrations : arrivées et départs",
+         "Les migrations sont les déplacements de personnes d'un lieu à un "
+         "autre. Quand une personne s'installe dans le village, c'est une "
+         "immigration. Quand elle le quitte, c'est une émigration. Les jeunes "
+         "partent souvent vers la ville pour chercher du travail ou "
+         "poursuivre leurs études ; d'autres familles arrivent, "
+         "attirées par les terres ou le marché."),
+        ("4. Le bilan",
+         "Pour savoir si la population augmente, on compare. Si les naissances et "
+         "les arrivées sont plus nombreuses que les décès et les "
+         "départs, la population augmente. Dans le cas contraire, elle diminue. "
+         "Ce bilan porte un nom : le solde, naturel pour les naissances et les "
+         "décès, migratoire pour les arrivées et les départs."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "On appelle exode rural le départ des jeunes des campagnes vers les "
+             "villes. À Madagascar, Antananarivo grossit chaque année de "
+             "plusieurs dizaines de milliers de personnes, venues de toutes les "
+             "régions."),
+    resume=[
+        "Quatre mouvements font changer la population.",
+        "Les naissances et les arrivées l'augmentent.",
+        "Les décès et les départs la diminuent.",
+        "Arriver s'appelle immigrer, partir s'appelle émigrer.",
+        "Le bilan s'appelle le solde, naturel ou migratoire.",
+    ],
+    lexique=[("Naissance", "L'arrivée d'un nouvel habitant."),
+             ("Décès", "La mort d'un habitant."),
+             ("Migration", "Le déplacement de personnes d'un lieu à "
+              "un autre."),
+             ("Immigration", "L'arrivée dans un lieu."),
+             ("Émigration", "Le départ d'un lieu.")],
+    exercices=[
+        ("Complète avec : naissance — décès — immigration — émigration",
+         ["a) Une …… ajoute un habitant.",
+          "b) Un …… en retire un.",
+          "c) Une arrivée est une ……",
+          "d) Un départ est une ……"],
+         ["a) Une naissance", "b) Un décès", "c) une immigration",
+          "d) une émigration"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Une naissance fait augmenter la population.",
+          "b) Un décès la fait augmenter.",
+          "c) L'exode rural est le départ des jeunes vers la ville.",
+          "d) Une immigration est un départ."],
+         ["a) Vrai", "b) Faux", "c) Vrai", "d) Faux"]),
+        ("Relie chaque mouvement à son effet.",
+         ["La naissance", "Le décès", "L'arrivée", "Le départ"],
+         ["Diminue", "Augmente", "Diminue", "Augmente"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Cite les deux mouvements qui augmentent la population.",
+          "b) Cite les deux qui la diminuent.",
+          "c) Qu'est-ce que l'exode rural ?",
+          "d) Comment sait-on si la population augmente ?"],
+         ["a) Les naissances et les arrivées.",
+          "b) Les décès et les départs.",
+          "c) C'est le départ des jeunes des campagnes vers les villes.",
+          "d) On compare les entrées et les sorties."]),
+    ],
+    consigne_ex5="Dessine le schéma des quatre mouvements autour de la population "
+                 "de ton village : deux flèches qui entrent, deux qui sortent, "
+                 "avec leur nom et une phrase d'explication.",
+    corrige_ex5="Boîte centrale « population du village », flèche verte "
+                "entrante « naissances », flèche rouge sortante « "
+                "décès », flèche violette entrante « arrivées "
+                "», flèche orange sortante « départs ».",
+))
+
+# ═══════════════════════════ SÉANCE 75 ═══════════════════════════
+SEANCES.append(dict(
+    n=75, semaine=24, titre="Pourquoi une population augmente ou diminue",
+    objectif="Énumérer les causes de croissance ou de diminution.",
+    materiel="Schéma de la courbe de croissance, ardoise et craie, cahier.",
+    illustration=("img_s75_a.png",
+                  "Illustration — La courbe d'une population qui "
+                  "augmente.", 700),
+    revision=[("Cite les quatre mouvements de la population.",
+               "R.A. : Les naissances, les décès, les arrivées et "
+               "les départs."),
+              ("Qu'est-ce que l'exode rural ?",
+               "R.A. : Le départ des jeunes des campagnes vers les villes.")],
+    mes=("À ton avis, la population de Madagascar augmente-t-elle ou "
+          "diminue-t-elle ?",
+         "R.A. : Elle augmente."),
+    analyse=[
+        ("Qu'appelle-t-on le solde naturel ?",
+         "R.A. : La différence entre les naissances et les décès."),
+        ("Quand est-il positif ?",
+         "R.A. : Quand il naît plus de personnes qu'il n'en meurt."),
+        ("Qu'appelle-t-on le solde migratoire ?",
+         "R.A. : La différence entre les arrivées et les départs."),
+        ("Pourquoi la population d'un village peut-elle diminuer ?",
+         "R.A. : Parce que les jeunes partent vers la ville."),
+        ("Que montre une courbe qui monte ?",
+         "R.A. : Que la population augmente.")],
+    synthese="Donc, une population augmente quand les naissances et les "
+             "arrivées dépassent les décès et les départs. Elle "
+             "diminue dans le cas contraire.",
+    application=("Sur le graphique, réponds : a) Que montre la courbe ? b) "
+                 "Combien d'habitants en 1960 ? c) En 2020 ? d) Que peut-on "
+                 "prévoir ?",
+                 "a) Une population qui augmente — b) Environ 100 — "
+                 "c) Environ 750 — d) Que la hausse va continuer."),
+    evaluation=("1. Réponds par vrai ou faux : a) Le solde naturel "
+                "compare naissances et décès. b) Un solde positif fait "
+                "diminuer la population. c) L'exode rural peut faire diminuer un "
+                "village. d) Une courbe qui monte montre une hausse.\n"
+                "2. Cite deux causes de croissance et deux causes de diminution.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Vrai.\n"
+                "2. Croissance : naissances nombreuses, arrivées. Diminution "
+                ": décès nombreux, départs."),
+    lecon_titre="Croissance et diminution de la population",
+    sections=[
+        ("1. Le solde naturel",
+         "Le solde naturel est la différence entre les naissances et les "
+         "décès d'une année. Il est positif quand il naît plus de "
+         "personnes qu'il n'en meurt : la population augmente alors "
+         "naturellement. Il est négatif dans le cas contraire. C'est le moteur "
+         "principal de la croissance à Madagascar."),
+        ("2. Le solde migratoire",
+         "Le solde migratoire est la différence entre les arrivées et les "
+         "départs. Il est positif quand le village attire plus de monde qu'il "
+         "n'en perd, et négatif quand les jeunes partent. Un village peut donc "
+         "avoir un solde naturel positif et perdre quand même des habitants, "
+         "si les départs sont nombreux."),
+        ("3. Pourquoi une population augmente",
+         "Une population augmente pour deux raisons principales. D'abord, une "
+         "natalité élevée et une mortalité en baisse : c'est le cas "
+         "de Madagascar, où les familles ont plusieurs enfants et où les "
+         "soins sauvent davantage de vies. Ensuite, l'arrivée de familles "
+         "attirées par le travail, les terres ou le marché."),
+        ("4. Pourquoi elle diminue",
+         "Une population diminue quand les décès dépassent les "
+         "naissances, ou quand les départs dépassent les arrivées. "
+         "Dans les campagnes malgaches, beaucoup de hameaux se vident : les jeunes "
+         "partent vers la ville et il ne reste que les enfants et les anciens. "
+         "Comprendre ces causes aide à décider où installer les "
+         "services."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "La population de Madagascar a été multipliée par plus de "
+             "deux en quarante ans. Si ce rythme se poursuit, elle dépassera "
+             "cinquante millions d'habitants avant 2050."),
+    resume=[
+        "Le solde naturel compare les naissances et les décès.",
+        "Le solde migratoire compare les arrivées et les départs.",
+        "Une population augmente quand les soldes sont positifs.",
+        "Elle diminue quand les décès ou les départs dominent.",
+        "Une courbe qui monte montre une croissance.",
+    ],
+    lexique=[("Solde", "La différence entre deux quantités."),
+             ("Solde naturel", "Naissances moins décès."),
+             ("Solde migratoire", "Arrivées moins départs."),
+             ("Natalité", "Le nombre de naissances."),
+             ("Mortalité", "Le nombre de décès.")],
+    exercices=[
+        ("Complète avec : naturel — migratoire — augmente — diminue",
+         ["a) Le solde …… compare naissances et décès.",
+          "b) Le solde …… compare arrivées et départs.",
+          "c) Un solde positif fait que la population ……",
+          "d) Un solde négatif fait qu'elle ……"],
+         ["a) Le solde naturel", "b) Le solde migratoire",
+          "c) la population augmente", "d) fait qu'elle diminue"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Un solde naturel positif fait augmenter la population.",
+          "b) L'exode rural attire les jeunes au village.",
+          "c) Une courbe qui monte montre une croissance.",
+          "d) La population de Madagascar diminue."],
+         ["a) Vrai", "b) Faux", "c) Vrai", "d) Faux"]),
+        ("Relie chaque situation à son effet.",
+         ["Beaucoup de naissances", "Beaucoup de départs",
+          "Beaucoup d'arrivées", "Beaucoup de décès"],
+         ["La population augmente", "La population diminue",
+          "La population augmente", "La population diminue"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Qu'est-ce que le solde naturel ?",
+          "b) Qu'est-ce que le solde migratoire ?",
+          "c) Cite deux causes de croissance.",
+          "d) Pourquoi certains villages se vident-ils ?"],
+         ["a) C'est la différence entre les naissances et les décès.",
+          "b) C'est la différence entre les arrivées et les départs.",
+          "c) Une natalité élevée et des arrivées nombreuses.",
+          "d) Parce que les jeunes partent vers la ville."]),
+    ],
+    consigne_ex5="Trace la courbe de population d'un village sur quatre "
+                 "dizaines d'années : elle monte jusqu'en 2000, puis descend "
+                 "lentement. Explique en trois phrases ce que montre cette courbe.",
+    corrige_ex5="Courbe qui monte puis redescend. Explication : la population a "
+                "d'abord augmenté grâce aux naissances, puis elle a "
+                "diminué à cause de l'exode rural vers la ville.",
+))

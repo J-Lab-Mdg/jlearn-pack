@@ -1443,3 +1443,122 @@ FIGURES_T3["img_s68_a.png"] = effectif_classe
 FIGURES_T3["img_s69_a.png"] = effectif_ecole
 FIGURES_T3["img_s70_a.png"] = emboitement_population
 FIGURES_T3["img_s71_a.png"] = repartition_sexe
+
+
+def groupes_age(path):
+    """Séance 72 — trois groupes d'âge."""
+    f = Fig(1100, 620)
+    f.txtc(550, 15, "LES GROUPES D'ÂGE", size=38, color=BLEU, bold=True)
+    groupes = [("0 - 14 ans", "les jeunes", 44, "#8BC34A", 130),
+               ("15 - 59 ans", "les adultes", 50, "#4FA3D1", 270),
+               ("60 ans et plus", "les personnes âgées", 6,
+                "#EF6C00", 410)]
+    for titre, descr, pct, couleur, y in groupes:
+        f.rect(90, y, 90 + pct * 14, y + 90, fill=couleur, stroke=NOIR, width=3)
+        f.txtc(90 + pct * 14 + 20, y + 20, "%d %%" % pct, size=30, color=NOIR,
+               bold=True)
+        f.txt(100, y + 25, titre, size=28, color="white", bold=True)
+        f.txt(100, y + 65, descr, size=24, color="white")
+    f.txtc(550, 545, "La somme des trois groupes fait cent pour cent.",
+           size=28, color=GRIS)
+    return f.save(path)
+
+
+def tableau_structure(path):
+    """Séance 73 — le tableau de structure : sexe et âge croisés."""
+    f = Fig(1100, 700)
+    f.txtc(550, 15, "LE TABLEAU DE STRUCTURE", size=36, color=BLEU, bold=True)
+    x0, y0, cw, ch = 120, 110, 220, 90
+    f.rect(x0, y0, x0 + 4 * cw, y0 + 4 * ch, fill="white", stroke=NOIR, width=4)
+    for i in range(5):
+        y = y0 + i * ch
+        f.line(x0, y, x0 + 4 * cw, y, color=NOIR, width=3)
+    for i in range(5):
+        x = x0 + i * cw
+        f.line(x, y0, x, y0 + 4 * ch, color=NOIR, width=3)
+    entetes = ["", "0 - 14 ans", "15 - 59 ans", "60 ans et +", "Total"]
+    for i, t in enumerate(entetes):
+        f.txtc(x0 + i * cw + cw // 2, y0 + 25, t, size=24, color=BLEU, bold=True)
+    lignes = [("Garçons", "120", "140", "40", "300"),
+              ("Filles", "115", "145", "45", "305"),
+              ("Total", "235", "285", "85", "605")]
+    for j, lig in enumerate(lignes):
+        y = y0 + (j + 1) * ch + 28
+        for i, val in enumerate(lig):
+            coul = NOIR
+            gras = i == 0 or j == 2
+            f.txtc(x0 + i * cw + cw // 2, y, val, size=26, color=coul, bold=gras)
+    f.txtc(550, 490, "Chaque case se lit à la croisée d'une ligne et "
+                     "d'une colonne.", size=26, color=GRIS)
+    f.txtc(550, 540, "Le total de la dernière colonne est l'effectif du "
+                     "village.", size=26, color=BLEU)
+    f.txtc(550, 590, "Le total de la dernière ligne donne chaque groupe "
+                     "d'âge.", size=26, color=BLEU)
+    return f.save(path)
+
+
+def mouvements_population(path):
+    """Séance 74 — naissances, décès, arrivées et départs."""
+    f = Fig(1100, 700)
+    f.txtc(550, 15, "LES MOUVEMENTS DE LA POPULATION", size=34, color=BLEU,
+           bold=True)
+    f.rect(390, 260, 710, 440, fill="#E3F2FD", stroke=BLEU, width=5)
+    f.txtc(550, 300, "LA POPULATION", size=30, color=BLEU, bold=True)
+    f.txtc(550, 345, "DU VILLAGE", size=30, color=BLEU, bold=True)
+    f.txtc(550, 395, "605 habitants", size=28, color=NOIR, bold=True)
+    # naissances : flèche entrante en haut à gauche
+    f.line(120, 180, 370, 290, color=VERT, width=6)
+    f.poly([(385, 296), (340, 262), (345, 300)], fill=VERT, stroke=VERT)
+    f.txtc(190, 110, "NAISSANCES", size=30, color=VERT, bold=True)
+    f.txtc(190, 155, "la population augmente", size=22, color=NOIR)
+    # décès : flèche sortante en bas à gauche
+    f.line(370, 410, 120, 530, color=ROUGE, width=6)
+    f.poly([(110, 540), (160, 512), (118, 505)], fill=ROUGE, stroke=ROUGE)
+    f.txtc(190, 565, "DÉCÈS", size=30, color=ROUGE, bold=True)
+    f.txtc(190, 610, "la population diminue", size=22, color=NOIR)
+    # arrivées : flèche entrante à droite
+    f.line(1010, 180, 740, 290, color="#7E57C2", width=6)
+    f.poly([(725, 296), (770, 268), (762, 305)], fill="#7E57C2", stroke="#7E57C2")
+    f.txtc(910, 110, "ARRIVÉES", size=30, color="#7E57C2", bold=True)
+    f.txtc(910, 155, "immigration", size=22, color=NOIR)
+    # départs : flèche sortante à droite
+    f.line(740, 410, 1010, 530, color="#EF6C00", width=6)
+    f.poly([(1020, 540), (968, 512), (1008, 500)], fill="#EF6C00",
+           stroke="#EF6C00")
+    f.txtc(910, 565, "DÉPARTS", size=30, color="#EF6C00", bold=True)
+    f.txtc(910, 610, "émigration", size=22, color=NOIR)
+    return f.save(path)
+
+
+def croissance_population(path):
+    """Séance 75 — une population qui augmente, et pourquoi."""
+    f = Fig(1100, 700)
+    f.txtc(550, 15, "UNE POPULATION QUI AUGMENTE", size=34, color=BLEU,
+           bold=True)
+    x0, y0, x1, y1 = 160, 560, 1010, 130
+    f.line(x0, y0, x0, y1, color=NOIR, width=4)
+    f.line(x0, y0, x1, y0, color=NOIR, width=4)
+    for hab, y in [(0, 520), (200, 440), (400, 360), (600, 280), (800, 200)]:
+        f.line(x0, y, x1, y, color="#E0E0E0", width=2)
+        f.txt(60, y - 16, str(hab), size=22, color=NOIR)
+    annees = ["1960", "1980", "2000", "2020"]
+    pts = [(280, 500), (500, 430), (720, 320), (940, 210)]
+    for (x, y), a in zip(pts, annees):
+        f.circle(x, y, 10, fill=ROUGE, stroke="white", width=3)
+        f.txtc(x, y0 + 15, a, size=26, color=NOIR)
+    for i in range(len(pts) - 1):
+        f.line(pts[i][0], pts[i][1], pts[i + 1][0], pts[i + 1][1], color=ROUGE,
+               width=6)
+    f.txtc(830, 250, "la courbe monte :", size=26, color=ROUGE, bold=True)
+    f.txtc(830, 290, "la population augmente", size=26, color=ROUGE)
+    f.txtc(550, 630, "Plus il naît de personnes qu'il n'en meurt, plus la "
+                     "population augmente.", size=26, color=GRIS)
+    f.txtc(550, 670, "C'est le cas de Madagascar depuis plusieurs dizaines "
+                     "d'années.", size=26, color=GRIS)
+    return f.save(path)
+
+
+FIGURES_T3["img_s72_a.png"] = groupes_age
+FIGURES_T3["img_s73_a.png"] = tableau_structure
+FIGURES_T3["img_s74_a.png"] = mouvements_population
+FIGURES_T3["img_s75_a.png"] = croissance_population

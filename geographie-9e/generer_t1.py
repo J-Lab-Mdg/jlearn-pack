@@ -103,6 +103,11 @@ SAUMON = {
     69: ["école", "effectifs", "additionner", "tableau", "niveau"],
     70: ["village", "habitants", "recensement", "échelle", "commune"],
     71: ["répartir", "sexe", "groupe", "critère", "pourcentage"],
+    72: ["groupe d'âge", "jeunes", "adultes", "personnes âgées", "âge"],
+    73: ["structure", "croiser", "case", "colonne", "total"],
+    74: ["naissances", "décès", "migrations", "immigration", "émigration"],
+    75: ["solde naturel", "solde migratoire", "natalité", "mortalité",
+         "croissance"],
 }
 
 # ── Illustration d'ouverture de leçon ───────────────────────────────────────
