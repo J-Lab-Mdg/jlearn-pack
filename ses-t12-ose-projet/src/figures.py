@@ -2332,6 +2332,400 @@ def fig_redistribution():
     img.save(os.path.join(OUT, "t12_u5_redistribution.png"))
     print("Figure écrite : t12_u5_redistribution.png")
 
+
+# ------------------------------------------------------------
+# Figure 68 — Le régime parlementaire
+# ------------------------------------------------------------
+def fig_regime_parlementaire():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le régime parlementaire : la collaboration des pouvoirs")
+
+    d.rounded_rectangle([70, 140, 430, 330], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    texte_centre(d, (70, 140, 430, 180), "PARLEMENT", F_BOLD, BLEU)
+    for i, l in enumerate(["Représente la nation.", "Vote la loi.", "Contrôle le gouvernement."]):
+        texte_centre(d, (70, 200 + i * 36, 430, 240 + i * 36), l, F_SMALL, NOIR)
+
+    d.rounded_rectangle([810, 140, 1170, 330], radius=10, fill=VERT_C, outline=VERT, width=3)
+    texte_centre(d, (810, 140, 1170, 180), "GOUVERNEMENT", F_BOLD, VERT)
+    for i, l in enumerate(["Dirige l'action publique.", "Responsable devant le", "Parlement."]):
+        texte_centre(d, (810, 200 + i * 36, 1170, 240 + i * 36), l, F_SMALL, NOIR)
+
+    d.line([434, 235, 806, 235], fill=GRIS, width=3)
+    d.polygon([(806, 235), (788, 227), (788, 243)], fill=GRIS)
+    d.polygon([(434, 235), (452, 227), (452, 243)], fill=GRIS)
+    texte_centre(d, (440, 180, 800, 220), "confiance / investiture", F_SMALL, NOIR)
+    texte_centre(d, (440, 250, 800, 290), "motion de censure, question de confiance", F_SMALL, NOIR)
+
+    d.rounded_rectangle([70, 380, 1170, 520], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((94, 402), "Le mécanisme central : la responsabilité du gouvernement", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Le gouvernement reste en fonction tant qu'il conserve la confiance du Parlement.",
+                           "• Si le Parlement vote une motion de censure, le gouvernement doit démissionner.",
+                           "• En retour, le chef de l'État peut généralement dissoudre l'assemblée."]):
+        d.text((94, 446 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([70, 545, 1170, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((94, 567), "Le rôle du chef de l'État", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Il arbitre et représente, mais ne dirige pas l'action quotidienne : c'est le chef du gouvernement qui conduit la politique.",
+                           "• Séparation souple des pouvoirs : les organes collaborent, aucun ne peut agir seul durablement.",
+                           "• Exigence : une majorité stable, sinon l'instabilité gouvernementale menace."]):
+        d.text((94, 611 + i * 26), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u6_parlementaire.png"))
+    print("Figure écrite : t12_u6_parlementaire.png")
+
+
+# ------------------------------------------------------------
+# Figure 69 — Le régime présidentiel
+# ------------------------------------------------------------
+def fig_regime_presidentiel():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le régime présidentiel : la séparation stricte des pouvoirs")
+
+    d.rounded_rectangle([70, 140, 430, 310], radius=10, fill=VERT_C, outline=VERT, width=3)
+    texte_centre(d, (70, 140, 430, 180), "PRÉSIDENT", F_BOLD, VERT)
+    for i, l in enumerate(["Élu, il détient la totalité", "du pouvoir exécutif.",
+                           "Il nomme les ministres,", "qui ne répondent que", "devant lui."]):
+        texte_centre(d, (70, 195 + i * 24, 430, 225 + i * 24), l, F_SMALL, NOIR)
+
+    d.rounded_rectangle([70, 350, 430, 520], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    texte_centre(d, (70, 350, 430, 390), "CONGRÈS", F_BOLD, BLEU)
+    for i, l in enumerate(["Vote la loi et le budget.", "Ne peut renverser le", "gouvernement."]):
+        texte_centre(d, (70, 405 + i * 30, 430, 440 + i * 30), l, F_SMALL, NOIR)
+
+    d.rounded_rectangle([70, 560, 430, 690], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    texte_centre(d, (70, 560, 430, 600), "JUSTICE", F_BOLD, VIOLET)
+    texte_centre(d, (70, 615, 430, 660), "Contrôle la conformité des lois.", F_SMALL, NOIR)
+
+    d.rounded_rectangle([810, 140, 1170, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((834, 162), "Les conséquences", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Aucun organe ne peut en renverser un autre : la stabilité est forte.",
+                           "• Le président ne peut dissoudre le Congrès, ni le Congrès destituer",
+                           "  le président hors d'une procédure exceptionnelle.",
+                           "• Le mandat est à durée fixe : les élections ne peuvent être avancées.",
+                           "• Risque : le blocage institutionnel si la majorité du Congrès est",
+                           "  d'un autre bord que le président."]):
+        d.text((834, 300 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.text((470, 340), "séparation", font=F_SMALL, fill=ROUGE)
+    d.text((470, 366), "stricte", font=F_SMALL, fill=ROUGE)
+    d.line([434, 420, 806, 420], fill=ROUGE, width=3)
+    d.line([434, 415, 434, 425], fill=ROUGE, width=3)
+    d.line([806, 415, 806, 425], fill=ROUGE, width=3)
+    texte_centre(d, (450, 430, 790, 470), "chaque pouvoir contrôle l'autre, sans pouvoir le destituer", F_MINI, NOIR)
+    img.save(os.path.join(OUT, "t12_u6_presidentiel.png"))
+    print("Figure écrite : t12_u6_presidentiel.png")
+
+
+# ------------------------------------------------------------
+# Figure 70 — Le régime semi-présidentiel
+# ------------------------------------------------------------
+def fig_regime_semi_presidentiel():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le régime semi-présidentiel : un exécutif à deux têtes")
+
+    d.rounded_rectangle([450, 130, 790, 300], radius=12, fill=BLEU, outline=BLEU, width=3)
+    texte_centre(d, (450, 130, 790, 170), "PRÉSIDENT DE LA RÉPUBLIQUE", F_BOLD, BLANC)
+    for i, l in enumerate(["Élu au suffrage universel.", "Arbitre, garant de la continuité", "de l'État."]):
+        texte_centre(d, (450, 190 + i * 34, 790, 225 + i * 34), l, F_SMALL, NOIR)
+
+    d.rounded_rectangle([70, 380, 530, 570], radius=10, fill=VERT_C, outline=VERT, width=3)
+    texte_centre(d, (70, 380, 530, 420), "PREMIER MINISTRE ET GOUVERNEMENT", F_BOLD, VERT)
+    for i, l in enumerate(["Conduit la politique quotidienne.", "Responsable devant le Parlement,", "qui peut le censurer."]):
+        texte_centre(d, (70, 435 + i * 36, 530, 475 + i * 36), l, F_SMALL, NOIR)
+
+    d.rounded_rectangle([710, 380, 1170, 570], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    texte_centre(d, (710, 380, 1170, 420), "PARLEMENT", F_BOLD, VIOLET)
+    for i, l in enumerate(["Vote la loi.", "Peut renverser le gouvernement", "par une motion de censure."]):
+        texte_centre(d, (710, 435 + i * 36, 1170, 475 + i * 36), l, F_SMALL, NOIR)
+
+    d.line([620, 305, 300, 376], fill=GRIS, width=3)
+    d.polygon([(300, 376), (312, 362), (316, 378)], fill=GRIS)
+    d.line([620, 305, 940, 376], fill=GRIS, width=3)
+    d.polygon([(940, 376), (928, 362), (924, 378)], fill=GRIS)
+    d.line([534, 470, 706, 470], fill=GRIS, width=3)
+    d.polygon([(706, 470), (694, 462), (694, 478)], fill=GRIS)
+    texte_centre(d, (540, 440, 700, 490), "censure", F_SMALL, NOIR)
+
+    d.rounded_rectangle([70, 600, 1170, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((94, 622), "Le point décisif", font=F_BOLD, fill=ORANGE)
+    d.text((94, 662), "Le président nomme le Premier ministre, mais celui-ci doit disposer du soutien du Parlement : l'équilibre dépend de l'accord entre les deux têtes de l'exécutif.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u6_semi_presidentiel.png"))
+    print("Figure écrite : t12_u6_semi_presidentiel.png")
+
+
+# ------------------------------------------------------------
+# Figure 71 — Le scrutin majoritaire
+# ------------------------------------------------------------
+def fig_scrutin_majoritaire():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le scrutin majoritaire : la logique du vainqueur")
+
+    d.text((70, 130), "Exemple : une circonscription où trois candidats se présentent.", font=F_SMALL, fill=NOIR)
+
+    lignes = [("Candidat A", "42 %", "ÉLU", VERT_C, VERT),
+              ("Candidat B", "33 %", "—", BLANC, GRIS),
+              ("Candidat C", "25 %", "—", BLANC, GRIS)]
+    y = 180
+    d.text((70, y), "Candidat", font=F_BOLD, fill=NOIR)
+    d.text((470, y), "Résultat", font=F_BOLD, fill=NOIR)
+    d.text((840, y), "Siège obtenu", font=F_BOLD, fill=NOIR)
+    d.line([70, y + 26, 1170, y + 26], fill=NOIR, width=2)
+    y += 40
+    for nom, score, etat, fond, bord in lignes:
+        d.rectangle([70, y, 1170, y + 54], fill=fond, outline=bord, width=2)
+        d.text((88, y + 16), nom, font=F_SMALL, fill=NOIR)
+        d.text((470, y + 16), score, font=F_SMALL, fill=NOIR)
+        d.text((848, y + 16), etat, font=F_BOLD, fill=VERT if etat == "ÉLU" else NOIR)
+        y += 58
+
+    d.rounded_rectangle([70, 400, 1170, 540], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((94, 422), "Les deux variantes", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Un tour : le candidat qui arrive en tête est élu, même avec une minorité des voix.",
+                           "• Deux tours : si personne n'obtient la majorité absolue au premier tour, un second tour oppose",
+                           "  les candidats arrivés en tête ; la majorité relative suffit alors."]):
+        d.text((94, 466 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([70, 560, 1170, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((94, 582), "L'effet sur le résultat", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Le scrutin majoritaire favorise les grandes formations et dégage des majorités claires.",
+                           "• Il sous-représente les petits partis : 25 % des voix peuvent ne donner aucun siège.",
+                           "• Il incite au rassemblement entre les deux tours."]):
+        d.text((94, 626 + i * 26), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u6_majoritaire.png"))
+    print("Figure écrite : t12_u6_majoritaire.png")
+
+
+# ------------------------------------------------------------
+# Figure 72 — Le scrutin proportionnel
+# ------------------------------------------------------------
+def fig_scrutin_proportionnel():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le scrutin proportionnel : la logique de la représentation")
+
+    d.text((70, 130), "Exemple : 10 sièges à pourvoir, 100 000 suffrages exprimés.", font=F_SMALL, fill=NOIR)
+
+    lignes = [("Liste A", "40 000 voix — 40 %", "4 sièges", BLEU_C, BLEU),
+              ("Liste B", "30 000 voix — 30 %", "3 sièges", VERT_C, VERT),
+              ("Liste C", "20 000 voix — 20 %", "2 sièges", JAUNE_C, ORANGE),
+              ("Liste D", "10 000 voix — 10 %", "1 siège", VIOLET_C, VIOLET)]
+    y = 180
+    d.text((70, y), "Liste", font=F_BOLD, fill=NOIR)
+    d.text((420, y), "Suffrages obtenus", font=F_BOLD, fill=NOIR)
+    d.text((870, y), "Sièges", font=F_BOLD, fill=NOIR)
+    d.line([70, y + 26, 1170, y + 26], fill=NOIR, width=2)
+    y += 40
+    for nom, score, sieges, fond, bord in lignes:
+        d.rectangle([70, y, 1170, y + 54], fill=fond, outline=bord, width=2)
+        d.text((88, y + 16), nom, font=F_SMALL, fill=NOIR)
+        d.text((420, y + 16), score, font=F_SMALL, fill=NOIR)
+        d.text((872, y + 16), sieges, font=F_BOLD, fill=NOIR)
+        y += 58
+
+    d.rounded_rectangle([70, 440, 1170, 570], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((94, 462), "La répartition", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• On divise le total des suffrages par le nombre de sièges : on obtient le quotient électoral.",
+                           "• Chaque liste obtient autant de sièges que ce quotient est contenu de fois dans son score.",
+                           "• Les sièges restants sont attribués selon la règle retenue : plus fort reste, ou plus forte moyenne."]):
+        d.text((94, 506 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([70, 590, 1170, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((94, 612), "L'effet sur le résultat", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Chaque courant d'opinion obtient une représentation proche de son poids réel.",
+                           "• En contrepartie, la majorité est rarement nette : il faut composer des coalitions."]):
+        d.text((94, 650 + i * 26), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u6_proportionnel.png"))
+    print("Figure écrite : t12_u6_proportionnel.png")
+
+
+# ------------------------------------------------------------
+# Figure 73 — Le scrutin mixte et les effets comparés
+# ------------------------------------------------------------
+def fig_scrutin_mixte():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le scrutin mixte et l'effet des modes de scrutin")
+
+    d.rounded_rectangle([70, 130, 430, 320], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    texte_centre(d, (70, 130, 430, 170), "LE SCRUTIN MIXTE", F_BOLD, BLEU)
+    for i, l in enumerate(["Une partie des sièges au", "scrutin majoritaire, l'autre", "à la proportionnelle.",
+                           "Il cherche un compromis :", "une majorité stable et une", "représentation plus juste."]):
+        texte_centre(d, (70, 185 + i * 22, 430, 210 + i * 22), l, F_SMALL, NOIR)
+
+    d.rounded_rectangle([450, 130, 1170, 320], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((474, 152), "Deux familles de systèmes mixtes", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["• Système parallèle : les deux modes sont appliqués séparément, sur deux parts de sièges.",
+                           "• Système à compensation : les sièges proportionnels corrigent les écarts du vote majoritaire."]):
+        d.text((474, 196 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    entetes = ["Mode de scrutin", "Effet principal", "Risque"]
+    lignes = [["Majoritaire", "Majorité claire, stabilité", "Sous-représentation des petits partis"],
+              ["Proportionnel", "Représentation fidèle", "Majorité fragmentée, coalitions"],
+              ["Mixte", "Compromis entre les deux", "Système plus complexe"]]
+    x0, y0, x1 = 70, 370, 1170
+    larg = [340, 400, 360]
+    x = x0
+    for j, h in enumerate(entetes):
+        d.rectangle([x, y0, x + larg[j], y0 + 40], fill=BLEU)
+        texte_centre(d, (x, y0, x + larg[j], y0 + 40), h, F_BOLD, BLANC)
+        x += larg[j]
+    y = y0 + 44
+    for lig in lignes:
+        x = x0
+        for j, c in enumerate(lig):
+            d.rectangle([x, y, x + larg[j], y + 56], outline=GRIS, width=2)
+            texte_centre(d, (x, y + 8, x + larg[j], y + 48), c, F_MINI, NOIR)
+            x += larg[j]
+        y += 60
+
+    d.rounded_rectangle([70, 620, 1170, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((94, 642), "À retenir", font=F_BOLD, fill=ORANGE)
+    d.text((94, 674), "Le choix du mode de scrutin façonne le résultat de l'élection autant que le vote lui-même.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u6_mixte.png"))
+    print("Figure écrite : t12_u6_mixte.png")
+
+
+# ------------------------------------------------------------
+# Figure 75 — Démocratie participative et démocratie délibérative
+# ------------------------------------------------------------
+def fig_democratie_participative():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Démocratie participative et démocratie délibérative")
+
+    boite(d, 70, 130, 600, 430, "LA DÉMOCRATIE PARTICIPATIVE",
+          ["Les citoyens ne se contentent plus",
+           "de voter : ils participent à la décision",
+           "entre deux élections.",
+           "• Consultations et référendums locaux ;",
+           "• budgets participatifs : les habitants",
+           "  choisissent une part des dépenses ;",
+           "• conseils de quartier, commissions",
+           "  associant les habitants.",
+           "But : rapprocher la décision de ceux",
+           "qu'elle concerne."],
+          fill=BLEU_C, bord=BLEU, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 130, 1170, 430, "LA DÉMOCRATIE DÉLIBÉRATIVE",
+          ["La décision se prépare par la",
+           "discussion argumentée entre citoyens.",
+           "• Jurys citoyens et conférences de",
+           "  citoyens tirés au sort ;",
+           "• débats publics contradictoires ;",
+           "• assemblées où l'on expose les",
+           "  arguments avant de trancher.",
+           "But : améliorer la qualité de la",
+           "décision par l'examen collectif."],
+          fill=VERT_C, bord=VERT, interligne=26, font=F_SMALL)
+
+    fleche(d, 604, 280, 636, 280, GRIS, 3)
+
+    d.rounded_rectangle([70, 460, 1170, 620], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((94, 482), "Ce qu'elles apportent et ce qu'elles exigent", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Apport : les citoyens sont associés au-delà du vote, la décision gagne en légitimité.",
+                           "• Apport : les points de vue minoritaires et les savoirs d'usage peuvent être entendus.",
+                           "• Exigence : du temps, une information accessible et une réelle prise en compte des résultats.",
+                           "• Risque : si les avis recueillis sont ignorés, la participation se transforme en déception."]):
+        d.text((94, 526 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([70, 645, 1170, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((94, 663), "Ces formes complètent la démocratie représentative : elles ne la remplacent pas.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u6_participative.png"))
+    print("Figure écrite : t12_u6_participative.png")
+
+
+# ------------------------------------------------------------
+# Figure 76 — Responsabilité civile et responsabilité pénale
+# ------------------------------------------------------------
+def fig_responsabilites():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Responsabilité civile et responsabilité pénale")
+
+    entetes = ["", "Responsabilité civile", "Responsabilité pénale"]
+    lignes = [["But", "Réparer le dommage causé", "Punir l'auteur de l'infraction"],
+              ["Déclencheur", "Un dommage subi par autrui", "Une infraction prévue par la loi"],
+              ["Qui agit", "La victime engage l'action", "La société, par le ministère public"],
+              ["Juridiction", "Juridiction civile", "Juridiction pénale"],
+              ["Sanction", "Dommages et intérêts", "Peine : amende, prison, travail d'intérêt général"],
+              ["Exemple", "Un voisin dont la clôture tombe", "Un conducteur qui blesse volontairement"]]
+    x0, y0 = 70, 140
+    larg = [230, 435, 435]
+    x = x0
+    for j, h in enumerate(entetes):
+        d.rectangle([x, y0, x + larg[j], y0 + 44], fill=BLEU)
+        texte_centre(d, (x, y0, x + larg[j], y0 + 44), h, F_BOLD, BLANC)
+        x += larg[j]
+    y = y0 + 48
+    for lig in lignes:
+        x = x0
+        for j, c in enumerate(lig):
+            d.rectangle([x, y, x + larg[j], y + 66], outline=GRIS, width=2,
+                        fill=(BLEU_C if j == 0 and False else (BLANC)))
+            texte_centre(d, (x, y + 12, x + larg[j], y + 54), c, F_MINI, NOIR)
+            x += larg[j]
+        y += 70
+
+    d.text((70, 130), "", font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([70, 600, 1170, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((94, 622), "Le cumul est possible", font=F_BOLD, fill=ORANGE)
+    d.text((94, 662), "Un même fait peut engager les deux responsabilités : l'auteur est condamné pénalement et verser des dommages à la victime.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u6_responsabilites.png"))
+    print("Figure écrite : t12_u6_responsabilites.png")
+
+
+# ------------------------------------------------------------
+# Figure 77 — Le droit et l'activité économique
+# ------------------------------------------------------------
+def fig_droit_economie():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les rôles du Droit face à l'activité économique")
+
+    d.rounded_rectangle([450, 125, 790, 235], radius=12, fill=BLEU, outline=BLEU, width=3)
+    texte_centre(d, (450, 125, 790, 235), "LE DROIT", F_BOLD, BLANC)
+
+    roles = [("SÉCURISER LES ÉCHANGES", "Contrats respectés, dettes", "recouvrables, titres de", "propriété garantis.", 70, 280, BLEU, BLEU_C),
+             ("RÉGLER LA CONCURRENCE", "Interdiction des ententes et", "des abus de position", "dominante.", 450, 280, VERT, VERT_C),
+             ("PROTÉGER LES AGENTS", "Consommateurs, salariés,", "environnement : des règles", "que le marché ne fixe pas.", 830, 280, ORANGE, JAUNE_C),
+             ("OFFRIR UN RECOURS", "Une juridiction pour trancher", "le litige et faire exécuter", "la décision.", 260, 470, VIOLET, VIOLET_C)]
+    for t, l1, l2, l3, a, b, bord, fond in roles:
+        d.rounded_rectangle([a, b, a + 340, b + 180], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 340, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate([l1, l2, l3]):
+            texte_centre(d, (a, b + 62 + i * 28, a + 340, b + 90 + i * 28), l, F_MINI, NOIR)
+        d.line([a + 170, b + 90, 620, 190], fill=GRIS, width=2)
+
+    d.rounded_rectangle([640, 470, 1170, 660], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((664, 492), "Sans droit, pas de marché durable", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Un échange suppose que la parole donnée soit tenue : le droit rend la promesse exécutoire et le litige prévisible.",
+                               F_SMALL, 480)):
+        d.text((664, 536 + i * 26), l, font=F_SMALL, fill=NOIR)
+    for i, l in enumerate(wrap(d, "Il protège aussi les intérêts des agents économiques : le salarié contre l'arbitraire, le consommateur contre les clauses abusives, le concurrent contre les pratiques déloyales.",
+                               F_SMALL, 480)):
+        d.text((664, 590 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([70, 665, 1170, 690], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((94, 678), "Le Droit ne remplace pas l'activité économique : il lui donne le cadre sans lequel elle ne peut se développer.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u6_droit_economie.png"))
+    print("Figure écrite : t12_u6_droit_economie.png")
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_pib()
@@ -2390,3 +2784,12 @@ if __name__ == "__main__":
     fig_formes_egalite()
     fig_justice_sociale()
     fig_redistribution()
+    fig_regime_parlementaire()
+    fig_regime_presidentiel()
+    fig_regime_semi_presidentiel()
+    fig_scrutin_majoritaire()
+    fig_scrutin_proportionnel()
+    fig_scrutin_mixte()
+    fig_democratie_participative()
+    fig_responsabilites()
+    fig_droit_economie()
