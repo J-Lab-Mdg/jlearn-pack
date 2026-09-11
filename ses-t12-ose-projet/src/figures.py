@@ -622,6 +622,555 @@ def fig_environnement():
     print("Figure écrite : t12_u1_environnement.png")
 
 
+
+# ------------------------------------------------------------
+# Figure 16 — La structure des échanges mondiaux
+# ------------------------------------------------------------
+def fig_structure():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La transformation de la structure du commerce mondial")
+
+    d.text((80, 110), "Part des grandes catégories de produits dans les échanges mondiaux",
+           font=F_SMALL, fill=GRIS)
+
+    # axes
+    x0, y0, x1, y1 = 100, 480, 1140, 170
+    d.line([x0, y0, x0, y1], fill=NOIR, width=3)
+    d.line([x0, y0, x1, y0], fill=NOIR, width=3)
+    d.text((1150, 470), "années", font=F_MINI, fill=NOIR)
+
+    annees = [0, 1, 2, 3]
+    for a in annees:
+        x = x0 + a * 260
+        d.line([x, y0, x, y0 + 8], fill=NOIR, width=2)
+        d.text((x - 20, y0 + 14), "P" + str(a + 1), font=F_MINI, fill=NOIR)
+
+    # courbes empilées simplifiées (chaque bande = une catégorie)
+    hauteurs = [
+        [90, 80, 62, 50],    # produits primaires
+        [110, 118, 130, 136],  # produits manufacturés
+        [46, 62, 86, 104],   # services
+    ]
+    couleurs = [BLEU, VERT, ORANGE]
+    for i, (serie, coul) in enumerate(zip(hauteurs, couleurs)):
+        pts = []
+        for a in annees:
+            x = x0 + a * 260
+            cumul = sum(h[a] for h in hauteurs[:i + 1])
+            pts.append((x, y0 - cumul * 2))
+        d.line(pts, fill=coul, width=5)
+
+    légende = [("PRODUITS PRIMAIRES", BLEU, 80, 560),
+               ("PRODUITS MANUFACTURÉS", VERT, 430, 560),
+               ("SERVICES", ORANGE, 830, 560)]
+    for t, coul, x, y in légende:
+        d.rectangle([x, y, x + 34, y + 22], fill=coul)
+        d.text((x + 46, y), t, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([80, 620, 1160, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((104, 642), "Lecture : la part des produits manufacturés et des services progresse, "
+                       "celle des produits primaires recule.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_structure.png"))
+    print("Figure écrite : t12_u2_structure.png")
+
+
+# ------------------------------------------------------------
+# Figure 17 — Échanges et croissance
+# ------------------------------------------------------------
+def fig_echanges_croissance():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Commerce international et croissance : une interaction")
+
+    etapes = [("OUVERTURE", "accès à un marché plus vaste", 70, 150, BLEU, BLEU_C),
+              ("SPÉCIALISATION", "production là où l'on est le plus efficace", 820, 150, VERT, VERT_C),
+              ("GAINS DE PRODUCTIVITÉ", "échelle, concurrence, diffusion des techniques", 820, 420, ORANGE, JAUNE_C),
+              ("CROISSANCE", "hausse du revenu national", 70, 420, VIOLET, VIOLET_C)]
+    for t, s, a, b, bord, fond in etapes:
+        d.rounded_rectangle([a, b, a + 350, b + 150], radius=12, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 350, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 350, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate(wrap(d, s, F_MINI, 310)):
+            texte_centre(d, (a, b + 58 + i * 24, a + 350, b + 82 + i * 24), l, F_MINI, NOIR)
+
+    fleche(d, 422, 225, 816, 225, GRIS, 3)
+    fleche(d, 995, 302, 995, 416, GRIS, 3)
+    fleche(d, 816, 495, 422, 495, GRIS, 3)
+    fleche(d, 245, 416, 245, 302, GRIS, 3)
+
+    d.rounded_rectangle([460, 280, 780, 390], radius=14, fill=ROSE_C, outline=ROUGE, width=4)
+    texte_centre(d, (460, 280, 780, 340), "CERCLE", F_BOLD, ROUGE)
+    texte_centre(d, (460, 340, 780, 388), "VERTUEUX", F_BOLD, ROUGE)
+
+    d.rounded_rectangle([70, 600, 1170, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((94, 622), "Condition", font=F_BOLD, fill=ORANGE)
+    d.text((94, 658), "Le gain n'est pas automatique : il suppose des capacités de production et une spécialisation porteuse.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_echanges.png"))
+    print("Figure écrite : t12_u2_echanges.png")
+
+
+# ------------------------------------------------------------
+# Figure 18 — Libre-échange et protectionnisme
+# ------------------------------------------------------------
+def fig_libre_echange():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Libre-échange et protectionnisme : deux politiques commerciales")
+
+    boite(d, 60, 130, 600, 440, "LIBRE-ÉCHANGE",
+          ["Aucun obstacle aux échanges :",
+           "• suppression des droits de douane ;",
+           "• suppression des quotas ;",
+           "• libre circulation des capitaux.",
+           "",
+           "Arguments : baisse des prix, plus",
+           "large choix, spécialisation selon",
+           "les avantages de chacun."],
+          fill=VERT_C, bord=VERT, interligne=27, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 440, "PROTECTIONNISME",
+          ["Protection de la production nationale :",
+           "• droits de douane ;",
+           "• quotas et licences d'importation ;",
+           "• normes sanitaires et techniques ;",
+           "• subventions aux exportateurs.",
+           "",
+           "Arguments : protéger les industries",
+           "naissantes et l'emploi local."],
+          fill=ROSE_C, bord=ROUGE, interligne=27, font=F_SMALL)
+
+    d.rounded_rectangle([60, 480, 600, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 502), "Limites du libre-échange", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Concurrence brutale pour les", "  productions locales fragiles ;",
+                           "• dépendance accrue à l'égard", "  des marchés extérieurs."]):
+        d.text((84, 546 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 480, 1180, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((664, 502), "Limites du protectionnisme", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Prix plus élevés pour les", "  consommateurs ;",
+                           "• mesures de rétorsion des", "  partenaires commerciaux."]):
+        d.text((664, 546 + i * 30), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_libre_echange.png"))
+    print("Figure écrite : t12_u2_libre_echange.png")
+
+
+# ------------------------------------------------------------
+# Figure 19 — Les avantages absolus (Smith)
+# ------------------------------------------------------------
+def fig_absolus():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les avantages absolus selon Adam Smith")
+
+    y = tableau(d, 80, 130, [300, 240, 240, 240],
+                [50, 50, 50, 50],
+                ["Pays", "Riz (heures/tonne)", "Tissu (heures/pièce)", "Avantage absolu"],
+                [["Madagascar", "10", "20", "riz"],
+                 ["Pays voisin", "30", "10", "tissu"]],
+                couleur=BLEU)
+
+    d.rounded_rectangle([80, 420, 1160, 530], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((104, 442), "Le raisonnement", font=F_BOLD, fill=VERT)
+    d.text((104, 482), "Chaque pays produit le bien qu'il fabrique avec le moins d'heures de travail, puis il échange.",
+           font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([80, 560, 570, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((104, 582), "Résultat", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["Madagascar se spécialise dans le riz,", "le pays voisin dans le tissu : la production",
+                           "totale des deux biens augmente."]):
+        d.text((104, 622 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 560, 1160, 690], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((664, 582), "Limite de la théorie", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(["Smith n'explique pas le cas d'un pays", "qui serait moins efficace partout : c'est",
+                           "l'apport de Ricardo."]):
+        d.text((664, 622 + i * 28), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_absolus.png"))
+    print("Figure écrite : t12_u2_absolus.png")
+
+
+# ------------------------------------------------------------
+# Figure 20 — Les avantages comparatifs (Ricardo)
+# ------------------------------------------------------------
+def fig_comparatifs():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les avantages comparatifs selon David Ricardo")
+
+    tableau(d, 80, 130, [340, 250, 250, 300],
+            [50, 50, 50, 50],
+            ["Pays", "Vanille (h/kg)", "Textile (h/pièce)", "Coût relatif"],
+            [["Madagascar", "4", "8", "0,5 pièce par kg"],
+             ["Pays partenaire", "6", "6", "1 pièce par kg"]],
+            couleur=VERT)
+
+    d.rounded_rectangle([80, 410, 1160, 560], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((104, 432), "Le raisonnement", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["Le pays partenaire est plus efficace dans les deux productions : aucun avantage absolu n'existe ici.",
+                           "Pourtant l'échange reste avantageux : Madagascar a un avantage comparatif en vanille,",
+                           "le partenaire en textile. Chacun se spécialise là où son désavantage est le plus faible."]):
+        d.text((104, 474 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([80, 590, 1160, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((104, 612), "Enseignement", font=F_BOLD, fill=BLEU)
+    d.text((104, 652), "Ce n'est pas le coût absolu qui décide de la spécialisation, mais le coût relatif : "
+                       "l'échange profite aux deux pays.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_comparatifs.png"))
+    print("Figure écrite : t12_u2_comparatifs.png")
+
+
+# ------------------------------------------------------------
+# Figure 21 — Les dotations factorielles
+# ------------------------------------------------------------
+def fig_dotation():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les dotations factorielles : Heckscher et Ohlin")
+
+    boite(d, 60, 130, 600, 400, "PAYS A — ABONDANT EN MAIN-D'ŒUVRE",
+          ["Beaucoup de travailleurs,", "peu de capital.",
+           "",
+           "Conséquence : la main-d'œuvre", "y est relativement moins chère.",
+           "",
+           "Spécialisation : productions", "intensives en travail :",
+           "textile, artisanat, agriculture."],
+          fill=BLEU_C, bord=BLEU, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 400, "PAYS B — ABONDANT EN CAPITAL",
+          ["Beaucoup de machines et", "d'infrastructures, main-d'œuvre", "moins nombreuse.",
+           "",
+           "Conséquence : le capital y est", "relativement moins coûteux.",
+           "",
+           "Spécialisation : productions", "intensives en capital :",
+           "chimie, matériel, transport."],
+          fill=JAUNE_C, bord=ORANGE, interligne=26, font=F_SMALL)
+
+    fleche(d, 604, 265, 636, 265, GRIS, 3)
+
+    d.rounded_rectangle([60, 440, 1180, 560], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 462), "Le théorème", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["Chaque pays exporte les biens qui utilisent intensivement le facteur dont il est le mieux pourvu.",
+                           "L'échange international revient donc à échanger, indirectement, du travail contre du capital."]):
+        d.text((84, 502 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 590, 1180, 690], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 612), "Limites", font=F_BOLD, fill=VIOLET)
+    d.text((84, 652), "Le modèle suppose des facteurs immobiles entre pays et des techniques identiques : la réalité est plus complexe.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_dotation.png"))
+    print("Figure écrite : t12_u2_dotation.png")
+
+
+# ------------------------------------------------------------
+# Figure 22 — Commerce intra-branche et avantages construits
+# ------------------------------------------------------------
+def fig_intra_branche():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Commerce intra-branche et avantages construits")
+
+    d.rounded_rectangle([60, 130, 1180, 300], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 152), "LE COMMERCE INTRA-BRANCHE", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["Un même pays exporte et importe des produits d'une même branche : deux pays échangent",
+                           "des voitures, des vêtements ou des denrées alimentaires de gammes différentes.",
+                           "Il s'explique par la différenciation des produits, les préférences des consommateurs",
+                           "et les économies d'échelle."]):
+        d.text((84, 196 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 340, 600, 620], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 362), "LES ÉCONOMIES D'ÉCHELLE", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["Produire en grande série abaisse le", "coût unitaire : chaque pays se spécialise",
+                           "dans quelques variétés et les échange.",
+                           "Le gain vient de la taille du marché,",
+                           "non des ressources naturelles."]):
+        d.text((84, 404 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 340, 1180, 620], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((664, 362), "LES AVANTAGES CONSTRUITS", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["L'avantage ne vient pas du climat ni", "des ressources, mais d'un effort délibéré :",
+                           "formation, innovation, qualité, marque,",
+                           "respect des normes, organisation des",
+                           "filières. Il se construit dans le temps."]):
+        d.text((664, 404 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 645, 1180, 690], radius=8, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 665), "Un pays peut donc acquérir un avantage : la spécialisation n'est pas seulement un héritage.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_intra_branche.png"))
+    print("Figure écrite : t12_u2_intra_branche.png")
+
+
+# ------------------------------------------------------------
+# Figure 23 — L'OMC et la coopération internationale
+# ------------------------------------------------------------
+def fig_omc():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "L'Organisation mondiale du commerce et la coopération internationale")
+
+    d.rounded_rectangle([470, 130, 770, 240], radius=12, fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (470, 130, 770, 240), "L'OMC", F_TITLE, BLEU)
+
+    principes = [("NON-DISCRIMINATION", "Clause de la nation la plus favorisée et traitement national : un avantage accordé à l'un l'est à tous.", 60, 300, BLEU, BLEU_C),
+                 ("RÉCIPROCITÉ", "Les concessions commerciales sont négociées et équilibrées entre partenaires.", 780, 300, VERT, VERT_C),
+                 ("TRANSPARENCE", "Les règles sont publiées et les pratiques commerciales notifiées.", 60, 460, ORANGE, JAUNE_C),
+                 ("RÈGLEMENT DES DIFFÉRENDS", "Un mécanisme arbital tranche les litiges entre États membres.", 780, 460, VIOLET, VIOLET_C)]
+    for t, s, a, b, bord, fond in principes:
+        d.rounded_rectangle([a, b, a + 400, b + 160], radius=10, fill=fond, outline=bord, width=3)
+        for i, l in enumerate(wrap(d, t, F_BOLD, 360)):
+            texte_centre(d, (a, b + 12 + i * 28, a + 400, b + 40 + i * 28), l, F_BOLD, bord)
+        for i, l in enumerate(wrap(d, s, F_MINI, 360)):
+            texte_centre(d, (a, b + 78 + i * 22, a + 400, b + 100 + i * 22), l, F_MINI, NOIR)
+        d.line([a + 200, b + 80, 620, 180], fill=(200, 200, 200), width=2)
+
+    d.rounded_rectangle([60, 645, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 665), "Objectif : un commerce prévisible et ouvert, qui profite au plus grand nombre.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_omc.png"))
+    print("Figure écrite : t12_u2_omc.png")
+
+
+# ------------------------------------------------------------
+# Figure 24 — Localisation et délocalisation des firmes multinationales
+# ------------------------------------------------------------
+def fig_fmn():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les stratégies de localisation des firmes multinationales")
+
+    d.rounded_rectangle([60, 130, 580, 400], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 152), "POURQUOI SE LOCALISER AILLEURS", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Recherche de coûts de production", "  plus faibles ;",
+                           "• accès à des ressources ou à des", "  matières premières ;",
+                           "• proximité d'un marché de", "  consommateurs ;",
+                           "• qualité des infrastructures et", "  stabilité des règles."]):
+        d.text((84, 194 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([660, 130, 1180, 400], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((684, 152), "LES EFFETS DANS LE PAYS D'ACCUEIL", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Créations d'emplois et", "  investissements ;",
+                           "• transferts de technologie et", "  de savoir-faire ;",
+                           "• accès aux réseaux commerciaux", "  internationaux ;",
+                           "• risques : concurrence aux", "  entreprises locales, rapatriement",
+                           "  des bénéfices."]):
+        d.text((684, 194 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 440, 580, 660], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 462), "DANS LE PAYS D'ORIGINE", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["• Perte d'emplois peu qualifiés ;",
+                           "• spécialisation dans les activités",
+                           "  à plus forte valeur ajoutée ;",
+                           "• baisse des prix pour les",
+                           "  consommateurs."]):
+        d.text((84, 502 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([660, 440, 1180, 660], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((684, 462), "LES FORMES DE PRÉSENCE", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(["• Filiale de production ;",
+                           "• sous-traitance auprès d'entreprises",
+                           "  locales ;",
+                           "• coentreprise avec un partenaire",
+                           "  national."]):
+        d.text((684, 502 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    img.save(os.path.join(OUT, "t12_u2_fmn.png"))
+    print("Figure écrite : t12_u2_fmn.png")
+
+
+# ------------------------------------------------------------
+# Figure 25 — IDE et investissements de portefeuille
+# ------------------------------------------------------------
+def fig_ide():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les flux internationaux de capitaux : IDE et investissements de portefeuille")
+
+    boite(d, 60, 130, 600, 470, "INVESTISSEMENT DIRECT À L'ÉTRANGER",
+          ["Une entreprise crée ou rachète",
+           "une unité de production dans un",
+           "autre pays, et en garde le contrôle.",
+           "",
+           "• Horizon long ;",
+           "• apporte capitaux, techniques",
+           "  et compétences ;",
+           "• difficile à retirer rapidement.",
+           "",
+           "Exemple : une usine de",
+           "transformation construite et",
+           "dirigée depuis l'étranger."],
+          fill=BLEU_C, bord=BLEU, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 470, "INVESTISSEMENT DE PORTEFEUILLE",
+          ["Un investisseur achète des titres",
+           "(actions, obligations) étrangers",
+           "sans diriger l'entreprise.",
+           "",
+           "• Horizon court ;",
+           "• recherche un rendement",
+           "  financier immédiat ;",
+           "• retraits possibles en quelques",
+           "  jours, d'où un risque de",
+           "  volatilité.",
+           "",
+           "Exemple : achat d'actions cotées",
+           "sur une place étrangère."],
+          fill=JAUNE_C, bord=ORANGE, interligne=26, font=F_SMALL)
+
+    d.rounded_rectangle([60, 510, 1180, 640], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 532), "Différence essentielle", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["L'IDE engage une relation durable et transfère des capacités de production ; "
+                           "l'investissement de portefeuille",
+                           "ne recherche qu'un rendement financier et peut se retirer très vite, ce qui le rend instable."]):
+        d.text((84, 574 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 660, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 677), "Les deux flux sont complémentaires : l'un construit, l'autre finance.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_ide.png"))
+    print("Figure écrite : t12_u2_ide.png")
+
+
+# ------------------------------------------------------------
+# Figure 26 — Le taux de change
+# ------------------------------------------------------------
+def fig_change():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le taux de change et le marché des changes")
+
+    d.rounded_rectangle([60, 130, 1180, 260], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 152), "DÉFINITION", font=F_BOLD, fill=BLEU)
+    d.text((84, 194), "Le taux de change est le prix d'une monnaie exprimé dans une autre : il indique "
+                      "combien d'unités de monnaie", font=F_SMALL, fill=NOIR)
+    d.text((84, 224), "nationale il faut donner pour obtenir une unité de monnaie étrangère.", font=F_SMALL, fill=NOIR)
+
+    boite(d, 60, 300, 600, 570, "LA MONNAIE S'APPRÉCIE",
+          ["Il faut moins de monnaie", "nationale pour la même devise.",
+           "",
+           "Effets :",
+           "• les importations coûtent", "  moins cher ;",
+           "• les exportations deviennent",
+           "  plus chères pour l'acheteur",
+           "  étranger."],
+          fill=VERT_C, bord=VERT, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 300, 1180, 570, "LA MONNAIE SE DÉPRÉCIE",
+          ["Il faut davantage de monnaie", "nationale pour la même devise.",
+           "",
+           "Effets :",
+           "• les exportations deviennent",
+           "  plus compétitives ;",
+           "• les importations renchérissent,",
+           "  ce qui pousse l'inflation."],
+          fill=ROSE_C, bord=ROUGE, interligne=26, font=F_SMALL)
+
+    d.rounded_rectangle([60, 600, 1180, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 622), "Vocabulaire", font=F_BOLD, fill=ORANGE)
+    d.text((84, 658), "Dans un régime de changes fixes, on parle de dévaluation ou de réévaluation ; "
+                      "en changes flottants, de dépréciation ou d'appréciation.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_change.png"))
+    print("Figure écrite : t12_u2_change.png")
+
+
+# ------------------------------------------------------------
+# Figure 28 — Les crises financières
+# ------------------------------------------------------------
+def fig_crises():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les trois formes de crises financières")
+
+    crises = [("CRISE BOURSIÈRE", "Effondrement des cours", "Krach des actions, perte de valeur",
+               "des portefeuilles, faillites en chaîne.", 60, 130, BLEU, BLEU_C),
+              ("CRISE BANCAIRE", "Défaillance des banques", "Retraits massifs, créances irrécouvrables,",
+               "assèchement du crédit à l'économie.", 440, 130, ORANGE, JAUNE_C),
+              ("CRISE DE TAUX DE CHANGE", "Attaque contre la monnaie", "Dépréciation brutale, fuite des capitaux,",
+               "renchérissement de la dette en devises.", 820, 130, ROUGE, ROSE_C)]
+    for t, st, l1, l2, a, b, bord, fond in crises:
+        d.rounded_rectangle([a, b, a + 360, b + 250], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 360, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 360, b + 44), t, F_BOLD, BLANC)
+        d.text((a + 18, b + 56), st, font=F_SMALL, fill=bord)
+        d.text((a + 18, b + 110), l1, font=F_MINI, fill=NOIR)
+        d.text((a + 18, b + 140), l2, font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 420, 1180, 560], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 442), "Le mécanisme de contagion", font=F_BOLD, fill=VIOLET)
+    for i, l in enumerate(["• La défiance d'un marché gagne les autres : les capitaux se retirent en masse ;",
+                           "• les banques, privées de liquidités, cessent de prêter : l'économie réelle est touchée ;",
+                           "• le commerce international se contracte, et la crise devient mondiale."]):
+        d.text((84, 484 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 590, 1180, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 612), "Rôle de la banque centrale", font=F_BOLD, fill=BLEU)
+    d.text((84, 652), "Prêteur en dernier ressort, elle fournit des liquidités et surveille la solidité des "
+                      "établissements pour éviter la panique.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_crises.png"))
+    print("Figure écrite : t12_u2_crises.png")
+
+
+# ------------------------------------------------------------
+# Figure 29 — L'endettement extérieur
+# ------------------------------------------------------------
+def fig_dette():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "L'endettement extérieur et son service")
+
+    d.rounded_rectangle([460, 130, 780, 240], radius=12, fill=ROSE_C, outline=ROUGE, width=4)
+    texte_centre(d, (460, 130, 780, 240), "DETTE EXTÉRIEURE", F_TITLE, ROUGE)
+
+    boite(d, 60, 280, 600, 500, "LE SERVICE DE LA DETTE",
+          ["Somme que le pays doit verser",
+           "chaque année :",
+           "• remboursement du capital ;",
+           "• paiement des intérêts.",
+           "",
+           "Un service élevé absorbe une",
+           "part du budget et réduit les",
+           "moyens consacrés à la santé,",
+           "à l'école et aux routes."],
+          fill=JAUNE_C, bord=ORANGE, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 280, 1180, 500, "EFFETS SUR L'ÉCONOMIE",
+          ["Positifs, si l'emprunt finance",
+           "des investissements rentables :",
+           "• routes, écoles, centrales ;",
+           "• équipements productifs.",
+           "",
+           "Négatifs, s'il finance des",
+           "dépenses courantes :",
+           "• remboursement impossible ;",
+           "• dépendance à l'égard des",
+           "  créanciers."],
+          fill=BLEU_C, bord=BLEU, interligne=26, font=F_SMALL)
+
+    fleche(d, 604, 300, 636, 300, GRIS, 3)
+
+    d.rounded_rectangle([60, 540, 1180, 690], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 562), "Soutenabilité", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["La dette est soutenable lorsque sa croissance reste inférieure à celle des capacités "
+                           "de remboursement du pays.",
+                           "Le surendettement se traite par le rééchelonnement, la réduction de la dette ou "
+                           "l'allongement des délais."]):
+        d.text((84, 606 + i * 30), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u2_dette.png"))
+    print("Figure écrite : t12_u2_dette.png")
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_pib()
@@ -637,3 +1186,16 @@ if __name__ == "__main__":
     fig_politiques()
     fig_soutenabilite()
     fig_environnement()
+    fig_structure()
+    fig_echanges_croissance()
+    fig_libre_echange()
+    fig_absolus()
+    fig_comparatifs()
+    fig_dotation()
+    fig_intra_branche()
+    fig_omc()
+    fig_fmn()
+    fig_ide()
+    fig_change()
+    fig_crises()
+    fig_dette()
