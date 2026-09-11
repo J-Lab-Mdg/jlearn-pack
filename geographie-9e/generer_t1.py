@@ -91,6 +91,10 @@ SAUMON = {
     57: ["rotation", "axe", "Terre", "pôle", "équateur"],
     58: ["ciel", "matin", "midi", "soir", "observation"],
     59: ["temps", "climat", "température", "thermomètre", "pluie"],
+    60: ["vent", "girouette", "flèche", "empennage", "direction"],
+    61: ["fabriquer", "découper", "paille", "tuteur", "orienter"],
+    62: ["thermomètre", "degré", "graduation", "liquide", "sommet"],
+    63: ["courbe", "maximum", "minimum", "relevé", "amplitude"],
 }
 
 # ── Illustration d'ouverture de leçon ───────────────────────────────────────

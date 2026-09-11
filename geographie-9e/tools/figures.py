@@ -1067,3 +1067,141 @@ FIGURES_T3 = {
     "img_s57_a.png": rotation_terre,
     "img_s59_a.png": temps_quil_fait,
 }
+
+
+def girouette(path):
+    """Séance 60 — la girouette : la flèche indique d'où vient le vent."""
+    f = Fig(1100, 700)
+    f.txtc(550, 15, "LA GIROUETTE", size=38, color=BLEU, bold=True)
+    # mât
+    f.rect(540, 250, 560, 600, fill="#8D6E63", stroke=NOIR, width=3)
+    # croix des directions, au pied du mât
+    f.line(550, 620, 550, 520, color=NOIR, width=4)
+    f.line(550, 620, 550, 690, color=NOIR, width=4)
+    f.line(480, 620, 620, 620, color=NOIR, width=4)
+    f.txtc(550, 495, "N", size=30, color=ROUGE, bold=True)
+    f.txtc(550, 690, "S", size=30, color=ROUGE, bold=True)
+    f.txtc(455, 610, "O", size=30, color=ROUGE, bold=True)
+    f.txtc(645, 610, "E", size=30, color=ROUGE, bold=True)
+    # flèche de la girouette, orientée vers l'ouest (le vent vient de l'ouest)
+    f.poly([(360, 300), (470, 270), (470, 330)], fill=ROUGE, stroke=NOIR, width=3)
+    f.rect(470, 292, 620, 308, fill=ROUGE, stroke=NOIR, width=3)
+    f.poly([(620, 275), (690, 255), (690, 300), (620, 300)], fill="#E6A200",
+           stroke=NOIR, width=3)
+    f.poly([(620, 300), (690, 300), (690, 345), (620, 325)], fill="#E6A200",
+           stroke=NOIR, width=3)
+    f.circle(560, 300, 12, fill=NOIR, stroke="none")
+    # le vent qui souffle vers l'est
+    for y in (200, 240):
+        f.line(750, y, 900, y, color="#4FA3D1", width=5)
+    f.poly([(920, 220), (885, 196), (885, 244)], fill="#4FA3D1", stroke="#4FA3D1")
+    f.txtc(830, 150, "le vent", size=28, color="#4FA3D1", bold=True)
+    f.txtc(300, 300, "vient de", size=26, color=NOIR)
+    f.txtc(300, 340, "l'OUEST", size=30, color=ROUGE, bold=True)
+    f.txtc(550, 610, "La flèche se place face au vent : elle indique d'où il "
+                     "vient.", size=24, color=GRIS)
+    return f.save(path)
+
+
+def construction_girouette(path):
+    """Séance 61 — les quatre étapes de la fabrication."""
+    f = Fig(1100, 620)
+    f.txtc(550, 15, "CONSTRUIRE UNE GIROUETTE", size=36, color=BLEU, bold=True)
+    etapes = [("1. Découper", "la flèche et", "l'empennage"),
+              ("2. Fixer sur", "une paille", "avec une épingle"),
+              ("3. Planter", "le tuteur", "bien droit"),
+              ("4. Placer la", "croix N-S-E-O", "au pied")]
+    for i, (l1, l2, l3) in enumerate(etapes):
+        x = 40 + i * 265
+        f.rect(x, 90, x + 240, 420, fill="white", stroke=NOIR, width=3)
+        f.txtc(x + 120, 105, l1, size=26, color=BLEU, bold=True)
+        f.txtc(x + 120, 145, l2, size=26, color=NOIR)
+        f.txtc(x + 120, 185, l3, size=26, color=NOIR)
+        if i == 0:      # flèche et empennage découpés
+            f.poly([(x + 60, 300), (x + 130, 275), (x + 130, 325)], fill=ROUGE,
+                   stroke=NOIR, width=3)
+            f.rect(x + 130, 292, x + 190, 308, fill=ROUGE, stroke=NOIR, width=3)
+            f.poly([(x + 190, 275), (x + 220, 260), (x + 220, 290)], fill="#E6A200",
+                   stroke=NOIR, width=3)
+            f.poly([(x + 190, 310), (x + 220, 310), (x + 220, 340)], fill="#E6A200",
+                   stroke=NOIR, width=3)
+        elif i == 1:    # la paille et l'épingle
+            f.rect(x + 40, 292, x + 200, 312, fill="#F2B705", stroke=NOIR, width=3)
+            f.circle(x + 120, 302, 9, fill=NOIR, stroke="none")
+            f.line(x + 120, 250, x + 120, 292, color=NOIR, width=3)
+        elif i == 2:    # le tuteur planté
+            f.rect(x + 112, 220, x + 128, 400, fill="#8D6E63", stroke=NOIR, width=3)
+            f.line(x + 60, 400, x + 180, 400, color=NOIR, width=4)
+        else:           # la croix au pied
+            f.line(x + 120, 250, x + 120, 380, color=NOIR, width=4)
+            f.line(x + 60, 315, x + 180, 315, color=NOIR, width=4)
+            f.txtc(x + 120, 215, "N", size=26, color=ROUGE, bold=True)
+            f.txtc(x + 120, 385, "S", size=26, color=ROUGE, bold=True)
+            f.txtc(x + 45, 305, "O", size=26, color=ROUGE, bold=True)
+            f.txtc(x + 195, 305, "E", size=26, color=ROUGE, bold=True)
+    f.txtc(550, 450, "Une girouette doit tourner librement : vérifie qu'elle "
+                     "n'accroche pas.", size=26, color=GRIS)
+    f.txtc(550, 500, "On la place dégagée, loin des arbres et des murs.",
+           size=26, color=GRIS)
+    return f.save(path)
+
+
+def thermometre(path):
+    """Séance 62 — lire une température sur un thermomètre."""
+    f = Fig(1100, 620)
+    f.txtc(550, 15, "LIRE UN THERMOMÈTRE", size=38, color=BLEU, bold=True)
+    # corps du thermomètre
+    f.rect(330, 90, 400, 500, fill="white", stroke=NOIR, width=4)
+    f.circle(365, 540, 50, fill=ROUGE, stroke=NOIR, width=4)
+    f.rect(345, 300, 385, 500, fill=ROUGE, stroke="none")
+    # graduations de 0 à 50
+    for deg in range(0, 51, 5):
+        y = 500 - deg * 8
+        grand = deg % 10 == 0
+        f.line(400, y, 400 + (40 if grand else 22), y, color=NOIR, width=3)
+        if grand:
+            f.txt(450, y - 16, "%d °C" % deg, size=26, color=NOIR, bold=True)
+    # lecture : 25 °C
+    f.line(400, 300, 460, 300, color=ROUGE, width=6)
+    f.txt(480, 275, "la température", size=26, color=ROUGE, bold=True)
+    f.txt(480, 315, "lue : 25 °C", size=30, color=ROUGE, bold=True)
+    f.line(470, 300, 400, 300, color=ROUGE, width=4)
+    f.txtc(180, 250, "le liquide monte", size=26, color=NOIR)
+    f.txtc(180, 290, "quand il fait chaud", size=26, color=NOIR)
+    f.txtc(180, 400, "le liquide descend", size=26, color=NOIR)
+    f.txtc(180, 440, "quand il fait froid", size=26, color=NOIR)
+    return f.save(path)
+
+
+def graphique_temperatures(path):
+    """Séance 63 — la courbe des températures au cours d'une journée."""
+    f = Fig(1100, 700)
+    f.txtc(550, 15, "LES TEMPÉRATURES D'UNE JOURNÉE", size=34, color=BLEU,
+           bold=True)
+    # axes
+    x0, y0, x1, y1 = 140, 120, 1020, 560
+    f.line(x0, y0, x0, y1, color=NOIR, width=4)
+    f.line(x0, y1, x1, y1, color=NOIR, width=4)
+    for deg, y in [(10, 500), (15, 440), (20, 380), (25, 320), (30, 260)]:
+        f.line(x0, y, x1, y, color="#E0E0E0", width=2)
+        f.txt(60, y - 16, "%d°" % deg, size=24, color=NOIR)
+    heures = ["6 h", "9 h", "12 h", "15 h", "18 h"]
+    points = [(240, 480), (420, 400), (600, 300), (780, 330), (960, 450)]
+    for (x, y), h in zip(points, heures):
+        f.line(x, y1, x, y1 + 10, color=NOIR, width=3)
+        f.txtc(x, y1 + 15, h, size=24, color=NOIR)
+        f.circle(x, y, 10, fill=ROUGE, stroke="white", width=3)
+    for i in range(len(points) - 1):
+        f.line(points[i][0], points[i][1], points[i + 1][0], points[i + 1][1],
+               color=ROUGE, width=5)
+    f.txtc(600, 275, "le maximum vers 14 h - 15 h", size=24, color=ROUGE, bold=True)
+    f.txtc(240, 520, "le minimum le matin", size=24, color=BLEU, bold=True)
+    f.txtc(550, 640, "La courbe monte le matin, atteint son maximum l'après-midi, "
+                     "puis redescend.", size=26, color=GRIS)
+    return f.save(path)
+
+
+FIGURES_T3["img_s60_a.png"] = girouette
+FIGURES_T3["img_s61_a.png"] = construction_girouette
+FIGURES_T3["img_s62_a.png"] = thermometre
+FIGURES_T3["img_s63_a.png"] = graphique_temperatures

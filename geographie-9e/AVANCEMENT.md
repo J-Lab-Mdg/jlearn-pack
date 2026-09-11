@@ -43,8 +43,8 @@ Production en cours. Ce fichier sert de relais entre les sessions (voir
 
 | N° | Contenu | État |
 |---|---|---|
-| 56 à 59 | ✅ **bloc I : le temps** (jour et nuit, rotation de la Terre, observer le ciel, décrire le temps) | `output/Manuel_Geographie_9e_V2_T1_livraison7.docx` |
-| 60 à 67 | ⏳ suite du bloc I (girouette, thermomètre, graphiques, prévoir le temps) | — |
+| 56 à 63 | ✅ **bloc I : le temps** (jour et nuit, rotation, ciel, temps qu'il fait, girouette, construction, thermomètre, courbe) | `output/Manuel_Geographie_9e_V2_T1_livraison7.docx` |
+| 64 à 67 | ⏳ fin du bloc I (suivi sur un mois, variations dans l'année, tableau et graphique, prévoir le temps) | — |
 | 68 à 76 | ⏳ bloc J : la population | — |
 | 77 à 85 | ⏳ bloc K : la vie au village | — |
 | 86 | révision de l'unité III | ⏳ |
@@ -59,8 +59,8 @@ Production en cours. Ce fichier sert de relais entre les sessions (voir
 
 | N° | Contenu | État |
 |---|---|---|
-| 56 à 59 | ✅ **bloc I : le temps** (jour et nuit, rotation de la Terre, observer le ciel, décrire le temps) | `output/Manuel_Geographie_9e_V2_T1_livraison7.docx` |
-| 60 à 67 | ⏳ suite du bloc I (girouette, thermomètre, graphiques, prévoir le temps) | — |
+| 56 à 63 | ✅ **bloc I : le temps** (jour et nuit, rotation, ciel, temps qu'il fait, girouette, construction, thermomètre, courbe) | `output/Manuel_Geographie_9e_V2_T1_livraison7.docx` |
+| 64 à 67 | ⏳ fin du bloc I (suivi sur un mois, variations dans l'année, tableau et graphique, prévoir le temps) | — |
 | 68 à 76 | ⏳ bloc J : la population | — |
 | 77 à 85 | ⏳ bloc K : la vie au village | — |
 | 86 | révision de l'unité III | ⏳ |
@@ -70,7 +70,7 @@ Production en cours. Ce fichier sert de relais entre les sessions (voir
 | 28-29, 54-55, 86-87 | ⏳ révisions + sujets d'examen (1 par unité) | — |
 | Couverture, avant-propos, mode d'emploi, sommaire interactif, 5 annexes | ⏳ à l'assemblage | — |
 
-Chiffres au dernier pointage : **59 séances, 51 images, ~80 000 mots, 2,40 Mo.**
+Chiffres au dernier pointage : **63 séances, 55 images, ~86 000 mots, 2,50 Mo.**
 
 Règle du 2026-09-11 : **chaque leçon ouvre sur une image.** Sujet concret
 (lever du soleil, école, village, quartier, ville) -> **scène générée** ; sujet

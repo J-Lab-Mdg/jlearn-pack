@@ -6382,3 +6382,488 @@ SEANCES.append(dict(
                 "thermomètre rouge monté, thermomètre bleu descendu. "
                 "Légende : il fait beau, il pleut, il fait chaud, il fait froid.",
 ))
+
+# ═══════════════════════════ SÉANCE 60 ═══════════════════════════
+SEANCES.append(dict(
+    n=60, semaine=19, titre="Le vent et la girouette",
+    objectif="Observer les mouvements d'une girouette.",
+    materiel="Girouette fabriquée ou schéma de girouette, cour de l'école, ardoise "
+             "et craie, cahier.",
+    illustration=("img_s60_a.png",
+                  "Illustration — La girouette : la flèche indique d'où "
+                  "vient le vent.", 700),
+    revision=[("Comment appelle-t-on le mouvement de la Terre ?",
+               "R.A. : La rotation."),
+              ("Quel instrument mesure la température ?", "R.A. : Le "
+               "thermomètre.")],
+    mes=("Quand les arbres se courbent, qu'est-ce qui les pousse ?",
+         "R.A. : Le vent."),
+    analyse=[
+        ("Qu'est-ce que le vent ?", "R.A. : De l'air qui se déplace."),
+        ("Que fait la girouette ?",
+         "R.A. : Elle tourne et se place face au vent."),
+        ("Qu'indique la flèche de la girouette ?",
+         "R.A. : La direction d'où vient le vent."),
+        ("Comment appelle-t-on un vent très fort ?",
+         "R.A. : Une tempête, ou un cyclone selon la saison."),
+        ("Où place-t-on une girouette ?",
+         "R.A. : Dans un endroit dégagé, loin des arbres et des murs.")],
+    synthese="Donc, le vent est de l'air qui se déplace. La girouette sert à "
+             "connaître sa direction : la flèche se place face au vent et "
+             "indique d'où il vient.",
+    application=("Observe le schéma et réponds : a) D'où vient le vent "
+                 "? b) Où va-t-il ? c) Que fait la flèche ? d) Où "
+         "faut-il placer une girouette ?",
+                 "a) De l'Ouest — b) Vers l'Est — c) Elle se place face "
+                 "au vent — d) Dans un endroit dégagé."),
+    evaluation=("1. Réponds par vrai ou faux : a) Le vent est de l'air "
+                "immobile. b) La girouette indique d'où vient le vent. c) La "
+                "flèche se place face au vent. d) On place la girouette contre "
+                "un mur.\n2. Explique en deux phrases le rôle d'une "
+                "girouette.",
+                "1. a) Faux — b) Vrai — c) Vrai — d) Faux.\n"
+                "2. Exemple : « La girouette tourne librement sur son axe. "
+                "Sa flèche indique la direction d'où vient le vent. »"),
+    lecon_titre="Le vent et la girouette",
+    sections=[
+        ("1. Qu'est-ce que le vent ?",
+         "Le vent est de l'air en mouvement. Quand le soleil chauffe le sol, l'air "
+         "chaud monte et l'air plus frais arrive à sa place : ce déplacement "
+         "est le vent. On ne le voit pas, mais on le sent sur la peau et l'on "
+         "observe ses effets : les feuilles bougent, les drapeaux claquent, la fumée "
+         " penche."),
+        ("2. D'où vient le vent ?",
+         "Le vent se nomme d'après l'endroit d'où il vient, et non "
+         "l'endroit où il va. Un vent d'ouest vient de l'ouest et se dirige vers "
+         "l'est. C'est la même convention que pour l'amont et l'aval d'un cours "
+         "d'eau : on regarde toujours le point de départ."),
+        ("3. La girouette",
+         "La girouette est l'instrument qui donne cette direction. Elle est composée "
+         "d'une flèche qui tourne librement autour d'un axe vertical, elle-même "
+         "fixée sur un mât. Sous la flèche, une croix indique les quatre points "
+         "cardinaux : N, S, E et O. L'empennage, à l'arrière, offre plus de prise "
+         "au vent que la pointe : c'est lui qui fait pivoter l'ensemble."),
+        ("4. Lire la girouette",
+         "Pour lire une girouette, on regarde vers quoi pointe la flèche. Elle "
+         "indique l'endroit d'où vient le vent : si la flèche pointe vers "
+         "l'ouest, le vent vient de l'ouest. Il faut installer la girouette dans un "
+         "endroit dégagé, loin des arbres, des murs et des toits, sinon elle "
+         "indique une fausse direction."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Les marins nomment les vents depuis des siècles : l'alizé, qui "
+             "souffle régulièrement vers l'équateur, a guidé les pirogues "
+             "malgaches et les boutres arabes à travers l'océan Indien."),
+    resume=[
+        "Le vent est de l'air qui se déplace.",
+        "Le vent se nomme d'après l'endroit d'où il vient.",
+        "La girouette est une flèche qui tourne librement sur un axe.",
+        "La flèche se place face au vent et indique sa provenance.",
+        "On l'installe dans un endroit dégagé.",
+    ],
+    lexique=[("Vent", "De l'air qui se déplace."),
+             ("Girouette", "Un instrument qui indique d'où vient le vent."),
+             ("Axe", "La tige autour de laquelle la flèche tourne."),
+             ("Empennage", "La partie arrière de la flèche, qui prend le "
+              "vent."),
+             ("Dégagé", "Un endroit sans obstacle autour.")],
+    exercices=[
+        ("Complète avec : vent — girouette — flèche — ouest",
+         ["a) Le …… est de l'air qui se déplace.",
+          "b) La …… indique la direction du vent.",
+          "c) La …… se place face au vent.",
+          "d) Un vent d'…… vient de l'ouest."],
+         ["a) Le vent", "b) La girouette", "c) La flèche", "d) d'ouest"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Le vent se nomme d'après l'endroit où il va.",
+          "b) La girouette tourne librement sur son axe.",
+          "c) L'empennage offre plus de prise au vent que la pointe.",
+          "d) On peut placer une girouette sous un arbre."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Faux"]),
+        ("Relie chaque élément à son rôle.",
+         ["La flèche", "L'empennage", "Le mât", "La croix"],
+         ["Donne les quatre directions", "Indique la direction",
+          "Fait pivoter la flèche", "Porte l'ensemble"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Qu'est-ce que le vent ?",
+          "b) Comment nomme-t-on un vent ?",
+          "c) Que fait la flèche de la girouette ?",
+          "d) Où installe-t-on une girouette ?"],
+         ["a) C'est de l'air qui se déplace.",
+          "b) On le nomme d'après l'endroit d'où il vient.",
+          "c) Elle se place face au vent et indique sa provenance.",
+          "d) Dans un endroit dégagé, loin des obstacles."]),
+    ],
+    consigne_ex5="Dessine une girouette complète : le mât, la flèche tournée vers "
+                 "l'Ouest, l'empennage, la croix N-S-E-O, et les flèches du vent qui "
+                 "souffle vers l'Est.",
+    corrige_ex5="Mât vertical, flèche rouge pointée vers la gauche (O), "
+                "empennage jaune à droite, croix avec N en haut, S en bas, O à "
+                "gauche et E à droite, flèches bleues du vent vers la droite.",
+))
+
+# ═══════════════════════════ SÉANCE 61 ═══════════════════════════
+SEANCES.append(dict(
+    n=61, semaine=19, titre="Construire une girouette",
+    objectif="Construire une girouette et l'utiliser.",
+    materiel="Carton rigide, paille ou tige fine, épingle, tuteur en bois, "
+             "ciseaux, colle, crayon et règle, cahier.",
+    illustration=("img_s61_a.png",
+                  "Illustration — Les quatre étapes de la fabrication.", 700),
+    revision=[("Que fait la flèche d'une girouette ?",
+               "R.A. : Elle se place face au vent."),
+              ("Comment nomme-t-on un vent ?",
+               "R.A. : D'après l'endroit d'où il vient.")],
+    mes=("De quoi a-t-on besoin pour fabriquer une girouette qui tourne "
+          "librement ?",
+         "R.A. : D'une flèche, d'une tige et d'un axe qui tourne sans frotter."),
+    analyse=[
+        ("Dans quoi découpe-t-on la flèche ?", "R.A. : Dans du carton "
+         "rigide."),
+        ("Que met-on sous la flèche ?",
+         "R.A. : Une paille ou une tige fine, pour qu'elle pivote."),
+        ("Comment fixe-t-on l'ensemble ?",
+         "R.A. : Avec une épingle plantée dans le tuteur."),
+        ("Que place-t-on au pied du mât ?",
+         "R.A. : La croix des quatre points cardinaux, orientée au Nord."),
+        ("Comment vérifie-t-on que la girouette tourne bien ?",
+         "R.A. : On souffle dessus : elle doit pivoter sans accrocher.")],
+    synthese="Donc, une girouette se construit en quatre étapes : découper la "
+             "flèche et l'empennage, les fixer sur une paille, planter le tuteur, "
+             "puis orienter la croix des points cardinaux.",
+    application=("Fabrique ta girouette, puis réponds : a) Dans quelle "
+                 "direction pointe la flèche ? b) D'où vient le vent ? c) "
+                 "La girouette tourne-t-elle librement ? d) Que faut-il corriger "
+                 "sinon ?",
+                 "a) Selon l'observation du jour — b) Du côté "
+                 "opposé à la direction de la pointe... non : du côté "
+                 "vers lequel elle pointe — c) Oui, sinon elle frotte — "
+                 "d) Il faut desserrer l'épingle ou redresser le tuteur."),
+    evaluation=("1. Réponds par vrai ou faux : a) La flèche se découpe "
+                "dans du carton. b) La girouette doit être bloquée. c) La "
+                "croix s'oriente au Nord. d) Le tuteur doit être bien "
+                "droit.\n2. Cite les quatre étapes de la fabrication.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Vrai.\n"
+                "2. Découper, fixer sur la paille, planter le tuteur, placer "
+                "la croix."),
+    lecon_titre="Construire une girouette",
+    sections=[
+        ("1. Le matériel",
+         "Peu de matériel suffit : une feuille de carton rigide pour la flèche et "
+         "l'empennage, une paille ou une tige fine qui sert de support, une épingle "
+         "qui fait office d'axe, un tuteur en bois planté dans le sol, des ciseaux "
+         "et de la colle. Avec une bouteille en plastique coupée et une baguette, on "
+         "obtient déjà une girouette solide."),
+        ("2. Les quatre étapes",
+         "Première étape : découper la flèche, avec une pointe à un bout et "
+         "l'empennage à l'autre. Deuxième étape : coller la flèche sur la "
+         "paille, en équilibre. Troisième étape : planter le tuteur bien "
+         "droit dans le sol. Quatrième étape : fixer la paille sur l'épingle "
+         "au sommet du tuteur, sans serrer, pour que tout pivote librement."),
+        ("3. Installer la girouette",
+         "Une fois montée, la girouette doit être orientée. On place au "
+         "pied du tuteur une croix portant les lettres N, S, E et O, et l'on tourne "
+         "la croix jusqu'à ce que le N soit du côté du Nord, trouvé "
+         "avec le soleil à midi ou avec une boussole. On plante ensuite "
+         "l'ensemble dans un endroit dégagé, à hauteur d'œil si "
+         "possible."),
+        ("4. L'utiliser et noter",
+         "Chaque matin, un élève relève la direction indiquée et l'écrit "
+         "dans le carnet d'observation, avec la date et l'heure. Au bout d'une "
+         "semaine, la classe remarque souvent que le vent vient toujours à peu "
+         "près du même côté : c'est le vent dominant de la saison. "
+         "C'est ainsi que les paysans prévoient la pluie."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Au village, on observe le vent depuis toujours : la fumée des "
+             "feux de cuisson, la cime des bambous et le sens des vagues indiquent "
+             "la même chose qu'une girouette, sans instrument."),
+    resume=[
+        "Une girouette se construit avec du carton, une paille, une épingle "
+        "et un tuteur.",
+        "Étape 1 : découper la flèche et l'empennage.",
+        "Étape 2 : coller la flèche sur la paille, en équilibre.",
+        "Étape 3 : planter le tuteur bien droit, dans un endroit "
+        "dégagé.",
+        "Étape 4 : orienter la croix N-S-E-O avec le Nord trouvé à "
+        "midi.",
+    ],
+    lexique=[("Fabriquer", "Construire un objet de ses mains."),
+             ("Découper", "Détacher une forme avec des ciseaux."),
+             ("Équilibre", "État d'un objet également réparti de "
+              "part et d'autre de son appui."),
+             ("Pivoter", "Tourner autour d'un axe."),
+             ("Dominant", "Qui revient le plus souvent.")],
+    exercices=[
+        ("Complète avec : carton — paille — épingle — tuteur",
+         ["a) La flèche se découpe dans du …… rigide.",
+          "b) On la colle sur une …… ou une tige fine.",
+          "c) L'…… sert d'axe, plantée dans le tuteur.",
+          "d) Le …… est planté bien droit dans le sol."],
+         ["a) du carton", "b) sur une paille", "c) L'épingle", "d) Le tuteur"]),
+        ("Réponds par vrai ou faux.",
+         ["a) La girouette doit tourner librement.",
+          "b) On peut la fixer contre un mur.",
+          "c) La croix s'oriente avec le Nord.",
+          "d) On relève la direction chaque jour dans le carnet."],
+         ["a) Vrai", "b) Faux", "c) Vrai", "d) Vrai"]),
+        ("Relie chaque étape à son action.",
+         ["Étape 1", "Étape 2", "Étape 3", "Étape 4"],
+         ["Coller sur la paille", "Planter le tuteur", "Orienter la croix",
+          "Découper la flèche"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Cite le matériel nécessaire.",
+          "b) Pourquoi la girouette doit-elle tourner librement ?",
+          "c) Comment oriente-t-on la croix des points cardinaux ?",
+          "d) Que note-t-on dans le carnet ?"],
+         ["a) Du carton, une paille, une épingle et un tuteur.",
+          "b) Pour que la flèche puisse se placer face au vent.",
+          "c) On place le N du côté du Nord, trouvé à midi.",
+          "d) On note la date, l'heure et la direction du vent."]),
+    ],
+    consigne_ex5="Fabrique ta girouette, installe-la dans la cour, puis relève "
+                 "pendant trois jours la direction du vent et note tes observations "
+                 "dans un tableau.",
+    corrige_ex5="Girouette montée et tournant librement ; tableau à trois "
+                "colonnes (date, heure, direction du vent) rempli sur trois jours ; "
+                "une phrase de conclusion sur le vent dominant.",
+))
+
+# ═══════════════════════════ SÉANCE 62 ═══════════════════════════
+SEANCES.append(dict(
+    n=62, semaine=20, titre="Lire un thermomètre",
+    objectif="Apprendre à lire un thermomètre et vérifier une température.",
+    materiel="Thermomètre de classe, schéma de thermomètre gradué, ardoise et "
+             "craie, cahier.",
+    illustration=("img_s62_a.png",
+                  "Illustration — Le thermomètre et ses graduations.", 700),
+    revision=[("Que mesure un thermomètre ?", "R.A. : La température."),
+              ("Que fait la girouette ?",
+               "R.A. : Elle indique d'où vient le vent.")],
+    mes=("Comment savoir combien il fait de degrés aujourd'hui ?",
+         "R.A. : En lisant un thermomètre."),
+    analyse=[
+        ("Dans quelle unité mesure-t-on la température ?",
+         "R.A. : En degrés Celsius."),
+        ("Que contient le tube du thermomètre ?",
+         "R.A. : Un liquide qui monte et descend."),
+        ("Que fait le liquide quand il fait chaud ?", "R.A. : Il monte."),
+        ("Que fait-il quand il fait froid ?", "R.A. : Il descend."),
+        ("Où place-t-on le thermomètre ?",
+         "R.A. : À l'ombre et à l'abri du vent.")],
+    synthese="Donc, le thermomètre mesure la température en degrés Celsius. Le "
+             "liquide monte quand il fait chaud et descend quand il fait froid. On "
+             "lit la graduation au sommet du liquide.",
+    application=("Sur le schéma, réponds : a) Quelle est la température "
+                 "lue ? b) Où s'arrête le liquide ? c) Que se passe-t-il s'il "
+                 "fait plus chaud ? d) Où place-t-on l'instrument ?",
+                 "a) 25 °C — b) Au niveau du trait 25 — c) Le liquide "
+                 "monte — d) À l'ombre, à l'abri du vent."),
+    evaluation=("1. Réponds par vrai ou faux : a) La température se mesure "
+                "en degrés. b) Le liquide descend quand il fait chaud. c) On "
+                "lit au sommet du liquide. d) On place le thermomètre au "
+                "soleil.\n2. Explique en deux phrases comment lire un "
+                "thermomètre.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Faux.\n"
+                "2. Exemple : « On regarde jusqu'où monte le liquide. On "
+                "lit la graduation qui se trouve au sommet. »"),
+    lecon_titre="Lire un thermomètre",
+    sections=[
+        ("1. À quoi sert un thermomètre ?",
+         "Le thermomètre mesure la température, c'est-à-dire le degré de "
+         "chaleur de l'air ou d'un corps. Il complète la girouette : l'une donne la "
+         "direction du vent, l'autre la chaleur. Ensemble, ils permettent de "
+         "décrire le temps avec des chiffres et pas seulement avec des mots."),
+        ("2. Les graduations",
+         "Le long du tube, des traits marquent les degrés. Les grands traits, "
+         "accompagnés d'un nombre, indiquent les dizaines : 0, 10, 20, 30, 40. Les "
+         "petits traits, entre deux, valent chacun un degré. L'unité est le "
+         "degré Celsius, que l'on écrit °C. En dessous de zéro, les "
+         "nombres deviennent négatifs : il gèle."),
+        ("3. Lire la température",
+         "Pour lire, on place l'œil bien en face du sommet du liquide, à "
+         "la même hauteur : sinon on se trompe d'un ou deux degrés. On lit "
+         "ensuite la graduation qui se trouve juste au niveau du sommet. Sur le "
+         "schéma, le liquide s'arrête au trait 25 : il fait 25 °C."),
+        ("4. Bien placer le thermomètre",
+         "Un thermomètre se place à l'ombre et à l'abri du vent, "
+         "suspendu à l'air libre mais protégé du soleil direct. Au soleil, "
+         "il n'indique plus la température de l'air mais celle de son propre tube "
+         "chauffé : la mesure serait fausse de plusieurs degrés. On attend "
+         "aussi quelques minutes avant de lire, le temps que l'instrument "
+         "s'habitue."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Le degré Celsius doit son nom à Anders Celsius, un savant "
+             "suédois qui a fixé le zéro à la température de la glace "
+             "fondante et le cent à celle de l'eau bouillante."),
+    resume=[
+        "Le thermomètre mesure la température en degrés Celsius.",
+        "Le liquide monte quand il fait chaud et descend quand il fait froid.",
+        "Les grands traits marquent les dizaines, les petits les unités.",
+        "On lit la graduation au sommet du liquide, l'œil à la même "
+        "hauteur.",
+        "On place l'instrument à l'ombre et à l'abri du vent.",
+    ],
+    lexique=[("Température", "Le degré de chaleur, mesuré en "
+              "degrés."),
+             ("Degré Celsius", "L'unité de mesure de la température, "
+              "notée °C."),
+             ("Graduation", "Les traits et les nombres le long du tube."),
+             ("Sommet", "Le point le plus haut du liquide dans le tube."),
+             ("Geler", "Descendre en dessous de zéro degré.")],
+    exercices=[
+        ("Complète avec : température — Celsius — monte — ombre",
+         ["a) Le thermomètre mesure la ……",
+          "b) L'unité est le degré ……",
+          "c) Le liquide …… quand il fait chaud.",
+          "d) On place l'instrument à l'……"],
+         ["a) la température", "b) degré Celsius", "c) le liquide monte",
+          "d) à l'ombre"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Le liquide descend quand il fait chaud.",
+          "b) On lit au sommet du liquide.",
+          "c) On peut laisser le thermomètre en plein soleil.",
+          "d) Les grands traits marquent les dizaines."],
+         ["a) Faux", "b) Vrai", "c) Faux", "d) Vrai"]),
+        ("Relie chaque action à sa raison.",
+         ["Lire à hauteur d'œil", "Placer à l'ombre",
+          "Attendre quelques minutes", "Lire le sommet"],
+         ["Pour que l'instrument s'habitue", "Pour éviter de se tromper",
+          "Pour connaître la température", "Pour ne pas chauffer le tube"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Que mesure un thermomètre ?",
+          "b) Dans quelle unité ?",
+          "c) Où lit-on la température ?",
+          "d) Où place-t-on l'instrument ?"],
+         ["a) Il mesure la température.",
+          "b) En degrés Celsius, notés °C.",
+          "c) On lit la graduation au sommet du liquide.",
+          "d) À l'ombre et à l'abri du vent."]),
+    ],
+    consigne_ex5="Releve la température de la classe trois fois dans la "
+                 "journée (8 h, 12 h, 16 h), note les trois valeurs dans un "
+                 "tableau et dis à quel moment il fait le plus chaud.",
+    corrige_ex5="Tableau à trois lignes avec les valeurs relevées et leur "
+                "heure ; phrase de conclusion : la température la plus élevée "
+                "se trouve en début d'après-midi.",
+))
+
+# ═══════════════════════════ SÉANCE 63 ═══════════════════════════
+SEANCES.append(dict(
+    n=63, semaine=20, titre="Comparer les températures d'une journée",
+    objectif="Comparer les températures au cours d'une même journée.",
+    materiel="Graphique des températures, relevés de la classe, ardoise et "
+             "craie, cahier.",
+    illustration=("img_s63_a.png",
+                  "Illustration — La courbe des températures de la "
+                  "journée.", 700),
+    revision=[("Dans quelle unité mesure-t-on la température ?",
+               "R.A. : En degrés Celsius."),
+              ("Où place-t-on un thermomètre ?", "R.A. : À l'ombre.")],
+    mes=("Fait-il plus chaud le matin ou l'après-midi ?",
+         "R.A. : L'après-midi."),
+    analyse=[
+        ("À quel moment fait-il le plus frais ?",
+         "R.A. : Tôt le matin, avant le lever du soleil."),
+        ("À quel moment fait-il le plus chaud ?",
+         "R.A. : En début d'après-midi, vers 14 h ou 15 h."),
+        ("Pourquoi pas à midi pile ?",
+         "R.A. : Parce que la terre met du temps à chauffer et à "
+         "rendre sa chaleur."),
+        ("Que fait la courbe entre 6 h et 15 h ?", "R.A. : Elle monte."),
+        ("Que fait-elle ensuite ?", "R.A. : Elle redescend.")],
+    synthese="Donc, la température n'est pas la même toute la journée : elle "
+             "est basse le matin, monte jusqu'au début de l'après-midi, puis "
+             "redescend le soir. Le graphique montre cette courbe.",
+    application=("Sur le graphique, réponds : a) Quelle température à "
+                 "6 h ? b) À 12 h ? c) À 15 h ? d) Quel est le moment "
+                 "le plus chaud ?",
+                 "a) Environ 15 °C — b) Environ 25 °C — c) Environ "
+                 "28 °C — d) Vers 15 h."),
+    evaluation=("1. Réponds par vrai ou faux : a) La température est "
+                "constante toute la journée. b) Le maximum se place vers 14 h. "
+                "c) Le minimum se place le matin. d) La courbe descend le soir.\n"
+                "2. Décris la courbe d'une journée en trois phrases.",
+                "1. a) Faux — b) Vrai — c) Vrai — d) Vrai.\n"
+                "2. Exemple : « Le matin, la température est basse. Elle "
+                "monte jusqu'au début de l'après-midi. Puis elle redescend "
+                "le soir. »"),
+    lecon_titre="Les températures d'une journée",
+    sections=[
+        ("1. La température change dans la journée",
+         "La température n'est jamais constante : elle varie sans cesse. Elle est "
+         "basse au lever du jour, parce que la terre a perdu toute la nuit la chaleur "
+         "reçue la veille. Elle monte ensuite, à mesure que le soleil "
+         "chauffe le sol, puis elle redescend quand le soleil se couche."),
+        ("2. Relever à heures fixes",
+         "Pour comparer, il faut relever la température toujours aux mêmes "
+         "heures : 6 h, 9 h, 12 h, 15 h et 18 h par exemple. C'est ce que l'on "
+         "appelle une série de mesures. Sans heures fixes, on ne peut rien "
+         "comparer : une valeur isolée ne veut rien dire."),
+        ("3. Lire la courbe",
+         "Sur le graphique, l'axe horizontal porte les heures et l'axe vertical les "
+         "températures. Chaque relevé devient un point, et les points sont "
+         "reliés par une courbe. La courbe monte le matin, atteint son point le "
+         "plus haut l'après-midi, puis redescend. Lire une courbe est plus "
+         "rapide que lire un tableau : l'œil voit la tendance d'un seul "
+         "coup d'œil."),
+        ("4. Le maximum et le minimum",
+         "On appelle maximum la température la plus élevée de la "
+         "journée, et minimum la plus basse. Le maximum se place vers 14 h ou 15 h, "
+         "et non à midi : la terre accumule la chaleur et la restitue avec un "
+         "décalage, comme une marmite qui continue de chauffer après que l'on "
+         "a éteint le feu. Le minimum, lui, se place juste avant le lever du "
+         "soleil."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "L'écart entre le maximum et le minimum s'appelle l'amplitude "
+             "thermique. Elle est faible sur la côte, où l'océan "
+             "régule la chaleur, et forte sur les hautes terres."),
+    resume=[
+        "La température change tout au long de la journée.",
+        "On relève toujours aux mêmes heures pour pouvoir comparer.",
+        "La courbe monte le matin et redescend le soir.",
+        "Le maximum se place vers 14 h ou 15 h, pas à midi.",
+        "Le minimum se place juste avant le lever du soleil.",
+    ],
+    lexique=[("Relevé", "Une mesure notée à un moment précis."),
+             ("Courbe", "La ligne qui relie les points d'un graphique."),
+             ("Maximum", "La valeur la plus élevée."),
+             ("Minimum", "La valeur la plus basse."),
+             ("Amplitude thermique", "L'écart entre le maximum et le "
+              "minimum.")],
+    exercices=[
+        ("Complète avec : matin — après-midi — maximum — minimum",
+         ["a) Le …… se place juste avant le lever du soleil.",
+          "b) Le …… se place vers 14 h ou 15 h.",
+          "c) Le …… est la valeur la plus élevée.",
+          "d) Le …… est la valeur la plus basse."],
+         ["a) Le minimum", "b) Le maximum", "c) Le maximum", "d) Le minimum"]),
+        ("Réponds par vrai ou faux.",
+         ["a) La température est constante dans la journée.",
+          "b) Le maximum se place à midi pile.",
+          "c) Il faut relever toujours aux mêmes heures.",
+          "d) La courbe descend après 15 h."],
+         ["a) Faux", "b) Faux", "c) Vrai", "d) Vrai"]),
+        ("Relie chaque mot à sa définition.",
+         ["Le maximum", "Le minimum", "La courbe", "L'amplitude"],
+         ["La ligne du graphique", "L'écart entre les deux",
+          "La valeur la plus basse", "La valeur la plus haute"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Quand fait-il le plus chaud dans la journée ?",
+          "b) Pourquoi pas à midi pile ?",
+          "c) Comment doit-on relever les températures ?",
+          "d) Qu'appelle-t-on l'amplitude thermique ?"],
+         ["a) Vers 14 h ou 15 h.",
+          "b) Parce que la terre restitue sa chaleur avec un décalage.",
+          "c) On relève toujours aux mêmes heures.",
+          "d) C'est l'écart entre le maximum et le minimum."]),
+    ],
+    consigne_ex5="Releve la température de la classe à 8 h, 11 h, 14 h et "
+                 "17 h, puis trace la courbe sur un graphique et indique le maximum "
+                 "et le minimum.",
+    corrige_ex5="Quatre points placés aux bonnes heures, courbe qui relie les "
+                "points en montant puis en descendant, flèche sur le point le plus "
+                "haut (maximum) et sur le plus bas (minimum).",
+))
