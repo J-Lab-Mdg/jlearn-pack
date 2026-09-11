@@ -849,6 +849,527 @@ def fig_risques():
     print("Figure écrite : t11_u2_risques.png")
 
 
+# ------------------------------------------------------------
+# Figure 22 — La courbe de demande
+# ------------------------------------------------------------
+def fig_demande():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La courbe de demande : prix et quantité demandée")
+
+    x0, y0, x1, y1 = 170, 560, 760, 140
+    qmax, pmax = 60.0, 2400.0
+
+    def px(q):
+        return x0 + q * (x1 - x0) / qmax
+
+    def py(p):
+        return y0 - p * (y0 - y1) / pmax
+
+    d.line([x0, y0, x1 + 20, y0], fill=NOIR, width=3)
+    d.line([x0, y0, x0, y1 - 20], fill=NOIR, width=3)
+    d.text((x1 - 30, y0 + 16), "Quantité (kg)", font=F_SMALL, fill=NOIR)
+    d.text((30, y1 - 40), "Prix (Ar)", font=F_SMALL, fill=NOIR)
+    for p in (800, 1600, 2400):
+        d.line([x0 - 8, py(p), x0, py(p)], fill=NOIR, width=2)
+        d.text((60, py(p) - 12), "{:,} Ar".format(p).replace(",", " "), font=F_MINI, fill=NOIR)
+    for q in (20, 40, 60):
+        d.line([px(q), y0, px(q), y0 + 8], fill=NOIR, width=2)
+        d.text((px(q) - 18, y0 + 14), str(q) + " kg", font=F_MINI, fill=NOIR)
+
+    pts = [(10, 2000), (20, 1600), (35, 1200), (55, 800)]
+    d.line([(px(q), py(p)) for q, p in pts], fill=BLEU, width=5)
+    for q, p in pts:
+        d.ellipse([px(q) - 8, py(p) - 8, px(q) + 8, py(p) + 8], fill=BLANC, outline=BLEU, width=4)
+    d.text((px(55) + 16, py(800) - 12), "D", font=F_BOLD, fill=BLEU)
+
+    d.text((px(22), py(1900)), "Plus le prix est bas, plus", font=F_MINI, fill=BLEU)
+    d.text((px(22), py(1780)), "la quantité demandée est élevée", font=F_MINI, fill=BLEU)
+
+    tableau(d, 800, 150, [180, 190], [46, 50, 50, 50, 50],
+            ["Prix (Ar)", "Quantité (kg)"],
+            [["2 000", "10"],
+             ["1 600", "20"],
+             ["1 200", "35"],
+             ["800", "55"]])
+
+    d.rounded_rectangle([800, 480, 1180, 570], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((820, 500), "Une baisse de prix déplace le", font=F_MINI, fill=NOIR)
+    d.text((820, 528), "point le long de la courbe.", font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 610, 1180, 680], radius=8, fill=BLEU_C, outline=BLEU, width=2)
+    d.text((80, 630), "La courbe de demande est décroissante : prix et quantité demandée varient en sens inverse.",
+           font=F_SMALL, fill=NOIR)
+    d.text((80, 660), "Seul un changement de prix déplace le point le long de la courbe.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u3_demande.png"))
+    print("Figure écrite : t11_u3_demande.png")
+
+
+# ------------------------------------------------------------
+# Figure 23 — La courbe d'offre
+# ------------------------------------------------------------
+def fig_offre():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La courbe d'offre : prix et quantité offerte")
+
+    x0, y0, x1, y1 = 170, 560, 760, 140
+    qmax, pmax = 60.0, 2400.0
+
+    def px(q):
+        return x0 + q * (x1 - x0) / qmax
+
+    def py(p):
+        return y0 - p * (y0 - y1) / pmax
+
+    d.line([x0, y0, x1 + 20, y0], fill=NOIR, width=3)
+    d.line([x0, y0, x0, y1 - 20], fill=NOIR, width=3)
+    d.text((x1 - 30, y0 + 16), "Quantité (kg)", font=F_SMALL, fill=NOIR)
+    d.text((30, y1 - 40), "Prix (Ar)", font=F_SMALL, fill=NOIR)
+    for p in (800, 1600, 2400):
+        d.line([x0 - 8, py(p), x0, py(p)], fill=NOIR, width=2)
+        d.text((60, py(p) - 12), "{:,} Ar".format(p).replace(",", " "), font=F_MINI, fill=NOIR)
+    for q in (20, 40, 60):
+        d.line([px(q), y0, px(q), y0 + 8], fill=NOIR, width=2)
+        d.text((px(q) - 18, y0 + 14), str(q) + " kg", font=F_MINI, fill=NOIR)
+
+    pts = [(12, 800), (30, 1200), (45, 1600), (60, 2000)]
+    d.line([(px(q), py(p)) for q, p in pts], fill=ORANGE, width=5)
+    for q, p in pts:
+        d.ellipse([px(q) - 8, py(p) - 8, px(q) + 8, py(p) + 8], fill=BLANC, outline=ORANGE, width=4)
+    d.text((px(60) + 16, py(2000) - 12), "O", font=F_BOLD, fill=ORANGE)
+
+    d.text((px(10), py(2200)), "Plus le prix est élevé, plus", font=F_MINI, fill=ORANGE)
+    d.text((px(10), py(2080)), "la production est rentable", font=F_MINI, fill=ORANGE)
+
+    tableau(d, 800, 150, [180, 190], [46, 50, 50, 50, 50],
+            ["Prix (Ar)", "Quantité (kg)"],
+            [["2 000", "60"],
+             ["1 600", "45"],
+             ["1 200", "30"],
+             ["800", "12"]])
+
+    d.rounded_rectangle([800, 480, 1180, 570], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((820, 500), "Coût des facteurs, technique", font=F_MINI, fill=NOIR)
+    d.text((820, 528), "et climat déplacent la courbe.", font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 610, 1180, 680], radius=8, fill=BLEU_C, outline=BLEU, width=2)
+    d.text((80, 630), "La courbe d'offre est croissante : prix et quantité offerte varient dans le même sens.",
+           font=F_SMALL, fill=NOIR)
+    d.text((80, 660), "Une variation du prix du bien déplace le point le long de la courbe, pas la courbe entière.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u3_offre.png"))
+    print("Figure écrite : t11_u3_offre.png")
+
+
+# ------------------------------------------------------------
+# Figure 24 — L'équilibre du marché
+# ------------------------------------------------------------
+def fig_equilibre():
+    W, H = 1240, 720
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La croix offre-demande : le prix d'équilibre")
+
+    x0, y0, x1, y1 = 180, 580, 1120, 150
+    qmax, pmax = 80.0, 2400.0
+
+    def px(q):
+        return x0 + q * (x1 - x0) / qmax
+
+    def py(p):
+        return y0 - p * (y0 - y1) / pmax
+
+    d.line([x0, y0, x1 + 20, y0], fill=NOIR, width=3)
+    d.line([x0, y0, x0, y1 - 20], fill=NOIR, width=3)
+    d.text((x1 - 30, y0 + 16), "Quantité (kg)", font=F_SMALL, fill=NOIR)
+    d.text((30, y1 - 40), "Prix (Ar)", font=F_SMALL, fill=NOIR)
+    for p in (1000, 1500, 2000):
+        d.line([x0 - 8, py(p), x0, py(p)], fill=NOIR, width=2)
+        d.text((40, py(p) - 12), "{:,} Ar".format(p).replace(",", " "), font=F_MINI, fill=NOIR)
+    for q in (40,):
+        d.line([px(q), y0, px(q), y0 + 8], fill=NOIR, width=2)
+        d.text((px(q) - 18, y0 + 14), "40 kg", font=F_MINI, fill=NOIR)
+
+    # zones
+    d.polygon([(px(10), py(2000)), (px(40), py(1500)), (px(70), py(2000))], fill=BLEU_C)
+    d.text((px(36), py(2160)), "EXCÉDENT : l'offre dépasse la demande", font=F_MINI, fill=BLEU)
+    d.polygon([(px(10), py(1000)), (px(40), py(1500)), (px(70), py(1000))], fill=ROSE_C)
+    d.text((px(36), py(950)), "PÉNURIE : la demande dépasse l'offre", font=F_MINI, fill=ROUGE)
+
+    # courbes
+    d.line([px(10), py(2000), px(70), py(1000)], fill=BLEU, width=5)
+    d.line([px(10), py(1000), px(70), py(2000)], fill=ORANGE, width=5)
+    d.text((px(66), py(1000) + 6), "D", font=F_BOLD, fill=BLEU)
+    d.text((px(66), py(2000) - 30), "O", font=F_BOLD, fill=ORANGE)
+
+    # point d'équilibre
+    d.ellipse([px(40) - 11, py(1500) - 11, px(40) + 11, py(1500) + 11], fill=ROUGE)
+    for ly in range(int(py(1500)), int(y0), 12):
+        d.line([px(40), ly, px(40), ly + 6], fill=ROUGE, width=2)
+    for lx in range(x0, int(px(40)), 12):
+        d.line([lx, py(1500), lx + 6, py(1500)], fill=ROUGE, width=2)
+    d.text((px(40) + 18, py(1500) - 34), "Équilibre", font=F_SMALL, fill=ROUGE)
+    d.text((px(40) + 18, py(1500) - 8), "1 500 Ar · 40 kg", font=F_SMALL, fill=ROUGE)
+
+    d.rounded_rectangle([60, 620, 1180, 700], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((80, 642), "Au-dessus du prix d'équilibre, l'excédent pousse les vendeurs à baisser leurs prix.",
+           font=F_SMALL, fill=NOIR)
+    d.text((80, 676), "En dessous, la pénurie pousse le prix à la hausse : c'est le tâtonnement du marché.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u3_equilibre.png"))
+    print("Figure écrite : t11_u3_equilibre.png")
+
+
+# ------------------------------------------------------------
+# Figure 25 — Les conditions de la concurrence pure et parfaite
+# ------------------------------------------------------------
+def fig_cpp():
+    W, H = 1240, 720
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les cinq conditions de la concurrence pure et parfaite")
+
+    conds = [("ATOMICITÉ", "Offreurs et demandeurs très nombreux : aucun ne pèse sur le prix.", BLEU, BLEU_C),
+             ("HOMOGÉNÉITÉ", "Les produits sont identiques : rien ne distingue un vendeur.", VERT, VERT_C),
+             ("TRANSPARENCE", "Chacun connaît les prix pratiqués et la qualité offerte.", ORANGE, JAUNE_C),
+             ("LIBRE ENTRÉE", "Tout producteur peut entrer sur le marché ou en sortir.", VIOLET, VIOLET_C),
+             ("LIBRE CIRCULATION", "Le travail et le capital vont là où ils sont le mieux rémunérés.", ROUGE, ROSE_C)]
+    pos = [(60, 130, 420, 250), (440, 130, 800, 250), (820, 130, 1180, 250),
+           (250, 275, 610, 395), (630, 275, 990, 395)]
+    for (t, txt, bord, fond), (a, b, c, e) in zip(conds, pos):
+        d.rounded_rectangle([a, b, c, e], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, c, b + 42], fill=bord)
+        texte_centre(d, (a, b, c, b + 42), t, F_BOLD, BLANC)
+        for i, l in enumerate(wrap(d, txt, F_MINI, c - a - 30)):
+            d.text((a + 16, b + 54 + i * 24), l, font=F_MINI, fill=NOIR)
+
+    for (a, b, c, e) in pos:
+        cx, cy = (a + c) / 2, (b + e) / 2
+        d.line([cx, cy, 620, 560], fill=GRIS, width=2)
+
+    d.ellipse([620 - 150, 560 - 90, 620 + 150, 560 + 90], fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (470, 500, 770, 540), "PRENEURS DE PRIX", F_BOLD, BLEU)
+    texte_centre(d, (470, 540, 770, 620), "Personne ne fixe le prix :", F_MINI, NOIR)
+    img.save(os.path.join(OUT, "t11_u3_cpp.png"))
+    print("Figure écrite : t11_u3_cpp.png")
+
+
+# ------------------------------------------------------------
+# Figure 26 — Les structures de marché
+# ------------------------------------------------------------
+def fig_structures():
+    W, H = 1240, 680
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les structures de marché, du plus au moins concurrentiel")
+
+    fin = tableau(d, 60, 120, [240, 250, 230, 230], [50, 66, 66, 66, 66],
+                  ["Structure", "Nombre d'offreurs", "Nature des produits", "Pouvoir sur le prix"],
+                  [["Concurrence pure et parfaite", "Très nombreux", "Identiques", "Aucun"],
+                   ["Concurrence monopolistique", "Nombreux", "Différenciés", "Faible"],
+                   ["Oligopole", "Quelques-uns", "Identiques ou différenciés", "Fort"],
+                   ["Monopole", "Un seul", "Aucun substitut", "Total"]])
+
+    d.rounded_rectangle([60, fin + 20, 380, fin + 130], radius=8, fill=VERT_C, outline=VERT, width=2)
+    d.text((80, fin + 40), "Concurrence maximale", font=F_BOLD, fill=VERT)
+    d.text((80, fin + 74), "Prix le plus bas", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([860, fin + 20, 1180, fin + 130], radius=8, fill=ROSE_C, outline=ROUGE, width=2)
+    d.text((880, fin + 40), "Concurrence minimale", font=F_BOLD, fill=ROUGE)
+    d.text((880, fin + 74), "Prix le plus élevé", font=F_SMALL, fill=NOIR)
+
+    fleche(d, 382, fin + 75, 856, fin + 75, GRIS, 4)
+    d.text((520, fin + 44), "le pouvoir de marché grandit, le prix s'élève", font=F_MINI, fill=GRIS)
+
+    d.rounded_rectangle([60, fin + 150, 1180, fin + 220], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((80, fin + 172), "Exemples : marché du riz au village (proche de la CPP), restaurants d'un quartier "
+                            "(concurrence monopolistique), téléphonie mobile (oligopole), "
+                            "distribution d'eau dans une ville (monopole).", font=F_MINI, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u3_structures.png"))
+    print("Figure écrite : t11_u3_structures.png")
+
+
+# ------------------------------------------------------------
+# Figure 27 — Le gain à l'échange
+# ------------------------------------------------------------
+def fig_gain():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le gain à l'échange : le surplus du consommateur")
+
+    x0, y0, x1, y1 = 160, 560, 1100, 150
+    pmax = 2200.0
+
+    def py(p):
+        return y0 - p * (y0 - y1) / pmax
+
+    def px(i):
+        return x0 + 60 + i * 200
+
+    d.line([x0, y0, x1, y0], fill=NOIR, width=3)
+    d.line([x0, y0, x0, y1 - 20], fill=NOIR, width=3)
+    d.text((40, y1 - 40), "Ariary", font=F_SMALL, fill=NOIR)
+    d.text((x1 - 120, y0 + 16), "Acheteurs", font=F_SMALL, fill=NOIR)
+
+    prix = 1500
+    for ly in range(x0, x1, 12):
+        d.line([ly, py(prix), ly + 6, py(prix)], fill=ROUGE, width=2)
+    d.text((x0 - 4, py(prix) - 30), "Prix du marché", font=F_SMALL, fill=ROUGE)
+    d.text((x0 - 4, py(prix) - 6), "1 500 Ar", font=F_SMALL, fill=ROUGE)
+
+    acheteurs = [("A", 2000), ("B", 1700), ("C", 1600), ("D", 1400)]
+    for i, (nom, dispo) in enumerate(acheteurs):
+        cx = px(i)
+        haut = py(dispo)
+        if dispo > prix:
+            d.rectangle([cx - 55, haut, cx + 55, py(prix)], fill=BLEU_C, outline=BLEU, width=3)
+            d.rectangle([cx - 55, py(prix), cx + 55, y0], fill=BLEU, outline=BLEU, width=3)
+            d.text((cx - 46, haut + 14), "+" + str(dispo - prix) + " Ar", font=F_BOLD, fill=BLEU)
+            d.text((cx - 46, py(prix) + 16), "payé :", font=F_MINI, fill=BLANC)
+            d.text((cx - 46, py(prix) + 34), "1 500 Ar", font=F_MINI, fill=BLANC)
+        else:
+            d.rectangle([cx - 55, py(prix), cx + 55, y0], fill=(235, 235, 235), outline=GRIS, width=2)
+            d.text((cx - 52, py(prix) + 30), "n'achète pas", font=F_MINI, fill=GRIS)
+        d.text((cx - 8, y0 + 18), nom, font=F_BOLD, fill=NOIR)
+        d.text((cx - 52, y0 + 46), "prêt à payer", font=F_MINI, fill=NOIR)
+        d.text((cx - 40, y0 + 66), "{:,} Ar".format(dispo).replace(",", " "), font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 640, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((80, 660), "Surplus du consommateur = disposition à payer − prix payé : ici 500 + 200 + 100 = 800 Ar.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u3_gain.png"))
+    print("Figure écrite : t11_u3_gain.png")
+
+
+# ------------------------------------------------------------
+# Figure 28 — Le surplus de production
+# ------------------------------------------------------------
+def fig_surplus():
+    W, H = 1240, 720
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Surplus de production et surplus total à l'équilibre")
+
+    x0, y0, x1, y1 = 180, 580, 1100, 150
+    qmax, pmax = 80.0, 2600.0
+
+    def px(q):
+        return x0 + q * (x1 - x0) / qmax
+
+    def py(p):
+        return y0 - p * (y0 - y1) / pmax
+
+    d.line([x0, y0, x1 + 20, y0], fill=NOIR, width=3)
+    d.line([x0, y0, x0, y1 - 20], fill=NOIR, width=3)
+    d.text((x1 - 30, y0 + 16), "Quantité (kg)", font=F_SMALL, fill=NOIR)
+    d.text((30, y1 - 40), "Prix (Ar)", font=F_SMALL, fill=NOIR)
+
+    # offre et demande
+    d.line([px(0), py(2400), px(80), py(800)], fill=BLEU, width=5)
+    d.line([px(0), py(800), px(80), py(2400)], fill=ORANGE, width=5)
+    d.text((px(72), py(820)), "D", font=F_BOLD, fill=BLEU)
+    d.text((px(72), py(2400) - 34), "O", font=F_BOLD, fill=ORANGE)
+
+    # surplus du consommateur
+    d.polygon([(px(0), py(2400)), (px(40), py(1600)), (px(0), py(1600))], fill=BLEU_C)
+    d.text((px(2), py(2050)), "Surplus du", font=F_MINI, fill=BLEU)
+    d.text((px(2), py(1960)), "consommateur", font=F_MINI, fill=BLEU)
+
+    # surplus de production
+    d.polygon([(px(0), py(1600)), (px(40), py(1600)), (px(0), py(800))], fill=JAUNE_C)
+    d.text((px(2), py(1200)), "Surplus de", font=F_MINI, fill=ORANGE)
+    d.text((px(2), py(1110)), "production", font=F_MINI, fill=ORANGE)
+
+    # équilibre
+    for ly in range(int(py(1600)), int(y0), 12):
+        d.line([px(40), ly, px(40), ly + 6], fill=ROUGE, width=2)
+    for lx in range(x0, int(px(40)), 12):
+        d.line([lx, py(1600), lx + 6, py(1600)], fill=ROUGE, width=2)
+    d.ellipse([px(40) - 11, py(1600) - 11, px(40) + 11, py(1600) + 11], fill=ROUGE)
+    d.text((px(40) + 18, py(1600) - 34), "Équilibre : 1 600 Ar, 40 kg", font=F_SMALL, fill=ROUGE)
+
+    d.rounded_rectangle([60, 620, 580, 710], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((80, 642), "Le surplus total est maximal", font=F_BOLD, fill=VERT)
+    d.text((80, 676), "à la quantité d'équilibre.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([620, 620, 1180, 710], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((640, 642), "Surplus de production = prix reçu − coût de production.", font=F_SMALL, fill=NOIR)
+    d.text((640, 676), "Surplus total = surplus du consommateur + surplus de production.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u3_surplus.png"))
+    print("Figure écrite : t11_u3_surplus.png")
+
+
+# ------------------------------------------------------------
+# Figure 29 — Les imperfections du marché
+# ------------------------------------------------------------
+def fig_imperfections():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les imperfections du marché et leurs conséquences")
+
+    d.text((60, 118), "CAUSES", font=F_BOLD, fill=BLEU)
+    causes = [("Nombre limité d'offreurs", "Oligopole ou monopole : peu de vendeurs en présence.", BLEU, BLEU_C),
+              ("Différenciation des produits", "Marque, qualité, service : une clientèle captive.", VERT, VERT_C),
+              ("Entente entre producteurs", "Accord sur les prix, sur les quantités ou sur le marché.", ORANGE, JAUNE_C),
+              ("Barrières à l'entrée", "Investissement, licence, brevet : pas de nouveaux entrants.", VIOLET, VIOLET_C)]
+    y = 150
+    for t, txt, bord, fond in causes:
+        d.rounded_rectangle([60, y, 560, y + 105], radius=10, fill=fond, outline=bord, width=3)
+        d.text((84, y + 16), t, font=F_BOLD, fill=bord)
+        for i, l in enumerate(wrap(d, txt, F_MINI, 420)):
+            d.text((84, y + 52 + i * 24), l, font=F_MINI, fill=NOIR)
+        y += 120
+
+    fleche(d, 568, 390, 636, 390, GRIS, 4)
+
+    d.text((660, 118), "CONSÉQUENCES", font=F_BOLD, fill=ROUGE)
+    effets = [("Un pouvoir sur le prix", "L'offreur fixe un prix supérieur au coût de production.", ROUGE, ROSE_C),
+              ("Une quantité réduite", "Des échanges avantageux ne se réalisent pas.", ROUGE, ROSE_C),
+              ("Une perte sèche", "La société perd une partie du gain de l'échange.", ROUGE, ROSE_C)]
+    y = 150
+    for t, txt, bord, fond in effets:
+        d.rounded_rectangle([650, y, 1180, y + 125], radius=10, fill=fond, outline=bord, width=3)
+        d.text((674, y + 16), t, font=F_BOLD, fill=bord)
+        for i, l in enumerate(wrap(d, txt, F_SMALL, 460)):
+            d.text((674, y + 52 + i * 26), l, font=F_SMALL, fill=NOIR)
+        y += 140
+
+    d.rounded_rectangle([60, 620, 1180, 690], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((80, 644), "Remèdes : ouvrir le marché à de nouveaux entrants, sanctionner les ententes, "
+                      "contrôler les concentrations.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u3_imperfections.png"))
+    print("Figure écrite : t11_u3_imperfections.png")
+
+
+# ------------------------------------------------------------
+# Figure 31 — Externalités négatives et biens collectifs
+# ------------------------------------------------------------
+def fig_externalites():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Externalité négative et bien collectif")
+
+    d.rounded_rectangle([60, 120, 600, 470], radius=12, fill=ROSE_C, outline=ROUGE, width=3)
+    texte_centre(d, (60, 120, 600, 172), "EXTERNALITÉ NÉGATIVE", F_BOLD, BLANC)
+    d.rectangle([60, 120, 600, 172], fill=ROUGE)
+    texte_centre(d, (60, 120, 600, 172), "EXTERNALITÉ NÉGATIVE", F_BOLD, BLANC)
+    d.rounded_rectangle([90, 200, 300, 300], radius=8, fill=BLANC, outline=ROUGE, width=2)
+    texte_centre(d, (90, 200, 300, 300), "USINE", F_BOLD, NOIR)
+    d.rounded_rectangle([360, 200, 570, 300], radius=8, fill=BLANC, outline=BLEU, width=2)
+    texte_centre(d, (360, 200, 570, 300), "VILLAGE", F_BOLD, NOIR)
+    fleche(d, 304, 250, 354, 250, ROUGE, 4)
+    d.text((300, 210), "eaux usées", font=F_MINI, fill=ROUGE)
+    for i, l in enumerate(wrap(d, "Un coût supporté par d'autres, sans compensation : la rivière polluée, "
+                                  "la fumée, le bruit.", F_SMALL, 480)):
+        d.text((90, 330 + i * 28), l, font=F_SMALL, fill=NOIR)
+    d.text((90, 410), "Conséquence : le marché produit trop.", font=F_BOLD, fill=ROUGE)
+
+    d.rounded_rectangle([640, 120, 1180, 470], radius=12, fill=VERT_C, outline=VERT, width=3)
+    d.rectangle([640, 120, 1180, 172], fill=VERT)
+    texte_centre(d, (640, 120, 1180, 172), "BIEN COLLECTIF", F_BOLD, BLANC)
+    d.rounded_rectangle([670, 200, 1150, 300], radius=8, fill=BLANC, outline=VERT, width=2)
+    texte_centre(d, (670, 200, 1150, 300), "ÉCLAIRAGE PUBLIC, ROUTE, DIGUE", F_BOLD, NOIR)
+    for i, l in enumerate(wrap(d, "Non-rival : l'usage par l'un n'empêche pas celui des autres. "
+                                  "Non-exclusif : personne ne peut en être écarté.", F_SMALL, 480)):
+        d.text((670, 330 + i * 28), l, font=F_SMALL, fill=NOIR)
+    d.text((670, 410), "Conséquence : le privé n'en fournit pas assez.", font=F_BOLD, fill=VERT)
+
+    d.rounded_rectangle([60, 500, 600, 660], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((84, 522), "Remèdes à l'externalité négative", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Taxe correspondant au dommage, normes d'émission, permis, "
+                                  "négociation entre les parties.", F_SMALL, 480)):
+        d.text((84, 562 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 500, 1180, 660], radius=8, fill=BLEU_C, outline=BLEU, width=2)
+    d.text((664, 522), "Réponse pour le bien collectif", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(wrap(d, "La puissance publique finance le bien par l'impôt, car le passager "
+                                  "clandestin profiterait sans payer.", F_SMALL, 480)):
+        d.text((664, 562 + i * 28), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u3_externalites.png"))
+    print("Figure écrite : t11_u3_externalites.png")
+
+
+# ------------------------------------------------------------
+# Figure 32 — Les raisons de l'intervention de l'État
+# ------------------------------------------------------------
+def fig_etat():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les raisons de l'intervention de l'État dans l'économie")
+
+    d.ellipse([470, 300, 770, 460], fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (470, 320, 770, 380), "L'ÉTAT", F_TITLE, BLEU)
+    texte_centre(d, (470, 390, 770, 450), "intérêt général", F_SMALL, NOIR)
+
+    raisons = [("Fournir les biens collectifs", "Routes, écoles, sécurité, justice, monnaie.", 60, 130, VERT, VERT_C),
+               ("Corriger les défaillances", "Externalités, asymétrie d'information, concurrence.", 660, 130, ORANGE, JAUNE_C),
+               ("Réduire les inégalités", "Impôt progressif, prestations, services essentiels.", 60, 500, VIOLET, VIOLET_C),
+               ("Assurer la stabilité", "Croissance, emploi, prix, équilibre extérieur.", 660, 500, ROUGE, ROSE_C)]
+    for t, txt, a, b, bord, fond in raisons:
+        d.rounded_rectangle([a, b, a + 520, b + 130], radius=10, fill=fond, outline=bord, width=3)
+        d.text((a + 22, b + 18), t, font=F_BOLD, fill=bord)
+        for i, l in enumerate(wrap(d, txt, F_SMALL, 470)):
+            d.text((a + 22, b + 60 + i * 28), l, font=F_SMALL, fill=NOIR)
+        cx, cy = (a + 260), (b + 65)
+        d.line([cx, cy, 620, 380], fill=GRIS, width=2)
+
+    img.save(os.path.join(OUT, "t11_u3_etat.png"))
+    print("Figure écrite : t11_u3_etat.png")
+
+
+# ------------------------------------------------------------
+# Figure 33 — Les politiques conjoncturelles
+# ------------------------------------------------------------
+def fig_politiques():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Relance et rigueur : les deux orientations conjoncturelles")
+
+    d.rounded_rectangle([60, 120, 600, 460], radius=12, fill=VERT_C, outline=VERT, width=3)
+    d.rectangle([60, 120, 600, 174], fill=VERT)
+    texte_centre(d, (60, 120, 600, 174), "POLITIQUE DE RELANCE", F_BOLD, BLANC)
+    d.text((84, 196), "Quand l'activité ralentit :", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["• Dépense publique en hausse : travaux, aides",
+                           "• Impôts réduits : plus de revenu disponible",
+                           "• Taux d'intérêt plus bas : crédit moins cher",
+                           "• Objectif : soutenir la demande et l'emploi"]):
+        d.text((84, 240 + i * 34), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 120, 1180, 460], radius=12, fill=ROSE_C, outline=ROUGE, width=3)
+    d.rectangle([640, 120, 1180, 174], fill=ROUGE)
+    texte_centre(d, (640, 120, 1180, 174), "POLITIQUE DE RIGUEUR", F_BOLD, BLANC)
+    d.text((664, 196), "Quand les prix s'emballent :", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(["• Dépense publique réduite",
+                           "• Impôts relevés : demande freinée",
+                           "• Taux d'intérêt relevés : crédit plus cher",
+                           "• Objectif : calmer la demande et les prix"]):
+        d.text((664, 240 + i * 34), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 490, 600, 600], radius=8, fill=BLEU_C, outline=BLEU, width=2)
+    d.text((84, 512), "Politique budgétaire", font=F_BOLD, fill=BLEU)
+    d.text((84, 550), "Dépense publique et impôt :", font=F_SMALL, fill=NOIR)
+    d.text((84, 574), "décidés par le budget de l'État.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 490, 1180, 600], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((664, 512), "Politique monétaire", font=F_BOLD, fill=ORANGE)
+    d.text((664, 550), "Taux d'intérêt et monnaie :", font=F_SMALL, fill=NOIR)
+    d.text((664, 574), "conduits par la banque centrale.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 620, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((80, 644), "Limites : délai d'action de plusieurs mois, risque d'inflation en cas de relance "
+                      "excessive, risque d'endettement.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u3_politiques.png"))
+    print("Figure écrite : t11_u3_politiques.png")
+
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_couts()
@@ -869,3 +1390,14 @@ if __name__ == "__main__":
     fig_valeur()
     fig_taux()
     fig_risques()
+    fig_demande()
+    fig_offre()
+    fig_equilibre()
+    fig_cpp()
+    fig_structures()
+    fig_gain()
+    fig_surplus()
+    fig_imperfections()
+    fig_externalites()
+    fig_etat()
+    fig_politiques()

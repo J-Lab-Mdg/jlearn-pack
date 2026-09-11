@@ -15,9 +15,10 @@ const EB = require("./exercise-bank");
 const { generateSeanceDocContent } = require("./seance-generator");
 const U1 = require("./data-unite1");
 const U2 = require("./data-unite2");
+const U3 = require("./data-unite3");
 const { revisions, examens } = require("./data-evaluations");
 
-const UNITS = [U1, U2];
+const UNITS = [U1, U2, U3];
 const TOTAL = 70;
 const IMG_DIR = path.join(__dirname, "..", "output", "images");
 
