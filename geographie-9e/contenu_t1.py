@@ -5897,3 +5897,488 @@ SEANCES.append(dict(
         ]),
     ],
 ))
+
+# ═══════════════════════════ SÉANCE 56 ═══════════════════════════
+SEANCES.append(dict(
+    n=56, semaine=18, titre="Le jour et la nuit",
+    objectif="Distinguer le jour de la nuit.",
+    materiel="Schéma du jour et de la nuit, globe terrestre ou ballon, lampe de poche, "
+             "ardoise et craie, cahier.",
+    illustration=("img_s56_a.png",
+                  "Illustration — La Terre : une moitié éclairée a le jour, "
+                  "l'autre a la nuit.", 700),
+    revision=[("De quel côté le soleil se lève-t-il ?", "R.A. : À l'Est."),
+              ("Que fait la flèche du Nord sur une carte ?",
+               "R.A. : Elle indique le haut, c'est-à-dire le Nord.")],
+    mes=("Ce matin, quand tu t'es réveillé, faisait-il jour ou nuit ?",
+         "R.A. : Il faisait jour."),
+    analyse=[
+        ("D'où vient la lumière du jour ?", "R.A. : Du soleil."),
+        ("Pourquoi fait-il nuit ?",
+         "R.A. : Parce que notre côté de la Terre n'est plus éclairé."),
+        ("Combien de temps dure un jour et une nuit réunis ?",
+         "R.A. : Vingt-quatre heures."),
+        ("À quel moment le soleil est-il le plus haut ?", "R.A. : À "
+         "midi."),
+        ("Que voit-on dans le ciel la nuit ?",
+         "R.A. : La Lune et les étoiles.")],
+    synthese="Donc, le jour et la nuit se succèdent parce que la Terre tourne. La "
+             "moitié de la Terre tournée vers le soleil a le jour ; l'autre "
+             "moitié a la nuit.",
+    application=("Observe le schéma et réponds : a) Quel côté a le jour "
+                 "? b) Quel côté a la nuit ? c) D'où vient la lumière "
+                 "? d) Combien dure un jour et une nuit ?",
+                 "a) Le côté éclairé, tourné vers le soleil — b) Le "
+                 "côté dans l'ombre — c) Du soleil — d) Vingt-quatre "
+                 "heures."),
+    evaluation=("1. Réponds par vrai ou faux : a) Le jour vient du soleil. "
+                "b) Toute la Terre a le jour en même temps. c) La nuit, notre "
+                "côté est dans l'ombre. d) Un jour et une nuit durent "
+                "vingt-quatre heures.\n2. Explique en deux phrases pourquoi il fait "
+                "nuit.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Vrai.\n"
+                "2. Exemple : « Il fait nuit quand notre côté de la Terre "
+                "n'est plus éclairé par le soleil. Cela arrive parce que la "
+                "Terre tourne sur elle-même. »"),
+    lecon_titre="Le jour et la nuit",
+    sections=[
+        ("1. Le jour et la nuit se succèdent",
+         "Chaque journée commence par le lever du soleil et se termine par son "
+         "coucher. Entre les deux, c'est le jour. Après le coucher vient la nuit, "
+         "puis un nouveau lever. Ce cycle ne s'arrête jamais et il est "
+         "remarquablement régulier : c'est lui qui rythme la vie des hommes, des "
+         "animaux et des plantes depuis toujours."),
+        ("2. D'où vient la lumière du jour ?",
+         "Le jour n'existe que parce que le soleil nous éclaire. Le soleil est une "
+         "étoile, c'est-à-dire un astre qui produit sa propre lumière et "
+         "sa propre chaleur. La Terre, elle, ne brille pas : elle se contente de "
+         "recevoir la lumière du soleil et de la renvoyer. C'est cette "
+         "lumière reçue qui fait le jour."),
+        ("3. Le côté éclairé et le côté sombre",
+         "La Terre est une boule. Quand le soleil l'éclaire, il ne peut en "
+         "éclairer qu'une moitié à la fois : celle qui lui fait face. Cette "
+         "moitié a le jour. L'autre moitié, tournée vers l'espace, reste dans "
+         "l'ombre : elle a la nuit. Il est donc toujours midi quelque part sur la "
+         "Terre, et toujours minuit ailleurs."),
+        ("4. Ce que l'on fait le jour et la nuit",
+         "Le jour, la lumière permet de voir, de travailler aux champs, "
+         "d'aller à l'école et de faire le marché. La nuit, l'obscurité "
+         "arrête les travaux : on rentre les animaux, on dîne en famille et "
+         "l'on dort. Au village, la lampe à pétrole ou le petit panneau "
+         "solaire prolonge un peu la soirée, mais la nuit reste le temps du "
+         "repos."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "La Terre met exactement vingt-quatre heures pour faire un tour complet "
+             "sur elle-même. C'est cette durée que nous appelons un jour. Les "
+             "Malgaches comptent le début du jour au lever du soleil, comme beaucoup "
+             "de peuples de l'océan Indien."),
+    resume=[
+        "Le jour et la nuit se succèdent sans jamais s'arrêter.",
+        "La lumière du jour vient du soleil, qui est une étoile.",
+        "La Terre est une boule : le soleil n'en éclaire qu'une moitié.",
+        "La moitié éclairée a le jour, l'autre a la nuit.",
+        "Le jour est le temps du travail, la nuit celui du repos.",
+    ],
+    lexique=[("Jour", "La période où le soleil éclaire notre côté "
+              "de la Terre."),
+             ("Nuit", "La période où notre côté est dans "
+              "l'ombre."),
+             ("Étoile", "Un astre qui produit sa propre lumière."),
+             ("Éclairer", "Donner de la lumière."),
+             ("Cycle", "Une suite d'événements qui revient toujours dans le "
+              "même ordre.")],
+    exercices=[
+        ("Complète avec : soleil — jour — nuit — ombre",
+         ["a) La lumière du jour vient du ……",
+          "b) Le côté éclairé de la Terre a le ……",
+          "c) Le côté dans l'…… a la nuit.",
+          "d) La …… arrive après le coucher du soleil."],
+         ["a) du soleil", "b) le jour", "c) dans l'ombre", "d) La nuit"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Toute la Terre a le jour en même temps.",
+          "b) Le soleil est une étoile.",
+          "c) La Terre produit sa propre lumière.",
+          "d) Un jour et une nuit durent vingt-quatre heures."],
+         ["a) Faux", "b) Vrai", "c) Faux", "d) Vrai"]),
+        ("Relie chaque moment à ce qu'on y fait.",
+         ["Le matin", "Le midi", "Le soir", "La nuit"],
+         ["On dort", "On se réveille", "On dîne", "On mange"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) D'où vient la lumière du jour ?",
+          "b) Pourquoi fait-il nuit ?",
+          "c) Combien dure un jour et une nuit ?",
+          "d) Que fait-on la nuit au village ?"],
+         ["a) Elle vient du soleil.",
+          "b) Parce que notre côté de la Terre est dans l'ombre.",
+          "c) Ils durent vingt-quatre heures.",
+          "d) On rentre les animaux et l'on dort."]),
+    ],
+    consigne_ex5="Dessine le schéma du jour et de la nuit : le soleil à gauche "
+                 "avec ses rayons, la Terre au centre à moitié éclairée, "
+                 "et écris les mots jour et nuit du bon côté.",
+    corrige_ex5="Soleil jaune avec rayons à gauche, trois flèches vers la Terre, "
+                "cercle Terre à moitié jaune (côté soleil) et à "
+                "moitié sombre. Mots « jour » sur la partie claire et "
+                "« nuit » sur la partie sombre.",
+))
+
+# ═══════════════════════════ SÉANCE 57 ═══════════════════════════
+SEANCES.append(dict(
+    n=57, semaine=18, titre="Le mouvement de la Terre",
+    objectif="Reconnaître la rotation de la Terre.",
+    materiel="Schéma de la rotation, globe terrestre, lampe de poche, ardoise et "
+             "craie, cahier.",
+    illustration=("img_s57_a.png",
+                  "Illustration — La Terre tourne sur elle-même en "
+                  "vingt-quatre heures.", 700),
+    revision=[("D'où vient la lumière du jour ?", "R.A. : Du soleil."),
+              ("Combien dure un jour et une nuit ?", "R.A. : Vingt-quatre heures.")],
+    mes=("Est-ce le soleil qui tourne autour de la Terre, ou le contraire ?",
+         "R.A. : C'est la Terre qui tourne."),
+    analyse=[
+        ("Sur quoi la Terre tourne-t-elle ?",
+         "R.A. : Sur un axe imaginaire qui traverse les pôles."),
+        ("Combien de temps met-elle pour un tour ?", "R.A. : Vingt-quatre "
+         "heures."),
+        ("Comment appelle-t-on ce mouvement ?", "R.A. : La rotation."),
+        ("Dans quel sens la Terre tourne-t-elle ?",
+         "R.A. : D'ouest en est."),
+        ("Pourquoi le soleil semble-t-il se déplacer ?",
+         "R.A. : Parce que c'est nous qui bougeons avec la Terre.")],
+    synthese="Donc, la Terre tourne sur elle-même autour d'un axe : c'est la "
+             "rotation. Elle fait un tour complet en vingt-quatre heures, d'ouest en "
+             "est, et ce mouvement explique le jour et la nuit.",
+    application=("Observe le schéma et réponds : a) Où est l'axe ? b) "
+                 "Combien de temps dure un tour ? c) Comment appelle-t-on ce mouvement "
+                 "? d) Que produit-il ?",
+                 "a) La ligne rouge qui traverse la Terre — b) Vingt-quatre "
+                 "heures — c) La rotation — d) La succession du jour et "
+                 "de la nuit."),
+    evaluation=("1. Réponds par vrai ou faux : a) La Terre tourne sur "
+                "elle-même. b) Un tour dure douze heures. c) La rotation va "
+                "d'ouest en est. d) Le soleil tourne autour de la Terre.\n"
+                "2. Explique en deux phrases le mouvement de la Terre.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Faux.\n"
+                "2. Exemple : « La Terre tourne sur elle-même autour d'un "
+                "axe. Elle fait un tour complet en vingt-quatre heures. »"),
+    lecon_titre="Le mouvement de la Terre",
+    sections=[
+        ("1. La Terre tourne",
+         "La Terre n'est pas immobile : elle tourne sur elle-même, comme une "
+         "toupie. Ce mouvement s'appelle la rotation. On ne le sent pas, parce que nous "
+         "tournons avec elle, exactement à la même vitesse : dans un train qui "
+         "roule doucement, on ne sent pas non plus le mouvement."),
+        ("2. Un tour en vingt-quatre heures",
+         "Un tour complet de la Terre dure vingt-quatre heures. C'est très "
+         "long à notre échelle, et pourtant très rapide : à "
+         "l'équateur, la surface terrestre se déplace à plus de mille six "
+         "cents kilomètres à l'heure. Cette rotation régulière nous donne "
+         "une mesure du temps fiable : le jour."),
+        ("3. Pourquoi le soleil semble se déplacer",
+         "Depuis le sol, on a l'impression que le soleil se lève à l'Est, monte "
+         "dans le ciel et se couche à l'Ouest. En réalité, c'est nous qui "
+         "bougeons avec la Terre, et ce déplacement nous fait voir le soleil "
+         "autrement. C'est le même effet que depuis un train : ce sont les arbres du "
+         "bord qui semblent défiler, alors que c'est le train qui avance."),
+        ("4. Le jour et la nuit expliqués",
+         "La rotation explique enfin le jour et la nuit. En tournant, chaque point de "
+         "la Terre passe d'abord dans la partie éclairée, puis dans la partie "
+         "sombre, puis revient vers la lumière. Le matin, nous entrons dans la "
+         "lumière : c'est le lever du soleil. Le soir, nous en sortons : c'est le "
+         "coucher."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "La Terre ne s'arrête jamais depuis plus de quatre milliards "
+             "d'années. Rien ne la freine dans l'espace, où il n'y a pas "
+             "d'air pour la ralentir."),
+    resume=[
+        "La Terre tourne sur elle-même : c'est la rotation.",
+        "Elle tourne autour d'un axe qui traverse les pôles.",
+        "Un tour complet dure vingt-quatre heures.",
+        "La rotation se fait d'ouest en est.",
+        "Ce mouvement explique la succession du jour et de la nuit.",
+    ],
+    lexique=[("Rotation", "Le mouvement d'un astre qui tourne sur lui-même."),
+             ("Axe", "La ligne imaginaire autour de laquelle la Terre "
+              "tourne."),
+             ("Pôle", "Chacune des deux extrémités de l'axe."),
+             ("Équateur", "La ligne imaginaire qui fait le tour de la Terre "
+              "par le milieu."),
+             ("Immobile", "Qui ne bouge pas.")],
+    exercices=[
+        ("Complète avec : rotation — axe — vingt-quatre — ouest",
+         ["a) La Terre tourne sur elle-même : c'est la ……",
+          "b) Elle tourne autour d'un …… imaginaire.",
+          "c) Un tour complet dure …… heures.",
+          "d) La rotation va d'…… en est."],
+         ["a) la rotation", "b) d'un axe", "c) dure vingt-quatre heures",
+          "d) d'ouest"]),
+        ("Réponds par vrai ou faux.",
+         ["a) La Terre est immobile dans l'espace.",
+          "b) Un tour de la Terre dure vingt-quatre heures.",
+          "c) Le soleil tourne autour de la Terre.",
+          "d) Nous tournons avec la Terre sans le sentir."],
+         ["a) Faux", "b) Vrai", "c) Faux", "d) Vrai"]),
+        ("Relie chaque mot à sa définition.",
+         ["La rotation", "L'axe", "Le pôle", "L'équateur"],
+         ["La ligne du milieu", "Le tour sur soi-même", "La ligne de rotation",
+          "Le bout de l'axe"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Comment appelle-t-on le mouvement de la Terre ?",
+          "b) Combien de temps dure un tour complet ?",
+          "c) Pourquoi ne sentons-nous pas ce mouvement ?",
+          "d) Que produit la rotation ?"],
+         ["a) On l'appelle la rotation.",
+          "b) Il dure vingt-quatre heures.",
+          "c) Parce que nous tournons avec elle à la même vitesse.",
+          "d) Elle produit la succession du jour et de la nuit."]),
+    ],
+    consigne_ex5="Dessine la Terre avec son axe de rotation, la flèche du sens de "
+                 "rotation et le soleil qui l'éclaire. Écris les trois mots : "
+                 "rotation, axe, jour.",
+    corrige_ex5="Cercle Terre traversé d'une ligne rouge oblique (l'axe), "
+                "flèche courbe autour dans le sens d'ouest en est, soleil jaune "
+                "sur le côté. Mots : rotation, axe, jour.",
+))
+
+# ═══════════════════════════ SÉANCE 58 ═══════════════════════════
+SEANCES.append(dict(
+    n=58, semaine=18, titre="Observer le ciel",
+    objectif="Observer les variations du ciel au cours d'une journée.",
+    materiel="Image du ciel aux trois moments du jour, carnet d'observation, ardoise et "
+             "craie, cahier.",
+    illustration=("scene_ciel_journee.png",
+                  "Illustration — Le ciel le matin, à midi et le soir.",
+                  620),
+    revision=[("Comment appelle-t-on le mouvement de la Terre ?",
+               "R.A. : La rotation."),
+              ("De quel côté le soleil se couche-t-il ?", "R.A. : À "
+               "l'Ouest.")],
+    mes=("Le ciel de ce matin ressemblait-il à celui de midi ?",
+         "R.A. : Non, la lumière et les couleurs changent."),
+    analyse=[
+        ("De quelle couleur est le ciel tôt le matin ?",
+         "R.A. : Pâle, souvent jaune doré ou gris."),
+        ("Où est le soleil le matin ?", "R.A. : Bas, du côté de "
+         "l'Est."),
+        ("Où est-il à midi ?", "R.A. : Haut, presque au-dessus de nous."),
+        ("De quelle couleur est le ciel le soir ?", "R.A. : Orange et rouge."),
+        ("Que voit-on dans le ciel la nuit ?",
+         "R.A. : La Lune, les étoiles et parfois des nuages sombres.")],
+    synthese="Donc, le ciel change trois fois par jour : pâle et doré le "
+             "matin, bleu et lumineux à midi, orange et rouge le soir. Ces "
+             "changements suivent toujours le même ordre.",
+    application=("Observe l'image et réponds : a) Que voit-on dans la bande du "
+                 "haut ? b) Dans celle du milieu ? c) Dans celle du bas ? d) "
+                 "Dans quel ordre ces ciels se succèdent-ils ?",
+                 "a) Le matin, soleil bas, ciel doré — b) Midi, soleil "
+                 "haut, ciel bleu — c) Le soir, soleil bas, ciel orange — "
+                 "d) Matin, midi, soir."),
+    evaluation=("1. Réponds par vrai ou faux : a) Le matin, le soleil est "
+                "bas. b) À midi, le soleil est haut. c) Le soir, le ciel est "
+                "bleu. d) Le ciel change au cours de la journée.\n"
+                "2. Décris le ciel du soir en deux phrases.",
+                "1. a) Vrai — b) Vrai — c) Faux — d) Vrai.\n"
+                "2. Exemple : « Le soir, le ciel devient orange et rouge. Le "
+                "soleil est bas, du côté de l'Ouest. »"),
+    lecon_titre="Observer le ciel",
+    sections=[
+        ("1. Le ciel du matin",
+         "Tôt le matin, juste après le lever du soleil, le ciel est pâle : "
+         "jaune doré, parfois gris ou rose. Le soleil est encore bas sur "
+         "l'horizon et sa lumière traverse une épaisse couche d'air, ce qui "
+         "adoucit ses couleurs. Les ombres sont longues et l'air est frais."),
+        ("2. Le ciel de midi",
+         "À midi, le soleil est haut dans le ciel, presque au-dessus de nos "
+         "têtes. Sa lumière traverse moins d'air : le ciel paraît d'un bleu "
+         "franc et les couleurs sont nettes. C'est le moment le plus chaud et le plus "
+         "lumineux de la journée, et celui où les ombres sont les plus "
+         "courtes."),
+        ("3. Le ciel du soir",
+         "Le soir, avant le coucher, le ciel prend des teintes orangées et "
+         "rouges. C'est le plus beau moment pour observer. Le soleil redescend vers "
+         "l'Ouest, les ombres s'allongent de nouveau et la fraîcheur revient. "
+         "Quand le soleil a disparu, le ciel devient bleu sombre, puis noir."),
+        ("4. Tenir un carnet d'observation",
+         "Un élève qui observe note la date, l'heure et ce qu'il voit : la "
+         "couleur du ciel, la place du soleil, la forme des nuages. En relisant ses "
+         "notes au bout d'une semaine, il découvre que le ciel change selon "
+         "l'heure, mais aussi selon les jours : certains sont clairs, d'autres "
+         "couverts. C'est ainsi que travaille un géographe."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Les couleurs orangées du coucher viennent de la poussière et de "
+             "la vapeur d'eau en suspension dans l'air. Elles filtrent la "
+             "lumière du soleil et ne laissent passer que les teintes rouges."),
+    resume=[
+        "Le ciel change au cours de la journée.",
+        "Le matin, le soleil est bas et le ciel est pâle et doré.",
+        "À midi, le soleil est haut et le ciel est bleu.",
+        "Le soir, le soleil redescend et le ciel devient orange et rouge.",
+        "Un carnet d'observation permet de suivre ces changements.",
+    ],
+    lexique=[("Observer", "Regarder avec attention pour comprendre."),
+             ("Horizon", "La ligne où le ciel semble toucher la terre."),
+             ("Teinte", "Une nuance de couleur."),
+             ("Coucher", "Le moment où le soleil disparaît sous "
+              "l'horizon."),
+             ("Carnet d'observation", "Un cahier où l'on note ce que l'on "
+              "voit, jour après jour.")],
+    exercices=[
+        ("Complète avec : matin — midi — soir — nuit",
+         ["a) Le ……, le soleil est bas et le ciel est pâle.",
+          "b) À ……, le ciel est bleu et le soleil est haut.",
+          "c) Le ……, le ciel devient orange et rouge.",
+          "d) La ……, on voit la Lune et les étoiles."],
+         ["a) Le matin", "b) À midi", "c) Le soir", "d) La nuit"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Le ciel ne change jamais au cours d'une journée.",
+          "b) À midi, les ombres sont courtes.",
+          "c) Le soir, le soleil est du côté de l'Ouest.",
+          "d) Le carnet d'observation sert à noter ce que l'on voit."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Vrai"]),
+        ("Relie chaque moment à ce qu'on voit.",
+         ["Le matin", "Le midi", "Le soir", "La nuit"],
+         ["Ciel orange", "Ciel noir étoilé", "Ciel pâle doré",
+          "Ciel bleu franc"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Où est le soleil le matin ?",
+          "b) De quelle couleur est le ciel à midi ?",
+          "c) Que devient le ciel le soir ?",
+          "d) Que note-t-on dans un carnet d'observation ?"],
+         ["a) Il est bas, du côté de l'Est.",
+          "b) Il est d'un bleu franc.",
+          "c) Il devient orange et rouge.",
+          "d) On note la date, l'heure, la couleur du ciel et les nuages."]),
+    ],
+    consigne_ex5="Dessine trois bandes : le ciel du matin, celui de midi et celui du "
+                 "soir, avec le soleil placé au bon endroit dans chacune. "
+                 "Légende les trois moments.",
+    corrige_ex5="Bande 1 : soleil bas à gauche, ciel jaune pâle. Bande 2 : "
+                "soleil en haut au centre, ciel bleu. Bande 3 : soleil bas à "
+                "droite, ciel orange. Légende : matin, midi, soir.",
+))
+
+# ═══════════════════════════ SÉANCE 59 ═══════════════════════════
+SEANCES.append(dict(
+    n=59, semaine=19, titre="Décrire le temps qu'il fait",
+    objectif="Utiliser un vocabulaire simple : il fait beau, il pleut, il fait chaud, "
+             "il fait froid.",
+    materiel="Image des quatre temps, thermomètre, ardoise et craie, cahier.",
+    illustration=("img_s59_a.png",
+                  "Illustration — Il fait beau, il pleut, il fait chaud, il "
+                  "fait froid.", 700),
+    revision=[("Où est le soleil à midi ?",
+               "R.A. : Haut, presque au-dessus de nous."),
+              ("Que note-t-on dans un carnet d'observation ?",
+               "R.A. : La date, l'heure, la couleur du ciel et les nuages.")],
+    mes=("Ce matin, quel temps faisait-il en arrivant à l'école ?",
+         "R.A. : On répond selon le jour : beau, pluvieux, chaud ou frais."),
+    analyse=[
+        ("Que dit-on quand le soleil brille et que le ciel est bleu ?",
+         "R.A. : Il fait beau."),
+        ("Que dit-on quand l'eau tombe des nuages ?", "R.A. : Il pleut."),
+        ("Que dit-on quand la température est élevée ?",
+         "R.A. : Il fait chaud."),
+        ("Que dit-on quand la température est basse ?", "R.A. : Il fait "
+         "froid."),
+        ("Quel instrument mesure la température ?", "R.A. : Le "
+         "thermomètre.")],
+    synthese="Donc, quatre expressions décrivent le temps qu'il fait : il fait "
+             "beau, il pleut, il fait chaud, il fait froid. On les complète en "
+             "observant le ciel et en lisant le thermomètre.",
+    application=("Décris le temps d'aujourd'hui en deux phrases, en employant "
+                 "deux des quatre expressions de la leçon.",
+                 "Exemple : « Aujourd'hui, il fait beau et il fait chaud. "
+                 "Le ciel est bleu et le soleil brille. »"),
+    evaluation=("1. Réponds par vrai ou faux : a) Il fait beau quand le "
+                "soleil brille. b) La pluie tombe des nuages. c) Le thermomètre "
+                "mesure le vent. d) Il fait froid quand la température est "
+                "basse.\n2. Décris le temps d'aujourd'hui en deux phrases.",
+                "1. a) Vrai — b) Vrai — c) Faux — d) Vrai.\n"
+                "2. Exemple : « Aujourd'hui, il pleut et il fait frais. Le "
+                "ciel est gris. »"),
+    lecon_titre="Décrire le temps qu'il fait",
+    sections=[
+        ("1. Le temps et le climat",
+         "Le temps qu'il fait, c'est l'état du ciel et de l'air à un "
+         "moment précis, dans un lieu précis : aujourd'hui, ici, il pleut. Le "
+         "climat, lui, est le temps habituel d'une région observée sur "
+         "plusieurs années. Ne confonds pas les deux : le temps change "
+         "d'un jour à l'autre, le climat reste."),
+        ("2. Il fait beau, il pleut",
+         "Il fait beau quand le soleil brille et que le ciel est dégagé : les "
+         "nuages sont rares ou absents. Il pleut quand l'eau contenue dans les nuages "
+         "tombe sur le sol. Entre les deux, il peut faire gris, avec un ciel couvert de "
+         "nuages sans pluie. Observer les nuages permet souvent de prévoir la "
+         "pluie."),
+        ("3. Il fait chaud, il fait froid",
+         "Il fait chaud quand la température est élevée, et froid quand "
+         "elle est basse. La température se mesure avec un thermomètre, en "
+         "degrés. À Madagascar, la chaleur dépend surtout de "
+         "l'altitude : il fait chaud sur la côte et plus frais sur les hautes terres, "
+         "où les nuits d'hiver peuvent être très froides."),
+        ("4. Décrire avec des phrases complètes",
+         "Pour décrire le temps, une phrase complète vaut mieux qu'un mot "
+         "isolé. On écrit : « Aujourd'hui, il fait beau et il fait "
+         "chaud. » ou : « Ce matin, il pleut et il fait frais. » "
+         "On peut ajouter l'heure et le lieu, comme dans un carnet "
+         "d'observation."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Sur les hautes terres de Madagascar, la température peut descendre "
+             "sous cinq degrés la nuit en juillet, alors qu'il fait encore trente "
+             "degrés l'après-midi. C'est l'écart entre le jour et la nuit "
+             "en altitude."),
+    resume=[
+        "Le temps est l'état du ciel et de l'air à un moment donné.",
+        "Le climat est le temps habituel d'une région sur plusieurs "
+        "années.",
+        "Il fait beau quand le soleil brille ; il pleut quand l'eau tombe des "
+        "nuages.",
+        "Il fait chaud quand la température est élevée, froid quand elle "
+        "est basse.",
+        "On décrit le temps avec des phrases complètes.",
+    ],
+    lexique=[("Temps", "L'état du ciel et de l'air à un moment donné."),
+             ("Climat", "Le temps habituel d'une région, sur plusieurs "
+              "années."),
+             ("Température", "Le degré de chaleur de l'air."),
+             ("Thermomètre", "L'instrument qui mesure la température."),
+             ("Dégagé", "Un ciel sans nuages.")],
+    exercices=[
+        ("Complète avec : beau — pleut — chaud — froid",
+         ["a) Quand le soleil brille, il fait ……",
+          "b) Quand l'eau tombe des nuages, il ……",
+          "c) Quand la température est élevée, il fait ……",
+          "d) Quand elle est basse, il fait ……"],
+         ["a) il fait beau", "b) il pleut", "c) il fait chaud",
+          "d) il fait froid"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Le temps et le climat sont la même chose.",
+          "b) Le thermomètre mesure la température.",
+          "c) Un ciel couvert annonce souvent la pluie.",
+          "d) Il fait plus frais sur les hautes terres que sur la côte."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Vrai"]),
+        ("Relie chaque expression à ce qu'on observe.",
+         ["Il fait beau", "Il pleut", "Il fait chaud", "Il fait froid"],
+         ["Le thermomètre est bas", "Le soleil brille", "L'eau tombe",
+          "Le thermomètre est haut"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Quelle est la différence entre le temps et le climat ?",
+          "b) Quel instrument mesure la température ?",
+          "c) Que dit-on quand l'eau tombe des nuages ?",
+          "d) Comment décrit-on le temps qu'il fait ?"],
+         ["a) Le temps est d'un jour, le climat de plusieurs années.",
+          "b) C'est le thermomètre.",
+          "c) On dit qu'il pleut.",
+          "d) On le décrit avec des phrases complètes."]),
+    ],
+    consigne_ex5="Dessine les quatre panneaux du temps : le soleil pour « il "
+                 "fait beau », le nuage et la pluie, le thermomètre haut, le "
+                 "thermomètre bas. Écris l'expression sous chacun.",
+    corrige_ex5="Quatre cases : soleil avec rayons, nuage gris avec traits de pluie, "
+                "thermomètre rouge monté, thermomètre bleu descendu. "
+                "Légende : il fait beau, il pleut, il fait chaud, il fait froid.",
+))

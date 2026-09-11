@@ -971,3 +971,99 @@ FIGURES_T2["img_s47_a.png"] = types_cours_eau
 FIGURES_T2["img_s48_a.png"] = source_embouchure
 FIGURES_T2["img_s49_a.png"] = amont_aval_rives
 FIGURES_T2["img_s50_a.png"] = reseau_hydro
+
+
+def jour_nuit(path):
+    """Séance 56 — le jour et la nuit : la Terre, moitié éclairée."""
+    f = Fig(1100, 620)
+    f.txtc(550, 15, "LE JOUR ET LA NUIT", size=38, color=BLEU, bold=True)
+    # soleil à gauche
+    f.circle(150, 300, 70, fill="#F2B705", stroke="#E6A200", width=4)
+    for a in range(0, 360, 45):
+        import math
+        x1 = 150 + 88 * math.cos(math.radians(a))
+        y1 = 300 + 88 * math.sin(math.radians(a))
+        x2 = 150 + 130 * math.cos(math.radians(a))
+        y2 = 300 + 130 * math.sin(math.radians(a))
+        f.line(int(x1), int(y1), int(x2), int(y2), color="#F2B705", width=6)
+    # rayons vers la Terre
+    for y in (220, 300, 380):
+        f.line(230, y, 830, y, color="#F2B705", width=4)
+    # la Terre : moitié jour (gauche) / moitié nuit (droite)
+    f.circle(700, 300, 170, fill="#37474F", stroke=NOIR, width=5)
+    f.args += ["-fill", "#FFE082", "-stroke", "none",
+               "-draw", "arc 530,130 870,470 90,270", "-fill", "none"]
+    f.circle(700, 300, 170, fill="none", stroke=NOIR, width=5)
+    f.txtc(620, 250, "jour", size=36, color=NOIR, bold=True)
+    f.txtc(790, 250, "nuit", size=36, color="white", bold=True)
+    f.txtc(700, 545, "La partie éclairée a le jour, l'autre a la nuit.",
+           size=26, color=GRIS)
+    return f.save(path)
+
+
+def rotation_terre(path):
+    """Séance 57 — la Terre tourne sur elle-même en 24 heures."""
+    f = Fig(1100, 620)
+    f.txtc(550, 15, "LA TERRE TOURNE SUR ELLE-MÊME", size=36, color=BLEU, bold=True)
+    f.circle(120, 300, 65, fill="#F2B705", stroke="#E6A200", width=4)
+    f.circle(620, 300, 175, fill="#4FA3D1", stroke=NOIR, width=5)
+    # axe de rotation incliné
+    f.line(620, 90, 620, 510, color=ROUGE, width=5)
+    f.txtc(620, 545, "axe de rotation", size=26, color=ROUGE, bold=True)
+    # continents schématiques
+    f.poly([(560, 220), (640, 200), (700, 260), (640, 330), (560, 300)],
+           fill="#8BC34A", stroke=NOIR, width=3)
+    f.poly([(650, 350), (720, 340), (730, 410), (660, 420)], fill="#8BC34A",
+           stroke=NOIR, width=3)
+    # flèche de rotation
+    f.arc(430, 120, 810, 480, 250, 70, color=ROUGE, width=6)
+    f.poly([(810, 300), (780, 275), (782, 315)], fill=ROUGE, stroke=ROUGE)
+    f.txtc(880, 180, "rotation", size=30, color=ROUGE, bold=True)
+    f.txtc(880, 225, "en 24 heures", size=26, color=NOIR)
+    f.txtc(880, 400, "le jour", size=28, color=NOIR, bold=True)
+    f.txtc(300, 400, "la nuit", size=28, color=NOIR, bold=True)
+    return f.save(path)
+
+
+def temps_quil_fait(path):
+    """Séance 59 — quatre panneaux : beau, pluie, chaud, froid."""
+    f = Fig(1100, 620)
+    f.txtc(550, 15, "DÉCRIRE LE TEMPS QU'IL FAIT", size=36, color=BLEU, bold=True)
+    cases = [("Il fait beau", "#F2B705", 60), ("Il pleut", "#4FA3D1", 320),
+             ("Il fait chaud", ROUGE, 580), ("Il fait froid", BLEU, 840)]
+    for titre, couleur, x in cases:
+        f.rect(x, 90, x + 200, 400, fill="white", stroke=NOIR, width=3)
+        f.txtc(x + 100, 415, titre, size=26, color=couleur, bold=True)
+    # 1. soleil
+    f.circle(160, 220, 52, fill="#F2B705", stroke="#E6A200", width=4)
+    for a in range(0, 360, 45):
+        import math
+        f.line(int(160 + 66 * math.cos(math.radians(a))),
+               int(220 + 66 * math.sin(math.radians(a))),
+               int(160 + 92 * math.cos(math.radians(a))),
+               int(220 + 92 * math.sin(math.radians(a))), color="#F2B705", width=5)
+    # 2. nuage et pluie
+    f.circle(370, 210, 40, fill="#90A4AE", stroke="none")
+    f.circle(410, 195, 48, fill="#90A4AE", stroke="none")
+    f.circle(450, 215, 36, fill="#90A4AE", stroke="none")
+    f.rect(370, 215, 450, 240, fill="#90A4AE", stroke="none")
+    for i in range(5):
+        f.line(378 + i * 18, 260, 372 + i * 18, 320, color="#4FA3D1", width=6)
+    # 3. thermomètre haut
+    f.rect(750, 150, 780, 330, fill="white", stroke=NOIR, width=3)
+    f.circle(765, 355, 26, fill=ROUGE, stroke=NOIR, width=3)
+    f.rect(754, 190, 776, 340, fill=ROUGE, stroke="none")
+    f.txtc(830, 200, "élevée", size=24, color=ROUGE, bold=True)
+    # 4. thermomètre bas
+    f.rect(1010, 150, 1040, 330, fill="white", stroke=NOIR, width=3)
+    f.circle(1025, 355, 26, fill=BLEU, stroke=NOIR, width=3)
+    f.rect(1014, 300, 1036, 340, fill=BLEU, stroke="none")
+    f.txtc(915, 200, "basse", size=24, color=BLEU, bold=True)
+    return f.save(path)
+
+
+FIGURES_T3 = {
+    "img_s56_a.png": jour_nuit,
+    "img_s57_a.png": rotation_terre,
+    "img_s59_a.png": temps_quil_fait,
+}

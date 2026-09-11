@@ -43,7 +43,10 @@ Production en cours. Ce fichier sert de relais entre les sessions (voir
 
 | N° | Contenu | État |
 |---|---|---|
-| 56 à 85 | blocs I à L : le temps, la population, la vie au village | ⏳ à produire |
+| 56 à 59 | ✅ **bloc I : le temps** (jour et nuit, rotation de la Terre, observer le ciel, décrire le temps) | `output/Manuel_Geographie_9e_V2_T1_livraison7.docx` |
+| 60 à 67 | ⏳ suite du bloc I (girouette, thermomètre, graphiques, prévoir le temps) | — |
+| 68 à 76 | ⏳ bloc J : la population | — |
+| 77 à 85 | ⏳ bloc K : la vie au village | — |
 | 86 | révision de l'unité III | ⏳ |
 | 87 | sujet d'examen 9e — unité III | ⏳ |
 | 47 à 53 | ✅ **bloc H : les cours d'eau** — terminé (types, source et embouchure, amont-aval-rives, affluents, usages, bonne gestion, synthèse) | `output/Manuel_Geographie_9e_V2_T1_livraison6.docx` |
@@ -56,7 +59,10 @@ Production en cours. Ce fichier sert de relais entre les sessions (voir
 
 | N° | Contenu | État |
 |---|---|---|
-| 56 à 85 | blocs I à L : le temps, la population, la vie au village | ⏳ à produire |
+| 56 à 59 | ✅ **bloc I : le temps** (jour et nuit, rotation de la Terre, observer le ciel, décrire le temps) | `output/Manuel_Geographie_9e_V2_T1_livraison7.docx` |
+| 60 à 67 | ⏳ suite du bloc I (girouette, thermomètre, graphiques, prévoir le temps) | — |
+| 68 à 76 | ⏳ bloc J : la population | — |
+| 77 à 85 | ⏳ bloc K : la vie au village | — |
 | 86 | révision de l'unité III | ⏳ |
 | 87 | sujet d'examen 9e — unité III | ⏳ |
 | 30 à 53 | ⏳ Unité II (carte, paysage, cours d'eau) | — |
@@ -64,7 +70,7 @@ Production en cours. Ce fichier sert de relais entre les sessions (voir
 | 28-29, 54-55, 86-87 | ⏳ révisions + sujets d'examen (1 par unité) | — |
 | Couverture, avant-propos, mode d'emploi, sommaire interactif, 5 annexes | ⏳ à l'assemblage | — |
 
-Chiffres au dernier pointage : **55 séances (unités I et II closes), 48 images, ~75 000 mots, 2,25 Mo.**
+Chiffres au dernier pointage : **59 séances, 51 images, ~80 000 mots, 2,40 Mo.**
 
 Règle du 2026-09-11 : **chaque leçon ouvre sur une image.** Sujet concret
 (lever du soleil, école, village, quartier, ville) -> **scène générée** ; sujet

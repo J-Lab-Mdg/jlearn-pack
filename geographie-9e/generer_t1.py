@@ -87,6 +87,10 @@ SAUMON = {
     52: ["gérer", "source", "captage", "polluer", "reboiser"],
     53: ["synthèse", "carte", "relief", "cours d'eau", "territoire"],
     54: ["révision", "carte", "relief", "cours d'eau", "gestion"],
+    56: ["jour", "nuit", "soleil", "éclairé", "ombre"],
+    57: ["rotation", "axe", "Terre", "pôle", "équateur"],
+    58: ["ciel", "matin", "midi", "soir", "observation"],
+    59: ["temps", "climat", "température", "thermomètre", "pluie"],
 }
 
 # ── Illustration d'ouverture de leçon ───────────────────────────────────────
@@ -206,7 +210,8 @@ def generer(premiere=1, derniere=None, sortie=SORTIE):
     print("Figures…")
     for nom, fn in list(figures.FIGURES_S1.items()) + list(figures.FIGURES_T1.items()) \
             + list(figures.FIGURES_T1B.items()) + list(figures.FIGURES_T1C.items()) \
-            + list(figures.FIGURES_T2.items()):
+            + list(figures.FIGURES_T2.items()) \
+            + list(figures.FIGURES_T3.items()):
         fn(os.path.join(ASSETS, nom))
 
     d = Doc(template=SQUELETTE)
