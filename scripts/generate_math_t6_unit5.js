@@ -3,7 +3,7 @@ const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   WidthType, AlignmentType, BorderStyle, ShadingType, PageBreak,
   Header, Footer, PageNumber, Bookmark, InternalHyperlink,
-  ImageRun, Math: DocxMath, MathFraction, MathRun
+  ImageRun, TableLayoutType, Math: DocxMath, MathFraction, MathRun
 } = require('docx');
 
 const OUT = 'Manuel_Mathematiques_T6_V2_UNITE5.docx';
@@ -29,7 +29,7 @@ const title = (text, level=1, bookmark) => {
  return new Paragraph({alignment:level===1?AlignmentType.CENTER:AlignmentType.LEFT, spacing:{before:180,after:140}, children});
 };
 const cell = (text,opt={}) => new TableCell({width:opt.width?{size:opt.width,type:WidthType.PERCENTAGE}:undefined, columnSpan:opt.span, rowSpan:opt.rowSpan, shading:opt.fill?{type:ShadingType.CLEAR,fill:opt.fill}:undefined, margins:{top:80,bottom:80,left:80,right:80}, children:[new Paragraph({alignment:opt.align||AlignmentType.LEFT,children:rich(text,{bold:opt.bold,color:opt.color||C.black,size:opt.size||18})})]});
-const table = (rows, columnWidths) => new Table({width:{size:100,type:WidthType.PERCENTAGE},borders,rows,columnWidths});
+const table = (rows, columnWidths) => new Table({width:{size:9600,type:WidthType.DXA},layout:TableLayoutType.FIXED,borders,rows,columnWidths});
 const ficheTitle = () => new Paragraph({alignment:AlignmentType.CENTER,spacing:{before:120,after:120},children:[tr('FICHE DE PRÉPARATION',{bold:true,size:28})]});
 const bullet = text => new Paragraph({bullet:{level:0},spacing:{after:70},children:rich(text)});
 const labelPara = (label,text) => new Paragraph({spacing:{after:90},children:[tr(label,{bold:true,color:C.blue}),...rich(text)]});
@@ -67,6 +67,12 @@ const geoAxes = svgPng('repere-t6', `<svg xmlns="http://www.w3.org/2000/svg" wid
 const geoSolids = svgPng('prismes-t6', `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400"><rect width="100%" height="100%" fill="white"/><text x="30" y="40" font-size="28">Prismes et patrons</text><g fill="#E9F5EC" stroke="#1F4E79" stroke-width="5"><polygon points="90,120 260,120 310,80 140,80"/><polygon points="90,120 90,290 260,290 260,120"/><polygon points="260,120 310,80 310,250 260,290"/><polygon points="470,120 560,70 650,120"/><polygon points="470,120 470,280 650,280 650,120"/><polygon points="650,120 740,70 740,230 650,280"/></g><text x="130" y="340" font-size="25">Pavé droit</text><text x="510" y="340" font-size="25">Prisme triangulaire</text></svg>`);
 sessions.forEach((s,i)=>{ s.img = i < 9 ? geoQuadrilaterals : geoSolids; });
 
+[9,10,11].forEach(i=>sessions[i].scene=fs.readFileSync('assets/math-t6/scenes/scene_volume_eau.png'));
+
+[2,3,4,5,6,7,8].forEach(i=>sessions[i].scene=fs.readFileSync('assets/math-t6/scenes/scene_perimetre_aire_jardin.png'));
+
+[0,1,12].forEach(i=>sessions[i].scene=fs.readFileSync('assets/math-t6/scenes/scene_unites_mesure.png'));
+
 // Independent assertions for all simple numerical answers used above.
 console.assert(11/4===2.75 && 13/5===2.6 && 17/6>2.83 && 17/6<2.84);
 console.assert((2/3)===(8/12) && 5/6>3/4);
@@ -96,8 +102,12 @@ function prep(s,n){
 function lesson(s,n){
  const a=[]; a.push(page(),title(`LEÇON — ${s.t}`,1,`u5_l${n}`));
  // Image immédiatement après le titre, jamais au début de la fiche.
- a.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:140},children:[new ImageRun({data:s.img,transformation:{width:500,height:s.img===grid100?420:180},type:'png'})]}));
- a.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:160},children:[tr(`Support visuel — ${s.t}`,{italics:true,size:19,color:'555555'})]}));
+ if(s.scene){
+  a.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:90},children:[new ImageRun({data:s.scene,transformation:{width:500,height:280},type:'png'})]}));
+  a.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:130},children:[tr('Situation concrète à observer et à faire décrire',{italics:true,size:19,color:'555555'})]}));
+ }
+ a.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:90},children:[new ImageRun({data:s.img,transformation:{width:500,height:s.img===grid100?420:180},type:'png'})]}));
+ a.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:160},children:[tr(`Représentation mathématique — ${s.t}`,{italics:true,size:19,color:'555555'})]}));
  a.push(title('1. Prérequis',2));
  a.push(bullet('Lire et écrire les nombres utilisés dans la situation.'));
  a.push(bullet('Reconnaître les signes =, < et > et expliquer leur sens.'));
