@@ -92,8 +92,8 @@ function s12() {
   const col1 = 210, col2 = 570;
   g += text(400,40,"Symboles normalisés des composants électriques",23,"#1a1a1a","middle","bold");
   // Pile
-  g += pileH(col1,110,"") ; g += line(col1-70,110,col1-8,110) + line(col1+8,110,col1+70,110);
-  g += text(col2,116,"Pile (générateur)",22,"#1a1a1a","start");
+  g += pileH(col1,125,"") ; g += line(col1-70,125,col1-8,125) + line(col1+8,125,col1+70,125);
+  g += text(col2,131,"Pile (générateur)",22,"#1a1a1a","start");
   // Lampe
   g += line(110,190,186,190) + lampe(210,190,22) + line(234,190,310,190);
   g += text(col2,196,"Lampe",22,"#1a1a1a","start");
@@ -110,8 +110,8 @@ function s12() {
   g += line(120,510,180,510) + fusible(210,510,"") + line(240,510,310,510);
   g += text(col2,516,"Fusible",22,"#1a1a1a","start");
   // séparation
-  g += line(90,70,710,70,"#999",1);
-  for (const y of [150,230,310,390,470]) g += line(90,y,710,y,"#DDD",1);
+  g += line(90,62,710,62,"#999",1);
+  for (const y of [170,230,310,390,470]) g += line(90,y,710,y,"#DDD",1);
   return svgDoc(800,560,g);
 }
 
@@ -228,19 +228,19 @@ function s18() {
   g += rect(90,90,150,150,"#FFF",1.5,10);
   g += circle(165,155,38,"#F2E8DC") + circle(150,150,6,"#1a1a1a") + circle(180,150,6,"#1a1a1a");
   g += line(105,105,225,225,"#C00000",7);
-  g += text(165,272,"Ne jamais toucher les trous",18) + text(165,292,"d'une prise de courant",18);
+  g += text(165,272,"Ne jamais toucher les",17) + text(165,292,"trous d'une prise",17);
   // Picto 2 : appareil + eau barré
   g += rect(325,90,150,150,"#FFF",1.5,10);
   g += rect(355,130,60,70,"#DDD") + text(385,172,"~",30);
   g += `<path d="M 440 130 q 10 20 0 34 q -10 -14 0 -34 Z" fill="#1F4E79"/>`;
   g += `<path d="M 452 160 q 10 20 0 34 q -10 -14 0 -34 Z" fill="#1F4E79"/>`;
   g += line(340,105,460,225,"#C00000",7);
-  g += text(400,272,"Jamais d'appareil électrique",18) + text(400,292,"près de l'eau",18);
+  g += text(400,272,"Jamais d'appareil",17) + text(400,292,"électrique près de l'eau",17);
   // Picto 3 : fil dénudé barré
   g += rect(560,90,150,150,"#FFF",1.5,10);
   g += line(580,165,640,165,"#1a1a1a",10) + line(640,165,690,165,"#B87333",4);
   g += line(575,105,695,225,"#C00000",7);
-  g += text(635,272,"Ne jamais toucher",18) + text(635,292,"un fil dénudé",18);
+  g += text(635,272,"Ne jamais toucher",17) + text(635,292,"un fil dénudé",17);
   return svgDoc(800,320,g);
 }
 
@@ -259,7 +259,7 @@ function s19() {
   g += `<path d="M 360 90 l 12 -8 l 0 16 Z" fill="#C00000"/>` + `<path d="M 420 90 l -12 -8 l 0 16 Z" fill="#C00000"/>`;
   // lampe grillée : croix cassée
   g += lampe(680,190,22) + line(660,168,700,212,"#C00000",3);
-  g += text(745,196,"Lampe grillée",19);
+  g += text(680,240,"Lampe grillée",19);
   g += text(400,340,"Deux pannes courantes : le fil coupé (le circuit est ouvert)",21);
   g += text(400,366,"et la lampe grillée (son filament est cassé).",21);
   return svgDoc(800,400,g);
