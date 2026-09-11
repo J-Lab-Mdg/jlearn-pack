@@ -115,7 +115,7 @@ function buildFiche(S, rootDir) {
     })(),
     documentation: S.documentation,
     support: S.support,
-    classe: "T6",
+    classe: "T7",
     seanceNo: `${S.numero} / ${S.total}`,
   };
 

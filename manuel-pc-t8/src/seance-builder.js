@@ -108,7 +108,11 @@ function buildFiche(S, rootDir) {
     sousDiscipline: "Physique-Chimie",
     theme: S.theme,
     titre: S.titre,
-    objectif: "À la fin de la séance, l'apprenant sera capable d'" + S.objectif + ".",
+    objectif: (() => {
+      const o = S.objectif.trim();
+      const el = /^[aeéèêiouyh]/i.test(o) ? "d'" : "de ";
+      return "À la fin de la séance, l'apprenant sera capable " + el + o + ".";
+    })(),
     documentation: S.documentation,
     support: S.support,
     classe: "T8",
