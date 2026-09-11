@@ -1604,6 +1604,274 @@ def fig_nouvelles_formes():
     img.save(os.path.join(OUT, "t12_u3_nouvelles_formes.png"))
     print("Figure écrite : t12_u3_nouvelles_formes.png")
 
+
+# ------------------------------------------------------------
+# Figure 46 — Les sources de pouvoir dans l'entreprise privée
+# ------------------------------------------------------------
+def fig_pouvoir_entreprise():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les sources de pouvoir dans l'entreprise privée")
+
+    d.rounded_rectangle([430, 125, 810, 225], radius=12, fill=BLEU, outline=BLEU, width=3)
+    texte_centre(d, (430, 125, 810, 225), "POUVOIR DE DÉCISION", F_BOLD, BLANC)
+
+    sources = [("LA PROPRIÉTÉ DU CAPITAL", "Les associés ou actionnaires", "détiennent le capital : ils", "désignent les dirigeants et", "approuvent les comptes.", 60, 270, BLEU, BLEU_C),
+               ("LA COMPÉTENCE", "Celui qui maîtrise un savoir", "rare — technique, commercial,", "juridique — pèse sur les", "décisions de son domaine.", 450, 270, VERT, VERT_C),
+               ("LA POSITION HIÉRARCHIQUE", "Le dirigeant et les cadres", "décident en vertu de la place", "qu'ils occupent dans", "l'organigramme.", 840, 270, ORANGE, JAUNE_C)]
+    for t, l1, l2, l3, l4, a, b, bord, fond in sources:
+        d.rounded_rectangle([a, b, a + 340, b + 210], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        for i, l in enumerate(wrap(d, t, F_BOLD, 320)):
+            texte_centre(d, (a, b + 8 + i * 26, a + 340, b + 34 + i * 26), l, F_BOLD, BLANC)
+        for i, l in enumerate([l1, l2, l3, l4]):
+            texte_centre(d, (a, b + 76 + i * 28, a + 340, b + 104 + i * 28), l, F_MINI, NOIR)
+        d.line([a + 170, b + 108, 620, 180], fill=GRIS, width=2)
+
+    d.rounded_rectangle([60, 520, 1180, 690], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 542), "Ce qu'il faut retenir", font=F_BOLD, fill=VIOLET)
+    for i, l in enumerate(["• Le pouvoir ne se confond pas avec l'autorité : on peut être écouté sans être chef.",
+                           "• Dans une entreprise individuelle, la propriété et la direction se confondent ; dans une société, elles se séparent.",
+                           "• La compétence peut donner un pouvoir réel sans position hiérarchique : c'est le pouvoir d'expertise."]):
+        d.text((84, 586 + i * 30), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u4_pouvoir_entreprise.png"))
+    print("Figure écrite : t12_u4_pouvoir_entreprise.png")
+
+
+# ------------------------------------------------------------
+# Figure 48 — Les styles de direction
+# ------------------------------------------------------------
+def fig_styles_direction():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les principaux styles de direction")
+
+    styles = [("STYLE DIRECTIF", "Le chef décide seul et", "donne des ordres précis.", "Utile en situation d'urgence.", 60, 130, ROUGE, ROSE_C),
+              ("STYLE PERSUASIF", "Le chef décide, puis", "explique sa décision pour", "obtenir l'adhésion.", 450, 130, ORANGE, JAUNE_C),
+              ("STYLE PARTICIPATIF", "Le chef consulte l'équipe", "avant de décider : les", "idées de chacun comptent.", 840, 130, VERT, VERT_C),
+              ("STYLE DÉLÉGATIF", "Le chef fixe l'objectif et", "laisse l'équipe choisir", "les moyens d'y parvenir.", 60, 420, BLEU, BLEU_C)]
+    for t, l1, l2, l3, a, b, bord, fond in styles:
+        d.rounded_rectangle([a, b, a + 340, b + 210], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 340, b + 44), t, F_BOLD, BLANC)
+        for i, l in enumerate([l1, l2, l3]):
+            texte_centre(d, (a, b + 76 + i * 30, a + 340, b + 106 + i * 30), l, F_MINI, NOIR)
+
+    d.rounded_rectangle([450, 420, 1180, 630], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((474, 442), "Le continuum du pouvoir", font=F_BOLD, fill=VIOLET)
+    d.line([500, 530, 1130, 530], fill=GRIS, width=3)
+    for x, lab in [(500, "décide seul"), (700, "explique"), (900, "consulte"), (1130, "délègue")]:
+        d.ellipse([x - 9, 521, x + 9, 539], fill=VIOLET)
+        texte_centre(d, (x - 70, 544, x + 70, 576), lab, F_MINI, NOIR)
+    for i, l in enumerate(wrap(d, "Du style le plus autoritaire au style le plus souple : aucun point de la ligne n'est meilleur en soi.",
+                               F_MINI, 700)):
+        d.text((474, 588 + i * 22), l, font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 673), "Le bon style dépend de la situation, de l'équipe et de l'urgence : c'est pourquoi il n'existe pas de style idéal.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u4_styles_direction.png"))
+    print("Figure écrite : t12_u4_styles_direction.png")
+
+
+# ------------------------------------------------------------
+# Figure 49 — Les facteurs qui influencent le style de direction
+# ------------------------------------------------------------
+def fig_facteurs_style():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Ce qui oriente le choix d'un style de direction")
+
+    boite(d, 60, 130, 600, 480, "LES FACTEURS LIÉS AU DIRIGEANT",
+          ["• Sa personnalité et son tempérament ;",
+           "• sa formation et son expérience ;",
+           "• l'idée qu'il se fait de la motivation",
+           "  des personnes ;",
+           "• la confiance qu'il accorde à l'équipe."],
+          fill=BLEU_C, bord=BLEU, interligne=28, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 480, "LES FACTEURS LIÉS À L'ORGANISATION",
+          ["• Sa taille : une grande structure",
+           "  formalise davantage ;",
+           "• son activité : la sécurité impose",
+           "  des procédures strictes ;",
+           "• son histoire et sa culture ;",
+           "• l'urgence et la stabilité du contexte."],
+          fill=VERT_C, bord=VERT, interligne=28, font=F_SMALL)
+
+    fleche(d, 604, 300, 636, 300, GRIS, 3)
+
+    d.rounded_rectangle([60, 520, 1180, 630], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 542), "Les facteurs liés aux collaborateurs", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Leur niveau de qualification : des tâches complexes appellent davantage de délégation ;",
+                           "• leur ancienneté et leur habitude de travailler ensemble ;",
+                           "• leur attente : certains souhaitent être guidés, d'autres veulent décider."]):
+        d.text((84, 586 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((84, 673), "Conclusion : le style efficace est celui qui s'adapte à la situation — il n'existe pas de style de direction idéal.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u4_facteurs_style.png"))
+    print("Figure écrite : t12_u4_facteurs_style.png")
+
+
+# ------------------------------------------------------------
+# Figure 50 — L'identité de l'organisation et le processus stratégique
+# ------------------------------------------------------------
+def fig_identite_orga():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "L'identité de l'organisation, point de départ du diagnostic")
+
+    d.rounded_rectangle([440, 125, 800, 235], radius=12, fill=BLEU, outline=BLEU, width=3)
+    texte_centre(d, (440, 125, 800, 235), "IDENTITÉ", F_BOLD, BLANC)
+
+    composantes = [("LA MISSION", "Ce que l'organisation fait", "et pour qui elle le fait.", 60, 280, BLEU, BLEU_C),
+                   ("LES VALEURS", "Les principes qu'elle", "affirme et respecte.", 450, 280, VERT, VERT_C),
+                   ("LE MÉTIER", "Le savoir-faire précis", "qu'elle maîtrise.", 840, 280, ORANGE, JAUNE_C),
+                   ("LES RESSOURCES", "Moyens humains, matériels", "et financiers mobilisés.", 255, 470, VIOLET, VIOLET_C)]
+    for t, l1, l2, a, b, bord, fond in composantes:
+        d.rounded_rectangle([a, b, a + 340, b + 160], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 340, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 340, b + 44), t, F_BOLD, BLANC)
+        texte_centre(d, (a, b + 60, a + 340, b + 100), l1, F_MINI, NOIR)
+        texte_centre(d, (a, b + 100, a + 340, b + 140), l2, F_MINI, NOIR)
+        d.line([a + 170, b + 80, 620, 180], fill=GRIS, width=2)
+
+    d.rounded_rectangle([645, 470, 985, 630], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((669, 492), "Pourquoi c'est le départ", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Toute stratégie part de l'identité : une organisation qui ne sait pas ce qu'elle est choisit mal ce qu'elle veut devenir.",
+                               F_MINI, 290)):
+        d.text((669, 536 + i * 24), l, font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 673), "Ordre du processus stratégique : identité, diagnostic interne et externe, objectifs, choix stratégique, mise en œuvre.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u4_identite.png"))
+    print("Figure écrite : t12_u4_identite.png")
+
+
+# ------------------------------------------------------------
+# Figure 51 — Le diagnostic stratégique SWOT (FFOM)
+# ------------------------------------------------------------
+def fig_swot():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le diagnostic stratégique : la matrice SWOT (FFOM)")
+
+    x0, y0, x1, y1 = 120, 160, 1120, 560
+    xm, ym = (x0 + x1) // 2, (y0 + y1) // 2
+    d.line([xm, y0, xm, y1], fill=NOIR, width=3)
+    d.line([x0, ym, x1, ym], fill=NOIR, width=3)
+    d.rectangle([x0, y0, x1, y1], outline=NOIR, width=3)
+
+    d.text((x0 + 40, y0 - 32), "INTERNE — ce que l'organisation est", font=F_SMALL, fill=NOIR)
+    d.text((xm + 40, y0 - 32), "EXTERNE — ce qui l'entoure", font=F_SMALL, fill=NOIR)
+    d.text((x0 - 70, y0 + 26), "FAVORABLE", font=F_SMALL, fill=NOIR)
+    d.text((x0 - 70, ym + 26), "DÉFAVORABLE", font=F_SMALL, fill=NOIR)
+
+    def case(xx, yy, couleur, titre, lignes):
+        d.rectangle([xx, yy, xx + 500, yy + 200], fill=couleur)
+        d.text((xx + 22, yy + 18), titre, font=F_BOLD, fill=NOIR)
+        for i, l in enumerate(lignes):
+            d.text((xx + 22, yy + 62 + i * 30), l, font=F_SMALL, fill=NOIR)
+        d.rectangle([xx, yy, xx + 500, yy + 200], outline=NOIR, width=2)
+
+    case(x0, y0, VERT_C, "FORCES — Strengths",
+         ["Compétences rares, équipe formée,", "matériel fiable, trésorerie saine,", "bonne réputation locale."])
+    case(xm, y0, BLEU_C, "OPPORTUNITÉS — Opportunities",
+         ["Marché en croissance, besoin nouveau,", "aide publique, partenariat possible,", "technologie disponible."])
+    case(x0, ym, JAUNE_C, "FAIBLESSES — Weaknesses",
+         ["Équipement vétuste, personnel peu", "formé, dépendance à un fournisseur,", "coûts élevés."])
+    case(xm, ym, ROSE_C, "MENACES — Threats",
+         ["Concurrence nouvelle, hausse des prix", "des intrants, réglementation plus", "strict, changement de la demande."])
+
+    d.rounded_rectangle([60, 600, 1180, 690], radius=10, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 622), "Comment l'utiliser", font=F_BOLD, fill=VIOLET)
+    d.text((84, 664), "Croiser les cases : une force permet de saisir une opportunité ; une faiblesse exposée à une menace appelle une action urgente.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u4_swot.png"))
+    print("Figure écrite : t12_u4_swot.png")
+
+
+# ------------------------------------------------------------
+# Figure 52 — Les objectifs stratégiques selon les organisations
+# ------------------------------------------------------------
+def fig_objectifs_strategiques():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La formulation des objectifs stratégiques")
+
+    boite(d, 60, 130, 600, 400, "L'ENTREPRISE PRIVÉE",
+          ["Objectifs : rentabilité, part de", "marché, croissance du chiffre", "d'affaires.",
+           "Cas du groupe : les objectifs se", "fixent à deux niveaux, celui de", "la maison mère et celui des", "filiales."],
+          fill=BLEU_C, bord=BLEU, interligne=26, font=F_SMALL)
+
+    boite(d, 640, 130, 1180, 400, "L'ORGANISATION PUBLIQUE",
+          ["Objectifs : service rendu à la", "population, respect des règles,", "équilibre budgétaire.",
+           "La décision s'inscrit dans un", "cadre légal et politique", "qui la dépasse."],
+          fill=VERT_C, bord=VERT, interligne=26, font=F_SMALL)
+
+    boite(d, 350, 440, 890, 640, "L'ASSOCIATION",
+          ["Objectifs : répondre à un besoin", "collectif, défendre une cause,", "mobiliser des bénévoles ; le", "critère est l'utilité sociale,", "non le profit."],
+          fill=JAUNE_C, bord=ORANGE, interligne=26, font=F_SMALL)
+
+    d.rounded_rectangle([60, 655, 1180, 690], radius=8, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.text((84, 673), "Un objectif stratégique doit être clair, mesurable et atteignable : sinon il ne guide aucune décision.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u4_objectifs.png"))
+    print("Figure écrite : t12_u4_objectifs.png")
+
+
+# ------------------------------------------------------------
+# Figure 53 — La démarche stratégique et sa mise en œuvre
+# ------------------------------------------------------------
+def fig_demarche_strategie():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La démarche stratégique : de l'analyse à la mise en œuvre")
+
+    etapes = [("DIAGNOSTIC", "identifier les forces,", "faiblesses, opportunités,", "menaces"),
+              ("OBJECTIFS", "fixer ce que", "l'organisation veut", "atteindre"),
+              ("CHOIX", "retenir une voie :", "croissance, spécialisation,", "diversification"),
+              ("MOYENS", "affecter les ressources :", "hommes, matériel, argent,", "compétences"),
+              ("SUIVI", "mesurer les écarts et", "corriger la trajectoire", "si nécessaire")]
+    larg, hau = 200, 260
+    x = 60
+    for i, (t, l1, l2, l3) in enumerate(etapes):
+        couleurs = [(BLEU, BLEU_C), (VERT, VERT_C), (ORANGE, JAUNE_C), (VIOLET, VIOLET_C), (ROUGE, ROSE_C)]
+        bord, fond = couleurs[i]
+        d.rounded_rectangle([x, 150, x + larg, 150 + hau], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([x, 150, x + larg, 194], fill=bord)
+        texte_centre(d, (x, 150, x + larg, 194), t, F_BOLD, BLANC)
+        for j, l in enumerate([l1, l2, l3]):
+            texte_centre(d, (x, 220 + j * 30, x + larg, 250 + j * 30), l, F_MINI, NOIR)
+        if i < 4:
+            fleche(d, x + larg + 4, 280, x + larg + 34, 280, GRIS, 3)
+        x += larg + 36
+
+    d.rounded_rectangle([60, 450, 1180, 600], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 472), "Les ressources mobilisées", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Ressources humaines : effectifs, compétences, formation ;",
+                           "• ressources matérielles : locaux, équipements, réseaux ;",
+                           "• ressources financières : fonds propres, emprunt, subventions ;",
+                           "• ressources immatérielles : savoir-faire, réputation, relations."]):
+        d.text((84, 516 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 625, 1180, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 647), "À retenir", font=F_BOLD, fill=BLEU)
+    d.text((84, 678), "La stratégie n'est pas un document : c'est un enchaînement cohérent entre ce que l'on veut et ce dont on dispose.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t12_u4_demarche.png"))
+    print("Figure écrite : t12_u4_demarche.png")
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_pib()
@@ -1644,3 +1912,10 @@ if __name__ == "__main__":
     fig_politiques_offre()
     fig_formation()
     fig_nouvelles_formes()
+    fig_pouvoir_entreprise()
+    fig_styles_direction()
+    fig_facteurs_style()
+    fig_identite_orga()
+    fig_swot()
+    fig_objectifs_strategiques()
+    fig_demarche_strategie()
