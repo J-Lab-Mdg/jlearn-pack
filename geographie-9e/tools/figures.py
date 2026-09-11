@@ -1205,3 +1205,142 @@ FIGURES_T3["img_s60_a.png"] = girouette
 FIGURES_T3["img_s61_a.png"] = construction_girouette
 FIGURES_T3["img_s62_a.png"] = thermometre
 FIGURES_T3["img_s63_a.png"] = graphique_temperatures
+
+
+def calendrier_mois(path):
+    """Séance 64 — suivre le temps pendant un mois : une grille de symboles."""
+    f = Fig(1100, 700)
+    f.txtc(550, 15, "SUIVRE LE TEMPS PENDANT UN MOIS", size=34, color=BLEU,
+           bold=True)
+    x0, y0, c, l = 90, 90, 130, 100
+    for i in range(30):
+        col, lig = i % 7, i // 7
+        x, y = x0 + col * c, y0 + lig * l
+        f.rect(x, y, x + 118, y + 88, fill="white", stroke=NOIR, width=3)
+        f.txtc(x + 59, y + 6, str(i + 1), size=22, color=GRIS)
+        etat = i % 4                       # 0 beau, 1 pluie, 2 couvert, 3 beau
+        cy = y + 55
+        if etat in (0, 3):
+            f.circle(x + 59, cy, 17, fill="#F2B705", stroke="#E6A200", width=3)
+        elif etat == 1:
+            f.circle(x + 45, cy - 4, 14, fill="#90A4AE", stroke="none")
+            f.circle(x + 59, cy - 10, 17, fill="#90A4AE", stroke="none")
+            f.circle(x + 73, cy - 4, 13, fill="#90A4AE", stroke="none")
+            f.rect(x + 45, cy - 8, x + 73, cy + 4, fill="#90A4AE", stroke="none")
+            for k in range(3):
+                f.line(x + 48 + k * 11, cy + 10, x + 45 + k * 11, cy + 26,
+                       color="#4FA3D1", width=4)
+        else:
+            f.circle(x + 50, cy, 13, fill="#B0BEC5", stroke="none")
+            f.circle(x + 68, cy, 15, fill="#B0BEC5", stroke="none")
+            f.rect(x + 50, cy, x + 68, cy + 15, fill="#B0BEC5", stroke="none")
+    # légende
+    f.rect(90, 600, 1010, 680, fill="white", stroke=NOIR, width=3)
+    f.txtc(290, 615, "LÉGENDE", size=24, color=NOIR, bold=True)
+    f.circle(150, 655, 15, fill="#F2B705", stroke="#E6A200", width=3)
+    f.txtc(240, 640, "beau", size=24, color=NOIR)
+    f.circle(390, 655, 14, fill="#B0BEC5", stroke="none")
+    f.txtc(470, 640, "couvert", size=24, color=NOIR)
+    for k in range(3):
+        f.line(650 + k * 12, 662, 647 + k * 12, 680, color="#4FA3D1", width=4)
+    f.txtc(760, 640, "pluie", size=24, color=NOIR)
+    return f.save(path)
+
+
+def saisons(path):
+    """Séance 65 — les deux saisons de Madagascar."""
+    f = Fig(1100, 700)
+    f.txtc(550, 15, "LES DEUX SAISONS DE MADAGASCAR", size=34, color=BLEU,
+           bold=True)
+    # panneau gauche : saison des pluies
+    f.rect(60, 90, 520, 400, fill="#BBD9EE", stroke=NOIR, width=4)
+    f.txtc(290, 105, "SAISON DES PLUIES", size=30, color=BLEU, bold=True)
+    f.txtc(290, 145, "novembre à avril", size=26, color=NOIR)
+    f.circle(200, 240, 30, fill="#90A4AE", stroke="none")
+    f.circle(250, 225, 36, fill="#90A4AE", stroke="none")
+    f.circle(300, 245, 28, fill="#90A4AE", stroke="none")
+    f.rect(200, 240, 300, 265, fill="#90A4AE", stroke="none")
+    for k in range(6):
+        f.line(190 + k * 22, 285, 184 + k * 22, 350, color="#4FA3D1", width=6)
+    f.rect(120, 360, 460, 385, fill="#8BC34A", stroke=NOIR, width=3)
+    f.txtc(290, 355, "rizières vertes", size=24, color=NOIR)
+    # panneau droite : saison sèche
+    f.rect(580, 90, 1040, 400, fill="#FFF3E0", stroke=NOIR, width=4)
+    f.txtc(810, 105, "SAISON SÈCHE", size=30, color="#EF6C00", bold=True)
+    f.txtc(810, 145, "mai à octobre", size=26, color=NOIR)
+    f.circle(810, 250, 45, fill="#F2B705", stroke="#E6A200", width=4)
+    for a in range(0, 360, 45):
+        import math
+        f.line(int(810 + 58 * math.cos(math.radians(a))),
+               int(250 + 58 * math.sin(math.radians(a))),
+               int(810 + 80 * math.cos(math.radians(a))),
+               int(250 + 80 * math.sin(math.radians(a))), color="#F2B705", width=6)
+    f.rect(640, 360, 980, 385, fill="#D7CCC8", stroke=NOIR, width=3)
+    f.txtc(810, 355, "sols secs, ciel clair", size=24, color=NOIR)
+    # bande des douze mois
+    mois = ["N", "D", "J", "F", "M", "A", "M", "J", "J", "A", "S", "O"]
+    for i, m in enumerate(mois):
+        x = 60 + i * 82
+        humide = i <= 5                     # novembre -> avril
+        f.rect(x, 460, x + 78, 540, fill="#4FA3D1" if humide else "#F2B705",
+               stroke=NOIR, width=3)
+        f.txtc(x + 39, 475, m, size=28, color="white", bold=True)
+    f.txtc(290, 560, "saison des pluies", size=24, color="#4FA3D1", bold=True)
+    f.txtc(810, 560, "saison sèche", size=24, color="#EF6C00", bold=True)
+    f.txtc(550, 620, "Deux saisons seulement : une humide et une sèche.",
+           size=28, color=GRIS)
+    return f.save(path)
+
+
+def tableau_graphique(path):
+    """Séance 66 — du tableau au graphique."""
+    f = Fig(1100, 760)
+    f.txtc(550, 15, "DU TABLEAU AU GRAPHIQUE", size=36, color=BLEU, bold=True)
+    # le tableau
+    f.rect(80, 90, 480, 400, fill="white", stroke=NOIR, width=4)
+    f.txtc(280, 105, "TABLEAU DES RELEVÉS", size=26, color=NOIR, bold=True)
+    for i in range(6):
+        y = 155 + i * 45
+        f.line(80, y, 480, y, color=NOIR, width=2)
+    for x in (230, 355):
+        f.line(x, 155, x, 400, color=NOIR, width=2)
+    f.txtc(155, 170, "Jour", size=24, color=NOIR, bold=True)
+    f.txtc(292, 170, "Température", size=24, color=NOIR, bold=True)
+    f.txtc(417, 170, "Temps", size=24, color=NOIR, bold=True)
+    for i, (j, t, c) in enumerate([("lundi", "24 °C", "beau"),
+                                   ("mardi", "26 °C", "beau"),
+                                   ("mercredi", "22 °C", "pluie"),
+                                   ("jeudi", "25 °C", "couvert"),
+                                   ("vendredi", "27 °C", "beau")]):
+        y = 215 + i * 45
+        f.txtc(155, y, j, size=24, color=NOIR)
+        f.txtc(292, y, t, size=24, color=ROUGE, bold=True)
+        f.txtc(417, y, c, size=24, color=NOIR)
+    # le graphique correspondant
+    f.rect(560, 90, 1040, 400, fill="white", stroke=NOIR, width=4)
+    f.txtc(800, 105, "GRAPHIQUE", size=26, color=NOIR, bold=True)
+    x0, y0, y1 = 620, 165, 370
+    f.line(x0, y0, x0, y1, color=NOIR, width=4)
+    f.line(x0, y1, 1010, y1, color=NOIR, width=4)
+    for deg, y in [(20, 330), (25, 290), (30, 250)]:
+        f.line(x0, y, 1010, y, color="#E0E0E0", width=2)
+        f.txt(575, y - 16, "%d°" % deg, size=22, color=NOIR)
+    pts = [(680, 300), (760, 285), (840, 315), (920, 292), (1000, 280)]
+    for i, (x, y) in enumerate(pts):
+        f.circle(x, y, 9, fill=ROUGE, stroke="white", width=3)
+        f.txtc(x, y1 + 15, "L M M J V"[i], size=24, color=NOIR)
+    for i in range(len(pts) - 1):
+        f.line(pts[i][0], pts[i][1], pts[i + 1][0], pts[i + 1][1], color=ROUGE,
+               width=5)
+    f.txtc(550, 430, "Le graphique montre la tendance d'un seul coup "
+                     "d'œil.", size=26, color=GRIS)
+    f.txtc(550, 480, "Le tableau donne les valeurs exactes jour par jour.",
+           size=26, color=GRIS)
+    f.txtc(550, 540, "Un géographe utilise les deux : le tableau pour "
+                     "relever, le graphique pour comparer.", size=26, color=BLEU)
+    return f.save(path)
+
+
+FIGURES_T3["img_s64_a.png"] = calendrier_mois
+FIGURES_T3["img_s65_a.png"] = saisons
+FIGURES_T3["img_s66_a.png"] = tableau_graphique

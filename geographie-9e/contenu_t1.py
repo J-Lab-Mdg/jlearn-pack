@@ -6867,3 +6867,494 @@ SEANCES.append(dict(
                 "points en montant puis en descendant, flèche sur le point le plus "
                 "haut (maximum) et sur le plus bas (minimum).",
 ))
+
+# ═══════════════════════════ SÉANCE 64 ═══════════════════════════
+SEANCES.append(dict(
+    n=64, semaine=20, titre="Suivre le temps pendant un mois",
+    objectif="Observer l'évolution du temps sur un mois.",
+    materiel="Grille mensuelle affichée, girouette et thermomètre de la classe, "
+             "ardoise et craie, cahier.",
+    illustration=("img_s64_a.png",
+                  "Illustration — La grille d'un mois : beau, couvert ou "
+                  "pluvieux.", 700),
+    revision=[("Que fait la girouette ?",
+               "R.A. : Elle indique d'où vient le vent."),
+              ("Où place-t-on un thermomètre ?", "R.A. : À l'ombre.")],
+    mes=("Combien de jours a plu le mois dernier ?",
+         "R.A. : On répond selon le mois écoulé."),
+    analyse=[
+        ("Que note-t-on chaque jour ?",
+         "R.A. : Le temps : beau, couvert ou pluvieux."),
+        ("Comment le représente-t-on ?",
+         "R.A. : Par un symbole dans une case de la grille."),
+        ("Combien de jours compte un mois ?",
+         "R.A. : Vingt-huit à trente et un jours."),
+        ("Comment compte-t-on les jours de pluie ?",
+         "R.A. : On compte les cases qui portent le symbole de pluie."),
+        ("Que fait-on de la grille à la fin du mois ?",
+         "R.A. : On la totalise et on la compare au mois suivant.")],
+    synthese="Donc, suivre le temps pendant un mois, c'est noter chaque jour un "
+             "symbole dans une grille. À la fin, on compte : c'est la première "
+             "statistique du géographe.",
+    application=("Sur la grille, réponds : a) Combien de jours de pluie ? b) "
+                 "Combien de jours beaux ? c) Combien de jours couverts ? d) Quel "
+                 "temps domine ?",
+                 "a) On compte les cases de pluie — b) On compte les cases "
+                 "de soleil — c) On compte les cases grises — d) Le temps "
+                 "le plus fréquent."),
+    evaluation=("1. Réponds par vrai ou faux : a) On note le temps tous les "
+                "jours. b) Chaque jour a son symbole. c) Un mois compte "
+                "toujours trente jours. d) On totalise à la fin du mois.\n"
+                "2. Explique en deux phrases comment suivre le temps sur un mois.",
+                "1. a) Vrai — b) Vrai — c) Faux — d) Vrai.\n"
+                "2. Exemple : « Chaque jour, on place un symbole dans la case "
+                "du calendrier. À la fin, on compte les symboles de chaque "
+                "sorte. »"),
+    lecon_titre="Suivre le temps pendant un mois",
+    sections=[
+        ("1. Pourquoi suivre le temps sur un mois ?",
+         "Un seul jour ne dit rien : il peut pleuvoir un mardi sans que le mois soit "
+         "pluvieux. En observant tous les jours pendant un mois, on découvre une "
+         "tendance. C'est ce que fait un paysan quand il dit « cette année, "
+         "la pluie est venue en retard » : il a retenu une série de jours, pas "
+         "un seul."),
+        ("2. La grille d'observation",
+         "On dessine une grille avec une case par jour et l'on place dans chaque case "
+         "un symbole simple : un soleil pour beau, un nuage gris pour couvert, un "
+         "nuage avec des traits pour la pluie. La grille est affichée dans la "
+         "classe et remplie chaque matin par un élève de service."),
+        ("3. Compter les jours",
+         "À la fin du mois, on compte : tant de jours de beau, tant de jours "
+         "couverts, tant de jours de pluie. On peut aussi compter les jours de vent, "
+         "en relevant la girouette. Ces nombres forment un bilan du mois, que l'on "
+         "écrit au tableau."),
+        ("4. Ce que le mois révèle",
+         "Le bilan permet ensuite de comparer : ce mois-ci a-t-il été plus "
+         "pluvieux que le précédent ? En gardant les grilles toute l'année, "
+         "la classe reconstitue le climat de son village. C'est exactement le travail "
+         "d'une station météorologique, à l'échelle d'une "
+         "école."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Une station météorologique relève la pluie avec un "
+             "pluviomètre : un entonnoir qui recueille l'eau dans une éprouvette "
+             "graduée. On lit alors la pluie en millimètres, pas seulement en "
+             "jours."),
+    resume=[
+        "Un seul jour ne dit rien : il faut observer une série.",
+        "On remplit une grille avec une case et un symbole par jour.",
+        "Soleil pour beau, nuage gris pour couvert, traits pour la pluie.",
+        "À la fin du mois, on compte les jours de chaque sorte.",
+        "En gardant les grilles, la classe reconstitue le climat du village.",
+    ],
+    lexique=[("Suivre", "Observer régulièrement, jour après jour."),
+             ("Grille", "Un tableau de cases, une par jour."),
+             ("Symbole", "Un signe dessiné qui représente quelque chose."),
+             ("Bilan", "Le résultat que l'on obtient en comptant."),
+             ("Tendance", "Ce qui se produit le plus souvent.")],
+    exercices=[
+        ("Complète avec : grille — symbole — mois — compter",
+         ["a) On dessine une …… avec une case par jour.",
+          "b) Chaque jour reçoit un ……",
+          "c) À la fin du ……, on totalise.",
+          "d) Il faut …… les cases de chaque sorte."],
+         ["a) une grille", "b) un symbole", "c) du mois", "d) Il faut compter"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Un seul jour suffit pour connaître le climat.",
+          "b) Le bilan se fait à la fin du mois.",
+          "c) On peut comparer deux mois entre eux.",
+          "d) Tous les mois ont trente et un jours."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Faux"]),
+        ("Relie chaque symbole à ce qu'il représente.",
+         ["Le soleil", "Le nuage gris", "Les traits de pluie", "La grille"],
+         ["Il pleut", "Le mois entier", "Il fait beau", "Ciel couvert"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Pourquoi observe-t-on pendant un mois ?",
+          "b) Que place-t-on dans chaque case ?",
+          "c) Que fait-on à la fin du mois ?",
+          "d) À quoi servent les grilles gardées toute l'année ?"],
+         ["a) Pour découvrir une tendance et non un cas isolé.",
+          "b) On place un symbole : soleil, nuage ou pluie.",
+          "c) On compte les jours de chaque sorte et l'on fait le bilan.",
+          "d) Elles permettent de reconstituer le climat du village."]),
+    ],
+    consigne_ex5="Dessine la grille d'un mois de trente jours, remplis-la avec tes "
+                 "propres observations, puis écris le bilan : nombre de jours beaux, "
+                 "couverts et pluvieux.",
+    corrige_ex5="Grille de trente cases avec un symbole par case ; bilan en trois "
+                "lignes : jours beaux, jours couverts, jours de pluie ; le total "
+                "doit faire trente.",
+))
+
+# ═══════════════════════════ SÉANCE 65 ═══════════════════════════
+SEANCES.append(dict(
+    n=65, semaine=21, titre="Les variations du temps dans l'année",
+    objectif="Observer les variations du ciel au cours de l'année.",
+    materiel="Schéma des deux saisons, calendrier de l'année, ardoise et craie, "
+             "cahier.",
+    illustration=("img_s65_a.png",
+                  "Illustration — La saison des pluies et la saison "
+                  "sèche.", 700),
+    revision=[("Comment suit-on le temps sur un mois ?",
+               "R.A. : Avec une grille et un symbole par jour."),
+              ("Cite les deux saisons de Madagascar.",
+               "R.A. : La saison des pluies et la saison sèche.")],
+    mes=("Chez toi, à quel moment de l'année plante-t-on le riz ?",
+         "R.A. : Au début de la saison des pluies."),
+    analyse=[
+        ("Combien de saisons compte Madagascar ?", "R.A. : Deux."),
+        ("Quels mois forment la saison des pluies ?",
+         "R.A. : De novembre à avril."),
+        ("Quels mois forment la saison sèche ?", "R.A. : De mai à "
+         "octobre."),
+        ("Que fait-on pousser pendant la saison des pluies ?", "R.A. : Le "
+         "riz."),
+        ("Que se passe-t-il pendant la saison sèche ?",
+         "R.A. : Les récoltes, les travaux des champs et les feux de "
+         "brousse.")],
+    synthese="Donc, Madagascar connaît deux saisons : une saison des pluies, "
+             "chaude et humide, de novembre à avril, et une saison "
+             "sèche, plus fraîche, de mai à octobre.",
+    application=("Sur le schéma, réponds : a) Cite les mois de la saison des "
+                 "pluies. b) Ceux de la saison sèche. c) Que cultive-t-on "
+                 "pendant la saison des pluies ? d) Que fait-on pendant la saison "
+                 "sèche ?",
+                 "a) Novembre à avril — b) Mai à octobre — "
+                 "c) Le riz — d) Les récoltes et les grands travaux."),
+    evaluation=("1. Réponds par vrai ou faux : a) Madagascar a quatre "
+                "saisons. b) La saison des pluies va de novembre à avril. c) "
+                "La saison sèche va de mai à octobre. d) On plante le riz "
+                "en saison sèche.\n"
+                "2. Décris les deux saisons en deux phrases.",
+                "1. a) Faux — b) Vrai — c) Vrai — d) Faux.\n"
+                "2. Exemple : « La saison des pluies est chaude et humide, de "
+                "novembre à avril. La saison sèche est plus fraîche, de mai "
+                "à octobre. »"),
+    lecon_titre="Les variations du temps dans l'année",
+    sections=[
+        ("1. Deux saisons, pas quatre",
+         "En Europe, on compte quatre saisons : le printemps, l'été, "
+         "l'automne et l'hiver. À Madagascar, on en compte deux, parce que "
+         "l'île se trouve dans la zone tropicale : il fait chaud toute l'année "
+         "et c'est la pluie qui marque la différence. Cette alternance rythme "
+         "toute la vie du village."),
+        ("2. La saison des pluies",
+         "La saison des pluies, appelée « asara » en malgache, va de "
+         "novembre à avril. Le ciel est souvent couvert, les averses sont "
+         "fortes et fréquentes, parfois accompagnées de cyclones sur la "
+         "côte est. Les rizières sont pleines d'eau et le riz pousse. C'est "
+         "aussi la saison la plus chaude et la plus humide."),
+        ("3. La saison sèche",
+         "La saison sèche va de mai à octobre. Le ciel est dégagé, les "
+         "pluies sont rares et l'air est plus frais, surtout sur les hautes terres "
+         "où les nuits d'hiver peuvent être froides. C'est le temps des "
+         "récoltes, du transport du riz et des travaux collectifs dans les "
+         "champs, mais aussi celui des feux de brousse."),
+        ("4. Vivre avec les saisons",
+         "Le calendrier des paysans suit exactement ces deux saisons. On prépare "
+         "les parcelles à la fin de la saison sèche, on repique le riz aux "
+         "premières pluies, on récolte au début de la saison sèche. "
+         "Connaître les saisons, c'est savoir quand semer, quand récolter et "
+         "quand réparer les diguettes."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Les cyclones qui touchent Madagascar se forment dans l'océan "
+             "Indien pendant la saison des pluies, surtout entre janvier et mars. Ils "
+             "apportent des vents violents et des pluies énormes sur la côte "
+             "Est."),
+    resume=[
+        "Madagascar compte deux saisons, et non quatre.",
+        "La saison des pluies va de novembre à avril.",
+        "La saison sèche va de mai à octobre.",
+        "Pendant la saison des pluies, le riz pousse dans les rizières.",
+        "Pendant la saison sèche, on récolte et l'on travaille les "
+        "champs.",
+    ],
+    lexique=[("Saison", "Une période de l'année qui a son propre temps."),
+             ("Tropical", "Qui concerne la zone chaude, autour de "
+              "l'équateur."),
+             ("Averse", "Une pluie forte mais de courte durée."),
+             ("Cyclone", "Une tempête tropicale très violente."),
+             ("Récolte", "Le moment où l'on ramasse ce qui a poussé.")],
+    exercices=[
+        ("Complète avec : pluies — sèche — novembre — octobre",
+         ["a) La saison des pluies commence en ……",
+          "b) Elle finit en avril.",
+          "c) La saison …… va de mai à octobre.",
+          "d) Elle se termine en ……"],
+         ["a) en novembre", "b) Elle finit en avril", "c) La saison sèche",
+          "d) en octobre"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Madagascar compte quatre saisons.",
+          "b) La saison des pluies va de novembre à avril.",
+          "c) On récolte le riz au début de la saison sèche.",
+          "d) Les cyclones sont fréquents en juillet."],
+         ["a) Faux", "b) Vrai", "c) Vrai", "d) Faux"]),
+        ("Relie chaque saison à ce qu'on y fait.",
+         ["Saison des pluies", "Saison sèche", "Novembre-avril", "Mai-octobre"],
+         ["Les récoltes", "Le riz pousse", "Saison sèche",
+          "Saison des pluies"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Combien Madagascar compte-t-elle de saisons ?",
+          "b) Quels sont les mois de la saison des pluies ?",
+          "c) Que cultive-t-on pendant cette saison ?",
+          "d) Que fait-on pendant la saison sèche ?"],
+         ["a) Elle en compte deux.",
+          "b) De novembre à avril.",
+          "c) On cultive le riz dans les rizières.",
+          "d) On récolte et l'on travaille les champs."]),
+    ],
+    consigne_ex5="Dessine une roue de l'année en deux parties : la saison des "
+                 "pluies et la saison sèche, avec les mois, un symbole et une "
+                 "activité pour chacune.",
+    corrige_ex5="Cercle partagé en deux : une moitié bleue (novembre-avril) "
+                "avec un nuage et des rizières, une moitié jaune "
+                "(mai-octobre) avec un soleil et une récolte.",
+))
+
+# ═══════════════════════════ SÉANCE 66 ═══════════════════════════
+SEANCES.append(dict(
+    n=66, semaine=21, titre="Tableau et graphique du temps",
+    objectif="Relever et comparer des températures sur quelques journées.",
+    materiel="Schéma tableau-graphique, relevés de la classe, ardoise et craie, "
+             "cahier.",
+    illustration=("img_s66_a.png",
+                  "Illustration — Du tableau des relevés au graphique.", 700),
+    revision=[("Comment suit-on le temps sur un mois ?",
+               "R.A. : Avec une grille et un symbole par jour."),
+              ("Quand se place la température maximale ?",
+               "R.A. : Vers 14 h ou 15 h.")],
+    mes=("Qu'est-ce qui est plus facile à lire : une liste de nombres ou "
+          "une courbe ?",
+         "R.A. : Une courbe, car elle montre la tendance d'un coup d'œil."),
+    analyse=[
+        ("Que contient le tableau ?",
+         "R.A. : Les jours, les températures et le temps observé."),
+        ("Que montre le graphique ?", "R.A. : La même chose, mais sous forme "
+         "de courbe."),
+        ("Que porte l'axe horizontal ?", "R.A. : Les jours ou les heures."),
+        ("Que porte l'axe vertical ?", "R.A. : Les températures."),
+        ("Pourquoi utilise-t-on les deux ?",
+         "R.A. : Le tableau garde les valeurs exactes, le graphique montre la "
+         "tendance.")],
+    synthese="Donc, le tableau conserve les valeurs exactes et le graphique montre "
+             "la tendance. Un géographe utilise les deux : le tableau pour "
+             "relever, le graphique pour comparer.",
+    application=("Sur le schéma, réponds : a) Quelle température le mercredi "
+                 "? b) Quel temps ce jour-là ? c) Quel jour est le plus chaud "
+                 "? d) Où la courbe est-elle la plus haute ?",
+                 "a) 22 °C — b) Il pleut — c) Le vendredi, 27 °C — "
+                 "d) Au-dessus du vendredi."),
+    evaluation=("1. Réponds par vrai ou faux : a) Le tableau donne les "
+                "valeurs exactes. b) Le graphique montre la tendance. c) "
+                "L'axe vertical porte les jours. d) Un point par relevé.\n"
+                "2. Cite deux avantages du graphique.",
+                "1. a) Vrai — b) Vrai — c) Faux — d) Vrai.\n"
+                "2. Exemple : on voit la tendance d'un coup d'œil et l'on "
+                "compare plusieurs jours facilement."),
+    lecon_titre="Tableau et graphique du temps",
+    sections=[
+        ("1. Le tableau",
+         "Le tableau est la forme la plus simple pour conserver des relevés. "
+         "Une ligne par jour, une colonne par information : le jour, la "
+         "température, le temps observé. Il garde les valeurs exactes, sans rien "
+         "perdre. C'est la mémoire de l'observation."),
+        ("2. Le graphique",
+         "Le graphique transforme le tableau en dessin. L'axe horizontal, en bas, "
+         "porte les jours ou les heures. L'axe vertical, à gauche, porte les "
+         "températures en degrés. Chaque relevé devient un point placé "
+         "au croisement de sa ligne et de sa colonne, et l'on relie les points par "
+         "une courbe."),
+        ("3. Lire un graphique",
+         "Pour lire un graphique, on suit la courbe de gauche à droite. Si elle "
+         "monte, la température augmente ; si elle descend, elle baisse ; si elle "
+         "est plate, la température est stable. Le point le plus haut est le "
+         "maximum, le plus bas le minimum. Une lecture de deux secondes remplace "
+         "vingt nombres."),
+        ("4. Du tableau au graphique",
+         "Les deux outils se complètent et ne s'opposent pas. Le tableau est "
+         "exact mais lent à lire ; le graphique est rapide mais approximatif. "
+         "C'est pourquoi un géographe relève d'abord dans un tableau, puis trace "
+         "le graphique pour comparer et conclure. C'est la même démarche avec "
+         "les hauteurs de pluie ou les effectifs d'une population."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Le mot graphique vient du grec graphein, qui signifie écrire. "
+             "Un graphique est donc une façon d'écrire des nombres avec des "
+             "lignes plutôt qu'avec des chiffres."),
+    resume=[
+        "Le tableau conserve les valeurs exactes, une ligne par jour.",
+        "Le graphique transforme ces valeurs en courbe.",
+        "L'axe horizontal porte les jours, l'axe vertical les températures.",
+        "Une courbe qui monte indique une hausse de la température.",
+        "On relève dans le tableau, puis on compare avec le graphique.",
+    ],
+    lexique=[("Tableau", "Un ensemble de lignes et de colonnes qui range des "
+              "données."),
+             ("Graphique", "Un dessin qui représente des nombres."),
+             ("Axe", "Chacune des deux lignes de repère du graphique."),
+             ("Point", "La marque qui représente une mesure."),
+             ("Tendance", "Le sens général dans lequel va la courbe.")],
+    exercices=[
+        ("Complète avec : tableau — graphique — axe — courbe",
+         ["a) Le …… conserve les valeurs exactes.",
+          "b) Le …… montre la tendance.",
+          "c) L'…… horizontal porte les jours.",
+          "d) La …… relie les points."],
+         ["a) Le tableau", "b) Le graphique", "c) L'axe", "d) La courbe"]),
+        ("Réponds par vrai ou faux.",
+         ["a) L'axe vertical porte les températures.",
+          "b) Une courbe qui monte indique une baisse.",
+          "c) Le point le plus haut est le maximum.",
+          "d) Le tableau et le graphique s'opposent."],
+         ["a) Vrai", "b) Faux", "c) Vrai", "d) Faux"]),
+        ("Relie chaque élément à son rôle.",
+         ["Le tableau", "Le graphique", "L'axe horizontal", "La courbe"],
+         ["Montre la tendance", "Les jours", "Garde les valeurs exactes",
+          "Relie les points"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Que contient un tableau de relevés ?",
+          "b) Que montre un graphique ?",
+          "c) Comment lit-on une courbe ?",
+          "d) Pourquoi utilise-t-on les deux outils ?"],
+         ["a) Il contient les jours, les températures et le temps.",
+          "b) Il montre la tendance sous forme de courbe.",
+          "c) On la suit de gauche à droite, en regardant si elle monte ou "
+          "descend.",
+          "d) Le tableau est exact, le graphique est rapide à lire."]),
+    ],
+    consigne_ex5="Releve pendant cinq jours la température de midi, construis le "
+                 "tableau, puis trace le graphique correspondant et indique le "
+                 "maximum et le minimum.",
+    corrige_ex5="Tableau à deux colonnes (jour, température) sur cinq "
+                "lignes ; graphique avec axes gradués, cinq points reliés, "
+                "flèche sur le point le plus haut et sur le plus bas.",
+))
+
+# ═══════════════════════════ SÉANCE 67 ═══════════════════════════
+SEANCES.append(dict(
+    n=67, semaine=21, titre="Prévoir le temps",
+    objectif="Connaître l'évolution du temps ; les indices utilisés au "
+             "village.",
+    materiel="Image des signes du temps, carnet d'observation, ardoise et craie, "
+             "cahier.",
+    illustration=("scene_signes_temps.png",
+                  "Illustration — Ciel rouge, arbres courbés, fourmis et "
+                  "zébus : les signes du temps.", 620),
+    revision=[("Cite les deux saisons de Madagascar.",
+               "R.A. : La saison des pluies et la saison sèche."),
+              ("Que montre un graphique ?", "R.A. : La tendance.")],
+    mes=("Comment tes parents savent-ils qu'il va pleuvoir demain ?",
+         "R.A. : Ils regardent le ciel, le vent et les animaux."),
+    analyse=[
+        ("Cite un signe dans le ciel.",
+         "R.A. : Un ciel rouge le soir, ou des nuages qui s'amoncellent."),
+        ("Cite un signe donné par les animaux.",
+         "R.A. : Les fourmis qui transportent leurs œufs, ou les oiseaux qui "
+         "volent bas."),
+        ("Que fait le vent avant la pluie ?",
+         "R.A. : Il change de direction et il se lève."),
+        ("Que fait le zébu avant la pluie ?",
+         "R.A. : Il se rassemble sous les arbres."),
+        ("Ces signes sont-ils aussi sûrs que la météo ?",
+         "R.A. : Non, ils donnent une indication, pas une certitude.")],
+    synthese="Donc, au village, on prévoit le temps en observant le ciel, le vent "
+             "et le comportement des animaux. Ces signes donnent une indication "
+             "utile, que la météo moderne complète avec des mesures.",
+    application=("Observe l'image et cite les quatre signes représentés, en "
+                 "disant ce que chacun annonce.",
+                 "Le ciel rouge du soir, les arbres courbés par le vent, les "
+                 "fourmis qui déménagent, les zébus rassemblés : tous "
+                 "annoncent un changement de temps, souvent la pluie."),
+    evaluation=("1. Réponds par vrai ou faux : a) Un ciel rouge le soir "
+                "annonce un changement de temps. b) Les oiseaux volent haut avant "
+                "la pluie. c) Le vent change avant la pluie. d) Les signes du "
+                "village sont des certitudes.\n"
+                "2. Cite trois signes qui annoncent la pluie.",
+                "1. a) Vrai — b) Faux — c) Vrai — d) Faux.\n"
+                "2. Exemple : le vent qui se lève, les fourmis qui montent, "
+                "les zébus rassemblés."),
+    lecon_titre="Prévoir le temps",
+    sections=[
+        ("1. Prévoir, à quoi ça sert ?",
+         "Prévoir le temps, c'est se donner le temps de se préparer. Le "
+         "paysan qui sait que la pluie arrive rentre le riz séché, répare la "
+         "diguette et ne repique pas ce jour-là. Le pêcheur ne sort pas en "
+         "mer si le vent va tourner. Une bonne préparation évite bien des "
+         "pertes."),
+        ("2. Les signes du ciel",
+         "Le premier livre de météo, c'est le ciel. Un ciel rouge le soir "
+         "annonce souvent du vent ou de la pluie ; un ciel rouge le matin, de la "
+         "pluie dans la journée. Des nuages qui s'amoncellent et montent en "
+         "tourbillons annoncent l'orage. Un halo autour de la lune annonce la pluie "
+         "pour le lendemain."),
+        ("3. Les signes des animaux et des plantes",
+         "Les animaux sentent l'humidité et la baisse de la pression. Les "
+         "fourmis transportent leurs œufs vers les points hauts ; les oiseaux "
+         "volent bas, parce que les insectes descendent ; les zébus se "
+         "rassemblent sous les arbres ; les grenouilles coassent plus fort. Certaines "
+         "plantes aussi ferment leurs fleurs avant la pluie."),
+        ("4. La météo moderne",
+         "La météo moderne mesure la pression atmosphérique, la "
+         "température, l'humidité et la vitesse du vent, puis calcule "
+         "l'évolution probable avec des ordinateurs. Elle annonce le temps à "
+         "plusieurs jours. Mais elle garde une part d'incertitude, comme les signes "
+         "du village : les deux approches se complètent plus qu'elles ne "
+         "s'opposent."),
+    ],
+    encadre=("vert", "Le savais-tu ?",
+             "Le dicton « ciel rouge le soir, espoir ; ciel rouge le matin, "
+             "chagrin » se retrouve dans presque toutes les langues du monde, "
+             "parce qu'il repose sur une observation réelle du déplacement des "
+             "nuages."),
+    resume=[
+        "Prévoir le temps permet de se préparer et d'éviter des pertes.",
+        "Le ciel donne des signes : couleur, nuages, halo autour de la lune.",
+        "Les animaux réagissent : fourmis, oiseaux bas, zébus "
+        "rassemblés.",
+        "La météo moderne mesure et calcule l'évolution probable.",
+        "Signes du village et météo se complètent.",
+    ],
+    lexique=[("Prévoir", "Dire à l'avance ce qui va se passer."),
+             ("Indice", "Un signe qui fait penser à quelque chose."),
+             ("Pression atmosphérique", "Le poids de l'air, qui baisse avant la "
+              "pluie."),
+             ("Halo", "Un cercle lumineux autour de la lune ou du soleil."),
+             ("Incertitude", "Le fait de ne pas être sûr.")],
+    exercices=[
+        ("Complète avec : ciel — animaux — vent — mesure",
+         ["a) Le rouge du …… le soir annonce un changement de temps.",
+          "b) Les …… réagissent à l'humidité.",
+          "c) Le …… change de direction avant la pluie.",
+          "d) La météo moderne …… la pression et la température."],
+         ["a) du ciel", "b) Les animaux", "c) Le vent", "d) moderne mesure"]),
+        ("Réponds par vrai ou faux.",
+         ["a) Les fourmis montent leurs œufs avant la pluie.",
+          "b) Les oiseaux volent haut avant la pluie.",
+          "c) Un halo autour de la lune annonce la pluie.",
+          "d) La météo moderne est une certitude absolue."],
+         ["a) Vrai", "b) Faux", "c) Vrai", "d) Faux"]),
+        ("Relie chaque signe à ce qu'il annonce.",
+         ["Ciel rouge le soir", "Fourmis qui montent", "Oiseaux bas",
+          "Zébus rassemblés"],
+         ["La pluie", "La pluie", "Un changement de temps", "L'orage"]),
+        ("Réponds aux questions par une phrase complète.",
+         ["a) Pourquoi prévoit-on le temps ?",
+          "b) Cite deux signes du ciel.",
+          "c) Cite deux signes donnés par les animaux.",
+          "d) En quoi la météo moderne complète-t-elle les signes ?"],
+         ["a) Pour se préparer et éviter des pertes.",
+          "b) Le ciel rouge et les nuages qui montent.",
+          "c) Les fourmis qui transportent leurs œufs et les oiseaux qui "
+          "volent bas.",
+          "d) Elle mesure et calcule l'évolution à plusieurs jours."]),
+    ],
+    consigne_ex5="Dessine quatre vignettes des signes du temps : le ciel rouge du "
+                 "soir, les arbres courbés par le vent, les fourmis et les "
+                 "zébus rassemblés. Écris sous chacune ce qu'elle "
+                 "annonce.",
+    corrige_ex5="Quatre cases : ciel rouge avec soleil bas, palmiers penchés "
+                "avec des traits de vent, fourmis sur une termitière, zébus "
+                "sous un arbre. Légende : changement de temps, vent, pluie, "
+                "pluie.",
+))

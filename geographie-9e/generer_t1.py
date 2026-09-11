@@ -95,6 +95,10 @@ SAUMON = {
     61: ["fabriquer", "découper", "paille", "tuteur", "orienter"],
     62: ["thermomètre", "degré", "graduation", "liquide", "sommet"],
     63: ["courbe", "maximum", "minimum", "relevé", "amplitude"],
+    64: ["grille", "symbole", "mois", "bilan", "tendance"],
+    65: ["saisons", "pluies", "sèche", "cyclone", "récolte"],
+    66: ["tableau", "graphique", "axe", "courbe", "relevés"],
+    67: ["prévoir", "indices", "ciel", "animaux", "météo"],
 }
 
 # ── Illustration d'ouverture de leçon ───────────────────────────────────────
