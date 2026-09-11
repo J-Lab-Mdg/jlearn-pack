@@ -16,9 +16,10 @@ const { generateSeanceDocContent } = require("./seance-generator");
 const U1 = require("./data-unite1");
 const U2 = require("./data-unite2");
 const U3 = require("./data-unite3");
+const U4 = require("./data-unite4");
 const { revisions, examens } = require("./data-evaluations");
 
-const UNITS = [U1, U2, U3];
+const UNITS = [U1, U2, U3, U4];
 const TOTAL = 70;
 const IMG_DIR = path.join(__dirname, "..", "output", "images");
 

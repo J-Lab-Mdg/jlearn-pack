@@ -1370,6 +1370,468 @@ def fig_politiques():
     print("Figure écrite : t11_u3_politiques.png")
 
 
+# ------------------------------------------------------------
+# Figure 35 — Identité individuelle et identités sociales
+# ------------------------------------------------------------
+def fig_identite():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Identité individuelle et identités sociales d'une même personne")
+
+    cx, cy = 480, 380
+    d.ellipse([cx - 300, cy - 250, cx + 300, cy + 250], outline=GRIS, width=3)
+    d.text((cx - 280, cy - 244), "GROUPES D'APPARTENANCE", font=F_MINI, fill=GRIS)
+    d.ellipse([cx - 190, cy - 160, cx + 190, cy + 160], fill=BLEU_C, outline=BLEU, width=3)
+    d.text((cx - 176, cy - 154), "IDENTITÉ SOCIALE", font=F_MINI, fill=BLEU)
+    d.ellipse([cx - 85, cy - 70, cx + 85, cy + 70], fill=BLANC, outline=BLEU, width=3)
+    texte_centre(d, (cx - 85, cy - 70, cx + 85, cy + 70), "IDENTITÉ\nINDIVIDUELLE", F_MINI, BLEU)
+
+    groupes = [("Famille", -math.pi / 2), ("École", -math.pi / 8), ("Quartier", math.pi / 3),
+               ("Association", 2 * math.pi / 3), ("Nation", math.pi * 0.92)]
+    for nom, ang in groupes:
+        bx = cx + 245 * math.cos(ang)
+        by = cy + 195 * math.sin(ang)
+        d.ellipse([bx - 78, by - 30, bx + 78, by + 30], fill=BLANC, outline=GRIS, width=2)
+        texte_centre(d, (bx - 78, by - 30, bx + 78, by + 30), nom, F_MINI, NOIR)
+
+    d.rounded_rectangle([800, 150, 1180, 380], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((824, 172), "Identité individuelle", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(wrap(d, "Ce qui rend la personne unique : son caractère et son histoire "
+                                  "singulière.", F_SMALL, 320)):
+        d.text((824, 214 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([800, 410, 1180, 640], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((824, 432), "Identité sociale", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Ce qu'elle partage avec les membres des groupes auxquels "
+                                  "elle appartient. Elle évolue au fil de la vie.", F_SMALL, 320)):
+        d.text((824, 474 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.text((60, 660), "Le regard d'autrui façonne la construction de l'identité : encouragements "
+                      "et moqueries pèsent sur la conduite.", font=F_MINI, fill=GRIS)
+    img.save(os.path.join(OUT, "t11_u4_identite.png"))
+    print("Figure écrite : t11_u4_identite.png")
+
+
+# ------------------------------------------------------------
+# Figure 36 — Le mécanisme de l'imitation
+# ------------------------------------------------------------
+def fig_imitation():
+    W, H = 1240, 660
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le mécanisme de l'imitation : du modèle à la conduite reproduite")
+
+    etapes = [("1. OBSERVER", "On regarde quelqu'un agir", BLEU, BLEU_C),
+              ("2. RETENIR", "On garde la conduite en mémoire", ORANGE, JAUNE_C),
+              ("3. REPRODUIRE", "On refait le geste à son tour", VERT, VERT_C)]
+    x = 70
+    for t, txt, bord, fond in etapes:
+        d.rounded_rectangle([x, 160, x + 330, 320], radius=12, fill=fond, outline=bord, width=3)
+        d.rectangle([x, 160, x + 330, 210], fill=bord)
+        texte_centre(d, (x, 160, x + 330, 210), t, F_BOLD, BLANC)
+        for i, l in enumerate(wrap(d, txt, F_SMALL, 290)):
+            d.text((x + 22, 236 + i * 28), l, font=F_SMALL, fill=NOIR)
+        if x < 700:
+            fleche(d, x + 332, 240, x + 372, 240, GRIS, 4)
+        x += 400
+
+    d.rounded_rectangle([70, 380, 530, 520], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((94, 402), "Les modèles", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Parents et fratrie", "• Enseignants et aînés",
+                           "• Pairs du même âge", "• Figures vues dans les médias"]):
+        d.text((94, 444 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([560, 380, 1170, 520], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((584, 402), "Ce que l'imitation transmet", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Le langage et l'accent", "• Les gestes du métier",
+                           "• Les manières de table et de saluer", "• Les goûts vestimentaires et musicaux"]):
+        d.text((584, 444 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([70, 550, 1170, 630], radius=8, fill=ROSE_C, outline=ROUGE, width=2)
+    d.text((94, 576), "Limites : on peut imiter sans comprendre, et les modèles ne sont pas toujours "
+                      "positifs — une conduite à risque se transmet aussi par imitation.", font=F_MINI, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u4_imitation.png"))
+    print("Figure écrite : t11_u4_imitation.png")
+
+
+# ------------------------------------------------------------
+# Figure 37 — Les trois mécanismes de la socialisation
+# ------------------------------------------------------------
+def fig_mecanismes():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Imitation, injonction, interaction : trois mécanismes complémentaires")
+
+    cols = [("IMITATION", BLEU, BLEU_C,
+             ["Elle montre l'exemple", "à reproduire.", "« L'enfant fait comme", "sa mère. »"]),
+            ("INJONCTION", ORANGE, JAUNE_C,
+             ["Elle énonce la règle,", "l'obligation et l'interdit.", "« Range tes affaires,", "ne frappe pas. »"]),
+            ("INTERACTION", VERT, VERT_C,
+             ["Elle fait naître la conduite", "de l'échange et du retour", "d'autrui.", "« La cour de récréation. »"])]
+    x = 60
+    for t, bord, fond, lignes in cols:
+        d.rounded_rectangle([x, 130, x + 360, 400], radius=12, fill=fond, outline=bord, width=3)
+        d.rectangle([x, 130, x + 360, 184], fill=bord)
+        texte_centre(d, (x, 130, x + 360, 184), t, F_BOLD, BLANC)
+        y = 212
+        for l in lignes:
+            d.text((x + 24, y), l, font=F_SMALL, fill=NOIR)
+            y += 34
+        x += 400
+
+    d.rounded_rectangle([60, 440, 1180, 530], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 462), "Une éducation efficace combine les trois : chacun transmet ce que les deux "
+                      "autres ne peuvent porter seuls.", font=F_SMALL, fill=NOIR)
+    d.text((84, 496), "L'imitation montre l'exemple, l'injonction formule la règle, l'interaction "
+                      "ajuste la conduite par le retour d'autrui.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 560, 580, 680], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((84, 582), "Le jeu de miroir", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "Un encouragement incite à recommencer ; une moquerie fait "
+                                  "disparaître la conduite.", F_SMALL, 480)):
+        d.text((84, 622 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([620, 560, 1180, 680], radius=8, fill=VIOLET_C, outline=VIOLET, width=2)
+    d.text((644, 582), "Les trois agissent partout", font=F_BOLD, fill=VIOLET)
+    for i, l in enumerate(wrap(d, "En classe : l'enseignant énonce la règle, montre l'exemple et "
+                                  "corrige par l'échange.", F_SMALL, 500)):
+        d.text((644, 622 + i * 28), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u4_mecanismes.png"))
+    print("Figure écrite : t11_u4_mecanismes.png")
+
+
+# ------------------------------------------------------------
+# Figure 38 — La socialisation primaire
+# ------------------------------------------------------------
+def fig_primaire():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La socialisation primaire : les agents et les apprentissages")
+
+    cx, cy = 370, 390
+    d.ellipse([cx - 90, cy - 70, cx + 90, cy + 70], fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (cx - 90, cy - 70, cx + 90, cy + 70), "L'ENFANT", F_BOLD, BLEU)
+
+    agents = [("LES PARENTS", "premiers modèles et premières autorités", -math.pi / 2, VERT, VERT_C),
+              ("LA FRATRIE", "partage, rivalité et coopération", 0, ORANGE, JAUNE_C),
+              ("LES GRANDS-PARENTS", "récits, langue et usages", math.pi / 2, VIOLET, VIOLET_C),
+              ("LE VOISINAGE", "éducation communautaire", math.pi, ROUGE, ROSE_C)]
+    for t, s, ang, bord, fond in agents:
+        bx = cx + 300 * math.cos(ang)
+        by = cy + 200 * math.sin(ang)
+        d.rounded_rectangle([bx - 150, by - 45, bx + 150, by + 45], radius=10, fill=fond, outline=bord, width=3)
+        texte_centre(d, (bx - 150, by - 45, bx + 150, by + 5), t, F_MINI, bord)
+        texte_centre(d, (bx - 150, by + 5, bx + 150, by + 45), s, F_MINI, NOIR)
+        d.line([cx + 90 * math.cos(ang), cy + 70 * math.sin(ang),
+                bx - 150 * math.cos(ang), by - 45 * math.sin(ang)], fill=GRIS, width=2)
+
+    d.rounded_rectangle([740, 140, 1180, 460], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((764, 162), "Les apprentissages", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Le langage : les premiers mots",
+                           "• La propreté et la tenue du corps",
+                           "• La politesse : saluer, remercier",
+                           "• Les interdits fondamentaux",
+                           "• La place occupée dans le groupe"]):
+        d.text((764, 214 + i * 34), l, font=F_SMALL, fill=NOIR)
+    for i, l in enumerate(wrap(d, "Cette période marque durablement : l'enfant y est le plus "
+                                  "réceptif, dans un cadre affectif intense.", F_MINI, 400)):
+        d.text((764, 404 + i * 24), l, font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 640, 1180, 690], radius=8, fill=VERT_C, outline=VERT, width=2)
+    d.text((84, 660), "Le contexte varie : milieu urbain ou rural, famille nucléaire ou élargie — "
+                      "les occasions d'apprentissage ne sont pas les mêmes.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u4_primaire.png"))
+    print("Figure écrite : t11_u4_primaire.png")
+
+
+# ------------------------------------------------------------
+# Figure 39 — Primaire et secondaire : continuité et complémentarité
+# ------------------------------------------------------------
+def fig_secondaire():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Socialisation primaire et socialisation secondaire")
+
+    d.rounded_rectangle([60, 130, 560, 430], radius=12, fill=VERT_C, outline=VERT, width=3)
+    d.rectangle([60, 130, 560, 184], fill=VERT)
+    texte_centre(d, (60, 130, 560, 184), "SOCIALISATION PRIMAIRE", F_BOLD, BLANC)
+    for i, l in enumerate(["• Petite enfance, cadre familial",
+                           "• Parents, fratrie, grands-parents",
+                           "• Langage, politesse, interdits",
+                           "• Cadre affectif intense",
+                           "• Marque durablement la personnalité"]):
+        d.text((88, 216 + i * 34), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([680, 130, 1180, 430], radius=12, fill=BLEU_C, outline=BLEU, width=3)
+    d.rectangle([680, 130, 1180, 184], fill=BLEU)
+    texte_centre(d, (680, 130, 1180, 184), "SOCIALISATION SECONDAIRE", F_BOLD, BLANC)
+    for i, l in enumerate(["• Après la petite enfance",
+                           "• École, pairs, travail, médias",
+                           "• Règles formelles et rôles nouveaux",
+                           "• Savoirs, citoyenneté, métier",
+                           "• Ajoute ce que la famille ne peut pas"]):
+        d.text((708, 216 + i * 34), l, font=F_SMALL, fill=NOIR)
+
+    fleche(d, 564, 280, 676, 280, GRIS, 4)
+    d.text((556, 240), "prolonge et complète", font=F_MINI, fill=GRIS)
+
+    d.rounded_rectangle([60, 460, 600, 580], radius=10, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((84, 482), "Continuité", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(wrap(d, "L'école s'appuie sur ce que la famille a déjà transmis.",
+                               F_SMALL, 480)):
+        d.text((84, 522 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 460, 1180, 580], radius=10, fill=ROSE_C, outline=ROUGE, width=2)
+    d.text((664, 482), "Tension possible", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(wrap(d, "Les valeurs de l'école et celles de la famille peuvent "
+                                  "s'opposer : ce décalage développe l'esprit critique.",
+                               F_SMALL, 480)):
+        d.text((664, 522 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 610, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 634), "Socialisation anticipatrice : adopter par avance les conduites du groupe "
+                      "auquel on souhaite appartenir — l'élève qui observe les gestes du métier visé.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u4_secondaire.png"))
+    print("Figure écrite : t11_u4_secondaire.png")
+
+
+# ------------------------------------------------------------
+# Figure 40 — Contrôle social formel et informel
+# ------------------------------------------------------------
+def fig_controle():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Contrôle social formel et contrôle social informel")
+
+    d.rounded_rectangle([60, 130, 590, 460], radius=12, fill=BLEU_C, outline=BLEU, width=3)
+    d.rectangle([60, 130, 590, 186], fill=BLEU)
+    texte_centre(d, (60, 130, 590, 186), "CONTRÔLE FORMEL", F_BOLD, BLANC)
+    for i, l in enumerate(["Exercé par des institutions",
+                           "• Police et gendarmerie",
+                           "• Justice et administration",
+                           "• École : règlement intérieur",
+                           "• Entreprise : discipline",
+                           "Sanction : amende, peine, blâme"]):
+        d.text((88, 216 + i * 34), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([650, 130, 1180, 460], radius=12, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.rectangle([650, 130, 1180, 186], fill=ORANGE)
+    texte_centre(d, (650, 130, 1180, 186), "CONTRÔLE INFORMEL", F_BOLD, BLANC)
+    for i, l in enumerate(["Exercé par l'entourage",
+                           "• La famille : reproche, silence",
+                           "• Le voisinage : réputation, rumeur",
+                           "• Les pairs : moquerie, approbation",
+                           "• Le regard des passants",
+                           "Sanction : réprobation, mise à l'écart"]):
+        d.text((678, 216 + i * 34), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 490, 590, 600], radius=10, fill=BLEU_C, outline=BLEU, width=2)
+    d.text((84, 512), "Règle écrite, agent désigné,", font=F_SMALL, fill=NOIR)
+    d.text((84, 544), "sanction codifiée et procédure.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([650, 490, 1180, 600], radius=10, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((674, 512), "Sans texte ni institution : permanent,", font=F_SMALL, fill=NOIR)
+    d.text((674, 544), "il s'exerce partout et en tout instant.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 630, 1180, 690], radius=8, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 654), "Le contrôle social ne punit pas seulement : il valorise aussi les conduites "
+                      "conformes par l'approbation, la confiance et les responsabilités confiées.",
+           font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u4_controle.png"))
+    print("Figure écrite : t11_u4_controle.png")
+
+
+# ------------------------------------------------------------
+# Figure 41 — Normes sociales et normes juridiques
+# ------------------------------------------------------------
+def fig_normes():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Normes sociales et normes juridiques : origine et sanction")
+
+    fin = tableau(d, 60, 130, [200, 420, 460], [50, 66, 66, 66],
+                  ["Critère", "Norme sociale", "Norme juridique"],
+                  [["Origine", "Usages et mœurs du groupe", "Texte édicté par l'autorité publique"],
+                   ["Sanction", "Réprobation, moquerie, mise à l'écart", "Amende, peine, annulation d'un acte"],
+                   ["Exemple", "Saluer les aînés, céder sa place", "Payer ses impôts, respecter le Code de la route"]])
+
+    d.rounded_rectangle([60, fin + 25, 590, fin + 175], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, fin + 47), "Sources du droit", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• La Constitution, au sommet",
+                           "• Les lois et les règlements",
+                           "• Les traités internationaux",
+                           "• La coutume et le droit traditionnel"]):
+        d.text((84, fin + 87 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([620, fin + 25, 1180, fin + 175], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((644, fin + 47), "Deux normes complémentaires", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(wrap(d, "La loi reprend souvent une règle sociale devenue essentielle : ne pas "
+                                  "tuer, respecter la propriété. La norme sociale prépare "
+                                  "l'obéissance à la loi.", F_SMALL, 500)):
+        d.text((644, fin + 87 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, fin + 200, 1180, fin + 260], radius=8, fill=JAUNE_C, outline=ORANGE, width=2)
+    d.text((84, fin + 222), "La norme sociale évolue avec les mœurs, plus vite que la loi : "
+                            "ce qui était choquant hier peut être admis aujourd'hui.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u4_normes.png"))
+    print("Figure écrite : t11_u4_normes.png")
+
+
+# ------------------------------------------------------------
+# Figure 42 — Les sanctions
+# ------------------------------------------------------------
+def fig_sanctions():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les formes et les fonctions de la sanction")
+
+    d.text((60, 122), "L'échelle des sanctions, du plus léger au plus lourd", font=F_BOLD, fill=BLEU)
+    echelle = [("Regard réprobateur", "le groupe désapprouve en silence", BLEU_C, BLEU),
+               ("Réprimande orale", "un reproche est formulé", VERT_C, VERT),
+               ("Avertissement écrit", "la règle est rappelée par écrit", JAUNE_C, ORANGE),
+               ("Exclusion temporaire", "la personne est écartée du groupe", VIOLET_C, VIOLET),
+               ("Amende ou réparation", "sanction pécuniaire prononcée", ROSE_C, ROUGE),
+               ("Peine de prison", "sanction privative de liberté", ROSE_C, ROUGE)]
+    y = 160
+    y = 160
+    for nom, s, fond, bord in echelle:
+        d.rounded_rectangle([60, y, 560, y + 62], radius=8, fill=fond, outline=bord, width=2)
+        d.text((84, y + 10), nom, font=F_SMALL, fill=bord)
+        d.text((84, y + 36), s, font=F_MINI, fill=NOIR)
+        y += 72
+
+    d.rounded_rectangle([620, 160, 1180, 300], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((644, 182), "Sanction positive", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["• Félicitations et récompense",
+                           "• Promotion et confiance accordée",
+                           "• Bonne réputation"]):
+        d.text((644, 222 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([620, 330, 1180, 470], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((644, 352), "Sanction négative", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(["• Réprimande et blâme",
+                           "• Amende et réparation",
+                           "• Exclusion puis peine de prison"]):
+        d.text((644, 392 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([620, 500, 1180, 670], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((644, 522), "Les fonctions de la sanction", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Rappeler la norme",
+                           "• Dissuader la répétition de l'écart",
+                           "• Réparer le tort causé",
+                           "• Protéger la société",
+                           "• Permettre la réinsertion"]):
+        d.text((644, 560 + i * 26), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u4_sanctions.png"))
+    print("Figure écrite : t11_u4_sanctions.png")
+
+
+# ------------------------------------------------------------
+# Figure 43 — La déviance
+# ------------------------------------------------------------
+def fig_deviance():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La déviance : transgression des normes et rejet des valeurs")
+
+    d.ellipse([430, 200, 810, 480], outline=GRIS, width=3)
+    texte_centre(d, (430, 156, 810, 196), "L'ÉCART PAR RAPPORT À LA NORME", F_BOLD, GRIS)
+
+    d.rounded_rectangle([60, 230, 400, 360], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 250), "Transgression des normes", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Incivilités et impolitesse",
+                           "• Absentéisme et retards",
+                           "• Tenue jugée inadaptée"]):
+        d.text((84, 290 + i * 24), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([840, 230, 1180, 360], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((864, 250), "Rejet des valeurs", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(["• Refus de l'effort scolaire",
+                           "• Contestation radicale",
+                           "• Vol, violence, fraude"]):
+        d.text((864, 290 + i * 24), l, font=F_SMALL, fill=NOIR)
+
+    d.text((520, 300), "DÉVIANCE", font=F_BOLD, fill=NOIR)
+    d.text((500, 336), "écart relatif à", font=F_MINI, fill=NOIR)
+    d.text((496, 360), "une norme donnée", font=F_MINI, fill=NOIR)
+
+    d.rounded_rectangle([60, 540, 590, 680], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 562), "Une notion relative", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(wrap(d, "Une tenue admise à la plage ne l'est pas en classe ; ce qui était "
+                                  "condamné hier peut être accepté aujourd'hui.", F_SMALL, 480)):
+        d.text((84, 604 + i * 28), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([650, 540, 1180, 680], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((674, 562), "Une construction sociale", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(wrap(d, "Le regard du groupe suffit parfois à désigner. Contester une règle "
+                                  "injuste peut aussi faire évoluer la société.", F_SMALL, 480)):
+        d.text((674, 604 + i * 28), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u4_deviance.png"))
+    print("Figure écrite : t11_u4_deviance.png")
+
+
+# ------------------------------------------------------------
+# Figure 44 — L'anomie
+# ------------------------------------------------------------
+def fig_anomie():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "L'anomie : quand les repères s'effacent, la déviance augmente")
+
+    d.rounded_rectangle([60, 130, 560, 430], radius=12, fill=VERT_C, outline=VERT, width=3)
+    d.rectangle([60, 130, 560, 186], fill=VERT)
+    texte_centre(d, (60, 130, 560, 186), "REPÈRES CLAIRS", F_BOLD, BLANC)
+    for i, l in enumerate(["• Les normes sont connues de tous",
+                           "• Elles sont cohérentes entre elles",
+                           "• Chacun sait comment se conduire",
+                           "• Les conduites sont prévisibles"]):
+        d.text((88, 216 + i * 34), l, font=F_SMALL, fill=NOIR)
+    d.text((88, 376), "→ déviance limitée", font=F_BOLD, fill=VERT)
+
+    d.rounded_rectangle([680, 130, 1180, 430], radius=12, fill=ROSE_C, outline=ROUGE, width=3)
+    d.rectangle([680, 130, 1180, 186], fill=ROUGE)
+    texte_centre(d, (680, 130, 1180, 186), "ANOMIE", F_BOLD, BLANC)
+    for i, l in enumerate(["• Les normes se contredisent",
+                           "• Les repères habituels ne s'appliquent plus",
+                           "• L'individu est désorienté",
+                           "• Les solidarités se fragilisent"]):
+        d.text((708, 216 + i * 34), l, font=F_SMALL, fill=NOIR)
+    d.text((708, 376), "→ déviance en hausse", font=F_BOLD, fill=ROUGE)
+
+    fleche(d, 564, 280, 676, 280, GRIS, 4)
+    d.text((556, 240), "changement rapide", font=F_MINI, fill=GRIS)
+
+    d.rounded_rectangle([60, 470, 590, 620], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 492), "Ce qui provoque l'anomie", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Crise économique et chômage",
+                           "• Exode rural et déracinement",
+                           "• Transformation brutale des métiers"]):
+        d.text((84, 532 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([650, 470, 1180, 620], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((674, 492), "Prévenir", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Une école qui tient : règles et projet",
+                           "• Des activités encadrées : sport, culture",
+                           "• Des perspectives : formation et emploi"]):
+        d.text((674, 532 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 650, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=2)
+    d.text((84, 668), "Autres facteurs de déviance : la pauvreté, l'échec scolaire, la rupture "
+                      "des liens familiaux et l'appartenance à un groupe déjà déviant.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u4_anomie.png"))
+    print("Figure écrite : t11_u4_anomie.png")
+
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_couts()
@@ -1401,3 +1863,13 @@ if __name__ == "__main__":
     fig_externalites()
     fig_etat()
     fig_politiques()
+    fig_identite()
+    fig_imitation()
+    fig_mecanismes()
+    fig_primaire()
+    fig_secondaire()
+    fig_controle()
+    fig_normes()
+    fig_sanctions()
+    fig_deviance()
+    fig_anomie()
