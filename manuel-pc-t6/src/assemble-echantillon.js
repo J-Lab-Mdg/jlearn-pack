@@ -34,7 +34,7 @@ const doc = new B.Document({
 });
 
 B.Packer.toBuffer(doc).then(buf => {
-  const out = path.join(ROOT, "output", "Echantillon_Seance1_PC_T6_JLearn.docx");
+  const out = path.join(ROOT, "livrables", "Echantillon_Seance1_PC_T6_JLearn.docx");
   fs.writeFileSync(out, buf);
   console.log("OK :", out, Math.round(buf.length / 1024) + " Ko");
 });
