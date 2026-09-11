@@ -1832,6 +1832,426 @@ def fig_anomie():
     print("Figure écrite : t11_u4_anomie.png")
 
 
+# ------------------------------------------------------------
+# Figure 46 — Les éléments constitutifs de l'État
+# ------------------------------------------------------------
+def fig_etat_def():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "L'État : quatre éléments constitutifs")
+
+    cx, cy = 620, 370
+    d.ellipse([cx - 105, cy - 80, cx + 105, cy + 80], fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (cx - 105, cy - 80, cx + 105, cy + 80), "L'ÉTAT", F_TITLE, BLEU)
+
+    elements = [("TERRITOIRE", "L'espace où le pouvoir s'exerce", 90, 150, BLEU, BLEU_C),
+                ("POPULATION", "L'ensemble des ressortissants", 700, 150, VERT, VERT_C),
+                ("INSTITUTIONS", "Les organes qui exercent le pouvoir", 90, 500, ORANGE, JAUNE_C),
+                ("SOUVERAINETÉ", "Le pouvoir suprême, sans supérieur", 700, 500, VIOLET, VIOLET_C)]
+    for t, s, a, b, bord, fond in elements:
+        d.rounded_rectangle([a, b, a + 450, b + 120], radius=12, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 450, b + 46], fill=bord)
+        texte_centre(d, (a, b, a + 450, b + 46), t, F_BOLD, BLANC)
+        for i, l in enumerate(wrap(d, s, F_SMALL, 400)):
+            d.text((a + 24, b + 64 + i * 26), l, font=F_SMALL, fill=NOIR)
+        d.line([a + 225, b + 60, cx, cy + 60], fill=GRIS, width=2)
+
+    d.rounded_rectangle([400, 640, 840, 690], radius=8, fill=BLEU_C, outline=BLEU, width=2)
+    d.text((424, 660), "Sans légitimité, la force ne dure pas.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u5_etat.png"))
+    print("Figure écrite : t11_u5_etat.png")
+
+
+# ------------------------------------------------------------
+# Figure 47 — Les rôles sociaux de l'État
+# ------------------------------------------------------------
+def fig_sociaux():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les rôles sociaux de l'État")
+
+    d.rounded_rectangle([520, 300, 720, 400], radius=12, fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (520, 300, 720, 400), "L'ÉTAT", F_TITLE, BLEU)
+
+    roles = [("SÉCURITÉ", "Police, gendarmerie, armée, justice", 60, 140, ROUGE, ROSE_C),
+             ("ÉDUCATION", "Écoles, enseignants, programmes", 640, 140, VERT, VERT_C),
+             ("SANTÉ", "Centres de santé, vaccination", 60, 460, ORANGE, JAUNE_C),
+             ("PROTECTION SOCIALE", "Aides, bourses, secours d'urgence", 640, 460, VIOLET, VIOLET_C)]
+    for t, s, a, b, bord, fond in roles:
+        d.rounded_rectangle([a, b, a + 540, b + 120], radius=12, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 540, b + 44], fill=bord)
+        texte_centre(d, (a, b, a + 540, b + 44), t, F_BOLD, BLANC)
+        d.text((a + 24, b + 62), s, font=F_SMALL, fill=NOIR)
+        d.line([a + 270, b + 60, 620, 350], fill=GRIS, width=2)
+
+    d.rounded_rectangle([60, 610, 580, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 632), "Financement : l'impôt, l'emprunt", font=F_BOLD, fill=BLEU)
+    d.text((84, 666), "et l'aide extérieure.", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 610, 1180, 690], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((664, 632), "Les communes, les associations et les", font=F_SMALL, fill=NOIR)
+    d.text((664, 666), "communautés relaient l'action publique.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u5_sociaux.png"))
+    print("Figure écrite : t11_u5_sociaux.png")
+
+
+# ------------------------------------------------------------
+# Figure 48 — Les rôles économiques de l'État
+# ------------------------------------------------------------
+def fig_eco_u5():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les rôles économiques de l'État")
+
+    roles = [("1. INFRASTRUCTURES", "Routes, ports, eau, électricité", BLEU, BLEU_C),
+             ("2. CADRE JURIDIQUE", "Contrats, propriété, concurrence", VERT, VERT_C),
+             ("3. CORRIGER LE MARCHÉ", "Taxes, normes, régulation", ORANGE, JAUNE_C),
+             ("4. POLITIQUE ÉCONOMIQUE", "Croissance, emploi, prix", VIOLET, VIOLET_C),
+             ("5. PRODUIRE", "Entreprises publiques, délégation", ROUGE, ROSE_C)]
+    y = 130
+    for t, s, bord, fond in roles:
+        d.rounded_rectangle([60, y, 640, y + 82], radius=10, fill=fond, outline=bord, width=3)
+        d.text((88, y + 14), t, font=F_BOLD, fill=bord)
+        d.text((88, y + 50), s, font=F_SMALL, fill=NOIR)
+        y += 96
+
+    d.rounded_rectangle([700, 130, 1180, 340], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((724, 152), "Les quatre objectifs", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• La croissance", "• L'emploi",
+                           "• La stabilité des prix", "• L'équilibre extérieur"]):
+        d.text((724, 194 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([700, 370, 1180, 540], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((724, 392), "Les deux volets d'action", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Budgétaire : dépense publique et impôt",
+                           "• Monétaire : taux et monnaie,",
+                           "  conduits par la banque centrale"]):
+        d.text((724, 434 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([700, 570, 1180, 690], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((724, 592), "Les limites", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(wrap(d, "Coût de financement, lourdeur administrative et risque "
+                                  "d'inefficacité.", F_SMALL, 420)):
+        d.text((724, 632 + i * 28), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u5_eco.png"))
+    print("Figure écrite : t11_u5_eco.png")
+
+
+# ------------------------------------------------------------
+# Figure 49 — Monarchie et république
+# ------------------------------------------------------------
+def fig_regimes():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Monarchie et république : deux manières d'organiser le pouvoir")
+
+    d.rounded_rectangle([60, 130, 590, 470], radius=12, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.rectangle([60, 130, 590, 186], fill=VIOLET)
+    texte_centre(d, (60, 130, 590, 186), "MONARCHIE", F_BOLD, BLANC)
+    for i, l in enumerate(["• Le pouvoir appartient à une seule", "  personne : roi, reine, prince",
+                           "• Exercé à vie",
+                           "• Transmis le plus souvent par hérédité",
+                           "• Monarchie absolue : le souverain seul",
+                           "• Monarchie constitutionnelle : limitée",
+                           "  par une Constitution et un Parlement"]):
+        d.text((88, 216 + i * 34), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([650, 130, 1180, 470], radius=12, fill=VERT_C, outline=VERT, width=3)
+    d.rectangle([650, 130, 1180, 186], fill=VERT)
+    texte_centre(d, (650, 130, 1180, 186), "RÉPUBLIQUE", F_BOLD, BLANC)
+    for i, l in enumerate(["• Le pouvoir n'appartient à personne",
+                           "• Les responsables sont élus",
+                           "• Le mandat est limité dans le temps",
+                           "• Aucune fonction n'est héréditaire",
+                           "• République démocratique : élections",
+                           "  libres, pouvoirs séparés, libertés",
+                           "  publiques garanties"]):
+        d.text((678, 216 + i * 34), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 510, 1180, 590], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 532), "Trois questions caractérisent un régime : qui exerce le pouvoir, comment on y "
+                      "accède, et pendant combien de temps ?", font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 620, 1180, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((84, 644), "Madagascar est une République : les responsables sont élus et le pouvoir est "
+                      "organisé par une Constitution.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u5_regimes.png"))
+    print("Figure écrite : t11_u5_regimes.png")
+
+
+# ------------------------------------------------------------
+# Figure 51 — L'État de droit et la séparation des pouvoirs
+# ------------------------------------------------------------
+def fig_etat_droit():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "L'État de droit et la séparation des trois pouvoirs")
+
+    d.rounded_rectangle([60, 120, 1180, 200], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 142), "ÉTAT DE DROIT", font=F_BOLD, fill=BLEU)
+    d.text((300, 144), "la puissance publique est soumise à des règles écrites, "
+                       "stables et contrôlées", font=F_SMALL, fill=NOIR)
+    d.text((84, 172), "Celui qui fait la loi ne la juge pas ; celui qui l'exécute ne la fabrique pas.",
+           font=F_SMALL, fill=NOIR)
+
+    sommets = [("LÉGISLATIF", "Le Parlement", "vote la loi et contrôle", 110, BLEU, BLEU_C),
+               ("EXÉCUTIF", "Gouvernement et administration", "applique la loi", 500, ORANGE, JAUNE_C),
+               ("JUDICIAIRE", "Les tribunaux", "jugent et sanctionnent", 890, VERT, VERT_C)]
+    for t, s, s2, a, bord, fond in sommets:
+        d.rounded_rectangle([a, 250, a + 300, 400], radius=12, fill=fond, outline=bord, width=3)
+        d.rectangle([a, 250, a + 300, 296], fill=bord)
+        texte_centre(d, (a, 250, a + 300, 296), t, F_BOLD, BLANC)
+        texte_centre(d, (a, 306, a + 300, 340), s, F_MINI, NOIR)
+        texte_centre(d, (a, 340, a + 300, 374), s2, F_MINI, NOIR)
+
+    d.line([410, 325, 500, 325], fill=GRIS, width=3)
+    d.line([800, 325, 890, 325], fill=GRIS, width=3)
+    d.line([410, 340, 890, 340], fill=(200, 200, 200), width=2)
+
+    d.rounded_rectangle([60, 440, 600, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 462), "Les conditions", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• L'égalité de tous devant la loi",
+                           "• L'indépendance de la justice",
+                           "• L'existence de recours contre les",
+                           "  décisions publiques",
+                           "• Le respect des droits fondamentaux"]):
+        d.text((84, 502 + i * 32), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 440, 1180, 690], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((664, 462), "Les pouvoirs se limitent mutuellement", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["• Le Parlement contrôle le Gouvernement",
+                           "• Le juge sanctionne les excès de",
+                           "  l'administration",
+                           "• Le Gouvernement engage sa responsabilité",
+                           "  devant le Parlement"]):
+        d.text((664, 502 + i * 32), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u5_etat_droit.png"))
+    print("Figure écrite : t11_u5_etat_droit.png")
+
+
+# ------------------------------------------------------------
+# Figure 52 — De la Constitution aux institutions
+# ------------------------------------------------------------
+def fig_institutions():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "De la Constitution aux institutions")
+
+    d.rounded_rectangle([320, 120, 920, 230], radius=12, fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (320, 120, 920, 175), "LA CONSTITUTION", F_TITLE, BLEU)
+    texte_centre(d, (320, 175, 920, 230), "norme suprême · organise les pouvoirs · garantit les droits",
+                 F_MINI, NOIR)
+
+    institutions = [("PRÉSIDENCE", "Chef de l'État", 60, 330, VERT, VERT_C),
+                    ("GOUVERNEMENT", "Conduit l'action de l'État", 340, 330, ORANGE, JAUNE_C),
+                    ("PARLEMENT", "Vote la loi", 620, 330, VIOLET, VIOLET_C),
+                    ("JURIDICTIONS", "Jugent les litiges", 900, 330, ROUGE, ROSE_C)]
+    for t, s, a, b, bord, fond in institutions:
+        d.rounded_rectangle([a, b, a + 280, b + 120], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 280, b + 42], fill=bord)
+        texte_centre(d, (a, b, a + 280, b + 42), t, F_BOLD, BLANC)
+        texte_centre(d, (a, b + 50, a + 280, b + 90), s, F_MINI, NOIR)
+        d.line([a + 140, b, 620, 232], fill=GRIS, width=2)
+
+    d.rounded_rectangle([60, 500, 590, 690], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 522), "Ce que contient la Constitution", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• L'organisation des pouvoirs",
+                           "• Les droits et libertés",
+                           "• La procédure de révision"]):
+        d.text((84, 562 + i * 32), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 500, 1180, 690], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((664, 522), "Révision et contrôle", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• La révision obéit à une procédure plus",
+                           "  lourde que celle d'une loi : majorité",
+                           "  qualifiée ou référendum",
+                           "• Le contrôle de constitutionnalité écarte",
+                           "  la règle qui méconnaît la Constitution"]):
+        d.text((664, 562 + i * 30), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u5_institutions.png"))
+    print("Figure écrite : t11_u5_institutions.png")
+
+
+# ------------------------------------------------------------
+# Figure 53 — Les libertés publiques
+# ------------------------------------------------------------
+def fig_libertes():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Les libertés publiques, leurs limites et leurs garanties")
+
+    d.rounded_rectangle([560, 250, 680, 370], radius=14, fill=BLEU_C, outline=BLEU, width=4)
+    texte_centre(d, (560, 250, 680, 370), "LIBERTÉS\nPUBLIQUES", F_BOLD, BLEU)
+
+    libertes = [("EXPRESSION", "Dire, écrire et publier ses opinions", 60, 130, VERT, VERT_C),
+                ("RÉUNION", "Se rassembler pacifiquement", 900, 130, ORANGE, JAUNE_C),
+                ("ASSOCIATION", "S'organiser durablement", 60, 460, VIOLET, VIOLET_C),
+                ("CIRCULATION", "Aller et venir sur le territoire", 480, 130, ROUGE, ROSE_C),
+                ("CONSCIENCE", "Croire ou ne pas croire", 900, 460, BLEU, BLEU_C)]
+    for t, s, a, b, bord, fond in libertes:
+        d.rounded_rectangle([a, b, a + 280, b + 110], radius=10, fill=fond, outline=bord, width=3)
+        d.rectangle([a, b, a + 280, b + 42], fill=bord)
+        texte_centre(d, (a, b, a + 280, b + 42), t, F_BOLD, BLANC)
+        for i, l in enumerate(wrap(d, s, F_MINI, 240)):
+            d.text((a + 18, b + 54 + i * 22), l, font=F_MINI, fill=NOIR)
+        d.line([a + 140, b + 55, 620, 310], fill=GRIS, width=2)
+
+    d.rounded_rectangle([60, 600, 590, 690], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((84, 622), "Les limites", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(["• La liberté d'autrui et l'ordre public",
+                           "• Ni diffamation, ni appel à la haine"]):
+        d.text((84, 656 + i * 26), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 600, 1180, 690], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((664, 622), "Les garanties", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["• La Constitution et la loi ; le juge sanctionne",
+                           "• Un recours est ouvert à tout citoyen"]):
+        d.text((664, 656 + i * 26), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u5_libertes.png"))
+    print("Figure écrite : t11_u5_libertes.png")
+
+
+# ------------------------------------------------------------
+# Figure 54 — Le droit coutumier
+# ------------------------------------------------------------
+def fig_coutumier():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "Le droit coutumier et sa place dans les sources du droit")
+
+    d.rounded_rectangle([60, 130, 600, 400], radius=12, fill=VIOLET_C, outline=VIOLET, width=3)
+    d.rectangle([60, 130, 600, 184], fill=VIOLET)
+    texte_centre(d, (60, 130, 600, 184), "CARACTÉRISTIQUES", F_BOLD, BLANC)
+    for i, l in enumerate(["• Règles issues des usages du groupe",
+                           "• Transmises oralement",
+                           "• Locales et évolutives",
+                           "• Appliquées par les instances traditionnelles",
+                           "• Recherchent la conciliation"]):
+        d.text((88, 214 + i * 32), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 130, 1180, 400], radius=12, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.rectangle([640, 130, 1180, 184], fill=ORANGE)
+    texte_centre(d, (640, 130, 1180, 184), "DOMAINES D'INTERVENTION", F_BOLD, BLANC)
+    for i, l in enumerate(["• Mariage, filiation et successions",
+                           "• Occupation et transmission des terres",
+                           "• Gestion de l'eau, de la forêt, des pâturages",
+                           "• Conflits de voisinage et de bornage"]):
+        d.text((668, 214 + i * 32), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 430, 600, 620], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((84, 452), "Avantages", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["• Règle connue et comprise de tous",
+                           "• Justice proche, rapide et peu coûteuse",
+                           "• Décision acceptée par la communauté"]):
+        d.text((84, 492 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([640, 430, 1180, 620], radius=10, fill=ROSE_C, outline=ROUGE, width=3)
+    d.text((664, 452), "Limites", font=F_BOLD, fill=ROUGE)
+    for i, l in enumerate(["• Incertitude de la règle orale",
+                           "• Inégalité possible devant les décisions",
+                           "• Risque de heurter les droits fondamentaux"]):
+        d.text((664, 492 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([60, 650, 1180, 690], radius=8, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((84, 668), "Le droit coutumier s'applique là où la loi le permet, sans jamais pouvoir "
+                      "contredire la Constitution ni priver personne du recours au juge.", font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u5_coutumier.png"))
+    print("Figure écrite : t11_u5_coutumier.png")
+
+
+# ------------------------------------------------------------
+# Figure 55 — Les lois et les règlements
+# ------------------------------------------------------------
+def fig_lois():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "De la proposition de loi à son application")
+
+    chaine = [("DÉPÔT", "projet ou proposition", BLEU, BLEU_C),
+              ("EXAMEN", "commission et débat", VERT, VERT_C),
+              ("VOTE", "par le Parlement", ORANGE, JAUNE_C),
+              ("PROMULGATION", "par le chef de l'État", VIOLET, VIOLET_C),
+              ("PUBLICATION", "au journal officiel", ROUGE, ROSE_C)]
+    x = 50
+    for t, s, bord, fond in chaine:
+        d.rounded_rectangle([x, 140, x + 210, 260], radius=10, fill=fond, outline=bord, width=3)
+        texte_centre(d, (x, 140, x + 210, 184), t, F_BOLD, bord)
+        for i, l in enumerate(wrap(d, s, F_MINI, 175)):
+            d.text((x + 16, 194 + i * 24), l, font=F_MINI, fill=NOIR)
+        if x < 900:
+            fleche(d, x + 212, 200, x + 246, 200, GRIS, 3)
+        x += 246
+
+    d.rounded_rectangle([50, 300, 580, 480], radius=10, fill=BLEU_C, outline=BLEU, width=3)
+    d.text((74, 322), "La LOI", font=F_BOLD, fill=BLEU)
+    for i, l in enumerate(["• Règle générale, impersonnelle et obligatoire",
+                           "• Votée par le Parlement",
+                           "• S'impose à tous dès sa publication",
+                           "• « Nul n'est censé ignorer la loi »"]):
+        d.text((74, 366 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([610, 300, 1190, 480], radius=10, fill=JAUNE_C, outline=ORANGE, width=3)
+    d.text((634, 322), "Le RÈGLEMENT", font=F_BOLD, fill=ORANGE)
+    for i, l in enumerate(["• Acte pris par l'exécutif pour appliquer la loi",
+                           "• Décret : chef de l'État ou du Gouvernement",
+                           "• Arrêté : ministre ou autorité locale",
+                           "• Il ne peut ni ajouter à la loi ni la contredire"]):
+        d.text((634, 366 + i * 30), l, font=F_SMALL, fill=NOIR)
+
+    d.rounded_rectangle([50, 520, 1190, 690], radius=10, fill=VERT_C, outline=VERT, width=3)
+    d.text((74, 542), "L'application dans le temps", font=F_BOLD, fill=VERT)
+    for i, l in enumerate(["• En principe, la loi ne dispose que pour l'avenir : elle ne s'applique pas aux faits passés.",
+                           "• Exception : la loi pénale plus douce peut rétroagir.",
+                           "• Une loi non publiée n'est pas applicable : nul ne peut respecter une règle inconnue."]):
+        d.text((74, 586 + i * 32), l, font=F_SMALL, fill=NOIR)
+    img.save(os.path.join(OUT, "t11_u5_lois.png"))
+    print("Figure écrite : t11_u5_lois.png")
+
+
+# ------------------------------------------------------------
+# Figure 56 — La pyramide des sources du droit
+# ------------------------------------------------------------
+def fig_pyramide():
+    W, H = 1240, 700
+    img = Image.new("RGB", (W, H), BLANC)
+    d = ImageDraw.Draw(img)
+    cadre(d, W, H, "La pyramide des sources du droit")
+
+    niveaux = [("LA CONSTITUTION", "norme suprême — toutes les autres règles doivent la respecter",
+                480, 130, 760, 190, BLEU, BLEU_C),
+               ("LES TRAITÉS INTERNATIONAUX", "régulièrement ratifiés et publiés : valeur supérieure à la loi",
+                380, 250, 860, 310, VIOLET, VIOLET_C),
+               ("LES LOIS", "règles générales votées par le Parlement",
+                300, 370, 940, 430, ORANGE, JAUNE_C),
+               ("LES DÉCRETS", "pris par le chef de l'État ou du Gouvernement",
+                220, 490, 1020, 550, VERT, VERT_C),
+               ("LES ARRÊTÉS", "pris par un ministre ou une autorité locale",
+                140, 610, 1100, 670, ROUGE, ROSE_C)]
+    for t, s, a, b, c, e, bord, fond in niveaux:
+        d.rounded_rectangle([a, b, c, e], radius=8, fill=fond, outline=bord, width=3)
+        texte_centre(d, (a, b, c, e - 26), t, F_BOLD, bord)
+        texte_centre(d, (a, b + 30, c, e), s, F_MINI, NOIR)
+
+    fleche(d, 90, 400, 90, 160, GRIS, 3)
+    d.text((30, 260), "chaque", font=F_MINI, fill=GRIS)
+    d.text((30, 282), "règle", font=F_MINI, fill=GRIS)
+    d.text((30, 304), "respecte", font=F_MINI, fill=GRIS)
+    d.text((30, 326), "celle qui", font=F_MINI, fill=GRIS)
+    d.text((30, 348), "la domine", font=F_MINI, fill=GRIS)
+
+    img.save(os.path.join(OUT, "t11_u5_pyramide.png"))
+    print("Figure écrite : t11_u5_pyramide.png")
+
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     fig_couts()
@@ -1873,3 +2293,13 @@ if __name__ == "__main__":
     fig_sanctions()
     fig_deviance()
     fig_anomie()
+    fig_etat_def()
+    fig_sociaux()
+    fig_eco_u5()
+    fig_regimes()
+    fig_etat_droit()
+    fig_institutions()
+    fig_libertes()
+    fig_coutumier()
+    fig_lois()
+    fig_pyramide()
