@@ -54,7 +54,9 @@ header_block(doc, "LAMIM-PANDANIANA Tetikasan-tSekoly Ifanekena")
 flat = []
 for (sehatra, lahasa, fepotoana, series) in TESI.rows:
     for (asa, isa, vidin, tot, stv, loha, mpanat, mpiand) in series:
-        its = items_of(asa, isa, vidin, tot)
+        its = [it for it in items_of(asa, isa, vidin, tot) if it[3] != "N/A"]  # chiffres seulement
+        if not its:
+            continue
         for k, it in enumerate(its):
             flat.append((lahasa, it, norm_loha(loha, it[0]), stv if k == len(its) - 1 else None))
 
