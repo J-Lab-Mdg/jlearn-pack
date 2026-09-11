@@ -1,4 +1,4 @@
-// builders.js — Fonctions docx réutilisables pour le Manuel Physique-Chimie T6 J-Learn
+// builders.js — Fonctions docx réutilisables pour le Manuel Physique-Chimie T7 J-Learn
 const {
   Document, Packer, Paragraph, TextRun, AlignmentType,
   Table, TableRow, TableCell, WidthType, BorderStyle,
@@ -156,7 +156,7 @@ function metaTable(meta) {
   ];
   const right = [
     L("Date", "________________"),
-    L("Classe", meta.classe || "T6"),
+    L("Classe", meta.classe || "T7"),
     L("Séance n°", meta.seanceNo),
     L("Durée", "________________"),
   ];

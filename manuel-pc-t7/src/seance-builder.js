@@ -111,7 +111,7 @@ function buildFiche(S, rootDir) {
     objectif: "À la fin de la séance, l'apprenant sera capable d'" + S.objectif + ".",
     documentation: S.documentation,
     support: S.support,
-    classe: "T6",
+    classe: "T7",
     seanceNo: `${S.numero} / ${S.total}`,
   };
 
