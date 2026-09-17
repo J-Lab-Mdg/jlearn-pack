@@ -18,7 +18,7 @@ function supportFor(etape, topic) {
   switch (etape) {
     case "revision": return "";
     case "mise":     return topic.supportMise || "Tableau noir";
-    case "pres":     return "Tableau noir, cahier";
+    case "pres":     return "Tableau noir, fiche de leçon";
     case "obs":      return topic.observationSupport || "Tableau noir";
     case "ana":      return topic.observationSupport || "Tableau noir";
     case "syn":      return "Tableau noir";
