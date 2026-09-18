@@ -17,6 +17,30 @@ function img(rootDir, rel, wPx) {
   return B.imagePara(p, wPx, h);
 }
 
+// ---------------- Bookcover pleine page (page 1, sans marge) ----------------
+function buildBookcover(rootDir) {
+  const { ImageRun, Paragraph, HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, TextWrappingType } = require("docx");
+  const p = path.join(rootDir, "images/bookcover_PC_T8_a4.png");
+  if (!fs.existsSync(p)) return [];
+  const data = fs.readFileSync(p);
+  // A4 = 794 × 1123 px (96 dpi) — image flottante ancrée au bord de la PAGE : couvre tout, sans marge
+  const para = new Paragraph({
+    children: [new ImageRun({
+      type: "png",
+      data,
+      transformation: { width: 794, height: 1123 },
+      floating: {
+        horizontalPosition: { relative: HorizontalPositionRelativeFrom.PAGE, offset: 0 },
+        verticalPosition: { relative: VerticalPositionRelativeFrom.PAGE, offset: 0 },
+        wrap: { type: TextWrappingType.NONE },
+        behindDocument: true,
+        allowOverlap: true,
+      },
+    })],
+  });
+  return [para, B.pageBreak()];
+}
+
 // ---------------- Couverture ----------------
 function buildCouverture(rootDir) {
   const out = [];
@@ -163,4 +187,4 @@ function buildPageUnite(u, rootDir) {
   return out;
 }
 
-module.exports = { buildCouverture, buildAvantPropos, buildModeEmploi, buildSommaire, buildTableauBord, buildPageUnite };
+module.exports = { buildBookcover, buildCouverture, buildAvantPropos, buildModeEmploi, buildSommaire, buildTableauBord, buildPageUnite };

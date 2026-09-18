@@ -90,6 +90,7 @@ const figures = allContenu
 // ---------- assemblage ----------
 const children = [];
 
+children.push(...FM.buildBookcover(ROOT));   // page 1 : bookcover officiel pleine page, sans marge
 children.push(...FM.buildCouverture(ROOT));
 children.push(...FM.buildAvantPropos());
 children.push(...FM.buildModeEmploi());
