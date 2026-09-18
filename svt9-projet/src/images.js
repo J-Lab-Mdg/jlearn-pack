@@ -8,6 +8,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 const NEW = require("./schemas-new");
+const T9 = require("./schemas-t9");
 
 const OUT = path.join(__dirname, "..", "output", "images");
 const W = 900, H = 640;
@@ -17,7 +18,7 @@ function wrap(inner) {
   <rect width="${W}" height="${H}" fill="#ffffff"/>${inner}</svg>`;
 }
 
-const IMAGES = { ...NEW.SCHEMAS_NEW };
+const IMAGES = { ...NEW.SCHEMAS_NEW, ...T9.SCHEMAS_T9 };
 
 async function generateAll() {
   fs.mkdirSync(OUT, { recursive: true });
