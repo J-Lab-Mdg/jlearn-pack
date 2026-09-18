@@ -29,7 +29,7 @@ function buildCouverture(rootDir) {
   if (cov) out.push(cov);
   out.push(B.p("Manuel de l'enseignant et de l'apprenant", { size: 24, align: AlignmentType.CENTER, spacingBefore: 300, spacingAfter: 80 }));
   out.push(B.p("Fiches de préparation • Leçons illustrées • Exercices corrigés", { italics: true, size: 20, align: AlignmentType.CENTER, spacingAfter: 400 }));
-  out.push(B.p("Version V1 — Année scolaire 2026-2027", { size: 20, align: AlignmentType.CENTER, spacingAfter: 60 }));
+  out.push(B.p("Version V1", { size: 20, align: AlignmentType.CENTER, spacingAfter: 60 }));
   out.push(B.pageBreak());
   return out;
 }
@@ -43,7 +43,7 @@ function buildAvantPropos() {
     "Chaque séance est construite selon la même architecture en trois temps : la fiche de préparation destinée à l'enseignant, avec le déroulement complet de la séance (révision, nouvelle leçon en six étapes, évaluation) ; la leçon illustrée à destination de l'apprenant, avec ses mots-clés mis en évidence ; et une série d'exercices notés sur 20 points, accompagnés de leur corrigé détaillé.",
     "Une attention particulière a été portée au contexte malgache : les exemples, les anecdotes et les expériences s'appuient sur la vie quotidienne des élèves — la marmite de riz, le fatapera, le taxi-brousse de la RN7, les troncs flottés du canal des Pangalanes, le compteur et la facture de la JIRAMA, le zébu de trait, l'arc-en-ciel des rizières ou la solution de réhydratation des centres de santé. Chaque séance propose en outre une rubrique « Expérience à la maison » réalisable avec du matériel simple, un encadré « Le savais-tu ? » pour éveiller la curiosité, et un tableau de matériel de substitution qui remplace le matériel de laboratoire par des équivalents locaux faciles à trouver.",
     "Quatre sujets d'examen d'unité et un examen blanc final, tous corrigés et barémés, permettent d'évaluer régulièrement les acquis. Le tableau de bord placé au début du manuel aide l'apprenant à suivre sa progression séance après séance.",
-    "Nous souhaitons que ce manuel soit un compagnon fidèle de l'enseignant comme de l'apprenant, et qu'il contribue à faire aimer les sciences physiques à tous les élèves de 3e, jusqu'au BEPC et au-delà.",
+    "Nous souhaitons que ce manuel soit un compagnon fidèle de l'enseignant comme de l'apprenant, et qu'il contribue à faire aimer les sciences physiques à tous les élèves de 3e, jusqu'au Sujet d'examen 3e et au-delà.",
   ].forEach(t => out.push(B.p(t, { size: 22, spacingAfter: 120, align: AlignmentType.JUSTIFIED })));
   out.push(B.p("L'équipe J-Learn", { italics: true, size: 22, align: AlignmentType.RIGHT, spacingBefore: 120 }));
   out.push(B.pageBreak());

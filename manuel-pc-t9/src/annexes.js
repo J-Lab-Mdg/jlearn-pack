@@ -321,7 +321,7 @@ function annexe6() {
     ]})));
   }
   out.push(new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, rows }));
-  out.push(B.p("Conseil : refais cette auto-évaluation avant chaque examen d'unité, puis avant l'examen blanc. Le BEPC se prépare toute l'année !", {
+  out.push(B.p("Conseil : refais cette auto-évaluation avant chaque examen d'unité, puis avant l'examen blanc. Le Sujet d'examen 3e se prépare toute l'année !", {
     italics: true, size: 20, spacingBefore: 120,
   }));
   out.push(B.pageBreak());
@@ -384,7 +384,8 @@ function annexe8(figures) {
   ].forEach(t => out.push(B.p("• " + t, { size: 21, spacingAfter: 40 })));
 
   out.push(B.p("Table des illustrations", { bold: true, size: 22, color: B.GREEN, spacingBefore: 160, spacingAfter: 80 }));
-  figures.forEach(f => out.push(B.p(f, { size: 20, spacingAfter: 30 })));
+  out.push(B.p("Chaque légende est cliquable : elle conduit à la séance correspondante.", { italics: true, size: 19, spacingAfter: 60 }));
+  figures.forEach(f => out.push(B.tocLink(f.legende + " (séance " + f.numero + ")", f.anchor, { size: 20, spacingAfter: 30 })));
   return out;
 }
 

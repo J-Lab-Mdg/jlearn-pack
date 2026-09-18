@@ -85,7 +85,7 @@ const annexesToc = [
 const allContenu = [...U1.seances, ...U2.seances, ...U3.seances, ...U4.seances];
 const figures = allContenu
   .filter(s => s.imageLegende)
-  .map(s => s.imageLegende);
+  .map(s => ({ legende: s.imageLegende, anchor: anchorOf(s.numero), numero: s.numero }));
 
 // ---------- assemblage ----------
 const children = [];
@@ -103,7 +103,7 @@ for (const u of plan) {
     children.push(B.p("", { size: 20, spacingAfter: 600 }));
     children.push(B.heading("EXAMEN BLANC DE FIN D'ANNÉE", { anchorId: "examenblanc", size: 34, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 120 }));
     children.push(B.p("Tout le programme : Mécanique • Électricité • Optique • Chimie", { bold: true, size: 26, align: AlignmentType.CENTER, spacingAfter: 200 }));
-    children.push(B.p("Avant de commencer : relis tes fiches d'auto-évaluation, vérifie ton tableau de bord, prépare ta règle, ton rapporteur et ta calculatrice. Bon courage pour cette répétition générale du BEPC !", { italics: true, size: 22, align: AlignmentType.CENTER, spacingAfter: 200 }));
+    children.push(B.p("Avant de commencer : relis tes fiches d'auto-évaluation, vérifie ton tableau de bord, prépare ta règle, ton rapporteur et ta calculatrice. Bon courage pour cette répétition générale du Sujet d'examen 3e !", { italics: true, size: 22, align: AlignmentType.CENTER, spacingAfter: 200 }));
     children.push(B.pageBreak());
   }
   u.data.forEach((s) => {
