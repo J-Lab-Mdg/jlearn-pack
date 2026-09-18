@@ -212,10 +212,10 @@ function generateSeanceDocContent(topic, seanceNum, totalSeances) {
     theme: topic.theme,
     titre: topic.titre,
     objectif: topic.objectif,
-    documentation: "Programme d'Études — Classe de T7 (SVT), DCRP",
+    documentation: "Programme d'Études — Classe de T9 (SVT), DCRP",
     support: topic.supportMeta || "",
     date: "____________",
-    classe: "T7",
+    classe: "T9",
     seance: seanceNum + " / " + totalSeances,
     duree: "____________", // durée laissée à l'enseignant (demande utilisateur)
     ras: topic.ras || "",
