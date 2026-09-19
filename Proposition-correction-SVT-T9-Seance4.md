@@ -12,8 +12,8 @@ Séance servant de **gabarit de référence** : une fois validée, les 40 autres
 
 | Point | Décision | Source |
 |---|---|---|
-| **Durée** | **50 min** — Unité I = 10 h au PE T9, soit 600 min / 12 séances | `PE_T9 (1).docx`, « ALIMENTATION DE L'HOMME — Durée : 10 heures » |
-| **Répartition I/II/III** | **5 / 37 / 8 min** (proportionnelle, recalculée — pas le gabarit 3/22/5 recopié) | SKILL.md « Répartition I/II/III proportionnelle, jamais un gabarit figé » |
+| **Durée** | **laissée vide** (`____________`) — choix de l'enseignant, arbitrage validé | Décision utilisateur |
+| **Répartition I/II/III** | **aucune durée affichée**, cohérent avec le champ Durée vide | Décision utilisateur |
 | **Valeurs chiffrées** | glucides **4 kcal/g**, protéines **4 kcal/g**, lipides **9 kcal/g** (coefficients d'Atwater) ; en kJ : 17 / 17 / 37 | Vérifié sur FAO/INFOODS, *Directives relatives à la conversion d'unités* — à porter en « Fanovozan-kevitra » |
 | **Valeurs à véhiculer** | **autonomie, esprit de créativité** (et non la formule générique actuelle) | PE T9, thématique Alimentation de l'homme |
 | **Objectif spécifique** | propre à la séance, plus le RAS du sous-thème recopié | design-fiche.md §6 |
@@ -50,7 +50,7 @@ Séance servant de **gabarit de référence** : une fois validée, les 40 autres
 | **Discipline :** Sciences de la vie et de la terre | **Date :** ____________ |
 | **Thème :** Alimentation de l'homme | **Classe :** T9 |
 | **Titre :** Valeur énergétique des nutriments | **Séance n° :** 4 / 51 |
-| **Objectif spécifique :** calculer la valeur énergétique d'un aliment et d'un repas à partir de sa composition en nutriments | **Durée :** 50 min |
+| **Objectif spécifique :** calculer la valeur énergétique d'un aliment et d'un repas à partir de sa composition en nutriments | **Durée :** ____________ |
 | **Documentation :** Programme d'Études — Classe de T9 (SVT), DCRP ; FAO/INFOODS, *Directives relatives à la conversion d'unités* (coefficients d'Atwater) | |
 | **Support et matériel :** étiquettes nutritionnelles d'emballages, tableau des coefficients, ardoises de groupe | |
 | **Valeurs à véhiculer :** autonomie, esprit de créativité | |
@@ -61,15 +61,15 @@ Séance servant de **gabarit de référence** : une fois validée, les 40 autres
 
 | Étapes et Durée | Enseignant | Apprenants | Technique et Stratégie | Support et Matériel | Observation |
 |---|---|---|---|---|---|
-| **I. RÉVISION**<br>*5 min* | Citez les trois nutriments qui apportent de l'énergie.<br>Quel nutriment construit et répare le corps ?<br>Les vitamines apportent-elles de l'énergie ? | R.A. : Les glucides, les lipides et les protéines.<br>R.A. : Les protéines construisent et réparent l'organisme.<br>R.A. : Non, elles protègent et régulent, elles n'apportent pas d'énergie. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON — *37 min*** *(ligne fusionnée, colspan 6)* ||||||
+| **I. RÉVISION** | Citez les trois nutriments qui apportent de l'énergie.<br>Quel nutriment construit et répare le corps ?<br>Les vitamines apportent-elles de l'énergie ? | R.A. : Les glucides, les lipides et les protéines.<br>R.A. : Les protéines construisent et réparent l'organisme.<br>R.A. : Non, elles protègent et régulent, elles n'apportent pas d'énergie. | Questionnement oral | — | |
+| **II. NOUVELLE LEÇON** *(ligne fusionnée, colspan 6)* ||||||
 | 1. Mise en situation | Rakoto mange une assiette de riz. Nivo mange la même assiette de riz avec une cuillerée d'huile. Qui reçoit le plus d'énergie ? | R.A. : Nivo, parce que l'huile apporte de l'énergie en plus. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui nous allons apprendre : « Valeur énergétique des nutriments ». Après cette séance vous serez capables de calculer l'énergie apportée par un aliment et par un repas. | Les élèves écoutent. | Exposé | Tableau noir, cahier | |
 | 3. Observation | Regardez et observez bien cette étiquette nutritionnelle et le tableau des coefficients écrit au tableau. | Les élèves observent silencieusement. | Observation dirigée | Étiquette nutritionnelle, tableau des coefficients | |
 | 4. Analyse | Quels nutriments figurent sur l'étiquette ?<br>Combien d'énergie apporte 1 g de glucides ?<br>Et 1 g de lipides ?<br>Lequel apporte le plus d'énergie pour la même masse ?<br>Comment calculer l'énergie de 20 g de glucides ? | R.A. : Les glucides, les protéines et les lipides.<br>R.A. : 1 g de glucides apporte 4 kcal.<br>R.A. : 1 g de lipides apporte 9 kcal.<br>R.A. : Les lipides, ils apportent plus du double des glucides.<br>R.A. : On multiplie la masse par le coefficient : 20 × 4 = 80 kcal. | Observation, étude de documents, travail de groupe | Étiquette nutritionnelle, tableau des coefficients | |
 | 5. Synthèse | **Donc,** 1 g de glucides et 1 g de protéines apportent chacun 4 kcal, tandis que 1 g de lipides apporte 9 kcal. Cette énergie est libérée dans les cellules par la respiration cellulaire. Pour connaître l'énergie d'un aliment, on multiplie la masse de chaque nutriment par son coefficient, puis on additionne les résultats. | Les élèves écoutent. | Exposé magistral | Tableau noir | |
 | 6. Application | **Exercice 1** — Complète le tableau (masse × coefficient) :<br>a) 30 g de glucides → ……<br>b) 10 g de protéines → ……<br>c) 5 g de lipides → ……<br>d) 12 g de lipides → ……<br><br>**Exercice 2** — Vrai ou Faux :<br>1. 1 g de lipides apporte 4 kcal.<br>2. Les protéines et les glucides ont le même coefficient.<br>3. Les vitamines apportent 4 kcal par gramme.<br>4. Pour la même masse, les lipides apportent plus d'énergie que les glucides. | **Ex. 1** : a) 30 × 4 = **120 kcal** · b) 10 × 4 = **40 kcal** · c) 5 × 9 = **45 kcal** · d) 12 × 9 = **108 kcal**<br><br>**Ex. 2** : 1. **F** — 1 g de lipides apporte **9 kcal**, pas 4. · 2. **V** — tous deux **4 kcal/g**. · 3. **F** — les vitamines **n'apportent pas d'énergie**. · 4. **V** — **9 kcal contre 4 kcal**. | Travail de groupe | Grande ardoise, cahier | |
-| **III. ÉVALUATION**<br>*8 min* | **Exercice 1** — Calcule l'énergie de chaque quantité :<br>a) 25 g de glucides · b) 8 g de lipides · c) 15 g de protéines · d) 4 g de lipides<br><br>**Exercice 2** — Un morceau de manioc bouilli contient 32 g de glucides, 1 g de protéines et 0 g de lipides.<br>1. Calcule l'énergie apportée par les glucides.<br>2. Calcule celle apportée par les protéines.<br>3. Calcule le total.<br>4. Ce manioc est-il un aliment riche en lipides ? Justifie. | **Ex. 1** : a) 25 × 4 = **100 kcal** · b) 8 × 9 = **72 kcal** · c) 15 × 4 = **60 kcal** · d) 4 × 9 = **36 kcal**<br><br>**Ex. 2** : 1. 32 × 4 = **128 kcal** · 2. 1 × 4 = **4 kcal** · 3. 128 + 4 = **132 kcal** · 4. **Non**, il contient **0 g de lipides** : c'est un aliment **énergétique riche en glucides**. | Évaluation écrite individuelle | Cahier, feuille d'évaluation | |
+| **III. ÉVALUATION** | **Exercice 1** — Calcule l'énergie de chaque quantité :<br>a) 25 g de glucides · b) 8 g de lipides · c) 15 g de protéines · d) 4 g de lipides<br><br>**Exercice 2** — Un morceau de manioc bouilli contient 32 g de glucides, 1 g de protéines et 0 g de lipides.<br>1. Calcule l'énergie apportée par les glucides.<br>2. Calcule celle apportée par les protéines.<br>3. Calcule le total.<br>4. Ce manioc est-il un aliment riche en lipides ? Justifie. | **Ex. 1** : a) 25 × 4 = **100 kcal** · b) 8 × 9 = **72 kcal** · c) 15 × 4 = **60 kcal** · d) 4 × 9 = **36 kcal**<br><br>**Ex. 2** : 1. 32 × 4 = **128 kcal** · 2. 1 × 4 = **4 kcal** · 3. 128 + 4 = **132 kcal** · 4. **Non**, il contient **0 g de lipides** : c'est un aliment **énergétique riche en glucides**. | Évaluation écrite individuelle | Cahier, feuille d'évaluation | |
 
 ---
 
@@ -130,16 +130,16 @@ Connaître la valeur énergétique permet de comparer deux aliments et d'adapter
 
 ## E. Section EXERCICES *(notés avec barème)*
 
-**Exercice 1 (4 points)** — Calcule l'énergie apportée par chaque quantité.
+**Exercice 1 (5 points)** — Calcule l'énergie apportée par chaque quantité.
 1. 50 g de glucides 2. 20 g de protéines 3. 10 g de lipides 4. 7 g de lipides
 
-**Exercice 2 (4 points)** — Écris V ou F et corrige les affirmations fausses.
+**Exercice 2 (5 points)** — Écris V ou F et corrige les affirmations fausses.
 1. Les lipides apportent 9 kcal par gramme.
 2. Les vitamines apportent de l'énergie à l'organisme.
 3. Les glucides et les protéines ont le même coefficient énergétique.
 4. Pour 10 g, les glucides apportent plus d'énergie que les lipides.
 
-**Exercice 3 (8 points)** — Calcule la valeur énergétique totale de chaque aliment.
+**Exercice 3 (6 points)** — Calcule la valeur énergétique totale de chaque aliment.
 
 | Aliment | Glucides | Protéines | Lipides |
 |---|---|---|---|
