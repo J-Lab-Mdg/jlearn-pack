@@ -77,3 +77,26 @@ Le manuel actuel est à 0 % : son problème n'est pas le plagiat, c'est l'absenc
 Les PDF du FRP ne sont pas versionnés dans le dépôt (`sources-frp/` est dans `.gitignore`) : ce sont des documents tiers, conservés localement comme référence de travail.
 
 Pour préparer un extrait exploitable, enregistrer le texte de la ressource dans un `.txt` UTF-8 sous `sources-frp/`, en conservant les titres `RES x.y` — ils facilitent la localisation d'un passage signalé.
+
+## Exception de terminologie (ajoutée pour l'Unité IV)
+
+Le contrôle exempte, en plus du gabarit J-Learn, une courte liste de
+**dénominations imposées** : noms de maladies et d'organes que le Programme
+d'Études fixe en toutes lettres (`TERMINOLOGIE` dans le script).
+
+**Pourquoi.** Le français élide beaucoup : `cancer du col de l'utérus` compte
+**six mots** pour l'outil. Nommer correctement la maladie suffisait donc à
+déclencher une alerte, sans qu'aucune phrase du FRP n'ait été reprise. En
+sciences, mal nommer une pathologie est une faute plus grave qu'une
+coïncidence de six mots.
+
+**Garde-fous.** L'exemption s'applique par **égalité stricte**, pas par
+inclusion : dès qu'un seul mot de formulation entoure le terme, le passage est
+de nouveau signalé. Contrôle de non-régression effectué après l'ajout :
+
+| Vérification | Résultat |
+|---|---|
+| Recopie littérale d'un paragraphe du FRP | **99,55 %** détecté ✅ |
+| Unités I, II (13-18), II (19-22), III, V | **0,00 %** inchangé ✅ |
+
+À n'étendre qu'avec la même prudence, et jamais à une formulation.

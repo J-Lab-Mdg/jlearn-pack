@@ -54,6 +54,28 @@ BOILERPLATE = [
     "les apprenants sont amenés à",
 ]
 
+# Dénominations imposées : noms de maladies, d'organes et de notions que le
+# Programme d'Études fixe en toutes lettres. On ne peut pas les reformuler sans
+# cesser de nommer correctement la chose — et en sciences, mal nommer est une
+# faute plus grave qu'une coïncidence de six mots.
+#
+# Le français élide beaucoup ("de l'utérus" = 3 tokens), si bien qu'un simple
+# nom de maladie atteint le seuil de 6 mots à lui seul : « cancer du col de
+# l'utérus » les épuise sans qu'aucune phrase n'ait été empruntée.
+#
+# Ces dénominations sont donc exemptées. Elles ne couvrent QUE le terme lui-même :
+# dès qu'une formulation propre au FRP s'y ajoute, le passage redevient signalé.
+TERMINOLOGIE = [
+    "cancer du col de l'utérus",
+    "le cancer du col de l'utérus",
+    "du cancer du col de l'utérus",
+    "et le cancer du col de l'utérus",
+    "la prévention du cancer du col",
+    "la prévention de la fistule obstétricale",
+    "les causes de la fistule obstétricale",
+    "l'âge de la première grossesse",
+]
+
 
 def lire_docx(chemin):
     """Extrait tout le texte d'un .docx (paragraphes + tableaux)."""
@@ -108,6 +130,12 @@ def ngrammes(mots, n):
 def est_boilerplate(ngramme):
     for b in BOILERPLATE:
         if normaliser(b) in ngramme:
+            return True
+    # Dénomination imposée : on exige l'égalité stricte, pas l'inclusion.
+    # Le n-gramme doit être EXACTEMENT le terme officiel ; s'il déborde d'un
+    # seul mot, c'est qu'une formulation l'entoure et le contrôle s'applique.
+    for terme in TERMINOLOGIE:
+        if normaliser(terme) == ngramme.strip():
             return True
     return False
 
