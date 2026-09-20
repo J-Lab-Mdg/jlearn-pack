@@ -40,6 +40,14 @@ FICHIERS_UNITES = [
     "Revisions-et-examens-SVT-T9.md",
 ]
 MANUEL = "Manuel-SVT-T9-complet.md"
+
+# Images du pack porteuses d'un texte incruste fautif (voir AUDIT-images-pack.md).
+# Elles ne doivent pas etre affichees en classe tant qu'elles ne sont pas refaites.
+IMAGES_DEFECTUEUSES = {
+    "cycle_eau.png": "légendes en anglais, « MADOQGAECA », flèches interverties",
+    "falaise_strates.png": "porte le mot inexistant « Sounitet »",
+    "svt9e_vaccination.png": "étiquette de flacon illisible « VECCAS BCA »",
+}
 FRP = "sources-frp/frp_svt3e_full.txt"
 
 # Séances dont le barème déroge au 4+6+6+4 usuel, par arbitrage explicite.
@@ -210,6 +218,15 @@ def controle_images():
         ]
         verifier("pack.json sans entrée orpheline",
                  not orphelines, ", ".join(orphelines))
+
+    # Liste noire : images du pack porteuses d'un texte incruste fautif.
+    utilisees = {os.path.basename(r) for r in refs}
+    defectueuses = sorted(utilisees & set(IMAGES_DEFECTUEUSES))
+    verifier("aucune image défectueuse utilisée",
+             not defectueuses,
+             "; ".join(f"{f} — {IMAGES_DEFECTUEUSES[f]}" for f in defectueuses)
+             if defectueuses
+             else f"{len(IMAGES_DEFECTUEUSES)} sur liste noire, aucune utilisée")
 
 
 # --------------------------------------------------------------- 7. assemblage

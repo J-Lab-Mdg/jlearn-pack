@@ -16,7 +16,7 @@ Rejoue en une commande tous les contrôles menés pendant la rédaction. Sort en
 | 3 | Durées | réintroduction d'une durée chiffrée sur I/II/III |
 | 4 | Calculs | 21 résultats chiffrés recalculés |
 | 5 | Anti-plagiat | recouvrement avec le FRP sur 9 fichiers |
-| 6 | Images | image référencée absente, ou non déclarée dans `pack.json` |
+| 6 | Images | image absente, non déclarée dans `pack.json`, ou **sur liste noire** |
 | 7 | Assemblage | `Manuel-SVT-T9-complet.md` désynchronisé des fichiers d'unité |
 | 8 | Non-régression pédagogique | retour d'un des trois défauts du manuel d'origine |
 
@@ -51,6 +51,7 @@ Un vérificateur qui ne détecte jamais rien ne sert à rien. Six régressions o
 | Révision S50 dupliquée depuis S34 | contrôle 8 (recouvrement 100 %) |
 | Consigne répétée sur 4 séances | contrôle 8 |
 | Schéma annoncé sans image fournie | contrôle 8 |
+| Image défectueuse insérée (`cycle_eau.png`) | contrôle 6 |
 
 Après restauration, le manuel présentait un md5 identique à l'original.
 
@@ -84,3 +85,13 @@ Le contrôle anti-plagiat y est **automatiquement ignoré** : il dépend de
 dépôt. Son absence est le cas normal en CI, et le vérificateur la signale
 (`IGNORÉ`) sans échouer. **Il reste à lancer sur le poste de rédaction avant
 toute publication** — c'est le seul contrôle que la CI ne peut pas couvrir.
+
+## Liste noire d'images
+
+La constante `IMAGES_DEFECTUEUSES` du script recense les illustrations du pack
+porteuses d'un **texte incrusté fautif** — légendes en anglais, mots inexistants,
+étiquettes illisibles. Les y inscrire empêche qu'elles soient réutilisées de
+bonne foi par quelqu'un qui n'aurait pas ouvert le fichier.
+
+Le détail de chaque défaut est dans `AUDIT-images-pack.md`. Lorsqu'une image est
+refaite, il suffit de retirer son entrée de la constante.

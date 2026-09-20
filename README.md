@@ -23,6 +23,22 @@ Exemples :
    ```
 3. Valider (commit) les changements. jsDelivr met l'image à disposition dans la minute.
 
+### Règle : pas de texte incrusté dans l'image
+
+Une illustration ne doit porter **aucun mot incrusté** : ni titre, ni légende, ni
+étiquette. Les noms se placent dans le marqueur `[[IMG:...]]` décrit plus bas, où
+ils restent relisibles, corrigeables et traduisibles.
+
+Cette règle vient d'un constat : plusieurs images du pack sont inutilisables à
+cause d'un texte incrusté fautif — un mot inexistant (« Sounitet »), des légendes
+en anglais dans un pack francophone, une étiquette de flacon illisible. Un texte
+généré dans une image ne peut plus être corrigé sans tout régénérer.
+
+Le détail est dans [`AUDIT-images-pack.md`](AUDIT-images-pack.md).
+
+Avantage annexe : une image muette peut servir d'**exercice à légender**, l'élève
+plaçant lui-même les noms.
+
 ## Utilisation dans une leçon
 
 Insérer dans le contenu HTML d'une leçon le marqueur :
