@@ -41,6 +41,8 @@
     { "id": "svt9e_poule",                 "url": "/svt9e_poule.png",                 "type": "image/png" },
     { "id": "svt9e_zebu",                  "url": "/svt9e_zebu.png",                  "type": "image/png" },
     { "id": "svt9e_arbre",                 "url": "/svt9e_arbre.png",                 "type": "image/png" },
-    { "id": "svt9e_eau_potable",           "url": "/svt9e_eau_potable.png",           "type": "image/png" }
+    { "id": "svt9e_eau_potable",           "url": "/svt9e_eau_potable.png",           "type": "image/png" },
+    { "id": "svt9e_racine_zones",          "url": "/svt9e_racine_zones.png",          "type": "image/png" },
+    { "id": "svt9e_arc_reflexe",           "url": "/svt9e_arc_reflexe.png",           "type": "image/png" }
   ]
 }
