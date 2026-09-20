@@ -18,6 +18,18 @@ Rejoue en une commande tous les contrôles menés pendant la rédaction. Sort en
 | 5 | Anti-plagiat | recouvrement avec le FRP sur 9 fichiers |
 | 6 | Images | image référencée absente, ou non déclarée dans `pack.json` |
 | 7 | Assemblage | `Manuel-SVT-T9-complet.md` désynchronisé des fichiers d'unité |
+| 8 | Non-régression pédagogique | retour d'un des trois défauts du manuel d'origine |
+
+Le **contrôle 8** mérite un mot : les contrôles 1 à 7 vérifient la *forme*
+(barèmes, calculs, assemblage). Rien n'empêcherait de réintroduire, à contenu
+formellement valide, les trois défauts qui ont motivé la réécriture :
+
+1. les 5 révisions rigoureusement identiques entre elles (de même les examens) ;
+2. des consignes d'exercice stéréotypées répétées de séance en séance ;
+3. « Schéma à légender » annoncé sans qu'aucun schéma ne soit fourni.
+
+Le contrôle 8 les interdit — recouvrement par paire borné à 25 %, aucune
+consigne répétée 3 fois ou plus, tout schéma annoncé effectivement présent.
 
 Le contrôle 7 est le plus utile au quotidien : le manuel assemblé est un
 **fichier dérivé**. Modifier un fichier d'unité sans relancer l'assemblage
@@ -36,6 +48,9 @@ Un vérificateur qui ne détecte jamais rien ne sert à rien. Six régressions o
 | Entrée retirée de `pack.json` | contrôle 6 |
 | Phrase modifiée dans une séance | contrôle 7 |
 | Valeur attendue faussée | contrôle 4 |
+| Révision S50 dupliquée depuis S34 | contrôle 8 (recouvrement 100 %) |
+| Consigne répétée sur 4 séances | contrôle 8 |
+| Schéma annoncé sans image fournie | contrôle 8 |
 
 Après restauration, le manuel présentait un md5 identique à l'original.
 

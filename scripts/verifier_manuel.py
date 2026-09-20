@@ -24,6 +24,7 @@ import glob
 import json
 import os
 import re
+import unicodedata
 import subprocess
 import sys
 
@@ -246,6 +247,81 @@ def controle_assemblage(seances_manuel):
              if divergentes else f"{len(source)} séances comparées")
 
 
+def _mots(s):
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    return re.sub(r"[^a-z0-9]+", " ", s.lower()).split()
+
+
+def _ngrammes(s, n=6):
+    m = _mots(s)
+    return set(tuple(m[i:i + n]) for i in range(len(m) - n + 1))
+
+
+def controle_non_regression(seances):
+    """Verrouille les trois defauts qui ont motive la reecriture du manuel.
+
+    Les controles 1 a 7 verifient la FORME (baremes, calculs, assemblage).
+    Rien n'empecherait de reintroduire, a contenu formellement valide, les
+    defauts constates dans le manuel d'origine. Ce controle les interdit.
+    """
+    print("\n\033[1m8. Non-régression pédagogique\033[0m")
+
+    # La derniere seance est suivie des annexes, que l'extracteur lui rattache.
+    # Les annexes PARLENT des schemas a legender sans en contenir : sans cette
+    # troncature, la seance 51 est faussement signalee.
+    def corps_seul(n):
+        c = seances.get(n, "")
+        i = c.find("\n# Annexes")
+        return c[:i] if i >= 0 else c
+
+    seances = {n: corps_seul(n) for n in seances}
+
+    # Defaut 1 : les 5 revisions etaient rigoureusement identiques entre
+    # elles, tout comme les 5 examens. On borne le recouvrement par paire.
+    SEUIL = 25.0
+    for libelle, groupe in (("révisions", [11, 23, 34, 42, 50]),
+                            ("examens", [12, 24, 35, 43, 51])):
+        pire, paire = 0.0, None
+        for i in range(len(groupe)):
+            for j in range(i + 1, len(groupe)):
+                a, b = groupe[i], groupe[j]
+                A, B = _ngrammes(seances.get(a, "")), _ngrammes(seances.get(b, ""))
+                if not (A | B):
+                    continue
+                score = 100 * len(A & B) / len(A | B)
+                if score > pire:
+                    pire, paire = score, (a, b)
+        depasse = paire is not None and pire >= SEUIL
+        verifier(f"{libelle} toutes distinctes", not depasse,
+                 f"S{paire[0]} et S{paire[1]} se recouvrent a {pire:.1f} % "
+                 f"(seuil {SEUIL:.0f} %)" if depasse
+                 else f"recouvrement maximal {pire:.1f} %")
+
+    # Defaut 2 : deux consignes d'exercice stereotypees etaient repetees sur
+    # les 41 seances de contenu.
+    consignes = {}
+    verbes = (r"Cite|Citez|Donne|Donnez|Explique|Expliquez|D\u00e9finis|D\u00e9finissez|"
+              r"Nomme|Nommez|Compl\u00e8te|Compl\u00e9tez|Reproduis|L\u00e9gende")
+    for numero, corps in seances.items():
+        for m in re.finditer(r"((?:" + verbes + r")[^.?\n|]{10,120}[.?])", corps):
+            consignes.setdefault(m.group(1).strip(), []).append(numero)
+    stereotypes = {k: v for k, v in consignes.items() if len(v) >= 3}
+    verifier("aucune consigne stereotypee", not stereotypes,
+             "; ".join(f"{len(v)}x {k[:60]}" for k, v in list(stereotypes.items())[:3])
+             or f"{len(consignes)} consignes distinctes")
+
+    # Defaut 3 : « Schema a legender » etait annonce dans 20 legendes sans
+    # qu'aucun exercice de legendage n'existe.
+    annonces = {n for n, c in seances.items()
+                if re.search(r"sch[\u00e9e]ma [\u00e0a] l[\u00e9e]gender", c, flags=re.I)}
+    avec_image = {n for n, c in seances.items() if "![" in c}
+    orphelines = sorted(annonces - avec_image)
+    verifier("tout schema annonce est fourni", not orphelines,
+             f"seance(s) {orphelines} annoncent un schema sans image"
+             if orphelines else f"{len(annonces)} annonce(s), tous fournis")
+
+
 def main():
     print("\033[1m" + "=" * 62)
     print("CONTRÔLE QUALITÉ — Manuel SVT T9")
@@ -258,6 +334,7 @@ def main():
     controle_plagiat()
     controle_images()
     controle_assemblage(seances)
+    controle_non_regression(seances)
 
     ok = sum(1 for _, r, _ in resultats if r)
     total = len(resultats)
