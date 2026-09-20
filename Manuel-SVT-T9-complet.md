@@ -1634,7 +1634,11 @@ Ce sont des organismes, souvent microscopiques, qui rendent la plante **malade**
 
 *Le criquet est le ravageur le plus redouté des cultures malgaches. Ses mandibules broyeuses expliquent les dégâts observés sur les feuilles.*
 
-Ce sont des animaux qui **dévorent** la plante ou vivent à ses dépens : criquets, chenilles, pucerons, mouches mineuses, larves du sol, mais aussi rats et oiseaux dans les récoltes stockées. Les dégâts sont directement visibles : feuilles trouées ou dévorées, tiges sectionnées, fruits percés.
+Ce sont des animaux qui **dévorent** la plante ou vivent à ses dépens : criquets, chenilles, pucerons, mouches mineuses, larves du sol, mais aussi rats et oiseaux dans les récoltes stockées.
+
+![Un rat des champs rongeant des grains : museau, moustaches, incisives, oreilles, pattes griffues et queue](rat_champ.png)
+
+*Le rat ne s'attaque pas seulement aux plantes sur pied : il s'en prend surtout au riz stocké. Ses incisives, qui poussent en permanence, l'obligent à ronger sans cesse — d'où les dégâts sur les sacs et les greniers.* Les dégâts sont directement visibles : feuilles trouées ou dévorées, tiges sectionnées, fruits percés.
 
 **c. Les adventices**
 Cette troisième famille regroupe des **végétaux** installés à un endroit où le cultivateur n'en veut pas : au milieu d'un champ, d'un jardin ou d'une planche de fleurs. L'usage courant les nomme « mauvaises herbes ». Elles ne sont ni malades ni voraces : elles nuisent par **concurrence**, en prélevant l'eau, les sels minéraux et la lumière que la culture aurait utilisés. Certaines sont d'ailleurs des plantes utiles ailleurs ; c'est leur emplacement qui pose problème, pas leur nature.
