@@ -2493,9 +2493,13 @@ Réponds-lui en deux arguments.
 
 **A. Schéma à légender** *(2 points)*
 
-Reproduis le schéma d'une racine tracé au tableau et place les quatre légendes suivantes :
+Reproduis l'extrémité de racine ci-dessous et place les quatre légendes suivantes :
 
 > zone des poils absorbants · coiffe · zone de croissance · vaisseaux conducteurs
+
+![Extrémité d'une racine : quatre zones à légender](svt9e_racine_zones.png)
+
+*Schéma à reproduire au tableau ou à photocopier. Les légendes ne figurent pas sur le dessin : c'est à l'élève de les placer.*
 
 **B. QCM — une seule réponse exacte** *(2 points)*
 
@@ -2541,7 +2545,16 @@ Rédige un court avis argumenté (5 à 8 lignes) proposant une démarche raisonn
 
 ### Exercice 1 *(4 pts)*
 
-**A.** *(0,5 pt par légende correctement placée)* — De l'extrémité vers la tige : **coiffe** (protège l'apex), **zone de croissance** (allongement), **zone des poils absorbants** (c'est par là qu'entrent l'eau et les sels minéraux), **vaisseaux conducteurs** (transport vers la tige et les feuilles).
+**A.** *(0,5 pt par légende correctement placée)* — De l'extrémité vers la tige, soit **de bas en haut sur le schéma** :
+
+| Position sur le dessin | Légende attendue | Rôle |
+|---|---|---|
+| Petit capuchon brun, tout en bas | **coiffe** | protège la pointe qui progresse dans le sol |
+| Zone lisse et verdâtre, sans filaments | **zone de croissance** | c'est là que la racine s'allonge |
+| Zone couverte de fins filaments | **zone des poils absorbants** | c'est par là qu'entrent l'eau et les sels minéraux |
+| Partie large, en haut, à stries internes | **vaisseaux conducteurs** | acheminent la sève vers la tige et les feuilles |
+
+> **Consigne au correcteur.** Le sens de lecture est le point délicat : beaucoup d'élèves placent la coiffe en haut. Accepter une légende juste même si l'orthographe est approximative, mais pas une inversion coiffe / vaisseaux, qui traduit une incompréhension du trajet de l'eau.
 
 **B.** *(0,5 pt par item)*
 1. **B** · 2. **B** · 3. **B** · 4. **A**
@@ -3713,9 +3726,13 @@ Réponds-lui en deux arguments, sans le juger.
 
 **A. Schéma à légender — l'arc réflexe** *(2 points)*
 
-Reproduis le schéma tracé au tableau et place, dans l'ordre du trajet, les cinq éléments suivants :
+Reproduis le schéma ci-dessous et place, dans l'ordre du trajet, les cinq éléments suivants :
 
 > nerf moteur · récepteur cutané · moelle épinière · muscle (organe effecteur) · nerf sensitif
+
+![L'arc réflexe : le trajet du message nerveux, cinq éléments à légender](svt9e_arc_reflexe.png)
+
+*Schéma à reproduire au tableau ou à photocopier. Le trajet est figuré par deux voies de couleurs différentes ; les noms ne sont pas écrits, c'est à l'élève de les placer.*
 
 **B. Complète avec le mot exact** *(2 points)*
 
@@ -3766,6 +3783,16 @@ Un élève de votre classe dort 5 heures par nuit, regarde un écran jusque tard
 **A.** *(0,4 pt par élément correctement placé dans l'ordre)*
 
 > récepteur cutané → nerf sensitif → moelle épinière → nerf moteur → muscle (organe effecteur)
+
+| Position sur le dessin | Légende attendue |
+|---|---|
+| Tache rosée sur le bout du doigt, près de la flamme | **récepteur cutané** |
+| Voie **bleue**, du doigt vers la moelle | **nerf sensitif** |
+| Coupe ovale à droite, à zone centrale en forme de papillon | **moelle épinière** |
+| Voie **rouge**, de la moelle vers le bras | **nerf moteur** |
+| Muscle du bras, en bas à gauche | **muscle (organe effecteur)** |
+
+> **Consigne au correcteur.** L'erreur à sanctionner est l'inversion des deux voies : le message **part** du récepteur par le nerf sensitif et **revient** au muscle par le nerf moteur. Un élève qui intervertit bleu et rouge n'a pas compris le sens du trajet, même s'il connaît les cinq mots. Rappel de la leçon : le message **ne remonte pas au cerveau** — c'est ce qui rend le réflexe si rapide.
 
 **B.** *(0,5 pt par mot)*
 1. **cervelet** — 2. **tronc cérébral** — 3. **dépresseurs** — 4. **volontaire**

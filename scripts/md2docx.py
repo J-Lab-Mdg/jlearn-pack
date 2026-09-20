@@ -26,6 +26,7 @@ adaptée à une page A4 paysage ; les autres tableaux sont laissés en
 répartition automatique.
 """
 
+import os
 import re
 import sys
 
@@ -45,6 +46,9 @@ GRIS_ENTETE = "D9D9D9"
 
 # Largeurs (cm) du tableau de déroulement à 6 colonnes, en A4 paysage
 LARGEURS_DEROULEMENT = [2.6, 7.2, 6.0, 3.4, 3.2, 1.8]
+
+# Largeur d'affichage des illustrations, en cm (A4 paysage, marges 1,5 cm)
+LARGEUR_IMAGE_CM = 12.0
 
 RE_SPAN = re.compile(r'<span style="color:#([0-9A-Fa-f]{6})">(.*?)</span>', re.S)
 RE_LIEN = re.compile(r'\[([^\]]+)\]\([^)]+\)')
@@ -285,6 +289,31 @@ def convertir(chemin_md, chemin_docx):
                 run.font.color.rgb = ROUGE_LECON if niveau <= 2 else VERT_SOUS_TITRE
                 run.font.size = Pt({1: 17, 2: 14, 3: 12, 4: 11}[niveau])
                 run.bold = True
+            i += 1
+            continue
+
+        # Image : ![légende](fichier.png) — seule sur sa ligne.
+        m = re.match(r'^!\[([^\]]*)\]\(([^)]+)\)\s*$', nu)
+        if m:
+            legende, chemin = m.group(1), m.group(2)
+            chemin_abs = os.path.join(os.path.dirname(os.path.abspath(chemin_md)), chemin)
+            if os.path.exists(chemin_abs):
+                p = doc.add_paragraph()
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                p.add_run().add_picture(chemin_abs, width=Cm(LARGEUR_IMAGE_CM))
+                if legende:
+                    c = doc.add_paragraph()
+                    c.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    run = c.add_run(legende)
+                    run.italic = True
+                    run.font.size = Pt(9)
+            else:
+                # Ne jamais faire disparaître silencieusement une illustration.
+                p = doc.add_paragraph()
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                run = p.add_run(f"[image manquante : {chemin}]")
+                run.italic = True
+                run.font.color.rgb = ROUGE_LECON
             i += 1
             continue
 

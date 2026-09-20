@@ -9,7 +9,7 @@
 
 ## Pourquoi cette note existe
 
-Un manuel scolaire qui s'écarte de la ressource officielle du Ministère doit pouvoir le justifier, point par point, devant un validateur. Ce document rassemble les **33 écarts** dispersés dans les sept fichiers de travail, les classe par gravité, et donne pour chacun le motif et la décision retenue.
+Un manuel scolaire qui s'écarte de la ressource officielle du Ministère doit pouvoir le justifier, point par point, devant un validateur. Ce document rassemble les **34 écarts** dispersés dans les sept fichiers de travail, les classe par gravité, et donne pour chacun le motif et la décision retenue.
 
 Le principe appliqué est simple : **le PE fixe le programme, le FRP est une ressource**. Lorsqu'une ressource contredit un fait scientifique vérifiable, c'est le fait qui l'emporte, et l'écart est signalé plutôt que dissimulé.
 
@@ -22,8 +22,8 @@ Trois écarts portent sur des **erreurs médicales ou scientifiques** qu'il aura
 | ⛔ **Critique** | 4 | Erreur scientifique ou médicale dans la source officielle ; contenu non reproductible |
 | ⚠️ **Substantiel** | 7 | Donnée imprécise, dangereuse hors contexte, ou hors programme |
 | ▪ **Ordinaire** | 15 | Reformulation, arrondi prudent, source défectueuse contournée |
-| ➕ **Ajout** | 7 | Contenu absent des sources, jugé indispensable |
-| | **33** | |
+| ➕ **Ajout** | 8 | Contenu absent des sources, jugé indispensable |
+| | **34** | |
 
 | Unité | Écarts | Dont critiques |
 |---|---|---|
@@ -33,7 +33,7 @@ Trois écarts portent sur des **erreurs médicales ou scientifiques** qu'il aura
 | III — Santé et bien-être | 5 | — |
 | IV — Reproduction humaine | 9 | **3** |
 | V — Géologie | 6 | **1** |
-| Révisions et examens | 2 | — |
+| Révisions et examens | 3 | — |
 
 ---
 ---
@@ -182,6 +182,7 @@ Contenus absents du PE et du FRP, introduits parce que leur absence rendait le c
 | **A5** | **Volet sécurité des produits phytosanitaires** | 18 | RES 2.f se limite à définir les trois classes. Protection, délai avant récolte et préservation des pollinisateurs ajoutés pour des élèves vivant en milieu agricole |
 | **A6** | **Consignes de sécurité pour les manipulations de pierres** | 45 | Le PE prévoit marteau, couteau, lunettes et gants sans qu'aucune source n'accompagne ces outils de précautions |
 | **A7** | **Distinction dureté / ténacité**, corindons synthétiques, travail des enfants et répartition de la valeur | 45, 47, 48, 49 | La confusion dureté/solidité est l'erreur la plus courante de l'unité. Les deux derniers points donnent leur contenu concret aux valeurs *responsabilité* et *sens du bien commun* du PE |
+| **A8** | **Deux schémas à légender** : extrémité de racine, arc réflexe | 24, 35 | Le manuel d'origine annonçait « Schéma à légender » dans vingt légendes d'images sans qu'aucun exercice de légendage n'existe. Les deux schémas sont **originaux**, dessinés pour ce manuel, et **volontairement dépourvus de texte** : les noms sont à placer par l'élève. Aucune image du FRP n'a été reprise |
 
 ---
 ---
@@ -246,7 +247,7 @@ Lorsqu'une ressource officielle s'est révélée inutilisable, voici ce qui l'a 
 
 ## En résumé
 
-Le manuel suit le Programme d'Études. Il s'en écarte sur **deux points vérifiables** (C2, S6) et s'écarte du fascicule sur **trente et un autres**, dont trois erreurs médicales qu'il aurait été fautif de transmettre à des élèves de quatorze ans.
+Le manuel suit le Programme d'Études. Il s'en écarte sur **deux points vérifiables** (C2, S6) et s'écarte du fascicule sur **trente-deux autres**, dont trois erreurs médicales qu'il aurait été fautif de transmettre à des élèves de quatorze ans.
 
 Chaque écart est justifié, sourcé, et localisé à la séance près. Aucun n'a été introduit par commodité de rédaction : tous procèdent soit d'un fait vérifiable contredisant la source, soit d'une exigence de sécurité, soit d'une règle du référentiel v18.
 
