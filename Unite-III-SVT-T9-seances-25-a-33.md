@@ -627,6 +627,10 @@ La solution retenue par l'organisme est une **voie courte**. L'information s'arr
 
 > **Organes sensitifs → Nerf sensitif → Moelle épinière → Nerf moteur → Muscle**
 
+![Le trajet du message nerveux au cours d'un réflexe : la voie sensitive en bleu monte vers la moelle épinière, la voie motrice en rouge en redescend vers le muscle](svt9e_arc_reflexe.png)
+
+*Schéma à reproduire au tableau, sans les légendes : les élèves les placent et tracent les deux voies de couleurs différentes. Faire remarquer que le trajet ne passe pas par le cerveau. Le même dessin sert à l'examen de l'unité (séance 35).*
+
 **<span style="color:#1E7B34">4. Un exemple détaillé</span>**
 
 Vous posez le pied nu sur une épine.

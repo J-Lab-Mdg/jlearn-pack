@@ -69,6 +69,10 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 
 **<span style="color:#1E7B34">1. Une question ancienne</span>**
 
+![Les organes d'une plante à fleurs : la racine dans le sol, la tige, les feuilles et la fleur](plante_organes.png)
+
+*Dessin de référence pour situer les organes dont il sera question dans toute l'unité. Il ne porte pas de légende : les élèves peuvent les placer sur leur cahier.*
+
 Une plante grandit sans jamais se déplacer et sans rien avaler. Pendant longtemps, on a cru qu'elle « mangeait la terre ». Pour savoir de quoi elle a réellement besoin, il faut **expérimenter** : priver la plante d'un élément et observer ce qui se passe.
 
 **<span style="color:#1E7B34">2. Le principe de l'expérience</span>**
@@ -173,6 +177,10 @@ En observant une jeune racine à la loupe, on distingue trois régions :
 | La **coiffe** | tout à l'extrémité | petit capuchon dur qui protège la pointe quand elle s'enfonce |
 | La **zone pilifère** | juste en arrière de la pointe | couverte d'un duvet blanc très fin |
 | La **zone lisse** | vers la tige | plus âgée, sans duvet |
+
+![Extrémité d'une racine : la coiffe, la zone de croissance, la zone des poils absorbants et les vaisseaux conducteurs](svt9e_racine_zones.png)
+
+*Schéma à reproduire au tableau. Il ne porte aucune légende : les élèves les placent eux-mêmes, en s'aidant du tableau ci-dessus. Le même dessin sert à l'examen de l'unité (séance 24).*
 
 Ce duvet est formé de **poils absorbants**. Chaque poil est le prolongement en doigt de gant d'une cellule de la surface de la racine. Ils sont extrêmement nombreux et très fins.
 
@@ -354,6 +362,11 @@ Un **bio-agresseur** — appelé aussi « ennemi des cultures » — désigne to
 Ce sont des organismes, souvent microscopiques, qui rendent la plante **malade** : champignons, bactéries, virus. On ne voit généralement pas l'agresseur lui-même, seulement les **symptômes** : taches sur les feuilles, poudre blanche ou rouille, pourriture des racines, flétrissement brutal.
 
 **b. Les ravageurs**
+
+![Morphologie d'un criquet : tête, thorax, abdomen, pattes sauteuses et mandibules broyeuses](criquet_morphologie.png)
+
+*Le criquet est le ravageur le plus redouté des cultures malgaches. Ses mandibules broyeuses expliquent les dégâts observés sur les feuilles.*
+
 Ce sont des animaux qui **dévorent** la plante ou vivent à ses dépens : criquets, chenilles, pucerons, mouches mineuses, larves du sol, mais aussi rats et oiseaux dans les récoltes stockées. Les dégâts sont directement visibles : feuilles trouées ou dévorées, tiges sectionnées, fruits percés.
 
 **c. Les adventices**

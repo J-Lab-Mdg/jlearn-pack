@@ -115,6 +115,12 @@ Posséder un animal et l'élever ne sont pas la même chose. Un animal laissé �
 | **Animaux de pacage** | animaux menés paître dans les pâturages | zébu, mouton, chèvre |
 | **Animaux de compagnie** | animaux vivant auprès de l'homme | chien, chat |
 
+![Anatomie externe d'une poule : crête, bec, ailes, queue et pattes](svt9e_poule.png)
+
+![Anatomie externe d'un zébu : cornes, bosse, fanon, sabots et queue](svt9e_zebu.png)
+
+*La poule et le zébu servent d'exemples dans toute l'unité. Le zébu se reconnaît à sa **bosse** et à son **fanon**, le repli de peau sous le cou.*
+
 **<span style="color:#1E7B34">2. Les cinq besoins</span>**
 
 Quelle que soit l'espèce, les besoins sont les mêmes ; seule la façon de les satisfaire change.
