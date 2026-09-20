@@ -45,6 +45,7 @@ FRP = "sources-frp/frp_svt3e_full.txt"
 BAREMES_PARTICULIERS = {1: [5, 5, 6, 4], 4: [5, 5, 6, 4], 27: [5, 5, 6, 4], 30: [5, 5, 6, 4]}
 
 resultats = []
+ignores = []
 
 
 def verifier(libelle, condition, detail=""):
@@ -160,7 +161,13 @@ def controle_calculs():
 def controle_plagiat():
     print("\n\033[1m5. Anti-plagiat (FRP MEN/DDIS)\033[0m")
     if not os.path.exists(os.path.join(RACINE, FRP)):
-        verifier("source FRP disponible", False, "sources-frp/ absent — contrôle ignoré")
+        # `sources-frp/` est volontairement exclu du dépôt : extrait d'une
+        # ressource du Ministère, non redistribuable. Son absence est donc
+        # le cas NORMAL hors du poste de rédaction (CI, clone neuf) et ne
+        # doit pas faire échouer la vérification — seulement la signaler.
+        print("\033[33m IGNORÉ\033[0m contrôle anti-plagiat — sources-frp/ absent "
+              "(normal hors poste de rédaction)")
+        ignores.append("anti-plagiat (source FRP non redistribuable)")
         return
     cibles = [MANUEL] + FICHIERS_UNITES + ["Note-de-synthese-ecarts-SVT-T9.md"]
     for cible in cibles:
@@ -257,6 +264,8 @@ def main():
     print("\n" + "=" * 62)
     if ok == total:
         print(f"\033[32m\033[1mTOUS LES CONTRÔLES PASSENT — {ok}/{total}\033[0m")
+        for motif in ignores:
+            print(f"\033[33m(ignoré : {motif})\033[0m")
         print("=" * 62)
         return 0
     print(f"\033[31m\033[1m{total - ok} CONTRÔLE(S) EN ÉCHEC — {ok}/{total}\033[0m")

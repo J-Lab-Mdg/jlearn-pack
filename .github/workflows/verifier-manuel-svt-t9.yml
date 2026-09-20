@@ -1,0 +1,130 @@
+name: Vérification du manuel SVT T9
+
+# Le manuel assemblé est un fichier dérivé, et ses barèmes, calculs et
+# illustrations sont contrôlés par script. Sans automatisation, une
+# modification ultérieure peut casser silencieusement une de ces propriétés.
+#
+# Le contrôle anti-plagiat est automatiquement ignoré ici : il s'appuie sur
+# `sources-frp/`, extrait d'une ressource du Ministère volontairement exclu
+# du dépôt. Il reste à lancer sur le poste de rédaction avant publication.
+
+on:
+  push:
+    paths:
+      - 'Manuel-SVT-T9-complet.md'
+      - 'Unite-*.md'
+      - 'Revisions-et-examens-SVT-T9.md'
+      - 'Note-de-synthese-ecarts-SVT-T9.md'
+      - 'pack.json'
+      - 'scripts/**'
+      - '.github/workflows/verifier-manuel-svt-t9.yml'
+  pull_request:
+    paths:
+      - 'Manuel-SVT-T9-complet.md'
+      - 'Unite-*.md'
+      - 'Revisions-et-examens-SVT-T9.md'
+      - 'Note-de-synthese-ecarts-SVT-T9.md'
+      - 'pack.json'
+      - 'scripts/**'
+  workflow_dispatch:
+
+jobs:
+  verifier:
+    name: Contrôle qualité
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Contrôler le manuel
+        run: python3 scripts/verifier_manuel.py
+
+      - name: Vérifier que le manuel assemblé est à jour
+        run: |
+          cp Manuel-SVT-T9-complet.md /tmp/manuel-avant.md
+          python3 scripts/assembler_manuel.py
+          if ! diff -q /tmp/manuel-avant.md Manuel-SVT-T9-complet.md > /dev/null; then
+            echo "::error::Le manuel assemblé n'est pas à jour."
+            echo "Un fichier d'unité a été modifié sans relancer l'assemblage."
+            echo "Corriger avec : python3 scripts/assembler_manuel.py"
+            diff /tmp/manuel-avant.md Manuel-SVT-T9-complet.md | head -40
+            exit 1
+          fi
+          echo "Manuel assemblé à jour."
+
+      - name: Vérifier que le .docx se régénère
+        run: |
+          python3 -m pip install --quiet python-docx
+          python3 scripts/md2docx.py Manuel-SVT-T9-complet.md /tmp/controle.docx
+          python3 - <<'PY'
+          import re, unicodedata
+          from collections import Counter
+          from docx import Document
+
+          def norm(s):
+              s = unicodedata.normalize("NFD", s)
+              s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+              return re.sub(r"[^a-z0-9]+", " ", s.lower()).split()
+
+          # Extraction par l'API en dédoublonnant les cellules fusionnées :
+          # l'extraction XML brute les sous-compte et donne un faux déficit.
+          d = Document("/tmp/controle.docx")
+          parts = [p.text for p in d.paragraphs]
+          for t in d.tables:
+              for r in t.rows:
+                  vus = set()
+                  for c in r.cells:
+                      if c._tc in vus:
+                          continue
+                      vus.add(c._tc)
+                      parts.append(c.text)
+          docx = " ".join(parts)
+
+          md = open("Manuel-SVT-T9-complet.md", encoding="utf-8").read()
+          md = re.sub(r'!\[([^\]]*)\]\([^)]+\)', r'\1', md)
+          md = re.sub(r'<span style="color:#[0-9A-Fa-f]{6}">(.*?)</span>', r'\1', md, flags=re.S)
+          md = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', md)
+          md = md.replace("<br>", " ")
+          md = re.sub(r'^\|[\s\-:|]+\|?\s*$', '', md, flags=re.M)
+          md = re.sub(r'[|#>*`]', ' ', md)
+
+          cm, cd = Counter(norm(md)), Counter(norm(docx))
+          manquants = [w for w in cm if cm[w] - cd[w] > 0]
+          if manquants:
+              print(f"::error::Conversion .docx lacunaire : {len(manquants)} mot(s) perdu(s)")
+              print(manquants[:20])
+              raise SystemExit(1)
+          print(f"Conversion .docx fidèle : {len(norm(md))} tokens, aucune perte.")
+          PY
+
+      - name: Vérifier la validité de pack.json
+        run: |
+          python3 - <<'PY'
+          import json, os
+
+          with open("pack.json", encoding="utf-8") as f:
+              pack = json.load(f)
+
+          ids = [i["id"] for i in pack["images"]]
+          erreurs = []
+
+          doublons = {i for i in ids if ids.count(i) > 1}
+          if doublons:
+              erreurs.append(f"identifiants en double : {sorted(doublons)}")
+
+          for image in pack["images"]:
+              if not os.path.exists(image["url"].lstrip("/")):
+                  erreurs.append(f"fichier absent : {image['url']}")
+
+          if erreurs:
+              for e in erreurs:
+                  print(f"::error::{e}")
+              raise SystemExit(1)
+          print(f"pack.json valide : {len(ids)} images déclarées, toutes présentes.")
+          PY

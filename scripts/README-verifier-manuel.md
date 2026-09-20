@@ -50,3 +50,22 @@ python3 scripts/md2docx.py Manuel-SVT-T9-complet.md Manuel-SVT-T9-complet.docx
 La liste des calculs du contrôle 4 est **explicite** dans le script, et non
 déduite du texte : c'est elle qui fait foi. Un calcul modifié dans le manuel
 sans l'être ici lèvera une alerte — comportement volontaire.
+
+## Intégration continue
+
+`.github/workflows/verifier-manuel-svt-t9.yml` rejoue ces contrôles à chaque
+push et chaque pull request touchant le manuel, les scripts ou `pack.json`,
+et ajoute trois garde-fous :
+
+1. **Manuel assemblé à jour** — réassemble et compare ; échoue si un fichier
+   d'unité a été modifié sans relancer l'assemblage.
+2. **Conversion `.docx` fidèle** — régénère le document et vérifie qu'aucun
+   mot n'est perdu.
+3. **`pack.json` valide** — pas de doublon d'identifiant, aucun fichier déclaré
+   manquant.
+
+Le contrôle anti-plagiat y est **automatiquement ignoré** : il dépend de
+`sources-frp/`, extrait d'une ressource du Ministère volontairement exclu du
+dépôt. Son absence est le cas normal en CI, et le vérificateur la signale
+(`IGNORÉ`) sans échouer. **Il reste à lancer sur le poste de rédaction avant
+toute publication** — c'est le seul contrôle que la CI ne peut pas couvrir.
