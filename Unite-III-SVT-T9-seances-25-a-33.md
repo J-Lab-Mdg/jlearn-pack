@@ -167,6 +167,9 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 
 ### Page LEÇON
 
+![Cerveau, cervelet, bulbe rachidien et moelle épinière.](img_seance26.png)
+
+
 **<span style="color:#C00000">Les rôles des différentes parties</span>**
 
 **<span style="color:#1E7B34">1. Le cerveau</span>**
@@ -393,6 +396,9 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 
 ### Page LEÇON
 
+![Le réflexe acquis s'installe par la répétition.](img_seance28.png)
+
+
 **<span style="color:#C00000">Le mouvement réflexe acquis</span>**
 
 **<span style="color:#1E7B34">1. Une réaction apprise, puis devenue automatique</span>**
@@ -495,6 +501,9 @@ Prenons le citron. S'il est **placé dans la bouche**, l'acide stimule directeme
 | **III. ÉVALUATION** | **Ex. 1** — Complète le tableau comparatif des trois types de réactions (volonté, origine, centre nerveux).<br><br>**Ex. 2** — Un débutant réfléchit à chaque note qu'il joue ; un musicien confirmé joue sans regarder ses doigts. Explique ce changement. | **Ex. 1** : voir le tableau de la leçon.<br><br>**Ex. 2** : Chez le débutant, chaque note est un **mouvement volontaire** qui exige une décision consciente. La **répétition** transforme peu à peu ces gestes en **automatismes**, c'est-à-dire en réflexes acquis : le cerveau n'a plus à commander chaque doigt séparément, ce qui libère l'attention pour l'interprétation. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Le mouvement volontaire est commandé par le cerveau.](img_seance29.png)
+
 
 **<span style="color:#C00000">Le mouvement volontaire</span>**
 
@@ -917,6 +926,9 @@ Juger ou rejeter une personne dépendante ne fait qu'aggraver son isolement, don
 | **III. ÉVALUATION** | **Ex. 1** — Cite quatre règles d'hygiène du système nerveux.<br><br>**Ex. 2** — Présente en cinq lignes un mini-projet de lutte contre les substances psychoactives réalisable dans ton école : objectif, public visé, action, moyens. | **Ex. 1** : dormir suffisamment et à heures régulières ; manger équilibré, ne pas sauter le petit-déjeuner ; pratiquer une activité physique ; éviter les substances psychoactives ; alterner travail et repos.<br><br>**Ex. 2** : projet cohérent et réalisable — par exemple une exposition d'affiches réalisées par la classe, présentée aux élèves des autres niveaux, avec l'appui d'un agent de santé invité. | Évaluation écrite, mini-projet | Cahier, papier | |
 
 ### Page LEÇON
+
+![Hygiène du système nerveux : sommeil, alimentation et activité physique.](img_seance33.png)
+
 
 **<span style="color:#C00000">Hygiène du système nerveux et prévention</span>**
 

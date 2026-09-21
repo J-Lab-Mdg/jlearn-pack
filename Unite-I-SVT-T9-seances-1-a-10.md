@@ -544,6 +544,9 @@ Les besoins diffèrent entre hommes et femmes. Ils augmentent également lors de
 
 ### Page LEÇON
 
+![Les besoins énergétiques varient selon l'âge et l'activité.](img_seance06.png)
+
+
 **<span style="color:#C00000">Calculer les besoins énergétiques</span>**
 
 **<span style="color:#1E7B34">1. La méthode de calcul</span>**
@@ -728,6 +731,9 @@ Varier d'un jour à l'autre à l'intérieur de chaque groupe évite la monotonie
 
 ### Page LEÇON
 
+![Une alimentation équilibrée soutient la croissance et l'attention en classe.](img_seance08.png)
+
+
 **<span style="color:#C00000">Importance de l'équilibre alimentaire</span>**
 
 **<span style="color:#1E7B34">1. Quantité et qualité</span>**
@@ -900,6 +906,9 @@ La prévention repose sur des gestes accessibles : **varier** les aliments à l'
 | **III. ÉVALUATION** | **Ex. 1** — Complète : a) L'excédent d'énergie est stocké sous forme de …… b) Le surpoids est une malnutrition par …… c) Un menu d'appoint est …… à la personne. d) L'activité physique augmente la ……<br><br>**Ex. 2** — Propose un menu d'appoint pour un enfant en malnutrition aiguë : cite trois aliments locaux, précise la fréquence des repas et indique une précaution. | **Ex. 1** : a) **graisse** b) **excès** c) **adapté** d) **dépense**<br><br>**Ex. 2** : Trois aliments : **arachides**, **œufs**, **lait** (ou haricots, poisson). Fréquence : **plusieurs petits repas** par jour plutôt que deux gros. Précaution : **reprendre progressivement** l'alimentation, **sous suivi médical**. | Évaluation écrite | Cahier, feuille d'évaluation | |
 
 ### Page LEÇON
+
+![Surpoids et obésité : l'excès d'aliments gras et sucrés associé au manque d'activité.](img_seance10.png)
+
 
 **<span style="color:#C00000">Surpoids, obésité et menus d'appoint</span>**
 

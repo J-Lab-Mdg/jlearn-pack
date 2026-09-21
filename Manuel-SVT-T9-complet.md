@@ -663,6 +663,9 @@ Les besoins diffèrent entre hommes et femmes. Ils augmentent également lors de
 
 ### Page LEÇON
 
+![Les besoins énergétiques varient selon l'âge et l'activité.](img_seance06.png)
+
+
 **<span style="color:#C00000">Calculer les besoins énergétiques</span>**
 
 **<span style="color:#1E7B34">1. La méthode de calcul</span>**
@@ -851,6 +854,9 @@ Varier d'un jour à l'autre à l'intérieur de chaque groupe évite la monotonie
 
 ### Page LEÇON
 
+![Une alimentation équilibrée soutient la croissance et l'attention en classe.](img_seance08.png)
+
+
 **<span style="color:#C00000">Importance de l'équilibre alimentaire</span>**
 
 **<span style="color:#1E7B34">1. Quantité et qualité</span>**
@@ -1027,6 +1033,9 @@ La prévention repose sur des gestes accessibles : **varier** les aliments à l'
 | **III. ÉVALUATION** | **Ex. 1** — Complète : a) L'excédent d'énergie est stocké sous forme de …… b) Le surpoids est une malnutrition par …… c) Un menu d'appoint est …… à la personne. d) L'activité physique augmente la ……<br><br>**Ex. 2** — Propose un menu d'appoint pour un enfant en malnutrition aiguë : cite trois aliments locaux, précise la fréquence des repas et indique une précaution. | **Ex. 1** : a) **graisse** b) **excès** c) **adapté** d) **dépense**<br><br>**Ex. 2** : Trois aliments : **arachides**, **œufs**, **lait** (ou haricots, poisson). Fréquence : **plusieurs petits repas** par jour plutôt que deux gros. Précaution : **reprendre progressivement** l'alimentation, **sous suivi médical**. | Évaluation écrite | Cahier, feuille d'évaluation | |
 
 ### Page LEÇON
+
+![Surpoids et obésité : l'excès d'aliments gras et sucrés associé au manque d'activité.](img_seance10.png)
+
 
 **<span style="color:#C00000">Surpoids, obésité et menus d'appoint</span>**
 
@@ -1777,6 +1786,9 @@ Beaucoup d'attaques s'évitent par de bonnes pratiques : semer à la bonne densi
 
 ### Page LEÇON
 
+![Préparation d'un extrait naturel de neem pour protéger les cultures.](img_seance17.png)
+
+
 **<span style="color:#C00000">Les méthodes naturelles de protection</span>**
 
 **<span style="color:#1E7B34">1. Le principe</span>**
@@ -1875,6 +1887,9 @@ Les règles sont donc les mêmes que pour n'importe quel produit de traitement :
 | **III. ÉVALUATION** | **Ex. 1** — Cite les trois classes de pesticides et leur cible.<br><br>**Ex. 2** — Énonce quatre règles de sécurité à respecter lors d'un traitement. | **Ex. 1** : herbicide → adventices ; insecticide → insectes ; fongicide → champignons.<br><br>**Ex. 2** : lire l'étiquette et respecter la dose ; porter gants et vêtements couvrants ; ne pas traiter par temps venteux ; respecter le délai avant récolte ; se laver après traitement ; ne jamais réutiliser les emballages. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![L'usage responsable des produits chimiques exige des protections.](img_seance18.png)
+
 
 **<span style="color:#C00000">Les méthodes chimiques et leur usage responsable</span>**
 
@@ -2106,6 +2121,9 @@ C'est pourquoi la première chose à faire devant un élevage qui produit mal n'
 | **III. ÉVALUATION** | **Ex. 1** — Cite trois ressources locales utilisables pour nourrir des volailles.<br><br>**Ex. 2** — Explique en deux phrases pourquoi un poulailler doit être fermé la nuit mais aéré le jour. | **Ex. 1** : (trois parmi) son de riz, manioc, patate douce, feuilles d'amarante, colocase, graines oléagineuses, termites.<br><br>**Ex. 2** : Fermé la nuit, il protège des prédateurs et des voleurs, et garde les animaux au chaud. Aéré le jour, il évite l'accumulation d'humidité et d'air vicié, qui favorise les maladies respiratoires. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Alimentation et habitat d'un élevage de volailles.](img_seance20.png)
+
 
 **<span style="color:#C00000">L'alimentation et l'habitat</span>**
 
@@ -2809,6 +2827,9 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 
 ### Page LEÇON
 
+![Cerveau, cervelet, bulbe rachidien et moelle épinière.](img_seance26.png)
+
+
 **<span style="color:#C00000">Les rôles des différentes parties</span>**
 
 **<span style="color:#1E7B34">1. Le cerveau</span>**
@@ -3039,6 +3060,9 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 
 ### Page LEÇON
 
+![Le réflexe acquis s'installe par la répétition.](img_seance28.png)
+
+
 **<span style="color:#C00000">Le mouvement réflexe acquis</span>**
 
 **<span style="color:#1E7B34">1. Une réaction apprise, puis devenue automatique</span>**
@@ -3143,6 +3167,9 @@ Prenons le citron. S'il est **placé dans la bouche**, l'acide stimule directeme
 | **III. ÉVALUATION** | **Ex. 1** — Complète le tableau comparatif des trois types de réactions (volonté, origine, centre nerveux).<br><br>**Ex. 2** — Un débutant réfléchit à chaque note qu'il joue ; un musicien confirmé joue sans regarder ses doigts. Explique ce changement. | **Ex. 1** : voir le tableau de la leçon.<br><br>**Ex. 2** : Chez le débutant, chaque note est un **mouvement volontaire** qui exige une décision consciente. La **répétition** transforme peu à peu ces gestes en **automatismes**, c'est-à-dire en réflexes acquis : le cerveau n'a plus à commander chaque doigt séparément, ce qui libère l'attention pour l'interprétation. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Le mouvement volontaire est commandé par le cerveau.](img_seance29.png)
+
 
 **<span style="color:#C00000">Le mouvement volontaire</span>**
 
@@ -3573,6 +3600,9 @@ Juger ou rejeter une personne dépendante ne fait qu'aggraver son isolement, don
 | **III. ÉVALUATION** | **Ex. 1** — Cite quatre règles d'hygiène du système nerveux.<br><br>**Ex. 2** — Présente en cinq lignes un mini-projet de lutte contre les substances psychoactives réalisable dans ton école : objectif, public visé, action, moyens. | **Ex. 1** : dormir suffisamment et à heures régulières ; manger équilibré, ne pas sauter le petit-déjeuner ; pratiquer une activité physique ; éviter les substances psychoactives ; alterner travail et repos.<br><br>**Ex. 2** : projet cohérent et réalisable — par exemple une exposition d'affiches réalisées par la classe, présentée aux élèves des autres niveaux, avec l'appui d'un agent de santé invité. | Évaluation écrite, mini-projet | Cahier, papier | |
 
 ### Page LEÇON
+
+![Hygiène du système nerveux : sommeil, alimentation et activité physique.](img_seance33.png)
+
 
 **<span style="color:#C00000">Hygiène du système nerveux et prévention</span>**
 

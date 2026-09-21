@@ -460,6 +460,9 @@ Beaucoup d'attaques s'évitent par de bonnes pratiques : semer à la bonne densi
 
 ### Page LEÇON
 
+![Préparation d'un extrait naturel de neem pour protéger les cultures.](img_seance17.png)
+
+
 **<span style="color:#C00000">Les méthodes naturelles de protection</span>**
 
 **<span style="color:#1E7B34">1. Le principe</span>**
@@ -556,6 +559,9 @@ Les règles sont donc les mêmes que pour n'importe quel produit de traitement :
 | **III. ÉVALUATION** | **Ex. 1** — Cite les trois classes de pesticides et leur cible.<br><br>**Ex. 2** — Énonce quatre règles de sécurité à respecter lors d'un traitement. | **Ex. 1** : herbicide → adventices ; insecticide → insectes ; fongicide → champignons.<br><br>**Ex. 2** : lire l'étiquette et respecter la dose ; porter gants et vêtements couvrants ; ne pas traiter par temps venteux ; respecter le délai avant récolte ; se laver après traitement ; ne jamais réutiliser les emballages. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![L'usage responsable des produits chimiques exige des protections.](img_seance18.png)
+
 
 **<span style="color:#C00000">Les méthodes chimiques et leur usage responsable</span>**
 

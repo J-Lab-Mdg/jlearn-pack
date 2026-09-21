@@ -203,6 +203,9 @@ C'est pourquoi la première chose à faire devant un élevage qui produit mal n'
 
 ### Page LEÇON
 
+![Alimentation et habitat d'un élevage de volailles.](img_seance20.png)
+
+
 **<span style="color:#C00000">L'alimentation et l'habitat</span>**
 
 **<span style="color:#1E7B34">1. Nourrir sans acheter</span>**
