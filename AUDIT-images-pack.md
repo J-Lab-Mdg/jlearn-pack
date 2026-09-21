@@ -9,10 +9,14 @@ les applications qui consomment le pack. Les défauts relevés ci-dessous sont d
 signalés aux mainteneurs, indépendamment de l'usage qui en a été fait ici.
 
 > Inspection **visuelle** : aucun moteur OCR n'est disponible dans l'environnement
-> de travail. **22 des 41 images** ont été ouvertes et examinées à ce jour ; les
-> autres n'ont pas encore été vues. Le présent document ne prétend donc pas à
+> de travail. **22 des 48 images** du pack ont été ouvertes et examinées à ce jour ;
+> les autres n'ont pas encore été vues. Le présent document ne prétend donc pas à
 > l'exhaustivité, et le taux de défauts constaté — **6 images sur 22** — invite à
 > poursuivre l'inspection avant toute nouvelle diffusion du pack.
+>
+> Les illustrations `img_seanceNN.png` créées pour le manuel SVT T9 sont relues
+> une par une à la génération, avant insertion : elles ne comportent aucun texte
+> incrusté, par construction.
 
 ## Défauts bloquants
 

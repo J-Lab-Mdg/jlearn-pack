@@ -171,6 +171,9 @@ appliquer séance par séance.
 
 ### Page LEÇON
 
+![Un repas malgache complet : riz, brèdes, haricots, poisson, tomate et banane.](img_seance01.png)
+
+
 **<span style="color:#C00000">Ration alimentaire et groupes d'aliments</span>**
 
 **<span style="color:#1E7B34">1. La ration alimentaire</span>**
@@ -257,6 +260,9 @@ Un repas simple et complet peut être composé de riz, de haricots, de brèdes e
 | **III. ÉVALUATION** | **Ex. 1** — Relie chaque nutriment à son rôle principal : glucides · lipides · protéines ↔ construire et réparer · fournir l'énergie quotidienne · stocker l'énergie<br><br>**Ex. 2** — Vrai ou Faux : 1. L'huile est riche en glucides. 2. Le poisson apporte des protéines. 3. L'amidon du riz est un glucide. 4. Les protéines servent à la croissance. | **Ex. 1** : glucides → **fournir l'énergie quotidienne** ; lipides → **stocker l'énergie** ; protéines → **construire et réparer**<br><br>**Ex. 2** : 1. **F** — l'huile est riche en **lipides** · 2. **V** · 3. **V** · 4. **V** | Évaluation écrite | Cahier, feuille d'évaluation | |
 
 ### Page LEÇON
+
+![Trois aliments, trois nutriments dominants : le riz (glucides), l'huile et l'arachide (lipides), le poisson et les haricots (protéines).](img_seance02.png)
+
 
 **<span style="color:#C00000">Glucides, lipides et protéines</span>**
 
@@ -346,6 +352,9 @@ Un test simple permet de repérer les lipides : frotter l'aliment sur du papier.
 | **III. ÉVALUATION** | **Ex. 1** — Complète : a) La vitamine C se trouve dans les …… b) Le …… solidifie les os. c) Le …… entre dans la composition du sang. d) Le corps perd de l'eau par la ……<br><br>**Ex. 2** — Une personne mange chaque jour du riz et rien d'autre. Cite deux nutriments qui lui manqueront et explique une conséquence pour sa santé. | **Ex. 1** : a) **fruits et légumes** b) **calcium** c) **fer** d) **sueur** (ou l'urine)<br><br>**Ex. 2** : Il lui manquera des **vitamines** et des **sels minéraux** (ainsi que des protéines). Conséquence : elle sera **plus exposée aux maladies** et pourra souffrir d'**anémie** par manque de fer. | Évaluation écrite | Cahier, feuille d'évaluation | |
 
 ### Page LEÇON
+
+![Fruits et légumes riches en vitamines et en sels minéraux, et l'eau, indispensable chaque jour.](img_seance03.png)
+
 
 **<span style="color:#C00000">Vitamines, sels minéraux et eau</span>**
 
@@ -741,6 +750,9 @@ Un total correct ne garantit pas pour autant une bonne alimentation : une journ�
 
 ### Page LEÇON
 
+![Un menu équilibré de la journée : petit-déjeuner, déjeuner et dîner.](img_seance07.png)
+
+
 **<span style="color:#C00000">Construire un menu varié</span>**
 
 **<span style="color:#1E7B34">1. Le principe de l'assiette équilibrée</span>**
@@ -917,6 +929,9 @@ Il n'existe pas une ration unique valable pour tous. Un adolescent en pleine cro
 | **III. ÉVALUATION** | **Ex. 1** — Complète : a) La malnutrition chronique se mesure par la taille rapportée à l'…… b) La malnutrition aiguë se mesure par le poids rapporté à la …… c) Le manque de fer provoque une …… d) Les carences en micronutriments sont appelées la faim ……<br><br>**Ex. 2** — Un enfant du village mange presque uniquement du manioc. 1. Quels nutriments lui manquent ? 2. Quelle forme de malnutrition risque-t-il ? 3. Propose deux aliments locaux pour améliorer sa ration. | **Ex. 1** : a) **âge** b) **taille** c) **anémie** d) **cachée**<br><br>**Ex. 2** : 1. Des **protéines**, des **vitamines** et des **sels minéraux**. 2. Une **malnutrition chronique** avec **carences en micronutriments**. 3. Des **haricots** ou du **poisson**, et des **brèdes**. | Évaluation écrite | Cahier, feuille d'évaluation | |
 
 ### Page LEÇON
+
+![Signes de malnutrition aiguë et aliments riches en protéines qui permettent d'y remédier.](img_seance09.png)
+
 
 **<span style="color:#C00000">Malnutrition aiguë et carences</span>**
 
@@ -2313,6 +2328,9 @@ Le raisonnement vaut pour toutes les espèces. Chez le **zébu**, les jeunes vea
 
 ### Page LEÇON
 
+![Anatomie externe d'un zébu.](svt9e_zebu.png)
+
+
 **<span style="color:#C00000">La sélection et l'amélioration de l'élevage</span>**
 
 **<span style="color:#1E7B34">1. Deux façons d'améliorer un élevage</span>**
@@ -2672,6 +2690,9 @@ L'avis attendu comporte :
 | **III. ÉVALUATION** | **Ex. 1** — Complète : a) Le système nerveux central comprend …… et ……. b) Le système nerveux périphérique est formé de …… et de …….<br><br>**Ex. 2** — Explique pourquoi une blessure de la colonne vertébrale peut entraîner la paralysie des jambes. | **Ex. 1** : a) **l'encéphale**, **la moelle épinière** b) **nerfs**, **ganglions**<br><br>**Ex. 2** : La colonne vertébrale abrite la **moelle épinière**. Si elle est atteinte, les messages ne passent plus entre l'encéphale et les nerfs des jambes : les ordres n'arrivent plus aux muscles et les sensations ne remontent plus. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![L'organisation du système nerveux : encéphale, moelle épinière et nerfs.](img_seance25.png)
+
 
 **<span style="color:#C00000">L'organisation du système nerveux</span>**
 

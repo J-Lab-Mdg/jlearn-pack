@@ -60,6 +60,9 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 
 ### Page LEÇON
 
+![L'organisation du système nerveux : encéphale, moelle épinière et nerfs.](img_seance25.png)
+
+
 **<span style="color:#C00000">L'organisation du système nerveux</span>**
 
 **<span style="color:#1E7B34">1. À quoi sert le système nerveux ?</span>**

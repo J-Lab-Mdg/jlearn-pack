@@ -426,6 +426,9 @@ Le raisonnement vaut pour toutes les espèces. Chez le **zébu**, les jeunes vea
 
 ### Page LEÇON
 
+![Anatomie externe d'un zébu.](svt9e_zebu.png)
+
+
 **<span style="color:#C00000">La sélection et l'amélioration de l'élevage</span>**
 
 **<span style="color:#1E7B34">1. Deux façons d'améliorer un élevage</span>**
