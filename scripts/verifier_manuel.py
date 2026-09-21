@@ -451,6 +451,68 @@ def controle_liens():
                  if casses else "toutes les cibles existent")
 
 
+# Contenus officiels du Programme d'Etudes T9, section « Sciences de la vie et
+# de la terre » (tableaux des contenus). Chaque entree liste les formulations
+# acceptees : le PE ecrit « besoin nutritionnel des plantes » la ou le manuel
+# ecrit « besoins nutritifs des plantes ». C'est la NOTION qui doit etre
+# couverte, pas la formulation exacte.
+CONTENUS_PE = [
+    ("ration alimentaire", ["ration alimentaire"]),
+    ("nutriments", ["glucides", "lipides", "proteines"]),
+    ("vitamines et mineraux", ["vitamines", "sels mineraux"]),
+    ("valeurs energetiques", ["valeur energetique", "valeurs energetiques"]),
+    ("metabolisme", ["metabolisme"]),
+    ("besoins energetiques", ["besoins energetiques"]),
+    ("alimentation equilibree", ["alimentation equilibree"]),
+    ("menu varie", ["menu varie", "menus varies"]),
+    ("malnutrition", ["malnutrition"]),
+    ("formes de malnutrition", ["malnutrition aigue", "surpoids", "obesite",
+                                "carence en micronutriments"]),
+    ("menus d'appoint", ["menus d appoint", "menu d appoint"]),
+    ("besoins des plantes", ["besoins nutritifs des plantes", "besoin des plantes"]),
+    ("entretien des cultures", ["eclaircissage", "desherbage", "sarclage", "arrosage"]),
+    ("protection naturelle", ["methodes naturelles"]),
+    ("protection chimique", ["methodes chimiques"]),
+    ("bio-agresseurs", ["bio agresseurs", "bioagresseurs"]),
+    ("techniques d'elevage", ["techniques d elevage", "technique d elevage"]),
+    ("soins de l'elevage", ["vaccination", "habitat", "selection"]),
+    ("systeme nerveux", ["systeme nerveux"]),
+    ("reactions comportementales", ["mouvement reflexe inne", "mouvement reflexe acquis",
+                                    "mouvement volontaire"]),
+    ("arc reflexe", ["arc reflexe"]),
+    ("hygiene du systeme nerveux", ["hygiene"]),
+    ("substances psychoactives", ["substances psychoactives"]),
+    ("fistule obstetricale", ["fistule obstetricale"]),
+    ("cancer du col", ["cancer du col"]),
+    ("pierres gemmes", ["pierres gemmes"]),
+    ("proprietes physiques", ["proprietes physiques"]),
+    ("repartition geographique", ["repartition geographique"]),
+    ("utilisation des pierres", ["utilisations des pierres", "utilisation des pierres"]),
+    ("techniques d'exploitation", ["techniques d exploitation"]),
+    ("consequences environnementales", ["impacts environnementaux",
+                                        "consequences environnementales"]),
+]
+
+
+def controle_couverture_pe():
+    """Verifie que chaque contenu du Programme d'Etudes est traite.
+
+    Un manuel peut etre irreprochable sur la forme et passer a cote d'un
+    contenu officiel. Ce controle confronte le manuel au tableau des contenus
+    du PE T9, notion par notion.
+    """
+    print("\n\033[1m11. Couverture du Programme d'Études\033[0m")
+    texte = _mots(lire(MANUEL))
+    plat = " " + " ".join(texte) + " "
+    manquants = []
+    for notion, variantes in CONTENUS_PE:
+        if not any(" " + v + " " in plat for v in variantes):
+            manquants.append(notion)
+    verifier(f"{len(CONTENUS_PE)} contenus du PE traités", not manquants,
+             f"notion(s) absente(s) : {', '.join(manquants)}"
+             if manquants else f"couverture complète ({len(CONTENUS_PE)}/{len(CONTENUS_PE)})")
+
+
 def main():
     print("\033[1m" + "=" * 62)
     print("CONTRÔLE QUALITÉ — Manuel SVT T9")
@@ -466,6 +528,7 @@ def main():
     controle_non_regression(seances)
     controle_note_ecarts()
     controle_liens()
+    controle_couverture_pe()
 
     ok = sum(1 for _, r, _ in resultats if r)
     total = len(resultats)

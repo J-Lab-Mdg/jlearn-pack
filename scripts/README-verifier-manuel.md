@@ -21,6 +21,7 @@ Rejoue en une commande tous les contrôles menés pendant la rédaction. Sort en
 | 8 | Non-régression pédagogique | retour d'un des trois défauts du manuel d'origine |
 | 9 | Cohérence de la note d'écarts | compteurs désynchronisés, identifiant en double |
 | 10 | Liens internes | lien du README ou de la note pointant vers un fichier absent |
+| 11 | Couverture du Programme d'Études | contenu officiel du PE T9 non traité par le manuel |
 
 Le contrôle 6 vérifie en outre que le décompte d'images annoncé par
 `AUDIT-images-pack.md` est **retrouvable dans le document** et que toute image
@@ -62,6 +63,7 @@ Un vérificateur qui ne détecte jamais rien ne sert à rien. Six régressions o
 | Identifiant d'écart en double | contrôle 9 |
 | Total en prose désynchronisé du tableau | contrôle 9 |
 | Lien du README pointant vers un fichier renommé | contrôle 10 |
+| Contenu officiel retiré du manuel | contrôle 11 |
 | Image défectueuse insérée dans une séance | contrôle 6 |
 | Décompte de l'audit d'images faussé | contrôle 6 |
 | Liste noire sans justification écrite | contrôle 6 |
@@ -123,3 +125,19 @@ des titres (`## ⛔ C1 — …`) tandis que les **ordinaires et ajouts** sont de
 lignes de tableau (`| **O1** | … |`). Ne compter qu'une seule de ces deux formes
 sous-compte le total de 36 à 25 — et laisse passer l'ajout d'un écart. Les deux
 formes sont désormais comptées, et ce cas fait partie des régressions testées.
+
+## Le contrôle 11 : conformité au programme officiel
+
+Les contrôles précédents portent sur la cohérence interne du manuel. Le
+contrôle 11 répond à une question différente : **le manuel couvre-t-il tout ce
+que le Programme d'Études exige ?**
+
+Les 31 notions listées dans `CONTENUS_PE` sont extraites du tableau des
+contenus du PE T9, section « Sciences de la vie et de la terre ». Chacune
+accepte **plusieurs formulations** : le PE écrit « besoin nutritionnel des
+plantes » là où le manuel écrit « besoins nutritifs des plantes », et
+« conséquences environnementales » là où le manuel écrit « impacts
+environnementaux ». C'est la notion qui doit être couverte, pas le mot à mot —
+sans quoi le contrôle signalerait des absences fictives.
+
+Résultat au moment de l'écriture : **couverture complète, 31/31**.
