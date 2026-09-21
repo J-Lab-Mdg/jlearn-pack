@@ -141,3 +141,23 @@ environnementaux ». C'est la notion qui doit être couverte, pas le mot à mot 
 sans quoi le contrôle signalerait des absences fictives.
 
 Résultat au moment de l'écriture : **couverture complète, 31/31**.
+
+## Réactiver le contrôle anti-plagiat
+
+Le dossier `sources-frp/` est exclu de Git : le fascicule du Ministère n'est pas
+redistribuable. Il disparaît donc à chaque réinitialisation de l'environnement,
+et le vérificateur affiche alors **28/28** au lieu de 37/37 — les 9 contrôles
+anti-plagiat passent en `IGNORÉ`, sans échec. C'est le comportement voulu.
+
+Pour les réactiver, le PDF se récupère depuis l'historique Git :
+
+```bash
+mkdir -p sources-frp
+git show c15071388d9266c219667677eb46040c2466f920:FRP_3eme_SVT.pdf \
+  > sources-frp/FRP_3eme_SVT.pdf
+python3 -c "import pypdf,io; r=pypdf.PdfReader('sources-frp/FRP_3eme_SVT.pdf'); \
+io.open('sources-frp/frp_svt3e_full.txt','w',encoding='utf-8').write(
+'\n'.join((p.extract_text() or '') for p in r.pages))"
+```
+
+Attendu : **68 pages, ~89 570 caractères**, puis **37/37**.
