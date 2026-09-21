@@ -9,7 +9,7 @@
 
 ## Pourquoi cette note existe
 
-Un manuel scolaire qui s'écarte de la ressource officielle du Ministère doit pouvoir le justifier, point par point, devant un validateur. Ce document rassemble les **35 écarts** dispersés dans les sept fichiers de travail, les classe par gravité, et donne pour chacun le motif et la décision retenue.
+Un manuel scolaire qui s'écarte de la ressource officielle du Ministère doit pouvoir le justifier, point par point, devant un validateur. Ce document rassemble les **36 écarts** dispersés dans les sept fichiers de travail, les classe par gravité, et donne pour chacun le motif et la décision retenue.
 
 Le principe appliqué est simple : **le PE fixe le programme, le FRP est une ressource**. Lorsqu'une ressource contredit un fait scientifique vérifiable, c'est le fait qui l'emporte, et l'écart est signalé plutôt que dissimulé.
 
@@ -22,8 +22,8 @@ Trois écarts portent sur des **erreurs médicales ou scientifiques** qu'il aura
 | ⛔ **Critique** | 4 | Erreur scientifique ou médicale dans la source officielle ; contenu non reproductible |
 | ⚠️ **Substantiel** | 7 | Donnée imprécise, dangereuse hors contexte, ou hors programme |
 | ▪ **Ordinaire** | 15 | Reformulation, arrondi prudent, source défectueuse contournée |
-| ➕ **Ajout** | 9 | Contenu absent des sources, jugé indispensable |
-| | **35** | |
+| ➕ **Ajout** | 10 | Contenu absent des sources, jugé indispensable |
+| | **36** | |
 
 | Unité | Écarts | Dont critiques |
 |---|---|---|
@@ -34,6 +34,7 @@ Trois écarts portent sur des **erreurs médicales ou scientifiques** qu'il aura
 | IV — Reproduction humaine | 9 | **3** |
 | V — Géologie | 6 | **1** |
 | Révisions et examens | 3 | — |
+| Ensemble du manuel | 1 | — |
 
 ---
 ---
@@ -183,6 +184,7 @@ Contenus absents du PE et du FRP, introduits parce que leur absence rendait le c
 | **A6** | **Consignes de sécurité pour les manipulations de pierres** | 45 | Le PE prévoit marteau, couteau, lunettes et gants sans qu'aucune source n'accompagne ces outils de précautions |
 | **A7** | **Distinction dureté / ténacité**, corindons synthétiques, travail des enfants et répartition de la valeur | 45, 47, 48, 49 | La confusion dureté/solidité est l'erreur la plus courante de l'unité. Les deux derniers points donnent leur contenu concret aux valeurs *responsabilité* et *sens du bien commun* du PE |
 | **A9** | **Sept illustrations en page LEÇON** (13, 14, 16 ×2, 19, 30) | 13, 14, 16, 19, 30 | Le dépôt `jlearn-pack` contient 41 illustrations servies par CDN, dont aucune n'était utilisée par les pages de leçon. Sept ont été rapprochées des séances dont le texte les décrit déjà : plante entière, criquet, **rat des champs** (la séance 16 cite les rats parmi les ravageurs sans les montrer ; le commentaire précise qu'ils s'attaquent surtout au **riz stocké**), poule, zébu, plus les deux schémas muets réemployés en leçon avant l'examen. Les 34 images restantes ont été **inspectées une à une, puis écartées** pour trois motifs : hors programme T9 (appareil digestif, fleur en coupe) ; **texte parasite incrusté** — `falaise_strates.png` porte le mot inexistant « Sounitet », `svt9e_vaccination.png` un flacon illisible ; ou sujet inadapté (vaccination d'un enfant là où la séance 21 traite du bétail). **Une image approximative nuit plus qu'elle n'aide** |
+| **A10** | **Tableau de répartition du volume horaire** en tête de manuel | Page de garde | Le PE fixe 66 h pour 4 h hebdomadaires, mais le manuel compte 51 séances et laisse le champ Durée vide. L'audit relevait que le volume horaire « aurait dû être lu et réparti, pas éludé » — le reproche valait aussi pour cette réécriture. Un tableau donne désormais le temps moyen par séance et par unité (50 min à 1 h 35). **L'Unité I est la seule en déficit** : 12 séances pour 10 h ; deux solutions concrètes sont proposées, sans jamais sacrifier l'examen |
 | **A8** | **Deux schémas à légender** : extrémité de racine, arc réflexe | 24, 35 | Le manuel d'origine annonçait « Schéma à légender » dans vingt légendes d'images sans qu'aucun exercice de légendage n'existe. Les deux schémas sont **originaux**, dessinés pour ce manuel, et **volontairement dépourvus de texte** : les noms sont à placer par l'élève. Aucune image du FRP n'a été reprise |
 
 ---

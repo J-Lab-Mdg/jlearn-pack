@@ -113,6 +113,38 @@ Barème de **20 points** par évaluation · page LEÇON complète · champ **Dur
 
 Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Stratégie | Support et Matériel | Observation**.
 
+### Volume horaire : comment faire tenir les séances dans les heures du programme
+
+Le Programme d'Études fixe **4 h par semaine, soit 66 h** réparties entre les cinq
+unités. Ce manuel compte **51 séances**. Les deux nombres ne se correspondent pas
+unité par unité : le champ **Durée** est laissé vide précisément pour que vous
+arbitriez selon votre emploi du temps et votre classe. Le tableau ci-dessous
+donne le rapport à respecter pour ne pas dépasser le volume officiel.
+
+| Unité | Durée PE | Séances | Temps moyen par séance | Marge |
+|---|---:|---:|---|---|
+| I — Alimentation | 10 h | 12 | **50 min** | serrée — regroupez 2 séances si besoin |
+| II — Organisation des êtres vivants | 15 h | 12 | **1 h 15** | confortable |
+| III — Santé et bien-être | 18 h | 11 | **1 h 35** | large — prenez le temps des travaux de groupe |
+| IV — Reproduction humaine | 10 h | 8 | **1 h 15** | confortable |
+| V — Géologie | 13 h | 8 | **1 h 35** | large |
+| **Total** | **66 h** | **51** | | |
+
+> **Unité I : le point de vigilance.** C'est la seule unité où le temps manque
+> — 12 séances pour 10 h. Deux solutions, au choix : traiter les séances 2 et 3
+> en une seule fois (les groupes de nutriments se prêtent au tableau unique), ou
+> donner la séance 11 (révision) à faire à la maison et n'en corriger que les
+> réponses en classe. **Ne sacrifiez pas la séance 12 (examen)** : elle est la
+> seule évaluation notée de l'unité.
+>
+> À l'inverse, les unités III et V disposent de marge : c'est là qu'il faut
+> placer les manipulations, les sorties et les mini-projets.
+
+Ce rapport est indicatif. Une séance de découverte demande souvent plus de temps
+qu'une séance d'application, et une classe nombreuse ralentit les travaux de
+groupe. Le tableau donne la **moyenne à tenir sur l'unité**, pas un minutage à
+appliquer séance par séance.
+
 ---
 
 # Sommaire
