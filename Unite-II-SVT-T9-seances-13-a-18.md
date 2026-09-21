@@ -254,6 +254,9 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 
 ### Page LEÇON
 
+![Les soins aux cultures : arrosage, sarclage, désherbage et éclaircissage.](img_seance15.png)
+
+
 **<span style="color:#C00000">Les soins à apporter aux plantes cultivées</span>**
 
 **<span style="color:#1E7B34">1. Pourquoi entretenir une culture ?</span>**

@@ -454,6 +454,9 @@ Connaître la valeur énergétique permet de comparer deux aliments et d'adapter
 
 ### Page LEÇON
 
+![Le corps dépense de l'énergie même au repos : c'est le métabolisme de base.](img_seance05.png)
+
+
 **<span style="color:#C00000">Métabolisme et besoins énergétiques</span>**
 
 **<span style="color:#1E7B34">1. Le métabolisme de base</span>**

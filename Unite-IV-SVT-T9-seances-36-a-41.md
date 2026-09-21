@@ -317,6 +317,9 @@ Le principal obstacle n'est pas médical, il est **informationnel** : beaucoup d
 
 ### Page LEÇON
 
+![Le cycle menstruel de 28 jours : règles, phase folliculaire, ovulation et phase lutéale, avec l'évolution de la muqueuse utérine.](cycle_menstruel_schema.png)
+
+
 **<span style="color:#C00000">La grossesse précoce et le suivi médical</span>**
 
 **<span style="color:#1E7B34">1. Pouvoir n'est pas être prêt</span>**

@@ -67,6 +67,9 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 
 ### Page LEÇON
 
+![Pierres précieuses, pierres fines et pierres organiques.](img_seance44.png)
+
+
 **<span style="color:#C00000">Les trois familles de pierres gemmes</span>**
 
 **<span style="color:#1E7B34">1. Qu'est-ce qu'une gemme ?</span>**
@@ -165,6 +168,9 @@ Elles se distinguent nettement des deux autres familles : elles ne sont pas née
 | **III. ÉVALUATION** | **Ex. 1** — Cite les six propriétés physiques d'une gemme.<br><br>**Ex. 2** — Le diamant est la pierre la plus dure. Peut-on pour autant le briser d'un coup de marteau ? Explique. | **Ex. 1** : couleur, éclat, transparence, dureté, cassure, clivage.<br><br>**Ex. 2** : **Oui.** La dureté est la résistance **à la rayure**, pas au choc. Le diamant possède un clivage parfait : frappé au bon endroit, il se fend. Dureté et ténacité sont deux propriétés différentes. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Dureté, éclat et transparence : les propriétés physiques des gemmes.](img_seance45.png)
+
 
 **<span style="color:#C00000">Les propriétés physiques des pierres gemmes</span>**
 
@@ -296,6 +302,9 @@ Le grenat, également rouge, aurait été rayé par la topaze — sa dureté ne 
 
 ### Page LEÇON
 
+![Les principaux gisements de pierres gemmes à Madagascar : saphir dans le Sud (bleu), rubis dans l'Est et le Centre-Est (rouge), tourmaline et béryl dans le Centre (vert), émeraude sur la côte Est (violet), labradorite au Nord-Ouest (orange).](img_seance46.png)
+
+
 **<span style="color:#C00000">La répartition géographique des pierres gemmes à Madagascar</span>**
 
 **<span style="color:#1E7B34">1. Un sous-sol exceptionnel</span>**
@@ -397,6 +406,9 @@ Une question se pose alors, et elle appartient pleinement à cette leçon : **à
 | **III. ÉVALUATION** | **Ex. 1** — Cite deux usages industriels des gemmes et la propriété exploitée dans chaque cas.<br><br>**Ex. 2** — Pourquoi une pierre brute paraît-elle terne alors que la même pierre taillée est éclatante ? | **Ex. 1** : (deux parmi) foret ou disque de coupe diamanté → **dureté** ; coussinet de montre en rubis → **résistance à l'usure** ; verre ou lentille en saphir → **résistance à la rayure et transparence**.<br><br>**Ex. 2** : Brute, sa surface est irrégulière et dépolie : elle disperse la lumière au hasard. La **taille** crée des **facettes planes et polies**, disposées de manière à réfléchir la lumière entrée dans la pierre et à la renvoyer vers l'œil. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Joaillerie et usages industriels des pierres gemmes.](img_seance47.png)
+
 
 **<span style="color:#C00000">Les utilisations des pierres gemmes</span>**
 
@@ -502,6 +514,9 @@ Le commerce des pierres dites « de soin » existe, et il est important à Madag
 | **III. ÉVALUATION** | **Ex. 1** — Cite les trois techniques d'exploitation.<br><br>**Ex. 2** — Explique en deux phrases le principe physique du lavage des graviers. | **Ex. 1** : mine à ciel ouvert, mine souterraine, exploitation alluviale.<br><br>**Ex. 2** : On agite le mélange de sable, de gravier et d'eau. Les éléments **les plus denses**, dont les gemmes, se rassemblent au fond, tandis que l'eau emporte les éléments légers : on les sépare ainsi sans machine. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Extraction artisanale et extraction industrielle.](img_seance48.png)
+
 
 **<span style="color:#C00000">Les techniques d'exploitation</span>**
 
@@ -613,6 +628,9 @@ Ses inconvénients sont tout aussi nets. Le travail se déroule **dans l'eau et 
 | **III. ÉVALUATION** | **Ex. 1** — Cite trois impacts environnementaux de l'exploitation des gemmes.<br><br>**Ex. 2** — « L'exploitation des pierres est forcément une catastrophe pour l'environnement. » Discute cette affirmation en quelques lignes. | **Ex. 1** : (trois parmi) pollution et turbidité des eaux, érosion des sols, déforestation, destruction des habitats de la faune, privation d'eau pour les populations en aval.<br><br>**Ex. 2** : L'affirmation est **excessive**. Les dégâts constatés résultent d'une exploitation **non maîtrisée** : fosses abandonnées, rejets directs dans les rivières, défrichement sans limite. Une exploitation encadrée — bassins de décantation, comblement et replantation des fosses, protection des berges, contrôle des sites — réduit fortement ces impacts. Le problème ne tient pas à l'extraction elle-même, mais à **l'absence de règles et de contrôle**. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Conséquences de l'exploitation minière sur les sols et les rivières.](img_seance49.png)
+
 
 **<span style="color:#C00000">Les impacts environnementaux et la responsabilité</span>**
 

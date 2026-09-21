@@ -314,6 +314,9 @@ Les déjections des volailles sont un **excellent engrais azoté**. L'élevage n
 
 ### Page LEÇON
 
+![La vaccination et le déparasitage protègent le troupeau.](img_seance21.png)
+
+
 **<span style="color:#C00000">Les soins : vaccination et déparasitage</span>**
 
 **<span style="color:#1E7B34">1. La maladie la plus redoutée des basses-cours</span>**

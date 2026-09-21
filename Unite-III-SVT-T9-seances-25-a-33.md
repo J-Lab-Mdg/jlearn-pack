@@ -287,6 +287,9 @@ La plupart des nerfs contiennent à la fois des fibres sensitives et des fibres 
 
 ### Page LEÇON
 
+![Le réflexe inné : la main se retire avant toute réflexion.](img_seance27.png)
+
+
 **<span style="color:#C00000">Le mouvement réflexe inné</span>**
 
 **<span style="color:#1E7B34">1. Une réaction que nul n'a décidée</span>**
