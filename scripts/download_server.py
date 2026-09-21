@@ -19,6 +19,7 @@ RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCX = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
 
 FICHIERS = {
+    "/d": ("Manuel-SVT-T9-complet.docx", DOCX),
     "/manuel.docx": ("Manuel-SVT-T9-complet.docx", DOCX),
     "/note.docx": ("Note-de-synthese-ecarts-SVT-T9.docx", DOCX),
     "/manuel.md": ("Manuel-SVT-T9-complet.md", "text/markdown; charset=utf-8"),
@@ -35,6 +36,8 @@ def octets(n):
 def page_index():
     lignes = []
     for route, (nom, _) in FICHIERS.items():
+        if route == "/d":
+            continue
         chemin = os.path.join(RACINE, nom)
         if not os.path.exists(chemin):
             continue
@@ -48,23 +51,39 @@ def page_index():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Manuel SVT T9 — telechargement</title>
 <style>
- body {{ font-family: system-ui, sans-serif; max-width: 40rem; margin: 3rem auto;
-        padding: 0 1.5rem; line-height: 1.6; color: #1a1a1a; }}
- h1 {{ font-size: 1.4rem; }}
- ul {{ list-style: none; padding: 0; }}
- li {{ padding: .9rem 1rem; border: 1px solid #ddd; border-radius: .5rem;
-       margin-bottom: .6rem; }}
- a {{ color: #1558b0; text-decoration: none; }}
- a:hover {{ text-decoration: underline; }}
- .t {{ color: #666; font-size: .9rem; float: right; }}
- p.n {{ color: #555; font-size: .92rem; }}
+ * {{ box-sizing: border-box; }}
+ body {{ font-family: system-ui, -apple-system, sans-serif; max-width: 34rem;
+        margin: 0 auto; padding: 2.5rem 1.25rem; line-height: 1.55;
+        color: #111; }}
+ h1 {{ font-size: 1.25rem; margin: 0 0 .35rem; }}
+ p.sub {{ color: #555; font-size: .95rem; margin: 0 0 1.75rem; }}
+ a.gros {{ display: block; background: #1558b0; color: #fff; text-align: center;
+          padding: 1.15rem 1rem; border-radius: .6rem; font-size: 1.1rem;
+          font-weight: 600; text-decoration: none; margin-bottom: .6rem; }}
+ a.gros:hover {{ background: #0d3f80; }}
+ a.gros span {{ display: block; font-size: .85rem; font-weight: 400;
+               opacity: .85; margin-top: .2rem; }}
+ ul {{ list-style: none; padding: 0; margin: 1.5rem 0 0; }}
+ li {{ padding: .75rem .9rem; border: 1px solid #ddd; border-radius: .5rem;
+       margin-bottom: .5rem; font-size: .95rem; }}
+ li a {{ color: #1558b0; text-decoration: none; }}
+ li a:hover {{ text-decoration: underline; }}
+ .t {{ color: #666; font-size: .85rem; float: right; }}
+ p.n {{ color: #666; font-size: .85rem; margin-top: 1.75rem;
+       border-top: 1px solid #eee; padding-top: 1rem; }}
 </style></head><body>
 <h1>Manuel de SVT — classe de T9</h1>
-<p class="n">51 seances : 41 de contenu, 5 revisions, 5 examens avec corriges.
-Cliquez pour telecharger.</p>
+<p class="sub">51 seances : 41 de contenu, 5 revisions, 5 examens avec corriges.</p>
+
+<a class="gros" href="/manuel.docx" download>
+  Telecharger le manuel (.docx)
+  <span>5,4 Mo — pret a imprimer, A4 paysage</span>
+</a>
+
 <ul>{''.join(lignes)}</ul>
-<p class="n">Le <code>.docx</code> est un fichier derive du Markdown.
-Pour le modifier, editez le fichier d'unite puis relancez
+
+<p class="n">Le <code>.docx</code> est un fichier derive du Markdown. Pour le
+modifier, editez le fichier d'unite puis relancez
 <code>assembler_manuel.py</code> et <code>md2docx.py</code>.</p>
 </body></html>"""
 
