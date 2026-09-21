@@ -47,6 +47,10 @@ IMAGES_DEFECTUEUSES = {
     "cycle_eau.png": "légendes en anglais, « MADOQGAECA », flèches interverties",
     "falaise_strates.png": "porte le mot inexistant « Sounitet »",
     "svt9e_vaccination.png": "étiquette de flacon illisible « VECCAS BCA »",
+    # Seul defaut de cette liste qui ne soit pas du texte incruste : les deux
+    # fleurs portent etamines ET pistil, donc hermaphrodites, mais sont
+    # etiquetees « fleur male » / « fleur femelle ».
+    "pollinisation_cycle.png": "fleurs hermaphrodites étiquetées mâle/femelle",
 }
 FRP = "sources-frp/frp_svt3e_full.txt"
 

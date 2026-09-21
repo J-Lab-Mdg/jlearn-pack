@@ -22,6 +22,7 @@ devraient pas être affichées en classe en l'état.
 | `cycle_eau.png` | **Légendes en anglais** (`RIVER`, `RUNOFF`, `EVAPARATION`, `PRECIPITATION`) dans un pack francophone. `EVAPARATION` est de surcroît mal orthographié, et le mot **`MADOQGAECA`** n'existe dans aucune langue. Les deux flèches hautes sont par ailleurs **interverties** : la légende « évaporation » surmonte une averse, « précipitation » désigne le mouvement vers le soleil |
 | `falaise_strates.png` | Porte le mot **« Sounitet »**, inexistant en français — probablement une déformation de « Sommet » |
 | `svt9e_vaccination.png` | Étiquette de flacon illisible (**« VECCAS BCA »**) et boîte marquée « KIT DE PREMIERS SECOURS » à l'orthographe brouillée |
+| `pollinisation_cycle.png` | **Erreur scientifique, et non de texte** : les deux fleurs sont étiquetées « Fleur mâle » et « Fleur femelle », alors que l'une comme l'autre sont dessinées avec **étamines *et* pistil** — donc hermaphrodites, cas le plus répandu chez les plantes à fleurs. L'étiquetage contredit le dessin et installe une confusion durable entre *fleur unisexuée* et *organe mâle/femelle d'une même fleur*. Légendes correctes : « fleur émettrice » et « fleur réceptrice » ; sinon, redessiner deux fleurs réellement unisexuées |
 
 ## Défauts mineurs
 
