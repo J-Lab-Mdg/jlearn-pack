@@ -343,6 +343,56 @@ def controle_non_regression(seances):
              if orphelines else f"{len(annonces)} annonce(s), tous fournis")
 
 
+def controle_note_ecarts():
+    """Verifie que les compteurs de la note de synthese restent coherents.
+
+    La note affiche trois decomptes des memes ecarts : un total en prose, un
+    tableau par gravite et un tableau par unite. Ajouter un ecart sans mettre
+    les trois a jour est une erreur commise deux fois pendant la redaction,
+    invisible a la relecture. Ce controle l'interdit.
+    """
+    print("\n\033[1m9. Cohérence de la note d'écarts\033[0m")
+    chemin = os.path.join(RACINE, "Note-de-synthese-ecarts-SVT-T9.md")
+    if not os.path.exists(chemin):
+        print("\033[33m IGNORÉ\033[0m note de synthèse absente")
+        ignores.append("cohérence de la note d'écarts")
+        return
+    note = lire("Note-de-synthese-ecarts-SVT-T9.md")
+
+    gravites = [int(m.group(1)) for m in re.finditer(
+        r"^\|[^|]*\*\*(?:Critique|Substantiel|Ordinaire|Ajout)\*\*[^|]*\| (\d+) \|",
+        note, flags=re.M)]
+    total_ligne = re.search(r"^\| \| \*\*(\d+)\*\* \| \|", note, flags=re.M)
+    total = int(total_ligne.group(1)) if total_ligne else -1
+    prose = re.search(r"\*\*(\d+) écarts\*\*", note)
+    annonce = int(prose.group(1)) if prose else -1
+    unites = [int(m) for m in re.findall(
+        r"^\| (?:I|II|III|IV|V|Révisions|Ensemble)[^|]*\| (\d+) \|", note, flags=re.M)]
+    # Les ecarts critiques et substantiels sont des titres « ## C1 — … »,
+    # les ordinaires et les ajouts des lignes de tableau « | **O1** | … ».
+    # Ne compter qu'une seule de ces deux formes sous-compte le total.
+    identifiants = (re.findall(r"^## [^\n]*?\b([CS]\d+) —", note, flags=re.M)
+                    + re.findall(r"\| \*\*([CSOA]\d+)\*\*", note))
+
+    verifier("tableau des gravités cohérent", len(gravites) == 4 and sum(gravites) == total,
+             f"somme {sum(gravites)} ≠ total affiché {total}"
+             if sum(gravites) != total else f"{sum(gravites)} écarts")
+    verifier("total en prose cohérent", annonce == total,
+             f"la prose annonce {annonce}, le tableau {total}"
+             if annonce != total else f"{annonce} écarts")
+    verifier("tableau par unité cohérent", sum(unites) == total,
+             f"somme par unité {sum(unites)} ≠ total {total}"
+             if sum(unites) != total else f"{sum(unites)} écarts répartis")
+    verifier("nombre d'écarts détaillés = total annoncé",
+             len(identifiants) == total,
+             f"{len(identifiants)} écart(s) détaillé(s) pour un total annoncé de {total}"
+             if len(identifiants) != total else f"{len(identifiants)} écarts détaillés")
+    doublons = sorted({i for i in identifiants if identifiants.count(i) > 1})
+    verifier("aucun identifiant d'écart en double", not doublons,
+             f"identifiant(s) {', '.join(doublons)} utilisé(s) deux fois"
+             if doublons else f"{len(identifiants)} identifiants distincts")
+
+
 def main():
     print("\033[1m" + "=" * 62)
     print("CONTRÔLE QUALITÉ — Manuel SVT T9")
@@ -356,6 +406,7 @@ def main():
     controle_images()
     controle_assemblage(seances)
     controle_non_regression(seances)
+    controle_note_ecarts()
 
     ok = sum(1 for _, r, _ in resultats if r)
     total = len(resultats)

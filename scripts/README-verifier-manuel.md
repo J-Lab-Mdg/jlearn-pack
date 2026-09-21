@@ -19,6 +19,7 @@ Rejoue en une commande tous les contrôles menés pendant la rédaction. Sort en
 | 6 | Images | image absente, non déclarée dans `pack.json`, ou **sur liste noire** |
 | 7 | Assemblage | `Manuel-SVT-T9-complet.md` désynchronisé des fichiers d'unité |
 | 8 | Non-régression pédagogique | retour d'un des trois défauts du manuel d'origine |
+| 9 | Cohérence de la note d'écarts | compteurs désynchronisés, identifiant en double |
 
 Le **contrôle 8** mérite un mot : les contrôles 1 à 7 vérifient la *forme*
 (barèmes, calculs, assemblage). Rien n'empêcherait de réintroduire, à contenu
@@ -51,6 +52,9 @@ Un vérificateur qui ne détecte jamais rien ne sert à rien. Six régressions o
 | Révision S50 dupliquée depuis S34 | contrôle 8 (recouvrement 100 %) |
 | Consigne répétée sur 4 séances | contrôle 8 |
 | Schéma annoncé sans image fournie | contrôle 8 |
+| Écart ajouté sans mise à jour des compteurs | contrôle 9 |
+| Identifiant d'écart en double | contrôle 9 |
+| Total en prose désynchronisé du tableau | contrôle 9 |
 | Image défectueuse insérée (`cycle_eau.png`) | contrôle 6 |
 
 Après restauration, le manuel présentait un md5 identique à l'original.
@@ -95,3 +99,17 @@ bonne foi par quelqu'un qui n'aurait pas ouvert le fichier.
 
 Le détail de chaque défaut est dans `AUDIT-images-pack.md`. Lorsqu'une image est
 refaite, il suffit de retirer son entrée de la constante.
+
+## Pourquoi le contrôle 9
+
+La note de synthèse affiche **trois décomptes des mêmes écarts** : un total en
+prose, un tableau par gravité, un tableau par unité — plus la liste détaillée.
+Ajouter un écart sans mettre les quatre à jour est une erreur commise deux fois
+pendant la rédaction, dont un **identifiant `A9` en double** passé inaperçu à la
+relecture. Le contrôle 9 rend ces incohérences impossibles.
+
+Piège rencontré en l'écrivant : les écarts **critiques et substantiels** sont
+des titres (`## ⛔ C1 — …`) tandis que les **ordinaires et ajouts** sont des
+lignes de tableau (`| **O1** | … |`). Ne compter qu'une seule de ces deux formes
+sous-compte le total de 36 à 25 — et laisse passer l'ajout d'un écart. Les deux
+formes sont désormais comptées, et ce cas fait partie des régressions testées.
