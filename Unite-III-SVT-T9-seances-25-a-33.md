@@ -718,6 +718,9 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 
 ### Page LEÇON
 
+![Les trois grandes catégories de substances psychoactives : l'alcool, le tabac et certains médicaments détournés de leur usage.](img_seance31.png)
+
+
 **<span style="color:#C00000">Les catégories de substances psychoactives</span>**
 
 **<span style="color:#1E7B34">1. Définition</span>**
