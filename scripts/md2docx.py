@@ -225,15 +225,27 @@ def convertir(chemin_md, chemin_docx):
 
     doc = Document()
 
+    # Mise en page alignee sur le document d'origine : A4 PORTRAIT, Times New
+    # Roman. Le paysage avait ete choisi pour le confort des tableaux a six
+    # colonnes, mais il s'ecarte du gabarit officiel des fiches de preparation.
     section = doc.sections[0]
-    section.orientation = WD_ORIENT.LANDSCAPE
-    section.page_width, section.page_height = section.page_height, section.page_width
-    for marge in ("left_margin", "right_margin", "top_margin", "bottom_margin"):
+    section.orientation = WD_ORIENT.PORTRAIT
+    section.page_width = Cm(21.0)
+    section.page_height = Cm(29.7)
+    for marge in ("left_margin", "right_margin"):
         setattr(section, marge, Cm(1.5))
+    for marge in ("top_margin", "bottom_margin"):
+        setattr(section, marge, Cm(1.8))
 
     style = doc.styles["Normal"]
-    style.font.name = "Calibri"
-    style.font.size = Pt(10.5)
+    style.font.name = "Times New Roman"
+    style.font.size = Pt(11)
+    # Sans cette ligne, Word retombe sur la police par defaut pour les
+    # caracteres non latins et l'unification visuelle echoue.
+    rpr = style.element.get_or_add_rPr()
+    rfonts = rpr.get_or_add_rFonts()
+    for att in (qn("w:ascii"), qn("w:hAnsi"), qn("w:cs"), qn("w:eastAsia")):
+        rfonts.set(att, "Times New Roman")
 
     i = 0
     tampon_tableau = []

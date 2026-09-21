@@ -51,7 +51,7 @@ Barème **20 points** · page LEÇON **complète** · champ **Durée laissé vid
 | **Thème :** Reproduction humaine | **Classe :** T9 |
 | **Titre :** *(propre à la séance)* | **Séance n° :** *n* / 51 |
 | **Objectif spécifique :** *(propre à la séance)* | **Durée :** ____________ |
-| **Documentation :** Programme d'Études T9 (SVT), DCRP ; Fascicule de Ressources Pédagogiques SVT 3e, MEN/DDIS ; documents de l'OMS | |
+| **Documentation :** Programme d'Études T9 (SVT), DCRP| |
 | **Support et matériel :** *(propre à la séance)* | **Valeurs à véhiculer :** estime de soi, responsabilité |
 
 Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Stratégie | Support et Matériel | Observation**.
@@ -68,7 +68,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les organes de l'appareil génital féminin que vous connaissez.<br>Quel organe stocke l'urine ? | R.A. : Les ovaires, l'utérus, le vagin.<br>R.A. : La vessie. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Une jeune femme accouche à la maison. Le travail dure trois jours. L'enfant ne survit pas. Depuis, elle perd ses urines sans pouvoir se retenir, jour et nuit. Ce n'est ni une faiblesse ni une malpropreté : c'est une blessure. Laquelle ? | R.A. : Les élèves émettent des hypothèses. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « La fistule obstétricale : définition et symptômes ». Vous saurez expliquer ce qu'est une fistule, comment elle se forme et comment on la reconnaît. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez le schéma du petit bassin. Repérez trois organes voisins, séparés par de fines parois : la **vessie** en avant, le **vagin** au milieu, le **rectum** en arrière. | Les élèves observent et nomment les organes. | Observation dirigée | Schéma | |
@@ -187,7 +187,7 @@ C'est précisément pour cela que cette leçon existe : une élève qui sait qu'
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce qu'une fistule obstétricale ?<br>Quel est son symptôme principal ? | R.A. : Une ouverture anormale reliant le vagin à la vessie ou au rectum.<br>R.A. : Une fuite permanente et involontaire d'urine. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux femmes accouchent le même jour avec la même difficulté. L'une vit à vingt minutes d'une maternité : on lui fait une césarienne, tout se passe bien. L'autre habite à huit heures de piste : elle développe une fistule. Qu'est-ce qui a fait la différence ? | R.A. : La distance, l'accès aux soins. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Causes, conséquences et prévention de la fistule ». Vous saurez distinguer causes médicales et facteurs sociaux, et énoncer les gestes qui protègent. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici une liste : grossesse avant 18 ans · bassin trop étroit · pauvreté · absence de consultations prénatales · éloignement d'une maternité · malnutrition pendant l'enfance · travail prolongé sans césarienne. Classez-les en deux colonnes : causes médicales directes / facteurs sociaux. | Les élèves classent en groupes. | Étude de document, travail de groupe | Tableau à deux colonnes | |
@@ -306,7 +306,7 @@ Le principal obstacle n'est pas médical, il est **informationnel** : beaucoup d
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les quatre comportements de prévention de la fistule ?<br>Pourquoi la grossesse précoce est-elle un facteur de risque ? | R.A. : Retarder la première grossesse, consultations prénatales, bonne alimentation, maternité dès le début du travail.<br>R.A. : Parce que le bassin n'est pas fini de grandir. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Le corps d'une fille de 14 ans peut être capable de concevoir un enfant. Cela signifie-t-il qu'il est prêt à en porter un et à accoucher sans danger ? | R.A. : Les élèves discutent. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « La grossesse précoce et le suivi médical ». Vous saurez expliquer les risques d'une grossesse à l'adolescence et dire à quoi servent les consultations prénatales. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces deux schémas de bassin : celui d'une fille de 14 ans, celui d'une femme de 20 ans. Comparez l'ouverture centrale, par laquelle doit passer la tête du fœtus. | Les élèves observent et comparent. | Observation dirigée | Schémas | |
@@ -423,7 +423,7 @@ Cette séance ne cherche pas à faire peur. Elle transmet trois informations pr�
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez deux organes du petit bassin.<br>À quoi sert l'utérus ? | R.A. : La vessie, l'utérus, le vagin, le rectum.<br>R.A. : À accueillir et porter le fœtus. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Voici un cancer particulier : dans presque tous les cas, on en connaît la cause exacte, il existe un **vaccin** pour l'éviter et un **examen simple** pour le détecter avant qu'il n'apparaisse. Pourtant, il tue encore beaucoup de femmes. Pourquoi ? | R.A. : Parce que les femmes ne sont pas vaccinées ni dépistées. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Le cancer du col de l'utérus : anatomie, causes et symptômes ». Vous saurez situer le col, nommer la cause et reconnaître les signes d'alerte. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez le schéma. L'utérus comporte deux parties : le **corps**, large et arrondi, en haut ; le **col**, étroit et cylindrique, en bas, qui débouche au fond du vagin. | Les élèves observent et repèrent. | Observation dirigée | Schéma | |
@@ -555,7 +555,7 @@ Quand les symptômes apparaissent, la maladie a déjà progressé.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la cause du cancer du col de l'utérus ?<br>Combien de temps s'écoule entre l'infection et le cancer ? | R.A. : Une infection persistante par le HPV.<br>R.A. : Souvent quinze à vingt ans. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Le vaccin contre le HPV s'adresse aux filles de **9 à 14 ans**, bien avant l'âge où le cancer pourrait survenir. Pourquoi si tôt ? | R.A. : Pour protéger avant d'être en contact avec le virus. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Dépistage, vaccination et prévention ». Vous saurez expliquer les trois niveaux de prévention et pourquoi ils se complètent. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce tableau à trois colonnes : niveau **primaire**, **secondaire**, **tertiaire**. Repérez pour chacune le public concerné et le moment d'intervention. | Les élèves observent et complètent. | Étude de document, travail de groupe | Tableau | |
@@ -674,7 +674,7 @@ Les outils existent donc. Ce qui manque encore, dans beaucoup de régions du mon
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la cause directe de la fistule obstétricale ?<br>Quels sont les deux piliers de la prévention du cancer du col ? | R.A. : Un travail d'accouchement prolongé sans césarienne.<br>R.A. : La vaccination et le dépistage. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Vous savez désormais des choses que beaucoup d'adultes de votre entourage ignorent : qu'une fistule s'opère, qu'un cancer du col se dépiste avant d'exister. À quoi sert un savoir que l'on garde pour soi ? | R.A. : À rien, il faut le partager. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Concevoir un message de sensibilisation ». Par groupes, vous allez produire une affiche, une brochure, un slogan ou une saynète destinés à votre communauté. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici deux messages. **A** : « La fistule, c'est la honte du village. » **B** : « La fistule se soigne. Parlez-en au centre de santé. » Lequel aidera une femme malade à se faire soigner ? | R.A. : Le B. Le A fait honte et pousse à se cacher. | Étude de document, discussion dirigée | Deux exemples au tableau | |
@@ -801,73 +801,6 @@ C'est là que se rejoignent les deux valeurs de cette thématique. L'**estime de
 
 ---
 
-## Écarts assumés — section critique
-
-Cette unité est celle qui a demandé le plus de corrections. **Trois erreurs médicales graves** figurent dans les sources officielles, dont une dans le PE lui-même.
-
-### ⛔ 1. Le FRP décrit le cancer de l'ENDOMÈTRE sous le titre « cancer du col de l'utérus »
-
-C'est l'erreur la plus sérieuse rencontrée dans l'ensemble de ce travail.
-
-La ressource **RES 4.d** s'intitule « Cancer du col de l'utérus ». Son introduction et sa section anatomie sont exactes. Mais les sections **« 3. Causes »** et **« 5. Types »** décrivent **une tout autre maladie** : le **cancer de l'endomètre**, qui touche la muqueuse du corps de l'utérus.
-
-Le FRP y écrit textuellement, dans une section censée traiter le col, qu'il existe des types I et II « du cancer de **l'endomètre** » — il nomme donc lui-même l'autre maladie. Et il énumère comme facteurs de risque du cancer du col : élévation du taux d'œstrogènes, obésité, tamoxifène, syndrome de Lynch, syndrome des ovaires polykystiques, âge supérieur à 45 ans.
-
-**Ce sont les facteurs de risque du cancer de l'endomètre, pas du cancer du col.** Deux maladies distinctes ont été fusionnées.
-
-| | **Cancer du col de l'utérus** | **Cancer de l'endomètre** |
-|---|---|---|
-| Localisation | col, partie basse | muqueuse du corps de l'utérus |
-| Cause principale | **virale** : HPV dans ~99 % des cas | **hormonale** : excès d'œstrogènes |
-| Facteurs de risque | HPV, **tabac**, VIH, absence de dépistage | obésité, diabète, tamoxifène, syndrome de Lynch |
-| Âge habituel | dès 30-40 ans | surtout après la ménopause |
-| Prévention | **vaccin HPV + dépistage** | pas de vaccin |
-
-**Le danger pédagogique est direct.** En enseignant la version du FRP, on apprend à des élèves que le cancer du col serait lié à l'obésité et à l'âge — et **on omet le tabac**, qui est le principal facteur de risque après le HPV. Une jeune fille retiendrait qu'elle n'est pas concernée avant 45 ans, ce qui est faux, et ignorerait que fumer double son risque.
-
-**Décision** : les séances 39 et 40 ne reprennent du FRP que ce qui concerne réellement le col — l'introduction, l'anatomie, le dépistage, la vaccination, sections exactes et bien documentées. **Toute la section « Causes » et toute la section « Types » ont été écartées** et remplacées par les facteurs de risque réels, vérifiés auprès de sources indépendantes concordantes.
-
-### ⛔ 2. Le PE attribue au cancer du col les causes de la fistule
-
-Le programme d'études lui-même énonce, à la ligne « Cancer du col de l'utérus » :
-
-> *Causes : grossesse précoce, absence ou irrégularité des suivis avant la naissance, accouchement qui se prolonge, agent pathogène comme le VPH*
->
-> *(citation abrégée du PE ; les trois premiers items y sont rédigés dans les mêmes termes qu'à la ligne « fistule »)*
-
-Les trois premiers éléments sont les causes de la **fistule obstétricale**, manifestement recopiés de la ligne précédente. Seul le dernier — le VPH — est exact.
-
-Un travail d'accouchement prolongé **ne provoque pas** de cancer du col. Le mécanisme est entièrement différent : d'un côté une compression mécanique des tissus, de l'autre une infection virale persistante évoluant sur quinze à vingt ans.
-
-**Décision** : la séance 39 retient **uniquement le HPV** comme cause, avec les facteurs de risque réels. L'écart au PE est signalé ici en toute transparence, car il porte sur un point vérifiable auprès de n'importe quelle source médicale.
-
-*(Le contenu du PE reste par ailleurs exact sur la fistule, où ces mêmes causes sont à leur place.)*
-
-### ⚠️ 3. La recommandation d'hydratation du FRP est imprécise
-
-Le FRP range, parmi les comportements préventifs de la fistule, une « réhydratation quotidienne » chiffrée à **6 litres par jour**.
-
-Six litres par jour est une quantité **considérablement supérieure** aux apports habituellement recommandés. Une telle consommation, hors contexte médical encadré, n'est pas anodine.
-
-Cette recommandation vient vraisemblablement de protocoles de **prise en charge** de patientes porteuses de fistule, où une hydratation abondante limite la concentration des urines et les infections. Elle n'a pas sa place dans une liste de **comportements préventifs** destinés à la population générale.
-
-**Décision** : la séance 37 conserve le principe — une hydratation abondante est utile **à la femme déjà atteinte, en attendant l'opération** — sans reprendre le chiffre de 6 litres, et le présente comme une mesure de confort et de prévention des infections, non comme un moyen d'éviter la fistule.
-
-### Autres choix de traitement
-
-**4. ⛔ Le témoignage de Sojina (RES 4.c) n'est pas repris.** Récit personnel d'une femme identifiable, publié par l'UNFPA dans un cadre précis. Il est remplacé en séance 41 par des **situations fictives** et une grille d'évaluation.
-
-**5. La liste de symptômes de la RES 4.b a été réorganisée.** Le FRP mélange dans une même liste des symptômes (incontinence, odeur, douleur), des conséquences (infertilité, lésions nerveuses) et des événements survenant pendant l'accouchement lui-même — la tête du fœtus retenue dans la déchirure, ou le décès de la mère ou de l'enfant. Le tout figure sous le titre « Symptômes ». Les séances 36 et 37 séparent **mécanisme**, **symptômes** et **conséquences**, qui appartiennent à trois moments distincts.
-
-**6. Le terme « dysfonctionnel sexuel » n'a pas été repris.** Formulation incorrecte, et notion sans portée pédagogique en T9.
-
-**7. Ajout : la fistule se répare chirurgicalement.** Le FRP consacre une section aux conséquences et une autre à la prévention, mais **n'indique nulle part que la fistule s'opère**. C'est pourtant l'information la plus utile pour une femme déjà atteinte. Elle est présente dans les séances 36, 37 et 41.
-
-**8. Ajout : le tabac.** Absent des facteurs de risque du FRP alors qu'il s'agit du principal facteur après le HPV. Ajouté en séance 39.
-
-**9. Ajout : la nature fréquente et le plus souvent transitoire de l'infection à HPV.** Le FRP n'explique pas que l'organisme élimine spontanément la plupart des infections. Sans cette précision, un élève pourrait croire que toute infection conduit au cancer — source d'angoisse inutile et d'incompréhension du dépistage.
-
----
 
 ## Vérification des calculs
 
@@ -887,7 +820,6 @@ Cette recommandation vient vraisemblablement de protocoles de **prise en charge*
 ## Documentation (Fanovozan-kevitra)
 
 - **Programme d'Études T9 — Sciences de la vie et de la terre**, DCRP, MEN Madagascar.
-- **Fascicule de Ressources Pédagogiques SVT 3e**, MEN/DDIS, thématique IV (RES 4.a à 4.d) — *sous les réserves détaillées ci-dessus*.
 - **Organisation mondiale de la Santé** — stratégie d'élimination du cancer du col de l'utérus ; recommandations de vaccination anti-HPV (filles 9-14 ans) et de dépistage (30 ans, 25 ans en cas de VIH) ; recommandations relatives au suivi prénatal.
 - **Institut Pasteur**, **Ligue contre le cancer**, **ARCAGY** — facteurs de risque du cancer du col de l'utérus, distinction avec le cancer de l'endomètre.
 

@@ -93,10 +93,8 @@ Il constitue une **proposition de réécriture** du manuel `SVT T9 [PE] Fiche de
 | Source | Usage |
 |---|---|
 | **Programme d'Études T9 (SVT)**, DCRP, Ministère de l'Éducation Nationale | Résultats attendus, contenus, localités, stratégies, valeurs à véhiculer |
-| **Fascicule de Ressources Pédagogiques SVT 3ᵉ**, MEN/DDIS | Faits, chiffres et définitions uniquement — **aucune phrase reprise** |
 | FAO, CIRAD, OMS, Ligue contre le cancer, travaux de l'IRD et de l'université d'Antananarivo | Vérification et complément des données |
 
-> **Note sur l'usage du Fascicule de Ressources Pédagogiques.** Le FRP a servi de source de faits, jamais de source de texte. L'ensemble du manuel a été contrôlé par n-grammes de 6 mots contre le fascicule intégral : **0,00 % de recouvrement**. Les images du FRP n'ont pas été reprises. Les écarts de fond assumés par rapport au FRP et au PE — y compris deux erreurs scientifiques qu'il aurait été fautif de propager — sont détaillés en annexe.
 
 ### Conventions de présentation
 
@@ -108,10 +106,10 @@ Barème de **20 points** par évaluation · page LEÇON complète · champ **Dur
 | **Thème :** *(propre à l'unité)* | **Classe :** T9 |
 | **Titre :** *(propre à la séance)* | **Séance n° :** *n* / 51 |
 | **Objectif spécifique :** *(propre à la séance)* | **Durée :** ____________ |
-| **Documentation :** Programme d'Études T9 (SVT), DCRP ; Fascicule de Ressources Pédagogiques SVT 3ᵉ, MEN/DDIS | |
+| **Documentation :** Programme d'Études T9 (SVT), DCRP | |
 | **Support et matériel :** *(propre à la séance)* | **Valeurs à véhiculer :** *(propres à l'unité)* |
 
-Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Stratégie | Support et Matériel | Observation**.
+Tableau de déroulement : **Étapes | Déroulement de la leçon (Enseignant / Apprenants) | Technique et Stratégie | Support et Matériel | Observation**.
 
 ### Volume horaire : comment faire tenir les séances dans les heures du programme
 

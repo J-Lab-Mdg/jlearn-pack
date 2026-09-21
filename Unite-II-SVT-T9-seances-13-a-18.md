@@ -39,7 +39,7 @@ Barème **20 points** · page LEÇON **complète** · champ **Durée laissé vid
 | **Thème :** Organisation des êtres vivants | **Classe :** T9 |
 | **Titre :** *(propre à la séance)* | **Séance n° :** *n* / 51 |
 | **Objectif spécifique :** *(propre à la séance)* | **Durée :** ____________ |
-| **Documentation :** Programme d'Études T9 (SVT), DCRP ; Fascicule de Ressources Pédagogiques SVT 3e, MEN/DDIS | |
+| **Documentation :** Programme d'Études T9 (SVT), DCRP | |
 | **Support et matériel :** *(propre à la séance)* | **Valeurs à véhiculer :** respect de toute vie, culture de l'excellence |
 
 Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Stratégie | Support et Matériel | Observation**.
@@ -54,7 +54,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | De quoi l'être humain a-t-il besoin chaque jour pour vivre ?<br>Une plante mange-t-elle comme nous ? | R.A. : De nourriture, d'eau, d'air.<br>R.A. : Non, elle n'a pas de bouche. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux pieds de brèdes ont été plantés le même jour. Celui du jardin est vert et vigoureux. Celui qu'on a laissé dans un coin sombre de la cuisine est jaune et mou. Pourtant, on les a arrosés tous les deux. Que manque-t-il au second ? | R.A. : Il manque la lumière du soleil. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les besoins nutritifs des plantes ». À la fin, vous saurez nommer les quatre éléments nécessaires à une plante et dire quelle expérience le prouve. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici quatre montages préparés il y a six jours. Dans chacun, deux plantes identiques ont été traitées différemment : on n'a fait varier **qu'une seule chose** à la fois. Observez et notez l'état de chaque plante. | Les élèves observent et notent. | Observation dirigée, travail de groupe | Les 4 montages | |
@@ -147,7 +147,7 @@ Ces quatre besoins expliquent tous les gestes du jardinier : arroser, fumer le s
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les quatre besoins d'une plante.<br>Par quelle partie la plante prend-elle l'eau du sol ? | R.A. : Eau, sels minéraux, dioxyde de carbone, lumière.<br>R.A. : Par les racines. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | La racine est parfois très longue. L'eau entre-t-elle partout sur toute sa longueur, ou seulement à un endroit précis ? | R.A. : Les élèves proposent des hypothèses. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Le lieu et le mode d'absorption de l'eau ». Vous saurez situer la zone qui absorbe et expliquer le trajet de l'eau dans la racine. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez à la loupe la racine de ces jeunes plants. Regardez bien les trois zones : l'extrémité pointue, la région un peu plus haut couverte d'un duvet blanc, et la partie lisse près de la tige. | Les élèves observent à la loupe. | Observation dirigée | Plants germés, loupe | |
@@ -243,7 +243,7 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Par où la plante absorbe-t-elle l'eau ?<br>Que se passe-t-il si les poils absorbants sont détruits ? | R.A. : Par les poils absorbants, groupés sur la zone pilifère.<br>R.A. : Elle n'absorbe presque plus d'eau. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Dans un jardin laissé à l'abandon pendant deux mois, les plants de brèdes sont petits et étouffés par d'autres herbes. Que s'est-il passé ? | R.A. : Les mauvaises herbes ont pris la place et la nourriture. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les soins à apporter aux plantes cultivées ». Vous saurez nommer quatre soins et expliquer à quel besoin de la plante chacun répond. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Sortons observer la plate-bande. Regardez : ici les plants sont serrés, là des herbes poussent entre les rangs, là le sol est dur et craquelé. | Les élèves observent et complètent la fiche. | Observation dirigée, enquête | Plate-bande, fiche d'observation | |
@@ -339,7 +339,7 @@ Une culture prélève chaque saison des sels minéraux. Si l'on ne rend rien au 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux soins apportés aux cultures.<br>Pourquoi supprime-t-on les mauvaises herbes ? | R.A. : Le sarclage et l'arrosage raisonné.<br>R.A. : Parce qu'elles prennent l'eau et les sels minéraux. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | J'ai ici trois feuilles ramassées dans trois jardins. La première est percée de trous, la deuxième porte des taches brunes poudreuses, la troisième est intacte mais poussait au milieu des herbes. Les trois plantes vont mal. Est-ce pour la même raison ? | R.A. : Non, les dégâts ne se ressemblent pas. | Questionnement oral | Les 3 feuilles | |
 | 2. Présentation | Aujourd'hui : « Les bio-agresseurs des cultures ». Vous saurez définir un bio-agresseur et reconnaître à quelle famille il appartient. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez à la loupe les feuilles que vous avez rapportées. Notez ce que vous voyez : des trous ? des taches ? un insecte ? | Les élèves observent et notent. | Observation dirigée | Feuilles, loupe | |
@@ -446,7 +446,7 @@ Beaucoup d'attaques s'évitent par de bonnes pratiques : semer à la bonne densi
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois familles de bio-agresseurs.<br>Pourquoi faut-il identifier l'agresseur avant de traiter ? | R.A. : Agents pathogènes, ravageurs, adventices.<br>R.A. : Parce que le traitement n'est pas le même. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un paysan voit ses brèdes envahies de pucerons. Il n'a pas d'argent pour acheter un produit au marché. Autour de lui poussent des voandelaka et des piments. Peut-il s'en servir ? | R.A. : Oui, certaines plantes éloignent les insectes. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les méthodes naturelles de protection ». Vous saurez préparer un purin de feuilles et expliquer comment l'utiliser sans danger. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces feuilles de voandelaka et ces piments. Sentez les feuilles froissées. Goûteriez-vous ces feuilles ? | Les élèves observent, froissent, sentent. | Observation dirigée | Feuilles, piments | |
@@ -543,7 +543,7 @@ Les règles sont donc les mêmes que pour n'importe quel produit de traitement :
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Comment prépare-t-on un purin de feuilles ?<br>Combien de temps dure son effet ? | R.A. : On broie, on fait macérer, on filtre, on dilue.<br>R.A. : Quelques jours seulement. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Une attaque de criquets ravage un champ de maïs en deux jours. Le purin de feuilles ne suffira pas. Que peut faire le paysan ? | R.A. : Utiliser un produit acheté, plus puissant. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les méthodes chimiques et leur usage responsable ». Vous saurez nommer les trois classes de pesticides et citer les règles à respecter. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici des emballages vides et rincés. Lisez les étiquettes : cherchez le nom du produit, contre quoi il agit, la dose indiquée et les dessins d'avertissement. | Les élèves lisent et relèvent les informations. | Observation dirigée, travail de groupe | Emballages, affiche | |
@@ -637,20 +637,6 @@ Méthodes naturelles et chimiques ne s'excluent pas. La démarche raisonnable co
 
 ---
 
-## Écarts assumés par rapport au FRP
-
-Trois points où je me suis écarté de la ressource du Ministère, avec la justification :
-
-**1. La confusion neem / voandelaka (RES 2.e).**
-Le FRP écrit « le neem (voandelaka) », comme si les deux noms désignaient le même arbre. Ce sont **deux espèces distinctes** de la famille des Méliacées : le neem est *Azadirachta indica*, le voandelaka des Hautes Terres est *Melia azedarach* (lilas de Perse, « faux neem »). La confusion est répandue et vient de leurs propriétés voisines, mais un cours de sciences ne peut pas l'entériner. La leçon 17 nomme les deux espèces et explique la confusion, ce qui transforme l'erreur en point d'apprentissage.
-
-**2. L'absence d'avertissement de toxicité (RES 2.e).**
-Le FRP présente le voandelaka comme une solution naturelle sans mentionner que **toutes les parties de l'arbre sont toxiques** et que l'ingestion de quelques fruits suffit à provoquer une intoxication grave. Recommander une plante à des élèves de 14 ans sans cette précaution est problématique. La leçon 17 consacre une section entière au principe « naturel ne veut pas dire sans danger ».
-
-**3. Le conseil d'arrosage (RES 2.c).**
-Le FRP affirme que les plantes arrosées quotidiennement « deviendront paresseuses » et invite à laisser le végétal « chercher » lui-même son eau. La formulation prête le flanc à la critique : une plante ne « cherche » rien, et le conseil pris au pied de la lettre conduit à laisser dépérir de jeunes plants. L'idée sous-jacente est juste — un arrosage abondant et espacé favorise un enracinement profond — et c'est elle que j'ai retenue, sous le nom d'**arrosage raisonné**, en insistant sur l'observation préalable du sol.
-
-**Ajout hors FRP** : la séance 18 comprend un volet **sécurité** (règles de protection, délai avant récolte, protection des pollinisateurs) absent de RES 2.f, qui se limite à définir les trois classes de pesticides. Ce volet me paraît indispensable dans un manuel destiné à des élèves vivant en milieu agricole.
 
 ## Vérifications externes de cette unité
 

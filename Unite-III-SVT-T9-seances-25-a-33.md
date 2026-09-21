@@ -34,7 +34,7 @@ Barème **20 points** · page LEÇON **complète** · champ **Durée laissé vid
 | **Thème :** Santé et bien-être | **Classe :** T9 |
 | **Titre :** *(propre à la séance)* | **Séance n° :** *n* / 51 |
 | **Objectif spécifique :** *(propre à la séance)* | **Durée :** ____________ |
-| **Documentation :** Programme d'Études T9 (SVT), DCRP ; Fascicule de Ressources Pédagogiques SVT 3e, MEN/DDIS | |
+| **Documentation :** Programme d'Études T9 (SVT), DCRP | |
 | **Support et matériel :** *(propre à la séance)* | **Valeurs à véhiculer :** connaissance de soi, altruisme |
 
 Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Stratégie | Support et Matériel | Observation**.
@@ -49,7 +49,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quand vous touchez un objet très chaud, que fait votre main ?<br>Qui a commandé ce mouvement ? | R.A. : Elle se retire tout de suite.<br>R.A. : Le cerveau, ou quelque chose dans le corps. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Vous marchez pieds nus et vous posez le pied sur une épine. Votre pied se relève avant même que vous ayez eu le temps d'y penser. Pourtant, l'épine est loin de la tête. Comment l'information a-t-elle voyagé aussi vite ? | R.A. : Il y a quelque chose qui transporte le message dans le corps. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « L'organisation du système nerveux ». Vous saurez nommer les deux grandes parties du système nerveux et ce qui les compose. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce schéma. Repérez la partie enfermée dans le crâne, celle qui descend le long du dos, et les fils blanchâtres qui partent vers les bras, les jambes, la peau. | Les élèves observent et repèrent. | Observation dirigée | Schéma, silhouette | |
@@ -153,7 +153,7 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les deux parties du système nerveux central.<br>De quoi est fait le système périphérique ? | R.A. : L'encéphale et la moelle épinière.<br>R.A. : Des nerfs et des ganglions. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un élève récite une leçon apprise hier : il se souvient. Un autre marche sur une poutre étroite sans tomber : il garde l'équilibre. Un troisième dort : il respire quand même. Est-ce la même partie du système nerveux qui agit dans les trois cas ? | R.A. : Sans doute pas, ce sont des choses très différentes. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les rôles des différentes parties ». Vous saurez dire ce que fait chaque partie du système nerveux. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez le schéma de l'encéphale. Repérez la grande masse plissée en haut, la petite masse striée en arrière et en bas, et la tige qui se prolonge vers la moelle épinière. | Les élèves observent et nomment. | Observation dirigée | Schéma de l'encéphale | |
@@ -273,7 +273,7 @@ La plupart des nerfs contiennent à la fois des fibres sensitives et des fibres 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel est le centre des réflexes ?<br>Que commande le cerveau ? | R.A. : La moelle épinière.<br>R.A. : Les mouvements voulus, la pensée, la mémoire. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Je vais approcher ma main de vos yeux sans vous toucher. *(L'enseignant fait le geste.)* Vos paupières se sont fermées. Qui parmi vous avait décidé de les fermer ? | R.A. : Personne, cela s'est fait tout seul. | Questionnement oral, expérimentation | — | |
 | 2. Présentation | Aujourd'hui : « Le mouvement réflexe inné ». Vous saurez le reconnaître et citer ses caractères. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Par deux, réalisez trois essais : l'un tapote doucement sous la rotule de l'autre, jambe pendante ; puis on éclaire brièvement l'œil et on observe la pupille ; enfin on observe ce qui se passe dans la bouche en croquant le citron. Notez chaque réaction. | Les élèves réalisent les essais et notent. | Expérimentation, travail de groupe | Marteau, lampe, citron | |
@@ -376,7 +376,7 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux caractères du réflexe inné.<br>Quel est son centre nerveux ? | R.A. : Involontaire et inné.<br>R.A. : La moelle épinière ou le tronc cérébral. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Regardez cette image de *ravitoto* fumant. *(pause)* Plusieurs d'entre vous ont la bouche qui salive. Pourtant, il n'y a rien dans votre bouche : seulement une image. Un enfant qui n'aurait jamais goûté ce plat saliverait-il aussi ? | R.A. : Non, il ne saurait pas que c'est bon. | Questionnement oral | Image | |
 | 2. Présentation | Aujourd'hui : « Le mouvement réflexe acquis ». Vous saurez le reconnaître et le distinguer du réflexe inné. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Réfléchissez à ces situations : un cycliste expérimenté qui redresse son guidon sans y penser ; un élève qui se lève dès qu'il entend la cloche ; un conducteur qui freine en voyant un enfant traverser. | Les élèves observent et notent. | Étude de cas, travail de groupe | Tableau noir | |
@@ -479,7 +479,7 @@ Prenons le citron. S'il est **placé dans la bouche**, l'acide stimule directeme
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce qu'un réflexe acquis ?<br>Qu'est-ce qui le distingue du réflexe inné ? | R.A. : Une réaction automatique apprise par répétition.<br>R.A. : Il s'apprend, et il peut se perdre. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Je pose ce livre sur la table. Rasoa, prends-le si tu le souhaites — ou ne le prends pas, c'est toi qui décides. *(L'élève choisit.)* En quoi ce geste diffère-t-il du retrait de la main devant une braise ? | R.A. : Là, elle pouvait choisir ; devant la braise, on ne choisit pas. | Questionnement oral | Livre | |
 | 2. Présentation | Aujourd'hui : « Le mouvement volontaire ». Vous saurez le caractériser et le comparer aux deux types de réflexes. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Par deux, effectuez trois actions : prendre un crayon et le reposer, écrire votre prénom, puis renoncer volontairement à lever le bras alors que je vous le demande. Notez ce que vous ressentez à chaque fois. | Les élèves réalisent et notent. | Expérimentation, travail de groupe | Crayon, cahier | |
@@ -588,7 +588,7 @@ C'est là tout l'intérêt de l'apprentissage : en transformant des mouvements v
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel est le centre du réflexe inné ?<br>Pourquoi le réflexe est-il plus rapide que le mouvement volontaire ? | R.A. : La moelle épinière.<br>R.A. : Parce que le message ne va pas jusqu'au cerveau. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Vous savez que le pied se relève quand on marche sur une épine, et que la moelle épinière commande. Mais par quel chemin exact le message est-il passé, de la plante du pied jusqu'au muscle ? | R.A. : Les élèves proposent des trajets. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « L'arc réflexe ». Vous saurez nommer dans l'ordre les cinq éléments que parcourt l'influx nerveux. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce schéma muet : la peau du pied, un nerf qui monte, la moelle épinière en coupe, un nerf qui descend, le muscle de la jambe. Repérez chaque élément. | Les élèves observent et repèrent. | Observation dirigée | Schéma muet | |
@@ -692,7 +692,7 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel organe commande la pensée et le jugement ?<br>Que transporte un nerf ? | R.A. : Le cerveau.<br>R.A. : L'influx nerveux, le message. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Nous avons vu que le cerveau commande le jugement, l'équilibre et les gestes. Certaines substances, une fois dans le sang, atteignent le cerveau et modifient son fonctionnement. Que devient alors la personne qui en consomme ? | R.A. : Elle ne se comporte plus comme d'habitude. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les catégories de substances psychoactives ». Vous saurez définir ces substances et les classer en trois groupes selon leur effet. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Étudiez en groupe les documents distribués. Relevez, pour chaque substance citée, ce qu'elle produit : est-ce que le corps s'accélère, se ralentit, ou est-ce que la perception est déformée ? | Les élèves lisent et remplissent la fiche. | Étude de document, travail de groupe | Documents, fiche | |
@@ -794,7 +794,7 @@ Deux conséquences. D'abord, une substance psychoactive perturbe un organe encor
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois catégories de substances psychoactives.<br>Qu'est-ce que la dépendance ? | R.A. : Excitants, sédatifs, hallucinogènes.<br>R.A. : Un état où le corps réclame la substance. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un père de famille consacre chaque semaine une partie de son salaire à l'alcool. Sa santé se dégrade, mais il n'est pas le seul touché. Qui d'autre subit les conséquences ? | R.A. : Sa femme, ses enfants, son travail. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les effets sur l'organisme et sur la vie sociale ». Vous saurez distinguer les deux types de conséquences. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Étudiez les cas distribués. Pour chacun, remplissez deux colonnes : ce qui touche le **corps** de la personne, et ce qui touche **son entourage**. | Les élèves lisent et complètent. | Étude de cas, travail de groupe | Fiches de cas | |
@@ -901,7 +901,7 @@ Juger ou rejeter une personne dépendante ne fait qu'aggraver son isolement, don
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux effets des substances psychoactives sur la vie sociale.<br>Une personne dépendante peut-elle s'en sortir ? | R.A. : L'échec scolaire et les accidents.<br>R.A. : Oui, si elle est aidée. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux élèves passent la même composition. L'un a dormi neuf heures et pris un petit-déjeuner ; l'autre a veillé jusqu'à deux heures du matin et n'a rien mangé. Lequel réussira le mieux, et pourquoi ? | R.A. : Le premier, parce qu'il est reposé et nourri. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Hygiène du système nerveux et prévention ». Vous saurez énoncer les règles qui protègent le système nerveux et concevoir une action de sensibilisation. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce tableau des durées de sommeil conseillées selon l'âge. Repérez la ligne qui vous concerne et comparez avec vos habitudes réelles. | Les élèves observent et comparent. | Observation dirigée | Tableau des durées | |
@@ -1015,23 +1015,6 @@ Le message doit rester **court, positif et exact**. Un slogan qui effraie sans e
 
 ---
 
-## Écarts assumés par rapport au FRP
-
-Quatre corrections apportées au « précis de cours » RES 3.b et à RES 3.d.
-
-**1. La salivation devant un citron, classée deux fois (RES 3.b).**
-Le tableau comparatif du FRP fait figurer la « salivation » devant un « citron coupé en deux » **à la fois** dans la colonne des mouvements réflexes innés **et** dans celle des mouvements réflexes acquis. C'est contradictoire, et c'est précisément l'exemple qu'un élève retiendra. J'ai tranché en introduisant le critère de discrimination : la salivation par **contact** de l'acide sur la langue est innée, la salivation à la **vue** est acquise, puisqu'elle suppose d'avoir déjà goûté. La séance 28 utilise cette contradiction comme exercice de raisonnement.
-
-**2. Le cervelet présenté comme centre de réflexes (RES 3.b).**
-Le FRP retient comme centres possibles du mouvement réflexe inné le « cervelet », le « bulbe rachidien » ou la « moelle épinière ». Le cervelet n'est pas un centre de réflexes : il assure la coordination des mouvements et l'équilibre. Les centres à retenir sont la **moelle épinière** et le **tronc cérébral** (qui comprend le bulbe). La séance 27 signale explicitement cette confusion.
-
-**3. Durée de sommeil du nouveau-né (RES 3.d).**
-Le FRP indique 20 heures. Les recommandations internationales actuelles retiennent **14 à 17 heures**. Le tableau de la séance 33 reprend les fourchettes actuelles et la note le précise. Les autres lignes du FRP sont en revanche cohérentes avec ces recommandations.
-
-**4. Phrase défectueuse dans l'exemple de MRA (RES 3.b).**
-Le FRP donne pour exemple le geste de freinage d'un conducteur, mais la phrase est amputée de sa syntaxe et contient un adverbe (« doucement ») qui la rend incompréhensible. L'exemple lui-même est juste, il a été reformulé : freiner à la vue d'un piéton qui s'engage sur la route.
-
-**Ajouts hors FRP** : la distinction excitants / sédatifs / hallucinogènes de la séance 31 reprend la terminologie du **PE lui-même** (« sédatifs, hallucinogènes, excitants »), qui est plus claire pour des élèves que le classement du FRP par statut légal (« substances autorisées / substances illicites ») — ce dernier laisse d'ailleurs croire que l'autorisation garantit l'innocuité, contresens que la leçon 31 corrige explicitement. Les notions d'**accoutumance** et de **dépendance**, absentes du FRP, sont indispensables pour comprendre pourquoi l'arrêt est difficile.
 
 ## Vérifications externes de cette unité
 

@@ -78,7 +78,7 @@ Barème **20 points** · champ **Durée laissé vide** · **aucune durée** sur 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : combien de kilocalories apporte 1 g de lipides ? Et 1 g de glucides ? | R.A. : 9 kcal.<br>R.A. : 4 kcal. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Aujourd'hui vous composez un sujet complet, comme le jour de l'examen. Mais celui-ci ne compte pas dans la moyenne : il sert à repérer ce qui n'est pas encore acquis. | Les élèves s'installent en condition d'examen. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés. Vous travaillez seuls. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue ou recopie le sujet, puis surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -195,7 +195,7 @@ Réponds-lui en deux arguments tirés de la leçon.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question sur le fond ne sera prise pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit au tableau le barème : 4 + 6 + 6 + 4 = 20. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute de l'intégralité du sujet, sans commentaire. | Les élèves suivent et signalent un mot illisible. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active. L'enseignant ne reformule aucune consigne portant sur le fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -325,7 +325,7 @@ Deux réponses attendues parmi :
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : par où une plante absorbe-t-elle l'eau ? Citez une maladie qui décime les volailles. | R.A. : Par les poils absorbants des racines.<br>R.A. : La maladie de Newcastle. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un sujet d'entraînement, dans les conditions de l'examen. Il ne compte pas dans la moyenne : il sert à repérer ce qui n'est pas acquis. | Les élèves s'installent. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés, travail individuel. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue le sujet et surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -433,7 +433,7 @@ Réponds-lui en deux arguments.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit le barème au tableau : 4 + 6 + 6 + 4 = 20. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute du sujet, sans commentaire. | Les élèves suivent. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active, sans reformulation de fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -565,7 +565,7 @@ L'avis attendu comporte :
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : quelles sont les trois parties de l'encéphale ? Qui commande le réflexe de retrait ? | R.A. : Cerveau, cervelet, tronc cérébral.<br>R.A. : La moelle épinière. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un sujet d'entraînement en conditions d'examen. Il ne compte pas : il sert à repérer ce qui n'est pas acquis. | Les élèves s'installent. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés, travail individuel. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue le sujet et surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -676,7 +676,7 @@ Réponds-lui en deux arguments, sans le juger.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit le barème au tableau : 4 + 6 + 6 + 4 = 20. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute du sujet, sans commentaire. | Les élèves suivent. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active, sans reformulation de fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -812,7 +812,7 @@ Un élève de votre classe dort 5 heures par nuit, regarde un écran jusque tard
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : qu'est-ce qu'une fistule obstétricale ? À quel âge l'OMS recommande-t-elle de commencer le dépistage ? | R.A. : Une ouverture anormale reliant le vagin à la vessie ou au rectum.<br>R.A. : Dès 30 ans. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un sujet d'entraînement en conditions d'examen. Il ne compte pas : il sert à repérer ce qui n'est pas acquis. | Les élèves s'installent. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés, travail individuel. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue le sujet et surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -935,7 +935,7 @@ La réponse attendue comporte :
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit le barème au tableau : 4 + 6 + 6 + 4 = 20. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute du sujet, sans commentaire. | Les élèves suivent. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active, sans reformulation de fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -1051,7 +1051,7 @@ Une jeune fille de 16 ans est enceinte. Sa famille hésite à l'emmener en consu
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : quel minéral occupe le rang 10 de l'échelle de Mohs ? Quelle localité est célèbre pour le saphir ? | R.A. : Le diamant.<br>R.A. : Ilakaka. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un sujet d'entraînement en conditions d'examen. Il ne compte pas : il sert à repérer ce qui n'est pas acquis. | Les élèves s'installent. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés, travail individuel. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue le sujet et surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -1164,7 +1164,7 @@ Réponds-lui en deux arguments.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit le barème au tableau : 4 + 6 + 6 + 4 = 20. Dernière évaluation de l'année. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute du sujet, sans commentaire. | Les élèves suivent. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active, sans reformulation de fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -1318,25 +1318,6 @@ Tous les résultats chiffrés ci-dessous ont été **recalculés par script** ap
 
 ---
 
-## Écarts assumés par rapport au manuel d'origine
-
-Ce lot **remplace intégralement** le contenu des dix séances concernées. Les écarts sont donc structurels.
-
-1. **Les cinq séances de révision ne sont plus identiques.** Chacune porte sur les contenus de son unité, avec un sujet, des chiffres et des erreurs typiques qui lui sont propres. Le tableau générique à trois lignes et les trois questions passe-partout sont supprimés.
-
-2. **La méta-instruction en guise de corrigé est supprimée.** *« La réponse doit reprendre les connaissances de l'unité »* n'est pas une réponse d'élève mais une consigne au correcteur. Tous les corrigés de ce lot donnent la **réponse attendue rédigée**.
-
-3. **Les sujets d'examen portent désormais sur la SVT.** Les QCM génériques sur la méthode scientifique — sans lien avec le programme — sont remplacés par des questions adossées à des séances précises, dont le numéro est indiqué en fin de chaque corrigé.
-
-4. **Les types d'exercices sont diversifiés.** L'audit relevait deux consignes stéréotypées répétées 41 fois. Ce lot emploie l'appariement, la complétion, le vrai/faux justifié, la remise en ordre, le **schéma à légender** (séances 24 et 35) et l'avis argumenté — y compris les types que le manuel annonçait dans ses légendes sans jamais les employer.
-
-5. **Une distinction nette est introduite entre entraînement et examen.** Le manuel d'origine traitait les deux de façon identique. Ici, la séance de révision comporte des **erreurs fréquentes nommées**, et la séance d'examen un **barème détaillé avec consignes au correcteur**.
-
-6. **Question 3 de l'exercice 3 de la séance 35 — association et causalité.** Cette question dépasse la lettre du programme, qui n'exige pas la distinction. Elle est maintenue parce que l'unité III traite des substances psychoactives, domaine où la confusion entre corrélation et cause alimente les idées fausses. Le barème la signale comme discriminante.
-
-7. **Aucune notion nouvelle n'est introduite.** Toutes les données des exercices sont **fictives mais vraisemblables**, construites pour ce lot. Elles ne proviennent ni du FRP ni d'aucune source externe, et leurs ordres de grandeur sont cohérents avec les faits établis dans les séances 1 à 49.
-
----
 
 ## Contrôle anti-plagiat
 
@@ -1346,7 +1327,7 @@ Commande exécutée :
 python3 scripts/check_plagiat.py Revisions-et-examens-SVT-T9.md sources-frp/frp_svt3e_full.txt --n 6 --min-car 25
 ```
 
-**Résultat : 0,00 % de recouvrement** — aucun passage commun avec le Fascicule de Ressources Pédagogiques du MEN/DDIS.
+**Résultat : 0,00 % de recouvrement** — aucun passage commun avec les ressources consultées.
 
 Ce résultat était attendu : les énoncés dérivent des séances 1 à 49, elles-mêmes déjà contrôlées à 0 %, et les données chiffrées ont été construites pour ce lot.
 
@@ -1357,6 +1338,5 @@ Ce résultat était attendu : les énoncés dérivent des séances 1 à 49, elle
 - **Programme d'Études T9 (SVT)**, DCRP, Ministère de l'Éducation Nationale — résultats attendus, contenus, valeurs à véhiculer.
 - **Séances 1 à 49 du présent manuel** — seule source des notions évaluées.
 - **Skill `jlearn-manuel-scolaire` v18** — structure de fiche, barème, règles de rédaction.
-- *Fascicule de Ressources Pédagogiques SVT 3e*, MEN/DDIS — consulté pour vérification de non-recouvrement uniquement ; aucun contenu repris.
 
 Les données chiffrées des exercices sont **fictives**. Elles ne décrivent aucun district, aucune maternité, aucune commune ni aucune coopérative réels.

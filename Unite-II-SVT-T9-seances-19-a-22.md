@@ -67,7 +67,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les quatre besoins d'une plante ?<br>Un animal a-t-il les mêmes besoins qu'une plante ? | R.A. : Eau, sels minéraux, dioxyde de carbone, lumière.<br>R.A. : Non, il mange et il se déplace. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux familles du même village élèvent des poules. Chez l'une, les poules pondent souvent et les poussins grandissent. Chez l'autre, les poules sont maigres et beaucoup de poussins meurent. Pourtant, ce sont les mêmes poules, sous le même climat. D'où peut venir la différence ? | R.A. : Les élèves proposent : la nourriture, l'abri, les maladies. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les besoins d'un animal d'élevage ». À la fin, vous saurez nommer les cinq besoins d'un animal et remplir une fiche d'enquête sur un animal de chez vous. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Choisissez chacun **un animal élevé chez vous ou chez un voisin** : un animal de basse-cour (poule, canard, oie), un animal de pacage (zébu, mouton, chèvre) ou un animal de compagnie. Observez-le, puis interrogez la personne qui s'en occupe. | Les élèves choisissent un animal et l'observent. | Observation, travail individuel | Fiche d'enquête | |
@@ -192,7 +192,7 @@ C'est pourquoi la première chose à faire devant un élevage qui produit mal n'
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les cinq besoins d'un animal d'élevage.<br>Lequel commande le résultat de l'élevage ? | R.A. : Nourriture, eau, abri, soins, espace.<br>R.A. : Le besoin le plus mal satisfait. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un éleveur dit : « Je ne peux pas améliorer mes poules, je n'ai pas d'argent pour acheter de la provende. » Pourtant, dans son champ, il y a du manioc, de la patate douce et des brèdes. A-t-il raison ? | R.A. : Non, il peut utiliser ce qu'il a. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « L'alimentation et l'habitat ». Vous saurez composer une ration avec des produits de chez vous et décrire un bon abri. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces aliments : son de riz, manioc séché, patate douce cuite, feuilles d'amarante, termites. Lesquels donne-t-on déjà aux poules chez vous ? Lesquels n'y avez-vous jamais pensé ? | Les élèves observent, manipulent et répondent. | Observation dirigée, travail de groupe | Échantillons | |
@@ -303,7 +303,7 @@ Les déjections des volailles sont un **excellent engrais azoté**. L'élevage n
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel complément journalier conseille-t-on par poule ?<br>Citez deux règles de construction d'un bon poulailler. | R.A. : Environ 35 g de grain.<br>R.A. : Porte étroite, sol sec et surélevé. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Dans un village, une maladie est arrivée. En une semaine, presque toutes les poules sont mortes. Un seul éleveur n'a rien perdu : il avait fait vacciner son troupeau **trois mois plus tôt**. Pourquoi les autres n'ont-ils pas pu vacciner au moment où la maladie est arrivée ? | R.A. : Les élèves émettent des hypothèses. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les soins : vaccination et déparasitage ». Vous saurez expliquer comment agit un vaccin et pourquoi il faut vacciner à l'avance. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce flacon : il contient **100 doses**. Une dose par animal. Lisez l'étiquette : voie d'administration, délai avant l'immunité, durée de protection. | Les élèves observent et relèvent les indications. | Observation dirigée | Flacon ou photo | |
@@ -404,7 +404,7 @@ Le raisonnement vaut pour toutes les espèces. Chez le **zébu**, les jeunes vea
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Pourquoi faut-il vacciner avant l'arrivée de la maladie ?<br>Que fait le déparasitage ? | R.A. : Parce que la protection met une à deux semaines à s'installer.<br>R.A. : Il élimine les vers qui affaiblissent l'animal. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | À Madagascar, des essais ont été menés chez de petits éleveurs de volailles. Sans acheter de nouvelles races, la ponte est passée de **45 à 96 œufs** par poule et par an. Comment est-ce possible ? | R.A. : Les élèves proposent : meilleure nourriture, vaccination, soins. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « La sélection et l'amélioration de l'élevage ». Vous saurez associer une technique d'amélioration à chaque espèce et mesurer son effet. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici les résultats de ces essais menés auprès d'éleveurs malgaches. Trois mesures seulement ont été appliquées : vaccination contre la maladie de Newcastle, déparasitage des poussins, et mangeoire réservée aux poussins. Lisez le tableau. | Les élèves lisent et relèvent les chiffres. | Étude de document | Tableau des résultats | |
@@ -523,21 +523,6 @@ Changer de race avant d'avoir réglé la nourriture et les soins conduit presque
 
 ---
 
-## Écarts assumés et choix de traitement
-
-Le FRP n'étant d'aucun secours ici, les écarts ne portent pas sur lui mais sur **la documentation vétérinaire professionnelle**, qui n'est pas directement transposable en classe de T9.
-
-**1. Les protocoles d'injection ont été écartés.** Les fiches techniques de vaccination détaillent les gestes d'administration — dilutions, volumes, voies d'injection. Ces informations s'adressent à des agents formés. Un manuel scolaire qui les reproduirait inciterait des élèves à pratiquer eux-mêmes des actes vétérinaires. La séance 21 enseigne donc **pourquoi et quand** vacciner, et renvoie explicitement l'acte lui-même à l'agent vétérinaire.
-
-**2. Les méthodes d'euthanasie ont été écartées** pour la même raison, sans mention ni allusion.
-
-**3. La densité en cage (25 oiseaux/m²) n'a pas été reprise.** Elle concerne l'élevage industriel en claustration, hors de portée et hors de propos pour l'élevage familial visé par le PE. La retenir aurait donné une norme inapplicable, et discutable du point de vue de la valeur *respect de toute vie* portée par la thématique.
-
-**4. La part de patate douce dans la ration a été arrondie prudemment.** La source indique « jusqu'à 35 % » ; la leçon écrit « jusqu'à environ un tiers », formulation plus sûre pour un usage sans balance de précision.
-
-**5. Le chiffre de perte de poids du zébu en saison sèche** est donné dans la fourchette basse de la source (« parfois un quart de leur masse » pour 25-30 %), afin de ne pas surestimer un phénomène qui varie fortement selon les régions.
-
----
 
 ## Vérification des calculs
 

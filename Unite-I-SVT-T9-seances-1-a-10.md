@@ -36,7 +36,7 @@ Méta-table identique (bordures invisibles), seuls Titre et Objectif changent :
 | **Thème :** Alimentation de l'homme | **Classe :** T9 |
 | **Titre :** *(propre à la séance)* | **Séance n° :** *n* / 51 |
 | **Objectif spécifique :** *(propre à la séance)* | **Durée :** ____________ |
-| **Documentation :** Programme d'Études T9 (SVT), DCRP ; Fascicule de Ressources Pédagogiques SVT 3e, MEN/DDIS ; FAO/INFOODS | |
+| **Documentation :** Programme d'Études T9 (SVT), DCRP| |
 | **Support et matériel :** *(propre à la séance)* | **Valeurs à véhiculer :** autonomie, esprit de créativité |
 
 Tableau de déroulement à 6 colonnes : **Étapes | Enseignant | Apprenants | Technique et Stratégie | Support et Matériel | Observation**.
@@ -51,7 +51,7 @@ Tableau de déroulement à 6 colonnes : **Étapes | Enseignant | Apprenants | Te
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez trois aliments que vous avez mangés hier.<br>Mange-t-on la même chose à chaque repas ? | R.A. : Du riz, des brèdes, du poisson.<br>R.A. : Non, les aliments changent d'un repas à l'autre. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Soa mange du riz à tous les repas, tous les jours. Nivo mange du riz, des brèdes, des haricots et parfois du poisson. Laquelle des deux se nourrit le mieux ? | R.A. : Nivo, parce qu'elle mange des aliments variés. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui nous allons apprendre : « Ration alimentaire et groupes d'aliments ». Après cette séance vous serez capables de définir une ration alimentaire et de classer les aliments en trois groupes. | Les élèves écoutent. | Exposé | Tableau noir, cahier | |
 | 3. Observation | Regardez et observez bien cette pyramide alimentaire et la photo de ce repas malgache. | Les élèves observent silencieusement. | Observation dirigée | Pyramide alimentaire, photo de repas | |
@@ -315,7 +315,7 @@ Le corps perd de l'eau en permanence — par l'urine, la sueur et la respiration
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois nutriments qui apportent de l'énergie.<br>Quel nutriment construit et répare le corps ?<br>Les vitamines apportent-elles de l'énergie ? | R.A. : Les glucides, les lipides et les protéines.<br>R.A. : Les protéines construisent et réparent l'organisme.<br>R.A. : Non, elles protègent et régulent, elles n'apportent pas d'énergie. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée, colspan 6)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Rakoto mange une assiette de riz. Nivo mange la même assiette de riz avec une cuillerée d'huile. Qui reçoit le plus d'énergie ? | R.A. : Nivo, parce que l'huile apporte de l'énergie en plus. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui nous allons apprendre : « Valeur énergétique des nutriments ». Après cette séance vous serez capables de calculer l'énergie apportée par un aliment et par un repas. | Les élèves écoutent. | Exposé | Tableau noir, cahier | |
 | 3. Observation | Regardez et observez bien cette étiquette nutritionnelle et le tableau des coefficients écrit au tableau. | Les élèves observent silencieusement. | Observation dirigée | Étiquette nutritionnelle, tableau des coefficients | |

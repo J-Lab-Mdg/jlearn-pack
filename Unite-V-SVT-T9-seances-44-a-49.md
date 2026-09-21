@@ -41,7 +41,7 @@ Barème **20 points** · page LEÇON **complète** · champ **Durée laissé vid
 | **Thème :** Géologie | **Classe :** T9 |
 | **Titre :** *(propre à la séance)* | **Séance n° :** *n* / 51 |
 | **Objectif spécifique :** *(propre à la séance)* | **Durée :** ____________ |
-| **Documentation :** Programme d'Études T9 (SVT), DCRP ; Fascicule de Ressources Pédagogiques SVT 3e, MEN/DDIS | |
+| **Documentation :** Programme d'Études T9 (SVT), DCRP | |
 | **Support et matériel :** *(propre à la séance)* | **Valeurs à véhiculer :** responsabilité, sens du bien commun |
 
 Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Stratégie | Support et Matériel | Observation**.
@@ -56,7 +56,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez des richesses du sous-sol malgache.<br>Connaissez-vous des pierres extraites à Madagascar ? | R.A. : L'or, le graphite, le nickel, les pierres.<br>R.A. : Le saphir, le rubis, parfois l'améthyste. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux pierres se ressemblent : même couleur rouge, même éclat. L'une vaut quelques milliers d'ariary, l'autre plusieurs millions. Comment expliquer une telle différence ? | R.A. : Les élèves proposent : la rareté, la dureté, la qualité. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les trois familles de pierres gemmes ». À la fin, vous saurez ranger une pierre dans l'une des trois familles et dire pourquoi. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces pierres et ces images. Certaines sont transparentes, d'autres non. Certaines viennent du sol, d'autres proviennent d'êtres vivants. Essayez de les regrouper. | Les élèves observent et proposent des regroupements. | Observation dirigée, travail de groupe | Échantillons, photos | |
@@ -155,7 +155,7 @@ Elles se distinguent nettement des deux autres familles : elles ne sont pas née
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois familles de gemmes.<br>Quelles sont les trois qualités d'une gemme ? | R.A. : Précieuses, fines, organiques.<br>R.A. : Beauté, rareté, résistance. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux pierres transparentes et incolores sont posées devant vous. L'une est un diamant, l'autre un morceau de quartz. Sans laboratoire, comment les distinguer ? | R.A. : Les élèves proposent des idées. | Questionnement oral | Deux échantillons | |
 | 2. Présentation | Aujourd'hui : « Les propriétés physiques des pierres gemmes ». Vous saurez décrire une pierre avec six critères précis et utiliser l'échelle de dureté. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Par groupes, décrivez chaque échantillon : sa couleur, son éclat, laisse-t-il passer la lumière ? Ensuite — **avec les lunettes** — essayez de le rayer avec l'ongle, puis avec une pièce de cuivre, puis avec un clou d'acier. | Les élèves observent et testent en remplissant le tableau. | Observation dirigée, expérimentation, travail de groupe | Échantillons, loupe, lunettes, gants, clou | |
@@ -270,7 +270,7 @@ Le grenat, également rouge, aurait été rayé par la topaze — sa dureté ne 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelles sont les six propriétés physiques d'une gemme ?<br>Quelle est la dureté du corindon ? | R.A. : Couleur, éclat, transparence, dureté, cassure, clivage.<br>R.A. : 9 sur l'échelle de Mohs. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | En 1998, un village du Sud-Ouest comptait quelques dizaines d'habitants. Deux ans plus tard, des dizaines de milliers de personnes y vivaient. Ce village s'appelle Ilakaka. Que s'est-il passé ? | R.A. : On y a découvert des pierres précieuses. | Questionnement oral | Carte | |
 | 2. Présentation | Aujourd'hui : « La répartition géographique des pierres gemmes à Madagascar ». Vous saurez placer les principaux gisements sur la carte et expliquer comment ils se sont formés. | Les élèves écoutent. | Exposé | Carte | |
 | 3. Observation | Observez la carte. Repérez les régions citées : Ilakaka et l'Isalo au Sud-Ouest, Andilamena au centre-nord, Antsirabe et le mont Ibity au centre, Mananjary à l'est, Andapa et Ambilobe au nord, Diego, Nosy Be. | Les élèves repèrent et colorient les zones. | Observation, travail de groupe | Carte, crayons | |
@@ -387,7 +387,7 @@ Une question se pose alors, et elle appartient pleinement à cette leçon : **à
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la différence entre gisement primaire et secondaire ?<br>Citez deux localités gemmifères malgaches. | R.A. : Le primaire est la roche d'origine, le secondaire résulte d'un transport.<br>R.A. : Ilakaka, Andilamena. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Les disques de coupe des scies industrielles sont garnis de diamant. Pourquoi utiliser en usine une pierre que l'on associe d'ordinaire aux bijoux ? | R.A. : Parce que le diamant est très dur, il coupe tout. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les utilisations des pierres gemmes ». Vous saurez relier chaque usage à une propriété physique précise. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces images : une bague, une montre mécanique, une vitre de téléphone, un foret de perceuse. Cherchez, dans chaque cas, quelle pierre intervient et pourquoi. | Les élèves observent et émettent des hypothèses. | Observation dirigée, travail de groupe | Photos, montre | |
@@ -492,7 +492,7 @@ Le commerce des pierres dites « de soin » existe, et il est important à Madag
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la différence entre gisement primaire et secondaire ?<br>D'où vient l'essentiel des saphirs malgaches ? | R.A. : Le primaire est la roche d'origine, le secondaire résulte d'un transport par l'eau.<br>R.A. : De gisements secondaires. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Pour extraire une pierre, faut-il toujours creuser un trou profond ? Comment fait-on quand la pierre se trouve dans les graviers d'une rivière ? | R.A. : Il suffit peut-être de laver le sable. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les techniques d'exploitation ». Vous saurez nommer les trois techniques et dire laquelle convient à quel gisement. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces images : une vaste fosse en gradins à ciel ouvert, l'entrée d'un puits étroit, des personnes qui lavent du gravier dans une rivière. Décrivez ce que vous voyez. | Les élèves observent et décrivent. | Observation dirigée, travail de groupe | Photos | |
@@ -603,7 +603,7 @@ Ses inconvénients sont tout aussi nets. Le travail se déroule **dans l'eau et 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois techniques d'exploitation.<br>Laquelle domine à Madagascar ? | R.A. : Ciel ouvert, souterraine, alluviale.<br>R.A. : L'exploitation alluviale. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un village se trouve en aval d'un site d'extraction. Depuis deux ans, l'eau de la rivière est trouble, les poissons ont disparu et les rizières rendent moins. Pourtant, personne n'a rien déversé de toxique. Comment l'expliquer ? | R.A. : Les élèves émettent des hypothèses. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les impacts environnementaux et la responsabilité ». Vous saurez analyser les conséquences d'une exploitation et proposer des solutions. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Démonstration : je verse de la terre dans cette eau claire et j'agite. Observez. Maintenant, imaginez cette eau multipliée par des milliers de lavages chaque jour, dans une rivière dont un village dépend. | Les élèves observent l'eau se troubler. | Expérimentation, observation | Bassine, eau, terre | |
@@ -703,21 +703,6 @@ La vraie question n'est donc pas seulement « combien peut-on extraire ? », mai
 
 ---
 
-## Écarts assumés par rapport au FRP
-
-**1. ⛔ La lithothérapie a été retirée des usages thérapeutiques (séance 47).** La ressource RES 5.d présente la lithothérapie comme un usage légitime, au même rang que la joaillerie et l'industrie, en prêtant aux pierres des « vibrations » bénéfiques et au diamant un effet apaisant sur le stress. **C'est une pseudo-science** : aucune étude contrôlée n'a mis en évidence d'effet supérieur à un placebo, et les minéralogistes sont unanimes. Enseigner cela comme un fait dans un cours de sciences contreviendrait à la règle critique 13 du skill v18 (fiabilité du contenu). Le risque est concret : des cas de **refus ou de retard de soins** au profit des pierres sont documentés. La séance 47 traite donc la joaillerie et l'industrie comme usages réels, et consacre à la lithothérapie un encadré de **mise en garde scientifique** qui la présente comme un fait social et commercial, jamais comme un usage thérapeutique.
-
-**2. La phrase sans sujet de la RES 5.b a été remplacée.** Le FRP énonce d'abord, à juste titre, que la rareté seule ne suffit pas à rendre une pierre précieuse. Mais la phrase qui suit commence par « Plus rare que le diamant » et enchaîne sur un pronom sans antécédent : **aucun nom de pierre n'est jamais donné**. Le lecteur ignore de quoi on lui parle. L'idée est juste et a été conservée, mais reformulée avec des **exemples explicites** : la painite et la rhodizite, cette dernière présente à Madagascar.
-
-**3. La RES 5.b, traduite de façon défectueuse, n'a pas servi de base à la séance 45.** Cette ressource présente les propriétés des gemmes dans une langue visiblement traduite automatiquement, avec des tournures incompréhensibles — une phrase affirme qu'il faudrait « inclure un produit chimique » pour qu'une pierre soit belle, une autre évoque son attrait auprès d'une « liste » d'acheteurs, et le genre des pronoms change en cours de phrase — et un point de vue de **vendeur** plutôt que de géologue. Surtout, **elle ne mentionne ni l'échelle de Mohs, ni la cassure, ni le clivage**, alors que le PE les exige explicitement. La séance 45 a donc été construite à partir de l'échelle de Mohs et de la distinction dureté/ténacité, sources externes à l'appui.
-
-**4. La RES 5.c ne contient aucun texte exploitable.** Elle se réduit à deux cartes — des images, donc inutilisables — accompagnées d'un guide d'exploitation. La liste des localités de la séance 46 provient du **PE lui-même**, qui la fournit en toutes lettres, complétée par les travaux publiés sur les gisements malgaches.
-
-**5. ⚠️ Une réserve signalée sur le diamant.** Le PE cite « Diamant (Nosy Varika, Mandritsara) » parmi les exemples de localités. Or **Madagascar n'est pas un producteur reconnu de diamant gemme** : la littérature géologique fait état d'indices, non de gisements exploités, et les inventaires internationaux ne recensent pas le pays parmi les producteurs. La séance 46 **n'attribue donc aucune localité de diamant à Madagascar**, tout en conservant le diamant dans les quatre pierres précieuses de la séance 44. Ce choix est signalé ici pour que l'enseignant en soit averti : il s'écarte sciemment d'un exemple du PE, sur un point vérifiable.
-
-**Ajouts hors FRP** : consignes de sécurité pour les manipulations de la séance 45 (le PE prévoit lunettes, gants, marteau et couteau, sans qu'aucune source n'accompagne ces outils de précautions) ; distinction **dureté / ténacité** ; caractère **synthétique** des corindons industriels ; mention du **travail des enfants** et de la question de la répartition de la valeur, qui donnent leur contenu concret aux valeurs *responsabilité* et *sens du bien commun*.
-
----
 
 ## Vérification des calculs
 
@@ -738,7 +723,6 @@ La vraie question n'est donc pas seulement « combien peut-on extraire ? », mai
 ## Documentation (Fanovozan-kevitra)
 
 - **Programme d'Études T9 — Sciences de la vie et de la terre**, DCRP, MEN Madagascar.
-- **Fascicule de Ressources Pédagogiques SVT 3e**, MEN/DDIS, thématique V (RES 5.a à 5.f).
 - **Friedrich Mohs**, échelle de dureté des minéraux, 1812.
 - Travaux de l'**IRD** et de l'**université d'Antananarivo** (Département des sciences de la Terre) sur la genèse des gisements de corindons malgaches.
 - Documentation gemmologique publique sur les gisements d'Ilakaka, d'Andilamena et d'Antsirabe.

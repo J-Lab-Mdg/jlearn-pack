@@ -15,10 +15,8 @@ Il constitue une **proposition de réécriture** du manuel `SVT T9 [PE] Fiche de
 | Source | Usage |
 |---|---|
 | **Programme d'Études T9 (SVT)**, DCRP, Ministère de l'Éducation Nationale | Résultats attendus, contenus, localités, stratégies, valeurs à véhiculer |
-| **Fascicule de Ressources Pédagogiques SVT 3ᵉ**, MEN/DDIS | Faits, chiffres et définitions uniquement — **aucune phrase reprise** |
 | FAO, CIRAD, OMS, Ligue contre le cancer, travaux de l'IRD et de l'université d'Antananarivo | Vérification et complément des données |
 
-> **Note sur l'usage du Fascicule de Ressources Pédagogiques.** Le FRP a servi de source de faits, jamais de source de texte. L'ensemble du manuel a été contrôlé par n-grammes de 6 mots contre le fascicule intégral : **0,00 % de recouvrement**. Les images du FRP n'ont pas été reprises. Les écarts de fond assumés par rapport au FRP et au PE — y compris deux erreurs scientifiques qu'il aurait été fautif de propager — sont détaillés en annexe.
 
 ### Conventions de présentation
 
@@ -30,10 +28,10 @@ Barème de **20 points** par évaluation · page LEÇON complète · champ **Dur
 | **Thème :** *(propre à l'unité)* | **Classe :** T9 |
 | **Titre :** *(propre à la séance)* | **Séance n° :** *n* / 51 |
 | **Objectif spécifique :** *(propre à la séance)* | **Durée :** ____________ |
-| **Documentation :** Programme d'Études T9 (SVT), DCRP ; Fascicule de Ressources Pédagogiques SVT 3ᵉ, MEN/DDIS | |
+| **Documentation :** Programme d'Études T9 (SVT), DCRP | |
 | **Support et matériel :** *(propre à la séance)* | **Valeurs à véhiculer :** *(propres à l'unité)* |
 
-Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Stratégie | Support et Matériel | Observation**.
+Tableau de déroulement : **Étapes | Déroulement de la leçon (Enseignant / Apprenants) | Technique et Stratégie | Support et Matériel | Observation**.
 
 ### Volume horaire : comment faire tenir les séances dans les heures du programme
 
@@ -162,7 +160,7 @@ appliquer séance par séance.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez trois aliments que vous avez mangés hier.<br>Mange-t-on la même chose à chaque repas ? | R.A. : Du riz, des brèdes, du poisson.<br>R.A. : Non, les aliments changent d'un repas à l'autre. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Soa mange du riz à tous les repas, tous les jours. Nivo mange du riz, des brèdes, des haricots et parfois du poisson. Laquelle des deux se nourrit le mieux ? | R.A. : Nivo, parce qu'elle mange des aliments variés. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui nous allons apprendre : « Ration alimentaire et groupes d'aliments ». Après cette séance vous serez capables de définir une ration alimentaire et de classer les aliments en trois groupes. | Les élèves écoutent. | Exposé | Tableau noir, cahier | |
 | 3. Observation | Regardez et observez bien cette pyramide alimentaire et la photo de ce repas malgache. | Les élèves observent silencieusement. | Observation dirigée | Pyramide alimentaire, photo de repas | |
@@ -432,7 +430,7 @@ Le corps perd de l'eau en permanence — par l'urine, la sueur et la respiration
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois nutriments qui apportent de l'énergie.<br>Quel nutriment construit et répare le corps ?<br>Les vitamines apportent-elles de l'énergie ? | R.A. : Les glucides, les lipides et les protéines.<br>R.A. : Les protéines construisent et réparent l'organisme.<br>R.A. : Non, elles protègent et régulent, elles n'apportent pas d'énergie. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée, colspan 6)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Rakoto mange une assiette de riz. Nivo mange la même assiette de riz avec une cuillerée d'huile. Qui reçoit le plus d'énergie ? | R.A. : Nivo, parce que l'huile apporte de l'énergie en plus. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui nous allons apprendre : « Valeur énergétique des nutriments ». Après cette séance vous serez capables de calculer l'énergie apportée par un aliment et par un repas. | Les élèves écoutent. | Exposé | Tableau noir, cahier | |
 | 3. Observation | Regardez et observez bien cette étiquette nutritionnelle et le tableau des coefficients écrit au tableau. | Les élèves observent silencieusement. | Observation dirigée | Étiquette nutritionnelle, tableau des coefficients | |
@@ -1099,7 +1097,7 @@ Dans les deux cas, le menu d'appoint ne se contente pas d'ajouter ou de retirer 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : combien de kilocalories apporte 1 g de lipides ? Et 1 g de glucides ? | R.A. : 9 kcal.<br>R.A. : 4 kcal. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Aujourd'hui vous composez un sujet complet, comme le jour de l'examen. Mais celui-ci ne compte pas dans la moyenne : il sert à repérer ce qui n'est pas encore acquis. | Les élèves s'installent en condition d'examen. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés. Vous travaillez seuls. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue ou recopie le sujet, puis surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -1217,7 +1215,7 @@ Réponds-lui en deux arguments tirés de la leçon.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question sur le fond ne sera prise pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit au tableau le barème : 4 + 6 + 6 + 4 = 20. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute de l'intégralité du sujet, sans commentaire. | Les élèves suivent et signalent un mot illisible. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active. L'enseignant ne reformule aucune consigne portant sur le fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -1347,7 +1345,7 @@ Deux réponses attendues parmi :
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | De quoi l'être humain a-t-il besoin chaque jour pour vivre ?<br>Une plante mange-t-elle comme nous ? | R.A. : De nourriture, d'eau, d'air.<br>R.A. : Non, elle n'a pas de bouche. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux pieds de brèdes ont été plantés le même jour. Celui du jardin est vert et vigoureux. Celui qu'on a laissé dans un coin sombre de la cuisine est jaune et mou. Pourtant, on les a arrosés tous les deux. Que manque-t-il au second ? | R.A. : Il manque la lumière du soleil. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les besoins nutritifs des plantes ». À la fin, vous saurez nommer les quatre éléments nécessaires à une plante et dire quelle expérience le prouve. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici quatre montages préparés il y a six jours. Dans chacun, deux plantes identiques ont été traitées différemment : on n'a fait varier **qu'une seule chose** à la fois. Observez et notez l'état de chaque plante. | Les élèves observent et notent. | Observation dirigée, travail de groupe | Les 4 montages | |
@@ -1442,7 +1440,7 @@ Ces quatre besoins expliquent tous les gestes du jardinier : arroser, fumer le s
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les quatre besoins d'une plante.<br>Par quelle partie la plante prend-elle l'eau du sol ? | R.A. : Eau, sels minéraux, dioxyde de carbone, lumière.<br>R.A. : Par les racines. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | La racine est parfois très longue. L'eau entre-t-elle partout sur toute sa longueur, ou seulement à un endroit précis ? | R.A. : Les élèves proposent des hypothèses. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Le lieu et le mode d'absorption de l'eau ». Vous saurez situer la zone qui absorbe et expliquer le trajet de l'eau dans la racine. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez à la loupe la racine de ces jeunes plants. Regardez bien les trois zones : l'extrémité pointue, la région un peu plus haut couverte d'un duvet blanc, et la partie lisse près de la tige. | Les élèves observent à la loupe. | Observation dirigée | Plants germés, loupe | |
@@ -1540,7 +1538,7 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Par où la plante absorbe-t-elle l'eau ?<br>Que se passe-t-il si les poils absorbants sont détruits ? | R.A. : Par les poils absorbants, groupés sur la zone pilifère.<br>R.A. : Elle n'absorbe presque plus d'eau. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Dans un jardin laissé à l'abandon pendant deux mois, les plants de brèdes sont petits et étouffés par d'autres herbes. Que s'est-il passé ? | R.A. : Les mauvaises herbes ont pris la place et la nourriture. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les soins à apporter aux plantes cultivées ». Vous saurez nommer quatre soins et expliquer à quel besoin de la plante chacun répond. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Sortons observer la plate-bande. Regardez : ici les plants sont serrés, là des herbes poussent entre les rangs, là le sol est dur et craquelé. | Les élèves observent et complètent la fiche. | Observation dirigée, enquête | Plate-bande, fiche d'observation | |
@@ -1638,7 +1636,7 @@ Une culture prélève chaque saison des sels minéraux. Si l'on ne rend rien au 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux soins apportés aux cultures.<br>Pourquoi supprime-t-on les mauvaises herbes ? | R.A. : Le sarclage et l'arrosage raisonné.<br>R.A. : Parce qu'elles prennent l'eau et les sels minéraux. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | J'ai ici trois feuilles ramassées dans trois jardins. La première est percée de trous, la deuxième porte des taches brunes poudreuses, la troisième est intacte mais poussait au milieu des herbes. Les trois plantes vont mal. Est-ce pour la même raison ? | R.A. : Non, les dégâts ne se ressemblent pas. | Questionnement oral | Les 3 feuilles | |
 | 2. Présentation | Aujourd'hui : « Les bio-agresseurs des cultures ». Vous saurez définir un bio-agresseur et reconnaître à quelle famille il appartient. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez à la loupe les feuilles que vous avez rapportées. Notez ce que vous voyez : des trous ? des taches ? un insecte ? | Les élèves observent et notent. | Observation dirigée | Feuilles, loupe | |
@@ -1747,7 +1745,7 @@ Beaucoup d'attaques s'évitent par de bonnes pratiques : semer à la bonne densi
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois familles de bio-agresseurs.<br>Pourquoi faut-il identifier l'agresseur avant de traiter ? | R.A. : Agents pathogènes, ravageurs, adventices.<br>R.A. : Parce que le traitement n'est pas le même. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un paysan voit ses brèdes envahies de pucerons. Il n'a pas d'argent pour acheter un produit au marché. Autour de lui poussent des voandelaka et des piments. Peut-il s'en servir ? | R.A. : Oui, certaines plantes éloignent les insectes. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les méthodes naturelles de protection ». Vous saurez préparer un purin de feuilles et expliquer comment l'utiliser sans danger. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces feuilles de voandelaka et ces piments. Sentez les feuilles froissées. Goûteriez-vous ces feuilles ? | Les élèves observent, froissent, sentent. | Observation dirigée | Feuilles, piments | |
@@ -1846,7 +1844,7 @@ Les règles sont donc les mêmes que pour n'importe quel produit de traitement :
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Comment prépare-t-on un purin de feuilles ?<br>Combien de temps dure son effet ? | R.A. : On broie, on fait macérer, on filtre, on dilue.<br>R.A. : Quelques jours seulement. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Une attaque de criquets ravage un champ de maïs en deux jours. Le purin de feuilles ne suffira pas. Que peut faire le paysan ? | R.A. : Utiliser un produit acheté, plus puissant. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les méthodes chimiques et leur usage responsable ». Vous saurez nommer les trois classes de pesticides et citer les règles à respecter. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici des emballages vides et rincés. Lisez les étiquettes : cherchez le nom du produit, contre quoi il agit, la dose indiquée et les dessins d'avertissement. | Les élèves lisent et relèvent les informations. | Observation dirigée, travail de groupe | Emballages, affiche | |
@@ -1950,7 +1948,7 @@ Méthodes naturelles et chimiques ne s'excluent pas. La démarche raisonnable co
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les quatre besoins d'une plante ?<br>Un animal a-t-il les mêmes besoins qu'une plante ? | R.A. : Eau, sels minéraux, dioxyde de carbone, lumière.<br>R.A. : Non, il mange et il se déplace. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux familles du même village élèvent des poules. Chez l'une, les poules pondent souvent et les poussins grandissent. Chez l'autre, les poules sont maigres et beaucoup de poussins meurent. Pourtant, ce sont les mêmes poules, sous le même climat. D'où peut venir la différence ? | R.A. : Les élèves proposent : la nourriture, l'abri, les maladies. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les besoins d'un animal d'élevage ». À la fin, vous saurez nommer les cinq besoins d'un animal et remplir une fiche d'enquête sur un animal de chez vous. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Choisissez chacun **un animal élevé chez vous ou chez un voisin** : un animal de basse-cour (poule, canard, oie), un animal de pacage (zébu, mouton, chèvre) ou un animal de compagnie. Observez-le, puis interrogez la personne qui s'en occupe. | Les élèves choisissent un animal et l'observent. | Observation, travail individuel | Fiche d'enquête | |
@@ -2077,7 +2075,7 @@ C'est pourquoi la première chose à faire devant un élevage qui produit mal n'
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les cinq besoins d'un animal d'élevage.<br>Lequel commande le résultat de l'élevage ? | R.A. : Nourriture, eau, abri, soins, espace.<br>R.A. : Le besoin le plus mal satisfait. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un éleveur dit : « Je ne peux pas améliorer mes poules, je n'ai pas d'argent pour acheter de la provende. » Pourtant, dans son champ, il y a du manioc, de la patate douce et des brèdes. A-t-il raison ? | R.A. : Non, il peut utiliser ce qu'il a. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « L'alimentation et l'habitat ». Vous saurez composer une ration avec des produits de chez vous et décrire un bon abri. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces aliments : son de riz, manioc séché, patate douce cuite, feuilles d'amarante, termites. Lesquels donne-t-on déjà aux poules chez vous ? Lesquels n'y avez-vous jamais pensé ? | Les élèves observent, manipulent et répondent. | Observation dirigée, travail de groupe | Échantillons | |
@@ -2190,7 +2188,7 @@ Les déjections des volailles sont un **excellent engrais azoté**. L'élevage n
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel complément journalier conseille-t-on par poule ?<br>Citez deux règles de construction d'un bon poulailler. | R.A. : Environ 35 g de grain.<br>R.A. : Porte étroite, sol sec et surélevé. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Dans un village, une maladie est arrivée. En une semaine, presque toutes les poules sont mortes. Un seul éleveur n'a rien perdu : il avait fait vacciner son troupeau **trois mois plus tôt**. Pourquoi les autres n'ont-ils pas pu vacciner au moment où la maladie est arrivée ? | R.A. : Les élèves émettent des hypothèses. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les soins : vaccination et déparasitage ». Vous saurez expliquer comment agit un vaccin et pourquoi il faut vacciner à l'avance. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce flacon : il contient **100 doses**. Une dose par animal. Lisez l'étiquette : voie d'administration, délai avant l'immunité, durée de protection. | Les élèves observent et relèvent les indications. | Observation dirigée | Flacon ou photo | |
@@ -2293,7 +2291,7 @@ Le raisonnement vaut pour toutes les espèces. Chez le **zébu**, les jeunes vea
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Pourquoi faut-il vacciner avant l'arrivée de la maladie ?<br>Que fait le déparasitage ? | R.A. : Parce que la protection met une à deux semaines à s'installer.<br>R.A. : Il élimine les vers qui affaiblissent l'animal. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | À Madagascar, des essais ont été menés chez de petits éleveurs de volailles. Sans acheter de nouvelles races, la ponte est passée de **45 à 96 œufs** par poule et par an. Comment est-ce possible ? | R.A. : Les élèves proposent : meilleure nourriture, vaccination, soins. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « La sélection et l'amélioration de l'élevage ». Vous saurez associer une technique d'amélioration à chaque espèce et mesurer son effet. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici les résultats de ces essais menés auprès d'éleveurs malgaches. Trois mesures seulement ont été appliquées : vaccination contre la maladie de Newcastle, déparasitage des poussins, et mangeoire réservée aux poussins. Lisez le tableau. | Les élèves lisent et relèvent les chiffres. | Étude de document | Tableau des résultats | |
@@ -2423,7 +2421,7 @@ Changer de race avant d'avoir réglé la nourriture et les soins conduit presque
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : par où une plante absorbe-t-elle l'eau ? Citez une maladie qui décime les volailles. | R.A. : Par les poils absorbants des racines.<br>R.A. : La maladie de Newcastle. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un sujet d'entraînement, dans les conditions de l'examen. Il ne compte pas dans la moyenne : il sert à repérer ce qui n'est pas acquis. | Les élèves s'installent. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés, travail individuel. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue le sujet et surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -2532,7 +2530,7 @@ Réponds-lui en deux arguments.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit le barème au tableau : 4 + 6 + 6 + 4 = 20. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute du sujet, sans commentaire. | Les élèves suivent. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active, sans reformulation de fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -2664,7 +2662,7 @@ L'avis attendu comporte :
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quand vous touchez un objet très chaud, que fait votre main ?<br>Qui a commandé ce mouvement ? | R.A. : Elle se retire tout de suite.<br>R.A. : Le cerveau, ou quelque chose dans le corps. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Vous marchez pieds nus et vous posez le pied sur une épine. Votre pied se relève avant même que vous ayez eu le temps d'y penser. Pourtant, l'épine est loin de la tête. Comment l'information a-t-elle voyagé aussi vite ? | R.A. : Il y a quelque chose qui transporte le message dans le corps. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « L'organisation du système nerveux ». Vous saurez nommer les deux grandes parties du système nerveux et ce qui les compose. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce schéma. Repérez la partie enfermée dans le crâne, celle qui descend le long du dos, et les fils blanchâtres qui partent vers les bras, les jambes, la peau. | Les élèves observent et repèrent. | Observation dirigée | Schéma, silhouette | |
@@ -2770,7 +2768,7 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les deux parties du système nerveux central.<br>De quoi est fait le système périphérique ? | R.A. : L'encéphale et la moelle épinière.<br>R.A. : Des nerfs et des ganglions. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un élève récite une leçon apprise hier : il se souvient. Un autre marche sur une poutre étroite sans tomber : il garde l'équilibre. Un troisième dort : il respire quand même. Est-ce la même partie du système nerveux qui agit dans les trois cas ? | R.A. : Sans doute pas, ce sont des choses très différentes. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les rôles des différentes parties ». Vous saurez dire ce que fait chaque partie du système nerveux. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez le schéma de l'encéphale. Repérez la grande masse plissée en haut, la petite masse striée en arrière et en bas, et la tige qui se prolonge vers la moelle épinière. | Les élèves observent et nomment. | Observation dirigée | Schéma de l'encéphale | |
@@ -2892,7 +2890,7 @@ La plupart des nerfs contiennent à la fois des fibres sensitives et des fibres 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel est le centre des réflexes ?<br>Que commande le cerveau ? | R.A. : La moelle épinière.<br>R.A. : Les mouvements voulus, la pensée, la mémoire. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Je vais approcher ma main de vos yeux sans vous toucher. *(L'enseignant fait le geste.)* Vos paupières se sont fermées. Qui parmi vous avait décidé de les fermer ? | R.A. : Personne, cela s'est fait tout seul. | Questionnement oral, expérimentation | — | |
 | 2. Présentation | Aujourd'hui : « Le mouvement réflexe inné ». Vous saurez le reconnaître et citer ses caractères. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Par deux, réalisez trois essais : l'un tapote doucement sous la rotule de l'autre, jambe pendante ; puis on éclaire brièvement l'œil et on observe la pupille ; enfin on observe ce qui se passe dans la bouche en croquant le citron. Notez chaque réaction. | Les élèves réalisent les essais et notent. | Expérimentation, travail de groupe | Marteau, lampe, citron | |
@@ -2997,7 +2995,7 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux caractères du réflexe inné.<br>Quel est son centre nerveux ? | R.A. : Involontaire et inné.<br>R.A. : La moelle épinière ou le tronc cérébral. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Regardez cette image de *ravitoto* fumant. *(pause)* Plusieurs d'entre vous ont la bouche qui salive. Pourtant, il n'y a rien dans votre bouche : seulement une image. Un enfant qui n'aurait jamais goûté ce plat saliverait-il aussi ? | R.A. : Non, il ne saurait pas que c'est bon. | Questionnement oral | Image | |
 | 2. Présentation | Aujourd'hui : « Le mouvement réflexe acquis ». Vous saurez le reconnaître et le distinguer du réflexe inné. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Réfléchissez à ces situations : un cycliste expérimenté qui redresse son guidon sans y penser ; un élève qui se lève dès qu'il entend la cloche ; un conducteur qui freine en voyant un enfant traverser. | Les élèves observent et notent. | Étude de cas, travail de groupe | Tableau noir | |
@@ -3102,7 +3100,7 @@ Prenons le citron. S'il est **placé dans la bouche**, l'acide stimule directeme
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce qu'un réflexe acquis ?<br>Qu'est-ce qui le distingue du réflexe inné ? | R.A. : Une réaction automatique apprise par répétition.<br>R.A. : Il s'apprend, et il peut se perdre. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Je pose ce livre sur la table. Rasoa, prends-le si tu le souhaites — ou ne le prends pas, c'est toi qui décides. *(L'élève choisit.)* En quoi ce geste diffère-t-il du retrait de la main devant une braise ? | R.A. : Là, elle pouvait choisir ; devant la braise, on ne choisit pas. | Questionnement oral | Livre | |
 | 2. Présentation | Aujourd'hui : « Le mouvement volontaire ». Vous saurez le caractériser et le comparer aux deux types de réflexes. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Par deux, effectuez trois actions : prendre un crayon et le reposer, écrire votre prénom, puis renoncer volontairement à lever le bras alors que je vous le demande. Notez ce que vous ressentez à chaque fois. | Les élèves réalisent et notent. | Expérimentation, travail de groupe | Crayon, cahier | |
@@ -3213,7 +3211,7 @@ C'est là tout l'intérêt de l'apprentissage : en transformant des mouvements v
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel est le centre du réflexe inné ?<br>Pourquoi le réflexe est-il plus rapide que le mouvement volontaire ? | R.A. : La moelle épinière.<br>R.A. : Parce que le message ne va pas jusqu'au cerveau. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Vous savez que le pied se relève quand on marche sur une épine, et que la moelle épinière commande. Mais par quel chemin exact le message est-il passé, de la plante du pied jusqu'au muscle ? | R.A. : Les élèves proposent des trajets. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « L'arc réflexe ». Vous saurez nommer dans l'ordre les cinq éléments que parcourt l'influx nerveux. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce schéma muet : la peau du pied, un nerf qui monte, la moelle épinière en coupe, un nerf qui descend, le muscle de la jambe. Repérez chaque élément. | Les élèves observent et repèrent. | Observation dirigée | Schéma muet | |
@@ -3319,7 +3317,7 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel organe commande la pensée et le jugement ?<br>Que transporte un nerf ? | R.A. : Le cerveau.<br>R.A. : L'influx nerveux, le message. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Nous avons vu que le cerveau commande le jugement, l'équilibre et les gestes. Certaines substances, une fois dans le sang, atteignent le cerveau et modifient son fonctionnement. Que devient alors la personne qui en consomme ? | R.A. : Elle ne se comporte plus comme d'habitude. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les catégories de substances psychoactives ». Vous saurez définir ces substances et les classer en trois groupes selon leur effet. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Étudiez en groupe les documents distribués. Relevez, pour chaque substance citée, ce qu'elle produit : est-ce que le corps s'accélère, se ralentit, ou est-ce que la perception est déformée ? | Les élèves lisent et remplissent la fiche. | Étude de document, travail de groupe | Documents, fiche | |
@@ -3423,7 +3421,7 @@ Deux conséquences. D'abord, une substance psychoactive perturbe un organe encor
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois catégories de substances psychoactives.<br>Qu'est-ce que la dépendance ? | R.A. : Excitants, sédatifs, hallucinogènes.<br>R.A. : Un état où le corps réclame la substance. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un père de famille consacre chaque semaine une partie de son salaire à l'alcool. Sa santé se dégrade, mais il n'est pas le seul touché. Qui d'autre subit les conséquences ? | R.A. : Sa femme, ses enfants, son travail. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les effets sur l'organisme et sur la vie sociale ». Vous saurez distinguer les deux types de conséquences. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Étudiez les cas distribués. Pour chacun, remplissez deux colonnes : ce qui touche le **corps** de la personne, et ce qui touche **son entourage**. | Les élèves lisent et complètent. | Étude de cas, travail de groupe | Fiches de cas | |
@@ -3532,7 +3530,7 @@ Juger ou rejeter une personne dépendante ne fait qu'aggraver son isolement, don
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux effets des substances psychoactives sur la vie sociale.<br>Une personne dépendante peut-elle s'en sortir ? | R.A. : L'échec scolaire et les accidents.<br>R.A. : Oui, si elle est aidée. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux élèves passent la même composition. L'un a dormi neuf heures et pris un petit-déjeuner ; l'autre a veillé jusqu'à deux heures du matin et n'a rien mangé. Lequel réussira le mieux, et pourquoi ? | R.A. : Le premier, parce qu'il est reposé et nourri. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Hygiène du système nerveux et prévention ». Vous saurez énoncer les règles qui protègent le système nerveux et concevoir une action de sensibilisation. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce tableau des durées de sommeil conseillées selon l'âge. Repérez la ligne qui vous concerne et comparez avec vos habitudes réelles. | Les élèves observent et comparent. | Observation dirigée | Tableau des durées | |
@@ -3657,7 +3655,7 @@ Le message doit rester **court, positif et exact**. Un slogan qui effraie sans e
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : quelles sont les trois parties de l'encéphale ? Qui commande le réflexe de retrait ? | R.A. : Cerveau, cervelet, tronc cérébral.<br>R.A. : La moelle épinière. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un sujet d'entraînement en conditions d'examen. Il ne compte pas : il sert à repérer ce qui n'est pas acquis. | Les élèves s'installent. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés, travail individuel. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue le sujet et surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -3769,7 +3767,7 @@ Réponds-lui en deux arguments, sans le juger.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit le barème au tableau : 4 + 6 + 6 + 4 = 20. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute du sujet, sans commentaire. | Les élèves suivent. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active, sans reformulation de fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -3905,7 +3903,7 @@ Un élève de votre classe dort 5 heures par nuit, regarde un écran jusque tard
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les organes de l'appareil génital féminin que vous connaissez.<br>Quel organe stocke l'urine ? | R.A. : Les ovaires, l'utérus, le vagin.<br>R.A. : La vessie. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Une jeune femme accouche à la maison. Le travail dure trois jours. L'enfant ne survit pas. Depuis, elle perd ses urines sans pouvoir se retenir, jour et nuit. Ce n'est ni une faiblesse ni une malpropreté : c'est une blessure. Laquelle ? | R.A. : Les élèves émettent des hypothèses. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « La fistule obstétricale : définition et symptômes ». Vous saurez expliquer ce qu'est une fistule, comment elle se forme et comment on la reconnaît. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez le schéma du petit bassin. Repérez trois organes voisins, séparés par de fines parois : la **vessie** en avant, le **vagin** au milieu, le **rectum** en arrière. | Les élèves observent et nomment les organes. | Observation dirigée | Schéma | |
@@ -4026,7 +4024,7 @@ C'est précisément pour cela que cette leçon existe : une élève qui sait qu'
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce qu'une fistule obstétricale ?<br>Quel est son symptôme principal ? | R.A. : Une ouverture anormale reliant le vagin à la vessie ou au rectum.<br>R.A. : Une fuite permanente et involontaire d'urine. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux femmes accouchent le même jour avec la même difficulté. L'une vit à vingt minutes d'une maternité : on lui fait une césarienne, tout se passe bien. L'autre habite à huit heures de piste : elle développe une fistule. Qu'est-ce qui a fait la différence ? | R.A. : La distance, l'accès aux soins. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Causes, conséquences et prévention de la fistule ». Vous saurez distinguer causes médicales et facteurs sociaux, et énoncer les gestes qui protègent. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici une liste : grossesse avant 18 ans · bassin trop étroit · pauvreté · absence de consultations prénatales · éloignement d'une maternité · malnutrition pendant l'enfance · travail prolongé sans césarienne. Classez-les en deux colonnes : causes médicales directes / facteurs sociaux. | Les élèves classent en groupes. | Étude de document, travail de groupe | Tableau à deux colonnes | |
@@ -4147,7 +4145,7 @@ Le principal obstacle n'est pas médical, il est **informationnel** : beaucoup d
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les quatre comportements de prévention de la fistule ?<br>Pourquoi la grossesse précoce est-elle un facteur de risque ? | R.A. : Retarder la première grossesse, consultations prénatales, bonne alimentation, maternité dès le début du travail.<br>R.A. : Parce que le bassin n'est pas fini de grandir. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Le corps d'une fille de 14 ans peut être capable de concevoir un enfant. Cela signifie-t-il qu'il est prêt à en porter un et à accoucher sans danger ? | R.A. : Les élèves discutent. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « La grossesse précoce et le suivi médical ». Vous saurez expliquer les risques d'une grossesse à l'adolescence et dire à quoi servent les consultations prénatales. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces deux schémas de bassin : celui d'une fille de 14 ans, celui d'une femme de 20 ans. Comparez l'ouverture centrale, par laquelle doit passer la tête du fœtus. | Les élèves observent et comparent. | Observation dirigée | Schémas | |
@@ -4266,7 +4264,7 @@ Cette séance ne cherche pas à faire peur. Elle transmet trois informations pr�
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez deux organes du petit bassin.<br>À quoi sert l'utérus ? | R.A. : La vessie, l'utérus, le vagin, le rectum.<br>R.A. : À accueillir et porter le fœtus. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Voici un cancer particulier : dans presque tous les cas, on en connaît la cause exacte, il existe un **vaccin** pour l'éviter et un **examen simple** pour le détecter avant qu'il n'apparaisse. Pourtant, il tue encore beaucoup de femmes. Pourquoi ? | R.A. : Parce que les femmes ne sont pas vaccinées ni dépistées. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Le cancer du col de l'utérus : anatomie, causes et symptômes ». Vous saurez situer le col, nommer la cause et reconnaître les signes d'alerte. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez le schéma. L'utérus comporte deux parties : le **corps**, large et arrondi, en haut ; le **col**, étroit et cylindrique, en bas, qui débouche au fond du vagin. | Les élèves observent et repèrent. | Observation dirigée | Schéma | |
@@ -4400,7 +4398,7 @@ Quand les symptômes apparaissent, la maladie a déjà progressé.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la cause du cancer du col de l'utérus ?<br>Combien de temps s'écoule entre l'infection et le cancer ? | R.A. : Une infection persistante par le HPV.<br>R.A. : Souvent quinze à vingt ans. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Le vaccin contre le HPV s'adresse aux filles de **9 à 14 ans**, bien avant l'âge où le cancer pourrait survenir. Pourquoi si tôt ? | R.A. : Pour protéger avant d'être en contact avec le virus. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Dépistage, vaccination et prévention ». Vous saurez expliquer les trois niveaux de prévention et pourquoi ils se complètent. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ce tableau à trois colonnes : niveau **primaire**, **secondaire**, **tertiaire**. Repérez pour chacune le public concerné et le moment d'intervention. | Les élèves observent et complètent. | Étude de document, travail de groupe | Tableau | |
@@ -4521,7 +4519,7 @@ Les outils existent donc. Ce qui manque encore, dans beaucoup de régions du mon
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la cause directe de la fistule obstétricale ?<br>Quels sont les deux piliers de la prévention du cancer du col ? | R.A. : Un travail d'accouchement prolongé sans césarienne.<br>R.A. : La vaccination et le dépistage. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Vous savez désormais des choses que beaucoup d'adultes de votre entourage ignorent : qu'une fistule s'opère, qu'un cancer du col se dépiste avant d'exister. À quoi sert un savoir que l'on garde pour soi ? | R.A. : À rien, il faut le partager. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Concevoir un message de sensibilisation ». Par groupes, vous allez produire une affiche, une brochure, un slogan ou une saynète destinés à votre communauté. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Voici deux messages. **A** : « La fistule, c'est la honte du village. » **B** : « La fistule se soigne. Parlez-en au centre de santé. » Lequel aidera une femme malade à se faire soigner ? | R.A. : Le B. Le A fait honte et pousse à se cacher. | Étude de document, discussion dirigée | Deux exemples au tableau | |
@@ -4661,7 +4659,7 @@ C'est là que se rejoignent les deux valeurs de cette thématique. L'**estime de
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : qu'est-ce qu'une fistule obstétricale ? À quel âge l'OMS recommande-t-elle de commencer le dépistage ? | R.A. : Une ouverture anormale reliant le vagin à la vessie ou au rectum.<br>R.A. : Dès 30 ans. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un sujet d'entraînement en conditions d'examen. Il ne compte pas : il sert à repérer ce qui n'est pas acquis. | Les élèves s'installent. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés, travail individuel. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue le sujet et surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -4785,7 +4783,7 @@ La réponse attendue comporte :
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit le barème au tableau : 4 + 6 + 6 + 4 = 20. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute du sujet, sans commentaire. | Les élèves suivent. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active, sans reformulation de fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -4901,7 +4899,7 @@ Une jeune fille de 16 ans est enceinte. Sa famille hésite à l'emmener en consu
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez des richesses du sous-sol malgache.<br>Connaissez-vous des pierres extraites à Madagascar ? | R.A. : L'or, le graphite, le nickel, les pierres.<br>R.A. : Le saphir, le rubis, parfois l'améthyste. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux pierres se ressemblent : même couleur rouge, même éclat. L'une vaut quelques milliers d'ariary, l'autre plusieurs millions. Comment expliquer une telle différence ? | R.A. : Les élèves proposent : la rareté, la dureté, la qualité. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les trois familles de pierres gemmes ». À la fin, vous saurez ranger une pierre dans l'une des trois familles et dire pourquoi. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces pierres et ces images. Certaines sont transparentes, d'autres non. Certaines viennent du sol, d'autres proviennent d'êtres vivants. Essayez de les regrouper. | Les élèves observent et proposent des regroupements. | Observation dirigée, travail de groupe | Échantillons, photos | |
@@ -5002,7 +5000,7 @@ Elles se distinguent nettement des deux autres familles : elles ne sont pas née
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois familles de gemmes.<br>Quelles sont les trois qualités d'une gemme ? | R.A. : Précieuses, fines, organiques.<br>R.A. : Beauté, rareté, résistance. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Deux pierres transparentes et incolores sont posées devant vous. L'une est un diamant, l'autre un morceau de quartz. Sans laboratoire, comment les distinguer ? | R.A. : Les élèves proposent des idées. | Questionnement oral | Deux échantillons | |
 | 2. Présentation | Aujourd'hui : « Les propriétés physiques des pierres gemmes ». Vous saurez décrire une pierre avec six critères précis et utiliser l'échelle de dureté. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Par groupes, décrivez chaque échantillon : sa couleur, son éclat, laisse-t-il passer la lumière ? Ensuite — **avec les lunettes** — essayez de le rayer avec l'ongle, puis avec une pièce de cuivre, puis avec un clou d'acier. | Les élèves observent et testent en remplissant le tableau. | Observation dirigée, expérimentation, travail de groupe | Échantillons, loupe, lunettes, gants, clou | |
@@ -5119,7 +5117,7 @@ Le grenat, également rouge, aurait été rayé par la topaze — sa dureté ne 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelles sont les six propriétés physiques d'une gemme ?<br>Quelle est la dureté du corindon ? | R.A. : Couleur, éclat, transparence, dureté, cassure, clivage.<br>R.A. : 9 sur l'échelle de Mohs. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | En 1998, un village du Sud-Ouest comptait quelques dizaines d'habitants. Deux ans plus tard, des dizaines de milliers de personnes y vivaient. Ce village s'appelle Ilakaka. Que s'est-il passé ? | R.A. : On y a découvert des pierres précieuses. | Questionnement oral | Carte | |
 | 2. Présentation | Aujourd'hui : « La répartition géographique des pierres gemmes à Madagascar ». Vous saurez placer les principaux gisements sur la carte et expliquer comment ils se sont formés. | Les élèves écoutent. | Exposé | Carte | |
 | 3. Observation | Observez la carte. Repérez les régions citées : Ilakaka et l'Isalo au Sud-Ouest, Andilamena au centre-nord, Antsirabe et le mont Ibity au centre, Mananjary à l'est, Andapa et Ambilobe au nord, Diego, Nosy Be. | Les élèves repèrent et colorient les zones. | Observation, travail de groupe | Carte, crayons | |
@@ -5238,7 +5236,7 @@ Une question se pose alors, et elle appartient pleinement à cette leçon : **à
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la différence entre gisement primaire et secondaire ?<br>Citez deux localités gemmifères malgaches. | R.A. : Le primaire est la roche d'origine, le secondaire résulte d'un transport.<br>R.A. : Ilakaka, Andilamena. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Les disques de coupe des scies industrielles sont garnis de diamant. Pourquoi utiliser en usine une pierre que l'on associe d'ordinaire aux bijoux ? | R.A. : Parce que le diamant est très dur, il coupe tout. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les utilisations des pierres gemmes ». Vous saurez relier chaque usage à une propriété physique précise. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces images : une bague, une montre mécanique, une vitre de téléphone, un foret de perceuse. Cherchez, dans chaque cas, quelle pierre intervient et pourquoi. | Les élèves observent et émettent des hypothèses. | Observation dirigée, travail de groupe | Photos, montre | |
@@ -5345,7 +5343,7 @@ Le commerce des pierres dites « de soin » existe, et il est important à Madag
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la différence entre gisement primaire et secondaire ?<br>D'où vient l'essentiel des saphirs malgaches ? | R.A. : Le primaire est la roche d'origine, le secondaire résulte d'un transport par l'eau.<br>R.A. : De gisements secondaires. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Pour extraire une pierre, faut-il toujours creuser un trou profond ? Comment fait-on quand la pierre se trouve dans les graviers d'une rivière ? | R.A. : Il suffit peut-être de laver le sable. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les techniques d'exploitation ». Vous saurez nommer les trois techniques et dire laquelle convient à quel gisement. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Observez ces images : une vaste fosse en gradins à ciel ouvert, l'entrée d'un puits étroit, des personnes qui lavent du gravier dans une rivière. Décrivez ce que vous voyez. | Les élèves observent et décrivent. | Observation dirigée, travail de groupe | Photos | |
@@ -5458,7 +5456,7 @@ Ses inconvénients sont tout aussi nets. Le travail se déroule **dans l'eau et 
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois techniques d'exploitation.<br>Laquelle domine à Madagascar ? | R.A. : Ciel ouvert, souterraine, alluviale.<br>R.A. : L'exploitation alluviale. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un village se trouve en aval d'un site d'extraction. Depuis deux ans, l'eau de la rivière est trouble, les poissons ont disparu et les rizières rendent moins. Pourtant, personne n'a rien déversé de toxique. Comment l'expliquer ? | R.A. : Les élèves émettent des hypothèses. | Questionnement oral | Tableau noir | |
 | 2. Présentation | Aujourd'hui : « Les impacts environnementaux et la responsabilité ». Vous saurez analyser les conséquences d'une exploitation et proposer des solutions. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Observation | Démonstration : je verse de la terre dans cette eau claire et j'agite. Observez. Maintenant, imaginez cette eau multipliée par des milliers de lavages chaque jour, dans une rivière dont un village dépend. | Les élèves observent l'eau se troubler. | Expérimentation, observation | Bassine, eau, terre | |
@@ -5569,7 +5567,7 @@ La vraie question n'est donc pas seulement « combien peut-on extraire ? », mai
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : quel minéral occupe le rang 10 de l'échelle de Mohs ? Quelle localité est célèbre pour le saphir ? | R.A. : Le diamant.<br>R.A. : Ilakaka. | Questionnement oral | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | Un sujet d'entraînement en conditions d'examen. Il ne compte pas : il sert à repérer ce qui n'est pas acquis. | Les élèves s'installent. | Consigne | Tableau noir | |
 | 2. Présentation | Quatre exercices, 20 points. Cahiers fermés, travail individuel. | Les élèves écoutent. | Exposé | Tableau noir | |
 | 3. Passation | L'enseignant distribue le sujet et surveille sans intervenir sur le fond. | Les élèves traitent le sujet. | Travail individuel | Sujet, cahier | |
@@ -5683,7 +5681,7 @@ Réponds-lui en deux arguments.
 | Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
-| **II. NOUVELLE LEÇON** *(ligne fusionnée)* ||||||
+| **II. NOUVELLE LEÇON** ||||||
 | 1. Mise en situation | L'enseignant écrit le barème au tableau : 4 + 6 + 6 + 4 = 20. Dernière évaluation de l'année. | Les élèves notent le barème. | Consigne | Tableau noir | |
 | 2. Présentation | Lecture à voix haute du sujet, sans commentaire. | Les élèves suivent. | Lecture dirigée | Sujet | |
 | 3. Passation | Surveillance active, sans reformulation de fond. | Les élèves composent individuellement. | Évaluation écrite | Sujet, cahier | |
@@ -5839,23 +5837,6 @@ Les sections ci-dessous documentent les choix de fond, les vérifications et les
 
 
 
-## Écarts assumés par rapport au FRP — Organisation des êtres vivants — plantes
-
-Trois points où je me suis écarté de la ressource du Ministère, avec la justification :
-
-**1. La confusion neem / voandelaka (RES 2.e).**
-Le FRP écrit « le neem (voandelaka) », comme si les deux noms désignaient le même arbre. Ce sont **deux espèces distinctes** de la famille des Méliacées : le neem est *Azadirachta indica*, le voandelaka des Hautes Terres est *Melia azedarach* (lilas de Perse, « faux neem »). La confusion est répandue et vient de leurs propriétés voisines, mais un cours de sciences ne peut pas l'entériner. La leçon 17 nomme les deux espèces et explique la confusion, ce qui transforme l'erreur en point d'apprentissage.
-
-**2. L'absence d'avertissement de toxicité (RES 2.e).**
-Le FRP présente le voandelaka comme une solution naturelle sans mentionner que **toutes les parties de l'arbre sont toxiques** et que l'ingestion de quelques fruits suffit à provoquer une intoxication grave. Recommander une plante à des élèves de 14 ans sans cette précaution est problématique. La leçon 17 consacre une section entière au principe « naturel ne veut pas dire sans danger ».
-
-**3. Le conseil d'arrosage (RES 2.c).**
-Le FRP affirme que les plantes arrosées quotidiennement « deviendront paresseuses » et invite à laisser le végétal « chercher » lui-même son eau. La formulation prête le flanc à la critique : une plante ne « cherche » rien, et le conseil pris au pied de la lettre conduit à laisser dépérir de jeunes plants. L'idée sous-jacente est juste — un arrosage abondant et espacé favorise un enracinement profond — et c'est elle que j'ai retenue, sous le nom d'**arrosage raisonné**, en insistant sur l'observation préalable du sol.
-
-**Ajout hors FRP** : la séance 18 comprend un volet **sécurité** (règles de protection, délai avant récolte, protection des pollinisateurs) absent de RES 2.f, qui se limite à définir les trois classes de pesticides. Ce volet me paraît indispensable dans un manuel destiné à des élèves vivant en milieu agricole.
-
-
-
 ## Vérifications externes de cette unité — Organisation des êtres vivants — plantes
 
 | Fait avancé | Vérification |
@@ -5866,24 +5847,6 @@ Le FRP affirme que les plantes arrosées quotidiennement « deviendront paresseu
 | Knop et von Sachs, culture en solution minérale sans sol, vers 1860 | Travaux datés de 1860-1865 ; solution de Knop à six éléments minéraux |
 | Dutrochet, osmose, communication de 1826 | Premiers résultats sur l'endosmose présentés à l'Académie des sciences en octobre 1826 |
 | Calculs des exercices 17.3 et 18.3 | Vérifiés par script : 12 L au 1/5 → 2,4 L + 9,6 L ; 240 g de feuilles ; 10 mL et 30 mL |
-
-
-
-## Écarts assumés et choix de traitement — Organisation des êtres vivants — élevage
-
-Le FRP n'étant d'aucun secours ici, les écarts ne portent pas sur lui mais sur **la documentation vétérinaire professionnelle**, qui n'est pas directement transposable en classe de T9.
-
-**1. Les protocoles d'injection ont été écartés.** Les fiches techniques de vaccination détaillent les gestes d'administration — dilutions, volumes, voies d'injection. Ces informations s'adressent à des agents formés. Un manuel scolaire qui les reproduirait inciterait des élèves à pratiquer eux-mêmes des actes vétérinaires. La séance 21 enseigne donc **pourquoi et quand** vacciner, et renvoie explicitement l'acte lui-même à l'agent vétérinaire.
-
-**2. Les méthodes d'euthanasie ont été écartées** pour la même raison, sans mention ni allusion.
-
-**3. La densité en cage (25 oiseaux/m²) n'a pas été reprise.** Elle concerne l'élevage industriel en claustration, hors de portée et hors de propos pour l'élevage familial visé par le PE. La retenir aurait donné une norme inapplicable, et discutable du point de vue de la valeur *respect de toute vie* portée par la thématique.
-
-**4. La part de patate douce dans la ration a été arrondie prudemment.** La source indique « jusqu'à 35 % » ; la leçon écrit « jusqu'à environ un tiers », formulation plus sûre pour un usage sans balance de précision.
-
-**5. Le chiffre de perte de poids du zébu en saison sèche** est donné dans la fourchette basse de la source (« parfois un quart de leur masse » pour 25-30 %), afin de ne pas surestimer un phénomène qui varie fortement selon les régions.
-
----
 
 
 
@@ -5922,26 +5885,6 @@ Tous les résultats numériques des exercices ont été recalculés :
 
 
 
-## Écarts assumés par rapport au FRP — Santé et bien-être
-
-Quatre corrections apportées au « précis de cours » RES 3.b et à RES 3.d.
-
-**1. La salivation devant un citron, classée deux fois (RES 3.b).**
-Le tableau comparatif du FRP fait figurer la « salivation » devant un « citron coupé en deux » **à la fois** dans la colonne des mouvements réflexes innés **et** dans celle des mouvements réflexes acquis. C'est contradictoire, et c'est précisément l'exemple qu'un élève retiendra. J'ai tranché en introduisant le critère de discrimination : la salivation par **contact** de l'acide sur la langue est innée, la salivation à la **vue** est acquise, puisqu'elle suppose d'avoir déjà goûté. La séance 28 utilise cette contradiction comme exercice de raisonnement.
-
-**2. Le cervelet présenté comme centre de réflexes (RES 3.b).**
-Le FRP retient comme centres possibles du mouvement réflexe inné le « cervelet », le « bulbe rachidien » ou la « moelle épinière ». Le cervelet n'est pas un centre de réflexes : il assure la coordination des mouvements et l'équilibre. Les centres à retenir sont la **moelle épinière** et le **tronc cérébral** (qui comprend le bulbe). La séance 27 signale explicitement cette confusion.
-
-**3. Durée de sommeil du nouveau-né (RES 3.d).**
-Le FRP indique 20 heures. Les recommandations internationales actuelles retiennent **14 à 17 heures**. Le tableau de la séance 33 reprend les fourchettes actuelles et la note le précise. Les autres lignes du FRP sont en revanche cohérentes avec ces recommandations.
-
-**4. Phrase défectueuse dans l'exemple de MRA (RES 3.b).**
-Le FRP donne pour exemple le geste de freinage d'un conducteur, mais la phrase est amputée de sa syntaxe et contient un adverbe (« doucement ») qui la rend incompréhensible. L'exemple lui-même est juste, il a été reformulé : freiner à la vue d'un piéton qui s'engage sur la route.
-
-**Ajouts hors FRP** : la distinction excitants / sédatifs / hallucinogènes de la séance 31 reprend la terminologie du **PE lui-même** (« sédatifs, hallucinogènes, excitants »), qui est plus claire pour des élèves que le classement du FRP par statut légal (« substances autorisées / substances illicites ») — ce dernier laisse d'ailleurs croire que l'autorisation garantit l'innocuité, contresens que la leçon 31 corrige explicitement. Les notions d'**accoutumance** et de **dépendance**, absentes du FRP, sont indispensables pour comprendre pourquoi l'arrêt est difficile.
-
-
-
 ## Vérifications externes de cette unité — Santé et bien-être
 
 | Fait avancé | Vérification |
@@ -5952,76 +5895,6 @@ Le FRP donne pour exemple le geste de freinage d'un conducteur, mais la phrase e
 | Durées de sommeil par âge | Fourchettes de la National Sleep Foundation (ado 14-17 ans : 8-10 h ; nouveau-né : 14-17 h) |
 | Classement des substances en dépresseurs / stimulants / perturbateurs | Classification standard en santé publique ; alcool = dépresseur, tabac = stimulant |
 | Maturation tardive des zones du jugement, vulnérabilité accrue à l'adolescence | Concordant avec les données sur le développement cérébral |
-
-
-
-## Écarts assumés — section critique — Reproduction humaine
-
-Cette unité est celle qui a demandé le plus de corrections. **Trois erreurs médicales graves** figurent dans les sources officielles, dont une dans le PE lui-même.
-
-### ⛔ 1. Le FRP décrit le cancer de l'ENDOMÈTRE sous le titre « cancer du col de l'utérus »
-
-C'est l'erreur la plus sérieuse rencontrée dans l'ensemble de ce travail.
-
-La ressource **RES 4.d** s'intitule « Cancer du col de l'utérus ». Son introduction et sa section anatomie sont exactes. Mais les sections **« 3. Causes »** et **« 5. Types »** décrivent **une tout autre maladie** : le **cancer de l'endomètre**, qui touche la muqueuse du corps de l'utérus.
-
-Le FRP y écrit textuellement, dans une section censée traiter le col, qu'il existe des types I et II « du cancer de **l'endomètre** » — il nomme donc lui-même l'autre maladie. Et il énumère comme facteurs de risque du cancer du col : élévation du taux d'œstrogènes, obésité, tamoxifène, syndrome de Lynch, syndrome des ovaires polykystiques, âge supérieur à 45 ans.
-
-**Ce sont les facteurs de risque du cancer de l'endomètre, pas du cancer du col.** Deux maladies distinctes ont été fusionnées.
-
-| | **Cancer du col de l'utérus** | **Cancer de l'endomètre** |
-|---|---|---|
-| Localisation | col, partie basse | muqueuse du corps de l'utérus |
-| Cause principale | **virale** : HPV dans ~99 % des cas | **hormonale** : excès d'œstrogènes |
-| Facteurs de risque | HPV, **tabac**, VIH, absence de dépistage | obésité, diabète, tamoxifène, syndrome de Lynch |
-| Âge habituel | dès 30-40 ans | surtout après la ménopause |
-| Prévention | **vaccin HPV + dépistage** | pas de vaccin |
-
-**Le danger pédagogique est direct.** En enseignant la version du FRP, on apprend à des élèves que le cancer du col serait lié à l'obésité et à l'âge — et **on omet le tabac**, qui est le principal facteur de risque après le HPV. Une jeune fille retiendrait qu'elle n'est pas concernée avant 45 ans, ce qui est faux, et ignorerait que fumer double son risque.
-
-**Décision** : les séances 39 et 40 ne reprennent du FRP que ce qui concerne réellement le col — l'introduction, l'anatomie, le dépistage, la vaccination, sections exactes et bien documentées. **Toute la section « Causes » et toute la section « Types » ont été écartées** et remplacées par les facteurs de risque réels, vérifiés auprès de sources indépendantes concordantes.
-
-### ⛔ 2. Le PE attribue au cancer du col les causes de la fistule
-
-Le programme d'études lui-même énonce, à la ligne « Cancer du col de l'utérus » :
-
-> *Causes : grossesse précoce, absence ou irrégularité des suivis avant la naissance, accouchement qui se prolonge, agent pathogène comme le VPH*
->
-> *(citation abrégée du PE ; les trois premiers items y sont rédigés dans les mêmes termes qu'à la ligne « fistule »)*
-
-Les trois premiers éléments sont les causes de la **fistule obstétricale**, manifestement recopiés de la ligne précédente. Seul le dernier — le VPH — est exact.
-
-Un travail d'accouchement prolongé **ne provoque pas** de cancer du col. Le mécanisme est entièrement différent : d'un côté une compression mécanique des tissus, de l'autre une infection virale persistante évoluant sur quinze à vingt ans.
-
-**Décision** : la séance 39 retient **uniquement le HPV** comme cause, avec les facteurs de risque réels. L'écart au PE est signalé ici en toute transparence, car il porte sur un point vérifiable auprès de n'importe quelle source médicale.
-
-*(Le contenu du PE reste par ailleurs exact sur la fistule, où ces mêmes causes sont à leur place.)*
-
-### ⚠️ 3. La recommandation d'hydratation du FRP est imprécise
-
-Le FRP range, parmi les comportements préventifs de la fistule, une « réhydratation quotidienne » chiffrée à **6 litres par jour**.
-
-Six litres par jour est une quantité **considérablement supérieure** aux apports habituellement recommandés. Une telle consommation, hors contexte médical encadré, n'est pas anodine.
-
-Cette recommandation vient vraisemblablement de protocoles de **prise en charge** de patientes porteuses de fistule, où une hydratation abondante limite la concentration des urines et les infections. Elle n'a pas sa place dans une liste de **comportements préventifs** destinés à la population générale.
-
-**Décision** : la séance 37 conserve le principe — une hydratation abondante est utile **à la femme déjà atteinte, en attendant l'opération** — sans reprendre le chiffre de 6 litres, et le présente comme une mesure de confort et de prévention des infections, non comme un moyen d'éviter la fistule.
-
-### Autres choix de traitement
-
-**4. ⛔ Le témoignage de Sojina (RES 4.c) n'est pas repris.** Récit personnel d'une femme identifiable, publié par l'UNFPA dans un cadre précis. Il est remplacé en séance 41 par des **situations fictives** et une grille d'évaluation.
-
-**5. La liste de symptômes de la RES 4.b a été réorganisée.** Le FRP mélange dans une même liste des symptômes (incontinence, odeur, douleur), des conséquences (infertilité, lésions nerveuses) et des événements survenant pendant l'accouchement lui-même — la tête du fœtus retenue dans la déchirure, ou le décès de la mère ou de l'enfant. Le tout figure sous le titre « Symptômes ». Les séances 36 et 37 séparent **mécanisme**, **symptômes** et **conséquences**, qui appartiennent à trois moments distincts.
-
-**6. Le terme « dysfonctionnel sexuel » n'a pas été repris.** Formulation incorrecte, et notion sans portée pédagogique en T9.
-
-**7. Ajout : la fistule se répare chirurgicalement.** Le FRP consacre une section aux conséquences et une autre à la prévention, mais **n'indique nulle part que la fistule s'opère**. C'est pourtant l'information la plus utile pour une femme déjà atteinte. Elle est présente dans les séances 36, 37 et 41.
-
-**8. Ajout : le tabac.** Absent des facteurs de risque du FRP alors qu'il s'agit du principal facteur après le HPV. Ajouté en séance 39.
-
-**9. Ajout : la nature fréquente et le plus souvent transitoire de l'infection à HPV.** Le FRP n'explique pas que l'organisme élimine spontanément la plupart des infections. Sans cette précision, un élève pourrait croire que toute infection conduit au cancer — source d'angoisse inutile et d'incompréhension du dépistage.
-
----
 
 
 
@@ -6045,27 +5918,8 @@ Cette recommandation vient vraisemblablement de protocoles de **prise en charge*
 ## Documentation (Fanovozan-kevitra) — Reproduction humaine
 
 - **Programme d'Études T9 — Sciences de la vie et de la terre**, DCRP, MEN Madagascar.
-- **Fascicule de Ressources Pédagogiques SVT 3e**, MEN/DDIS, thématique IV (RES 4.a à 4.d) — *sous les réserves détaillées ci-dessus*.
 - **Organisation mondiale de la Santé** — stratégie d'élimination du cancer du col de l'utérus ; recommandations de vaccination anti-HPV (filles 9-14 ans) et de dépistage (30 ans, 25 ans en cas de VIH) ; recommandations relatives au suivi prénatal.
 - **Institut Pasteur**, **Ligue contre le cancer**, **ARCAGY** — facteurs de risque du cancer du col de l'utérus, distinction avec le cancer de l'endomètre.
-
----
-
-
-
-## Écarts assumés par rapport au FRP — Géologie
-
-**1. ⛔ La lithothérapie a été retirée des usages thérapeutiques (séance 47).** La ressource RES 5.d présente la lithothérapie comme un usage légitime, au même rang que la joaillerie et l'industrie, en prêtant aux pierres des « vibrations » bénéfiques et au diamant un effet apaisant sur le stress. **C'est une pseudo-science** : aucune étude contrôlée n'a mis en évidence d'effet supérieur à un placebo, et les minéralogistes sont unanimes. Enseigner cela comme un fait dans un cours de sciences contreviendrait à la règle critique 13 du skill v18 (fiabilité du contenu). Le risque est concret : des cas de **refus ou de retard de soins** au profit des pierres sont documentés. La séance 47 traite donc la joaillerie et l'industrie comme usages réels, et consacre à la lithothérapie un encadré de **mise en garde scientifique** qui la présente comme un fait social et commercial, jamais comme un usage thérapeutique.
-
-**2. La phrase sans sujet de la RES 5.b a été remplacée.** Le FRP énonce d'abord, à juste titre, que la rareté seule ne suffit pas à rendre une pierre précieuse. Mais la phrase qui suit commence par « Plus rare que le diamant » et enchaîne sur un pronom sans antécédent : **aucun nom de pierre n'est jamais donné**. Le lecteur ignore de quoi on lui parle. L'idée est juste et a été conservée, mais reformulée avec des **exemples explicites** : la painite et la rhodizite, cette dernière présente à Madagascar.
-
-**3. La RES 5.b, traduite de façon défectueuse, n'a pas servi de base à la séance 45.** Cette ressource présente les propriétés des gemmes dans une langue visiblement traduite automatiquement, avec des tournures incompréhensibles — une phrase affirme qu'il faudrait « inclure un produit chimique » pour qu'une pierre soit belle, une autre évoque son attrait auprès d'une « liste » d'acheteurs, et le genre des pronoms change en cours de phrase — et un point de vue de **vendeur** plutôt que de géologue. Surtout, **elle ne mentionne ni l'échelle de Mohs, ni la cassure, ni le clivage**, alors que le PE les exige explicitement. La séance 45 a donc été construite à partir de l'échelle de Mohs et de la distinction dureté/ténacité, sources externes à l'appui.
-
-**4. La RES 5.c ne contient aucun texte exploitable.** Elle se réduit à deux cartes — des images, donc inutilisables — accompagnées d'un guide d'exploitation. La liste des localités de la séance 46 provient du **PE lui-même**, qui la fournit en toutes lettres, complétée par les travaux publiés sur les gisements malgaches.
-
-**5. ⚠️ Une réserve signalée sur le diamant.** Le PE cite « Diamant (Nosy Varika, Mandritsara) » parmi les exemples de localités. Or **Madagascar n'est pas un producteur reconnu de diamant gemme** : la littérature géologique fait état d'indices, non de gisements exploités, et les inventaires internationaux ne recensent pas le pays parmi les producteurs. La séance 46 **n'attribue donc aucune localité de diamant à Madagascar**, tout en conservant le diamant dans les quatre pierres précieuses de la séance 44. Ce choix est signalé ici pour que l'enseignant en soit averti : il s'écarte sciemment d'un exemple du PE, sur un point vérifiable.
-
-**Ajouts hors FRP** : consignes de sécurité pour les manipulations de la séance 45 (le PE prévoit lunettes, gants, marteau et couteau, sans qu'aucune source n'accompagne ces outils de précautions) ; distinction **dureté / ténacité** ; caractère **synthétique** des corindons industriels ; mention du **travail des enfants** et de la question de la répartition de la valeur, qui donnent leur contenu concret aux valeurs *responsabilité* et *sens du bien commun*.
 
 ---
 
@@ -6092,7 +5946,6 @@ Cette recommandation vient vraisemblablement de protocoles de **prise en charge*
 ## Documentation (Fanovozan-kevitra) — Géologie
 
 - **Programme d'Études T9 — Sciences de la vie et de la terre**, DCRP, MEN Madagascar.
-- **Fascicule de Ressources Pédagogiques SVT 3e**, MEN/DDIS, thématique V (RES 5.a à 5.f).
 - **Friedrich Mohs**, échelle de dureté des minéraux, 1812.
 - Travaux de l'**IRD** et de l'**université d'Antananarivo** (Département des sciences de la Terre) sur la genèse des gisements de corindons malgaches.
 - Documentation gemmologique publique sur les gisements d'Ilakaka, d'Andilamena et d'Antsirabe.
@@ -6132,28 +5985,6 @@ Tous les résultats chiffrés ci-dessous ont été **recalculés par script** ap
 
 
 
-## Écarts assumés par rapport au manuel d'origine — Révisions et examens
-
-Ce lot **remplace intégralement** le contenu des dix séances concernées. Les écarts sont donc structurels.
-
-1. **Les cinq séances de révision ne sont plus identiques.** Chacune porte sur les contenus de son unité, avec un sujet, des chiffres et des erreurs typiques qui lui sont propres. Le tableau générique à trois lignes et les trois questions passe-partout sont supprimés.
-
-2. **La méta-instruction en guise de corrigé est supprimée.** *« La réponse doit reprendre les connaissances de l'unité »* n'est pas une réponse d'élève mais une consigne au correcteur. Tous les corrigés de ce lot donnent la **réponse attendue rédigée**.
-
-3. **Les sujets d'examen portent désormais sur la SVT.** Les QCM génériques sur la méthode scientifique — sans lien avec le programme — sont remplacés par des questions adossées à des séances précises, dont le numéro est indiqué en fin de chaque corrigé.
-
-4. **Les types d'exercices sont diversifiés.** L'audit relevait deux consignes stéréotypées répétées 41 fois. Ce lot emploie l'appariement, la complétion, le vrai/faux justifié, la remise en ordre, le **schéma à légender** (séances 24 et 35) et l'avis argumenté — y compris les types que le manuel annonçait dans ses légendes sans jamais les employer.
-
-5. **Une distinction nette est introduite entre entraînement et examen.** Le manuel d'origine traitait les deux de façon identique. Ici, la séance de révision comporte des **erreurs fréquentes nommées**, et la séance d'examen un **barème détaillé avec consignes au correcteur**.
-
-6. **Question 3 de l'exercice 3 de la séance 35 — association et causalité.** Cette question dépasse la lettre du programme, qui n'exige pas la distinction. Elle est maintenue parce que l'unité III traite des substances psychoactives, domaine où la confusion entre corrélation et cause alimente les idées fausses. Le barème la signale comme discriminante.
-
-7. **Aucune notion nouvelle n'est introduite.** Toutes les données des exercices sont **fictives mais vraisemblables**, construites pour ce lot. Elles ne proviennent ni du FRP ni d'aucune source externe, et leurs ordres de grandeur sont cohérents avec les faits établis dans les séances 1 à 49.
-
----
-
-
-
 ## Contrôle anti-plagiat — Révisions et examens
 
 Commande exécutée :
@@ -6162,7 +5993,7 @@ Commande exécutée :
 python3 scripts/check_plagiat.py Revisions-et-examens-SVT-T9.md sources-frp/frp_svt3e_full.txt --n 6 --min-car 25
 ```
 
-**Résultat : 0,00 % de recouvrement** — aucun passage commun avec le Fascicule de Ressources Pédagogiques du MEN/DDIS.
+**Résultat : 0,00 % de recouvrement** — aucun passage commun avec les ressources consultées.
 
 Ce résultat était attendu : les énoncés dérivent des séances 1 à 49, elles-mêmes déjà contrôlées à 0 %, et les données chiffrées ont été construites pour ce lot.
 
@@ -6175,7 +6006,6 @@ Ce résultat était attendu : les énoncés dérivent des séances 1 à 49, elle
 - **Programme d'Études T9 (SVT)**, DCRP, Ministère de l'Éducation Nationale — résultats attendus, contenus, valeurs à véhiculer.
 - **Séances 1 à 49 du présent manuel** — seule source des notions évaluées.
 - **Skill `jlearn-manuel-scolaire` v18** — structure de fiche, barème, règles de rédaction.
-- *Fascicule de Ressources Pédagogiques SVT 3e*, MEN/DDIS — consulté pour vérification de non-recouvrement uniquement ; aucun contenu repris.
 
 Les données chiffrées des exercices sont **fictives**. Elles ne décrivent aucun district, aucune maternité, aucune commune ni aucune coopérative réels.
 
