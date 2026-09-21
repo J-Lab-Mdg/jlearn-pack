@@ -21,6 +21,11 @@ Rejoue en une commande tous les contrôles menés pendant la rédaction. Sort en
 | 8 | Non-régression pédagogique | retour d'un des trois défauts du manuel d'origine |
 | 9 | Cohérence de la note d'écarts | compteurs désynchronisés, identifiant en double |
 
+Le contrôle 6 vérifie en outre que le décompte d'images annoncé par
+`AUDIT-images-pack.md` est **retrouvable dans le document** et que toute image
+mise sur liste noire y est **justifiée par écrit** — un blocage sans motif écrit
+finit par être levé par quelqu'un qui en ignore la raison.
+
 Le **contrôle 8** mérite un mot : les contrôles 1 à 7 vérifient la *forme*
 (barèmes, calculs, assemblage). Rien n'empêcherait de réintroduire, à contenu
 formellement valide, les trois défauts qui ont motivé la réécriture :
@@ -55,6 +60,9 @@ Un vérificateur qui ne détecte jamais rien ne sert à rien. Six régressions o
 | Écart ajouté sans mise à jour des compteurs | contrôle 9 |
 | Identifiant d'écart en double | contrôle 9 |
 | Total en prose désynchronisé du tableau | contrôle 9 |
+| Image défectueuse insérée dans une séance | contrôle 6 |
+| Décompte de l'audit d'images faussé | contrôle 6 |
+| Liste noire sans justification écrite | contrôle 6 |
 | Image défectueuse insérée (`cycle_eau.png`) | contrôle 6 |
 
 Après restauration, le manuel présentait un md5 identique à l'original.

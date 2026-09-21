@@ -51,6 +51,10 @@ IMAGES_DEFECTUEUSES = {
     # fleurs portent etamines ET pistil, donc hermaphrodites, mais sont
     # etiquetees « fleur male » / « fleur femelle ».
     "pollinisation_cycle.png": "fleurs hermaphrodites étiquetées mâle/femelle",
+    # La « carte de la langue » est un mythe scientifique refute : toutes les
+    # zones percoivent toutes les saveurs. L'image installe une erreur de cours.
+    "svt9e_langue.png": "« carte des saveurs » — mythe réfuté, et zones incohérentes",
+    "svt9e_oeil_parties.png": "« Pupile » au lieu de « pupille »",
 }
 FRP = "sources-frp/frp_svt3e_full.txt"
 
@@ -231,6 +235,31 @@ def controle_images():
              "; ".join(f"{f} — {IMAGES_DEFECTUEUSES[f]}" for f in defectueuses)
              if defectueuses
              else f"{len(IMAGES_DEFECTUEUSES)} sur liste noire, aucune utilisée")
+
+    # L'audit annonce un nombre d'images inspectees. Ce nombre doit rester
+    # verifiable depuis le document lui-meme, sinon il derive en silence.
+    chemin_audit = os.path.join(RACINE, "AUDIT-images-pack.md")
+    if os.path.exists(chemin_audit) and os.path.exists(chemin_pack):
+        with open(chemin_pack, encoding="utf-8") as f:
+            fichiers_pack = [os.path.basename(i["url"])
+                             for i in json.load(f).get("images", [])]
+        audit = lire("AUDIT-images-pack.md")
+        citees = {f for f in re.findall(r"`([a-z0-9_]+\.png)`", audit)
+                  if f in set(fichiers_pack)}
+        annonce = re.search(r"\*\*(\d+) des (\d+) images\*\*", audit)
+        if annonce:
+            attendu, total = int(annonce.group(1)), int(annonce.group(2))
+            verifier("décompte de l'audit d'images vérifiable",
+                     len(citees) == attendu and total == len(fichiers_pack),
+                     f"l'audit annonce {attendu}/{total} inspectées, "
+                     f"{len(citees)} citées sur {len(fichiers_pack)} au pack"
+                     if len(citees) != attendu or total != len(fichiers_pack)
+                     else f"{len(citees)}/{total} images inspectées")
+        # Toute image sur liste noire doit etre justifiee dans l'audit.
+        absentes = sorted(set(IMAGES_DEFECTUEUSES) - citees)
+        verifier("liste noire documentée dans l'audit", not absentes,
+                 f"{', '.join(absentes)} sur liste noire sans justification écrite"
+                 if absentes else f"{len(IMAGES_DEFECTUEUSES)} défauts documentés")
 
 
 # --------------------------------------------------------------- 7. assemblage

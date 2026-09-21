@@ -31,8 +31,14 @@ ils restent relisibles, corrigeables et traduisibles.
 
 Cette règle vient d'un constat : plusieurs images du pack sont inutilisables à
 cause d'un texte incrusté fautif — un mot inexistant (« Sounitet »), des légendes
-en anglais dans un pack francophone, une étiquette de flacon illisible. Un texte
-généré dans une image ne peut plus être corrigé sans tout régénérer.
+en anglais dans un pack francophone, une étiquette de flacon illisible, « Pupile »
+pour « pupille ». Un texte généré dans une image ne peut plus être corrigé sans
+tout régénérer.
+
+Le texte n'est pas le seul risque : une image peut aussi véhiculer une **erreur de
+fond**. `svt9e_langue.png` reproduit la « carte des saveurs » de la langue, un
+mythe scientifique réfuté. Une illustration fausse s'imprime durablement, et
+l'élève devra la désapprendre.
 
 Le détail est dans [`AUDIT-images-pack.md`](AUDIT-images-pack.md).
 
