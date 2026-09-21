@@ -22,6 +22,7 @@ Contrôles effectués :
 
 import glob
 import json
+import io
 import os
 import re
 import unicodedata
@@ -422,6 +423,34 @@ def controle_note_ecarts():
              if doublons else f"{len(identifiants)} identifiants distincts")
 
 
+def controle_liens():
+    """Verifie que les liens internes des documents d'entree resolvent.
+
+    Le README et la note de synthese renvoient vers des fichiers du depot.
+    Un fichier renomme casse ces liens en silence : rien ne le signale, et le
+    lecteur tombe sur une page absente.
+    """
+    print("\n\033[1m10. Liens internes\033[0m")
+    for fichier in ("README.md", "Note-de-synthese-ecarts-SVT-T9.md",
+                    "scripts/README-verifier-manuel.md"):
+        chemin = os.path.join(RACINE, fichier)
+        if not os.path.exists(chemin):
+            continue
+        with io.open(chemin, encoding="utf-8") as f:
+            texte = f.read()
+        casses = []
+        for m in re.finditer(r"\[[^\]]+\]\(([^)]+)\)", texte):
+            cible = m.group(1)
+            if cible.startswith(("http://", "https://", "#", "mailto:")):
+                continue
+            cible = cible.split("#")[0]
+            if cible and not os.path.exists(os.path.join(RACINE, cible)):
+                casses.append(cible)
+        verifier(f"liens de {fichier}", not casses,
+                 f"cible(s) absente(s) : {', '.join(sorted(set(casses)))}"
+                 if casses else "toutes les cibles existent")
+
+
 def main():
     print("\033[1m" + "=" * 62)
     print("CONTRÔLE QUALITÉ — Manuel SVT T9")
@@ -436,6 +465,7 @@ def main():
     controle_assemblage(seances)
     controle_non_regression(seances)
     controle_note_ecarts()
+    controle_liens()
 
     ok = sum(1 for _, r, _ in resultats if r)
     total = len(resultats)

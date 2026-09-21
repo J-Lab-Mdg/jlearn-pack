@@ -20,6 +20,7 @@ Rejoue en une commande tous les contrôles menés pendant la rédaction. Sort en
 | 7 | Assemblage | `Manuel-SVT-T9-complet.md` désynchronisé des fichiers d'unité |
 | 8 | Non-régression pédagogique | retour d'un des trois défauts du manuel d'origine |
 | 9 | Cohérence de la note d'écarts | compteurs désynchronisés, identifiant en double |
+| 10 | Liens internes | lien du README ou de la note pointant vers un fichier absent |
 
 Le contrôle 6 vérifie en outre que le décompte d'images annoncé par
 `AUDIT-images-pack.md` est **retrouvable dans le document** et que toute image
@@ -60,6 +61,7 @@ Un vérificateur qui ne détecte jamais rien ne sert à rien. Six régressions o
 | Écart ajouté sans mise à jour des compteurs | contrôle 9 |
 | Identifiant d'écart en double | contrôle 9 |
 | Total en prose désynchronisé du tableau | contrôle 9 |
+| Lien du README pointant vers un fichier renommé | contrôle 10 |
 | Image défectueuse insérée dans une séance | contrôle 6 |
 | Décompte de l'audit d'images faussé | contrôle 6 |
 | Liste noire sans justification écrite | contrôle 6 |

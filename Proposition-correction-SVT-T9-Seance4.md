@@ -8,6 +8,27 @@ Séance servant de **gabarit de référence** : une fois validée, les 40 autres
 
 ---
 
+> ## ⚠️ Document d'étape — ne pas suivre comme consigne
+>
+> Ce fichier a joué son rôle : il a servi de **gabarit soumis à validation**
+> avant la réécriture des 51 séances. Il est conservé pour mémoire de la
+> démarche, mais **deux de ses prescriptions ont été abandonnées depuis**,
+> et il ne doit plus servir de référence.
+>
+> | Ce document prescrit | Le manuel livré applique |
+> |---|---|
+> | Colonne 1 = « **Étapes et Durée** » (§ B) | « **Étapes** » — la durée étant laissée vide, l'intitulé complet annoncerait une colonne vide |
+> | Durée = « **50 min** », répartie 5 / 37 / 8 (§ B, § D-2) | Champ **vide** (`____________`), à renseigner par l'enseignant |
+>
+> Le manuel donne désormais, en page de garde, un **tableau de répartition du
+> volume horaire** par unité : c'est lui qui fait foi pour le minutage, et non
+> le calcul « 10 h / 12 séances » proposé ici.
+>
+> **Référence unique et à jour : `Manuel-SVT-T9-complet.md`.** Les écarts
+> assumés sont justifiés dans `Note-de-synthese-ecarts-SVT-T9.md`.
+
+---
+
 ## A. Décisions prises et justification
 
 | Point | Décision | Source |
