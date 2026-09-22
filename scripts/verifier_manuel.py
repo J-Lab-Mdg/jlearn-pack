@@ -372,6 +372,49 @@ def controle_non_regression(seances):
              f"seance(s) {orphelines} annoncent un schema sans image"
              if orphelines else f"{len(annonces)} annonce(s), tous fournis")
 
+    # Defaut 4 : l'audit (chantier P0) exigeait de remonter chaque exercice de
+    # la section EXERCICES a au moins 4 items. Sans ce controle, une reecriture
+    # ulterieure pourrait redescendre un exercice a 2 ou 3 items sans que rien
+    # ne le signale. Les seances de revision et d'examen sont hors perimetre :
+    # leur structure est celle d'un sujet, pas d'une section d'entrainement.
+    pat_item = re.compile(r"\b\d+\.\s")
+
+    def nb_items(bloc):
+        """Compte les items d'un exercice, quelle que soit sa forme.
+
+        Trois formes coexistent dans le manuel et sont toutes legitimes :
+        les items numerotes (« 1. … 2. … »), les listes d'elements a ranger
+        ou a classer, separees par «  ·  », et les lignes de tableau. Ne
+        compter que la premiere forme ferait passer un exercice de remise en
+        ordre a 5 elements pour un exercice vide.
+        """
+        # « Cite quatre ressources… » : l'attendu est dans la consigne, pas
+        # dans une numerotation. Un tel exercice est conforme sans etre liste.
+        m = re.search(r"\b(quatre|cinq|six|sept|huit)\b", bloc, flags=re.I)
+        if m:
+            return {"quatre": 4, "cinq": 5, "six": 6,
+                    "sept": 7, "huit": 8}[m.group(1).lower()]
+        n_num = len(pat_item.findall(bloc))
+        n_pts = max((len(l.split(" · ")) for l in bloc.splitlines()
+                     if " · " in l), default=0)
+        n_tab = max(0, len([l for l in bloc.splitlines()
+                            if l.strip().startswith("|")]) - 2)
+        return max(n_num, n_pts, n_tab)
+
+    maigres = []
+    for n, corps in sorted(seances.items()):
+        sec = re.search(r"(### Section EXERCICES|^## EXERCICES)(.*?)(### CORRIG|^## CORRIG)",
+                        corps, flags=re.S | re.M)
+        if not sec:
+            continue
+        for bloc in re.split(r"(?=\*\*Exercice \d)", sec.group(2))[1:]:
+            num = re.match(r"\*\*Exercice (\d+)", bloc).group(1)
+            if nb_items(bloc) < 4:
+                maigres.append(f"S{n}/Ex{num}")
+    verifier("chaque exercice compte au moins 4 items", not maigres,
+             ", ".join(maigres[:8]) if maigres
+             else "tous les exercices des sections EXERCICES")
+
 
 def controle_note_ecarts():
     """Verifie que les compteurs de la note de synthese restent coherents.

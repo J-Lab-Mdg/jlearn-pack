@@ -218,7 +218,7 @@ Un repas simple et complet peut être composé de riz, de haricots, de brèdes e
 4. Une ration variée est préférable à une ration composée d'un seul aliment.
 5. Tout le monde a besoin de la même ration.
 
-**Exercice 3 (6 points)** — Voici le repas de Koto : riz, brèdes, huile. 1. Quel groupe manque ? 2. Quel aliment local pourrait-il ajouter ? 3. Pourquoi ce groupe est-il indispensable à son âge ?
+**Exercice 3 (6 points)** — Voici le repas de Koto : riz, brèdes, huile. 1. Quel groupe manque ? 2. Quel aliment local pourrait-il ajouter ? 3. Pourquoi ce groupe est-il indispensable à son âge ? 4. Koto affirme : « J'ai trois aliments dans mon assiette, donc ma ration est variée. » Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse :
 1. La ration alimentaire couvre : **A.** un repas **B.** une journée **C.** une semaine
@@ -234,7 +234,7 @@ Un repas simple et complet peut être composé de riz, de haricots, de brèdes e
 
 **Ex. 2** — 1. **V** · 2. **F** — ils **protègent contre les maladies** ; ce sont les énergétiques qui donnent de la force · 3. **V** · 4. **V** · 5. **F** — la ration **dépend de l'âge, de l'activité et de l'état de santé**
 
-**Ex. 3** — 1. Il manque le groupe des **aliments bâtisseurs**. 2. Il peut ajouter du **poisson**, des **haricots** ou un **œuf**. 3. À son âge, **le corps grandit** : il a besoin de matériaux pour **construire ses muscles et ses os**.
+**Ex. 3** — 1. Il manque le groupe des **aliments bâtisseurs**. 2. Il peut ajouter du **poisson**, des **haricots** ou un **œuf**. 3. À son âge, **le corps grandit** : il a besoin de matériaux pour **construire ses muscles et ses os**. 4. Il se trompe : la variété ne se compte pas en **nombre d'aliments** mais en **nombre de groupes** représentés. Le riz et l'huile appartiennent au **même groupe**, les énergétiques : son repas ne couvre donc que **deux groupes sur trois**.
 
 **Ex. 4** — 1. **B** · 2. **C** · 3. **C** · 4. **B**
 
@@ -310,7 +310,7 @@ Un test simple permet de repérer les lipides : frotter l'aliment sur du papier.
 5. Les …… construisent les muscles.
 6. Les sucres sont des …….
 
-**Exercice 3 (6 points)** — On frotte trois aliments sur du papier : l'arachide laisse une tache grasse, le riz n'en laisse pas, le poisson non plus. 1. Que contient l'arachide ? 2. Pourquoi le riz ne laisse-t-il pas de tache ? 3. Le poisson est-il dépourvu de tout nutriment ? Justifie.
+**Exercice 3 (6 points)** — On frotte trois aliments sur du papier : l'arachide laisse une tache grasse, le riz n'en laisse pas, le poisson non plus. 1. Que contient l'arachide ? 2. Pourquoi le riz ne laisse-t-il pas de tache ? 3. Le poisson est-il dépourvu de tout nutriment ? Justifie. 4. Ce test permet-il de savoir si le riz contient des protéines ? Explique.
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse :
 1. L'amidon est : **A.** un lipide **B.** un glucide **C.** une protéine
@@ -326,7 +326,7 @@ Un test simple permet de repérer les lipides : frotter l'aliment sur du papier.
 
 **Ex. 2** — 1. **nutriment** · 2. **amidon** · 3. **glucose** · 4. **lipides** · 5. **protéines** · 6. **glucides**
 
-**Ex. 3** — 1. L'arachide contient des **lipides** (matières grasses). 2. Le riz est riche en **amidon**, un **glucide** : il ne contient presque pas de matière grasse. 3. **Non** : il ne contient pas de lipides en quantité, mais il est **riche en protéines**, qui ne laissent pas de tache grasse.
+**Ex. 3** — 1. L'arachide contient des **lipides** (matières grasses). 2. Le riz est riche en **amidon**, un **glucide** : il ne contient presque pas de matière grasse. 3. **Non** : il ne contient pas de lipides en quantité, mais il est **riche en protéines**, qui ne laissent pas de tache grasse. 4. **Non.** Le test du papier ne révèle **que les lipides**. L'absence de tache prouve seulement l'absence de matière grasse : elle ne dit **rien** sur les protéines, qu'il faudrait mettre en évidence par un autre test.
 
 **Ex. 4** — 1. **B** · 2. **A** · 3. **B** · 4. **B**
 
@@ -405,7 +405,7 @@ Le corps perd de l'eau en permanence — par l'urine, la sueur et la respiration
 5. L'eau permet d'éliminer les déchets.
 6. Les sels minéraux sont des nutriments directs.
 
-**Exercice 3 (6 points)** — Rakoto se sent souvent fatigué et son teint est pâle. Il mange surtout du riz et très peu de brèdes, de viande ou de poisson. 1. Quel sel minéral risque de lui manquer ? 2. Comment s'appelle ce trouble ? 3. Propose deux aliments locaux pour y remédier.
+**Exercice 3 (6 points)** — Rakoto se sent souvent fatigué et son teint est pâle. Il mange surtout du riz et très peu de brèdes, de viande ou de poisson. 1. Quel sel minéral risque de lui manquer ? 2. Comment s'appelle ce trouble ? 3. Propose deux aliments locaux pour y remédier. 4. Sa sœur lui conseille de manger davantage de riz pour reprendre des forces. Ce conseil est-il adapté ? Justifie.
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse :
 1. La vitamine C se trouve surtout dans : **A.** l'huile **B.** les fruits frais **C.** le riz blanc
@@ -421,7 +421,7 @@ Le corps perd de l'eau en permanence — par l'urine, la sueur et la respiration
 
 **Ex. 2** — 1. **F** — elles **n'apportent aucune énergie**, elles font fonctionner l'organisme · 2. **V** · 3. **F** — le corps **ne sait pas les fabriquer**, elles viennent de l'alimentation · 4. **V** · 5. **V** · 6. **V**
 
-**Ex. 3** — 1. Le **fer**. 2. C'est l'**anémie**. 3. Il peut manger davantage de **brèdes (anana)** et de **poisson** ou de **haricots**.
+**Ex. 3** — 1. Le **fer**. 2. C'est l'**anémie**. 3. Il peut manger davantage de **brèdes (anana)** et de **poisson** ou de **haricots**. 4. **Non.** Le riz est un aliment **énergétique** : il apporte de la force sur le moment, mais il est **pauvre en fer**. Augmenter le riz ne corrigera donc pas la cause de la fatigue ; il faut des aliments **riches en fer**.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **C**
 
@@ -622,7 +622,7 @@ Les besoins diffèrent entre hommes et femmes. Ils augmentent également lors de
 5. Si les apports sont insuffisants, le corps puise dans ses …….
 6. Pendant la grossesse, les besoins …….
 
-**Exercice 3 (6 points)** — Deux frères de 14 ans : Hery travaille aux champs le matin, Tiana révise assis toute la journée. 1. Lequel a les besoins les plus élevés ? 2. Quel facteur explique la différence ? 3. Leur métabolisme de base est-il très différent ? Justifie.
+**Exercice 3 (6 points)** — Deux frères de 14 ans : Hery travaille aux champs le matin, Tiana révise assis toute la journée. 1. Lequel a les besoins les plus élevés ? 2. Quel facteur explique la différence ? 3. Leur métabolisme de base est-il très différent ? Justifie. 4. Tiana en conclut qu'il peut se contenter de très peu de nourriture puisqu'il reste assis. Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse :
 1. Le métabolisme de base correspond à l'énergie dépensée : **A.** pendant le sport **B.** au repos **C.** pendant les repas
@@ -638,7 +638,7 @@ Les besoins diffèrent entre hommes et femmes. Ils augmentent également lors de
 
 **Ex. 2** — 1. **37** · 2. **métabolisme de base** · 3. **croissance** · 4. **activité** · 5. **réserves** · 6. **augmentent**
 
-**Ex. 3** — 1. **Hery**. 2. L'**activité physique** : le travail aux champs dépense beaucoup plus d'énergie que la révision assise. 3. **Non**, leur métabolisme de base est **voisin** : même âge et corpulence proche. C'est la **dépense liée à l'activité** qui les sépare, pas le plancher vital.
+**Ex. 3** — 1. **Hery**. 2. L'**activité physique** : le travail aux champs dépense beaucoup plus d'énergie que la révision assise. 3. **Non**, leur métabolisme de base est **voisin** : même âge et corpulence proche. C'est la **dépense liée à l'activité** qui les sépare, pas le plancher vital. 4. Il se trompe. Même immobile, son corps **dépense en permanence** de l'énergie pour faire battre le cœur, respirer, maintenir sa température et alimenter son cerveau : c'est le **métabolisme de base**, qui représente la plus grande part de la dépense quotidienne. Une ration trop faible le laisserait **fatigué et incapable de se concentrer**.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **A** · 4. **B**
 
@@ -715,7 +715,7 @@ Un total correct ne garantit pas pour autant une bonne alimentation : une journ�
 4. Quel est le total ? 5. Quel nutriment apporte le plus d'énergie ici ? 6. Est-ce celui dont la masse est la plus élevée ?
 
 **Exercice 3 (6 points)** — Journée de Fara (14 ans, très active) : 280 g de glucides, 75 g de protéines, 85 g de lipides.
-1. Calcule l'apport total. 2. Le besoin d'une adolescente très active est d'environ 2 700 kcal : l'apport suffit-il ? 3. Justifie ta réponse par la comparaison des deux nombres.
+1. Calcule l'apport total. 2. Le besoin d'une adolescente très active est d'environ 2 700 kcal : l'apport suffit-il ? 3. Justifie ta réponse par la comparaison des deux nombres. 4. Quelle part de l'apport total les lipides représentent-ils ? Donne le résultat en pourcentage, arrondi à l'unité.
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse :
 1. 50 g de lipides apportent : **A.** 200 kcal **B.** 450 kcal **C.** 500 kcal
@@ -731,7 +731,7 @@ Un total correct ne garantit pas pour autant une bonne alimentation : une journ�
 
 **Ex. 2** — 1. 110 × 4 = **440 kcal** · 2. 30 × 4 = **120 kcal** · 3. 20 × 9 = **180 kcal** · 4. 440 + 120 + 180 = **740 kcal** · 5. Les **glucides** (440 kcal) · 6. **Oui** ici, car leur masse est la plus grande ; mais 20 g de lipides apportent déjà 180 kcal, plus que 30 g de protéines (120 kcal) — **la masse la plus élevée ne donne pas toujours le plus d'énergie**.
 
-**Ex. 3** — 1. (280 × 4) + (75 × 4) + (85 × 9) = 1120 + 300 + 765 = **2 185 kcal**. 2. **Non**, l'apport ne suffit pas. 3. 2 185 kcal est **inférieur** à 2 700 kcal : il manque environ **515 kcal**. Fara doit augmenter sa ration, par exemple en ajoutant des aliments énergétiques à son goûter.
+**Ex. 3** — 1. (280 × 4) + (75 × 4) + (85 × 9) = 1120 + 300 + 765 = **2 185 kcal**. 2. **Non**, l'apport ne suffit pas. 3. 2 185 kcal est **inférieur** à 2 700 kcal : il manque environ **515 kcal**. Fara doit augmenter sa ration, par exemple en ajoutant des aliments énergétiques à son goûter. 4. Les lipides apportent **765 kcal** sur **2 185 kcal** : 765 ÷ 2 185 = 0,350… soit environ **35 %** de l'apport total.
 
 **Ex. 4** — 1. **B** — 50 × 9 = 450 · 2. **B** · 3. **B** · 4. **B**
 
@@ -813,7 +813,8 @@ Varier d'un jour à l'autre à l'intérieur de chaque groupe évite la monotonie
 5. La boisson qui accompagne les repas est l'…….
 6. Il faut …… les aliments d'un jour à l'autre.
 
-**Exercice 3 (6 points)** — Compose un menu d'une journée (4 repas) pour un adolescent, en n'utilisant que des aliments disponibles à Madagascar. Pour chaque repas, indique un féculent, un bâtisseur et un protecteur.
+**Exercice 3 (6 points)** — Compose un menu d'une journée pour un adolescent, en n'utilisant que des aliments disponibles à Madagascar. Pour chaque repas, indique un féculent, un bâtisseur et un protecteur.
+1. Le petit-déjeuner. 2. Le déjeuner. 3. Le goûter et le dîner. 4. Explique pourquoi le petit-déjeuner ne doit pas être sauté avant une journée de classe.
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse :
 1. Dans une assiette équilibrée, les légumes occupent : **A.** un quart **B.** la moitié **C.** un huitième
@@ -829,7 +830,7 @@ Varier d'un jour à l'autre à l'intérieur de chaque groupe évite la monotonie
 
 **Ex. 2** — 1. **moitié** · 2. **quart** · 3. **trois** · 4. **petit-déjeuner** · 5. **eau** · 6. **varier**
 
-**Ex. 3** — Exemple accepté : *Petit-déjeuner* — vary sosoa (féculent), lait (bâtisseur), mangue (protecteur). *Déjeuner* — riz, tsaramaso, anana. *Goûter* — mofo gasy, arachides, banane. *Dîner* — riz, trondro, légumes. **Tout menu associant les trois groupes à chaque repas est valable.**
+**Ex. 3** — Exemple accepté : *Petit-déjeuner* — vary sosoa (féculent), lait (bâtisseur), mangue (protecteur). *Déjeuner* — riz, tsaramaso, anana. *Goûter* — mofo gasy, arachides, banane. *Dîner* — riz, trondro, légumes. **Tout menu associant les trois groupes à chaque repas est valable.** 4. Après la nuit, le corps a épuisé ses réserves facilement mobilisables. Sans petit-déjeuner, l'élève manque d'énergie **pour son cerveau** : l'attention et la mémoire baissent en fin de matinée, et la faim détourne de la leçon.
 
 **Ex. 4** — 1. **B** · 2. **A** · 3. **C** · 4. **B**
 
@@ -993,7 +994,7 @@ La prévention repose sur des gestes accessibles : **varier** les aliments à l'
 6. Une alimentation …… limite le risque de carence.
 
 **Exercice 3 (6 points)** — Dans un village, plusieurs enfants sont plus petits que la moyenne de leur âge et tombent souvent malades. Leur alimentation repose surtout sur le riz et le manioc.
-1. Quelle forme de malnutrition est la plus probable ? 2. Quels groupes d'aliments manquent ? 3. Propose trois mesures concrètes pour améliorer la situation.
+1. Quelle forme de malnutrition est la plus probable ? 2. Quels groupes d'aliments manquent ? 3. Propose trois mesures concrètes pour améliorer la situation. 4. Ces enfants mangent pourtant à leur faim. Comment expliquer qu'ils soient tout de même mal nourris ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse :
 1. La malnutrition aiguë se reconnaît à : **A.** une taille faible pour l'âge **B.** un poids faible pour la taille **C.** un excès de poids
@@ -1009,7 +1010,7 @@ La prévention repose sur des gestes accessibles : **varier** les aliments à l'
 
 **Ex. 2** — 1. **chronique** · 2. **aiguë** · 3. **cachée** · 4. **anémie** · 5. **iodé** · 6. **variée**
 
-**Ex. 3** — 1. Une **malnutrition chronique** accompagnée de **carences en micronutriments**. 2. Il manque les **aliments bâtisseurs** (protéines) et les **protecteurs** (vitamines, sels minéraux). 3. Ajouter des **haricots ou du poisson** aux repas ; intégrer chaque jour des **brèdes et des fruits** ; utiliser du **sel iodé** et **surveiller la croissance** des jeunes enfants.
+**Ex. 3** — 1. Une **malnutrition chronique** accompagnée de **carences en micronutriments**. 2. Il manque les **aliments bâtisseurs** (protéines) et les **protecteurs** (vitamines, sels minéraux). 3. Ajouter des **haricots ou du poisson** aux repas ; intégrer chaque jour des **brèdes et des fruits** ; utiliser du **sel iodé** et **surveiller la croissance** des jeunes enfants. 4. Parce que **manger à sa faim n'est pas manger équilibré**. Le riz et le manioc calment la faim et apportent de l'énergie, mais ils sont **pauvres en protéines, en vitamines et en sels minéraux**. La quantité est suffisante, c'est la **qualité et la variété** qui font défaut.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **A** · 4. **B**
 
@@ -1093,7 +1094,7 @@ Dans les deux cas, le menu d'appoint ne se contente pas d'ajouter ou de retirer 
 **Exercice 3 (6 points)** — Deux situations. **A** : un enfant de 8 ans en malnutrition aiguë. **B** : un adulte en surpoids peu actif.
 1. Pour A, cite deux aliments à privilégier et la fréquence des repas.
 2. Pour B, cite deux aliments à limiter et une mesure non alimentaire.
-3. Qu'ont en commun ces deux menus d'appoint ?
+3. Qu'ont en commun ces deux menus d'appoint ? 4. Pour B, pourquoi supprimer complètement les matières grasses serait-il une mauvaise idée ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse :
 1. Le surpoids résulte d'un apport : **A.** inférieur à la dépense **B.** supérieur à la dépense **C.** égal à la dépense
@@ -1109,7 +1110,7 @@ Dans les deux cas, le menu d'appoint ne se contente pas d'ajouter ou de retirer 
 
 **Ex. 2** — 1. **F** — il est **stocké sous forme de graisse** · 2. **V** · 3. **V** · 4. **F** — il doit être **riche en protéines** pour reconstruire l'organisme · 5. **V** · 6. **F** — il est **adapté** à chaque situation
 
-**Ex. 3** — 1. Pour A : **arachides** et **œufs** (ou lait, haricots, poisson), en **plusieurs petits repas** par jour. 2. Pour B : limiter les **matières grasses** et les **produits sucrés** ; reprendre une **activité physique** régulière. 3. Tous deux visent à **rétablir l'équilibre entre les groupes d'aliments**, en s'adaptant à l'état de la personne — l'un en enrichissant, l'autre en allégeant.
+**Ex. 3** — 1. Pour A : **arachides** et **œufs** (ou lait, haricots, poisson), en **plusieurs petits repas** par jour. 2. Pour B : limiter les **matières grasses** et les **produits sucrés** ; reprendre une **activité physique** régulière. 3. Tous deux visent à **rétablir l'équilibre entre les groupes d'aliments**, en s'adaptant à l'état de la personne — l'un en enrichissant, l'autre en allégeant. 4. Parce que les lipides ne sont pas seulement une réserve d'énergie : ils **entrent dans la composition des cellules** et permettent l'utilisation de certaines vitamines. Il faut donc **les limiter, non les supprimer** — c'est l'excès qui pose problème, pas leur présence.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -6039,7 +6040,9 @@ Le manuel compte **45 illustrations**. Aucune ne porte de texte incrusté : les 
 
 **Progression** : les séances s'enchaînent sans redite — la 2 s'appuie sur les groupes vus en 1, la 6 réutilise les coefficients de la 4, la 8 exploite les calculs de la 6, la 10 complète la 9. C'est la fin du partage de contenu entre séances voisines constaté dans l'audit.
 
-**Chiffres vérifiés** : tous les calculs ont été contrôlés par script, y compris le menu de la séance 7 (2 210 kcal, réparti 55 % / 15 % / 30 %, dans la plage 2 200-2 900 kcal d'un adolescent).
+**Chiffres vérifiés** : tous les calculs ont été contrôlés par script, y compris le menu de la séance 7 (2 210 kcal, réparti 55 % / 15 % / 30 %, dans la plage 2 200-2 900 kcal d'un adolescent) et la part des lipides de la séance 6 (765 ÷ 2 185 = 35,0 %, arrondi à 35 %).
+
+**Quatrième item ajouté aux 9 études de cas** (chantier P0, exercice 3). Les consignes 1 à 3 restaient descriptives ; le nouvel item demande à l'élève de **réfuter une affirmation plausible** — « trois aliments donc ration variée » (S1), « le test du papier révèle les protéines » (S2), « manger plus de riz contre la fatigue » (S3), « assis donc besoins nuls » (S5), « ils mangent à leur faim » (S9), « supprimer toutes les matières grasses » (S10). Ce sont les erreurs réellement commises en classe, pas des négations artificielles.
 
 ---
 
