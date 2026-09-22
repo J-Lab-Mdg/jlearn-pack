@@ -502,6 +502,9 @@ Prenons le citron. S'il est **placé dans la bouche**, l'acide stimule directeme
 
 ### Page LEÇON
 
+![Le mouvement volontaire est commandé par le cerveau.](img_seance29.png)
+
+
 **<span style="color:#C00000">Le mouvement volontaire</span>**
 
 **<span style="color:#1E7B34">1. Définition</span>**
@@ -715,6 +718,9 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 
 ### Page LEÇON
 
+![Les catégories de substances psychoactives.](img_seance31.png)
+
+
 **<span style="color:#C00000">Les catégories de substances psychoactives</span>**
 
 **<span style="color:#1E7B34">1. Définition</span>**
@@ -816,6 +822,9 @@ Deux conséquences. D'abord, une substance psychoactive perturbe un organe encor
 | **III. ÉVALUATION** | **Ex. 1** — Cite trois effets sur l'organisme et trois effets sur la vie sociale.<br><br>**Ex. 2** — Explique pourquoi conduire après avoir consommé de l'alcool est particulièrement dangereux, en te servant de ce que tu sais du système nerveux. | **Ex. 1** : Organisme : atteinte du foie, cancers, dépendance, troubles de la mémoire. Vie sociale : accidents, échec scolaire, perte d'emploi, violences, appauvrissement.<br><br>**Ex. 2** : L'alcool est un **sédatif** : il ralentit l'activité du système nerveux. Or conduire exige des **réflexes rapides** et un **jugement sûr**. Le temps de réaction s'allonge, la distance de freinage augmente, et le conducteur **surestime ses capacités** — il se croit apte alors qu'il ne l'est plus, ce qui aggrave encore le risque. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Effets des substances psychoactives sur l'organisme et la vie sociale.](img_seance32.png)
+
 
 **<span style="color:#C00000">Les effets sur l'organisme et sur la vie sociale</span>**
 
@@ -923,6 +932,9 @@ Juger ou rejeter une personne dépendante ne fait qu'aggraver son isolement, don
 | **III. ÉVALUATION** | **Ex. 1** — Cite quatre règles d'hygiène du système nerveux.<br><br>**Ex. 2** — Présente en cinq lignes un mini-projet de lutte contre les substances psychoactives réalisable dans ton école : objectif, public visé, action, moyens. | **Ex. 1** : dormir suffisamment et à heures régulières ; manger équilibré, ne pas sauter le petit-déjeuner ; pratiquer une activité physique ; éviter les substances psychoactives ; alterner travail et repos.<br><br>**Ex. 2** : projet cohérent et réalisable — par exemple une exposition d'affiches réalisées par la classe, présentée aux élèves des autres niveaux, avec l'appui d'un agent de santé invité. | Évaluation écrite, mini-projet | Cahier, papier | |
 
 ### Page LEÇON
+
+![Hygiène du système nerveux : sommeil, alimentation et activité physique.](img_seance33.png)
+
 
 **<span style="color:#C00000">Hygiène du système nerveux et prévention</span>**
 

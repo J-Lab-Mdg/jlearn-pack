@@ -79,6 +79,9 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 
 ### Page LEÇON
 
+![L'appareil génital féminin : repères anatomiques.](img_seance36.png)
+
+
 **<span style="color:#C00000">La fistule obstétricale : définition et symptômes</span>**
 
 **<span style="color:#1E7B34">1. Ce qu'est une fistule</span>**
@@ -197,6 +200,9 @@ C'est précisément pour cela que cette leçon existe : une élève qui sait qu'
 | **III. ÉVALUATION** | **Ex. 1** — Cite trois conséquences de la fistule non traitée.<br><br>**Ex. 2** — Explique pourquoi la consultation prénatale peut éviter une fistule, alors qu'elle a lieu **avant** l'accouchement. | **Ex. 1** : (trois parmi) incontinence chronique, infections urinaires répétées, lésions cutanées, atteinte rénale, anémie, infertilité, isolement social.<br><br>**Ex. 2** : Parce qu'elle **anticipe**. Le personnel de santé mesure le bassin, suit la croissance du fœtus et repère les grossesses à risque. Il peut alors **programmer** l'accouchement en maternité, voire une césarienne, avant que le travail ne se prolonge. Prévenir suppose d'agir avant le danger, pas pendant. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Le suivi prénatal permet de prévenir les complications de l'accouchement.](img_seance37.png)
+
 
 **<span style="color:#C00000">Causes, conséquences et prévention de la fistule</span>**
 
@@ -437,6 +443,9 @@ Cette séance ne cherche pas à faire peur. Elle transmet trois informations pr�
 
 ### Page LEÇON
 
+![L'utérus : le corps et le col.](img_seance39.png)
+
+
 **<span style="color:#C00000">Le cancer du col de l'utérus : anatomie, causes et symptômes</span>**
 
 **<span style="color:#1E7B34">1. Où se trouve le col de l'utérus</span>**
@@ -568,6 +577,9 @@ Quand les symptômes apparaissent, la maladie a déjà progressé.
 | **III. ÉVALUATION** | **Ex. 1** — Explique pourquoi on vaccine les filles entre 9 et 14 ans.<br><br>**Ex. 2** — Une femme vaccinée dit : « Je n'ai plus besoin de dépistage. » Réponds-lui. | **Ex. 1** : Parce que le vaccin **prépare les défenses avant le contact** avec le virus. Il protège d'une infection à venir, il ne soigne pas une infection déjà installée. On vaccine donc avant le début de la vie sexuelle, période où la plupart des filles n'ont pas encore rencontré le virus.<br><br>**Ex. 2** : Elle se trompe. Les vaccins protègent contre les types de HPV les plus dangereux, mais **pas contre tous**. Une femme vaccinée conserve donc un risque, plus faible mais réel. Le dépistage reste nécessaire : c'est lui qui détecte une lésion éventuelle à temps. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Dépistage et vaccination : deux protections complémentaires.](img_seance40.png)
+
 
 **<span style="color:#C00000">Dépistage, vaccination et prévention</span>**
 
@@ -719,6 +731,9 @@ Les outils existent donc. Ce qui manque encore, dans beaucoup de régions du mon
 | « Ne tombez pas enceinte, c'est dangereux. » | inexact : une grossesse **suivie** n'est pas un danger ; le message vise l'âge précoce et l'absence de suivi |
 
 ### Page LEÇON
+
+![Concevoir une affiche de sensibilisation pour son école.](img_seance41.png)
+
 
 **<span style="color:#C00000">Concevoir un message de sensibilisation</span>**
 
