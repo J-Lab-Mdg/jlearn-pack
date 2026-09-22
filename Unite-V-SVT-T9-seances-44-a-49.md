@@ -127,6 +127,7 @@ Elles se distinguent nettement des deux autres familles : elles ne sont pas née
 1. L'expression « semi-précieuse » est-elle correcte ? Comment dit-on aujourd'hui ?
 2. L'argument « semi-précieuse donc bon marché » est-il valable ? Justifie.
 3. Cite **deux** critères qui feront réellement le prix de cette tourmaline.
+4. Le touriste demande si la perle qu'il a achetée la veille appartient à la même famille. Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Le corail est une pierre : **A.** précieuse **B.** fine **C.** organique
@@ -143,6 +144,7 @@ Elles se distinguent nettement des deux autres familles : elles ne sont pas née
 **Ex. 2** — 1. **quatre** · 2. **corindon** · 3. **chrome** · 4. **résistance** · 5. **organique** · 6. **convention**
 
 **Ex. 3** — 1. **Non**, le terme est abandonné car il laisse croire à une demi-valeur ; on dit **pierre fine**. 2. **Non** : le classement est une convention commerciale, pas une échelle de prix. Une belle tourmaline peut valoir plus cher qu'un saphir médiocre. 3. (deux parmi) la **qualité de la couleur**, la **pureté** (absence d'inclusions visibles), le **poids en carats**, la **qualité de la taille**.
+4. **Non.** La tourmaline est un **minéral**, formé dans la roche. La perle est une **pierre organique** : elle est produite par un **être vivant**, un mollusque. Elle est d'ailleurs bien plus **tendre** et se raye facilement. Les trois familles se distinguent par leur **origine**, non par leur prix.
 
 **Ex. 4** — 1. **C** · 2. **B** · 3. **B** · 4. **B**
 
@@ -244,6 +246,7 @@ Le grenat, également rouge, aurait été rayé par la topaze — sa dureté ne 
 1. Que déduit-on du fait qu'elle raye le quartz ?
 2. Que déduit-on du fait qu'elle est rayée par le corindon ?
 3. Entre quelles valeurs se situe sa dureté ? Propose un nom de pierre compatible avec ce résultat.
+4. L'élève en conclut que sa pierre est « incassable puisqu'elle est très dure ». Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. La dureté mesure la résistance : **A.** aux chocs **B.** à la rayure **C.** à la chaleur
@@ -263,6 +266,7 @@ Le grenat, également rouge, aurait été rayé par la topaze — sa dureté ne 
 1. Qu'elle est **plus dure que le quartz**, donc que sa dureté dépasse **7**.
 2. Qu'elle est **moins dure que le corindon**, donc inférieure à **9**.
 3. Sa dureté se situe **entre 7 et 9**, vraisemblablement autour de **8** : la **topaze** correspond à ce résultat. *(Le béryl jaune — héliodore — dont la dureté avoisine 7,5 à 8, est également accepté si l'élève le justifie.)*
+4. Il confond **dureté** et **solidité**. La dureté mesure la résistance à la **rayure**, pas au **choc**. La topaze est très dure mais possède un **clivage** net : un coup bien placé peut la fendre d'un seul plan. Le diamant lui-même, le plus dur des minéraux, se brise sous un marteau. Une pierre dure se raye difficilement, elle ne devient pas incassable pour autant.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -364,6 +368,7 @@ Une question se pose alors, et elle appartient pleinement à cette leçon : **à
 1. Cette affirmation est-elle exacte ? Justifie.
 2. Explique en trois étapes comment les saphirs sont arrivés dans ce sable.
 3. Comment appelle-t-on ce type de gisement ?
+4. Pourquoi trouve-t-on surtout des gemmes, et non n'importe quel minéral, dans ces graviers ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Le gisement d'Ilakaka est un gisement : **A.** primaire **B.** secondaire **C.** souterrain
@@ -383,6 +388,7 @@ Une question se pose alors, et elle appartient pleinement à cette leçon : **à
 1. **Non.** Une gemme ne se forme pas dans le sable : elle cristallise en profondeur, dans la roche, sous forte pression et température.
 2. **Première étape** : les saphirs se forment dans la roche du socle. **Deuxième étape** : sous l'action de la pluie, du soleil et du temps, cette roche se désagrège ; les saphirs, plus durs, sont libérés intacts. **Troisième étape** : les eaux de ruissellement et la rivière les transportent, puis les déposent dans les graviers là où le courant ralentit.
 3. Un **gisement secondaire**, ou **gisement alluvial**.
+4. Parce que le transport par l'eau opère un **tri naturel**. Les minéraux tendres ou fragiles sont **broyés et réduits en poudre** au cours du trajet ; les gemmes, **dures et résistantes**, survivent intactes. Leur **densité élevée** les fait en outre se déposer au même endroit, là où le courant faiblit. La rivière a donc fait le premier travail de sélection à la place du chercheur.
 
 **Ex. 4** — 1. **B** · 2. **A** · 3. **B** · 4. **B**
 
@@ -472,6 +478,7 @@ Le commerce des pierres dites « de soin » existe, et il est important à Madag
 1. L'argument est-il scientifiquement fondé ? Justifie ta réponse.
 2. Quel danger peut présenter une telle affirmation pour une personne malade ?
 3. Un joaillier vend la même pierre pour sa beauté. Son argument est-il, lui, recevable ? Explique la différence entre les deux situations.
+4. Le vendeur ajoute : « Beaucoup de clients m'ont dit se sentir mieux, c'est bien une preuve. » Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Un carat correspond à : **A.** 1 g **B.** 0,2 g **C.** 2 g
@@ -491,6 +498,7 @@ Le commerce des pierres dites « de soin » existe, et il est important à Madag
 1. **Non.** Aucune étude contrôlée n'a mis en évidence d'effet des pierres sur une maladie. Le caractère « naturel » d'une substance ne prouve d'ailleurs jamais son efficacité : beaucoup de produits naturels sont sans effet, et certains sont toxiques.
 2. Elle peut conduire la personne à **retarder ou refuser un véritable traitement**, laissant la maladie s'aggraver.
 3. **Oui, il est recevable.** Le joaillier vend un **objet d'ornement** et l'annonce comme tel : la beauté de la pierre se constate directement. Le premier vendeur, lui, promet un **effet thérapeutique** qu'aucune preuve n'appuie. La différence tient à la nature de la promesse : l'un vend ce que la pierre est, l'autre vend ce qu'elle ne fait pas.
+4. Des témoignages **ne constituent pas une preuve**. Beaucoup de maux, dont les maux de tête, **disparaissent d'eux-mêmes** ; le simple fait de croire à un remède peut par ailleurs soulager passagèrement. Surtout, le vendeur n'entend que les clients satisfaits : ceux pour qui la pierre n'a rien changé ne reviennent pas le lui dire. Pour conclure, il faudrait **comparer** deux groupes semblables, l'un avec la pierre, l'autre sans.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **A** · 4. **B**
 
@@ -586,6 +594,7 @@ Ses inconvénients sont tout aussi nets. Le travail se déroule **dans l'eau et 
 1. Quelle est la proportion de seaux ayant fourni une pierre ? Exprime-la en pourcentage.
 2. Combien de seaux faut-il traiter, en moyenne, pour obtenir une pierre ?
 3. S'ils veulent obtenir 30 pierres, combien de seaux devront-ils traiter au même rythme ?
+4. Le groupe lave environ **10 seaux par heure**. Combien d'heures de travail représente **une seule** pierre ? Que révèle ce chiffre sur ce métier ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Les morts-terrains sont : **A.** les pierres sans valeur **B.** la couche recouvrant le gisement **C.** les outils usés
@@ -605,6 +614,7 @@ Ses inconvénients sont tout aussi nets. Le travail se déroule **dans l'eau et 
 1. 12 ÷ 300 = 0,04 = **4 %**.
 2. 300 ÷ 12 = **25 seaux** en moyenne par pierre.
 3. 30 × 25 = **750 seaux**. *(Vérification : 750 × 4 % = 30 pierres.)*
+4. 25 seaux ÷ 10 seaux par heure = **2,5 heures de travail par pierre**, soit près d'une demi-journée — et encore, la plupart de ces pierres sont de petite taille ou de qualité médiocre. Ce chiffre montre que l'exploitation artisanale est un travail **long, pénible et très incertain** : le revenu dépend du hasard des trouvailles, sans aucune garantie. C'est ce qui rend ces chercheurs vulnérables face aux acheteurs qui fixent les prix.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -697,6 +707,7 @@ La vraie question n'est donc pas seulement « combien peut-on extraire ? », mai
 1. Quelle fraction des rizières du village a été perdue ? Exprime-la en pourcentage.
 2. Si le village pêchait 400 kg de poisson par mois avant l'exploitation, quelle quantité pêche-t-il désormais ?
 3. Les habitants n'ont reçu aucune part des revenus de l'extraction. Explique en quoi cette situation pose un problème de bien commun, et propose **deux** mesures concrètes.
+4. Un responsable affirme : « L'exploitation crée des emplois, cela compense largement. » Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. La turbidité de l'eau empêche surtout : **A.** la lumière de passer **B.** l'eau de couler **C.** le sable de se déposer
@@ -716,6 +727,7 @@ La vraie question n'est donc pas seulement « combien peut-on extraire ? », mai
 1. 2 ÷ 6 = 0,333… soit environ **33 %** des rizières (un tiers).
 2. Une chute de 80 % laisse 20 % des prises : 400 × 20 / 100 = **80 kg par mois**. *(Vérification : la perte est de 400 − 80 = 320 kg, soit bien 80 % de 400.)*
 3. Le village **subit les dommages sans percevoir aucun bénéfice** : l'eau de la rivière, les poissons et la fertilité des sols sont des ressources communes dont il dépend, dégradées au profit d'acteurs extérieurs. **Deux mesures** (parmi) : imposer des **bassins de décantation** avant tout rejet dans la rivière ; **reverser une part des revenus** de l'extraction à la commune ; **remettre en état** les terrains en fin d'exploitation ; **associer les habitants** aux décisions d'ouverture d'un site.
+4. L'argument est **incomplet**. Les emplois créés sont souvent **temporaires** — ils cessent avec le gisement, qui ne se renouvelle pas — tandis que les dommages, eux, **durent** : une rizière ensablée et une rivière envasée ne se rétablissent pas d'elles-mêmes. Les emplois ne bénéficient pas non plus nécessairement aux habitants lésés. Comparer n'a de sens que si l'on met en regard un gain **provisoire** et une perte **durable** de moyens de subsistance. Emplois et réparation des dégâts ne s'excluent d'ailleurs pas : on peut exiger les deux.
 
 **Ex. 4** — 1. **A** · 2. **B** · 3. **B** · 4. **B**
 
@@ -729,6 +741,7 @@ La vraie question n'est donc pas seulement « combien peut-on extraire ? », mai
 | 48 · Ex. 3.1 | 12 / 300 | 0,04 = **4 %** ✅ |
 | 48 · Ex. 3.2 | 300 / 12 | **25 seaux** par pierre ✅ |
 | 48 · Ex. 3.3 | 30 × 25 | **750 seaux** ✅ (contrôle : 750 × 0,04 = 30) |
+| 48 · Ex. 3.4 *(ajouté)* | 25 ÷ 10 | **2,5 h de travail par pierre** ✅ |
 | 49 · Ex. 3.1 | 2 / 6 | 0,333… = **33 %** ✅ |
 | 49 · Ex. 3.2 | 400 × 20 % | **80 kg** ✅ (perte 320 = 80 % de 400) |
 | 45 · Ex. 3 | encadrement 7 < d < 9 | cohérent avec topaze = 8 ✅ |

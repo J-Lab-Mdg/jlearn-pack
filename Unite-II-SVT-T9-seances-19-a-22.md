@@ -549,9 +549,12 @@ Tous les résultats numériques des exercices ont été recalculés :
 | 20 · Ex. 2 (appl.) | 10 poules × 35 g | 350 g/j ; × 7 = 2 450 g = 2,45 kg ✅ |
 | 20 · tableau | 5 / 10 / 20 poules | 175 / 350 / 700 g par jour ✅ ; × 30 = 5,25 / 10,5 / 21 kg ✅ |
 | 20 · Ex. 3 | 15 × 35 | 525 g/j ✅ ; × 7 = 3 675 g = 3,675 kg ✅ ; 25 000 ÷ 525 = 47,6 → **47 j** ✅ |
+| 20 · Ex. 3.4 *(ajouté)* | 20 × 35 ; 25 000 ÷ 700 | 700 g/j ✅ ; 35,7 → **35 j**, soit **12 jours de moins** ✅ |
 | 21 · Ex. 2 (appl.) | 12 ÷ 4 | 3 campagnes ✅ |
 | 21 · Ex. 3 | 30 + 25 + 45 | **100 doses = 1 flacon exactement** ✅ ; 3 campagnes ✅ ; 3 flacons/an ✅ |
+| 21 · Ex. 3.4 *(ajouté)* | 100 + 20 ; 2 × 100 − 120 | **120 doses → 2 flacons** ✅ ; **80 doses perdues** ✅ |
 | 22 · Ex. 2 (appl.) | (96 − 45) × 10 | 510 œufs ✅ |
+| 22 · Ex. 3.4 *(ajouté)* | (96 − 45) / 45 | 1,133… → **+ 113 %** ✅ |
 | 22 · Ex. 3 | 96 − 45 = 51 ; × 20 | 1 020 œufs ✅ (900 → 1 920) |
 | 22 · Ex. 3.3 | 50 × 43 % ; 50 × 87 % | 21,5 → 21 ; 43,5 → 43 ; écart 22 ✅ |
 

@@ -329,7 +329,7 @@ Ce sont des contenus concrets, contextualisés Madagascar, directement transposa
 | **P0** | Réécrire l'étape **4. Analyse** avec des questions/R.A. réellement disciplinaires | 41 fiches |
 | **P0** | Rédiger un **contenu de leçon propre à chaque séance** (fin du partage 2-4 séances / 1 texte) | 41 pages LEÇON |
 | **P0** | Refaire les **distracteurs** (pièges plausibles sur le sujet, pas de négation artificielle) | 82 QCM + 41 textes à trous |
-| **P0** | Remonter chaque exercice à **≥ 4 items** | 164 exercices |
+| ~~**P0**~~ ✅ | Remonter chaque exercice à **≥ 4 items** | 164 exercices |
 | **P1** | Réécrire les **5 sujets d'examen** sur le contenu de leur unité | 4 sur 5 |
 | **P1** | Différencier les **5 séances de révision** | 5 |
 | **P1** | Remplacer le **glossaire SVT 9e** par un glossaire T9 | 35 entrées |
@@ -342,7 +342,7 @@ Ce sont des contenus concrets, contextualisés Madagascar, directement transposa
 
 **Recommandation.** Les écarts P0 ne sont pas des corrections de détail : ils portent sur le contenu pédagogique lui-même, séance par séance. Une passe automatisée ne peut pas les traiter — il faut réécrire le fond à partir des contenus du PE T9 (§5.3), qui fournit la matière nécessaire.
 
-Conformément au **temps 4** de `audit-conformite.md` et à la **règle critique 14**, aucune correction n'avait été appliquée au moment de l'audit. Le chantier **P2 est depuis traité en totalité** (voir ci-dessous) ; les chantiers **P0 et P1 restent ouverts** et attendent votre arbitrage.
+Conformément au **temps 4** de `audit-conformite.md` et à la **règle critique 14**, aucune correction n'avait été appliquée au moment de l'audit. Les chantiers **P2** et **P0** sont depuis traités (voir §7 et §8) ; le chantier **P1 reste ouvert**.
 
 ---
 
@@ -364,3 +364,59 @@ intégralement. Le détail, pour que la vérification soit possible ligne à lig
 
 **État du contrôle qualité : 28/28.** Les contrôles tournent aussi en intégration
 continue à chaque push (`.github/workflows/verifier-manuel-svt-t9.yml`).
+
+---
+
+## 8. Suites données — chantier P0 (clos)
+
+### 8.1 Ce que la vérification a montré
+
+Le chantier P0 listait quatre points. Mesure faite fiche par fiche **avant**
+toute réécriture, trois d'entre eux étaient **déjà satisfaits** par la
+réécriture du manuel — l'audit portait sur le document d'origine, non sur elle :
+
+| Point P0 annoncé | État mesuré dans la réécriture |
+|---|---|
+| Réécrire l'étape 4. Analyse | Déjà fait : questions disciplinaires et R.A. propres à chaque séance |
+| Contenu de leçon propre à chaque séance | Déjà fait : 41 pages LEÇON distinctes, plus aucun texte partagé entre séances voisines |
+| Refaire les distracteurs | Déjà fait : QCM et textes à trous construits sur des erreurs plausibles |
+| Remonter chaque exercice à ≥ 4 items | **Défaut réel** : les exercices 1, 2 et 4 comptaient 4 à 6 items, mais l'**exercice 3** (étude de cas) en comptait uniformément **3** |
+
+Réécrire les 41 fiches sans cette mesure aurait dégradé un travail déjà conforme.
+Seul le défaut constaté a donc été traité.
+
+### 8.2 Traitement retenu
+
+Les **40 études de cas** du manuel reçoivent un **quatrième item**. Il ne s'agit
+pas d'une question de remplissage : l'item demande systématiquement à l'élève de
+**réfuter une affirmation plausible** — celles réellement entendues en classe ou
+dans la vie courante. C'est la réponse directe à l'exigence de l'audit
+(« pièges plausibles sur le sujet, pas de négation artificielle »).
+
+| Unité | Séances | Exemples d'affirmations à réfuter |
+|---|---|---|
+| I | 1-10 | « trois aliments donc ration variée » · « le test du papier révèle les protéines » · « je suis assis donc mes besoins sont nuls » · « ils mangent à leur faim » |
+| II | 13-22 | « la plante se nourrit de terre » · « naturel donc sans danger » · « mes poules se débrouillent seules » · « il suffit d'acheter des poules améliorées » |
+| III | 25-33 | « c'est le cerveau qui fait tout » · « j'ai décidé de lâcher la marmite » · « on peut arrêter quand on veut » · « je veille pour travailler plus » |
+| IV | 36-41 | « la fistule est une punition » · « je me sens bien donc la consultation est inutile » · « vaccinée, le dépistage ne me concerne plus » |
+| V | 44-49 | « dure donc incassable » · « des témoignages, c'est une preuve » · « les emplois compensent les dégâts » |
+
+Les items chiffrés ajoutés ont été **recalculés par script** avant intégration,
+selon la convention du manuel : part des lipides en S6 (35 %), durée d'un sac de
+grain en S20 (35 jours), flacons et doses perdues en S21, hausse de ponte en S22
+(+ 113 %), baisse du taux de fistule en S37 (− 84 %), heures de travail par
+pierre en S48 (2,5 h).
+
+### 8.3 Garde-fou automatisé
+
+Un contrôle **« chaque exercice compte au moins 4 items »** a été ajouté à
+`verifier_manuel.py` (29 contrôles au lieu de 28). Il interdit toute régression
+future et a servi de guide pendant le chantier, en nommant précisément les
+exercices restants.
+
+Le comptage reconnaît les trois formes d'exercice du manuel — items numérotés,
+listes d'éléments à ranger séparés par « · », consignes du type « Cite **quatre**
+ressources ». Sans cette tolérance, des exercices parfaitement conformes étaient
+signalés à tort : un faux verdict est plus nuisible qu'une absence de contrôle.
+
+**État : 29/29.**
