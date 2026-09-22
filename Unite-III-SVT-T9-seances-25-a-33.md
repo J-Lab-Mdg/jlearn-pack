@@ -109,7 +109,7 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 
 ### Section EXERCICES
 
-**Exercice 1 (4 points)** — Indique, pour chaque élément, s'il appartient au système nerveux **central** ou **périphérique**.
+**Exercice 1 (4 points)** — **Schéma à légender.** Reproduis la silhouette du système nerveux (page LEÇON), puis indique, pour chaque élément, s'il appartient au système nerveux **central** ou **périphérique**.
 1. Le cervelet
 2. Un nerf de la jambe
 3. La moelle épinière
@@ -669,8 +669,12 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 
 ### Section EXERCICES
 
-**Exercice 1 (5 points)** — Range les cinq éléments de l'arc réflexe dans l'ordre suivi par l'influx nerveux.
+**Exercice 1 (5 points)** — **Schéma à légender.** Reproduis le schéma de l'arc réflexe (page LEÇON) et complète-le.
 *muscle · nerf sensitif · organes sensitifs · nerf moteur · moelle épinière*
+1. Place les cinq noms sur les traits de repère.
+2. Numérote-les dans l'ordre suivi par l'influx nerveux.
+3. Colorie en bleu la voie sensitive, en rouge la voie motrice.
+4. Indique par une croix l'endroit où le message **ne passe pas** par le cerveau.
 
 **Exercice 2 (5 points)** — Complète avec : *effecteur, involontaire, moelle épinière, sensitif, moteur*
 1. Le réflexe est une réaction rapide et …….
@@ -695,7 +699,7 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 
 ### CORRIGÉ
 
-**Ex. 1** — organes sensitifs → nerf sensitif → moelle épinière → nerf moteur → muscle
+**Ex. 1** — 1. et 2. Dans l'ordre : **1. organes sensitifs** (récepteurs de la peau) → **2. nerf sensitif** → **3. moelle épinière** → **4. nerf moteur** → **5. muscle** (effecteur). 3. En **bleu** : des récepteurs jusqu'à la moelle. En **rouge** : de la moelle jusqu'au muscle. 4. La croix se place **au-dessus de la moelle épinière**, sur le trajet qui monterait vers l'encéphale : lors d'un réflexe, la réponse est élaborée par la moelle **sans attendre le cerveau**.
 
 **Ex. 2** — 1. **involontaire** · 2. **sensitif** · 3. **moelle épinière** · 4. **moteur** · 5. **effecteur**
 

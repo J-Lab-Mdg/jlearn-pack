@@ -202,8 +202,12 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 
 ### Section EXERCICES
 
-**Exercice 1 (5 points)** — Range dans l'ordre suivi par l'eau, de son entrée jusqu'à la feuille :
-*xylème · poil absorbant · feuille · cellules de la racine · tige*
+**Exercice 1 (5 points)** — **Schéma à légender.** Reproduis le schéma de l'extrémité de la racine (page LEÇON) et place les cinq noms sur les traits de repère, puis réponds.
+*coiffe · zone de croissance · zone pilifère · poils absorbants · vaisseaux du xylème*
+1. Place les cinq noms.
+2. Entoure la zone par laquelle l'eau pénètre.
+3. Indique par une flèche le sens de circulation de l'eau.
+4. Range dans l'ordre suivi par l'eau : *xylème · poil absorbant · feuille · cellules de la racine · tige*.
 
 **Exercice 2 (5 points)** — Vrai ou Faux. Corrige les affirmations fausses.
 1. L'eau entre sur toute la longueur de la racine.
@@ -228,7 +232,7 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 
 ### CORRIGÉ
 
-**Ex. 1** — poil absorbant → cellules de la racine → xylème → tige → feuille
+**Ex. 1** — 1. De la pointe vers la tige : **coiffe** (extrémité), **zone de croissance**, **zone pilifère** portant les **poils absorbants** ; au centre, les **vaisseaux du xylème**. 2. L'eau pénètre par la **zone pilifère**, grâce aux poils absorbants. 3. La flèche va des poils absorbants vers le **centre de la racine**, puis **monte** dans le xylème. 4. poil absorbant → cellules de la racine → xylème → tige → feuille
 
 **Ex. 2** — 1. **F** — elle entre essentiellement par la **zone pilifère**. 2. **V** 3. **F** — la coiffe **protège** la pointe, elle n'absorbe pas. 4. **V** 5. **V**
 

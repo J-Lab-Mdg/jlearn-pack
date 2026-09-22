@@ -1525,8 +1525,12 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 
 ### Section EXERCICES
 
-**Exercice 1 (5 points)** — Range dans l'ordre suivi par l'eau, de son entrée jusqu'à la feuille :
-*xylème · poil absorbant · feuille · cellules de la racine · tige*
+**Exercice 1 (5 points)** — **Schéma à légender.** Reproduis le schéma de l'extrémité de la racine (page LEÇON) et place les cinq noms sur les traits de repère, puis réponds.
+*coiffe · zone de croissance · zone pilifère · poils absorbants · vaisseaux du xylème*
+1. Place les cinq noms.
+2. Entoure la zone par laquelle l'eau pénètre.
+3. Indique par une flèche le sens de circulation de l'eau.
+4. Range dans l'ordre suivi par l'eau : *xylème · poil absorbant · feuille · cellules de la racine · tige*.
 
 **Exercice 2 (5 points)** — Vrai ou Faux. Corrige les affirmations fausses.
 1. L'eau entre sur toute la longueur de la racine.
@@ -1551,7 +1555,7 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 
 ### CORRIGÉ
 
-**Ex. 1** — poil absorbant → cellules de la racine → xylème → tige → feuille
+**Ex. 1** — 1. De la pointe vers la tige : **coiffe** (extrémité), **zone de croissance**, **zone pilifère** portant les **poils absorbants** ; au centre, les **vaisseaux du xylème**. 2. L'eau pénètre par la **zone pilifère**, grâce aux poils absorbants. 3. La flèche va des poils absorbants vers le **centre de la racine**, puis **monte** dans le xylème. 4. poil absorbant → cellules de la racine → xylème → tige → feuille
 
 **Ex. 2** — 1. **F** — elle entre essentiellement par la **zone pilifère**. 2. **V** 3. **F** — la coiffe **protège** la pointe, elle n'absorbe pas. 4. **V** 5. **V**
 
@@ -2784,7 +2788,7 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 
 ### Section EXERCICES
 
-**Exercice 1 (4 points)** — Indique, pour chaque élément, s'il appartient au système nerveux **central** ou **périphérique**.
+**Exercice 1 (4 points)** — **Schéma à légender.** Reproduis la silhouette du système nerveux (page LEÇON), puis indique, pour chaque élément, s'il appartient au système nerveux **central** ou **périphérique**.
 1. Le cervelet
 2. Un nerf de la jambe
 3. La moelle épinière
@@ -3354,8 +3358,12 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 
 ### Section EXERCICES
 
-**Exercice 1 (5 points)** — Range les cinq éléments de l'arc réflexe dans l'ordre suivi par l'influx nerveux.
+**Exercice 1 (5 points)** — **Schéma à légender.** Reproduis le schéma de l'arc réflexe (page LEÇON) et complète-le.
 *muscle · nerf sensitif · organes sensitifs · nerf moteur · moelle épinière*
+1. Place les cinq noms sur les traits de repère.
+2. Numérote-les dans l'ordre suivi par l'influx nerveux.
+3. Colorie en bleu la voie sensitive, en rouge la voie motrice.
+4. Indique par une croix l'endroit où le message **ne passe pas** par le cerveau.
 
 **Exercice 2 (5 points)** — Complète avec : *effecteur, involontaire, moelle épinière, sensitif, moteur*
 1. Le réflexe est une réaction rapide et …….
@@ -3380,7 +3388,7 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 
 ### CORRIGÉ
 
-**Ex. 1** — organes sensitifs → nerf sensitif → moelle épinière → nerf moteur → muscle
+**Ex. 1** — 1. et 2. Dans l'ordre : **1. organes sensitifs** (récepteurs de la peau) → **2. nerf sensitif** → **3. moelle épinière** → **4. nerf moteur** → **5. muscle** (effecteur). 3. En **bleu** : des récepteurs jusqu'à la moelle. En **rouge** : de la moelle jusqu'au muscle. 4. La croix se place **au-dessus de la moelle épinière**, sur le trajet qui monterait vers l'encéphale : lors d'un réflexe, la réponse est élaborée par la moelle **sans attendre le cerveau**.
 
 **Ex. 2** — 1. **involontaire** · 2. **sensitif** · 3. **moelle épinière** · 4. **moteur** · 5. **effecteur**
 
@@ -6012,6 +6020,105 @@ aucune personne, aucun district ni aucune coopérative réels.
 **Méthode**
 
 - Skill **`jlearn-manuel-scolaire` v18** — structure de fiche, barème, règles de rédaction et d'illustration.
+
+
+## Glossaire (Rakibolana)
+
+Les termes sont regroupés par unité et renvoient à la séance où la notion est
+introduite. Les définitions reprennent celles des pages LEÇON : un élève doit
+pouvoir retrouver le mot ici sans relire toute la séance.
+
+### Unité I — Alimentation de l'homme
+
+| Terme | Définition | Séance |
+|---|---|---:|
+| **Ration alimentaire** | Ensemble des aliments et des boissons consommés par une personne au cours d'une journée. | 1 |
+| **Aliment énergétique** | Aliment qui fournit la force nécessaire pour bouger, travailler et maintenir le corps chaud. | 1 |
+| **Aliment bâtisseur** | Aliment qui apporte les matériaux de construction du corps pendant la croissance et répare ce qui s'use. | 1 |
+| **Aliment protecteur** | Aliment qui défend l'organisme contre les maladies et assure son bon fonctionnement. | 1 |
+| **Nutriment** | Substance contenue dans un aliment et utilisable directement par l'organisme. | 2 |
+| **Glucides** | Nutriments sucrés, dont l'amidon et le glucose ; principale source d'énergie quotidienne. | 2 |
+| **Lipides** | Matières grasses ; elles stockent l'énergie et entrent dans la composition des membranes des cellules. | 2 |
+| **Protéines** | Nutriments qui construisent et réparent le corps. | 2 |
+| **Vitamines** | Substances sans valeur énergétique, indispensables en petite quantité au fonctionnement de l'organisme. | 3 |
+| **Sels minéraux** | Éléments minéraux (fer, calcium, iode…) nécessaires à la construction et à l'entretien du corps. | 3 |
+| **Anémie** | Trouble dû à un manque de fer, qui se manifeste par la fatigue et la pâleur. | 3 |
+| **Valeur énergétique** | Quantité d'énergie libérée par un aliment, exprimée en kilocalories (kcal). | 4 |
+| **Respiration cellulaire** | Réaction qui libère l'énergie des nutriments dans les cellules, en consommant du dioxygène. | 4 |
+| **Métabolisme de base** | Énergie dépensée par l'organisme au repos, pour les fonctions vitales. | 5 |
+| **Malnutrition** | État résultant d'une alimentation insuffisante, excessive ou déséquilibrée. | 9 |
+| **Carence** | Manque durable d'un nutriment déterminé dans l'alimentation. | 9 |
+
+### Unité II — Organisation des êtres vivants
+
+| Terme | Définition | Séance |
+|---|---|---:|
+| **Sève brute** | Liquide composé d'eau et de sels minéraux, absorbé par la racine et conduit vers les feuilles. | 13 |
+| **Témoin** | Dans une expérience, montage identique au premier sauf sur le point étudié ; il rend la comparaison possible. | 13 |
+| **Poils absorbants** | Fins prolongements de la zone pilifère de la racine, par lesquels l'eau pénètre dans la plante. | 14 |
+| **Zone pilifère** | Région de la racine couverte de poils absorbants, lieu de l'absorption de l'eau. | 14 |
+| **Xylème** | Ensemble des vaisseaux qui conduisent la sève brute de la racine vers les feuilles. | 14 |
+| **Osmose** | Passage de l'eau à travers une membrane, du milieu le moins concentré vers le plus concentré. | 14 |
+| **Sarclage** | Ameublissement de la terre en surface, qui supprime les mauvaises herbes et facilite la pénétration de l'eau. | 15 |
+| **Bio-agresseur** | Être vivant qui nuit à une culture : ravageur, agent pathogène ou adventice. | 16 |
+| **Adventice** | Plante indésirable qui concurrence la culture pour l'eau, la lumière et les sels minéraux. | 16 |
+| **Ravageur** | Animal qui consomme ou détériore les organes d'une plante cultivée. | 16 |
+| **Agent pathogène** | Micro-organisme (champignon, bactérie, virus) responsable d'une maladie de la plante. | 16 |
+| **Délai avant récolte** | Durée minimale à respecter entre un traitement chimique et la récolte, pour éviter les résidus. | 18 |
+| **Sélection** | Choix des reproducteurs présentant les caractères recherchés, afin d'améliorer un élevage. | 22 |
+
+### Unité III — Santé et bien-être
+
+| Terme | Définition | Séance |
+|---|---|---:|
+| **Système nerveux** | Ensemble formé par l'encéphale, la moelle épinière et les nerfs, qui commande et coordonne l'organisme. | 25 |
+| **Encéphale** | Partie du système nerveux contenue dans le crâne : cerveau, cervelet et tronc cérébral. | 25 |
+| **Moelle épinière** | Cordon nerveux logé dans la colonne vertébrale ; voie de passage des messages et centre des réflexes. | 25 |
+| **Nerf** | Cordon conduisant les messages nerveux entre les organes et les centres nerveux. | 25 |
+| **Neurone** | Cellule du système nerveux, spécialisée dans la conduction de l'influx nerveux. | 25 |
+| **Influx nerveux** | Message qui circule le long des neurones et des nerfs. | 25 |
+| **Cerveau** | Partie la plus volumineuse de l'encéphale ; siège de la pensée, de la mémoire, de la parole et des mouvements volontaires. | 26 |
+| **Cervelet** | Partie de l'encéphale qui ajuste les mouvements et maintient l'équilibre. | 26 |
+| **Tronc cérébral** | Partie de l'encéphale qui commande les fonctions automatiques, dont la respiration et les battements du cœur. | 26 |
+| **Mouvement réflexe inné** | Réaction rapide, involontaire et identique chez tous, présente dès la naissance. | 27 |
+| **Mouvement réflexe acquis** | Réaction devenue automatique par la répétition ; elle s'apprend et peut disparaître faute de pratique. | 28 |
+| **Mouvement volontaire** | Mouvement décidé par le cerveau, que l'on peut choisir, adapter ou interrompre. | 29 |
+| **Arc réflexe** | Trajet du message nerveux lors d'un réflexe : récepteur, nerf sensitif, centre nerveux, nerf moteur, effecteur. | 30 |
+| **Substance psychoactive** | Substance qui modifie le fonctionnement du système nerveux, la perception ou le comportement. | 31 |
+| **Dépendance** | État dans lequel l'organisme réclame la substance, au point que la volonté seule ne suffit plus à l'arrêter. | 32 |
+
+### Unité IV — Reproduction humaine
+
+| Terme | Définition | Séance |
+|---|---|---:|
+| **Fistule obstétricale** | Communication anormale creusée entre le vagin et la vessie ou le rectum, à la suite d'un accouchement prolongé. | 36 |
+| **Nécrose** | Mort des tissus privés de sang, donc d'oxygène, par une compression prolongée. | 36 |
+| **Incontinence** | Écoulement permanent d'urine ou de matières, que la personne ne peut pas retenir. | 36 |
+| **Travail obstrué** | Accouchement qui se prolonge parce que le fœtus ne peut pas franchir le bassin. | 37 |
+| **Consultation prénatale** | Examen de suivi de la grossesse, destiné à dépister les complications avant qu'elles ne se déclarent. | 38 |
+| **Col de l'utérus** | Partie basse et rétrécie de l'utérus, qui s'ouvre sur le vagin. | 39 |
+| **Lésion précancéreuse** | Modification des cellules qui précède le cancer et que l'on peut traiter avant qu'elle n'évolue. | 39 |
+| **Dépistage** | Examen pratiqué chez une personne sans symptôme, afin de détecter une atteinte à un stade précoce. | 40 |
+| **Vaccination** | Préparation des défenses de l'organisme avant tout contact avec l'agent infectieux. | 40 |
+
+### Unité V — Géologie
+
+| Terme | Définition | Séance |
+|---|---|---:|
+| **Pierre gemme** | Pierre remarquable par sa beauté, sa rareté et sa résistance, utilisée en joaillerie. | 44 |
+| **Pierre précieuse** | Selon la convention commerciale ancienne : diamant, rubis, saphir et émeraude. | 44 |
+| **Pierre fine** | Nom actuel des pierres autrefois dites « semi-précieuses » ; le terme ne préjuge pas de leur valeur. | 44 |
+| **Pierre organique** | Gemme produite par un être vivant : perle, corail, nacre, ambre, jais. | 44 |
+| **Dureté** | Résistance d'un minéral à la rayure, mesurée sur l'échelle de Mohs. | 45 |
+| **Échelle de Mohs** | Classement de dix minéraux par ordre de dureté croissante ; elle ordonne sans mesurer des écarts réguliers. | 45 |
+| **Clivage** | Aptitude d'un minéral à se fendre selon des plans nets ; une pierre dure peut avoir un clivage parfait. | 45 |
+| **Carat** | Unité de masse des gemmes : 1 carat = 0,2 gramme. | 45 |
+| **Gisement primaire** | Gisement où la gemme se trouve encore dans la roche où elle s'est formée. | 46 |
+| **Gisement secondaire** | Gisement où la gemme, libérée par l'érosion, a été transportée puis déposée — souvent dans des alluvions. | 46 |
+| **Pegmatite** | Roche à gros cristaux, dans laquelle se forment de nombreuses gemmes. | 46 |
+| **Exploitation alluviale** | Extraction par lavage des graviers d'une rivière. | 48 |
+| **Bassin de décantation** | Bassin où les particules en suspension se déposent avant que l'eau ne soit rejetée dans la rivière. | 49 |
+| **Bien commun** | Ressource dont dépend une collectivité et dont l'usage engage la responsabilité de tous. | 49 |
 
 
 ## Table des illustrations

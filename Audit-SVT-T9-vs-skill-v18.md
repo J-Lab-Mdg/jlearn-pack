@@ -330,19 +330,19 @@ Ce sont des contenus concrets, contextualisés Madagascar, directement transposa
 | **P0** | Rédiger un **contenu de leçon propre à chaque séance** (fin du partage 2-4 séances / 1 texte) | 41 pages LEÇON |
 | **P0** | Refaire les **distracteurs** (pièges plausibles sur le sujet, pas de négation artificielle) | 82 QCM + 41 textes à trous |
 | ~~**P0**~~ ✅ | Remonter chaque exercice à **≥ 4 items** | 164 exercices |
-| **P1** | Réécrire les **5 sujets d'examen** sur le contenu de leur unité | 4 sur 5 |
-| **P1** | Différencier les **5 séances de révision** | 5 |
-| **P1** | Remplacer le **glossaire SVT 9e** par un glossaire T9 | 35 entrées |
-| **P1** | Corriger l'**avant-propos** (thématiques annoncées fausses) | 1 § |
-| **P1** | Donner un **objectif spécifique par séance** | 41 |
-| **P1** | Varier les **types d'exercices** + créer les schémas à légender annoncés | tout le manuel |
+| ~~**P1**~~ ✅ | Réécrire les **5 sujets d'examen** sur le contenu de leur unité | 4 sur 5 |
+| ~~**P1**~~ ✅ | Différencier les **5 séances de révision** | 5 |
+| ~~**P1**~~ ✅ | Remplacer le **glossaire SVT 9e** par un glossaire T9 | 35 entrées |
+| ~~**P1**~~ ✅ | Corriger l'**avant-propos** (thématiques annoncées fausses) | 1 § |
+| ~~**P1**~~ ✅ | Donner un **objectif spécifique par séance** | 41 |
+| ~~**P1**~~ ✅ | Varier les **types d'exercices** + créer les schémas à légender annoncés | tout le manuel |
 | ~~**P2**~~ ✅ | Reprendre **valeurs à véhiculer** et **répartition horaire** du PE T9 | 5 unités |
 | ~~**P2**~~ ✅ | Ajouter la **bibliographie / Loharanom-Baovao** | 1 section |
 | ~~**P2**~~ ✅ | « Étapes » → « Étapes et Durée » ; Synthèse → « Donc, … » ; « 4e » → « 3e » ; `• •` ; doubles espaces ; légendes d'images | global |
 
 **Recommandation.** Les écarts P0 ne sont pas des corrections de détail : ils portent sur le contenu pédagogique lui-même, séance par séance. Une passe automatisée ne peut pas les traiter — il faut réécrire le fond à partir des contenus du PE T9 (§5.3), qui fournit la matière nécessaire.
 
-Conformément au **temps 4** de `audit-conformite.md` et à la **règle critique 14**, aucune correction n'avait été appliquée au moment de l'audit. Les chantiers **P2** et **P0** sont depuis traités (voir §7 et §8) ; le chantier **P1 reste ouvert**.
+Conformément au **temps 4** de `audit-conformite.md` et à la **règle critique 14**, aucune correction n'avait été appliquée au moment de l'audit. Les chantiers **P2**, **P0** et **P1** sont depuis traités en totalité (voir §7, §8 et §9). **Aucun écart de l'audit ne reste ouvert.**
 
 ---
 
@@ -418,5 +418,61 @@ Le comptage reconnaît les trois formes d'exercice du manuel — items numérot�
 listes d'éléments à ranger séparés par « · », consignes du type « Cite **quatre**
 ressources ». Sans cette tolérance, des exercices parfaitement conformes étaient
 signalés à tort : un faux verdict est plus nuisible qu'une absence de contrôle.
+
+**État : 29/29.**
+
+---
+
+## 9. Suites données — chantier P1 (clos)
+
+### 9.1 Mesure préalable
+
+Comme pour le P0, les six points ont été mesurés **avant** toute réécriture.
+Quatre étaient déjà satisfaits par la réécriture du manuel :
+
+| Point P1 annoncé | État mesuré |
+|---|---|
+| Réécrire les 5 sujets d'examen sur leur unité | Déjà fait : chaque examen porte le titre et le contenu de son unité ; recouvrement lexical maximal entre examens **23 %** |
+| Différencier les 5 séances de révision | Déjà fait : recouvrement lexical maximal **28 %**, contrôlé en continu par `verifier_manuel.py` |
+| Objectif spécifique par séance | Déjà fait : **51 séances sur 51**, aucun objectif générique restant |
+| Corriger l'avant-propos | Déjà fait : les cinq thématiques annoncées sont celles du PE T9 |
+| Remplacer le glossaire SVT 9e par un glossaire T9 | **Manque réel** : aucun glossaire dans le manuel |
+| Varier les types d'exercices + schémas à légender | **Partiellement fait** : six types d'exercices alternent, mais **aucun exercice de légendage** n'existait |
+
+### 9.2 Glossaire (Rakibolana)
+
+Section finale ajoutée : **67 entrées** réparties par unité, chacune renvoyant à
+la séance où la notion est introduite. Aucune entrée ne provient du glossaire
+SVT 9e du document d'origine — les définitions reprennent celles des pages LEÇON
+du présent manuel, afin qu'un élève retrouve le mot sans relire la séance
+entière. Les renvois de séance ont été vérifiés : tous pointent dans l'intervalle
+1-51.
+
+| Unité | Entrées |
+|---|---:|
+| I — Alimentation de l'homme | 16 |
+| II — Organisation des êtres vivants | 13 |
+| III — Santé et bien-être | 15 |
+| IV — Reproduction humaine | 9 |
+| V — Géologie | 14 |
+
+### 9.3 Exercices de légendage
+
+Le skill impose que tout schéma annoncé « à légender » existe réellement. Les
+illustrations du manuel ayant été produites **muettes**, avec des traits de
+repère vides, elles s'y prêtaient sans retouche — c'était l'intention d'origine,
+restée inexploitée.
+
+Trois exercices 1 ont été convertis en exercices de légendage, là où le schéma
+muet correspondant existait déjà :
+
+| Séance | Schéma | Travail demandé |
+|---|---|---|
+| 14 | Extrémité de la racine | Placer 5 noms, entourer la zone d'absorption, flécher le trajet de l'eau |
+| 25 | Silhouette du système nerveux | Légender, puis classer central / périphérique |
+| 30 | Arc réflexe | Placer 5 noms, numéroter l'ordre de l'influx, colorier voie sensitive et motrice, marquer l'absence de passage par le cerveau |
+
+Le contrôle « tout schéma annoncé est fourni » passe de 2 à **5 annonces, toutes
+pourvues**.
 
 **État : 29/29.**
