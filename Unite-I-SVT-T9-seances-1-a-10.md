@@ -48,7 +48,7 @@ Tableau de déroulement à 6 colonnes : **Étapes | Enseignant | Apprenants | Te
 **Objectif spécifique** : définir la ration alimentaire et classer les aliments selon leur rôle.
 **Support et matériel** : pyramide alimentaire dessinée au tableau, photo d'un repas malgache.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez trois aliments que vous avez mangés hier.<br>Mange-t-on la même chose à chaque repas ? | R.A. : Du riz, des brèdes, du poisson.<br>R.A. : Non, les aliments changent d'un repas à l'autre. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -136,7 +136,7 @@ Un repas simple et complet peut être composé de riz, de haricots, de brèdes e
 **Objectif spécifique** : distinguer les glucides, les lipides et les protéines et indiquer leur rôle.
 **Support et matériel** : échantillons réels (riz, huile, arachides, haricots secs) dans quatre coupelles.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les trois groupes d'aliments ?<br>Donne un exemple d'aliment bâtisseur. | R.A. : Énergétiques, bâtisseurs, protecteurs.<br>R.A. : Le poisson, la viande, les haricots. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -226,7 +226,7 @@ Un test simple permet de repérer les lipides : frotter l'aliment sur du papier.
 **Objectif spécifique** : expliquer le rôle des vitamines, des sels minéraux et de l'eau, et citer leurs sources.
 **Support et matériel** : fruits et légumes locaux (mangue, orange, brèdes), verre d'eau, os sec.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les trois nutriments qui apportent de l'énergie ?<br>Quel nutriment construit les muscles ? | R.A. : Les glucides, les lipides et les protéines.<br>R.A. : Les protéines. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -321,7 +321,7 @@ Le corps perd de l'eau en permanence — par l'urine, la sueur et la respiration
 **Objectif spécifique** : calculer la valeur énergétique d'un aliment et d'un repas à partir de sa composition en nutriments
 **Support et matériel** : étiquettes nutritionnelles d'emballages, tableau des coefficients, ardoises de groupe
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois nutriments qui apportent de l'énergie.<br>Quel nutriment construit et répare le corps ?<br>Les vitamines apportent-elles de l'énergie ? | R.A. : Les glucides, les lipides et les protéines.<br>R.A. : Les protéines construisent et réparent l'organisme.<br>R.A. : Non, elles protègent et régulent, elles n'apportent pas d'énergie. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -442,7 +442,7 @@ Connaître la valeur énergétique permet de comparer deux aliments et d'adapter
 **Objectif spécifique** : définir le métabolisme de base et citer les facteurs qui font varier les besoins énergétiques.
 **Support et matériel** : tableau des besoins par âge écrit au tableau.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Combien de kcal apporte 1 g de lipides ?<br>Comment calcule-t-on l'énergie d'un aliment ? | R.A. : 9 kcal.<br>R.A. : On multiplie la masse de chaque nutriment par son coefficient, puis on additionne. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -532,7 +532,7 @@ Les besoins diffèrent entre hommes et femmes. Ils augmentent également lors de
 **Objectif spécifique** : calculer l'apport énergétique d'une journée et le comparer aux besoins d'une personne.
 **Support et matériel** : tableau de composition d'aliments, tableau des besoins par âge.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce que le métabolisme de base ?<br>Quels sont les besoins d'un adolescent de 14 ans ? | R.A. : L'énergie minimale dépensée au repos pour les fonctions vitales.<br>R.A. : Entre 2 200 et 2 900 kcal par jour. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -623,7 +623,7 @@ Un total correct ne garantit pas pour autant une bonne alimentation : une journ�
 **Objectif spécifique** : composer un menu d'une journée équilibré à partir d'aliments locaux.
 **Support et matériel** : étiquettes d'aliments locaux à disposer, assiette dessinée au tableau.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Comment calcule-t-on l'apport énergétique d'une journée ?<br>À quoi compare-t-on ce total ? | R.A. : On additionne l'énergie de tous les repas.<br>R.A. : Aux besoins liés à l'âge et à l'activité. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -719,7 +719,7 @@ Varier d'un jour à l'autre à l'intérieur de chaque groupe évite la monotonie
 **Objectif spécifique** : justifier l'importance d'une alimentation équilibrée pour la santé et la croissance.
 **Support et matériel** : deux menus imprimés à comparer.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Comment se répartit une assiette équilibrée ?<br>Pourquoi varier les aliments ? | R.A. : Moitié légumes et fruits, un quart féculents, un quart bâtisseurs.<br>R.A. : Pour apporter tous les nutriments et éviter les carences. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -802,7 +802,7 @@ Il n'existe pas une ration unique valable pour tous. Un adolescent en pleine cro
 **Objectif spécifique** : distinguer les formes de malnutrition par insuffisance et en citer les causes et conséquences.
 **Support et matériel** : courbe de croissance, tableau des quatre formes de malnutrition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Que permet une alimentation équilibrée ?<br>Que risque une personne dont la ration est insuffisante ? | R.A. : La croissance, la résistance aux maladies et l'activité.<br>R.A. : Des carences, de la fatigue et un affaiblissement. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -895,7 +895,7 @@ La prévention repose sur des gestes accessibles : **varier** les aliments à l'
 **Objectif spécifique** : expliquer l'origine du surpoids et proposer un menu d'appoint adapté à une situation de malnutrition.
 **Support et matériel** : balance, deux fiches de menus d'appoint.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois formes de malnutrition par insuffisance.<br>Qu'est-ce que la faim cachée ? | R.A. : Chronique, aiguë et carences en micronutriments.<br>R.A. : Un manque de vitamines ou de sels minéraux alors qu'on mange à sa faim. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||

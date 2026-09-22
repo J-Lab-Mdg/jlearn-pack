@@ -51,7 +51,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 **Objectif spécifique** : identifier, à partir d'expériences, les quatre éléments dont une plante a besoin pour vivre et croître.
 **Support et matériel** : 8 jeunes plants de même taille, bocaux ou boîtes de conserve, eau de pluie, eau salée minéralisée, carton pour l'obscurité.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | De quoi l'être humain a-t-il besoin chaque jour pour vivre ?<br>Une plante mange-t-elle comme nous ? | R.A. : De nourriture, d'eau, d'air.<br>R.A. : Non, elle n'a pas de bouche. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -144,7 +144,7 @@ Ces quatre besoins expliquent tous les gestes du jardinier : arroser, fumer le s
 **Objectif spécifique** : localiser la zone d'absorption de l'eau sur une racine et décrire le trajet de l'eau jusqu'aux vaisseaux conducteurs.
 **Support et matériel** : jeunes plants de maïs ou de haricot germés sur coton humide (racines visibles), loupe, schéma de racine au tableau, deux tubes avec huile.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les quatre besoins d'une plante.<br>Par quelle partie la plante prend-elle l'eau du sol ? | R.A. : Eau, sels minéraux, dioxyde de carbone, lumière.<br>R.A. : Par les racines. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -241,7 +241,7 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 **Objectif spécifique** : décrire et justifier les quatre principaux soins d'entretien d'une culture.
 **Support et matériel** : sarcloir ou angady, plate-bande de l'école ou pot de semis trop dense, arrosoir.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Par où la plante absorbe-t-elle l'eau ?<br>Que se passe-t-il si les poils absorbants sont détruits ? | R.A. : Par les poils absorbants, groupés sur la zone pilifère.<br>R.A. : Elle n'absorbe presque plus d'eau. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -340,7 +340,7 @@ Une culture prélève chaque saison des sels minéraux. Si l'on ne rend rien au 
 **Objectif spécifique** : définir un bio-agresseur et classer des exemples dans les trois grandes familles.
 **Support et matériel** : feuilles attaquées récoltées par les élèves (trouées, tachées, enroulées), loupe, tableau de classement.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux soins apportés aux cultures.<br>Pourquoi supprime-t-on les mauvaises herbes ? | R.A. : Le sarclage et l'arrosage raisonné.<br>R.A. : Parce qu'elles prennent l'eau et les sels minéraux. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -447,7 +447,7 @@ Beaucoup d'attaques s'évitent par de bonnes pratiques : semer à la bonne densi
 **Objectif spécifique** : préparer et utiliser une protection naturelle à partir de plantes locales.
 **Support et matériel** : feuilles de voandelaka, piments mûrs, seau, filtre en tissu, savon, pulvérisateur ou bouteille percée.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois familles de bio-agresseurs.<br>Pourquoi faut-il identifier l'agresseur avant de traiter ? | R.A. : Agents pathogènes, ravageurs, adventices.<br>R.A. : Parce que le traitement n'est pas le même. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -547,7 +547,7 @@ Les règles sont donc les mêmes que pour n'importe quel produit de traitement :
 **Objectif spécifique** : distinguer les trois classes de pesticides et énoncer les règles de sécurité de leur emploi.
 **Support et matériel** : emballages vides et **rincés** de produits du commerce (étiquettes lisibles), gants, verre gradué, affiche des pictogrammes de danger.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Comment prépare-t-on un purin de feuilles ?<br>Combien de temps dure son effet ? | R.A. : On broie, on fait macérer, on filtre, on dilue.<br>R.A. : Quelques jours seulement. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||

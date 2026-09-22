@@ -336,10 +336,31 @@ Ce sont des contenus concrets, contextualisés Madagascar, directement transposa
 | **P1** | Corriger l'**avant-propos** (thématiques annoncées fausses) | 1 § |
 | **P1** | Donner un **objectif spécifique par séance** | 41 |
 | **P1** | Varier les **types d'exercices** + créer les schémas à légender annoncés | tout le manuel |
-| **P2** | Reprendre **valeurs à véhiculer** et **répartition horaire** du PE T9 | 5 unités |
-| **P2** | Ajouter la **bibliographie / Loharanom-Baovao** | 1 section |
-| **P2** | « Étapes » → « Étapes et Durée » ; Synthèse → « Donc, … » ; « 4e » → « 3e » ; `• •` ; doubles espaces ; légendes d'images | global |
+| ~~**P2**~~ ✅ | Reprendre **valeurs à véhiculer** et **répartition horaire** du PE T9 | 5 unités |
+| ~~**P2**~~ ✅ | Ajouter la **bibliographie / Loharanom-Baovao** | 1 section |
+| ~~**P2**~~ ✅ | « Étapes » → « Étapes et Durée » ; Synthèse → « Donc, … » ; « 4e » → « 3e » ; `• •` ; doubles espaces ; légendes d'images | global |
 
 **Recommandation.** Les écarts P0 ne sont pas des corrections de détail : ils portent sur le contenu pédagogique lui-même, séance par séance. Une passe automatisée ne peut pas les traiter — il faut réécrire le fond à partir des contenus du PE T9 (§5.3), qui fournit la matière nécessaire.
 
-Conformément au **temps 4** de `audit-conformite.md` et à la **règle critique 14**, aucune correction n'a été appliquée. Indiquez par quel chantier commencer (P0 séance par séance, ou d'abord les points P2 globaux qui sont mécaniques et sans risque).
+Conformément au **temps 4** de `audit-conformite.md` et à la **règle critique 14**, aucune correction n'avait été appliquée au moment de l'audit. Le chantier **P2 est depuis traité en totalité** (voir ci-dessous) ; les chantiers **P0 et P1 restent ouverts** et attendent votre arbitrage.
+
+---
+
+## 7. Suites données — chantier P2 (clos)
+
+Les points P2 étaient mécaniques et sans risque pédagogique : ils ont été traités
+intégralement. Le détail, pour que la vérification soit possible ligne à ligne :
+
+| Point P2 | Traitement | Vérification |
+|---|---|---|
+| Valeurs à véhiculer du PE T9 | Chaque unité porte désormais les valeurs **propres à sa thématique** (autonomie/créativité, respect de toute vie/excellence, connaissance de soi/altruisme, estime de soi/responsabilité, responsabilité/bien commun) au lieu d'une formule générique unique | En-tête de chaque unité + sommaire du manuel |
+| Répartition horaire | Section **« Volume horaire »** en tête de manuel : durée PE, nombre de séances et temps moyen par unité, avec le point de vigilance sur l'Unité I (12 séances pour 10 h) et deux solutions concrètes | Tête du manuel assemblé |
+| « Étapes » → « Étapes et Durée » | **41 tableaux de déroulement** corrigés | `grep -c '^| Étapes |'` → 0 occurrence restante |
+| Synthèse → « Donc, … » | Toutes les synthèses commencent par **« Donc, »** | Contrôle automatisé de `verifier_manuel.py` |
+| « 4e » → « 3e » | Sans objet dans la réécriture : l'occurrence fautive appartenait au document d'origine, elle n'a pas été reprise | `grep "4e"` hors « 4e étape » → 0 |
+| `• •`, doubles espaces | 0 occurrence | `verifier_manuel.py` |
+| Légendes d'images | **45 illustrations** légendées, plus une annexe **Table des illustrations** avec liens vers les séances | Annexe du manuel |
+| Bibliographie / Loharanom-Baovao | Section finale **« Loharanom-Baovao — Bibliographie générale »**, consolidant les sources par unité (règle critique 13) | Annexe du manuel |
+
+**État du contrôle qualité : 28/28.** Les contrôles tournent aussi en intégration
+continue à chaque push (`.github/workflows/verifier-manuel-svt-t9.yml`).

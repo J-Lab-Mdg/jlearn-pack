@@ -75,7 +75,7 @@ Barème **20 points** · champ **Durée laissé vide** · **aucune durée** sur 
 **Objectif spécifique** : traiter un sujet complet portant sur les séances 1 à 10, puis identifier ses propres erreurs à l'aide du corrigé commenté.
 **Support et matériel** : sujet recopié au tableau ou polycopié, cahier de brouillon, calculatrice si disponible.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : combien de kilocalories apporte 1 g de lipides ? Et 1 g de glucides ? | R.A. : 9 kcal.<br>R.A. : 4 kcal. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -192,7 +192,7 @@ Réponds-lui en deux arguments tirés de la leçon.
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 1 à 10 — nutriments, valeur énergétique, besoins, équilibre alimentaire, malnutrition.
 **Support et matériel** : sujet polycopié ou recopié au tableau, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question sur le fond ne sera prise pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -322,7 +322,7 @@ Deux réponses attendues parmi :
 **Objectif spécifique** : traiter un sujet complet portant sur les séances 13 à 22, puis identifier ses propres erreurs à l'aide du corrigé commenté.
 **Support et matériel** : sujet recopié au tableau ou polycopié, cahier de brouillon.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : par où une plante absorbe-t-elle l'eau ? Citez une maladie qui décime les volailles. | R.A. : Par les poils absorbants des racines.<br>R.A. : La maladie de Newcastle. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -430,7 +430,7 @@ Réponds-lui en deux arguments.
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 13 à 22 — nutrition des plantes, protection des cultures, besoins et soins des animaux d'élevage.
 **Support et matériel** : sujet polycopié ou recopié au tableau, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -562,7 +562,7 @@ L'avis attendu comporte :
 **Objectif spécifique** : traiter un sujet complet portant sur les séances 25 à 33, puis identifier ses propres erreurs à l'aide du corrigé commenté.
 **Support et matériel** : sujet recopié au tableau ou polycopié, cahier de brouillon.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : quelles sont les trois parties de l'encéphale ? Qui commande le réflexe de retrait ? | R.A. : Cerveau, cervelet, tronc cérébral.<br>R.A. : La moelle épinière. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -673,7 +673,7 @@ Réponds-lui en deux arguments, sans le juger.
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 25 à 33 — organisation du système nerveux, mouvements réflexes et volontaires, substances psychoactives, hygiène nerveuse.
 **Support et matériel** : sujet polycopié ou recopié au tableau, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -809,7 +809,7 @@ Un élève de votre classe dort 5 heures par nuit, regarde un écran jusque tard
 
 > 🧑‍🏫 **Note à l'enseignant.** Les quatre règles de registre posées à l'unité IV s'appliquent intégralement à ces deux séances : on **nomme et on explique sans jamais montrer** ; **la malade n'est jamais tenue pour coupable** ; **aucun protocole médical** n'est exigé d'un élève de T9 ; **toute réponse se conclut sur une action possible**. Les corrigés en tiennent compte dans leur barème.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : qu'est-ce qu'une fistule obstétricale ? À quel âge l'OMS recommande-t-elle de commencer le dépistage ? | R.A. : Une ouverture anormale reliant le vagin à la vessie ou au rectum.<br>R.A. : Dès 30 ans. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -932,7 +932,7 @@ La réponse attendue comporte :
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 36 à 41 — fistule obstétricale, grossesse précoce et suivi médical, cancer du col, dépistage et prévention.
 **Support et matériel** : sujet polycopié ou recopié au tableau, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1048,7 +1048,7 @@ Une jeune fille de 16 ans est enceinte. Sa famille hésite à l'emmener en consu
 **Objectif spécifique** : traiter un sujet complet portant sur les séances 44 à 49, puis identifier ses propres erreurs à l'aide du corrigé commenté.
 **Support et matériel** : sujet recopié au tableau ou polycopié, carte de Madagascar, cahier de brouillon.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : quel minéral occupe le rang 10 de l'échelle de Mohs ? Quelle localité est célèbre pour le saphir ? | R.A. : Le diamant.<br>R.A. : Ilakaka. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1161,7 +1161,7 @@ Réponds-lui en deux arguments.
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 44 à 49 — familles de pierres gemmes, propriétés physiques, répartition à Madagascar, utilisations, exploitation et impacts.
 **Support et matériel** : sujet polycopié ou recopié au tableau, carte de Madagascar, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||

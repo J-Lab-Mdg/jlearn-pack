@@ -64,7 +64,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 **Objectif spécifique** : établir les besoins d'un animal élevé dans sa localité en complétant une fiche d'observation.
 **Support et matériel** : la fiche d'enquête ci-dessous recopiée au tableau ou polycopiée, cahier, crayon ; si possible un animal observable à proximité de l'école (poule, canard, porcelet) ou des photographies.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les quatre besoins d'une plante ?<br>Un animal a-t-il les mêmes besoins qu'une plante ? | R.A. : Eau, sels minéraux, dioxyde de carbone, lumière.<br>R.A. : Non, il mange et il se déplace. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -189,7 +189,7 @@ C'est pourquoi la première chose à faire devant un élevage qui produit mal n'
 **Objectif spécifique** : proposer une ration et un abri adaptés à un animal d'élevage à partir des ressources disponibles localement.
 **Support et matériel** : échantillons d'aliments locaux (son de riz, manioc, patate douce, feuilles d'amarante), balance si disponible, croquis de poulailler au tableau, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les cinq besoins d'un animal d'élevage.<br>Lequel commande le résultat de l'élevage ? | R.A. : Nourriture, eau, abri, soins, espace.<br>R.A. : Le besoin le plus mal satisfait. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -303,7 +303,7 @@ Les déjections des volailles sont un **excellent engrais azoté**. L'élevage n
 **Objectif spécifique** : expliquer le rôle de la vaccination et du déparasitage dans un élevage et justifier qu'il faut vacciner avant l'apparition de la maladie.
 **Support et matériel** : flacon de vaccin vide ou photographie, calendrier de l'année au tableau, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel complément journalier conseille-t-on par poule ?<br>Citez deux règles de construction d'un bon poulailler. | R.A. : Environ 35 g de grain.<br>R.A. : Porte étroite, sol sec et surélevé. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -407,7 +407,7 @@ Le raisonnement vaut pour toutes les espèces. Chez le **zébu**, les jeunes vea
 **Objectif spécifique** : associer différentes techniques d'amélioration aux espèces élevées dans la communauté et évaluer chiffrement leur effet.
 **Support et matériel** : tableau des résultats d'essais à recopier, fiches d'enquête de la séance 19, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Pourquoi faut-il vacciner avant l'arrivée de la maladie ?<br>Que fait le déparasitage ? | R.A. : Parce que la protection met une à deux semaines à s'installer.<br>R.A. : Il élimine les vers qui affaiblissent l'animal. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||

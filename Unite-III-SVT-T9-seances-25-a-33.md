@@ -46,7 +46,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 **Objectif spécifique** : distinguer le système nerveux central du système nerveux périphérique et nommer leurs constituants.
 **Support et matériel** : schéma du système nerveux au tableau, silhouette humaine dessinée sur papier kraft.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quand vous touchez un objet très chaud, que fait votre main ?<br>Qui a commandé ce mouvement ? | R.A. : Elle se retire tout de suite.<br>R.A. : Le cerveau, ou quelque chose dans le corps. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -153,7 +153,7 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 **Objectif spécifique** : attribuer à chaque partie du système nerveux la fonction qu'elle assure.
 **Support et matériel** : schéma de l'encéphale, tableau de correspondance à compléter.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les deux parties du système nerveux central.<br>De quoi est fait le système périphérique ? | R.A. : L'encéphale et la moelle épinière.<br>R.A. : Des nerfs et des ganglions. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -276,7 +276,7 @@ La plupart des nerfs contiennent à la fois des fibres sensitives et des fibres 
 **Objectif spécifique** : caractériser le mouvement réflexe inné et en reconnaître des exemples.
 **Support et matériel** : marteau à réflexes ou règle, lampe de poche, quartier de citron.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel est le centre des réflexes ?<br>Que commande le cerveau ? | R.A. : La moelle épinière.<br>R.A. : Les mouvements voulus, la pensée, la mémoire. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -382,7 +382,7 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 **Objectif spécifique** : caractériser le mouvement réflexe acquis et le distinguer du réflexe inné.
 **Support et matériel** : image d'un plat très apprécié des élèves, tableau comparatif à compléter.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux caractères du réflexe inné.<br>Quel est son centre nerveux ? | R.A. : Involontaire et inné.<br>R.A. : La moelle épinière ou le tronc cérébral. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -488,7 +488,7 @@ Prenons le citron. S'il est **placé dans la bouche**, l'acide stimule directeme
 **Objectif spécifique** : caractériser le mouvement volontaire et le comparer aux deux types de réflexes.
 **Support et matériel** : objets à saisir, tableau comparatif des trois réactions.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce qu'un réflexe acquis ?<br>Qu'est-ce qui le distingue du réflexe inné ? | R.A. : Une réaction automatique apprise par répétition.<br>R.A. : Il s'apprend, et il peut se perdre. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -600,7 +600,7 @@ C'est là tout l'intérêt de l'apprentissage : en transformant des mouvements v
 **Objectif spécifique** : établir le trajet suivi par l'influx nerveux au cours d'un mouvement réflexe.
 **Support et matériel** : schéma muet de l'arc réflexe, flèches en papier de couleur, marteau à réflexes.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel est le centre du réflexe inné ?<br>Pourquoi le réflexe est-il plus rapide que le mouvement volontaire ? | R.A. : La moelle épinière.<br>R.A. : Parce que le message ne va pas jusqu'au cerveau. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -704,7 +704,7 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 **Objectif spécifique** : classer les substances psychoactives selon leur effet sur le système nerveux.
 **Support et matériel** : fiche de classement à trois colonnes, documents fournis par l'enseignant.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel organe commande la pensée et le jugement ?<br>Que transporte un nerf ? | R.A. : Le cerveau.<br>R.A. : L'influx nerveux, le message. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -809,7 +809,7 @@ Deux conséquences. D'abord, une substance psychoactive perturbe un organe encor
 **Objectif spécifique** : décrire les conséquences des substances psychoactives sur la santé et sur la vie en société.
 **Support et matériel** : tableau à double entrée (organisme / vie sociale), études de cas.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois catégories de substances psychoactives.<br>Qu'est-ce que la dépendance ? | R.A. : Excitants, sédatifs, hallucinogènes.<br>R.A. : Un état où le corps réclame la substance. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -919,7 +919,7 @@ Juger ou rejeter une personne dépendante ne fait qu'aggraver son isolement, don
 **Objectif spécifique** : énoncer les règles d'hygiène du système nerveux et proposer une action de prévention.
 **Support et matériel** : grand papier et feutres pour les affiches, tableau des durées de sommeil.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux effets des substances psychoactives sur la vie sociale.<br>Une personne dépendante peut-elle s'en sortir ? | R.A. : L'échec scolaire et les accidents.<br>R.A. : Oui, si elle est aidée. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||

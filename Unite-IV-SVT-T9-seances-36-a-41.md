@@ -65,7 +65,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 
 > 🧑‍🏫 **Note à l'enseignant.** Cette séance aborde un sujet intime. Posez d'emblée deux règles : on utilise les mots justes, et on ne se moque jamais. Il est possible qu'une élève de la classe connaisse une femme concernée. Indiquez qu'une fistule **se soigne par une opération** dès la première séance : les élèves doivent apprendre cette maladie en sachant qu'elle a une issue.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les organes de l'appareil génital féminin que vous connaissez.<br>Quel organe stocke l'urine ? | R.A. : Les ovaires, l'utérus, le vagin.<br>R.A. : La vessie. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -187,7 +187,7 @@ C'est précisément pour cela que cette leçon existe : une élève qui sait qu'
 **Objectif spécifique** : distinguer les causes médicales et les facteurs sociaux de la fistule obstétricale, décrire ses conséquences et énoncer les comportements de prévention.
 **Support et matériel** : tableau à deux colonnes au tableau noir, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce qu'une fistule obstétricale ?<br>Quel est son symptôme principal ? | R.A. : Une ouverture anormale reliant le vagin à la vessie ou au rectum.<br>R.A. : Une fuite permanente et involontaire d'urine. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -309,7 +309,7 @@ Le principal obstacle n'est pas médical, il est **informationnel** : beaucoup d
 **Objectif spécifique** : expliquer les risques propres à la grossesse chez l'adolescente et décrire le contenu et l'utilité du suivi prénatal.
 **Support et matériel** : schéma comparatif de bassin (adolescente / adulte), carnet de santé maternelle si disponible, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les quatre comportements de prévention de la fistule ?<br>Pourquoi la grossesse précoce est-elle un facteur de risque ? | R.A. : Retarder la première grossesse, consultations prénatales, bonne alimentation, maternité dès le début du travail.<br>R.A. : Parce que le bassin n'est pas fini de grandir. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -429,7 +429,7 @@ Cette séance ne cherche pas à faire peur. Elle transmet trois informations pr�
 **Objectif spécifique** : localiser le col de l'utérus, identifier la cause virale du cancer du col et reconnaître ses symptômes d'alerte.
 **Support et matériel** : schéma de l'appareil génital féminin, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez deux organes du petit bassin.<br>À quoi sert l'utérus ? | R.A. : La vessie, l'utérus, le vagin, le rectum.<br>R.A. : À accueillir et porter le fœtus. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -564,7 +564,7 @@ Quand les symptômes apparaissent, la maladie a déjà progressé.
 **Objectif spécifique** : expliquer les trois niveaux de prévention du cancer du col et justifier la complémentarité de la vaccination et du dépistage.
 **Support et matériel** : tableau des trois niveaux de prévention au tableau, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la cause du cancer du col de l'utérus ?<br>Combien de temps s'écoule entre l'infection et le cancer ? | R.A. : Une infection persistante par le HPV.<br>R.A. : Souvent quinze à vingt ans. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -686,7 +686,7 @@ Les outils existent donc. Ce qui manque encore, dans beaucoup de régions du mon
 
 > 🧑‍🏫 **Note à l'enseignant.** Cette séance répond à une activité **explicitement prescrite par le PE**, qui demande des supports éducatifs ludiques — brochure, affiche, saynète ou slogan — adressés à l'entourage. Elle mobilise toutes les connaissances des séances 36 à 40.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la cause directe de la fistule obstétricale ?<br>Quels sont les deux piliers de la prévention du cancer du col ? | R.A. : Un travail d'accouchement prolongé sans césarienne.<br>R.A. : La vaccination et le dépistage. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||

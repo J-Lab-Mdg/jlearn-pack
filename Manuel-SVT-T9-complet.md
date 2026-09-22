@@ -157,7 +157,7 @@ appliquer séance par séance.
 **Objectif spécifique** : définir la ration alimentaire et classer les aliments selon leur rôle.
 **Support et matériel** : pyramide alimentaire dessinée au tableau, photo d'un repas malgache.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez trois aliments que vous avez mangés hier.<br>Mange-t-on la même chose à chaque repas ? | R.A. : Du riz, des brèdes, du poisson.<br>R.A. : Non, les aliments changent d'un repas à l'autre. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -247,7 +247,7 @@ Un repas simple et complet peut être composé de riz, de haricots, de brèdes e
 **Objectif spécifique** : distinguer les glucides, les lipides et les protéines et indiquer leur rôle.
 **Support et matériel** : échantillons réels (riz, huile, arachides, haricots secs) dans quatre coupelles.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les trois groupes d'aliments ?<br>Donne un exemple d'aliment bâtisseur. | R.A. : Énergétiques, bâtisseurs, protecteurs.<br>R.A. : Le poisson, la viande, les haricots. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -339,7 +339,7 @@ Un test simple permet de repérer les lipides : frotter l'aliment sur du papier.
 **Objectif spécifique** : expliquer le rôle des vitamines, des sels minéraux et de l'eau, et citer leurs sources.
 **Support et matériel** : fruits et légumes locaux (mangue, orange, brèdes), verre d'eau, os sec.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les trois nutriments qui apportent de l'énergie ?<br>Quel nutriment construit les muscles ? | R.A. : Les glucides, les lipides et les protéines.<br>R.A. : Les protéines. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -436,7 +436,7 @@ Le corps perd de l'eau en permanence — par l'urine, la sueur et la respiration
 **Objectif spécifique** : calculer la valeur énergétique d'un aliment et d'un repas à partir de sa composition en nutriments
 **Support et matériel** : étiquettes nutritionnelles d'emballages, tableau des coefficients, ardoises de groupe
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois nutriments qui apportent de l'énergie.<br>Quel nutriment construit et répare le corps ?<br>Les vitamines apportent-elles de l'énergie ? | R.A. : Les glucides, les lipides et les protéines.<br>R.A. : Les protéines construisent et réparent l'organisme.<br>R.A. : Non, elles protègent et régulent, elles n'apportent pas d'énergie. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -559,7 +559,7 @@ Connaître la valeur énergétique permet de comparer deux aliments et d'adapter
 **Objectif spécifique** : définir le métabolisme de base et citer les facteurs qui font varier les besoins énergétiques.
 **Support et matériel** : tableau des besoins par âge écrit au tableau.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Combien de kcal apporte 1 g de lipides ?<br>Comment calcule-t-on l'énergie d'un aliment ? | R.A. : 9 kcal.<br>R.A. : On multiplie la masse de chaque nutriment par son coefficient, puis on additionne. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -651,7 +651,7 @@ Les besoins diffèrent entre hommes et femmes. Ils augmentent également lors de
 **Objectif spécifique** : calculer l'apport énergétique d'une journée et le comparer aux besoins d'une personne.
 **Support et matériel** : tableau de composition d'aliments, tableau des besoins par âge.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce que le métabolisme de base ?<br>Quels sont les besoins d'un adolescent de 14 ans ? | R.A. : L'énergie minimale dépensée au repos pour les fonctions vitales.<br>R.A. : Entre 2 200 et 2 900 kcal par jour. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -744,7 +744,7 @@ Un total correct ne garantit pas pour autant une bonne alimentation : une journ�
 **Objectif spécifique** : composer un menu d'une journée équilibré à partir d'aliments locaux.
 **Support et matériel** : étiquettes d'aliments locaux à disposer, assiette dessinée au tableau.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Comment calcule-t-on l'apport énergétique d'une journée ?<br>À quoi compare-t-on ce total ? | R.A. : On additionne l'énergie de tous les repas.<br>R.A. : Aux besoins liés à l'âge et à l'activité. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -842,7 +842,7 @@ Varier d'un jour à l'autre à l'intérieur de chaque groupe évite la monotonie
 **Objectif spécifique** : justifier l'importance d'une alimentation équilibrée pour la santé et la croissance.
 **Support et matériel** : deux menus imprimés à comparer.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Comment se répartit une assiette équilibrée ?<br>Pourquoi varier les aliments ? | R.A. : Moitié légumes et fruits, un quart féculents, un quart bâtisseurs.<br>R.A. : Pour apporter tous les nutriments et éviter les carences. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -927,7 +927,7 @@ Il n'existe pas une ration unique valable pour tous. Un adolescent en pleine cro
 **Objectif spécifique** : distinguer les formes de malnutrition par insuffisance et en citer les causes et conséquences.
 **Support et matériel** : courbe de croissance, tableau des quatre formes de malnutrition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Que permet une alimentation équilibrée ?<br>Que risque une personne dont la ration est insuffisante ? | R.A. : La croissance, la résistance aux maladies et l'activité.<br>R.A. : Des carences, de la fatigue et un affaiblissement. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1022,7 +1022,7 @@ La prévention repose sur des gestes accessibles : **varier** les aliments à l'
 **Objectif spécifique** : expliquer l'origine du surpoids et proposer un menu d'appoint adapté à une situation de malnutrition.
 **Support et matériel** : balance, deux fiches de menus d'appoint.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois formes de malnutrition par insuffisance.<br>Qu'est-ce que la faim cachée ? | R.A. : Chronique, aiguë et carences en micronutriments.<br>R.A. : Un manque de vitamines ou de sels minéraux alors qu'on mange à sa faim. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1123,7 +1123,7 @@ Dans les deux cas, le menu d'appoint ne se contente pas d'ajouter ou de retirer 
 **Objectif spécifique** : traiter un sujet complet portant sur les séances 1 à 10, puis identifier ses propres erreurs à l'aide du corrigé commenté.
 **Support et matériel** : sujet recopié au tableau ou polycopié, cahier de brouillon, calculatrice si disponible.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : combien de kilocalories apporte 1 g de lipides ? Et 1 g de glucides ? | R.A. : 9 kcal.<br>R.A. : 4 kcal. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1241,7 +1241,7 @@ Réponds-lui en deux arguments tirés de la leçon.
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 1 à 10 — nutriments, valeur énergétique, besoins, équilibre alimentaire, malnutrition.
 **Support et matériel** : sujet polycopié ou recopié au tableau, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question sur le fond ne sera prise pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1371,7 +1371,7 @@ Deux réponses attendues parmi :
 **Objectif spécifique** : identifier, à partir d'expériences, les quatre éléments dont une plante a besoin pour vivre et croître.
 **Support et matériel** : 8 jeunes plants de même taille, bocaux ou boîtes de conserve, eau de pluie, eau salée minéralisée, carton pour l'obscurité.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | De quoi l'être humain a-t-il besoin chaque jour pour vivre ?<br>Une plante mange-t-elle comme nous ? | R.A. : De nourriture, d'eau, d'air.<br>R.A. : Non, elle n'a pas de bouche. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1466,7 +1466,7 @@ Ces quatre besoins expliquent tous les gestes du jardinier : arroser, fumer le s
 **Objectif spécifique** : localiser la zone d'absorption de l'eau sur une racine et décrire le trajet de l'eau jusqu'aux vaisseaux conducteurs.
 **Support et matériel** : jeunes plants de maïs ou de haricot germés sur coton humide (racines visibles), loupe, schéma de racine au tableau, deux tubes avec huile.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les quatre besoins d'une plante.<br>Par quelle partie la plante prend-elle l'eau du sol ? | R.A. : Eau, sels minéraux, dioxyde de carbone, lumière.<br>R.A. : Par les racines. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1565,7 +1565,7 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 **Objectif spécifique** : décrire et justifier les quatre principaux soins d'entretien d'une culture.
 **Support et matériel** : sarcloir ou angady, plate-bande de l'école ou pot de semis trop dense, arrosoir.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Par où la plante absorbe-t-elle l'eau ?<br>Que se passe-t-il si les poils absorbants sont détruits ? | R.A. : Par les poils absorbants, groupés sur la zone pilifère.<br>R.A. : Elle n'absorbe presque plus d'eau. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1666,7 +1666,7 @@ Une culture prélève chaque saison des sels minéraux. Si l'on ne rend rien au 
 **Objectif spécifique** : définir un bio-agresseur et classer des exemples dans les trois grandes familles.
 **Support et matériel** : feuilles attaquées récoltées par les élèves (trouées, tachées, enroulées), loupe, tableau de classement.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux soins apportés aux cultures.<br>Pourquoi supprime-t-on les mauvaises herbes ? | R.A. : Le sarclage et l'arrosage raisonné.<br>R.A. : Parce qu'elles prennent l'eau et les sels minéraux. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1775,7 +1775,7 @@ Beaucoup d'attaques s'évitent par de bonnes pratiques : semer à la bonne densi
 **Objectif spécifique** : préparer et utiliser une protection naturelle à partir de plantes locales.
 **Support et matériel** : feuilles de voandelaka, piments mûrs, seau, filtre en tissu, savon, pulvérisateur ou bouteille percée.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois familles de bio-agresseurs.<br>Pourquoi faut-il identifier l'agresseur avant de traiter ? | R.A. : Agents pathogènes, ravageurs, adventices.<br>R.A. : Parce que le traitement n'est pas le même. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1877,7 +1877,7 @@ Les règles sont donc les mêmes que pour n'importe quel produit de traitement :
 **Objectif spécifique** : distinguer les trois classes de pesticides et énoncer les règles de sécurité de leur emploi.
 **Support et matériel** : emballages vides et **rincés** de produits du commerce (étiquettes lisibles), gants, verre gradué, affiche des pictogrammes de danger.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Comment prépare-t-on un purin de feuilles ?<br>Combien de temps dure son effet ? | R.A. : On broie, on fait macérer, on filtre, on dilue.<br>R.A. : Quelques jours seulement. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -1984,7 +1984,7 @@ Méthodes naturelles et chimiques ne s'excluent pas. La démarche raisonnable co
 **Objectif spécifique** : établir les besoins d'un animal élevé dans sa localité en complétant une fiche d'observation.
 **Support et matériel** : la fiche d'enquête ci-dessous recopiée au tableau ou polycopiée, cahier, crayon ; si possible un animal observable à proximité de l'école (poule, canard, porcelet) ou des photographies.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les quatre besoins d'une plante ?<br>Un animal a-t-il les mêmes besoins qu'une plante ? | R.A. : Eau, sels minéraux, dioxyde de carbone, lumière.<br>R.A. : Non, il mange et il se déplace. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -2111,7 +2111,7 @@ C'est pourquoi la première chose à faire devant un élevage qui produit mal n'
 **Objectif spécifique** : proposer une ration et un abri adaptés à un animal d'élevage à partir des ressources disponibles localement.
 **Support et matériel** : échantillons d'aliments locaux (son de riz, manioc, patate douce, feuilles d'amarante), balance si disponible, croquis de poulailler au tableau, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les cinq besoins d'un animal d'élevage.<br>Lequel commande le résultat de l'élevage ? | R.A. : Nourriture, eau, abri, soins, espace.<br>R.A. : Le besoin le plus mal satisfait. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -2227,7 +2227,7 @@ Les déjections des volailles sont un **excellent engrais azoté**. L'élevage n
 **Objectif spécifique** : expliquer le rôle de la vaccination et du déparasitage dans un élevage et justifier qu'il faut vacciner avant l'apparition de la maladie.
 **Support et matériel** : flacon de vaccin vide ou photographie, calendrier de l'année au tableau, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel complément journalier conseille-t-on par poule ?<br>Citez deux règles de construction d'un bon poulailler. | R.A. : Environ 35 g de grain.<br>R.A. : Porte étroite, sol sec et surélevé. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -2333,7 +2333,7 @@ Le raisonnement vaut pour toutes les espèces. Chez le **zébu**, les jeunes vea
 **Objectif spécifique** : associer différentes techniques d'amélioration aux espèces élevées dans la communauté et évaluer chiffrement leur effet.
 **Support et matériel** : tableau des résultats d'essais à recopier, fiches d'enquête de la séance 19, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Pourquoi faut-il vacciner avant l'arrivée de la maladie ?<br>Que fait le déparasitage ? | R.A. : Parce que la protection met une à deux semaines à s'installer.<br>R.A. : Il élimine les vers qui affaiblissent l'animal. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -2466,7 +2466,7 @@ Changer de race avant d'avoir réglé la nourriture et les soins conduit presque
 **Objectif spécifique** : traiter un sujet complet portant sur les séances 13 à 22, puis identifier ses propres erreurs à l'aide du corrigé commenté.
 **Support et matériel** : sujet recopié au tableau ou polycopié, cahier de brouillon.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : par où une plante absorbe-t-elle l'eau ? Citez une maladie qui décime les volailles. | R.A. : Par les poils absorbants des racines.<br>R.A. : La maladie de Newcastle. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -2575,7 +2575,7 @@ Réponds-lui en deux arguments.
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 13 à 22 — nutrition des plantes, protection des cultures, besoins et soins des animaux d'élevage.
 **Support et matériel** : sujet polycopié ou recopié au tableau, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -2707,7 +2707,7 @@ L'avis attendu comporte :
 **Objectif spécifique** : distinguer le système nerveux central du système nerveux périphérique et nommer leurs constituants.
 **Support et matériel** : schéma du système nerveux au tableau, silhouette humaine dessinée sur papier kraft.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quand vous touchez un objet très chaud, que fait votre main ?<br>Qui a commandé ce mouvement ? | R.A. : Elle se retire tout de suite.<br>R.A. : Le cerveau, ou quelque chose dans le corps. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -2816,7 +2816,7 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 **Objectif spécifique** : attribuer à chaque partie du système nerveux la fonction qu'elle assure.
 **Support et matériel** : schéma de l'encéphale, tableau de correspondance à compléter.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les deux parties du système nerveux central.<br>De quoi est fait le système périphérique ? | R.A. : L'encéphale et la moelle épinière.<br>R.A. : Des nerfs et des ganglions. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -2941,7 +2941,7 @@ La plupart des nerfs contiennent à la fois des fibres sensitives et des fibres 
 **Objectif spécifique** : caractériser le mouvement réflexe inné et en reconnaître des exemples.
 **Support et matériel** : marteau à réflexes ou règle, lampe de poche, quartier de citron.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel est le centre des réflexes ?<br>Que commande le cerveau ? | R.A. : La moelle épinière.<br>R.A. : Les mouvements voulus, la pensée, la mémoire. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -3049,7 +3049,7 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 **Objectif spécifique** : caractériser le mouvement réflexe acquis et le distinguer du réflexe inné.
 **Support et matériel** : image d'un plat très apprécié des élèves, tableau comparatif à compléter.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux caractères du réflexe inné.<br>Quel est son centre nerveux ? | R.A. : Involontaire et inné.<br>R.A. : La moelle épinière ou le tronc cérébral. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -3157,7 +3157,7 @@ Prenons le citron. S'il est **placé dans la bouche**, l'acide stimule directeme
 **Objectif spécifique** : caractériser le mouvement volontaire et le comparer aux deux types de réflexes.
 **Support et matériel** : objets à saisir, tableau comparatif des trois réactions.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce qu'un réflexe acquis ?<br>Qu'est-ce qui le distingue du réflexe inné ? | R.A. : Une réaction automatique apprise par répétition.<br>R.A. : Il s'apprend, et il peut se perdre. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -3271,7 +3271,7 @@ C'est là tout l'intérêt de l'apprentissage : en transformant des mouvements v
 **Objectif spécifique** : établir le trajet suivi par l'influx nerveux au cours d'un mouvement réflexe.
 **Support et matériel** : schéma muet de l'arc réflexe, flèches en papier de couleur, marteau à réflexes.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel est le centre du réflexe inné ?<br>Pourquoi le réflexe est-il plus rapide que le mouvement volontaire ? | R.A. : La moelle épinière.<br>R.A. : Parce que le message ne va pas jusqu'au cerveau. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -3377,7 +3377,7 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 **Objectif spécifique** : classer les substances psychoactives selon leur effet sur le système nerveux.
 **Support et matériel** : fiche de classement à trois colonnes, documents fournis par l'enseignant.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quel organe commande la pensée et le jugement ?<br>Que transporte un nerf ? | R.A. : Le cerveau.<br>R.A. : L'influx nerveux, le message. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -3484,7 +3484,7 @@ Deux conséquences. D'abord, une substance psychoactive perturbe un organe encor
 **Objectif spécifique** : décrire les conséquences des substances psychoactives sur la santé et sur la vie en société.
 **Support et matériel** : tableau à double entrée (organisme / vie sociale), études de cas.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite les trois catégories de substances psychoactives.<br>Qu'est-ce que la dépendance ? | R.A. : Excitants, sédatifs, hallucinogènes.<br>R.A. : Un état où le corps réclame la substance. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -3596,7 +3596,7 @@ Juger ou rejeter une personne dépendante ne fait qu'aggraver son isolement, don
 **Objectif spécifique** : énoncer les règles d'hygiène du système nerveux et proposer une action de prévention.
 **Support et matériel** : grand papier et feutres pour les affiches, tableau des durées de sommeil.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Cite deux effets des substances psychoactives sur la vie sociale.<br>Une personne dépendante peut-elle s'en sortir ? | R.A. : L'échec scolaire et les accidents.<br>R.A. : Oui, si elle est aidée. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -3724,7 +3724,7 @@ Le message doit rester **court, positif et exact**. Un slogan qui effraie sans e
 **Objectif spécifique** : traiter un sujet complet portant sur les séances 25 à 33, puis identifier ses propres erreurs à l'aide du corrigé commenté.
 **Support et matériel** : sujet recopié au tableau ou polycopié, cahier de brouillon.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : quelles sont les trois parties de l'encéphale ? Qui commande le réflexe de retrait ? | R.A. : Cerveau, cervelet, tronc cérébral.<br>R.A. : La moelle épinière. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -3836,7 +3836,7 @@ Réponds-lui en deux arguments, sans le juger.
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 25 à 33 — organisation du système nerveux, mouvements réflexes et volontaires, substances psychoactives, hygiène nerveuse.
 **Support et matériel** : sujet polycopié ou recopié au tableau, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -3972,7 +3972,7 @@ Un élève de votre classe dort 5 heures par nuit, regarde un écran jusque tard
 
 > 🧑‍🏫 **Note à l'enseignant.** Cette séance aborde un sujet intime. Posez d'emblée deux règles : on utilise les mots justes, et on ne se moque jamais. Il est possible qu'une élève de la classe connaisse une femme concernée. Indiquez qu'une fistule **se soigne par une opération** dès la première séance : les élèves doivent apprendre cette maladie en sachant qu'elle a une issue.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les organes de l'appareil génital féminin que vous connaissez.<br>Quel organe stocke l'urine ? | R.A. : Les ovaires, l'utérus, le vagin.<br>R.A. : La vessie. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -4096,7 +4096,7 @@ C'est précisément pour cela que cette leçon existe : une élève qui sait qu'
 **Objectif spécifique** : distinguer les causes médicales et les facteurs sociaux de la fistule obstétricale, décrire ses conséquences et énoncer les comportements de prévention.
 **Support et matériel** : tableau à deux colonnes au tableau noir, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Qu'est-ce qu'une fistule obstétricale ?<br>Quel est son symptôme principal ? | R.A. : Une ouverture anormale reliant le vagin à la vessie ou au rectum.<br>R.A. : Une fuite permanente et involontaire d'urine. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -4220,7 +4220,7 @@ Le principal obstacle n'est pas médical, il est **informationnel** : beaucoup d
 **Objectif spécifique** : expliquer les risques propres à la grossesse chez l'adolescente et décrire le contenu et l'utilité du suivi prénatal.
 **Support et matériel** : schéma comparatif de bassin (adolescente / adulte), carnet de santé maternelle si disponible, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quels sont les quatre comportements de prévention de la fistule ?<br>Pourquoi la grossesse précoce est-elle un facteur de risque ? | R.A. : Retarder la première grossesse, consultations prénatales, bonne alimentation, maternité dès le début du travail.<br>R.A. : Parce que le bassin n'est pas fini de grandir. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -4342,7 +4342,7 @@ Cette séance ne cherche pas à faire peur. Elle transmet trois informations pr�
 **Objectif spécifique** : localiser le col de l'utérus, identifier la cause virale du cancer du col et reconnaître ses symptômes d'alerte.
 **Support et matériel** : schéma de l'appareil génital féminin, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez deux organes du petit bassin.<br>À quoi sert l'utérus ? | R.A. : La vessie, l'utérus, le vagin, le rectum.<br>R.A. : À accueillir et porter le fœtus. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -4479,7 +4479,7 @@ Quand les symptômes apparaissent, la maladie a déjà progressé.
 **Objectif spécifique** : expliquer les trois niveaux de prévention du cancer du col et justifier la complémentarité de la vaccination et du dépistage.
 **Support et matériel** : tableau des trois niveaux de prévention au tableau, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la cause du cancer du col de l'utérus ?<br>Combien de temps s'écoule entre l'infection et le cancer ? | R.A. : Une infection persistante par le HPV.<br>R.A. : Souvent quinze à vingt ans. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -4603,7 +4603,7 @@ Les outils existent donc. Ce qui manque encore, dans beaucoup de régions du mon
 
 > 🧑‍🏫 **Note à l'enseignant.** Cette séance répond à une activité **explicitement prescrite par le PE**, qui demande des supports éducatifs ludiques — brochure, affiche, saynète ou slogan — adressés à l'entourage. Elle mobilise toutes les connaissances des séances 36 à 40.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la cause directe de la fistule obstétricale ?<br>Quels sont les deux piliers de la prévention du cancer du col ? | R.A. : Un travail d'accouchement prolongé sans césarienne.<br>R.A. : La vaccination et le dépistage. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -4746,7 +4746,7 @@ C'est là que se rejoignent les deux valeurs de cette thématique. L'**estime de
 
 > 🧑‍🏫 **Note à l'enseignant.** Les quatre règles de registre posées à l'unité IV s'appliquent intégralement à ces deux séances : on **nomme et on explique sans jamais montrer** ; **la malade n'est jamais tenue pour coupable** ; **aucun protocole médical** n'est exigé d'un élève de T9 ; **toute réponse se conclut sur une action possible**. Les corrigés en tiennent compte dans leur barème.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : qu'est-ce qu'une fistule obstétricale ? À quel âge l'OMS recommande-t-elle de commencer le dépistage ? | R.A. : Une ouverture anormale reliant le vagin à la vessie ou au rectum.<br>R.A. : Dès 30 ans. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -4870,7 +4870,7 @@ La réponse attendue comporte :
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 36 à 41 — fistule obstétricale, grossesse précoce et suivi médical, cancer du col, dépistage et prévention.
 **Support et matériel** : sujet polycopié ou recopié au tableau, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -4986,7 +4986,7 @@ Une jeune fille de 16 ans est enceinte. Sa famille hésite à l'emmener en consu
 **Objectif spécifique** : distinguer les pierres précieuses, les pierres fines et les pierres organiques, et justifier ce classement.
 **Support et matériel** : échantillons de pierres si disponibles (quartz, améthyste, agate, morceau de corail ou de nacre), photographies, tableau à double entrée au tableau noir.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez des richesses du sous-sol malgache.<br>Connaissez-vous des pierres extraites à Madagascar ? | R.A. : L'or, le graphite, le nickel, les pierres.<br>R.A. : Le saphir, le rubis, parfois l'améthyste. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -5090,7 +5090,7 @@ Elles se distinguent nettement des deux autres familles : elles ne sont pas née
 
 > ⚠️ **Sécurité — à lire avant la séance.** Le test de rayure projette de fines particules. **Lunettes de protection et gants sont obligatoires** ; ce sont les matériels que le PE prévoit lui-même. Les tests se font **sur une table, jamais dans la main**. L'enseignant réalise seul toute manipulation nécessitant un marteau. On ne teste **jamais** un bijou appartenant à quelqu'un.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois familles de gemmes.<br>Quelles sont les trois qualités d'une gemme ? | R.A. : Précieuses, fines, organiques.<br>R.A. : Beauté, rareté, résistance. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -5210,7 +5210,7 @@ Le grenat, également rouge, aurait été rayé par la topaze — sa dureté ne 
 **Objectif spécifique** : localiser sur une carte de Madagascar les principaux gisements de pierres gemmes et distinguer gisement primaire et gisement secondaire.
 **Support et matériel** : **carte de Madagascar** au tableau ou polycopiée (support prévu par le PE), crayons de couleur, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelles sont les six propriétés physiques d'une gemme ?<br>Quelle est la dureté du corindon ? | R.A. : Couleur, éclat, transparence, dureté, cassure, clivage.<br>R.A. : 9 sur l'échelle de Mohs. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -5332,7 +5332,7 @@ Une question se pose alors, et elle appartient pleinement à cette leçon : **à
 **Objectif spécifique** : mettre en relation les propriétés physiques d'une gemme et ses utilisations en joaillerie et dans l'industrie.
 **Support et matériel** : photographies de bijoux, montre mécanique ouverte si disponible, vitre rayée, échantillons, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la différence entre gisement primaire et secondaire ?<br>Citez deux localités gemmifères malgaches. | R.A. : Le primaire est la roche d'origine, le secondaire résulte d'un transport.<br>R.A. : Ilakaka, Andilamena. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -5442,7 +5442,7 @@ Le commerce des pierres dites « de soin » existe, et il est important à Madag
 **Objectif spécifique** : identifier les trois grandes techniques d'extraction des pierres gemmes et les relier au type de gisement.
 **Support et matériel** : photographies de sites d'extraction, schémas au tableau, bassine, sable et graviers, tamis pour la démonstration de lavage.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la différence entre gisement primaire et secondaire ?<br>D'où vient l'essentiel des saphirs malgaches ? | R.A. : Le primaire est la roche d'origine, le secondaire résulte d'un transport par l'eau.<br>R.A. : De gisements secondaires. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -5558,7 +5558,7 @@ Ses inconvénients sont tout aussi nets. Le travail se déroule **dans l'eau et 
 **Objectif spécifique** : analyser les impacts environnementaux de l'exploitation des gemmes sur l'eau, les sols, la forêt et les populations, et proposer des mesures de réduction.
 **Support et matériel** : photographies de sites avant/après exploitation, bassine d'eau claire et de terre pour la démonstration de turbidité, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois techniques d'exploitation.<br>Laquelle domine à Madagascar ? | R.A. : Ciel ouvert, souterraine, alluviale.<br>R.A. : L'exploitation alluviale. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -5672,7 +5672,7 @@ La vraie question n'est donc pas seulement « combien peut-on extraire ? », mai
 **Objectif spécifique** : traiter un sujet complet portant sur les séances 44 à 49, puis identifier ses propres erreurs à l'aide du corrigé commenté.
 **Support et matériel** : sujet recopié au tableau ou polycopié, carte de Madagascar, cahier de brouillon.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Sans ouvrir votre cahier : quel minéral occupe le rang 10 de l'échelle de Mohs ? Quelle localité est célèbre pour le saphir ? | R.A. : Le diamant.<br>R.A. : Ilakaka. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -5786,7 +5786,7 @@ Réponds-lui en deux arguments.
 **Objectif spécifique** : évaluer la maîtrise des notions des séances 44 à 49 — familles de pierres gemmes, propriétés physiques, répartition à Madagascar, utilisations, exploitation et impacts.
 **Support et matériel** : sujet polycopié ou recopié au tableau, carte de Madagascar, cahier de composition.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Rappel des consignes d'examen. Aucune question de fond pendant l'épreuve. | Les élèves rangent cahiers et livres. | Consigne | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -5918,6 +5918,53 @@ Trois conditions attendues parmi :
 # Annexes
 
 Les sections ci-dessous documentent les choix de fond, les vérifications et les sources, unité par unité. Elles s'adressent à l'enseignant et au validateur pédagogique, non aux élèves.
+
+
+## Loharanom-Baovao — Bibliographie générale
+
+Sources ayant servi à établir ou à vérifier le contenu du manuel. Les blocs
+*Documentation* de chaque unité précisent, eux, quelle source a servi à quelle
+séance. Les données chiffrées des exercices sont fictives : elles ne décrivent
+aucune personne, aucun district ni aucune coopérative réels.
+
+**Référentiel officiel**
+
+- **Programme d'Études — Classe de T9, Sciences de la vie et de la terre**, DCRP — résultats attendus, contenus, stratégies, supports, valeurs à véhiculer, volume horaire.
+
+**Alimentation et nutrition (Unité I)**
+
+- **FAO / INFOODS** — tables de composition des aliments ; coefficients d'Atwater (glucides 4 kcal/g, protéines 4 kcal/g, lipides 9 kcal/g).
+- **Organisation mondiale de la Santé** — repères de malnutrition aiguë, de carences et de surpoids.
+
+**Agriculture et élevage (Unité II)**
+
+- **FAO**, *L'aviculture familiale*, collection Production et santé animales n° 1, ISSN 1810-1127 — systèmes d'élevage, ressources alimentaires locales, conception des abris.
+- **FAO / AIEA** — essais d'amélioration de l'aviculture villageoise à Madagascar : ponte, viabilité des poussins.
+- **FAO** — vaccination contre la maladie de Newcastle en milieu villageois : délais d'immunité, périodicité.
+- **CIRAD** — élevage bovin à Madagascar : conduite du zébu, complémentation en saison sèche.
+- Travaux de **Dutrochet** sur l'osmose (Académie des sciences, 1826) ; solution minérale de **Knop** et **von Sachs** (1860-1865).
+- Inventaire botanique des plantes de Madagascar — distinction *Voandelaka* (*Melia azedarach*) / neem (*Azadirachta indica*) et toxicité.
+
+**Santé et bien-être (Unité III)**
+
+- Travaux de **Pavlov** sur le réflexe conditionné (à partir de 1889).
+- **National Sleep Foundation** — durées de sommeil recommandées par tranche d'âge.
+- Classification en santé publique des substances psychoactives (dépresseurs, stimulants, perturbateurs).
+
+**Reproduction humaine (Unité IV)**
+
+- **Organisation mondiale de la Santé** — stratégie d'élimination du cancer du col de l'utérus ; vaccination anti-HPV des filles de 9 à 14 ans ; dépistage à partir de 30 ans (25 ans en cas de VIH) ; suivi prénatal (au moins huit contacts).
+- **Institut Pasteur**, **Ligue contre le cancer**, **ARCAGY** — facteurs de risque du cancer du col, distinction avec le cancer de l'endomètre.
+
+**Géologie (Unité V)**
+
+- **Friedrich Mohs**, échelle de dureté des minéraux, 1812.
+- Travaux de l'**IRD** et de l'**université d'Antananarivo** (Département des sciences de la Terre) — genèse des gisements de corindons malgaches.
+- Documentation gemmologique publique — gisements d'Ilakaka, d'Andilamena et d'Antsirabe.
+
+**Méthode**
+
+- Skill **`jlearn-manuel-scolaire` v18** — structure de fiche, barème, règles de rédaction et d'illustration.
 
 
 ## Table des illustrations

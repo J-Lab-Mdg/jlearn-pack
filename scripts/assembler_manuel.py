@@ -176,6 +176,58 @@ for n in nums:
 out.append("\n# Annexes\n")
 out.append("Les sections ci-dessous documentent les choix de fond, les vérifications et les sources, unité par unité. Elles s'adressent à l'enseignant et au validateur pédagogique, non aux élèves.\n")
 
+# ---------- Bibliographie générale ----------
+# Règle critique 13 du skill : toute source ayant servi à fiabiliser le contenu
+# est citée en section finale. Les blocs « Documentation » par unité restent en
+# place (ils disent quelle source a servi à quoi) ; cette section les consolide.
+out.append("""
+## Loharanom-Baovao — Bibliographie générale
+
+Sources ayant servi à établir ou à vérifier le contenu du manuel. Les blocs
+*Documentation* de chaque unité précisent, eux, quelle source a servi à quelle
+séance. Les données chiffrées des exercices sont fictives : elles ne décrivent
+aucune personne, aucun district ni aucune coopérative réels.
+
+**Référentiel officiel**
+
+- **Programme d'Études — Classe de T9, Sciences de la vie et de la terre**, DCRP — résultats attendus, contenus, stratégies, supports, valeurs à véhiculer, volume horaire.
+
+**Alimentation et nutrition (Unité I)**
+
+- **FAO / INFOODS** — tables de composition des aliments ; coefficients d'Atwater (glucides 4 kcal/g, protéines 4 kcal/g, lipides 9 kcal/g).
+- **Organisation mondiale de la Santé** — repères de malnutrition aiguë, de carences et de surpoids.
+
+**Agriculture et élevage (Unité II)**
+
+- **FAO**, *L'aviculture familiale*, collection Production et santé animales n° 1, ISSN 1810-1127 — systèmes d'élevage, ressources alimentaires locales, conception des abris.
+- **FAO / AIEA** — essais d'amélioration de l'aviculture villageoise à Madagascar : ponte, viabilité des poussins.
+- **FAO** — vaccination contre la maladie de Newcastle en milieu villageois : délais d'immunité, périodicité.
+- **CIRAD** — élevage bovin à Madagascar : conduite du zébu, complémentation en saison sèche.
+- Travaux de **Dutrochet** sur l'osmose (Académie des sciences, 1826) ; solution minérale de **Knop** et **von Sachs** (1860-1865).
+- Inventaire botanique des plantes de Madagascar — distinction *Voandelaka* (*Melia azedarach*) / neem (*Azadirachta indica*) et toxicité.
+
+**Santé et bien-être (Unité III)**
+
+- Travaux de **Pavlov** sur le réflexe conditionné (à partir de 1889).
+- **National Sleep Foundation** — durées de sommeil recommandées par tranche d'âge.
+- Classification en santé publique des substances psychoactives (dépresseurs, stimulants, perturbateurs).
+
+**Reproduction humaine (Unité IV)**
+
+- **Organisation mondiale de la Santé** — stratégie d'élimination du cancer du col de l'utérus ; vaccination anti-HPV des filles de 9 à 14 ans ; dépistage à partir de 30 ans (25 ans en cas de VIH) ; suivi prénatal (au moins huit contacts).
+- **Institut Pasteur**, **Ligue contre le cancer**, **ARCAGY** — facteurs de risque du cancer du col, distinction avec le cancer de l'endomètre.
+
+**Géologie (Unité V)**
+
+- **Friedrich Mohs**, échelle de dureté des minéraux, 1812.
+- Travaux de l'**IRD** et de l'**université d'Antananarivo** (Département des sciences de la Terre) — genèse des gisements de corindons malgaches.
+- Documentation gemmologique publique — gisements d'Ilakaka, d'Andilamena et d'Antsirabe.
+
+**Méthode**
+
+- Skill **`jlearn-manuel-scolaire` v18** — structure de fiche, barème, règles de rédaction et d'illustration.
+""")
+
 # ---------- Table des illustrations ----------
 # Exigée par le skill v18 (illustrations.md) : liste des images avec lien vers
 # la séance correspondante. Construite à partir du texte assemblé, jamais

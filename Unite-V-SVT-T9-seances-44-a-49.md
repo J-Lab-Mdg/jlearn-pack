@@ -53,7 +53,7 @@ Tableau de déroulement : **Étapes | Enseignant | Apprenants | Technique et Str
 **Objectif spécifique** : distinguer les pierres précieuses, les pierres fines et les pierres organiques, et justifier ce classement.
 **Support et matériel** : échantillons de pierres si disponibles (quartz, améthyste, agate, morceau de corail ou de nacre), photographies, tableau à double entrée au tableau noir.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez des richesses du sous-sol malgache.<br>Connaissez-vous des pierres extraites à Madagascar ? | R.A. : L'or, le graphite, le nickel, les pierres.<br>R.A. : Le saphir, le rubis, parfois l'améthyste. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -155,7 +155,7 @@ Elles se distinguent nettement des deux autres familles : elles ne sont pas née
 
 > ⚠️ **Sécurité — à lire avant la séance.** Le test de rayure projette de fines particules. **Lunettes de protection et gants sont obligatoires** ; ce sont les matériels que le PE prévoit lui-même. Les tests se font **sur une table, jamais dans la main**. L'enseignant réalise seul toute manipulation nécessitant un marteau. On ne teste **jamais** un bijou appartenant à quelqu'un.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois familles de gemmes.<br>Quelles sont les trois qualités d'une gemme ? | R.A. : Précieuses, fines, organiques.<br>R.A. : Beauté, rareté, résistance. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -273,7 +273,7 @@ Le grenat, également rouge, aurait été rayé par la topaze — sa dureté ne 
 **Objectif spécifique** : localiser sur une carte de Madagascar les principaux gisements de pierres gemmes et distinguer gisement primaire et gisement secondaire.
 **Support et matériel** : **carte de Madagascar** au tableau ou polycopiée (support prévu par le PE), crayons de couleur, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelles sont les six propriétés physiques d'une gemme ?<br>Quelle est la dureté du corindon ? | R.A. : Couleur, éclat, transparence, dureté, cassure, clivage.<br>R.A. : 9 sur l'échelle de Mohs. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -393,7 +393,7 @@ Une question se pose alors, et elle appartient pleinement à cette leçon : **à
 **Objectif spécifique** : mettre en relation les propriétés physiques d'une gemme et ses utilisations en joaillerie et dans l'industrie.
 **Support et matériel** : photographies de bijoux, montre mécanique ouverte si disponible, vitre rayée, échantillons, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la différence entre gisement primaire et secondaire ?<br>Citez deux localités gemmifères malgaches. | R.A. : Le primaire est la roche d'origine, le secondaire résulte d'un transport.<br>R.A. : Ilakaka, Andilamena. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -501,7 +501,7 @@ Le commerce des pierres dites « de soin » existe, et il est important à Madag
 **Objectif spécifique** : identifier les trois grandes techniques d'extraction des pierres gemmes et les relier au type de gisement.
 **Support et matériel** : photographies de sites d'extraction, schémas au tableau, bassine, sable et graviers, tamis pour la démonstration de lavage.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Quelle est la différence entre gisement primaire et secondaire ?<br>D'où vient l'essentiel des saphirs malgaches ? | R.A. : Le primaire est la roche d'origine, le secondaire résulte d'un transport par l'eau.<br>R.A. : De gisements secondaires. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
@@ -615,7 +615,7 @@ Ses inconvénients sont tout aussi nets. Le travail se déroule **dans l'eau et 
 **Objectif spécifique** : analyser les impacts environnementaux de l'exploitation des gemmes sur l'eau, les sols, la forêt et les populations, et proposer des mesures de réduction.
 **Support et matériel** : photographies de sites avant/après exploitation, bassine d'eau claire et de terre pour la démonstration de turbidité, cahier.
 
-| Étapes | Enseignant | Apprenants | Technique | Support | Obs. |
+| Étapes et Durée | Enseignant | Apprenants | Technique | Support | Obs. |
 |---|---|---|---|---|---|
 | **I. RÉVISION** | Citez les trois techniques d'exploitation.<br>Laquelle domine à Madagascar ? | R.A. : Ciel ouvert, souterraine, alluviale.<br>R.A. : L'exploitation alluviale. | Questionnement oral | — | |
 | **II. NOUVELLE LEÇON** ||||||
