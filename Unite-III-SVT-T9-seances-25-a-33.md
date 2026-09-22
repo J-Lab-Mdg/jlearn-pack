@@ -127,6 +127,7 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 1. Quelle partie du système nerveux a probablement été touchée ?
 2. Pourquoi les jambes sont-elles à la fois insensibles et immobiles ?
 3. Pourquoi le cœur continue-t-il de battre malgré cette atteinte ?
+4. Un proche en conclut que « le cerveau du blessé est atteint ». Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. L'encéphale comprend : **A.** cerveau, cervelet, tronc cérébral **B.** cerveau seulement **C.** cerveau et nerfs
@@ -142,7 +143,7 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 
 **Ex. 2** — 1. **encéphale** · 2. **vertèbres** · 3. **neurone** · 4. **influx nerveux** · 5. **ganglions** · 6. **autonome**
 
-**Ex. 3** — 1. La **moelle épinière**, au niveau de la colonne vertébrale. 2. Parce que la moelle conduit les messages **dans les deux sens** : les sensations ne remontent plus vers l'encéphale, et les ordres de mouvement ne descendent plus jusqu'aux muscles. 3. Le cœur est commandé par le système nerveux **autonome**, dont les commandes partent du tronc cérébral et empruntent d'autres voies que celles atteintes par la lésion.
+**Ex. 3** — 1. La **moelle épinière**, au niveau de la colonne vertébrale. 2. Parce que la moelle conduit les messages **dans les deux sens** : les sensations ne remontent plus vers l'encéphale, et les ordres de mouvement ne descendent plus jusqu'aux muscles. 3. Le cœur est commandé par le système nerveux **autonome**, dont les commandes partent du tronc cérébral et empruntent d'autres voies que celles atteintes par la lésion. 4. **Rien ne le montre.** Le blessé reste conscient, il parle et comprend : son cerveau fonctionne. L'atteinte porte sur la **voie de communication** entre l'encéphale et les jambes, non sur le centre de commande. Le cerveau donne toujours l'ordre, mais l'ordre **n'arrive plus**.
 
 **Ex. 4** — 1. **A** · 2. **B** · 3. **B** · 4. **B**
 
@@ -250,6 +251,7 @@ La plupart des nerfs contiennent à la fois des fibres sensitives et des fibres 
 1. Indique pour chacun la partie du système nerveux probablement atteinte.
 2. Pourquoi le patient A parvient-il encore à bouger, alors que ses gestes sont maladroits ?
 3. Pourquoi le patient C respire-t-il normalement malgré sa blessure ?
+4. Un élève affirme que « c'est le cerveau qui fait tout ». En quoi les cas A et C le contredisent-ils ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. L'équilibre du corps dépend surtout : **A.** du cerveau **B.** du cervelet **C.** des nerfs
@@ -265,7 +267,7 @@ La plupart des nerfs contiennent à la fois des fibres sensitives et des fibres 
 
 **Ex. 2** — 1. **F** — il ne décide pas, il **coordonne et ajuste** les mouvements décidés par le cerveau. 2. **V** 3. **V** 4. **F** — ce sont les nerfs **sensitifs** ; les nerfs moteurs portent les ordres aux muscles. 5. **F** — elle est aussi le **centre des réflexes**. 6. **V**
 
-**Ex. 3** — 1. A : le **cervelet** · B : le **cerveau** · C : la **moelle épinière**. 2. Parce que la décision du mouvement vient du **cerveau**, qui est intact ; c'est seulement l'**ajustement** du geste, assuré par le cervelet, qui fait défaut. 3. Parce que la respiration est commandée par le **tronc cérébral**, situé bien au-dessus de la blessure : les centres respiratoires et leurs voies ne sont pas touchés.
+**Ex. 3** — 1. A : le **cervelet** · B : le **cerveau** · C : la **moelle épinière**. 2. Parce que la décision du mouvement vient du **cerveau**, qui est intact ; c'est seulement l'**ajustement** du geste, assuré par le cervelet, qui fait défaut. 3. Parce que la respiration est commandée par le **tronc cérébral**, situé bien au-dessus de la blessure : les centres respiratoires et leurs voies ne sont pas touchés. 4. Les deux cas montrent que l'encéphale **travaille en parties spécialisées et complémentaires**. Chez A, le cerveau est intact et décide bien du mouvement, mais le geste est maladroit faute de **cervelet** : la décision ne suffit donc pas. Chez C, la respiration se poursuit sans que le cerveau y pense, car elle dépend du **tronc cérébral**. Le cerveau ne fait pas tout : il commande le volontaire, pas la coordination fine ni les fonctions automatiques.
 
 **Ex. 4** — 1. **B** · 2. **A** · 3. **B** · 4. **B**
 
@@ -356,6 +358,7 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 1. Pourquoi la main s'ouvre-t-elle **avant** qu'il ait mal ?
 2. Quel est le centre nerveux qui a commandé le lâcher ?
 3. Quel avantage la rapidité de cette réaction présente-t-elle ?
+4. Naivo affirme qu'il a « décidé » de lâcher la marmite. A-t-il raison ? Justifie.
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Un réflexe inné s'acquiert : **A.** par apprentissage **B.** dès la naissance **C.** vers 15 ans
@@ -371,7 +374,7 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 
 **Ex. 2** — 1. **involontaire** · 2. **inné** · 3. **inévitable** · 4. **moelle épinière** · 5. **protection**
 
-**Ex. 3** — 1. Parce que le message ne monte pas jusqu'au cerveau : la **moelle épinière** reçoit l'information et commande directement le lâcher. La sensation de douleur, elle, poursuit son chemin jusqu'au cerveau et n'est perçue qu'ensuite. 2. La **moelle épinière**. 3. Elle **limite la gravité de la brûlure** : le contact cesse en une fraction de seconde, bien avant qu'une décision réfléchie ait pu être prise.
+**Ex. 3** — 1. Parce que le message ne monte pas jusqu'au cerveau : la **moelle épinière** reçoit l'information et commande directement le lâcher. La sensation de douleur, elle, poursuit son chemin jusqu'au cerveau et n'est perçue qu'ensuite. 2. La **moelle épinière**. 3. Elle **limite la gravité de la brûlure** : le contact cesse en une fraction de seconde, bien avant qu'une décision réfléchie ait pu être prise. 4. **Non.** Il a eu l'impression de décider parce qu'il a pris conscience de la scène juste après, mais la main était **déjà ouverte**. Une décision suppose que le message atteigne le cerveau, ce qui prend plus de temps que le réflexe. La preuve : le geste s'est produit **avant la douleur**, donc avant toute prise de conscience possible.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -462,6 +465,7 @@ Prenons le citron. S'il est **placé dans la bouche**, l'acide stimule directeme
 1. De quel type de réaction s'agit-il ? Justifie par deux caractères.
 2. Qu'est-ce qui explique l'aisance acquise au bout de deux mois ?
 3. Pourquoi est-il redevenu maladroit un an plus tard ?
+4. Son frère affirme que conduire une charrette est « un réflexe inné, comme retirer sa main du feu ». Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Un réflexe acquis existe : **A.** dès la naissance **B.** après un apprentissage **C.** jamais
@@ -477,7 +481,7 @@ Prenons le citron. S'il est **placé dans la bouche**, l'acide stimule directeme
 
 **Ex. 2** — 1. **apprentissage**, **répétition** · 2. **involontaire** · 3. **cerveau** · 4. **disparaître** · 5. **Pavlov**
 
-**Ex. 3** — 1. Un **réflexe acquis** : il **n'existait pas au départ** (les premiers jours étaient laborieux) et il est devenu **automatique et involontaire** après la pratique. 2. La **répétition** : le cerveau a enregistré les associations entre ce qu'il perçoit et les gestes à faire, si bien que la réflexion n'est plus nécessaire. 3. Parce qu'un réflexe acquis **s'affaiblit faute de pratique** : n'ayant plus conduit pendant un an, l'automatisme s'est estompé. Il se réinstallera d'ailleurs plus vite qu'au début.
+**Ex. 3** — 1. Un **réflexe acquis** : il **n'existait pas au départ** (les premiers jours étaient laborieux) et il est devenu **automatique et involontaire** après la pratique. 2. La **répétition** : le cerveau a enregistré les associations entre ce qu'il perçoit et les gestes à faire, si bien que la réflexion n'est plus nécessaire. 3. Parce qu'un réflexe acquis **s'affaiblit faute de pratique** : n'ayant plus conduit pendant un an, l'automatisme s'est estompé. Il se réinstallera d'ailleurs plus vite qu'au début. 4. Il confond les deux. Un réflexe **inné** existe **dès la naissance**, il est identique chez tous et ne s'oublie pas. Conduire une charrette a dû être **appris par la répétition**, ne s'observe que chez ceux qui l'ont pratiqué, et **se perd faute d'entraînement** — les trois signes d'un réflexe **acquis**. Personne ne naît en sachant conduire.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **A** · 4. **B**
 
@@ -574,6 +578,7 @@ C'est là tout l'intérêt de l'apprentissage : en transformant des mouvements v
 1. Donne l'ordre correct.
 2. Quelle étape n'existe pas dans un réflexe inné ?
 3. Déduis-en pourquoi le réflexe est plus rapide.
+4. Un élève en conclut que le mouvement volontaire est « moins bien fait » puisqu'il est plus lent. Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Le mouvement volontaire est commandé par : **A.** la moelle épinière **B.** le cerveau **C.** les nerfs seuls
@@ -589,7 +594,7 @@ C'est là tout l'intérêt de l'apprentissage : en transformant des mouvements v
 
 **Ex. 2** — 1. **F** — il est plus **lent**, car il comporte une étape de décision. 2. **V** 3. **V** 4. **F** — la répétition peut le transformer en **réflexe acquis**. 5. **V** 6. **F** — le réflexe inné est **inévitable**.
 
-**Ex. 3** — 1. les organes des sens perçoivent → l'information gagne le cerveau → le cerveau décide → l'ordre descend par les nerfs moteurs → les muscles se contractent. 2. L'étape de **décision par le cerveau**. 3. Parce que le message **ne monte pas jusqu'au cerveau** : la moelle épinière élabore directement la réponse. Le trajet étant plus court et sans délibération, la réaction survient bien plus vite.
+**Ex. 3** — 1. les organes des sens perçoivent → l'information gagne le cerveau → le cerveau décide → l'ordre descend par les nerfs moteurs → les muscles se contractent. 2. L'étape de **décision par le cerveau**. 3. Parce que le message **ne monte pas jusqu'au cerveau** : la moelle épinière élabore directement la réponse. Le trajet étant plus court et sans délibération, la réaction survient bien plus vite. 4. La lenteur n'est pas un défaut : c'est le **prix de la décision**. Le réflexe est rapide mais **toujours identique** et non modifiable. Le mouvement volontaire, lui, permet de **choisir**, d'adapter le geste à la situation et de l'interrompre. Les deux sont utiles : l'un protège dans l'urgence, l'autre permet d'agir avec intention.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -678,6 +683,7 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 1. Cite les cinq éléments que ce test met en jeu.
 2. Que permet de conclure l'absence de réaction ?
 3. L'insensibilité de la peau oriente-t-elle vers un élément plutôt qu'un autre ? Justifie.
+4. Un étudiant conclut aussitôt que « le muscle est paralysé ». Pourquoi cette conclusion est-elle prématurée ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. L'arc réflexe est : **A.** un os de la colonne **B.** le trajet de l'influx lors d'un réflexe **C.** un muscle
@@ -693,7 +699,7 @@ Comme chaque élément de l'arc est indispensable, l'absence d'un réflexe indiq
 
 **Ex. 2** — 1. **involontaire** · 2. **sensitif** · 3. **moelle épinière** · 4. **moteur** · 5. **effecteur**
 
-**Ex. 3** — 1. Les récepteurs du tendon et de la peau, le nerf sensitif, la moelle épinière, le nerf moteur, le muscle de la cuisse. 2. Qu'au moins **un élément de l'arc est interrompu** : le réflexe ne peut aboutir si un seul maillon manque. 3. **Oui.** Si la peau est insensible, l'information ne remonte plus : cela oriente vers une atteinte de la **voie sensitive** (récepteurs ou nerf sensitif) plutôt que du nerf moteur ou du muscle. Pour le vérifier, on demanderait au patient de bouger volontairement la jambe : s'il y parvient, la voie motrice et le muscle sont intacts.
+**Ex. 3** — 1. Les récepteurs du tendon et de la peau, le nerf sensitif, la moelle épinière, le nerf moteur, le muscle de la cuisse. 2. Qu'au moins **un élément de l'arc est interrompu** : le réflexe ne peut aboutir si un seul maillon manque. 3. **Oui.** Si la peau est insensible, l'information ne remonte plus : cela oriente vers une atteinte de la **voie sensitive** (récepteurs ou nerf sensitif) plutôt que du nerf moteur ou du muscle. Pour le vérifier, on demanderait au patient de bouger volontairement la jambe : s'il y parvient, la voie motrice et le muscle sont intacts. 4. Parce que l'absence de réaction ne désigne **aucun maillon en particulier** : elle prouve seulement que **la chaîne est rompue quelque part**. Le muscle peut être parfaitement sain et ne recevoir aucun ordre. Conclure au muscle, c'est retenir une hypothèse sur cinq sans l'avoir testée — d'autant que l'insensibilité de la peau oriente plutôt vers la **voie sensitive**.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -783,6 +789,7 @@ Deux conséquences. D'abord, une substance psychoactive perturbe un organe encor
 1. Que réponds-tu à la première affirmation ?
 2. Que réponds-tu à la seconde ?
 3. Quel conseil donnerais-tu à cet oncle ?
+4. Un troisième intervenant ajoute : « De toute façon, on peut arrêter quand on veut. » Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Une substance psychoactive agit d'abord sur : **A.** les os **B.** le cerveau **C.** les muscles
@@ -798,7 +805,7 @@ Deux conséquences. D'abord, une substance psychoactive perturbe un organe encor
 
 **Ex. 2** — 1. **cerveau** · 2. **perception** · 3. **autorisée** · 4. **accoutumance** · 5. **dépendance** · 6. **jugement**
 
-**Ex. 3** — 1. Le fait qu'une substance soit **en vente libre** tient à l'histoire et aux habitudes d'une société, pas à son innocuité. Le tabac est autorisé et compte pourtant parmi les substances les plus nocives. 2. Les rechutes ne traduisent **pas un manque de volonté** : la dépendance est un **état de santé** qui modifie le fonctionnement du cerveau. Beaucoup de personnes font plusieurs tentatives avant de réussir, et chaque tentative est utile. 3. Lui conseiller de **se faire accompagner** — consulter un médecin ou un centre de santé — plutôt que d'essayer seul, et de solliciter le soutien de son entourage.
+**Ex. 3** — 1. Le fait qu'une substance soit **en vente libre** tient à l'histoire et aux habitudes d'une société, pas à son innocuité. Le tabac est autorisé et compte pourtant parmi les substances les plus nocives. 2. Les rechutes ne traduisent **pas un manque de volonté** : la dépendance est un **état de santé** qui modifie le fonctionnement du cerveau. Beaucoup de personnes font plusieurs tentatives avant de réussir, et chaque tentative est utile. 3. Lui conseiller de **se faire accompagner** — consulter un médecin ou un centre de santé — plutôt que d'essayer seul, et de solliciter le soutien de son entourage. 4. L'exemple de l'oncle le contredit : il a **essayé trois fois** et n'y est pas parvenu seul. C'est le propre de la **dépendance** — la substance modifie le fonctionnement du cerveau, si bien que la volonté ne suffit plus. Chacun croit pouvoir s'arrêter à tout moment, et c'est précisément cette conviction qui fait commencer, puis continuer.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **A** · 4. **B**
 
@@ -893,6 +900,7 @@ Juger ou rejeter une personne dépendante ne fait qu'aggraver son isolement, don
 1. Relève **deux** effets sur son organisme et **deux** effets sur sa vie sociale.
 2. Explique en quoi l'éloignement de ses camarades aggrave sa situation.
 3. Propose deux actions concrètes que ses camarades de classe pourraient entreprendre.
+4. Un camarade estime qu'il ne faut pas s'en mêler, « puisque c'est son choix ». Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. L'alcool atteint principalement : **A.** les os **B.** le foie et le système nerveux **C.** les cheveux
@@ -908,7 +916,7 @@ Juger ou rejeter une personne dépendante ne fait qu'aggraver son isolement, don
 
 **Ex. 2** — 1. **F** — la famille, l'école et la communauté subissent aussi les conséquences. 2. **V** 3. **F** — il atteint le **cœur et les vaisseaux**. 4. **F** — elles se renouvellent **très mal**, d'où la gravité des lésions. 5. **V** 6. **V**
 
-**Ex. 3** — 1. Organisme : troubles de la **mémoire** et de la **concentration** (ses notes chutent), fatigue et risque de dépendance. Vie sociale : **échec scolaire** et absences, **isolement**, **dettes**. 2. Parce qu'il perd le **soutien** de ceux qui pourraient l'aider et se rapproche d'un entourage où la consommation est banalisée : l'isolement entretient l'engrenage. 3. Par exemple : **ne pas l'exclure** et continuer à lui parler sans le juger ; **en informer un adulte de confiance** — enseignant, parent, personnel de santé — afin qu'il soit orienté vers une aide compétente.
+**Ex. 3** — 1. Organisme : troubles de la **mémoire** et de la **concentration** (ses notes chutent), fatigue et risque de dépendance. Vie sociale : **échec scolaire** et absences, **isolement**, **dettes**. 2. Parce qu'il perd le **soutien** de ceux qui pourraient l'aider et se rapproche d'un entourage où la consommation est banalisée : l'isolement entretient l'engrenage. 3. Par exemple : **ne pas l'exclure** et continuer à lui parler sans le juger ; **en informer un adulte de confiance** — enseignant, parent, personnel de santé — afin qu'il soit orienté vers une aide compétente. 4. Parler de « choix » est inexact : Solo consomme depuis six mois et présente déjà des signes de **dépendance**, un état qui restreint précisément la liberté de choisir. Par ailleurs, les conséquences dépassent sa personne — échec scolaire, dettes, rupture des liens familiaux. Ne rien faire, ce n'est pas respecter son choix, c'est **le laisser s'enfoncer** alors qu'une orientation vers un adulte compétent peut encore l'aider.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -1018,6 +1026,7 @@ Le message doit rester **court, positif et exact**. Un slogan qui effraie sans e
 1. Calcule sa durée de sommeil et compare-la à la durée conseillée pour son âge.
 2. Relie chacune de ses trois habitudes à une conséquence précise sur son système nerveux.
 3. Propose-lui trois changements concrets.
+4. Elle explique veiller la nuit « pour travailler davantage ». Ce raisonnement est-il efficace ? Justifie par ce que tu sais du sommeil.
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Un adolescent de 14 ans devrait dormir : **A.** 4 à 5 h **B.** 8 à 10 h **C.** 14 h
@@ -1033,7 +1042,7 @@ Le message doit rester **court, positif et exact**. Un slogan qui effraie sans e
 
 **Ex. 2** — 1. **enregistre** · 2. **régulières** · 3. **obscure** · 4. **sucre** · 5. **sédentarité** · 6. **pauses**
 
-**Ex. 3** — 1. De 1 h à 5 h 30, elle dort **4 h 30**. La durée conseillée à son âge est de **8 à 10 h** : il lui manque donc au minimum **3 h 30** de sommeil chaque nuit. 2. Le **manque de sommeil** empêche le cerveau de consolider ce qu'elle a appris, d'où les difficultés de mémorisation ; l'**absence de petit-déjeuner** fait chuter le sucre sanguin en fin de matinée, d'où la fatigue et le manque de concentration ; l'**absence d'activité physique** dégrade l'oxygénation et rend l'endormissement plus difficile, ce qui entretient le manque de sommeil. 3. Se coucher plus tôt pour atteindre au moins 8 h de sommeil ; prendre un petit-déjeuner, même léger ; pratiquer une activité physique régulière. On peut ajouter : répartir ses révisions sur la semaine plutôt que de veiller la nuit.
+**Ex. 3** — 1. De 1 h à 5 h 30, elle dort **4 h 30**. La durée conseillée à son âge est de **8 à 10 h** : il lui manque donc au minimum **3 h 30** de sommeil chaque nuit. 2. Le **manque de sommeil** empêche le cerveau de consolider ce qu'elle a appris, d'où les difficultés de mémorisation ; l'**absence de petit-déjeuner** fait chuter le sucre sanguin en fin de matinée, d'où la fatigue et le manque de concentration ; l'**absence d'activité physique** dégrade l'oxygénation et rend l'endormissement plus difficile, ce qui entretient le manque de sommeil. 3. Se coucher plus tôt pour atteindre au moins 8 h de sommeil ; prendre un petit-déjeuner, même léger ; pratiquer une activité physique régulière. On peut ajouter : répartir ses révisions sur la semaine plutôt que de veiller la nuit. 4. **Non, le raisonnement se retourne contre elle.** C'est **pendant le sommeil** que le cerveau consolide ce qui a été appris dans la journée : en réduisant sa nuit, elle **efface une partie du bénéfice** des heures gagnées. Elle travaille en outre dans un état de fatigue où l'attention est faible, donc moins efficacement. Deux heures de révision l'esprit reposé valent mieux que quatre heures arrachées à la nuit.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **A**
 
