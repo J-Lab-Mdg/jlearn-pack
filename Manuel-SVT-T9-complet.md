@@ -1439,6 +1439,7 @@ Ces quatre besoins expliquent tous les gestes du jardinier : arroser, fumer le s
 1. Quels sont les **deux** éléments qui diffèrent entre ses deux bocaux ?
 2. Pourquoi ne pourra-t-il rien conclure sur les sels minéraux ?
 3. Propose une correction de son montage.
+4. Rakoto pense qu'une plante « se nourrit » de la terre, qu'elle avalerait peu à peu. Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Une plante prélève le dioxyde de carbone : **A.** dans le sol **B.** dans l'air **C.** dans l'eau d'arrosage
@@ -1454,7 +1455,7 @@ Ces quatre besoins expliquent tous les gestes du jardinier : arroser, fumer le s
 
 **Ex. 2** — 1. **témoin** · 2. **un seul** · 3. **dissous** · 4. **jaunit** · 5. **sels minéraux** · 6. **lumière**
 
-**Ex. 3** — 1. La **présence de sels minéraux** et l'**exposition à la lumière**. 2. Deux éléments changent en même temps : si une plante pousse mieux, il ne saura pas si c'est grâce aux sels minéraux ou grâce au soleil. 3. Placer les **deux bocaux au même endroit ensoleillé** et ne faire varier que la présence des sels minéraux.
+**Ex. 3** — 1. La **présence de sels minéraux** et l'**exposition à la lumière**. 2. Deux éléments changent en même temps : si une plante pousse mieux, il ne saura pas si c'est grâce aux sels minéraux ou grâce au soleil. 3. Placer les **deux bocaux au même endroit ensoleillé** et ne faire varier que la présence des sels minéraux. 4. Il se trompe : la plante n'absorbe pas la terre elle-même. Elle prélève de l'**eau** et des **sels minéraux dissous** — la preuve en est qu'une plante peut pousser **sans aucune terre**, dans une simple solution minérale. La terre est un **support** qui retient l'eau et les sels, pas un aliment.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **A** · 4. **B**
 
@@ -1538,6 +1539,7 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 1. Que conclut-on de cette expérience ?
 2. À quoi sert la couche d'huile ?
 3. Pourquoi faut-il deux plants de même taille ?
+4. Un élève propose de supprimer le tube B, « puisque le tube A suffit à montrer que l'eau baisse ». Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Les poils absorbants se trouvent : **A.** sur la coiffe **B.** sur la zone pilifère **C.** sur la tige
@@ -1553,7 +1555,7 @@ L'eau n'est pas aspirée par une pompe. Elle passe spontanément à travers la p
 
 **Ex. 2** — 1. **F** — elle entre essentiellement par la **zone pilifère**. 2. **V** 3. **F** — la coiffe **protège** la pointe, elle n'absorbe pas. 4. **V** 5. **V**
 
-**Ex. 3** — 1. L'absorption de l'eau se fait **au niveau de la zone pilifère**, donc par les poils absorbants. 2. Elle **empêche l'évaporation** : la baisse observée ne peut venir que de la plante. 3. Pour que les deux tubes ne diffèrent **que par la zone en contact avec l'eau** ; sinon une plante plus grande boirait davantage et fausserait la comparaison.
+**Ex. 3** — 1. L'absorption de l'eau se fait **au niveau de la zone pilifère**, donc par les poils absorbants. 2. Elle **empêche l'évaporation** : la baisse observée ne peut venir que de la plante. 3. Pour que les deux tubes ne diffèrent **que par la zone en contact avec l'eau** ; sinon une plante plus grande boirait davantage et fausserait la comparaison. 4. Il se trompe : sans le tube B, rien ne prouverait que la baisse vient de la **zone pilifère**. Le tube B est le **témoin** — c'est la **comparaison** entre les deux tubes qui autorise la conclusion, pas l'observation d'un seul.
 
 **Ex. 4** — 1. **B** · 2. **A** · 3. **B** · 4. **B**
 
@@ -1639,6 +1641,7 @@ Une culture prélève chaque saison des sels minéraux. Si l'on ne rend rien au 
 1. Donne **deux** raisons expliquant le mauvais résultat de Bema.
 2. Bema affirme qu'il a pourtant donné plus d'eau. Explique pourquoi cela n'a pas suffi.
 3. Quel conseil lui donnes-tu pour la saison prochaine ?
+4. Bema en conclut qu'il faut arroser le moins possible. Cette conclusion est-elle juste ? Justifie.
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. L'éclaircissage consiste à : **A.** ajouter des plants **B.** retirer des plants en surnombre **C.** arroser davantage
@@ -1654,7 +1657,7 @@ Une culture prélève chaque saison des sels minéraux. Si l'on ne rend rien au 
 
 **Ex. 2** — 1. **concurrence** · 2. **jeunes** · 3. **ameublit** · 4. **humidité** · 5. **compost** · 6. **motte**
 
-**Ex. 3** — 1. Les **mauvaises herbes non supprimées** ont prélevé l'eau et les sels minéraux ; le **sol non ameubli** est resté tassé, l'eau ruisselait au lieu de pénétrer. 2. Parce que l'eau apportée était en partie **captée par les mauvaises herbes** et en partie **perdue par ruissellement** sur le sol durci : elle n'atteignait pas les racines des brèdes. L'excès d'eau quotidien chasse en outre l'air du sol. 3. **Sarcler régulièrement** et arroser en fonction de l'état du sol plutôt que tous les jours.
+**Ex. 3** — 1. Les **mauvaises herbes non supprimées** ont prélevé l'eau et les sels minéraux ; le **sol non ameubli** est resté tassé, l'eau ruisselait au lieu de pénétrer. 2. Parce que l'eau apportée était en partie **captée par les mauvaises herbes** et en partie **perdue par ruissellement** sur le sol durci : elle n'atteignait pas les racines des brèdes. L'excès d'eau quotidien chasse en outre l'air du sol. 3. **Sarcler régulièrement** et arroser en fonction de l'état du sol plutôt que tous les jours. 4. **Non**, il passe d'un excès à l'autre. Une plante privée d'eau **flétrit et cesse de croître**. Ce n'est pas la quantité d'eau en soi qui était en cause, mais le fait d'arroser **sans sarcler** et **sans tenir compte de l'état du sol**. La règle est d'arroser **quand le sol est sec**, ni tous les jours par habitude, ni le moins possible par principe.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **A** · 4. **B**
 
@@ -1748,6 +1751,7 @@ Beaucoup d'attaques s'évitent par de bonnes pratiques : semer à la bonne densi
 1. Identifie la famille de bio-agresseur en cause dans chaque parcelle.
 2. Pourquoi serait-il inutile d'appliquer le même produit sur les trois parcelles ?
 3. Propose une action adaptée à la parcelle C.
+4. Un élève affirme que les trois parcelles sont « malades ». Le mot est-il exact dans les trois cas ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Un bio-agresseur est : **A.** un phénomène climatique **B.** un être vivant nuisible aux cultures **C.** un engrais
@@ -1763,7 +1767,7 @@ Beaucoup d'attaques s'évitent par de bonnes pratiques : semer à la bonne densi
 
 **Ex. 2** — 1. **F** — la grêle n'est pas un être vivant. 2. **V** 3. **F** — il est souvent microscopique ; on n'en voit que les symptômes. 4. **F** — un insecticide agit sur les insectes, pas sur les champignons. 5. **V** 6. **V**
 
-**Ex. 3** — 1. A : **agent pathogène** (champignon) · B : **ravageur** (larve ou insecte du sol) · C : **adventices**. 2. Parce que chaque famille exige un traitement différent : un produit contre les insectes n'agit ni sur un champignon ni sur des herbes. 3. **Désherber ou sarcler** la parcelle C pour supprimer la concurrence, puis entretenir régulièrement.
+**Ex. 3** — 1. A : **agent pathogène** (champignon) · B : **ravageur** (larve ou insecte du sol) · C : **adventices**. 2. Parce que chaque famille exige un traitement différent : un produit contre les insectes n'agit ni sur un champignon ni sur des herbes. 3. **Désherber ou sarcler** la parcelle C pour supprimer la concurrence, puis entretenir régulièrement. 4. **Non.** Seule la parcelle A relève d'une **maladie**, causée par un agent pathogène. En B, les plants sont **dévorés** par un ravageur ; en C, ils sont **concurrencés** par des adventices. Les trois parcelles souffrent, mais d'un dégât de nature différente — et c'est justement ce qui impose trois réponses différentes.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **A** · 4. **B**
 
@@ -1850,6 +1854,7 @@ Les règles sont donc les mêmes que pour n'importe quel produit de traitement :
 1. Quel volume de purin doit-il préparer ? Quel volume d'eau ajoutera-t-il ?
 2. Quelle masse de feuilles doit-il récolter ?
 3. Il envisage de pulvériser à midi pour « profiter de la chaleur ». Que lui réponds-tu ?
+4. Son voisin affirme qu'un produit naturel est sans danger et peut donc être employé à n'importe quelle dose. Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Le voandelaka et le neem sont : **A.** le même arbre **B.** deux arbres différents de la même famille **C.** sans rapport
@@ -1865,7 +1870,7 @@ Les règles sont donc les mêmes que pour n'importe quel produit de traitement :
 
 **Ex. 2** — 1. **voandelaka** · 2. **diluer** · 3. **savon** · 4. **dessous** · 5. **fin de journée** · 6. **toxiques**
 
-**Ex. 3** — 1. Une part de purin pour quatre d'eau donne **cinq parts au total**. Purin : 12 ÷ 5 = **2,4 L**. Eau à ajouter : 12 − 2,4 = **9,6 L**. 2. Pour 2,4 L de purin à raison d'1 kg pour 10 L : 2,4 ÷ 10 = 0,24 kg, soit **240 g de feuilles**. 3. **Mauvaise idée** : le soleil de midi dégrade les substances actives et les gouttes risquent de brûler les feuilles. Il faut traiter **en fin de journée**.
+**Ex. 3** — 1. Une part de purin pour quatre d'eau donne **cinq parts au total**. Purin : 12 ÷ 5 = **2,4 L**. Eau à ajouter : 12 − 2,4 = **9,6 L**. 2. Pour 2,4 L de purin à raison d'1 kg pour 10 L : 2,4 ÷ 10 = 0,24 kg, soit **240 g de feuilles**. 3. **Mauvaise idée** : le soleil de midi dégrade les substances actives et les gouttes risquent de brûler les feuilles. Il faut traiter **en fin de journée**. 4. **Naturel ne veut pas dire inoffensif.** Le *voandelaka* est une plante **toxique** dans toutes ses parties. Une préparation trop concentrée peut **brûler les feuilles**, nuire aux insectes utiles comme les pollinisateurs, et présenter un danger à la manipulation. Les doses s'appliquent aussi aux préparations naturelles.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -1957,6 +1962,7 @@ Méthodes naturelles et chimiques ne s'excluent pas. La démarche raisonnable co
 1. Quelle quantité de produit faut-il pour une cuve de 5 L ? pour une cuve de 15 L ?
 2. Un jardinier traite ses brèdes et veut les vendre au marché **six jours** plus tard. A-t-il le droit ? Justifie.
 3. Il pense que « le double fera plus d'effet ». Donne-lui deux arguments pour l'en dissuader.
+4. Un camarade en conclut qu'il faudrait interdire totalement les produits chimiques. Que penses-tu de cette position ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Un herbicide agit contre : **A.** les insectes **B.** les adventices **C.** les champignons
@@ -1972,7 +1978,7 @@ Méthodes naturelles et chimiques ne s'excluent pas. La démarche raisonnable co
 
 **Ex. 2** — 1. **F** — cela gaspille le produit, risque de brûler la plante et pollue davantage, sans gain d'efficacité. 2. **F** — le vent emporte le produit sur l'applicateur ou les parcelles voisines. 3. **V** 4. **V** 5. **F** — un emballage de pesticide ne doit **jamais** être réutilisé. 6. **F** — un fongicide agit contre les **champignons**.
 
-**Ex. 3** — 1. Pour 5 L : 20 × 5 ÷ 10 = **10 mL**. Pour 15 L : 20 × 15 ÷ 10 = **30 mL**. 2. **Non.** Le délai avant récolte est de **14 jours** ; six jours après le traitement, des résidus subsistent sur les feuilles. Il doit attendre **8 jours supplémentaires**. 3. Le surdosage **n'augmente pas l'efficacité** — le produit agit à la dose prévue ; il **gaspille de l'argent**, **risque de brûler les plants** et **aggrave la pollution** de l'eau et du sol.
+**Ex. 3** — 1. Pour 5 L : 20 × 5 ÷ 10 = **10 mL**. Pour 15 L : 20 × 15 ÷ 10 = **30 mL**. 2. **Non.** Le délai avant récolte est de **14 jours** ; six jours après le traitement, des résidus subsistent sur les feuilles. Il doit attendre **8 jours supplémentaires**. 3. Le surdosage **n'augmente pas l'efficacité** — le produit agit à la dose prévue ; il **gaspille de l'argent**, **risque de brûler les plants** et **aggrave la pollution** de l'eau et du sol. 4. La position est **compréhensible mais excessive**. Mal employés, ces produits sont dangereux ; correctement dosés, appliqués avec les protections et en respectant le délai avant récolte, ils permettent de **sauver une récolte** qu'aucune méthode naturelle n'aurait suffi à protéger. La solution raisonnable est l'**usage responsable** : recourir d'abord aux méthodes naturelles, et réserver le chimique aux situations qui l'exigent.
 
 **Ex. 4** — 1. **B** · 2. **A** · 3. **B** · 4. **A**
 
@@ -2084,6 +2090,7 @@ C'est pourquoi la première chose à faire devant un élevage qui produit mal n'
 1. Relève **trois** besoins mal satisfaits chez Naivo.
 2. Pour chacun, propose une amélioration simple et réalisable.
 3. Selon toi, par lequel devrait-il commencer ? Justifie ta réponse en une phrase.
+4. Naivo répond que ses poules « se débrouillent seules depuis toujours » et qu'il n'a donc rien à changer. Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Un animal de pacage est un animal : **A.** élevé dans la maison **B.** mené paître dans les pâturages **C.** vendu au marché
@@ -2099,7 +2106,7 @@ C'est pourquoi la première chose à faire devant un élevage qui produit mal n'
 
 **Ex. 2** — 1. **renouvelée** · 2. **prévention** · 3. **abri** · 4. **qualité** · 5. **espace** · 6. **observer**
 
-**Ex. 3** — 1. (trois parmi) **l'abri** : les poules dorment dans un arbre, exposées à la pluie, aux prédateurs et aux voleurs ; **l'eau** : non renouvelée depuis quatre jours ; **la nourriture** : une seule distribution par jour ; **les soins** : deux morts inexpliquées, aucune vaccination. 2. Construire un abri fermé la nuit avec des matériaux locaux · renouveler l'eau chaque jour · donner le grain **matin et soir** · faire vacciner le troupeau. 3. Réponse acceptée si justifiée. **Les soins** sont le choix le plus défendable : deux morts inexpliquées annoncent une maladie contagieuse qui peut emporter tout le troupeau, alors que les autres manques agissent plus lentement.
+**Ex. 3** — 1. (trois parmi) **l'abri** : les poules dorment dans un arbre, exposées à la pluie, aux prédateurs et aux voleurs ; **l'eau** : non renouvelée depuis quatre jours ; **la nourriture** : une seule distribution par jour ; **les soins** : deux morts inexpliquées, aucune vaccination. 2. Construire un abri fermé la nuit avec des matériaux locaux · renouveler l'eau chaque jour · donner le grain **matin et soir** · faire vacciner le troupeau. 3. Réponse acceptée si justifiée. **Les soins** sont le choix le plus défendable : deux morts inexpliquées annoncent une maladie contagieuse qui peut emporter tout le troupeau, alors que les autres manques agissent plus lentement. 4. L'habitude ne prouve pas que tout va bien : **deux poules sont mortes** le mois dernier. Une volaille laissée en liberté trouve une partie de sa nourriture, mais elle reste exposée aux **prédateurs**, au **vol**, aux **intempéries** et aux **maladies**. « Se débrouiller » signifie ici **produire peu et mourir tôt** — l'élevage rapporterait davantage pour un effort modeste.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -2197,6 +2204,7 @@ Les déjections des volailles sont un **excellent engrais azoté**. L'élevage n
 1. Quelle quantité de grain doit-elle prévoir chaque jour ?
 2. Quelle quantité pour une semaine ? Exprime le résultat en kilogrammes.
 3. Elle achète le grain par sacs de 25 kg. Combien de jours un sac dure-t-il ? (arrondis au jour entier inférieur)
+4. Hanta veut porter son troupeau à **20 poules**. Combien de jours durera alors un sac ? Que doit-elle prévoir avant d'agrandir son élevage ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Le manioc destiné aux volailles doit être : **A.** donné cru en grande quantité **B.** séché ou bouilli **C.** jeté
@@ -2216,6 +2224,7 @@ Les déjections des volailles sont un **excellent engrais azoté**. L'élevage n
 1. 15 × 35 = **525 g par jour**.
 2. 525 × 7 = 3675 g = **3,675 kg par semaine**.
 3. 25 kg = 25 000 g ; 25 000 ÷ 525 ≈ 47,6 → le sac dure **47 jours** (soit un peu plus d'un mois et demi).
+4. Avec 20 poules : 20 × 35 = **700 g par jour** ; 25 000 ÷ 700 ≈ 35,7 → le sac ne dure plus que **35 jours**. Augmenter le troupeau d'un tiers **raccourcit le sac de 12 jours** : avant d'agrandir, elle doit s'assurer qu'elle pourra **fournir la nourriture supplémentaire** — ainsi que l'eau, la place dans l'abri et les soins. Un élevage plus nombreux mais sous-alimenté produit moins qu'un petit élevage bien tenu.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **A** · 4. **A**
 
@@ -2303,6 +2312,7 @@ Le raisonnement vaut pour toutes les espèces. Chez le **zébu**, les jeunes vea
 1. Combien de doses faut-il au total ? Combien de flacons doivent-ils acheter ?
 2. La protection dure 4 mois. Combien de campagnes de vaccination devront-ils organiser dans l'année ?
 3. Combien de flacons cela représente-t-il pour l'année entière, si le troupeau reste le même ?
+4. Une quatrième famille, qui possède 20 poules, souhaite se joindre à eux. Combien de flacons faudra-t-il ? Combien de doses seront perdues, et pourquoi ne peut-on pas les garder ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. La maladie de Newcastle est d'origine : **A.** bactérienne **B.** virale **C.** parasitaire
@@ -2322,6 +2332,7 @@ Le raisonnement vaut pour toutes les espèces. Chez le **zébu**, les jeunes vea
 1. 30 + 25 + 45 = **100 doses**, soit exactement **1 flacon**.
 2. 12 ÷ 4 = **3 campagnes** par an.
 3. 3 campagnes × 1 flacon = **3 flacons** pour l'année. *(On remarquera que le regroupement des trois familles permet d'utiliser le flacon entier sans rien gaspiller : seule, aucune des trois n'aurait rempli les 100 doses.)*
+4. Le total passe à 100 + 20 = **120 doses**, ce qui impose d'ouvrir **2 flacons** (200 doses). **80 doses seront perdues**, car le flacon entamé **doit être utilisé le jour même** : le vaccin ne se conserve pas une fois ouvert. C'est pourquoi les campagnes se planifient en regroupant les éleveurs de façon à s'approcher d'un multiple de 100.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -2435,6 +2446,7 @@ Changer de race avant d'avoir réglé la nourriture et les soins conduit presque
 1. Quel est le gain de ponte par poule et par an ?
 2. Un éleveur possède **20 poules**. Combien d'œufs supplémentaires obtient-il sur une année ?
 3. Sur **50 poussins** nés, combien survivaient avant l'amélioration ? Combien survivent après ? (arrondis au poussin entier)
+4. Exprime la hausse de la ponte en pourcentage. Un éleveur en conclut qu'il suffit d'acheter des poules améliorées pour obtenir ces résultats : qu'en penses-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Les essais malgaches ont obtenu ces résultats : **A.** en important une nouvelle race **B.** sans changer de race **C.** en réduisant le troupeau
@@ -2454,6 +2466,7 @@ Changer de race avant d'avoir réglé la nourriture et les soins conduit presque
 1. 96 − 45 = **51 œufs de plus** par poule et par an.
 2. 51 × 20 = **1 020 œufs supplémentaires** par an. *(Vérification : avant 20 × 45 = 900 œufs ; après 20 × 96 = 1 920 œufs ; différence 1 020.)*
 3. Avant : 50 × 43 / 100 = 21,5 → environ **21 poussins**. Après : 50 × 87 / 100 = 43,5 → environ **43 poussins**. Soit **22 poussins sauvés** sur 50.
+4. Hausse : (96 − 45) ÷ 45 = 1,133… soit environ **+ 113 %**, la ponte a plus que **doublé**. Mais l'éleveur se trompe : ces résultats ont été obtenus en associant la sélection à une **alimentation complète**, à un **abri correct** et aux **soins vétérinaires**. Une poule améliorée placée dans de mauvaises conditions **ne donnera pas 96 œufs** — la race exprime son potentiel seulement si les besoins sont satisfaits.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
