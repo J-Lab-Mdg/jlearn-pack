@@ -5920,6 +5920,59 @@ Trois conditions attendues parmi :
 Les sections ci-dessous documentent les choix de fond, les vérifications et les sources, unité par unité. Elles s'adressent à l'enseignant et au validateur pédagogique, non aux élèves.
 
 
+## Table des illustrations
+
+Le manuel compte **45 illustrations**. Aucune ne porte de texte incrusté : les légendes sont ici, dans le fichier source, où elles restent corrigeables et traduisibles. Plusieurs schémas sont muets à dessein, pour servir d'exercices à légender.
+
+| Séance | Légende | Fichier |
+|---|---|---|
+| [Séance 1](#séance-1-51-ration-alimentaire-et-groupes-daliments) | Un repas malgache complet : riz, brèdes, haricots, poisson, tomate et banane | `img_seance01.png` |
+| [Séance 2](#séance-2-51-glucides-lipides-et-protéines) | Trois aliments, trois nutriments dominants : le riz (glucides), l'huile et l'arachide (lipides), le poisson et les haricots (protéines) | `img_seance02.png` |
+| [Séance 3](#séance-3-51-vitamines-sels-minéraux-et-eau) | Fruits et légumes riches en vitamines et en sels minéraux, et l'eau, indispensable chaque jour | `img_seance03.png` |
+| [Séance 4](#séance-4-51-valeur-énergétique-des-nutriments) | Un gramme de glucides ou de protéines libère 4 kcal ; un gramme de lipides en libère 9 | `img_seance04.png` |
+| [Séance 5](#séance-5-51-métabolisme-et-besoins-énergétiques) | Le corps dépense de l'énergie même au repos : c'est le métabolisme de base | `img_seance05.png` |
+| [Séance 6](#séance-6-51-calculer-les-besoins-énergétiques) | Les besoins énergétiques varient selon l'âge et l'activité | `img_seance06.png` |
+| [Séance 7](#séance-7-51-construire-un-menu-varié) | Un menu équilibré de la journée : petit-déjeuner, déjeuner et dîner | `img_seance07.png` |
+| [Séance 8](#séance-8-51-importance-de-léquilibre-alimentaire) | Une alimentation équilibrée soutient la croissance et l'attention en classe | `img_seance08.png` |
+| [Séance 9](#séance-9-51-malnutrition-aiguë-et-carences) | Signes de malnutrition aiguë et aliments riches en protéines qui permettent d'y remédier | `img_seance09.png` |
+| [Séance 10](#séance-10-51-surpoids-obésité-et-menus-dappoint) | Surpoids et obésité : l'excès d'aliments gras et sucrés associé au manque d'activité | `img_seance10.png` |
+| [Séance 13](#séance-13-51-les-besoins-nutritifs-des-plantes) | Les organes d'une plante à fleurs : la racine dans le sol, la tige, les feuilles et la fleur | `plante_organes.png` |
+| [Séance 14](#séance-14-51-le-lieu-et-le-mode-dabsorption-de-leau) | Extrémité d'une racine : la coiffe, la zone de croissance, la zone des poils absorbants et les vaisseaux conducteurs | `svt9e_racine_zones.png` |
+| [Séance 15](#séance-15-51-les-soins-à-apporter-aux-plantes-cultivées) | Les soins aux cultures : arrosage, sarclage, désherbage et éclaircissage | `img_seance15.png` |
+| [Séance 16](#séance-16-51-les-bio-agresseurs-des-cultures) | Morphologie d'un criquet : tête, thorax, abdomen, pattes sauteuses et mandibules broyeuses | `criquet_morphologie.png` |
+| [Séance 16](#séance-16-51-les-bio-agresseurs-des-cultures) | Un rat des champs rongeant des grains : museau, moustaches, incisives, oreilles, pattes griffues et queue | `rat_champ.png` |
+| [Séance 17](#séance-17-51-les-méthodes-naturelles-de-protection) | Préparation d'un extrait naturel de neem pour protéger les cultures | `img_seance17.png` |
+| [Séance 18](#séance-18-51-les-méthodes-chimiques-et-leur-usage-responsable) | L'usage responsable des produits chimiques exige des protections | `img_seance18.png` |
+| [Séance 19](#séance-19-51-les-besoins-dun-animal-délevage) | Anatomie externe d'une poule : crête, bec, ailes, queue et pattes | `svt9e_poule.png` |
+| [Séance 19](#séance-19-51-les-besoins-dun-animal-délevage) | Anatomie externe d'un zébu : cornes, bosse, fanon, sabots et queue | `svt9e_zebu.png` |
+| [Séance 20](#séance-20-51-lalimentation-et-lhabitat) | Alimentation et habitat d'un élevage de volailles | `img_seance20.png` |
+| [Séance 21](#séance-21-51-les-soins-vaccination-et-déparasitage) | La vaccination et le déparasitage protègent le troupeau | `img_seance21.png` |
+| [Séance 22](#séance-22-51-la-sélection-et-lamélioration-de-lélevage) | Anatomie externe d'un zébu | `svt9e_zebu.png` |
+| [Séance 24](#séance-24-51-examen-de-lunité-ii-agriculture-et-élevage) | Extrémité d'une racine : quatre zones à légender | `svt9e_racine_zones.png` |
+| [Séance 25](#séance-25-51-lorganisation-du-système-nerveux) | L'organisation du système nerveux : encéphale, moelle épinière et nerfs | `img_seance25.png` |
+| [Séance 26](#séance-26-51-les-rôles-des-différentes-parties) | Cerveau, cervelet, bulbe rachidien et moelle épinière | `img_seance26.png` |
+| [Séance 27](#séance-27-51-le-mouvement-réflexe-inné) | Le réflexe inné : la main se retire avant toute réflexion | `img_seance27.png` |
+| [Séance 28](#séance-28-51-le-mouvement-réflexe-acquis) | Le réflexe acquis s'installe par la répétition | `img_seance28.png` |
+| [Séance 29](#séance-29-51-le-mouvement-volontaire) | Le mouvement volontaire est commandé par le cerveau | `img_seance29.png` |
+| [Séance 30](#séance-30-51-larc-réflexe) | Le trajet du message nerveux au cours d'un réflexe : la voie sensitive en bleu monte vers la moelle épinière, la voie motrice en rouge en redescend vers le muscle | `svt9e_arc_reflexe.png` |
+| [Séance 31](#séance-31-51-les-catégories-de-substances-psychoactives) | Les catégories de substances psychoactives | `img_seance31.png` |
+| [Séance 32](#séance-32-51-les-effets-sur-lorganisme-et-sur-la-vie-sociale) | Effets des substances psychoactives sur l'organisme et la vie sociale | `img_seance32.png` |
+| [Séance 33](#séance-33-51-hygiène-du-système-nerveux-et-prévention) | Hygiène du système nerveux : sommeil, alimentation et activité physique | `img_seance33.png` |
+| [Séance 35](#séance-35-51-examen-de-lunité-iii-santé-et-bien-être) | L'arc réflexe : le trajet du message nerveux, cinq éléments à légender | `svt9e_arc_reflexe.png` |
+| [Séance 36](#séance-36-51-la-fistule-obstétricale-définition-et-symptômes) | L'appareil génital féminin : repères anatomiques | `img_seance36.png` |
+| [Séance 37](#séance-37-51-causes-conséquences-et-prévention-de-la-fistule) | Le suivi prénatal permet de prévenir les complications de l'accouchement | `img_seance37.png` |
+| [Séance 38](#séance-38-51-la-grossesse-précoce-et-le-suivi-médical) | Le cycle menstruel de 28 jours : règles, phase folliculaire, ovulation et phase lutéale, avec l'évolution de la muqueuse utérine | `cycle_menstruel_schema.png` |
+| [Séance 39](#séance-39-51-le-cancer-du-col-de-lutérus-anatomie-causes-et-symptômes) | L'utérus : le corps et le col | `img_seance39.png` |
+| [Séance 40](#séance-40-51-cancer-du-col-dépistage-vaccination-et-prévention) | Dépistage et vaccination : deux protections complémentaires | `img_seance40.png` |
+| [Séance 41](#séance-41-51-mini-projet-concevoir-un-message-de-sensibilisation) | Concevoir une affiche de sensibilisation pour son école | `img_seance41.png` |
+| [Séance 44](#séance-44-51-les-trois-familles-de-pierres-gemmes) | Pierres précieuses, pierres fines et pierres organiques | `img_seance44.png` |
+| [Séance 45](#séance-45-51-les-propriétés-physiques-des-pierres-gemmes) | Dureté, éclat et transparence : les propriétés physiques des gemmes | `img_seance45.png` |
+| [Séance 46](#séance-46-51-la-répartition-géographique-des-pierres-gemmes-à-madagascar) | Les principaux gisements de pierres gemmes à Madagascar : saphir dans le Sud (bleu), rubis dans l'Est et le Centre-Est (rouge), tourmaline et béryl dans le Centre (vert), émeraude sur la côte Est (violet), labradorite au Nord-Ouest (orange) | `img_seance46.png` |
+| [Séance 47](#séance-47-51-les-utilisations-des-pierres-gemmes) | Joaillerie et usages industriels des pierres gemmes | `img_seance47.png` |
+| [Séance 48](#séance-48-51-les-techniques-dexploitation) | Extraction artisanale et extraction industrielle | `img_seance48.png` |
+| [Séance 49](#séance-49-51-les-impacts-environnementaux-et-la-responsabilité) | Conséquences de l'exploitation minière sur les sols et les rivières | `img_seance49.png` |
+
+
 ## Récapitulatif de l'Unité I — Alimentation de l'homme
 
 | N° | Séance | Types d'exercices (section EXERCICES) | Total |

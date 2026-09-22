@@ -176,6 +176,28 @@ for n in nums:
 out.append("\n# Annexes\n")
 out.append("Les sections ci-dessous documentent les choix de fond, les vérifications et les sources, unité par unité. Elles s'adressent à l'enseignant et au validateur pédagogique, non aux élèves.\n")
 
+# ---------- Table des illustrations ----------
+# Exigée par le skill v18 (illustrations.md) : liste des images avec lien vers
+# la séance correspondante. Construite à partir du texte assemblé, jamais
+# saisie à la main — une image ajoutée y apparaît automatiquement.
+_texte = "\n".join(out)
+_lignes = []
+for n in nums:
+    t, corps = seances[n]
+    for legende, fichier in re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', corps):
+        leg = legende.strip().rstrip('.')
+        _lignes.append(f"| [Séance {n}](#{anchor(n, t)}) | {leg} | `{fichier}` |")
+if _lignes:
+    out.append("\n## Table des illustrations\n")
+    out.append(f"Le manuel compte **{len(_lignes)} illustrations**. "
+               "Aucune ne porte de texte incrusté : les légendes sont ici, "
+               "dans le fichier source, où elles restent corrigeables et traduisibles. "
+               "Plusieurs schémas sont muets à dessein, pour servir d'exercices à légender.\n")
+    out.append("| Séance | Légende | Fichier |")
+    out.append("|---|---|---|")
+    out.extend(_lignes)
+    out.append("")
+
 seen = set()
 for path, unite, titre, corps in annexes:
     key = (path, titre)
