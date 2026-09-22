@@ -339,6 +339,8 @@ Le corps perd de l'eau en permanence — par l'urine, la sueur et la respiration
 
 ### <span style="color:#C00000">Valeur énergétique des nutriments</span>
 
+![Un gramme de glucides ou de protéines libère 4 kcal ; un gramme de lipides en libère 9.](img_seance04.png)
+
 #### <span style="color:#1E7B34">1. La valeur énergétique</span>
 
 On appelle **valeur énergétique** l'énergie qu'un aliment met à la disposition du corps. On la mesure en **kilocalories (kcal)** ou en **kilojoules (kJ)**.

@@ -167,6 +167,9 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 
 ### Page LEÇON
 
+![Cerveau, cervelet, bulbe rachidien et moelle épinière.](img_seance26.png)
+
+
 **<span style="color:#C00000">Les rôles des différentes parties</span>**
 
 **<span style="color:#1E7B34">1. Le cerveau</span>**
@@ -392,6 +395,9 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 | **III. ÉVALUATION** | **Ex. 1** — Définis le réflexe acquis et cite deux exemples.<br><br>**Ex. 2** — Pourquoi la salivation devant un citron **vu** est-elle acquise, alors que la salivation due à un citron **mis dans la bouche** est innée ? | **Ex. 1** : Réaction involontaire et automatique installée par apprentissage ou répétition. Exemples : freiner à la vue d'un obstacle, saliver devant un plat connu.<br><br>**Ex. 2** : Dans le second cas, le contact de l'acide sur la langue déclenche directement la sécrétion : aucune expérience préalable n'est nécessaire, c'est **inné**. Dans le premier, la vue seule ne suffirait pas si l'on n'avait **jamais goûté** de citron : le cerveau a **appris** à associer cette image au goût acide. La réaction est donc **acquise**. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Le réflexe acquis s'installe par la répétition.](img_seance28.png)
+
 
 **<span style="color:#C00000">Le mouvement réflexe acquis</span>**
 

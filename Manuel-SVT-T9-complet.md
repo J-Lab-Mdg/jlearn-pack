@@ -454,6 +454,8 @@ Le corps perd de l'eau en permanence — par l'urine, la sueur et la respiration
 
 ### <span style="color:#C00000">Valeur énergétique des nutriments</span>
 
+![Un gramme de glucides ou de protéines libère 4 kcal ; un gramme de lipides en libère 9.](img_seance04.png)
+
 #### <span style="color:#1E7B34">1. La valeur énergétique</span>
 
 On appelle **valeur énergétique** l'énergie qu'un aliment met à la disposition du corps. On la mesure en **kilocalories (kcal)** ou en **kilojoules (kJ)**.
@@ -1478,6 +1480,7 @@ Ces quatre besoins expliquent tous les gestes du jardinier : arroser, fumer le s
 
 ### Page LEÇON
 
+
 **<span style="color:#C00000">Le lieu et le mode d'absorption de l'eau</span>**
 
 **<span style="color:#1E7B34">1. Les rôles de la racine</span>**
@@ -1786,6 +1789,9 @@ Beaucoup d'attaques s'évitent par de bonnes pratiques : semer à la bonne densi
 
 ### Page LEÇON
 
+![Préparation d'un extrait naturel de neem pour protéger les cultures.](img_seance17.png)
+
+
 **<span style="color:#C00000">Les méthodes naturelles de protection</span>**
 
 **<span style="color:#1E7B34">1. Le principe</span>**
@@ -1884,6 +1890,9 @@ Les règles sont donc les mêmes que pour n'importe quel produit de traitement :
 | **III. ÉVALUATION** | **Ex. 1** — Cite les trois classes de pesticides et leur cible.<br><br>**Ex. 2** — Énonce quatre règles de sécurité à respecter lors d'un traitement. | **Ex. 1** : herbicide → adventices ; insecticide → insectes ; fongicide → champignons.<br><br>**Ex. 2** : lire l'étiquette et respecter la dose ; porter gants et vêtements couvrants ; ne pas traiter par temps venteux ; respecter le délai avant récolte ; se laver après traitement ; ne jamais réutiliser les emballages. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![L'usage responsable des produits chimiques exige des protections.](img_seance18.png)
+
 
 **<span style="color:#C00000">Les méthodes chimiques et leur usage responsable</span>**
 
@@ -2115,6 +2124,9 @@ C'est pourquoi la première chose à faire devant un élevage qui produit mal n'
 | **III. ÉVALUATION** | **Ex. 1** — Cite trois ressources locales utilisables pour nourrir des volailles.<br><br>**Ex. 2** — Explique en deux phrases pourquoi un poulailler doit être fermé la nuit mais aéré le jour. | **Ex. 1** : (trois parmi) son de riz, manioc, patate douce, feuilles d'amarante, colocase, graines oléagineuses, termites.<br><br>**Ex. 2** : Fermé la nuit, il protège des prédateurs et des voleurs, et garde les animaux au chaud. Aéré le jour, il évite l'accumulation d'humidité et d'air vicié, qui favorise les maladies respiratoires. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Alimentation et habitat d'un élevage de volailles.](img_seance20.png)
+
 
 **<span style="color:#C00000">L'alimentation et l'habitat</span>**
 
@@ -2818,6 +2830,9 @@ Les cellules nerveuses se renouvellent très mal. Une lésion du système nerveu
 
 ### Page LEÇON
 
+![Cerveau, cervelet, bulbe rachidien et moelle épinière.](img_seance26.png)
+
+
 **<span style="color:#C00000">Les rôles des différentes parties</span>**
 
 **<span style="color:#1E7B34">1. Le cerveau</span>**
@@ -3047,6 +3062,9 @@ Certains réflexes ne sont observables que chez le nouveau-né et disparaissent 
 | **III. ÉVALUATION** | **Ex. 1** — Définis le réflexe acquis et cite deux exemples.<br><br>**Ex. 2** — Pourquoi la salivation devant un citron **vu** est-elle acquise, alors que la salivation due à un citron **mis dans la bouche** est innée ? | **Ex. 1** : Réaction involontaire et automatique installée par apprentissage ou répétition. Exemples : freiner à la vue d'un obstacle, saliver devant un plat connu.<br><br>**Ex. 2** : Dans le second cas, le contact de l'acide sur la langue déclenche directement la sécrétion : aucune expérience préalable n'est nécessaire, c'est **inné**. Dans le premier, la vue seule ne suffirait pas si l'on n'avait **jamais goûté** de citron : le cerveau a **appris** à associer cette image au goût acide. La réaction est donc **acquise**. | Évaluation écrite | Cahier | |
 
 ### Page LEÇON
+
+![Le réflexe acquis s'installe par la répétition.](img_seance28.png)
+
 
 **<span style="color:#C00000">Le mouvement réflexe acquis</span>**
 
