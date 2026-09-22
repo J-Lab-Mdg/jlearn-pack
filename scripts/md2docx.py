@@ -49,6 +49,7 @@ LARGEURS_DEROULEMENT = [2.6, 7.2, 6.0, 3.4, 3.2, 1.8]
 
 # Largeur d'affichage des illustrations, en cm (A4 paysage, marges 1,5 cm)
 LARGEUR_IMAGE_CM = 12.0
+FICHIER_COUVERTURE = "couverture-SVT-T9.png"
 
 RE_SPAN = re.compile(r'<span style="color:#([0-9A-Fa-f]{6})">(.*?)</span>', re.S)
 RE_LIEN = re.compile(r'\[([^\]]+)\]\([^)]+\)')
@@ -246,6 +247,19 @@ def convertir(chemin_md, chemin_docx):
     rfonts = rpr.get_or_add_rFonts()
     for att in (qn("w:ascii"), qn("w:hAnsi"), qn("w:cs"), qn("w:eastAsia")):
         rfonts.set(att, "Times New Roman")
+
+    # Page de couverture : première page du manuel, avant le sommaire.
+    # L'image est calée sur la hauteur utile (29,7 − 2 × 1,8 = 26,1 cm) afin de
+    # tenir en une seule page ; la largeur en découle par le rapport 1024/1536.
+    couverture = os.path.join(
+        os.path.dirname(os.path.abspath(chemin_md)), FICHIER_COUVERTURE)
+    if os.path.exists(couverture):
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_before = Pt(0)
+        p.paragraph_format.space_after = Pt(0)
+        p.add_run().add_picture(couverture, height=Cm(26.1))
+        doc.add_page_break()
 
     i = 0
     tampon_tableau = []
