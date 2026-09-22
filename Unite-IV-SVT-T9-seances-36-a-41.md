@@ -158,6 +158,7 @@ C'est précisément pour cela que cette leçon existe : une élève qui sait qu'
 1. Donne l'ordre correct.
 2. Explique en une phrase pourquoi la compression provoque la mort des tissus.
 3. Pourquoi la femme ne peut-elle pas retenir ses urines ?
+4. Dans certains villages, on dit que la fistule est une punition ou une maladie contagieuse. Que réponds-tu, en t'appuyant sur les étapes ci-dessus ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Une fistule est : **A.** une infection **B.** une communication anormale entre deux organes **C.** une tumeur
@@ -177,6 +178,7 @@ C'est précisément pour cela que cette leçon existe : une élève qui sait qu'
 1. **b → e → c → a → d**
 2. La compression **écrase les vaisseaux sanguins** : le sang n'apporte plus d'oxygène aux tissus, qui meurent.
 3. Parce que l'urine **ne passe plus par le canal normal**, muni d'un muscle de fermeture : elle s'échappe directement par la brèche, sur laquelle la femme n'a aucun contrôle.
+4. Ces deux idées sont **fausses**, et les étapes le montrent. La fistule résulte d'une **cause mécanique** : un accouchement prolongé sans césarienne. Elle n'est due à aucune faute — la femme n'y est pour rien — et **ne se transmet pas**, puisqu'aucun microbe n'est en cause. Ces croyances sont graves : elles conduisent à **isoler** des femmes qui ont besoin de soins, alors que la fistule **s'opère**.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -280,6 +282,7 @@ Le principal obstacle n'est pas médical, il est **informationnel** : beaucoup d
 1. Calcule le taux pour 1 000 accouchements avant l'ouverture du centre.
 2. Calcule ce taux après l'ouverture. *(arrondis au dixième)*
 3. De combien de cas la situation s'est-elle améliorée pour 1 000 accouchements ? Que conclus-tu sur le rôle de l'accès aux soins ?
+4. Exprime cette amélioration en pourcentage. Un responsable en conclut qu'« il n'y a plus rien à faire ». Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. La mesure de prévention la plus efficace est : **A.** boire moins d'eau **B.** ne pas entamer trop tôt une première grossesse **C.** rester chez soi
@@ -299,6 +302,7 @@ Le principal obstacle n'est pas médical, il est **informationnel** : beaucoup d
 1. 6 / 300 = 0,02 ; × 1 000 = **20 cas pour 1 000 accouchements**.
 2. 1 / 320 = 0,003125 ; × 1 000 = 3,125 → **environ 3,1 cas pour 1 000**.
 3. 20 − 3,1 = **16,9 cas de moins pour 1 000 accouchements**, soit une diminution d'environ **84 %**. L'accès à une maternité capable de pratiquer une césarienne est **le facteur décisif** : la cause directe de la fistule étant un travail obstrué non levé à temps, rapprocher les soins supprime l'essentiel des cas.
+4. Baisse : 16,875 ÷ 20 = 0,844 soit environ **− 84 %**. Mais il reste **un cas** : derrière ce nombre, il y a une femme. Le taux n'est pas nul, et la fistule étant **entièrement évitable**, le seul objectif acceptable est **zéro cas**. Il reste à agir sur ce qui n'a pas encore été traité : l'éloignement, le transport en urgence, le suivi prénatal et le report des grossesses trop précoces.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -400,6 +404,7 @@ Cette séance ne cherche pas à faire peur. Elle transmet trois informations pr�
 1. Quel pourcentage de femmes suit au moins quatre consultations ?
 2. Quel pourcentage n'atteint pas ce seuil ?
 3. Le district veut porter ce taux à **75 %**. Combien de femmes supplémentaires doivent être suivies ?
+4. Une femme déclare : « Je me sens bien, la consultation ne sert à rien. » Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. La puberté signifie que le corps est : **A.** prêt pour une grossesse sans risque **B.** capable de concevoir, sans être achevé **C.** adulte
@@ -419,6 +424,7 @@ Cette séance ne cherche pas à faire peur. Elle transmet trois informations pr�
 1. 160 / 400 = 0,40 = **40 %**.
 2. 100 − 40 = **60 %**.
 3. 75 % de 400 = 300 femmes ; 300 − 160 = **140 femmes supplémentaires**.
+4. Se sentir bien **ne suffit pas** : la consultation sert précisément à repérer ce qui **ne se voit pas encore** — hypertension, anémie, mauvaise position du fœtus, bassin étroit. Beaucoup de complications graves ne donnent **aucun signe** avant l'accouchement. C'est aussi à cette occasion que se prépare le lieu de naissance et le transport en cas d'urgence : attendre la douleur, c'est décider trop tard.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -535,6 +541,7 @@ Quand les symptômes apparaissent, la maladie a déjà progressé.
 1. Quel pourcentage des femmes dépistées présentait une lésion ?
 2. Sans dépistage, ces lésions auraient pu évoluer. Explique en une phrase ce que la campagne a permis d'éviter.
 3. Si la campagne avait touché **3 000 femmes** au même taux, combien de lésions auraient été détectées ?
+4. Une participante estime que le dépistage est inutile puisqu'elle n'a « aucun symptôme ». Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Le col de l'utérus est : **A.** la partie haute **B.** la partie basse débouchant dans le vagin **C.** un organe séparé
@@ -554,6 +561,7 @@ Quand les symptômes apparaissent, la maladie a déjà progressé.
 1. 96 / 1 200 = 0,08 = **8 %**.
 2. Elle a permis d'**éviter que ces lésions n'évoluent en cancer** : traitées au stade précancéreux, elles n'atteignent pas le stade invasif.
 3. 3 000 × 8 % = **240 lésions**.
+4. C'est l'inverse : le dépistage s'adresse **justement aux femmes sans symptôme**. Les lésions précancéreuses **ne font pas mal et ne se voient pas** ; quand les signes apparaissent, la maladie est souvent déjà avancée et plus difficile à soigner. Les 96 femmes de cette campagne se sentaient bien elles aussi — c'est bien pour cela que le dépistage les a sauvées.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -655,6 +663,7 @@ Les outils existent donc. Ce qui manque encore, dans beaucoup de régions du mon
 1. Quel pourcentage des filles est vacciné ?
 2. Combien de filles ne le sont pas ?
 3. L'objectif national est de **90 %**. Combien de filles supplémentaires faut-il vacciner pour l'atteindre ?
+4. Une mère vaccinée dit à sa fille vaccinée : « Le dépistage ne te concernera jamais. » Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Un vaccin agit : **A.** après l'infection **B.** avant l'exposition **C.** pendant le cancer
@@ -674,6 +683,7 @@ Les outils existent donc. Ce qui manque encore, dans beaucoup de régions du mon
 1. 1 750 / 2 500 = 0,70 = **70 %**.
 2. 2 500 − 1 750 = **750 filles**.
 3. 90 % de 2 500 = 2 250 ; 2 250 − 1 750 = **500 filles supplémentaires**.
+4. Elle se trompe. Le vaccin protège contre les types de virus **les plus fréquents**, mais **pas contre tous** : une part des cancers du col peut encore survenir chez une femme vaccinée. Vaccination et dépistage sont **complémentaires**, non interchangeables — l'un prévient l'infection avant le contact, l'autre détecte les lésions déjà installées. Sa fille devra donc se faire dépister à l'âge recommandé.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
@@ -795,6 +805,7 @@ C'est là que se rejoignent les deux valeurs de cette thématique. L'**estime de
 6. Une personne qui a …… ne va pas consulter.
 
 **Exercice 3 (6 points)** — Rédige **trois** messages de sensibilisation courts, respectant les quatre critères : un destiné aux jeunes filles, un aux maris et parents, un à l'ensemble du village. Indique pour chacun le critère « action proposée ».
+4. Un camarade propose d'illustrer l'affiche par la photographie d'une femme atteinte, « pour frapper les esprits ». Que lui réponds-tu ?
 
 **Exercice 4 (4 points)** — Choisis la bonne réponse.
 1. Un message culpabilisant : **A.** incite à consulter **B.** pousse à se cacher **C.** est sans effet
@@ -814,6 +825,7 @@ C'est là que se rejoignent les deux valeurs de cette thématique. L'**estime de
 - *Jeunes filles* : « Ton corps finit de grandir après la puberté. Attendre pour avoir un enfant protège ta santé. » → **action** : en parler au centre de santé, se faire vacciner.
 - *Maris et parents* : « Dès les premières douleurs, conduisez-la à la maternité. Quelques heures peuvent tout changer. » → **action** : organiser le transport à l'avance.
 - *Village entier* : « La fistule n'est pas contagieuse et ne vient pas d'une faute. Elle s'opère. » → **action** : accompagner la femme au centre de santé plutôt que l'isoler.
+4. Il faut **refuser**. Exposer une personne identifiable porte atteinte à sa **dignité** et à sa vie privée, et produit l'effet contraire à celui recherché : la peur et la honte **éloignent** les femmes des soins au lieu de les y conduire. Un message efficace **informe et propose une action** ; on illustrera par un schéma, un symbole ou une scène de consultation, jamais par l'image d'une malade reconnaissable.
 
 **Ex. 4** — 1. **B** · 2. **B** · 3. **B** · 4. **B**
 
