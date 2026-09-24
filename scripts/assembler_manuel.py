@@ -80,7 +80,7 @@ out.append("""# Manuel de SVT — Classe de T9
 
 ## Sciences de la vie et de la terre · 51 séances
 
-**Établissement** : ____________________  **Enseignant** : ____________________  **Année scolaire** : ____________________
+**Établissement** : ____________________ · **Enseignant** : ____________________ · **Année scolaire** : ____________________
 
 ---
 

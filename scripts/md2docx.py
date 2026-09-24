@@ -29,6 +29,7 @@ répartition automatique.
 import os
 import re
 import sys
+import unicodedata
 
 from docx import Document
 from docx.enum.section import WD_ORIENT
@@ -41,6 +42,17 @@ from docx.shared import Cm, Pt, RGBColor
 # Couleurs du gabarit J-Learn
 ROUGE_LECON = RGBColor(0xC0, 0x00, 0x00)
 VERT_SOUS_TITRE = RGBColor(0x1E, 0x7B, 0x34)
+# Code couleur imposé par le skill : mots clés de la leçon en bleu, mots clés
+# du corrigé en rose/bordeaux. Le gras seul ne suffit pas — il ne distingue
+# pas un mot clé d'une simple emphase.
+BLEU_MOT_CLE = RGBColor(0x1F, 0x4E, 0x79)
+ROSE_CORRIGE = RGBColor(0xC2, 0x18, 0x5B)
+
+# Contexte de rédaction courant, positionné par `convertir()` au fil des
+# titres. Seuls « lecon » et « corrige » colorent le gras ; partout ailleurs
+# (fiche de préparation, énoncés d'exercices) le gras reste noir.
+CONTEXTE = {"zone": None}
+COULEUR_MOT_CLE = {"lecon": BLEU_MOT_CLE, "corrige": ROSE_CORRIGE}
 GRIS_ENCADRE = "F2F2F2"
 GRIS_ENTETE = "D9D9D9"
 
@@ -53,6 +65,47 @@ FICHIER_COUVERTURE = "couverture-SVT-T9.png"
 
 RE_SPAN = re.compile(r'<span style="color:#([0-9A-Fa-f]{6})">(.*?)</span>', re.S)
 RE_LIEN = re.compile(r'\[([^\]]+)\]\([^)]+\)')
+# Lien interne « [texte](#ancre) » : il devient un vrai lien hypertexte Word,
+# pas un simple texte. La règle critique 12 du skill impose un sommaire
+# cliquable qui reste fonctionnel après export PDF, sans manipulation.
+RE_LIEN_INTERNE = re.compile(r'\[([^\]]+)\]\(#([^)]+)\)')
+
+
+def ancre(titre):
+    """Identifiant d'un titre, calqué sur la convention d'ancre Markdown."""
+    s = re.sub(r'<[^>]+>', '', titre)
+    s = re.sub(r'[*`]', '', s).strip().lower()
+    s = re.sub(r'[^\w\s-]', '', s, flags=re.U)
+    return re.sub(r'\s+', '-', s)
+
+
+def nom_signet(cle, _cache={}):
+    """Word limite les noms de signet à 40 caractères, sans accent ni tiret
+    initial. On indexe donc les ancres et on renvoie un nom court stable."""
+    if cle not in _cache:
+        _cache[cle] = "jl%d" % (len(_cache) + 1)
+    return _cache[cle]
+
+
+def poser_signet(paragraphe, cle):
+    ident = str(abs(hash(cle)) % 100000)
+    debut = OxmlElement("w:bookmarkStart")
+    debut.set(qn("w:id"), ident)
+    debut.set(qn("w:name"), nom_signet(cle))
+    fin = OxmlElement("w:bookmarkEnd")
+    fin.set(qn("w:id"), ident)
+    paragraphe._p.insert(0, debut)
+    paragraphe._p.append(fin)
+
+
+def ajouter_lien_interne(paragraphe, texte, cle):
+    lien = OxmlElement("w:hyperlink")
+    lien.set(qn("w:anchor"), nom_signet(cle))
+    run = paragraphe.add_run(texte)
+    run.font.color.rgb = RGBColor(0x1F, 0x4E, 0x79)
+    run.font.underline = True
+    lien.append(run._r)
+    paragraphe._p.append(lien)
 RE_INLINE = re.compile(r'(\*\*.+?\*\*|(?<!\*)\*(?!\*).+?(?<!\*)\*(?!\*)|`[^`]+`)', re.S)
 
 
@@ -79,6 +132,21 @@ def fond_cellule(cellule, couleur_hex):
 
 def ajouter_texte_riche(paragraphe, texte, gras_par_defaut=False):
     """Écrit `texte` dans `paragraphe` en interprétant le formatage en ligne."""
+    # Les liens internes sont rendus cliquables ; les autres sont aplatis.
+    if RE_LIEN_INTERNE.search(texte):
+        reste = texte
+        while True:
+            m = RE_LIEN_INTERNE.search(reste)
+            if not m:
+                break
+            avant = reste[:m.start()]
+            if avant:
+                paragraphe.add_run(avant)
+            ajouter_lien_interne(paragraphe, m.group(1), m.group(2))
+            reste = reste[m.end():]
+        if reste:
+            paragraphe.add_run(reste)
+        return
     texte = RE_LIEN.sub(r"\1", texte)
 
     # Les <span> colorés encadrent toujours un titre entier dans ce manuel :
@@ -113,6 +181,11 @@ def ajouter_texte_riche(paragraphe, texte, gras_par_defaut=False):
                 run.font.size = Pt(9)
             if couleur is not None:
                 run.font.color.rgb = couleur
+            elif gras and not gras_par_defaut:
+                # Mot clé : bleu dans la leçon, rose/bordeaux dans le corrigé.
+                teinte = COULEUR_MOT_CLE.get(CONTEXTE["zone"])
+                if teinte is not None:
+                    run.font.color.rgb = teinte
 
 
 def decouper_ligne_tableau(ligne):
@@ -303,11 +376,22 @@ def convertir(chemin_md, chemin_docx):
         m = re.match(r'^(#{1,4})\s+(.*)$', nu)
         if m:
             niveau, titre = len(m.group(1)), m.group(2)
+            # Zone de rédaction courante, pour le code couleur des mots clés.
+            sans_accent = "".join(
+                c for c in unicodedata.normalize("NFD", titre.upper())
+                if unicodedata.category(c) != "Mn").replace("Ç", "C")
+            if "PAGE LECON" in sans_accent:
+                CONTEXTE["zone"] = "lecon"
+            elif sans_accent.startswith("CORRIGE"):
+                CONTEXTE["zone"] = "corrige"
+            elif niveau == 1 or "EXERCICE" in sans_accent:
+                CONTEXTE["zone"] = None
             # Une séance commence toujours une nouvelle page.
             if niveau == 1 and titre.startswith("SÉANCE "):
                 if doc.paragraphs and doc.paragraphs[-1].text.strip():
                     doc.add_page_break()
             p = doc.add_heading(level=min(niveau, 4))
+            poser_signet(p, ancre(titre))
             p.paragraph_format.space_before = Pt(10 if niveau > 1 else 14)
             p.paragraph_format.space_after = Pt(5)
             ajouter_texte_riche(p, titre)

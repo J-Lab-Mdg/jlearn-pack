@@ -2,7 +2,7 @@
 
 ## Sciences de la vie et de la terre · 51 séances
 
-**Établissement** : ____________________  **Enseignant** : ____________________  **Année scolaire** : ____________________
+**Établissement** : ____________________ · **Enseignant** : ____________________ · **Année scolaire** : ____________________
 
 ---
 
@@ -617,7 +617,7 @@ Les besoins diffèrent entre hommes et femmes. Ils augmentent également lors de
 **Exercice 2 (6 points)** — Complète avec : *métabolisme de base, activité, croissance, augmentent, réserves, 37*
 1. Le corps maintient sa température autour de …… °C.
 2. La dépense minimale au repos est le …….
-3. Pendant la …… , les besoins sont élevés.
+3. Pendant la ……, les besoins sont élevés.
 4. Le facteur le plus variable est l'…… physique.
 5. Si les apports sont insuffisants, le corps puise dans ses …….
 6. Pendant la grossesse, les besoins …….
