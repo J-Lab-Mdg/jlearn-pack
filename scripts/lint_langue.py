@@ -6,6 +6,8 @@ Contrôle de langue et de typographie d'un manuel J-Learn.
 Usage :
     python3 scripts/lint_langue.py Manuel-SVT-T9-complet.md [autre.md ...]
     python3 scripts/lint_langue.py Manuel.docx
+    python3 scripts/lint_langue.py Manuel-malgache.docx --langue mg
+    python3 scripts/lint_langue.py Manuel-anglais.docx --langue en
 
 Sort en code 1 dès qu'une anomalie est trouvée, pour usage en pré-livraison.
 
@@ -78,6 +80,37 @@ CONTROLE_APOSTROPHE = (
     "apostrophe-droite", r"\w'\w",
     "apostrophe droite ' : utiliser l'apostrophe typographique ’")
 
+# --- Malgache -------------------------------------------------------------
+# Pièges relevés dans `fiabilite-malgache.md` du skill : ce sont des erreurs
+# réellement commises sur des manuels précédents, pas des cas théoriques.
+CONTROLES_MG = [
+    ("mg-kahiera", r"\bKahiera\b",
+     "« Kahiera » : forme incorrecte, écrire « Kahie »"),
+    ("mg-tableau", r"\bkitaboro mainty\b",
+     "« kitaboro mainty » : le tableau noir se dit « Solaitrabe »"),
+    ("mg-ra", r"\bR\.A\.",
+     "« R.A. » est un sigle français : en malgache, « V.A. » (Valiny Andrasana)"),
+    ("mg-mandinika", r"\bMandinika\b",
+     "« Mandinika » implique déjà une analyse : à l'étape Fandinihana, "
+     "« Mijery. » seul"),
+    # L'alphabet malgache n'a ni C, Q, U, W ni X : un item lettré « c) » ou
+    # « u) » trahit un alphabet français recopié tel quel.
+    ("mg-alphabet", r"(?<![\w])[cqCQuUwWxX]\)\s",
+     "lettre absente de l'alphabet malgache dans un item lettré "
+     "(a, b, d, e, f, g, h, i, j, k, l, m, n, o, p, r, s, t, v, z)"),
+]
+
+# --- Anglais --------------------------------------------------------------
+# Équivalent anglais de l'élision : l'article indéfini devant une voyelle.
+# Les exceptions (« a university », « an hour ») tiennent au son, pas à la
+# lettre — d'où la liste d'exceptions plus bas.
+CONTROLES_EN = [
+    ("en-article", r"\b[Aa] (?=[aeiouAEIOU])",
+     "« a » devant une voyelle : écrire « an »"),
+]
+
+LANGUES = {"fr": [], "mg": CONTROLES_MG, "en": CONTROLES_EN}
+
 # Séquences correctes que les motifs ci-dessus signaleraient à tort.
 EXCEPTIONS = [
     r"[Ll]e [Hh]",              # h aspiré éventuel laissé au rédacteur
@@ -86,6 +119,8 @@ EXCEPTIONS = [
     r"[LlDdCcQq](?:e|a|ue) [A-Z](?![a-zà-ÿ])",
     # Points de suspension d'un texte à trous suivis du point final.
     r"…\s*\.",
+    # Anglais : l'article suit le son, pas la lettre.
+    r"[Aa] (?:uni|use|user|usu|eu|one-|ubiq)",
 ]
 
 
@@ -143,9 +178,20 @@ def main(chemins, controles=CONTROLES):
 
 
 if __name__ == "__main__":
-    args = [a for a in sys.argv[1:] if a != "--apostrophe"]
-    controles = list(CONTROLES)
-    if "--apostrophe" in sys.argv[1:]:
+    brut = sys.argv[1:]
+    langues = ["fr"]
+    for i, a in enumerate(brut):
+        if a == "--langue" and i + 1 < len(brut):
+            langues = brut[i + 1].split(",")
+    args = [a for a in brut if not a.startswith("--")
+            and a not in langues and a != ",".join(langues)]
+    controles = list(CONTROLES) if "fr" in langues else []
+    for lg in langues:
+        if lg not in LANGUES:
+            print(f"langue inconnue : {lg} (attendu : fr, mg, en)")
+            sys.exit(2)
+        controles += LANGUES[lg]
+    if "--apostrophe" in brut:
         controles.append(CONTROLE_APOSTROPHE)
     if not args:
         print(__doc__)
