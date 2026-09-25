@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Parenthèses ou non : (−2)⁴ et −2⁴</text>
+<g font-family="serif">
+<rect x="80" y="115" width="380" height="230" rx="14" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="270" y="158" font-size="28" text-anchor="middle" fill="#1E7B34" font-weight="bold">(−2)⁴</text>
+<text x="270" y="208" font-size="21" text-anchor="middle" fill="#222">(−2) × (−2) × (−2) × (−2)</text>
+<text x="270" y="248" font-size="21" text-anchor="middle" fill="#222">= (+4) × (+4)</text>
+<text x="270" y="300" font-size="30" text-anchor="middle" fill="#1E7B34" font-weight="bold">= +16</text>
+<rect x="540" y="115" width="380" height="230" rx="14" fill="#FDE9E7" stroke="#C00000" stroke-width="3.5"/>
+<text x="730" y="158" font-size="28" text-anchor="middle" fill="#C00000" font-weight="bold">−2⁴</text>
+<text x="730" y="208" font-size="21" text-anchor="middle" fill="#222">− (2 × 2 × 2 × 2)</text>
+<text x="730" y="248" font-size="21" text-anchor="middle" fill="#222">l’opposé de 2⁴</text>
+<text x="730" y="300" font-size="30" text-anchor="middle" fill="#C00000" font-weight="bold">= −16</text>
+<text x="500" y="398" font-size="22" text-anchor="middle" fill="#333">La parenthèse embarque le signe dans la puissance ; sans elle, le signe reste dehors.</text>
+</g></svg>

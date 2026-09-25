@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Deux étages de priorités : 24 − (7 + 3 × 2)</text>
+<g font-family="serif">
+<text x="500" y="140" font-size="28" text-anchor="middle" fill="#1F4E79" font-weight="bold">24 − (7 + 3 × 2)</text>
+<rect x="400" y="112" width="225" height="44" rx="10" fill="none" stroke="#C2185B" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="760" y="145" font-size="21" anchor="start" fill="#333">dans la parenthèse : × d’abord</text>
+<text x="500" y="215" font-size="26" text-anchor="middle" fill="#222">= 24 − (7 + 6)</text>
+<text x="500" y="272" font-size="26" text-anchor="middle" fill="#222">= 24 − 13</text>
+<rect x="360" y="305" width="280" height="62" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="345" font-size="30" text-anchor="middle" fill="#1E7B34" font-weight="bold">= 11</text>
+<text x="500" y="405" font-size="21" text-anchor="middle" fill="#333">On ne touche à la soustraction qu’à la toute fin.</text>
+</g></svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Quand la division ne finit pas</text>
+<g font-family="serif">
+<text x="300" y="190" font-size="36" text-anchor="middle" fill="#1F4E79" font-weight="bold">1 / 3 = 0,333…</text>
+<text x="300" y="245" font-size="23" text-anchor="middle" fill="#C00000" font-weight="bold">le reste 1 revient toujours</text>
+<path d="M265 145 Q 330 110 395 145" fill="none" stroke="#C00000" stroke-width="3"/>
+<rect x="500" y="130" width="420" height="170" rx="12" fill="#F7F3EE" stroke="#C2185B" stroke-width="3"/>
+<text x="710" y="178" font-size="22" text-anchor="middle" fill="#222">on garde la fraction 1/3</text>
+<text x="710" y="222" font-size="22" text-anchor="middle" fill="#222">ou une valeur approchée</text>
+<text x="710" y="262" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">≈ 0,33 annoncée comme telle</text>
+<text x="500" y="390" font-size="22" text-anchor="middle" fill="#333">Toutes les fractions ne sont pas des décimaux : c’est normal.</text>
+</g></svg>
