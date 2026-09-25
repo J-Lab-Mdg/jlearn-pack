@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Comparer rang par rang</text>
+<g font-family="serif">
+<text x="250" y="150" font-size="32" text-anchor="middle" fill="#222" font-weight="bold">12,50</text><text x="250" y="220" font-size="32" text-anchor="middle" fill="#222" font-weight="bold">12,45</text>
+<text x="560" y="150" font-size="24" fill="#1F4E79">entières égales : 12 = 12</text>
+<text x="560" y="220" font-size="22" fill="#C2185B" font-weight="bold">dixièmes : 5 &gt; 4 → décision</text>
+<rect x="230" y="290" width="540" height="64" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="330" font-size="26" text-anchor="middle" fill="#1E7B34" font-weight="bold">12,50 &gt; 12,45</text>
+<text x="500" y="400" font-size="22" text-anchor="middle" fill="#333">On s’arrête au premier rang qui diffère.</text>
+</g></svg>

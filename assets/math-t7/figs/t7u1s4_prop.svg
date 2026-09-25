@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Fractions équivalentes : même multiplicateur</text>
+<g font-family="serif">
+<text x="300" y="205" font-size="46" text-anchor="middle" fill="#222" font-weight="bold">2</text>
+<line x1="255" y1="228" x2="345" y2="228" stroke="#222" stroke-width="4"/>
+<text x="300" y="282" font-size="46" text-anchor="middle" fill="#222" font-weight="bold">4</text>
+<path d="M370 190 Q 420 150 470 190" fill="none" stroke="#C2185B" stroke-width="3.5" marker-end="url(#aje)"/>
+<text x="420" y="150" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">× 3</text>
+<path d="M370 278 Q 420 318 470 278" fill="none" stroke="#C2185B" stroke-width="3.5" marker-end="url(#aje)"/>
+<text x="420" y="330" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">× 3</text>
+<text x="620" y="205" font-size="46" text-anchor="middle" fill="#C2185B" font-weight="bold">6</text>
+<line x1="575" y1="228" x2="665" y2="228" stroke="#222" stroke-width="4"/>
+<text x="620" y="282" font-size="46" text-anchor="middle" fill="#C2185B" font-weight="bold">12</text>
+<text x="495" y="390" font-size="24" text-anchor="middle" fill="#1E7B34" font-weight="bold">2/4 = 6/12 : mêmes positions sur la ligne</text>
+<text x="500" y="422" font-size="19" text-anchor="middle" fill="#333">On multiplie (ou divise) les deux termes par un même nombre.</text>
+<defs><marker id="aje" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#C2185B"/></marker></defs>
+</g></svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Soustraire = ajouter l’opposé</text>
+<g font-family="serif">
+<rect x="80" y="115" width="400" height="110" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="280" y="180" font-size="30" text-anchor="middle" fill="#222">7 − (−2)</text>
+<path d="M500 170 L 560 170" stroke="#1E7B34" stroke-width="5"/>
+<path d="M548 158 L 565 170 L 548 182" fill="none" stroke="#1E7B34" stroke-width="5"/>
+<rect x="580" y="115" width="340" height="110" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="750" y="180" font-size="30" text-anchor="middle" fill="#1E7B34" font-weight="bold">= 7 + 2 = 9</text>
+<rect x="180" y="270" width="640" height="80" rx="12" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<text x="500" y="318" font-size="26" text-anchor="middle" fill="#C2185B" font-weight="bold">−6 − 4 = −6 + (−4) = −10</text>
+<text x="500" y="400" font-size="23" text-anchor="middle" fill="#333">Deux signes « − − » deviennent un « + » ; reculer, on additionne l’opposé.</text>
+</g></svg>

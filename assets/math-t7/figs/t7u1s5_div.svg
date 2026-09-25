@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Diviser un décimal : la virgule suit</text>
+<g font-family="serif">
+<g font-family="monospace" font-size="32" font-weight="bold">
+<text x="220" y="150" fill="#222">5,40</text>
+<line x1="330" y1="125" x2="330" y2="240" stroke="#222" stroke-width="3"/>
+<line x1="180" y1="125" x2="420" y2="125" stroke="#222" stroke-width="0" />
+<text x="385" y="150" fill="#C2185B">4</text>
+<text x="385" y="215" text-anchor="start" fill="#1E7B34">1,35</text>
+<line x1="355" y1="165" x2="475" y2="165" stroke="#222" stroke-width="2.5"/>
+</g>
+<text x="300" y="310" font-family="serif" font-size="22" text-anchor="middle" fill="#333">on croise la virgule : on l’écrit au quotient</text>
+<rect x="590" y="120" width="340" height="200" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="760" y="165" font-size="23" text-anchor="middle" fill="#1F4E79" font-weight="bold">5,4 : 4 = 1,35</text>
+<text x="760" y="212" font-size="22" text-anchor="middle" fill="#222">3 : 8 = 0,375</text>
+<text x="760" y="260" font-size="19" text-anchor="middle" fill="#555">la division peut ne pas</text>
+<text x="760" y="290" font-size="19" text-anchor="middle" fill="#555">tomber juste tout de suite</text>
+</g></svg>
