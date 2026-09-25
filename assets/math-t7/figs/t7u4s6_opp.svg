@@ -5,7 +5,7 @@
 <circle cx="375" cy="230" r="7" fill="#222"/>
 <path d="M470 214 A 100 100 0 0 1 478 160" fill="none" stroke="#C00000" stroke-width="4"/>
 <path d="M280 246 A 100 100 0 0 1 272 300" fill="none" stroke="#C00000" stroke-width="4"/>
-<text x="525" y="168" font-size="26" fill="#C00000" font-weight="bold">40°</text>
+<text x="550" y="150" font-size="26" fill="#C00000" font-weight="bold">40°</text>
 <text x="225" y="322" font-size="26" fill="#C00000" font-weight="bold">40°</text>
 <path d="M276 160 A 100 100 0 0 1 280 214" fill="none" stroke="#1F4E79" stroke-width="4"/>
 <path d="M474 300 A 100 100 0 0 1 470 246" fill="none" stroke="#1F4E79" stroke-width="4"/>

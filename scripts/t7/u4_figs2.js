@@ -42,7 +42,7 @@ svgPng('t7u4s6_opp', svgHead(1000,430,'Opposés par le sommet : ils sont égaux'
 <circle cx="375" cy="230" r="7" fill="#222"/>
 <path d="M470 214 A 100 100 0 0 1 478 160" fill="none" stroke="#C00000" stroke-width="4"/>
 <path d="M280 246 A 100 100 0 0 1 272 300" fill="none" stroke="#C00000" stroke-width="4"/>
-<text x="525" y="168" font-size="26" fill="#C00000" font-weight="bold">40°</text>
+<text x="550" y="150" font-size="26" fill="#C00000" font-weight="bold">40°</text>
 <text x="225" y="322" font-size="26" fill="#C00000" font-weight="bold">40°</text>
 <path d="M276 160 A 100 100 0 0 1 280 214" fill="none" stroke="#1F4E79" stroke-width="4"/>
 <path d="M474 300 A 100 100 0 0 1 470 246" fill="none" stroke="#1F4E79" stroke-width="4"/>
@@ -89,9 +89,9 @@ svgPng('t7u4s7_corr', svgHead(1000,430,'Les angles correspondants') + `
 
 svgPng('t7u4s7_huit', svgHead(1000,430,'Les huit angles de deux droites et d’une sécante') + `
 <g font-family="serif">
-<line x1="140" y1="150" x2="860" y2="150" stroke="#1F4E79" stroke-width="4.5"/>
-<line x1="140" y1="300" x2="860" y2="300" stroke="#1F4E79" stroke-width="4.5"/>
-<line x1="310" y1="60" x2="660" y2="385" stroke="#C00000" stroke-width="4.5"/>
+<line x1="140" y1="150" x2="640" y2="150" stroke="#1F4E79" stroke-width="4.5"/>
+<line x1="140" y1="300" x2="930" y2="300" stroke="#1F4E79" stroke-width="4.5"/>
+<line x1="310" y1="60" x2="620" y2="385" stroke="#C00000" stroke-width="4.5"/>
 <circle cx="452" cy="150" r="6" fill="#222"/>
 <circle cx="548" cy="300" r="6" fill="#222"/>
 <text x="420" y="132" font-size="21" fill="#1F4E79" font-weight="bold">1</text>

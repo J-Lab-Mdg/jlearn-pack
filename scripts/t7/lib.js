@@ -125,8 +125,8 @@ function trace(s){
  if(s.method) a.push(title('Méthode',2),...s.method.map((x,i)=>p(`${i+1}. ${x}`)));
  a.push(examplePara(s.example+' '+s.worked));
  a.push(errorPara(s.error[0],s.error[1]));
- a.push(title('EXERCICES',1),p(`1. ${s.app[0]}`),p(`2. ${s.app[1]}`),p(`3. ${s.app[2]}`));
- a.push(title('CORRIGÉS',1),correction('1. ',s.ans[0]),correction('2. ',s.ans[1]),correction('3. ',s.ans[2]));
+ a.push(title('EXERCICES',1),...s.app.map((x,i)=>p(`${i+1}. ${x}`)));
+ a.push(title('CORRIGÉS',1),...s.ans.map((x,i)=>correction(`${i+1}. `,x)));
  return a;
 }
 
