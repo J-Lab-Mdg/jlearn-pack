@@ -40,7 +40,7 @@ ${[['2','80'],['5','200'],['0','320'],['0','440']].map(d=>`<text x="${+d[1]+60}"
 <text x="955" y="182" font-size="24" fill="#555" text-anchor="end">← virgule en m</text>
 <rect x="230" y="235" width="540" height="70" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3"/>
 <text x="500" y="279" font-size="26" text-anchor="middle" fill="#1E7B34" font-weight="bold">2,5 km = 2 500 m</text>
-<text x="500" y="335" font-size="22" text-anchor="middle" fill="#333">Le chiffre des unités (2) se pose dans la colonne de l’unité donnée (km) ; on complète de zéros jusqu’à l’unité demandée (m).</text>
+<text x="500" y="335" font-size="21" text-anchor="middle" fill="#333">Les unités se posent sous l’unité donnée, puis on complète de zéros.</text>
 <text x="500" y="385" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">Retenir : 1 km = 1 000 m ; 1 m = 100 cm ; 1 cm = 10 mm.</text>
 </g></svg>`);
 
@@ -71,8 +71,8 @@ svgPng('t7u5s2_somme', svgHead(1000,430,'Additionner deux longueurs') + `
 <text x="750" y="160" font-size="21" text-anchor="middle" fill="#C2185B" font-weight="bold">ruban saumon : 350 m</text>
 <text x="750" y="198" font-size="22" text-anchor="middle" fill="#222">déjà en mètres</text>
 <text x="750" y="240" font-size="24" text-anchor="middle" fill="#C2185B" font-weight="bold">= 350 m</text>
-<rect x="260" y="300" width="480" height="70" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
-<text x="500" y="345" font-size="26" text-anchor="middle" fill="#1E7B34" font-weight="bold">1 200 + 350 = 1 550 m = 1,55 km</text>
+<rect x="230" y="300" width="540" height="70" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="345" font-size="25" text-anchor="middle" fill="#1E7B34" font-weight="bold">1 200 + 350 = 1 550 m = 1,55 km</text>
 </g></svg>`);
 
 svgPng('t7u5s2_balance', svgHead(1000,430,'Additionner deux masses') + `
@@ -84,8 +84,8 @@ svgPng('t7u5s2_balance', svgHead(1000,430,'Additionner deux masses') + `
 <line x1="440" y1="200" x2="440" y2="260" stroke="#222" stroke-width="3"/>
 <path d="M110 260 A 50 28 0 0 0 210 260" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3"/>
 <path d="M390 260 A 50 28 0 0 0 490 260" fill="#FCE4D6" stroke="#C2185B" stroke-width="3"/>
-<text x="160" y="280" font-size="20" text-anchor="middle" fill="#1F4E79" font-weight="bold">riz : 2,5 kg</text>
-<text x="440" y="280" font-size="20" text-anchor="middle" fill="#C2185B" font-weight="bold">haricots : 750 g</text>
+<text x="160" y="315" font-size="20" text-anchor="middle" fill="#1F4E79" font-weight="bold">riz : 2,5 kg</text>
+<text x="440" y="315" font-size="20" text-anchor="middle" fill="#C2185B" font-weight="bold">haricots : 750 g</text>
 <rect x="560" y="110" width="380" height="215" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
 <text x="750" y="152" font-size="20" text-anchor="middle" fill="#1E7B34" font-weight="bold">convertir en grammes</text>
 <text x="750" y="195" font-size="22" text-anchor="middle" fill="#222">2,5 kg = 2 500 g</text>
@@ -159,9 +159,9 @@ ${(()=>{let r='';for(let i=0;i<8;i++)for(let j=0;j<5;j++){r+=`<rect x="${90+i*45
 
 svgPng('t7u5s4_carre', svgHead(1000,430,'L’aire du carré : côté fois côté') + `
 <g font-family="serif">
-${(()=>{let r='';for(let i=0;i<6;i++)for(let j=0;j<6;j++){r+=`<rect x="${120+i*45}" y="${75+j*45}" width="45" height="45" fill="${(i+j)%2?'#FCE4D6':'#FAFCFD'}" stroke="#C28E96" stroke-width="1.5"/>`;} return r;})()}
-<rect x="120" y="75" width="270" height="270" fill="none" stroke="#C2185B" stroke-width="4"/>
-<text x="255" y="62" font-size="23" text-anchor="middle" fill="#C2185B" font-weight="bold">c = 6</text>
+${(()=>{let r='';for(let i=0;i<6;i++)for(let j=0;j<6;j++){r+=`<rect x="${120+i*45}" y="${100+j*45}" width="45" height="45" fill="${(i+j)%2?'#FCE4D6':'#FAFCFD'}" stroke="#C28E96" stroke-width="1.5"/>`;} return r;})()}
+<rect x="120" y="100" width="270" height="270" fill="none" stroke="#C2185B" stroke-width="4"/>
+<text x="255" y="90" font-size="23" text-anchor="middle" fill="#C2185B" font-weight="bold">c = 6</text>
 <rect x="480" y="110" width="420" height="210" rx="12" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
 <text x="690" y="155" font-size="24" text-anchor="middle" fill="#C2185B" font-weight="bold">A = c × c = c²</text>
 <text x="690" y="205" font-size="23" text-anchor="middle" fill="#222">6 × 6 = 36</text>
@@ -182,5 +182,5 @@ svgPng('t7u5s4_triangle', svgHead(1000,430,'L’aire du triangle : la moitié du
 <text x="715" y="155" font-size="24" text-anchor="middle" fill="#1E7B34" font-weight="bold">A = (b × h) : 2</text>
 <text x="715" y="205" font-size="22" text-anchor="middle" fill="#222">(6 × 4) : 2 = 24 : 2</text>
 <text x="715" y="256" font-size="25" text-anchor="middle" fill="#1E7B34" font-weight="bold">A = 12 cm²</text>
-<text x="500" y="385" font-size="23" text-anchor="middle" fill="#333">Deux triangles rectangles identiques reconstituent le rectangle : chacun en vaut la moitié.</text>
+<text x="500" y="385" font-size="21" text-anchor="middle" fill="#333">Deux triangles identiques reforment le rectangle : chacun vaut la moitié.</text>
 </g></svg>`);

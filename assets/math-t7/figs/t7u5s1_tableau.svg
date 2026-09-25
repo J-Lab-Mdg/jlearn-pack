@@ -6,6 +6,6 @@
 <text x="955" y="182" font-size="24" fill="#555" text-anchor="end">← virgule en m</text>
 <rect x="230" y="235" width="540" height="70" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3"/>
 <text x="500" y="279" font-size="26" text-anchor="middle" fill="#1E7B34" font-weight="bold">2,5 km = 2 500 m</text>
-<text x="500" y="335" font-size="22" text-anchor="middle" fill="#333">Le chiffre des unités (2) se pose dans la colonne de l’unité donnée (km) ; on complète de zéros jusqu’à l’unité demandée (m).</text>
+<text x="500" y="335" font-size="21" text-anchor="middle" fill="#333">Les unités se posent sous l’unité donnée, puis on complète de zéros.</text>
 <text x="500" y="385" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">Retenir : 1 km = 1 000 m ; 1 m = 100 cm ; 1 cm = 10 mm.</text>
 </g></svg>

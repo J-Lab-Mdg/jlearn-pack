@@ -7,8 +7,8 @@
 <line x1="410" y1="110" x2="410" y2="250" stroke="#1F4E79" stroke-width="3.5"/>
 <line x1="330" y1="310" x2="410" y2="250" stroke="#1F4E79" stroke-width="3.5" stroke-dasharray="6 5"/>
 <text x="220" y="340" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">L = 5 cm</text>
-<text x="440" y="300" font-size="22" fill="#1F4E79" font-weight="bold">l = 3</text>
-<text x="150" y="140" font-size="22" fill="#1F4E79" font-weight="bold">h = 2</text>
+<text x="445" y="300" font-size="22" fill="#1F4E79" font-weight="bold">l = 3</text>
+<text x="343" y="245" font-size="22" fill="#1F4E79" font-weight="bold">h = 2</text>
 <rect x="540" y="120" width="380" height="210" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
 <text x="730" y="165" font-size="23" text-anchor="middle" fill="#1E7B34" font-weight="bold">V = L × l × h</text>
 <text x="730" y="212" font-size="22" text-anchor="middle" fill="#222">5 × 3 × 2 = 30</text>

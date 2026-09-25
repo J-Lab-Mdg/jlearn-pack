@@ -4,7 +4,8 @@
 <polygon points="110,190 340,190 225,110" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
 <text x="225" y="345" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">6 m</text>
 <text x="360" y="262" font-size="22" fill="#1F4E79" font-weight="bold">4 m</text>
-<text x="262" y="150" font-size="20" fill="#C2185B" font-weight="bold">h = 2</text>
+<text x="365" y="150" font-size="20" fill="#C2185B" font-weight="bold">h = 2</text>
+<line x1="360" y1="142" x2="330" y2="130" stroke="#C2185B" stroke-width="2"/>
 <rect x="470" y="105" width="460" height="235" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
 <text x="700" y="150" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">mur : 6 × 4 = 24 m²</text>
 <text x="700" y="198" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">pignon : (6 × 2) : 2 = 6 m²</text>

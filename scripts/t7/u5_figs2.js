@@ -22,7 +22,8 @@ svgPng('t7u5s5_maison', svgHead(1000,430,'Un mur + un pignon : rectangle et tria
 <polygon points="110,190 340,190 225,110" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
 <text x="225" y="345" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">6 m</text>
 <text x="360" y="262" font-size="22" fill="#1F4E79" font-weight="bold">4 m</text>
-<text x="262" y="150" font-size="20" fill="#C2185B" font-weight="bold">h = 2</text>
+<text x="365" y="150" font-size="20" fill="#C2185B" font-weight="bold">h = 2</text>
+<line x1="360" y1="142" x2="330" y2="130" stroke="#C2185B" stroke-width="2"/>
 <rect x="470" y="105" width="460" height="235" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
 <text x="700" y="150" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">mur : 6 × 4 = 24 m²</text>
 <text x="700" y="198" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">pignon : (6 × 2) : 2 = 6 m²</text>
@@ -55,17 +56,16 @@ ${[0,1,2].map(i=>`<text x="${355+i*190}" y="${200+i*50}" font-size="21" text-anc
 
 svgPng('t7u5s6_cm3', svgHead(1000,430,'Compter les petits cubes') + `
 <g font-family="serif">
-<rect x="90" y="140" width="80" height="80" fill="#FCE4D6" stroke="#C2185B" stroke-width="3"/>
-<text x="130" y="188" font-size="20" text-anchor="middle" fill="#C2185B" font-weight="bold">1 cm³</text>
-<text x="130" y="252" font-size="19" text-anchor="middle" fill="#555">l’unité-cube</text>
-${(()=>{let r='';for(let c=0;c<3;c++)for(let l=0;l<2;l++){r+=`<rect x="${300+c*85+(3-c)*0}" y="${180+l*70}" width="85" height="70" fill="${(c+l)%2?'#EAF2F8':'#DCE9F2'}" stroke="#1F4E79" stroke-width="2.5"/>`;} return r;})()}
-${(()=>{let r='';for(let c=0;c<3;c++)for(let l=0;l<2;l++){r+=`<rect x="${300+c*85}" y="${110+l*70}" width="85" height="70" fill="${(c+l)%2?'#CFE0EC':'#EAF2F8'}" stroke="#1F4E79" stroke-width="2.5"/>`;} return r;})()}
-<text x="428" y="345" font-size="21" text-anchor="middle" fill="#1F4E79">3 × 2 × 2 = 12 cubes</text>
+<rect x="110" y="240" width="80" height="80" fill="#FCE4D6" stroke="#C2185B" stroke-width="3"/>
+<text x="150" y="288" font-size="20" text-anchor="middle" fill="#C2185B" font-weight="bold">1 cm³</text>
+<text x="150" y="350" font-size="19" text-anchor="middle" fill="#555">l’unité-cube</text>
+${(()=>{let r='';for(let c=0;c<3;c++)for(let l=0;l<2;l++){r+=`<rect x="${300+c*85}" y="${150+l*70}" width="85" height="70" fill="${(c+l)%2?'#DCE9F2':'#EAF2F8'}" stroke="#1F4E79" stroke-width="2.5"/>`;} return r;})()}
+<text x="428" y="330" font-size="21" text-anchor="middle" fill="#1F4E79">une couche : 3 × 2 = 6 cubes</text>
 <rect x="620" y="130" width="310" height="190" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
 <text x="775" y="172" font-size="21" text-anchor="middle" fill="#1F4E79" font-weight="bold">le pavé contient</text>
 <text x="775" y="220" font-size="26" text-anchor="middle" fill="#1F4E79" font-weight="bold">12 cm³</text>
-<text x="775" y="268" font-size="19" text-anchor="middle" fill="#555">4 couches de 6 ? Non :</text>
-<text x="775" y="296" font-size="19" text-anchor="middle" fill="#555">2 couches de 6 cubes</text>
+<text x="775" y="268" font-size="19" text-anchor="middle" fill="#555">2 couches de 6 cubes :</text>
+<text x="775" y="296" font-size="19" text-anchor="middle" fill="#555">3 × 2 × 2 = 12 cubes</text>
 <text x="500" y="405" font-size="23" text-anchor="middle" fill="#333">Le volume se mesure en comptant les cubes-unité qu’il contient.</text>
 </g></svg>`);
 
@@ -78,8 +78,8 @@ svgPng('t7u5s6_pave', svgHead(1000,430,'Le volume du pavé droit') + `
 <line x1="410" y1="110" x2="410" y2="250" stroke="#1F4E79" stroke-width="3.5"/>
 <line x1="330" y1="310" x2="410" y2="250" stroke="#1F4E79" stroke-width="3.5" stroke-dasharray="6 5"/>
 <text x="220" y="340" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">L = 5 cm</text>
-<text x="440" y="300" font-size="22" fill="#1F4E79" font-weight="bold">l = 3</text>
-<text x="150" y="140" font-size="22" fill="#1F4E79" font-weight="bold">h = 2</text>
+<text x="445" y="300" font-size="22" fill="#1F4E79" font-weight="bold">l = 3</text>
+<text x="343" y="245" font-size="22" fill="#1F4E79" font-weight="bold">h = 2</text>
 <rect x="540" y="120" width="380" height="210" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
 <text x="730" y="165" font-size="23" text-anchor="middle" fill="#1E7B34" font-weight="bold">V = L × l × h</text>
 <text x="730" y="212" font-size="22" text-anchor="middle" fill="#222">5 × 3 × 2 = 30</text>
@@ -122,7 +122,7 @@ svgPng('t7u5s7_mille', svgHead(1000,430,'1 mètre cube = 1 000 litres') + `
 <line x1="270" y1="330" x2="330" y2="285" stroke="#1F4E79" stroke-width="3" stroke-dasharray="6 5"/>
 <text x="180" y="248" font-size="26" text-anchor="middle" fill="#1F4E79" font-weight="bold">1 m³</text>
 <text x="180" y="360" font-size="20" text-anchor="middle" fill="#555">grande citerne cubique</text>
-${(()=>{let r='';for(let i=0;i<10;i++){r+=`<rect x="${430+(i%5)*46}" y="${140+((i/5)|0)*60}" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="${451+(i%5)*46}" y="${176+((i/5)|0)*60}" font-size="16" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text>`;} return r;})()}
+${(()=>{let r='';for(let i=0;i<10;i++){r+=`<rect x="${430+(i%5)*46}" y="${140+((i/5)|0)*60}" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="${451+(i%5)*46}" y="${174+((i/5)|0)*60}" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text>`;} return r;})()}
 <text x="545" y="290" font-size="20" text-anchor="middle" fill="#C2185B" font-weight="bold">10 × 100 L…</text>
 <rect x="730" y="140" width="230" height="190" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
 <text x="845" y="182" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">1 m³ = 1 000 dm³</text>
@@ -178,9 +178,9 @@ svgPng('t7u5s8_exemple', svgHead(1000,430,'Exemple résolu : la clôture du cham
 <text x="705" y="137" font-size="21" text-anchor="middle" fill="#1E7B34" font-weight="bold">solution rédigée</text>
 <text x="705" y="180" font-size="21" text-anchor="middle" fill="#222">P = 2 × (45 + 30)</text>
 <text x="705" y="222" font-size="21" text-anchor="middle" fill="#222">P = 2 × 75 = 150 m</text>
-<text x="705" y="268" font-size="20" text-anchor="middle" fill="#222">150 × 12 = 1 800 m de fil (3 rangs)</text>
+<text x="705" y="268" font-size="21" text-anchor="middle" fill="#222">fil : 3 × 150 = 450 m</text>
 <text x="705" y="318" font-size="20" text-anchor="middle" fill="#555">Il faut 150 m de clôture, soit</text>
-<text x="705" y="348" font-size="20" text-anchor="middle" fill="#555">1 800 m de fil pour trois rangs.</text>
+<text x="705" y="348" font-size="20" text-anchor="middle" fill="#555">450 m de fil pour trois rangs.</text>
 </g></svg>`);
 
 svgPng('t7u5s8_bilan', svgHead(1000,430,'Bilan de l’unité : ce que je sais mesurer') + `

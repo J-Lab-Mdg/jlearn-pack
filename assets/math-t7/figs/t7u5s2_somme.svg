@@ -8,6 +8,6 @@
 <text x="750" y="160" font-size="21" text-anchor="middle" fill="#C2185B" font-weight="bold">ruban saumon : 350 m</text>
 <text x="750" y="198" font-size="22" text-anchor="middle" fill="#222">déjà en mètres</text>
 <text x="750" y="240" font-size="24" text-anchor="middle" fill="#C2185B" font-weight="bold">= 350 m</text>
-<rect x="260" y="300" width="480" height="70" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
-<text x="500" y="345" font-size="26" text-anchor="middle" fill="#1E7B34" font-weight="bold">1 200 + 350 = 1 550 m = 1,55 km</text>
+<rect x="230" y="300" width="540" height="70" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="345" font-size="25" text-anchor="middle" fill="#1E7B34" font-weight="bold">1 200 + 350 = 1 550 m = 1,55 km</text>
 </g></svg>
