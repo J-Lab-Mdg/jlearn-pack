@@ -50,7 +50,8 @@ const ficheTitle = () => new Paragraph({spacing:{before:60,after:160},
 function rich(text,opt={}){
   const keys=/\b(partie entière|partie décimale|dixièmes|centièmes|millièmes|numérateur|dénominateur|produits en croix|fraction|fractions|équivalentes|équivalente|irréductible|PGCD|PPCM|décimal|décimaux|entier relatif|entiers relatifs|décimal relatif|décimaux relatifs|positif|positifs|négatif|négatifs|signe|origine|droite graduée|graduations|valeur absolue|abscisse|ordonnée|échelle|pourcentage|taux|rendement|puissance|exposant|base|distributivité|factorisation|facteur commun|expression littérale|variable|variables|équation|inconnue|substitution|réduction|développement|triangle rectangle|triangle isocèle|triangle équilatéral|triangle|isocèle|équilatéral|médiatrice|médiane|hauteur|bissectrice|angle|angles|polygones|polygone|périmètre|aire|aires|volume|capacité|contenance|conversion|fréquence|effectif|effectifs|moyenne|diagramme|probabilité|événement|comparaison|rang|virgule)\b/gi;
   const colors=['C00000','C2185B','E56B6F','1F4E79','1E7B34']; let out=[],last=0,k=0,m;
-  while((m=keys.exec(text))){if(m.index>last)out.push(tr(text.slice(last,m.index),{italics:!!opt.italics}));out.push(tr(m[0],{bold:true,italics:!!opt.italics,color:colors[k++%colors.length]}));last=m.lastIndex;}
+  keys.lastIndex=0;
+  while((m=keys.exec(text))){if(m.index>last)out.push(tr(text.slice(last,m.index),{italics:!!opt.italics}));out.push(tr(m[0],{bold:true,italics:!!opt.italics,color:colors[k++%colors.length]}));last=keys.lastIndex;}
   if(last<text.length)out.push(tr(text.slice(last),{italics:!!opt.italics}));
   return out.length?out:[tr(text,{italics:!!opt.italics})];
 }
@@ -140,6 +141,8 @@ function revisionSec(u){
   ...r.questions.map((t,i)=>p(`${i+1}. ${t}`)),
   title('Réponses attendues',2),
   ...r.reponses.map((t,i)=>correction(`${i+1}. `,t))];
+ if(r.error) a.push(errorPara(r.error[0],r.error[1]));
+ if(r.meth) a.push(p(r.meth));
  return a;
 }
 function examSec(u){
@@ -160,6 +163,7 @@ function unitSection(u){
  a.push(page(),title(`UNITÉ ${u.num} — ${u.title.toUpperCase()}`,1,`${u.id}`),
   p(`Résultat d’apprentissage général : ${u.ragg}.`),
   p(`Valeurs à véhiculer : ${u.valeurs}.`),
+  ...(u.fiche?[p(`Fiche de situation associée : ${u.fiche} (à projeter ou à distribuer, conforme au PE T7).`)]:[]),
   title('Tableau de bord',2),
   table([new TableRow({children:[cell('Séances',{bold:true,fill:C.blue,color:C.white}),cell('Leçons',{bold:true,fill:C.blue,color:C.white}),cell('Révision',{bold:true,fill:C.blue,color:C.white}),cell('Examen',{bold:true,fill:C.blue,color:C.white})]}),
    new TableRow({children:[cell(`${seancesRevExe}`),cell(`${u.lecons.length}`),cell('1'),cell('1')]})],[2400,2400,2400,2400]),
