@@ -131,6 +131,7 @@ const S11 = {
         paras: [
           "Le courant électrique ne circule que si le circuit forme une boucle complète, sans interruption : on dit que le circuit est fermé. La lampe brille.",
           "Si la boucle est interrompue (interrupteur ouvert, fil débranché, lampe dévissée), le circuit est ouvert : le courant ne circule pas et la lampe est éteinte.",
+          "Attention au vocabulaire, qui peut surprendre : FERMER le circuit, c'est ALLUMER la lampe (la boucle est complète) ; OUVRIR le circuit, c'est ÉTEINDRE (la boucle est coupée). C'est le contraire d'une porte !",
         ],
       },
       {
@@ -143,15 +144,26 @@ const S11 = {
           "fermer l'interrupteur : la lampe s'allume.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Dans une lampe de poche, retrouve les quatre composants du circuit simple. Solution : le générateur = les piles ; le récepteur = l'ampoule (ou la LED) ; les fils de connexion = les lamelles de métal à l'intérieur du boîtier ; l'interrupteur = le bouton coulissant. Une lampe de poche est un circuit électrique simple dans un tube !",
+          "Exemple 2 — La lampe du circuit de Hery ne s'allume pas, pourtant la pile est neuve et la lampe fonctionne. Quelle est la cause la plus probable ? Solution : le circuit est resté OUVERT quelque part : interrupteur ouvert, fil débranché ou mal serré. Le courant ne circule que si la boucle est complète : il suffit d'une seule interruption pour que tout s'arrête.",
+        ],
+      },
     ],
     saisTu: [
       "La lampe de poche est un circuit électrique simple de poche : les piles (générateur), l'ampoule ou la LED (récepteur), le bouton (interrupteur) et des lamelles de métal qui servent de fils de connexion. Une LED consomme environ dix fois moins d'énergie qu'une ampoule à filament !",
+      "Le tout premier circuit électrique de l'histoire date d'environ 1800, quand Alessandro Volta relia les deux bornes de sa pile par un fil. Aujourd'hui, un simple téléphone contient des milliards de circuits microscopiques… mais tous obéissent à la même règle que ta lampe de poche : pas de boucle fermée, pas de courant !",
     ],
     experience: [
-      "Avec une pile plate de 4,5 V et une petite ampoule de lampe de poche (jamais avec la prise de courant !) :",
-      "1. Pose le culot de l'ampoule sur une languette de la pile.",
-      "2. Touche le plot du bas de l'ampoule avec l'autre languette.",
-      "3. L'ampoule s'allume : tu as fermé un circuit électrique simple.",
+      "Ton premier circuit (jamais avec la prise de courant !) :",
+      "Matériel : une pile plate de 4,5 V, une petite ampoule de lampe de poche.",
+      "Protocole : 1. Pose le culot de l'ampoule sur une languette de la pile.",
+      "2. Penche la deuxième languette pour toucher le plot du bas de l'ampoule.",
+      "3. Écarte la languette, puis recommence.",
+      "Observation : dès que la languette touche le plot, l'ampoule s'allume : la boucle est fermée ; dès qu'on l'écarte, elle s'éteint : la boucle est ouverte.",
+      "Conclusion : le courant ne circule que dans un circuit fermé : ta main a joué le rôle de l'interrupteur !",
     ],
   },
   substitutions: [
@@ -355,15 +367,26 @@ const S12 = {
           "respecter l'ordre des composants du circuit réel.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Décris le schéma normalisé du circuit : pile + lampe + interrupteur fermé. Solution : un rectangle tracé à la règle ; sur un côté, le symbole de la pile (trait long +, trait court −) ; sur un autre côté, le cercle avec la croix (lampe) ; sur un troisième, le trait aligné de l'interrupteur fermé ; les coins restent vides. Trois symboles, un rectangle : le schéma est complet !",
+          "Exemple 2 — Sur le schéma de Lalao, la lampe est dessinée dans un coin du rectangle et les fils sont tracés à main levée. Quelles règles doit-elle corriger ? Solution : deux règles : 1) les symboles se placent sur les CÔTÉS du rectangle, jamais dans les coins ; 2) les fils se tracent À LA RÈGLE, en traits bien droits. Un schéma n'est pas un dessin d'art : c'est un langage précis que tout le monde doit pouvoir lire.",
+        ],
+      },
     ],
     saisTu: [
       "Les symboles électriques sont fixés par la Commission électrotechnique internationale (CEI), fondée en 1906. Grâce à elle, un schéma dessiné par un électricien malgache peut être lu sans difficulté par un électricien japonais ou brésilien !",
+      "Les symboles sont une vraie écriture universelle, comme les panneaux de la route : partout dans le monde, le cercle à croix veut dire « lampe ». Il existe des centaines d'autres symboles (moteur, sonnerie, DEL…) : tu en apprendras de nouveaux chaque année !",
     ],
     experience: [
       "Entraîne-toi à schématiser :",
-      "1. Observe une lampe de poche : repère la pile, l'ampoule, l'interrupteur.",
-      "2. Dessine son schéma normalisé à la règle dans ton cahier.",
-      "3. Fais vérifier ton schéma par un camarade : peut-il reconnaître chaque composant ?",
+      "Matériel : une lampe de poche, ton cahier, une règle, un crayon.",
+      "Protocole : 1. Observe la lampe de poche : repère la pile, l'ampoule, l'interrupteur.",
+      "2. Dessine son schéma normalisé à la règle : rectangle, symboles sur les côtés.",
+      "3. Fais vérifier ton schéma par un camarade : peut-il reconnaître chaque composant sans explication ?",
+      "Observation : si les symboles sont corrects, le camarade lit le schéma du premier coup ; s'il hésite, un symbole est mal dessiné ou mal placé.",
+      "Conclusion : un bon schéma se lit sans paroles : c'est tout l'intérêt des symboles normalisés, la langue commune de l'électricité.",
     ],
   },
   substitutions: [
@@ -560,6 +583,7 @@ const S13 = {
         titre: "1. Le courant a un sens",
         paras: [
           "Dans un circuit fermé, le courant électrique circule toujours dans le même sens, comme l'eau d'une rivière.",
+          "Preuve simple : certains récepteurs ne fonctionnent que dans un sens ! Un moteur tourne à l'envers et une DEL reste éteinte si l'on retourne la pile : le courant n'arrive plus dans le bon sens.",
         ],
       },
       {
@@ -579,15 +603,26 @@ const S13 = {
           "une seule flèche par côté du circuit suffit.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Sur un schéma, la borne + de la pile est en haut. Dans quel sens dessiner les flèches du courant ? Solution : les flèches SORTENT de la borne + (en haut), font le tour du circuit en traversant la lampe, et REVIENNENT à la borne − : à l'extérieur de la pile, toujours du + vers le −. Une flèche par côté du rectangle suffit.",
+          "Exemple 2 — La radio de Naivo ne marche plus après un changement de piles. Les piles sont neuves. Que vérifier en premier ? Solution : le SENS des piles ! Une pile posée à l'envers envoie le courant dans le mauvais sens et la radio ne fonctionne pas. Il faut faire correspondre les signes + et − des piles avec ceux dessinés dans le logement.",
+        ],
+      },
     ],
     saisTu: [
       "Le sens conventionnel a été choisi au XIXe siècle, avant la découverte de l'électron ! On sait aujourd'hui que dans les métaux, les électrons se déplacent en réalité dans le sens inverse. Mais la convention a été conservée : tous les schémas du monde utilisent le sens + vers −.",
+      "Comment repérer les bornes d'une pile plate sans étiquette ? La languette LONGUE est la borne −, la languette COURTE est la borne + ! Et sur une pile ronde, le petit bouton qui dépasse est le +, le fond plat est le −. Un vrai électricien reconnaît les bornes du premier coup d'œil.",
     ],
     experience: [
-      "Vérifie l'importance des bornes avec un adulte :",
-      "1. Observe une radio ou une lampe torche à piles : repère les signes + et − dans le logement des piles.",
-      "2. Mets une pile à l'envers : l'appareil ne fonctionne pas.",
-      "Conclusion : le sens de branchement de la pile compte, car le courant a un sens.",
+      "Le sens du courant compte :",
+      "Matériel : une radio ou une lampe torche à piles, un adulte pour t'accompagner.",
+      "Protocole : 1. Observe le logement des piles : repère les signes + et − dessinés au fond.",
+      "2. Place les piles dans le bon sens : l'appareil fonctionne.",
+      "3. Mets une pile à l'envers et essaie de nouveau.",
+      "Observation : avec la pile à l'envers, l'appareil ne fonctionne plus, alors que la pile est bonne !",
+      "Conclusion : le courant a un sens ; le respect des bornes + et − est indispensable pour que les appareils fonctionnent.",
     ],
   },
   substitutions: [
@@ -784,7 +819,9 @@ const S14 = {
           "Plus on ajoute de lampes en série, plus elles brillent faiblement.",
           "Si une lampe grille ou est dévissée, toutes les autres s'éteignent : la boucle est coupée, le circuit est ouvert.",
         ],
-        paras: [],
+        paras: [
+          "Pour t'en souvenir, pense à une file de porteurs sur une seule passerelle : si un seul s'arrête, toute la file est bloquée ! En série, tout le monde dépend de tout le monde.",
+        ],
       },
       {
         titre: "3. Avantage et inconvénient",
@@ -793,16 +830,27 @@ const S14 = {
           "Inconvénient : une seule lampe défectueuse éteint tout le circuit, et les lampes brillent faiblement. C'est pourquoi les lampes d'une maison ne sont pas montées en série.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Trois lampes identiques sont montées en série avec une pile. Compare leur éclat à celui d'une lampe seule sur la même pile. Que se passe-t-il si on en dévisse une ? Solution : les trois lampes brillent FAIBLEMENT et toutes de la même façon : elles se partagent l'énergie de la pile à trois. Si on en dévisse une, les DEUX autres s'éteignent aussi : la seule boucle du circuit est coupée.",
+          "Exemple 2 — Une guirlande ancienne de 20 ampoules en série ne s'allume plus du tout. Que peux-tu en déduire, et pourquoi est-ce difficile à réparer ? Solution : au moins UNE ampoule est grillée (ou un fil est coupé) : en série, une seule panne éteint tout. C'est difficile à réparer car il faut tester les 20 ampoules une par une pour trouver la coupable !",
+        ],
+      },
     ],
     saisTu: [
       "Les anciennes guirlandes lumineuses étaient montées en série : une seule ampoule grillée éteignait toute la guirlande, et il fallait tester les ampoules une par une pour trouver la coupable ! Les guirlandes modernes utilisent d'autres montages pour éviter ce problème.",
+      "Le montage en série a pourtant un usage très utile : l'interrupteur ! Placé en série, il commande toute la boucle : c'est justement parce qu'en série « tout dépend de tout » qu'un simple bouton peut éteindre le circuit entier.",
     ],
     experience: [
-      "Si tu disposes d'une pile plate et de deux petites ampoules :",
-      "1. Monte d'abord une seule ampoule avec la pile : observe son éclat.",
+      "Deux ampoules à la suite :",
+      "Matériel : une pile plate, deux petites ampoules identiques avec supports (ou tenues par des fils), des fils de connexion.",
+      "Protocole : 1. Monte d'abord une seule ampoule avec la pile : observe son éclat.",
       "2. Monte les deux ampoules l'une à la suite de l'autre (en série).",
-      "3. Compare : les deux ampoules brillent plus faiblement.",
-      "4. Dévisse une ampoule : l'autre s'éteint aussitôt.",
+      "3. Compare l'éclat des deux ampoules à celui de l'ampoule seule.",
+      "4. Dévisse une des deux ampoules.",
+      "Observation : en série, les deux ampoules brillent plus faiblement que l'ampoule seule ; dès qu'on en dévisse une, l'autre s'éteint aussitôt.",
+      "Conclusion : en série, les lampes se partagent l'énergie et dépendent les unes des autres : une seule boucle, un seul destin !",
     ],
   },
   substitutions: [
@@ -1000,7 +1048,9 @@ const S15 = {
           "Si une lampe grille ou est dévissée, les autres continuent de briller : leur boucle n'est pas coupée.",
           "Chaque lampe peut être commandée séparément par son propre interrupteur.",
         ],
-        paras: [],
+        paras: [
+          "L'image à retenir : plusieurs passerelles côte à côte sur la même rivière : si l'une est fermée, on passe par les autres ! En dérivation, chaque lampe a son propre chemin.",
+        ],
       },
       {
         titre: "3. Le montage des maisons",
@@ -1008,16 +1058,26 @@ const S15 = {
           "Dans une maison, toutes les lampes et les prises sont montées en dérivation. C'est pourquoi la lampe du salon continue de briller quand l'ampoule de la cuisine grille, et pourquoi on peut allumer chaque pièce séparément.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Deux lampes sont montées en dérivation sur une pile. On dévisse la première : que fait la seconde ? Compare son éclat à celui d'une lampe seule. Solution : la seconde lampe CONTINUE de briller, et avec son éclat normal, comme si elle était seule avec la pile : sa boucle à elle n'a pas été touchée. C'est toute la force de la dérivation : l'indépendance !",
+          "Exemple 2 — Pourquoi peut-on éteindre la cuisine sans éteindre le salon, alors qu'un seul disjoncteur coupe TOUTE la maison ? Solution : chaque pièce est une branche en dérivation avec son propre interrupteur : il ne coupe que sa boucle. Le disjoncteur, lui, est placé en série AVANT tous les nœuds : il coupe le passage commun, donc tout s'éteint. Dérivation pour l'indépendance, série pour la commande générale !",
+        ],
+      },
     ],
     saisTu: [
       "Le réseau électrique de la Jirama alimente des milliers de maisons montées en dérivation sur les mêmes lignes : chaque maison reçoit la même tension de 220 volts et fonctionne indépendamment de ses voisines. Ta maison est une « branche » du grand circuit du quartier !",
+      "Le mot « nœud » vient de l'image du fil que l'on noue : c'est le point où plusieurs fils se rejoignent. Les électriciens comptent toujours les nœuds pour lire un circuit : deux nœuds ou plus ? Il y a de la dérivation dans l'air !",
     ],
     experience: [
-      "Si tu disposes d'une pile plate et de deux petites ampoules :",
-      "1. Branche chaque ampoule directement sur les deux languettes de la pile, côte à côte (avec des fils).",
-      "2. Observe : les deux ampoules brillent aussi fort qu'une ampoule seule.",
-      "3. Enlève une ampoule : l'autre brille toujours.",
-      "Conclusion : en dérivation, chaque ampoule est indépendante.",
+      "Deux ampoules côte à côte :",
+      "Matériel : une pile plate, deux petites ampoules, des fils de connexion.",
+      "Protocole : 1. Branche chaque ampoule directement sur les deux languettes de la pile, côte à côte, avec des fils : chaque ampoule a sa propre boucle.",
+      "2. Observe l'éclat des deux ampoules.",
+      "3. Enlève une ampoule et observe l'autre.",
+      "Observation : les deux ampoules brillent aussi fort qu'une ampoule seule ; quand on en enlève une, l'autre brille toujours, sans faiblir.",
+      "Conclusion : en dérivation, chaque ampoule est indépendante et reçoit toute la tension de la pile : c'est le montage de toutes les maisons.",
     ],
   },
   substitutions: [
@@ -1202,35 +1262,48 @@ const S16 = {
     motsCles: ["série", "dérivation", "indépendantes", "boucle"],
     sections: [
       {
-        titre: "1. Tableau de comparaison",
-        paras: [
-          "Montage en série : une seule boucle ; le même courant traverse toutes les lampes ; éclat faible ; si une lampe grille, toutes s'éteignent ; moins de fils utilisés.",
-          "Montage en dérivation : plusieurs boucles (une par lampe) ; éclat normal ; les lampes sont indépendantes ; si une lampe grille, les autres brillent encore ; plus de fils utilisés.",
-        ],
-      },
-      {
-        titre: "2. Quel montage choisir ?",
+        titre: "1. Le tableau de comparaison",
+        paras: ["Comparons point par point les deux montages étudiés :"],
         puces: [
-          "On choisit la dérivation quand chaque récepteur doit fonctionner indépendamment : lampes et prises d'une maison, éclairage d'une école, phares d'un véhicule.",
-          "On peut choisir la série pour un montage très simple et économique où tous les récepteurs fonctionnent ensemble.",
+          "Nombre de boucles : série : une seule ; dérivation : une par lampe.",
+          "Éclat des lampes : série : faible (l'énergie se partage) ; dérivation : normal pour chacune.",
+          "Si une lampe grille : série : tout s'éteint ; dérivation : les autres continuent.",
+          "Commande des lampes : série : toutes ensemble ; dérivation : chacune séparément.",
+          "Fils nécessaires : série : peu ; dérivation : davantage.",
         ],
-        paras: [],
       },
       {
-        titre: "3. À retenir pour la vie quotidienne",
+        titre: "2. Comment reconnaître le montage ?",
+        paras: [
+          "Deux méthodes sûres : 1) suivre le trajet du courant : un seul chemin = série ; plusieurs chemins qui se séparent à des nœuds = dérivation ; 2) faire le test de la panne : dévisser une lampe : si tout s'éteint, c'était la série ; si le reste brille, c'était la dérivation.",
+        ],
+      },
+      {
+        titre: "3. Dans la vie quotidienne",
         paras: [
           "Toutes les installations électriques domestiques sont en dérivation : c'est pour cela que chaque lampe a son interrupteur et que les appareils fonctionnent indépendamment les uns des autres.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Dans un circuit à deux lampes, on dévisse la lampe L1 : la lampe L2 reste allumée. Quel est le montage ? Et si L2 s'était éteinte ? Solution : L2 reste allumée : chaque lampe a sa propre boucle : montage en DÉRIVATION. Si L2 s'était éteinte, la boucle unique aurait été coupée : montage en SÉRIE. Le test de la panne identifie le montage à coup sûr !",
+          "Exemple 2 — Pour éclairer trois pièces d'une maison, faut-il un montage en série ou en dérivation ? Donne deux raisons. Solution : en DÉRIVATION ! Raison 1 : chaque pièce doit s'allumer et s'éteindre séparément ; raison 2 : si une ampoule grille, les autres pièces doivent rester éclairées. En série, une panne plongerait toute la maison dans le noir et les lampes brilleraient faiblement.",
         ],
       },
     ],
     saisTu: [
       "Dans une voiture ou un taxi-brousse, tous les équipements électriques (phares, klaxon, essuie-glaces, autoradio) sont branchés en dérivation sur la même batterie de 12 volts : chacun fonctionne indépendamment, exactement comme les lampes d'une maison !",
+      "Série et dérivation se combinent dans presque tous les vrais circuits : dans ta maison, les lampes sont en dérivation entre elles, mais chaque interrupteur est en série avec sa lampe, et le disjoncteur en série avec tout ! Savoir reconnaître les deux montages, c'est savoir lire n'importe quel circuit.",
     ],
     experience: [
-      "Compare les deux montages avec une pile plate et deux ampoules :",
-      "1. Monte les deux ampoules en série : note leur éclat, puis dévisse une ampoule.",
-      "2. Monte les deux ampoules en dérivation : note leur éclat, puis dévisse une ampoule.",
+      "Le grand match série contre dérivation :",
+      "Matériel : une pile plate, deux ampoules, des fils, ton cahier pour le tableau.",
+      "Protocole : 1. Monte les deux ampoules en série : note leur éclat, puis dévisse une ampoule et note ce qui se passe.",
+      "2. Monte les deux ampoules en dérivation : note leur éclat, puis dévisse une ampoule et note encore.",
       "3. Écris tes observations dans un tableau à deux colonnes « série / dérivation ».",
+      "Observation : série : éclat faible et tout s'éteint à la panne ; dérivation : éclat normal et l'autre ampoule continue de briller.",
+      "Conclusion : ton tableau d'expérience retrouve exactement le tableau de la leçon : c'est la dérivation qui gagne le match des maisons !",
     ],
   },
   substitutions: [
@@ -1415,6 +1488,7 @@ const S17 = {
         titre: "1. Qu'est-ce qu'un fusible ?",
         paras: [
           "Le fusible est un petit appareil de protection contenant un fil très fin. Il est placé dans le circuit, en série, généralement près du compteur ou dans les appareils.",
+          "Pourquoi en série ? Parce qu'ainsi TOUT le courant du circuit le traverse : rien ne peut passer sans son accord. Le fusible est le gardien de la porte unique.",
         ],
       },
       {
@@ -1440,15 +1514,26 @@ const S17 = {
           "Un fusible qui a sauté a fait son travail : il a protégé le circuit. Avant de le remplacer, il faut chercher la cause (débrancher des appareils, faire réparer le court-circuit), puis mettre un fusible du même calibre. Ne jamais le remplacer par un fil de cuivre ou un objet métallique : le circuit ne serait plus protégé et un incendie deviendrait possible.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Le fusible de la cuisine saute chaque fois que le fer à repasser et la bouilloire fonctionnent ensemble. Explique et propose une solution. Solution : c'est une SURCHARGE : les deux appareils puissants réclament ensemble plus de courant que le fusible ne l'autorise : son fil fond pour protéger l'installation. Solution : ne pas les utiliser en même temps sur la même ligne, ou faire installer une seconde ligne par un électricien.",
+          "Exemple 2 — Après une panne, un voisin remplace le fusible sauté par un morceau de gros fil de cuivre : « comme ça, ça ne sautera plus ». Pourquoi est-ce très dangereux ? Solution : le fusible fond EXPRÈS pour couper le courant trop fort. Le gros fil de cuivre, lui, ne fondra pas : en cas de surcharge ou de court-circuit, le courant continuera, les fils de la maison chaufferont… jusqu'à l'incendie. Un fusible se remplace uniquement par un fusible de même calibre !",
+        ],
+      },
     ],
     saisTu: [
       "Dans les installations modernes, le fusible est souvent remplacé par un disjoncteur : au lieu de fondre, il se déclenche comme un interrupteur automatique quand le courant est trop fort. Avantage : on peut le réarmer d'un simple geste, sans rien remplacer !",
+      "Le mot « fusible » vient du verbe « fondre » : c'est un fil qui fond pour sauver les autres ! L'idée date des débuts de l'électricité, vers 1880 : Thomas Edison lui-même déposa un brevet de fusible pour protéger les premières installations électriques du monde.",
     ],
     experience: [
-      "Observation uniquement, avec un adulte — ne touche jamais au tableau électrique seul :",
-      "1. Demande à un adulte de te montrer les fusibles ou le disjoncteur de la maison.",
+      "À la découverte des protections de la maison (observation uniquement, avec un adulte — ne touche jamais au tableau électrique seul) :",
+      "Matériel : tes yeux, un adulte, éventuellement un fusible neuf et un fusible sauté.",
+      "Protocole : 1. Demande à l'adulte de te montrer les fusibles ou le disjoncteur de la maison.",
       "2. Observe un fusible transparent : repère le fil fin à l'intérieur.",
-      "3. Compare un fusible neuf et un fusible sauté si possible : le fil du second est coupé.",
+      "3. Compare un fusible neuf et un fusible sauté si possible.",
+      "Observation : dans le fusible neuf, le fil fin est continu ; dans le fusible sauté, il est coupé ou noirci : il a fondu en faisant son travail.",
+      "Conclusion : le fusible protège le circuit en se sacrifiant : son fil fond dès que le courant devient trop fort, et le circuit s'ouvre.",
     ],
   },
   substitutions: [
@@ -1651,7 +1736,9 @@ const S18 = {
           "Débrancher un appareil en tirant sur la fiche, jamais sur le fil.",
           "Ne jamais réparer soi-même une installation : appeler un électricien.",
         ],
-        paras: [],
+        paras: [
+          "Retiens surtout le trio mortel : EAU + ÉLECTRICITÉ + CORPS HUMAIN. L'eau rend la peau très conductrice : la salle de bains et la cuisine sont les pièces où il faut redoubler de prudence.",
+        ],
       },
       {
         titre: "3. Que faire en cas d'accident ?",
@@ -1662,15 +1749,26 @@ const S18 = {
         ],
         paras: [],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Fetra veut débrancher le fer à repasser : il tire sur le fil, les mains encore humides de lessive. Relève les DEUX erreurs et corrige-les. Solution : erreur 1 : tirer sur le fil : il peut s'arracher et dénuder les conducteurs : on tire sur la FICHE ; erreur 2 : les mains humides : l'eau rend le corps très conducteur : on se sèche les mains AVANT de toucher tout appareil électrique.",
+          "Exemple 2 — Une camarade est électrisée : sa main reste collée à un appareil. Son frère veut la tirer par le bras. A-t-il raison ? Que faut-il faire ? Solution : NON, surtout pas ! En la touchant, le courant traverserait aussi son corps : deux victimes au lieu d'une. La bonne conduite : COUPER le courant au disjoncteur d'abord, puis appeler un adulte et les secours. On ne touche jamais une personne encore en contact avec le courant.",
+        ],
+      },
     ],
     saisTu: [
       "Le corps humain est conducteur d'électricité, surtout quand la peau est mouillée. Un courant de quelques dizaines de milliampères seulement — mille fois moins que celui d'un fer à repasser — peut déjà être mortel. C'est pourquoi aucune règle de sécurité n'est exagérée !",
+      "Pourquoi les oiseaux posés sur les fils électriques ne sont-ils pas électrisés ? Parce que leurs deux pattes touchent le MÊME fil : le courant n'a aucune raison de traverser leur corps. Mais si un grand oiseau touche deux fils à la fois… le courant passe : c'est pourquoi on voit des boules colorées écarteuses sur certaines lignes !",
     ],
     experience: [
-      "Pas d'expérience avec le secteur — jamais ! À la place, une mission de sécurité :",
-      "1. Avec un adulte, fais le tour de la maison et repère les dangers : fils abîmés, prises cassées, multiprises surchargées.",
+      "La mission sécurité (pas d'expérience avec le secteur — jamais !) :",
+      "Matériel : une feuille, un crayon, un adulte pour t'accompagner.",
+      "Protocole : 1. Avec l'adulte, fais le tour de la maison et repère les dangers : fils abîmés, prises cassées, multiprises surchargées, appareils près de l'eau.",
       "2. Dessine un plan de la maison et marque d'une croix rouge les points dangereux.",
-      "3. Présente ta liste à ta famille pour que les réparations soient faites par un électricien.",
+      "3. Présente ta liste à ta famille.",
+      "Observation : presque chaque maison révèle un ou deux points à corriger : un fil dénudé derrière un meuble, une multiprise trop chargée…",
+      "Conclusion : la sécurité électrique commence par l'observation : repérer les dangers, c'est déjà protéger sa famille ; les réparations, elles, sont le travail de l'électricien.",
     ],
   },
   substitutions: [
@@ -1870,17 +1968,29 @@ const S19 = {
         titre: "3. Réparer la panne",
         paras: [
           "Une fois la panne trouvée : remplacer la pile usée ou la lampe grillée, resserrer ou nettoyer la mauvaise connexion, remplacer ou rebrancher le fil coupé. Attention : on ne répare soi-même que les circuits à pile ; les pannes du secteur sont réservées à l'électricien.",
+          "Le grand secret du dépanneur : ne changer qu'UNE chose à la fois ! Si tu changes la pile ET la lampe en même temps et que ça remarche, tu ne sauras jamais laquelle était en panne.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — La lampe du circuit de Mamy clignote quand on remue les fils. Quelle est la panne la plus probable ? Comment la confirmer ? Solution : une MAUVAISE CONNEXION : un fil desserré ou sale touche sa borne par intermittence : quand on remue, le contact se fait et se défait, d'où le clignotement. Confirmation : resserrer et nettoyer chaque connexion une par une : le clignotement disparaît quand on trouve la bonne.",
+          "Exemple 2 — Le circuit ne s'allume plus. La pile testée dans un autre circuit fonctionne ; le filament de la lampe est intact ; les connexions sont bien serrées. Que reste-t-il à vérifier ? Solution : les FILS eux-mêmes : l'un d'eux est peut-être coupé à l'intérieur de sa gaine (la coupure ne se voit pas toujours !). On remplace les fils un par un : la méthode élimine les suspects jusqu'au coupable, comme une enquête !",
         ],
       },
     ],
     saisTu: [
       "Les techniciens utilisent un appareil appelé multimètre pour trouver les pannes sans démonter tout le circuit : il détecte si le courant passe entre deux points. En position « test de continuité », il émet un bip quand le fil n'est pas coupé !",
+      "La méthode « un élément à la fois » est utilisée par tous les dépanneurs du monde, des réparateurs de téléphones aux ingénieurs des avions ! Elle porte même un nom savant : le diagnostic par élimination. Tu viens d'apprendre une méthode de professionnel.",
     ],
     experience: [
-      "Jeu du dépanneur (avec une pile plate, une ampoule et des fils) :",
-      "1. Demande à un camarade de préparer une panne en cachette : fil débranché, ampoule dévissée…",
-      "2. À toi de trouver la panne le plus vite possible, en vérifiant chaque élément un par un.",
-      "3. Échangez les rôles. Le meilleur dépanneur est celui qui utilise la méthode la plus logique !",
+      "Le jeu du dépanneur :",
+      "Matériel : une pile plate, une ampoule, des fils, un camarade complice.",
+      "Protocole : 1. Le camarade prépare une panne en cachette : fil débranché, ampoule dévissée, pile posée de travers…",
+      "2. À toi de trouver la panne le plus vite possible, en vérifiant chaque élément UN PAR UN : pile, lampe, connexions, fils.",
+      "3. Échangez les rôles et comptez les points.",
+      "Observation : le dépanneur qui teste au hasard perd du temps ; celui qui suit la méthode (pile → lampe → connexions → fils) trouve presque toujours plus vite.",
+      "Conclusion : une panne se cherche avec méthode, un élément à la fois : le meilleur dépanneur n'est pas le plus rapide, c'est le plus logique !",
     ],
   },
   substitutions: [
@@ -2087,17 +2197,29 @@ const S20 = {
         titre: "3. La règle d'or des branchements",
         paras: [
           "Ampèremètre en série, voltmètre en dérivation. Un ampèremètre branché en dérivation directement sur la pile provoque un court-circuit et peut abîmer l'appareil : il faut toujours respecter cette règle.",
+          "Pour t'en souvenir : l'ampèremètre compte le courant qui PASSE : il doit être SUR le chemin (série) ; le voltmètre compare les DEUX bornes : il doit toucher les deux côtés (dérivation).",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Tu veux mesurer l'intensité qui traverse une lampe et la tension à ses bornes. Décris les deux branchements. Solution : l'ampèremètre s'insère EN SÉRIE dans la boucle, juste avant ou après la lampe (le courant le traverse) ; le voltmètre se branche EN DÉRIVATION, un fil sur chaque borne de la lampe (il compare les deux côtés). Deux appareils, deux branchements opposés !",
+          "Exemple 2 — Classe ces tensions de la moins dangereuse à la plus dangereuse : secteur, pile plate, batterie de voiture, pile ronde. Solution : pile ronde (1,5 V) < pile plate (4,5 V) < batterie de voiture (12 V) < secteur (220 V). Les piles sont sans danger pour nos expériences ; le secteur, presque 50 fois plus « fort » qu'une pile plate, ne se touche JAMAIS.",
         ],
       },
     ],
     saisTu: [
       "Les unités « ampère » et « volt » honorent deux grands savants : André-Marie Ampère, physicien français qui a fondé l'étude des courants électriques, et Alessandro Volta, physicien italien qui a inventé la première pile électrique vers 1800 : la « pile voltaïque », ancêtre de toutes nos piles !",
+      "Le multimètre des électriciens réunit l'ampèremètre, le voltmètre et d'autres appareils dans un seul boîtier : une molette choisit la fonction ! C'est l'outil que tu utiliseras en classe de 4e et de 3e pour vérifier les grandes lois de l'électricité.",
     ],
     experience: [
-      "Lis les tensions autour de toi (lecture seulement, sans démonter) :",
-      "1. Cherche l'indication de tension écrite sur : une pile ronde, une pile plate, un chargeur de téléphone, une lampe.",
+      "La chasse aux tensions (lecture seulement, sans démonter) :",
+      "Matériel : une pile ronde, une pile plate, un chargeur de téléphone, une lampe, ton cahier.",
+      "Protocole : 1. Cherche l'indication de tension écrite sur chaque objet (souvent en tout petit).",
       "2. Note les valeurs dans ton cahier (exemples : 1,5 V ; 4,5 V ; 5 V…).",
-      "3. Compare-les à la tension du secteur (220 V) : comprends-tu pourquoi seules les piles sont sans danger ?",
+      "3. Compare-les à la tension du secteur : 220 V.",
+      "Observation : toutes les piles et chargeurs affichent des tensions faibles (1,5 à 12 V) ; le secteur est des dizaines de fois plus élevé.",
+      "Conclusion : la tension se lit en volts sur chaque appareil : les basses tensions des piles sont sans danger, la haute tension du secteur ne se touche jamais.",
     ],
   },
   substitutions: [

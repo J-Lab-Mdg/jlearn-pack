@@ -175,16 +175,26 @@ module.exports = {
           },
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Classe ces corps : une brique, du sucre en poudre, une assiette, de la farine, un clou. Solution : solides compacts : la brique, l'assiette, le clou (un seul morceau que l'on saisit entre les doigts) ; solides pulvérisés : le sucre en poudre et la farine (des milliers de petits grains).",
+          "Exemple 2 — Voahangy dit : « Le sel fin est un liquide, puisqu'il prend la forme de son pot. » A-t-elle raison ? Solution : non ! Le tas de sel prend la forme du pot, mais CHAQUE grain de sel garde sa forme propre : on peut le voir à la loupe. Le sel est donc un solide pulvérisé. Un liquide, lui, n'a aucun grain : on ne peut pas saisir une goutte d'eau entre les doigts.",
+        ],
+      },
     ],
     saisTu: [
       "À Madagascar, le riz est un solide pulvérisé que l'on mesure souvent avec un « kapoaka », une boîte de lait concentré vide : le riz prend exactement la forme du kapoaka, mais chaque grain reste entier ! Un kapoaka rempli à ras bord contient environ 285 g de riz blanc.",
+      "Le sable de nos plages est un solide pulvérisé né de solides compacts : les vagues et le vent ont mis des milliers d'années à casser les rochers et les coquillages en grains minuscules ! Chaque grain de sable est un petit caillou qui a une très longue histoire.",
     ],
     experience: [
-      "Prends un verre, un caillou et une poignée de riz.",
-      "1. Pose le caillou dans le verre, puis sors-le : sa forme n'a pas changé.",
-      "2. Verse le riz dans le verre : le tas de riz prend la forme du verre.",
-      "3. Retire un grain de riz et observe-le : il a gardé sa forme propre.",
-      "Conclusion : le caillou est un solide compact ; le riz est un solide pulvérisé, mais chaque grain garde sa forme.",
+      "Compacts ou pulvérisés ?",
+      "Matériel : un verre, un caillou, une poignée de riz.",
+      "Protocole : 1. Pose le caillou dans le verre, puis sors-le : observe sa forme.",
+      "2. Verse le riz dans le verre : observe le tas.",
+      "3. Retire un seul grain de riz et observe-le de près.",
+      "Observation : le caillou garde sa forme dans le verre comme dans la main ; le tas de riz prend la forme du verre ; mais chaque grain de riz, lui, garde sa forme propre.",
+      "Conclusion : le caillou est un solide compact ; le riz est un solide pulvérisé : tous les deux sont des solides, car chaque morceau ou chaque grain garde sa forme.",
     ],
   },
 

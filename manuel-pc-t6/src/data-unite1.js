@@ -134,6 +134,7 @@ const S2 = {
         paras: [
           "La surface d'un liquide en contact avec l'air s'appelle la surface libre.",
           "Au repos, la surface libre d'un liquide est toujours plane et horizontale, quel que soit le récipient et même si celui-ci est incliné.",
+          "Attention au mot « au repos » : si on secoue ou penche brusquement le récipient, la surface bouge dans tous les sens. Il faut attendre que le liquide s'immobilise pour voir la surface redevenir bien plane et horizontale.",
         ],
         puces: [
           "Dans un verre droit ou penché, la surface de l'eau au repos reste horizontale.",
@@ -146,16 +147,26 @@ const S2 = {
           "Le sable et le riz prennent la forme du récipient, comme un liquide. Mais ce sont des solides, car chaque grain garde sa forme propre. De plus, la surface d'un tas de sable peut rester en pente, alors que la surface libre d'un liquide au repos est toujours horizontale.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — On penche doucement une bouteille à moitié pleine d'eau et on attend. Dessine (ou décris) la surface de l'eau. Solution : la surface libre reste PLANE et HORIZONTALE, parallèle au sol : elle ne suit pas l'inclinaison de la bouteille ! C'est la propriété la plus importante de la leçon.",
+          "Exemple 2 — Comment reconnaître un tas de sable d'une flaque d'eau, sans les toucher ? Solution : regarde la surface : le tas de sable peut garder une pente (chaque grain est un petit solide qui tient en place) ; la flaque d'eau, elle, a toujours une surface horizontale. Et l'eau coule si le sol penche, alors que le tas de sable reste en place.",
+        ],
+      },
     ],
     saisTu: [
       "Dans les rizières en terrasses de la région Betsileo, l'eau de chaque parcelle est parfaitement plane et horizontale : c'est la surface libre de l'eau ! Les paysans utilisent cette propriété pour niveler leurs rizières et bien répartir l'eau.",
+      "Les maçons d'autrefois utilisaient déjà la surface libre de l'eau : un long tuyau transparent rempli d'eau donne exactement la même hauteur à ses deux bouts ! Ce « niveau à eau » sert encore aujourd'hui sur les chantiers pour mettre deux murs éloignés à la même hauteur.",
     ],
     experience: [
-      "Prends une bouteille en plastique transparente à moitié remplie d'eau.",
-      "1. Pose la bouteille debout sur la table : observe la surface de l'eau.",
-      "2. Penche doucement la bouteille et cale-la contre un mur. Attends que l'eau ne bouge plus.",
-      "3. Observe la surface de l'eau : elle est restée horizontale, même dans la bouteille penchée.",
-      "Conclusion : la surface libre d'un liquide au repos est toujours plane et horizontale.",
+      "La surface qui reste horizontale :",
+      "Matériel : une bouteille en plastique transparente à moitié remplie d'eau (colorée si possible), un mur pour caler.",
+      "Protocole : 1. Pose la bouteille debout sur la table et observe la surface de l'eau.",
+      "2. Penche doucement la bouteille et cale-la contre le mur.",
+      "3. Attends que l'eau ne bouge plus, puis observe la surface.",
+      "Observation : debout ou penchée, la surface de l'eau au repos est toujours plane et horizontale : elle ne suit jamais l'inclinaison de la bouteille.",
+      "Conclusion : la surface libre d'un liquide au repos est toujours plane et horizontale : c'est le principe du niveau à bulle du maçon.",
     ],
   },
   substitutions: [
@@ -342,6 +353,7 @@ const S3 = {
         titre: "1. Un gaz n'a ni forme propre ni volume propre",
         paras: [
           "L'air qui nous entoure est un gaz. Comme un liquide, un gaz n'a pas de forme propre. Mais en plus, un gaz n'a pas de volume propre : son volume peut changer.",
+          "Récapitulons les trois états : le solide a une forme propre et un volume propre ; le liquide n'a pas de forme propre mais garde son volume ; le gaz n'a ni l'un ni l'autre : il est le plus « libre » des trois !",
         ],
       },
       {
@@ -364,16 +376,26 @@ const S3 = {
           "Le gaz d'un briquet, libéré, se répand dans l'air de la pièce.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une seringue bouchée contient 60 mL d'air. On appuie sur le piston : le volume descend à 20 mL. Que s'est-il passé ? Que se passe-t-il quand on relâche ? Solution : l'air a été COMPRIMÉ : la même quantité d'air occupe un volume trois fois plus petit (60 ÷ 20 = 3). Quand on relâche, l'air comprimé SE DÉTEND et repousse le piston vers 60 mL : le gaz est élastique comme un ressort !",
+          "Exemple 2 — Pourquoi sent-on l'odeur du poisson grillé depuis la rue, alors que la cuisine est au fond de la maison ? Solution : c'est l'EXPANSIBILITÉ : les gaz odorants qui s'échappent du gril se répandent de proche en proche et finissent par occuper tout le volume disponible : la cuisine, le couloir… et la rue ! Un gaz ne reste jamais dans son coin.",
+        ],
+      },
     ],
     saisTu: [
       "Les pneus des taxis-brousse sont gonflés d'air comprimé à une pression bien précise. Un pneu trop peu gonflé s'use vite et fait consommer plus de carburant ; c'est pourquoi les chauffeurs vérifient la pression avant les longs trajets sur la RN7 !",
+      "Les plongeurs sous-marins emportent l'air… comprimé 200 fois ! Leur bouteille de 10 litres contient autant d'air que 2 000 litres d'air ordinaire, soit l'air d'une petite chambre. Sans la compressibilité des gaz, la plongée serait impossible.",
     ],
     experience: [
-      "Prends une bouteille en plastique vide (elle est en réalité pleine d'air) et un ballon de baudruche.",
-      "1. Coiffe le goulot de la bouteille avec le ballon dégonflé.",
-      "2. Presse fortement la bouteille entre tes mains : le ballon se gonfle un peu.",
-      "3. Relâche la bouteille : le ballon se dégonfle.",
-      "Conclusion : l'air chassé de la bouteille occupe le ballon (expansibilité) et reprend sa place quand on relâche (détente).",
+      "L'air qui se comprime et se détend :",
+      "Matériel : une bouteille en plastique vide (donc pleine d'air !), un ballon de baudruche.",
+      "Protocole : 1. Coiffe le goulot de la bouteille avec le ballon dégonflé.",
+      "2. Presse fortement la bouteille entre tes mains et observe le ballon.",
+      "3. Relâche la bouteille et observe encore.",
+      "Observation : quand on presse, le ballon se gonfle un peu : l'air chassé de la bouteille passe dans le ballon ; quand on relâche, le ballon se dégonfle : l'air revient.",
+      "Conclusion : l'air se laisse comprimer et se détend dès qu'on le libère : il occupe tout le volume qu'on lui offre (expansibilité).",
     ],
   },
   substitutions: [
@@ -596,16 +618,26 @@ const S4 = {
           "Un litre d'air pèse environ 1,3 gramme. C'est très peu : les gaz sont beaucoup moins denses que les solides et les liquides. Un litre d'eau pèse 1 000 grammes, presque 800 fois plus qu'un litre d'air !",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Quelle est la masse de l'air contenu dans une salle de classe de 150 000 litres (1 litre d'air pèse 1,3 g) ? Solution : 150 000 × 1,3 = 195 000 g, soit 195 kg ! L'air de ta salle de classe pèse plus lourd que trois élèves ensemble. Invisible ne veut pas dire sans masse !",
+          "Exemple 2 — Comment remplir une bouteille avec l'air que tu expires ? Décris la méthode. Solution : par déplacement d'eau : remplis la bouteille d'eau, renverse-la dans une bassine d'eau sans laisser entrer d'air, puis souffle avec une paille sous le goulot. Tes bulles montent dans la bouteille, chassent l'eau et prennent sa place : la bouteille se remplit de ton air expiré.",
+        ],
+      },
     ],
     saisTu: [
       "L'eau de chaux est un liquide transparent qui se trouble et devient blanchâtre en présence de dioxyde de carbone. Souffle dans un verre d'eau de chaux avec une paille : elle se trouble, car l'air que tu expires contient du dioxyde de carbone produit par ton corps !",
+      "L'atmosphère entière de la Terre pèse environ 5 milliards de milliards de tonnes ! C'est cette énorme couche d'air, attirée par la Terre, qui nous fournit le dioxygène pour respirer et qui protège la planète des rayons dangereux du Soleil.",
     ],
     experience: [
-      "Prends un verre et une bassine d'eau.",
-      "1. Chiffonne un morceau de papier sec et cale-le au fond du verre.",
+      "Le papier qui reste sec sous l'eau :",
+      "Matériel : un verre, une bassine d'eau, un morceau de papier sec.",
+      "Protocole : 1. Chiffonne le papier et cale-le bien au fond du verre.",
       "2. Retourne le verre et enfonce-le bien droit, verticalement, dans l'eau.",
-      "3. Ressors le verre bien droit et touche le papier : il est resté sec !",
-      "Conclusion : l'air contenu dans le verre a empêché l'eau d'entrer. L'air existe et occupe de la place.",
+      "3. Ressors le verre bien droit et touche le papier.",
+      "Observation : le papier est resté parfaitement sec, alors que le verre était sous l'eau !",
+      "Conclusion : le verre « vide » était plein d'air : cet air a occupé sa place et empêché l'eau d'entrer : l'air existe et occupe un volume.",
     ],
   },
   substitutions: [
@@ -826,16 +858,26 @@ const S5 = {
           "on additionne les masses marquées : leur somme est la masse de la mangue.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Pour équilibrer une papaye, il a fallu poser : 500 g + 200 g + 50 g + 20 g. Quelle est la masse de la papaye ? Solution : on additionne les masses marquées : 500 + 200 + 50 + 20 = 770 g. La papaye a une masse de 770 g, un peu plus de trois quarts de kilogramme.",
+          "Exemple 2 — Convertis : a) 3,5 kg en g ; b) 2 500 kg en tonnes ; c) 250 g en kg. Solution : a) 3,5 × 1 000 = 3 500 g ; b) 2 500 ÷ 1 000 = 2,5 t ; c) 250 ÷ 1 000 = 0,25 kg. Pour passer à l'unité plus petite on multiplie par 1 000 ; à l'unité plus grande, on divise par 1 000.",
+        ],
+      },
     ],
     saisTu: [
       "Le kilogramme est défini de la même façon dans le monde entier : c'est l'unité de base du Système international d'unités (SI), adopté par presque tous les pays, dont Madagascar. Ainsi, 1 kg de riz pesé à Mahajanga est exactement la même masse qu'1 kg pesé à Paris ou à Tokyo !",
+      "Sur les marchés malgaches, on pèse encore souvent avec des balances à deux plateaux, exactement comme les marchands de l'Égypte ancienne il y a 4 000 ans ! Le principe de l'équilibre n'a pas changé : c'est l'une des plus vieilles inventions scientifiques de l'humanité.",
     ],
     experience: [
       "Fabrique une mini balance à plateaux :",
-      "1. Prends une règle plate, un crayon rond et deux couvercles identiques de bouteille.",
-      "2. Pose la règle en équilibre sur le crayon (au milieu), et un couvercle à chaque bout.",
-      "3. Pose un petit objet (une gomme) d'un côté, et des pièces de monnaie de l'autre jusqu'à l'équilibre.",
-      "Conclusion : ta balance compare les masses ; la gomme a la même masse que les pièces posées.",
+      "Matériel : une règle plate, un crayon rond, deux couvercles identiques de bouteille, une gomme, des pièces de monnaie.",
+      "Protocole : 1. Pose la règle en équilibre sur le crayon (au milieu), un couvercle à chaque bout.",
+      "2. Pose la gomme sur un couvercle : la règle penche de son côté.",
+      "3. Ajoute des pièces une à une sur l'autre couvercle jusqu'à l'équilibre.",
+      "Observation : la règle penche toujours du côté le plus lourd ; à l'équilibre parfait, elle reste horizontale : les deux côtés portent la même masse.",
+      "Conclusion : ta balance compare les masses ; la gomme a la même masse que les pièces posées : c'est le principe exact de la balance à deux plateaux.",
     ],
   },
   substitutions: [
@@ -1034,6 +1076,7 @@ const S6 = {
         paras: [
           "Le volume d'un corps est la place que ce corps occupe dans l'espace.",
           "Il ne faut pas confondre la masse (quantité de matière, mesurée en kg) et le volume (place occupée, mesurée en m³ ou en litres).",
+          "Piège classique : gros ne veut pas dire lourd ! Un ballon de baudruche gonflé a un grand volume mais une toute petite masse ; une petite pierre a un petit volume mais une masse bien plus grande.",
         ],
       },
       {
@@ -1060,15 +1103,26 @@ const S6 = {
           "le volume du solide est V2 − V1 (exemple : 135 − 100 = 35 mL, soit 35 cm³).",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une éprouvette contient 80 mL d'eau. On y plonge une bille : le niveau monte à 92 mL. Quel est le volume de la bille ? Solution : V = V2 − V1 = 92 − 80 = 12 mL, soit 12 cm³. La bille a « poussé » l'eau exactement de son propre volume : c'est la méthode du déplacement d'eau.",
+          "Exemple 2 — Convertis : a) 3 L en mL ; b) 2 m³ en litres ; c) 500 cm³ en litres. Solution : a) 3 × 1 000 = 3 000 mL ; b) 2 × 1 000 = 2 000 L ; c) 500 cm³ = 500 mL = 0,5 L. Souviens-toi des équivalences : 1 mL = 1 cm³ et 1 m³ = 1 000 L.",
+        ],
+      },
     ],
     saisTu: [
       "La Jirama facture l'eau en mètres cubes : le compteur d'eau de la maison compte chaque mètre cube consommé, c'est-à-dire chaque tranche de 1 000 litres. Une famille qui utilise 5 m³ dans le mois a consommé 5 000 litres d'eau !",
+      "La méthode du déplacement d'eau aurait été découverte par le savant grec Archimède… dans son bain ! En voyant l'eau monter quand il s'y plongeait, il comprit qu'un corps immergé déplace exactement son volume d'eau. Tu étudieras ses autres découvertes en classe de 3e !",
     ],
     experience: [
       "Mesure le volume d'un caillou à la maison :",
-      "1. Remplis à moitié un verre doseur de cuisine (ou une bouteille graduée avec une règle) et note le niveau.",
-      "2. Attache un caillou à un fil et plonge-le doucement dans l'eau, sans éclabousser.",
-      "3. Note le nouveau niveau et calcule la différence : c'est le volume du caillou.",
+      "Matériel : un verre doseur de cuisine (ou une bouteille avec une règle collée), de l'eau, un caillou, du fil.",
+      "Protocole : 1. Remplis le verre doseur à moitié et note le niveau V1.",
+      "2. Attache le caillou au fil et plonge-le doucement, sans éclabousser.",
+      "3. Note le nouveau niveau V2 et calcule V2 − V1.",
+      "Observation : le niveau de l'eau monte dès que le caillou est immergé ; la différence des deux lectures donne un volume précis en mL.",
+      "Conclusion : un solide plongé dans l'eau déplace exactement son volume : la différence de niveaux mesure le volume du caillou, même de forme quelconque.",
     ],
   },
   substitutions: [
@@ -1303,15 +1357,26 @@ const S7 = {
           "On mesure la pression d'un gaz avec un manomètre : le gonfleur du vulcanisateur en possède un pour vérifier la pression des pneus.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Pourquoi un éléphant aux pattes larges s'enfonce-t-il moins dans la boue qu'une femme en talons fins, pourtant bien plus légère ? Solution : c'est la surface d'appui qui décide ! Le poids de l'éléphant se répartit sur quatre pattes très larges : la pression est faible. Le poids de la personne se concentre sur deux talons minuscules : la pression est très grande. Petite surface = grande pression !",
+          "Exemple 2 — Cite pour chaque cas si l'on cherche à augmenter ou diminuer la pression : a) aiguiser un couteau ; b) poser des planches sur la boue ; c) tailler la pointe d'un piquet. Solution : a) AUGMENTER (surface plus petite : le couteau coupe mieux) ; b) DIMINUER (surface plus grande : on ne s'enfonce plus) ; c) AUGMENTER (la pointe fine s'enfonce facilement dans la terre).",
+        ],
+      },
     ],
     saisTu: [
       "L'unité « pascal » rend hommage à Blaise Pascal, savant français du XVIIe siècle qui a étudié la pression de l'air. L'air qui nous entoure exerce sur nous une pression d'environ 100 000 pascals : c'est la pression atmosphérique, que nous ne sentons pas car elle s'exerce dans toutes les directions !",
+      "Les raquettes à neige des pays froids et les larges pneus des tracteurs dans les rizières boueuses utilisent la même astuce : agrandir la surface d'appui pour diminuer la pression et ne pas s'enfoncer. La physique de l'angady et celle du tracteur, c'est la même !",
     ],
     experience: [
-      "Compare des pressions avec une éponge (ou de la mie de pain) :",
-      "1. Pose une boîte pleine à plat sur l'éponge : note l'enfoncement.",
-      "2. Pose la même boîte debout sur son petit côté : l'éponge s'enfonce davantage.",
-      "Conclusion : même force, surface plus petite → pression plus grande.",
+      "Compare des pressions avec une éponge :",
+      "Matériel : une éponge (ou de la mie de pain), une boîte pleine (par exemple une boîte de lait concentré).",
+      "Protocole : 1. Pose la boîte à plat sur l'éponge : note l'enfoncement.",
+      "2. Pose la même boîte debout sur son petit côté : note l'enfoncement.",
+      "3. Appuie ensuite sur la boîte debout : observe.",
+      "Observation : à plat (grande surface), l'éponge s'enfonce peu ; debout (petite surface), elle s'enfonce davantage : même boîte, pression différente ! En appuyant, l'enfoncement augmente encore.",
+      "Conclusion : la pression augmente quand la force augmente ET quand la surface d'appui diminue : deux façons d'enfoncer plus… ou moins !",
     ],
   },
   substitutions: [
@@ -1523,16 +1588,26 @@ const S8 = {
           "La pression peut donc provoquer un changement d'état : une forte compression peut rendre un gaz liquide, et une baisse de pression peut faire bouillir un liquide plus tôt. La pression et la température agissent ensemble sur l'état des corps.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Pourquoi entend-on un liquide bouger dans un briquet, alors qu'il en sort du gaz ? Solution : dans le briquet, le butane est fortement comprimé : la pression l'a rendu LIQUIDE (liquéfaction par compression). Dès qu'il sort par la valve, la pression tombe brusquement : le liquide redevient GAZ. Le briquet stocke donc beaucoup de gaz sous un tout petit volume !",
+          "Exemple 2 — Range du plus rapide au plus lent pour cuire le même riz : a) cocotte-minute ; b) marmite à Toamasina (bord de mer) ; c) marmite à Antananarivo (1 300 m). Explique. Solution : a) puis b) puis c). Dans la cocotte, la pression élevée fait bouillir l'eau vers 120 °C : cuisson rapide ; à Toamasina, l'eau bout à 100 °C ; à Antananarivo, la pression plus faible fait bouillir l'eau vers 96 °C seulement : la cuisson y est la plus lente.",
+        ],
+      },
     ],
     saisTu: [
       "Antananarivo se trouve à environ 1 300 mètres d'altitude : la pression de l'air y est plus faible qu'au bord de la mer, et l'eau y bout vers 96 °C au lieu de 100 °C. C'est pourquoi le riz met un peu plus de temps à cuire sur les Hautes Terres qu'à Toamasina, au bord de la mer !",
+      "Au sommet de l'Everest (8 849 m), l'eau bout à seulement 70 °C ! Impossible d'y cuire correctement du riz ou un œuf dans une marmite ordinaire : les alpinistes emportent des réchauds spéciaux à pression. Moins d'air au-dessus de la tête = ébullition plus tôt !",
     ],
     experience: [
-      "Attention : ne fais jamais d'expérience avec le feu ou un briquet sans un adulte.",
-      "Observe simplement, avec un adulte, un briquet transparent :",
-      "1. Regarde le liquide qui bouge à l'intérieur quand on secoue doucement le briquet.",
-      "2. Demande à l'adulte d'appuyer très brièvement sur le bouton, sans allumer : on entend le gaz s'échapper.",
-      "Conclusion : le butane est liquide sous pression dans le réservoir et redevient gaz à l'air libre.",
+      "Le briquet transparent (observation avec un adulte : ne jamais jouer avec le feu) :",
+      "Matériel : un briquet transparent, un adulte pour manipuler.",
+      "Protocole : 1. Regarde le liquide qui bouge à l'intérieur quand on secoue doucement le briquet.",
+      "2. Demande à l'adulte d'appuyer très brièvement sur le bouton, sans allumer.",
+      "3. Écoute et observe.",
+      "Observation : on voit un liquide dans le réservoir ; à l'appui sur le bouton, on entend un sifflement : c'est du GAZ qui s'échappe, pas du liquide !",
+      "Conclusion : le butane est liquide sous pression dans le réservoir et redevient gaz dès qu'il sort à l'air libre : la pression commande le changement d'état.",
     ],
   },
   substitutions: [

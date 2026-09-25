@@ -133,6 +133,7 @@ const S23 = {
         paras: [
           "La chaleur est une énergie. Elle passe toujours du corps le plus chaud vers le corps le plus froid, jamais l'inverse.",
           "Exemple : le thé chaud cède de la chaleur à la tasse et à l'air ; il refroidit pendant que la tasse se réchauffe.",
+          "Ne confonds pas les deux mots : la TEMPÉRATURE se mesure au thermomètre (en °C) ; la CHALEUR est l'énergie qui passe d'un corps à l'autre. Le froid n'existe pas vraiment en physique : « avoir froid », c'est perdre de la chaleur !",
         ],
       },
       {
@@ -153,16 +154,26 @@ const S23 = {
           },
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — On pose une bouteille d'eau glacée sur la table de la cuisine. Dans quel sens la chaleur passe-t-elle ? Que devient la température de l'eau ? Solution : la chaleur passe TOUJOURS du plus chaud vers le plus froid : ici, de l'air de la cuisine (chaud) vers la bouteille (froide). L'eau reçoit de la chaleur : sa température MONTE, jusqu'à égaler celle de la pièce. Ce n'est pas « le froid qui sort », c'est la chaleur qui entre !",
+          "Exemple 2 — De la glace à 0 °C reçoit de la chaleur, mais le thermomètre reste bloqué à 0 °C pendant un long moment. Est-ce normal ? Solution : oui ! Tant que la glace fond, toute la chaleur reçue sert au CHANGEMENT D'ÉTAT (solide → liquide) et non à faire monter la température. Le thermomètre ne repartira qu'une fois toute la glace fondue : c'est le deuxième effet de la chaleur.",
+        ],
+      },
     ],
     saisTu: [
       "À Antsirabe, ville des Hautes Terres, la température peut descendre jusqu'à 0 °C en hiver : de la gelée blanche se forme parfois le matin ! Sur la côte, à Toliara, il peut faire plus de 35 °C le même jour. Madagascar connaît de grands écarts de température selon l'altitude.",
+      "L'échelle Celsius doit son nom à l'astronome suédois Anders Celsius, qui la proposa en 1742… à l'envers ! Son échelle d'origine notait 100 pour la glace et 0 pour l'eau bouillante. Elle fut inversée peu après sa mort, pour devenir l'échelle que le monde entier utilise aujourd'hui.",
     ],
     experience: [
-      "Sens de la chaleur (expérience des trois bols) :",
-      "1. Prépare trois bols : eau froide, eau tiède, eau bien chaude (pas brûlante !).",
-      "2. Mets la main gauche dans l'eau froide et la droite dans l'eau chaude pendant 30 secondes.",
-      "3. Plonge ensuite les deux mains dans l'eau tiède : la gauche la sent chaude, la droite la sent froide !",
-      "Conclusion : nos mains sentent les transferts de chaleur, mais seul le thermomètre mesure la vraie température.",
+      "Le sens trompeur (expérience des trois bols) :",
+      "Matériel : trois bols : eau froide, eau tiède, eau bien chaude (pas brûlante !).",
+      "Protocole : 1. Mets la main gauche dans l'eau froide et la droite dans l'eau chaude ; attends trente secondes.",
+      "2. Plonge ensuite les DEUX mains en même temps dans le bol d'eau tiède.",
+      "3. Compare ce que ressent chaque main.",
+      "Observation : la même eau tiède paraît CHAUDE à la main gauche (qui vient du froid) et FROIDE à la main droite (qui vient du chaud) !",
+      "Conclusion : nos sens perçoivent les transferts de chaleur, pas la température : pour mesurer vraiment, il faut un thermomètre.",
     ],
   },
   substitutions: [
@@ -357,6 +368,7 @@ const S24 = {
           "Un mauvais conducteur thermique, appelé aussi isolant thermique, laisse très mal passer la chaleur.",
           "Exemples : le bois, le plastique, la paille, la laine de mouton, le liège, la terre cuite, les fibres de bois, le plâtre et l'air immobile.",
           "C'est pourquoi les manches de casseroles sont en bois ou en plastique, et les couvertures en laine tiennent chaud.",
+          "Le champion des isolants est souvent invisible : l'AIR IMMOBILE ! La laine, la paille et les plumes isolent surtout parce qu'elles emprisonnent de l'air en millions de petites poches.",
         ],
       },
       {
@@ -365,16 +377,26 @@ const S24 = {
           "Les métaux, bons conducteurs de chaleur, sont aussi de bons conducteurs d'électricité. À l'inverse, le bois et le plastique sont à la fois isolants thermiques et isolants électriques : c'est pour cela que les fils électriques sont recouverts de plastique.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Pourquoi une marmite a-t-elle un corps en aluminium mais des poignées en plastique ? Solution : deux besoins opposés, deux matériaux ! Le corps en aluminium (bon conducteur) transmet vite la chaleur du feu au repas ; les poignées en plastique (isolant) laissent très mal passer la chaleur : on peut saisir la marmite sans se brûler. Chaque matériau est choisi pour sa conductivité.",
+          "Exemple 2 — Une couverture en laine « donne-t-elle » de la chaleur ? Explique ce qu'elle fait vraiment. Solution : non, la couverture ne produit aucune chaleur ! C'est un ISOLANT : elle empêche la chaleur de TON corps de s'échapper. La preuve : une bouteille d'eau glacée enveloppée dans la même couverture reste froide plus longtemps : la couverture bloque la chaleur dans les deux sens.",
+        ],
+      },
     ],
     saisTu: [
       "Les maisons traditionnelles en falafa (feuilles de ravinala tressées) et les toits de chaume restent frais pendant les journées chaudes : les fibres végétales et l'air qu'elles emprisonnent sont d'excellents isolants thermiques. Un savoir-faire malgache bien avant les isolants modernes !",
+      "Les manchots de l'Antarctique survivent à −40 °C grâce à trois couches d'isolants : plumes serrées, duvet et graisse : toutes remplies d'air immobile ! Les vestes en duvet des alpinistes copient exactement cette technique de la nature.",
     ],
     experience: [
-      "Teste la conductivité des matériaux de ta cuisine :",
-      "1. Verse de l'eau bien chaude dans un bol (demande à un adulte).",
-      "2. Plonge en même temps : une cuillère en métal, une cuillère en bois, une baguette en plastique.",
-      "3. Après une minute, touche prudemment le haut de chaque objet.",
-      "4. Classe les matériaux du plus conducteur au plus isolant.",
+      "Le concours des cuillères :",
+      "Matériel : un bol, de l'eau bien chaude (demande à un adulte), une cuillère en métal, une cuillère en bois, une cuillère en plastique, un peu de beurre.",
+      "Protocole : 1. Pose une minuscule noisette de beurre en haut du manche de chaque cuillère.",
+      "2. Place les trois cuillères debout dans le bol d'eau bien chaude.",
+      "3. Observe les noisettes de beurre pendant quelques minutes.",
+      "Observation : le beurre fond vite sur la cuillère en métal ; il ne fond pas (ou très tard) sur les cuillères en bois et en plastique.",
+      "Conclusion : le métal conduit bien la chaleur ; le bois et le plastique sont des isolants : la chaleur monte le long du métal jusqu'au beurre !",
     ],
   },
   substitutions: [
@@ -580,18 +602,30 @@ const S25 = {
           "La cuillère en métal laissée dans la soupe devient brûlante jusqu'au bout.",
           "Le sol carrelé paraît froid sous les pieds nus : il conduit la chaleur du pied vers le sol.",
         ],
-        paras: [],
+        paras: [
+          "Retiens l'image de la file d'élèves qui se passent un seau de main en main : le seau (la chaleur) avance, mais chaque élève (la matière) reste à sa place : c'est exactement la conduction !",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — On laisse une cuillère en métal dans la marmite de soupe qui chauffe. Pourquoi le bout du manche, hors de la soupe, devient-il brûlant ? Solution : par CONDUCTION : la chaleur avance de proche en proche le long du métal, de la partie trempée (chaude) vers le bout du manche (froid), sans que la matière bouge. Le métal étant un excellent conducteur, tout le manche devient vite brûlant !",
+          "Exemple 2 — Pieds nus, le carrelage paraît glacial et la natte tiède, pourtant ils sont dans la même pièce. Ont-ils des températures différentes ? Solution : non, ils sont à la MÊME température ! Mais le carrelage, bon conducteur, aspire vite la chaleur de ta peau par conduction : sensation de froid ; la natte, isolante, la prend très lentement : sensation de tiède. Nos pieds sentent le transfert, pas la température !",
+        ],
       },
     ],
     saisTu: [
       "Le carrelage et la natte (tsihy) de la même pièce sont exactement à la même température ! Mais le carrelage paraît plus froid sous les pieds car il conduit mieux la chaleur : il « aspire » la chaleur de ta peau plus vite que la natte, qui est isolante. Nos sens perçoivent le transfert de chaleur, pas la température !",
+      "Le forgeron tient le fer rouge avec de longues pinces : la conduction met du temps à parcourir toute la longueur du métal ! Et les meilleurs conducteurs de chaleur sont l'argent et le cuivre : c'est pourquoi les fonds des casseroles de qualité sont parfois doublés de cuivre.",
     ],
     experience: [
-      "L'expérience de la petite cuillère (avec un adulte) :",
-      "1. Mets une cuillère en métal et une cuillère en bois dans un verre d'eau bien chaude.",
-      "2. Pose une minuscule noisette de beurre en haut de chaque manche.",
-      "3. Observe : le beurre fond sur la cuillère en métal, pas sur celle en bois.",
-      "Conclusion : la chaleur monte par conduction dans le métal, bon conducteur.",
+      "La course du beurre (avec un adulte) :",
+      "Matériel : un verre d'eau bien chaude, une cuillère en métal, une cuillère en bois, du beurre.",
+      "Protocole : 1. Pose une minuscule noisette de beurre en haut de chaque manche.",
+      "2. Mets les deux cuillères dans le verre d'eau bien chaude.",
+      "3. Observe les deux noisettes.",
+      "Observation : le beurre fond sur la cuillère en métal ; sur la cuillère en bois, il reste intact : la chaleur n'est pas montée.",
+      "Conclusion : la chaleur se transmet de proche en proche dans le métal, sans déplacement de matière : c'est la conduction, rapide dans les conducteurs, presque nulle dans les isolants.",
     ],
   },
   substitutions: [
@@ -807,16 +841,26 @@ const S26 = {
         ],
         paras: [],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Pourquoi place-t-on le fatapera SOUS la marmite, et la viande à fumer AU-DESSUS du feu ? Solution : parce que l'air chaud MONTE (convection) ! Sous la marmite, la chaleur qui monte enveloppe le fond et les côtés ; au-dessus du feu, la fumée chaude qui s'élève sèche et parfume la viande. La convection travaille toujours de bas en haut.",
+          "Exemple 2 — Dans une chambre, où placer une petite fenêtre pour évacuer l'air le plus chaud ? En haut ou en bas du mur ? Solution : EN HAUT ! L'air chaud, plus léger, s'accumule au plafond : une ouverture haute le laisse s'échapper, pendant que l'air frais entre par le bas. C'est le principe de l'aération des maisons et des cases traditionnelles.",
+        ],
+      },
     ],
     saisTu: [
       "Les pêcheurs vezo utilisent la convection sans le savoir : le matin, la brise de terre les pousse vers le large, et l'après-midi, la brise de mer les ramène à la côte ! Ces vents sont des courants de convection géants créés par la différence de température entre la terre et la mer.",
+      "Les oiseaux planeurs, comme les rapaces qui tournoient au-dessus des collines, grimpent sans un battement d'ailes : ils se laissent porter par les « thermiques », des colonnes d'air chaud qui montent du sol ! Les pilotes de parapente cherchent exactement les mêmes ascenseurs invisibles.",
     ],
     experience: [
       "Visualise un courant de convection (avec un adulte) :",
-      "1. Remplis un grand bocal d'eau froide.",
-      "2. Remplis un petit flacon d'eau très chaude colorée (sirop de grenadine ou colorant).",
-      "3. Bouche le flacon avec le doigt, plonge-le au fond du bocal, puis retire ton doigt.",
-      "4. Observe : l'eau chaude colorée monte en panache vers la surface !",
+      "Matériel : un grand bocal d'eau froide, un petit flacon, de l'eau très chaude, un colorant (encre, jus de betterave), une ficelle.",
+      "Protocole : 1. Remplis le petit flacon d'eau très chaude colorée et ferme-le avec le doigt.",
+      "2. Descends-le doucement au fond du bocal d'eau froide avec la ficelle.",
+      "3. Libère l'ouverture et observe sans remuer.",
+      "Observation : l'eau chaude colorée MONTE en panache vers la surface, s'étale, puis redescend sur les côtés en refroidissant : un vrai courant de convection sous tes yeux !",
+      "Conclusion : le fluide chaud monte, le fluide froid descend : la chaleur voyage avec la matière : c'est la convection.",
     ],
   },
   substitutions: [
@@ -1017,7 +1061,7 @@ const S27 = {
       {
         titre: "3. Surfaces sombres et surfaces claires",
         puces: [
-          "Une surface sombre absorbe bien le rayonnement : le tissu noir et la tôle deviennent brûlants au soleil.",
+          "Une surface sombre absorbe bien le rayonnement : le tissu noir et la tôle sombre chauffent fort au soleil.",
           "Une surface claire ou brillante réfléchit le rayonnement : elle chauffe moins.",
           "Applications : vêtements clairs par forte chaleur, réservoirs peints en blanc, miroirs des cuiseurs solaires.",
         ],
@@ -1030,17 +1074,30 @@ const S27 = {
           "Convection : par le mouvement d'un fluide (liquides et gaz).",
           "Rayonnement : à distance, sans contact et sans matière (même dans le vide).",
         ],
-        paras: [],
+        paras: [
+          "Pour les reconnaître, pose-toi deux questions : y a-t-il contact ? la matière bouge-t-elle ? Contact sans mouvement : conduction ; matière qui bouge : convection ; ni contact ni matière : rayonnement !",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Comment la chaleur du Soleil arrive-t-elle jusqu'à la Terre, alors que l'espace est vide ? Solution : par RAYONNEMENT, le seul mode de transfert qui n'a besoin d'aucune matière ! Ni conduction (pas de contact), ni convection (pas de fluide dans le vide) : seuls les rayons traversent les 150 millions de kilomètres d'espace vide qui nous séparent du Soleil.",
+          "Exemple 2 — Identifie le mode de transfert : a) la marmite chauffe le riz par son fond ; b) tu sens la chaleur des braises à un mètre du fatapera ; c) l'air chaud monte au plafond. Solution : a) CONDUCTION (contact, matière immobile) ; b) RAYONNEMENT (à distance, sans contact) ; c) CONVECTION (l'air, un fluide, se déplace). Les trois modes travaillent souvent ensemble autour du même feu !",
+        ],
       },
     ],
     saisTu: [
       "À Madagascar, des associations diffusent des cuiseurs solaires : leurs miroirs réfléchissent le rayonnement du Soleil et le concentrent sur la marmite noire, qui l'absorbe. On peut ainsi cuire le riz sans bois ni charbon : une solution qui protège les forêts !",
+      "Les couvertures de survie des secouristes, dorées ou argentées, sont de simples feuilles brillantes : elles RÉFLÉCHISSENT le rayonnement du corps vers l'intérieur pour garder un blessé au chaud… ou le rayonnement du soleil vers l'extérieur pour protéger de la chaleur ! Une même physique, deux usages opposés.",
     ],
     experience: [
-      "Compare l'absorption du rayonnement :",
-      "1. Pose au soleil deux boîtes de conserve remplies d'eau : une peinte ou entourée de tissu noir, l'autre de blanc.",
-      "2. Attends une heure, puis compare la température de l'eau avec un thermomètre (ou avec le doigt).",
-      "3. L'eau de la boîte noire est plus chaude : le noir absorbe mieux le rayonnement.",
+      "Noir contre blanc au soleil :",
+      "Matériel : deux boîtes de conserve identiques, de l'eau, un tissu noir et un tissu blanc (ou peintures), un thermomètre si possible.",
+      "Protocole : 1. Remplis les deux boîtes de la même quantité d'eau.",
+      "2. Habille l'une de noir, l'autre de blanc, et pose-les côte à côte en plein soleil.",
+      "3. Après une heure, compare les températures (au thermomètre ou au doigt).",
+      "Observation : l'eau de la boîte noire est nettement plus chaude que celle de la boîte blanche !",
+      "Conclusion : les surfaces sombres absorbent le rayonnement, les surfaces claires le réfléchissent : voilà pourquoi on s'habille en clair sous le soleil et pourquoi la marmite du cuiseur solaire est noire.",
     ],
   },
   substitutions: [
@@ -1251,16 +1308,27 @@ const S28 = {
         ],
         paras: [],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Le thé refroidit trop vite dans sa théière posée sur la table en métal. Propose trois améliorations, une par mode de transfert. Solution : contre la CONDUCTION : poser la théière sur un dessous-de-plat en bois ou en tissu (plus de contact avec le métal froid) ; contre la CONVECTION : mettre le couvercle (l'air chaud et la vapeur ne s'échappent plus) ; contre le RAYONNEMENT : envelopper la théière d'un tissu, comme le font les vendeurs de café.",
+          "Exemple 2 — Pourquoi la même glacière garde-t-elle le froid des yaourts ET le chaud du riz ? Solution : parce qu'un isolant bloque la chaleur DANS LES DEUX SENS ! Pour les yaourts, il empêche la chaleur d'ENTRER ; pour le riz, il l'empêche de SORTIR. L'isolant ne produit ni froid ni chaud : il ferme simplement la porte aux transferts.",
+        ],
+      },
     ],
     saisTu: [
       "La « marmite norvégienne » est utilisée par des familles malgaches pour économiser le charbon : on porte le riz à ébullition quelques minutes, puis on enferme la marmite dans une caisse remplie de paille ou de couvertures. La cuisson se termine toute seule, sans feu, grâce à la chaleur conservée !",
+      "Les igloos des Inuits sont chauds… grâce à la neige ! La neige tassée emprisonne beaucoup d'air immobile : c'est un excellent isolant. Dedans, la chaleur des corps et d'une simple lampe suffit à maintenir une température supportable pendant que le blizzard souffle à −30 °C dehors.",
     ],
     experience: [
       "Le concours du thé le plus chaud :",
-      "1. Verse la même quantité d'eau bien chaude dans deux bocaux identiques.",
-      "2. Laisse le premier ouvert ; ferme le second et enveloppe-le dans un pull de laine.",
-      "3. Après 30 minutes, compare les températures (thermomètre ou doigt prudent).",
-      "Conclusion : couvercle + isolant = chaleur conservée bien plus longtemps.",
+      "Matériel : deux bocaux identiques, de l'eau bien chaude, un couvercle, des tissus ou de la paille.",
+      "Protocole : 1. Verse la même quantité d'eau bien chaude dans les deux bocaux.",
+      "2. Laisse le premier ouvert et nu sur la table.",
+      "3. Ferme le second et enveloppe-le de tissus épais.",
+      "4. Après une heure, compare les températures.",
+      "Observation : l'eau du bocal isolé et couvert est restée nettement plus chaude ; celle du bocal nu a beaucoup refroidi.",
+      "Conclusion : couvercle + isolant = deux modes de transfert bloqués : la chaleur se conserve : c'est le secret du thermos et de la marmite norvégienne.",
     ],
   },
   substitutions: [
@@ -1444,6 +1512,7 @@ const S29 = {
         titre: "1. Le cahier des charges",
         paras: [
           "Un objet isotherme doit réduire au maximum la perte de chaleur. Pour le concevoir, on s'attaque aux trois modes de transfert : conduction, convection et rayonnement.",
+          "Avant de construire, un vrai concepteur écrit son cahier des charges : que doit faire l'objet ? avec quels matériaux ? comment prouver qu'il marche ? Ces trois questions guident tout le projet.",
         ],
       },
       {
@@ -1461,18 +1530,30 @@ const S29 = {
         titre: "3. Le test d'efficacité",
         paras: [
           "Pour prouver que l'objet fonctionne, on fait une expérience avec témoin : deux bouteilles d'eau chaude identiques, l'une dans la boîte, l'autre à l'air libre. On mesure les températures au départ puis après un temps donné. Plus l'écart final est grand, plus l'objet est efficace.",
+          "Pourquoi un témoin ? Sans lui, impossible de conclure ! Si l'eau de la boîte est à 40 °C après deux heures, est-ce bien ou mal ? Seule la comparaison avec la bouteille laissée à l'air libre (par exemple 25 °C) prouve l'efficacité de ta boîte.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Test de deux boîtes : départ 70 °C ; après deux heures, boîte de Miora : 52 °C ; boîte de Hery : 38 °C ; bouteille témoin : 28 °C. Analyse les résultats. Solution : les deux boîtes battent le témoin : elles isolent ! Celle de Miora conserve mieux : 52 − 28 = 24 °C de mieux que le témoin, contre 38 − 28 = 10 °C pour Hery. Miora gagne : son isolant est plus épais ou sa fermeture meilleure.",
+          "Exemple 2 — Dans la boîte de Fetra, la bouteille touche directement la paroi en carton, et il reste un grand espace vide non rempli. Pourquoi ses résultats sont-ils décevants ? Solution : deux fuites de chaleur : le CONTACT direct bouteille-paroi crée un pont de conduction ; le grand espace vide laisse l'air circuler : convection ! Il faut combler tout l'espace d'isolant et centrer la bouteille : aucun contact, aucun courant d'air.",
         ],
       },
     ],
     saisTu: [
       "Le thermos a été inventé en 1892 par le physicien écossais James Dewar. Son secret : le vide entre les deux parois de verre, dans lequel ni la conduction ni la convection ne sont possibles. Les vendeurs de yaourt et de café des rues d'Antananarivo utilisent le même principe avec leurs glacières isolées !",
+      "L'expérience avec témoin que tu utilises pour tester ta boîte est LA méthode de toute la science : les médecins testent chaque nouveau médicament contre un groupe témoin, exactement comme toi avec tes deux bouteilles ! Tu pratiques déjà la démarche des chercheurs.",
     ],
     experience: [
       "Le défi de la boîte magique (à faire en famille ou entre amis) :",
-      "1. Construis ta boîte isotherme selon les étapes de la leçon.",
-      "2. Mets-y une bouteille d'eau bien chaude, et laisse une bouteille identique à l'air libre.",
+      "Matériel : une boîte en carton, paille ou tissus ou papier journal, papier brillant si possible, deux bouteilles identiques, de l'eau bien chaude, un thermomètre si possible.",
+      "Protocole : 1. Construis ta boîte isotherme selon les cinq étapes de la leçon.",
+      "2. Mets-y une bouteille d'eau bien chaude, et laisse la bouteille témoin à l'air libre.",
       "3. Après deux heures, compare les températures.",
-      "4. Améliore ta boîte (isolant plus épais, meilleure fermeture) et recommence : bats ton propre record !",
+      "4. Améliore ta boîte (isolant plus épais, meilleure fermeture) et recommence.",
+      "Observation : la bouteille de la boîte reste bien plus chaude que le témoin ; chaque amélioration augmente l'écart !",
+      "Conclusion : concevoir, tester avec un témoin, améliorer : tu as suivi la démarche complète de l'ingénieur : et ta boîte conserve vraiment la chaleur.",
     ],
   },
   substitutions: [
@@ -1667,7 +1748,9 @@ const S30 = {
           "La contraction : quand un solide refroidit, son volume diminue.",
           "La dilatation dépend de la nature du solide : l'aluminium se dilate plus que le fer, qui se dilate plus que le verre.",
         ],
-        paras: [],
+        paras: [
+          "Attention à une idée fausse : la matière ne « gonfle » pas parce qu'il s'en ajoute ! C'est le même métal qui occupe simplement plus de place à chaud : sa masse ne change pas d'un gramme.",
+        ],
       },
       {
         titre: "3. Applications et précautions",
@@ -1692,16 +1775,27 @@ const S30 = {
           },
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Le couvercle métallique d'un bocal en verre est bloqué. Pourquoi le passage sous l'eau chaude le débloque-t-il ? Solution : l'eau chaude dilate le couvercle en métal PLUS que le col en verre (le métal se dilate davantage que le verre) : le couvercle s'agrandit un peu plus vite que le bocal : il se desserre ! On utilise la DIFFÉRENCE de dilatation entre deux matériaux.",
+          "Exemple 2 — Pourquoi les fils électriques entre deux poteaux sont-ils posés légèrement détendus, et non bien tendus ? Solution : à la saison froide, les fils se CONTRACTENT et raccourcissent. Un fil posé trop tendu en été se tendrait encore plus en hiver… jusqu'à casser ou arracher les poteaux ! Le petit ventre du fil est une marge de sécurité calculée.",
+        ],
+      },
     ],
     saisTu: [
       "La ligne de chemin de fer Fianarantsoa-Côte Est (FCE), construite entre 1926 et 1936, compte 163 km, 67 tunnels et 48 ponts. Sur toute sa longueur, les rails comportent des joints de dilatation : sans eux, le soleil tropical tordrait les voies en quelques saisons !",
+      "La tour Eiffel grandit d'environ 15 centimètres pendant les journées chaudes d'été : ses 7 300 tonnes de fer se dilatent au soleil ! Et son sommet penche même légèrement du côté de l'ombre, car la face ensoleillée se dilate plus que l'autre. Un géant de métal qui respire avec la température !",
     ],
     experience: [
       "La dilatation avec un boulon et un écrou (avec un adulte) :",
-      "1. Choisis un boulon et un écrou qui se vissent juste.",
-      "2. Chauffe le boulon (pas l'écrou) dans l'eau très chaude quelques minutes.",
-      "3. Essaie de visser l'écrou froid : c'est plus dur, le boulon s'est dilaté !",
-      "4. Laisse refroidir et recommence : tout redevient normal.",
+      "Matériel : un boulon et son écrou juste à sa taille, une pince à linge en bois, une bougie, un bol d'eau froide.",
+      "Protocole : 1. Vérifie à froid que l'écrou se visse librement sur le boulon.",
+      "2. Tiens le boulon avec la pince et chauffe-le une minute à la flamme (adulte).",
+      "3. Essaie aussitôt de visser l'écrou resté froid.",
+      "4. Plonge le boulon dans l'eau froide et essaie encore.",
+      "Observation : à chaud, l'écrou coince ou visse dur : le boulon s'est dilaté ; après refroidissement, tout revisse librement : il s'est contracté.",
+      "Conclusion : chauffé, un solide augmente de volume (dilatation) ; refroidi, il le retrouve (contraction) : la boule et l'anneau tenaient dans ta main !",
     ],
   },
   substitutions: [
@@ -1901,6 +1995,7 @@ const S31 = {
         paras: [
           "Le thermomètre à liquide utilise la dilatation : quand la température monte, le liquide du réservoir se dilate et s'élève dans le tube fin gradué. Quand la température baisse, il se contracte et descend.",
           "Notre bouteille à paille fonctionne exactement comme un vrai thermomètre : c'est un thermomètre artisanal. Pour le graduer, on marque le niveau dans l'eau glacée puis dans l'eau bouillante.",
+          "Pourquoi un tube très FIN ? Pour amplifier ! Une minuscule dilatation du liquide du réservoir fait monter le niveau de plusieurs centimètres dans le tube étroit : plus le tube est fin, plus le thermomètre est sensible.",
         ],
       },
       {
@@ -1909,16 +2004,27 @@ const S31 = {
           "Dans les moteurs et les chauffe-eau, un réservoir appelé vase d'expansion recueille le liquide qui se dilate en chauffant : sans lui, les tuyaux éclateraient. C'est la même raison pour laquelle on ne remplit jamais à ras bord une marmite d'huile ou un radiateur de voiture.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Pourquoi ne remplit-on jamais une bouteille d'huile à ras bord avant de la fermer ? Solution : si la température monte, l'huile SE DILATE : à ras bord, elle n'aurait aucune place pour grossir : la bouteille déborderait à l'ouverture ou éclaterait. L'espace d'air laissé en haut joue le rôle de vase d'expansion !",
+          "Exemple 2 — Sur ton thermomètre artisanal, tu marques le niveau à 0 °C (eau glacée) et à 100 °C (eau bouillante, avec un adulte). Comment graduer les autres températures ? Solution : on partage l'espace entre les deux marques en parties égales : la moitié correspond à 50 °C, le quart à 25 °C, etc. C'est exactement ainsi que Celsius a construit son échelle : deux repères fixes et un partage régulier !",
+        ],
+      },
     ],
     saisTu: [
-      "Les premiers thermomètres à alcool ont été fabriqués à Florence vers 1650. Aujourd'hui encore, la plupart des thermomètres colorés contiennent de l'alcool teinté en rouge, car l'alcool se dilate beaucoup et régulièrement : exactement le principe de ta bouteille à paille !",
+      "Les premiers thermomètres à alcool ont été fabriqués à Florence vers 1650. Aujourd'hui encore, la plupart des thermomètres colorés contiennent de l'alcool teinté en rouge, car l'alcool se dilate beaucoup et régulièrement : le mercure, toxique, est désormais interdit dans les thermomètres médicaux.",
+      "Les montgolfières volent grâce à la dilatation des gaz : le brûleur chauffe l'air du ballon, qui se dilate, devient plus léger que l'air froid extérieur… et tout l'équipage s'envole ! Le premier vol humain de l'histoire, en 1783, reposait déjà sur la physique de ta leçon.",
     ],
     experience: [
-      "Fabrique et gradue ton thermomètre artisanal :",
-      "1. Remplis complètement une petite bouteille d'eau colorée (sirop ou colorant).",
-      "2. Perce le bouchon, passe une paille transparente et scelle avec de la cire de bougie : l'eau doit monter un peu dans la paille.",
-      "3. Place la bouteille dans un bol d'eau bien froide : marque le niveau « froid » sur la paille.",
-      "4. Place-la dans l'eau bien chaude : marque le niveau « chaud ». Ton thermomètre est gradué !",
+      "Fabrique ton thermomètre artisanal :",
+      "Matériel : une petite bouteille, de l'eau colorée, un bouchon percé (ou pâte à modeler), une paille transparente, un feutre, un bol d'eau chaude, un bol d'eau glacée.",
+      "Protocole : 1. Remplis la bouteille d'eau colorée à ras bord et ferme-la avec le bouchon traversé de la paille : le liquide doit monter un peu dans la paille.",
+      "2. Pose la bouteille dans l'eau chaude : marque le niveau au feutre.",
+      "3. Pose-la dans l'eau glacée : marque le nouveau niveau.",
+      "4. Gradue entre les deux marques.",
+      "Observation : le niveau monte nettement dans l'eau chaude (dilatation) et redescend dans l'eau glacée (contraction) : ton tube fin amplifie le mouvement.",
+      "Conclusion : la dilatation des liquides, rendue visible par un tube fin, permet de mesurer la température : tu as construit un véritable thermomètre !",
     ],
   },
   substitutions: [
