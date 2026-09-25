@@ -90,6 +90,7 @@ const S28 = {
         titre: "1. L'énergie se perd en chemin",
         paras: [
           "Toute machine reçoit de l'énergie et n'en transmet qu'une partie utile : le reste se disperse, presque toujours en chaleur. L'énergie n'est pas détruite : elle devient inutilisable.",
+          "On résume la situation par une chaîne : énergie reçue = énergie utile + énergie perdue. Le rapport entre l'utile et le reçu s'appelle le rendement : plus il est proche de 100 %, meilleure est la machine.",
         ],
       },
       {
@@ -103,7 +104,9 @@ const S28 = {
       },
       {
         titre: "3. Les techniques de conservation",
-        paras: [],
+        paras: [
+          "À chaque cause de perte répond une parade : c'est un vrai jeu de détective : identifier la fuite, choisir la technique.",
+        ],
         puces: [
           "isolation thermique : couvercle, thermos, laine, double paroi, foyer amélioré ;",
           "matériaux réfléchissants : parois brillantes qui renvoient le rayonnement ;",
@@ -112,16 +115,26 @@ const S28 = {
           "en électricité : fils de section suffisante, lampes DEL, appareils économes.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Le moteur d'une pompe chauffe et grince. Identifie les deux causes de pertes et propose une solution pour chacune. Solution : le grincement révèle des FROTTEMENTS : lubrifier les axes (huile, graisse) ; l'échauffement du moteur vient surtout de l'EFFET JOULE dans ses bobinages : vérifier que les fils d'alimentation sont de section suffisante et le moteur adapté à la charge.",
+          "Exemple 2 — Une famille utilise un foyer traditionnel « trois pierres » ouvert au vent. Explique pourquoi elle consomme beaucoup de charbon et propose deux améliorations. Solution : la chaleur s'échappe par rayonnement et par le vent (fuites thermiques). Améliorations : foyer amélioré fermé (type kamado ou fatana mitsitsy) qui garde la chaleur autour de la marmite, et couvercle sur la marmite : jusqu'à la moitié du charbon économisé.",
+        ],
+      },
     ],
     saisTu: [
       "Une ampoule à incandescence transforme à peine 5 % de l'électricité en lumière : 95 % partent en chaleur ! La lampe DEL fait dix fois mieux : voilà pourquoi le monde entier a abandonné les vieilles ampoules en une décennie.",
+      "Les foyers améliorés (fatana mitsitsy) diffusés à Madagascar réduisent la consommation de charbon de 30 à 50 % : bon pour le budget des familles… et pour les forêts de la Grande Île !",
     ],
     experience: [
       "Le duel des marmites :",
-      "1. Fais chauffer la même quantité d'eau dans deux casseroles identiques, sur le même feu : l'une couverte, l'autre non.",
-      "2. Chronomètre le temps pour atteindre l'ébullition.",
-      "3. Calcule le temps (donc le combustible) économisé par le couvercle : souvent 25 % ou plus !",
-      "4. Bonus : entoure l'une des casseroles d'un linge épais côté vent et compare encore.",
+      "Matériel : deux casseroles identiques, la même quantité d'eau, le même feu, un couvercle, une montre, un linge épais.",
+      "Protocole : 1. Fais chauffer l'eau dans les deux casseroles sur le même type de feu : l'une couverte, l'autre non.",
+      "2. Chronomètre pour chacune le temps nécessaire pour atteindre l'ébullition.",
+      "3. Bonus : entoure l'une des casseroles d'un linge épais côté vent et recommence.",
+      "Observation : la casserole couverte bout nettement plus vite : souvent 25 % de temps (donc de combustible) en moins ; le linge coupe-vent améliore encore le résultat.",
+      "Conclusion : couvercle et isolation limitent les fuites thermiques : de simples gestes de conservation d'énergie font des économies bien réelles.",
     ],
   },
   substitutions: [
@@ -252,11 +265,14 @@ const S29 = {
         titre: "1. Voir un objet",
         paras: [
           "On ne voit un objet que si de la lumière va de cet objet jusqu'à l'œil : soit il la produit, soit il la renvoie.",
+          "Conséquence surprenante : dans une pièce absolument noire, tu ne vois RIEN, même après des heures : sans lumière qui entre dans l'œil, pas de vision. L'œil ne « lance » pas de rayons, il en reçoit !",
         ],
       },
       {
         titre: "2. Sources primaires et secondaires",
-        paras: [],
+        paras: [
+          "Le test pour les distinguer : « produirait-il de la lumière tout seul dans le noir total ? » Oui → source primaire ; non → source secondaire.",
+        ],
         puces: [
           "source primaire : produit sa lumière : Soleil, étoiles, flammes, lampes, lucioles, éclairs ;",
           "source secondaire : renvoie la lumière reçue : Lune, miroirs, murs, nuages… et tous les objets éclairés.",
@@ -277,16 +293,26 @@ const S29 = {
           "Un récepteur réagit à la lumière reçue : l'œil (vision), la peau (bronzage), le panneau solaire (électricité), la plante (photosynthèse), la pellicule photo.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — La Lune brille fort les soirs de pleine lune. Est-elle une source primaire ? Justifie. Solution : non : la Lune ne produit aucune lumière ; elle renvoie la lumière du Soleil, comme un immense miroir de roche grise. C'est une source secondaire — dans le noir total (sans Soleil), elle serait invisible.",
+          "Exemple 2 — Classe : vitre propre, papier calque, planche de bois, eau boueuse. Solution : vitre : transparente (formes visibles) ; calque : translucide (lumière oui, formes non) ; planche : opaque (ombre) ; eau boueuse : translucide, voire opaque si très chargée : la frontière dépend de l'épaisseur et de la concentration.",
+        ],
+      },
     ],
     saisTu: [
       "La lumière de la Lune met 1,3 seconde à nous parvenir… mais c'est de la lumière solaire qui a d'abord voyagé 8 minutes du Soleil à la Lune ! Et certaines étoiles que tu vois la nuit ont peut-être déjà disparu : leur lumière voyage depuis des milliers d'années.",
+      "Les lucioles et certains poissons des abysses fabriquent leur propre lumière par réaction chimique : la bioluminescence. Ce sont des sources primaires vivantes — et froides : aucune énergie perdue en chaleur !",
     ],
     experience: [
       "Le trieur de lumière :",
-      "1. Le soir, munis-toi d'une torche et d'une caisse d'objets : verre, sachet, tissu, aluminium, bouteille d'eau, carton…",
-      "2. Éclaire chaque objet placé entre la torche et le mur : lis l'ombre sur le mur.",
-      "3. Ombre noire nette → opaque ; lueur diffuse → translucide ; presque pas d'ombre → transparent.",
-      "4. Classe ta caisse en trois tas, puis vérifie avec la leçon.",
+      "Matériel : une torche, un mur clair, une caisse d'objets variés : verre, sachet plastique, tissu, aluminium, bouteille d'eau, carton…",
+      "Protocole : 1. Le soir, éclaire chaque objet placé entre la torche et le mur.",
+      "2. Lis le résultat sur le mur : ombre noire nette, lueur diffuse, ou presque pas d'ombre.",
+      "3. Classe la caisse en trois tas : opaque, translucide, transparent.",
+      "Observation : ombre noire nette → opaque ; lueur diffuse → translucide ; presque pas d'ombre → transparent.",
+      "Conclusion : l'ombre portée est le révélateur du comportement optique d'un objet : chaque matériau traite la lumière à sa façon.",
     ],
   },
   substitutions: [
@@ -414,6 +440,7 @@ const S30 = {
         titre: "1. Le principe",
         paras: [
           "Dans un milieu transparent et homogène (air calme, eau pure, verre, vide), la lumière se propage en ligne droite.",
+          "Chaque mot compte : « transparent » (la lumière passe) et « homogène » (le milieu est partout identique). Au-dessus d'une route surchauffée, l'air n'est plus homogène : la lumière se courbe, et naissent les mirages !",
         ],
       },
       {
@@ -429,18 +456,30 @@ const S30 = {
         titre: "3. Le modèle du rayon lumineux",
         paras: [
           "Le rayon lumineux est une droite fléchée représentant le trajet de la lumière, orientée de la source vers le récepteur. Il se trace toujours à la règle. Un ensemble de rayons forme un faisceau (parallèle, convergent ou divergent).",
+          "Règles du schéma d'optique : trait à la règle, flèche au milieu du rayon, sens de la source vers l'œil. Un schéma soigné, c'est déjà la moitié de la réponse !",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Rakoto tient trois cartons percés et ne voit la bougie que dans une seule position. Explique. Solution : la lumière se propage en ligne droite : l'œil ne reçoit la lumière de la flamme que si les trois trous et la flamme sont exactement alignés. Le moindre décalage bloque le trajet rectiligne.",
+          "Exemple 2 — Pourquoi ne peut-on pas voir ce qui se passe derrière un mur, alors qu'on entend ? Solution : la lumière va en ligne droite et le mur opaque l'arrête : aucun rayon ne contourne l'obstacle. Le son, lui, est une vibration qui contourne les obstacles et se réfléchit : voir exige l'alignement, entendre non.",
         ],
       },
     ],
     saisTu: [
       "La lumière est la championne du monde de vitesse : 300 000 km par seconde ! En une seconde, elle ferait sept fois et demie le tour de la Terre. Rien dans l'Univers ne va plus vite qu'elle : c'est la limite absolue découverte par Einstein.",
+      "Les géomètres et les maçons utilisent la propagation rectiligne tous les jours : viser un piquet, tendre un cordeau, contrôler l'alignement d'un mur… et le rayon laser des topographes n'est qu'un rayon lumineux très concentré !",
     ],
     experience: [
       "Le viseur à trois cartes :",
-      "1. Perce un trou au même endroit dans trois cartes identiques (plie-les en deux, coupe le coin du pli).",
-      "2. Plante-les verticalement dans trois morceaux de savon ou de pâte, espacés de 20 cm.",
-      "3. Aligne les trous pour voir la flamme d'une bougie ; vérifie l'alignement en passant une ficelle tendue.",
-      "4. Décale la carte du milieu d'un centimètre : que se passe-t-il ?",
+      "Matériel : trois cartes identiques, une aiguille, trois supports (savon ou pâte), une bougie, une ficelle.",
+      "Protocole : 1. Perce un trou au même endroit dans les trois cartes (plie-les ensemble, coupe le coin du pli).",
+      "2. Plante-les verticalement sur leurs supports, espacées de 20 cm.",
+      "3. Aligne les trous pour voir la flamme, puis vérifie l'alignement en passant la ficelle tendue par les trois trous.",
+      "4. Décale la carte du milieu d'un centimètre.",
+      "Observation : trous alignés : la flamme est visible ; carte décalée d'un seul centimètre : plus rien.",
+      "Conclusion : la lumière ne contourne pas les obstacles : elle suit une ligne parfaitement droite, matérialisée par la ficelle tendue.",
     ],
   },
   substitutions: [
@@ -564,18 +603,21 @@ const S31 = {
         titre: "1. Les ombres",
         paras: [
           "Un objet opaque éclairé présente : une zone éclairée (face vers la source), une ombre propre (sa face non éclairée), et projette une ombre portée sur l'écran derrière lui. Avec une source étendue apparaît la pénombre, zone partiellement éclairée.",
+          "Les ombres existent PARCE QUE la lumière va en ligne droite : l'objet opaque bloque les rayons, et la zone privée de lumière dessine exactement le contour de l'objet.",
         ],
       },
       {
         titre: "2. La chambre noire",
         paras: [
           "Boîte fermée percée d'un petit trou : les rayons issus de l'objet se croisent dans le trou et forment sur le fond une image renversée : c'est l'ancêtre de l'appareil photo.",
+          "Pourquoi renversée ? Le rayon du haut de l'objet file en ligne droite à travers le trou et atterrit en BAS du fond ; celui du bas atterrit en HAUT : le croisement des rayons retourne l'image.",
         ],
       },
       {
         titre: "3. Les phases de la Lune",
         paras: [
           "La Lune, éclairée à moitié par le Soleil, tourne autour de la Terre en 29,5 jours : nous voyons une portion variable de sa moitié brillante : nouvelle lune, premier croissant, premier quartier, pleine lune, dernier quartier…",
+          "Piège à éviter : les phases ne sont PAS l'ombre de la Terre sur la Lune ! C'est simplement l'angle sous lequel nous voyons la moitié éclairée. L'ombre de la Terre n'intervient que lors des éclipses de Lune.",
         ],
       },
       {
@@ -587,16 +629,27 @@ const S31 = {
           "ATTENTION : ne jamais regarder le Soleil directement, éclipse ou pas !",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Ce soir, la Lune est un fin croissant. Naivo affirme : « C'est l'ombre de la Terre. » A-t-il raison ? Solution : non : le croissant est une PHASE : nous voyons de biais la moitié éclairée de la Lune. Preuve : l'ombre de la Terre est ronde, or le bord sombre du croissant est courbé dans l'autre sens ; et une éclipse de Lune n'a lieu qu'à la pleine lune.",
+          "Exemple 2 — Dans la chambre noire, l'image d'un arbre est renversée et petite. Que faire pour l'agrandir ? Solution : reculer le fond (allonger la boîte) ou rapprocher la chambre de l'arbre : l'image grandit car les rayons s'écartent après le trou. Trace deux rayons à la règle pour t'en convaincre !",
+        ],
+      },
     ],
     saisTu: [
       "Le 21 juin 2001, une éclipse totale de Soleil a traversé le sud de Madagascar : en pleine après-midi, la nuit est tombée quelques minutes près de Toliara, les étoiles sont apparues et la température a chuté ! La prochaine éclipse totale visible depuis la Grande Île se fera attendre : note-le, c'est un spectacle unique… à observer uniquement avec des lunettes spéciales.",
+      "Le calendrier lunaire rythme encore bien des activités à Madagascar : les pêcheurs choisissent leurs nuits selon la lune, et le mois lunaire de 29,5 jours est à l'origine du mot « mois » dans presque toutes les langues du monde.",
     ],
     experience: [
       "Ta chambre noire :",
-      "1. Perce un trou d'aiguille au centre du fond d'une boîte de conserve propre (ou d'une boîte en carton).",
-      "2. Ferme l'autre extrémité avec du papier calque ou un sachet translucide bien tendu.",
-      "3. Sous un tissu sombre sur ta tête, vise une fenêtre très éclairée ou une bougie : l'image apparaît renversée sur le calque !",
-      "4. Agrandis légèrement le trou : l'image devient plus lumineuse… mais plus floue. Explique pourquoi.",
+      "Matériel : une boîte de conserve propre (ou boîte en carton), une aiguille, du papier calque ou un sachet translucide, un élastique, un tissu sombre, une bougie.",
+      "Protocole : 1. Perce un trou d'aiguille au centre du fond de la boîte.",
+      "2. Ferme l'autre extrémité avec le calque bien tendu (élastique).",
+      "3. Sous le tissu sombre, vise une fenêtre très éclairée ou la bougie.",
+      "4. Agrandis légèrement le trou et recompare.",
+      "Observation : l'image apparaît nette et RENVERSÉE sur le calque ; avec un trou plus grand, elle devient plus lumineuse mais floue.",
+      "Conclusion : les rayons rectilignes se croisent dans le trou : petite ouverture = image nette et renversée. Ton œil fonctionne exactement sur ce principe — image renversée comprise, que le cerveau remet à l'endroit !",
     ],
   },
   substitutions: [
@@ -721,6 +774,7 @@ const S32 = {
         titre: "1. Le son et la lumière : des ondes",
         paras: [
           "Une onde est une vibration qui se propage, comme les rides à la surface de l'eau. Le son est la vibration de l'air (ou de l'eau, ou d'un solide) ; la lumière est une onde qui se propage même dans le vide.",
+          "Attention : l'onde transporte de l'énergie, pas de la matière ! Le bouchon posé sur l'eau monte et descend au passage des rides, mais ne voyage pas avec elles.",
         ],
       },
       {
@@ -736,6 +790,7 @@ const S32 = {
         titre: "3. Sons graves, sons aigus",
         paras: [
           "L'oreille humaine entend environ de 20 Hz (très grave) à 20 000 Hz (très aigu). Le gros tambour vibre lentement (grave), la petite corde du valiha vibre vite (aigu).",
+          "Ne confonds pas les deux réglages : fort/faible dépend de l'AMPLITUDE ; grave/aigu dépend de la FRÉQUENCE. On peut jouer une note grave très fort et une note aiguë tout doucement !",
         ],
       },
       {
@@ -744,15 +799,26 @@ const S32 = {
           "Le son exige un milieu matériel et se propage à 340 m/s dans l'air. La lumière traverse le vide à 300 000 km/s. D'où le décalage éclair-tonnerre : 3 secondes d'écart ≈ 1 km de distance.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Pendant l'orage, Vola compte 9 secondes entre l'éclair et le tonnerre. À quelle distance est l'orage ? Solution : la lumière arrive quasi instantanément ; le son parcourt 340 m/s. Distance = 340 × 9 = 3 060 m ≈ 3 km. Règle rapide : 3 secondes ≈ 1 km ✔.",
+          "Exemple 2 — Deux cordes de valiha : l'une vibre à 200 Hz, l'autre à 800 Hz, avec la même force de pincement. Compare les deux sons. Solution : même amplitude : même volume sonore ; fréquences différentes : la corde à 800 Hz donne un son quatre fois plus « rapide », donc nettement plus AIGU ; celle à 200 Hz sonne plus grave.",
+        ],
+      },
     ],
     saisTu: [
       "Les chauves-souris de nos grottes « voient avec les oreilles » : elles émettent des ultrasons jusqu'à 100 000 Hz — cinq fois trop aigus pour ton oreille — et écoutent l'écho pour chasser dans le noir total ! Les baleines à bosse du canal de Sainte-Marie, elles, chantent si grave que leurs chants portent à des dizaines de kilomètres sous l'eau.",
+      "Sur la Lune, sans atmosphère, le silence est absolu : aucun son ne peut s'y propager. Les astronautes d'Apollo communiquaient par radio… c'est-à-dire par ondes de la famille de la lumière, qui, elles, traversent le vide !",
     ],
     experience: [
       "L'orchestre des ondes :",
-      "1. Tends des élastiques d'épaisseurs différentes sur une boîte ouverte : pince-les : le plus fin/tendu donne l'aigu (haute fréquence).",
-      "2. Pose des grains de riz sur un sachet tendu sur un bol ; crie fort au-dessus : les grains dansent (amplitude !).",
-      "3. Dans une bassine, laisse tomber des gouttes régulières : mesure la distance entre deux rides : ta première longueur d'onde !",
+      "Matériel : élastiques d'épaisseurs différentes, une boîte ouverte, un sachet plastique, un bol, des grains de riz, une bassine d'eau.",
+      "Protocole : 1. Tends les élastiques sur la boîte ouverte et pince-les un à un.",
+      "2. Tends le sachet sur le bol, pose quelques grains de riz dessus, puis crie fort au-dessus.",
+      "3. Dans la bassine, laisse tomber des gouttes d'eau régulières et observe les rides.",
+      "Observation : l'élastique fin et tendu sonne aigu (haute fréquence), l'épais sonne grave ; les grains de riz dansent quand tu cries (l'amplitude transporte l'énergie) ; les rides sont régulièrement espacées : c'est la longueur d'onde.",
+      "Conclusion : fréquence, amplitude et longueur d'onde se voient et s'entendent dans trois expériences de cuisine : les ondes sont partout autour de toi.",
     ],
   },
   substitutions: [

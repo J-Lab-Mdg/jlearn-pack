@@ -100,12 +100,15 @@ const S12 = {
         titre: "1. Le courant induit",
         paras: [
           "Quand un aimant se déplace devant une bobine, un courant apparaît dans la bobine sans aucune pile : c'est le courant induit. Il cesse dès que le mouvement s'arrête, et change de sens quand le mouvement s'inverse.",
+          "Trois conditions à retenir : il faut un aimant, une bobine, et surtout un MOUVEMENT relatif entre les deux. Un aimant immobile posé sur la bobine ne produit rien : c'est la variation qui crée le courant.",
+          "L'intensité du courant induit augmente si l'on déplace l'aimant plus vite, si l'aimant est plus puissant, ou si la bobine compte plus de spires.",
         ],
       },
       {
         titre: "2. L'alternateur",
         paras: [
           "Un alternateur est une machine formée d'un aimant tournant (rotor) et de bobines fixes (stator). La rotation régulière de l'aimant produit un courant qui change de sens à chaque demi-tour : un courant alternatif.",
+          "À chaque tour complet du rotor, le courant fait un aller-retour complet : la fréquence du courant produit est directement liée à la vitesse de rotation. Voilà pourquoi les centrales maintiennent une rotation parfaitement régulière.",
         ],
       },
       {
@@ -117,16 +120,27 @@ const S12 = {
           "les alternateurs des centrales hydroélectriques d'Andekaleka ou de Mandraka (des mégawatts !).",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Rasoa approche un aimant d'une bobine reliée à une DEL : la DEL s'allume. Puis elle immobilise l'aimant contre la bobine : la DEL s'éteint. Explique. Solution : le courant induit n'existe que pendant le MOUVEMENT de l'aimant. Aimant immobile = pas de variation = pas de courant, même si l'aimant touche la bobine.",
+          "Exemple 2 — Cite deux moyens d'obtenir une DEL plus lumineuse avec le même montage. Solution : déplacer l'aimant plus rapidement, utiliser un aimant plus puissant (ou une bobine avec davantage de spires) : le courant induit est alors plus intense.",
+        ],
+      },
     ],
     saisTu: [
       "C'est Michael Faraday qui découvrit l'induction en 1831 avec un simple aimant et une bobine. On raconte qu'un ministre lui demanda : « À quoi cela sert-il ? » Faraday répondit : « À quoi sert un nouveau-né ? » Aujourd'hui, plus de 95 % de l'électricité mondiale naît d'alternateurs, les « bébés » de Faraday !",
+      "La dynamo du vélo est un mini-alternateur : c'est la roue qui joue le rôle de moteur. Quand tu pédales plus vite, la lampe brille plus fort… exactement comme dans ton expérience de la bobine !",
     ],
     experience: [
       "Ta mini-centrale à main :",
-      "1. Enroule 50 à 100 tours de fil de cuivre verni autour d'un tube de carton (bobine).",
-      "2. Relie les deux bouts dénudés à une DEL (ou deux DEL tête-bêche).",
-      "3. Fais entrer et sortir rapidement un aimant puissant dans le tube, dans la pénombre : la DEL clignote !",
-      "4. Varie la vitesse : que remarques-tu ?",
+      "Matériel : fil de cuivre verni (2 à 3 m), tube de carton (rouleau de papier), aimant puissant, une ou deux DEL, papier de verre pour dénuder les extrémités.",
+      "Protocole : 1. Enroule 50 à 100 tours de fil autour du tube : c'est ta bobine.",
+      "2. Dénude les deux extrémités du fil et relie-les à la DEL (ou à deux DEL tête-bêche).",
+      "3. Dans la pénombre, fais entrer et sortir rapidement l'aimant dans le tube.",
+      "4. Varie la vitesse du mouvement, puis arrête l'aimant au milieu du tube.",
+      "Observation : la DEL clignote au rythme du mouvement ; plus le geste est rapide, plus l'éclat est vif ; aimant arrêté, plus rien.",
+      "Conclusion : un simple mouvement d'aimant devant une bobine produit un courant électrique : tu viens de reproduire le principe de toutes les centrales du monde.",
     ],
   },
   substitutions: [
@@ -260,6 +274,7 @@ const S13 = {
         titre: "1. La courbe de la tension alternative",
         paras: [
           "La tension alternative varie sans cesse : sa courbe en fonction du temps est une ondulation régulière qui répète toujours le même motif.",
+          "Pour lire la courbe : le motif qui se répète s'appelle une alternance complète ; sa durée est la période. Le sommet de la courbe donne la tension maximale.",
         ],
       },
       {
@@ -273,21 +288,39 @@ const S13 = {
         ],
       },
       {
-        titre: "3. Le courant du secteur",
+        titre: "3. Bien utiliser les formules",
+        paras: [
+          "T et f sont inverses l'une de l'autre : f = 1 ÷ T et T = 1 ÷ f. Si la période est courte, la fréquence est grande : le courant « bat » plus vite.",
+          "Piège à éviter : le voltmètre n'indique PAS la tension maximale, mais la tension efficace, toujours plus petite : Umax ≈ 1,41 × Ueff.",
+        ],
+      },
+      {
+        titre: "4. Le courant du secteur",
         paras: [
           "À Madagascar, le courant distribué par la JIRAMA a pour caractéristiques : Ueff = 220 V ; f = 50 Hz ; donc T = 0,02 s et Umax ≈ 310 V. Le courant du secteur est dangereux : seul l'enseignant le manipule.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une tension alternative a une période T = 0,02 s. Calcule sa fréquence. Formule : f = 1 ÷ T. Calcul : f = 1 ÷ 0,02 = 50 Hz. C'est exactement la fréquence du secteur ! Vérification : T = 1 ÷ 50 = 0,02 s ✔.",
+          "Exemple 2 — Le voltmètre affiche 220 V sur une prise. Quelle est la tension maximale réellement atteinte ? Solution : le voltmètre donne Ueff. Umax ≈ 1,41 × Ueff = 1,41 × 220 ≈ 310 V. La tension du secteur « monte » donc jusqu'à 310 V à chaque alternance : raison de plus d'être prudent.",
         ],
       },
     ],
     saisTu: [
       "50 hertz signifie que le courant du secteur change de sens 100 fois par seconde (deux fois par période) ! C'est bien trop rapide pour l'œil : les lampes semblent briller en continu. En Amérique, la fréquence est de 60 Hz : les appareils voyagent moins facilement que les hommes.",
+      "Le cœur humain bat environ 70 fois par minute, soit une fréquence d'à peine 1,2 Hz : le courant de la JIRAMA « bat » plus de 40 fois plus vite que ton cœur !",
     ],
     experience: [
       "La période à l'oreille :",
-      "1. Attache un petit poids à une ficelle de 25 cm : tu obtiens un pendule.",
-      "2. Lance-le et compte le nombre d'allers-retours en 10 secondes (environ 10).",
-      "3. Calcule sa période T = 10 s ÷ nombre d'oscillations ≈ 1 s, puis sa fréquence f = 1 ÷ T ≈ 1 Hz.",
-      "4. Raccourcis la ficelle : la fréquence augmente ! Le secteur, lui, « oscille » 50 fois par seconde.",
+      "Matériel : une ficelle de 25 cm, un petit poids (écrou, caillou), une montre ou un téléphone pour chronométrer.",
+      "Protocole : 1. Attache le poids à la ficelle : tu obtiens un pendule.",
+      "2. Lance-le doucement et compte le nombre d'allers-retours complets en 10 secondes (environ 10).",
+      "3. Calcule la période T = 10 s ÷ nombre d'oscillations, puis la fréquence f = 1 ÷ T.",
+      "4. Raccourcis la ficelle de moitié et recommence.",
+      "Observation : ficelle de 25 cm : T ≈ 1 s, f ≈ 1 Hz ; ficelle raccourcie : les oscillations sont plus rapides, f augmente.",
+      "Conclusion : période et fréquence varient en sens inverse : f = 1 ÷ T. Le secteur, lui, « oscille » 50 fois par seconde : aucun pendule ne peut suivre !",
     ],
   },
   substitutions: [
@@ -415,33 +448,46 @@ const S14 = {
         titre: "1. La constitution du transformateur",
         paras: [
           "Un transformateur comprend deux bobines électriquement séparées, enroulées sur un même noyau de fer : le primaire (entrée) et le secondaire (sortie).",
+          "Point important : aucun fil ne relie le primaire au secondaire ! L'énergie passe de l'un à l'autre uniquement grâce au champ magnétique du noyau de fer.",
         ],
       },
       {
         titre: "2. Le principe",
         paras: [
           "Le courant alternatif du primaire crée dans le noyau un champ magnétique variable ; ce champ variable induit une tension alternative dans le secondaire. Sans variation — donc en courant continu — le transformateur ne fonctionne pas.",
+          "C'est exactement le phénomène d'induction de la séance 12 : le champ variable du noyau joue le rôle de l'aimant en mouvement, et le secondaire celui de la bobine.",
         ],
       },
       {
         titre: "3. Élever ou abaisser",
         paras: [
-          "La tension de sortie dépend du rapport des nombres de spires :",
+          "La tension de sortie dépend du rapport des nombres de spires : la tension est multipliée par le même rapport que les spires.",
         ],
         puces: [
           "secondaire avec MOINS de spires → transformateur abaisseur (chargeurs, adaptateurs : 220 V → 12 V, 5 V…) ;",
           "secondaire avec PLUS de spires → transformateur élévateur (sortie des centrales : vers les hautes tensions).",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un transformateur a un primaire de 1 000 spires sous 220 V et un secondaire de 50 spires. Est-il élévateur ou abaisseur ? Estime la tension de sortie. Solution : 50 spires < 1 000 spires : abaisseur. Le rapport des spires vaut 50 ÷ 1 000 = 1/20 : la tension de sortie vaut environ 220 ÷ 20 = 11 V : c'est un transformateur de chargeur.",
+          "Exemple 2 — Peut-on alimenter un transformateur avec une batterie de voiture (12 V continu) ? Justifie. Solution : non ! Le courant continu crée un champ magnétique constant : sans variation, aucune tension n'est induite au secondaire. Le transformateur ne fonctionne qu'en alternatif.",
+        ],
+      },
     ],
     saisTu: [
       "La « guerre des courants » opposa Edison (continu) à Tesla et Westinghouse (alternatif) vers 1890. L'alternatif gagna grâce au transformateur : lui seul permettait d'élever la tension pour transporter l'électricité au loin, puis de l'abaisser pour la maison. Tout le réseau de la JIRAMA repose encore sur ce principe !",
+      "Le léger bourdonnement que tu entends près d'un gros transformateur, c'est le noyau de fer qui vibre 100 fois par seconde sous l'effet du champ magnétique : le « chant » du 50 Hz !",
     ],
     experience: [
       "Chasse aux transformateurs :",
-      "1. Fais l'inventaire des « boîtes noires » de la maison : chargeurs de téléphone, adaptateur de radio, lampe de bureau…",
-      "2. Lis leurs plaques : tension d'entrée (220 V ~) et de sortie (5 V, 9 V, 12 V…).",
-      "3. Conclus : tous ces transformateurs sont-ils élévateurs ou abaisseurs ? Pourquoi chauffent-ils un peu ?",
+      "Matériel : les chargeurs et adaptateurs de la maison, papier et crayon.",
+      "Protocole : 1. Fais l'inventaire des « boîtes noires » : chargeurs de téléphone, adaptateur de radio, lampe de bureau…",
+      "2. Lis leur plaque signalétique : tension d'entrée (INPUT : 220-240 V ~) et de sortie (OUTPUT : 5 V, 9 V, 12 V…).",
+      "3. Note pour chacun le rapport d'abaissement (par exemple 220 ÷ 5 = 44 pour un chargeur de téléphone).",
+      "Observation : tous les appareils domestiques abaissent la tension : les rapports vont de 10 à 50 environ ; les boîtiers tièdes témoignent de petites pertes d'énergie.",
+      "Conclusion : la maison est peuplée de transformateurs abaisseurs : chaque appareil électronique reçoit la tension réduite qui lui convient, à partir du même 220 V.",
     ],
   },
   substitutions: [
@@ -565,18 +611,21 @@ const S15 = {
         titre: "1. De la centrale à la maison",
         paras: [
           "Le courant alternatif est produit par les alternateurs des centrales (hydroélectriques comme Andekaleka, thermiques, solaires). Un transformateur élévateur monte la tension (63 000 V et plus), les lignes sur pylônes transportent l'énergie, puis des postes de transformation l'abaissent par étapes jusqu'au 220 V domestique.",
+          "Retiens la chaîne complète : centrale → transformateur élévateur → lignes haute tension → poste de transformation → 220 V à la maison. Chaque maillon a son rôle, et les transformateurs sont les « écluses » de la tension.",
         ],
       },
       {
         titre: "2. Pourquoi la haute tension ?",
         paras: [
           "Dans un câble, le courant produit de la chaleur (effet Joule) : de l'énergie perdue. En élevant la tension, on réduit l'intensité nécessaire, donc les pertes. C'est tout l'intérêt du transport sous haute tension.",
+          "Raisonnement à connaître : pour transporter la même puissance, si la tension est 100 fois plus grande, l'intensité est 100 fois plus petite… et les pertes par effet Joule sont considérablement réduites. Moins de chaleur perdue = plus d'énergie livrée.",
         ],
       },
       {
         titre: "3. Les risques électriques",
         paras: [
           "Le courant qui traverse le corps provoque brûlures, contractions musculaires, voire arrêt du cœur. Le danger augmente avec la tension et avec l'humidité de la peau.",
+          "Deux situations de danger : l'électrisation (le courant traverse le corps et blesse) et l'électrocution (le courant tue). Même le 220 V domestique peut être mortel, surtout les mains mouillées.",
         ],
       },
       {
@@ -590,15 +639,26 @@ const S15 = {
           "rester loin des pylônes, transformateurs et câbles tombés à terre.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Pourquoi la JIRAMA transporte-t-elle le courant sous 138 000 V plutôt que sous 220 V directement ? Réponse rédigée : sous haute tension, la même puissance se transporte avec une intensité beaucoup plus faible ; or les pertes par effet Joule dans les câbles dépendent de l'intensité. Haute tension = faible intensité = faibles pertes : on livre plus d'énergie à l'arrivée.",
+          "Exemple 2 — Après l'orage, un câble électrique pend jusqu'au sol dans la rue. Que faire ? Solution : ne JAMAIS s'approcher ni toucher, même avec un bâton ; éloigner les passants et prévenir immédiatement un adulte et la JIRAMA. Le sol humide peut conduire le courant à plusieurs mètres du câble.",
+        ],
+      },
     ],
     saisTu: [
       "La ligne d'Andekaleka à Antananarivo transporte l'électricité sous 138 000 volts, soit plus de 600 fois la tension de tes prises ! Sans cette haute tension, une grande partie de l'énergie de la rivière Vohitra se perdrait en chaleur dans les 140 kilomètres de câbles.",
+      "Les oiseaux posés sur un câble haute tension ne sont pas électrocutés : leurs deux pattes touchent le MÊME fil, le courant n'a aucune raison de traverser leur corps. Mais qu'une aile touche un second fil… et tout change !",
     ],
     experience: [
       "La maquette du réseau (sans électricité !) :",
-      "1. Sur un grand carton, dessine et découpe : la centrale, deux transformateurs, des pylônes en allumettes, une maison.",
-      "2. Relie-les avec de la ficelle : ficelle épaisse pour la haute tension, fine pour le 220 V.",
-      "3. Colle des étiquettes de tension à chaque étape et présente ta maquette à la classe.",
+      "Matériel : un grand carton, allumettes, ficelle épaisse et ficelle fine, colle, feutres, étiquettes.",
+      "Protocole : 1. Dessine et découpe : la centrale, deux transformateurs, des pylônes en allumettes, une maison.",
+      "2. Relie centrale → transformateur élévateur → pylônes avec la ficelle épaisse (haute tension), puis poste abaisseur → maison avec la ficelle fine (220 V).",
+      "3. Colle une étiquette de tension à chaque étape : 5 000 V (alternateur), 138 000 V (ligne), 20 000 V (poste), 220 V (maison).",
+      "Observation : la tension monte puis descend par paliers le long du réseau ; la plus grande partie du trajet se fait en haute tension.",
+      "Conclusion : le réseau électrique est une chaîne de transformations de tension : élever pour transporter sans pertes, abaisser pour utiliser sans danger.",
     ],
   },
   substitutions: [
@@ -726,12 +786,14 @@ const S16 = {
         titre: "1. La diode",
         paras: [
           "La diode est un composant qui ne laisse passer le courant que dans un sens, appelé sens passant. Son symbole est un triangle (sens passant) pointant vers une barre. La DEL (diode électroluminescente) est une diode qui s'éclaire quand elle conduit.",
+          "Analogie : la diode est une porte à sens unique, comme un clapet de pompe à vélo : l'air passe dans un sens, jamais dans l'autre.",
         ],
       },
       {
         titre: "2. Le redressement",
         paras: [
           "Une diode placée dans un circuit alternatif bloque les alternances négatives : le courant obtenu circule toujours dans le même sens, mais par à-coups. Le pont de 4 diodes redresse aussi les alternances négatives : le courant sort continu (ondulé), puis un condensateur le lisse.",
+          "Vocabulaire à retenir : redressement simple (une diode : on perd une alternance sur deux) ; redressement double (pont de 4 diodes : toutes les alternances sont récupérées) ; lissage (le condensateur comble les creux, comme un réservoir d'eau régularise un débit).",
         ],
       },
       {
@@ -745,16 +807,26 @@ const S16 = {
           "le condensateur : lissage → courant continu utilisable par la batterie.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une DEL branchée sur une pile brille ; on retourne la DEL, elle s'éteint. Explique. Solution : la DEL est une diode : elle ne conduit que dans le sens passant. Retournée, elle est en sens bloquant : aucun courant ne circule, donc pas de lumière.",
+          "Exemple 2 — Remets dans l'ordre les étages d'un chargeur de téléphone : condensateur, transformateur, pont de diodes. Solution : 1) transformateur (abaisse le 220 V), 2) pont de diodes (redresse l'alternatif), 3) condensateur (lisse le courant). Moyen mnémotechnique : « Toujours Plus Confortable » : T, P, C !",
+        ],
+      },
     ],
     saisTu: [
       "Les premiers « redresseurs » de la radio, vers 1910, étaient des cristaux de galène qu'on grattait avec une pointe métallique pour trouver le « bon point » ! Aujourd'hui, une diode moderne tient dans un grain de riz, et ton chargeur en contient au moins quatre.",
+      "Les lampadaires solaires des villages fonctionnent grâce à une diode discrète mais essentielle : la nuit, elle empêche la batterie de se vider dans le panneau solaire. Sans elle, tout se déchargerait avant l'aube !",
     ],
     experience: [
       "La porte à sens unique :",
-      "1. Récupère une DEL (guirlande usée, jouet cassé), une pile plate 4,5 V et une résistance ou une petite ampoule de protection.",
-      "2. Branche DEL + résistance sur la pile : elle brille (patte longue vers le +).",
-      "3. Retourne la DEL : plus de lumière : tu viens de vérifier le sens passant !",
-      "4. Attention : jamais de DEL directement sur la pile sans résistance, elle grillerait.",
+      "Matériel : une DEL (guirlande usée, jouet cassé), une pile plate 4,5 V, une résistance de protection (ou une petite ampoule), des fils.",
+      "Protocole : 1. Branche en série : pile, résistance, DEL (patte longue vers le +).",
+      "2. Observe la DEL, puis retourne-la dans le circuit.",
+      "3. Attention : jamais de DEL directement sur la pile sans résistance, elle grillerait.",
+      "Observation : dans un sens, la DEL brille ; dans l'autre, plus rien : le courant ne passe plus.",
+      "Conclusion : la diode ne conduit que dans son sens passant : c'est cette propriété qui permet de redresser le courant alternatif en courant continu.",
     ],
   },
   substitutions: [
@@ -884,12 +956,14 @@ const S17 = {
         titre: "1. Le courant continu (CC)",
         paras: [
           "Sources : piles, batteries, panneaux solaires. Le courant circule dans un seul sens et la tension garde une valeur constante. Il se stocke dans les batteries et alimente toute l'électronique.",
+          "Sur les appareils, il se repère aux symboles ⎓, CC ou DC (direct current) : téléphone, radio à piles, lampe torche fonctionnent en continu.",
         ],
       },
       {
         titre: "2. Le courant alternatif (CA)",
         paras: [
           "Sources : alternateurs (dynamos, groupes, centrales), prises du secteur (220 V, 50 Hz). Le courant change régulièrement de sens. Grâce au transformateur, il s'élève ou s'abaisse à volonté : idéal pour le transport sur longue distance.",
+          "Il se repère aux symboles ~, CA ou AC (alternating current) : fer à repasser, réfrigérateur, ampoules du plafond fonctionnent directement sur le secteur.",
         ],
       },
       {
@@ -907,17 +981,29 @@ const S17 = {
         titre: "4. Complémentaires, pas ennemis",
         paras: [
           "Le réseau distribue de l'alternatif ; chaque chargeur le redresse en continu pour les batteries. Les deux courants travaillent ensemble au quotidien.",
+          "Exemple complet du téléphone : alternateur de la centrale (CA) → réseau JIRAMA (CA) → chargeur : transformateur + pont de diodes + condensateur (CA → CC) → batterie (CC) → écran et circuits (CC). Toute la chaîne des séances 12 à 16 en un seul geste !",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un panneau solaire produit du courant continu. Peut-on brancher directement un village au panneau via un transformateur pour élever la tension ? Solution : non : le transformateur ne fonctionne qu'avec un courant VARIABLE (alternatif). Il faut d'abord convertir le continu en alternatif (avec un onduleur), puis transformer.",
+          "Exemple 2 — Classe ces appareils selon leur courant d'usage : lampe torche, réfrigérateur, téléphone en charge, fer à repasser. Solution : lampe torche : CC (piles) ; réfrigérateur et fer : CA (secteur) ; téléphone en charge : LES DEUX : il reçoit du CA à la prise, transformé en CC par le chargeur pour la batterie.",
         ],
       },
     ],
     saisTu: [
       "Les grandes lignes solaires du futur ? Certains pays utilisent désormais du courant continu à très haute tension (CCHT) pour les distances extrêmes, comme 3 000 km en Chine ! La « guerre des courants » n'est donc pas tout à fait finie… mais pour nos maisons, l'alternatif règne toujours.",
+      "À Madagascar, de plus en plus de foyers ruraux s'éclairent grâce aux kits solaires : panneau (CC), batterie (CC), lampes DEL (CC)… un réseau domestique entièrement en courant continu, sans une seule prise alternative !",
     ],
     experience: [
       "L'enquête des étiquettes :",
-      "1. Relève les inscriptions de cinq appareils : lampe torche, téléphone + chargeur, radio, fer à repasser…",
+      "Matériel : cinq appareils de la maison (lampe torche, téléphone + chargeur, radio, fer à repasser…), papier et crayon.",
+      "Protocole : 1. Relève les inscriptions de chaque appareil et de son éventuel chargeur.",
       "2. Repère les symboles : ⎓ ou CC/DC (continu), ~ ou CA/AC (alternatif).",
-      "3. Classe les appareils en deux colonnes et repère ceux qui utilisent LES DEUX (les appareils à chargeur !).",
+      "3. Classe les appareils en deux colonnes CC / CA, et note à part ceux qui utilisent les deux.",
+      "Observation : les appareils à piles ou batterie sont en CC ; les gros appareils de chauffage et de froid en CA ; tous les appareils à chargeur utilisent les deux.",
+      "Conclusion : continu et alternatif se partagent la maison selon leurs points forts : stockage et électronique pour le CC, distribution et puissance pour le CA.",
     ],
   },
   substitutions: [

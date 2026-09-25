@@ -94,12 +94,14 @@ const S20 = {
         titre: "1. Le mouvement rectiligne uniforme",
         paras: [
           "Un mobile est en mouvement rectiligne uniforme (MRU) quand il suit une ligne droite en parcourant des distances égales pendant des durées égales : sa vitesse est constante.",
+          "Deux conditions à vérifier, jamais une seule : la trajectoire doit être DROITE (rectiligne) et l'allure CONSTANTE (uniforme). Un taxi-brousse qui roule droit mais freine n'est pas en MRU ; un manège qui tourne à allure constante non plus.",
         ],
       },
       {
         titre: "2. La vitesse",
         paras: [
           "La vitesse mesure la distance parcourue par unité de temps : v = d ÷ t.",
+          "Méthode de conversion : pour passer des km/h aux m/s, on divise par 3,6 ; pour passer des m/s aux km/h, on multiplie par 3,6. Exemple : 72 km/h = 72 ÷ 3,6 = 20 m/s.",
         ],
         puces: [
           "v en mètres par seconde (m/s), d en mètres, t en secondes ;",
@@ -111,6 +113,8 @@ const S20 = {
         titre: "3. Les trois formules sœurs",
         paras: [
           "v = d ÷ t ; d = v × t ; t = d ÷ v. L'analyse dimensionnelle (mètres, secondes) permet de vérifier qu'on ne s'est pas trompé de formule.",
+          "Astuce du triangle : place d en haut, v et t en bas. Cache la grandeur cherchée et la formule apparaît : d = v × t ; v = d ÷ t ; t = d ÷ v.",
+          "Piège à éviter : les unités doivent être cohérentes AVANT de calculer : des mètres avec des secondes, ou des kilomètres avec des heures — jamais un mélange !",
         ],
       },
       {
@@ -119,16 +123,27 @@ const S20 = {
           "Le sens du déplacement va du point de départ vers le point d'arrivée : en inversant départ et arrivée, on inverse le sens, mais la valeur de la vitesse reste la même.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un cycliste parcourt 3 600 m en 10 minutes à allure constante. Calcule sa vitesse en m/s puis en km/h. Données : d = 3 600 m ; t = 10 min = 600 s. Formule : v = d ÷ t. Calcul : v = 3 600 ÷ 600 = 6 m/s. Conversion : 6 × 3,6 = 21,6 km/h.",
+          "Exemple 2 — Un taxi-brousse roule à 90 km/h. Quelle distance parcourt-il en 2 h 30 ? Données : v = 90 km/h ; t = 2,5 h. Formule : d = v × t. Calcul : d = 90 × 2,5 = 225 km. Vérification : 225 ÷ 2,5 = 90 km/h ✔.",
+        ],
+      },
     ],
     saisTu: [
       "Le guépard atteint 30 m/s (108 km/h), mais seulement sur 400 mètres ! Sur un marathon, l'homme le battrait. Quant à l'escargot, ses 0,001 m/s le classent parmi les mobiles les plus lents… mais son mouvement peut être parfaitement uniforme !",
+      "La lumière parcourt 300 000 km chaque seconde : elle pourrait faire sept fois et demie le tour de la Terre le temps de dire « un » ! À côté, l'avion le plus rapide semble immobile.",
     ],
     experience: [
       "Ta vitesse de marche :",
-      "1. Mesure 20 mètres dans la cour (20 grands pas d'un adulte ≈ 15 m : utilise plutôt un mètre ou une corde étalonnée).",
-      "2. Marche normalement en comptant les secondes (« mille-un, mille-deux… »).",
-      "3. Calcule v = 20 ÷ t. Environ 1,4 m/s ? C'est la vitesse de marche humaine : 5 km/h !",
-      "4. Recommence en marchant vite, puis en courant : compare.",
+      "Matériel : un mètre ou une corde étalonnée, une montre (ou compter « mille-un, mille-deux… »), de la craie.",
+      "Protocole : 1. Mesure et marque 20 mètres bien droits dans la cour.",
+      "2. Marche normalement d'un bout à l'autre en comptant les secondes.",
+      "3. Calcule v = 20 ÷ t.",
+      "4. Recommence en marchant vite, puis en courant, et convertis chaque résultat en km/h.",
+      "Observation : marche normale : environ 14 s, soit v ≈ 1,4 m/s (5 km/h) ; course : environ 4 à 5 m/s (15 à 18 km/h).",
+      "Conclusion : la formule v = d ÷ t s'applique à ton propre corps : tu connais désormais tes vitesses de référence, très utiles pour estimer les résultats des problèmes.",
     ],
   },
   substitutions: [
@@ -256,6 +271,7 @@ const S21 = {
         titre: "1. Le graphique distance-temps",
         paras: [
           "Pour un MRU, la courbe de la distance parcourue en fonction du temps est une droite passant par l'origine : d est proportionnelle à t (d = v × t). La pente de la droite représente la vitesse.",
+          "Lire un graphique, c'est répondre à deux questions : où est le mobile à un instant donné (lecture verticale) et quand passe-t-il à une distance donnée (lecture horizontale) ?",
         ],
         puces: [
           "droite raide → grande vitesse ;",
@@ -278,18 +294,29 @@ const S21 = {
         titre: "3. Problèmes types",
         paras: [
           "Trouver une durée de trajet, comparer deux mobiles, calculer une heure d'arrivée, résoudre une poursuite : tous se ramènent aux trois formules et, souvent, un graphique rend la solution visible d'un coup d'œil.",
+          "Pour une rencontre entre deux mobiles : trace les deux droites sur le même graphique ; le point de croisement donne à la fois l'instant et le lieu de la rencontre.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Sur un graphique, la droite d'un piéton passe par le point (10 s ; 15 m). Calcule sa vitesse et la distance parcourue en 60 s. Solution : v = pente = 15 ÷ 10 = 1,5 m/s. Puis d = v × t = 1,5 × 60 = 90 m. La droite passe donc aussi par (60 s ; 90 m).",
+          "Exemple 2 — Un car quitte Antsirabe à 8 h vers Tana (170 km) à 60 km/h de moyenne. À quelle heure arrive-t-il ? Étapes : données (d = 170 km, v = 60 km/h) ; formule t = d ÷ v ; calcul t = 170 ÷ 60 ≈ 2,83 h ≈ 2 h 50 min ; arrivée vers 10 h 50. Vraisemblance : oui, c'est l'ordre de grandeur du trajet réel ✔.",
         ],
       },
     ],
     saisTu: [
       "Les contrôleurs aériens et les capitaines de cargos utilisent exactement tes formules v, d, t pour croiser les routes de dizaines d'avions ou de navires — souvent d'abord sur un graphique, comme toi ! La sécurité du canal du Mozambique en dépend chaque jour.",
+      "Sur les graphiques des sismologues, la pente joue aussi : les ondes des séismes vont si vite (plusieurs km/s) que quelques minutes de courbe suffisent pour localiser un tremblement de terre à l'autre bout du monde.",
     ],
     experience: [
       "La course graphique :",
-      "1. Dans la cour, marque une piste de 20 m avec un repère tous les 5 m.",
-      "2. Un camarade marche à allure régulière : note son temps de passage à chaque repère.",
-      "3. Trace le graphique distance-temps : est-ce une droite ? Calcule sa vitesse par la pente.",
-      "4. Recommence avec un coureur et superpose les deux droites : compare les pentes !",
+      "Matériel : une piste de 20 m avec un repère tous les 5 m (craie), une montre, papier quadrillé.",
+      "Protocole : 1. Un camarade marche à allure régulière : note son temps de passage à chaque repère (0, 5, 10, 15, 20 m).",
+      "2. Trace le graphique distance-temps avec ces cinq points.",
+      "3. Recommence avec un coureur et superpose les deux tracés.",
+      "Observation : les points de chaque mobile s'alignent sur une droite passant par l'origine ; la droite du coureur est nettement plus raide.",
+      "Conclusion : allure régulière = droite = MRU ; la pente de la droite mesure la vitesse : plus c'est raide, plus c'est rapide.",
     ],
   },
   substitutions: [
@@ -423,11 +450,14 @@ const S22 = {
         titre: "1. La Terre attire les corps",
         paras: [
           "Tout objet lâché tombe verticalement vers le sol : la Terre exerce sur lui une force d'attraction. Cette force est le poids du corps, noté P.",
+          "Cette attraction s'exerce en permanence, même sur les objets immobiles : le livre posé sur la table est attiré vers le bas ; c'est la table qui l'empêche de tomber.",
         ],
       },
       {
         titre: "2. Les caractéristiques du poids",
-        paras: [],
+        paras: [
+          "Comme toute force, le poids est défini par quatre caractéristiques :",
+        ],
         puces: [
           "direction : la verticale ;",
           "sens : vers le bas (vers le centre de la Terre) ;",
@@ -439,18 +469,30 @@ const S22 = {
         titre: "3. Poids ou masse ? Ne plus confondre !",
         paras: [
           "La masse (en kg, à la balance) mesure la quantité de matière : elle ne change pas si l'on change de lieu. Le poids (en N, au dynamomètre) mesure la force d'attraction : il changerait sur la Lune !",
+          "Attention au langage courant : quand le marchand « pèse un kilo de riz », il mesure en réalité une masse. En sciences, le poids est toujours une force, toujours en newtons.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Complète : la masse d'un pain de savon se mesure avec ……… en ……… ; son poids se mesure avec ……… en ……… Solution : avec une balance, en kilogrammes (ou grammes) ; avec un dynamomètre, en newtons. Deux grandeurs, deux instruments, deux unités.",
+          "Exemple 2 — Un astronaute emporte un sac de 10 kg sur la Lune. Sa masse et son poids changent-ils ? Solution : la masse reste 10 kg (même quantité de matière) ; le poids diminue (la Lune attire six fois moins que la Terre). La masse est invariable, le poids dépend du lieu.",
         ],
       },
     ],
     saisTu: [
       "Sur la Lune, ta masse resterait la même, mais ton poids serait divisé par six ! Les astronautes d'Apollo faisaient des bonds de trois mètres sans effort. Et dans la Station spatiale, en chute libre permanente, les objets « flottent » : on parle d'impesanteur.",
+      "Le mot « dynamomètre » vient du grec dunamis, la force — la même racine que « dynamite » et « dynamo » ! Tous trois parlent de puissance et de force.",
     ],
     experience: [
       "Fabrique ton dynamomètre :",
-      "1. Suspends un élastique solide à un clou, avec un crochet en fil de fer en bas.",
-      "2. Accroche un sachet contenant 100 g de riz : marque l'allongement sur un carton derrière. Puis 200 g, 300 g…",
-      "3. Ta graduation est prête : chaque marque correspond à environ 1 N, 2 N, 3 N.",
-      "4. Mesure le poids d'objets divers et compare avec tes camarades.",
+      "Matériel : un élastique solide, un clou, du fil de fer (crochet), un carton, des sachets de riz de 100, 200 et 300 g.",
+      "Protocole : 1. Suspends l'élastique au clou, avec le crochet en fil de fer en bas et le carton fixé derrière.",
+      "2. Accroche le sachet de 100 g et marque l'allongement sur le carton : c'est la graduation « 1 N ».",
+      "3. Recommence avec 200 g (2 N) puis 300 g (3 N).",
+      "4. Mesure le poids d'objets divers (trousse, cahier) et compare avec tes camarades.",
+      "Observation : les graduations sont régulièrement espacées : l'allongement de l'élastique est proportionnel au poids accroché.",
+      "Conclusion : tu as fabriqué un vrai dynamomètre : un ressort (ou élastique) étalonné dont l'allongement mesure une force en newtons.",
     ],
   },
   substitutions: [
@@ -578,12 +620,14 @@ const S23 = {
         titre: "1. L'expérience décisive",
         paras: [
           "En mesurant le poids de masses croissantes, on constate : 100 g → 1 N ; 500 g → 5 N ; 1 kg → 10 N. Le graphique de P en fonction de m est une droite passant par l'origine : poids et masse sont proportionnels.",
+          "Proportionnalité signifie : masse double, poids double ; masse triple, poids triple. Le rapport P ÷ m est constant : c'est lui qu'on appelle g.",
         ],
       },
       {
         titre: "2. La relation P = m × g",
         paras: [
           "P = m × g, avec P en newtons (N), m en kilogrammes (kg) et g l'intensité de la pesanteur : g ≈ 10 N/kg sur Terre (9,8 N/kg précisément). g est la pente de la droite.",
+          "Piège d'unités : la masse doit être en KILOGRAMMES ! Pour 500 g, on écrit m = 0,5 kg avant de calculer : P = 0,5 × 10 = 5 N.",
         ],
         puces: [
           "m = P ÷ g pour retrouver la masse ;",
@@ -596,16 +640,26 @@ const S23 = {
           "g dépend du lieu : 9,8 N/kg sur Terre, 1,6 N/kg sur la Lune, 3,7 N/kg sur Mars. En voyageant, un corps garde sa masse mais change de poids !",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Calcule le poids d'un sac de riz de 25 kg sur Terre (g = 10 N/kg). Formule : P = m × g. Calcul : P = 25 × 10 = 250 N. Vérification des unités : kg × N/kg = N ✔.",
+          "Exemple 2 — Le poids d'un colis est 36 N sur Terre. Quelle est sa masse ? Quel serait son poids sur la Lune (g = 1,6 N/kg) ? Étape 1 : m = P ÷ g = 36 ÷ 10 = 3,6 kg. Étape 2 : P(Lune) = 3,6 × 1,6 = 5,76 N. La masse n'a pas changé, le poids est six fois plus faible.",
+        ],
+      },
     ],
     saisTu: [
       "La légende raconte que Newton comprit la gravitation en voyant tomber une pomme dans son jardin, en 1666. Il montra que la force qui fait tomber la pomme est la même qui retient la Lune autour de la Terre ! L'unité de force porte son nom : le newton.",
+      "g n'est pas exactement le même partout sur Terre : 9,78 N/kg à l'équateur, 9,83 N/kg aux pôles. À Madagascar, proche de l'équateur, tu « pèses » un tout petit peu moins qu'un Norvégien de même masse !",
     ],
     experience: [
       "Vérifie P = m × g :",
-      "1. Reprends ton dynamomètre à élastique étalonné (séance précédente).",
-      "2. Mesure le poids de sachets de 100, 200, 300 et 500 g.",
-      "3. Trace P en fonction de m sur papier quadrillé : obtiens-tu une droite ?",
-      "4. Calcule la pente P ÷ m pour chaque point : retrouve-tu environ 10 N/kg ?",
+      "Matériel : ton dynamomètre à élastique étalonné (séance précédente), des sachets de riz de 100, 200, 300 et 500 g, papier quadrillé.",
+      "Protocole : 1. Mesure le poids de chaque sachet et note les couples (m ; P) dans un tableau.",
+      "2. Trace le graphique de P (vertical) en fonction de m (horizontal).",
+      "3. Calcule le rapport P ÷ m pour chaque point.",
+      "Observation : les points s'alignent sur une droite passant par l'origine ; le rapport P ÷ m vaut environ 10 N/kg pour tous les points.",
+      "Conclusion : le poids est proportionnel à la masse et le coefficient de proportionnalité est g ≈ 10 N/kg : tu viens de vérifier expérimentalement P = m × g.",
     ],
   },
   substitutions: [
@@ -733,6 +787,7 @@ const S24 = {
         titre: "1. Une force qui pousse vers le haut",
         paras: [
           "Tout corps plongé dans un liquide reçoit de sa part une force verticale, dirigée vers le haut : la poussée d'Archimède PA. C'est elle qui « allège » les corps immergés : poids apparent = poids réel − PA.",
+          "Tu l'as déjà sentie : un seau d'eau paraît léger tant qu'il est dans le puits, et bien plus lourd dès qu'il sort de l'eau. Sous l'eau, la poussée t'aidait !",
         ],
       },
       {
@@ -740,6 +795,7 @@ const S24 = {
         paras: [
           "L'intensité de la poussée est égale au poids du liquide déplacé par le corps :",
           "PA = ρ liquide × V immergé × g",
+          "Retiens bien : la poussée ne dépend NI de la matière du corps NI de sa profondeur — seulement du volume immergé et du liquide. Une bille d'acier et une bille de bois de même volume reçoivent la même poussée !",
         ],
         puces: [
           "ρ liquide : masse volumique du liquide (1 kg/L pour l'eau) ;",
@@ -753,16 +809,27 @@ const S24 = {
           "Au dynamomètre : PA = poids dans l'air − poids apparent dans l'eau. Au récipient gradué : la montée du niveau donne le volume déplacé, donc le poids d'eau correspondant. Les deux méthodes donnent le même résultat !",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une pierre pèse 8 N dans l'air et 5 N une fois immergée. Calcule la poussée d'Archimède, puis le volume de la pierre. Étape 1 : PA = 8 − 5 = 3 N. Étape 2 : PA = ρ × V × g donne V = PA ÷ (ρ × g) = 3 ÷ (1 000 × 10) = 0,0003 m³ = 0,3 L. La pierre déplace 0,3 L d'eau.",
+          "Exemple 2 — Un cube de 0,2 L est entièrement immergé dans l'eau. Quelle poussée reçoit-il ? Cela change-t-il s'il est en bois ou en fer ? Solution : PA = ρ × V × g = 1 000 × 0,0002 × 10 = 2 N. La poussée est identique pour le bois et le fer : seul compte le volume immergé. (C'est le POIDS qui diffère, d'où des comportements différents !)",
+        ],
+      },
     ],
     saisTu: [
       "« Eurêka ! » (« J'ai trouvé ! ») : c'est en prenant son bain qu'Archimède, savant grec de Syracuse (3e siècle avant J.-C.), comprit son principe : il devait vérifier si la couronne du roi Hiéron était en or pur… sans la fondre. L'eau déplacée le trahit : l'orfèvre avait triché !",
+      "Dans la mer Morte, l'eau est si salée (masse volumique 1,24 kg/L) que la poussée d'Archimède permet de flotter allongé en lisant le journal : impossible de couler sans effort !",
     ],
     experience: [
       "L'expérience d'Archimède au seau :",
-      "1. Suspends une pierre à ton dynamomètre artisanal : note son poids dans l'air.",
-      "2. Plonge-la dans un seau rempli à ras bord posé dans une bassine : recueille l'eau débordée.",
-      "3. Note le poids apparent, puis pèse l'eau débordée (100 g ≈ 1 N).",
-      "4. Compare la perte de poids et le poids de l'eau recueillie : Eurêka ?",
+      "Matériel : ton dynamomètre artisanal, une pierre, un seau, une bassine, une balance de cuisine, de la ficelle.",
+      "Protocole : 1. Suspends la pierre au dynamomètre : note son poids dans l'air.",
+      "2. Remplis le seau à ras bord et pose-le dans la bassine vide.",
+      "3. Immerge doucement la pierre (toujours suspendue) : note le poids apparent et recueille l'eau débordée.",
+      "4. Pèse l'eau recueillie (100 g ≈ 1 N).",
+      "Observation : la perte de poids (poids réel − poids apparent) est égale au poids de l'eau débordée.",
+      "Conclusion : Eurêka ! La poussée d'Archimède est bien égale au poids du liquide déplacé : tu as vérifié le principe vieux de 2 300 ans.",
     ],
   },
   substitutions: [
@@ -891,7 +958,7 @@ const S25 = {
       {
         titre: "1. Les trois cas de la flottabilité",
         paras: [
-          "Pour un corps homogène plongé dans un liquide :",
+          "Pour un corps homogène plongé dans un liquide, tout se joue entre le poids P et la poussée maximale PA :",
         ],
         puces: [
           "ρ corps < ρ liquide → il flotte (PA équilibre P avant l'immersion totale) ;",
@@ -903,6 +970,7 @@ const S25 = {
         titre: "2. Le pouvoir de la forme",
         paras: [
           "Un matériau plus dense que l'eau peut flotter si on lui donne une forme creuse : le volume immergé augmente, donc l'eau déplacée aussi. Dès que le poids de l'eau déplacée égale le poids de l'objet, il flotte. C'est le principe de la pirogue, du navire en acier, du bac des Pangalanes.",
+          "Raisonnement clé : une boule de pâte coule (petit volume, tout son poids) ; la même pâte en forme de bol flotte (grand volume creux : elle déplace plus d'eau que son propre poids n'exige). La forme change le volume immergé disponible, pas la matière.",
         ],
       },
       {
@@ -911,16 +979,27 @@ const S25 = {
           "Concevoir un objet, c'est suivre un cahier des charges (ce que l'objet DOIT faire), imaginer une solution, construire un prototype, le tester, puis l'améliorer. Le défi de la mini-pirogue suit exactement cette démarche : flotter, être stable, porter 20 cailloux !",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un morceau de bois (ρ = 0,6 kg/L) et un caillou (ρ = 2,5 kg/L) sont jetés dans l'eau (ρ = 1 kg/L). Que se passe-t-il ? Solution : bois : 0,6 < 1 : il flotte, partiellement immergé. Caillou : 2,5 > 1 : il coule. Règle : on compare simplement les masses volumiques.",
+          "Exemple 2 — Un navire en acier (ρ acier = 7,8 kg/L) flotte. Contradiction ? Solution rédigée : non : le navire n'est pas un bloc plein ! Sa coque creuse enferme beaucoup d'air : l'ensemble acier + air a une masse volumique moyenne inférieure à 1 kg/L. En déplaçant un énorme volume d'eau, il reçoit une poussée égale à son poids : il flotte.",
+        ],
+      },
     ],
     saisTu: [
       "Les pirogues à balancier malgaches, les lakana, descendent en droite ligne des embarcations austronésiennes venues d'Indonésie il y a plus de mille ans ! Le balancier n'aide pas à flotter : il empêche le chavirement en élargissant la base : stabilité et flottabilité sont deux problèmes différents que nos ancêtres avaient déjà résolus.",
+      "Les sous-marins jouent sur les trois cas de la flottabilité : ballasts pleins d'air, ils flottent ; remplis d'eau, ils coulent ; à moitié remplis, ils restent entre deux eaux, comme un poisson immobile.",
     ],
     experience: [
       "Le concours de la mini-pirogue :",
-      "1. Avec une feuille d'aluminium (ou de l'argile), chaque équipe façonne une pirogue de même masse.",
-      "2. Pose-la sur l'eau, puis charge-la caillou par caillou (tous semblables).",
-      "3. Note la cargaison maximale avant naufrage : l'équipe gagnante explique sa forme.",
-      "4. Améliore ton prototype : bords plus hauts ? fond plus large ? Recommence : c'est la démarche de l'ingénieur !",
+      "Matériel : feuilles d'aluminium (ou argile) identiques pour chaque équipe, une bassine d'eau, des cailloux semblables.",
+      "Protocole : 1. Chaque équipe façonne une pirogue avec la même masse de matériau : la forme est libre !",
+      "2. Pose ta pirogue sur l'eau, puis charge-la caillou par caillou, doucement.",
+      "3. Note la cargaison maximale avant naufrage.",
+      "4. Améliore le prototype (bords plus hauts ? fond plus large ?) et recommence : c'est la démarche de l'ingénieur.",
+      "Observation : les pirogues larges à bords hauts portent plus de cailloux ; les formes étroites chavirent ou embarquent l'eau.",
+      "Conclusion : à masse égale, la forme décide de tout : plus le volume immergeable est grand, plus la poussée disponible est grande. Cahier des charges rempli !",
     ],
   },
   substitutions: [

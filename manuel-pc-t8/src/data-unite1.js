@@ -100,6 +100,8 @@ const S1 = {
         titre: "1. L'élément chimique",
         paras: [
           "La matière est faite d'atomes. Tous les atomes d'une même sorte forment un élément chimique : l'élément fer regroupe tous les atomes de fer, qu'ils soient dans un clou, une grille ou la rouille.",
+          "Il faut bien distinguer l'atome et l'élément : l'atome est la brique individuelle ; l'élément est la « sorte » de brique. Quand on dit « ce minerai contient du fer », on parle de l'élément fer, présent sous forme d'atomes libres ou combinés à d'autres éléments, comme dans la rouille.",
+          "Une centaine d'éléments suffisent à fabriquer toute la matière de l'Univers : les roches, l'eau, l'air, les plantes et ton propre corps ne sont que des assemblages différents de ces mêmes briques.",
           "Les propriétés chimiques d'un corps dépendent des éléments qu'il contient.",
         ],
       },
@@ -115,20 +117,39 @@ const S1 = {
         ],
       },
       {
-        titre: "3. Un langage universel",
+        titre: "3. Les règles d'écriture du symbole",
+        paras: [
+          "Règle d'or : la première lettre est toujours une MAJUSCULE, la seconde (si elle existe) toujours une minuscule.",
+          "Piège à éviter : cette règle n'est pas une coquetterie ! Co est le symbole du cobalt, alors que CO désigne un assemblage d'un atome de carbone et d'un atome d'oxygène : une majuscule mal placée change complètement le sens.",
+        ],
+      },
+      {
+        titre: "4. Un langage universel",
         paras: [
           "Un chimiste malgache, chinois ou brésilien écrit Fe pour le fer : les symboles permettent à tous les scientifiques de se comprendre sans traduction.",
+          "C'est la même idée que les panneaux du code de la route : un dessin unique, compris partout, sans un mot.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Écris le symbole des éléments suivants : oxygène, calcium, chlore, cuivre. Solution rédigée : oxygène : O ; calcium : Ca ; chlore : Cl ; cuivre : Cu (du latin cuprum). Vérification : majuscule d'abord, minuscule ensuite, dans chaque cas.",
+          "Exemple 2 — Rakoto écrit « FE » pour le fer et « ca » pour le calcium. Corrige-le et explique. Solution : il faut écrire Fe et Ca. « FE » est faux car la seconde lettre doit être minuscule ; « ca » est faux car la première lettre doit être majuscule. Un symbole mal écrit n'est pas reconnu.",
         ],
       },
     ],
     saisTu: [
       "Certains symboles viennent du latin : Fe (ferrum, fer), Cu (cuprum, cuivre), Au (aurum, or), Ag (argentum, argent). Le cuivre doit même son nom latin à l'île de Chypre, où les Romains l'extrayaient !",
+      "Ton corps est lui-même un magasin d'éléments : environ 65 % d'oxygène, 18 % de carbone, 10 % d'hydrogène, plus le calcium des os et le fer du sang. Et à Madagascar, la mine d'Ambatovy exporte deux éléments très recherchés dans le monde : le nickel (Ni) et le cobalt (Co) !",
     ],
     experience: [
       "La chasse aux éléments à la maison :",
-      "1. Fais l'inventaire de dix objets de la maison (clou, marmite, fil électrique, charbon, sel, bijou…).",
-      "2. Pour chacun, devine le ou les éléments principaux qu'il contient.",
-      "3. Écris leur symbole, puis vérifie avec ta leçon.",
+      "Matériel : dix objets du quotidien (clou, marmite, fil électrique, morceau de charbon, sel de cuisine, bijou, pièce de monnaie…), papier, crayon.",
+      "Protocole : 1. Fais l'inventaire des dix objets et classe-les dans un tableau à trois colonnes : objet, élément(s) deviné(s), symbole.",
+      "2. Pour chacun, devine de mémoire le ou les éléments principaux qu'il contient et écris leur symbole.",
+      "3. Vérifie ensuite avec la leçon et corrige tes erreurs d'écriture (majuscule/minuscule !).",
+      "Observation : le clou contient du fer (Fe), la marmite de l'aluminium (Al), le fil électrique du cuivre (Cu), le charbon du carbone (C), le sel les éléments sodium (Na) et chlore (Cl).",
+      "Conclusion : les objets les plus courants ne mobilisent qu'une poignée d'éléments chimiques, toujours désignés par les mêmes symboles universels.",
     ],
   },
   substitutions: [
@@ -258,6 +279,7 @@ const S2 = {
         titre: "1. La structure du tableau périodique",
         paras: [
           "Le tableau périodique, créé par Mendeleïev en 1869, range les éléments par numéro atomique Z croissant. Z est le nombre d'électrons de l'atome.",
+          "Chaque case du tableau contient au minimum deux informations : le symbole de l'élément et son numéro atomique Z. C'est la carte d'identité de l'élément : deux éléments différents n'ont jamais le même Z.",
         ],
         puces: [
           "une ligne = une période ;",
@@ -268,12 +290,15 @@ const S2 = {
         titre: "2. Les couches électroniques",
         paras: [
           "Les électrons se répartissent autour du noyau en couches successives : la couche K (2 électrons au maximum), puis la couche L (8 au maximum), puis la couche M (8 au maximum).",
+          "Règle de remplissage : on remplit d'abord K, puis L, puis M ; on ne commence une nouvelle couche que lorsque la précédente est pleine.",
+          "Piège à éviter : ne saute jamais une couche, et souviens-toi que K ne peut recevoir que 2 électrons — pas 8 !",
         ],
       },
       {
         titre: "3. La formule électronique",
         paras: [
-          "La formule électronique indique le nombre d'électrons sur chaque couche. Exemples :",
+          "La formule électronique indique le nombre d'électrons sur chaque couche.",
+          "Méthode pas-à-pas : 1) lis Z dans le tableau ; 2) place 2 électrons sur K ; 3) place jusqu'à 8 électrons sur L ; 4) continue sur M avec le reste ; 5) vérifie que la somme retombe sur Z.",
         ],
         puces: [
           "O (Z = 8) : K2 L6",
@@ -286,17 +311,29 @@ const S2 = {
         titre: "4. Période et couche",
         paras: [
           "Le numéro de la période d'un élément est le nombre de couches occupées : Na (K2 L8 M1) occupe trois couches, il est donc dans la 3e période.",
+          "De même, le nombre d'électrons de la dernière couche renseigne sur la colonne : Na (M1) possède 1 électron externe, comme tous les éléments de la première colonne.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Établis la formule électronique du magnésium Mg (Z = 12), puis indique sa période. Solution : 12 électrons à placer : K2 (reste 10), L8 (reste 2), M2. Formule : K2 L8 M2. Trois couches occupées : le magnésium est dans la 3e période. Vérification : 2 + 8 + 2 = 12 ✔.",
+          "Exemple 2 — Un élément a pour formule électronique K2 L7. Quel est son numéro atomique et où se trouve-t-il dans le tableau ? Solution : Z = 2 + 7 = 9 : c'est le fluor F. Deux couches occupées : 2e période ; 7 électrons externes : famille des halogènes.",
         ],
       },
     ],
     saisTu: [
       "En 1869, Mendeleïev laissa des cases vides dans son tableau et prédit les propriétés des éléments manquants ! Quand le gallium puis le germanium furent découverts quelques années plus tard, leurs propriétés correspondaient exactement à ses prédictions : le tableau périodique devint célèbre dans le monde entier.",
+      "Le tableau compte aujourd'hui 118 éléments, dont une trentaine créés artificiellement en laboratoire : les plus lourds n'existent que quelques fractions de seconde dans les accélérateurs de particules !",
     ],
     experience: [
       "Fabrique ton tableau des 20 éléments :",
-      "1. Découpe 20 cartons de la taille d'une carte à jouer.",
-      "2. Sur chacun, écris le symbole en grand, le numéro atomique Z en haut, la formule électronique en bas.",
-      "3. Mélange les cartes, puis reconstitue le tableau le plus vite possible : défie tes camarades !",
+      "Matériel : 20 cartons de la taille d'une carte à jouer, feutre, la liste des 20 premiers éléments avec leur Z.",
+      "Protocole : 1. Sur chaque carton, écris le symbole en grand, le numéro atomique Z en haut, la formule électronique en bas.",
+      "2. Mélange les cartes, puis reconstitue le tableau (périodes en lignes, familles en colonnes) le plus vite possible.",
+      "3. Défie tes camarades : qui reconstruit le tableau sans erreur en premier ?",
+      "Observation : les éléments d'une même colonne ont des formules électroniques qui se terminent par le même nombre d'électrons externes.",
+      "Conclusion : le classement du tableau périodique n'est pas arbitraire : il reflète directement la structure électronique des atomes.",
     ],
   },
   substitutions: [
@@ -422,18 +459,21 @@ const S3 = {
         titre: "1. La représentation de Lewis",
         paras: [
           "La représentation de Lewis montre le symbole de l'élément entouré de points figurant ses électrons externes (ceux de la dernière couche). On place un électron par côté, puis on complète en paires.",
+          "Méthode pas-à-pas : 1) écris la formule électronique ; 2) compte les électrons de la dernière couche ; 3) dessine le symbole et place un point par côté (haut, droite, bas, gauche) ; 4) s'il reste des électrons, complète en formant des paires.",
         ],
       },
       {
         titre: "2. Électrons célibataires et paires",
         paras: [
           "Un électron seul sur un côté est dit célibataire : il peut former une liaison avec un électron célibataire d'un autre atome. Deux électrons du même côté forment une paire, qui ne fait pas de liaison.",
+          "Analogie : une paire, c'est un couple qui danse déjà ensemble ; un électron célibataire cherche un partenaire dans un autre atome. Les liaisons chimiques sont des « mariages » d'électrons célibataires.",
         ],
       },
       {
         titre: "3. La valence",
         paras: [
           "La valence d'un élément est le nombre de ses électrons célibataires : c'est le nombre de liaisons qu'il peut former.",
+          "Retiens l'ordre H, O, N, C : valences 1, 2, 3, 4. Moyen mnémotechnique : « HONC : 1-2-3-4 ».",
         ],
         puces: [
           "H : valence 1 — Cl : valence 1",
@@ -442,15 +482,26 @@ const S3 = {
           "C : valence 4",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Donne la représentation de Lewis de l'oxygène O (Z = 8) et sa valence. Solution : formule électronique K2 L6 : 6 électrons externes. On place un électron par côté (4 points), puis on complète : 2 paires et 2 célibataires. Valence = 2 : l'oxygène forme deux liaisons, comme dans la molécule d'eau.",
+          "Exemple 2 — L'azote N (Z = 7) peut-il former la molécule NH3 ? Justifie. Solution : formule électronique K2 L5 : 5 électrons externes = 1 paire + 3 célibataires, donc valence 3. L'azote forme trois liaisons avec trois atomes d'hydrogène (valence 1 chacun) : NH3 est bien possible ✔.",
+        ],
+      },
     ],
     saisTu: [
       "Gilbert Lewis proposa ses fameux schémas à points en 1916, avant même que l'on puisse « voir » les atomes ! Son modèle si simple est toujours utilisé, cent ans plus tard, dans toutes les classes de chimie du monde.",
+      "La valence 4 du carbone lui permet de bâtir des chaînes immenses : le diamant, le graphite de ton crayon, mais aussi les millions de molécules du vivant. C'est l'élément architecte de la vie !",
     ],
     experience: [
       "Le jeu des mains-valences :",
-      "1. Chaque camarade reçoit un rôle : H lève 1 main, O lève 2 mains, N… 3 (avec un pied !), C… 4.",
+      "Matériel : aucun — juste des camarades motivés et un peu d'espace.",
+      "Protocole : 1. Chaque camarade reçoit un rôle : H lève 1 main, O lève 2 mains, N… 3 (avec un pied !), C… 4.",
       "2. Pour former une « molécule », chaque main levée doit tenir la main d'un camarade : aucune main ne doit rester libre.",
-      "3. Essayez de former H et H, puis O avec deux H : vous venez de fabriquer H2 et H2O !",
+      "3. Essayez de former H avec H, puis O avec deux H, puis C avec quatre H.",
+      "Observation : H—H (H2) et H—O—H (H2O) se forment facilement ; le carbone doit trouver quatre partenaires (CH4).",
+      "Conclusion : la valence est bien le nombre de « mains » d'un atome : une molécule n'est stable que si toutes les mains sont occupées.",
     ],
   },
   substitutions: [
@@ -581,6 +632,7 @@ const S4 = {
         titre: "1. Une colonne = une famille",
         paras: [
           "Les éléments d'une même colonne du tableau périodique ont le même nombre d'électrons externes : ils forment une famille aux propriétés chimiques voisines.",
+          "Pourquoi ces ressemblances ? Parce que ce sont les électrons externes qui font la chimie d'un atome : même nombre d'électrons externes, même comportement chimique.",
         ],
       },
       {
@@ -597,17 +649,29 @@ const S4 = {
         titre: "3. Expliquer la réactivité",
         paras: [
           "Plus un atome est proche d'avoir une couche externe pleine (halogènes) ou presque vide (alcalins), plus il est réactif. Une couche externe déjà pleine (gaz inertes) rend l'atome stable : il n'a besoin de rien.",
+          "Deux démonstrations spectaculaires (à ne JAMAIS reproduire soi-même) : un petit morceau de sodium jeté dans l'eau s'enflamme en crépitant ; le dichlore décolore les tissus. À l'inverse, l'hélium des ballons et le néon des enseignes lumineuses ne réagissent jamais : on les dit inertes.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Le potassium K a pour formule électronique K2 L8 M8 N1. À quelle famille appartient-il et que peut-on prévoir ? Solution : 1 électron externe : famille des alcalins, comme Li et Na. Prévision : métal très réactif, à conserver à l'abri de l'air et de l'eau — exactement comme le sodium.",
+          "Exemple 2 — Parmi Ar, Na et Cl, lesquels sont très réactifs et lequel ne l'est pas ? Justifie. Solution : Na (1 électron externe, alcalin) et Cl (7 électrons externes, halogène) sont très réactifs : il leur manque peu pour une couche pleine ou presque vide. Ar a sa couche externe pleine : il est inerte. Ce qui compte, c'est la distance à la couche pleine.",
         ],
       },
     ],
     saisTu: [
       "L'argon représente près de 1 % de l'air que tu respires ! Ce gaz inerte, invisible et sans odeur, remplit aussi les ampoules électriques : comme il ne réagit avec rien, il protège le filament qui, sinon, brûlerait en un éclair.",
+      "Les plongeurs professionnels respirent un mélange hélium-oxygène pour éviter l'ivresse des profondeurs : les gaz inertes rendent bien des services… précisément parce qu'ils ne font rien !",
     ],
     experience: [
       "La famille du calcium dans ta cuisine :",
-      "1. Verse un peu de vinaigre sur un morceau de craie (carbonate de calcium) : observe l'effervescence.",
-      "2. Recommence sur une coquille d'œuf : même réaction !",
-      "3. Craie et coquille contiennent le même élément calcium : même famille, même comportement.",
+      "Matériel : un morceau de craie, une coquille d'œuf, du vinaigre, deux verres.",
+      "Protocole : 1. Place la craie dans le premier verre et la coquille d'œuf dans le second.",
+      "2. Verse un peu de vinaigre sur la craie : observe attentivement la surface.",
+      "3. Recommence sur la coquille d'œuf et compare.",
+      "Observation : dans les deux cas, des bulles de gaz se forment : c'est une effervescence, signe d'une réaction chimique.",
+      "Conclusion : craie et coquille contiennent le même élément calcium (sous forme de carbonate) : même élément, même famille… même comportement chimique !",
     ],
   },
   substitutions: [
@@ -743,12 +807,14 @@ const S5 = {
         titre: "1. La molécule",
         paras: [
           "Une molécule est un assemblage d'un nombre précis d'atomes liés les uns aux autres. L'eau, le dioxyde de carbone, le dioxygène de l'air sont faits de molécules.",
+          "Chaque molécule d'un corps pur est identique aux autres : toutes les molécules d'eau de l'Univers sont faites de 2 H et 1 O. Changer la molécule, c'est changer le corps : l'eau oxygénée H2O2 n'est pas de l'eau H2O !",
         ],
       },
       {
         titre: "2. La liaison covalente",
         paras: [
           "Une liaison covalente unit deux atomes qui partagent chacun un ou plusieurs électrons célibataires : une paire partagée = un trait entre les symboles. Chaque atome forme autant de liaisons que sa valence (H : 1, O : 2, N : 3, C : 4).",
+          "Méthode pour construire une molécule : 1) écris la valence de chaque atome ; 2) relie les électrons célibataires deux à deux ; 3) vérifie qu'aucune valence ne reste libre : toutes les « mains » doivent être occupées.",
         ],
       },
       {
@@ -763,15 +829,32 @@ const S5 = {
           "NH3 (ammoniac) : 1 N + 3 H ; SO2 (dioxyde de soufre) : 1 S + 2 O.",
         ],
       },
+      {
+        titre: "4. Bien lire une formule brute",
+        paras: [
+          "Attention : l'indice ne s'applique qu'à l'atome qui le précède immédiatement, et l'indice 1 ne s'écrit jamais. Dans NH3 : un seul azote, trois hydrogènes.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Montre, à partir des valences, que la formule de l'eau est bien H2O. Solution : O a la valence 2 : il doit former 2 liaisons ; H a la valence 1 : il n'en forme qu'une. Il faut donc 2 atomes H pour occuper les 2 liaisons d'un atome O : H—O—H, soit H2O ✔.",
+          "Exemple 2 — Combien d'atomes de chaque sorte dans 3 molécules de CO2 ? Et dans une molécule de NH3 ? Solution : 3 CO2 : 3 × 1 = 3 atomes de carbone et 3 × 2 = 6 atomes d'oxygène. NH3 : 1 atome d'azote et 3 atomes d'hydrogène, soit 4 atomes en tout.",
+        ],
+      },
     ],
     saisTu: [
       "Une seule goutte d'eau contient environ 1 500 milliards de milliards de molécules H2O : plus de molécules qu'il n'y a de grains de sable sur toutes les plages de Madagascar !",
+      "Le gaz des boissons pétillantes est du CO2 dissous : à l'ouverture de la bouteille, la pression chute et des millions de molécules s'échappent en bulles. Les plantes, elles, capturent ce même CO2 pour fabriquer leur matière : c'est la photosynthèse.",
     ],
     experience: [
       "Construis tes molécules :",
-      "1. Prépare des boulettes de pâte ou d'argile : blanches (H), rouges (O), noires (C), bleues (N).",
-      "2. Relie-les avec des allumettes ou des cure-dents en respectant les valences : H une liaison, O deux, N trois, C quatre.",
-      "3. Construis H2, O2, H2O, NH3, CO2 puis vérifie qu'aucune « main » ne reste libre.",
+      "Matériel : pâte à modeler ou argile (boulettes blanches = H, rouges = O, noires = C, bleues = N), allumettes ou cure-dents.",
+      "Protocole : 1. Prépare une dizaine de boulettes de chaque couleur.",
+      "2. Relie-les avec les allumettes en respectant les valences : H une liaison, O deux, N trois, C quatre.",
+      "3. Construis dans l'ordre : H2, O2, H2O, NH3, puis CO2.",
+      "Observation : chaque construction n'est possible que d'une seule façon : impossible de brancher trois H sur un O, ou un seul H sur un N.",
+      "Conclusion : la valence impose la formule brute : les molécules ne s'assemblent pas au hasard, et aucune « main » ne reste libre.",
     ],
   },
   substitutions: [
@@ -899,12 +982,14 @@ const S6 = {
         titre: "1. Compter par paquets",
         paras: [
           "Les œufs se comptent par douzaines, le riz par kapoaka. Les atomes, bien trop petits et nombreux, se comptent par moles.",
+          "Le paquet des chimistes est simplement beaucoup plus grand : la douzaine vaut 12, le kapoaka environ 9 000 grains… la mole, elle, vaut six cent deux mille milliards de milliards d'entités !",
         ],
       },
       {
         titre: "2. La mole et le nombre d'Avogadro",
         paras: [
           "Une mole est un paquet de 6,02 × 10²³ entités identiques (atomes, molécules ou ions). Ce nombre s'appelle le nombre d'Avogadro : N = 6,02 × 10²³ par mole.",
+          "D'où vient ce nombre étrange ? Il a été choisi pour que les masses tombent juste : une mole d'atomes de carbone pèse exactement 12 g. Le nombre d'Avogadro est le « taux de change » entre le monde invisible des atomes et notre balance.",
         ],
       },
       {
@@ -912,17 +997,29 @@ const S6 = {
         paras: [
           "La quantité de matière, notée n, compte le nombre de moles ; son unité est la mole (mol).",
           "Nombre d'entités = n × N. Exemple : 2 mol d'eau contiennent 2 × 6,02 × 10²³ = 12,04 × 10²³ molécules.",
+          "Piège à éviter : n ne se mesure pas directement ! On pèse une masse ou on mesure un volume, puis on calcule n : c'est tout l'objet de la prochaine séance.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Combien de molécules y a-t-il dans 3 mol d'eau ? Donnée : N = 6,02 × 10²³/mol. Solution : nombre d'entités = n × N = 3 × 6,02 × 10²³ = 18,06 × 10²³ ≈ 1,8 × 10²⁴ molécules.",
+          "Exemple 2 — Un échantillon contient 3,01 × 10²³ atomes de fer. Quelle est la quantité de matière correspondante ? Solution : n = nombre d'entités ÷ N = 3,01 × 10²³ ÷ 6,02 × 10²³ = 0,5 mol. Vérification : 0,5 × 6,02 × 10²³ = 3,01 × 10²³ ✔.",
         ],
       },
     ],
     saisTu: [
       "6,02 × 10²³ grains de riz rempliraient plus d'un milliard de fois le stade Barea d'Antananarivo ! Ce nombre est si gigantesque que les chimistes du monde entier lui ont même dédié une fête : le « jour de la mole », célébré le 23 octobre (10/23 à l'américaine), de 6 h 02 à 18 h 02.",
+      "Compter une mole de secondes ? Il te faudrait environ 19 millions de milliards d'années… plus d'un million de fois l'âge de l'Univers !",
     ],
     experience: [
       "Le kapoaka d'Avogadro :",
-      "1. Compte le nombre de grains de riz dans une cuillère à soupe (patience !), par exemple environ 600 grains.",
-      "2. Calcule combien de cuillères il faudrait pour un kapoaka (~9 000 grains) : 15 cuillères.",
-      "3. Imagine maintenant : combien de kapoaka pour une mole de grains ? 6,02 × 10²³ ÷ 9 000 ≈ 6,7 × 10¹⁹ kapoaka… impossible à stocker sur toute l'île !",
+      "Matériel : du riz, une cuillère à soupe, un kapoaka, de la patience.",
+      "Protocole : 1. Compte le nombre de grains de riz dans une cuillère à soupe (par exemple environ 600 grains).",
+      "2. Calcule combien de cuillères remplissent un kapoaka (~9 000 grains) : environ 15 cuillères.",
+      "3. Calcule maintenant combien de kapoaka contiendraient une mole de grains : 6,02 × 10²³ ÷ 9 000 ≈ 6,7 × 10¹⁹ kapoaka.",
+      "Observation : même en couvrant toute l'île de Madagascar de kapoaka, on n'y arriverait pas.",
+      "Conclusion : la mole est un nombre à l'échelle des atomes, pas à l'échelle humaine : voilà pourquoi une simple goutte d'eau contient des milliards de milliards de molécules.",
     ],
   },
   substitutions: [
@@ -1055,40 +1152,58 @@ const S7 = {
         titre: "1. La masse molaire atomique",
         paras: [
           "La masse molaire M d'un atome est la masse d'une mole de cet atome, en grammes par mole (g/mol) : M(H) = 1 ; M(C) = 12 ; M(N) = 14 ; M(O) = 16 ; M(S) = 32 ; M(Cl) = 35,5 ; M(Fe) = 56 ; M(Ca) = 40 ; M(Cu) = 63,5 g/mol.",
+          "Ces valeurs se lisent dans le tableau périodique : plus l'atome est lourd, plus sa masse molaire est grande. Une mole de carbone, c'est la masse de 6,02 × 10²³ atomes de carbone réunis : 12 g.",
+          "Piège à éviter : ne confonds pas la masse m (celle que tu pèses, variable selon l'échantillon) et la masse molaire M (fixe pour une espèce chimique donnée, lue dans le tableau).",
         ],
       },
       {
         titre: "2. La masse molaire moléculaire",
         paras: [
-          "Pour une molécule, on additionne les masses molaires de tous les atomes :",
+          "Pour une molécule, on additionne les masses molaires de tous les atomes.",
+          "Méthode pas-à-pas : 1) écris la formule brute ; 2) compte les atomes de chaque sorte ; 3) multiplie chaque masse molaire atomique par le nombre d'atomes ; 4) additionne le tout.",
         ],
         puces: [
           "M(H2O) = 2 × 1 + 16 = 18 g/mol ;",
           "M(CO2) = 12 + 2 × 16 = 44 g/mol ;",
-          "M(NH3) = 14 + 3 × 1 = 17 g/mol.",
+          "M(NH3) = 14 + 3 × 1 = 17 g/mol ;",
+          "M(H2SO4) = 2 × 1 + 32 + 4 × 16 = 98 g/mol.",
         ],
       },
       {
         titre: "3. La formule n = m ÷ M",
         paras: [
           "La quantité de matière n (en mol) se calcule à partir de la masse m (en g) : n = m ÷ M, et inversement m = n × M.",
+          "Astuce du triangle : écris m en haut, n et M en bas. Cache la grandeur cherchée et lis la formule : m = n × M ; n = m ÷ M ; M = m ÷ n.",
         ],
       },
       {
         titre: "4. Le volume molaire des gaz",
         paras: [
           "Dans les conditions normales de température et de pression (0 °C et 1013 hPa), une mole de gaz — quel qu'il soit — occupe 22,4 litres.",
+          "On en déduit, pour un gaz : n = V ÷ 22,4 et V = n × 22,4. Attention : cette règle vaut uniquement pour les gaz, jamais pour les liquides ni les solides.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Quelle quantité de matière dans 11 g de dioxyde de carbone CO2 ? Données : m = 11 g ; M(CO2) = 12 + 2 × 16 = 44 g/mol. Formule : n = m ÷ M. Calcul : n = 11 ÷ 44 = 0,25 mol. Vérification : 0,25 × 44 = 11 g ✔.",
+          "Exemple 2 — Quel volume occupent 8 g de dioxygène O2 dans les conditions normales ? Étape 1 : M(O2) = 2 × 16 = 32 g/mol, donc n = 8 ÷ 32 = 0,25 mol. Étape 2 : V = n × 22,4 = 0,25 × 22,4 = 5,6 L.",
         ],
       },
     ],
     saisTu: [
       "Une mole de dihydrogène ne pèse que 2 g, une mole de dioxygène 32 g… mais toutes deux occupent le même volume de 22,4 L dans les conditions normales ! C'est Avogadro qui l'avait deviné dès 1811 : des volumes égaux de gaz contiennent le même nombre de molécules.",
+      "C'est l'Italien Cannizzaro qui, en 1858, imposa les masses molaires actuelles et mit fin à cinquante ans de confusion : les chimistes du monde entier purent enfin comparer leurs résultats.",
     ],
     experience: [
-      "Pèse une mole d'eau :",
-      "1. Pose un verre vide sur la balance de cuisine et note sa masse.",
-      "2. Verse de l'eau jusqu'à ajouter exactement 18 g.",
-      "3. Contemple ton verre : il contient 6,02 × 10²³ molécules d'eau, une mole exactement ! Recommence avec 36 g : deux moles.",
+      "Pèse une mole… puis deux :",
+      "Matériel : balance de cuisine, deux verres, eau, sel de cuisine.",
+      "Protocole : 1. Pose un verre vide sur la balance et fais la tare (ou note sa masse).",
+      "2. Verse de l'eau jusqu'à ajouter exactement 18 g : tu tiens une mole d'eau.",
+      "3. Dans le second verre, pèse 58,5 g de sel : une mole de chlorure de sodium.",
+      "4. Compare les volumes occupés par ces deux « moles ».",
+      "Observation : la mole d'eau tient en trois cuillères ; la mole de sel remplit presque le verre — et pourtant chacune contient 6,02 × 10²³ entités.",
+      "Conclusion : une mole contient toujours le même nombre d'entités, mais sa masse (18 g, 58,5 g…) et son volume dépendent de l'espèce chimique : c'est toute l'utilité de la masse molaire.",
     ],
   },
   substitutions: [
@@ -1216,12 +1331,15 @@ const S8 = {
         titre: "1. De l'atome à l'ion",
         paras: [
           "Un atome est neutre. S'il perd des électrons, il devient un ion positif ou cation (Na+, Ca2+, Cu2+…). S'il gagne des électrons, il devient un ion négatif ou anion (Cl−, OH−…). Le nombre de charges est écrit en exposant.",
+          "La notation se lit ainsi : Fe2+ est un atome de fer qui a perdu 2 électrons ; Cl− un atome de chlore qui a gagné 1 électron. Attention : le nombre s'écrit avant le signe (2+, 3+, 2−).",
+          "Pourquoi les atomes s'ionisent-ils ? Pour acquérir une couche externe pleine, comme les gaz inertes : Na (K2 L8 M1) perd son unique électron externe et devient Na+ (K2 L8), parfaitement stable.",
         ],
       },
       {
         titre: "2. La dissociation dans l'eau",
         paras: [
           "Quand un composé ionique comme le sel NaCl se dissout, il se dissocie en ions Na+ et Cl− entourés de molécules d'eau. Les ions, chargés et mobiles, permettent à la solution de conduire le courant électrique : c'est le signe d'une solution ionique.",
+          "Un ion n'a plus les propriétés de l'atome : le sodium métal réagit violemment avec l'eau, mais l'ion Na+ du sel de table est parfaitement inoffensif dans ta soupe !",
         ],
       },
       {
@@ -1234,7 +1352,9 @@ const S8 = {
       },
       {
         titre: "4. Quelques tests d'identification",
-        paras: [],
+        paras: [
+          "Méthode d'un test : verser quelques gouttes de réactif dans la solution, observer (couleur, précipité, gaz), conclure sur l'ion présent.",
+        ],
         puces: [
           "soude → précipité vert : Fe2+ ; couleur rouille : Fe3+ ; bleu : Cu2+ ; blanc : Zn2+ ou Ca2+ ;",
           "nitrate d'argent → précipité blanc qui noircit à la lumière : Cl− ;",
@@ -1247,15 +1367,26 @@ const S8 = {
           "Les ions sont partout : Ca2+ solidifie os et dents, Na+ et K+ font battre le cœur et circuler l'influx nerveux, Fe2+ transporte l'oxygène dans le sang.",
         ],
       },
+      {
+        titre: "6. Exemples résolus",
+        paras: [
+          "Exemple 1 — Quelques gouttes de soude versées dans une solution inconnue donnent un précipité bleu. Conclus. Solution rédigée : le précipité bleu obtenu avec la soude caractérise les ions cuivre Cu2+. La solution contenait donc un sel de cuivre dissous.",
+          "Exemple 2 — Le calcium Ca a pour formule électronique K2 L8 M8 N2. Quel ion forme-t-il naturellement ? Solution : en perdant ses 2 électrons externes, il obtient une couche externe pleine : il forme le cation Ca2+ — celui-là même qui solidifie os et dents.",
+        ],
+      },
     ],
     saisTu: [
       "L'eau de mer du canal du Mozambique contient environ 35 g de sels dissous par litre, principalement des ions Na+ et Cl− : c'est pour cela qu'elle conduit très bien le courant… et qu'il ne faut jamais se baigner pendant un orage !",
+      "Le sérum de réhydratation orale (eau + sel + sucre) sauve chaque année des milliers d'enfants : il recharge le corps en ions Na+ et K+ perdus lors des diarrhées. Une simple histoire d'ions peut sauver une vie !",
     ],
     experience: [
       "Le testeur de solutions :",
-      "1. Monte un circuit : pile plate, lampe de poche, deux clous propres comme électrodes, fils.",
-      "2. Plonge les clous (sans qu'ils se touchent) dans l'eau pure, l'eau salée, l'eau sucrée, le jus de citron.",
-      "3. Note pour chaque liquide si la lampe s'allume : lesquels contiennent des ions ?",
+      "Matériel : pile plate, lampe de poche, deux clous propres (électrodes), fils électriques, quatre gobelets : eau pure, eau salée, eau sucrée, jus de citron.",
+      "Protocole : 1. Monte le circuit : pile, lampe, puis les deux clous en série.",
+      "2. Plonge les clous (sans qu'ils se touchent) dans l'eau pure : note l'état de la lampe.",
+      "3. Recommence dans l'eau salée, l'eau sucrée puis le jus de citron, en rinçant les clous entre chaque essai.",
+      "Observation : la lampe brille avec l'eau salée et le jus de citron, reste éteinte (ou presque) avec l'eau pure et l'eau sucrée.",
+      "Conclusion : seules les solutions contenant des ions conduisent le courant : le sel et le citron libèrent des ions dans l'eau, le sucre non — il se dissout en molécules neutres.",
     ],
   },
   substitutions: [
@@ -1385,6 +1516,8 @@ const S9 = {
         titre: "1. Réactifs et produits",
         paras: [
           "Dans une réaction chimique, les réactifs sont les substances présentes avant la transformation : elles disparaissent. Les produits sont les substances nouvelles formées.",
+          "Au cours de la réaction, les atomes ne disparaissent pas : ils se réorganisent. Tous les éléments présents dans les réactifs se retrouvent dans les produits : rien ne se perd, rien ne se crée.",
+          "Ne confonds pas transformation chimique et transformation physique : l'eau qui bout reste de l'eau (transformation physique) ; le charbon qui brûle devient du dioxyde de carbone (transformation chimique : une substance nouvelle apparaît).",
         ],
       },
       {
@@ -1402,7 +1535,9 @@ const S9 = {
       },
       {
         titre: "3. Identifier les produits",
-        paras: [],
+        paras: [
+          "Méthode : on ne « voit » pas un gaz ; on le reconnaît grâce à un test dont on rédige toujours le résultat : test effectué, observation, conclusion.",
+        ],
         puces: [
           "dioxyde de carbone : trouble l'eau de chaux ;",
           "dihydrogène : détonation (« aboiement ») à l'approche d'une flamme ;",
@@ -1412,19 +1547,29 @@ const S9 = {
       {
         titre: "4. Conditions et sécurité",
         paras: [
-          "Une réaction ne se produit que dans des conditions précises : chauffage, contact entre réactifs, proportions convenables. Avec les acides et les gaz : lunettes ou distance, aération, jamais de flacon vers le visage.",
+          "Une réaction ne se produit que dans des conditions précises : chauffage, contact entre réactifs, proportions convenables. Avec les acides et les gaz : lunettes ou distance, aération, jamais de flacon dirigé vers le visage.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — On brûle du charbon de bois dans l'air ; le gaz obtenu trouble l'eau de chaux. Identifie réactifs et produits, puis écris la réaction. Solution : réactifs : carbone (charbon) et dioxygène (de l'air) ; produit : dioxyde de carbone, identifié par le trouble de l'eau de chaux. Écriture : carbone + dioxygène → dioxyde de carbone.",
+          "Exemple 2 — Dans l'expérience vinaigre + bicarbonate, comment prouver que le gaz dégagé est bien du CO2 ? Solution : on fait barboter le gaz dans de l'eau de chaux : elle se trouble, donc le gaz est du dioxyde de carbone. Bilan : vinaigre + bicarbonate → dioxyde de carbone + eau + un sel.",
         ],
       },
     ],
     saisTu: [
       "La réaction fer + soufre est si énergique qu'une fois amorcée par un point chauffé au rouge, elle se propage toute seule dans le mélange, comme une braise qui avance ! Le produit, le sulfure de fer, existe aussi dans la nature : c'est la pyrite, surnommée « l'or des fous » à cause de ses reflets dorés.",
+      "C'est Lavoisier qui, au XVIIIe siècle, énonça le principe resté célèbre : « Rien ne se perd, rien ne se crée, tout se transforme. » Tu le vérifieras en 3e avec les équations-bilans !",
     ],
     experience: [
       "Le gaz qui gonfle le ballon :",
-      "1. Verse trois cuillères de vinaigre dans une bouteille.",
-      "2. Mets une cuillère de bicarbonate de soude dans un ballon de baudruche dégonflé.",
-      "3. Fixe le ballon sur le goulot puis redresse-le : le bicarbonate tombe, ça mousse, le ballon se gonfle de CO2 !",
-      "4. Réactifs : vinaigre + bicarbonate ; produits : dioxyde de carbone (+ eau + un sel).",
+      "Matériel : une bouteille, du vinaigre, du bicarbonate de soude, un ballon de baudruche, une cuillère.",
+      "Protocole : 1. Verse trois cuillères de vinaigre dans la bouteille.",
+      "2. Mets une cuillère de bicarbonate dans le ballon dégonflé, à l'aide d'un entonnoir de papier.",
+      "3. Fixe le ballon sur le goulot sans faire tomber la poudre, puis redresse-le d'un coup.",
+      "Observation : le mélange mousse vigoureusement et le ballon se gonfle en quelques secondes.",
+      "Conclusion : une réaction chimique a produit un gaz (le dioxyde de carbone). Réactifs : vinaigre + bicarbonate ; produits : dioxyde de carbone + eau + un sel. Le ballon rend le produit invisible… visible !",
     ],
   },
   substitutions: [
