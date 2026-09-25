@@ -129,7 +129,9 @@ const S27 = {
           "L'uranium (énergie nucléaire) : très concentrée, mais déchets dangereux ; non renouvelable.",
           "Les combustibles fossiles (pétrole, gaz, charbon de terre) : pratiques mais polluants et épuisables.",
         ],
-        paras: [],
+        paras: [
+          "Pour chaque source, prends l'habitude de peser AVANTAGES et INCONVÉNIENTS : aucune source n'est parfaite ; le bon choix dépend du lieu, du besoin et du budget.",
+        ],
       },
       {
         titre: "3. Renouvelable ou non ?",
@@ -138,16 +140,27 @@ const S27 = {
           "À Madagascar, plus de la moitié de l'électricité provient déjà de l'hydraulique, et le solaire progresse partout : notre île est riche en énergies renouvelables !",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Le charbon de bois est-il renouvelable ? Nuance ta réponse. Solution : oui SI la forêt est replantée au rythme des coupes : la biomasse se reconstitue. Non si l'on coupe plus vite que la forêt ne repousse : la source s'épuise alors comme un combustible fossile. Tout dépend de la gestion !",
+          "Exemple 2 — Un village isolé sans rivière veut électrifier son école. Compare deux solutions possibles. Solution : panneau solaire + batterie : source gratuite et renouvelable, mais production nulle la nuit (d'où la batterie) ; groupe électrogène : disponible à toute heure, mais carburant coûteux, non renouvelable et polluant. Pour une école (usage le jour), le solaire est le meilleur choix.",
+        ],
+      },
     ],
     saisTu: [
       "Le Soleil est la source de presque toutes les autres ! C'est lui qui évapore l'eau des océans (pluies → rivières → barrages), qui chauffe l'air inégalement (vents → éoliennes), et qui fait pousser les plantes (biomasse). Même le pétrole est du soleil fossile : des organismes marins nourris de lumière il y a des millions d'années.",
+      "En une heure, le Soleil envoie sur la Terre plus d'énergie que l'humanité entière n'en consomme en une année ! Tout l'enjeu des énergies renouvelables : apprendre à récolter cette pluie de lumière.",
     ],
     experience: [
       "L'inventaire énergétique de la maison :",
-      "1. Fais le tour de chez toi et liste tout ce qui produit mouvement, chaleur ou lumière.",
+      "Matériel : une feuille, un crayon, tes yeux !",
+      "Protocole : 1. Fais le tour de chez toi et liste tout ce qui produit mouvement, chaleur ou lumière.",
       "2. Pour chaque objet, identifie la source d'énergie : bois, charbon, pétrole, pile, secteur JIRAMA, soleil, muscles !",
       "3. Classe les sources en renouvelables et non renouvelables.",
-      "4. Compte : quelle est la source la plus utilisée dans ta maison ?",
+      "4. Compte la source la plus utilisée dans ta maison.",
+      "Observation : la cuisson repose souvent sur la biomasse (bois, charbon), l'éclairage sur l'électricité ou le pétrole, et bien des gestes… sur les muscles !",
+      "Conclusion : chaque maison possède son « bouquet énergétique » : le connaître est le premier pas pour l'améliorer (moins cher, plus propre, plus durable).",
     ],
   },
   substitutions: [
@@ -343,6 +356,7 @@ const S28 = {
         titre: "1. Pourquoi stocker l'énergie ?",
         paras: [
           "Certaines sources sont irrégulières (pas de soleil la nuit, vent capricieux) et nos besoins ne coïncident pas toujours avec la production. Le stockage met l'énergie en réserve pour l'utiliser au bon moment.",
+          "L'idée est la même que le grenier à riz : on engrange à la récolte pour manger toute l'année. Stocker l'énergie, c'est faire son grenier d'électricité !",
         ],
       },
       {
@@ -368,16 +382,27 @@ const S28 = {
         ],
         paras: [],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une famille a un kit solaire : panneau, batterie, trois lampes. Explique le trajet de l'énergie du matin au soir. Solution : le jour, le panneau transforme le rayonnement solaire en électricité qui CHARGE la batterie (réserve chimique) ; le soir, la batterie restitue l'électricité aux lampes. Sans batterie, pas de lumière la nuit : le stockage fait le pont entre production et besoin.",
+          "Exemple 2 — Pourquoi dit-on que la retenue d'un barrage est une « batterie d'eau » ? Solution : l'eau stockée en hauteur est une réserve d'énergie (mécanique) que l'on libère à la demande en ouvrant les vannes, exactement comme une batterie libère son électricité. Certains barrages se « rechargent » même en pompant l'eau vers le haut aux heures creuses !",
+        ],
+      },
     ],
     saisTu: [
       "Le barrage d'Andekaleka, sur la rivière Vohitra, fournit une grande partie de l'électricité d'Antananarivo ! Et certains grands barrages du monde savent même « remonter le temps » : la nuit, quand l'électricité est abondante, ils pompent l'eau vers le haut pour la re-stocker : on appelle cela une station de pompage-turbinage.",
+      "Une pile jetée dans la nature peut polluer le sol pendant des dizaines d'années : ses métaux toxiques s'infiltrent vers les cultures et les puits. Rapporte-les aux points de collecte : une petite pile, une grande responsabilité !",
     ],
     experience: [
       "Le château d'eau miniature :",
-      "1. Perce un petit trou près du fond d'une bouteille en plastique ; bouche-le avec le doigt et remplis la bouteille.",
-      "2. Pose la bouteille en hauteur au bord d'une bassine, place ton moulinet en papier sous le trou.",
-      "3. Libère le trou : le jet fait tourner le moulinet : l'énergie stockée en hauteur devient mouvement !",
-      "4. Recommence avec la bouteille posée plus bas : le jet est plus faible. Plus c'est haut, plus la réserve d'énergie est grande.",
+      "Matériel : une bouteille en plastique, un clou pour percer, une bassine, un moulinet en papier sur son axe, de l'eau.",
+      "Protocole : 1. Perce un petit trou près du fond de la bouteille ; bouche-le avec le doigt et remplis d'eau.",
+      "2. Pose la bouteille en hauteur au bord de la bassine, le moulinet sous le trou.",
+      "3. Libère le trou et observe le moulinet.",
+      "4. Recommence avec la bouteille posée plus bas.",
+      "Observation : le jet fait tourner le moulinet ; bouteille plus basse : jet plus faible, rotation plus lente.",
+      "Conclusion : l'eau placée en hauteur est bien une réserve d'énergie, d'autant plus grande que la hauteur est grande : le principe exact du barrage d'Andekaleka, sur ta table !",
     ],
   },
   substitutions: [
@@ -585,16 +610,26 @@ const S29 = {
           "Les formes d'énergie ne restent jamais longtemps les mêmes : les aliments (chimique) deviennent course (mécanique) et sueur (thermique) ; la pile (chimique) devient courant (électrique) puis lumière (rayonnante) dans la lampe. Ces transformations sont le sujet de la prochaine séance !",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Identifie la ou les formes d'énergie : a) un sac de charbon ; b) le vent qui gonfle une voile ; c) une marmite d'eau bouillante ; d) le rayon de soleil qui te réchauffe. Solution : a) chimique (réserve dans la matière) ; b) mécanique (mouvement de l'air) ; c) thermique (chaleur) ; d) rayonnante (lumière), qui devient thermique sur ta peau.",
+          "Exemple 2 — Une batterie de téléphone qui alimente l'écran met en jeu trois formes d'énergie. Lesquelles, et dans quel ordre ? Solution : chimique (réserve de la batterie) → électrique (courant dans les circuits) → rayonnante (lumière de l'écran) : trois formes en une seule seconde d'utilisation !",
+        ],
+      },
     ],
     saisTu: [
       "Ton corps est une véritable centrale énergétique : chaque jour, il transforme l'énergie chimique de tes aliments — l'équivalent d'environ 2 000 kilocalories — en mouvement, en chaleur (37 °C en permanence !) et même en électricité : les signaux de tes nerfs et les battements de ton cœur sont des impulsions électriques.",
+      "Une plaquette de chocolat contient autant d'énergie chimique qu'une batterie de téléphone pleine… mais ton corps est le seul « appareil » capable de la convertir ! Les aliments sont les batteries du vivant.",
     ],
     experience: [
       "La chasse aux cinq formes :",
-      "1. Prends une feuille et trace cinq colonnes : électrique, thermique, chimique, mécanique, rayonnante.",
-      "2. Pendant une journée, note chaque énergie rencontrée dans la bonne colonne (au moins trois par colonne !).",
-      "3. Souligne les situations qui combinent deux formes ou plus (le feu, le soleil, ton propre corps…).",
-      "4. Compare ta récolte avec celle d'un camarade.",
+      "Matériel : une feuille divisée en cinq colonnes : électrique, thermique, chimique, mécanique, rayonnante.",
+      "Protocole : 1. Pendant une journée, note chaque énergie rencontrée dans la bonne colonne (au moins trois par colonne !).",
+      "2. Souligne les situations qui combinent deux formes ou plus (le feu, le soleil, ton propre corps…).",
+      "3. Compare ta récolte avec celle d'un camarade et discutez les cas litigieux.",
+      "Observation : certaines colonnes se remplissent vite (thermique, mécanique) ; les cas « multi-formes » sont nombreux : feu, soleil, repas, téléphone.",
+      "Conclusion : les cinq formes d'énergie sont partout et se combinent sans cesse : savoir les nommer, c'est déjà comprendre la moitié des machines qui t'entourent.",
     ],
   },
   substitutions: [
@@ -792,6 +827,7 @@ const S30 = {
         paras: [
           "On représente une transformation par une chaîne fléchée : source → appareil → énergie produite.",
           "Exemple complet : Soleil (rayonnante) → panneau (électrique) → batterie (chimique) → lampe (rayonnante). Quatre formes pour une seule histoire de lumière !",
+          "Méthode pour construire une chaîne : pars de la SOURCE, suis l'énergie appareil par appareil, écris la forme d'énergie sur chaque flèche : la chaîne est correcte si chaque appareil reçoit bien la forme qu'il sait transformer.",
         ],
       },
       {
@@ -800,16 +836,27 @@ const S30 = {
           "Grande loi de la physique : l'énergie ne se crée pas et ne disparaît pas : elle se transforme. Si un appareil semble « consommer » de l'énergie, c'est qu'une partie s'échappe sous une forme moins utile, presque toujours de la chaleur : c'est pourquoi moteurs, ampoules et chargeurs chauffent.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Écris la chaîne énergétique complète d'une lampe de poche à dynamo (on presse une poignée pour l'éclairer). Solution : muscles (chimique des aliments) → poignée et engrenages (mécanique) → dynamo (électrique) → ampoule (rayonnante). Quatre maillons, aucune pile : l'énergie vient de ton dernier repas !",
+          "Exemple 2 — Un chargeur de téléphone reste tiède pendant la charge. Y a-t-il de l'énergie « perdue » ? Explique. Solution : l'énergie n'est jamais détruite : la tiédeur révèle qu'une petite partie de l'énergie électrique se transforme en énergie thermique au lieu d'aller dans la batterie. Elle est « perdue » pour la charge, mais pas pour la physique : le total se conserve toujours.",
+        ],
+      },
     ],
     saisTu: [
       "Une centrale hydroélectrique transforme l'énergie avec un rendement de plus de 90 % : presque toute l'énergie de l'eau devient électricité ! À l'opposé, une vieille ampoule à filament ne transforme que 5 % de l'électricité en lumière : les 95 % restants partent en chaleur. Les lampes LED, elles, font dix fois mieux : voilà pourquoi il faut les préférer.",
+      "La phrase célèbre de Lavoisier « Rien ne se perd, rien ne se crée, tout se transforme » vaut aussi pour l'énergie : les physiciens n'ont JAMAIS observé une seule exception à cette loi, nulle part dans l'Univers !",
     ],
     experience: [
       "Le moulinet transformateur :",
-      "1. Découpe un moulinet en papier et fixe-le sur un bâton avec une épingle.",
-      "2. Souffle dessus : ton souffle (mécanique) devient rotation (mécanique) : première transformation !",
-      "3. Place-le sous un filet d'eau : l'eau qui tombe le fait tourner : c'est le principe exact de la turbine du barrage.",
-      "4. Frotte ensuite tes mains très vite : le mouvement devient chaleur : mécanique → thermique. Tu viens de faire trois transformations d'énergie !",
+      "Matériel : papier, ciseaux, épingle, bâton, un filet d'eau (robinet ou bouteille percée).",
+      "Protocole : 1. Découpe un moulinet en papier et fixe-le sur le bâton avec l'épingle.",
+      "2. Souffle dessus et observe.",
+      "3. Place-le sous le filet d'eau et observe encore.",
+      "4. Frotte ensuite tes mains très vite l'une contre l'autre pendant dix secondes.",
+      "Observation : le souffle et l'eau font tourner le moulinet (mécanique → mécanique) ; les mains frottées deviennent chaudes (mécanique → thermique).",
+      "Conclusion : tu viens d'enchaîner trois transformations d'énergie avec du papier et de l'eau : chaque machine, du moulin au barrage, ne fait rien d'autre… en plus grand !",
     ],
   },
   substitutions: [
@@ -998,7 +1045,9 @@ const S31 = {
           "5. ESSAYER : tester et mesurer les performances.",
           "6. AMÉLIORER : corriger les défauts, puis ressayer !",
         ],
-        paras: [],
+        paras: [
+          "Le secret des ingénieurs : la boucle 5-6 ! Un premier prototype n'est jamais parfait : c'est en mesurant, corrigeant et recommençant qu'un objet devient bon. L'échec d'un essai n'est pas une faute : c'est une information.",
+        ],
       },
       {
         titre: "2. Le four solaire (rayonnante → thermique)",
@@ -1019,15 +1068,27 @@ const S31 = {
           "C'est le principe exact des turbines des centrales hydroélectriques, et des moulins à paddy d'autrefois !",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Le four solaire de l'équipe de Miora ne dépasse pas 40 °C. Propose un diagnostic méthodique et deux améliorations. Solution : vérifier les trois alliés un par un : intérieur bien noir ? couvercle bien étanche (chaleur qui fuit) ? réflecteurs bien orientés vers l'intérieur ? Améliorations les plus efficaces : tendre mieux le film transparent (l'effet de serre exige l'étanchéité) et agrandir les réflecteurs en les inclinant vers la boîte.",
+          "Exemple 2 — Rédige un mini cahier des charges pour le moulin à eau du concours. Solution (exemple) : FONCTION : tourner régulièrement sous un filet d'eau de robinet ; MATÉRIAUX : récupération uniquement (bouchon, pales plastiques, pique en bambou) ; DIMENSION : roue de moins de 15 cm ; PERFORMANCE : tourner sans blocage pendant une minute ; SÉCURITÉ : pas d'arête coupante. Un bon cahier des charges se vérifie point par point à l'essai !",
+        ],
+      },
     ],
     saisTu: [
       "Dans plusieurs régions ensoleillées du monde, dont Madagascar, des associations promeuvent les cuiseurs solaires : une famille qui cuit au soleil économise des centaines de kilos de bois ou de charbon par an : bon pour la forêt, pour la santé (moins de fumée) et pour le porte-monnaie ! Certains fours paraboliques atteignent 200 °C.",
+      "Les moulins à eau broyaient déjà le grain il y a 2 000 ans : c'est l'une des plus anciennes machines de l'humanité. Les turbines d'Andekaleka sont leurs arrière-petites-filles directes : même idée, mille fois plus puissante !",
     ],
     experience: [
       "Réalise le projet complet à la maison :",
-      "1. FOUR : boîte en carton, fond tapissé de noir, parois doublées d'aluminium, couvercle en film plastique tendu ; place un petit récipient d'eau au centre, oriente vers le soleil et mesure l'échauffement toutes les 15 minutes.",
-      "2. MOULIN : fends huit encoches dans un bouchon de liège, glisse-y huit pales en plastique découpé, traverse le bouchon d'une pique en bambou posée sur deux fourches : place-le sous un filet d'eau !",
-      "3. Note les performances, améliore (réflecteurs plus grands ? pales plus larges ?) et compare avec tes camarades.",
+      "Matériel : FOUR : boîte en carton, peinture ou papier noir, feuille d'aluminium, film plastique transparent, petit récipient d'eau, thermomètre si possible. MOULIN : bouchon de liège, plastique rigide, pique en bambou, deux fourches de support.",
+      "Protocole : 1. FOUR : tapisse le fond de noir, double les parois d'aluminium, tends le film en couvercle ; place le récipient d'eau au centre, oriente vers le soleil.",
+      "2. Mesure (ou estime au toucher) l'échauffement toutes les 15 minutes.",
+      "3. MOULIN : fends huit encoches dans le bouchon, glisse-y les pales, monte l'axe sur les fourches et place-le sous un filet d'eau.",
+      "4. Note les performances, améliore (réflecteurs plus grands ? pales plus larges ?) et ressaie.",
+      "Observation : l'eau du four devient nettement chaude en une heure de plein soleil ; le moulin tourne d'autant plus vite que le filet frappe le bord des pales.",
+      "Conclusion : besoin → conception → essai → amélioration : tu as parcouru toute la démarche technologique avec deux vraies machines à énergie. Projet réussi !",
     ],
   },
   substitutions: [

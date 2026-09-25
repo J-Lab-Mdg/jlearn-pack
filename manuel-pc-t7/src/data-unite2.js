@@ -119,7 +119,9 @@ const S13 = {
           "Circuit en dérivation : plusieurs branches reliées par des nœuds ; le courant se partage.",
           "Circuit mixte : combinaison des deux ; certains dipôles en série, d'autres en dérivation.",
         ],
-        paras: [],
+        paras: [
+          "Vocabulaire à bien fixer : la boucle est le chemin fermé du courant ; une branche est une portion de circuit entre deux nœuds ; un nœud est un point où se rejoignent au moins trois fils.",
+        ],
       },
       {
         titre: "2. Que se passe-t-il en cas de panne ?",
@@ -128,7 +130,9 @@ const S13 = {
           "En dérivation : seule la branche en panne s'arrête.",
           "En mixte : un dipôle en série commande tout ; un dipôle en dérivation ne commande que sa branche.",
         ],
-        paras: [],
+        paras: [
+          "C'est LE test pratique pour reconnaître un montage : dévisse une lampe et observe les autres. Tout s'éteint → elle était en série ; le reste brille → elle était en dérivation.",
+        ],
       },
       {
         titre: "3. Lire un circuit mixte",
@@ -137,16 +141,27 @@ const S13 = {
           "Exemple de la figure 11 : le courant traverse obligatoirement L1, puis se partage au nœud entre L2 et L3, avant de se reformer et de revenir à la pile.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une guirlande de fête s'éteint entièrement quand une seule ampoule grille. Quel est le type de montage ? Justifie. Solution : c'est un montage en SÉRIE : le courant n'a qu'un seul chemin ; une ampoule grillée ouvre la boucle et coupe tout. En dérivation, seules les branches en panne s'éteindraient.",
+          "Exemple 2 — Dans un circuit, L1 est avant le nœud A ; L2 et L3 sont chacune sur une branche entre les nœuds A et B. On dévisse L2 : que deviennent L1 et L3 ? Solution : L1 (en série avec l'ensemble) et L3 (sur sa propre branche) restent allumées : le courant passe encore par L1 puis la branche de L3. Seule la branche de L2 est coupée.",
+        ],
+      },
     ],
     saisTu: [
       "L'installation électrique d'une maison est un immense circuit mixte : toutes les prises et lampes sont en dérivation (chacune s'allume indépendamment), mais le disjoncteur général est en série avec tout : quand il coupe, plus rien ne fonctionne. C'est sa mission de sécurité !",
+      "Les guirlandes modernes à DEL sont passées au montage en dérivation : une ampoule grillée ne gâche plus la fête ! Un simple choix de circuit a réglé un problème vieux de cent ans.",
     ],
     experience: [
       "Le circuit mixte à trois lampes (matériel de récupération) :",
-      "1. Avec une pile plate et des fils, monte une lampe L1, puis, après elle, deux lampes L2 et L3 côte à côte sur deux branches.",
-      "2. Dévisse L1 : vérifie que tout s'éteint.",
-      "3. Revisse L1 et dévisse L2 : vérifie que L1 et L3 restent allumées.",
-      "4. Compare l'éclat des lampes : L1, traversée par tout le courant, brille-t-elle plus fort ?",
+      "Matériel : une pile plate 4,5 V, des fils électriques, trois petites lampes avec supports (ou douilles improvisées), ruban adhésif.",
+      "Protocole : 1. Monte une lampe L1 à la sortie de la pile, puis, après elle, deux lampes L2 et L3 côte à côte sur deux branches.",
+      "2. Dévisse L1 et observe le circuit.",
+      "3. Revisse L1, puis dévisse L2 et observe.",
+      "4. Compare l'éclat des trois lampes.",
+      "Observation : sans L1, tout s'éteint ; sans L2, L1 et L3 restent allumées ; L1, traversée par tout le courant, brille plus fort que L2 et L3.",
+      "Conclusion : la position dans le circuit décide de tout : en série, on commande tout le monde ; en dérivation, chacun vit sa vie. Le circuit mixte combine les deux.",
     ],
   },
   substitutions: [
@@ -340,6 +355,7 @@ const S14 = {
         ],
         paras: [
           "Sur un schéma, le circuit est dessiné en rectangle, à la règle : c'est la convention internationale.",
+          "Méthode du bon schéma : 1) liste les dipôles du montage ; 2) dessine le rectangle à la règle ; 3) place les symboles sur les côtés ; 4) marque les bornes + et − de la pile ; 5) vérifie qu'aucun symbole n'est inventé !",
         ],
       },
       {
@@ -354,18 +370,30 @@ const S14 = {
         titre: "3. Tension et éclat de la lampe",
         paras: [
           "Plus la tension appliquée à une lampe est grande, plus elle brille : mais chaque lampe a une tension nominale inscrite sur son culot (3,5 V ; 6 V…). Au-delà, le filament chauffe trop : la lampe grille !",
+          "Trois situations à connaître : U < tension nominale : sous-tension, la lampe brille faiblement ; U = tension nominale : éclat normal ; U > tension nominale : surtension, la lampe grille.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Radio à 4 piles de 1,5 V en série : quelle tension reçoit-elle ? Et si une pile est montée à l'envers ? Solution : 4 × 1,5 = 6 V. Avec une pile à l'envers : 1,5 + 1,5 + 1,5 − 1,5 = 3 V : la radio, prévue pour 6 V, fonctionne mal ou pas du tout. Le sens des piles compte !",
+          "Exemple 2 — Une lampe porte l'indication « 3,5 V ». Peut-on la brancher sur une pile plate de 4,5 V ? Solution : 4,5 > 3,5 : la lampe est en surtension : elle brillera très fort… puis grillera rapidement. Il faudrait une pile de tension égale (ou légèrement inférieure) à sa tension nominale.",
         ],
       },
     ],
     saisTu: [
       "La toute première pile a été inventée par Alessandro Volta en 1800 : un empilement (d'où le mot « pile » !) de disques de zinc et de cuivre séparés par du tissu imbibé d'eau salée. C'était déjà une association en série ! L'unité de tension, le volt, honore son nom.",
+      "Les symboles normalisés sont les mêmes à Antananarivo, à Paris et à Tokyo : un électricien malgache peut lire le schéma d'un appareil japonais sans parler un mot de japonais. Le schéma est la langue mondiale de l'électricité !",
     ],
     experience: [
       "Le porte-piles improvisé :",
-      "1. Récupère deux ou trois piles rondes de 1,5 V encore chargées.",
-      "2. Aligne-les bout à bout (+ contre −) dans une gouttière de carton pliée.",
-      "3. Maintiens-les serrées avec un élastique, un fil dénudé à chaque extrémité.",
-      "4. Branche une petite lampe de torche : compare son éclat avec 1, 2 puis 3 piles. Note tes observations !",
+      "Matériel : deux ou trois piles rondes de 1,5 V, du carton, un élastique, deux fils dénudés, une petite lampe de torche.",
+      "Protocole : 1. Plie une gouttière de carton à la taille des piles.",
+      "2. Aligne les piles bout à bout (+ contre −) et serre-les avec l'élastique, un fil à chaque extrémité.",
+      "3. Branche la lampe avec 1 pile, puis 2, puis 3 : observe l'éclat à chaque étape.",
+      "4. Retourne une pile et recommence.",
+      "Observation : l'éclat augmente avec le nombre de piles (1,5 V ; 3 V ; 4,5 V) ; avec une pile retournée, la lampe faiblit nettement.",
+      "Conclusion : en série, les tensions s'ajoutent — à condition de respecter le sens + contre − : tu as construit et vérifié ta propre association de piles.",
     ],
   },
   substitutions: [
@@ -557,6 +585,7 @@ const S15 = {
           "Dans un circuit en série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes de chaque récepteur :",
           "U (pile) = U1 + U2 + U3 + …",
           "La tension de la pile « se partage » entre les récepteurs. Si les lampes sont identiques, le partage est égal ; sinon, chacune prend une part différente.",
+          "Analogie : la tension de la pile est comme une galette à partager : les convives en série se la divisent ; il ne reste rien en dehors des parts.",
         ],
       },
       {
@@ -573,15 +602,26 @@ const S15 = {
           "C'est la loi d'unicité qui explique le branchement des maisons : toutes les lampes et prises, en dérivation, reçoivent la même tension du secteur (220 V à Madagascar). En série, chaque appareil n'en recevrait qu'une fraction et rien ne fonctionnerait correctement !",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Pile de 9 V, deux lampes en série : U1 = 5 V. Calcule U2. Solution : loi d'additivité : U = U1 + U2, donc U2 = 9 − 5 = 4 V. Vérification : 5 + 4 = 9 V ✔. Cohérence : chaque tension partielle est bien inférieure à 9 V.",
+          "Exemple 2 — Trois lampes différentes branchées en dérivation sur une pile de 4,5 V. Donne la tension aux bornes de chacune. Solution : loi d'unicité : U1 = U2 = U3 = 4,5 V : chaque branche est reliée directement aux bornes de la pile, quelle que soit la lampe. Pas de calcul à faire — juste la bonne loi !",
+        ],
+      },
     ],
     saisTu: [
       "Le réseau de la JIRAMA distribue le 220 V dans les maisons : toutes les prises sont en dérivation, conformément à la loi d'unicité. Mais attention : 220 V est une tension dangereuse, voire mortelle. On n'ouvre JAMAIS une prise ni un appareil branché : nos expériences se font uniquement avec des piles, sans danger.",
+      "Les oiseaux posés sur un fil électrique ne ressentent rien : leurs deux pattes touchent le même fil, la tension entre elles est quasi nulle ! C'est la différence de tension qui fait circuler le courant, pas la tension toute seule.",
     ],
     experience: [
       "Le partage de tension (visible sans voltmètre !) :",
-      "1. Monte deux lampes identiques en série sur une pile plate : chaque lampe brille faiblement (elle ne reçoit que la moitié de la tension).",
-      "2. Monte les deux mêmes lampes en dérivation : chacune brille fort (chacune reçoit toute la tension).",
+      "Matériel : une pile plate 4,5 V, deux lampes identiques, des fils.",
+      "Protocole : 1. Monte les deux lampes en série sur la pile et observe leur éclat.",
+      "2. Remonte les deux mêmes lampes en dérivation et observe à nouveau.",
       "3. Explique la différence avec les deux lois de la tension.",
+      "Observation : en série, chaque lampe brille faiblement (elle ne reçoit que 4,5 ÷ 2 ≈ 2,25 V) ; en dérivation, chacune brille fort (elle reçoit les 4,5 V entiers).",
+      "Conclusion : l'éclat des lampes rend les lois visibles : additivité en série (la tension se partage), unicité en dérivation (chacun reçoit tout).",
     ],
   },
   substitutions: [
@@ -791,18 +831,29 @@ const S16 = {
         ],
         paras: [
           "Retiens ce croisement : c'est la clé de tous les exercices d'électricité !",
+          "Moyen mnémotechnique : les deux lois se CROISENT : ce qui s'additionne en série (la tension) est unique en dérivation, et inversement. Si tu te souviens d'une case, tu retrouves les trois autres.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Dans un circuit en série, l'ampèremètre placé avant la première lampe indique 0,3 A. Qu'indiquerait-il placé après la deuxième lampe ? Solution : loi d'unicité de l'intensité en série : 0,3 A, exactement pareil. Le courant ne s'use pas en traversant les dipôles.",
+          "Exemple 2 — Un circuit en dérivation a deux branches : I1 = 0,25 A et I2 = 0,15 A. Calcule l'intensité du courant principal. Solution : loi d'additivité : I = I1 + I2 = 0,25 + 0,15 = 0,4 A. Cohérence : chaque branche (0,25 et 0,15) est bien inférieure au courant principal (0,4 A) ✔.",
         ],
       },
     ],
     saisTu: [
       "L'ampère doit son nom au physicien français André-Marie Ampère (1775-1836), fondateur de l'électrodynamique. Un courant de 1 A correspond au passage d'environ six milliards de milliards d'électrons par seconde dans le fil : un débit vertigineux et pourtant invisible !",
+      "L'analogie de l'eau et des rizières n'est pas qu'une image : les ingénieurs hydrauliciens et les électriciens utilisent les mêmes mathématiques ! Débit d'eau et intensité électrique obéissent aux mêmes lois de partage aux nœuds.",
     ],
     experience: [
       "Le courant ne s'use pas (démonstration par l'éclat) :",
-      "1. Monte deux lampes identiques en série sur une pile plate.",
-      "2. Observe : les deux lampes brillent exactement pareil : celle « après » ne reçoit pas moins de courant !",
-      "3. Échange les deux lampes : rien ne change.",
-      "4. Conclusion : l'intensité est la même en tout point du circuit en série.",
+      "Matériel : une pile plate, deux lampes identiques, des fils.",
+      "Protocole : 1. Monte les deux lampes en série sur la pile.",
+      "2. Compare précisément l'éclat des deux lampes.",
+      "3. Échange les deux lampes de position et observe encore.",
+      "Observation : les deux lampes brillent exactement pareil, avant comme après l'échange : la lampe « après » ne reçoit pas moins de courant que la lampe « avant ».",
+      "Conclusion : l'intensité est la même en tout point d'un circuit en série : le courant n'est pas « consommé » par les dipôles — c'est l'énergie qui l'est, pas le courant !",
     ],
   },
   substitutions: [
@@ -985,7 +1036,9 @@ const S17 = {
           "Étape 2 — CHOISIR LA LOI : série → U additive, I unique ; dérivation → U unique, I additive.",
           "Étape 3 — CALCULER : écrire la loi, remplacer par les valeurs, poser l'opération.",
         ],
-        paras: [],
+        paras: [
+          "Le piège classique de l'étape 1 : se fier à la position des dipôles sur le dessin plutôt qu'au trajet du courant. Deux lampes côte à côte peuvent être en série, et deux lampes éloignées en dérivation : seuls les nœuds font foi !",
+        ],
       },
       {
         titre: "2. Vérifier la cohérence du résultat",
@@ -1003,23 +1056,26 @@ const S17 = {
         ],
       },
       {
-        titre: "4. Exemple résolu",
+        titre: "4. Exemples résolus",
         paras: [
-          "Circuit mixte, pile 9 V : L1 en série (U1 = 3 V), puis L2 et L3 en dérivation ; I = 0,6 A ; I2 = 0,4 A.",
-          "U aux bornes de l'ensemble en dérivation : 9 − 3 = 6 V (additivité). Donc U2 = U3 = 6 V (unicité).",
-          "I3 = 0,6 − 0,4 = 0,2 A (additivité de l'intensité). Et L1 est traversée par 0,6 A (unicité en série).",
+          "Exemple 1 — Circuit mixte, pile 9 V : L1 en série (U1 = 3 V), puis L2 et L3 en dérivation ; I = 0,6 A ; I2 = 0,4 A. Calcule toutes les grandeurs. Solution : U aux bornes de l'ensemble en dérivation : 9 − 3 = 6 V (additivité) ; donc U2 = U3 = 6 V (unicité). I3 = 0,6 − 0,4 = 0,2 A (additivité de l'intensité) ; et L1 est traversée par 0,6 A (unicité en série).",
+          "Exemple 2 — Un camarade annonce : pile 4,5 V, deux lampes en série avec U1 = 3 V et U2 = 2 V. Que réponds-tu ? Solution : contrôle de cohérence : U1 + U2 = 3 + 2 = 5 V > 4,5 V : IMPOSSIBLE ! La somme des tensions partielles doit égaler la tension de la pile. Une des mesures est fausse : il faut les refaire. La vérification de cohérence évite d'accepter des résultats absurdes.",
         ],
       },
     ],
     saisTu: [
       "Les techniciens qui entretiennent les centrales hydroélectriques d'Andekaleka ou de Mandraka utilisent chaque jour ces quatre lois : leurs multimètres et leurs calculs leur permettent de surveiller des circuits transportant des milliers d'ampères, sans jamais les « voir » directement !",
+      "Les réparateurs de téléphones du marché appliquent la même méthode en miniature : quelques mesures au multimètre sur une carte grande comme un timbre, les lois des circuits… et la panne est localisée. Mêmes lois, du barrage géant au smartphone !",
     ],
     experience: [
       "Le jeu du circuit mystère (à deux) :",
-      "1. Ton camarade invente un circuit (série, dérivation ou mixte) avec une pile et 2 ou 3 lampes, et choisit des valeurs cohérentes de U et I.",
-      "2. Il ne te donne que quelques valeurs : à toi de calculer toutes les autres avec les lois !",
+      "Matériel : papier, crayon, et éventuellement pile + lampes pour vérifier en vrai.",
+      "Protocole : 1. Ton camarade invente un circuit (série, dérivation ou mixte) avec une pile et 2 ou 3 lampes, et choisit des valeurs cohérentes de U et I.",
+      "2. Il ne te donne que quelques valeurs : à toi de calculer toutes les autres avec les lois.",
       "3. Vérifiez ensemble la cohérence : sommes exactes, aucune valeur impossible.",
-      "4. Échangez les rôles. Qui résout le plus vite ?",
+      "4. Échangez les rôles.",
+      "Observation : chaque circuit bien posé n'a qu'une seule solution : les lois déterminent toutes les valeurs manquantes.",
+      "Conclusion : les quatre lois des circuits forment un vrai jeu de logique : quelques indices suffisent pour tout reconstituer — exactement le travail du technicien de diagnostic.",
     ],
   },
   substitutions: [
@@ -1210,6 +1266,7 @@ const S18 = {
         paras: [
           "Un aimant attire le fer et les matériaux qui en contiennent (acier, fonte). Il n'attire ni les autres métaux (cuivre, aluminium, or), ni les isolants (bois, plastique, verre).",
           "L'attraction agit à distance, et même à travers le papier, le verre ou l'eau.",
+          "Piège à éviter : « métal » ne veut pas dire « attiré par l'aimant » ! La plupart des métaux (cuivre, aluminium, or, argent) ne sont PAS attirés : seul le fer et ses alliages le sont.",
         ],
       },
       {
@@ -1227,18 +1284,29 @@ const S18 = {
         ],
         paras: [
           "C'est la règle d'or du magnétisme : elle rappelle un peu l'électricité statique, mais attention, aimants et charges électriques sont deux phénomènes différents.",
+          "La répulsion est la vraie signature de l'aimant : un simple morceau de fer est TOUJOURS attiré ; seul un autre aimant peut être repoussé. Pour savoir si un objet est aimanté, cherche la répulsion !",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Trie ces objets selon qu'ils sont attirés ou non : clou en fer, cuillère en aluminium, pièce en acier, stylo en plastique, fil de cuivre. Solution : attirés : clou en fer, pièce en acier (alliage de fer). Non attirés : aluminium, plastique, cuivre. La règle : fer et alliages de fer seulement.",
+          "Exemple 2 — Deux barres métalliques identiques : l'une est un aimant, l'autre du fer doux. Comment les distinguer sans autre matériel ? Solution : approche les extrémités deux à deux. Si une configuration donne une RÉPULSION, les deux extrémités sont des pôles identiques de deux aimants : la barre testée est l'aimant. Le fer doux, lui, est attiré dans tous les cas, jamais repoussé.",
         ],
       },
     ],
     saisTu: [
       "La Terre elle-même est un aimant géant ! Son champ magnétique, créé par le fer liquide en mouvement dans son noyau, fait tourner toutes les boussoles du monde… et dévie les particules dangereuses venues du Soleil. Sans ce bouclier magnétique, la vie serait bien difficile sur notre planète.",
+      "La magnétite, l'aimant naturel, doit son nom à la région de Magnésie, en Grèce antique. On en trouve aussi à Madagascar : certains sables noirs de nos plages contiennent des grains de magnétite… qu'un aimant ramasse comme par magie !",
     ],
     experience: [
       "La course aux trombones :",
-      "1. Récupère un aimant (haut-parleur usagé, fermeture de sac, aimant de réfrigérateur).",
-      "2. Fais l'inventaire de la maison : liste dix objets et prédis lesquels seront attirés.",
-      "3. Teste et compare avec tes prédictions : les pièges classiques sont l'aluminium et le cuivre !",
-      "4. Trouve les pôles : plonge l'aimant dans des trombones et observe où ils s'accrochent le plus.",
+      "Matériel : un aimant (haut-parleur usagé, fermeture de sac, aimant de réfrigérateur), dix objets variés de la maison, des trombones.",
+      "Protocole : 1. Liste dix objets et prédis lesquels seront attirés.",
+      "2. Teste chaque objet et compare avec tes prédictions.",
+      "3. Plonge l'aimant dans un tas de trombones et observe où ils s'accrochent.",
+      "Observation : seuls les objets en fer ou en acier sont attirés (pièges classiques : l'aluminium et le cuivre ne le sont pas !) ; les trombones s'accumulent aux deux extrémités de l'aimant.",
+      "Conclusion : l'aimant ne choisit que le fer et ses alliages, et sa force se concentre à ses deux pôles.",
     ],
   },
   substitutions: [
@@ -1432,6 +1500,7 @@ const S19 = {
         titre: "1. Le champ magnétique",
         paras: [
           "Autour de tout aimant existe une zone invisible où il exerce son influence : le champ magnétique. Plus on s'éloigne de l'aimant, plus le champ faiblit.",
+          "Un champ est une idée puissante en physique : une influence répartie dans l'espace, invisible mais bien réelle : la limaille et la boussole la rendent visible.",
         ],
       },
       {
@@ -1450,18 +1519,30 @@ const S19 = {
         paras: [
           "La boussole est une aiguille aimantée libre de pivoter. Placée dans un champ magnétique, elle s'aligne sur les lignes de champ.",
           "Loin de tout aimant, elle s'aligne sur le champ magnétique de la Terre : sa pointe rouge (pôle Nord de l'aiguille) pointe vers le nord géographique. C'est l'instrument d'orientation le plus ancien et le plus fiable : il ne demande ni pile ni réseau !",
+          "Précaution d'usage : éloigne la boussole de tout objet en fer et de tout aimant (couteau, téléphone, table métallique) : sinon elle indique le champ de l'objet, pas celui de la Terre !",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Sur un dessin de lignes de champ, les lignes sont très serrées en A et très espacées en B. Où le champ est-il le plus fort ? Solution : en A : le resserrement des lignes de champ indique un champ fort (on est près d'un pôle) ; en B, lignes espacées : champ faible (on est loin de l'aimant).",
+          "Exemple 2 — La boussole de Faly indique un nord bizarre quand elle est posée sur sa table de camping en acier. Explique et corrige. Solution : l'acier de la table (alliage de fer) crée son propre effet magnétique et dévie l'aiguille. Correction : tenir la boussole en l'air, loin de la table et de tout objet en fer : l'aiguille retrouve alors le champ terrestre.",
         ],
       },
     ],
     saisTu: [
       "La boussole a été inventée en Chine il y a environ mille ans : une cuillère de magnétite posée sur un plateau de bronze poli, puis une aiguille aimantée flottant sur l'eau. Les navigateurs arabes et européens l'ont adoptée : sans elle, pas de grandes traversées océaniques… ni de peuplement de Madagascar par les navigateurs austronésiens venus de si loin !",
+      "Certains animaux ont une boussole intégrée : les tortues marines qui traversent l'océan Indien et les oiseaux migrateurs perçoivent le champ magnétique terrestre et s'en servent pour naviguer sur des milliers de kilomètres, sans carte ni GPS !",
     ],
     experience: [
       "Fabrique ta boussole flottante :",
-      "1. Frotte une aiguille à coudre 30 fois sur un aimant, toujours dans le même sens : elle s'aimante.",
-      "2. Pique-la à travers une rondelle de liège ou pose-la sur un petit morceau de feuille sèche.",
-      "3. Fais-la flotter dans un bol d'eau, loin de tout objet en fer.",
-      "4. L'aiguille pivote lentement et s'aligne nord-sud : vérifie avec le soleil levant (est) !",
+      "Matériel : une aiguille à coudre, un aimant, une rondelle de liège (ou un petit morceau de feuille sèche), un bol d'eau.",
+      "Protocole : 1. Frotte l'aiguille 30 fois sur l'aimant, toujours dans le même sens : elle s'aimante.",
+      "2. Pique-la à travers le liège ou pose-la délicatement sur la feuille.",
+      "3. Fais-la flotter au centre du bol, loin de tout objet en fer.",
+      "4. Fais pivoter doucement le bol : observe l'aiguille.",
+      "Observation : l'aiguille pivote lentement puis s'immobilise toujours dans la même direction nord-sud, même quand on tourne le bol : vérifie avec le soleil levant (est).",
+      "Conclusion : ton aiguille aimantée s'aligne sur le champ magnétique terrestre : tu as fabriqué une vraie boussole, l'instrument qui a guidé les navigateurs jusqu'à Madagascar.",
     ],
   },
   substitutions: [
@@ -1666,18 +1747,30 @@ const S20 = {
         ],
         paras: [
           "Cette découverte, l'électromagnétisme, est l'une des plus importantes de la physique : elle unit l'électricité et le magnétisme.",
+          "C'est l'avantage décisif sur l'aimant permanent : la bobine s'allume, s'éteint, s'inverse et se règle à volonté. Un aimant qu'on COMMANDE, voilà la révolution !",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une bobine alimentée attire un trombone. On inverse les fils de la pile : la bobine attire-t-elle toujours le trombone ? Solution : oui ! Les faces Nord et Sud s'échangent, mais le fer doux du trombone est attiré par les DEUX pôles. L'inversion ne se remarque qu'avec un aimant ou une boussole, qui distinguent le Nord du Sud.",
+          "Exemple 2 — Cite trois moyens d'augmenter la force magnétique d'une bobine. Solution : 1) augmenter le nombre de spires ; 2) augmenter l'intensité du courant (pile plus puissante) ; 3) et, comme on le verra à la prochaine séance, glisser un noyau de fer doux à l'intérieur : c'est le futur électroaimant !",
         ],
       },
     ],
     saisTu: [
       "L'électromagnétisme a été découvert presque par hasard en 1820 : le danois Hans Christian Ørsted remarqua qu'une boussole déviait près d'un fil parcouru par un courant, pendant un cours devant ses étudiants ! Quelques semaines plus tard, Ampère expliquait le phénomène : l'électricité en mouvement crée du magnétisme.",
+      "Ta maison est pleine de bobines cachées : dans les haut-parleurs, les moteurs de ventilateur, les transformateurs de chargeurs, les sonnettes… Chaque fois que l'électricité doit produire du mouvement ou du son, une bobine est à l'œuvre !",
     ],
     experience: [
       "Ta première bobine magnétique :",
-      "1. Enroule soigneusement 30 à 50 tours de fil de cuivre isolé fin autour d'un gros stylo ; retire le stylo.",
+      "Matériel : 1 à 2 m de fil de cuivre isolé fin, un gros stylo, une pile plate, un trombone léger, ta boussole flottante, papier de verre.",
+      "Protocole : 1. Enroule soigneusement 30 à 50 tours de fil autour du stylo, puis retire le stylo.",
       "2. Dénude les deux extrémités du fil sur 1 cm.",
-      "3. Branche-les quelques secondes sur une pile plate et approche un trombone léger ou ta boussole flottante.",
-      "4. Observe l'attraction, puis coupe le courant : tout s'arrête ! (Ne laisse pas branché : la pile chauffe et s'use vite.)",
+      "3. Branche brièvement la bobine sur la pile et approche le trombone, puis la boussole.",
+      "4. Inverse les fils et recommence avec la boussole. (Ne laisse pas branché : la pile chauffe et s'use vite.)",
+      "Observation : sous courant, la bobine attire le trombone et fait tourner la boussole ; courant coupé, tout s'arrête ; courant inversé, la boussole tourne dans l'autre sens.",
+      "Conclusion : le courant électrique crée un champ magnétique commandable : tu viens de reproduire la découverte d'Ørsted avec un stylo et une pile.",
     ],
   },
   substitutions: [
@@ -1862,6 +1955,7 @@ const S21 = {
         paras: [
           "Un électroaimant est une bobine enroulée autour d'un noyau de fer doux. Le noyau concentre les lignes de champ et amplifie considérablement l'attraction : là où la bobine seule soulevait un trombone, l'électroaimant soulève une poignée de clous !",
           "Il garde toutes les qualités de la bobine : commandé par le courant (marche/arrêt), inversable, réglable.",
+          "Pourquoi du fer DOUX ? Parce qu'il perd son magnétisme dès que le courant s'arrête : l'électroaimant relâche sa charge à la demande. Un noyau d'acier resterait aimanté : impossible de « lâcher prise » !",
         ],
       },
       {
@@ -1883,16 +1977,27 @@ const S21 = {
           "le cycle se répète des dizaines de fois par seconde : dring !",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Dans une casse automobile, une grue soulève les carcasses avec un gros disque suspendu, puis les lâche plus loin. Explique le fonctionnement. Solution : le disque est un électroaimant géant : courant établi → il attire et retient la carcasse d'acier ; courant coupé → le fer doux perd son magnétisme et la charge tombe. Un aimant permanent, lui, ne pourrait jamais « lâcher ».",
+          "Exemple 2 — Pourquoi la sonnerie électrique sonne-t-elle en continu tant qu'on appuie sur le bouton, alors que l'électroaimant coupe lui-même son courant ? Solution : c'est un cycle automatique : attiré, le marteau OUVRE le contact (le courant se coupe, l'attraction cesse) ; le ressort le ramène et FERME le contact (le courant revient). Ce va-et-vient se répète des dizaines de fois par seconde : le « dring » continu est en réalité une mitraille de petits coups !",
+        ],
+      },
     ],
     saisTu: [
       "Les trains à sustentation magnétique (Maglev) du Japon et de Chine roulent… sans toucher le rail ! D'immenses électroaimants les font léviter et les propulsent à plus de 600 km/h. Le record du monde ferroviaire appartient à un train qui ne touche pas le sol : merci l'électroaimant !",
+      "La pompe à eau du village et le ventilateur du bureau contiennent le même cœur : un moteur à électroaimants. Des milliards de moteurs électriques tournent en ce moment sur Terre : l'électroaimant est sans doute la machine la plus répandue du monde !",
     ],
     experience: [
       "Fabrique ton électroaimant pêcheur de clous :",
-      "1. Enroule 50 tours de fil de cuivre isolé bien serrés autour d'un gros clou (garde 15 cm de fil libre de chaque côté).",
-      "2. Dénude les extrémités et branche-les sur une pile plate (brièvement !).",
+      "Matériel : un gros clou, 1 à 2 m de fil de cuivre isolé, une pile plate, des trombones et petits clous, papier de verre.",
+      "Protocole : 1. Enroule 50 tours de fil bien serrés autour du gros clou (garde 15 cm de fil libre de chaque côté).",
+      "2. Dénude les extrémités et branche-les brièvement sur la pile.",
       "3. Pêche des trombones et petits clous : compte ta récolte.",
-      "4. Compare avec et sans noyau, avec 25 et 50 spires. Coupe le courant : tout tombe !",
+      "4. Compare : sans noyau (bobine seule), avec 25 spires, avec 50 spires. Coupe le courant à chaque fois.",
+      "Observation : avec le clou comme noyau, la récolte est bien plus grosse ; plus de spires = plus de prises ; courant coupé : tout tombe instantanément.",
+      "Conclusion : noyau de fer + spires nombreuses + courant = électroaimant puissant et commandable : le principe des grues magnétiques, des sonneries et des moteurs.",
     ],
   },
   substitutions: [

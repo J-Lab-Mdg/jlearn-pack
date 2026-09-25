@@ -112,12 +112,14 @@ const S24 = {
         titre: "1. Le mobile",
         paras: [
           "Un mobile est un objet dont on étudie le mouvement : une bille qui roule, un taxi-brousse sur la route, un coureur sur la piste, la Lune autour de la Terre.",
+          "Précision importante : le mouvement se décrit toujours PAR RAPPORT à quelque chose. Assis dans le taxi-brousse, tu es immobile par rapport au siège… mais en mouvement par rapport à la route !",
         ],
       },
       {
         titre: "2. La trajectoire",
         paras: [
           "La trajectoire est la ligne formée par toutes les positions successives du mobile. Quand cette ligne est droite, le mouvement est rectiligne : c'est le cas que nous étudions cette année.",
+          "Autres trajectoires que tu connais déjà : circulaire (bout de l'aiguille d'une montre) ou curviligne (fruit lancé). L'adjectif décrit la FORME de la ligne, rien d'autre.",
         ],
       },
       {
@@ -138,16 +140,27 @@ const S24 = {
           "Si les durées sont toutes égales, comparer les distances M0M1, M1M2, M2M3 suffit pour savoir si le mobile va toujours aussi vite, accélère ou ralentit : c'est l'objet de la prochaine séance !",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une bille roule sur une table. Relevé chaque seconde : M0M1 = 20 cm ; M1M2 = 20 cm ; M2M3 = 20 cm. Décris la trajectoire et le mouvement. Solution : les positions sont alignées : trajectoire rectiligne ; les distances par seconde sont égales : la bille parcourt toujours 20 cm chaque seconde, son allure ne change pas.",
+          "Exemple 2 — Pourquoi faut-il relever les positions à intervalles de temps ÉGAUX ? Que se passerait-il sinon ? Solution : avec des durées égales, les distances se comparent directement : distances égales = allure constante. Avec des durées inégales, une grande distance pourrait venir d'une longue durée et non d'une grande vitesse : le relevé ne prouverait plus rien.",
+        ],
+      },
     ],
     saisTu: [
       "Avant le cinéma, le photographe Étienne-Jules Marey inventa en 1882 le « fusil photographique » : douze photos par seconde sur la même plaque ! Ses images d'oiseaux en vol et de chevaux au galop sont exactement des relevés de positions à intervalles réguliers : la science du mouvement a donné naissance au cinéma.",
+      "Le GPS de nos téléphones fait un relevé de positions permanent : plusieurs fois par seconde, il note où tu es. C'est en comparant ces positions successives qu'il calcule ta vitesse : exactement la méthode de cette séance, automatisée par des satellites !",
     ],
     experience: [
       "Le relevé de positions dans la cour :",
-      "1. Trace à la craie une ligne droite de 10 mètres, graduée tous les mètres.",
-      "2. Un camarade marche « au métronome » le long de la ligne pendant qu'un autre frappe des mains chaque seconde.",
-      "3. À chaque battement, un troisième note la position atteinte.",
-      "4. Dressez le tableau du relevé, puis recommencez avec une marche qui accélère : comparez les deux tableaux !",
+      "Matériel : de la craie, un mètre ou une corde étalonnée, trois camarades (un marcheur, un métronome, un secrétaire).",
+      "Protocole : 1. Trace une ligne droite de 10 mètres, graduée tous les mètres.",
+      "2. Le marcheur avance le long de la ligne pendant que le « métronome » frappe des mains chaque seconde.",
+      "3. À chaque battement, le secrétaire note la position atteinte.",
+      "4. Dressez le tableau du relevé, puis recommencez avec une marche qui accélère.",
+      "Observation : marche régulière : positions régulièrement espacées ; marche accélérée : les espaces grandissent de battement en battement.",
+      "Conclusion : le tableau de relevé raconte toute l'histoire du mouvement : la régularité des espacements révèle la régularité de l'allure.",
     ],
   },
   substitutions: [
@@ -340,7 +353,9 @@ const S25 = {
           "Accéléré : distances CROISSANTES : la vitesse augmente. Exemple : fruit qui tombe, vélo dans la descente, taxi-brousse qui démarre.",
           "Retardé : distances DÉCROISSANTES : la vitesse diminue. Exemple : véhicule qui freine, bille lancée dans une montée, pirogue qui accoste.",
         ],
-        paras: [],
+        paras: [
+          "Moyen mnémotechnique : regarde comment évoluent les écarts : constants, croissants ou décroissants : U-A-R comme Uniforme, Accéléré, Retardé.",
+        ],
       },
       {
         titre: "3. Les mouvements de la vie réelle",
@@ -348,16 +363,27 @@ const S25 = {
           "Un trajet réel enchaîne les trois types : le taxi-brousse démarre (accéléré), maintient son allure sur la route droite (uniforme), puis freine à l'arrivée (retardé). Savoir découper un mouvement en phases est le premier pas de toute la mécanique !",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Relevé chaque seconde d'un cycliste : 2 m ; 4 m ; 6 m ; 8 m (distances successives). Analyse le mouvement. Solution : les distances par seconde augmentent régulièrement (2, 4, 6, 8) : le mouvement est rectiligne ACCÉLÉRÉ : le cycliste démarre et prend de la vitesse à chaque seconde.",
+          "Exemple 2 — Une bille lancée sur le carrelage donne : 50 cm ; 40 cm ; 30 cm ; 20 cm. Décris le mouvement et prédis la suite. Solution : distances décroissantes : mouvement RETARDÉ : les frottements freinent la bille. Prédiction : environ 10 cm à la seconde suivante, puis l'arrêt : la vitesse diminue jusqu'à s'annuler.",
+        ],
+      },
     ],
     saisTu: [
       "C'est Galilée qui, vers 1600, étudia le mouvement accéléré en faisant rouler des billes sur des plans inclinés : faute de chronomètre, il mesurait le temps... en chantant à rythme régulier et en pesant l'eau qui s'écoulait d'un robinet ! Il découvrit ainsi que la chute des corps est un mouvement uniformément accéléré.",
+      "Les radars de sécurité routière font exactement l'analyse de cette séance : deux positions du véhicule à un intervalle de temps connu, une division… et la vitesse s'affiche. Comparer des distances à durée égale : la méthode de Galilée protège aujourd'hui nos routes !",
     ],
     experience: [
       "Les trois mouvements de la bille :",
-      "1. Pose une gouttière (bambou fendu, rail) bien à plat : pichenette, et marque les positions chaque seconde : distances égales ?",
-      "2. Incline la gouttière en descente : lâche la bille sans pousser : les marques s'écartent de plus en plus !",
-      "3. Incline-la en montée et lance la bille vers le haut : les marques se resserrent.",
-      "4. Étiquette tes trois relevés : uniforme, accéléré, retardé.",
+      "Matériel : une gouttière (bambou fendu, rail), une bille, de la craie, un camarade « métronome ».",
+      "Protocole : 1. Pose la gouttière bien à plat : pichenette de départ, et marque la position de la bille à chaque battement de seconde.",
+      "2. Incline la gouttière en descente : lâche la bille SANS pousser et marque de la même façon.",
+      "3. Incline-la en montée et lance la bille vers le haut : marque encore.",
+      "4. Étiquette tes trois relevés.",
+      "Observation : à plat, marques régulièrement espacées (uniforme) ; en descente, écarts croissants (accéléré) ; en montée, écarts qui se resserrent (retardé).",
+      "Conclusion : la même bille réalise les trois mouvements rectilignes : seule la pente (et donc la cause du mouvement) a changé : tu as reproduit les expériences de Galilée !",
     ],
   },
   substitutions: [

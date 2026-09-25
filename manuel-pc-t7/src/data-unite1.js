@@ -116,6 +116,7 @@ const S1 = {
         titre: "1. Le même volume, des masses différentes",
         paras: [
           "Un litre d'eau pèse 1 kg ; un litre d'huile pèse environ 0,9 kg ; un litre de fer pèserait 7,8 kg ! À volume égal, chaque matière a sa propre masse.",
+          "C'est pour cela qu'un « petit » objet peut être très lourd (une enclume) et un « gros » objet très léger (un ballot de paille) : la taille ne dit pas tout, la matière compte.",
         ],
       },
       {
@@ -124,6 +125,8 @@ const S1 = {
           "La masse volumique d'une matière est la masse d'une unité de volume de cette matière.",
           "Formule : masse volumique = masse ÷ volume",
           "Unités : le gramme par centimètre cube (g/cm³) ou le kilogramme par litre (kg/L). Les deux sont équivalentes : 1 g/cm³ = 1 kg/L.",
+          "Astuce du triangle : place la masse m en haut, la masse volumique et le volume V en bas. Cache la grandeur cherchée : masse = masse volumique × V ; V = masse ÷ masse volumique.",
+          "Piège à éviter : la masse et le volume doivent être mesurés sur le MÊME échantillon, et les unités doivent aller ensemble : grammes avec cm³, kilogrammes avec litres.",
         ],
       },
       {
@@ -144,16 +147,27 @@ const S1 = {
           "La masse volumique est une carte d'identité de la matière : en mesurant la masse (balance) et le volume (éprouvette, déplacement d'eau), puis en calculant le rapport, on peut reconnaître de quel matériau un objet est fait.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un caillou a une masse de 60 g et fait monter l'eau d'une éprouvette de 20 mL. Calcule sa masse volumique. Données : m = 60 g ; V = 20 mL = 20 cm³. Formule : masse volumique = m ÷ V. Calcul : 60 ÷ 20 = 3 g/cm³. Vérification : 3 × 20 = 60 g ✔.",
+          "Exemple 2 — Un morceau de métal gris pèse 54 g pour un volume de 20 cm³. Quel est ce métal ? Solution : masse volumique = 54 ÷ 20 = 2,7 g/cm³. En comparant au tableau : c'est l'aluminium. La masse volumique a servi de carte d'identité !",
+        ],
+      },
     ],
     saisTu: [
       "Les orpailleurs malgaches, sur les rivières de la région de Maevatanana, utilisent la masse volumique sans le savoir : en lavant le sable dans leur batée, l'or (19,3 g/cm³), beaucoup plus dense que le sable (2,6 g/cm³), reste au fond pendant que le sable part avec l'eau !",
+      "L'air aussi a une masse volumique : environ 1,2 g par litre. L'air contenu dans ta salle de classe pèse plusieurs dizaines de kilogrammes… l'équivalent d'un élève entier, invisible au-dessus de vos têtes !",
     ],
     experience: [
       "Mesure la masse volumique d'un caillou :",
-      "1. Pèse un caillou avec une balance de cuisine (note sa masse en g).",
-      "2. Remplis un verre doseur d'eau jusqu'à une graduation précise, note le niveau.",
-      "3. Plonge le caillou : la montée du niveau donne son volume en mL (= cm³).",
-      "4. Divise la masse par le volume : tu obtiens la masse volumique en g/cm³ !",
+      "Matériel : un caillou, une balance de cuisine, un verre doseur (ou une bouteille graduée), de l'eau.",
+      "Protocole : 1. Pèse le caillou et note sa masse en grammes.",
+      "2. Remplis le verre doseur jusqu'à une graduation précise : note le niveau.",
+      "3. Plonge doucement le caillou : note le nouveau niveau ; la différence donne son volume en mL (= cm³).",
+      "4. Divise la masse par le volume.",
+      "Observation : par exemple 60 g pour 20 cm³ : masse volumique = 3 g/cm³, plus dense que l'eau.",
+      "Conclusion : deux mesures simples (balance + niveau d'eau) suffisent pour calculer la masse volumique de n'importe quel objet insoluble — la méthode d'Archimède, vieille de 2 300 ans !",
     ],
   },
   substitutions: [
@@ -337,6 +351,7 @@ const S2 = {
           "L'eau est la référence : sa masse volumique vaut 1 g/cm³. Pour comparer une matière à l'eau, on calcule sa densité :",
           "densité = masse volumique de la substance ÷ masse volumique de l'eau",
           "La densité est un nombre sans unité, car les deux unités du rapport se simplifient.",
+          "Conséquence pratique : quand la masse volumique est exprimée en g/cm³, la densité a la même valeur numérique : le fer (7,8 g/cm³) a une densité de 7,8. Simple !",
         ],
       },
       {
@@ -353,18 +368,30 @@ const S2 = {
         paras: [
           "Quand on superpose délicatement des liquides non miscibles, chacun se place selon sa densité : le plus dense au fond, le moins dense en surface.",
           "Exemple avec trois étages : sirop (d ≈ 1,3) en bas, eau (d = 1) au milieu, huile (d ≈ 0,9) en haut.",
+          "Méthode pour réussir : toujours verser du plus dense au moins dense, doucement, le long d'une cuillère : sinon tout se mélange !",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — L'alcool a une masse volumique de 0,8 g/cm³. Calcule sa densité et dis s'il flotterait sur l'eau. Solution : d = 0,8 ÷ 1 = 0,8 (sans unité). d < 1 : l'alcool est moins dense que l'eau : versé délicatement, il resterait au-dessus.",
+          "Exemple 2 — La densité du fer est 7,8. Quelle est la masse d'un litre de fer ? Solution : d = 7,8 signifie que le fer est 7,8 fois plus dense que l'eau. Or 1 L d'eau pèse 1 kg : 1 L de fer pèse donc 7,8 kg. La densité permet de calculer sans même connaître la formule !",
         ],
       },
     ],
     saisTu: [
       "Dans le canal du Mozambique, l'eau de mer est plus dense que l'eau douce à cause du sel dissous (d ≈ 1,03). C'est pourquoi il est plus facile de flotter dans la mer que dans un lac ! Dans la mer Morte, au Proche-Orient, l'eau est si salée (d ≈ 1,24) qu'on y flotte sans nager.",
+      "Pour vérifier qu'un lait n'a pas été coupé d'eau, les laiteries plongent un densimètre : le lait pur a une densité d'environ 1,03 ; si l'appareil s'enfonce trop, c'est qu'il y a de l'eau ajoutée. La densité, détectrice de fraude !",
     ],
     experience: [
       "Fabrique ton cocktail à étages :",
-      "1. Verse 3 cm de sirop ou de miel au fond d'un grand verre.",
-      "2. Verse doucement de l'eau (colorée si possible) en la faisant couler sur une cuillère retournée.",
+      "Matériel : un grand verre transparent, du sirop ou du miel, de l'eau (colorée si possible), de l'huile, une cuillère.",
+      "Protocole : 1. Verse 3 cm de sirop au fond du verre.",
+      "2. Verse doucement l'eau en la faisant couler sur le dos de la cuillère retournée.",
       "3. Verse enfin l'huile de la même façon.",
-      "4. Admire les trois étages : chaque liquide a trouvé sa place selon sa densité !",
+      "4. Pour aller plus loin : dépose un petit objet (grain de riz, morceau de bougie) et observe où il s'arrête.",
+      "Observation : trois étages nets se forment : sirop en bas (d ≈ 1,3), eau au milieu (d = 1), huile en haut (d ≈ 0,9).",
+      "Conclusion : chaque liquide se place selon sa densité, le plus dense au fond : la densité est le classement vertical de la matière.",
     ],
   },
   substitutions: [
@@ -563,7 +590,9 @@ const S3 = {
           "Si elle est supérieure (densité > 1) : le corps coule.",
           "Si elle est égale (densité = 1) : le corps reste entre deux eaux.",
         ],
-        paras: [],
+        paras: [
+          "Méthode : pour prévoir le comportement d'un corps, il suffit donc de comparer sa densité à 1 — une simple comparaison de nombres remplace l'expérience !",
+        ],
       },
       {
         titre: "3. Le cas des objets creux",
@@ -578,16 +607,27 @@ const S3 = {
           "Un même corps peut flotter dans un liquide dense et couler dans un liquide léger. L'œuf frais coule dans l'eau douce (d de l'œuf ≈ 1,03) mais flotte dans l'eau très salée (d ≈ 1,1).",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un morceau de bois de densité 0,6 et une bille de verre de densité 2,5 sont jetés dans l'eau. Prévois leur comportement. Solution : bois : 0,6 < 1 → il flotte, en partie immergé. Verre : 2,5 > 1 → la bille coule. Il suffit de comparer chaque densité à 1.",
+          "Exemple 2 — Un bidon métallique fermé flotte ; percé, il coule lentement. Explique. Solution rédigée : fermé, le bidon contient beaucoup d'air : sa masse volumique moyenne (métal + air) est inférieure à 1. Percé, l'eau remplace l'air : la masse volumique moyenne dépasse 1 et le bidon coule. La densité moyenne décide, pas le métal seul.",
+        ],
+      },
     ],
     saisTu: [
       "Les pirogues à balancier des pêcheurs vezo sont creusées dans le tronc très léger du farafatse (d ≈ 0,4). Grâce à cette essence peu dense et au balancier qui les stabilise, elles affrontent la houle du canal du Mozambique depuis des siècles !",
+      "Les icebergs (glace : d ≈ 0,92) flottent, mais à peine : 90 % de leur volume reste caché sous l'eau ! D'où l'expression « la partie émergée de l'iceberg » pour parler du peu que l'on voit.",
     ],
     experience: [
       "L'œuf qui flotte (expérience de la densité) :",
-      "1. Dépose délicatement un œuf frais dans un grand verre d'eau : il coule.",
-      "2. Retire l'œuf, ajoute 4 à 5 cuillères à soupe de sel, mélange bien.",
-      "3. Redépose l'œuf : il flotte ! L'eau salée est devenue plus dense que l'œuf.",
-      "4. Ajoute doucement de l'eau douce par-dessus : l'œuf reste suspendu entre deux eaux.",
+      "Matériel : un œuf frais, un grand verre, de l'eau, du sel, une cuillère.",
+      "Protocole : 1. Dépose délicatement l'œuf dans le verre d'eau douce.",
+      "2. Retire l'œuf, ajoute 4 à 5 cuillères à soupe de sel et mélange bien.",
+      "3. Redépose l'œuf.",
+      "4. Ajoute doucement de l'eau douce par-dessus, sans mélanger.",
+      "Observation : dans l'eau douce, l'œuf coule (d œuf ≈ 1,03 > 1) ; dans l'eau salée, il flotte (l'eau salée est devenue plus dense que lui) ; avec la couche d'eau douce, il reste suspendu entre les deux eaux.",
+      "Conclusion : la flottabilité dépend de la comparaison entre les densités du corps ET du liquide : en changeant le liquide, on change le verdict.",
     ],
   },
   substitutions: [
@@ -777,6 +817,7 @@ const S4 = {
         titre: "1. Qu'est-ce qu'un mélange ?",
         paras: [
           "Un mélange est formé d'au moins deux substances réunies. Presque tout ce qui nous entoure est un mélange : l'air, l'eau de mer, la terre, le jus de fruits, le béton…",
+          "Le contraire d'un mélange est un corps pur, formé d'une seule substance : l'eau distillée, le sucre pur, le dioxygène. Les corps purs sont rares dans la nature !",
         ],
       },
       {
@@ -807,18 +848,30 @@ const S4 = {
         titre: "4. Attention aux apparences",
         paras: [
           "Le classement dépend de l'observation : le lait semble homogène, mais au microscope on découvre des gouttelettes de graisse dispersées dans l'eau. À l'œil nu, on le classe cependant parmi les mélanges homogènes.",
+          "Méthode : pour classer un mélange, observe-le devant la lumière et pose LA question : « Est-ce que je distingue plusieurs constituants ? » Oui → hétérogène ; non → homogène (à l'œil nu).",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Classe : eau sucrée remuée, eau + sable agité, air, jus d'orange avec pulpe. Solution : eau sucrée : homogène (le sucre est invisible) ; eau + sable : hétérogène (grains visibles qui se déposent) ; air : homogène (aucun constituant visible) ; jus avec pulpe : hétérogène (particules de pulpe visibles).",
+          "Exemple 2 — Naina affirme : « L'eau salée est un corps pur, car on ne voit qu'un liquide. » Corrige-le. Solution : ne rien voir ne prouve pas qu'il n'y a qu'une substance ! L'eau salée contient de l'eau ET du sel : c'est un mélange homogène. Preuve : l'évaporation fait réapparaître le sel.",
         ],
       },
     ],
     saisTu: [
       "L'eau de mer est un mélange homogène d'eau et d'environ 35 g de sels par litre. Dans les salines de Toliara et de Morondava, on laisse le soleil évaporer l'eau des bassins : le sel réapparaît ! Preuve qu'il était bien là, invisible, dans le mélange homogène.",
+      "Les métaux de tes pièces de monnaie sont aussi des mélanges homogènes… de métaux ! On les appelle des alliages : le bronze (cuivre + étain), le laiton (cuivre + zinc), l'acier (fer + carbone). Mélanger pour améliorer : plus dur, plus brillant, moins rouillable !",
     ],
     experience: [
       "Chasse aux mélanges dans la cuisine :",
-      "1. Prépare quatre petits verres : eau + sucre remué, eau + terre, eau + quelques gouttes d'huile, thé ou café filtré.",
+      "Matériel : quatre petits verres, de l'eau, du sucre, de la terre, de l'huile, du thé ou du café filtré.",
+      "Protocole : 1. Prépare : eau + sucre bien remué ; eau + terre agitée ; eau + quelques gouttes d'huile ; thé ou café filtré.",
       "2. Observe chaque verre devant la lumière : distingues-tu les constituants ?",
       "3. Classe chaque mélange : homogène ou hétérogène.",
-      "4. Laisse reposer une heure et observe à nouveau : certains mélanges ont-ils changé de catégorie ?",
+      "4. Laisse reposer une heure et observe à nouveau.",
+      "Observation : eau sucrée et thé restent uniformes (homogènes) ; la terre se dépose et l'huile remonte en couche (hétérogènes) : le repos rend l'hétérogénéité encore plus visible.",
+      "Conclusion : l'œil et le temps sont tes deux instruments : un mélange qui se sépare tout seul au repos était forcément hétérogène.",
     ],
   },
   substitutions: [
@@ -1002,12 +1055,14 @@ const S5 = {
           "La dissolution est le passage d'une substance (le soluté) dans un liquide (le solvant) pour former un mélange homogène appelé solution.",
           "Exemple : sel (soluté) + eau (solvant) → eau salée (solution).",
           "Le soluté ne disparaît pas : il est dispersé dans le solvant en particules invisibles. La masse totale se conserve : 200 g d'eau + 25 g de sel = 225 g d'eau salée.",
+          "Moyen mnémotechnique : le solUTé est la substance ajoutée (souvent solide), le solVANT est le liquide qui reçoit : « le soluté va dans le solvant ».",
         ],
       },
       {
         titre: "2. La saturation",
         paras: [
           "Un solvant ne peut pas dissoudre une quantité illimitée de soluté. Quand il ne peut plus rien dissoudre, la solution est saturée : le soluté en excès reste au fond. Dans un litre d'eau, on peut dissoudre au maximum environ 360 g de sel.",
+          "La température joue : l'eau chaude dissout généralement plus vite et davantage. C'est pourquoi le sucre fond mieux dans le thé chaud que dans l'eau fraîche.",
         ],
       },
       {
@@ -1024,16 +1079,27 @@ const S5 = {
           "Certains solides, comme le sable ou la craie, ne se dissolvent pas dans l'eau : ils restent en suspension puis se déposent. Le mélange reste hétérogène.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — On dissout 30 g de sucre dans 250 g d'eau. Nomme le soluté, le solvant, la solution, et calcule la masse totale. Solution : soluté : le sucre ; solvant : l'eau ; solution : l'eau sucrée. Masse : 250 + 30 = 280 g : la masse se conserve pendant la dissolution.",
+          "Exemple 2 — Peut-on dissoudre 200 g de sel dans un demi-litre d'eau ? Donnée : saturation à 360 g par litre. Solution : dans 0,5 L, on peut dissoudre au maximum 360 × 0,5 = 180 g. Or 200 > 180 : la solution sera saturée et 200 − 180 = 20 g de sel resteront au fond.",
+        ],
+      },
     ],
     saisTu: [
       "Le lamba des Hautes Terres est parfois teint avec des teintures végétales dissoutes dans l'eau bouillante : la couleur est un soluté ! Et quand tu prépares un ranon'ampango (eau de riz grillé), tu fabriques toi-même une solution : l'eau dissout les arômes du riz grillé au fond de la marmite.",
+      "Les boissons gazeuses cachent un soluté surprenant : un GAZ ! Le dioxyde de carbone est dissous sous pression dans le liquide. À l'ouverture, la pression chute et le gaz s'échappe en bulles : une « dé-dissolution » sous tes yeux.",
     ],
     experience: [
       "La masse se conserve-t-elle vraiment ?",
-      "1. Pèse un verre d'eau sur la balance de cuisine, note la masse.",
+      "Matériel : une balance de cuisine, un verre d'eau, 20 g de sel, une cuillère.",
+      "Protocole : 1. Pèse le verre d'eau et note sa masse.",
       "2. Pèse 20 g de sel à part.",
-      "3. Verse le sel dans l'eau, remue jusqu'à dissolution complète.",
-      "4. Repèse le verre : la masse totale = masse de l'eau + 20 g. Rien ne s'est perdu !",
+      "3. Verse le sel dans l'eau et remue jusqu'à dissolution complète : le sel devient invisible.",
+      "4. Repèse le verre.",
+      "Observation : la masse finale = masse de l'eau + 20 g, exactement. Rien ne s'est perdu, alors que le sel a « disparu » à l'œil.",
+      "Conclusion : la dissolution disperse le soluté en particules invisibles mais ne détruit rien : la masse se conserve toujours.",
     ],
   },
   substitutions: [
@@ -1238,21 +1304,38 @@ const S6 = {
         ],
       },
       {
-        titre: "3. Les limites de ces techniques",
+        titre: "3. Décanter puis filtrer : le bon ordre",
+        paras: [
+          "En pratique, on décante d'abord (gratuit, sans matériel), puis on filtre le liquide déjà clarifié : le filtre se bouche moins vite et travaille mieux. C'est exactement l'ordre suivi par les stations de traitement d'eau.",
+        ],
+      },
+      {
+        titre: "4. Les limites de ces techniques",
         paras: [
           "Décantation et filtration ne séparent que les mélanges hétérogènes. Elles ne peuvent pas retirer un soluté dissous : l'eau salée filtrée reste salée ! Et une eau claire n'est pas forcément potable : les microbes, invisibles, traversent le filtre ordinaire. Il faut la faire bouillir ou la traiter.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Quelle(s) technique(s) pour séparer l'eau et l'huile d'une part, l'eau et le sable d'autre part ? Solution : eau + huile (liquides non miscibles) : décantation : l'huile forme une couche au-dessus, on soutire. Eau + sable (solide dans un liquide) : décantation puis filtration : le sable est retenu, le filtrat est clair.",
+          "Exemple 2 — Hery filtre de l'eau salée et goûte le filtrat : il est encore salé. A-t-il raté sa filtration ? Solution rédigée : non, sa filtration est réussie… mais inutile ici : le sel est DISSOUS, ses particules invisibles passent à travers tous les filtres. Pour retirer un soluté, il faut évaporer ou distiller (séance suivante).",
         ],
       },
     ],
     saisTu: [
       "Les stations de traitement de la JIRAMA utilisent exactement ces techniques à grande échelle : l'eau des rivières passe d'abord dans de grands bassins de décantation, puis à travers des filtres à sable, avant d'être désinfectée et envoyée dans les robinets de la ville !",
+      "Au bord des rivières sableuses, certains villageois creusent un trou à un mètre de la rive : l'eau qui s'y infiltre arrive déjà filtrée par le sable ! Un filtre naturel gratuit… mais l'ébullition reste indispensable avant de boire.",
     ],
     experience: [
       "Fabrique un filtre à étages :",
-      "1. Coupe le fond d'une bouteille en plastique et retourne-la comme un entonnoir.",
-      "2. Superpose dedans : un tissu propre, du charbon de bois pilé, du sable fin, des graviers.",
-      "3. Verse doucement de l'eau boueuse décantée et récupère le filtrat.",
-      "4. Compare la clarté avant/après. Attention : cette eau reste non potable — il faudrait la faire bouillir !",
+      "Matériel : une bouteille en plastique, un tissu propre, du charbon de bois pilé, du sable fin, des graviers, de l'eau boueuse décantée, deux récipients.",
+      "Protocole : 1. Coupe le fond de la bouteille et retourne-la comme un entonnoir.",
+      "2. Superpose dedans, de bas en haut : le tissu, le charbon pilé, le sable fin, les graviers.",
+      "3. Verse doucement l'eau boueuse décantée et récupère le filtrat.",
+      "4. Compare la clarté avant/après.",
+      "Observation : le filtrat est nettement plus clair : chaque étage a retenu des particules de plus en plus fines.",
+      "Conclusion : un bon filtre superpose des mailles de plus en plus serrées. Attention : cette eau claire reste NON potable : les microbes passent : il faudrait la faire bouillir !",
     ],
   },
   substitutions: [
@@ -1456,18 +1539,30 @@ const S7 = {
           "Liquides non miscibles : décantation.",
           "Soluté dissous (mélange homogène) : évaporation (pour le soluté) ou distillation (pour les deux).",
         ],
-        paras: [],
+        paras: [
+          "Méthode de choix : demande-toi d'abord « homogène ou hétérogène ? », puis « qu'est-ce que je veux récupérer ? ». La réponse désigne la technique.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Tu veux récupérer À LA FOIS l'eau pure et le sel d'une eau salée. Quelle technique choisir et pourquoi ? Solution : la distillation : l'ébullition fait partir l'eau en vapeur (le sel reste et cristallise), puis la condensation dans un tube refroidi redonne l'eau liquide pure. L'évaporation simple aurait perdu l'eau dans l'air.",
+          "Exemple 2 — Un marais salant produit du sel à partir d'une eau de mer à 35 g de sel par litre. Quelle masse de sel donne 1 000 L d'eau de mer évaporée ? Calcul : 35 × 1 000 = 35 000 g = 35 kg. L'énergie du chauffage est fournie… gratuitement par le Soleil !",
+        ],
       },
     ],
     saisTu: [
       "L'alambic des distillateurs d'huiles essentielles fonctionne exactement comme notre distillation : à Ambanja et sur la côte Est, on distille l'ylang-ylang, le girofle et le ravintsara ! La vapeur d'eau entraîne les parfums de la plante, puis se condense dans un serpentin refroidi : on recueille l'huile essentielle qui flotte sur l'eau (décantation finale !).",
+      "L'eau distillée est si pure qu'on la réserve aux usages techniques : batteries de voiture, fers à repasser, laboratoires. Pour la boisson, elle manque des sels minéraux dont le corps a besoin : la pureté totale n'est pas toujours l'idéal !",
     ],
     experience: [
       "Fais réapparaître le sel :",
-      "1. Dissous une cuillerée de sel dans un demi-verre d'eau.",
-      "2. Verse la solution dans une assiette plate.",
+      "Matériel : du sel, un verre d'eau, une assiette plate, un endroit ensoleillé.",
+      "Protocole : 1. Dissous une cuillerée de sel dans un demi-verre d'eau : goutte une goutte : c'est salé, mais rien n'est visible.",
+      "2. Verse la solution dans l'assiette plate (grande surface = évaporation rapide).",
       "3. Pose l'assiette au soleil, près d'une fenêtre, pendant 2 à 3 jours.",
-      "4. Observe les cristaux blancs qui apparaissent : le sel n'avait jamais disparu !",
+      "Observation : l'eau disparaît peu à peu ; des cristaux blancs apparaissent en bordure puis partout : le sel !",
+      "Conclusion : l'évaporation fait partir le solvant et laisse le soluté cristallisé : le sel n'avait jamais disparu — tu as reproduit le travail des salines de Toliara.",
     ],
   },
   substitutions: [
@@ -1694,19 +1789,31 @@ const S8 = {
           "Tamisage : différence de taille — riz, farine, sable.",
           "Pressage : extraction d'un jus — agrumes, coco, canne.",
         ],
-        paras: [],
+        paras: [
+          "Pour choisir : identifie la DIFFÉRENCE exploitable entre les constituants : densité ? taille ? point d'ébullition ? liquide enfermé ? Chaque différence appelle sa technique.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Comment séparer un mélange de farine et de petits graviers ? Solution : par tamisage : la farine, aux grains minuscules, traverse les mailles fines ; les graviers restent sur le tamis. La différence exploitée est la taille des grains.",
+          "Exemple 2 — Décris les techniques pour obtenir du lait de coco bien lisse à partir d'un coco râpé. Solution : 1) pressage du coco râpé dans un tissu : le lait sort, les fibres restent ; 2) le tissu joue en même temps le rôle de filtre (filtration) : les morceaux sont retenus. Deux techniques dans un seul geste de cuisine !",
+        ],
       },
     ],
     saisTu: [
       "Dans les campagnes malgaches, la canne à sucre est pressée entre deux rouleaux de bois actionnés à la main ou par des zébus : le jus recueilli, bouilli puis évaporé, donne le sucre roux ! Un seul aliment, trois techniques de séparation : pressage, filtration, évaporation.",
+      "Le vannage du riz est une technique de séparation bonus : en laissant tomber le riz pilé dans le vent, la balle légère s'envole et les grains denses tombent droit. Nos grands-mères utilisent la densité de l'air… sans jamais l'avoir apprise en classe !",
     ],
     experience: [
       "Le grand tri du mélange mystère :",
-      "1. Prépare un mélange : sable + gravier + sel + un peu d'eau (le sel se dissout !).",
-      "2. Tamise d'abord : le gravier reste sur le tamis.",
-      "3. Filtre à travers un tissu : le sable est retenu, l'eau salée passe.",
-      "4. Verse l'eau salée dans une assiette au soleil : le sel réapparaît en quelques jours !",
-      "5. Tu as utilisé trois techniques pour tout séparer. Champion !",
+      "Matériel : sable, gravier, sel, eau, un tamis (ou passoire), un tissu propre, une assiette, un endroit ensoleillé.",
+      "Protocole : 1. Prépare le mélange : sable + gravier + sel + un peu d'eau (le sel se dissout !).",
+      "2. Tamise : le gravier reste sur le tamis.",
+      "3. Filtre à travers le tissu : le sable est retenu, l'eau salée passe.",
+      "4. Verse l'eau salée dans l'assiette au soleil et attends quelques jours.",
+      "Observation : gravier sur le tamis, sable dans le tissu, cristaux de sel dans l'assiette : les trois solides sont récupérés séparément.",
+      "Conclusion : trois différences (taille, taille plus fine, dissolution) ont appelé trois techniques (tamisage, filtration, évaporation) : tout mélange se démonte avec la bonne suite d'outils. Champion !",
     ],
   },
   substitutions: [
@@ -1889,6 +1996,7 @@ const S9 = {
         titre: "1. Qu'est-ce qu'une transformation physique ?",
         paras: [
           "Une transformation physique est un processus au cours duquel la forme, l'état ou l'aspect d'une substance change, sans que la substance elle-même change : aucune nouvelle matière n'apparaît.",
+          "Le test infaillible : après la transformation, est-ce toujours la même substance ? La glace fondue redevient de l'eau ; la craie écrasée reste de la craie : transformations physiques.",
         ],
       },
       {
@@ -1924,16 +2032,26 @@ const S9 = {
           "Beaucoup de transformations physiques sont réversibles : l'eau gelée peut refondre, le sel dissous recristalliser, le fil de fer se déplier. Certaines ne le sont pas en pratique (le papier découpé), mais la matière n'a quand même pas changé de nature.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Classe ces transformations : le beurre fond à la poêle ; une feuille est déchirée ; du sucre se dissout dans le café. Solution : beurre fondu : changement d'état (fusion) ; feuille déchirée : fragmentation ; sucre dissous : dissolution. Trois transformations PHYSIQUES : dans chaque cas, la substance reste la même.",
+          "Exemple 2 — La buée qui apparaît sur le couvercle de la marmite est-elle de l'eau nouvelle ? Solution : non : c'est la vapeur d'eau de la marmite qui s'est LIQUÉFIÉE au contact du couvercle plus froid. Vaporisation puis liquéfaction : l'eau a fait l'aller-retour entre deux états, sans jamais changer de nature.",
+        ],
+      },
     ],
     saisTu: [
       "Le cycle de l'eau est une gigantesque suite de transformations physiques : l'eau des océans s'évapore au soleil, la vapeur se condense en nuages, la pluie tombe sur les montagnes, les rivières retournent à la mer… Depuis des milliards d'années, c'est toujours la même eau qui tourne : celle que tu bois a peut-être désaltéré un dinosaure !",
+      "Les rails de chemin de fer et les ponts métalliques sont posés avec de petits espaces de dilatation : au soleil, le métal s'allonge (transformation physique !) et sans ces joints, les rails se tordraient. Écoute le « tac-tac » du train : ce sont les joints de dilatation !",
     ],
     experience: [
       "Le voyage aller-retour de l'eau :",
-      "1. Remplis un petit sac plastique transparent d'un fond d'eau, ferme-le bien.",
-      "2. Scotche-le sur une fenêtre ensoleillée.",
-      "3. Observe pendant la journée : des gouttelettes se forment en haut du sac (évaporation puis condensation).",
-      "4. L'eau monte et redescend sans jamais quitter le sac : un mini cycle de l'eau !",
+      "Matériel : un petit sac plastique transparent à fermeture, de l'eau, du ruban adhésif, une fenêtre ensoleillée.",
+      "Protocole : 1. Verse un fond d'eau dans le sac et ferme-le bien.",
+      "2. Scotche le sac sur la fenêtre, côté soleil.",
+      "3. Observe matin, midi et soir pendant une journée chaude.",
+      "Observation : des gouttelettes se forment en haut du sac (l'eau s'évapore puis se condense sur le plastique) et redescendent en coulant : l'eau monte et retombe sans jamais quitter le sac.",
+      "Conclusion : évaporation + condensation en boucle : tu as enfermé un mini cycle de l'eau dans un sachet : uniquement des transformations physiques, indéfiniment réversibles.",
     ],
   },
   substitutions: [
@@ -2147,7 +2265,9 @@ const S10 = {
           "apparition d'un solide (précipité) ;",
           "production de chaleur ou de lumière (flamme).",
         ],
-        paras: [],
+        paras: [
+          "Un seul de ces signes suffit à soupçonner une transformation chimique ; leur absence ne prouve pas le contraire : certains changements chimiques sont discrets et lents, comme la rouille.",
+        ],
       },
       {
         titre: "4. Physique ou chimique : le test de la question",
@@ -2156,16 +2276,27 @@ const S10 = {
           "Attention danger : les combustions dégagent chaleur et gaz. On ne fait jamais d'expérience avec le feu sans un adulte, loin de tout produit inflammable.",
         ],
       },
+      {
+        titre: "5. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un clou brillant laissé sous la pluie devient brun et friable en quelques semaines. Transformation physique ou chimique ? Justifie. Solution : chimique : une NOUVELLE substance est apparue, la rouille (brune, friable, non attirée comme le fer par l'aimant). Signe observé : le changement de couleur et d'aspect. Impossible de « dérouiller » en revenant simplement en arrière.",
+          "Exemple 2 — Sur une bougie allumée, deux transformations ont lieu en même temps : la cire fond au pied de la flamme, et la mèche brûle. Classe-les. Solution : cire fondue : transformation PHYSIQUE (fusion : la cire reste de la cire, elle resolidifie en coulant) ; mèche et vapeurs qui brûlent : transformation CHIMIQUE (flamme, lumière, nouvelles substances : gaz et fumées). Une seule bougie, deux mondes !",
+        ],
+      },
     ],
     saisTu: [
       "La cuisson du riz est une transformation chimique : les grains durs deviennent tendres et parfumés, et l'ampango (croûte dorée du fond de marmite) doit sa couleur et son goût à des réactions chimiques de brunissement. Impossible de « décuire » le riz : les transformations chimiques sont irréversibles !",
+      "Les feux d'artifice doivent leurs couleurs à des transformations chimiques de métaux : le cuivre brûle en bleu-vert, le sodium en jaune-orangé, le strontium en rouge. Chaque explosion colorée du 26 juin est un cours de chimie dans le ciel !",
     ],
     experience: [
       "Le gaz mystérieux (avec un adulte) :",
-      "1. Verse trois cuillères de vinaigre dans un verre.",
-      "2. Ajoute une cuillère de bicarbonate de soude (ou de cendre tamisée).",
-      "3. Observe l'effervescence : des bulles de gaz nouveau (dioxyde de carbone) s'échappent !",
-      "4. Approche une allumette enflammée de l'ouverture (adulte !) : elle s'éteint, ce gaz ne permet pas la combustion.",
+      "Matériel : du vinaigre, du bicarbonate de soude (ou de la cendre tamisée), un verre, une cuillère, une allumette, un adulte.",
+      "Protocole : 1. Verse trois cuillères de vinaigre dans le verre.",
+      "2. Ajoute une cuillère de bicarbonate.",
+      "3. Observe attentivement la surface.",
+      "4. Avec l'adulte : approche une allumette enflammée de l'ouverture du verre.",
+      "Observation : effervescence immédiate : des bulles d'un gaz nouveau s'échappent ; l'allumette s'éteint au-dessus du verre.",
+      "Conclusion : un gaz nouveau (le dioxyde de carbone) est apparu : c'est une transformation chimique ; ce gaz ne permet pas la combustion — il sert d'ailleurs dans les extincteurs !",
     ],
   },
   substitutions: [
