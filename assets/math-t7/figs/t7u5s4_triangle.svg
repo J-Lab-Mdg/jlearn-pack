@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">L’aire du triangle : la moitié du rectangle</text>
+<g font-family="serif">
+<rect x="90" y="110" width="270" height="180" fill="#EAF2F8" stroke="#7A99AF" stroke-width="2.5" stroke-dasharray="7 6"/>
+<polygon points="90,290 360,290 360,110" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<line x1="90" y1="290" x2="360" y2="290" stroke="#1F4E79" stroke-width="3"/>
+<line x1="360" y1="110" x2="360" y2="290" stroke="#1F4E79" stroke-width="3"/>
+<text x="225" y="322" font-size="23" text-anchor="middle" fill="#1F4E79" font-weight="bold">b = 6 cm</text>
+<text x="390" y="205" font-size="23" fill="#1F4E79" font-weight="bold">h = 4</text>
+<text x="215" y="210" font-size="24" fill="#C2185B" font-weight="bold">moitié</text>
+<rect x="500" y="110" width="430" height="215" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="715" y="155" font-size="24" text-anchor="middle" fill="#1E7B34" font-weight="bold">A = (b × h) : 2</text>
+<text x="715" y="205" font-size="22" text-anchor="middle" fill="#222">(6 × 4) : 2 = 24 : 2</text>
+<text x="715" y="256" font-size="25" text-anchor="middle" fill="#1E7B34" font-weight="bold">A = 12 cm²</text>
+<text x="500" y="385" font-size="23" text-anchor="middle" fill="#333">Deux triangles rectangles identiques reconstituent le rectangle : chacun en vaut la moitié.</text>
+</g></svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Exemple résolu : la clôture du champ</text>
+<g font-family="serif">
+<rect x="90" y="140" width="300" height="130" fill="none" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="240" y="128" font-size="23" text-anchor="middle" fill="#1F4E79" font-weight="bold">45 m</text>
+<text x="415" y="212" font-size="23" fill="#1F4E79" font-weight="bold">30 m</text>
+<text x="240" y="212" font-size="21" text-anchor="middle" fill="#555">champ rectangulaire</text>
+<rect x="480" y="95" width="450" height="285" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="705" y="137" font-size="21" text-anchor="middle" fill="#1E7B34" font-weight="bold">solution rédigée</text>
+<text x="705" y="180" font-size="21" text-anchor="middle" fill="#222">P = 2 × (45 + 30)</text>
+<text x="705" y="222" font-size="21" text-anchor="middle" fill="#222">P = 2 × 75 = 150 m</text>
+<text x="705" y="268" font-size="20" text-anchor="middle" fill="#222">150 × 12 = 1 800 m de fil (3 rangs)</text>
+<text x="705" y="318" font-size="20" text-anchor="middle" fill="#555">Il faut 150 m de clôture, soit</text>
+<text x="705" y="348" font-size="20" text-anchor="middle" fill="#555">1 800 m de fil pour trois rangs.</text>
+</g></svg>

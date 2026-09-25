@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">La règle d’or : convertir AVANT de calculer</text>
+<g font-family="serif">
+<rect x="120" y="105" width="330" height="200" rx="12" fill="#FDE9E7" stroke="#C00000" stroke-width="3.5"/>
+<text x="285" y="152" font-size="22" text-anchor="middle" fill="#C00000" font-weight="bold">à ne jamais faire</text>
+<text x="285" y="205" font-size="23" text-anchor="middle" fill="#222">1,2 km + 350 m</text>
+<text x="285" y="252" font-size="23" text-anchor="middle" fill="#C00000" font-weight="bold">= 351,2 ???</text>
+<text x="285" y="290" font-size="18" text-anchor="middle" fill="#777">unités différentes additionnées</text>
+<path d="M480 205 L 540 205" stroke="#1E7B34" stroke-width="5"/>
+<path d="M528 193 L 545 205 L 528 217" fill="none" stroke="#1E7B34" stroke-width="5"/>
+<rect x="560" y="105" width="330" height="200" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="725" y="152" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">la bonne habitude</text>
+<text x="725" y="205" font-size="23" text-anchor="middle" fill="#222">1,2 km = 1 200 m</text>
+<text x="725" y="252" font-size="23" text-anchor="middle" fill="#1E7B34" font-weight="bold">puis calculer en m</text>
+<text x="500" y="380" font-size="23" text-anchor="middle" fill="#333">Une seule unité partout avant toute opération : c’est la première ligne du calcul.</text>
+</g></svg>

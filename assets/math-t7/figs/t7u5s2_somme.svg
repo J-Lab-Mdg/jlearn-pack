@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Additionner deux longueurs</text>
+<g font-family="serif">
+<rect x="90" y="115" width="470" height="150" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3"/>
+<text x="325" y="160" font-size="21" text-anchor="middle" fill="#1F4E79" font-weight="bold">ruban bleu : 1,2 km</text>
+<text x="325" y="198" font-size="22" text-anchor="middle" fill="#222">conversion : 1,2 × 1 000</text>
+<text x="325" y="240" font-size="24" text-anchor="middle" fill="#1F4E79" font-weight="bold">= 1 200 m</text>
+<rect x="590" y="115" width="320" height="150" rx="12" fill="#FCE4D6" stroke="#C2185B" stroke-width="3"/>
+<text x="750" y="160" font-size="21" text-anchor="middle" fill="#C2185B" font-weight="bold">ruban saumon : 350 m</text>
+<text x="750" y="198" font-size="22" text-anchor="middle" fill="#222">déjà en mètres</text>
+<text x="750" y="240" font-size="24" text-anchor="middle" fill="#C2185B" font-weight="bold">= 350 m</text>
+<rect x="260" y="300" width="480" height="70" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="345" font-size="26" text-anchor="middle" fill="#1E7B34" font-weight="bold">1 200 + 350 = 1 550 m = 1,55 km</text>
+</g></svg>

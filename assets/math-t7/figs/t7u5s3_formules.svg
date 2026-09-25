@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Deux formules à connaître</text>
+<g font-family="serif">
+<rect x="80" y="105" width="420" height="240" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<rect x="140" y="160" width="180" height="100" fill="#FAFCFD" stroke="#1F4E79" stroke-width="3"/>
+<text x="230" y="150" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">L = 8 cm</text>
+<text x="335" y="215" font-size="22" fill="#1F4E79" font-weight="bold">l = 5</text>
+<text x="290" y="300" font-size="23" text-anchor="middle" fill="#1F4E79" font-weight="bold">P = 2 × (L + l)</text>
+<text x="290" y="332" font-size="21" text-anchor="middle" fill="#222">2 × (8 + 5) = 26 cm</text>
+<rect x="530" y="105" width="420" height="240" rx="12" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<rect x="620" y="140" width="110" height="110" fill="#FAFCFD" stroke="#C2185B" stroke-width="3"/>
+<text x="675" y="132" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">c = 6 cm</text>
+<text x="740" y="300" font-size="23" text-anchor="middle" fill="#C2185B" font-weight="bold">P = 4 × c</text>
+<text x="740" y="332" font-size="21" text-anchor="middle" fill="#222">4 × 6 = 24 cm</text>
+<text x="500" y="400" font-size="23" text-anchor="middle" fill="#333">Rectangle : deux longueurs et deux largeurs. Carré : quatre fois le même côté.</text>
+</g></svg>

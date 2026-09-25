@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Compter les petits cubes</text>
+<g font-family="serif">
+<rect x="90" y="140" width="80" height="80" fill="#FCE4D6" stroke="#C2185B" stroke-width="3"/>
+<text x="130" y="188" font-size="20" text-anchor="middle" fill="#C2185B" font-weight="bold">1 cm³</text>
+<text x="130" y="252" font-size="19" text-anchor="middle" fill="#555">l’unité-cube</text>
+<rect x="300" y="180" width="85" height="70" fill="#DCE9F2" stroke="#1F4E79" stroke-width="2.5"/><rect x="300" y="250" width="85" height="70" fill="#EAF2F8" stroke="#1F4E79" stroke-width="2.5"/><rect x="385" y="180" width="85" height="70" fill="#EAF2F8" stroke="#1F4E79" stroke-width="2.5"/><rect x="385" y="250" width="85" height="70" fill="#DCE9F2" stroke="#1F4E79" stroke-width="2.5"/><rect x="470" y="180" width="85" height="70" fill="#DCE9F2" stroke="#1F4E79" stroke-width="2.5"/><rect x="470" y="250" width="85" height="70" fill="#EAF2F8" stroke="#1F4E79" stroke-width="2.5"/>
+<rect x="300" y="110" width="85" height="70" fill="#EAF2F8" stroke="#1F4E79" stroke-width="2.5"/><rect x="300" y="180" width="85" height="70" fill="#CFE0EC" stroke="#1F4E79" stroke-width="2.5"/><rect x="385" y="110" width="85" height="70" fill="#CFE0EC" stroke="#1F4E79" stroke-width="2.5"/><rect x="385" y="180" width="85" height="70" fill="#EAF2F8" stroke="#1F4E79" stroke-width="2.5"/><rect x="470" y="110" width="85" height="70" fill="#EAF2F8" stroke="#1F4E79" stroke-width="2.5"/><rect x="470" y="180" width="85" height="70" fill="#CFE0EC" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="428" y="345" font-size="21" text-anchor="middle" fill="#1F4E79">3 × 2 × 2 = 12 cubes</text>
+<rect x="620" y="130" width="310" height="190" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="775" y="172" font-size="21" text-anchor="middle" fill="#1F4E79" font-weight="bold">le pavé contient</text>
+<text x="775" y="220" font-size="26" text-anchor="middle" fill="#1F4E79" font-weight="bold">12 cm³</text>
+<text x="775" y="268" font-size="19" text-anchor="middle" fill="#555">4 couches de 6 ? Non :</text>
+<text x="775" y="296" font-size="19" text-anchor="middle" fill="#555">2 couches de 6 cubes</text>
+<text x="500" y="405" font-size="23" text-anchor="middle" fill="#333">Le volume se mesure en comptant les cubes-unité qu’il contient.</text>
+</g></svg>
