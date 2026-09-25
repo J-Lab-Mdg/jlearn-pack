@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Des données brutes aux catégories</text>
+<g font-family="serif">
+<rect x="60" y="120" width="350" height="230" rx="12" fill="#F7F3EE" stroke="#7A99AF" stroke-width="3"/>
+<text x="235" y="160" font-size="22" text-anchor="middle" fill="#333" font-weight="bold">données brutes</text>
+<text x="235" y="205" font-size="20" text-anchor="middle" fill="#555">38, 39, 38, 40,</text>
+<text x="235" y="240" font-size="20" text-anchor="middle" fill="#555">38, 39, 39, 40,</text>
+<text x="235" y="275" font-size="20" text-anchor="middle" fill="#555">38, 38, 40, 39</text>
+<text x="235" y="318" font-size="18" text-anchor="middle" fill="#777">en vrac, illisibles</text>
+<path d="M425 235 L 505 235" stroke="#C2185B" stroke-width="4" marker-end="url(#z1)"/>
+<rect x="520" y="120" width="420" height="230" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="730" y="160" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">organisées</text>
+<text x="610" y="215" font-size="21" text-anchor="middle" fill="#222">38 → ∣∣∣∣∣</text>
+<text x="610" y="258" font-size="21" text-anchor="middle" fill="#222">39 → ∣∣∣∣</text>
+<text x="610" y="301" font-size="21" text-anchor="middle" fill="#222">40 → ∣∣∣</text>
+<text x="840" y="215" font-size="21" fill="#1F4E79" font-weight="bold">5</text>
+<text x="840" y="258" font-size="21" fill="#1F4E79" font-weight="bold">4</text>
+<text x="840" y="301" font-size="21" fill="#1F4E79" font-weight="bold">3</text>
+<text x="500" y="398" font-size="21" text-anchor="middle" fill="#333">Même information, lisibilité incomparable.</text>
+</g><defs><marker id="z1" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#C2185B"/></marker></defs></svg>

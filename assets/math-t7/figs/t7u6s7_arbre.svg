@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">L’arbre des deux lancers</text>
+<g font-family="serif">
+<circle cx="140" cy="235" r="12" fill="#1F4E79"/>
+<line x1="152" y1="235" x2="320" y2="150" stroke="#1F4E79" stroke-width="3"/><circle cx="335" cy="150" r="12" fill="#1F4E79"/><text x="250" y="180" font-size="19" fill="#333">pile (P)</text><line x1="152" y1="235" x2="320" y2="320" stroke="#1F4E79" stroke-width="3"/><circle cx="335" cy="320" r="12" fill="#1F4E79"/><text x="250" y="300" font-size="19" fill="#333">face (F)</text>
+<line x1="347" y1="150" x2="520" y2="135" stroke="#C2185B" stroke-width="3"/><text x="560" y="142" font-size="22" fill="#222" font-weight="bold">PP</text><line x1="347" y1="150" x2="520" y2="175" stroke="#C2185B" stroke-width="3"/><text x="560" y="182" font-size="22" fill="#222" font-weight="bold">PF</text><line x1="347" y1="320" x2="520" y2="335" stroke="#C2185B" stroke-width="3"/><text x="560" y="342" font-size="22" fill="#222" font-weight="bold">FP</text><line x1="347" y1="320" x2="520" y2="375" stroke="#C2185B" stroke-width="3"/><text x="560" y="382" font-size="22" fill="#222" font-weight="bold">FF</text>
+<rect x="680" y="150" width="270" height="180" rx="14" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="815" y="195" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">2 × 2 = 4 issues</text>
+<text x="815" y="240" font-size="20" text-anchor="middle" fill="#222">PP — PF</text>
+<text x="815" y="275" font-size="20" text-anchor="middle" fill="#222">FP — FF</text>
+<text x="815" y="315" font-size="19" text-anchor="middle" fill="#333">chaque chemin = une issue</text>
+</g></svg>

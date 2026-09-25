@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">La somme fait 100 %</text>
+<g font-family="serif">
+<text x="500" y="180" font-size="30" text-anchor="middle" fill="#1F4E79" font-weight="bold">40 % + 33 % + 27 % = 100 %</text>
+<path d="M300 240 Q 500 310 700 240" fill="none" stroke="#1E7B34" stroke-width="3.5"/>
+<rect x="350" y="300" width="300" height="64" rx="14" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="341" font-size="26" text-anchor="middle" fill="#1E7B34" font-weight="bold">toutes les parts = le tout</text>
+<text x="500" y="402" font-size="21" text-anchor="middle" fill="#333">Si la somme dépasse 100 %, un calcul de fréquence est faux.</text>
+</g></svg>
