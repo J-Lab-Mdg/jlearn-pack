@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Supplémentaires : leur somme vaut 180°</text>
+<g font-family="serif">
+<line x1="90" y1="280" x2="510" y2="280" stroke="#222" stroke-width="4"/>
+<line x1="300" y1="280" x2="300" y2="140" stroke="#C2185B" stroke-width="4"/>
+<circle cx="300" cy="280" r="7" fill="#222"/>
+<path d="M448 280 A 148 148 0 0 0 300 132" fill="none" stroke="#1F4E79" stroke-width="4"/>
+<path d="M300 164 A 116 116 0 0 0 168 248" fill="none" stroke="#1E7B34" stroke-width="4"/>
+<text x="430" y="200" font-size="24" fill="#1F4E79" font-weight="bold">70°</text>
+<text x="176" y="200" font-size="24" fill="#1E7B34" font-weight="bold">110°</text>
+<rect x="570" y="110" width="370" height="200" rx="12" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<text x="755" y="160" font-size="26" text-anchor="middle" fill="#222">70° + 110° = 180°</text>
+<text x="755" y="208" font-size="23" text-anchor="middle" fill="#C2185B" font-weight="bold">angles supplémentaires</text>
+<text x="755" y="252" font-size="21" text-anchor="middle" fill="#333">ensemble, ils forment le plat</text>
+<text x="500" y="385" font-size="23" text-anchor="middle" fill="#333">La somme fait une ligne droite : 180°.</text>
+</g></svg>

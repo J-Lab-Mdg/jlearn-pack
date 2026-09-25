@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Opposés par le sommet : ils sont égaux</text>
+<g font-family="serif">
+<line x1="150" y1="130" x2="600" y2="330" stroke="#222" stroke-width="4"/>
+<line x1="600" y1="130" x2="150" y2="330" stroke="#222" stroke-width="4"/>
+<circle cx="375" cy="230" r="7" fill="#222"/>
+<path d="M470 214 A 100 100 0 0 1 478 160" fill="none" stroke="#C00000" stroke-width="4"/>
+<path d="M280 246 A 100 100 0 0 1 272 300" fill="none" stroke="#C00000" stroke-width="4"/>
+<text x="525" y="168" font-size="26" fill="#C00000" font-weight="bold">40°</text>
+<text x="225" y="322" font-size="26" fill="#C00000" font-weight="bold">40°</text>
+<path d="M276 160 A 100 100 0 0 1 280 214" fill="none" stroke="#1F4E79" stroke-width="4"/>
+<path d="M474 300 A 100 100 0 0 1 470 246" fill="none" stroke="#1F4E79" stroke-width="4"/>
+<text x="645" y="215" font-size="23" fill="#1F4E79">l’autre paire,</text>
+<text x="645" y="300" font-size="23" fill="#1F4E79">égale aussi</text>
+<rect x="620" y="90" width="330" height="80" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3"/>
+<text x="785" y="138" font-size="24" text-anchor="middle" fill="#1E7B34" font-weight="bold">angles opposés : égaux</text>
+<text x="500" y="395" font-size="23" text-anchor="middle" fill="#333">Et 40° + v + 40° + v = 360° : les plus grands valent 140° chacun.</text>
+</g></svg>

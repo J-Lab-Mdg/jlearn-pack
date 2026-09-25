@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Les trois médianes : le centre de gravité</text>
+<g font-family="serif">
+<polygon points="150,350 520,350 580,130" fill="#FCE4D6" stroke="#C2185B" stroke-width="3"/>
+<text x="136" y="386" font-size="23" fill="#222" font-weight="bold">A</text>
+<text x="514" y="386" font-size="23" fill="#222" font-weight="bold">B</text>
+<text x="580" y="120" font-size="23" fill="#222" font-weight="bold">C</text>
+<line x1="580" y1="130" x2="335" y2="350" stroke="#1E7B34" stroke-width="3" stroke-dasharray="6 5"/>
+<line x1="150" y1="350" x2="550" y2="240" stroke="#1F4E79" stroke-width="3" stroke-dasharray="6 5"/>
+<line x1="520" y1="350" x2="365" y2="240" stroke="#C00000" stroke-width="3" stroke-dasharray="6 5"/>
+<circle cx="417" cy="277" r="10" fill="#C2185B"/>
+<text x="432" y="267" font-size="25" fill="#C2185B" font-weight="bold">G</text>
+<rect x="660" y="130" width="300" height="200" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3"/>
+<text x="810" y="170" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">centre de gravité</text>
+<text x="810" y="212" font-size="20" text-anchor="middle" fill="#222">rencontre des trois</text>
+<text x="810" y="245" font-size="20" text-anchor="middle" fill="#222">médianes au point G</text>
+<text x="810" y="294" font-size="18" text-anchor="middle" fill="#555">G est le centre de gravité</text>
+<text x="810" y="320" font-size="18" text-anchor="middle" fill="#555">du triangle</text>
+</g></svg>

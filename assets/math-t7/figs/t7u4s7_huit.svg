@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Les huit angles de deux droites et d’une sécante</text>
+<g font-family="serif">
+<line x1="140" y1="150" x2="860" y2="150" stroke="#1F4E79" stroke-width="4.5"/>
+<line x1="140" y1="300" x2="860" y2="300" stroke="#1F4E79" stroke-width="4.5"/>
+<line x1="310" y1="60" x2="660" y2="385" stroke="#C00000" stroke-width="4.5"/>
+<circle cx="452" cy="150" r="6" fill="#222"/>
+<circle cx="548" cy="300" r="6" fill="#222"/>
+<text x="420" y="132" font-size="21" fill="#1F4E79" font-weight="bold">1</text>
+<text x="470" y="132" font-size="21" fill="#1F4E79" font-weight="bold">2</text>
+<text x="420" y="185" font-size="21" fill="#1F4E79" font-weight="bold">4</text>
+<text x="470" y="185" font-size="21" fill="#1F4E79" font-weight="bold">3</text>
+<text x="516" y="282" font-size="21" fill="#1F4E79" font-weight="bold">5</text>
+<text x="566" y="282" font-size="21" fill="#1F4E79" font-weight="bold">6</text>
+<text x="516" y="335" font-size="21" fill="#1F4E79" font-weight="bold">8</text>
+<text x="566" y="335" font-size="21" fill="#1F4E79" font-weight="bold">7</text>
+<rect x="660" y="120" width="290" height="240" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3"/>
+<text x="805" y="160" font-size="20" text-anchor="middle" fill="#1F4E79" font-weight="bold">Paires égales</text>
+<text x="805" y="200" font-size="20" text-anchor="middle" fill="#222">3 et 5 : alt. internes</text>
+<text x="805" y="240" font-size="20" text-anchor="middle" fill="#222">2 et 6 : correspondants</text>
+<text x="805" y="280" font-size="20" text-anchor="middle" fill="#222">4 et 6 : alt. internes</text>
+<text x="805" y="320" font-size="20" text-anchor="middle" fill="#222">opposés au sommet</text>
+<text x="805" y="352" font-size="18" text-anchor="middle" fill="#555">4 paires de chaque côté</text>
+</g></svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Les angles correspondants</text>
+<g font-family="serif">
+<line x1="120" y1="150" x2="880" y2="150" stroke="#1F4E79" stroke-width="4.5"/>
+<line x1="120" y1="310" x2="880" y2="310" stroke="#1F4E79" stroke-width="4.5"/>
+<line x1="280" y1="60" x2="680" y2="400" stroke="#C00000" stroke-width="4.5"/>
+<path d="M432 182 A 60 60 0 0 0 462 146" fill="none" stroke="#C2185B" stroke-width="4"/>
+<path d="M502 262 A 60 60 0 0 0 532 226" fill="none" stroke="#C2185B" stroke-width="4"/>
+<text x="490" y="180" font-size="26" fill="#C2185B" font-weight="bold">55°</text>
+<text x="552" y="260" font-size="26" fill="#C2185B" font-weight="bold">55°</text>
+<rect x="650" y="150" width="290" height="165" rx="12" fill="#FCE4D6" stroke="#C2185B" stroke-width="3"/>
+<text x="795" y="195" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">correspondants</text>
+<text x="795" y="240" font-size="21" text-anchor="middle" fill="#222">même côté de la sécante,</text>
+<text x="795" y="278" font-size="21" text-anchor="middle" fill="#222">même place → égaux</text>
+</g></svg>

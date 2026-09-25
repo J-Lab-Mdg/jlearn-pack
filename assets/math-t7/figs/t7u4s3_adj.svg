@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Une droite graduée : origine et unité</text>
+<g font-family="serif">
+<line x1="100" y1="205" x2="100" y2="245" stroke="#1F4E79" stroke-width="3.5"/><text x="100" y="280" font-size="24" text-anchor="middle" fill="#333">−4</text><line x1="200.5" y1="205" x2="200.5" y2="245" stroke="#1F4E79" stroke-width="3.5"/><text x="200.5" y="280" font-size="24" text-anchor="middle" fill="#333">−3</text><line x1="301" y1="205" x2="301" y2="245" stroke="#1F4E79" stroke-width="3.5"/><text x="301" y="280" font-size="24" text-anchor="middle" fill="#333">−2</text><line x1="401.5" y1="205" x2="401.5" y2="245" stroke="#1F4E79" stroke-width="3.5"/><text x="401.5" y="280" font-size="24" text-anchor="middle" fill="#333">−1</text><line x1="502" y1="205" x2="502" y2="245" stroke="#1F4E79" stroke-width="3.5"/><text x="502" y="280" font-size="24" text-anchor="middle" fill="#333">+0</text><line x1="602.5" y1="205" x2="602.5" y2="245" stroke="#1F4E79" stroke-width="3.5"/><text x="602.5" y="280" font-size="24" text-anchor="middle" fill="#333">+1</text><line x1="703" y1="205" x2="703" y2="245" stroke="#1F4E79" stroke-width="3.5"/><text x="703" y="280" font-size="24" text-anchor="middle" fill="#333">+2</text><line x1="803.5" y1="205" x2="803.5" y2="245" stroke="#1F4E79" stroke-width="3.5"/><text x="803.5" y="280" font-size="24" text-anchor="middle" fill="#333">+3</text>
+<line x1="85" y1="225" x2="905" y2="225" stroke="#1F4E79" stroke-width="4" marker-end="url(#aj1)"/>
+<line x1="100" y1="199" x2="100" y2="251" stroke="#C2185B" stroke-width="4"/>
+<text x="100" y="190" font-size="24" text-anchor="middle" fill="#C2185B" font-weight="bold">O</text>
+<path d="M100 310 Q 150 348 200 310" fill="none" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="150" y="360" font-size="22" text-anchor="middle" fill="#1E7B34">unité = 1 pas</text>
+<circle cx="301" cy="225" r="9" fill="#C00000"/>
+<text x="301" y="176" font-size="24" fill="#C00000" font-weight="bold">A (−2)</text>
+<circle cx="602.5" cy="225" r="9" fill="#1E7B34"/>
+<text x="602" y="176" font-size="24" fill="#1E7B34" font-weight="bold">B (+1)</text>
+<text x="500" y="408" font-size="23" text-anchor="middle" fill="#333">O est l’origine ; chaque graduation vaut une unité ; le signe indique le sens.</text>
+</g><defs><marker id="aj1" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#1F4E79"/></marker></defs></svg>
