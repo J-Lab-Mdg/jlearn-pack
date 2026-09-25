@@ -94,30 +94,44 @@ const S12 = {
         titre: "1. Le conducteur ohmique",
         paras: [
           "Le conducteur ohmique, ou résistor, est un dipôle en forme de cylindre peint d'anneaux de couleurs. Son symbole normalisé est un rectangle. Il possède des limites d'utilisation à respecter.",
+          "Son rôle dans les circuits : limiter et régler l'intensité du courant. On en trouve des dizaines dans chaque radio, chargeur ou téléphone : c'est le composant le plus répandu de l'électronique.",
         ],
       },
       {
         titre: "2. Le protocole d'étude",
         paras: [
           "On alimente le résistor sous une tension variable (piles montées en série) ; pour chaque tension U (voltmètre en dérivation), on mesure l'intensité I (ampèremètre en série). Chaque couple (I, U) est un point de fonctionnement.",
+          "Rappel des branchements : le voltmètre se branche EN DÉRIVATION aux bornes du résistor ; l'ampèremètre s'insère EN SÉRIE dans le circuit. Les inverser fausse tout (et peut abîmer l'ampèremètre) !",
         ],
       },
       {
         titre: "3. La caractéristique U = f(I)",
         paras: [
           "On place au moins cinq points de fonctionnement sur le graphique U en fonction de I. Les points, entachés d'erreurs, ne sont pas exactement alignés : on trace une ligne moyenne, droite passant par l'origine, les points répartis équitablement de part et d'autre. La caractéristique I = f(U) n'est pas étudiée.",
+          "Cette droite passant par l'origine est la signature d'une PROPORTIONNALITÉ entre U et I : c'est elle qui conduira à la loi d'Ohm de la prochaine séance.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Mesures sur un résistor : (0,1 A ; 2,2 V), (0,2 A ; 3,9 V), (0,3 A ; 6,1 V), (0,4 A ; 8,0 V). Ces points sont-ils exploitables ? Que tracer ? Solution : U double (environ) quand I double : les points s'alignent presque sur une droite passant par l'origine. On trace la ligne moyenne à la règle, sans forcer le trait sur chaque point : les petits écarts sont des erreurs de mesure normales.",
+          "Exemple 2 — Sur une caractéristique, un camarade relie les points par une ligne brisée qui ne passe pas par l'origine. Quelles sont ses deux erreurs ? Solution : 1) on ne relie jamais les points un à un : on trace UNE droite moyenne qui équilibre les écarts ; 2) pour un conducteur ohmique, cette droite passe par l'origine (U = 0 quand I = 0 : sans courant, pas de tension aux bornes du résistor).",
         ],
       },
     ],
     saisTu: [
       "Les anneaux colorés du résistor forment un code : chaque couleur est un chiffre (noir 0, marron 1, rouge 2… blanc 9). Trois anneaux donnent la valeur en ohms, le quatrième la précision. Les électroniciens du monde entier lisent ce code arc-en-ciel d'un seul coup d'œil !",
+      "Tracer une ligne moyenne au lieu de relier les points, c'est le geste fondamental de la science expérimentale : aucune mesure n'est parfaite, mais l'ensemble révèle la loi. Les scientifiques d'aujourd'hui font pareil avec leurs ordinateurs : ils appellent cela une régression linéaire !",
     ],
     experience: [
       "La mine de crayon résistante :",
-      "1. Taille un crayon à papier aux deux bouts : la mine de graphite est un conducteur ohmique naturel.",
-      "2. Monte-la en série avec une pile plate et une petite ampoule : la lampe brille faiblement.",
-      "3. Raccourcis la longueur de mine dans le circuit (pince les fils plus près l'un de l'autre) : la lampe brille davantage !",
-      "4. Conclusion : plus le conducteur est long, plus il « résiste » au courant.",
+      "Matériel : un crayon à papier, un taille-crayon ou un cutter (avec un adulte), une pile plate 4,5 V, une petite ampoule, des fils.",
+      "Protocole : 1. Taille le crayon aux deux bouts : la mine de graphite est un conducteur ohmique naturel.",
+      "2. Monte la mine en série avec la pile et l'ampoule.",
+      "3. Raccourcis la longueur de mine dans le circuit (pince les fils plus près l'un de l'autre).",
+      "4. Compare l'éclat de la lampe dans chaque cas.",
+      "Observation : avec toute la mine, la lampe brille faiblement ; plus la longueur de mine diminue, plus la lampe brille.",
+      "Conclusion : la mine s'oppose au passage du courant, et d'autant plus qu'elle est longue : tu viens de découvrir la résistance, mesurée à la séance suivante.",
     ],
   },
   substitutions: [
@@ -248,11 +262,14 @@ const S13 = {
         titre: "2. La résistance",
         paras: [
           "R, coefficient de proportionnalité, est la résistance du conducteur : elle mesure son opposition au passage du courant. Unité : l'ohm (Ω). C'est la pente de la caractéristique U = f(I) ; elle se mesure directement à l'ohmmètre.",
+          "Interprétation physique : à tension égale, une grande résistance laisse passer un petit courant ; une petite résistance, un grand courant. Le résistor est comme un rétrécissement sur un canal : plus il est étroit, moins l'eau passe.",
         ],
       },
       {
         titre: "3. Les trois formules",
-        paras: [],
+        paras: [
+          "Le triangle U / R·I donne les trois formules d'un coup d'œil : cache la grandeur cherchée, la position des deux autres t'indique l'opération.",
+        ],
         puces: [
           "U = R × I : calculer la tension ;",
           "R = U ÷ I : calculer la résistance ;",
@@ -260,16 +277,27 @@ const S13 = {
           "bien distinguer : le résistor (l'objet) et sa résistance (la grandeur physique).",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un résistor de 22 Ω est traversé par un courant de 0,2 A. Calcule la tension à ses bornes. Solution : U = R × I = 22 × 0,2 = 4,4 V. Vérifie les unités : ohms × ampères = volts ✔.",
+          "Exemple 2 — Sur la caractéristique d'un résistor, on lit le point (0,3 A ; 15 V). Calcule R, puis l'intensité sous 9 V. Attention au piège des milliampères : que vaut I si U = 15 V et R = 500 Ω ? Solution : R = U ÷ I = 15 ÷ 0,3 = 50 Ω. Sous 9 V : I = 9 ÷ 50 = 0,18 A. Avec 500 Ω : I = 15 ÷ 500 = 0,03 A = 30 mA : pense à convertir en milliampères quand le résultat est petit !",
+        ],
+      },
     ],
     saisTu: [
       "Georg Simon Ohm était un modeste professeur bavarois : quand il publia sa loi en 1827, les savants la jugèrent « indigne de la science » et il perdit son poste ! Il fallut vingt ans pour que le monde reconnaisse son génie. Aujourd'hui, chaque résistor de chaque téléphone porte silencieusement son nom.",
+      "La loi d'Ohm explique pourquoi les lignes de la JIRAMA transportent l'électricité sous haute tension : à puissance égale, une tension élevée permet un courant faible, donc moins de pertes par échauffement dans les longs kilomètres de câbles entre Andekaleka et Antananarivo !",
     ],
     experience: [
       "L'eau salée résistante :",
-      "1. Plonge deux clous (électrodes) dans un verre d'eau très salée, reliés à une pile 4,5 V et à une petite ampoule : elle luit.",
-      "2. Écarte les clous : la lampe faiblit : la « résistance » du trajet augmente avec la longueur.",
-      "3. Rapproche-les, ou ajoute du sel : la lampe brille davantage : la résistance diminue.",
-      "4. C'est la même idée que la mine de crayon : R dépend du conducteur.",
+      "Matériel : un verre d'eau très salée, deux clous (électrodes), une pile plate 4,5 V, une petite ampoule, des fils, du sel.",
+      "Protocole : 1. Plonge les deux clous dans l'eau salée, reliés en série avec la pile et l'ampoule.",
+      "2. Écarte les clous l'un de l'autre et observe.",
+      "3. Rapproche-les au maximum sans qu'ils se touchent.",
+      "4. Ajoute encore du sel et observe une dernière fois.",
+      "Observation : la lampe luit ; elle faiblit quand les clous s'écartent (le trajet dans l'eau s'allonge : R augmente) ; elle brille davantage quand ils se rapprochent ou quand le sel augmente (R diminue).",
+      "Conclusion : la résistance dépend du conducteur : longueur du trajet et nature du milieu : mêmes conclusions qu'avec la mine de crayon, la loi d'Ohm les met en chiffres.",
     ],
   },
   substitutions: [
@@ -394,30 +422,45 @@ const S14 = {
         titre: "1. Association en série",
         paras: [
           "Le même courant traverse les résistors ; les tensions s'ajoutent : U = R1 I + R2 I = (R1 + R2) I. La résistance équivalente est Re = R1 + R2 : elle est plus grande que chacune des résistances.",
+          "Image simple : deux rétrécissements l'un après l'autre sur le même canal gênent plus le passage qu'un seul : les obstacles en file s'additionnent.",
         ],
       },
       {
         titre: "2. Association en dérivation",
         paras: [
           "La même tension s'applique aux résistors ; les intensités s'ajoutent (loi des nœuds) : I = U/R1 + U/R2. D'où 1/Re = 1/R1 + 1/R2 : Re est plus petite que la plus petite des résistances.",
+          "Image simple : deux canaux côte à côte laissent passer plus d'eau qu'un seul : offrir un chemin de plus au courant diminue toujours la résistance totale.",
+          "Cas particulier bien utile : deux résistances identiques R en dérivation donnent Re = R ÷ 2.",
         ],
       },
       {
         titre: "3. La vérification",
         paras: [
           "La valeur calculée se vérifie à l'ohmmètre appliqué aux bornes de l'ensemble. Exemple : 20 Ω et 30 Ω donnent 50 Ω en série, 12 Ω en dérivation.",
+          "Contrôle de cohérence systématique : en série, Re dépasse la plus grande des résistances ; en dérivation, Re est inférieure à la plus petite. Un résultat qui viole ces règles est forcément faux !",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Calcule la résistance équivalente de 20 Ω et 30 Ω : a) en série ; b) en dérivation. Solution : a) Re = 20 + 30 = 50 Ω. b) 1/Re = 1/20 + 1/30 = 3/60 + 2/60 = 5/60, donc Re = 60 ÷ 5 = 12 Ω. Cohérence : 50 > 30 ✔ ; 12 < 20 ✔.",
+          "Exemple 2 — Un montage en dérivation de deux résistors identiques a une résistance équivalente de 15 Ω. Quelle est la valeur de chaque résistor ? Solution : pour deux résistances identiques en dérivation, Re = R ÷ 2 : donc R = 2 × 15 = 30 Ω. Vérification : 1/30 + 1/30 = 2/30 = 1/15 ✔.",
         ],
       },
     ],
     saisTu: [
       "Dans ta maison, tous les appareils sont branchés en dérivation sur les 220 V : chaque appareil ajouté offre un chemin de plus au courant, la résistance totale de l'installation baisse… et l'intensité totale grimpe ! Voilà pourquoi trop d'appareils sur une même prise font chauffer les fils : le disjoncteur veille.",
+      "Les ingénieurs électroniciens fabriquent les valeurs qui n'existent pas en magasin en associant des résistors : besoin de 50 Ω ? Deux résistors de 100 Ω en dérivation ! Besoin de 470 Ω ? 220 + 250 en série. Tes deux formules sont leurs outils quotidiens.",
     ],
     experience: [
       "Les mines associées :",
-      "1. Reprends deux mines de crayon identiques, une pile 4,5 V et ta petite ampoule.",
-      "2. Mines bout à bout (série) : la lampe faiblit par rapport à une seule mine : la résistance a doublé.",
-      "3. Mines côte à côte (dérivation), reliées ensemble aux deux bouts : la lampe brille plus qu'avec une seule : la résistance a diminué de moitié !",
-      "4. Retrouve les deux formules dans tes observations.",
+      "Matériel : deux mines de crayon identiques, une pile plate 4,5 V, une petite ampoule, des fils.",
+      "Protocole : 1. Monte UNE mine en série avec la pile et l'ampoule : note l'éclat (référence).",
+      "2. Place les deux mines bout à bout (série) et observe.",
+      "3. Place les deux mines côte à côte, reliées ensemble aux deux extrémités (dérivation), et observe.",
+      "4. Interprète chaque éclat avec les formules.",
+      "Observation : en série, la lampe faiblit (résistance doublée) ; en dérivation, elle brille plus qu'avec une seule mine (résistance divisée par deux).",
+      "Conclusion : les associations de résistances suivent exactement les deux formules : Re = R1 + R2 en série, et Re plus petite que chaque résistance en dérivation.",
     ],
   },
   substitutions: [
@@ -541,6 +584,7 @@ const S15 = {
         titre: "1. La plaque signalétique",
         paras: [
           "Tout appareil porte deux indications : sa tension d'usage (V) et sa puissance consommée en fonctionnement normal (W). Exemples : lampe « 230 V ; 60 W » ; fer « 220 V ; 1 000 W ».",
+          "Prends le réflexe de lire ces plaques : elles se trouvent sous l'appareil, sur le culot des lampes ou près du cordon. Deux nombres qui disent tout de la consommation !",
         ],
       },
       {
@@ -555,23 +599,36 @@ const S15 = {
       },
       {
         titre: "3. Les ordres de grandeur",
-        paras: [],
+        paras: [
+          "Règle d'or à retenir : tout ce qui CHAUFFE est gourmand (fer, bouilloire, réchaud : plus de 1 000 W) ; tout ce qui éclaire ou fait du son est sobre (DEL, radio : moins de 20 W).",
+        ],
         puces: [
           "radio : 15 W ; lampe DEL : 9 W ; vieille ampoule : 60 W ;",
           "fer à repasser : 1 000 W ; bouilloire : 2 000 W ;",
           "plus P est grande, plus le courant appelé est fort.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Quel courant appelle un fer à repasser « 220 V ; 1 100 W » ? Peut-il partager un fusible de 10 A avec une bouilloire de 2 200 W ? Solution : fer : I = 1 100 ÷ 220 = 5 A ; bouilloire : I = 2 200 ÷ 220 = 10 A. Ensemble : 5 + 10 = 15 A > 10 A : le fusible fond ! Il faut les brancher sur des lignes différentes.",
+          "Exemple 2 — Un résistor de 100 Ω est traversé par 0,3 A. Calcule sa puissance dissipée de deux façons. Solution : 1re méthode : U = R × I = 100 × 0,3 = 30 V puis P = U × I = 30 × 0,3 = 9 W. 2e méthode : P = R × I² = 100 × 0,09 = 9 W. Les deux formules donnent toujours le même résultat : la seconde va juste plus vite !",
+        ],
+      },
     ],
     saisTu: [
       "Une lampe DEL de 9 W éclaire autant que la vieille ampoule de 60 W : sept fois moins de puissance pour la même lumière ! Sur une année, la différence paie plusieurs kilos de riz. C'est pourquoi la JIRAMA et les programmes d'électrification distribuent des lampes DEL dans tout Madagascar.",
+      "La formule P = R × I² explique le choix des GROS câbles pour les fortes puissances : si I double, l'échauffement des fils QUADRUPLE ! Les électriciens dimensionnent chaque fil selon le courant appelé : une simple formule de 3e protège les maisons de l'incendie.",
     ],
     experience: [
       "L'inventaire des puissances :",
-      "1. Fais le tour de ta maison (ou d'une boutique) et relève les plaques signalétiques : lampes, radio, fer, téléviseur…",
+      "Matériel : un carnet, un crayon, les plaques signalétiques de la maison (ou d'une boutique).",
+      "Protocole : 1. Relève les plaques signalétiques : lampes, radio, fer, téléviseur…",
       "2. Classe les appareils du moins puissant au plus puissant.",
       "3. Calcule le courant appelé par chacun : I = P ÷ U.",
-      "4. Additionne : quel courant total si tout fonctionne en même temps ? Compare au calibre du disjoncteur (souvent 15 ou 20 A).",
+      "4. Additionne les courants si tout fonctionnait en même temps et compare au calibre du disjoncteur (souvent 15 ou 20 A).",
+      "Observation : les appareils qui chauffent dominent largement le classement ; la somme des courants dépasse parfois le calibre : impossible de tout allumer à la fois !",
+      "Conclusion : P = U × I permet de prévoir le courant appelé par chaque appareil et de comprendre pourquoi le disjoncteur saute quand on branche trop de « chauffeurs » ensemble.",
     ],
   },
   substitutions: [
@@ -696,12 +753,14 @@ const S16 = {
         paras: [
           "Un appareil de puissance P fonctionnant pendant une durée t consomme l'énergie W = P × t : en joules (W et s), ou en kilowattheures (kW et h). 1 kWh = 3 600 000 J.",
           "L'énergie d'une installation est la somme des énergies consommées par chaque appareil : c'est elle que mesure le compteur électrique et que facture la JIRAMA.",
+          "Bien distinguer puissance et énergie : la puissance est un DÉBIT (des joules par seconde) ; l'énergie est la QUANTITÉ totale consommée. Une petite lampe allumée toute la nuit peut consommer plus qu'une bouilloire utilisée deux minutes !",
         ],
       },
       {
         titre: "2. L'effet Joule",
         paras: [
           "Tout conducteur parcouru par un courant électrique s'échauffe : c'est l'effet Joule.",
+          "Il est tantôt utile (chauffer, éclairer par incandescence), tantôt nuisible (pertes dans les fils, surchauffe des appareils) : le même phénomène cuit ton riz et menace les installations surchargées !",
         ],
       },
       {
@@ -714,16 +773,27 @@ const S16 = {
           "danger : l'effet Joule détruit les dispositifs dont on dépasse les limites de fonctionnement (échauffement, incendie).",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une bouilloire de 2 000 W fonctionne 30 minutes. Calcule l'énergie consommée en kWh, puis le coût à 800 Ar le kWh. Solution : P = 2 kW ; t = 0,5 h ; W = P × t = 2 × 0,5 = 1 kWh. Coût : 1 × 800 = 800 Ar. La demi-heure de bouilloire coûte autant que 100 heures d'une lampe DEL de 10 W !",
+          "Exemple 2 — Un résistor de 50 Ω est traversé par 2 A pendant 5 minutes. Quelle chaleur dégage-t-il ? Solution : loi de Joule : Q = R × I² × t = 50 × 4 × 300 = 60 000 J. N'oublie pas les conversions : I² = 2² = 4, et t = 5 × 60 = 300 s : le temps en secondes pour un résultat en joules !",
+        ],
+      },
     ],
     saisTu: [
       "Sur les anciens compteurs, le disque horizontal qui tourne est freiné par un aimant et entraîné par le courant : sa vitesse est proportionnelle à la puissance consommée, et son nombre de tours compte les kWh ! Les nouveaux compteurs électroniques font le même calcul... sans une seule pièce mobile.",
+      "James Joule mesura l'équivalence entre travail et chaleur avec des roues à aubes agitant de l'eau dans un tonneau… pendant son voyage de noces, dit la légende ! Sa femme surveillait le thermomètre. L'unité d'énergie du monde entier est née d'une lune de miel studieuse.",
     ],
     experience: [
       "Le détective du compteur :",
-      "1. Repère le compteur de ta maison (ou d'un voisin, avec permission) et note l'index le soir.",
-      "2. Note-le à nouveau le lendemain à la même heure : la différence est la consommation du jour en kWh.",
-      "3. Fais l'inventaire des appareils utilisés et estime W = P × t pour chacun.",
-      "4. Compare ton total au compteur : retrouve les « gros consommateurs » (tout ce qui chauffe !).",
+      "Matériel : le compteur électrique de la maison (ou d'un voisin, avec permission), un carnet, l'inventaire des puissances de la séance précédente.",
+      "Protocole : 1. Note l'index du compteur le soir à une heure précise.",
+      "2. Note-le le lendemain à la même heure : la différence est la consommation du jour en kWh.",
+      "3. Estime W = P × t pour chaque appareil utilisé dans la journée.",
+      "4. Compare ton total au relevé du compteur.",
+      "Observation : le total estimé s'approche du relevé ; les appareils qui chauffent (fer, réchaud, bouilloire) écrasent tout le reste ; les petites veilles comptent aussi sur la durée.",
+      "Conclusion : W = P × t rend la facture prévisible : traquer les fortes puissances et les longues durées, c'est la clé des économies d'énergie à la maison.",
     ],
   },
   substitutions: [
@@ -853,6 +923,7 @@ const S17 = {
         titre: "1. Le schéma de l'installation",
         paras: [
           "La ligne de la JIRAMA arrive au compteur (mesure de l'énergie), traverse le disjoncteur général, puis alimente les lignes de distribution branchées en dérivation : chaque appareil reçoit 220 V et fonctionne indépendamment des autres.",
+          "Retrouve tes lois de 5e et 4e : le montage en dérivation garantit la même tension partout (unicité), et les intensités des lignes s'additionnent dans le câble principal : c'est lui que surveille le disjoncteur !",
         ],
       },
       {
@@ -877,16 +948,27 @@ const S17 = {
           "seul un adulte qualifié intervient sur l'installation.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Une ligne protégée par un fusible de 10 A alimente un fer (1 100 W), une bouilloire (2 200 W) et une lampe (100 W) sous 220 V. Que se passe-t-il si tout fonctionne ensemble ? Solution : courants appelés : 5 A + 10 A + 0,45 A ≈ 15,45 A > 10 A : le fusible fond et coupe la ligne, comme prévu. Solution pratique : répartir les gros appareils sur des lignes différentes.",
+          "Exemple 2 — Après la fonte d'un fusible, un voisin propose de le remplacer par un gros fil de cuivre « pour que ça ne saute plus ». Pourquoi est-ce très dangereux ? Solution : le fusible fond VOLONTAIREMENT pour couper les surintensités. Un gros fil de cuivre ne fond pas : la surcharge continue, les fils de la ligne chauffent (Q = R × I² × t)… jusqu'à l'incendie. Un fusible se remplace uniquement par un fusible de même calibre.",
+        ],
+      },
     ],
     saisTu: [
       "Le corps humain conduit d'autant mieux le courant qu'il est mouillé : sa résistance passe d'environ 100 000 Ω (peau sèche) à moins de 1 000 Ω (peau humide) ! Sous 220 V, la loi d'Ohm donne alors I = 220 ÷ 1 000 = 0,22 A : plus de quatre fois le seuil mortel de 50 mA. Voilà pourquoi salle d'eau et électricité ne font jamais bon ménage.",
+      "Les installations modernes ajoutent un gardien supplémentaire : le disjoncteur différentiel. Il compare en permanence le courant qui part et celui qui revient : la moindre fuite (par exemple à travers un corps humain !) le fait couper en quelques millièmes de seconde. Une invention qui sauve des milliers de vies chaque année.",
     ],
     experience: [
       "L'audit sécurité de la maison (sans rien toucher !) :",
-      "1. Observe : où sont le compteur et le disjoncteur ? Quel est le calibre indiqué ?",
+      "Matériel : un carnet, un crayon, tes yeux : et rien d'autre : on ne touche à RIEN.",
+      "Protocole : 1. Observe : où sont le compteur et le disjoncteur ? Quel est le calibre indiqué ?",
       "2. Compte les lignes et leurs fusibles au tableau électrique.",
       "3. Chasse aux dangers : fils dénudés, prises cassées, multiprises surchargées, appareils près de l'eau : note tout.",
       "4. Présente ta liste à un adulte : que faut-il faire réparer en priorité ?",
+      "Observation : la plupart des maisons révèlent au moins un point à corriger : multiprise surchargée, cordon abîmé ou prise descellée.",
+      "Conclusion : la sécurité électrique commence par un regard informé : savoir lire une installation, c'est déjà protéger sa famille : et on laisse toujours les réparations à un adulte qualifié.",
     ],
   },
   substitutions: [

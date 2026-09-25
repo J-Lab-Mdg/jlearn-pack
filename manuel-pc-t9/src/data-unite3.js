@@ -90,6 +90,7 @@ const S20 = {
         titre: "1. Le phénomène de réflexion",
         paras: [
           "Une surface polie (miroir, eau calme, métal brillant) renvoie la lumière dans une direction bien déterminée : c'est la réflexion.",
+          "Distingue bien : une surface polie RÉFLÉCHIT dans une direction précise (on y voit des images) ; une surface mate (mur, papier) DIFFUSE la lumière dans toutes les directions (on voit l'objet, pas d'image).",
         ],
       },
       {
@@ -105,22 +106,35 @@ const S20 = {
       },
       {
         titre: "3. Les deux lois de la réflexion",
-        paras: [],
+        paras: [
+          "Piège du débutant : les angles i et r se mesurent TOUJOURS par rapport à la normale, jamais par rapport au miroir ! Un rayon rasant le miroir a un GRAND angle d'incidence.",
+        ],
         puces: [
           "1re loi : le rayon réfléchi est situé dans le plan d'incidence ;",
           "2e loi : l'angle de réflexion est égal à l'angle d'incidence : r = i.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un rayon frappe un miroir plan en faisant un angle de 35° avec la NORMALE. Donne l'angle de réflexion, puis l'angle entre le rayon réfléchi et le miroir. Solution : r = i = 35° (2e loi). Angle avec le miroir : 90 − 35 = 55°. Toujours vérifier de quel angle parle l'énoncé : normale ou miroir !",
+          "Exemple 2 — Un rayon frappe le miroir en faisant 20° avec la SURFACE du miroir. Calcule i et r, et l'angle total entre rayon incident et rayon réfléchi. Solution : i = 90 − 20 = 70° ; donc r = 70°. Angle entre les deux rayons : i + r = 70 + 70 = 140°. Le passage par la normale évite toute confusion.",
+        ],
+      },
     ],
     saisTu: [
       "Les astronautes des missions Apollo ont déposé sur la Lune des rétroréflecteurs : des miroirs en coin qui renvoient la lumière exactement d'où elle vient. Depuis, des laboratoires envoient des éclairs laser sur la Lune et chronomètrent l'aller-retour : la distance Terre-Lune est ainsi mesurée au centimètre près : 384 400 km en moyenne !",
+      "Les phares maritimes utilisent des miroirs et des lentilles pour concentrer la lumière d'une simple lampe en un faisceau visible à 50 km. Le grand phare du cap Sainte-Marie, à la pointe sud de Madagascar, guide ainsi les navires du canal de Mozambique grâce aux lois de la réflexion !",
     ],
     experience: [
       "Le billard de lumière :",
-      "1. Pose une feuille au soleil (ou devant une lampe) ; dresse un petit miroir dessus, tenu par de la pâte ou un support.",
-      "2. Fabrique un pinceau de lumière : carton fendu d'une fente fine devant la lampe.",
-      "3. Trace le rayon incident, le point I, la normale au rapporteur ; mesure i et r pour trois inclinaisons : conclus !",
+      "Matériel : un petit miroir, une lampe de poche, un carton fendu d'une fente fine, une feuille, un rapporteur, un crayon, de la pâte adhésive.",
+      "Protocole : 1. Pose la feuille sur la table et dresse le miroir dessus, tenu par la pâte.",
+      "2. Fabrique un pinceau de lumière : le carton fendu devant la lampe.",
+      "3. Trace le rayon incident, le point I et la normale au rapporteur ; mesure i et r pour trois inclinaisons différentes.",
       "4. Défi : avec deux miroirs, fais faire un demi-tour complet à la lumière.",
+      "Observation : pour chaque essai, r = i à un ou deux degrés près (erreurs de tracé) ; avec deux miroirs à 90°, la lumière repart parallèlement à son arrivée.",
+      "Conclusion : la lumière rebondit comme une boule de billard parfaite : l'angle de réflexion égale toujours l'angle d'incidence, mesurés par rapport à la normale.",
     ],
   },
   substitutions: [
@@ -245,6 +259,7 @@ const S21 = {
         titre: "1. La position de l'image",
         paras: [
           "L'image d'un point donnée par un miroir plan est le symétrique de ce point par rapport au plan du miroir. L'image d'un objet s'obtient en construisant le symétrique de chacun de ses points.",
+          "Méthode de construction : de chaque point de l'objet, trace la perpendiculaire au miroir, et reporte la même distance de l'autre côté : c'est la symétrie orthogonale que tu connais en mathématiques !",
         ],
       },
       {
@@ -261,18 +276,30 @@ const S21 = {
         titre: "3. L'expérience des deux bougies",
         paras: [
           "Une vitre sert de miroir semi-transparent : la bougie éteinte, placée derrière la vitre au symétrique de la bougie allumée, semble s'allumer : elle matérialise la position et la grandeur de l'image.",
+          "Comprendre « virtuelle » : aucune lumière ne se trouve réellement derrière le miroir ! Les rayons réfléchis SEMBLENT venir de là : l'œil s'y trompe, l'écran jamais.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Naina se tient à 1,5 m d'un miroir plan. À quelle distance d'elle se trouve son image ? Elle recule de 0,5 m : et maintenant ? Solution : l'image est à 1,5 m DERRIÈRE le miroir : distance Naina-image : 1,5 + 1,5 = 3 m. Après recul : 2 m de chaque côté, soit 4 m. L'image recule en même temps qu'elle !",
+          "Exemple 2 — Sur l'avant des ambulances, on écrit le mot AMBULANCE en écriture retournée. Pourquoi ? Solution : le conducteur qui précède voit l'ambulance dans son rétroviseur, c'est-à-dire son IMAGE dans un miroir plan : gauche et droite y sont inversées. Le mot pré-inversé redevient lisible après réflexion : on inverse l'inversion !",
         ],
       },
     ],
     saisTu: [
       "Léonard de Vinci écrivait ses carnets « en miroir » : de droite à gauche, avec des lettres retournées ! Pour lire ses milliers de pages de notes scientifiques, il faut… un miroir plan. Gaucher, il évitait ainsi d'étaler l'encre : et gardait au passage ses idées à l'abri des curieux.",
+      "Le périscope des sous-marins n'est que deux miroirs plans inclinés à 45° dans un tube : la lumière descend d'un miroir à l'autre et l'observateur voit au-dessus de la surface en restant caché dessous. Tu peux en fabriquer un avec deux miroirs de poche et une boîte de dentifrice !",
     ],
     experience: [
       "La bougie fantôme (avec un adulte) :",
-      "1. Pose une vitre (ou le verre d'un cadre photo) debout entre deux livres, sur la table.",
-      "2. Place une bougie allumée devant, une bougie identique éteinte derrière.",
-      "3. Déplace la bougie éteinte jusqu'à la voir « brûler » à travers la vitre : mesure les deux distances à la vitre : égales !",
-      "4. Variante sans flamme : deux bouchons identiques et une lampe de poche.",
+      "Matériel : une vitre (ou le verre d'un cadre photo), deux livres pour la tenir debout, deux bougies identiques, une règle, des allumettes (adulte).",
+      "Protocole : 1. Pose la vitre debout entre les deux livres, sur la table.",
+      "2. Place la bougie allumée devant, la bougie éteinte derrière.",
+      "3. Déplace la bougie éteinte jusqu'à la voir « brûler » à travers la vitre.",
+      "4. Mesure les distances des deux bougies à la vitre. Variante sans flamme : deux bouchons identiques et une lampe de poche.",
+      "Observation : la flamme semble danser sur la bougie éteinte exactement quand les deux distances à la vitre sont égales : l'illusion est parfaite depuis n'importe quel angle.",
+      "Conclusion : l'image du miroir plan est bien le symétrique de l'objet : même distance, même grandeur : et virtuelle : la seconde bougie ne brûle pas !",
     ],
   },
   substitutions: [
@@ -396,6 +423,7 @@ const S22 = {
         titre: "1. Le phénomène de réfraction",
         paras: [
           "Quand la lumière traverse la surface séparant deux milieux transparents (air/eau, air/verre), elle change brusquement de direction : c'est la réfraction.",
+          "Ne confonds pas réflexion et réfraction : la réflexion renvoie la lumière dans le MÊME milieu ; la réfraction la laisse PASSER dans l'autre milieu, en la déviant. À la surface de l'eau, les deux se produisent en même temps !",
         ],
         puces: [
           "en entrant dans l'eau (ou le verre), le rayon se rapproche de la normale ;",
@@ -406,6 +434,7 @@ const S22 = {
         titre: "2. La première loi de la réfraction",
         paras: [
           "Le rayon réfracté est situé dans le plan d'incidence. (La relation entre les angles sera étudiée au lycée.)",
+          "Cas particulier à connaître : un rayon arrivant PERPENDICULAIREMENT à la surface (le long de la normale) traverse sans être dévié.",
         ],
       },
       {
@@ -415,16 +444,27 @@ const S22 = {
           "Le mirage : au-dessus d'une route surchauffée, les couches d'air chaud, moins denses, courbent progressivement les rayons venus du ciel, qui remontent vers l'œil : la « flaque » est l'image réfractée du ciel.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un pêcheur au harpon vise un poisson là où il le voit. Va-t-il le toucher ? Où doit-il viser ? Solution : non ! Les rayons venus du poisson s'écartent de la normale en sortant de l'eau : l'œil voit le poisson PLUS HAUT que sa position réelle. Il faut viser EN DESSOUS de l'image : les pêcheurs au harpon le savent d'expérience : c'est de la réfraction appliquée !",
+          "Exemple 2 — Un rayon lumineux entre dans l'eau avec un angle d'incidence de 40°. Le rayon réfracté fait-il un angle plus grand ou plus petit que 40° avec la normale ? Et s'il arrive le long de la normale ? Solution : en entrant dans un milieu plus réfringent (l'eau), le rayon se RAPPROCHE de la normale : angle réfracté inférieur à 40° (environ 29° en réalité). Le long de la normale : aucune déviation, le rayon continue tout droit.",
+        ],
+      },
     ],
     saisTu: [
       "Les fibres optiques qui transportent Internet sous les océans utilisent la réfraction à l'envers : la lumière qui tente de sortir du cœur de verre est intégralement renvoyée à l'intérieur (réflexion totale) et rebondit ainsi sur des milliers de kilomètres ! Un seul cheveu de verre porte des millions de conversations : y compris entre Madagascar et le monde, via le câble sous-marin.",
+      "Le Soleil que tu vois se coucher est déjà… couché ! L'atmosphère courbe les rayons par réfraction et nous montre le Soleil environ deux minutes après son passage réel sous l'horizon. Le dernier rayon du soir est une illusion d'optique offerte par l'air.",
     ],
     experience: [
       "La pièce magique :",
-      "1. Pose une pièce au fond d'une cuvette opaque ; recule jusqu'à ce que le bord cache tout juste la pièce.",
-      "2. Sans bouger la tête, fais verser doucement de l'eau par un camarade.",
-      "3. La pièce apparaît comme par magie : la lumière s'est courbée à la surface !",
-      "4. Bonus : plonge un crayon dans un verre d'eau et observe la « cassure » sous tous les angles.",
+      "Matériel : une pièce de monnaie, une cuvette opaque, de l'eau, un camarade, un crayon et un verre pour le bonus.",
+      "Protocole : 1. Pose la pièce au fond de la cuvette vide ; recule jusqu'à ce que le bord cache tout juste la pièce.",
+      "2. Sans bouger la tête, fais verser doucement de l'eau par le camarade.",
+      "3. Observe la pièce.",
+      "4. Bonus : plonge le crayon dans le verre d'eau et observe la « cassure » sous plusieurs angles.",
+      "Observation : à mesure que l'eau monte, la pièce « remonte » et redevient visible ; le crayon paraît brisé à la surface de l'eau, et la partie immergée semble plus haute et plus grosse.",
+      "Conclusion : la lumière se courbe en changeant de milieu : la réfraction déplace les images : ce que l'œil voit sous l'eau n'est jamais exactement là où c'est !",
     ],
   },
   substitutions: [
@@ -552,12 +592,14 @@ const S23 = {
         titre: "1. L'expérience du prisme",
         paras: [
           "Un pinceau de lumière blanche traversant un prisme s'étale sur l'écran en une bande colorée : le spectre de la lumière blanche. Le prisme décompose la lumière : il sépare les couleurs qu'elle contient déjà.",
+          "Pourquoi le prisme trie-t-il les couleurs ? Parce que la réfraction dévie chaque couleur différemment : le violet est plus dévié que le rouge. Deux réfractions successives (entrée et sortie du prisme) suffisent à étaler tout l'éventail.",
         ],
       },
       {
         titre: "2. Le spectre",
         paras: [
           "Sept couleurs passant insensiblement de l'une à l'autre : violet, indigo, bleu, vert, jaune, orangé, rouge. Le violet est le plus dévié, le rouge le moins. L'arc-en-ciel est le spectre du Soleil donné par les gouttes de pluie.",
+          "Chaque goutte de pluie agit comme un mini-prisme : réfraction en entrant, réflexion au fond, réfraction en sortant. Il faut avoir le Soleil DANS LE DOS pour voir l'arc-en-ciel : cherche-le après l'averse, face aux nuages qui s'éloignent !",
         ],
       },
       {
@@ -568,16 +610,27 @@ const S23 = {
           "ultraviolet (UV) : au-delà du violet : invisible, il brunit et brûle la peau (prudence au soleil !).",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Sur l'écran derrière un prisme, deux taches marquent les extrémités du spectre. Laquelle est le rouge, laquelle est le violet ? Solution : le violet est LE PLUS dévié : il se trouve du côté le plus écarté de la direction initiale du pinceau ; le rouge, le moins dévié, reste le plus proche de cette direction. Entre les deux : tout l'éventail des couleurs.",
+          "Exemple 2 — Amina affirme : « Le prisme fabrique les couleurs. » Réfute cette phrase avec deux arguments expérimentaux. Solution : 1) un second prisme inversé recompose du blanc : si le premier « fabriquait » les couleurs, le second en fabriquerait d'autres au lieu de refaire du blanc ; 2) une lumière déjà colorée (rouge) traversant un prisme reste rouge : le prisme n'a rien à trier. Le prisme SÉPARE des couleurs préexistantes.",
+        ],
+      },
     ],
     saisTu: [
       "C'est Isaac Newton, en 1666, qui perça le secret avec deux prismes : le premier étalait les couleurs, le second les recombinait en lumière blanche ! Preuve que le verre n'invente rien : il trie. Newton choisit de compter sept couleurs : comme les sept notes de musique : alors que le spectre est en réalité continu.",
+      "En analysant le spectre de la lumière des étoiles, les astronomes lisent leur composition chimique, leur température et même leur vitesse : sans jamais les toucher ! L'hélium a d'ailleurs été découvert dans le spectre du Soleil (hélios en grec) avant d'être trouvé sur Terre.",
     ],
     experience: [
       "L'arc-en-ciel de plafond :",
-      "1. Remplis une bassine d'eau et cale un miroir de poche incliné dedans, face au soleil du matin.",
-      "2. Oriente le reflet vers un mur ou un plafond clair : un spectre apparaît !",
-      "3. L'eau au-dessus du miroir forme un « prisme liquide » qui décompose la lumière.",
-      "4. Variante : incline un CD au soleil : ses sillons microscopiques étalent aussi les couleurs.",
+      "Matériel : une bassine d'eau, un miroir de poche, le soleil du matin, un mur ou plafond clair, un CD pour la variante.",
+      "Protocole : 1. Remplis la bassine et cale le miroir incliné dedans, face au soleil.",
+      "2. Oriente le reflet vers le mur ou le plafond clair.",
+      "3. Ajuste lentement l'inclinaison du miroir jusqu'à voir la bande colorée.",
+      "4. Variante : incline un CD au soleil et observe les reflets.",
+      "Observation : un spectre complet apparaît sur le mur : violet d'un côté, rouge de l'autre ; le CD étale lui aussi de vraies irisations.",
+      "Conclusion : l'eau au-dessus du miroir forme un prisme liquide : la lumière blanche du Soleil contient toutes les couleurs, et une simple bassine suffit à le prouver.",
     ],
   },
   substitutions: [
@@ -707,6 +760,7 @@ const S24 = {
         titre: "1. La couleur des objets",
         paras: [
           "Éclairé en lumière blanche, un objet renvoie (diffuse) certaines couleurs et absorbe les autres : sa couleur est celle qu'il renvoie.",
+          "Idée-clé à bien digérer : la couleur n'est pas DANS l'objet, elle naît de la rencontre entre la lumière reçue et la matière. Change la lumière, la couleur change !",
         ],
         puces: [
           "objet rouge : renvoie le rouge, absorbe le reste ;",
@@ -718,6 +772,7 @@ const S24 = {
         titre: "2. Les filtres colorés",
         paras: [
           "Un filtre coloré ne laisse passer que la lumière de sa couleur et absorbe les autres : un filtre rouge ne transmet que du rouge.",
+          "Filtre et objet obéissent à la même logique : l'un trie la lumière TRANSMISE, l'autre la lumière RENVOYÉE. Dans les deux cas, ce qui n'est pas gardé est absorbé (et devient chaleur).",
         ],
       },
       {
@@ -726,16 +781,27 @@ const S24 = {
           "Un objet ne peut renvoyer que les couleurs qu'il reçoit : un tissu vert en lumière rouge paraît noir. Règle : 1) que reçoit l'objet ? 2) que peut-il renvoyer ? Ce qui est renvoyé fait la couleur perçue.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Un drapeau blanc et rouge est éclairé en lumière rouge. Quelles couleurs voit-on ? Solution : appliquons la règle : la partie blanche reçoit du rouge et sait tout renvoyer : elle renvoie du rouge : elle paraît ROUGE. La partie rouge renvoie aussi le rouge : ROUGE également. Le drapeau paraît entièrement rouge : impossible de distinguer les deux zones !",
+          "Exemple 2 — Pourquoi un citron vert paraît-il noir derrière un filtre rouge ? Solution : le filtre rouge ne laisse passer que la lumière rouge ; le citron vert ne sait renvoyer que le vert. Il reçoit du rouge, l'absorbe entièrement, ne renvoie rien : l'œil perçoit du NOIR. Deux tris successifs (filtre puis objet) sans couleur commune = noir.",
+        ],
+      },
     ],
     saisTu: [
       "Pourquoi porte-t-on du blanc en été et du sombre en hiver ? Le blanc renvoie presque toute la lumière du soleil : il reste frais ; le noir l'absorbe et la transforme en chaleur. Les toits blanchis à la chaux des pays chauds appliquent la physique d'aujourd'hui… depuis des siècles !",
+      "Les lampes orangées de certains éclairages publics rendaient toutes les voitures grises ou orange : impossible de reconnaître un véhicule bleu d'un vert la nuit ! Les témoins d'accidents se trompaient souvent de couleur : la police le savait et se méfiait. L'éclairage moderne à DEL blanches a rendu leurs couleurs aux villes.",
     ],
     experience: [
       "La boîte à couleurs :",
-      "1. Découpe une fenêtre dans une boîte en carton ; tapisse le fond d'objets colorés (bouchons, tissus, papiers).",
-      "2. Couvre la fenêtre de cellophane rouge (bonbons, emballages) : éclaire à la lampe de poche à travers : note les couleurs perçues.",
-      "3. Recommence avec du cellophane vert, puis bleu.",
-      "4. Tableau final : quel objet « disparaît » (devient noir) sous quelle lumière ?",
+      "Matériel : une boîte en carton, des ciseaux, des objets colorés variés (bouchons, tissus, papiers), du cellophane rouge, vert et bleu (emballages de bonbons), une lampe de poche.",
+      "Protocole : 1. Découpe une fenêtre dans la boîte et tapisse le fond d'objets colorés.",
+      "2. Couvre la fenêtre du cellophane rouge et éclaire à la lampe à travers : note la couleur perçue de chaque objet.",
+      "3. Recommence avec le vert, puis le bleu.",
+      "4. Dresse le tableau final : objet réel / couleur sous chaque filtre.",
+      "Observation : les objets de la couleur du filtre restent éclatants ; les objets d'une autre couleur s'assombrissent, certains paraissent franchement noirs (le bleu sous filtre rouge !).",
+      "Conclusion : la couleur perçue dépend de la lumière reçue ET de ce que l'objet sait renvoyer : la « vraie » couleur n'existe qu'en lumière blanche.",
     ],
   },
   substitutions: [
@@ -866,24 +932,37 @@ const S25 = {
         titre: "2. L'interprétation",
         paras: [
           "Les impressions colorées se succèdent trop vite pour être distinguées : grâce à la persistance des impressions lumineuses, l'œil les superpose et perçoit du blanc. Le gris vient de l'imperfection des peintures, qui absorbent une partie de la lumière.",
+          "L'œil garde chaque image environ un dixième de seconde : si le disque montre toutes ses couleurs en moins d'un dixième de seconde (plus de dix tours par seconde), l'œil les additionne au lieu de les distinguer.",
         ],
       },
       {
         titre: "3. La conclusion",
         paras: [
           "La lumière blanche est un mélange de toutes les couleurs du spectre : le prisme la décompose, le disque de Newton (ou un second prisme inversé) la recompose.",
+          "La boucle est bouclée : décomposition (S23), tri par les objets et les filtres (S24), recomposition (S25) : trois séances pour une seule idée : le blanc contient tout !",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Le disque de Rija tourne lentement : il voit encore les couleurs défiler. Que doit-il changer, et pourquoi ? Solution : tourner PLUS VITE : il faut que le cycle complet des sept couleurs dure moins qu'un dixième de seconde (la persistance des impressions), soit plus de dix tours par seconde environ. En dessous, l'œil suit chaque couleur ; au-dessus, il les fusionne en blanc grisâtre.",
+          "Exemple 2 — Pourquoi le disque paraît-il blanc GRISÂTRE et jamais blanc pur ? Solution : les peintures ne sont pas parfaites : chaque secteur absorbe une partie de la lumière au lieu de tout renvoyer (leçon S24 !). La somme des couleurs affaiblies donne un blanc assombri : du gris clair. Avec de vraies lumières colorées superposées, le blanc serait pur.",
         ],
       },
     ],
     saisTu: [
       "Le cinéma exploite la même persistance des impressions lumineuses que le disque de Newton : 24 images fixes par seconde suffisent pour que l'œil voie un mouvement continu ! Dessins animés, écrans et téléviseurs : toute l'image animée repose sur cette « lenteur » de notre œil.",
+      "L'écran de ton téléphone recompose toutes ses couleurs avec seulement TROIS lumières : rouge, verte et bleue ! Chaque pixel est un trio de points minuscules dont l'œil additionne les éclats : le blanc de l'écran, c'est rouge + vert + bleu à pleine puissance. Newton aurait adoré !",
     ],
     experience: [
       "Fabrique ton disque de Newton :",
-      "1. Découpe un disque de carton de 10 cm et divise-le en 7 secteurs égaux (environ 51° chacun).",
+      "Matériel : un carton rigide, un compas, des crayons ou peintures des 7 couleurs, une ficelle solide (ou un crayon pour la variante toupie), des ciseaux.",
+      "Protocole : 1. Découpe un disque de 10 cm et divise-le en 7 secteurs égaux (environ 51° chacun).",
       "2. Colorie-les : violet, indigo, bleu, vert, jaune, orangé, rouge.",
-      "3. Perce deux trous près du centre, passe une ficelle en boucle : torsade puis tire en rythme : le disque file !",
-      "4. À grande vitesse, les couleurs fondent en blanc grisâtre. Variante toupie : un crayon planté au centre.",
+      "3. Perce deux trous près du centre, passe la ficelle en boucle : torsade puis tire en rythme.",
+      "4. Observe le disque à pleine vitesse, puis pendant qu'il ralentit.",
+      "Observation : à grande vitesse, les couleurs fondent en blanc grisâtre ; au ralentissement, les couleurs réapparaissent une à une.",
+      "Conclusion : l'œil additionne les couleurs présentées plus vite que sa persistance : les sept couleurs du spectre recomposent bien la lumière blanche.",
     ],
   },
   substitutions: [

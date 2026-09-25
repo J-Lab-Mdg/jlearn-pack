@@ -90,12 +90,14 @@ const S28 = {
         titre: "1. La mole",
         paras: [
           "Les atomes sont trop petits pour être comptés un à un : les chimistes les comptent par paquets. Une mole contient 6,02 × 10²³ entités (atomes, molécules ou ions) : c'est le nombre d'Avogadro.",
+          "L'idée est la même qu'au marché : on ne compte pas les grains de riz un à un, on les vend au kapoaka ! La mole est le « kapoaka » du chimiste : un paquet toujours identique, assez gros pour être pesé.",
         ],
       },
       {
         titre: "2. La masse molaire",
         paras: [
           "La masse molaire M est la masse d'une mole, en g/mol. Masses molaires atomiques usuelles : H : 1 ; C : 12 ; N : 14 ; O : 16 ; Na : 23 ; S : 32 ; Cl : 35,5 ; Fe : 56 (g/mol). Pour une molécule, on additionne : M(H2O) = 18 g/mol.",
+          "Méthode pour une molécule : écris la formule, compte chaque atome, multiplie et additionne. M(CO2) = 12 + 2 × 16 = 44 g/mol. Le triangle m / n·M donne les trois formules d'un coup d'œil.",
         ],
         puces: [
           "n = m ÷ M : nombre de moles ;",
@@ -106,18 +108,30 @@ const S28 = {
         titre: "3. Le volume molaire des gaz",
         paras: [
           "Dans les conditions normales de température et de pression, une mole de n'importe quel gaz occupe 22,4 L : n = V ÷ 22,4.",
+          "Fait remarquable : 22,4 L valent pour TOUS les gaz : une mole de dioxygène, de méthane ou de CO2 occupe le même volume ! Attention : cette règle ne vaut que pour les gaz, jamais pour les liquides ni les solides.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Combien de moles dans 9 g d'eau ? Et quelle masse pèsent 3 mol de sel NaCl ? Solution : M(H2O) = 2 × 1 + 16 = 18 g/mol : n = m ÷ M = 9 ÷ 18 = 0,5 mol. M(NaCl) = 23 + 35,5 = 58,5 g/mol : m = n × M = 3 × 58,5 = 175,5 g.",
+          "Exemple 2 — Quel volume occupent 8 g de dioxygène O2 aux conditions normales ? Solution : M(O2) = 2 × 16 = 32 g/mol : n = 8 ÷ 32 = 0,25 mol : V = n × 22,4 = 0,25 × 22,4 = 5,6 L. Le chemin masse → moles → volume passe TOUJOURS par les moles : c'est la plaque tournante de la chimie !",
         ],
       },
     ],
     saisTu: [
       "6,02 × 10²³, c'est inimaginable : si toute la population de la Terre comptait un grain par seconde, jour et nuit, il faudrait plus de deux millions d'années pour compter une seule mole de grains de riz ! Et pourtant, une mole d'eau tient dans trois cuillères à soupe.",
+      "Amedeo Avogadro, avocat italien devenu physicien, émit son hypothèse sur les gaz en 1811… et personne ne le crut pendant cinquante ans ! Le nombre qui porte son nom ne fut mesuré qu'après sa mort. Depuis 2019, il est même FIXÉ par définition : c'est lui qui définit la mole.",
     ],
     experience: [
       "Pèse une mole à la maison :",
-      "1. Avec la balance de cuisine, pèse 18 g d'eau (18 mL) : voilà UNE mole d'eau : 6,02 × 10²³ molécules dans le creux d'un verre !",
+      "Matériel : une balance de cuisine, un verre gradué, de l'eau, du sel, du sucre.",
+      "Protocole : 1. Pèse 18 g d'eau (18 mL) : voilà UNE mole d'eau.",
       "2. Pèse 58,5 g de sel : une mole de NaCl.",
       "3. Pèse 342 g de sucre (saccharose) : encore une mole !",
-      "4. Compare les trois tas : même nombre de « grains » chimiques, masses très différentes : chaque molécule a la sienne.",
+      "4. Aligne les trois tas côte à côte et compare.",
+      "Observation : trois tas de tailles très différentes : trois cuillères d'eau, une petite poignée de sel, un tiers de kilo de sucre : et pourtant le MÊME nombre de molécules dans chacun !",
+      "Conclusion : la mole compte toujours 6,02 × 10²³ entités : c'est la masse molaire, propre à chaque espèce chimique, qui change d'un tas à l'autre.",
     ],
   },
   substitutions: [
@@ -242,12 +256,14 @@ const S29 = {
         titre: "1. La réaction fer + soufre",
         paras: [
           "Chauffé, le mélange de fer et de soufre s'embrase et donne un corps nouveau, le sulfure de fer FeS, qui n'est plus attiré par l'aimant : une réaction chimique a eu lieu.",
+          "Avant chauffage, le mélange fer + soufre est encore séparable (l'aimant retire le fer) : après réaction, plus rien à séparer : un CORPS NOUVEAU est né, avec des propriétés nouvelles. C'est le critère sûr de la transformation chimique.",
         ],
       },
       {
         titre: "2. L'équation-bilan",
         paras: [
           "Elle s'écrit avec les formules : Fe + S → FeS. Elle doit être équilibrée : chaque sorte d'atome est en nombre égal des deux côtés, car les atomes se conservent (ils se réarrangent sans disparaître).",
+          "Méthode d'équilibrage : 1) écris les formules correctes (on ne les modifie JAMAIS) ; 2) compte chaque sorte d'atome des deux côtés ; 3) ajuste uniquement les coefficients devant les formules ; 4) recompte pour vérifier.",
         ],
       },
       {
@@ -259,16 +275,27 @@ const S29 = {
           "pour un gaz : 1 mol = 22,4 L aux conditions normales (bilan volumique).",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Équilibre la combustion du carbone dans le dioxygène, puis établis le bilan massique pour 12 g de carbone. Solution : C + O2 → CO2 (déjà équilibrée : 1 C, 2 O de chaque côté). Bilan molaire : 1 mol C + 1 mol O2 → 1 mol CO2 ; bilan massique : 12 g + 32 g → 44 g. Vérification de la conservation : 12 + 32 = 44 ✔.",
+          "Exemple 2 — On fait réagir 28 g de fer avec du soufre. Quelle masse de soufre faut-il, et quelle masse de FeS obtient-on ? Solution : n(Fe) = 28 ÷ 56 = 0,5 mol. L'équation Fe + S → FeS exige autant de moles de soufre : m(S) = 0,5 × 32 = 16 g ; et produit 0,5 mol de FeS : m(FeS) = 0,5 × 88 = 44 g. Contrôle : 28 + 16 = 44 g ✔ : Lavoisier est content !",
+        ],
+      },
     ],
     saisTu: [
       "« Rien ne se perd, rien ne se crée, tout se transforme » : la célèbre loi de conservation de la masse fut établie par Antoine Lavoisier vers 1785, à force de pesées d'une précision maniaque. Toute équation-bilan que tu équilibres rend hommage à sa balance !",
+      "Les hauts fourneaux, les cimenteries et les usines d'engrais calculent leurs approvisionnements avec des équations-bilans géantes : combien de tonnes de minerai pour tant de tonnes de fer ? La question de ton exercice, multipliée par un million : même équation, mêmes proportions !",
     ],
     experience: [
       "La conservation en direct (avec un adulte) :",
-      "1. Pèse un citron entier + une cuillère de bicarbonate posés ensemble sur la balance : note la masse.",
-      "2. Dans une bouteille, verse le jus sur le bicarbonate et bouche avec un ballon de baudruche : ça mousse, le ballon gonfle (CO2 !).",
-      "3. Repèse l'ensemble fermé : même masse ! Les atomes se sont réarrangés, rien n'a disparu.",
-      "4. Ouvre : le gaz s'échappe… et la masse diminue : le CO2 est parti dans l'air.",
+      "Matériel : une balance de cuisine, un citron, du bicarbonate de soude, une petite bouteille, un ballon de baudruche.",
+      "Protocole : 1. Pèse ensemble le citron et une cuillère de bicarbonate : note la masse totale.",
+      "2. Dans la bouteille, verse le jus sur le bicarbonate et coiffe aussitôt du ballon.",
+      "3. Repèse l'ensemble fermé pendant que ça mousse.",
+      "4. Ouvre le ballon et repèse une dernière fois.",
+      "Observation : ça mousse, le ballon gonfle (du CO2 se forme) ; fermé, la masse n'a PAS changé ; ouvert, la masse diminue : le gaz s'est échappé dans l'air.",
+      "Conclusion : au cours d'une réaction chimique, les atomes se réarrangent sans disparaître : la masse se conserve tant que rien ne s'échappe : la balance de Lavoisier ne ment jamais.",
     ],
   },
   substitutions: [
@@ -392,12 +419,14 @@ const S30 = {
         titre: "1. La famille des alcanes",
         paras: [
           "Les alcanes sont des hydrocarbures (carbone + hydrogène) de formule générale CnH2n+2 : méthane CH4, éthane C2H6, propane C3H8, butane C4H10 (gaz en bouteille).",
+          "La formule générale est une machine à fabriquer les formules : pour n = 5, C5H12 (pentane) ; pour n = 8, C8H18 (octane, dans l'essence). Vérifie toujours : deux fois le carbone plus deux !",
         ],
       },
       {
         titre: "2. La combustion complète",
         paras: [
           "Avec assez de dioxygène : flamme bleue ; produits : dioxyde de carbone et eau. Exemples : CH4 + 2 O2 → CO2 + 2 H2O ; 2 C4H10 + 13 O2 → 8 CO2 + 10 H2O.",
+          "Pour équilibrer une combustion : 1) équilibre le carbone (autant de CO2 que de C) ; 2) équilibre l'hydrogène (H2O = moitié des H) ; 3) compte les O nécessaires et ajuste le O2 en dernier.",
         ],
       },
       {
@@ -411,16 +440,27 @@ const S30 = {
           "jamais de braises ni de réchaud dans une chambre fermée.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Équilibre la combustion complète du propane C3H8. Solution : étape 1 : 3 carbones → 3 CO2 ; étape 2 : 8 hydrogènes → 4 H2O ; étape 3 : à droite, 3 × 2 + 4 × 1 = 10 atomes O, soit 5 O2. Équation : C3H8 + 5 O2 → 3 CO2 + 4 H2O. Recompte final : C : 3 = 3 ; H : 8 = 8 ; O : 10 = 10 ✔.",
+          "Exemple 2 — La marmite de Voahangy noircit et la flamme du réchaud à gaz est jaune. Diagnostique et conseille. Solution : suie + flamme jaune = combustion INCOMPLÈTE : le brûleur manque de dioxygène (trous encrassés ou arrivée d'air mal réglée). Conseils : nettoyer le brûleur, rouvrir l'arrivée d'air jusqu'à la flamme bleue, et toujours aérer : le CO invisible accompagne souvent la suie visible !",
+        ],
+      },
     ],
     saisTu: [
       "Le méthane est aussi le « biogaz » : dans les digesteurs, les bouses de zébu et les déchets fermentent à l'abri de l'air et libèrent du CH4 que l'on brûle pour cuisiner ! Plusieurs villages malgaches s'éclairent et cuisinent déjà grâce à leurs zébus : l'énergie est dans la bouse.",
+      "Le monoxyde de carbone est surnommé le « tueur silencieux » : sans couleur, sans odeur, il se fixe sur l'hémoglobine 200 fois mieux que le dioxygène ! Quelques pour cent dans l'air d'une pièce suffisent. Un seul réflexe sauve : AÉRER, toujours, partout où quelque chose brûle.",
     ],
     experience: [
       "La bougie détective (avec un adulte) :",
-      "1. Tiens une soucoupe bien froide 2 secondes AU-DESSUS d'une flamme de bougie : de la buée : l'eau de la combustion !",
-      "2. Tiens-la maintenant DANS la flamme jaune 2 secondes : un rond noir de carbone : combustion incomplète au cœur de la flamme.",
-      "3. Verse un fond d'eau de chaux dans un bocal, coiffe la bougie allumée : la flamme meurt, l'eau de chaux se trouble : CO2 !",
-      "4. Trois preuves en trois gestes : la bougie brûle comme un alcane.",
+      "Matériel : une bougie, une soucoupe bien froide, un bocal, de l'eau de chaux (eau + chaux éteinte décantée), des allumettes (adulte).",
+      "Protocole : 1. Tiens la soucoupe froide 2 secondes AU-DESSUS de la flamme.",
+      "2. Tiens-la maintenant 2 secondes DANS la flamme jaune.",
+      "3. Verse un fond d'eau de chaux dans le bocal et coiffe la bougie allumée.",
+      "4. Interprète chaque indice.",
+      "Observation : au-dessus : de la buée (eau de combustion) ; dans la flamme : un rond noir (carbone : combustion incomplète au cœur de la flamme) ; sous le bocal : la flamme meurt et l'eau de chaux se trouble (CO2).",
+      "Conclusion : la bougie brûle comme un alcane : eau + CO2 en combustion complète, suie dès que l'air manque : trois preuves en trois gestes.",
     ],
   },
   substitutions: [
@@ -548,7 +588,9 @@ const S31 = {
       },
       {
         titre: "2. Les concentrations",
-        paras: [],
+        paras: [
+          "Bien lire les unités : Cm en g/L se calcule avec la masse ; C en mol/L avec le nombre de moles. Le pont entre les deux est la masse molaire : Cm = C × M : encore elle !",
+        ],
         puces: [
           "concentration massique : Cm = m ÷ V, en g/L ;",
           "concentration molaire : C = n ÷ V, en mol/L ;",
@@ -560,18 +602,30 @@ const S31 = {
         titre: "3. Les solutions ioniques",
         paras: [
           "Une solution conduit le courant si la dissolution a libéré des ions mobiles : NaCl → Na+ + Cl− : solution ionique. L'eau sucrée, faite de molécules neutres, ne conduit pas : le test de conduction détecte les ions.",
+          "Piège à éviter : « dissous » ne veut pas dire « ionique » ! Le sucre se dissout parfaitement mais reste en molécules neutres : sa solution ne conduit pas. Seule la présence d'IONS libres fait passer le courant.",
+        ],
+      },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — On dissout 11,7 g de NaCl dans 500 mL d'eau. Calcule Cm puis C (M = 58,5 g/mol). Solution : V = 0,5 L : Cm = 11,7 ÷ 0,5 = 23,4 g/L. n = 11,7 ÷ 58,5 = 0,2 mol : C = 0,2 ÷ 0,5 = 0,4 mol/L. Vérification par la conversion : Cm = C × M = 0,4 × 58,5 = 23,4 g/L ✔.",
+          "Exemple 2 — Quelle masse de sucre (M = 342 g/mol) faut-il pour préparer 2 L de solution à 0,1 mol/L ? Cette solution conduira-t-elle le courant ? Solution : n = C × V = 0,1 × 2 = 0,2 mol : m = n × M = 0,2 × 342 = 68,4 g. Conduction : NON : le sucre se dissout en molécules neutres, sans ions : la lampe du test reste éteinte.",
         ],
       },
     ],
     saisTu: [
       "La solution de réhydratation orale (eau + sucre + sel aux bonnes concentrations) sauve chaque année des millions d'enfants atteints de diarrhée : l'OMS la classe parmi les plus grandes découvertes médicales du 20e siècle. Une simple question de concentration : la chimie qui sauve des vies, dans chaque foyer !",
+      "L'eau de mer du canal de Mozambique contient environ 35 g de sels par litre : les salines de Toliara la concentrent au soleil, bassin après bassin, jusqu'à la saturation (360 g/L)… et le sel cristallise ! Les paludiers pilotent des concentrations sans le savoir : du g/L à ciel ouvert.",
     ],
     experience: [
       "Prépare une vraie SRO (solution de réhydratation) :",
-      "1. Fais bouillir puis refroidir 1 L d'eau exactement (bouteille graduée).",
-      "2. Ajoute 6 cuillères à café rases de sucre (≈ 25 g) et 1/2 cuillère de sel (≈ 3 g) : remue.",
-      "3. Calcule tes concentrations : sucre ≈ 25 g/L ; sel ≈ 3 g/L.",
-      "4. Goûte : « pas plus salée que les larmes » : c'est le contrôle qualité des centres de santé !",
+      "Matériel : 1 L d'eau bouillie puis refroidie (bouteille graduée), du sucre, du sel, une cuillère à café, un récipient propre.",
+      "Protocole : 1. Verse le litre d'eau exactement dans le récipient propre.",
+      "2. Ajoute 6 cuillères à café rases de sucre (≈ 25 g) et 1/2 cuillère de sel (≈ 3 g) : remue jusqu'à dissolution complète.",
+      "3. Calcule tes concentrations massiques.",
+      "4. Goûte une gorgée : contrôle qualité !",
+      "Observation : tout se dissout : la solution est limpide ; concentrations : sucre ≈ 25 g/L, sel ≈ 3 g/L ; au goût, « pas plus salée que les larmes » : exactement le contrôle des centres de santé.",
+      "Conclusion : une concentration se prépare, se calcule et se contrôle : tu viens de fabriquer, avec la précision d'un chimiste, la solution qui sauve le plus de vies au monde.",
     ],
   },
   substitutions: [
@@ -696,6 +750,7 @@ const S32 = {
         titre: "1. L'échelle de pH",
         paras: [
           "Le pH, de 0 à 14, classe les solutions : pH < 7 : acide (ions H+ majoritaires) ; pH = 7 : neutre ; pH > 7 : basique (ions OH− majoritaires). Plus on s'éloigne de 7, plus la solution est dangereuse.",
+          "Repères de la vie courante : jus de citron pH ≈ 2 ; vinaigre ≈ 3 ; eau pure 7 ; eau savonneuse ≈ 10 ; déboucheur de canalisations ≈ 14. Les deux EXTRÉMITÉS de l'échelle brûlent : l'acide fort comme la base forte !",
         ],
       },
       {
@@ -708,22 +763,34 @@ const S32 = {
         titre: "3. La neutralisation",
         paras: [
           "Verser une base dans un acide (ou l'inverse) fait réagir les ions : H+ + OH− → H2O. Pour HCl + NaOH, les ions Na+ et Cl− restent spectateurs : après évaporation, il reste du sel NaCl : acide + base → sel + eau.",
+          "Comprends bien « spectateurs » : Na+ et Cl− assistent à la réaction sans y participer : seuls H+ et OH− s'unissent en eau. Au point neutre (pH = 7), il ne reste que de l'eau salée !",
         ],
         puces: [
           "sécurité : jamais d'acide ou de base concentrés sans adulte ; rincer abondamment en cas de contact ;",
           "applications : comprimé contre les brûlures d'estomac, chaulage des sols acides.",
         ],
       },
+      {
+        titre: "4. Exemples résolus",
+        paras: [
+          "Exemple 1 — Trois verres contiennent du jus de citron, de l'eau pure et de l'eau de cendre. Le BBT y prend respectivement les couleurs jaune, verte et bleue. Attribue chaque pH : 2 ; 7 ; 11. Solution : jaune = acide : jus de citron, pH 2 ; vert = neutre : eau pure, pH 7 ; bleu = basique : eau de cendre, pH 11. Le BBT trie l'échelle en trois zones d'un seul coup d'œil.",
+          "Exemple 2 — On verse peu à peu de la soude (NaOH) dans de l'acide chlorhydrique contenant du BBT. Décris les couleurs successives et ce qui reste après évaporation au point vert. Solution : au départ JAUNE (acide) ; au fur et à mesure, les OH− détruisent les H+ (H+ + OH− → H2O) : au point exact de neutralisation, VERT (pH 7) ; une goutte de trop : BLEU (basique). Évaporée au point vert, la solution laisse du sel NaCl : acide + base → sel + eau.",
+        ],
+      },
     ],
     saisTu: [
       "Ton estomac est un réacteur à pH 2 : plus acide que le jus de citron ! Sa paroi se protège par un mucus renouvelé sans cesse. Les fourmis, elles, attaquent à l'acide formique, et certaines plantes de la forêt malgache se défendent avec des sucs basiques : la guerre chimique existe dans la nature depuis toujours.",
+      "Les riziculteurs malgaches pratiquent la neutralisation à l'échelle des champs : sur un sol trop acide, le riz pousse mal ; on épand de la chaux (basique) pour remonter le pH vers la neutralité : c'est le chaulage. Ta réaction H+ + OH− → H2O, version hectares !",
     ],
     experience: [
       "L'indicateur bougainvillée :",
-      "1. Écrase des bractées bien colorées de bougainvillée (ou du chou rouge) dans un peu d'eau chaude : filtre : voilà ton indicateur.",
-      "2. Répartis-le dans trois gobelets : ajoute du citron dans le premier (couleur 1), de l'eau de cendre dans le deuxième (couleur 2), rien dans le troisième (témoin).",
-      "3. Neutralisation maison : verse peu à peu l'eau de cendre dans le gobelet au citron : guette la teinte intermédiaire !",
-      "4. Teste d'autres liquides : vinaigre, savon, eau de riz : classe-les.",
+      "Matériel : des bractées bien colorées de bougainvillée (ou du chou rouge), de l'eau chaude, un filtre (tissu), trois gobelets, du citron, de l'eau de cendre filtrée.",
+      "Protocole : 1. Écrase les bractées dans un peu d'eau chaude et filtre : voilà ton indicateur.",
+      "2. Répartis-le dans les trois gobelets : citron dans le premier, eau de cendre dans le deuxième, rien dans le troisième (témoin).",
+      "3. Neutralisation maison : verse PEU À PEU l'eau de cendre dans le gobelet au citron en remuant.",
+      "4. Teste d'autres liquides : vinaigre, savon, eau de riz.",
+      "Observation : l'indicateur change nettement de couleur en milieu acide et en milieu basique ; pendant la neutralisation, la teinte repasse par celle du témoin : le point neutre !",
+      "Conclusion : une simple fleur de jardin détecte acides et bases et signale même le point de neutralisation : le BBT du chimiste pousse aussi dans la cour !",
     ],
   },
   substitutions: [
