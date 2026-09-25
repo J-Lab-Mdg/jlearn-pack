@@ -1,1 +1,4 @@
 node_modules/
+
+# Manuels complets >100 Mo (limite GitHub) : regenerables via node scripts/t7/manuel.js
+Manuel-Mathematiques-T7-COMPLET.docx
