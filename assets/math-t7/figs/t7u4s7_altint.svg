@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Les angles alternes−internes</text>
+<g font-family="serif">
+<line x1="120" y1="150" x2="880" y2="150" stroke="#1F4E79" stroke-width="4.5"/>
+<line x1="120" y1="310" x2="880" y2="310" stroke="#1F4E79" stroke-width="4.5"/>
+<line x1="280" y1="60" x2="680" y2="400" stroke="#C00000" stroke-width="4.5"/>
+<path d="M432 182 A 60 60 0 0 0 462 146" fill="none" stroke="#1E7B34" stroke-width="4"/>
+<path d="M468 276 A 60 60 0 0 0 438 314" fill="none" stroke="#1E7B34" stroke-width="4"/>
+<text x="492" y="184" font-size="26" fill="#1E7B34" font-weight="bold">55°</text>
+<text x="388" y="305" font-size="26" fill="#1E7B34" font-weight="bold">55°</text>
+<text x="182" y="122" font-size="22" fill="#1F4E79">droite 1</text>
+<text x="182" y="290" font-size="22" fill="#1F4E79">droite 2</text>
+<text x="222" y="80" font-size="22" fill="#C00000">sécante</text>
+<rect x="650" y="150" width="290" height="165" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3"/>
+<text x="795" y="195" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">alternes−internes</text>
+<text x="795" y="240" font-size="21" text-anchor="middle" fill="#222">à l’intérieur, en vis-à-vis</text>
+<text x="795" y="278" font-size="21" text-anchor="middle" fill="#222">→ les deux sont égaux</text>
+</g></svg>

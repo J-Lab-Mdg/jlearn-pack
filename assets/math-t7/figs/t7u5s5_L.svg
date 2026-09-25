@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Un terrain en L : découper en rectangles</text>
+<g font-family="serif">
+<polygon points="90,110 240,110 240,210 330,210 330,320 90,320" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<line x1="90" y1="210" x2="240" y2="210" stroke="#C2185B" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="165" y="166" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">① 5 × 3</text>
+<text x="210" y="272" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">② 8 × 2</text>
+<text x="165" y="345" font-size="21" text-anchor="middle" fill="#222">côtés en m</text>
+<rect x="440" y="105" width="490" height="235" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="685" y="150" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">A = A₁ + A₂</text>
+<text x="685" y="198" font-size="22" text-anchor="middle" fill="#222">A₁ = 5 × 3 = 15 ; A₂ = 8 × 2 = 16</text>
+<text x="685" y="248" font-size="25" text-anchor="middle" fill="#1E7B34" font-weight="bold">A = 15 + 16 = 31 m²</text>
+<text x="685" y="298" font-size="18" text-anchor="middle" fill="#555">le découpage en pointillés ne change pas l’aire</text>
+<text x="500" y="395" font-size="23" text-anchor="middle" fill="#333">Un assemblage se découpe en figures connues : les aires s’ajoutent.</text>
+</g></svg>

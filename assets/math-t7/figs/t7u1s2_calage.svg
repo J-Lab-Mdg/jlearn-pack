@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Caler de zéros : même taille</text>
+<g font-family="serif">
+<rect x="90" y="115" width="390" height="185" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="285" y="160" font-size="23" text-anchor="middle" fill="#1F4E79" font-weight="bold">avant</text>
+<text x="285" y="222" font-size="30" text-anchor="middle" fill="#222">12,5 ? 12,45</text>
+<text x="285" y="272" font-size="19" text-anchor="middle" fill="#555">tailles différentes</text>
+<path d="M500 205 L 555 205" stroke="#1E7B34" stroke-width="5"/>
+<path d="M542 193 L 560 205 L 542 217" fill="none" stroke="#1E7B34" stroke-width="5"/>
+<rect x="575" y="115" width="360" height="185" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="755" y="160" font-size="23" text-anchor="middle" fill="#1E7B34" font-weight="bold">après</text>
+<text x="755" y="222" font-size="30" text-anchor="middle" fill="#1E7B34" font-weight="bold">12,50 &gt; 12,45</text>
+<text x="755" y="272" font-size="19" text-anchor="middle" fill="#555">5 dixièmes &gt; 4 dixièmes</text>
+<text x="500" y="380" font-size="23" text-anchor="middle" fill="#333">Compléter de zéros, puis comparer rang par rang.</text>
+</g></svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Puissance de puissance et puissance de produit</text>
+<g font-family="serif">
+<rect x="70" y="115" width="410" height="235" rx="14" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="275" y="158" font-size="26" text-anchor="middle" fill="#1F4E79" font-weight="bold">(2²)³</text>
+<text x="275" y="205" font-size="22" text-anchor="middle" fill="#222">= 2² × 2² × 2² = 2⁶</text>
+<text x="275" y="252" font-size="28" text-anchor="middle" fill="#1F4E79" font-weight="bold">= 64</text>
+<text x="275" y="305" font-size="20" text-anchor="middle" fill="#333">on multiplie les exposants</text>
+<rect x="520" y="115" width="410" height="235" rx="14" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<text x="725" y="158" font-size="26" text-anchor="middle" fill="#C2185B" font-weight="bold">(4 × 0,5)²</text>
+<text x="725" y="205" font-size="22" text-anchor="middle" fill="#222">= 4² × (0,5)² = 16 × 0,25</text>
+<text x="725" y="252" font-size="28" text-anchor="middle" fill="#C2185B" font-weight="bold">= 4</text>
+<text x="725" y="305" font-size="20" text-anchor="middle" fill="#333">chaque facteur prend l’exposant</text>
+<text x="500" y="398" font-size="22" text-anchor="middle" fill="#333">Vérifier toujours en développant une fois : la règle doit redonner le même résultat.</text>
+</g></svg>

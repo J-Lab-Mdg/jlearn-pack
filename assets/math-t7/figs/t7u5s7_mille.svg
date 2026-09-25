@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">1 mètre cube = 1 000 litres</text>
+<g font-family="serif">
+<rect x="90" y="150" width="180" height="180" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<line x1="270" y1="150" x2="330" y2="105" stroke="#1F4E79" stroke-width="3"/>
+<line x1="90" y1="150" x2="150" y2="105" stroke="#1F4E79" stroke-width="3"/>
+<line x1="150" y1="105" x2="330" y2="105" stroke="#1F4E79" stroke-width="3"/>
+<line x1="330" y1="105" x2="330" y2="285" stroke="#1F4E79" stroke-width="3"/>
+<line x1="270" y1="330" x2="330" y2="285" stroke="#1F4E79" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="180" y="248" font-size="26" text-anchor="middle" fill="#1F4E79" font-weight="bold">1 m³</text>
+<text x="180" y="360" font-size="20" text-anchor="middle" fill="#555">grande citerne cubique</text>
+<rect x="430" y="140" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="451" y="174" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text><rect x="476" y="140" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="497" y="174" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text><rect x="522" y="140" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="543" y="174" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text><rect x="568" y="140" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="589" y="174" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text><rect x="614" y="140" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="635" y="174" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text><rect x="430" y="200" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="451" y="234" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text><rect x="476" y="200" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="497" y="234" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text><rect x="522" y="200" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="543" y="234" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text><rect x="568" y="200" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="589" y="234" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text><rect x="614" y="200" width="42" height="54" fill="#FCE4D6" stroke="#C2185B" stroke-width="2"/><text x="635" y="234" font-size="12" text-anchor="middle" fill="#C2185B" font-weight="bold">100 L</text>
+<text x="545" y="290" font-size="20" text-anchor="middle" fill="#C2185B" font-weight="bold">10 × 100 L…</text>
+<rect x="730" y="140" width="230" height="190" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="845" y="182" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">1 m³ = 1 000 dm³</text>
+<text x="845" y="228" font-size="22" text-anchor="middle" fill="#222">= 1 000 L</text>
+<text x="845" y="280" font-size="19" text-anchor="middle" fill="#555">car 1 dm³ = 1 L</text>
+<text x="500" y="400" font-size="23" text-anchor="middle" fill="#333">Dans un mètre cube, il y a place pour exactement mille litres.</text>
+</g></svg>

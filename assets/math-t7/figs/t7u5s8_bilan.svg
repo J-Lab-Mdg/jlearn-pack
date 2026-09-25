@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Bilan de l’unité : ce que je sais mesurer</text>
+<g font-family="serif">
+<rect x="55" y="100" width="425" height="130" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="267" y="142" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">Périmètres</text>
+<text x="267" y="182" font-size="20" text-anchor="middle" fill="#222">P = 2(L+l) ; P = 4c ; C = 2πR</text>
+<text x="267" y="214" font-size="18" text-anchor="middle" fill="#555">longueur du tour, en m, cm…</text>
+<rect x="520" y="100" width="425" height="130" rx="12" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<text x="732" y="142" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">Aires</text>
+<text x="732" y="182" font-size="20" text-anchor="middle" fill="#222">A = L×l ; A = c² ; A = (b×h):2</text>
+<text x="732" y="214" font-size="18" text-anchor="middle" fill="#555">surface, en m², cm² ; assemblages ±</text>
+<rect x="55" y="250" width="425" height="130" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="267" y="292" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">Volumes</text>
+<text x="267" y="332" font-size="20" text-anchor="middle" fill="#222">V = L×l×h</text>
+<text x="267" y="364" font-size="18" text-anchor="middle" fill="#555">m³ ↔ dm³ ↔ cm³ : de mille en mille</text>
+<rect x="520" y="250" width="425" height="130" rx="12" fill="#FDE9E7" stroke="#C00000" stroke-width="3.5"/>
+<text x="732" y="292" font-size="22" text-anchor="middle" fill="#C00000" font-weight="bold">Contenances</text>
+<text x="732" y="332" font-size="20" text-anchor="middle" fill="#222">1 L = 1 dm³ ; 1 m³ = 1 000 L</text>
+<text x="732" y="364" font-size="18" text-anchor="middle" fill="#555">litres, jerricans, citernes</text>
+<text x="500" y="415" font-size="22" text-anchor="middle" fill="#333">Et toujours : convertir avant de calculer.</text>
+</g></svg>

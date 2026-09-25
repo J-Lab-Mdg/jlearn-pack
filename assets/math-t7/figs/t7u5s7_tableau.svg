@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Le tableau de correspondance</text>
+<g font-family="serif">
+<rect x="70" y="100" width="145" height="48" fill="#1F4E79"/><text x="142" y="132" font-size="21" text-anchor="middle" fill="white" font-weight="bold">m³</text>
+<rect x="215" y="100" width="145" height="48" fill="#1F4E79"/><text x="287" y="132" font-size="21" text-anchor="middle" fill="white" font-weight="bold">dm³</text>
+<rect x="360" y="100" width="145" height="48" fill="#1F4E79"/><text x="432" y="132" font-size="21" text-anchor="middle" fill="white" font-weight="bold">cm³</text>
+<rect x="505" y="100" width="145" height="48" fill="#1E7B34"/><text x="577" y="132" font-size="21" text-anchor="middle" fill="white" font-weight="bold">L</text>
+<rect x="650" y="100" width="145" height="48" fill="#1E7B34"/><text x="722" y="132" font-size="21" text-anchor="middle" fill="white" font-weight="bold">dL</text>
+<rect x="795" y="100" width="145" height="48" fill="#1E7B34"/><text x="867" y="132" font-size="21" text-anchor="middle" fill="white" font-weight="bold">cL / mL</text>
+<path d="M287 168 L 287 190" stroke="#C2185B" stroke-width="4"/>
+<path d="M577 168 L 577 190" stroke="#C2185B" stroke-width="4"/>
+<rect x="240" y="195" width="385" height="58" rx="10" fill="#FCE4D6" stroke="#C2185B" stroke-width="3"/>
+<text x="432" y="233" font-size="24" text-anchor="middle" fill="#C2185B" font-weight="bold">dm³ et L sont en vis-à-vis</text>
+<text x="80" y="310" font-size="22" fill="#222">Exemple 1 : 20 L = 20 dm³</text><text x="80" y="346" font-size="22" fill="#222">Exemple 2 : 250 mL = 250 cm³</text><text x="80" y="382" font-size="22" fill="#222">Exemple 3 : 2 m³ = 2 000 L</text>
+<text x="500" y="130" font-size="0" fill="none">.</text>
+</g></svg>

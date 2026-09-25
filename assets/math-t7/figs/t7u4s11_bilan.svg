@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Bilan des droites remarquables</text>
+<g font-family="serif">
+<rect x="60" y="105" width="420" height="125" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="270" y="148" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">médiatrice (×3)</text>
+<text x="270" y="188" font-size="20" text-anchor="middle" fill="#222">→ centre du cercle circonscrit</text>
+<rect x="520" y="105" width="420" height="125" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="730" y="148" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">hauteur (×3)</text>
+<text x="730" y="188" font-size="20" text-anchor="middle" fill="#222">→ orthocentre H</text>
+<rect x="60" y="250" width="420" height="125" rx="12" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<text x="270" y="293" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">médiane (×3)</text>
+<text x="270" y="333" font-size="20" text-anchor="middle" fill="#222">→ centre de gravité G</text>
+<rect x="520" y="250" width="420" height="125" rx="12" fill="#FDE9E7" stroke="#C00000" stroke-width="3.5"/>
+<text x="730" y="293" font-size="22" text-anchor="middle" fill="#C00000" font-weight="bold">bissectrice (×3)</text>
+<text x="730" y="333" font-size="20" text-anchor="middle" fill="#222">→ centre du cercle inscrit</text>
+</g></svg>

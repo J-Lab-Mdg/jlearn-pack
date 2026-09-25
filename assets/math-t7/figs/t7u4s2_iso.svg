@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Construire un triangle isocèle (AC = BC)</text>
+<g font-family="serif">
+<line x1="240" y1="330" x2="600" y2="330" stroke="#222" stroke-width="4"/>
+<text x="230" y="368" font-size="24" fill="#222" font-weight="bold">A</text>
+<text x="600" y="368" font-size="24" fill="#222" font-weight="bold">B</text>
+<path d="M240 330 A 260 260 0 0 1 468 152" fill="none" stroke="#1F4E79" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M600 330 A 260 260 0 0 0 372 152" fill="none" stroke="#1E7B34" stroke-width="3" stroke-dasharray="8 6"/>
+<circle cx="420" cy="152" r="8" fill="#C2185B"/>
+<text x="430" y="145" font-size="24" fill="#C2185B" font-weight="bold">C</text>
+<line x1="240" y1="330" x2="420" y2="152" stroke="#C2185B" stroke-width="3.5"/>
+<line x1="420" y1="152" x2="600" y2="330" stroke="#C2185B" stroke-width="3.5"/>
+<line x1="330" y1="238" x2="335" y2="232" stroke="#222" stroke-width="4"/>
+<line x1="512" y1="238" x2="517" y2="232" stroke="#222" stroke-width="4"/>
+<text x="780" y="180" font-size="24" text-anchor="middle" fill="#1F4E79">même rayon</text>
+<text x="780" y="215" font-size="24" text-anchor="middle" fill="#1F4E79">au compas</text>
+<text x="780" y="270" font-size="22" text-anchor="middle" fill="#333">les deux arcs se croisent</text>
+<text x="780" y="302" font-size="22" text-anchor="middle" fill="#333">au sommet C</text>
+<text x="500" y="410" font-size="23" text-anchor="middle" fill="#333">Même rayon depuis A et depuis B : CA = CB, le triangle est isocèle.</text>
+</g></svg>

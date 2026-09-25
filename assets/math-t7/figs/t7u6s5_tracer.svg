@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Tracer au rapporteur</text>
+<g font-family="serif">
+<path d="M270 260 L270.0 150.0 A110 110 0 0 1 270.0 370.0 Z" fill="#B0762E"/><path d="M270 260 L270.0 370.0 A110 110 0 0 1 160.0 260.0 Z" fill="#1F4E79"/><path d="M270 260 L160.0 260.0 A110 110 0 0 1 192.2 182.2 Z" fill="#C2185B"/><path d="M270 260 L192.2 182.2 A110 110 0 0 1 270.0 150.0 Z" fill="#1E7B34"/><circle cx="270" cy="260" r="110" fill="none" stroke="#222" stroke-width="3"/>
+<rect x="540" y="130" width="400" height="230" rx="14" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="740" y="172" font-size="23" text-anchor="middle" fill="#1F4E79" font-weight="bold">étapes</text>
+<text x="740" y="215" font-size="20" text-anchor="middle" fill="#222">1. rayon de départ tout en haut</text>
+<text x="740" y="252" font-size="20" text-anchor="middle" fill="#222">2. 180° au rapporteur → riz</text>
+<text x="740" y="289" font-size="20" text-anchor="middle" fill="#222">3. 90° → habillement</text>
+<text x="740" y="326" font-size="20" text-anchor="middle" fill="#222">4. 45° + 45° : le tour est fait</text>
+<text x="500" y="408" font-size="21" text-anchor="middle" fill="#333">Secteur après secteur, dans le même sens, jusqu’au bouclage à 360°.</text>
+</g></svg>

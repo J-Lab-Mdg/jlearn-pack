@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Le repère orthogonal : deux axes perpendiculaires</text>
+<g font-family="serif">
+<line x1="200" y1="110" x2="200" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="290" y1="110" x2="290" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="380" y1="110" x2="380" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="470" y1="110" x2="470" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="560" y1="110" x2="560" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="650" y1="110" x2="650" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="740" y1="110" x2="740" y2="380" stroke="#D5E1EA" stroke-width="1.5"/>
+<line x1="200" y1="380" x2="740" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="200" y1="290" x2="740" y2="290" stroke="#D5E1EA" stroke-width="1.5"/><line x1="200" y1="200" x2="740" y2="200" stroke="#D5E1EA" stroke-width="1.5"/><line x1="200" y1="110" x2="740" y2="110" stroke="#D5E1EA" stroke-width="1.5"/>
+<line x1="200" y1="385" x2="750" y2="385" stroke="#222" stroke-width="4" marker-end="url(#aj5)"/>
+<line x1="200" y1="390" x2="200" y2="100" stroke="#222" stroke-width="4" marker-end="url(#aj5)"/>
+<text x="290" y="412" font-size="20" text-anchor="middle" fill="#333">1</text><text x="380" y="412" font-size="20" text-anchor="middle" fill="#333">2</text><text x="470" y="412" font-size="20" text-anchor="middle" fill="#333">3</text><text x="560" y="412" font-size="20" text-anchor="middle" fill="#333">4</text><text x="650" y="412" font-size="20" text-anchor="middle" fill="#333">5</text>
+<text x="182" y="296" font-size="20" text-anchor="end" fill="#333">1</text><text x="182" y="206" font-size="20" text-anchor="end" fill="#333">2</text>
+<text x="178" y="412" font-size="22" fill="#222" font-weight="bold">O</text>
+<text x="712" y="416" font-size="21" fill="#222">x</text>
+<text x="178" y="98" font-size="21" fill="#222">y</text>
+<circle cx="470" cy="200" r="10" fill="#C2185B"/>
+<line x1="470" y1="385" x2="470" y2="200" stroke="#C2185B" stroke-width="2.5" stroke-dasharray="6 5"/>
+<line x1="200" y1="200" x2="470" y2="200" stroke="#C2185B" stroke-width="2.5" stroke-dasharray="6 5"/>
+<text x="482" y="196" font-size="26" fill="#C2185B" font-weight="bold">M (3 ; 2)</text>
+<rect x="770" y="130" width="200" height="230" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3"/>
+<text x="870" y="170" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">Point M :</text>
+<text x="870" y="212" font-size="21" text-anchor="middle" fill="#222">3 → abscisse</text>
+<text x="870" y="252" font-size="21" text-anchor="middle" fill="#222">2 → ordonnée</text>
+<text x="870" y="300" font-size="19" text-anchor="middle" fill="#555">abscisse d’abord,</text>
+<text x="870" y="326" font-size="19" text-anchor="middle" fill="#555">ordonnée ensuite</text>
+</g><defs><marker id="aj5" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker></defs></svg>

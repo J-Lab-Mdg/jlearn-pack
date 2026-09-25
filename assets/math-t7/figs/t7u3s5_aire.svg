@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Le mur : deux calculs, une aire</text>
+<g font-family="serif">
+<rect x="120" y="150" width="260" height="120" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<rect x="380" y="150" width="200" height="120" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<text x="250" y="135" font-size="24" text-anchor="middle" fill="#1F4E79" font-weight="bold">a</text>
+<text x="480" y="135" font-size="24" text-anchor="middle" fill="#C2185B" font-weight="bold">b</text>
+<text x="104" y="216" font-size="24" text-anchor="middle" fill="#222" font-weight="bold">k</text>
+<text x="250" y="225" font-size="26" text-anchor="middle" fill="#1F4E79" font-weight="bold">ka</text>
+<text x="480" y="225" font-size="26" text-anchor="middle" fill="#C2185B" font-weight="bold">kb</text>
+<text x="760" y="190" font-size="24" text-anchor="middle" fill="#222">grande bande : k(a + b)</text>
+<text x="760" y="240" font-size="24" text-anchor="middle" fill="#222">deux pans : ka + kb</text>
+<rect x="560" y="285" width="400" height="62" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="760" y="325" font-size="25" text-anchor="middle" fill="#1E7B34" font-weight="bold">k(a + b) = ka + kb</text>
+<text x="500" y="398" font-size="21" text-anchor="middle" fill="#333">L’aire totale ne change pas qu’on la calcule en une fois ou en deux.</text>
+</g></svg>

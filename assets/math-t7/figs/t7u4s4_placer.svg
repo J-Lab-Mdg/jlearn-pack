@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Placer un point à coordonnées données : N (4 ; 2)</text>
+<g font-family="serif">
+<line x1="180" y1="130" x2="180" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="280" y1="130" x2="280" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="380" y1="130" x2="380" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="480" y1="130" x2="480" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="580" y1="130" x2="580" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="680" y1="130" x2="680" y2="380" stroke="#D5E1EA" stroke-width="1.5"/>
+<line x1="180" y1="380" x2="680" y2="380" stroke="#D5E1EA" stroke-width="1.5"/><line x1="180" y1="280" x2="680" y2="280" stroke="#D5E1EA" stroke-width="1.5"/><line x1="180" y1="180" x2="680" y2="180" stroke="#D5E1EA" stroke-width="1.5"/>
+<line x1="180" y1="385" x2="695" y2="385" stroke="#222" stroke-width="3.5" marker-end="url(#aj7)"/>
+<line x1="180" y1="390" x2="180" y2="120" stroke="#222" stroke-width="3.5" marker-end="url(#aj7)"/>
+<text x="280" y="410" font-size="19" text-anchor="middle" fill="#333">1</text><text x="380" y="410" font-size="19" text-anchor="middle" fill="#333">2</text><text x="480" y="410" font-size="19" text-anchor="middle" fill="#333">3</text><text x="580" y="410" font-size="19" text-anchor="middle" fill="#333">4</text>
+<text x="162" y="286" font-size="19" text-anchor="end" fill="#333">1</text><text x="162" y="186" font-size="19" text-anchor="end" fill="#333">2</text>
+<line x1="580" y1="385" x2="580" y2="180" stroke="#C2185B" stroke-width="3" stroke-dasharray="7 6"/>
+<line x1="180" y1="180" x2="580" y2="180" stroke="#1E7B34" stroke-width="3" stroke-dasharray="7 6"/>
+<circle cx="580" cy="180" r="10" fill="#C2185B"/>
+<text x="592" y="172" font-size="26" fill="#C2185B" font-weight="bold">N</text>
+<rect x="720" y="130" width="250" height="230" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3"/>
+<text x="845" y="170" font-size="20" text-anchor="middle" fill="#1F4E79" font-weight="bold">Étapes</text>
+<text x="845" y="212" font-size="19" text-anchor="middle" fill="#222">1. Compter 4 sur (Ox)</text>
+<text x="845" y="252" font-size="19" text-anchor="middle" fill="#222">2. Compter 2 sur (Oy)</text>
+<text x="845" y="292" font-size="19" text-anchor="middle" fill="#222">3. N au croisement</text>
+<text x="845" y="332" font-size="19" text-anchor="middle" fill="#555">des deux guides</text>
+</g><defs><marker id="aj7" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker></defs></svg>

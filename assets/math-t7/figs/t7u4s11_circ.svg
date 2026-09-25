@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Le cercle circonscrit passe par les trois sommets</text>
+<g font-family="serif">
+<circle cx="450" cy="227" r="144" fill="none" stroke="#1E7B34" stroke-width="4"/>
+<polygon points="340,320 560,320 470,85" fill="rgba(252,228,214,0.55)" stroke="#C2185B" stroke-width="3.5"/>
+<text x="322" y="358" font-size="23" fill="#222" font-weight="bold">A</text>
+<text x="562" y="358" font-size="23" fill="#222" font-weight="bold">B</text>
+<text x="484" y="78" font-size="23" fill="#222" font-weight="bold">C</text>
+<circle cx="450" cy="227" r="7" fill="#1F4E79"/>
+<text x="461" y="223" font-size="23" fill="#1F4E79" font-weight="bold">O</text>
+<rect x="670" y="135" width="290" height="195" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3"/>
+<text x="815" y="176" font-size="20" text-anchor="middle" fill="#1F4E79" font-weight="bold">centre O</text>
+<text x="815" y="214" font-size="20" text-anchor="middle" fill="#222">rencontre des trois</text>
+<text x="815" y="247" font-size="20" text-anchor="middle" fill="#222">médiatrices</text>
+<text x="815" y="292" font-size="18" text-anchor="middle" fill="#555">OA = OB = OC = rayon</text>
+</g></svg>

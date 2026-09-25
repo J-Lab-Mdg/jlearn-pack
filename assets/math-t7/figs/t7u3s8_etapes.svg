@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">3x + 4 = 19 : deux gestes</text>
+<g font-family="serif">
+<rect x="330" y="105" width="340" height="56" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="500" y="142" font-size="28" text-anchor="middle" fill="#1F4E79" font-weight="bold">3x + 4 = 19</text>
+<path d="M500 165 L 500 195" stroke="#C2185B" stroke-width="3.5" marker-end="url(#e1)"/>
+<text x="640" y="192" font-size="21" text-anchor="middle" fill="#C2185B">on retire 4</text>
+<text x="500" y="228" font-size="26" text-anchor="middle" fill="#222">3x = 15</text>
+<path d="M500 240 L 500 270" stroke="#C2185B" stroke-width="3.5" marker-end="url(#e1)"/>
+<text x="650" y="267" font-size="21" text-anchor="middle" fill="#C2185B">on divise par 3</text>
+<rect x="380" y="285" width="240" height="62" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="325" font-size="30" text-anchor="middle" fill="#1E7B34" font-weight="bold">x = 5</text>
+<text x="500" y="395" font-size="21" text-anchor="middle" fill="#333">On démonte la machine à l’envers : dernier posé, premier défait.</text>
+</g><defs><marker id="e1" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#C2185B"/></marker></defs></svg>

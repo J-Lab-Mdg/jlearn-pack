@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Résoudre un problème de mesure : les trois étapes</text>
+<g font-family="serif">
+<rect x="60" y="105" width="270" height="225" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="195" y="150" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">1. Convertir</text>
+<text x="195" y="195" font-size="20" text-anchor="middle" fill="#222">une seule unité partout</text>
+<text x="195" y="235" font-size="20" text-anchor="middle" fill="#222">avant de calculer</text>
+<text x="195" y="285" font-size="19" text-anchor="middle" fill="#555">escalier ou tableau</text>
+<rect x="365" y="105" width="270" height="225" rx="12" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<text x="500" y="150" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">2. Calculer</text>
+<text x="500" y="195" font-size="20" text-anchor="middle" fill="#222">opération ou formule :</text>
+<text x="500" y="235" font-size="20" text-anchor="middle" fill="#222">P, A, V, +, −, ×, :</text>
+<text x="500" y="285" font-size="19" text-anchor="middle" fill="#555">poser ligne par ligne</text>
+<rect x="670" y="105" width="270" height="225" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="805" y="150" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">3. Conclure</text>
+<text x="805" y="195" font-size="20" text-anchor="middle" fill="#222">réponse avec l’unité</text>
+<text x="805" y="235" font-size="20" text-anchor="middle" fill="#222">demandée à la fin</text>
+<text x="805" y="285" font-size="19" text-anchor="middle" fill="#555">phrase de conclusion</text>
+<text x="500" y="390" font-size="23" text-anchor="middle" fill="#333">Convertir, calculer, conclure : toujours dans cet ordre.</text>
+</g></svg>

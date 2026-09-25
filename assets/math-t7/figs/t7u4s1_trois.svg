@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Trois familles de triangles</text>
+<g font-family="serif">
+<polygon points="90,300 90,130 290,300" fill="#FDE9E7" stroke="#C00000" stroke-width="3.5"/>
+<rect x="90" y="272" width="28" height="28" fill="none" stroke="#C00000" stroke-width="3"/>
+<text x="190" y="350" font-size="24" text-anchor="middle" fill="#C00000" font-weight="bold">triangle rectangle</text>
+<text x="190" y="385" font-size="20" text-anchor="middle" fill="#333">un angle droit (90°)</text>
+<polygon points="420,300 560,120 700,300" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<line x1="488" y1="212" x2="492" y2="206" stroke="#1F4E79" stroke-width="4.5"/>
+<line x1="628" y1="212" x2="632" y2="206" stroke="#1F4E79" stroke-width="4.5"/>
+<text x="560" y="350" font-size="24" text-anchor="middle" fill="#1F4E79" font-weight="bold">triangle isocèle</text>
+<text x="560" y="385" font-size="20" text-anchor="middle" fill="#333">deux côtés égaux</text>
+<polygon points="740,310 850,120 960,310" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<line x1="793" y1="219" x2="798" y2="212" stroke="#1E7B34" stroke-width="4.5"/>
+<line x1="902" y1="219" x2="907" y2="212" stroke="#1E7B34" stroke-width="4.5"/>
+<line x1="846" y1="316" x2="854" y2="316" stroke="#1E7B34" stroke-width="4.5"/>
+<text x="850" y="355" font-size="24" text-anchor="middle" fill="#1E7B34" font-weight="bold">triangle équilatéral</text>
+<text x="850" y="390" font-size="20" text-anchor="middle" fill="#333">trois côtés égaux</text>
+</g></svg>

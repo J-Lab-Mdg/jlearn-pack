@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Les parenthèses tranchent</text>
+<g font-family="serif">
+<rect x="70" y="120" width="420" height="230" rx="14" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="280" y="168" font-size="26" text-anchor="middle" fill="#1F4E79" font-weight="bold">(12 − 2) × 3</text>
+<text x="280" y="220" font-size="23" text-anchor="middle" fill="#222">= 10 × 3</text>
+<text x="280" y="280" font-size="30" text-anchor="middle" fill="#1F4E79" font-weight="bold">= 30</text>
+<rect x="530" y="120" width="420" height="230" rx="14" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<text x="740" y="168" font-size="26" text-anchor="middle" fill="#C2185B" font-weight="bold">12 − 2 × 3</text>
+<text x="740" y="220" font-size="23" text-anchor="middle" fill="#222">= 12 − 6</text>
+<text x="740" y="280" font-size="30" text-anchor="middle" fill="#C2185B" font-weight="bold">= 6</text>
+<text x="500" y="395" font-size="22" text-anchor="middle" fill="#333">Sans parenthèses : priorités. Avec parenthèses : la parenthèse commande.</text>
+</g></svg>

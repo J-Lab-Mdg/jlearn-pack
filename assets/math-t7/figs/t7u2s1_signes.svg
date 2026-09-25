@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Carré et cube de −2</text>
+<g font-family="serif">
+<rect x="70" y="110" width="400" height="240" rx="14" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="270" y="152" font-size="26" text-anchor="middle" fill="#1E7B34" font-weight="bold">exposant PAIR</text>
+<text x="270" y="205" font-size="24" text-anchor="middle" fill="#222">(−2)² = (−2) × (−2)</text>
+<text x="270" y="255" font-size="30" text-anchor="middle" fill="#1E7B34" font-weight="bold">= +4</text>
+<text x="270" y="305" font-size="20" text-anchor="middle" fill="#333">négatif × négatif = positif</text>
+<rect x="530" y="110" width="400" height="240" rx="14" fill="#FDE9E7" stroke="#C00000" stroke-width="3.5"/>
+<text x="730" y="152" font-size="26" text-anchor="middle" fill="#C00000" font-weight="bold">exposant IMPAIR</text>
+<text x="730" y="205" font-size="24" text-anchor="middle" fill="#222">(−2)³ = (−2) × (−2) × (−2)</text>
+<text x="730" y="255" font-size="30" text-anchor="middle" fill="#C00000" font-weight="bold">= −8</text>
+<text x="730" y="305" font-size="20" text-anchor="middle" fill="#333">positif × négatif = négatif</text>
+<text x="500" y="398" font-size="22" text-anchor="middle" fill="#333">Même base −2, le signe change selon la parité de l’exposant.</text>
+</g></svg>

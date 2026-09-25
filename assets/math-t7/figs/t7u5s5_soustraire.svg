@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Un cadre : soustraire les aires</text>
+<g font-family="serif">
+<rect x="100" y="100" width="280" height="224" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<rect x="128" y="128" width="224" height="168" fill="white" stroke="#1F4E79" stroke-width="3"/>
+<text x="240" y="218" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">photo 8 × 6</text>
+<text x="240" y="345" font-size="22" text-anchor="middle" fill="#C2185B" font-weight="bold">cadre entier : 10 × 8</text>
+<rect x="470" y="105" width="460" height="235" rx="12" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="700" y="150" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">bord = grand − petit</text>
+<text x="700" y="198" font-size="22" text-anchor="middle" fill="#222">10 × 8 = 80 ; 8 × 6 = 48</text>
+<text x="700" y="252" font-size="25" text-anchor="middle" fill="#1F4E79" font-weight="bold">80 − 48 = 32 cm²</text>
+<text x="500" y="395" font-size="23" text-anchor="middle" fill="#333">La partie enlevée se soustrait : l’aire du bord est la différence des deux aires.</text>
+</g></svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">La famille des relatifs</text>
+<g font-family="serif">
+<rect x="70" y="110" width="270" height="235" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="205" y="155" font-size="24" text-anchor="middle" fill="#1E7B34" font-weight="bold">positifs</text>
+<text x="205" y="205" font-size="27" text-anchor="middle" fill="#222">+4 ; +7 ; +2,5</text>
+<text x="205" y="250" font-size="20" text-anchor="middle" fill="#555">à droite de zéro</text>
+<text x="205" y="300" font-size="20" text-anchor="middle" fill="#555">richesse, hauteur, chaleur</text>
+<rect x="390" y="110" width="150" height="235" rx="12" fill="#F7F3EE" stroke="#C28E96" stroke-width="3.5"/>
+<text x="465" y="165" font-size="34" text-anchor="middle" fill="#C2185B" font-weight="bold">0</text>
+<text x="465" y="220" font-size="19" text-anchor="middle" fill="#555">sans signe,</text>
+<text x="465" y="250" font-size="19" text-anchor="middle" fill="#555">la frontière</text>
+<rect x="590" y="110" width="270" height="235" rx="12" fill="#FDE9E7" stroke="#C00000" stroke-width="3.5"/>
+<text x="725" y="155" font-size="24" text-anchor="middle" fill="#C00000" font-weight="bold">négatifs</text>
+<text x="725" y="205" font-size="27" text-anchor="middle" fill="#222">−7 ; −0,75 ; −12</text>
+<text x="725" y="250" font-size="20" text-anchor="middle" fill="#555">à gauche de zéro</text>
+<text x="725" y="300" font-size="20" text-anchor="middle" fill="#555">dette, sous-sol, froid</text>
+<text x="500" y="400" font-size="23" text-anchor="middle" fill="#333">Entiers relatifs (sans virgule) et décimaux relatifs (avec virgule).</text>
+</g></svg>

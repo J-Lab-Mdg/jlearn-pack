@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Regrouper les signes semblables</text>
+<g font-family="serif">
+<text x="500" y="148" font-size="28" text-anchor="middle" fill="#1F4E79" font-weight="bold">−7 + 12 − 5 + 8</text>
+<path d="M405 165 Q 380 210 320 225" fill="none" stroke="#C00000" stroke-width="3"/>
+<path d="M345 165 Q 320 210 385 225" fill="none" stroke="#C00000" stroke-width="3"/>
+<path d="M455 165 Q 500 205 590 225" fill="none" stroke="#1E7B34" stroke-width="3"/>
+<path d="M585 165 Q 610 205 655 225" fill="none" stroke="#1E7B34" stroke-width="3"/>
+<rect x="230" y="235" width="245" height="75" rx="12" fill="#FDE9E7" stroke="#C00000" stroke-width="3.5"/>
+<text x="352" y="265" font-size="23" text-anchor="middle" fill="#C00000" font-weight="bold">−7 − 5</text>
+<text x="352" y="297" font-size="24" text-anchor="middle" fill="#C00000" font-weight="bold">= −12</text>
+<rect x="525" y="235" width="245" height="75" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="647" y="265" font-size="23" text-anchor="middle" fill="#1E7B34" font-weight="bold">+12 + 8</text>
+<text x="647" y="297" font-size="24" text-anchor="middle" fill="#1E7B34" font-weight="bold">= +20</text>
+<text x="500" y="360" font-size="26" text-anchor="middle" fill="#1F4E79" font-weight="bold">−12 + 20 = +8</text>
+<text x="500" y="405" font-size="21" text-anchor="middle" fill="#333">Même résultat, plus sûr : commutativité et associativité l’autorisent.</text>
+</g></svg>

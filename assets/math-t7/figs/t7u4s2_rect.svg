@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Construire un triangle rectangle (ABC, Â droit)</text>
+<g font-family="serif">
+<rect x="40" y="100" width="290" height="230" rx="10" fill="#FAFCFD" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="185" y="128" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">1. Tracer [AB]</text>
+<line x1="90" y1="280" x2="280" y2="280" stroke="#222" stroke-width="4"/>
+<text x="82" y="312" font-size="22" fill="#222">A</text>
+<text x="285" y="312" font-size="22" fill="#222">B</text>
+<rect x="355" y="100" width="290" height="230" rx="10" fill="#FAFCFD" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="500" y="128" font-size="22" text-anchor="middle" fill="#1F4E79" font-weight="bold">2. Perpendiculaire en A</text>
+<line x1="400" y1="280" x2="590" y2="280" stroke="#222" stroke-width="4"/>
+<line x1="420" y1="280" x2="420" y2="190" stroke="#222" stroke-width="4"/>
+<rect x="420" y="258" width="22" height="22" fill="none" stroke="#C00000" stroke-width="3"/>
+<text x="412" y="312" font-size="22" fill="#222">A</text>
+<text x="596" y="312" font-size="22" fill="#222">B</text>
+<text x="428" y="182" font-size="22" fill="#222">C</text>
+<rect x="670" y="100" width="290" height="230" rx="10" fill="#FAFCFD" stroke="#1E7B34" stroke-width="2.5"/>
+<text x="815" y="128" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">3. Relier C et B</text>
+<line x1="720" y1="280" x2="910" y2="280" stroke="#222" stroke-width="4"/>
+<line x1="740" y1="280" x2="740" y2="190" stroke="#222" stroke-width="4"/>
+<line x1="740" y1="190" x2="910" y2="280" stroke="#C2185B" stroke-width="4"/>
+<rect x="740" y="258" width="22" height="22" fill="none" stroke="#C00000" stroke-width="3"/>
+<text x="732" y="312" font-size="22" fill="#222">A</text>
+<text x="915" y="312" font-size="22" fill="#222">B</text>
+<text x="748" y="182" font-size="22" fill="#222">C</text>
+<text x="500" y="390" font-size="23" text-anchor="middle" fill="#333">L’équerre donne l’angle droit ; le segment [CB] est l’hypoténuse.</text>
+</g></svg>

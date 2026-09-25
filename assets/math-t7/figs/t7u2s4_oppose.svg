@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Les opposés s’annulent</text>
+<g font-family="serif">
+<text x="500" y="170" font-size="30" text-anchor="middle" fill="#1F4E79" font-weight="bold">−3,5 + 6,25 − 2,75 + 3,5</text>
+<line x1="243" y1="138" x2="286" y2="138" stroke="#C00000" stroke-width="4"/>
+<line x1="243" y1="183" x2="286" y2="183" stroke="#C00000" stroke-width="4"/>
+<line x1="690" y1="138" x2="745" y2="138" stroke="#C00000" stroke-width="4"/>
+<line x1="690" y1="183" x2="745" y2="183" stroke="#C00000" stroke-width="4"/>
+<path d="M265 205 Q 470 300 715 205" fill="none" stroke="#C00000" stroke-width="3" stroke-dasharray="7 6"/>
+<text x="490" y="268" font-size="22" text-anchor="middle" fill="#C00000" font-weight="bold">−3,5 + 3,5 = 0</text>
+<rect x="330" y="312" width="340" height="62" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="351" font-size="26" text-anchor="middle" fill="#1E7B34" font-weight="bold">reste : 6,25 − 2,75 = 3,5</text>
+</g></svg>
