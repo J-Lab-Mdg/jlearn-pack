@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Retirer 2 des deux membres</text>
+<g font-family="serif">
+<text x="500" y="150" font-size="30" text-anchor="middle" fill="#1F4E79" font-weight="bold">x + 2 = 10</text>
+<text x="500" y="210" font-size="25" text-anchor="middle" fill="#222">x + 2 − 2 = 10 − 2</text>
+<rect x="348" y="192" width="95" height="40" rx="8" fill="none" stroke="#C00000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="506" y="192" width="95" height="40" rx="8" fill="none" stroke="#C00000" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="675" y="222" font-size="21" fill="#C00000">même geste</text>
+<text x="675" y="248" font-size="21" fill="#C00000">des deux côtés</text>
+<rect x="350" y="290" width="300" height="65" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="332" font-size="30" text-anchor="middle" fill="#1E7B34" font-weight="bold">x = 8</text>
+<text x="500" y="398" font-size="21" text-anchor="middle" fill="#333">La balance reste à l’horizontale : l’égalité est conservée.</text>
+</g></svg>

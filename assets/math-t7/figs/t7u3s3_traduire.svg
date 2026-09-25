@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Des mots aux symboles</text>
+<g font-family="serif">
+<rect x="80" y="130" width="420" height="180" rx="14" fill="#F7F3EE" stroke="#C2185B" stroke-width="3.5"/>
+<text x="290" y="185" font-size="22" text-anchor="middle" fill="#222">« le triple d’un nombre,</text>
+<text x="290" y="230" font-size="22" text-anchor="middle" fill="#222">augmenté de 7 »</text>
+<text x="290" y="282" font-size="20" text-anchor="middle" fill="#333">le nombre : n</text>
+<path d="M510 220 L 570 220" stroke="#1F4E79" stroke-width="4" marker-end="url(#d1)"/>
+<rect x="580" y="130" width="340" height="180" rx="14" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="750" y="200" font-size="28" text-anchor="middle" fill="#1F4E79" font-weight="bold">y = 3n + 7</text>
+<text x="750" y="255" font-size="20" text-anchor="middle" fill="#333">n = 10 → y = 37 ✓</text>
+<text x="500" y="380" font-size="22" text-anchor="middle" fill="#333">Traduire : une lettre pour l’inconnu, des signes pour les actions.</text>
+</g><defs><marker id="d1" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#1F4E79"/></marker></defs></svg>

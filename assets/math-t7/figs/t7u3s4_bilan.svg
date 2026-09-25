@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Deux familles, deux regroupements</text>
+<g font-family="serif">
+<text x="500" y="150" font-size="30" text-anchor="middle" fill="#1F4E79" font-weight="bold">2x + 3 + 4x + 1</text>
+<path d="M258 168 Q 310 195 362 168" fill="none" stroke="#C2185B" stroke-width="3"/>
+<path d="M462 168 Q 514 195 566 168" fill="none" stroke="#C2185B" stroke-width="3"/>
+<path d="M376 168 Q 410 192 444 168" fill="none" stroke="#1E7B34" stroke-width="3"/>
+<path d="M590 168 Q 628 192 666 168" fill="none" stroke="#1E7B34" stroke-width="3"/>
+<text x="500" y="225" font-size="26" text-anchor="middle" fill="#C2185B">famille x : 2x + 4x = 6x</text>
+<text x="500" y="278" font-size="26" text-anchor="middle" fill="#1E7B34">famille nombres : 3 + 1 = 4</text>
+<rect x="330" y="310" width="340" height="64" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3.5"/>
+<text x="500" y="351" font-size="30" text-anchor="middle" fill="#1E7B34" font-weight="bold">= 6x + 4</text>
+<text x="500" y="410" font-size="20" text-anchor="middle" fill="#333">Chaque famille se traite à part ; x et les nombres ne fusionnent jamais.</text>
+</g></svg>

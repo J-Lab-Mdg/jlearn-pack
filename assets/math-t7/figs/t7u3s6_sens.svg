@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"><rect width="100%" height="100%" fill="white"/><text x="35" y="48" font-family="serif" font-size="30" font-weight="bold" fill="#1F4E79">Les deux flèches</text>
+<g font-family="serif">
+<rect x="170" y="150" width="300" height="90" rx="14" fill="#EAF2F8" stroke="#1F4E79" stroke-width="3.5"/>
+<text x="320" y="205" font-size="30" text-anchor="middle" fill="#1F4E79" font-weight="bold">4(2x + 3)</text>
+<rect x="530" y="150" width="300" height="90" rx="14" fill="#FCE4D6" stroke="#C2185B" stroke-width="3.5"/>
+<text x="680" y="205" font-size="30" text-anchor="middle" fill="#C2185B" font-weight="bold">8x + 12</text>
+<path d="M480 175 L 520 175" stroke="#1E7B34" stroke-width="4" marker-end="url(#f1)"/>
+<path d="M520 230 L 480 230" stroke="#C2185B" stroke-width="4" marker-end="url(#f2)"/>
+<text x="500" y="158" font-size="19" text-anchor="middle" fill="#1E7B34" font-weight="bold">développer</text>
+<text x="500" y="258" font-size="19" text-anchor="middle" fill="#C2185B" font-weight="bold">factoriser</text>
+<text x="500" y="330" font-size="23" text-anchor="middle" fill="#333">produit ⇄ somme : les deux écritures disent la même chose</text>
+<rect x="260" y="360" width="480" height="52" rx="12" fill="#E9F5EC" stroke="#1E7B34" stroke-width="3"/>
+<text x="500" y="393" font-size="22" text-anchor="middle" fill="#1E7B34" font-weight="bold">on vérifie une factorisation en redéveloppant</text>
+</g><defs><marker id="f1" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#1E7B34"/></marker><marker id="f2" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#C2185B"/></marker></defs></svg>
