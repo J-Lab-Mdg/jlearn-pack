@@ -20,7 +20,7 @@ function img(rootDir, rel, wPx) {
 // ---------------- Bookcover pleine page (page 1, sans marge) ----------------
 function buildBookcover(rootDir) {
   const { ImageRun, Paragraph, HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, TextWrappingType } = require("docx");
-  const p = path.join(rootDir, "images/bookcover_PC_T7_a4.png");
+  const p = path.join(rootDir, "images/bookcover_PC_T7_femme_a4.png");
   if (!fs.existsSync(p)) return [];
   const data = fs.readFileSync(p);
   // A4 = 794 × 1123 px (96 dpi) — image flottante ancrée au bord de la PAGE : couvre tout, sans marge
