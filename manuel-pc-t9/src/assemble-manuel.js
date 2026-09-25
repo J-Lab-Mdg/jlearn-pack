@@ -72,7 +72,7 @@ const plan = [
 
 const annexesToc = [
   { titre: "Annexe 1 — Formules et grandeurs physiques", anchor: "annexe1" },
-  { titre: "Annexe 2 — Tableau périodique simplifié et échelle de pH", anchor: "annexe2" },
+  { titre: "Annexe 2 — Tableau périodique et échelle de pH", anchor: "annexe2" },
   { titre: "Annexe 3 — Tableaux de conversion d'unités", anchor: "annexe3" },
   { titre: "Annexe 4 — Glossaire", anchor: "annexe4" },
   { titre: "Annexe 5 — Mémo sécurité", anchor: "annexe5" },

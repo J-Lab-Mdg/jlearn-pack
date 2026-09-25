@@ -68,7 +68,7 @@ function annexe1() {
 
 // ---------------- Annexe 2 : Tableau périodique simplifié ----------------
 function annexe2(rootDir) {
-  const out = titreAnnexe(2, "Tableau périodique simplifié", "annexe2");
+  const out = titreAnnexe(2, "Tableau périodique", "annexe2");
   out.push(B.p("Le tableau périodique classe les éléments par numéro atomique croissant ; chaque colonne rassemble une famille aux propriétés voisines. En T8, tu travailles surtout avec les 20 premiers éléments.", {
     size: 21, spacingAfter: 120, align: AlignmentType.JUSTIFIED,
   }));
@@ -79,6 +79,24 @@ function annexe2(rootDir) {
     out.push(B.imagePara(imgPath, w, Math.round(ih * (w / iw))));
     out.push(B.legende("Les 20 premiers éléments du tableau périodique, avec leur symbole"));
   }
+  out.push(B.p("Le tableau périodique complet", { bold: true, size: 22, color: B.GREEN, spacingBefore: 160, spacingAfter: 80 }));
+  const imgFull = path.join(rootDir, "images/img_annexe_periodique_complet.png");
+  if (fs.existsSync(imgFull)) {
+    const buf2 = fs.readFileSync(imgFull);
+    const w2 = 500, iw2 = buf2.readUInt32BE(16), ih2 = buf2.readUInt32BE(20);
+    out.push(B.imagePara(imgFull, w2, Math.round(ih2 * (w2 / iw2))));
+    out.push(B.legende("Le tableau périodique complet : 118 éléments classés par numéro atomique croissant, familles en couleurs"));
+  }
+  out.push(B.p("Les 118 éléments en détail (Z : numéro atomique ; M : masse molaire en g/mol ; entre parenthèses : élément instable)", { bold: true, size: 22, color: B.GREEN, spacingBefore: 160, spacingAfter: 80 }));
+  const ELEMENTS = require("./periodique-data.js");
+  const moitie = Math.ceil(ELEMENTS.length / 2);
+  const lignesEl = [];
+  for (let i = 0; i < moitie; i++) {
+    const a = ELEMENTS[i];
+    const b = ELEMENTS[i + moitie] || ["", "", "", ""];
+    lignesEl.push([String(a[0]), a[1], a[2], a[3], String(b[0]), b[1], b[2], b[3]]);
+  }
+  out.push(tbl(["Z", "Sym.", "Nom", "M (g/mol)", "Z", "Sym.", "Nom", "M (g/mol)"], lignesEl, [6, 8, 22, 14, 6, 8, 22, 14]));
   out.push(B.p("Les éléments du programme de T8", { bold: true, size: 22, color: B.GREEN, spacingBefore: 120, spacingAfter: 80 }));
   out.push(tbl(
     ["Élément", "Symbole", "Formule électronique", "Valence", "Où le rencontre-t-on ?"],
