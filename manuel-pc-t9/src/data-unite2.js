@@ -2,7 +2,7 @@
 const DOC = "Programme scolaire de la classe de 3e (T9) — Sciences Physiques (MEN Madagascar) ; manuel J-Learn";
 
 const S12 = {
-  numero: 12, total: 34, unite: "II", theme: "Électricité",
+  numero: 12, total: 39, unite: "II", theme: "Électricité",
   titre: "Le conducteur ohmique et sa caractéristique",
   objectif: "identifier un conducteur ohmique et de tracer sa caractéristique tension-intensité",
   documentation: DOC,
@@ -168,7 +168,7 @@ const S12 = {
 };
 
 const S13 = {
-  numero: 13, total: 34, unite: "II", theme: "Électricité",
+  numero: 13, total: 39, unite: "II", theme: "Électricité",
   titre: "La loi d'Ohm ; la résistance électrique",
   objectif: "énoncer la loi d'Ohm et de définir la résistance d'un conducteur ohmique",
   documentation: DOC,
@@ -333,7 +333,7 @@ const S13 = {
 };
 
 const S14 = {
-  numero: 14, total: 34, unite: "II", theme: "Électricité",
+  numero: 14, total: 39, unite: "II", theme: "Électricité",
   titre: "Association de résistors en série et en dérivation",
   objectif: "appliquer la loi d'Ohm pour calculer la résistance équivalente de résistors associés en série et en dérivation",
   documentation: DOC,
@@ -496,7 +496,7 @@ const S14 = {
 };
 
 const S15 = {
-  numero: 15, total: 34, unite: "II", theme: "Électricité",
+  numero: 15, total: 39, unite: "II", theme: "Électricité",
   titre: "La puissance électrique : P = U × I",
   objectif: "lire les indications portées sur un appareil électrique et de calculer la puissance consommée P = U × I",
   documentation: DOC,
@@ -664,7 +664,7 @@ const S15 = {
 };
 
 const S16 = {
-  numero: 16, total: 34, unite: "II", theme: "Électricité",
+  numero: 16, total: 39, unite: "II", theme: "Électricité",
   titre: "L'énergie électrique ; l'effet Joule et sa loi",
   objectif: "calculer l'énergie électrique consommée W = P × t et d'énoncer la loi de Joule",
   documentation: DOC,
@@ -829,7 +829,7 @@ const S16 = {
 };
 
 const S17 = {
-  numero: 17, total: 34, unite: "II", theme: "Électricité",
+  numero: 17, total: 39, unite: "II", theme: "Électricité",
   titre: "L'électricité à la maison : installation, protection, sécurité",
   objectif: "décrire et de schématiser une installation électrique domestique et d'énoncer les règles de sécurité",
   documentation: DOC,

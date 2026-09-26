@@ -2,7 +2,7 @@
 const DOC = "Programme scolaire de la classe de 3e (T9) — Sciences Physiques (MEN Madagascar) ; manuel J-Learn";
 
 const S20 = {
-  numero: 20, total: 34, unite: "III", theme: "Optique",
+  numero: 20, total: 39, unite: "III", theme: "Optique",
   titre: "La réflexion de la lumière : les lois",
   objectif: "mettre en évidence le phénomène de réflexion sur un miroir plan et d'énoncer ses lois",
   documentation: DOC,
@@ -171,7 +171,7 @@ const S20 = {
 };
 
 const S21 = {
-  numero: 21, total: 34, unite: "III", theme: "Optique",
+  numero: 21, total: 39, unite: "III", theme: "Optique",
   titre: "L'image donnée par un miroir plan",
   objectif: "construire l'image d'un objet donnée par un miroir plan et d'en donner les caractéristiques",
   documentation: DOC,
@@ -335,7 +335,7 @@ const S21 = {
 };
 
 const S22 = {
-  numero: 22, total: 34, unite: "III", theme: "Optique",
+  numero: 22, total: 39, unite: "III", theme: "Optique",
   titre: "La réfraction de la lumière ; le mirage",
   objectif: "mettre en évidence le phénomène de réfraction et d'interpréter le mirage",
   documentation: DOC,
@@ -500,7 +500,7 @@ const S22 = {
 };
 
 const S23 = {
-  numero: 23, total: 34, unite: "III", theme: "Optique",
+  numero: 23, total: 39, unite: "III", theme: "Optique",
   titre: "La décomposition de la lumière blanche",
   objectif: "mettre en évidence la décomposition de la lumière blanche par un prisme et de nommer les couleurs du spectre",
   documentation: DOC,
@@ -666,7 +666,7 @@ const S23 = {
 };
 
 const S24 = {
-  numero: 24, total: 34, unite: "III", theme: "Optique",
+  numero: 24, total: 39, unite: "III", theme: "Optique",
   titre: "La couleur des objets ; les filtres",
   objectif: "expliquer la couleur des objets par l'absorption et de décrire l'effet d'un filtre coloré",
   documentation: DOC,
@@ -837,9 +837,9 @@ const S24 = {
 };
 
 const S25 = {
-  numero: 25, total: 34, unite: "III", theme: "Optique",
-  titre: "La recomposition de la lumière blanche ; le disque de Newton",
-  objectif: "mettre en évidence la recomposition de la lumière blanche à l'aide du disque de Newton",
+  numero: 25, total: 39, unite: "III", theme: "Optique",
+  titre: "La recomposition de la lumière blanche ; fréquence et longueur d'onde",
+  objectif: "mettre en évidence la recomposition de la lumière blanche et de relier la fréquence et la longueur d'onde d'une onde par v = λ × f",
   documentation: DOC,
   support: "Disque de Newton (carton colorié), ficelle ou toupie, prismes (si disponibles), lampe",
   image: "images/img_seance25.png",
@@ -943,10 +943,24 @@ const S25 = {
         ],
       },
       {
-        titre: "4. Exemples résolus",
+        titre: "4. Lumière et son : fréquence et longueur d'onde",
+        paras: [
+          "La lumière et le son sont des ONDES : des vibrations qui se propagent. Trois grandeurs les décrivent : la période T (durée d'une vibration, en secondes), la FRÉQUENCE f (nombre de vibrations par seconde, en hertz, Hz) avec f = 1 ÷ T, et la LONGUEUR D'ONDE λ (lambda) : la distance parcourue par l'onde pendant une période, en mètres.",
+          "Ces grandeurs sont liées par la relation fondamentale : v = λ × f, où v est la vitesse de propagation de l'onde. On en tire λ = v ÷ f et f = v ÷ λ.",
+          "Piège à éviter : ne confonds pas les deux vitesses ! Le son se propage à environ 340 m/s dans l'air ; la lumière file à 300 000 km/s (3 × 10⁸ m/s) : presque un million de fois plus vite : c'est pourquoi l'éclair arrive avant le tonnerre.",
+        ],
+        puces: [
+          "pour la lumière visible : chaque couleur correspond à une longueur d'onde : du violet (environ 400 nm) au rouge (environ 800 nm) ;",
+          "pour le son : plus la fréquence est grande, plus le son est aigu : l'oreille humaine perçoit de 20 Hz (grave) à 20 000 Hz (aigu) ;",
+          "exemple : la note la du diapason vibre à f = 440 Hz : sa longueur d'onde dans l'air vaut λ = 340 ÷ 440 ≈ 0,77 m.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
         paras: [
           "Exemple 1 — Le disque de Rija tourne lentement : il voit encore les couleurs défiler. Que doit-il changer, et pourquoi ? Solution : tourner PLUS VITE : il faut que le cycle complet des sept couleurs dure moins qu'un dixième de seconde (la persistance des impressions), soit plus de dix tours par seconde environ. En dessous, l'œil suit chaque couleur ; au-dessus, il les fusionne en blanc grisâtre.",
           "Exemple 2 — Pourquoi le disque paraît-il blanc GRISÂTRE et jamais blanc pur ? Solution : les peintures ne sont pas parfaites : chaque secteur absorbe une partie de la lumière au lieu de tout renvoyer (leçon S24 !). La somme des couleurs affaiblies donne un blanc assombri : du gris clair. Avec de vraies lumières colorées superposées, le blanc serait pur.",
+          "Exemple 3 — Une station de radio émet à la fréquence f = 100 MHz (100 × 10⁶ Hz). Les ondes radio se propagent comme la lumière à 3 × 10⁸ m/s. Calcule la longueur d'onde. Solution : λ = v ÷ f = (3 × 10⁸) ÷ (100 × 10⁶) = 3 m : voilà pourquoi les antennes FM mesurent quelques mètres : leur taille est liée à la longueur d'onde !",
         ],
       },
     ],

@@ -3,8 +3,8 @@ const DOC = "Programme d'études T8 — Sciences Physiques (MEN Madagascar) ; ma
 
 const S28 = {
   numero: 28, total: 34, unite: "IV", theme: "Énergie",
-  titre: "Pertes énergétiques et techniques de conservation",
-  objectif: "expliquer les pertes énergétiques d'un système et d'élaborer une fiche synthèse des techniques de conservation",
+  titre: "Énergies renouvelables et non renouvelables ; pertes et conservation",
+  objectif: "distinguer les énergies renouvelables des énergies non renouvelables, expliquer les pertes énergétiques d'un système et élaborer une fiche synthèse des techniques de conservation",
   documentation: DOC,
   support: "Lampe à incandescence et lampe DEL, marmite avec et sans couvercle, roue de vélo, documents, papier kraft",
   image: "images/img_seance28.png",
@@ -84,7 +84,7 @@ const S28 = {
   ],
   evaluationTechnique: "Travail individuel écrit", evaluationSupport: "Cahier",
   lecon: {
-    motsCles: ["perte énergétique", "effet Joule", "frottement", "rayonnement", "isolation", "lubrification", "fiche synthèse"],
+    motsCles: ["énergie renouvelable", "énergie non renouvelable", "perte énergétique", "effet Joule", "frottement", "rayonnement", "isolation", "fiche synthèse"],
     sections: [
       {
         titre: "1. L'énergie se perd en chemin",
@@ -116,16 +116,31 @@ const S28 = {
         ],
       },
       {
-        titre: "4. Exemples résolus",
+        titre: "4. Énergies renouvelables et non renouvelables",
+        paras: [
+          "Avant de savoir économiser l'énergie, il faut savoir d'où elle vient. On classe les sources d'énergie en deux grandes familles, selon que la nature les reconstitue vite… ou pas.",
+          "Une énergie est RENOUVELABLE quand sa source se reconstitue naturellement à l'échelle d'une vie humaine : elle ne s'épuise pas si on l'exploite raisonnablement. Une énergie est NON RENOUVELABLE quand sa source, formée en des millions d'années, s'épuise à mesure qu'on la consomme : une fois brûlée, elle est perdue pour des générations.",
+        ],
+        puces: [
+          "renouvelables : le soleil (panneaux solaires, chauffe-eau), le vent (éoliennes), l'eau des rivières et des barrages (hydroélectricité, comme à Andekaleka), la biomasse gérée durablement (bois replanté, biogaz), la chaleur de la Terre (géothermie) ;",
+          "non renouvelables : le pétrole et ses dérivés (essence, gazole, pétrole lampant), le charbon de terre (houille), le gaz naturel et le gaz butane, l'uranium des centrales nucléaires ;",
+          "attention au charbon de bois : il n'est renouvelable QUE si l'on replante les arbres au même rythme qu'on les coupe : sinon la forêt disparaît plus vite qu'elle ne repousse ;",
+          "Piège à éviter : « renouvelable » ne veut pas dire « gratuite » ni « disponible à chaque instant » : le soleil se couche, le vent tombe, le barrage dépend de la pluie : il faut souvent stocker ou combiner plusieurs sources.",
+        ],
+      },
+      {
+        titre: "5. Exemples résolus",
         paras: [
           "Exemple 1 — Le moteur d'une pompe chauffe et grince. Identifie les deux causes de pertes et propose une solution pour chacune. Solution : le grincement révèle des FROTTEMENTS : lubrifier les axes (huile, graisse) ; l'échauffement du moteur vient surtout de l'EFFET JOULE dans ses bobinages : vérifier que les fils d'alimentation sont de section suffisante et le moteur adapté à la charge.",
           "Exemple 2 — Une famille utilise un foyer traditionnel « trois pierres » ouvert au vent. Explique pourquoi elle consomme beaucoup de charbon et propose deux améliorations. Solution : la chaleur s'échappe par rayonnement et par le vent (fuites thermiques). Améliorations : foyer amélioré fermé (type kamado ou fatana mitsitsy) qui garde la chaleur autour de la marmite, et couvercle sur la marmite : jusqu'à la moitié du charbon économisé.",
+          "Exemple 3 — Classe ces sources d'énergie en renouvelables et non renouvelables : soleil, gazole, vent, charbon de terre, eau du barrage d'Andekaleka, gaz butane. Solution : renouvelables : soleil, vent, eau du barrage (le cycle de l'eau les reconstitue sans cesse) ; non renouvelables : gazole, charbon de terre, gaz butane (issus de gisements fossiles formés en des millions d'années : ils s'épuisent).",
         ],
       },
     ],
     saisTu: [
       "Une ampoule à incandescence transforme à peine 5 % de l'électricité en lumière : 95 % partent en chaleur ! La lampe DEL fait dix fois mieux : voilà pourquoi le monde entier a abandonné les vieilles ampoules en une décennie.",
       "Les foyers améliorés (fatana mitsitsy) diffusés à Madagascar réduisent la consommation de charbon de 30 à 50 % : bon pour le budget des familles… et pour les forêts de la Grande Île !",
+      "La majeure partie de l'électricité du réseau d'Antananarivo est d'origine hydraulique, grâce aux barrages comme Andekaleka sur la rivière Vohitra : une énergie renouvelable fournie par le cycle de l'eau… tant que les pluies arrosent les hautes terres !",
     ],
     experience: [
       "Le duel des marmites :",
@@ -161,10 +176,10 @@ const S28 = {
     },
     {
       points: 3,
-      consigne: "Rédige trois lignes de ta fiche synthèse « techniques de conservation » (perte / technique / exemple local).",
+      consigne: "Classe en renouvelables et non renouvelables : soleil, pétrole lampant, vent, charbon de terre, eau d'un barrage, gaz butane. Justifie en une phrase.",
       items: [],
       corrige: [
-        [{ text: "Exemple attendu : " }, { text: "fuite thermique / couvercle / marmite de riz", cle: true }, { text: " ; " }, { text: "frottement / huile / chaîne de vélo", cle: true }, { text: " ; " }, { text: "effet Joule / lampe DEL / éclairage de la maison", cle: true }, { text: ". (1 point par ligne cohérente)" }],
+        [{ text: "Renouvelables : " }, { text: "soleil, vent, eau d'un barrage", cle: true }, { text: " (sources reconstituées en permanence par la nature). Non renouvelables : " }, { text: "pétrole lampant, charbon de terre, gaz butane", cle: true }, { text: " (gisements fossiles qui " }, { text: "s'épuisent", cle: true }, { text: "). (0,5 point par source bien classée + 1 point pour la justification)" }],
       ],
     },
   ],

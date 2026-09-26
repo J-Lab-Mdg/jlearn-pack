@@ -2,7 +2,7 @@
 const DOC = "Programme scolaire de la classe de 3e (T9) — Sciences Physiques (MEN Madagascar) ; manuel J-Learn";
 
 const S1 = {
-  numero: 1, total: 34, unite: "I", theme: "Mécanique",
+  numero: 1, total: 39, unite: "I", theme: "Mécanique",
   titre: "La notion de force ; le dynamomètre",
   objectif: "mettre en évidence la force exercée par un fil sur un objet et de mesurer son intensité à l'aide d'un dynamomètre",
   documentation: DOC,
@@ -176,7 +176,7 @@ const S1 = {
 };
 
 const S2 = {
-  numero: 2, total: 34, unite: "I", theme: "Mécanique",
+  numero: 2, total: 39, unite: "I", theme: "Mécanique",
   titre: "Les caractéristiques d'une force ; le vecteur force",
   objectif: "donner les caractéristiques d'une force et de la représenter par un vecteur",
   documentation: DOC,
@@ -349,7 +349,7 @@ const S2 = {
 };
 
 const S3 = {
-  numero: 3, total: 34, unite: "I", theme: "Mécanique",
+  numero: 3, total: 39, unite: "I", theme: "Mécanique",
   titre: "L'équilibre d'un solide soumis à deux forces",
   objectif: "donner les conditions nécessaires à l'équilibre d'un solide soumis à deux forces",
   documentation: DOC,
@@ -518,7 +518,7 @@ const S3 = {
 };
 
 const S4 = {
-  numero: 4, total: 34, unite: "I", theme: "Mécanique",
+  numero: 4, total: 39, unite: "I", theme: "Mécanique",
   titre: "Le poids d'un corps et le centre de gravité",
   objectif: "représenter le poids d'un corps par un vecteur appliqué au centre de gravité",
   documentation: DOC,
@@ -684,7 +684,7 @@ const S4 = {
 };
 
 const S5 = {
-  numero: 5, total: 34, unite: "I", theme: "Mécanique",
+  numero: 5, total: 39, unite: "I", theme: "Mécanique",
   titre: "La poussée d'Archimède : mise en évidence et mesure",
   objectif: "mettre en évidence la poussée d'Archimède et de déterminer son intensité par la méthode des deux pesées",
   documentation: DOC,
@@ -849,7 +849,7 @@ const S5 = {
 };
 
 const S6 = {
-  numero: 6, total: 34, unite: "I", theme: "Mécanique",
+  numero: 6, total: 39, unite: "I", theme: "Mécanique",
   titre: "Le théorème d'Archimède ; la densité",
   objectif: "énoncer le théorème d'Archimède et d'appliquer la relation F = ρ × V × g",
   documentation: DOC,
@@ -1014,7 +1014,7 @@ const S6 = {
 };
 
 const S7 = {
-  numero: 7, total: 34, unite: "I", theme: "Mécanique",
+  numero: 7, total: 39, unite: "I", theme: "Mécanique",
   titre: "Les corps flottants",
   objectif: "prévoir si un solide homogène abandonné au sein d'un liquide va flotter ou couler",
   documentation: DOC,
@@ -1186,7 +1186,7 @@ const S7 = {
 };
 
 const S8 = {
-  numero: 8, total: 34, unite: "I", theme: "Mécanique",
+  numero: 8, total: 39, unite: "I", theme: "Mécanique",
   titre: "Le travail d'une force constante",
   objectif: "définir une force constante et de calculer son travail lorsque son point d'application se déplace sur sa droite d'action",
   documentation: DOC,
@@ -1351,7 +1351,7 @@ const S8 = {
 };
 
 const S9 = {
-  numero: 9, total: 34, unite: "I", theme: "Mécanique",
+  numero: 9, total: 39, unite: "I", theme: "Mécanique",
   titre: "La puissance d'une force",
   objectif: "exprimer la puissance d'une force et de donner sa signification physique",
   documentation: DOC,

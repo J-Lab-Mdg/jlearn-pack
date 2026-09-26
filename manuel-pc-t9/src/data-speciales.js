@@ -3,7 +3,7 @@
 
 // ============================================================ S10 — RÉVISION UNITÉ I
 const S10 = {
-  numero: 10, total: 34, unite: "I", type: "revision",
+  numero: 10, total: 39, unite: "I", type: "revision",
   titre: "Révision de l'Unité I — Mécanique",
   image: "images/img_unite1.png",
   imageLegende: "La mécanique : forces, équilibre, Archimède, travail et puissance",
@@ -132,7 +132,7 @@ const S10 = {
 
 // ============================================================ S11 — EXAMEN UNITÉ I
 const S11 = {
-  numero: 11, total: 34, unite: "I", type: "examen",
+  numero: 11, total: 39, unite: "I", type: "examen",
   titre: "Examen de l'Unité I — Mécanique",
   sousTitre: "SUJET D'EXAMEN No 1",
   consignes: [
@@ -220,7 +220,7 @@ const S11 = {
 
 // ============================================================ S18 — RÉVISION UNITÉ II
 const S18 = {
-  numero: 18, total: 34, unite: "II", type: "revision",
+  numero: 18, total: 39, unite: "II", type: "revision",
   titre: "Révision de l'Unité II — Électricité",
   image: "images/img_unite2.png",
   imageLegende: "L'électricité : loi d'Ohm, associations, puissance, énergie et sécurité",
@@ -341,7 +341,7 @@ const S18 = {
 
 // ============================================================ S19 — EXAMEN UNITÉ II
 const S19 = {
-  numero: 19, total: 34, unite: "II", type: "examen",
+  numero: 19, total: 39, unite: "II", type: "examen",
   titre: "Examen de l'Unité II — Électricité",
   sousTitre: "SUJET D'EXAMEN No 2",
   consignes: [
@@ -429,7 +429,7 @@ const S19 = {
 
 // ============================================================ S26 — RÉVISION UNITÉ III
 const S26 = {
-  numero: 26, total: 34, unite: "III", type: "revision",
+  numero: 26, total: 39, unite: "III", type: "revision",
   titre: "Révision de l'Unité III — Optique",
   image: "images/img_unite3.png",
   imageLegende: "L'optique : réflexion, réfraction, spectre et couleurs",
@@ -461,9 +461,10 @@ const S26 = {
       ],
     },
     {
-      ref: "Séances 24 et 25 — Couleur des objets, filtres, recomposition",
-      motsCles: ["absorption", "filtre", "disque de Newton", "persistance", "recomposition"],
+      ref: "Séances 24 et 25 — Couleurs, recomposition, fréquence et longueur d'onde",
+      motsCles: ["absorption", "filtre", "disque de Newton", "recomposition", "fréquence", "longueur d'onde"],
       points: [
+        "Lumière et son sont des ondes : v = λ × f ; le son se propage à environ 340 m/s, la lumière à 3 × 10⁸ m/s.",
         "Un objet renvoie sa couleur et absorbe les autres ; blanc renvoie tout, noir absorbe tout ; la couleur perçue dépend de l'éclairage (tissu vert en lumière rouge : noir).",
         "Un filtre ne laisse passer que la lumière de sa couleur.",
         "Le disque de Newton en rotation rapide paraît blanc grisâtre : la persistance des impressions lumineuses recompose le blanc : la lumière blanche est un mélange de toutes les couleurs.",
@@ -548,7 +549,7 @@ const S26 = {
 
 // ============================================================ S27 — EXAMEN UNITÉ III
 const S27 = {
-  numero: 27, total: 34, unite: "III", type: "examen",
+  numero: 27, total: 39, unite: "III", type: "examen",
   titre: "Examen de l'Unité III — Optique",
   sousTitre: "SUJET D'EXAMEN No 3",
   consignes: [
@@ -636,7 +637,7 @@ const S27 = {
 
 // ============================================================ S33 — RÉVISION + EXAMEN UNITÉ IV
 const S33 = {
-  numero: 33, total: 34, unite: "IV", type: "revisionExamen",
+  numero: 33, total: 39, unite: "IV", type: "revisionExamen",
   titre: "Révision et Examen de l'Unité IV — Chimie",
   sousTitre: "SUJET D'EXAMEN No 4",
   image: "images/img_unite4.png",
@@ -758,12 +759,118 @@ const S33 = {
 };
 
 // ============================================================ S34 — EXAMEN BLANC FINAL
+const S38 = {
+  numero: 38, total: 39, unite: "V", type: "revisionExamen",
+  titre: "Révision et Examen de l'Unité V — Mouvement",
+  sousTitre: "SUJET D'EXAMEN No 5",
+  image: "images/img_unite5.png",
+  imageLegende: "Le mouvement : trajectoires, relativité, vecteur vitesse et graphes",
+  recap: [
+    {
+      ref: "Séance 35 — Trajectoires et relativité",
+      motsCles: ["trajectoire", "rectiligne", "circulaire", "curviligne", "référentiel", "relativité"],
+      points: [
+        "La trajectoire est la ligne décrite par le mobile : rectiligne (droite), circulaire (cercle) ou curviligne (courbe).",
+        "Le mouvement se décrit toujours PAR RAPPORT à un référentiel : un passager est immobile par rapport au bus, en mouvement par rapport à la route.",
+        "Le repos absolu n'existe pas : mouvement et trajectoire dépendent du référentiel choisi.",
+      ],
+    },
+    {
+      ref: "Séance 36 — Le vecteur vitesse",
+      motsCles: ["v = d ÷ t", "3,6", "vecteur", "tangent"],
+      points: [
+        "Vitesse moyenne : v = d ÷ t ; conversions : km/h ÷ 3,6 → m/s ; m/s × 3,6 → km/h.",
+        "Le vecteur vitesse a quatre caractéristiques : origine (le mobile), direction, sens, norme.",
+        "Il est toujours tangent à la trajectoire, dans le sens du mouvement.",
+      ],
+    },
+    {
+      ref: "Séance 37 — Les graphes du mouvement",
+      motsCles: ["distance-temps", "vitesse-temps", "pente", "palier"],
+      points: [
+        "Graphe distance-temps : droite qui monte = uniforme (la pente donne la vitesse) ; palier = arrêt.",
+        "Graphe vitesse-temps : horizontal = uniforme ; montée = accéléré ; descente = retardé.",
+        "Un trajet réel enchaîne démarrage accéléré, croisière uniforme, freinage retardé.",
+      ],
+    },
+  ],
+  consignes: [
+    "Réponds d'abord aux exercices de révision oralement, puis traite le sujet ci-dessous par écrit.",
+    "Écris tes réponses au stylo, proprement, sur ta copie. Pose tous tes calculs.",
+    "Le corrigé et le barème se trouvent à la page suivante : ne les regarde qu'après avoir terminé.",
+  ],
+  exercices: [
+    {
+      points: 5,
+      consigne: "Questions de cours. Réponds par une phrase complète :",
+      items: [
+        "1. Qu'est-ce que la trajectoire d'un mobile ? (1 pt)",
+        "2. Pourquoi dit-on que le mouvement est relatif ? (1,5 pt)",
+        "3. Cite les quatre caractéristiques du vecteur vitesse. (1,5 pt)",
+        "4. Sur un graphe distance-temps, que signifie un palier horizontal ? (1 pt)",
+      ],
+      corrige: [
+        [{ text: "1. " }, { text: "La ligne décrite par le mobile au cours de son mouvement", cle: true }, { text: ". (1 pt)" }],
+        [{ text: "2. Parce qu'il " }, { text: "dépend du référentiel choisi", cle: true }, { text: " : immobile par rapport à l'un, en mouvement par rapport à l'autre. (1,5 pt)" }],
+        [{ text: "3. " }, { text: "Origine, direction, sens, norme", cle: true }, { text: ". (1,5 pt)" }],
+        [{ text: "4. " }, { text: "Le mobile est à l'arrêt", cle: true }, { text: ". (1 pt)" }],
+      ],
+    },
+    {
+      points: 5,
+      consigne: "Vrai ou Faux ? (1 pt par bonne réponse ; corrige les affirmations fausses)",
+      items: [
+        "1. La valve d'une roue de vélo décrit un cercle par rapport au cadre.",
+        "2. 36 km/h est plus rapide que 12 m/s.",
+        "3. Le vecteur vitesse est toujours tangent à la trajectoire.",
+        "4. Sur un graphe vitesse-temps, un palier signifie que le mobile est arrêté.",
+        "5. Une pente plus forte du graphe distance-temps traduit une vitesse plus grande.",
+      ],
+      corrige: [
+        [{ text: "1. " }, { text: "Vrai", cle: true }, { text: "." }],
+        [{ text: "2. " }, { text: "Faux", cle: true }, { text: " : 36 km/h = 10 m/s < 12 m/s." }],
+        [{ text: "3. " }, { text: "Vrai", cle: true }, { text: "." }],
+        [{ text: "4. " }, { text: "Faux", cle: true }, { text: " : il signifie vitesse constante : mouvement uniforme." }],
+        [{ text: "5. " }, { text: "Vrai", cle: true }, { text: "." }],
+      ],
+    },
+    {
+      points: 5,
+      consigne: "Calculs. Un taxi-brousse parcourt 216 km en 3 h.",
+      items: [
+        "a) Calcule sa vitesse moyenne en km/h. (1,5 pt)",
+        "b) Convertis-la en m/s. (1,5 pt)",
+        "c) À cette vitesse, quelle distance parcourt-il en 15 s ? (2 pts)",
+      ],
+      corrige: [
+        [{ text: "a) v = 216 ÷ 3 = " }, { text: "72 km/h", cle: true }, { text: ". (1,5 pt)" }],
+        [{ text: "b) 72 ÷ 3,6 = " }, { text: "20 m/s", cle: true }, { text: ". (1,5 pt)" }],
+        [{ text: "c) d = v × t = 20 × 15 = " }, { text: "300 m", cle: true }, { text: ". (2 pts)" }],
+      ],
+    },
+    {
+      points: 5,
+      consigne: "Graphe. Un cycliste part de la borne 0 : à 10 s il est à 60 m ; à 20 s à 120 m ; à 30 s il est toujours à 120 m ; à 40 s à 150 m.",
+      items: [
+        "a) Trace le graphe distance-temps. (2 pts)",
+        "b) Nature du mouvement et vitesse sur les 20 premières secondes ? (2 pts)",
+        "c) Que fait le cycliste entre 20 et 30 s ? (1 pt)",
+      ],
+      corrige: [
+        [{ text: "a) " }, { text: "Droite montante jusqu'à 20 s, palier jusqu'à 30 s, droite moins raide ensuite", cle: true }, { text: " ; axes t (s) et d (m) gradués. (2 pts)" }],
+        [{ text: "b) Droite : " }, { text: "mouvement rectiligne uniforme", cle: true }, { text: " ; v = 120 ÷ 20 = " }, { text: "6 m/s", cle: true }, { text: ". (2 pts)" }],
+        [{ text: "c) " }, { text: "Il est arrêté", cle: true }, { text: " : la distance ne change plus. (1 pt)" }],
+      ],
+    },
+  ],
+};
+
 const S34 = {
-  numero: 34, total: 34, unite: null, type: "examen",
+  numero: 39, total: 39, unite: null, type: "examen",
   titre: "Examen blanc final — Tout le programme de T9",
   sousTitre: "EXAMEN BLANC DE FIN D'ANNÉE",
   consignes: [
-    "Cet examen couvre les quatre unités de l'année : Mécanique ; Électricité ; Optique ; Chimie.",
+    "Cet examen couvre les cinq unités de l'année : Mécanique ; Électricité ; Optique ; Chimie ; Mouvement.",
     "Durée conseillée : une séance complète. Gère bien ton temps : ne reste pas bloqué sur une question.",
     "Écris tes réponses au stylo, proprement, sur ta copie. Pose tous tes calculs (g = 10 N/kg).",
     "Le corrigé et le barème se trouvent à la page suivante : ne les regarde qu'après avoir terminé.",
@@ -833,7 +940,21 @@ const S34 = {
         [{ text: "4. " }, { text: "Acide : ions H+ majoritaires", cle: true }, { text: ". (1,5 pt)" }],
       ],
     },
+    {
+      points: 5,
+      consigne: "MOUVEMENT — Le retour. Le taxi-brousse du retour parcourt 90 km en 1 h 15 min (1,25 h).",
+      items: [
+        "a) Calcule sa vitesse moyenne en km/h puis en m/s. (2 pts)",
+        "b) Sur le graphe distance-temps du trajet, un palier de 20 min apparaît : que s'est-il passé ? (1 pt)",
+        "c) Le passager assis est-il en mouvement par rapport au chauffeur ? par rapport à la route ? (2 pts)",
+      ],
+      corrige: [
+        [{ text: "a) v = 90 ÷ 1,25 = " }, { text: "72 km/h", cle: true }, { text: " ; 72 ÷ 3,6 = " }, { text: "20 m/s", cle: true }, { text: ". (2 pts)" }],
+        [{ text: "b) " }, { text: "Le véhicule était à l'arrêt", cle: true }, { text: " : la distance n'a pas évolué pendant 20 min. (1 pt)" }],
+        [{ text: "c) " }, { text: "Immobile par rapport au chauffeur", cle: true }, { text: " ; " }, { text: "en mouvement par rapport à la route", cle: true }, { text: " : le mouvement est relatif. (2 pts)" }],
+      ],
+    },
   ],
 };
 
-module.exports = { seances: [S10, S11, S18, S19, S26, S27, S33, S34] };
+module.exports = { seances: [S10, S11, S18, S19, S26, S27, S33, S38, S34] };

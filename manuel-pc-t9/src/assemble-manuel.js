@@ -12,6 +12,7 @@ const U1 = require("./data-unite1"); // S1..S9
 const U2 = require("./data-unite2"); // S12..S17
 const U3 = require("./data-unite3"); // S20..S25
 const U4 = require("./data-unite4"); // S28..S32
+const U5 = require("./data-unite5"); // S35..S37
 const SPX = require("./data-speciales"); // S10, S11, S18, S19, S26, S27, S33, S34
 
 const SP = {};
@@ -24,6 +25,7 @@ const unite1Seances = [...U1.seances, SP.S10, SP.S11];
 const unite2Seances = [...U2.seances, SP.S18, SP.S19];
 const unite3Seances = [...U3.seances, SP.S26, SP.S27];
 const unite4Seances = [...U4.seances, SP.S33];
+const unite5Seances = [...U5.seances, SP.S38];
 
 const anchorOf = (n) => `seance${String(n).padStart(2, "0")}`;
 
@@ -61,12 +63,20 @@ const plan = [
     data: unite4Seances,
   },
   {
+    unite: "V", anchor: "unite5",
+    titre: "UNITÉ V — Le mouvement",
+    surtitre: "UNITÉ V", sousTitre: "LE MOUVEMENT",
+    image: "images/img_unite5.png",
+    seances: unite5Seances.map(s => ({ numero: s.numero, titre: s.titre, anchor: anchorOf(s.numero) })),
+    data: unite5Seances,
+  },
+  {
     unite: "EB", anchor: "examenblanc",
     titre: "EXAMEN BLANC DE FIN D'ANNÉE",
     surtitre: "EXAMEN BLANC", sousTitre: "TOUT LE PROGRAMME DE L'ANNÉE",
     image: null,
-    seances: [{ numero: SP.S34.numero, titre: SP.S34.titre, anchor: anchorOf(34) }],
-    data: [SP.S34],
+    seances: [{ numero: SP.S39.numero, titre: SP.S39.titre, anchor: anchorOf(39) }],
+    data: [SP.S39],
   },
 ];
 

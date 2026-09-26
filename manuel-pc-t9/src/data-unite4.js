@@ -2,7 +2,7 @@
 const DOC = "Programme scolaire de la classe de 3e (T9) — Sciences Physiques (MEN Madagascar) ; manuel J-Learn";
 
 const S28 = {
-  numero: 28, total: 34, unite: "IV", theme: "Chimie",
+  numero: 28, total: 39, unite: "IV", theme: "Chimie",
   titre: "La mole ; masse molaire et volume molaire",
   objectif: "définir la mole et d'utiliser la masse molaire et le volume molaire dans des calculs simples",
   documentation: DOC,
@@ -167,7 +167,7 @@ const S28 = {
 };
 
 const S29 = {
-  numero: 29, total: 34, unite: "IV", theme: "Chimie",
+  numero: 29, total: 39, unite: "IV", theme: "Chimie",
   titre: "L'équation-bilan ; la réaction fer + soufre",
   objectif: "écrire et d'équilibrer une équation-bilan et d'en tirer le bilan molaire puis massique",
   documentation: DOC,
@@ -331,7 +331,7 @@ const S29 = {
 };
 
 const S30 = {
-  numero: 30, total: 34, unite: "IV", theme: "Chimie",
+  numero: 30, total: 39, unite: "IV", theme: "Chimie",
   titre: "Les alcanes ; combustions complète et incomplète",
   objectif: "citer les premiers alcanes et de distinguer combustion complète et combustion incomplète",
   documentation: DOC,
@@ -496,7 +496,7 @@ const S30 = {
 };
 
 const S31 = {
-  numero: 31, total: 34, unite: "IV", theme: "Chimie",
+  numero: 31, total: 39, unite: "IV", theme: "Chimie",
   titre: "Les solutions aqueuses ; la concentration",
   objectif: "préparer une solution aqueuse et de calculer sa concentration massique et sa concentration molaire",
   documentation: DOC,
@@ -662,7 +662,7 @@ const S31 = {
 };
 
 const S32 = {
-  numero: 32, total: 34, unite: "IV", theme: "Chimie",
+  numero: 32, total: 39, unite: "IV", theme: "Chimie",
   titre: "Acides et bases : le pH ; la neutralisation",
   objectif: "classer une solution à l'aide du pH ou du BBT et d'interpréter la neutralisation d'un acide par une base",
   documentation: DOC,
