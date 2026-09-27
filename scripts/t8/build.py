@@ -13,6 +13,8 @@ from unit1_content import (UNIT1, LESSONS as LESSONS1, REVISION as REVISION1, EX
                             AUTOEVAL_ROWS as AUTOEVAL_ROWS1, INDEX_TERMS as INDEX_TERMS1)
 from unit2_content import (UNIT2, LESSONS as LESSONS2, REVISION as REVISION2, EXAM as EXAM2,
                             AUTOEVAL_ROWS as AUTOEVAL_ROWS2, INDEX_TERMS as INDEX_TERMS2)
+from unit3_content import (UNIT3, LESSONS as LESSONS3, REVISION as REVISION3, EXAM as EXAM3,
+                            AUTOEVAL_ROWS as AUTOEVAL_ROWS3, INDEX_TERMS as INDEX_TERMS3)
 
 SRC = os.path.join(os.path.dirname(os.path.dirname(HERE)), "SVT T7 [PE] Fiche de preparation sujet corrigés J-Learn (2).docx")
 OUT = os.path.join(os.path.dirname(os.path.dirname(HERE)), "SVT T8 [PE] Fiche de preparation sujet corriges J-Learn.docx")
@@ -828,11 +830,14 @@ UNIT1['index_terms'] = INDEX_TERMS1
 UNIT1['autoeval_rows'] = AUTOEVAL_ROWS1
 UNIT2['index_terms'] = INDEX_TERMS2
 UNIT2['autoeval_rows'] = AUTOEVAL_ROWS2
+UNIT3['index_terms'] = INDEX_TERMS3
+UNIT3['autoeval_rows'] = AUTOEVAL_ROWS3
 
 # Each ready unit as a tuple: (unit_dict, lessons_list, revision_dict, exam_dict)
 UNITS_READY = [
     (UNIT1, LESSONS1, REVISION1, EXAM1),
     (UNIT2, LESSONS2, REVISION2, EXAM2),
+    (UNIT3, LESSONS3, REVISION3, EXAM3),
 ]
 
 # Full approved plan: Unit I=10 séances, Unit II=9, Unit III=9 -> 28 total.
