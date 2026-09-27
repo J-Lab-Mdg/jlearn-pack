@@ -9,7 +9,10 @@ from docx.table import Table
 from docx.text.paragraph import Paragraph
 from lxml import etree
 
-from unit1_content import UNIT1, LESSONS, REVISION, EXAM, AUTOEVAL_ROWS, INDEX_TERMS
+from unit1_content import (UNIT1, LESSONS as LESSONS1, REVISION as REVISION1, EXAM as EXAM1,
+                            AUTOEVAL_ROWS as AUTOEVAL_ROWS1, INDEX_TERMS as INDEX_TERMS1)
+from unit2_content import (UNIT2, LESSONS as LESSONS2, REVISION as REVISION2, EXAM as EXAM2,
+                            AUTOEVAL_ROWS as AUTOEVAL_ROWS2, INDEX_TERMS as INDEX_TERMS2)
 
 SRC = os.path.join(os.path.dirname(os.path.dirname(HERE)), "SVT T7 [PE] Fiche de preparation sujet corrigés J-Learn (2).docx")
 OUT = os.path.join(os.path.dirname(os.path.dirname(HERE)), "SVT T8 [PE] Fiche de preparation sujet corriges J-Learn.docx")
@@ -821,12 +824,55 @@ def build_back_matter(units_ready, figures_list):
 print("STEP 8 (back matter builder) DONE")
 
 # ============ MAIN ASSEMBLY ============
-UNIT1['index_terms'] = INDEX_TERMS
-UNIT1['autoeval_rows'] = AUTOEVAL_ROWS
+UNIT1['index_terms'] = INDEX_TERMS1
+UNIT1['autoeval_rows'] = AUTOEVAL_ROWS1
+UNIT2['index_terms'] = INDEX_TERMS2
+UNIT2['autoeval_rows'] = AUTOEVAL_ROWS2
 
-TOTAL_LESSONS_UNIT1 = len(LESSONS)          # 8
-TOTAL_SEANCES_UNIT1 = TOTAL_LESSONS_UNIT1 + 2  # + révision + examen = 10
-GLOBAL_TOTAL_SEANCES = TOTAL_SEANCES_UNIT1   # only Unit I ready so far
+# Each ready unit as a tuple: (unit_dict, lessons_list, revision_dict, exam_dict)
+UNITS_READY = [
+    (UNIT1, LESSONS1, REVISION1, EXAM1),
+    (UNIT2, LESSONS2, REVISION2, EXAM2),
+]
+
+# Full approved plan: Unit I=10 séances, Unit II=9, Unit III=9 -> 28 total.
+GLOBAL_TOTAL_SEANCES = 28
+
+
+def build_one_unit(unit, lessons, revision, exam, seance_offset):
+    """Returns (toc_lines, unit_body_elements, figures_list, exam_seance_num, n_seances)."""
+    n_lessons = len(lessons)
+    n_seances = n_lessons + 2  # + révision + examen
+
+    toc_lines = [build_toc_unit_line(unit)]
+    for i, lesson in enumerate(lessons, start=1):
+        toc_lines.append(build_toc_seance_line(seance_offset + i, lesson['title']))
+    toc_lines.append(build_toc_seance_line(seance_offset + n_lessons + 1, revision['title']))
+    toc_lines.append(build_toc_seance_line(seance_offset + n_lessons + 2, exam['title']))
+
+    summary_rows = [(i, lesson['title']) for i, lesson in enumerate(lessons, start=1)]
+    summary_rows.append((n_lessons + 1, revision['title']))
+    summary_rows.append((n_lessons + 2, exam['title']))
+
+    exam_seance_num = seance_offset + n_lessons + 2
+    unit['exam_seance_num'] = exam_seance_num
+    # remap index_terms from local (1..n_lessons) to global séance numbers
+    unit['index_terms'] = [(term, [seance_offset + s for s in seances])
+                            for term, seances in unit['index_terms']]
+
+    unit_body = build_unit_header_block(unit, summary_rows)
+    figures_list = []
+    for i, lesson in enumerate(lessons, start=1):
+        global_i = seance_offset + i
+        unit_body.extend(build_lesson_block(lesson, unit, global_i, GLOBAL_TOTAL_SEANCES))
+        figures_list.append((f"Figure {lesson['fignum']}", lesson['fig_title'] + ".", global_i))
+        figures_list.append((f"Figure {lesson['fignum']}b", lesson['fig_b'] + ".", global_i))
+    unit_body.extend(build_revision_block(revision, unit, seance_offset + n_lessons + 1, GLOBAL_TOTAL_SEANCES))
+    figures_list.append((f"Figure R{unit['num']}", revision['fig_title'] + ".", seance_offset + n_lessons + 1))
+    unit_body.extend(build_exam_block(exam, unit, exam_seance_num, GLOBAL_TOTAL_SEANCES))
+    figures_list.append((f"Figure E{unit['num']}", exam['fig_title'] + ".", exam_seance_num))
+
+    return toc_lines, unit_body, figures_list, n_seances
 
 
 def main():
@@ -845,40 +891,28 @@ def main():
     blank_before_units = clone(body1[86])
     sect_pr = clone(body1[-1])
 
-    # ---- TOC block for Unit I ----
-    toc_block = [build_toc_unit_line(UNIT1)]
-    for i, lesson in enumerate(LESSONS, start=1):
-        toc_block.append(build_toc_seance_line(i, lesson['title']))
-    toc_block.append(build_toc_seance_line(TOTAL_LESSONS_UNIT1 + 1, REVISION['title']))
-    toc_block.append(build_toc_seance_line(TOTAL_LESSONS_UNIT1 + 2, EXAM['title']))
-
     # ---- back-matter TOC lines (reuse existing anchors annexes/glossaire/autoeval/index/evalexamen/illus) ----
     bm_toc_src_idx = {'annexes': 80, 'glossaire': 81, 'autoeval': 82, 'index': 83, 'evalexamen': 84, 'illus': 85}
     bm_toc_lines = [clone(body1[bm_toc_src_idx[k]]) for k in ['annexes', 'glossaire', 'autoeval', 'index', 'evalexamen', 'illus']]
 
-    # ---- Unit I body ----
-    summary_rows = [(i, lesson['title']) for i, lesson in enumerate(LESSONS, start=1)]
-    summary_rows.append((TOTAL_LESSONS_UNIT1 + 1, REVISION['title']))
-    summary_rows.append((TOTAL_LESSONS_UNIT1 + 2, EXAM['title']))
+    all_toc_lines = []
+    all_body = []
+    all_figures = []
+    units_for_back_matter = []
+    offset = 0
+    for (unit, lessons, revision, exam) in UNITS_READY:
+        toc_lines, unit_body, figures_list, n_seances = build_one_unit(unit, lessons, revision, exam, offset)
+        all_toc_lines.extend(toc_lines)
+        all_body.extend(unit_body)
+        all_figures.extend(figures_list)
+        units_for_back_matter.append(unit)
+        offset += n_seances
 
-    UNIT1['exam_seance_num'] = TOTAL_LESSONS_UNIT1 + 2
-
-    unit_body = build_unit_header_block(UNIT1, summary_rows)
-    figures_list = []
-    for i, lesson in enumerate(LESSONS, start=1):
-        unit_body.extend(build_lesson_block(lesson, UNIT1, i, GLOBAL_TOTAL_SEANCES))
-        figures_list.append((f"Figure {lesson['fignum']}", lesson['fig_title'] + ".", i))
-        figures_list.append((f"Figure {lesson['fignum']}b", lesson['fig_b'] + ".", i))
-    unit_body.extend(build_revision_block(REVISION, UNIT1, TOTAL_LESSONS_UNIT1 + 1, GLOBAL_TOTAL_SEANCES))
-    figures_list.append((f"Figure R{UNIT1['num']}", REVISION['fig_title'] + ".", TOTAL_LESSONS_UNIT1 + 1))
-    unit_body.extend(build_exam_block(EXAM, UNIT1, TOTAL_LESSONS_UNIT1 + 2, GLOBAL_TOTAL_SEANCES))
-    figures_list.append((f"Figure E{UNIT1['num']}", EXAM['fig_title'] + ".", TOTAL_LESSONS_UNIT1 + 2))
-
-    back_matter = build_back_matter([UNIT1], figures_list)
+    back_matter = build_back_matter(units_for_back_matter, all_figures)
 
     # ---- Assemble final element list ----
-    final_elements = (front_matter + toc_block + bm_toc_lines + [blank_before_units]
-                       + unit_body + back_matter + [sect_pr])
+    final_elements = (front_matter + all_toc_lines + bm_toc_lines + [blank_before_units]
+                       + all_body + back_matter + [sect_pr])
 
     # ---- Build output docx from a fresh copy of T7 (keeps styles/media parts) ----
     import shutil
@@ -908,7 +942,8 @@ def main():
 
     outdoc.save(OUT)
     print("SAVED:", OUT)
-    return final_elements, figures_list
+    print("Total séances built:", offset, "/ target", GLOBAL_TOTAL_SEANCES)
+    return final_elements
 
 
 if __name__ == '__main__':
