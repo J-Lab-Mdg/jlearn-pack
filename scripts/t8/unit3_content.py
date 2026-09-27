@@ -86,6 +86,14 @@ LESSONS = [
              ["Le refroidissement rapide en surface forme des roches volcaniques.",
               "Le basalte est un exemple typique de roche volcanique.",
               "Madagascar possède plusieurs massifs volcaniques, comme l'Ankaratra et l'Itasy."]),
+            ("4. Les roches magmatiques de Madagascar",
+             "Madagascar possède plusieurs massifs de roches magmatiques bien connus : le granite affleure "
+             "largement sur les Hautes Terres, tandis que les massifs volcaniques de l'Ankaratra et de "
+             "l'Itasy, aujourd'hui éteints, témoignent d'une activité volcanique ancienne qui a façonné une "
+             "partie du relief central de l'île.",
+             ["Le granite est très répandu sur les Hautes Terres malgaches.",
+              "L'Ankaratra et l'Itasy sont d'anciens massifs volcaniques.",
+              "Cette activité volcanique passée a fortement influencé le relief central de Madagascar."]),
         ],
         'example': ("Le granite des Hautes Terres malgaches, utilisé pour les tombeaux et les monuments, "
                     "présente de gros cristaux visibles, preuve de son refroidissement lent en profondeur."),
@@ -176,6 +184,14 @@ LESSONS = [
              ["Le grès est composé de grains de sable cimentés.",
               "Le calcaire peut contenir des fossiles d'organismes marins.",
               "Le bassin sédimentaire de Morondava, à Madagascar, contient de nombreuses roches sédimentaires."]),
+            ("4. Les fossiles, témoins du passé",
+             "Certaines roches sédimentaires, comme le calcaire, contiennent des fossiles : des restes ou des "
+             "empreintes d'organismes qui vivaient il y a très longtemps. Leur étude permet de reconstituer "
+             "les milieux anciens, par exemple de prouver qu'une région aujourd'hui terrestre était autrefois "
+             "recouverte par la mer.",
+             ["Un fossile est un reste ou une trace d'organisme conservé dans une roche.",
+              "Les fossiles renseignent sur les milieux et les climats du passé.",
+              "Trouver un fossile marin loin de la mer prouve un ancien recouvrement par les eaux."]),
         ],
         'example': ("Dans certaines carrières de calcaire à Madagascar, on peut observer des fossiles de "
                     "coquillages, preuve que cette roche s'est formée au fond d'une ancienne mer."),
@@ -271,6 +287,14 @@ LESSONS = [
              ["Le socle cristallin malgache est en grande partie métamorphique.",
               "Le gneiss est une roche métamorphique très répandue à Madagascar.",
               "Ce socle est riche en gisements de pierres précieuses et de minéraux."]),
+            ("4. Reconnaître une roche métamorphique",
+             "Une roche métamorphique se reconnaît souvent à l'organisation particulière de ses minéraux : "
+             "certaines présentent des bandes ou des lits bien visibles (comme le gneiss), tandis que d'autres, "
+             "comme le marbre, ont une texture cristalline compacte et homogène, différente de la roche "
+             "sédimentaire d'origine.",
+             ["Le gneiss présente des bandes minérales caractéristiques du métamorphisme.",
+              "Le marbre a une texture cristalline compacte, différente du calcaire d'origine.",
+              "L'observation de la texture aide à distinguer une roche métamorphique des deux autres familles."]),
         ],
         'example': ("Les carrières de marbre de certaines régions de Madagascar fournissent une roche "
                     "recherchée pour la sculpture, la décoration et la fabrication d'objets d'art."),
@@ -360,6 +384,14 @@ LESSONS = [
              ["Une fusion complète transforme n'importe quelle roche en magma.",
               "Le refroidissement du magma referme le cycle en formant une nouvelle roche magmatique.",
               "Le cycle des roches se déroule sur des échelles de temps très longues."]),
+            ("4. L'échelle des temps géologiques",
+             "Les transformations du cycle des roches se mesurent en millions, voire en centaines de millions "
+             "d'années, une échelle de temps appelée temps géologique, très différente de celle de la vie "
+             "humaine. Cette lenteur explique pourquoi les paysages rocheux semblent immobiles à l'échelle "
+             "d'une vie, alors qu'ils se transforment sans cesse.",
+             ["Le temps géologique se compte en millions d'années.",
+              "Les transformations des roches sont invisibles à l'échelle d'une vie humaine.",
+              "Le socle ancien de Madagascar s'est formé il y a plus de 500 millions d'années."]),
         ],
         'example': ("Un caillou de granite, usé par une rivière pendant des milliers d'années, peut finir par "
                     "se transformer en minuscules grains de sable, matière première d'une future roche "
@@ -454,6 +486,13 @@ LESSONS = [
              ["Madagascar possède des gisements réputés de pierres précieuses.",
               "Ces pierres sont travaillées par des artisans locaux pour la bijouterie.",
               "Ce secteur représente une ressource économique importante pour le pays."]),
+            ("4. Les carrières et l'exploitation des roches",
+             "L'extraction des roches se fait dans des carrières, à ciel ouvert ou en profondeur. Une "
+             "exploitation mal contrôlée peut endommager les paysages et l'environnement ; c'est pourquoi une "
+             "gestion responsable, avec réhabilitation des sites après exploitation, est nécessaire.",
+             ["Une carrière est un site d'extraction de roches à la surface ou en profondeur.",
+              "Une exploitation non contrôlée peut nuire aux paysages et aux sols environnants.",
+              "La réhabilitation des carrières après exploitation protège l'environnement."]),
         ],
         'example': ("Dans de nombreux villages malgaches, les maisons sont construites en briques de latérite "
                     "séchées au soleil, une technique traditionnelle utilisant une ressource locale abondante."),
@@ -549,6 +588,14 @@ LESSONS = [
              ["Les ressources géologiques doivent être utilisées avec modération.",
               "Une exploitation non contrôlée peut endommager l'environnement.",
               "La préservation de ces ressources profite aux générations futures."]),
+            ("4. Une gestion durable des ressources du sous-sol",
+             "Madagascar possède un sous-sol riche en roches et minéraux variés, utile à la construction, à "
+             "l'artisanat et à l'énergie. Pour que ces ressources profitent durablement au pays, il est "
+             "essentiel de les exploiter en respectant l'environnement et en veillant à ne pas les épuiser "
+             "trop rapidement.",
+             ["Le sous-sol malgache est riche en ressources variées.",
+              "Une exploitation raisonnée préserve les ressources pour l'avenir.",
+              "Le respect de l'environnement doit accompagner toute exploitation minière."]),
         ],
         'example': ("De nombreux visiteurs se rendent chaque année aux thermes d'Antsirabe pour profiter des "
                     "bienfaits reconnus des eaux minérales chaudes issues du sous-sol volcanique."),
@@ -645,6 +692,13 @@ LESSONS = [
              ["La collection peut être présentée sous forme d'exposition en classe.",
               "Chaque élève ou groupe explique ses échantillons devant la classe.",
               "Ce travail relie la théorie du cours à l'observation directe du terrain."]),
+            ("4. Prolonger le projet",
+             "Le mini-projet peut être prolongé par une visite d'une carrière locale, d'un atelier "
+             "d'artisanat de pierres, ou d'un musée de géologie si la région en possède un, afin d'observer "
+             "concrètement l'exploitation et la transformation des roches étudiées en classe.",
+             ["Une sortie sur le terrain complète utilement les connaissances théoriques.",
+              "Visiter un atelier d'artisanat montre la transformation des roches en objets utiles.",
+              "Ces visites renforcent la curiosité scientifique et le respect du patrimoine géologique."]),
         ],
         'example': ("Une classe rassemble des échantillons de latérite, de granite et de grès trouvés autour "
                     "de l'école, et les présente lors d'une petite exposition organisée pour les autres "

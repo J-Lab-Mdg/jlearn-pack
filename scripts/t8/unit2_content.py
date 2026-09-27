@@ -88,6 +88,14 @@ LESSONS = [
              ["Le VIH affaiblit progressivement le système immunitaire.",
               "Le SIDA est le stade avancé de l'infection par le VIH, sans traitement.",
               "Un traitement adapté permet aujourd'hui de vivre longtemps avec le VIH."]),
+            ("4. Les IST à Madagascar : un enjeu de santé publique",
+             "Comme dans de nombreux pays, les IST touchent aussi la population malgache, en particulier les "
+             "jeunes. C'est pourquoi le ministère de la Santé publique, les écoles et les associations "
+             "organisent des actions d'information pour mieux faire connaître ces maladies, leurs risques et "
+             "les moyens de s'en protéger.",
+             ["Les IST concernent toutes les régions et toutes les couches de la population.",
+              "Les jeunes sont une cible prioritaire des actions d'information.",
+              "L'information précoce aide à adopter des comportements responsables."]),
         ],
         'example': ("Un centre de santé de quartier propose gratuitement des séances d'information sur les "
                     "IST : cela permet aux jeunes de poser leurs questions et de s'informer sans crainte."),
@@ -180,6 +188,14 @@ LESSONS = [
              ["La transmission mère-enfant peut survenir à trois moments différents.",
               "Un suivi prénatal régulier permet de réduire ce risque.",
               "Des traitements existent pour protéger l'enfant à naître."]),
+            ("4. Les idées fausses sur la transmission",
+             "Beaucoup de peurs autour des IST viennent d'idées fausses : certains croient à tort que le VIH "
+             "se transmet par les moustiques, la sueur ou les larmes. Connaître les vrais modes de "
+             "transmission permet d'éviter des comportements inutiles de peur ou de rejet envers les "
+             "personnes infectées.",
+             ["Le VIH ne se transmet ni par la sueur, ni par les larmes, ni par la salive en quantité normale.",
+              "Les moustiques ne transmettent pas le VIH.",
+              "Corriger les idées fausses réduit la peur injustifiée et la discrimination."]),
         ],
         'example': ("Une femme enceinte séropositive suivie régulièrement dans un centre de santé peut, grâce "
                     "au traitement, donner naissance à un enfant qui n'est pas contaminé par le VIH."),
@@ -273,6 +289,14 @@ LESSONS = [
              ["Les rapports non protégés avec plusieurs partenaires augmentent le risque.",
               "Le partage d'objets tranchants est également un facteur de risque important.",
               "L'absence de dépistage empêche de connaître son statut et de se soigner à temps."]),
+            ("4. Le rôle du système immunitaire",
+             "Le système immunitaire est l'ensemble des défenses de l'organisme contre les microbes, "
+             "notamment les globules blancs étudiés dans l'Unité I. Le VIH s'attaque justement à certains "
+             "globules blancs, ce qui explique pourquoi, avec le temps, le corps devient de moins en moins "
+             "capable de se défendre contre d'autres infections.",
+             ["Le système immunitaire protège normalement le corps contre les microbes.",
+              "Le VIH cible particulièrement certains globules blancs.",
+              "Affaibli, le système immunitaire laisse la place à des infections opportunistes."]),
         ],
         'example': ("Une personne peut se sentir en parfaite santé pendant des années après avoir été "
                     "contaminée : c'est pourquoi le dépistage régulier est essentiel, même sans symptôme."),
@@ -366,6 +390,14 @@ LESSONS = [
              ["Ne jamais partager les objets tranchants à usage personnel.",
               "Exiger du matériel stérilisé chez le coiffeur, le tatoueur ou le soignant.",
               "Éviter tout contact direct avec le sang d'autrui."]),
+            ("4. Le dialogue avec les adultes de confiance",
+             "Poser des questions sur les IST ou le VIH à un adulte de confiance (parent, enseignant, agent "
+             "de santé) permet d'obtenir des informations fiables et de lever ses doutes, plutôt que de se "
+             "fier à des rumeurs. De nombreux centres de santé accueillent les jeunes avec bienveillance et "
+             "sans jugement.",
+             ["Le dialogue avec un adulte de confiance aide à obtenir des réponses fiables.",
+              "Les centres de santé accueillent les jeunes de manière confidentielle.",
+              "Poser des questions est un comportement responsable, pas une honte."]),
         ],
         'example': ("Un jeune qui souhaite se faire percer les oreilles doit s'assurer que l'aiguille utilisée "
                     "est neuve ou correctement stérilisée, pour éviter tout risque de transmission."),
@@ -461,6 +493,13 @@ LESSONS = [
              ["La prise en charge inclut un suivi médical, psychologique et social.",
               "Le soutien de la famille et de la communauté est très important.",
               "Des services gratuits existent dans plusieurs centres de santé à Madagascar."]),
+            ("4. Où se faire dépister à Madagascar",
+             "À Madagascar, de nombreux centres de dépistage volontaire (CDV), souvent rattachés aux centres "
+             "de santé de base, proposent un test gratuit et confidentiel, avec un conseiller qui explique le "
+             "résultat et oriente si nécessaire vers une prise en charge adaptée.",
+             ["Les centres de dépistage volontaire (CDV) sont présents dans de nombreuses régions.",
+              "Le test est gratuit, rapide et confidentiel.",
+              "Un conseiller accompagne la personne avant et après le résultat."]),
         ],
         'example': ("Un jeune inquiet après un comportement à risque peut se rendre gratuitement et de manière "
                     "confidentielle dans un centre de dépistage pour connaître son statut et être orienté si besoin."),
@@ -556,6 +595,13 @@ LESSONS = [
              ["Le respect de la confidentialité protège la dignité de la personne.",
               "Le soutien de la famille et des amis aide à mieux vivre avec la maladie.",
               "Refuser la discrimination est un devoir de solidarité et de respect des droits humains."]),
+            ("4. Les droits des personnes vivant avec le VIH",
+             "Toute personne vivant avec le VIH a le droit d'être soignée, scolarisée, employée et respectée "
+             "comme les autres, sans discrimination. Protéger la confidentialité du statut sérologique d'une "
+             "personne est aussi un devoir de respect envers sa vie privée.",
+             ["Le droit à la santé et à l'éducation s'applique à toute personne, séropositive ou non.",
+              "La confidentialité du statut sérologique doit être respectée par tous.",
+              "Le respect des droits humains est essentiel dans la lutte contre le VIH/SIDA."]),
         ],
         'example': ("Dans une classe où un élève est séropositif, ses camarades peuvent continuer à jouer, "
                     "étudier et partager leur repas avec lui sans aucun risque de contamination."),
@@ -649,6 +695,13 @@ LESSONS = [
              ["La présentation peut se faire devant d'autres classes ou dans le village.",
               "Le bilan mesure l'impact réel de la sensibilisation.",
               "Une bonne campagne peut être renouvelée chaque année, par exemple le 1er décembre."]),
+            ("4. Impliquer la communauté au-delà de l'école",
+             "Une campagne de sensibilisation peut aussi impliquer les parents, les autorités locales (fokontany) "
+             "et le centre de santé, par exemple lors d'une journée communautaire. Cette collaboration élargit "
+             "l'impact du projet et ancre les bons comportements dans toute la communauté.",
+             ["Le fokontany et les autorités locales peuvent soutenir une campagne de sensibilisation.",
+              "Le centre de santé peut fournir des informations fiables et du matériel.",
+              "Une action communautaire élargie a un impact plus durable qu'une action isolée."]),
         ],
         'example': ("Un groupe d'élèves prépare des affiches sur la prévention des IST et les présente lors "
                     "d'une journée de sensibilisation organisée avec le centre de santé du village."),

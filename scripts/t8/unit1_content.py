@@ -91,6 +91,13 @@ LESSONS = [
              ["Le poumon droit possède trois lobes, le poumon gauche en possède deux.",
               "Les alvéoles pulmonaires forment une immense surface d'échange, environ 70 m² chez l'adulte.",
               "Chaque alvéole est entourée de capillaires sanguins très fins."]),
+            ("4. Prendre soin de son appareil respiratoire",
+             "Pour garder des poumons en bonne santé, il est important d'éviter la fumée (cigarette, feux de "
+             "cuisson dans une pièce mal aérée), de limiter l'exposition à la poussière, et de pratiquer une "
+             "activité physique régulière qui renforce la capacité respiratoire.",
+             ["Respirer un air enfumé abîme les voies respiratoires et les poumons.",
+              "Une cuisine bien aérée réduit les risques liés à la fumée du foyer.",
+              "Le sport régulier renforce les muscles respiratoires et la capacité des poumons."]),
         ],
         'example': ("Quand on souffle dans un miroir froid, de la buée se forme : cela montre que l'air expiré "
                     "contient de la vapeur d'eau réchauffée et humidifiée par notre appareil respiratoire."),
@@ -188,6 +195,13 @@ LESSONS = [
              ["L'échange se fait à travers la fine paroi des alvéoles et des capillaires.",
               "Le sang capte le dioxygène (O2) apporté par l'air.",
               "Le sang libère le dioxyde de carbone (CO2) qui sera expiré."]),
+            ("4. La fréquence respiratoire",
+             "La fréquence respiratoire est le nombre de mouvements respiratoires par minute ; elle varie "
+             "selon l'âge, l'activité physique et l'état de santé. Elle augmente pendant l'effort et diminue "
+             "au repos, car les besoins en dioxygène du corps changent constamment.",
+             ["Un enfant respire en général plus vite qu'un adulte au repos.",
+              "La fièvre ou une maladie respiratoire peuvent augmenter la fréquence respiratoire.",
+              "Mesurer sa fréquence respiratoire est un geste simple de surveillance de sa santé."]),
         ],
         'example': ("Lorsqu'on court, on respire plus vite et plus fort : le corps a besoin de davantage de "
                     "dioxygène pour fournir de l'énergie aux muscles qui travaillent."),
@@ -281,6 +295,13 @@ LESSONS = [
              ["Les veines ramènent le sang vers le cœur.",
               "Des valvules empêchent le sang de reculer dans les veines.",
               "Les capillaires assurent les échanges avec les cellules."]),
+            ("4. Prendre soin de son cœur",
+             "Le cœur, comme tout muscle, a besoin d'être entretenu : une activité physique régulière, une "
+             "alimentation équilibrée pauvre en sel et en graisses, et l'absence de tabac contribuent à "
+             "préserver sa santé et à prévenir les maladies cardiovasculaires.",
+             ["L'activité physique régulière renforce le muscle cardiaque.",
+              "Une alimentation équilibrée protège les artères.",
+              "Éviter le tabac réduit fortement le risque de maladies du cœur."]),
         ],
         'example': ("En prenant le pouls au poignet, un agent de santé compte les battements du cœur par "
                     "minute pour vérifier si une personne est en bonne santé."),
@@ -368,6 +389,14 @@ LESSONS = [
              ["Le cœur fonctionne comme deux pompes associées, jamais à l'arrêt.",
               "Chaque cellule du corps reçoit du dioxygène grâce à ce circuit.",
               "Un effort physique augmente la vitesse de la circulation du sang."]),
+            ("4. La circulation, l'effort et la santé",
+             "Une bonne circulation sanguine assure un apport constant de dioxygène et de nutriments à tous "
+             "les organes, même pendant un effort intense. C'est pourquoi une activité physique régulière, "
+             "comme la marche, la course ou les travaux des champs, entretient un système circulatoire "
+             "efficace.",
+             ["L'exercice physique améliore l'efficacité de la circulation sanguine.",
+              "Une bonne circulation permet aux muscles de mieux résister à la fatigue.",
+              "La sédentarité prolongée peut nuire à la santé du système circulatoire."]),
         ],
         'example': ("Pendant un effort, comme la course ou le pilage du riz, le cœur bat plus vite pour "
                     "accélérer la circulation et fournir plus de dioxygène aux muscles qui travaillent."),
@@ -459,6 +488,14 @@ LESSONS = [
              ["Les plaquettes sont plus petites que les globules rouges et blancs.",
               "Elles interviennent dans la coagulation du sang.",
               "Elles empêchent une perte de sang excessive en cas de blessure."]),
+            ("4. La fabrication du sang : l'hématopoïèse",
+             "Le sang n'est pas fabriqué une fois pour toutes : les globules rouges, les globules blancs et "
+             "les plaquettes sont produits en permanence dans la moelle osseuse, un tissu situé à l'intérieur "
+             "de certains os, comme ceux du bassin ou du sternum. Ce renouvellement constant compense la "
+             "durée de vie limitée des cellules sanguines.",
+             ["La moelle osseuse est le lieu de fabrication des cellules du sang.",
+              "Les globules rouges vivent environ quatre mois avant d'être renouvelés.",
+              "Ce renouvellement permanent maintient une quantité stable de sang dans le corps."]),
         ],
         'example': ("Quand on se coupe le doigt, le saignement s'arrête au bout de quelques minutes grâce à "
                     "l'action des plaquettes sanguines qui forment un caillot."),
@@ -544,6 +581,14 @@ LESSONS = [
              ["Les plaquettes s'agglutinent au niveau de la blessure.",
               "Le caillot arrête le saignement en formant un bouchon.",
               "La coagulation protège l'organisme d'une perte de sang dangereuse."]),
+            ("4. L'alimentation et la santé du sang",
+             "Une alimentation équilibrée, riche en fer (légumes verts, viande, légumineuses) et en vitamines, "
+             "est nécessaire à la bonne fabrication des globules rouges. Une carence en fer peut provoquer "
+             "l'anémie, un problème de santé encore fréquent chez les enfants et les femmes enceintes à "
+             "Madagascar.",
+             ["Le fer est indispensable à la fabrication de l'hémoglobine.",
+              "Une alimentation pauvre en fer peut provoquer une anémie.",
+              "Les légumes verts et les légumineuses sont de bonnes sources de fer accessibles localement."]),
         ],
         'example': ("Chez une personne blessée qui saigne beaucoup, on applique un pansement compressif pour "
                     "aider les plaquettes à former le caillot plus rapidement."),
@@ -637,6 +682,14 @@ LESSONS = [
              ["Le groupe sanguin est fixé dès la naissance et ne change jamais.",
               "Il se détermine par un test sanguin simple.",
               "Connaître son groupe est utile en cas d'urgence médicale."]),
+            ("4. Le test de groupage sanguin",
+             "Déterminer le groupe sanguin d'une personne se fait grâce à un test simple en laboratoire : "
+             "une goutte de sang est mise en contact avec des réactifs spécifiques. Si les globules rouges "
+             "s'agglutinent avec un réactif donné, cela révèle la présence de l'antigène correspondant, "
+             "permettant d'identifier le groupe sanguin exact.",
+             ["Le test de groupage utilise des réactifs spécifiques à chaque antigène.",
+              "L'agglutination des globules rouges indique la présence d'un antigène.",
+              "Ce test est réalisé avant tout don ou toute transfusion de sang."]),
         ],
         'example': ("Lors d'une collecte de sang organisée par le Centre National de Transfusion Sanguine, "
                     "chaque donneur reçoit une carte indiquant son groupe sanguin, par exemple « O+ »."),
@@ -730,6 +783,14 @@ LESSONS = [
              ["Le don de sang est un acte gratuit et volontaire.",
               "Il permet de sauver des vies dans de nombreuses situations d'urgence.",
               "Des campagnes de collecte sont organisées régulièrement à Madagascar."]),
+            ("4. Organiser une collecte de sang solidaire",
+             "Une école ou une communauté peut organiser, en lien avec un centre de santé, une journée de "
+             "sensibilisation au don de sang : informer sur les groupes sanguins, expliquer l'importance de "
+             "la compatibilité, et encourager les adultes en bonne santé à devenir donneurs volontaires et "
+             "réguliers.",
+             ["Sensibiliser la communauté augmente le nombre de donneurs volontaires.",
+              "Chaque don de sang peut sauver plusieurs vies.",
+              "Le don de sang régulier et volontaire renforce la solidarité communautaire."]),
         ],
         'example': ("Une femme qui perd beaucoup de sang lors d'un accouchement difficile peut être sauvée "
                     "grâce à une transfusion de sang compatible, don précieux d'une autre personne."),
