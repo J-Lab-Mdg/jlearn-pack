@@ -193,4 +193,46 @@ function buildFiche(S, rootDir) {
   ];
 }
 
-module.exports = { buildFiche, buildTakela, buildLesona, buildFanazarantena };
+// ---------- Seansa manokana : Famerenana sy Fanadinana ----------
+function buildFanadinana(S) {
+  const out = [];
+  out.push(B.heading(`SEANSA ${S.numero} / ${S.total}`, {
+    anchorId: `seansa${String(S.numero).padStart(2, "0")}`,
+    size: 30, align: AlignmentType.CENTER, spacingAfter: 60,
+  }));
+  out.push(B.p(S.titre, { bold: true, size: 26, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 60 }));
+  out.push(B.p(S.lohahevitra, { italics: true, size: 21, align: AlignmentType.CENTER, spacingAfter: 160 }));
+
+  // I. Famerenana — ny tsara ho tadidina
+  out.push(B.p("I. FAMERENANA — NY TSARA HO TADIDINA", { bold: true, size: 24, color: B.GREEN, spacingAfter: 80 }));
+  out.push(B.encadre("Famintinana", S.famerenana.map(t => B.p("\u2022 " + t, { size: 20, spacingAfter: 50 })), "E8F0E4", B.GREEN));
+  out.push(B.p("", { size: 10, spacingAfter: 80 }));
+
+  // II. Laza adina
+  const total = S.laza.reduce((a, e) => a + (e.points || 0), 0);
+  out.push(B.p("II. LAZA ADINA", { bold: true, size: 24, color: B.GREEN, spacingAfter: 40 }));
+  out.push(B.p(`Totaly : ${total} isa — Fanamarihana : ny mpampianatra no mamaritra ny faharetan'ny adina.`, { italics: true, size: 20, spacingAfter: 100 }));
+  S.laza.forEach((ex, i) => {
+    out.push(B.p(`Fanontaniana faha ${i + 1}` + (ex.points ? ` (${ex.points} isa)` : ""), { bold: true, size: 22, spacingAfter: 40 }));
+    out.push(B.p(ex.consigne, { italics: true, size: 20, spacingAfter: 30 }));
+    (ex.items || []).forEach(it => out.push(B.p(it, { size: 20, spacingAfter: 20 })));
+    out.push(B.p("", { size: 8, spacingAfter: 40 }));
+  });
+
+  // III. Valiny
+  out.push(B.pageBreak());
+  out.push(B.p("VALINY SY SEDRA FANITSIANA", { bold: true, size: 26, color: B.PINK, align: AlignmentType.CENTER, spacingAfter: 120 }));
+  S.laza.forEach((ex, i) => {
+    out.push(B.p(`Valin'ny fanontaniana faha ${i + 1}`, { bold: true, size: 22, color: B.PINK, spacingAfter: 40 }));
+    (ex.corrige || []).forEach(ligne => {
+      out.push(B.pRuns(ligne.map(seg => ({
+        text: seg.text, bold: !!seg.bold || !!seg.cle,
+        color: seg.cle ? B.PINK : (seg.color || B.BLACK),
+      })), { size: 20, spacingAfter: 30 }));
+    });
+    out.push(B.p("", { size: 8, spacingAfter: 40 }));
+  });
+  return out;
+}
+
+module.exports = { buildFiche, buildTakela, buildLesona, buildFanazarantena, buildFanadinana };
