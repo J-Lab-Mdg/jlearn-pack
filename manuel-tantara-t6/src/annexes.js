@@ -119,7 +119,7 @@ function annexe4() {
   const out = [];
   out.push(B.heading("TOVANA 4 — RAKIBOLANA (TENY MALAGASY \u21C4 TERME OFFICIEL)", { anchorId: "tovana4", size: 26, spacingAfter: 120 }));
   out.push(table2(
-    ["Teny malagasy", "Terme officiel (frantsay)", "Seansa"],
+    ["Teny malagasy", "Terme officiel (frantsay)", "Seho"],
     [
       ["Andrim-panjakana", "Institution", "13"],
       ["Arisiva", "Archives", "4"],
@@ -183,15 +183,15 @@ function annexe5(rootDir) {
 function annexe6() {
   const out = [];
   out.push(B.heading("TOVANA 6 — TARATASY FIZAHAN-TOETRA (AUTO-ÉVALUATION)", { anchorId: "tovana6", size: 26, spacingAfter: 120 }));
-  out.push(B.p("Valio amin'ny ENY na TSIA : raha misy TSIA dia avereno vakina ilay seansa voalaza.", { italics: true, size: 20, spacingAfter: 120 }));
+  out.push(B.p("Valio amin'ny ENY na TSIA : raha misy TSIA dia avereno vakina ilay seho voalaza.", { italics: true, size: 20, spacingAfter: 120 }));
   const blocs = [
-    ["Lohahevitra I (Seansa 1-6)", [
+    ["Lohahevitra I (Seho 1-6)", [
       "Haiko ny mamaritra ny Tantara sy ny mitanisa ny toetrany efatra. (S1)",
       "Haiko ny milaza ny antony ianarana Tantara. (S2)",
       "Haiko ny manisa ny taon-jato sy ny mampiasa ny frizy. (S3)",
       "Haiko ny manasokajy ny loharano telo karazana. (S4-S5)",
     ]],
-    ["Lohahevitra II (Seansa 7-17)", [
+    ["Lohahevitra II (Seho 7-17)", [
       "Haiko ny mitanisa ny Repoblika efatra sy ny vanim-potoanany. (S7)",
       "Fantatro ny daty 26 jona 1960 sy ny tantaran'ny Repoblika I. (S8)",
       "Haiko ny mitantara ny tetezamita 1972-1975 sy ny Repoblika II. (S9-S10)",
@@ -199,12 +199,12 @@ function annexe6() {
       "Haiko ny mitanisa ny fahefana telo sy ny fototry ny Repoblika. (S13-S14)",
       "Azoko ampitahaina ny politikam-pitondrana efatra ary fantatro ny anton'ny krizy. (S15-S16)",
     ]],
-    ["Lohahevitra III (Seansa 18-21)", [
+    ["Lohahevitra III (Seho 18-21)", [
       "Haiko ny manavaka ny fifandraisana roalafy sy marolafy. (S18)",
       "Fantatro ny UA, COI, COMESA, SADC sy ny tanjon'izy ireo. (S19)",
       "Haiko ny mitanisa ny vokatry ny fidirana amin'ireo fikambanana. (S20)",
     ]],
-    ["Lohahevitra IV (Seansa 22-26)", [
+    ["Lohahevitra IV (Seho 22-26)", [
       "Haiko ny mamaritra ny vakoka sy ny manasokajy azy. (S22)",
       "Fantatro ny tombontsoan'ny fikolokoloana sy ny fomba fiarovana ny vakoka. (S23)",
       "Haiko ny manasokajy ny harem-pirenena ary fantatro ireo harena UNESCO. (S24)",
@@ -231,7 +231,7 @@ function annexe6() {
 function annexe7() {
   const out = [];
   out.push(B.heading("TOVANA 7 — FANONDROANA (INDEX)", { anchorId: "tovana7", size: 26, spacingAfter: 120 }));
-  out.push(B.p("Ny isa dia manondro ny seansa ; fipihana ny laharana = mankany amin'ny seansa (endrika nomerika).", { italics: true, size: 19, spacingAfter: 120 }));
+  out.push(B.p("Ny isa dia manondro ny seho ; fipihana ny laharana = mankany amin'ny seho (endrika nomerika).", { italics: true, size: 19, spacingAfter: 120 }));
   const entries = [
     ["Aloalo", [22]], ["Ambohimanga (vohimasina)", [22, 24]], ["Andrim-panjakana", [13]],
     ["Antenimiera", [13]], ["Arisiva", [4]], ["Arkeolojia", [4, 5]],
@@ -254,7 +254,7 @@ function annexe7() {
     const runs = [new TextRun({ text: terme + " : ", size: 20, font: B.FONT })];
     seances.forEach((n, i) => {
       runs.push(new InternalHyperlink({
-        anchor: `seansa${String(n).padStart(2, "0")}`,
+        anchor: `seho${String(n).padStart(2, "0")}`,
         children: [new TextRun({ text: String(n), size: 20, font: B.FONT, style: "Hyperlink" })],
       }));
       if (i < seances.length - 1) runs.push(new TextRun({ text: ", ", size: 20, font: B.FONT }));

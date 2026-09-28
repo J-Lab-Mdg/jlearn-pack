@@ -88,19 +88,18 @@ function buildTakela(S, rootDir) {
 
   const meta = {
     discipline: "Tantara",
-    sousDiscipline: "Histoire",
     theme: S.lohahevitra,
     titre: S.titre,
-    objectif: "Amin'ny fiafaran'ny seansa, ny mpianatra dia afaka " + S.tanjona.trim() + ".",
+    objectif: "Amin'ny fiafaran'ny seho, ny mpianatra dia afaka " + S.tanjona.trim() + ".",
     documentation: S.fanovozanKevitra,
     support: S.fitaovana,
     classe: "T6",
-    seanceNo: `${S.numero} / ${S.total}`,
+    seanceNo: `${S.numero === 1 ? "voalohany" : "faha-" + S.numero} (${S.numero}/${S.total})`,
   };
 
   return [
-    B.heading(`SEANSA ${S.numero} / ${S.total}`, {
-      anchorId: `seansa${String(S.numero).padStart(2, "0")}`,
+    B.heading(`SEHO ${S.numero} / ${S.total}`, {
+      anchorId: `seho${String(S.numero).padStart(2, "0")}`,
       size: 30, align: AlignmentType.CENTER, spacingAfter: 60,
     }),
     B.p(S.titre, { bold: true, size: 26, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 160 }),
@@ -193,11 +192,11 @@ function buildFiche(S, rootDir) {
   ];
 }
 
-// ---------- Seansa manokana : Famerenana sy Fanadinana ----------
+// ---------- Seho manokana : Famerenana sy Fanadinana ----------
 function buildFanadinana(S) {
   const out = [];
-  out.push(B.heading(`SEANSA ${S.numero} / ${S.total}`, {
-    anchorId: `seansa${String(S.numero).padStart(2, "0")}`,
+  out.push(B.heading(`SEHO ${S.numero} / ${S.total}`, {
+    anchorId: `seho${String(S.numero).padStart(2, "0")}`,
     size: 30, align: AlignmentType.CENTER, spacingAfter: 60,
   }));
   out.push(B.p(S.titre, { bold: true, size: 26, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 60 }));

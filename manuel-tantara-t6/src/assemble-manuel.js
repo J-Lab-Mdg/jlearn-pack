@@ -16,7 +16,7 @@ const LH4 = require("./data-lh4");   // S22-S25
 const FD = require("./data-fanadinana"); // S6, S17, S21, S26, S27
 
 const ROOT = path.join(__dirname, "..");
-const anchorOf = (n) => `seansa${String(n).padStart(2, "0")}`;
+const anchorOf = (n) => `seho${String(n).padStart(2, "0")}`;
 
 const lh1Seances = [S1, ...LH1.seances, FD.S6];
 const lh2Seances = [...LH2A.seances, ...LH2B.seances, FD.S17];

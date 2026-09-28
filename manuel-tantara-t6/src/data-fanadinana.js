@@ -167,7 +167,7 @@ const S27 = {
   titre: "Fanadinana akapobeny — Fanadinana amin'ny fiafaran'ny taona (examen blanc)",
   lohahevitra: "Ny fandaharam-pianarana manontolo — Lohahevitra I, II, III ary IV",
   famerenana: [
-    "Vakio indray ny famintinana isaky ny seansa sy ny valin'ny fanadinana efatra teo aloha.",
+    "Vakio indray ny famintinana isaky ny seho sy ny valin'ny fanadinana efatra teo aloha.",
     "Lohahevitra I : famaritana ny Tantara, toetra, tombontsoa, fotoana, loharano.",
     "Lohahevitra II : Repoblika efatra, tetezamita, andrim-panjakana, politikam-pitondrana, krizy.",
     "Lohahevitra III : endri-pifandraisana, UA/COI/COMESA/SADC, vokatry ny fidirana.",

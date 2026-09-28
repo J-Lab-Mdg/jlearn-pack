@@ -147,7 +147,6 @@ function metaTable(meta) {
   );
   const left = [
     L("Taranja", meta.discipline),
-    L("Discipline", meta.sousDiscipline),
     L("Lohahevitra", meta.theme),
     L("Lohateny", meta.titre),
     L("Tanjona manokana", meta.objectif),
@@ -157,7 +156,7 @@ function metaTable(meta) {
   const right = [
     L("Daty", "________________"),
     L("Kilasy", meta.classe || "T6"),
-    L("Seansa faha", meta.seanceNo),
+    L("Seho", meta.seanceNo),
     L("Faharetany", "________________"),
   ];
   return new Table({

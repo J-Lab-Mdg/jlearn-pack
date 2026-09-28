@@ -1,4 +1,4 @@
-// fiche01-data.js — Seansa 1 : Famaritana ny Tantara (Lohahevitra I)
+// fiche01-data.js — Seho 1 : Famaritana ny Tantara (Lohahevitra I)
 // Loharano : FRP_6eme_HISTOIRE (LFK 1-b, 1-d, 1-e) sy PE T6 (nohavaozina)
 
 const S1 = {
@@ -33,7 +33,7 @@ const S1 = {
   },
 
   fampahafantarana: {
-    mpampianatra: "Androany isika dia hianatra ny lesona hoe : « Famaritana ny Tantara ». Rehefa vita ny seansa dia afaka mamaritra ny Tantara ianareo, mahalaza ny toetrany ary manazava ny tombontsoa entin'ny fahaizana tantara.",
+    mpampianatra: "Androany isika dia hianatra ny lesona hoe : « Famaritana ny Tantara ». Rehefa vita ny seho dia afaka mamaritra ny Tantara ianareo, mahalaza ny toetrany ary manazava ny tombontsoa entin'ny fahaizana tantara.",
     mpianatra: "Mihaino ary mandika ny lohateny ao amin'ny kahie.",
     technique: "Filazana mivantana",
     support: "Solaitrabe",
