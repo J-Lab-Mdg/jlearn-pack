@@ -73,7 +73,7 @@ function pageBreak() {
 
 // ---------- images ----------
 function imagePara(path, widthPx, heightPx, opts = {}) {
-  const { align = AlignmentType.CENTER, spacingAfter = 120 } = opts;
+  const { align = AlignmentType.CENTER, spacingAfter = 120, alt = "Sary fanazavana" } = opts;
   const data = fs.readFileSync(path);
   return new Paragraph({
     alignment: align,
@@ -82,12 +82,13 @@ function imagePara(path, widthPx, heightPx, opts = {}) {
       type: "png",
       data,
       transformation: { width: widthPx, height: heightPx },
+      altText: { title: alt, description: alt, name: alt },
     })],
   });
 }
 
 function legende(text) {
-  return p(text, { italics: true, size: 18, align: AlignmentType.CENTER, spacingAfter: 160 });
+  return p(text, { italics: true, size: 22, align: AlignmentType.CENTER, spacingAfter: 160 });
 }
 
 // ---------- cellules / tables ----------
@@ -119,7 +120,7 @@ function heading(text, opts = {}) {
   } = opts;
   const run = new TextRun({ text, bold, size, color, font: FONT });
   return new Paragraph({
-    heading: headingLevel || undefined,
+    heading: headingLevel || (anchorId ? HeadingLevel.HEADING_1 : undefined),
     alignment: align,
     spacing: { after: spacingAfter, before: spacingBefore },
     children: anchorId ? [new Bookmark({ id: anchorId, children: [run] })] : [run],
@@ -143,7 +144,7 @@ function metaTable(meta) {
   // meta: { discipline, sousDiscipline, theme, titre, objectif, documentation, support, classe, seanceNo }
   const L = (label, value) => pRuns(
     [{ text: label + " : ", bold: true }, { text: value || "" }],
-    { size: 20, spacingAfter: 40 }
+    { size: 24, spacingAfter: 40 }
   );
   const left = [
     L("Taranja", meta.discipline),
@@ -173,7 +174,7 @@ function metaTable(meta) {
 const COL_W = [14, 27, 21, 13, 13, 12]; // Étapes / Enseignant / Apprenants / Technique / Support / Observation
 
 function deroulementHeader() {
-  const b = t => p(t, { bold: true, size: 19, align: AlignmentType.CENTER, spacingAfter: 20 });
+  const b = t => p(t, { bold: true, size: 22, align: AlignmentType.CENTER, spacingAfter: 20 });
   const row1 = new TableRow({ tableHeader: true, children: [
     cell([b("Dingana sy Faharetany")], { shading: HEAD_SHADE, width: COL_W[0], vMerge: VerticalMergeType.RESTART }),
     cell([b("Fizotry ny lesona")], { shading: HEAD_SHADE, colSpan: 2, width: COL_W[1] + COL_W[2] }),
@@ -195,18 +196,18 @@ function deroulementHeader() {
 // step: { etape, enseignant: Paragraph[], apprenants: Paragraph[], technique, support }
 function stepRow(step) {
   return new TableRow({ children: [
-    cell([p(step.etape, { bold: true, size: 18, spacingAfter: 20 })], { width: COL_W[0] }),
+    cell([p(step.etape, { bold: true, size: 22, spacingAfter: 20 })], { width: COL_W[0] }),
     cell(step.enseignant, { width: COL_W[1] }),
     cell(step.apprenants, { width: COL_W[2] }),
-    cell([p(step.technique || "", { size: 18, spacingAfter: 20 })], { width: COL_W[3] }),
-    cell([p(step.support || "", { size: 18, spacingAfter: 20 })], { width: COL_W[4] }),
-    cell([p("", { size: 18, spacingAfter: 0 })], { width: COL_W[5] }),
+    cell([p(step.technique || "", { size: 22, spacingAfter: 20 })], { width: COL_W[3] }),
+    cell([p(step.support || "", { size: 22, spacingAfter: 20 })], { width: COL_W[4] }),
+    cell([p("", { size: 22, spacingAfter: 0 })], { width: COL_W[5] }),
   ]});
 }
 
 function sectionRow(title) {
   return new TableRow({ children: [
-    cell([p(title, { bold: true, size: 20, align: AlignmentType.CENTER, spacingAfter: 20 })],
+    cell([p(title, { bold: true, size: 24, align: AlignmentType.CENTER, spacingAfter: 20 })],
       { colSpan: 6, shading: SECTION_SHADE }),
   ]});
 }
@@ -229,7 +230,7 @@ function encadre(titre, contenuParas, shade, titleColor) {
     width: { size: 100, type: WidthType.PERCENTAGE },
     rows: [new TableRow({ children: [
       cell([
-        p(titre, { bold: true, size: 21, color: titleColor, spacingAfter: 60 }),
+        p(titre, { bold: true, size: 24, color: titleColor, spacingAfter: 60 }),
         ...contenuParas,
       ], { shading: shade, width: 100 }),
     ]})],

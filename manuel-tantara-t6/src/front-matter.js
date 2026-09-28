@@ -28,6 +28,7 @@ function buildBookcover(rootDir) {
       type: "png",
       data,
       transformation: { width: 794, height: 1123 },
+      altText: { title: "Fonon'ny boky Tantara T6 - J-Learn", description: "Fonon'ny boky Tantara T6 - J-Learn, Édition 2026", name: "bookcover" },
       floating: {
         horizontalPosition: { relative: HorizontalPositionRelativeFrom.PAGE, offset: 0 },
         verticalPosition: { relative: VerticalPositionRelativeFrom.PAGE, offset: 0 },
@@ -43,16 +44,16 @@ function buildBookcover(rootDir) {
 // ---------------- Pejy fonony anaty ----------------
 function buildCouverture(rootDir) {
   const out = [];
-  out.push(B.p("REPOBLIKAN'I MADAGASIKARA", { bold: true, size: 22, align: AlignmentType.CENTER, spacingBefore: 300, spacingAfter: 60 }));
-  out.push(B.p("Collection J-Learn", { italics: true, size: 24, align: AlignmentType.CENTER, spacingAfter: 400 }));
+  out.push(B.p("REPOBLIKAN'I MADAGASIKARA", { bold: true, size: 24, align: AlignmentType.CENTER, spacingBefore: 300, spacingAfter: 60 }));
+  out.push(B.p("Collection J-Learn", { italics: true, size: 26, align: AlignmentType.CENTER, spacingAfter: 400 }));
   out.push(B.p("TANTARA", { bold: true, size: 44, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 100 }));
-  out.push(B.p("Histoire", { bold: true, size: 28, color: B.GREEN, align: AlignmentType.CENTER, spacingAfter: 100 }));
+  out.push(B.p("Histoire", { bold: true, size: 30, color: B.GREEN, align: AlignmentType.CENTER, spacingAfter: 100 }));
   out.push(B.p("Kilasy T6", { bold: true, size: 30, align: AlignmentType.CENTER, spacingAfter: 300 }));
   const cov = img(rootDir, "images/img_seansa22.png", 440);
   if (cov) out.push(cov);
-  out.push(B.p("Bokin'ny mpampianatra sy ny mpianatra", { size: 24, align: AlignmentType.CENTER, spacingBefore: 300, spacingAfter: 80 }));
-  out.push(B.p("Takela-panomanan-desona \u2022 Lesona misy sary \u2022 Fanazaran-tena misy valiny", { italics: true, size: 20, align: AlignmentType.CENTER, spacingAfter: 400 }));
-  out.push(B.p("Version V1 — Taom-pianarana 2026-2027 — Contenu PE (Édition 2026)", { size: 20, align: AlignmentType.CENTER, spacingAfter: 60 }));
+  out.push(B.p("Bokin'ny mpampianatra sy ny mpianatra", { size: 26, align: AlignmentType.CENTER, spacingBefore: 300, spacingAfter: 80 }));
+  out.push(B.p("Takela-panomanan-desona \u2022 Lesona misy sary \u2022 Fanazaran-tena misy valiny", { italics: true, size: 24, align: AlignmentType.CENTER, spacingAfter: 400 }));
+  out.push(B.p("Version V1 — Taom-pianarana 2026-2027 — Contenu PE (Édition 2026)", { size: 24, align: AlignmentType.CENTER, spacingAfter: 60 }));
   out.push(B.pageBreak());
   return out;
 }
@@ -67,8 +68,8 @@ function buildTenyFampidirana() {
     "Nomena lanja manokana ny tontolo malagasy : ny frizy kronolojikan'ireo Repoblika, ny tahirin-kevitra nalaina avy amin'ny FRP, ny rakibolana kely mampifandray ny teny malagasy sy ny terme officiel, ary ny « Fantatrao ve ? » mitantara ireo tsiambaratelon'ny tantaram-pirenena. Amin'ny teny malagasy ny boky manontolo, fa ny anaran-tsamirery sy ny terme officiel (UA, COI, référendum...) dia notazonina araka ny endriny ofisialy.",
     "Fanadinana efatra sy fanadinana akapobeny iray, samy misy valiny sy sedra fanitsiana avokoa, no ahafahan'ny mpianatra mizaha toetra ny fahaizany. Ny fafan'ny mpianatra eo am-piandohan'ny boky no anampiana azy hanara-maso ny fandrosoany isaky ny seho.",
     "Enga anie ity boky ity mba ho namana mahasoa ho an'ny mpampianatra sy ny mpianatra, ary hampitombo ny fitiavan'ny mpianatra rehetra ny tantaran'ny fireneny.",
-  ].forEach(t => out.push(B.p(t, { size: 22, spacingAfter: 120, align: AlignmentType.JUSTIFIED })));
-  out.push(B.p("Ny ekipa J-Learn", { italics: true, size: 22, align: AlignmentType.RIGHT, spacingBefore: 120 }));
+  ].forEach(t => out.push(B.p(t, { size: 24, spacingAfter: 120, align: AlignmentType.JUSTIFIED })));
+  out.push(B.p("Ny ekipa J-Learn", { italics: true, size: 24, align: AlignmentType.RIGHT, spacingBefore: 120 }));
   out.push(B.pageBreak());
   return out;
 }
@@ -101,8 +102,8 @@ function buildTorolalana() {
     ]],
   ];
   for (const [titre, points] of blocs) {
-    out.push(B.p(titre, { bold: true, size: 24, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
-    points.forEach(t => out.push(B.p("\u2022 " + t, { size: 21, spacingAfter: 40 })));
+    out.push(B.p(titre, { bold: true, size: 26, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
+    points.forEach(t => out.push(B.p("\u2022 " + t, { size: 24, spacingAfter: 40 })));
   }
   out.push(B.pageBreak());
   return out;
@@ -112,20 +113,20 @@ function buildTorolalana() {
 function buildFizahanTakila(plan, annexes) {
   const out = [];
   out.push(B.heading("FIZAHAN-TAKILA", { anchorId: "fizahantakila", size: 30, align: AlignmentType.CENTER, spacingAfter: 200 }));
-  out.push(B.tocLink("Teny fampidirana", "tenyfampidirana", { size: 22 }));
-  out.push(B.tocLink("Torolalana amin'ny fampiasana ny boky", "torolalana", { size: 22 }));
-  out.push(B.tocLink("Fafan'ny mpianatra", "fafampianatra", { size: 22 }));
+  out.push(B.tocLink("Teny fampidirana", "tenyfampidirana", { size: 24 }));
+  out.push(B.tocLink("Torolalana amin'ny fampiasana ny boky", "torolalana", { size: 24 }));
+  out.push(B.tocLink("Fafan'ny mpianatra", "fafampianatra", { size: 24 }));
   for (const u of plan) {
     out.push(B.p("", { size: 8, spacingAfter: 30 }));
     out.push(B.tocLink(u.titre, u.anchor, { size: 23, bold: true }));
     for (const s of u.seances) {
-      out.push(B.tocLink(`Seho ${s.numero} — ${s.titre}`, s.anchor, { size: 21, indentLeft: 360 }));
+      out.push(B.tocLink(`Seho ${s.numero} — ${s.titre}`, s.anchor, { size: 24, indentLeft: 360 }));
     }
   }
   out.push(B.p("", { size: 8, spacingAfter: 30 }));
   out.push(B.tocLink("TOVANA", "tovana", { size: 23, bold: true }));
   for (const a of annexes) {
-    out.push(B.tocLink(a.titre, a.anchor, { size: 21, indentLeft: 360 }));
+    out.push(B.tocLink(a.titre, a.anchor, { size: 24, indentLeft: 360 }));
   }
   out.push(B.pageBreak());
   return out;
@@ -136,29 +137,29 @@ function buildFafaMpianatra(plan) {
   const out = [];
   out.push(B.heading("FAFAN'NY MPIANATRA", { anchorId: "fafampianatra", size: 30, align: AlignmentType.CENTER, spacingAfter: 100 }));
   out.push(B.p("Mariho ny efitra rehefa vita ny seho, dia soraty ny isa azonao. Tanjona : voamarika daholo ny efitra rehetra alohan'ny fanadinana akapobeny !", {
-    italics: true, size: 20, align: AlignmentType.CENTER, spacingAfter: 160,
+    italics: true, size: 24, align: AlignmentType.CENTER, spacingAfter: 160,
   }));
   const { cell, p } = B;
   const header = new TableRow({ children: [
-    cell([p("Seho", { bold: true, size: 19, spacingAfter: 20 })], { shading: "DDEEFF", width: 8 }),
-    cell([p("Lohateny", { bold: true, size: 19, spacingAfter: 20 })], { shading: "DDEEFF", width: 52 }),
-    cell([p("Vita", { bold: true, size: 19, spacingAfter: 20 })], { shading: "DDEEFF", width: 10 }),
-    cell([p("Naverina ny fanazaran-tena", { bold: true, size: 19, spacingAfter: 20 })], { shading: "DDEEFF", width: 14 }),
-    cell([p("Isa azo", { bold: true, size: 19, spacingAfter: 20 })], { shading: "DDEEFF", width: 16 }),
+    cell([p("Seho", { bold: true, size: 22, spacingAfter: 20 })], { shading: "DDEEFF", width: 8 }),
+    cell([p("Lohateny", { bold: true, size: 22, spacingAfter: 20 })], { shading: "DDEEFF", width: 52 }),
+    cell([p("Vita", { bold: true, size: 22, spacingAfter: 20 })], { shading: "DDEEFF", width: 10 }),
+    cell([p("Naverina ny fanazaran-tena", { bold: true, size: 22, spacingAfter: 20 })], { shading: "DDEEFF", width: 14 }),
+    cell([p("Isa azo", { bold: true, size: 22, spacingAfter: 20 })], { shading: "DDEEFF", width: 16 }),
   ]});
   const rows = [header];
   for (const u of plan) {
     rows.push(new TableRow({ children: [
-      cell([p(u.titre, { bold: true, size: 19, color: B.GREEN, spacingAfter: 20 })], { shading: "E8F0E4", width: 100, colSpan: 5 }),
+      cell([p(u.titre, { bold: true, size: 22, color: B.GREEN, spacingAfter: 20 })], { shading: "E8F0E4", width: 100, colSpan: 5 }),
     ]}));
     for (const s of u.seances) {
       const sur = s.type === "fanadinana" ? "……… / 20" : "……… / 10";
       rows.push(new TableRow({ children: [
-        cell([p(String(s.numero), { size: 19, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 8 }),
-        cell([p(s.titre, { size: 19, spacingAfter: 20 })], { width: 52 }),
-        cell([p("\u2610", { size: 24, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 10 }),
-        cell([p("\u2610", { size: 24, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 14 }),
-        cell([p(sur, { size: 19, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 16 }),
+        cell([p(String(s.numero), { size: 22, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 8 }),
+        cell([p(s.titre, { size: 22, spacingAfter: 20 })], { width: 52 }),
+        cell([p("\u2610", { size: 26, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 10 }),
+        cell([p("\u2610", { size: 26, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 14 }),
+        cell([p(sur, { size: 22, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 16 }),
       ]}));
     }
   }
@@ -170,15 +171,15 @@ function buildFafaMpianatra(plan) {
 // ---------------- Pejin'ny lohahevitra ----------------
 function buildPejinLohahevitra(u, rootDir) {
   const out = [];
-  out.push(B.p("", { size: 20, spacingAfter: 600 }));
+  out.push(B.p("", { size: 24, spacingAfter: 600 }));
   out.push(B.heading(u.surtitre, { anchorId: u.anchor, size: 34, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 80 }));
-  out.push(B.p(u.sousTitre, { bold: true, size: 28, align: AlignmentType.CENTER, spacingAfter: 240 }));
+  out.push(B.p(u.sousTitre, { bold: true, size: 30, align: AlignmentType.CENTER, spacingAfter: 240 }));
   const im = u.image ? img(rootDir, u.image, 460) : null;
   if (im) out.push(im);
   out.push(B.p("", { size: 12, spacingAfter: 120 }));
-  out.push(B.p("Ao anatin'ity lohahevitra ity :", { bold: true, size: 22, color: B.GREEN, spacingAfter: 60 }));
+  out.push(B.p("Ao anatin'ity lohahevitra ity :", { bold: true, size: 24, color: B.GREEN, spacingAfter: 60 }));
   for (const s of u.seances) {
-    out.push(B.p(`\u2022 Seho ${s.numero} — ${s.titre}`, { size: 21, spacingAfter: 30 }));
+    out.push(B.p(`\u2022 Seho ${s.numero} — ${s.titre}`, { size: 24, spacingAfter: 30 }));
   }
   out.push(B.pageBreak());
   return out;

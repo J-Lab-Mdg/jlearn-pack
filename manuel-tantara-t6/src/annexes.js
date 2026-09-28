@@ -10,30 +10,30 @@ const sizeOf = (p) => {
   const buf = fs.readFileSync(p);
   return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
 };
-function img(rootDir, rel, wPx) {
+function img(rootDir, rel, wPx, alt) {
   const p = path.join(rootDir, rel);
   if (!fs.existsSync(p)) return null;
   const dim = sizeOf(p);
   const h = Math.round(dim.height * (wPx / dim.width));
-  return B.imagePara(p, wPx, h);
+  return B.imagePara(p, wPx, h, alt ? { alt } : {});
 }
 const { cell, p } = B;
 const HEAD = "DDEEFF";
 
 function table2(header, rows, widths) {
-  const hr = new TableRow({ children: header.map((h, i) => cell([p(h, { bold: true, size: 19, spacingAfter: 20 })], { shading: HEAD, width: widths[i] })) });
-  const trs = rows.map(r => new TableRow({ children: r.map((c, i) => cell([p(c, { size: 19, spacingAfter: 20 })], { width: widths[i] })) }));
+  const hr = new TableRow({ children: header.map((h, i) => cell([p(h, { bold: true, size: 22, spacingAfter: 20 })], { shading: HEAD, width: widths[i] })) });
+  const trs = rows.map(r => new TableRow({ children: r.map((c, i) => cell([p(c, { size: 22, spacingAfter: 20 })], { width: widths[i] })) }));
   return new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, rows: [hr, ...trs] });
 }
 
 // ---------- Tovana 1 : Frizy famintinana ----------
 function annexe1(rootDir) {
   const out = [];
-  out.push(B.heading("TOVANA 1 — FRIZY FAMINTINANA NY TANTARAN'I MADAGASIKARA (1958-2026)", { anchorId: "tovana1", size: 26, spacingAfter: 120 }));
-  const im = img(rootDir, "images/img_annexe_frise.png", 640);
+  out.push(B.heading("TOVANA 1 — FRIZY FAMINTINANA NY TANTARAN'I MADAGASIKARA (1958-2026)", { anchorId: "tovana1", size: 28, spacingAfter: 120 }));
+  const im = img(rootDir, "images/img_annexe_frise.png", 640, "Frizy famintinana 1958-2026");
   if (im) out.push(im);
   out.push(leg("Frizy famintinana : ireo Repoblika sy ny tetezamita (1958-2026)", "tovana1"));
-  out.push(B.p("Ireo daty tsara ho tadidina :", { bold: true, size: 22, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
+  out.push(B.p("Ireo daty tsara ho tadidina :", { bold: true, size: 24, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
   [
     "14 oktobra 1958 : fanambarana ny Repoblika Malagasy (Repoblika I).",
     "26 jona 1960 : ny fahaleovantenan'i Madagasikara.",
@@ -45,9 +45,9 @@ function annexe1(rootDir) {
     "2002 : krizy taorian'ny fifidianana ; Ravalomanana filoha (2002-2009).",
     "17 martsa 2009 : krizy — HAT notarihin'i Rajoelina (tetezamita 2009-2014).",
     "17 novambra 2010 : lalampanorenana vaovao — Repoblika IV.",
-    "25 janoary 2014 : Rajaonarimampianina ; 18 janoary 2019 : Rajoelina.",
+    "25 janoary 2014 : Rajaonarimampianina ; 19 janoary 2019 : Rajoelina.",
     "14 oktobra 2025 : nesorina i Rajoelina ; Randrianirina — tetezamitan'ny fanorenana ifotony.",
-  ].forEach(t => out.push(B.p("\u2022 " + t, { size: 20, spacingAfter: 40 })));
+  ].forEach(t => out.push(B.p("\u2022 " + t, { size: 24, spacingAfter: 40 })));
   out.push(B.pageBreak());
   return out;
 }
@@ -55,7 +55,7 @@ function annexe1(rootDir) {
 // ---------- Tovana 2 : Fafan'ireo filoham-panjakana ----------
 function annexe2() {
   const out = [];
-  out.push(B.heading("TOVANA 2 — IREO FILOHAM-PANJAKANA SY FILOHAN'NY TETEZAMITA (1958-2026)", { anchorId: "tovana2", size: 26, spacingAfter: 120 }));
+  out.push(B.heading("TOVANA 2 — IREO FILOHAM-PANJAKANA SY FILOHAN'NY TETEZAMITA (1958-2026)", { anchorId: "tovana2", size: 28, spacingAfter: 120 }));
   out.push(table2(
     ["Anarana", "Vanim-potoana", "Sata"],
     [
@@ -71,13 +71,13 @@ function annexe2() {
       ["Marc RAVALOMANANA", "22 febroary 2002 - 17 martsa 2009", "Filohan'ny Repoblika III"],
       ["Andry Nirina RAJOELINA", "17 martsa 2009 - 25 janoary 2014", "Filohan'ny tetezamita (HAT)"],
       ["Hery Martial RAJAONARIMAMPIANINA", "25 janoary 2014 - 7 septambra 2018", "Filohan'ny Repoblika IV"],
-      ["Rivo RAKOTOVAO", "7 septambra 2018 - 18 janoary 2019", "Filoham-panjakana vonjimaika"],
-      ["Andry Nirina RAJOELINA", "18 janoary 2019 - 14 oktobra 2025", "Filohan'ny Repoblika IV"],
+      ["Rivo RAKOTOVAO", "7 septambra 2018 - 19 janoary 2019", "Filoham-panjakana vonjimaika"],
+      ["Andry Nirina RAJOELINA", "19 janoary 2019 - 14 oktobra 2025", "Filohan'ny Repoblika IV"],
       ["Kolonely Michael RANDRIANIRINA", "17 oktobra 2025 - ...", "Filohan'ny tetezamita (fanorenana ifotony)"],
     ],
     [34, 36, 30]
   ));
-  out.push(B.p("Fanamarihana : io fafana io dia mifarana amin'ny taona 2026 (fotoana namoahana ity boky ity).", { italics: true, size: 18, spacingBefore: 80 }));
+  out.push(B.p("Fanamarihana : io fafana io dia mifarana amin'ny taona 2026 (fotoana namoahana ity boky ity). Mifanindry ny daty 2002 satria samy nitonona ho filoha i Ratsiraka sy Ravalomanana nandritra ny krizy — ny 5 jolay 2002 vao nandao ny firenena i Ratsiraka.", { italics: true, size: 22, spacingBefore: 80 }));
   out.push(B.pageBreak());
   return out;
 }
@@ -85,7 +85,7 @@ function annexe2() {
 // ---------- Tovana 3 : Ireo sigla ----------
 function annexe3() {
   const out = [];
-  out.push(B.heading("TOVANA 3 — IREO SIGLA AMPIASAINA AMIN'NY BOKY", { anchorId: "tovana3", size: 26, spacingAfter: 120 }));
+  out.push(B.heading("TOVANA 3 — IREO SIGLA AMPIASAINA AMIN'NY BOKY", { anchorId: "tovana3", size: 28, spacingAfter: 120 }));
   out.push(table2(
     ["Sigla", "Dikany feno", "Fanazavana fohy"],
     [
@@ -94,9 +94,7 @@ function annexe3() {
       ["COMESA", "Common Market for Eastern and Southern Africa", "Tsena iombonana Afrika Atsinanana sy Atsimo (1994)"],
       ["CRES", "Comité de Redressement Économique et Social", "Komitin'ny fanarenana (tetezamita 1991-1993)"],
       ["CSR", "Conseil Suprême de la Révolution", "Filan-kevitra Ambonin'ny Revolisiona (Repoblika II)"],
-      ["FKI", "Fiharian-karena Iombonana", "Koperativa sosialista (Repoblika II)"],
-      ["FRP", "Fitaovana enti-mampianatra", "Boky fanampin'ny mpampianatra"],
-      ["GVTD", "Governemanta Vonjimaika Tetezamita mankany amin'ny Demokrasia", "Fitakiana 1991"],
+      ["FRP", "Fiche de Référence Pédagogique (frantsay)", "Tari-dalana ofisialin'ny mpampianatra"],
       ["HAE", "Haute Autorité de l'État", "Fahefana Avon'ny Fanjakana (1991-1993)"],
       ["HAT", "Haute Autorité de la Transition", "Fahefana Avon'ny Tetezamita (2009-2014)"],
       ["HCC", "Haute Cour Constitutionnelle", "Fitsarana Avo momba ny Lalampanorenana"],
@@ -119,7 +117,7 @@ function annexe3() {
 // ---------- Tovana 4 : Rakibolana ----------
 function annexe4() {
   const out = [];
-  out.push(B.heading("TOVANA 4 — RAKIBOLANA (TENY MALAGASY \u21C4 TERME OFFICIEL)", { anchorId: "tovana4", size: 26, spacingAfter: 120 }));
+  out.push(B.heading("TOVANA 4 — RAKIBOLANA (TENY MALAGASY \u21C4 TERME OFFICIEL)", { anchorId: "tovana4", size: 28, spacingAfter: 120 }));
   out.push(table2(
     ["Teny malagasy", "Terme officiel (frantsay)", "Seho"],
     [
@@ -168,15 +166,15 @@ function annexe4() {
 // ---------- Tovana 5 : Sari-tany ----------
 function annexe5(rootDir) {
   const out = [];
-  out.push(B.heading("TOVANA 5 — SARI-TANY", { anchorId: "tovana5", size: 26, spacingAfter: 120 }));
-  const im1 = img(rootDir, "images/img_annexe_carteMG.png", 420);
+  out.push(B.heading("TOVANA 5 — SARI-TANY", { anchorId: "tovana5", size: 28, spacingAfter: 120 }));
+  const im1 = img(rootDir, "images/img_annexe_carteMG.png", 420, "Sari-tanin'i Madagasikara");
   if (im1) out.push(im1);
   out.push(leg("Madagasikara : ireo renivohitry ny faritany enina (sary famintinana)", "tovana5"));
   out.push(B.p("", { size: 10, spacingAfter: 120 }));
-  const im2 = img(rootDir, "images/img_annexe_carteOI.png", 620);
+  const im2 = img(rootDir, "images/img_annexe_carteOI.png", 620, "Sari-tanin'ny ranomasimbe indianina");
   if (im2) out.push(im2);
   out.push(leg("Ireo nosy mpikambana ao amin'ny COI ao amin'ny ranomasimbe indianina", "tovana5"));
-  out.push(B.p("Fanamarihana : sary famintinana tsotra ireo, tsy misy maridrefy — ampiasao ny sari-tany ofisialy ao amin'ny kilasy raha mila fitsirihana amin'ny antsipiriany.", { italics: true, size: 18, spacingBefore: 80 }));
+  out.push(B.p("Fanamarihana : sary famintinana tsotra ireo, tsy misy maridrefy — ampiasao ny sari-tany ofisialy ao amin'ny kilasy raha mila fitsirihana amin'ny antsipiriany. Ireo faritany enina dia mari-pahatsiarovana ara-tantara ihany : ny fizarazarana manan-kery ankehitriny dia ny faritra 23.", { italics: true, size: 22, spacingBefore: 80 }));
   out.push(B.pageBreak());
   return out;
 }
@@ -184,8 +182,8 @@ function annexe5(rootDir) {
 // ---------- Tovana 6 : Taratasy fizahan-toetra ----------
 function annexe6() {
   const out = [];
-  out.push(B.heading("TOVANA 6 — TARATASY FIZAHAN-TOETRA (AUTO-ÉVALUATION)", { anchorId: "tovana6", size: 26, spacingAfter: 120 }));
-  out.push(B.p("Valio amin'ny ENY na TSIA : raha misy TSIA dia avereno vakina ilay seho voalaza.", { italics: true, size: 20, spacingAfter: 120 }));
+  out.push(B.heading("TOVANA 6 — TARATASY FIZAHAN-TOETRA (AUTO-ÉVALUATION)", { anchorId: "tovana6", size: 28, spacingAfter: 120 }));
+  out.push(B.p("Valio amin'ny ENY na TSIA : raha misy TSIA dia avereno vakina ilay seho voalaza.", { italics: true, size: 24, spacingAfter: 120 }));
   const blocs = [
     ["Lohahevitra I (Seho 1-6)", [
       "Haiko ny mamaritra ny Tantara sy ny mitanisa ny toetrany efatra. (S1)",
@@ -216,12 +214,12 @@ function annexe6() {
   const rows = [];
   for (const [titre, items] of blocs) {
     rows.push(new TableRow({ children: [
-      cell([p(titre, { bold: true, size: 19, color: B.GREEN, spacingAfter: 20 })], { shading: "E8F0E4", width: 100, colSpan: 3 }),
+      cell([p(titre, { bold: true, size: 22, color: B.GREEN, spacingAfter: 20 })], { shading: "E8F0E4", width: 100, colSpan: 3 }),
     ]}));
     items.forEach(it => rows.push(new TableRow({ children: [
-      cell([p(it, { size: 19, spacingAfter: 20 })], { width: 76 }),
-      cell([p("ENY \u2610", { size: 19, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 12 }),
-      cell([p("TSIA \u2610", { size: 19, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 12 }),
+      cell([p(it, { size: 22, spacingAfter: 20 })], { width: 76 }),
+      cell([p("ENY \u2610", { size: 22, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 12 }),
+      cell([p("TSIA \u2610", { size: 22, spacingAfter: 20, align: AlignmentType.CENTER })], { width: 12 }),
     ]})));
   }
   out.push(new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, rows }));
@@ -232,8 +230,8 @@ function annexe6() {
 // ---------- Tovana 7 : Fanondroana ----------
 function annexe7() {
   const out = [];
-  out.push(B.heading("TOVANA 7 — FANONDROANA (INDEX)", { anchorId: "tovana7", size: 26, spacingAfter: 120 }));
-  out.push(B.p("Ny isa dia manondro ny seho ; fipihana ny laharana = mankany amin'ny seho (endrika nomerika).", { italics: true, size: 19, spacingAfter: 120 }));
+  out.push(B.heading("TOVANA 7 — FANONDROANA (INDEX)", { anchorId: "tovana7", size: 28, spacingAfter: 120 }));
+  out.push(B.p("Ny isa dia manondro ny seho ; fipihana ny laharana = mankany amin'ny seho (endrika nomerika). Ny seho fampianarana ihany no voatondro eto, fa tsy ny seho famerenana sy fanadinana (6, 17, 21, 26, 27).", { italics: true, size: 22, spacingAfter: 120 }));
   const entries = [
     ["Aloalo", [22]], ["Ambohimanga (vohimasina)", [22, 24]], ["Andrim-panjakana", [13]],
     ["Antenimiera", [13]], ["Arisiva", [4]], ["Arkeolojia", [4, 5]],
@@ -253,13 +251,13 @@ function annexe7() {
   ];
   const { ExternalHyperlink, InternalHyperlink, TextRun, Paragraph } = require("docx");
   for (const [terme, seances] of entries) {
-    const runs = [new TextRun({ text: terme + " : ", size: 20, font: B.FONT })];
+    const runs = [new TextRun({ text: terme + " : ", size: 24, font: B.FONT })];
     seances.forEach((n, i) => {
       runs.push(new InternalHyperlink({
         anchor: `seho${String(n).padStart(2, "0")}`,
-        children: [new TextRun({ text: String(n), size: 20, font: B.FONT, style: "Hyperlink" })],
+        children: [new TextRun({ text: String(n), size: 24, font: B.FONT, style: "Hyperlink" })],
       }));
-      if (i < seances.length - 1) runs.push(new TextRun({ text: ", ", size: 20, font: B.FONT }));
+      if (i < seances.length - 1) runs.push(new TextRun({ text: ", ", size: 24, font: B.FONT }));
     });
     out.push(new Paragraph({ children: runs, spacing: { after: 40 } }));
   }
@@ -270,40 +268,40 @@ function annexe7() {
 // ---------- Tovana 8 : Bibliografia, webografia ary lisitry ny sary ----------
 function annexe8(figures) {
   const out = [];
-  out.push(B.heading("TOVANA 8 — BIBLIOGRAFIA, WEBOGRAFIA ARY LISITRY NY SARY", { anchorId: "tovana8", size: 26, spacingAfter: 120 }));
-  out.push(B.p("Bibliografia", { bold: true, size: 24, color: B.GREEN, spacingAfter: 60 }));
+  out.push(B.heading("TOVANA 8 — BIBLIOGRAFIA, WEBOGRAFIA ARY LISITRY NY SARY", { anchorId: "tovana8", size: 28, spacingAfter: 120 }));
+  out.push(B.p("Bibliografia", { bold: true, size: 26, color: B.GREEN, spacingAfter: 60 }));
   [
     "MEN — Programme d'Études (PE) T6, Édition nohavaozina 2026, Ministeran'ny Fanabeazam-pirenena, Madagasikara.",
-    "MEN — FRP Tantara T6 (Fitaovana enti-mampianatra), Ministeran'ny Fanabeazam-pirenena.",
+    "MEN — FRP Tantara T6 (Fiche de Référence Pédagogique), Ministeran'ny Fanabeazam-pirenena, Antananarivo.",
     "MEN, OEMC, FNUD/UNDP — Bokikely momba ny fanabeazana ho olom-pirenena vanona sy ny zon'olombelona, 2011.",
-    "CALLET (Mompera) — Tantara ny Andriana eto Madagasikara, 1873.",
-    "Friedrich-Ebert-Stiftung — Ny tantaram-politikan'i Madagasikara (library.fes.de).",
-  ].forEach(t => out.push(B.p("\u2022 " + t, { size: 20, spacingAfter: 40 })));
-  out.push(B.p("Webografia", { bold: true, size: 24, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
+    "CALLET (R.P. François) — Tantara ny Andriana eto Madagasikara, Antananarivo, Imprimerie catholique, 1873.",
+    "Friedrich-Ebert-Stiftung — Ny tantaram-politikan'i Madagasikara, Antananarivo (library.fes.de, nojerena septambra 2026).",
+  ].forEach(t => out.push(B.p("\u2022 " + t, { size: 24, spacingAfter: 40 })));
+  out.push(B.p("Webografia", { bold: true, size: 26, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
   [
-    "plateforme.education.mg — ny PE ofisialy sy ny tahirin-kevitry ny MEN.",
-    "mg.wikipedia.org/wiki/Tantara — famaritana ny tantara amin'ny teny malagasy.",
-    "mg.wikipedia.org/wiki/Pôlitika_eto_Madagasikara — ny politika eto Madagasikara.",
-    "whc.unesco.org — ny lisitry ny vakoka maneran-tany (Tsingy, Ambohimanga, Atsinanana).",
-    "au.int — ny Firaisambe Afrikanina ; commissionoceanindien.org — ny COI.",
-  ].forEach(t => out.push(B.p("\u2022 " + t, { size: 20, spacingAfter: 40 })));
-  out.push(B.p("Lisitry ny sary", { bold: true, size: 24, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
+    "plateforme.education.mg — ny PE ofisialy sy ny tahirin-kevitry ny MEN (nojerena septambra 2026).",
+    "mg.wikipedia.org/wiki/Tantara — famaritana ny tantara amin'ny teny malagasy (nojerena septambra 2026).",
+    "fr.wikipedia.org — « Politique à Madagascar » (nojerena septambra 2026).",
+    "whc.unesco.org sy ich.unesco.org — ny lisitry ny vakoka maneran-tany (nojerena septambra 2026).",
+    "au.int — ny Firaisambe Afrikanina ; commissionoceanindien.org — ny COI (nojerena septambra 2026).",
+  ].forEach(t => out.push(B.p("\u2022 " + t, { size: 24, spacingAfter: 40 })));
+  out.push(B.p("Lisitry ny sary", { bold: true, size: 26, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
   const { InternalHyperlink, TextRun, Paragraph } = require("docx");
   figures.forEach(f => {
     if (f.anchor) {
       out.push(new Paragraph({
         children: [new InternalHyperlink({
           anchor: f.anchor,
-          children: [new TextRun({ text: "\u2022 " + f.legende, size: 20, font: B.FONT, style: "Hyperlink" })],
+          children: [new TextRun({ text: "\u2022 " + f.legende, size: 24, font: B.FONT, style: "Hyperlink" })],
         })],
         spacing: { after: 40 },
       }));
     } else {
-      out.push(B.p("\u2022 " + f.legende, { size: 20, spacingAfter: 40 }));
+      out.push(B.p("\u2022 " + f.legende, { size: 24, spacingAfter: 40 }));
     }
   });
   out.push(B.p("", { size: 12, spacingAfter: 200 }));
-  out.push(B.p("— Faran'ny boky —", { italics: true, size: 20, align: AlignmentType.CENTER }));
+  out.push(B.p("— Faran'ny boky —", { italics: true, size: 24, align: AlignmentType.CENTER }));
   return out;
 }
 

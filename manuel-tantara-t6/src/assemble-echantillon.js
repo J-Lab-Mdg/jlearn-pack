@@ -12,23 +12,23 @@ const children = [
   // Pejy fampidirana ny santionany
   B.p("COLLECTION J-LEARN", { bold: true, size: 30, align: AlignmentType.CENTER, spacingAfter: 200, spacingBefore: 1200 }),
   B.p("Boky Tantara — Kilasy T6", { bold: true, size: 36, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 200 }),
-  B.p("SANTIONANY VAVOLOMBELONA — Seho 1", { bold: true, size: 26, align: AlignmentType.CENTER, spacingAfter: 120 }),
-  B.p("Famaritana ny Tantara : ny toetrany sy ny tombontsoa entiny", { size: 24, align: AlignmentType.CENTER, spacingAfter: 400 }),
-  B.p("Version V1 — ho fankatoavana alohan'ny famokarana feno", { italics: true, size: 20, align: AlignmentType.CENTER }),
+  B.p("SANTIONANY VAVOLOMBELONA — Seho 1", { bold: true, size: 28, align: AlignmentType.CENTER, spacingAfter: 120 }),
+  B.p("Famaritana ny Tantara : ny toetrany sy ny tombontsoa entiny", { size: 26, align: AlignmentType.CENTER, spacingAfter: 400 }),
+  B.p("Version V1 — ho fankatoavana alohan'ny famokarana feno", { italics: true, size: 24, align: AlignmentType.CENTER }),
   B.pageBreak(),
   ...buildFiche(S1, ROOT),
 ];
 
 const doc = new B.Document({
   styles: {
-    default: { document: { run: { font: B.FONT, size: 22 } } },
+    default: { document: { run: { font: B.FONT, size: 24 } } },
     characterStyles: [{
       id: "Hyperlink", name: "Hyperlink", basedOn: "DefaultParagraphFont",
       run: { color: "0563C1", underline: {} },
     }],
   },
   sections: [{
-    properties: { page: { margin: { top: 900, bottom: 900, left: 1000, right: 1000 } } },
+    properties: { page: { margin: { top: 1417, bottom: 1417, left: 1417, right: 1417 } } },
     children,
   }],
 });

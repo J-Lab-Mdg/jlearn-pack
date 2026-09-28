@@ -212,7 +212,7 @@ jobs.push(eventFrise("img_seansa12.png", "Ny tetezamita 2009-2014, ny Repoblika 
   { y: 2009.2, date: "2009", lines: ["Krizy : HAT notarihin'i", "Rajoelina (tetezamita)"], color: GREY },
   { y: 2010.9, date: "17 nov. 2010", lines: ["Lalampanorenana vaovao :", "Repoblika IV"], color: PINK },
   { y: 2014.1, date: "25 jan. 2014", lines: ["Rajaonarimampianina filoha", "voafidy voalohany"], color: GREEN },
-  { y: 2019, date: "18 jan. 2019", lines: ["Rajoelina filoha voafidy"], color: BLUE },
+  { y: 2019, date: "19 jan. 2019", lines: ["Rajoelina filoha voafidy"], color: BLUE },
   { y: 2023.9, date: "des. 2023", lines: ["Rajoelina lany fanindroany"], color: OCRE },
   { y: 2025.8, date: "okt. 2025", lines: ["Krizy : nesorina i Rajoelina ;", "Randrianirina, filohan'ny", "Fanorenana ifotony (transition)"], color: "#7B1FA2" },
 ]));
@@ -496,7 +496,7 @@ jobs.push(boxes("img3_s22.png", "Ireo vakoka malagasy eken'ny UNESCO", "UNESCO",
   { titre: "AMBOHIMANGA", color: GREEN, items: ["2001", "Vakoka hita maso", "(rova masina)"] },
   { titre: "TSINGY BEMARAHA", color: BLUE, items: ["1990", "Vakoka voajanahary"] },
   { titre: "ALA ATSINANANA", color: OCRE, items: ["2007", "Voajanahary ;", "tandindomin-doza 2010"] },
-  { titre: "KABARY / ZAFIMANIRY", color: PINK, items: ["2021 / 2003", "Vakoka tsy hita maso"] },
+  { titre: "KABARY / HIRAGASY", color: PINK, items: ["2021 / 2023", "(sy Zafimaniry 2003)", "Vakoka tsy hita maso"] },
 ]));
 
 jobs.push(boxes("img3_s24.png", "Ireo loza mananontanona ny harem-pirenena", "LOZA", [

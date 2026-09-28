@@ -4,7 +4,7 @@ module.exports = {
     image: "images/img_exo_doc.png",
     legende: "Tahirin-kevitra hodinihina : taratasin'i Rakoto (1960)",
     consigne: [
-      "Vakio ilay taratasy eo ambony ary valio :",
+      "Vakio ilay taratasy eo ambony (taratasy noforonina ho an'ity boky ity) ary valio :",
       "a) Karazana loharano inona ity tahirin-kevitra ity ?",
       "b) Oviana ary taiza no nanoratana azy ?",
       "c) Inona ny zava-nitranga lehibe tantarainy ?",

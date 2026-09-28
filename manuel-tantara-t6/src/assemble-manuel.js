@@ -93,10 +93,10 @@ for (const u of plan) {
   if (u.lh !== "FA") {
     children.push(...FM.buildPejinLohahevitra(u, ROOT));
   } else {
-    children.push(B.p("", { size: 20, spacingAfter: 600 }));
+    children.push(B.p("", { size: 24, spacingAfter: 600 }));
     children.push(B.heading("FANADINANA AKAPOBENY", { anchorId: "fanadinanaakapobeny", size: 34, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 120 }));
-    children.push(B.p("Ny fandaharam-pianarana manontolo : Tantara \u2022 Repoblika \u2022 Fifandraisana \u2022 Vakoka", { bold: true, size: 26, align: AlignmentType.CENTER, spacingAfter: 200 }));
-    children.push(B.p("Alohan'ny hanombohana : vakio indray ny taratasy fizahan-toetra, jereo ny fafan'ny mpianatra, ary omano ny fitaovanao. Mirary soa !", { italics: true, size: 22, align: AlignmentType.CENTER, spacingAfter: 200 }));
+    children.push(B.p("Ny fandaharam-pianarana manontolo : Tantara \u2022 Repoblika \u2022 Fifandraisana \u2022 Vakoka", { bold: true, size: 28, align: AlignmentType.CENTER, spacingAfter: 200 }));
+    children.push(B.p("Alohan'ny hanombohana : vakio indray ny taratasy fizahan-toetra, jereo ny fafan'ny mpianatra, ary omano ny fitaovanao. Mirary soa !", { italics: true, size: 24, align: AlignmentType.CENTER, spacingAfter: 200 }));
     children.push(B.pageBreak());
   }
   u.data.forEach((s) => {
@@ -110,10 +110,10 @@ for (const u of plan) {
 }
 
 // ---------- tovana ----------
-children.push(B.p("", { size: 20, spacingAfter: 600 }));
+children.push(B.p("", { size: 24, spacingAfter: 600 }));
 children.push(B.heading("TOVANA", { anchorId: "tovana", size: 34, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 200 }));
 children.push(B.p("Frizy \u2022 Filoham-panjakana \u2022 Sigla \u2022 Rakibolana \u2022 Sari-tany \u2022 Fizahan-toetra \u2022 Fanondroana \u2022 Bibliografia", {
-  size: 22, align: AlignmentType.CENTER, spacingAfter: 200,
+  size: 24, align: AlignmentType.CENTER, spacingAfter: 200,
 }));
 children.push(B.pageBreak());
 children.push(...AX.annexe1(ROOT));
@@ -126,16 +126,28 @@ children.push(...AX.annexe7());
 children.push(...AX.annexe8(SARY.list().map(f => ({ legende: `Sary ${f.num} — ${f.legende}`, anchor: f.anchor }))));
 
 // ---------- taratasy ----------
+const { Footer, PageNumber } = require("docx");
+const footerPage = new Footer({ children: [ new B.Paragraph({
+  alignment: AlignmentType.CENTER,
+  children: [ new B.TextRun({ children: [PageNumber.CURRENT], size: 20, font: B.FONT, color: "666666" }) ],
+}) ] });
+
 const doc = new B.Document({
+  creator: "J-Learn (J-Lab Madagascar) — j.lab.mdg@gmail.com",
+  title: "Boky Tantara T6 — J-Learn, Édition 2026",
+  subject: "Tantara (Histoire) — kilasy T6",
+  description: "Boky fianarana Tantara T6 : takela-panomanan-desona, lesona, fanazaran-tena, fanadinana ary tovana — mifanaraka amin'ny PE sy FRP ofisialy.",
+  keywords: "Tantara, T6, J-Learn, Madagasikara, manuel scolaire",
   styles: {
-    default: { document: { run: { font: B.FONT, size: 22 } } },
+    default: { document: { run: { font: B.FONT, size: 24 } } },
     characterStyles: [{
       id: "Hyperlink", name: "Hyperlink", basedOn: "DefaultParagraphFont",
       run: { color: "0563C1", underline: {} },
     }],
   },
   sections: [{
-    properties: { page: { margin: { top: 900, bottom: 900, left: 1000, right: 1000 } } },
+    properties: { page: { margin: { top: 1417, bottom: 1417, left: 1417, right: 1417 } } },
+    footers: { default: footerPage },
     children,
   }],
 });

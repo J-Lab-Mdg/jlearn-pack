@@ -92,6 +92,14 @@ enseignant/enseignante selon les manuels. La cover est intégrée en pleine page
   - numéros `Sary` sans trou ni doublon (chacun 2× : légende + liste) ;
   - totaux des barèmes.
 - Vérification visuelle d'au moins 1-2 images/pages par lot.
+- **Standard fichier Word (confirmé 2026-09-28)** : corps 12 pt (small ≥ 10 pt), marges
+  2,5 cm, numéros de page en pied de page, titres ancrés en style Heading1 (volet de
+  navigation), langue `mg-MG` déclarée (post-traitement styles.xml), texte alternatif
+  sur toutes les images, métadonnées remplies (titre/auteur/description).
+- **Jamais de compression d'images** (consigne réaffirmée) ; pas de mention
+  « illustrations IA » dans la bibliographie.
+- Sigles : ne jamais inventer/deviner — tout sigle du manuel doit être vérifiable dans
+  les documents officiels, sinon le retirer (cas FKI, GVTD, LFK).
 - Livraison : commit + push, puis **lien raw.githubusercontent.com** vers le .docx.
 
 ## 6. Contexte à connaître
