@@ -151,11 +151,7 @@ function buildLesona(S, rootDir) {
     pushImage(out, rootDir, im2.image, im2.legende, anchor);
   }
 
-  // Encadré « Fantatrao ve ? »
-  if (S.lesona.fantatraoVe && S.lesona.fantatraoVe.length) {
-    out.push(B.p("", { size: 10, spacingAfter: 40 }));
-    out.push(B.encadreSaisTu(S.lesona.fantatraoVe.map(t => B.p(t, { size: 24, spacingAfter: 40 }))));
-  }
+  // Encadré « Fantatrao ve ? » : SUPPRIMÉ (décision J-Lab 2026-09-28) — plus aucun rendu.
 
   // Encadré « Tahirin-kevitra hodinihina » (document historique + questions)
   if (S.lesona.tahirinKevitra && S.lesona.tahirinKevitra.length) {

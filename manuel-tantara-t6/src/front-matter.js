@@ -65,7 +65,7 @@ function buildTenyFampidirana() {
   [
     "Ity boky Tantara ho an'ny kilasy T6 ity dia narafitra mifanaraka tanteraka amin'ny fandaharam-pianarana ofisialin'ny Ministeran'ny Fanabeazam-pirenena (PE nohavaozina, Édition 2026) sy ny FRP Tantara T6. Feno ao ny lohahevitra efatra : ny fampidirana ny fianarana Tantara, i Madagasikara taorian'ny fahaleovantena, ny fifandraisana amin'ireo firenena afrikanina sy ny nosy manodidina, ary ny vakoka sy ny harem-pirenena — mizara ho seho 27, misy fanadinana efatra sy fanadinana akapobeny amin'ny fiafaran'ny taona.",
     "Ny seho tsirairay dia manaraka rafitra tokana : ny TAKELA-PANOMANAN-DESONA ho an'ny mpampianatra, misy ny fizotry ny lesona feno (famerenana, lesona vaovao amin'ny dingana enina, tombana) ; ny LESONA misy sary ho an'ny mpianatra, asongadina amin'ny loko ny teny manan-danja ; ary ny FANAZARAN-TENA isaina 10 isa, arahina valiny amin'ny antsipiriany.",
-    "Nomena lanja manokana ny tontolo malagasy : ny frizy kronolojikan'ireo Repoblika, ny tahirin-kevitra nalaina avy amin'ny FRP, ny rakibolana kely mampifandray ny teny malagasy sy ny terme officiel, ary ny « Fantatrao ve ? » mitantara ireo tsiambaratelon'ny tantaram-pirenena. Amin'ny teny malagasy ny boky manontolo, fa ny anaran-tsamirery sy ny terme officiel (UA, COI, référendum...) dia notazonina araka ny endriny ofisialy.",
+    "Nomena lanja manokana ny tontolo malagasy : ny frizy kronolojikan'ireo Repoblika, ny tahirin-kevitra nalaina avy amin'ny FRP, ary ny rakibolana kely mampifandray ny teny malagasy sy ny terme officiel. Amin'ny teny malagasy ny boky manontolo, fa ny anaran-tsamirery sy ny terme officiel (UA, COI, référendum...) dia notazonina araka ny endriny ofisialy.",
     "Fanadinana efatra sy fanadinana akapobeny iray, samy misy valiny sy sedra fanitsiana avokoa, no ahafahan'ny mpianatra mizaha toetra ny fahaizany. Ny fafan'ny mpianatra eo am-piandohan'ny boky no anampiana azy hanara-maso ny fandrosoany isaky ny seho.",
     "Enga anie ity boky ity mba ho namana mahasoa ho an'ny mpampianatra sy ny mpianatra, ary hampitombo ny fitiavan'ny mpianatra rehetra ny tantaran'ny fireneny.",
   ].forEach(t => out.push(B.p(t, { size: 24, spacingAfter: 120, align: AlignmentType.JUSTIFIED })));
@@ -86,7 +86,6 @@ function buildTorolalana() {
     ]],
     ["Ho an'ny mpianatra", [
       "Ny lesona misy sary no mirakitra ny votoatin'ny fianarana ; asongadina amin'ny loko ny teny manan-danja.",
-      "Ny « Fantatrao ve ? » dia mitantara zava-mahaliana mifandray amin'ny tantaran'i Madagasikara sy izao tontolo izao.",
       "Ny « Tahirin-kevitra hodinihina » dia manazatra anao hamaky sy hamakafaka loharano ara-tantara — fanazaran-tena fototry ny mpahay tantara !",
       "Ny rakibolana kely dia mampifandray ny teny malagasy sy ny terme officiel amin'ny teny frantsay.",
       "Ny fanazaran-tena isaina 10 isa dia hizahana toetra ny fahaizanao ; ny valiny, miloko mavokely, dia jerena aorian'ny fikarohana ihany !",
