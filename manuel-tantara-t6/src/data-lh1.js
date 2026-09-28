@@ -6,7 +6,7 @@ const S2 = {
   numero: 2, total: 27, lohahevitra: LH,
   titre: "Ny antony sy ny zava-kendren'ny fianarana Tantara",
   tanjona: "manazava ny antony ilana ny Tantara sy ny zava-kendren'ny fianarana azy",
-  fanovozanKevitra: DOC + " (FRP T6, fizarana 1-a, 1-d)",
+  fanovozanKevitra: DOC + " (FRP T6, LFK 1-a, 1-d)",
   fitaovana: "Sary, lahatsoratra, solaitrabe, kahie",
   image: "images/img_seansa02.png",
   imageLegende: "Ny lasa manazava ny ankehitriny ary manomana ny hoavy",
@@ -52,9 +52,9 @@ const S2 = {
   },
   fampiharana: [
     {
-      consigne: "Ampifanandrifio : 1. mahafantatra ny lasa / 2. manazava ny ankehitriny / 3. manatsara ny hoavy — a. misoroka ny tsy nety teo aloha ; b. mahalala ny fiavian'ny mponina malagasy ; c. mahazo ny antony isian'ny fady.",
+      consigne: "Ampifanandrifio : 1. mahafantatra ny lasa / 2. manazava ny ankehitriny / 3. manatsara ny hoavy — a. misoroka ny tsy nety teo aloha ; b. mahalala ny fiavian'ny mponina malagasy ; d. mahazo ny antony isian'ny fady.",
       items: [],
-      corrige: [[{ text: "1-b", cle: true }, { text: " ; " }, { text: "2-c", cle: true }, { text: " ; " }, { text: "3-a", cle: true }, { text: "." }]],
+      corrige: [[{ text: "1-b", cle: true }, { text: " ; " }, { text: "2-d", cle: true }, { text: " ; " }, { text: "3-a", cle: true }, { text: "." }]],
     },
   ],
   fampiharanaTechnique: "Asa tsiroaroa", fampiharanaSupport: "Solaitra kely",
@@ -139,7 +139,7 @@ const S3 = {
   numero: 3, total: 27, lohahevitra: LH,
   titre: "Ny fandrefesana ny fotoana : frizy sy kalandrie",
   tanjona: "mampiasa ny frizy kronolojika, manisa ny taon-jato ary mahalala ny karazana kalandrie",
-  fanovozanKevitra: DOC + " (FRP T6, fizarana 1-c)",
+  fanovozanKevitra: DOC + " (FRP T6, Lohahevitra I — lesona fanampiny J-Learn)",
   fitaovana: "Frizy kronolojika, kalandrie, solaitrabe, tsipika",
   image: "images/img_seansa03.png",
   imageLegende: "Ny fandrefesana ny fotoana : ambaratongan'ny fotoana sy ny frizy kronolojika",
@@ -289,7 +289,7 @@ const S4 = {
   numero: 4, total: 27, lohahevitra: LH,
   titre: "Ireo karazana loharano ara-tantara",
   tanjona: "mitanisa sy manasokajy ireo karazana loharano fanovozan-kevitra ara-tantara",
-  fanovozanKevitra: DOC + " (FRP T6, fizarana 1-f, 1-h, 1-i)",
+  fanovozanKevitra: DOC + " (FRP T6, LFK 1-f, 1-h, 1-i)",
   fitaovana: "Sary, zavatra tranainy (vola taloha, gazety...), solaitrabe",
   image: "images/img_seansa04.png",
   imageLegende: "Ny sokajin-doharano telo : an-tsoratra, am-bava ary moana",
@@ -417,9 +417,9 @@ const S4 = {
     },
     {
       points: 4,
-      consigne: "Sokajio ireto : a) soratra voasokitra amin'ny vato ; b) hira gasy nentim-paharazana ; c) firavaka volamena hita tao anaty fasana ; d) rakitsoratry ny fitsarana. (1 isa avy)",
+      consigne: "Sokajio ireto : a) soratra voasokitra amin'ny vato ; b) hira gasy nentim-paharazana ; d) firavaka volamena hita tao anaty fasana ; e) rakitsoratry ny fitsarana. (1 isa avy)",
       items: [],
-      corrige: [[{ text: "a) " }, { text: "an-tsoratra", cle: true }, { text: " ; b) " }, { text: "am-bava", cle: true }, { text: " ; c) " }, { text: "moana", cle: true }, { text: " ; d) " }, { text: "an-tsoratra (arisiva)", cle: true }, { text: "." }]],
+      corrige: [[{ text: "a) " }, { text: "an-tsoratra", cle: true }, { text: " ; b) " }, { text: "am-bava", cle: true }, { text: " ; d) " }, { text: "moana", cle: true }, { text: " ; e) " }, { text: "an-tsoratra (arisiva)", cle: true }, { text: "." }]],
     },
     {
       points: 3,
@@ -434,7 +434,7 @@ const S5 = {
   numero: 5, total: 27, lohahevitra: LH,
   titre: "Ny mampiavaka ireo loharano fanovozan-kevitra",
   tanjona: "mampitaha sy mampiavaka ireo loharano ary milaza ny lanjany amin'ny fandrafetana ny tantara",
-  fanovozanKevitra: DOC + " (FRP T6, fizarana 1-g, 1-j, 1-k)",
+  fanovozanKevitra: DOC + " (FRP T6, LFK 1-g, 1-j, 1-k)",
   fitaovana: "Fafana famintinana, sary, solaitrabe",
   image: "images/img_seansa05.png",
   imageLegende: "Fafana : ny sokajin-doharano telo sy ny ohatra amin'izy ireo",
@@ -545,9 +545,9 @@ const S5 = {
   fanazarantena: [
     {
       points: 4,
-      consigne: "Ampifanandrifio ny sokajy sy ny toetrany : 1. an-tsoratra / 2. am-bava / 3. moana — a. mety miova rehefa mandeha ny fotoana ; b. mirakitra mazava ny daty sy ny anarana ; c. tsy miteny fa dinihin'ny arkeology. (+1 isa raha marina daholo)",
+      consigne: "Ampifanandrifio ny sokajy sy ny toetrany : 1. an-tsoratra / 2. am-bava / 3. moana — a. mety miova rehefa mandeha ny fotoana ; b. mirakitra mazava ny daty sy ny anarana ; d. tsy miteny fa dinihin'ny arkeology. (+1 isa raha marina daholo)",
       items: [],
-      corrige: [[{ text: "1-b", cle: true }, { text: " ; " }, { text: "2-a", cle: true }, { text: " ; " }, { text: "3-c", cle: true }, { text: ". (1 isa avy + 1 isa fandaminana)" }]],
+      corrige: [[{ text: "1-b", cle: true }, { text: " ; " }, { text: "2-a", cle: true }, { text: " ; " }, { text: "3-d", cle: true }, { text: ". (1 isa avy + 1 isa fandaminana)" }]],
     },
     {
       points: 3,

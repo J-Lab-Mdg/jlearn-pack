@@ -6,7 +6,7 @@ const S18 = {
   numero: 18, total: 27, lohahevitra: LH,
   titre: "Ireo endri-pifandraisan'i Madagasikara amin'ny firenena hafa",
   tanjona: "mitanisa sy manazava ireo endri-pifandraisan'i Madagasikara amin'ireo firenena afrikanina sy ny nosy manodidina",
-  fanovozanKevitra: DOC + " (FRP T6, fizarana 3-a)",
+  fanovozanKevitra: DOC + " (FRP T6, LFK 3-a)",
   fitaovana: "Sari-tany Afrika sy ranomasimbe indianina, solaitrabe",
   image: "images/img_seansa18.png",
   imageLegende: "Ny fifandraisan'i Madagasikara amin'i Afrika sy ny nosy manodidina",
@@ -52,9 +52,9 @@ const S18 = {
   },
   fampiharana: [
     {
-      consigne: "Sokajio : a) Madagasikara sy Frantsa manao sonia fifanarahana ; b) Madagasikara ao anatin'ny UA ; c) fanazaran-tena iraisan'ny tafika roa.",
+      consigne: "Sokajio : a) Madagasikara sy Frantsa manao sonia fifanarahana ; b) Madagasikara ao anatin'ny UA ; d) fanazaran-tena iraisan'ny tafika roa.",
       items: [],
-      corrige: [[{ text: "a) " }, { text: "roalafy", cle: true }, { text: " ; b) " }, { text: "marolafy", cle: true }, { text: " ; c) " }, { text: "ara-miaramila (roalafy)", cle: true }, { text: "." }]],
+      corrige: [[{ text: "a) " }, { text: "roalafy", cle: true }, { text: " ; b) " }, { text: "marolafy", cle: true }, { text: " ; d) " }, { text: "ara-miaramila (roalafy)", cle: true }, { text: "." }]],
     },
   ],
   fampiharanaTechnique: "Asa tsiroaroa", fampiharanaSupport: "Solaitra kely",
@@ -114,9 +114,9 @@ const S18 = {
   fanazarantena: [
     {
       points: 4,
-      consigne: "Ampifanandrifio : 1. roalafy / 2. marolafy / 3. diplomatika / 4. ara-miaramila — a. masoivoho ; b. fanazaran-tena iraisan'ny tafika ; c. firenena roa ; d. fikambanana maro firenena. (1 isa avy)",
+      consigne: "Ampifanandrifio : 1. roalafy / 2. marolafy / 3. diplomatika / 4. ara-miaramila — a. masoivoho ; b. fanazaran-tena iraisan'ny tafika ; d. firenena roa ; e. fikambanana maro firenena. (1 isa avy)",
       items: [],
-      corrige: [[{ text: "1-c", cle: true }, { text: " ; " }, { text: "2-d", cle: true }, { text: " ; " }, { text: "3-a", cle: true }, { text: " ; " }, { text: "4-b", cle: true }, { text: "." }]],
+      corrige: [[{ text: "1-d", cle: true }, { text: " ; " }, { text: "2-e", cle: true }, { text: " ; " }, { text: "3-a", cle: true }, { text: " ; " }, { text: "4-b", cle: true }, { text: "." }]],
     },
     {
       points: 3,
@@ -137,7 +137,7 @@ const S19 = {
   numero: 19, total: 27, lohahevitra: LH,
   titre: "Ireo fikambanana nidiran'i Madagasikara : UA, COI, COMESA, SADC",
   tanjona: "mitanisa ireo fikambanana misy an'i Madagasikara sy ny tanjon'izy ireo avy",
-  fanovozanKevitra: DOC + " (FRP T6, fizarana 3-b, 3-d, 3-e)",
+  fanovozanKevitra: DOC + " (FRP T6, LFK 3-b, 3-d, 3-e)",
   fitaovana: "Fafana ireo fikambanana, sari-tany, solaitrabe",
   image: "images/img_seansa19.png",
   imageLegende: "Ireo fikambanana efatra misy an'i Madagasikara",
@@ -183,9 +183,9 @@ const S19 = {
   },
   fampiharana: [
     {
-      consigne: "Ampifanandrifio : 1. UA / 2. COI / 3. COMESA / 4. SADC — a. tsena iombonana 21 firenena ; b. nosy dimy ; c. firenena afrikanina rehetra ; d. fampandrosoana Afrika Atsimo.",
+      consigne: "Ampifanandrifio : 1. UA / 2. COI / 3. COMESA / 4. SADC — a. tsena iombonana 21 firenena ; b. nosy dimy ; d. firenena afrikanina rehetra ; e. fampandrosoana Afrika Atsimo.",
       items: [],
-      corrige: [[{ text: "1-c", cle: true }, { text: " ; " }, { text: "2-b", cle: true }, { text: " ; " }, { text: "3-a", cle: true }, { text: " ; " }, { text: "4-d", cle: true }, { text: "." }]],
+      corrige: [[{ text: "1-d", cle: true }, { text: " ; " }, { text: "2-b", cle: true }, { text: " ; " }, { text: "3-a", cle: true }, { text: " ; " }, { text: "4-e", cle: true }, { text: "." }]],
     },
   ],
   fampiharanaTechnique: "Asa tsiroaroa", fampiharanaSupport: "Solaitra kely",
@@ -266,7 +266,7 @@ const S20 = {
   numero: 20, total: 27, lohahevitra: LH,
   titre: "Ny vokatry ny fidiran'i Madagasikara amin'ireo fikambanana",
   tanjona: "manadihady ny vokatra ara-politika, ara-toekarena ary ara-tsosialy amin'ny fidirana amin'ireo fikambanana",
-  fanovozanKevitra: DOC + " (FRP T6, fizarana 3-f, 3-g, 3-h, 3-i)",
+  fanovozanKevitra: DOC + " (FRP T6, LFK 3-f, 3-g, 3-h, 3-i)",
   fitaovana: "Lahatsoratra, sary, solaitrabe",
   image: "images/img_seansa20.png",
   imageLegende: "Ny varotra sy ny fifaninanana : vokatry ny fanatontoloana",
@@ -312,9 +312,9 @@ const S20 = {
   },
   fampiharana: [
     {
-      consigne: "Sokajio ho tombony ara-politika, ara-toekarena na ara-tsosialy : a) fanelanelanan'ny UA amin'ny krizy ; b) fihenan'ny vidin-javatra ; c) fifampizarana traikefa.",
+      consigne: "Sokajio ho tombony ara-politika, ara-toekarena na ara-tsosialy : a) fanelanelanan'ny UA amin'ny krizy ; b) fihenan'ny vidin-javatra ; d) fifampizarana traikefa.",
       items: [],
-      corrige: [[{ text: "a) " }, { text: "ara-politika", cle: true }, { text: " ; b) " }, { text: "ara-toekarena", cle: true }, { text: " ; c) " }, { text: "ara-tsosialy", cle: true }, { text: "." }]],
+      corrige: [[{ text: "a) " }, { text: "ara-politika", cle: true }, { text: " ; b) " }, { text: "ara-toekarena", cle: true }, { text: " ; d) " }, { text: "ara-tsosialy", cle: true }, { text: "." }]],
     },
   ],
   fampiharanaTechnique: "Asa tsiroaroa", fampiharanaSupport: "Solaitra kely",

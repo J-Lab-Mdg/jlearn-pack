@@ -23,9 +23,9 @@ const S6 = {
     },
     {
       points: 4,
-      consigne: "Amin'ny taon-jato fahafiry : a) 1960 ; b) 1896 ; c) 2025 ; d) 1787 ? (1 isa avy)",
+      consigne: "Amin'ny taon-jato fahafiry : a) 1960 ; b) 1896 ; d) 2025 ; e) 1787 ? (1 isa avy)",
       items: [],
-      corrige: [[T("a) "), C("faha-20"), T(" ; b) "), C("faha-19"), T(" ; c) "), C("faha-21"), T(" ; d) "), C("faha-18"), T(".")]],
+      corrige: [[T("a) "), C("faha-20"), T(" ; b) "), C("faha-19"), T(" ; d) "), C("faha-21"), T(" ; e) "), C("faha-18"), T(".")]],
     },
     {
       points: 6,
@@ -35,9 +35,9 @@ const S6 = {
     },
     {
       points: 6,
-      consigne: "Lahatsoratra kely : « Nahita sary sokitra sy taolana tao anaty lava-bato ny mpikaroka ary nampitahainy tamin'ny lovan-tsofin'ny mponina. » — a) Loharano inona avy no nampiasainy ? (2 isa) b) Nahoana izy no nampitaha azy ireo ? (2 isa) c) Inona no siansa manampy azy ? (2 isa)",
+      consigne: "Lahatsoratra kely : « Nahita sary sokitra sy taolana tao anaty lava-bato ny mpikaroka ary nampitahainy tamin'ny lovan-tsofin'ny mponina. » — a) Loharano inona avy no nampiasainy ? (2 isa) b) Nahoana izy no nampitaha azy ireo ? (2 isa) d) Inona no siansa manampy azy ? (2 isa)",
       items: [],
-      corrige: [[T("a) "), C("Loharano moana (sary sokitra, taolana) sy am-bava (lovan-tsofina)"), T(" ; b) "), C("mba hamaritana ny fahamarinan'ny tantara sy hifamenoan'ny loharano"), T(" ; c) "), C("ny arkeolojia"), T(".")]],
+      corrige: [[T("a) "), C("Loharano moana (sary sokitra, taolana) sy am-bava (lovan-tsofina)"), T(" ; b) "), C("mba hamaritana ny fahamarinan'ny tantara sy hifamenoan'ny loharano"), T(" ; d) "), C("ny arkeolojia"), T(".")]],
     },
   ],
 };
@@ -183,9 +183,9 @@ const S27 = {
     },
     {
       points: 6,
-      consigne: "LOHAHEVITRA II — a) Fenoy : Repoblika I (…-…, filoha …) ; Repoblika II (…-…, filoha …) (3 isa). b) Lazao ny fahefana telo (1,5 isa). c) Tanisao krizy telo sy ny taonany (1,5 isa).",
+      consigne: "LOHAHEVITRA II — a) Fenoy : Repoblika I (…-…, filoha …) ; Repoblika II (…-…, filoha …) (3 isa). b) Lazao ny fahefana telo (1,5 isa). d) Tanisao krizy telo sy ny taonany (1,5 isa).",
       items: [],
-      corrige: [[T("a) "), C("1958-1972, Tsiranana ; 1975-1991, Ratsiraka"), T(" ; b) "), C("mpanatanteraka, mpanao lalàna, mpitsara"), T(" ; c) "), C("1972, 1991, 2002 (na 2009, 2025)"), T(".")]],
+      corrige: [[T("a) "), C("1958-1972, Tsiranana ; 1975-1991, Ratsiraka"), T(" ; b) "), C("mpanatanteraka, mpanao lalàna, mpitsara"), T(" ; d) "), C("1972, 1991, 2002 (na 2009, 2025)"), T(".")]],
     },
     {
       points: 4,

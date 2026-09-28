@@ -1,12 +1,12 @@
 // fiche01-data.js — Seho 1 : Famaritana ny Tantara (Lohahevitra I)
-// Loharano : FRP_6eme_HISTOIRE (FRP T6, fizarana 1-b, 1-d, 1-e) sy PE T6 (nohavaozina)
+// Loharano : FRP_6eme_HISTOIRE (FRP T6, LFK 1-b, 1-d, 1-e) sy PE T6 (nohavaozina)
 
 const S1 = {
   numero: 1, total: 27,
   lohahevitra: "Lohahevitra I — Fampidirana ny fianarana Tantara",
   titre: "Famaritana ny Tantara : ny toetrany sy ny tombontsoa entiny",
   tanjona: "mamaritra ny atao hoe Tantara, milaza ny toetrany ary manazava ny tombontsoa entin'ny fahaizana tantara",
-  fanovozanKevitra: "PE T6 (MEN, nohavaozina) ; FRP Tantara T6 (FRP T6, fizarana 1-b, 1-d, 1-e) ; boky Tantara J-Learn",
+  fanovozanKevitra: "PE T6 (MEN, nohavaozina) ; FRP Tantara T6 (FRP T6, LFK 1-b, 1-d, 1-e) ; boky Tantara J-Learn",
   fitaovana: "Lahatsoratra (tahirin-kevitra), sary, solaitrabe, kahie",
   image: "images/img_seansa01.png",
   imageLegende: "Ny Tantara : mitantara ny lasa mba hanazavana ny ankehitriny sy hanatsarana ny hoavy",

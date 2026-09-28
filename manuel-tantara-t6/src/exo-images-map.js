@@ -7,12 +7,12 @@ module.exports = {
       "Vakio ilay taratasy eo ambony (taratasy noforonina ho an'ity boky ity) ary valio :",
       "a) Karazana loharano inona ity tahirin-kevitra ity ?",
       "b) Oviana ary taiza no nanoratana azy ?",
-      "c) Inona ny zava-nitranga lehibe tantarainy ?",
+      "d) Inona ny zava-nitranga lehibe tantarainy ?",
     ],
     valiny: [
       "a) Loharano an-tsoratra (taratasy manokana) ; loharano mivantana satria vavolombelona nanatri-maso i Rakoto.",
       "b) Tany Antananarivo, ny 27 jona 1960.",
-      "c) Ny fankalazana ny fahaleovantenan'i Madagasikara (26 jona 1960) teny Mahamasina.",
+      "d) Ny fankalazana ny fahaleovantenan'i Madagasikara (26 jona 1960) teny Mahamasina.",
     ],
   },
   7: {

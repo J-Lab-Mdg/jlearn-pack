@@ -98,8 +98,15 @@ enseignant/enseignante selon les manuels. La cover est intégrée en pleine page
   sur toutes les images, métadonnées remplies (titre/auteur/description).
 - **Jamais de compression d'images** (consigne réaffirmée) ; pas de mention
   « illustrations IA » dans la bibliographie.
-- Sigles : ne jamais inventer/deviner — tout sigle du manuel doit être vérifiable dans
-  les documents officiels, sinon le retirer (cas FKI, GVTD, LFK).
+- Sigles : ne jamais inventer/deviner — MAIS toujours vérifier dans les documents
+  officiels (PE, FRP) avant de retirer. Cas vécu 2026-09-28 : un audit externe a déclaré
+  FKI, GVTD et LFK « inventés » ; en réalité les trois figurent dans le FRP officiel
+  (PE RAPE/FRP_6eme_HISTOIRE.pdf : « LFK 1-a », « GVTD » p. 29, « FKI (fiharian-karena
+  iombonana) » p. 33). Ils ont été restaurés. Le document officiel prime sur l'audit.
+- Lettrage des listes/exercices en malgache : suivre l'alphabet malgache officiel,
+  qui n'a pas de c, q, u, w, x → a) b) d) e)… (comme les codes LFK du FRP).
+- Référence de séance sans équivalent FRP (leçon bonus) : écrire
+  « FRP T6, Lohahevitra N — lesona fanampiny J-Learn », jamais un code inventé.
 - Livraison : commit + push, puis **lien raw.githubusercontent.com** vers le .docx.
 
 ## 6. Contexte à connaître
