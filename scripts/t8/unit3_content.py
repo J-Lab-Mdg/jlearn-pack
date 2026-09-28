@@ -34,6 +34,7 @@ LESSONS = [
     {
         'title': "Les roches magmatiques : formation et caractéristiques",
         'objectif': "décrire la formation et les caractéristiques des roches magmatiques",
+        'support_materiel': "Échantillons ou photos de granite et de basalte ; documentation",
         'fignum': 16,
         'fig_title': "La formation des roches magmatiques à partir du magma",
         'fig_b': "Le massif volcanique de l'Ankaratra, sur les Hautes Terres malgaches",
@@ -132,6 +133,7 @@ LESSONS = [
     {
         'title': "Les roches sédimentaires : formation et caractéristiques",
         'objectif': "décrire la formation et les caractéristiques des roches sédimentaires",
+        'support_materiel': "Échantillons ou photos de grès et de calcaire ; documentation",
         'fignum': 17,
         'fig_title': "La formation des roches sédimentaires par accumulation de sédiments",
         'fig_b': "Des couches de grès visibles dans un paysage érodé des Hautes Terres malgaches",
@@ -234,6 +236,7 @@ LESSONS = [
     {
         'title': "Les roches métamorphiques : formation et caractéristiques",
         'objectif': "décrire la formation et les caractéristiques des roches métamorphiques",
+        'support_materiel': "Échantillons ou photos de marbre et de gneiss ; documentation",
         'fignum': 18,
         'fig_title': "La formation des roches métamorphiques sous l'effet de la chaleur et de la pression",
         'fig_b': "Un artisan malgache taille un bloc de marbre destiné à la sculpture",
@@ -331,6 +334,7 @@ LESSONS = [
     {
         'title': "Le cycle des roches",
         'objectif': "expliquer le cycle des roches et les transformations entre les trois familles de roches",
+        'support_materiel': "Schéma du cycle des roches ; documentation",
         'fignum': 19,
         'fig_title': "Le cycle des roches : magmatiques, sédimentaires et métamorphiques",
         'fig_b': "Un paysage érodé des Hautes Terres, où affleurent différentes roches",
@@ -433,6 +437,7 @@ LESSONS = [
     {
         'title': "Les usages des roches dans la construction et l'artisanat",
         'objectif': "identifier les usages des roches dans la construction et l'artisanat à Madagascar",
+        'support_materiel': "Échantillons de roches locales ; photos d'objets artisanaux et de constructions",
         'fignum': 20,
         'fig_title': "Les usages des roches dans la construction et l'artisanat malgache",
         'fig_b': "Des maçons malgaches construisent un mur avec des briques de latérite",
@@ -535,6 +540,7 @@ LESSONS = [
     {
         'title': "Les usages thérapeutiques et énergétiques des roches",
         'objectif': "identifier les usages thérapeutiques et énergétiques des roches et minéraux",
+        'support_materiel': "Documentation sur les sources thermales et les minéraux énergétiques",
         'fignum': 21,
         'fig_title': "Les usages thérapeutiques et énergétiques des roches et minéraux",
         'fig_b': "Des visiteurs se baignent dans une source thermale près d'Antsirabe",
@@ -639,6 +645,7 @@ LESSONS = [
     {
         'title': "Mini-projet : réaliser une collection de roches",
         'objectif': "réaliser et présenter une collection de roches locales en appliquant les connaissances acquises",
+        'support_materiel': "Échantillons de roches locales ; étiquettes ; boîtes de rangement",
         'fignum': 22,
         'fig_title': "Étapes de réalisation d'une collection de roches",
         'fig_b': "Des élèves malgaches collectent et classent des roches lors d'une sortie sur le terrain",

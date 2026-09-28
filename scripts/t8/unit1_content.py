@@ -39,6 +39,7 @@ LESSONS = [
     {
         'title': "Les voies respiratoires et les poumons",
         'objectif': "identifier les organes de l'appareil respiratoire et décrire le trajet de l'air",
+        'support_materiel': "Schéma de l'appareil respiratoire ; petit mammifère ou vidéo de dissection",
         'ras': "Analyser le fonctionnement du système circulatoire et du système respiratoire",
         'fignum': 1,
         'fig_title': "L'appareil respiratoire : voies aériennes et poumons",
@@ -142,6 +143,7 @@ LESSONS = [
     {
         'title': "Les mouvements respiratoires et les échanges gazeux",
         'objectif': "expliquer les mouvements respiratoires et le mécanisme de l'hématose",
+        'support_materiel': "Schéma des alvéoles pulmonaires ; ballon de baudruche pour modéliser la respiration",
         'ras': "Analyser le fonctionnement du système circulatoire et du système respiratoire",
         'fignum': 2,
         'fig_title': "Inspiration, expiration et échanges gazeux au niveau des alvéoles",
@@ -247,6 +249,7 @@ LESSONS = [
     {
         'title': "Le cœur et les vaisseaux sanguins",
         'objectif': "décrire l'anatomie du cœur et les différents types de vaisseaux sanguins",
+        'support_materiel': "Schéma du cœur ; cœur d'animal (porc, volaille) pour dissection si possible",
         'ras': "Analyser le fonctionnement du système circulatoire et du système respiratoire",
         'fignum': 3,
         'fig_title': "Le cœur et les principaux vaisseaux sanguins",
@@ -341,6 +344,7 @@ LESSONS = [
     {
         'title': "La petite et la grande circulation",
         'objectif': "distinguer la petite circulation de la grande circulation sanguine",
+        'support_materiel': "Schéma de la circulation sanguine ; documents ou vidéo",
         'ras': "Analyser le fonctionnement du système circulatoire et du système respiratoire",
         'fignum': 4,
         'fig_title': "La petite circulation (cœur-poumons) et la grande circulation (cœur-organes)",
@@ -442,6 +446,7 @@ LESSONS = [
     {
         'title': "La composition du sang",
         'objectif': "identifier les constituants du sang (plasma et éléments figurés)",
+        'support_materiel': "Photo ou vidéo de frottis sanguin ; documents scientifiques",
         'ras': "Déterminer la compatibilité des groupes sanguins entre eux",
         'fignum': 5,
         'fig_title': "Le sang observé au microscope : plasma et éléments figurés",
@@ -537,6 +542,7 @@ LESSONS = [
     {
         'title': "Les fonctions des éléments figurés du sang",
         'objectif': "expliquer les fonctions de transport, de défense et de coagulation du sang",
+        'support_materiel': "Documents ou vidéo sur les fonctions du sang ; tableau récapitulatif",
         'ras': "Déterminer la compatibilité des groupes sanguins entre eux",
         'fignum': 6,
         'fig_title': "Les fonctions des éléments figurés du sang",
@@ -638,6 +644,7 @@ LESSONS = [
     {
         'title': "Les groupes sanguins",
         'objectif': "identifier les groupes sanguins du système ABO",
+        'support_materiel': "Documents sur les groupes sanguins ; exemples de résultats d'analyse de sang",
         'ras': "Déterminer la compatibilité des groupes sanguins entre eux",
         'fignum': 7,
         'fig_title': "Les quatre groupes sanguins du système ABO",
@@ -739,6 +746,7 @@ LESSONS = [
     {
         'title': "La compatibilité sanguine et la transfusion",
         'objectif': "expliquer les règles de compatibilité sanguine et l'importance du don de sang",
+        'support_materiel': "Tableau de compatibilité des groupes sanguins ; enquête auprès d'un centre de transfusion",
         'ras': "Déterminer la compatibilité des groupes sanguins entre eux",
         'fignum': 8,
         'fig_title': "La compatibilité entre les groupes sanguins lors d'une transfusion",

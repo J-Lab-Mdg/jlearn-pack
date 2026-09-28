@@ -34,6 +34,7 @@ LESSONS = [
     {
         'title': "Les IST : définitions et agents responsables",
         'objectif': "définir une IST et identifier les principaux agents responsables",
+        'support_materiel': "Documents ou vidéo de sensibilisation sur les IST/SIDA",
         'fignum': 9,
         'fig_title': "Les principales infections sexuellement transmissibles et leurs agents",
         'fig_b': "Une infirmière scolaire malgache anime une séance d'éducation à la santé pour des collégiens",
@@ -137,6 +138,7 @@ LESSONS = [
     {
         'title': "Les modes de transmission des IST",
         'objectif': "identifier les différents modes de transmission des IST et du VIH",
+        'support_materiel': "Affiche ou brochure de prévention ; vidéo éducative",
         'fignum': 10,
         'fig_title': "Les modes de transmission des IST et du VIH",
         'fig_b': "Une mère et son bébé lors d'une consultation prénatale dans un centre de santé malgache",
@@ -234,6 +236,7 @@ LESSONS = [
     {
         'title': "Le VIH : évolution de l'infection et facteurs de risque",
         'objectif': "décrire l'évolution de l'infection par le VIH et identifier les facteurs de risque",
+        'support_materiel': "Documents scientifiques ou vidéo sur l'évolution de l'infection à VIH",
         'fignum': 11,
         'fig_title': "Les étapes de l'évolution de l'infection par le VIH",
         'fig_b': "Un groupe de jeunes malgaches discute avec un animateur de santé communautaire",
@@ -339,6 +342,7 @@ LESSONS = [
     {
         'title': "La prévention individuelle des IST et du VIH/SIDA",
         'objectif': "identifier les moyens de prévention individuelle des IST et du VIH",
+        'support_materiel': "Préservatif (démonstration) ; affiche de prévention",
         'fignum': 12,
         'fig_title': "Les moyens de prévention individuelle des IST et du VIH",
         'fig_b': "Des lycéens malgaches assistent à une causerie sur la prévention animée par un agent de santé",
@@ -440,6 +444,7 @@ LESSONS = [
     {
         'title': "Le dépistage, le traitement et la prise en charge",
         'objectif': "expliquer l'importance du dépistage et décrire la prise en charge du VIH",
+        'support_materiel': "Fiche d'enquête auprès d'un centre de santé ou de dépistage",
         'fignum': 13,
         'fig_title': "Le dépistage et la prise en charge du VIH",
         'fig_b': "Un agent de santé remet un résultat de test à un jeune patient dans un centre de dépistage",
@@ -542,6 +547,7 @@ LESSONS = [
     {
         'title': "La sensibilisation collective et la lutte contre la discrimination",
         'objectif': "expliquer l'importance de la sensibilisation collective et lutter contre la discrimination",
+        'support_materiel': "Affiche, brochure ou flyer de sensibilisation",
         'fignum': 14,
         'fig_title': "Une campagne de sensibilisation contre les IST/SIDA et la discrimination",
         'fig_b': "Des élèves malgaches participent à une campagne de sensibilisation dans leur village",
@@ -643,6 +649,7 @@ LESSONS = [
     {
         'title': "Mini-projet : une campagne de sensibilisation contre les IST/SIDA",
         'objectif': "concevoir et présenter une action de sensibilisation contre les IST/SIDA",
+        'support_materiel': "Matériel pour affiches (papier, feutres) ; fiche d'enquête",
         'fignum': 15,
         'fig_title': "Étapes de réalisation d'une campagne de sensibilisation scolaire",
         'fig_b': "Des élèves malgaches préparent des affiches de sensibilisation pour leur école",

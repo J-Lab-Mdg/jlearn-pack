@@ -419,18 +419,21 @@ print("STEP 2 (exercise builders) DONE")
 
 # ============ TABLE FILLERS ============
 
-def fill_header_table(tbl_el, lesson_num, total, theme, titre, objectif, classe_label, thematique_ras, valeurs):
+def fill_header_table(tbl_el, lesson_num, total, theme, titre, objectif, classe_label, thematique_ras, valeurs,
+                       support_materiel=None):
     """1-row x 2-col fiche header table."""
     t = Table(tbl_el, doc1)  # parent used only for style resolution; fine to reuse doc1
     row = t.rows[0]
     left = row.cells[0]
     right = row.cells[1]
-    # left cell paragraphs: Discipline | Thème | Titre | Objectif spécifique
+    # left cell paragraphs: Discipline | Thème | Titre | Objectif spécifique | Documentation | Support et matériel
     left_lines = [
         "Discipline : Sciences de la vie et de la terre",
         f"Thème : {theme}",
         f"Titre : {titre}",
         f"Objectif spécifique : {objectif}",
+        f"Documentation : Programme d'Études — Classe de {classe_label} (SVT), DCRP",
+        f"Support et matériel : {support_materiel}",
     ]
     set_cell_lines(left._tc, left_lines)
     right_lines = [
@@ -501,7 +504,8 @@ def build_lesson_block(lesson, unit, lesson_num, total_seances, classe_label="T8
     out.append(mk('fiche_label'))
     header_tbl = mk('header_table')
     fill_header_table(header_tbl, lesson_num, total_seances, unit['theme'], lesson['title'],
-                       lesson['objectif'], classe_label, lesson.get('ras', unit['ras_short']), unit['valeurs_short'])
+                       lesson['objectif'], classe_label, lesson.get('ras', unit['ras_short']), unit['valeurs_short'],
+                       support_materiel=lesson['support_materiel'])
     out.append(header_tbl)
     out.append(mk('blank'))
     dt = mk('deroulement_table')
