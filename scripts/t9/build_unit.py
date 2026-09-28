@@ -368,6 +368,11 @@ def process_revision_exam(doc, num, manual_seance, tpl):
 
     insert_point = kept[-1] if kept else title_el
 
+    if manual_seance.get('note_enseignant'):
+        note_p = make_note_paragraph(tpl['note_p_template'], manual_seance['note_enseignant'])
+        insert_point.addnext(note_p)
+        insert_point = note_p
+
     new_objectif = copy.deepcopy(tpl['objectif_p'])
     runs = new_objectif.findall('.//' + Wr)
     if len(runs) >= 2:

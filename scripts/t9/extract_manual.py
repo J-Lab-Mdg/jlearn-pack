@@ -42,9 +42,18 @@ def main():
     print(f"Found {len(markers)} seance markers in manual")
     assert len(markers) == 51, len(markers)
 
+    annexe_pat = re.compile(r'^Annexes\s*$')
     seances = {}
     for k, (start_idx, num, title) in enumerate(markers):
         end_idx = markers[k + 1][0] if k + 1 < len(markers) else len(elems)
+        # the manual's own back-matter ("Annexes" section documenting sources/
+        # verifications) follows the very last seance with no seance marker to
+        # bound it -- cut it off explicitly.
+        for j in range(start_idx, end_idx):
+            el = elems[j]
+            if el.tag == Wp and annexe_pat.match(elem_text(el).strip()):
+                end_idx = j
+                break
         seances[num] = parse_seance(d, elems, start_idx, end_idx, title)
         print(f"parsed seance {num}: {title}")
 
@@ -81,19 +90,28 @@ def parse_seance(d, elems, start_idx, end_idx, title):
         elif txt.startswith('Thème'):
             theme_valeurs_line = txt
 
-    while i < end_idx and elems[i].tag == Wtbl:
-        t = Table(elems[i], d)
-        if len(t.columns) == 1 and len(t.rows) == 1:
-            txt = t.rows[0].cells[0].text.strip()
-            if txt.startswith('🧑') or 'enseignant' in txt.lower()[:40]:
-                note_enseignant = txt
-                i += 1
-                continue
-        if len(t.columns) == 6:
-            for r in t.rows[1:]:
-                deroulement_rows.append([c.text.strip() for c in r.cells])
+    while i < end_idx:
+        el = elems[i]
+        if el.tag == Wp:
+            if elem_text(el).strip():
+                break  # hit real content before finding a deroulement table
             i += 1
-            break
+            continue
+        if el.tag == Wtbl:
+            t = Table(el, d)
+            if len(t.columns) == 1 and len(t.rows) == 1:
+                txt = t.rows[0].cells[0].text.strip()
+                if txt.startswith('🧑') or 'enseignant' in txt.lower()[:40]:
+                    note_enseignant = txt
+                    i += 1
+                    continue
+            if len(t.columns) == 6:
+                for r in t.rows[1:]:
+                    deroulement_rows.append([c.text.strip() for c in r.cells])
+                i += 1
+                break
+            i += 1
+            continue
         i += 1
 
     rest_start = i
