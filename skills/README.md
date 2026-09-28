@@ -8,11 +8,14 @@ Dossier de référence à charger au début de toute session de production de ma
 | `PREFERENCES-JLEARN.md` | **Préférences et acquis** de la session PC T6-T9 + Tantara T6 : charte coverbook, terminologie, règles d'illustrations, chaîne technique, audits, contexte. |
 | `QUESTIONS-AVANT-TACHE.md` | **Questionnaire de cadrage** : à dérouler avant chaque nouvelle tâche pour décider quels points appliquer. |
 | `Analyse-Skill-jlearn-v19.md` | Analyse critique du skill (copie de la racine) — contient notamment la contradiction relevée dans `vocabulaire-langues.md`. |
+| `CONTRIBUER.md` | **Invitation à toute discussion qui lit ce dossier** : consigner ce qu'elle a appris — avec confirmation de J-Lab avant application. |
+| `JOURNAL-CONTRIBUTIONS.md` | Historique des contributions des sessions successives. |
 
 ## Ordre de lecture recommandé (nouvelle session)
 1. `QUESTIONS-AVANT-TACHE.md` → poser les questions de cadrage à J-Lab ;
 2. `PREFERENCES-JLEARN.md` → appliquer les points confirmés ;
-3. `jlearn-manuel-scolaire-v18/SKILL.md` → règles détaillées de production.
+3. `jlearn-manuel-scolaire-v18/SKILL.md` → règles détaillées de production ;
+4. en fin de tâche : `CONTRIBUER.md` → **consigner ce que tu as appris** dans `JOURNAL-CONTRIBUTIONS.md` (après confirmation de J-Lab).
 
 Les zips d'origine (`skill v18.zip`, `jlearn-manuel-scolaire-skill-v18v.zip`) restent
 à la racine du dépôt : ce dossier n'écrase ni ne remplace rien.
