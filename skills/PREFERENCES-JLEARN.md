@@ -76,7 +76,7 @@ enseignant/enseignante selon les manuels. La cover est intégrée en pleine page
 - Pas d'optimisation/compression JPEG des images (« NON laisse »).
 - Images de banques web : attention aux **watermarks/copyright** (une carte OnTheWorldMap
   a été rejetée) — préférer les SVG maison.
-- Vigilance **homoglyphes cyrilliques** dans les textes générés (ex. « о » russe dans
+- Vigilance **homoglyphes cyrilliques** dans les textes générés (ex. « o » russe dans
   « Mariho ») — auditer.
 
 ## 5. Chaîne technique (Node.js)
