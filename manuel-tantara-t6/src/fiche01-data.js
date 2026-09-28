@@ -9,7 +9,7 @@ const S1 = {
   fanovozanKevitra: "PE T6 (MEN, nohavaozina) ; FRP Tantara T6 (LFK 1-b, 1-d, 1-e) ; boky Tantara J-Learn",
   fitaovana: "Lahatsoratra (tahirin-kevitra), sary, solaitrabe, kahie",
   image: "images/img_seansa01.png",
-  imageLegende: "Sary 1 — Ny Tantara : mitantara ny lasa mba hanazavana ny ankehitriny sy hanatsarana ny hoavy",
+  imageLegende: "Ny Tantara : mitantara ny lasa mba hanazavana ny ankehitriny sy hanatsarana ny hoavy",
 
   famerenana: {
     qa: [

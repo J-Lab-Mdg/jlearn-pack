@@ -77,14 +77,8 @@ const tovanaToc = [
   { titre: "Tovana 8 — Bibliografia, webografia ary lisitry ny sary", anchor: "tovana8" },
 ];
 
-// ---------- lisitry ny sary ----------
-const allContenu = [S1, ...LH1.seances, ...LH2A.seances, ...LH2B.seances, ...LH3.seances, ...LH4.seances];
-const figures = allContenu
-  .filter(s => s.imageLegende)
-  .map(s => ({ legende: s.imageLegende, anchor: anchorOf(s.numero) }));
-figures.push({ legende: "Sary 23 — Frizy famintinana : ireo Repoblika sy ny tetezamita (1958-2026)", anchor: "tovana1" });
-figures.push({ legende: "Sary 24 — Madagasikara : ireo renivohitry ny faritany enina (sary famintinana)", anchor: "tovana5" });
-figures.push({ legende: "Sary 25 — Ireo nosy mpikambana ao amin'ny COI", anchor: "tovana5" });
+// ---------- lisitry ny sary : fanisana mandeha ho azy (jereo sary-counter.js) ----------
+const SARY = require("./sary-counter");
 
 // ---------- fanangonana ----------
 const children = [];
@@ -129,7 +123,7 @@ children.push(...AX.annexe4());
 children.push(...AX.annexe5(ROOT));
 children.push(...AX.annexe6());
 children.push(...AX.annexe7());
-children.push(...AX.annexe8(figures));
+children.push(...AX.annexe8(SARY.list().map(f => ({ legende: `Sary ${f.num} — ${f.legende}`, anchor: f.anchor }))));
 
 // ---------- taratasy ----------
 const doc = new B.Document({

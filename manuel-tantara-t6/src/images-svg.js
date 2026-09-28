@@ -305,6 +305,163 @@ jobs.push(carteOI("img_annexe_carteOI.png"));
   jobs.push({ file: "img_annexe_carteMG.png", svg: svgDoc(W, H, g) });
 })();
 
+// =============== SARY FAHA-2 ISAKY NY SEHO (ao amin'ny LESONA) ===============
+
+jobs.push(boxes("img2_s01.png", "Ahoana no ahafantarana ny lasa ?", "TANTARA", [
+  { titre: "LOHARANO", color: BLUE, items: ["Taratasy, sary,", "zavatra tranainy,", "tantara am-bava"] },
+  { titre: "FANDINIHANA", color: PINK, items: ["Ny mpahay tantara", "mamakafaka sy", "mampitaha"] },
+  { titre: "POROFO", color: OCRE, items: ["Zava-misy voamarina :", "daty, toerana,", "olona"] },
+  { titre: "TANTARA VOASORATRA", color: GREEN, items: ["Fitantarana marina", "ny lasa"] },
+]));
+
+jobs.push(boxes("img2_s02.png", "Nahoana isika no mianatra Tantara ?", "TANJONA", [
+  { titre: "NIAVIANA", color: BLUE, items: ["Mahalala ny", "fototra sy ny", "kolontsaintsika"] },
+  { titre: "LESONA", color: PINK, items: ["Mandray lesona", "amin'ny hadisoana", "sy ny fahombiazana"] },
+  { titre: "VAKOKA", color: GREEN, items: ["Manaja sy miaro", "ny lova", "navelan'ny ntaolo"] },
+  { titre: "OLOM-PIRENENA", color: OCRE, items: ["Lasa olom-pirenena", "vanona sy", "tompon'andraikitra"] },
+]));
+
+jobs.push(eventFrise("img2_s03.png", "Ohatra : frizin'ny fiainan'i Naly (mpianatra T6)", 2013.3, 2026.9, [
+  { y: 2014, date: "2014", lines: ["Teraka i Naly"], color: PINK },
+  { y: 2017, date: "2017", lines: ["Niditra an-tsekoly"], color: BLUE },
+  { y: 2020, date: "2020", lines: ["Niditra T1"], color: GREEN },
+  { y: 2025, date: "2025", lines: ["Niditra T6"], color: OCRE },
+  { y: 2026.5, date: "2026", lines: ["Fanadinana", "faran'ny taona"], color: PINK },
+]));
+
+jobs.push(boxes("img2_s04.png", "Mandalina loharano aho : inona no fanontaniana ?", "LOHARANO", [
+  { titre: "IZA ?", color: BLUE, items: ["Iza no nanao", "na nanoratra azy ?"] },
+  { titre: "OVIANA ?", color: PINK, items: ["Tamin'ny fotoana", "inona ?"] },
+  { titre: "INONA ?", color: GREEN, items: ["Inona no", "ambarany ?"] },
+  { titre: "AZO ITOKISANA VE ?", color: OCRE, items: ["Mifanaraka amin'ny", "loharano hafa ve ?"] },
+]));
+
+jobs.push(colTable("img2_s05.png", "Loharano mivantana sy loharano tsy mivantana", [
+  { titre: "LOHARANO MIVANTANA|(vavolombelon'ny fotoana)", color: BLUE, items: [
+    "Taratasy tamin'izany fotoana", "Sary sy zavatra tranainy", "Fijoroana vavolombelona", "Gazety tamin'ny andro nitrangany"] },
+  { titre: "LOHARANO TSY MIVANTANA|(fandinihana taty aoriana)", color: PINK, items: [
+    "Boky nosoratan'ny mpahay tantara", "Horonan-tsary fanadihadiana", "Lahatsoratra famintinana", "Rakipahalalana"] },
+], { h: 330 }));
+
+jobs.push(colTable("img2_s07.png", "Ireo Repoblika efatra sy ny filoha voalohany", [
+  { titre: "REPOBLIKA I|1958-1972", color: BLUE, items: ["Filoha :", "Philibert Tsiranana", "Fahaleovantena", "26 jona 1960"] },
+  { titre: "REPOBLIKA II|1975-1991", color: PINK, items: ["Filoha :", "Didier Ratsiraka", "Boky Mena,", "sosialisma"] },
+  { titre: "REPOBLIKA III|1993-2010", color: GREEN, items: ["Filoha voalohany :", "Albert Zafy", "Demokrasia,", "fanalalahana"] },
+  { titre: "REPOBLIKA IV|2010-...", color: OCRE, items: ["Filoha voalohany", "voafidy : Hery", "Rajaonarimampianina", ""] },
+], { h: 330 }));
+
+jobs.push(eventFrise("img2_s08.png", "Ny Repoblika voalohany (1958-1972)", 1957.7, 1972.9, [
+  { y: 1958.8, date: "14 okt. 1958", lines: ["Naorina ny", "Repoblika I"], color: PINK },
+  { y: 1960.5, date: "26 jona 1960", lines: ["Fahaleovantena"], color: GREEN },
+  { y: 1971, date: "1971", lines: ["Fikomiana tany", "atsimo"], color: OCRE },
+  { y: 1972.4, date: "mey 1972", lines: ["Rotaka ; nomena an'i", "Ramanantsoa ny fahefana"], color: BLUE },
+]));
+
+jobs.push(boxes("img2_s09.png", "Ireo mpitondra nandritra ny tetezamita 1972-1975", "TETEZAMITA", [
+  { titre: "RAMANANTSOA", color: BLUE, items: ["1972-1975", "Jeneraly,", "fitondrana miaramila"] },
+  { titre: "RATSIMANDRAVA", color: PINK, items: ["5-11 febroary 1975", "Kolonely,", "novonoina"] },
+  { titre: "ANDRIAMAHAZO", color: OCRE, items: ["febroary-jona 1975", "Jeneraly,", "tetezamita fohy"] },
+  { titre: "RATSIRAKA", color: GREEN, items: ["15 jona 1975", "Kapiteny,", "nitarika ny Rep. II"] },
+]));
+
+jobs.push(boxes("img2_s10.png", "Ireo singa nampiavaka ny Repoblika faharoa", "REPOBLIKA II", [
+  { titre: "BOKY MENA", color: PINK, items: ["Tari-dalan'ny", "sosialisma malagasy"] },
+  { titre: "FANJAKANANA", color: BLUE, items: ["Orinasam-panjakana :", "SOLIMA, JIRAMA,", "SINPA..."] },
+  { titre: "FANAGASIANA", color: GREEN, items: ["Fampiasana ny teny", "malagasy an-tsekoly"] },
+  { titre: "FNDR", color: OCRE, items: ["Antoko politika", "voafehin'ny", "firaisana FNDR"] },
+]));
+
+jobs.push(colTable("img2_s11.png", "Ireo filoha tamin'ny Repoblika fahatelo (1993-2010)", [
+  { titre: "ALBERT ZAFY|1993-1996", color: BLUE, items: ["Voafidy", "27 martsa 1993", "Nesorina (empêchement)", "5 septambra 1996"] },
+  { titre: "RATSIRAHONANA|1996-1997", color: GREEN, items: ["Filoha mpisolo", "toerana", "Nitantana tetezamita", "fohy"] },
+  { titre: "RATSIRAKA|1997-2002", color: PINK, items: ["Niverina teo amin'ny", "fitondrana", "Krizy 2002"] },
+  { titre: "RAVALOMANANA|2002-2009", color: OCRE, items: ["Lany tamin'ny 2002", "Niala", "17 martsa 2009"] },
+], { h: 330 }));
+
+jobs.push(boxes("img2_s12.png", "Ny zava-nitranga tamin'ny oktobra 2025", "OKTOBRA 2025", [
+  { titre: "12 OKTOBRA", color: PINK, items: ["Nandao ny firenena", "i Rajoelina"] },
+  { titre: "14 OKTOBRA", color: BLUE, items: ["Nesorin'ny", "Antenimiera tamin'ny", "toerany izy"] },
+  { titre: "17 OKTOBRA", color: GREEN, items: ["Randrianirina", "notendren'ny HCC :", "Fanorenana ifotony"] },
+  { titre: "TAORIANA", color: OCRE, items: ["Tetezamita 18-24", "volana ; nampiatoin'ny", "UA i Madagasikara"] },
+]));
+
+jobs.push(boxes("img2_s13.png", "Ohatra amin'ireo andrim-panjakana fototra", "ANDRIM-PANJAKANA", [
+  { titre: "ANTENIMIERA", color: BLUE, items: ["Antenimieram-pirenena", "sy ny", "Antenimierandoholona"] },
+  { titre: "GOVERNEMANTA", color: PINK, items: ["Praiminisitra sy", "ireo minisitra"] },
+  { titre: "HCC", color: GREEN, items: ["Fitsarana Avo momba", "ny Lalampanorenana"] },
+  { titre: "FITSARANA", color: OCRE, items: ["Fitsarana Tampony", "sy ny fitsarana", "isan-tokony"] },
+]));
+
+jobs.push(colTable("img2_s14.png", "Ny filamatra (devise) nifandimbiasan'ireo Repoblika", [
+  { titre: "REPOBLIKA I", color: BLUE, items: ["Fahafahana", "Tanindrazana", "Fandrosoana"] },
+  { titre: "REPOBLIKA II", color: PINK, items: ["Tanindrazana", "Tolom-piavotana", "Fahafahana"] },
+  { titre: "REPOBLIKA III", color: GREEN, items: ["Tanindrazana", "Fahafahana", "Fahamarinana"] },
+  { titre: "REPOBLIKA IV", color: OCRE, items: ["Fitiavana", "Tanindrazana", "Fandrosoana"] },
+], { h: 300 }));
+
+jobs.push(boxes("img2_s15.png", "Ohatra : politika ara-tsosialy sy ara-toekarena", "POLITIKA", [
+  { titre: "FANABEAZANA", color: BLUE, items: ["Fanagasiana (Rep. II),", "fampianarana ho an'ny", "rehetra"] },
+  { titre: "TOEKARENA", color: PINK, items: ["Fanjakanana (Rep. II),", "fanalalahana (Rep. III)"] },
+  { titre: "FARITRA", color: GREEN, items: ["Faritany 6 lasa", "faritra maro :", "fitsinjaram-pahefana"] },
+  { titre: "FIFANDRAISANA", color: OCRE, items: ["Fisokafana amin'ny", "firenena maro", "samihafa"] },
+]));
+
+jobs.push(boxes("img2_s16.png", "Ny vokatry ny krizy politika", "KRIZY POLITIKA", [
+  { titre: "TOEKARENA", color: PINK, items: ["Fitotongan'ny", "famokarana sy ny", "fandraharahana"] },
+  { titre: "SOSIALY", color: BLUE, items: ["Fahaverezan'asa,", "fahantrana mitombo"] },
+  { titre: "FILAMINANA", color: OCRE, items: ["Korontana, tsy", "fandriampahalemana"] },
+  { titre: "FAMPANDROSOANA", color: GREEN, items: ["Fihemorana ;", "lasa ny mpampiasa", "vola vahiny"] },
+]));
+
+jobs.push(boxes("img2_s18.png", "Ireo endri-pifandraisana amin'ny firenena hafa", "FIFANDRAISANA", [
+  { titre: "DIPLOMATIKA", color: BLUE, items: ["Masoivoho, kaonsily,", "fifanarahana"] },
+  { titre: "TOEKARENA", color: PINK, items: ["Varotra, famatsiam-", "bola, fampiasam-bola"] },
+  { titre: "KOLONTSAINA", color: GREEN, items: ["Fifanakalozana ara-", "javakanto sy ara-", "panatanjahantena"] },
+  { titre: "FIAROVANA", color: OCRE, items: ["Fiaraha-miasa", "miaramila, fiarovana", "ny sisintany"] },
+]));
+
+jobs.push(eventFrise("img2_s19.png", "Frizy : ny fidiran'i Madagasikara tamin'ireo fikambanana", 1961, 2027.5, [
+  { y: 1963, date: "1963", lines: ["OUA : mpikambana", "mpanorina"], color: PINK },
+  { y: 1984, date: "1984", lines: ["COI", "(nosy 5)"], color: BLUE },
+  { y: 1994, date: "des. 1994", lines: ["COMESA"], color: GREEN },
+  { y: 2002, date: "2002", lines: ["Lasa UA", "ny OUA"], color: OCRE },
+  { y: 2005, date: "2005", lines: ["SADC"], color: PINK },
+  { y: 2025.8, date: "2025", lines: ["Nampiatoin'ny UA", "(krizy politika)"], color: BLUE },
+]));
+
+jobs.push(colTable("img2_s20.png", "Tombony sy fetran'ny fidirana amin'ireo fikambanana", [
+  { titre: "TOMBONY|(izay azo)", color: GREEN, items: [
+    "Tsena midadasika ho an'ny vokatra", "Fanampiana ara-bola sy teknika", "Fiaraha-miasa amin'ny firenena hafa", "Feo re eo amin'ny sehatra", "iraisam-pirenena"] },
+  { titre: "FETRA SY FANAMBY|(izay sarotra)", color: PINK, items: [
+    "Fifaninanana mafy amin'ny vokatra", "avy any ivelany", "Fiankinan-doha ara-bola", "Sazy raha misy krizy politika", "(ohatra : fampiatoana 2025)"] },
+], { h: 360 }));
+
+jobs.push(boxes("img2_s22.png", "Ireo karazam-bakoka telo", "VAKOKA", [
+  { titre: "HITA MASO", color: BLUE, items: ["Rova, tsangambato,", "aloalo, fitaovana", "tranainy"] },
+  { titre: "TSY HITA MASO", color: PINK, items: ["Kabary, angano,", "hira gasy,", "famadihana"] },
+  { titre: "VOAJANAHARY", color: GREEN, items: ["Tsingy, ala, biby sy", "zavamaniry tsy fahita", "afa-tsy eto"] },
+]));
+
+jobs.push(boxes("img2_s23.png", "Ireo fomba hiarovana ny vakoka", "FIAROVANA", [
+  { titre: "TRANOM-BAKOKA", color: BLUE, items: ["Mitahiry sy", "mampiseho ny zavatra", "tranainy"] },
+  { titre: "FIKOJAKOJANA", color: PINK, items: ["Fanavaozana ny", "tsangambato sy", "ny rova"] },
+  { titre: "FAMPIANARANA", color: GREEN, items: ["Mampita ny vakoka", "amin'ny tanora"] },
+  { titre: "LALANA / UNESCO", color: OCRE, items: ["Fiarovana ara-dalàna,", "fisoratana ho", "vakokam-pirenena"] },
+]));
+
+jobs.push(colTable("img2_s24.png", "Ny sokajin'ny harem-pirenena", [
+  { titre: "VOAJANAHARY", color: GREEN, items: ["Ala, Tsingy, baobab", "Gidro (varika), sokatra", "Rano sy riandrano"] },
+  { titre: "ARA-KOLONTSAINA", color: BLUE, items: ["Rova sy tsangambato", "Kanto sy asa tanana", "Fomba amam-panao"] },
+  { titre: "AN-KIBON'NY TANY", color: OCRE, items: ["Volamena, vatosoa", "Grafita, nikela, kobalta", "Solika sy entona"] },
+], { h: 300 }));
+
+jobs.push(boxes("img2_s25.png", "Ny anjara birikiko amin'ny fiarovana", "IZAHO KOA MIARO", [
+  { titre: "TSY MANIMBA", color: PINK, items: ["Tsy mandoro ala,", "tsy manimba", "tsangambato"] },
+  { titre: "MAMBOLY", color: GREEN, items: ["Mamboly hazo,", "mikolokolo ny", "tontolo iainana"] },
+  { titre: "MITSITSY", color: BLUE, items: ["Mitsitsy rano sy", "herinaratra,", "tsy manary fako"] },
+  { titre: "MAMPAHAFANTATRA", color: OCRE, items: ["Mizara amin'ny hafa", "ny lanjan'ny", "harem-pirenena"] },
+]));
+
 // =============== FAMOKARANA ===============
 (async () => {
   for (const j of jobs) {

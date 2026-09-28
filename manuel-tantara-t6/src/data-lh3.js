@@ -9,7 +9,7 @@ const S18 = {
   fanovozanKevitra: DOC + " (LFK 3-a)",
   fitaovana: "Sari-tany Afrika sy ranomasimbe indianina, solaitrabe",
   image: "images/img_seansa18.png",
-  imageLegende: "Sary 16 — Ny fifandraisan'i Madagasikara amin'i Afrika sy ny nosy manodidina",
+  imageLegende: "Ny fifandraisan'i Madagasikara amin'i Afrika sy ny nosy manodidina",
   famerenana: {
     qa: [
       { q: "Kaontinanta inona no akaikin'i Madagasikara indrindra ?", ra: "I Afrika." },
@@ -140,7 +140,7 @@ const S19 = {
   fanovozanKevitra: DOC + " (LFK 3-b, 3-d, 3-e)",
   fitaovana: "Fafana ireo fikambanana, sari-tany, solaitrabe",
   image: "images/img_seansa19.png",
-  imageLegende: "Sary 17 — Ireo fikambanana efatra misy an'i Madagasikara",
+  imageLegende: "Ireo fikambanana efatra misy an'i Madagasikara",
   famerenana: {
     qa: [
       { q: "Inona no atao hoe fifandraisana marolafy ?", ra: "Fifandraisan'ny firenena iray amina firenena maro, matetika anaty fikambanana." },
@@ -269,7 +269,7 @@ const S20 = {
   fanovozanKevitra: DOC + " (LFK 3-f, 3-g, 3-h, 3-i)",
   fitaovana: "Lahatsoratra, sary, solaitrabe",
   image: "images/img_seansa20.png",
-  imageLegende: "Sary 18 — Ny varotra sy ny fifaninanana : vokatry ny fanatontoloana",
+  imageLegende: "Ny varotra sy ny fifaninanana : vokatry ny fanatontoloana",
   famerenana: {
     qa: [
       { q: "Tanisao ireo fikambanana efatra misy an'i Madagasikara.", ra: "UA, COI, COMESA, SADC." },

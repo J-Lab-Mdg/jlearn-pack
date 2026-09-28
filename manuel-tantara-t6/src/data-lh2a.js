@@ -9,7 +9,7 @@ const S7 = {
   fanovozanKevitra: DOC + " (LFK 2-a, 2-b, 2-d, 2-e)",
   fitaovana: "Frizy kronolojika, sainam-pirenena, solaitrabe",
   image: "images/img_seansa07.png",
-  imageLegende: "Sary 6 — Frizy : ireo Repoblika nifandimby teto Madagasikara (1958-2026)",
+  imageLegende: "Frizy : ireo Repoblika nifandimby teto Madagasikara (1958-2026)",
   famerenana: {
     qa: [
       { q: "Inona no atao hoe frizy kronolojika ?", ra: "Tsipika andaharana ny zava-nitranga araka ny filaharany ara-potoana." },
@@ -146,7 +146,7 @@ const S8 = {
   fanovozanKevitra: DOC + " (LFK 2-f, 2-g)",
   fitaovana: "Frizy, sary, lahatsoratra, solaitrabe",
   image: "images/img_seansa08.png",
-  imageLegende: "Sary 7 — Ny fankalazana ny fahaleovantena, 26 jona 1960",
+  imageLegende: "Ny fankalazana ny fahaleovantena, 26 jona 1960",
   famerenana: {
     qa: [
       { q: "Firy ny Repoblika nifandimby teto Madagasikara ?", ra: "Efatra." },
@@ -288,7 +288,7 @@ const S9 = {
   fanovozanKevitra: DOC + " (LFK 2-h, 2-i)",
   fitaovana: "Frizy 1972-1975, lahatsoratra, solaitrabe",
   image: "images/img_seansa09.png",
-  imageLegende: "Sary 8 — Frizy : ny tetezamita 1972-1975",
+  imageLegende: "Frizy : ny tetezamita 1972-1975",
   famerenana: {
     qa: [
       { q: "Inona no nampitsahatra ny Repoblika I ?", ra: "Ny hetsi-bahoaka tamin'ny mey 1972." },
@@ -416,7 +416,7 @@ const S10 = {
   fanovozanKevitra: DOC + " (LFK 2-j, 2-k)",
   fitaovana: "Frizy 1975-1991, lahatsoratra, solaitrabe",
   image: "images/img_seansa10.png",
-  imageLegende: "Sary 9 — Frizy : ny Repoblika faharoa (1975-1991)",
+  imageLegende: "Frizy : ny Repoblika faharoa (1975-1991)",
   famerenana: {
     qa: [
       { q: "Iza no voatendry ho filoham-panjakana ny 15 jona 1975 ?", ra: "Didier Ratsiraka." },
@@ -552,7 +552,7 @@ const S11 = {
   fanovozanKevitra: DOC + " (LFK 2-l, 2-m, 2-n)",
   fitaovana: "Frizy 1991-2010, lahatsoratra, solaitrabe",
   image: "images/img_seansa11.png",
-  imageLegende: "Sary 10 — Frizy : tetezamita 1991-1993 sy Repoblika III (1993-2010)",
+  imageLegende: "Frizy : tetezamita 1991-1993 sy Repoblika III (1993-2010)",
   famerenana: {
     qa: [
       { q: "Inona no fifanarahana namarana ny Repoblika II ?", ra: "Ny fifanarahana Panorama, 31 oktobra 1991." },

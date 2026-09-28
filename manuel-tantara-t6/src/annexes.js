@@ -3,6 +3,8 @@ const B = require("./builders");
 const { AlignmentType, Table, TableRow, WidthType } = require("docx");
 const path = require("path");
 const fs = require("fs");
+const SARY = require("./sary-counter");
+const leg = (t, a) => B.legende(`Sary ${SARY.add(t, a)} — ${t}`);
 
 const sizeOf = (p) => {
   const buf = fs.readFileSync(p);
@@ -30,7 +32,7 @@ function annexe1(rootDir) {
   out.push(B.heading("TOVANA 1 — FRIZY FAMINTINANA NY TANTARAN'I MADAGASIKARA (1958-2026)", { anchorId: "tovana1", size: 26, spacingAfter: 120 }));
   const im = img(rootDir, "images/img_annexe_frise.png", 640);
   if (im) out.push(im);
-  out.push(B.legende("Sary 23 — Frizy famintinana : ireo Repoblika sy ny tetezamita (1958-2026)"));
+  out.push(leg("Frizy famintinana : ireo Repoblika sy ny tetezamita (1958-2026)", "tovana1"));
   out.push(B.p("Ireo daty tsara ho tadidina :", { bold: true, size: 22, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
   [
     "14 oktobra 1958 : fanambarana ny Repoblika Malagasy (Repoblika I).",
@@ -169,11 +171,11 @@ function annexe5(rootDir) {
   out.push(B.heading("TOVANA 5 — SARI-TANY", { anchorId: "tovana5", size: 26, spacingAfter: 120 }));
   const im1 = img(rootDir, "images/img_annexe_carteMG.png", 420);
   if (im1) out.push(im1);
-  out.push(B.legende("Sary 24 — Madagasikara : ireo renivohitry ny faritany enina (sary famintinana)"));
+  out.push(leg("Madagasikara : ireo renivohitry ny faritany enina (sary famintinana)", "tovana5"));
   out.push(B.p("", { size: 10, spacingAfter: 120 }));
   const im2 = img(rootDir, "images/img_annexe_carteOI.png", 620);
   if (im2) out.push(im2);
-  out.push(B.legende("Sary 25 — Ireo nosy mpikambana ao amin'ny COI ao amin'ny ranomasimbe indianina"));
+  out.push(leg("Ireo nosy mpikambana ao amin'ny COI ao amin'ny ranomasimbe indianina", "tovana5"));
   out.push(B.p("Fanamarihana : sary famintinana tsotra ireo, tsy misy maridrefy — ampiasao ny sari-tany ofisialy ao amin'ny kilasy raha mila fitsirihana amin'ny antsipiriany.", { italics: true, size: 18, spacingBefore: 80 }));
   out.push(B.pageBreak());
   return out;

@@ -4,6 +4,8 @@ const B = require("./builders");
 const { AlignmentType, Table, TableRow, WidthType } = require("docx");
 const path = require("path");
 const fs = require("fs");
+const SARY = require("./sary-counter");
+const IMG2 = require("./images2-map");
 const sizeOf = (p) => {
   const buf = fs.readFileSync(p);
   return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
@@ -110,21 +112,23 @@ function buildTakela(S, rootDir) {
   ];
 }
 
+function pushImage(out, rootDir, image, legende, anchor) {
+  const imgPath = path.join(rootDir, image);
+  if (!fs.existsSync(imgPath)) return;
+  const dim = sizeOf(imgPath);
+  const w = 480;
+  const h = Math.round(dim.height * (w / dim.width));
+  out.push(B.imagePara(imgPath, w, h));
+  if (legende) out.push(B.legende(`Sary ${SARY.add(legende, anchor)} — ${legende}`));
+}
+
 function buildLesona(S, rootDir) {
+  const anchor = `seho${String(S.numero).padStart(2, "0")}`;
   const out = [B.pageBreak()];
   out.push(B.p("LESONA", { bold: true, size: 26, align: AlignmentType.CENTER, spacingAfter: 100 }));
   out.push(B.p(S.titre, { bold: true, size: 28, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 120 }));
 
-  if (S.image) {
-    const imgPath = path.join(rootDir, S.image);
-    if (fs.existsSync(imgPath)) {
-      const dim = sizeOf(imgPath);
-      const w = 480;
-      const h = Math.round(dim.height * (w / dim.width));
-      out.push(B.imagePara(imgPath, w, h));
-      if (S.imageLegende) out.push(B.legende(S.imageLegende));
-    }
-  }
+  if (S.image) pushImage(out, rootDir, S.image, S.imageLegende, anchor);
 
   const kws = S.lesona.motsCles || [];
   for (const sec of S.lesona.sections) {
@@ -136,6 +140,13 @@ function buildLesona(S, rootDir) {
       (ss.paras || []).forEach(t => out.push(B.pHighlight(t, kws, { size: 22 })));
       (ss.puces || []).forEach(t => out.push(B.pHighlight("• " + t, kws, { size: 22 })));
     }
+  }
+
+  // Sary faha-2 (famintinana an-tsary ny lesona)
+  const im2 = IMG2[S.numero];
+  if (im2) {
+    out.push(B.p("", { size: 10, spacingAfter: 40 }));
+    pushImage(out, rootDir, im2.image, im2.legende, anchor);
   }
 
   // Encadré « Fantatrao ve ? »

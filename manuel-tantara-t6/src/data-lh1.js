@@ -9,7 +9,7 @@ const S2 = {
   fanovozanKevitra: DOC + " (LFK 1-a, 1-d)",
   fitaovana: "Sary, lahatsoratra, solaitrabe, kahie",
   image: "images/img_seansa02.png",
-  imageLegende: "Sary 2 — Ny lasa manazava ny ankehitriny ary manomana ny hoavy",
+  imageLegende: "Ny lasa manazava ny ankehitriny ary manomana ny hoavy",
   famerenana: {
     qa: [
       { q: "Inona no atao hoe Tantara ?", ra: "Fandinihana ny zava-nitranga marina tamin'ny lasan'ny olombelona." },
@@ -141,7 +141,7 @@ const S3 = {
   fanovozanKevitra: DOC + " (LFK 1-c)",
   fitaovana: "Frizy kronolojika, kalandrie, solaitrabe, tsipika",
   image: "images/img_seansa03.png",
-  imageLegende: "Sary 3 — Ny fandrefesana ny fotoana : ambaratongan'ny fotoana sy ny frizy kronolojika",
+  imageLegende: "Ny fandrefesana ny fotoana : ambaratongan'ny fotoana sy ny frizy kronolojika",
   famerenana: {
     qa: [
       { q: "Inona no atao hoe Tantara ?", ra: "Siansa mandalina ny zava-nitranga marina tamin'ny lasa." },
@@ -290,7 +290,7 @@ const S4 = {
   fanovozanKevitra: DOC + " (LFK 1-f, 1-h, 1-i)",
   fitaovana: "Sary, zavatra tranainy (vola taloha, gazety...), solaitrabe",
   image: "images/img_seansa04.png",
-  imageLegende: "Sary 4 — Ny sokajin-doharano telo : an-tsoratra, am-bava ary moana",
+  imageLegende: "Ny sokajin-doharano telo : an-tsoratra, am-bava ary moana",
   famerenana: {
     qa: [
       { q: "Inona no porofo fa nisy marina ny zava-nitranga iray ?", ra: "Ny porofo ara-tantara : soratra, fitaovana, vavolombelona." },
@@ -434,7 +434,7 @@ const S5 = {
   fanovozanKevitra: DOC + " (LFK 1-g, 1-j, 1-k)",
   fitaovana: "Fafana famintinana, sary, solaitrabe",
   image: "images/img_seansa05.png",
-  imageLegende: "Sary 5 — Fafana : ny sokajin-doharano telo sy ny ohatra amin'izy ireo",
+  imageLegende: "Fafana : ny sokajin-doharano telo sy ny ohatra amin'izy ireo",
   famerenana: {
     qa: [
       { q: "Tanisao ireo sokajin-doharano telo.", ra: "An-tsoratra, am-bava, moana." },

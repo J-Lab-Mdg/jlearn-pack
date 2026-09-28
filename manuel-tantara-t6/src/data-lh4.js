@@ -9,7 +9,7 @@ const S22 = {
   fanovozanKevitra: DOC + " (LFK 4-a, 4-b)",
   fitaovana: "Sary vakoka, solaitrabe",
   image: "images/img_seansa22.png",
-  imageLegende: "Sary 19 — Ny vakoka malagasy : Ambohimanga, aloalo, kabary, hira gasy, sikotra Zafimaniry",
+  imageLegende: "Ny vakoka malagasy : Ambohimanga, aloalo, kabary, hira gasy, sikotra Zafimaniry",
   famerenana: {
     qa: [
       { q: "Inona no vokatry ny fidirana amin'ireo fikambanana ?", ra: "Tombony ara-politika, ara-toekarena ary ara-tsosialy." },
@@ -149,7 +149,7 @@ const S23 = {
   fanovozanKevitra: DOC + " (LFK 4-d, 4-e, 4-f)",
   fitaovana: "Lahatsoratra, sary tranom-bakoka, solaitrabe",
   image: "images/img_seansa23.png",
-  imageLegende: "Sary 20 — Ny fikolokoloana ny vakoka : tranom-bakoka, fizahan-tany, fanarenana",
+  imageLegende: "Ny fikolokoloana ny vakoka : tranom-bakoka, fizahan-tany, fanarenana",
   famerenana: {
     qa: [
       { q: "Inona no atao hoe vakoka ?", ra: "Lova avy amin'ny razana tehirizina ho an'ny taranaka." },
@@ -284,7 +284,7 @@ const S24 = {
   fanovozanKevitra: DOC + " (LFK 4-g, 4-h)",
   fitaovana: "Sary harena voajanahary, solaitrabe",
   image: "images/img_seansa24.png",
-  imageLegende: "Sary 21 — Ny harem-pirenena voajanahary : Tsingy, baobab, gidro, lavanila, vatosoa",
+  imageLegende: "Ny harem-pirenena voajanahary : Tsingy, baobab, gidro, lavanila, vatosoa",
   famerenana: {
     qa: [
       { q: "Inona no atao hoe vakoka ?", ra: "Lova avy amin'ny razana tehirizina ho an'ny taranaka." },
@@ -424,7 +424,7 @@ const S25 = {
   fanovozanKevitra: DOC + " (LFK 4-i)",
   fitaovana: "Lahatsoratra, sary, solaitrabe",
   image: "images/img_seansa25.png",
-  imageLegende: "Sary 22 — Ny fiarovana ny harem-pirenena : fambolen-kazo, fanaraha-maso, ady amin'ny doro tanety",
+  imageLegende: "Ny fiarovana ny harem-pirenena : fambolen-kazo, fanaraha-maso, ady amin'ny doro tanety",
   famerenana: {
     qa: [
       { q: "Inona no atao hoe harem-pirenena ?", ra: "Ny harena voajanahary na tsia mampiavaka ny firenena, tehirizina holovain'ny taranaka." },

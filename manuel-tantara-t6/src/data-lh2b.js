@@ -9,7 +9,7 @@ const S12 = {
   fanovozanKevitra: DOC + " (LFK 2-o, 2-p, 2-r, 2-s)",
   fitaovana: "Frizy 2009-2026, lahatsoratra, solaitrabe",
   image: "images/img_seansa12.png",
-  imageLegende: "Sary 11 — Frizy : tetezamita 2009-2014, Repoblika IV ary ny taona 2025",
+  imageLegende: "Frizy : tetezamita 2009-2014, Repoblika IV ary ny taona 2025",
   famerenana: {
     qa: [
       { q: "Iza no filoha tamin'ny 2002-2009 ?", ra: "Marc Ravalomanana." },
@@ -148,7 +148,7 @@ const S13 = {
   fanovozanKevitra: DOC + " (LFK 2-t)",
   fitaovana: "Diagrama andrim-panjakana, solaitrabe",
   image: "images/img_seansa13.png",
-  imageLegende: "Sary 12 — Diagrama : ireo fahefana telo iorenan'ny Repoblika",
+  imageLegende: "Diagrama : ireo fahefana telo iorenan'ny Repoblika",
   famerenana: {
     qa: [
       { q: "Amin'ny Repoblika fahafiry isika izao ?", ra: "Repoblika IV (misy tetezamita nanomboka ny 2025)." },
@@ -286,7 +286,7 @@ const S14 = {
   fanovozanKevitra: DOC + " (LFK 2-v)",
   fitaovana: "Diagrama andry, solaitrabe",
   image: "images/img_seansa14.png",
-  imageLegende: "Sary 13 — Ireo andry iorenan'ny Repoblika mandala ny demokrasia",
+  imageLegende: "Ireo andry iorenan'ny Repoblika mandala ny demokrasia",
   famerenana: {
     qa: [
       { q: "Tanisao ireo fahefana telo.", ra: "Mpanatanteraka, mpanao lalàna, mpitsara." },
@@ -418,7 +418,7 @@ const S15 = {
   fanovozanKevitra: DOC + " (LFK 2-a, 2-v)",
   fitaovana: "Fafana mampitaha, solaitrabe",
   image: "images/img_seansa15.png",
-  imageLegende: "Sary 14 — Fafana : ny politikam-pitondrana nifandimby",
+  imageLegende: "Fafana : ny politikam-pitondrana nifandimby",
   famerenana: {
     qa: [
       { q: "Tanisao ireo Repoblika efatra sy ny vanim-potoanany.", ra: "I : 1958-1972 ; II : 1975-1991 ; III : 1993-2010 ; IV : 2010-..." },
@@ -561,7 +561,7 @@ const S16 = {
   fanovozanKevitra: DOC + " (LFK 2-y, 2-z)",
   fitaovana: "Frizy ny krizy, lahatsoratra, solaitrabe",
   image: "images/img_seansa16.png",
-  imageLegende: "Sary 15 — Frizy : ireo krizy politika lehibe (1972, 1991, 2002, 2009, 2025)",
+  imageLegende: "Frizy : ireo krizy politika lehibe (1972, 1991, 2002, 2009, 2025)",
   famerenana: {
     qa: [
       { q: "Tanisao ireo tetezamita efa nisy teto Madagasikara.", ra: "1972-1975 ; 1991-1993 ; 2009-2014 ; 2025-..." },
