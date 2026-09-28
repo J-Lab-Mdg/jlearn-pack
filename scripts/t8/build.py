@@ -426,12 +426,12 @@ def fill_header_table(tbl_el, lesson_num, total, theme, titre, objectif, classe_
     row = t.rows[0]
     left = row.cells[0]
     right = row.cells[1]
-    # left cell paragraphs: Discipline | Thème | Titre | Objectif spécifique | Documentation | Support et matériel
+    # left cell paragraphs: Discipline | Thème | Titre | Résultat d'Apprentissage spécifique (RAS) | Documentation | Support et matériel
     left_lines = [
         "Discipline : Sciences de la vie et de la terre",
         f"Thème : {theme}",
         f"Titre : {titre}",
-        f"Objectif spécifique : {objectif}",
+        f"Résultat d'Apprentissage spécifique (RAS) : {thematique_ras}",
         f"Documentation : Programme d'Études — Classe de {classe_label} (SVT), DCRP",
         f"Support et matériel : {support_materiel}",
     ]
@@ -441,7 +441,6 @@ def fill_header_table(tbl_el, lesson_num, total, theme, titre, objectif, classe_
         f"Classe : {classe_label}",
         f"Séance n° : {lesson_num} / {total}",
         "Durée : ____________",
-        f"Thématique / RAS : {thematique_ras}",
         f"Valeurs à véhiculer : {valeurs}",
     ]
     set_cell_lines(right._tc, right_lines)
@@ -451,6 +450,9 @@ def fill_deroulement_table(tbl_el, d):
     """11-row x 6-col déroulement table. d is a dict with lesson fields."""
     t = Table(tbl_el, doc1)
     rows = t.rows
+    # Row 0 (index 0): header row -- align column labels with the PE's exact vocabulary
+    set_cell_lines(rows[0].cells[3]._tc, ["Stratégies ou démarches"])
+    set_cell_lines(rows[0].cells[4]._tc, ["Supports ou matériels"])
     # Row 2 (index 2): I. RÉVISION -> col1 (Enseignant Qs), col2 (R.A.)
     set_cell_lines(rows[2].cells[1]._tc, d['revision_q'])
     set_cell_lines(rows[2].cells[2]._tc, d['revision_ra'])
