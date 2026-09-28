@@ -6,14 +6,12 @@ Auteur : contenu rédigé pour J-Learn (T8).
 
 UNIT2 = {
     'num': 2,
-    'theme': "Reproduction humaine : les infections sexuellement transmissibles (IST) et le VIH/SIDA",
+    'theme': "Reproduction humaine",
     'toc_title': "UNITÉ II — Reproduction humaine",
-    'ras_short': "Décrire les IST, leur transmission, leur prévention et lutter contre la discrimination",
-    'ras_full': ("Décrire les infections sexuellement transmissibles (IST) et le VIH/SIDA, expliquer leurs modes "
-                 "de transmission et les facteurs de risque, connaître les moyens de prévention, de dépistage et "
-                 "de prise en charge, et promouvoir la solidarité envers les personnes vivant avec le VIH."),
-    'valeurs_short': "Responsabilité, respect, solidarité, refus de la discrimination",
-    'valeurs_full': "Responsabilité face à sa santé, respect d'autrui, solidarité, refus de toute discrimination",
+    'ras_short': "Participer à la lutte contre les IST/SIDA",
+    'ras_full': "Participer à la lutte contre les IST/SIDA",
+    'valeurs_short': "Respect de soi, responsabilité",
+    'valeurs_full': "Respect de soi, responsabilité",
     'exam_title': "Sujet d'examen 4e — Unité II : Reproduction humaine",
     'glossaire': [
         ("IST", "Infection sexuellement transmissible : infection qui se transmet principalement lors de rapports sexuels non protégés."),

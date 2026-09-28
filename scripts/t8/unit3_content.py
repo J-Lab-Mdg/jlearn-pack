@@ -6,14 +6,12 @@ Auteur : contenu rédigé pour J-Learn (T8).
 
 UNIT3 = {
     'num': 3,
-    'theme': "Géologie : les roches magmatiques, sédimentaires et métamorphiques, le cycle des roches et leurs usages",
+    'theme': "Géologie",
     'toc_title': "UNITÉ III — Géologie",
-    'ras_short': "Identifier les types de roches, expliquer le cycle des roches et leurs usages",
-    'ras_full': ("Identifier les roches magmatiques, sédimentaires et métamorphiques à partir de leurs "
-                 "caractéristiques, expliquer le cycle des roches, et décrire les usages des roches dans la "
-                 "construction, l'artisanat, la thérapeutique et l'énergie à Madagascar."),
-    'valeurs_short': "Curiosité scientifique, respect de l'environnement, valorisation du patrimoine",
-    'valeurs_full': "Curiosité scientifique, respect de l'environnement, valorisation des ressources et du patrimoine géologique de Madagascar",
+    'ras_short': "Corréler les propriétés, les modes de formation des roches à leurs utilisations",
+    'ras_full': "Corréler les propriétés, les modes de formation des roches à leurs utilisations",
+    'valeurs_short': "Responsabilité, culture de l'excellence",
+    'valeurs_full': "Responsabilité, culture de l'excellence",
     'exam_title': "Sujet d'examen 4e — Unité III : Géologie",
     'glossaire': [
         ("Roche", "Matériau naturel et solide qui constitue l'écorce terrestre, formé d'un ou plusieurs minéraux."),

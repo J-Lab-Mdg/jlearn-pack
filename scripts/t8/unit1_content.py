@@ -6,14 +6,13 @@ Auteur : contenu rédigé pour J-Learn (T8).
 
 UNIT1 = {
     'num': 1,
-    'theme': "Santé et bien-être : l'appareil respiratoire, l'appareil circulatoire et le sang",
+    'theme': "Santé et bien-être",
     'toc_title': "UNITÉ I — Santé et bien-être",
-    'ras_short': "Analyser le fonctionnement des appareils respiratoire et circulatoire, et la composition du sang",
-    'ras_full': ("Analyser le fonctionnement de l'appareil respiratoire et de l'appareil circulatoire, décrire la "
-                 "composition et les fonctions du sang, et expliquer les groupes sanguins et la transfusion, en vue "
-                 "d'adopter des comportements favorables à la santé."),
-    'valeurs_short': "Responsabilité, solidarité, respect de la vie",
-    'valeurs_full': "Responsabilité envers sa santé, solidarité (don de sang), respect de la vie",
+    'ras_short': "Analyser le fonctionnement du système circulatoire et du système respiratoire",
+    'ras_full': ("Analyser le fonctionnement du système circulatoire et du système respiratoire \u00b7 "
+                 "Déterminer la compatibilité des groupes sanguins entre eux"),
+    'valeurs_short': "Estime de soi, créativité",
+    'valeurs_full': "Estime de soi, créativité",
     'exam_title': "Sujet d'examen 4e — Unité I : Santé et bien-être",
     'glossaire': [
         ("Alvéole pulmonaire", "Petit sac d'air situé au bout des bronchioles, entouré de capillaires sanguins, où se fait l'hématose."),
@@ -40,6 +39,7 @@ LESSONS = [
     {
         'title': "Les voies respiratoires et les poumons",
         'objectif': "identifier les organes de l'appareil respiratoire et décrire le trajet de l'air",
+        'ras': "Analyser le fonctionnement du système circulatoire et du système respiratoire",
         'fignum': 1,
         'fig_title': "L'appareil respiratoire : voies aériennes et poumons",
         'fig_b': "Des élèves malgaches respirent l'air frais dans la cour de l'école, au petit matin",
@@ -142,6 +142,7 @@ LESSONS = [
     {
         'title': "Les mouvements respiratoires et les échanges gazeux",
         'objectif': "expliquer les mouvements respiratoires et le mécanisme de l'hématose",
+        'ras': "Analyser le fonctionnement du système circulatoire et du système respiratoire",
         'fignum': 2,
         'fig_title': "Inspiration, expiration et échanges gazeux au niveau des alvéoles",
         'fig_b': "Des élèves malgaches font des exercices de respiration profonde pendant l'éducation physique",
@@ -246,6 +247,7 @@ LESSONS = [
     {
         'title': "Le cœur et les vaisseaux sanguins",
         'objectif': "décrire l'anatomie du cœur et les différents types de vaisseaux sanguins",
+        'ras': "Analyser le fonctionnement du système circulatoire et du système respiratoire",
         'fignum': 3,
         'fig_title': "Le cœur et les principaux vaisseaux sanguins",
         'fig_b': "Un agent de santé malgache prend le pouls d'un patient au centre de santé du village",
@@ -339,6 +341,7 @@ LESSONS = [
     {
         'title': "La petite et la grande circulation",
         'objectif': "distinguer la petite circulation de la grande circulation sanguine",
+        'ras': "Analyser le fonctionnement du système circulatoire et du système respiratoire",
         'fignum': 4,
         'fig_title': "La petite circulation (cœur-poumons) et la grande circulation (cœur-organes)",
         'fig_b': "Une élève malgache court pendant la récréation ; son cœur bat plus vite",
@@ -439,6 +442,7 @@ LESSONS = [
     {
         'title': "La composition du sang",
         'objectif': "identifier les constituants du sang (plasma et éléments figurés)",
+        'ras': "Déterminer la compatibilité des groupes sanguins entre eux",
         'fignum': 5,
         'fig_title': "Le sang observé au microscope : plasma et éléments figurés",
         'fig_b': "Un technicien de laboratoire prélève un échantillon de sang dans un centre de santé malgache",
@@ -533,6 +537,7 @@ LESSONS = [
     {
         'title': "Les fonctions des éléments figurés du sang",
         'objectif': "expliquer les fonctions de transport, de défense et de coagulation du sang",
+        'ras': "Déterminer la compatibilité des groupes sanguins entre eux",
         'fignum': 6,
         'fig_title': "Les fonctions des éléments figurés du sang",
         'fig_b': "Une infirmière malgache soigne une plaie chez un enfant au dispensaire",
@@ -633,6 +638,7 @@ LESSONS = [
     {
         'title': "Les groupes sanguins",
         'objectif': "identifier les groupes sanguins du système ABO",
+        'ras': "Déterminer la compatibilité des groupes sanguins entre eux",
         'fignum': 7,
         'fig_title': "Les quatre groupes sanguins du système ABO",
         'fig_b': "Une équipe médicale mobile organise une collecte de sang dans un village malgache",
@@ -733,6 +739,7 @@ LESSONS = [
     {
         'title': "La compatibilité sanguine et la transfusion",
         'objectif': "expliquer les règles de compatibilité sanguine et l'importance du don de sang",
+        'ras': "Déterminer la compatibilité des groupes sanguins entre eux",
         'fignum': 8,
         'fig_title': "La compatibilité entre les groupes sanguins lors d'une transfusion",
         'fig_b': "Des jeunes malgaches font la queue pour donner leur sang lors d'une campagne de don",

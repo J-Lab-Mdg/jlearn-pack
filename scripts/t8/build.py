@@ -501,7 +501,7 @@ def build_lesson_block(lesson, unit, lesson_num, total_seances, classe_label="T8
     out.append(mk('fiche_label'))
     header_tbl = mk('header_table')
     fill_header_table(header_tbl, lesson_num, total_seances, unit['theme'], lesson['title'],
-                       lesson['objectif'], classe_label, unit['ras_short'], unit['valeurs_short'])
+                       lesson['objectif'], classe_label, lesson.get('ras', unit['ras_short']), unit['valeurs_short'])
     out.append(header_tbl)
     out.append(mk('blank'))
     dt = mk('deroulement_table')
