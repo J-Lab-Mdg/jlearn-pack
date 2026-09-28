@@ -6,6 +6,8 @@ const path = require("path");
 const fs = require("fs");
 const SARY = require("./sary-counter");
 const IMG2 = require("./images2-map");
+const IMG3 = require("./images3-map");
+const EXO = require("./exo-images-map");
 const sizeOf = (p) => {
   const buf = fs.readFileSync(p);
   return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
@@ -162,6 +164,13 @@ function buildLesona(S, rootDir) {
       B.p(t, { size: 20, spacingAfter: 40, italics: t.startsWith("«") }))));
   }
 
+  // Sary faha-3 (ho an'ny lesona feno votoaty)
+  const im3 = IMG3[S.numero];
+  if (im3) {
+    out.push(B.p("", { size: 10, spacingAfter: 40 }));
+    pushImage(out, rootDir, im3.image, im3.legende, anchor);
+  }
+
   // Rakibolana kely (petit lexique MG ⇄ terme officiel)
   if (S.rakibolana && S.rakibolana.length) {
     out.push(B.p("", { size: 10, spacingAfter: 40 }));
@@ -183,15 +192,32 @@ function buildLesona(S, rootDir) {
   return out;
 }
 
-function buildFanazarantena(S) {
+function buildFanazarantena(S, rootDir) {
+  const anchor = `seho${String(S.numero).padStart(2, "0")}`;
   const out = [B.pageBreak()];
   const total = S.fanazarantena.reduce((a, e) => a + (e.points || 0), 0);
   out.push(B.p("FANAZARAN-TENA", { bold: true, size: 26, align: AlignmentType.CENTER, spacingAfter: 60 }));
   out.push(B.p(`Totaly : ${total} isa`, { italics: true, size: 20, align: AlignmentType.CENTER, spacingAfter: 120 }));
   out.push(...B.exosToParas(S.fanazarantena, { size: 20, numerote: true }));
+
+  // Fanazaran-tena an-tsary (fanampiny, tsy isaina isa)
+  const exo = EXO[S.numero];
+  if (exo) {
+    out.push(B.p("", { size: 10, spacingAfter: 60 }));
+    out.push(B.p("FANAMPINY — FANAZARAN-TENA AN-TSARY (tsy isaina isa)", {
+      bold: true, size: 22, color: B.GREEN, align: AlignmentType.CENTER, spacingAfter: 80,
+    }));
+    pushImage(out, rootDir, exo.image, exo.legende, anchor);
+    exo.consigne.forEach(t => out.push(B.p(t, { size: 20, spacingAfter: 40 })));
+  }
+
   out.push(B.p("", { size: 10, spacingAfter: 60 }));
   out.push(B.p("VALINY", { bold: true, size: 26, color: B.PINK, align: AlignmentType.CENTER, spacingAfter: 120 }));
   out.push(...B.corrigeToParas(S.fanazarantena, { size: 20, numerote: true }));
+  if (exo) {
+    out.push(B.p("Valin'ny fanampiny an-tsary :", { bold: true, size: 20, color: B.PINK, spacingBefore: 80, spacingAfter: 40 }));
+    exo.valiny.forEach(t => out.push(B.p(t, { size: 20, color: B.PINK, spacingAfter: 40 })));
+  }
   return out;
 }
 
@@ -199,7 +225,7 @@ function buildFiche(S, rootDir) {
   return [
     ...buildTakela(S, rootDir),
     ...buildLesona(S, rootDir),
-    ...buildFanazarantena(S),
+    ...buildFanazarantena(S, rootDir),
   ];
 }
 

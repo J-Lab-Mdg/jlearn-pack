@@ -462,6 +462,123 @@ jobs.push(boxes("img2_s25.png", "Ny anjara birikiko amin'ny fiarovana", "IZAHO K
   { titre: "MAMPAHAFANTATRA", color: OCRE, items: ["Mizara amin'ny hafa", "ny lanjan'ny", "harem-pirenena"] },
 ]));
 
+// =============== SARY FAHA-3 (lesona feno votoaty) ===============
+
+jobs.push(boxes("img3_s08.png", "Ireo sehatra nanamarika ny Repoblika voalohany", "REPOBLIKA I", [
+  { titre: "POLITIKA", color: BLUE, items: ["PSD no antoko", "nanjaka ; Tsiranana", "filoha"] },
+  { titre: "TOEKARENA", color: PINK, items: ["Fambolena sy", "fanondranana akora", "fototra"] },
+  { titre: "FIFANDRAISANA", color: OCRE, items: ["Fifanarahana", "fiaraha-miasa", "tamin'i Frantsa"] },
+  { titre: "FANABEAZANA", color: GREEN, items: ["Sekoly maro", "nosokafana ;", "teny frantsay"] },
+]));
+
+jobs.push(colTable("img3_s10.png", "Ny vokatry ny politika sosialista (Repoblika II)", [
+  { titre: "NOKENDRENA|(tanjona)", color: GREEN, items: [
+    "Fizakan-tena ara-toekarena", "Fitsinjaram-pahefana", "(fokonolona)", "Fanagasiana ny fampianarana"] },
+  { titre: "ZAVA-NISY|(olana nipoitra)", color: PINK, items: [
+    "Tsy fahampian'entana sy", "filaharana lava", "Fitotongan'ny famokarana", "Trosa be tany ivelany"] },
+], { h: 330 }));
+
+jobs.push(boxes("img3_s12.png", "Ny rafitry ny Fanorenana ifotony (2025)", "FANORENANA IFOTONY", [
+  { titre: "FILOHA", color: GREEN, items: ["Kolonely Michael", "Randrianirina", "(17 oktobra 2025)"] },
+  { titre: "PRAIMINISITRA", color: BLUE, items: ["Herintsalama", "Rajaonarivelo", "(20 oktobra 2025)"] },
+  { titre: "GOVERNEMANTA", color: PINK, items: ["Minisitra 29,", "sivily ny", "ankamaroany"] },
+  { titre: "VINA", color: OCRE, items: ["Tetezamita 18-24", "volana ; referandomu", "ho avy"] },
+]));
+
+jobs.push(boxes("img3_s16.png", "Ahoana no hisorohana ny krizy politika ?", "FISOROHANA", [
+  { titre: "FIFIDIANANA", color: GREEN, items: ["Madio, mangarahara,", "eken'ny rehetra"] },
+  { titre: "LALAMPANORENANA", color: BLUE, items: ["Hajain'ny mpitondra", "sy ny vahoaka"] },
+  { titre: "FIFAMPIRESAHANA", color: OCRE, items: ["Eo amin'ireo", "mpisehatra politika"] },
+  { titre: "FITSARANA", color: PINK, items: ["Mahaleo tena,", "tsy miandany"] },
+]));
+
+jobs.push(boxes("img3_s22.png", "Ireo vakoka malagasy eken'ny UNESCO", "UNESCO", [
+  { titre: "AMBOHIMANGA", color: GREEN, items: ["2001", "Vakoka hita maso", "(rova masina)"] },
+  { titre: "TSINGY BEMARAHA", color: BLUE, items: ["1990", "Vakoka voajanahary"] },
+  { titre: "ALA ATSINANANA", color: OCRE, items: ["2007", "Voajanahary ;", "tandindomin-doza 2010"] },
+  { titre: "KABARY / ZAFIMANIRY", color: PINK, items: ["2021 / 2003", "Vakoka tsy hita maso"] },
+]));
+
+jobs.push(boxes("img3_s24.png", "Ireo loza mananontanona ny harem-pirenena", "LOZA", [
+  { titre: "DORO-TANETY", color: PINK, items: ["Mandevona ny ala", "sy ny biby"] },
+  { titre: "FANONDRANANA", color: OCRE, items: ["Antsokosoko :", "vatosoa, hazo", "sarobidy, sokatra"] },
+  { titre: "HALATRA VAKOKA", color: BLUE, items: ["Zavatra tranainy", "lasa any ivelany"] },
+  { titre: "TOETRANDRO", color: GREEN, items: ["Fiovan'ny toetrandro :", "haintany,", "rivo-doza"] },
+]));
+
+// =============== SARY FANAZARAN-TENA (hofenoin'ny mpianatra) ===============
+
+jobs.push(eventFrise("img_exo_frise.png", "Frizy hofenoina : ireo Repoblika nifandimby", 1956.5, 2012.5, [
+  { y: 1958, date: "14 okt. 1958", lines: ["............................"], color: PINK },
+  { y: 1960, date: "26 jona 1960", lines: ["............................"], color: GREEN },
+  { y: 1975, date: "30 des. 1975", lines: ["............................"], color: BLUE },
+  { y: 1993, date: "1993", lines: ["............................"], color: OCRE },
+  { y: 2010, date: "17 nov. 2010", lines: ["............................"], color: PINK },
+]));
+
+// Tahirin-kevitra hodinihina : taratasy tamin'ny 1960 (sary fanazaran-tena)
+(() => {
+  const W = 1100, H = 560;
+  let g = `<rect width="${W}" height="${H}" fill="#F7F1E1"/>`;
+  g += `<rect x="120" y="60" width="860" height="430" fill="#FDF8EC" stroke="#C9B98A" stroke-width="3" rx="6"/>`;
+  g += txt(W / 2, 40, "Tahirin-kevitra : taratasy nosoratan'i Dada be", 24, GREEN, "bold");
+  const lignes = [
+    ["Antananarivo, faha-27 jona 1960", "end", 940, 110],
+    ["Ry havana malala,", "start", 170, 160],
+    ["Omaly izahay dia nanatrika ny fankalazana lehibe teny Mahamasina :", "start", 170, 205],
+    ["nambara tamin'ny fomba ofisialy ny fahaleovantenan'i Madagasikara.", "start", 170, 240],
+    ["Nisy ny sainam-pirenena nakarina, ny hira nasionaly ary ny kabary", "start", 170, 275],
+    ["nataon'ny Filoha Philibert Tsiranana. Faly loatra ny vahoaka !", "start", 170, 310],
+    ["Tsy hohadinoiko mandrakizay io andro io.", "start", 170, 355],
+    ["Ny zoky mamangy anareo,", "end", 900, 410],
+    ["Rakoto", "end", 860, 450],
+  ];
+  for (const [t, anc, x, y] of lignes) {
+    g += `<text x="${x}" y="${y}" font-family="cursive" font-size="21" font-style="italic" fill="#4A3B1E" text-anchor="${anc}">${esc(t)}</text>`;
+  }
+  g += txt(W / 2, H - 25, "Sary an-tsaina natao ho fanazaran-tena — vakio ary valio ny fanontaniana", 15, GREY);
+  jobs.push({ file: "img_exo_doc.png", svg: svgDoc(W, H, g) });
+})();
+
+// Sari-tany moana : ranomasimbe indianina (COI) — A hatramin'ny E
+(() => {
+  const W = 1100, H = 620;
+  let g = `<rect width="${W}" height="${H}" fill="#DDEEFA"/>`;
+  g += txt(W / 2, 45, "Sari-tany hofenoina : ireo nosy dimy ao amin'ny COI", 26, GREEN, "bold");
+  g += `<path d="M 0 80 L 150 90 Q 210 200 170 330 Q 150 450 220 620 L 0 620 Z" fill="#D7C29E" stroke="#A98F5F" stroke-width="2"/>`;
+  g += txt(90, 300, "AFRIKA", 24, "#7A6234", "bold");
+  g += `<path d="M 560 190 Q 600 150 625 185 Q 660 240 655 320 Q 650 420 600 500 Q 560 540 540 490 Q 515 400 525 300 Q 530 230 560 190 Z" fill="${GREEN}" stroke="#1B5E20" stroke-width="3"/>`;
+  g += txt(590, 360, "A", 40, "white", "bold");
+  const nosy = [
+    [455, 150, "B", 14], [880, 105, "C", 14], [905, 330, "D", 14], [830, 385, "E", 13],
+  ];
+  for (const [x, y, lettre, r] of nosy) {
+    g += `<circle cx="${x}" cy="${y}" r="${r}" fill="${PINK}" stroke="#8E0E3F" stroke-width="2"/>`;
+    g += txt(x, y - r - 10, lettre, 26, "#8E0E3F", "bold");
+  }
+  g += txt(W / 2, H - 25, "Soraty ny anaran'ny nosy mifanandrify amin'ny litera A - E", 17, GREY);
+  jobs.push({ file: "img_exo_carteOI.png", svg: svgDoc(W, H, g) });
+})();
+
+// Sari-tany moana : Madagasikara — renivohitra 1-6 sy toeran'ny vakoka
+(() => {
+  const W = 800, H = 900;
+  let g = `<rect width="${W}" height="${H}" fill="#DDEEFA"/>`;
+  g += txt(W / 2, 40, "Sari-tany hofenoina : aiza ho aiza", 22, GREEN, "bold");
+  g += txt(W / 2, 68, "ireo vakoka malagasy ?", 22, GREEN, "bold");
+  g += `<path d="M 390 120 Q 450 80 480 130 Q 520 200 510 300 Q 505 420 470 550 Q 440 680 380 790 Q 330 840 300 770 Q 260 650 270 480 Q 280 300 330 190 Q 355 140 390 120 Z" fill="${GREEN}" stroke="#1B5E20" stroke-width="4"/>`;
+  const villes = [
+    [445, 150, "1"], [330, 300, "2"], [480, 380, "3"], [400, 430, "4"], [400, 570, "5"], [305, 700, "6"],
+  ];
+  for (const [x, y, num] of villes) {
+    g += `<circle cx="${x}" cy="${y}" r="16" fill="white" stroke="${PINK}" stroke-width="4"/>`;
+    g += txt(x, y + 6, num, 19, "#8E0E3F", "bold");
+  }
+  g += txt(W / 2, H - 55, "Renivohitra : 1 Antsiranana - 2 Mahajanga - 3 Toamasina", 15, GREY);
+  g += txt(W / 2, H - 30, "4 Antananarivo - 5 Fianarantsoa - 6 Toliara", 15, GREY);
+  jobs.push({ file: "img_exo_carteMG.png", svg: svgDoc(W, H, g) });
+})();
+
 // =============== FAMOKARANA ===============
 (async () => {
   for (const j of jobs) {
