@@ -107,10 +107,7 @@ const S12 = {
         ],
       },
     ],
-    fantatraoVe: [
-      "Ny Lalampanorenana nolanian'ny fitsapan-kevi-bahoaka tamin'ny 17 novambra 2010 dia nampidina ho 35 taona ny taona farany ambany ahafahana milatsaka ho filoham-pirenena (40 taona teo aloha). Rajoelina dia 34 taona monja tamin'ny nandraisany ny fahefana tamin'ny 2009 — anisan'ny mpitondra zandriny indrindra teto Afrika izy tamin'izany !",
-      "Ny hetsika 2025 dia nalaza tamin'ny fampiasana ny tambajotra sosialy : ny tanora « Gen Z » no nikarakara ny famoriam-bahoaka tamin'ny alalan'ny aterineto — endrika vaovao amin'ny tantaran'ny hetsi-bahoaka malagasy.",
-    ],
+    fantatraoVe: [],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
       "« 17 marsa 2009 : natolotry ny filoha Marc Ravalomanana ny miaramila manamboninahitra ny fahefana feno. Nomen'ny filohan'ny fitondrana miaramila an'i Andry Rajoelina avy eo izany fahefana izany. Nanameloka avy hatrany ny fanonganam-panjakana ny Vondrona Eoropeana, ary nampiato ny fandraisan'i Madagasikara anjara tao aminy ny Firaisambe Afrikanina (fampiatoana, fa tsy fandroahana). » (Loharano : FRP Tantara T6)",
