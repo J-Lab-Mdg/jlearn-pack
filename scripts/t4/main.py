@@ -13,6 +13,7 @@ import docx
 import builder as B
 from plan import UNITS, flat_seances, TOTAL_SEANCES
 import content_unit1 as U1
+import content_unit2 as U2
 
 OUT = os.path.join(os.path.dirname(os.path.dirname(HERE)),
                     "ST T4 [PE] Fiche de preparation sujet corriges J-Learn.docx")
@@ -123,6 +124,15 @@ def main():
     B.add_unit_divider(doc, roman, title, ras, valeurs, unit_seances)
 
     contents = [U1.S1, U1.S2, U1.S3, U1.S4, U1.S5, U1.S6, U1.S7]
+    for s, content in zip(unit_seances, contents):
+        build_seance(doc, s, content)
+
+    # ---- UNITE II ----
+    roman, title, hours, valeurs, ras, seances_list = UNITS[1]
+    unit_seances = [s for s in ALL_SEANCES if s["unit_roman"] == roman]
+    B.add_unit_divider(doc, roman, title, ras, valeurs, unit_seances)
+
+    contents = [U2.S1, U2.S2, U2.S3, U2.S4, U2.S5, U2.S6, U2.S7, U2.S8, U2.S9, U2.S10]
     for s, content in zip(unit_seances, contents):
         build_seance(doc, s, content)
 
