@@ -19,6 +19,8 @@ S1 = {
     "theme": THEME, "ras_theme": RAS_THEME_1, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "classer des aliments selon leur couleur et identifier leur goût.",
     "support": "échantillons ou photos d'aliments locaux (riz, brèdes, mangue, sel, sucre, citron), tableau noir.",
+    "cover_image": ("scripts/t4/generated_images/u1_s1_a_marche.jpg",
+                     "Un étal de marché malgache : les aliments s'y distinguent déjà par leur couleur."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -61,6 +63,8 @@ S1 = {
         ("sub", "e. L'umami"),
         ("body", "C'est le goût d'un bouillon de viande ou de poisson, un goût plaisant proche du sucré. On le "
                  "retrouve dans le romazava ou le ravitoto au porc."),
+        ("image", ("scripts/t4/generated_images/u1_s1_b_gouts.jpg",
+                   "Les cinq goûts principaux : sucré, salé, acide, amer, umami.")),
         ("section", "3. À quoi sert cette classification ?"),
         ("body", "Classer les aliments par couleur et par goût aide à décrire précisément un repas, à repérer la "
                  "variété d'un menu, et prépare l'étude des rôles et de l'origine des aliments dans la prochaine "
@@ -114,6 +118,8 @@ S2 = {
     "theme": THEME, "ras_theme": RAS_THEME_1, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "classer les aliments selon leur origine et expliquer les rôles des différents types d'aliments.",
     "support": "planche « la fleur alimentaire » ou pyramide alimentaire, photos d'aliments, tableau noir.",
+    "cover_image": ("scripts/t4/generated_images/u1_s2_a_repas.jpg",
+                     "Un repas familial malgache réunit souvent des aliments de plusieurs origines."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -158,6 +164,8 @@ S2 = {
         ("sub", "c. Les aliments protecteurs"),
         ("body", "Brèdes, légumes verts, fruits (mangue, orange, papaye) : ils défendent l'organisme contre les "
                  "maladies et assurent son bon fonctionnement."),
+        ("image", ("scripts/t4/generated_images/u1_s2_b_roles.jpg",
+                   "Les trois rôles des aliments : énergétique, constructeur, protecteur.")),
         ("section", "3. Un repas complet associe les trois rôles"),
         ("body", "Un repas malgache simple — riz, haricots, brèdes, un peu d'huile — associe déjà les trois "
                  "rôles : énergétique (riz, huile), constructeur (haricots) et protecteur (brèdes). C'est cette "
@@ -200,6 +208,8 @@ S3 = {
     "theme": THEME, "ras_theme": RAS_THEME_1, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "déterminer les critères d'un menu varié et élaborer un menu pour une journée.",
     "support": "planche « la fleur alimentaire », pyramide alimentaire, fiches menu vierges, crayons.",
+    "cover_image": ("scripts/t4/generated_images/u1_s3_a_petitdej.jpg",
+                     "Un petit déjeuner malgache déjà varié : vary sosoa, lait, banane."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -246,6 +256,8 @@ S3 = {
                  "Dîner : riz, poisson grillé, légumes verts, eau."),
         ("body", "Ce menu associe, à chaque repas, un aliment énergétique (riz), un aliment constructeur (lait, "
                  "haricots, poisson) et un aliment protecteur (banane, brèdes, légumes)."),
+        ("image", ("scripts/t4/generated_images/u1_s3_b_assiette.jpg",
+                   "Une assiette équilibrée : énergétique, constructeur, protecteur.")),
     ],
     "exercices": [
         ("Exercice 1 (5 points)", " — Voici un menu : riz, sucre, thé sucré. 1. Ce menu respecte-t-il le critère "
@@ -292,6 +304,8 @@ S4 = {
     "theme": THEME, "ras_theme": RAS_THEME_2, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "appliquer des mesures d'hygiène des aliments crus et cuits, avant, pendant et après la cuisson.",
     "support": "emballages d'aliments propres, exemple d'aliment mal conservé (image), tableau noir.",
+    "cover_image": ("scripts/t4/generated_images/u1_s4_a_cuisine.jpg",
+                     "Se laver les mains avant de cuisiner : le premier geste d'hygiène."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -341,6 +355,8 @@ S4 = {
         ("body", "Couvrir les aliments cuits pour les protéger de la poussière et des mouches ; ne pas laisser "
                  "un plat cuit trop longtemps à température ambiante ; réchauffer suffisamment avant de "
                  "consommer un reste."),
+        ("image", ("scripts/t4/generated_images/u1_s4_b_regles.jpg",
+                   "Les trois moments de l'hygiène alimentaire : avant, pendant, après la cuisson.")),
     ],
     "exercices": [
         ("Exercice 1 (5 points)", " — Cite les trois causes principales qui abîment un aliment, et explique "
@@ -385,6 +401,8 @@ S5 = {
     "theme": THEME, "ras_theme": RAS_THEME_3, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "sélectionner et interpréter les informations présentes sur un emballage alimentaire.",
     "support": "emballages alimentaires variés (boisson, biscuits, conserve), tableau noir.",
+    "cover_image": ("scripts/t4/generated_images/u1_s5_a_etiquette.jpg",
+                     "Bien lire l'étiquette avant d'acheter : un geste de consommateur responsable."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -426,6 +444,8 @@ S5 = {
         ("sub", "d. La date de péremption ou date limite de consommation"),
         ("body", "Elle indique jusqu'à quand le produit peut être consommé sans risque pour la santé. Au-delà "
                  "de cette date, l'aliment peut devenir dangereux, même si son aspect paraît normal."),
+        ("image", ("scripts/t4/generated_images/u1_s5_b_emballage.jpg",
+                   "Les informations clés d'un emballage : nutrition, ingrédients, fabrication, péremption.")),
         ("section", "2. Pourquoi lire un emballage avant d'acheter ou de consommer ?"),
         ("body", "Lire un emballage permet de vérifier que le produit n'est pas périmé, de connaître sa "
                  "composition (utile en cas d'allergie ou de régime particulier), et de comparer plusieurs "

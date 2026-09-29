@@ -302,5 +302,19 @@ def corrige_mixed(doc, parts, space_after=4):
     mixed_para(doc, parts, space_after=space_after)
 
 
+def add_image(doc, path, caption=None, width_cm=13.5):
+    """Insert a centered picture with an optional italic caption underneath."""
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = p.add_run()
+    run.add_picture(path, width=Cm(width_cm))
+    p.paragraph_format.space_after = Pt(2)
+    if caption:
+        cap = doc.add_paragraph()
+        cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        cap.paragraph_format.space_after = Pt(8)
+        add_run(cap, caption, italic=True, size=9.5, color=BLUE)
+
+
 def page_break(doc):
     doc.add_page_break()

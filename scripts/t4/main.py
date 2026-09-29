@@ -23,7 +23,11 @@ ALL_SEANCES = flat_seances()
 
 def build_lecon(doc, s):
     B.lecon_title_repeat(doc, s["title"])
-    for kind, text in s["lecon"]:
+    if s.get("cover_image"):
+        path, caption = s["cover_image"]
+        B.add_image(doc, path, caption)
+    for item in s["lecon"]:
+        kind, text = item[0], item[1]
         if kind == "section":
             B.section_header(doc, text)
         elif kind == "sub":
@@ -31,6 +35,9 @@ def build_lecon(doc, s):
         elif kind == "body":
             for para_text in text.split("\n"):
                 B.body_text(doc, para_text)
+        elif kind == "image":
+            path, caption = text
+            B.add_image(doc, path, caption)
     B.exercices_heading(doc)
     for header, rest in s["exercices"]:
         for i, line in enumerate(rest.split("\n")):
