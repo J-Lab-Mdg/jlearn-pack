@@ -1,5 +1,5 @@
 // Assemblage du Manuel Anglais T6 J-Learn — V1 (en cours)
-// Unités présentes : 1, 2 — les suivantes sont ajoutées bloc par bloc.
+// Unités présentes : 1, 2, 3 — les suivantes sont ajoutées bloc par bloc.
 const fs = require("fs");
 const path = require("path");
 const { Document, Packer, Table, TableRow, WidthType } = require("docx");
@@ -7,6 +7,7 @@ const B = require("./builders");
 const { C, SZ, FONT, run, p, pr, pageBreak, tocLink, cell, img } = B;
 const unit1 = require("./unit1");
 const unit2 = require("./unit2");
+const unit3 = require("./unit3");
 
 // ---------- couverture ----------
 function cover() {
@@ -80,7 +81,23 @@ function contents() {
     tocLink("s15", "    Session 15 — Revision"),
     tocLink("s16", "    Session 16 — T6 Test paper"),
     p("", { after: 60 }),
-    p([run("Units 3 to 7 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
+    tocLink("unit3", "UNIT 3 — TIME AND WEATHER (Sessions 17–30)", { bold: true, size: 26 }),
+    tocLink("s17", "    Session 17 — The days of the week"),
+    tocLink("s18", "    Session 18 — The twelve months — What month is it now?"),
+    tocLink("s19", "    Session 19 — The ordinal numbers — telling the date"),
+    tocLink("s20", "    Session 20 — Yesterday, today, tomorrow — was and will be"),
+    tocLink("s21", "    Session 21 — What time is it? — o’clock, a.m. and p.m."),
+    tocLink("s22", "    Session 22 — A quarter past, half past, a quarter to"),
+    tocLink("s23", "    Session 23 — When do you…? — the time interview"),
+    tocLink("s24", "    Session 24 — The four seasons"),
+    tocLink("s25", "    Session 25 — What’s the weather like? — the -y adjectives"),
+    tocLink("s26", "    Session 26 — Raining cats and dogs! — my favourite season"),
+    tocLink("s27", "    Session 27 — Reading: “My Monday morning”"),
+    tocLink("s28", "    Session 28 — Writing: my favourite season and weather"),
+    tocLink("s29", "    Session 29 — Revision"),
+    tocLink("s30", "    Session 30 — T6 Test paper"),
+    p("", { after: 60 }),
+    p([run("Units 4 to 7 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
   ];
 }
 
@@ -126,7 +143,8 @@ async function main() {
         ...contents(), pageBreak(),
         ...dashboard(), pageBreak(),
         ...unit1(), pageBreak(),
-        ...unit2(),
+        ...unit2(), pageBreak(),
+        ...unit3(),
       ],
     }],
   });
