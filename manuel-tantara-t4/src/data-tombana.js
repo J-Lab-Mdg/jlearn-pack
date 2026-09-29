@@ -167,4 +167,97 @@ const S14 = {
   ],
 };
 
-module.exports = { S5, S7, S11, S14 };
+const S22 = {
+  type: "fanadinana", numero: 22, total: 27,
+  titre: "Famerenana sy tombana — Lohahevitra V",
+  lohahevitra: "V — Ny fiavian'ny Malagasy",
+  famerenana: [
+    "Ny razamben'ny Malagasy dia avy any AZIA ATSIMO ATSINANANA (Indonezia, Malezia), avy any AFRIKA ATSINANANA ary avy any ARABIA.",
+    "LAKANA no nitondra azy ireo : ny lakam-bezo, ny lakam-piara (misy piara na balancier), ary ny botry (sambo kely misy lay).",
+    "Niantsona tamin'ny morontsiraka efatra izy ireo : avaratra, atsinanana, andrefana ary atsimo, dia niditra tsikelikely tany afovoan-tany.",
+    "ANDIANY EFATRA : ny Ostronesianina voalohany (taonjato III-IV) ; ny Indonezianina sy Maleziana (talohan'ny taonjato VII) ; ny Afrikanina (taonjato VII-VIII) ; ny Arabo (nanomboka ny taonjato IX) izay nitondra ny sorabe, ny fanandroana ary ny varotra.",
+    "Hita ao amin'ny fiteny malagasy ny dian'ireo fiaviana : batu → vato (avy any Indonezia) ; alahady, alatsinainy, talata… (anaran'andro avy amin'ny teny arabo).",
+    "Nitondra ny fambolena vary an-tanimbary, ny jono, ny valiha ary ny omby ireo razambe ; niharo ireo andiany rehetra ka VAHOAKA IRAY no niforona : ny Malagasy.",
+    "Fanamarihana : tsy mitovy hevitra amin'ny daty rehetra ny mpahay tantara ; ireo daty ireo dia tombantombana.",
+  ],
+  laza: [
+    {
+      points: 4,
+      consigne: "Tanisao ireo faritra telo niavian'ny razamben'ny Malagasy.",
+      items: [],
+      corrige: [[{ text: "Azia atsimo atsinanana (Indonezia, Malezia) ; Afrika atsinanana ; Arabia", cle: true }, { text: "." }]],
+    },
+    {
+      points: 4,
+      consigne: "Ampifanandrifio : 1. lakam-piara / 2. botry / 3. lakam-bezo — a. sambo kely misy lay ; b. lakana misy piara (balancier) ; d. lakana tsotra fampiasan'ny mpanjono.",
+      items: [],
+      corrige: [[{ text: "1-b", cle: true }, { text: " ; " }, { text: "2-a", cle: true }, { text: " ; " }, { text: "3-d", cle: true }, { text: "." }]],
+    },
+    {
+      points: 4,
+      consigne: "Fenoy : Ny Arabo dia tonga nanomboka ny taonjato faha-… ; nitondra ny soratra atao hoe … sy ny … (fijerena ny vintana) ary ny varotra izy ireo.",
+      items: [],
+      corrige: [[{ text: "IX", cle: true }, { text: " ; " }, { text: "sorabe", cle: true }, { text: " ; " }, { text: "fanandroana", cle: true }, { text: "." }]],
+    },
+    {
+      points: 4,
+      consigne: "Marina sa diso ? a) Avy amin'ny teny arabo ny anaran'ny andro toy ny alahady sy ny talata. b) Andiany iray monja no tonga teto Madagasikara. d) Ny teny hoe « vato » dia mifandray amin'ny teny indoneziana hoe « batu ».",
+      items: [],
+      corrige: [[{ text: "a) " }, { text: "Marina", cle: true }, { text: " ; b) " }, { text: "Diso : andiany efatra", cle: true }, { text: " ; d) " }, { text: "Marina", cle: true }, { text: "." }]],
+    },
+    {
+      points: 4,
+      consigne: "Soraty amin'ny fehezanteny roa : nahoana no lazaina fa vahoaka iray ny Malagasy na dia samy hafa aza ny fiaviany ?",
+      items: [],
+      corrige: [[{ text: "Satria niharo sy nifanambady ireo andiany rehetra ka niray fiteny, fomba amam-panao ary tanindrazana : lasa firenena iray ny Malagasy", cle: true }, { text: "." }]],
+    },
+  ],
+};
+
+const S27 = {
+  type: "fanadinana", numero: 27, total: 27,
+  titre: "Famerenana sy tombana — Lohahevitra VI",
+  lohahevitra: "VI — Ny vakoka sy ny harem-pirenena eto Madagasikara",
+  famerenana: [
+    "Ny VAKOKA dia akora na fitaovana tranainy mirakitra ny tantaran'ny firenena, tehirizina ho an'ny taranaka mifandimby : ny vakoka ao amin'ny tranom-bakoka, ny tsangambato, ny fasan'ny mpanjaka, ny toerana manan-tantara (rova, doany, hadivory, vavahady, kianja…).",
+    "Misy vakoka AZO TSAPAIN-TANANA (rova, vatolahy) sy vakoka TSY AZO TSAPAIN-TANANA (kabary, angano, vakodrazana).",
+    "Ny HAREM-PIRENENA dia fananana mamaritra sy mampiavaka ny firenena : ny tany, ny ala, ny rano sy ny ranomasina, ny harena an-kibon'ny tany, ny valan-javaboary sy ny faritra voaaro, ary ny vakoka.",
+    "Ny fikolokoloana azy ireo dia mampiroborobo ny FIZAHANTANY : vola miditra, asa ho an'ny mponina, fampandrosoana ny faritra, laza ho an'i Madagasikara.",
+    "Arovana amin'ny hamandoana, ny vovoka, ny afo ary ny mpangalatra ny vakoka ; misy LALÀNA (didim-panjakana 91-017 sy 56-1106) sy DINA miaro azy.",
+    "Manana ANDRAIKITRA ny tsirairay : tsy mandoro tanety, tsy manimba, mandray anjara amin'ny fanadiovana, manaja ny lalàna.",
+  ],
+  laza: [
+    {
+      points: 4,
+      consigne: "Faritao ny atao hoe vakoka ary omeo ohatra roa.",
+      items: [],
+      corrige: [[{ text: "Zavatra tranainy mirakitra ny tantaran'ny firenena, tehirizina ho an'ny taranaka", cle: true }, { text: " ; ohatra : " }, { text: "ny rova, ny tsangambato (na kabary, doany…)", cle: true }, { text: "." }]],
+    },
+    {
+      points: 4,
+      consigne: "Sokajio : a) ny angano ; b) ny rovan'Ambohimanga ; d) ny kabary ; e) ny vatolahy. Iza no azo tsapain-tanana, iza no tsia ?",
+      items: [],
+      corrige: [[{ text: "Azo tsapain-tanana : " }, { text: "b, e", cle: true }, { text: " ; tsy azo tsapain-tanana : " }, { text: "a, d", cle: true }, { text: "." }]],
+    },
+    {
+      points: 4,
+      consigne: "Tanisao karazana harem-pirenena efatra.",
+      items: [],
+      corrige: [[{ text: "Ny tany, ny ala, ny rano/ranomasina, ny harena an-kibon'ny tany (na : valan-javaboary, faritra voaaro, vakoka)", cle: true }, { text: "." }]],
+    },
+    {
+      points: 4,
+      consigne: "Omeo tombontsoa telo azo amin'ny fikolokoloana ny vakoka sy ny harem-pirenena.",
+      items: [],
+      corrige: [[{ text: "Mampiroborobo ny fizahantany ; mampiditra vola ; mamorona asa (na : mampandroso ny faritra, mampalaza ny firenena)", cle: true }, { text: "." }]],
+    },
+    {
+      points: 4,
+      consigne: "Tanisao asa telo azonao atao amin'ny fiarovana ny vakoka sy ny harem-pirenena.",
+      items: [],
+      corrige: [[{ text: "Tsy mandoro tanety ; tsy manimba na mandoto ; mandray anjara amin'ny fanadiovana (na : manaja ny lalàna sy ny dina)", cle: true }, { text: "." }]],
+    },
+  ],
+};
+
+module.exports = { S5, S7, S11, S14, S22, S27 };
