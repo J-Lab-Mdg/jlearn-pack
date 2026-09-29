@@ -185,7 +185,7 @@ const seances = [
     qa: [
       { q: "Iza no fara-tampon'ny fitondrana mpanjanaka teto Madagasikara ?", ra: "Ny governora jeneraly, solontenan'i Frantsa ; i Gallieni no voalohany (1896)." },
       { q: "Ahoana ny fizarazarana ny tany ?", ra: "Nozaraina ho province ny Nosy, ny province ho district, ny district ho canton, ny canton ho arrondissement, ary farany ny village sy ny quartier." },
-      { q: "Firy ny governora jeneraly nifandimby ?", ra: "Governora jeneraly 14 no nifandimby (1896-1946), ary haut-commissaire 4 (1946-1960)." },
+      { q: "Firy ny governora jeneraly nifandimby ?", ra: "Governora jeneraly sahabo ho 14 no nifandimby (1896-1946), ary haut-commissaire 4 (1946-1960)." },
       { q: "Iza no nitantana ny ambaratonga ambany ?", ra: "Ny mpiasam-panjakana frantsay no tao amin'ny ambaratonga ambony ; Malagasy notendrena no nanatanteraka ny baiko tany amin'ny ambaratonga ambany." },
     ],
     technique: "Fanontaniana / valiny",
@@ -221,7 +221,7 @@ const seances = [
       {
         titre: "1. Ny governora jeneraly",
         paras: [
-          "Ny governora jeneraly, solontenan'i Frantsa, no fara-tampon'ny fitondrana teto Madagasikara. I Gallieni no voalohany (1896-1905). Governora jeneraly 14 no nifandimby (1896-1946), ary haut-commissaire 4 (1946-1960).",
+          "Ny governora jeneraly, solontenan'i Frantsa, no fara-tampon'ny fitondrana teto Madagasikara. I Gallieni no voalohany (1896-1905). Governora jeneraly sahabo ho 14 no nifandimby (1896-1946), ary haut-commissaire 4 (1946-1960).",
         ],
         puces: [],
       },
@@ -267,7 +267,7 @@ const seances = [
     },
     {
       points: 3,
-      consigne: "Marina sa diso ? a) Gallieni no governora jeneraly voalohany. b) Governora jeneraly 14 no nifandimby. d) Malagasy no nitana ny ambaratonga ambony.",
+      consigne: "Marina sa diso ? a) Gallieni no governora jeneraly voalohany. b) Governora jeneraly sahabo ho 14 no nifandimby. d) Malagasy no nitana ny ambaratonga ambony.",
       items: [],
       corrige: [[{ text: "a) Marina", cle: true }, { text: " ; b) " }, { text: "Marina", cle: true }, { text: " ; d) " }, { text: "Diso : Frantsay no tambony, Malagasy no nanatanteraka baiko", cle: true }, { text: "." }]],
     },

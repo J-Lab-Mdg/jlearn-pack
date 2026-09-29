@@ -97,7 +97,7 @@ function annexe4(rootDir) {
   out.push(leg("Ny rafi-pitantanan'ny mpanjanaka", "tovana4"));
   [
     "5 aogositra 1890 : neken'ny Anglisy ho zaram-pahefan'i Frantsa i Madagasikara (takalo : Zanzibar).",
-    "Governora jeneraly 14 no nifandimby (1896-1946) — Gallieni no voalohany ; haut-commissaire 4 (1946-1960).",
+    "Governora jeneraly sahabo ho 14 no nifandimby (1896-1946) — Gallieni no voalohany ; haut-commissaire 4 (1946-1960).",
     "14 oktobra 1958 : niorina ny Repoblika Malagasy voalohany ; 26 jona 1960 : niverina ny fahaleovantena.",
   ].forEach(t => out.push(B.p("\u2022 " + t, { size: 24, spacingAfter: 40 })));
   out.push(B.pageBreak());
