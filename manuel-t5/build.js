@@ -8,6 +8,8 @@ const { C, SZ, FONT, run, p, pr, pageBreak, tocLink, cell, img } = B;
 const unit1 = require("./unit1");
 const unit2 = require("./unit2");
 const unit3 = require("./unit3");
+const unit4 = require("./unit4");
+const unit5 = require("./unit5");
 
 // ---------- couverture ----------
 function cover() {
@@ -76,7 +78,22 @@ function contents() {
     tocLink("s12", "    Session 12 — Revision"),
     tocLink("s13", "    Session 13 — T5 Test paper"),
     p("", { after: 60 }),
-    p([run("Units 4 to 10 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
+    tocLink("unit4", "UNIT 4 — PARTS OF THE BODY (Sessions 14–17)", { bold: true, size: 26 }),
+    tocLink("s14", "    Session 14 — The parts of the body"),
+    tocLink("s15", "    Session 15 — This is my… — What am I doing?"),
+    tocLink("s16", "    Session 16 — Revision"),
+    tocLink("s17", "    Session 17 — T5 Test paper"),
+    p("", { after: 60 }),
+    tocLink("unit5", "UNIT 5 — MY BIRTHDAY IS ON… (Sessions 18–24)", { bold: true, size: 26 }),
+    tocLink("s18", "    Session 18 — Reading the numbers 1 to 20"),
+    tocLink("s19", "    Session 19 — The twelve months of the year"),
+    tocLink("s20", "    Session 20 — Reading the months, my favourite month"),
+    tocLink("s21", "    Session 21 — Counting from 21 to 40"),
+    tocLink("s22", "    Session 22 — Reading 21 to 40, my birthday is on…"),
+    tocLink("s23", "    Session 23 — Revision"),
+    tocLink("s24", "    Session 24 — T5 Test paper"),
+    p("", { after: 60 }),
+    p([run("Units 6 to 10 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
   ];
 }
 
@@ -126,7 +143,9 @@ async function main() {
         ...dashboard(), pageBreak(),
         ...unit1(), pageBreak(),
         ...unit2(), pageBreak(),
-        ...unit3(),
+        ...unit3(), pageBreak(),
+        ...unit4(), pageBreak(),
+        ...unit5(),
       ],
     }],
   });
