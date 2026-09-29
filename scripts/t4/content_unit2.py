@@ -18,6 +18,8 @@ S1 = {
     "theme": THEME, "ras_theme": RAS_THEME_1, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "identifier les différentes parties d'une plante à fleurs et leurs caractéristiques.",
     "support": "un pied de plante entier avec racines (haricot, brède ou petite plante locale), planche ou schéma d'une plante, tableau noir.",
+    "cover_image": ("scripts/t4/generated_images/u2_s1_a_jardin.jpg",
+                     "Un pied de haricot arraché : on distingue déjà les racines, la tige et les feuilles."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -55,6 +57,8 @@ S1 = {
         ("section", "3. L'appareil reproducteur"),
         ("body", "Il comprend la fleur, qui après fécondation devient un fruit contenant une ou plusieurs graines. "
                  "La graine, semée dans le sol, donnera une nouvelle plante."),
+        ("image", ("scripts/t4/generated_images/u2_s1_b_plante.jpg",
+                   "L'organisation d'une plante à fleurs : racine, tige, feuille, fleur/fruit/graine.")),
         ("section", "4. Pourquoi étudier ces parties ?"),
         ("body", "Reconnaître les parties d'une plante permet ensuite de comparer différentes plantes entre elles, "
                  "et de comprendre comment les classer — ce que nous ferons dans les prochaines séances."),
@@ -101,6 +105,8 @@ S2 = {
     "theme": THEME, "ras_theme": RAS_THEME_1, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "identifier les principales familles de plantes sans fleurs et leurs caractéristiques.",
     "support": "échantillons de mousse, de fougère, d'algue (si disponible) et de champignon, ou photos, loupe.",
+    "cover_image": ("scripts/t4/generated_images/u2_s2_a_foret.jpg",
+                     "Un sous-bois humide malgache après la pluie : mousses, fougères et champignons."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -132,6 +138,8 @@ S2 = {
         ("section", "3. Les fougères"),
         ("body", "Plantes aux grandes feuilles découpées appelées frondes, souvent enroulées quand elles sont "
                  "jeunes. On en trouve dans les sous-bois humides des Hautes Terres malgaches."),
+        ("image", ("scripts/t4/generated_images/u2_s2_b_familles.jpg",
+                   "Les quatre familles de plantes sans fleurs : mousse, fougère, algue, champignon.")),
         ("section", "4. Les algues"),
         ("body", "Elles vivent dans l'eau douce ou dans l'eau de mer (le long des côtes malgaches). Elles vont du "
                  "simple voile vert sur une mare aux grandes algues brunes des rivages."),
@@ -186,6 +194,8 @@ S3 = {
     "theme": THEME, "ras_theme": RAS_THEME_1, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "dégager les caractéristiques distinctives des plantes monocotylédones et dicotylédones.",
     "support": "un grain de maïs germé et un grain de haricot germé, feuilles de riz et feuilles de haricot, loupe.",
+    "cover_image": ("scripts/t4/generated_images/u2_s3_a_champs.jpg",
+                     "Rizières et champ de haricots sur les Hautes Terres : deux grandes familles de plantes."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -229,6 +239,8 @@ S3 = {
                  "(ramifiées) sur les feuilles, une racine principale bien développée avec des racines "
                  "secondaires. Exemples malgaches : le haricot (tsaramaso), le manguier (manga), les brèdes "
                  "(anana)."),
+        ("image", ("scripts/t4/generated_images/u2_s3_b_comparaison.jpg",
+                   "Comparaison monocotylédone / dicotylédone : nervures, cotylédons, racines.")),
         ("section", "4. Pourquoi cette distinction est-elle utile ?"),
         ("body", "Connaître la famille d'une plante aide à prévoir la forme de ses racines, de ses feuilles, et "
                  "même certains besoins de culture — des informations utiles pour l'agriculteur comme pour le "
@@ -277,6 +289,8 @@ S4 = {
     "theme": THEME, "ras_theme": RAS_THEME_1, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "classifier adéquatement des plantes locales selon leurs caractéristiques observées.",
     "support": "échantillons de 6 à 8 plantes locales rapportées par les élèves, loupe, fiche de classification.",
+    "cover_image": ("scripts/t4/generated_images/u2_s4_a_ecole.jpg",
+                     "Des élèves observent et classent des plantes locales à la loupe."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -308,6 +322,8 @@ S4 = {
         ("body", "Pour classer une plante inconnue, on suit toujours les mêmes questions, dans l'ordre : "
                  "1) A-t-elle des fleurs ? 2) Si oui, combien de cotylédons a sa graine (un ou deux) ? "
                  "3) Comment sont les nervures de ses feuilles (parallèles ou en réseau) ?"),
+        ("image", ("scripts/t4/generated_images/u2_s4_b_arbre.jpg",
+                   "La démarche de classification, étape par étape.")),
         ("section", "2. Un exemple pas à pas : la brède mafana"),
         ("body", "Elle a des fleurs : ce n'est donc pas une plante sans fleurs. Ses feuilles ont des nervures en "
                  "réseau. C'est donc une dicotylédone."),
@@ -366,6 +382,8 @@ S5 = {
     "theme": THEME, "ras_theme": RAS_THEME_2, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "identifier l'utilité des plantes pour les êtres vivants sur le plan social et économique.",
     "support": "photos ou échantillons de plantes médicinales, ornementales et alimentaires, tableau noir.",
+    "cover_image": ("scripts/t4/generated_images/u2_s5_a_marcheplantes.jpg",
+                     "Un marché malgache : plantes médicinales, ornementales et alimentaires côte à côte."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -404,6 +422,8 @@ S5 = {
         ("section", "3. Les plantes nourricières"),
         ("body", "Le riz, le manioc, la patate douce, les brèdes et de nombreux fruits (mangue, letchi, "
                  "banane) nourrissent chaque jour la population malgache."),
+        ("image", ("scripts/t4/generated_images/u2_s5_b_roles.jpg",
+                   "Trois rôles des plantes : médicinal, ornemental, alimentaire.")),
         ("section", "4. Un rôle économique important"),
         ("body", "Beaucoup de ces plantes sont vendues sur les marchés locaux ou exportées (vanille, girofle, "
                  "litchi). Leur culture, leur récolte et leur vente font vivre de nombreuses familles malgaches : "
