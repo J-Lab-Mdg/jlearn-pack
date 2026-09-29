@@ -1,5 +1,5 @@
 // Assemblage du Manuel Anglais T6 J-Learn — V1 (en cours)
-// Unités présentes : 1, 2, 3 — les suivantes sont ajoutées bloc par bloc.
+// Unités présentes : 1, 2, 3, 4 — les suivantes sont ajoutées bloc par bloc.
 const fs = require("fs");
 const path = require("path");
 const { Document, Packer, Table, TableRow, WidthType } = require("docx");
@@ -8,6 +8,7 @@ const { C, SZ, FONT, run, p, pr, pageBreak, tocLink, cell, img } = B;
 const unit1 = require("./unit1");
 const unit2 = require("./unit2");
 const unit3 = require("./unit3");
+const unit4 = require("./unit4");
 
 // ---------- couverture ----------
 function cover() {
@@ -97,7 +98,20 @@ function contents() {
     tocLink("s29", "    Session 29 — Revision"),
     tocLink("s30", "    Session 30 — T6 Test paper"),
     p("", { after: 60 }),
-    p([run("Units 4 to 7 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
+    tocLink("unit4", "UNIT 4 — EVERYDAY MEALS (Sessions 31–41)", { bold: true, size: 26 }),
+    tocLink("s31", "    Session 31 — The everyday food"),
+    tocLink("s32", "    Session 32 — What’s for lunch?"),
+    tocLink("s33", "    Session 33 — Our meal dialogue"),
+    tocLink("s34", "    Session 34 — The four tastes"),
+    tocLink("s35", "    Session 35 — I like, I don’t like — the jazz chant"),
+    tocLink("s36", "    Session 36 — My favourite food — Quiz, quiz, trade!"),
+    tocLink("s37", "    Session 37 — Food from Anglophone countries"),
+    tocLink("s38", "    Session 38 — Reading: “Meals at my house”"),
+    tocLink("s39", "    Session 39 — Writing: my everyday meals"),
+    tocLink("s40", "    Session 40 — Revision"),
+    tocLink("s41", "    Session 41 — T6 Test paper"),
+    p("", { after: 60 }),
+    p([run("Units 5 to 7 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
   ];
 }
 
@@ -144,7 +158,8 @@ async function main() {
         ...dashboard(), pageBreak(),
         ...unit1(), pageBreak(),
         ...unit2(), pageBreak(),
-        ...unit3(),
+        ...unit3(), pageBreak(),
+        ...unit4(),
       ],
     }],
   });
