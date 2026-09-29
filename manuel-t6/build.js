@@ -1,5 +1,5 @@
 // Assemblage du Manuel Anglais T6 J-Learn — V1 (en cours)
-// Unités présentes : 1, 2, 3, 4, 5, 6 — les suivantes sont ajoutées bloc par bloc.
+// Unités présentes : 1 à 7 + annexes — MANUEL COMPLET.
 const fs = require("fs");
 const path = require("path");
 const { Document, Packer, Table, TableRow, WidthType } = require("docx");
@@ -11,6 +11,8 @@ const unit3 = require("./unit3");
 const unit4 = require("./unit4");
 const unit5 = require("./unit5");
 const unit6 = require("./unit6");
+const unit7 = require("./unit7");
+const annexes = require("./annexes");
 
 // ---------- couverture ----------
 function cover() {
@@ -142,7 +144,21 @@ function contents() {
     tocLink("s65", "    Session 65 — Revision"),
     tocLink("s66", "    Session 66 — T6 Test paper"),
     p("", { after: 60 }),
-    p([run("Unit 7 and the Annexes are coming in the next part of the book.", { italic: true, color: C.GRAY })]),
+    tocLink("unit7", "UNIT 7 — MY IMMEDIATE SURROUNDINGS (Sessions 67–74)", { bold: true, size: 26 }),
+    tocLink("s67", "    Session 67 — The school buildings"),
+    tocLink("s68", "    Session 68 — Listening: “Tom’s school”"),
+    tocLink("s69", "    Session 69 — There is, there are — my school and Tom’s school"),
+    tocLink("s70", "    Session 70 — The house furniture"),
+    tocLink("s71", "    Session 71 — Reading: “My new house”"),
+    tocLink("s72", "    Session 72 — Writing: my favourite place"),
+    tocLink("s73", "    Session 73 — Revision"),
+    tocLink("s74", "    Session 74 — T6 Test paper"),
+    p("", { after: 60 }),
+    tocLink("annexes", "ANNEXES", { bold: true, size: 26 }),
+    tocLink("ann1", "    Annex 1 — Picture dictionary"),
+    tocLink("ann2", "    Annex 2 — Songs and chants"),
+    tocLink("ann3", "    Annex 3 — Pronunciation guide"),
+    tocLink("ann4", "    Annex 4 — Flashcards to cut out"),
   ];
 }
 
@@ -192,7 +208,9 @@ async function main() {
         ...unit3(), pageBreak(),
         ...unit4(), pageBreak(),
         ...unit5(), pageBreak(),
-        ...unit6(),
+        ...unit6(), pageBreak(),
+        ...unit7(), pageBreak(),
+        ...annexes(),
       ],
     }],
   });
