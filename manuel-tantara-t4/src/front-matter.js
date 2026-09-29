@@ -48,8 +48,8 @@ function buildCouverture(rootDir) {
   out.push(B.p("Collection J-Learn", { italics: true, size: 26, align: AlignmentType.CENTER, spacingAfter: 400 }));
   out.push(B.p("TANTARA", { bold: true, size: 44, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 100 }));
   out.push(B.p("Histoire", { bold: true, size: 30, color: B.GREEN, align: AlignmentType.CENTER, spacingAfter: 100 }));
-  out.push(B.p("Kilasy T6", { bold: true, size: 30, align: AlignmentType.CENTER, spacingAfter: 300 }));
-  const cov = img(rootDir, "images/img_seansa22.png", 440);
+  out.push(B.p("Kilasy T4", { bold: true, size: 30, align: AlignmentType.CENTER, spacingAfter: 300 }));
+  const cov = img(rootDir, "images/img_s16.png", 440);
   if (cov) out.push(cov);
   out.push(B.p("Bokin'ny mpampianatra sy ny mpianatra", { size: 26, align: AlignmentType.CENTER, spacingBefore: 300, spacingAfter: 80 }));
   out.push(B.p("Takela-panomanan-desona \u2022 Lesona misy sary \u2022 Fanazaran-tena misy valiny", { italics: true, size: 24, align: AlignmentType.CENTER, spacingAfter: 400 }));
@@ -63,10 +63,10 @@ function buildTenyFampidirana() {
   const out = [];
   out.push(B.heading("TENY FAMPIDIRANA", { anchorId: "tenyfampidirana", size: 30, align: AlignmentType.CENTER, spacingAfter: 200 }));
   [
-    "Ity boky Tantara ho an'ny kilasy T4 ity dia narafitra mifanaraka tanteraka amin'ny fandaharam-pianarana ofisialin'ny Ministeran'ny Fanabeazam-pirenena (PE nohavaozina, Édition 2026) sy ny FRP Tantara T4. Feno ao ny lohahevitra efatra : ny fampidirana ny fianarana Tantara, i Madagasikara taorian'ny fahaleovantena, ny fifandraisana amin'ireo firenena afrikanina sy ny nosy manodidina, ary ny vakoka sy ny harem-pirenena — mizara ho seho 27, misy fanadinana efatra sy fanadinana akapobeny amin'ny fiafaran'ny taona.",
+    "Ity boky Tantara ho an'ny kilasy T4 ity dia narafitra mifanaraka tanteraka amin'ny fandaharam-pianarana ofisialin'ny Ministeran'ny Fanabeazam-pirenena (PE nohavaozina, Édition 2026) sy ny FRP Tantara T4. Feno ao ny lohahevitra enina : ny habaka sy ny fotoana ; ny tarehimarika romana sy ny taonjato ; ny angano, ny tantara ary ny loharano fanovozan-kevitra ; ny anarana « Madagasikara » sy ireo vanim-potoana ; ny fiavian'ny Malagasy ; ary ny vakoka sy ny harem-pirenena — mizara ho seho 27 : lesona 21 sy tombana enina (iray isaky ny lohahevitra).",
     "Ny seho tsirairay dia manaraka rafitra tokana : ny TAKELA-PANOMANAN-DESONA ho an'ny mpampianatra, misy ny fizotry ny lesona feno (famerenana, lesona vaovao amin'ny dingana enina, tombana) ; ny LESONA misy sary ho an'ny mpianatra, asongadina amin'ny loko ny teny manan-danja ; ary ny FANAZARAN-TENA isaina 10 isa, arahina valiny amin'ny antsipiriany.",
-    "Nomena lanja manokana ny tontolo malagasy : ny frizy kronolojikan'ireo Repoblika, ny tahirin-kevitra nalaina avy amin'ny FRP, ary ny rakibolana kely mampifandray ny teny malagasy sy ny terme officiel. Amin'ny teny malagasy ny boky manontolo, fa ny anaran-tsamirery sy ny terme officiel (UA, COI, référendum...) dia notazonina araka ny endriny ofisialy.",
-    "Fanadinana efatra sy fanadinana akapobeny iray, samy misy valiny sy sedra fanitsiana avokoa, no ahafahan'ny mpianatra mizaha toetra ny fahaizany. Ny fafan'ny mpianatra eo am-piandohan'ny boky no anampiana azy hanara-maso ny fandrosoany isaky ny seho.",
+    "Natao ho an'ny ankizy 9-10 taona ity boky ity ka nomena lanja manokana ny sary : sary maro isaky ny lesona, frizy, sari-tany, tabilao ary fanazaran-tena an-tsary. Amin'ny teny malagasy ny boky manontolo, fa ny anaran-tsamirery sy ny terme officiel dia notazonina araka ny endriny ofisialy.",
+    "Tombana enina, samy misy famerenana sy laza adina isaina 20 isa ary valiny, no ahafahan'ny mpianatra mizaha toetra ny fahaizany isaky ny lohahevitra. Ny fafan'ny mpianatra eo am-piandohan'ny boky no anampiana azy hanara-maso ny fandrosoany isaky ny seho.",
     "Enga anie ity boky ity mba ho namana mahasoa ho an'ny mpampianatra sy ny mpianatra, ary hampitombo ny fitiavan'ny mpianatra rehetra ny tantaran'ny fireneny.",
   ].forEach(t => out.push(B.p(t, { size: 24, spacingAfter: 120, align: AlignmentType.JUSTIFIED })));
   out.push(B.p("Ny ekipa J-Learn", { italics: true, size: 24, align: AlignmentType.RIGHT, spacingBefore: 120 }));
@@ -90,13 +90,13 @@ function buildTorolalana() {
       "Ny rakibolana kely dia mampifandray ny teny malagasy sy ny terme officiel amin'ny teny frantsay.",
       "Ny fanazaran-tena isaina 10 isa dia hizahana toetra ny fahaizanao ; ny valiny, miloko mavokely, dia jerena aorian'ny fikarohana ihany !",
     ]],
-    ["Ny fanadinana", [
-      "Isaky ny faran'ny lohahevitra dia misy seho famerenana (ny tsara ho tadidina) sy laza adina isaina 20 isa, misy valiny sy sedra fanitsiana.",
-      "Ny fanadinana akapobeny (seho 27) dia mandrakotra ny fandaharam-pianarana manontolo : fiomanana amin'ny fanadinana amin'ny fiafaran'ny taona.",
+    ["Ny tombana", [
+      "Isaky ny faran'ny lohahevitra dia misy seho famerenana (ny tsara ho tadidina) sy laza adina isaina 20 isa, misy valiny avokoa.",
+      "Ny tombana farany (seho 27) dia miaraka amin'ny famerenana ny lohahevitra rehetra : fiomanana amin'ny tombana amin'ny fiafaran'ny taona.",
       "Ny fafan'ny mpianatra, pejy manaraka, dia anamarihana ny seho vita sy ny isa azo.",
     ]],
     ["Ny tovana", [
-      "Any amin'ny faran'ny boky : ny frizy famintinana, ny fafan'ireo filoham-panjakana, ny sigla, ny rakibolana, ny sari-tany, ny taratasy fizahan-toetra, ny fanondroana ary ny bibliografia-webografia.",
+      "Any amin'ny faran'ny boky : ny frizin'ny vanim-potoana, ny sari-tany roa, ny tarehimarika romana, ny kalandrie, ny fiteny malagasy sy ireo fiteny niaviany, ny sigla, ny rakibolana ary ny bibliografia-webografia miaraka amin'ny lisitry ny sary.",
       "Mifandray ny fizahan-takila : ao amin'ny endrika nomerika dia mitondra mankany amin'ny pejy ilaina ny fipihana ny lohateny iray.",
     ]],
   ];

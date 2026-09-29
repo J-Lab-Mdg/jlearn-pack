@@ -1,0 +1,23 @@
+// Sary faha-2 isaky ny seho (apetraka ao amin'ny LESONA, aorian'ny votoaty)
+module.exports = {
+  1:  { image: "images/img2_s01.png", legende: "Ny tontolo voajanahary (havia) sy ny tontolo nohajariana (havanana)" },
+  2:  { image: "images/img2_s02.png", legende: "Ny fiarahamonina : ao an-tokantrano, ao an-tsekoly, ao an-tanàna" },
+  3:  { image: "images/img2_s03.png", legende: "Ny kodiaran'ny herinandro : andro fito mifandimby" },
+  4:  { image: "images/img2_s04.png", legende: "Ny volana 12 amin'ny taona iray" },
+  6:  { image: "images/img2_s06.png", legende: "Tabilao : ny tarehimarika romana sy ny fanoratana ny taonjato" },
+  8:  { image: "images/img2_s08.png", legende: "Sary an'eritreritra : ny tontolon'ny angano" },
+  10: { image: "images/img2_s10.png", legende: "Ireo karazana loharano fanovozan-kevitra telo" },
+  12: { image: "images/img2_s12.png", legende: "Sambon'ny mpivarotra venezianina sy ny sari-tany fahiny" },
+  13: { image: "images/img2_s13.png", legende: "Frizy : ireo vanim-potoana dimy nifandimby" },
+  15: { image: "images/img2_s15.png", legende: "Sari-tany : ireo faritra niavian'ny razamben'ny Malagasy" },
+  16: { image: "images/img2_s16.png", legende: "Ny fanamboarana lakana teo amoron-dranomasina" },
+  17: { image: "images/img2_s17.png", legende: "Sari-tany : ireo morontsiraka efatra niantsonan'ny mpiavy" },
+  18: { image: "images/img2_s18.png", legende: "Frizy : ireo andiany efatra nifandimby" },
+  19: { image: "images/img2_s19.png", legende: "Ny anaran'ny andro malagasy dia avy amin'ny teny arabo" },
+  20: { image: "images/img2_s20.png", legende: "Fambolena, jono, sakafo ary omby : lova avy amin'ny razambe" },
+  21: { image: "images/img2_s21.png", legende: "Andiany maro no tonga, vahoaka iray no niforona" },
+  23: { image: "images/img2_s23.png", legende: "Toerana manan-tantara : vavahady, hadivory, toerana masina" },
+  24: { image: "images/img2_s24.png", legende: "Ny harena voajanahary : vatosoa, rano, ala, tany" },
+  25: { image: "images/img2_s25.png", legende: "Ireo tombontsoa azo amin'ny fizahantany" },
+  26: { image: "images/img2_s26.png", legende: "Ao anaty tranom-bakoka : voaaro ireo vakoka sarobidy" },
+};
