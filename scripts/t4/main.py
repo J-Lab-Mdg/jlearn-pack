@@ -15,6 +15,7 @@ from plan import UNITS, flat_seances, TOTAL_SEANCES
 import content_unit1 as U1
 import content_unit2 as U2
 import content_unit3 as U3
+import content_unit4 as U4
 
 OUT = os.path.join(os.path.dirname(os.path.dirname(HERE)),
                     "ST T4 [PE] Fiche de preparation sujet corriges J-Learn.docx")
@@ -156,6 +157,15 @@ def main():
     B.add_unit_divider(doc, roman, title, ras, valeurs, unit_seances)
 
     contents = [U3.S1, U3.S2, U3.S3, U3.S4, U3.S5, U3.S6, U3.S7, U3.S8, U3.S9]
+    for s, content in zip(unit_seances, contents):
+        build_seance(doc, s, content)
+
+    # ---- UNITE IV ----
+    roman, title, hours, valeurs, ras, seances_list = UNITS[3]
+    unit_seances = [s for s in ALL_SEANCES if s["unit_roman"] == roman]
+    B.add_unit_divider(doc, roman, title, ras, valeurs, unit_seances)
+
+    contents = [U4.S1, U4.S2, U4.S3, U4.S4, U4.S5, U4.S6]
     for s, content in zip(unit_seances, contents):
         build_seance(doc, s, content)
 
