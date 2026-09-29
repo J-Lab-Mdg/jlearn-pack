@@ -14,6 +14,7 @@ import builder as B
 from plan import UNITS, flat_seances, TOTAL_SEANCES
 import content_unit1 as U1
 import content_unit2 as U2
+import content_unit3 as U3
 
 OUT = os.path.join(os.path.dirname(os.path.dirname(HERE)),
                     "ST T4 [PE] Fiche de preparation sujet corriges J-Learn.docx")
@@ -25,7 +26,10 @@ def build_lecon(doc, s):
     B.lecon_title_repeat(doc, s["title"])
     if s.get("cover_image"):
         path, caption = s["cover_image"]
-        B.add_image(doc, path, caption)
+        if os.path.exists(path):
+            B.add_image(doc, path, caption)
+        else:
+            print("WARNING: missing image, skipped:", path)
     for item in s["lecon"]:
         kind, text = item[0], item[1]
         if kind == "section":
@@ -37,7 +41,10 @@ def build_lecon(doc, s):
                 B.body_text(doc, para_text)
         elif kind == "image":
             path, caption = text
-            B.add_image(doc, path, caption)
+            if os.path.exists(path):
+                B.add_image(doc, path, caption)
+            else:
+                print("WARNING: missing image, skipped:", path)
     B.exercices_heading(doc)
     for header, rest in s["exercices"]:
         for i, line in enumerate(rest.split("\n")):
@@ -140,6 +147,15 @@ def main():
     B.add_unit_divider(doc, roman, title, ras, valeurs, unit_seances)
 
     contents = [U2.S1, U2.S2, U2.S3, U2.S4, U2.S5, U2.S6, U2.S7, U2.S8, U2.S9, U2.S10]
+    for s, content in zip(unit_seances, contents):
+        build_seance(doc, s, content)
+
+    # ---- UNITE III ----
+    roman, title, hours, valeurs, ras, seances_list = UNITS[2]
+    unit_seances = [s for s in ALL_SEANCES if s["unit_roman"] == roman]
+    B.add_unit_divider(doc, roman, title, ras, valeurs, unit_seances)
+
+    contents = [U3.S1, U3.S2, U3.S3, U3.S4, U3.S5, U3.S6, U3.S7, U3.S8, U3.S9]
     for s, content in zip(unit_seances, contents):
         build_seance(doc, s, content)
 
