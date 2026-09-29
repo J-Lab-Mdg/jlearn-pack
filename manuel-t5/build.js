@@ -1,5 +1,4 @@
-// Assemblage du Manuel Anglais T5 J-Learn — V1 (en cours)
-// Unités présentes : 1, 2, 3 — les suivantes sont ajoutées bloc par bloc.
+// Assemblage du Manuel Anglais T5 J-Learn — version complète (10 unités + annexes)
 const fs = require("fs");
 const path = require("path");
 const { Document, Packer, Table, TableRow, WidthType } = require("docx");
@@ -13,6 +12,9 @@ const unit5 = require("./unit5");
 const unit6 = require("./unit6");
 const unit7 = require("./unit7");
 const unit8 = require("./unit8");
+const unit9 = require("./unit9");
+const unit10 = require("./unit10");
+const annexes = require("./annexes");
 
 // ---------- couverture ----------
 function cover() {
@@ -117,7 +119,25 @@ function contents() {
     tocLink("s38", "    Session 38 — Revision"),
     tocLink("s39", "    Session 39 — T5 Test paper"),
     p("", { after: 60 }),
-    p([run("Units 9 and 10 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
+    tocLink("unit9", "UNIT 9 — MY FAMILY (Sessions 40–45)", { bold: true, size: 26 }),
+    tocLink("s40", "    Session 40 — The family tree"),
+    tocLink("s41", "    Session 41 — Reading the family words, my family tree"),
+    tocLink("s42", "    Session 42 — Who is this? — the gallery walk"),
+    tocLink("s43", "    Session 43 — We are a family! (role play)"),
+    tocLink("s44", "    Session 44 — Revision"),
+    tocLink("s45", "    Session 45 — T5 Test paper"),
+    p("", { after: 60 }),
+    tocLink("unit10", "UNIT 10 — WILD ANIMALS (Sessions 46–49)", { bold: true, size: 26 }),
+    tocLink("s46", "    Session 46 — The wild animals"),
+    tocLink("s47", "    Session 47 — Counting to 100, how many animals?"),
+    tocLink("s48", "    Session 48 — Revision"),
+    tocLink("s49", "    Session 49 — T5 Test paper"),
+    p("", { after: 60 }),
+    tocLink("annexes", "ANNEXES", { bold: true, size: 26 }),
+    tocLink("ann1", "    Annex 1 — Picture dictionary"),
+    tocLink("ann2", "    Annex 2 — Songs and rhymes"),
+    tocLink("ann3", "    Annex 3 — Pronunciation guide"),
+    tocLink("ann4", "    Annex 4 — Flashcards to cut out"),
   ];
 }
 
@@ -172,7 +192,10 @@ async function main() {
         ...unit5(), pageBreak(),
         ...unit6(), pageBreak(),
         ...unit7(), pageBreak(),
-        ...unit8(),
+        ...unit8(), pageBreak(),
+        ...unit9(), pageBreak(),
+        ...unit10(), pageBreak(),
+        ...annexes(),
       ],
     }],
   });
