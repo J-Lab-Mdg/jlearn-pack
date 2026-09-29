@@ -1,5 +1,5 @@
 // Assemblage du Manuel Anglais T6 J-Learn — V1 (en cours)
-// Unités présentes : 1, 2, 3, 4, 5 — les suivantes sont ajoutées bloc par bloc.
+// Unités présentes : 1, 2, 3, 4, 5, 6 — les suivantes sont ajoutées bloc par bloc.
 const fs = require("fs");
 const path = require("path");
 const { Document, Packer, Table, TableRow, WidthType } = require("docx");
@@ -10,6 +10,7 @@ const unit2 = require("./unit2");
 const unit3 = require("./unit3");
 const unit4 = require("./unit4");
 const unit5 = require("./unit5");
+const unit6 = require("./unit6");
 
 // ---------- couverture ----------
 function cover() {
@@ -125,7 +126,23 @@ function contents() {
     tocLink("s51", "    Session 51 — Revision"),
     tocLink("s52", "    Session 52 — T6 Test paper"),
     p("", { after: 60 }),
-    p([run("Units 6 and 7 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
+    tocLink("unit6", "UNIT 6 — PEOPLE’S APPEARANCE (Sessions 53–66)", { bold: true, size: 26 }),
+    tocLink("s53", "    Session 53 — The body parts (1): the head"),
+    tocLink("s54", "    Session 54 — The body parts (2): trunk and limbs"),
+    tocLink("s55", "    Session 55 — Simon says! — the imperatives"),
+    tocLink("s56", "    Session 56 — The five senses"),
+    tocLink("s57", "    Session 57 — Listening: “This is Anna”"),
+    tocLink("s58", "    Session 58 — The clothes"),
+    tocLink("s59", "    Session 59 — She is wearing… — the present continuous"),
+    tocLink("s60", "    Session 60 — What does he look like? — the adjectives"),
+    tocLink("s61", "    Session 61 — Traditional clothing here and there"),
+    tocLink("s62", "    Session 62 — Reading: “Emma and her friends at the park”"),
+    tocLink("s63", "    Session 63 — Present simple or present continuous?"),
+    tocLink("s64", "    Session 64 — Writing: my favourite famous person"),
+    tocLink("s65", "    Session 65 — Revision"),
+    tocLink("s66", "    Session 66 — T6 Test paper"),
+    p("", { after: 60 }),
+    p([run("Unit 7 and the Annexes are coming in the next part of the book.", { italic: true, color: C.GRAY })]),
   ];
 }
 
@@ -174,7 +191,8 @@ async function main() {
         ...unit2(), pageBreak(),
         ...unit3(), pageBreak(),
         ...unit4(), pageBreak(),
-        ...unit5(),
+        ...unit5(), pageBreak(),
+        ...unit6(),
       ],
     }],
   });
