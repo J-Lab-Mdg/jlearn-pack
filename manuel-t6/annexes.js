@@ -199,7 +199,9 @@ function songs() {
   return [
     ...annexTitle("ann2", "2", "SONGS AND CHANTS"),
     p([run("All the songs, rhymes and chants of the year. Scan the QR code or use the link to listen and download.",
-      { italic: true, color: C.GRAY, size: 24 })], { center: true, after: 160 }),
+      { italic: true, color: C.GRAY, size: 24 })], { center: true, after: 80 }),
+    p([run("Note for the teacher: the traditional songs (the alphabet song, the number rhyme, the days of the week…) also exist in many versions on the Internet. The QR code version is the one that matches the words of this book — use it first; other versions are a nice bonus when the words differ a little. The chants written for this book exist only here.",
+      { italic: true, color: C.GRAY, size: 22 })], { after: 160 }),
 
     themeBar("♪ THE ALPHABET SONG (Unit 1)"),
     p("", { after: 60 }),

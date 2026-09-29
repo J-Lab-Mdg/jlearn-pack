@@ -215,7 +215,9 @@ function songs() {
   return [
     ...annexTitle("ann2", "2", "SONGS AND RHYMES"),
     p([run("All the songs and rhymes of the year. Scan the QR code or use the link to listen and download.",
-      { italic: true, color: C.GRAY, size: 24 })], { center: true, after: 160 }),
+      { italic: true, color: C.GRAY, size: 24 })], { center: true, after: 80 }),
+    p([run("Note for the teacher: the traditional songs (One little finger, the months of the year…) also exist in many versions on the Internet. The QR code version is the one that matches the words of this book — use it first; other versions are a nice bonus when the words differ a little. The rhymes and songs written for this book exist only here.",
+      { italic: true, color: C.GRAY, size: 22 })], { after: 160 }),
 
     themeBar("♪ THE “PARTS OF THE DAY” RHYME (Unit 1)"),
     p("", { after: 60 }),
