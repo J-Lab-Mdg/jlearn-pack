@@ -473,6 +473,8 @@ S6 = {
     "theme": THEME, "ras_theme": RAS_THEME_2, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "découvrir les rôles culturels des plantes dans les traditions et événements de sa communauté.",
     "support": "témoignages ou documents sur les usages symboliques de plantes (canne à sucre, riz), fiche d'enquête.",
+    "cover_image": ("scripts/t4/generated_images/u2_s6_a_famorana.jpg",
+                     "La canne à sucre partagée lors d'un famorana : un rôle symbolique fort."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -513,6 +515,8 @@ S6 = {
         ("body", "Le riz (vary) occupe une place centrale dans de nombreuses cérémonies malgaches : il est "
                  "offert, partagé, et accompagne les grandes étapes de la vie (naissance, mariage, "
                  "famadihana)."),
+        ("image", ("scripts/t4/generated_images/u2_s6_b_riz.jpg",
+                   "Le riz partagé en famille lors d'une grande cérémonie malgache.")),
         ("section", "4. D'autres exemples selon les régions"),
         ("body", "Selon les régions de Madagascar, d'autres plantes ont un rôle symbolique : des fleurs pour "
                  "orner une tombe, des feuilles de bananier pour préparer certains plats de fête, ou des "
@@ -558,6 +562,8 @@ S7 = {
     "theme": THEME, "ras_theme": RAS_THEME_2, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "déterminer les rôles des plantes pour l'environnement.",
     "support": "photos d'un terrain boisé et d'un terrain érodé sans végétation, tableau noir.",
+    "cover_image": ("scripts/t4/generated_images/u2_s7_a_colline.jpg",
+                     "Colline boisée contre colline érodée : l'impact de la disparition des plantes."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -596,6 +602,8 @@ S7 = {
         ("section", "3. Les plantes offrent un abri"),
         ("body", "Les arbres et les buissons abritent de nombreux animaux : oiseaux, insectes, lémuriens dans "
                  "les forêts malgaches. Sans plantes, beaucoup de ces animaux n'auraient ni nourriture ni refuge."),
+        ("image", ("scripts/t4/generated_images/u2_s7_b_racines.jpg",
+                   "Les racines protègent le sol ; le feuillage abrite les animaux.")),
         ("section", "4. Une responsabilité pour chacun"),
         ("body", "Parce que les plantes rendent tous ces services, il est important de ne pas couper les arbres "
                  "sans raison, de reboiser les zones dégradées et de protéger les espaces boisés autour du "
@@ -643,6 +651,8 @@ S8 = {
     "theme": THEME, "ras_theme": RAS_THEME_2, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "élaborer une fiche de synthèse présentant les différents rôles des plantes de sa communauté.",
     "support": "fiche d'enquête préparée à l'avance, résultats d'une enquête auprès de la famille ou de la communauté.",
+    "cover_image": ("scripts/t4/generated_images/u2_s8_a_enquete.jpg",
+                     "Interroger sa famille : une source précieuse de connaissances sur les plantes locales."),
     "deroulement": [
         ("Étapes", "Déroulement de la leçon", "Déroulement de la leçon", "Technique et Stratégie", "Support et Matériel", "Observation"),
         ("", "Enseignant", "Apprenants", "", "", ""),
@@ -685,6 +695,8 @@ S8 = {
                  "préparer une tisane contre le rhume) et un rôle économique (son huile essentielle est vendue "
                  "et exportée). Il est cultivé dans plusieurs régions de Madagascar et fait vivre des familles "
                  "grâce à sa récolte. »"),
+        ("image", ("scripts/t4/generated_images/u2_s8_b_fiche.jpg",
+                   "Exemple de fiche de synthèse illustrée : le ravintsara.")),
         ("section", "4. Ce que cette enquête nous apprend"),
         ("body", "Une même plante peut cumuler plusieurs rôles à la fois. Cette diversité montre à quel point "
                  "les plantes sont précieuses pour la vie quotidienne d'une communauté malgache, et pourquoi il "
