@@ -1,5 +1,5 @@
 // Assemblage du Manuel Anglais T6 J-Learn — V1 (en cours)
-// Unités présentes : 1, 2, 3, 4 — les suivantes sont ajoutées bloc par bloc.
+// Unités présentes : 1, 2, 3, 4, 5 — les suivantes sont ajoutées bloc par bloc.
 const fs = require("fs");
 const path = require("path");
 const { Document, Packer, Table, TableRow, WidthType } = require("docx");
@@ -9,6 +9,7 @@ const unit1 = require("./unit1");
 const unit2 = require("./unit2");
 const unit3 = require("./unit3");
 const unit4 = require("./unit4");
+const unit5 = require("./unit5");
 
 // ---------- couverture ----------
 function cover() {
@@ -111,7 +112,20 @@ function contents() {
     tocLink("s40", "    Session 40 — Revision"),
     tocLink("s41", "    Session 41 — T6 Test paper"),
     p("", { after: 60 }),
-    p([run("Units 5 to 7 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
+    tocLink("unit5", "UNIT 5 — FAMILY (Sessions 42–52)", { bold: true, size: 26 }),
+    tocLink("s42", "    Session 42 — The extended family"),
+    tocLink("s43", "    Session 43 — Listening: “My family”"),
+    tocLink("s44", "    Session 44 — One and many — plural nouns"),
+    tocLink("s45", "    Session 45 — The possessive case"),
+    tocLink("s46", "    Session 46 — This, that, these, those"),
+    tocLink("s47", "    Session 47 — Talking about my relatives"),
+    tocLink("s48", "    Session 48 — Reading: “My grandmother Lala” (1)"),
+    tocLink("s49", "    Session 49 — Reading (2): grandparents here and there"),
+    tocLink("s50", "    Session 50 — Writing: my extended family"),
+    tocLink("s51", "    Session 51 — Revision"),
+    tocLink("s52", "    Session 52 — T6 Test paper"),
+    p("", { after: 60 }),
+    p([run("Units 6 and 7 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
   ];
 }
 
@@ -159,7 +173,8 @@ async function main() {
         ...unit1(), pageBreak(),
         ...unit2(), pageBreak(),
         ...unit3(), pageBreak(),
-        ...unit4(),
+        ...unit4(), pageBreak(),
+        ...unit5(),
       ],
     }],
   });
