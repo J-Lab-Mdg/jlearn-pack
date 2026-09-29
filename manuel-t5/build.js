@@ -10,6 +10,9 @@ const unit2 = require("./unit2");
 const unit3 = require("./unit3");
 const unit4 = require("./unit4");
 const unit5 = require("./unit5");
+const unit6 = require("./unit6");
+const unit7 = require("./unit7");
+const unit8 = require("./unit8");
 
 // ---------- couverture ----------
 function cover() {
@@ -93,7 +96,28 @@ function contents() {
     tocLink("s23", "    Session 23 — Revision"),
     tocLink("s24", "    Session 24 — T5 Test paper"),
     p("", { after: 60 }),
-    p([run("Units 6 to 10 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
+    tocLink("unit6", "UNIT 6 — MY DREAM CLASSROOM (Sessions 25–29)", { bold: true, size: 26 }),
+    tocLink("s25", "    Session 25 — Counting from 40 to 70, more or less!"),
+    tocLink("s26", "    Session 26 — Reading the numbers 40 to 70"),
+    tocLink("s27", "    Session 27 — My dream classroom"),
+    tocLink("s28", "    Session 28 — Revision"),
+    tocLink("s29", "    Session 29 — T5 Test paper"),
+    p("", { after: 60 }),
+    tocLink("unit7", "UNIT 7 — MEALS (Sessions 30–33)", { bold: true, size: 26 }),
+    tocLink("s30", "    Session 30 — Everyday food"),
+    tocLink("s31", "    Session 31 — What did you have for breakfast?"),
+    tocLink("s32", "    Session 32 — Revision"),
+    tocLink("s33", "    Session 33 — T5 Test paper"),
+    p("", { after: 60 }),
+    tocLink("unit8", "UNIT 8 — IN MY HOUSE (Sessions 34–39)", { bold: true, size: 26 }),
+    tocLink("s34", "    Session 34 — The rooms of the house"),
+    tocLink("s35", "    Session 35 — The furniture and the objects"),
+    tocLink("s36", "    Session 36 — Reading the house words"),
+    tocLink("s37", "    Session 37 — I describe a house"),
+    tocLink("s38", "    Session 38 — Revision"),
+    tocLink("s39", "    Session 39 — T5 Test paper"),
+    p("", { after: 60 }),
+    p([run("Units 9 and 10 and the Annexes are coming in the next parts of the book.", { italic: true, color: C.GRAY })]),
   ];
 }
 
@@ -145,7 +169,10 @@ async function main() {
         ...unit2(), pageBreak(),
         ...unit3(), pageBreak(),
         ...unit4(), pageBreak(),
-        ...unit5(),
+        ...unit5(), pageBreak(),
+        ...unit6(), pageBreak(),
+        ...unit7(), pageBreak(),
+        ...unit8(),
       ],
     }],
   });
