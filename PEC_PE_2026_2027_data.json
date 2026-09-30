@@ -1,23 +1,16 @@
 {
-  "totals": {
-    "RPI": 1100500,
-    "FCE": 393000,
-    "VOI": 7896000,
-    "GRAND": 9389500,
-    "CAISSE": 1493500
+  "eleves_diavina": {
+    "V": 82,
+    "L": 58,
+    "T": 140
   },
-  "eleves": 145,
-  "pascoma": 29000,
-  "sport": 72500,
-  "corrections": [
-    "Sifflet vy",
-    "LETSARASON",
-    "145 eleves pascoma/sport",
-    "no table fill",
-    "title centered",
-    "total outside table",
-    "date right",
-    "ST bold italic",
-    "font base 12"
-  ]
+  "pascoma_sport_isany": 140,
+  "totals": {
+    "RPI": 1098000,
+    "FCE": 393000,
+    "VOI": 7895000,
+    "GRAND": 9386000,
+    "CAISSE": 1491000
+  },
+  "note": "Header T aligned to 140 (Pascoma/Sport unchanged). L adjusted 63→58 so V+L=T."
 }
