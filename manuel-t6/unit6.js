@@ -814,6 +814,115 @@ function lesson() {
   ];
 }
 
+// ---------- leçons du jour (une par fiche) ----------
+function dayLesson(sessionNo, title, children) {
+  return [
+    p([run(`LESSON OF THE DAY — SESSION ${sessionNo}`, { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run(title, { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    ...children,
+    p("", { after: 80 }),
+    p([run("I copy the lesson of the day in my copy-book.", { italic: true, color: C.GRAY, size: 22 })], { center: true }),
+  ];
+}
+function lessonS53() {
+  return dayLesson(53, "THE BODY PARTS (1): THE HEAD", [
+    img("u6_body.png", 380, 768 / 1408),
+    grid(BODY1, 3),
+    p("", { after: 60 }),
+    pr([run("On the face: ", { bold: true }), ...kw("eyes", "aïz"), run("  "), ...kw("ears", "irz"), run("  "), ...kw("a nose", "e nôouz"), run("  "), ...kw("a mouth", "e maouss"), run("  "), ...kw("teeth", "tisse")]),
+    pr([run("My + body part: ", { bold: true }), run("my head, my hair, my cheeks — always with the little word!", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS54() {
+  return dayLesson(54, "THE BODY PARTS (2): TRUNK AND LIMBS", [
+    grid(BODY2, 3),
+    p("", { after: 60 }),
+    pr([run("The three parts of the body: ", { bold: true }), run("the "), ...kw("head", "hède"), run(", the "), ...kw("trunk", "treunnk"), run(" (chest, back, belly), the "), ...kw("limbs", "limz"), run(" (arms and legs).")]),
+    pr([run("The traps: ", { bold: true, color: C.RED }), run("one foot → two "), ...kw("feet", "fite"), run(", one tooth → two "), ...kw("teeth", "tisse"), run(" — irregular plurals!")]),
+  ]);
+}
+function lessonS55() {
+  return dayLesson(55, "SIMON SAYS! — THE IMPERATIVES", [
+    simonBox(),
+    p("", { after: 60 }),
+    pr([run("The command: ", { bold: true }), ...kw("Touch your nose!", "teutch iôr nôouz"), run("   "), ...kw("Clap your hands!", "klap iôr hanndz")]),
+    pr([run("The negative: ", { bold: true }), ...kw("Don’t move!", "dôounte mouve"), run(" — "), run("Don’t + verb", { bold: true, color: C.BLUE }), run(", that’s all!")]),
+    pr([run("The game rule: I obey only when I hear “Simon says”!", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS56() {
+  return dayLesson(56, "THE FIVE SENSES", [
+    img("u6_senses.png", 380, 768 / 1408),
+    grid(SENSES.map(([a, b]) => [a, b]), 3, 22),
+    p("", { after: 60 }),
+    pr([run("The pattern: ", { bold: true }), run("I + sense verb + with my + body part", { bold: true, color: C.BLUE }), run(" → I see with my eyes.")]),
+  ]);
+}
+function lessonS57() {
+  return dayLesson(57, "LISTENING: “THIS IS ANNA”", [
+    annaBox(),
+    p("", { after: 60 }),
+    pr([run("How to listen well: ", { bold: true }), run("1. Who is Anna? 2. What is she like (tall? hair?)? 3. What is she wearing?")]),
+    pr([run("I describe with two verbs: ", { bold: true }), run("She is…", { bold: true, color: C.BLUE }), run(" (tall) and "), run("She has…", { bold: true, color: C.BLUE }), run(" (long hair).")]),
+  ]);
+}
+function lessonS58() {
+  return dayLesson(58, "THE CLOTHES", [
+    img("u6_clothes.png", 380, 768 / 1408),
+    grid(CLOTHES, 3),
+    p("", { after: 60 }),
+    pr([run("The verbs: ", { bold: true }), ...kw("to wear", "tou ouèr"), run("   "), ...kw("to put on", "tou poute one"), run("   "), ...kw("to take off", "tou téik of")]),
+    pr([run("Careful: ", { bold: true, color: C.RED }), run("trousers, shorts, glasses, socks are always PLURAL — There are my trousers!")]),
+  ]);
+}
+function lessonS59() {
+  return dayLesson(59, "SHE IS WEARING… — THE PRESENT CONTINUOUS", [
+    pr([run("The formula: ", { bold: true }), run("am / is / are + verb-ing", { bold: true, color: C.BLUE }), run(" — for what happens NOW!")]),
+    pr([...kw("She is wearing a red t-shirt.", "chi iz ouèrinng e rède ti-cheurte")]),
+    pr([...kw("What are you wearing today?", "ouate âr iou ouèrinng toudéi"), run("  →  "), ...kw("I am wearing my school uniform.", "aï am ouèrinng maï skoul iounifôrm")], { after: 60 }),
+    pr([run("The -ing traps: ", { bold: true, color: C.RED }), run("make → making (the e falls), run → running (double letter), lie → lying — see Annex 5!")]),
+  ]);
+}
+function lessonS60() {
+  return dayLesson(60, "WHAT DOES HE LOOK LIKE? — THE ADJECTIVES", [
+    grid(ADJ, 3, 22),
+    p("", { after: 60 }),
+    pr([...kw("What does she look like?", "ouate deuz chi louk laïk"), run("  →  "), ...kw("She is tall and pretty.", "chi iz tôl ande priti")]),
+    pr([run("The plan: ", { bold: true }), run("He/She is… (tall) + He/She has… (long hair) + He/She is wearing… — always with kind words!")]),
+  ]);
+}
+function lessonS61() {
+  return dayLesson(61, "TRADITIONAL CLOTHING HERE AND THERE", [
+    pr([run("Madagascar: ", { bold: true }), run("the "), ...kw("lamba", ""), run(", the "), ...kw("lambahoany", ""), run(", the "), ...kw("malabary", ""), run(".")]),
+    pr([run("The Anglophone world: ", { bold: true }), run("the "), ...kw("kilt", "kilte"), run(" (Scotland), the "), ...kw("cowboy hat", "kaobôï hate"), run(" (USA), the "), ...kw("suit and tie", "soute annde taï"), run(" (England).")], { after: 60 }),
+    pr([run("Every country dresses its history — we respect them all!", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS62() {
+  return dayLesson(62, "READING DAY: “EMMA AND HER FRIENDS AT THE PARK”", [
+    pr([run("The key words of the text: ", { bold: true }), ...kw("a park", "e pârk"), run("  "), ...kw("to play", "tou pléi"), run("  "), ...kw("a kite", "e kaïte"), run("  "), ...kw("happy", "hapi")], { after: 60 }),
+    pr([run("How to read well: ", { bold: true }), run("1. Find who is at the park. 2. Find what each friend IS WEARING (the -ing sentences!). 3. Read with a happy voice.")]),
+    audioBox([{ qr: "qr_t6_u6_emma.png", label: "Emma and her friends at the park — listen and read", url: AUDIO.emma }], COLOR),
+  ]);
+}
+function lessonS63() {
+  return dayLesson(63, "PRESENT SIMPLE OR PRESENT CONTINUOUS?", [
+    grammarBox(),
+    p("", { after: 60 }),
+    pr([run("EVERY DAY → simple: ", { bold: true }), ...kw("I wear my uniform every day.", "aï ouèr maï iounifôrm èvri déi")]),
+    pr([run("NOW → continuous: ", { bold: true }), ...kw("Today I am wearing a pullover.", "toudéi aï am ouèrinng e poulôouveur")]),
+    pr([run("The clue words: ", { bold: true }), run("every day, always, often", { bold: true, color: C.BLUE }), run(" → simple — "), run("now, today, look!", { bold: true, color: C.BLUE }), run(" → continuous.")]),
+  ]);
+}
+function lessonS64() {
+  return dayLesson(64, "WRITING DAY: MY FAVOURITE FAMOUS PERSON", [
+    pr([run("The plan of my paragraph: ", { bold: true }), run("1. My favourite famous person is… — 2. He/She is… (tall, thin…) — 3. He/She has… (short hair…) — 4. Today he/she is wearing… — 5. I like him/her because…")], { after: 60 }),
+    pr([run("The writing rules: ", { bold: true }), run("capital letter for the name — kind adjectives only — one -ing sentence at least!")]),
+    pr([run("Model: ", { bold: true }), run("My favourite famous person is a singer. She is tall and pretty. She has long black hair. Today she is wearing a beautiful lamba. I like her because she sings for the children.", { italic: true })]),
+  ]);
+}
+
+
 // ---------- lecture ----------
 function readingPage() {
   const L = (t) => p([run(t, { size: SZ.BODY })], { after: 50 });
@@ -922,18 +1031,18 @@ function testPaper() {
 module.exports = function unit6() {
   return [
     ...opening(), pageBreak(),
-    ...ficheS53(), pageBreak(),
-    ...ficheS54(), pageBreak(),
-    ...ficheS55(), pageBreak(),
-    ...ficheS56(), pageBreak(),
-    ...ficheS57(), pageBreak(),
-    ...ficheS58(), pageBreak(),
-    ...ficheS59(), pageBreak(),
-    ...ficheS60(), pageBreak(),
-    ...ficheS61(), pageBreak(),
-    ...ficheS62(), pageBreak(),
-    ...ficheS63(), pageBreak(),
-    ...ficheS64(), pageBreak(),
+    ...ficheS53(), pageBreak(), ...lessonS53(), pageBreak(),
+    ...ficheS54(), pageBreak(), ...lessonS54(), pageBreak(),
+    ...ficheS55(), pageBreak(), ...lessonS55(), pageBreak(),
+    ...ficheS56(), pageBreak(), ...lessonS56(), pageBreak(),
+    ...ficheS57(), pageBreak(), ...lessonS57(), pageBreak(),
+    ...ficheS58(), pageBreak(), ...lessonS58(), pageBreak(),
+    ...ficheS59(), pageBreak(), ...lessonS59(), pageBreak(),
+    ...ficheS60(), pageBreak(), ...lessonS60(), pageBreak(),
+    ...ficheS61(), pageBreak(), ...lessonS61(), pageBreak(),
+    ...ficheS62(), pageBreak(), ...lessonS62(), pageBreak(),
+    ...ficheS63(), pageBreak(), ...lessonS63(), pageBreak(),
+    ...ficheS64(), pageBreak(), ...lessonS64(), pageBreak(),
     ...lesson(), pageBreak(),
     ...readingPage(), pageBreak(),
     ...exercises(), pageBreak(),

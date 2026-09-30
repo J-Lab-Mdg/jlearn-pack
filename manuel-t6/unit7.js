@@ -572,15 +572,72 @@ function testPaper() {
   ];
 }
 
+// ---------- leçons du jour (une par fiche) ----------
+function dayLesson(sessionNo, title, children) {
+  return [
+    p([run(`LESSON OF THE DAY — SESSION ${sessionNo}`, { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run(title, { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    ...children,
+    p("", { after: 80 }),
+    p([run("I copy the lesson of the day in my copy-book.", { italic: true, color: C.GRAY, size: 22 })], { center: true }),
+  ];
+}
+function lessonS67() {
+  return dayLesson(67, "THE SCHOOL BUILDINGS", [
+    img("u7_school.png", 380, 768 / 1408),
+    grid(SCHOOL, 3),
+    p("", { after: 60 }),
+    pr([...kw("Where is the library?", "ouèr iz ze laïbreri"), run("  →  "), ...kw("It’s next to the office.", "its nèkste tou zi ofiss")]),
+  ]);
+}
+function lessonS68() {
+  return dayLesson(68, "LISTENING: “TOM’S SCHOOL”", [
+    pr([run("The key words of the dialogue: ", { bold: true }), ...kw("a schedule", "e skèdjoule"), run("  "), ...kw("a subject", "e seubdjikte"), run("  "), ...kw("huge", "hioudj"), run("  "), ...kw("recess", "rissèss")], { after: 60 }),
+    pr([run("How to listen well: ", { bold: true }), run("1. First: what places do you hear? 2. Second: what time does Tom start? 3. Third: what do they eat in the cafeteria?")]),
+    pr([run("I answer with There is / There are: ", { bold: true }), ...kw("There is a huge library.", "zèr iz e hioudj laïbreri")]),
+  ]);
+}
+function lessonS69() {
+  return dayLesson(69, "THERE IS, THERE ARE — MY SCHOOL AND TOM’S SCHOOL", [
+    pr([run("ONE: ", { bold: true }), ...kw("There is a library.", "zèr iz e laïbreri"), run("   MANY: ", { bold: true }), ...kw("There are many classrooms.", "zèr âr mèni klâsroumz")]),
+    pr([run("Question: ", { bold: true }), ...kw("Is there a gym?", "iz zèr e djime"), run("  /  "), ...kw("Are there trees?", "âr zèr triz")]),
+    pr([run("Negative: ", { bold: true }), ...kw("There is no gym.", "zèr iz nôou djime")], { after: 60 }),
+    pr([run("To compare: ", { bold: true }), ...kw("Both have a flag.", "bôouss hav e flague"), run("   "), ...kw("Only one has grass and trees.", "ôounli ouane haz grâss annde triz")]),
+  ]);
+}
+function lessonS70() {
+  return dayLesson(70, "THE HOUSE FURNITURE", [
+    img("u7_bedroom.png", 380, 768 / 1408),
+    grid(FURNITURE, 3),
+    p("", { after: 60 }),
+    pr([run("The rooms: ", { bold: true }), ...kw("the bedroom", "ze bèdroume"), run("  "), ...kw("the kitchen", "ze kitchène"), run("  "), ...kw("the bathroom", "ze bâssroume"), run("  "), ...kw("the living room", "ze livinng roume")]),
+  ]);
+}
+function lessonS71() {
+  return dayLesson(71, "READING DAY: “MY NEW HOUSE”", [
+    bedroomBox(),
+    p("", { after: 60 }),
+    pr([run("How to read well: ", { bold: true }), run("1. Find the rooms of the house. 2. Find the furniture with There is / There are. 3. Read the happy sentences with a happy voice!")]),
+    audioBox([{ qr: "qr_t6_u7_housetour.png", label: "The house tour — listen and follow", url: AUDIO.housetour }], COLOR),
+  ]);
+}
+function lessonS72() {
+  return dayLesson(72, "WRITING DAY: MY FAVOURITE PLACE", [
+    pr([run("The plan of my paragraph: ", { bold: true }), run("1. My favourite place is… — 2. There is / There are… (two sentences) — 3. I like it because… — 4. one feeling (I am happy there).")], { after: 60 }),
+    pr([run("The writing rules: ", { bold: true }), run("There is + singular, There are + plural — and because for the reason!")]),
+    pr([run("Model: ", { bold: true }), run("My favourite place is the school yard. There is a big tree. There are flowers and birds. I like it because I play with my friends there. I am happy!", { italic: true })]),
+  ]);
+}
+
 module.exports = function unit7() {
   return [
     ...opening(), pageBreak(),
-    ...ficheS67(), pageBreak(),
-    ...ficheS68(), pageBreak(),
-    ...ficheS69(), pageBreak(),
-    ...ficheS70(), pageBreak(),
-    ...ficheS71(), pageBreak(),
-    ...ficheS72(), pageBreak(),
+    ...ficheS67(), pageBreak(), ...lessonS67(), pageBreak(),
+    ...ficheS68(), pageBreak(), ...lessonS68(), pageBreak(),
+    ...ficheS69(), pageBreak(), ...lessonS69(), pageBreak(),
+    ...ficheS70(), pageBreak(), ...lessonS70(), pageBreak(),
+    ...ficheS71(), pageBreak(), ...lessonS71(), pageBreak(),
+    ...ficheS72(), pageBreak(), ...lessonS72(), pageBreak(),
     ...lesson(), pageBreak(),
     ...readingPage(), pageBreak(),
     ...exercises(), pageBreak(),
