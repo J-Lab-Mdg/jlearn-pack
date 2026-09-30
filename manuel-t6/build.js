@@ -28,7 +28,8 @@ function foreword() {
     p("This book follows the official T6 English syllabus (Programme d’études T6) and its Pedagogical Resources Booklet."),
     p("In T6, English becomes a big subject: THREE hours every week. The pupils understand and use basic English in oral communication, read and understand short English sentences, and write short paragraphs in English."),
     p("Every session has three big steps: I. Review — II. New lesson — III. Evaluation. The teacher writes the duration of each step in the sheet."),
-    p("Every unit has: one opening page, the preparation sheets, one lesson with pictures and pronunciation help, exercises with an answer key, one revision session, one test paper, and one “I can…” page for the pupil."),
+    p("Every preparation sheet is followed by a one-page “Lesson of the day”: the summary the pupils copy in their copy-books. At the end of each unit, one big lesson gathers everything, with pictures and pronunciation help."),
+    p("Every unit has: one opening page, the preparation sheets with their lessons of the day, the big unit lesson, exercises with an answer key, one revision session, one test paper, and one “I can…” page for the pupil. Five annexes close the book — including a full conjugation guide with all the exceptions explained."),
     p("Dialogues, songs, rhymes and reading texts can be listened to with a phone: scan the QR code or open the link at the bottom of the page.", { after: 160 }),
   ];
 }
@@ -47,6 +48,9 @@ function howToUse() {
     p("II. New lesson — six small steps: Warm-up, Presentation, Observation, Analysis, Synthesis, Practice."),
     p("III. Evaluation — the pupils work alone."),
     p("The duration boxes are empty (………): the teacher writes his/her own timing.", { after: 120 }),
+    p([run("The two kinds of lesson pages", { bold: true, size: SZ.SUB })], { after: 80 }),
+    p("LESSON OF THE DAY — one page after every preparation sheet: it is the board summary of that session. The pupils copy it in their copy-books."),
+    p("LESSON — UNIT — one big page at the end of the unit: it gathers all the sessions. Perfect for the revision and the test!", { after: 120 }),
     p([run("The three skills of T6", { bold: true, size: SZ.SUB })], { after: 80 }),
     p("ORAL COMMUNICATION — listen (pre / while / post-listening) and speak."),
     p("READING — read short texts with the right intonation and punctuation."),
@@ -58,7 +62,7 @@ function howToUse() {
     line("Pink", C.PINK, "answer keys."),
     p("", { after: 60 }),
     p([run("The audio", { bold: true, size: SZ.SUB })], { after: 80 }),
-    p("Scan the QR code with a phone, or open the link: you can listen and download the MP3 file. E.A. means “Expected Answer”.", { after: 160 }),
+    p("Scan the QR code with a phone, or open the link: you can listen and download the MP3 file. In Annex 2, the traditional songs also have a YouTube link for the video version. E.A. means “Expected Answer”.", { after: 160 }),
   ];
 }
 
