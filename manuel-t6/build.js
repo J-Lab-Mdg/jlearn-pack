@@ -17,7 +17,7 @@ const annexes = require("./annexes");
 // ---------- couverture ----------
 function cover() {
   const f = path.join(__dirname, "img", "cover_anglais_t6.png");
-  if (fs.existsSync(f)) return [img("cover_anglais_t6.png", 455, 1264 / 843)];
+  if (fs.existsSync(f)) return [img("cover_anglais_t6.png", 718, 1264 / 843)];
   return [p([run("ANGLAIS T6 — LESSON PLAN (cover to come)", { bold: true, size: 40 })], { center: true })];
 }
 
@@ -25,7 +25,7 @@ function cover() {
 function foreword() {
   return [
     p([run("FOREWORD", { bold: true, size: 32 })], { center: true, after: 160 }),
-    p("This book follows the official T6 English syllabus of the Ministry of National Education of Madagascar (Programme d’études T6) and its Pedagogical Resources Booklet."),
+    p("This book follows the official T6 English syllabus (Programme d’études T6) and its Pedagogical Resources Booklet."),
     p("In T6, English becomes a big subject: THREE hours every week. The pupils understand and use basic English in oral communication, read and understand short English sentences, and write short paragraphs in English."),
     p("Every session has three big steps: I. Review — II. New lesson — III. Evaluation. The teacher writes the duration of each step in the sheet."),
     p("Every unit has: one opening page, the preparation sheets, one lesson with pictures and pronunciation help, exercises with an answer key, one revision session, one test paper, and one “I can…” page for the pupil."),
@@ -159,6 +159,7 @@ function contents() {
     tocLink("ann2", "    Annex 2 — Songs and chants"),
     tocLink("ann3", "    Annex 3 — Pronunciation guide"),
     tocLink("ann4", "    Annex 4 — Flashcards to cut out"),
+    tocLink("ann5", "    Annex 5 — Conjugation guide"),
   ];
 }
 
@@ -196,9 +197,11 @@ async function main() {
       }],
     },
     sections: [{
+      properties: { page: { margin: { top: 283, bottom: 283, left: 283, right: 283 } } },
+      children: [...cover()],
+    }, {
       properties: { page: { margin: { top: 720, bottom: 720, left: 750, right: 750 } } },
       children: [
-        ...cover(), pageBreak(),
         ...foreword(), pageBreak(),
         ...howToUse(), pageBreak(),
         ...contents(), pageBreak(),

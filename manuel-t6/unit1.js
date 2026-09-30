@@ -782,18 +782,113 @@ function testPaper() {
   ];
 }
 
+// ---------- leçons du jour (une par fiche) ----------
+function dayLesson(sessionNo, title, children) {
+  return [
+    p([run(`LESSON OF THE DAY — SESSION ${sessionNo}`, { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run(title, { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    ...children,
+    p("", { after: 80 }),
+    p([run("I copy the lesson of the day in my copy-book.", { italic: true, color: C.GRAY, size: 22 })], { center: true }),
+  ];
+}
+function lessonS1() {
+  return dayLesson(1, "SOCIALISING", [
+    img("u1_socialising.png", 380, 768 / 1408),
+    pr([run("To greet: ", { bold: true }), ...kw("Hello!", "hèlôou"), run("  "), ...kw("Hi!", "haï"), run("  "), ...kw("How are you?", "haou âr iou"), run("  →  "), ...kw("Fine, thanks!", "faïne, tenks")]),
+    pr([run("To welcome: ", { bold: true }), ...kw("Nice to meet you!", "naïss tou mite iou"), run("  →  "), ...kw("Nice to meet you too!", "naïss tou mite iou tou")]),
+    pr([run("To introduce: ", { bold: true }), ...kw("May I introduce you to my friend?", "méi aï inntrodiouss iou tou maï frènde"), run("  "), ...kw("This is Sara.", "zis iz sara")]),
+    pr([run("To take leave: ", { bold: true }), ...kw("I have to go now.", "aï hav tou gôou naou"), run("  "), ...kw("Bye! / Goodbye! / See you!", "baï / goudbaï / si iou")]),
+  ]);
+}
+function lessonS2() {
+  return dayLesson(2, "PERSONAL INFORMATION — THE VERB TO BE", [
+    pr([...kw("What’s your name?", "ouots iôr néime"), run("  →  "), ...kw("My name is Lisa.", "maï néime iz lisa")]),
+    pr([...kw("How old are you?", "haou ôould âr iou"), run("  →  "), ...kw("I’m 14 years old.", "aïm fôrtine yirz ôould")]),
+    pr([...kw("Where are you from?", "ouèr âr iou frome"), run("  →  "), ...kw("I’m from Canada.", "aïm frome kanada")]),
+    pr([...kw("Where do you live?", "ouèr dou iou live"), run("  →  "), ...kw("I live in Toronto.", "aï live ine toronnto")], { after: 80 }),
+    grammarTable("TO BE", [
+      ["I", "I am (I’m)", "I am not (I’m not)", "Am I…?"],
+      ["you / we / they", "you are (you’re)", "you aren’t", "Are you…?"],
+      ["he / she / it", "he is (he’s)", "he isn’t", "Is he…?"],
+    ]),
+    pr([run("Short answers: ", { bold: true }), ...kw("Yes, I am.", "yèss aï am"), run("  "), ...kw("No, he isn’t.", "nôou hi izeunte")], { after: 60 }),
+    pr([run("The prepositions: ", { bold: true }), run("in", { bold: true, color: C.BLUE }), run(" + town (in Toronto) — "), run("at", { bold: true, color: C.BLUE }), run(" + place (at school, at home).")]),
+  ]);
+}
+function lessonS3() {
+  return dayLesson(3, "INTRODUCING A FRIEND — THE VERB TO HAVE", [
+    grammarTable("TO HAVE", [
+      ["I / you / we / they", "I have", "I don’t have", "Do you have…?"],
+      ["he / she / it", "he has", "he doesn’t have", "Does he have…?"],
+    ]),
+    pr([run("Short answers: ", { bold: true }), ...kw("Yes, I do.", "yèss aï dou"), run("  "), ...kw("No, I don’t.", "nôou aï dôounte")], { after: 60 }),
+    pr([run("To introduce a friend: ", { bold: true }), ...kw("This is my friend Leo.", "zis iz maï frènde léo"), run("  "), ...kw("He is 14. He has a bike.", "hi iz fôrtine. hi haz e baïk")], { after: 80 }),
+    dialogue2Box(),
+  ]);
+}
+function lessonS4() {
+  return dayLesson(4, "THE ENGLISH ALPHABET", [
+    img("u1_alphabet.png", 380, 768 / 1408),
+    pr([run("The 26 letters: "), run("A B C D E F G H I J K L M N O P Q R S T U V W X Y Z", { bold: true, color: C.BLUE, size: 30 })], { after: 40 }),
+    pr([run("Careful! ", { bold: true, color: C.RED }), run("A", { bold: true, color: C.BLUE }), run(" [éi] — "), run("E", { bold: true, color: C.BLUE }), run(" [i] — "), run("I", { bold: true, color: C.BLUE }), run(" [aï] — "), run("G", { bold: true, color: C.BLUE }), run(" [dji] — "), run("J", { bold: true, color: C.BLUE }), run(" [djéi] — "), run("W", { bold: true, color: C.BLUE }), run(" [deubeuliou]")], { after: 80 }),
+    audioBox([{ qr: "qr_t6_u1_alphabet.png", label: "The alphabet song — listen and sing", url: AUDIO.alphabet }], COLOR),
+  ]);
+}
+function lessonS5() {
+  return dayLesson(5, "HOW DO YOU SPELL…?", [
+    pr([...kw("How do you spell “book”?", "haou dou iou spèl bouk"), run("  →  "), ...kw("It’s B-O-O-K.", "its bi-ôou-ôou-kéi")]),
+    pr([...kw("How do you spell your name?", "haou dou iou spèl iôr néime"), run("  →  "), ...kw("K-O-T-O.", "kéi-ôou-ti-ôou")], { after: 60 }),
+    pr([run("The tip: ", { bold: true }), run("for two same letters we can say "), run("double", { bold: true, color: C.BLUE }), run(": B-double O-K!")]),
+    pr([run("We spell slowly, letter by letter — and we check with the class.", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS6() {
+  return dayLesson(6, "NUMBERS 0–100 — THERE IS / THERE ARE", [
+    img("u1_numbers.png", 380, 768 / 1408),
+    rhymeBox(),
+    p("", { after: 60 }),
+    pr([run("a", { bold: true, color: C.BLUE }), run(" + consonant sound: a book — "), run("an", { bold: true, color: C.BLUE }), run(" + vowel sound: an eraser.")]),
+    pr([run("There is", { bold: true, color: C.BLUE }), run(" + singular: There is a bag. — "), run("There are", { bold: true, color: C.BLUE }), run(" + plural: There are three pens.")]),
+    pr([...kw("How many books do you have?", "haou mèni bouks dou iou hav"), run("  →  "), ...kw("I have five books.", "aï hav faïv bouks")], { after: 80 }),
+    audioBox([{ qr: "qr_t6_u1_numbers.png", label: "The number rhyme and big numbers — listen and say", url: AUDIO.numbers }], COLOR),
+  ]);
+}
+function lessonS7() {
+  return dayLesson(7, "PHONE NUMBERS — SORRY AND THANK YOU", [
+    pr([...kw("Can I have your phone number?", "kane aï hav iôr fôoune neumbeur"), run("  →  "), ...kw("It’s 034 12 345 67.", "its zirô-tsri-fôr…")]),
+    pr([run("We say the number digit by digit: ", { italic: true, color: C.GRAY, size: 24 }), run("zero — three — four — one — two…", { italic: true, color: C.GRAY, size: 24 })], { after: 60 }),
+    pr([run("The polite pairs: ", { bold: true }), ...kw("I’m sorry!", "aïm sori"), run(" → "), ...kw("That’s okay.", "zats ôou-kéi")]),
+    pr([...kw("Thank you!", "tenk iou"), run(" → "), ...kw("You’re welcome.", "iôr ouèlkeum")]),
+  ]);
+}
+function lessonS8() {
+  return dayLesson(8, "READING DAY: “NEW FRIENDS AT SCHOOL”", [
+    pr([run("The key words of the text: ", { bold: true }), ...kw("a student", "e stioudennte"), run("  "), ...kw("a desk", "e dèsk"), run("  "), ...kw("a notebook", "e nôoutbouk"), run("  "), ...kw("only", "ôounli")], { after: 60 }),
+    pr([run("How to read well: ", { bold: true }), run("1. Read the title first. 2. Find the names and the numbers. 3. The voice goes UP for the questions (?) and DOWN at the period (.).")]),
+    pr([run("The text uses everything of Unit 1: greetings, to be, to have, numbers, sorry and thank you!", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS9() {
+  return dayLesson(9, "WRITING DAY: MY FIRST ENGLISH DIALOGUE", [
+    pr([run("The plan of a good dialogue: ", { bold: true }), run("1. greet — 2. ask and give personal information — 3. one polite pair (sorry/thank you) — 4. take leave.")], { after: 60 }),
+    pr([run("The writing rules: ", { bold: true }), run("a CAPITAL letter at the start, a "), run("?", { bold: true, color: C.BLUE }), run(" for the questions, a "), run("!", { bold: true, color: C.BLUE }), run(" for the feelings, one line per speaker.")]),
+    pr([run("Model: ", { bold: true }), run("— Hello! What’s your name? — My name is Hery. — How old are you? — I’m 12. — Goodbye! ", { italic: true })]),
+  ]);
+}
+
 module.exports = function unit1() {
   return [
     ...opening(), pageBreak(),
-    ...ficheS1(), pageBreak(),
-    ...ficheS2(), pageBreak(),
-    ...ficheS3(), pageBreak(),
-    ...ficheS4(), pageBreak(),
-    ...ficheS5(), pageBreak(),
-    ...ficheS6(), pageBreak(),
-    ...ficheS7(), pageBreak(),
-    ...ficheS8(), pageBreak(),
-    ...ficheS9(), pageBreak(),
+    ...ficheS1(), pageBreak(), ...lessonS1(), pageBreak(),
+    ...ficheS2(), pageBreak(), ...lessonS2(), pageBreak(),
+    ...ficheS3(), pageBreak(), ...lessonS3(), pageBreak(),
+    ...ficheS4(), pageBreak(), ...lessonS4(), pageBreak(),
+    ...ficheS5(), pageBreak(), ...lessonS5(), pageBreak(),
+    ...ficheS6(), pageBreak(), ...lessonS6(), pageBreak(),
+    ...ficheS7(), pageBreak(), ...lessonS7(), pageBreak(),
+    ...ficheS8(), pageBreak(), ...lessonS8(), pageBreak(),
+    ...ficheS9(), pageBreak(), ...lessonS9(), pageBreak(),
     ...lesson(), pageBreak(),
     ...readingPage(), pageBreak(),
     ...exercises(), pageBreak(),

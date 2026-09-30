@@ -2,9 +2,19 @@
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, unitBanner, audioBox, img, pageBreak,
         cell, noBorders, bookmarkTitle } = B;
-const { Table, TableRow, WidthType, VerticalAlign, BorderStyle } = require("docx");
+const { Table, TableRow, WidthType, VerticalAlign, BorderStyle, ExternalHyperlink } = require("docx");
 
 const COLOR = "5B2C6F"; // violet foncé — couleur des annexes
+
+// ligne "Also on YouTube" — lien cliquable simple sous une chanson traditionnelle
+function youtubeLine(label, url, after = 140) {
+  return p([
+    run("Also on YouTube: ", { italic: true, color: C.GRAY, size: 22 }),
+    new ExternalHyperlink({ link: url, children: [
+      run(label + " — " + url.replace("https://www.", ""), { italic: true, color: C.BLUE, size: 22 }),
+    ]}),
+  ], { center: true, after });
+}
 
 // ---------------- outils locaux ----------------
 function wordGrid(items, perRow) {
@@ -214,7 +224,7 @@ function songs() {
     p("", { after: 60 }),
     audioBox([{ qr: "qr_t6_u1_alphabet.png", label: "The alphabet song — listen and sing",
       url: DRIVE.alphabet }], COLOR),
-    p("", { after: 140 }),
+    youtubeLine("“The ABC Song” (KidsTV123)", "https://www.youtube.com/watch?v=75p-N9YKqNo"),
 
     themeBar("♪ THE NUMBER RHYME (Unit 1)"),
     p("", { after: 60 }),
@@ -226,7 +236,7 @@ function songs() {
     p("", { after: 60 }),
     audioBox([{ qr: "qr_t6_u1_numbers.png", label: "The numbers and the rhyme — listen and say",
       url: DRIVE.numbers }], COLOR),
-    p("", { after: 140 }),
+    youtubeLine("“One Two Buckle My Shoe” (traditional)", "https://www.youtube.com/watch?v=fhIm8dn1Gmg"),
 
     themeBar("♪ THE DAYS OF THE WEEK (Unit 3)"),
     p("", { after: 60 }),
@@ -237,7 +247,7 @@ function songs() {
     p("", { after: 60 }),
     audioBox([{ qr: "qr_t6_u3_days.png", label: "The days of the week — listen and sing",
       url: DRIVE.days }], COLOR),
-    p("", { after: 140 }),
+    youtubeLine("“Days of the Week Song” (Dream English)", "https://www.youtube.com/watch?v=36n93jvjkDs"),
 
     themeBar("♪ THE JAZZ CHANT “I DON’T LIKE CHEESE!” (Unit 4)"),
     p("", { after: 60 }),
@@ -347,6 +357,105 @@ function flashcards() {
   ];
 }
 
+// ---------------- Annexe 5 : guide de conjugaison ----------------
+function conjTable(header, rows) {
+  const hc = header.map(h => cell(
+    [p([run(h, { bold: true, color: COLOR, size: 24 })], { center: true, after: 20 })],
+    { shade: "F5F0FA", vAlign: VerticalAlign.CENTER }));
+  const trs = rows.map(r => new TableRow({ children: r.map((t, i) => cell(
+    [p([run(t, { bold: i === 0, size: 24, color: i === 0 ? C.BLUE : C.BLACK })], { after: 20 })],
+    { vAlign: VerticalAlign.CENTER })) }));
+  return new Table({ width: { size: 10400, type: WidthType.DXA },
+    rows: [new TableRow({ children: hc }), ...trs] });
+}
+const rule = (title, runs, o = {}) => pr(
+  [run("• " + title + " — ", { bold: true, color: C.BLUE, size: 26 }), ...runs],
+  { after: o.after != null ? o.after : 70 });
+
+const IRREGULAR = [
+  ["be", "was / were"], ["have", "had"], ["do", "did"], ["go", "went"],
+  ["come", "came"], ["see", "saw"], ["say", "said"], ["eat", "ate"],
+  ["drink", "drank"], ["take", "took"], ["give", "gave"], ["get", "got"],
+  ["make", "made"], ["know", "knew"], ["think", "thought"], ["run", "ran"],
+  ["sit", "sat"], ["write", "wrote"], ["read", "read (red!)"], ["sing", "sang"],
+  ["swim", "swam"], ["buy", "bought"], ["tell", "told"], ["find", "found"],
+];
+function irregularGrid() {
+  const rows = [];
+  for (let i = 0; i < IRREGULAR.length; i += 3) {
+    rows.push(new TableRow({ children: IRREGULAR.slice(i, i + 3).map(([a, b]) => cell(
+      [p([run(a, { bold: true, color: C.BLUE, size: 26 }), run("  →  ", { size: 26 }),
+          run(b, { bold: true, size: 26 })], { center: true, after: 20 })],
+      { vAlign: VerticalAlign.CENTER })) }));
+  }
+  return new Table({ width: { size: 10400, type: WidthType.DXA }, rows });
+}
+function conjugation() {
+  return [
+    ...annexTitle("ann5", "5", "CONJUGATION GUIDE"),
+    p([run("All the verbs of the year — with the exceptions explained!", { italic: true, color: C.GRAY, size: 26 })], { center: true, after: 120 }),
+
+    themeBar("THE THREE STAR VERBS: BE, HAVE, DO"),
+    p("", { after: 40 }),
+    p([run("TO BE (to say who I am)", { bold: true, color: COLOR, size: 28 })], { after: 40 }),
+    conjTable(["Person", "+ (affirmative)", "− (negative)", "? (question)"], [
+      ["I", "I am (I’m)", "I am not (I’m not)", "Am I…?"],
+      ["you / we / they", "you are (you’re)", "you are not (aren’t)", "Are you…?"],
+      ["he / she / it", "he is (he’s)", "he is not (isn’t)", "Is he…?"],
+    ]),
+    p([run("Short answers: Yes, I am. — No, he isn’t.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    p([run("TO HAVE (to say what I possess)", { bold: true, color: COLOR, size: 28 })], { after: 40 }),
+    conjTable(["Person", "+ (affirmative)", "− (negative)", "? (question)"], [
+      ["I / you / we / they", "I have", "I do not have (don’t)", "Do you have…?"],
+      ["he / she / it", "he has", "he does not have (doesn’t)", "Does he have…?"],
+    ]),
+    p([run("Careful! have → HAS with he, she, it — a total exception!", { italic: true, color: C.RED, size: 24 })], { after: 80 }),
+    p([run("TO DO (the helper of questions and negatives)", { bold: true, color: COLOR, size: 28 })], { after: 40 }),
+    conjTable(["Person", "+ (affirmative)", "− (negative)", "? (question)"], [
+      ["I / you / we / they", "I do", "I don’t", "Do I…?"],
+      ["he / she / it", "he does (deuz!)", "he doesn’t", "Does he…?"],
+    ]),
+    p("", { after: 40 }), pageBreak(),
+
+    themeBar("A REGULAR VERB: TO LIKE"),
+    p("", { after: 40 }),
+    conjTable(["Person", "+ (affirmative)", "− (negative)", "? (question)"], [
+      ["I / you / we / they", "I like rice", "I don’t like rice", "Do you like rice?"],
+      ["he / she / it", "she likes rice", "she doesn’t like rice", "Does she like rice?"],
+    ]),
+    p([run("The golden rule: with he, she, it the verb takes -S… but watch the exceptions below!", { italic: true, color: C.GRAY, size: 24 })], { after: 100 }),
+
+    themeBar("THE -S OF HE / SHE / IT — AND ITS EXCEPTIONS"),
+    p("", { after: 40 }),
+    rule("Normal verbs: + -s", [run("he plays, she likes, it works.")]),
+    rule("After -s, -sh, -ch, -x, -o: + -ES", [run("he "), run("watches", { bold: true }), run(", she "), run("goes", { bold: true }), run(", it "), run("does", { bold: true }), run(". Why? “watchs” is impossible to say — the -es adds a little sound [iz]!")]),
+    rule("Consonant + y → -IES", [run("study → she "), run("studies", { bold: true }), run(", carry → he "), run("carries", { bold: true }), run(". But vowel + y keeps -s: play → he plays.")]),
+    rule("Total irregulars", [run("have → "), run("has", { bold: true }), run(", be → "), run("is", { bold: true }), run(". No rule — we learn them by heart!")], { after: 100 }),
+
+    themeBar("THE -ING FORM — AND ITS EXCEPTIONS"),
+    p("", { after: 40 }),
+    rule("Normal verbs: + -ing", [run("play → playing, read → reading.")]),
+    rule("Silent -e falls", [run("make → "), run("making", { bold: true }), run(", write → "), run("writing", { bold: true }), run(". The silent e is useless before -ing.")]),
+    rule("Short verb (1 vowel + 1 consonant): double the consonant", [run("run → "), run("running", { bold: true }), run(", sit → "), run("sitting", { bold: true }), run(", swim → "), run("swimming", { bold: true }), run(". The double letter keeps the short sound!")]),
+    rule("-ie → y", [run("lie → "), run("lying", { bold: true }), run(", die → "), run("dying", { bold: true }), run(".")], { after: 100 }),
+
+    themeBar("CAN, MAY AND THE IMPERATIVE"),
+    p("", { after: 40 }),
+    rule("can / may: never -s, never “to”", [run("he "), run("can swim", { bold: true }), run(" (not “he cans”, not “can to swim”). May I go out?")]),
+    rule("The imperative: the verb alone", [run("Listen! Be quick! Negative: "), run("Don’t", { bold: true }), run(" talk!")]),
+    rule("There is / There are", [run("There is a book (singular) — There are two books (plural).")], { after: 40 }),
+    pageBreak(),
+
+    themeBar("PREVIEW FOR SECONDARY SCHOOL: THE IRREGULAR PAST"),
+    p("", { after: 40 }),
+    pr([run("Next year you will talk about yesterday! Regular verbs simply add "), run("-ed", { bold: true, color: C.BLUE }), run(" (play → played, like → liked). But the most useful verbs change completely — no rule, we learn them by heart. Here is a first treasure list:")], { after: 80 }),
+    irregularGrid(),
+    p("", { after: 60 }),
+    pr([run("Careful! ", { bold: true, color: C.RED }), run("read → read: same letters, new sound [rèd]! And be has two pasts: I/he "), run("was", { bold: true }), run(", you/we/they "), run("were", { bold: true }), run(".")]),
+    p([run("Learn three verbs a week — in one term, the list is yours!", { italic: true, color: C.GRAY, size: 24 })]),
+  ];
+}
+
 // ---------------- page finale ----------------
 function finalPage() {
   return [
@@ -370,11 +479,13 @@ module.exports = function annexes() {
     p([run("Annex 2 — Songs and chants: with the audio", { size: 30 })], { after: 60 }),
     p([run("Annex 3 — Pronunciation guide: for the teacher", { size: 30 })], { after: 60 }),
     p([run("Annex 4 — Flashcards to cut out: for the games", { size: 30 })], { after: 60 }),
+    p([run("Annex 5 — Conjugation guide: all the verbs, with the exceptions", { size: 30 })], { after: 60 }),
     pageBreak(),
     ...pictureDictionary(), pageBreak(),
     ...songs(), pageBreak(),
     ...pronunciationGuide(), pageBreak(),
     ...flashcards(), pageBreak(),
+    ...conjugation(), pageBreak(),
     ...finalPage(),
   ];
 };

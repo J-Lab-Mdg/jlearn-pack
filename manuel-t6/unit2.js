@@ -334,12 +334,47 @@ function testPaper() {
   ];
 }
 
+// ---------- leçons du jour (une par fiche) ----------
+function dayLesson(sessionNo, title, children) {
+  return [
+    p([run(`LESSON OF THE DAY — SESSION ${sessionNo}`, { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run(title, { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    ...children,
+    p("", { after: 80 }),
+    p([run("I copy the lesson of the day in my copy-book.", { italic: true, color: C.GRAY, size: 22 })], { center: true }),
+  ];
+}
+function lessonS12() {
+  return dayLesson(12, "ASKING FOR CLARIFICATION", [
+    img("u2_clarify.png", 380, 768 / 1408),
+    clarifGrid(),
+    p("", { after: 60 }),
+    pr([run("When I don’t understand, I ask — always with ", { bold: true }), run("please", { bold: true, color: C.BLUE }), run("!", { bold: true })]),
+  ]);
+}
+function lessonS13() {
+  return dayLesson(13, "ASKING FOR PERMISSION — CAN AND MAY", [
+    img("u2_permission.png", 380, 768 / 1408),
+    pr([...kw("May I come in, please?", "méi aï keume ine plize"), run("  →  "), ...kw("Yes, you may. Go ahead.", "yèss iou méi. gôou euhèd")]),
+    pr([...kw("Can I open the window, please?", "kane aï ôoupeune ze ouinndôou plize"), run("  →  "), ...kw("No, sorry, you can’t.", "nôou, sori, iou kannte")], { after: 60 }),
+    pr([run("The rule: ", { bold: true }), run("can / may + verb without “to”", { bold: true, color: C.BLUE }), run("  →  May I go out? (never “May I to go out”)!")]),
+    pr([run("“May” is more polite than “can” — perfect for the teacher!", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS14() {
+  return dayLesson(14, "THE CLASSROOM DIALOGUE", [
+    pr([run("The imperative — to give an order: the verb alone! ", { bold: true }), ...kw("Be quick!", "bi kouik"), run("  "), ...kw("One by one, please!", "ouane baï ouane, plize"), run("  "), ...kw("Go ahead!", "gôou euhèd")], { after: 60 }),
+    pr([run("The plan of a classroom dialogue: ", { bold: true }), run("1. greet the teacher — 2. one clarification question — 3. one permission question — 4. thank and close.")]),
+    pr([run("Model: ", { bold: true }), run("— Excuse me, what does “window” mean, please? — It is this! — May I open the window, please? — Yes, go ahead. — Thank you!", { italic: true })]),
+  ]);
+}
+
 module.exports = function unit2() {
   return [
     ...opening(), pageBreak(),
-    ...ficheS12(), pageBreak(),
-    ...ficheS13(), pageBreak(),
-    ...ficheS14(), pageBreak(),
+    ...ficheS12(), pageBreak(), ...lessonS12(), pageBreak(),
+    ...ficheS13(), pageBreak(), ...lessonS13(), pageBreak(),
+    ...ficheS14(), pageBreak(), ...lessonS14(), pageBreak(),
     ...lesson(), pageBreak(),
     ...exercises(), pageBreak(),
     ...revision(), pageBreak(),
