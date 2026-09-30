@@ -758,18 +758,102 @@ function testPaper() {
   ];
 }
 
+// ---------- leçons du jour (une par fiche) ----------
+function dayLesson(sessionNo, title, children) {
+  return [
+    p([run(`LESSON OF THE DAY — SESSION ${sessionNo}`, { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run(title, { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    ...children,
+    p("", { after: 80 }),
+    p([run("I copy the lesson of the day in my copy-book.", { italic: true, color: C.GRAY, size: 22 })], { center: true }),
+  ];
+}
+function lessonS31() {
+  return dayLesson(31, "THE EVERYDAY FOOD", [
+    img("u4_food.png", 380, 768 / 1408),
+    grid(FOOD, 3),
+    p("", { after: 60 }),
+    pr([...kw("I’m hungry!", "aïm heunngri"), run(" = I want to eat.  "), ...kw("I’m thirsty!", "aïm seursti"), run(" = I want to drink.")]),
+  ]);
+}
+function lessonS32() {
+  return dayLesson(32, "WHAT’S FOR LUNCH?", [
+    img("u4_meal.png", 380, 768 / 1408),
+    pr([...kw("What’s for lunch?", "ouots fôr leunntch"), run("  →  "), ...kw("Rice with chicken!", "raïss ouiz tchikène")]),
+    pr([...kw("What’s for dessert?", "ouots fôr dizeurte"), run("  →  "), ...kw("Mangoes and yoghurt!", "manngôouz ande yogueurte")], { after: 60 }),
+    pr([run("At the table we say: ", { bold: true }), ...kw("It looks tasty!", "ite louks téisti"), run("  "), ...kw("What a delicious meal!", "ouate e dilicheuss mile")]),
+    pr([run("The three meals: ", { bold: true }), run("breakfast", { bold: true, color: C.BLUE }), run(" (morning) — "), run("lunch", { bold: true, color: C.BLUE }), run(" (noon) — "), run("dinner", { bold: true, color: C.BLUE }), run(" (evening).")]),
+  ]);
+}
+function lessonS33() {
+  return dayLesson(33, "OUR MEAL DIALOGUE", [
+    lunchDialogueBox(),
+    p("", { after: 60 }),
+    pr([run("The polite words of the meal: ", { bold: true }), ...kw("Here you are!", "hir iou âr"), run("  →  "), ...kw("Thank you!", "tenk iou"), run("  "), ...kw("Would you like some more?", "woud iou laïk seume môr")]),
+    pr([run("We play the dialogue with a friend — one line each, with a big smile!", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS34() {
+  return dayLesson(34, "THE FOUR TASTES", [
+    img("u4_tastes.png", 380, 768 / 1408),
+    grid(TASTES, 4),
+    p("", { after: 60 }),
+    pr([run("The sentence: ", { bold: true }), ...kw("It tastes sweet.", "ite téists souite"), run("  /  "), ...kw("Mangoes are sweet.", "manngôouz âr souite")]),
+    pr([run("Examples: ", { bold: true }), run("sugar → sweet — lemon → sour — salt → salty — black coffee → bitter.")]),
+  ]);
+}
+function lessonS35() {
+  return dayLesson(35, "I LIKE, I DON’T LIKE — THE JAZZ CHANT", [
+    chantBox(),
+    p("", { after: 60 }),
+    pr([...kw("I like chocolate.", "aï laïk tchoklite"), run("   "), ...kw("I don’t like cheese.", "aï dôounte laïk tchize")]),
+    pr([...kw("Do you like coffee?", "dou iou laïk kofi"), run("  →  "), ...kw("Yes, I do. / No, I don’t.", "yèss aï dou / nôou aï dôounte")], { after: 60 }),
+    pr([run("Remember: ", { bold: true }), run("she likes, she doesn’t like", { bold: true, color: C.BLUE }), run(" — the -s of he/she/it!")]),
+  ]);
+}
+function lessonS36() {
+  return dayLesson(36, "MY FAVOURITE FOOD", [
+    fruitDialogueBox(),
+    p("", { after: 60 }),
+    pr([...kw("Which one is your favourite?", "ouitch ouane iz iôr féivrite"), run("  →  "), ...kw("My favourite fruit is banana.", "maï féivrite froute iz banâna")]),
+    pr([...kw("What do you prefer?", "ouate dou iou prifeur"), run("  →  "), ...kw("I prefer mangoes.", "aï prifeur manngôouz")]),
+  ]);
+}
+function lessonS37() {
+  return dayLesson(37, "FOOD FROM THE ANGLOPHONE WORLD", [
+    pr([...kw("a hamburger", "e hammbeurgueur"), run(" (USA)   "), ...kw("a hot dog", "e hote dog"), run(" (USA)")]),
+    pr([...kw("fish and chips", "fich ande tchips"), run(" (England)   "), ...kw("a sandwich", "e sanndouitch"), run(" (England)")], { after: 60 }),
+    pr([run("The fun fact: ", { bold: true }), run("the sandwich has the name of an English lord — the Earl of Sandwich!", { italic: true })]),
+    pr([run("And in Madagascar? ", { bold: true }), run("Our rice, our romazava… every country has its star dish!", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS38() {
+  return dayLesson(38, "READING DAY: “MEALS AT MY HOUSE”", [
+    pr([run("The key words of the text: ", { bold: true }), ...kw("breakfast", "brèkfeuste"), run("  "), ...kw("bitter", "biteur"), run("  "), ...kw("sugar", "chougueur"), run("  "), ...kw("dessert", "dizeurte")], { after: 60 }),
+    pr([run("How to read well: ", { bold: true }), run("1. Find the three meals in the text. 2. Find who likes what. 3. Read the exclamations with energy: What a delicious week!")]),
+    pr([run("The text uses everything of Unit 4: the meals, the tastes, like and don’t like!", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS39() {
+  return dayLesson(39, "WRITING DAY: MY EVERYDAY MEALS", [
+    pr([run("The plan of my paragraph: ", { bold: true }), run("1. For breakfast, we have… — 2. For lunch, we have… — 3. For dinner, we have… — 4. one taste (it tastes…) — 5. my favourite food.")], { after: 60 }),
+    pr([run("The writing rules: ", { bold: true }), run("a CAPITAL letter at the start, a period at the end — and the -s of she likes!")]),
+    pr([run("Model: ", { bold: true }), run("For breakfast, we have rice soup and tea. For lunch, we have rice with beans. My favourite fruit is mango: it tastes so sweet!", { italic: true })]),
+  ]);
+}
+
 module.exports = function unit4() {
   return [
     ...opening(), pageBreak(),
-    ...ficheS31(), pageBreak(),
-    ...ficheS32(), pageBreak(),
-    ...ficheS33(), pageBreak(),
-    ...ficheS34(), pageBreak(),
-    ...ficheS35(), pageBreak(),
-    ...ficheS36(), pageBreak(),
-    ...ficheS37(), pageBreak(),
-    ...ficheS38(), pageBreak(),
-    ...ficheS39(), pageBreak(),
+    ...ficheS31(), pageBreak(), ...lessonS31(), pageBreak(),
+    ...ficheS32(), pageBreak(), ...lessonS32(), pageBreak(),
+    ...ficheS33(), pageBreak(), ...lessonS33(), pageBreak(),
+    ...ficheS34(), pageBreak(), ...lessonS34(), pageBreak(),
+    ...ficheS35(), pageBreak(), ...lessonS35(), pageBreak(),
+    ...ficheS36(), pageBreak(), ...lessonS36(), pageBreak(),
+    ...ficheS37(), pageBreak(), ...lessonS37(), pageBreak(),
+    ...ficheS38(), pageBreak(), ...lessonS38(), pageBreak(),
+    ...ficheS39(), pageBreak(), ...lessonS39(), pageBreak(),
     ...lesson(), pageBreak(),
     ...readingPage(), pageBreak(),
     ...exercises(), pageBreak(),
