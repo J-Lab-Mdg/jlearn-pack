@@ -85,8 +85,10 @@ function contents() {
     tocLink("s13", "    Session 13 — Reading (2): details, new words, “Women and work”"),
     tocLink("s14", "    Session 14 — Writing (1): sentences about dreams"),
     tocLink("s15", "    Session 15 — Writing (2): my introduction paragraph"),
+    tocLink("s16", "    Session 16 — Revision"),
+    tocLink("s17", "    Session 17 — Test paper"),
     p("", { after: 60 }),
-    p([run("… Sessions 16–17 (revision + test), Units 2 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p([run("… Units 2 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 

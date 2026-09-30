@@ -1230,6 +1230,131 @@ function lessonS15() {
   ];
 }
 
+// ---------- grande leçon d'unité ----------
+function bigLesson() {
+  return [
+    p([run("LESSON — UNIT 1", { bold: true, size: 30 })], { center: true, after: 120 }),
+    lessonTitle("PERSONAL COMMUNICATION"),
+    sub("1. The names of jobs"),
+    bullet([...kw("a teacher, a doctor, a nurse, a farmer, a mechanic", "e titcheur, e dokteur, e neurss, e fârmeur, e mékanik")]),
+    bullet([...kw("a driver, a cook, a police officer, a seller, a pilot", "e draïveur, e kouk, e poliss ofisseur, e sèleur, e païleute")]),
+    bullet([run("a", { bold: true, color: C.BLUE }), run(" + consonant sound: a doctor — "), run("an", { bold: true, color: C.BLUE }), run(" + vowel sound: an engineer, an artist")], { after: 100 }),
+    sub("2. Dreams and goals"),
+    bullet([...kw("What’s your dream? What are your goals?", "ouots iôr drime — ouate âr iôr gôoulz")]),
+    bullet([...kw("What would you like to be when you grow up?", "ouate woud iou laïk tou bi ouène iou grôou eup")]),
+    bullet([...kw("I want to be a doctor.", "aï ouonte tou bi e dokteur")]),
+    bullet([...kw("I’d like to be a pilot.", "aïd laïk tou bi e païleute"), run("  (I’d = I would)")]),
+    bullet([run("The rule: ", { bold: true }), run("want / would like / wish + TO + verb", { bold: true, color: C.BLUE }), run(" — the verb never changes!")], { after: 100 }),
+    sub("3. Good at, bad at + verb-ing"),
+    bullet([...kw("I’m good at drawing.", "aïm goud ate drôinng")]),
+    bullet([...kw("I’m bad at singing.", "aïm bade ate sinnguinng")]),
+    bullet([run("The rule: ", { bold: true }), run("good at / bad at + verb-ING (the gerund)", { bold: true, color: C.BLUE })], { after: 100 }),
+    sub("4. Introducing others"),
+    bullet([...kw("May I introduce you to Maria?", "méi aï inntrodiousse iou tou maria"), run("  (very polite)")]),
+    bullet([...kw("This is Tom. He is my friend.", "zis iz tome — hi iz maï frènde")]),
+    bullet([...kw("Nice to meet you! — Nice to meet you too!", "naïss tou mite iou — tou")], { after: 100 }),
+    sub("5. Countries and nationalities"),
+    bullet([...kw("Where are you from? — I’m from Madagascar. I’m Malagasy.", "ouèr âr iou frome — aïm frome madagaskar, aïm malagassi")]),
+    bullet([run("China → Chinese — Japan → Japanese — Spain → Spanish — England → English", { bold: true, color: C.BLUE })]),
+    bullet([run("Kenya → Kenyan — America → American — France → French", { bold: true, color: C.BLUE })]),
+    bullet([run("Always a CAPITAL letter: ", { bold: true, color: C.RED }), run("Madagascar, Malagasy!", { bold: true })], { after: 100 }),
+    sub("6. WH-questions"),
+    bullet([run("WHO", { bold: true, color: C.BLUE }), run(" → a person: "), run("Who is she?", { bold: true })]),
+    bullet([run("WHERE", { bold: true, color: C.BLUE }), run(" → a place: "), run("Where are you from?", { bold: true })]),
+    bullet([run("WHAT", { bold: true, color: C.BLUE }), run(" → a thing: "), run("What is your job?", { bold: true })], { after: 100 }),
+    sub("7. Asking and giving opinion"),
+    bullet([...kw("Do you think it is difficult?", "dou iou sinnk ite iz difikeulte")]),
+    bullet([...kw("Yes, I do. I think it is difficult.", "yèss aï dou — aï sinnk")]),
+    bullet([...kw("No, I don’t. I don’t think so.", "nôou aï dôonnte — aï dôonnte sinnk sôou")], { after: 140 }),
+    audioBox([
+      { qr: "qr_t7_u1_jobs.png", label: "The names of jobs — listen and repeat", url: AUDIO.jobs },
+      { qr: "qr_t7_u1_dialogue.png", label: "The dialogue at the garage", url: AUDIO.dialogue },
+      { qr: "qr_t7_u1_maria.png", label: "The interview with Maria and Tom", url: AUDIO.maria },
+      { qr: "qr_t7_u1_reading.png", label: "“My Dream Job” — the reading text", url: AUDIO.reading },
+    ], COLOR),
+  ];
+}
+
+// ---------- exercices corrigés ----------
+function exercises() {
+  return [
+    p([run("EXERCISES", { bold: true, size: 30 })], { center: true, after: 140 }),
+    pr([run("Exercise 1 (4 points). ", { bold: true }), run("A or an?")]),
+    p("1. …… mechanic.    2. …… engineer.    3. …… artist.    4. …… nurse.", { after: 120 }),
+    pr([run("Exercise 2 (4 points). ", { bold: true }), run("Complete with the right form:")]),
+    p("1. I want …… (be) a doctor.    2. She’d like …… (visit) Kenya."),
+    p("3. I’m good at …… (draw).    4. He’s bad at …… (sing).", { after: 120 }),
+    pr([run("Exercise 3 (4 points). ", { bold: true }), run("Give the nationality: Spain, China, Madagascar, France.")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 4 (4 points). ", { bold: true }), run("Complete with who, where or what:")]),
+    p("1. …… is your best friend?    2. …… are you from?"),
+    p("3. …… is your dream job?    4. …… wants to be a pilot?", { after: 120 }),
+    pr([run("Exercise 5 (4 points). ", { bold: true }), run("Write a mini-dialogue (4 lines): introduce a friend, ask his/her dream, give an opinion.")]),
+    p("", { after: 140 }),
+    p([run("Total: 20 points", { bold: true })], { after: 160 }),
+    p([run("ANSWER KEY", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
+    pAns("Exercise 1: 1. a  2. an  3. an  4. a (1 point each).", ["an"]),
+    pAns("Exercise 2: 1. to be  2. to visit  3. drawing  4. singing (1 point each).", ["to be", "drawing"]),
+    pAns("Exercise 3: Spanish — Chinese — Malagasy — French (1 point each).", ["Malagasy"]),
+    pAns("Exercise 4: 1. Who  2. Where  3. What  4. Who (1 point each).", ["Who"]),
+    pAns("Exercise 5: e.g. — This is Lova. — What would you like to be? — I’d like to be a nurse. — I think it is a beautiful job! (1 point per line).", ["This is Lova."]),
+  ];
+}
+
+// ---------- S16 — révision ----------
+function revision() {
+  return [
+    B.bookmarkTitle("s16", "SESSION 16 / 99", { bold: true, size: 28, after: 60 }),
+    p([run("REVISION — UNIT 1: PERSONAL COMMUNICATION", { bold: true, size: 26 })], { center: true, after: 140 }),
+    p([run("Now answer:", { bold: true })], { after: 80 }),
+    p("1. Name six jobs (with a or an)."),
+    pAns("E.A.: a teacher, a doctor, an engineer, a mechanic, a nurse, an artist…", ["an engineer"]),
+    p("2. What would you like to be when you grow up? Why?"),
+    pAns("E.A.: I’d like to be a … because I’m good at … / because I like …", ["I’d like to be"]),
+    p("3. Say the rule: want / would like / wish + …?"),
+    pAns("E.A.: + TO + verb: I want to be, she’d like to visit…", ["TO + verb"]),
+    p("4. Complete: I’m good at … (swim), he’s bad at … (dance)."),
+    pAns("E.A.: swimming — dancing (the gerund after at).", ["swimming"]),
+    p("5. Introduce your neighbour to me, politely."),
+    pAns("E.A.: May I introduce you to …? He/She is … He/She is from …", ["May I introduce you to"]),
+    p("6. Give the nationality: Spain, Kenya, China, Madagascar."),
+    pAns("E.A.: Spanish — Kenyan — Chinese — Malagasy (capital letters!).", ["Malagasy"]),
+    p("7. Ask me a WHO question, a WHERE question and a WHAT question."),
+    pAns("E.A.: Who is…? Where are you from? What is your dream job?", ["Who is…?"]),
+    p("8. In the interview: what does Maria want to be? And Tom? Why?"),
+    pAns("E.A.: Maria — a doctor, to help people; Tom — a pilot, because he likes traveling.", ["a doctor"]),
+    p("9. Give your opinion: Do you think English is difficult?"),
+    pAns("E.A.: Yes, I do. I think… / No, I don’t. I don’t think so.", ["I don’t think so."]),
+    p("10. Write: the four sentences of your introduction paragraph (name, nationality, talent, dream)."),
+    pAns("E.A.: This is … He/She is … He/She is good at … He/She would like to be … because …", ["This is"]),
+  ];
+}
+
+// ---------- S17 — test ----------
+function testPaper() {
+  return [
+    B.bookmarkTitle("s17", "SESSION 17 / 99", { bold: true, size: 28, after: 60 }),
+    p([run("T7 TEST PAPER — UNIT 1: PERSONAL COMMUNICATION", { bold: true, size: 26 })], { center: true, after: 100 }),
+    pr([run("Duration: ………        ", { bold: true }), run("Total: 20 points", { bold: true })], { center: true, after: 160 }),
+    pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: introduce your neighbour to the class (name, nationality, dream job).")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 2 (4 points). ", { bold: true }), run("Complete: 1. I want …… (be) a farmer. 2. She’s good at …… (cook). 3. He’d like …… (help) people. 4. They’re bad at …… (run).")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 3 (4 points). ", { bold: true }), run("Write the nationality: 1. Japan → …… 2. England → …… 3. America → …… 4. Madagascar → ……")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 4 (4 points). ", { bold: true }), run("Write the questions for these answers: 1. “I’m from Spain.” 2. “She is my sister.” 3. “My dream job is doctor.” 4. “Yes, I do — I think it is easy.”")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 5 (4 points). ", { bold: true }), run("Write your dream paragraph (4 sentences): your dream job, the reason, one thing you are good at, one opinion.")]),
+    p("", { after: 140 }),
+    p([run("ANSWER KEY", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
+    pAns("Exercise 1: May I introduce you to …? He/She is … (Malagasy…). He/She would like to be … (1 point per element + 1 for fluency).", ["May I introduce you to"]),
+    pAns("Exercise 2: 1. to be  2. cooking  3. to help  4. running (1 point each).", ["to be", "cooking"]),
+    pAns("Exercise 3: Japanese — English — American — Malagasy (1 point each, capital letter required).", ["Japanese"]),
+    pAns("Exercise 4: 1. Where are you from? 2. Who is she? 3. What is your dream job? 4. Do you think it is easy? (1 point each).", ["Where are you from?"]),
+    pAns("Exercise 5: e.g. I’d like to be an engineer. I like solving problems. I’m good at maths. I think it is an exciting job! (1 point per sentence).", ["I’d like to be an engineer."]),
+  ];
+}
+
 module.exports = function unit1() {
   return [
     ...opening(), pageBreak(),
@@ -1247,7 +1372,21 @@ module.exports = function unit1() {
     ...ficheS12(), pageBreak(), ...lessonS12(), pageBreak(),
     ...ficheS13(), pageBreak(), ...lessonS13(), pageBreak(),
     ...ficheS14(), pageBreak(), ...lessonS14(), pageBreak(),
-    ...ficheS15(), pageBreak(), ...lessonS15(),
+    ...ficheS15(), pageBreak(), ...lessonS15(), pageBreak(),
+    ...bigLesson(), pageBreak(),
+    ...exercises(), pageBreak(),
+    ...revision(), pageBreak(),
+    ...testPaper(), pageBreak(),
+    ...iCan("UNIT 1", COLOR, [
+      "I can name the jobs, with a or an.",
+      "I can talk about my dreams: I want to…, I’d like to…, I wish to… + verb.",
+      "I can say what I am good at and bad at, with verb-ing.",
+      "I can introduce others: May I introduce you to…? This is…",
+      "I can name countries and nationalities, with capital letters.",
+      "I can ask WH-questions: who, where, what.",
+      "I can give my opinion politely: I think… / I don’t think so.",
+      "I can read and write about dream jobs — for girls AND boys!",
+    ], "Well done! See you in Unit 2: CLASSROOM COMMUNICATION!"),
   ];
 };
 module.exports.COLOR = COLOR;

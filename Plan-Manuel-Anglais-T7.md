@@ -145,7 +145,7 @@ QR codes python (box_size=6, border=2). Copie MP3 de sauvegarde dans le repo (au
   + build.js + pages avant + U1 ouverture + S1-S4 (fiches + leçons enrichies nouveau style)
 - Bloc 1b ✔ : S5-S15 complets (fiches + leçons enrichies) + u1_equality.png + t7_u1_reading.mp3
   (Drive `1F28bM3rE5RGt-K3edQ3NJ25RWUJ75Hk8`) + QR reading
-- Bloc 1c : révision S16 + test S17 + grande leçon d'unité + exercices corrigés + page I can
+- Bloc 1c ✔ : grande leçon U1 + exercices corrigés + révision S16 + test S17 + page I can → UNIT 1 COMPLÈTE (S1-S17)
 - Bloc 2 : UNIT 2 complet
 - Bloc 3 : UNIT 3 (a : S31-S42, b : S43-S51)
 - Bloc 4 : UNIT 4 complet
