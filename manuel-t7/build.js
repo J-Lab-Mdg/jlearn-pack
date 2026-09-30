@@ -74,8 +74,19 @@ function contents() {
     tocLink("s2", "    Session 2 — What’s your dream? — I want to… / I’d like to…"),
     tocLink("s3", "    Session 3 — The infinitive after want, would like, wish"),
     tocLink("s4", "    Session 4 — The gerund after be good at, be bad at"),
+    tocLink("s5", "    Session 5 — The dream job interview (speed chat)"),
+    tocLink("s6", "    Session 6 — Introducing others"),
+    tocLink("s7", "    Session 7 — Countries and nationalities"),
+    tocLink("s8", "    Session 8 — WH-questions: who, where, what"),
+    tocLink("s9", "    Session 9 — Listening: the interview with Maria and Tom"),
+    tocLink("s10", "    Session 10 — Asking and giving opinion"),
+    tocLink("s11", "    Session 11 — Speaking practice: opinions and dream jobs"),
+    tocLink("s12", "    Session 12 — Reading (1): “My Dream Job” — the gist"),
+    tocLink("s13", "    Session 13 — Reading (2): details, new words, “Women and work”"),
+    tocLink("s14", "    Session 14 — Writing (1): sentences about dreams"),
+    tocLink("s15", "    Session 15 — Writing (2): my introduction paragraph"),
     p("", { after: 60 }),
-    p([run("… Units 1 (suite) to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p([run("… Sessions 16–17 (revision + test), Units 2 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
