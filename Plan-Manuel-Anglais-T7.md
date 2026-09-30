@@ -146,7 +146,8 @@ QR codes python (box_size=6, border=2). Copie MP3 de sauvegarde dans le repo (au
 - Bloc 1b ✔ : S5-S15 complets (fiches + leçons enrichies) + u1_equality.png + t7_u1_reading.mp3
   (Drive `1F28bM3rE5RGt-K3edQ3NJ25RWUJ75Hk8`) + QR reading
 - Bloc 1c ✔ : grande leçon U1 + exercices corrigés + révision S16 + test S17 + page I can → UNIT 1 COMPLÈTE (S1-S17)
-- Bloc 2 : UNIT 2 complet
+- Bloc 2 ✔ : UNIT 2 complet (S18-S30) — audio Drive : t7_u2_instructions `1Q6-YFZ6oIGc7r3kGEVCzO6hZT79tA8OH`,
+  t7_u2_borrow `16LJw7G78aDu2cES2aFSTL3a6zBZOzbsB` ; images u2_instructions, u2_borrow
 - Bloc 3 : UNIT 3 (a : S31-S42, b : S43-S51)
 - Bloc 4 : UNIT 4 complet
 - Bloc 5 : UNIT 5 complet

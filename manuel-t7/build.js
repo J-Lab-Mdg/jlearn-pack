@@ -5,6 +5,7 @@ const { Document, Packer, Paragraph, TextRun } = require("docx");
 const B = require("./builders");
 const { C, SZ, FONT, run, p, pr, img, pageBreak, tocLink } = B;
 const unit1 = require("./unit1");
+const unit2 = require("./unit2");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -87,8 +88,23 @@ function contents() {
     tocLink("s15", "    Session 15 — Writing (2): my introduction paragraph"),
     tocLink("s16", "    Session 16 — Revision"),
     tocLink("s17", "    Session 17 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit2", "UNIT 2 — CLASSROOM COMMUNICATION (Sessions 18–30)", { bold: true, size: 26 }),
+    tocLink("s18", "    Session 18 — Classroom instructions: affirmative commands"),
+    tocLink("s19", "    Session 19 — Negative commands: Don’t…!"),
+    tocLink("s20", "    Session 20 — Lend, borrow, give back"),
+    tocLink("s21", "    Session 21 — Can / May I borrow your…, please?"),
+    tocLink("s22", "    Session 22 — Could you lend me a/an…, please?"),
+    tocLink("s23", "    Session 23 — Here you are! — the words of giving"),
+    tocLink("s24", "    Session 24 — Intonation with yes/no questions"),
+    tocLink("s25", "    Session 25 — Role play: my own borrowing dialogue"),
+    tocLink("s26", "    Session 26 — Reading (1): “In the classroom”"),
+    tocLink("s27", "    Session 27 — Reading (2): questions and answers"),
+    tocLink("s28", "    Session 28 — Writing: my classroom instructions"),
+    tocLink("s29", "    Session 29 — Revision"),
+    tocLink("s30", "    Session 30 — Test paper"),
     p("", { after: 60 }),
-    p([run("… Units 2 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p([run("… Units 3 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -136,7 +152,8 @@ async function main() {
         ...howToUse(), pageBreak(),
         ...contents(), pageBreak(),
         ...dashboard(), pageBreak(),
-        ...unit1(),
+        ...unit1(), pageBreak(),
+        ...unit2(),
       ],
     }],
   });
