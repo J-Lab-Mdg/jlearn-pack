@@ -154,7 +154,9 @@ QR codes python (box_size=6, border=2). Copie MP3 de sauvegarde dans le repo (au
   images u3_food, u3_meals, u3_tastes, u3_pyramid
 - Bloc 3b ✔ : UNIT 3 complet (S31-S51) — audio Drive : t7_u3_breakfast `1Eub_U3ABL060pqIaPz2LnhHU5GW9JGzy`,
   t7_u3_tovo `1Rn-qk3RBoe1f27e2f-xE4x2m9Xe6WFWj` ; image u3_breakfast
-- Bloc 4 : UNIT 4 complet
+- Bloc 4 ✔ : UNIT 4 FAMILY complet (S52-S65) — audio Drive : t7_u4_emma `1TOn8K1AKPlbmixETbvyXaeRU5SizTlO_`,
+  t7_u4_role `1jHPRVt2DEvCjQPHKpyFWW0mv_1nxQsHH`, t7_u4_sarah `1y2XZSgt_A8Lzt7R5XRwb788Bd3G3efg2` ;
+  images u4_tree, u4_emma, u4_appearance, u4_sarah + 3 QR
 - Bloc 5 : UNIT 5 complet
 - Bloc 6 : UNIT 6 complet
 - Bloc 7 : annexes 1-6 + page finale + TOC + vérifications + PR

@@ -7,6 +7,7 @@ const { C, SZ, FONT, run, p, pr, img, pageBreak, tocLink } = B;
 const unit1 = require("./unit1");
 const unit2 = require("./unit2");
 const unit3 = require("./unit3");
+const unit4 = require("./unit4");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -127,8 +128,24 @@ function contents() {
     tocLink("s49", "    Session 49 — Writing (2): my food paragraph"),
     tocLink("s50", "    Session 50 — Revision"),
     tocLink("s51", "    Session 51 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit4", "UNIT 4 — FAMILY (Sessions 52–65)", { bold: true, size: 26 }),
+    tocLink("s52", "    Session 52 — The extended family"),
+    tocLink("s53", "    Session 53 — Married, single, engaged…"),
+    tocLink("s54", "    Session 54 — Listening: Emma’s family picture"),
+    tocLink("s55", "    Session 55 — The family riddles (possessive ’s)"),
+    tocLink("s56", "    Session 56 — What does he look like?"),
+    tocLink("s57", "    Session 57 — What kind of person is she?"),
+    tocLink("s58", "    Session 58 — Listening: my role model"),
+    tocLink("s59", "    Session 59 — Grammar: compound adjectives"),
+    tocLink("s60", "    Session 60 — Listen and draw!"),
+    tocLink("s61", "    Session 61 — Reading (1): “Sarah’s family”"),
+    tocLink("s62", "    Session 62 — Reading (2): details, inference, crossword"),
+    tocLink("s63", "    Session 63 — Writing: my extended family"),
+    tocLink("s64", "    Session 64 — Revision"),
+    tocLink("s65", "    Session 65 — Test paper"),
     p("", { after: 60 }),
-    p([run("… Units 4 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p([run("… Units 5 and 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -178,7 +195,8 @@ async function main() {
         ...dashboard(), pageBreak(),
         ...unit1(), pageBreak(),
         ...unit2(), pageBreak(),
-        ...unit3(),
+        ...unit3(), pageBreak(),
+        ...unit4(),
       ],
     }],
   });
