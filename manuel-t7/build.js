@@ -6,6 +6,7 @@ const B = require("./builders");
 const { C, SZ, FONT, run, p, pr, img, pageBreak, tocLink } = B;
 const unit1 = require("./unit1");
 const unit2 = require("./unit2");
+const unit3 = require("./unit3");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -103,8 +104,22 @@ function contents() {
     tocLink("s28", "    Session 28 — Writing: my classroom instructions"),
     tocLink("s29", "    Session 29 — Revision"),
     tocLink("s30", "    Session 30 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit3", "UNIT 3 — COMMON FOOD (Sessions 31–51)", { bold: true, size: 26 }),
+    tocLink("s31", "    Session 31 — Common food: vocabulary and colours"),
+    tocLink("s32", "    Session 32 — The three meals"),
+    tocLink("s33", "    Session 33 — The food verbs (present simple)"),
+    tocLink("s34", "    Session 34 — The four tastes — What a delicious meal!"),
+    tocLink("s35", "    Session 35 — Listening: “What’s for lunch?”"),
+    tocLink("s36", "    Session 36 — My eating habits (1): frequency adverbs"),
+    tocLink("s37", "    Session 37 — My eating habits (2): the food interview"),
+    tocLink("s38", "    Session 38 — Likes and dislikes (+ gerund)"),
+    tocLink("s39", "    Session 39 — Preferences and comparatives"),
+    tocLink("s40", "    Session 40 — Offering food: Would you like…?"),
+    tocLink("s41", "    Session 41 — Quantities: some, a lot of, a little"),
+    tocLink("s42", "    Session 42 — Healthy food: the pyramid"),
     p("", { after: 60 }),
-    p([run("… Units 3 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p([run("… Sessions 43–51 (Unit 3 suite), Units 4 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -153,7 +168,8 @@ async function main() {
         ...contents(), pageBreak(),
         ...dashboard(), pageBreak(),
         ...unit1(), pageBreak(),
-        ...unit2(),
+        ...unit2(), pageBreak(),
+        ...unit3(),
       ],
     }],
   });

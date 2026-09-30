@@ -148,7 +148,12 @@ QR codes python (box_size=6, border=2). Copie MP3 de sauvegarde dans le repo (au
 - Bloc 1c ✔ : grande leçon U1 + exercices corrigés + révision S16 + test S17 + page I can → UNIT 1 COMPLÈTE (S1-S17)
 - Bloc 2 ✔ : UNIT 2 complet (S18-S30) — audio Drive : t7_u2_instructions `1Q6-YFZ6oIGc7r3kGEVCzO6hZT79tA8OH`,
   t7_u2_borrow `16LJw7G78aDu2cES2aFSTL3a6zBZOzbsB` ; images u2_instructions, u2_borrow
-- Bloc 3 : UNIT 3 (a : S31-S42, b : S43-S51)
+- Bloc 3a ✔ : UNIT 3 S31-S42 (food, meals, verbes, goûts, Jeff&Joe, habitudes, likes, préférences,
+  Would you like, quantités, pyramide) — audio Drive : t7_u3_food `1bu25N2NN9Sg7ektATXIUF9ZXvshP-9-u`,
+  t7_u3_lunch `10LVY1xUz6bRS2NZf0scjZBYQsWI2lXfk`, t7_u3_fruit `1daAiC0S6yZ6_HsgOCt9-euHvS6RSMzXb` ;
+  images u3_food, u3_meals, u3_tastes, u3_pyramid
+- Bloc 3b : UNIT 3 suite — S43 breakfast Jack, S44 food from here and there, S45-S47 reading « Tovo tries
+  British food », S48-S49 writing, grande leçon, exercices, révision S50, test S51, I can
 - Bloc 4 : UNIT 4 complet
 - Bloc 5 : UNIT 5 complet
 - Bloc 6 : UNIT 6 complet
