@@ -114,13 +114,24 @@ Valeurs : mutual respect, solidarity.
 - S97 Writing: describe your favourite place
 - S98 Revision — S99 Test paper
 
-## Annexes (couleur 4A235A)
+## Règles éditoriales T7 (directives utilisateur — s'appliquent à tout le manuel)
+1. **Aucune phrase de clôture** dans les « Lesson of the day » : plus jamais de
+   « I copy the lesson of the day… » ni d'équivalent — la page se termine sur le contenu.
+2. **Leçons du jour enrichies** : plus d'exemples, encadrés-règles, mini-dialogues, drills, tableaux.
+3. **Avant-propos** : mention explicite que les mots entre crochets [ ] (aide de prononciation)
+   **ne se copient pas** dans le cahier (rappelée aussi dans « How to use »).
+4. **Annexe 6 — Phonetics guide** : IPA et notation [figurée] côte à côte.
+5. **Images pour les mots à apprendre — sélectif** : mots difficiles/concrets uniquement, ≈4-6 par leçon max.
+6. **Puces verticales** : listes à la ligne (une expression par puce), pas d'énumérations horizontales.
+
+## Annexes (couleur 4A235A) — SIX annexes
 - Annex 1 — Picture dictionary (jobs, nationalities, food, family, communication, town)
 - Annex 2 — Songs and chants (+ YouTube quand chanson traditionnelle)
 - Annex 3 — Pronunciation guide
 - Annex 4 — Flashcards to cut out
 - Annex 5 — Conjugation guide T7 (want to + inf, gérondif -ing, can/could/may,
   present simple vs continuous, impératif ± , révision be/have/do + verbes irréguliers)
+- Annex 6 — Phonetics guide (IPA + notation figurée côte à côte)
 
 ## Audio (voix voice-00, « Soa » = « So-ah »)
 Nouveau dossier Drive « J-Learn Anglais T7 » (lecture seule). Par unité :
@@ -130,14 +141,23 @@ QR codes python (box_size=6, border=2). Copie MP3 de sauvegarde dans le repo (au
 
 ## Blocs de production
 - Bloc 0 ✔ : couverture T7, builders.js, plan, squelette
-- Bloc 1 : build.js + pages avant (foreword, how to use, contents, dashboard) + UNIT 1 complet (fiches+leçons+audio+images)
+- Bloc 1a ✔ : Drive T7 (dossier 11afac9nCz57apum_TpygMnSe0pnqx7lg public reader) + 3 MP3 U1 + QR
+  + build.js + pages avant + U1 ouverture + S1-S4 (fiches + leçons enrichies nouveau style)
+- Bloc 1b/1c : UNIT 1 suite (S5-S15, révision S16, test S17, grande leçon, reading, exercices, I can)
 - Bloc 2 : UNIT 2 complet
 - Bloc 3 : UNIT 3 (a : S31-S42, b : S43-S51)
 - Bloc 4 : UNIT 4 complet
 - Bloc 5 : UNIT 5 complet
 - Bloc 6 : UNIT 6 complet
-- Bloc 7 : annexes 1-5 + page finale + TOC + vérifications + PR
+- Bloc 7 : annexes 1-6 + page finale + TOC + vérifications + PR
 
 ## Vérifications à chaque build
 sectPr=2 ; github=0 ; س=0 ; bookmarks==anchors ; `SESSION \d+ / 99` = 1..99 ; drive.google.com ;
-youtube seulement Annex 2 ; git checkout package*.json avant commit.
+youtube seulement Annex 2 ; **« I copy the lesson » = 0** ; git checkout package*.json avant commit.
+
+## Drive T7 (créé, public lecture seule)
+Dossier « J-Learn - Anglais T7 - Audio » : `11afac9nCz57apum_TpygMnSe0pnqx7lg`
+- t7_u1_jobs.mp3 → `1_wSxdY2AAADh9EkeFGAZ53FPQMEFPxQ4`
+- t7_u1_dialogue.mp3 → `13F4K-_8gA70McVxv1PBM25W1PuiIqdEw`
+- t7_u1_maria.mp3 → `1xO5K6gHrUWtYJ5dc5IVRIgkItotV8lOQ`
+Liens : `https://drive.google.com/uc?export=download&id=FILE_ID`
