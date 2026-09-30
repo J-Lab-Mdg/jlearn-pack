@@ -20,6 +20,12 @@ const children = [
   ...buildFiche(S1, ROOT),
 ];
 
+const { Footer, PageNumber } = require("docx");
+const footerPage = new Footer({ children: [ new B.Paragraph({
+  alignment: AlignmentType.CENTER,
+  children: [ new B.TextRun({ children: [PageNumber.CURRENT], size: 20, font: B.FONT, color: "666666" }) ],
+}) ] });
+
 const doc = new B.Document({
   styles: {
     default: { document: { run: { font: B.FONT, size: 24 } } },
@@ -30,6 +36,7 @@ const doc = new B.Document({
   },
   sections: [{
     properties: { page: { margin: { top: 1417, bottom: 1417, left: 1417, right: 1417 } } },
+    footers: { default: footerPage },
     children,
   }],
 });
