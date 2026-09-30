@@ -1,39 +1,23 @@
 {
-  "annee": "2026-2027",
-  "ecole": {
-    "dren": "ALAOTRA MANGORO",
-    "cisco": "ANOSIBE AN’ALA",
-    "commune": "TRATRAMARINA",
-    "zap": "TRATRAMARINA",
-    "fokontany": "TRATRAMARINA",
-    "epp": "ANDRANOMAFANA",
-    "code": "506 090 012",
-    "feffi": "ANDRANOMAFANA",
-    "annee": "2026 – 2027"
-  },
-  "decisions": {
-    "n_lahasa": 12,
-    "n_voi": 7,
-    "lecture": "B",
-    "gony": "RPI",
-    "programme": "1x100000 VOI dans fitaovana",
-    "craies": "inchangees",
-    "vff_libelle": "Fampandehanana ny VFF",
-    "tatitra_date": "04/09/2026"
-  },
   "totals": {
-    "RPI": 1098000,
+    "RPI": 1100500,
     "FCE": 393000,
-    "VOI": 7895000,
-    "GRAND": 9386000,
-    "CAISSE": 1491000
+    "VOI": 7896000,
+    "GRAND": 9389500,
+    "CAISSE": 1493500
   },
-  "files": {
-    "pec": "/home/user/jlearn-pack/PEC_TeSI_2026_2027.docx",
-    "voi": "/home/user/jlearn-pack/PE_VOI_2026_2027.docx",
-    "fce": "/home/user/jlearn-pack/PE_FCE_2026_2027.docx",
-    "rpi": "/home/user/jlearn-pack/PE_RPI_2026_2027.docx",
-    "tesi": "/home/user/jlearn-pack/PE_TESI_2026_2027.docx",
-    "tatitra": "/home/user/jlearn-pack/Tatitra_Fankatoavana_TeSI_2026_2027.docx"
-  }
+  "eleves": 145,
+  "pascoma": 29000,
+  "sport": 72500,
+  "corrections": [
+    "Sifflet vy",
+    "LETSARASON",
+    "145 eleves pascoma/sport",
+    "no table fill",
+    "title centered",
+    "total outside table",
+    "date right",
+    "ST bold italic",
+    "font base 12"
+  ]
 }
