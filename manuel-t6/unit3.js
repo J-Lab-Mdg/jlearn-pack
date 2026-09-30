@@ -947,21 +947,132 @@ function testPaper() {
   ];
 }
 
+// ---------- leçons du jour (une par fiche) ----------
+function dayLesson(sessionNo, title, children) {
+  return [
+    p([run(`LESSON OF THE DAY — SESSION ${sessionNo}`, { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run(title, { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    ...children,
+    p("", { after: 80 }),
+    p([run("I copy the lesson of the day in my copy-book.", { italic: true, color: C.GRAY, size: 22 })], { center: true }),
+  ];
+}
+function lessonS17() {
+  return dayLesson(17, "THE DAYS OF THE WEEK", [
+    grid(DAYS, 4),
+    p("", { after: 60 }),
+    pr([run("The rules: ", { bold: true }), run("a CAPITAL letter always (Monday, not monday) — "), run("on", { bold: true, color: C.BLUE }), run(" + day: on Monday I go to school.")]),
+    pr([...kw("What day is it today?", "ouate déi iz ite toudé"), run("  →  "), ...kw("It’s Tuesday.", "its tiouzdé")], { after: 60 }),
+    songBox(),
+  ]);
+}
+function lessonS18() {
+  return dayLesson(18, "THE TWELVE MONTHS", [
+    img("u3_calendar.png", 360, 768 / 1408),
+    grid(MONTHS, 4),
+    p("", { after: 60 }),
+    pr([run("The rules: ", { bold: true }), run("a CAPITAL letter always — "), run("in", { bold: true, color: C.BLUE }), run(" + month: my birthday is in June.")]),
+    pr([...kw("What month is it now?", "ouate meunce iz ite naou"), run("  →  "), ...kw("It’s September.", "its sèptèmbeur")]),
+  ]);
+}
+function lessonS19() {
+  return dayLesson(19, "THE ORDINAL NUMBERS — THE DATE", [
+    grid(ORDINALS.map(([a, b]) => [a ? `${a} — ${b}` : "", ""]), 4),
+    p("", { after: 60 }),
+    pr([run("The rule: ", { bold: true }), run("number + th", { bold: true, color: C.BLUE }), run(" (fourth, tenth, twentieth) — but "), run("1st first, 2nd second, 3rd third", { bold: true, color: C.RED }), run(" are special!")]),
+    pr([run("Careful: ", { bold: true, color: C.RED }), run("21st twenty-first, 31st thirty-first — the little word wins at the end.")], { after: 60 }),
+    dateDialogueBox(),
+  ]);
+}
+function lessonS20() {
+  return dayLesson(20, "YESTERDAY, TODAY, TOMORROW", [
+    pr([run("The three tenses of TO BE: ", { bold: true }), run("yesterday → was", { bold: true, color: C.BLUE }), run("  —  "), run("today → is", { bold: true, color: C.BLUE }), run("  —  "), run("tomorrow → will be", { bold: true, color: C.BLUE })]),
+    pr([...kw("Yesterday was Sunday.", "yèsteudé ouoz seundé"), run("  "), ...kw("Today is Monday.", "toudé iz meundé"), run("  "), ...kw("Tomorrow will be Tuesday.", "toumorôou ouil bi tiouzdé")], { after: 60 }),
+    pr([run("The sequence markers: ", { bold: true }), run("first, next, after, last", { bold: true, color: C.BLUE }), run(" — the day before Monday is Sunday; the day after Monday is Tuesday.")]),
+    pr([run("The big numbers: ", { bold: true }), ...kw("one thousand (1 000)", "ouane saouzande"), run("  "), ...kw("one million", "ouane milieune"), run("  "), ...kw("one billion", "ouane bilieune")]),
+  ]);
+}
+function lessonS21() {
+  return dayLesson(21, "WHAT TIME IS IT? — O’CLOCK, A.M. AND P.M.", [
+    img("u3_clocks.png", 380, 768 / 1408),
+    pr([...kw("What time is it? / What’s the time?", "ouate taïme iz ite"), run("  →  "), ...kw("It’s seven o’clock.", "its sèvène oklok")]),
+    pr([run("Morning: "), run("a.m.", { bold: true, color: C.BLUE }), run(" — afternoon and evening: "), run("p.m.", { bold: true, color: C.BLUE }), run("  Special: "), ...kw("noon", "noune"), run(" (12:00), "), ...kw("midnight", "midnaïte"), run(" (00:00).")]),
+    pr([run("On the arm: "), ...kw("a watch", "e ouotch"), run(" — on the wall: "), ...kw("a clock", "e klok")], { after: 60 }),
+    audioBox([{ qr: "qr_t6_u3_time.png", label: "Telling the time — listen and repeat", url: AUDIO.time }], COLOR),
+  ]);
+}
+function lessonS22() {
+  return dayLesson(22, "A QUARTER PAST, HALF PAST, A QUARTER TO", [
+    pr([run("Minutes 1–30: ", { bold: true }), run("past", { bold: true, color: C.BLUE }), run(" — ten past nine (9:10), a quarter past ten (10:15), half past four (4:30).")]),
+    pr([run("Minutes 31–59: ", { bold: true }), run("to", { bold: true, color: C.BLUE }), run(" — twenty to five (4:40), a quarter to nine (8:45).")]),
+    pr([run("The short way: ", { bold: true }), ...kw("It’s nine twenty-five.", "its naïne touènti-faïv"), run(" — we just read the numbers!")], { after: 60 }),
+    timeConvBox(),
+  ]);
+}
+function lessonS23() {
+  return dayLesson(23, "WHEN DO YOU…? — THE TIME INTERVIEW", [
+    pr([...kw("When do you get up?", "ouène dou iou guète eup"), run("  →  "), ...kw("At six o’clock.", "ate siks oklok")]),
+    pr([...kw("When do you go to school?", "ouène dou iou gôou tou skoule"), run("  →  "), ...kw("At half past seven.", "ate hâf paste sèvène")], { after: 60 }),
+    pr([run("The three little words: ", { bold: true }), run("at", { bold: true, color: C.BLUE }), run(" + time (at noon) — "), run("on", { bold: true, color: C.BLUE }), run(" + day (on Friday) — "), run("in", { bold: true, color: C.BLUE }), run(" + month or season (in June, in winter).")]),
+    pr([run("For the interview, I note the answers and report: ", { italic: true, color: C.GRAY, size: 24 }), run("She gets up at six.", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS24() {
+  return dayLesson(24, "THE FOUR SEASONS", [
+    img("u3_seasons.png", 380, 768 / 1408),
+    ...SEASONS.map(([s, pn, words]) =>
+      pr([...kw(s, pn), run("  →  "), run(words, { italic: true, color: C.GRAY })], { after: 30 })),
+    p("", { after: 40 }),
+    pr([run("The rule: ", { bold: true }), run("in", { bold: true, color: C.BLUE }), run(" + season: in summer it is hot; in winter it is cold.")]),
+  ]);
+}
+function lessonS25() {
+  return dayLesson(25, "WHAT’S THE WEATHER LIKE?", [
+    img("u3_weather.png", 380, 768 / 1408),
+    pr([...kw("What’s the weather like?", "ouots ze ouèzeur laïk"), run("  /  "), ...kw("How’s the weather today?", "haouz ze ouèzeur toudé"), run("  →  "), ...kw("It’s sunny!", "its seuni")], { after: 40 }),
+    grid(WEATHER_ADJ, 4),
+    p("", { after: 40 }),
+    pr([run("The magic rule: ", { bold: true }), run("word + y = adjective", { bold: true, color: C.BLUE }), run("  →  sun → sunny, wind → windy, fog → foggy!")]),
+  ]);
+}
+function lessonS26() {
+  return dayLesson(26, "RAINING CATS AND DOGS! — MY FAVOURITE SEASON", [
+    pr([run("The idioms: ", { bold: true }), run("It’s raining cats and dogs!", { bold: true, color: C.BLUE }), run(" = it’s raining a lot — "), run("…come rain or shine", { bold: true, color: C.BLUE }), run(" = whatever happens.")]),
+    pr([run("The feelings: ", { bold: true }), run("to be happy, sad, angry, sleepy…", { bold: true, color: C.BLUE }), run(" — the weather changes my feelings!")], { after: 60 }),
+    pr([run("My favourite season: ", { bold: true }), ...kw("My favourite season is spring, because it is cool and there are flowers.", "maï féivrite sizeune iz sprinng")]),
+    pr([run("The word "), run("because", { bold: true, color: C.BLUE }), run(" gives the reason — always add it!")]),
+  ]);
+}
+function lessonS27() {
+  return dayLesson(27, "READING DAY: “MY MONDAY MORNING”", [
+    pr([run("The key words of the text: ", { bold: true }), ...kw("to wake up", "tou ouéik eup"), run("  "), ...kw("a watch", "e ouotch"), run("  "), ...kw("cloudy", "klaoudi"), run("  "), ...kw("windy", "ouinndi")], { after: 60 }),
+    pr([run("How to read well: ", { bold: true }), run("1. Find the day, the date and the times. 2. Watch the tenses: was = yesterday, is = today. 3. Read the dialogue lines with a friendly voice.")]),
+    pr([run("The text uses everything of Unit 3: the date, the time, was/is, and the weather!", { italic: true, color: C.GRAY, size: 24 })]),
+  ]);
+}
+function lessonS28() {
+  return dayLesson(28, "WRITING DAY: MY FAVOURITE SEASON", [
+    pr([run("The plan of my paragraph: ", { bold: true }), run("1. My favourite season is… — 2. because… (the reason) — 3. the weather: it is…, it is… — 4. what I do: I play…, I visit…")], { after: 60 }),
+    pr([run("The writing rules: ", { bold: true }), run("a CAPITAL letter for the seasons’ friends (June, Monday) — but the seasons themselves stay small: summer, winter!", { bold: true })]),
+    pr([run("Model: ", { bold: true }), run("My favourite season is winter, because it is cool. It is often cloudy and foggy in Antananarivo. I drink hot milk and I read books.", { italic: true })]),
+  ]);
+}
+
 module.exports = function unit3() {
   return [
     ...opening(), pageBreak(),
-    ...ficheS17(), pageBreak(),
-    ...ficheS18(), pageBreak(),
-    ...ficheS19(), pageBreak(),
-    ...ficheS20(), pageBreak(),
-    ...ficheS21(), pageBreak(),
-    ...ficheS22(), pageBreak(),
-    ...ficheS23(), pageBreak(),
-    ...ficheS24(), pageBreak(),
-    ...ficheS25(), pageBreak(),
-    ...ficheS26(), pageBreak(),
-    ...ficheS27(), pageBreak(),
-    ...ficheS28(), pageBreak(),
+    ...ficheS17(), pageBreak(), ...lessonS17(), pageBreak(),
+    ...ficheS18(), pageBreak(), ...lessonS18(), pageBreak(),
+    ...ficheS19(), pageBreak(), ...lessonS19(), pageBreak(),
+    ...ficheS20(), pageBreak(), ...lessonS20(), pageBreak(),
+    ...ficheS21(), pageBreak(), ...lessonS21(), pageBreak(),
+    ...ficheS22(), pageBreak(), ...lessonS22(), pageBreak(),
+    ...ficheS23(), pageBreak(), ...lessonS23(), pageBreak(),
+    ...ficheS24(), pageBreak(), ...lessonS24(), pageBreak(),
+    ...ficheS25(), pageBreak(), ...lessonS25(), pageBreak(),
+    ...ficheS26(), pageBreak(), ...lessonS26(), pageBreak(),
+    ...ficheS27(), pageBreak(), ...lessonS27(), pageBreak(),
+    ...ficheS28(), pageBreak(), ...lessonS28(), pageBreak(),
     ...lesson(), pageBreak(),
     ...readingPage(), pageBreak(),
     ...exercises(), pageBreak(),
