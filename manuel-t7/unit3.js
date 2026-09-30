@@ -11,6 +11,8 @@ const AUDIO = {
   food: "https://drive.google.com/uc?export=download&id=1bu25N2NN9Sg7ektATXIUF9ZXvshP-9-u",
   lunch: "https://drive.google.com/uc?export=download&id=10LVY1xUz6bRS2NZf0scjZBYQsWI2lXfk",
   fruit: "https://drive.google.com/uc?export=download&id=1daAiC0S6yZ6_HsgOCt9-euHvS6RSMzXb",
+  breakfast: "https://drive.google.com/uc?export=download&id=1Eub_U3ABL060pqIaPz2LnhHU5GW9JGzy",
+  tovo: "https://drive.google.com/uc?export=download&id=1Rn-qk3RBoe1f27e2f-xE4x2m9Xe6WFWj",
 };
 const META = (title, slo, session, materials) => ({
   theme: "UNIT 3 — COMMON FOOD", title, slo,
@@ -965,6 +967,629 @@ function lessonS42() {
   ];
 }
 
+// ---------- S43 — Listening: Jack's full English breakfast ----------
+function ficheS43() {
+  const meta = META("Listening — Jack’s full English breakfast",
+    "By the end of the lesson, learners will be able to understand a description of a foreign meal and name its items.",
+    "13 / 19", "audio (QR code), breakfast picture");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Answer these questions:"),
+       fp("1. What is at the base of the food pyramid?"),
+       fp("2. Make a sentence with “healthy”.")],
+      [fp("Answer."),
+       fp("E.A.: rice, bread, cereals; Fruit is healthy.")],
+      "Individual work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("Pre-listening: look at the picture — a very big breakfast! Guess: from which country? What can you see on the plate?")],
+      [fp("Look. Guess.")], "Using pictures", "Breakfast picture"),
+    stepRow(["2. Presentation"],
+      [fp("Today we travel to England for breakfast with Jack! By the end of this lesson, you will name a full English breakfast.")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("While-listening (1st): listen to Jack. What meal is he describing? On which day do the English sometimes have it?")],
+      [fp("Listen. Answer."),
+       fp("E.A.: a full English breakfast; on Sunday morning.")],
+      "Audio / Whole-class work", "Audio (QR code)"),
+    stepRow(["4. Analysis"],
+      [fp("2nd listening: tick what is on Jack’s plate: eggs? rice? bacon? sausages? beans? fish? toast? tea or coffee?")],
+      [fp("Listen. Tick."),
+       fp("E.A.: eggs, bacon, sausages, beans, toast, a cup of tea — no rice, no fish!")],
+      "Audio / Individual work", "Audio (QR code)"),
+    stepRow(["5. Synthesis"],
+      [fp("So: a full English breakfast = eggs + bacon + sausages + beans + toast + tea. Very different from our breakfast — and that is interesting!")],
+      [fp("Listen. Repeat. Copy the list.")], "Whole-class work", "Blackboard"),
+    stepRow(["6. Practice"],
+      [fp("Compare in pairs: “In England, Jack has eggs and bacon. At home, I usually have…” Present the two breakfasts to the class.")],
+      [fp("Compare. Present."),
+       pAns("E.A.: correct comparison sentences with usually / sometimes.",
+        ["usually"], { size: SZ.FICHE })],
+      "In pairs", "----"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("1. Name four things in a full English breakfast."),
+       fp("2. What do YOU usually have for breakfast?")],
+      [fp("Answer."),
+       pAns("E.A.: eggs, bacon, sausages, beans (toast, tea); I usually have…",
+        ["eggs, bacon, sausages, beans"], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(43, TOTAL, meta, rows, "s43");
+}
+function lessonS43() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 43", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("JACK’S FULL ENGLISH BREAKFAST", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("u3_breakfast.png", 420, 768 / 1408),
+    p([run("On Jack’s plate:", { bold: true })], { after: 50 }),
+    vocab("eggs", "ègz", "fried or boiled."),
+    vocab("bacon", "béikeune", "thin slices of pork."),
+    vocab("sausages", "sossidjiz", "small meat rolls."),
+    vocab("beans", "biinz", "in tomato sauce."),
+    vocab("toast", "tôouste", "grilled bread with butter."),
+    bullet([run("…and a big "), run("cup of tea", { bold: true, color: C.BLUE }), run("!")]),
+    p("", { after: 60 }),
+    box("HERE AND THERE", [
+      bullet([run("In England, Jack sometimes has a "), run("full English breakfast", { bold: true, color: C.BLUE }), run(" on Sunday morning.")]),
+      bullet([run("In Madagascar, I usually have "), run("bread and tea", { bold: true, color: C.BLUE }), run(" — or rice!")]),
+      bullet([run("Different plates, same pleasure: "), run("enjoy your meal!", { bold: true, color: C.GREEN })], { after: 20 }),
+    ]),
+    p("", { after: 80 }),
+    audioBox([{ qr: "qr_t7_u3_breakfast.png", label: "Jack’s full English breakfast — listen and tick", url: AUDIO.breakfast }], COLOR),
+  ];
+}
+
+// ---------- S44 — Food from here and there ----------
+function ficheS44() {
+  const meta = META("Food from here and there",
+    "By the end of the lesson, learners will be able to name some dishes from Anglophone countries and present a local dish in English.",
+    "14 / 19", "pictures of dishes, world map");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Answer these questions:"),
+       fp("1. What is in a full English breakfast?"),
+       fp("2. Compare it with your breakfast.")],
+      [fp("Answer."),
+       fp("E.A.: eggs, bacon, sausages, beans, toast; at home I usually have…")],
+      "Individual work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("Do you know any US or British food? Share with the class!")],
+      [fp("Share."),
+       fp("E.A.: fish and chips, hamburgers, pizza (from Italy but popular!), hot dogs…")],
+      "Brainstorming", "----"),
+    stepRow(["2. Presentation"],
+      [fp("Today we put the food of the WORLD on our table: dishes from here and from there. By the end of this lesson, you will present a Malagasy dish in English!")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("Match the dishes and the countries (pictures + map): fish and chips → England; hamburger → the USA; rice and beans → Madagascar…")],
+      [fp("Match.")],
+      "Matching / Using pictures", "Pictures, map"),
+    stepRow(["4. Analysis"],
+      [fp("How do we present a dish? Name + what is in it + taste: “Fish and chips is a British dish. It is fish with fried potatoes. It is salty and tasty!”")],
+      [fp("Give the presentation plan."),
+       fp("E.A.: name → ingredients → taste.")],
+      "Eliciting technique", "Blackboard"),
+    stepRow(["5. Synthesis"],
+      [fp("So: every country has its dishes. We present a dish with: It is… It has… It tastes…")],
+      [fp("Repeat the plan.")], "Whole-class work", "Blackboard"),
+    stepRow(["6. Practice"],
+      [fp("In pairs, present ONE Malagasy dish in English to a foreign friend (name, ingredients, taste) — and one foreign dish you would like to try, with “I’d like to try…”.")],
+      [fp("Present the two dishes."),
+       pAns("E.A.: This dish is rice with greens and zebu meat. It is tasty! I’d like to try fish and chips.",
+        ["I’d like to try"], { size: SZ.FICHE })],
+      "Presentation / In pairs", "----"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("1. Name one British dish and one American dish."),
+       fp("2. Present your favourite Malagasy dish in two sentences.")],
+      [fp("Answer. Present."),
+       pAns("E.A.: fish and chips; hamburger; correct two-sentence presentation.",
+        ["fish and chips"], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(44, TOTAL, meta, rows, "s44");
+}
+function lessonS44() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 44", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("FOOD FROM HERE AND THERE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    p([run("Famous dishes from Anglophone countries:", { bold: true })], { after: 50 }),
+    vocab("fish and chips", "fich annde tchips", "fish with fried potatoes — from England."),
+    vocab("a full English breakfast", "e foule inngglich brèkfeuste", "eggs, bacon, sausages, beans — from England."),
+    vocab("a hamburger", "e hammbeurgueur", "meat in a round bread — from the USA."),
+    vocab("a hot dog", "e hote dog", "a sausage in a long bread — from the USA."),
+    p("", { after: 60 }),
+    p([run("To present a dish — the three steps:", { bold: true })], { after: 50 }),
+    bullet([run("1. The name: ", { bold: true, color: C.GREEN }), run("This dish is rice with greens and zebu meat.", { bold: true, color: C.BLUE })]),
+    bullet([run("2. What is in it: ", { bold: true, color: C.GREEN }), run("It has rice, meat and vegetables.", { bold: true, color: C.BLUE })]),
+    bullet([run("3. The taste: ", { bold: true, color: C.GREEN }), run("It is tasty and a little salty. What a delicious dish!", { bold: true, color: C.BLUE })]),
+    p("", { after: 60 }),
+    box("CURIOUS AND PROUD", [
+      bullet([run("Curious: "), run("I’d like to try fish and chips!", { bold: true, color: C.BLUE })]),
+      bullet([run("Proud: "), run("You should try our rice and beans — it is delicious!", { bold: true, color: C.BLUE })], { after: 20 }),
+    ]),
+  ];
+}
+
+// ---------- texte de lecture ----------
+function tovoTextBox() {
+  const L = (t) => p([run(t, { size: SZ.BODY })], { after: 60 });
+  return box("TOVO TRIES BRITISH FOOD (reading text)", [
+    L("Tovo is in a British restaurant. He loves rice and beans, but he is excited to try British food. One day, his friend Jack gives him fish and chips. Tovo likes the chips but is not sure about the fish. “It tastes different, but I like trying new things,” Tovo says."),
+    L("The next day, Jack makes a full English breakfast with eggs, bacon, sausages, and beans. Tovo likes the eggs and toast. He is happy to try something new. “It’s fun to try different foods,” Tovo says. “I don’t always like everything, but I enjoy trying.”"),
+    L("Tovo learns that it’s good to try new foods. He likes British dishes, but he also loves Malagasy food."),
+  ]);
+}
+
+// ---------- S45 — Reading (1): gist ----------
+function ficheS45() {
+  const meta = META("Reading (1) — “Tovo tries British food”: the gist",
+    "By the end of the lesson, learners will be able to guess the content of a text from its title and find its gist.",
+    "15 / 19", "reading text (in the book)");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Answer these questions:"),
+       fp("1. Name two dishes from Anglophone countries."),
+       fp("2. Present a Malagasy dish in one sentence.")],
+      [fp("Answer."),
+       fp("E.A.: fish and chips, hamburger; correct sentence.")],
+      "Individual work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("Pre-reading: the title is “Tovo tries British food”. Guess the content of the text from its title!")],
+      [fp("Guess."),
+       fp("E.A.: a Malagasy boy tastes food from England.")],
+      "Prediction", "Text"),
+    stepRow(["2. Presentation"],
+      [fp("Today we are going to READ Tovo’s story. By the end of this lesson, you will find its gist and check your prediction!")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("While-reading (silent): read the text once. What is the main idea?")],
+      [fp("Read. Answer."),
+       fp("E.A.: it is good to try new foods — Tovo enjoys trying.")],
+      "Silent reading", "Text"),
+    stepRow(["4. Analysis"],
+      [fp("Share to class: is your prediction correct?"),
+       fp("Who are the two people in the text? What food do they try on each day?")],
+      [fp("Check. Answer."),
+       fp("E.A.: Tovo and Jack; day 1 fish and chips, day 2 full English breakfast.")],
+      "Whole-class work", "Text"),
+    stepRow(["5. Synthesis"],
+      [fp("So the gist in one sentence: Tovo tries British food with his friend Jack and learns that it is fun and good to try new things.")],
+      [fp("Say the gist.")], "Whole-class work", "Blackboard"),
+    stepRow(["6. Practice"],
+      [fp("Read the text aloud, one sentence per pupil. The class follows and helps.")],
+      [fp("Read aloud."),
+       pAns("E.A.: clear reading of the whole text.",
+        ["clear reading"], { size: SZ.FICHE })],
+      "Reading aloud", "Text"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("1. In one sentence: what is the text about?"),
+       fp("2. What does Jack make on the second day?")],
+      [fp("Answer."),
+       pAns("E.A.: Tovo tries British food and enjoys trying new things; a full English breakfast.",
+        ["a full English breakfast"], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(45, TOTAL, meta, rows, "s45");
+}
+function lessonS45() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 45", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("READING: “TOVO TRIES BRITISH FOOD”", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    tovoTextBox(),
+    p("", { after: 60 }),
+    p([run("The gist (the main idea):", { bold: true })], { after: 50 }),
+    bullet([run("It is "), run("good and fun to try new foods", { bold: true, color: C.BLUE }), run(" — and we can still love our own food!")]),
+    p("", { after: 80 }),
+    audioBox([{ qr: "qr_t7_u3_tovo.png", label: "“Tovo tries British food” — listen and read along", url: AUDIO.tovo }], COLOR),
+  ];
+}
+
+// ---------- S46 — Reading (2): details + vocabulary ----------
+function ficheS46() {
+  const meta = META("Reading (2) — details, inference and new words",
+    "By the end of the lesson, learners will be able to infer information from the text and use its new words.",
+    "16 / 19", "reading text (in the book), blackboard");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Answer these questions:"),
+       fp("1. What is the gist of Tovo’s story?"),
+       fp("2. Who is Jack?")],
+      [fp("Answer."),
+       fp("E.A.: it is good to try new foods; Tovo’s friend.")],
+      "Individual work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("Books closed! Quick quiz: what does Tovo like in the fish and chips? And in the breakfast?")],
+      [fp("Answer from memory."),
+       fp("E.A.: the chips; the eggs and toast.")],
+      "Memory quiz", "----"),
+    stepRow(["2. Presentation"],
+      [fp("Today we read BETWEEN the lines: details, inference and new words!")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("Detail questions: 1. Where is Tovo? 2. What does Tovo love (from home)? 3. Is he sure about the fish?")],
+      [fp("Read. Answer."),
+       fp("E.A.: in a British restaurant; rice and beans; no, he is not sure.")],
+      "Detailed reading", "Text"),
+    stepRow(["4. Analysis"],
+      [fp("Inference questions — think! 1. Is Tovo courageous with food? How do you know? 2. Does he forget Malagasy food? 3. What would Tovo say about a new dish tomorrow?")],
+      [fp("Infer. Justify."),
+       fp("E.A.: yes — he tries even when he is not sure; no — he also loves Malagasy food; “I’d like to try it!”")],
+      "Inference", "Text"),
+    stepRow(["5. Synthesis"],
+      [fp("New words from the text: excited, to try, different, fun, to learn. Make one sentence with each.")],
+      [fp("Write the words. Make sentences."),
+       fp("E.A.: I am excited to try…; it tastes different…")],
+      "Vocabulary work", "Blackboard"),
+    stepRow(["6. Practice"],
+      [fp("Opinion time: Do you think it is good to try new foods? Use I think… / I don’t think so (Unit 1!).")],
+      [fp("Give opinions."),
+       pAns("E.A.: Yes, I do! I think it is fun — like Tovo!",
+        ["I think"], { size: SZ.FICHE })],
+      "Discussion", "----"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("1. Answer: why is Tovo happy on the second day?"),
+       fp("2. Make one sentence with “to try”.")],
+      [fp("Answer. Write."),
+       pAns("E.A.: because he tries something new; I like trying new fruits.",
+        ["trying"], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(46, TOTAL, meta, rows, "s46");
+}
+function lessonS46() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 46", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("BETWEEN THE LINES — NEW WORDS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    p([run("My new words from the text:", { bold: true })], { after: 50 }),
+    vocab("excited", "iksaïtide", "very happy about something coming: Tovo is excited to try."),
+    vocab("to try", "tou traï", "to test something new: I like trying new things."),
+    vocab("different", "difreunnte", "not the same: it tastes different."),
+    vocab("fun", "feune", "it gives joy: it’s fun to try different foods!"),
+    vocab("to learn", "tou leurne", "Tovo learns that it’s good to try."),
+    p("", { after: 60 }),
+    p([run("I answer with full sentences:", { bold: true })], { after: 50 }),
+    bullet([run("Where is Tovo? — "), run("He is in a British restaurant.", { bold: true, color: C.BLUE })]),
+    bullet([run("Is he sure about the fish? — "), run("No, he is not sure, but he tries it!", { bold: true, color: C.BLUE })]),
+    bullet([run("Does he forget Malagasy food? — "), run("No! He also loves Malagasy food.", { bold: true, color: C.BLUE })]),
+    p("", { after: 60 }),
+    box("READING BETWEEN THE LINES (inference)", [
+      p([run("The text does not SAY “Tovo is courageous”… but I can INFER it: he tries the fish even when he is not sure!", { italic: true, size: SZ.BODY })], { after: 20 }),
+    ]),
+  ];
+}
+
+// ---------- S47 — Reading (3): fluent reading ----------
+function ficheS47() {
+  const meta = META("Reading (3) — reading fluently, with good pronunciation",
+    "By the end of the lesson, learners will be able to read the text fluently, paying attention to pronunciation.",
+    "17 / 19", "reading text, audio (QR code)");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Answer these questions:"),
+       fp("1. Make a sentence with “excited”."),
+       fp("2. What does Tovo learn at the end?")],
+      [fp("Answer."),
+       fp("E.A.: correct sentence; that it’s good to try new foods.")],
+      "Individual work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("Listen to the audio of the text once, books open: follow with your finger!")],
+      [fp("Listen and follow.")], "Audio", "Audio (QR code)"),
+    stepRow(["2. Presentation"],
+      [fp("Today, we polish our READING VOICE: clear sounds, good rhythm, lively dialogue lines!")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("Spot the difficult words: British, excited, sausages, breakfast, delicious. Repeat them after the audio, slowly then fast.")],
+      [fp("Repeat the difficult words.")],
+      "Repetition drill", "Audio (QR code)"),
+    stepRow(["4. Analysis"],
+      [fp("The reading rules: small pause at the comma, big pause at the full stop; the voice becomes Tovo’s voice for “It tastes different, but I like trying new things”!")],
+      [fp("Apply the rules on one paragraph.")],
+      "Whole-class work", "Text"),
+    stepRow(["5. Synthesis"],
+      [fp("A fluent reader = clear words + right pauses + a lively voice for the dialogue lines.")],
+      [fp("Repeat the three secrets.")], "Whole-class work", "Blackboard"),
+    stepRow(["6. Practice"],
+      [fp("Reading relay: each pupil reads two sentences, the next continues. Then the champions read a full paragraph alone!")],
+      [fp("Read in relay. Read alone."),
+       pAns("E.A.: fluent reading, correct pronunciation of the difficult words.",
+        ["fluent reading"], { size: SZ.FICHE })],
+      "Reading relay", "Text"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("Read the last paragraph alone, fluently."),
+       fp("Pronounce: British — sausages — delicious.")],
+      [fp("Read. Pronounce."),
+       pAns("E.A.: fluent paragraph; correct pronunciation.",
+        ["fluent paragraph"], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(47, TOTAL, meta, rows, "s47");
+}
+function lessonS47() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 47", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("READING FLUENTLY — MY THREE SECRETS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    box("THE THREE SECRETS OF A GOOD READER", [
+      bullet([run("1. Clear words: ", { bold: true, color: C.GREEN }), run("I pronounce every word, even the difficult ones.")]),
+      bullet([run("2. Right pauses: ", { bold: true, color: C.GREEN }), run("small pause at the comma (,), big pause at the full stop (.).")]),
+      bullet([run("3. Lively voice: ", { bold: true, color: C.GREEN }), run("for the dialogue lines, I BECOME the person!")], { after: 20 }),
+    ]),
+    p("", { after: 60 }),
+    p([run("The difficult words of the text:", { bold: true })], { after: 50 }),
+    bullet([...kw("British", "britich")]),
+    bullet([...kw("excited", "iksaïtide")]),
+    bullet([...kw("sausages", "sossidjiz")]),
+    bullet([...kw("breakfast", "brèkfeuste")]),
+    bullet([...kw("delicious", "dilicheuss")]),
+    p("", { after: 60 }),
+    p([run("My actor line — I read it with Tovo’s voice:", { bold: true })], { after: 50 }),
+    bullet([run("“It tastes different, but I like trying new things!”", { italic: true, color: C.BLUE, size: SZ.BODY })]),
+    p("", { after: 80 }),
+    audioBox([{ qr: "qr_t7_u3_tovo.png", label: "The model reading — listen and imitate", url: AUDIO.tovo }], COLOR),
+  ];
+}
+
+// ---------- S48 — Writing (1) ----------
+function ficheS48() {
+  const meta = META("Writing (1) — sentences about food",
+    "By the end of the lesson, learners will be able to write correct sentences about food, likes and dislikes.",
+    "18 / 19", "copy-books");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Answer these questions:"),
+       fp("1. Give the three secrets of a good reader."),
+       fp("2. Spell “delicious”.")],
+      [fp("Answer."),
+       fp("E.A.: clear words, right pauses, lively voice; D-E-L-I-C-I-O-U-S.")],
+      "Individual work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("Pre-writing: orally share the food you dislike the most — and say why! (“I hate eating…, it is too bitter!”)")],
+      [fp("Share orally.")], "Personalisation", "----"),
+    stepRow(["2. Presentation"],
+      [fp("Today we WRITE about food: our likes, our dislikes, our habits — with perfect sentences!")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("Observe the model sentences: “I love eating mangoes because they are sweet.” — “I never drink black coffee because it is bitter.” Find the pattern.")],
+      [fp("Observe. Find."),
+       fp("E.A.: feeling verb + -ing + because + taste.")],
+      "Whole-class work", "Blackboard"),
+    stepRow(["4. Analysis"],
+      [fp("The checkpoints: -ing after like/love/hate; -s with he/she; frequency word before the verb; capital letter and full stop.")],
+      [fp("List the checkpoints.")],
+      "Eliciting technique", "Blackboard"),
+    stepRow(["5. Synthesis"],
+      [fp("A good food sentence = feeling or habit + food + because + taste. Short, true and correct!")],
+      [fp("Repeat the formula.")], "Whole-class work", "Blackboard"),
+    stepRow(["6. Practice"],
+      [fp("Write five sentences: two likes, one dislike, one habit with a frequency word, one exclamation (What a…!). Peer correct with your neighbour.")],
+      [fp("Write. Peer correct."),
+       pAns("E.A.: five correct sentences with -ing, -s, frequency and What a…!",
+        ["five correct sentences"], { size: SZ.FICHE })],
+      "Peer correction", "Copy-books"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("Correct these sentences: 1. “she love eating rice” 2. “i drink never coffee”")],
+      [fp("Correct."),
+       pAns("E.A.: She loves eating rice. — I never drink coffee.",
+        ["She loves eating rice."], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(48, TOTAL, meta, rows, "s48");
+}
+function lessonS48() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 48", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("WRITING PERFECT FOOD SENTENCES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    box("MY FOUR CHECKPOINTS", [
+      bullet([run("-ING after the feeling verbs: ", { bold: true }), run("I love eatING mangoes.", { bold: true, color: C.BLUE })]),
+      bullet([run("-S with he/she: ", { bold: true }), run("She loveS rice.", { bold: true, color: C.BLUE })]),
+      bullet([run("Frequency word BEFORE the verb: ", { bold: true }), run("I never drink coffee.", { bold: true, color: C.BLUE })]),
+      bullet([run("Capital letter + full stop: ", { bold: true }), run("Every sentence, every time!", { bold: true, color: C.BLUE })], { after: 20 }),
+    ]),
+    p("", { after: 60 }),
+    p([run("The sentence formula:", { bold: true })], { after: 50 }),
+    bullet([run("feeling/habit + food + because + taste", { bold: true, color: C.GREEN, size: 30 })]),
+    p("", { after: 40 }),
+    p([run("Model sentences:", { bold: true })], { after: 50 }),
+    bullet([run("I love eating mangoes because they are sweet.", { italic: true })]),
+    bullet([run("I hate drinking black coffee because it is bitter.", { italic: true })]),
+    bullet([run("I usually have rice and beans for lunch.", { italic: true })]),
+    bullet([run("What a delicious meal!", { italic: true })]),
+    p("", { after: 60 }),
+    p([run("The mistake hunt:", { bold: true, color: C.RED })], { after: 50 }),
+    bullet([run("she love eating rice ✗  →  "), run("She loves eating rice. ✓", { bold: true, color: C.BLUE })]),
+    bullet([run("i drink never coffee ✗  →  "), run("I never drink coffee. ✓", { bold: true, color: C.BLUE })]),
+  ];
+}
+
+// ---------- S49 — Writing (2) ----------
+function ficheS49() {
+  const meta = META("Writing (2) — my short production about common food",
+    "By the end of the lesson, learners will be able to write a short production about common food and correct each other’s writing.",
+    "19 / 19", "copy-books");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Answer these questions:"),
+       fp("1. Give the four checkpoints."),
+       fp("2. Say one perfect food sentence.")],
+      [fp("Answer."),
+       fp("E.A.: -ing, -s, frequency, capital+stop; correct sentence.")],
+      "Individual work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("Read Tovo’s text once more: it will be our model — short sentences, true feelings!")],
+      [fp("Read the model.")], "Whole-class work", "Text"),
+    stepRow(["2. Presentation"],
+      [fp("Today, the final mission of Unit 3: write YOUR paragraph about food (5-6 sentences) — like a little Tovo story about you!")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("The paragraph plan on the board: 1. my favourite food; 2. why (taste); 3. my habits (frequency); 4. one dislike; 5. one dish I’d like to try.")],
+      [fp("Copy the plan.")],
+      "Whole-class work", "Blackboard"),
+    stepRow(["4. Analysis"],
+      [fp("While-writing: write your five sentences following the plan. Check the grammar points: -ing, -s, frequency words, capital letters.")],
+      [fp("Write. Self-check."),
+       fp("E.A.: complete draft.")],
+      "Individual writing", "Copy-books"),
+    stepRow(["5. Synthesis"],
+      [fp("Post-writing: read each other’s writing and correct the mistakes kindly (peer correction). Two stars and one wish: two good things, one thing to improve!")],
+      [fp("Exchange. Correct. Encourage."),
+       fp("E.A.: corrected paragraphs.")],
+      "Peer correction", "Copy-books"),
+    stepRow(["6. Practice"],
+      [fp("Read out your paragraph to the class, loud and clear — with your reading secrets!")],
+      [fp("Read out."),
+       pAns("E.A.: My favourite food is rice with chicken. I love it because it is tasty. I usually eat it on Sundays. I don’t like bitter food. I’d like to try fish and chips!",
+        ["My favourite food is"], { size: SZ.FICHE })],
+      "Presentation", "----"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("Hand in your final paragraph (5-6 sentences), checked and corrected.")],
+      [fp("Hand in."),
+       pAns("E.A.: correct final paragraph following the plan.",
+        ["final paragraph"], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(49, TOTAL, meta, rows, "s49");
+}
+function lessonS49() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 49", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("MY FOOD PARAGRAPH", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    p([run("The paragraph plan — five sentences:", { bold: true })], { after: 50 }),
+    bullet([run("1. My favourite food: ", { bold: true, color: C.GREEN }), run("My favourite food is…", { bold: true, color: C.BLUE })]),
+    bullet([run("2. Why: ", { bold: true, color: C.GREEN }), run("I love it because it is… (sweet, tasty…)", { bold: true, color: C.BLUE })]),
+    bullet([run("3. My habits: ", { bold: true, color: C.GREEN }), run("I usually eat it… / We often have…", { bold: true, color: C.BLUE })]),
+    bullet([run("4. One dislike: ", { bold: true, color: C.GREEN }), run("I don’t like… because…", { bold: true, color: C.BLUE })]),
+    bullet([run("5. My dream dish: ", { bold: true, color: C.GREEN }), run("I’d like to try…", { bold: true, color: C.BLUE })]),
+    p("", { after: 60 }),
+    box("A MODEL PARAGRAPH", [
+      p([run("My favourite food is rice with chicken. I love it because it is really tasty. I usually eat it on Sundays with my family. I don’t like black coffee because it is too bitter. One day, I’d like to try fish and chips, like Tovo!", { italic: true, size: SZ.BODY })], { after: 20 }),
+    ]),
+    p("", { after: 60 }),
+    box("PEER CORRECTION — TWO STARS AND ONE WISH", [
+      bullet([run("⭐ Two stars: ", { bold: true }), run("two things I like in my friend’s paragraph.")]),
+      bullet([run("🌠 One wish: ", { bold: true }), run("one kind idea to make it even better.")], { after: 20 }),
+    ]),
+  ];
+}
+
+// ---------- grande leçon d'unité ----------
+function bigLesson() {
+  return [
+    p([run("LESSON — UNIT 3", { bold: true, size: 30 })], { center: true, after: 120 }),
+    lessonTitle("COMMON FOOD"),
+    sub("1. The food families"),
+    bullet([run("vegetables — fruit — meat — snacks — drinks", { bold: true, color: C.BLUE }), run(" ; and rice and beans!")]),
+    bullet([...kw("What colour is a mango? — It’s yellow.", "ouate keuleur iz e manggôou — its yèlôou")], { after: 100 }),
+    sub("2. The three meals"),
+    bullet([run("breakfast (morning) — lunch (noon) — dinner (evening)", { bold: true, color: C.BLUE })]),
+    bullet([...kw("What’s for lunch?", "ouots fôr leunntch"), run(" — "), ...kw("a cup of tea, a glass of water, a piece of bread", "e keupe ov ti")], { after: 100 }),
+    sub("3. The present simple — habits"),
+    bullet([run("eat, drink, cook, taste + ", { bold: true }), run("he/she → verb-S", { bold: true, color: C.RED }), run(" : she drinks tea.")]),
+    bullet([run("Frequency, before the verb: ", { bold: true }), run("always, usually, often, sometimes, never", { bold: true, color: C.BLUE })], { after: 100 }),
+    sub("4. The tastes and the exclamatory form"),
+    bullet([run("sweet (sugar) — salty (salt) — sour (tamarind) — bitter (black coffee)", { bold: true, color: C.BLUE })]),
+    bullet([run("delicious, tasty — I’m hungry / I’m thirsty", { bold: true, color: C.BLUE })]),
+    bullet([run("What + a/an + adjective + noun + ! ", { bold: true }), run("What a delicious meal!", { bold: true, color: C.BLUE })], { after: 100 }),
+    sub("5. Likes, dislikes, preferences"),
+    bullet([run("love / like / enjoy / dislike / hate + verb-ING", { bold: true, color: C.BLUE }), run(" : I like eating bananas.")]),
+    bullet([run("My favourite food is… — I prefer mangoes TO apples.", { bold: true, color: C.BLUE })]),
+    bullet([run("Comparatives: ", { bold: true }), run("sweeter than, more bitter than", { bold: true, color: C.BLUE })], { after: 100 }),
+    sub("6. Offering and quantities"),
+    bullet([...kw("Would you like some rice? — Yes, please! / No, thank you.", "woud iou laïk seume raïss")]),
+    bullet([run("some — a lot of — a little ; a cup of, a glass of, a bottle of, a plate of", { bold: true, color: C.BLUE })], { after: 100 }),
+    sub("7. Healthy food"),
+    bullet([run("The pyramid: a lot of rice and vegetables, some fish and milk, only a little sugar — "), run("healthy!", { bold: true, color: C.GREEN })], { after: 140 }),
+    audioBox([
+      { qr: "qr_t7_u3_food.png", label: "Common food and the tastes", url: AUDIO.food },
+      { qr: "qr_t7_u3_lunch.png", label: "“What’s for lunch?” — Jeff and Joe", url: AUDIO.lunch },
+      { qr: "qr_t7_u3_fruit.png", label: "At the fruit market", url: AUDIO.fruit },
+      { qr: "qr_t7_u3_tovo.png", label: "“Tovo tries British food”", url: AUDIO.tovo },
+    ], COLOR),
+  ];
+}
+
+// ---------- exercices corrigés ----------
+function exercises() {
+  return [
+    p([run("EXERCISES", { bold: true, size: 30 })], { center: true, after: 140 }),
+    pr([run("Exercise 1 (4 points). ", { bold: true }), run("Give the taste: 1. sugar 2. tamarind 3. salt 4. black coffee.")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 2 (4 points). ", { bold: true }), run("Complete: 1. She … (eat) rice every day. 2. I like … (cook). 3. We … (drink) milk. 4. He loves … (taste) new dishes.")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 3 (4 points). ", { bold: true }), run("Put the frequency word in place: 1. I eat fruit (often). 2. She drinks coffee (never). 3. We have bananas as dessert (usually). 4. They are hungry at noon (always).")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 4 (4 points). ", { bold: true }), run("Complete: 1. I prefer mangoes … apples. 2. Mangoes are … (sweet) than apples. 3. Would you like … rice? 4. Just … little salt, please.")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 5 (4 points). ", { bold: true }), run("Write an exclamation for: a delicious meal — a salty soup — a sweet mango — a bitter coffee.")]),
+    p("", { after: 140 }),
+    p([run("Total: 20 points", { bold: true })], { after: 160 }),
+    p([run("ANSWER KEY", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
+    pAns("Exercise 1: sweet — sour — salty — bitter (1 point each).", ["sweet"]),
+    pAns("Exercise 2: 1. eats  2. cooking  3. drink  4. tasting (1 point each).", ["eats", "cooking"]),
+    pAns("Exercise 3: I often eat fruit. She never drinks coffee. We usually have bananas as dessert. They are always hungry at noon. (1 point each).", ["I often eat fruit."]),
+    pAns("Exercise 4: 1. to  2. sweeter  3. some  4. a (1 point each).", ["sweeter"]),
+    pAns("Exercise 5: What a delicious meal! What a salty soup! What a sweet mango! What a bitter coffee! (1 point each).", ["What a delicious meal!"]),
+  ];
+}
+
+// ---------- S50 — révision ----------
+function revision() {
+  return [
+    B.bookmarkTitle("s50", "SESSION 50 / 99", { bold: true, size: 28, after: 60 }),
+    p([run("REVISION — UNIT 3: COMMON FOOD", { bold: true, size: 26 })], { center: true, after: 140 }),
+    p([run("Now answer:", { bold: true })], { after: 80 }),
+    p("1. Name two foods in each family: vegetables, fruit, meat, drinks."),
+    pAns("E.A.: carrots, onions; bananas, mangoes; chicken, beef; water, milk.", ["carrots"]),
+    p("2. Name the three meals and ask the magic question for each."),
+    pAns("E.A.: breakfast, lunch, dinner — What’s for breakfast/lunch/dinner?", ["What’s for lunch?"]),
+    p("3. Conjugate: I eat / she … ; we drink / he … ; they cook / it …"),
+    pAns("E.A.: she eats — he drinks — it cooks (the -s of he/she/it!).", ["she eats"]),
+    p("4. Give the four tastes with one example each."),
+    pAns("E.A.: sweet (sugar), salty (salt), sour (tamarind), bitter (black coffee).", ["sour (tamarind)"]),
+    p("5. In the dialogue: what’s for lunch at Joe’s home? What’s for dessert?"),
+    pAns("E.A.: chicken and potatoes; apples.", ["chicken and potatoes"]),
+    p("6. Say the frequency ladder and make one true sentence."),
+    pAns("E.A.: always, usually, often, sometimes, never; I usually have rice.", ["usually"]),
+    p("7. Say one like, one dislike (with -ing) and your favourite food."),
+    pAns("E.A.: I like eating…; I hate drinking…; My favourite food is…", ["I like eating"]),
+    p("8. What do you prefer, mangoes or apples? Compare their tastes!"),
+    pAns("E.A.: I prefer mangoes to apples — mangoes are sweeter!", ["sweeter"]),
+    p("9. Offer me some tea; I refuse politely; offer again with rice!"),
+    pAns("E.A.: Would you like some tea? — No, thank you. — Would you like some rice? — Yes, please!", ["Would you like some"]),
+    p("10. In Tovo’s story: what does he try? what does he learn?"),
+    pAns("E.A.: fish and chips, a full English breakfast; that it’s good to try new foods.", ["fish and chips"]),
+  ];
+}
+
+// ---------- S51 — test ----------
+function testPaper() {
+  return [
+    B.bookmarkTitle("s51", "SESSION 51 / 99", { bold: true, size: 28, after: 60 }),
+    p([run("T7 TEST PAPER — UNIT 3: COMMON FOOD", { bold: true, size: 26 })], { center: true, after: 100 }),
+    pr([run("Duration: ………        ", { bold: true }), run("Total: 20 points", { bold: true })], { center: true, after: 160 }),
+    pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: present your favourite dish (name, ingredients, taste) and offer it to me politely.")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 2 (4 points). ", { bold: true }), run("Complete: 1. My sister … (drink) tea every morning. 2. I enjoy … (eat) mangoes. 3. We … (have) lunch at noon. 4. Joe … (love) chicken.")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 3 (4 points). ", { bold: true }), run("Write the taste: lemons are …; cakes are …; sea water is …; black coffee is … .")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 4 (4 points). ", { bold: true }), run("Write the questions for these answers: 1. “It’s yellow.” 2. “Chicken and potatoes!” 3. “I prefer mangoes.” 4. “Yes, please!”")]),
+    p("", { after: 120 }),
+    pr([run("Exercise 5 (4 points). ", { bold: true }), run("Write your food paragraph (5 sentences): favourite food + why + habit + dislike + a dish you’d like to try.")]),
+    p("", { after: 140 }),
+    p([run("ANSWER KEY", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
+    pAns("Exercise 1: name + ingredients + taste + Would you like some…? (1 point per element).", ["Would you like some…?"]),
+    pAns("Exercise 2: 1. drinks  2. eating  3. have  4. loves (1 point each).", ["drinks"]),
+    pAns("Exercise 3: sour — sweet — salty — bitter (1 point each).", ["sour"]),
+    pAns("Exercise 4: 1. What colour is it? 2. What’s for lunch? 3. What do you prefer, mangoes or apples? 4. Would you like some…? (1 point each).", ["What’s for lunch?"]),
+    pAns("Exercise 5: five correct sentences following the plan (1 point each, max 4).", ["five correct sentences"]),
+  ];
+}
+
 module.exports = function unit3() {
   return [
     ...opening(), pageBreak(),
@@ -979,7 +1604,28 @@ module.exports = function unit3() {
     ...ficheS39(), pageBreak(), ...lessonS39(), pageBreak(),
     ...ficheS40(), pageBreak(), ...lessonS40(), pageBreak(),
     ...ficheS41(), pageBreak(), ...lessonS41(), pageBreak(),
-    ...ficheS42(), pageBreak(), ...lessonS42(),
+    ...ficheS42(), pageBreak(), ...lessonS42(), pageBreak(),
+    ...ficheS43(), pageBreak(), ...lessonS43(), pageBreak(),
+    ...ficheS44(), pageBreak(), ...lessonS44(), pageBreak(),
+    ...ficheS45(), pageBreak(), ...lessonS45(), pageBreak(),
+    ...ficheS46(), pageBreak(), ...lessonS46(), pageBreak(),
+    ...ficheS47(), pageBreak(), ...lessonS47(), pageBreak(),
+    ...ficheS48(), pageBreak(), ...lessonS48(), pageBreak(),
+    ...ficheS49(), pageBreak(), ...lessonS49(), pageBreak(),
+    ...bigLesson(), pageBreak(),
+    ...exercises(), pageBreak(),
+    ...revision(), pageBreak(),
+    ...testPaper(), pageBreak(),
+    ...iCan("UNIT 3", COLOR, [
+      "I can name the common food and its colours.",
+      "I can talk about the three meals: What’s for lunch?",
+      "I can use the present simple with the -s of he/she, and the frequency words.",
+      "I can describe the tastes: sweet, salty, sour, bitter — What a delicious meal!",
+      "I can say my likes and dislikes with verb-ing, and my favourite food.",
+      "I can prefer and compare: I prefer mangoes to apples — they are sweeter!",
+      "I can offer food politely: Would you like some rice?",
+      "I can read and write about food from here and there.",
+    ], "Well done! See you in Unit 4: FAMILY!"),
   ];
 };
 module.exports.COLOR = COLOR;

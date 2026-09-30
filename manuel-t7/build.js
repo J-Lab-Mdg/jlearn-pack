@@ -118,8 +118,17 @@ function contents() {
     tocLink("s40", "    Session 40 — Offering food: Would you like…?"),
     tocLink("s41", "    Session 41 — Quantities: some, a lot of, a little"),
     tocLink("s42", "    Session 42 — Healthy food: the pyramid"),
+    tocLink("s43", "    Session 43 — Listening: Jack’s full English breakfast"),
+    tocLink("s44", "    Session 44 — Food from here and there"),
+    tocLink("s45", "    Session 45 — Reading (1): “Tovo tries British food”"),
+    tocLink("s46", "    Session 46 — Reading (2): details, inference, new words"),
+    tocLink("s47", "    Session 47 — Reading (3): reading fluently"),
+    tocLink("s48", "    Session 48 — Writing (1): perfect food sentences"),
+    tocLink("s49", "    Session 49 — Writing (2): my food paragraph"),
+    tocLink("s50", "    Session 50 — Revision"),
+    tocLink("s51", "    Session 51 — Test paper"),
     p("", { after: 60 }),
-    p([run("… Sessions 43–51 (Unit 3 suite), Units 4 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p([run("… Units 4 to 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 

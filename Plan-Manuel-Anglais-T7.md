@@ -152,8 +152,8 @@ QR codes python (box_size=6, border=2). Copie MP3 de sauvegarde dans le repo (au
   Would you like, quantités, pyramide) — audio Drive : t7_u3_food `1bu25N2NN9Sg7ektATXIUF9ZXvshP-9-u`,
   t7_u3_lunch `10LVY1xUz6bRS2NZf0scjZBYQsWI2lXfk`, t7_u3_fruit `1daAiC0S6yZ6_HsgOCt9-euHvS6RSMzXb` ;
   images u3_food, u3_meals, u3_tastes, u3_pyramid
-- Bloc 3b : UNIT 3 suite — S43 breakfast Jack, S44 food from here and there, S45-S47 reading « Tovo tries
-  British food », S48-S49 writing, grande leçon, exercices, révision S50, test S51, I can
+- Bloc 3b ✔ : UNIT 3 complet (S31-S51) — audio Drive : t7_u3_breakfast `1Eub_U3ABL060pqIaPz2LnhHU5GW9JGzy`,
+  t7_u3_tovo `1Rn-qk3RBoe1f27e2f-xE4x2m9Xe6WFWj` ; image u3_breakfast
 - Bloc 4 : UNIT 4 complet
 - Bloc 5 : UNIT 5 complet
 - Bloc 6 : UNIT 6 complet
