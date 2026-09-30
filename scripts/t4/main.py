@@ -16,6 +16,7 @@ import content_unit1 as U1
 import content_unit2 as U2
 import content_unit3 as U3
 import content_unit4 as U4
+import content_unit5 as U5
 
 OUT = os.path.join(os.path.dirname(os.path.dirname(HERE)),
                     "ST T4 [PE] Fiche de preparation sujet corriges J-Learn.docx")
@@ -166,6 +167,15 @@ def main():
     B.add_unit_divider(doc, roman, title, ras, valeurs, unit_seances)
 
     contents = [U4.S1, U4.S2, U4.S3, U4.S4, U4.S5, U4.S6]
+    for s, content in zip(unit_seances, contents):
+        build_seance(doc, s, content)
+
+    # ---- UNITE V ----
+    roman, title, hours, valeurs, ras, seances_list = UNITS[4]
+    unit_seances = [s for s in ALL_SEANCES if s["unit_roman"] == roman]
+    B.add_unit_divider(doc, roman, title, ras, valeurs, unit_seances)
+
+    contents = [U5.S1, U5.S2, U5.S3, U5.S4, U5.S5, U5.S6, U5.S7, U5.S8, U5.S9]
     for s, content in zip(unit_seances, contents):
         build_seance(doc, s, content)
 
