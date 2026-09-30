@@ -47,6 +47,8 @@ def build_lecon(doc, s):
                 B.add_image(doc, path, caption)
             else:
                 print("WARNING: missing image, skipped:", path)
+    # New page: separate the LEÇON content from EXERCICES + CORRIGÉ.
+    B.page_break(doc)
     B.exercices_heading(doc)
     for header, rest in s["exercices"]:
         for i, line in enumerate(rest.split("\n")):
@@ -83,6 +85,9 @@ def build_seance(doc, s, content):
         ras_theme=content["ras_theme"], valeurs=content["valeurs"], duree=content["duree"],
     )
     B.add_deroulement_table(doc, content["deroulement"])
+    # New page: separate the FICHE DE PRÉPARATION (header + déroulement) from
+    # the LEÇON / EXERCICES that follow.
+    B.page_break(doc)
     if content.get("kind") in ("revision", "exam"):
         build_revexam(doc, content)
     else:
@@ -92,13 +97,13 @@ def build_seance(doc, s, content):
 
 def main():
     doc = docx.Document()
-    # slightly narrower margins to match a dense fiche layout
-    from docx.shared import Cm
+    # narrow margins (0.5 inch all around, the Word "Narrow" preset)
+    from docx.shared import Inches
     for section in doc.sections:
-        section.left_margin = Cm(2)
-        section.right_margin = Cm(2)
-        section.top_margin = Cm(1.5)
-        section.bottom_margin = Cm(1.5)
+        section.left_margin = Inches(0.5)
+        section.right_margin = Inches(0.5)
+        section.top_margin = Inches(0.5)
+        section.bottom_margin = Inches(0.5)
 
     B.add_cover(
         doc,
