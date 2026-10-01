@@ -157,7 +157,8 @@ QR codes python (box_size=6, border=2). Copie MP3 de sauvegarde dans le repo (au
 - Bloc 4 ✔ : UNIT 4 FAMILY complet (S52-S65) — audio Drive : t7_u4_emma `1TOn8K1AKPlbmixETbvyXaeRU5SizTlO_`,
   t7_u4_role `1jHPRVt2DEvCjQPHKpyFWW0mv_1nxQsHH`, t7_u4_sarah `1y2XZSgt_A8Lzt7R5XRwb788Bd3G3efg2` ;
   images u4_tree, u4_emma, u4_appearance, u4_sarah + 3 QR
-- Bloc 5 : UNIT 5 complet
+- Bloc 5a ✔ : UNIT 5 S66-S75 (opening, moyens, verbes, écoute nowadays, Yes/No, WH, progressif, habit vs now, coordinators, interview, report) — audio Drive : t7_u5_means `1AtN5skdwIzNokJjMvP6YUDk83-T5urIu`, t7_u5_nowadays `19A34cr20KX3lAQuqObGHQ7GsRdnzJade` ; images u5_means, u5_family + 2 QR
+- Bloc 5b : S76-S83 (reading radio interview x3, writing report x3, révision S82, test S83) + bigLesson + exercises + iCan ; audio t7_u5_interview à créer
 - Bloc 6 : UNIT 6 complet
 - Bloc 7 : annexes 1-6 + page finale + TOC + vérifications + PR
 

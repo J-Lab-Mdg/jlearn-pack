@@ -8,6 +8,7 @@ const unit1 = require("./unit1");
 const unit2 = require("./unit2");
 const unit3 = require("./unit3");
 const unit4 = require("./unit4");
+const unit5 = require("./unit5");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -144,8 +145,20 @@ function contents() {
     tocLink("s63", "    Session 63 — Writing: my extended family"),
     tocLink("s64", "    Session 64 — Revision"),
     tocLink("s65", "    Session 65 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit5", "UNIT 5 — MEANS OF COMMUNICATION (Sessions 66–83)", { bold: true, size: 26 }),
+    tocLink("s66", "    Session 66 — The means of communication"),
+    tocLink("s67", "    Session 67 — The communication verbs"),
+    tocLink("s68", "    Session 68 — Listening: how people communicate nowadays"),
+    tocLink("s69", "    Session 69 — Do you watch TV? (Yes/No questions)"),
+    tocLink("s70", "    Session 70 — When? With who? (WH-questions)"),
+    tocLink("s71", "    Session 71 — The present progressive"),
+    tocLink("s72", "    Session 72 — Habit or happening now?"),
+    tocLink("s73", "    Session 73 — And, but, or, so (coordinators)"),
+    tocLink("s74", "    Session 74 — The interview"),
+    tocLink("s75", "    Session 75 — Reporting: Andry watches TV…"),
     p("", { after: 60 }),
-    p([run("… Units 5 and 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p([run("… Sessions 76–83 (Unit 5 suite), Unit 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -196,7 +209,8 @@ async function main() {
         ...unit1(), pageBreak(),
         ...unit2(), pageBreak(),
         ...unit3(), pageBreak(),
-        ...unit4(),
+        ...unit4(), pageBreak(),
+        ...unit5(),
       ],
     }],
   });
