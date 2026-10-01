@@ -10,6 +10,7 @@ const unit3 = require("./unit3");
 const unit4 = require("./unit4");
 const unit5 = require("./unit5");
 const unit6 = require("./unit6");
+const annexes = require("./annexes");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -33,7 +34,7 @@ function foreword() {
         run("NOT copy the words in brackets", { bold: true, color: C.RED }),
         run(".")]),
     p("Six annexes close the book: the picture dictionary, the songs, the pronunciation guide, the flashcards, the conjugation guide and the phonetics guide."),
-    p("Dialogues, songs and reading texts can be listened to with a phone: scan the QR code or open the link at the bottom of the page.", { after: 160 }),
+    p("Dialogues, songs and reading texts can be listened to with a phone: scan the QR code or open the link at the bottom of the page. In Annex 2, the traditional songs also have a YouTube link for the video version.", { after: 160 }),
   ];
 }
 
@@ -184,8 +185,14 @@ function contents() {
     tocLink("s97", "    Session 97 — Writing (2): the final text"),
     tocLink("s98", "    Session 98 — Revision"),
     tocLink("s99", "    Session 99 — Test paper"),
-    p("", { after: 60 }),
-    p([run("… The six annexes are being added in the final block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p("", { after: 40 }),
+    tocLink("annexes", "ANNEXES", { bold: true, size: 26 }),
+    tocLink("ann1", "    Annex 1 — Picture dictionary"),
+    tocLink("ann2", "    Annex 2 — Songs and chants"),
+    tocLink("ann3", "    Annex 3 — Pronunciation guide"),
+    tocLink("ann4", "    Annex 4 — Flashcards to cut out"),
+    tocLink("ann5", "    Annex 5 — Conjugation guide"),
+    tocLink("ann6", "    Annex 6 — Phonetics guide (IPA and brackets)"),
   ];
 }
 
@@ -238,7 +245,8 @@ async function main() {
         ...unit3(), pageBreak(),
         ...unit4(), pageBreak(),
         ...unit5(), pageBreak(),
-        ...unit6(),
+        ...unit6(), pageBreak(),
+        ...annexes(),
       ],
     }],
   });

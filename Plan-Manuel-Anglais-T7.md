@@ -162,7 +162,10 @@ QR codes python (box_size=6, border=2). Copie MP3 de sauvegarde dans le repo (au
 - Bloc 6 ✔ : UNIT 6 THE ENVIRONMENT complet (S84-S99) — audio Drive : t7_u6_buildings `185VDVSMMBF_RqMTm2umrdz1u878dl2oX`,
   t7_u6_walk `1nR1Qh-tWjxzYc-bq0EDdizo6ZxmGtLHg`, t7_u6_town `1WAoHvaPj54gnIYm6ZD08JuFfrEa4UZSh` ;
   images u6_buildings, u6_map + 3 QR ; 14 fiches+leçons, bigLesson, exercises, révision S98, test S99, iCan final (→ annexes)
-- Bloc 7 : annexes 1-6 + page finale + TOC + vérifications + PR
+- Bloc 7 ✔ : annexes 1-6 (picture dictionary, songs & chants + 3 liens YouTube, pronunciation guide,
+  flashcards, conjugation guide avec les 2 présents face à face, phonetics guide IPA+figurée) + page finale ;
+  audio Drive t7_annex_chants `15TOQUKwKvlutd0hiPOBhUJ0duoiOQTBz` + QR ; TOC complet s1-s99 + ann1-ann6 —
+  **MANUEL T7 TERMINÉ** (112 signets, 99 sessions, 58 liens Drive, 3 YouTube en Annex 2 uniquement)
 
 ## Vérifications à chaque build
 sectPr=2 ; github=0 ; س=0 ; bookmarks==anchors ; `SESSION \d+ / 99` = 1..99 ; drive.google.com ;
