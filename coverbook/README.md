@@ -22,3 +22,4 @@ Les fichiers existants restent à leur emplacement d’origine et ne seront ni d
 | Fichier | Matière / niveau | Modèle visuel |
 |---|---|---|
 | `TANTARA T5 coverbook.png` | TANTARA T5 | Couverture MATH 7e (`bookcovers6.png`), adaptée avec un autre personnage et des accents ocre/doré |
+| `SVT T4 coverbook.png` | SVT T4 (version française) | Même collection, adaptée avec une enseignante et des éléments de sciences de la vie |
