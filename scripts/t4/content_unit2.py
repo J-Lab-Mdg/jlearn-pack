@@ -491,11 +491,11 @@ S6 = {
                            "Quel est le rôle de cette plante ici ?",
          "R.A. : un rôle symbolique et festif, pas seulement alimentaire.", "Analyse documentaire", "Texte ou témoignage", ""),
         ("4. Analyse", "Connaissez-vous d'autres plantes utilisées lors de fêtes ou de cérémonies dans votre "
-                       "communauté (riz lors du famadihana, fleurs, feuilles de bananier) ?",
-         "R.A. : les élèves citent des exemples de leur région.", "Enquête orale", "—", ""),
+                       "communauté (riz lors du famadihana, fleurs, feuilles) ?",
+         "R.A. : les élèves citent des exemples vérifiés auprès de leur propre famille.", "Enquête orale", "—", ""),
         ("5. Synthèse", "Donc, certaines plantes ont un rôle culturel : elles sont utilisées comme symboles lors "
-                        "des traditions et des événements importants de la communauté (naissance, circoncision, "
-                        "famadihana, mariage).",
+                        "des traditions et des événements importants de la communauté (circoncision, "
+                        "famadihana). Ces usages peuvent varier d'une famille ou d'une région à l'autre.",
          "Les élèves écoutent et notent.", "Exposé magistral", "Tableau noir", ""),
         ("6. Application", "Ex. 1 — Cite un événement de ta communauté où une plante joue un rôle symbolique, "
                            "et précise lequel.",
@@ -512,16 +512,16 @@ S6 = {
         ("body", "Lors de la circoncision traditionnelle (famorana), la canne à sucre (fary) est souvent offerte "
                  "et partagée : sa douceur symbolise un souhait de vie douce et heureuse pour l'enfant."),
         ("section", "3. Le riz, symbole de vie"),
-        ("body", "Le riz (vary) occupe une place centrale dans de nombreuses cérémonies malgaches : il est "
-                 "offert, partagé, et accompagne les grandes étapes de la vie (naissance, mariage, "
-                 "famadihana)."),
+        ("body", "Le riz (vary) est l'aliment central de la culture malgache. Lors du famadihana, un plat de "
+                 "riz particulier, le « vary be menaka » (riz cuit avec de la graisse de zébu), est "
+                 "traditionnellement préparé et partagé en famille pour célébrer la cérémonie."),
         ("image", ("scripts/t4/generated_images/u2_s6_b_riz.jpg",
                    "Le riz partagé en famille lors d'une grande cérémonie malgache.")),
         ("section", "4. D'autres exemples selon les régions"),
-        ("body", "Selon les régions de Madagascar, d'autres plantes ont un rôle symbolique : des fleurs pour "
-                 "orner une tombe, des feuilles de bananier pour préparer certains plats de fête, ou des "
-                 "plantes précises utilisées lors du famadihana. Ces usages varient d'une région à l'autre et "
-                 "méritent d'être recherchés auprès des familles."),
+        ("body", "Selon les régions de Madagascar, il existe d'autres plantes utilisées lors de fêtes ou de "
+                 "cérémonies (fleurs, feuilles, bois pour une construction, etc.). Ces usages varient d'une "
+                 "région et d'une famille à l'autre : il vaut mieux les faire rechercher et vérifier par les "
+                 "élèves auprès de leur propre famille plutôt que de les présenter comme une règle générale."),
     ],
     "exercices": [
         ("Exercice 1 (5 points)", " — Explique en deux phrases le rôle symbolique de la canne à sucre lors du "
@@ -543,8 +543,8 @@ S6 = {
     "corrige_lines": [
         [("Ex. 1 — ", False), ("La canne à sucre est offerte et partagée pendant le famorana ; sa douceur "
                                 "symbolise le souhait d'une vie douce et heureuse pour l'enfant.", True)],
-        [("Ex. 2 — ", False), ("Par exemple le famorana (canne à sucre) et le famadihana ou un mariage (riz "
-                                "partagé).", True)],
+        [("Ex. 2 — ", False), ("Par exemple le famorana (canne à sucre) et le famadihana (riz « vary be "
+                                "menaka » partagé).", True)],
         [("Ex. 3 — ", False),
          ("1. Faux. Le rôle culturel est symbolique, différent du simple fait de nourrir. (1,5 pt)", False)],
         [("2. Vrai. (1,5 pt)", False)],
@@ -805,7 +805,7 @@ S9 = {
         [("Renvoi : séances 12, 13.", True)],
         [("Exercice 3 (6 pts)", True)],
         [("1. Le rôle culturel (symbolique) de la plante. (2 pts)", False)],
-        [("2. Par exemple le riz partagé lors d'un famadihana ou d'un mariage. (2 pts)", False)],
+        [("2. Par exemple le riz (« vary be menaka ») partagé lors d'un famadihana. (2 pts)", False)],
         [("3. Le rôle alimentaire consiste à nourrir, alors que le rôle culturel est symbolique et lié à une "
           "tradition précise. (2 pts)", False)],
         [("Renvoi : séance 13.", True)],
