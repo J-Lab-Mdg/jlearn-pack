@@ -9,6 +9,7 @@ const unit2 = require("./unit2");
 const unit3 = require("./unit3");
 const unit4 = require("./unit4");
 const unit5 = require("./unit5");
+const unit6 = require("./unit6");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -165,8 +166,26 @@ function contents() {
     tocLink("s81", "    Session 81 — Writing (3): presenting the report"),
     tocLink("s82", "    Session 82 — Revision"),
     tocLink("s83", "    Session 83 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit6", "UNIT 6 — THE ENVIRONMENT (Sessions 84–99)", { bold: true, size: 26 }),
+    tocLink("s84", "    Session 84 — Around my house"),
+    tocLink("s85", "    Session 85 — The local buildings"),
+    tocLink("s86", "    Session 86 — The surroundings: garden, gate, fence, flag"),
+    tocLink("s87", "    Session 87 — The furniture verbs"),
+    tocLink("s88", "    Session 88 — Listening: a walk in our town"),
+    tocLink("s89", "    Session 89 — This, that, these, those"),
+    tocLink("s90", "    Session 90 — The prepositions of place"),
+    tocLink("s91", "    Session 91 — The map of the town"),
+    tocLink("s92", "    Session 92 — I describe my surroundings"),
+    tocLink("s93", "    Session 93 — Reading (1): “My town, Greenhill”"),
+    tocLink("s94", "    Session 94 — Reading (2): the map of Greenhill"),
+    tocLink("s95", "    Session 95 — Reading (3): Greenhill and our towns"),
+    tocLink("s96", "    Session 96 — Writing (1): my favourite place (draft)"),
+    tocLink("s97", "    Session 97 — Writing (2): the final text"),
+    tocLink("s98", "    Session 98 — Revision"),
+    tocLink("s99", "    Session 99 — Test paper"),
     p("", { after: 60 }),
-    p([run("… Unit 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p([run("… The six annexes are being added in the final block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -218,7 +237,8 @@ async function main() {
         ...unit2(), pageBreak(),
         ...unit3(), pageBreak(),
         ...unit4(), pageBreak(),
-        ...unit5(),
+        ...unit5(), pageBreak(),
+        ...unit6(),
       ],
     }],
   });
