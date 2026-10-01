@@ -145,7 +145,7 @@ const S20 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. Les angles d'optique se mesurent par rapport : a) au miroir b) à la normale c) au sol. 2. Si i = 40°, alors r = : a) 40° b) 50° c) 80°. 3. Le plan d'incidence contient : a) le miroir entier b) le rayon incident et la normale c) l'œil de l'observateur. 4. Un rayon le long de la normale : a) repart sur lui-même b) ne se réfléchit pas c) dévie de 45°.",
+      consigne: "QCM : 1. Les angles d'optique se mesurent par rapport : a) au miroir b) à la normale d) au sol. 2. Si i = 40°, alors r = : a) 40° b) 50° d) 80°. 3. Le plan d'incidence contient : a) le miroir entier b) le rayon incident et la normale d) l'œil de l'observateur. 4. Un rayon le long de la normale : a) repart sur lui-même b) ne se réfléchit pas d) dévie de 45°.",
       items: [],
       corrige: [
         [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "a", cle: true }, { text: " ; 3. " }, { text: "b", cle: true }, { text: " ; 4. " }, { text: "a", cle: true }, { text: ". (1 point par réponse)" }],
@@ -309,10 +309,10 @@ const S21 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Vrai ou Faux : a) L'image donnée par un miroir plan est plus petite que l'objet. b) Elle est virtuelle. c) Elle est symétrique de l'objet par rapport au miroir. d) On peut la projeter sur un écran.",
+      consigne: "Vrai ou Faux : a) L'image donnée par un miroir plan est plus petite que l'objet. b) Elle est virtuelle. d) Elle est symétrique de l'objet par rapport au miroir. e) On peut la projeter sur un écran.",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "Faux (même grandeur)", cle: true }, { text: " ; b) " }, { text: "Vrai", cle: true }, { text: " ; c) " }, { text: "Vrai", cle: true }, { text: " ; d) " }, { text: "Faux (image virtuelle)", cle: true }, { text: ". (1 point par réponse)" }],
+        [{ text: "a) " }, { text: "Faux (même grandeur)", cle: true }, { text: " ; b) " }, { text: "Vrai", cle: true }, { text: " ; d) " }, { text: "Vrai", cle: true }, { text: " ; e) " }, { text: "Faux (image virtuelle)", cle: true }, { text: ". (1 point par réponse)" }],
       ],
     },
     {
@@ -474,7 +474,7 @@ const S22 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. La réfraction se produit : a) sur un miroir b) à la surface entre deux milieux transparents c) dans le vide. 2. De l'air vers l'eau, le rayon : a) se rapproche de la normale b) s'en écarte c) disparaît. 3. Le poisson vu du bord est : a) plus bas qu'il ne paraît b) plus haut c) exactement où on le voit. 4. Le mirage est dû : a) à l'évaporation b) à la réfraction dans l'air chaud c) à la réflexion sur l'eau.",
+      consigne: "QCM : 1. La réfraction se produit : a) sur un miroir b) à la surface entre deux milieux transparents d) dans le vide. 2. De l'air vers l'eau, le rayon : a) se rapproche de la normale b) s'en écarte d) disparaît. 3. Le poisson vu du bord est : a) plus bas qu'il ne paraît b) plus haut d) exactement où on le voit. 4. Le mirage est dû : a) à l'évaporation b) à la réfraction dans l'air chaud d) à la réflexion sur l'eau.",
       items: [],
       corrige: [
         [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "a", cle: true }, { text: " ; 3. " }, { text: "a (plus bas que son image)", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
@@ -640,10 +640,10 @@ const S23 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. Le prisme : a) fabrique b) sépare c) supprime les couleurs. 2. La couleur la moins déviée : a) violet b) vert c) rouge. 3. L'arc-en-ciel est dû : a) aux gouttes-prismes b) aux nuages c) au vent. 4. L'ultraviolet est : a) visible b) invisible et au-delà du violet c) une couleur du spectre visible.",
+      consigne: "QCM : 1. Le prisme : a) fabrique b) sépare d) supprime les couleurs. 2. La couleur la moins déviée : a) violet b) vert d) rouge. 3. L'arc-en-ciel est dû : a) aux gouttes-prismes b) aux nuages d) au vent. 4. L'ultraviolet est : a) visible b) invisible et au-delà du violet d) une couleur du spectre visible.",
       items: [],
       corrige: [
-        [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "c", cle: true }, { text: " ; 3. " }, { text: "a", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
+        [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "d", cle: true }, { text: " ; 3. " }, { text: "a", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
       ],
     },
     {
@@ -719,12 +719,12 @@ const S24 = {
       items: [
         "a) Un tissu blanc en lumière verte.",
         "b) Un tissu rouge en lumière verte.",
-        "c) Un tissu noir en lumière rouge.",
+        "d) Un tissu noir en lumière rouge.",
       ],
       corrige: [
         [{ text: "a) Il renvoie ce qu'il reçoit : " }, { text: "vert", cle: true }, { text: "." }],
         [{ text: "b) Il absorbe le vert, ne renvoie rien : " }, { text: "noir", cle: true }, { text: "." }],
-        [{ text: "c) Il absorbe tout : " }, { text: "noir", cle: true }, { text: "." }],
+        [{ text: "d) Il absorbe tout : " }, { text: "noir", cle: true }, { text: "." }],
       ],
     },
     {
@@ -811,10 +811,10 @@ const S24 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Donne la couleur perçue : a) objet blanc en lumière rouge ; b) objet rouge en lumière rouge ; c) objet bleu en lumière rouge ; d) objet noir en lumière blanche.",
+      consigne: "Donne la couleur perçue : a) objet blanc en lumière rouge ; b) objet rouge en lumière rouge ; d) objet bleu en lumière rouge ; e) objet noir en lumière blanche.",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "rouge", cle: true }, { text: " ; b) " }, { text: "rouge", cle: true }, { text: " ; c) " }, { text: "noir", cle: true }, { text: " ; d) " }, { text: "noir", cle: true }, { text: ". (1 point par réponse)" }],
+        [{ text: "a) " }, { text: "rouge", cle: true }, { text: " ; b) " }, { text: "rouge", cle: true }, { text: " ; d) " }, { text: "noir", cle: true }, { text: " ; e) " }, { text: "noir", cle: true }, { text: ". (1 point par réponse)" }],
       ],
     },
     {
@@ -986,10 +986,10 @@ const S25 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. Le disque de Newton sert à : a) décomposer b) recomposer c) absorber la lumière. 2. En rotation rapide il paraît : a) noir b) multicolore c) blanc grisâtre. 3. Le phénomène de l'œil utilisé : a) persistance des impressions b) réfraction c) accommodation. 4. La lumière blanche est : a) une couleur pure b) un mélange de toutes les couleurs c) l'absence de couleur.",
+      consigne: "QCM : 1. Le disque de Newton sert à : a) décomposer b) recomposer d) absorber la lumière. 2. En rotation rapide il paraît : a) noir b) multicolore d) blanc grisâtre. 3. Le phénomène de l'œil utilisé : a) persistance des impressions b) réfraction d) accommodation. 4. La lumière blanche est : a) une couleur pure b) un mélange de toutes les couleurs d) l'absence de couleur.",
       items: [],
       corrige: [
-        [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "c", cle: true }, { text: " ; 3. " }, { text: "a", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
+        [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "d", cle: true }, { text: " ; 3. " }, { text: "a", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
       ],
     },
     {

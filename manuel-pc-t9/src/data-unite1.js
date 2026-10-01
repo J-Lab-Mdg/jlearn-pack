@@ -150,7 +150,7 @@ const S1 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. Une force se mesure : a) à la balance b) au dynamomètre c) au thermomètre. 2. L'unité d'intensité : a) kg b) N c) m. 3. Le fil tendu matérialise : a) la droite d'action b) le poids c) la masse. 4. Rompre un fil prouve que la force a : a) une couleur b) une intensité c) une masse.",
+      consigne: "QCM : 1. Une force se mesure : a) à la balance b) au dynamomètre d) au thermomètre. 2. L'unité d'intensité : a) kg b) N d) m. 3. Le fil tendu matérialise : a) la droite d'action b) le poids d) la masse. 4. Rompre un fil prouve que la force a : a) une couleur b) une intensité d) une masse.",
       items: [],
       corrige: [
         [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "b", cle: true }, { text: " ; 3. " }, { text: "a", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
@@ -323,10 +323,10 @@ const S2 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Associe : direction, sens, intensité, point d'application — a) 15 N ; b) verticale ; c) vers le bas ; d) le crochet du seau.",
+      consigne: "Associe : direction, sens, intensité, point d'application — a) 15 N ; b) verticale ; d) vers le bas ; e) le crochet du seau.",
       items: [],
       corrige: [
-        [{ text: "Direction → " }, { text: "b", cle: true }, { text: " ; sens → " }, { text: "c", cle: true }, { text: " ; intensité → " }, { text: "a", cle: true }, { text: " ; point d'application → " }, { text: "d", cle: true }, { text: ". (1 point par association)" }],
+        [{ text: "Direction → " }, { text: "b", cle: true }, { text: " ; sens → " }, { text: "d", cle: true }, { text: " ; intensité → " }, { text: "a", cle: true }, { text: " ; point d'application → " }, { text: "d", cle: true }, { text: ". (1 point par association)" }],
       ],
     },
     {
@@ -419,12 +419,12 @@ const S3 = {
       items: [
         "a) Deux forces de même intensité assurent toujours l'équilibre.",
         "b) Un solide en équilibre sous deux forces : celles-ci ont des sens contraires.",
-        "c) Le poids d'un livre posé sur la table est compensé par la réaction de la table.",
+        "d) Le poids d'un livre posé sur la table est compensé par la réaction de la table.",
       ],
       corrige: [
         [{ text: "a) " }, { text: "Faux", cle: true }, { text: " : il faut aussi la même droite d'action et des sens contraires." }],
         [{ text: "b) " }, { text: "Vrai", cle: true }, { text: "." }],
-        [{ text: "c) " }, { text: "Vrai", cle: true }, { text: " : les deux forces sont directement opposées." }],
+        [{ text: "d) " }, { text: "Vrai", cle: true }, { text: " : les deux forces sont directement opposées." }],
       ],
     },
     {
@@ -492,10 +492,10 @@ const S3 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Vrai ou Faux (1 point chacun) : a) L'équilibre exige des intensités égales. b) Les sens des deux forces sont identiques. c) Les droites d'action sont confondues. d) Un solide tiré par deux forces non alignées tourne.",
+      consigne: "Vrai ou Faux (1 point chacun) : a) L'équilibre exige des intensités égales. b) Les sens des deux forces sont identiques. d) Les droites d'action sont confondues. e) Un solide tiré par deux forces non alignées tourne.",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "Vrai", cle: true }, { text: " ; b) " }, { text: "Faux", cle: true }, { text: " (contraires) ; c) " }, { text: "Vrai", cle: true }, { text: " ; d) " }, { text: "Vrai", cle: true }, { text: "." }],
+        [{ text: "a) " }, { text: "Vrai", cle: true }, { text: " ; b) " }, { text: "Faux", cle: true }, { text: " (contraires) ; d) " }, { text: "Vrai", cle: true }, { text: " ; e) " }, { text: "Vrai", cle: true }, { text: "." }],
       ],
     },
     {
@@ -574,10 +574,10 @@ const S4 = {
       ],
     },
     {
-      consigne: "Où se trouve le centre de gravité : a) d'un ballon ? b) d'une brique ? c) d'un anneau de rideau ?",
+      consigne: "Où se trouve le centre de gravité : a) d'un ballon ? b) d'une brique ? d) d'un anneau de rideau ?",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "Au centre du ballon", cle: true }, { text: " ; b) " }, { text: "au croisement des diagonales", cle: true }, { text: " ; c) " }, { text: "au centre du trou (hors matière)", cle: true }, { text: "." }],
+        [{ text: "a) " }, { text: "Au centre du ballon", cle: true }, { text: " ; b) " }, { text: "au croisement des diagonales", cle: true }, { text: " ; d) " }, { text: "au centre du trou (hors matière)", cle: true }, { text: "." }],
       ],
     },
   ],
@@ -658,7 +658,7 @@ const S4 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. Le poids s'applique : a) en haut de l'objet b) au centre de gravité c) au sol. 2. Sa direction : a) horizontale b) verticale c) quelconque. 3. G d'une boule : a) au centre b) en surface c) en bas. 4. G d'un anneau est : a) dans la matière b) hors de la matière c) inexistant.",
+      consigne: "QCM : 1. Le poids s'applique : a) en haut de l'objet b) au centre de gravité d) au sol. 2. Sa direction : a) horizontale b) verticale d) quelconque. 3. G d'une boule : a) au centre b) en surface d) en bas. 4. G d'un anneau est : a) dans la matière b) hors de la matière d) inexistant.",
       items: [],
       corrige: [
         [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "b", cle: true }, { text: " ; 3. " }, { text: "a", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
@@ -1067,12 +1067,12 @@ const S7 = {
       items: [
         "a) La bougie (d = 0,9) dans l'eau.",
         "b) La bougie dans l'huile.",
-        "c) Le fer (d = 7,8) dans le mercure (d = 13,6).",
+        "d) Le fer (d = 7,8) dans le mercure (d = 13,6).",
       ],
       corrige: [
         [{ text: "a) 0,9 < 1 : " }, { text: "elle flotte", cle: true }, { text: "." }],
         [{ text: "b) 0,9 = 0,9 : " }, { text: "elle reste entre deux eaux (cas limite)", cle: true }, { text: "." }],
-        [{ text: "c) 7,8 < 13,6 : " }, { text: "il flotte sur le mercure", cle: true }, { text: " !" }],
+        [{ text: "d) 7,8 < 13,6 : " }, { text: "il flotte sur le mercure", cle: true }, { text: " !" }],
       ],
     },
     {
@@ -1160,7 +1160,7 @@ const S7 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. Un solide flotte si : a) F < P b) F > P c) F = 0. 2. d(solide) > d(liquide) : a) flotte b) coule c) explose. 3. Le poisson change de profondeur grâce à : a) ses nageoires seules b) sa vessie natatoire c) sa queue. 4. Le fer sur le mercure : a) coule b) flotte c) fond.",
+      consigne: "QCM : 1. Un solide flotte si : a) F < P b) F > P d) F = 0. 2. d(solide) > d(liquide) : a) flotte b) coule d) explose. 3. Le poisson change de profondeur grâce à : a) ses nageoires seules b) sa vessie natatoire d) sa queue. 4. Le fer sur le mercure : a) coule b) flotte d) fond.",
       items: [],
       corrige: [
         [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "b", cle: true }, { text: " ; 3. " }, { text: "b", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
@@ -1498,10 +1498,10 @@ const S9 = {
     },
     {
       points: 3,
-      consigne: "Convertis : a) 2 ch en watts ; b) 1 472 W en chevaux-vapeur ; c) 0,5 ch en watts.",
+      consigne: "Convertis : a) 2 ch en watts ; b) 1 472 W en chevaux-vapeur ; d) 0,5 ch en watts.",
       items: [],
       corrige: [
-        [{ text: "a) 2 × 736 = " }, { text: "1 472 W", cle: true }, { text: " ; b) 1 472 ÷ 736 = " }, { text: "2 ch", cle: true }, { text: " ; c) " }, { text: "368 W", cle: true }, { text: ". (1 point par conversion)" }],
+        [{ text: "a) 2 × 736 = " }, { text: "1 472 W", cle: true }, { text: " ; b) 1 472 ÷ 736 = " }, { text: "2 ch", cle: true }, { text: " ; d) " }, { text: "368 W", cle: true }, { text: ". (1 point par conversion)" }],
       ],
     },
     {

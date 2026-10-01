@@ -51,10 +51,10 @@ const S28 = {
   },
   application: [
     {
-      consigne: "Calcule les masses molaires : a) O2 ; b) CH4 ; c) NaCl (Na : 23 ; Cl : 35,5).",
+      consigne: "Calcule les masses molaires : a) O2 ; b) CH4 ; d) NaCl (Na : 23 ; Cl : 35,5).",
       items: [],
       corrige: [
-        [{ text: "a) 2 × 16 = " }, { text: "32 g/mol", cle: true }, { text: " ; b) 12 + 4 × 1 = " }, { text: "16 g/mol", cle: true }, { text: " ; c) 23 + 35,5 = " }, { text: "58,5 g/mol", cle: true }, { text: "." }],
+        [{ text: "a) 2 × 16 = " }, { text: "32 g/mol", cle: true }, { text: " ; b) 12 + 4 × 1 = " }, { text: "16 g/mol", cle: true }, { text: " ; d) 23 + 35,5 = " }, { text: "58,5 g/mol", cle: true }, { text: "." }],
       ],
     },
     {
@@ -141,10 +141,10 @@ const S28 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Calcule : a) M(NH3) (N : 14) ; b) n pour 88 g de CO2 ; c) m de 0,5 mol de Fe ; d) V de 3 mol de gaz aux conditions normales.",
+      consigne: "Calcule : a) M(NH3) (N : 14) ; b) n pour 88 g de CO2 ; d) m de 0,5 mol de Fe ; e) V de 3 mol de gaz aux conditions normales.",
       items: [],
       corrige: [
-        [{ text: "a) 14 + 3 = " }, { text: "17 g/mol", cle: true }, { text: " ; b) 88 ÷ 44 = " }, { text: "2 mol", cle: true }, { text: " ; c) 0,5 × 56 = " }, { text: "28 g", cle: true }, { text: " ; d) 3 × 22,4 = " }, { text: "67,2 L", cle: true }, { text: ". (1 point par calcul)" }],
+        [{ text: "a) 14 + 3 = " }, { text: "17 g/mol", cle: true }, { text: " ; b) 88 ÷ 44 = " }, { text: "2 mol", cle: true }, { text: " ; d) 0,5 × 56 = " }, { text: "28 g", cle: true }, { text: " ; e) 3 × 22,4 = " }, { text: "67,2 L", cle: true }, { text: ". (1 point par calcul)" }],
       ],
     },
     {
@@ -380,10 +380,10 @@ const S30 = {
   },
   application: [
     {
-      consigne: "Donne la formule des alcanes : a) n = 1 ; b) n = 3 ; c) n = 5 (pentane).",
+      consigne: "Donne la formule des alcanes : a) n = 1 ; b) n = 3 ; d) n = 5 (pentane).",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "CH4", cle: true }, { text: " ; b) " }, { text: "C3H8", cle: true }, { text: " ; c) " }, { text: "C5H12", cle: true }, { text: " (CnH2n+2)." }],
+        [{ text: "a) " }, { text: "CH4", cle: true }, { text: " ; b) " }, { text: "C3H8", cle: true }, { text: " ; d) " }, { text: "C5H12", cle: true }, { text: " (CnH2n+2)." }],
       ],
     },
     {
@@ -470,7 +470,7 @@ const S30 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. Le butane est : a) C3H8 b) C4H10 c) CH4. 2. Flamme bleue = combustion : a) complète b) incomplète c) impossible. 3. Le CO est dangereux car : a) il sent mauvais b) il est invisible, inodore et asphyxiant c) il explose toujours. 4. La suie est : a) du carbone b) de l'eau c) du CO2.",
+      consigne: "QCM : 1. Le butane est : a) C3H8 b) C4H10 d) CH4. 2. Flamme bleue = combustion : a) complète b) incomplète d) impossible. 3. Le CO est dangereux car : a) il sent mauvais b) il est invisible, inodore et asphyxiant d) il explose toujours. 4. La suie est : a) du carbone b) de l'eau d) du CO2.",
       items: [],
       corrige: [
         [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "a", cle: true }, { text: " ; 3. " }, { text: "b", cle: true }, { text: " ; 4. " }, { text: "a", cle: true }, { text: ". (1 point par réponse)" }],
@@ -636,10 +636,10 @@ const S31 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Calcule : a) Cm pour 30 g dans 2 L ; b) C pour 0,4 mol dans 0,5 L ; c) Cm d'une solution de NaCl à 0,3 mol/L ; d) n de soluté dans 2 L à 0,25 mol/L.",
+      consigne: "Calcule : a) Cm pour 30 g dans 2 L ; b) C pour 0,4 mol dans 0,5 L ; d) Cm d'une solution de NaCl à 0,3 mol/L ; e) n de soluté dans 2 L à 0,25 mol/L.",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "15 g/L", cle: true }, { text: " ; b) " }, { text: "0,8 mol/L", cle: true }, { text: " ; c) 0,3 × 58,5 = " }, { text: "17,55 g/L", cle: true }, { text: " ; d) 0,25 × 2 = " }, { text: "0,5 mol", cle: true }, { text: ". (1 point par calcul)" }],
+        [{ text: "a) " }, { text: "15 g/L", cle: true }, { text: " ; b) " }, { text: "0,8 mol/L", cle: true }, { text: " ; d) 0,3 × 58,5 = " }, { text: "17,55 g/L", cle: true }, { text: " ; e) 0,25 × 2 = " }, { text: "0,5 mol", cle: true }, { text: ". (1 point par calcul)" }],
       ],
     },
     {
@@ -711,10 +711,10 @@ const S32 = {
   },
   application: [
     {
-      consigne: "Classe ces solutions (acide, neutre ou basique) : a) pH = 3 ; b) pH = 7 ; c) pH = 11 ; d) BBT jaune.",
+      consigne: "Classe ces solutions (acide, neutre ou basique) : a) pH = 3 ; b) pH = 7 ; d) pH = 11 ; e) BBT jaune.",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "acide", cle: true }, { text: " ; b) " }, { text: "neutre", cle: true }, { text: " ; c) " }, { text: "basique", cle: true }, { text: " ; d) " }, { text: "acide", cle: true }, { text: "." }],
+        [{ text: "a) " }, { text: "acide", cle: true }, { text: " ; b) " }, { text: "neutre", cle: true }, { text: " ; d) " }, { text: "basique", cle: true }, { text: " ; e) " }, { text: "acide", cle: true }, { text: "." }],
       ],
     },
     {
@@ -801,10 +801,10 @@ const S32 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. pH = 7 : a) acide b) neutre c) basique. 2. BBT bleu : a) acide b) neutre c) basique. 3. La neutralisation produit : a) du gaz b) de l'eau c) du feu. 4. Dans HCl + NaOH, les spectateurs sont : a) H+ et OH− b) Na+ et Cl− c) H2O.",
+      consigne: "QCM : 1. pH = 7 : a) acide b) neutre d) basique. 2. BBT bleu : a) acide b) neutre d) basique. 3. La neutralisation produit : a) du gaz b) de l'eau d) du feu. 4. Dans HCl + NaOH, les spectateurs sont : a) H+ et OH− b) Na+ et Cl− d) H2O.",
       items: [],
       corrige: [
-        [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "c", cle: true }, { text: " ; 3. " }, { text: "b", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
+        [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "d", cle: true }, { text: " ; 3. " }, { text: "b", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
       ],
     },
     {

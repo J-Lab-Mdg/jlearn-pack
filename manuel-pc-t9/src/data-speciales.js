@@ -840,12 +840,12 @@ const S38 = {
       items: [
         "a) Calcule sa vitesse moyenne en km/h. (1,5 pt)",
         "b) Convertis-la en m/s. (1,5 pt)",
-        "c) À cette vitesse, quelle distance parcourt-il en 15 s ? (2 pts)",
+        "d) À cette vitesse, quelle distance parcourt-il en 15 s ? (2 pts)",
       ],
       corrige: [
         [{ text: "a) v = 216 ÷ 3 = " }, { text: "72 km/h", cle: true }, { text: ". (1,5 pt)" }],
         [{ text: "b) 72 ÷ 3,6 = " }, { text: "20 m/s", cle: true }, { text: ". (1,5 pt)" }],
-        [{ text: "c) d = v × t = 20 × 15 = " }, { text: "300 m", cle: true }, { text: ". (2 pts)" }],
+        [{ text: "d) d = v × t = 20 × 15 = " }, { text: "300 m", cle: true }, { text: ". (2 pts)" }],
       ],
     },
     {
@@ -854,12 +854,12 @@ const S38 = {
       items: [
         "a) Trace le graphe distance-temps. (2 pts)",
         "b) Nature du mouvement et vitesse sur les 20 premières secondes ? (2 pts)",
-        "c) Que fait le cycliste entre 20 et 30 s ? (1 pt)",
+        "d) Que fait le cycliste entre 20 et 30 s ? (1 pt)",
       ],
       corrige: [
         [{ text: "a) " }, { text: "Droite montante jusqu'à 20 s, palier jusqu'à 30 s, droite moins raide ensuite", cle: true }, { text: " ; axes t (s) et d (m) gradués. (2 pts)" }],
         [{ text: "b) Droite : " }, { text: "mouvement rectiligne uniforme", cle: true }, { text: " ; v = 120 ÷ 20 = " }, { text: "6 m/s", cle: true }, { text: ". (2 pts)" }],
-        [{ text: "c) " }, { text: "Il est arrêté", cle: true }, { text: " : la distance ne change plus. (1 pt)" }],
+        [{ text: "d) " }, { text: "Il est arrêté", cle: true }, { text: " : la distance ne change plus. (1 pt)" }],
       ],
     },
   ],
@@ -946,12 +946,12 @@ const S34 = {
       items: [
         "a) Calcule sa vitesse moyenne en km/h puis en m/s. (2 pts)",
         "b) Sur le graphe distance-temps du trajet, un palier de 20 min apparaît : que s'est-il passé ? (1 pt)",
-        "c) Le passager assis est-il en mouvement par rapport au chauffeur ? par rapport à la route ? (2 pts)",
+        "d) Le passager assis est-il en mouvement par rapport au chauffeur ? par rapport à la route ? (2 pts)",
       ],
       corrige: [
         [{ text: "a) v = 90 ÷ 1,25 = " }, { text: "72 km/h", cle: true }, { text: " ; 72 ÷ 3,6 = " }, { text: "20 m/s", cle: true }, { text: ". (2 pts)" }],
         [{ text: "b) " }, { text: "Le véhicule était à l'arrêt", cle: true }, { text: " : la distance n'a pas évolué pendant 20 min. (1 pt)" }],
-        [{ text: "c) " }, { text: "Immobile par rapport au chauffeur", cle: true }, { text: " ; " }, { text: "en mouvement par rapport à la route", cle: true }, { text: " : le mouvement est relatif. (2 pts)" }],
+        [{ text: "d) " }, { text: "Immobile par rapport au chauffeur", cle: true }, { text: " ; " }, { text: "en mouvement par rapport à la route", cle: true }, { text: " : le mouvement est relatif. (2 pts)" }],
       ],
     },
   ],

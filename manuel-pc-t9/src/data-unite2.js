@@ -142,7 +142,7 @@ const S12 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "QCM : 1. Le symbole du résistor : a) cercle b) rectangle c) triangle. 2. Le voltmètre se branche : a) en série b) en dérivation c) n'importe où. 3. La caractéristique d'un résistor est : a) une droite par l'origine b) un cercle c) une courbe quelconque. 4. Les points s'écartent de la droite à cause : a) du vent b) des erreurs de mesure c) de la couleur des anneaux.",
+      consigne: "QCM : 1. Le symbole du résistor : a) cercle b) rectangle d) triangle. 2. Le voltmètre se branche : a) en série b) en dérivation d) n'importe où. 3. La caractéristique d'un résistor est : a) une droite par l'origine b) un cercle d) une courbe quelconque. 4. Les points s'écartent de la droite à cause : a) du vent b) des erreurs de mesure d) de la couleur des anneaux.",
       items: [],
       corrige: [
         [{ text: "1. " }, { text: "b", cle: true }, { text: " ; 2. " }, { text: "b", cle: true }, { text: " ; 3. " }, { text: "a", cle: true }, { text: " ; 4. " }, { text: "b", cle: true }, { text: ". (1 point par réponse)" }],
@@ -307,10 +307,10 @@ const S13 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Complète le tableau (loi d'Ohm) : a) R = 40 Ω, I = 0,3 A : U ? b) U = 9 V, I = 0,15 A : R ? c) U = 12 V, R = 60 Ω : I ? d) R = 20 Ω, U = 5 V : I ?",
+      consigne: "Complète le tableau (loi d'Ohm) : a) R = 40 Ω, I = 0,3 A : U ? b) U = 9 V, I = 0,15 A : R ? d) U = 12 V, R = 60 Ω : I ? e) R = 20 Ω, U = 5 V : I ?",
       items: [],
       corrige: [
-        [{ text: "a) U = " }, { text: "12 V", cle: true }, { text: " ; b) R = " }, { text: "60 Ω", cle: true }, { text: " ; c) I = " }, { text: "0,2 A", cle: true }, { text: " ; d) I = " }, { text: "0,25 A", cle: true }, { text: ". (1 point par calcul)" }],
+        [{ text: "a) U = " }, { text: "12 V", cle: true }, { text: " ; b) R = " }, { text: "60 Ω", cle: true }, { text: " ; d) I = " }, { text: "0,2 A", cle: true }, { text: " ; e) I = " }, { text: "0,25 A", cle: true }, { text: ". (1 point par calcul)" }],
       ],
     },
     {
@@ -470,10 +470,10 @@ const S14 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Calcule Re : a) 10 Ω et 40 Ω en série ; b) 10 Ω et 40 Ω en dérivation ; c) trois résistors de 30 Ω en série ; d) deux de 100 Ω en dérivation.",
+      consigne: "Calcule Re : a) 10 Ω et 40 Ω en série ; b) 10 Ω et 40 Ω en dérivation ; d) trois résistors de 30 Ω en série ; e) deux de 100 Ω en dérivation.",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "50 Ω", cle: true }, { text: " ; b) 1/Re = 1/10 + 1/40 = 5/40 : " }, { text: "8 Ω", cle: true }, { text: " ; c) " }, { text: "90 Ω", cle: true }, { text: " ; d) " }, { text: "50 Ω", cle: true }, { text: ". (1 point par calcul)" }],
+        [{ text: "a) " }, { text: "50 Ω", cle: true }, { text: " ; b) 1/Re = 1/10 + 1/40 = 5/40 : " }, { text: "8 Ω", cle: true }, { text: " ; d) " }, { text: "90 Ω", cle: true }, { text: " ; e) " }, { text: "50 Ω", cle: true }, { text: ". (1 point par calcul)" }],
       ],
     },
     {
@@ -638,10 +638,10 @@ const S15 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Complète : a) U = 220 V, I = 2 A : P ? b) P = 1 100 W, U = 220 V : I ? c) R = 50 Ω, I = 2 A : P ? d) P = 60 W, I = 0,5 A : U ?",
+      consigne: "Complète : a) U = 220 V, I = 2 A : P ? b) P = 1 100 W, U = 220 V : I ? d) R = 50 Ω, I = 2 A : P ? e) P = 60 W, I = 0,5 A : U ?",
       items: [],
       corrige: [
-        [{ text: "a) P = " }, { text: "440 W", cle: true }, { text: " ; b) I = " }, { text: "5 A", cle: true }, { text: " ; c) P = 50 × 4 = " }, { text: "200 W", cle: true }, { text: " ; d) U = " }, { text: "120 V", cle: true }, { text: ". (1 point par calcul)" }],
+        [{ text: "a) P = " }, { text: "440 W", cle: true }, { text: " ; b) I = " }, { text: "5 A", cle: true }, { text: " ; d) P = 50 × 4 = " }, { text: "200 W", cle: true }, { text: " ; e) U = " }, { text: "120 V", cle: true }, { text: ". (1 point par calcul)" }],
       ],
     },
     {
@@ -803,10 +803,10 @@ const S16 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "a) Convertis 2,5 kWh en joules. b) Une bouilloire de 2 000 W fonctionne 15 min : calcule W en kWh. c) Que coûte cette utilisation si le kWh vaut 600 ariary ? d) Un fil de résistance 1,5 Ω parcouru par 10 A pendant 60 s : calcule Q.",
+      consigne: "a) Convertis 2,5 kWh en joules. b) Une bouilloire de 2 000 W fonctionne 15 min : calcule W en kWh. d) Que coûte cette utilisation si le kWh vaut 600 ariary ? e) Un fil de résistance 1,5 Ω parcouru par 10 A pendant 60 s : calcule Q.",
       items: [],
       corrige: [
-        [{ text: "a) 2,5 × 3 600 000 = " }, { text: "9 000 000 J", cle: true }, { text: " ; b) 2 × 0,25 = " }, { text: "0,5 kWh", cle: true }, { text: " ; c) 0,5 × 600 = " }, { text: "300 ariary", cle: true }, { text: " ; d) Q = 1,5 × 100 × 60 = " }, { text: "9 000 J", cle: true }, { text: ". (1 point par calcul)" }],
+        [{ text: "a) 2,5 × 3 600 000 = " }, { text: "9 000 000 J", cle: true }, { text: " ; b) 2 × 0,25 = " }, { text: "0,5 kWh", cle: true }, { text: " ; d) 0,5 × 600 = " }, { text: "300 ariary", cle: true }, { text: " ; e) Q = 1,5 × 100 × 60 = " }, { text: "9 000 J", cle: true }, { text: ". (1 point par calcul)" }],
       ],
     },
     {
@@ -899,12 +899,12 @@ const S17 = {
       items: [
         "a) Les lignes de distribution sont branchées en série.",
         "b) Un fusible fondu peut être remplacé par un fil de fer quelconque.",
-        "c) On peut refaire chez soi, avec le secteur, les expériences faites en classe avec des piles.",
+        "d) On peut refaire chez soi, avec le secteur, les expériences faites en classe avec des piles.",
       ],
       corrige: [
         [{ text: "a) " }, { text: "Faux", cle: true }, { text: " : en dérivation, pour que chaque appareil ait 220 V." }],
         [{ text: "b) " }, { text: "Faux", cle: true }, { text: " : uniquement par un fusible de même calibre, sinon plus de protection !" }],
-        [{ text: "c) " }, { text: "Faux", cle: true }, { text: " : le secteur est mortel ; seul le professeur manipule le 220 V." }],
+        [{ text: "d) " }, { text: "Faux", cle: true }, { text: " : le secteur est mortel ; seul le professeur manipule le 220 V." }],
       ],
     },
     {
@@ -978,10 +978,10 @@ const S17 = {
   exercicesNotes: [
     {
       points: 4,
-      consigne: "Associe : compteur, disjoncteur, fusible, lignes de distribution — a) protège une seule ligne ; b) mesure l'énergie en kWh ; c) branchées en dérivation ; d) protège toute l'installation.",
+      consigne: "Associe : compteur, disjoncteur, fusible, lignes de distribution — a) protège une seule ligne ; b) mesure l'énergie en kWh ; d) branchées en dérivation ; e) protège toute l'installation.",
       items: [],
       corrige: [
-        [{ text: "Compteur → " }, { text: "b", cle: true }, { text: " ; disjoncteur → " }, { text: "d", cle: true }, { text: " ; fusible → " }, { text: "a", cle: true }, { text: " ; lignes → " }, { text: "c", cle: true }, { text: ". (1 point par association)" }],
+        [{ text: "Compteur → " }, { text: "b", cle: true }, { text: " ; disjoncteur → " }, { text: "d", cle: true }, { text: " ; fusible → " }, { text: "a", cle: true }, { text: " ; lignes → " }, { text: "d", cle: true }, { text: ". (1 point par association)" }],
       ],
     },
     {

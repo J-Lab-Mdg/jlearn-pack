@@ -144,9 +144,18 @@ children.push(...AX.annexe7());
 children.push(...AX.annexe8(figures));
 
 // ---------- document ----------
+const { Footer, Paragraph, TextRun, PageNumber } = require("docx");
 const doc = new B.Document({
+  creator: "J-Learn",
+  title: "Manuel de Physique-Chimie T9 — J-Learn",
+  description: "Manuel scolaire complet de Physique-Chimie pour la classe de T9 (3e), édition J-Learn.",
   styles: {
     default: { document: { run: { font: B.FONT, size: 22 } } },
+    paragraphStyles: [{
+      id: "Heading1", name: "Heading 1", basedOn: "Normal", next: "Normal", quickFormat: true,
+      run: { font: B.FONT, size: 32, bold: true, color: B.GREEN },
+      paragraph: { spacing: { before: 240, after: 160 } },
+    }],
     characterStyles: [{
       id: "Hyperlink", name: "Hyperlink", basedOn: "DefaultParagraphFont",
       run: { color: "0563C1", underline: {} },
@@ -154,6 +163,17 @@ const doc = new B.Document({
   },
   sections: [{
     properties: { page: { margin: { top: 900, bottom: 900, left: 1000, right: 1000 } } },
+    footers: {
+      default: new Footer({
+        children: [new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({ text: "J-Learn — Manuel de Physique-Chimie T9 — page ", size: 18, font: B.FONT, color: "555555" }),
+            new TextRun({ children: [PageNumber.CURRENT], size: 18, font: B.FONT, color: "555555" }),
+          ],
+        })],
+      }),
+    },
     children,
   }],
 });

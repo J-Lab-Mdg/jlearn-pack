@@ -238,7 +238,64 @@ function corrigeToParas(exos) {
   return out;
 }
 
+// ---------- rendu générique d'une leçon v2 (sections -> blocs) ----------
+// resolveImg(src) -> chemin absolu du fichier image
+function renderSections(sections, motsCles, resolveImg) {
+  const out = [];
+  sections.forEach(sec => {
+    out.push(titreSection(sec.titre));
+    (sec.blocs || []).forEach(b => {
+      switch (b.type) {
+        case "para":
+          out.push(pHighlight(b.text, motsCles || []));
+          break;
+        case "puces":
+          b.items.forEach(it => out.push(puce(it)));
+          break;
+        case "image":
+          out.push(imagePara(resolveImg(b.src), b.w, b.h));
+          if (b.legende) out.push(legende(b.legende));
+          break;
+        case "formule":
+          out.push(encadreFormule(b.formule, b.legendes || []));
+          out.push(p("", { spacingAfter: 120 }));
+          break;
+        case "exemple":
+          blocExemple({
+            titre: b.titre, enonce: b.enonce,
+            image: b.image ? { src: resolveImg(b.image.src), w: b.image.w, h: b.image.h, legende: b.image.legende } : null,
+            calcul: b.calcul, reponse: b.reponse, phrase: b.phrase,
+          }).forEach(x => out.push(x));
+          break;
+        case "tableau":
+          out.push(tableauComparatif(b.titres, b.lignes));
+          out.push(p("", { spacingAfter: 120 }));
+          break;
+        case "attention":
+          out.push(encadreAttention(b.text));
+          out.push(p("", { spacingAfter: 120 }));
+          break;
+        case "saisTu":
+          out.push(encadreSaisTu(b.text));
+          out.push(p("", { spacingAfter: 120 }));
+          break;
+      }
+    });
+  });
+  return out;
+}
+
+function renderExperience(exp, resolveImg) {
+  return experienceIllustree({
+    titre: exp.titre, intro: exp.intro,
+    image: exp.image ? { src: resolveImg(exp.image.src), w: exp.image.w, h: exp.image.h, legende: exp.image.legende } : null,
+    materiel: exp.materiel, etapes: exp.etapes,
+    observation: exp.observation, conclusion: exp.conclusion,
+  });
+}
+
 module.exports = {
+  renderSections, renderExperience,
   Document, Packer, Paragraph, TextRun, AlignmentType, Table, TableRow, TableCell,
   WidthType, BorderStyle, ShadingType, Footer, PageNumber, HeadingLevel,
   FONT, BLACK, GREEN, PINK, BLUE, OCRE, SIZE, LINE,

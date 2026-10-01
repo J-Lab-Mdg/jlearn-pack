@@ -53,10 +53,10 @@ const S35 = {
   },
   application: [
     {
-      consigne: "Donne le type de trajectoire : a) une mangue qui tombe ; b) l'extrémité de l'aiguille d'une montre ; c) une sauterelle qui bondit.",
+      consigne: "Donne le type de trajectoire : a) une mangue qui tombe ; b) l'extrémité de l'aiguille d'une montre ; d) une sauterelle qui bondit.",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "rectiligne", cle: true }, { text: " ; b) " }, { text: "circulaire", cle: true }, { text: " ; c) " }, { text: "curviligne", cle: true }, { text: "." }],
+        [{ text: "a) " }, { text: "rectiligne", cle: true }, { text: " ; b) " }, { text: "circulaire", cle: true }, { text: " ; d) " }, { text: "curviligne", cle: true }, { text: "." }],
       ],
     },
     {
@@ -122,7 +122,7 @@ const S35 = {
         titre: "4. Exemples résolus",
         paras: [
           "Exemple 1 — Une pirogue descend le fleuve Betsiboka. Décris le mouvement du piroguier assis : a) par rapport à la pirogue ; b) par rapport à la rive. Solution : a) par rapport à la pirogue, le piroguier ne change pas de place : il est IMMOBILE ; b) par rapport à la rive, il avance avec la pirogue : il est EN MOUVEMENT. Le mouvement est bien relatif au référentiel choisi.",
-          "Exemple 2 — Donne le type de trajectoire, dans le référentiel terrestre : a) d'un colis qui tombe verticalement d'un avion vu par le pilote ; b) du bout de la pale d'un ventilateur ; c) d'une pierre lancée en cloche vers un manguier. Solution : a) rectiligne (droite verticale pour le pilote qui accompagne l'avion) ; b) circulaire (la pale tourne autour de l'axe) ; c) curviligne (une courbe en cloche, appelée parabole).",
+          "Exemple 2 — Donne le type de trajectoire, dans le référentiel terrestre : a) d'un colis qui tombe verticalement d'un avion vu par le pilote ; b) du bout de la pale d'un ventilateur ; d) d'une pierre lancée en cloche vers un manguier. Solution : a) rectiligne (droite verticale pour le pilote qui accompagne l'avion) ; b) circulaire (la pale tourne autour de l'axe) ; d) curviligne (une courbe en cloche, appelée parabole).",
         ],
       },
     ],
@@ -147,18 +147,18 @@ const S35 = {
   exercicesNotes: [
     {
       points: 3,
-      consigne: "Associe chaque mobile à sa trajectoire : 1) goutte de pluie sans vent ; 2) bout de l'aiguille d'une horloge ; 3) criquet qui saute — a) circulaire ; b) curviligne ; c) rectiligne.",
+      consigne: "Associe chaque mobile à sa trajectoire : 1) goutte de pluie sans vent ; 2) bout de l'aiguille d'une horloge ; 3) criquet qui saute — a) circulaire ; b) curviligne ; d) rectiligne.",
       items: [],
       corrige: [
-        [{ text: "1 → " }, { text: "c", cle: true }, { text: " ; 2 → " }, { text: "a", cle: true }, { text: " ; 3 → " }, { text: "b", cle: true }, { text: ". (1 point par association)" }],
+        [{ text: "1 → " }, { text: "d", cle: true }, { text: " ; 2 → " }, { text: "a", cle: true }, { text: " ; 3 → " }, { text: "b", cle: true }, { text: ". (1 point par association)" }],
       ],
     },
     {
       points: 4,
-      consigne: "Un car roule vers Toamasina. Le chauffeur est-il en mouvement ou immobile par rapport : a) au volant ; b) à la route ; c) à un passager assis ; d) à un cycliste qu'il dépasse ? (1 pt chacun)",
+      consigne: "Un car roule vers Toamasina. Le chauffeur est-il en mouvement ou immobile par rapport : a) au volant ; b) à la route ; d) à un passager assis ; e) à un cycliste qu'il dépasse ? (1 pt chacun)",
       items: [],
       corrige: [
-        [{ text: "a) " }, { text: "immobile", cle: true }, { text: " ; b) " }, { text: "en mouvement", cle: true }, { text: " ; c) " }, { text: "immobile", cle: true }, { text: " ; d) " }, { text: "en mouvement (il s'en éloigne vers l'avant)", cle: true }, { text: "." }],
+        [{ text: "a) " }, { text: "immobile", cle: true }, { text: " ; b) " }, { text: "en mouvement", cle: true }, { text: " ; d) " }, { text: "immobile", cle: true }, { text: " ; e) " }, { text: "en mouvement (il s'en éloigne vers l'avant)", cle: true }, { text: "." }],
       ],
     },
     {
@@ -328,10 +328,10 @@ const S36 = {
     },
     {
       points: 4,
-      consigne: "Convertis : a) 54 km/h en m/s ; b) 25 m/s en km/h ; c) 108 km/h en m/s ; d) 2 m/s en km/h. (1 pt chacun)",
+      consigne: "Convertis : a) 54 km/h en m/s ; b) 25 m/s en km/h ; d) 108 km/h en m/s ; e) 2 m/s en km/h. (1 pt chacun)",
       items: [],
       corrige: [
-        [{ text: "a) 54 ÷ 3,6 = " }, { text: "15 m/s", cle: true }, { text: " ; b) 25 × 3,6 = " }, { text: "90 km/h", cle: true }, { text: " ; c) 108 ÷ 3,6 = " }, { text: "30 m/s", cle: true }, { text: " ; d) 2 × 3,6 = " }, { text: "7,2 km/h", cle: true }, { text: "." }],
+        [{ text: "a) 54 ÷ 3,6 = " }, { text: "15 m/s", cle: true }, { text: " ; b) 25 × 3,6 = " }, { text: "90 km/h", cle: true }, { text: " ; d) 108 ÷ 3,6 = " }, { text: "30 m/s", cle: true }, { text: " ; e) 2 × 3,6 = " }, { text: "7,2 km/h", cle: true }, { text: "." }],
       ],
     },
     {
@@ -501,10 +501,10 @@ const S37 = {
     },
     {
       points: 3,
-      consigne: "À partir du graphe de l'exercice 1 : a) vitesse sur les 20 premières secondes ; b) que fait le piéton entre 20 et 30 s ? c) vitesse sur la dernière phase.",
+      consigne: "À partir du graphe de l'exercice 1 : a) vitesse sur les 20 premières secondes ; b) que fait le piéton entre 20 et 30 s ? d) vitesse sur la dernière phase.",
       items: [],
       corrige: [
-        [{ text: "a) v = 30 ÷ 20 = " }, { text: "1,5 m/s", cle: true }, { text: " ; b) " }, { text: "il est arrêté", cle: true }, { text: " ; c) v = 12 ÷ 10 = " }, { text: "1,2 m/s", cle: true }, { text: "." }],
+        [{ text: "a) v = 30 ÷ 20 = " }, { text: "1,5 m/s", cle: true }, { text: " ; b) " }, { text: "il est arrêté", cle: true }, { text: " ; d) v = 12 ÷ 10 = " }, { text: "1,2 m/s", cle: true }, { text: "." }],
       ],
     },
     {
