@@ -157,8 +157,16 @@ function contents() {
     tocLink("s73", "    Session 73 — And, but, or, so (coordinators)"),
     tocLink("s74", "    Session 74 — The interview"),
     tocLink("s75", "    Session 75 — Reporting: Andry watches TV…"),
+    tocLink("s76", "    Session 76 — Reading (1): a radio interview"),
+    tocLink("s77", "    Session 77 — Reading (2): details and coordinators"),
+    tocLink("s78", "    Session 78 — Reading (3): on air! Acting out"),
+    tocLink("s79", "    Session 79 — Writing (1): my six questions"),
+    tocLink("s80", "    Session 80 — Writing (2): the report"),
+    tocLink("s81", "    Session 81 — Writing (3): presenting the report"),
+    tocLink("s82", "    Session 82 — Revision"),
+    tocLink("s83", "    Session 83 — Test paper"),
     p("", { after: 60 }),
-    p([run("… Sessions 76–83 (Unit 5 suite), Unit 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p([run("… Unit 6 and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
