@@ -464,6 +464,17 @@ def body_text(doc, text, space_after=6):
     para(doc, text, space_after=space_after)
 
 
+def body_mixed(doc, parts, space_after=6, size=BASE_SIZE):
+    """parts: list of (text, italic) tuples — a plain-text sentence followed
+    by an italicised example list, e.g. a statement ending in ' : ' then the
+    concrete examples in italics (phrase first, example second)."""
+    p = doc.add_paragraph()
+    p.paragraph_format.space_after = Pt(space_after)
+    for text, italic in parts:
+        add_run(p, text, bold=False, size=size, italic=italic)
+    return p
+
+
 def exercices_heading(doc):
     para(doc, "EXERCICES", bold=True, size=12, color=BLUE, space_after=8)
 

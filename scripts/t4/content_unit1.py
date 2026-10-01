@@ -146,24 +146,27 @@ S2 = {
         ("section", "1. L'origine des aliments"),
         ("body", "Chaque aliment provient d'une source précise. On distingue trois origines :"),
         ("sub", "a. Origine végétale"),
-        ("body", "Riz, manioc, brèdes, mangue, haricots : ces aliments proviennent de plantes cultivées."),
+        ("body", [("Ces aliments proviennent de plantes cultivées : ", False),
+                  ("riz, manioc, brèdes, mangue, haricots.", True)]),
         ("sub", "b. Origine animale"),
-        ("body", "Lait, viande de zébu, poisson, œufs : ces aliments proviennent d'animaux."),
+        ("body", [("Ces aliments proviennent d'animaux : ", False),
+                  ("lait, viande de zébu, poisson, œufs.", True)]),
         ("sub", "c. Origine minérale"),
-        ("body", "Sel de cuisine, eau : ces aliments proviennent du sol, de la mer ou des roches, pas d'un être "
-                 "vivant."),
+        ("body", [("Ces aliments proviennent du sol, de la mer ou des roches, pas d'un être vivant : ", False),
+                  ("sel de cuisine, eau.", True)]),
         ("section", "2. Les rôles des aliments"),
         ("body", "Au-delà de leur origine, les aliments rendent des services différents au corps. On distingue "
                  "trois rôles principaux :"),
         ("sub", "a. Les aliments énergétiques"),
-        ("body", "Riz, manioc, patate douce, huile, sucre : ils donnent la force nécessaire pour bouger, "
-                 "travailler et se réchauffer."),
+        ("body", [("Ils donnent la force nécessaire pour bouger, travailler et se réchauffer : ", False),
+                  ("riz, manioc, patate douce, huile, sucre.", True)]),
         ("sub", "b. Les aliments constructeurs"),
-        ("body", "Poisson, viande, œufs, haricots, lait : ils apportent les matériaux qui construisent le corps "
-                 "pendant la croissance et réparent ce qui s'use."),
+        ("body", [("Ils apportent les matériaux qui construisent le corps pendant la croissance et réparent ce "
+                   "qui s'use : ", False),
+                  ("poisson, viande, œufs, haricots, lait.", True)]),
         ("sub", "c. Les aliments protecteurs"),
-        ("body", "Brèdes, légumes verts, fruits (mangue, orange, papaye) : ils défendent l'organisme contre les "
-                 "maladies et assurent son bon fonctionnement."),
+        ("body", [("Ils défendent l'organisme contre les maladies et assurent son bon fonctionnement : ", False),
+                  ("brèdes, légumes verts, fruits (mangue, orange, papaye).", True)]),
         ("image", ("scripts/t4/generated_images/u1_s2_b_roles.jpg",
                    "Les trois rôles des aliments : énergétique, constructeur, protecteur.")),
         ("section", "3. Un repas complet associe les trois rôles"),

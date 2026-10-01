@@ -43,8 +43,11 @@ def build_lecon(doc, s):
         elif kind == "sub":
             B.sub_header(doc, text)
         elif kind == "body":
-            for para_text in text.split("\n"):
-                B.body_text(doc, para_text)
+            if isinstance(text, str):
+                for para_text in text.split("\n"):
+                    B.body_text(doc, para_text)
+            else:
+                B.body_mixed(doc, text)
         elif kind == "image":
             path, caption = text
             if os.path.exists(path):

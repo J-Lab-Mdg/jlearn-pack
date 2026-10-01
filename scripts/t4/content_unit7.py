@@ -156,8 +156,8 @@ S2 = {
                    "couches selon leur poids.")),
         ("section", "2. Les constituants du sol"),
         ("sub", "a. Les éléments minéraux"),
-        ("body", "Ce sont le sable, le limon, l'argile et les cailloux : des particules de roche de tailles "
-                 "différentes qui donnent au sol sa texture."),
+        ("body", [("Des particules de roche de tailles différentes donnent au sol sa texture : ", False),
+                  ("le sable, le limon, l'argile et les cailloux.", True)]),
         ("image", ("scripts/t4/generated_images/u7_s2_b_constituants.jpg",
                    "Les principaux constituants du sol : éléments minéraux, humus, eau et air, êtres vivants.")),
         ("sub", "b. La matière organique (l'humus)"),
