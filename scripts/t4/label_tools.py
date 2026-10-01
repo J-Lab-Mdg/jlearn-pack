@@ -64,3 +64,51 @@ def add_legend_labels(src_path, out_path, labels, pad_left=0, pad_right=0,
         draw.text(text_xy, text, font=font, fill=(20, 20, 20))
 
     canvas.save(out_path, "JPEG", quality=92)
+
+
+def add_legend_key(src_path, out_path, items, font_size=34, line_gap=14,
+                    pad=40, bg=(255, 255, 255), columns=1):
+    """Append a plain caption-style legend band below the image, listing
+    'N — Nom' entries in order. Safer than leader lines for grid diagrams
+    with 4-6 numbered/colored panels (avoids crossing lines / clipping).
+    items: list of (marker, name) tuples, e.g. [('1', 'Marteau'), ...].
+    columns: split the list into this many side-by-side columns if long.
+    """
+    img = Image.open(src_path).convert("RGB")
+    W, H = img.size
+    font = ImageFont.truetype(FONT_BOLD, font_size)
+    tmp = Image.new("RGB", (10, 10))
+    tdraw = ImageDraw.Draw(tmp)
+
+    rows = (len(items) + columns - 1) // columns
+    col_items = [items[i * rows:(i + 1) * rows] for i in range(columns)]
+    col_widths = []
+    for col in col_items:
+        w = 0
+        for marker, name in col:
+            txt = f"{marker} — {name}"
+            bbox = tdraw.textbbox((0, 0), txt, font=font)
+            w = max(w, bbox[2] - bbox[0])
+        col_widths.append(w)
+
+    line_h = font.getbbox("Ag")[3] - font.getbbox("Ag")[1]
+    band_h = pad * 2 + rows * (line_h + line_gap) - line_gap
+    col_gap = 60
+    total_cols_w = sum(col_widths) + col_gap * (columns - 1)
+    newW = max(W, total_cols_w + pad * 2)
+    newH = H + band_h
+    canvas = Image.new("RGB", (newW, newH), bg)
+    canvas.paste(img, ((newW - W) // 2, 0))
+    draw = ImageDraw.Draw(canvas)
+
+    start_x = (newW - total_cols_w) // 2
+    x = start_x
+    for ci, col in enumerate(col_items):
+        y = H + pad
+        for marker, name in col:
+            txt = f"{marker} — {name}"
+            draw.text((x, y), txt, font=font, fill=(20, 20, 20))
+            y += line_h + line_gap
+        x += col_widths[ci] + col_gap
+
+    canvas.save(out_path, "JPEG", quality=92)
