@@ -1,0 +1,8 @@
+{
+  "seance01": {
+    "source": "../assets/malagasy-t1-fiche-temoin-introduction.png",
+    "output": "assets/img_malagasy_t1_seance01.png",
+    "usage": "Pejy LESONA — Mampahafantatra ny tena sy ny hafa",
+    "targetWidthPx": 1100
+  }
+}

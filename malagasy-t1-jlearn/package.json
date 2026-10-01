@@ -1,0 +1,23 @@
+{
+  "name": "malagasy-t1-jlearn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Générateur et contrôles de conformité pour la fiche témoin Malagasy T1 J-Learn.",
+  "scripts": {
+    "prepare-images": "node src/prepare-images.js",
+    "generate": "node src/generate-fiche-temoin.js",
+    "verify": "node src/verify-fiche-temoin.js",
+    "test": "npm run generate && npm run verify"
+  },
+  "keywords": [
+    "jlearn",
+    "malagasy",
+    "docx"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.6.1",
+    "docx": "^9.8.1",
+    "sharp": "^0.35.5"
+  }
+}
