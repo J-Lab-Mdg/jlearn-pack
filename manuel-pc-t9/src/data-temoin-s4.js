@@ -20,7 +20,9 @@ module.exports = {
       titre: "1. La masse et le poids : ce n'est pas la même chose !",
       blocs: [
         { type: "para", text: "Prends un sac de riz dans tes mains. Il contient de la matière : des grains de riz. La quantité de matière dans le sac, c'est sa masse. La masse se mesure en kilogrammes (kg), avec une balance." },
-        { type: "para", text: "Maintenant, lâche le sac : il tombe ! Pourquoi ? Parce que la Terre l'attire vers le bas. Cette force d'attraction, c'est le poids. Le poids se mesure en newtons (N), avec un appareil appelé dynamomètre." },
+        { type: "para", text: "Maintenant, lâche le sac : il tombe ! Pourquoi ? Parce que la Terre l'attire vers le bas." },
+        { type: "definition", def: "Le poids d'un corps est la force d'attraction que la Terre exerce sur ce corps. Sa direction est verticale, son sens est dirigé vers le bas, et il se mesure en newtons (N) avec un dynamomètre.",
+          simple: "la Terre tire tout vers elle, comme un aimant géant tire les clous. Cette traction invisible, c'est le poids." },
         { type: "para", text: "Retiens bien la différence : ta masse ne change jamais, où que tu ailles. Mais ton poids change selon l'endroit où tu te trouves, parce que l'attraction n'est pas partout la même." },
         { type: "image", src: "img_t4_terre_lune.png", w: 560, h: 314, legende: "Figure 1 — Le même sac de 20 kg : son poids est 200 N sur la Terre, mais seulement 32 N sur la Lune." },
         { type: "tableau", titres: ["", "La masse", "Le poids"], lignes: [
@@ -81,7 +83,8 @@ module.exports = {
     {
       titre: "4. Le centre de gravité G : le point d'équilibre",
       blocs: [
-        { type: "para", text: "Le centre de gravité G, c'est le point où tout le poids de l'objet semble rassemblé. Si tu poses l'objet en équilibre sur un doigt exactement sous G, il ne tombe pas !" },
+        { type: "definition", def: "Le centre de gravité G d'un corps est le point d'application de son poids.",
+          simple: "c'est le point où tout le poids de l'objet semble rassemblé. Si tu poses l'objet en équilibre sur un doigt exactement sous G, il ne tombe pas !" },
         { type: "para", text: "Pour les objets simples et réguliers, G est facile à trouver :" },
         { type: "image", src: "img_t4_centres.png", w: 620, h: 233, legende: "Figure 4 — Le point G d'une boule, d'une brique, d'une règle et d'un anneau." },
         { type: "para", text: "Regarde bien l'anneau : son point G est au milieu du trou, là où il n'y a pas de matière ! Le centre de gravité n'est donc pas toujours « dans » l'objet." },

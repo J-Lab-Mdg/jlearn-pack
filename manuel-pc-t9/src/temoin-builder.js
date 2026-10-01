@@ -240,7 +240,8 @@ function corrigeToParas(exos) {
 
 // ---------- rendu générique d'une leçon v2 (sections -> blocs) ----------
 // resolveImg(src) -> chemin absolu du fichier image
-function renderSections(sections, motsCles, resolveImg) {
+// opts.saisTuOut : tableau à remplir avec les textes des blocs saisTu (ils ne sont alors PAS rendus ici)
+function renderSections(sections, motsCles, resolveImg, opts = {}) {
   const out = [];
   sections.forEach(sec => {
     out.push(titreSection(sec.titre));
@@ -248,6 +249,16 @@ function renderSections(sections, motsCles, resolveImg) {
       switch (b.type) {
         case "para":
           out.push(pHighlight(b.text, motsCles || []));
+          break;
+        case "definition":
+          out.push(pRuns([
+            { text: "Définition — ", bold: true, color: GREEN },
+            { text: b.def, bold: true },
+          ], { spacingAfter: 80 }));
+          if (b.simple) out.push(pRuns([
+            { text: "Autrement dit : ", bold: true, color: OCRE },
+            { text: b.simple },
+          ], { spacingAfter: 140 }));
           break;
         case "puces":
           b.items.forEach(it => out.push(puce(it)));
@@ -276,8 +287,12 @@ function renderSections(sections, motsCles, resolveImg) {
           out.push(p("", { spacingAfter: 120 }));
           break;
         case "saisTu":
-          out.push(encadreSaisTu(b.text));
-          out.push(p("", { spacingAfter: 120 }));
+          if (opts.saisTuOut) {
+            opts.saisTuOut.push(b.text);
+          } else {
+            out.push(encadreSaisTu(b.text));
+            out.push(p("", { spacingAfter: 120 }));
+          }
           break;
       }
     });

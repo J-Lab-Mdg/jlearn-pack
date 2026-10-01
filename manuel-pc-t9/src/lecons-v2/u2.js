@@ -14,7 +14,8 @@ module.exports = {
       {
         titre: "1. C'est quoi, un conducteur ohmique ?",
         blocs: [
-          { type: "para", text: "Le conducteur ohmique, qu'on appelle aussi résistor, est un petit cylindre peint d'anneaux de couleurs. Sur les schémas, son symbole est un rectangle." },
+          { type: "definition", def: "Un conducteur ohmique (ou résistor) est un dipôle pour lequel la tension entre ses bornes est proportionnelle à l'intensité du courant qui le traverse.",
+            simple: "un « dipôle » est un composant à deux bornes. « Proportionnelle » veut dire : si le courant double, la tension double aussi. Concrètement, c'est un petit cylindre peint d'anneaux de couleurs ; sur les schémas, son symbole est un rectangle." },
           { type: "para", text: "Son rôle : limiter et régler le courant dans un circuit. Il y en a des dizaines dans chaque radio, chargeur ou téléphone : c'est le composant le plus répandu de l'électronique !" },
         ],
       },
@@ -28,7 +29,9 @@ module.exports = {
       {
         titre: "3. La caractéristique U = f(I)",
         blocs: [
-          { type: "para", text: "On place au moins cinq points de fonctionnement sur un graphique : U en hauteur, I en largeur. À cause des petites erreurs de mesure, les points ne sont pas parfaitement alignés." },
+          { type: "definition", def: "La caractéristique d'un dipôle est la courbe qui représente la tension U entre ses bornes en fonction de l'intensité I du courant qui le traverse.",
+            simple: "« en fonction de » veut dire : U en hauteur, I en largeur sur le graphique. Chaque mesure donne un point ; la courbe qui les suit est la « carte d'identité » électrique du dipôle." },
+          { type: "para", text: "On place au moins cinq points de fonctionnement sur le graphique. À cause des petites erreurs de mesure, les points ne sont pas parfaitement alignés." },
           { type: "para", text: "On ne relie JAMAIS les points un à un ! On trace une ligne moyenne : une droite qui passe par l'origine, avec les points bien répartis de chaque côté." },
           { type: "image", src: "img_v2_s12_caracteristique.png", w: 480, h: 312, legende: "Figure A — Les points de mesure (croix roses) et la droite moyenne qui passe par l'origine." },
           { type: "para", text: "Une droite qui passe par l'origine, c'est la signature d'une proportionnalité entre U et I. C'est elle qui conduira à la loi d'Ohm, à la prochaine séance !" },
@@ -91,7 +94,8 @@ module.exports = {
       {
         titre: "1. La loi d'Ohm",
         blocs: [
-          { type: "para", text: "La tension U aux bornes d'un conducteur ohmique est proportionnelle à l'intensité I du courant qui le traverse. C'est la loi d'Ohm :" },
+          { type: "definition", def: "Loi d'Ohm : la tension U aux bornes d'un conducteur ohmique est égale au produit de sa résistance R par l'intensité I du courant qui le traverse : U = R × I.",
+            simple: "le « produit », c'est le résultat d'une multiplication. Cette loi relie les trois grandeurs du circuit : si tu en connais deux, tu peux toujours calculer la troisième." },
           { type: "formule", formule: "U = R × I", legendes: [
             [{ text: "U", bold: true, color: "2E7D32" }, { text: " = la tension, en volts (V)" }],
             [{ text: "R", bold: true, color: "2E7D32" }, { text: " = la résistance, en ohms (Ω)" }],
@@ -103,7 +107,8 @@ module.exports = {
       {
         titre: "2. La résistance : l'opposition au courant",
         blocs: [
-          { type: "para", text: "Le nombre R s'appelle la résistance du conducteur. Elle mesure son opposition au passage du courant. Son unité : l'ohm (Ω). On peut la mesurer directement avec un ohmmètre." },
+          { type: "definition", def: "La résistance R d'un conducteur ohmique est le quotient de la tension U entre ses bornes par l'intensité I du courant qui le traverse : R = U ÷ I. Elle se mesure en ohms (Ω) avec un ohmmètre.",
+            simple: "le « quotient », c'est le résultat d'une division. La résistance mesure combien le conducteur « freine » le courant : plus R est grand, plus le courant a du mal à passer." },
           { type: "para", text: "Pour comprendre : à tension égale, une grande résistance laisse passer un petit courant ; une petite résistance laisse passer un grand courant. Le résistor est comme un rétrécissement sur un canal : plus il est étroit, moins l'eau passe !" },
           { type: "attention", text: "Ne confonds pas le résistor (l'objet que tu tiens dans la main) et sa résistance (la grandeur physique R, en ohms)." },
         ],
@@ -170,6 +175,8 @@ module.exports = {
       {
         titre: "1. L'association en série : les obstacles s'additionnent",
         blocs: [
+          { type: "definition", def: "La résistance équivalente Re d'une association de résistors est la résistance du résistor unique qui, placé sous la même tension, serait traversé par la même intensité.",
+            simple: "c'est la résistance « tout-en-un » qui pourrait remplacer le groupe sans rien changer au circuit." },
           { type: "para", text: "En série, le même courant traverse les résistors l'un après l'autre, et les tensions s'ajoutent. Résultat :" },
           { type: "formule", formule: "Re = R1 + R2", legendes: [
             [{ text: "Re est toujours PLUS GRANDE que chacune des résistances." }],
@@ -258,6 +265,8 @@ module.exports = {
       {
         titre: "2. La formule de la puissance électrique",
         blocs: [
+          { type: "definition", def: "La puissance électrique reçue par un appareil est le produit de la tension entre ses bornes par l'intensité du courant qui le traverse : P = U × I. Elle se mesure en watts (W).",
+            simple: "la puissance mesure la quantité d'énergie que l'appareil consomme chaque seconde — comme le débit d'un robinet, mais pour l'électricité." },
           { type: "formule", formule: "P = U × I", legendes: [
             [{ text: "P", bold: true, color: "2E7D32" }, { text: " = la puissance, en watts (W)" }],
             [{ text: "U", bold: true, color: "2E7D32" }, { text: " = la tension, en volts (V)" }],
@@ -340,7 +349,8 @@ module.exports = {
       {
         titre: "1. L'énergie consommée par un appareil",
         blocs: [
-          { type: "para", text: "Un appareil de puissance P qui fonctionne pendant une durée t consomme une énergie W :" },
+          { type: "definition", def: "L'énergie électrique consommée par un appareil est le produit de sa puissance par sa durée de fonctionnement : W = P × t.",
+            simple: "plus l'appareil est puissant et plus il reste allumé longtemps, plus il consomme. C'est cette quantité que l'on paie sur la facture." },
           { type: "formule", formule: "W = P × t", legendes: [
             [{ text: "en joules : ", bold: true }, { text: "P en watts et t en secondes" }],
             [{ text: "en kilowattheures : ", bold: true }, { text: "P en kilowatts et t en heures" }],
@@ -363,7 +373,8 @@ module.exports = {
       {
         titre: "2. L'effet Joule : le courant chauffe",
         blocs: [
-          { type: "para", text: "Tout conducteur parcouru par un courant électrique s'échauffe : c'est l'effet Joule." },
+          { type: "definition", def: "L'effet Joule est le dégagement de chaleur qui accompagne le passage du courant électrique dans un conducteur.",
+            simple: "quand le courant traverse un fil, il le chauffe — un peu comme le frottement chauffe tes mains quand tu les frottes vite." },
           { type: "puces", items: [
             [{ text: "utile : ", bold: true }, { text: "chauffer (fer, réchaud), éclairer par incandescence ;" }],
             [{ text: "nuisible : ", bold: true }, { text: "pertes dans les fils, surchauffe des appareils." }],
@@ -435,6 +446,8 @@ module.exports = {
       {
         titre: "2. Les protections : disjoncteur et fusibles",
         blocs: [
+          { type: "definition", def: "Un fusible est un appareil de protection dont le fil conducteur fond et ouvre le circuit lorsque l'intensité du courant dépasse une valeur limite appelée calibre.",
+            simple: "« ouvrir le circuit », c'est couper le passage du courant. Le fusible est un garde du corps sacrifiable : il se détruit volontairement pour sauver l'installation." },
           { type: "puces", items: [
             [{ text: "le disjoncteur général ", bold: true }, { text: "protège toutes les lignes de la maison ; il se réarme après l'incident ;" }],
             [{ text: "chaque fusible ", bold: true }, { text: "ne protège qu'une seule ligne : son fil fond (effet Joule !) quand le courant dépasse le calibre ;" }],

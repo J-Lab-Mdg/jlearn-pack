@@ -15,7 +15,8 @@ module.exports = {
       {
         titre: "1. C'est quoi, une force ?",
         blocs: [
-          { type: "para", text: "Une force ne se voit pas. Mais on voit ce qu'elle fait ! On dit qu'on la reconnaît à ses effets." },
+          { type: "definition", def: "On appelle force toute cause capable de déformer un corps, de modifier son mouvement ou de rompre son équilibre.",
+            simple: "une force est une poussée ou une traction qu'un corps exerce sur un autre. On ne la voit jamais directement : on voit seulement ce qu'elle fait. Ses actions visibles s'appellent ses effets." },
           { type: "para", text: "Une force peut :" },
           { type: "puces", items: [
             "mettre un objet en mouvement (le pied qui frappe le ballon) ;",
@@ -117,7 +118,9 @@ module.exports = {
       {
         titre: "2. Le vecteur force : toute la force dans une seule flèche",
         blocs: [
-          { type: "para", text: "Pour dessiner une force, on utilise une flèche appelée vecteur. Cette flèche raconte tout :" },
+          { type: "definition", def: "Le vecteur force est un segment de droite orienté qui représente une force : son origine est le point d'application, sa direction et son sens sont ceux de la force, et sa longueur est proportionnelle à l'intensité.",
+            simple: "c'est une flèche-dessin qui raconte les quatre caractéristiques d'un seul coup d'œil. « Proportionnelle » veut dire : deux fois plus de newtons, une flèche deux fois plus longue." },
+          { type: "para", text: "Cette flèche raconte tout :" },
           { type: "puces", items: [
             "elle part du point d'application ;",
             "elle suit la direction de la force ;",
@@ -199,7 +202,8 @@ module.exports = {
       {
         titre: "1. La condition d'équilibre",
         blocs: [
-          { type: "para", text: "Un objet immobile tiré par deux forces reste immobile seulement si les deux forces s'annulent exactement. On dit qu'elles sont directement opposées." },
+          { type: "definition", def: "Un solide soumis à deux forces est en équilibre si, et seulement si, les deux forces sont directement opposées : même droite d'action, même intensité, sens contraires.",
+            simple: "pour que l'objet reste immobile, les deux forces doivent se neutraliser parfaitement, comme deux équipes de tir à la corde exactement aussi fortes l'une que l'autre." },
           { type: "para", text: "Directement opposées, cela veut dire trois choses à la fois :" },
           { type: "puces", items: [
             [{ text: "même droite d'action ", bold: true }, { text: "(les deux forces sont bien alignées) ;" }],
@@ -286,7 +290,8 @@ module.exports = {
         titre: "1. Le liquide pousse vers le haut !",
         blocs: [
           { type: "para", text: "Essaie d'enfoncer un récipient vide dans l'eau : plus tu l'enfonces, plus c'est difficile. L'eau résiste et pousse vers le haut !" },
-          { type: "para", text: "Cette force exercée par un liquide sur un corps plongé dedans s'appelle la poussée d'Archimède. Elle est verticale et dirigée vers le haut." },
+          { type: "definition", def: "La poussée d'Archimède est la force verticale, dirigée vers le haut, qu'un liquide en équilibre exerce sur tout corps immergé en lui.",
+            simple: "« immergé » veut dire plongé dans le liquide. Dès qu'un objet entre dans l'eau, l'eau le pousse vers le haut — c'est cette force qu'on appelle poussée d'Archimède." },
           { type: "para", text: "Tu la sens tous les jours : un seau d'eau paraît léger tant qu'il est dans le puits… et « s'alourdit » dès qu'il sort de l'eau. C'est la poussée qui t'aidait !" },
         ],
       },
@@ -368,8 +373,8 @@ module.exports = {
         titre: "1. Le théorème d'Archimède",
         blocs: [
           { type: "para", text: "Voici l'une des plus célèbres lois de la physique, découverte il y a 2 200 ans :" },
-          { type: "para", text: "Tout corps plongé dans un liquide reçoit une poussée verticale, dirigée vers le haut, égale au poids du liquide déplacé." },
-          { type: "para", text: "« Liquide déplacé », c'est l'eau qui a dû laisser sa place au corps. Si le corps est entièrement sous l'eau, le volume déplacé est égal au volume du corps. S'il flotte, c'est seulement le volume de la partie sous la surface." },
+          { type: "definition", def: "Théorème d'Archimède : tout corps plongé dans un liquide reçoit une poussée verticale, dirigée vers le haut, dont l'intensité est égale au poids du liquide déplacé.",
+            simple: "le « liquide déplacé », c'est l'eau qui a dû laisser sa place au corps. Pèse cette eau : tu connais la force qui pousse le corps vers le haut. Si le corps est entièrement sous l'eau, le volume déplacé est égal au volume du corps ; s'il flotte, c'est seulement le volume de la partie sous la surface." },
           { type: "image", src: "img_v2_s6_deplace.png", w: 520, h: 289, legende: "Figure A — Le pavé chasse 200 cm³ d'eau ; cette eau pèse 2 N : la poussée vaut 2 N." },
         ],
       },
@@ -397,7 +402,8 @@ module.exports = {
       {
         titre: "3. La densité : comparer un liquide à l'eau",
         blocs: [
-          { type: "para", text: "La densité d d'un liquide, c'est sa masse volumique divisée par celle de l'eau. C'est un nombre sans unité." },
+          { type: "definition", def: "La densité d d'un corps est le quotient de sa masse volumique par la masse volumique de l'eau ; c'est un nombre sans unité.",
+            simple: "le « quotient », c'est le résultat d'une division. La densité dit si un corps est plus lourd ou plus léger que l'eau, à volume égal : d > 1, plus lourd que l'eau ; d < 1, plus léger." },
           { type: "tableau", titres: ["Liquide", "Densité"], lignes: [
             ["Eau pure", "1"],
             ["Eau de mer", "≈ 1,03"],
@@ -460,7 +466,9 @@ module.exports = {
       {
         titre: "2. Le critère des densités : encore plus simple",
         blocs: [
-          { type: "para", text: "Pour un objet plein et homogène, pas besoin de calculer les forces. Il suffit de comparer les densités :" },
+          { type: "definition", def: "Un solide plein et homogène flotte sur un liquide si sa densité est inférieure à celle du liquide ; il coule si sa densité est supérieure.",
+            simple: "« homogène » veut dire fait de la même matière partout. Pour savoir s'il flotte, pas besoin de calculer les forces : il suffit de comparer les densités." },
+          { type: "para", text: "En résumé :" },
           { type: "puces", items: [
             "si la densité de l'objet est plus petite que celle du liquide : il flotte ;",
             "si elle est plus grande : il coule.",
@@ -535,7 +543,8 @@ module.exports = {
         titre: "1. En physique, « travailler », c'est déplacer !",
         blocs: [
           { type: "para", text: "Une force est constante si sa direction, son sens et son intensité ne changent pas. Exemple : le poids d'un objet qui tombe." },
-          { type: "para", text: "Quand une force déplace un objet, on dit qu'elle travaille. Le travail se calcule avec une formule très simple :" },
+          { type: "definition", def: "Le travail d'une force constante est le produit de l'intensité de la force par la longueur du déplacement de son point d'application, effectué dans la direction de la force : W = F × d.",
+            simple: "le « produit », c'est le résultat d'une multiplication. Une force « travaille » seulement quand elle déplace quelque chose : plus la force est grande et plus le trajet est long, plus le travail est grand." },
           { type: "formule", formule: "W = F × d", legendes: [
             [{ text: "W", bold: true, color: "2E7D32" }, { text: " = le travail, en joules (J)" }],
             [{ text: "F", bold: true, color: "2E7D32" }, { text: " = la force, en newtons (N)" }],
@@ -610,7 +619,9 @@ module.exports = {
       {
         titre: "1. La puissance : un travail divisé par une durée",
         blocs: [
-          { type: "para", text: "Deux porteurs font le même travail, mais l'un va plus vite que l'autre. Comment comparer ? Avec la puissance : le travail divisé par le temps mis pour le faire." },
+          { type: "para", text: "Deux porteurs font le même travail, mais l'un va plus vite que l'autre. Comment comparer ?" },
+          { type: "definition", def: "La puissance d'une force est le quotient du travail effectué par la durée mise pour l'effectuer : P = W ÷ t.",
+            simple: "le « quotient », c'est le résultat d'une division. La puissance mesure la vitesse à laquelle un travail est fait : même travail en moins de temps, puissance plus grande." },
           { type: "formule", formule: "P = W ÷ t", legendes: [
             [{ text: "P", bold: true, color: "2E7D32" }, { text: " = la puissance, en watts (W)" }],
             [{ text: "W", bold: true, color: "2E7D32" }, { text: " = le travail, en joules (J)" }],

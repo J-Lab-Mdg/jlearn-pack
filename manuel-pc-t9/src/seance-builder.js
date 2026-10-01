@@ -137,11 +137,20 @@ function buildFiche(S, rootDir) {
 // ---------- leçon « nouvelle maquette lisible » (12 pt, blocs) ----------
 function buildLeconV2(S, L2, rootDir) {
   const resolveImg = (src) => path.join(rootDir, "images", src);
+  const num2 = String(S.numero).padStart(2, "0");
   const out = [B.pageBreak()];
   out.push(T.p("LEÇON", { bold: true, size: 28, align: AlignmentType.CENTER, spacingAfter: 100 }));
   out.push(T.p(S.titre, { bold: true, size: 32, color: B.RED, align: AlignmentType.CENTER, spacingAfter: 160 }));
 
-  // Image d'illustration en tête de leçon (conservée)
+  // Scène d'ouverture (illustration IA « scène de vie »)
+  const scenePath = path.join(rootDir, "images", `img_scene_s${num2}.png`);
+  if (fs.existsSync(scenePath)) {
+    const dim = sizeOf(scenePath);
+    const w = 500;
+    out.push(T.imagePara(scenePath, w, Math.round(dim.height * (w / dim.width)), { spacingBefore: 40, spacingAfter: 160 }));
+  }
+
+  // Image d'illustration existante (conservée)
   if (S.image) {
     const imgPath = path.join(rootDir, S.image);
     if (fs.existsSync(imgPath)) {
@@ -153,20 +162,34 @@ function buildLeconV2(S, L2, rootDir) {
     }
   }
 
-  // Objectifs « Ce que tu vas apprendre »
-  if (L2.objectifs && L2.objectifs.length) {
-    out.push(T.p("Ce que tu vas apprendre :", { bold: true, size: 24, spacingAfter: 80 }));
-    L2.objectifs.forEach(o => out.push(T.puce([{ text: o }])));
-    out.push(T.p("", { spacingAfter: 80 }));
-  }
+  // Sections en blocs (les « Le savais-tu ? » sont collectés pour la page dédiée)
+  const saisTu = [];
+  out.push(...T.renderSections(L2.sections, L2.motsCles || [], resolveImg, { saisTuOut: saisTu }));
 
-  // Sections en blocs
-  out.push(...T.renderSections(L2.sections, L2.motsCles || [], resolveImg));
-
-  // Expérience illustrée
-  if (L2.experience) {
-    out.push(T.p("", { spacingAfter: 60 }));
-    out.push(T.renderExperience(L2.experience, resolveImg));
+  // ---- page dédiée : Le savais-tu ? + Expérience ----
+  if (saisTu.length || L2.experience) {
+    out.push(B.pageBreak());
+    if (saisTu.length) {
+      out.push(T.p("LE SAVAIS-TU ?", { bold: true, size: 28, color: T.BLUE, align: AlignmentType.CENTER, spacingAfter: 140 }));
+      saisTu.forEach(txt => {
+        out.push(T.encadreSaisTu(txt));
+        out.push(T.p("", { spacingAfter: 140 }));
+      });
+    }
+    if (L2.experience) {
+      const exp = { ...L2.experience };
+      // schéma de montage automatique si présent
+      if (!exp.image) {
+        const expImg = path.join(rootDir, "images", `img_exp_s${num2}.png`);
+        if (fs.existsSync(expImg)) {
+          const dim = sizeOf(expImg);
+          const w = 440;
+          exp.image = { src: `img_exp_s${num2}.png`, w, h: Math.round(dim.height * (w / dim.width)), legende: "Le montage de l'expérience." };
+        }
+      }
+      out.push(T.p("", { spacingAfter: 60 }));
+      out.push(T.renderExperience(exp, resolveImg));
+    }
   }
 
   // Tableau Matériel de substitution (conservé)

@@ -14,7 +14,8 @@ module.exports = {
       {
         titre: "1. La trajectoire : la trace du mouvement",
         blocs: [
-          { type: "para", text: "Quand un objet se déplace, il occupe des positions successives. La ligne formée par toutes ces positions s'appelle la trajectoire : c'est la « trace » que laisserait l'objet s'il écrivait en se déplaçant, comme la trace d'un vélo sur la piste sablonneuse." },
+          { type: "definition", def: "La trajectoire d'un mobile est la ligne formée par l'ensemble des positions successives qu'il occupe au cours de son mouvement.",
+            simple: "un « mobile » est un objet qui bouge. Sa trajectoire, c'est la trace qu'il laisserait derrière lui, comme la trace d'un vélo sur la piste sablonneuse." },
           { type: "puces", items: [
             [{ text: "rectiligne : ", bold: true }, { text: "une ligne droite (fruit qui tombe, gouttes de pluie sans vent, ascenseur) ;" }],
             [{ text: "circulaire : ", bold: true }, { text: "un cercle (valve d'une roue, aiguille d'une montre, nacelle d'un manège) ;" }],
@@ -25,7 +26,8 @@ module.exports = {
       {
         titre: "2. Le référentiel : par rapport à quoi ?",
         blocs: [
-          { type: "para", text: "Pour décrire un mouvement, il faut toujours préciser PAR RAPPORT À QUOI on l'observe. L'objet choisi comme référence s'appelle le référentiel. Le plus souvent, on choisit la Terre (le sol) : c'est le référentiel terrestre." },
+          { type: "definition", def: "Un référentiel est l'objet de référence par rapport auquel on étudie un mouvement.",
+            simple: "pour décrire un mouvement, il faut toujours préciser PAR RAPPORT À QUOI on l'observe. Le plus souvent, on choisit la Terre (le sol) : c'est le référentiel terrestre." },
           { type: "attention", text: "Dire « le mobile est en mouvement » sans préciser le référentiel n'a pas de sens en physique ! Il faut toujours dire : « en mouvement par rapport à… »." },
         ],
       },
@@ -96,7 +98,8 @@ module.exports = {
       {
         titre: "1. La vitesse moyenne",
         blocs: [
-          { type: "para", text: "La vitesse moyenne mesure la distance parcourue par unité de temps :" },
+          { type: "definition", def: "La vitesse moyenne d'un mobile est le quotient de la distance parcourue par la durée du parcours : v = d ÷ t.",
+            simple: "le « quotient », c'est le résultat d'une division. La vitesse moyenne dit quelle distance le mobile parcourt, en moyenne, à chaque unité de temps." },
           { type: "formule", formule: "v = d ÷ t", legendes: [
             [{ text: "v", bold: true, color: "2E7D32" }, { text: " = la vitesse, en m/s (ou km/h)" }],
             [{ text: "d", bold: true, color: "2E7D32" }, { text: " = la distance parcourue, en mètres (ou km)" }],
@@ -196,6 +199,8 @@ module.exports = {
       {
         titre: "2. Lire le graphe distance-temps",
         blocs: [
+          { type: "definition", def: "Un mouvement est rectiligne uniforme lorsque le mobile parcourt des distances égales pendant des durées égales : sa trajectoire est une droite et sa vitesse est constante.",
+            simple: "« uniforme » veut dire toujours pareil : ni accélération, ni freinage. Sur le graphe distance-temps, cela donne une droite bien régulière." },
           { type: "image", src: "img_v2_s37_graphe.png", w: 500, h: 318, legende: "Figure A — Droite = mouvement uniforme ; palier = arrêt." },
           { type: "puces", items: [
             [{ text: "droite qui monte : ", bold: true }, { text: "distances proportionnelles aux durées → mouvement rectiligne UNIFORME ;" }],

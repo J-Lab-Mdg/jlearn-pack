@@ -15,7 +15,8 @@ module.exports = {
         titre: "1. La mole : le paquet du chimiste",
         blocs: [
           { type: "para", text: "Les atomes sont bien trop petits pour être comptés un par un. Alors les chimistes les comptent par paquets ! Un paquet s'appelle une mole." },
-          { type: "para", text: "Une mole contient toujours 6,02 × 10²³ entités (atomes, molécules ou ions). Ce nombre géant s'appelle le nombre d'Avogadro." },
+          { type: "definition", def: "La mole est la quantité de matière qui contient 6,02 × 10²³ entités élémentaires (atomes, molécules ou ions). Ce nombre s'appelle le nombre d'Avogadro.",
+            simple: "une « entité » est simplement une « chose comptée » : atome, molécule ou ion. La mole est donc un paquet géant, toujours identique, assez gros pour être pesé." },
           { type: "para", text: "C'est la même idée qu'au marché : on ne compte pas les grains de riz un à un, on les vend au kapoaka ! La mole est le « kapoaka » du chimiste : un paquet toujours identique, assez gros pour être pesé." },
           { type: "image", src: "img_v2_s28_mole.png", w: 540, h: 259, legende: "Figure A — Trois tas très différents, mais le même nombre de molécules dans chacun !" },
         ],
@@ -98,6 +99,8 @@ module.exports = {
         blocs: [
           { type: "para", text: "Chauffe un mélange de fer et de soufre : il s'embrase et donne un corps nouveau, le sulfure de fer FeS, qui n'est plus attiré par l'aimant. Une réaction chimique a eu lieu !" },
           { type: "para", text: "Avant le chauffage, le mélange est encore séparable : l'aimant retire le fer. Après la réaction, plus rien à séparer : un CORPS NOUVEAU est né, avec des propriétés nouvelles. C'est le signe sûr d'une transformation chimique." },
+          { type: "definition", def: "Une réaction chimique est une transformation au cours de laquelle des corps disparaissent (les réactifs) et des corps nouveaux apparaissent (les produits), la masse totale se conservant.",
+            simple: "les atomes ne disparaissent jamais : ils changent seulement de partenaires, comme des danseurs qui changent de cavalier. C'est pourquoi la masse totale reste la même avant et après." },
         ],
       },
       {
@@ -178,7 +181,8 @@ module.exports = {
       {
         titre: "1. La famille des alcanes",
         blocs: [
-          { type: "para", text: "Les alcanes sont des hydrocarbures : des molécules faites uniquement de carbone et d'hydrogène. Leur formule générale :" },
+          { type: "definition", def: "Les alcanes sont des hydrocarbures de formule générale CnH2n+2, c'est-à-dire des composés formés uniquement d'atomes de carbone et d'atomes d'hydrogène.",
+            simple: "« hydrocarbure » = hydrogène + carbone, rien d'autre. Ce sont les gaz et les carburants que l'on brûle : méthane, butane, essence… Leur formule générale :" },
           { type: "formule", formule: "CnH2n+2", legendes: [
             [{ text: "méthane CH₄ • éthane C₂H₆ • propane C₃H₈ • butane C₄H₁₀ (le gaz en bouteille)" }],
           ]},
@@ -263,12 +267,15 @@ module.exports = {
       {
         titre: "1. La solution aqueuse",
         blocs: [
-          { type: "para", text: "Dissoudre un soluté (solide, liquide ou gaz) dans le solvant eau donne une solution aqueuse. Quand l'eau n'accepte plus de soluté, la solution est saturée." },
+          { type: "definition", def: "Une solution aqueuse est le mélange homogène obtenu en dissolvant un soluté dans l'eau, qui joue le rôle de solvant.",
+            simple: "« homogène » : on ne distingue plus les ingrédients à l'œil nu. Le soluté, c'est ce qu'on dissout (solide, liquide ou gaz) ; le solvant, c'est le liquide qui dissout. Quand l'eau n'accepte plus de soluté, la solution est saturée." },
         ],
       },
       {
         titre: "2. Les concentrations",
         blocs: [
+          { type: "definition", def: "La concentration massique d'une solution est le quotient de la masse de soluté dissous par le volume de la solution : Cm = m ÷ V.",
+            simple: "elle dit combien de grammes de soluté se cachent dans chaque litre : plus la concentration est grande, plus la solution est « chargée »." },
           { type: "formule", formule: "Cm = m ÷ V", legendes: [
             [{ text: "Cm", bold: true, color: "2E7D32" }, { text: " = la concentration massique, en g/L" }],
             [{ text: "m en grammes, V en litres" }],
@@ -343,7 +350,9 @@ module.exports = {
       {
         titre: "1. L'échelle de pH",
         blocs: [
-          { type: "para", text: "Le pH, un nombre de 0 à 14, classe toutes les solutions :" },
+          { type: "definition", def: "Le pH est un nombre, compris entre 0 et 14, qui mesure l'acidité d'une solution aqueuse : la solution est acide si pH < 7, neutre si pH = 7, basique si pH > 7.",
+            simple: "plus le pH est petit, plus c'est acide (ça pique, comme le citron) ; plus il est grand, plus c'est basique (ça glisse sous les doigts, comme le savon)." },
+          { type: "para", text: "L'échelle de pH classe donc toutes les solutions :" },
           { type: "puces", items: [
             [{ text: "pH < 7 : ", bold: true }, { text: "solution acide (les ions H⁺ dominent) ;" }],
             [{ text: "pH = 7 : ", bold: true }, { text: "solution neutre ;" }],
@@ -362,6 +371,8 @@ module.exports = {
       {
         titre: "3. La neutralisation",
         blocs: [
+          { type: "definition", def: "La neutralisation est la réaction entre un acide et une base qui produit un sel et de l'eau.",
+            simple: "l'acide et la base se « détruisent » mutuellement : leurs ions H⁺ et OH⁻ s'unissent pour former de l'eau, et le pH se rapproche de 7." },
           { type: "para", text: "Verser une base dans un acide (ou l'inverse) fait réagir les ions :" },
           { type: "formule", formule: "H⁺ + OH⁻ → H₂O", legendes: [
             [{ text: "acide + base → sel + eau" }],

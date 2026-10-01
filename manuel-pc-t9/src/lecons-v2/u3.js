@@ -14,7 +14,8 @@ module.exports = {
       {
         titre: "1. C'est quoi, la réflexion ?",
         blocs: [
-          { type: "para", text: "Une surface bien polie (miroir, eau calme, métal brillant) renvoie la lumière dans une direction précise : c'est la réflexion." },
+          { type: "definition", def: "La réflexion est le changement de direction que subit la lumière lorsqu'elle rencontre une surface polie, qui la renvoie dans son milieu de départ.",
+            simple: "« polie » veut dire parfaitement lisse et brillante (miroir, eau calme, métal brillant). La lumière y rebondit dans une direction précise, comme une balle sur un sol dur." },
           { type: "attention", text: "Ne confonds pas ! Une surface polie RÉFLÉCHIT la lumière dans une direction précise : on y voit des images. Une surface mate (mur, papier) DIFFUSE la lumière dans toutes les directions : on voit l'objet, mais pas d'image." },
         ],
       },
@@ -98,7 +99,8 @@ module.exports = {
       {
         titre: "1. Où est l'image ?",
         blocs: [
-          { type: "para", text: "L'image d'un point dans un miroir plan est le symétrique de ce point par rapport au miroir. Pour un objet entier, on construit le symétrique de chacun de ses points." },
+          { type: "definition", def: "L'image d'un point donnée par un miroir plan est le symétrique de ce point par rapport au plan du miroir. Cette image est virtuelle : elle ne peut pas être recueillie sur un écran.",
+            simple: "« symétrique » : même distance derrière le miroir que l'objet devant. « Virtuelle » veut dire « pas vraiment là » : les rayons semblent venir de derrière le miroir, mais aucune lumière ne s'y trouve. Pour un objet entier, on construit le symétrique de chacun de ses points." },
           { type: "image", src: "img_v2_s21_miroir.png", w: 520, h: 302, legende: "Figure A — L'image est derrière le miroir, à la même distance que l'objet." },
           { type: "para", text: "La méthode de construction : de chaque point de l'objet, trace la perpendiculaire au miroir, puis reporte la même distance de l'autre côté. C'est la symétrie orthogonale de tes cours de maths !" },
         ],
@@ -180,7 +182,8 @@ module.exports = {
       {
         titre: "1. C'est quoi, la réfraction ?",
         blocs: [
-          { type: "para", text: "Quand la lumière traverse la surface entre deux milieux transparents (air/eau, air/verre), elle change brusquement de direction : c'est la réfraction." },
+          { type: "definition", def: "La réfraction est le changement brusque de direction que subit la lumière lorsqu'elle traverse la surface séparant deux milieux transparents différents.",
+            simple: "un milieu « transparent » laisse passer la lumière (air, eau, verre). En passant de l'un à l'autre, le rayon se plie d'un coup, comme une paille qui semble cassée dans un verre d'eau." },
           { type: "image", src: "img_v2_s22_refraction.png", w: 520, h: 326, legende: "Figure A — En entrant dans l'eau, le rayon se rapproche de la normale (40° → 29°)." },
           { type: "puces", items: [
             "en entrant dans l'eau (ou le verre), le rayon se rapproche de la normale ;",
@@ -269,7 +272,8 @@ module.exports = {
       {
         titre: "2. Le spectre et l'arc-en-ciel",
         blocs: [
-          { type: "para", text: "Le spectre compte sept couleurs qui passent insensiblement de l'une à l'autre : violet, indigo, bleu, vert, jaune, orangé, rouge. Le violet est le plus dévié, le rouge le moins." },
+          { type: "definition", def: "Le spectre de la lumière blanche est l'ensemble des couleurs obtenues par sa décomposition : violet, indigo, bleu, vert, jaune, orangé et rouge.",
+            simple: "« décomposer », c'est séparer sans rien détruire : le prisme trie les couleurs déjà présentes. Elles passent insensiblement de l'une à l'autre ; le violet est le plus dévié, le rouge le moins." },
           { type: "para", text: "L'arc-en-ciel, c'est le spectre du Soleil fabriqué par les gouttes de pluie ! Chaque goutte agit comme un mini-prisme : réfraction en entrant, réflexion au fond, réfraction en sortant." },
           { type: "para", text: "Pour voir un arc-en-ciel, il faut avoir le Soleil DANS LE DOS : cherche-le après l'averse, face aux nuages qui s'éloignent !" },
         ],
@@ -340,7 +344,8 @@ module.exports = {
       {
         titre: "1. Pourquoi un objet a-t-il une couleur ?",
         blocs: [
-          { type: "para", text: "Éclairé en lumière blanche, un objet renvoie (diffuse) certaines couleurs et absorbe les autres. Sa couleur, c'est ce qu'il renvoie !" },
+          { type: "definition", def: "La couleur d'un objet est celle des lumières qu'il diffuse ; les autres lumières reçues sont absorbées.",
+            simple: "« diffuser » = renvoyer dans toutes les directions ; « absorber » = garder (et transformer en chaleur). La couleur d'un objet, c'est simplement ce qu'il renvoie de la lumière reçue." },
           { type: "tableau", titres: ["Objet", "Ce qu'il fait"], lignes: [
             ["Objet rouge", "renvoie le rouge, absorbe le reste"],
             ["Objet blanc", "renvoie toutes les couleurs"],
@@ -430,7 +435,10 @@ module.exports = {
       {
         titre: "2. Lumière et son : des ondes",
         blocs: [
-          { type: "para", text: "La lumière et le son sont des ondes : des vibrations qui se propagent. Trois grandeurs les décrivent :" },
+          { type: "para", text: "La lumière et le son sont des ondes : des vibrations qui se propagent, comme les rides à la surface de l'eau." },
+          { type: "definition", def: "La fréquence f d'une onde est le nombre de vibrations effectuées par seconde ; elle se mesure en hertz (Hz). La longueur d'onde λ est la distance parcourue par l'onde pendant une période.",
+            simple: "la « période » est la durée d'une seule vibration. Fréquence élevée = vibrations rapides ; grande longueur d'onde = vagues très espacées." },
+          { type: "para", text: "Trois grandeurs décrivent donc une onde :" },
           { type: "puces", items: [
             [{ text: "la période T : ", bold: true }, { text: "la durée d'une vibration, en secondes ;" }],
             [{ text: "la fréquence f : ", bold: true }, { text: "le nombre de vibrations par seconde, en hertz (Hz) — f = 1 ÷ T ;" }],
