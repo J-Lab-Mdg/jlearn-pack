@@ -50,7 +50,30 @@ def _set_table_borders(table, sz=8, color="000000"):
         el.set(qn('w:space'), '0')
         el.set(qn('w:color'), color)
         borders.append(el)
-    tblPr.append(borders)
+    # OOXML schema (CT_TblPrBase) requires tblBorders to appear BEFORE
+    # tblLook (and shd/tblLayout/tblCellMar) in the tblPr child sequence.
+    # python-docx auto-adds tblLook when the table is created; appending
+    # tblBorders after it violates that order and some renderers silently
+    # ignore an out-of-sequence border definition. Insert it in the correct
+    # position instead of blindly appending at the end.
+    tbl_look = tblPr.find(qn('w:tblLook'))
+    if tbl_look is not None:
+        tbl_look.addprevious(borders)
+    else:
+        tblPr.append(borders)
+
+
+def _trim_cell_paragraphs(cell, keep=1):
+    """After merging table cells, python-docx concatenates every paragraph
+    from each of the original cells into the surviving cell. For a divider
+    row where only the first original cell carried real text (the other
+    cells were left with a single empty paragraph each), this leaves several
+    empty trailing paragraphs that make the merged banner cell look far
+    taller/emptier than intended. Remove all but the first `keep`
+    paragraph(s) so the banner hugs its text."""
+    paras = cell.paragraphs
+    for p_ in paras[keep:]:
+        p_._p.getparent().remove(p_._p)
 
 
 def _shade_cell(cell, hexcolor):
@@ -320,8 +343,10 @@ def add_seance_header(doc, num, total, title, theme, objectif, support, ras_them
                        valeurs, duree, documentation="Programme d'Études — Classe de T4 (ST), DCRP"):
     p_num = mixed_para(doc, [(f"SÉANCE {num} / {total}", True, BLUE)], space_after=4)
     add_bookmark(p_num, f"seance_{num}")
-    mixed_para(doc, [(title, True, RED)], space_after=10)
-    para(doc, "FICHE DE PRÉPARATION", bold=True, size=14, space_after=8)
+    mixed_para(doc, [(title.upper(), True, RED)], space_after=10, size=18,
+               align=WD_ALIGN_PARAGRAPH.CENTER)
+    para(doc, "FICHE DE PRÉPARATION", bold=True, size=14, space_after=8,
+         align=WD_ALIGN_PARAGRAPH.CENTER)
 
     table = doc.add_table(rows=1, cols=2)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -406,13 +431,14 @@ def add_deroulement_table(doc, rows):
                 _shade_cell(cells[cidx], "EFEFEF")
 
     # Merge the repeated "Déroulement de la leçon" header cell (row 0, cols 1-2).
-    table.cell(0, 1).merge(table.cell(0, 2))
+    _trim_cell_paragraphs(table.cell(0, 1).merge(table.cell(0, 2)), keep=1)
     # Vertically merge the header cells that have no sub-header split.
     for col in (0, 3, 4, 5):
-        table.cell(0, col).merge(table.cell(1, col))
+        _trim_cell_paragraphs(table.cell(0, col).merge(table.cell(1, col)), keep=1)
     # Merge full-width divider rows (e.g. "II. NOUVELLE LEÇON") into one cell.
     for ridx in divider_rows:
-        table.cell(ridx, 0).merge(table.cell(ridx, 5))
+        merged = table.cell(ridx, 0).merge(table.cell(ridx, 5))
+        _trim_cell_paragraphs(merged, keep=1)
     blank(doc)
 
 
@@ -421,7 +447,8 @@ def add_deroulement_table(doc, rows):
 # ---------------------------------------------------------------------------
 
 def lecon_title_repeat(doc, title):
-    mixed_para(doc, [(title, True, RED)], space_after=6)
+    mixed_para(doc, [(title.upper(), True, RED)], space_after=6, size=18,
+               align=WD_ALIGN_PARAGRAPH.CENTER)
     blank(doc)
 
 
