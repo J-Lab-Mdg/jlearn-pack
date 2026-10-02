@@ -196,6 +196,19 @@ def add_internal_hyperlink(doc, bookmark_name, text, size=BASE_SIZE, bold=False,
 # Front matter
 # ---------------------------------------------------------------------------
 
+def add_bleed_cover(doc, image_path, page_height_in=11.0):
+    """Insert a full-page branded cover image (page 1), matching the
+    illustrated covers used on the sibling J-Learn manuals (T6-T9).
+    Assumes the current (first) section already has zero margins."""
+    from docx.shared import Inches
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_before = Pt(0)
+    p.paragraph_format.space_after = Pt(0)
+    run = p.add_run()
+    run.add_picture(image_path, height=Inches(page_height_in))
+
+
 def add_cover(doc, subject_line, level_line, programme_line, sub_line, country="Madagascar"):
     for _ in range(3):
         blank(doc)

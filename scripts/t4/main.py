@@ -104,21 +104,35 @@ def build_seance(doc, s, content):
 
 def main():
     doc = docx.Document()
-    # narrow margins (0.5 inch all around, the Word "Narrow" preset)
     from docx.shared import Inches
-    for section in doc.sections:
-        section.left_margin = Inches(0.5)
-        section.right_margin = Inches(0.5)
-        section.top_margin = Inches(0.5)
-        section.bottom_margin = Inches(0.5)
+    from docx.enum.section import WD_SECTION
 
-    B.add_cover(
-        doc,
-        subject_line="ST",
-        level_line="T4",
-        programme_line="Programme d'Études — 9 thématiques",
-        sub_line="Fiches de préparation · Leçons · Exercices corrigés · Sujets d'examen corrigés",
-    )
+    # --- Page 1: full-bleed illustrated cover (zero margins, matches the
+    # branded covers used on the sibling J-Learn manuals T6-T9) ---
+    cover_section = doc.sections[0]
+    cover_section.left_margin = Inches(0)
+    cover_section.right_margin = Inches(0)
+    cover_section.top_margin = Inches(0)
+    cover_section.bottom_margin = Inches(0)
+    cover_path = os.path.join(HERE, "generated_images", "cover.jpg")
+    if os.path.exists(cover_path):
+        B.add_bleed_cover(doc, cover_path)
+    else:
+        print("WARNING: cover image missing, falling back to text cover:", cover_path)
+        B.add_cover(
+            doc,
+            subject_line="ST",
+            level_line="T4",
+            programme_line="Programme d'Études — 9 thématiques",
+            sub_line="Fiches de préparation · Leçons · Exercices corrigés · Sujets d'examen corrigés",
+        )
+
+    # --- Rest of the document: normal narrow margins (0.5 in all around) ---
+    body_section = doc.add_section(WD_SECTION.NEW_PAGE)
+    body_section.left_margin = Inches(0.5)
+    body_section.right_margin = Inches(0.5)
+    body_section.top_margin = Inches(0.5)
+    body_section.bottom_margin = Inches(0.5)
 
     B.add_avant_propos(doc, [
         "Ce manuel de Sciences et Technologie pour la classe de T4 a été élaboré à partir du "
