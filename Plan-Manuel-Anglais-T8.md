@@ -40,7 +40,7 @@ Tableau contenus : l.45-160 ; U1 détail l.309-474 ; U2 l.474-621 ; U3 l.621-891
 U5 l.1021-1196 ; U6 l.1196-1360 ; U7 l.1360-1669 ; assessments/annexes génériques l.1669-fin.
 
 ## Audio
-Nouveau dossier Google Drive « J-Learn - Anglais T8 - Audio », public lecture seule : `À CRÉER`.
+Nouveau dossier Google Drive « J-Learn - Anglais T8 - Audio », public lecture seule : `1muxOkS0bLFOfGg7JGFFDWBBK_glGmbvY` (créé, public lecture seule).
 MP3 TTS voice-00 (« Soa » = « So-ah ») ; QR python qrcode box_size=6 border=2 ; AUCUN lien GitHub dans le manuel.
 
 ## Blocs de livraison
