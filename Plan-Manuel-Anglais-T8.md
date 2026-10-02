@@ -67,3 +67,7 @@ youtube seulement Annex 2 ; « I copy the lesson » = 0 ; git checkout package*.
 - unit3.js : 10 fiches+leçons (S22 chores, S23 listening Koto's day + present simple, S24 frequency adverbs, S25 transport+sequence markers+interview, S26 hobbies, S27 play/go+V-ing, S28 coordinators+dice game, S29 reading Lova scrambled, S30 writing routine, S31 two truths and a lie), bigLesson 6 sections, exercises /20, rév S32, test S33, iCan → UNIT 4 FOOD.
 - Audio Drive : t8_u3_koto_day `1YvB7JWO-bWhYkpp-fy39Q8dIoFbop8VX` ; t8_u3_hobbies `1lqvEl797MDvUY8vXFUtqNTjL7CrjvLU-`. Images : u3_daily_routine, u3_hobbies (1376×768). QR ×2.
 - NB PE : la section market/prices (comparatives/superlatives, quantifiers, countable/uncountable) appartient à l'U4 FOOD, pas à l'U3.
+
+### Bloc 4 ✔ — UNIT 4 FOOD (S34-S45), COLOR 6C3483
+- unit4.js : 10 fiches+leçons (S34 food+shops+listen-and-stand-up, S35 listening market+prices, S36 countable/uncountable+some-any-no+Φ, S37 comparatives/superlatives, S38 bargaining 5 steps, S39 ingredients/utensils/verbs+bingo, S40 listening recipe+imperatives, S41 reading The Bananas, S42 writing recipe, S43 writing buying dialogue), bigLesson 6 sections, exercises /20, rév S44, test S45, iCan → UNIT 5 PREVENTIVE HEALTH.
+- Audio Drive : t8_u4_market `1GgsFjv1VNkAg77OG_w79cCqQh82malCB` ; t8_u4_recipe `1X0HqihsoHJodaabb9zBfsHqur-atIs0b`. Images : u4_market, u4_cooking (1376×768). QR ×2.

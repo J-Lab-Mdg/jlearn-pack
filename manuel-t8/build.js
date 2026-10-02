@@ -7,6 +7,7 @@ const { C, SZ, FONT, run, p, pr, img, pageBreak, tocLink } = B;
 const unit1 = require("./unit1");
 const unit2 = require("./unit2");
 const unit3 = require("./unit3");
+const unit4 = require("./unit4");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -109,6 +110,20 @@ function contents() {
     tocLink("s31", "    Session 31 — Two truths and a lie!"),
     tocLink("s32", "    Session 32 — Revision"),
     tocLink("s33", "    Session 33 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit4", "UNIT 4 — FOOD (Sessions 34–45)", { bold: true, size: 26 }),
+    tocLink("s34", "    Session 34 — The food and the shops"),
+    tocLink("s35", "    Session 35 — Listening: at the market — the prices"),
+    tocLink("s36", "    Session 36 — Countable, uncountable — some, any, no"),
+    tocLink("s37", "    Session 37 — Comparatives and superlatives"),
+    tocLink("s38", "    Session 38 — Bargaining prices"),
+    tocLink("s39", "    Session 39 — The kitchen: ingredients, utensils, verbs"),
+    tocLink("s40", "    Session 40 — Listening: the recipe — the imperatives"),
+    tocLink("s41", "    Session 41 — Reading: bargaining at the market"),
+    tocLink("s42", "    Session 42 — Writing: my recipe"),
+    tocLink("s43", "    Session 43 — Writing: the buying dialogue"),
+    tocLink("s44", "    Session 44 — Revision"),
+    tocLink("s45", "    Session 45 — Test paper"),
     p("", { after: 60 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
@@ -161,7 +176,8 @@ async function main() {
         ...dashboard(), pageBreak(),
         ...unit1(), pageBreak(),
         ...unit2(), pageBreak(),
-        ...unit3(),
+        ...unit3(), pageBreak(),
+        ...unit4(),
       ],
     }],
   });
