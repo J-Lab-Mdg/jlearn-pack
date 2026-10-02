@@ -6,6 +6,7 @@ const B = require("./builders");
 const { C, SZ, FONT, run, p, pr, img, pageBreak, tocLink } = B;
 const unit1 = require("./unit1");
 const unit2 = require("./unit2");
+const unit3 = require("./unit3");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -94,6 +95,20 @@ function contents() {
     tocLink("s19", "    Session 19 — Writing: my set of instructions"),
     tocLink("s20", "    Session 20 — Revision"),
     tocLink("s21", "    Session 21 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit3", "UNIT 3 — DAILY LIFE (Sessions 22–33)", { bold: true, size: 26 }),
+    tocLink("s22", "    Session 22 — The daily activities and the chores"),
+    tocLink("s23", "    Session 23 — Listening: Koto’s day — the present simple"),
+    tocLink("s24", "    Session 24 — How often…? The frequency adverbs"),
+    tocLink("s25", "    Session 25 — Transport, sequence markers and the interview"),
+    tocLink("s26", "    Session 26 — The hobbies: sports, games and music"),
+    tocLink("s27", "    Session 27 — Play or go + V-ing?"),
+    tocLink("s28", "    Session 28 — The coordinators: and, but, or, yet, so"),
+    tocLink("s29", "    Session 29 — Reading: a day in Lova’s life"),
+    tocLink("s30", "    Session 30 — Writing: my daily routine"),
+    tocLink("s31", "    Session 31 — Two truths and a lie!"),
+    tocLink("s32", "    Session 32 — Revision"),
+    tocLink("s33", "    Session 33 — Test paper"),
     p("", { after: 60 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
@@ -145,7 +160,8 @@ async function main() {
         ...contents(), pageBreak(),
         ...dashboard(), pageBreak(),
         ...unit1(), pageBreak(),
-        ...unit2(),
+        ...unit2(), pageBreak(),
+        ...unit3(),
       ],
     }],
   });
