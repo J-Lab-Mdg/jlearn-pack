@@ -5,6 +5,7 @@ const { Document, Packer, Paragraph, TextRun } = require("docx");
 const B = require("./builders");
 const { C, SZ, FONT, run, p, pr, img, pageBreak, tocLink } = B;
 const unit1 = require("./unit1");
+const unit2 = require("./unit2");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -85,6 +86,14 @@ function contents() {
     tocLink("s13", "    Session 13 — Writing: my plans paragraph"),
     tocLink("s14", "    Session 14 — Revision"),
     tocLink("s15", "    Session 15 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit2", "UNIT 2 — CLASSROOM COMMUNICATION (Sessions 16–21)", { bold: true, size: 26 }),
+    tocLink("s16", "    Session 16 — The classroom instructions (Simon says)"),
+    tocLink("s17", "    Session 17 — Lending and borrowing: can, may, could"),
+    tocLink("s18", "    Session 18 — Reading: in the classroom"),
+    tocLink("s19", "    Session 19 — Writing: my set of instructions"),
+    tocLink("s20", "    Session 20 — Revision"),
+    tocLink("s21", "    Session 21 — Test paper"),
     p("", { after: 60 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
@@ -135,7 +144,8 @@ async function main() {
         ...howToUse(), pageBreak(),
         ...contents(), pageBreak(),
         ...dashboard(), pageBreak(),
-        ...unit1(),
+        ...unit1(), pageBreak(),
+        ...unit2(),
       ],
     }],
   });
