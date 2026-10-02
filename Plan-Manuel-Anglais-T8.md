@@ -57,3 +57,7 @@ MP3 TTS voice-00 (« Soa » = « So-ah ») ; QR python qrcode box_size=6 border=
 ## Vérifications à chaque build
 sectPr=2 ; github=0 ; س=0 ; bookmarks==anchors ; `SESSION \d+ / 78` = 1..78 ; drive.google.com ;
 youtube seulement Annex 2 ; « I copy the lesson » = 0 ; git checkout package*.json avant commit.
+
+## Avancement
+- Bloc 0 ✔ : extrait PE + plan + scaffolding + couverture + Drive T8 `1muxOkS0bLFOfGg7JGFFDWBBK_glGmbvY`
+- Bloc 1 ✔ : UNIT 1 PERSONAL COMMUNICATION complet (S1-S15) — audio Drive : t8_u1_feelings `1unOxEjipcV1eztNDOV58KcY8ukVVdRym`, t8_u1_plans `18s7eB-5ws9pseSasBmdxUxKo3RalHCnH`, t8_u1_email `19nkrehGtSOFQK0AGYzy4RiaI7S4zW9G6` ; images u1_feelings, u1_weekend + 3 QR ; 13 fiches+leçons (feelings, caring questions, listening dialogue, present continuous, simple past x2, weekend activities, listening plans, be going to, will vs going to + for/on, e-mail reading x2, writing paragraph), bigLesson 7 sections, exercises /20, révision S14, test S15, iCan → UNIT 2

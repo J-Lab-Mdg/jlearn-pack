@@ -4,6 +4,7 @@ const path = require("path");
 const { Document, Packer, Paragraph, TextRun } = require("docx");
 const B = require("./builders");
 const { C, SZ, FONT, run, p, pr, img, pageBreak, tocLink } = B;
+const unit1 = require("./unit1");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -68,7 +69,24 @@ function howToUse() {
 function contents() {
   return [
     p([run("CONTENTS", { bold: true, size: 32 })], { center: true, after: 160 }),
-    p([run("… The seven units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("unit1", "UNIT 1 — PERSONAL COMMUNICATION (Sessions 1–15)", { bold: true, size: 26 }),
+    tocLink("s1", "    Session 1 — The feelings"),
+    tocLink("s2", "    Session 2 — Asking about feelings: What’s wrong? What happened?"),
+    tocLink("s3", "    Session 3 — Listening: the feelings dialogue"),
+    tocLink("s4", "    Session 4 — The present continuous (temporary facts)"),
+    tocLink("s5", "    Session 5 — The simple past (1): was, were, -ed"),
+    tocLink("s6", "    Session 6 — The simple past (2): the rebel verbs"),
+    tocLink("s7", "    Session 7 — The weekend activities"),
+    tocLink("s8", "    Session 8 — Listening: my weekend plans"),
+    tocLink("s9", "    Session 9 — Be going to: the plan future"),
+    tocLink("s10", "    Session 10 — Will vs be going to + for/on"),
+    tocLink("s11", "    Session 11 — Reading (1): the e-mail — gist"),
+    tocLink("s12", "    Session 12 — Reading (2): the e-mail — details"),
+    tocLink("s13", "    Session 13 — Writing: my plans paragraph"),
+    tocLink("s14", "    Session 14 — Revision"),
+    tocLink("s15", "    Session 15 — Test paper"),
+    p("", { after: 60 }),
+    p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -116,7 +134,8 @@ async function main() {
         ...foreword(), pageBreak(),
         ...howToUse(), pageBreak(),
         ...contents(), pageBreak(),
-        ...dashboard(),
+        ...dashboard(), pageBreak(),
+        ...unit1(),
       ],
     }],
   });
