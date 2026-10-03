@@ -54,6 +54,21 @@ const img = (buf, widthPx = 500) => {
   return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 120, after: 120 }, children: [new ImageRun({ type: 'png', data: buf, transformation: { width: widthPx, height: Math.round(widthPx * h / w) } })] });
 };
 
+function jpgSize(buf) {
+  let i = 2;
+  while (i < buf.length - 9) {
+    if (buf[i] !== 0xFF) { i++; continue; }
+    const m = buf[i + 1];
+    if (m >= 0xC0 && m <= 0xCF && m !== 0xC4 && m !== 0xC8 && m !== 0xCC) return { h: buf.readUInt16BE(i + 5), w: buf.readUInt16BE(i + 7) };
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  return { w: 1376, h: 768 };
+}
+const imgJpg = (buf, widthPx = 430) => {
+  const { w, h } = jpgSize(buf);
+  return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 120, after: 120 }, children: [new ImageRun({ type: 'jpg', data: buf, transformation: { width: widthPx, height: Math.round(widthPx * h / w) } })] });
+};
+
 function metaTable(s, i, total) {
   return table([new TableRow({
     children: [
@@ -107,6 +122,8 @@ function seance(s, i, total, uNo, figBufs) {
   a.push(deroulement(s));
   a.push(page());
   a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 160, after: 160 }, children: [tr(s.t.toUpperCase(), { bold: true, color: C.red, size: 32 })] }));
+  const scPath = path.join(__dirname, '..', 'assets', 'scenes', `u${uNo}s${i}.jpg`);
+  if (fs.existsSync(scPath)) a.push(imgJpg(fs.readFileSync(scPath), 430));
   a.push(mixed([['Définition — ', { bold: true, color: C.green }], [s.def, { bold: true }]]));
   a.push(mixed([['Autrement dit : ', { bold: true, color: C.blue }], [s.autrement, {}]]));
   a.push(p(s.concept));
