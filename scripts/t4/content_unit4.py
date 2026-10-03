@@ -384,6 +384,8 @@ S4 = {
 # ---------------------------------------------------------------------------
 S5 = {
     "num": 5, "title": "Révision — Unité IV : Reproduction humaine", "kind": "revision",
+    "cover_image": ("scripts/t4/generated_images/u4_bilan_r1.jpg",
+                     "Bilan de l'Unité IV : respect et hygiène du corps privé."),
     "theme": THEME, "ras_theme": RAS_THEME, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "traiter un sujet complet portant sur les séances 27 à 30, puis identifier ses points faibles.",
     "support": "sujet recopié au tableau ou polycopié, cahier de brouillon.",
@@ -465,6 +467,8 @@ S5 = {
 # ---------------------------------------------------------------------------
 S6 = {
     "num": 6, "title": "Sujet d'examen ST T4 — Unité IV : Reproduction humaine", "kind": "exam",
+    "cover_image": ("scripts/t4/generated_images/u4_bilan_e1.jpg",
+                     "Sujet d'examen, Unité IV : Reproduction humaine."),
     "theme": THEME, "ras_theme": RAS_THEME, "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "évaluer la maîtrise des notions des séances 27 à 30 — description, rôles et hygiène des "
                 "organes génitaux externes.",

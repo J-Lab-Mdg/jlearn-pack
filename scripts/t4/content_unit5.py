@@ -624,6 +624,8 @@ S7 = {
 # ---------------------------------------------------------------------------
 S8 = {
     "num": 8, "title": "Révision — Unité V : Conception technologique", "kind": "revision",
+    "cover_image": ("scripts/t4/generated_images/u5_bilan_r1.jpg",
+                     "Bilan de l'Unité V : les cinq étapes de la conception technologique."),
     "theme": THEME, "ras_theme": "Cahier des charges, croquis, schéma de principe, choix des matériaux, "
                                   "construction, essais et présentation d'un mini-bateau",
     "valeurs": VALEURS, "duree": "1 heure",
@@ -716,6 +718,8 @@ S8 = {
 # ---------------------------------------------------------------------------
 S9 = {
     "num": 9, "title": "Sujet d'examen ST T4 — Unité V : Conception technologique", "kind": "exam",
+    "cover_image": ("scripts/t4/generated_images/u5_bilan_e1.jpg",
+                     "Sujet d'examen, Unité V : Conception technologique."),
     "theme": THEME, "ras_theme": "Cahier des charges, croquis, schéma de principe, choix des matériaux, "
                                   "construction, essais et présentation d'un mini-bateau",
     "valeurs": VALEURS, "duree": "1 heure",

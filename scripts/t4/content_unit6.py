@@ -236,14 +236,15 @@ S3 = {
                             "touche trois objets et décris ce que ressent ta peau.",
          "Ex. 1 : les élèves identifient correctement les saveurs et les sensations tactiles.",
          "Travail en binôme", "Aliments, objets, bandeau", ""),
-        ("III. ÉVALUATION", "Ex. 1 — Cite les quatre saveurs de base reconnues par la langue.",
-         "Ex. 1 : sucré, salé, acide, amer.", "Évaluation écrite", "Cahier", ""),
+        ("III. ÉVALUATION", "Ex. 1 — Cite les cinq saveurs de base reconnues par la langue.",
+         "Ex. 1 : sucré, salé, acide, amer, umami.", "Évaluation écrite", "Cahier", ""),
     ],
     "lecon": [
         ("section", "1. La langue et le goût"),
         ("body", "La langue est couverte de petites papilles gustatives, réparties sur toute sa surface. "
-                 "Elles permettent de reconnaître quatre saveurs principales : le sucré, le salé, l'acide "
-                 "et l'amer. La langue est l'organe du goût."),
+                 "Elles permettent de reconnaître cinq saveurs principales : le sucré, le salé, l'acide, "
+                 "l'amer et l'umami (le goût savoureux d'un bouillon de viande ou de poisson). La langue "
+                 "est l'organe du goût."),
         ("image", ("scripts/t4/generated_images/u6_s3_b_langue.jpg",
                    "La langue et ses papilles gustatives permettent de reconnaître les saveurs.")),
         ("section", "2. La peau et le toucher"),
@@ -258,7 +259,7 @@ S3 = {
                  "ou d'un objet trop chaud, pour que nous réagissions vite."),
     ],
     "exercices": [
-        ("Exercice 1 (5 points)", " — Cite les quatre saveurs de base reconnues par la langue."),
+        ("Exercice 1 (5 points)", " — Cite les cinq saveurs de base reconnues par la langue."),
         ("Exercice 2 (5 points)", " — Cite trois sensations que la peau peut ressentir."),
         ("Exercice 3 (6 points)", " — Vrai ou faux, puis corrige les affirmations fausses :\n"
                                    "1. La langue est l'organe du toucher.\n"
@@ -269,7 +270,7 @@ S3 = {
     ],
     "total": 20,
     "corrige_lines": [
-        [("Ex. 1 — ", False), ("sucré, salé, acide, amer. (5 pts)", False)],
+        [("Ex. 1 — ", False), ("sucré, salé, acide, amer, umami. (5 pts)", False)],
         [("Ex. 2 — ", False), ("le chaud, le froid, le doux, le rugueux, la pression, la douleur (trois "
                                 "au choix). (5 pts)", False)],
         [("Ex. 3 — ", False), ("1. Faux, la langue est l'organe du goût. (2 pts)", False)],

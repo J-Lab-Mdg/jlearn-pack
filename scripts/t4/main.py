@@ -70,6 +70,12 @@ def build_lecon(doc, s):
 
 
 def build_revexam(doc, s):
+    if s.get("cover_image"):
+        path, caption = s["cover_image"]
+        if os.path.exists(path):
+            B.add_image(doc, path, caption)
+        else:
+            print("WARNING: missing image, skipped:", path)
     B.mixed_para(doc, [(s["sujet_title"], True, B.BLACK)], space_after=8)
     for header, rest in s["exercices"]:
         if header:

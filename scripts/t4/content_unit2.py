@@ -736,6 +736,8 @@ S8 = {
 # ---------------------------------------------------------------------------
 S9 = {
     "num": 9, "title": "Révision — Unité II : Organisation des êtres vivants", "kind": "revision",
+    "cover_image": ("scripts/t4/generated_images/u2_bilan_r1.jpg",
+                     "Bilan de l'Unité II : organisation et rôles des êtres vivants."),
     "theme": THEME, "ras_theme": "Classifier des plantes ; rôles sociaux, économiques, culturels et "
                                   "environnementaux des plantes",
     "valeurs": VALEURS, "duree": "1 heure",
@@ -825,6 +827,8 @@ S9 = {
 # ---------------------------------------------------------------------------
 S10 = {
     "num": 10, "title": "Sujet d'examen ST T4 — Unité II : Organisation des êtres vivants", "kind": "exam",
+    "cover_image": ("scripts/t4/generated_images/u2_bilan_e1.jpg",
+                     "Sujet d'examen, Unité II : Organisation des êtres vivants."),
     "theme": THEME, "ras_theme": "Classifier des plantes ; rôles sociaux, économiques, culturels et "
                                   "environnementaux des plantes",
     "valeurs": VALEURS, "duree": "1 heure",

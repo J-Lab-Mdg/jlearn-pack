@@ -502,6 +502,8 @@ S5 = {
 # ---------------------------------------------------------------------------
 S6 = {
     "num": 6, "title": "Révision — Unité I : Alimentation de l'homme", "kind": "revision",
+    "cover_image": ("scripts/t4/generated_images/u1_bilan_r1.jpg",
+                     "Bilan de l'Unité I : rôles des aliments et règles d'hygiène alimentaire."),
     "theme": THEME, "ras_theme": "Élaborer un menu varié ; hygiène des aliments ; emballage alimentaire",
     "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "traiter un sujet complet portant sur les séances 1 à 5, puis identifier ses points faibles.",
@@ -590,6 +592,8 @@ S6 = {
 # ---------------------------------------------------------------------------
 S7 = {
     "num": 7, "title": "Sujet d'examen ST T4 — Unité I : Alimentation de l'homme", "kind": "exam",
+    "cover_image": ("scripts/t4/generated_images/u1_bilan_e1.jpg",
+                     "Sujet d'examen, Unité I : Alimentation de l'homme."),
     "theme": THEME, "ras_theme": "Élaborer un menu varié ; hygiène des aliments ; emballage alimentaire",
     "valeurs": VALEURS, "duree": "1 heure",
     "objectif": "évaluer la maîtrise des notions des séances 1 à 5 — classification des aliments, menu varié, "
