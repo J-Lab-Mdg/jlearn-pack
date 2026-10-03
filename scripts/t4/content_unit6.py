@@ -381,6 +381,8 @@ S4 = {
 # ---------------------------------------------------------------------------
 S5 = {
     "num": 5, "title": "Révision — Unité VI : Santé et bien-être", "kind": "revision",
+    "cover_image": ("scripts/t4/generated_images/u6_bilan_r1.jpg",
+                     "Bilan de l'Unité VI : les cinq sens et leur hygiène."),
     "theme": THEME, "ras_theme": "L'œil et la vue ; l'oreille et l'ouïe ; le nez et l'odorat ; la langue et "
                                   "le goût ; la peau et le toucher ; hygiène des organes sensoriels",
     "valeurs": VALEURS, "duree": "1 heure",
@@ -469,6 +471,8 @@ S5 = {
 # ---------------------------------------------------------------------------
 S6 = {
     "num": 6, "title": "Sujet d'examen ST T4 — Unité VI : Santé et bien-être", "kind": "exam",
+    "cover_image": ("scripts/t4/generated_images/u6_bilan_e1.jpg",
+                     "Sujet d'examen, Unité VI : Santé et bien-être."),
     "theme": THEME, "ras_theme": "L'œil et la vue ; l'oreille et l'ouïe ; le nez et l'odorat ; la langue et "
                                   "le goût ; la peau et le toucher ; hygiène des organes sensoriels",
     "valeurs": VALEURS, "duree": "1 heure",

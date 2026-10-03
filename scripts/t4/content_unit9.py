@@ -387,6 +387,8 @@ S4 = {
 # ---------------------------------------------------------------------------
 S5 = {
     "num": 5, "title": "Révision — Unité IX : Électricité et magnétisme", "kind": "revision",
+    "cover_image": ("scripts/t4/generated_images/u9_bilan_r1.jpg",
+                     "Bilan de l'Unité IX : magnétisme et électricité statique."),
     "theme": THEME, "ras_theme": "Les aimants et leurs interactions ; les pôles d'un aimant ; "
                                   "l'électrisation d'un objet ; les charges électriques et leurs "
                                   "interactions",
@@ -479,6 +481,8 @@ S5 = {
 # ---------------------------------------------------------------------------
 S6 = {
     "num": 6, "title": "Sujet d'examen ST T4 — Unité IX : Électricité et magnétisme", "kind": "exam",
+    "cover_image": ("scripts/t4/generated_images/u9_bilan_e1.jpg",
+                     "Sujet d'examen, Unité IX : Électricité et magnétisme."),
     "theme": THEME, "ras_theme": "Les aimants et leurs interactions ; les pôles d'un aimant ; "
                                   "l'électrisation d'un objet ; les charges électriques et leurs "
                                   "interactions",

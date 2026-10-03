@@ -400,6 +400,8 @@ S4 = {
 # ---------------------------------------------------------------------------
 S5 = {
     "num": 5, "title": "Révision — Unité VII : Géologie", "kind": "revision",
+    "cover_image": ("scripts/t4/generated_images/u7_bilan_r1.jpg",
+                     "Bilan de l'Unité VII : les couches du sol et la lutte contre l'érosion."),
     "theme": THEME, "ras_theme": "Les couches du sol ; les constituants du sol ; les types de dégradation du "
                                   "sol ; la lutte contre la dégradation du sol",
     "valeurs": VALEURS, "duree": "1 heure",
@@ -490,6 +492,8 @@ S5 = {
 # ---------------------------------------------------------------------------
 S6 = {
     "num": 6, "title": "Sujet d'examen ST T4 — Unité VII : Géologie", "kind": "exam",
+    "cover_image": ("scripts/t4/generated_images/u7_bilan_e1.jpg",
+                     "Sujet d'examen, Unité VII : Géologie."),
     "theme": THEME, "ras_theme": "Les couches du sol ; les constituants du sol ; les types de dégradation du "
                                   "sol ; la lutte contre la dégradation du sol",
     "valeurs": VALEURS, "duree": "1 heure",

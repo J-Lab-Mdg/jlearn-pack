@@ -553,6 +553,8 @@ S6 = {
 # ---------------------------------------------------------------------------
 S7 = {
     "num": 7, "title": "Révision — Unité VIII : Matière", "kind": "revision",
+    "cover_image": ("scripts/t4/generated_images/u8_bilan_r1.jpg",
+                     "Bilan de l'Unité VIII : les états de la matière et le cycle de l'eau."),
     "theme": THEME, "ras_theme": "Les états de la matière ; l'origine de la matière ; les états de l'eau ; "
                                   "fusion/solidification ; vaporisation/condensation ; le cycle de l'eau",
     "valeurs": VALEURS, "duree": "1 heure",
@@ -645,6 +647,8 @@ S7 = {
 # ---------------------------------------------------------------------------
 S8 = {
     "num": 8, "title": "Sujet d'examen ST T4 — Unité VIII : Matière", "kind": "exam",
+    "cover_image": ("scripts/t4/generated_images/u8_bilan_e1.jpg",
+                     "Sujet d'examen, Unité VIII : Matière."),
     "theme": THEME, "ras_theme": "Les états de la matière ; l'origine de la matière ; les états de l'eau ; "
                                   "fusion/solidification ; vaporisation/condensation ; le cycle de l'eau",
     "valeurs": VALEURS, "duree": "1 heure",
