@@ -71,3 +71,7 @@ youtube seulement Annex 2 ; « I copy the lesson » = 0 ; git checkout package*.
 ### Bloc 4 ✔ — UNIT 4 FOOD (S34-S45), COLOR 6C3483
 - unit4.js : 10 fiches+leçons (S34 food+shops+listen-and-stand-up, S35 listening market+prices, S36 countable/uncountable+some-any-no+Φ, S37 comparatives/superlatives, S38 bargaining 5 steps, S39 ingredients/utensils/verbs+bingo, S40 listening recipe+imperatives, S41 reading The Bananas, S42 writing recipe, S43 writing buying dialogue), bigLesson 6 sections, exercises /20, rév S44, test S45, iCan → UNIT 5 PREVENTIVE HEALTH.
 - Audio Drive : t8_u4_market `1GgsFjv1VNkAg77OG_w79cCqQh82malCB` ; t8_u4_recipe `1X0HqihsoHJodaabb9zBfsHqur-atIs0b`. Images : u4_market, u4_cooking (1376×768). QR ×2.
+
+### Bloc 5 ✔ — UNIT 5 PREVENTIVE HEALTH (S46-S54), COLOR 148F77
+- unit5.js : 7 fiches+leçons (S46 illnesses+asking/stating health+wishes, S47 listening doctor+have got, S48 cures+should, S49 hygiene+if clause type 1, S50 hygiene posters+advice conversations, S51 reading Clean Hands recitation, S52 writing 7 sentences anti-germs→text), bigLesson 6 sections, exercises /20, rév S53, test S54, iCan → UNIT 6 MEANS OF COMMUNICATION.
+- Audio Drive : t8_u5_doctor `1MS58vjwIC8pcx2gs2Vv5OoDrCSkTy0jy` ; t8_u5_hygiene `1hkJ8stehaGywBy31dwkNDZv9vfPYaNmz`. Images : u5_doctor, u5_hygiene (1376×768). QR ×2.

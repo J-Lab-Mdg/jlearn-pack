@@ -8,6 +8,7 @@ const unit1 = require("./unit1");
 const unit2 = require("./unit2");
 const unit3 = require("./unit3");
 const unit4 = require("./unit4");
+const unit5 = require("./unit5");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -124,6 +125,17 @@ function contents() {
     tocLink("s43", "    Session 43 — Writing: the buying dialogue"),
     tocLink("s44", "    Session 44 — Revision"),
     tocLink("s45", "    Session 45 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit5", "UNIT 5 — PREVENTIVE HEALTH (Sessions 46–54)", { bold: true, size: 26 }),
+    tocLink("s46", "    Session 46 — The common illnesses"),
+    tocLink("s47", "    Session 47 — Listening: at the doctor’s office — have got"),
+    tocLink("s48", "    Session 48 — The cures and the advice: should"),
+    tocLink("s49", "    Session 49 — The hygiene and the if clause (type 1)"),
+    tocLink("s50", "    Session 50 — The hygiene posters"),
+    tocLink("s51", "    Session 51 — Reading: the clean hands recitation"),
+    tocLink("s52", "    Session 52 — Writing: my plan against the germs"),
+    tocLink("s53", "    Session 53 — Revision"),
+    tocLink("s54", "    Session 54 — Test paper"),
     p("", { after: 60 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
@@ -177,7 +189,8 @@ async function main() {
         ...unit1(), pageBreak(),
         ...unit2(), pageBreak(),
         ...unit3(), pageBreak(),
-        ...unit4(),
+        ...unit4(), pageBreak(),
+        ...unit5(),
       ],
     }],
   });
