@@ -269,6 +269,15 @@ def add_global_toc(doc, units_flat, unit_meta):
             mixed_para(doc, [(f"UNITÉ {s['unit_roman']} — {s['unit_title']}", True, BLUE)])
         label = f"Séance {s['num']} — {s['title']}"
         add_internal_hyperlink(doc, f"seance_{s['num']}", label, size=BASE_SIZE, space_after=3)
+    add_internal_hyperlink(doc, "annexes", "Annexes", bold=True)
+    for sub_bookmark, sub_label in [
+        ("glossaire", "Glossaire"),
+        ("autoeval", "Auto-évaluation"),
+        ("index_annexe", "Index"),
+        ("evalexamen", "Évaluations format examen"),
+        ("illus", "Table des illustrations"),
+    ]:
+        add_internal_hyperlink(doc, sub_bookmark, "    " + sub_label, size=BASE_SIZE - 1, space_after=3)
     doc.add_page_break()
 
 
@@ -530,3 +539,94 @@ def add_image(doc, path, caption=None, width_cm=13.5):
 
 def page_break(doc):
     doc.add_page_break()
+
+
+# ---------------------------------------------------------------------------
+# ANNEXES (glossaire, auto-evaluation, index, examens, illustrations)
+# ---------------------------------------------------------------------------
+
+def add_annexes_heading(doc):
+    p = para(doc, "ANNEXES", bold=True, size=18, color=RED, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=12)
+    add_bookmark(p, "annexes")
+
+
+def add_annexe_subheading(doc, text, bookmark):
+    p = para(doc, text, bold=True, size=14, color=BLUE, space_after=8)
+    add_bookmark(p, bookmark)
+    return p
+
+
+def add_glossary_table(doc, terms):
+    """terms: list of (term, definition) tuples, already alphabetised."""
+    table = doc.add_table(rows=1 + len(terms), cols=2)
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _set_table_borders(table)
+    table.columns[0].width = Cm(4.5)
+    hdr = table.rows[0].cells
+    hdr[0].text = "Terme"
+    hdr[1].text = "Définition"
+    for cell in hdr:
+        for p_ in cell.paragraphs:
+            for r in p_.runs:
+                r.bold = True
+    for i, (term, defn) in enumerate(terms, start=1):
+        row = table.rows[i].cells
+        row[0].text = term
+        for p_ in row[0].paragraphs:
+            for r in p_.runs:
+                r.bold = True
+        row[1].text = defn
+    blank(doc)
+
+
+def add_autoeval_table(doc, rows):
+    """rows: list of (unit_label, competence_text) tuples."""
+    table = doc.add_table(rows=1 + len(rows), cols=4)
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _set_table_borders(table)
+    hdr = table.rows[0].cells
+    hdr[0].text = "Compétence"
+    hdr[1].text = "Acquis"
+    hdr[2].text = "En cours"
+    hdr[3].text = "À revoir"
+    for cell in hdr:
+        for p_ in cell.paragraphs:
+            for r in p_.runs:
+                r.bold = True
+    for i, (unit_label, competence) in enumerate(rows, start=1):
+        row = table.rows[i].cells
+        row[0].text = f"{unit_label} — {competence}"
+        row[1].text = "☐"
+        row[2].text = "☐"
+        row[3].text = "☐"
+        for c in row[1:]:
+            for p_ in c.paragraphs:
+                p_.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    blank(doc)
+
+
+def add_index(doc, index_rows, max_seances=6):
+    """index_rows: list of (term, [seance_nums]) tuples, already alphabetised."""
+    for term, nums in index_rows:
+        shown = nums[:max_seances]
+        suffix = ", ".join(f"Séance {n}" for n in shown)
+        if len(nums) > max_seances:
+            suffix += ", …"
+        mixed_para(doc, [(term, True, BLACK), (f" : {suffix}", False, BLACK)], space_after=3)
+    blank(doc)
+
+
+def add_exam_links(doc, exam_seances, intro_text):
+    """exam_seances: list of (unit_roman, num, title) tuples."""
+    para(doc, intro_text, space_after=8)
+    for roman, num, title in exam_seances:
+        label = f"UNITÉ {roman} — {title}"
+        add_internal_hyperlink(doc, f"seance_{num}", label, size=BASE_SIZE, space_after=4)
+    blank(doc)
+
+
+def add_illustrations_table(doc, captions):
+    """captions: list of (seance_num, caption) tuples, in document order."""
+    for i, (num, caption) in enumerate(captions, start=1):
+        para(doc, f"Figure {i} — {caption}", space_after=3, size=11)
+    blank(doc)

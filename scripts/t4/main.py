@@ -102,6 +102,93 @@ def build_seance(doc, s, content):
     B.page_break(doc)
 
 
+def _flatten_text(val):
+    if isinstance(val, str):
+        return val
+    if isinstance(val, (list, tuple)):
+        parts = []
+        for x in val:
+            if isinstance(x, (list, tuple)) and len(x) == 2 and isinstance(x[1], bool):
+                parts.append(str(x[0]))
+            else:
+                parts.append(_flatten_text(x))
+        return "".join(parts)
+    return str(val)
+
+
+def _all_unit_modules():
+    return [U1, U2, U3, U4, U5, U6, U7, U8, U9]
+
+
+def build_annexes(doc):
+    import content_annexes as A
+
+    # --- Compute, per global seance number, the full taught text (title +
+    # lecon + deroulement), used to build the INDEX accurately. ---
+    seance_text = {}
+    captions = []  # (seance_num, caption) in document order, for Table des illustrations
+    gi = 0
+    for mod in _all_unit_modules():
+        seances = [v for k, v in vars(mod).items() if isinstance(v, dict) and "num" in v]
+        seances.sort(key=lambda d: d.get("num", 0))
+        for s in seances:
+            g = ALL_SEANCES[gi]["num"]
+            txt = [s.get("title", "")]
+            if s.get("cover_image"):
+                captions.append((g, s["cover_image"][1]))
+            for item in s.get("lecon", []):
+                if isinstance(item, tuple) and len(item) == 2:
+                    txt.append(_flatten_text(item[1]))
+                    if item[0] == "image":
+                        captions.append((g, item[1][1]))
+            for row in s.get("deroulement", []):
+                for cell in row:
+                    txt.append(_flatten_text(cell))
+            seance_text[g] = " ".join(txt).lower()
+            gi += 1
+
+    index_rows = []
+    for term, key, _defn in A.GLOSSARY:
+        nums = [n for n in sorted(seance_text) if key.lower() in seance_text[n]]
+        index_rows.append((term, nums))
+    index_rows.sort(key=lambda r: r[0].lower())
+
+    glossary_sorted = sorted([(t, d) for t, _k, d in A.GLOSSARY], key=lambda r: r[0].lower())
+
+    exam_seances = [(s["unit_roman"], s["num"], s["title"]) for s in ALL_SEANCES if s["kind"] == "exam"]
+
+    B.page_break(doc)
+    B.add_annexes_heading(doc)
+    B.add_image(doc, os.path.join(HERE, "generated_images", "annexe_bilan.jpg"),
+                "Figure A1 — Schéma-bilan : les neuf thématiques de Sciences et Technologie T4.",
+                width_cm=13.5)
+    B.page_break(doc)
+
+    B.add_annexe_subheading(doc, "GLOSSAIRE", "glossaire")
+    B.add_glossary_table(doc, glossary_sorted)
+    B.page_break(doc)
+
+    B.add_annexe_subheading(doc, "AUTO-ÉVALUATION", "autoeval")
+    B.para(doc, "Coche la case qui correspond à ton niveau après chaque unité.", space_after=8)
+    B.add_autoeval_table(doc, A.AUTOEVAL)
+    B.page_break(doc)
+
+    B.add_annexe_subheading(doc, "INDEX", "index_annexe")
+    B.add_index(doc, index_rows)
+    B.page_break(doc)
+
+    B.add_annexe_subheading(doc, "ÉVALUATIONS FORMAT EXAMEN", "evalexamen")
+    B.add_exam_links(
+        doc, exam_seances,
+        "Les sujets d'examen ST T4 de chaque unité sont regroupés ci-dessous pour préparer les "
+        "évaluations.",
+    )
+    B.page_break(doc)
+
+    B.add_annexe_subheading(doc, "TABLE DES ILLUSTRATIONS", "illus")
+    B.add_illustrations_table(doc, captions)
+
+
 def main():
     doc = docx.Document()
     from docx.shared import Inches
@@ -240,6 +327,9 @@ def main():
     contents = [U9.S1, U9.S2, U9.S3, U9.S4, U9.S5, U9.S6]
     for s, content in zip(unit_seances, contents):
         build_seance(doc, s, content)
+
+    # ---- ANNEXES ----
+    build_annexes(doc)
 
     doc.save(OUT)
     print("Saved:", OUT)
