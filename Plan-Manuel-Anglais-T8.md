@@ -83,4 +83,8 @@ youtube seulement Annex 2 ; « I copy the lesson » = 0 ; git checkout package*.
 ### Bloc 7 ✔ — UNIT 7 MY CITY MY COUNTRY (S67-S78), COLOR D35400 — 78/78 SESSIONS !
 - unit7.js : 10 fiches+leçons (S67 buildings city/country, S68 listening city passage, S69 prepositions of place, S70 relative where, S71 directions+signs+listening, S72 map game+dice+dialogues, S73 city/country Anglophone/Malagasy, S74 reading crossword+text City and Country, S75 writing drawing+describe, S76 writing paragraph 6-8 sentences), bigLesson 5 sections, exercises /20, rév S77, test S78, iCan final → annexes.
 - Audio Drive : t8_u7_city `1FTl7mLi_0HOEZKXdZuBJQ86eeQUFXZIA` ; t8_u7_directions `1fBB7BPOsu2fFrIZj26bUjmpxRBVhLSSu`. Images : u7_city (1376×768), u7_map (1408×768). QR ×2.
-- RESTE : Bloc 8 = 6 annexes (modèle manuel-t7/annexes.js) : 1 conjugaison complète, 2 chansons trad + YouTube, 3 flashcards, 4 Phonetics IPA+figurée, 5 vocabulaire récap, 6 certificat. + TOC annexes.
+
+### Bloc 8 ✔ — ANNEXES (COLOR 4A235A) — MANUEL COMPLET !
+- annexes.js (modèle manuel-t7) : Annex 1 Picture dictionary (7 unités, 10 images, wordGrids + phrases clés), Annex 2 Songs and chants (3 chants T8 verbatim audio + QR Drive + 3 chansons trad avec liens YouTube), Annex 3 Pronunciation guide (12 sons, 3 règles d'or), Annex 4 Flashcards DASHED (feelings, chores+adverbes, food+cooking verbs, illnesses+cures, media+acronymes, buildings+directions+prépositions), Annex 5 Conjugation guide (be/have got/do, 2 présents, simple past + 24 irréguliers, be going to vs will, can/may/could/should/impératif, if clause type 1, passive, comparatifs, where, go+V-ing), Annex 6 Phonetics IPA+figurée (voyelles, doubles voyelles, consonnes, stress mark) + page finale Koto & Soa + lien dossier Drive.
+- Audio Drive : t8_annex_chants `1G1RMaQNh8ueLw8mlNu1vAhUWQ3z43VMS`. QR ×1.
+- Build final : 78 sessions continues, 92/92 bookmarks, 6 annexes, 41 liens Drive, 3 liens YouTube, 0 github, 34,8 Mo. ✅ MANUEL T8 TERMINÉ.

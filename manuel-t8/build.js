@@ -11,6 +11,7 @@ const unit4 = require("./unit4");
 const unit5 = require("./unit5");
 const unit6 = require("./unit6");
 const unit7 = require("./unit7");
+const annexes = require("./annexes");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -166,8 +167,14 @@ function contents() {
     tocLink("s76", "    Session 76 — Writing (2): the paragraph"),
     tocLink("s77", "    Session 77 — Revision"),
     tocLink("s78", "    Session 78 — Test paper"),
-    p("", { after: 60 }),
-    p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    p("", { after: 40 }),
+    tocLink("annexes", "ANNEXES — THE TREASURE BOX OF THE YEAR", { bold: true, size: 26 }),
+    tocLink("ann1", "    Annex 1 — Picture dictionary"),
+    tocLink("ann2", "    Annex 2 — Songs and chants"),
+    tocLink("ann3", "    Annex 3 — Pronunciation guide"),
+    tocLink("ann4", "    Annex 4 — Flashcards to cut out"),
+    tocLink("ann5", "    Annex 5 — Conjugation guide"),
+    tocLink("ann6", "    Annex 6 — Phonetics guide (IPA)"),
   ];
 }
 
@@ -222,7 +229,8 @@ async function main() {
         ...unit4(), pageBreak(),
         ...unit5(), pageBreak(),
         ...unit6(), pageBreak(),
-        ...unit7(),
+        ...unit7(), pageBreak(),
+        ...annexes(),
       ],
     }],
   });
