@@ -75,3 +75,7 @@ youtube seulement Annex 2 ; « I copy the lesson » = 0 ; git checkout package*.
 ### Bloc 5 ✔ — UNIT 5 PREVENTIVE HEALTH (S46-S54), COLOR 148F77
 - unit5.js : 7 fiches+leçons (S46 illnesses+asking/stating health+wishes, S47 listening doctor+have got, S48 cures+should, S49 hygiene+if clause type 1, S50 hygiene posters+advice conversations, S51 reading Clean Hands recitation, S52 writing 7 sentences anti-germs→text), bigLesson 6 sections, exercises /20, rév S53, test S54, iCan → UNIT 6 MEANS OF COMMUNICATION.
 - Audio Drive : t8_u5_doctor `1MS58vjwIC8pcx2gs2Vv5OoDrCSkTy0jy` ; t8_u5_hygiene `1hkJ8stehaGywBy31dwkNDZv9vfPYaNmz`. Images : u5_doctor, u5_hygiene (1376×768). QR ×2.
+
+### Bloc 6 ✔ — UNIT 6 MEANS OF COMMUNICATION (S55-S66), COLOR 2E7D32
+- unit6.js : 10 fiches+leçons (S55 means+asking/telling news+fake news, S56 listening radio news, S57 simple past journalists, S58 passive voice, S59 social media+acronyms, S60 listening phone call, S61 text→call conversion, S62 reading newspaper, S63 letter/email formats, S64 writing narrate event), bigLesson 6 sections, exercises /20, rév S65, test S66, iCan → UNIT 7 MY CITY MY COUNTRY.
+- Audio Drive : t8_u6_radio `1VqzZdDs7oLWVs1TX0p9Uv-5X1Fy0SC0M` ; t8_u6_phone `1GOILpKLd4lKZtlFnzpem4GJjjyky7SZK`. Images : u6_media, u6_phone (1376×768). QR ×2.

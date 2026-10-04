@@ -9,6 +9,7 @@ const unit2 = require("./unit2");
 const unit3 = require("./unit3");
 const unit4 = require("./unit4");
 const unit5 = require("./unit5");
+const unit6 = require("./unit6");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -136,6 +137,20 @@ function contents() {
     tocLink("s52", "    Session 52 — Writing: my plan against the germs"),
     tocLink("s53", "    Session 53 — Revision"),
     tocLink("s54", "    Session 54 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit6", "UNIT 6 — MEANS OF COMMUNICATION (Sessions 55–66)", { bold: true, size: 26 }),
+    tocLink("s55", "    Session 55 — The means of sharing the news"),
+    tocLink("s56", "    Session 56 — Listening: the radio news"),
+    tocLink("s57", "    Session 57 — The simple past of the journalists"),
+    tocLink("s58", "    Session 58 — The passive voice"),
+    tocLink("s59", "    Session 59 — Social media and the message acronyms"),
+    tocLink("s60", "    Session 60 — Listening: the phone call"),
+    tocLink("s61", "    Session 61 — From the text message to the phone call"),
+    tocLink("s62", "    Session 62 — Reading: the newspaper"),
+    tocLink("s63", "    Session 63 — The informal letter and the email"),
+    tocLink("s64", "    Session 64 — Writing: narrating an event"),
+    tocLink("s65", "    Session 65 — Revision"),
+    tocLink("s66", "    Session 66 — Test paper"),
     p("", { after: 60 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
@@ -190,7 +205,8 @@ async function main() {
         ...unit2(), pageBreak(),
         ...unit3(), pageBreak(),
         ...unit4(), pageBreak(),
-        ...unit5(),
+        ...unit5(), pageBreak(),
+        ...unit6(),
       ],
     }],
   });
