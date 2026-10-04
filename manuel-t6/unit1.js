@@ -17,6 +17,10 @@ const META = (title, slo, session, materials) => ({
   values: "self-confidence, mutual respect", session, materials,
 });
 
+const bullet = (runs, o = {}) => pr(
+  [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
+  { after: o.after != null ? o.after : 50 });
+
 // ---------- boîtes locales ----------
 function dialogue1Box() {
   const L = (t) => p([run(t, { italic: true, size: SZ.BODY })], { after: 30 });
@@ -792,26 +796,39 @@ function dayLesson(sessionNo, title, children) {
 }
 function lessonS1() {
   return dayLesson(1, "SOCIALISING", [
-    img("u1_socialising.png", 380, 768 / 1408),
-    pr([run("To greet: ", { bold: true }), ...kw("Hello!", "hèlôou"), run("  "), ...kw("Hi!", "haï"), run("  "), ...kw("How are you?", "haou âr iou"), run("  →  "), ...kw("Fine, thanks!", "faïne, tenks")]),
-    pr([run("To welcome: ", { bold: true }), ...kw("Nice to meet you!", "naïss tou mite iou"), run("  →  "), ...kw("Nice to meet you too!", "naïss tou mite iou tou")]),
-    pr([run("To introduce: ", { bold: true }), ...kw("May I introduce you to my friend?", "méi aï inntrodiouss iou tou maï frènde"), run("  "), ...kw("This is Sara.", "zis iz sara")]),
-    pr([run("To take leave: ", { bold: true }), ...kw("I have to go now.", "aï hav tou gôou naou"), run("  "), ...kw("Bye! / Goodbye! / See you!", "baï / goudbaï / si iou")]),
+    img("u1_socialising.png", 360, 768 / 1408),
+    pr([run("To greet:", { bold: true })], { after: 30 }),
+    bullet([...kw("Hello!", "hèlôou"), run("   "), ...kw("Hi!", "haï"), run("   "), ...kw("Good morning!", "goud môrninng")]),
+    bullet([...kw("How are you?", "haou âr iou"), run("  →  "), ...kw("Fine, thanks! And you?", "faïne, tenks! annde iou")]),
+    pr([run("To welcome:", { bold: true })], { after: 30 }),
+    bullet([...kw("Welcome!", "ouèlkeume"), run("   "), ...kw("Nice to meet you!", "naïss tou mite iou"), run("  →  "), ...kw("Nice to meet you too!", "naïss tou mite iou tou")]),
+    pr([run("To introduce:", { bold: true })], { after: 30 }),
+    bullet([...kw("May I introduce you to my friend?", "méi aï inntrodiouss iou tou maï frènde")]),
+    bullet([...kw("This is Sara.", "zis iz sara"), run("  →  "), ...kw("Hello, Sara!", "hèlôou sara")]),
+    pr([run("To take leave:", { bold: true })], { after: 30 }),
+    bullet([...kw("I have to go now.", "aï hav tou gôou naou")]),
+    bullet([...kw("Bye! / Goodbye! / See you!", "baï / goudbaï / si iou")], { after: 70 }),
+    pr([run("Mini-dialogue: ", { bold: true }), run("— Hello! How are you? — Fine, thanks! And you? — Fine too. This is Sara. — Nice to meet you, Sara! — Nice to meet you too! — I have to go now, bye! — See you!", { italic: true })]),
   ]);
 }
 function lessonS2() {
   return dayLesson(2, "PERSONAL INFORMATION — THE VERB TO BE", [
-    pr([...kw("What’s your name?", "ouots iôr néime"), run("  →  "), ...kw("My name is Lisa.", "maï néime iz lisa")]),
-    pr([...kw("How old are you?", "haou ôould âr iou"), run("  →  "), ...kw("I’m 14 years old.", "aïm fôrtine yirz ôould")]),
-    pr([...kw("Where are you from?", "ouèr âr iou frome"), run("  →  "), ...kw("I’m from Canada.", "aïm frome kanada")]),
-    pr([...kw("Where do you live?", "ouèr dou iou live"), run("  →  "), ...kw("I live in Toronto.", "aï live ine toronnto")], { after: 80 }),
+    pr([run("The four big questions:", { bold: true })], { after: 30 }),
+    bullet([...kw("What’s your name?", "ouots iôr néime"), run("  →  "), ...kw("My name is Lisa.", "maï néime iz lisa")]),
+    bullet([...kw("How old are you?", "haou ôould âr iou"), run("  →  "), ...kw("I’m 14 years old.", "aïm fôrtine yirz ôould")]),
+    bullet([...kw("Where are you from?", "ouèr âr iou frome"), run("  →  "), ...kw("I’m from Canada.", "aïm frome kanada")]),
+    bullet([...kw("Where do you live?", "ouèr dou iou live"), run("  →  "), ...kw("I live in Toronto.", "aï live ine toronnto")], { after: 80 }),
     grammarTable("TO BE", [
       ["I", "I am (I’m)", "I am not (I’m not)", "Am I…?"],
       ["you / we / they", "you are (you’re)", "you aren’t", "Are you…?"],
       ["he / she / it", "he is (he’s)", "he isn’t", "Is he…?"],
     ]),
-    pr([run("Short answers: ", { bold: true }), ...kw("Yes, I am.", "yèss aï am"), run("  "), ...kw("No, he isn’t.", "nôou hi izeunte")], { after: 60 }),
-    pr([run("The prepositions: ", { bold: true }), run("in", { bold: true, color: C.BLUE }), run(" + town (in Toronto) — "), run("at", { bold: true, color: C.BLUE }), run(" + place (at school, at home).")]),
+    pr([run("More examples:", { bold: true })], { after: 30 }),
+    bullet([run("We are pupils. They are from Mahajanga. She is my friend.", { bold: true, color: C.BLUE })]),
+    bullet([run("Short answers: ", { bold: true }), ...kw("Yes, I am.", "yèss aï am"), run("   "), ...kw("No, he isn’t.", "nôou hi izeunte")], { after: 60 }),
+    pr([run("The prepositions:", { bold: true })], { after: 30 }),
+    bullet([run("in", { bold: true, color: C.BLUE }), run(" + town: I live "), run("in", { bold: true, color: C.BLUE }), run(" Toronto. I live "), run("in", { bold: true, color: C.BLUE }), run(" Antsirabe.")]),
+    bullet([run("at", { bold: true, color: C.BLUE }), run(" + place: I am "), run("at", { bold: true, color: C.BLUE }), run(" school. She is "), run("at", { bold: true, color: C.BLUE }), run(" home.")]),
   ]);
 }
 function lessonS3() {
@@ -820,8 +837,13 @@ function lessonS3() {
       ["I / you / we / they", "I have", "I don’t have", "Do you have…?"],
       ["he / she / it", "he has", "he doesn’t have", "Does he have…?"],
     ]),
-    pr([run("Short answers: ", { bold: true }), ...kw("Yes, I do.", "yèss aï dou"), run("  "), ...kw("No, I don’t.", "nôou aï dôounte")], { after: 60 }),
-    pr([run("To introduce a friend: ", { bold: true }), ...kw("This is my friend Leo.", "zis iz maï frènde léo"), run("  "), ...kw("He is 14. He has a bike.", "hi iz fôrtine. hi haz e baïk")], { after: 80 }),
+    pr([run("More examples:", { bold: true })], { after: 30 }),
+    bullet([run("I have two brothers. She has a new school bag. We have English on Monday.", { bold: true, color: C.BLUE })]),
+    bullet([run("He doesn’t have a bike. Do they have a dog? — Yes, they do!", { bold: true, color: C.BLUE })]),
+    bullet([run("Short answers: ", { bold: true }), ...kw("Yes, I do.", "yèss aï dou"), run("   "), ...kw("No, I don’t.", "nôou aï dôounte")], { after: 60 }),
+    pr([run("To introduce a friend:", { bold: true })], { after: 30 }),
+    bullet([...kw("This is my friend Leo.", "zis iz maï frènde léo")]),
+    bullet([...kw("He is 14. He has a bike.", "hi iz fôrtine. hi haz e baïk")], { after: 80 }),
     dialogue2Box(),
   ]);
 }
@@ -829,16 +851,24 @@ function lessonS4() {
   return dayLesson(4, "THE ENGLISH ALPHABET", [
     img("u1_alphabet.png", 380, 768 / 1408),
     pr([run("The 26 letters: "), run("A B C D E F G H I J K L M N O P Q R S T U V W X Y Z", { bold: true, color: C.BLUE, size: 30 })], { after: 40 }),
-    pr([run("Careful! ", { bold: true, color: C.RED }), run("A", { bold: true, color: C.BLUE }), run(" [éi] — "), run("E", { bold: true, color: C.BLUE }), run(" [i] — "), run("I", { bold: true, color: C.BLUE }), run(" [aï] — "), run("G", { bold: true, color: C.BLUE }), run(" [dji] — "), run("J", { bold: true, color: C.BLUE }), run(" [djéi] — "), run("W", { bold: true, color: C.BLUE }), run(" [deubeuliou]")], { after: 80 }),
+    pr([run("Careful! The tricky letters:", { bold: true, color: C.RED })], { after: 30 }),
+    bullet([run("A", { bold: true, color: C.BLUE }), run(" [éi]  —  "), run("E", { bold: true, color: C.BLUE }), run(" [i]  —  "), run("I", { bold: true, color: C.BLUE }), run(" [aï]  —  the three twins that trick everybody!")]),
+    bullet([run("G", { bold: true, color: C.BLUE }), run(" [dji]  —  "), run("J", { bold: true, color: C.BLUE }), run(" [djéi]  —  G says “i”, J says “éi”!")]),
+    bullet([run("W", { bold: true, color: C.BLUE }), run(" [deubeuliou]  —  "), run("Y", { bold: true, color: C.BLUE }), run(" [ouaï]  —  "), run("H", { bold: true, color: C.BLUE }), run(" [éitch]")], { after: 60 }),
+    bullet([run("The five vowels: ", { bold: true }), run("A — E — I — O — U", { bold: true, color: C.BLUE }), run("  (all the other letters are consonants).")], { after: 80 }),
     audioBox([{ qr: "qr_t6_u1_alphabet.png", label: "The alphabet song — listen and sing", url: AUDIO.alphabet }], COLOR),
   ]);
 }
 function lessonS5() {
   return dayLesson(5, "HOW DO YOU SPELL…?", [
-    pr([...kw("How do you spell “book”?", "haou dou iou spèl bouk"), run("  →  "), ...kw("It’s B-O-O-K.", "its bi-ôou-ôou-kéi")]),
-    pr([...kw("How do you spell your name?", "haou dou iou spèl iôr néime"), run("  →  "), ...kw("K-O-T-O.", "kéi-ôou-ti-ôou")], { after: 60 }),
-    pr([run("The tip: ", { bold: true }), run("for two same letters we can say "), run("double", { bold: true, color: C.BLUE }), run(": B-double O-K!")]),
-    pr([run("We spell slowly, letter by letter — and we check with the class.", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The question and the answer:", { bold: true })], { after: 30 }),
+    bullet([...kw("How do you spell “book”?", "haou dou iou spèl bouk"), run("  →  "), ...kw("It’s B-O-O-K.", "its bi-ôou-ôou-kéi")]),
+    bullet([...kw("How do you spell your name?", "haou dou iou spèl iôr néime"), run("  →  "), ...kw("K-O-T-O.", "kéi-ôou-ti-ôou")]),
+    bullet([...kw("Can you repeat, please?", "kane iou ripite pliiz"), run("  →  we spell again, slowly!")], { after: 60 }),
+    pr([run("The tips of the good speller:", { bold: true })], { after: 30 }),
+    bullet([run("For two same letters we can say "), run("double", { bold: true, color: C.BLUE }), run(": B-double O-K!")]),
+    bullet([run("Careful with the twins: "), run("A [éi] / E [i] / I [aï]", { bold: true, color: C.BLUE }), run(" and "), run("G [dji] / J [djéi]", { bold: true, color: C.BLUE }), run("!")]),
+    bullet([run("We spell slowly, letter by letter — and we check with the class.", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS6() {
@@ -846,32 +876,61 @@ function lessonS6() {
     img("u1_numbers.png", 380, 768 / 1408),
     rhymeBox(),
     p("", { after: 60 }),
-    pr([run("a", { bold: true, color: C.BLUE }), run(" + consonant sound: a book — "), run("an", { bold: true, color: C.BLUE }), run(" + vowel sound: an eraser.")]),
-    pr([run("There is", { bold: true, color: C.BLUE }), run(" + singular: There is a bag. — "), run("There are", { bold: true, color: C.BLUE }), run(" + plural: There are three pens.")]),
-    pr([...kw("How many books do you have?", "haou mèni bouks dou iou hav"), run("  →  "), ...kw("I have five books.", "aï hav faïv bouks")], { after: 80 }),
+    pr([run("The little words a / an:", { bold: true })], { after: 30 }),
+    bullet([run("a", { bold: true, color: C.BLUE }), run(" + consonant sound: a book, a pen, a bag.")]),
+    bullet([run("an", { bold: true, color: C.BLUE }), run(" + vowel sound: an eraser, an orange, an apple.")], { after: 60 }),
+    pr([run("There is / There are:", { bold: true })], { after: 30 }),
+    bullet([run("There is", { bold: true, color: C.BLUE }), run(" + singular: There is a bag on the desk.")]),
+    bullet([run("There are", { bold: true, color: C.BLUE }), run(" + plural: There are three pens and twenty-five pupils.")], { after: 60 }),
+    pr([run("The question:", { bold: true })], { after: 30 }),
+    bullet([...kw("How many books do you have?", "haou mèni bouks dou iou hav"), run("  →  "), ...kw("I have five books.", "aï hav faïv bouks")]),
+    bullet([run("The big numbers: "), run("21 twenty-one — 45 forty-five — 78 seventy-eight — 100 one hundred", { bold: true, color: C.BLUE })], { after: 80 }),
     audioBox([{ qr: "qr_t6_u1_numbers.png", label: "The number rhyme and big numbers — listen and say", url: AUDIO.numbers }], COLOR),
   ]);
 }
 function lessonS7() {
   return dayLesson(7, "PHONE NUMBERS — SORRY AND THANK YOU", [
-    pr([...kw("Can I have your phone number?", "kane aï hav iôr fôoune neumbeur"), run("  →  "), ...kw("It’s 034 12 345 67.", "its zirô-tsri-fôr…")]),
-    pr([run("We say the number digit by digit: ", { italic: true, color: C.GRAY, size: 24 }), run("zero — three — four — one — two…", { italic: true, color: C.GRAY, size: 24 })], { after: 60 }),
-    pr([run("The polite pairs: ", { bold: true }), ...kw("I’m sorry!", "aïm sori"), run(" → "), ...kw("That’s okay.", "zats ôou-kéi")]),
-    pr([...kw("Thank you!", "tenk iou"), run(" → "), ...kw("You’re welcome.", "iôr ouèlkeum")]),
+    pr([run("The phone number:", { bold: true })], { after: 30 }),
+    bullet([...kw("Can I have your phone number?", "kane aï hav iôr fôoune neumbeur"), run("  →  "), ...kw("It’s 034 12 345 67.", "its zirô-tsri-fôr…")]),
+    bullet([run("We say the number digit by digit: ", { italic: true, color: C.GRAY, size: 24 }), run("zero — three — four — one — two…", { italic: true, color: C.GRAY, size: 24 })], { after: 60 }),
+    pr([run("The polite pairs — one call, one answer:", { bold: true })], { after: 30 }),
+    bullet([...kw("I’m sorry!", "aïm sori"), run("  →  "), ...kw("That’s okay.", "zats ôou-kéi")]),
+    bullet([...kw("Thank you! / Thanks a lot!", "tenk iou / tenks e lote"), run("  →  "), ...kw("You’re welcome.", "iôr ouèlkeum")]),
+    bullet([...kw("Excuse me…", "ikskiouz mi"), run("  →  "), ...kw("Yes? Can I help you?", "yèss? kane aï hèlp iou")], { after: 70 }),
+    pr([run("Mini-dialogue: ", { bold: true }), run("— Excuse me… Can I have your phone number? — Yes! It’s 034 12 345 67. — Thank you! — You’re welcome!", { italic: true })]),
   ]);
 }
 function lessonS8() {
   return dayLesson(8, "READING DAY: “NEW FRIENDS AT SCHOOL”", [
-    pr([run("The key words of the text: ", { bold: true }), ...kw("a student", "e stioudennte"), run("  "), ...kw("a desk", "e dèsk"), run("  "), ...kw("a notebook", "e nôoutbouk"), run("  "), ...kw("only", "ôounli")], { after: 60 }),
-    pr([run("How to read well: ", { bold: true }), run("1. Read the title first. 2. Find the names and the numbers. 3. The voice goes UP for the questions (?) and DOWN at the period (.).")]),
-    pr([run("The text uses everything of Unit 1: greetings, to be, to have, numbers, sorry and thank you!", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The key words of the text:", { bold: true })], { after: 30 }),
+    bullet([...kw("a student", "e stioudennte"), run("  —  a pupil of a school")]),
+    bullet([...kw("a desk", "e dèsk"), run("  —  the table of the classroom")]),
+    bullet([...kw("a notebook", "e nôoutbouk"), run("  —  we write our lessons in it")]),
+    bullet([...kw("only", "ôounli"), run("  —  not more: I have only one pen!")], { after: 60 }),
+    pr([run("How to read well:", { bold: true })], { after: 30 }),
+    bullet([run("Read the title first — it tells the story.")]),
+    bullet([run("Find the names and the numbers — they are the keys.")]),
+    bullet([run("The voice goes UP for the questions (?) and DOWN at the period (.).")], { after: 60 }),
+    bullet([run("The text uses everything of Unit 1: greetings, to be, to have, numbers, sorry and thank you!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS9() {
   return dayLesson(9, "WRITING DAY: MY FIRST ENGLISH DIALOGUE", [
-    pr([run("The plan of a good dialogue: ", { bold: true }), run("1. greet — 2. ask and give personal information — 3. one polite pair (sorry/thank you) — 4. take leave.")], { after: 60 }),
-    pr([run("The writing rules: ", { bold: true }), run("a CAPITAL letter at the start, a "), run("?", { bold: true, color: C.BLUE }), run(" for the questions, a "), run("!", { bold: true, color: C.BLUE }), run(" for the feelings, one line per speaker.")]),
-    pr([run("Model: ", { bold: true }), run("— Hello! What’s your name? — My name is Hery. — How old are you? — I’m 12. — Goodbye! ", { italic: true })]),
+    pr([run("The plan of a good dialogue:", { bold: true })], { after: 30 }),
+    bullet([run("1. Greet: Hello! How are you?")]),
+    bullet([run("2. Ask and give personal information: name, age, hometown.")]),
+    bullet([run("3. One polite pair: sorry / thank you.")]),
+    bullet([run("4. Take leave: Goodbye! See you!")], { after: 60 }),
+    pr([run("The writing rules:", { bold: true })], { after: 30 }),
+    bullet([run("A CAPITAL letter at the start of every sentence.")]),
+    bullet([run("A "), run("?", { bold: true, color: C.BLUE }), run(" for the questions, a "), run("!", { bold: true, color: C.BLUE }), run(" for the feelings.")]),
+    bullet([run("One line per speaker, with a dash (—).")], { after: 60 }),
+    pr([run("Model:", { bold: true })], { after: 30 }),
+    pr([run("— Hello! What’s your name?", { italic: true })], { after: 20 }),
+    pr([run("— My name is Hery. How old are you?", { italic: true })], { after: 20 }),
+    pr([run("— I’m 12. I live in Antsirabe. And you?", { italic: true })], { after: 20 }),
+    pr([run("— I’m 13, I’m from Toliara. Nice to meet you!", { italic: true })], { after: 20 }),
+    pr([run("— Nice to meet you too! Goodbye!", { italic: true })]),
   ]);
 }
 

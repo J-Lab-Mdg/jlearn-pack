@@ -14,6 +14,10 @@ const META = (title, slo, session, materials) => ({
   values: "solidarity, mutual respect", session, materials,
 });
 
+const bullet = (runs, o = {}) => pr(
+  [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
+  { after: o.after != null ? o.after : 50 });
+
 const CLARIF = [
   ["Do you understand?", "dou iou eundeurstande"],
   ["Excuse me, what is the English for …?", "èkskiouz mi, ouate iz zi inglich fôr"],
@@ -344,26 +348,46 @@ function dayLesson(sessionNo, title, children) {
 }
 function lessonS12() {
   return dayLesson(12, "ASKING FOR CLARIFICATION", [
-    img("u2_clarify.png", 380, 768 / 1408),
+    img("u2_clarify.png", 360, 768 / 1408),
     clarifGrid(),
     p("", { after: 60 }),
-    pr([run("When I don’t understand, I ask — always with ", { bold: true }), run("please", { bold: true, color: C.BLUE }), run("!", { bold: true })]),
+    pr([run("The three situations:", { bold: true })], { after: 30 }),
+    bullet([run("I don’t know the word  →  "), run("Excuse me, what is the English for “sotro”?", { bold: true, color: C.BLUE })]),
+    bullet([run("I don’t know the meaning  →  "), run("What does “window” mean, please?", { bold: true, color: C.BLUE })]),
+    bullet([run("I didn’t hear well  →  "), run("Can you repeat, please? / Could you repeat, please?", { bold: true, color: C.BLUE })], { after: 60 }),
+    bullet([run("When I don’t understand, I ask — always with ", { bold: true }), run("please", { bold: true, color: C.BLUE }), run("!", { bold: true })]),
+    bullet([run("“Could you…?” is softer and more polite than “Can you…?”.", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS13() {
   return dayLesson(13, "ASKING FOR PERMISSION — CAN AND MAY", [
-    img("u2_permission.png", 380, 768 / 1408),
-    pr([...kw("May I come in, please?", "méi aï keume ine plize"), run("  →  "), ...kw("Yes, you may. Go ahead.", "yèss iou méi. gôou euhèd")]),
-    pr([...kw("Can I open the window, please?", "kane aï ôoupeune ze ouinndôou plize"), run("  →  "), ...kw("No, sorry, you can’t.", "nôou, sori, iou kannte")], { after: 60 }),
-    pr([run("The rule: ", { bold: true }), run("can / may + verb without “to”", { bold: true, color: C.BLUE }), run("  →  May I go out? (never “May I to go out”)!")]),
-    pr([run("“May” is more polite than “can” — perfect for the teacher!", { italic: true, color: C.GRAY, size: 24 })]),
+    img("u2_permission.png", 360, 768 / 1408),
+    pr([run("To ask for permission:", { bold: true })], { after: 30 }),
+    bullet([...kw("May I come in, please?", "méi aï keume ine plize"), run("  →  "), ...kw("Yes, you may. Go ahead.", "yèss iou méi. gôou euhèd")]),
+    bullet([...kw("Can I open the window, please?", "kane aï ôoupeune ze ouinndôou plize"), run("  →  "), ...kw("No, sorry, you can’t.", "nôou, sori, iou kannte")]),
+    bullet([...kw("May I go out, please?", "méi aï gôou aoute plize"), run("  →  "), ...kw("Yes, of course.", "yèss, ov kôrss")], { after: 60 }),
+    pr([run("The rules:", { bold: true })], { after: 30 }),
+    bullet([run("can / may + verb without “to”", { bold: true, color: C.BLUE }), run("  →  May I go out? (never “May I to go out”)!")]),
+    bullet([run("“May” is more polite than “can” — perfect for the teacher!", { italic: true, color: C.GRAY, size: 24 })]),
+    bullet([run("The polite answers: "), run("Yes, you may. / Yes, of course. / Go ahead. / No, sorry.", { bold: true, color: C.BLUE })]),
   ]);
 }
 function lessonS14() {
   return dayLesson(14, "THE CLASSROOM DIALOGUE", [
-    pr([run("The imperative — to give an order: the verb alone! ", { bold: true }), ...kw("Be quick!", "bi kouik"), run("  "), ...kw("One by one, please!", "ouane baï ouane, plize"), run("  "), ...kw("Go ahead!", "gôou euhèd")], { after: 60 }),
-    pr([run("The plan of a classroom dialogue: ", { bold: true }), run("1. greet the teacher — 2. one clarification question — 3. one permission question — 4. thank and close.")]),
-    pr([run("Model: ", { bold: true }), run("— Excuse me, what does “window” mean, please? — It is this! — May I open the window, please? — Yes, go ahead. — Thank you!", { italic: true })]),
+    pr([run("The imperative — to give an order: the verb alone!", { bold: true })], { after: 30 }),
+    bullet([...kw("Be quick!", "bi kouik"), run("   "), ...kw("One by one, please!", "ouane baï ouane, plize")]),
+    bullet([...kw("Go ahead!", "gôou euhèd"), run("   "), ...kw("Listen carefully!", "lisseune kèrfouli")]),
+    bullet([run("Negative: "), run("Don’t", { bold: true, color: C.BLUE }), run(" + verb: Don’t talk! Don’t run in the classroom!")], { after: 60 }),
+    pr([run("The plan of a classroom dialogue:", { bold: true })], { after: 30 }),
+    bullet([run("1. Greet the teacher.")]),
+    bullet([run("2. One clarification question (What does … mean?).")]),
+    bullet([run("3. One permission question (May I …?).")]),
+    bullet([run("4. Thank and close.")], { after: 60 }),
+    pr([run("Model:", { bold: true })], { after: 30 }),
+    pr([run("— Excuse me, what does “window” mean, please?", { italic: true })], { after: 20 }),
+    pr([run("— It is this!", { italic: true })], { after: 20 }),
+    pr([run("— May I open the window, please?", { italic: true })], { after: 20 }),
+    pr([run("— Yes, go ahead. — Thank you!", { italic: true })]),
   ]);
 }
 
