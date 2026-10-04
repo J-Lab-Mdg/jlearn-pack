@@ -13,6 +13,10 @@ const AUDIO = {
   clothes: "https://drive.google.com/uc?export=download&id=1v0NTUY2OrAkBVeuyLl6-oM1skGRB1nNW",
   emma: "https://drive.google.com/uc?export=download&id=1QdkQbOZelTtTsGYYdf0lVcTqxuSJ4Bd1",
 };
+const bullet = (runs, o = {}) => pr(
+  [run("\u2022  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
+  { after: o.after != null ? o.after : 50 });
+
 const META = (title, slo, session, materials) => ({
   theme: "UNIT 6 — PEOPLE’S APPEARANCE", title, slo,
   values: "humility, tolerance", session, materials,

@@ -13,6 +13,10 @@ const AUDIO = {
   weather: "https://drive.google.com/uc?export=download&id=1lsbDStkPFaPDFOgMyEIgVHzBSo6YeFUc",
   reading: "https://drive.google.com/uc?export=download&id=1jvrB0lK-N5EmjA-s7c0Rn8_GZ0OkIrZu",
 };
+const bullet = (runs, o = {}) => pr(
+  [run("\u2022  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
+  { after: o.after != null ? o.after : 50 });
+
 const META = (title, slo, session, materials) => ({
   theme: "UNIT 3 — TIME AND WEATHER", title, slo,
   values: "solidarity, mutual respect", session, materials,
@@ -959,8 +963,12 @@ function lessonS17() {
   return dayLesson(17, "THE DAYS OF THE WEEK", [
     grid(DAYS, 4),
     p("", { after: 60 }),
-    pr([run("The rules: ", { bold: true }), run("a CAPITAL letter always (Monday, not monday) — "), run("on", { bold: true, color: C.BLUE }), run(" + day: on Monday I go to school.")]),
-    pr([...kw("What day is it today?", "ouate déi iz ite toudé"), run("  →  "), ...kw("It’s Tuesday.", "its tiouzdé")], { after: 60 }),
+    pr([run("The rules:", { bold: true })], { after: 30 }),
+    bullet([run("A CAPITAL letter always: Monday, not monday!")]),
+    bullet([run("on", { bold: true, color: C.BLUE }), run(" + day: on Monday I go to school, on Sunday I rest.")]),
+    bullet([run("The weekend = Saturday and Sunday; the week days = Monday to Friday.")], { after: 60 }),
+    pr([run("The question:", { bold: true })], { after: 30 }),
+    bullet([...kw("What day is it today?", "ouate déi iz ite toudé"), run("  →  "), ...kw("It’s Tuesday.", "its tiouzdé")], { after: 60 }),
     songBox(),
   ]);
 }
@@ -969,50 +977,75 @@ function lessonS18() {
     img("u3_calendar.png", 360, 768 / 1408),
     grid(MONTHS, 4),
     p("", { after: 60 }),
-    pr([run("The rules: ", { bold: true }), run("a CAPITAL letter always — "), run("in", { bold: true, color: C.BLUE }), run(" + month: my birthday is in June.")]),
-    pr([...kw("What month is it now?", "ouate meunce iz ite naou"), run("  →  "), ...kw("It’s September.", "its sèptèmbeur")]),
+    pr([run("The rules:", { bold: true })], { after: 30 }),
+    bullet([run("A CAPITAL letter always: June, not june!")]),
+    bullet([run("in", { bold: true, color: C.BLUE }), run(" + month: my birthday is in June; school starts in September.")]),
+    bullet([run("The seasons of the months: December–February = summer in Madagascar!", { italic: true, color: C.GRAY, size: 24 })], { after: 60 }),
+    pr([run("The questions:", { bold: true })], { after: 30 }),
+    bullet([...kw("What month is it now?", "ouate meunce iz ite naou"), run("  →  "), ...kw("It’s September.", "its sèptèmbeur")]),
+    bullet([...kw("When is your birthday?", "ouène iz iôr beursdé"), run("  →  "), ...kw("It’s in June!", "its ine djoune")]),
   ]);
 }
 function lessonS19() {
   return dayLesson(19, "THE ORDINAL NUMBERS — THE DATE", [
     grid(ORDINALS.map(([a, b]) => [a ? `${a} — ${b}` : "", ""]), 4),
     p("", { after: 60 }),
-    pr([run("The rule: ", { bold: true }), run("number + th", { bold: true, color: C.BLUE }), run(" (fourth, tenth, twentieth) — but "), run("1st first, 2nd second, 3rd third", { bold: true, color: C.RED }), run(" are special!")]),
-    pr([run("Careful: ", { bold: true, color: C.RED }), run("21st twenty-first, 31st thirty-first — the little word wins at the end.")], { after: 60 }),
+    pr([run("The rules:", { bold: true })], { after: 30 }),
+    bullet([run("number + th", { bold: true, color: C.BLUE }), run(": fourth, tenth, twentieth…")]),
+    bullet([run("But "), run("1st first, 2nd second, 3rd third", { bold: true, color: C.RED }), run(" are special!")]),
+    bullet([run("Careful: ", { bold: true, color: C.RED }), run("21st twenty-first, 31st thirty-first — the little word wins at the end.")]),
+    bullet([run("The date: "), run("on", { bold: true, color: C.BLUE }), run(" + date: my birthday is on June 10th [djoune ze tènce].")], { after: 60 }),
     dateDialogueBox(),
   ]);
 }
 function lessonS20() {
   return dayLesson(20, "YESTERDAY, TODAY, TOMORROW", [
-    pr([run("The three tenses of TO BE: ", { bold: true }), run("yesterday → was", { bold: true, color: C.BLUE }), run("  —  "), run("today → is", { bold: true, color: C.BLUE }), run("  —  "), run("tomorrow → will be", { bold: true, color: C.BLUE })]),
-    pr([...kw("Yesterday was Sunday.", "yèsteudé ouoz seundé"), run("  "), ...kw("Today is Monday.", "toudé iz meundé"), run("  "), ...kw("Tomorrow will be Tuesday.", "toumorôou ouil bi tiouzdé")], { after: 60 }),
-    pr([run("The sequence markers: ", { bold: true }), run("first, next, after, last", { bold: true, color: C.BLUE }), run(" — the day before Monday is Sunday; the day after Monday is Tuesday.")]),
-    pr([run("The big numbers: ", { bold: true }), ...kw("one thousand (1 000)", "ouane saouzande"), run("  "), ...kw("one million", "ouane milieune"), run("  "), ...kw("one billion", "ouane bilieune")]),
+    pr([run("The three tenses of TO BE:", { bold: true })], { after: 30 }),
+    bullet([run("yesterday → was", { bold: true, color: C.BLUE }), run(":  "), ...kw("Yesterday was Sunday.", "yèsteudé ouoz seundé")]),
+    bullet([run("today → is", { bold: true, color: C.BLUE }), run(":  "), ...kw("Today is Monday.", "toudé iz meundé")]),
+    bullet([run("tomorrow → will be", { bold: true, color: C.BLUE }), run(":  "), ...kw("Tomorrow will be Tuesday.", "toumorôou ouil bi tiouzdé")], { after: 60 }),
+    pr([run("The sequence markers:", { bold: true })], { after: 30 }),
+    bullet([run("first, next, after, last", { bold: true, color: C.BLUE }), run(" — the day before Monday is Sunday; the day after Monday is Tuesday.")], { after: 60 }),
+    pr([run("The big numbers:", { bold: true })], { after: 30 }),
+    bullet([...kw("one thousand (1 000)", "ouane saouzande"), run("   "), ...kw("one million", "ouane milieune"), run("   "), ...kw("one billion", "ouane bilieune")]),
+    bullet([run("Example: "), run("There are three hundred and sixty-five days in one year!", { bold: true, color: C.BLUE })]),
   ]);
 }
 function lessonS21() {
   return dayLesson(21, "WHAT TIME IS IT? — O’CLOCK, A.M. AND P.M.", [
     img("u3_clocks.png", 380, 768 / 1408),
-    pr([...kw("What time is it? / What’s the time?", "ouate taïme iz ite"), run("  →  "), ...kw("It’s seven o’clock.", "its sèvène oklok")]),
-    pr([run("Morning: "), run("a.m.", { bold: true, color: C.BLUE }), run(" — afternoon and evening: "), run("p.m.", { bold: true, color: C.BLUE }), run("  Special: "), ...kw("noon", "noune"), run(" (12:00), "), ...kw("midnight", "midnaïte"), run(" (00:00).")]),
-    pr([run("On the arm: "), ...kw("a watch", "e ouotch"), run(" — on the wall: "), ...kw("a clock", "e klok")], { after: 60 }),
+    pr([run("The question:", { bold: true })], { after: 30 }),
+    bullet([...kw("What time is it? / What’s the time?", "ouate taïme iz ite"), run("  →  "), ...kw("It’s seven o’clock.", "its sèvène oklok")], { after: 60 }),
+    pr([run("The day in two halves:", { bold: true })], { after: 30 }),
+    bullet([run("Morning: "), run("a.m.", { bold: true, color: C.BLUE }), run(" — 7 a.m. = seven in the morning.")]),
+    bullet([run("Afternoon and evening: "), run("p.m.", { bold: true, color: C.BLUE }), run(" — 7 p.m. = seven in the evening.")]),
+    bullet([run("Special: "), ...kw("noon", "noune"), run(" (12:00) and "), ...kw("midnight", "midnaïte"), run(" (00:00).")], { after: 60 }),
+    bullet([run("On the arm: "), ...kw("a watch", "e ouotch"), run("  —  on the wall: "), ...kw("a clock", "e klok")], { after: 60 }),
     audioBox([{ qr: "qr_t6_u3_time.png", label: "Telling the time — listen and repeat", url: AUDIO.time }], COLOR),
   ]);
 }
 function lessonS22() {
   return dayLesson(22, "A QUARTER PAST, HALF PAST, A QUARTER TO", [
-    pr([run("Minutes 1–30: ", { bold: true }), run("past", { bold: true, color: C.BLUE }), run(" — ten past nine (9:10), a quarter past ten (10:15), half past four (4:30).")]),
-    pr([run("Minutes 31–59: ", { bold: true }), run("to", { bold: true, color: C.BLUE }), run(" — twenty to five (4:40), a quarter to nine (8:45).")]),
-    pr([run("The short way: ", { bold: true }), ...kw("It’s nine twenty-five.", "its naïne touènti-faïv"), run(" — we just read the numbers!")], { after: 60 }),
+    pr([run("The two halves of the clock:", { bold: true })], { after: 30 }),
+    bullet([run("Minutes 1–30: ", { bold: true }), run("past", { bold: true, color: C.BLUE }), run(" — ten past nine (9:10), a quarter past ten (10:15).")]),
+    bullet([run("half past", { bold: true, color: C.BLUE }), run(" = 30 minutes: half past four (4:30).")]),
+    bullet([run("Minutes 31–59: ", { bold: true }), run("to", { bold: true, color: C.BLUE }), run(" — twenty to five (4:40), a quarter to nine (8:45).")], { after: 60 }),
+    pr([run("The short way:", { bold: true })], { after: 30 }),
+    bullet([...kw("It’s nine twenty-five.", "its naïne touènti-faïv"), run(" — we just read the numbers!")], { after: 60 }),
     timeConvBox(),
   ]);
 }
 function lessonS23() {
   return dayLesson(23, "WHEN DO YOU…? — THE TIME INTERVIEW", [
-    pr([...kw("When do you get up?", "ouène dou iou guète eup"), run("  →  "), ...kw("At six o’clock.", "ate siks oklok")]),
-    pr([...kw("When do you go to school?", "ouène dou iou gôou tou skoule"), run("  →  "), ...kw("At half past seven.", "ate hâf paste sèvène")], { after: 60 }),
-    pr([run("The three little words: ", { bold: true }), run("at", { bold: true, color: C.BLUE }), run(" + time (at noon) — "), run("on", { bold: true, color: C.BLUE }), run(" + day (on Friday) — "), run("in", { bold: true, color: C.BLUE }), run(" + month or season (in June, in winter).")]),
-    pr([run("For the interview, I note the answers and report: ", { italic: true, color: C.GRAY, size: 24 }), run("She gets up at six.", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The interview questions:", { bold: true })], { after: 30 }),
+    bullet([...kw("When do you get up?", "ouène dou iou guète eup"), run("  →  "), ...kw("At six o’clock.", "ate siks oklok")]),
+    bullet([...kw("When do you go to school?", "ouène dou iou gôou tou skoule"), run("  →  "), ...kw("At half past seven.", "ate hâf paste sèvène")]),
+    bullet([...kw("When do you have lunch?", "ouène dou iou hav leunntch"), run("  →  "), ...kw("At noon!", "ate noune")], { after: 60 }),
+    pr([run("The three little words:", { bold: true })], { after: 30 }),
+    bullet([run("at", { bold: true, color: C.BLUE }), run(" + time: at noon, at six o’clock.")]),
+    bullet([run("on", { bold: true, color: C.BLUE }), run(" + day: on Friday, on Monday morning.")]),
+    bullet([run("in", { bold: true, color: C.BLUE }), run(" + month or season: in June, in winter.")], { after: 60 }),
+    bullet([run("For the interview, I note the answers and report: ", { italic: true, color: C.GRAY, size: 24 }), run("She gets up at six.", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS24() {
@@ -1021,38 +1054,63 @@ function lessonS24() {
     ...SEASONS.map(([s, pn, words]) =>
       pr([...kw(s, pn), run("  →  "), run(words, { italic: true, color: C.GRAY })], { after: 30 })),
     p("", { after: 40 }),
-    pr([run("The rule: ", { bold: true }), run("in", { bold: true, color: C.BLUE }), run(" + season: in summer it is hot; in winter it is cold.")]),
+    pr([run("The rules:", { bold: true })], { after: 30 }),
+    bullet([run("in", { bold: true, color: C.BLUE }), run(" + season: in summer it is hot; in winter it is cold.")]),
+    bullet([run("The seasons stay small (no capital letter): summer, winter.")]),
+    bullet([run("The question: "), ...kw("What season do you like?", "ouate sizeune dou iou laïk"), run("  →  "), ...kw("I like spring!", "aï laïk sprinng")]),
   ]);
 }
 function lessonS25() {
   return dayLesson(25, "WHAT’S THE WEATHER LIKE?", [
     img("u3_weather.png", 380, 768 / 1408),
-    pr([...kw("What’s the weather like?", "ouots ze ouèzeur laïk"), run("  /  "), ...kw("How’s the weather today?", "haouz ze ouèzeur toudé"), run("  →  "), ...kw("It’s sunny!", "its seuni")], { after: 40 }),
+    pr([run("The two questions:", { bold: true })], { after: 30 }),
+    bullet([...kw("What’s the weather like?", "ouots ze ouèzeur laïk"), run("  →  "), ...kw("It’s sunny!", "its seuni")]),
+    bullet([...kw("How’s the weather today?", "haouz ze ouèzeur toudé"), run("  →  "), ...kw("It’s cloudy and windy.", "its klaoudi annde ouinndi")], { after: 40 }),
     grid(WEATHER_ADJ, 4),
     p("", { after: 40 }),
-    pr([run("The magic rule: ", { bold: true }), run("word + y = adjective", { bold: true, color: C.BLUE }), run("  →  sun → sunny, wind → windy, fog → foggy!")]),
+    pr([run("The magic rule:", { bold: true })], { after: 30 }),
+    bullet([run("word + y = adjective", { bold: true, color: C.BLUE }), run("  →  sun → sunny, wind → windy, fog → foggy, rain → rainy!")]),
+    bullet([run("We always start with "), run("It’s …", { bold: true, color: C.BLUE }), run(" — It’s hot! It’s cold! It’s raining!")]),
   ]);
 }
 function lessonS26() {
   return dayLesson(26, "RAINING CATS AND DOGS! — MY FAVOURITE SEASON", [
-    pr([run("The idioms: ", { bold: true }), run("It’s raining cats and dogs!", { bold: true, color: C.BLUE }), run(" = it’s raining a lot — "), run("…come rain or shine", { bold: true, color: C.BLUE }), run(" = whatever happens.")]),
-    pr([run("The feelings: ", { bold: true }), run("to be happy, sad, angry, sleepy…", { bold: true, color: C.BLUE }), run(" — the weather changes my feelings!")], { after: 60 }),
-    pr([run("My favourite season: ", { bold: true }), ...kw("My favourite season is spring, because it is cool and there are flowers.", "maï féivrite sizeune iz sprinng")]),
-    pr([run("The word "), run("because", { bold: true, color: C.BLUE }), run(" gives the reason — always add it!")]),
+    pr([run("The idioms:", { bold: true })], { after: 30 }),
+    bullet([run("It’s raining cats and dogs!", { bold: true, color: C.BLUE }), run(" = it’s raining a lot!")]),
+    bullet([run("…come rain or shine", { bold: true, color: C.BLUE }), run(" = whatever happens.")], { after: 60 }),
+    pr([run("The feelings and the weather:", { bold: true })], { after: 30 }),
+    bullet([run("to be happy, sad, angry, sleepy…", { bold: true, color: C.BLUE }), run(" — the weather changes my feelings!")]),
+    bullet([run("Example: "), run("It is rainy, so I am sleepy. It is sunny, so I am happy!", { bold: true, color: C.BLUE })], { after: 60 }),
+    pr([run("My favourite season:", { bold: true })], { after: 30 }),
+    bullet([...kw("My favourite season is spring, because it is cool and there are flowers.", "maï féivrite sizeune iz sprinng")]),
+    bullet([run("The word "), run("because", { bold: true, color: C.BLUE }), run(" gives the reason — always add it!")]),
   ]);
 }
 function lessonS27() {
   return dayLesson(27, "READING DAY: “MY MONDAY MORNING”", [
-    pr([run("The key words of the text: ", { bold: true }), ...kw("to wake up", "tou ouéik eup"), run("  "), ...kw("a watch", "e ouotch"), run("  "), ...kw("cloudy", "klaoudi"), run("  "), ...kw("windy", "ouinndi")], { after: 60 }),
-    pr([run("How to read well: ", { bold: true }), run("1. Find the day, the date and the times. 2. Watch the tenses: was = yesterday, is = today. 3. Read the dialogue lines with a friendly voice.")]),
-    pr([run("The text uses everything of Unit 3: the date, the time, was/is, and the weather!", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The key words of the text:", { bold: true })], { after: 30 }),
+    bullet([...kw("to wake up", "tou ouéik eup"), run("  —  to open the eyes in the morning")]),
+    bullet([...kw("a watch", "e ouotch"), run("  —  the little clock on the arm")]),
+    bullet([...kw("cloudy", "klaoudi"), run("  and  "), ...kw("windy", "ouinndi"), run("  —  two weather words")], { after: 60 }),
+    pr([run("How to read well:", { bold: true })], { after: 30 }),
+    bullet([run("Find the day, the date and the times.")]),
+    bullet([run("Watch the tenses: was = yesterday, is = today.")]),
+    bullet([run("Read the dialogue lines with a friendly voice.")], { after: 60 }),
+    bullet([run("The text uses everything of Unit 3: the date, the time, was/is, and the weather!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS28() {
   return dayLesson(28, "WRITING DAY: MY FAVOURITE SEASON", [
-    pr([run("The plan of my paragraph: ", { bold: true }), run("1. My favourite season is… — 2. because… (the reason) — 3. the weather: it is…, it is… — 4. what I do: I play…, I visit…")], { after: 60 }),
-    pr([run("The writing rules: ", { bold: true }), run("a CAPITAL letter for the seasons’ friends (June, Monday) — but the seasons themselves stay small: summer, winter!", { bold: true })]),
-    pr([run("Model: ", { bold: true }), run("My favourite season is winter, because it is cool. It is often cloudy and foggy in Antananarivo. I drink hot milk and I read books.", { italic: true })]),
+    pr([run("The plan of my paragraph:", { bold: true })], { after: 30 }),
+    bullet([run("1. My favourite season is…")]),
+    bullet([run("2. because… (the reason).")]),
+    bullet([run("3. The weather: it is…, it is…")]),
+    bullet([run("4. What I do: I play…, I visit…, I drink…")], { after: 60 }),
+    pr([run("The writing rules:", { bold: true })], { after: 30 }),
+    bullet([run("A CAPITAL letter for the months and the days (June, Monday).")]),
+    bullet([run("But the seasons themselves stay small: summer, winter!")], { after: 60 }),
+    pr([run("Model:", { bold: true })], { after: 30 }),
+    pr([run("My favourite season is winter, because it is cool. It is often cloudy and foggy in Antananarivo. I drink hot milk and I read books.", { italic: true })]),
   ]);
 }
 

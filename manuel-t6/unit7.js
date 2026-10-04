@@ -12,6 +12,10 @@ const AUDIO = {
   house: "https://drive.google.com/uc?export=download&id=15aNTgpJ5oVg-YziSxA8DuWdZta46NY48",
   housetour: "https://drive.google.com/uc?export=download&id=1dFzY6feGzObPqZC4LsRpBnoqGCy4M-O7",
 };
+const bullet = (runs, o = {}) => pr(
+  [run("\u2022  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
+  { after: o.after != null ? o.after : 50 });
+
 const META = (title, slo, session, materials) => ({
   theme: "UNIT 7 — MY IMMEDIATE SURROUNDINGS", title, slo,
   values: "autonomy, self-confidence", session, materials,

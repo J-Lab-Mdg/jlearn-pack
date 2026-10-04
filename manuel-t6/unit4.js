@@ -12,6 +12,10 @@ const AUDIO = {
   tastes: "https://drive.google.com/uc?export=download&id=1XtRxxCarKupXZ2wRTN_XLYcsdSNHeeID",
   reading: "https://drive.google.com/uc?export=download&id=1zy8BGJbclRcr6m-fbE-aqh3Q2DJBpksE",
 };
+const bullet = (runs, o = {}) => pr(
+  [run("\u2022  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
+  { after: o.after != null ? o.after : 50 });
+
 const META = (title, slo, session, materials) => ({
   theme: "UNIT 4 — EVERYDAY MEALS", title, slo,
   values: "solidarity, mutual respect", session, materials,
@@ -771,24 +775,38 @@ function lessonS31() {
     img("u4_food.png", 380, 768 / 1408),
     grid(FOOD, 3),
     p("", { after: 60 }),
-    pr([...kw("I’m hungry!", "aïm heunngri"), run(" = I want to eat.  "), ...kw("I’m thirsty!", "aïm seursti"), run(" = I want to drink.")]),
+    pr([run("The two big feelings of the belly:", { bold: true })], { after: 30 }),
+    bullet([...kw("I’m hungry!", "aïm heunngri"), run("  =  I want to eat.")]),
+    bullet([...kw("I’m thirsty!", "aïm seursti"), run("  =  I want to drink.")], { after: 60 }),
+    pr([run("More examples:", { bold: true })], { after: 30 }),
+    bullet([run("I’m hungry: I eat a biscuit and a mango.", { bold: true, color: C.BLUE })]),
+    bullet([run("I’m thirsty: I drink water or tea.", { bold: true, color: C.BLUE })]),
   ]);
 }
 function lessonS32() {
   return dayLesson(32, "WHAT’S FOR LUNCH?", [
     img("u4_meal.png", 380, 768 / 1408),
-    pr([...kw("What’s for lunch?", "ouots fôr leunntch"), run("  →  "), ...kw("Rice with chicken!", "raïss ouiz tchikène")]),
-    pr([...kw("What’s for dessert?", "ouots fôr dizeurte"), run("  →  "), ...kw("Mangoes and yoghurt!", "manngôouz ande yogueurte")], { after: 60 }),
-    pr([run("At the table we say: ", { bold: true }), ...kw("It looks tasty!", "ite louks téisti"), run("  "), ...kw("What a delicious meal!", "ouate e dilicheuss mile")]),
-    pr([run("The three meals: ", { bold: true }), run("breakfast", { bold: true, color: C.BLUE }), run(" (morning) — "), run("lunch", { bold: true, color: C.BLUE }), run(" (noon) — "), run("dinner", { bold: true, color: C.BLUE }), run(" (evening).")]),
+    pr([run("The questions of the table:", { bold: true })], { after: 30 }),
+    bullet([...kw("What’s for lunch?", "ouots fôr leunntch"), run("  →  "), ...kw("Rice with chicken!", "raïss ouiz tchikène")]),
+    bullet([...kw("What’s for dessert?", "ouots fôr dizeurte"), run("  →  "), ...kw("Mangoes and yoghurt!", "manngôouz ande yogueurte")], { after: 60 }),
+    pr([run("At the table we say:", { bold: true })], { after: 30 }),
+    bullet([...kw("It looks tasty!", "ite louks téisti")]),
+    bullet([...kw("What a delicious meal!", "ouate e dilicheuss mile")], { after: 60 }),
+    pr([run("The three meals of the day:", { bold: true })], { after: 30 }),
+    bullet([run("breakfast", { bold: true, color: C.BLUE }), run(" [brèkfeuste] — in the morning.")]),
+    bullet([run("lunch", { bold: true, color: C.BLUE }), run(" [leunntch] — at noon.")]),
+    bullet([run("dinner", { bold: true, color: C.BLUE }), run(" [dineur] — in the evening.")]),
   ]);
 }
 function lessonS33() {
   return dayLesson(33, "OUR MEAL DIALOGUE", [
     lunchDialogueBox(),
     p("", { after: 60 }),
-    pr([run("The polite words of the meal: ", { bold: true }), ...kw("Here you are!", "hir iou âr"), run("  →  "), ...kw("Thank you!", "tenk iou"), run("  "), ...kw("Would you like some more?", "woud iou laïk seume môr")]),
-    pr([run("We play the dialogue with a friend — one line each, with a big smile!", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The polite words of the meal:", { bold: true })], { after: 30 }),
+    bullet([...kw("Here you are!", "hir iou âr"), run("  →  "), ...kw("Thank you!", "tenk iou")]),
+    bullet([...kw("Would you like some more?", "woud iou laïk seume môr"), run("  →  "), ...kw("Yes, please! / No, thank you.", "yèss pliiz / nôou tenk iou")]),
+    bullet([...kw("Enjoy your meal!", "inndjoï iôr mile")], { after: 60 }),
+    bullet([run("We play the dialogue with a friend — one line each, with a big smile!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS34() {
@@ -796,47 +814,74 @@ function lessonS34() {
     img("u4_tastes.png", 380, 768 / 1408),
     grid(TASTES, 4),
     p("", { after: 60 }),
-    pr([run("The sentence: ", { bold: true }), ...kw("It tastes sweet.", "ite téists souite"), run("  /  "), ...kw("Mangoes are sweet.", "manngôouz âr souite")]),
-    pr([run("Examples: ", { bold: true }), run("sugar → sweet — lemon → sour — salt → salty — black coffee → bitter.")]),
+    pr([run("The sentences:", { bold: true })], { after: 30 }),
+    bullet([...kw("It tastes sweet.", "ite téists souite"), run("   /   "), ...kw("Mangoes are sweet.", "manngôouz âr souite")]),
+    bullet([...kw("How does it taste?", "haou deuz ite téiste"), run("  →  "), ...kw("It tastes salty!", "ite téists solti")], { after: 60 }),
+    pr([run("One food, one taste:", { bold: true })], { after: 30 }),
+    bullet([run("sugar → "), run("sweet", { bold: true, color: C.BLUE }), run("   —   lemon → "), run("sour", { bold: true, color: C.BLUE })]),
+    bullet([run("salt → "), run("salty", { bold: true, color: C.BLUE }), run("   —   black coffee → "), run("bitter", { bold: true, color: C.BLUE })]),
   ]);
 }
 function lessonS35() {
   return dayLesson(35, "I LIKE, I DON’T LIKE — THE JAZZ CHANT", [
     chantBox(),
     p("", { after: 60 }),
-    pr([...kw("I like chocolate.", "aï laïk tchoklite"), run("   "), ...kw("I don’t like cheese.", "aï dôounte laïk tchize")]),
-    pr([...kw("Do you like coffee?", "dou iou laïk kofi"), run("  →  "), ...kw("Yes, I do. / No, I don’t.", "yèss aï dou / nôou aï dôounte")], { after: 60 }),
-    pr([run("Remember: ", { bold: true }), run("she likes, she doesn’t like", { bold: true, color: C.BLUE }), run(" — the -s of he/she/it!")]),
+    pr([run("The three machines:", { bold: true })], { after: 30 }),
+    bullet([run("+  "), ...kw("I like chocolate.", "aï laïk tchoklite")]),
+    bullet([run("−  "), ...kw("I don’t like cheese.", "aï dôounte laïk tchize")]),
+    bullet([run("?  "), ...kw("Do you like coffee?", "dou iou laïk kofi"), run("  →  "), ...kw("Yes, I do. / No, I don’t.", "yèss aï dou / nôou aï dôounte")], { after: 60 }),
+    pr([run("Remember:", { bold: true })], { after: 30 }),
+    bullet([run("she likes, she doesn’t like", { bold: true, color: C.BLUE }), run(" — the -s of he/she/it!")]),
+    bullet([run("Example: "), run("Koto likes bananas, but he doesn’t like bitter coffee.", { bold: true, color: C.BLUE })]),
   ]);
 }
 function lessonS36() {
   return dayLesson(36, "MY FAVOURITE FOOD", [
     fruitDialogueBox(),
     p("", { after: 60 }),
-    pr([...kw("Which one is your favourite?", "ouitch ouane iz iôr féivrite"), run("  →  "), ...kw("My favourite fruit is banana.", "maï féivrite froute iz banâna")]),
-    pr([...kw("What do you prefer?", "ouate dou iou prifeur"), run("  →  "), ...kw("I prefer mangoes.", "aï prifeur manngôouz")]),
+    pr([run("The questions of the choice:", { bold: true })], { after: 30 }),
+    bullet([...kw("Which one is your favourite?", "ouitch ouane iz iôr féivrite"), run("  →  "), ...kw("My favourite fruit is banana.", "maï féivrite froute iz banâna")]),
+    bullet([...kw("What do you prefer?", "ouate dou iou prifeur"), run("  →  "), ...kw("I prefer mangoes.", "aï prifeur manngôouz")]),
+    bullet([...kw("Why?", "ouaï"), run("  →  "), ...kw("Because they are sweet!", "bikoz zéi âr souite")]),
   ]);
 }
 function lessonS37() {
   return dayLesson(37, "FOOD FROM THE ANGLOPHONE WORLD", [
-    pr([...kw("a hamburger", "e hammbeurgueur"), run(" (USA)   "), ...kw("a hot dog", "e hote dog"), run(" (USA)")]),
-    pr([...kw("fish and chips", "fich ande tchips"), run(" (England)   "), ...kw("a sandwich", "e sanndouitch"), run(" (England)")], { after: 60 }),
-    pr([run("The fun fact: ", { bold: true }), run("the sandwich has the name of an English lord — the Earl of Sandwich!", { italic: true })]),
-    pr([run("And in Madagascar? ", { bold: true }), run("Our rice, our romazava… every country has its star dish!", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The star dishes:", { bold: true })], { after: 30 }),
+    bullet([...kw("a hamburger", "e hammbeurgueur"), run("  and  "), ...kw("a hot dog", "e hote dog"), run("  —  from the USA.")]),
+    bullet([...kw("fish and chips", "fich ande tchips"), run("  and  "), ...kw("a sandwich", "e sanndouitch"), run("  —  from England.")], { after: 60 }),
+    pr([run("The fun facts:", { bold: true })], { after: 30 }),
+    bullet([run("The sandwich has the name of an English lord — the Earl of Sandwich!", { italic: true })]),
+    bullet([run("And in Madagascar? Our rice, our romazava… every country has its star dish!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS38() {
   return dayLesson(38, "READING DAY: “MEALS AT MY HOUSE”", [
-    pr([run("The key words of the text: ", { bold: true }), ...kw("breakfast", "brèkfeuste"), run("  "), ...kw("bitter", "biteur"), run("  "), ...kw("sugar", "chougueur"), run("  "), ...kw("dessert", "dizeurte")], { after: 60 }),
-    pr([run("How to read well: ", { bold: true }), run("1. Find the three meals in the text. 2. Find who likes what. 3. Read the exclamations with energy: What a delicious week!")]),
-    pr([run("The text uses everything of Unit 4: the meals, the tastes, like and don’t like!", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The key words of the text:", { bold: true })], { after: 30 }),
+    bullet([...kw("breakfast", "brèkfeuste"), run("  —  the meal of the morning")]),
+    bullet([...kw("bitter", "biteur"), run("  —  the taste of black coffee")]),
+    bullet([...kw("sugar", "chougueur"), run("  —  it makes the tea sweet")]),
+    bullet([...kw("dessert", "dizeurte"), run("  —  the sweet end of the meal")], { after: 60 }),
+    pr([run("How to read well:", { bold: true })], { after: 30 }),
+    bullet([run("Find the three meals in the text.")]),
+    bullet([run("Find who likes what.")]),
+    bullet([run("Read the exclamations with energy: What a delicious week!")], { after: 60 }),
+    bullet([run("The text uses everything of Unit 4: the meals, the tastes, like and don’t like!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS39() {
   return dayLesson(39, "WRITING DAY: MY EVERYDAY MEALS", [
-    pr([run("The plan of my paragraph: ", { bold: true }), run("1. For breakfast, we have… — 2. For lunch, we have… — 3. For dinner, we have… — 4. one taste (it tastes…) — 5. my favourite food.")], { after: 60 }),
-    pr([run("The writing rules: ", { bold: true }), run("a CAPITAL letter at the start, a period at the end — and the -s of she likes!")]),
-    pr([run("Model: ", { bold: true }), run("For breakfast, we have rice soup and tea. For lunch, we have rice with beans. My favourite fruit is mango: it tastes so sweet!", { italic: true })]),
+    pr([run("The plan of my paragraph:", { bold: true })], { after: 30 }),
+    bullet([run("1. For breakfast, we have…")]),
+    bullet([run("2. For lunch, we have…")]),
+    bullet([run("3. For dinner, we have…")]),
+    bullet([run("4. One taste: it tastes…")]),
+    bullet([run("5. My favourite food.")], { after: 60 }),
+    pr([run("The writing rules:", { bold: true })], { after: 30 }),
+    bullet([run("A CAPITAL letter at the start, a period at the end.")]),
+    bullet([run("The -s of she likes! Mum likes sweet tea.")], { after: 60 }),
+    pr([run("Model:", { bold: true })], { after: 30 }),
+    pr([run("For breakfast, we have rice soup and tea. For lunch, we have rice with beans. My favourite fruit is mango: it tastes so sweet!", { italic: true })]),
   ]);
 }
 

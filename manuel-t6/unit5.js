@@ -12,6 +12,10 @@ const AUDIO = {
   grandma: "https://drive.google.com/uc?export=download&id=1opDgvIgDMFHjMin3UfAo3kf8ibCjvMXA",
   thisthat: "https://drive.google.com/uc?export=download&id=1NmOfdFgcVEbo6P9lAIuDxrbpeYYdnW-4",
 };
+const bullet = (runs, o = {}) => pr(
+  [run("\u2022  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
+  { after: o.after != null ? o.after : 50 });
+
 const META = (title, slo, session, materials) => ({
   theme: "UNIT 5 — FAMILY", title, slo,
   values: "responsibility, mutual respect", session, materials,
