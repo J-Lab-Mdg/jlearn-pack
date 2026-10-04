@@ -456,6 +456,73 @@ function conjugation() {
   ];
 }
 
+// ---------------- ANNEX 6 — PHONETICS GUIDE (IPA + figurée) ----------------
+function phonRow(ipa, fig, say, examples) {
+  return new TableRow({ children: [
+    cell([p([run(ipa, { bold: true, color: COLOR, size: 28 })], { center: true })], { w: 1600, vAlign: VerticalAlign.CENTER }),
+    cell([p([run(fig, { bold: true, color: C.BLUE, size: 26 })], { center: true })], { w: 1800, vAlign: VerticalAlign.CENTER }),
+    cell([p([run(say, { size: 24 })])], { w: 3300, vAlign: VerticalAlign.CENTER }),
+    cell([p([run(examples, { italic: true, color: C.GRAY, size: 22 })])], { w: 3700, vAlign: VerticalAlign.CENTER }),
+  ]});
+}
+function phonetics() {
+  const h = (t, w) => cell([p([run(t, { bold: true, color: C.WHITE, size: 24 })], { center: true })],
+    { w, shade: COLOR, vAlign: VerticalAlign.CENTER });
+  const head = () => new TableRow({ children: [h("IPA", 1600), h("In this book", 1800), h("How to say it", 3300), h("Examples", 3700)] });
+  return [
+    ...annexTitle("ann6", "6", "PHONETICS GUIDE"),
+    p([run("The IPA symbols and the brackets of this book — side by side", { bold: true, size: 30, color: COLOR })], { center: true, after: 120 }),
+    p("In the dictionaries, the pronunciation is written with special symbols: the International Phonetic Alphabet (IPA), between slashes: /swiːt/. In this book, we used easy brackets read as in French: [souite]. This annex puts the two systems side by side — so the pupils are ready for the dictionary!", { after: 80 }),
+    pr([run("Example: "), run("sweet", { bold: true, color: C.BLUE }), run("  →  IPA "), run("/swiːt/", { bold: true, color: COLOR }), run("  =  this book "), run("[souite]", { italic: true, color: C.GRAY }), run(". The two say the same sound!")], { after: 140 }),
+
+    p([run("THE VOWELS", { bold: true, size: 30, color: COLOR })], { after: 60 }),
+    new Table({ width: { size: 10400, type: WidthType.DXA }, rows: [
+      head(),
+      phonRow("/iː/", "[i] long", "a long “i” — smile!", "sweet /swiːt/ [souite], feet /fiːt/ [fite]"),
+      phonRow("/ɪ/", "[i]", "a short, quick “i”", "a biscuit /ˈbɪskɪt/ [biskite], spring /sprɪŋ/ [sprinng]"),
+      phonRow("/e/", "[è]", "like “è” in French", "head /hed/ [hède], a belt /belt/ [bèlte]"),
+      phonRow("/æ/", "[a]", "an “a” with a big open mouth", "a hat /hæt/ [hate], back /bæk/ [bak]"),
+      phonRow("/ɑː/", "[â]", "a long, deep “a”", "a scarf /skɑːf/ [skârf], arms /ɑːmz/ [ârmz]"),
+      phonRow("/ɒ/", "[o]", "a short “o”", "hot /hɒt/ [hote], socks /sɒks/ [soks]"),
+      phonRow("/ɔː/", "[ô]", "a long “ô”", "autumn /ˈɔːtəm/ [ôteume], August /ˈɔːɡəst/ [ôgueuste]"),
+      phonRow("/ʊ/ /uː/", "[ou]", "like “ou” in French", "soup /suːp/ [soup], June /dʒuːn/ [djoune]"),
+      phonRow("/ʌ/", "[eu]", "a short “eu”, mouth relaxed", "an uncle /ˈʌŋkl/ [eunnkeul], sunny /ˈsʌni/ [seuni]"),
+      phonRow("/ɜː/", "[eur]", "a long “eur”", "Thursday /ˈθɜːzdeɪ/ [seurzdé], thirsty /ˈθɜːsti/ [seursti]"),
+      phonRow("/ə/", "[e] / [eur]", "the tiny lazy sound of English!", "winter /ˈwɪntə/ [ouinnteur], a mirror /ˈmɪrə/ [mireur]"),
+    ]}),
+    p("", { after: 100 }),
+    p([run("THE DOUBLE VOWELS (two sounds in one!)", { bold: true, size: 30, color: COLOR })], { after: 60 }),
+    new Table({ width: { size: 10400, type: WidthType.DXA }, rows: [
+      head(),
+      phonRow("/eɪ/", "[éi]", "“é” then “i”", "face /feɪs/ [féiss], rainy /ˈreɪni/ [réini]"),
+      phonRow("/aɪ/", "[aï]", "“a” then “i”", "a knife /naɪf/ [naïf], Friday /ˈfraɪdeɪ/ [fraïdé]"),
+      phonRow("/ɔɪ/", "[oï]", "“o” then “i”", "the toilets /ˈtɔɪləts/ [toïlets], a boy /bɔɪ/ [boï]"),
+      phonRow("/əʊ/", "[ôou]", "“ô” then “ou”", "a mango /ˈmæŋɡəʊ/ [manngôou], cold /kəʊld/ [kôoulde]"),
+      phonRow("/aʊ/", "[aou]", "“a” then “ou”", "trousers /ˈtraʊzəz/ [traouzeurz], a blouse /blaʊz/ [blaouz]"),
+      phonRow("/eə/", "[è(r)]", "“è” with a little “r”", "hair /heə/ [hèr], wearing /ˈweərɪŋ/ [ouèrinng]"),
+    ]}),
+    p("", { after: 100 }),
+    p([run("THE SPECIAL CONSONANTS", { bold: true, size: 30, color: COLOR })], { after: 60 }),
+    new Table({ width: { size: 10400, type: WidthType.DXA }, rows: [
+      head(),
+      phonRow("/ð/", "[z]", "tongue between the teeth + voice (a soft “z”)", "this /ðɪs/ [zisse], those /ðəʊz/ [zôouz]"),
+      phonRow("/θ/", "[s]", "tongue between the teeth, air only (a soft “s”)", "teeth /tiːθ/ [tisse], Thursday /ˈθɜːzdeɪ/ [seurzdé]"),
+      phonRow("/h/", "[h]", "a soft blow — never silent!", "hungry /ˈhʌŋɡri/ [heunngri], a house /haʊs/ [haouss]"),
+      phonRow("/ŋ/", "[nng]", "the nasal “ng” bell", "spring /sprɪŋ/ [sprinng], morning /ˈmɔːnɪŋ/ [môrninng]"),
+      phonRow("/tʃ/", "[tch]", "like “tch” in “tchak”", "cheeks /tʃiːks/ [tchiks], March /mɑːtʃ/ [mârtch]"),
+      phonRow("/dʒ/", "[dj]", "like “dj” in “Djibouti”", "January /ˈdʒænjuəri/ [djanioueri], the gym /dʒɪm/ [djime]"),
+      phonRow("/ʃ/", "[ch]", "like “ch” in “chat”", "shorts /ʃɔːts/ [chôrts], a shower /ˈʃaʊə/ [chaoueur]"),
+      phonRow("/w/", "[ou]", "round the lips, like “oui”", "Wednesday /ˈwenzdeɪ/ [ouènzdé], winter /ˈwɪntə/ [ouinnteur]"),
+      phonRow("/j/", "[i] / [y]", "like the “y” of “yoyo”", "you /juː/ [iou], yoghurt /ˈjɒɡət/ [yogueurte]"),
+      phonRow("/r/", "[r]", "a soft English “r” — no rolling!", "rainy /ˈreɪni/ [réini], the library /ˈlaɪbrəri/ [laïbreri]"),
+    ]}),
+    p("", { after: 100 }),
+    p([run("The stress mark:", { bold: true, size: 30 })], { after: 60 }),
+    pr([run("In IPA, the little mark "), run("ˈ", { bold: true, color: COLOR, size: 30 }), run(" shows the STRONG syllable: library /ˈlaɪbrəri/ — we hit the FIRST part: "), run("LI-bra-ry!", { bold: true, color: C.BLUE }), run(" In this book, say the audio model and copy its music.")], { after: 80 }),
+    p([run("The dictionary speaks IPA — and now, you understand it!", { italic: true, color: C.GRAY, size: 26 })], { center: true }),
+  ];
+}
+
 // ---------------- page finale ----------------
 function finalPage() {
   return [
@@ -480,12 +547,14 @@ module.exports = function annexes() {
     p([run("Annex 3 — Pronunciation guide: for the teacher", { size: 30 })], { after: 60 }),
     p([run("Annex 4 — Flashcards to cut out: for the games", { size: 30 })], { after: 60 }),
     p([run("Annex 5 — Conjugation guide: all the verbs, with the exceptions", { size: 30 })], { after: 60 }),
+    p([run("Annex 6 — Phonetics guide: the IPA and the brackets, side by side", { size: 30 })], { after: 60 }),
     pageBreak(),
     ...pictureDictionary(), pageBreak(),
     ...songs(), pageBreak(),
     ...pronunciationGuide(), pageBreak(),
     ...flashcards(), pageBreak(),
     ...conjugation(), pageBreak(),
+    ...phonetics(), pageBreak(),
     ...finalPage(),
   ];
 };

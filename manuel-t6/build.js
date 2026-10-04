@@ -29,7 +29,8 @@ function foreword() {
     p("In T6, English becomes a big subject: THREE hours every week. The pupils understand and use basic English in oral communication, read and understand short English sentences, and write short paragraphs in English."),
     p("Every session has three big steps: I. Review — II. New lesson — III. Evaluation. The teacher writes the duration of each step in the sheet."),
     p("Every preparation sheet is followed by a one-page “Lesson of the day”: the summary the pupils copy in their copy-books. At the end of each unit, one big lesson gathers everything, with pictures and pronunciation help."),
-    p("Every unit has: one opening page, the preparation sheets with their lessons of the day, the big unit lesson, exercises with an answer key, one revision session, one test paper, and one “I can…” page for the pupil. Five annexes close the book — including a full conjugation guide with all the exceptions explained."),
+    p("Important: the small grey words between brackets [ ] are a pronunciation help only — they show how to SAY the word. The pupils must NEVER copy the brackets in their copy-books: they copy the English words and sentences only."),
+    p("Every unit has: one opening page, the preparation sheets with their lessons of the day, the big unit lesson, exercises with an answer key, one revision session, one test paper, and one “I can…” page for the pupil. Six annexes close the book — including a full conjugation guide with all the exceptions explained, and a phonetics guide that puts the dictionary symbols (IPA) and the brackets of this book side by side."),
     p("Dialogues, songs, rhymes and reading texts can be listened to with a phone: scan the QR code or open the link at the bottom of the page.", { after: 160 }),
   ];
 }
@@ -58,7 +59,7 @@ function howToUse() {
     p([run("The colours of the book", { bold: true, size: SZ.SUB })], { after: 80 }),
     line("Red", C.RED, "title of the lesson."),
     line("Green", C.GREEN, "sub-titles of the lesson."),
-    line("Blue + bold", C.BLUE, "key words to remember. The small grey words in brackets help you say the word: Hello [hèlôou]."),
+    line("Blue + bold", C.BLUE, "key words to remember. The small grey words in brackets help you say the word: Hello [hèlôou]. Never copy the brackets in your copy-book!"),
     line("Pink", C.PINK, "answer keys."),
     p("", { after: 60 }),
     p([run("The audio", { bold: true, size: SZ.SUB })], { after: 80 }),
@@ -164,6 +165,7 @@ function contents() {
     tocLink("ann3", "    Annex 3 — Pronunciation guide"),
     tocLink("ann4", "    Annex 4 — Flashcards to cut out"),
     tocLink("ann5", "    Annex 5 — Conjugation guide"),
+    tocLink("ann6", "    Annex 6 — Phonetics guide (IPA)"),
   ];
 }
 

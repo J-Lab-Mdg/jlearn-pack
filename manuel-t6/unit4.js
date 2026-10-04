@@ -764,8 +764,6 @@ function dayLesson(sessionNo, title, children) {
     p([run(`LESSON OF THE DAY — SESSION ${sessionNo}`, { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run(title, { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     ...children,
-    p("", { after: 80 }),
-    p([run("I copy the lesson of the day in my copy-book.", { italic: true, color: C.GRAY, size: 22 })], { center: true }),
   ];
 }
 function lessonS31() {
