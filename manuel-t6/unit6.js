@@ -902,6 +902,7 @@ function lessonS58() {
 }
 function lessonS59() {
   return dayLesson(59, "SHE IS WEARING… — THE PRESENT CONTINUOUS", [
+    img("u6_wearing.png", 340, 768 / 1376),
     pr([run("The formula:", { bold: true })], { after: 30 }),
     bullet([run("am / is / are + verb-ing", { bold: true, color: C.BLUE }), run(" — for what happens NOW!")], { after: 60 }),
     pr([run("The examples:", { bold: true })], { after: 30 }),

@@ -847,6 +847,7 @@ function lessonS36() {
 }
 function lessonS37() {
   return dayLesson(37, "FOOD FROM THE ANGLOPHONE WORLD", [
+    img("u4_anglofood.png", 340, 768 / 1376),
     pr([run("The star dishes:", { bold: true })], { after: 30 }),
     bullet([...kw("a hamburger", "e hammbeurgueur"), run("  and  "), ...kw("a hot dog", "e hote dog"), run("  —  from the USA.")]),
     bullet([...kw("fish and chips", "fich ande tchips"), run("  and  "), ...kw("a sandwich", "e sanndouitch"), run("  —  from England.")], { after: 60 }),

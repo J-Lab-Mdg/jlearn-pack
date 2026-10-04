@@ -770,6 +770,7 @@ function lessonS43() {
 }
 function lessonS44() {
   return dayLesson(44, "ONE AND MANY — THE PLURALS", [
+    img("u5_plurals.png", 340, 768 / 1376),
     pr([run("The regular plurals:", { bold: true })], { after: 30 }),
     bullet([...kw("a brother → brothers", "breuzeur → breuzeurz"), run("  —  just add -s!")]),
     bullet([...kw("a story → stories", "stôri → stôriz"), run("  —  consonant + y → ies!")]),
