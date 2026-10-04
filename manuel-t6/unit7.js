@@ -589,22 +589,37 @@ function lessonS67() {
     img("u7_school.png", 380, 768 / 1408),
     grid(SCHOOL, 3),
     p("", { after: 60 }),
-    pr([...kw("Where is the library?", "ouèr iz ze laïbreri"), run("  →  "), ...kw("It’s next to the office.", "its nèkste tou zi ofiss")]),
+    pr([run("The question of the place:", { bold: true })], { after: 30 }),
+    bullet([...kw("Where is the library?", "ouèr iz ze laïbreri"), run("  →  "), ...kw("It’s next to the office.", "its nèkste tou zi ofiss")]),
+    bullet([...kw("Where is the cafeteria?", "ouèr iz ze kafétiria"), run("  →  "), ...kw("It’s near the school yard.", "its nir ze skoul iârd")], { after: 60 }),
+    pr([run("The little words of the place:", { bold: true })], { after: 30 }),
+    bullet([run("next to, near, behind, in front of", { bold: true, color: C.BLUE }), run(" — they tell WHERE!")]),
   ]);
 }
 function lessonS68() {
   return dayLesson(68, "LISTENING: “TOM’S SCHOOL”", [
-    pr([run("The key words of the dialogue: ", { bold: true }), ...kw("a schedule", "e skèdjoule"), run("  "), ...kw("a subject", "e seubdjikte"), run("  "), ...kw("huge", "hioudj"), run("  "), ...kw("recess", "rissèss")], { after: 60 }),
-    pr([run("How to listen well: ", { bold: true }), run("1. First: what places do you hear? 2. Second: what time does Tom start? 3. Third: what do they eat in the cafeteria?")]),
-    pr([run("I answer with There is / There are: ", { bold: true }), ...kw("There is a huge library.", "zèr iz e hioudj laïbreri")]),
+    pr([run("The key words of the dialogue:", { bold: true })], { after: 30 }),
+    bullet([...kw("a schedule", "e skèdjoule"), run("  —  the plan of the school week")]),
+    bullet([...kw("a subject", "e seubdjikte"), run("  —  English, maths, history…")]),
+    bullet([...kw("huge", "hioudj"), run("  —  very very big!")]),
+    bullet([...kw("recess", "rissèss"), run("  —  the play time between the lessons")], { after: 60 }),
+    pr([run("How to listen well:", { bold: true })], { after: 30 }),
+    bullet([run("First: what places do you hear?")]),
+    bullet([run("Second: what time does Tom start?")]),
+    bullet([run("Third: what do they eat in the cafeteria?")], { after: 60 }),
+    bullet([run("I answer with There is / There are: ", { bold: true }), ...kw("There is a huge library.", "zèr iz e hioudj laïbreri")]),
   ]);
 }
 function lessonS69() {
   return dayLesson(69, "THERE IS, THERE ARE — MY SCHOOL AND TOM’S SCHOOL", [
-    pr([run("ONE: ", { bold: true }), ...kw("There is a library.", "zèr iz e laïbreri"), run("   MANY: ", { bold: true }), ...kw("There are many classrooms.", "zèr âr mèni klâsroumz")]),
-    pr([run("Question: ", { bold: true }), ...kw("Is there a gym?", "iz zèr e djime"), run("  /  "), ...kw("Are there trees?", "âr zèr triz")]),
-    pr([run("Negative: ", { bold: true }), ...kw("There is no gym.", "zèr iz nôou djime")], { after: 60 }),
-    pr([run("To compare: ", { bold: true }), ...kw("Both have a flag.", "bôouss hav e flague"), run("   "), ...kw("Only one has grass and trees.", "ôounli ouane haz grâss annde triz")]),
+    pr([run("The three machines:", { bold: true })], { after: 30 }),
+    bullet([run("ONE: ", { bold: true }), ...kw("There is a library.", "zèr iz e laïbreri")]),
+    bullet([run("MANY: ", { bold: true }), ...kw("There are many classrooms.", "zèr âr mèni klâsroumz")]),
+    bullet([run("Question: ", { bold: true }), ...kw("Is there a gym?", "iz zèr e djime"), run("  /  "), ...kw("Are there trees?", "âr zèr triz")]),
+    bullet([run("Negative: ", { bold: true }), ...kw("There is no gym.", "zèr iz nôou djime")], { after: 60 }),
+    pr([run("To compare the two schools:", { bold: true })], { after: 30 }),
+    bullet([...kw("Both have a flag.", "bôouss hav e flague")]),
+    bullet([...kw("Only one has grass and trees.", "ôounli ouane haz grâss annde triz")]),
   ]);
 }
 function lessonS70() {
@@ -612,22 +627,36 @@ function lessonS70() {
     img("u7_bedroom.png", 380, 768 / 1408),
     grid(FURNITURE, 3),
     p("", { after: 60 }),
-    pr([run("The rooms: ", { bold: true }), ...kw("the bedroom", "ze bèdroume"), run("  "), ...kw("the kitchen", "ze kitchène"), run("  "), ...kw("the bathroom", "ze bâssroume"), run("  "), ...kw("the living room", "ze livinng roume")]),
+    pr([run("The rooms of the house:", { bold: true })], { after: 30 }),
+    bullet([...kw("the bedroom", "ze bèdroume"), run("  —  the bed, the wardrobe, the mosquito net.")]),
+    bullet([...kw("the kitchen", "ze kitchène"), run("  —  the stove, the bowls, the forks.")]),
+    bullet([...kw("the bathroom", "ze bâssroume"), run("  —  the shower, the mirror, the tap.")]),
+    bullet([...kw("the living room", "ze livinng roume"), run("  —  the stool, the TV set, the light.")]),
   ]);
 }
 function lessonS71() {
   return dayLesson(71, "READING DAY: “MY NEW HOUSE”", [
     bedroomBox(),
     p("", { after: 60 }),
-    pr([run("How to read well: ", { bold: true }), run("1. Find the rooms of the house. 2. Find the furniture with There is / There are. 3. Read the happy sentences with a happy voice!")]),
+    pr([run("How to read well:", { bold: true })], { after: 30 }),
+    bullet([run("Find the rooms of the house.")]),
+    bullet([run("Find the furniture with There is / There are.")]),
+    bullet([run("Read the happy sentences with a happy voice!")], { after: 60 }),
     audioBox([{ qr: "qr_t6_u7_housetour.png", label: "The house tour — listen and follow", url: AUDIO.housetour }], COLOR),
   ]);
 }
 function lessonS72() {
   return dayLesson(72, "WRITING DAY: MY FAVOURITE PLACE", [
-    pr([run("The plan of my paragraph: ", { bold: true }), run("1. My favourite place is… — 2. There is / There are… (two sentences) — 3. I like it because… — 4. one feeling (I am happy there).")], { after: 60 }),
-    pr([run("The writing rules: ", { bold: true }), run("There is + singular, There are + plural — and because for the reason!")]),
-    pr([run("Model: ", { bold: true }), run("My favourite place is the school yard. There is a big tree. There are flowers and birds. I like it because I play with my friends there. I am happy!", { italic: true })]),
+    pr([run("The plan of my paragraph:", { bold: true })], { after: 30 }),
+    bullet([run("1. My favourite place is…")]),
+    bullet([run("2. There is / There are… (two sentences).")]),
+    bullet([run("3. I like it because…")]),
+    bullet([run("4. One feeling: I am happy there.")], { after: 60 }),
+    pr([run("The writing rules:", { bold: true })], { after: 30 }),
+    bullet([run("There is + singular, There are + plural.")]),
+    bullet([run("because", { bold: true, color: C.BLUE }), run(" for the reason!")], { after: 60 }),
+    pr([run("Model:", { bold: true })], { after: 30 }),
+    pr([run("My favourite place is the school yard. There is a big tree. There are flowers and birds. I like it because I play with my friends there. I am happy!", { italic: true })]),
   ]);
 }
 
