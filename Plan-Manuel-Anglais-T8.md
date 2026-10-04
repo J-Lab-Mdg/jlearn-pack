@@ -79,3 +79,8 @@ youtube seulement Annex 2 ; « I copy the lesson » = 0 ; git checkout package*.
 ### Bloc 6 ✔ — UNIT 6 MEANS OF COMMUNICATION (S55-S66), COLOR 2E7D32
 - unit6.js : 10 fiches+leçons (S55 means+asking/telling news+fake news, S56 listening radio news, S57 simple past journalists, S58 passive voice, S59 social media+acronyms, S60 listening phone call, S61 text→call conversion, S62 reading newspaper, S63 letter/email formats, S64 writing narrate event), bigLesson 6 sections, exercises /20, rév S65, test S66, iCan → UNIT 7 MY CITY MY COUNTRY.
 - Audio Drive : t8_u6_radio `1VqzZdDs7oLWVs1TX0p9Uv-5X1Fy0SC0M` ; t8_u6_phone `1GOILpKLd4lKZtlFnzpem4GJjjyky7SZK`. Images : u6_media, u6_phone (1376×768). QR ×2.
+
+### Bloc 7 ✔ — UNIT 7 MY CITY MY COUNTRY (S67-S78), COLOR D35400 — 78/78 SESSIONS !
+- unit7.js : 10 fiches+leçons (S67 buildings city/country, S68 listening city passage, S69 prepositions of place, S70 relative where, S71 directions+signs+listening, S72 map game+dice+dialogues, S73 city/country Anglophone/Malagasy, S74 reading crossword+text City and Country, S75 writing drawing+describe, S76 writing paragraph 6-8 sentences), bigLesson 5 sections, exercises /20, rév S77, test S78, iCan final → annexes.
+- Audio Drive : t8_u7_city `1FTl7mLi_0HOEZKXdZuBJQ86eeQUFXZIA` ; t8_u7_directions `1fBB7BPOsu2fFrIZj26bUjmpxRBVhLSSu`. Images : u7_city (1376×768), u7_map (1408×768). QR ×2.
+- RESTE : Bloc 8 = 6 annexes (modèle manuel-t7/annexes.js) : 1 conjugaison complète, 2 chansons trad + YouTube, 3 flashcards, 4 Phonetics IPA+figurée, 5 vocabulaire récap, 6 certificat. + TOC annexes.

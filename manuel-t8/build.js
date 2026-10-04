@@ -10,6 +10,7 @@ const unit3 = require("./unit3");
 const unit4 = require("./unit4");
 const unit5 = require("./unit5");
 const unit6 = require("./unit6");
+const unit7 = require("./unit7");
 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
@@ -151,6 +152,20 @@ function contents() {
     tocLink("s64", "    Session 64 — Writing: narrating an event"),
     tocLink("s65", "    Session 65 — Revision"),
     tocLink("s66", "    Session 66 — Test paper"),
+    p("", { after: 40 }),
+    tocLink("unit7", "UNIT 7 — MY CITY, MY COUNTRY (Sessions 67–78)", { bold: true, size: 26 }),
+    tocLink("s67", "    Session 67 — The buildings of the city and of the country"),
+    tocLink("s68", "    Session 68 — Listening: my city and my village"),
+    tocLink("s69", "    Session 69 — The prepositions of place"),
+    tocLink("s70", "    Session 70 — The relative clause with where"),
+    tocLink("s71", "    Session 71 — Asking and giving directions"),
+    tocLink("s72", "    Session 72 — The map game"),
+    tocLink("s73", "    Session 73 — City and country, here and there"),
+    tocLink("s74", "    Session 74 — Reading: city and country"),
+    tocLink("s75", "    Session 75 — Writing (1): draw and tell"),
+    tocLink("s76", "    Session 76 — Writing (2): the paragraph"),
+    tocLink("s77", "    Session 77 — Revision"),
+    tocLink("s78", "    Session 78 — Test paper"),
     p("", { after: 60 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
@@ -206,7 +221,8 @@ async function main() {
         ...unit3(), pageBreak(),
         ...unit4(), pageBreak(),
         ...unit5(), pageBreak(),
-        ...unit6(),
+        ...unit6(), pageBreak(),
+        ...unit7(),
       ],
     }],
   });
