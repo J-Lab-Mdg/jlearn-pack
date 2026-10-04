@@ -831,25 +831,37 @@ function lessonS53() {
     img("u6_body.png", 380, 768 / 1408),
     grid(BODY1, 3),
     p("", { after: 60 }),
-    pr([run("On the face: ", { bold: true }), ...kw("eyes", "aïz"), run("  "), ...kw("ears", "irz"), run("  "), ...kw("a nose", "e nôouz"), run("  "), ...kw("a mouth", "e maouss"), run("  "), ...kw("teeth", "tisse")]),
-    pr([run("My + body part: ", { bold: true }), run("my head, my hair, my cheeks — always with the little word!", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("On the face:", { bold: true })], { after: 30 }),
+    bullet([...kw("eyes", "aïz"), run("  —  I see with them.")]),
+    bullet([...kw("ears", "irz"), run("  —  I hear with them.")]),
+    bullet([...kw("a nose", "e nôouz"), run("  and  "), ...kw("a mouth", "e maouss")]),
+    bullet([...kw("teeth", "tisse"), run("  —  I brush them every day!")], { after: 60 }),
+    bullet([run("My + body part: ", { bold: true }), run("my head, my hair, my cheeks — always with the little word!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS54() {
   return dayLesson(54, "THE BODY PARTS (2): TRUNK AND LIMBS", [
     grid(BODY2, 3),
     p("", { after: 60 }),
-    pr([run("The three parts of the body: ", { bold: true }), run("the "), ...kw("head", "hède"), run(", the "), ...kw("trunk", "treunnk"), run(" (chest, back, belly), the "), ...kw("limbs", "limz"), run(" (arms and legs).")]),
-    pr([run("The traps: ", { bold: true, color: C.RED }), run("one foot → two "), ...kw("feet", "fite"), run(", one tooth → two "), ...kw("teeth", "tisse"), run(" — irregular plurals!")]),
+    pr([run("The three parts of the body:", { bold: true })], { after: 30 }),
+    bullet([run("the "), ...kw("head", "hède"), run("  —  hair, face, cheeks, chin.")]),
+    bullet([run("the "), ...kw("trunk", "treunnk"), run("  —  chest, back, belly.")]),
+    bullet([run("the "), ...kw("limbs", "limz"), run("  —  arms, hands, fingers, legs, feet.")], { after: 60 }),
+    pr([run("The traps:", { bold: true, color: C.RED })], { after: 30 }),
+    bullet([run("one foot → two "), ...kw("feet", "fite"), run("  —  irregular plural!")]),
+    bullet([run("one tooth → two "), ...kw("teeth", "tisse"), run("  —  irregular plural!")]),
   ]);
 }
 function lessonS55() {
   return dayLesson(55, "SIMON SAYS! — THE IMPERATIVES", [
     simonBox(),
     p("", { after: 60 }),
-    pr([run("The command: ", { bold: true }), ...kw("Touch your nose!", "teutch iôr nôouz"), run("   "), ...kw("Clap your hands!", "klap iôr hanndz")]),
-    pr([run("The negative: ", { bold: true }), ...kw("Don’t move!", "dôounte mouve"), run(" — "), run("Don’t + verb", { bold: true, color: C.BLUE }), run(", that’s all!")]),
-    pr([run("The game rule: I obey only when I hear “Simon says”!", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The commands:", { bold: true })], { after: 30 }),
+    bullet([...kw("Touch your nose!", "teutch iôr nôouz"), run("   "), ...kw("Clap your hands!", "klap iôr hanndz")]),
+    bullet([...kw("Stamp your feet!", "stammp iôr fite"), run("   "), ...kw("Shake your head!", "chéik iôr hède")], { after: 60 }),
+    pr([run("The negative:", { bold: true })], { after: 30 }),
+    bullet([...kw("Don’t move!", "dôounte mouve"), run("  —  "), run("Don’t + verb", { bold: true, color: C.BLUE }), run(", that’s all!")]),
+    bullet([run("The game rule: I obey only when I hear “Simon says”!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS56() {
@@ -857,15 +869,23 @@ function lessonS56() {
     img("u6_senses.png", 380, 768 / 1408),
     grid(SENSES.map(([a, b]) => [a, b]), 3, 22),
     p("", { after: 60 }),
-    pr([run("The pattern: ", { bold: true }), run("I + sense verb + with my + body part", { bold: true, color: C.BLUE }), run(" → I see with my eyes.")]),
+    pr([run("The pattern:", { bold: true })], { after: 30 }),
+    bullet([run("I + sense verb + with my + body part", { bold: true, color: C.BLUE })]),
+    bullet([run("I see with my eyes. I hear with my ears.", { bold: true, color: C.BLUE })]),
+    bullet([run("I smell with my nose. I taste with my tongue. I touch with my hands.", { bold: true, color: C.BLUE })]),
   ]);
 }
 function lessonS57() {
   return dayLesson(57, "LISTENING: “THIS IS ANNA”", [
     annaBox(),
     p("", { after: 60 }),
-    pr([run("How to listen well: ", { bold: true }), run("1. Who is Anna? 2. What is she like (tall? hair?)? 3. What is she wearing?")]),
-    pr([run("I describe with two verbs: ", { bold: true }), run("She is…", { bold: true, color: C.BLUE }), run(" (tall) and "), run("She has…", { bold: true, color: C.BLUE }), run(" (long hair).")]),
+    pr([run("How to listen well:", { bold: true })], { after: 30 }),
+    bullet([run("First listening: who is Anna?")]),
+    bullet([run("Second listening: what is she like (tall? hair?)?")]),
+    bullet([run("Third listening: what is she wearing?")], { after: 60 }),
+    pr([run("I describe with two verbs:", { bold: true })], { after: 30 }),
+    bullet([run("She is…", { bold: true, color: C.BLUE }), run(" tall, thin, pretty.")]),
+    bullet([run("She has…", { bold: true, color: C.BLUE }), run(" long hair, brown eyes.")]),
   ]);
 }
 function lessonS58() {
@@ -873,37 +893,59 @@ function lessonS58() {
     img("u6_clothes.png", 380, 768 / 1408),
     grid(CLOTHES, 3),
     p("", { after: 60 }),
-    pr([run("The verbs: ", { bold: true }), ...kw("to wear", "tou ouèr"), run("   "), ...kw("to put on", "tou poute one"), run("   "), ...kw("to take off", "tou téik of")]),
-    pr([run("Careful: ", { bold: true, color: C.RED }), run("trousers, shorts, glasses, socks are always PLURAL — There are my trousers!")]),
+    pr([run("The verbs of the clothes:", { bold: true })], { after: 30 }),
+    bullet([...kw("to wear", "tou ouèr"), run("  —  I wear my uniform at school.")]),
+    bullet([...kw("to put on", "tou poute one"), run("  —  in the morning, I put on my socks.")]),
+    bullet([...kw("to take off", "tou téik of"), run("  —  in the evening, I take off my shoes.")], { after: 60 }),
+    bullet([run("Careful: ", { bold: true, color: C.RED }), run("trousers, shorts, glasses, socks are always PLURAL — These are my trousers!")]),
   ]);
 }
 function lessonS59() {
   return dayLesson(59, "SHE IS WEARING… — THE PRESENT CONTINUOUS", [
-    pr([run("The formula: ", { bold: true }), run("am / is / are + verb-ing", { bold: true, color: C.BLUE }), run(" — for what happens NOW!")]),
-    pr([...kw("She is wearing a red t-shirt.", "chi iz ouèrinng e rède ti-cheurte")]),
-    pr([...kw("What are you wearing today?", "ouate âr iou ouèrinng toudéi"), run("  →  "), ...kw("I am wearing my school uniform.", "aï am ouèrinng maï skoul iounifôrm")], { after: 60 }),
-    pr([run("The -ing traps: ", { bold: true, color: C.RED }), run("make → making (the e falls), run → running (double letter), lie → lying — see Annex 5!")]),
+    pr([run("The formula:", { bold: true })], { after: 30 }),
+    bullet([run("am / is / are + verb-ing", { bold: true, color: C.BLUE }), run(" — for what happens NOW!")], { after: 60 }),
+    pr([run("The examples:", { bold: true })], { after: 30 }),
+    bullet([...kw("She is wearing a red t-shirt.", "chi iz ouèrinng e rède ti-cheurte")]),
+    bullet([...kw("What are you wearing today?", "ouate âr iou ouèrinng toudéi"), run("  →  "), ...kw("I am wearing my school uniform.", "aï am ouèrinng maï skoul iounifôrm")]),
+    bullet([run("Negative: "), run("He isn’t wearing a cap today.", { bold: true, color: C.BLUE })], { after: 60 }),
+    pr([run("The -ing traps:", { bold: true, color: C.RED })], { after: 30 }),
+    bullet([run("make → making (the e falls), run → running (double letter), lie → lying — see Annex 5!")]),
   ]);
 }
 function lessonS60() {
   return dayLesson(60, "WHAT DOES HE LOOK LIKE? — THE ADJECTIVES", [
     grid(ADJ, 3, 22),
     p("", { after: 60 }),
-    pr([...kw("What does she look like?", "ouate deuz chi louk laïk"), run("  →  "), ...kw("She is tall and pretty.", "chi iz tôl ande priti")]),
-    pr([run("The plan: ", { bold: true }), run("He/She is… (tall) + He/She has… (long hair) + He/She is wearing… — always with kind words!")]),
+    pr([run("The question:", { bold: true })], { after: 30 }),
+    bullet([...kw("What does she look like?", "ouate deuz chi louk laïk"), run("  →  "), ...kw("She is tall and pretty.", "chi iz tôl ande priti")], { after: 60 }),
+    pr([run("The plan of a good description:", { bold: true })], { after: 30 }),
+    bullet([run("He/She is…", { bold: true, color: C.BLUE }), run(" tall, thin, young.")]),
+    bullet([run("He/She has…", { bold: true, color: C.BLUE }), run(" long hair, black eyes.")]),
+    bullet([run("He/She is wearing…", { bold: true, color: C.BLUE }), run(" a blue blouse.")]),
+    bullet([run("Always with kind words!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS61() {
   return dayLesson(61, "TRADITIONAL CLOTHING HERE AND THERE", [
-    pr([run("Madagascar: ", { bold: true }), run("the "), ...kw("lamba", ""), run(", the "), ...kw("lambahoany", ""), run(", the "), ...kw("malabary", ""), run(".")]),
-    pr([run("The Anglophone world: ", { bold: true }), run("the "), ...kw("kilt", "kilte"), run(" (Scotland), the "), ...kw("cowboy hat", "kaobôï hate"), run(" (USA), the "), ...kw("suit and tie", "soute annde taï"), run(" (England).")], { after: 60 }),
-    pr([run("Every country dresses its history — we respect them all!", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("Madagascar:", { bold: true })], { after: 30 }),
+    bullet([run("the "), ...kw("lamba", ""), run(", the "), ...kw("lambahoany", ""), run(", the "), ...kw("malabary", ""), run(".")], { after: 60 }),
+    pr([run("The Anglophone world:", { bold: true })], { after: 30 }),
+    bullet([run("the "), ...kw("kilt", "kilte"), run("  —  Scotland.")]),
+    bullet([run("the "), ...kw("cowboy hat", "kaobôï hate"), run("  —  the USA.")]),
+    bullet([run("the "), ...kw("suit and tie", "soute annde taï"), run("  —  England.")], { after: 60 }),
+    bullet([run("Every country dresses its history — we respect them all!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS62() {
   return dayLesson(62, "READING DAY: “EMMA AND HER FRIENDS AT THE PARK”", [
-    pr([run("The key words of the text: ", { bold: true }), ...kw("a park", "e pârk"), run("  "), ...kw("to play", "tou pléi"), run("  "), ...kw("a kite", "e kaïte"), run("  "), ...kw("happy", "hapi")], { after: 60 }),
-    pr([run("How to read well: ", { bold: true }), run("1. Find who is at the park. 2. Find what each friend IS WEARING (the -ing sentences!). 3. Read with a happy voice.")]),
+    pr([run("The key words of the text:", { bold: true })], { after: 30 }),
+    bullet([...kw("a park", "e pârk"), run("  —  the green place of the town")]),
+    bullet([...kw("to play", "tou pléi"), run("  and  "), ...kw("a kite", "e kaïte")]),
+    bullet([...kw("happy", "hapi"), run("  —  with a big smile!")], { after: 60 }),
+    pr([run("How to read well:", { bold: true })], { after: 30 }),
+    bullet([run("Find who is at the park.")]),
+    bullet([run("Find what each friend IS WEARING (the -ing sentences!).")]),
+    bullet([run("Read with a happy voice.")], { after: 60 }),
     audioBox([{ qr: "qr_t6_u6_emma.png", label: "Emma and her friends at the park — listen and read", url: AUDIO.emma }], COLOR),
   ]);
 }
@@ -911,16 +953,28 @@ function lessonS63() {
   return dayLesson(63, "PRESENT SIMPLE OR PRESENT CONTINUOUS?", [
     grammarBox(),
     p("", { after: 60 }),
-    pr([run("EVERY DAY → simple: ", { bold: true }), ...kw("I wear my uniform every day.", "aï ouèr maï iounifôrm èvri déi")]),
-    pr([run("NOW → continuous: ", { bold: true }), ...kw("Today I am wearing a pullover.", "toudéi aï am ouèrinng e poulôouveur")]),
-    pr([run("The clue words: ", { bold: true }), run("every day, always, often", { bold: true, color: C.BLUE }), run(" → simple — "), run("now, today, look!", { bold: true, color: C.BLUE }), run(" → continuous.")]),
+    pr([run("The two presents face to face:", { bold: true })], { after: 30 }),
+    bullet([run("EVERY DAY → simple: ", { bold: true }), ...kw("I wear my uniform every day.", "aï ouèr maï iounifôrm èvri déi")]),
+    bullet([run("NOW → continuous: ", { bold: true }), ...kw("Today I am wearing a pullover.", "toudéi aï am ouèrinng e poulôouveur")], { after: 60 }),
+    pr([run("The clue words:", { bold: true })], { after: 30 }),
+    bullet([run("every day, always, often", { bold: true, color: C.BLUE }), run("  →  simple.")]),
+    bullet([run("now, today, look!", { bold: true, color: C.BLUE }), run("  →  continuous.")]),
+    bullet([run("One more pair: "), run("She cooks every day. / She is cooking now!", { bold: true, color: C.BLUE })]),
   ]);
 }
 function lessonS64() {
   return dayLesson(64, "WRITING DAY: MY FAVOURITE FAMOUS PERSON", [
-    pr([run("The plan of my paragraph: ", { bold: true }), run("1. My favourite famous person is… — 2. He/She is… (tall, thin…) — 3. He/She has… (short hair…) — 4. Today he/she is wearing… — 5. I like him/her because…")], { after: 60 }),
-    pr([run("The writing rules: ", { bold: true }), run("capital letter for the name — kind adjectives only — one -ing sentence at least!")]),
-    pr([run("Model: ", { bold: true }), run("My favourite famous person is a singer. She is tall and pretty. She has long black hair. Today she is wearing a beautiful lamba. I like her because she sings for the children.", { italic: true })]),
+    pr([run("The plan of my paragraph:", { bold: true })], { after: 30 }),
+    bullet([run("1. My favourite famous person is…")]),
+    bullet([run("2. He/She is… (tall, thin…).")]),
+    bullet([run("3. He/She has… (short hair…).")]),
+    bullet([run("4. Today he/she is wearing…")]),
+    bullet([run("5. I like him/her because…")], { after: 60 }),
+    pr([run("The writing rules:", { bold: true })], { after: 30 }),
+    bullet([run("Capital letter for the name.")]),
+    bullet([run("Kind adjectives only — one -ing sentence at least!")], { after: 60 }),
+    pr([run("Model:", { bold: true })], { after: 30 }),
+    pr([run("My favourite famous person is a singer. She is tall and pretty. She has long black hair. Today she is wearing a beautiful lamba. I like her because she sings for the children.", { italic: true })]),
   ]);
 }
 

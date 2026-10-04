@@ -746,33 +746,49 @@ function lessonS42() {
     img("u5_tree.png", 380, 768 / 1408),
     grid(FAMILY, 3),
     p("", { after: 60 }),
-    pr([run("All these people are my "), ...kw("relatives", "rélativz"), run(".  Grandma + Grandpa = my "), ...kw("grandparents", "granndpèrennts"), run(".")]),
-    pr([run("The family tree grows: parents at the top, children at the bottom!", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The big family:", { bold: true })], { after: 30 }),
+    bullet([run("All these people are my "), ...kw("relatives", "rélativz"), run(".")]),
+    bullet([run("Grandma + Grandpa = my "), ...kw("grandparents", "granndpèrennts"), run(".")]),
+    bullet([run("My uncle’s children = my "), ...kw("cousins", "keuzinez"), run(".")], { after: 60 }),
+    pr([run("More examples:", { bold: true })], { after: 30 }),
+    bullet([run("My mother’s brother is my uncle. My father’s sister is my aunt.", { bold: true, color: C.BLUE })]),
+    bullet([run("The family tree grows: parents at the top, children at the bottom!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS43() {
   return dayLesson(43, "LISTENING: “MY FAMILY”", [
     familyBox(),
     p("", { after: 60 }),
-    pr([run("How to listen well: ", { bold: true }), run("1. First listening: who speaks? 2. Second listening: how many people? 3. Third listening: the little words (uncle, aunt, cousin).")]),
-    pr([run("I answer with full sentences: ", { bold: true }), ...kw("Fidy has one uncle.", "fidi haz ouane eunnkeul")]),
+    pr([run("How to listen well:", { bold: true })], { after: 30 }),
+    bullet([run("First listening: who speaks?")]),
+    bullet([run("Second listening: how many people?")]),
+    bullet([run("Third listening: the little words (uncle, aunt, cousin).")], { after: 60 }),
+    pr([run("How to answer:", { bold: true })], { after: 30 }),
+    bullet([run("With full sentences: "), ...kw("Fidy has one uncle.", "fidi haz ouane eunnkeul")]),
+    bullet([run("With the numbers: "), ...kw("He has five cousins.", "hi haz faïv keuzinez")]),
   ]);
 }
 function lessonS44() {
   return dayLesson(44, "ONE AND MANY — THE PLURALS", [
-    pr([run("Regular: ", { bold: true }), ...kw("a brother → brothers", "breuzeur → breuzeurz"), run("   "), ...kw("a story → stories", "stôri → stôriz"), run(" (consonant + y → ies!)")], { after: 40 }),
+    pr([run("The regular plurals:", { bold: true })], { after: 30 }),
+    bullet([...kw("a brother → brothers", "breuzeur → breuzeurz"), run("  —  just add -s!")]),
+    bullet([...kw("a story → stories", "stôri → stôriz"), run("  —  consonant + y → ies!")]),
+    bullet([...kw("a box → boxes", "boks → boksiz"), run("  —  after s, x, ch, sh → -es!")], { after: 40 }),
     pr([run("Irregular — no -s! Learn them by heart:", { bold: true, color: C.RED })], { after: 40 }),
     grid(PLURALS, 3),
     p("", { after: 60 }),
-    pr([run("The trap: ", { bold: true, color: C.RED }), run("one child, two children — one person, many people!")]),
+    bullet([run("The trap: ", { bold: true, color: C.RED }), run("one child, two children — one person, many people!")]),
   ]);
 }
 function lessonS45() {
   return dayLesson(45, "THE POSSESSIVE CASE — THE LITTLE ’S", [
-    pr([run("One owner: ", { bold: true }), ...kw("my uncle’s bike", "maï eunnkeulz baïk"), run(" = the bike of my uncle.")]),
-    pr([run("Many owners (’ after the s): ", { bold: true }), ...kw("my cousins’ toys", "maï keuzinez toïz"), run("   "), ...kw("my grandparents’ house", "maï granndpèrenntss haouss")]),
-    pr([run("Irregular plural owner (’s again): ", { bold: true }), ...kw("the children’s books", "ze tchildrènez bouks")], { after: 60 }),
-    pr([run("The order changes! ", { bold: true, color: C.RED }), run("In English the owner comes FIRST: Soa’s bag (not “the bag of Soa”).")]),
+    pr([run("The three cases of the little ’s:", { bold: true })], { after: 30 }),
+    bullet([run("One owner: ", { bold: true }), ...kw("my uncle’s bike", "maï eunnkeulz baïk"), run(" = the bike of my uncle.")]),
+    bullet([run("Many owners (’ after the s): ", { bold: true }), ...kw("my cousins’ toys", "maï keuzinez toïz"), run("   "), ...kw("my grandparents’ house", "maï granndpèrenntss haouss")]),
+    bullet([run("Irregular plural owner (’s again): ", { bold: true }), ...kw("the children’s books", "ze tchildrènez bouks")], { after: 60 }),
+    pr([run("Remember:", { bold: true })], { after: 30 }),
+    bullet([run("The order changes! ", { bold: true, color: C.RED }), run("In English the owner comes FIRST: Soa’s bag (not “the bag of Soa”).")]),
+    bullet([run("More examples: "), run("Grandma’s stories, my aunt’s phone, the pupils’ desks.", { bold: true, color: C.BLUE })]),
   ]);
 }
 function lessonS46() {
@@ -780,39 +796,63 @@ function lessonS46() {
     img("u5_thisthat.png", 380, 768 / 1408),
     grid(DEMO, 4),
     p("", { after: 60 }),
-    pr([run("NEAR: ", { bold: true }), ...kw("This is my uncle.", "zisse iz maï eunnkeul"), run("   "), ...kw("These are my cousins.", "zize âr maï keuzinez")]),
-    pr([run("FAR: ", { bold: true }), ...kw("That is my aunt.", "zate iz maï ânnte"), run("   "), ...kw("Those are my grandparents.", "zôouz âr maï granndpèrennts")]),
+    pr([run("NEAR (here, I can touch it):", { bold: true })], { after: 30 }),
+    bullet([run("Singular: "), ...kw("This is my uncle.", "zisse iz maï eunnkeul")]),
+    bullet([run("Plural: "), ...kw("These are my cousins.", "zize âr maï keuzinez")], { after: 60 }),
+    pr([run("FAR (there, I point at it):", { bold: true })], { after: 30 }),
+    bullet([run("Singular: "), ...kw("That is my aunt.", "zate iz maï ânnte")]),
+    bullet([run("Plural: "), ...kw("Those are my grandparents.", "zôouz âr maï granndpèrennts")], { after: 60 }),
+    bullet([run("The memory trick: this/these = near — that/those = far!", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS47() {
   return dayLesson(47, "TALKING ABOUT MY RELATIVES", [
     albumBox(),
     p("", { after: 60 }),
-    pr([...kw("Who is this?", "hou iz zisse"), run("  →  "), ...kw("This is my aunt Vero.", "zisse iz maï ânnte véro")]),
-    pr([...kw("Who are those?", "hou âr zôouz"), run("  →  "), ...kw("Those are my cousins.", "zôouz âr maï keuzinez")], { after: 60 }),
-    pr([run("With a photo or a drawing, I present three relatives to my friend.", { italic: true, color: C.GRAY, size: 24 })]),
+    pr([run("The album questions:", { bold: true })], { after: 30 }),
+    bullet([...kw("Who is this?", "hou iz zisse"), run("  →  "), ...kw("This is my aunt Vero.", "zisse iz maï ânnte véro")]),
+    bullet([...kw("Who are those?", "hou âr zôouz"), run("  →  "), ...kw("Those are my cousins.", "zôouz âr maï keuzinez")]),
+    bullet([run("I add one detail: "), ...kw("She is kind. They live in Antsirabe.", "chi iz kaïnnde. zéi live ine anntsirabé")], { after: 60 }),
+    bullet([run("With a photo or a drawing, I present three relatives to my friend.", { italic: true, color: C.GRAY, size: 24 })]),
   ]);
 }
 function lessonS48() {
   return dayLesson(48, "READING DAY: “MY GRANDMOTHER LALA” (1)", [
-    pr([run("The key words of the text: ", { bold: true }), ...kw("a village", "e vilidj"), run("  "), ...kw("stories", "stôriz"), run("  "), ...kw("to visit", "tou vizite"), run("  "), ...kw("kind", "kaïnnde")], { after: 60 }),
-    pr([run("How to read well: ", { bold: true }), run("1. Read the title: who is the text about? 2. Find the family words. 3. Find the little ’s of possession.")]),
+    pr([run("The key words of the text:", { bold: true })], { after: 30 }),
+    bullet([...kw("a village", "e vilidj"), run("  —  a small town in the country")]),
+    bullet([...kw("stories", "stôriz"), run("  —  Grandma tells them in the evening")]),
+    bullet([...kw("to visit", "tou vizite"), run("  —  to go and see somebody")]),
+    bullet([...kw("kind", "kaïnnde"), run("  —  with a good heart")], { after: 60 }),
+    pr([run("How to read well:", { bold: true })], { after: 30 }),
+    bullet([run("Read the title: who is the text about?")]),
+    bullet([run("Find the family words.")]),
+    bullet([run("Find the little ’s of possession.")], { after: 60 }),
     audioBox([{ qr: "qr_t6_u5_grandma.png", label: "My grandmother Lala — listen and read", url: AUDIO.grandma }], COLOR),
   ]);
 }
 function lessonS49() {
   return dayLesson(49, "GRANDPARENTS HERE AND THERE", [
-    pr([run("In Madagascar: ", { bold: true }), run("many children live with their grandparents — the grandmother tells stories in the evening.")]),
-    pr([run("In England or in the USA: ", { bold: true }), run("grandparents often live far away — the children visit them for the holidays.")], { after: 60 }),
-    pr([run("Same love, different houses! ", { bold: true, color: C.BLUE }), run("We compare with: "), run("here", { bold: true, color: C.BLUE }), run(" / "), run("there", { bold: true, color: C.BLUE }), run(" — "), run("but", { bold: true, color: C.BLUE }), run(" — "), run("both", { bold: true, color: C.BLUE }), run(".")]),
-    pr([run("Model: ", { bold: true }), run("Here, Grandma lives with us. There, Grandma lives far, but both grandmas love their grandchildren!", { italic: true })]),
+    pr([run("Two ways of family life:", { bold: true })], { after: 30 }),
+    bullet([run("In Madagascar: ", { bold: true }), run("many children live with their grandparents — the grandmother tells stories in the evening.")]),
+    bullet([run("In England or in the USA: ", { bold: true }), run("grandparents often live far away — the children visit them for the holidays.")], { after: 60 }),
+    pr([run("How to compare:", { bold: true })], { after: 30 }),
+    bullet([run("Same love, different houses! ", { bold: true, color: C.BLUE }), run("We compare with: "), run("here", { bold: true, color: C.BLUE }), run(" / "), run("there", { bold: true, color: C.BLUE }), run(" — "), run("but", { bold: true, color: C.BLUE }), run(" — "), run("both", { bold: true, color: C.BLUE }), run(".")], { after: 60 }),
+    pr([run("Model:", { bold: true })], { after: 30 }),
+    pr([run("Here, Grandma lives with us. There, Grandma lives far, but both grandmas love their grandchildren!", { italic: true })]),
   ]);
 }
 function lessonS50() {
   return dayLesson(50, "WRITING DAY: MY EXTENDED FAMILY", [
-    pr([run("The plan of my paragraph: ", { bold: true }), run("1. I have… (uncles, aunts, cousins) — 2. one sentence with the ’s (my uncle’s house) — 3. one sentence with this/these — 4. one irregular plural (children, people).")], { after: 60 }),
-    pr([run("The writing rules: ", { bold: true }), run("capital letters for the names (Vero, Lala) — the apostrophe of ’s is small but powerful!")]),
-    pr([run("Model: ", { bold: true }), run("I have two uncles and five cousins. My uncle’s house is in Antsirabe. These are my cousins: they are kind children.", { italic: true })]),
+    pr([run("The plan of my paragraph:", { bold: true })], { after: 30 }),
+    bullet([run("1. I have… (uncles, aunts, cousins).")]),
+    bullet([run("2. One sentence with the ’s: my uncle’s house.")]),
+    bullet([run("3. One sentence with this/these.")]),
+    bullet([run("4. One irregular plural: children, people.")], { after: 60 }),
+    pr([run("The writing rules:", { bold: true })], { after: 30 }),
+    bullet([run("Capital letters for the names (Vero, Lala).")]),
+    bullet([run("The apostrophe of ’s is small but powerful!")], { after: 60 }),
+    pr([run("Model:", { bold: true })], { after: 30 }),
+    pr([run("I have two uncles and five cousins. My uncle’s house is in Antsirabe. These are my cousins: they are kind children.", { italic: true })]),
   ]);
 }
 
