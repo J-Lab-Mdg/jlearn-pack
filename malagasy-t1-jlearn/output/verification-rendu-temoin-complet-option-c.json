@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "file": "output/Santionany-Feno-Malagasy-T1-Safidy-C-Fiasanny-Teny-Asa-An-tsoratra-v1.docx",
+  "renderer": "LibreOffice WASM via @deepseek-ai/libreoffice-kit 0.1.5",
+  "rasterEngine": "libreoffice",
+  "dpi": 144,
+  "pageCount": 13,
+  "sourceSha256": "217b6ecab6f06585bf9002fcf52f3556f2294d1211d1379bfe85a68be3e2e7d3",
+  "missingFonts": [
+    "Times New Roman"
+  ],
+  "fontNote": "Times New Roman is declared in the DOCX. The Linux WASM renderer used a metrically compatible fallback for preview rendering.",
+  "checks": {
+    "conversionToPdf": true,
+    "allPagesRendered": true,
+    "allPagesNonempty": true,
+    "visualInspectionAll13Pages": true,
+    "illustrationVisible": true,
+    "letterPathDiagramVisible": true,
+    "studentBookPagesReadable": true,
+    "practiceBookPagesWritable": true,
+    "teacherGuideTableReadable": true,
+    "weeklyConsolidationReadable": true,
+    "noClippedTextDetected": true,
+    "noUnintendedBlankPage": true
+  }
+}

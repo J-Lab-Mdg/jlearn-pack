@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "file": "output/Santionany-Feno-Malagasy-T1-Safidy-C-Fiasanny-Teny-Asa-An-tsoratra-v1.docx",
+  "size": 2689527,
+  "checks": {
+    "requiredTextComplete": true,
+    "noForbiddenFrenchRoutine": true,
+    "fourSupportsPresent": true,
+    "fullSkillStructurePresent": true,
+    "explicitRoutinePresent": true,
+    "sourceTracePresent": true,
+    "requiredImagesEmbedded": true,
+    "weeklyConsolidationPresent": true,
+    "correctionAndRemediationPresent": true,
+    "rawLinkEmbedded": true,
+    "substantialPagination": true
+  },
+  "missing": [],
+  "forbiddenFound": [],
+  "media": [
+    "word/media/2481889d7317af31e2aa9d672338f66c778ded8c.png",
+    "word/media/66be5cffb6ff42a08079f598070617fe65029df5.png"
+  ],
+  "metrics": {
+    "pageBreaks": 12,
+    "drawings": 3,
+    "hyperlinks": 2,
+    "characters": 9758
+  }
+}

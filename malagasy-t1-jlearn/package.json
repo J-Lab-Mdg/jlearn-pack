@@ -8,6 +8,8 @@
     "generate": "node src/generate-fiche-temoin.js",
     "generate:seance02": "node src/generate-fiche-seance02.js",
     "generate:architecture-option-c": "node src/generate-architecture-option-c.js",
+    "generate:temoin-option-c": "node src/generate-temoin-option-c.js",
+    "verify:temoin-option-c": "node src/verify-temoin-option-c.js",
     "verify": "node src/verify-fiche-temoin.js",
     "verify:seance02": "node src/verify-fiche-seance02.js",
     "test": "npm run generate && npm run verify && npm run generate:seance02 && npm run verify:seance02"
