@@ -173,7 +173,13 @@ function contents() {
     tocLink("s85", "    Session 85 — Revision"),
     tocLink("s86", "    Session 86 — Test paper"),
     p("", { after: 40 }),
-    p([run("… The six annexes are being added in the final block …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("annexes", "ANNEXES — THE TREASURE BOX OF THE EXAM YEAR", { bold: true, size: 26 }),
+    tocLink("ann1", "    Annex 1 — Picture dictionary"),
+    tocLink("ann2", "    Annex 2 — Songs and chants"),
+    tocLink("ann3", "    Annex 3 — Pronunciation guide"),
+    tocLink("ann4", "    Annex 4 — Flashcards to cut out"),
+    tocLink("ann5", "    Annex 5 — Conjugation guide"),
+    tocLink("ann6", "    Annex 6 — Phonetics guide (IPA and brackets)"),
   ];
 }
 
@@ -231,6 +237,7 @@ async function main() {
         ...require("./unit6")(),
         ...require("./unit7")(),
         ...require("./unit8")(),
+        ...require("./annexes")(),
       ],
     }],
   });
