@@ -119,6 +119,18 @@ function contents() {
     tocLink("s39", "    Session 39 — Revision"),
     tocLink("s40", "    Session 40 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit5", "UNIT 5 — FAMILY (Sessions 41–50)", { bold: true, size: 26 }),
+    tocLink("s41", "    Session 41 — Listening: May I come in? — permission"),
+    tocLink("s42", "    Session 42 — May vs can + warnings"),
+    tocLink("s43", "    Session 43 — Family relationships: close to, role model"),
+    tocLink("s44", "    Session 44 — Reporting an interview: He said he was…"),
+    tocLink("s45", "    Session 45 — Listening: Tanora Garan’Teen — youth problems"),
+    tocLink("s46", "    Session 46 — Advice: must, have to, don’t have to"),
+    tocLink("s47", "    Session 47 — Reading: the Malagasy family"),
+    tocLink("s48", "    Session 48 — Writing: the family dialogue"),
+    tocLink("s49", "    Session 49 — Revision"),
+    tocLink("s50", "    Session 50 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -173,6 +185,7 @@ async function main() {
         ...require("./unit2")(),
         ...require("./unit3")(),
         ...require("./unit4")(),
+        ...require("./unit5")(),
       ],
     }],
   });
