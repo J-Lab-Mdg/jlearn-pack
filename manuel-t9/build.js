@@ -145,6 +145,20 @@ function contents() {
     tocLink("s61", "    Session 61 — Revision"),
     tocLink("s62", "    Session 62 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit7", "UNIT 7 — JOB AND MASS MEDIA (Sessions 63–74)", { bold: true, size: 26 }),
+    tocLink("s63", "    Session 63 — Common jobs — verb + er"),
+    tocLink("s64", "    Session 64 — Job skills — can, be good at"),
+    tocLink("s65", "    Session 65 — The job that suits you — mingle game"),
+    tocLink("s66", "    Session 66 — Listening: the job interview"),
+    tocLink("s67", "    Session 67 — Simulate a job interview"),
+    tocLink("s68", "    Session 68 — Reading: the job advertisement"),
+    tocLink("s69", "    Session 69 — Reading: the job application email"),
+    tocLink("s70", "    Session 70 — The present perfect: since and for"),
+    tocLink("s71", "    Session 71 — Present perfect vs simple past"),
+    tocLink("s72", "    Session 72 — Writing: job ad, CV and application letter"),
+    tocLink("s73", "    Session 73 — Revision"),
+    tocLink("s74", "    Session 74 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -201,6 +215,7 @@ async function main() {
         ...require("./unit4")(),
         ...require("./unit5")(),
         ...require("./unit6")(),
+        ...require("./unit7")(),
       ],
     }],
   });
