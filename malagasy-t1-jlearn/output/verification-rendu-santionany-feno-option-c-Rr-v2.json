@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "file": "output/Santionany-Feno-Malagasy-T1-Safidy-C-Rr-v2.docx",
+  "renderer": "LibreOffice WASM via @deepseek-ai/libreoffice-kit 0.1.5",
+  "rasterEngine": "libreoffice",
+  "dpi": 144,
+  "pageCount": 10,
+  "sourceSha256": "878b41fafcaf5413e9674985b4447dca0c1950a077d2a465404bed9a2c16bb1f",
+  "missingFonts": [
+    "Times New Roman"
+  ],
+  "fontNote": "Times New Roman is declared in the DOCX. The Linux WASM preview renderer used a metrically compatible fallback.",
+  "checks": {
+    "conversionToPdf": true,
+    "allPagesRendered": true,
+    "allPagesNonempty": true,
+    "visualInspectionAll10Pages": true,
+    "targetVocabularyIllustrationVisible": true,
+    "letterPathDiagramVisible": true,
+    "modelDottedBlankProgressionVisible": true,
+    "studentPagesHaveNoTechnicalABHeadings": true,
+    "teacherPlanningMergedUnderGuide": true,
+    "fullI_II_IIIReadable": true,
+    "weeklyConsolidationReadable": true,
+    "noClippedTextDetected": true,
+    "noUnintendedBlankPage": true
+  }
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" fill="#173b35">
+  <defs>
+    <style>
+      text{font-family:'DejaVu Sans',Arial,sans-serif}
+      .guide{stroke:#83aac0;stroke-width:3}
+      .base{stroke:#d56f5b;stroke-width:4}
+      .dashLetter{fill:none;stroke:#a6a6a6;stroke-width:3;stroke-dasharray:7 7}
+    </style>
+  </defs>
+  <rect x="4" y="4" width="1392" height="812" rx="28" fill="#fffefa" stroke="#b9d2c9" stroke-width="6"/>
+
+  <text x="420" y="48" text-anchor="middle" font-size="27" font-weight="900" fill="#2c6e9b">Araho.</text>
+  <text x="1045" y="48" text-anchor="middle" font-size="27" font-weight="900" fill="#2c8b70">Tohizo.</text>
+
+  <!-- Uppercase row -->
+  <rect x="35" y="70" width="1330" height="250" rx="18" fill="#f7fbfd"/>
+  <text x="63" y="105" font-size="22" font-weight="800" fill="#2c6e9b">R sorabaventy</text>
+  <path d="M60 135H1340M60 225H1340M60 295H1340" class="guide" opacity="0.85"/>
+  <path d="M60 260H1340" class="base" opacity="0.85"/>
+  <text x="95" y="267" font-size="174" font-weight="500" fill="#173b35">R</text>
+  <text x="275" y="267" font-size="174" font-weight="500" class="dashLetter">R</text>
+  <text x="445" y="267" font-size="174" font-weight="500" class="dashLetter">R</text>
+  <text x="615" y="267" font-size="174" font-weight="500" class="dashLetter">R</text>
+  <path d="M815 115V300M1000 115V300M1185 115V300" stroke="#d5e3e9" stroke-width="2" stroke-dasharray="8 9"/>
+
+  <!-- Lowercase row -->
+  <rect x="35" y="340" width="1330" height="250" rx="18" fill="#fbfdfb"/>
+  <text x="63" y="375" font-size="22" font-weight="800" fill="#2c8b70">r soramadinika</text>
+  <path d="M60 405H1340M60 495H1340M60 565H1340" class="guide" opacity="0.85"/>
+  <path d="M60 530H1340" class="base" opacity="0.85"/>
+  <text x="105" y="537" font-size="170" font-weight="500" fill="#173b35">r</text>
+  <text x="285" y="537" font-size="170" font-weight="500" class="dashLetter">r</text>
+  <text x="455" y="537" font-size="170" font-weight="500" class="dashLetter">r</text>
+  <text x="625" y="537" font-size="170" font-weight="500" class="dashLetter">r</text>
+  <path d="M815 385V570M1000 385V570M1185 385V570" stroke="#d5e3e9" stroke-width="2" stroke-dasharray="8 9"/>
+
+  <!-- Independent row -->
+  <text x="63" y="646" font-size="27" font-weight="900" fill="#e17b38">Soraty samirery.</text>
+  <path d="M60 685H1340M60 765H1340" class="guide" opacity="0.9"/>
+  <path d="M60 740H1340" class="base" opacity="0.9"/>
+</svg>

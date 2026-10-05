@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "file": "output/Santionany-Feno-Malagasy-T1-Safidy-C-Rr-v2.docx",
+  "size": 2982204,
+  "checks": {
+    "requiredTextComplete": true,
+    "forbiddenTechnicalHeadingsAbsent": true,
+    "correctSkillTitle": true,
+    "planningMergedIntoTeacherGuide": true,
+    "correctSubdisciplineHierarchy": true,
+    "fadingScaffoldPresent": true,
+    "fullSkillStructurePresent": true,
+    "imagesEmbedded": true,
+    "weeklyConsolidationPresent": true,
+    "rawAndOfficialLinksEmbedded": true,
+    "substantialPagination": true
+  },
+  "missing": [],
+  "forbiddenFound": [],
+  "media": [
+    "word/media/d09ea0172aa3ad3ea21950503df632027f5a6e11.png",
+    "word/media/66be5cffb6ff42a08079f598070617fe65029df5.png",
+    "word/media/9635a467c5daf69b0b8ce587729b24c2cf5fdced.png"
+  ],
+  "metrics": {
+    "pageBreaks": 9,
+    "drawings": 4,
+    "hyperlinks": 2,
+    "characters": 6772
+  }
+}
