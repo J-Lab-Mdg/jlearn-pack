@@ -159,7 +159,21 @@ function contents() {
     tocLink("s73", "    Session 73 — Revision"),
     tocLink("s74", "    Session 74 — Test paper"),
     p("", { after: 40 }),
-    p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("unit8", "UNIT 8 — ENVIRONMENT (Sessions 75–86)", { bold: true, size: 26 }),
+    tocLink("s75", "    Session 75 — Environmental issues — describing pictures"),
+    tocLink("s76", "    Session 76 — Causes and consequences of pollution"),
+    tocLink("s77", "    Session 77 — Listening: climate change"),
+    tocLink("s78", "    Session 78 — The climate of Madagascar"),
+    tocLink("s79", "    Session 79 — Tips to protect the environment — listen and tick"),
+    tocLink("s80", "    Session 80 — Verbs with the gerund"),
+    tocLink("s81", "    Session 81 — If-clauses type 2 and type 3"),
+    tocLink("s82", "    Session 82 — Reading: water, water…"),
+    tocLink("s83", "    Session 83 — Writing: our conservation poster"),
+    tocLink("s84", "    Session 84 — Earth Day — here and abroad"),
+    tocLink("s85", "    Session 85 — Revision"),
+    tocLink("s86", "    Session 86 — Test paper"),
+    p("", { after: 40 }),
+    p([run("… The six annexes are being added in the final block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -216,6 +230,7 @@ async function main() {
         ...require("./unit5")(),
         ...require("./unit6")(),
         ...require("./unit7")(),
+        ...require("./unit8")(),
       ],
     }],
   });

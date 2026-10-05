@@ -42,5 +42,5 @@ Dossier public lecture seule : `https://drive.google.com/drive/folders/1yVMjApTY
 - Bloc 5 ☑ : Unit 5 Family (S41–S50). — livré.
 - Bloc 6 ☑ : Unit 6 Healthy Life (S51–S62). — livré.
 - Bloc 7 ☑ : Unit 7 Job and Mass Media (S63–S74). — livré.
-- Bloc 8 ☐ : Unit 8 Environment (S75–S86).
+- Bloc 8 ☑ : Unit 8 Environment (S75–S86). — livré.
 - Bloc 9 ☐ : 6 annexes + page finale + TOC + MAJ PR.
