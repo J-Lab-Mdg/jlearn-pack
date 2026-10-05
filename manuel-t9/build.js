@@ -93,6 +93,18 @@ function contents() {
     tocLink("s17", "    Session 17 — Revision"),
     tocLink("s18", "    Session 18 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit3", "UNIT 3 — OUR TIME (Sessions 19–28)", { bold: true, size: 26 }),
+    tocLink("s19", "    Session 19 — Describing past events: What a day! How boring!"),
+    tocLink("s20", "    Session 20 — Listening: Bruno’s vacation"),
+    tocLink("s21", "    Session 21 — Past continuous vs simple past (while / when)"),
+    tocLink("s22", "    Session 22 — The alibi game"),
+    tocLink("s23", "    Session 23 — Listening: past habits — used to"),
+    tocLink("s24", "    Session 24 — Be used to + So did I! Neither did I!"),
+    tocLink("s25", "    Session 25 — Reading: Titanic"),
+    tocLink("s26", "    Session 26 — Writing: the cohesive paragraph + culture corner"),
+    tocLink("s27", "    Session 27 — Revision"),
+    tocLink("s28", "    Session 28 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -145,6 +157,7 @@ async function main() {
         ...dashboard(), pageBreak(),
         ...require("./unit1")(),
         ...require("./unit2")(),
+        ...require("./unit3")(),
       ],
     }],
   });
