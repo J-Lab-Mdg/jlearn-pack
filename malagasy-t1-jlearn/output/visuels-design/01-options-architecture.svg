@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" fill="#173B35">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF8F0"/>
+      <stop offset="1" stop-color="#EEF5F1"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2C6E9B"/><stop offset="1" stop-color="#174B70"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E89445"/><stop offset="1" stop-color="#C9682F"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2C8B70"/><stop offset="1" stop-color="#17634F"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#173B35" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2C6E9B"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2C8B70"/>
+    </marker>
+    <style>
+      text{font-family:'DejaVu Sans',Arial,sans-serif}
+      .small{font-size:21px;font-weight:600;letter-spacing:1px}
+      .body{font-size:23px}
+      .bullet{font-size:21px}
+      .cardtitle{font-size:34px;font-weight:800}
+      .label{font-size:18px;font-weight:800;letter-spacing:1.7px}
+    </style>
+  </defs>
+
+  <rect width="1800" height="1200" fill="url(#bg)"/>
+  <circle cx="1660" cy="70" r="230" fill="#E8B969" opacity="0.13"/>
+  <circle cx="90" cy="1110" r="200" fill="#2C8B70" opacity="0.07"/>
+  <g opacity="0.18" stroke="#2C8B70" fill="none" stroke-width="3">
+    <path d="M1470 90 q55 -50 110 0 t110 0"/><path d="M1470 120 q55 -50 110 0 t110 0"/>
+  </g>
+
+  <rect x="76" y="58" width="340" height="38" rx="19" fill="#E8B969" opacity="0.26"/>
+  <text x="96" y="85" class="label" fill="#8A5A13">PLAN DE CONCEPTION • À VALIDER</text>
+  <text x="76" y="158" font-size="60" font-weight="900">Trois architectures possibles</text>
+  <text x="78" y="200" font-size="25" fill="#527069">Malagasy T1 • Fiasan’ny teny sy Asa an-tsoratra</text>
+
+  <!-- CARD A -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="245" width="520" height="770" rx="34" fill="#FFFFFF"/>
+  </g>
+  <rect x="70" y="245" width="520" height="13" rx="6" fill="#2C6E9B"/>
+  <rect x="108" y="287" width="132" height="38" rx="19" fill="#DCEAF3"/>
+  <text x="133" y="313" class="label" fill="#174B70">OPTION A</text>
+  <text x="108" y="370" class="cardtitle">Manuel réutilisable</text>
+  <text x="108" y="411" class="cardtitle">+ cahier ordinaire</text>
+
+  <!-- Book A -->
+  <g transform="translate(122 455)">
+    <rect x="0" y="14" width="154" height="190" rx="13" fill="url(#blue)"/>
+    <rect x="18" y="40" width="118" height="78" rx="9" fill="#F4DCA8"/>
+    <circle cx="77" cy="70" r="21" fill="#E89445" opacity="0.8"/>
+    <path d="M40 105 q36-35 72 0" fill="none" stroke="#2C8B70" stroke-width="8"/>
+    <text x="77" y="148" text-anchor="middle" font-size="15" font-weight="800" fill="#FFFFFF">BOKIN’NY</text>
+    <text x="77" y="169" text-anchor="middle" font-size="15" font-weight="800" fill="#FFFFFF">MPIANATRA</text>
+    <text x="77" y="230" text-anchor="middle" font-size="18" font-weight="700" fill="#174B70">Je regarde</text>
+  </g>
+  <path d="M302 555 H355" stroke="#2C6E9B" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <!-- Notebook A -->
+  <g transform="translate(382 462)">
+    <rect x="0" y="0" width="145" height="192" rx="12" fill="#F4E1B7" stroke="#C99949" stroke-width="4"/>
+    <path d="M22 0 v192" stroke="#D55D4A" stroke-width="3"/>
+    <g stroke="#83AABF" stroke-width="2" opacity="0.8">
+      <path d="M30 48h96"/><path d="M30 76h96"/><path d="M30 104h96"/><path d="M30 132h96"/><path d="M30 160h96"/>
+    </g>
+    <path d="M48 82 q25-28 52 0" fill="none" stroke="#174B70" stroke-width="4"/>
+    <text x="73" y="223" text-anchor="middle" font-size="18" font-weight="700" fill="#174B70">J’écris tout</text>
+  </g>
+
+  <text x="108" y="728" class="body" font-weight="700">Fonctionnement</text>
+  <text x="108" y="764" class="bullet">• Le modèle reste dans le manuel.</text>
+  <text x="108" y="798" class="bullet">• Toute la pratique va au cahier.</text>
+  <rect x="106" y="834" width="446" height="61" rx="16" fill="#E6F2ED"/>
+  <text x="128" y="872" class="bullet" font-weight="700" fill="#17634F">+ Économique et réutilisable</text>
+  <rect x="106" y="909" width="446" height="72" rx="16" fill="#FBE9E3"/>
+  <text x="128" y="938" class="bullet" font-weight="700" fill="#A14E33">− Beaucoup de copie au T1</text>
+  <text x="128" y="966" font-size="18" fill="#7A554A">Réglures et pointillés difficiles.</text>
+
+  <!-- CARD B -->
+  <g filter="url(#shadow)">
+    <rect x="640" y="245" width="520" height="770" rx="34" fill="#FFFFFF"/>
+  </g>
+  <rect x="640" y="245" width="520" height="13" rx="6" fill="#E17B38"/>
+  <rect x="678" y="287" width="132" height="38" rx="19" fill="#FBE6D3"/>
+  <text x="703" y="313" class="label" fill="#A94E1E">OPTION B</text>
+  <text x="678" y="370" class="cardtitle">Cahier d’activités</text>
+  <text x="678" y="411" class="cardtitle">entièrement consommable</text>
+
+  <!-- Workbook B -->
+  <g transform="translate(800 450)">
+    <rect x="0" y="0" width="205" height="220" rx="15" fill="#FFF7EA" stroke="#E89445" stroke-width="5"/>
+    <rect x="0" y="0" width="205" height="42" rx="12" fill="url(#orange)"/>
+    <text x="102" y="28" text-anchor="middle" font-size="17" font-weight="800" fill="#FFFFFF">KAHIE FANAZARANA</text>
+    <circle cx="36" cy="75" r="12" fill="#E8B969"/><text x="58" y="81" font-size="17" font-weight="700">Araho.</text>
+    <path d="M30 111 q32-38 64 0 t64 0" fill="none" stroke="#B6B0A5" stroke-width="4" stroke-dasharray="7 7"/>
+    <g stroke="#83AABF" stroke-width="2">
+      <path d="M27 144h151"/><path d="M27 174h151"/><path d="M27 204h151"/>
+    </g>
+    <path d="M45 164 q20-27 45 0" fill="none" stroke="#174B70" stroke-width="4"/>
+    <text x="102" y="252" text-anchor="middle" font-size="18" font-weight="700" fill="#A94E1E">Je travaille dans le livre</text>
+  </g>
+
+  <text x="678" y="728" class="body" font-weight="700">Fonctionnement</text>
+  <text x="678" y="764" class="bullet">• Modèle et espace sur la même page.</text>
+  <text x="678" y="798" class="bullet">• L’élève trace, complète et écrit.</text>
+  <rect x="676" y="834" width="446" height="61" rx="16" fill="#E6F2ED"/>
+  <text x="698" y="872" class="bullet" font-weight="700" fill="#17634F">+ Très concret pour le T1</text>
+  <rect x="676" y="909" width="446" height="72" rx="16" fill="#FBE9E3"/>
+  <text x="698" y="938" class="bullet" font-weight="700" fill="#A14E33">− À réimprimer chaque année</text>
+  <text x="698" y="966" font-size="18" fill="#7A554A">Coût annuel plus élevé.</text>
+
+  <!-- CARD C -->
+  <g filter="url(#shadow)">
+    <rect x="1210" y="245" width="520" height="770" rx="34" fill="#FFFFFF"/>
+  </g>
+  <rect x="1210" y="245" width="520" height="13" rx="6" fill="#2C8B70"/>
+  <rect x="1248" y="287" width="132" height="38" rx="19" fill="#DDF1E9"/>
+  <text x="1273" y="313" class="label" fill="#17634F">OPTION C</text>
+  <rect x="1464" y="279" width="226" height="50" rx="25" fill="#E8B969"/>
+  <text x="1577" y="311" text-anchor="middle" class="label" fill="#66430D">RECOMMANDÉ</text>
+  <text x="1248" y="370" class="cardtitle">Hybride renforcé</text>
+  <text x="1248" y="411" font-size="25" font-weight="700" fill="#527069">Quatre supports complémentaires</text>
+
+  <!-- Four supports C -->
+  <g transform="translate(1250 462)">
+    <g>
+      <rect x="0" y="8" width="92" height="132" rx="9" fill="url(#blue)"/>
+      <rect x="14" y="28" width="64" height="43" rx="5" fill="#F4DCA8"/>
+      <text x="46" y="101" text-anchor="middle" font-size="12" font-weight="800" fill="#FFFFFF">MANUEL</text>
+      <text x="46" y="163" text-anchor="middle" font-size="16" font-weight="700">Voir</text>
+    </g>
+    <path d="M104 76h30" stroke="#2C8B70" stroke-width="5" marker-end="url(#arrowGreen)"/>
+    <g transform="translate(150 0)">
+      <rect x="0" y="0" width="92" height="140" rx="9" fill="#FFF7EA" stroke="#E89445" stroke-width="4"/>
+      <path d="M15 45h62M15 70h62M15 95h62" stroke="#83AABF" stroke-width="2"/>
+      <path d="M22 58q18-25 39 0" fill="none" stroke="#A5A09A" stroke-width="3" stroke-dasharray="5 5"/>
+      <text x="46" y="163" text-anchor="middle" font-size="16" font-weight="700">S’exercer</text>
+    </g>
+    <path d="M254 76h30" stroke="#2C8B70" stroke-width="5" marker-end="url(#arrowGreen)"/>
+    <g transform="translate(300 8)">
+      <rect x="0" y="0" width="92" height="132" rx="9" fill="#F4E1B7" stroke="#C99949" stroke-width="4"/>
+      <path d="M18 0v132" stroke="#D55D4A" stroke-width="2"/>
+      <path d="M25 43h53M25 69h53M25 95h53" stroke="#83AABF" stroke-width="2"/>
+      <text x="46" y="163" text-anchor="middle" font-size="16" font-weight="700">Écrire seul</text>
+    </g>
+    <g transform="translate(408 20)">
+      <rect x="0" y="0" width="70" height="112" rx="8" fill="#73569C"/>
+      <text x="35" y="45" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">GUIDE</text>
+      <text x="35" y="62" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">MPAMPIANATRA</text>
+      <path d="M17 79h36M17 91h28" stroke="#E8DFF2" stroke-width="3"/>
+      <text x="35" y="143" text-anchor="middle" font-size="14" font-weight="700">Guider</text>
+    </g>
+  </g>
+
+  <text x="1248" y="728" class="body" font-weight="700">Fonctionnement</text>
+  <text x="1248" y="764" class="bullet">• Le manuel reste réutilisable.</text>
+  <text x="1248" y="798" class="bullet">• La pratique guidée est consommable.</text>
+  <rect x="1246" y="834" width="446" height="61" rx="16" fill="#E6F2ED"/>
+  <text x="1268" y="872" class="bullet" font-weight="700" fill="#17634F">+ Équilibre guidage / autonomie</text>
+  <rect x="1246" y="909" width="446" height="72" rx="16" fill="#FFF3D9"/>
+  <text x="1268" y="938" class="bullet" font-weight="700" fill="#8A5A13">Fiches en livret + annexes</text>
+  <text x="1268" y="966" font-size="18" fill="#765F39">Deux modes d’impression possibles.</text>
+
+  <!-- Footer recommendation -->
+  <rect x="210" y="1058" width="1380" height="91" rx="31" fill="#173B35"/>
+  <circle cx="268" cy="1103" r="27" fill="#E8B969"/>
+  <path d="M255 1103l9 9 18-23" fill="none" stroke="#173B35" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="315" y="1094" font-size="27" font-weight="900" fill="#FFFFFF">Choix conseillé : OPTION C</text>
+  <text x="315" y="1127" font-size="21" fill="#D8E7E2">Le manuel montre • la fiche accompagne • le cahier prouve l’autonomie • le guide sécurise l’enseignement.</text>
+</svg>
