@@ -35,7 +35,7 @@ Dossier public lecture seule : `https://drive.google.com/drive/folders/1yVMjApTY
 
 ## Avancement
 - Bloc 0 ✔ : extrait PE, scaffolding manuel-t9/ (builders.js copié T8, build.js squelette 4 pages intro), couverture ANGLAIS T9 générée (848×1264, sans mention Ministère), koto_soa copié, dossier Drive T9 créé public reader.
-- Bloc 1 ☐ : Unit 1 Personal Communication (S1–S12).
+- Bloc 1 ☑ : Unit 1 Personal Communication (S1–S12) — livré.
 - Bloc 2 ☐ : Unit 2 Classroom Communication (S13–S18).
 - Bloc 3 ☐ : Unit 3 Our Time (S19–S28).
 - Bloc 4 ☐ : Unit 4 Food (S29–S40).

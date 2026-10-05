@@ -71,7 +71,21 @@ function contents() {
     p([run("CONTENTS", { bold: true, size: 32 })], { center: true, after: 160 }),
     tocLink("overview", "OVERVIEW OF THE YEAR", { bold: true, size: 26 }),
     p("", { after: 40 }),
-    p([run("… The units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("unit1", "UNIT 1 — PERSONAL COMMUNICATION (Sessions 1–12)", { bold: true, size: 26 }),
+    tocLink("s1", "    Session 1 — Likes and dislikes: the gerund"),
+    tocLink("s2", "    Session 2 — Would you rather…? I’d rather + because"),
+    tocLink("s3", "    Session 3 — Listening: James and Sofia"),
+    tocLink("s4", "    Session 4 — The feelings and the caring questions"),
+    tocLink("s5", "    Session 5 — Listening: Arthur and Jane — present continuous and simple past"),
+    tocLink("s6", "    Session 6 — Feelings and advice: You should… (quiz trade)"),
+    tocLink("s7", "    Session 7 — Weekend plans: be going to + for/on"),
+    tocLink("s8", "    Session 8 — Listening: an amazing weekend — will or be going to?"),
+    tocLink("s9", "    Session 9 — Reading: Sarah’s e-mail"),
+    tocLink("s10", "    Session 10 — Writing: my weekend paragraph and my dialogue"),
+    tocLink("s11", "    Session 11 — Revision"),
+    tocLink("s12", "    Session 12 — Test paper"),
+    p("", { after: 40 }),
+    p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -120,7 +134,8 @@ async function main() {
         ...foreword(), pageBreak(),
         ...howToUse(), pageBreak(),
         ...contents(), pageBreak(),
-        ...dashboard(),
+        ...dashboard(), pageBreak(),
+        ...require("./unit1")(),
       ],
     }],
   });
