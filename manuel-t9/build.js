@@ -85,6 +85,14 @@ function contents() {
     tocLink("s11", "    Session 11 — Revision"),
     tocLink("s12", "    Session 12 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit2", "UNIT 2 — CLASSROOM COMMUNICATION (Sessions 13–18)", { bold: true, size: 26 }),
+    tocLink("s13", "    Session 13 — The teacher language (chinese whispers)"),
+    tocLink("s14", "    Session 14 — Listening: the classroom dialogue — She said that…"),
+    tocLink("s15", "    Session 15 — Reporting instructions: told/asked… to… (drill sergeant)"),
+    tocLink("s16", "    Session 16 — Reading and writing: the class reporter"),
+    tocLink("s17", "    Session 17 — Revision"),
+    tocLink("s18", "    Session 18 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -136,6 +144,7 @@ async function main() {
         ...contents(), pageBreak(),
         ...dashboard(), pageBreak(),
         ...require("./unit1")(),
+        ...require("./unit2")(),
       ],
     }],
   });
