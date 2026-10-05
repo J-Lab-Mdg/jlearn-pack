@@ -38,7 +38,7 @@ Dossier public lecture seule : `https://drive.google.com/drive/folders/1yVMjApTY
 - Bloc 1 ☑ : Unit 1 Personal Communication (S1–S12) — livré.
 - Bloc 2 ☑ : Unit 2 Classroom Communication (S13–S18) — livré.
 - Bloc 3 ☑ : Unit 3 Our Time (S19–S28) — livré.
-- Bloc 4 ☐ : Unit 4 Food (S29–S40).
+- Bloc 4 ☑ : Unit 4 Food (S29–S40) — livré.
 - Bloc 5 ☐ : Unit 5 Family (S41–S50).
 - Bloc 6 ☐ : Unit 6 Healthy Life (S51–S62).
 - Bloc 7 ☐ : Unit 7 Job and Mass Media (S63–S74).

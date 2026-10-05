@@ -105,6 +105,20 @@ function contents() {
     tocLink("s27", "    Session 27 — Revision"),
     tocLink("s28", "    Session 28 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit4", "UNIT 4 — FOOD (Sessions 29–40)", { bold: true, size: 26 }),
+    tocLink("s29", "    Session 29 — The four food groups"),
+    tocLink("s30", "    Session 30 — Describing food: fresh, raw, ripe, canned"),
+    tocLink("s31", "    Session 31 — Listening: the balanced diet dialogue — quantifiers"),
+    tocLink("s32", "    Session 32 — Listening: junk food — true or false?"),
+    tocLink("s33", "    Session 33 — The food doctor: should + frequency adverbs"),
+    tocLink("s34", "    Session 34 — Comparing foods: healthier, the best!"),
+    tocLink("s35", "    Session 35 — Reading: Nutrition for children"),
+    tocLink("s36", "    Session 36 — My balanced menu of the day"),
+    tocLink("s37", "    Session 37 — Writing: the advice letter"),
+    tocLink("s38", "    Session 38 — Food idioms and food myths"),
+    tocLink("s39", "    Session 39 — Revision"),
+    tocLink("s40", "    Session 40 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -158,6 +172,7 @@ async function main() {
         ...require("./unit1")(),
         ...require("./unit2")(),
         ...require("./unit3")(),
+        ...require("./unit4")(),
       ],
     }],
   });
