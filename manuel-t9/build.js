@@ -131,6 +131,20 @@ function contents() {
     tocLink("s49", "    Session 49 — Revision"),
     tocLink("s50", "    Session 50 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit6", "UNIT 6 — HEALTHY LIFE (Sessions 51–62)", { bold: true, size: 26 }),
+    tocLink("s51", "    Session 51 — Listening: at the doctor’s — traditional cures"),
+    tocLink("s52", "    Session 52 — Health idioms — agreeing and disagreeing"),
+    tocLink("s53", "    Session 53 — Comparing cures: comparatives and superlatives"),
+    tocLink("s54", "    Session 54 — Listening: teen stress"),
+    tocLink("s55", "    Session 55 — Relative pronouns: who, which, that, whose"),
+    tocLink("s56", "    Session 56 — Emotional health: what makes you happy?"),
+    tocLink("s57", "    Session 57 — Listening: Dear Kate — advice with should"),
+    tocLink("s58", "    Session 58 — If-clause type 2: If I were the Minister of Health…"),
+    tocLink("s59", "    Session 59 — Reading: how celebrities de-stress"),
+    tocLink("s60", "    Session 60 — Writing: my healthy life"),
+    tocLink("s61", "    Session 61 — Revision"),
+    tocLink("s62", "    Session 62 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units and the six annexes are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -186,6 +200,7 @@ async function main() {
         ...require("./unit3")(),
         ...require("./unit4")(),
         ...require("./unit5")(),
+        ...require("./unit6")(),
       ],
     }],
   });

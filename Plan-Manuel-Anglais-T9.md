@@ -40,7 +40,7 @@ Dossier public lecture seule : `https://drive.google.com/drive/folders/1yVMjApTY
 - Bloc 3 ☑ : Unit 3 Our Time (S19–S28) — livré.
 - Bloc 4 ☑ : Unit 4 Food (S29–S40) — livré.
 - Bloc 5 ☑ : Unit 5 Family (S41–S50). — livré.
-- Bloc 6 ☐ : Unit 6 Healthy Life (S51–S62).
+- Bloc 6 ☑ : Unit 6 Healthy Life (S51–S62). — livré.
 - Bloc 7 ☐ : Unit 7 Job and Mass Media (S63–S74).
 - Bloc 8 ☐ : Unit 8 Environment (S75–S86).
 - Bloc 9 ☐ : 6 annexes + page finale + TOC + MAJ PR.
