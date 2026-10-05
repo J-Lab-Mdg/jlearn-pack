@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "docx": "output/Fiche-Temoin-Malagasy-T1-SEHO02-CONFORME-SKILL-v18.docx",
+  "checks": {
+    "docxBytes": 942121,
+    "docxSha256": "ba1ebdabb579dd4b314e26335e83c6d19011fc4b23af24600be8621e199373d4",
+    "archiveEntries": 26,
+    "sectPr": 1,
+    "ns0": 0,
+    "timesNewRomanOccurrences": 1328,
+    "doubleSpaceTextNodes": 0,
+    "deroulementGridColumns": 6,
+    "deroulementRowCount": 11,
+    "splittableDeroulementRows": 0,
+    "takelaTitleOccurrences": 1,
+    "wrongTitleOccurrences": 0,
+    "bookmarks": [
+      "fiche",
+      "lesona",
+      "fanazaran_tena",
+      "valiny",
+      "loharano"
+    ],
+    "internalAnchors": [
+      "fiche",
+      "lesona",
+      "fanazaran_tena",
+      "valiny",
+      "loharano"
+    ],
+    "bookmarksWithoutLink": [],
+    "linksWithoutBookmark": [],
+    "missingRequiredLabels": [],
+    "forbiddenSubstepDurations": [],
+    "exerciseCount": 4,
+    "exerciseItemCounts": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "correctionItemCounts": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "totalScore": 20,
+    "imageWidthPx": 1100,
+    "imageHeightPx": 614,
+    "imageBytes": 922887,
+    "embeddedImageEntries": [
+      "word/media/55968a9e6e6da167805e815d89fbd4e021af983d.png"
+    ],
+    "undefinedMediaEntries": [],
+    "pngRelationships": 1,
+    "pngContentTypes": 1,
+    "visibleCalendarDates": [],
+    "forbiddenPublisherOccurrences": 0,
+    "forbiddenSupportOralOccurrences": 0
+  }
+}

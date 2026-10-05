@@ -10,10 +10,13 @@ async function main() {
     const source = path.resolve(root, entry.source);
     const output = path.resolve(root, entry.output);
     fs.mkdirSync(path.dirname(output), { recursive: true });
+    const inPlace = source === output;
+    const target = inPlace ? `${output}.tmp.png` : output;
     await sharp(source)
       .resize({ width: entry.targetWidthPx, withoutEnlargement: true })
       .png({ compressionLevel: 9, adaptiveFiltering: true })
-      .toFile(output);
+      .toFile(target);
+    if (inPlace) fs.renameSync(target, output);
     const meta = await sharp(output).metadata();
     console.log(`${id}: ${meta.width}x${meta.height} — ${fs.statSync(output).size} octets`);
     if (meta.width > 1100) throw new Error(`${id}: image trop large`);

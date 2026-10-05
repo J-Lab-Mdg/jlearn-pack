@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "docx": "Fiche-Temoin-Malagasy-T1-SEHO02-CONFORME-SKILL-v18.docx",
+  "docxSha256": "ba1ebdabb579dd4b314e26335e83c6d19011fc4b23af24600be8621e199373d4",
+  "renderer": "LibreOffice WASM via @deepseek-ai/libreoffice-kit 0.1.5",
+  "pdfConversion": "PASS",
+  "rasterEngine": "libreoffice",
+  "dpi": 144,
+  "pageCount": 8,
+  "pageDimensionsPx": "1191 × 1684",
+  "pagesInspected": [1, 2, 3, 4, 5, 6, 7, 8],
+  "checks": {
+    "illustrationVisible": true,
+    "tableWithinMargins": true,
+    "tableHeaderRepeated": true,
+    "tableRowsNotSplit": true,
+    "noClippedTextObserved": true,
+    "intentionalPageBreaksHonored": true,
+    "footerPageNumbersVisible": true,
+    "lessonPageFitsOnOnePage": true,
+    "exercisesAndCorrectionsComplete": true
+  },
+  "renderingNote": "Times New Roman n’est pas installé dans le bac à sable de rendu; LibreOffice WASM a utilisé une police métriquement proche. Le DOCX déclare bien Times New Roman et le contrôle OOXML en relève 1 328 occurrences."
+}

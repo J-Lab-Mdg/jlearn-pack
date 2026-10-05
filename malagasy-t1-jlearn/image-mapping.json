@@ -4,5 +4,11 @@
     "output": "assets/img_malagasy_t1_seance01.png",
     "usage": "Pejy LESONA — Mampahafantatra ny tena sy ny hafa",
     "targetWidthPx": 1100
+  },
+  "seance02": {
+    "source": "assets/img_malagasy_t1_seance02.png",
+    "output": "assets/img_malagasy_t1_seance02.png",
+    "usage": "Pejy LESONA — Soa sy Koto mifankahalala",
+    "targetWidthPx": 1100
   }
 }
