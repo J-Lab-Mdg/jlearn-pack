@@ -2,7 +2,7 @@
 
 ## Statut du document
 
-Document de cadrage provisoire établi à partir des quatre **PE PDF de septembre 2026** disponibles dans le dépôt. Il sert à organiser les travaux T6–T9 sans inventer un emploi du temps national qui n’est pas prescrit dans les PE.
+Document de cadrage établi à partir des quatre **PE PDF de septembre 2026** disponibles dans le dépôt. L’utilisateur a confirmé ces PE comme références de contrôle pour les travaux T6–T9, malgré leur mention « Projet d’arrêté ». Le document sert à organiser les travaux sans inventer un emploi du temps national qui n’est pas prescrit dans les PE.
 
 Il ne constitue pas encore une progression annuelle ni une autorisation de produire des manuels.
 
@@ -15,7 +15,7 @@ Il ne constitue pas encore une progression annuelle ni une autorisation de produ
 3. `PE RAPE/PE T8.pdf` — Programme d’études T8, PDF créé le 18 septembre 2026.
 4. `PE RAPE/PE T9.pdf` — Programme d’études T9, PDF créé le 17 septembre 2026.
 
-Ces quatre documents portent encore la mention **« PROJET D’ARRÊTÉ »**. Ils sont néanmoins les fichiers les plus récents disponibles et constituent donc la base de travail provisoire.
+Ces quatre documents portent encore la mention **« PROJET D’ARRÊTÉ »**. Ils sont néanmoins les fichiers les plus récents disponibles et constituent la base de travail confirmée pour ce projet.
 
 ### Sources de comparaison seulement
 
@@ -114,13 +114,13 @@ Si les cours du mardi au vendredi se limitaient réellement à `7 h–11 h` sans
 
 ## 6. Règles de travail retenues
 
-1. Prendre les quatre PE PDF de septembre 2026 comme base provisoire.
+1. Prendre les quatre PE PDF de septembre 2026 comme références de contrôle confirmées.
 2. Ne pas importer les durées des anciennes RAPE dans les nouveaux PE.
 3. Ne pas choisir une durée de séance unique pour toutes les matières.
 4. Ne pas confondre heure de présence, heure de cours et durée de séance.
 5. Conserver plusieurs variantes d’emploi du temps selon les établissements.
-6. Attendre une RAPE 2026 alignée ou une décision explicite avant de figer les progressions annuelles.
-7. Traiter séparément les deux incohérences internes du PE T6 : Français et Mathématiques.
+6. En l’absence de RAPE 2026 alignée, construire les matrices et progressions à partir des durées et contenus du PE, en signalant toute hypothèse restante.
+7. Traiter séparément les deux incohérences internes du PE T6 : Français et Mathématiques; dans l’attente d’un correctif ministériel, retenir les volumes du tableau général, soit 5 h de Français et 5 h de Mathématiques.
 
 ## 7. Prochaine étape recommandée
 
