@@ -40,14 +40,18 @@ Les fichiers `PE_T6.docx`, `PE_T8.docx` et `PE_T9 (1).docx` divergent sur plusie
 | Anglais | 3 h | 3 h | 3 h | 3 h |
 | Mathématiques | 5 h | 5 h | 5 h | 5 h |
 | Sciences de la vie et de la Terre | 3 h | 3 h | 4 h | 4 h |
-| Sciences physiques | 3 h | 3 h | 3 h | 4 h |
-| Histoire | 2 h | 2 h | 4 h | 2 h |
+| Sciences physiques | 3 h | 3 h | 4 h | 3 h¹ |
+| Histoire | 2 h | 2 h | 2 h | 4 h¹ |
 | Géographie | 2 h | 2 h | 2 h | 2 h |
 | Fanabeazana ho Olompirenena Vanona | 2 h | 2 h | 2 h | 2 h |
 | Arts | 2 h | 2 h | 2 h | 2 h |
 | Éducation physique et sportive | 2 h | 2 h | 2 h | 2 h |
-| **Total hebdomadaire** | **33 h** | **33 h** | **36 h** | **35 h** |
-| **Total en minutes** | **1 980 min** | **1 980 min** | **2 160 min** | **2 100 min** |
+| **Total hebdomadaire** | **33 h** | **33 h** | **35 h** | **36 h** |
+| **Total en minutes** | **1 980 min** | **1 980 min** | **2 100 min** | **2 160 min** |
+
+Pages physiques des tableaux généraux : T6 p. 9; T7 p. 8; T8 p. 10; T9 p. 8.
+
+¹ **T9 — contradiction interne majeure :** le tableau général (p. 8 physique) donne Sciences physiques `3 h` et Histoire `4 h`. Les sections disciplinaires donnent au contraire Sciences physiques `4 h/semaine` (p. 148 physique) et Histoire `2 h/semaine` (p. 176 physique). Les durées globales des modules renforcent la seconde lecture : Sciences physiques totalise `132 h`, soit `33 × 4 h`, tandis qu’Histoire totalise `62 h`, proche de `31 × 2 h`. Conformément à la règle de projet, les valeurs du tableau général restent temporairement les valeurs de planification, mais elles ne doivent pas être considérées comme résolues.
 
 ## 3. Ce que les PE disent — et ne disent pas — sur la séance
 
@@ -55,9 +59,12 @@ Les PE fixent principalement des **volumes hebdomadaires** et des durées global
 
 ### Mentions explicites relevées
 
-- **T7 Mathématiques** : `5 heures par semaine` et `10 × 30 min`. Cette indication est arithmétiquement cohérente.
-- **T6 Mathématiques** : `5 heures par semaine` et `12 × 30 min`. Or `12 × 30 min = 6 heures` : contradiction interne.
-- **T6 Français** : le tableau général attribue `5 h`; la section Français annonce `6 h`, mais le détail des composantes totalise `300 min`, soit `5 h` : contradiction interne.
+- **T7 Mathématiques** (p. 88 physique) : `5 heures par semaine` et `10 × 30 min`. Cette indication est arithmétiquement cohérente.
+- **T6 Mathématiques** (p. 101 physique) : `5 heures par semaine` et `12 × 30 min`. Or `12 × 30 min = 6 heures` : contradiction interne.
+- **T7 Français** (p. 28 physique) : le tableau général attribue `5 h`; la section Français annonce `6 h`, mais le détail des composantes totalise `300 min`, soit `5 h` : contradiction interne. La section Français T6 annonce bien `5 h` et totalise `300 min`; elle n’est pas en contradiction sur ce point.
+- **T7 Arts** : le tableau général donne `2 h`, la section Arts annonce `1 h 30` (p. 184 physique), tandis que les six sous-disciplines totalisent `66 h`, soit `33 × 2 h`. Le cadrage conserve temporairement `2 h`.
+- **T8 et T9 Histoire** : les modules indiquent explicitement des séances de `2 h` (T8, pp. 171–186; T9, pp. 177–188).
+- **EPS** : le tableau interne de T6 prescrit `2 × 1 h` pour T6; ceux de T7 et T9 prescrivent `1 × 2 h` pour T7–T9. Le PE T8 imprime au contraire `2 × 1 h` pour T7–T9. Le total hebdomadaire reste `2 h`, mais le découpage T8 est contradictoire entre les quatre PE.
 - Pour les autres disciplines et niveaux, aucune durée unique de séance applicable à toute l’année ne doit être déduite automatiquement.
 
 ### Conséquence
@@ -105,8 +112,8 @@ Elle regroupe aussi les sciences sous « Sciences et Technologie », contraireme
 |---|---:|---:|---:|
 | T6 | 1 980 min | 1 460 min | 365 min = 6 h 05 |
 | T7 | 1 980 min | 1 460 min | 365 min = 6 h 05 |
-| T8 | 2 160 min | 1 640 min | 410 min = 6 h 50 |
-| T9 | 2 100 min | 1 580 min | 395 min = 6 h 35 |
+| T8 | 2 100 min | 1 580 min | 395 min = 6 h 35 |
+| T9 | 2 160 min | 1 640 min | 410 min = 6 h 50 |
 
 Ces moyennes sont des **minimums théoriques** : les récréations, déplacements et autres activités les augmentent.
 
@@ -120,15 +127,15 @@ Si les cours du mardi au vendredi se limitaient réellement à `7 h–11 h` sans
 4. Ne pas confondre heure de présence, heure de cours et durée de séance.
 5. Conserver plusieurs variantes d’emploi du temps selon les établissements.
 6. En l’absence de RAPE 2026 alignée, construire les matrices et progressions à partir des durées et contenus du PE, en signalant toute hypothèse restante.
-7. Traiter séparément les deux incohérences internes du PE T6 : Français et Mathématiques; dans l’attente d’un correctif ministériel, retenir les volumes du tableau général, soit 5 h de Français et 5 h de Mathématiques.
+7. Traiter séparément les incohérences internes : Mathématiques T6; Français et Arts T7; ventilation Sciences physiques/Histoire T9; découpage des séances EPS T8. Dans l’attente d’un correctif ministériel, retenir temporairement les volumes du tableau général, sans masquer les contradictions.
 
-## 7. Prochaine étape recommandée
+## 7. État de l’étape suivante
 
-Construire, pour chaque niveau T6, T7, T8 et T9, une matrice par discipline contenant :
+La matrice détaillée des 44 couples niveau-discipline est maintenant disponible dans `Matrices-Detaillees-PE-2026-T6-T9.md`. Elle distingue les volumes hebdomadaires, les durées globales de modules et les rares durées de séance explicites; elle résume les résultats d’apprentissage, donne les pages physiques et calcule les équivalents-enveloppes sans postuler un nombre national de semaines.
 
-- volume hebdomadaire officiel;
-- résultats d’apprentissage;
-- chapitres et durées globales inscrites dans le PE;
-- durée de séance explicitement indiquée, lorsqu’elle existe;
-- nombre théorique de séances seulement lorsque le calcul est justifié;
-- anomalies et arbitrages encore nécessaires.
+Avant une progression annuelle définitive ou une production complète, il reste à :
+
+- obtenir un arbitrage sur la ventilation T9 Sciences physiques/Histoire;
+- résoudre les cadences contradictoires ou manquantes signalées dans le registre A1–A8;
+- connaître le calendrier et l’emploi du temps réel de l’établissement;
+- faire valider toute hypothèse locale de répartition.
