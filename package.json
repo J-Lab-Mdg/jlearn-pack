@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/J-Lab-Mdg/jlearn-pack#readme",
   "dependencies": {
-    "docx": "^9.7.2",
-    "sharp": "^0.35.4"
+    "docx": "^9.8.1",
+    "sharp": "^0.35.5"
   }
 }

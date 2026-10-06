@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="1100" height="760" fill="#FFFFFF"/>
+  <text x="550" y="55" text-anchor="middle" font-size="36" font-weight="bold" fill="#1F4E79">Les directions intermédiaires</text>
+  
+    <polygon points="550,400 550,140 551.046984901075,370.01827518942713" fill="#C00000" opacity="0.85"/>
+    <polygon points="550,400 550,140 548.953015098925,370.01827518942713" fill="#C00000" opacity="0.6"/>
+    <text x="550" y="97" text-anchor="middle" font-size="38" font-weight="bold" fill="#C00000">N</text>
+  
+    <polygon points="550,400 810,400 579.9817248105729,401.046984901075" fill="#EF5350" opacity="0.85"/>
+    <polygon points="550,400 810,400 579.9817248105729,398.953015098925" fill="#EF5350" opacity="0.6"/>
+    <text x="865" y="412" text-anchor="middle" font-size="38" font-weight="bold" fill="#EF5350">E</text>
+  
+    <polygon points="550,400 550,660 548.953015098925,429.98172481057287" fill="#37474F" opacity="0.85"/>
+    <polygon points="550,400 550,660 551.046984901075,429.98172481057287" fill="#37474F" opacity="0.6"/>
+    <text x="550" y="727" text-anchor="middle" font-size="38" font-weight="bold" fill="#37474F">S</text>
+  
+    <polygon points="550,400 290,400.00000000000006 520.0182751894271,398.953015098925" fill="#42A5F5" opacity="0.85"/>
+    <polygon points="550,400 290,400.00000000000006 520.0182751894271,401.046984901075" fill="#42A5F5" opacity="0.6"/>
+    <text x="235" y="412.00000000000006" text-anchor="middle" font-size="38" font-weight="bold" fill="#42A5F5">O</text>
+  
+    <polygon points="550,400 666.6726188957804,283.3273811042197 568.5786206369348,383.27173484102855" fill="#FB8C00" opacity="0.85"/>
+    <polygon points="550,400 666.6726188957804,283.3273811042197 566.7282651589715,381.42137936306517" fill="#FB8C00" opacity="0.55"/>
+    <text x="716.1700935788386" y="243.82990642116135" text-anchor="middle" font-size="30" font-weight="bold" fill="#E65100">NE</text>
+  
+    <polygon points="550,400 666.6726188957804,516.6726188957804 566.7282651589715,418.57862063693483" fill="#FB8C00" opacity="0.85"/>
+    <polygon points="550,400 666.6726188957804,516.6726188957804 568.5786206369348,416.72826515897145" fill="#FB8C00" opacity="0.55"/>
+    <text x="716.1700935788386" y="576.1700935788386" text-anchor="middle" font-size="30" font-weight="bold" fill="#E65100">SE</text>
+  
+    <polygon points="550,400 433.3273811042197,516.6726188957804 531.4213793630652,416.72826515897145" fill="#FB8C00" opacity="0.85"/>
+    <polygon points="550,400 433.3273811042197,516.6726188957804 533.2717348410285,418.57862063693483" fill="#FB8C00" opacity="0.55"/>
+    <text x="383.82990642116135" y="576.1700935788386" text-anchor="middle" font-size="30" font-weight="bold" fill="#E65100">SO</text>
+  
+    <polygon points="550,400 433.3273811042196,283.3273811042197 533.2717348410285,381.42137936306517" fill="#FB8C00" opacity="0.85"/>
+    <polygon points="550,400 433.3273811042196,283.3273811042197 531.4213793630652,383.27173484102855" fill="#FB8C00" opacity="0.55"/>
+    <text x="383.8299064211613" y="243.82990642116135" text-anchor="middle" font-size="30" font-weight="bold" fill="#E65100">NO</text>
+  <circle cx="550" cy="400" r="46" fill="#FFF3E0" stroke="#FB8C00" stroke-width="4"/>
+  <text x="550" y="730" text-anchor="middle" font-size="26" fill="#546E7A" font-style="italic">Entre deux points cardinaux voisins se trouve une direction intermédiaire (ici NE).</text>
+</svg>

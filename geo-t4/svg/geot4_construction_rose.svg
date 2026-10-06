@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="1100" height="440" fill="#FFFFFF"/>
+  <text x="550" y="40" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Dessiner une rose des vents : les étapes</text>
+  <!-- étape 1 : croix -->
+  
+    <rect x="30" y="100" width="240" height="240" rx="14" fill="#FAFAFA" stroke="#90A4AE" stroke-width="3"/>
+    <text x="150" y="70" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F4E79">Étape 1</text>
+    <text x="150" y="380" text-anchor="middle" font-size="22" fill="#37474F">Tracer une croix</text>
+  <line x1="150" y1="140" x2="150" y2="300" stroke="#37474F" stroke-width="5"/>
+  <line x1="80" y1="220" x2="220" y2="220" stroke="#37474F" stroke-width="5"/>
+  <!-- étape 2 : diagonales -->
+  
+    <rect x="300" y="100" width="240" height="240" rx="14" fill="#FAFAFA" stroke="#90A4AE" stroke-width="3"/>
+    <text x="420" y="70" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F4E79">Étape 2</text>
+    <text x="420" y="380" text-anchor="middle" font-size="22" fill="#37474F">Tracer les diagonales</text>
+  <line x1="420" y1="140" x2="420" y2="300" stroke="#37474F" stroke-width="5"/>
+  <line x1="350" y1="220" x2="490" y2="220" stroke="#37474F" stroke-width="5"/>
+  <line x1="368" y1="164" x2="472" y2="276" stroke="#FB8C00" stroke-width="4"/>
+  <line x1="368" y1="276" x2="472" y2="164" stroke="#FB8C00" stroke-width="4"/>
+  <!-- étape 3 : branche du Nord allongée -->
+  
+    <rect x="570" y="100" width="240" height="240" rx="14" fill="#FAFAFA" stroke="#90A4AE" stroke-width="3"/>
+    <text x="690" y="70" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F4E79">Étape 3</text>
+    <text x="690" y="380" text-anchor="middle" font-size="22" fill="#37474F">Allonger la branche du Nord</text>
+  <line x1="690" y1="128" x2="690" y2="300" stroke="#C00000" stroke-width="7"/>
+  <line x1="620" y1="220" x2="760" y2="220" stroke="#37474F" stroke-width="5"/>
+  <line x1="638" y1="164" x2="742" y2="276" stroke="#FB8C00" stroke-width="4"/>
+  <line x1="638" y1="276" x2="742" y2="164" stroke="#FB8C00" stroke-width="4"/>
+  <!-- étape 4 : lettres -->
+  
+    <rect x="840" y="100" width="240" height="240" rx="14" fill="#FAFAFA" stroke="#90A4AE" stroke-width="3"/>
+    <text x="960" y="70" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F4E79">Étape 4</text>
+    <text x="960" y="380" text-anchor="middle" font-size="22" fill="#37474F">Écrire les lettres</text>
+  <line x1="960" y1="128" x2="960" y2="300" stroke="#C00000" stroke-width="7"/>
+  <line x1="890" y1="220" x2="1030" y2="220" stroke="#37474F" stroke-width="5"/>
+  <line x1="908" y1="164" x2="1012" y2="276" stroke="#FB8C00" stroke-width="4"/>
+  <line x1="908" y1="276" x2="1012" y2="164" stroke="#FB8C00" stroke-width="4"/>
+  <text x="960" y="122" text-anchor="middle" font-size="26" font-weight="bold" fill="#C00000">N</text>
+  <text x="960" y="322" text-anchor="middle" font-size="26" font-weight="bold" fill="#37474F">S</text>
+  <text x="1046" y="230" text-anchor="middle" font-size="26" font-weight="bold" fill="#EF5350">E</text>
+  <text x="874" y="230" text-anchor="middle" font-size="26" font-weight="bold" fill="#42A5F5">O</text>
+  <text x="1028" y="160" text-anchor="middle" font-size="20" font-weight="bold" fill="#E65100">NE</text>
+  <text x="892" y="160" text-anchor="middle" font-size="20" font-weight="bold" fill="#E65100">NO</text>
+  <text x="1028" y="296" text-anchor="middle" font-size="20" font-weight="bold" fill="#E65100">SE</text>
+  <text x="892" y="296" text-anchor="middle" font-size="20" font-weight="bold" fill="#E65100">SO</text>
+  <text x="550" y="425" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le Nord est toujours placé en haut de la rose des vents.</text>
+</svg>

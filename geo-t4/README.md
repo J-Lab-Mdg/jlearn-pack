@@ -1,0 +1,57 @@
+# Manuel de Géographie T4 — Projet J-Learn
+
+Manuel scolaire de **Géographie, classe de T4** (4ᵉ année du primaire, Madagascar), Collection J-Learn.
+Source officielle : `PE RAPE/PE T4.pdf` (Programme d'Études T4, section GÉOGRAPHIE, p. 115-123).
+
+## État d'avancement
+- ✅ **Unité 1 — L'orientation géographique** (Séances 1-10 : 8 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE1.docx`
+- ⬜ Unité 2 — Le plan (Séances 11-24)
+- ⬜ Unité 3 — Les éléments du paysage naturel (Séances 25-38)
+- ⬜ Unité 4 — L'Environnement (Séances 39-56)
+- ⬜ Unité 5 — L'Homme et les activités quotidiennes (Séances 57-76)
+- ⬜ Fusion finale + annexes (glossaire, cartes muettes, auto-évaluation, table des illustrations) → `Manuel_Geographie_T4_JLearn.docx` + `.sha256`
+
+Le découpage complet des 76 séances est dans **PLAN-FINAL.md** (validé par l'utilisateur).
+
+## Décisions verrouillées (ne pas re-demander)
+- Séances de **30 minutes** (conformes au PE : 1 h/semaine, 2 séances), ratio I/II/III = 3/22/5 min
+- **Français uniquement** — couleur corrigé **#C2185B** — barème EXERCICES : 4 exercices × 5 points = /20
+- Illustrations : schémas SVG « style scolaire » (préfixe `geot4_`) à la racine du dépôt, enregistrées dans `pack.json` ; une image générée (`geot4_faits_culturels.png`)
+- Aucune mention du ministère (y compris abréviation) — consigne utilisateur explicite
+- Numérotation globale : Séance N / 76 ; révisions et sujets d'examen comptent dans la numérotation
+
+## Architecture
+```
+geo-t4/
+├── PLAN-FINAL.md          # Découpage validé des 76 séances (référence)
+├── README.md              # Ce fichier
+├── svg/make-svg.js        # Génère les schémas SVG → PNG (sharp) à la racine du dépôt
+├── src/
+│   ├── builders.js        # Constructeurs docx (méta-table invisible, 6 colonnes, couleurs…)
+│   ├── seance-generator.js# topic → fiche I/II/III + leçon + EXERCICES notés
+│   ├── data-unite1.js     # Contenu rédactionnel Unité 1 (8 séances)
+│   ├── data-unite1-rev.js # Révision + sujet d'examen Unité 1
+│   ├── assemble.js        # Assemblage (couverture → … → séances)
+│   └── verifications.py   # Vérifications post-génération (skill)
+└── output/                # Livrables .docx
+```
+
+## Reproduire / continuer
+```bash
+npm install docx sharp        # à la racine du dépôt (node_modules non versionné)
+node geo-t4/svg/make-svg.js   # régénérer les schémas si modifiés
+node geo-t4/src/assemble.js   # → output/Manuel_Geographie_T4_V1_UNITE1.docx
+python3 geo-t4/src/verifications.py
+```
+
+Pour les unités suivantes : créer `data-uniteN.js` (même structure de topic que data-unite1.js),
+`data-uniteN-rev.js` (révision + examen), puis les brancher dans `assemble.js`
+(UNITES + TdM + tableaux de bord). La révision réutilise `revisionSeance()`, l'examen `examenSeance()`.
+
+## Pièges déjà résolus (à lire avant de modifier)
+- **Ne jamais éditer plusieurs fichiers en parallèle** si l'un réécrit l'autre (courses d'écriture déjà subies : lignes dupliquées, `module.exports` cassé).
+- Le champ `documentation` de la méta-table ne doit contenir **aucune** mention ministérielle, même abrégée.
+- Les QCM utilisent le séparateur « — » entre options (jamais d'espaces multiples : la vérification « doubles espaces = 0 » doit rester verte).
+- `pKw()` : un mot clé contenant une majuscule est recherché en respectant la casse (sinon « Est » colorerait le verbe « est »).
+- Les marqueurs `**mot**` dans les corrigés → gras + rose #C2185B (parseur `mkRuns`), jamais de `**` résiduel dans le XML.
+- Les signets doivent être strictement égaux aux liens de la table des matières (vérification automatique).

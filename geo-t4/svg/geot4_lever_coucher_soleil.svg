@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrEF5350" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#EF5350"/></marker>
+    <marker id="arr42A5F5" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#42A5F5"/></marker>
+  </defs>
+  <rect width="1100" height="560" fill="#FFFFFF"/>
+  <text x="550" y="55" text-anchor="middle" font-size="36" font-weight="bold" fill="#1F4E79">Le soleil se lève à l'Est et se couche à l'Ouest</text>
+  
+    <g>
+      <rect x="40" y="90" width="480" height="360" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+      <clipPath id="cadre40"><rect x="44" y="94" width="472" height="352" rx="14"/></clipPath>
+      <g clip-path="url(#cadre40)">
+        <circle cx="160" cy="295" r="42" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/><line x1="207" y1="295" x2="220" y2="295" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="193.23401871576775" y1="328.2340187157677" x2="202.42640687119285" y2="337.42640687119285" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="160" y1="342" x2="160" y2="355" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="126.76598128423227" y1="328.2340187157677" x2="117.57359312880715" y2="337.42640687119285" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="113" y1="295" x2="100" y2="295" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="126.76598128423225" y1="261.7659812842323" x2="117.57359312880715" y2="252.57359312880715" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="160" y1="248" x2="160" y2="235" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="193.23401871576772" y1="261.7659812842323" x2="202.42640687119285" y2="252.57359312880715" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/>
+        <rect x="43" y="330" width="474" height="120" fill="#C8E6C9"/>
+        <line x1="43" y1="330" x2="517" y2="330" stroke="#66BB6A" stroke-width="4"/>
+      </g>
+      <text x="280" y="150" text-anchor="middle" font-size="34" font-weight="bold" fill="#37474F">Le matin</text>
+      <path d="M 230 260 L 230 195" stroke="#EF5350" stroke-width="6" fill="none" marker-end="url(#arrEF5350)"/>
+      <text x="160" y="435" text-anchor="middle" font-size="40" font-weight="bold" fill="#EF5350">EST</text>
+    </g>
+  
+    <g>
+      <rect x="580" y="90" width="480" height="360" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+      <clipPath id="cadre580"><rect x="584" y="94" width="472" height="352" rx="14"/></clipPath>
+      <g clip-path="url(#cadre580)">
+        <circle cx="940" cy="368" r="42" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/><line x1="987" y1="368" x2="1000" y2="368" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="973.2340187157678" y1="401.2340187157677" x2="982.4264068711929" y2="410.42640687119285" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="940" y1="415" x2="940" y2="428" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="906.7659812842322" y1="401.2340187157677" x2="897.5735931288071" y2="410.42640687119285" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="893" y1="368" x2="880" y2="368" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="906.7659812842322" y1="334.7659812842323" x2="897.5735931288071" y2="325.57359312880715" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="940" y1="321" x2="940" y2="308" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="973.2340187157678" y1="334.7659812842323" x2="982.4264068711929" y2="325.57359312880715" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/>
+        <rect x="583" y="330" width="474" height="120" fill="#C8E6C9"/>
+        <line x1="583" y1="330" x2="1057" y2="330" stroke="#66BB6A" stroke-width="4"/>
+      </g>
+      <text x="820" y="150" text-anchor="middle" font-size="34" font-weight="bold" fill="#37474F">Le soir</text>
+      <path d="M 870 200 L 870 265" stroke="#42A5F5" stroke-width="6" fill="none" marker-end="url(#arr42A5F5)"/>
+      <text x="940" y="435" text-anchor="middle" font-size="40" font-weight="bold" fill="#42A5F5">OUEST</text>
+    </g>
+  <text x="550" y="520" text-anchor="middle" font-size="26" fill="#546E7A" font-style="italic">Le côté du lever du soleil s'appelle l'Est ; le côté du coucher s'appelle l'Ouest.</text>
+</svg>

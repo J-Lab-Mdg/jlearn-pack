@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="1100" height="620" fill="#FFFFFF"/>
+  <text x="550" y="55" text-anchor="middle" font-size="36" font-weight="bold" fill="#1F4E79">La boussole et le GPS</text>
+  <!-- Boussole -->
+  <g>
+    <circle cx="280" cy="320" r="190" fill="#FFF8E1" stroke="#8D6E63" stroke-width="10"/>
+    <circle cx="280" cy="320" r="150" fill="#FFFFFF" stroke="#BCAAA4" stroke-width="3"/>
+    <text x="280" y="175" text-anchor="middle" font-size="34" font-weight="bold" fill="#C00000">N</text>
+    <text x="280" y="485" text-anchor="middle" font-size="34" font-weight="bold" fill="#37474F">S</text>
+    <text x="440" y="332" text-anchor="middle" font-size="34" font-weight="bold" fill="#37474F">E</text>
+    <text x="120" y="332" text-anchor="middle" font-size="34" font-weight="bold" fill="#37474F">O</text>
+    <text x="393" y="212" text-anchor="middle" font-size="24" font-weight="bold" fill="#8D6E63">NE</text>
+    <text x="167" y="212" text-anchor="middle" font-size="24" font-weight="bold" fill="#8D6E63">NO</text>
+    <text x="393" y="452" text-anchor="middle" font-size="24" font-weight="bold" fill="#8D6E63">SE</text>
+    <text x="167" y="452" text-anchor="middle" font-size="24" font-weight="bold" fill="#8D6E63">SO</text>
+    <polygon points="280,190 262,320 298,320" fill="#EF5350"/>
+    <polygon points="280,450 262,320 298,320" fill="#78909C"/>
+    <circle cx="280" cy="320" r="14" fill="#37474F"/>
+    <text x="280" y="575" text-anchor="middle" font-size="30" font-weight="bold" fill="#37474F">La boussole</text>
+  </g>
+  <!-- GPS -->
+  <g>
+    <rect x="620" y="150" width="270" height="360" rx="30" fill="#37474F"/>
+    <rect x="640" y="180" width="230" height="280" rx="10" fill="#E8F5E9"/>
+    <path d="M 650 420 L 700 350 L 760 390 L 830 300 L 865 340 L 865 455 L 650 455 Z" fill="#A5D6A7" stroke="none"/>
+    <path d="M 640 300 Q 750 260 870 320" stroke="#90CAF9" stroke-width="14" fill="none"/>
+    <path d="M 780 180 Q 690 260 720 455" stroke="#90CAF9" stroke-width="10" fill="none"/>
+    <line x1="640" y1="400" x2="870" y2="400" stroke="#FFB74D" stroke-width="8"/>
+    <circle cx="755" cy="262" r="30" fill="#1F4E79"/>
+    <polygon points="755,300 735,265 775,265" fill="#EF5350"/>
+    <circle cx="755" cy="255" r="10" fill="#FFFFFF"/>
+    <text x="755" y="575" text-anchor="middle" font-size="30" font-weight="bold" fill="#37474F">Le GPS</text>
+  </g>
+  <text x="1000" y="255" text-anchor="middle" font-size="24" fill="#546E7A">L'aiguille rouge</text>
+  <text x="1000" y="285" text-anchor="middle" font-size="24" fill="#546E7A">pointe toujours</text>
+  <text x="1000" y="315" text-anchor="middle" font-size="24" font-weight="bold" fill="#C00000">vers le Nord</text>
+  <text x="550" y="600" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Deux instruments qui nous aident à trouver le Nord.</text>
+</svg>

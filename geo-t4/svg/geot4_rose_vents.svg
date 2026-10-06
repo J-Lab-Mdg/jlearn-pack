@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="1100" height="780" fill="#FFFFFF"/>
+  <text x="550" y="55" text-anchor="middle" font-size="38" font-weight="bold" fill="#1F4E79">La rose des vents</text>
+  <circle cx="550" cy="400" r="310" fill="none" stroke="#B0BEC5" stroke-width="3" stroke-dasharray="6 8"/>
+  
+    <polygon points="550,400 550,80 552.232207159812,368.07795039168565" fill="#C00000"/>
+    <polygon points="550,400 550,80 547.767792840188,368.07795039168565" fill="#C00000" opacity="0.65"/>
+    <text x="550" y="36" text-anchor="middle" font-size="42" font-weight="bold" fill="#C00000">N</text>
+  
+    <polygon points="550,400 830,400 581.9220496083144,402.232207159812" fill="#EF5350"/>
+    <polygon points="550,400 830,400 581.9220496083144,397.767792840188" fill="#EF5350" opacity="0.65"/>
+    <text x="888" y="414" text-anchor="middle" font-size="42" font-weight="bold" fill="#EF5350">E</text>
+  
+    <polygon points="550,400 550,680 547.767792840188,431.92204960831435" fill="#37474F"/>
+    <polygon points="550,400 550,680 552.232207159812,431.92204960831435" fill="#37474F" opacity="0.65"/>
+    <text x="550" y="752" text-anchor="middle" font-size="42" font-weight="bold" fill="#37474F">S</text>
+  
+    <polygon points="550,400 270,400.00000000000006 518.0779503916856,397.767792840188" fill="#42A5F5"/>
+    <polygon points="550,400 270,400.00000000000006 518.0779503916856,402.232207159812" fill="#42A5F5" opacity="0.65"/>
+    <text x="212" y="414.00000000000006" text-anchor="middle" font-size="42" font-weight="bold" fill="#42A5F5">O</text>
+  
+    <polygon points="550,400 677.2792206135786,272.72077938642144 569.9171555210934,383.28752214815" fill="#FB8C00"/>
+    <polygon points="550,400 677.2792206135786,272.72077938642144 566.71247785185,380.08284447890657" fill="#FFB74D" opacity="0.9"/>
+    <text x="723.9482681718907" y="236.05173182810933" text-anchor="middle" font-size="30" font-weight="bold" fill="#E65100">NE</text>
+    <polygon points="550,400 677.2792206135786,527.2792206135786 566.71247785185,419.91715552109343" fill="#FB8C00"/>
+    <polygon points="550,400 677.2792206135786,527.2792206135786 569.9171555210934,416.71247785185" fill="#FFB74D" opacity="0.9"/>
+    <text x="723.9482681718907" y="583.9482681718907" text-anchor="middle" font-size="30" font-weight="bold" fill="#E65100">SE</text>
+    <polygon points="550,400 422.72077938642144,527.2792206135786 530.0828444789066,416.71247785185005" fill="#FB8C00"/>
+    <polygon points="550,400 422.72077938642144,527.2792206135786 533.28752214815,419.91715552109343" fill="#FFB74D" opacity="0.9"/>
+    <text x="376.0517318281093" y="583.9482681718907" text-anchor="middle" font-size="30" font-weight="bold" fill="#E65100">SO</text>
+    <polygon points="550,400 422.72077938642144,272.72077938642144 533.28752214815,380.08284447890657" fill="#FB8C00"/>
+    <polygon points="550,400 422.72077938642144,272.72077938642144 530.0828444789066,383.28752214815" fill="#FFB74D" opacity="0.9"/>
+    <text x="376.05173182810927" y="236.05173182810933" text-anchor="middle" font-size="30" font-weight="bold" fill="#E65100">NO</text>
+  <circle cx="550" cy="400" r="40" fill="#FFF8E1" stroke="#F9A825" stroke-width="5"/>
+  <circle cx="550" cy="400" r="12" fill="#F9A825"/>
+  <text x="550" y="760" text-anchor="middle" font-size="26" fill="#546E7A" font-style="italic">Les grandes branches donnent les points cardinaux ; les branches courtes, les directions intermédiaires.</text>
+</svg>
