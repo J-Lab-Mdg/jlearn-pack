@@ -126,6 +126,16 @@ function contents() {
     tocLink("s42", "    Session 42 — Revision"),
     tocLink("s43", "    Session 43 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit6", "UNIT 6 — NARRATING A PAST EVENT (Sessions 44–51)", { bold: true, size: 26 }),
+    tocLink("s44", "    Session 44 — The words of the past and the feelings of the story"),
+    tocLink("s45", "    Session 45 — The sequence markers: the skeleton of the story"),
+    tocLink("s46", "    Session 46 — Listening: my amazing Saturday"),
+    tocLink("s47", "    Session 47 — Reading: the day Soa found her voice"),
+    tocLink("s48", "    Session 48 — Writing: my paragraph of the past"),
+    tocLink("s49", "    Session 49 — The class story book!"),
+    tocLink("s50", "    Session 50 — Revision"),
+    tocLink("s51", "    Session 51 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -183,6 +193,7 @@ async function main() {
         ...require("./unit3")(),
         ...require("./unit4")(),
         ...require("./unit5")(),
+        ...require("./unit6")(),
       ],
     }],
   });
