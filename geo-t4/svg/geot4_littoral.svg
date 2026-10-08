@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrS" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#F9A825"/></marker>
+  </defs>
+  <rect width="1100" height="720" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Le paysage littoral : au bord de la mer</text>
+  <rect x="40" y="100" width="1020" height="500" rx="16" fill="#BBDEFB" stroke="#90A4AE" stroke-width="3"/>
+  <path d="M 40 420 Q 150 330 280 370 Q 360 395 430 360 Q 520 320 640 380 Q 760 435 900 380 Q 990 348 1060 400 L 1060 600 L 40 600 Z" fill="#C8E6C9" stroke="#66BB6A" stroke-width="4"/>
+  <path d="M 640 380 Q 700 415 790 400 Q 860 388 930 405 L 950 430 Q 860 450 780 438 Q 700 428 640 400 Z" fill="#8BC34A" opacity="0.7"/>
+  <ellipse cx="220" cy="250" rx="60" ry="34" fill="#C8E6C9" stroke="#66BB6A" stroke-width="3"/>
+  <text x="220" y="310" text-anchor="middle" font-size="23" font-weight="bold" fill="#1B5E20">une île</text>
+  <path d="M 880 600 Q 880 500 930 460 Q 985 505 985 600 Z" fill="#C8E6C9" stroke="#66BB6A" stroke-width="3"/>
+  <path d="M 1005 600 Q 1005 480 1050 440 Q 1060 450 1060 470 L 1060 600 Z" fill="#C8E6C9" stroke="#66BB6A" stroke-width="3"/>
+  <ellipse cx="1035" cy="430" rx="34" ry="20" fill="#C8E6C9" stroke="#66BB6A" stroke-width="3"/>
+  <text x="1000" y="545" font-size="23" font-weight="bold" fill="#1B5E20">une presqu'île</text>
+  <path d="M 420 600 Q 420 480 470 445 Q 525 490 525 600 Z" fill="#A5D6A7" stroke="#66BB6A" stroke-width="3"/>
+  <text x="470" y="435" text-anchor="middle" font-size="23" font-weight="bold" fill="#1B5E20">un cap</text>
+  <path d="M 120 600 L 120 500 Q 170 470 240 490 Q 300 508 330 470 L 330 600 Z" fill="#90CAF9" opacity="0.6"/>
+  <text x="225" y="545" text-anchor="middle" font-size="23" font-weight="bold" fill="#0D47A1">une baie</text>
+  <path d="M 620 600 Q 625 520 660 495 Q 700 470 710 445" stroke="#42A5F5" stroke-width="16" fill="none"/>
+  <text x="640" y="425" font-size="23" font-weight="bold" fill="#0D47A1">un estuaire :</text>
+  <text x="640" y="452" font-size="22" fill="#0D47A1">bouche du fleuve</text>
+  <text x="80" y="395" font-size="23" font-weight="bold" fill="#2E7D32" transform="rotate(-12 80 395)">la côte</text>
+  <text x="900" y="250" font-size="24" font-weight="bold" fill="#0D47A1">la mer</text>
+  
+  <g>
+    <line x1="990" y1="200" x2="990" y2="140" stroke="#C00000" stroke-width="7" marker-end="url(#arrR)"/>
+    <circle cx="990" cy="200" r="5" fill="#C00000"/>
+    <text x="990" y="128" text-anchor="middle" font-size="30" font-weight="bold" fill="#C00000">N</text>
+  </g>
+  <text x="550" y="660" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le littoral, c'est le bord de la mer : côtes, plages, baies, caps, îles, presqu'îles et estuaires.</text>
+  <text x="550" y="695" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Madagascar est une grande île : le canal du Mozambique à l'Ouest, l'océan Indien à l'Est.</text>
+</svg>

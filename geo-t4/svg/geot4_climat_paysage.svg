@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 580" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="1100" height="580" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Le climat et le paysage</text>
+  <text x="280" y="105" text-anchor="middle" font-size="27" font-weight="bold" fill="#1F4E79">Une région humide : il pleut souvent</text>
+  <rect x="40" y="120" width="480" height="350" rx="16" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <path d="M 80 470 L 80 420 Q 200 360 300 380 L 470 470 Z" fill="#A5D6A7"/>
+  
+  <g transform="translate(120,390) scale(1)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#1B5E20" stroke="#1B5E20" stroke-width="2"/>
+  </g> 
+  <g transform="translate(190,380) scale(0.85)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g> 
+  <g transform="translate(260,392) scale(0.95)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#1B5E20" stroke="#1B5E20" stroke-width="2"/>
+  </g> 
+  <g transform="translate(330,385) scale(0.8)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g> 
+  <g transform="translate(400,395) scale(0.9)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#1B5E20" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <path d="M 60 470 Q 160 455 260 465 Q 360 472 500 462" stroke="#42A5F5" stroke-width="20" fill="none"/>
+  <g fill="#B0BEC5" opacity="0.9">
+    <ellipse cx="180" cy="160" rx="55" ry="24"/><ellipse cx="225" cy="150" rx="60" ry="26"/><ellipse cx="330" cy="160" rx="52" ry="22"/>
+  </g>
+  <g stroke="#4FC3F7" stroke-width="4" stroke-linecap="round">
+    <line x1="230" y1="180" x2="220" y2="210"/><line x1="252" y1="170" x2="242" y2="200"/>
+    <line x1="274" y1="185" x2="264" y2="215"/><line x1="244" y1="225" x2="234" y2="255"/>
+    <line x1="270" y1="230" x2="260" y2="260"/></g>
+  <text x="280" y="505" text-anchor="middle" font-size="21" fill="#37474F">forêt dense, rivière bien pleine</text>
+  <text x="820" y="105" text-anchor="middle" font-size="27" font-weight="bold" fill="#1F4E79">Une région sèche : il pleut peu</text>
+  <rect x="580" y="120" width="480" height="350" rx="16" fill="#F5E9C8" stroke="#90A4AE" stroke-width="3"/>
+  <circle cx="960" cy="185" r="30" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/>
+  <rect x="590" y="430" width="460" height="40" fill="#E0C97F"/>
+  <g transform="translate(700,430)"><rect x="-4" y="-26" width="8" height="26" fill="#8D6E63"/><ellipse cx="0" cy="-34" rx="40" ry="16" fill="#BCAAA4" stroke="#8D6E63" stroke-width="2"/></g>
+  <g stroke="#BCAAA4" stroke-width="2.5" stroke-linecap="round">
+    <line x1="640" y1="470" x2="636" y2="452"/><line x1="660" y1="470" x2="664" y2="450"/>
+    <line x1="880" y1="470" x2="876" y2="455"/><line x1="900" y1="470" x2="904" y2="452"/>
+    <line x1="1000" y1="470" x2="996" y2="458"/><line x1="1020" y1="470" x2="1024" y2="455"/>
+  </g>
+  <path d="M 600 470 Q 700 465 820 468 Q 920 470 1040 465" stroke="#90CAF9" stroke-width="7" fill="none"/>
+  <text x="820" y="505" text-anchor="middle" font-size="21" fill="#37474F">savane sèche, rivière maigre</text>
+  <text x="550" y="555" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le climat influence le paysage : selon la pluie et la chaleur, la végétation et les cours d'eau changent.</text>
+</svg>

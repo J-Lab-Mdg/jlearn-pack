@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="1100" height="560" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Le lac, l'étang et le marais</text>
+  <text x="215" y="105" text-anchor="middle" font-size="27" font-weight="bold" fill="#1F4E79">Le lac</text>
+  <rect x="40" y="120" width="350" height="330" rx="16" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <ellipse cx="215" cy="330" rx="130" ry="80" fill="#64B5F6" stroke="#1E88E5" stroke-width="3"/>
+  <path d="M 160 300 Q 215 285 270 300" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+  <ellipse cx="215" cy="255" rx="150" ry="26" fill="#A5D6A7" opacity="0.6"/>
+  
+  <g transform="translate(90,240) scale(0.8)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g> 
+  <g transform="translate(330,250) scale(0.7)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <g transform="translate(185,340)"><polygon points="0,0 22,6 0,12" fill="#EF5350"/><line x1="0" y1="6" x2="26" y2="6" stroke="#6D4C41" stroke-width="3"/></g>
+  <text x="550" y="105" text-anchor="middle" font-size="27" font-weight="bold" fill="#1F4E79">L'étang</text>
+  <rect x="405" y="120" width="350" height="330" rx="16" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <ellipse cx="580" cy="330" rx="60" ry="38" fill="#64B5F6" stroke="#1E88E5" stroke-width="3"/>
+  
+  <g transform="translate(470,240) scale(0.7)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g> 
+  <g transform="translate(680,250) scale(0.6)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <text x="580" y="420" text-anchor="middle" font-size="21" fill="#37474F">une petite étendue d'eau</text>
+  <text x="885" y="105" text-anchor="middle" font-size="27" font-weight="bold" fill="#1F4E79">Le marais</text>
+  <rect x="760" y="120" width="350" height="330" rx="16" fill="#DCEDC8" stroke="#90A4AE" stroke-width="3"/>
+  <path d="M 780 340 Q 820 320 870 335 Q 930 350 1000 332 Q 1060 318 1090 340 L 1090 440 L 780 440 Z" fill="#81C784" opacity="0.7"/>
+  <path d="M 820 380 Q 860 368 900 380 Q 940 392 980 380" stroke="#4FC3F7" stroke-width="12" fill="none"/>
+  <g stroke="#2E7D32" stroke-width="5" stroke-linecap="round">
+    <line x1="800" y1="440" x2="800" y2="395"/><line x1="830" y1="440" x2="830" y2="385"/>
+    <line x1="920" y1="440" x2="920" y2="390"/><line x1="950" y1="440" x2="950" y2="380"/>
+    <line x1="1030" y1="440" x2="1030" y2="395"/><line x1="1060" y1="440" x2="1060" y2="388"/>
+  </g>
+  <text x="935" y="420" text-anchor="middle" font-size="21" fill="#37474F">un terrain humide et plein de roseaux</text>
+  <text x="215" y="480" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">grande étendue d'eau entourée de terres</text>
+  <text x="550" y="480" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">petite étendue d'eau peu profonde</text>
+  <text x="935" y="480" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">terrain mouillé couvert d'eau et de plantes</text>
+  <text x="550" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">À Madagascar, le lac Alaotra est le plus grand lac du pays ; ses bords forment de grands marais à roseaux.</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrS" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#F9A825"/></marker>
+  </defs>
+  <rect width="1100" height="620" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Le voyage de l'eau : de la source à la mer</text>
+  <rect x="40" y="110" width="1020" height="420" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <polygon points="60,530 250,180 440,530" fill="#90A4AE" stroke="#607D8B" stroke-width="3"/>
+  <circle cx="250" cy="220" r="5" fill="#4FC3F7"/>
+  <ellipse cx="245" cy="230" rx="16" ry="7" fill="#B3E5FC"/>
+  <path d="M 250 235 C 280 300 330 340 400 370" stroke="#64B5F6" stroke-width="6" fill="none"/>
+  <path d="M 400 370 C 480 400 540 410 620 425" stroke="#42A5F5" stroke-width="13" fill="none"/>
+  <path d="M 620 425 C 700 440 760 450 830 460" stroke="#1E88E5" stroke-width="26" fill="none"/>
+  <path d="M 830 460 C 880 468 910 470 940 472" stroke="#1565C0" stroke-width="34" fill="none"/>
+  <rect x="880" y="420" width="180" height="110" fill="#BBDEFB" stroke="none"/>
+  <path d="M 880 420 Q 920 405 960 420 Q 1000 435 1060 420 L 1060 530 L 880 530 Z" fill="#BBDEFB"/>
+  
+  <g transform="translate(560,400) scale(0.9)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(620,380) scale(0.7)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <line x1="250" y1="240" x2="330" y2="290" stroke="#C00000" stroke-width="2.5" marker-end="url(#arrR)"/>
+  <text x="150" y="170" font-size="24" font-weight="bold" fill="#C00000">la source</text>
+  <text x="270" y="320" font-size="24" font-weight="bold" fill="#1F4E79">le ruisseau : petit filet d'eau</text>
+  <text x="430" y="390" font-size="24" font-weight="bold" fill="#1F4E79">la rivière : plus large</text>
+  <text x="640" y="500" font-size="24" font-weight="bold" fill="#1F4E79">le fleuve : le plus grand, il va à la mer</text>
+  <text x="900" y="510" font-size="24" font-weight="bold" fill="#1565C0">la mer</text>
+  <text x="920" y="450" font-size="22" font-weight="bold" fill="#C00000">l'embouchure</text>
+  <line x1="380" y1="150" x2="470" y2="270" stroke="#37474F" stroke-width="2.5" marker-end="url(#arrK)" stroke-dasharray="8 6"/>
+  <text x="340" y="140" font-size="24" font-weight="bold" fill="#37474F">l'amont : vers la source</text>
+  <line x1="700" y1="160" x2="770" y2="300" stroke="#37474F" stroke-width="2.5" marker-end="url(#arrK)" stroke-dasharray="8 6"/>
+  <text x="620" y="150" font-size="24" font-weight="bold" fill="#37474F">l'aval : vers la mer</text>
+  <text x="550" y="580" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">L'eau part de la source, grossit en ruisseau, en rivière puis en fleuve, et finit dans la mer.</text>
+</svg>

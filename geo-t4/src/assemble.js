@@ -1,5 +1,5 @@
 // assemble.js — Assemble le Manuel de Géographie T4 (Traitement C, skill jlearn-manuel-scolaire)
-// Contenu courant : Unités 1 et 2. Usage : node src/assemble.js
+// Contenu courant : Unités 1, 2 et 3. Usage : node src/assemble.js
 const fs = require("fs");
 const path = require("path");
 const { Document, Packer, AlignmentType, Table, TableRow, WidthType, BorderStyle } = require("docx");
@@ -11,9 +11,13 @@ const U2A = require("./data-unite2");
 const U2B = require("./data-unite2b");
 const U2 = { topics: [...U2A.topics, ...U2B.topics] };
 const U2REV = require("./data-unite2-rev");
+const U3A = require("./data-unite3");
+const U3B = require("./data-unite3b");
+const U3 = { topics: [...U3A.topics, ...U3B.topics] };
+const U3REV = require("./data-unite3-rev");
 
 const OUT_DIR = path.join(__dirname, "..", "output");
-const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_V1_UNITE2.docx");
+const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_V1_UNITE3.docx");
 
 // ── Configuration des unités disponibles ────────────────────────────────
 const UNITES = [
@@ -37,11 +41,20 @@ const UNITES = [
     rev: U2REV.revision,
     exam: U2REV.examen,
   },
+  {
+    id: "unite3",
+    nom: "UNITÉ 3 — LES ÉLÉMENTS DU PAYSAGE NATUREL",
+    seances: "Séances 25 à 38",
+    lecons: 12,
+    intro: "Thématique officielle du programme d'études T4 : les éléments du paysage naturel — le relief, les cours d'eau, la végétation, le paysage littoral, le paysage marin, les paysages aménagés urbain et rural, le climat et les utilités pour l'homme. Durée officielle : 6 heures, soit 12 séances de 30 minutes.",
+    topics: U3.topics,
+    rev: U3REV.revision,
+    exam: U3REV.examen,
+  },
 ];
 
 // Unités restantes (livrées plus tard) — affichées en gris dans la table des matières
 const FUTURES = [
-  { nom: "UNITÉ 3 — LES ÉLÉMENTS DU PAYSAGE NATUREL", seances: "Séances 25 à 38" },
   { nom: "UNITÉ 4 — L'ENVIRONNEMENT", seances: "Séances 39 à 56" },
   { nom: "UNITÉ 5 — L'HOMME ET LES ACTIVITÉS QUOTIDIENNES", seances: "Séances 57 à 76" },
 ];

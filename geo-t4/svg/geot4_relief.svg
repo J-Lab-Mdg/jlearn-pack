@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrS" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#F9A825"/></marker>
+  </defs>
+  <rect width="1100" height="620" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Les formes du relief</text>
+  <rect x="40" y="100" width="1020" height="400" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <circle cx="950" cy="160" r="26" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/>
+  <path d="M 60 500 L 60 440 Q 120 340 170 330 L 330 500 Z" fill="#C5E1A5"/>
+  <polygon points="170,330 300,140 420,330" fill="#90A4AE" stroke="#607D8B" stroke-width="3"/>
+  <polygon points="300,140 320,175 280,175" fill="#ECEFF1"/>
+  <ellipse cx="470" cy="440" rx="95" ry="85" fill="#A5D6A7" stroke="#66BB6A" stroke-width="3"/>
+  <path d="M 60 500 Q 200 480 330 495 Q 420 502 520 500" stroke="none"/>
+  <path d="M 330 500 Q 340 460 380 440 Q 420 420 470 415 Q 530 412 580 430 Q 640 450 700 470 Q 780 492 1000 492" stroke="#64B5F6" stroke-width="10" fill="none"/>
+  <rect x="40" y="490" width="1020" height="10" fill="#8D6E63"/>
+  <rect x="700" y="430" width="320" height="62" fill="#DCEDC8" stroke="#8BC34A" stroke-width="2"/>
+  <line x1="740" y1="430" x2="740" y2="492" stroke="#8BC34A" stroke-width="2"/>
+  <line x1="790" y1="430" x2="790" y2="492" stroke="#8BC34A" stroke-width="2"/>
+  <line x1="840" y1="430" x2="840" y2="492" stroke="#8BC34A" stroke-width="2"/>
+  <line x1="890" y1="430" x2="890" y2="492" stroke="#8BC34A" stroke-width="2"/>
+  <line x1="940" y1="430" x2="940" y2="492" stroke="#8BC34A" stroke-width="2"/>
+  
+  <g transform="translate(990,420) scale(0.9)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <g transform="translate(845,398)"><rect x="0" y="0" width="34" height="22" fill="#FFE0B2" stroke="#FB8C00" stroke-width="2.5"/><polygon points="-4,0 17,-14 38,0" fill="#FB8C00"/></g>
+  <line x1="300" y1="150" x2="300" y2="80" stroke="#C00000" stroke-width="2.5" marker-end="url(#arrR)"/>
+  <text x="310" y="72" font-size="24" font-weight="bold" fill="#C00000">la montagne : très haute</text>
+  <line x1="470" y1="380" x2="530" y2="90" stroke="#C00000" stroke-width="2.5" marker-end="url(#arrR)"/>
+  <text x="440" y="82" font-size="24" font-weight="bold" fill="#C00000">la colline : moins haute et arrondie</text>
+  <line x1="470" y1="425" x2="560" y2="425" stroke="#C00000" stroke-width="0"/>
+  <line x1="475" y1="430" x2="620" y2="330" stroke="#C00000" stroke-width="2.5" marker-end="url(#arrR)"/>
+  <text x="630" y="318" font-size="24" font-weight="bold" fill="#C00000">la vallée : le creux</text>
+  <text x="630" y="348" font-size="24" font-weight="bold" fill="#C00000">traversé par un cours d'eau</text>
+  <line x1="850" y1="470" x2="850" y2="360" stroke="#C00000" stroke-width="2.5" marker-end="url(#arrR)"/>
+  <text x="860" y="350" font-size="24" font-weight="bold" fill="#C00000">la plaine : terrain plat et bas</text>
+  <text x="550" y="560" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le relief, c'est l'ensemble des formes du terrain : montagnes, collines, vallées et plaines.</text>
+</svg>

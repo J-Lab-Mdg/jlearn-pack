@@ -267,6 +267,66 @@
       "id": "geot4_plan_village",
       "url": "/geot4_plan_village.png",
       "type": "image/png"
+    },
+    {
+      "id": "geot4_types_paysage",
+      "url": "/geot4_types_paysage.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_relief",
+      "url": "/geot4_relief.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_cours_eau",
+      "url": "/geot4_cours_eau.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_lac_etang_marais",
+      "url": "/geot4_lac_etang_marais.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_vegetation",
+      "url": "/geot4_vegetation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_littoral",
+      "url": "/geot4_littoral.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_marin",
+      "url": "/geot4_marin.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_paysage_urbain",
+      "url": "/geot4_paysage_urbain.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_paysage_rural",
+      "url": "/geot4_paysage_rural.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_climats_mada",
+      "url": "/geot4_climats_mada.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_climat_paysage",
+      "url": "/geot4_climat_paysage.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_utilites",
+      "url": "/geot4_utilites.png",
+      "type": "image/png"
     }
   ]
 }

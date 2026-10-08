@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrS" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#F9A825"/></marker>
+  </defs>
+  <rect width="1100" height="640" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">L'utilité du relief, des cours d'eau et de la végétation</text>
+  <g transform="translate(60,120)">
+    <rect x="0" y="0" width="310" height="460" rx="16" fill="#ECEFF1" stroke="#90A4AE" stroke-width="3"/>
+    <text x="155" y="45" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F4E79">Le relief</text>
+    <polygon points="95,150 135,90 175,150" fill="#90A4AE" stroke="#607D8B" stroke-width="2.5"/>
+    <path d="M 30 150 L 280 150" stroke="#8D6E63" stroke-width="4"/>
+    <path d="M 185 150 L 200 135 L 215 150 L 230 135 L 245 150 L 260 135 L 275 150" stroke="#66BB6A" stroke-width="9" fill="none"/>
+    <text x="155" y="185" text-anchor="middle" font-size="20" fill="#37474F">on cultive en terrasses sur les pentes</text>
+    <circle cx="135" cy="88" r="6" fill="#4FC3F7"/>
+    <path d="M 135 94 Q 130 115 120 130" stroke="#4FC3F7" stroke-width="4" fill="none"/>
+    <text x="155" y="235" text-anchor="middle" font-size="20" fill="#37474F">les montagnes donnent des sources</text>
+    <rect x="45" y="265" width="220" height="46" fill="#DCEDC8" stroke="#8BC34A" stroke-width="2"/>
+    <text x="155" y="294" text-anchor="middle" font-size="20" fill="#37474F">la plaine et le plateau :</text>
+    <text x="155" y="345" text-anchor="middle" font-size="20" fill="#37474F">de grandes surfaces pour cultiver</text>
+    <text x="155" y="425" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">et pour bâtir les villages</text>
+  </g>
+  <g transform="translate(395,120)">
+    <rect x="0" y="0" width="310" height="460" rx="16" fill="#E1F5FE" stroke="#90A4AE" stroke-width="3"/>
+    <text x="155" y="45" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F4E79">Les cours d'eau</text>
+    <path d="M 40 130 Q 155 118 270 128" stroke="#42A5F5" stroke-width="22" fill="none"/>
+    <path d="M 88 118 a 12 12 0 0 1 12 -12 a 12 12 0 0 1 12 12" fill="#4FC3F7"/>
+    <text x="155" y="185" text-anchor="middle" font-size="20" fill="#37474F">l'eau pour boire et laver</text>
+    <rect x="60" y="215" width="190" height="40" fill="#C5E1A5" stroke="#8BC34A" stroke-width="2"/>
+    <line x1="95" y1="215" x2="95" y2="255" stroke="#8BC34A" stroke-width="2"/>
+    <line x1="130" y1="215" x2="130" y2="255" stroke="#8BC34A" stroke-width="2"/>
+    <line x1="165" y1="215" x2="165" y2="255" stroke="#8BC34A" stroke-width="2"/>
+    <line x1="200" y1="215" x2="200" y2="255" stroke="#8BC34A" stroke-width="2"/>
+    <path d="M 40 255 Q 155 247 270 253" stroke="#42A5F5" stroke-width="14" fill="none"/>
+    <text x="155" y="292" text-anchor="middle" font-size="20" fill="#37474F">l'eau qui arrose les rizières</text>
+    
+  <g transform="translate(155,330) scale(0.8)">
+    <ellipse cx="0" cy="0" rx="20" ry="11" fill="#4FC3F7" stroke="#0277BD" stroke-width="2"/>
+    <polygon points="-19,0 -32,-9 -32,9" fill="#4FC3F7" stroke="#0277BD" stroke-width="2"/>
+    <circle cx="10" cy="-3" r="2.6" fill="#0277BD"/>
+  </g>
+    <text x="155" y="380" text-anchor="middle" font-size="20" fill="#37474F">la pêche : des poissons à manger</text>
+    <g transform="translate(115,405)"><polygon points="0,0 46,10 0,20" fill="#8D6E63"/><line x1="0" y1="10" x2="52" y2="10" stroke="#6D4C41" stroke-width="5"/></g>
+    <text x="155" y="455" text-anchor="middle" font-size="20" fill="#37474F">le transport en pirogue</text>
+  </g>
+  <g transform="translate(730,120)">
+    <rect x="0" y="0" width="310" height="460" rx="16" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+    <text x="155" y="45" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F4E79">La végétation</text>
+    
+  <g transform="translate(155,130) scale(1.1)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+    <text x="155" y="200" text-anchor="middle" font-size="20" fill="#37474F">le bois pour cuire et construire</text>
+    <g transform="translate(115,240)"><rect x="-3" y="-24" width="6" height="24" fill="#8D6E63"/><circle cx="0" cy="-32" r="18" fill="#81C784" stroke="#2E7D32" stroke-width="2"/><circle cx="-10" cy="-24" r="4.5" fill="#EF5350"/><circle cx="6" cy="-20" r="4.5" fill="#EF5350"/><circle cx="12" cy="-32" r="4.5" fill="#EF5350"/></g>
+    <text x="155" y="278" text-anchor="middle" font-size="20" fill="#37474F">les fruits à manger</text>
+    <g transform="translate(130,320)">
+      <circle cx="25" cy="0" r="26" fill="#81C784" opacity="0.45"/>
+      <g transform="translate(25,10)"><rect x="-3" y="0" width="6" height="18" fill="#8D6E63"/></g>
+      <line x1="60" y1="0" x2="100" y2="0" stroke="#F9A825" stroke-width="4" marker-end="url(#arrS)"/>
+    </g>
+    <text x="155" y="380" text-anchor="middle" font-size="20" fill="#37474F">l'ombre contre le soleil</text>
+    <text x="155" y="425" text-anchor="middle" font-size="20" fill="#37474F">les racines retiennent la terre</text>
+    <text x="155" y="455" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">et protègent le sol de la pluie</text>
+  </g>
+  <text x="550" y="615" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le relief, les cours d'eau et la végétation sont utiles à l'homme pour vivre, cultiver et se déplacer.</text>
+</svg>

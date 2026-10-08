@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 580" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrS" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#F9A825"/></marker>
+  </defs>
+  <rect width="1100" height="580" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Les trois types de paysage naturel</text>
+  <text x="220" y="105" text-anchor="middle" font-size="27" font-weight="bold" fill="#1F4E79">Le paysage terrestre</text>
+  <rect x="40" y="120" width="360" height="350" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <polygon points="200,180 260,300 140,300" fill="#B0BEC5" stroke="#78909C" stroke-width="3"/>
+  <ellipse cx="90" cy="345" rx="90" ry="55" fill="#A5D6A7" stroke="#66BB6A" stroke-width="3"/>
+  <ellipse cx="320" cy="355" rx="110" ry="50" fill="#C5E1A5" stroke="#8BC34A" stroke-width="3"/>
+  <path d="M 200 300 Q 190 340 150 370 Q 120 395 90 430" stroke="#64B5F6" stroke-width="8" fill="none"/>
+  
+  <g transform="translate(320,340) scale(1)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(285,355) scale(0.8)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(350,360) scale(0.7)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <circle cx="260" cy="160" r="18" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/>
+  <text x="550" y="105" text-anchor="middle" font-size="27" font-weight="bold" fill="#1F4E79">Le paysage littoral</text>
+  <rect x="430" y="120" width="360" height="350" rx="16" fill="#BBDEFB" stroke="#90A4AE" stroke-width="3"/>
+  <path d="M 430 320 Q 500 280 570 320 Q 640 360 790 330 L 790 470 L 430 470 Z" fill="#C8E6C9" stroke="#66BB6A" stroke-width="3"/>
+  <path d="M 430 320 Q 520 340 600 355 Q 700 372 790 350 L 790 470 L 430 470 Z" fill="#FFE082" stroke="#FBC02D" stroke-width="2"/>
+  <circle cx="620" cy="200" r="16" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/>
+  <polygon points="680,310 710,345 655,345" fill="#C8E6C9" stroke="#66BB6A" stroke-width="3"/>
+  <g transform="translate(520,395)"><polygon points="0,0 30,8 0,16" fill="#EF5350"/><line x1="0" y1="8" x2="34" y2="8" stroke="#6D4C41" stroke-width="4"/></g>
+  <text x="880" y="105" text-anchor="middle" font-size="27" font-weight="bold" fill="#1F4E79">Le paysage marin</text>
+  <rect x="820" y="120" width="360" height="350" rx="16" fill="#4FC3F7" stroke="#90A4AE" stroke-width="3"/>
+  <path d="M 820 160 Q 850 145 880 160 Q 910 175 940 160 Q 970 145 1000 160 Q 1030 175 1180 160" stroke="#FFFFFF" stroke-width="5" fill="none"/>
+  <rect x="820" y="120" width="360" height="40" fill="#81D4FA" opacity="0.5"/>
+  <path d="M 880 470 Q 900 400 950 380 Q 1000 360 1030 470 Z" fill="#FF8A65" stroke="#E64A19" stroke-width="3"/>
+  <g transform="translate(960,400)"><path d="M 0 0 V -45 M 0 -45 L -14 -32 M 0 -45 L 14 -32 M 0 -30 L -12 -18 M 0 -30 L 12 -18 M 0 -15 L -9 -5 M 0 -15 L 9 -5" stroke="#F06292" stroke-width="7" stroke-linecap="round" fill="none"/></g>
+  <circle cx="1050" cy="420" r="22" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/>
+  <path d="M 1100 470 Q 1102 440 1090 430 M 1110 470 Q 1112 445 1125 435" stroke="#2E7D32" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <g transform="translate(930,250) scale(1)">
+    <ellipse cx="0" cy="0" rx="20" ry="11" fill="#4FC3F7" stroke="#0277BD" stroke-width="2"/>
+    <polygon points="-19,0 -32,-9 -32,9" fill="#4FC3F7" stroke="#0277BD" stroke-width="2"/>
+    <circle cx="10" cy="-3" r="2.6" fill="#0277BD"/>
+  </g>
+  
+  <g transform="translate(1010,220) scale(0.7)">
+    <ellipse cx="0" cy="0" rx="20" ry="11" fill="#81C784" stroke="#0277BD" stroke-width="2"/>
+    <polygon points="-19,0 -32,-9 -32,9" fill="#81C784" stroke="#0277BD" stroke-width="2"/>
+    <circle cx="10" cy="-3" r="2.6" fill="#0277BD"/>
+  </g>
+  
+  <g transform="translate(1060,290) scale(0.8)">
+    <ellipse cx="0" cy="0" rx="20" ry="11" fill="#FFB74D" stroke="#0277BD" stroke-width="2"/>
+    <polygon points="-19,0 -32,-9 -32,9" fill="#FFB74D" stroke="#0277BD" stroke-width="2"/>
+    <circle cx="10" cy="-3" r="2.6" fill="#0277BD"/>
+  </g>
+  <text x="550" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le paysage terrestre est sur la terre ferme ; le littoral est le bord de la mer ; le paysage marin est sous la mer.</text>
+</svg>
