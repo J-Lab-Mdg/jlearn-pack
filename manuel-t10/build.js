@@ -95,6 +95,16 @@ function contents() {
     tocLink("s17", "    Session 17 — Revision"),
     tocLink("s18", "    Session 18 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit3", "UNIT 3 — MY HOUSE, MY NEIGHBOURHOOD (Sessions 19–26)", { bold: true, size: 26 }),
+    tocLink("s19", "    Session 19 — The rooms and the features of the house"),
+    tocLink("s20", "    Session 20 — The furniture and the big preposition family"),
+    tocLink("s21", "    Session 21 — Listening: Welcome to my house!"),
+    tocLink("s22", "    Session 22 — The household activities: tidy or messy?"),
+    tocLink("s23", "    Session 23 — Reading: a busy Saturday at Naivo’s house"),
+    tocLink("s24", "    Session 24 — Writing: household activities in my community"),
+    tocLink("s25", "    Session 25 — Revision"),
+    tocLink("s26", "    Session 26 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -149,6 +159,7 @@ async function main() {
         ...dashboard(), pageBreak(),
         ...require("./unit1")(),
         ...require("./unit2")(),
+        ...require("./unit3")(),
       ],
     }],
   });
