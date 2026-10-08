@@ -116,6 +116,16 @@ function contents() {
     tocLink("s34", "    Session 34 — Revision"),
     tocLink("s35", "    Session 35 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit5", "UNIT 5 — THE WEATHER (Sessions 36–43)", { bold: true, size: 26 }),
+    tocLink("s36", "    Session 36 — The weather words: the -y adjective machine"),
+    tocLink("s37", "    Session 37 — The temperature, the forecast and the clothes"),
+    tocLink("s38", "    Session 38 — Listening: the weather report"),
+    tocLink("s39", "    Session 39 — The seasons, here and there: the weather grammar"),
+    tocLink("s40", "    Session 40 — Reading: our planet has a fever"),
+    tocLink("s41", "    Session 41 — Writing: my weather forecast (the TV presenter)"),
+    tocLink("s42", "    Session 42 — Revision"),
+    tocLink("s43", "    Session 43 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -172,6 +182,7 @@ async function main() {
         ...require("./unit2")(),
         ...require("./unit3")(),
         ...require("./unit4")(),
+        ...require("./unit5")(),
       ],
     }],
   });
