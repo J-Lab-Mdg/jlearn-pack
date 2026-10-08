@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2E7D32"/></marker>
+  </defs>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Le reboisement et les haies vives</text>
+  <rect x="40" y="90" width="480" height="380" rx="16" fill="#F1F8E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="280" y="130" text-anchor="middle" font-size="25" font-weight="bold" fill="#2E7D32">le reboisement</text>
+  
+  <g transform="translate(140,420) scale(1.4)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#FFB74D" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-18" x2="20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(180,385) rotate(20) scale(1.2)">
+    <line x1="0" y1="-40" x2="0" y2="10" stroke="#8D6E63" stroke-width="5"/>
+    <path d="M -9 10 L 9 10 L 6 32 L -6 32 Z" fill="#90A4AE" stroke="#546E7A" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(300,430) scale(2)">
+    <path d="M 0 0 Q 4 -12 0 -22" stroke="#2E7D32" stroke-width="3" fill="none"/>
+    <path d="M 0 -12 Q -10 -18 -14 -12 Q -8 -6 0 -12 Z" fill="#66BB6A" stroke="#2E7D32" stroke-width="1.5"/>
+    <path d="M 0 -16 Q 10 -24 15 -17 Q 8 -10 0 -16 Z" fill="#66BB6A" stroke="#2E7D32" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(370,430) scale(2)">
+    <path d="M 0 0 Q 4 -12 0 -22" stroke="#2E7D32" stroke-width="3" fill="none"/>
+    <path d="M 0 -12 Q -10 -18 -14 -12 Q -8 -6 0 -12 Z" fill="#66BB6A" stroke="#2E7D32" stroke-width="1.5"/>
+    <path d="M 0 -16 Q 10 -24 15 -17 Q 8 -10 0 -16 Z" fill="#66BB6A" stroke="#2E7D32" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(440,430) scale(2)">
+    <path d="M 0 0 Q 4 -12 0 -22" stroke="#2E7D32" stroke-width="3" fill="none"/>
+    <path d="M 0 -12 Q -10 -18 -14 -12 Q -8 -6 0 -12 Z" fill="#66BB6A" stroke="#2E7D32" stroke-width="1.5"/>
+    <path d="M 0 -16 Q 10 -24 15 -17 Q 8 -10 0 -16 Z" fill="#66BB6A" stroke="#2E7D32" stroke-width="1.5"/>
+  </g>
+  
+  <g transform="translate(490,420) scale(1.3)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#FFB74D" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-18" x2="20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="280" y="455" text-anchor="middle" font-size="20" font-weight="bold" fill="#2E7D32">on replante de jeunes arbres</text>
+  <rect x="580" y="90" width="480" height="380" rx="16" fill="#F1F8E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="820" y="130" text-anchor="middle" font-size="25" font-weight="bold" fill="#2E7D32">les haies vives</text>
+  <ellipse cx="660" cy="240" rx="16" ry="12" fill="#66BB6A" stroke="#2E7D32" stroke-width="2"/><ellipse cx="660" cy="290" rx="16" ry="12" fill="#66BB6A" stroke="#2E7D32" stroke-width="2"/><ellipse cx="660" cy="340" rx="16" ry="12" fill="#66BB6A" stroke="#2E7D32" stroke-width="2"/><ellipse cx="660" cy="390" rx="16" ry="12" fill="#66BB6A" stroke="#2E7D32" stroke-width="2"/>
+  <rect x="690" y="220" width="330" height="200" fill="#A5D6A7" stroke="#66BB6A" stroke-width="2"/>
+  <path d="M 710 260 q 6 -16 12 0 M 750 260 q 6 -16 12 0 M 790 260 q 6 -16 12 0 M 830 260 q 6 -16 12 0 M 870 260 q 6 -16 12 0 M 910 260 q 6 -16 12 0" stroke="#558B2F" stroke-width="2.5" fill="none"/>
+  <path d="M 710 320 q 6 -16 12 0 M 750 320 q 6 -16 12 0 M 790 320 q 6 -16 12 0 M 830 320 q 6 -16 12 0 M 870 320 q 6 -16 12 0 M 910 320 q 6 -16 12 0" stroke="#558B2F" stroke-width="2.5" fill="none"/>
+  
+  <g transform="translate(850,390) scale(0.9)">
+    <ellipse cx="0" cy="0" rx="34" ry="18" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2.5"/>
+    <circle cx="-18" cy="-16" r="10" fill="#BCAAA4" stroke="#8D6E63" stroke-width="2.5"/>
+    <rect x="-36" y="-12" width="14" height="12" rx="4" fill="#BCAAA4" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -40 -18 L -46 -26 M -36 -18 L -33 -28" stroke="#6D4C41" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-20" y1="16" x2="-20" y2="30" stroke="#8D6E63" stroke-width="3.5"/>
+    <line x1="-4" y1="16" x2="-4" y2="30" stroke="#8D6E63" stroke-width="3.5"/>
+    <line x1="12" y1="16" x2="12" y2="30" stroke="#8D6E63" stroke-width="3.5"/>
+    <line x1="24" y1="16" x2="24" y2="30" stroke="#8D6E63" stroke-width="3.5"/>
+  </g>
+  <text x="820" y="450" text-anchor="middle" font-size="20" font-weight="bold" fill="#2E7D32">les arbustes protègent le champ</text>
+  <text x="550" y="550" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Reboiser, c'est replanter des arbres ; les haies vives protègent champs et sols.</text>
+</svg>

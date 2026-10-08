@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2E7D32"/></marker>
+  </defs>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Le jardinage et la lutte contre le gaspillage</text>
+  <rect x="40" y="90" width="480" height="380" rx="16" fill="#F1F8E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="280" y="130" text-anchor="middle" font-size="25" font-weight="bold" fill="#2E7D32">le jardinage</text>
+  <rect x="80" y="310" width="400" height="64" fill="#8D6E63" stroke="#5D4037" stroke-width="2.5" opacity="0.35"/>
+  
+  <g transform="translate(140,310) scale(2)">
+    <line x1="0" y1="0" x2="0" y2="-26" stroke="#2E7D32" stroke-width="3"/>
+    <path d="M 0 -12 Q -12 -16 -14 -6 Q -4 -4 0 -12 Z" fill="#43A047"/>
+    <circle cx="-8" cy="-30" r="7" fill="#EC407A" stroke="#AD1457" stroke-width="1.5"/>
+    <circle cx="8" cy="-30" r="7" fill="#EC407A" stroke="#AD1457" stroke-width="1.5"/>
+    <circle cx="0" cy="-38" r="7" fill="#EC407A" stroke="#AD1457" stroke-width="1.5"/>
+    <circle cx="0" cy="-30" r="6" fill="#FDD835" stroke="#F9A825" stroke-width="1.5"/>
+    <circle cx="0" cy="-22" r="7" fill="#EC407A" stroke="#AD1457" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(200,300) scale(1.6)">
+    <line x1="0" y1="0" x2="0" y2="-26" stroke="#2E7D32" stroke-width="3"/>
+    <path d="M 0 -12 Q -12 -16 -14 -6 Q -4 -4 0 -12 Z" fill="#43A047"/>
+    <circle cx="-8" cy="-30" r="7" fill="#EC407A" stroke="#AD1457" stroke-width="1.5"/>
+    <circle cx="8" cy="-30" r="7" fill="#EC407A" stroke="#AD1457" stroke-width="1.5"/>
+    <circle cx="0" cy="-38" r="7" fill="#EC407A" stroke="#AD1457" stroke-width="1.5"/>
+    <circle cx="0" cy="-30" r="6" fill="#FDD835" stroke="#F9A825" stroke-width="1.5"/>
+    <circle cx="0" cy="-22" r="7" fill="#EC407A" stroke="#AD1457" stroke-width="1.5"/>
+  </g>
+  
+  <g transform="translate(300,290) scale(1.8)">
+    <polygon points="-8,0 8,0 0,26" fill="#FF8A65" stroke="#BF360C" stroke-width="2"/>
+    <path d="M -5 0 Q -8 -10 -3 -14 M 0 0 Q 0 -12 0 -16 M 5 0 Q 8 -10 3 -14" fill="none" stroke="#2E7D32" stroke-width="2.5"/>
+  </g>
+  <g transform="translate(400,305) scale(1.6)">
+    <circle cx="0" cy="0" r="20" fill="#AED581" stroke="#558B2F" stroke-width="2.5"/>
+    <path d="M -12 -6 Q 0 -16 12 -6 M -14 4 Q 0 -4 14 4" fill="none" stroke="#558B2F" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(455,405) scale(1.15)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#FFB74D" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-18" x2="20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="270" y="450" text-anchor="middle" font-size="20" font-weight="bold" fill="#2E7D32">des parterres fleuris et un potager</text>
+  <rect x="580" y="90" width="480" height="380" rx="16" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="820" y="130" text-anchor="middle" font-size="25" font-weight="bold" fill="#E65100">non au gaspillage !</text>
+  
+  <g transform="translate(720,290) scale(1.5)">
+    <ellipse cx="0" cy="0" rx="34" ry="12" fill="#FFFFFF" stroke="#90A4AE" stroke-width="2.5"/>
+    <ellipse cx="0" cy="0" rx="22" ry="7" fill="#ECEFF1" stroke="#B0BEC5" stroke-width="1.5"/>
+    <circle cx="-6" cy="-3" r="7" fill="#FFB74D"/><circle cx="9" cy="-2" r="6" fill="#AED581"/>
+  </g>
+  <line x1="770" y1="290" x2="840" y2="290" stroke="#2E7D32" stroke-width="5" marker-end="url(#arrG)"/>
+  
+  <g transform="translate(930,290) scale(1.5)">
+    <ellipse cx="0" cy="0" rx="34" ry="12" fill="#FFFFFF" stroke="#90A4AE" stroke-width="2.5"/>
+    <ellipse cx="0" cy="0" rx="22" ry="7" fill="#ECEFF1" stroke="#B0BEC5" stroke-width="1.5"/>
+    
+  </g>
+  <text x="720" y="345" text-anchor="middle" font-size="19" font-weight="bold" fill="#37474F">je prends juste</text>
+  <text x="720" y="371" text-anchor="middle" font-size="19" font-weight="bold" fill="#37474F">ce que je mange</text>
+  <text x="930" y="345" text-anchor="middle" font-size="19" font-weight="bold" fill="#2E7D32">je finis</text>
+  <text x="930" y="371" text-anchor="middle" font-size="19" font-weight="bold" fill="#2E7D32">mon assiette</text>
+  <text x="820" y="445" text-anchor="middle" font-size="20" font-weight="bold" fill="#E65100">gaspiller la nourriture, c'est mal</text>
+  <text x="550" y="550" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Jardiner embellit l'école ; ne pas gaspiller, c'est respecter le travail de tous.</text>
+</svg>

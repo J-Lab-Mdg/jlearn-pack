@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2E7D32"/></marker>
+  </defs>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">La déforestation et les feux de brousse</text>
+  <rect x="40" y="90" width="460" height="380" rx="16" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="270" y="130" text-anchor="middle" font-size="26" font-weight="bold" fill="#2E7D32">AVANT</text>
+  
+  <g transform="translate(130,250) scale(1.3)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <g transform="translate(210,260) scale(1.7)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <g transform="translate(300,250) scale(1.4)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <g transform="translate(390,260) scale(1.6)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(160,380) scale(1.5)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <g transform="translate(260,390) scale(1.8)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  <g transform="translate(360,380) scale(1.4)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(430,160) scale(0.9)">
+    <ellipse cx="0" cy="0" rx="16" ry="10" fill="#90CAF9" stroke="#1565C0" stroke-width="2"/>
+    <circle cx="14" cy="-6" r="6" fill="#90CAF9" stroke="#1565C0" stroke-width="2"/>
+    <polygon points="19,-6 27,-4 19,-1" fill="#F9A825" stroke="#F57F17" stroke-width="1"/>
+    <path d="M -14 -2 Q -28 -14 -36 -4 Q -26 2 -14 4 Z" fill="#64B5F6" stroke="#1565C0" stroke-width="2"/>
+    <circle cx="16" cy="-7" r="1.6" fill="#263238"/>
+  </g>
+  <text x="270" y="450" text-anchor="middle" font-size="21" font-weight="bold" fill="#2E7D32">la forêt dense et verte</text>
+  <line x1="515" y1="280" x2="575" y2="280" stroke="#C00000" stroke-width="9" marker-end="url(#arrR)"/>
+  <rect x="600" y="90" width="460" height="380" rx="16" fill="#FBE9E7" stroke="#90A4AE" stroke-width="3"/>
+  <text x="830" y="130" text-anchor="middle" font-size="26" font-weight="bold" fill="#BF360C">APRÈS</text>
+  
+  <g transform="translate(710,260) scale(1.6)">
+    <rect x="-9" y="-24" width="18" height="24" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <ellipse cx="0" cy="-24" rx="9" ry="4" fill="#D7CCC8" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  <g transform="translate(810,260) scale(1.4)">
+    <rect x="-9" y="-24" width="18" height="24" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <ellipse cx="0" cy="-24" rx="9" ry="4" fill="#D7CCC8" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  <g transform="translate(910,260) scale(1.6)">
+    <rect x="-9" y="-24" width="18" height="24" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <ellipse cx="0" cy="-24" rx="9" ry="4" fill="#D7CCC8" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(760,380) scale(1.3)">
+    <rect x="-9" y="-24" width="18" height="24" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <ellipse cx="0" cy="-24" rx="9" ry="4" fill="#D7CCC8" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  <g transform="translate(880,380) scale(1.5)">
+    <rect x="-9" y="-24" width="18" height="24" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <ellipse cx="0" cy="-24" rx="9" ry="4" fill="#D7CCC8" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(710,240) scale(1.3)">
+    <path d="M 0 0 Q -18 -12 -10 -30 Q -3 -18 2 -26 Q 12 -12 0 0 Z" fill="#FF7043" stroke="#BF360C" stroke-width="2"/>
+    <path d="M 0 -3 Q -7 -10 -4 -19 Q 1 -13 3 -15 Q 6 -9 0 -3 Z" fill="#FFCA28"/>
+  </g>
+  <g transform="translate(910,240) scale(1.1)">
+    <path d="M 0 0 Q -18 -12 -10 -30 Q -3 -18 2 -26 Q 12 -12 0 0 Z" fill="#FF7043" stroke="#BF360C" stroke-width="2"/>
+    <path d="M 0 -3 Q -7 -10 -4 -19 Q 1 -13 3 -15 Q 6 -9 0 -3 Z" fill="#FFCA28"/>
+  </g>
+  <g transform="translate(830,360) scale(1.2)">
+    <path d="M 0 0 Q -18 -12 -10 -30 Q -3 -18 2 -26 Q 12 -12 0 0 Z" fill="#FF7043" stroke="#BF360C" stroke-width="2"/>
+    <path d="M 0 -3 Q -7 -10 -4 -19 Q 1 -13 3 -15 Q 6 -9 0 -3 Z" fill="#FFCA28"/>
+  </g>
+  
+  <g transform="translate(830,210) scale(1.5)" opacity="0.85">
+    <circle cx="0" cy="0" r="7" fill="#8D6E63"/>
+    <circle cx="8" cy="-12" r="9" fill="#8D6E63"/>
+    <circle cx="-2" cy="-24" r="11" fill="#8D6E63"/>
+    <circle cx="10" cy="-36" r="9" fill="#8D6E63"/>
+  </g>
+  <path d="M 660 400 q 8 -14 16 0 M 700 405 q 8 -14 16 0 M 940 400 q 8 -14 16 0" stroke="#BF360C" stroke-width="2.5" fill="none"/>
+  <text x="830" y="450" text-anchor="middle" font-size="21" font-weight="bold" fill="#BF360C">le sol nu : souches et cendres</text>
+  <text x="550" y="550" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Couper les arbres et brûler la forêt, c'est la déforestation : la forêt disparaît.</text>
+</svg>

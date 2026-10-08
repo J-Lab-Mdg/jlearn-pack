@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2E7D32"/></marker>
+  </defs>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Les éléments naturels non-vivants</text>
+  <rect x="40" y="90" width="320" height="220" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <rect x="390" y="90" width="320" height="220" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <rect x="740" y="90" width="320" height="220" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <rect x="40" y="350" width="320" height="220" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <rect x="390" y="350" width="320" height="220" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <rect x="740" y="350" width="320" height="220" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  
+  <g transform="translate(200,285) scale(1.4)">
+    <polygon points="-70,0 0,-80 70,0" fill="#8D6E63" stroke="#5D4037" stroke-width="3"/>
+    <path d="M -24 0 L -8 -20 L 8 0 Z" fill="#A1887F" opacity="0.7"/>
+  </g>
+  <text x="200" y="300" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">la montagne</text>
+  
+  <g transform="translate(550,285) scale(2.1)">
+    <path d="M -30 0 L -20 -22 L 0 -30 L 22 -18 L 30 0 Z" fill="#B0BEC5" stroke="#607D8B" stroke-width="2.5"/>
+    <path d="M -8 -24 L 0 -12 L 10 -20" fill="none" stroke="#607D8B" stroke-width="2"/>
+  </g>
+  <text x="550" y="300" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">le rocher</text>
+  
+  <g transform="translate(897,210) scale(1.25)">
+    <circle cx="0" cy="0" r="26" fill="#FDD835" stroke="#F9A825" stroke-width="3"/>
+    <line x1="34.0" y1="0.0" x2="50.0" y2="0.0" stroke="#F9A825" stroke-width="5" stroke-linecap="round"/><line x1="24.0" y1="24.0" x2="35.4" y2="35.4" stroke="#F9A825" stroke-width="5" stroke-linecap="round"/><line x1="0.0" y1="34.0" x2="0.0" y2="50.0" stroke="#F9A825" stroke-width="5" stroke-linecap="round"/><line x1="-24.0" y1="24.0" x2="-35.4" y2="35.4" stroke="#F9A825" stroke-width="5" stroke-linecap="round"/><line x1="-34.0" y1="0.0" x2="-50.0" y2="0.0" stroke="#F9A825" stroke-width="5" stroke-linecap="round"/><line x1="-24.0" y1="-24.0" x2="-35.4" y2="-35.4" stroke="#F9A825" stroke-width="5" stroke-linecap="round"/><line x1="-0.0" y1="-34.0" x2="-0.0" y2="-50.0" stroke="#F9A825" stroke-width="5" stroke-linecap="round"/><line x1="24.0" y1="-24.0" x2="35.4" y2="-35.4" stroke="#F9A825" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="897" y="300" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">le soleil</text>
+  
+  <g transform="translate(185,445) scale(1.7)">
+    <ellipse cx="0" cy="0" rx="34" ry="18" fill="#ECEFF1" stroke="#90A4AE" stroke-width="2.5"/>
+    <ellipse cx="-24" cy="6" rx="22" ry="13" fill="#ECEFF1"/>
+    <ellipse cx="24" cy="6" rx="22" ry="13" fill="#ECEFF1"/>
+  </g>
+  
+  <line x1="230" y1="500" x2="290" y2="500" stroke="#90A4AE" stroke-width="4" marker-end="url(#arrK)"/>
+  <line x1="220" y1="522" x2="274" y2="522" stroke="#90A4AE" stroke-width="4" marker-end="url(#arrK)"/>
+  <text x="200" y="552" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">l'air, le vent</text>
+  <ellipse cx="550" cy="465" rx="120" ry="42" fill="#4FC3F7" stroke="#0277BD" stroke-width="2.5"/>
+  <path d="M 480 465 q 10 -8 20 0 t 20 0 t 20 0 t 20 0" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+  <text x="550" y="552" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">la rivière</text>
+  <rect x="790" y="420" width="215" height="90" fill="#8D6E63" stroke="#5D4037" stroke-width="2.5"/>
+  <rect x="790" y="420" width="215" height="16" fill="#81C784" stroke="#558B2F" stroke-width="2"/>
+  <circle cx="850" cy="478" r="9" fill="#B0BEC5" stroke="#607D8B" stroke-width="1.5"/>
+  <circle cx="950" cy="486" r="7" fill="#B0BEC5" stroke="#607D8B" stroke-width="1.5"/>
+  <text x="897" y="552" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">le sol</text>
+  <text x="550" y="590" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Les éléments non-vivants ne naissent pas, ne grandissent pas et ne meurent pas.</text>
+</svg>

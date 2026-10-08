@@ -327,6 +327,86 @@
       "id": "geot4_utilites",
       "url": "/geot4_utilites.png",
       "type": "image/png"
+    },
+    {
+      "id": "geot4_environnement",
+      "url": "/geot4_environnement.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_elements_vivants",
+      "url": "/geot4_elements_vivants.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_elements_non_vivants",
+      "url": "/geot4_elements_non_vivants.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_elements_artificiels",
+      "url": "/geot4_elements_artificiels.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_classer_elements",
+      "url": "/geot4_classer_elements.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_interrelation",
+      "url": "/geot4_interrelation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_degradation",
+      "url": "/geot4_degradation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_deforestation",
+      "url": "/geot4_deforestation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_pollution",
+      "url": "/geot4_pollution.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_consequences_nature",
+      "url": "/geot4_consequences_nature.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_consequences_homme",
+      "url": "/geot4_consequences_homme.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_proprete",
+      "url": "/geot4_proprete.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_tri_dechets",
+      "url": "/geot4_tri_dechets.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_reboisement",
+      "url": "/geot4_reboisement.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_jardinage",
+      "url": "/geot4_jardinage.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_plan_action",
+      "url": "/geot4_plan_action.png",
+      "type": "image/png"
     }
   ]
 }

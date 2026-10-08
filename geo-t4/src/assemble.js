@@ -1,5 +1,5 @@
 // assemble.js — Assemble le Manuel de Géographie T4 (Traitement C, skill jlearn-manuel-scolaire)
-// Contenu courant : Unités 1, 2 et 3. Usage : node src/assemble.js
+// Contenu courant : Unités 1, 2, 3 et 4. Usage : node src/assemble.js
 const fs = require("fs");
 const path = require("path");
 const { Document, Packer, AlignmentType, Table, TableRow, WidthType, BorderStyle } = require("docx");
@@ -15,9 +15,14 @@ const U3A = require("./data-unite3");
 const U3B = require("./data-unite3b");
 const U3 = { topics: [...U3A.topics, ...U3B.topics] };
 const U3REV = require("./data-unite3-rev");
+const U4A = require("./data-unite4");
+const U4B = require("./data-unite4b");
+const U4C = require("./data-unite4c");
+const U4 = { topics: [...U4A.topics, ...U4B.topics, ...U4C.topics] };
+const U4REV = require("./data-unite4-rev");
 
 const OUT_DIR = path.join(__dirname, "..", "output");
-const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_V1_UNITE3.docx");
+const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_V1_UNITE4.docx");
 
 // ── Configuration des unités disponibles ────────────────────────────────
 const UNITES = [
@@ -51,11 +56,20 @@ const UNITES = [
     rev: U3REV.revision,
     exam: U3REV.examen,
   },
+  {
+    id: "unite4",
+    nom: "UNITÉ 4 — L'ENVIRONNEMENT",
+    seances: "Séances 39 à 56",
+    lecons: 16,
+    intro: "Thématique officielle du programme d'études T4 : l'Environnement — les éléments constitutifs (vivants, non-vivants, artificiels) et leurs interrelations, la dégradation de l'Environnement (formes, causes, conséquences) et sa protection (propreté, triage et réutilisation des déchets, reboisement, haies vives, jardinage, non-gaspillage). Durée officielle : 8 heures, soit 16 séances de 30 minutes.",
+    topics: U4.topics,
+    rev: U4REV.revision,
+    exam: U4REV.examen,
+  },
 ];
 
 // Unités restantes (livrées plus tard) — affichées en gris dans la table des matières
 const FUTURES = [
-  { nom: "UNITÉ 4 — L'ENVIRONNEMENT", seances: "Séances 39 à 56" },
   { nom: "UNITÉ 5 — L'HOMME ET LES ACTIVITÉS QUOTIDIENNES", seances: "Séances 57 à 76" },
 ];
 
