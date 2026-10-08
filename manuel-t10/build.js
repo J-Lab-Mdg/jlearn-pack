@@ -105,6 +105,17 @@ function contents() {
     tocLink("s25", "    Session 25 — Revision"),
     tocLink("s26", "    Session 26 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit4", "UNIT 4 — HEALTH (Sessions 27–35)", { bold: true, size: 26 }),
+    tocLink("s27", "    Session 27 — The diseases and the symptoms"),
+    tocLink("s28", "    Session 28 — Asking about and describing health"),
+    tocLink("s29", "    Session 29 — Listening: What’s the matter, Lova?"),
+    tocLink("s30", "    Session 30 — The suggestions to stay healthy"),
+    tocLink("s31", "    Session 31 — Reading: the healthy day of a champion"),
+    tocLink("s32", "    Session 32 — Healthy here, healthy there: the health interview"),
+    tocLink("s33", "    Session 33 — Writing: the healthy teenagers campaign"),
+    tocLink("s34", "    Session 34 — Revision"),
+    tocLink("s35", "    Session 35 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -160,6 +171,7 @@ async function main() {
         ...require("./unit1")(),
         ...require("./unit2")(),
         ...require("./unit3")(),
+        ...require("./unit4")(),
       ],
     }],
   });

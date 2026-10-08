@@ -26,7 +26,7 @@ leçons enrichies (6 règles), 6 annexes dont Phonetics IPA + figurée.
 - Bloc 1 ☑ : socle (builders, couverture, avant-propos, PE Content, TOC, overview) + Unit 1 (S1–S10). — livré.
 - Bloc 2 ☑ : Unit 2 Classroom communication (S11–S18). — livré (upload Drive audio U2 à finaliser).
 - Bloc 3 ☑ : Unit 3 My house, my neighbourhood (S19–S26). — livré (upload Drive audios U2+U3 en attente).
-- Bloc 4 ☐ : Unit 4 Health (S27–S35).
+- Bloc 4 ☑ : Unit 4 Health (S27–S35). — livré (uploads Drive U2-U4 en attente).
 - Bloc 5 ☐ : Unit 5 The weather (S36–S43).
 - Bloc 6 ☐ : Unit 6 Narrating a past event (S44–S51).
 - Bloc 7 ☐ : Unit 7 Travelling in Madagascar (S52–S61).
