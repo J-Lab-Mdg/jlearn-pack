@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrB" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#1F4E79"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8D6E63"/></marker>
+  </defs>
+  <rect width="1100" height="640" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">L'échelle d'un plan</text>
+  <rect x="60" y="110" width="420" height="330" rx="14" fill="#FAFAFA" stroke="#90A4AE" stroke-width="3"/>
+  <text x="270" y="152" text-anchor="middle" font-size="26" font-weight="bold" fill="#37474F">Dans la réalité</text>
+  <rect x="110" y="250" width="320" height="24" fill="#D7CCC8" stroke="#8D6E63" stroke-width="3"/>
+  <line x1="135" y1="274" x2="135" y2="345" stroke="#8D6E63" stroke-width="7"/>
+  <line x1="405" y1="274" x2="405" y2="345" stroke="#8D6E63" stroke-width="7"/>
+  <line x1="110" y1="385" x2="430" y2="385" stroke="#1F4E79" stroke-width="3" marker-start="url(#arrB)" marker-end="url(#arrB)"/>
+  <text x="270" y="418" text-anchor="middle" font-size="24" fill="#37474F">la table du maître : 2 mètres</text>
+  <line x1="520" y1="280" x2="630" y2="280" stroke="#1F4E79" stroke-width="8" marker-end="url(#arrB)"/>
+  <text x="575" y="252" text-anchor="middle" font-size="22" font-style="italic" fill="#1F4E79">on réduit</text>
+  <rect x="690" y="110" width="360" height="330" rx="14" fill="#FAFAFA" stroke="#90A4AE" stroke-width="3"/>
+  <text x="870" y="152" text-anchor="middle" font-size="26" font-weight="bold" fill="#37474F">Sur le plan</text>
+  <rect x="760" y="200" width="300" height="190" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="2.5"/>
+  <rect x="800" y="255" width="130" height="18" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2.5"/>
+  <line x1="800" y1="320" x2="930" y2="320" stroke="#C00000" stroke-width="3" marker-start="url(#arrR)" marker-end="url(#arrR)"/>
+  <text x="865" y="352" text-anchor="middle" font-size="24" fill="#37474F">2 cm</text>
+  <rect x="60" y="490" width="990" height="100" rx="14" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <text x="555" y="530" text-anchor="middle" font-size="25" fill="#37474F">Ici, 2 cm sur le plan représentent 2 m dans la réalité :</text>
+  <text x="555" y="566" text-anchor="middle" font-size="25" font-weight="bold" fill="#1F4E79">1 cm sur le plan = 1 m dans la réalité. C'est l'échelle du plan.</text>
+  <text x="550" y="626" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">L'échelle permet de dessiner de grands lieux sur une petite feuille.</text>
+</svg>

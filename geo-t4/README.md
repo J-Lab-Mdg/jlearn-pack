@@ -4,8 +4,8 @@ Manuel scolaire de **Géographie, classe de T4** (4ᵉ année du primaire, Madag
 Source officielle : `PE RAPE/PE T4.pdf` (Programme d'Études T4, section GÉOGRAPHIE, p. 115-123).
 
 ## État d'avancement
-- ✅ **Unité 1 — L'orientation géographique** (Séances 1-10 : 8 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE1.docx`
-- ⬜ Unité 2 — Le plan (Séances 11-24)
+- ✅ **Unité 1 — L'orientation géographique** (Séances 1-10) → `output/Manuel_Geographie_T4_V1_UNITE1.docx`
+- ✅ **Unité 2 — Le plan** (Séances 11-24 : 12 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE2.docx` (contient Unités 1+2)
 - ⬜ Unité 3 — Les éléments du paysage naturel (Séances 25-38)
 - ⬜ Unité 4 — L'Environnement (Séances 39-56)
 - ⬜ Unité 5 — L'Homme et les activités quotidiennes (Séances 57-76)
@@ -25,13 +25,17 @@ Le découpage complet des 76 séances est dans **PLAN-FINAL.md** (validé par l'
 geo-t4/
 ├── PLAN-FINAL.md          # Découpage validé des 76 séances (référence)
 ├── README.md              # Ce fichier
-├── svg/make-svg.js        # Génère les schémas SVG → PNG (sharp) à la racine du dépôt
+├── svg/make-svg.js        # Schémas Unité 1 (SVG → PNG, sharp)
+├── svg/make-svg-u2.js     # Schémas Unité 2
 ├── src/
 │   ├── builders.js        # Constructeurs docx (méta-table invisible, 6 colonnes, couleurs…)
 │   ├── seance-generator.js# topic → fiche I/II/III + leçon + EXERCICES notés
 │   ├── data-unite1.js     # Contenu rédactionnel Unité 1 (8 séances)
 │   ├── data-unite1-rev.js # Révision + sujet d'examen Unité 1
-│   ├── assemble.js        # Assemblage (couverture → … → séances)
+│   ├── data-unite2.js     # Contenu Unité 2, Séances 11-16
+│   ├── data-unite2b.js    # Contenu Unité 2, Séances 17-22
+│   ├── data-unite2-rev.js # Révision + sujet d'examen Unité 2
+│   ├── assemble.js        # Assemblage — config UNITES (boucle générique, ajouter l'unité suivante dedans)
 │   └── verifications.py   # Vérifications post-génération (skill)
 └── output/                # Livrables .docx
 ```
@@ -40,7 +44,7 @@ geo-t4/
 ```bash
 npm install docx sharp        # à la racine du dépôt (node_modules non versionné)
 node geo-t4/svg/make-svg.js   # régénérer les schémas si modifiés
-node geo-t4/src/assemble.js   # → output/Manuel_Geographie_T4_V1_UNITE1.docx
+node geo-t4/src/assemble.js   # → output/Manuel_Geographie_T4_V1_UNITE2.docx (unités 1+2)
 python3 geo-t4/src/verifications.py
 ```
 

@@ -1,24 +1,53 @@
-// assemble.js — Assemble le Manuel de Géographie T4 (version courante : Unité 1)
-// Usage : node src/assemble.js  →  output/Manuel_Geographie_T4_V1_UNITE1.docx
+// assemble.js — Assemble le Manuel de Géographie T4 (Traitement C, skill jlearn-manuel-scolaire)
+// Contenu courant : Unités 1 et 2. Usage : node src/assemble.js
 const fs = require("fs");
 const path = require("path");
-const { Document, Packer, Paragraph, TextRun, AlignmentType, Table, TableRow, WidthType, BorderStyle } = require("docx");
+const { Document, Packer, AlignmentType, Table, TableRow, WidthType, BorderStyle } = require("docx");
 const B = require("./builders");
 const { generateSeanceDocContent } = require("./seance-generator");
 const U1 = require("./data-unite1");
 const U1REV = require("./data-unite1-rev");
+const U2A = require("./data-unite2");
+const U2B = require("./data-unite2b");
+const U2 = { topics: [...U2A.topics, ...U2B.topics] };
+const U2REV = require("./data-unite2-rev");
 
 const OUT_DIR = path.join(__dirname, "..", "output");
-const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_V1_UNITE1.docx");
+const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_V1_UNITE2.docx");
 
-// Plan général (les 5 unités — voir PLAN-FINAL.md)
-const PLAN = [
-  { nom: "Unité 1 — L'orientation géographique", seances: "Séances 1 à 10", lecons: 8, dispo: true },
-  { nom: "Unité 2 — Le plan", seances: "Séances 11 à 24", lecons: 12, dispo: false },
-  { nom: "Unité 3 — Les éléments du paysage naturel", seances: "Séances 25 à 38", lecons: 12, dispo: false },
-  { nom: "Unité 4 — L'Environnement", seances: "Séances 39 à 56", lecons: 16, dispo: false },
-  { nom: "Unité 5 — L'Homme et les activités quotidiennes", seances: "Séances 57 à 76", lecons: 18, dispo: false },
+// ── Configuration des unités disponibles ────────────────────────────────
+const UNITES = [
+  {
+    id: "unite1",
+    nom: "UNITÉ 1 — L'ORIENTATION GÉOGRAPHIQUE",
+    seances: "Séances 1 à 10",
+    lecons: 8,
+    intro: "Thématique officielle du programme d'études T4 : la notion d'orientation géographique — les points cardinaux, les directions intermédiaires et la rose des vents. Durée officielle : 4 heures, soit 8 séances de 30 minutes.",
+    topics: U1.topics,
+    rev: U1REV.revision,
+    exam: U1REV.examen,
+  },
+  {
+    id: "unite2",
+    nom: "UNITÉ 2 — LE PLAN",
+    seances: "Séances 11 à 24",
+    lecons: 12,
+    intro: "Thématique officielle du programme d'études T4 : le plan à différentes échelles — plan de la salle de classe, de l'école, du quartier, du village ou de la ville : éléments, orientation, échelle et légende. Durée officielle : 6 heures, soit 12 séances de 30 minutes.",
+    topics: U2.topics,
+    rev: U2REV.revision,
+    exam: U2REV.examen,
+  },
 ];
+
+// Unités restantes (livrées plus tard) — affichées en gris dans la table des matières
+const FUTURES = [
+  { nom: "UNITÉ 3 — LES ÉLÉMENTS DU PAYSAGE NATUREL", seances: "Séances 25 à 38" },
+  { nom: "UNITÉ 4 — L'ENVIRONNEMENT", seances: "Séances 39 à 56" },
+  { nom: "UNITÉ 5 — L'HOMME ET LES ACTIVITÉS QUOTIDIENNES", seances: "Séances 57 à 76" },
+];
+
+const thin = { style: BorderStyle.SINGLE, size: 4, color: "BBBBBB" };
+const borders = { top: thin, bottom: thin, left: thin, right: thin, insideHorizontal: thin, insideVertical: thin };
 
 // ── 1. Couverture ───────────────────────────────────────────────────────
 function coverPage() {
@@ -46,8 +75,8 @@ function avantPropos() {
     B.headingWithBookmark("Avant-propos", "avantpropos", { size: 30, after: 200 }),
     B.p("Ce manuel de Géographie, destiné aux élèves de la classe de T4, a été conçu pour accompagner l'enseignant et l'élève tout au long de l'année scolaire, conformément au programme d'études officiel en vigueur à Madagascar.", { size: 21, after: 140 }),
     B.p("Il propose, pour chacune des 66 séances de 30 minutes qui composent le programme de Géographie de T4 (1 heure par semaine), une fiche de préparation détaillée, une leçon rédigée, ainsi que des exercices avec leurs corrigés détaillés notés selon un barème.", { size: 21, after: 140 }),
-    B.p("Les séances sont regroupées en cinq unités thématiques : l'orientation géographique, le plan, les éléments du paysage naturel, l'Environnement, et l'Homme et les activités quotidiennes. Chaque unité se termine par une séance de révision puis par un sujet d'examen avec son corrigé, pour préparer les élèves aux évaluations. Un glossaire et des cartes muettes complètent l'ouvrage.", { size: 21, after: 140 }),
-    B.p("Cette première édition a été élaborée avec le plus grand soin. Malgré toute l'attention portée à sa rédaction et à sa relecture, il est possible que quelques erreurs (orthographe, grammaire, ou autres coquilles) s'y soient glissées : nous vous remercions par avance de votre indulgence.", { size: 21, after: 140 }),
+    B.p("Les séances sont regroupées en cinq unités thématiques : l'orientation géographique, le plan, les éléments du paysage naturel, l'Environnement, et l'Homme et les activités quotidiennes. Chaque unité se termine par une séance de révision puis par un sujet d'examen avec son corrigé, pour préparer les élèves aux évaluations. Un glossaire et des cartes muettes complèteront l'ouvrage final.", { size: 21, after: 140 }),
+    B.p("Cette édition a été élaborée avec le plus grand soin. Malgré toute l'attention portée à sa rédaction et à sa relecture, il est possible que quelques erreurs (orthographe, grammaire, ou autres coquilles) s'y soient glissées : nous vous remercions par avance de votre indulgence.", { size: 21, after: 140 }),
     B.p("L'équipe J-Lab accueille avec attention tous les retours des enseignants et des élèves qui utilisent ce manuel : signalement d'erreurs, suggestions d'amélioration, comme appréciations sur les points forts de l'ouvrage. Vos remarques contribuent directement à l'amélioration des prochaines éditions.", { size: 21, after: 140 }),
     B.p("Nous remercions chaleureusement les enseignants qui accompagneront leurs élèves avec ce manuel : c'est grâce à leur engagement quotidien que ce travail prend tout son sens.", { size: 21, after: 200 }),
     B.pageBreak(),
@@ -81,102 +110,64 @@ function tableDesMatieres() {
   out.push(B.tocLink("Mode d'emploi du manuel", "modeemploi", { size: 21, bold: true }));
   out.push(B.tocLink("Tableau de bord général", "tableaudebord", { size: 21, bold: true }));
   out.push(B.pEmpty(10));
-  out.push(B.tocLink("UNITÉ 1 — L'ORIENTATION GÉOGRAPHIQUE", "unite1", { size: 22, bold: true }));
-  U1.topics.forEach((t) => {
-    out.push(B.tocLink(`Séance ${t.numero} — ${t.titre}`, `seance${t.numero}`, { size: 20, indent: 360 }));
+  UNITES.forEach((u) => {
+    out.push(B.tocLink(u.nom, u.id, { size: 22, bold: true }));
+    u.topics.forEach((t) => {
+      out.push(B.tocLink(`Séance ${t.numero} — ${t.titre}`, `seance${t.numero}`, { size: 20, indent: 360 }));
+    });
+    out.push(B.tocLink(`Séance ${u.rev.numero} — Révision (Unité ${UNITES.indexOf(u) + 1})`, `seance${u.rev.numero}`, { size: 20, indent: 360 }));
+    out.push(B.tocLink(`Séance ${u.exam.numero} — Sujet d'examen T4 (Unité ${UNITES.indexOf(u) + 1})`, `seance${u.exam.numero}`, { size: 20, indent: 360 }));
+    out.push(B.pEmpty(10));
   });
-  out.push(B.tocLink(`Séance 9 — ${U1REV.revision.titre.replace("Révision — Unité 1 : ", "Révision — ")}`, "seance9", { size: 20, indent: 360 }));
-  out.push(B.tocLink("Séance 10 — Sujet d'examen T4 (Unité 1)", "seance10", { size: 20, indent: 360 }));
-  out.push(B.pEmpty(10));
-  // Unités suivantes (livrées dans la version finale) — texte simple, pas de lien
-  out.push(B.p("UNITÉ 2 — LE PLAN (Séances 11 à 24) — à paraître dans la version finale", { size: 20, bold: true, color: "777777", after: 60 }));
-  out.push(B.p("UNITÉ 3 — LES ÉLÉMENTS DU PAYSAGE NATUREL (Séances 25 à 38) — à paraître dans la version finale", { size: 20, bold: true, color: "777777", after: 60 }));
-  out.push(B.p("UNITÉ 4 — L'ENVIRONNEMENT (Séances 39 à 56) — à paraître dans la version finale", { size: 20, bold: true, color: "777777", after: 60 }));
-  out.push(B.p("UNITÉ 5 — L'HOMME ET LES ACTIVITÉS QUOTIDIENNES (Séances 57 à 76) — à paraître dans la version finale", { size: 20, bold: true, color: "777777", after: 60 }));
+  FUTURES.forEach((f) => {
+    out.push(B.p(`${f.nom} (${f.seances}) — à paraître dans la version finale`, { size: 20, bold: true, color: "777777", after: 60 }));
+  });
   out.push(B.pEmpty(10));
   out.push(B.p("Annexes (version finale) : glossaire — cartes muettes — auto-évaluation — table des illustrations", { size: 20, italics: true, color: "777777", after: 100 }));
   out.push(B.pageBreak());
   return out;
 }
 
-// ── 5. Tableau de bord ──────────────────────────────────────────────────
+// ── 5. Tableaux de bord ─────────────────────────────────────────────────
+function boardRow(cols, widths, header = false) {
+  return new TableRow({
+    ...(header ? { tableHeader: true } : {}),
+    children: cols.map((c, i) =>
+      B.cell([B.p(c, { bold: header, size: 20, align: header ? AlignmentType.CENTER : AlignmentType.LEFT })],
+        { shading: header ? B.HEADER_BG : undefined, width: widths[i] })),
+  });
+}
+
 function tableauDeBord() {
-  const thin = { style: BorderStyle.SINGLE, size: 4, color: "BBBBBB" };
-  const borders = { top: thin, bottom: thin, left: thin, right: thin, insideHorizontal: thin, insideVertical: thin };
   const out = [];
   out.push(B.headingWithBookmark("Tableau de bord général", "tableaudebord", { size: 30, after: 200 }));
   out.push(B.p("Le programme officiel de Géographie T4 prévoit 33 heures annuelles (1 heure par semaine, séances de 30 minutes), réparties en cinq thématiques. Le manuel compte 76 numéros : 66 séances de leçon, 5 séances de révision et 5 sujets d'examen.", { size: 21, after: 160 }));
   const rows = [
-    new TableRow({
-      tableHeader: true,
-      children: [
-        B.cell([B.p("Unité", { bold: true, size: 20, align: AlignmentType.CENTER })], { shading: B.HEADER_BG, width: 46 }),
-        B.cell([B.p("Séances", { bold: true, size: 20, align: AlignmentType.CENTER })], { shading: B.HEADER_BG, width: 18 }),
-        B.cell([B.p("Leçons", { bold: true, size: 20, align: AlignmentType.CENTER })], { shading: B.HEADER_BG, width: 12 }),
-        B.cell([B.p("Révision + Examen", { bold: true, size: 20, align: AlignmentType.CENTER })], { shading: B.HEADER_BG, width: 24 }),
-      ],
-    }),
-    ...PLAN.map((u) => new TableRow({
-      children: [
-        B.cell([B.p(u.nom, { size: 20 })], { width: 46 }),
-        B.cell([B.p(u.seances, { size: 20, align: AlignmentType.CENTER })], { width: 18 }),
-        B.cell([B.p(String(u.lecons), { size: 20, align: AlignmentType.CENTER })], { width: 12 }),
-        B.cell([B.p(u.dispo ? "2 (incluses)" : "2 (prévues)", { size: 20, align: AlignmentType.CENTER })], { width: 24 }),
-      ],
-    })),
-    new TableRow({
-      children: [
-        B.cell([B.p("Total", { bold: true, size: 20 })], { width: 46 }),
-        B.cell([B.p("Séances 1 à 76", { size: 20, align: AlignmentType.CENTER })], { width: 18 }),
-        B.cell([B.p("66", { bold: true, size: 20, align: AlignmentType.CENTER })], { width: 12 }),
-        B.cell([B.p("5 + 5", { bold: true, size: 20, align: AlignmentType.CENTER })], { width: 24 }),
-      ],
-    }),
+    boardRow(["Unité", "Séances", "Leçons", "Révision + Examen"], [46, 18, 12, 24], true),
+    ...UNITES.map((u) => boardRow([u.nom.replace(/UNITÉ \d+ — /, `Unité ${UNITES.indexOf(u) + 1} — `), u.seances, String(u.lecons), "2 (incluses)"], [46, 18, 12, 24])),
+    ...FUTURES.map((f, i) => boardRow([f.nom.replace(/UNITÉ \d+ — /, `Unité ${UNITES.length + i + 1} — `), f.seances, "à venir", "2 (prévues)"], [46, 18, 12, 24])),
+    boardRow(["Total", "Séances 1 à 76", "66", "5 + 5"], [46, 18, 12, 24]),
   ];
   out.push(new Table({ borders, width: { size: 100, type: WidthType.PERCENTAGE }, rows }));
   out.push(B.pEmpty());
-  // Tableau de bord de l'unité 1
-  out.push(B.p("Tableau de bord — Unité 1 : L'orientation géographique", { size: 24, bold: true, before: 120, after: 120, color: B.GREEN }));
-  const rowsU1 = [
-    new TableRow({
-      tableHeader: true,
-      children: [
-        B.cell([B.p("Séance", { bold: true, size: 20, align: AlignmentType.CENTER })], { shading: B.HEADER_BG, width: 12 }),
-        B.cell([B.p("Titre", { bold: true, size: 20, align: AlignmentType.CENTER })], { shading: B.HEADER_BG, width: 58 }),
-        B.cell([B.p("Type", { bold: true, size: 20, align: AlignmentType.CENTER })], { shading: B.HEADER_BG, width: 30 }),
-      ],
-    }),
-    ...U1.topics.map((t) => new TableRow({
-      children: [
-        B.cell([B.p(String(t.numero), { size: 20, align: AlignmentType.CENTER })], { width: 12 }),
-        B.cell([B.p(t.titre, { size: 20 })], { width: 58 }),
-        B.cell([B.p("Leçon", { size: 20, align: AlignmentType.CENTER })], { width: 30 }),
-      ],
-    })),
-    new TableRow({
-      children: [
-        B.cell([B.p("9", { size: 20, align: AlignmentType.CENTER })], { width: 12 }),
-        B.cell([B.p(U1REV.revision.titre, { size: 20 })], { width: 58 }),
-        B.cell([B.p("Révision", { size: 20, align: AlignmentType.CENTER })], { width: 30 }),
-      ],
-    }),
-    new TableRow({
-      children: [
-        B.cell([B.p("10", { size: 20, align: AlignmentType.CENTER })], { width: 12 }),
-        B.cell([B.p(U1REV.examen.titre, { size: 20 })], { width: 58 }),
-        B.cell([B.p("Sujet d'examen", { size: 20, align: AlignmentType.CENTER })], { width: 30 }),
-      ],
-    }),
-  ];
-  out.push(new Table({ borders, width: { size: 100, type: WidthType.PERCENTAGE }, rows: rowsU1 }));
+
+  UNITES.forEach((u) => {
+    out.push(B.p(`Tableau de bord — ${u.nom.charAt(0) + u.nom.slice(1).toLowerCase()}`, { size: 24, bold: true, before: 120, after: 120, color: B.GREEN }));
+    const detail = [
+      boardRow(["Séance", "Titre", "Type"], [12, 58, 30], true),
+      ...u.topics.map((t) => boardRow([String(t.numero), t.titre, "Leçon"], [12, 58, 30])),
+      boardRow([String(u.rev.numero), u.rev.titre, "Révision"], [12, 58, 30]),
+      boardRow([String(u.exam.numero), u.exam.titre, "Sujet d'examen"], [12, 58, 30]),
+    ];
+    out.push(new Table({ borders, width: { size: 100, type: WidthType.PERCENTAGE }, rows: detail }));
+    out.push(B.pEmpty());
+  });
   out.push(B.pageBreak());
   return out;
 }
 
-// ── 6. Séance de révision (Séance 9) ────────────────────────────────────
-function revisionSeance(rev) {
-  const thin = { style: BorderStyle.SINGLE, size: 4, color: "BBBBBB" };
-  const borders = { top: thin, bottom: thin, left: thin, right: thin, insideHorizontal: thin, insideVertical: thin };
+// ── 6. Séance de révision ───────────────────────────────────────────────
+function revisionSeance(rev, numUnite) {
   const out = [];
   out.push(B.pageBreak());
   out.push(B.headingWithBookmark(`SÉANCE ${rev.numero} / ${rev.total}`, `seance${rev.numero}`, { size: 22, align: AlignmentType.CENTER, after: 40 }));
@@ -186,7 +177,7 @@ function revisionSeance(rev) {
     discipline: "Géographie",
     theme: rev.theme,
     titre: rev.titre,
-    objectif: "Réviser et consolider toutes les notions de l'unité 1.",
+    objectif: "Réviser et consolider toutes les notions de l'unité.",
     documentation: "Programme d'études officiel T4 — Géographie",
     classe: "T4",
     seanceNum: rev.numero,
@@ -194,26 +185,25 @@ function revisionSeance(rev) {
     duree: "30 minutes",
   }));
   out.push(B.pEmpty());
-  // Déroulement compact : révision du tableau + questions
   out.push(B.deroulementTable([
     B.stepRow({
       etape: "I. RÉVISION", duree: "3 min",
-      enseignant: ["Avec quoi peut-on trouver le Nord ?", "Où se lève le soleil ?"],
-      apprenants: ["R.A. : Avec une boussole ou un GPS.", "R.A. : Le soleil se lève à l'Est."],
+      enseignant: [rev.questions[0][0], rev.questions[1][0]],
+      apprenants: [`R.A. : ${rev.questions[0][1]}`, `R.A. : ${rev.questions[1][1]}`],
       technique: "Questions-réponses orales",
       support: "—",
     }),
     B.sectionRow("II. NOUVELLE LEÇON", "22 min"),
     B.stepRow({
       etape: "1. Mise en situation",
-      enseignant: ["Nous avons appris à nous orienter pendant toute cette unité. Aujourd'hui, nous allons tout réviser ensemble pour bien nous souvenir."],
+      enseignant: [`Nous avons terminé l'unité ${numUnite}. Aujourd'hui, nous allons réviser ensemble toutes les notions pour bien nous en souvenir.`],
       apprenants: ["Les élèves écoutent."],
       technique: "Conversation dirigée",
       support: "Tableau noir",
     }),
     B.stepRow({
       etape: "2. Présentation",
-      enseignant: ["Aujourd'hui, nous allons réviser : « L'orientation géographique ». Après cette séance, vous serez capables de bien nommer les points cardinaux, les directions intermédiaires et la rose des vents."],
+      enseignant: ["Aujourd'hui, nous allons réviser toutes les notions de l'unité. Après cette séance, vous serez capables de bien répondre aux questions de révision et de réussir le sujet d'examen."],
       apprenants: ["Les élèves écoutent."],
       technique: "Annonce de l'objectif",
       support: "Tableau noir, cahier",
@@ -234,7 +224,7 @@ function revisionSeance(rev) {
     }),
     B.stepRow({
       etape: "5. Synthèse",
-      enseignant: ["Donc, pour nous orienter, nous utilisons le soleil, la boussole, les repères de notre village et la rose des vents. Le Nord est toujours en haut sur le papier, et les huit directions nous aident à décrire où se trouve chaque chose."],
+      enseignant: ["Donc, prenons le temps de relire ensemble le tableau récapitulatif : chaque notion est une clé pour l'examen de l'unité."],
       apprenants: ["Les élèves écoutent."],
       technique: "Explication",
       support: "Tableau noir",
@@ -243,16 +233,16 @@ function revisionSeance(rev) {
       etape: "6. Application",
       enseignant: B.exosToParas([
         {
-          consigne: "Dessine une rose des vents simple avec les huit directions, puis vérifie avec ton voisin de table.",
-          items: ["Le N doit être en haut.", "Les lettres NE, NO, SE, SO doivent être à leur place."],
+          consigne: "Par binôme, choisissez trois notions du tableau récapitulatif et posez-vous les questions l'un à l'autre.",
+          items: ["Chaque élève du binôme pose au moins une question.", "On vérifie la réponse avec le tableau récapitulatif."],
           corrige: [],
         },
       ]),
       apprenants: [
-        B.p("R.A. : La rose des vents a le N en haut, le S en bas, l'E à droite et l'O à gauche ; NE, NO, SE et SO sont sur les branches en biais.", { size: 16, after: 30, kwColor: B.CORRIGE }),
+        B.p("R.A. : Les binômes s'interrogent sur trois notions de l'unité et corrigent leurs réponses avec le tableau récapitulatif.", { size: 16, after: 30, kwColor: B.CORRIGE }),
       ],
       technique: "Travail en binôme",
-      support: "Cahier, règle, crayon",
+      support: "Cahier, tableau récapitulatif",
     }),
     B.stepRow({
       etape: "III. ÉVALUATION", duree: "5 min",
@@ -263,25 +253,13 @@ function revisionSeance(rev) {
     }),
   ]));
   out.push(B.pageBreak());
-  // Tableau récapitulatif
-  out.push(B.leconTitre("Tableau récapitulatif — Unité 1"));
+  out.push(B.leconTitre(`Tableau récapitulatif — Unité ${numUnite}`));
   out.push(new Table({
     borders,
     width: { size: 100, type: WidthType.PERCENTAGE },
     rows: [
-      new TableRow({
-        tableHeader: true,
-        children: [
-          B.cell([B.p("Notion", { bold: true, size: 20, align: AlignmentType.CENTER })], { shading: B.HEADER_BG, width: 34 }),
-          B.cell([B.p("À retenir", { bold: true, size: 20, align: AlignmentType.CENTER })], { shading: B.HEADER_BG, width: 66 }),
-        ],
-      }),
-      ...rev.tableau.map(([notion, def]) => new TableRow({
-        children: [
-          B.cell([B.p(notion, { bold: true, size: 19 })], { width: 34 }),
-          B.cell([B.p(def, { size: 19 })], { width: 66 }),
-        ],
-      })),
+      boardRow(["Notion", "À retenir"], [34, 66], true),
+      ...rev.tableau.map(([notion, def]) => boardRow([notion, def], [34, 66])),
     ],
   }));
   out.push(B.pEmpty());
@@ -293,7 +271,7 @@ function revisionSeance(rev) {
   return out;
 }
 
-// ── 7. Sujet d'examen (Séance 10) ───────────────────────────────────────
+// ── 7. Sujet d'examen ───────────────────────────────────────────────────
 function examenSeance(ex) {
   const out = [];
   out.push(B.pageBreak());
@@ -327,21 +305,23 @@ function examenSeance(ex) {
     ...tableauDeBord(),
   ];
 
-  // UNITÉ 1
-  children.push(B.headingWithBookmark("UNITÉ 1 — L'ORIENTATION GÉOGRAPHIQUE", "unite1", { size: 28, after: 60, align: AlignmentType.CENTER }));
-  children.push(B.p("Thématique officielle du programme d'études T4 : la notion d'orientation géographique — les points cardinaux, les directions intermédiaires et la rose des vents. Durée officielle : 4 heures, soit 8 séances de 30 minutes.", { size: 20, italics: true, align: AlignmentType.CENTER, after: 200 }));
+  UNITES.forEach((u, i) => {
+    const numUnite = i + 1;
+    children.push(B.headingWithBookmark(u.nom, u.id, { size: 28, after: 60, align: AlignmentType.CENTER }));
+    children.push(B.p(u.intro, { size: 20, italics: true, align: AlignmentType.CENTER, after: 200 }));
 
-  let prevQuestions = null;
-  U1.topics.forEach((topic) => {
-    children.push(...generateSeanceDocContent(topic, prevQuestions));
-    prevQuestions = topic.questionsRevision;
+    let prevQuestions = null; // pas de révision au début d'une unité : la 1re séance a ses questions d'ouverture
+    u.topics.forEach((topic) => {
+      children.push(...generateSeanceDocContent(topic, prevQuestions));
+      prevQuestions = topic.questionsRevision;
+    });
+    children.push(...revisionSeance(u.rev, numUnite));
+    children.push(...examenSeance(u.exam));
   });
-  children.push(...revisionSeance(U1REV.revision));
-  children.push(...examenSeance(U1REV.examen));
 
   const doc = new Document({
     creator: "J-Lab — Collection J-Learn",
-    title: "Manuel de Géographie T4 — J-Learn (V1, Unité 1)",
+    title: "Manuel de Géographie T4 — J-Learn (V1, Unités 1-2)",
     description: "Manuel scolaire de Géographie, classe de T4 (Madagascar) — fiches de préparation, leçons, exercices corrigés.",
     styles: {
       default: {

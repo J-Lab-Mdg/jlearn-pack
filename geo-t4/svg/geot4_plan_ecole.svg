@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrB" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#1F4E79"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8D6E63"/></marker>
+  </defs>
+  <rect width="1100" height="780" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Le plan de l'école</text>
+  <rect x="60" y="110" width="700" height="560" rx="8" fill="#E8F5E9" stroke="#66BB6A" stroke-width="6"/>
+  <rect x="110" y="150" width="230" height="100" rx="6" fill="#FFE0B2" stroke="#FB8C00" stroke-width="4"/>
+  <text x="225" y="215" text-anchor="middle" font-size="40" font-weight="bold" fill="#E65100">A</text>
+  <rect x="480" y="150" width="230" height="100" rx="6" fill="#FFE0B2" stroke="#FB8C00" stroke-width="4"/>
+  <text x="595" y="215" text-anchor="middle" font-size="40" font-weight="bold" fill="#E65100">B</text>
+  <rect x="110" y="510" width="180" height="90" rx="6" fill="#FFE0B2" stroke="#FB8C00" stroke-width="4"/>
+  <text x="200" y="568" text-anchor="middle" font-size="36" font-weight="bold" fill="#E65100">C</text>
+  <rect x="610" y="530" width="110" height="70" rx="6" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="4"/>
+  <text x="665" y="577" text-anchor="middle" font-size="32" font-weight="bold" fill="#0277BD">D</text>
+  <rect x="330" y="300" width="340" height="180" rx="10" fill="#FFF8E1" stroke="#F9A825" stroke-width="3"/>
+  <text x="500" y="398" text-anchor="middle" font-size="30" font-weight="bold" fill="#F57F17">cour</text>
+  <circle cx="600" cy="360" r="24" fill="#ECEFF1" stroke="#78909C" stroke-width="4"/>
+  <line x1="578" y1="360" x2="622" y2="360" stroke="#78909C" stroke-width="3"/>
+  <line x1="600" y1="338" x2="600" y2="382" stroke="#78909C" stroke-width="3"/>
+  <g transform="translate(290,330)"><line x1="20" y1="52" x2="20" y2="6" stroke="#6D4C41" stroke-width="3"/><polygon points="20,4 44,11 20,18" fill="#C00000"/></g>
+  <circle cx="700" cy="230" r="20" fill="#A5D6A7" stroke="#66BB6A" stroke-width="3"/>
+  <circle cx="700" cy="430" r="20" fill="#A5D6A7" stroke="#66BB6A" stroke-width="3"/>
+  <circle cx="150" cy="420" r="20" fill="#A5D6A7" stroke="#66BB6A" stroke-width="3"/>
+  <rect x="384" y="664" width="72" height="20" fill="#FFFFFF"/>
+  <line x1="384" y1="670" x2="384" y2="640" stroke="#6D4C41" stroke-width="4"/>
+  <line x1="456" y1="670" x2="456" y2="640" stroke="#6D4C41" stroke-width="4"/>
+  <path d="M 384 670 A 72 72 0 0 1 456 640" fill="none" stroke="#6D4C41" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="420" y="712" text-anchor="middle" font-size="20" fill="#546E7A">portail</text>
+  
+  <g>
+    <line x1="800" y1="180" x2="800" y2="120" stroke="#C00000" stroke-width="7" marker-end="url(#arrR)"/>
+    <circle cx="800" cy="180" r="5" fill="#C00000"/>
+    <text x="800" y="108" text-anchor="middle" font-size="30" font-weight="bold" fill="#C00000">N</text>
+  </g>
+  <rect x="810" y="240" width="280" height="470" rx="12" fill="#FAFAFA" stroke="#90A4AE" stroke-width="2.5"/>
+  <text x="950" y="276" text-anchor="middle" font-size="25" font-weight="bold" fill="#1F4E79">Légende</text><g transform="translate(836, 314)"><rect x="6" y="12" width="34" height="19" fill="#C8E6C9" stroke="#66BB6A" stroke-width="2.5"/><line x1="38" y1="12" x2="38" y2="2" stroke="#C00000" stroke-width="2.5"/><polygon points="38,2 48,5 38,8" fill="#C00000"/><text x="66" y="19" font-size="21" fill="#37474F">A : les salles de classe</text></g><g transform="translate(836, 366)"><rect x="4" y="8" width="40" height="20" fill="#FFE0B2" stroke="#FB8C00" stroke-width="2.5"/><text x="66" y="19" font-size="21" fill="#37474F">B : le bureau du directeur</text></g><g transform="translate(836, 418)"><rect x="6" y="6" width="36" height="22" fill="#FFF3E0" stroke="#FB8C00" stroke-width="2.5"/><text x="66" y="19" font-size="21" fill="#37474F">C : la cantine</text></g><g transform="translate(836, 470)"><rect x="16" y="2" width="16" height="30" fill="#BBDEFB" stroke="#64B5F6" stroke-width="2.5"/><text x="66" y="19" font-size="21" fill="#37474F">D : les toilettes</text></g><g transform="translate(836, 522)"><rect x="5" y="7" width="38" height="21" fill="#FFF8E1" stroke="#F9A825" stroke-width="2.5"/><text x="66" y="19" font-size="21" fill="#37474F">la cour de récréation</text></g><g transform="translate(836, 574)"><circle cx="19" cy="17" r="13" fill="#ECEFF1" stroke="#78909C" stroke-width="3"/><line x1="6" y1="17" x2="32" y2="17" stroke="#78909C" stroke-width="2.5"/><line x1="19" y1="4" x2="19" y2="30" stroke="#78909C" stroke-width="2.5"/><text x="66" y="19" font-size="21" fill="#37474F">le puits</text></g><g transform="translate(836, 626)"><line x1="4" y1="30" x2="4" y2="10" stroke="#6D4C41" stroke-width="3.5"/><line x1="42" y1="30" x2="42" y2="10" stroke="#6D4C41" stroke-width="3.5"/><path d="M 4 30 A 38 38 0 0 1 42 30" fill="none" stroke="#6D4C41" stroke-width="2" stroke-dasharray="4 4"/><text x="66" y="19" font-size="21" fill="#37474F">le portail</text></g><g transform="translate(836, 678)"><circle cx="19" cy="17" r="13" fill="#A5D6A7" stroke="#66BB6A" stroke-width="2.5"/><line x1="19" y1="30" x2="19" y2="34" stroke="#6D4C41" stroke-width="3"/><text x="66" y="19" font-size="21" fill="#37474F">un arbre</text></g>
+  <text x="550" y="762" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le plan de l'école montre les bâtiments et la cour, vus de dessus.</text>
+</svg>

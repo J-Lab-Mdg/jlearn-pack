@@ -237,6 +237,36 @@
       "id": "geot4_faits_culturels",
       "url": "/geot4_faits_culturels.png",
       "type": "image/png"
+    },
+    {
+      "id": "geot4_plan_classe",
+      "url": "/geot4_plan_classe.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_fleche_nord",
+      "url": "/geot4_fleche_nord.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_echelle",
+      "url": "/geot4_echelle.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_plan_ecole",
+      "url": "/geot4_plan_ecole.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_itineraire",
+      "url": "/geot4_itineraire.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_plan_village",
+      "url": "/geot4_plan_village.png",
+      "type": "image/png"
     }
   ]
 }

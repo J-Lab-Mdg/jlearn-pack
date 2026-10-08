@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrB" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#1F4E79"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8D6E63"/></marker>
+  </defs>
+  <rect width="1100" height="620" fill="#FFFFFF"/>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">L'orientation du plan : la flèche du Nord</text>
+  <text x="280" y="128" text-anchor="middle" font-size="26" font-weight="bold" fill="#C00000">Nord</text>
+  <text x="280" y="552" text-anchor="middle" font-size="26" font-weight="bold" fill="#37474F">Sud</text>
+  <text x="86" y="330" text-anchor="end" font-size="26" font-weight="bold" fill="#42A5F5">Ouest</text>
+  <text x="476" y="330" text-anchor="start" font-size="26" font-weight="bold" fill="#EF5350">Est</text>
+  <rect x="100" y="140" width="360" height="360" fill="#FDF6EC" stroke="#8D6E63" stroke-width="5"/>
+  
+  <g>
+    <line x1="420" y1="300" x2="420" y2="210" stroke="#C00000" stroke-width="7" marker-end="url(#arrR)"/>
+    <circle cx="420" cy="300" r="5" fill="#C00000"/>
+    <text x="420" y="198" text-anchor="middle" font-size="30" font-weight="bold" fill="#C00000">N</text>
+  </g>
+  <rect x="560" y="140" width="490" height="250" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <text x="805" y="190" text-anchor="middle" font-size="27" font-weight="bold" fill="#1F4E79">Pour orienter un plan :</text>
+  <text x="600" y="240" font-size="25" fill="#37474F">• le Nord est toujours en haut ;</text>
+  <text x="600" y="286" font-size="25" fill="#37474F">• le Sud est en bas ;</text>
+  <text x="600" y="332" font-size="25" fill="#37474F">• l'Ouest est à gauche ;</text>
+  <text x="600" y="378" font-size="25" fill="#37474F">• l'Est est à droite.</text>
+  <text x="550" y="470" text-anchor="middle" font-size="25" fill="#37474F">La flèche <tspan font-weight="bold" fill="#C00000">N</tspan> indique la direction du Nord :</text>
+  <text x="550" y="506" text-anchor="middle" font-size="25" fill="#37474F">c'est elle qui permet d'orienter le plan.</text>
+  <text x="550" y="586" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Grâce à la flèche du Nord, tout le monde lit le plan dans le même sens.</text>
+</svg>
