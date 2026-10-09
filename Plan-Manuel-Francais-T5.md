@@ -42,7 +42,7 @@ participes passés, verbes en -cer/-ger).
 
 ## Blocs de livraison
 - Bloc 0 ☑ : extraction PE + plan. — livré
-- Bloc 1 ☐ : infrastructure (builders, build.js, couverture, avant-propos, TOC) + Unité 1 L'environnement (S1–S12).
+- Bloc 1 ☑ : infrastructure (builders, build.js, couverture, avant-propos, TOC) + Unité 1 L'environnement (S1–S12). — livré
 - Bloc 2 ☐ : Unité 2 Le voyage (S13–S24).
 - Bloc 3 ☐ : Unité 3 Les services publics (S25–S36).
 - Bloc 4 ☐ : Unité 4 Les loisirs (S37–S48).
