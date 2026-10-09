@@ -25,9 +25,10 @@ const U5B = require("./data-unite5b");
 const U5C = require("./data-unite5c");
 const U5 = { topics: [...U5A.topics, ...U5B.topics, ...U5C.topics] };
 const U5REV = require("./data-unite5-rev");
+const { annexesContent } = require("./annexes");
 
 const OUT_DIR = path.join(__dirname, "..", "output");
-const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_V1_UNITE5.docx");
+const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_JLearn.docx");
 
 // ── Configuration des unités disponibles ────────────────────────────────
 const UNITES = [
@@ -99,7 +100,7 @@ function coverPage() {
     B.p("Classe de T4", { size: 32, bold: true, align: AlignmentType.CENTER, after: 400 }),
     B.pEmpty(16),
     B.p("Manuel complet : fiches de préparation, leçons,", { size: 24, align: AlignmentType.CENTER, after: 60 }),
-    B.p("exercices, corrigés et sujets d'examen", { size: 24, align: AlignmentType.CENTER, after: 400 }),
+    B.p("exercices corrigés, sujets d'examen et annexes", { size: 24, align: AlignmentType.CENTER, after: 400 }),
     B.pEmpty(16),
     B.p("Conforme au programme d'études officiel T4 en vigueur à Madagascar", { size: 20, italics: true, align: AlignmentType.CENTER, after: 200 }),
     B.p("Volume horaire officiel : 1 heure par semaine — séances de 30 minutes", { size: 20, italics: true, align: AlignmentType.CENTER, after: 200 }),
@@ -115,7 +116,7 @@ function avantPropos() {
     B.headingWithBookmark("Avant-propos", "avantpropos", { size: 30, after: 200 }),
     B.p("Ce manuel de Géographie, destiné aux élèves de la classe de T4, a été conçu pour accompagner l'enseignant et l'élève tout au long de l'année scolaire, conformément au programme d'études officiel en vigueur à Madagascar.", { size: 21, after: 140 }),
     B.p("Il propose, pour chacune des 66 séances de 30 minutes qui composent le programme de Géographie de T4 (1 heure par semaine), une fiche de préparation détaillée, une leçon rédigée, ainsi que des exercices avec leurs corrigés détaillés notés selon un barème.", { size: 21, after: 140 }),
-    B.p("Les séances sont regroupées en cinq unités thématiques : l'orientation géographique, le plan, les éléments du paysage naturel, l'Environnement, et l'Homme et les activités quotidiennes. Chaque unité se termine par une séance de révision puis par un sujet d'examen avec son corrigé, pour préparer les élèves aux évaluations. Un glossaire et des cartes muettes complèteront l'ouvrage final.", { size: 21, after: 140 }),
+    B.p("Les séances sont regroupées en cinq unités thématiques : l'orientation géographique, le plan, les éléments du paysage naturel, l'Environnement, et l'Homme et les activités quotidiennes. Chaque unité se termine par une séance de révision puis par un sujet d'examen avec son corrigé, pour préparer les élèves aux évaluations. Un glossaire, des cartes muettes, une auto-évaluation, une table des illustrations et les sources complètent l'ouvrage.", { size: 21, after: 140 }),
     B.p("Cette édition a été élaborée avec le plus grand soin. Malgré toute l'attention portée à sa rédaction et à sa relecture, il est possible que quelques erreurs (orthographe, grammaire, ou autres coquilles) s'y soient glissées : nous vous remercions par avance de votre indulgence.", { size: 21, after: 140 }),
     B.p("L'équipe J-Lab accueille avec attention tous les retours des enseignants et des élèves qui utilisent ce manuel : signalement d'erreurs, suggestions d'amélioration, comme appréciations sur les points forts de l'ouvrage. Vos remarques contribuent directement à l'amélioration des prochaines éditions.", { size: 21, after: 140 }),
     B.p("Nous remercions chaleureusement les enseignants qui accompagneront leurs élèves avec ce manuel : c'est grâce à leur engagement quotidien que ce travail prend tout son sens.", { size: 21, after: 200 }),
@@ -163,7 +164,12 @@ function tableDesMatieres() {
     out.push(B.p(`${f.nom} (${f.seances}) — à paraître dans la version finale`, { size: 20, bold: true, color: "777777", after: 60 }));
   });
   out.push(B.pEmpty(10));
-  out.push(B.p("Annexes (version finale) : glossaire — cartes muettes — auto-évaluation — table des illustrations", { size: 20, italics: true, color: "777777", after: 100 }));
+  out.push(B.tocLink("Annexes", "annexes", { size: 22, bold: true }));
+  out.push(B.tocLink("Glossaire", "glossaire", { size: 20, indent: 360 }));
+  out.push(B.tocLink("Cartes muettes", "cartesmuettes", { size: 20, indent: 360 }));
+  out.push(B.tocLink("Auto-évaluation", "autoevaluation", { size: 20, indent: 360 }));
+  out.push(B.tocLink("Table des illustrations", "illustrations", { size: 20, indent: 360 }));
+  out.push(B.tocLink("Loharanom-Baovao (sources)", "sources", { size: 20, indent: 360 }));
   out.push(B.pageBreak());
   return out;
 }
@@ -181,7 +187,7 @@ function boardRow(cols, widths, header = false) {
 function tableauDeBord() {
   const out = [];
   out.push(B.headingWithBookmark("Tableau de bord général", "tableaudebord", { size: 30, after: 200 }));
-  out.push(B.p("Le programme officiel de Géographie T4 prévoit 33 heures annuelles (1 heure par semaine, séances de 30 minutes), réparties en cinq thématiques. Le manuel compte 76 numéros : 66 séances de leçon, 5 séances de révision et 5 sujets d'examen.", { size: 21, after: 160 }));
+  out.push(B.p("Le programme officiel de Géographie T4 prévoit 33 heures annuelles (1 heure par semaine, séances de 30 minutes), réparties en cinq thématiques. Le manuel compte 76 numéros : 66 séances de leçon, 5 séances de révision et 5 sujets d'examen, complétés par les annexes en fin d'ouvrage.", { size: 21, after: 160 }));
   const rows = [
     boardRow(["Unité", "Séances", "Leçons", "Révision + Examen"], [46, 18, 12, 24], true),
     ...UNITES.map((u) => boardRow([u.nom.replace(/UNITÉ \d+ — /, `Unité ${UNITES.indexOf(u) + 1} — `), u.seances, String(u.lecons), "2 (incluses)"], [46, 18, 12, 24])),
@@ -359,10 +365,13 @@ function examenSeance(ex) {
     children.push(...examenSeance(u.exam));
   });
 
+  // Annexes (glossaire, cartes muettes, auto-évaluation, table des illustrations, sources)
+  children.push(...annexesContent(UNITES.flatMap((u) => u.topics)));
+
   const doc = new Document({
     creator: "J-Lab — Collection J-Learn",
-    title: "Manuel de Géographie T4 — J-Learn (V1, Unités 1-2)",
-    description: "Manuel scolaire de Géographie, classe de T4 (Madagascar) — fiches de préparation, leçons, exercices corrigés.",
+    title: "Manuel de Géographie T4 — J-Learn (V1, édition complète)",
+    description: "Manuel scolaire de Géographie, classe de T4 (Madagascar) — 76 séances : fiches de préparation, leçons, exercices corrigés, sujets d'examen et annexes.",
     styles: {
       default: {
         document: { run: { font: "Times New Roman", size: 20 } },

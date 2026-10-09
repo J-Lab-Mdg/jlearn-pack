@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" font-family="Georgia, 'Times New Roman', serif">
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">La carte des climats de Madagascar à compléter</text>
+  <defs>
+    <clipPath id="madaClip"><path d="M 205,15 C 235,50 265,90 268,135 C 300,160 322,180 315,205 C 305,225 285,230 282,255 C 300,290 305,330 295,370 C 288,420 275,455 250,500 C 235,535 210,565 188,588 C 172,570 178,545 172,515 C 160,470 170,430 158,390 C 148,350 160,315 150,275 C 142,240 155,205 148,170 C 142,130 160,90 178,55 C 186,35 195,22 205,15 Z"/></clipPath>
+  </defs>
+  <g transform="translate(240,80)">
+    <g clip-path="url(#madaClip)">
+      <rect x="100" y="0" width="120" height="620" fill="#FFF59D"/>
+      <rect x="220" y="0" width="35" height="620" fill="#B3E5FC"/>
+      <rect x="255" y="0" width="100" height="620" fill="#A5D6A7"/>
+      <rect x="100" y="430" width="255" height="190" fill="#FFCC80"/>
+    </g>
+    <path d="M 205,15 C 235,50 265,90 268,135 C 300,160 322,180 315,205 C 305,225 285,230 282,255 C 300,290 305,330 295,370 C 288,420 275,455 250,500 C 235,535 210,565 188,588 C 172,570 178,545 172,515 C 160,470 170,430 158,390 C 148,350 160,315 150,275 C 142,240 155,205 148,170 C 142,130 160,90 178,55 C 186,35 195,22 205,15 Z" fill="none" stroke="#5D4037" stroke-width="4" stroke-linejoin="round"/>
+    
+    <circle cx="160" cy="260" r="19" fill="#FFFFFF" stroke="#37474F" stroke-width="3"/>
+    <text x="160" y="268" text-anchor="middle" font-size="23" font-weight="bold" fill="#37474F">1</text>
+    
+    <circle cx="237" cy="320" r="19" fill="#FFFFFF" stroke="#37474F" stroke-width="3"/>
+    <text x="237" y="328" text-anchor="middle" font-size="23" font-weight="bold" fill="#37474F">2</text>
+    
+    <circle cx="285" cy="240" r="19" fill="#FFFFFF" stroke="#37474F" stroke-width="3"/>
+    <text x="285" y="248" text-anchor="middle" font-size="23" font-weight="bold" fill="#37474F">3</text>
+    
+    <circle cx="210" cy="500" r="19" fill="#FFFFFF" stroke="#37474F" stroke-width="3"/>
+    <text x="210" y="508" text-anchor="middle" font-size="23" font-weight="bold" fill="#37474F">4</text>
+  </g>
+  <g>
+    <rect x="700" y="150" width="330" height="330" rx="14" fill="#F5F9FC" stroke="#90A4AE" stroke-width="3"/>
+    <text x="865" y="195" text-anchor="middle" font-size="24" font-weight="bold" fill="#1F4E79">Légende à compléter</text>
+    <circle cx="740" cy="245" r="16" fill="#FFF59D" stroke="#90A4AE" stroke-width="2.5"/>
+    <text x="766" y="253" font-size="22" font-weight="bold" fill="#37474F">1. ……………………………………</text>
+    <circle cx="740" cy="305" r="16" fill="#B3E5FC" stroke="#90A4AE" stroke-width="2.5"/>
+    <text x="766" y="313" font-size="22" font-weight="bold" fill="#37474F">2. ……………………………………</text>
+    <circle cx="740" cy="365" r="16" fill="#A5D6A7" stroke="#90A4AE" stroke-width="2.5"/>
+    <text x="766" y="373" font-size="22" font-weight="bold" fill="#37474F">3. ……………………………………</text>
+    <circle cx="740" cy="425" r="16" fill="#FFCC80" stroke="#90A4AE" stroke-width="2.5"/>
+    <text x="766" y="433" font-size="22" font-weight="bold" fill="#37474F">4. ……………………………………</text>
+  </g>
+  <text x="550" y="750" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Écris le nom des quatre régions climatiques de Madagascar dans la légende.</text>
+</svg>

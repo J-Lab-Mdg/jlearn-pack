@@ -497,6 +497,21 @@
       "id": "geot4_ma_localite",
       "url": "/geot4_ma_localite.png",
       "type": "image/png"
+    },
+    {
+      "id": "geot4_rose_vents_vide",
+      "url": "/geot4_rose_vents_vide.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_carte_muette_mada",
+      "url": "/geot4_carte_muette_mada.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_carte_muette_climats",
+      "url": "/geot4_carte_muette_climats.png",
+      "type": "image/png"
     }
   ]
 }

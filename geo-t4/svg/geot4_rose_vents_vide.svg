@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" font-family="Georgia, 'Times New Roman', serif">
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">La rose des vents à compléter</text>
+  <circle cx="550" cy="350" r="26" fill="#ECEFF1" stroke="#546E7A" stroke-width="4"/>
+  <circle cx="550" cy="350" r="180" fill="none" stroke="#B0BEC5" stroke-width="2" stroke-dasharray="10 8"/>
+  <line x1="550" y1="350" x2="550.0" y2="135.0" stroke="#C00000" stroke-width="10" stroke-linecap="round"/>
+      <text x="550.0" y="102" text-anchor="middle" font-size="40" font-weight="bold" fill="#C00000">N</text>
+  <line x1="550" y1="350" x2="765.0" y2="350.0" stroke="#1F4E79" stroke-width="7" stroke-linecap="round"/>
+      <text x="807.0" y="359" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
+  <line x1="550" y1="350" x2="550.0" y2="565.0" stroke="#1F4E79" stroke-width="7" stroke-linecap="round"/>
+      <text x="550.0" y="616" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
+  <line x1="550" y1="350" x2="335.0" y2="350.0" stroke="#1F4E79" stroke-width="7" stroke-linecap="round"/>
+      <text x="293.0" y="359" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
+  <line x1="550" y1="350" x2="645.5" y2="254.5" stroke="#546E7A" stroke-width="5" stroke-linecap="round"/>
+      <text x="675.2" y="233.8" text-anchor="middle" font-size="30" font-weight="bold" fill="#546E7A">……</text>
+  <line x1="550" y1="350" x2="645.5" y2="445.5" stroke="#546E7A" stroke-width="5" stroke-linecap="round"/>
+      <text x="675.2" y="484.2" text-anchor="middle" font-size="30" font-weight="bold" fill="#546E7A">……</text>
+  <line x1="550" y1="350" x2="454.5" y2="445.5" stroke="#546E7A" stroke-width="5" stroke-linecap="round"/>
+      <text x="424.8" y="484.2" text-anchor="middle" font-size="30" font-weight="bold" fill="#546E7A">……</text>
+  <line x1="550" y1="350" x2="454.5" y2="254.5" stroke="#546E7A" stroke-width="5" stroke-linecap="round"/>
+      <text x="424.8" y="233.8" text-anchor="middle" font-size="30" font-weight="bold" fill="#546E7A">……</text>
+  <text x="550" y="630" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Écris les sept directions qui manquent : les quatre points cardinaux et les quatre directions intermédiaires.</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Georgia, 'Times New Roman', serif">
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">La carte de Madagascar à compléter</text>
+  <g transform="translate(350,70)">
+    <path d="M 205,15 C 235,50 265,90 268,135 C 300,160 322,180 315,205 C 305,225 285,230 282,255 C 300,290 305,330 295,370 C 288,420 275,455 250,500 C 235,535 210,565 188,588 C 172,570 178,545 172,515 C 160,470 170,430 158,390 C 148,350 160,315 150,275 C 142,240 155,205 148,170 C 142,130 160,90 178,55 C 186,35 195,22 205,15 Z" fill="#F5F5F5" stroke="#5D4037" stroke-width="4" stroke-linejoin="round"/>
+    
+  <g transform="translate(232,295) scale(1.2)">
+    <polygon points="0,-15 3.8,-5.3 14.3,-4.6 6.2,2 8.8,12.1 0,6.5 -8.8,12.1 -6.2,2 -14.3,-4.6 -3.8,-5.3" fill="#C00000" stroke="#7F0000" stroke-width="2"/>
+  </g>
+    <text x="262" y="290" font-size="26" font-weight="bold" fill="#C00000">……</text>
+    <text x="262" y="316" font-size="19" fill="#546E7A">la capitale ?</text>
+  </g>
+  <text x="555" y="46" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
+  <text x="555" y="708" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
+  <text x="292" y="380" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
+  <text x="818" y="380" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
+  <text x="550" y="712" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic"> </text>
+</svg>
