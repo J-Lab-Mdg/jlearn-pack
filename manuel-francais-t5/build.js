@@ -107,7 +107,21 @@ function contents() {
     tocLink("s35", "    Séance 35 — Révision"),
     tocLink("s36", "    Séance 36 — Test"),
     p("", { after: 40 }),
-    p([run("… Les unités 4 à 6 et les annexes sont ajoutées dans les blocs suivants …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("unit4", "UNITÉ 4 — LES LOISIRS (Séances 37–48)", { bold: true, size: 26 }),
+    tocLink("s37", "    Séance 37 — Compréhension orale : « Pourquoi avons-nous besoin des loisirs ? »"),
+    tocLink("s38", "    Séance 38 — Lexique : les loisirs, synonymes, antonymes, formation des mots"),
+    tocLink("s39", "    Séance 39 — Compréhension écrite : « Le fanorona » — le texte explicatif"),
+    tocLink("s40", "    Séance 40 — Les adverbes"),
+    tocLink("s41", "    Séance 41 — Pronoms interrogatifs, sujet composé, phrase négative"),
+    tocLink("s42", "    Séance 42 — Conjugaison : les verbes en -cer et -ger"),
+    tocLink("s43", "    Séance 43 — Production orale : échanger et exposer sur les loisirs"),
+    tocLink("s44", "    Séance 44 — Production écrite (1) : inventer mon jeu et préparer le plan"),
+    tocLink("s45", "    Séance 45 — Production écrite (2) : rédiger mon texte explicatif"),
+    tocLink("s46", "    Séance 46 — Lecture-fluidité : la lecture en écho et la lecture chorale"),
+    tocLink("s47", "    Séance 47 — Révision"),
+    tocLink("s48", "    Séance 48 — Test"),
+    p("", { after: 40 }),
+    p([run("… Les unités 5 et 6 et les annexes sont ajoutées dans les blocs suivants …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -155,6 +169,7 @@ async function main() {
         ...require("./unit1")(),
         ...require("./unit2")(),
         ...require("./unit3")(),
+        ...require("./unit4")(),
       ],
     }],
   });
