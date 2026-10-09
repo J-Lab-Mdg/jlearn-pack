@@ -170,7 +170,18 @@ function contents() {
     tocLink("s78", "    Session 78 — Revision"),
     tocLink("s79", "    Session 79 — Test paper"),
     p("", { after: 40 }),
-    p([run("… The next units are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("unit10", "UNIT 10 — TALKING ON THE PHONE (Sessions 80–88)", { bold: true, size: 26 }),
+    tocLink("s80", "    Session 80 — The phone verbs and the two registers"),
+    tocLink("s81", "    Session 81 — The phone call script: from hello to goodbye"),
+    tocLink("s82", "    Session 82 — Listening: Soa calls Koto’s house"),
+    tocLink("s83", "    Session 83 — The voicemail: name, purpose, number!"),
+    tocLink("s84", "    Session 84 — Relaying the message: the reported speech"),
+    tocLink("s85", "    Session 85 — Reading: the telephone lady of Ambohimena"),
+    tocLink("s86", "    Session 86 — Writing: my phone dialogue — and action!"),
+    tocLink("s87", "    Session 87 — Revision"),
+    tocLink("s88", "    Session 88 — Test paper"),
+    p("", { after: 40 }),
+    p([run("… The annexes are being added in the final block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -231,6 +242,7 @@ async function main() {
         ...require("./unit7")(),
         ...require("./unit8")(),
         ...require("./unit9")(),
+        ...require("./unit10")(),
       ],
     }],
   });
