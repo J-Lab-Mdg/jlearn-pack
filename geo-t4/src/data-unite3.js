@@ -623,6 +623,7 @@ const S29 = {
             paras: [
               "La côte Est, bien arrosée, est couverte de forêts humides.",
               "À l'Ouest, on trouve des forêts plus claires, qui perdent leurs feuilles en saison sèche.",
+              "Sur les côtes boueuses, entre la terre et la mer, pousse la mangrove, la forêt des palétuviers.",
             ],
           },
         ],
@@ -648,11 +649,12 @@ const S29 = {
         titre: "4. La végétation suit la pluie",
         paras: [
           "Plus il pleut, plus la végétation est dense ; moins il pleut, plus elle est sèche et rare.",
+          "Quand la forêt coupée repousse en broussailles, on parle de savoka ; la vraie forêt, elle, met très longtemps à revenir.",
         ],
       },
     ],
   },
-  motsCles: ["forêt", "savane", "steppe", "végétation", "saison sèche"],
+  motsCles: ["forêt", "savane", "steppe", "végétation", "saison sèche", "mangrove", "savoka"],
   questionsRevision: [
     ["Cite les trois grands types de végétation.", "La forêt, la savane et la steppe."],
     ["Où pousse la forêt humide à Madagascar ?", "Sur la côte Est, là où il pleut souvent."],

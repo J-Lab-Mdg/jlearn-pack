@@ -366,6 +366,7 @@ const S52 = {
         paras: [
           "Le reboisement et les haies vives réparent les dégâts de la déforestation.",
           "Dans quelques années, la colline reboisée redevient une forêt : les animaux reviennent.",
+          "Le pays protège aussi la nature en créant des parcs et des réserves naturelles, où forêts et animaux sont en sécurité : les parcs nationaux de Madagascar gardent les lémuriens et leurs forêts.",
         ],
         exemples: [
           "Sur la colline du village de Koto, chaque élève a planté trois jeunes arbres : dans dix ans, ce sera une forêt.",
@@ -373,7 +374,7 @@ const S52 = {
       },
     ],
   },
-  motsCles: ["reboisement", "jeune plant", "haie vive", "protéger"],
+  motsCles: ["reboisement", "jeune plant", "haie vive", "protéger", "réserve naturelle"],
   questionsRevision: [
     ["Qu'est-ce que le reboisement ?", "C'est replanter des arbres là où la forêt a disparu."],
     ["Cite deux utilités de la haie vive.", "Protéger le champ du vent et de l'érosion, et abriter les petits animaux."],

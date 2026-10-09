@@ -111,6 +111,7 @@ const S57 = {
         paras: [
           "Connaître le nombre d'habitants aide le village : combien d'écoles faut-il ? De marchés ? De routes ?",
           "Chaque habitant compte : le recensement ne doit oublier personne.",
+          "Le recensement d'un pays entier compte des millions d'habitants : Madagascar compte environ 27 millions d'habitants.",
         ],
         exemples: [
           "Le visiteur au grand cahier a compté, maison par maison, tous les habitants du village de Faniry.",

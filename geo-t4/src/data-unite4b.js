@@ -23,6 +23,7 @@ const S45 = {
     ["Comment est l'eau sur le quatrième dessin ?", "Elle est sale et polluée par les ordures."],
     ["Comment appelle-t-on un Environnement abîmé ainsi ?", "C'est un Environnement dégradé."],
     ["Qui a abîmé cet Environnement ?", "C'est l'homme qui l'a abîmé."],
+    ["La nature peut-elle aussi abîmer l'Environnement ?", "Oui : les cyclones couchent les forêts et les sécheresses brûlent les herbes."],
   ],
   synthese: "Donc, la dégradation de l'Environnement, c'est l'Environnement abîmé, sali ou détruit. Ses formes sont nombreuses : la forêt détruite, le sol érodé par les ravines, les déchets jetés partout, l'eau polluée, l'air rempli de fumée. La dégradation rend la nature malade.",
   appExos: [
@@ -114,6 +115,7 @@ const S45 = {
         paras: [
           "La dégradation rend la nature malade : les plantes poussent mal, les animaux s'en vont.",
           "Les hommes aussi souffrent d'un Environnement dégradé.",
+          "La dégradation vient parfois de la nature elle-même : les cyclones couchent les forêts, les sécheresses brûlent les herbes. Mais le plus souvent, c'est l'homme qui abîme, avec les coupes, les feux et les ordures.",
         ],
         exemples: [
           "Le bois de chauffe se fait rare, l'eau de la rivière devient dangereuse à boire.",
@@ -121,7 +123,7 @@ const S45 = {
       },
     ],
   },
-  motsCles: ["dégradation", "abîmer", "érosion", "polluer", "déchet"],
+  motsCles: ["dégradation", "abîmer", "érosion", "polluer", "déchet", "cyclone", "sécheresse"],
   questionsRevision: [
     ["Qu'est-ce que la dégradation de l'Environnement ?", "C'est l'Environnement abîmé, sali ou détruit."],
     ["Cite trois formes de la dégradation.", "La forêt détruite, le sol érodé et l'eau polluée (aussi les déchets, la fumée)."],
@@ -489,6 +491,7 @@ const S48 = {
         paras: [
           "Dégradation de la forêt, sols pauvres, rivières taries ou en crue : toute la nature souffre.",
           "Une nature malade ne peut plus nourrir les hommes.",
+          "Les savants observent aussi que le climat de la Terre se réchauffe peu à peu : c'est le réchauffement climatique, qui dérègle la pluie et les saisons.",
         ],
         exemples: [
           "Le garde forestier montre aux élèves une photo d'avant : la colline verte ; et une photo d'aujourd'hui : la colline chauve.",
@@ -496,7 +499,7 @@ const S48 = {
       },
     ],
   },
-  motsCles: ["conséquence", "disparaître", "sol pauvre", "tarir", "inondation"],
+  motsCles: ["conséquence", "disparaître", "sol pauvre", "tarir", "inondation", "réchauffement climatique"],
   questionsRevision: [
     ["Que perdent les animaux quand la forêt est détruite ?", "Leur maison et leur nourriture."],
     ["Cite deux conséquences de la déforestation sur les rivières.", "Elles tarissent, ou bien elles débordent et provoquent des inondations."],

@@ -714,6 +714,15 @@ const S74 = {
           "Ma localité vit de ses activités : l'agriculture dans les rizières, l'élevage au pâturage, la pêche sur le lac.",
           "L'artisanat façonne paniers et lamba ; le commerce anime le marché ; le transport relie tout.",
         ],
+        sous: [
+          {
+            titre: "a. Les produits locaux",
+            paras: [
+              "Chaque région a sa spécialité, son produit local : la vanille d'Antalaha, le girofle de Fénérive-Est, le riz des plaines de l'Alaotra, les pommes de terre du Vakinankaratra.",
+              "Ces produits voyagent vers les autres régions, et même vers l'étranger : ils font la richesse de la localité.",
+            ],
+          },
+        ],
       },
       {
         titre: "2. L'enquête de la classe",
@@ -743,10 +752,11 @@ const S74 = {
       },
     ],
   },
-  motsCles: ["enquête", "questionnaire", "affiche", "classer", "localité"],
+  motsCles: ["enquête", "questionnaire", "affiche", "classer", "localité", "produit local"],
   questionsRevision: [
     ["Comment la classe a-t-elle découvert les activités de la localité ?", "Avec une enquête : des groupes qui interrogent les habitants avec un questionnaire."],
     ["Cite les six groupes d'activités.", "Agriculture, élevage/pêche, artisanat, industrie, commerce, transport."],
+    ["Cite deux produits locaux de Madagascar.", "La vanille d'Antalaha et le girofle de Fénérive-Est (aussi le riz de l'Alaotra, les pommes de terre du Vakinankaratra)."],
   ],
 };
 

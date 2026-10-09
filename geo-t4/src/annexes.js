@@ -39,6 +39,7 @@ const GLOSSAIRE = [
   ["Latitude ★", "Distance, mesurée en degrés, du lieu par rapport à l'équateur."],
   ["Légende ★", "Encart expliquant la signification des lettres, signes et couleurs employés sur la carte."],
   ["Longitude ★", "Distance, mesurée en degrés, du lieu par rapport au méridien d'origine."],
+  ["Mangrove", "Forêt de palétuviers qui pousse sur les côtes boueuses, entre la terre et la mer."],
   ["Marais", "Terrain mouillé, couvert d'eau et de plantes comme le roseau."],
   ["Météo", "Le temps qu'il fait aujourd'hui ou demain : soleil, pluie, vent."],
   ["Migration", "Déplacement d'habitants qui changent de lieu de vie : le départ ou l'arrivée."],
@@ -48,11 +49,15 @@ const GLOSSAIRE = [
   ["Plan", "Dessin vu d'en haut d'un lieu petit (salle de classe, école, quartier, village), avec sa légende et son orientation."],
   ["Points cardinaux", "Les quatre directions principales : le Nord, le Sud, l'Est, l'Ouest."],
   ["Pollution", "Le fait de salir l'air, l'eau ou le sol de l'Environnement."],
-  ["Population", "L'ensemble des habitants d'un lieu : village, ville ou pays."],
+  ["Population", "L'ensemble des habitants d'un lieu : village, ville ou pays. Madagascar compte environ 27 millions d'habitants."],
+  ["Produit local", "La spécialité d'une région : la vanille d'Antalaha, le girofle de Fénérive-Est, le riz de l'Alaotra…"],
   ["Reboisement", "Le fait de replanter des arbres là où la forêt a disparu."],
+  ["Réchauffement climatique", "L’augmentation lente de la température de la Terre, qui dérègle la pluie et les saisons."],
+  ["Réserve naturelle", "Espace protégé où la forêt et les animaux sont en sécurité."],
   ["Relief", "L'ensemble des formes du terrain : montagnes, collines, vallées, plaines."],
   ["Rose des vents", "Figure qui montre les huit directions : les points cardinaux et les directions intermédiaires."],
   ["Savane", "Végétation d'herbes hautes avec quelques arbres."],
+  ["Savoka", "Jeune végétation broussailleuse qui repousse après la coupe d'une forêt."],
   ["Source", "L'endroit où l'eau sort de terre ; c'est le début d'un cours d'eau."],
   ["Steppe", "Étendue d'herbes sèches et rares des régions peu arrosées."],
   ["Tavy", "La culture sur brûlis : on brûle la forêt pour semer."],
@@ -94,6 +99,7 @@ const AUTO_EVAL = [
 // ── 5. SOURCES ──────────────────────────────────────────────────────────
 const SOURCES = [
   ["Programme d'études officiel T4 (nouveau curriculum de Madagascar) — section GÉOGRAPHIE, pages 115 à 123.", "Le document cadre : thématiques, contenus, volumes horaires, glossaire officiel."],
+  ["FRP T4 — Fascicule 2 : ressources pédagogiques officielles T4 (Mathématiques, Sciences et Technologie, Géographie) — section GÉOGRAPHIE, pages 99 à 127.", "Les supports et précis de cours officiels pour l'enseignant ; le manuel en suit la terminologie et les contenus."],
   ["Collection J-Learn — manuels scolaires pour Madagascar.", "La collection du présent ouvrage."],
 ];
 

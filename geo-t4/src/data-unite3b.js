@@ -266,6 +266,7 @@ const S34 = {
     ["Quelle est la couleur de la côte Est sur la carte ? Que veut-elle dire ?", "Elle est verte : climat chaud et humide, il pleut souvent."],
     ["Et la couleur du Sud ?", "Elle est orange : climat sec et chaud."],
     ["Que remarque-t-on pour les Hautes Terres, au centre ?", "Elles sont en bleu clair : le climat y est frais."],
+    ["Nomme les quatre éléments du climat.", "La température, les précipitations, le vent et l'humidité de l'air."],
   ],
   synthese: "Donc, le climat, c'est le temps habituel d'une région, sur toute l'année. À Madagascar : la côte Est est chaude et humide ; les Hautes Terres sont fraîches ; la côte Ouest est chaude avec une longue saison sèche ; le Sud est sec et chaud. Le climat change selon les régions de l'île.",
   appExos: [
@@ -332,6 +333,7 @@ const S34 = {
         paras: [
           "La météo, c'est le temps qu'il fait aujourd'hui ou demain : soleil, pluie, vent.",
           "Le climat, c'est le temps habituel d'une région, observé sur toute l'année : est-il plutôt pluvieux ? plutôt sec ? chaud ? frais ?",
+          "Les éléments du climat sont la température (chaude ou fraîche), les précipitations (la pluie), le vent et l'humidité de l'air.",
         ],
       },
       {
@@ -358,7 +360,7 @@ const S34 = {
       },
     ],
   },
-  motsCles: ["climat", "météo", "saison sèche", "humide", "frais", "sec"],
+  motsCles: ["climat", "météo", "saison sèche", "humide", "frais", "sec", "température", "précipitations", "humidité"],
   questionsRevision: [
     ["Quelle est la différence entre la météo et le climat ?", "La météo, c'est le temps d'aujourd'hui ; le climat, c'est le temps habituel d'une région."],
     ["Comment est le climat du Grand Sud de Madagascar ?", "Sec et chaud presque toute l'année."],
@@ -584,6 +586,7 @@ const S36 = {
         paras: [
           "L'eau des cours d'eau sert à boire, à laver, à arroser les rizières : c'est l'irrigation.",
           "Les rivières donnent du poisson et servent au transport en pirogue.",
+          "Sur les grands fleuves, on construit des barrages : ils retiennent l'eau et produisent de l'électricité, l'énergie hydroélectrique.",
         ],
         sous: [
           {
@@ -601,6 +604,8 @@ const S36 = {
           "Les arbres donnent le bois pour cuire les aliments et construire les maisons.",
           "Ils donnent des fruits à manger et de l'ombre contre le soleil.",
           "Les racines des plantes retiennent la terre : la végétation protège le sol de la pluie et du vent.",
+          "Certaines plantes soignent les malades : ce sont les plantes médicinales.",
+          "La forêt rafraîchit l'air et règle le climat de la région.",
         ],
         exemples: [
           "Sous le manguier du village, les enfants écoutent les histoires du vieux Rakoto : l'arbre leur offre son ombre.",
@@ -608,7 +613,7 @@ const S36 = {
       },
     ],
   },
-  motsCles: ["terrasses", "irrigation", "bois", "fruits", "crue", "inondation", "plateau"],
+  motsCles: ["terrasses", "irrigation", "bois", "fruits", "crue", "inondation", "plateau", "barrage", "plantes médicinales"],
   questionsRevision: [
     ["Cite deux utilités de la végétation pour l'homme.", "Le bois pour cuire et construire, et les fruits à manger (aussi l'ombre)."],
     ["Qu'est-ce qu'une crue ? Et une inondation ?", "La crue, c'est quand la rivière grossit et sort de son lit ; l'inondation, c'est l'eau qui recouvre les champs et les maisons."],

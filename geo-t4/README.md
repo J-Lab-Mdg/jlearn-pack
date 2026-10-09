@@ -75,6 +75,13 @@ Pour les unités suivantes : créer `data-uniteN.js` (même structure de topic q
 Rapport : `Audit-final-Manuel-Geographie-T4.md` (racine du dépôt). Outil réutilisable : `src/audit.py`.
 Corrigé à cette occasion : items « a)/b) » du sujet d'examen de l'Unité 5 harmonisés en « 1./2. ».
 
+## Conformité FRP T4 Fascicule 2
+✅ **29 octobre 2026 : contrôle croisé passé** avec la section GÉOGRAPHIE du FRP T4 Fascicule 2 (p. 99-127).
+Rapport : `Conformite-FRP-T4-Geographie.md` (racine du dépôt). 8 enrichissements intégrés
+(mangrove/savoka, éléments du climat, barrage hydroélectrique, plantes médicinales, causes naturelles
+cyclone/sécheresse, réchauffement climatique, réserves naturelles, 27 millions d'habitants, produits locaux) ;
+glossaire 51 termes ; FRP cité dans les Loharanom-Baovao.
+
 ## Pièges déjà résolus (à lire avant de modifier)
 - **Ne jamais éditer plusieurs fichiers en parallèle** si l'un réécrit l'autre (courses d'écriture déjà subies : lignes dupliquées, `module.exports` cassé).
 - Le champ `documentation` de la méta-table ne doit contenir **aucune** mention ministérielle, même abrégée.
