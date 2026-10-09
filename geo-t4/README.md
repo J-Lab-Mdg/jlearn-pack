@@ -71,7 +71,7 @@ Pour les unités suivantes : créer `data-uniteN.js` (même structure de topic q
 (UNITES + TdM + tableaux de bord). La révision réutilise `revisionSeance()`, l'examen `examenSeance()`.
 
 ## Audit final
-✅ **29 octobre 2026 : audit complet passé** — 38 contrôles de contenu + 12 structurels, tous verts.
+✅ **9 octobre 2026 : audit complet passé** — 38 contrôles de contenu + 12 structurels, tous verts.
 Rapport : `Audit-final-Manuel-Geographie-T4.md` (racine du dépôt). Outil réutilisable : `src/audit.py`.
 Corrigé à cette occasion : items « a)/b) » du sujet d'examen de l'Unité 5 harmonisés en « 1./2. ».
 
@@ -81,6 +81,13 @@ Rapport : `Conformite-FRP-T4-Geographie.md` (racine du dépôt). 8 enrichissemen
 (mangrove/savoka, éléments du climat, barrage hydroélectrique, plantes médicinales, causes naturelles
 cyclone/sécheresse, réchauffement climatique, réserves naturelles, 27 millions d'habitants, produits locaux) ;
 glossaire 51 termes ; FRP cité dans les Loharanom-Baovao.
+
+## Analyse du FRP T4 Fascicule 2 (document entier)
+📄 **9 octobre 2026 : analyse intégrale du FRP** (Maths p. 4-54 + ST p. 55-98 + Géo p. 99-127) :
+inventaire complet des 123 ressources (codes RES, typologie, pages), alignement FRP ↔ PE T4 par
+discipline, anomalies éditoriales (codes doublés/manquants, en-tête erroné) et implications pour
+d'éventuels manuels J-Learn **Maths T4** (≈ 396 séances/an) et **ST T4** (≈ 198 séances/an).
+Rapport : `Analyse-FRP-T4-Fascicule-2.md` (racine du dépôt).
 
 ## Pièges déjà résolus (à lire avant de modifier)
 - **Ne jamais éditer plusieurs fichiers en parallèle** si l'un réécrit l'autre (courses d'écriture déjà subies : lignes dupliquées, `module.exports` cassé).
