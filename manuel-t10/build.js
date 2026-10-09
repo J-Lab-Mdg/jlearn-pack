@@ -158,6 +158,18 @@ function contents() {
     tocLink("s68", "    Session 68 — Revision"),
     tocLink("s69", "    Session 69 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit9", "UNIT 9 — THE JOB THAT’S RIGHT FOR YOU (Sessions 70–79)", { bold: true, size: 26 }),
+    tocLink("s70", "    Session 70 — The jobs and the workplaces"),
+    tocLink("s71", "    Session 71 — What do you do for a living? The job situations"),
+    tocLink("s72", "    Session 72 — Where do you work? in, on, at and the possessive case"),
+    tocLink("s73", "    Session 73 — Listening: the jobs of the neighbourhood"),
+    tocLink("s74", "    Session 74 — The worker’s qualities: able to, know how to, good at"),
+    tocLink("s75", "    Session 75 — My dream job: asking, choosing, defending!"),
+    tocLink("s76", "    Session 76 — Reading: the woman who feeds the city"),
+    tocLink("s77", "    Session 77 — Writing: the job that’s right for me"),
+    tocLink("s78", "    Session 78 — Revision"),
+    tocLink("s79", "    Session 79 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -218,6 +230,7 @@ async function main() {
         ...require("./unit6")(),
         ...require("./unit7")(),
         ...require("./unit8")(),
+        ...require("./unit9")(),
       ],
     }],
   });

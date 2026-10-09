@@ -31,6 +31,6 @@ leçons enrichies (6 règles), 6 annexes dont Phonetics IPA + figurée.
 - Bloc 6 ☑ : Unit 6 Narrating a past event (S44–S51). — livré (uploads Drive U2-U6 en attente).
 - Bloc 7 ☑ : Unit 7 Travelling in Madagascar (S52–S61). — livré (uploads Drive U2-U7 en attente).
 - Bloc 8 ☑ : Unit 8 Restaurants and Malagasy cuisine (S62–S69). — livré (uploads Drive U2-U8 en attente).
-- Bloc 9 ☐ : Unit 9 The job that's right for you (S70–S79).
+- Bloc 9 ☑ : Unit 9 The job that's right for you (S70–S79). — livré (uploads Drive U2-U9 en attente).
 - Bloc 10 ☐ : Unit 10 Talking on the phone (S80–S88).
 - Bloc 11 ☐ : 6 annexes + page finale + TOC + MAJ PR.
