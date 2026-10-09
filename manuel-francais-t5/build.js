@@ -93,7 +93,21 @@ function contents() {
     tocLink("s23", "    Séance 23 — Révision"),
     tocLink("s24", "    Séance 24 — Test"),
     p("", { after: 40 }),
-    p([run("… Les unités 3 à 6 et les annexes sont ajoutées dans les blocs suivants …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("unit3", "UNITÉ 3 — LES SERVICES PUBLICS (Séances 25–36)", { bold: true, size: 26 }),
+    tocLink("s25", "    Séance 25 — Compréhension orale : « Une matinée au bureau de poste »"),
+    tocLink("s26", "    Séance 26 — Lexique : les services publics et leurs rôles"),
+    tocLink("s27", "    Séance 27 — Compréhension écrite : « La mairie, la maison de tous »"),
+    tocLink("s28", "    Séance 28 — Conjugaison : remplir, envoyer, lire au présent"),
+    tocLink("s29", "    Séance 29 — Le complément circonstanciel de but"),
+    tocLink("s30", "    Séance 30 — Les pronoms relatifs : qui, que, où"),
+    tocLink("s31", "    Séance 31 — Production orale : présenter un service et donner son avis"),
+    tocLink("s32", "    Séance 32 — Production écrite (1) : le plan"),
+    tocLink("s33", "    Séance 33 — Production écrite (2) : rédiger et enrichir"),
+    tocLink("s34", "    Séance 34 — Lecture-fluidité : prononciation, intonation, pauses"),
+    tocLink("s35", "    Séance 35 — Révision"),
+    tocLink("s36", "    Séance 36 — Test"),
+    p("", { after: 40 }),
+    p([run("… Les unités 4 à 6 et les annexes sont ajoutées dans les blocs suivants …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -140,6 +154,7 @@ async function main() {
         ...dashboard(), pageBreak(),
         ...require("./unit1")(),
         ...require("./unit2")(),
+        ...require("./unit3")(),
       ],
     }],
   });
