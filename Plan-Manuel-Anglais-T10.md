@@ -33,4 +33,4 @@ leçons enrichies (6 règles), 6 annexes dont Phonetics IPA + figurée.
 - Bloc 8 ☑ : Unit 8 Restaurants and Malagasy cuisine (S62–S69). — livré (uploads Drive U2-U8 en attente).
 - Bloc 9 ☑ : Unit 9 The job that's right for you (S70–S79). — livré (uploads Drive U2-U9 en attente).
 - Bloc 10 ☑ : Unit 10 Talking on the phone (S80–S88). — livré (uploads Drive U2-U10 en attente).
-- Bloc 11 ☐ : 6 annexes + page finale + TOC + MAJ PR.
+- Bloc 11 ☑ : 6 annexes + page finale + TOC + MAJ PR. — livré. MANUEL T10 COMPLET ! (uploads Drive U2-U10 en attente)

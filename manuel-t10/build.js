@@ -26,8 +26,8 @@ function foreword() {
         run(", only help you SAY the word. When the students copy the lesson in their copy-books, they must "),
         run("NOT copy the words in brackets", { bold: true, color: C.RED }),
         run(".")]),
-    p("Six annexes close the book: the picture dictionary, the songs, the pronunciation guide, the flashcards, the conjugation guide and the phonetics guide."),
-    p("Dialogues, songs and reading texts can be listened to with a phone: scan the QR code or open the link at the bottom of the page. In Annex 2, the traditional songs also have a YouTube link for the video version.", { after: 160 }),
+    p("Six annexes close the book: the picture dictionary, the writer’s guide (the paragraph and the 100-word essay of the lycée), the pronunciation guide, the flashcards, the conjugation guide and the phonetics guide."),
+    p("Dialogues and reading texts can be listened to with a phone: scan the QR code or open the link at the bottom of the page of each unit.", { after: 160 }),
   ];
 }
 
@@ -181,7 +181,13 @@ function contents() {
     tocLink("s87", "    Session 87 — Revision"),
     tocLink("s88", "    Session 88 — Test paper"),
     p("", { after: 40 }),
-    p([run("… The annexes are being added in the final block …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("annexes", "ANNEXES — THE TREASURE BOX OF THE YEAR", { bold: true, size: 26 }),
+    tocLink("ann1", "    Annex 1 — Picture dictionary"),
+    tocLink("ann2", "    Annex 2 — The writer’s guide: the paragraph and the 100-word essay"),
+    tocLink("ann3", "    Annex 3 — Pronunciation guide"),
+    tocLink("ann4", "    Annex 4 — Flashcards to cut out"),
+    tocLink("ann5", "    Annex 5 — Conjugation guide"),
+    tocLink("ann6", "    Annex 6 — Phonetics guide (IPA and brackets)"),
   ];
 }
 
@@ -243,6 +249,7 @@ async function main() {
         ...require("./unit8")(),
         ...require("./unit9")(),
         ...require("./unit10")(),
+        ...require("./annexes")(),
       ],
     }],
   });
