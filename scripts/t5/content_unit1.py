@@ -135,16 +135,21 @@ S2 = {
         ("body", "Un invertébré est un animal qui ne possède pas de colonne vertébrale. Son corps est souvent mou, "
                  "parfois protégé par une carapace dure (crabe) ou une coquille (escargot)."),
         ("section", "2. Les grands groupes d'invertébrés"),
-        ("sub", "a. Les vers de terre"),
-        ("body", "Corps allongé, mou, sans pattes. Ils vivent dans le sol et l'enrichissent en matière organique."),
+        ("sub", "a. Les vers de terre (annélides)"),
+        ("body", "Corps allongé, mou, sans pattes, formé d'anneaux (c'est pourquoi on les appelle aussi "
+                 "« annélides »). Ils vivent dans le sol et l'enrichissent en matière organique. Exemple : "
+                 "le lombric."),
         ("sub", "b. Les insectes"),
         ("body", "Corps en trois parties, six pattes, souvent des ailes. Exemples : criquet, fourmi, papillon, moustique."),
-        ("sub", "c. Les araignées"),
+        ("sub", "c. Les araignées (arachnides)"),
         ("body", "Corps en deux parties, huit pattes, pas d'ailes. Exemples : araignée, scorpion."),
-        ("sub", "d. Les mille-pattes"),
+        ("sub", "d. Les mille-pattes (myriapodes)"),
         ("body", "Corps allongé formé de nombreux anneaux, avec une paire de pattes (ou plus) par anneau."),
         ("sub", "e. Les crustacés"),
         ("body", "Carapace dure, souvent aquatiques. Exemples : crabe, crevette."),
+        ("sub", "f. Les mollusques"),
+        ("body", "Corps mou, parfois protégé par une coquille. Exemples : l'escargot (avec coquille), la "
+                 "seiche (sans coquille externe)."),
         ("image", ("scripts/t5/generated_images/u1_s2_b_classification.jpg",
                    "Les cinq groupes d'invertébrés étudiés : vers de terre, insectes, araignées, mille-pattes, crustacés.")),
         ("section", "3. Pourquoi classer les invertébrés ?"),
@@ -402,7 +407,11 @@ S5 = {
         ("body", "Éviter la déforestation, ne pas polluer les rivières et les lacs."),
         ("sub", "b. Limiter la chasse et la pêche"),
         ("body", "Respecter les périodes de reproduction, ne pas capturer plus que nécessaire."),
-        ("sub", "c. Sensibiliser la communauté"),
+        ("sub", "c. Protéger les parcs nationaux et les réserves naturelles"),
+        ("body", "Madagascar compte de nombreux parcs nationaux et réserves (comme Andasibe ou Isalo) qui "
+                 "protègent des espèces uniques au monde, comme certains lémuriens. Respecter ces espaces "
+                 "protégés, ne pas y capturer d'animaux et ramasser ses déchets y contribue directement."),
+        ("sub", "d. Sensibiliser la communauté"),
         ("body", "Expliquer aux autres pourquoi il est important de protéger les animaux locaux et leur environnement."),
     ],
     "exercices": [

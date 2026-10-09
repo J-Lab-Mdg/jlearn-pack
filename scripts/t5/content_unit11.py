@@ -70,7 +70,9 @@ S1 = {
                    "Matériaux conducteurs (métal) et isolants (plastique, bois, caoutchouc) de l'électricité.")),
         ("section", "3. Le générateur"),
         ("body", "Un générateur est un élément qui fournit l'énergie électrique à un circuit. La pile et la "
-                 "batterie sont des générateurs courants."),
+                 "batterie sont des générateurs courants. Le panneau solaire, de plus en plus utilisé à "
+                 "Madagascar dans les zones non reliées au réseau électrique, est aussi un générateur : il "
+                 "transforme l'énergie de la lumière du soleil en énergie électrique."),
         ("section", "4. Le récepteur"),
         ("body", "Un récepteur est un élément qui utilise l'énergie électrique fournie par le générateur, pour "
                  "produire un effet : une lampe ou une DEL produit de la lumière, un moteur produit un "
@@ -370,7 +372,12 @@ S4 = {
                  "utilisée. 3. Fixer le montage sur le support choisi. 4. Tester : l'interrupteur fermé, la "
                  "lampe doit s'allumer ; l'interrupteur ouvert, elle doit s'éteindre. 5. Si la lampe ne "
                  "s'allume pas, vérifier les branchements, la pile et le sens de la DEL, puis corriger."),
-        ("section", "4. Sécurité pendant la construction"),
+        ("section", "4. Les pannes les plus fréquentes"),
+        ("body", "Si la mini-lampe ne s'allume pas, la panne vient le plus souvent de l'une de ces causes : "
+                 "une pile usée (déchargée), une pile mal orientée (bornes inversées), un fil interrompu "
+                 "(mal fixé ou coupé), ou une ampoule grillée (le filament à l'intérieur est cassé). Vérifier "
+                 "ces quatre points, un par un, permet de retrouver et de corriger la panne."),
+        ("section", "5. Sécurité pendant la construction"),
         ("body", "On utilise toujours une pile de faible tension (1,5 V à 9 V), adaptée à l'âge des élèves, et "
                  "on évite tout court-circuit en ne reliant jamais directement les deux bornes de la pile sans "
                  "récepteur. La construction se fait sous la supervision de l'enseignant."),

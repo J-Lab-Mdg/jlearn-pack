@@ -245,7 +245,12 @@ S3 = {
                  "fragiles (le crâne protège le cerveau, la cage thoracique protège le cœur et les poumons), "
                  "permettent le mouvement en travaillant avec les muscles et les articulations, et fabriquent "
                  "les cellules du sang à l'intérieur de la moelle osseuse."),
-        ("section", "3. L'hygiène du système musculo-squelettique"),
+        ("section", "3. Quelques accidents du système musculo-squelettique"),
+        ("body", "Un choc violent ou un mauvais mouvement peut provoquer différents accidents : la fracture "
+                 "est une cassure d'un os ; la luxation est le déplacement anormal des os au niveau d'une "
+                 "articulation ; l'entorse est une blessure des ligaments d'une articulation, souvent causée "
+                 "par une torsion. Dans tous ces cas, il faut consulter rapidement un professionnel de santé."),
+        ("section", "4. L'hygiène du système musculo-squelettique"),
         ("body", "Pour garder des os et des muscles solides et en bonne santé, il est important de : manger "
                  "des aliments riches en calcium (lait, produits laitiers, petits poissons) ; pratiquer une "
                  "activité physique régulière (marche, sport, jeux actifs) ; garder une bonne posture, assis et "

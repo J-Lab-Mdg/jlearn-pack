@@ -247,6 +247,11 @@ S3 = {
         ("sub", "a. Le levier"),
         ("body", "Une barre rigide qui pivote autour d'un point d'appui. Exemples : une brouette, un pied-de-"
                  "biche, une balance à bascule."),
+        ("body", "Trois éléments entrent en jeu dans un levier : la force motrice (l'effort que l'on fournit), "
+                 "le point d'appui (le pivot) et la charge (ce que l'on veut déplacer). Selon la position du "
+                 "point d'appui, on distingue trois types de leviers : le point d'appui au centre (une paire "
+                 "de ciseaux, une balance à bascule), la charge au centre (une brouette, un décapsuleur), ou "
+                 "la force motrice au centre (une canne à pêche, une pince à épiler)."),
         ("sub", "b. La roue (et l'essieu)"),
         ("body", "Un disque qui tourne autour d'un axe, facilitant le déplacement. Exemples : la roue de la "
                  "brouette, la roue d'une charrette tirée par un zébu."),
