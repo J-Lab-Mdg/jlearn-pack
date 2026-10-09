@@ -413,6 +413,12 @@ S5 = {
                  "l'attache au mât avec de la ficelle ou de la colle : c'est la voile, qui captera le vent."),
         ("image", ("scripts/t4/generated_images/u5_s5_b_etapes.jpg",
                    "Les trois étapes de construction du mini-bateau : coque, mât, voile.")),
+        ("sub", "Astuce de montage : une coque avec des bouchons de liège"),
+        ("body", "Une autre façon simple de fabriquer la coque consiste à assembler trois bouchons de liège "
+                 "côte à côte à l'aide de deux élastiques, sans les serrer trop fort. Une ficelle nouée aux "
+                 "élastiques permet ensuite de diriger le bateau une fois à l'eau. Le mât (un cure-dent) est "
+                 "fixé au centre du bouchon du milieu, en le glissant dans deux petits trous percés dans la "
+                 "voile en papier."),
         ("section", "2. Les consignes de sécurité"),
         ("body", "Pendant la construction, on respecte des règles de sécurité : demander l'aide d'un adulte "
                  "pour couper les matériaux durs, tenir les ciseaux correctement, ranger les outils "

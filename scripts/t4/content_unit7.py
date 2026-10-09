@@ -173,6 +173,17 @@ S2 = {
         ("body", "Connaître les constituants d'un sol permet de savoir s'il convient à telle ou telle "
                  "culture : un sol trop sableux retient mal l'eau, un sol trop argileux se draine mal, tandis "
                  "qu'un sol équilibré et riche en humus est le plus fertile."),
+        ("sub", "Le test du boudin : reconnaître un sol sans matériel"),
+        ("body", "Prends une poignée de terre légèrement humide et malaxe-la dans la main : si elle ne "
+                 "forme pas de boule et s'effrite, le sol est surtout sableux ; si elle forme un boudin qui "
+                 "se casse quand on le courbe, le sol est limoneux ou modérément argileux ; si le boudin se "
+                 "courbe facilement en anneau sans se casser, le sol est riche en argile (sol argileux)."),
+        ("section", "4. Trois grands types de sols"),
+        ("body", "Sol sablonneux : l'eau le traverse très vite, il se dessèche rapidement et contient peu "
+                 "d'éléments nutritifs. Sol argileux : il retient très bien l'eau, devient lourd et collant "
+                 "sous la pluie, et peut se craqueler en période sèche. Sol humifère (terre végétale) : "
+                 "sombre, riche en humus, il retient bien l'eau et offre la meilleure fertilité pour les "
+                 "cultures."),
     ],
     "exercices": [
         ("Exercice 1 (5 points)", " — Cite quatre constituants du sol."),
@@ -360,7 +371,12 @@ S4 = {
                  "décomposée) permettent de maintenir sa fertilité sur le long terme."),
         ("image", ("scripts/t4/generated_images/u7_s4_b_techniques.jpg",
                    "Quatre moyens de lutte contre la dégradation du sol : reboisement, terrasses, haies vives, rotation des cultures.")),
-        ("sub", "e. La lutte contre les feux de brousse"),
+        ("sub", "e. Le paillage et le zéro labour"),
+        ("body", "Le paillage consiste à recouvrir la terre d'herbes fauchées ou de résidus de récolte : "
+                 "cela protège le sol contre le choc des gouttes de pluie, garde l'humidité et nourrit la "
+                 "terre en se décomposant en humus. La technique du zéro labour (semis direct) consiste à "
+                 "planter sans retourner la terre, afin de ne pas détruire la structure naturelle du sol."),
+        ("sub", "f. La lutte contre les feux de brousse"),
         ("body", "Éviter le tavy et sensibiliser la communauté aux dangers des feux de brousse permet de "
                  "préserver la matière organique et la fertilité du sol."),
         ("section", "3. L'engagement de chacun"),

@@ -241,6 +241,14 @@ S3 = {
                  "(anana)."),
         ("image", ("scripts/t4/generated_images/u2_s3_b_comparaison.jpg",
                    "Comparaison monocotylédone / dicotylédone : nervures, cotylédons, racines.")),
+        ("table", {
+            "headers": ["Critère d'observation", "Monocotylédones", "Dicotylédones"],
+            "rows": [
+                ["Forme des racines", "En touffe (racines fasciculées)", "Une grosse racine principale (racine pivotante)"],
+                ["Nervures des feuilles", "Lignes droites parallèles", "En réseau ou ramifiées"],
+                ["Nombre de cotylédons", "1 seul (ex. riz, maïs)", "2 (ex. haricot, arachide)"],
+            ],
+        }),
         ("section", "4. Pourquoi cette distinction est-elle utile ?"),
         ("body", "Connaître la famille d'une plante aide à prévoir la forme de ses racines, de ses feuilles, et "
                  "même certains besoins de culture — des informations utiles pour l'agriculteur comme pour le "
@@ -418,7 +426,8 @@ S5 = {
         ("section", "2. Les plantes de décoration"),
         ("body", "Certaines plantes n'ont pas d'usage alimentaire ou médicinal direct mais embellissent un "
                  "lieu : le rosier, le bougainvillier, les orchidées malgaches très recherchées, les plantes "
-                 "d'intérieur en pot."),
+                 "d'intérieur en pot, et le flamboyant (arbre originaire de Madagascar, aux fleurs rouge "
+                 "orangé), planté le long de nombreuses avenues et cours d'école pour son ombre et sa beauté."),
         ("section", "3. Les plantes nourricières"),
         ("body", "Le riz, le manioc, la patate douce, les brèdes et de nombreux fruits (mangue, letchi, "
                  "banane) nourrissent chaque jour la population malgache."),

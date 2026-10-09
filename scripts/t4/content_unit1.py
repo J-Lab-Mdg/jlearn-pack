@@ -446,10 +446,35 @@ S5 = {
         ("body", "Elle indique le jour où le produit a été fabriqué."),
         ("sub", "d. La date de péremption ou date limite de consommation"),
         ("body", "Elle indique jusqu'à quand le produit peut être consommé sans risque pour la santé. Au-delà "
-                 "de cette date, l'aliment peut devenir dangereux, même si son aspect paraît normal."),
+                 "de cette date, l'aliment peut devenir dangereux, même si son aspect paraît normal. On "
+                 "distingue en réalité deux types de dates, souvent confondues :"),
+        ("sub", "— DLC (Date Limite de Consommation) : « À consommer jusqu'au... »"),
+        ("body", "Ne jamais consommer un produit après cette date : il y a un risque d'intoxication grave "
+                 "(yaourts, viandes, poissons, plats préparés)."),
+        ("sub", "— DDM (Date de Durabilité Minimale) : « À consommer de préférence avant... »"),
+        ("body", "Une fois cette date dépassée, le produit ne présente pas de danger immédiat pour la santé, "
+                 "mais il peut perdre un peu de son goût ou de sa qualité (biscuits, pâtes, riz, conserves)."),
+        ("sub", "e. L'origine et le fabricant"),
+        ("body", "Le pays ou la région d'origine doit être indiqué, surtout pour les viandes, fruits et "
+                 "légumes. Le nom et l'adresse du fabricant permettent de le contacter en cas de problème."),
         ("image", ("scripts/t4/generated_images/u1_s5_b_emballage.jpg",
                    "Les informations clés d'un emballage : nutrition, ingrédients, fabrication, péremption.")),
-        ("section", "2. Pourquoi lire un emballage avant d'acheter ou de consommer ?"),
+        ("section", "2. Exemple d'étiquette malgache"),
+        ("body", "Voici les informations lues sur un paquet de « 18 Petits Beurre », biscuit fabriqué à "
+                 "Madagascar par la société Socobis :"),
+        ("table", {
+            "headers": ["Élément", "Information"],
+            "rows": [
+                ["Dénomination du produit", "18 Petits Beurre"],
+                ["Ingrédients", "Farine, sucre, matières grasses végétales, beurre, poudres levantes, sel, arômes"],
+                ["Date de conservation", "DDM : à consommer de préférence avant mars"],
+                ["Conditions de conservation", "À conserver dans un endroit sec"],
+                ["Informations nutritionnelles (100 g)", "Protéines 8,75 g · Lipides 10,8 g · Glucides 75 g · Énergie 432,2 kcal"],
+                ["Origine", "Madagascar"],
+                ["Fabricant", "Socobis"],
+            ],
+        }),
+        ("section", "3. Pourquoi lire un emballage avant d'acheter ou de consommer ?"),
         ("body", "Lire un emballage permet de vérifier que le produit n'est pas périmé, de connaître sa "
                  "composition (utile en cas d'allergie ou de régime particulier), et de comparer plusieurs "
                  "produits avant de choisir le plus adapté."),

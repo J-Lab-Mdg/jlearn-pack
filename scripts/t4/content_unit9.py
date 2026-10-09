@@ -76,6 +76,13 @@ S1 = {
         ("body", "Les aimants sont utilisés dans de nombreux objets : les aimants décoratifs de "
                  "réfrigérateur, certains jeux et jouets, les fermetures de sacs ou de cahiers, et les "
                  "boussoles qui indiquent le nord."),
+        ("sub", "Pour aller plus loin : aimants naturels et aimants artificiels"),
+        ("body", "Il existe des aimants naturels, comme la magnétite, un minerai de fer que l'on trouve "
+                 "directement dans certaines roches. La plupart des aimants que nous utilisons aujourd'hui "
+                 "sont des aimants artificiels, fabriqués par l'homme : les aimants permanents (comme le "
+                 "barreau aimanté ou l'aimant en U) gardent leur magnétisme en permanence, tandis que les "
+                 "aimants temporaires, comme les électroaimants, ne sont magnétiques que lorsqu'un courant "
+                 "électrique les traverse."),
         ("image", ("scripts/t4/generated_images/u9_s1_c_jouet.jpg",
                    "Un enfant joue avec un jeu de pêche magnétique : une canne munie d'un aimant attire "
                    "de petits poissons en carton portant un morceau de métal.")),
@@ -260,6 +267,12 @@ S3 = {
         ("image", ("scripts/t4/generated_images/u9_s3_c_cheveux.jpg",
                    "Une fillette frotte un ballon de baudruche sur ses cheveux, qui se dressent et sont "
                    "attirés par le ballon électrisé.")),
+        ("sub", "Pour aller plus loin : électriser par contact"),
+        ("body", "On peut aussi électriser un objet par contact, sans frottement. Si on fabrique un petit "
+                 "pendule avec une boule de papier suspendue à un fil, et qu'on approche (sans la toucher) "
+                 "une règle déjà électrisée par frottement, la boule est d'abord attirée. Mais si on touche "
+                 "la boule avec la règle électrisée, la boule se charge à son tour : elle est alors repoussée "
+                 "par la règle. C'est l'électrisation par contact."),
     ],
     "exercices": [
         ("Exercice 1 (5 points)", " — Qu'est-ce que l'électrisation d'un objet ?"),

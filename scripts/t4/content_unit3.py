@@ -270,7 +270,12 @@ S3 = {
                  "avec de la chaleur."),
         ("image", ("scripts/t4/generated_images/u3_s3_b_methodes.jpg",
                    "Six méthodes d'assemblage courantes.")),
-        ("section", "3. Bien choisir sa méthode"),
+        ("section", "3. Assemblage direct ou indirect"),
+        ("body", "On peut aussi classer les assemblages selon la présence ou non d'un élément intermédiaire. "
+                 "Un assemblage direct met les pièces en contact sans rien entre elles (exemple : souder, "
+                 "coincer). Un assemblage indirect utilise un élément intermédiaire comme une vis, un clou, "
+                 "de la colle ou du fil pour relier les pièces (exemple : visser, clouer, coller, coudre)."),
+        ("section", "4. Bien choisir sa méthode"),
         ("body", "Le choix dépend du matériau (on ne coud pas du métal, on ne soude pas du tissu), de la "
                  "solidité recherchée, et du besoin ou non de pouvoir démonter l'objet plus tard."),
     ],
@@ -652,7 +657,15 @@ S7 = {
                  "une boîte en carton."),
         ("image", ("scripts/t4/generated_images/u3_s7_b_effets.jpg",
                    "Les quatre effets possibles d'une force sur un objet.")),
-        ("section", "3. Un exemple malgache : tirer une charrette à zébu"),
+        ("section", "3. Deux types de mouvement"),
+        ("body", "Un mouvement peut être une translation (l'objet se déplace tout entier en ligne, par "
+                 "exemple une voiture sur la route) ou une rotation (l'objet tourne autour d'un axe, par "
+                 "exemple un manège ou une roue)."),
+        ("sub", "Exemple : le puits à poulie"),
+        ("body", "Pour remonter un seau d'eau d'un puits à l'aide d'une poulie et d'une manivelle, on exerce "
+                 "une force en tournant la manivelle : la manivelle et la poulie effectuent un mouvement de "
+                 "rotation, tandis que le seau, lui, effectue un mouvement de translation vers le haut."),
+        ("section", "4. Un exemple malgache : tirer une charrette à zébu"),
         ("body", "Quand un zébu tire une charrette, il exerce une force qui met la charrette en mouvement. "
                  "Quand le conducteur tire sur les rênes, il exerce une force qui ralentit ou arrête "
                  "l'attelage. Ces gestes quotidiens illustrent bien l'action d'une force sur un objet."),

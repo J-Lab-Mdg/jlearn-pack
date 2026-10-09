@@ -54,6 +54,8 @@ def build_lecon(doc, s):
                 B.add_image(doc, path, caption)
             else:
                 print("WARNING: missing image, skipped:", path)
+        elif kind == "table":
+            B.add_simple_table(doc, text["headers"], text["rows"])
     # New page: separate the LEÇON content from EXERCICES + CORRIGÉ.
     B.page_break(doc)
     B.exercices_heading(doc)

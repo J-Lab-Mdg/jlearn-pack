@@ -625,6 +625,31 @@ def add_exam_links(doc, exam_seances, intro_text):
     blank(doc)
 
 
+def add_simple_table(doc, headers, rows, first_col_bold=True):
+    """Generic small content table used inside a lecon body.
+    headers: list of column header strings.
+    rows: list of row tuples/lists, same length as headers.
+    """
+    table = doc.add_table(rows=1 + len(rows), cols=len(headers))
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _set_table_borders(table)
+    hdr = table.rows[0].cells
+    for i, h in enumerate(headers):
+        hdr[i].text = h
+        for p_ in hdr[i].paragraphs:
+            for r in p_.runs:
+                r.bold = True
+    for ridx, row_vals in enumerate(rows, start=1):
+        cells = table.rows[ridx].cells
+        for cidx, val in enumerate(row_vals):
+            cells[cidx].text = str(val)
+            if first_col_bold and cidx == 0:
+                for p_ in cells[cidx].paragraphs:
+                    for r in p_.runs:
+                        r.bold = True
+    blank(doc)
+
+
 def add_illustrations_table(doc, captions):
     """captions: list of (seance_num, caption) tuples, in document order."""
     for i, (num, caption) in enumerate(captions, start=1):

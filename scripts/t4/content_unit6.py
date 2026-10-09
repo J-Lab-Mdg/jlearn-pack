@@ -74,6 +74,12 @@ S1 = {
                  "de lumière, et se rétrécit en pleine lumière pour protéger l'œil."),
         ("image", ("scripts/t4/generated_images/u6_s1_c_lumiere.jpg",
                    "La pupille laisse entrer la lumière qui permet à l'œil de voir les objets autour de nous.")),
+        ("sub", "Pour aller plus loin : l'intérieur de l'œil"),
+        ("body", "Derrière la pupille se trouvent d'autres parties invisibles de l'extérieur : la cornée "
+                 "(une couche transparente qui laisse entrer la lumière), le cristallin (une petite lentille "
+                 "qui règle la netteté de l'image), la rétine (au fond de l'œil, elle reçoit l'image et la "
+                 "transforme en signal) et le nerf optique (qui transmet ce signal au cerveau, qui "
+                 "l'interprète pour former l'image que nous « voyons »)."),
         ("section", "3. Pourquoi prendre soin de sa vue ?"),
         ("body", "La vue est précieuse : elle nous permet de lire, de nous déplacer en sécurité, de "
                  "reconnaître les personnes et de découvrir le monde. C'est pourquoi il faut en prendre "
@@ -159,6 +165,11 @@ S2 = {
                  "musique, bruits) et permet aussi de garder l'équilibre du corps."),
         ("image", ("scripts/t4/generated_images/u6_s2_b_oreille.jpg",
                    "Les parties de l'oreille : pavillon, conduit auditif et tympan.")),
+        ("sub", "Pour aller plus loin : derrière le tympan"),
+        ("body", "Derrière le tympan se trouve l'oreille moyenne, avec trois minuscules osselets (le "
+                 "marteau, l'enclume et l'étrier) qui amplifient les vibrations du son. Plus profondément "
+                 "encore, l'oreille interne contient la cochlée, en forme de petit escargot, qui transforme "
+                 "ces vibrations en un message nerveux envoyé au cerveau par le nerf auditif."),
         ("section", "2. Le nez et l'odorat"),
         ("sub", "a. Les parties du nez"),
         ("body", "Le nez est percé de deux narines, séparées par une petite cloison. À l'intérieur, une "

@@ -62,7 +62,10 @@ S1 = {
         ("sub", "a. L'état solide"),
         ("body", "Un solide a une forme propre et un volume propre : il garde toujours la même forme, quel "
                  "que soit le récipient dans lequel on le place. Exemples : une pierre, un morceau de bois, "
-                 "un glaçon."),
+                 "un glaçon. On distingue deux sortes de solides : les solides compacts, d'un seul bloc, que "
+                 "l'on saisit facilement avec la main (une tomate, une brique, un caillou), et les solides "
+                 "pulvérisés, formés de petits grains sans forme propre, qui prennent la forme du récipient "
+                 "qui les contient (le sable, le sucre en poudre, le maïs moulu)."),
         ("sub", "b. L'état liquide"),
         ("body", "Un liquide a un volume propre mais pas de forme propre : il prend la forme du récipient "
                  "qui le contient, mais sa quantité ne change pas. Exemples : l'eau, le lait, l'huile."),
