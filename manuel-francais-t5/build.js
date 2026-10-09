@@ -79,7 +79,21 @@ function contents() {
     tocLink("s11", "    Séance 11 — Révision"),
     tocLink("s12", "    Séance 12 — Test"),
     p("", { after: 40 }),
-    p([run("… Les unités 2 à 6 et les annexes sont ajoutées dans les blocs suivants …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("unit2", "UNITÉ 2 — LE VOYAGE (Séances 13–24)", { bold: true, size: 26 }),
+    tocLink("s13", "    Séance 13 — Compréhension orale : la brochure « Destination Morondava »"),
+    tocLink("s14", "    Séance 14 — Lexique : transports, établissements, préparation du voyage"),
+    tocLink("s15", "    Séance 15 — Compréhension écrite : « Nosy Be » — les champs lexicaux"),
+    tocLink("s16", "    Séance 16 — Les prépositions de lieu"),
+    tocLink("s17", "    Séance 17 — Les adjectifs qualificatifs et le pluriel en -aux"),
+    tocLink("s18", "    Séance 18 — Conjugaison : aller, faire, venir, prendre, mettre"),
+    tocLink("s19", "    Séance 19 — Production orale : décrire et comparer des destinations"),
+    tocLink("s20", "    Séance 20 — Production écrite (1) : le plan de la brochure"),
+    tocLink("s21", "    Séance 21 — Production écrite (2) : rédiger et améliorer"),
+    tocLink("s22", "    Séance 22 — Lecture-fluidité : lire comme un guide"),
+    tocLink("s23", "    Séance 23 — Révision"),
+    tocLink("s24", "    Séance 24 — Test"),
+    p("", { after: 40 }),
+    p([run("… Les unités 3 à 6 et les annexes sont ajoutées dans les blocs suivants …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -125,6 +139,7 @@ async function main() {
         ...contents(), pageBreak(),
         ...dashboard(), pageBreak(),
         ...require("./unit1")(),
+        ...require("./unit2")(),
       ],
     }],
   });
