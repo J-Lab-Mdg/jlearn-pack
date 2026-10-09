@@ -83,12 +83,12 @@ const examen = {
       titre: "Exercice 2 (5 points)",
       consigne: "Cite les trois groupes de la répartition par âge, puis les trois variables de la croissance de la population.",
       items: [
-        "a) Les trois groupes d'âge : …… , …… , ……",
-        "b) Les trois variables : …… , …… , ……",
+        "1. Les trois groupes d'âge : …… , …… , ……",
+        "2. Les trois variables : …… , …… , ……",
       ],
       corrige: [
-        "a) **Les enfants, les adultes et les anciens.** (2,5 points)",
-        "b) **Les naissances, les décès et les migrations.** (2,5 points)",
+        "1. **Les enfants, les adultes et les anciens.** (2,5 points)",
+        "2. **Les naissances, les décès et les migrations.** (2,5 points)",
       ],
     },
     {

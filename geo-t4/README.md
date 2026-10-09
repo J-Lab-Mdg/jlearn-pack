@@ -52,7 +52,8 @@ geo-t4/
 │   ├── data-unite5-rev.js # Révision + sujet d'examen Unité 5
 │   ├── annexes.js         # Annexes (glossaire, cartes muettes, auto-éval, illustrations, sources)
 │   ├── assemble.js        # Assemblage — config UNITES (boucle générique, ajouter l'unité suivante dedans)
-│   └── verifications.py   # Vérifications post-génération (skill)
+│   ├── verifications.py   # Vérifications structurelles post-génération (skill)
+│   └── audit.py           # Audit de contenu (séquençage, barèmes, typographie, mots interdits…)
 └── output/                # Livrables .docx
 ```
 
@@ -61,12 +62,18 @@ geo-t4/
 npm install docx sharp        # à la racine du dépôt (node_modules non versionné)
 node geo-t4/svg/make-svg.js   # régénérer les schémas si modifiés
 node geo-t4/src/assemble.js   # → output/Manuel_Geographie_T4_JLearn.docx (76 séances + annexes)
-python3 geo-t4/src/verifications.py
+python3 geo-t4/src/verifications.py  # structure XML
+python3 geo-t4/src/audit.py           # contenu (38 contrôles) — rapport : ../Audit-final-Manuel-Geographie-T4.md
 ```
 
 Pour les unités suivantes : créer `data-uniteN.js` (même structure de topic que data-unite1.js),
 `data-uniteN-rev.js` (révision + examen), puis les brancher dans `assemble.js`
 (UNITES + TdM + tableaux de bord). La révision réutilise `revisionSeance()`, l'examen `examenSeance()`.
+
+## Audit final
+✅ **29 octobre 2026 : audit complet passé** — 38 contrôles de contenu + 12 structurels, tous verts.
+Rapport : `Audit-final-Manuel-Geographie-T4.md` (racine du dépôt). Outil réutilisable : `src/audit.py`.
+Corrigé à cette occasion : items « a)/b) » du sujet d'examen de l'Unité 5 harmonisés en « 1./2. ».
 
 ## Pièges déjà résolus (à lire avant de modifier)
 - **Ne jamais éditer plusieurs fichiers en parallèle** si l'un réécrit l'autre (courses d'écriture déjà subies : lignes dupliquées, `module.exports` cassé).
