@@ -148,6 +148,16 @@ function contents() {
     tocLink("s60", "    Session 60 — Revision"),
     tocLink("s61", "    Session 61 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit8", "UNIT 8 — RESTAURANTS AND MALAGASY CUISINE (Sessions 62–69)", { bold: true, size: 26 }),
+    tocLink("s62", "    Session 62 — The Malagasy dishes and the five senses of food"),
+    tocLink("s63", "    Session 63 — Cooking with grammar: grilled, fried, boiled"),
+    tocLink("s64", "    Session 64 — Count and non-count: the expressions of quantity"),
+    tocLink("s65", "    Session 65 — Listening: at the Malagasy restaurant"),
+    tocLink("s66", "    Session 66 — Reading: the kingdom of rice"),
+    tocLink("s67", "    Session 67 — Writing: my menu — the gallery walk"),
+    tocLink("s68", "    Session 68 — Revision"),
+    tocLink("s69", "    Session 69 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -207,6 +217,7 @@ async function main() {
         ...require("./unit5")(),
         ...require("./unit6")(),
         ...require("./unit7")(),
+        ...require("./unit8")(),
       ],
     }],
   });
