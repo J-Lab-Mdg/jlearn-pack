@@ -136,6 +136,18 @@ function contents() {
     tocLink("s50", "    Session 50 — Revision"),
     tocLink("s51", "    Session 51 — Test paper"),
     p("", { after: 40 }),
+    tocLink("unit7", "UNIT 7 — TRAVELLING IN MADAGASCAR (Sessions 52–61)", { bold: true, size: 26 }),
+    tocLink("s52", "    Session 52 — The means of transport and the places"),
+    tocLink("s53", "    Session 53 — Time and distance: How long? How far? How often?"),
+    tocLink("s54", "    Session 54 — The traveller’s tool box: whenever, wherever, another"),
+    tocLink("s55", "    Session 55 — Listening: travelling around Madagascar"),
+    tocLink("s56", "    Session 56 — Taboos and superstitions: the respectful traveller"),
+    tocLink("s57", "    Session 57 — Reading: the long road south"),
+    tocLink("s58", "    Session 58 — My foreign country: presenting and comparing"),
+    tocLink("s59", "    Session 59 — Writing: my dream trip in Madagascar"),
+    tocLink("s60", "    Session 60 — Revision"),
+    tocLink("s61", "    Session 61 — Test paper"),
+    p("", { after: 40 }),
     p([run("… The next units are being added block by block …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
@@ -194,6 +206,7 @@ async function main() {
         ...require("./unit4")(),
         ...require("./unit5")(),
         ...require("./unit6")(),
+        ...require("./unit7")(),
       ],
     }],
   });
