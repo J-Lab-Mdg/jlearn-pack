@@ -7,8 +7,8 @@ Source officielle : `PE RAPE/PE T4.pdf` (Programme d'Études T4, section GÉOGRA
 - ✅ **Unité 1 — L'orientation géographique** (Séances 1-10) → `output/Manuel_Geographie_T4_V1_UNITE1.docx`
 - ✅ **Unité 2 — Le plan** (Séances 11-24 : 12 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE2.docx` (contient Unités 1+2)
 - ✅ **Unité 3 — Les éléments du paysage naturel** (Séances 25-38 : 12 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE3.docx` (contient Unités 1+2+3)
-- ✅ **Unité 4 — L'Environnement** (Séances 39-56 : 16 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE4.docx` (contient Unités 1+2+3+4, livrable courant)
-- ⬜ Unité 5 — L'Homme et les activités quotidiennes (Séances 57-76)
+- ✅ **Unité 4 — L'Environnement** (Séances 39-56 : 16 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE4.docx` (contient Unités 1+2+3+4)
+- ✅ **Unité 5 — L'Homme et les activités quotidiennes** (Séances 57-76 : 18 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE5.docx` (**les 76 séances du programme**, livrable courant)
 - ⬜ Fusion finale + annexes (glossaire, cartes muettes, auto-évaluation, table des illustrations) → `Manuel_Geographie_T4_JLearn.docx` + `.sha256`
 
 Le découpage complet des 76 séances est dans **PLAN-FINAL.md** (validé par l'utilisateur).
@@ -29,6 +29,7 @@ geo-t4/
 ├── svg/make-svg-u2.js     # Schémas Unité 2
 ├── svg/make-svg-u3.js     # Schémas Unité 3 (12 schémas)
 ├── svg/make-svg-u4.js     # Schémas Unité 4 (16 schémas)
+├── svg/make-svg-u5.js     # Schémas Unité 5 (18 schémas)
 ├── src/
 │   ├── builders.js        # Constructeurs docx (méta-table invisible, 6 colonnes, couleurs…)
 │   ├── seance-generator.js# topic → fiche I/II/III + leçon + EXERCICES notés
@@ -44,6 +45,10 @@ geo-t4/
 │   ├── data-unite4b.js    # Contenu Unité 4, Séances 45-49
 │   ├── data-unite4c.js    # Contenu Unité 4, Séances 50-54
 │   ├── data-unite4-rev.js # Révision + sujet d'examen Unité 4
+│   ├── data-unite5.js     # Contenu Unité 5, Séances 57-62
+│   ├── data-unite5b.js    # Contenu Unité 5, Séances 63-68
+│   ├── data-unite5c.js    # Contenu Unité 5, Séances 69-74
+│   ├── data-unite5-rev.js # Révision + sujet d'examen Unité 5
 │   ├── assemble.js        # Assemblage — config UNITES (boucle générique, ajouter l'unité suivante dedans)
 │   └── verifications.py   # Vérifications post-génération (skill)
 └── output/                # Livrables .docx
@@ -53,7 +58,7 @@ geo-t4/
 ```bash
 npm install docx sharp        # à la racine du dépôt (node_modules non versionné)
 node geo-t4/svg/make-svg.js   # régénérer les schémas si modifiés
-node geo-t4/src/assemble.js   # → output/Manuel_Geographie_T4_V1_UNITE4.docx (unités 1+2+3+4)
+node geo-t4/src/assemble.js   # → output/Manuel_Geographie_T4_V1_UNITE5.docx (les 76 séances)
 python3 geo-t4/src/verifications.py
 ```
 

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2E7D32"/></marker>
+  </defs>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Les trois variables de la croissance de la population</text>
+  <rect x="40" y="90" width="320" height="300" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  
+  <g transform="translate(200,230) scale(1.8)">
+    <circle cx="0" cy="0" r="10" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -7 -6 Q 0 -12 7 -6 Q 7 -2 0 -2 Q -7 -2 -7 -6 Z" fill="#37474F"/>
+    <ellipse cx="0" cy="14" rx="11" ry="13" fill="#FFE0B2" stroke="#BCAAA4" stroke-width="2"/>
+    <path d="M -11 8 Q 0 4 11 8" fill="none" stroke="#BCAAA4" stroke-width="2"/>
+  </g>
+  <text x="200" y="160" text-anchor="middle" font-size="24" font-weight="bold" fill="#2E7D32">+</text>
+  <text x="200" y="330" text-anchor="middle" font-size="21" font-weight="bold" fill="#2E7D32">LES NAISSANCES</text>
+  <text x="200" y="360" text-anchor="middle" font-size="19" font-weight="bold" fill="#37474F">font augmenter</text>
+  <rect x="390" y="90" width="320" height="300" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  
+  <g transform="translate(550,260) scale(1.2)">
+    <rect x="-26" y="-28" width="52" height="28" fill="#B0BEC5" stroke="#607D8B" stroke-width="2.5"/>
+    <polygon points="-32,-28 0,-46 32,-28" fill="#90A4AE" stroke="#607D8B" stroke-width="2.5"/>
+    <rect x="-6" y="-20" width="12" height="14" fill="#78909C"/>
+    <line x1="0" y1="-56" x2="0" y2="-46" stroke="#607D8B" stroke-width="3.5"/>
+    <line x1="-6" y1="-53" x2="6" y2="-53" stroke="#607D8B" stroke-width="3.5"/>
+  </g>
+  <text x="550" y="160" text-anchor="middle" font-size="24" font-weight="bold" fill="#C62828">−</text>
+  <text x="550" y="330" text-anchor="middle" font-size="21" font-weight="bold" fill="#C62828">LES DÉCÈS</text>
+  <text x="550" y="360" text-anchor="middle" font-size="19" font-weight="bold" fill="#37474F">font diminuer</text>
+  <rect x="740" y="90" width="320" height="300" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  
+  <g transform="translate(860,260) scale(0.75)">
+    <rect x="-42" y="-70" width="84" height="52" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2.5"/>
+    <polygon points="-52,-70 0,-104 52,-70" fill="#B71C1C" stroke="#7F0000" stroke-width="2.5"/>
+    <rect x="-12" y="-48" width="24" height="30" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <rect x="-34" y="-60" width="16" height="14" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+    <rect x="18" y="-60" width="16" height="14" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  <line x1="800" y1="230" x2="900" y2="230" stroke="#C62828" stroke-width="4" marker-end="url(#arrR)"/>
+  <line x1="920" y1="270" x2="820" y2="270" stroke="#2E7D32" stroke-width="4" marker-end="url(#arrG)"/>
+  <text x="900" y="330" text-anchor="middle" font-size="21" font-weight="bold" fill="#E65100">LES MIGRATIONS</text>
+  <text x="900" y="360" text-anchor="middle" font-size="19" font-weight="bold" fill="#37474F">départs et arrivées</text>
+  <rect x="120" y="420" width="860" height="160" rx="16" fill="#F5F9FC" stroke="#90A4AE" stroke-width="3"/>
+  <text x="550" y="470" text-anchor="middle" font-size="23" font-weight="bold" fill="#1F4E79">naissances + arrivées &gt; décès + départs</text>
+  <line x1="430" y1="540" x2="670" y2="540" stroke="#2E7D32" stroke-width="5" marker-end="url(#arrG)"/>
+  <text x="550" y="520" text-anchor="middle" font-size="23" font-weight="bold" fill="#2E7D32">la population AUGMENTE</text>
+  <text x="550" y="648" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Trois variables font grandir ou diminuer la population : les naissances, les décès, les migrations.</text>
+</svg>

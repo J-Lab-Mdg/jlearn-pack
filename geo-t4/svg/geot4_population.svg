@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2E7D32"/></marker>
+  </defs>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">La population d'un village</text>
+  <rect x="30" y="410" width="1040" height="40" fill="#A5D6A7" stroke="#66BB6A" stroke-width="2"/>
+  
+  <g transform="translate(170,410) scale(1.05)">
+    <rect x="-42" y="-70" width="84" height="52" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2.5"/>
+    <polygon points="-52,-70 0,-104 52,-70" fill="#B71C1C" stroke="#7F0000" stroke-width="2.5"/>
+    <rect x="-12" y="-48" width="24" height="30" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <rect x="-34" y="-60" width="16" height="14" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+    <rect x="18" y="-60" width="16" height="14" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(430,410) scale(0.9)">
+    <rect x="-70" y="-70" width="140" height="52" fill="#FFF3E0" stroke="#8D6E63" stroke-width="2.5"/>
+    <polygon points="-80,-70 0,-100 80,-70" fill="#1F4E79" stroke="#0D2C46" stroke-width="2.5"/>
+    <rect x="18" y="-46" width="26" height="28" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <rect x="-58" y="-60" width="20" height="16" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+    <text x="-22" y="-46" text-anchor="middle" font-size="17" font-weight="bold" fill="#5D4037">ÉCOLE</text>
+  </g>
+  
+  <g transform="translate(940,410) scale(1)">
+    <rect x="-42" y="-70" width="84" height="52" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2.5"/>
+    <polygon points="-52,-70 0,-104 52,-70" fill="#B71C1C" stroke="#7F0000" stroke-width="2.5"/>
+    <rect x="-12" y="-48" width="24" height="30" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <rect x="-34" y="-60" width="16" height="14" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+    <rect x="18" y="-60" width="16" height="14" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(820,404) scale(1.2)">
+    <rect x="-4" y="0" width="8" height="26" fill="#6D4C41"/>
+    <circle cx="0" cy="-12" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(560,406) scale(1.25)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#FFB74D" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-18" x2="20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(615,406) scale(1.2)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -4 -45 Q 8 -49 8 -38 Q 3 -43 -4 -45 Z" fill="#37474F"/>
+    <path d="M -10 -22 L 10 -22 L 17 8 L -17 8 Z" fill="#F48FB1" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-9" y1="-16" x2="-18" y2="-2" stroke="#F48FB1" stroke-width="7" stroke-linecap="round"/>
+    <line x1="9" y1="-16" x2="18" y2="-2" stroke="#F48FB1" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-5" y1="8" x2="-7" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="5" y1="8" x2="7" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(660,398) scale(1.1)">
+    <circle cx="0" cy="0" r="10" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -7 -6 Q 0 -12 7 -6 Q 7 -2 0 -2 Q -7 -2 -7 -6 Z" fill="#37474F"/>
+    <ellipse cx="0" cy="14" rx="11" ry="13" fill="#FFE0B2" stroke="#BCAAA4" stroke-width="2"/>
+    <path d="M -11 8 Q 0 4 11 8" fill="none" stroke="#BCAAA4" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(720,406) scale(1.15)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -8 -44 Q 0 -50 8 -44 Q 8 -36 0 -35 Q -8 -36 -8 -44 Z" fill="#ECEFF1" stroke="#90A4AE" stroke-width="1.5"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#BCAAA4" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#BCAAA4" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-16" x2="17" y2="2" stroke="#BCAAA4" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="17" y1="0" x2="22" y2="27" stroke="#8D6E63" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(280,410) scale(0.85)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#FFB74D" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-18" x2="20" y2="-4" stroke="#FFB74D" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(325,410) scale(0.85)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -4 -45 Q 8 -49 8 -38 Q 3 -43 -4 -45 Z" fill="#37474F"/>
+    <path d="M -10 -22 L 10 -22 L 17 8 L -17 8 Z" fill="#F48FB1" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-9" y1="-16" x2="-18" y2="-2" stroke="#F48FB1" stroke-width="7" stroke-linecap="round"/>
+    <line x1="9" y1="-16" x2="18" y2="-2" stroke="#F48FB1" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-5" y1="8" x2="-7" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="5" y1="8" x2="7" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(505,412) scale(0.8)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#81C784" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#81C784" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-18" x2="20" y2="-4" stroke="#81C784" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="550" y="486" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">tous les habitants du village</text>
+  <path d="M 120 470 L 980 470" stroke="#1F4E79" stroke-width="3"/>
+  <text x="550" y="520" text-anchor="middle" font-size="23" font-weight="bold" fill="#1F4E79">LA POPULATION = L'ENSEMBLE DES HABITANTS D'UN LIEU</text>
+  <text x="550" y="550" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">La population d'un village, c'est toutes les personnes qui y habitent.</text>
+</svg>

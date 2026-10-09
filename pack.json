@@ -407,6 +407,96 @@
       "id": "geot4_plan_action",
       "url": "/geot4_plan_action.png",
       "type": "image/png"
+    },
+    {
+      "id": "geot4_population",
+      "url": "/geot4_population.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_sexe_age",
+      "url": "/geot4_sexe_age.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_effectif",
+      "url": "/geot4_effectif.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_naissances",
+      "url": "/geot4_naissances.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_deces",
+      "url": "/geot4_deces.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_migrations",
+      "url": "/geot4_migrations.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_croissance",
+      "url": "/geot4_croissance.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_us_coutumes",
+      "url": "/geot4_us_coutumes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_fady",
+      "url": "/geot4_fady.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_socioculturel",
+      "url": "/geot4_socioculturel.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_activites",
+      "url": "/geot4_activites.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_agriculture",
+      "url": "/geot4_agriculture.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_elevage_peche",
+      "url": "/geot4_elevage_peche.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_artisanat",
+      "url": "/geot4_artisanat.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_industrie",
+      "url": "/geot4_industrie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_commerce",
+      "url": "/geot4_commerce.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_transport",
+      "url": "/geot4_transport.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_ma_localite",
+      "url": "/geot4_ma_localite.png",
+      "type": "image/png"
     }
   ]
 }

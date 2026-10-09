@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2E7D32"/></marker>
+  </defs>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Les grandes activités de la population</text>
+  <rect x="40" y="90" width="320" height="240" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/><rect x="390" y="90" width="320" height="240" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/><rect x="740" y="90" width="320" height="240" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <rect x="40" y="350" width="320" height="240" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/><rect x="390" y="350" width="320" height="240" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/><rect x="740" y="350" width="320" height="240" rx="16" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  
+  <g transform="translate(140,260) scale(1.6)">
+    <path d="M 0 0 Q -8 -14 -14 -17 M 0 0 Q -3 -16 -5 -21 M 0 0 Q 4 -16 8 -21 M 0 0 Q 9 -13 14 -16" stroke="#43A047" stroke-width="3" fill="none"/>
+    <circle cx="-14" cy="-18" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="-5" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="8" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="14" cy="-17" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+  </g>
+  <g transform="translate(200,260) scale(1.3)">
+    <path d="M 0 0 Q -8 -14 -14 -17 M 0 0 Q -3 -16 -5 -21 M 0 0 Q 4 -16 8 -21 M 0 0 Q 9 -13 14 -16" stroke="#43A047" stroke-width="3" fill="none"/>
+    <circle cx="-14" cy="-18" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="-5" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="8" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="14" cy="-17" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+  </g>
+  <g transform="translate(270,245) scale(1)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#81C784" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#81C784" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-18" x2="20" y2="-4" stroke="#81C784" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="300" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">l'agriculture</text>
+  
+  <g transform="translate(500,265) scale(1.2)">
+    <path d="M -40 0 Q -30 16 0 16 Q 30 16 40 0 Z" fill="#A1887F" stroke="#5D4037" stroke-width="2.5"/>
+    <line x1="0" y1="0" x2="0" y2="-34" stroke="#5D4037" stroke-width="3"/>
+    <polygon points="0,-34 26,-24 0,-18" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  <g transform="translate(590,240) scale(1.2)">
+    <ellipse cx="0" cy="0" rx="20" ry="11" fill="#4FC3F7" stroke="#0277BD" stroke-width="2"/>
+    <polygon points="-19,0 -32,-9 -32,9" fill="#4FC3F7" stroke="#0277BD" stroke-width="2"/>
+    <circle cx="10" cy="-3" r="2.6" fill="#0277BD"/>
+  </g>
+  <text x="550" y="300" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">la pêche</text>
+  
+  <g transform="translate(860,270) scale(1.6)">
+    <path d="M -20 -12 L 20 -12 L 14 12 L -14 12 Z" fill="#D7A86E" stroke="#8D6E63" stroke-width="2.5"/>
+    <path d="M -19 -5 L 19 -5 M -16 3 L 16 3 M -13 10 L 13 10" stroke="#8D6E63" stroke-width="1.5"/>
+    <path d="M -11 -12 Q 0 -24 11 -12" fill="none" stroke="#8D6E63" stroke-width="2.5"/>
+  </g>
+  <g transform="translate(950,275) scale(1.4)">
+    <path d="M -13 -16 Q -20 0 -9 12 Q 0 19 9 12 Q 20 0 13 -16 Z" fill="#BCAAA4" stroke="#8D6E63" stroke-width="2.5"/>
+    <ellipse cx="0" cy="-16" rx="13" ry="5" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -9 -6 Q 0 -2 9 -6" fill="none" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  <text x="900" y="300" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">l'artisanat</text>
+  
+  <g transform="translate(200,530) scale(1.1)">
+    <rect x="-50" y="-46" width="100" height="46" fill="#CFD8DC" stroke="#546E7A" stroke-width="2.5"/>
+    <rect x="-34" y="-78" width="18" height="32" fill="#B0BEC5" stroke="#546E7A" stroke-width="2.5"/>
+    <rect x="10" y="-70" width="18" height="24" fill="#B0BEC5" stroke="#546E7A" stroke-width="2.5"/>
+    <rect x="-16" y="-28" width="12" height="12" fill="#FFB74D" stroke="#546E7A" stroke-width="1.5"/>
+    <rect x="4" y="-28" width="12" height="12" fill="#FFB74D" stroke="#546E7A" stroke-width="1.5"/>
+  </g>
+  <text x="200" y="560" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">l'industrie</text>
+  
+  <g transform="translate(550,545) scale(1.1)">
+    <rect x="-52" y="-26" width="104" height="8" fill="#A1887F" stroke="#5D4037" stroke-width="2"/>
+    <line x1="-44" y1="-18" x2="-44" y2="0" stroke="#5D4037" stroke-width="4"/>
+    <line x1="44" y1="-18" x2="44" y2="0" stroke="#5D4037" stroke-width="4"/>
+    <line x1="-50" y1="-26" x2="-50" y2="-56" stroke="#5D4037" stroke-width="3"/>
+    <line x1="50" y1="-26" x2="50" y2="-56" stroke="#5D4037" stroke-width="3"/>
+    <rect x="-60" y="-64" width="120" height="12" fill="#EF5350" stroke="#7F0000" stroke-width="2"/>
+    <rect x="-60" y="-64" width="24" height="12" fill="#FFF3E0" stroke="#7F0000" stroke-width="2"/>
+    <rect x="-12" y="-64" width="24" height="12" fill="#FFF3E0" stroke="#7F0000" stroke-width="2"/>
+    <rect x="36" y="-64" width="24" height="12" fill="#FFF3E0" stroke="#7F0000" stroke-width="2"/>
+    <circle cx="-26" cy="-32" r="7" fill="#66BB6A" stroke="#2E7D32" stroke-width="2"/>
+    <circle cx="-8" cy="-32" r="7" fill="#FFCA28" stroke="#F57F17" stroke-width="2"/>
+    <circle cx="10" cy="-32" r="7" fill="#EF5350" stroke="#B71C1C" stroke-width="2"/>
+    <circle cx="28" cy="-32" r="7" fill="#FF8A65" stroke="#BF360C" stroke-width="2"/>
+  </g>
+  <text x="550" y="560" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">le commerce</text>
+  
+  <g transform="translate(900,545) scale(0.85)">
+    <rect x="-62" y="-48" width="124" height="36" rx="8" fill="#42A5F5" stroke="#1565C0" stroke-width="2.5"/>
+    <rect x="-48" y="-42" width="22" height="16" fill="#B3E5FC" stroke="#1565C0" stroke-width="1.5"/><rect x="-20" y="-42" width="22" height="16" fill="#B3E5FC" stroke="#1565C0" stroke-width="1.5"/><rect x="8" y="-42" width="22" height="16" fill="#B3E5FC" stroke="#1565C0" stroke-width="1.5"/>
+    <rect x="38" y="-42" width="18" height="16" fill="#B3E5FC" stroke="#1565C0" stroke-width="1.5"/>
+    <circle cx="-34" cy="-10" r="11" fill="#37474F"/><circle cx="-34" cy="-10" r="4.5" fill="#ECEFF1"/>
+    <circle cx="34" cy="-10" r="11" fill="#37474F"/><circle cx="34" cy="-10" r="4.5" fill="#ECEFF1"/>
+  </g>
+  <text x="900" y="560" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">le transport</text>
+  <text x="550" y="668" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Six grandes activités : agriculture, pêche, artisanat, industrie, commerce, transport.</text>
+</svg>

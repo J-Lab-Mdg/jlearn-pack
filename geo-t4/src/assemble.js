@@ -1,5 +1,5 @@
 // assemble.js — Assemble le Manuel de Géographie T4 (Traitement C, skill jlearn-manuel-scolaire)
-// Contenu courant : Unités 1, 2, 3 et 4. Usage : node src/assemble.js
+// Contenu courant : Unités 1, 2, 3, 4 et 5 (les 76 séances du programme). Usage : node src/assemble.js
 const fs = require("fs");
 const path = require("path");
 const { Document, Packer, AlignmentType, Table, TableRow, WidthType, BorderStyle } = require("docx");
@@ -20,9 +20,14 @@ const U4B = require("./data-unite4b");
 const U4C = require("./data-unite4c");
 const U4 = { topics: [...U4A.topics, ...U4B.topics, ...U4C.topics] };
 const U4REV = require("./data-unite4-rev");
+const U5A = require("./data-unite5");
+const U5B = require("./data-unite5b");
+const U5C = require("./data-unite5c");
+const U5 = { topics: [...U5A.topics, ...U5B.topics, ...U5C.topics] };
+const U5REV = require("./data-unite5-rev");
 
 const OUT_DIR = path.join(__dirname, "..", "output");
-const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_V1_UNITE4.docx");
+const OUT_FILE = path.join(OUT_DIR, "Manuel_Geographie_T4_V1_UNITE5.docx");
 
 // ── Configuration des unités disponibles ────────────────────────────────
 const UNITES = [
@@ -66,12 +71,20 @@ const UNITES = [
     rev: U4REV.revision,
     exam: U4REV.examen,
   },
+  {
+    id: "unite5",
+    nom: "UNITÉ 5 — L'HOMME ET LES ACTIVITÉS QUOTIDIENNES",
+    seances: "Séances 57 à 76",
+    lecons: 18,
+    intro: "Thématique officielle du programme d'études T4 : l'Homme et les activités quotidiennes — les caractéristiques de la population (nombre, répartition par sexe et par âge, variables de la croissance : naissances, décès, migrations), les caractéristiques socioculturelles (us et coutumes, respect des fady, langue, vêtement, mode de vie) et les activités de la population (agriculture, pêche, artisanat, industrie, commerce, transport). Durée officielle : 9 heures, soit 18 séances de 30 minutes.",
+    topics: U5.topics,
+    rev: U5REV.revision,
+    exam: U5REV.examen,
+  },
 ];
 
 // Unités restantes (livrées plus tard) — affichées en gris dans la table des matières
-const FUTURES = [
-  { nom: "UNITÉ 5 — L'HOMME ET LES ACTIVITÉS QUOTIDIENNES", seances: "Séances 57 à 76" },
-];
+const FUTURES = [];
 
 const thin = { style: BorderStyle.SINGLE, size: 4, color: "BBBBBB" };
 const borders = { top: thin, bottom: thin, left: thin, right: thin, insideHorizontal: thin, insideVertical: thin };

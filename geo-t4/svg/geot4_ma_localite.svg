@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C00000"/></marker>
+    <marker id="arrK" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#37474F"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2E7D32"/></marker>
+  </defs>
+  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">Les activités de ma localité</text>
+  <rect x="30" y="470" width="1040" height="36" fill="#A5D6A7" stroke="#66BB6A" stroke-width="2"/>
+  
+  <rect x="30" y="560" width="380" height="52" rx="12" fill="#4FC3F7" stroke="#0277BD" stroke-width="2.5"/>
+  <path d="M 44 586 q 10 -7 20 0 t 20 0 t 20 0" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.8"/>
+  <path d="M 260 586 q 10 -7 20 0 t 20 0 t 20 0" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.8"/>
+  
+  <g transform="translate(150,470) scale(0.85)">
+    <rect x="-42" y="-70" width="84" height="52" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2.5"/>
+    <polygon points="-52,-70 0,-104 52,-70" fill="#B71C1C" stroke="#7F0000" stroke-width="2.5"/>
+    <rect x="-12" y="-48" width="24" height="30" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <rect x="-34" y="-60" width="16" height="14" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+    <rect x="18" y="-60" width="16" height="14" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(370,470) scale(0.75)">
+    <rect x="-70" y="-70" width="140" height="52" fill="#FFF3E0" stroke="#8D6E63" stroke-width="2.5"/>
+    <polygon points="-80,-70 0,-100 80,-70" fill="#1F4E79" stroke="#0D2C46" stroke-width="2.5"/>
+    <rect x="18" y="-46" width="26" height="28" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+    <rect x="-58" y="-60" width="20" height="16" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+    <text x="-22" y="-46" text-anchor="middle" font-size="17" font-weight="bold" fill="#5D4037">ÉCOLE</text>
+  </g>
+  
+  <g transform="translate(500,460) scale(1.2)">
+    <path d="M 0 0 Q -8 -14 -14 -17 M 0 0 Q -3 -16 -5 -21 M 0 0 Q 4 -16 8 -21 M 0 0 Q 9 -13 14 -16" stroke="#43A047" stroke-width="3" fill="none"/>
+    <circle cx="-14" cy="-18" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="-5" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="8" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="14" cy="-17" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+  </g>
+  <g transform="translate(545,465) scale(1)">
+    <path d="M 0 0 Q -8 -14 -14 -17 M 0 0 Q -3 -16 -5 -21 M 0 0 Q 4 -16 8 -21 M 0 0 Q 9 -13 14 -16" stroke="#43A047" stroke-width="3" fill="none"/>
+    <circle cx="-14" cy="-18" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="-5" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="8" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="14" cy="-17" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+  </g>
+  <g transform="translate(590,460) scale(1.1)">
+    <path d="M 0 0 Q -8 -14 -14 -17 M 0 0 Q -3 -16 -5 -21 M 0 0 Q 4 -16 8 -21 M 0 0 Q 9 -13 14 -16" stroke="#43A047" stroke-width="3" fill="none"/>
+    <circle cx="-14" cy="-18" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="-5" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="8" cy="-22" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="14" cy="-17" r="3" fill="#FDD835" stroke="#F9A825" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(660,465) scale(0.95)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#81C784" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#81C784" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-18" x2="20" y2="-4" stroke="#81C784" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(760,462) scale(0.8)">
+    <ellipse cx="0" cy="0" rx="34" ry="18" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2.5"/>
+    <circle cx="-18" cy="-16" r="10" fill="#BCAAA4" stroke="#8D6E63" stroke-width="2.5"/>
+    <rect x="-36" y="-12" width="14" height="12" rx="4" fill="#BCAAA4" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -40 -18 L -46 -26 M -36 -18 L -33 -28" stroke="#6D4C41" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-20" y1="16" x2="-20" y2="30" stroke="#8D6E63" stroke-width="3.5"/>
+    <line x1="-4" y1="16" x2="-4" y2="30" stroke="#8D6E63" stroke-width="3.5"/>
+    <line x1="12" y1="16" x2="12" y2="30" stroke="#8D6E63" stroke-width="3.5"/>
+    <line x1="24" y1="16" x2="24" y2="30" stroke="#8D6E63" stroke-width="3.5"/>
+  </g>
+  
+  <g transform="translate(930,470) scale(0.85)">
+    <rect x="-52" y="-26" width="104" height="8" fill="#A1887F" stroke="#5D4037" stroke-width="2"/>
+    <line x1="-44" y1="-18" x2="-44" y2="0" stroke="#5D4037" stroke-width="4"/>
+    <line x1="44" y1="-18" x2="44" y2="0" stroke="#5D4037" stroke-width="4"/>
+    <line x1="-50" y1="-26" x2="-50" y2="-56" stroke="#5D4037" stroke-width="3"/>
+    <line x1="50" y1="-26" x2="50" y2="-56" stroke="#5D4037" stroke-width="3"/>
+    <rect x="-60" y="-64" width="120" height="12" fill="#EF5350" stroke="#7F0000" stroke-width="2"/>
+    <rect x="-60" y="-64" width="24" height="12" fill="#FFF3E0" stroke="#7F0000" stroke-width="2"/>
+    <rect x="-12" y="-64" width="24" height="12" fill="#FFF3E0" stroke="#7F0000" stroke-width="2"/>
+    <rect x="36" y="-64" width="24" height="12" fill="#FFF3E0" stroke="#7F0000" stroke-width="2"/>
+    <circle cx="-26" cy="-32" r="7" fill="#66BB6A" stroke="#2E7D32" stroke-width="2"/>
+    <circle cx="-8" cy="-32" r="7" fill="#FFCA28" stroke="#F57F17" stroke-width="2"/>
+    <circle cx="10" cy="-32" r="7" fill="#EF5350" stroke="#B71C1C" stroke-width="2"/>
+    <circle cx="28" cy="-32" r="7" fill="#FF8A65" stroke="#BF360C" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(150,550) scale(1)">
+    <path d="M -40 0 Q -30 16 0 16 Q 30 16 40 0 Z" fill="#A1887F" stroke="#5D4037" stroke-width="2.5"/>
+    <line x1="0" y1="0" x2="0" y2="-34" stroke="#5D4037" stroke-width="3"/>
+    <polygon points="0,-34 26,-24 0,-18" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(260,545) scale(0.9)">
+    <circle cx="0" cy="-34" r="11" fill="#FFCC80" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -12 -22 Q 0 -28 12 -22 L 10 6 L -10 6 Z" fill="#4FC3F7" stroke="#8D6E63" stroke-width="2"/>
+    <line x1="-10" y1="-18" x2="-20" y2="-4" stroke="#4FC3F7" stroke-width="7" stroke-linecap="round"/>
+    <line x1="10" y1="-18" x2="20" y2="-4" stroke="#4FC3F7" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-6" y1="6" x2="-8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="8" y2="26" stroke="#5D4037" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(700,550) scale(0.9)">
+    <rect x="-46" y="-26" width="84" height="10" fill="#A1887F" stroke="#5D4037" stroke-width="2.5"/>
+    <circle cx="-28" cy="-8" r="14" fill="#8D6E63" stroke="#5D4037" stroke-width="2.5"/>
+    <circle cx="-28" cy="-8" r="5" fill="#D7CCC8" stroke="#5D4037" stroke-width="1.5"/>
+    <circle cx="24" cy="-8" r="14" fill="#8D6E63" stroke="#5D4037" stroke-width="2.5"/>
+    <circle cx="24" cy="-8" r="5" fill="#D7CCC8" stroke="#5D4037" stroke-width="1.5"/>
+    <line x1="38" y1="-22" x2="70" y2="-18" stroke="#5D4037" stroke-width="4"/>
+    <line x1="38" y1="-12" x2="70" y2="-10" stroke="#5D4037" stroke-width="4"/>
+    <circle cx="76" cy="-24" r="9" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(960,640) scale(1)">
+    <path d="M -20 -12 L 20 -12 L 14 12 L -14 12 Z" fill="#D7A86E" stroke="#8D6E63" stroke-width="2.5"/>
+    <path d="M -19 -5 L 19 -5 M -16 3 L 16 3 M -13 10 L 13 10" stroke="#8D6E63" stroke-width="1.5"/>
+    <path d="M -11 -12 Q 0 -24 11 -12" fill="none" stroke="#8D6E63" stroke-width="2.5"/>
+  </g>
+  <g transform="translate(1030,645) scale(0.9)">
+    <path d="M -13 -16 Q -20 0 -9 12 Q 0 19 9 12 Q 20 0 13 -16 Z" fill="#BCAAA4" stroke="#8D6E63" stroke-width="2.5"/>
+    <ellipse cx="0" cy="-16" rx="13" ry="5" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -9 -6 Q 0 -2 9 -6" fill="none" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  
+  <circle cx="500" cy="400" r="18" fill="#2E7D32"/>
+  <text x="500" y="407" text-anchor="middle" font-size="20" font-weight="bold" fill="#FFFFFF">1</text>
+  
+  <circle cx="760" cy="390" r="18" fill="#2E7D32"/>
+  <text x="760" y="397" text-anchor="middle" font-size="20" font-weight="bold" fill="#FFFFFF">2</text>
+  
+  <circle cx="200" cy="500" r="18" fill="#0277BD"/>
+  <text x="200" y="507" text-anchor="middle" font-size="20" font-weight="bold" fill="#FFFFFF">3</text>
+  
+  <circle cx="990" cy="580" r="18" fill="#E65100"/>
+  <text x="990" y="587" text-anchor="middle" font-size="20" font-weight="bold" fill="#FFFFFF">4</text>
+  
+  <circle cx="930" cy="400" r="18" fill="#C2185B"/>
+  <text x="930" y="407" text-anchor="middle" font-size="20" font-weight="bold" fill="#FFFFFF">5</text>
+  
+  <circle cx="770" cy="500" r="18" fill="#5D4037"/>
+  <text x="770" y="507" text-anchor="middle" font-size="20" font-weight="bold" fill="#FFFFFF">6</text>
+  <text x="330" y="660" text-anchor="middle" font-size="19" font-weight="bold" fill="#2E7D32">1 l'agriculture — 2 l'élevage</text>
+  <text x="790" y="660" text-anchor="middle" font-size="19" font-weight="bold" fill="#0277BD">3 la pêche — 4 l'artisanat</text>
+  <text x="330" y="692" text-anchor="middle" font-size="19" font-weight="bold" fill="#C2185B">5 le commerce — 6 le transport</text>
+  <text x="550" y="716" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Chaque localité a ses activités : les découvrir, c'est connaître ses habitants.</text>
+</svg>
