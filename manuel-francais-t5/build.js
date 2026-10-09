@@ -121,7 +121,21 @@ function contents() {
     tocLink("s47", "    Séance 47 — Révision"),
     tocLink("s48", "    Séance 48 — Test"),
     p("", { after: 40 }),
-    p([run("… Les unités 5 et 6 et les annexes sont ajoutées dans les blocs suivants …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("unit5", "UNITÉ 5 — LES MÉTIERS (Séances 49–60)", { bold: true, size: 26 }),
+    tocLink("s49", "    Séance 49 — Compréhension orale : reportage « Les mains qui font vivre le village »"),
+    tocLink("s50", "    Séance 50 — Lexique : les secteurs d'activités, les lieux, les outils, les matières premières"),
+    tocLink("s51", "    Séance 51 — Compréhension écrite : « Pourquoi dit-on que le charpentier bâtit l'avenir ? »"),
+    tocLink("s52", "    Séance 52 — La cause (1) : à cause de, grâce à, en raison de"),
+    tocLink("s53", "    Séance 53 — La cause (2) : car, parce que, puisque"),
+    tocLink("s54", "    Séance 54 — Conjugaison : cultiver, pêcher, construire, bâtir au présent"),
+    tocLink("s55", "    Séance 55 — Production orale : interviewer un professionnel et présenter un métier"),
+    tocLink("s56", "    Séance 56 — Production écrite (1) : la fiche métier et le plan"),
+    tocLink("s57", "    Séance 57 — Production écrite (2) : rédiger mon texte explicatif"),
+    tocLink("s58", "    Séance 58 — Lecture-fluidité : la ponctuation et l'intonation"),
+    tocLink("s59", "    Séance 59 — Révision"),
+    tocLink("s60", "    Séance 60 — Test"),
+    p("", { after: 40 }),
+    p([run("… L'unité 6 et les annexes sont ajoutées dans les blocs suivants …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -170,6 +184,7 @@ async function main() {
         ...require("./unit2")(),
         ...require("./unit3")(),
         ...require("./unit4")(),
+        ...require("./unit5")(),
       ],
     }],
   });
