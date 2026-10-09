@@ -135,7 +135,21 @@ function contents() {
     tocLink("s59", "    Séance 59 — Révision"),
     tocLink("s60", "    Séance 60 — Test"),
     p("", { after: 40 }),
-    p([run("… L'unité 6 et les annexes sont ajoutées dans les blocs suivants …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("unit6", "UNITÉ 6 — LES CONTES ET LÉGENDES (Séances 61–72)", { bold: true, size: 26 }),
+    tocLink("s61", "    Séance 61 — Compréhension orale : conte « Soafara et la sorcière du lac »"),
+    tocLink("s62", "    Séance 62 — Lexique : la boîte à outils du conteur"),
+    tocLink("s63", "    Séance 63 — Compréhension écrite : « Darafify, le géant bienfaiteur » — le schéma narratif"),
+    tocLink("s64", "    Séance 64 — Les pronoms personnels COD"),
+    tocLink("s65", "    Séance 65 — Conjugaison : l'imparfait, le futur et les verbes pronominaux"),
+    tocLink("s66", "    Séance 66 — Le passé composé et ses accords — le pluriel des adjectifs"),
+    tocLink("s67", "    Séance 67 — Production orale : raconter un conte devant la classe"),
+    tocLink("s68", "    Séance 68 — Production écrite (1) : inventer mon conte et organiser mes idées"),
+    tocLink("s69", "    Séance 69 — Production écrite (2) : rédiger mon conte"),
+    tocLink("s70", "    Séance 70 — Lecture-fluidité : le théâtre des lecteurs"),
+    tocLink("s71", "    Séance 71 — Révision"),
+    tocLink("s72", "    Séance 72 — Test"),
+    p("", { after: 40 }),
+    p([run("… Les annexes sont ajoutées dans le dernier bloc …", { italic: true, color: C.GRAY, size: 24 })]),
   ];
 }
 
@@ -185,6 +199,7 @@ async function main() {
         ...require("./unit3")(),
         ...require("./unit4")(),
         ...require("./unit5")(),
+        ...require("./unit6")(),
       ],
     }],
   });

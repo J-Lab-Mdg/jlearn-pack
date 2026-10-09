@@ -47,7 +47,7 @@ participes passés, verbes en -cer/-ger).
 - Bloc 3 ☑ : Unité 3 Les services publics (S25–S36). — livré
 - Bloc 4 ☑ : Unité 4 Les loisirs (S37–S48). — livré
 - Bloc 5 ☑ : Unité 5 Les métiers (S49–S60). — livré
-- Bloc 6 ☐ : Unité 6 Les contes et légendes (S61–S72).
+- Bloc 6 ☑ : Unité 6 Les contes et légendes (S61–S72). — livré
 - Bloc 7 ☐ : 6 annexes + page finale + TOC + MAJ PR.
 
 ## Points ouverts
