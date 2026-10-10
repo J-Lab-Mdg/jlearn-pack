@@ -7,6 +7,7 @@ const S50 = {
   theme: "L'Environnement",
   objectif: "Être capable de citer les gestes de propreté qui protègent l'Environnement.",
   image: { id: "geot4_proprete", legende: "La propreté : les élèves balayent la cour et utilisent la poubelle." },
+  scene: { file: "scene_s50_proprete.jpg", mode: "document", legende: "Document : le grand nettoyage — on balaie la cour et on utilise la poubelle." },
   miseEnSituation: {
     texte: "Ce vendredi matin, c'est le jour du nettoyage à l'école de Rasoa. Chaque groupe a sa tâche : les uns balayent la cour avec de grands balais, les autres lavent la salle de classe, ceux du jardin ramassent les papiers et les jettent dans la poubelle. Une heure après, l'école brille de propreté. « Voilà une école qui protège l'Environnement ! », se réjouit le maître.",
     question: "Que font les élèves pour protéger l'Environnement de leur école ?",
@@ -133,6 +134,7 @@ const S51 = {
   theme: "L'Environnement",
   objectif: "Être capable de trier les déchets selon leur nature et de donner des exemples de réutilisation.",
   image: { id: "geot4_tri_dechets", legende: "Le triage des déchets en trois poubelles, puis la réutilisation : une bouteille devient un pot de fleurs." },
+  scene: { file: "scene_s51_tri_reutilisation.jpg", mode: "document", legende: "Document : trier les déchets, puis réutiliser — une bouteille devient un pot de fleurs." },
   miseEnSituation: {
     texte: "La maîtresse apporte trois poubelles de couleurs différentes : une verte, une bleue, une jaune. « Aujourd'hui, nous apprenons à trier ! Les restes de nourriture vont dans la verte, les papiers et les plastiques dans la bleue, le verre et les métaux dans la jaune. » Puis elle montre une bouteille d'eau coupée, remplie de terre et de fleurs : « Et regardez : cette bouteille est devenue un pot de fleurs ! »",
     question: "Que fait-on des déchets quand on les trie ?",
@@ -388,6 +390,7 @@ const S53 = {
   theme: "L'Environnement",
   objectif: "Être capable de décrire les activités de jardinage et d'expliquer comment éviter le gaspillage alimentaire.",
   image: { id: "geot4_jardinage", legende: "Le jardinage : parterres fleuris et potager ; et le combat contre le gaspillage : je finis mon assiette." },
+  scene: { file: "scene_s53_jardinage.jpg", mode: "document", legende: "Document : le jardin de l'école — des parterres fleuris et un potager bien soigné." },
   miseEnSituation: {
     texte: "Devant la salle de classe, un coin de terre attendait depuis longtemps. La maîtresse décide d'en faire un jardin : « Nous allons créer des parterres fleuris et un petit potager ! » Les élèves sèment des graines de fleurs et plantent des légumes. À la cantine, la maîtresse ajoute une consigne : « Prenez juste ce que vous pouvez manger. Chaque grain de riz jeté à la poubelle est du travail perdu ! »",
     question: "Que créent les élèves devant la classe, et que demande la maîtresse à la cantine ?",
@@ -515,6 +518,7 @@ const S54 = {
   theme: "L'Environnement",
   objectif: "Être capable de proposer des actions concrètes pour protéger l'Environnement.",
   image: { id: "geot4_plan_action", legende: "Le plan d'action de la classe : balayer, trier, planter, ne pas gaspiller." },
+  scene: { file: "scene_s54_plan_action.jpg", mode: "illustration", legende: "Illustration : le plan d'action de la classe — balayer, trier, planter, ne pas gaspiller." },
   miseEnSituation: {
     texte: "Fin de l'unité ! Le maître rassemble la classe : « Vous savez maintenant tout ce qui dégrade l'Environnement et tout ce qui le protège. À nous d'agir ! Proposez quatre gestes que notre classe s'engage à faire chaque jour. » Les mains se lèvent : « Balayer la cour ! » « Trier nos déchets ! » « Planter des arbres ! » « Ne pas gaspiller la nourriture ! » L'affiche du plan d'action est bientôt prête.",
     question: "Quels gestes la classe s'engage-t-elle à faire chaque jour ?",
