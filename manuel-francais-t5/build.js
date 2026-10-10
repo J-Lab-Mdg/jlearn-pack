@@ -149,7 +149,13 @@ function contents() {
     tocLink("s71", "    Séance 71 — Révision"),
     tocLink("s72", "    Séance 72 — Test"),
     p("", { after: 40 }),
-    p([run("… Les annexes sont ajoutées dans le dernier bloc …", { italic: true, color: C.GRAY, size: 24 })]),
+    tocLink("annex1", "ANNEXE 1 — L'imagier des 6 thématiques", { bold: true, size: 26 }),
+    tocLink("annex2", "ANNEXE 2 — Le guide du rédacteur (décrire, expliquer, raconter)", { bold: true, size: 26 }),
+    tocLink("annex3", "ANNEXE 3 — Toute la conjugaison de l'année", { bold: true, size: 26 }),
+    tocLink("annex4", "ANNEXE 4 — Flashcards et jeux de classe", { bold: true, size: 26 }),
+    tocLink("annex5", "ANNEXE 5 — Les stratégies de lecture (annexe officielle du programme)", { bold: true, size: 26 }),
+    tocLink("annex6", "ANNEXE 6 — Orthographe et accords", { bold: true, size: 26 }),
+    tocLink("final", "FÉLICITATIONS — page finale", { bold: true, size: 26 }),
   ];
 }
 
@@ -199,7 +205,8 @@ async function main() {
         ...require("./unit3")(),
         ...require("./unit4")(),
         ...require("./unit5")(),
-        ...require("./unit6")(),
+        ...require("./unit6")(), pageBreak(),
+        ...require("./annexes")(),
       ],
     }],
   });
