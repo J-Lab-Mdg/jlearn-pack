@@ -608,7 +608,7 @@ function finalPage() {
     p([run("THE END OF THE BOOK — THE BEGINNING OF YOUR ENGLISH LIFE!", { bold: true, size: 40, color: COLOR })], { center: true, after: 200 }),
     img("koto_soa.png", 300, 768 / 1408),
     p([run("Koto and Soa say:", { bold: true, size: 30 })], { center: true, after: 80 }),
-    p([run("“Goodbye, teacher! Goodbye, friends! Seventy-eight sessions — what a journey! We told our days, we went to the market, we fought the germs, we shared the news and we walked the whole country… in English! Keep speaking — and see you next year!”", { italic: true, size: 32, color: C.BLUE })], { center: true, after: 200 }),
+    p([run("“Goodbye, teacher! Goodbye, friends! Eighty-one sessions — what a journey! We told our days, we went to the market, we fought the germs, we shared the news and we walked the whole country… in English! Keep speaking — and see you next year!”", { italic: true, size: 32, color: C.BLUE })], { center: true, after: 200 }),
     p([run("J-Learn collection — English T8", { bold: true, size: 26 })], { center: true, after: 40 }),
     p([run("All the audio files of this book:", { size: 24 })], { center: true, after: 40 }),
     p([run("https://drive.google.com/drive/folders/1muxOkS0bLFOfGg7JGFFDWBBK_glGmbvY", { color: C.BLUE, size: 22 })], { center: true }),

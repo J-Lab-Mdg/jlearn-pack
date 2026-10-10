@@ -1,4 +1,4 @@
-// T8 — UNIT 1 — PERSONAL COMMUNICATION (13 séances + révision + test) — Sessions 1 à 15 / 78
+// T8 — UNIT 1 — PERSONAL COMMUNICATION (16 séances + révision + test) — Sessions 1 à 18 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
@@ -6,7 +6,7 @@ const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1F618D"; // bleu
 const SHADE = "D6EAF8";
-const TOTAL = 78;
+const TOTAL = 81;
 const AUDIO = {
   feelings: "https://drive.google.com/uc?export=download&id=1unOxEjipcV1eztNDOV58KcY8ukVVdRym",
   plans: "https://drive.google.com/uc?export=download&id=18s7eB-5ws9pseSasBmdxUxKo3RalHCnH",
@@ -77,6 +77,9 @@ function opening() {
     p([run("How are you feeling today?", { bold: true, color: COLOR, size: 44 })], { center: true, after: 120 }),
     img("u1_feelings.png", 440, 768 / 1408),
     p([run("In this unit, I will learn to:", { bold: true })], { after: 60 }),
+    p("• socialize and ask personal information with the WH-questions;"),
+    p("• say my likes and dislikes: I love swimming! (the gerund);"),
+    p("• state my preferences: I’d rather play…, because…;"),
     p("• name the feelings: happy, excited, sad, worried, tired…;"),
     p("• ask about feelings: How are you feeling? What’s wrong? What happened?;"),
     p("• use the present continuous for temporary facts: You are smiling!;"),
@@ -95,11 +98,11 @@ function opening() {
   ];
 }
 
-// ---------- S1 — Feelings vocabulary ----------
+// ---------- S1 — Socializing and personal information ----------
 function ficheS1() {
-  const meta = META("The feelings — happy, sad, excited…",
-    "By the end of the lesson, learners will be able to name feelings and match them with faces (emoji).",
-    "1 / 13", "emoji cards, pictures");
+  const meta = META("Socializing — asking and giving personal information",
+    "By the end of the lesson, learners will be able to socialize and ask/give personal information with the WH-questions (what, where, when, who, why) and how.",
+    "1 / 16", "ball or paper ball, identity card model");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("(First session of the year.) Welcome questions:"),
@@ -107,6 +110,225 @@ function ficheS1() {
        fp("2. What did you like in English last year?")],
       [fp("Answer."),
        fp("E.A.: My name is…; I liked the songs / the games…")],
+      "Individual work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("Name-chain game with the ball: “Hello! I’m Mr/Mrs…. And you?” The ball travels: each student says hello and their name.")],
+      [fp("Catch the ball. Say hello and their name.")], "Using game", "Ball"),
+    stepRow(["2. Presentation"],
+      [fp("Today we are going to learn a new lesson called: « Socializing — personal information ». By the end of this lesson, you will meet someone new and ask the right questions — in English!")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("Model dialogue on the board: — Hello! I’m Koto. What’s your name? — I’m Soa! — Where do you live? — I live in Ambohipo. — When is your birthday? — On May 12th. — Who is your best friend? — Fara! — And why do you learn English? — Because I love songs! Listen and repeat with the right intonation.")],
+      [fp("Listen. Repeat. Two volunteers act it out.")],
+      "Repetition drill", "Blackboard"),
+    stepRow(["4. Analysis"],
+      [fp("The question words — find them in the dialogue: WHAT? (thing), WHERE? (place), WHEN? (time), WHO? (person), WHY? (reason → because!), and HOW? (manner / How old…?). These are the 5 WH-questions + how: the keys of every conversation!")],
+      [fp("Find the words. Give the meaning."),
+       fp("E.A.: what = thing, where = place, when = time, who = person, why = reason, how = manner.")],
+      "Eliciting technique", "Blackboard"),
+    stepRow(["5. Synthesis"],
+      [fp("So: to socialize, I greet (Hello! Nice to meet you!) and I ask with the WH-words: What’s your name? Where do you live? When is your birthday? Who is your best friend? Why…? Because…! How old are you?")],
+      [fp("Listen. Repeat. Copy.")], "Whole-class work", "Blackboard"),
+    stepRow(["6. Practice"],
+      [fp("Mingle activity: walk around the class, meet TWO new classmates, fill their identity card (name — place — birthday — best friend — one “why” question). Then present one classmate to the class.")],
+      [fp("Mingle. Ask. Fill the card. Present."),
+       pAns("E.A.: This is Niry. She lives in Isotry. Her birthday is on March 3rd. Her best friend is Hanta, because they sing together!",
+        ["This is Niry."], { size: SZ.FICHE })],
+      "Mingle activity", "Identity cards"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("1. Give the 5 WH-question words + how."),
+       fp("2. Ask your neighbour two personal questions.")],
+      [fp("Answer."),
+       pAns("E.A.: what, where, when, who, why + how; Where do you live? When is your birthday?",
+        ["what, where, when, who, why"], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(1, TOTAL, meta, rows, "s1");
+}
+function lessonS1() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 1", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("SOCIALIZING — THE WH-QUESTIONS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    p([run("The keys of every conversation:", { bold: true })], { after: 50 }),
+    vocab("What…?", "ouate", "a thing — What’s your name?"),
+    vocab("Where…?", "ouère", "a place — Where do you live?"),
+    vocab("When…?", "ouène", "a time — When is your birthday?"),
+    vocab("Who…?", "hou", "a person — Who is your best friend?"),
+    vocab("Why…?", "ouaï", "a reason — Why do you learn English?"),
+    vocab("How…?", "haou", "a manner — How old are you?"),
+    p("", { after: 60 }),
+    box("THE SOCIALIZING DIALOGUE", [
+      bullet([run("— Hello! I’m Koto. ", { bold: true, color: C.BLUE }), run("What’s your name?", { bold: true, color: C.RED })]),
+      bullet([run("— I’m Soa! ", { bold: true, color: C.BLUE })]),
+      bullet([run("— Where do you live? ", { bold: true, color: C.RED }), run("— I live in Ambohipo.")]),
+      bullet([run("— When is your birthday? ", { bold: true, color: C.RED }), run("— On May 12th.")]),
+      bullet([run("— Why do you learn English? ", { bold: true, color: C.RED }), run("— Because I love songs!")], { after: 20 }),
+    ]),
+    p("", { after: 60 }),
+    box("MUTUAL RESPECT CORNER", [
+      p("When you meet someone, look at them, smile, and listen to the answer. A question is a gift!", { after: 40 }),
+    ]),
+  ];
+}
+
+// ---------- S2 — Likes and dislikes + gerund ----------
+function ficheS2() {
+  const meta = META("Likes and dislikes — the verbs with the gerund",
+    "By the end of the lesson, learners will be able to express likes and dislikes about food, school subjects and hobbies, using verbs that require the gerund (like, love, enjoy, hate, prefer + V-ing).",
+    "2 / 16", "pictures of food, subjects and hobbies");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Give the 5 WH-question words + how, and ask me one personal question!")],
+      [fp("Answer."),
+       fp("E.A.: what, where, when, who, why, how — Where do you live, Sir?")],
+      "Whole-class work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("Thumb game: I show a picture (rice and laoka… football… mathematics…): thumb up 👍 if you like it, thumb down 👎 if not!")],
+      [fp("React with thumbs.")], "Using visual aids", "Pictures"),
+    stepRow(["2. Presentation"],
+      [fp("Today we are going to learn a new lesson called: « Likes and dislikes ». By the end of this lesson, you will say what you love… and what you hate — in English!")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("Model sentences: I like playing football. I love eating mangoes. Soa enjoys singing. I hate washing the dishes! Koto prefers reading. — Look at the verbs after like/love/enjoy/hate/prefer: what do you see?")],
+      [fp("Observe."),
+       fp("E.A.: the second verb takes -ING!")],
+      "Eliciting technique", "Blackboard"),
+    stepRow(["4. Analysis"],
+      [fp("The rule: like, love, enjoy, hate, prefer + verb-ING (the gerund). Spelling: swim → swimming (double letter!), dance → dancing (no e!). The scale of the heart: love ❤️❤️ > like 👍 > don’t like 👎 > hate 💔.")],
+      [fp("Repeat the rule. Build examples."),
+       fp("E.A.: I love swimming; she hates getting up early!")],
+      "Whole-class work", "Blackboard"),
+    stepRow(["5. Synthesis"],
+      [fp("So: like / love / enjoy / hate / prefer + V-ing, for food, school subjects and hobbies. Question: Do you like dancing? — Yes, I do! / No, I don’t.")],
+      [fp("Listen. Repeat. Copy.")], "Whole-class work", "Blackboard"),
+    stepRow(["6. Practice"],
+      [fp("Find someone who…: likes cooking — hates waking up early — loves playing fanorona — enjoys singing. Walk, ask (Do you like…?), write the names!")],
+      [fp("Mingle. Ask. Note the names."),
+       pAns("E.A.: Do you like cooking? — Yes, I do! → Niry likes cooking.",
+        ["Do you like cooking?"], { size: SZ.FICHE })],
+      "Mingle activity", "Grids"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("1. Complete: I love (swim)…; she hates (do) … the chores."),
+       fp("2. Say one thing you like and one thing you hate (with -ing!).")],
+      [fp("Answer."),
+       pAns("E.A.: swimming; doing; I like reading, I hate sweeping!",
+        ["swimming"], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(2, TOTAL, meta, rows, "s2");
+}
+function lessonS2() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 2", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LIKES AND DISLIKES — THE GERUND", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    box("THE GOLDEN RULE", [
+      bullet([run("like / love / enjoy / hate / prefer ", { bold: true, color: C.RED }),
+              run("+ verb-", ), run("ING", { bold: true, color: C.RED })]),
+      bullet([run("I like "), run("playing", { bold: true, color: C.BLUE }), run(" football. — Soa enjoys "), run("singing", { bold: true, color: C.BLUE }), run(". — I hate "), run("sweeping", { bold: true, color: C.BLUE }), run("!")], { after: 20 }),
+    ]),
+    p("", { after: 60 }),
+    p([run("The scale of the heart:", { bold: true })], { after: 50 }),
+    vocab("I love…", "aï love", "❤️❤️ my favourite!"),
+    vocab("I like…", "aï laïke", "👍 it is nice"),
+    vocab("I don’t like…", "aï dônte laïke", "👎 not for me"),
+    vocab("I hate…", "aï héite", "💔 never!"),
+    p("", { after: 60 }),
+    p([run("Spelling watch-out:", { bold: true })], { after: 50 }),
+    p("• swim → swimming (double the letter!);"),
+    p("• dance → dancing (the e goes away!);"),
+    p("• play → playing (no change)."),
+    p("", { after: 60 }),
+    box("THE QUESTION", [
+      bullet([...kw("Do you like dancing?", "dou iou laïke dânnsinng")]),
+      bullet([run("→ Yes, I do! / No, I don’t.", { bold: true, color: C.BLUE })], { after: 20 }),
+    ]),
+  ];
+}
+
+// ---------- S3 — I'd rather + because ----------
+function ficheS3() {
+  const meta = META("I’d rather…, because… — talking about preferences",
+    "By the end of the lesson, learners will be able to ask and state preferences with “I’d rather + infinitive (without to)” and justify them with “because”.",
+    "3 / 16", "preference cards (two pictures per card)");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Complete: I enjoy (play)… the guitar; he hates (get)… up early.")],
+      [fp("Answer."),
+       fp("E.A.: playing; getting.")],
+      "Whole-class work", "----"),
+    sectionRow("II. NEW LESSON — Duration: ………"),
+    stepRow(["1. Warm-up"],
+      [fp("This or that? I show two pictures: rice OR bread? football OR fanorona? Point at your choice — fast!")],
+      [fp("Point at their choice.")], "Using visual aids", "Preference cards"),
+    stepRow(["2. Presentation"],
+      [fp("Today we are going to learn a new lesson called: « I’d rather…, because… ». By the end of this lesson, you will choose like a champion — and explain WHY!")],
+      [fp("Listen.")], "Whole-class work", "----"),
+    stepRow(["3. Observation"],
+      [fp("Model dialogue: — Would you rather play football or watch TV? — I’d rather play football, because I love running! — And Soa? — She’d rather read, because stories make her travel. Listen, repeat, role play.")],
+      [fp("Listen. Repeat. Role play in pairs.")],
+      "Role play", "Blackboard"),
+    stepRow(["4. Analysis"],
+      [fp("Look: I’d rather = I would rather. After “I’d rather”: the verb WITHOUT “to” (I’d rather play — not “to play”!). To compare: I’d rather walk THAN take the bus. And “because” gives the reason: the answer to WHY?")],
+      [fp("Find the rules with the teacher."),
+       fp("E.A.: I’d rather + infinitive without to; because + reason.")],
+      "Eliciting technique", "Blackboard"),
+    stepRow(["5. Synthesis"],
+      [fp("So: Would you rather X or Y? → I’d rather X (than Y), because… Three tools together: the WH-questions (session 1), the gerund (session 2) and I’d rather + because (today): you can now talk about all your preferences!")],
+      [fp("Listen. Repeat. Copy.")], "Whole-class work", "Blackboard"),
+    stepRow(["6. Practice"],
+      [fp("The preference chain: each student draws a card (two pictures) and asks their neighbour: “Would you rather … or …?” The neighbour answers with “I’d rather…, because…” and draws the next card!")],
+      [fp("Ask and answer in a chain."),
+       pAns("E.A.: Would you rather sing or dance? — I’d rather dance, because music moves my feet!",
+        ["I’d rather dance"], { size: SZ.FICHE })],
+      "Using game", "Preference cards"),
+    stepRow(["III. Evaluation", "Duration: ………"],
+      [fp("1. Correct the sentence: “I’d rather to sleep.”"),
+       fp("2. Answer with a reason: Would you rather live in the city or in the country?")],
+      [fp("Answer."),
+       pAns("E.A.: I’d rather sleep (no “to”!); I’d rather live in the country, because the air is pure!",
+        ["I’d rather sleep"], { size: SZ.FICHE })],
+      "Individual work", "----"),
+  ];
+  return fiche(3, TOTAL, meta, rows, "s3");
+}
+function lessonS3() {
+  return [
+    p([run("LESSON OF THE DAY — SESSION 3", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("I’D RATHER…, BECAUSE…", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    box("THE PREFERENCE MACHINE", [
+      bullet([...kw("Would you rather play or read?", "oude iou râdheur pléi or ride")]),
+      bullet([run("→ I’d rather play", { bold: true, color: C.BLUE }), run(" (than read)"), run(", because I love moving!", { bold: true, color: C.RED })], { after: 20 }),
+    ]),
+    p("", { after: 60 }),
+    p([run("The two rules:", { bold: true })], { after: 50 }),
+    p("• I’d rather (= I would rather) + verb WITHOUT “to”: I’d rather walk. ✔ — I’d rather to walk ✘;"),
+    p("• because + the reason: it answers the question WHY?"),
+    p("", { after: 60 }),
+    p([run("More examples:", { bold: true })], { after: 50 }),
+    bullet([run("I’d rather eat rice than bread, ", { bold: true, color: C.BLUE }), run("because rice gives me energy!")]),
+    bullet([run("She’d rather sing than dance, ", { bold: true, color: C.BLUE }), run("because her voice is beautiful.")]),
+    bullet([run("We’d rather walk to school, ", { bold: true, color: C.BLUE }), run("because the bus is full!")]),
+    p("", { after: 60 }),
+    box("MY PREFERENCES TOOLBOX (Sessions 1–3)", [
+      p("WH-questions to ask → the gerund for likes (I love swimming!) → I’d rather + because to choose and explain. You are ready to talk about yourself!", { after: 40 }),
+    ]),
+  ];
+}
+
+// ---------- S4 — Feelings vocabulary ----------
+function ficheS4() {
+  const meta = META("The feelings — happy, sad, excited…",
+    "By the end of the lesson, learners will be able to name feelings and match them with faces (emoji).",
+    "4 / 16", "emoji cards, pictures");
+  const rows = [
+    stepRow(["I. Review", "Duration: ………"],
+      [fp("Answer these questions:"),
+       fp("1. Correct: “I’d rather to play.”"),
+       fp("2. Complete: I love (swim)… ; Would you rather sing … dance?")],
+      [fp("Answer."),
+       fp("E.A.: I’d rather play; swimming; or.")],
       "Individual work", "----"),
     sectionRow("II. NEW LESSON — Duration: ………"),
     stepRow(["1. Warm-up"],
@@ -141,11 +363,11 @@ function ficheS1() {
         ["I feel happy!"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(1, TOTAL, meta, rows, "s1");
+  return fiche(4, TOTAL, meta, rows, "s4");
 }
-function lessonS1() {
+function lessonS4() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 1", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 4", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE FEELINGS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_feelings.png", 420, 768 / 1408),
     p([run("How do I feel today?", { bold: true })], { after: 50 }),
@@ -170,10 +392,10 @@ function lessonS1() {
 }
 
 // ---------- S2 — Asking about feelings ----------
-function ficheS2() {
+function ficheS5() {
   const meta = META("You look sad… What happened?",
     "By the end of the lesson, learners will be able to ask about other people’s feelings and react kindly.",
-    "2 / 13", "emoji cards");
+    "5 / 16", "emoji cards");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -215,11 +437,11 @@ function ficheS2() {
         ["What’s wrong?"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(2, TOTAL, meta, rows, "s2");
+  return fiche(5, TOTAL, meta, rows, "s5");
 }
-function lessonS2() {
+function lessonS5() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 2", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 5", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("ASKING ABOUT FEELINGS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE CARING QUESTIONS", [
       bullet([...kw("You look + adjective:", "iou louk"), run("  "), run("You look sad. You look tired.", { bold: true, color: C.BLUE })]),
@@ -242,10 +464,10 @@ function lessonS2() {
 }
 
 // ---------- S3 — Listening: the feelings dialogue ----------
-function ficheS3() {
+function ficheS6() {
   const meta = META("Listening — the feelings dialogue",
     "By the end of the lesson, learners will be able to understand the gist and details of a dialogue about feelings and role play it.",
-    "3 / 13", "audio (QR code), dialogue in the book");
+    "6 / 16", "audio (QR code), dialogue in the book");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -288,11 +510,11 @@ function ficheS3() {
         ["Soa won the game"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(3, TOTAL, meta, rows, "s3");
+  return fiche(6, TOTAL, meta, rows, "s6");
 }
-function lessonS3() {
+function lessonS6() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 3", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 6", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE FEELINGS DIALOGUE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     feelingsDialogueBox(),
     p("", { after: 60 }),
@@ -307,10 +529,10 @@ function lessonS3() {
 }
 
 // ---------- S4 — Present continuous (temporary facts) ----------
-function ficheS4() {
+function ficheS7() {
   const meta = META("The present continuous — You are smiling!",
     "By the end of the lesson, learners will be able to use the present continuous to describe temporary facts and feelings.",
-    "4 / 13", "the dialogue of session 3");
+    "7 / 16", "the dialogue of session 6");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -353,11 +575,11 @@ function ficheS4() {
         ["is sleeping"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(4, TOTAL, meta, rows, "s4");
+  return fiche(7, TOTAL, meta, rows, "s7");
 }
-function lessonS4() {
+function lessonS7() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 4", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 7", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE PRESENT CONTINUOUS (NOW!)", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE FORM: BE + VERB-ING", [
       bullet([run("I "), run("am smiling", { bold: true, color: C.RED }), run(".   You / We / They "), run("are laughing", { bold: true, color: C.RED }), run(".   He / She "), run("is crying", { bold: true, color: C.RED }), run(".")]),
@@ -379,10 +601,10 @@ function lessonS4() {
 }
 
 // ---------- S5 — Simple past (1) ----------
-function ficheS5() {
+function ficheS8() {
   const meta = META("The simple past (1) — was, were and the -ed verbs",
     "By the end of the lesson, learners will be able to talk about yesterday with was/were and regular verbs in -ed.",
-    "5 / 13", "the dialogue of session 3");
+    "8 / 16", "the dialogue of session 6");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -424,11 +646,11 @@ function ficheS5() {
         ["I was tired"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(5, TOTAL, meta, rows, "s5");
+  return fiche(8, TOTAL, meta, rows, "s8");
 }
-function lessonS5() {
+function lessonS8() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 5", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 8", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE SIMPLE PAST (1): WAS, WERE, -ED", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("TO BE IN THE PAST", [
       bullet([run("I / he / she / it → "), run("WAS", { bold: true, color: C.RED }), run("  :  "), ...kw("Yesterday I was tired.", "yèsteurdéi aï ouoz taïeurde")]),
@@ -448,10 +670,10 @@ function lessonS5() {
 }
 
 // ---------- S6 — Simple past (2) ----------
-function ficheS6() {
+function ficheS9() {
   const meta = META("The simple past (2) — won, lost, went… and the feelings games",
     "By the end of the lesson, learners will be able to use common irregular past forms and tell what happened.",
-    "6 / 13", "emoji cards, quiz quiz trade cards");
+    "9 / 16", "emoji cards, quiz quiz trade cards");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -493,11 +715,11 @@ function ficheS6() {
         ["won, went, ate, lost"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(6, TOTAL, meta, rows, "s6");
+  return fiche(9, TOTAL, meta, rows, "s9");
 }
-function lessonS6() {
+function lessonS9() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 6", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 9", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE SIMPLE PAST (2): THE REBEL VERBS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE FIRST SIX REBELS (learn them by heart!)", [
       bullet([run("win → "), run("won", { bold: true, color: C.RED }), run("  [ouonne]   lose → "), run("lost", { bold: true, color: C.RED }), run("  [loste]   go → "), run("went", { bold: true, color: C.RED }), run("  [ouènnte]")]),
@@ -518,10 +740,10 @@ function lessonS6() {
 }
 
 // ---------- S7 — Weekend activities ----------
-function ficheS7() {
+function ficheS10() {
   const meta = META("The weekend and holiday activities",
     "By the end of the lesson, learners will be able to name weekend activities: chores, hobbies, sports and transport.",
-    "7 / 13", "picture of the weekend activities");
+    "10 / 16", "picture of the weekend activities");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -563,11 +785,11 @@ function ficheS7() {
         ["on foot"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(7, TOTAL, meta, rows, "s7");
+  return fiche(10, TOTAL, meta, rows, "s10");
 }
-function lessonS7() {
+function lessonS10() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 7", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 10", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE WEEKEND ACTIVITIES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_weekend.png", 420, 768 / 1408),
     p([run("The four families of the weekend:", { bold: true })], { after: 50 }),
@@ -589,10 +811,10 @@ function lessonS7() {
 }
 
 // ---------- S8 — Listening: the plans passage ----------
-function ficheS8() {
+function ficheS11() {
   const meta = META("Listening — my weekend plans",
     "By the end of the lesson, learners will be able to understand the gist and details of an oral passage about future plans.",
-    "8 / 13", "audio (QR code), passage in the book");
+    "11 / 16", "audio (QR code), passage in the book");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -637,11 +859,11 @@ function ficheS8() {
         ["grandmother on Sunday"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(8, TOTAL, meta, rows, "s8");
+  return fiche(11, TOTAL, meta, rows, "s11");
 }
-function lessonS8() {
+function lessonS11() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 8", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 11", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("MY WEEKEND PLANS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     plansTextBox(),
     p("", { after: 60 }),
@@ -656,10 +878,10 @@ function lessonS8() {
 }
 
 // ---------- S9 — Be going to ----------
-function ficheS9() {
+function ficheS12() {
   const meta = META("Be going to — my plans",
     "By the end of the lesson, learners will be able to express future plans with “be going to” + infinitive.",
-    "9 / 13", "the passage of session 8");
+    "12 / 16", "the passage of session 11");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -701,11 +923,11 @@ function ficheS9() {
         ["I am going to"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(9, TOTAL, meta, rows, "s9");
+  return fiche(12, TOTAL, meta, rows, "s12");
 }
-function lessonS9() {
+function lessonS12() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 9", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 12", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("BE GOING TO — THE PLAN FUTURE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE FORM: BE + GOING TO + VERB", [
       bullet([run("I "), run("am going to", { bold: true, color: C.RED }), run(" sweep the yard.")]),
@@ -727,10 +949,10 @@ function lessonS9() {
 }
 
 // ---------- S10 — Will vs be going to + for/on ----------
-function ficheS10() {
+function ficheS13() {
   const meta = META("Will (prediction) vs be going to (plan) — and FOR / ON",
     "By the end of the lesson, learners will be able to choose between will and be going to, and use the time prepositions for and on.",
-    "10 / 13", "the passage of session 8");
+    "13 / 16", "the passage of session 11");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -773,11 +995,11 @@ function ficheS10() {
         ["will be"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(10, TOTAL, meta, rows, "s10");
+  return fiche(13, TOTAL, meta, rows, "s13");
 }
-function lessonS10() {
+function lessonS13() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 10", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 13", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("WILL OR BE GOING TO?", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE TWO FUTURES FACE TO FACE", [
       bullet([run("BE GOING TO", { bold: true, color: C.RED }), run(" = the PLAN (decided before): "), run("We are going to travel to Antsirabe for Easter.", { bold: true, color: C.BLUE })]),
@@ -799,10 +1021,10 @@ function lessonS10() {
 }
 
 // ---------- S11 — Reading the e-mail (1) ----------
-function ficheS11() {
+function ficheS14() {
   const meta = META("Reading (1) — the e-mail: prediction and gist",
     "By the end of the lesson, learners will be able to predict the content of an e-mail from its subject, read it accurately and find its gist.",
-    "11 / 13", "e-mail in the book, audio (QR code)");
+    "14 / 16", "e-mail in the book, audio (QR code)");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -846,11 +1068,11 @@ function ficheS11() {
         ["From, To, Subject"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(11, TOTAL, meta, rows, "s11");
+  return fiche(14, TOTAL, meta, rows, "s14");
 }
-function lessonS11() {
+function lessonS14() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 11", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 14", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("READING: THE E-MAIL (1)", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     emailTextBox(),
     p("", { after: 60 }),
@@ -866,10 +1088,10 @@ function lessonS11() {
 }
 
 // ---------- S12 — Reading the e-mail (2) ----------
-function ficheS12() {
+function ficheS15() {
   const meta = META("Reading (2) — the e-mail: details and guess the person",
     "By the end of the lesson, learners will be able to answer detailed questions on the e-mail and match descriptions with people.",
-    "12 / 13", "e-mail in the book");
+    "15 / 16", "e-mail in the book");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -914,11 +1136,11 @@ function ficheS12() {
         ["it will be delicious"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(12, TOTAL, meta, rows, "s12");
+  return fiche(15, TOTAL, meta, rows, "s15");
 }
-function lessonS12() {
+function lessonS15() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 12", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 15", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("READING: THE E-MAIL (2) — DETAILS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE DETAILS OF NIRY’S E-MAIL", [
       bullet([run("Feeling: "), run("great — the holidays are coming!", { bold: true, color: C.BLUE })]),
@@ -941,10 +1163,10 @@ function lessonS12() {
 }
 
 // ---------- S13 — Writing ----------
-function ficheS13() {
+function ficheS16() {
   const meta = META("Writing — my plans paragraph",
     "By the end of the lesson, learners will be able to write a short paragraph about their feelings and plans, and share it.",
-    "13 / 13", "notebooks");
+    "16 / 16", "notebooks");
   const rows = [
     stepRow(["I. Review", "Duration: ………"],
       [fp("Answer these questions:"),
@@ -987,11 +1209,11 @@ function ficheS13() {
         ["be going to; will"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(13, TOTAL, meta, rows, "s13");
+  return fiche(16, TOTAL, meta, rows, "s16");
 }
-function lessonS13() {
+function lessonS16() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 13", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 16", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("WRITING: MY PLANS PARAGRAPH", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE FOUR BUILDING QUESTIONS", [
       bullet([run("WHAT? ", { bold: true, color: C.RED }), run("I am going to play football…")]),
@@ -1053,21 +1275,24 @@ function exercises() {
     pr([run("Exercise 4 (4 points). ", { bold: true }), run("Will or be going to? 1. Tickets bought! We … travel on Monday. 2. Look at the clouds: it … rain. 3. I think our team … win. 4. My plan: I … sweep the yard on Saturday.")]),
     p("", { after: 120 }),
     pr([run("Exercise 5 (4 points). ", { bold: true }), run("Write four sentences about your next weekend: what, who with, where, when (use going to, will, a feeling and for/on).")]),
+    p("", { after: 120 }),
+    pr([run("Bonus exercise (+2). ", { bold: true }), run("Preferences: 1. Complete: I enjoy (play)… fanorona. 2. Correct: “I’d rather to read.” 3. Answer with because: Would you rather live in the city or in the country?")]),
     p("", { after: 140 }),
-    p([run("Total: 20 points", { bold: true })], { after: 160 }),
+    p([run("Total: 20 points (+2 bonus)", { bold: true })], { after: 160 }),
     p([run("ANSWER KEY", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
     pAns("Exercise 1: happy/proud — scared — tired — worried (1 point each).", ["happy/proud"]),
     pAns("Exercise 2: 1. is sleeping  2. are smiling  3. are having  4. is not crying (1 point each).", ["is sleeping"]),
     pAns("Exercise 3: 1. was  2. helped  3. won  4. went (1 point each).", ["was"]),
     pAns("Exercise 4: 1. are going to  2. will  3. will  4. am going to (1 point each).", ["are going to"]),
     pAns("Exercise 5: four correct sentences with the checklist (1 point each).", ["four correct sentences"]),
+    pAns("Bonus: 1. playing  2. I’d rather read  3. I’d rather live in…, because… (correct reason).", ["playing"]),
   ];
 }
 
 // ---------- S14 — révision ----------
 function revision() {
   return [
-    B.bookmarkTitle("s14", "SESSION 14 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s17", "SESSION 17 / 81", { bold: true, size: 28, after: 60 }),
     p([run("REVISION — UNIT 1: PERSONAL COMMUNICATION", { bold: true, size: 26 })], { center: true, after: 140 }),
     p([run("Now answer:", { bold: true })], { after: 80 }),
     p("1. Name six feelings with their emoji."),
@@ -1090,16 +1315,20 @@ function revision() {
     pAns("E.A.: From/To/Subject, Dear…, the body, Your friend + name.", ["From/To/Subject"]),
     p("10. Say one plan and one prediction about next weekend."),
     pAns("E.A.: I am going to play football; I think it will be sunny!", ["I am going to"]),
+    p("11. Ask your neighbour two personal questions with WH-words."),
+    pAns("E.A.: Where do you live? When is your birthday?", ["Where do you live?"]),
+    p("12. Complete with a reason: I’d rather (walk) … to school, … the bus is full!"),
+    pAns("E.A.: I’d rather walk to school, because the bus is full!", ["because"]),
   ];
 }
 
 // ---------- S15 — test ----------
 function testPaper() {
   return [
-    B.bookmarkTitle("s15", "SESSION 15 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s18", "SESSION 18 / 81", { bold: true, size: 28, after: 60 }),
     p([run("T8 TEST PAPER — UNIT 1: PERSONAL COMMUNICATION", { bold: true, size: 26 })], { center: true, after: 100 }),
     pr([run("Duration: ………        ", { bold: true }), run("Total: 20 points", { bold: true })], { center: true, after: 160 }),
-    pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: your friend looks worried. Ask two caring questions, listen, and react kindly (two exchanges).")]),
+    pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: a) Ask your friend one personal question with a WH-word, then answer theirs. b) Your friend looks worried: ask a caring question and react kindly. c) Say one preference: I’d rather…, because…")]),
     p("", { after: 120 }),
     pr([run("Exercise 2 (4 points). ", { bold: true }), run("Complete: 1. Look! They … (dance). 2. I … (feel) great today. 3. Yesterday she … (be) sick. 4. We … (see) a zebu cart this morning.")]),
     p("", { after: 120 }),
@@ -1110,7 +1339,7 @@ function testPaper() {
     pr([run("Exercise 5 (4 points). ", { bold: true }), run("Write a paragraph (4 sentences) about your plans for the next holiday: what, who with, where, when — with one feeling and one prediction.")]),
     p("", { after: 140 }),
     p([run("ANSWER KEY", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
-    pAns("Exercise 1: two correct caring questions + kind reaction (2+2 points).", ["caring questions"]),
+    pAns("Exercise 1: correct WH-question (1 pt) + caring question and kind reaction (2 pts) + preference with because (1 pt).", ["caring question"]),
     pAns("Exercise 2: 1. are dancing  2. am feeling / feel  3. was  4. saw (1 point each).", ["are dancing"]),
     pAns("Exercise 3: 1. will  2. are going to  3. will  4. am going to (1 point each).", ["will"]),
     pAns("Exercise 4: Toamasina — the brother — cook a big dinner with the aunt — “I think it will be delicious!” (1 point each).", ["Toamasina"]),
@@ -1134,11 +1363,17 @@ module.exports = function unit1() {
     ...ficheS11(), pageBreak(), ...lessonS11(), pageBreak(),
     ...ficheS12(), pageBreak(), ...lessonS12(), pageBreak(),
     ...ficheS13(), pageBreak(), ...lessonS13(), pageBreak(),
+    ...ficheS14(), pageBreak(), ...lessonS14(), pageBreak(),
+    ...ficheS15(), pageBreak(), ...lessonS15(), pageBreak(),
+    ...ficheS16(), pageBreak(), ...lessonS16(), pageBreak(),
     ...bigLesson(), pageBreak(),
     ...exercises(), pageBreak(),
     ...revision(), pageBreak(),
     ...testPaper(), pageBreak(),
     ...iCan("UNIT 1", COLOR, [
+      "I can socialize and ask personal questions with the WH-words.",
+      "I can say my likes and dislikes with the gerund: I love swimming!",
+      "I can state a preference and justify it: I’d rather…, because…",
       "I can name the feelings and say how I feel.",
       "I can ask caring questions: What’s wrong? What happened?",
       "I can use the present continuous: You are smiling now!",

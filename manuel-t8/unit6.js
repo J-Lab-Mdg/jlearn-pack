@@ -1,4 +1,4 @@
-// T8 — UNIT 6 — MEANS OF COMMUNICATION (10 séances + révision + test) — Sessions 55 à 66 / 78
+// T8 — UNIT 6 — MEANS OF COMMUNICATION (10 séances + révision + test) — Sessions 58 à 69 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
@@ -6,7 +6,7 @@ const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "2E7D32"; // vert forêt
 const SHADE = "D4EFDF";
-const TOTAL = 78;
+const TOTAL = 81;
 const AUDIO = {
   radio: "https://drive.google.com/uc?export=download&id=1VqzZdDs7oLWVs1TX0p9Uv-5X1Fy0SC0M",
   phone: "https://drive.google.com/uc?export=download&id=1GOILpKLd4lKZtlFnzpem4GJjjyky7SZK",
@@ -141,11 +141,11 @@ function ficheS55() {
         ["Nothing much!"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(55, TOTAL, meta, rows, "s55");
+  return fiche(58, TOTAL, meta, rows, "s58");
 }
 function lessonS55() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 55", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 58", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE MEANS OF SHARING THE NEWS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_media.png", 420, 768 / 1376),
     box("THE MEANS", [
@@ -215,11 +215,11 @@ function ficheS56() {
         ["the library"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(56, TOTAL, meta, rows, "s56");
+  return fiche(59, TOTAL, meta, rows, "s59");
 }
 function lessonS56() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 56", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 59", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE RADIO NEWS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     radioNewsBox(),
     p("", { after: 60 }),
@@ -286,11 +286,11 @@ function ficheS57() {
         ["Did the team win"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(57, TOTAL, meta, rows, "s57");
+  return fiche(60, TOTAL, meta, rows, "s60");
 }
 function lessonS57() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 57", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 60", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE SIMPLE PAST OF THE JOURNALISTS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE REGULAR VERBS (-ED)", [
       bullet([run("damage → damaged; repair → repaired; open → opened; welcome → welcomed; listen → listened", { bold: true, color: C.BLUE })], { after: 20 }),
@@ -358,11 +358,11 @@ function ficheS58() {
         ["was repaired"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(58, TOTAL, meta, rows, "s58");
+  return fiche(61, TOTAL, meta, rows, "s61");
 }
 function lessonS58() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 58", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 61", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE PASSIVE VOICE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("ACTIVE OR PASSIVE?", [
       bullet([run("ACTIVE — the actor first: ", { bold: true }), run("The villagers repaired the bridge.", { bold: true, color: C.BLUE })]),
@@ -432,11 +432,11 @@ function ficheS59() {
         ["log out"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(59, TOTAL, meta, rows, "s59");
+  return fiche(62, TOTAL, meta, rows, "s62");
 }
 function lessonS59() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 59", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 62", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("SOCIAL MEDIA AND THE SECRET CODE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE SOCIAL MEDIA ACTIONS (in order!)", [
       vocab("to log in", "tou logue inne", "I enter"),
@@ -504,11 +504,11 @@ function ficheS60() {
         ["he is out"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(60, TOTAL, meta, rows, "s60");
+  return fiche(63, TOTAL, meta, rows, "s63");
 }
 function lessonS60() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 60", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 63", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE PHONE CALL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     phoneDialogueBox(),
     p("", { after: 60 }),
@@ -578,11 +578,11 @@ function ficheS61() {
         ["See you today"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(61, TOTAL, meta, rows, "s61");
+  return fiche(64, TOTAL, meta, rows, "s64");
 }
 function lessonS61() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 61", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 64", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("FROM THE TEXT TO THE CALL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_phone.png", 420, 768 / 1376),
     box("THE CONVERSION METHOD", [
@@ -649,11 +649,11 @@ function ficheS62() {
         ["headlines"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(62, TOTAL, meta, rows, "s62");
+  return fiche(65, TOTAL, meta, rows, "s65");
 }
 function lessonS62() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 62", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 65", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("READING: THE NEWSPAPER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE PARTS OF THE NEWSPAPER", [
       vocab("the front page", "dhe freunnte péidj", "page one — the shop window!"),
@@ -723,11 +723,11 @@ function ficheS63() {
         ["Dear"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(63, TOTAL, meta, rows, "s63");
+  return fiche(66, TOTAL, meta, rows, "s66");
 }
 function lessonS63() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 63", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 66", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE LETTER AND THE EMAIL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     letterBox(),
     p("", { after: 60 }),
@@ -794,11 +794,11 @@ function ficheS64() {
         ["complete letter"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(64, TOTAL, meta, rows, "s64");
+  return fiche(67, TOTAL, meta, rows, "s67");
 }
 function lessonS64() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 64", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 67", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("WRITING: MY NEWS LETTER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE WRITING RECIPE", [
       bullet([run("1. The format: ", { bold: true }), run("five parts for the letter — To / Subject for the email", { bold: true, color: C.BLUE })]),
@@ -871,7 +871,7 @@ function exercises() {
 // ---------- S65 — révision ----------
 function revision() {
   return [
-    B.bookmarkTitle("s65", "SESSION 65 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s68", "SESSION 68 / 81", { bold: true, size: 28, after: 60 }),
     p([run("REVISION — UNIT 6: MEANS OF COMMUNICATION", { bold: true, size: 26 })], { center: true, after: 140 }),
     p([run("Now answer:", { bold: true })], { after: 80 }),
     p("1. Ask the news in three ways."),
@@ -900,7 +900,7 @@ function revision() {
 // ---------- S66 — test ----------
 function testPaper() {
   return [
-    B.bookmarkTitle("s66", "SESSION 66 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s69", "SESSION 69 / 81", { bold: true, size: 28, after: 60 }),
     p([run("T8 TEST PAPER — UNIT 6: MEANS OF COMMUNICATION", { bold: true, size: 26 })], { center: true, after: 100 }),
     pr([run("Duration: ………        ", { bold: true }), run("Total: 20 points", { bold: true })], { center: true, after: 160 }),
     pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: act a phone call in pairs — greet, ask to speak to somebody, leave a message, say goodbye.")]),

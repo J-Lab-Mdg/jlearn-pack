@@ -1,4 +1,4 @@
-// T8 — UNIT 7 — MY CITY, MY COUNTRY (10 séances + révision + test) — Sessions 67 à 78 / 78
+// T8 — UNIT 7 — MY CITY, MY COUNTRY (10 séances + révision + test) — Sessions 70 à 81 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
@@ -6,7 +6,7 @@ const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "D35400"; // orange
 const SHADE = "FAE5D3";
-const TOTAL = 78;
+const TOTAL = 81;
 const AUDIO = {
   city: "https://drive.google.com/uc?export=download&id=1FTl7mLi_0HOEZKXdZuBJQ86eeQUFXZIA",
   directions: "https://drive.google.com/uc?export=download&id=1fBB7BPOsu2fFrIZj26bUjmpxRBVhLSSu",
@@ -137,11 +137,11 @@ function ficheS67() {
         ["the town hall"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(67, TOTAL, meta, rows, "s67");
+  return fiche(70, TOTAL, meta, rows, "s70");
 }
 function lessonS67() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 67", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 70", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE BUILDINGS OF THE CITY AND OF THE COUNTRY", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_city.png", 420, 768 / 1376),
     box("IN THE CITY", [
@@ -214,11 +214,11 @@ function ficheS68() {
         ["next to the church"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(68, TOTAL, meta, rows, "s68");
+  return fiche(71, TOTAL, meta, rows, "s71");
 }
 function lessonS68() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 68", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 71", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("MY CITY AND MY VILLAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     cityPassageBox(),
     p("", { after: 60 }),
@@ -285,11 +285,11 @@ function ficheS69() {
         ["between"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(69, TOTAL, meta, rows, "s69");
+  return fiche(72, TOTAL, meta, rows, "s72");
 }
 function lessonS69() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 69", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 72", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE PREPOSITIONS OF PLACE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE SIX CHAMPIONS", [
       vocab("next to", "nèkste tou", "just beside"),
@@ -361,11 +361,11 @@ function ficheS70() {
         ["where"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(70, TOTAL, meta, rows, "s70");
+  return fiche(73, TOTAL, meta, rows, "s73");
 }
 function lessonS70() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 70", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 73", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE RELATIVE CLAUSE WITH WHERE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE RULE: PLACE + WHERE + SUBJECT + VERB", [
       bullet([run("A library is a place where we read books.", { bold: true, color: C.BLUE })]),
@@ -435,11 +435,11 @@ function ficheS71() {
         ["Go straight on!"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(71, TOTAL, meta, rows, "s71");
+  return fiche(74, TOTAL, meta, rows, "s74");
 }
 function lessonS71() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 71", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 74", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("ASKING AND GIVING DIRECTIONS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     directionsDialogueBox(),
     p("", { after: 60 }),
@@ -510,11 +510,11 @@ function ficheS72() {
         ["You’re welcome!"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(72, TOTAL, meta, rows, "s72");
+  return fiche(75, TOTAL, meta, rows, "s75");
 }
 function lessonS72() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 72", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 75", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE MAP GAME", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_map.png", 420, 768 / 1408),
     box("HOW TO PLAY", [
@@ -584,11 +584,11 @@ function ficheS73() {
         ["busier than"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(73, TOTAL, meta, rows, "s73");
+  return fiche(76, TOTAL, meta, rows, "s76");
 }
 function lessonS73() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 73", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 76", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("CITY AND COUNTRY, HERE AND THERE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("IN MADAGASCAR", [
       bullet([run("The village: ", { bold: true }), run("red-earth houses, rice fields, a well, zebus on the road!", { bold: true, color: C.BLUE })]),
@@ -655,11 +655,11 @@ function ficheS74() {
         ["false"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(74, TOTAL, meta, rows, "s74");
+  return fiche(77, TOTAL, meta, rows, "s77");
 }
 function lessonS74() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 74", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 77", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("READING: CITY AND COUNTRY", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     cityCountryTextBox(),
     p("", { after: 60 }),
@@ -727,11 +727,11 @@ function ficheS75() {
         ["a place where"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(75, TOTAL, meta, rows, "s75");
+  return fiche(78, TOTAL, meta, rows, "s78");
 }
 function lessonS75() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 75", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 78", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE PLACE OF MY DREAMS (1): DRAW AND TELL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE DRAWING RECIPE", [
       bullet([run("1. The place: ", { bold: true }), run("a city? a village? by the sea? in the hills?", { italic: true })]),
@@ -799,11 +799,11 @@ function ficheS76() {
         ["where"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(76, TOTAL, meta, rows, "s76");
+  return fiche(79, TOTAL, meta, rows, "s79");
 }
 function lessonS76() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 76", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 79", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE PLACE OF MY DREAMS (2): THE PARAGRAPH", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE PARAGRAPH RECIPE (6-8 sentences)", [
       bullet([run("1. Present the place: ", { bold: true }), run("The place of my dreams is…", { italic: true })]),
@@ -874,7 +874,7 @@ function exercises() {
 // ---------- S77 — révision ----------
 function revision() {
   return [
-    B.bookmarkTitle("s77", "SESSION 77 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s80", "SESSION 80 / 81", { bold: true, size: 28, after: 60 }),
     p([run("REVISION — UNIT 7: MY CITY, MY COUNTRY", { bold: true, size: 26 })], { center: true, after: 140 }),
     p([run("Now answer:", { bold: true })], { after: 80 }),
     p("1. Name five city buildings and three country places."),
@@ -903,7 +903,7 @@ function revision() {
 // ---------- S78 — test ----------
 function testPaper() {
   return [
-    B.bookmarkTitle("s78", "SESSION 78 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s81", "SESSION 81 / 81", { bold: true, size: 28, after: 60 }),
     p([run("T8 TEST PAPER — UNIT 7: MY CITY, MY COUNTRY", { bold: true, size: 26 })], { center: true, after: 100 }),
     pr([run("Duration: ………        ", { bold: true }), run("Total: 20 points", { bold: true })], { center: true, after: 160 }),
     pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: role play in pairs — a tourist asks the way, you guide him on the map (question, path, arrival, polite ending).")]),

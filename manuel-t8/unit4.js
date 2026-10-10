@@ -1,4 +1,4 @@
-// T8 — UNIT 4 — FOOD (10 séances + révision + test) — Sessions 34 à 45 / 78
+// T8 — UNIT 4 — FOOD (10 séances + révision + test) — Sessions 37 à 48 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
@@ -6,7 +6,7 @@ const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "6C3483"; // violet
 const SHADE = "E8DAEF";
-const TOTAL = 78;
+const TOTAL = 81;
 const AUDIO = {
   market: "https://drive.google.com/uc?export=download&id=1GgsFjv1VNkAg77OG_w79cCqQh82malCB",
   recipe: "https://drive.google.com/uc?export=download&id=1X0HqihsoHJodaabb9zBfsHqur-atIs0b",
@@ -143,11 +143,11 @@ function ficheS34() {
         ["buy, sell, pay, bargain"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(34, TOTAL, meta, rows, "s34");
+  return fiche(37, TOTAL, meta, rows, "s37");
 }
 function lessonS34() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 34", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 37", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE FOOD AND THE SHOPS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_market.png", 420, 768 / 1376),
     box("THE VERBS OF THE MARKET", [
@@ -220,11 +220,11 @@ function ficheS35() {
         ["Here is the change"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(35, TOTAL, meta, rows, "s35");
+  return fiche(38, TOTAL, meta, rows, "s38");
 }
 function lessonS35() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 35", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 38", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("ASKING AND STATING PRICES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     marketDialogueBox(),
     p("", { after: 60 }),
@@ -291,11 +291,11 @@ function ficheS36() {
         ["any"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(36, TOTAL, meta, rows, "s36");
+  return fiche(39, TOTAL, meta, rows, "s39");
 }
 function lessonS36() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 36", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 39", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("COUNTABLE OR UNCOUNTABLE? SOME, ANY, NO", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("TWO FAMILIES OF NOUNS", [
       bullet([run("COUNTABLE (1, 2, 3…): ", { bold: true }), run("a tomato → two tomatoes; an egg → six eggs; a banana → ten bananas", { bold: true, color: C.BLUE })]),
@@ -363,11 +363,11 @@ function ficheS37() {
         ["more expensive than"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(37, TOTAL, meta, rows, "s37");
+  return fiche(40, TOTAL, meta, rows, "s40");
 }
 function lessonS37() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 37", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 40", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("COMPARATIVES AND SUPERLATIVES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("SHORT ADJECTIVES: -ER / THE -EST", [
       bullet([run("cheap → cheaper than → the cheapest", { bold: true, color: C.BLUE })]),
@@ -436,11 +436,11 @@ function ficheS38() {
         ["How about"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(38, TOTAL, meta, rows, "s38");
+  return fiche(41, TOTAL, meta, rows, "s41");
 }
 function lessonS38() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 38", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 41", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("BARGAINING PRICES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE TWO BARGAINING KEYS", [
       bullet([...kw("How about (lower amount)?", "haou ebaoute"), run("  —  How about seven thousand ariary?")]),
@@ -508,11 +508,11 @@ function ficheS39() {
         ["beef"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(39, TOTAL, meta, rows, "s39");
+  return fiche(42, TOTAL, meta, rows, "s42");
 }
 function lessonS39() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 39", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 42", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE KITCHEN IN ENGLISH", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_cooking.png", 420, 768 / 1376),
     box("THE INGREDIENTS", [
@@ -586,11 +586,11 @@ function ficheS40() {
         ["verb first"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(40, TOTAL, meta, rows, "s40");
+  return fiche(43, TOTAL, meta, rows, "s43");
 }
 function lessonS40() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 40", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 43", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE RECIPE AND THE IMPERATIVES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     recipeBox(),
     p("", { after: 60 }),
@@ -659,11 +659,11 @@ function ficheS41() {
         ["false"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(41, TOTAL, meta, rows, "s41");
+  return fiche(44, TOTAL, meta, rows, "s44");
 }
 function lessonS41() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 41", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 44", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("READING: THE BANANAS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     bananaDialogueBox(),
     p("", { after: 60 }),
@@ -727,11 +727,11 @@ function ficheS42() {
         ["First, peel"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(42, TOTAL, meta, rows, "s42");
+  return fiche(45, TOTAL, meta, rows, "s45");
 }
 function lessonS42() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 42", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 45", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("WRITING: MY RECIPE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE RECIPE SKELETON", [
       bullet([run("1. The title: ", { bold: true }), run("My mother’s chicken and rice", { italic: true })]),
@@ -804,11 +804,11 @@ function ficheS43() {
         ["How much is"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(43, TOTAL, meta, rows, "s43");
+  return fiche(46, TOTAL, meta, rows, "s46");
 }
 function lessonS43() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 43", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 46", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("WRITING: MY MARKET DIALOGUE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE DIALOGUE PLAN", [
       bullet([run("1. Greet: ", { bold: true }), run("Good morning! Can I help you?", { italic: true })]),
@@ -885,7 +885,7 @@ function exercises() {
 // ---------- S44 — révision ----------
 function revision() {
   return [
-    B.bookmarkTitle("s44", "SESSION 44 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s47", "SESSION 47 / 81", { bold: true, size: 28, after: 60 }),
     p([run("REVISION — UNIT 4: FOOD", { bold: true, size: 26 })], { center: true, after: 140 }),
     p([run("Now answer:", { bold: true })], { after: 80 }),
     p("1. Ask the price of a kilo of rice in two ways."),
@@ -914,7 +914,7 @@ function revision() {
 // ---------- S45 — test ----------
 function testPaper() {
   return [
-    B.bookmarkTitle("s45", "SESSION 45 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s48", "SESSION 48 / 81", { bold: true, size: 28, after: 60 }),
     p([run("T8 TEST PAPER — UNIT 4: FOOD", { bold: true, size: 26 })], { center: true, after: 100 }),
     pr([run("Duration: ………        ", { bold: true }), run("Total: 20 points", { bold: true })], { center: true, after: 160 }),
     pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: act a market dialogue in pairs — ask the price, bargain, pay (the teacher listens to the expressions and the intonation).")]),

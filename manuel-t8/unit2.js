@@ -1,4 +1,4 @@
-// T8 — UNIT 2 — CLASSROOM COMMUNICATION (4 séances + révision + test) — Sessions 16 à 21 / 78
+// T8 — UNIT 2 — CLASSROOM COMMUNICATION (4 séances + révision + test) — Sessions 19 à 24 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
@@ -6,7 +6,7 @@ const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B03A2E"; // rouge brique
 const SHADE = "FADBD8";
-const TOTAL = 78;
+const TOTAL = 81;
 const AUDIO = {
   instructions: "https://drive.google.com/uc?export=download&id=1ao6ChEnrNlM2iWGbjK_OCHsqFsPaq5gG",
   borrow: "https://drive.google.com/uc?export=download&id=10e2G8fifuL61XKPNxAdvNexwV4ZauXys",
@@ -130,11 +130,11 @@ function ficheS16() {
         ["Don’t talk!"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(16, TOTAL, meta, rows, "s16");
+  return fiche(19, TOTAL, meta, rows, "s19");
 }
 function lessonS16() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 16", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 19", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE CLASSROOM INSTRUCTIONS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_stickfigures.png", 420, 768 / 1408),
     box("AFFIRMATIVE COMMANDS (verb first!)", [
@@ -207,11 +207,11 @@ function ficheS17() {
         ["thank you very much!"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(17, TOTAL, meta, rows, "s17");
+  return fiche(20, TOTAL, meta, rows, "s20");
 }
 function lessonS17() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 17", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 20", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("LENDING AND BORROWING", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     borrowDialogueBox(),
     p("", { after: 60 }),
@@ -280,11 +280,11 @@ function ficheS18() {
         ["page 10"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(18, TOTAL, meta, rows, "s18");
+  return fiche(21, TOTAL, meta, rows, "s21");
 }
 function lessonS18() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 18", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 21", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("READING: IN THE CLASSROOM", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     instructionsDialogueBox(),
     p("", { after: 60 }),
@@ -346,11 +346,11 @@ function ficheS19() {
         ["Stand up!"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(19, TOTAL, meta, rows, "s19");
+  return fiche(22, TOTAL, meta, rows, "s22");
 }
 function lessonS19() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 19", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 22", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("WRITING: MY CLASSROOM INSTRUCTIONS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE INSTRUCTION RECIPE", [
       bullet([run("1. The verb FIRST: ", { bold: true }), run("Open… Listen… Come…", { bold: true, color: C.BLUE })]),
@@ -424,7 +424,7 @@ function exercises() {
 // ---------- S20 — révision ----------
 function revision() {
   return [
-    B.bookmarkTitle("s20", "SESSION 20 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s23", "SESSION 23 / 81", { bold: true, size: 28, after: 60 }),
     p([run("REVISION — UNIT 2: CLASSROOM COMMUNICATION", { bold: true, size: 26 })], { center: true, after: 140 }),
     p([run("Now answer:", { bold: true })], { after: 80 }),
     p("1. Give five classroom instructions."),
@@ -453,7 +453,7 @@ function revision() {
 // ---------- S21 — test ----------
 function testPaper() {
   return [
-    B.bookmarkTitle("s21", "SESSION 21 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s24", "SESSION 24 / 81", { bold: true, size: 28, after: 60 }),
     p([run("T8 TEST PAPER — UNIT 2: CLASSROOM COMMUNICATION", { bold: true, size: 26 })], { center: true, after: 100 }),
     pr([run("Duration: ………        ", { bold: true }), run("Total: 20 points", { bold: true })], { center: true, after: 160 }),
     pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: perform the instructions the teacher says (four instructions, with and without “Simon says”).")]),

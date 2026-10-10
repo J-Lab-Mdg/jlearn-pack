@@ -1,4 +1,4 @@
-// T8 — UNIT 3 — DAILY LIFE (10 séances + révision + test) — Sessions 22 à 33 / 78
+// T8 — UNIT 3 — DAILY LIFE (10 séances + révision + test) — Sessions 25 à 36 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
@@ -6,7 +6,7 @@ const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B9770E"; // ocre doré
 const SHADE = "FDEBD0";
-const TOTAL = 78;
+const TOTAL = 81;
 const AUDIO = {
   kotoday: "https://drive.google.com/uc?export=download&id=1YvB7JWO-bWhYkpp-fy39Q8dIoFbop8VX",
   hobbies: "https://drive.google.com/uc?export=download&id=1lqvEl797MDvUY8vXFUtqNTjL7CrjvLU-",
@@ -129,11 +129,11 @@ function ficheS22() {
         ["fetch water"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(22, TOTAL, meta, rows, "s22");
+  return fiche(25, TOTAL, meta, rows, "s25");
 }
 function lessonS22() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 22", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 25", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE DAILY ACTIVITIES AND THE CHORES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_daily_routine.png", 420, 768 / 1376),
     box("MY DAILY HABITS (every day!)", [
@@ -206,11 +206,11 @@ function ficheS23() {
         ["He tidies"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(23, TOTAL, meta, rows, "s23");
+  return fiche(26, TOTAL, meta, rows, "s26");
 }
 function lessonS23() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 23", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 26", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE PRESENT SIMPLE: THE TENSE OF THE HABITS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     kotoDayBox(),
     p("", { after: 60 }),
@@ -277,11 +277,11 @@ function ficheS24() {
         ["I never go"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(24, TOTAL, meta, rows, "s24");
+  return fiche(27, TOTAL, meta, rows, "s27");
 }
 function lessonS24() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 24", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 27", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE FREQUENCY ADVERBS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE FREQUENCY SCALE", [
       vocab("always", "ôlouéiz", "100% — every time!"),
@@ -351,11 +351,11 @@ function ficheS25() {
         ["on foot"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(25, TOTAL, meta, rows, "s25");
+  return fiche(28, TOTAL, meta, rows, "s28");
 }
 function lessonS25() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 25", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 28", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("TRANSPORT AND SEQUENCE MARKERS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE MEANS OF TRANSPORT", [
       vocab("to go on foot = to walk", "tou gôou onne foute / tou ouôk"),
@@ -431,11 +431,11 @@ function ficheS26() {
         ["the guitar"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(26, TOTAL, meta, rows, "s26");
+  return fiche(29, TOTAL, meta, rows, "s29");
 }
 function lessonS26() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 26", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 29", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE HOBBIES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_hobbies.png", 420, 768 / 1376),
     box("SPORTS", [
@@ -505,11 +505,11 @@ function ficheS27() {
         ["go swimming"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(27, TOTAL, meta, rows, "s27");
+  return fiche(30, TOTAL, meta, rows, "s30");
 }
 function lessonS27() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 27", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 30", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("PLAY OR GO + V-ING?", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("PLAY + GAME OR SPORT", [
       bullet([run("play football, play tennis, play dominoes, play chess, play fanorona", { bold: true, color: C.BLUE })]),
@@ -582,11 +582,11 @@ function ficheS28() {
         ["so I go to bed"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(28, TOTAL, meta, rows, "s28");
+  return fiche(31, TOTAL, meta, rows, "s31");
 }
 function lessonS28() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 28", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 31", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE COORDINATORS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("FIVE LITTLE WORDS, FIVE JOBS", [
       vocab("and", "annde", "addition (+): I play football AND basketball."),
@@ -654,11 +654,11 @@ function ficheS29() {
         ["false"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(29, TOTAL, meta, rows, "s29");
+  return fiche(32, TOTAL, meta, rows, "s32");
 }
 function lessonS29() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 29", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 32", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("READING: A DAY IN LOVA’S LIFE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     lovaTextBox(),
     p("", { after: 60 }),
@@ -722,11 +722,11 @@ function ficheS30() {
         ["I always get up"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(30, TOTAL, meta, rows, "s30");
+  return fiche(33, TOTAL, meta, rows, "s33");
 }
 function lessonS30() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 30", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 33", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("WRITING: MY DAILY ROUTINE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE WRITING RECIPE", [
       bullet([run("1. The present simple: ", { bold: true }), run("I get up… I go…", { bold: true, color: C.BLUE })]),
@@ -793,11 +793,11 @@ function ficheS31() {
         ["the lie!"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(31, TOTAL, meta, rows, "s31");
+  return fiche(34, TOTAL, meta, rows, "s34");
 }
 function lessonS31() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 31", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 34", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("TWO TRUTHS AND A LIE!", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE GAME RECIPE", [
       bullet([run("1. Write your name and THREE sentences about your hobbies.", { bold: true })]),
@@ -872,7 +872,7 @@ function exercises() {
 // ---------- S32 — révision ----------
 function revision() {
   return [
-    B.bookmarkTitle("s32", "SESSION 32 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s35", "SESSION 35 / 81", { bold: true, size: 28, after: 60 }),
     p([run("REVISION — UNIT 3: DAILY LIFE", { bold: true, size: 26 })], { center: true, after: 140 }),
     p([run("Now answer:", { bold: true })], { after: 80 }),
     p("1. Name five chores."),
@@ -901,7 +901,7 @@ function revision() {
 // ---------- S33 — test ----------
 function testPaper() {
   return [
-    B.bookmarkTitle("s33", "SESSION 33 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s36", "SESSION 36 / 81", { bold: true, size: 28, after: 60 }),
     p([run("T8 TEST PAPER — UNIT 3: DAILY LIFE", { bold: true, size: 26 })], { center: true, after: 100 }),
     pr([run("Duration: ………        ", { bold: true }), run("Total: 20 points", { bold: true })], { center: true, after: 160 }),
     pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: describe your daily activities in four sentences (present simple + one frequency adverb).")]),

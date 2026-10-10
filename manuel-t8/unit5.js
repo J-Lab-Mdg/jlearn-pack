@@ -1,4 +1,4 @@
-// T8 — UNIT 5 — PREVENTIVE HEALTH (7 séances + révision + test) — Sessions 46 à 54 / 78
+// T8 — UNIT 5 — PREVENTIVE HEALTH (7 séances + révision + test) — Sessions 49 à 57 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
@@ -6,7 +6,7 @@ const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "148F77"; // vert émeraude
 const SHADE = "D1F2EB";
-const TOTAL = 78;
+const TOTAL = 81;
 const AUDIO = {
   doctor: "https://drive.google.com/uc?export=download&id=1MS58vjwIC8pcx2gs2Vv5OoDrCSkTy0jy",
   hygiene: "https://drive.google.com/uc?export=download&id=1hkJ8stehaGywBy31dwkNDZv9vfPYaNmz",
@@ -146,11 +146,11 @@ function ficheS46() {
         ["rapid recovery"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(46, TOTAL, meta, rows, "s46");
+  return fiche(49, TOTAL, meta, rows, "s49");
 }
 function lessonS46() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 46", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 49", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE COMMON ILLNESSES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE ILLNESSES", [
       vocab("a cold", "e côoulde", "atchoo!"),
@@ -225,11 +225,11 @@ function ficheS47() {
         ["has"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(47, TOTAL, meta, rows, "s47");
+  return fiche(50, TOTAL, meta, rows, "s50");
 }
 function lessonS47() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 47", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 50", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("HAVE GOT: THE HEALTH MACHINE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     doctorDialogueBox(),
     p("", { after: 60 }),
@@ -296,11 +296,11 @@ function ficheS48() {
         ["take tablets"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(48, TOTAL, meta, rows, "s48");
+  return fiche(51, TOTAL, meta, rows, "s51");
 }
 function lessonS48() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 48", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 51", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE CURES AND SHOULD", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("THE BASIC CURES", [
       vocab("to take medicine / tablets / pills / syrup", "tou téik mèdissine / tablèts / pilz / sireupe"),
@@ -373,11 +373,11 @@ function ficheS49() {
         ["will"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(49, TOTAL, meta, rows, "s49");
+  return fiche(52, TOTAL, meta, rows, "s52");
 }
 function lessonS49() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 49", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 52", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE IF CLAUSE (TYPE 1)", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     hygieneDialogueBox(),
     p("", { after: 60 }),
@@ -452,11 +452,11 @@ function ficheS50() {
         ["short messages"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(50, TOTAL, meta, rows, "s50");
+  return fiche(53, TOTAL, meta, rows, "s53");
 }
 function lessonS50() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 50", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 53", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("MY HYGIENE POSTER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_hygiene.png", 420, 768 / 1376),
     box("THE POSTER RECIPE", [
@@ -524,11 +524,11 @@ function ficheS51() {
         ["wash them well"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(51, TOTAL, meta, rows, "s51");
+  return fiche(54, TOTAL, meta, rows, "s54");
 }
 function lessonS51() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 51", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 54", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("READING: THE CLEAN HANDS RECITATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     recitationBox(),
     p("", { after: 60 }),
@@ -594,11 +594,11 @@ function ficheS52() {
         ["You should wash"], { size: SZ.FICHE })],
       "Individual work", "----"),
   ];
-  return fiche(52, TOTAL, meta, rows, "s52");
+  return fiche(55, TOTAL, meta, rows, "s55");
 }
 function lessonS52() {
   return [
-    p([run("LESSON OF THE DAY — SESSION 52", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LESSON OF THE DAY — SESSION 55", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("WRITING: MY BATTLE PLAN AGAINST THE GERMS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     box("MY WRITING WEAPONS", [
       bullet([run("The clean verbs: ", { bold: true }), run("wash, boil, brush, take a bath, protect", { bold: true, color: C.BLUE })]),
@@ -676,7 +676,7 @@ function exercises() {
 // ---------- S53 — révision ----------
 function revision() {
   return [
-    B.bookmarkTitle("s53", "SESSION 53 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s56", "SESSION 56 / 81", { bold: true, size: 28, after: 60 }),
     p([run("REVISION — UNIT 5: PREVENTIVE HEALTH", { bold: true, size: 26 })], { center: true, after: 140 }),
     p([run("Now answer:", { bold: true })], { after: 80 }),
     p("1. Ask about my health in three ways."),
@@ -705,7 +705,7 @@ function revision() {
 // ---------- S54 — test ----------
 function testPaper() {
   return [
-    B.bookmarkTitle("s54", "SESSION 54 / 78", { bold: true, size: 28, after: 60 }),
+    B.bookmarkTitle("s57", "SESSION 57 / 81", { bold: true, size: 28, after: 60 }),
     p([run("T8 TEST PAPER — UNIT 5: PREVENTIVE HEALTH", { bold: true, size: 26 })], { center: true, after: 100 }),
     pr([run("Duration: ………        ", { bold: true }), run("Total: 20 points", { bold: true })], { center: true, after: 160 }),
     pr([run("Exercise 1 (4 points). ", { bold: true }), run("Oral: role play doctor and patient — ask what’s wrong, state the illness with have got, give two pieces of advice with should.")]),
