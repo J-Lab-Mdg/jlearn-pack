@@ -7,6 +7,7 @@ const S17 = {
   theme: "Le plan",
   objectif: "Être capable de réaliser le plan de la salle de classe en suivant les étapes : contour, flèche du Nord, meubles, légende.",
   image: { id: "geot4_plan_classe", legende: "Le plan terminé de la salle de classe." },
+  scene: { file: "scene_s17_realiser_plan.jpg", mode: "illustration", legende: "Illustration : réaliser ensemble le plan de la salle de classe." },
   miseEnSituation: {
     texte: "La maîtresse annonce un grand défi : « Aujourd'hui, vous allez devenir de vrais dessinateurs de plans ! Chaque binôme va réaliser le plan de notre salle de classe. Les plus beaux plans seront affichés au mur. » Tiana serre son crayon : elle se souvient de tout ce que la classe a appris depuis deux semaines.",
     question: "Qu'avons-nous appris qui va nous servir pour réaliser ce plan ?",
@@ -121,6 +122,7 @@ const S18 = {
   theme: "Le plan",
   objectif: "Être capable d'identifier les infrastructures de l'école sur un plan et de situer un bâtiment par rapport à un autre.",
   image: { id: "geot4_plan_ecole", legende: "Le plan de l'école : les bâtiments, la cour, le puits et le portail." },
+  scene: { file: "scene_s18_plan_ecole.jpg", mode: "document", legende: "Document : les infrastructures de l'école : salles de classe, cour, puits, jardin." },
   miseEnSituation: {
     texte: "Jour de rentrée. Des parents cherchent la salle de leur enfant dans la cour. Le directeur a une idée : il affiche un grand plan à l'entrée de l'école. « Regardez : les salles de classe sont ici, le bureau est là, la cantine au bout… » Tout le monde trouve son chemin grâce au plan.",
     question: "Qu'est-ce qui aide les parents à trouver les bâtiments de l'école ?",
@@ -242,6 +244,7 @@ const S19 = {
   theme: "Le plan",
   objectif: "Être capable d'indiquer la position de l'école par rapport aux lieux connus du quartier (marché, église, bureau du Fokontany, route).",
   image: { id: "geot4_itineraire", legende: "Le quartier autour de l'école : marché, église, Fokontany, routes." },
+  scene: { file: "scene_s19_situer_ecole.jpg", mode: "document", legende: "Document : situer l'école dans son environnement : marché, église, routes et rizières." },
   miseEnSituation: {
     texte: "Le cousin de Sitraka arrive au village pour la première fois. À la gare routière, il demande : « Où est l'école ? » Sitraka réfléchit, puis répond : « C'est facile : monte la grande route, l'école est en face du côté du marché, au Nord de l'église. » Son cousin sourit : « Avec toutes ces indications, je ne peux pas me perdre ! »",
     question: "Quels lieux connus Sitraka a-t-il utilisés pour expliquer le chemin ?",
@@ -361,6 +364,7 @@ const S20 = {
   theme: "Le plan",
   objectif: "Être capable d'identifier les lieux principaux du quartier et de tracer l'itinéraire de la maison à l'école sur un plan.",
   image: { id: "geot4_itineraire", legende: "L'itinéraire de la maison à l'école, en pointillés rouges." },
+  scene: { file: "scene_s20_itineraire.jpg", mode: "document", legende: "Document : l'itinéraire de la maison à l'école : le chemin, la rivière, le grand arbre." },
   miseEnSituation: {
     texte: "C'est la première fois que la petite Voahary ira à l'école toute seule. Son grand frère prend le plan du quartier et un crayon rouge : « Regarde bien, je trace notre chemin. On sort de la maison, on monte la ruelle jusqu'à la grande route, on tourne à droite, puis on remonte jusqu'à l'école. Tu n'as qu'à suivre les pointillés rouges ! »",
     question: "Que montre le frère de Voahary sur le plan du quartier ?",
@@ -475,6 +479,7 @@ const S21 = {
   theme: "Le plan",
   objectif: "Être capable d'identifier les éléments principaux du plan d'un village ou d'une ville et de dire ce qui distingue un village d'une ville.",
   image: { id: "geot4_plan_village", legende: "Le plan d'un village : bâtiments, routes, rivière, pont et rizières." },
+  scene: { file: "scene_s21_plan_village.jpg", mode: "document", legende: "Document : le village vu d'en haut, comme sur un plan : école, marché, église, rizières." },
   miseEnSituation: {
     texte: "Tantely revient au village pour les vacances après un an en ville. Assise sur la colline, elle regarde le village en contrebas : l'école, l'église, la mosquée, le marché, la rivière qui brille et les rizières vertes. « Tout mon village tient dans mon regard, dit-elle. Sur un plan, je pourrais le dessiner tout entier ! »",
     question: "Quels lieux Tantely voit-elle depuis la colline ?",
@@ -592,6 +597,7 @@ const S22 = {
   theme: "Le plan",
   objectif: "Être capable de réaliser un plan simple, avec la flèche du Nord, une légende et un titre, en suivant toutes les étapes.",
   image: { id: "geot4_plan_village", legende: "Un plan complet : titre, flèche du Nord, signes simples et légende." },
+  scene: { file: "scene_s22_plan_legende.jpg", mode: "illustration", legende: "Illustration : un plan de village terminé, avec sa légende." },
   miseEnSituation: {
     texte: "Pour la fête de fin d'année, la classe prépare une exposition : « Les plans de notre quartier ». Chaque groupe choisira un lieu — la salle de classe, l'école, le chemin de la maison à l'école ou le village — et réalisera un plan simple avec une légende. Les parents viendront voir les plans et deviner les lieux !",
     question: "Que doit contenir un plan complet pour être lu par tout le monde ?",

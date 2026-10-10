@@ -8,6 +8,7 @@ const S11 = {
   theme: "Le plan",
   objectif: "Être capable de dire ce qu'est un plan et à quoi il sert.",
   image: { id: "geot4_plan_classe", legende: "Le plan d'une salle de classe, vue de dessus." },
+  scene: { file: "scene_s11_questce_plan.jpg", mode: "document", legende: "Document : le plan dessiné et la vraie salle de classe : deux façons de voir la classe." },
   revisionOuverture: [
     ["Où place-t-on le Nord sur un dessin ou une carte ?", "On place le Nord en haut."],
     ["Cite les quatre points cardinaux.", "Le Nord, le Sud, l'Est et l'Ouest."],
@@ -134,6 +135,7 @@ const S12 = {
   theme: "Le plan",
   objectif: "Être capable d'identifier les éléments du plan de la salle de classe.",
   image: { id: "geot4_plan_classe", legende: "Les éléments du plan : murs, porte, fenêtres et meubles." },
+  scene: { file: "scene_s12_elements_plan.jpg", mode: "document", legende: "Document : observer le plan pour retrouver les éléments de la salle de classe." },
   miseEnSituation: {
     texte: "Soa veut faire une surprise à sa maîtresse : dessiner la salle de classe sur une grande feuille. Elle commence, puis s'arrête : « Si je dessine seulement les pupitres, on ne reconnaîtra pas notre salle ! » Son voisin de table, Mamy, lui souffle : « Dessine aussi ce qui entoure la salle et ce qui sert à entrer. »",
     question: "Quelles choses faut-il dessiner pour que l'on reconnaisse la salle de classe ?",
@@ -256,6 +258,7 @@ const S13 = {
   theme: "Le plan",
   objectif: "Être capable de dessiner les meubles de la classe vus de dessus et de placer les meubles les uns par rapport aux autres.",
   image: { id: "geot4_plan_classe", legende: "Chaque meuble est dessiné par une forme simple vue de dessus." },
+  scene: { file: "scene_s13_mobiliers.jpg", mode: "document", legende: "Document : chaque meuble de la classe se dessine par une forme simple." },
   miseEnSituation: {
     texte: "La maîtresse demande à Mamy : « Va au tableau et dessine notre classe comme un oiseau la voit. » Mamy hésite devant les pupitres : doit-il dessiner les pieds des tables ? Les cartables ? La maîtresse sourit : « Dessine seulement la forme que tu vois d'en haut. »",
     question: "Que voit-on d'un pupitre quand on le regarde d'en haut ?",
@@ -378,6 +381,7 @@ const S14 = {
   theme: "Le plan",
   objectif: "Être capable d'orienter un plan en plaçant la flèche du Nord et de dire où se trouvent le Sud, l'Est et l'Ouest sur le plan.",
   image: { id: "geot4_fleche_nord", legende: "La flèche du Nord oriente le plan." },
+  scene: { file: "scene_s14_fleche_nord.jpg", mode: "document", legende: "Document : la flèche du Nord doit toujours pointer vers le haut du plan." },
   miseEnSituation: {
     texte: "Hery et son cousin regardent le même plan de l'école, mais chacun le tourne de son côté. Hery dit : « Le portail est en bas. » Son cousin répond : « Non, il est à gauche ! » Ils se disputent jusqu'à ce que leur grand-mère montre une petite flèche sur le plan : « Tournez le plan pour que cette flèche regarde vers le haut, et vous verrez pareil ! »",
     question: "Qu'est-ce qui aide à lire un plan dans le même sens, tous ensemble ?",
@@ -501,6 +505,7 @@ const S15 = {
   theme: "Le plan",
   objectif: "Être capable d'expliquer, avec un exemple simple, ce qu'est l'échelle d'un plan.",
   image: { id: "geot4_echelle", legende: "2 m dans la réalité deviennent 2 cm sur le plan." },
+  scene: { file: "scene_s15_echelle.jpg", mode: "document", legende: "Document : mesurer la table du maître pour comprendre l'échelle du plan." },
   miseEnSituation: {
     texte: "Hery veut dessiner la table du maître sur son cahier. Il prend son double-décimètre et mesure : la table est si longue que deux élèves peuvent s'asseoir l'un en face de l'autre ! « Elle est bien trop grande pour mon cahier », dit-il. La maîtresse passe et murmure : « Alors réduis-la : dessine-la plus petite, mais garde les bonnes proportions. »",
     question: "Comment dessiner une grande table sur une petite feuille ?",
@@ -621,6 +626,7 @@ const S16 = {
   theme: "Le plan",
   objectif: "Être capable de dire ce qu'est la légende d'un plan et de lire une légende simple.",
   image: { id: "geot4_plan_ecole", legende: "La légende explique les signes du plan de l'école." },
+  scene: { file: "scene_s16_legende.jpg", mode: "document", legende: "Document : la légende explique les signes et les couleurs du plan." },
   miseEnSituation: {
     texte: "Fanja trouve un vieux plan de l'école dans le bureau de son papa. Elle voit des rectangles, un rond, des points verts… « Mais lequel est la cantine ? Et ce rond, c'est quoi ? » Son papa sourit : « Cherche l'encart à côté du plan : tout est expliqué dedans. »",
     question: "Où trouver la signification des signes d'un plan ?",
