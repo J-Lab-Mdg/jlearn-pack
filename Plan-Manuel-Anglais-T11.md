@@ -1,6 +1,7 @@
 # Plan — Manuel Anglais T11 (Première) — collection J-Learn
 
 ## Source
+- RAPE T11 L officielle (plateforme.education.mg, éd. sept. 2026) : ordre des 10 unités CONFIRMÉ.
 - PE : `PE-T11-Anglais-extrait.txt` (extrait de PE_T11.docx, section ANGLAIS série L complète).
 - **Manuel COMMUN aux trois séries** (décision utilisateur) : programme série L complet (10 unités, 5 h/sem) ;
   les séries S (2 h/sem) et OSE (3 h/sem) ne couvrent que les unités 1 à 8 → bandeau « Série L » sur les
@@ -36,7 +37,7 @@ Annexes : 1 Picture dictionary · 2 Writer's Guide (essay 120/100 mots, texte ar
 
 ## Blocs de livraison
 - Bloc 0 ☑ : extraction PE + plan. — livré
-- Bloc 1 ☐ : infrastructure (builders, build.js, couverture, avant-propos, TOC) + Unit 1 (S1–S9).
+- Bloc 1 ☑ : infrastructure (builders, build.js, couverture, avant-propos, TOC) + Unit 1 (S1–S9). — livré
 - Bloc 2 ☐ : Unit 2 Health Issues (S10–S18).
 - Bloc 3 ☐ : Unit 3 Mass Media (S19–S26).
 - Bloc 4 ☐ : Unit 4 Communication (S27–S34).
