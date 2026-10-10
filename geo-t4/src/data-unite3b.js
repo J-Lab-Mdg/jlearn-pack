@@ -7,6 +7,7 @@ const S32 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de définir le paysage aménagé et de caractériser le paysage urbain.",
   image: { id: "geot4_paysage_urbain", legende: "Le paysage urbain : bâtiments, routes, marché, église et mosquée." },
+  scene: { file: "scene_s32_urbain.jpg", mode: "document", legende: "Document : le paysage urbain — les maisons sur les collines, les routes et le marché." },
   miseEnSituation: {
     texte: "Pour la première fois, Koto se rend à Antananarivo chez sa tante. En arrivant, il colle le nez à la vitre : des maisons à perte de vue, de grandes routes remplies de voitures et de bus, des marchés colorés, des églises, une mosquée, des hauts bâtiments qui touchent presque les nuages. « Mais… ce n'est pas du tout comme notre village ! », s'exclame-t-il.",
     question: "Pourquoi le paysage de la grande ville est-il si différent de celui du village ?",
@@ -129,6 +130,7 @@ const S33 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de caractériser le paysage rural et de le distinguer du paysage urbain.",
   image: { id: "geot4_paysage_rural", legende: "Le paysage rural : village, rizières, champs de culture et pâturage aux zébus." },
+  scene: { file: "scene_s33_rural.jpg", mode: "document", legende: "Document : le paysage rural — le village, les rizières et les zébus au labour." },
   miseEnSituation: {
     texte: "La tante de Koto l'emmène enfin à la campagne, chez ses grands-parents. Quel changement ! Ici, pas de grands immeubles : des maisons en briques aux toits pointus, des rizières vertes en terrasses, des champs de manioc et de maïs, et des zébus qui paissent tranquillement. « Ici, dit la grand-mère, c'est la campagne qui nourrit la ville. »",
     question: "Que voit-on dans le paysage de la campagne que l'on ne voit pas dans la ville ?",
@@ -250,6 +252,7 @@ const S34 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de dire ce qu'est le climat et de nommer les grands climats de Madagascar.",
   image: { id: "geot4_climats_mada", legende: "Carte simplifiée des climats de Madagascar." },
+  scene: { file: "scene_s34_climats.jpg", mode: "document", legende: "Document : le ciel change — la pluie sur la côte Est, le soleil sur le Grand Sud." },
   miseEnSituation: {
     texte: "Rasoa écrit à sa cousine qui habite à l'autre bout de l'île. « Ici, sur la côte Est, il pleut presque toutes les semaines, tout est vert ! » Sa cousine lui répond : « Ici, dans le Grand Sud, il fait chaud et sec ; l'herbe est jaune et l'eau est rare. Pourtant, nous habitons la même île ! »",
     question: "Pourquoi fait-il un temps différent aux deux bouts de la même île ?",
@@ -373,6 +376,7 @@ const S35 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de donner des exemples de l'action du climat sur la végétation et les cours d'eau.",
   image: { id: "geot4_climat_paysage", legende: "Sous un climat humide ou sous un climat sec, le paysage change." },
+  scene: { file: "scene_s35_climat_paysage.jpg", mode: "document", legende: "Document : deux vallées — sous la pluie, tout est vert ; sous le soleil, tout est sec." },
   miseEnSituation: {
     texte: "Deux photos sont affichées au tableau. Sur la première : une forêt épaisse, une rivière large et pleine, sous la pluie. Sur la seconde : une savane jaune, un petit filet d'eau au milieu des cailloux, sous un grand soleil. « Ces deux photos viennent du même pays ! », annonce la maîtresse.",
     question: "Pourquoi ces deux paysages sont-ils si différents s'ils viennent du même pays ?",
@@ -488,6 +492,7 @@ const S36 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de citer les utilités du relief, des cours d'eau et de la végétation, et de connaître les mots crue et inondation.",
   image: { id: "geot4_utilites", legende: "Les utilités du relief, des cours d'eau et de la végétation." },
+  scene: { file: "scene_s36_utilites.jpg", mode: "illustration", legende: "Illustration : les dons de la nature — le riz des montagnes, les poissons de la rivière, les fruits des arbres." },
   miseEnSituation: {
     texte: "Le village célèbre la fin des récoltes. Le vieux Rakoto rassemble les enfants sous le manguier : « Voyez ces collines en terrasses pleines de riz, cette rivière qui arrose nos champs, ce grand arbre qui nous fait de l'ombre et ce bois qui cuit notre riz ? La nature est notre trésor : elle nous donne tout ! »",
     question: "Qu'est-ce que la nature donne aux habitants du village ?",

@@ -8,6 +8,7 @@ const S25 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de dire ce qu'est un paysage naturel et de distinguer les paysages terrestre, littoral et marin.",
   image: { id: "geot4_types_paysage", legende: "Les trois types de paysage naturel : terrestre, littoral et marin." },
+  scene: { file: "scene_s25_paysage_naturel.jpg", mode: "document", legende: "Document : un paysage naturel — la montagne, la forêt, la cascade et la rivière." },
   revisionOuverture: [
     ["Qu'est-ce qu'un plan ?", "Un plan est un dessin qui représente un lieu vu de dessus."],
     ["Quelle flèche dessine-t-on sur un plan pour l'orienter ?", "La flèche du Nord, la lettre N, en haut du plan."],
@@ -140,6 +141,7 @@ const S26 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de caractériser les formes du relief : montagne, colline, vallée et plaine.",
   image: { id: "geot4_relief", legende: "Les formes du relief : montagne, colline, vallée et plaine." },
+  scene: { file: "scene_s26_reliefs.jpg", mode: "document", legende: "Document : la montagne, la colline, la vallée et la plaine — les quatre formes du relief." },
   miseEnSituation: {
     texte: "Soa habite dans une maison au bord d'une grande plaine de rizières. Chez sa grand-mère, au loin, le village est entouré de collines rondes et, à l'horizon, on aperçoit une montagne pointue dont le sommet est souvent dans les nuages. « Comment savoir si c'est une colline ou une montagne ? » demande Soa. Sa grand-mère sourit : « La montagne, ma fille, c'est la reine des hauteurs ! »",
     question: "Quelles formes du terrain voyons-nous autour d'un village ?",
@@ -279,6 +281,7 @@ const S27 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de nommer les cours d'eau (source, ruisseau, rivière, fleuve) et d'utiliser les mots amont et aval.",
   image: { id: "geot4_cours_eau", legende: "De la source à la mer : le ruisseau grossit en rivière puis en fleuve." },
+  scene: { file: "scene_s27_cours_eau.jpg", mode: "document", legende: "Document : le voyage de l'eau, de la source jusqu'à la mer." },
   miseEnSituation: {
     texte: "Lalon'aïna suit son grand-père sur le sentier de la montagne. Tout à coup, une petite eau claire jaillit entre les rochers. « Regarde, dit le grand-père, c'est la source de notre rivière. Ici, elle tient dans ta main. Attends de la voir passer devant le village : là, on l'appelle la rivière. Et au bout de son voyage, elle devient un grand fleuve qui se jette dans la mer. »",
     question: "Que devient la petite eau de la source pendant son voyage ?",
@@ -404,6 +407,7 @@ const S28 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de caractériser un lac, un étang et un marais, et de citer un grand lac de Madagascar.",
   image: { id: "geot4_lac_etang_marais", legende: "Le lac, l'étang et le marais : trois étendues d'eau." },
+  scene: { file: "scene_s28_lacs_marais.jpg", mode: "document", legende: "Document : le lac, l'étang et le marais — trois étendues d'eau calmes." },
   miseEnSituation: {
     texte: "Fanja pêche avec son oncle. Sur le chemin, ils passent devant un petit plan d'eau où les canards barbotent. Plus loin, une immense étendue d'eau brille au soleil, si grande qu'on ne voit pas l'autre bord. « Tiens, dit Fanja, l'eau de tout à l'heure tenait dans un seul regard, mais celle-ci non ! » Son oncle répond : « C'est qu'un étang et un lac ne sont pas la même chose. Et regarde ces roseaux au bord : nous voici dans le marais. »",
     question: "Les trois étendues d'eau que traverse Fanja sont-elles pareilles ?",
@@ -534,6 +538,7 @@ const S29 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de caractériser la forêt, la savane et la steppe, et de dire où elles se trouvent à Madagascar.",
   image: { id: "geot4_vegetation", legende: "La forêt, la savane et la steppe : trois vêtements de la terre." },
+  scene: { file: "scene_s29_vegetation.jpg", mode: "document", legende: "Document : la forêt, la savane et la steppe — trois végétations différentes." },
   miseEnSituation: {
     texte: "Un grand reportage passe à la télévision du village. On y voit d'abord une forêt si dense qu'on croirait un mur vert. Puis la caméra survole une savane dorée où se dressent quelques arbres solitaires. Enfin, au Sud, la terre sèche n'offre que des touffes d'herbes rares. « Regarde, dit le papa de Tojo, la terre porte trois vêtements différents selon la pluie qu'elle reçoit. »",
     question: "Pourquoi la végétation est-elle différente d'une région à l'autre ?",
@@ -667,6 +672,7 @@ const S30 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de nommer les éléments du paysage littoral : côte, plage, baie, cap, île, presqu'île, estuaire.",
   image: { id: "geot4_littoral", legende: "Le paysage littoral : côte, baie, cap, île, presqu'île et estuaire." },
+  scene: { file: "scene_s30_paysage_littoral.jpg", mode: "document", legende: "Document : au bord de la mer — la plage, les pirogues et le récif au loin." },
   miseEnSituation: {
     texte: "Dans la voiture qui longe la côte, Miora joue à nommer tout ce qu'elle voit : « Une plage ! Un rocher qui entre dans la mer ! Regarde, un bateau dort dans une baie bien abritée ! » Son papa ajoute : « Et là-bas, au loin, une île ! Quant au fleuve, regarde comme sa bouche s'élargit avant de rejoindre la mer. »",
     question: "Que voit-on sur le paysage du bord de la mer ?",
@@ -805,6 +811,7 @@ const S31 = {
   theme: "Les éléments du paysage naturel",
   objectif: "Être capable de décrire le paysage marin et d'expliquer l'importance du récif corallien.",
   image: { id: "geot4_marin", legende: "Sous la mer : le récif corallien et ses habitants." },
+  scene: { file: "scene_s31_recifs.jpg", mode: "document", legende: "Document : sous la mer — le récif corallien et ses poissons." },
   miseEnSituation: {
     texte: "Avec son masque et son tuba, Vola glisse doucement au-dessus des coraux. Sous elle, un monde extraordinaire : des coraux en branches, des coraux en boules orange, des poissons rayés qui vont et viennent, une étoile de mer posée sur le sable. « C'est comme un village sous l'eau, souffle Vola en remontant. Chaque animal a sa maison dans le récif ! »",
     question: "Qui vit dans le récif corallien ?",

@@ -94,7 +94,8 @@ Rapport : `Analyse-FRP-T4-Fascicule-2.md` (racine du dépôt).
 1 scène par leçon = 66 au total, placement mixte document/illustration, JPEG 900 px q85 ≈ 130 Ko pièce).
 - ✅ **Unité 1 intégrée** (S1-S8) : manuel 5084 → **6102 Ko**, audit 38/38 avec 72 images (64 schémas + 8 scènes).
 - ✅ **Unité 2 intégrée** (S11-S22) : manuel 6102 → **7824 Ko**, audit 38/38 avec 84 images (64 schémas + 20 scènes). sha256 `2e3e8e63…`.
-- ⏳ Reste : U3 (12 leçons, S25-S36 — 2 scènes déjà générées), U4 (16, S39-S54), U5 (18, S57-S74) — fichiers `geo-t4/scenes/scene_sNN_*.jpg`.
+- ✅ **Unité 3 intégrée** (S25-S36) : manuel 7824 → **9488 Ko**, audit 38/38 avec 96 images (64 schémas + 32 scènes). sha256 `0ec63c21…`.
+- ⏳ Reste : U4 (16 leçons, S39-S54 — 1 scène générée S39), U5 (18, S57-S74 — 1 scène S72) — fichiers `geo-t4/scenes/scene_sNN_*.jpg`.
 - Intégration : champ `scene: { file, mode ("document"|"illustration"), legende }` dans les data-uniteN.js ;
   `sceneBlock()` (builders.js, type jpg) ; document → sous le schéma en tête de leçon, illustration → fin de leçon.
 - audit.py : compteur d'images dynamique (64 + nb de champs `scene: {`).
