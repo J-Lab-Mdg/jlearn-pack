@@ -134,7 +134,7 @@ function pictureDictionary() {
     p([run("All the big words of the year, unit by unit. Look at the picture, read the word, say it aloud!",
       { italic: true, color: C.GRAY, size: 24 })], { center: true, after: 160 }),
 
-    themeBar("FEELINGS AND PREFERENCES (Unit 1)"),
+    themeBar("FEELINGS AND PREFERENCES (review from T8)"),
     p("", { after: 40 }),
     img("u1_feelings.png", 340, 768 / 1376),
     wordGrid(FEELINGS, 3),
@@ -143,28 +143,28 @@ function pictureDictionary() {
     p("", { after: 40 }),
     pr([...kw("How are you feeling today?", "haou âr iou filinng toudéi"), run("  →  "), ...kw("I feel great!", "aï file gréite")], { after: 140 }),
 
-    themeBar("CLASSROOM COMMUNICATION (Unit 2)"),
+    themeBar("CLASSROOM COMMUNICATION (all-year classroom English)"),
     p("", { after: 40 }),
     img("u2_classroom.png", 340, 768 / 1376),
     wordGrid(CLASSROOM, 3),
     p("", { after: 40 }),
     pr([...kw("Why don’t we review the lesson?", "ouaï dôounte oui riviou dhe lèsseune"), run("  →  "), ...kw("Good idea!", "goude aïdi-e")], { after: 140 }),
 
-    themeBar("OUR TIME — PAST AND LEISURE (Unit 3)"),
+    themeBar("OUR TIME — PAST AND LEISURE (Unit 1)"),
     p("", { after: 40 }),
     img("u3_vacation.png", 340, 768 / 1376),
     wordGrid(TIMEWORDS, 3),
     p("", { after: 40 }),
     pr([...kw("I used to swim in the river.", "aï iouzd tou souime inn dhe riveur"), run("  →  "), ...kw("So did I!", "sôou dide aï")], { after: 140 }),
 
-    themeBar("FOOD (Unit 4)"),
+    themeBar("FOOD (Unit 2)"),
     p("", { after: 40 }),
     img("u4_foodgroups.png", 340, 768 / 1376),
     wordGrid(FOODGROUPS, 3),
     p("", { after: 40 }),
     pr([...kw("You should eat more protective foods!", "iou choude ite môr protèktive foudz")], { after: 140 }),
 
-    themeBar("FAMILY (Unit 5)"),
+    themeBar("FAMILY (Unit 3)"),
     p("", { after: 40 }),
     img("u5_family.png", 340, 768 / 1376),
     wordGrid(FAMILY, 3),
@@ -173,7 +173,7 @@ function pictureDictionary() {
     p("", { after: 40 }),
     pr([...kw("May I come in?", "méi aï keume inn"), run("  →  "), ...kw("Of course! Go ahead!", "ove kôrss! gôou ehède")], { after: 140 }),
 
-    themeBar("HEALTHY LIFE (Unit 6)"),
+    themeBar("HEALTHY LIFE (Unit 4)"),
     p("", { after: 40 }),
     img("u6_doctor.png", 340, 768 / 1376),
     wordGrid(HEALTH, 3),
@@ -182,7 +182,7 @@ function pictureDictionary() {
     p("", { after: 40 }),
     pr([...kw("I’m under the weather.", "aïme eunndeur dhe ouèdheur"), run("  →  "), ...kw("You’ll be better in no time!", "ioul bi bèteur inn nôou taïme")], { after: 140 }),
 
-    themeBar("JOB AND MASS MEDIA (Unit 7)"),
+    themeBar("JOB AND MASS MEDIA (Unit 5)"),
     p("", { after: 40 }),
     img("u7_jobs.png", 340, 768 / 1376),
     wordGrid(JOBS, 3),
@@ -191,7 +191,7 @@ function pictureDictionary() {
     p("", { after: 40 }),
     pr([...kw("I have worked as a cook for 15 years.", "aï have oueurkte aze e kouk fôr fiftine yirz")], { after: 140 }),
 
-    themeBar("ENVIRONMENT (Unit 8)"),
+    themeBar("ENVIRONMENT (Unit 6)"),
     p("", { after: 40 }),
     img("u8_protect.png", 340, 768 / 1376),
     wordGrid(ENVIRONMENT, 3),
@@ -211,7 +211,7 @@ function songs() {
     p([run("Note for the teacher: a chant is SPOKEN with a strong rhythm — clap your hands: TA-ta-ta TA-ta-ta! The QR code version matches the words of this book. The traditional warm-up songs also exist in video on YouTube: the links are under each song.",
       { italic: true, color: C.GRAY, size: 22 })], { after: 160 }),
 
-    themeBar("♪ THE PERMISSION CHANT (Unit 5)"),
+    themeBar("♪ THE PERMISSION CHANT (Unit 3)"),
     p("", { after: 60 }),
     songLine("May I come in? Of course you may!"),
     songLine("Can I open the window? Go ahead!"),
@@ -219,7 +219,7 @@ function songs() {
     songLine("Ask politely — and you’ll be OK!"),
     p("", { after: 100 }),
 
-    themeBar("♪ THE SINCE AND FOR CHANT (Unit 7)"),
+    themeBar("♪ THE SINCE AND FOR CHANT (Unit 5)"),
     p("", { after: 60 }),
     songLine("Since 2010, for fifteen years,"),
     songLine("I have worked, I have learnt — no fears!"),
@@ -227,7 +227,7 @@ function songs() {
     songLine("present perfect, that’s the lesson!"),
     p("", { after: 100 }),
 
-    themeBar("♪ THE GREEN CHANT (Unit 8)"),
+    themeBar("♪ THE GREEN CHANT (Unit 6)"),
     p("", { after: 60 }),
     songLine("Stop cutting, keep planting,"),
     songLine("put the litter in the bin!"),
@@ -306,36 +306,36 @@ function flashcards() {
        run("photocopy these pages, paste them on cardboard, cut along the dashed lines. Use the cards for the games: point, mime, Simon says, bingo, matching job–place, ask for permission, quiz quiz trade…")],
       { after: 160 }),
 
-    themeBar("THE FEELINGS AND THE PREFERENCES (Unit 1)"),
+    themeBar("THE FEELINGS AND THE PREFERENCES (review from T8)"),
     p("", { after: 60 }),
     flashTable(FEELINGS.map(([w, pn]) => [w.replace(/^to /, ""), pn.replace(/^tou /, "")]), 3, 36),
     p("", { after: 60 }),
     flashTable(PREFER, 3, 40),
     pageBreak(),
 
-    themeBar("THE TIME MARKERS (Unit 3)"),
+    themeBar("THE TIME MARKERS (Unit 1)"),
     p("", { after: 60 }),
     flashTable(TIMEWORDS, 3, 34),
     p("", { after: 60 }),
-    themeBar("THE FOOD GROUPS AND THE FOOD WORDS (Unit 4)"),
+    themeBar("THE FOOD GROUPS AND THE FOOD WORDS (Unit 2)"),
     p("", { after: 60 }),
     flashTable(FOODGROUPS.map(strip), 3, 30),
     pageBreak(),
 
-    themeBar("THE PERMISSION AND THE WARNINGS (Unit 5)"),
+    themeBar("THE PERMISSION AND THE WARNINGS (Unit 3)"),
     p("", { after: 60 }),
     flashTable(PERMISSION, 3, 36),
     p("", { after: 60 }),
-    themeBar("THE HEALTH WORDS AND THE IDIOMS (Unit 6)"),
+    themeBar("THE HEALTH WORDS AND THE IDIOMS (Unit 4)"),
     p("", { after: 60 }),
     flashTable(HEALTH.map(strip), 3, 30),
     pageBreak(),
 
-    themeBar("THE JOBS (Unit 7)"),
+    themeBar("THE JOBS (Unit 5)"),
     p("", { after: 60 }),
     flashTable(JOBS.map(strip), 3, 34),
     p("", { after: 60 }),
-    themeBar("THE PLANET WORDS (Unit 8)"),
+    themeBar("THE PLANET WORDS (Unit 6)"),
     p("", { after: 60 }),
     flashTable(ENVIRONMENT.slice(0, 6).map(strip), 3, 28),
     p("", { after: 120 }),
@@ -400,7 +400,7 @@ function conjugation() {
     ]),
     p("", { after: 100 }),
 
-    themeBar("2. THE TWO PRESENTS (Unit 1)"),
+    themeBar("2. THE TWO PRESENTS (review from T8)"),
     p("", { after: 60 }),
     conjTable(["Tense", "When?", "Example"], [
       ["Present simple", "habits, facts, likes", "I prefer rice. She feels great every morning."],
@@ -408,7 +408,7 @@ function conjugation() {
     ]),
     p("", { after: 100 }),
 
-    themeBar("3. THE PAST AND “USED TO” (Unit 3)"),
+    themeBar("3. THE PAST AND “USED TO” (Unit 1)"),
     p("", { after: 60 }),
     conjTable(["Form", "Rule", "Example"], [
       ["Past simple (+)", "verb + -ed / irregular form", "We visited Toamasina. I went to the beach."],
@@ -419,7 +419,7 @@ function conjugation() {
     ]),
     p("", { after: 100 }),
 
-    themeBar("4. THE PRESENT PERFECT — SINCE AND FOR (Unit 7)"),
+    themeBar("4. THE PRESENT PERFECT — SINCE AND FOR (Unit 5)"),
     p("", { after: 60 }),
     conjTable(["Form", "Rule", "Example"], [
       ["+ (affirmative)", "have/has + past participle", "I have worked here since 2018."],
@@ -437,7 +437,7 @@ function conjugation() {
     p("", { after: 100 }),
     pageBreak(),
 
-    themeBar("6. THE FUTURES (Units 3 and 8)"),
+    themeBar("6. THE FUTURES (Units 1 and 6)"),
     p("", { after: 60 }),
     conjTable(["Future", "When?", "Example"], [
       ["will + base verb", "prediction, promise, instant decision", "Our planet will suffer if we do nothing."],
@@ -446,14 +446,14 @@ function conjugation() {
     ]),
     p("", { after: 100 }),
 
-    themeBar("7. THE MODALS (Units 2, 4, 5, 6)"),
+    themeBar("7. THE MODALS (Units 2, 3 and 4)"),
     p("", { after: 60 }),
     rule("may / can (Unit 5)", [run("May I come in? Can I open the window? — "), run("may", { bold: true }), run(" is more formal, "), run("can", { bold: true }), run(" is friendly. Answer: Of course you may! / Go ahead!")]),
     rule("should (Units 4 and 6)", [run("You "), run("should", { bold: true }), run(" eat more fruit. You "), run("shouldn’t", { bold: true }), run(" skip breakfast. Never -s, never “to”!")]),
     rule("must / have to (Unit 6)", [run("You "), run("must", { bold: true }), run(" see a doctor (strong!). I "), run("have to", { bold: true }), run(" balance work and play.")]),
     rule("Suggestions (Unit 2)", [run("Why don’t we review? How about "), run("reviewing", { bold: true }), run("? Let’s review! (How about + verb-ing!)")], { after: 100 }),
 
-    themeBar("8. THE REPORTED SPEECH — ONE STEP BACK (Unit 7)"),
+    themeBar("8. THE REPORTED SPEECH — ONE STEP BACK (Unit 5)"),
     p("", { after: 60 }),
     conjTable(["Direct speech", "Reported speech", "The step back"], [
       ["“I am happy,” she said.", "She said (that) she was happy.", "present → past"],
@@ -464,7 +464,7 @@ function conjugation() {
     ]),
     p("", { after: 100 }),
 
-    themeBar("9. THE IF SENTENCES — TYPES 1, 2 AND 3 (Units 6 and 8)"),
+    themeBar("9. THE IF SENTENCES — TYPES 1, 2 AND 3 (Units 4 and 6)"),
     p("", { after: 60 }),
     conjTable(["Type", "Structure", "Example"], [
       ["Type 1 (real)", "If + present, … will + base verb", "If we stop cutting trees, the forest will come back."],
@@ -475,9 +475,9 @@ function conjugation() {
 
     themeBar("10. SMALL BUT MIGHTY"),
     p("", { after: 60 }),
-    rule("The relative pronouns (Unit 7)", [run("who", { bold: true }), run(" for people, "), run("which", { bold: true }), run(" for things, "), run("where", { bold: true }), run(" for places: A farmer is a person who grows crops.")]),
+    rule("The relative pronouns (Unit 5)", [run("who", { bold: true }), run(" for people, "), run("which", { bold: true }), run(" for things, "), run("where", { bold: true }), run(" for places: A farmer is a person who grows crops.")]),
     rule("The comparatives (Unit 4)", [run("healthier than, more expensive than, as good as, the best / the worst. Junk food is "), run("less healthy than", { bold: true }), run(" fresh food.")]),
-    rule("The gerund (Units 2 and 8)", [run("After stop / keep / enjoy / how about → verb + "), run("-ing", { bold: true }), run(": Stop cutting! Keep planting! I enjoy reading.")]),
+    rule("The gerund (Unit 6)", [run("After stop / keep / enjoy / how about → verb + "), run("-ing", { bold: true }), run(": Stop cutting! Keep planting! I enjoy reading.")]),
     rule("The question words", [run("What, Where, When, Who, Why, How, How long, How often — How long have you worked here?")]),
   ];
 }
@@ -556,7 +556,7 @@ function finalPage() {
     p([run("THE END OF THE BOOK — THE BEGINNING OF YOUR ENGLISH LIFE!", { bold: true, size: 40, color: COLOR })], { center: true, after: 200 }),
     img("koto_soa.png", 300, 768 / 1408),
     p([run("Koto and Soa say:", { bold: true, size: 30 })], { center: true, after: 80 }),
-    p([run("“Goodbye, teacher! Goodbye, friends! Eighty-six sessions — what a year! We shared our feelings, we travelled back in time, we balanced our meals, we asked politely, we beat the stress, we got the job and we kept Madagascar green… in English! Keep speaking — and good luck at the exam!”", { italic: true, size: 32, color: C.BLUE })], { center: true, after: 200 }),
+    p([run("“Goodbye, teacher! Goodbye, friends! Sixty-eight sessions — what a year! We shared our feelings, we travelled back in time, we balanced our meals, we asked politely, we beat the stress, we got the job and we kept Madagascar green… in English! Keep speaking — and good luck at the exam!”", { italic: true, size: 32, color: C.BLUE })], { center: true, after: 200 }),
     p([run("J-Learn collection — English T9", { bold: true, size: 26 })], { center: true, after: 40 }),
     p([run("All the audio files of this book:", { size: 24 })], { center: true, after: 40 }),
     p([run("https://drive.google.com/drive/folders/1yVMjApTYJ9E6u-JYotg6xhdworhxNbMA", { color: C.BLUE, size: 22 })], { center: true }),
