@@ -267,6 +267,48 @@ function sizeOfImage(path) {
   return null;
 }
 
+// lecture dimensions JPEG (marker SOFn) sans dépendance
+function sizeOfJpeg(path) {
+  const buf = fs.readFileSync(path);
+  let i = 2;
+  while (i < buf.length - 8) {
+    if (buf[i] !== 0xff) { i += 1; continue; }
+    const marker = buf[i + 1];
+    if (marker >= 0xc0 && marker <= 0xcf && marker !== 0xc4 && marker !== 0xc8 && marker !== 0xcc) {
+      return { height: buf.readUInt16BE(i + 5), width: buf.readUInt16BE(i + 7) };
+    }
+    if (marker === 0xd8 || (marker >= 0xd0 && marker <= 0xd7)) { i += 2; continue; }
+    const len = buf.readUInt16BE(i + 2);
+    if (len <= 0) return null;
+    i += 2 + len;
+  }
+  return null;
+}
+
+// Image « scène » (JPEG semi-réaliste) — même présentation qu'imageBlock, type jpg
+function sceneBlock(imgPath, displayWidth, legende) {
+  const buf = fs.readFileSync(imgPath);
+  let h = Math.round(displayWidth * 0.56);
+  const paras = [];
+  try {
+    const dim = sizeOfJpeg(imgPath);
+    if (dim) { h = Math.round(displayWidth * (dim.height / dim.width)); }
+  } catch (e) { /* noop */ }
+  paras.push(new Paragraph({
+    alignment: AlignmentType.CENTER,
+    spacing: { before: 60, after: 40 },
+    children: [new ImageRun({ type: "jpg", data: buf, transformation: { width: displayWidth, height: h } })],
+  }));
+  if (legende) {
+    paras.push(new Paragraph({
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 140 },
+      children: [new TextRun({ text: legende, italics: true, size: 17, color: "444444", font: FONT })],
+    }));
+  }
+  return paras;
+}
+
 // ── Titres + signets (sommaire interactif) ─────────────────────────────
 function headingWithBookmark(text, anchorId, opts = {}) {
   const { size = 26, bold = true, color = BLACK, align = AlignmentType.LEFT, after = 120, before = 0, level = null } = opts;
@@ -300,6 +342,6 @@ module.exports = {
   mkRuns, p, pEmpty, pHighlight, noBorders, cell, metaTable,
   deroulementHeader, stepRow, sectionRow, deroulementTable,
   exosToParas, corrigeToParas,
-  leconTitre, leconSousTitre, leconSousSousTitre, imageBlock, sizeOfImage,
+  leconTitre, leconSousTitre, leconSousSousTitre, imageBlock, sceneBlock, sizeOfImage,
   headingWithBookmark, tocLink, pageBreak,
 };

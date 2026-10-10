@@ -8,6 +8,7 @@ const S1 = {
   theme: "L'orientation géographique",
   objectif: "Être capable de repérer l'Est et l'Ouest à partir du lever et du coucher du soleil.",
   image: { id: "geot4_lever_coucher_soleil", legende: "Le lever du soleil (à l'Est) et le coucher du soleil (à l'Ouest)." },
+  scene: { file: "scene_s01_lever_soleil.jpg", mode: "document", legende: "Document : le lever du soleil à l'Est, sur les Hautes Terres de Madagascar." },
   // I. Révision — première séance de l'année : questions d'éveil sur le vécu
   revisionOuverture: [
     ["Que vois-tu dans le ciel quand tu pars à l'école le matin ?", "Le soleil qui se lève."],
@@ -140,6 +141,7 @@ const S2 = {
   theme: "L'orientation géographique",
   objectif: "Être capable d'identifier l'Est et l'Ouest à partir du mouvement apparent du soleil.",
   image: { id: "geot4_mouvement_soleil", legende: "Le trajet du soleil dans le ciel pendant la journée." },
+  scene: { file: "scene_s02_ombre_baton.jpg", mode: "document", legende: "Document : l'ombre du bâton change quand le soleil se déplace dans le ciel." },
   miseEnSituation: {
     texte: "Hier matin, la maîtresse a demandé à Aina de planter un bâton dans la cour de l'école. À midi, l'ombre du bâton avait raccourci et changé de place. Le soir, avant de rentrer, Aina voit que l'ombre a encore bougé. Elle se demande ce qui a fait bouger l'ombre du bâton.",
     question: "Qu'est-ce qui se déplace dans le ciel pendant la journée ?",
@@ -258,6 +260,7 @@ const S3 = {
   theme: "L'orientation géographique",
   objectif: "Être capable de repérer le Nord à l'aide d'une boussole ou d'un GPS, et de nommer le Sud.",
   image: { id: "geot4_boussole_gps", legende: "La boussole et le GPS, deux instruments pour trouver le Nord." },
+  scene: { file: "scene_s03_boussole_gps.jpg", mode: "document", legende: "Document : la boussole aide à trouver le Nord ; la fillette montre les montagnes du Nord." },
   miseEnSituation: {
     texte: "Liantsoa a reçu une boussole de son oncle, marin à Toamasina. Son oncle lui a dit : « Avec cela, tu ne te perdras jamais. » Liantsoa remarque une chose étonnante : même quand il tourne la boussole dans tous les sens, l'aiguille rouge finit toujours par pointer le même côté.",
     question: "Qu'est-ce qui ne change jamais sur une boussole ?",
@@ -375,6 +378,7 @@ const S4 = {
   theme: "L'orientation géographique",
   objectif: "Être capable de nommer et de montrer les quatre points cardinaux, et de définir l'orientation géographique.",
   image: { id: "geot4_points_cardinaux", legende: "Les quatre points cardinaux autour de nous." },
+  scene: { file: "scene_s04_points_cardinaux.jpg", mode: "document", legende: "Document : bras écartés devant le soleil levant : devant, c'est l'Est ; derrière, c'est l'Ouest." },
   miseEnSituation: {
     question: "Nous connaissons déjà l'Est, l'Ouest, le Nord et le Sud. Comment appelle-t-on ensemble ces quatre grandes directions ?",
     ra: "Ce sont les points cardinaux.",
@@ -507,6 +511,7 @@ const S5 = {
   theme: "L'orientation géographique",
   objectif: "Être capable d'expliquer comment s'orienter à partir des faits culturels et des repères de la localité.",
   image: { id: "geot4_faits_culturels", legende: "Les repères d'un village : la mosquée, l'église, le grand arbre, le marché." },
+  scene: { file: "scene_s05_faits_culturels.jpg", mode: "document", legende: "Document : les repères du village : la mosquée, les maisons traditionnelles, l'église au loin." },
   miseEnSituation: {
     texte: "Samedi, Fara va au marché avec sa mère. Sur le chemin, elles passent devant la mosquée du quartier, puis l'église, puis le grand arbre de la place. Sa mère lui dit : « Retiens bien ces repères : avec eux, tu retrouveras toujours ton chemin, même sans boussole. »",
     question: "Quelles choses connues de tout le monde nous aident à retrouver notre chemin dans le village ?",
@@ -629,6 +634,7 @@ const S6 = {
   theme: "L'orientation géographique",
   objectif: "Être capable de déterminer les directions intermédiaires à partir des points cardinaux.",
   image: { id: "geot4_directions_intermediaires", legende: "Les 4 points cardinaux et les 4 directions intermédiaires." },
+  scene: { file: "scene_s06_directions_intermediaires.jpg", mode: "document", legende: "Document : montrer entre deux points cardinaux, c'est indiquer une direction intermédiaire." },
   miseEnSituation: {
     texte: "Dans la cour de récréation, la maîtresse joue avec les élèves. Elle dit éation, la maîtresse joue avec les élèves. Elle dit à Mamy : « Marche vers le Nord ! » puis à Soa : « Marche vers l'Est ! » Puis elle demande à Tiana : « À ton tour, marche entre le Nord et l'Est ! » Tiana sourit et avance en biais, entre les deux directions prises par ses camarades.",
     question: "Peut-on marcher entre deux points cardinaux ?",
@@ -754,6 +760,7 @@ const S7 = {
   theme: "L'orientation géographique",
   objectif: "Être capable de lire une rose des vents et de trouver les directions qu'elle indique.",
   image: { id: "geot4_rose_vents", legende: "La rose des vents montre les huit directions." },
+  scene: { file: "scene_s07_rose_au_sol.jpg", mode: "document", legende: "Document : lire la rose des vents peinte sur le sol de la cour de l'école." },
   miseEnSituation: {
     texte: "Le papa de Lanto est pêcheur à Morondava. Avant de prendre la mer, il regarde toujours la rose des vents dessinée sur le port. Il dit à Lanto : « La rose des vents, c'est ma boussole sur le papier : elle me montre toutes les directions du vent. »",
     question: "À quoi sert la rose des vents ?",
@@ -871,6 +878,7 @@ const S8 = {
   theme: "L'orientation géographique",
   objectif: "Être capable de dessiner une rose des vents en appliquant le principe des étapes de construction.",
   image: { id: "geot4_construction_rose", legende: "Les quatre étapes pour dessiner une rose des vents." },
+  scene: { file: "scene_s08_dessiner_rose.jpg", mode: "illustration", legende: "Illustration : une élève dessine sa rose des vents dans son cahier de leçon." },
   miseEnSituation: {
     texte: "La maîtresse annonce un concours : « Celui qui dessinera la plus belle rose des vents l'affichera au mur de la classe ! » Nivo est contente : elle a bien écouté quand la maîtresse a montré les étapes du dessin, étape par étape, au tableau.",
     question: "De quoi avons-nous besoin pour bien dessiner une rose des vents ?",

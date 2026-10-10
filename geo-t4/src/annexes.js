@@ -189,7 +189,13 @@ function annexesContent(topics) {
       children: [
         B.cell([B.p(String(t.numero), { size: 18 })], { width: 10 }),
         B.cell([B.p(t.titre, { size: 18 })], { width: 45 }),
-        B.cell([B.p(t.image && t.image.legende ? t.image.legende : "—", { size: 18 })], { width: 45 }),
+        B.cell(
+          [
+            B.p(t.image && t.image.legende ? t.image.legende : "—", { size: 18 }),
+            ...(t.scene && t.scene.legende ? [B.p(t.scene.legende, { size: 18, color: "555555" })] : []),
+          ],
+          { width: 45 }
+        ),
       ],
     }));
   });

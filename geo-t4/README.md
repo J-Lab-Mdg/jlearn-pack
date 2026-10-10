@@ -89,6 +89,16 @@ discipline, anomalies éditoriales (codes doublés/manquants, en-tête erroné) 
 d'éventuels manuels J-Learn **Maths T4** (≈ 396 séances/an) et **ST T4** (≈ 198 séances/an).
 Rapport : `Analyse-FRP-T4-Fascicule-2.md` (racine du dépôt).
 
+## Scènes illustrées (déploiement en cours)
+🎨 **10 octobre 2026 : ajout de scènes semi-réalistes** (choix utilisateur : style semi-réaliste livre scolaire,
+1 scène par leçon = 66 au total, placement mixte document/illustration, JPEG 900 px q85 ≈ 130 Ko pièce).
+- ✅ **Unité 1 intégrée** (S1-S8) : manuel 5084 → **6102 Ko**, audit 38/38 avec 72 images (64 schémas + 8 scènes).
+- ⏳ Reste : U2 (12), U3 (11), U4 (15), U5 (17) — fichiers `geo-t4/scenes/scene_sNN_*.jpg`.
+- Intégration : champ `scene: { file, mode ("document"|"illustration"), legende }` dans les data-uniteN.js ;
+  `sceneBlock()` (builders.js, type jpg) ; document → sous le schéma en tête de leçon, illustration → fin de leçon.
+- audit.py : compteur d'images dynamique (64 + nb de champs `scene: {`).
+- Source = générations IA ; les PNG haute déf sont compressés en JPEG puis supprimés (poids repo).
+
 ## Pièges déjà résolus (à lire avant de modifier)
 - **Ne jamais éditer plusieurs fichiers en parallèle** si l'un réécrit l'autre (courses d'écriture déjà subies : lignes dupliquées, `module.exports` cassé).
 - Le champ `documentation` de la méta-table ne doit contenir **aucune** mention ministérielle, même abrégée.

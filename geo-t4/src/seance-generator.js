@@ -40,6 +40,13 @@ function leconBlock(topic) {
       out.push(...B.imageBlock(imgPath, 430, topic.image.legende));
     }
   }
+  // Scène semi-réaliste en « document d'observation » : sous le schéma, avant la leçon
+  if (topic.scene && topic.scene.mode === "document") {
+    const scPath = path.join(REPO, "geo-t4", "scenes", topic.scene.file);
+    if (fs.existsSync(scPath)) {
+      out.push(...B.sceneBlock(scPath, 450, topic.scene.legende));
+    }
+  }
   (topic.lecon.sections || []).forEach((sec) => {
     out.push(B.leconSousTitre(sec.titre));
     (sec.paras || []).forEach((tx) => out.push(pKw(tx, topic.motsCles)));
@@ -50,6 +57,13 @@ function leconBlock(topic) {
     });
     (sec.exemples || []).forEach((ex) => out.push(B.p("• " + ex, { size: 20, after: 60, indent: 360 })));
   });
+  // Scène semi-réaliste en illustration de fin de leçon
+  if (topic.scene && topic.scene.mode === "illustration") {
+    const scPath = path.join(REPO, "geo-t4", "scenes", topic.scene.file);
+    if (fs.existsSync(scPath)) {
+      out.push(...B.sceneBlock(scPath, 450, topic.scene.legende));
+    }
+  }
   return out;
 }
 

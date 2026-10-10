@@ -3,6 +3,8 @@
 # Usage : python3 geo-t4/src/audit.py [chemin.docx]
 import re
 import sys
+import os
+import glob
 import unicodedata
 import zipfile
 from collections import Counter
@@ -127,9 +129,15 @@ report("Aucune faute de la liste curated", not hits_fautes, " || ".join(hits_fau
 
 # ── 9. Images et légendes ──
 media = [n for n in z.namelist() if n.startswith("word/media/")]
-report("64 images embarquées", len(media) == 64, str(len(media)))
-n_leg = len(re.findall(r"Schéma|Carte|Tableau|Affiche|La rose des vents à compléter", full))
-report("Légendes d'images présentes", n_leg >= 64, f"occurrences : {n_leg}")
+# scènes intégrées = champs "scene: {" dans les fichiers de données
+n_scenes = 0
+for _f in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data-*.js")):
+    with open(_f, encoding="utf-8") as _fh:
+        n_scenes += _fh.read().count("scene: {")
+expected_img = 64 + n_scenes
+report(f"{expected_img} images embarquées (64 schémas + {n_scenes} scènes)", len(media) == expected_img, str(len(media)))
+n_leg = len(re.findall(r"Schéma|Carte|Tableau|Affiche|Document :|Illustration :|La rose des vents à compléter", full))
+report("Légendes d'images présentes", n_leg >= expected_img, f"occurrences : {n_leg}")
 
 # ── 10. R.A. ──
 report("R.A. présents (≥ 700)", full.count("R.A.") >= 700, str(full.count("R.A.")))
