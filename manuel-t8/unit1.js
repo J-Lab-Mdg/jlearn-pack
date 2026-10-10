@@ -8,6 +8,7 @@ const COLOR = "1F618D"; // bleu
 const SHADE = "D6EAF8";
 const TOTAL = 81;
 const AUDIO = {
+  folder: "https://drive.google.com/drive/folders/1muxOkS0bLFOfGg7JGFFDWBBK_glGmbvY",
   feelings: "https://drive.google.com/uc?export=download&id=1unOxEjipcV1eztNDOV58KcY8ukVVdRym",
   plans: "https://drive.google.com/uc?export=download&id=18s7eB-5ws9pseSasBmdxUxKo3RalHCnH",
   email: "https://drive.google.com/uc?export=download&id=19nkrehGtSOFQK0AGYzy4RiaI7S4zW9G6",
@@ -166,6 +167,8 @@ function lessonS1() {
       bullet([run("— Why do you learn English? ", { bold: true, color: C.RED }), run("— Because I love songs!")], { after: 20 }),
     ]),
     p("", { after: 60 }),
+    audioBox([{ qr: "qr_t8_u1_socializing.png", label: "The socializing dialogue (t8_u1_socializing.mp3) — listen and repeat", url: AUDIO.folder }], COLOR),
+    p("", { after: 60 }),
     box("MUTUAL RESPECT CORNER", [
       p("When you meet someone, look at them, smile, and listen to the answer. A question is a gift!", { after: 40 }),
     ]),
@@ -244,6 +247,8 @@ function lessonS2() {
       bullet([...kw("Do you like dancing?", "dou iou laïke dânnsinng")]),
       bullet([run("→ Yes, I do! / No, I don’t.", { bold: true, color: C.BLUE })], { after: 20 }),
     ]),
+    p("", { after: 60 }),
+    audioBox([{ qr: "qr_t8_u1_likes.png", label: "Likes and dislikes (t8_u1_likes.mp3) — listen and repeat", url: AUDIO.folder }], COLOR),
   ];
 }
 
@@ -314,6 +319,8 @@ function lessonS3() {
     box("MY PREFERENCES TOOLBOX (Sessions 1–3)", [
       p("WH-questions to ask → the gerund for likes (I love swimming!) → I’d rather + because to choose and explain. You are ready to talk about yourself!", { after: 40 }),
     ]),
+    p("", { after: 60 }),
+    audioBox([{ qr: "qr_t8_u1_rather.png", label: "I’d rather…, because… (t8_u1_rather.mp3) — listen and role play", url: AUDIO.folder }], COLOR),
   ];
 }
 
