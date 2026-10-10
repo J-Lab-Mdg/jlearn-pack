@@ -635,6 +635,7 @@ const S74 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de présenter les activités de sa localité et de les classer.",
   image: { id: "geot4_ma_localite", legende: "Les activités de ma localité : agriculture, élevage, pêche, artisanat, commerce et transport." },
+  scene: { file: "scene_s74_ma_localite.jpg", mode: "document", legende: "Document : ma localité — ses activités et ses produits locaux : vanille, girofle, riz, litchis." },
   miseEnSituation: {
     texte: "Grande journée à l'école : chaque groupe présente le résultat de son enquête ! Le groupe de Rasoa a interrogé les habitants : « Nous avons compté douze cultivateurs, cinq pêcheurs, trois artisans… » Le groupe de Hery a dressé la liste des étals du marché. Sur la grande affiche, le maître note tout : « Voici les activités de notre localité ! »",
     question: "Qu'ont découvert les élèves avec leur enquête ?",
