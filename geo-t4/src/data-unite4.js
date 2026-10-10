@@ -7,6 +7,7 @@ const S39 = {
   theme: "L'Environnement",
   objectif: "Être capable de définir l'Environnement et de citer ce qui nous entoure.",
   image: { id: "geot4_environnement", legende: "L'Environnement : la nature et les constructions de l'homme autour de nous." },
+  scene: { file: "scene_s39_environnement.jpg", mode: "document", legende: "Document : autour de nous — la nature et les constructions de l'homme." },
   miseEnSituation: {
     texte: "Ce matin, Rasoa arrive la première à l'école. Pendant qu'elle attend ses camarades, elle regarde autour d'elle : la montagne au loin, les arbres de la cour, le zébu du voisin qui broute, la rivière qui brille, l'air frais du matin… et puis l'école, les maisons du village, la route. « Comme il y a des choses autour de moi ! », pense-t-elle.",
     question: "Comment appelle-t-on tout ce qui nous entoure ?",
@@ -129,6 +130,7 @@ const S40 = {
   theme: "L'Environnement",
   objectif: "Être capable de citer les éléments naturels vivants et de dire ce qu'ils ont en commun.",
   image: { id: "geot4_elements_vivants", legende: "Les éléments naturels vivants : l'homme, les animaux et les plantes." },
+  scene: { file: "scene_s40_vivants.jpg", mode: "document", legende: "Document : les éléments vivants — les hommes, les animaux et les plantes." },
   miseEnSituation: {
     texte: "Dans la cour de l'école, le maître demande un jeu : « Chacun nomme un être vivant qu'il a vu ce matin ! » Faniry commence : « Moi, j'ai vu mon petit frère ! » Hery ajoute : « Nos zébus ! » Et Lalao : « Les fleurs devant notre porte ! » La liste devient très longue…",
     question: "Qu'ont en commun le petit frère de Faniry, les zébus et les fleurs ?",
@@ -252,6 +254,7 @@ const S41 = {
   theme: "L'Environnement",
   objectif: "Être capable de citer les éléments naturels non-vivants et de les distinguer des vivants.",
   image: { id: "geot4_elements_non_vivants", legende: "Les éléments naturels non-vivants : la montagne, le rocher, la rivière, le soleil, l'air et le sol." },
+  scene: { file: "scene_s41_non_vivants.jpg", mode: "document", legende: "Document : les éléments non-vivants — la montagne, le rocher, la rivière et le soleil." },
   miseEnSituation: {
     texte: "Le jeu du maître continue. « Maintenant, nommez des choses autour de nous qui ne sont pas vivantes ! » Rivo dit : « La grande montagne là-bas ! » Voahangy ajoute : « Le rocher au bord du chemin. » Et Mamy : « La rivière ! » « Bravo, dit le maître : ces éléments n'ont pas la vie, mais nous en avons besoin. »",
     question: "Pourquoi la montagne, le rocher et la rivière ne sont-ils pas vivants ?",
@@ -376,6 +379,7 @@ const S42 = {
   theme: "L'Environnement",
   objectif: "Être capable de citer les éléments artificiels et de les distinguer des éléments naturels.",
   image: { id: "geot4_elements_artificiels", legende: "Les éléments artificiels : la maison, l'école, la route, la poubelle, la table et la pirogue." },
+  scene: { file: "scene_s42_artificiels.jpg", mode: "document", legende: "Document : les éléments artificiels — tout ce que l'homme a construit." },
   miseEnSituation: {
     texte: "Le maître montre une photo du village. « Regardez bien, dit-il. Certaines choses ont été faites par la nature, d'autres ont été fabriquées par l'homme. » Tiana lève la main : « La rivière, c'est la nature ! » « Et la pirogue de mon oncle ?, demande Sitraka. C'est l'homme qui l'a creusée dans un tronc d'arbre ! »",
     question: "La pirogue vient-elle de la nature ou de l'homme ?",
@@ -496,6 +500,7 @@ const S43 = {
   theme: "L'Environnement",
   objectif: "Être capable de classer les éléments de l'Environnement en trois groupes : vivants, non-vivants et artificiels.",
   image: { id: "geot4_classer_elements", legende: "Le classement des éléments : vivants, non-vivants et artificiels." },
+  scene: { file: "scene_s43_classer.jpg", mode: "document", legende: "Document : classer les cartes — vivants, non-vivants, artificiels." },
   miseEnSituation: {
     texte: "Le maître apporte de grandes étiquettes : « le zébu », « la montagne », « la poubelle », « le poisson », « l'école », « le soleil »… « Voici un jeu de classement, annonce-t-il. Nous allons ranger chaque étiquette dans la bonne colonne du tableau ! » Les élèves se préparent : trois colonnes sont dessinées au tableau.",
     question: "Dans quelle colonne ranger chaque étiquette ?",
@@ -627,6 +632,7 @@ const S44 = {
   theme: "L'Environnement",
   objectif: "Être capable d'expliquer les liens entre les éléments de l'Environnement.",
   image: { id: "geot4_interrelation", legende: "Les liens entre les éléments : le soleil fait grandir, l'eau nourrit, l'homme protège." },
+  scene: { file: "scene_s44_interrelation.jpg", mode: "document", legende: "Document : les liens entre les éléments — l'eau nourrit, l'arbre retient la terre, l'homme protège." },
   miseEnSituation: {
     texte: "« Savez-vous pourquoi le riz de notre rizière pousse si bien ? », demande la grand-mère de Koto. « C'est le soleil qui le réchauffe, c'est l'eau de la rivière qui l'abreue, c'est le sol qui le porte. Et nous, nous plantons, nous désherbons et nous récoltons. Tout se tient ! » Koto écoute : il comprend que rien ne vit seul.",
     question: "Pourquoi le riz a-t-il besoin du soleil, de l'eau et du sol en même temps ?",

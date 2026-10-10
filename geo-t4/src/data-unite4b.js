@@ -7,6 +7,7 @@ const S45 = {
   theme: "L'Environnement",
   objectif: "Être capable de définir la dégradation et de citer ses formes.",
   image: { id: "geot4_degradation", legende: "Les formes de la dégradation : forêt détruite, sol érodé, déchets et eau polluée." },
+  scene: { file: "scene_s45_degradation.jpg", mode: "document", legende: "Document : un paysage abîmé — le lavaka, la forêt coupée, les déchets." },
   miseEnSituation: {
     texte: "Le maître affiche deux photos du même endroit du village. Sur la première, prise il y a longtemps : une forêt verte, une rivière claire. Sur la seconde, prise aujourd'hui : des souches d'arbres coupés, un sol creusé de ravines, des ordures au bord de l'eau devenue trouble. « Que s'est-il passé ici ? », demande-t-il. La classe reste silencieuse.",
     question: "Pourquoi l'Environnement de ces photos est-il abîmé ?",
@@ -136,6 +137,7 @@ const S46 = {
   theme: "L'Environnement",
   objectif: "Être capable d'expliquer pourquoi l'homme coupe et brûle la forêt.",
   image: { id: "geot4_deforestation", legende: "Avant et après : la déforestation et les feux de brousse détruisent la forêt." },
+  scene: { file: "scene_s46_deforestation.jpg", mode: "document", legende: "Document : la déforestation — on coupe, on brûle, la forêt disparaît." },
   miseEnSituation: {
     texte: "Rivo fait la route du village avec son grand-père. Ils passent devant une colline toute verte. « Grand-père, et cette colline chauve, là-bas, avec les souches noires ? » Le grand-père soupire : « Avant, c'était une belle forêt. On a coupé les arbres pour le bois, puis on y a mis le feu pour semer. Maintenant, regarde : il ne reste rien. »",
     question: "Pourquoi la belle forêt est-elle devenue une colline chauve ?",
@@ -260,6 +262,7 @@ const S47 = {
   theme: "L'Environnement",
   objectif: "Être capable de citer les pollutions de l'air, de l'eau et du sol, et le problème des déchets.",
   image: { id: "geot4_pollution", legende: "Les pollutions : la fumée salit l'air, les ordures salissent l'eau et le sol." },
+  scene: { file: "scene_s47_pollution.jpg", mode: "document", legende: "Document : la pollution — les ordures salissent l'eau, la fumée salit l'air." },
   miseEnSituation: {
     texte: "Samedi, la famille de Voahangy descend au marché. En chemin, ils passent devant un tas d'ordures qui fume au bord du chemin ; les mouches bourdonnent. Plus loin, la rivière charrie des sacs plastiques et des bouteilles. « Maman, pourquoi jette-t-on tout ça ici ?, demande Voahangy. Avant, on venait puiser l'eau à cet endroit ! »",
     question: "Qui a sali l'air, l'eau et le sol autour du marché ?",
@@ -386,6 +389,7 @@ const S48 = {
   theme: "L'Environnement",
   objectif: "Être capable de citer les conséquences de la dégradation sur la nature.",
   image: { id: "geot4_consequences_nature", legende: "Les conséquences sur la nature : animaux sans forêt, sol pauvre, rivières taries, inondations." },
+  scene: { file: "scene_s48_consequences_nature.jpg", mode: "document", legende: "Document : la nature souffre — rivières taries, sol pauvre, animaux sans forêt." },
   miseEnSituation: {
     texte: "« Savez-vous pourquoi les lémuriens se font rares dans notre région ? », demande le garde forestier venu visiter l'école. « Quand la forêt est coupée, les lémuriens perdent leur maison et leur nourriture. Ils s'en vont ou ils meurent. Et ce n'est pas tout : sans arbres, la pluie emporte la terre, les rivières se remplissent de boue… » Les élèves écoutent, très attentifs.",
     question: "Qu'arrive-t-il aux animaux quand la forêt est détruite ?",
@@ -512,6 +516,7 @@ const S49 = {
   theme: "L'Environnement",
   objectif: "Être capable de citer les conséquences de la dégradation sur l'homme et ses activités.",
   image: { id: "geot4_consequences_homme", legende: "Les conséquences sur l'homme : récoltes détruites, maisons inondées, maladies, pénuries." },
+  scene: { file: "scene_s49_consequences_homme.jpg", mode: "document", legende: "Document : l'homme souffre aussi — récoltes perdues et maisons inondées." },
   miseEnSituation: {
     texte: "Dans quelques années, pense Koto en écoutant le garde forestier… Si les collines deviennent chauves, les rizières manqueront d'eau ; le riz viendra mal. Si les rivières débordent, l'eau entrera dans les maisons. Si l'air est pollué, les petits frères tousseront. « Alors, se dit Koto, c'est nous aussi, les hommes, qui allons souffrir ! »",
     question: "Pourquoi l'homme va-t-il souffrir de la dégradation de la nature ?",

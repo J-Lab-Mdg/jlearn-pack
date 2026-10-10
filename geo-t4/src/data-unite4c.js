@@ -261,6 +261,7 @@ const S52 = {
   theme: "L'Environnement",
   objectif: "Être capable d'expliquer le reboisement et l'utilité des haies vives.",
   image: { id: "geot4_reboisement", legende: "Le reboisement : replanter des jeunes arbres ; les haies vives protègent les champs." },
+  scene: { file: "scene_s52_reboisement.jpg", mode: "document", legende: "Document : le reboisement — des enfants replantent des jeunes arbres." },
   miseEnSituation: {
     texte: "Les élèves de l'école de Koto partent en excursion sur la colline du village. Chacun porte un jeune plant et une petite pelle. « Aujourd'hui, nous allons reboiser ! », annonce le maître. Ensemble, ils creusent des trous et plantent des centaines de jeunes arbres. « Dans dix ans, ce sera une forêt ! » Sur le chemin du retour, ils admirent le champ de riz du village, bien protégé par une rangée d'arbustes : la haie vive.",
     question: "Que font les élèves sur la colline, et que protège la haie vive ?",
