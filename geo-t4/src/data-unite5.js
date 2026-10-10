@@ -7,6 +7,7 @@ const S57 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de définir la population et de dire qui en fait partie.",
   image: { id: "geot4_population", legende: "La population d'un village : tous ses habitants, petits et grands." },
+  scene: { file: "scene_s57_population.jpg", mode: "document", legende: "Document : la population du village — tous les habitants, petits et grands." },
   miseEnSituation: {
     texte: "Ce matin, un visiteur arrive à l'école avec un grand cahier. « Je viens compter les habitants du village », explique-t-il. « Tous ? », demande Faniry. « Oui, tous : les enfants, les papas, les mamans, les grands-pères et les grands-mères, tous ceux qui habitent ici ! » Faniry se tourne vers son voisin : « Alors, nous aussi, nous comptons ! »",
     question: "Qui compte-t-on quand on compte la population d'un village ?",
@@ -132,6 +133,7 @@ const S58 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de répartir la population par sexe et par âge.",
   image: { id: "geot4_sexe_age", legende: "Répartir la population : par sexe (garçons et filles) et par âge (enfants, adultes, anciens)." },
+  scene: { file: "scene_s58_sexe_age.jpg", mode: "document", legende: "Document : la grande famille — bébés, enfants, parents et anciens ensemble." },
   miseEnSituation: {
     texte: "La maîtresse dessine un grand tableau au tableau noir. « Commençons par notre classe ! Les garçons, levez la main… douze ! Les filles… quatorze ! Maintenant, levons la main si tu as moins de dix ans… » Bientôt, le tableau est rempli. « Voilà, dit-elle, nous avons réparti notre classe par sexe et par âge ! »",
     question: "Comment la maîtresse a-t-elle réparti la classe ?",
@@ -254,6 +256,7 @@ const S59 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de lire et de remplir un tableau d'effectifs de l'école et du village.",
   image: { id: "geot4_effectif", legende: "Le tableau des effectifs de l'école : le nombre d'élèves par classe." },
+  scene: { file: "scene_s59_effectif.jpg", mode: "document", legende: "Document : compter les élèves de l'école pour connaître l'effectif." },
   miseEnSituation: {
     texte: "Le directeur de l'école rassemble les chefs de classe. « Pour mon rapport, j'ai besoin des effectifs ! Allez compter les élèves de chaque classe. » Les chefs partent, cahiers en main. Une heure plus tard, le grand tableau est prêt : T1, T2, T3, T4… et le total de l'école ! « Et savez-vous combien d'habitants compte notre village ? demande le directeur. Plus de mille ! »",
     question: "Qu'ont compté les chefs de classe, et comment appelle-t-on ce nombre ?",
@@ -376,6 +379,7 @@ const S60 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable d'expliquer qu'une naissance augmente la population.",
   image: { id: "geot4_naissances", legende: "Une naissance : le petit Rakoto arrive, la population du village augmente." },
+  scene: { file: "scene_s60_naissances.jpg", mode: "document", legende: "Document : une naissance — le petit Rakoto arrive, la famille est joyeuse." },
   miseEnSituation: {
     texte: "Ce matin, Faniry arrive à l'école tout excité : « J'ai un petit frère ! Il est né cette nuit, il s'appelle Rakoto ! » La maîtresse félicite la famille et dit à la classe : « Savez-vous que notre village vient de grandir ? Un nouvel habitant est arrivé ! »",
     question: "Pourquoi le village vient-il de grandir ?",
@@ -499,6 +503,7 @@ const S61 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable d'expliquer qu'un décès diminue la population, et de parler du deuil avec respect.",
   image: { id: "geot4_deces", legende: "Un décès : la famille accompagne son ancien ; la population du village diminue." },
+  scene: { file: "scene_s61_deces.jpg", mode: "document", legende: "Document : un décès — la famille accompagne son ancien avec respect." },
   miseEnSituation: {
     texte: "Le grand-père de Voahangy, si gentil, si plein d'histoires, nous a quittés la semaine dernière. Tout le village s'est réuni pour l'accompagner jusqu'au tombeau de famille. La maîtresse dit à la classe, doucement : « C'est ainsi : chaque décès nous attriste, et le village perd un habitant. C'est pourquoi on honore la mémoire des anciens. »",
     question: "Qu'arrive-t-il au village quand un habitant meurt ?",
@@ -620,6 +625,7 @@ const S62 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable d'expliquer les départs et les arrivées d'habitants : les migrations.",
   image: { id: "geot4_migrations", legende: "Les migrations : le départ vers la ville et l'arrivée au village." },
+  scene: { file: "scene_s62_migrations.jpg", mode: "document", legende: "Document : les migrations — les départs vers la ville et les retours au village." },
   miseEnSituation: {
     texte: "Deux nouvelles à la fois au village ! La grande sœur de Hery part à Antananarivo pour continuer ses études : toute la famille l'accompagne au passage du taxi-brousse. Et la même semaine, une nouvelle famille arrive de la ville : elle vient cultiver les terres du versant. « Notre village change », sourit le chef du village : « des départs, des arrivées… la vie bouge ! »",
     question: "Pourquoi le village change-t-il cette semaine ?",

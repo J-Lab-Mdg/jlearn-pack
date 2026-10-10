@@ -7,6 +7,7 @@ const S69 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de décrire l'élevage et la pêche, et ce qu'ils donnent aux familles.",
   image: { id: "geot4_elevage_peche", legende: "L'élevage : zébus et volailles ; la pêche : la pirogue et le filet." },
+  scene: { file: "scene_s69_elevage_peche.jpg", mode: "document", legende: "Document : l'élevage des zébus et la pêche à la pirogue." },
   miseEnSituation: {
     texte: "Deux métiers se partagent la journée de la famille de Rivo. Le matin, Rivo garde les zébus au pâturage avec son oncle ; les poules picorent autour de la cour. L'après-midi, l'oncle sort la pirogue sur le lac : il jette son filet et revient avec de beaux poissons. « Chez nous, dit Rivo, on élève et on pêche : la viande et le poisson ne manquent jamais ! »",
     question: "Quelles sont les deux activités de la famille de Rivo ?",
@@ -133,6 +134,7 @@ const S70 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de décrire l'artisanat et de citer les artisans de la localité.",
   image: { id: "geot4_artisanat", legende: "L'artisanat : la tisserande, le potier et le vannier." },
+  scene: { file: "scene_s70_artisanat.jpg", mode: "document", legende: "Document : l'artisanat — le sculpteur, la tisserande, le potier et le vannier." },
   miseEnSituation: {
     texte: "Au marché de la ville, Soa admire les étals des artisans : les lamba aux couleurs vives de la tisserande, les grandes jarres du potier, les paniers solides du vannier. « Tout cela est fait à la main ! », s'étonne-t-elle. La tisserande sourit : « Chaque pièce passe par mes mains et mon métier à tisser. Voilà l'artisanat : travailler avec ses mains, avec les matières de la nature. »",
     question: "Comment la tisserande fabrique-t-elle ses lamba ?",
@@ -259,6 +261,7 @@ const S71 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de décrire l'industrie : transformer les produits dans les usines.",
   image: { id: "geot4_industrie", legende: "L'industrie : l'usine transforme le riz récolté en riz décortiqué, prêt à vendre." },
+  scene: { file: "scene_s71_industrie.jpg", mode: "document", legende: "Document : l'usine transforme le riz récolté en riz décortiqué." },
   miseEnSituation: {
     texte: "Koto visite avec sa classe la rizerie de la ville. À l'entrée, des sacs de paddy : le riz récolté avec sa balle. Au milieu, les machines grondent et transforment. À la sortie, des sacs de riz blanc et brillant, prêt à cuire ! « Voilà le travail de l'industrie, explique l'ouvrier : la machine et l'homme transforment ensemble les produits de la terre. »",
     question: "Que fait la rizerie avec le riz récolté ?",
@@ -382,6 +385,7 @@ const S72 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de décrire le commerce : acheter et vendre.",
   image: { id: "geot4_commerce", legende: "Le commerce : au marché, on vend ce qu'on produit et on achète ce qu'il faut." },
+  scene: { file: "scene_s72_marche.jpg", mode: "document", legende: "Document : le marché — on vend ce qu'on produit, on achète ce qu'il faut." },
   miseEnSituation: {
     texte: "Vendredi, jour du grand marché ! Rasoa installe ses brèdes et ses tomates sur l'étal. À côté, le vendeur de fruits aligne mangues et goyaves. Les acheteuses arrivent avec leurs paniers, marchandent, comparent. « Le marché, c'est le cœur du village, dit la maman de Rasoa : celui qui a produit vend, celui qui a besoin achète ! »",
     question: "Que font les gens au marché du vendredi ?",
@@ -506,6 +510,7 @@ const S73 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de citer les moyens de transport et d'expliquer leur utilité.",
   image: { id: "geot4_transport", legende: "Les transports : le taxi-brousse, le camion, la pirogue et la charrette à zébu." },
+  scene: { file: "scene_s73_transport.jpg", mode: "document", legende: "Document : les transports — le taxi-brousse, la charrette à zébu et la pirogue." },
   miseEnSituation: {
     texte: "Sur la route qui longe l'école, la classe guette les passages. « Un taxi-brousse ! Il emporte les voyageurs vers la ville. — Un camion ! Il porte les sacs de riz vers le port. — Une charrette à zébu ! Elle ramène les provisions du marché. — Et sur le lac, la pirogue de l'oncle ! » Le maître sourit : « Voilà le transport : tout ce qui bouge, personnes et marchandises ! »",
     question: "Que transportent le taxi-brousse, le camion, la charrette et la pirogue ?",

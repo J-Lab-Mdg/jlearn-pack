@@ -7,6 +7,7 @@ const S63 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de citer les trois variables qui font croître ou diminuer la population.",
   image: { id: "geot4_croissance", legende: "Les trois variables : les naissances, les décès et les migrations." },
+  scene: { file: "scene_s63_croissance.jpg", mode: "document", legende: "Document : le bilan de la population — naissances, décès et migrations." },
   miseEnSituation: {
     texte: "À la fin de l'année, le chef du village dresse son bilan devant tout le monde : « Cette année : 5 naissances, 2 décès, 4 départs vers la ville et 7 arrivées ! » Il marque une pause, sourit : « Alors, amis, notre village a-t-il grandi ou rapetissé ? » Les habitants calculent… et bientôt tout le village crie de joie : « Il a grandi ! »",
     question: "Pourquoi le village a-t-il grandi cette année ?",
@@ -134,6 +135,7 @@ const S64 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de définir les us et coutumes et de citer ceux de sa localité.",
   image: { id: "geot4_us_coutumes", legende: "Les us et coutumes : le mariage, la circoncision, l'exhumation et l'enterrement." },
+  scene: { file: "scene_s64_us_coutumes.jpg", mode: "document", legende: "Document : la fête du village — musique, danses et partage." },
   miseEnSituation: {
     texte: "Samedi, toute la famille de Rasoa se réunit au village : on prépare la cérémonie de l'exhumation, quand la famille honore ensemble ses ancêtres. « C'est notre coutume », explique la grand-mère. « Chaque famille, chaque région a ses coutumes : le mariage, la circoncision, l'enterrement… C'est notre façon de vivre ensemble, transmise par nos anciens. »",
     question: "Qu'est-ce que la grand-mère appelle « notre façon de vivre ensemble » ?",
@@ -261,6 +263,7 @@ const S65 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de définir le fady et d'expliquer pourquoi on le respecte.",
   image: { id: "geot4_fady", legende: "Les fady : des interdictions traditionnelles que l'on respecte." },
+  scene: { file: "scene_s65_fady.jpg", mode: "document", legende: "Document : le lieu sacré — l'ancien explique le fady, les enfants écoutent." },
   miseEnSituation: {
     texte: "Ravi, le cousin venu de la ville, veut labourer le champ ce mardi matin. Mais le grand-père l'arrête net : « Halte ! Aujourd'hui, c'est fady de travailler la terre ! » Ravi s'étonne : « Fady ? » « Oui, le fady, c'est une interdiction de nos anciens, explique le grand-père. Ici, on ne laboure pas ce jour-là, on ne pêche pas certains jours, on ne touche pas aux lieux sacrés. On respecte le fady, c'est tout ! »",
     question: "Pourquoi le grand-père arrête-t-il Ravi ?",
@@ -387,6 +390,7 @@ const S66 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de décrire les caractéristiques socioculturelles de sa famille et de sa localité.",
   image: { id: "geot4_socioculturel", legende: "Nos caractéristiques socioculturelles : la langue, le vêtement, les coiffures et le mode de vie." },
+  scene: { file: "scene_s66_socioculturel.jpg", mode: "document", legende: "Document : la langue, les vêtements et les histoires des anciens." },
   miseEnSituation: {
     texte: "« Présentez votre famille à la classe ! », demande la maîtresse. Tiana se lève : « Ma famille vient des Hautes Terres. À la maison, nous parlons malgache, maman porte un beau lamba, papa met son chapeau pour les champs. Nous mangeons du riz au repas, nous avons deux zébus et une maison en briques. » Chaque élève raconte : les origines et les modes de vie se croisent dans la classe !",
     question: "Que raconte Tiana sur sa famille ?",
@@ -512,6 +516,7 @@ const S67 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de nommer les grandes activités de la population d'un village ou d'une ville.",
   image: { id: "geot4_activites", legende: "Les six grandes activités : agriculture, pêche, artisanat, industrie, commerce, transport." },
+  scene: { file: "scene_s67_panorama.jpg", mode: "document", legende: "Document : les six activités de la population, en un seul paysage." },
   miseEnSituation: {
     texte: "Le maître apporte six grandes photos et les étale au tableau. « Regardez bien ! Ici, des rizières en terrasses ; là, une pirogue au matin ; ici, une tisserande au travail ; là, une usine de riz ; un marché coloré ; et un taxi-brousse chargé ! À votre avis, que font toutes ces personnes ? » La classe répond d'une seule voix : « Elles travaillent ! »",
     question: "Que font toutes les personnes des six photos ?",
@@ -643,6 +648,7 @@ const S68 = {
   theme: "L'Homme et les activités quotidiennes",
   objectif: "Être capable de décrire l'agriculture et ses grandes étapes.",
   image: { id: "geot4_agriculture", legende: "L'agriculture : le labourage, le repiquage du riz et la récolte." },
+  scene: { file: "scene_s68_agriculture.jpg", mode: "document", legende: "Document : l'agriculture — le labourage, le repiquage et la récolte du riz." },
   miseEnSituation: {
     texte: "À l'aube, Rivo accompagne son père à la rizière. Le zébu tire la charrue, la terre se retourne, noire et humide. « Voilà le labourage », dit le père. Dans quelques semaines viendront le repiquage des jeunes plants de riz, puis, après la saison des pluies, la grande récolte. « Sans l'agriculture, rappelle le père, personne n'aurait de riz dans son assiette ! »",
     question: "Quelles sont les étapes du travail du riz que Rivo découvre ?",

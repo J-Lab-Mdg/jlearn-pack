@@ -96,7 +96,8 @@ Rapport : `Analyse-FRP-T4-Fascicule-2.md` (racine du dépôt).
 - ✅ **Unité 2 intégrée** (S11-S22) : manuel 6102 → **7824 Ko**, audit 38/38 avec 84 images (64 schémas + 20 scènes). sha256 `2e3e8e63…`.
 - ✅ **Unité 3 intégrée** (S25-S36) : manuel 7824 → **9488 Ko**, audit 38/38 avec 96 images (64 schémas + 32 scènes). sha256 `0ec63c21…`.
 - ✅ **Unité 4 intégrée** (S39-S54, 16 scènes) : manuel 9488 → **11 765 Ko**, audit 38/38 avec 112 images (64 + 48). sha256 `f9159cb9…`.
-- ⏳ Reste : U5 (18 leçons, S57-S74) — 7 scènes déjà générées (S57-S62, S72), 11 à produire.
+- ✅ **Unité 5 intégrée à 94 %** (S57-S73, 17 scènes) : manuel 11 765 → **14 356 Ko**, audit 38/38 avec 129 images (64 + 65). sha256 `8771f4a9…`. Reste U5 : S74 (synthèse de la localité).
+- ⏳ Prochain tour : S74 → **66 scènes / 130 images, déploiement complet terminé**.
 - Intégration : champ `scene: { file, mode ("document"|"illustration"), legende }` dans les data-uniteN.js ;
   `sceneBlock()` (builders.js, type jpg) ; document → sous le schéma en tête de leçon, illustration → fin de leçon.
 - audit.py : compteur d'images dynamique (64 + nb de champs `scene: {`).
