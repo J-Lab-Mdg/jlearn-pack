@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">L'équateur et les hémisphères</text>
+  <rect x="40" y="90" width="920" height="400" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <path d="M 355 290 A 145 145 0 0 1 645 290 Z" fill="#BBDEFB" stroke="none"/>
+  <path d="M 355 290 A 145 145 0 0 0 645 290 Z" fill="#C8E6C9" stroke="none"/>
+  <circle cx="500" cy="290" r="145" fill="none" stroke="#0277BD" stroke-width="4"/>
+  <line x1="355" y1="290" x2="645" y2="290" stroke="#C00000" stroke-width="6"/>
+  <text x="500" y="272" text-anchor="middle" font-size="26" font-weight="bold" fill="#01579B">Hémisphère Nord</text>
+  <text x="500" y="332" text-anchor="middle" font-size="26" font-weight="bold" fill="#1B5E20">Hémisphère Sud</text>
+  <text x="500" y="475" text-anchor="middle" font-size="26" font-weight="bold" fill="#C00000">L'équateur</text>
+  <text x="210" y="150" text-anchor="middle" font-size="22" fill="#546E7A" font-style="italic">L'équateur est une ligne</text>
+  <text x="210" y="178" text-anchor="middle" font-size="22" fill="#546E7A" font-style="italic">imaginaire : on ne la voit pas</text>
+  <text x="210" y="206" text-anchor="middle" font-size="22" fill="#546E7A" font-style="italic">sur le terrain !</text>
+  <text x="790" y="150" text-anchor="middle" font-size="22" fill="#546E7A" font-style="italic">Elle partage la Terre</text>
+  <text x="790" y="178" text-anchor="middle" font-size="22" fill="#546E7A" font-style="italic">en deux moitiés égales</text>
+  <text x="790" y="206" text-anchor="middle" font-size="22" fill="#546E7A" font-style="italic">appelées hémisphères.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Madagascar se trouve dans l'hémisphère Sud.</text>
+</svg>

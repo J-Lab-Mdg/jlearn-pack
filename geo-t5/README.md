@@ -6,8 +6,11 @@ Sources officielles : `PE RAPE/PE T5.pdf` (Programme d'Études T5, section GÉOG
 
 ## État d'avancement
 - ✅ Analyse du PE T5 (5 thématiques, 33 h = 66 leçons) et du FRP T5 (5 thématiques identiques)
-- ✅ **PLAN-FINAL.md** : découpage 76 numéros (66 leçons + 5 révisions + 5 examens) — **en attente de validation utilisateur**
-- ⏳ U1 La planète Terre (S1-S16) → à produire
+- ✅ **PLAN-FINAL.md validé par l'utilisateur** (76 numéros, scènes d'emblée)
+- ✅ Architecture : builders.js + seance-generator.js (adaptés T5) + verifications.py
+- ✅ **14 schémas U1** (`geo5_*.png`, pack.json 102→116) + **10 scènes S1-S10** (JPEG 900 px)
+- ✅ **Leçons S1-S7 rédigées** (data-unite1.js, 901 lignes)
+- ⏳ U1 : leçons S8-S14 + révision + examen ; assemble.js + annexes.js + audit.py (adaptés T5) ; scènes S11-S14
 - ⏳ U2 L'île de Madagascar dans le monde (S17-S26)
 - ⏳ U3 Les milieux naturels à Madagascar (S27-S55, 27 leçons — la plus grosse unité)
 - ⏳ U4 Les ressources naturelles (S56-S61)

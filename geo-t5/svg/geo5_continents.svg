@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les sept continents du globe terrestre</text>
+  
+    <rect x="60" y="120" width="880" height="360" rx="12" fill="#B3E5FC" stroke="#0277BD" stroke-width="4"/>
+    <ellipse cx="215" cy="200" rx="105" ry="72" fill="#A5D6A7" stroke="#2E7D32" stroke-width="3" transform="rotate(-12 215 200)"/>
+    <text x="205" y="188" text-anchor="middle" font-size="21" font-weight="bold" fill="#1B5E20">Amérique</text>
+    <text x="205" y="214" text-anchor="middle" font-size="21" font-weight="bold" fill="#1B5E20">du Nord</text>
+    <path d="M 240 270 L 285 268 L 312 320 L 292 400 L 250 442 L 235 380 L 225 315 Z" fill="#A5D6A7" stroke="#2E7D32" stroke-width="3"/>
+    <text x="268" y="352" text-anchor="middle" font-size="21" font-weight="bold" fill="#1B5E20">Amérique</text>
+    <text x="268" y="378" text-anchor="middle" font-size="21" font-weight="bold" fill="#1B5E20">du Sud</text>
+    <ellipse cx="475" cy="190" rx="62" ry="46" fill="#FFCC80" stroke="#E65100" stroke-width="3"/>
+    <text x="475" y="196" text-anchor="middle" font-size="22" font-weight="bold" fill="#BF360C">Europe</text>
+    <path d="M 430 235 L 530 232 L 552 300 L 520 395 L 465 420 L 428 330 Z" fill="#FFCC80" stroke="#E65100" stroke-width="3"/>
+    <text x="490" y="320" text-anchor="middle" font-size="22" font-weight="bold" fill="#BF360C">Afrique</text>
+    <ellipse cx="680" cy="205" rx="150" ry="85" fill="#CE93D8" stroke="#6A1B9A" stroke-width="3"/>
+    <text x="680" y="210" text-anchor="middle" font-size="23" font-weight="bold" fill="#4A148C">Asie</text>
+    <ellipse cx="800" cy="390" rx="66" ry="42" fill="#F48FB1" stroke="#AD1457" stroke-width="3"/>
+    <text x="800" y="396" text-anchor="middle" font-size="21" font-weight="bold" fill="#880E4F">Océanie</text>
+    <rect x="120" y="440" width="760" height="34" rx="16" fill="#ECEFF1" stroke="#90A4AE" stroke-width="3"/>
+    <text x="500" y="464" text-anchor="middle" font-size="21" font-weight="bold" fill="#37474F">Antarctique</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Un continent : une très grande étendue de terre entourée d'océans. Le plus grand : l'Asie.</text>
+</svg>

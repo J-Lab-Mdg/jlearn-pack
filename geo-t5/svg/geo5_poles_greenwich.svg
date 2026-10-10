@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les pôles et le méridien de Greenwich</text>
+  <rect x="40" y="90" width="920" height="420" rx="18" fill="#FDF6E3" stroke="#90A4AE" stroke-width="3"/>
+  
+  <defs><clipPath id="globp1"><circle cx="500" cy="290" r="150"/></clipPath></defs>
+  <circle cx="500" cy="290" r="150" fill="#4FC3F7" stroke="#0277BD" stroke-width="4"/>
+  <g clip-path="url(#globp1)" fill="#81C784">
+    <ellipse cx="432.5" cy="237.5" rx="45" ry="33" transform="rotate(-20 432.5 237.5)"/>
+    <ellipse cx="447.5" cy="342.5" rx="27" ry="39" transform="rotate(15 447.5 342.5)"/>
+    <ellipse cx="552.5" cy="267.5" rx="51.00000000000001" ry="45"/>
+    <ellipse cx="522.5" cy="372.5" rx="21.000000000000004" ry="15"/>
+  </g>
+  <line x1="500" y1="140" x2="500" y2="440" stroke="#C00000" stroke-width="5"/>
+  <ellipse cx="500" cy="290" rx="67.5" ry="150" fill="none" stroke="#90A4AE" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="500" cy="140" r="10" fill="#37474F"/>
+  <circle cx="500" cy="440" r="10" fill="#37474F"/>
+  <text x="500" y="124" text-anchor="middle" font-size="24" font-weight="bold" fill="#37474F">Pôle Nord</text>
+  <text x="500" y="474" text-anchor="middle" font-size="24" font-weight="bold" fill="#37474F">Pôle Sud</text>
+  <text x="486" y="290" text-anchor="end" font-size="22" font-weight="bold" fill="#C00000">Méridien de Greenwich</text>
+  <text x="514" y="280" font-size="20" fill="#546E7A" font-style="italic">(méridien d'origine,</text>
+  <text x="514" y="304" font-size="20" fill="#546E7A" font-style="italic">numéro 0)</text>
+  <text x="190" y="150" text-anchor="middle" font-size="22" fill="#546E7A" font-style="italic">Les méridiens relient</text>
+  <text x="190" y="178" text-anchor="middle" font-size="22" fill="#546E7A" font-style="italic">le pôle Nord au pôle Sud.</text>
+  <text x="500" y="558" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le pôle : le point le plus au Nord (ou le plus au Sud) de la Terre.</text>
+</svg>

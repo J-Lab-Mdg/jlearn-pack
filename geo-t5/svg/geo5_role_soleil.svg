@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Le rôle du Soleil pour la vie sur la Terre</text>
+  <rect x="40" y="90" width="920" height="400" rx="18" fill="#FFFDE7" stroke="#90A4AE" stroke-width="3"/>
+  <circle cx="190" cy="285" r="78" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/><line x1="273" y1="285" x2="286" y2="285" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="248.68986283848346" y1="343.68986283848346" x2="257.88225099390854" y2="352.88225099390854" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="190" y1="368" x2="190" y2="381" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="131.31013716151656" y1="343.68986283848346" x2="122.11774900609144" y2="352.88225099390854" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="107" y1="285" x2="94" y2="285" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="131.31013716151654" y1="226.31013716151656" x2="122.11774900609143" y2="217.11774900609146" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="189.99999999999997" y1="202" x2="189.99999999999997" y2="189" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="248.68986283848344" y1="226.31013716151654" x2="257.88225099390854" y2="217.11774900609143" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/>
+  <line x1="300" y1="215" x2="560" y2="185" stroke="#F9A825" stroke-width="5" stroke-dasharray="12 8"/>
+  <line x1="300" y1="285" x2="560" y2="265" stroke="#FB8C00" stroke-width="5" stroke-dasharray="12 8"/>
+  <line x1="300" y1="355" x2="560" y2="345" stroke="#F9A825" stroke-width="5" stroke-dasharray="12 8"/>
+  <rect x="560" y="130" width="360" height="310" rx="14" fill="#E8F5E9" stroke="#66BB6A" stroke-width="3"/>
+  <line x1="640" y1="400" x2="640" y2="330" stroke="#6D4C41" stroke-width="8"/>
+  <circle cx="640" cy="308" r="34" fill="#81C784" stroke="#558B2F" stroke-width="3"/>
+  <circle cx="640" cy="262" r="16" fill="#FF7043" stroke="#D84315" stroke-width="3"/>
+  <text x="640" y="268" text-anchor="middle" font-size="15" fill="#FFFFFF">fleur</text>
+  <text x="770" y="185" text-anchor="middle" font-size="22" font-weight="bold" fill="#E65100">La lumière</text>
+  <text x="770" y="212" font-size="19" fill="#37474F">elle éclaire la Terre</text>
+  <text x="770" y="272" text-anchor="middle" font-size="22" font-weight="bold" fill="#E65100">La chaleur</text>
+  <text x="770" y="299" font-size="19" fill="#37474F">elle réchauffe l'air et l'eau</text>
+  <text x="770" y="360" text-anchor="middle" font-size="22" font-weight="bold" fill="#1B5E20">La vie</text>
+  <text x="770" y="387" font-size="19" fill="#37474F">plantes, animaux et hommes</text>
+  <text x="500" y="535" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Sans la lumière et la chaleur du Soleil, la vie ne pourrait pas exister sur la Terre.</text>
+</svg>

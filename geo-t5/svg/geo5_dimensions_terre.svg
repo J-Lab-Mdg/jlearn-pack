@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les dimensions de la Terre</text>
+  <rect x="40" y="90" width="920" height="400" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  
+  <defs><clipPath id="globd1"><circle cx="500" cy="285" r="140"/></clipPath></defs>
+  <circle cx="500" cy="285" r="140" fill="#4FC3F7" stroke="#0277BD" stroke-width="4"/>
+  <g clip-path="url(#globd1)" fill="#81C784">
+    <ellipse cx="437" cy="236" rx="42" ry="30.8" transform="rotate(-20 437 236)"/>
+    <ellipse cx="451" cy="334" rx="25.2" ry="36.4" transform="rotate(15 451 334)"/>
+    <ellipse cx="549" cy="264" rx="47.6" ry="42"/>
+    <ellipse cx="521" cy="362" rx="19.6" ry="14"/>
+  </g>
+  <line x1="500" y1="145" x2="500" y2="425" stroke="#C00000" stroke-width="4" stroke-dasharray="10 6"/>
+  <text x="512" y="285" font-size="24" font-weight="bold" fill="#C00000">Diamètre</text>
+  <text x="512" y="315" font-size="24" font-weight="bold" fill="#C00000">≈ 12 742 km</text>
+  <path d="M 320 285 A 180 180 0 0 1 680 285" fill="none" stroke="#1E7B34" stroke-width="4" stroke-dasharray="12 7" marker-end="url(#{null})"/>
+  <text x="175" y="130" font-size="24" font-weight="bold" fill="#1E7B34">Circonférence</text>
+  <text x="175" y="160" font-size="24" font-weight="bold" fill="#1E7B34">≈ 40 000 km</text>
+  <text x="700" y="130" font-size="24" font-weight="bold" fill="#1F4E79">Superficie</text>
+  <text x="700" y="160" font-size="24" font-weight="bold" fill="#1F4E79">≈ 510 millions de km²</text>
+  <text x="500" y="530" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">La circonférence : le tour complet de la Terre. Le diamètre : la distance à travers la Terre.</text>
+</svg>

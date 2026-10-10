@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">La révolution de la Terre autour du Soleil</text>
+  <rect x="40" y="90" width="920" height="440" rx="18" fill="#FFFDE7" stroke="#90A4AE" stroke-width="3"/>
+  <circle cx="500" cy="300" r="66" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/><line x1="571" y1="300" x2="584" y2="300" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="550.2045814642448" y1="350.2045814642449" x2="559.39696961967" y2="359.39696961967" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="500" y1="371" x2="500" y2="384" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="449.7954185357551" y1="350.2045814642449" x2="440.60303038033" y2="359.39696961967" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="429" y1="300" x2="416" y2="300" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="449.7954185357551" y1="249.79541853575512" x2="440.60303038033" y2="240.60303038033" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="500" y1="229" x2="500" y2="216" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="550.2045814642448" y1="249.79541853575512" x2="559.39696961967" y2="240.60303038032998" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="500" cy="300" rx="240" ry="175" fill="none" stroke="#7B1FA2" stroke-width="4" stroke-dasharray="14 10"/>
+  <circle cx="500" cy="125" r="44" fill="#4FC3F7" stroke="#0277BD" stroke-width="3"/>
+  <ellipse cx="490" cy="117" rx="13" ry="9" fill="#81C784"/>
+  <ellipse cx="510" cy="135" rx="11" ry="8" fill="#81C784"/>
+  <text x="500" y="65" text-anchor="middle" font-size="19" font-weight="bold" fill="#6A1B9A">Position 1</text>
+  <path d="M 554 99 a 34 34 0 0 1 26 30" fill="none" stroke="#C00000" stroke-width="4"/>
+  <circle cx="740" cy="300" r="44" fill="#4FC3F7" stroke="#0277BD" stroke-width="3"/>
+  <ellipse cx="730" cy="292" rx="13" ry="9" fill="#81C784"/>
+  <ellipse cx="750" cy="310" rx="11" ry="8" fill="#81C784"/>
+  <text x="740" y="240" text-anchor="middle" font-size="19" font-weight="bold" fill="#6A1B9A">Position 2</text>
+  <path d="M 794 274 a 34 34 0 0 1 26 30" fill="none" stroke="#C00000" stroke-width="4"/>
+  <circle cx="500" cy="475" r="44" fill="#4FC3F7" stroke="#0277BD" stroke-width="3"/>
+  <ellipse cx="490" cy="467" rx="13" ry="9" fill="#81C784"/>
+  <ellipse cx="510" cy="485" rx="11" ry="8" fill="#81C784"/>
+  <text x="500" y="551" text-anchor="middle" font-size="19" font-weight="bold" fill="#6A1B9A">Position 3</text>
+  <path d="M 554 449 a 34 34 0 0 1 26 30" fill="none" stroke="#C00000" stroke-width="4"/>
+  <circle cx="260" cy="300" r="44" fill="#4FC3F7" stroke="#0277BD" stroke-width="3"/>
+  <ellipse cx="250" cy="292" rx="13" ry="9" fill="#81C784"/>
+  <ellipse cx="270" cy="310" rx="11" ry="8" fill="#81C784"/>
+  <text x="260" y="376" text-anchor="middle" font-size="19" font-weight="bold" fill="#6A1B9A">Position 4</text>
+  <path d="M 314 274 a 34 34 0 0 1 26 30" fill="none" stroke="#C00000" stroke-width="4"/>
+  <text x="500" y="585" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">La Terre fait le tour du Soleil en 365 jours et 6 heures : c'est la révolution.</text>
+</svg>

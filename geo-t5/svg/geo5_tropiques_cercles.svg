@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les grandes lignes imaginaires du globe</text>
+  <rect x="40" y="90" width="920" height="420" rx="18" fill="#FDF6E3" stroke="#90A4AE" stroke-width="3"/>
+  
+  <defs><clipPath id="globt1"><circle cx="500" cy="290" r="150"/></clipPath></defs>
+  <circle cx="500" cy="290" r="150" fill="#4FC3F7" stroke="#0277BD" stroke-width="4"/>
+  <g clip-path="url(#globt1)" fill="#81C784">
+    <ellipse cx="432.5" cy="237.5" rx="45" ry="33" transform="rotate(-20 432.5 237.5)"/>
+    <ellipse cx="447.5" cy="342.5" rx="27" ry="39" transform="rotate(15 447.5 342.5)"/>
+    <ellipse cx="552.5" cy="267.5" rx="51.00000000000001" ry="45"/>
+    <ellipse cx="522.5" cy="372.5" rx="21.000000000000004" ry="15"/>
+  </g>
+  
+    <line x1="350" y1="173" x2="650" y2="173" stroke="#7B1FA2" stroke-width="5" stroke-dasharray="10 6"/>
+    <text x="666" y="181" font-size="21" font-weight="bold" fill="#7B1FA2">Cercle polaire Arctique</text>
+  
+    <line x1="350" y1="227" x2="650" y2="227" stroke="#E65100" stroke-width="5" />
+    <text x="666" y="235" font-size="21" font-weight="bold" fill="#E65100">Tropique du Cancer</text>
+  
+    <line x1="350" y1="290" x2="650" y2="290" stroke="#C00000" stroke-width="5" />
+    <text x="666" y="298" font-size="21" font-weight="bold" fill="#C00000">Équateur</text>
+  
+    <line x1="350" y1="353" x2="650" y2="353" stroke="#E65100" stroke-width="5" />
+    <text x="666" y="361" font-size="21" font-weight="bold" fill="#E65100">Tropique du Capricorne</text>
+  
+    <line x1="350" y1="407" x2="650" y2="407" stroke="#7B1FA2" stroke-width="5" stroke-dasharray="10 6"/>
+    <text x="666" y="415" font-size="21" font-weight="bold" fill="#7B1FA2">Cercle polaire Antarctique</text>
+  <text x="500" y="558" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Madagascar est traversée par le tropique du Capricorne, dans sa partie Sud.</text>
+</svg>

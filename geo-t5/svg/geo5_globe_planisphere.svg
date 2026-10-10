@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Deux façons de représenter la Terre</text>
+  <rect x="40" y="90" width="440" height="380" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <rect x="520" y="90" width="440" height="380" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  
+  <defs><clipPath id="globg1"><circle cx="260" cy="265" r="120"/></clipPath></defs>
+  <circle cx="260" cy="265" r="120" fill="#4FC3F7" stroke="#0277BD" stroke-width="4"/>
+  <g clip-path="url(#globg1)" fill="#81C784">
+    <ellipse cx="206" cy="223" rx="36" ry="26.4" transform="rotate(-20 206 223)"/>
+    <ellipse cx="218" cy="307" rx="21.599999999999998" ry="31.200000000000003" transform="rotate(15 218 307)"/>
+    <ellipse cx="302" cy="247" rx="40.800000000000004" ry="36"/>
+    <ellipse cx="278" cy="331" rx="16.8" ry="12"/>
+  </g>
+  <line x1="260" y1="385" x2="260" y2="425" stroke="#6D4C41" stroke-width="6"/>
+  <ellipse cx="260" cy="432" rx="70" ry="14" fill="#8D6E63" stroke="#5D4037" stroke-width="3"/>
+  <text x="260" y="145" text-anchor="middle" font-size="26" font-weight="bold" fill="#C00000">Le globe terrestre</text>
+  <text x="260" y="480" text-anchor="middle" font-size="21" fill="#37474F">Une petite sphère qui imite</text>
+  <text x="260" y="506" text-anchor="middle" font-size="21" fill="#37474F">la forme réelle de la Terre.</text>
+  <rect x="560" y="150" width="360" height="220" rx="10" fill="#B3E5FC" stroke="#0277BD" stroke-width="4"/>
+  <ellipse cx="640" cy="215" rx="46" ry="32" fill="#81C784" transform="rotate(-18 640 215)"/>
+  <ellipse cx="700" cy="305" rx="26" ry="40" fill="#81C784" transform="rotate(12 700 305)"/>
+  <ellipse cx="800" cy="205" rx="52" ry="44" fill="#81C784"/>
+  <ellipse cx="855" cy="320" rx="28" ry="18" fill="#81C784"/>
+  <ellipse cx="740" cy="160" rx="22" ry="14" fill="#81C784"/>
+  <text x="740" y="145" text-anchor="middle" font-size="26" font-weight="bold" fill="#C00000">Le planisphère</text>
+  <text x="740" y="480" text-anchor="middle" font-size="21" fill="#37474F">La Terre dessinée à plat,</text>
+  <text x="740" y="506" text-anchor="middle" font-size="21" fill="#37474F">sur une surface plane.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le globe est fidèle à la forme de la Terre ; le planisphère est pratique à transporter.</text>
+</svg>

@@ -512,6 +512,76 @@
       "id": "geot4_carte_muette_climats",
       "url": "/geot4_carte_muette_climats.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo5_forme_terre",
+      "url": "/geo5_forme_terre.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_dimensions_terre",
+      "url": "/geo5_dimensions_terre.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_globe_planisphere",
+      "url": "/geo5_globe_planisphere.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_equateur_hemispheres",
+      "url": "/geo5_equateur_hemispheres.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_tropiques_cercles",
+      "url": "/geo5_tropiques_cercles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_poles_greenwich",
+      "url": "/geo5_poles_greenwich.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_continents",
+      "url": "/geo5_continents.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_oceans",
+      "url": "/geo5_oceans.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_lire_carte_monde",
+      "url": "/geo5_lire_carte_monde.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_rotation",
+      "url": "/geo5_rotation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_jour_nuit",
+      "url": "/geo5_jour_nuit.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_revolution",
+      "url": "/geo5_revolution.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_saisons",
+      "url": "/geo5_saisons.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_role_soleil",
+      "url": "/geo5_role_soleil.png",
+      "type": "image/png"
     }
   ]
 }

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">La rotation de la Terre</text>
+  <rect x="40" y="90" width="920" height="400" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <circle cx="200" cy="285" r="60" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/><line x1="265" y1="285" x2="278" y2="285" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="245.9619407771256" y1="330.96194077712556" x2="255.1543289325507" y2="340.1543289325507" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="200" y1="350" x2="200" y2="363" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="154.0380592228744" y1="330.9619407771256" x2="144.8456710674493" y2="340.1543289325507" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="135" y1="285" x2="122" y2="285" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="154.0380592228744" y1="239.0380592228744" x2="144.84567106744927" y2="229.8456710674493" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="200" y1="220" x2="199.99999999999997" y2="207" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="245.96194077712556" y1="239.0380592228744" x2="255.1543289325507" y2="229.84567106744927" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/>
+  <text x="200" y="390" text-anchor="middle" font-size="22" font-weight="bold" fill="#E65100">Le Soleil</text>
+  
+  <defs><clipPath id="globr1"><circle cx="560" cy="285" r="130"/></clipPath></defs>
+  <circle cx="560" cy="285" r="130" fill="#4FC3F7" stroke="#0277BD" stroke-width="4"/>
+  <g clip-path="url(#globr1)" fill="#81C784">
+    <ellipse cx="501.5" cy="239.5" rx="39" ry="28.6" transform="rotate(-20 501.5 239.5)"/>
+    <ellipse cx="514.5" cy="330.5" rx="23.4" ry="33.800000000000004" transform="rotate(15 514.5 330.5)"/>
+    <ellipse cx="605.5" cy="265.5" rx="44.2" ry="39"/>
+    <ellipse cx="579.5" cy="356.5" rx="18.200000000000003" ry="13"/>
+  </g>
+  <path d="M 530 129 A 40 40 0 1 1 590 129" fill="none" stroke="#C00000" stroke-width="6"/>
+  <path d="M 590 129 l -2 -20 l 18 8 Z" fill="#C00000"/>
+  <text x="560" y="95" text-anchor="middle" font-size="23" font-weight="bold" fill="#C00000">La Terre tourne sur elle-même</text>
+  <text x="560" y="461" text-anchor="middle" font-size="23" font-weight="bold" fill="#1E7B34">d'Ouest en Est, en 24 heures</text>
+  <text x="455" y="289" text-anchor="middle" font-size="20" font-weight="bold" fill="#0277BD">Ouest</text>
+  <text x="665" y="289" text-anchor="middle" font-size="20" font-weight="bold" fill="#0277BD">Est</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">La Terre tourne comme une toupie : c'est la rotation.</text>
+</svg>
