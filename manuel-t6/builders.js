@@ -1,4 +1,4 @@
-// Builders partagés — Manuel Anglais T4 J-Learn
+// Builders partagés — Manuel Anglais T6 J-Learn
 const fs = require("fs");
 const path = require("path");
 const {
@@ -132,11 +132,11 @@ function metaTable(m) {
       cell([
         L("Subject:", "English"), L("Theme:", m.theme), L("Title:", m.title),
         L("Specific learning outcome:", m.slo), L("Values:", m.values),
-        L("Documentation:", m.docs || "T4 English Syllabus (MEN — DCRP); T4 Pedagogical Resources Booklet"),
+        L("Documentation:", m.docs || "T6 English Syllabus (MEN — DCRP); T6 Pedagogical Resources Booklet"),
         L("Materials:", m.materials),
       ], { w: 6800 }),
       cell([
-        L("Date:", "……………………"), L("Class:", "T4"),
+        L("Date:", "……………………"), L("Class:", "T6"),
         L("Session n°:", m.session), L("Duration:", "……………………"),
       ], { w: 3600 }),
     ]})],

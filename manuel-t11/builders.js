@@ -132,11 +132,11 @@ function metaTable(m) {
       cell([
         L("Subject:", "English"), L("Theme:", m.theme), L("Title:", m.title),
         L("Specific learning outcome:", m.slo), L("Values:", m.values),
-        L("Documentation:", m.docs || "T7 English Syllabus (Programme d’études T7); T7 Pedagogical Resources Booklet"),
+        L("Documentation:", m.docs || "T11 English Syllabus (Programme d’études T11); T11 Pedagogical Resources Booklet"),
         L("Materials:", m.materials),
       ], { w: 6800 }),
       cell([
-        L("Date:", "……………………"), L("Class:", "T7"),
+        L("Date:", "……………………"), L("Class:", "T11"),
         L("Session n°:", m.session), L("Duration:", "……………………"),
       ], { w: 3600 }),
     ]})],
