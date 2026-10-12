@@ -1,7 +1,7 @@
 // T9 — UNIT 4 — HEALTHY LIFE (10 séances + révision + test) — Sessions 33 à 44 / 68
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "148F77"; // vert émeraude
@@ -97,6 +97,12 @@ function opening() {
     p("• imagine with If-clause type 2: If I were the Minister of Health…;"),
     p("• read how celebrities de-stress, and write my own healthy-life paragraphs!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("respect of life, responsibility.")], { after: 160 }),
+    rubricTable(
+      "Illnesses and cures; health idioms; emotional health.",
+      "Agreeing and disagreeing; advice for a healthy life.",
+      "Comparatives and superlatives; the relative pronouns."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("Your body is your house for life — there is no spare one! In this unit, you learn the English of health: saying how you feel, asking for advice, giving advice, and keeping your body AND your mind in great shape.", { after: 40 }),
     ]),
@@ -862,18 +868,25 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 4", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. Illnesses and cures"),
     bullet([run("illness, symptom, pain, dizziness, fever, cough; traditional cures = home remedies (boiled leaves, honey and lemon — good for treating cough!) vs modern cures.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. Health idioms"),
     bullet([run("sick as a dog; under the weather; you are what you eat; you’ll be better in no time; I’m at death’s door; feeling queasy.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. Agreement / disagreement"),
     bullet([run("Do you agree with (someone) / on (something)? — I totally agree on it. / I don’t agree. / I disagree with you.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. Comparatives and superlatives"),
     bullet([run("cheaper than / more effective than; the cheapest / the most effective; good-better-best, bad-worse-worst.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. Relative pronouns"),
     bullet([run("who (people), which (things), that (both), whose (possession): I talk to someone who listens; music which calms me down.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("6. Emotional health"),
     bullet([run("to be stressed / afraid of / sad / happy / angry; to worry, to keep calm, to calm down, to be joyful, to get out of stress; the two anti-stress weapons: exercise + sleep!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("7. Advice and dreams"),
     bullet([run("You should / shouldn’t + verb (Ninah’s healthy day!); If + past simple → would + verb: If I were the Minister of Health, I would build more clinics.", { bold: true, color: C.BLUE })]),
   ];

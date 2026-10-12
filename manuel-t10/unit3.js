@@ -1,7 +1,7 @@
 // T10 — UNIT 3 — MY HOUSE, MY NEIGHBOURHOOD (6 séances + révision + test) — Sessions 19 à 26 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B9770E"; // ocre
@@ -65,6 +65,12 @@ function opening() {
     p("• listen to and read texts about houses and chores;"),
     p("• write a paragraph about the household activities of my community.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, collaboration.")], { after: 160 }),
+    rubricTable(
+      "The rooms, the furniture, the appliances; the household activities.",
+      "Describing your house and neighbourhood: the description tour.",
+      "The big preposition family (12); the judge-adjectives."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("Your house is your first country! In this unit, English enters the living room, the kitchen and even the messy bedroom of your brother. After it, you can describe any house of your neighbourhood — and tell the world who sweeps, who cooks and who irons!", { after: 40 }),
     ]),
@@ -513,16 +519,22 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 3", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. The rooms and the features"),
     bullet([run("the living room, the kitchen, the bedroom, the bathroom;", { bold: true, color: C.BLUE }), run("  the roof, the walls, the stairs, upstairs/downstairs; made of brick/wood/clay.")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The furniture and the appliances"),
     bullet([run("a sofa, a low table, a shelf; a bed, a wardrobe; a stove, a pot, a sink; a radio, a lamp.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The big preposition family (12)"),
     bullet([run("on, in, under, next to, between, behind + above, below, near, opposite, in front of, in the corner.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("4. The household activities"),
     bullet([run("sweep, mop, do the washing-up, do the laundry, hang the clothes, iron, make the bed, tidy, dust, take out the rubbish.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("5. The judge-adjectives"),
     bullet([run("tidy ↔ messy; clean ↔ dirty.", { bold: true, color: C.BLUE }), run("  A tidy room, a quiet head!")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("6. The description tour"),
     bullet([run("Outside → room by room → objects with prepositions → the heart: it is home!", { bold: true, color: C.BLUE })]),
   ];

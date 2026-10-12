@@ -1,7 +1,7 @@
 // UNIT 3 — NUMBERS (3 séances + révision + test) — Sessions 13 à 17 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "00838F"; // bleu-vert
@@ -48,6 +48,12 @@ function opening() {
     p("• say the “One, two” rhyme;"),
     p("• ask and answer: How many … are there?", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, perseverance.")], { after: 160 }),
+    rubricTable(
+      "The numbers 1 to 20.",
+      "Counting objects; saying your age.",
+      "How many … are there? — There are…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -256,6 +262,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 3", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("NUMBERS"),
+    rubricBadge("VOCABULARY"),
     sub("1. Numbers 1 to 10"),
     numberGrid(NUM.slice(0, 10)),
     p("", { after: 100 }),
@@ -265,9 +272,11 @@ function lesson() {
     p([run("Five, six, clap your hands!", { italic: true })], { center: true, after: 40 }),
     p([run("Seven, eight, stand up straight!", { italic: true })], { center: true, after: 40 }),
     p([run("Nine, ten, once again!", { italic: true })], { center: true, after: 120 }),
+    rubricBadge("VOCABULARY"),
     sub("3. Numbers 11 to 20"),
     numberGrid(NUM.slice(10)),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. How many … are there?"),
     pr([run("To ask about a quantity: "), ...kw("How many pens are there?", "haou mèni pènz âr zèr")]),
     pr([run("The answer: "), ...kw("There are 3 pens.", "zèr âr tsri pènz")]),

@@ -1,7 +1,7 @@
 // T7 — UNIT 6 — THE ENVIRONMENT (14 séances + révision + test) — Sessions 84 à 99 / 99
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "2E7D32"; // vert
@@ -66,6 +66,12 @@ function opening() {
     p("• compare foreign towns with Malagasy towns;"),
     p("• describe my favourite place in 4-5 sentences.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, solidarity.")], { after: 160 }),
+    rubricTable(
+      "The local buildings; the surroundings; the furniture verbs.",
+      "Reading the map; describing and comparing places.",
+      "The demonstratives; the prepositions of place."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 5)", [
       p("In Unit 5 we interviewed people about the means of communication: Do you watch TV? When?"),
       p("In Unit 6, we walk around town: this is the school, that is the hospital — welcome to our environment!", { after: 40 }),
@@ -1053,18 +1059,25 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 6", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("THE ENVIRONMENT"),
+    rubricBadge("VOCABULARY"),
     sub("1. The local buildings"),
     bullet([run("school — hospital — town hall — Fokontany office — stadium — library — post office — health center", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The surroundings"),
     bullet([run("the garden, the gate, the fence, the flag", { bold: true, color: C.BLUE }), run(" — described with HAS and THERE IS/ARE")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. The furniture verbs"),
     bullet([run("sit ON the chair — write ON the board — sleep IN the bed — read AT the table", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. The demonstratives"),
     bullet([run("near: THIS/THESE — far: THAT/THOSE — ", { bold: true }), run("This is our school, those are the gardens!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The prepositions of place"),
     bullet([run("in, on, under, in front of, behind, next to, between, opposite, near", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("6. The map"),
     bullet([run("the town seen by a bird — locate each building with the prepositions!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("7. Describing and comparing places"),
     bullet([run("the toolbox: HAS + THERE IS/ARE + preposition + demonstrative", { bold: true, color: C.BLUE })]),
     bullet([run("comparing: BOTH (same) — BUT (different) — LIKE (resemblance)", { bold: true, color: C.BLUE })], { after: 140 }),

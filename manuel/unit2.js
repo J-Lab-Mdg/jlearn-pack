@@ -1,7 +1,7 @@
 // UNIT 2 — THE ALPHABET (2 séances + révision + test) — Sessions 9 à 12 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "7030A0"; // violet
@@ -46,6 +46,12 @@ function opening() {
     p("• sing the Alphabet Song;"),
     p("• spell my name.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("perseverance, self-confidence.")], { after: 160 }),
+    rubricTable(
+      "The 26 letters of the English alphabet, A to Z.",
+      "Spelling your name; singing the Alphabet Song.",
+      "Capital letters and small letters."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -202,15 +208,18 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 2", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("THE ALPHABET"),
+    rubricBadge("VOCABULARY"),
     sub("1. The English alphabet"),
     pr([run("The English "), ...kw("alphabet", "alfabèt"), run(" has "),
         ...kw("twenty-six (26) letters", "touènti-siks lèteuz"), run(".")]),
     pr([run("Each letter has a "), ...kw("big form", "big fôm"), run(" and a "),
         ...kw("small form", "smôl fôm"), run(". Example: A – a ; B – b.")], { after: 100 }),
     img("alphabet_chart.png", 300, 1365 / 768),
+    rubricBadge("VOCABULARY"),
     sub("2. The letters A to M"),
     letterGrid(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]),
     p("", { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. The letters N to Z"),
     letterGrid(["N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]),
     p("", { after: 100 }),
@@ -224,6 +233,7 @@ function lesson() {
     p([run("Next time won’t you sing with me?", { italic: true })], { center: true, after: 80 }),
     pr([run("In the song, we say Z "), run("[zi]", { italic: true, color: C.GRAY }),
         run(" — it rhymes with “me”.")], { after: 120 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. I spell my name"),
     pr([run("To "), ...kw("spell", "spèl"), run(" a name, we say it letter by letter:")]),
     p("— What’s your name?"),

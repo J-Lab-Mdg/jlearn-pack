@@ -1,7 +1,7 @@
 // T7 — UNIT 2 — CLASSROOM COMMUNICATION (11 séances + révision + test) — Sessions 18 à 30 / 99
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "B03A2E"; // rouge brique
@@ -61,6 +61,12 @@ function opening() {
     p("• read a dialogue about classroom communication;"),
     p("• write a set of meaningful classroom instructions.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("solidarity, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "Lend, borrow, give back; the classroom objects.",
+      "Classroom instructions; borrowing politely; giving and giving back.",
+      "Negative commands; the modals can and could."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 1)", [
       p("In Unit 1 we talked about our dreams and goals, we introduced our friends and we gave our opinion."),
       p("In Unit 2, we learn the language OF the classroom: instructions, and borrowing and lending — with a big smile and a “please”!", { after: 40 }),
@@ -903,20 +909,25 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 2", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("CLASSROOM COMMUNICATION"),
+    rubricBadge("FUNCTIONS"),
     sub("1. Classroom instructions"),
     bullet([...kw("Stand up! Sit down! Open your books! Close your books!", "stannde eup — site daoune — ôoupeune iôr bouks")]),
     bullet([...kw("Listen carefully! Repeat after me! Raise your hand!", "lisseune kèrfouli — ripite afteur mi — réiz iôr hannde")]),
     bullet([run("The rule: ", { bold: true }), run("verb first, no subject — “please” makes it polite", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. Negative commands"),
     bullet([run("The rule: ", { bold: true }), run("Don’t + verb", { bold: true, color: C.BLUE }), run("  (Don’t = do not)")]),
     bullet([...kw("Don’t talk! Don’t run! Don’t forget your homework!", "dôonnte tôk — dôonnte reune")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. Lend, borrow, give back"),
     bullet([run("borrow", { bold: true, color: C.BLUE }), run(" = I take for a moment — "), run("lend", { bold: true, color: C.BLUE }), run(" = I give for a moment — "), run("give back", { bold: true, color: C.BLUE }), run(" = I return")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. Borrowing politely — the modals can and could"),
     bullet([...kw("Can I borrow your pen, please? ↗", "kane aï borôou iôr pène pliiz")]),
     bullet([...kw("May I borrow your ruler, please? ↗", "méi aï borôou iôr rouleur pliiz")]),
     bullet([...kw("Could you lend me an eraser, please? ↗", "koud iou lènnde mi ane iréizeur pliiz"), run("  (could = the polite can)")]),
     bullet([run("After a modal, the verb stays in its base form!", { bold: true, color: C.RED })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. Giving and giving back"),
     bullet([...kw("Sure! / Of course! Here you are.", "chour — ov côrss — hir iou âr")]),
     bullet([...kw("Here is your pen back, thank you very much!", "hir iz iôr pène bak")]),

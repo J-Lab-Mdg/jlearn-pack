@@ -1,7 +1,7 @@
 // T10 — UNIT 10 — TALKING ON THE PHONE (7 séances + révision + test) — Sessions 80 à 88 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "7D6608"; // or téléphone
@@ -79,6 +79,12 @@ function opening() {
     p("• relay a message with the reported speech: she said that…, she asked you to…;"),
     p("• write and act a complete phone dialogue!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, autonomy.")], { after: 160 }),
+    rubricTable(
+      "The phone verbs; the voicemail words.",
+      "The four acts of the call; the register; leaving a voicemail.",
+      "Expressing the purpose; the reported speech (the relay)."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("The phone is the fastest bridge between two voices — for a job interview, a sick baby or a simple hello. The last unit of the year gives you the words, the register and the confidence to cross that bridge in English. Pick up — the world is calling!", { after: 40 }),
     ]),
@@ -613,16 +619,22 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 10", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. The phone verbs"),
     bullet([run("pick up, hang up, call back, dial a number, send a message, leave a message.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. The four acts of the call"),
     bullet([run("Hello! This is… May I speak to…? — Who is calling, please? — I’m sorry? Can you repeat? — Thank you, goodbye!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. The register"),
     bullet([run("Formal: May I speak to Mrs Soa, please? — Informal: Hi, it’s me! Is Soa there?", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. The voicemail"),
     bullet([run("Name + purpose + number: Hi! This is Soa. I’m calling to remind you about the test. Please call me back at 034 12 345 67!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The purpose"),
     bullet([run("I’m calling to + verb; in order to; so that no word gets lost!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. The reported speech — the relay"),
     bullet([run("She said that you had a test. She asked whether you could call back. She told you to bring the book — and not to forget!", { bold: true, color: C.BLUE })]),
   ];

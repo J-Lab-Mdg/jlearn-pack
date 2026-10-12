@@ -1,7 +1,7 @@
 // UNIT 4 — CLASSROOM LANGUAGE (2 séances + révision + test) — Sessions 18 à 21 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "C0504D"; // brique
@@ -26,6 +26,12 @@ function opening() {
     p("• play “Simon says”;"),
     p("• ask for permission: May I go out, please?", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("responsibility, self-confidence.")], { after: 160 }),
+    rubricTable(
+      "The commands of the class: stand up, sit down, listen, repeat…",
+      "Giving and following commands; asking for permission: May I go out, please?",
+      "The imperative; May I…?"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -179,6 +185,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 4", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("CLASSROOM LANGUAGE"),
+    rubricBadge("FUNCTIONS"),
     sub("1. The commands of the class"),
     cmd("Stand up!", "stand eup", "I stand."),
     cmd("Sit down!", "site daoun", "I sit."),
@@ -196,6 +203,7 @@ function lesson() {
     p("Do the action ONLY if you hear “Simon says” first."),
     pr([run("“Simon says: stand up!”", { italic: true }), run("  →  stand up. ")]),
     pr([run("“Sit down!”", { italic: true }), run(" (without Simon says)  →  do not move!")], { after: 120 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. Asking for permission"),
     pr([run("I raise my hand and I say: "), ...kw("May I go out, please?", "méi aï gôou aout, plize")]),
     pr([run("The teacher says yes: "), ...kw("Yes, go ahead.", "yès, gôou euhèd")]),

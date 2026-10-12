@@ -1,7 +1,7 @@
 // UNIT 11 — FARM ANIMALS AND PETS (2 séances + révision + test) — Sessions 54 à 57 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "1F3864"; // bleu nuit
@@ -46,6 +46,12 @@ function opening() {
     p("• answer: What is this? — It is a cat;"),
     p("• play the animal games: draw, mime, true or false.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("love of effort, looking for the best.")], { after: 160 }),
+    rubricTable(
+      "The farm animals and the pets.",
+      "Naming the animals; asking a friend: Draw me a…!",
+      "What is this? — It is a…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -185,14 +191,17 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 11", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("FARM ANIMALS AND PETS"),
+    rubricBadge("VOCABULARY"),
     sub("1. The animals"),
     img("u11_animals.png", 300, 1370 / 768),
     animalsGrid(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. What is this?"),
     pr([run("The question: "), ...kw("What is this?", "ouate iz zis")]),
     pr([run("The answer: "), ...kw("It is a cat.", "it iz e kate"),
         run("  "), ...kw("It is a zebu.", "it iz e zibou")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. Draw me a …!"),
     pr([run("The command: "), ...kw("Draw me a cat!", "drô mi e kate"),
         run(" — we draw the animal on the slate.")], { after: 140 }),

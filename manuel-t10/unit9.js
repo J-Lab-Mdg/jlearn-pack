@@ -1,7 +1,7 @@
 // T10 — UNIT 9 — THE JOB THAT'S RIGHT FOR YOU (8 séances + révision + test) — Sessions 70 à 79 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1A5276"; // bleu métier
@@ -72,6 +72,12 @@ function opening() {
     p("• say my dream job — and defend my choice!;"),
     p("• write a short text about my job aspirations.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("responsibility, autonomy.")], { after: 160 }),
+    rubricTable(
+      "The job words, the situations, the qualities.",
+      "Asking and answering the job questions; describing the dream job.",
+      "The possessive; the ability tools: can / be able to."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("One question will follow you all your life, in every country and every language: “What do you do?” This unit prepares your answer of today (I am a student!) and your answer of tomorrow — the job that’s right for YOU.", { after: 40 }),
     ]),
@@ -676,14 +682,19 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 9", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("FUNCTIONS"),
     sub("1. The job questions and answers"),
     bullet([run("What do you do (for a living)? What’s your occupation? — I am a nurse / I work as a mechanic.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The job situations"),
     bullet([run("I’m not working for the moment — I’m between jobs — I’m currently applying for jobs — I have an interview!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The places and the possessive"),
     bullet([run("in a hospital, on a farm, at the market — my mother’s shop, the farmers’ trucks.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("4. The qualities"),
     bullet([run("hardworking, self-confident (compound adjectives!), patient, honest, careful, creative.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The ability tools"),
     bullet([run("able to + verb; know how to + verb; good at + verb-ING!", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("6. The dream job"),

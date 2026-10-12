@@ -1,7 +1,7 @@
 // T8 — UNIT 7 — MY CITY, MY COUNTRY (10 séances + révision + test) — Sessions 70 à 81 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "D35400"; // orange
@@ -80,6 +80,12 @@ function opening() {
     p("• read a text about city and country life;"),
     p("• write a paragraph comparing the two — and dream of my next visit!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("respect of life, self-confidence.")], { after: 160 }),
+    rubricTable(
+      "The buildings of the city.",
+      "Asking and giving directions.",
+      "The prepositions of place; the relative clause with where."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 6)", [
       p("In Unit 6, the news travelled by radio, phone and letters."),
       p("In Unit 7 — the LAST unit! — English walks with you: in your city, in your village, everywhere in your beautiful country!", { after: 40 }),
@@ -828,13 +834,17 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 7", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("MY CITY, MY COUNTRY"),
+    rubricBadge("VOCABULARY"),
     sub("1. The buildings"),
     bullet([run("City: the town hall, the post office, the bank, the hospital, the train station, the library, the market, the park", { bold: true, color: C.BLUE })]),
     bullet([run("Country: the village, the rice fields, the well, the wooden church, the small school", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. The prepositions of place"),
     bullet([run("next to, between, opposite, in front of, behind, near — The school is between the library and the town hall.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The relative clause with where"),
     bullet([run("A library is a place where we read books. Antsirabe is a city where the air is cool.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. Asking and giving directions"),
     bullet([run("How can I get to…? — Go straight on! At the corner, turn left. At the roundabout, turn right!", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("5. City and country, here and there"),

@@ -1,7 +1,7 @@
 // T10 — UNIT 2 — CLASSROOM COMMUNICATION (6 séances + révision + test) — Sessions 11 à 18 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B03A2E"; // rouge brique
@@ -80,6 +80,12 @@ function opening() {
     p("• read a classroom dialogue and find the hidden information;"),
     p("• write my own classroom dialogue.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, collaboration.")], { after: 160 }),
+    rubricTable(
+      "The classroom objects and commands.",
+      "Requests; asking for permission; choosing the right register.",
+      "The imperative; No / Stop + gerund; the prepositions of place."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("One classroom, forty students, one teacher: without the polite words, it is chaos! With May I…?, Could you…? and the commands, the class becomes a team. Respect is the first grammar of the classroom.", { after: 40 }),
     ]),
@@ -539,19 +545,25 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 2", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("GRAMMAR"),
     sub("1. The classroom commands — the imperative"),
     bullet([run("Affirmative: ", { bold: true }), run("Stand up! Open your books! Come to the board!", { bold: true, color: C.BLUE })]),
     bullet([run("Negative: ", { bold: true }), run("Don’t talk! Don’t be late!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. No + gerund, Stop + gerund"),
     bullet([run("No talking, please! No eating in class!", { bold: true, color: C.BLUE }), run("  (signs and rules)")]),
     bullet([run("Stop chatting! Stop making noise!", { bold: true, color: C.BLUE }), run("  (stop NOW!)")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The prepositions of place"),
     bullet([run("on, in, under, next to, between, behind", { bold: true, color: C.BLUE }), run("  —  Put your bags under the desks!")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. Requests — ask somebody to do something"),
     bullet([run("Can you…? → Will you…? → Could you…? → Would you…, please?", { bold: true, color: C.BLUE }), run("  (the politer, the higher!)")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. Permission — ask if YOU may do something"),
     bullet([run("Can I…? → May I…? → Do you mind if I…?", { bold: true, color: C.BLUE })]),
     bullet([run("Yes: Sure! Go ahead! Yes, you may. No, I don’t mind (= yes!). — No: I’m afraid not.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("6. The register"),
     bullet([run("Friend → simple key; teacher, principal, mayor, president, celebrity → VIP key!", { bold: true, color: C.BLUE })]),
   ];

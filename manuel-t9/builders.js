@@ -207,8 +207,43 @@ function iCan(unitLabel, color, items, nextText) {
   return out;
 }
 
+
+// ------- Rubriques officielles du PE (Vocabulary / Language functions / Grammar) -------
+const RUBRICS = {
+  VOCABULARY: { color: "1E8449", icon: "\u{1F4D7}", label: "VOCABULARY" },
+  FUNCTIONS:  { color: "B9770E", icon: "\u{1F5E3}", label: "LANGUAGE FUNCTIONS" },
+  GRAMMAR:    { color: "6C3483", icon: "\u2699", label: "GRAMMAR" },
+};
+// Option A — petit badge coloré au-dessus d'une section de leçon
+function rubricBadge(kind) {
+  const r = RUBRICS[kind];
+  return pr([run(" " + r.icon + " " + r.label + " ", { bold: true, color: "FFFFFF", size: 17 })],
+    { shade: r.color, after: 50 });
+}
+// Option C — tableau « This unit in the PE » en ouverture d'unité
+function rubricTable(voc, func, gram) {
+  const row = (kind, text) => {
+    const r = RUBRICS[kind];
+    return new TableRow({ children: [
+      cell([pr([run(r.icon + " " + r.label, { bold: true, color: "FFFFFF", size: 19 })])],
+        { w: 2900, shade: r.color }),
+      cell([pr([run(text, { size: 20 })])], { w: 7500 }),
+    ]});
+  };
+  return new Table({
+    width: { size: 10400, type: WidthType.DXA },
+    rows: [
+      new TableRow({ children: [cell(
+        [p([run("THIS UNIT IN THE OFFICIAL PROGRAMME (PE)", { bold: true, size: 20 })], { center: true })],
+        { colSpan: 2, shade: C.HDR1 })] }),
+      row("VOCABULARY", voc), row("FUNCTIONS", func), row("GRAMMAR", gram),
+    ],
+  });
+}
+
 module.exports = {
   C, SZ, FONT, run, p, pr, kw, pAns, noBorders, cell, img, pageBreak,
   bookmarkTitle, tocLink, unitBanner, audioBox, fp, metaTable, headerRows,
   sectionRow, stepRow, deroulement, fiche, lessonTitle, sub, iCan,
+  rubricBadge, rubricTable,
 };

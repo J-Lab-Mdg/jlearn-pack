@@ -1,7 +1,7 @@
 // T10 — UNIT 6 — NARRATING A PAST EVENT (6 séances + révision + test) — Sessions 44 à 51 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "AD1457"; // framboise
@@ -66,6 +66,12 @@ function opening() {
     p("• read a story, complete its diagram and invent a new ending;"),
     p("• write my own story — for the story book of the class!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, self-esteem.")], { after: 160 }),
+    rubricTable(
+      "The time expressions of the past; the feelings and reactions.",
+      "Narrating a past event in the right order.",
+      "The simple past; the sequence markers."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("Everybody has a story — the day you were scared, the day you laughed until you cried. This unit gives you the English tools to tell YOUR stories… and at the end, the whole class writes a real story book!", { after: 40 }),
     ]),
@@ -521,12 +527,16 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 6", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. The time machine"),
     bullet([run("yesterday morning, last night, last weekend, a few minutes ago, two years ago.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. The simple past"),
     bullet([run("Calm family: + -ed (walked, played). Famous family: go→went, see→saw, hear→heard, eat→ate, take→took, wake→woke, have→had.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. The feelings and the reactions"),
     bullet([run("I was scared / worried / frightened / curious. We had fun! — It was scary / amazing / awesome!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. The sequence markers"),
     bullet([run("First (of all), → After that, / Next, / Then, → Finally. At the beginning, with a comma, three minimum!", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("5. The reader-detective"),

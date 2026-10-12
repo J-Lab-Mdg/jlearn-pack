@@ -1,7 +1,7 @@
 // T5 — UNIT 5 — MY BIRTHDAY IS ON… (5 séances + révision + test) — Sessions 18 à 24 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "76923C"; // vert olive
@@ -85,6 +85,12 @@ function opening() {
     p("• say my favourite month;"),
     p("• say my birthday: My birthday is on … It is a …", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The numbers 21 to 40; the twelve months of the year.",
+      "Saying your favourite month; speaking about your birthday.",
+      "When is your birthday? — in + month, on + date."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -369,21 +375,25 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 5", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("MY BIRTHDAY IS ON…"),
+    rubricBadge("VOCABULARY"),
     sub("1. The numbers 21 to 40"),
     numberGrid(),
     p("", { after: 60 }),
     sayItRight("thirTEEN (13) — the strong part at the END. THIRty (30) — the strong part at the START!"),
     p("", { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The twelve months of the year"),
     monthGrid(),
     p("", { after: 100 }),
     sub("3. The song"),
     monthsSongBox(),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. My favourite month"),
     pr([run("The question: "), ...kw("What is your favourite month?", "ouate iz iôr féivrite monnss")]),
     pr([run("The answer: "), ...kw("My favourite month is December.", "maï féivrite monnss iz dissèmbeur")]),
     pr([run("We respect the choice: "), ...kw("Great!", "gréite"), run("  "), ...kw("Good!", "goud")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. My birthday"),
     img("u5_birthday.png", 420, 768 / 1408),
     pr([run("The question: "), ...kw("When is your birthday?", "ouène iz iôr beurssdéi")]),

@@ -1,7 +1,7 @@
 // T7 — UNIT 5 — MEANS OF COMMUNICATION (16 séances + révision + test) — Sessions 66 à 83 / 99
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "148F77"; // vert sarcelle
@@ -78,6 +78,12 @@ function opening() {
     p("• read a radio interview;"),
     p("• interview a classmate and write the report.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("solidarity, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The means of communication and their verbs.",
+      "The interview and the report; asking and giving opinion.",
+      "Yes/No and WH-questions; habit vs happening now; the coordinators."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 4)", [
       p("In Unit 4 we described the family: What does she look like? What kind of person is she?"),
       p("In Unit 5, the family communicates: by radio, by phone, on WhatsApp… Hello, hello!", { after: 40 }),
@@ -1235,19 +1241,26 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 5", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("MEANS OF COMMUNICATION"),
+    rubricBadge("VOCABULARY"),
     sub("1. The means of communication"),
     bullet([run("on paper: newspaper, notice board — on the waves: radio, TV, phone — on the internet: email, Facebook, Messenger, WhatsApp", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The verbs"),
     bullet([run("watch TV — listen TO the radio — read the newspaper — make a phone call — send an email — chat ON WhatsApp — surf ON the internet", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. Yes/No questions and short answers"),
     bullet([run("DO/DOES + subject + base verb? ", { bold: true }), run("Do you watch TV? — Yes, I do. / Does she…? — No, she doesn’t.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. WH-questions"),
     bullet([run("WHEN (the time), WITH WHO (the person) + do/does…? ", { bold: true }), run("When do you watch TV? — In the evening.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. Habit vs happening now"),
     bullet([run("Habit → present simple: "), run("I watch TV every evening.", { bold: true, color: C.BLUE })]),
     bullet([run("Now → BE + verb-ING: "), run("Shh! I am watching TV right now!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. The coordinators"),
     bullet([run("AND adds — BUT opposes — OR chooses — SO concludes", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("7. The interview and the report"),
     bullet([run("6 questions → notes → report: "), run("Andry watches TV before going to bed. (he/she + verb-S!)", { bold: true, color: C.BLUE })], { after: 140 }),
     audioBox([

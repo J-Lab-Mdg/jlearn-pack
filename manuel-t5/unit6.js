@@ -1,7 +1,7 @@
 // T5 — UNIT 6 — MY DREAM CLASSROOM (3 séances + révision + test) — Sessions 25 à 29 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "BF8F00"; // or
@@ -58,6 +58,12 @@ function opening() {
     p("• say and read the classroom words;"),
     p("• speak about my dream classroom with There is / There are.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("perseverance, unity.")], { after: 160 }),
+    rubricTable(
+      "The numbers 40 to 70; the classroom words.",
+      "Describing your dream classroom.",
+      "There is… / There are…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -236,20 +242,24 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 6", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("MY DREAM CLASSROOM"),
+    rubricBadge("VOCABULARY"),
     sub("1. The numbers 40 to 70"),
     numberGrid(),
     p("", { after: 100 }),
     sub("2. The “more or less” game"),
     pr([run("Too high? Say "), run("less!", { bold: true, color: C.BLUE }), run(" [lèss] (hand down). Too low? Say "),
         run("more!", { bold: true, color: C.BLUE }), run(" [môr] (hand up).")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. The classroom words"),
     img("u6_classroom.png", 440, 768 / 1408),
     wordGrid(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. There is … / There are …"),
     pr([run("For ONE thing: "), ...kw("There is a teacher.", "zèr iz e titcheur")]),
     pr([run("For MANY things: "), ...kw("There are twelve pupils.", "zèr âr touèlv pioupolz")]),
     pr([run("The question: "), ...kw("How many pupils are there?", "haou mèni pioupolz âr zèr")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. My dream classroom"),
     pr([run("This is my dream classroom. ", { bold: true, color: C.BLUE }),
         run("There is a teacher. There are twelve pupils. ", { bold: true, color: C.BLUE }),

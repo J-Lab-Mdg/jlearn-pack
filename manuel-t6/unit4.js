@@ -1,7 +1,7 @@
 // T6 — UNIT 4 — EVERYDAY MEALS (9 séances + révision + test) — Sessions 31 à 41 / 74
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "C0504D"; // rouge brique
@@ -125,6 +125,12 @@ function opening() {
     p("• say my favourite food: My favourite fruit is… I prefer…;"),
     p("• read and write about everyday meals.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("solidarity, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The everyday food; the four tastes.",
+      "Saying likes and dislikes; speaking about your favourite food.",
+      "The present simple: I like / I don’t like."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -625,26 +631,31 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 4", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("EVERYDAY MEALS"),
+    rubricBadge("VOCABULARY"),
     sub("1. The everyday food"),
     img("u4_food.png", 440, 768 / 1408),
     grid(FOOD, 3),
     p("", { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. Hungry or thirsty?"),
     pr([...kw("I’m hungry!", "aïm heunngri"), run(" = I want to eat.  "), ...kw("I’m thirsty!", "aïm seursti"), run(" = I want to drink.")]),
     pr([...kw("What’s for lunch?", "ouots fôr leunntch"), run("   "), ...kw("What’s for dessert?", "ouots fôr dizeurte")]),
     pr([...kw("It looks tasty!", "ite louks téisti"), run("   "), ...kw("What a delicious meal!", "ouate e dilicheuss mile")], { after: 60 }),
     lunchDialogueBox(),
     p("", { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. The four tastes"),
     img("u4_tastes.png", 440, 768 / 1408),
     grid(TASTES, 4),
     p("", { after: 40 }),
     pr([run("The sentence: "), ...kw("It tastes sweet.", "ite téists souite"), run("  /  "), ...kw("Mangoes are sweet.", "manngôouz âr souite")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. I like, I don’t like"),
     chantBox(),
     p("", { after: 60 }),
     pr([...kw("I like chocolate.", "aï laïk tchoklite"), run("   "), ...kw("I don’t like cheese.", "aï dôounte laïk tchize")]),
     pr([...kw("Do you like coffee?", "dou iou laïk kofi"), run("  →  "), ...kw("Yes, I do. / No, I don’t.", "yèss aï dou / nôou aï dôounte")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. My favourite food"),
     fruitDialogueBox(),
     p("", { after: 60 }),

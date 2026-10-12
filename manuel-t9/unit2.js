@@ -1,7 +1,7 @@
 // T9 — UNIT 2 — FOOD (10 séances + révision + test) — Sessions 11 à 22 / 68
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "6C3483"; // violet
@@ -85,6 +85,12 @@ function opening() {
     p("• read a text about nutrition and write an advice letter;"),
     p("• discover American food idioms — and check famous food myths!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("healthy eating, responsibility.")], { after: 160 }),
+    rubricTable(
+      "The four food groups; measuring words.",
+      "Recommending food; writing the advice letter.",
+      "Should; comparatives and superlatives."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("Every day, three times a day, you choose what goes into your body. In this unit, you learn to choose like a champion — and to help your family eat better too!", { after: 40 }),
     ]),
@@ -821,16 +827,20 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 2", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. The four food groups"),
     bullet([run("Energy-giving (rice, cassava, oil) — body-building (meat, fish, eggs, beans, milk) — protective (fruits, vegetables) — water.", { bold: true, color: C.BLUE })]),
     bullet([run("Balanced diet = all the groups, every day. Junk food = high in salt, sugar, fat; low in nutritional value.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. Describing and measuring food"),
     bullet([run("Adjectives: fresh, raw, ripe, canned, dried.", { bold: true, color: C.BLUE })]),
     bullet([run("Quantifiers: a bowl of, a glass of, a slice of, a piece of, a portion of, a little, a lot of, too much.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. Recommending"),
     bullet([run("should / shouldn’t + verb:", { bold: true, color: C.BLUE }), run("  You should eat more vegetables!")]),
     bullet([run("Frequency adverbs before the verb: always, usually, often, sometimes, rarely, never.", { bold: true, color: C.BLUE })]),
     bullet([run("Linking words: so (consequence); but, whereas, however (contrast).", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. Comparing"),
     bullet([run("-er than / more … than; the …-est / the most …; good → better → the best; bad → worse → the worst.", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("5. The advice letter"),

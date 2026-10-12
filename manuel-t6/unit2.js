@@ -1,7 +1,7 @@
 // T6 — UNIT 2 — CLASSROOM COMMUNICATION (3 séances + révision + test) — Sessions 12 à 16 / 74
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "7030A0"; // violet
@@ -66,6 +66,12 @@ function opening() {
     p("• ask for, give and refuse permission with can and may;"),
     p("• read and write dialogues about the classroom.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("solidarity, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The classroom objects and instructions.",
+      "Asking for clarification; asking for permission.",
+      "Can and may; the imperative."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -250,9 +256,11 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 2", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("CLASSROOM COMMUNICATION"),
+    rubricBadge("FUNCTIONS"),
     sub("1. Asking for clarification"),
     clarifGrid(),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Asking for permission — can and may"),
     permissionBox(),
     p("", { after: 60 }),
@@ -260,6 +268,7 @@ function lesson() {
     pr([run("To give permission: "), ...kw("Yes, you can. / Yes, you may. Go ahead.", "yèss iou kane / méi. gôou euhèd")]),
     pr([run("To refuse: "), ...kw("No, sorry, you can’t.", "nôou, sori, iou kannte")]),
     pr([run("“May” is more polite than “can” — perfect for the teacher!", { italic: true, color: C.GRAY, size: 24 })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The imperative"),
     pr([run("To give an order: the verb alone! "), ...kw("Be quick!", "bi kouik"), run("  "), ...kw("One by one, please!", "ouane baï ouane, plize"), run("  "), ...kw("Go ahead!", "gôou euhèd")], { after: 140 }),
     audioBox([

@@ -1,7 +1,7 @@
 // T6 — UNIT 6 — PEOPLE’S APPEARANCE (12 séances + révision + test) — Sessions 53 à 66 / 74
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "2E74B5"; // bleu
@@ -123,6 +123,12 @@ function opening() {
     p("• use the present continuous — and compare it with the present simple;"),
     p("• read and write descriptions of people.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("humility, tolerance.")], { after: 160 }),
+    rubricTable(
+      "The body; the five senses; the clothes.",
+      "Describing people: What does he/she look like?",
+      "The present continuous; simple or continuous?"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -776,6 +782,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 6", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("PEOPLE’S APPEARANCE"),
+    rubricBadge("VOCABULARY"),
     sub("1. The body"),
     img("u6_body.png", 440, 768 / 1408),
     grid(BODY1, 3),
@@ -783,28 +790,35 @@ function lesson() {
     grid(BODY2, 3),
     p("", { after: 40 }),
     pr([run("The three parts: the "), ...kw("head", "hède"), run(", the "), ...kw("trunk", "treunnk"), run(" (chest, back, belly), the "), ...kw("limbs", "limz"), run(" (arms and legs).  Irregular: one foot → two "), ...kw("feet", "fite"), run(", one tooth → two "), ...kw("teeth", "tisse"), run("!")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. Simon says! — the imperative"),
     simonBox(),
     p("", { after: 40 }),
     pr([run("The command: ", { bold: true }), ...kw("Touch your nose!", "teutch iôr nôouz"), run("   The negative: "), ...kw("Don’t move!", "dôounte mouve")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. The five senses"),
     grid(SENSES.map(([a, b]) => [a, b]), 3, 22),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. This is Anna"),
     annaBox(),
     p("", { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("5. The clothes"),
     img("u6_clothes.png", 440, 768 / 1408),
     grid(CLOTHES, 3),
     p("", { after: 40 }),
     pr([run("The verbs: ", { bold: true }), ...kw("to wear", "tou ouèr"), run("   "), ...kw("to put on", "tou poute one"), run("   "), ...kw("to take off", "tou téik of")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. The present continuous — NOW!"),
     pr([run("am / is / are + verb-ing: ", { bold: true }), ...kw("She is wearing a red t-shirt.", "chi iz ouèrinng e rède ti-cheurte")]),
     pr([...kw("What are you wearing today?", "ouate âr iou ouèrinng toudéi"), run("  →  "), ...kw("I am wearing my school uniform.", "aï am ouèrinng maï skoul iounifôrm")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("7. What does he/she look like?"),
     grid(ADJ, 3, 22),
     p("", { after: 40 }),
     pr([run("The plan: ", { bold: true }), run("He/She is tall… + He/She has long hair… + He/She is wearing… — always with kind words!")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("8. Simple or continuous?"),
     grammarBox(),
     p("", { after: 100 }),

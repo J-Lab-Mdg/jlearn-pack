@@ -1,7 +1,7 @@
 // T9 — UNIT 5 — JOB AND MASS MEDIA (10 séances + révision + test) — Sessions 45 à 56 / 68
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "D35400"; // orange brûlé
@@ -94,6 +94,12 @@ function opening() {
     p("• tell the difference: present perfect vs simple past;"),
     p("• write my own CV, job ad and application letter!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, altruism.")], { after: 160 }),
+    rubricTable(
+      "The jobs: verb + er = the job; the job skills.",
+      "The job interview; answering a job ad.",
+      "The present perfect with since / for; present perfect vs simple past."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("One day soon, you will look for a job — or create one! In this unit, you build the English of work: describing skills with confidence, passing an interview, and writing the letters that open doors.", { after: 40 }),
     ]),
@@ -885,16 +891,21 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 5", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. Jobs and the word factory"),
     bullet([run("verb + er = the job: teacher, farmer, driver, gardener, designer… Special: a cook, a fisherman, a waiter/waitress.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. Job skills"),
     bullet([run("can + verb; be good at + -ing; know how to + verb; feel at ease with + noun. Jobs are for both men and women now!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. The job interview"),
     bullet([run("interviewer/interviewee, employer/employee, hire, recruit, full-time/part-time, diploma, qualifications; greeting → experience → motivation → references → polite closing.", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("4. The job ad and the application"),
     bullet([run("Job ad: position → responsibilities → qualifications → how to apply (deadline!). Application email: Dear Sir → I would like to apply → experience → skills → Yours faithfully.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The present perfect"),
     bullet([run("have/has + past participle, for events continuing until now: SINCE + starting point (since 2010), FOR + duration (for 15 years).", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. Present perfect vs simple past"),
     bullet([run("What have you done since I left? → present perfect. When did you book the flight? → simple past (precise, finished time: yesterday, in 2010, two hours ago).", { bold: true, color: C.BLUE })]),
   ];

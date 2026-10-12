@@ -1,7 +1,7 @@
 // T6 — UNIT 1 — PERSONAL COMMUNICATION (9 séances + révision + test) — Sessions 1 à 11 / 74
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "E36C0A"; // orange
@@ -119,6 +119,12 @@ function opening() {
     p("• count from 0 to 100 and give a phone number;"),
     p("• read and write short dialogues about personal information.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "Personal information words; the English alphabet; numbers and phone numbers.",
+      "Greeting; introducing yourself and others; taking leave; spelling.",
+      "The verbs TO BE and TO HAVE (present simple)."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -627,11 +633,13 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 1", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("PERSONAL COMMUNICATION"),
+    rubricBadge("FUNCTIONS"),
     sub("1. Socialising"),
     pr([run("To greet: "), ...kw("Hello!", "hèlôou"), run("  "), ...kw("Hi!", "haï")]),
     pr([run("To welcome: "), ...kw("Nice to meet you!", "naïss tou mite iou"), run("  →  "), ...kw("Nice to meet you too!", "…tou")]),
     pr([run("To introduce: "), ...kw("May I introduce you to my friend?", "méi aï inntrodiouss iou tou maï frènde"), run("  "), ...kw("This is Sara.", "zis iz sara")]),
     pr([run("To take leave: "), ...kw("I have to go now.", "aï hav tou gôou naou"), run("  "), ...kw("Bye! / Goodbye! / See you!", "baï / goudbaï / si iou")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Personal information"),
     pr([...kw("What’s your name?", "ouots iôr néime"), run("  →  "), ...kw("My name is Lisa.", "maï néime iz lisa")]),
     pr([...kw("How old are you?", "haou ôould âr iou"), run("  →  "), ...kw("I’m 14 years old.", "aïm fôrtine yirz ôould")]),
@@ -640,6 +648,7 @@ function lesson() {
     pr([run("The prepositions: ", { bold: true }), run("in", { bold: true, color: C.BLUE }), run(" + town (in Toronto) — "), run("at", { bold: true, color: C.BLUE }), run(" + place (at school, at home).")], { after: 100 }),
     dialogue1Box(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The verb TO BE (present simple)"),
     grammarTable("TO BE", [
       ["I", "I am (I’m)", "I am not (I’m not)", "Am I…?"],
@@ -647,6 +656,7 @@ function lesson() {
       ["he / she / it", "he is (he’s)", "he isn’t", "Is he…?"],
     ]),
     pr([run("Short answers: ", { bold: true }), ...kw("Yes, I am.", "yèss aï am"), run("  "), ...kw("No, he isn’t.", "nôou hi izeunte")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. The verb TO HAVE (present simple)"),
     grammarTable("TO HAVE", [
       ["I / you / we / they", "I have", "I don’t have", "Do you have…?"],
@@ -655,10 +665,12 @@ function lesson() {
     pr([run("Short answers: ", { bold: true }), ...kw("Yes, I do.", "yèss aï dou"), run("  "), ...kw("No, I don’t.", "nôou aï dôounte")], { after: 100 }),
     dialogue2Box(),
     p("", { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("5. The English alphabet"),
     pr([run("The 26 letters: "), run("A B C D E F G H I J K L M N O P Q R S T U V W X Y Z", { bold: true, color: C.BLUE, size: 30 })], { after: 40 }),
     pr([run("Careful! ", { bold: true, color: C.RED }), run("A", { bold: true, color: C.BLUE }), run(" [éi] — "), run("E", { bold: true, color: C.BLUE }), run(" [i] — "), run("I", { bold: true, color: C.BLUE }), run(" [aï] — "), run("G", { bold: true, color: C.BLUE }), run(" [dji] — "), run("J", { bold: true, color: C.BLUE }), run(" [djéi] — "), run("W", { bold: true, color: C.BLUE }), run(" [deubeuliou]")], { after: 60 }),
     pr([...kw("How do you spell “book”?", "haou dou iou spèl bouk"), run("  →  "), ...kw("It’s B-O-O-K.", "its bi-ôou-ôou-kéi")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("6. Numbers, phone numbers and counting things"),
     rhymeBox(),
     p("", { after: 60 }),

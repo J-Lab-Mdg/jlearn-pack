@@ -1,7 +1,7 @@
 // T5 — UNIT 8 — IN MY HOUSE (4 séances + révision + test) — Sessions 34 à 39 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "1B5E20"; // vert foncé
@@ -82,6 +82,12 @@ function opening() {
     p("• sing the “Welcome to my house” song;"),
     p("• describe a house to my friend.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, working together.")], { after: 160 }),
+    rubricTable(
+      "The five rooms; the things of each room.",
+      "Describing your house.",
+      "Where is…? — It is in / on / under…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -314,10 +320,12 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 8", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("IN MY HOUSE"),
+    rubricBadge("VOCABULARY"),
     sub("1. The five rooms"),
     img("u8_house.png", 440, 768 / 1408),
     grid(ROOMS, 5, 22),
     p("", { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The things of each room"),
     roomThingsTable(),
     p("", { after: 60 }),
@@ -326,9 +334,11 @@ function lesson() {
     sub("3. The song"),
     houseSongBox(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. Where is…?"),
     pr([run("The question: "), ...kw("Where is the bed?", "ouèr iz ze bède")]),
     pr([run("The answer: "), ...kw("The bed is in the bedroom.", "ze bède iz ine ze bèdroume")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. I describe my house"),
     pr([run("This is my house. ", { bold: true, color: C.BLUE }),
         run("There is a kitchen. ", { bold: true, color: C.BLUE }),

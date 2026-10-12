@@ -1,7 +1,7 @@
 // T9 — UNIT 3 — FAMILY (8 séances + révision + test) — Sessions 23 à 32 / 68
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "AD1457"; // rose foncé
@@ -91,6 +91,12 @@ function opening() {
     p("• read about the Malagasy family and the Famadihana;"),
     p("• write a dialogue between parents and youth — and act it out!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, responsibility.")], { after: 160 }),
+    rubricTable(
+      "The family relationships.",
+      "Permission, warnings, obligation.",
+      "May / can / must / have to; the reported speech."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("Family is the first team of your life. In this unit, you learn the English of that team: asking politely, listening, helping — and solving the problems of young people together!", { after: 40 }),
     ]),
@@ -700,15 +706,20 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 3", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("FUNCTIONS"),
     sub("1. Permission"),
     bullet([run("Ask: May I…? (very polite) / Can I…? — Give: Yes, you may. Go ahead! Sure! — Refuse: Sorry, you can’t. No, you mustn’t.", { bold: true, color: C.BLUE })]),
     bullet([run("MAY = permission + possibility; CAN = permission + ability.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Warnings"),
     bullet([run("Be careful! Watch out! Mind the step! I warn you not to…", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. Family relationships"),
     bullet([run("be on good/bad terms with; get on well with; be close to; proud of / disappointed with; role model; quarrel vs discuss.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. Reported speech (the journalist)"),
     bullet([run("“I am closer to my father.” → He said he was closer to his father. (person + one step back!)", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. Obligation"),
     bullet([run("must / have to = obligation; don’t have to = not necessary; mustn’t = forbidden!", { bold: true, color: C.BLUE })]),
     bullet([run("Opinions: In my opinion…, I think…", { bold: true, color: C.BLUE })], { after: 100 }),

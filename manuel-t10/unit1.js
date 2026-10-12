@@ -1,7 +1,7 @@
 // T10 — UNIT 1 — MEETING NEW PEOPLE (8 séances + révision + test) — Sessions 1 à 10 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1F618D"; // bleu lycée
@@ -82,6 +82,12 @@ function opening() {
     p("• use the gerund, must / have to, and the two presents;"),
     p("• write a first-meeting dialogue with and, also, but, however.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, collaboration.")], { after: 160 }),
+    rubricTable(
+      "Greeting and introduction expressions; personal information words.",
+      "Meeting new people: greeting, welcoming, apologising, taking leave.",
+      "The grammar machines: to be, the present simple, the questions."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("A new school, new faces, new friends! The first days of the lycée are full of first conversations. After this unit, you can start any of them in English: Hello! I’m… Where are you from? Nice to meet you!", { after: 40 }),
     ]),
@@ -698,16 +704,20 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 1", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("FUNCTIONS"),
     sub("1. Greetings, welcoming, taking leave"),
     bullet([run("By the clock: ", { bold: true }), run("Good morning / afternoon / evening — Good night only to leave!", { bold: true, color: C.BLUE })]),
     bullet([run("Friendly / formal: ", { bold: true }), run("Hi! How are you? — Good morning, Sir. How do you do?", { bold: true, color: C.BLUE })]),
     bullet([run("Welcome to our lycée! — See you later! Have a nice day!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Apologising — Where are you from?"),
     bullet([run("Sorry! / I’m so sorry! / I apologise for being late.", { bold: true, color: C.BLUE }), run("  →  No problem! That’s all right! Never mind!")]),
     bullet([run("Where are you from? — I’m from Toliara.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. Introducing — personal information"),
     bullet([run("The four ID questions: ", { bold: true }), run("What’s your name? How old are you? Where do you live? What are your hobbies?", { bold: true, color: C.BLUE })]),
     bullet([run("This is my friend Hery. Let me introduce Soa. — Nice to meet you!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. The grammar machines"),
     bullet([run("The gerund: ", { bold: true }), run("I enjoy talking. Meeting new people is a pleasure.", { bold: true, color: C.BLUE })]),
     bullet([run("must (from me) / have to (from the rules); mustn’t = interdiction!", { bold: true, color: C.BLUE })]),

@@ -1,7 +1,7 @@
 // T8 — UNIT 2 — CLASSROOM COMMUNICATION (4 séances + révision + test) — Sessions 19 à 24 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B03A2E"; // rouge brique
@@ -75,6 +75,12 @@ function opening() {
     p("• read a classroom dialogue and act it out;"),
     p("• write my own set of classroom instructions.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The classroom instructions.",
+      "The polite sentence; lending and borrowing; yes/no intonation.",
+      "The negative commands; can / could / may."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 1)", [
       p("In Unit 1, you talked about feelings and plans: I feel happy! I am going to visit my grandmother."),
       p("In Unit 2, the classroom speaks English: every instruction, every polite request — in English, with confidence!", { after: 40 }),
@@ -378,16 +384,21 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 2", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("CLASSROOM COMMUNICATION"),
+    rubricBadge("FUNCTIONS"),
     sub("1. The classroom instructions"),
     bullet([run("Stand up! Sit down! Open your books! Raise your hand! Come to the board! Listen carefully! Repeat after me! Work in pairs!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. The negative commands"),
     bullet([run("DON’T + verb: Don’t talk! Don’t run in the classroom!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. The polite sentence"),
     bullet([run("Excuse me, you’re on the way! — Oh, sorry! Go ahead.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. Lending and borrowing"),
     bullet([run("borrow (I take) — lend (I give) — give back (I return!)", { bold: true, color: C.BLUE })]),
     bullet([run("Can / May I borrow your…, please? — Could you lend me a…, please?", { bold: true, color: C.BLUE })]),
     bullet([run("Here you are! — Here is your…, thank you very much!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The intonation of yes/no questions"),
     bullet([run("The voice goes UP at the end: Can I borrow your pen, please? ↗", { bold: true, color: C.BLUE })], { after: 140 }),
     audioBox([

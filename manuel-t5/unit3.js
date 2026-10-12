@@ -1,7 +1,7 @@
 // T5 — UNIT 3 — CLASSROOM LANGUAGE (2 séances + révision + test) — Sessions 10 à 13 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "00838F"; // bleu canard
@@ -52,6 +52,12 @@ function opening() {
     p("• give the commands to my friends;"),
     p("• read the commands and match them with pictures.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("care for others, tolerance.")], { after: 160 }),
+    rubricTable(
+      "The commands of the class.",
+      "Giving commands; being polite with please.",
+      "How a command works: the imperative."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -184,10 +190,12 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 3", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("CLASSROOM LANGUAGE"),
+    rubricBadge("FUNCTIONS"),
     sub("1. The commands"),
     img("u3_commands.png", 380, 768 / 1416),
     commandTable(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. How does a command work?"),
     pr([run("The command starts with the "), run("action word", { bold: true, color: C.BLUE }),
         run(": "), run("Go", { bold: true }), run(" — "), run("Clean", { bold: true }),
@@ -195,6 +203,7 @@ function lesson() {
         run(" — "), run("Have", { bold: true }), run(".")], { after: 100 }),
     pr([run("Opposites: ", { bold: true }), run("Open the door! ", { bold: true, color: C.BLUE }),
         run("⇄ "), run("Close the door!", { bold: true, color: C.BLUE })], { after: 140 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. Be polite!"),
     pr([run("With a friend, you can add "), run("please", { bold: true, color: C.BLUE }),
         run(" [pliz]: "), run("Open the door, please!", { italic: true })], { after: 140 }),

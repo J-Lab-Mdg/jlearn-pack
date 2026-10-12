@@ -1,7 +1,7 @@
 // T10 — UNIT 7 — TRAVELLING IN MADAGASCAR (8 séances + révision + test) — Sessions 52 à 61 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "D35400"; // orange latérite
@@ -76,6 +76,12 @@ function opening() {
     p("• present a foreign country and compare it with Madagascar;"),
     p("• write about my dream trip in Madagascar!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("patriotism, responsibility.")], { after: 160 }),
+    rubricTable(
+      "The transport; the traveller’s adjectives and tool box.",
+      "Speaking about a trip; the measuring questions: How long? How far?",
+      "The comparatives; the little grammar tools of the traveller."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("Madagascar is a continent in one island: baobabs, rainforests, deserts, beaches and highlands. Before dreaming of far countries, let us learn to travel — and to love — our own. A good traveller is a responsible traveller!", { after: 40 }),
     ]),
@@ -674,14 +680,19 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 7", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. The transport"),
     bullet([run("by taxi-brousse, by plane, by train, by pirogue — but ON foot!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The traveller’s adjectives"),
     bullet([run("popular, wild, polluted — Isalo is wild; Foulpointe is popular.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The measuring questions"),
     bullet([run("How far is it? (km) — How long does it take? (hours) — How often do the buses leave? (hourly, daily, weekly…).", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("4. The traveller’s tool box"),
     bullet([run("What’s the best/worst way to get to…? — in advance, check in, go through security, heavy traffic.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The little grammar tools"),
     bullet([run("whenever (every time that), wherever (in every place that); another / the other / others.", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("6. The respectful traveller"),

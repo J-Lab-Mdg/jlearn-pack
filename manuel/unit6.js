@@ -1,7 +1,7 @@
 // UNIT 6 — DAYS OF THE WEEK (2 séances + révision + test) — Sessions 26 à 29 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "BF8F00"; // jaune doré
@@ -42,6 +42,12 @@ function opening() {
     p("• sing the “Days of the week” song;"),
     p("• say my favourite day.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("solidarity, perseverance.")], { after: 160 }),
+    rubricTable(
+      "The seven days of the week.",
+      "Saying the days; speaking about your favourite day.",
+      "What day is it today? — It is…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -187,6 +193,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 6", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("DAYS OF THE WEEK"),
+    rubricBadge("VOCABULARY"),
     sub("1. The seven days"),
     daysGrid(),
     p("", { after: 100 }),
@@ -202,6 +209,7 @@ function lesson() {
     p([run("Wednesday, Thursday,", { italic: true })], { center: true, after: 40 }),
     p([run("Friday, Saturday.", { italic: true })], { center: true, after: 80 }),
     p([run("(We sing it on a tune we know well.)", { italic: true, color: C.GRAY, size: 24 })], { center: true, after: 120 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. My favourite day"),
     pr([run("The question: "), ...kw("What is your favourite day?", "ouot iz iôr féivrite déi")]),
     pr([run("The answer: "), ...kw("My favourite day is Saturday.", "maï féivrite déi iz sateudé")]),

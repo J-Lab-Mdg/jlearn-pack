@@ -1,7 +1,7 @@
 // T6 — UNIT 5 — FAMILY (9 séances + révision + test) — Sessions 42 à 52 / 74
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "76923C"; // vert olive
@@ -98,6 +98,12 @@ function opening() {
     p("• use this, that, these, those to show people and things;"),
     p("• read and write about my extended family.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("responsibility, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The extended family.",
+      "Presenting your family; saying what belongs to whom.",
+      "The plurals; the possessive ’s; this, that, these, those."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -599,6 +605,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 5", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("FAMILY"),
+    rubricBadge("VOCABULARY"),
     sub("1. The extended family"),
     img("u5_family.png", 440, 768 / 1408),
     grid(FAMILY, 3),
@@ -607,15 +614,18 @@ function lesson() {
     sub("2. Fidy’s passage"),
     familyBox(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. One and many — the plurals"),
     pr([run("Regular: ", { bold: true }), ...kw("a brother → brothers", "breuzeur → breuzeurz"), run("   "), ...kw("a story → stories", "stôri → stôriz")], { after: 40 }),
     pr([run("Irregular — no -s! Learn them by heart:", { bold: true })], { after: 40 }),
     grid(PLURALS, 3),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. The possessive case — the little ’s"),
     pr([run("One owner: ", { bold: true }), ...kw("my uncle’s bike", "maï eunnkeulz baïk"), run(" = the bike of my uncle.")]),
     pr([run("Many owners (with s): ", { bold: true }), ...kw("my cousins’ toys", "maï keuzinez toïz"), run("   "), ...kw("my grandparents’ house", "maï granndpèrenntss haouss")]),
     pr([run("Irregular plural owner: ", { bold: true }), ...kw("the children’s books", "ze tchildrènez bouks")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. This, that, these, those"),
     grid(DEMO, 4),
     p("", { after: 40 }),

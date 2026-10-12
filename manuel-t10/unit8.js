@@ -1,7 +1,7 @@
 // T10 — UNIT 8 — RESTAURANTS AND MALAGASY CUISINE (6 séances + révision + test) — Sessions 62 à 69 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1E8449"; // vert bredes
@@ -77,6 +77,12 @@ function opening() {
     p("• find the topic sentence of a paragraph;"),
     p("• create a real menu — and present it in a gallery walk!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The sensory verbs, the tastes, the kitchen words.",
+      "Ordering and offering food; clarifying a price.",
+      "Count and non-count; the past participles of the kitchen."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("One day, an English-speaking visitor will sit in a hotely of your town, open the menu and look for help. That day, YOU will be the bridge between romazava and the world — with a smile and good English!", { after: 40 }),
     ]),
@@ -537,14 +543,19 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 8", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. The sensory verbs and the tastes"),
     bullet([run("It looks good, it smells wonderful, it tastes sweet / salty / spicy / sour / bitter… delicious!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. The past participles of the kitchen"),
     bullet([run("grilled fish, fried chicken, boiled meat, roasted peanuts, steamed rice — the adjective tells the recipe!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. Count and non-count"),
     bullet([run("a banana, a few eggs (count) — rice, a little salt (non-count) — and the containers: a bowl of, a glass of, a plate of!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. Ordering and offering"),
     bullet([run("I’ll have the romazava, please. — Would you like some dessert? — Yes, please! / No, thank you. — The bill, please!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. Clarifying a price"),
     bullet([run("Repeat it with the rising voice: Eight thousand ariary? ↗", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("6. The topic sentence"),

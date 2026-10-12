@@ -1,7 +1,7 @@
 // UNIT 10 — FAMILY (2 séances + révision + test) — Sessions 50 à 53 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "B03060"; // rose foncé
@@ -58,6 +58,12 @@ function opening() {
     p("• sing the Family song;"),
     p("• ask and answer: Who is he? Who is she?", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("respect, mutual help.")], { after: 160 }),
+    rubricTable(
+      "The members of the family.",
+      "Presenting your family.",
+      "Who is he? Who is she? — He is… / She is…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -196,10 +202,12 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 10", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("FAMILY"),
+    rubricBadge("VOCABULARY"),
     sub("1. The members of the family"),
     img("u10_family.png", 320, 768 / 1408),
     membersGrid(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. Who is he? Who is she?"),
     pr([run("For a boy or a man: "), ...kw("Who is he?", "hou iz hi")]),
     pr([run("For a girl or a woman: "), ...kw("Who is she?", "hou iz chi")]),

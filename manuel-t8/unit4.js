@@ -1,7 +1,7 @@
 // T8 — UNIT 4 — FOOD (10 séances + révision + test) — Sessions 37 à 48 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "6C3483"; // violet
@@ -86,6 +86,12 @@ function opening() {
     p("• read a bargaining dialogue and act it out;"),
     p("• write my own recipe — and the buying dialogue to go with it.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, collaboration.")], { after: 160 }),
+    rubricTable(
+      "The kitchen: ingredients, utensils, verbs.",
+      "Asking and stating prices; bargaining at the market.",
+      "Countable and uncountable: some, any, no; superlatives; the imperatives of the recipe."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 3)", [
       p("In Unit 3, you told your day: I always fetch water, then I go to school on foot."),
       p("In Unit 4, your English goes to the market and into the kitchen: prices, bargaining and delicious recipes!", { after: 40 }),
@@ -836,19 +842,25 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 4", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("FOOD"),
+    rubricBadge("FUNCTIONS"),
     sub("1. Asking and stating prices"),
     bullet([run("How much is a kilo of rice? — How much does it cost? — It is 2 000 ariary.", { bold: true, color: C.BLUE })]),
     bullet([run("Here is the money. — And here is the change!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Bargaining"),
     bullet([run("That is expensive! How about 7 000? Can you lower the price to…?", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. Countable, uncountable — some, any, no, Φ"),
     bullet([run("a tomato, two tomatoes / rice, sugar, water (no plural!)", { bold: true, color: C.BLUE })]),
     bullet([run("some (+), any (? −), no (= zero) — and Φ for generality: I like Φ bananas.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. Comparatives and superlatives"),
     bullet([run("cheap → cheaper than → the cheapest; expensive → more expensive than → the most expensive", { bold: true, color: C.BLUE })]),
     bullet([run("good → better → the best; bad → worse → the worst", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("5. The kitchen: ingredients, utensils, verbs"),
     bullet([run("oil, salt, spices — pot, ladle, bowl — cut, chop, pour, stir, boil, peel, fry, serve", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. The imperatives: the recipe"),
     bullet([run("First, peel the potatoes. Then, cut the vegetables. Finally, serve hot! — Don’t burn the soup!", { bold: true, color: C.BLUE })], { after: 140 }),
     audioBox([

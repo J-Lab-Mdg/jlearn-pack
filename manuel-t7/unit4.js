@@ -1,7 +1,7 @@
 // T7 — UNIT 4 — FAMILY (12 séances + révision + test) — Sessions 52 à 65 / 99
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "6C3483"; // violet
@@ -89,6 +89,12 @@ function opening() {
     p("• read a text about an extended family;"),
     p("• write a short text that describes my extended family.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, solidarity.")], { after: 160 }),
+    rubricTable(
+      "The extended family; compound adjectives: blue-eyed, kind-hearted…",
+      "Describing people, outside and inside; my role model.",
+      "TO BE in family situations; the possessive ’s; look like / resemble / be alike."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 3)", [
       p("In Unit 3 we talked about food: the meals, the tastes, likes and dislikes — What a delicious meal!"),
       p("In Unit 4, we open the family album: brothers-in-law, nieces and nephews, role models…", { after: 40 }),
@@ -986,24 +992,31 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 4", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("FAMILY"),
+    rubricBadge("VOCABULARY"),
     sub("1. The extended family"),
     bullet([run("grandchildren — nephew — niece — husband and wife", { bold: true, color: C.BLUE })]),
     bullet([run("the in-laws (by marriage): father/mother/brother/sister-in-law", { bold: true, color: C.BLUE })]),
     bullet([run("the step-family (new marriage): step-father, step-mother, step-sister, step-brother", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. The family situations (with TO BE)"),
     bullet([run("single → engaged → married (to) ; separated, divorced, widowed", { bold: true, color: C.BLUE })]),
     bullet([...kw("Alexa is married to Matthew.", "elèxa iz maride tou mathiou")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The possessive ’s"),
     bullet([run("my brother’s son = the son of my brother → my nephew!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. Describing people — outside and inside"),
     bullet([...kw("What does she look like?", "ouate deuz chi louk laïk"), run(" — tall/short, thin/fat, pretty, handsome…")]),
     bullet([...kw("What kind of person is she?", "ouate kaïnnde ov peurseune iz chi"), run(" — kind, generous, shy, loyal, clever, hard-working…")]),
     bullet([run("HAS for the body (she has long hair) — IS for the look (she is tall)", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. Compound adjectives"),
     bullet([run("adjective+noun-ED: a long-haired girl, a blue-eyed boy", { bold: true, color: C.BLUE })]),
     bullet([run("noun+verb-ING: a cat-loving person — noun+adjective: a sky-blue dress", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. Look like, resemble, be alike"),
     bullet([run("I look like my mother. — My brother and I are alike in character.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("7. My role model"),
     bullet([run("The person who inspires me: WHO + LOOKS + CHARACTER — "), run("My role model is my big sister!", { bold: true, color: C.BLUE })], { after: 140 }),
     audioBox([

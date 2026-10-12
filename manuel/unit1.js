@@ -1,7 +1,7 @@
 // UNIT 1 — SOCIALISING (6 séances + révision + test) — Sessions 1 à 8 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "E36C0A"; // orange — couleur de l'Unit 1
@@ -30,6 +30,12 @@ function opening() {
     p("• say my name and my age;"),
     p("• thank my friends and say sorry.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("respect, self-confidence.")], { after: 160 }),
+    rubricTable(
+      "Hello, hi, good morning; goodbye; thank you; sorry.",
+      "Greeting; saying goodbye; introducing yourself; thanking; apologizing.",
+      "I am… / My name is…; How are you? — I’m fine, thank you."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -458,6 +464,7 @@ function lesson() {
     p([run("LESSON — UNIT 1", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("SOCIALISING"),
 
+    rubricBadge("FUNCTIONS"),
     sub("1. Greetings"),
     pr([run("To greet a friend, we say: "), ...kw("Hello!", "hèlôou"), run(" or "), ...kw("Hi!", "haï")]),
     pr([run("In the morning, we say: "), ...kw("Good morning!", "goud môrning")]),
@@ -465,10 +472,12 @@ function lesson() {
     pr([run("The answer is: "), ...kw("I’m fine, thank you.", "aïm faïn, tenk iou")], { after: 120 }),
     img("koto_soa.png", 300, 768 / 1416),
 
+    rubricBadge("FUNCTIONS"),
     sub("2. Saying goodbye"),
     pr([run("When we leave, we say: "), ...kw("Goodbye!", "goudbaï"),
         run(" or "), ...kw("Bye!", "baï"), run(" or "), ...kw("Bye-bye!", "baï-baï")], { after: 120 }),
 
+    rubricBadge("FUNCTIONS"),
     sub("3. Introducing yourself"),
     pr([run("To ask a name: "), ...kw("What’s your name?", "ouots iôr néim")]),
     pr([run("The answer: "), ...kw("My name is ……", "maï néim iz")]),
@@ -478,11 +487,13 @@ function lesson() {
     pr([run("The answer: "), ...kw("I’m 8.", "aïm éit"), run("  /  I’m 9.  /  I’m 10.")], { after: 120 }),
     img("u1_introducing.png", 300, 768 / 1416),
 
+    rubricBadge("FUNCTIONS"),
     sub("4. Thanking"),
     pr([run("A friend gives or helps. We say: "), ...kw("Thank you!", "tenk iou")]),
     pr([run("The friend answers: "), ...kw("You’re welcome!", "iôr ouèlkeum")], { after: 120 }),
     img("u1_thanking.png", 300, 768 / 1416),
 
+    rubricBadge("FUNCTIONS"),
     sub("5. Apologizing"),
     pr([run("We do something bad. We say: "), ...kw("I’m sorry!", "aïm sori"),
         run(" or "), ...kw("Sorry!", "sori")]),

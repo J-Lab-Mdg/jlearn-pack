@@ -1,7 +1,7 @@
 // UNIT 8 — MEALS (2 séances + révision + test) — Sessions 40 à 43 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "1B5E20"; // vert foncé
@@ -44,6 +44,12 @@ function opening() {
     p("• mime “to eat” and “to drink”;"),
     p("• say the three meals: breakfast, lunch, dinner.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("respect, cooperation.")], { after: 160 }),
+    rubricTable(
+      "Food and drinks; the three meals of the day.",
+      "Saying what you eat and drink.",
+      "I eat… / I drink… / I like…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -189,15 +195,18 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 8", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("MEALS"),
+    rubricBadge("VOCABULARY"),
     sub("1. To eat"),
     pr([run("The action: "), ...kw("to eat", "tou ite"), run(" — we mime with the hand and the mouth.")]),
     grid(EAT, 3),
     p("", { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. To drink"),
     pr([run("The action: "), ...kw("to drink", "tou drink"), run(" — we mime with the glass.")]),
     grid(DRINK, 5),
     p("", { after: 100 }),
     img("u8_meals.png", 320, 768 / 1408),
+    rubricBadge("VOCABULARY"),
     sub("3. The three meals of the day"),
     pr([run("In the morning: "), ...kw("breakfast", "brèkfeust")]),
     pr([run("At midday: "), ...kw("lunch", "leuntch")]),

@@ -1,7 +1,7 @@
 // T8 — UNIT 6 — MEANS OF COMMUNICATION (10 séances + révision + test) — Sessions 58 à 69 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "2E7D32"; // vert forêt
@@ -84,6 +84,12 @@ function opening() {
     p("• understand the social media words and the message acronyms;"),
     p("• read a newspaper — and write a letter or an email to tell an event.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, altruism.")], { after: 160 }),
+    rubricTable(
+      "The means: phone, social media, newspaper, letter, e-mail.",
+      "Asking and telling the news; telephoning.",
+      "The simple past; the passive voice."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 5)", [
       p("In Unit 5, you protected your health: If you stay clean, you will stay healthy!"),
       p("In Unit 6, the news travels: by radio, by phone, by letter — and in English!", { after: 40 }),
@@ -823,17 +829,23 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 6", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("MEANS OF COMMUNICATION"),
+    rubricBadge("FUNCTIONS"),
     sub("1. Asking and telling the news"),
     bullet([run("What’s new? What’s up? What’s the news? — Nothing special, nothing much, same as always.", { bold: true, color: C.BLUE })]),
     bullet([run("Sad news: I’m sorry to hear that. Oh dear, that’s awful! — And check the FAKE news!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The means"),
     bullet([run("the radio, the TV, the phone, Facebook, the email, the letters, the newspaper", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The simple past of the journalists"),
     bullet([run("regular: repaired, opened — rebels: fell, won, went, heard, gave, wrote — Did…? / didn’t + base verb", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. The passive voice"),
     bullet([run("WAS / WERE + past participle: The bridge was repaired. One thousand books were given.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. The phone"),
     bullet([run("May I speak to…, please? — I’m sorry, he is out. — Can you give him a message? — pick up / hang up", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("6. Social media, newspaper, letter and email"),
     bullet([run("log in → password → post → log out — GR8, CU, THX, BTW, LOL (friends only!)", { bold: true, color: C.BLUE })]),
     bullet([run("newspaper: front page, headlines, contents — letter: place/date, Dear…, body, closing, signature — email: To + Subject", { bold: true, color: C.BLUE })], { after: 140 }),

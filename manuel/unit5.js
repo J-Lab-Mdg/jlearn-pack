@@ -1,7 +1,7 @@
 // UNIT 5 — PARTS OF THE BODY (2 séances + révision + test) — Sessions 22 à 25 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "76923C"; // vert olive
@@ -42,6 +42,12 @@ function opening() {
     p("• sing “Head, shoulders, knees and toes”;"),
     p("• say: This is my head. These are my ears.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("care of the body, self-confidence.")], { after: 160 }),
+    rubricTable(
+      "The parts of the body: head, shoulders, knees, toes…",
+      "Showing and naming the parts of the body: Show me your…!",
+      "What is this? / What are these? — It is… / They are…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -188,6 +194,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 5", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("PARTS OF THE BODY"),
+    rubricBadge("VOCABULARY"),
     sub("1. My body"),
     img("u5_body.png", 340, 768 / 1408),
     partsGrid(),
@@ -198,10 +205,12 @@ function lesson() {
     p([run("And eyes and ears and mouth and nose,", { italic: true })], { center: true, after: 40 }),
     p([run("Head, shoulders, knees and toes, knees and toes.", { italic: true })], { center: true, after: 80 }),
     p("We sing and we touch each part of the body. Then we sing faster!", { after: 120 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. Show me your …!"),
     pr([run("The commands: "), ...kw("Show me your nose!", "chôou mi iôr nôouz"),
         run("   "), ...kw("Point to your knee!", "poïnte tou iôr ni")]),
     pr([run("The answer: "), ...kw("This is my nose.", "zis iz maï nôouz")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. What is this? What are these?"),
     pr([run("For ONE part: "), ...kw("What is this?", "ouot iz zis"),
         run("  →  "), ...kw("This is the head.", "zis iz ze hèd")]),

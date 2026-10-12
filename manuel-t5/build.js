@@ -44,6 +44,11 @@ function howToUse() {
   ], { after: 60 });
   return [
     p([run("HOW TO USE THIS BOOK", { bold: true, size: 32 })], { center: true, after: 160 }),
+    p([run("The PE rubric badges", { bold: true, size: SZ.SUB })], { after: 80 }),
+    p("In the official programme (PE), the contents of every unit are organised in three rubrics. This book shows them with three coloured badges above the sections of the lessons, and with the table “THIS UNIT IN THE OFFICIAL PROGRAMME (PE)” on the opening page of every unit.", { after: 80 }),
+    p([run("■ ", { color: "1E8449", size: 30 }), run("\u{1F4D7} VOCABULARY — ", { bold: true, color: "1E8449" }), run("the words and expressions of the official programme.")], { after: 60 }),
+    p([run("■ ", { color: "B9770E", size: 30 }), run("\u{1F5E3} LANGUAGE FUNCTIONS — ", { bold: true, color: "B9770E" }), run("what we do with the language: greeting, asking, offering…")], { after: 60 }),
+    p([run("■ ", { color: "6C3483", size: 30 }), run("\u2699 GRAMMAR — ", { bold: true, color: "6C3483" }), run("the rules and the structures.")], { after: 120 }),
     p([run("The three big steps of a session", { bold: true, size: SZ.SUB })], { after: 80 }),
     p("I. Review — quick questions on the last lesson."),
     p("II. New lesson — six small steps: Warm-up, Presentation, Observation, Analysis, Synthesis, Practice."),

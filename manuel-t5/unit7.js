@@ -1,7 +1,7 @@
 // T5 — UNIT 7 — MEALS (2 séances + révision + test) — Sessions 30 à 33 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "2E74B5"; // bleu
@@ -57,6 +57,12 @@ function opening() {
     p("• play the food board game;"),
     p("• say what I ate: I had … for breakfast / lunch / dinner.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, working together.")], { after: 160 }),
+    rubricTable(
+      "The everyday food.",
+      "Speaking about your meals.",
+      "What did you have for breakfast? — I had…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -187,6 +193,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 7", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("MEALS"),
+    rubricBadge("VOCABULARY"),
     sub("1. Everyday food"),
     img("u7_food.png", 440, 768 / 1408),
     wordGrid(),
@@ -196,6 +203,7 @@ function lesson() {
         run(" of your square! Wrong answer? Go back two squares!")], { after: 80 }),
     boardGame(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. What did you have…?"),
     pr([run("The question: "), ...kw("What did you have for breakfast?", "ouate dide iou hav for brèkfeuste")]),
     pr([run("The answer: "), ...kw("I had cassava for breakfast.", "aï hade kassâva for brèkfeuste")]),

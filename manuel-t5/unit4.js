@@ -1,7 +1,7 @@
 // T5 — UNIT 4 — PARTS OF THE BODY (2 séances + révision + test) — Sessions 14 à 17 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "C0504D"; // rouge brique
@@ -68,6 +68,12 @@ function opening() {
     p("• say and act the “One little finger” rhyme;"),
     p("• answer: What am I doing? — You are touching your …", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("unity, love of effort.")], { after: 160 }),
+    rubricTable(
+      "Twelve new words of the body.",
+      "Speaking about your body.",
+      "One or two? The plural: hand → hands."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -197,16 +203,19 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 4", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("PARTS OF THE BODY"),
+    rubricBadge("VOCABULARY"),
     sub("1. Twelve new words"),
     img("u4_body.png", 440, 768 / 1408),
     wordGrid(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. One or two?"),
     pr([run("one foot ", { bold: true, color: C.BLUE }), run("→ two "), run("feet", { bold: true, color: C.BLUE }),
         run("     one tooth ", { bold: true, color: C.BLUE }), run("→ many "), run("teeth", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("3. The rhyme"),
     fingerRhymeBox(),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. Speaking about my body"),
     pr([run("Show me your hand! ", { bold: true, color: C.BLUE }), run("→ "), ...kw("This is my hand.", "ziss iz maï hande")]),
     pr([run("Show me your teeth! ", { bold: true, color: C.BLUE }), run("→ "), ...kw("These are my teeth.", "ziz âr maï tiss")]),

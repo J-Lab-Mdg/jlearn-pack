@@ -1,7 +1,7 @@
 // UNIT 7 — SCHOOL ENVIRONMENT (8 séances + révision + test) — Sessions 30 à 39 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "2E74B5"; // bleu
@@ -49,6 +49,12 @@ function opening() {
     p("• say the colours: red, blue, black, green;"),
     p("• say what I need: I need one blue pen.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, respect.")], { after: 160 }),
+    rubricTable(
+      "The school things; the colours.",
+      "Naming the school things; saying what you need: I need…",
+      "The article a: a pen, a book; What is this?"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -555,15 +561,18 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 7", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("SCHOOL ENVIRONMENT"),
+    rubricBadge("VOCABULARY"),
     sub("1. My school things"),
     img("u7_school_things.png", 320, 768 / 1376),
     thingsGrid(),
     p("", { after: 80 }),
     pr([run("We say "), ...kw("a", "e"), run(" before the object: "),
         run("a pen, a book, a ruler.", { bold: true })], { after: 120 }),
+    rubricBadge("GRAMMAR"),
     sub("2. What is this?"),
     pr([run("The question: "), ...kw("What is this?", "ouot iz zis")]),
     pr([run("The answer: "), ...kw("This is a book.", "zis iz e bouk"), run("  or simply:  "), ...kw("A book.", "e bouk")], { after: 120 }),
+    rubricBadge("VOCABULARY"),
     sub("3. The colours"),
     new Table({ width: { size: 10400, type: WidthType.DXA }, rows: [
       new TableRow({ children: COLOURS.map(([w, pn, hex]) =>
@@ -576,6 +585,7 @@ function lesson() {
     pr([run("The question: "), ...kw("What colour is the pen?", "ouot keuleur iz ze pène"),
         run("  →  "), ...kw("It is blue.", "it iz blou")]),
     pr([run("The game: "), run("Find something red and say: red!", { bold: true, color: C.BLUE })], { after: 120 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. I need …"),
     pr([run("The question: "), ...kw("What do you need?", "ouot dou iou nide")]),
     pr([run("The answer: "), ...kw("I need one blue pen.", "aï nide ouane blou pène"),

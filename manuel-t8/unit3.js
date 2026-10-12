@@ -1,7 +1,7 @@
 // T8 — UNIT 3 — DAILY LIFE (10 séances + révision + test) — Sessions 25 à 36 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B9770E"; // ocre doré
@@ -74,6 +74,12 @@ function opening() {
     p("• join my ideas with the coordinators: and, but, or, yet, so;"),
     p("• read, then write a short text about my daily life.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The daily activities, the chores, the transport.",
+      "Speaking about habits: How often…?",
+      "Present simple; frequency adverbs; play or go + V-ing; the coordinators."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 2)", [
       p("In Unit 2, the classroom spoke English: Stand up! Could you lend me a pen, please?"),
       p("In Unit 3, YOUR whole day speaks English: from “I wake up at five” to “I go to bed at eight”!", { after: 40 }),
@@ -823,19 +829,25 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 3", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("DAILY LIFE"),
+    rubricBadge("VOCABULARY"),
     sub("1. The daily activities and the chores"),
     bullet([run("wake up, get up, make the bed, have breakfast, go to school, do my homework, go to bed", { bold: true, color: C.BLUE })]),
     bullet([run("The chores: fetch water, tidy the room, sweep the floor, cook the meal, wash the dishes", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. The present simple (the habits)"),
     bullet([run("I / you / we / they + verb — he / she / it + verb + S: Koto wakes up at five.", { bold: true, color: C.BLUE })]),
     bullet([run("He doesn’t watch TV. — Does he go on foot? Yes, he does.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The frequency adverbs — How often…?"),
     bullet([run("always → usually → often → sometimes → rarely → never — BEFORE the verb, AFTER be.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("4. The sequence markers and the transport"),
     bullet([run("First… Then… After that… Finally… — by bus / by car / by train / by boat, but ON foot!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The hobbies: play or go + V-ing"),
     bullet([run("play + game / sport: play football, play fanorona — play THE + instrument: play the guitar", { bold: true, color: C.BLUE })]),
     bullet([run("go + V-ing: go swimming, go running, go angling (= fishing!)", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. The coordinators"),
     bullet([run("and (+), but (contrast), or (choice), yet (surprise!), so (result)", { bold: true, color: C.BLUE })], { after: 140 }),
     audioBox([

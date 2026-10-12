@@ -1,7 +1,7 @@
 // T9 — UNIT 1 — OUR TIME (8 séances + révision + test) — Sessions 1 à 10 / 68
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B9770E"; // ocre
@@ -76,6 +76,12 @@ function opening() {
     p("• contrast with but, whereas, however;"),
     p("• read the story of the Titanic and write a cohesive paragraph.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "Words of modern life, past and present habits.",
+      "Describing past events; contrasting past and present.",
+      "Past continuous vs simple past; used to; So / Neither (the echo)."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("Your life is full of stories: the vacation, the childhood, the things you used to do… In this unit, you become a STORYTELLER — you tell the past like a film, scene by scene!", { after: 40 }),
     ]),
@@ -682,16 +688,20 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 1", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("FUNCTIONS"),
     sub("1. Describing past events"),
     bullet([run("Positive: amazing, wonderful, fantastic. Negative: strange, boring, awful, annoying.", { bold: true, color: C.BLUE })]),
     bullet([run("What a beautiful day! How annoying it was! Wow! Super!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. Past continuous vs simple past"),
     bullet([run("Long action (film): was/were + V-ing. Short action (photo): verb 2.", { bold: true, color: C.BLUE })]),
     bullet([run("while + past continuous; when + simple past:", { bold: true, color: C.BLUE }), run("  I was sleeping when the dog barked.")]),
     bullet([run("The alibi question: What were you doing when…?", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. Past and present habits"),
     bullet([run("used to + verb = past habit:", { bold: true, color: C.BLUE }), run("  I used to wear thick glasses. / didn’t use to / Did you use to…?")]),
     bullet([run("be used to + V-ing = present habit:", { bold: true, color: C.BLUE }), run("  I’m used to reading before going to sleep.")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. The echo and the contrast"),
     bullet([run("So + aux + subject (positive); Neither + aux + subject (negative):", { bold: true, color: C.BLUE }), run("  So did I! Neither do I!")]),
     bullet([run("but, whereas, however", { bold: true, color: C.BLUE }), run("  —  to contrast past and present.")], { after: 100 }),

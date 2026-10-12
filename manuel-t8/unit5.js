@@ -1,7 +1,7 @@
 // T8 — UNIT 5 — PREVENTIVE HEALTH (7 séances + révision + test) — Sessions 49 à 57 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "148F77"; // vert émeraude
@@ -89,6 +89,12 @@ function opening() {
     p("• use the if clause (type 1): If you stay clean, you will stay healthy!;"),
     p("• read a recitation about hygiene and write how to fight the germs.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("respect of life, responsibility.")], { after: 160 }),
+    rubricTable(
+      "The common illnesses; the hygiene words.",
+      "Asking about and stating health; giving advice and cures.",
+      "Have got; should / shouldn’t; the if clause (type 1)."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 4)", [
       p("In Unit 4, you bought good food at the best price: How about 7 000?"),
       p("In Unit 5, English protects your health: name the illnesses, find the cures, and keep the germs away!", { after: 40 }),
@@ -628,16 +634,21 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 5", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("PREVENTIVE HEALTH"),
+    rubricBadge("FUNCTIONS"),
     sub("1. Asking about and stating health"),
     bullet([run("How are you feeling? What’s wrong? — I’m fine / in good health. — I’m sick / not feeling very well.", { bold: true, color: C.BLUE })]),
     bullet([run("I hope you get well soon! I wish you a rapid recovery!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The common illnesses"),
     bullet([run("a cold, a cough, the flu, a fever, a headache, a stomachache, a toothache, malaria", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. Have got"),
     bullet([run("I’ve got a headache. She has got a stomachache. Have you got a cough? — Yes, I have. / No, I haven’t.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. The cures and the advice (should)"),
     bullet([run("take medicine / tablets / pills / syrup — have an injection — get a prescription — go to the hospital", { bold: true, color: C.BLUE })]),
     bullet([run("What should I do? — You should take this syrup and rest!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The if clause (type 1)"),
     bullet([run("IF + present, WILL + verb: If you wash your hands, you will stay healthy!", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("6. The hygiene team"),

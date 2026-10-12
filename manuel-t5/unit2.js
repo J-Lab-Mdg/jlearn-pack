@@ -1,7 +1,7 @@
 // T5 — UNIT 2 — INTRODUCING ONESELF (2 séances + révision + test) — Sessions 6 à 9 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "7030A0"; // violet
@@ -64,6 +64,12 @@ function opening() {
     p("• ask and answer: Where do you live? — I live in …;"),
     p("• introduce myself: name, age, where I am from, where I live.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("respect, unity.")], { after: 160 }),
+    rubricTable(
+      "Words of countries and towns.",
+      "Introducing yourself; Where are you from? Where do you live?",
+      "I am from… / I live in…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -198,6 +204,7 @@ function lesson() {
     sub("1. The song (do you remember?)"),
     songBox(),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Where are you from? Where do you live?"),
     img("u2_fromlive.png", 380, 768 / 1416),
     pr([run("The question: "), ...kw("Where are you from?", "ouèr âr iou frome")]),
@@ -207,6 +214,7 @@ function lesson() {
     sub("3. The dialogues"),
     dialogueBox(),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. I introduce myself"),
     pr([run("My name is … I’m … (age). ", { bold: true, color: C.BLUE }),
         run("I’m from … I live in … ", { bold: true, color: C.BLUE }),

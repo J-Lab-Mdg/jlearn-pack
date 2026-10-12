@@ -1,7 +1,7 @@
 // T9 — UNIT 6 — ENVIRONMENT (10 séances + révision + test) — Sessions 57 à 68 / 68
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1E8449"; // vert forêt
@@ -71,6 +71,12 @@ function opening() {
     p("• read about water problems around the world;"),
     p("• write classroom rules for conservation — and celebrate Earth Day!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("living in the national and international community, in mutual respect and in harmony with the environment.")], { after: 160 }),
+    rubricTable(
+      "The environmental issues; climate change words.",
+      "Expressing causes and consequences; giving tips.",
+      "Verbs with the gerund; if-clauses type 2 and 3."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("Madagascar is one of the treasures of the planet: our forests, our lemurs, our rivers exist nowhere else. This last unit gives you the English to understand what threatens them — and to defend them. The island is in your hands!", { after: 40 }),
     ]),
@@ -872,16 +878,21 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 6", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. The issues"),
     bullet([run("dirty towns, rubbish everywhere, infertile soil, deforestation, drought, flood; the dry and the wet season.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Causes and consequences"),
     bullet([run("tavy (slash and burn), bush fires, smoke, littering, dumping chemicals → climate change, extinction of endemic species, famine… X is caused by Y; X leads to Z.", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("3. Climate change (the science chain)"),
     bullet([run("carbon emissions → greenhouse effect → global warming → ice caps melting → sea level rises → flooding. Solutions: renewable energy + travelling differently.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. The seven tips"),
     bullet([run("stop cutting down trees; plant trees; use solar energy; stop killing animals; save water; put litter in bins; sweep our classroom floor.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. Verbs with the gerund"),
     bullet([run("stop, keep, suggest, enjoy, avoid, finish, imagine + verb-ING: Let’s stop burning the hills, keep planting trees!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. If-clauses type 2 and 3"),
     bullet([run("Type 2 (dream now): If people planted trees, there would be more rain. Type 3 (past regret): If people had planted trees, the flood would not have destroyed the village.", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("7. Earth Day"),

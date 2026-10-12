@@ -1,7 +1,7 @@
 // T7 — UNIT 3 — COMMON FOOD (19 séances + révision + test) — Sessions 31 à 51 / 99
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "B9770E"; // ambre
@@ -83,6 +83,12 @@ function opening() {
     p("• read a text about food from other countries;"),
     p("• write a short production about common food.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, solidarity.")], { after: 160 }),
+    rubricTable(
+      "The food families; the three meals; healthy food.",
+      "Likes, dislikes and preferences; offering food and quantities.",
+      "The present simple; What a…! (exclamatory); prefer … to …"
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (UNIT 2)", [
       p("In Unit 2 we learned to borrow and lend politely: Can I borrow…? Could you lend me…? Here you are!"),
       p("In Unit 3, we sit down at the table: food, meals, tastes — enjoy your meal!", { after: 40 }),
@@ -1481,26 +1487,33 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 3", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("COMMON FOOD"),
+    rubricBadge("VOCABULARY"),
     sub("1. The food families"),
     bullet([run("vegetables — fruit — meat — snacks — drinks", { bold: true, color: C.BLUE }), run(" ; and rice and beans!")]),
     bullet([...kw("What colour is a mango? — It’s yellow.", "ouate keuleur iz e manggôou — its yèlôou")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The three meals"),
     bullet([run("breakfast (morning) — lunch (noon) — dinner (evening)", { bold: true, color: C.BLUE })]),
     bullet([...kw("What’s for lunch?", "ouots fôr leunntch"), run(" — "), ...kw("a cup of tea, a glass of water, a piece of bread", "e keupe ov ti")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The present simple — habits"),
     bullet([run("eat, drink, cook, taste + ", { bold: true }), run("he/she → verb-S", { bold: true, color: C.RED }), run(" : she drinks tea.")]),
     bullet([run("Frequency, before the verb: ", { bold: true }), run("always, usually, often, sometimes, never", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. The tastes and the exclamatory form"),
     bullet([run("sweet (sugar) — salty (salt) — sour (tamarind) — bitter (black coffee)", { bold: true, color: C.BLUE })]),
     bullet([run("delicious, tasty — I’m hungry / I’m thirsty", { bold: true, color: C.BLUE })]),
     bullet([run("What + a/an + adjective + noun + ! ", { bold: true }), run("What a delicious meal!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. Likes, dislikes, preferences"),
     bullet([run("love / like / enjoy / dislike / hate + verb-ING", { bold: true, color: C.BLUE }), run(" : I like eating bananas.")]),
     bullet([run("My favourite food is… — I prefer mangoes TO apples.", { bold: true, color: C.BLUE })]),
     bullet([run("Comparatives: ", { bold: true }), run("sweeter than, more bitter than", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("6. Offering and quantities"),
     bullet([...kw("Would you like some rice? — Yes, please! / No, thank you.", "woud iou laïk seume raïss")]),
     bullet([run("some — a lot of — a little ; a cup of, a glass of, a bottle of, a plate of", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("7. Healthy food"),
     bullet([run("The pyramid: a lot of rice and vegetables, some fish and milk, only a little sugar — "), run("healthy!", { bold: true, color: C.GREEN })], { after: 140 }),
     audioBox([

@@ -1,7 +1,7 @@
 // T6 — UNIT 7 — MY IMMEDIATE SURROUNDINGS (6 séances + révision + test) — Sessions 67 à 74 / 74
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "1B5E20"; // vert foncé
@@ -102,6 +102,12 @@ function opening() {
     p("• compare Malagasy schools with schools abroad;"),
     p("• read and write about my favourite place.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("autonomy, self-confidence.")], { after: 160 }),
+    rubricTable(
+      "The school buildings; the house furniture.",
+      "Describing your surroundings; comparing two schools, two houses.",
+      "There is / There are."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -438,6 +444,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 7", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("MY IMMEDIATE SURROUNDINGS"),
+    rubricBadge("VOCABULARY"),
     sub("1. The school buildings"),
     img("u7_school.png", 440, 768 / 1408),
     grid(SCHOOL, 3),
@@ -445,16 +452,20 @@ function lesson() {
     sub("2. Tom’s school"),
     tomDialogueBox(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. There is / There are"),
     pr([run("ONE: ", { bold: true }), ...kw("There is a library.", "zèr iz e laïbreri"), run("   MANY: ", { bold: true }), ...kw("There are many classrooms.", "zèr âr mèni klâsroumz")]),
     pr([run("Question: ", { bold: true }), ...kw("Is there a gym?", "iz zèr e djime"), run("  /  "), ...kw("Are there trees?", "âr zèr triz"), run("   Negative: ", { bold: true }), ...kw("There is no gym.", "zèr iz nôou djime")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("4. The house furniture"),
     img("u7_house.png", 440, 768 / 1408),
     grid(FURNITURE, 3),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. In this house…"),
     bedroomBox(),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("6. Comparing two schools, two houses"),
     pr([...kw("Both have a flag.", "bôouss hav e flague"), run("   "), ...kw("Only one has grass and trees.", "ôounli ouane haz grâss annde triz")]),
     pr([run("My favourite place: ", { bold: true }), ...kw("My favourite place is the school yard.", "maï féivrite pléiss iz ze skoul iârd")], { after: 140 }),

@@ -1,7 +1,7 @@
 // T10 — UNIT 4 — HEALTH (7 séances + révision + test) — Sessions 27 à 35 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "6C3483"; // violet
@@ -71,6 +71,12 @@ function opening() {
     p("• read a text about healthy habits with and, also, but, however;"),
     p("• write advice for teenagers and create a health campaign poster.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, altruism.")], { after: 160 }),
+    rubricTable(
+      "The diseases, the symptoms, the healthy habits.",
+      "Asking about and describing health; suggestions to stay healthy.",
+      "Should for suggestions; the glue words."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("One day, somebody near you will be sick — a schoolmate, a little brother, maybe you. With this unit, you can ask, understand, comfort and advise in English. Caring for people is the most beautiful use of a language!", { after: 40 }),
     ]),
@@ -615,17 +621,22 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 4", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. The diseases and the symptoms"),
     bullet([run("the flu, a cold, malaria, a stomachache, a toothache;", { bold: true, color: C.BLUE }), run("  a fever, a headache, a sore throat, a cough, to sneeze, to feel weak.")]),
     bullet([run("I HAVE + disease; MY + body part + ACHES.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Asking about and describing health"),
     bullet([run("What’s the matter? What’s wrong? How are you feeling? Are you OK?", { bold: true, color: C.BLUE })]),
     bullet([run("I feel terrible → I don’t feel well → better → much better → great!", { bold: true, color: C.BLUE })]),
     bullet([run("Care: Poor you! Get well soon! Take care!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. The suggestions to stay healthy"),
     bullet([run("What should I do? — Stay in bed! Call the doctor! Drink a lot of water! Don’t play outside!", { bold: true, color: C.BLUE }), run("  (the imperative becomes a caring machine!)")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("4. The healthy habits"),
     bullet([run("breakfast = fuel; sport; washing hands; brushing teeth; 8 hours of sleep = the secret coach!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The glue words"),
     bullet([run("Addition: and, also. Contrast: but, however.", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("6. The golden rule"),

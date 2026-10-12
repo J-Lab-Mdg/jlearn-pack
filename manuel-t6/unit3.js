@@ -1,7 +1,7 @@
 // T6 — UNIT 3 — TIME AND WEATHER (12 séances + révision + test) — Sessions 17 à 30 / 74
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "00838F"; // bleu canard
@@ -133,6 +133,12 @@ function opening() {
     p("• describe the four seasons and the weather;"),
     p("• read and write about time, seasons and weather.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("solidarity, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The days, the months, the four seasons, the weather words.",
+      "Telling the time; giving the date; speaking about the weather.",
+      "The ordinal numbers; on + day, in + month; noun + -y: sun → sunny."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -803,6 +809,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 3", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("TIME AND WEATHER"),
+    rubricBadge("VOCABULARY"),
     sub("1. The days and the months (capital letters!)"),
     grid(DAYS, 4),
     p("", { after: 60 }),
@@ -810,6 +817,7 @@ function lesson() {
     p("", { after: 60 }),
     songBox(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. The ordinal numbers and the date"),
     grid(ORDINALS.map(([a, b]) => [a ? `${a} — ${b}` : "", ""]), 4),
     p("", { after: 60 }),
@@ -819,6 +827,7 @@ function lesson() {
     pr([run("The three tenses of TO BE: ", { bold: true }), run("yesterday → was", { bold: true, color: C.BLUE }), run(" — "), run("today → is", { bold: true, color: C.BLUE }), run(" — "), run("tomorrow → will be", { bold: true, color: C.BLUE })]),
     pr([run("The sequence markers: ", { bold: true }), run("first, next, after, last — the day before / the day after", { bold: true, color: C.BLUE })], { after: 60 }),
     pr([run("The big numbers: ", { bold: true }), ...kw("one thousand (1 000)", "ouane saouzande"), run("  "), ...kw("one million", "ouane milieune"), run("  "), ...kw("one billion", "ouane bilieune")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. Telling the time"),
     img("u3_clocks.png", 460, 768 / 1408),
     pr([...kw("What time is it? / What’s the time?", "ouate taïme iz ite"), run("  →  "), ...kw("It’s seven o’clock.", "its sèvène oklok")]),
@@ -829,11 +838,13 @@ function lesson() {
     pr([run("On the arm: "), ...kw("a watch", "e ouotch"), run(" — on the wall: "), ...kw("a clock", "e klok")], { after: 60 }),
     timeConvBox(),
     p("", { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("4. The four seasons"),
     img("u3_seasons.png", 440, 768 / 1408),
     ...SEASONS.map(([s, pn, words]) =>
       pr([...kw(s, pn), run("  →  "), run(words, { italic: true, color: C.GRAY })], { after: 30 })),
     p("", { after: 80 }),
+    rubricBadge("VOCABULARY"),
     sub("5. The weather"),
     pr([...kw("What’s the weather like?", "ouots ze ouèzeur laïk"), run("  /  "), ...kw("How’s the weather today?", "haouz ze ouèzeur toudé"), run("  →  "), ...kw("It’s sunny!", "its seuni")], { after: 40 }),
     grid(WEATHER_ADJ, 4),

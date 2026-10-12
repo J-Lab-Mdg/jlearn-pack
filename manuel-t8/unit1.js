@@ -1,7 +1,7 @@
 // T8 — UNIT 1 — PERSONAL COMMUNICATION (16 séances + révision + test) — Sessions 1 à 18 / 81
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1F618D"; // bleu
@@ -90,6 +90,12 @@ function opening() {
     p("• use the time prepositions: for Christmas, on Sunday;"),
     p("• read an e-mail and write about my plans.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-esteem, mutual respect.")], { after: 160 }),
+    rubricTable(
+      "The feelings; the weekend activities.",
+      "Asking about feelings; speaking about plans; writing an e-mail.",
+      "Present continuous; simple past; the two futures: going to / will."
+    ),
+    p("", { after: 100 }),
     box("WELCOME TO T8!", [
       p("In T7, you learned to describe your world: your dreams, your family, your town."),
       p("In T8, you travel in TIME: yesterday (the simple past!), today (your feelings!) and tomorrow (your plans!). Ready? Let’s go!", { after: 40 }),
@@ -1247,18 +1253,25 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 1", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("PERSONAL COMMUNICATION"),
+    rubricBadge("VOCABULARY"),
     sub("1. The feelings"),
     bullet([run("happy, excited, sad, worried, tired, angry, scared, proud", { bold: true, color: C.BLUE }), run(" — How are you feeling today? → I feel…")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Asking about feelings"),
     bullet([run("You look + adj. — What’s wrong? — What happened? — Are you OK? — What makes you + adj?", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. The present continuous (temporary facts)"),
     bullet([run("BE + verb-ING: ", { bold: true }), run("You are smiling now! I am feeling great today!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. The simple past"),
     bullet([run("was/were — regular + -ed (helped, played) — rebels: won, lost, went, ate, saw, had", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("5. The weekend activities"),
     bullet([run("chores, hobbies, sports and games, transport — weekend, holiday, day off", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. The two futures"),
     bullet([run("PLAN → be going to + verb — PREDICTION → will + verb (won’t)", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("7. Time prepositions and the e-mail"),
     bullet([run("FOR + holiday — ON + day/date", { bold: true, color: C.BLUE }), run(" ; the e-mail skeleton: From/To/Subject, Dear…, body, Your friend…")], { after: 140 }),
     audioBox([

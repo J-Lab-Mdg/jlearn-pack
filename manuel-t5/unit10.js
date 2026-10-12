@@ -1,7 +1,7 @@
 // T5 — UNIT 10 — WILD ANIMALS (2 séances + révision + test) — Sessions 46 à 49 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "B03060"; // framboise
@@ -61,6 +61,12 @@ function opening() {
     p("• count from 71 to 100;"),
     p("• answer: How many … are there? — There are …", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("love of effort, striving for the best.")], { after: 160 }),
+    rubricTable(
+      "Thirteen wild animals; the numbers 71 to 100.",
+      "Asking What is this?; counting the animals.",
+      "How many are there? — There are…"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -188,16 +194,20 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 10", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("WILD ANIMALS"),
+    rubricBadge("VOCABULARY"),
     sub("1. Thirteen wild animals"),
     img("u10_animals.png", 440, 768 / 1408),
     animalGrid(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("2. What is this?"),
     pr([run("The question: "), ...kw("What is this?", "ouate iz ziss")]),
     pr([run("The answer: "), ...kw("This is a lion.", "ziss iz e laïeune")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. The numbers 71 to 100"),
     numberGrid(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. How many are there?"),
     pr([run("The question: "), ...kw("How many zebras are there?", "haou mèni zibraz âr zèr")]),
     pr([run("The answer: "), ...kw("There are eighty zebras.", "zèr âr éiti zibraz")], { after: 140 }),

@@ -1,7 +1,7 @@
 // T5 — UNIT 9 — MY FAMILY (4 séances + révision + test) — Sessions 40 à 45 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "8B5E3C"; // brun
@@ -81,6 +81,12 @@ function opening() {
     p("• read the family words and draw a family tree;"),
     p("• present my family to the class.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, working together.")], { after: 160 }),
+    rubricTable(
+      "The family words.",
+      "Presenting your family; the questions of the family.",
+      "His or her?"
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -309,6 +315,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 9", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("MY FAMILY"),
+    rubricBadge("VOCABULARY"),
     sub("1. The family words"),
     img("u9_family.png", 440, 768 / 1408),
     wordGrid(),
@@ -316,12 +323,15 @@ function lesson() {
     sub("2. The song"),
     whoSongBox(),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. The questions of the family"),
     dialogueBox(),
     p("", { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("4. His or her?"),
     pr([run("For a boy or a man: "), ...kw("his", "hiz"), run(" — His name is Koto. "), run("He", { bold: true, color: C.BLUE }), run(" is 12.")]),
     pr([run("For a girl or a woman: "), ...kw("her", "heur"), run(" — Her name is Fara. "), run("She", { bold: true, color: C.BLUE }), run(" is 14.")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. I present my family"),
     pr([run("My name is Rija. ", { bold: true, color: C.BLUE }),
         run("This is my brother. His name is Koto. He is 12. ", { bold: true, color: C.BLUE }),

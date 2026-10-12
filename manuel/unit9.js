@@ -1,7 +1,7 @@
 // UNIT 9 — HOUSE (4 séances + révision + test) — Sessions 44 à 49 / 57
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "8B5E3C"; // marron
@@ -43,6 +43,12 @@ function opening() {
     p("• point to the parts around me;"),
     p("• describe my dream house.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("respect, cooperation.")], { after: 160 }),
+    rubricTable(
+      "The parts of the house.",
+      "Pointing: Point to…!; describing a house.",
+      "This is the… — It is big / small."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -298,13 +304,16 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 9", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("HOUSE"),
+    rubricBadge("VOCABULARY"),
     sub("1. The parts of the house"),
     img("u9_house.png", 340, 768 / 1408),
     partsGrid(),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Point to …!"),
     pr([run("The command: "), ...kw("Point to the door!", "poïnte tou ze dôr"),
         run(" — we point to the part.")], { after: 120 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. I describe a house"),
     pr([run("First: "), ...kw("This is my house.", "zis iz maï haous")]),
     pr([run("The colour: "), ...kw("It is green.", "it iz grine")]),

@@ -1,7 +1,7 @@
 // T5 — UNIT 1 — SOCIALISING (3 séances + révision + test) — Sessions 1 à 5 / 49
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "E36C0A"; // orange
@@ -68,6 +68,12 @@ function opening() {
     p("• wish: Good night!, Enjoy your meal!, Have a nice day!;"),
     p("• say goodbye: See you!, See you next time!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, perseverance.")], { after: 160 }),
+    rubricTable(
+      "The parts of the day: morning, afternoon, evening, night.",
+      "Greetings at every moment of the day; wishes; saying goodbye.",
+      "Good morning / Good afternoon / Good evening / Good night."
+    ),
+    p("", { after: 100 }),
     new Table({
       width: { size: 10400, type: WidthType.DXA },
       rows: [
@@ -264,6 +270,7 @@ function lesson() {
   return [
     p([run("LESSON — UNIT 1", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("SOCIALISING"),
+    rubricBadge("VOCABULARY"),
     sub("1. The parts of the day"),
     img("u1_partsday.png", 460, 384 / 1536),
     dayGrid(),
@@ -271,17 +278,20 @@ function lesson() {
     sub("2. The rhyme"),
     rhymeBox(),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("3. Greetings"),
     pr([run("In the morning: "), ...kw("Good morning!", "goud môrning")]),
     pr([run("In the afternoon: "), ...kw("Good afternoon!", "goud afteurnoune")]),
     pr([run("In the evening: "), ...kw("Good evening!", "goud ivning")], { after: 100 }),
     sayItRight("afterNOON — the strong part is at the END: af-teur-NOUNE."),
     p("", { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. Wishes"),
     img("u1_wishes.png", 400, 768 / 1376),
     pr([run("Before we sleep: "), ...kw("Good night!", "goud naïte")]),
     pr([run("Before we eat: "), ...kw("Enjoy your meal!", "inndjoï iôr mile")]),
     pr([run("A friend goes out: "), ...kw("Have a nice day!", "hav e naïs déi")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("5. Saying goodbye"),
     pr([...kw("See you!", "si iou"), run("   "), ...kw("See you next time!", "si iou nèkst taïme")], { after: 140 }),
     audioBox([

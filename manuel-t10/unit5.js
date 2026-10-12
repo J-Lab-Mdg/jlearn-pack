@@ -1,7 +1,7 @@
 // T10 — UNIT 5 — THE WEATHER (6 séances + révision + test) — Sessions 36 à 43 / 88
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "148F77"; // vert d'eau
@@ -65,6 +65,12 @@ function opening() {
     p("• read an article about climate change and global warming;"),
     p("• write and present a weather forecast like a TV presenter!", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("self-confidence, altruism.")], { after: 160 }),
+    rubricTable(
+      "The weather words, the temperature, the seasons, the clothes.",
+      "Speaking about the weather; giving the forecast.",
+      "Noun + -y: sun → sunny; the weather grammar: It is… / It will…"
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("The weather opens half of the conversations of the world! “Nice day, isn’t it?” — with this unit, you can answer, describe, predict… and understand why our planet needs young doctors like you.", { after: 40 }),
     ]),
@@ -518,16 +524,21 @@ function bigLesson() {
   return [
     p([run("THE BIG LESSON — UNIT 5", { bold: true, color: "FFFFFF", size: 30 })],
       { center: true, shade: COLOR, after: 160 }),
+    rubricBadge("VOCABULARY"),
     sub("1. The weather words and the -y machine"),
     bullet([run("What’s the weather like? — It’s nice / terrible!", { bold: true, color: C.BLUE })]),
     bullet([run("rain→rainy, wind→windy, cloud→cloudy, mist→misty, storm→stormy, snow→snowy, sun→sunny (nn!).", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("2. The temperature and the forecast"),
     bullet([run("What’s the temperature? It’s 12 degrees. Rising / going up ↔ falling / dropping.", { bold: true, color: C.BLUE })]),
     bullet([run("What’s the weather forecast? — It’s partly cloudy; it will rain tomorrow.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("3. The clothes of the weather"),
     bullet([run("rain → umbrella, raincoat; sun → hat, sunglasses; cold → coat, scarf.", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("4. The seasons"),
     bullet([run("There: winter, spring, summer, autumn (GB) / fall (US). Here: hot rainy season, cool dry season. The two halves of the planet are opposite!", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("5. The weather grammar"),
     bullet([run("NOW → It’s raining. TOMORROW → It will rain / It’s going to be sunny.", { bold: true, color: C.BLUE })], { after: 100 }),
     sub("6. Global warming"),

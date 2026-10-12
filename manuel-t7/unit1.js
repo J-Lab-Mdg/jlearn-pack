@@ -1,7 +1,7 @@
 // T7 — UNIT 1 — PERSONAL COMMUNICATION (15 séances + révision + test) — Sessions 1 à 17 / 99
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell, rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType, VerticalAlign } = require("docx");
 
 const COLOR = "1F618D"; // bleu profond
@@ -97,6 +97,12 @@ function opening() {
     p("• give my opinion: I think… / I don’t think so;"),
     p("• read and write about dream jobs.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("mutual respect, solidarity.")], { after: 160 }),
+    rubricTable(
+      "The names of jobs; countries and nationalities.",
+      "Introducing others; dreams and goals; asking and giving opinion.",
+      "Want to / would like to / wish; good at + verb-ing; WH-questions."
+    ),
+    p("", { after: 100 }),
     box("DO YOU REMEMBER? (T6)", [
       p("In T6 we learned to greet, to give our personal information, to spell, to count and to describe people."),
       p("This year, in T7, we go further: we talk about our DREAMS, we give our OPINION, and we read and write real texts!", { after: 40 }),
@@ -1235,33 +1241,40 @@ function bigLesson() {
   return [
     p([run("LESSON — UNIT 1", { bold: true, size: 30 })], { center: true, after: 120 }),
     lessonTitle("PERSONAL COMMUNICATION"),
+    rubricBadge("VOCABULARY"),
     sub("1. The names of jobs"),
     bullet([...kw("a teacher, a doctor, a nurse, a farmer, a mechanic", "e titcheur, e dokteur, e neurss, e fârmeur, e mékanik")]),
     bullet([...kw("a driver, a cook, a police officer, a seller, a pilot", "e draïveur, e kouk, e poliss ofisseur, e sèleur, e païleute")]),
     bullet([run("a", { bold: true, color: C.BLUE }), run(" + consonant sound: a doctor — "), run("an", { bold: true, color: C.BLUE }), run(" + vowel sound: an engineer, an artist")], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("2. Dreams and goals"),
     bullet([...kw("What’s your dream? What are your goals?", "ouots iôr drime — ouate âr iôr gôoulz")]),
     bullet([...kw("What would you like to be when you grow up?", "ouate woud iou laïk tou bi ouène iou grôou eup")]),
     bullet([...kw("I want to be a doctor.", "aï ouonte tou bi e dokteur")]),
     bullet([...kw("I’d like to be a pilot.", "aïd laïk tou bi e païleute"), run("  (I’d = I would)")]),
     bullet([run("The rule: ", { bold: true }), run("want / would like / wish + TO + verb", { bold: true, color: C.BLUE }), run(" — the verb never changes!")], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("3. Good at, bad at + verb-ing"),
     bullet([...kw("I’m good at drawing.", "aïm goud ate drôinng")]),
     bullet([...kw("I’m bad at singing.", "aïm bade ate sinnguinng")]),
     bullet([run("The rule: ", { bold: true }), run("good at / bad at + verb-ING (the gerund)", { bold: true, color: C.BLUE })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("4. Introducing others"),
     bullet([...kw("May I introduce you to Maria?", "méi aï inntrodiousse iou tou maria"), run("  (very polite)")]),
     bullet([...kw("This is Tom. He is my friend.", "zis iz tome — hi iz maï frènde")]),
     bullet([...kw("Nice to meet you! — Nice to meet you too!", "naïss tou mite iou — tou")], { after: 100 }),
+    rubricBadge("VOCABULARY"),
     sub("5. Countries and nationalities"),
     bullet([...kw("Where are you from? — I’m from Madagascar. I’m Malagasy.", "ouèr âr iou frome — aïm frome madagaskar, aïm malagassi")]),
     bullet([run("China → Chinese — Japan → Japanese — Spain → Spanish — England → English", { bold: true, color: C.BLUE })]),
     bullet([run("Kenya → Kenyan — America → American — France → French", { bold: true, color: C.BLUE })]),
     bullet([run("Always a CAPITAL letter: ", { bold: true, color: C.RED }), run("Madagascar, Malagasy!", { bold: true })], { after: 100 }),
+    rubricBadge("GRAMMAR"),
     sub("6. WH-questions"),
     bullet([run("WHO", { bold: true, color: C.BLUE }), run(" → a person: "), run("Who is she?", { bold: true })]),
     bullet([run("WHERE", { bold: true, color: C.BLUE }), run(" → a place: "), run("Where are you from?", { bold: true })]),
     bullet([run("WHAT", { bold: true, color: C.BLUE }), run(" → a thing: "), run("What is your job?", { bold: true })], { after: 100 }),
+    rubricBadge("FUNCTIONS"),
     sub("7. Asking and giving opinion"),
     bullet([...kw("Do you think it is difficult?", "dou iou sinnk ite iz difikeulte")]),
     bullet([...kw("Yes, I do. I think it is difficult.", "yèss aï dou — aï sinnk")]),
