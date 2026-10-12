@@ -30,6 +30,22 @@ const rich = (text, opt = {}) => {
   return out.length ? out : [tr(text, opt)];
 };
 const p = (text, opt = {}) => new Paragraph({ alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 110, line: 300 }, indent: opt.indent ? { left: opt.indent } : undefined, shading: opt.fill ? { type: ShadingType.CLEAR, fill: opt.fill } : undefined, children: rich(text, opt) });
+// Balises du récit : ##date## (bordeaux gras), @@personnage@@ (vert gras), **mot-clé** (gras), //italique//
+const M = (text, base = {}) => {
+  const out = []; const re = /##(.+?)##|@@(.+?)@@|\*\*(.+?)\*\*|\/\/(.+?)\/\//g; let last = 0, m;
+  while ((m = re.exec(text))) {
+    if (m.index > last) out.push(tr(text.slice(last, m.index), base));
+    if (m[1] !== undefined) out.push(tr(m[1], { ...base, bold: true, color: C.wine }));
+    else if (m[2] !== undefined) out.push(tr(m[2], { ...base, bold: true, color: C.green }));
+    else if (m[3] !== undefined) out.push(tr(m[3], { ...base, bold: true }));
+    else out.push(tr(m[4], { ...base, italics: true }));
+    last = re.lastIndex;
+  }
+  if (last < text.length) out.push(tr(text.slice(last), base));
+  return out.length ? out : [tr(text, base)];
+};
+const pm = (text, opt = {}) => new Paragraph({ alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 110, line: 300 }, shading: opt.fill ? { type: ShadingType.CLEAR, fill: opt.fill } : undefined, children: M(text, opt) });
+const strip = t => t.replace(/##|@@|\*\*|\/\//g, '');
 const mixed = (parts, opt = {}) => new Paragraph({ alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 110, line: 300 }, shading: opt.fill ? { type: ShadingType.CLEAR, fill: opt.fill } : undefined, children: parts.flatMap(([t, o]) => rich(t, o)) });
 const title = (text, level = 1, bookmark) => {
   const run = tr(text, { bold: true, color: level === 1 ? C.red : C.green, size: level === 1 ? 32 : 28 });
@@ -104,8 +120,8 @@ function deroulement(s) {
     r('II. NOUVELLE LEÇON', `Annonce : « Aujourd’hui, nous allons apprendre à ${s.goal}. »`, 'Écoutent.', 'Présentation guidée', 'Tableau', ''),
     r('1. Mise en situation', s.situation, 'Écoutent, observent et proposent des réponses.', 'Situation-problème', 'Illustration, tableau', 'Participation'),
     r('2. Présentation', `Présente le titre « ${s.t} » et l’objectif de la séance.`, 'Écoutent.', 'Explication brève', 'Tableau', ''),
-    r('3. Observation', s.exemple, 'Observent l’exemple résolu.', 'Observation dirigée', 'Document imprimé', 'Compréhension'),
-    r('4. Analyse', `Guide l’analyse : ${s.concept}`, 'Expliquent la démarche et vérifient le résultat.', 'Recherche en binômes', 'Documents, cartes, frises', 'Raisonnement'),
+    r('3. Récit', `Raconte et explique : ${strip(s.recit[0])}`, 'Écoutent le récit, posent des questions et relèvent les dates et les personnages.', 'Récit guidé', 'Tableau, frises, cartes', 'Attention, participation'),
+    r('4. Étude de document', `Fait lire le document « ${s.doc.titre} » (${s.doc.source}), puis pose les questions.`, 'Lisent le document, répondent aux questions et critiquent la source.', 'Observation dirigée, travail en binômes', 'Document imprimé', 'Esprit critique'),
     r('5. Synthèse', `Donc, ${s.synthese}`, 'Écoutent et reformulent la règle.', 'Synthèse guidée', 'Cahier, tableau', 'Trace écrite'),
     r('6. Application', `${s.exos[0]} ${s.exos[1]}`, `${s.corr[0]} ${s.corr[1]}`, 'Travail individuel puis correction collective', 'Cahier, ardoises', 'Remédiation'),
     r('III. Évaluation', `Résous sans modèle : ${s.exos[0]} Puis justifie l’une de tes réponses.`, `${s.corr[0]} La justification s’appuie sur la règle de la leçon.`, 'Travail individuel', 'Feuille, cahier', 'Maîtrise de l’objectif')
@@ -124,15 +140,33 @@ function seance(s, i, total, uNo, figBufs) {
   a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 160, after: 160 }, children: [tr(s.t.toUpperCase(), { bold: true, color: C.red, size: 32 })] }));
   const scPath = path.join(__dirname, '..', 'assets', 'scenes', `u${uNo}s${i}.jpg`);
   if (fs.existsSync(scPath)) a.push(imgJpg(fs.readFileSync(scPath), 430));
-  a.push(mixed([['Définition — ', { bold: true, color: C.green }], [s.def, { bold: true }]]));
-  a.push(mixed([['Autrement dit : ', { bold: true, color: C.blue }], [s.autrement, {}]]));
-  a.push(p(s.concept));
+  a.push(pm(`//${s.situation}//`, { after: 140 }));
+  a.push(title('Le récit', 2));
+  s.recit.forEach(par => a.push(pm(par)));
   if (s.fig && figBufs[s.fig]) a.push(img(figBufs[s.fig]));
-  a.push(title('Méthode', 2));
-  s.method.forEach((m, k) => a.push(p(`${k + 1}. ${m}`, { after: 60 })));
-  a.push(mixed([['Exemple — ', { bold: true, color: C.blue }], [s.exemple, {}]]));
-  a.push(mixed([['Erreur à éviter — ', { bold: true, color: C.ocre }], [s.erreur, {}]]));
+  a.push(title('Étude de document', 2));
+  a.push(mixed([[`Document — ${s.doc.titre} `, { bold: true, color: C.blue }], [`(${s.doc.source})`, { italics: true, size: 20 }]], { after: 60 }));
+  a.push(pm(`//${s.doc.texte}//`, { fill: C.pale }));
+  a.push(mixed([['Questions sur le document', { bold: true, color: C.green }]], { after: 60 }));
+  s.doc.questions.forEach((q, k) => a.push(p(`${k + 1}. ${q}`, { after: 50 })));
+  s.doc.reponses.forEach((rp, k) => a.push(correction(`Réponse ${k + 1}. `, rp)));
+  a.push(title('Les repères', 2));
+  const repHead = (l1, l2, fill) => new TableRow({ children: [cell(l1, { bold: true, fill, color: C.white }), cell(l2, { bold: true, fill, color: C.white })] });
+  if (s.reperes.dates && s.reperes.dates.length) {
+    a.push(table([repHead('Date', 'Événement', C.wine), ...s.reperes.dates.map(r2 => new TableRow({ children: [cell(r2[0], { bold: true }), cell(r2[1])] }))], [2600, 7000]));
+    a.push(new Paragraph({ spacing: { after: 80 }, children: [] }));
+  }
+  if (s.reperes.persos && s.reperes.persos.length) {
+    a.push(table([repHead('Personnage', 'Rôle', C.green), ...s.reperes.persos.map(r2 => new TableRow({ children: [cell(r2[0], { bold: true }), cell(r2[1])] }))], [2600, 7000]));
+    a.push(new Paragraph({ spacing: { after: 80 }, children: [] }));
+  }
+  if (s.reperes.mots && s.reperes.mots.length) {
+    a.push(table([repHead('Mot à connaître', 'Sens', C.blue), ...s.reperes.mots.map(r2 => new TableRow({ children: [cell(r2[0], { bold: true }), cell(r2[1])] }))], [2600, 7000]));
+    a.push(new Paragraph({ spacing: { after: 80 }, children: [] }));
+  }
+  a.push(mixed([['Halte à l’idée reçue — ', { bold: true, color: C.ocre }], [`« ${s.idee.faux} » `, { italics: true }], [s.idee.vrai, {}]], { fill: 'FFF3E0' }));
   a.push(mixed([['Le savais-tu ? ', { bold: true, color: C.bleu2 }], [s.saistu, {}]], { fill: C.paleBlue }));
+  a.push(mixed([['Trace écrite — ', { bold: true, color: C.green }], [s.synthese, {}]], { fill: C.paleGreen }));
   a.push(title('EXERCICES', 2));
   s.exos.forEach((e, k) => a.push(p(`${k + 1}. ${e}`)));
   a.push(title('CORRIGÉS', 2));
@@ -187,10 +221,10 @@ function frontMatter(u) {
     page(),
     title('AVANT-PROPOS', 1, 'avant'),
     p('Ce manuel accompagne l’enseignant dans la mise en œuvre du programme officiel d’Histoire de la classe de T6 (sixième). Il couvre les quatre thématiques du programme en quatre unités : l’introduction à l’étude de l’Histoire, Madagascar depuis l’indépendance, les relations de Madagascar avec les pays africains et les îles de l’océan Indien, et le patrimoine et les richesses naturelles nationales, à raison de 2 heures par semaine. Conformément au programme, il développe la pensée historique et la démarche historique : exploiter des sources primaires, situer les faits dans le temps et dans l’espace, analyser les causes et les conséquences, et interpréter les réalités sociales pour comprendre le passé, expliquer le présent et améliorer le futur.'),
-    p('Chaque séance associe une fiche de préparation directement exploitable, une leçon structurée avec définitions rigoureuses et reformulations simples, des frises chronologiques et des schémas exacts, des exercices et un corrigé détaillé. Les contenus mobilisent les repères de Madagascar et véhiculent les valeurs portées par le programme : curiosité et esprit critique, union nationale et patriotisme, savoir vivre ensemble, respect des biens communs et de l’environnement.'),
+    p('Chaque séance associe une fiche de préparation directement exploitable et une leçon conçue pour l’Histoire : un récit vivant qui raconte les faits dans l’ordre du temps, une étude de document pour exercer l’esprit critique, un encadré de repères (dates, personnages, vocabulaire), des frises chronologiques et des schémas exacts, des exercices et un corrigé détaillé. Les contenus mobilisent les repères de Madagascar et véhiculent les valeurs portées par le programme : curiosité et esprit critique, union nationale et patriotisme, savoir vivre ensemble, respect des biens communs et de l’environnement.'),
     title('MODE D’EMPLOI', 1, 'mode'),
     p('La fiche suit trois grandes étapes : I. Révision ; II. Nouvelle leçon, comprenant mise en situation, présentation, observation, analyse, synthèse et application ; III. Évaluation. Aucune durée chiffrée n’est affichée : l’enseignant adapte le rythme à sa classe (volume officiel : 2 heures par semaine).'),
-    p('Code couleur : titre de leçon en rouge ; sous-titres en vert ; « Définition » en vert et « Autrement dit » en bleu ; « Erreur à éviter » en ocre ; corrigés en bordeaux ; encadré « Le savais-tu ? » sur fond bleu clair.'),
+    p('Code couleur de la leçon : dans le récit, les dates apparaissent en bordeaux, les personnages en vert et les mots importants en gras. Le document à étudier est présenté sur fond gris clair ; « Halte à l’idée reçue » sur fond ocre clair ; « Le savais-tu ? » sur fond bleu clair ; la trace écrite à copier sur fond vert clair ; les corrigés en bordeaux.'),
     title('SOMMAIRE INTERACTIF', 1, 'toc'),
     new Paragraph({ children: [new InternalHyperlink({ anchor: 'u1', children: [tr(`Unité I — ${u.name}`, { bold: true, color: C.blue })] })] }));
   u.sessions.forEach((s, i) => ch.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${i + 1}`, children: [tr(`Séance ${i + 1} — ${s.t}`, { color: C.blue })] })] })));

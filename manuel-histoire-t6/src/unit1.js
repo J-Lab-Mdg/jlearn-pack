@@ -1,4 +1,4 @@
-// UNITÉ 1 — L'INTRODUCTION À L'ÉTUDE DE L'HISTOIRE (PE T6) : 4 séances + révision + examen
+// UNITÉ 1 — L'INTRODUCTION À L'ÉTUDE DE L'HISTOIRE (PE T6) : 4 séances + révision + examen — format V4 Histoire
 const L = require('./figlib');
 const { buildUnit } = require('./engine');
 const { head, svg, txt, nline, dot, tableEl, box, arrow, seg, circle, poly, PINK, PINK2, GREEN, GREENL, BLUE, BLUEL, OCRE } = L;
@@ -70,13 +70,35 @@ const S = [
     revQ: 'Cite un événement du passé de ton village ou de ta famille. Comment le connais-tu ?',
     revRA: 'Réponses libres ; on le connaît par un récit, une photo, un objet — c’est-à-dire par une trace du passé.',
     situation: 'En creusant le jardin, Soa déterre une pièce de monnaie verdie, frappée de signes qu’elle ne connaît pas. Qui l’a tenue ? Quand ? Pour acheter quoi ? La pièce ne parle pas… et pourtant elle raconte. La discipline qui fait parler les traces du passé a un nom : l’Histoire — et aujourd’hui, nous entrons dans son atelier.',
-    def: 'L’Histoire est la discipline scientifique qui étudie et reconstitue le passé de l’humanité et des sociétés humaines à partir des traces qu’il a laissées, afin d’établir des connaissances historiques vérifiées.',
-    autrement: 'l’Histoire est une enquête : elle rassemble les indices laissés par le passé pour raconter, preuves à l’appui, ce qui s’est réellement passé.',
-    concept: 'Que trouve-t-on dans le champ d’étude de l’historien ? D’abord les faits et les civilisations : la fondation d’un royaume, la vie quotidienne d’un peuple. Puis les guerres, qui bouleversent les sociétés. Ensuite l’évolution de la société : comment on s’habillait, travaillait, apprenait hier et aujourd’hui. Enfin les lois et les personnages qui ont marqué leur époque. Mais attention : étudier un objet historique OBLIGE à le placer dans le temps et dans l’espace donnés — un fait sans date ni lieu n’est pas encore de l’Histoire. Et toute affirmation doit viser la vérité historique : ce qui distingue l’Histoire de la légende, c’est la preuve. Le récit du passé se construit avec des mots précis : le passé (ce qui a déjà eu lieu), la date (le moment exact), la période (l’étendue de temps), l’événement historique (le fait marquant daté et localisé).',
+    recit: [
+      'Tout commence par un mot grec. Au ##Vᵉ siècle avant Jésus-Christ##, un voyageur nommé @@Hérodote@@ parcourt les pays de la Méditerranée, interroge les témoins des grandes guerres de son temps, puis rédige son livre. Il l’appelle **historia** — ce qui signifie… « enquête » ! Le mot et le geste sont nés ensemble : l’**Histoire** est la discipline scientifique qui étudie et reconstitue le passé de l’humanité et des sociétés humaines à partir des **traces** qu’il a laissées, afin d’établir des connaissances vérifiées. Comme une enquête, elle rassemble les indices du passé pour raconter, preuves à l’appui, ce qui s’est réellement passé.',
+      'Qu’y a-t-il dans le champ d’étude de l’historien ? D’abord les **faits et les civilisations** : la fondation d’un royaume, la vie quotidienne d’un peuple. Puis les **guerres**, qui bouleversent les sociétés. Ensuite l’**évolution de la société** : comment on s’habillait, travaillait, apprenait hier et aujourd’hui. Enfin les **lois** et les **personnages** qui ont marqué leur époque. Mais attention : étudier un objet historique oblige à le placer dans le **temps** et dans l’**espace** — un fait sans date ni lieu n’est pas encore de l’Histoire.',
+      'Et toute affirmation doit viser la **vérité historique** : ce qui distingue l’Histoire de la légende, c’est la preuve. Le récit du passé se construit avec des mots précis : le **passé** (ce qui a déjà eu lieu), la **date** (le moment exact), la **période** (l’étendue de temps), l’**événement historique** (le fait marquant, daté et localisé).'
+    ],
+    doc: {
+      titre: 'L’enquête d’Hérodote',
+      source: 'd’après Hérodote, Enquêtes, Vᵉ siècle avant Jésus-Christ — extrait adapté',
+      texte: 'Hérodote d’Halicarnasse présente ici son enquête, pour que le temps n’efface pas les actions des hommes, et que les grands exploits accomplis par les Grecs et par les autres peuples ne tombent pas dans l’oubli. J’ai voyagé, j’ai vu de mes yeux, j’ai interrogé les témoins ; et lorsque je n’ai pas vu moi-même, je rapporte ce que l’on m’a dit, en le signalant au lecteur.',
+      questions: ['Qui est l’auteur de ce texte, et que veut-il empêcher ?',
+        'Comment recueille-t-il ses informations ? Relève deux moyens.',
+        'Pourquoi peut-on dire que ce texte fonde la méthode de l’Histoire ?'],
+      reponses: ['Hérodote ; il veut empêcher que le temps efface la mémoire des actions des hommes.',
+        'Il voyage et voit de ses yeux ; il interroge des témoins (et signale ce qu’il n’a pas vu lui-même).',
+        'Parce qu’il ne se contente pas de raconter : il enquête, distingue ce qu’il a vérifié de ce qu’on lui a rapporté — exactement le geste de l’historien.']
+    },
+    reperes: {
+      dates: [['Vᵉ s. av. J.-C.', 'Hérodote rédige ses Enquêtes : l’Histoire est née']],
+      persos: [['Hérodote', 'voyageur grec surnommé « le père de l’Histoire »']],
+      mots: [['Histoire', 'discipline scientifique qui reconstitue le passé à partir de traces vérifiées'],
+        ['Vérité historique', 'affirmation sur le passé appuyée sur des preuves'],
+        ['Événement historique', 'fait marquant, daté et localisé'],
+        ['Période', 'étendue de temps entre deux dates']]
+    },
+    idee: {
+      faux: 'L’Histoire, c’est tout ce qu’on raconte sur le passé.',
+      vrai: 'Non : un récit sans preuve reste une légende. « On dit que… » n’est pas une preuve ; l’Histoire ne retient que ce que des traces vérifiées permettent d’établir — c’est ce qui en fait une discipline scientifique.'
+    },
     synthese: 'l’Histoire = discipline scientifique du passé des sociétés humaines ; objet d’étude : faits et civilisations, guerres, évolution de la société, lois et personnages ; tout fait se situe dans le temps et dans l’espace ; la vérité historique exige des preuves.',
-    method: ['Identifier le fait étudié et le dire avec des mots précis : passé, date, période, événement.', 'Le situer dans le temps (quand ?) et dans l’espace (où ?).', 'Distinguer ce qui est prouvé (vérité historique) de ce qui est raconté sans preuve (légende, rumeur).'],
-    exemple: 'La pièce de Soa : un objet du passé → l’historien cherche sa date, son lieu de frappe et son usage ; la pièce devient une connaissance historique.',
-    erreur: 'Confondre Histoire et légende : « on dit que… » n’est pas une preuve. Une belle histoire racontée sans trace vérifiable reste une légende ; l’Histoire exige des sources contrôlées.',
     saistu: 'Le mot « histoire » vient du grec historia, qui signifie… « enquête » ! C’est Hérodote, un Grec du Ve siècle avant Jésus-Christ, qui l’a employé le premier en racontant les guerres de son temps après avoir voyagé et interrogé des témoins — on le surnomme depuis « le père de l’Histoire ».',
     exos: ['Réponds par une phrase complète. a) Qu’est-ce que l’Histoire ? b) Pourquoi dit-on que c’est une discipline scientifique ? d) Cite deux objets d’étude de l’Histoire. e) Que faut-il toujours préciser pour un fait historique ?',
       'Histoire ou légende ? Justifie. a) « Les archives disent que la ville a été fondée en 1817. » b) « On raconte qu’un génie habite la montagne. » d) « Cette photographie montre le marché en 1950. » e) « Il paraît que l’ancêtre du village volait dans les airs. »',
@@ -93,20 +115,41 @@ const S = [
     revQ: 'Qu’est-ce que la vérité historique ?',
     revRA: 'Une affirmation sur le passé appuyée sur des preuves vérifiées.',
     situation: 'Deux récits circulent sur la fondation du village : le doyen raconte qu’elle date du temps de son arrière-grand-père ; un cahier d’école trouvé au bureau du fokontany parle d’une autre époque. Qui croire ? Ni l’un ni l’autre… avant d’avoir enquêté ! L’historien a une méthode pour trancher sans se tromper : la démarche historique.',
-    def: 'La démarche historique est la méthode de travail de l’historien. Elle comporte quatre étapes : la recherche et le classement des sources ; le contrôle et la vérification des sources ; la compréhension, la description et l’extraction des informations ; puis l’analyse et l’interprétation des sources.',
-    autrement: 'chercher les indices, vérifier qu’ils sont fiables, lire ce qu’ils disent, puis expliquer ce qu’ils signifient — exactement comme un détective.',
-    concept: 'Pourquoi tant de soin ? Parce que l’Histoire a une mission : comprendre le passé pour expliquer le présent afin d’améliorer le futur. L’Histoire est utile trois fois. Elle explique le présent : nos langues, nos frontières, nos coutumes viennent du passé. Elle forme le jugement : face à une rumeur, celui qui a appris à vérifier des sources ne se laisse pas tromper. Elle éclaire les décisions : connaître les crises d’hier aide à éviter celles de demain. La démarche s’applique pas à pas : pour la fondation du village, on RECHERCHE toutes les traces (récit du doyen, cahier, tombeaux, registres) ; on CONTRÔLE chacune (le doyen peut se tromper, le cahier peut être recopié) ; on EXTRAIT les informations (noms, dates, lieux) ; on ANALYSE et on INTERPRÈTE : les sources concordantes permettent de conclure, les sources contradictoires appellent de nouvelles recherches. Observer un fait, le décrire, l’interpréter, le confirmer par des sources : voilà le geste complet.',
+    recit: [
+      'Pourquoi l’historien se donne-t-il tant de peine ? Parce que l’Histoire a une mission, que le programme résume en une phrase : **comprendre le passé pour expliquer le présent afin d’améliorer le futur**. Elle est utile trois fois. Elle explique le présent : nos langues, nos frontières, nos coutumes viennent du passé. Elle forme le **jugement** : face à une rumeur, celui qui a appris à vérifier des sources ne se laisse pas tromper. Elle éclaire les décisions : connaître les crises d’hier aide à éviter celles de demain.',
+      'Pour accomplir cette mission, l’historien suit la **démarche historique**, en quatre étapes et toujours dans le même ordre. Reprenons l’enquête du village. Première étape : **rechercher et classer** toutes les traces — le récit du doyen, le cahier du fokontany, les tombeaux, les registres. Deuxième étape : **contrôler et vérifier** chacune — le doyen peut se tromper, le cahier peut être une copie fautive. Troisième étape : **comprendre et extraire** les informations — noms, dates, lieux. Quatrième étape : **analyser et interpréter** — si les sources concordent, on peut conclure ; si elles se contredisent, l’enquête continue.',
+      'C’est exactement ainsi qu’a travaillé, au ##XIXᵉ siècle##, le père @@François Callet@@ : pendant des années, il a recueilli les récits des anciens de l’Imerina, les a fait répéter, comparés, recoupés — et en a composé le //Tantara ny Andriana//, somme monumentale qui reste une source majeure de l’histoire malgache. Observer, décrire, interpréter, confirmer par des sources : voilà le geste complet de l’historien.'
+    ],
+    doc: {
+      titre: 'Callet recueille la parole des anciens',
+      source: 'd’après la préface du Tantara ny Andriana du R.P. Callet, XIXᵉ siècle — extrait adapté',
+      texte: 'Je n’ai rien inventé dans ce livre : j’ai écrit sous la dictée des vieillards qui gardent les traditions. Ce que l’un m’a raconté, je l’ai fait répéter par d’autres ; lorsque les récits s’accordaient, je les ai notés avec confiance ; lorsqu’ils différaient, j’ai écrit les différentes versions côte à côte. Ainsi s’est composé ce recueil des traditions de l’Imerina.',
+      questions: ['D’où viennent les informations rassemblées par Callet ?',
+        'Que fait-il lorsque deux récits ne disent pas la même chose ?',
+        'Quelles étapes de la démarche historique reconnais-tu dans ce texte ?'],
+      reponses: ['De la parole des vieillards qui gardent les traditions orales de l’Imerina.',
+        'Il note les différentes versions côte à côte, sans choisir au hasard.',
+        'La recherche des sources (écouter les vieillards), le contrôle (faire répéter par d’autres), l’analyse (comparer les versions) — la démarche historique presque complète.']
+    },
+    reperes: {
+      dates: [['Années 1860-1870', 'le père Callet recueille les traditions orales de l’Imerina']],
+      persos: [['François Callet', 'missionnaire, auteur du Tantara ny Andriana']],
+      mots: [['Démarche historique', 'méthode de l’historien : rechercher, vérifier, extraire, interpréter'],
+        ['Source', 'toute trace du passé qui sert de preuve'],
+        ['Recouper', 'comparer plusieurs sources pour vérifier une information']]
+    },
+    idee: {
+      faux: 'Une bonne source suffit pour écrire l’Histoire.',
+      vrai: 'Non : toute source peut se tromper ou tromper — un témoin oublie, un document peut être recopié avec des fautes. C’est pourquoi la deuxième étape, contrôler et vérifier, ne se saute jamais, et pourquoi l’historien croise toujours plusieurs sources.'
+    },
     synthese: 'démarche historique = rechercher et classer, contrôler et vérifier, comprendre et extraire, analyser et interpréter ; mission de l’Histoire : comprendre le passé, expliquer le présent, améliorer le futur.',
-    method: ['Rechercher toutes les sources disponibles et les classer par type.', 'Contrôler et vérifier chaque source : qui l’a produite ? quand ? est-elle fiable ?', 'Extraire les informations, puis analyser et interpréter en croisant les sources.'],
-    exemple: 'Fondation du village : récit du doyen + cahier du fokontany + registre paroissial ; deux sources concordent sur la même période → la conclusion s’appuie sur ce croisement.',
-    erreur: 'Sauter la deuxième étape : utiliser une source sans la contrôler. Un document recopié avec des fautes, un témoignage de seconde main ou une photo mal datée conduisent à une fausse conclusion — vérifier AVANT d’utiliser.',
     saistu: 'Au XIXᵉ siècle, le père François Callet a appliqué la démarche historique à Madagascar : pendant des années, il a recueilli et recoupé les traditions orales des anciens de l’Imerina pour composer le Tantara ny Andriana, somme monumentale qui reste aujourd’hui une source majeure de l’histoire malgache — la parole des ancêtres, devenue archive.',
     exos: ['Remets la démarche dans l’ordre et nomme chaque étape : a) expliquer ce que signifient les informations ; b) rassembler récits, objets et documents ; d) vérifier qui a produit chaque source et si elle est fiable ; e) lire et relever les noms, dates et lieux.',
       'Cite les trois utilités de l’Histoire et illustre chacune : a) expliquer le présent (un exemple) ; b) former le jugement (un exemple) ; d) éclairer les décisions (un exemple) ; e) rappelle la mission complète de l’Histoire selon le programme.',
       'Enquête au village. Pour dater l’ancien marché, tu disposes du témoignage d’une grand-mère, d’une photo jaunie et d’un registre communal. a) Classe ces trois sources par type. b) Quels contrôles fais-tu sur le témoignage ? d) Que fais-tu si deux sources se contredisent ? e) Quand peux-tu conclure ?'],
     corr: ['Ordre : b (1. rechercher et classer) → d (2. contrôler et vérifier) → e (3. comprendre et extraire) → a (4. analyser et interpréter).',
       'a) nos coutumes et nos frontières viennent du passé ; b) vérifier une rumeur avant d’y croire ; d) connaître les crises d’hier pour éviter celles de demain ; e) comprendre le passé pour expliquer le présent afin d’améliorer le futur.',
-      'a) orale (témoignage), photographique (photo), écrite (registre) ; b) âge et mémoire du témoin, témoin direct ou de seconde main, concordance avec d’autres sources ; d) chercher de nouvelles sources pour trancher ; e) quand plusieurs sources vérifiées concordent.'],
+      'a) orale (témoignage), photographique (photo), écrite (registre) ; b) âge et mémoire du témoin, témoin direct ou de seconde main ; d) on recherche de nouvelles sources pour trancher ; e) quand plusieurs sources vérifiées concordent.'],
     fig: 'u1f2'
   },
   {
@@ -116,13 +159,36 @@ const S = [
     revQ: 'Récite les quatre étapes de la démarche historique.',
     revRA: 'Rechercher et classer ; contrôler et vérifier ; comprendre et extraire ; analyser et interpréter.',
     situation: 'Rivo affirme : « l’indépendance de Madagascar, c’était il y a très longtemps, au moins mille ans ! » Hanta éclate de rire : « 1960, c’est le siècle de nos grands-parents ! » Qui a raison ? Sans instrument pour mesurer le temps, impossible de trancher. L’historien possède cet instrument : la chronologie et sa ligne du temps.',
-    def: 'La chronologie est la science des temps : une liste d’événements classés suivant leur date, généralement du plus ancien au plus récent. L’espace en Histoire désigne le territoire, le lieu et la carte où se déroulent les faits. Situer un fait historique, c’est répondre aux deux questions : quand ? et où ?',
-    autrement: 'la chronologie range le passé comme on range une file : chacun à sa place, du plus ancien au plus récent — et la carte dit où chaque fait s’est produit.',
-    concept: 'Le temps se mesure avec des unités emboîtées : seconde, minute, heure, jour, semaine, mois, année — puis les grandes unités de l’historien : la décennie (10 ans), le siècle (100 ans), le millénaire (1 000 ans). Mais mesurer exige un point de départ ! Le calendrier grégorien, le nôtre, part de l’an 1, naissance de Jésus-Christ en Israël : nous sommes au IIIᵉ millénaire. Le calendrier musulman part de 622, année de l’hégire — le départ du prophète vers Médine : les années s’y comptent autrement. D’autres peuples ont d’autres points de départ : il n’existe pas UN temps, mais des calendriers, et l’historien sait passer de l’un à l’autre. L’outil roi est la frise chronologique : une ligne graduée à échelle régulière où chaque événement prend sa place — elle rend visibles l’ordre, les durées et les simultanéités. Enfin, le temps ne suffit pas : tout fait a eu lieu quelque part. Territoire, lieu, carte — l’espace est la seconde coordonnée de l’Histoire. Quand ? et où ? : un fait répondant aux deux questions est correctement situé.',
+    recit: [
+      'La **chronologie** est la science des temps : une liste d’événements classés suivant leur date, du plus ancien au plus récent — elle range le passé comme on range une file, chacun à sa place. Pour mesurer, elle emboîte les unités : seconde, minute, heure, jour, semaine, mois, année… puis viennent les grandes unités de l’historien : la **décennie** (10 ans), le **siècle** (100 ans), le **millénaire** (1 000 ans).',
+      'Mais mesurer exige un point de départ ! Le **calendrier grégorien**, le nôtre, part de l’##an 1##, naissance de Jésus-Christ : nous sommes au IIIᵉ millénaire. Le **calendrier musulman** part de ##622##, année de l’**hégire** — le départ du prophète vers Médine : les années s’y comptent autrement. D’autres peuples ont d’autres points de départ : il n’existe pas un temps unique, mais des calendriers, et l’historien sait passer de l’un à l’autre.',
+      'L’outil roi est la **frise chronologique** : une ligne graduée à échelle régulière où chaque événement prend sa place — elle rend visibles l’ordre, les durées et les simultanéités. Enfin, le temps ne suffit pas : tout fait a eu lieu quelque part. Territoire, lieu, carte — l’**espace** est la seconde coordonnée de l’Histoire. **Quand ?** et **où ?** : un fait qui répond aux deux questions est correctement situé. Ainsi l’indépendance de Madagascar, proclamée le ##26 juin 1960## à Antananarivo, est parfaitement située — et Hanta avait raison contre Rivo !'
+    ],
+    doc: {
+      titre: 'La proclamation de l’indépendance',
+      source: 'd’après le discours de Philibert Tsiranana, Antananarivo, 26 juin 1960 — extrait adapté',
+      texte: 'En ce jour solennel du 26 juin 1960, devant le peuple rassemblé, je proclame l’indépendance de Madagascar. Après soixante-quatre années, notre île retrouve sa pleine souveraineté. Que cette date reste gravée dans la mémoire de tous les Malgaches, aujourd’hui et pour les générations à venir.',
+      questions: ['Quelle est la date exacte de l’événement, et où se déroule-t-il ?',
+        'En quel siècle cet événement se situe-t-il ? Justifie avec la règle.',
+        'Le texte dit « après soixante-quatre années » : de quelle année part ce calcul ?'],
+      reponses: ['Le 26 juin 1960, à Antananarivo — l’événement est situé dans le temps ET dans l’espace.',
+        'Au XXᵉ siècle : pour une année entre 1901 et 2000, on prend les centaines (19) et on ajoute 1.',
+        'De 1896 : 1960 − 64 = 1896, l’année où Madagascar avait perdu sa souveraineté.']
+    },
+    reperes: {
+      dates: [['An 1', 'point de départ du calendrier grégorien'],
+        ['622', 'hégire : point de départ du calendrier musulman'],
+        ['26 juin 1960', 'indépendance de Madagascar']],
+      persos: [['Philibert Tsiranana', 'proclame l’indépendance le 26 juin 1960']],
+      mots: [['Décennie / siècle / millénaire', '10 ans / 100 ans / 1 000 ans'],
+        ['Frise chronologique', 'ligne du temps graduée à échelle régulière'],
+        ['Situer un fait', 'répondre aux deux questions : quand ? et où ?']]
+    },
+    idee: {
+      faux: '1960 appartient au XIXᵉ siècle, puisque la date commence par 19.',
+      vrai: 'Non : les années 1901 à 2000 forment le XXᵉ siècle. Pour trouver le siècle, on prend les centaines et on ajoute 1 (sauf pour les années en 00) : 1960 → 19 + 1 = XXᵉ siècle.'
+    },
     synthese: 'unités : de la seconde au millénaire (décennie 10 ans, siècle 100 ans, millénaire 1 000 ans) ; calendrier grégorien : an 1 ; calendrier musulman : 622, hégire ; frise = ligne du temps graduée ; situer un fait = quand ? + où ?.',
-    method: ['Choisir l’unité adaptée : décennie, siècle ou millénaire pour les faits historiques.', 'Repérer le point de départ du calendrier utilisé, puis placer la date sur la frise à échelle régulière.', 'Compléter par l’espace : localiser le fait sur la carte — le fait est situé quand on sait quand et où.'],
-    exemple: '1960 est au XXᵉ siècle ; de 1958 à 1972, la durée est 1972 − 1958 = 14 ans, soit un peu plus d’une décennie.',
-    erreur: 'Confondre le chiffre du siècle et les dates : 1960 n’est pas au XIXᵉ siècle mais au XXᵉ — les années 1901 à 2000 forment le XXᵉ siècle. Pour trouver le siècle, on prend les centaines et on ajoute 1 (sauf pour les années en 00).',
     saistu: 'Le calendrier traditionnel malgache compte douze mois lunaires — Alahamady, Adaoro, Adizaoza… — dont les noms viennent des navigateurs arabes arrivés sur les côtes de la Grande Île il y a près de mille ans. Le premier mois, Alahamady, donnait le signal du bain royal, le fandroana : à Madagascar aussi, mesurer le temps a toujours été un acte solennel !',
     exos: ['Convertis : a) 3 décennies en années ; b) 2 siècles en années ; d) un demi-millénaire en années ; e) 40 ans en décennies.',
       'Siècles et durées. a) En quel siècle se situe 1960 ? b) En quel siècle se situe 1817 ? d) Combien d’années séparent 1958 et 1972 ? e) Combien d’années séparent 622 et 2026 ?',
@@ -139,13 +205,36 @@ const S = [
     revQ: 'Décennie, siècle, millénaire : combien d’années chacun ?',
     revRA: '10 ans ; 100 ans ; 1 000 ans.',
     situation: 'La classe organise une « table du passé » : chacun apporte une trace d’autrefois. Naly pose une vieille pièce, Soa une photo de mariage de 1955, Rivo rapporte le récit de sa grand-mère, Hanta un journal jauni, et le maître ajoute l’enregistrement d’un vieux chant. Cinq objets très différents… et pourtant tous ont le même pouvoir : faire parler le passé. Ce sont des sources historiques.',
-    def: 'Une source historique est toute trace laissée par le passé qui permet de le reconstituer. On distingue les sources matérielles, figuratives, les vestiges, les sources écrites, orales, photographiques et audiovisuelles, chacune ayant ses caractéristiques propres.',
-    autrement: 'tout ce que le passé a laissé derrière lui — objet, image, ruine, écrit, parole, photo, film — est une source : le garde-manger de l’historien.',
-    concept: 'Passons les familles en revue. Les sources matérielles se présentent sous forme d’objets : monnaie, vase, bateau, outil — solides, mais muettes sur les intentions. Les sources figuratives représentent : gravures, sculptures, dessins, caricatures — elles montrent, mais selon le regard de leur auteur. Les vestiges sont les restes d’une civilisation, d’un peuple ou d’une époque : fondations d’une ancienne cité, outils enfouis — précieux pour les temps sans écriture. Les sources écrites et photographiques se présentent sous forme de documents : manuscrits, archives, journaux, photos — riches et datables, mais à critiquer (qui a écrit ? pourquoi ?). Les sources orales, cas des traditions orales, sont tirées de la parole transmise : irremplaçables à Madagascar, mais la mémoire déforme — il faut recouper. Les sources audiovisuelles, encore récentes, s’apparentent à la musique, aux bandes sonores et aux fichiers audio et vidéo. La règle d’or vaut pour toutes : aucune source ne suffit seule ; l’historien croise les types pour approcher la vérité historique.',
+    recit: [
+      'Une **source historique** est toute trace laissée par le passé qui permet de le reconstituer : objet, image, ruine, écrit, parole, photo, film — le garde-manger de l’historien. Passons les familles en revue. Les **sources matérielles** se présentent sous forme d’objets : monnaie, vase, bateau, outil — solides, mais muettes sur les intentions. Les **sources figuratives** représentent : gravures, sculptures, dessins, caricatures — elles montrent, mais selon le regard de leur auteur. Les **vestiges** sont les restes d’une civilisation ou d’une époque : fondations d’une ancienne cité, outils enfouis — précieux pour les temps sans écriture.',
+      'Les **sources écrites** et **photographiques** se présentent sous forme de documents : manuscrits, archives, journaux, photos — riches et datables, mais à critiquer : qui a écrit ? pourquoi ? Les **sources orales** sont tirées de la parole transmise : irremplaçables à Madagascar, pays de traditions orales — mais la mémoire déforme, il faut recouper. Les **sources audiovisuelles** enfin, les plus récentes : musique, bandes sonores, fichiers audio et vidéo.',
+      'La Grande Île possède un trésor de la famille écrite : les **sorabe**, « grands écrits » — des manuscrits en langue malgache tracés avec l’alphabet arabe, gardés par les scribes @@antemoro@@ du Sud-Est. Et la règle d’or vaut pour toutes les familles : aucune source ne suffit seule ; l’historien **croise** les types pour approcher la vérité historique.'
+    ],
+    doc: {
+      titre: 'Un trésor des Antemoro : le sorabe',
+      source: 'notice de musée — texte reconstitué',
+      texte: 'Ce volume ancien est un sorabe, « grand écrit ». Il est rédigé en langue malgache, mais avec des caractères arabes. Son papier a été fabriqué à partir d’écorce battue, son encre à partir de plantes. Les scribes antemoro du Sud-Est le recopiaient avec un soin extrême et le transmettaient de génération en génération comme un trésor de famille : il contient des généalogies, des remèdes et des récits anciens.',
+      questions: ['À quelle famille de sources le sorabe appartient-il ? Justifie.',
+        'Quelles informations un historien peut-il en tirer ?',
+        'Pourquoi faut-il tout de même croiser le sorabe avec d’autres sources ?'],
+      reponses: ['Aux sources écrites : c’est un document rédigé (en malgache, avec l’alphabet arabe).',
+        'Des généalogies, des remèdes, des récits anciens — et aussi des indices sur ceux qui l’ont écrit.',
+        'Parce qu’aucune source ne suffit seule : un texte recopié peut contenir des erreurs, et son auteur a son point de vue — la règle d’or est de croiser.']
+    },
+    reperes: {
+      persos: [['Les scribes antemoro', 'gardiens des manuscrits sorabe dans le Sud-Est']],
+      mots: [['Source matérielle', 'objet : monnaie, vase, outil'],
+        ['Source figurative', 'image : gravure, sculpture, caricature'],
+        ['Vestige', 'reste d’une civilisation : fondations, outils enfouis'],
+        ['Source écrite / orale', 'document rédigé / parole transmise'],
+        ['Source audiovisuelle', 'son et image : film, enregistrement'],
+        ['Sorabe', 'manuscrit malgache ancien en caractères arabes']]
+    },
+    idee: {
+      faux: 'Une photographie ne ment jamais.',
+      vrai: 'Si ! Un cadrage choisit ce qu’on voit, une date peut être fausse, une scène peut être posée. Comme toute source, la photographie se contrôle et se croise avec d’autres.'
+    },
     synthese: 'sept familles : matérielles (objets), figuratives (images), vestiges (restes), écrites (documents), orales (paroles), photographiques, audiovisuelles ; chacune a ses forces et ses limites ; on croise toujours plusieurs sources.',
-    method: ['Identifier la nature de la trace : objet, image, reste, écrit, parole, photo, son ou vidéo.', 'La classer dans sa famille de sources et noter ses caractéristiques (auteur, date, lieu si possible).', 'Évaluer ses limites et la croiser avec des sources d’autres familles.'],
-    exemple: 'La photo de 1955 (photographique) + le récit de la grand-mère (orale) + le journal jauni (écrite) : trois familles croisées sur la même époque — la reconstitution devient solide.',
-    erreur: 'Croire qu’une photo « ne ment jamais » : un cadrage choisit ce qu’on voit, une date peut être fausse, une scène peut être posée. Comme toute source, la photographie se contrôle et se croise.',
     saistu: 'Les plus anciens écrits de Madagascar sont les sorabe, « grands écrits » : des manuscrits rédigés en langue malgache mais avec l’alphabet arabe, conservés par les scribes antemoro du Sud-Est. Encre végétale, papier d’écorce battue : ces précieux volumes, gardés comme des trésors de famille, sont des sources écrites uniques au monde.',
     exos: ['Classe chaque source dans sa famille : a) une marmite en terre cuite retrouvée dans un tombeau ; b) le récit du doyen sur la grande famine ; d) une caricature parue dans un journal de 1930 ; e) un film documentaire sur les années 1970.',
       'Donne une force et une limite : a) d’une source orale ; b) d’une photographie ; d) d’un vestige ; e) d’un journal ancien.',
