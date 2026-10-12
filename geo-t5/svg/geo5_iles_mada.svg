@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les îles qui appartiennent à Madagascar</text>
+  <rect x="40" y="90" width="920" height="400" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(400 300) scale(1.9) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#A5D6A7" stroke="#2E7D32" stroke-width="1.5789473684210527" stroke-linejoin="round"/></g>
+  <circle cx="349" cy="186" r="7" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="337" y="180" text-anchor="end" font-size="21" fill="#263238" font-weight="bold">Nosy Be</text>
+  <circle cx="453" cy="220" r="6" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="465" y="226" text-anchor="start" font-size="21" fill="#263238" font-weight="bold">Nosy Mangabe</text>
+  <circle cx="459" cy="310" r="6" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="471" y="316" text-anchor="start" font-size="21" fill="#263238" font-weight="bold">Île Sainte-Marie</text>
+  <circle cx="354" cy="395" r="6" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="342" y="401" text-anchor="end" font-size="21" fill="#263238" font-weight="bold">Nosy Anakao</text>
+  <rect x="620" y="140" width="330" height="250" rx="14" fill="#E8F5E9" stroke="#2E7D32" stroke-width="3"/>
+  <text x="785" y="175" text-anchor="middle" font-size="23" fill="#1B5E20" font-weight="bold">Les îles de Madagascar</text>
+  <circle cx="655" cy="215" r="6" fill="#C00000" stroke="#7f0000" stroke-width="2"/><text x="670" y="221" text-anchor="start" font-size="21" fill="#263238">Nosy Be — nord-ouest</text>
+  <circle cx="655" cy="255" r="6" fill="#C00000" stroke="#7f0000" stroke-width="2"/><text x="670" y="261" text-anchor="start" font-size="21" fill="#263238">Nosy Mangabe — nord-est</text>
+  <circle cx="655" cy="295" r="6" fill="#C00000" stroke="#7f0000" stroke-width="2"/><text x="670" y="301" text-anchor="start" font-size="21" fill="#263238">Île Sainte-Marie — est</text>
+  <circle cx="655" cy="335" r="6" fill="#C00000" stroke="#7f0000" stroke-width="2"/><text x="670" y="341" text-anchor="start" font-size="21" fill="#263238">Nosy Anakao — sud-ouest</text>
+  <text x="500" y="530" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Nosy Be, au nord-ouest, est la plus grande île malgache : on l'appelle « l'île aux parfums ».</text>
+</svg>

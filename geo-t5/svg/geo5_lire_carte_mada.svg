@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Lire une carte de Madagascar</text><defs><marker id="arr" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#C00000"/></marker></defs>
+  <rect x="40" y="90" width="920" height="400" rx="18" fill="#FFFFFF" stroke="#90A4AE" stroke-width="3"/>
+  <rect x="280" y="105" width="440" height="375" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="3"/>
+  <text x="500" y="140" text-anchor="middle" font-size="26" fill="#1E7B34" font-weight="bold">MADAGASCAR</text>
+  <g transform="translate(500 285) scale(1.1) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#A5D6A7" stroke="#2E7D32" stroke-width="2.727272727272727" stroke-linejoin="round"/></g>
+  <circle cx="502" cy="306" r="6" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="513" y="302" text-anchor="start" font-size="14" fill="#263238">Antananarivo</text>
+  <circle cx="533" cy="283" r="4" fill="#FB8C00" stroke="#E65100" stroke-width="2"/>
+  <text x="541" y="279" text-anchor="start" font-size="13" fill="#263238">Toamasina</text>
+  <circle cx="470" cy="243" r="4" fill="#FB8C00" stroke="#E65100" stroke-width="2"/>
+  <text x="462" y="237" text-anchor="end" font-size="13" fill="#263238">Mahajanga</text>
+  <circle cx="478" cy="358" r="4" fill="#FB8C00" stroke="#E65100" stroke-width="2"/>
+  <text x="486" y="354" text-anchor="start" font-size="13" fill="#263238">Toliara</text>
+  <rect x="298" y="400" width="190" height="58" rx="6" fill="#FAFAFA" stroke="#90A4AE" stroke-width="2"/>
+  <text x="393" y="420" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">Légende</text>
+  <text x="393" y="443" text-anchor="middle" font-size="15" fill="#263238">★ Capitale    • Villes</text>
+  <line x1="620" y1="440" x2="755" y2="440" stroke="#37474F" stroke-width="4"/>
+  <line x1="620" y1="433" x2="620" y2="447" stroke="#37474F" stroke-width="3"/>
+  <line x1="687" y1="433" x2="687" y2="447" stroke="#37474F" stroke-width="3"/>
+  <line x1="755" y1="433" x2="755" y2="447" stroke="#37474F" stroke-width="3"/>
+  <text x="620" y="428" text-anchor="middle" font-size="15" fill="#263238">0</text>
+  <text x="687" y="428" text-anchor="middle" font-size="15" fill="#263238">100</text>
+  <text x="755" y="428" text-anchor="middle" font-size="15" fill="#263238">200 km</text>
+  <text x="687" y="468" text-anchor="middle" font-size="16" fill="#263238" font-style="italic">Échelle</text>
+  <line x1="695" y1="185" x2="695" y2="150" stroke="#C00000" stroke-width="4" marker-end="url(#arr)"/>
+  <text x="695" y="145" text-anchor="middle" font-size="20" fill="#C00000" font-weight="bold">N</text>
+  <line x1="670" y1="168" x2="720" y2="168" stroke="#546E7A" stroke-width="2"/>
+  <text x="500" y="476" text-anchor="middle" font-size="15" fill="#546E7A" font-style="italic">Source : Atlas scolaire — 2026</text>
+  <text x="500" y="80" text-anchor="middle" font-size="21" fill="#C00000" font-weight="bold">Le titre</text>
+  <line x1="500" y1="86" x2="500" y2="128" stroke="#C00000" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="195" y="429" text-anchor="end" font-size="21" fill="#C00000" font-weight="bold">La légende</text>
+  <line x1="205" y1="429" x2="294" y2="429" stroke="#C00000" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="860" y="429" text-anchor="middle" font-size="21" fill="#C00000" font-weight="bold">L'échelle</text>
+  <line x1="808" y1="429" x2="762" y2="429" stroke="#C00000" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="858" y="162" text-anchor="middle" font-size="21" fill="#C00000" font-weight="bold">L'orientation</text>
+  <line x1="790" y1="168" x2="728" y2="168" stroke="#C00000" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="500" y="562" text-anchor="middle" font-size="21" fill="#C00000" font-weight="bold">La source et la date</text>
+  <line x1="500" y1="548" x2="500" y2="480" stroke="#C00000" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="500" y="595" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Pour lire une carte, on cherche : le titre, la légende, l'échelle, l'orientation, la source, la date et l'auteur.</text>
+</svg>

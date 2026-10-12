@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Madagascar et les lignes imaginaires</text>
+  <rect x="40" y="90" width="920" height="410" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <line x1="60" y1="125" x2="560" y2="125" stroke="#0277BD" stroke-width="4" stroke-dasharray="12 7"/>
+  <text x="75" y="115" text-anchor="start" font-size="22" fill="#0277BD" font-weight="bold">Équateur</text>
+  <g transform="translate(310 320) scale(1.75) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#A5D6A7" stroke="#2E7D32" stroke-width="1.7142857142857142" stroke-linejoin="round"/></g>
+  <line x1="60" y1="425" x2="560" y2="425" stroke="#C00000" stroke-width="4" stroke-dasharray="12 7"/>
+  <text x="75" y="462" text-anchor="start" font-size="22" fill="#C00000" font-weight="bold">Tropique du Capricorne</text>
+  
+  <rect x="600" y="125" width="350" height="72" rx="12" fill="#FFF8E1" stroke="#F9A825" stroke-width="3"/>
+  <text x="775" y="155" text-anchor="middle" font-size="21" fill="#263238">L'équateur passe au nord</text>
+  <text x="775" y="181" text-anchor="middle" font-size="21" fill="#263238">de Madagascar.</text>
+  
+  <rect x="600" y="220" width="350" height="72" rx="12" fill="#FFF8E1" stroke="#F9A825" stroke-width="3"/>
+  <text x="775" y="250" text-anchor="middle" font-size="21" fill="#263238">Le tropique du Capricorne traverse</text>
+  <text x="775" y="276" text-anchor="middle" font-size="21" fill="#263238">le Sud de l'île, près de Toliara.</text>
+  
+  <rect x="600" y="315" width="350" height="72" rx="12" fill="#FFF8E1" stroke="#F9A825" stroke-width="3"/>
+  <text x="775" y="345" text-anchor="middle" font-size="21" fill="#263238">Madagascar est donc entièrement</text>
+  <text x="775" y="371" text-anchor="middle" font-size="21" fill="#263238">dans l'hémisphère Sud.</text>
+  <text x="500" y="535" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Madagascar s'étend d'environ 12° à 25° de latitude Sud : tout le pays vit sous les tropiques.</text>
+</svg>

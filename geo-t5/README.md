@@ -11,7 +11,7 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 | Plan de découpage (76 numéros) | ✅ Terminé (`PLAN-FINAL.md`) |
 | Générateur de séances (seance-generator.js, patché T5) | ✅ Terminé |
 | **Unité 1 — La planète Terre (S1-S16)** | ✅ **Terminée et intégrée au build** |
-| Unité 2 — L'île de Madagascar dans le monde (S17-S26) | ⬜ À produire |
+| **Unité 2 — L'île de Madagascar dans le monde (S17-S26)** | ✅ **Terminée et intégrée au build** |
 | Unité 3 — Les milieux naturels à Madagascar (S27-S55) | ⬜ À produire |
 | Unité 4 — Les ressources naturelles (S56-S61) | ⬜ À produire |
 | Unité 5 — La vie rurale et la vie urbaine (S62-S76) | ⬜ À produire |
@@ -23,10 +23,13 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 - `src/data-unite1.js` — Séances S1-S7 : forme, dimensions, globe/planisphère, équateur/hémisphères, tropiques, pôles/Greenwich, continents.
 - `src/data-unite1b.js` — Séances S8-S14 : océans, lire une carte, rotation, jour/nuit, révolution, saisons, rôle du soleil.
 - `src/data-unite1-rev.js` — S15 révision (tableau récapitulatif 20 notions + 15 questions) et S16 sujet d'examen (4 exercices × 5 pts, corrigé).
+- `src/data-unite2.js` — Séances S17-S20 : situer Madagascar dans le monde, lignes imaginaires, îles malgaches, îles éparses.
+- `src/data-unite2b.js` — Séances S21-S24 : îles voisines de l'océan Indien, lire une carte de Madagascar, tracé de la carte (quadrillage puis contour).
+- `src/data-unite2-rev.js` — S25 révision (20 notions + 15 questions) et S26 sujet d'examen (4 exercices × 5 pts, corrigé).
 - `src/assemble.js` — Assemblage du manuel complet (couverture, avant-propos, mode d'emploi, TdM interactive, tableaux de bord, séances, annexes optionnelles).
-- `svg/` — 14 schémas pédagogiques (`geo5_*.png`, pack 116 pièces).
-- `scenes/` — 14 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
-- `output/Manuel_Geographie_T5_JLearn.docx` — Build V1 Unité 1 (**2 971 Ko**, 16 séances, 28 images, empreinte SHA-256 jointe).
+- `svg/` — 22 schémas pédagogiques (`geo5_*.png`) : 14 (U1) + 8 (U2).
+- `scenes/` — 22 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
+- `output/Manuel_Geographie_T5_JLearn.docx` — Build V1 Unités 1-2 (**4 628 Ko**, 26 séances, 44 images, empreinte SHA-256 jointe).
 
 ## Générer le manuel
 

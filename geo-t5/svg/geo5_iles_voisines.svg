@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les îles voisines de l'océan Indien</text>
+  <rect x="40" y="90" width="920" height="400" rx="18" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(460 300) scale(1.85) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#81C784" stroke="#2E7D32" stroke-width="1.6216216216216215" stroke-linejoin="round"/></g>
+  <text x="460" y="300" text-anchor="middle" font-size="23" font-weight="bold" fill="#1B5E20" transform="rotate(78 460 300)">MADAGASCAR</text>
+  <circle cx="395" cy="115" r="8" fill="#FB8C00" stroke="#E65100" stroke-width="2"/><text x="383" y="121" text-anchor="end" font-size="21" fill="#4E342E" font-weight="bold">Comores</text>
+  <circle cx="420" cy="165" r="8" fill="#FB8C00" stroke="#E65100" stroke-width="2"/><text x="408" y="171" text-anchor="end" font-size="21" fill="#4E342E" font-weight="bold">Mayotte</text>
+  <circle cx="585" cy="108" r="8" fill="#FB8C00" stroke="#E65100" stroke-width="2"/><text x="597" y="114" text-anchor="start" font-size="21" fill="#4E342E" font-weight="bold">Seychelles</text>
+  <circle cx="760" cy="330" r="8" fill="#FB8C00" stroke="#E65100" stroke-width="2"/><text x="760" y="366" text-anchor="middle" font-size="21" fill="#4E342E" font-weight="bold">Maurice</text>
+  <circle cx="745" cy="420" r="8" fill="#FB8C00" stroke="#E65100" stroke-width="2"/><text x="745" y="456" text-anchor="middle" font-size="21" fill="#4E342E" font-weight="bold">La Réunion</text>
+  <circle cx="880" cy="140" r="8" fill="#FB8C00" stroke="#E65100" stroke-width="2"/><text x="880" y="176" text-anchor="middle" font-size="21" fill="#4E342E" font-weight="bold">Maldives</text>
+  <text x="200" y="478" text-anchor="middle" font-size="24" fill="#0277BD" font-weight="bold" font-style="italic">OCÉAN INDIEN</text>
+  <text x="500" y="535" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Madagascar est la plus grande île de l'océan Indien ; ses voisines sont les Comores, Mayotte, les Seychelles, Maurice, La Réunion et les Maldives.</text>
+</svg>

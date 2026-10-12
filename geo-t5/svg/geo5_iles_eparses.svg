@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les îles éparses et le canal de Mozambique</text>
+  <rect x="40" y="90" width="920" height="400" rx="18" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+  <path d="M 60 110 L 235 110 L 212 172 L 238 232 L 206 300 L 228 372 L 192 470 L 60 470 Z" fill="#A5D6A7" stroke="#2E7D32" stroke-width="3"/>
+  <text x="140" y="295" text-anchor="middle" font-size="24" fill="#1B5E20" font-weight="bold">AFRIQUE</text>
+  <g transform="translate(580 290) scale(1.7) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#A5D6A7" stroke="#2E7D32" stroke-width="1.7647058823529411" stroke-linejoin="round"/></g>
+  <text x="580" y="482" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">MADAGASCAR</text>
+  <text x="330" y="172" text-anchor="middle" font-size="22" fill="#0277BD" font-style="italic">Canal de Mozambique</text>
+  <circle cx="455" cy="130" r="7" fill="#C00000" stroke="#7f0000" stroke-width="2"/><text x="465" y="122" text-anchor="start" font-size="20" fill="#263238" font-weight="bold">Îles Glorieuses</text>
+  <circle cx="350" cy="250" r="7" fill="#C00000" stroke="#7f0000" stroke-width="2"/><text x="350" y="285" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Juan de Nova</text>
+  <circle cx="380" cy="390" r="7" fill="#C00000" stroke="#7f0000" stroke-width="2"/><text x="380" y="425" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Europa</text>
+  <circle cx="430" cy="440" r="7" fill="#C00000" stroke="#7f0000" stroke-width="2"/><text x="430" y="473" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Bassas da India</text>
+  <circle cx="860" cy="230" r="7" fill="#C00000" stroke="#7f0000" stroke-width="2"/><text x="860" y="265" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Tromelin</text>
+  <text x="500" y="530" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Les îles éparses sont de petites îles situées dans le canal de Mozambique et dans l'océan Indien.</text>
+</svg>

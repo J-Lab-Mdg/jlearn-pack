@@ -7,6 +7,9 @@ const { generateSeanceDocContent } = require("./seance-generator");
 const U1A = require("./data-unite1");
 const U1B = require("./data-unite1b");
 const U1REV = require("./data-unite1-rev");
+const U2A = require("./data-unite2");
+const U2B = require("./data-unite2b");
+const U2REV = require("./data-unite2-rev");
 
 // Annexes optionnelles tant qu'elles ne sont pas créées (fin de projet)
 const annexesPath = path.join(__dirname, "annexes.js");
@@ -26,11 +29,20 @@ const UNITES = [
     rev: U1REV.revision,
     exam: U1REV.examen,
   },
+  {
+    id: "unite2",
+    nom: "UNITÉ 2 — L'ÎLE DE MADAGASCAR DANS LE MONDE",
+    seances: "Séances 17 à 26",
+    lecons: 8,
+    intro: "Thématique officielle du programme d'études T5 : l'île de Madagascar dans le monde — la situation de Madagascar par rapport aux continents et aux océans, les lignes imaginaires, les îles qui appartiennent à Madagascar, les îles éparses et les îles voisines de l'océan Indien, la lecture et le tracé de la carte de Madagascar. Durée officielle : 4 heures, soit 8 séances de 30 minutes.",
+    topics: [...U2A.topics, ...U2B.topics],
+    rev: U2REV.revision,
+    exam: U2REV.examen,
+  },
 ];
 
 // Unités restantes (livrées plus tard) — affichées en gris dans la table des matières
 const FUTURES = [
-  { nom: "UNITÉ 2 — L'ÎLE DE MADAGASCAR DANS LE MONDE", seances: "Séances 17 à 26" },
   { nom: "UNITÉ 3 — LES MILIEUX NATURELS À MADAGASCAR", seances: "Séances 27 à 55" },
   { nom: "UNITÉ 4 — LES RESSOURCES NATURELLES", seances: "Séances 56 à 61" },
   { nom: "UNITÉ 5 — LA VIE RURALE ET LA VIE URBAINE", seances: "Séances 62 à 76" },
