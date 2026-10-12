@@ -1,36 +1,41 @@
-# Manuel de Géographie T5 — Projet J-Learn
+# Manuel de Géographie T5 — Collection J-Learn
 
-Manuel scolaire de **Géographie, classe de T5** (5ᵉ année du primaire, Madagascar), Collection J-Learn.
-Sources officielles : `PE RAPE/PE T5.pdf` (Programme d'Études T5, section GÉOGRAPHIE, p. 155-169) et
-`FRP T5 FASCICULE 2.pdf` (ressources, section GÉOGRAPHIE, p. 99-134).
+Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme au programme d'études officiel, généré programmatiquement en DOCX (bibliothèque `docx` de Node.js).
+
+**Cible : 76 numéros** — 66 séances de leçon + 5 séances de révision + 5 sujets d'examen, en 5 unités thématiques (cf. `PLAN-FINAL.md`).
 
 ## État d'avancement
-- ✅ Analyse du PE T5 (5 thématiques, 33 h = 66 leçons) et du FRP T5 (5 thématiques identiques)
-- ✅ **PLAN-FINAL.md validé par l'utilisateur** (76 numéros, scènes d'emblée)
-- ✅ Architecture : builders.js + seance-generator.js (adaptés T5) + verifications.py
-- ✅ **14 schémas U1** (`geo5_*.png`, pack.json 102→116) + **10 scènes S1-S10** (JPEG 900 px)
-- ✅ **Leçons S1-S7 rédigées** (data-unite1.js, 901 lignes)
-- ⏳ U1 : leçons S8-S14 + révision + examen ; assemble.js + annexes.js + audit.py (adaptés T5) ; scènes S11-S14
-- ⏳ U2 L'île de Madagascar dans le monde (S17-S26)
-- ⏳ U3 Les milieux naturels à Madagascar (S27-S55, 27 leçons — la plus grosse unité)
-- ⏳ U4 Les ressources naturelles (S56-S61)
-- ⏳ U5 La vie rurale et la vie urbaine (S62-S76)
-- ⏳ Annexes + audit + conformité FRP T5
 
-## Recette (héritée de la Géographie T4 — voir ../geo-t4/README.md)
-Séances 30 min (fiche I/II/III = 3/22/5) ; français ; schémas scolaires `geo5_*.png` + **1 scène
-semi-réaliste par leçon** (JPEG 900 px q85, mode document/illustration) ; aucune mention ministérielle ;
-couleurs et conventions identiques ; audit 38 contrôles + vérifications structurelles à chaque étape.
+| Élément | État |
+|---|---|
+| Plan de découpage (76 numéros) | ✅ Terminé (`PLAN-FINAL.md`) |
+| Générateur de séances (seance-generator.js, patché T5) | ✅ Terminé |
+| **Unité 1 — La planète Terre (S1-S16)** | ✅ **Terminée et intégrée au build** |
+| Unité 2 — L'île de Madagascar dans le monde (S17-S26) | ⬜ À produire |
+| Unité 3 — Les milieux naturels à Madagascar (S27-S55) | ⬜ À produire |
+| Unité 4 — Les ressources naturelles (S56-S61) | ⬜ À produire |
+| Unité 5 — La vie rurale et la vie urbaine (S62-S76) | ⬜ À produire |
+| Annexes (glossaire, cartes muettes, auto-évaluation, illustrations, sources) | ⬜ Fin de projet |
+| Audit complet (audit.py) | ⬜ Fin de projet |
 
-## Reproduire / continuer
+## Contenu produit
+
+- `src/data-unite1.js` — Séances S1-S7 : forme, dimensions, globe/planisphère, équateur/hémisphères, tropiques, pôles/Greenwich, continents.
+- `src/data-unite1b.js` — Séances S8-S14 : océans, lire une carte, rotation, jour/nuit, révolution, saisons, rôle du soleil.
+- `src/data-unite1-rev.js` — S15 révision (tableau récapitulatif 20 notions + 15 questions) et S16 sujet d'examen (4 exercices × 5 pts, corrigé).
+- `src/assemble.js` — Assemblage du manuel complet (couverture, avant-propos, mode d'emploi, TdM interactive, tableaux de bord, séances, annexes optionnelles).
+- `svg/` — 14 schémas pédagogiques (`geo5_*.png`, pack 116 pièces).
+- `scenes/` — 14 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
+- `output/Manuel_Geographie_T5_JLearn.docx` — Build V1 Unité 1 (**2 971 Ko**, 16 séances, 28 images, empreinte SHA-256 jointe).
+
+## Générer le manuel
+
 ```bash
 npm install docx sharp
-node geo-t5/src/assemble.js          # → output/Manuel_Geographie_T5_JLearn.docx
-python3 geo-t5/src/verifications.py  # structure XML
-python3 geo-t5/src/audit.py          # contenu (adapté de geo-t4)
+node geo-t5/src/assemble.js
+python3 geo-t5/src/verifications.py geo-t5/output/Manuel_Geographie_T5_JLearn.docx
 ```
 
-## Pièges hérités de T4 (à lire avant de modifier)
-- Voir « Pièges déjà résolus » du README geo-t4 (courses d'écriture, méta-table, QCM « — », pKw,
-  marqueurs `**`, signets = liens, patchs ancrés uniques + `node --check` systématique,
-  apostrophes dans les heredocs Python, régénération du `.sha256` après chaque rebuild).
+## Structure d'une séance (leçon)
+
+Fiche de préparation (I. Révision / II. Nouvelle leçon en 6 étapes / III. Évaluation), leçon rédigée en 3 sections, 2 exercices d'application + 2 exercices d'évaluation avec corrigés notés, mots clés, questions de révision pour la séance suivante. Chaque leçon embarque un schéma pédagogique et une scène semi-réaliste en document d'appui.
