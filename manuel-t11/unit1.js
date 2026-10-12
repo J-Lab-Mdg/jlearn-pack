@@ -1,7 +1,8 @@
 // T11 — UNIT 1 — SMALL TALK AND OFFERING HELP (7 séances + révision + test) — Sessions 1 à 9 / 86
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, audioBox, img, pageBreak, lessonTitle, sub, iCan, cell,
+        rubricBadge, rubricTable } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1F618D"; // bleu
@@ -63,6 +64,12 @@ function opening() {
     p("• read about the art of small talk, here and there;"),
     p("• write a complete small-talk dialogue.", { after: 140 }),
     pr([run("Values: ", { bold: true }), run("courtesy, helpfulness.")], { after: 160 }),
+    rubricTable(
+      "Conversation openers (You look familiar. Have we met before?), maintaining expressions (Can you slow down, please?), conversation gambits (actually, well, by the way…).",
+      "Offering help — accepting help — declining help politely.",
+      "The present perfect with “for” and “since”."
+    ),
+    p("", { after: 100 }),
     box("WHY THIS UNIT?", [
       p("At the bus stop, at the market, at a wedding: life is full of small conversations with people we hardly know. The English call it small talk — and it is a big door! After this unit, you can open that door, keep it open, and even offer a helping hand: Would you like a hand?", { after: 40 }),
     ]),
@@ -122,6 +129,7 @@ function lessonS1() {
   return [
     p([run("LESSON OF THE DAY — SESSION 1", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("STARTING A CONVERSATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    rubricBadge("VOCABULARY"),
     p([run("The conversation openers:", { bold: true })], { after: 50 }),
     vocab("You look familiar.", "iou louke familieur", "I think I know you…"),
     vocab("Have we met before?", "have oui mète bifore", "the detective question!"),
@@ -130,6 +138,7 @@ function lessonS1() {
     vocab("Long time no see!", "lonng taïme nôou si", "for an old friend"),
     vocab("What a small world!", "ouate e smol oueurlde", "when you meet by surprise"),
     p("", { after: 60 }),
+    rubricBadge("FUNCTIONS"),
     box("THE THREE KEYS OF A GOOD OPENER", [
       bullet([run("1. A soft start — ", { bold: true }), run("Excuse me… / Well…", { bold: true, color: C.BLUE })]),
       bullet([run("2. A common point — ", { bold: true }), run("the place, the weather, the late bus!", { bold: true, color: C.BLUE })]),
@@ -195,6 +204,7 @@ function lessonS2() {
   return [
     p([run("LESSON OF THE DAY — SESSION 2", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE CONVERSATION GAMBITS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    rubricBadge("VOCABULARY"),
     p([run("1. The gambits — the glue of the talk:", { bold: true })], { after: 50 }),
     vocab("well…", "ouèl", "soft start, time to think"),
     vocab("actually…", "aktchou-eli", "in fact, to be exact"),
@@ -213,6 +223,7 @@ function lessonS2() {
     vocab("Can you say that again, please?", "kane iou séi dhate e-guène, plize", "repeat, please"),
     vocab("What do you mean?", "ouate dou iou mine", "explain, please"),
     p("", { after: 60 }),
+    rubricBadge("FUNCTIONS"),
     box("MINI-DIALOGUE", [
       bullet([run("— I work at the market. — ", { bold: true, color: C.BLUE }), run("Really?", { bold: true, color: C.RED }), run(" Well, actually,", { bold: true, color: C.RED }), run(" my mother works there too! ", { bold: true, color: C.BLUE }), run("By the way,", { bold: true, color: C.RED }), run(" do you know the cheese lady?", { bold: true, color: C.BLUE })], { after: 20 }),
     ]),
@@ -273,6 +284,7 @@ function lessonS3() {
   return [
     p([run("LESSON OF THE DAY — SESSION 3", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("SMALL TALK AT THE STATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    rubricBadge("FUNCTIONS"),
     smallTalkDialogueBox(),
     p("", { after: 60 }),
     p([run("The skeleton of a small talk:", { bold: true })], { after: 50 }),
@@ -336,6 +348,7 @@ function lessonS4() {
   return [
     p([run("LESSON OF THE DAY — SESSION 4", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("THE PRESENT PERFECT WITH FOR AND SINCE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    rubricBadge("GRAMMAR"),
     box("THE FORM", [
       bullet([run("have / has + past participle", { bold: true, color: C.RED })]),
       bullet([run("I have lived — she has lived — I haven’t seen — Have you met?", { bold: true, color: C.BLUE })], { after: 20 }),
@@ -416,6 +429,7 @@ function lessonS5() {
     p([run("LESSON OF THE DAY — SESSION 5", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("OFFERING, ACCEPTING AND DECLINING HELP", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_help.png", 400, 768 / 1376),
+    rubricBadge("FUNCTIONS"),
     p([run("1. To offer help:", { bold: true })], { after: 50 }),
     vocab("Would you like a hand?", "oude iou laïke e hande", "the friendly offer"),
     vocab("Can I help you…?", "kane aï hèlpe iou", "simple and direct"),
@@ -502,6 +516,7 @@ function lessonS6() {
     p([run("THE ART OF SMALL TALK, HERE AND THERE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     readingTextBox(),
     p("", { after: 60 }),
+    rubricBadge("VOCABULARY"),
     p([run("Glossary:", { bold: true })], { after: 50 }),
     vocab("a queue", "e kiou", "a line of waiting people"),
     vocab("trust", "troste", "confidence"),
@@ -566,6 +581,7 @@ function lessonS7() {
   return [
     p([run("LESSON OF THE DAY — SESSION 7", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     p([run("WRITING: MY SMALL-TALK DIALOGUE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    rubricBadge("FUNCTIONS"),
     box("THE WRITER’S CHECKLIST", [
       bullet([run("① one opener — ", { bold: true }), run("You look familiar… / Lovely day, isn’t it?", { bold: true, color: C.BLUE })]),
       bullet([run("② two gambits — ", { bold: true }), run("well, actually, by the way…", { bold: true, color: C.BLUE })]),
