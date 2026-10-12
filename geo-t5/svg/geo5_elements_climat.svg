@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><defs><marker id="arrv" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#4FC3F7"/></marker></defs><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les trois éléments du climat</text>
+  <rect x="40" y="90" width="295" height="400" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <rect x="179" y="180" width="16" height="240" rx="8" fill="#FFFFFF" stroke="#546E7A" stroke-width="3"/><circle cx="187" cy="420" r="14" fill="#E53935" stroke="#B71C1C" stroke-width="2"/><rect x="183" y="240" width="8" height="172" fill="#E53935"/>
+  <text x="187" y="130" text-anchor="middle" font-size="21" fill="#C00000" font-weight="bold">La température</text>
+  <text x="187" y="170" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">chaud ou frais ?</text>
+  <text x="187" y="458" text-anchor="middle" font-size="18" fill="#546E7A">°C</text>
+  <rect x="352" y="90" width="295" height="400" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <text x="500" y="130" text-anchor="middle" font-size="21" fill="#0277BD" font-weight="bold">Les vents</text>
+  <path d="M 420 220 q 60 -22 120 0" fill="none" stroke="#81D7EC" stroke-width="6" marker-end="url(#arrv)"/>
+  <path d="M 430 280 q 60 -22 110 0" fill="none" stroke="#81D7EC" stroke-width="6" marker-end="url(#arrv)"/>
+  <path d="M 445 340 q 55 -20 95 0" fill="none" stroke="#81D7EC" stroke-width="6" marker-end="url(#arrv)"/>
+  <text x="500" y="420" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">l'air qui se déplace :</text>
+  <text x="500" y="448" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">alizés, moussons…</text>
+  <rect x="664" y="90" width="295" height="400" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <text x="812" y="130" text-anchor="middle" font-size="21" fill="#01579B" font-weight="bold">Les précipitations</text>
+  <g fill="#ECEFF1"><ellipse cx="812" cy="250" rx="56" ry="25.2"/><circle cx="784" cy="236" r="19.599999999999998"/><circle cx="828.8" cy="230.4" r="23.799999999999997"/></g><line x1="778.4" y1="278" x2="770" y2="311.6" stroke="#4FC3F7" stroke-width="4.8999999999999995" stroke-linecap="round"/><line x1="800.8" y1="278" x2="792.4" y2="311.6" stroke="#4FC3F7" stroke-width="4.8999999999999995" stroke-linecap="round"/><line x1="823.1999999999999" y1="278" x2="814.8" y2="311.6" stroke="#4FC3F7" stroke-width="4.8999999999999995" stroke-linecap="round"/><line x1="845.5999999999999" y1="278" x2="837.2" y2="311.6" stroke="#4FC3F7" stroke-width="4.8999999999999995" stroke-linecap="round"/>
+  <text x="812" y="360" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">la pluie qui tombe,</text>
+  <text x="812" y="388" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">en mm par an</text>
+  <text x="500" y="540" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le climat d'un pays se décrit avec trois éléments : la température, les vents et les précipitations.</text>
+</svg>

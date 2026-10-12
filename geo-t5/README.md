@@ -12,7 +12,7 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 | Générateur de séances (seance-generator.js, patché T5) | ✅ Terminé |
 | **Unité 1 — La planète Terre (S1-S16)** | ✅ **Terminée et intégrée au build** |
 | **Unité 2 — L'île de Madagascar dans le monde (S17-S26)** | ✅ **Terminée et intégrée au build** |
-| Unité 3 — Les milieux naturels à Madagascar (S27-S55) | ⬜ À produire |
+| **Unité 3 — Les milieux naturels à Madagascar (S27-S55)** | 🔄 **En production** : 27 schémas + scènes S27-S36 + leçons S27-S33 faites |
 | Unité 4 — Les ressources naturelles (S56-S61) | ⬜ À produire |
 | Unité 5 — La vie rurale et la vie urbaine (S62-S76) | ⬜ À produire |
 | Annexes (glossaire, cartes muettes, auto-évaluation, illustrations, sources) | ⬜ Fin de projet |
@@ -26,9 +26,10 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 - `src/data-unite2.js` — Séances S17-S20 : situer Madagascar dans le monde, lignes imaginaires, îles malgaches, îles éparses.
 - `src/data-unite2b.js` — Séances S21-S24 : îles voisines de l'océan Indien, lire une carte de Madagascar, tracé de la carte (quadrillage puis contour).
 - `src/data-unite2-rev.js` — S25 révision (20 notions + 15 questions) et S26 sujet d'examen (4 exercices × 5 pts, corrigé).
+- `src/data-unite3.js` — Séances S27-S33 : formes du relief, trois grands massifs, plaines et plateaux, vallées, utilité du relief, éléments du climat, climat tropical.
 - `src/assemble.js` — Assemblage du manuel complet (couverture, avant-propos, mode d'emploi, TdM interactive, tableaux de bord, séances, annexes optionnelles).
-- `svg/` — 22 schémas pédagogiques (`geo5_*.png`) : 14 (U1) + 8 (U2).
-- `scenes/` — 22 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
+- `svg/` — 49 schémas pédagogiques (`geo5_*.png`) : 14 (U1) + 8 (U2) + 27 (U3).
+- `scenes/` — 32 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
 - `output/Manuel_Geographie_T5_JLearn.docx` — Build V1 Unités 1-2 (**4 628 Ko**, 26 séances, 44 images, empreinte SHA-256 jointe).
 
 ## Générer le manuel

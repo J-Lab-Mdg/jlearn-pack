@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les principaux fleuves (1)</text>
+  <rect x="40" y="90" width="530" height="420" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(320 340) scale(2) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#F1F8E9" stroke="#2E7D32" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <defs><clipPath id="z38"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z"/></clipPath></defs><g clip-path="url(#z38)" transform="translate(320 340) scale(2) translate(-50 -100)">
+    <path d="M 45 158 Q 38 166 26 173" fill="none" stroke="#0277BD" stroke-width="5"/>
+    <path d="M 52 58 Q 43 46 33 33" fill="none" stroke="#0277BD" stroke-width="5"/>
+    <path d="M 46 92 Q 38 72 27 54" fill="none" stroke="#0277BD" stroke-width="5"/></g>
+  <text x="332" y="470" text-anchor="start" font-size="20" fill="#01579B" font-weight="bold">Mangoky</text>
+  <text x="332" y="260" text-anchor="start" font-size="20" fill="#01579B" font-weight="bold">Sofia</text>
+  <text x="340" y="296" text-anchor="start" font-size="20" fill="#01579B" font-weight="bold">Betsiboka</text>
+  <rect x="610" y="120" width="350" height="350" rx="14" fill="#E1F5FE" stroke="#0277BD" stroke-width="3"/>
+  <text x="785" y="155" text-anchor="middle" font-size="22" fill="#263238" font-weight="bold">À retenir</text>
+  <text x="785" y="205" text-anchor="middle" font-size="21" fill="#263238">Le Mangoky, au sud-ouest,</text>
+  <text x="785" y="232" text-anchor="middle" font-size="21" fill="#263238">est le plus long fleuve</text>
+  <text x="785" y="259" text-anchor="middle" font-size="21" fill="#263238">de Madagascar : 821 km.</text>
+  <text x="785" y="315" text-anchor="middle" font-size="21" fill="#263238">La Sofia se jette dans le</text>
+  <text x="785" y="342" text-anchor="middle" font-size="21" fill="#263238">canal de Mozambique, au nord-ouest.</text>
+  <text x="785" y="398" text-anchor="middle" font-size="21" fill="#263238">La Betsiboka arrose Mahajanga</text>
+  <text x="785" y="425" text-anchor="middle" font-size="21" fill="#263238">par son large estuaire rouge.</text>
+  <text x="500" y="540" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Les fleuves de l'Ouest descendent des Hautes Terres vers le canal de Mozambique.</text>
+</svg>

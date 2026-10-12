@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les grandes plaines et les plateaux</text>
+  <rect x="40" y="90" width="530" height="420" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(320 340) scale(2) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#F1F8E9" stroke="#2E7D32" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <defs><clipPath id="z29"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z"/></clipPath></defs><g clip-path="url(#z29)" transform="translate(320 340) scale(2) translate(-50 -100)">
+    <ellipse cx="63" cy="80" rx="9" ry="12" fill="#A5D6A7"/>
+    <ellipse cx="33" cy="58" rx="8" ry="9" fill="#A5D6A7"/>
+    <ellipse cx="47" cy="93" rx="8" ry="8" fill="#A5D6A7"/>
+    <ellipse cx="38" cy="66" rx="10" ry="9" fill="#D7CCA8"/>
+    <ellipse cx="45" cy="148" rx="11" ry="13" fill="#D7CCA8"/></g>
+  <text x="372" y="284" text-anchor="start" font-size="18" fill="#263238" font-weight="bold">Alaotra</text>
+  <text x="264" y="244" text-anchor="end" font-size="18" fill="#263238" font-weight="bold">Marovoay</text>
+  <text x="318" y="304" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">Betsimitatatra</text>
+  <text x="268" y="280" text-anchor="end" font-size="17" fill="#795548" font-weight="bold">Tampoketsa</text>
+  <text x="292" y="440" text-anchor="end" font-size="17" fill="#795548" font-weight="bold">Ihorombe</text>
+  <rect x="610" y="125" width="350" height="345" rx="14" fill="#F1F8E9" stroke="#558B2F" stroke-width="3"/>
+  <text x="785" y="160" text-anchor="middle" font-size="22" fill="#263238" font-weight="bold">Légende</text>
+  <ellipse cx="645" cy="200" rx="16" ry="10" fill="#A5D6A7" stroke="#558B2F" stroke-width="2"/><text x="665" y="207" text-anchor="start" font-size="19" fill="#263238">une plaine : étendue plate</text>
+  <text x="665" y="231" text-anchor="start" font-size="19" fill="#263238">et basse, riche pour la riziculture</text>
+  <ellipse cx="645" cy="272" rx="16" ry="10" fill="#D7CCA8" stroke="#8D6E63" stroke-width="2"/><text x="665" y="279" text-anchor="start" font-size="19" fill="#263238">un plateau : étendue plate</text>
+  <text x="665" y="303" text-anchor="start" font-size="19" fill="#263238">et élevée, souvent herbeux</text>
+  <text x="785" y="360" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Plaines : Marovoay, Alaotra,</text>
+  <text x="785" y="387" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Betsimitatatra (Autour de Tana)</text>
+  <text x="785" y="434" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Plateaux : Tampoketsa, Ihorombe</text>
+  <text x="500" y="540" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Les plaines humides nourrissent le riz ; les plateaux herbeux portent les prairies et le bétail.</text>
+</svg>

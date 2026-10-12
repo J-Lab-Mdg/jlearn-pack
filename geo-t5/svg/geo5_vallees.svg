@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les grandes vallées</text>
+  <rect x="40" y="90" width="530" height="420" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(320 340) scale(2) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#F1F8E9" stroke="#2E7D32" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <defs><clipPath id="z30"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z"/></clipPath></defs><g clip-path="url(#z30)" transform="translate(320 340) scale(2) translate(-50 -100)">
+    <path d="M 46 92 Q 38 72 27 53" fill="none" stroke="#4FC3F7" stroke-width="4"/>
+    <path d="M 44 158 Q 37 166 25 172" fill="none" stroke="#4FC3F7" stroke-width="4"/>
+    <path d="M 42 122 Q 33 130 24 134" fill="none" stroke="#4FC3F7" stroke-width="4"/>
+    <path d="M 47 132 Q 41 145 33 152" fill="none" stroke="#4FC3F7" stroke-width="4"/>
+    <path d="M 51 106 Q 46 98 42 90" fill="none" stroke="#4FC3F7" stroke-width="4"/></g>
+  <text x="344" y="288" text-anchor="start" font-size="18" fill="#263238" font-weight="bold">Betsiboka</text>
+  <text x="324" y="476" text-anchor="start" font-size="18" fill="#263238" font-weight="bold">Mangoky</text>
+  <text x="324" y="388" text-anchor="start" font-size="18" fill="#263238" font-weight="bold">Tsiribihina</text>
+  <text x="330" y="424" text-anchor="start" font-size="18" fill="#263238" font-weight="bold">Mania</text>
+  <text x="336" y="332" text-anchor="start" font-size="18" fill="#263238" font-weight="bold">Ikopa</text>
+  <rect x="610" y="140" width="350" height="310" rx="14" fill="#E1F5FE" stroke="#0277BD" stroke-width="3"/>
+  <text x="785" y="178" text-anchor="middle" font-size="23" fill="#0277BD" font-weight="bold">Une vallée</text>
+  <text x="785" y="225" text-anchor="middle" font-size="21" fill="#263238">c'est la dépression allongée</text>
+  <text x="785" y="252" text-anchor="middle" font-size="21" fill="#263238">creusée par un fleuve</text>
+  <text x="785" y="279" text-anchor="middle" font-size="21" fill="#263238">entre deux reliefs.</text>
+  <text x="785" y="335" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Les vallées de l'Ouest ouvrent</text>
+  <text x="785" y="362" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">des voies vers la mer :</text>
+  <text x="785" y="389" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Betsiboka, Tsiribihina, Mania…</text>
+  <text x="500" y="540" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Une vallée suit le parcours d'un fleuve, comme la vallée de la Betsiboka vers Mahajanga.</text>
+</svg>

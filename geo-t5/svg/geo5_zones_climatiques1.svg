@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les zones climatiques (1) : zones humides et Hautes Terres</text>
+  <rect x="40" y="90" width="530" height="420" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(320 340) scale(2) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#F1F8E9" stroke="#2E7D32" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <defs><clipPath id="z34"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z"/></clipPath></defs><g clip-path="url(#z34)" transform="translate(320 340) scale(2) translate(-50 -100)">
+    <rect x="60" y="0" width="40" height="200" fill="#4FC3F7" opacity="0.75"/>
+    <path d="M 20 52 q 10 -6 20 2 q 8 6 4 14 q -12 4 -20 -2 q -8 -8 -4 -14 Z" fill="#4FC3F7" opacity="0.75"/>
+    <ellipse cx="48" cy="100" rx="26" ry="46" fill="#FFCC80" opacity="0.85"/></g>
+  <text x="380" y="300" text-anchor="start" font-size="20" fill="#263238" font-weight="bold">Côte Est</text>
+  <text x="380" y="340" text-anchor="start" font-size="17" fill="#263238">très humide</text>
+  <text x="260" y="232" text-anchor="end" font-size="18" fill="#263238" font-weight="bold">Sambirano</text>
+  <text x="316" y="332" text-anchor="middle" font-size="19" fill="#795548" font-weight="bold">Hautes</text>
+  <text x="316" y="368" text-anchor="middle" font-size="19" fill="#795548" font-weight="bold">Terres</text>
+  <rect x="610" y="130" width="350" height="330" rx="14" fill="#E1F5FE" stroke="#0277BD" stroke-width="3"/>
+  <text x="785" y="165" text-anchor="middle" font-size="22" fill="#263238" font-weight="bold">Légende</text>
+  <rect x="640" y="195" width="26" height="16" fill="#4FC3F7" opacity="0.8"/><text x="680" y="208" text-anchor="start" font-size="19" fill="#263238">zone humide : pluies</text>
+  <text x="680" y="232" text-anchor="start" font-size="19" fill="#263238">abondantes toute l'année</text>
+  <rect x="640" y="262" width="26" height="16" fill="#FFCC80"/><text x="680" y="275" text-anchor="start" font-size="19" fill="#263238">climat d'altitude :</text>
+  <text x="680" y="299" text-anchor="start" font-size="19" fill="#263238">plus frais, moins de pluies</text>
+  <text x="785" y="355" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">La Côte Est (Toamasina)</text>
+  <text x="785" y="382" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">et le Sambirano sont humides ;</text>
+  <text x="785" y="409" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">les Hautes Terres sont fraîches.</text>
+  <text x="500" y="540" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">À l'est et dans le Sambirano, il pleut souvent ; sur les Hautes Terres, l'altitude rafraîchit le climat.</text>
+</svg>

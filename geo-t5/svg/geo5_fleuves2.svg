@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les principaux fleuves (2)</text>
+  <rect x="40" y="90" width="530" height="420" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(320 340) scale(2) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#F1F8E9" stroke="#2E7D32" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <defs><clipPath id="z39"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z"/></clipPath></defs><g clip-path="url(#z39)" transform="translate(320 340) scale(2) translate(-50 -100)">
+    <path d="M 42 122 Q 33 130 24 134" fill="none" stroke="#0277BD" stroke-width="5"/>
+    <path d="M 44 162 Q 39 172 32 181" fill="none" stroke="#0277BD" stroke-width="5"/>
+    <path d="M 52 118 Q 63 124 73 129" fill="none" stroke="#0277BD" stroke-width="5"/></g>
+  <text x="324" y="376" text-anchor="start" font-size="20" fill="#01579B" font-weight="bold">Tsiribihina</text>
+  <text x="328" y="476" text-anchor="start" font-size="20" fill="#01579B" font-weight="bold">Onilahy</text>
+  <text x="356" y="356" text-anchor="start" font-size="20" fill="#01579B" font-weight="bold">Mangoro</text>
+  <rect x="610" y="120" width="350" height="350" rx="14" fill="#E1F5FE" stroke="#0277BD" stroke-width="3"/>
+  <text x="785" y="155" text-anchor="middle" font-size="22" fill="#263238" font-weight="bold">À retenir</text>
+  <text x="785" y="205" text-anchor="middle" font-size="21" fill="#263238">La Tsiribihina traverse</text>
+  <text x="785" y="232" text-anchor="middle" font-size="21" fill="#263238">les plateaux de l'Ouest.</text>
+  <text x="785" y="288" text-anchor="middle" font-size="21" fill="#263238">L'Onilahy se jette près</text>
+  <text x="785" y="315" text-anchor="middle" font-size="21" fill="#263238">de Toliara, au sud-ouest.</text>
+  <text x="785" y="371" text-anchor="middle" font-size="21" fill="#263238">Le Mangoro coule vers l'est :</text>
+  <text x="785" y="398" text-anchor="middle" font-size="21" fill="#263238">il se jette dans l'océan Indien.</text>
+  <text x="785" y="454" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">Ouest ou est : chaque fleuve</text>
+  <text x="785" y="478" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">rejoint la mer la plus proche.</text>
+  <text x="500" y="540" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Les fleuves malgaches sont courts et rapides : ils descendent des Hautes Terres vers la mer.</text>
+</svg>

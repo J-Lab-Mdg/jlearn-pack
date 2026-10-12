@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les trois grands massifs de Madagascar</text>
+  <rect x="40" y="90" width="530" height="420" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(320 340) scale(2) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <circle cx="318" cy="194" r="7" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="336" y="184" text-anchor="start" font-size="21" fill="#263238" font-weight="bold">Tsaratanana</text>
+  <text x="336" y="228" text-anchor="start" font-size="18" fill="#263238">Maromokotra : 2 876 m</text>
+  <circle cx="316" cy="348" r="7" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="300" y="380" text-anchor="middle" font-size="21" fill="#263238" font-weight="bold">Ankaratra</text>
+  <text x="300" y="424" text-anchor="middle" font-size="18" fill="#263238">Tsiafajavona : 2 642 m</text>
+  <circle cx="314" cy="414" r="7" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="340" y="436" text-anchor="start" font-size="21" fill="#263238" font-weight="bold">Andringitra</text>
+  <text x="340" y="480" text-anchor="start" font-size="18" fill="#263238">Pic Boby : 2 658 m</text>
+  <text x="318" y="332" text-anchor="middle" font-size="20" fill="#263238">★</text>
+  <rect x="610" y="130" width="350" height="330" rx="14" fill="#FFF8E1" stroke="#F9A825" stroke-width="3"/>
+  <text x="785" y="168" text-anchor="middle" font-size="23" fill="#E65100" font-weight="bold">À retenir</text>
+  <text x="785" y="215" text-anchor="middle" font-size="21" fill="#263238">Le Tsaratanana, au nord, porte</text><text x="785" y="242" text-anchor="middle" font-size="21" fill="#263238">le Maromokotra : 2 876 m,</text>
+  <text x="785" y="269" text-anchor="middle" font-size="21" fill="#263238">le toit de Madagascar.</text>
+  <text x="785" y="316" text-anchor="middle" font-size="21" fill="#263238">L'Ankaratra se dresse près</text><text x="785" y="343" text-anchor="middle" font-size="21" fill="#263238">d'Antananarivo.</text>
+  <text x="785" y="390" text-anchor="middle" font-size="21" fill="#263238">L'Andringitra se trouve</text><text x="785" y="417" text-anchor="middle" font-size="21" fill="#263238">au sud de Fianarantsoa.</text>
+  <text x="500" y="540" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Trois massifs volcaniques dominent l'île ; les montagnes se concentrent sur les Hautes Terres.</text>
+</svg>

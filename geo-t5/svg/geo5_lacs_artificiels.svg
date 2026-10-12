@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les lacs artificiels : des lacs créés par l'homme</text>
+  <rect x="40" y="90" width="470" height="420" rx="18" fill="#EAF4FB" stroke="#90A4AE" stroke-width="3"/>
+  <text x="275" y="140" text-anchor="middle" font-size="22" fill="#0277BD" font-weight="bold">Comment ça marche ?</text>
+  <path d="M 75 400 L 150 270 L 225 400 Z" fill="#BCAAA4" stroke="#5D4037" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 325 400 L 400 270 L 475 400 Z" fill="#BCAAA4" stroke="#5D4037" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 75 400 Q 275 340 475 400 L 475 400 Q 275 430 75 400 Z" fill="#4FC3F7" opacity="0.85"/>
+  <text x="275" y="398" text-anchor="middle" font-size="18" fill="#01579B" font-weight="bold">lac de barrage</text>
+  <rect x="258" y="352" width="34" height="60" fill="#8D6E63" stroke="#5D4037" stroke-width="2.5"/>
+  <text x="275" y="448" text-anchor="middle" font-size="18" fill="#546E7A" font-style="italic">le barrage retient l'eau</text>
+  <text x="275" y="480" text-anchor="middle" font-size="18" fill="#546E7A" font-style="italic">du fleuve</text>
+  <g transform="translate(660 330) scale(1.9) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#F1F8E9" stroke="#2E7D32" stroke-width="1.5789473684210527" stroke-linejoin="round"/></g>
+  <circle cx="665.7" cy="311" r="7" fill="#0288D1" stroke="#01579B" stroke-width="2"/>
+  <circle cx="669.5" cy="318.6" r="7" fill="#0288D1" stroke="#01579B" stroke-width="2"/>
+  <text x="690.4" y="295.8" text-anchor="start" font-size="19" fill="#263238" font-weight="bold">Mantasoa</text>
+  <text x="694.2" y="330" text-anchor="start" font-size="19" fill="#263238" font-weight="bold">Tsiazompaniry</text>
+  <text x="656.2" y="303.4" text-anchor="middle" font-size="17" fill="#263238">★</text>
+  <text x="660" y="150" text-anchor="middle" font-size="20" fill="#C00000" font-weight="bold">Près d'Antananarivo</text>
+  <text x="500" y="540" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Mantasoa et Tsiazompaniry sont des lacs de barrage : l'homme a construit un mur pour retenir l'eau.</text>
+</svg>
