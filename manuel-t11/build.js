@@ -100,6 +100,16 @@ function contents() {
     tocLink("s7", "    Session 7 — Writing: my small-talk dialogue"),
     tocLink("s8", "    Session 8 — Revision"),
     tocLink("s9", "    Session 9 — Test paper"),
+    tocLink("unit2", "UNIT 2 — HEALTH ISSUES (Sessions 10–18)", { bold: true, size: 26 }),
+    tocLink("s10", "    Session 10 — Health issues today: the vocabulary"),
+    tocLink("s11", "    Session 11 — Asking for and giving an opinion"),
+    tocLink("s12", "    Session 12 — Listening: Health on air — the junk food debate"),
+    tocLink("s13", "    Session 13 — Agreeing and disagreeing politely"),
+    tocLink("s14", "    Session 14 — The connectors of the opinion essay"),
+    tocLink("s15", "    Session 15 — Reading: clean water, strong bodies"),
+    tocLink("s16", "    Session 16 — Writing: my first opinion essay"),
+    tocLink("s17", "    Session 17 — Revision"),
+    tocLink("s18", "    Session 18 — Test paper"),
   ];
 }
 
@@ -152,6 +162,7 @@ async function main() {
         ...contents(), pageBreak(),
         ...dashboard(), pageBreak(),
         ...require("./unit1")(),
+        ...require("./unit2")(),
       ],
     }],
   });
