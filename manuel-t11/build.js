@@ -128,6 +128,15 @@ function contents() {
     tocLink("s32", "    Session 32 — Writing: my formal letter"),
     tocLink("s33", "    Session 33 — Revision"),
     tocLink("s34", "    Session 34 — Test paper"),
+    tocLink("unit5", "UNIT 5 — JOB SKILLS (Sessions 35–42)", { bold: true, size: 26 }),
+    tocLink("s35", "    Session 35 — Jobs and skills"),
+    tocLink("s36", "    Session 36 — Want to, wish and going to"),
+    tocLink("s37", "    Session 37 — The job interview"),
+    tocLink("s38", "    Session 38 — Listening: Koto’s job interview"),
+    tocLink("s39", "    Session 39 — Reading: the job ad and the cover letter"),
+    tocLink("s40", "    Session 40 — Writing: my cover letter"),
+    tocLink("s41", "    Session 41 — Revision"),
+    tocLink("s42", "    Session 42 — Test paper"),
   ];
 }
 
@@ -183,6 +192,7 @@ async function main() {
         ...require("./unit2")(),
         ...require("./unit3")(),
         ...require("./unit4")(),
+        ...require("./unit5")(),
       ],
     }],
   });
