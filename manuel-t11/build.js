@@ -110,6 +110,15 @@ function contents() {
     tocLink("s16", "    Session 16 — Writing: my first opinion essay"),
     tocLink("s17", "    Session 17 — Revision"),
     tocLink("s18", "    Session 18 — Test paper"),
+    tocLink("unit3", "UNIT 3 — MASS MEDIA (Sessions 19–26)", { bold: true, size: 26 }),
+    tocLink("s19", "    Session 19 — The news sources and the word factory (verb + -er)"),
+    tocLink("s20", "    Session 20 — Talking about the news: reliable or fake?"),
+    tocLink("s21", "    Session 21 — Listening: Radio Vaovao — the seven o’clock news"),
+    tocLink("s22", "    Session 22 — The relative pronouns: who, which, where, whose"),
+    tocLink("s23", "    Session 23 — Reading: the article and the grammar of the headlines"),
+    tocLink("s24", "    Session 24 — Writing: my short article with its headline"),
+    tocLink("s25", "    Session 25 — Revision"),
+    tocLink("s26", "    Session 26 — Test paper"),
   ];
 }
 
@@ -163,6 +172,7 @@ async function main() {
         ...dashboard(), pageBreak(),
         ...require("./unit1")(),
         ...require("./unit2")(),
+        ...require("./unit3")(),
       ],
     }],
   });
