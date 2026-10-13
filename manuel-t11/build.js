@@ -119,6 +119,15 @@ function contents() {
     tocLink("s24", "    Session 24 — Writing: my short article with its headline"),
     tocLink("s25", "    Session 25 — Revision"),
     tocLink("s26", "    Session 26 — Test paper"),
+    tocLink("unit4", "UNIT 4 — COMMUNICATION (Sessions 27–34)", { bold: true, size: 26 }),
+    tocLink("s27", "    Session 27 — The means of communication"),
+    tocLink("s28", "    Session 28 — Making a polite phone call"),
+    tocLink("s29", "    Session 29 — Listening: booking the school bus"),
+    tocLink("s30", "    Session 30 — The negative prefixes: un- and in-"),
+    tocLink("s31", "    Session 31 — Reading: the formal letter and the informal email"),
+    tocLink("s32", "    Session 32 — Writing: my formal letter"),
+    tocLink("s33", "    Session 33 — Revision"),
+    tocLink("s34", "    Session 34 — Test paper"),
   ];
 }
 
@@ -173,6 +182,7 @@ async function main() {
         ...require("./unit1")(),
         ...require("./unit2")(),
         ...require("./unit3")(),
+        ...require("./unit4")(),
       ],
     }],
   });
