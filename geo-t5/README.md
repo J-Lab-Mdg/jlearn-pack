@@ -12,7 +12,7 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 | Générateur de séances (seance-generator.js, patché T5) | ✅ Terminé |
 | **Unité 1 — La planète Terre (S1-S16)** | ✅ **Terminée et intégrée au build** |
 | **Unité 2 — L'île de Madagascar dans le monde (S17-S26)** | ✅ **Terminée et intégrée au build** |
-| **Unité 3 — Les milieux naturels à Madagascar (S27-S55)** | 🔄 **En production** : 27 schémas + scènes S27-S46 + leçons S27-S43 faites |
+| **Unité 3 — Les milieux naturels à Madagascar (S27-S55)** | ✅ **Terminée et intégrée au build** |
 | Unité 4 — Les ressources naturelles (S56-S61) | ⬜ À produire |
 | Unité 5 — La vie rurale et la vie urbaine (S62-S76) | ⬜ À produire |
 | Annexes (glossaire, cartes muettes, auto-évaluation, illustrations, sources) | ⬜ Fin de projet |
@@ -28,10 +28,12 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 - `src/data-unite2-rev.js` — S25 révision (20 notions + 15 questions) et S26 sujet d'examen (4 exercices × 5 pts, corrigé).
 - `src/data-unite3.js` — Séances S27-S33 : formes du relief, trois grands massifs, plaines et plateaux, vallées, utilité du relief, éléments du climat, climat tropical.
 - `src/data-unite3b.js` — Séances S34-S43 : zones climatiques (×2), quatre saisons, deux saisons, fleuves (×2), lacs naturels, lacs artificiels, utilité de l'eau, problèmes de l'eau.
+- `src/data-unite3c.js` — Séances S44-S53 : types de végétation (×2), utilité et problèmes de la végétation, régions naturelles (×5), carte des régions.
+- `src/data-unite3-rev.js` — S54 révision (22 notions + 15 questions) et S55 sujet d'examen (4 exercices × 5 pts, corrigé).
 - `src/assemble.js` — Assemblage du manuel complet (couverture, avant-propos, mode d'emploi, TdM interactive, tableaux de bord, séances, annexes optionnelles).
 - `svg/` — 49 schémas pédagogiques (`geo5_*.png`) : 14 (U1) + 8 (U2) + 27 (U3).
-- `scenes/` — 42 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
-- `output/Manuel_Geographie_T5_JLearn.docx` — Build V1 Unités 1-2 (**4 628 Ko**, 26 séances, 44 images, empreinte SHA-256 jointe).
+- `scenes/` — 49 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
+- `output/Manuel_Geographie_T5_JLearn.docx` — Build V1 Unités 1-3 (**11 058 Ko**, 55 séances, 98 images, empreinte SHA-256 jointe).
 
 ## Générer le manuel
 

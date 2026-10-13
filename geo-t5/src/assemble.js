@@ -10,6 +10,10 @@ const U1REV = require("./data-unite1-rev");
 const U2A = require("./data-unite2");
 const U2B = require("./data-unite2b");
 const U2REV = require("./data-unite2-rev");
+const U3A = require("./data-unite3");
+const U3B = require("./data-unite3b");
+const U3C = require("./data-unite3c");
+const U3REV = require("./data-unite3-rev");
 
 // Annexes optionnelles tant qu'elles ne sont pas créées (fin de projet)
 const annexesPath = path.join(__dirname, "annexes.js");
@@ -39,11 +43,20 @@ const UNITES = [
     rev: U2REV.revision,
     exam: U2REV.examen,
   },
+  {
+    id: "unite3",
+    nom: "UNITÉ 3 — LES MILIEUX NATURELS À MADAGASCAR",
+    seances: "Séances 27 à 55",
+    lecons: 27,
+    intro: "Thématique officielle du programme d'études T5 : les milieux naturels à Madagascar — les formes du relief, les grands massifs, les plaines, les plateaux et les vallées, le climat et ses zones, les saisons, les fleuves et les lacs, l'eau et ses problèmes, la végétation et les régions naturelles de l'île. Durée officielle : 13 heures 30, soit 27 séances de 30 minutes.",
+    topics: [...U3A.topics, ...U3B.topics, ...U3C.topics],
+    rev: U3REV.revision,
+    exam: U3REV.examen,
+  },
 ];
 
 // Unités restantes (livrées plus tard) — affichées en gris dans la table des matières
 const FUTURES = [
-  { nom: "UNITÉ 3 — LES MILIEUX NATURELS À MADAGASCAR", seances: "Séances 27 à 55" },
   { nom: "UNITÉ 4 — LES RESSOURCES NATURELLES", seances: "Séances 56 à 61" },
   { nom: "UNITÉ 5 — LA VIE RURALE ET LA VIE URBAINE", seances: "Séances 62 à 76" },
 ];
