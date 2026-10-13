@@ -13,7 +13,7 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 | **Unité 1 — La planète Terre (S1-S16)** | ✅ **Terminée et intégrée au build** |
 | **Unité 2 — L'île de Madagascar dans le monde (S17-S26)** | ✅ **Terminée et intégrée au build** |
 | **Unité 3 — Les milieux naturels à Madagascar (S27-S55)** | ✅ **Terminée et intégrée au build** |
-| Unité 4 — Les ressources naturelles (S56-S61) | ⬜ À produire |
+| **Unité 4 — Les ressources naturelles (S56-S61)** | ✅ **Terminée et intégrée au build** |
 | Unité 5 — La vie rurale et la vie urbaine (S62-S76) | ⬜ À produire |
 | Annexes (glossaire, cartes muettes, auto-évaluation, illustrations, sources) | ⬜ Fin de projet |
 | Audit complet (audit.py) | ⬜ Fin de projet |
@@ -30,10 +30,12 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 - `src/data-unite3b.js` — Séances S34-S43 : zones climatiques (×2), quatre saisons, deux saisons, fleuves (×2), lacs naturels, lacs artificiels, utilité de l'eau, problèmes de l'eau.
 - `src/data-unite3c.js` — Séances S44-S53 : types de végétation (×2), utilité et problèmes de la végétation, régions naturelles (×5), carte des régions.
 - `src/data-unite3-rev.js` — S54 révision (22 notions + 15 questions) et S55 sujet d'examen (4 exercices × 5 pts, corrigé).
+- `src/data-unite4.js` — Séances S56-S59 : définition d'une ressource naturelle, types et localisation, importance et problèmes, préservation.
+- `src/data-unite4-rev.js` — S60 révision (17 notions + 15 questions) et S61 sujet d'examen (4 exercices × 5 pts, corrigé).
 - `src/assemble.js` — Assemblage du manuel complet (couverture, avant-propos, mode d'emploi, TdM interactive, tableaux de bord, séances, annexes optionnelles).
-- `svg/` — 49 schémas pédagogiques (`geo5_*.png`) : 14 (U1) + 8 (U2) + 27 (U3).
-- `scenes/` — 49 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
-- `output/Manuel_Geographie_T5_JLearn.docx` — Build V1 Unités 1-3 (**11 058 Ko**, 55 séances, 98 images, empreinte SHA-256 jointe).
+- `svg/` — 53 schémas pédagogiques (`geo5_*.png`) : 14 (U1) + 8 (U2) + 27 (U3) + 4 (U4).
+- `scenes/` — 53 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
+- `output/Manuel_Geographie_T5_JLearn.docx` — Build V1 Unités 1-4 (**12 174 Ko**, 61 séances, 106 images, empreinte SHA-256 jointe).
 
 ## Générer le manuel
 

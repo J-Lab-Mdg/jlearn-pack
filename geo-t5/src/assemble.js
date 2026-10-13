@@ -14,6 +14,8 @@ const U3A = require("./data-unite3");
 const U3B = require("./data-unite3b");
 const U3C = require("./data-unite3c");
 const U3REV = require("./data-unite3-rev");
+const U4 = require("./data-unite4");
+const U4REV = require("./data-unite4-rev");
 
 // Annexes optionnelles tant qu'elles ne sont pas créées (fin de projet)
 const annexesPath = path.join(__dirname, "annexes.js");
@@ -53,11 +55,20 @@ const UNITES = [
     rev: U3REV.revision,
     exam: U3REV.examen,
   },
+  {
+    id: "unite4",
+    nom: "UNITÉ 4 — LES RESSOURCES NATURELLES",
+    seances: "Séances 56 à 61",
+    lecons: 4,
+    intro: "Thématique officielle du programme d'études T5 : les ressources naturelles — la définition d'une ressource naturelle, les types de ressources et leur localisation à Madagascar, l'importance et les problèmes de leur exploitation, et les moyens de les préserver. Durée officielle : 2 heures, soit 4 séances de 30 minutes.",
+    topics: U4.topics,
+    rev: U4REV.revision,
+    exam: U4REV.examen,
+  },
 ];
 
 // Unités restantes (livrées plus tard) — affichées en gris dans la table des matières
 const FUTURES = [
-  { nom: "UNITÉ 4 — LES RESSOURCES NATURELLES", seances: "Séances 56 à 61" },
   { nom: "UNITÉ 5 — LA VIE RURALE ET LA VIE URBAINE", seances: "Séances 62 à 76" },
 ];
 
