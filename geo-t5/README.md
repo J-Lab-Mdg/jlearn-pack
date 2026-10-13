@@ -14,7 +14,7 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 | **Unité 2 — L'île de Madagascar dans le monde (S17-S26)** | ✅ **Terminée et intégrée au build** |
 | **Unité 3 — Les milieux naturels à Madagascar (S27-S55)** | ✅ **Terminée et intégrée au build** |
 | **Unité 4 — Les ressources naturelles (S56-S61)** | ✅ **Terminée et intégrée au build** |
-| Unité 5 — La vie rurale et la vie urbaine (S62-S76) | ⬜ À produire |
+| **Unité 5 — La vie rurale et la vie urbaine (S62-S76)** | 🔄 **En production** : 13 schémas + scènes S62-S71 + leçons S62-S68 faites |
 | Annexes (glossaire, cartes muettes, auto-évaluation, illustrations, sources) | ⬜ Fin de projet |
 | Audit complet (audit.py) | ⬜ Fin de projet |
 
@@ -32,9 +32,10 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 - `src/data-unite3-rev.js` — S54 révision (22 notions + 15 questions) et S55 sujet d'examen (4 exercices × 5 pts, corrigé).
 - `src/data-unite4.js` — Séances S56-S59 : définition d'une ressource naturelle, types et localisation, importance et problèmes, préservation.
 - `src/data-unite4-rev.js` — S60 révision (17 notions + 15 questions) et S61 sujet d'examen (4 exercices × 5 pts, corrigé).
+- `src/data-unite5.js` — Séances S62-S68 : vie rurale (caractéristiques, activités), vie urbaine (caractéristiques, activités), interdépendance, échanges, problèmes ruraux.
 - `src/assemble.js` — Assemblage du manuel complet (couverture, avant-propos, mode d'emploi, TdM interactive, tableaux de bord, séances, annexes optionnelles).
-- `svg/` — 53 schémas pédagogiques (`geo5_*.png`) : 14 (U1) + 8 (U2) + 27 (U3) + 4 (U4).
-- `scenes/` — 53 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
+- `svg/` — 66 schémas pédagogiques (`geo5_*.png`) : 14 (U1) + 8 (U2) + 27 (U3) + 4 (U4) + 13 (U5).
+- `scenes/` — 63 scènes semi-réalistes (JPEG 900 px, q85), intégrées comme documents d'appui.
 - `output/Manuel_Geographie_T5_JLearn.docx` — Build V1 Unités 1-4 (**12 174 Ko**, 61 séances, 106 images, empreinte SHA-256 jointe).
 
 ## Générer le manuel
