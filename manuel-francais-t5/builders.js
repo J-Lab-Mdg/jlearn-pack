@@ -197,7 +197,7 @@ const sub = (t) => p([run(t, { bold: true, color: C.GREEN, size: SZ.SUB })], { a
 function iCan(unitLabel, color, items, nextText) {
   const item = (t) => p([run("☐  ", { size: 32 }), run(t, { size: SZ.BODY })], { after: 100 });
   const out = [
-    unitBanner(unitLabel + " — I CAN…", color),
+    unitBanner(unitLabel + " — JE SAIS…", color),
     p("", { after: 120 }),
     p("Coche ✔ ce que tu sais faire :", { after: 120 }),
     ...items.map(item),
