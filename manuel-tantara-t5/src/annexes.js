@@ -164,7 +164,6 @@ function annexe7() {
       ["UNESCO", "United Nations Educational, Scientific and Cultural Organization", "Fikambanana iraisam-pirenena miaro ny vakoka (Ambohimanga : 2001)"],
       ["MEN", "Ministère de l'Éducation Nationale", "Ny ministera miandraikitra ny fanabeazam-pirenena"],
       ["PE", "Programme Éducatif", "Ny fandaharam-pianarana ofisialy"],
-      ["FRP", "Fitaovana fanampiny ho an'ny mpampianatra", "Boky torolalana ho an'ny mpampianatra"],
     ],
     [14, 40, 46]
   ));
@@ -229,17 +228,17 @@ function annexe9(saryList) {
   out.push(B.p("Bibliografia :", { bold: true, size: 24, color: B.GREEN, spacingAfter: 60 }));
   [
     "Ministère de l'Éducation Nationale (MEN), Programme Éducatif — Tantara, kilasy T5 (Édition 2026).",
-    "Ministère de l'Éducation Nationale (MEN), FRP Tantara — kilasy T5 (fitaovana fanampiny ho an'ny mpampianatra).",
-    "RASOANINDRINA Baptistine, Tantaran'i Madagasikara, kilasy faha-7, 2010.",
+    "CALLET R.P. (François), Tantara ny Andriana eto Madagasikara (lovantsofina nangonina).",
+    "RASOANINDRINA Baptistine, Tantaran'i Madagasikara, kilasy faha-7, Librairie Mixte, 2010.",
     "RAZAFIMBELO Célestin, Histoire de Madagascar (Université d'Antananarivo).",
     "Revue Historique de l'Océan Indien, laharana 14 (J. Ravelomanana).",
     "Fanambarana iraisam-pirenena momba ny zon'olombelona (1948), andininy voalohany.",
   ].forEach(t => out.push(B.p("\u2022 " + t, { size: 24, spacingAfter: 40 })));
   out.push(B.p("Webografia :", { bold: true, size: 24, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
   [
-    "plateforme.education.mg — ny sehatra ofisialin'ny MEN ahitana ny PE sy ny FRP.",
+    "plateforme.education.mg — ny sehatra ofisialin'ny MEN ahitana ny fandaharam-pianarana ofisialy.",
     "education.gov.mg — RAPE T5 (fandaharana isan-taona).",
-    "Madagascar-Tribune (lahatsoratra « Mahaliana ny vahiny ny vakoka », nohafohezina tao amin'ny FRP).",
+    "Madagascar-Tribune (lahatsoratra « Mahaliana ny vahiny ny vakoka »).",
     "mg.mondemalgache.org (rakibolana : famaritana ny vakoka).",
   ].forEach(t => out.push(B.p("\u2022 " + t, { size: 24, spacingAfter: 40 })));
   out.push(B.p("Lisitry ny sary rehetra ao amin'ny boky :", { bold: true, size: 24, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));

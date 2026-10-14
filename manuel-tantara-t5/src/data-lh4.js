@@ -1,6 +1,6 @@
 // data-lh4.js — LOHAHEVITRA IV : NY FANJAKAN'I MADAGASIKARA TAMIN'NY TAONJATO XIX (S11-S16) — Tantara T5
 // Loharano : PE T5 (tak. 144-147) sy FRP T5 (LFK 4-a → 4-f)
-const DOC = "PE Tantara T5 (MEN) sy FRP T5";
+const DOC = "PE Tantara T5 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "IV — Ny fanjakan'i Madagasikara tamin'ny taonjato XIX";
 const FAHENDRENA = "Fankamamiana ny tantaram-pirenena";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "mitanisa araka ny filaharany ireo mpanjaka enina nifandimby (1810-1897) sy manazava ny fifanekena tamin'i Farquhar",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana frisem-potoana ; famakiana lahatsoratra ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 4-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frisem-potoana 1810-1897 ; lahatsoratra",
   image: "images/img_s11.png",
   imageLegende: "Ny lapan'ny mpanjaka tao Antananarivo tamin'ny taonjato XIX",
@@ -144,7 +144,7 @@ const seances = [
   tanjona: "manazava ny fomba nanitaran'i Radama I ny fanjakany",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fandinihana sari-tany ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 4-b)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sari-tany ; lahatsoratra",
   image: "images/img_s12.png",
   imageLegende: "Ny tafik'i Radama I : miaramila voaofana sy nitondra basy vaovao",
@@ -277,7 +277,7 @@ const seances = [
   tanjona: "manazava ny politikan-dRanavalona I sy ny zava-bitan'i Jean Laborde tao Mantasoa",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fanontaniana/valiny ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (LFK 4-d)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; sary",
   image: "images/img_s13.png",
   imageLegende: "Ny orinasan'i Mantasoa : toeram-pamokarana voalohany teto Madagasikara",
@@ -411,7 +411,7 @@ const seances = [
   tanjona: "manazava ny politikan-dRadama II sy ny Charte Lambert",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fanontaniana/valiny ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (LFK 4-e)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; solaitrabe",
   image: "images/img_s14.png",
   imageLegende: "Niverina ny sambo vahiny sy ny misionera tamin'ny andron-dRadama II",
@@ -543,7 +543,7 @@ const seances = [
   tanjona: "manazava ny nanjakan'ireo mpanjakavavy telo farany sy ny nahaverezan'ny fahaleovantena",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana frisem-potoana ; famakiana lahatsoratra ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 4-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frisem-potoana ; lahatsoratra",
   image: "images/img_s15.png",
   imageLegende: "Ny fiangonana tao anatirova : lasa fivavahana ofisialy ny kristianisma (1869)",
@@ -622,7 +622,7 @@ const seances = [
       {
         titre: "2. Ranavalona II (1868-1883)",
         paras: [
-          "Natao batisa i Ranavalona II ny 21 febroary 1869 ka lasa fivavahana ofisialin'ny fanjakana ny kristianisma ; nodorana ny sampy. Noraràny ny toaka ary nanao fifanarahana ara-toekarena tamin'ny Anglisy izy. Maty izy ny 13 jolay 1883.",
+          "Natao batisa i Ranavalona II ny 21 febroary 1869 ka lasa fivavahana ofisialin'ny fanjakana ny kristianisma ; nodorana ny sampy. Nofoanany ny fahafahana manambady maro, noraràny ny fivarotana toaka ary nanao fifanarahana ara-toekarena tamin'ny Anglisy izy. Maty izy ny 13 jolay 1883.",
         ],
         puces: [],
       },
@@ -676,7 +676,7 @@ const seances = [
   tanjona: "manazava ny voka-dratsin'ny fifandraisana tamin'ny vahiny ary mitanisa ireo soatoavina malagasy tokony hotandrovana",
   fahendrena: FAHENDRENA,
   tetika: "Fifanakalozan-kevitra ; asa an-tarika ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 4-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; solaitrabe",
   image: "images/img_s16.png",
   imageLegende: "Ny soatoavina malagasy : fihavanana, fifanampiana, firaisan-kina",

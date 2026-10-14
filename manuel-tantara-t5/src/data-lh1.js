@@ -1,6 +1,6 @@
 // data-lh1.js — LOHAHEVITRA I : NY TRANGA ARA-TANTARA SY NY ZAVA-MITRANGA (S1-S2) — Tantara T5
 // Loharano : PE T5 (tak. 137-138) sy FRP T5 (LFK 1-a, 1-b, 1-d)
-const DOC = "PE Tantara T5 (MEN) sy FRP T5";
+const DOC = "PE Tantara T5 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "I — Ny tranga ara-tantara sy ny zava-mitranga";
 const FAHENDRENA = "Toe-tsaina tia mitsikera, toe-tsaina tia manadihady";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe zava-mitranga ary mitanisa ny karazany eo an-toerana sy eo anivon'ny firenena",
   fahendrena: FAHENDRENA,
   tetika: "Resadresaka arahina fifanakalozan-kevitra ; fanontaniana/valiny ; asa an-tarika",
-  fanovozanKevitra: DOC + " (LFK 1-a, 1-b)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sehom-baovao (gazety), sary ; solaitrabe",
   image: "images/img_s01.png",
   imageLegende: "Zava-mitranga eo amin'ny fiarahamonina : fety, fambolen-kazo, asa tanamaro",
@@ -119,7 +119,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Fambolen-kazo tao Ambohimarina — Ny sabotsy 12 oktobra lasa teo dia nanatanteraka fambolen-kazo teny amin'ny havoana atsimon'ny tanàna ny mponin'ny fokontany Ambohimarina. Zana-kazo miisa 500 no nambolena. Nandray anjara ny mpianatry ny sekoly, ny ray aman-dreny ary ny fokonolona. “Hiverina isan-taona izahay”, hoy ny filohan'ny fokontany. »",
-      "(Sehom-baovao noforonina ho an'ity boky ity, natao hianarana mamaky vaovao — jereo FRP T5, LFK 1-a.)",
+      "(Sehom-baovao noforonina ho an'ity boky ity, natao hianarana mamaky vaovao.)",
       "Fanontaniana : a) Inona no zava-nitranga ? b) Taiza ary oviana ? d) Iza no nandray anjara ?",
       "Valiny : a) Fambolen-kazo (zana-kazo 500). b) Tany Ambohimarina, ny sabotsy 12 oktobra. d) Ny mpianatra, ny ray aman-dreny ary ny fokonolona.",
     ],
@@ -159,7 +159,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe tranga ara-tantara ary manavaka azy amin'ny zava-mitranga",
   fahendrena: FAHENDRENA,
   tetika: "Famakafakana lahatsoratra ; fanontaniana/valiny ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (LFK 1-d)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra milaza tranga ara-tantara ; solaitrabe",
   image: "images/img_s02.png",
   imageLegende: "Ny tranga ara-tantara : zava-nitranga tamin'ny lasa, tadidin'ny firenena",
@@ -256,7 +256,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Ny zava-mitranga : zava-miseho eo amin'ny fiainana andavanandro. Ny tranga ara-tantara : ireo tranga nisy teo aloha tao anatin'ny fotoana sy toerana voafaritra. Ohatra eo anivon'ny firenena : tranga ara-politika (fifidianana, fihetsiketsehana…), tranga ara-toekarena, tranga ara-piarahamonina amin'ny fotoana sy toerana voafaritra. »",
-      "(Nalaina tao amin'ny FRP T5, LFK 1-d.)",
+      "(Famaritana araka ny fandaharam-pianarana ofisialy — PE Tantara T5, MEN.)",
       "Fanontaniana : a) Inona no dikan'ny hoe « fotoana sy toerana voafaritra » ? b) Omeo ohatra tranga ara-tantara iray fantatrao, lazao ny fotoanany.",
       "Valiny : a) Fantatra mazava ny daty sy ny toerana nisehoany. b) Ohatra : ny fahaleovantena, ny 26 jona 1960, teto Madagasikara.",
     ],

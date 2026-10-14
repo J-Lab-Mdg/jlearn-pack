@@ -1,6 +1,6 @@
 // data-lh5.js — LOHAHEVITRA V : NY FANJANAHANTANY TETO MADAGASIKARA 1896-1960 (S18-S24) — Tantara T5
 // Loharano : PE T5 (tak. 147-151) sy FRP T5 (LFK 5-a → 5-f)
-const DOC = "PE Tantara T5 (MEN) sy FRP T5";
+const DOC = "PE Tantara T5 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "V — Ny fanjanahantany teto Madagasikara (1896-1960)";
 const FAHENDRENA = "Fitiavan-tanindrazana sy fandraisana andraikitra";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe fanjanahantany sy mitanisa ireo sata nisy an'i Madagasikara (1895-1960)",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fandinihana tabilao ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 5-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Tabilao ny satas ; lahatsoratra",
   image: "images/img_s18.png",
   imageLegende: "Nidina teto Madagasikara ny sainam-pirenena vahiny : nanomboka ny fanjanahantany",
@@ -149,7 +149,7 @@ const seances = [
   tanjona: "maneho ny rafi-pitantanana napetraky ny mpanjanaka teto Madagasikara",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana kisarisary (organigrama) ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 5-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Kisarisarin'ny rafi-pitantanana ; lahatsoratra",
   image: "images/img_s19.png",
   imageLegende: "Ny biraon'ny fitondrana mpanjanaka : ny governora jeneraly no fara-tampony",
@@ -287,7 +287,7 @@ const seances = [
   tanjona: "manazava ny fisehon'ny fanjanahantany teo amin'ny lafiny ara-toekarena",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; asa an-tarika ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 5-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; solaitrabe",
   image: "images/img_s20.png",
   imageLegende: "Nentina any amin'ny seranana ny vokatry ny tany : ny toekarena natao ho an'ny mpanjanaka",
@@ -420,7 +420,7 @@ const seances = [
   tanjona: "manazava ny fisarahan'ny saranga sy ny endri-panabeazana tamin'ny fanjanahantany",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fifanakalozan-kevitra ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 5-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; solaitrabe",
   image: "images/img_s21.png",
   imageLegende: "Sekoly roa tsy mitovy : ho an'ny zanaky ny vazaha sy ho an'ny zanaky ny « indigènes »",
@@ -515,7 +515,7 @@ const seances = [
       },
     ],
     tahirinKevitra: [
-      "« Nanjakan'ny fahasamihafana ny endri-panabeazana nisy satria nisy ny sekoly voatokana ho an'ny vazaha sy ny olom-pirenena frantsay ary nisy ny sekoly tsotra ho an'ny Malagasy “indigènes” izay natao hanatanteraka baiko sy hamokatra ary hiasa ho an'ny mpanjanaka. » (Nalaina tao amin'ny FRP T5, LFK 5-a.)",
+      "Nisy ambaratonga roa ny sekoly tamin'ny fanjanahantany : ny sekoly natokana ho an'ny zanaka vazaha sy ny olom-pirenena frantsay, ary ny sekoly tsotra ho an'ny Malagasy nantsoina hoe « indigènes » — izay natao hamolavola mpanatanteraka baiko sy mpamokatra ho an'ny mpanjanaka fa tsy hampandroso ny Malagasy. (Famintinana narafitra ho an'ity boky ity.)",
       "Fanontaniana : Inona no tanjon'ny sekoly natokana ho an'ny « indigènes » ?",
       "Valiny : Ny hanofana azy hanatanteraka baiko sy hamokatra ho an'ny mpanjanaka fa tsy ny hampandroso azy.",
     ],
@@ -555,7 +555,7 @@ const seances = [
   tanjona: "manazava ny atao hoe SMOTIG sy ny fiantraikany teo amin'ny vahoaka malagasy",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fandinihana sary ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 5-b)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; sary",
   image: "images/img_s22.png",
   imageLegende: "Ny asa an-terivozona : fanamboarana lalana sy lalamby ho an'ny mpanjanaka",
@@ -649,7 +649,7 @@ const seances = [
       },
     ],
     tahirinKevitra: [
-      "« Ho famahana ny olan'ny asa dia noteren'ny mpanjanaka hanao asa izay tsy maintsy ataon'ireo mponina voazanaka. » (Nalaina tao amin'ny FRP T5, LFK 5-b.)",
+      "Mba hamahana ny olan'ny tanan-tsarotra dia noteren'ny mpanjanaka hiasa an-terivozona ireo mponina voazanaka : tsy safidy ny asa fa adidy noterena, ary saziana izay nandà. (Famintinana narafitra ho an'ity boky ity.)",
       "Fanontaniana : Nahoana ny SMOTIG no antsoina hoe « asa an-terivozona » ?",
       "Valiny : Satria noterena ny olona ary tsy nandray karama : tsy safidiny ny niasa.",
     ],
@@ -689,7 +689,7 @@ const seances = [
   tanjona: "mitanisa ireo hetsika fanoherana ny fanjanahantany sy ny zava-notakiny",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana frisem-potoana ; asa an-tarika ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 5-d)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frisem-potoanan'ny tolona ; lahatsoratra",
   image: "images/img_s23.png",
   imageLegende: "Nitolona hatrany ny Malagasy mba hamerenana ny fahaleovantena",
@@ -784,7 +784,7 @@ const seances = [
       },
     ],
     tahirinKevitra: [
-      "Ny tolona tsirairay dia samy manana ny fotoana sy ny toerana nitrangany, ny mpitarika azy, ny zava-notakiny ary ny vokany. (Nalaina tao amin'ny FRP T5, LFK 5-d.)",
+      "Ny tolona tsirairay dia samy manana ny fotoana sy ny toerana nitrangany, ny mpitarika azy, ny zava-notakiny ary ny vokany. (Famintinana narafitra ho an'ity boky ity.)",
       "Fanontaniana : Inona no itovizan'ireo tolona rehetra ireo ?",
       "Valiny : Samy naneho ny fitiavan-tanindrazana sy ny tsy fanekena ny fanjanahantany avokoa izy rehetra.",
     ],
@@ -824,7 +824,7 @@ const seances = [
   tanjona: "mitanisa ny zava-bitan'ny mpanjanaka sy manazava ny fiantraikan'ny fanjanahantany",
   fahendrena: FAHENDRENA,
   tetika: "Asa an-tarika ; fampitahana ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 5-e, 5-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; solaitrabe",
   image: "images/img_s24.png",
   imageLegende: "Ny lalamby nolovana tamin'ny fanjanahantany : nisy zava-bita fa lafo ny vidiny",

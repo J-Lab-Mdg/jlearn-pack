@@ -1,6 +1,6 @@
 // data-lh3.js — LOHAHEVITRA III : NY FANONDRANANA ANDEVO (S7-S9) — Tantara T5
 // Loharano : PE T5 (tak. 142-144) sy FRP T5 (LFK 3-a, 3-b, 3-d, 3-e, 3-f)
-const DOC = "PE Tantara T5 (MEN) sy FRP T5";
+const DOC = "PE Tantara T5 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "III — Ny fanondranana andevo nifanaovan'i Madagasikara tamin'i Afrika atsinanana sy ireo Nosy Mascareignes";
 const FAHENDRENA = "Fanajana ny fiainana sy ny zon'olombelona";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "mitanisa ireo fanjakana nivarotra andevo sy manazava ny antony nanaovana izany",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fanontaniana/valiny ; asa an-tarika",
-  fanovozanKevitra: DOC + " (LFK 3-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; sari-tany ; solaitrabe",
   image: "images/img_s07.png",
   imageLegende: "Ny fifanakalozana : andevo natakalo basy sy vanja ary entana vazaha",
@@ -140,7 +140,7 @@ const seances = [
   tanjona: "maneho ny fisehon'ny varotra andevo, ireo toerana nanaovana azy ary ireo entana natakalo",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana sari-tany ; famakiana lahatsoratra ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 3-b, 3-e)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sari-tanin'ny lalan'ny varotra andevo ; lahatsoratra",
   image: "images/img_s08.png",
   imageLegende: "Ny seranana amoron-tsiraka : toerana nanaovana ny varotra andevo",
@@ -275,7 +275,7 @@ const seances = [
   tanjona: "manazava ny fiantraikan'ny varotra andevo teo amin'ny fanjakana Malagasy sy ny fiarahamonina",
   fahendrena: FAHENDRENA,
   tetika: "Asa an-tarika ; fifanakalozan-kevitra ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 3-d, 3-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; solaitrabe",
   image: "images/img_s09.png",
   imageLegende: "Vokatry ny varotra andevo : tanàna sasany rava, fanjakana sasany nihanahery",

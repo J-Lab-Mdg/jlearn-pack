@@ -1,6 +1,6 @@
 // data-lh6.js — LOHAHEVITRA VI : NY VAKOKA SY NY HAREM-PIRENENA (S26-S29) — Tantara T5
 // Loharano : PE T5 (tak. 151-154) sy FRP T5 (LFK 6-a → 6-g)
-const DOC = "PE Tantara T5 (MEN) sy FRP T5";
+const DOC = "PE Tantara T5 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "VI — Ny vakoka sy ny harem-pirenena eto Madagasikara";
 const FAHENDRENA = "Fanajana ny fananana iombonana";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe vakoka sy mitanisa ireo karazany",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fandinihana sary ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 6-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary vakoka ; lahatsoratra",
   image: "images/img_s26.png",
   imageLegende: "Vakoka malagasy : rova, aloalo, tsangambato sy ny hira gasy",
@@ -146,7 +146,7 @@ const seances = [
   tanjona: "mamaritra ny harem-pirenena sy manazava ny tombontsoa azo amin'ny fikolokoloana azy",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fifanakalozan-kevitra ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 6-b, 6-e)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary ; lahatsoratra",
   image: "images/img_s27.png",
   imageLegende: "Ny tsingin'ny Bemaraha : harem-pirenena malagasy manintona ny mpizaha tany",
@@ -240,7 +240,7 @@ const seances = [
       },
     ],
     tahirinKevitra: [
-      "« Isan'ny tombony lehibe ho antsika, ankoatry ny vola vahiny miditra, ny fitiavan'izy ireny ny asa tanana malagasy. » (Nalaina tao amin'ny Madagascar Tribune, naverin'ny FRP T5, LFK 6-e.)",
+      "« Isan'ny tombony lehibe ho antsika, ankoatry ny vola vahiny miditra, ny fitiavan'izy ireny ny asa tanana malagasy. » (Nalaina tao amin'ny gazety Madagascar Tribune.)",
       "Fanontaniana : Inona no tombony azon'ny mpanao asa tanana amin'ny fizahantany ?",
       "Valiny : Ny vahiny no tena mividy ny vokatra asa tanana ka ivelomany.",
     ],
@@ -280,7 +280,7 @@ const seances = [
   tanjona: "mitanisa ireo lalàna sy fepetra miaro ny vakoka sy ny harem-pirenena",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; fanontaniana/valiny ; asa an-tarika",
-  fanovozanKevitra: DOC + " (LFK 6-d, 6-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; solaitrabe",
   image: "images/img_s28.png",
   imageLegende: "Ny tranom-bakoka : toerana itehirizana sy iarovana ny vakoka",
@@ -416,7 +416,7 @@ const seances = [
   tanjona: "manazava ny andraikitry ny tsirairay amin'ny fiarovana ny vakoka sy ny harem-pirenena",
   fahendrena: FAHENDRENA,
   tetika: "Fifanakalozan-kevitra ; asa an-tarika ; tetikasa kely",
-  fanovozanKevitra: DOC + " (LFK 6-g)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; solaitrabe",
   image: "images/img_s29.png",
   imageLegende: "Ny ankizy mandray anjara : fanadiovana sy fambolen-kazo manodidina ny toerana manan-tantara",

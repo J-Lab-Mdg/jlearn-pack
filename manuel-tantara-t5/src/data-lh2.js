@@ -1,6 +1,6 @@
 // data-lh2.js — LOHAHEVITRA II : IREO FANJAKANA NISY TETO MADAGASIKARA (XVI-XIX) (S4-S5) — Tantara T5
 // Loharano : PE T5 (tak. 139-142) sy FRP T5 (LFK 2-a, 2-b, 2-d)
-const DOC = "PE Tantara T5 (MEN) sy FRP T5";
+const DOC = "PE Tantara T5 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "II — Ireo fanjakana nisy teto Madagasikara (taonjato XVI-XIX)";
 const FAHENDRENA = "Fandalàna ny maha iray ao anatin'ny fahasamihafana, firaisankina";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe foko sy ny rafi-pamokarana ary maneho ny fivoaran'ny foko ho fanjakana",
   fahendrena: FAHENDRENA,
   tetika: "Famakiana lahatsoratra ; asa an-tarika arahina resadresaka ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (LFK 2-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; solaitrabe",
   image: "images/img_s04.png",
   imageLegende: "Ny foko : olona iray fihaviana, miara-miasa sy mifampizara ny vokatra",
@@ -116,7 +116,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Fitambaran'ny foko maromaro no lasa fanjakana. Nanitatra ny fahefany ny zokiolona ka nanafika ny foko hafa ary nanorina ny fanjakany tamin'ny herisetra sy ny fitaovam-piadiana azony tamin'ny vazaha. (…) Izay zokiolona mahery an'ady no lasa mpanjaka. »",
-      "(RASOANINDRINA Baptistine, Tantaran'i Madagasikara, kilasy faha-7, 2010, tak. 9 — naverin'ny FRP T5, LFK 2-a.)",
+      "(RASOANINDRINA Baptistine, Tantaran'i Madagasikara, kilasy faha-7, Librairie Mixte, 2010, tak. 9.)",
       "Fanontaniana : a) Iza no lasa mpanjaka araka ity lahatsoratra ity ? b) Avy taiza ny fitaovam-piadiana nampiasainy ?",
       "Valiny : a) Izay zokiolona mahery an'ady. b) Azony tamin'ny vazaha (tamin'ny fifanakalozana).",
     ],
@@ -157,7 +157,7 @@ const seances = [
   tanjona: "mitanisa ireo fanjakana nijoro teto Madagasikara sy ireo mpanjaka malaza tamin'izy ireo",
   fahendrena: FAHENDRENA,
   tetika: "Famakafakana tahirin-kevitra ; asa an-tarika isam-paritra ; fampiasana sari-tany",
-  fanovozanKevitra: DOC + " (LFK 2-b, 2-d)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sari-tanin'i Madagasikara maneho ireo fanjakana ; lahatsoratra",
   image: "images/img_s05.png",
   imageLegende: "Ireo fanjakana nijoro teto Madagasikara : samy nanana ny mpanjakany ny faritra",
@@ -195,6 +195,8 @@ const seances = [
       { q: "Iza avy ireo fanjakana efatra vaventy sy ny taonjato nijoroany ?", ra: "Sakalava (XVI), Merina (XVI), Betsimisaraka (XVII), Betsileo (XVIII)." },
       { q: "Iza no mpanjaka malaza tao amin'ny Sakalava ?", ra: "Andriandahifotsy (Menabe) ; Andriamandisoarivo no nanorina ny fanjakana Boina." },
       { q: "Iza no nanorina ny fanjakana Betsimisaraka ?", ra: "Ratsimilaho (na Ramaromanompo), nampihavana ny Betsimisaraka avaratra sy atsimo." },
+      { q: "Nizara firy ny fanjakana Betsileo ? Tanisao izy ireo.", ra: "Efatra : Manandriana, Iarindrano, Isandra ary Lalangina." },
+      { q: "Iza no mpanjaka merina nizara ny fanjakany ho toko efatra ?", ra: "Andriamasinavalona (1675-1710) : Avaradrano, Marovatana, Ambodirano, Vakinisaony." },
       { q: "Iza no mpanjaka merina malaza indrindra tamin'io vanim-potoana io ?", ra: "Andrianampoinimerina (1787-1810), mpanjakan'Ambohimanga : « Ny ranomasina no valam-parihiko »." },
     ],
     technique: "Fanontaniana / valiny",
@@ -225,27 +227,56 @@ const seances = [
   tombanaTechnique: "Asa samirery",
   tombanaSupport: "Kahie",
   lesona: {
-    motsCles: ["fanjakana", "Sakalava", "Merina", "Betsimisaraka", "Betsileo", "Andrianampoinimerina"],
+    motsCles: ["fanjakana", "Sakalava", "Merina", "Betsimisaraka", "Betsileo", "Andriandahifotsy", "Andriamandisoarivo", "Ratsimilaho", "Andriamanalina", "Andriamasinavalona", "Andrianampoinimerina"],
     sections: [
       {
         titre: "1. Ireo fanjakana nijoro teto Madagasikara",
         paras: [
           "Fanjakana maro no nijoro teto Madagasikara nanomboka ny taonjato XVI : ny fanjakana Antandroy, Andratsay (Betafo), Antambahoaka, Antanosy, Antemoro, Antesaka, Bara, Betsileo, Betsimisaraka, Bezanozano, Mahafaly, Merina, Sakalava, Sihanaka, Tsimihety, Vezo, Tanala, Antakarana…",
+          "Efatra amin'izy ireo no niavaka tamin'ny tanjany : ny Sakalava (taonjato XVI), ny Merina (taonjato XVI), ny Betsimisaraka (taonjato XVII) ary ny Betsileo (taonjato XVIII).",
         ],
         puces: [],
       },
       {
-        titre: "2. Ireo fanjakana efatra vaventy",
+        titre: "2. Ny fanjakana Sakalava (taonjato XVI, andrefana)",
         paras: [],
         puces: [
-          "Ny fanjakana SAKALAVA (taonjato XVI, andrefana) : Andriandahifotsy (1650-1680) tao Menabe ; Andriamandisoarivo nanorina ny fanjakana Boina.",
-          "Ny fanjakana MERINA (taonjato XVI, afovoan-tany) : Rangita, Andriamanelo, Ralambo, Andrianjaka (nanorina an'Antananarivo, « tanàn'ny arivo »).",
-          "Ny fanjakana BETSIMISARAKA (taonjato XVII, atsinanana) : Ratsimilaho (1712-1750) nampihavana ny avaratra sy ny atsimo.",
-          "Ny fanjakana BETSILEO (taonjato XVIII, afovoan-tany atsimo) : nizara efatra (Manandriana, Iarindrano, Isandra, Lalangina) ; Andriamanalina no malaza tao Isandra.",
+          "Andriandahifotsy (1650-1680) no mpanjaka nalaza tao Menabe ; niteraka roalahy izy.",
+          "Andriamanetriarivo (1680-1720), zanany, nampitombo ny fanjakan'ny Menabe hatrany atsimon'Ambongo.",
+          "Andriamandisoarivo (1680-1718), zanany faharoa, nanorina ny fanjakana Boina tany avaratra-andrefana.",
         ],
       },
       {
-        titre: "3. Andrianampoinimerina (1787-1810)",
+        titre: "3. Ny fanjakana Betsimisaraka (taonjato XVII, atsinanana)",
+        paras: [],
+        puces: [
+          "Ratsimilaho, nantsoina koa hoe Ramaromanompo (1712-1750), no nanorina ny fanjakana : nampihavana sy nampifandray ny Betsimisaraka avaratra sy atsimo izy.",
+          "Jean René, izay nilaza ny tenany ho « Mpanjakamena », no nanjaka tao Toamasina ny 1810 ary niara-niasa tamin'ny Anglisy mba hitazonany ny fahefany.",
+        ],
+      },
+      {
+        titre: "4. Ny fanjakana Betsileo (taonjato XVIII) : nizara efatra",
+        paras: [],
+        puces: [
+          "MANANDRIANA (avaratra) : nalaza tao ny mpanjaka Raindratafika ; ny dimbiny Randrianantara dia nanaiky an'Andrianampoinimerina noho ny tahotra ny tafika merina maro an'isa.",
+          "IARINDRANO (atsimo) : nifandimby tao ny mpanjaka Rahasa, Andriambelanandro, Ramarovahoaka ary Andriambelaza.",
+          "ISANDRA (andrefana) : Ralambo (1710-1730) no nanorina azy ; Andriamanalina (1750-1790) no mpanjaka nalaza indrindra, natanjaka ara-tafika sy ara-toekarena ; Andriamanalina III no nanaiky an'Andrianampoinimerina.",
+          "LALANGINA (atsinanana) : Rahasamanarivo (1650-1680) no nanorina azy ; Andriampianarana, mpanjaka nahay nitantana, no namorona lalàna fito ; Raonimanalina nifandray ara-barotra tamin'ny Arabo ; Andrianonindrainarivo (1745-1794), mpanjaka hendry, nanamboatra tohodrano ka niroborobo ny fambolem-bary. Tsy nanaiky ny fitondrana merina i Lalangina raha tsy tamin'ny andron-dRadama I.",
+        ],
+      },
+      {
+        titre: "5. Ny fanjakana Merina (taonjato XVI, afovoan-tany)",
+        paras: [],
+        puces: [
+          "Rangita (1500-1540), tao Imerimanjaka, no nampifandimby ny fanjakana tamin'ny taranany.",
+          "Andriamanelo (1540-1575) nampianatra ny vahoaka nanefy vy natao fitaovam-piadiana, ary nametraka ny an-tanan-tohatra : andriana, hova, andevo.",
+          "Ralambo (1575-1610), tao Ambohitrabiby, nametraka ny fandroana, ny hasina ary ny sampy ; izy koa no nampianatra ny vahoaka niompy omby sy nihinana henan'omby.",
+          "Andrianjaka (1610-1630) nipetraka teto Analamanga ka nanome ny anarana hoe Antananarivo (« tanànan'ny arivo lahy ») ; notohizany ny fanitarana ny lemak'i Betsimitatatra.",
+          "Andriamasinavalona (1675-1710) nizara ny fanjakany ho toko efatra (Avaradrano, Marovatana, Ambodirano, Vakinisaony) ho an'ireo zanany efa-dahy ; taorian'ny nahafatesany dia nizara ho fanjakana efatra Imerina : Ambohimanga, Ambohitrabiby, Ambohidratrimo, Antananarivo.",
+        ],
+      },
+      {
+        titre: "6. Andrianampoinimerina (1787-1810)",
         paras: [
           "Andrianampoinimerina, mpanjakan'Ambohimanga, no nampiray an'Imerina sy nanitatra ny fanjakany. Izy no nanorina ny tsena voalohany ary nampirisika ny vahoaka hamokatra.",
         ],
@@ -257,7 +288,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Andrianampoinimerina (1787-1810), mpanjakan'Ambohimanga. Izy no mpanjaka nanorina ny tsena voalohany. Niezaka hatrany izy nanitatra ny fanjakany, ka nahatonga ilay fitenenana hoe “Ny ranomasina no valam-parihiko”. Nampirisika ny vahoakany hamokatra ihany koa izy : “Izaho sy ny vary dia iray ihany”, “Fahavaloko ny mosary”. »",
-      "(Nalaina tao amin'ny FRP T5, LFK 2-d.)",
+      "(Araka ny lovantsofina nangonin'ny R.P. Callet ao amin'ny Tantara ny Andriana eto Madagasikara.)",
       "Fanontaniana : a) Inona no dikan'ny hoe « ny ranomasina no valam-parihiko » ? b) Nahoana izy no nilaza hoe « fahavaloko ny mosary » ?",
       "Valiny : a) Tiany hipaka hatrany amin'ny ranomasina ny fanjakany, izany hoe ny Nosy manontolo. b) Satria nomeny lanja ny fambolena mba tsy hisian'ny mosary.",
     ],
