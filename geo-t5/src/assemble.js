@@ -16,6 +16,9 @@ const U3C = require("./data-unite3c");
 const U3REV = require("./data-unite3-rev");
 const U4 = require("./data-unite4");
 const U4REV = require("./data-unite4-rev");
+const U5A = require("./data-unite5");
+const U5B = require("./data-unite5b");
+const U5REV = require("./data-unite5-rev");
 
 // Annexes optionnelles tant qu'elles ne sont pas créées (fin de projet)
 const annexesPath = path.join(__dirname, "annexes.js");
@@ -65,12 +68,20 @@ const UNITES = [
     rev: U4REV.revision,
     exam: U4REV.examen,
   },
+  {
+    id: "unite5",
+    nom: "UNITÉ 5 — LA VIE RURALE ET LA VIE URBAINE",
+    seances: "Séances 62 à 76",
+    lecons: 13,
+    intro: "Thématique officielle du programme d'études T5 : la vie rurale et la vie urbaine — les caractéristiques et les activités des deux milieux, leur interdépendance et leurs échanges, leurs problèmes et leurs atouts, les solutions pour améliorer la vie et protéger l'environnement, et la comparaison des deux milieux. Durée officielle : 6 heures 30, soit 13 séances de 30 minutes.",
+    topics: [...U5A.topics, ...U5B.topics],
+    rev: U5REV.revision,
+    exam: U5REV.examen,
+  },
 ];
 
-// Unités restantes (livrées plus tard) — affichées en gris dans la table des matières
-const FUTURES = [
-  { nom: "UNITÉ 5 — LA VIE RURALE ET LA VIE URBAINE", seances: "Séances 62 à 76" },
-];
+// Toutes les unités sont livrées — plus d'unités en attente.
+const FUTURES = [];
 
 const thin = { style: BorderStyle.SINGLE, size: 4, color: "BBBBBB" };
 const borders = { top: thin, bottom: thin, left: thin, right: thin, insideHorizontal: thin, insideVertical: thin };
@@ -359,8 +370,8 @@ function examenSeance(ex) {
 
   const doc = new Document({
     creator: "J-Lab — Collection J-Learn",
-    title: "Manuel de Géographie T5 — J-Learn (V1, Unité 1)",
-    description: "Manuel scolaire de Géographie, classe de T5 (Madagascar) — fiches de préparation, leçons, exercices corrigés, sujets d'examen et annexes.",
+    title: "Manuel de Géographie T5 — J-Learn (V1 complète)",
+    description: "Manuel scolaire de Géographie, classe de T5 (Madagascar) — 66 leçons, 5 révisions, 5 sujets d'examen : fiches de préparation, leçons, exercices corrigés.",
     styles: {
       default: {
         document: { run: { font: "Times New Roman", size: 20 } },

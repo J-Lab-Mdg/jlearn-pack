@@ -379,7 +379,7 @@ const S64 = {
       {
         titre: "3. La ville des services",
         paras: [
-          "La ville concentre les services : écoles et lycées, hôpitaux, banques, administrations, marchés, eau courante et électricité.",
+          "La ville concentre les services : écoles et lycées, hôpitaux, banques, bureaux publics, marchés, eau courante et électricité.",
           "Mais ce confort a un prix : la vie y est chère et le rythme pressé, au son des horaires et des klaxons.",
         ],
         exemples: [
@@ -409,7 +409,7 @@ const S65 = {
   miseEnSituation: {
     texte: "Vela fait un exposé sur les métiers de sa ville. Son grand frère est maçon sur un chantier d'immeuble. Sa mère tient une boutique de tissus au marché d'Analakely. Sa tante est comptable dans une banque. Et dans la vallée qui borde la ville, un ami de la famille cultive des brèdes et des tomates qu'il vend chaque matin. « Alors, demande la maîtresse, dans quels secteurs travaillent-ils tous ? »",
     question: "Quelles activités trouve-t-on en ville et comment les classer ?",
-    ra: "Le primaire est peu présent (maraîchage des bordures de ville), le secondaire regroupe usines et chantiers, et le tertiaire domine : boutiques, banques, transport, administration.",
+    ra: "Le primaire est peu présent (maraîchage des bordures de ville), le secondaire regroupe usines et chantiers, et le tertiaire domine : boutiques, banques, transport, bureaux publics.",
     support: "Schéma des secteurs en ville (page Leçon)",
   },
   presentation: "Aujourd'hui, nous allons apprendre : « Les activités en milieu urbain ». Après cette séance, vous serez capables de classer les activités de la ville dans les trois secteurs.",
@@ -418,12 +418,12 @@ const S65 = {
   analyse: [
     ["Le secteur primaire est-il important en ville ?", "Non, il est peu présent : quelques maraîchers et éleveurs de volailles en bordure de ville."],
     ["Quelles sont les activités secondaires en ville ?", "Les usines (textile, brasserie, décorticage), les ateliers et les chantiers de construction."],
-    ["Pourquoi dit-on que le tertiaire domine en ville ?", "Parce que la plupart des citadins travaillent dans les services : boutiques, banques, transport, administration."],
+    ["Pourquoi dit-on que le tertiaire domine en ville ?", "Parce que la plupart des citadins travaillent dans les services : boutiques, banques, transport, bureaux publics."],
     ["Dans quel secteur travaille le maçon ?", "Dans le secondaire : la construction transforme les matériaux en bâtiments."],
     ["Dans quel secteur travaille la comptable de banque ?", "Dans le tertiaire : la banque rend un service."],
     ["Que fait le maraîcher de la vallée ?", "Il cultive des brèdes et des tomates : c'est du primaire, aux portes de la ville."],
   ],
-  synthese: "Donc, en ville, le primaire est rare (maraîchage périphérique), le secondaire regroupe usines, ateliers et chantiers, et le tertiaire domine : boutiques, banques, transport, administration, santé, école. La ville est la capitale des services.",
+  synthese: "Donc, en ville, le primaire est rare (maraîchage périphérique), le secondaire regroupe usines, ateliers et chantiers, et le tertiaire domine : boutiques, banques, transport, bureaux publics, santé, école. La ville est la capitale des services.",
   appExos: [
     {
       consigne: "Réponds par une phrase complète.",
@@ -510,7 +510,7 @@ const S65 = {
       {
         titre: "3. Le tertiaire, roi de la ville",
         paras: [
-          "La plupart des citadins travaillent dans les services : boutiques et marchés, banques et assurances, transport et taxis-be, restaurants, administration, écoles et hôpitaux.",
+          "La plupart des citadins travaillent dans les services : boutiques et marchés, banques et assurances, transport et taxis-be, restaurants, bureaux publics, écoles et hôpitaux.",
           "Le tertiaire est le premier pourvoyeur d'emplois urbains.",
         ],
         exemples: [
@@ -519,7 +519,7 @@ const S65 = {
       },
     ],
   },
-  motsCles: ["maraîchage", "usine", "chantier", "services", "administration"],
+  motsCles: ["maraîchage", "usine", "chantier", "services", "services publics"],
   questionsRevision: [
     ["Quel secteur domine en ville et pourquoi ?", "Le tertiaire, car la plupart des citadins travaillent dans les services."],
     ["Où trouve-t-on le primaire en ville ?", "En bordure de ville : maraîchage et petit élevage."],
@@ -549,7 +549,7 @@ const S66 = {
   analyse: [
     ["De quoi la ville a-t-elle besoin depuis la campagne ?", "De sa nourriture : riz, viande, légumes, fruits, poisson — et de ses matières premières."],
     ["Que se passe-t-il en ville quand les camions ne passent plus ?", "Les vivres manquent, les prix montent, les familles s'inquiètent."],
-    ["De quoi la campagne a-t-elle besoin depuis la ville ?", "Des produits fabriqués (outils, savon, tissus) et des services (écoles, hôpitaux, administration, pièces détachées)."],
+    ["De quoi la campagne a-t-elle besoin depuis la ville ?", "Des produits fabriqués (outils, savon, tissus) et des services (écoles, hôpitaux, bureaux publics, pièces détachées)."],
     ["Pourquoi le village de Rado était-il bloqué ?", "Parce que la pompe à eau cassée attendait une pièce qui se vend seulement en ville."],
     ["Qu'est-ce que l'interdépendance ?", "C'est le fait que deux milieux ont besoin l'un de l'autre pour vivre."],
     ["Que veut dire l'expression « les deux mains d'un même corps » ?", "Que ville et campagne sont différentes mais inséparables, comme les deux mains d'une même personne."],
@@ -632,7 +632,7 @@ const S66 = {
         titre: "2. Sans la ville, la campagne manque de tout",
         paras: [
           "La campagne a besoin des produits fabriqués en ville ou importés par elle : outils, savon, tissus, carburant, pièces détachées.",
-          "Elle a aussi besoin de ses services : grandes écoles, hôpitaux spécialisés, banques, administration.",
+          "Elle a aussi besoin de ses services : grandes écoles, hôpitaux spécialisés, banques, bureaux publics.",
         ],
         exemples: [
           "La pompe à eau du village attendait sa pièce du marchand de la ville.",
