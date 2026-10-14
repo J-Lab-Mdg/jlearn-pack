@@ -582,6 +582,286 @@
       "id": "geo5_role_soleil",
       "url": "/geo5_role_soleil.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo5_act_rurales",
+      "url": "/geo5_act_rurales.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_act_urbaines",
+      "url": "/geo5_act_urbaines.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_ameliorer_rural",
+      "url": "/geo5_ameliorer_rural.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_ameliorer_urbain",
+      "url": "/geo5_ameliorer_urbain.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_atouts_milieux",
+      "url": "/geo5_atouts_milieux.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_carte_muette_mada",
+      "url": "/geo5_carte_muette_mada.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_carte_muette_regions",
+      "url": "/geo5_carte_muette_regions.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_carte_regions",
+      "url": "/geo5_carte_regions.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_climat_tropical",
+      "url": "/geo5_climat_tropical.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_comparer_vies",
+      "url": "/geo5_comparer_vies.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_deux_saisons",
+      "url": "/geo5_deux_saisons.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_echanges_ville_campagne",
+      "url": "/geo5_echanges_ville_campagne.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_elements_climat",
+      "url": "/geo5_elements_climat.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_fleuves1",
+      "url": "/geo5_fleuves1.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_fleuves2",
+      "url": "/geo5_fleuves2.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_iles_eparses",
+      "url": "/geo5_iles_eparses.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_iles_mada",
+      "url": "/geo5_iles_mada.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_iles_voisines",
+      "url": "/geo5_iles_voisines.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_importance_problemes",
+      "url": "/geo5_importance_problemes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_interdependance",
+      "url": "/geo5_interdependance.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_lacs_artificiels",
+      "url": "/geo5_lacs_artificiels.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_lacs_naturels",
+      "url": "/geo5_lacs_naturels.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_lire_carte_mada",
+      "url": "/geo5_lire_carte_mada.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_mada_lignes",
+      "url": "/geo5_mada_lignes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_massifs",
+      "url": "/geo5_massifs.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_ocean_indien_vide",
+      "url": "/geo5_ocean_indien_vide.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_plaines_plateaux",
+      "url": "/geo5_plaines_plateaux.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_planisphere_vide",
+      "url": "/geo5_planisphere_vide.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_preserver_ressources",
+      "url": "/geo5_preserver_ressources.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_problemes_eau",
+      "url": "/geo5_problemes_eau.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_problemes_ruraux",
+      "url": "/geo5_problemes_ruraux.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_problemes_urbains",
+      "url": "/geo5_problemes_urbains.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_problemes_vegetation",
+      "url": "/geo5_problemes_vegetation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_proteger_environnement",
+      "url": "/geo5_proteger_environnement.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_quadrillage_mada",
+      "url": "/geo5_quadrillage_mada.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_quatre_saisons",
+      "url": "/geo5_quatre_saisons.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_region_cote_est",
+      "url": "/geo5_region_cote_est.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_region_cote_ouest",
+      "url": "/geo5_region_cote_ouest.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_region_hautes_terres",
+      "url": "/geo5_region_hautes_terres.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_region_nord",
+      "url": "/geo5_region_nord.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_region_sud",
+      "url": "/geo5_region_sud.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_relief_formes",
+      "url": "/geo5_relief_formes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_ressource_definition",
+      "url": "/geo5_ressource_definition.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_situer_mada_monde",
+      "url": "/geo5_situer_mada_monde.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_tracer_carte_mada",
+      "url": "/geo5_tracer_carte_mada.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_types_ressources",
+      "url": "/geo5_types_ressources.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_utilite_eau",
+      "url": "/geo5_utilite_eau.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_utilite_relief",
+      "url": "/geo5_utilite_relief.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_utilite_vegetation",
+      "url": "/geo5_utilite_vegetation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_vallees",
+      "url": "/geo5_vallees.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_vegetation1",
+      "url": "/geo5_vegetation1.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_vegetation2",
+      "url": "/geo5_vegetation2.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_vie_rurale",
+      "url": "/geo5_vie_rurale.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_vie_urbaine",
+      "url": "/geo5_vie_urbaine.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_zones_climatiques1",
+      "url": "/geo5_zones_climatiques1.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo5_zones_climatiques2",
+      "url": "/geo5_zones_climatiques2.png",
+      "type": "image/png"
     }
   ]
 }

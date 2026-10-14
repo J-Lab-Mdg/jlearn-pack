@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" font-family="Georgia, 'Times New Roman', serif">
+  <text x="550" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Le planisphère à compléter</text>
+  <rect x="40" y="90" width="1020" height="500" rx="18" fill="#EAF6FB" stroke="#90A4AE" stroke-width="3"/>
+  <path d="M 130 150 L 205 118 L 275 140 L 296 200 L 258 248 L 214 240 L 176 286 L 140 244 L 108 190 Z" fill="#CFD8DC" stroke="#607D8B" stroke-width="3" stroke-linejoin="round"/><text x="205" y="195" text-anchor="middle" font-size="26" fill="#1B5E20" font-weight="bold">……</text><text x="205" y="219" text-anchor="middle" font-size="14" fill="#78909C" font-style="italic">l'Amérique du Nord ?</text>
+  <path d="M 238 268 L 276 288 L 298 330 L 282 348 L 248 304 Z" fill="#CFD8DC" stroke="#607D8B" stroke-width="3" stroke-linejoin="round"/><text x="268" y="305" text-anchor="middle" font-size="26" fill="#1B5E20" font-weight="bold">……</text>
+  <path d="M 282 358 L 342 342 L 378 388 L 362 462 L 322 528 L 292 542 L 276 468 L 262 402 Z" fill="#CFD8DC" stroke="#607D8B" stroke-width="3" stroke-linejoin="round"/><text x="322" y="428" text-anchor="middle" font-size="26" fill="#1B5E20" font-weight="bold">……</text><text x="322" y="452" text-anchor="middle" font-size="14" fill="#78909C" font-style="italic">l'Amérique du Sud ?</text>
+  <path d="M 495 122 L 560 112 L 590 142 L 570 176 L 520 186 L 490 156 Z" fill="#CFD8DC" stroke="#607D8B" stroke-width="3" stroke-linejoin="round"/><text x="540" y="152" text-anchor="middle" font-size="26" fill="#1B5E20" font-weight="bold">……</text><text x="540" y="176" text-anchor="middle" font-size="14" fill="#78909C" font-style="italic">l'Europe ?</text>
+  <path d="M 482 212 L 572 202 L 616 252 L 610 322 L 576 392 L 540 440 L 506 420 L 490 340 L 472 262 Z" fill="#CFD8DC" stroke="#607D8B" stroke-width="3" stroke-linejoin="round"/><text x="545" y="300" text-anchor="middle" font-size="26" fill="#1B5E20" font-weight="bold">……</text><text x="545" y="324" text-anchor="middle" font-size="14" fill="#78909C" font-style="italic">l'Afrique ?</text>
+  <path d="M 612 112 L 732 96 L 862 120 L 902 182 L 852 242 L 782 266 L 702 252 L 640 202 L 602 152 Z" fill="#CFD8DC" stroke="#607D8B" stroke-width="3" stroke-linejoin="round"/><text x="760" y="180" text-anchor="middle" font-size="26" fill="#1B5E20" font-weight="bold">……</text><text x="760" y="204" text-anchor="middle" font-size="14" fill="#78909C" font-style="italic">l'Asie ?</text>
+  <path d="M 802 392 L 902 386 L 942 442 L 902 492 L 822 487 L 782 442 Z" fill="#CFD8DC" stroke="#607D8B" stroke-width="3" stroke-linejoin="round"/><text x="862" y="438" text-anchor="middle" font-size="26" fill="#1B5E20" font-weight="bold">……</text><text x="862" y="462" text-anchor="middle" font-size="14" fill="#78909C" font-style="italic">l'Océanie ?</text>
+  <rect x="70" y="528" width="960" height="42" rx="12" fill="#CFD8DC" stroke="#607D8B" stroke-width="3"/>
+  <text x="550" y="556" text-anchor="middle" font-size="24" fill="#1B5E20" font-weight="bold">……</text>
+  <text x="550" y="578" text-anchor="middle" font-size="14" fill="#78909C" font-style="italic">le continent glacé du pôle Sud ?</text>
+  <text x="390" y="118" text-anchor="middle" font-size="20" fill="#0277BD" font-weight="bold" font-style="italic">océan ……</text>
+  <text x="150" y="340" text-anchor="middle" font-size="20" fill="#0277BD" font-weight="bold" font-style="italic">océan ……</text>
+  <text x="998" y="340" text-anchor="middle" font-size="20" fill="#0277BD" font-weight="bold" font-style="italic">océan ……</text>
+  <text x="430" y="300" text-anchor="middle" font-size="20" fill="#0277BD" font-weight="bold" font-style="italic">océan ……</text>
+  <text x="700" y="402" text-anchor="middle" font-size="20" fill="#0277BD" font-weight="bold" font-style="italic">océan ……</text>
+  <line x1="70" y1="345" x2="1030" y2="345" stroke="#C00000" stroke-width="2.5" stroke-dasharray="12 8"/>
+  <text x="1035" y="340" text-anchor="end" font-size="14" fill="#C00000" font-style="italic">l'équateur ?</text>
+  <text x="550" y="630" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Écris le nom des sept continents et des cinq océans. La ligne pointillée rouge est une ligne imaginaire : laquelle ?</text>
+</svg>

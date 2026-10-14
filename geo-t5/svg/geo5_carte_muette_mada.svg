@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Georgia, 'Times New Roman', serif">
+  <text x="550" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">La carte de Madagascar à compléter</text>
+  <g transform="translate(480 400) scale(2.4) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#F5F5F5" stroke="#5D4037" stroke-width="1.6666666666666667" stroke-linejoin="round"/></g>
+  
+  <g transform="translate(475.2,398) scale(1.2)">
+    <polygon points="0,-15 3.8,-5.3 14.3,-4.6 6.2,2 8.8,12.1 0,6.5 -8.8,12.1 -6.2,2 -14.3,-4.6 -3.8,-5.3" fill="#C00000" stroke="#7F0000" stroke-width="2"/>
+  </g>
+  <text x="508.8" y="400" text-anchor="start" font-size="24" fill="#C00000" font-weight="bold">……</text>
+  <text x="508.8" y="414.4" text-anchor="start" font-size="14" fill="#78909C" font-style="italic">la capitale ?</text>
+  <circle cx="417.6" cy="198.4" r="6" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="393.6" y="193.6" text-anchor="middle" font-size="19" fill="#0277BD" font-weight="bold">……</text>
+  <circle cx="552" cy="395.2" r="5" fill="#C00000" stroke="#7f0000" stroke-width="2"/>
+  <text x="576" y="380.8" text-anchor="start" font-size="19" fill="#0277BD" font-weight="bold">……</text>
+  <line x1="340" y1="544" x2="620" y2="544" stroke="#C00000" stroke-width="3.5" stroke-dasharray="12 7"/>
+  <text x="628" y="538" text-anchor="start" font-size="20" fill="#C00000" font-weight="bold">……</text>
+  <text x="628" y="560" text-anchor="start" font-size="14" fill="#78909C" font-style="italic">la ligne imaginaire ?</text>
+  <text x="480" y="108" text-anchor="middle" font-size="30" fill="#1F4E79" font-weight="bold">……</text>
+  <text x="480" y="660" text-anchor="middle" font-size="30" fill="#1F4E79" font-weight="bold">……</text>
+  <text x="240" y="390" text-anchor="middle" font-size="30" fill="#1F4E79" font-weight="bold">……</text>
+  <text x="770" y="390" text-anchor="middle" font-size="30" fill="#1F4E79" font-weight="bold">……</text>
+  <g>
+    <rect x="820" y="180" width="240" height="210" rx="14" fill="#FAFAFA" stroke="#90A4AE" stroke-width="3"/>
+    <text x="940" y="214" text-anchor="middle" font-size="21" fill="#263238" font-weight="bold">Aide-mémoire</text>
+    <text x="940" y="252" text-anchor="middle" font-size="18" fill="#546E7A">les quatre points</text>
+    <text x="940" y="276" text-anchor="middle" font-size="18" fill="#546E7A">cardinaux ;</text>
+    <text x="940" y="312" text-anchor="middle" font-size="18" fill="#546E7A">l'île au nord-ouest ;</text>
+    <text x="940" y="348" text-anchor="middle" font-size="18" fill="#546E7A">l'île longue de la</text>
+    <text x="940" y="372" text-anchor="middle" font-size="18" fill="#546E7A">côte Est.</text>
+  </g>
+  <text x="550" y="700" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Écris les quatre points cardinaux, le nom de la capitale, des deux îles et de la ligne imaginaire pointillée.</text>
+</svg>
