@@ -1,0 +1,890 @@
+// Français T6 — UNITÉ 1 — LE VOYAGE (10 leçons + révision + test) — Séances 1 à 12 / 72
+const B = require("./builders");
+const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
+        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+const { Table, TableRow, WidthType } = require("docx");
+
+const COLOR = "1F618D"; // bleu voyage
+const SHADE = "D6EAF8";
+const TOTAL = 72;
+const META = (title, slo, session, materials) => ({
+  theme: "UNITÉ 1 — LE VOYAGE", title, slo,
+  values: "citoyenneté et patriotisme, ouverture d'esprit", session, materials,
+});
+
+const bullet = (runs, o = {}) => pr(
+  [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
+  { after: o.after != null ? o.after : 50 });
+const mot = (word, expl) => bullet([
+  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+function box(title, children, shade = SHADE) {
+  return new Table({
+    width: { size: 10400, type: WidthType.DXA },
+    rows: [
+      new TableRow({ children: [cell(
+        [p([run(title, { bold: true, color: COLOR, size: SZ.BODY })], { center: true, after: 40 })],
+        { shade })] }),
+      new TableRow({ children: [cell(children)] }),
+    ],
+  });
+}
+
+// passage de compréhension orale (S1)
+function passagePourquoiVoyager() {
+  return box("PASSAGE D'ÉCOUTE — documentaire « Pourquoi voyager ? »", [
+    p("Chaque année, des milliers de voyageurs parcourent les routes de Madagascar. Certains partent pour un voyage touristique : ils cherchent le soleil, les plages et le repos. D'autres choisissent un voyage culturel : ils visitent le Rova d'Antananarivo, les vieilles villes et les ateliers des artisans. Les gourmands préfèrent le voyage gastronomique : dans chaque région, ils goûtent un plat nouveau, du romazava des hautes terres au poisson au lait de coco de la côte. Enfin, les amoureux de la nature partent pour un voyage de biodiversité : ils observent les lémuriens, les caméléons et les orchidées des parcs nationaux."),
+    p("Pourquoi tous ces gens prennent-ils la route ? Parce que le voyage fait du bien. Il repose le corps et l'esprit. Il apprend mille choses que l'école ne peut pas montrer : un métier, une danse, une autre manière de vivre. Il ouvre l'esprit : le voyageur découvre que l'on peut penser autrement que lui. Il rend aussi fier de son pays : celui qui a vu les baobabs de Morondava et les rizières de Betafo sait quelle richesse il possède."),
+    p("Avant de partir, le bon voyageur prépare son itinéraire sur une carte : il repère les routes, les distances et les étapes. Puis il se lance. Comme le dit un proverbe : les voyages forment la jeunesse.", { after: 40 }),
+  ]);
+}
+// texte de lecture (S3)
+function texteTrainFalaise() {
+  return box("TEXTE DE LECTURE — dépliant « Le train de la falaise »", [
+    p("Entre Fianarantsoa et Manakara roule l'un des trains les plus étonnants du monde : le train de la falaise. Deux fois par semaine, il quitte les hautes terres et descend vers l'océan Indien, sur une voie construite il y a près d'un siècle."),
+    p("Le départ a lieu au petit matin. Le train serpente d'abord entre les collines comme un long serpent de fer. Puis la descente commence : dix-sept kilomètres de pente, quarante-huit tunnels, des ponts suspendus au-dessus des cascades. De chaque côté de la voie, la forêt forme un mur vert. Aux fenêtres, les voyageurs aperçoivent des villages accrochés à la montagne, des bananeraies, des champs de café."),
+    p("À chaque gare, le quai devient un marché : les habitants vendent des bananes, du café, du poivre, des letchis et des beignets chauds. Le train est leur seul lien avec la côte ; il transporte les récoltes, le courrier et les nouvelles."),
+    p("En fin de journée, l'air devient chaud et humide : l'océan approche. Le voyageur fatigué garde pour toujours les images de ce voyage : la falaise, la forêt, les sourires des gares. Un conseil : réservez votre place côté cascade.", { after: 40 }),
+  ]);
+}
+
+// ---------- page d'ouverture ----------
+function opening() {
+  return [
+    unitBanner("UNITÉ 1 — LE VOYAGE", COLOR, "unit1"),
+    p("", { after: 100 }),
+    p([run("La route est une école.", { bold: true, color: COLOR, size: 44 })], { center: true, after: 120 }),
+    img("u1_voyage.png", 440, 768 / 1376),
+    p([run("Dans cette unité, je vais apprendre à :", { bold: true })], { after: 60 }),
+    p("• comprendre un documentaire et un dépliant touristique sur le voyage ;"),
+    p("• nommer les types de voyage à Madagascar et dire leurs bienfaits ;"),
+    p("• reconnaître et employer les expressions imagées : la comparaison, la métaphore, l'énumération ;"),
+    p("• employer les adjectifs qualificatifs et les marqueurs de lieu dans une description ;"),
+    p("• donner mon avis sur une destination : à mon avis, personnellement, selon moi ;"),
+    p("• décrire un paysage et rédiger un dépliant touristique ;"),
+    p("• lire un texte à haute voix en respectant la ponctuation.", { after: 120 }),
+    pr([run("Type de texte de l'unité : ", { bold: true }),
+        run("le texte DESCRIPTIF", { bold: true, color: COLOR }),
+        run(" — décrire un lieu ou un paysage (introduction → développement → conclusion).")], { after: 80 }),
+    pr([run("Valeurs à véhiculer : ", { bold: true }),
+        run("citoyenneté et patriotisme, ouverture d'esprit.", { italic: true })], { after: 80 }),
+  ];
+}
+
+// ---------- S1 — Compréhension orale ----------
+function ficheS1() {
+  const meta = META("Compréhension orale : documentaire « Pourquoi voyager ? »",
+    "À la fin de la séance, l'apprenant détermine le sens des mots inconnus et dégage les informations essentielles d'un documentaire entendu sur le voyage.",
+    "1 / 12", "texte du passage, carte de Madagascar, photographies de voyages");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Première séance de l'année. Posez la question : qui a déjà fait un voyage, même court ? Où ? Comment ? Chaque volontaire répond en une phrase.")],
+      [fp("Répondent."),
+       fp("R.A. : Je suis allé à Antsirabe en taxi-brousse ; j'ai pris la pirogue pour aller au marché…")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route", "(pré-écoute)"],
+      [fp("Affichez la carte de Madagascar. Montrez Antananarivo, Morondava, Nosy Be, Fianarantsoa. Demandez : pourquoi les gens voyagent-ils ? Notez trois hypothèses au tableau.")],
+      [fp("Observent la carte, émettent des hypothèses."),
+       fp("R.A. : pour se reposer, pour voir la famille, pour découvrir…")],
+      "Brainstorming", "Carte de Madagascar"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Compréhension orale : un documentaire intitulé Pourquoi voyager ? ». Consigne : écouter sans écrire ; nous chercherons ensemble le sens des mots nouveaux.")],
+      [fp("Écoutent la consigne.")], "Travail collectif", "----"),
+    stepRow(["3. Observation", "(1re écoute)"],
+      [fp("Lisez le passage lentement, de manière expressive (ou faites écouter l'enregistrement). Questions globales : de quoi parle le document ? Combien de types de voyage sont cités ?")],
+      [fp("Écoutent. Répondent."),
+       fp("R.A. : le document parle du voyage à Madagascar ; quatre types de voyage sont cités.")],
+      "Écoute active", "Texte du passage"),
+    stepRow(["4. Analyse", "(2e écoute)"],
+      [fp("Relisez le passage. Notez au tableau : itinéraire, biodiversité, gastronomique, étape. Faites déduire le sens par le contexte et par la décomposition des mots : gastro- (le ventre), bio- (la vie)… Puis questions guides : quoi ? où ? comment ? pour quel voyageur ?")],
+      [fp("Déduisent le sens des mots inconnus."),
+       fp("R.A. : itinéraire = le chemin du voyage ; biodiversité = toutes les formes de vie ; gastronomique = qui concerne la cuisine ; étape = un arrêt du voyage.")],
+      "Questionnement progressif", "Tableau"),
+    stepRow(["5. Synthèse"],
+      [fp("Questions détaillées : quels sont les quatre types de voyage ? Citez trois bienfaits du voyage. Que fait le bon voyageur avant de partir ? Distinguez l'information principale (le voyage fait du bien) des exemples.")],
+      [fp("Répondent. Récapitulent."),
+       fp("R.A. : touristique, culturel, gastronomique, nature et biodiversité ; le voyage repose, apprend, ouvre l'esprit, rend fier de son pays ; il prépare son itinéraire sur une carte.")],
+      "Travail collectif", "----"),
+    stepRow(["6. Entraînement"],
+      [fp("En binômes : reformulez le documentaire en deux ou trois phrases, avec vos propres mots. Quelques binômes présentent leur résumé à la classe.")],
+      [fp("Résument oralement."),
+       pAns("R.A. : À Madagascar, on peut faire quatre sortes de voyages. Le voyage repose, apprend beaucoup de choses et rend fier du pays. Avant de partir, on prépare son itinéraire sur une carte.", ["quatre sortes de voyages"], { size: SZ.FICHE })],
+      "Binômes", "----"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Cite les quatre types de voyage du documentaire."),
+       fp("2. Donne deux bienfaits du voyage."),
+       fp("3. Que veut dire « itinéraire » ?"),
+       fp("4. Quel type de voyage choisirais-tu ? Pourquoi ?")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. touristique, culturel, gastronomique, nature et biodiversité — 2. il repose, il apprend, il ouvre l'esprit, il rend fier du pays — 3. le chemin du voyage, préparé sur la carte — 4. réponse libre justifiée.", ["itinéraire"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(1, TOTAL, meta, rows, "s1");
+}
+function lessonS1() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 1", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("ÉCOUTER UN DOCUMENTAIRE SUR LE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    passagePourquoiVoyager(),
+    p("", { after: 80 }),
+    sub("Pour comprendre un document entendu :"),
+    p("• J'écoute d'abord sans écrire : de quoi parle le document ?"),
+    p("• À la deuxième écoute, je repère les détails avec les questions guides : quoi ? où ? comment ? quel ?"),
+    p("• Je devine le sens des mots inconnus grâce au contexte et à la décomposition des mots : bio- (la vie), gastro- (le ventre)."),
+    p("• Je reformule l'essentiel avec mes propres mots.", { after: 80 }),
+    sub("Mes premiers mots de l'unité :"),
+    mot("un itinéraire", "le chemin du voyage, tracé sur la carte"),
+    mot("une étape", "un arrêt du voyage"),
+    mot("la biodiversité", "toutes les formes de vie d'une région"),
+    mot("un voyage gastronomique", "un voyage pour découvrir la cuisine des régions"),
+  ];
+}
+
+// ---------- S2 — Lexique : les types de voyage ----------
+function ficheS2() {
+  const meta = META("Lexique : les types de voyage à Madagascar et la carte de voyage",
+    "À la fin de la séance, l'apprenant nomme les types de voyage, leurs bienfaits, et utilise la carte pour préparer un itinéraire.",
+    "2 / 12", "carte routière de Madagascar, photographies de sites");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Rappel de la séance 1 : quels sont les quatre types de voyage du documentaire ?")],
+      [fp("Répondent."),
+       fp("R.A. : touristique, culturel, gastronomique, nature et biodiversité.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Affichez quatre photographies : une plage, le Rova, un plat régional, un lémurien. Chaque rangée choisit sa photo préférée et explique son choix en une phrase.")],
+      [fp("Choisissent, justifient.")],
+      "Observation guidée", "Photographies"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Lexique : les types de voyage à Madagascar et la carte de voyage ». Objectif : savoir nommer chaque voyage et préparer un itinéraire.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Tableau à double entrée : type de voyage / ce qu'on y cherche / un exemple à Madagascar. Complétez-le avec la classe : touristique (plages de Nosy Be), culturel (Rova, villes anciennes), gastronomique (plats des régions), nature et biodiversité (parcs nationaux).")],
+      [fp("Complètent le tableau."),
+       fp("R.A. : voyage nature → observer les animaux et les plantes → le parc d'Isalo.")],
+      "Questions-réponses", "Tableau"),
+    stepRow(["4. Analyse"],
+      [fp("Distribuez la carte routière. Faites repérer : les routes nationales, les distances, trois villes étapes entre Antananarivo et Toliara. Vocabulaire de la carte : la légende, l'échelle, le trajet, l'étape. Puis reliez chaque bienfait du voyage à un exemple : se reposer, apprendre, s'ouvrir aux autres, aimer son pays.")],
+      [fp("Lisent la carte, relient."),
+       fp("R.A. : la RN7 passe par Antsirabe, Fianarantsoa, Ihosy ; la légende explique les signes de la carte.")],
+      "Complétion", "Carte routière"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez : quatre types de voyage, quatre bienfaits, et la carte pour préparer l'itinéraire : repérer, mesurer, choisir les étapes.")],
+      [fp("Écoutent. Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Jeu en binômes : l'un tire une destination (Morondava, Sainte-Marie, Andasibe…), l'autre devine le type de voyage et propose une étape sur la carte. On échange les rôles.")],
+      [fp("Jouent, utilisent la carte."),
+       pAns("R.A. : Morondava → voyage nature (les baobabs) → étape possible : Antsirabe.", ["Antsirabe"], { size: SZ.FICHE })],
+      "Jeux", "Carte routière"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Associe : plage / plat régional / lémurien / Rova au type de voyage."),
+       fp("2. Donne deux bienfaits du voyage."),
+       fp("3. À quoi sert la légende d'une carte ?")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. touristique / gastronomique / nature / culturel — 2. se reposer, apprendre, s'ouvrir, aimer son pays — 3. elle explique les signes de la carte.", ["la légende"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(2, TOTAL, meta, rows, "s2");
+}
+function lessonS2() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 2", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LES TYPES DE VOYAGE À MADAGASCAR", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Les quatre types de voyage :"),
+    mot("le voyage touristique", "le soleil, les plages, le repos — Nosy Be"),
+    mot("le voyage culturel", "les monuments, l'histoire, les artisans — le Rova d'Antananarivo"),
+    mot("le voyage gastronomique", "les plats des régions — le romazava, le poisson au lait de coco"),
+    mot("le voyage nature et biodiversité", "les parcs nationaux, les lémuriens, les orchidées — Isalo, Andasibe"),
+    p("", { after: 60 }),
+    sub("Les bienfaits du voyage :"),
+    p("• il repose le corps et l'esprit ;"),
+    p("• il apprend ce que l'école ne peut pas montrer ;"),
+    p("• il ouvre l'esprit à d'autres manières de vivre ;"),
+    p("• il rend fier de son pays.", { after: 60 }),
+    sub("La carte de voyage :"),
+    mot("la légende", "elle explique les signes de la carte"),
+    mot("l'échelle", "elle permet de mesurer les distances"),
+    mot("le trajet", "le chemin suivi, d'étape en étape"),
+    pr([run("Pour préparer un itinéraire : ", { bold: true }),
+        run("je repère ma destination, je mesure la distance, je choisis mes étapes.")], { after: 40 }),
+  ];
+}
+
+// ---------- S3 — Compréhension écrite ----------
+function ficheS3() {
+  const meta = META("Compréhension écrite : « Le train de la falaise » — la structure du texte descriptif",
+    "À la fin de la séance, l'apprenant dégage les informations essentielles d'un dépliant touristique et retrouve la structure du texte descriptif.",
+    "3 / 12", "texte de lecture (un par binôme si possible)");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Rappel : les quatre types de voyage et un bienfait de ton choix.")],
+      [fp("Répondent."),
+       fp("R.A. : touristique, culturel, gastronomique, nature — le voyage ouvre l'esprit.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route", "(pré-lecture)"],
+      [fp("Demandez : qui a déjà pris le train ? Montrez sur la carte la ligne Fianarantsoa–Manakara. Annoncez qu'il s'agit de l'un des trains les plus étonnants du monde — le texte dira pourquoi.")],
+      [fp("Répondent, situent la ligne sur la carte.")],
+      "Observation guidée", "Carte de Madagascar"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Compréhension écrite : Le train de la falaise, un dépliant touristique ». Consignes : lecture silencieuse d'abord, puis analyse.")],
+      [fp("Écoutent la consigne.")], "Travail collectif", "----"),
+    stepRow(["3. Observation", "(lecture silencieuse)"],
+      [fp("Lecture silencieuse. Questions globales : de quoi parle le texte ? Entre quelles villes roule ce train ? Combien de fois par semaine ?")],
+      [fp("Lisent silencieusement. Répondent."),
+       fp("R.A. : d'un train entre Fianarantsoa et Manakara, deux fois par semaine.")],
+      "Lecture silencieuse", "Texte de lecture"),
+    stepRow(["4. Analyse", "(lecture analytique)"],
+      [fp("Relecture guidée, paragraphe par paragraphe : 1. que présente l'introduction ? 2. que décrit le développement (la descente, les gares) ? 3. que fait la conclusion ? Faites surligner les détails de la descente : kilomètres, tunnels, ponts. Faites remarquer, sans encore les nommer, les images du texte : « comme un long serpent de fer », « la forêt forme un mur vert ».")],
+      [fp("Relisent, surlignent, répondent."),
+       fp("R.A. : introduction = présentation du train ; développement = la descente et les gares ; conclusion = le souvenir du voyageur et un conseil. Dix-sept kilomètres, quarante-huit tunnels, des ponts.")],
+      "Lecture analytique", "Texte de lecture"),
+    stepRow(["5. Synthèse"],
+      [fp("Dégagez ensemble la structure du texte descriptif : introduction (situer), développement (décrire dans l'ordre), conclusion (impression finale). Ses caractéristiques : adjectifs, indications de lieu, détails précis, images.")],
+      [fp("Récapitulent. Copient."),
+       fp("R.A. : un texte descriptif a trois parties ; il situe, décrit, conclut.")],
+      "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("En binômes : relevez dans le texte ce que le train transporte, et ce que les habitants vendent sur les quais. Mettez ces listes en commun.")],
+      [fp("Relèvent, comparent."),
+       pAns("R.A. : le train transporte les récoltes, le courrier et les nouvelles ; on vend des bananes, du café, du poivre, des letchis et des beignets chauds.", ["des letchis"], { size: SZ.FICHE })],
+      "Binômes", "Texte de lecture"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Donne les trois parties du texte descriptif."),
+       fp("2. Cite deux détails précis de la descente."),
+       fp("3. Pourquoi le train est-il si important pour les villages ?")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. introduction, développement, conclusion — 2. dix-sept kilomètres de pente, quarante-huit tunnels, des ponts au-dessus des cascades — 3. c'est leur seul lien avec la côte.", ["quarante-huit tunnels"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(3, TOTAL, meta, rows, "s3");
+}
+function lessonS3() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 3", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LE TEXTE DESCRIPTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    texteTrainFalaise(),
+    p("", { after: 80 }),
+    sub("La structure du texte descriptif :"),
+    p("• l'introduction — elle situe ce qu'on décrit (le train de la falaise, entre Fianarantsoa et Manakara) ;"),
+    p("• le développement — il décrit dans l'ordre : la descente, puis les gares, puis l'arrivée ;"),
+    p("• la conclusion — elle donne l'impression finale et, parfois, un conseil.", { after: 60 }),
+    sub("Ses caractéristiques :"),
+    p("• des adjectifs et des détails précis : dix-sept kilomètres, quarante-huit tunnels ;"),
+    p("• des indications de lieu : de chaque côté de la voie, au-dessus des cascades ;"),
+    p("• des images qui rendent la description vivante : « comme un long serpent de fer » — nous les étudierons à la prochaine séance.", { after: 60 }),
+    sub("Mots du texte :"),
+    mot("un dépliant touristique", "un petit document plié qui présente un lieu aux voyageurs"),
+    mot("une falaise", "une paroi rocheuse très raide"),
+    mot("une bananeraie", "un champ de bananiers"),
+  ];
+}
+
+// ---------- S4 — Les expressions imagées ----------
+function ficheS4() {
+  const meta = META("Fonctionnement de la langue : les expressions imagées — comparaison, métaphore, énumération",
+    "À la fin de la séance, l'apprenant reconnaît et emploie la comparaison, la métaphore et l'énumération pour enrichir une description.",
+    "4 / 12", "texte de la séance 3, étiquettes de phrases");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Rappel : les trois parties du texte descriptif ?")],
+      [fp("Répondent."),
+       fp("R.A. : introduction, développement, conclusion.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Écrivez deux phrases au tableau : « Le train avance lentement. » / « Le train serpente entre les collines comme un long serpent de fer. » Laquelle fait voir quelque chose ? Pourquoi ?")],
+      [fp("Comparent les deux phrases."),
+       fp("R.A. : la deuxième ; on imagine le serpent, la phrase fait une image.")],
+      "Questions-réponses", "Tableau"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Les expressions imagées : la comparaison, la métaphore, l'énumération ». Objectif : rendre une description vivante.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Reprenez le texte du train. Faites retrouver : « comme un long serpent de fer » ; « la forêt forme un mur vert » ; « des bananes, du café, du poivre, des letchis et des beignets chauds ». Trois procédés différents : lesquels se ressemblent ? lequel est une liste ?")],
+      [fp("Retrouvent les trois expressions, observent."),
+       fp("R.A. : les deux premières font une image ; la troisième est une liste de mots.")],
+      "Lecture analytique", "Texte de la S3"),
+    stepRow(["4. Analyse"],
+      [fp("Nommez et définissez au tableau : la COMPARAISON rapproche deux choses avec un mot outil (comme, pareil à, ressembler à) ; la MÉTAPHORE fait l'image sans mot outil (la forêt EST un mur vert) ; l'ÉNUMÉRATION aligne plusieurs mots séparés par des virgules, avec « et » avant le dernier. Faites transformer : une comparaison du texte en métaphore, et inversement.")],
+      [fp("Définissent, transforment."),
+       fp("R.A. : métaphore → comparaison : la forêt est pareille à un mur vert ; comparaison → métaphore : le train est un long serpent de fer.")],
+      "Questions-réponses", "Tableau"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez : trois procédés pour rendre une description vivante ; la comparaison a un mot outil, la métaphore n'en a pas, l'énumération accumule les détails.")],
+      [fp("Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Chaque binôme décrit un élément du voyage (le taxi-brousse, la route, le marché, la pluie) avec une comparaison OU une métaphore, puis une énumération. Mise en commun : la classe identifie le procédé employé.")],
+      [fp("Produisent, identifient."),
+       pAns("R.A. : Le taxi-brousse est une maison roulante (métaphore). Dans le panier : des ananas, des mangues, des letchis et du miel (énumération).", ["métaphore"], { size: SZ.FICHE })],
+      "Binômes — jeux", "Étiquettes"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("Identifie le procédé : 1. « La route est un ruban rouge. » 2. « Le lac brille comme un miroir. » 3. « On vend des nattes, des paniers, des chapeaux et des cordes. » 4. Invente une comparaison sur la pluie.")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. métaphore — 2. comparaison — 3. énumération — 4. exemple : la pluie tombe comme un rideau gris.", ["comparaison"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(4, TOTAL, meta, rows, "s4");
+}
+function lessonS4() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 4", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LES EXPRESSIONS IMAGÉES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("1. La comparaison — avec un mot outil (comme, pareil à, ressembler à) :"),
+    pr([run("Le train serpente ", { }), run("comme un long serpent de fer", { bold: true, color: C.BLUE }), run(".")]),
+    pr([run("Le lac brille ", { }), run("comme un miroir", { bold: true, color: C.BLUE }), run(".")], { after: 60 }),
+    sub("2. La métaphore — l'image sans mot outil :"),
+    pr([run("La forêt ", { }), run("forme un mur vert", { bold: true, color: C.BLUE }), run(".")]),
+    pr([run("La route ", { }), run("est un ruban rouge", { bold: true, color: C.BLUE }), run(".")], { after: 60 }),
+    sub("3. L'énumération — la liste qui accumule les détails :"),
+    pr([run("On vend ", { }), run("des bananes, du café, du poivre, des letchis et des beignets chauds", { bold: true, color: C.BLUE }), run(".")], { after: 20 }),
+    p("Les mots sont séparés par des virgules ; « et » arrive avant le dernier.", { after: 80 }),
+    sub("À quoi servent-elles ?"),
+    p("À faire voir ce qu'on décrit. Une description sans image informe ; une description imagée fait voyager le lecteur.", { after: 60 }),
+    pr([run("Attention : ", { bold: true, color: C.RED }),
+        run("dans la métaphore, ne cherche pas « comme » — c'est justement son absence qui fait la différence.")]),
+  ];
+}
+
+// ---------- S5 — Les adjectifs qualificatifs ----------
+function ficheS5() {
+  const meta = META("Fonctionnement de la langue : les adjectifs qualificatifs — position, fonction, accord",
+    "À la fin de la séance, l'apprenant identifie la place et la fonction des adjectifs qualificatifs et les accorde correctement dans ses descriptions.",
+    "5 / 12", "texte de la séance 3, ardoises");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Identifie le procédé : « Le marché est une ruche. » / « des nattes, des paniers et des chapeaux ».")],
+      [fp("Répondent."),
+       fp("R.A. : métaphore ; énumération.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Écrivez : « Le voyageur regarde le paysage. » Demandez : cette phrase fait-elle voir le paysage ? Ajoutez ensemble des mots qui précisent : « Le jeune voyageur regarde le paysage verdoyant. » Quels mots a-t-on ajoutés ?")],
+      [fp("Proposent des mots, comparent."),
+       fp("R.A. : jeune, verdoyant — des adjectifs.")],
+      "Questions-réponses", "Tableau"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Les adjectifs qualificatifs : position, fonction, accord ». Objectif : donner plus de précisions dans une description.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Relevé dans le texte du train : « un long serpent de fer », « la forêt dense », « l'air devient chaud et humide », « le voyageur fatigué ». Questions : où est placé chaque adjectif ? Lequel est relié au nom par le verbe devenir ?")],
+      [fp("Relèvent, observent la place."),
+       fp("R.A. : long avant le nom ; dense, fatigué après le nom ; chaud et humide après le verbe devenir.")],
+      "Lecture analytique", "Texte de la S3"),
+    stepRow(["4. Analyse"],
+      [fp("Dégagez les règles : 1. POSITION — les adjectifs courts et fréquents (petit, grand, long, beau, jeune, vieux) se placent souvent avant le nom ; les autres (couleurs, formes, états) après. 2. FONCTION — épithète quand il est à côté du nom (la forêt dense) ; attribut quand un verbe comme être, sembler, devenir le relie au sujet (l'air devient chaud). 3. ACCORD — en genre et en nombre avec le nom : un pont étroit, une route étroite, des routes étroites.")],
+      [fp("Formulent les règles, donnent des exemples."),
+       fp("R.A. : épithète = collé au nom ; attribut = relié par être, sembler, devenir ; l'adjectif s'accorde toujours.")],
+      "Questions-réponses", "Tableau"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez les trois points : position, fonction, accord. Dictée d'ardoise rapide : une colline verte ; des villages anciens ; la mer semble calme.")],
+      [fp("Écrivent sur l'ardoise. Corrigent."),
+       fp("R.A. : verte, anciens, calme — accords corrects.")],
+      "Procédé La Martinière", "Ardoises"),
+    stepRow(["6. Entraînement"],
+      [fp("En binômes : enrichissez ces phrases avec deux adjectifs chacune, puis indiquez leur fonction : « Le train traverse la forêt. » / « Les voyageurs regardent les cascades. » / « La mer est … »")],
+      [fp("Enrichissent, analysent."),
+       pAns("R.A. : Le vieux train traverse la forêt dense (épithètes). La mer est bleue et calme (attributs).", ["épithète"], { size: SZ.FICHE })],
+      "Binômes", "Cahiers"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Souligne les adjectifs et donne leur fonction : « La longue route traverse des villages tranquilles. L'air devient frais. »"),
+       fp("2. Accorde : des collines (vert) ; une gare (ancien) ; des rizières (immense).")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. longue (épithète), tranquilles (épithète), frais (attribut) — 2. vertes, ancienne, immenses.", ["attribut"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(5, TOTAL, meta, rows, "s5");
+}
+function lessonS5() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 5", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LES ADJECTIFS QUALIFICATIFS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("1. Leur position :"),
+    p("• les adjectifs courts et fréquents se placent souvent avant le nom : un long voyage, une belle plage, un vieux train ;"),
+    p("• les autres se placent après : une route nationale, la forêt dense, un ciel gris.", { after: 60 }),
+    sub("2. Leur fonction :"),
+    pr([run("• épithète — ", { bold: true }), run("à côté du nom : "), run("la forêt dense, le voyageur fatigué ;", { bold: true, color: C.BLUE })]),
+    pr([run("• attribut du sujet — ", { bold: true }), run("relié au sujet par être, sembler, devenir, paraître, rester : "), run("l'air devient chaud et humide ; la mer est calme.", { bold: true, color: C.BLUE })], { after: 60 }),
+    sub("3. Leur accord — toujours en genre et en nombre avec le nom :"),
+    p("• un pont étroit → une route étroite → des routes étroites ;"),
+    p("• un village ancien → des villages anciens → des gares anciennes.", { after: 60 }),
+    sub("À quoi servent-ils ?"),
+    p("À préciser et enrichir la description : sans adjectifs, « le train traverse la forêt » ; avec eux, « le vieux train traverse la forêt dense et sombre ».", { after: 60 }),
+    pr([run("Attention : ", { bold: true, color: C.RED }),
+        run("l'attribut s'accorde avec le sujet, même s'il en est loin : la mer, au bout de la longue descente, est "),
+        run("calme", { bold: true, color: C.BLUE }), run(".")]),
+  ];
+}
+
+// ---------- S6 — Les marqueurs de lieu ----------
+function ficheS6() {
+  const meta = META("Fonctionnement de la langue : les marqueurs de lieu",
+    "À la fin de la séance, l'apprenant emploie les marqueurs de lieu pour situer les éléments d'une description et organiser un texte descriptif.",
+    "6 / 12", "une grande image de paysage, étiquettes de marqueurs");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Accorde : des plages (blanc) ; la forêt (profond). Donne la fonction : « Le ciel est clair. »")],
+      [fp("Répondent."),
+       fp("R.A. : blanches, profonde ; attribut du sujet.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Affichez une grande image de paysage (rizières, rivière, village, montagne). Demandez : où est le village ? où est la rivière ? Les réponses utilisent naturellement : devant, derrière, au milieu, à gauche…")],
+      [fp("Situent les éléments de l'image."),
+       fp("R.A. : le village est au pied de la montagne ; la rivière passe au milieu des rizières.")],
+      "Observation guidée", "Image de paysage"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Les marqueurs de lieu ». Objectif : situer avec précision, pour que le lecteur voie le paysage comme sur une photo.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Classement au tableau avec les étiquettes : dans, sous, sur, près de, loin de, derrière, au milieu de, à gauche, à droite, en haut, en bas, à côté de, au-dessus de, au-dessous de, ici, dehors, au-devant, proche. La classe les regroupe : position (dans, sur, sous…), proximité (près de, à côté de, proche), direction du regard (à gauche, en haut, au-devant…).")],
+      [fp("Classent les étiquettes."),
+       fp("R.A. : trois familles — position, proximité, direction du regard.")],
+      "Jeux", "Étiquettes"),
+    stepRow(["4. Analyse"],
+      [fp("Montrez l'ordre d'une description réussie : on promène le regard — d'abord au premier plan (devant, ici), puis au milieu (au milieu de, à droite…), enfin à l'arrière-plan (au loin, derrière, en haut). Faites compléter un court texte à trous sur l'image affichée.")],
+      [fp("Complètent le texte à trous."),
+       fp("R.A. : Au premier plan, la rivière ; au milieu des rizières, un chemin ; au loin, derrière le village, la montagne.")],
+      "Complétion", "Texte à trous"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez : les marqueurs de lieu situent chaque élément ; une bonne description suit l'ordre du regard : premier plan → milieu → arrière-plan.")],
+      [fp("Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Jeu du paysage dicté : un apprenant décrit une image simple avec des marqueurs de lieu ; son binôme dessine ce qu'il entend ; on compare le dessin et l'image.")],
+      [fp("Décrivent, dessinent, comparent."),
+       pAns("R.A. : Au milieu, une case ; à gauche de la case, un manguier ; au-dessus, le soleil.", ["à gauche"], { size: SZ.FICHE })],
+      "Jeux — binômes", "Images, ardoises"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Complète avec un marqueur de lieu : « … la colline, on aperçoit la mer. » / « Le marché se tient … l'église. »"),
+       fp("2. Range dans l'ordre du regard : au loin / au premier plan / au milieu."),
+       fp("3. Écris une phrase avec deux marqueurs de lieu.")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. En haut de / près de (ou à côté de) — 2. au premier plan, au milieu, au loin — 3. exemple : Sur la place, à côté du puits, les femmes vendent des nattes.", ["au premier plan"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(6, TOTAL, meta, rows, "s6");
+}
+function lessonS6() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 6", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LES MARQUEURS DE LIEU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Les trois familles :"),
+    pr([run("• la position — ", { bold: true }), run("dans, sur, sous, au milieu de, au-dessus de, au-dessous de, dehors ;", { bold: true, color: C.BLUE })]),
+    pr([run("• la proximité — ", { bold: true }), run("près de, loin de, à côté de, proche, ici ;", { bold: true, color: C.BLUE })]),
+    pr([run("• la direction du regard — ", { bold: true }), run("à gauche, à droite, en haut, en bas, derrière, au-devant.", { bold: true, color: C.BLUE })], { after: 60 }),
+    sub("L'ordre du regard dans une description :"),
+    p("1. le premier plan : Au premier plan, la rivière brille."),
+    p("2. le milieu : Au milieu des rizières, un chemin de terre serpente."),
+    p("3. l'arrière-plan : Au loin, derrière le village, se dresse la montagne.", { after: 60 }),
+    sub("Exemple complet :"),
+    p("« Sur le quai, les marchandes installent leurs paniers. À côté d'elles, les enfants jouent. Au-dessus de la gare, le ciel reste gris. Au loin, on aperçoit déjà la mer. »", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("un marqueur de lieu bien choisi remplace un long discours ; il place chaque chose sous les yeux du lecteur.")]),
+  ];
+}
+
+// ---------- S7 — Production orale ----------
+function ficheS7() {
+  const meta = META("Production orale : donner son avis sur une destination",
+    "À la fin de la séance, l'apprenant donne son avis et ses appréciations sur un voyage ou une destination et débat avec ses camarades.",
+    "7 / 12", "photographies de destinations, carte de Madagascar");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Range dans l'ordre du regard : au loin / au premier plan / au milieu — et donne un exemple de chaque famille de marqueurs.")],
+      [fp("Répondent."),
+       fp("R.A. : au premier plan, au milieu, au loin ; dans (position), près de (proximité), à gauche (direction).")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Écrivez deux affirmations opposées : « Le voyage en mer est le plus beau. » / « Rien ne vaut la montagne. » Qui est d'accord avec la première ? la seconde ? Mains levées : le débat est lancé.")],
+      [fp("Prennent position.")],
+      "Brainstorming", "Tableau"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Production orale : donner son avis sur une destination ». Objectif : exprimer son opinion clairement et la justifier — sans couper la parole.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Donnez un modèle : « À mon avis, le voyage nature est le plus intéressant, parce qu'on y apprend beaucoup. Personnellement, je rêve de voir les lémuriens d'Andasibe. » Faites repérer les expressions d'avis et la justification.")],
+      [fp("Repèrent les expressions."),
+       fp("R.A. : à mon avis, personnellement ; la justification commence par parce que.")],
+      "Écoute active", "----"),
+    stepRow(["4. Analyse"],
+      [fp("Constituez ensemble la boîte à outils de l'avis : pour ouvrir — à mon avis, selon moi, personnellement, je trouve que, je pense que ; pour justifier — parce que, car ; pour nuancer poliment — c'est vrai, mais… ; je comprends, pourtant… Rappelez les règles du débat : écouter, attendre son tour, respecter l'avis des autres.")],
+      [fp("Complètent la boîte à outils."),
+       fp("R.A. : à mon avis, selon moi, personnellement + parce que ; on écoute avant de répondre.")],
+      "Questions-réponses", "Tableau"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez : un avis complet = une expression d'avis + une opinion + une justification. La nuance polie permet de ne pas blesser son interlocuteur.")],
+      [fp("Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Débat par groupes de quatre : « Quelle destination pour le voyage de fin d'année de la classe ? » Chaque apprenant propose une destination avec son avis justifié ; le groupe vote, puis son rapporteur présente le choix à la classe.")],
+      [fp("Débattent, votent, présentent."),
+       pAns("R.A. : Selon moi, Antsirabe est la meilleure destination, car elle est proche et la ville est belle. — Je comprends, pourtant Andasibe nous montrerait les lémuriens.", ["Selon moi"], { size: SZ.FICHE })],
+      "Débat", "Photographies"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Cite trois expressions pour donner son avis."),
+       fp("2. Donne ton avis sur le voyage en taxi-brousse, avec une justification."),
+       fp("3. Nuance poliment cet avis : « La mer, c'est ennuyeux. »")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. à mon avis, selon moi, personnellement — 2. exemple : À mon avis, le taxi-brousse est pratique, car il s'arrête partout. — 3. C'est vrai que la mer est calme, mais on peut y nager et pêcher.", ["personnellement"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(7, TOTAL, meta, rows, "s7");
+}
+function lessonS7() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 7", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("DONNER SON AVIS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("La boîte à outils de l'avis :"),
+    pr([run("• pour ouvrir — ", { bold: true }), run("à mon avis, selon moi, personnellement, je trouve que, je pense que ;", { bold: true, color: C.BLUE })]),
+    pr([run("• pour justifier — ", { bold: true }), run("parce que, car ;", { bold: true, color: C.BLUE })]),
+    pr([run("• pour nuancer poliment — ", { bold: true }), run("c'est vrai, mais… / je comprends, pourtant…", { bold: true, color: C.BLUE })], { after: 60 }),
+    sub("Un avis complet :"),
+    p("expression d'avis + opinion + justification"),
+    p("« À mon avis, le voyage nature est le plus intéressant, parce qu'on y apprend ce qu'aucun livre ne montre. »", { after: 60 }),
+    sub("Les règles du débat :"),
+    p("• j'écoute celui qui parle, sans l'interrompre ;"),
+    p("• j'attends mon tour pour répondre ;"),
+    p("• je peux refuser une idée, jamais me moquer de la personne.", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("un avis sans justification est une humeur ; un avis justifié est un argument.")]),
+  ];
+}
+
+// ---------- S8 — Production écrite (1) ----------
+function ficheS8() {
+  const meta = META("Production écrite (1) : décrire un paysage — les idées et le plan",
+    "À la fin de la séance, l'apprenant choisit un paysage, rassemble ses idées et bâtit le plan de son texte descriptif.",
+    "8 / 12", "photographies de paysages, carte de Madagascar");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Donne un avis complet sur la destination de ton choix.")],
+      [fp("Répondent."),
+       fp("R.A. : Selon moi, Sainte-Marie est une destination magnifique, car on peut y voir les baleines.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route", "(pré-écriture)"],
+      [fp("Annoncez le projet d'écriture de l'unité : un dépliant touristique sur un paysage de notre région (ou une destination choisie). Aujourd'hui : les idées et le plan ; à la prochaine séance : la rédaction.")],
+      [fp("Écoutent, choisissent mentalement leur paysage.")],
+      "Travail collectif", "----"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Production écrite : décrire un paysage — chercher les idées et bâtir le plan ». Rappel du modèle : le dépliant du train de la falaise.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Reprenez le texte de la S3 et dégagez son plan : introduction (situer le train) → développement (la descente, puis les gares) → conclusion (impression + conseil). C'est le plan que chacun va remplir pour SON paysage.")],
+      [fp("Retrouvent le plan du modèle."),
+       fp("R.A. : situer → décrire dans l'ordre → conclure avec une impression et un conseil.")],
+      "Lecture analytique", "Texte de la S3"),
+    stepRow(["4. Analyse", "(recherche d'idées)"],
+      [fp("Chaque apprenant choisit son paysage et remplit sa fiche d'idées : OÙ se trouve-t-il ? QUE voit-on au premier plan, au milieu, au loin ? Quels DÉTAILS précis (couleurs, sons, odeurs) ? Quelle IMAGE (comparaison ou métaphore) ? Quel CONSEIL au visiteur ? Circulez et aidez.")],
+      [fp("Remplissent leur fiche d'idées.")],
+      "Travail individuel", "Fiche d'idées"),
+    stepRow(["5. Synthèse"],
+      [fp("Faites construire le plan en trois parties à partir de la fiche : I. je situe mon paysage — II. je le décris dans l'ordre du regard — III. je conclus (impression + conseil). Vérification : chaque partie a au moins deux idées.")],
+      [fp("Bâtissent leur plan.")],
+      "Travail individuel", "Cahiers"),
+    stepRow(["6. Entraînement"],
+      [fp("Échange de plans en binômes : chacun vérifie le plan de son camarade avec trois questions : le lieu est-il situé ? la description suit-elle l'ordre du regard ? y a-t-il une image prévue ?")],
+      [fp("Vérifient le plan du camarade."),
+       pAns("R.A. : Ton plan situe bien la cascade, mais il manque l'arrière-plan ; ajoute ce qu'on voit au loin.", ["l'ordre du regard"], { size: SZ.FICHE })],
+      "Binômes", "Cahiers"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("Recopie ton plan au propre : trois parties, deux idées par partie, une image prévue.")],
+      [fp("Recopient leur plan."),
+       pAns("R.A. : I. La cascade de la rivière Sahatandra, à une heure du village. II. Premier plan : l'eau blanche ; milieu : les rochers noirs ; au loin : la forêt. Image : un rideau d'argent. III. Conseil : y aller à la saison des pluies.", ["rideau d'argent"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(8, TOTAL, meta, rows, "s8");
+}
+function lessonS8() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 8", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("DÉCRIRE UN PAYSAGE : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Avant d'écrire, je rassemble mes idées :"),
+    p("• OÙ se trouve mon paysage ? (région, distance, accès)"),
+    p("• QUE voit-on — au premier plan, au milieu, au loin ?"),
+    p("• Quels détails précis ? (couleurs, sons, odeurs, chiffres)"),
+    p("• Quelle image pour le rendre vivant ? (une comparaison ou une métaphore)"),
+    p("• Quel conseil donner au visiteur ?", { after: 60 }),
+    sub("Puis je bâtis mon plan en trois parties :"),
+    p("I. L'introduction — je situe le paysage."),
+    p("II. Le développement — je décris dans l'ordre du regard : premier plan → milieu → arrière-plan."),
+    p("III. La conclusion — l'impression finale et un conseil.", { after: 60 }),
+    sub("Exemple de plan :"),
+    p("I. La cascade de la Sahatandra, à une heure de marche du village."),
+    p("II. L'eau blanche au premier plan ; les rochers noirs et luisants ; la forêt sombre au loin. Image : un rideau d'argent."),
+    p("III. Un lieu frais et paisible ; conseil : y aller à la saison des pluies.", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("un plan solide fait la moitié du travail ; sans plan, la description tourne en rond.")]),
+  ];
+}
+
+// ---------- S9 — Production écrite (2) ----------
+function ficheS9() {
+  const meta = META("Production écrite (2) : rédiger le dépliant, relire, améliorer",
+    "À la fin de la séance, l'apprenant rédige son texte descriptif en phrases correctes, le relit avec une grille et l'améliore.",
+    "9 / 12", "plans de la séance 8, grille de relecture au tableau");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Rappelle les trois parties du plan et l'ordre du regard.")],
+      [fp("Répondent."),
+       fp("R.A. : situer, décrire, conclure ; premier plan → milieu → arrière-plan.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route", "(rappel du projet)"],
+      [fp("Chacun relit son plan de la séance 8. Rappelez les outils disponibles : les adjectifs, les marqueurs de lieu, les expressions imagées, le vocabulaire du voyage.")],
+      [fp("Relisent leur plan.")],
+      "Travail individuel", "Cahiers"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Rédiger, relire, améliorer ». Consigne de rédaction : un texte de huit à douze lignes, trois parties visibles, au moins trois adjectifs accordés, trois marqueurs de lieu et une expression imagée.")],
+      [fp("Écoutent la consigne.")], "Travail collectif", "Tableau"),
+    stepRow(["3. Observation", "(premier jet)"],
+      [fp("Rédaction du premier jet. Circulez : aidez à transformer les idées du plan en phrases complètes ; encouragez sans corriger à la place de l'apprenant.")],
+      [fp("Rédigent leur premier jet.")],
+      "Rédaction individuelle", "Cahiers"),
+    stepRow(["4. Analyse", "(relecture guidée)"],
+      [fp("Affichez la grille de relecture : 1. mes trois parties sont-elles visibles ? 2. mes adjectifs sont-ils accordés ? 3. ai-je trois marqueurs de lieu ? 4. mon image est-elle là ? 5. majuscules et points ? Chacun relit son texte, puis celui de son binôme.")],
+      [fp("Relisent avec la grille, cochent."),
+       fp("R.A. : il manque un marqueur dans ma deuxième partie ; l'adjectif « verte » n'était pas accordé.")],
+      "Relecture guidée", "Grille au tableau"),
+    stepRow(["5. Synthèse"],
+      [fp("Mise au propre : chacun améliore deux points précis repérés par la grille, puis recopie son texte. Proposez un titre accrocheur de dépliant : « La cascade d'argent », « Trois jours sur la RN7 »…")],
+      [fp("Améliorent, recopient, choisissent un titre.")],
+      "Travail individuel", "Cahiers"),
+    stepRow(["6. Entraînement"],
+      [fp("Lecture de quelques productions à voix haute. La classe repère, pour chaque texte, un point réussi (une belle image, un bon détail) et une suggestion.")],
+      [fp("Lisent, écoutent, commentent."),
+       pAns("R.A. : La métaphore « un rideau d'argent » fait voir la cascade ; tu pourrais ajouter ce qu'on entend.", ["rideau d'argent"], { size: SZ.FICHE })],
+      "Travail collectif", "Productions"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("Remise des textes. Barème annoncé : structure en trois parties (2 pts), outils de la langue — adjectifs, marqueurs, image (2 pts), correction des phrases (1 pt).")],
+      [fp("Remettent leur texte.")],
+      "Travail individuel", "----"),
+  ];
+  return fiche(9, TOTAL, meta, rows, "s9");
+}
+function lessonS9() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 9", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Pour rédiger mon texte descriptif :"),
+    p("• je suis mon plan, partie par partie ;"),
+    p("• j'écris des phrases complètes : majuscule, verbe, point ;"),
+    p("• j'emploie mes outils : adjectifs accordés, marqueurs de lieu, une expression imagée ;"),
+    p("• je choisis un titre qui donne envie : « La cascade d'argent ».", { after: 60 }),
+    sub("Ma grille de relecture :"),
+    p("1. Mes trois parties sont-elles visibles ?"),
+    p("2. Mes adjectifs sont-ils accordés avec leur nom ?"),
+    p("3. Ai-je au moins trois marqueurs de lieu ?"),
+    p("4. Mon expression imagée est-elle là ?"),
+    p("5. Majuscules, points, virgules ?", { after: 60 }),
+    sub("Améliorer, c'est :"),
+    p("• remplacer un mot banal par un mot précis : « une belle vue » → « une vue immense sur les rizières » ;"),
+    p("• ajouter le détail qui manque : un son, une odeur, une couleur ;"),
+    p("• supprimer ce qui se répète.", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("un texte n'est jamais fini au premier jet ; c'est la relecture qui en fait un bon texte.")]),
+  ];
+}
+
+// ---------- S10 — Lecture-fluidité ----------
+function ficheS10() {
+  const meta = META("Lecture-fluidité : la ponctuation au service de la lecture",
+    "À la fin de la séance, l'apprenant lit à haute voix avec précision et un rythme adapté, en s'appuyant sur les signes de ponctuation.",
+    "10 / 12", "texte de la séance 3, textes des apprenants");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Cite les cinq points de la grille de relecture.")],
+      [fp("Répondent."),
+       fp("R.A. : les trois parties, les accords, les marqueurs, l'image, la ponctuation.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Lisez un passage du texte du train d'une voix plate, sans aucune pause. Puis relisez-le en respectant la ponctuation. Demandez : quelle lecture comprend-on le mieux ? pourquoi ?")],
+      [fp("Comparent les deux lectures."),
+       fp("R.A. : la seconde ; les pauses et la voix aident à comprendre.")],
+      "Modélisation de la lecture", "Texte de la S3"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Lecture-fluidité : la ponctuation au service de la lecture ». Objectif : lire avec précision, à un bon rythme, en se corrigeant rapidement.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Au tableau, le code des signes : le point — pause longue, la voix descend ; la virgule — pause courte ; le point-virgule — pause moyenne ; les deux-points — on annonce quelque chose ; le point d'interrogation — la voix monte ; le point d'exclamation — la voix s'anime. Repérez chaque signe dans le premier paragraphe du texte.")],
+      [fp("Repèrent les signes et leur valeur."),
+       fp("R.A. : après « monde », point : pause longue ; dans l'énumération des gares, des virgules : pauses courtes.")],
+      "Lecture analytique", "Tableau"),
+    stepRow(["4. Analyse", "(lecture modèle puis répétée)"],
+      [fp("Lecture modèle du paragraphe des gares. Puis lecture répétée en binômes : chacun lit deux fois le même paragraphe ; le camarade suit sur le texte et signale les mots déformés ou sautés — on se corrige et on recommence.")],
+      [fp("Lisent, se corrigent, relisent.")],
+      "Lecture répétée", "Texte de la S3"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez : bien lire, c'est respecter les signes, se corriger vite et sans s'arrêter, et garder un rythme régulier — ni course, ni sommeil.")],
+      [fp("Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Chaque apprenant lit à haute voix quelques lignes de SON dépliant (séance 9) devant son groupe, en respectant sa propre ponctuation. Le groupe écoute et relève une réussite.")],
+      [fp("Lisent leur production."),
+       pAns("R.A. : la voix est montée au point d'exclamation du titre ; les virgules de l'énumération étaient bien marquées.", ["point d'exclamation"], { size: SZ.FICHE })],
+      "Lecture à haute voix", "Productions"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("Lecture individuelle notée de six lignes du texte de la S3 : précision des mots, respect de la ponctuation, rythme.")],
+      [fp("Lisent individuellement."),
+       pAns("R.A. : lecture fluide, pauses aux points et aux virgules, autocorrections rapides.", ["pauses"], { size: SZ.FICHE })],
+      "Travail individuel", "Texte de la S3"),
+  ];
+  return fiche(10, TOTAL, meta, rows, "s10");
+}
+function lessonS10() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 10", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LIRE AVEC LA PONCTUATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Le code des signes :"),
+    mot("le point .", "pause longue ; la voix descend"),
+    mot("la virgule ,", "pause courte"),
+    mot("le point-virgule ;", "pause moyenne entre deux idées liées"),
+    mot("les deux-points :", "on annonce une explication ou une liste"),
+    mot("le point d'interrogation ?", "la voix monte"),
+    mot("le point d'exclamation !", "la voix s'anime"),
+    p("", { after: 60 }),
+    sub("Pour lire avec fluidité :"),
+    p("• je respecte les pauses des signes ;"),
+    p("• je me corrige vite quand je déforme un mot, sans m'arrêter longtemps ;"),
+    p("• je garde un rythme régulier : ni trop vite, ni trop lentement ;"),
+    p("• je m'entraîne en relisant plusieurs fois le même passage.", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("la ponctuation est la respiration du texte ; qui la respecte lit déjà bien.")]),
+  ];
+}
+
+// ---------- La grande leçon ----------
+function bigLesson() {
+  return [
+    unitBanner("LEÇON — UNITÉ 1 : LE VOYAGE (récapitulatif)", COLOR),
+    p("", { after: 80 }),
+    sub("1. Les mots de l'unité :"),
+    pr([run("Les types de voyage : ", { bold: true }), run("touristique, culturel, gastronomique, nature et biodiversité.", { bold: true, color: C.BLUE })], { after: 40 }),
+    pr([run("La carte : ", { bold: true }), run("l'itinéraire, l'étape, la légende, l'échelle, le trajet.", { bold: true, color: C.BLUE })], { after: 40 }),
+    pr([run("Les bienfaits : ", { bold: true }), run("le voyage repose, apprend, ouvre l'esprit, rend fier de son pays.", { bold: true, color: C.BLUE })], { after: 80 }),
+    sub("2. Le texte descriptif :"),
+    p("But : faire voir un lieu. Structure : introduction (situer) → développement (décrire dans l'ordre du regard) → conclusion (impression + conseil).", { after: 80 }),
+    sub("3. Les expressions imagées :"),
+    p("La comparaison (avec comme) : le train serpente comme un serpent de fer. La métaphore (sans mot outil) : la forêt est un mur vert. L'énumération : des bananes, du café, du poivre et des letchis.", { after: 80 }),
+    sub("4. Les adjectifs qualificatifs :"),
+    p("Position : les courts souvent avant le nom, les autres après. Fonction : épithète (à côté du nom) ou attribut (après être, sembler, devenir). Accord : toujours en genre et en nombre.", { after: 80 }),
+    sub("5. Les marqueurs de lieu :"),
+    p("Position (dans, sur, sous, au milieu de…), proximité (près de, à côté de…), direction (à gauche, en haut, au loin…). L'ordre du regard : premier plan → milieu → arrière-plan.", { after: 80 }),
+    sub("6. Donner son avis :"),
+    p("À mon avis, selon moi, personnellement + une justification (parce que, car) ; nuancer poliment : c'est vrai, mais…", { after: 80 }),
+  ];
+}
+
+// ---------- Exercices ----------
+function exercises() {
+  return [
+    p([run("EXERCICES", { bold: true, size: 30 })], { center: true, after: 140 }),
+    pr([run("Exercice 1 (4 points). ", { bold: true }), run("Associe chaque voyageur à son type de voyage : 1. Lova veut goûter les plats de chaque région. 2. Hery veut photographier les lémuriens. 3. Mme Fara veut visiter le Rova. 4. Naly veut se reposer à la plage.")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 2 (4 points). ", { bold: true }), run("Identifie le procédé (comparaison, métaphore ou énumération) : 1. « La pirogue glisse comme une feuille sur l'eau. » 2. « Le marché est une fourmilière. » 3. « On embarque des nattes, des paniers, du riz et des poules. » 4. Invente une métaphore sur la nuit.")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 3 (4 points). ", { bold: true }), run("Adjectifs : accorde puis donne la fonction. 1. des routes (poussiéreux) 2. la mer semble (calme) 3. une (grand) forêt 4. les gares (ancien).")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 4 (4 points). ", { bold: true }), run("Complète avec un marqueur de lieu : « … du village coule une rivière. … la rivière, un pont de bois. … du pont, on aperçoit les rizières. … , la montagne ferme le paysage. »")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 5 (4 points). ", { bold: true }), run("Rédige l'introduction et la conclusion (deux phrases chacune) d'un dépliant sur un lieu de ta région, avec une expression d'avis dans la conclusion.")]),
+    p("", { after: 140 }),
+    p([run("Total : 20 points", { bold: true })], { after: 160 }),
+    p([run("CORRIGÉ", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
+    pAns("Ex.1 : 1. gastronomique — 2. nature et biodiversité — 3. culturel — 4. touristique. (1 pt chacun)", ["gastronomique"]),
+    pAns("Ex.2 : 1. comparaison — 2. métaphore — 3. énumération — 4. exemple : la nuit est un grand manteau noir. (1 pt chacun)", ["métaphore"]),
+    pAns("Ex.3 : 1. poussiéreuses (épithète) — 2. calme (attribut) — 3. grande (épithète) — 4. anciennes (épithète). (1 pt chacun)", ["attribut"]),
+    pAns("Ex.4 : exemples : Près du village / Sur la rivière (ou Au-dessus de) / Du haut du pont (ou À côté) / Au loin. (1 pt chacun)", ["Au loin"]),
+    pAns("Ex.5 : introduction qui situe (1 pt) + phrases correctes (1 pt) ; conclusion avec impression (1 pt) + expression d'avis : à mon avis, selon moi… (1 pt).", ["expression d'avis"]),
+  ];
+}
+
+// ---------- Révision (S11) ----------
+function revision() {
+  const B2 = require("./builders");
+  return [
+    B2.bookmarkTitle("s11", "SÉANCE 11 / 72", { bold: true, size: 28, after: 60 }),
+    p([run("RÉVISION — UNITÉ 1 : LE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    p([run("Je réponds :", { bold: true })], { after: 80 }),
+    p("1. Cite les quatre types de voyage à Madagascar, avec un exemple chacun."),
+    pAns("R.A. : touristique (Nosy Be), culturel (le Rova), gastronomique (les plats des régions), nature et biodiversité (Andasibe).", ["biodiversité"]),
+    p("2. Donne trois bienfaits du voyage."),
+    pAns("R.A. : il repose, il apprend, il ouvre l'esprit, il rend fier de son pays.", ["ouvre l'esprit"]),
+    p("3. À quoi servent la légende et l'échelle d'une carte ?"),
+    pAns("R.A. : la légende explique les signes ; l'échelle permet de mesurer les distances.", ["l'échelle"]),
+    p("4. Donne les trois parties du texte descriptif et le rôle de chacune."),
+    pAns("R.A. : introduction (situer), développement (décrire dans l'ordre), conclusion (impression finale, conseil).", ["développement"]),
+    p("5. Quelle est la différence entre la comparaison et la métaphore ? Donne un exemple de chaque."),
+    pAns("R.A. : la comparaison emploie un mot outil (le lac brille comme un miroir) ; la métaphore non (le lac est un miroir).", ["mot outil"]),
+    p("6. Qu'est-ce qu'une énumération ? Donne un exemple."),
+    pAns("R.A. : une liste de mots séparés par des virgules, avec « et » avant le dernier : des nattes, des paniers et des chapeaux.", ["énumération"]),
+    p("7. Épithète ou attribut ? « la forêt dense » / « l'air devient frais »."),
+    pAns("R.A. : dense = épithète ; frais = attribut du sujet.", ["épithète"]),
+    p("8. Accorde : des collines (vert), une route (poussiéreux), des villages (ancien)."),
+    pAns("R.A. : vertes, poussiéreuse, anciens.", ["vertes"]),
+    p("9. Cite les trois familles de marqueurs de lieu, avec un exemple chacune."),
+    pAns("R.A. : position (dans, sur), proximité (près de, à côté de), direction du regard (à gauche, au loin).", ["proximité"]),
+    p("10. Donne un avis complet sur une destination de ton choix."),
+    pAns("R.A. : expression d'avis + opinion + justification : À mon avis, l'Isalo est le plus beau parc, car ses paysages sont uniques.", ["justification"]),
+  ];
+}
+
+// ---------- Test (S12) ----------
+function testPaper() {
+  const B2 = require("./builders");
+  return [
+    B2.bookmarkTitle("s12", "SÉANCE 12 / 72", { bold: true, size: 28, after: 60 }),
+    p([run("TEST — UNITÉ 1 : LE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 60 }),
+    pr([run("Durée : ………        ", { bold: true }), run("Total : 20 points", { bold: true })], { center: true, after: 160 }),
+    pr([run("Exercice 1 (4 points). ", { bold: true }), run("Complète avec : itinéraire — étape — légende — biodiversité. 1. Avant de partir, je trace mon … sur la carte. 2. Antsirabe sera notre première …. 3. La … explique les signes de la carte. 4. Les parcs nationaux protègent la … de l'île.")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 2 (4 points). ", { bold: true }), run("Identifie le procédé : 1. « Les rizières sont un escalier géant. » 2. « Le taxi-brousse ronfle comme un vieux zébu. » 3. « On charge des sacs, des cageots, des nattes et un vélo. » 4. Transforme la phrase 2 en métaphore.")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 3 (4 points). ", { bold: true }), run("Accorde l'adjectif et donne sa fonction : 1. des plages (blanc) 2. la route est (long) 3. une (vieux) gare 4. les paysages restent (vert).")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 4 (4 points). ", { bold: true }), run("Complète la description avec quatre marqueurs de lieu différents : « … , le marché s'anime. … des étals, les marchandes discutent. … du marché, l'église blanche. … , les collines bleues ferment l'horizon. »")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 5 (4 points). ", { bold: true }), run("Rédige un court texte descriptif (six à huit lignes) sur un lieu de ton choix : trois parties, deux adjectifs accordés, deux marqueurs de lieu, une expression imagée.")]),
+    p("", { after: 140 }),
+    p([run("CORRIGÉ", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
+    pAns("Ex.1 : itinéraire — étape — légende — biodiversité. (1 pt chacun)", ["itinéraire"]),
+    pAns("Ex.2 : 1. métaphore — 2. comparaison — 3. énumération — 4. le taxi-brousse est un vieux zébu qui ronfle. (1 pt chacun)", ["comparaison"]),
+    pAns("Ex.3 : 1. blanches (épithète) — 2. longue (attribut) — 3. vieille (épithète) — 4. verts (attribut). (1 pt chacun)", ["vieille"]),
+    pAns("Ex.4 : exemples : Au premier plan (ou Ici) / Derrière (ou À côté) / Près (ou À gauche) / Au loin. (1 pt chacun)", ["Au premier plan"]),
+    pAns("Ex.5 : structure en trois parties (1 pt), adjectifs accordés (1 pt), marqueurs de lieu (1 pt), expression imagée + correction des phrases (1 pt).", ["structure"]),
+  ];
+}
+
+module.exports = function unit1() {
+  return [
+    ...opening(), pageBreak(),
+    ...ficheS1(), pageBreak(), ...lessonS1(), pageBreak(),
+    ...ficheS2(), pageBreak(), ...lessonS2(), pageBreak(),
+    ...ficheS3(), pageBreak(), ...lessonS3(), pageBreak(),
+    ...ficheS4(), pageBreak(), ...lessonS4(), pageBreak(),
+    ...ficheS5(), pageBreak(), ...lessonS5(), pageBreak(),
+    ...ficheS6(), pageBreak(), ...lessonS6(), pageBreak(),
+    ...ficheS7(), pageBreak(), ...lessonS7(), pageBreak(),
+    ...ficheS8(), pageBreak(), ...lessonS8(), pageBreak(),
+    ...ficheS9(), pageBreak(), ...lessonS9(), pageBreak(),
+    ...ficheS10(), pageBreak(), ...lessonS10(), pageBreak(),
+    ...bigLesson(), pageBreak(),
+    ...exercises(), pageBreak(),
+    ...revision(), pageBreak(),
+    ...testPaper(), pageBreak(),
+    ...iCan("UNITÉ 1", COLOR, [
+      "Je comprends un documentaire ou un dépliant sur le voyage.",
+      "Je nomme les types de voyage à Madagascar et leurs bienfaits.",
+      "Je lis une carte : légende, échelle, itinéraire, étapes.",
+      "Je reconnais le texte descriptif : situer, décrire, conclure.",
+      "J'emploie la comparaison, la métaphore et l'énumération.",
+      "J'accorde les adjectifs et je connais leurs fonctions.",
+      "Je situe avec les marqueurs de lieu, dans l'ordre du regard.",
+      "Je donne mon avis et je le justifie : à mon avis, parce que…",
+      "Je lis à haute voix en respectant la ponctuation.",
+    ], "PROCHAINE ÉTAPE → UNITÉ 2 : LA VIE EN SOCIÉTÉ"),
+  ];
+};
+module.exports.COLOR = COLOR;
+module.exports.SHADE = SHADE;
