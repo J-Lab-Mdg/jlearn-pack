@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">La division administrative de Madagascar</text>
+  <defs><marker id="arrU1" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#37474F"/></marker></defs>
+  <rect x="60" y="100" width="280" height="90" rx="14" fill="#FFCDD2" stroke="#C00000" stroke-width="3"/>
+  <text x="200" y="132" text-anchor="middle" font-size="24" fill="#C00000" font-weight="bold">LA RÉGION</text>
+  <text x="200" y="162" text-anchor="middle" font-size="18" fill="#263238">24 régions administratives</text>
+  <rect x="390" y="100" width="240" height="90" rx="14" fill="#FFE0B2" stroke="#E65100" stroke-width="3"/>
+  <text x="510" y="132" text-anchor="middle" font-size="24" fill="#E65100" font-weight="bold">LE DISTRICT</text>
+  <text x="510" y="162" text-anchor="middle" font-size="18" fill="#263238">découpe la région</text>
+  <rect x="680" y="100" width="260" height="90" rx="14" fill="#C8E6C9" stroke="#1B5E20" stroke-width="3"/>
+  <text x="810" y="132" text-anchor="middle" font-size="24" fill="#1B5E20" font-weight="bold">LA COMMUNE</text>
+  <text x="810" y="162" text-anchor="middle" font-size="17" fill="#263238">communes urbaines et rurales</text>
+  <rect x="240" y="300" width="240" height="90" rx="14" fill="#BBDEFB" stroke="#01579B" stroke-width="3"/>
+  <text x="360" y="332" text-anchor="middle" font-size="23" fill="#01579B" font-weight="bold">LE FOKONTANY</text>
+  <text x="360" y="362" text-anchor="middle" font-size="17" fill="#263238">le village ou le quartier</text>
+  <rect x="560" y="300" width="200" height="90" rx="14" fill="#E1BEE7" stroke="#6A1B9A" stroke-width="3"/>
+  <text x="660" y="332" text-anchor="middle" font-size="23" fill="#6A1B9A" font-weight="bold">LE SECTEUR</text>
+  <text x="660" y="362" text-anchor="middle" font-size="17" fill="#263238">une part du fokontany</text>
+  <line x1="340" y1="145" x2="388" y2="145" stroke="#37474F" stroke-width="3" marker-end="url(#arrU1)"/>
+  <line x1="632" y1="145" x2="678" y2="145" stroke="#37474F" stroke-width="3" marker-end="url(#arrU1)"/>
+  <line x1="510" y1="192" x2="420" y2="298" stroke="#37474F" stroke-width="3" marker-end="url(#arrU1)"/>
+  <line x1="480" y1="345" x2="558" y2="345" stroke="#37474F" stroke-width="3" marker-end="url(#arrU1)"/>
+  <text x="500" y="450" text-anchor="middle" font-size="22" fill="#263238" font-weight="bold">Du plus grand au plus petit : la région, le district, la commune, le fokontany et le secteur.</text>
+  <text x="500" y="490" text-anchor="middle" font-size="19" fill="#546E7A">Exemple : Région Vakinankaratra → District d'Antsirabe → Commune d'Antsirabe → Fokontany Mahazoarivo.</text>
+  <text x="500" y="530" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Madagascar compte 24 régions administratives, dirigées chacune par un chef-lieu.</text>
+</svg>

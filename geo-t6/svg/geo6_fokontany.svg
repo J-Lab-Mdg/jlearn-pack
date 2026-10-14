@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Le fokontany, le quartier et le secteur</text>
+  <rect x="60" y="100" width="400" height="300" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="260" y="140" text-anchor="middle" font-size="22" fill="#1B5E20" font-weight="bold">EN MILIEU RURAL</text>
+  <text x="260" y="190" text-anchor="middle" font-size="20" fill="#263238">La commune regroupe</text>
+  <text x="260" y="220" text-anchor="middle" font-size="20" fill="#263238">plusieurs villages :</text>
+  <text x="260" y="275" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">chaque village est</text>
+  <text x="260" y="305" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">un fokontany.</text>
+  <circle cx="260" cy="350" r="8" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  <text x="260" y="380" text-anchor="middle" font-size="17" fill="#546E7A" font-style="italic">Le chef de fokontany note les naissances et les événements du village.</text>
+  <rect x="540" y="100" width="400" height="300" rx="18" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+  <text x="740" y="140" text-anchor="middle" font-size="22" fill="#01579B" font-weight="bold">EN MILIEU URBAIN</text>
+  <text x="740" y="190" text-anchor="middle" font-size="20" fill="#263238">La commune urbaine est</text>
+  <text x="740" y="220" text-anchor="middle" font-size="20" fill="#263238">découpée en quartiers :</text>
+  <text x="740" y="275" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">chaque quartier est</text>
+  <text x="740" y="305" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">un fokontany.</text>
+  <circle cx="740" cy="350" r="8" fill="#0277BD" stroke="#01579B" stroke-width="2"/>
+  <text x="740" y="380" text-anchor="middle" font-size="17" fill="#546E7A" font-style="italic">Un grand quartier peut être partagé en plusieurs secteurs.</text>
+  <text x="500" y="460" text-anchor="middle" font-size="22" fill="#263238" font-weight="bold">Quartier = fokontany ; secteur = une part d'un très grand quartier.</text>
+  <text x="500" y="590" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le fokontany est le plus petit découpage : c'est là que l'on recense les habitants.</text>
+</svg>

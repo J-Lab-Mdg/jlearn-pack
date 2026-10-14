@@ -862,6 +862,46 @@
       "id": "geo5_zones_climatiques2",
       "url": "/geo5_zones_climatiques2.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo6_districts_communes",
+      "url": "/geo6_districts_communes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_division_admin",
+      "url": "/geo6_division_admin.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_fokontany",
+      "url": "/geo6_fokontany.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_ma_region",
+      "url": "/geo6_ma_region.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_regions_centre",
+      "url": "/geo6_regions_centre.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_regions_est",
+      "url": "/geo6_regions_est.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_regions_nord_ouest",
+      "url": "/geo6_regions_nord_ouest.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_regions_sud",
+      "url": "/geo6_regions_sud.png",
+      "type": "image/png"
     }
   ]
 }

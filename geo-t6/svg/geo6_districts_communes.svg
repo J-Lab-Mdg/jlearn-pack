@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les districts et les communes d'une région</text>
+  <text x="500" y="92" text-anchor="middle" font-size="20" fill="#546E7A" font-style="italic">Exemple : la région Vakinankaratra compte plusieurs districts.</text>
+  
+    <rect x="70" y="120" width="200" height="64" rx="10" fill="#FFE0B2" stroke="#E65100" stroke-width="3"/>
+    <text x="170" y="158" text-anchor="middle" font-size="19" fill="#E65100" font-weight="bold">District d'Antsirabe</text>
+  
+    <rect x="400" y="120" width="200" height="64" rx="10" fill="#FFE0B2" stroke="#E65100" stroke-width="3"/>
+    <text x="500" y="158" text-anchor="middle" font-size="19" fill="#E65100" font-weight="bold">District de Betafo</text>
+  
+    <rect x="720" y="120" width="200" height="64" rx="10" fill="#FFE0B2" stroke="#E65100" stroke-width="3"/>
+    <text x="820" y="158" text-anchor="middle" font-size="19" fill="#E65100" font-weight="bold">District d'Ambatolampy</text>
+  <text x="500" y="228" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Chaque district regroupe plusieurs communes :</text>
+  
+    <rect x="60" y="260" width="120" height="52" rx="8" fill="#C8E6C9" stroke="#1B5E20" stroke-width="2.5"/>
+    <text x="120" y="291" text-anchor="middle" font-size="16" fill="#1B5E20" font-weight="bold">Antsirabe</text>
+  
+    <rect x="190" y="260" width="120" height="52" rx="8" fill="#C8E6C9" stroke="#1B5E20" stroke-width="2.5"/>
+    <text x="250" y="291" text-anchor="middle" font-size="16" fill="#1B5E20" font-weight="bold">Andranomanelatra</text>
+  
+    <rect x="320" y="260" width="120" height="52" rx="8" fill="#C8E6C9" stroke="#1B5E20" stroke-width="2.5"/>
+    <text x="380" y="291" text-anchor="middle" font-size="16" fill="#1B5E20" font-weight="bold">Sambaina</text>
+  
+    <rect x="450" y="260" width="120" height="52" rx="8" fill="#C8E6C9" stroke="#1B5E20" stroke-width="2.5"/>
+    <text x="510" y="291" text-anchor="middle" font-size="16" fill="#1B5E20" font-weight="bold">Betafo</text>
+  
+    <rect x="580" y="260" width="120" height="52" rx="8" fill="#C8E6C9" stroke="#1B5E20" stroke-width="2.5"/>
+    <text x="640" y="291" text-anchor="middle" font-size="16" fill="#1B5E20" font-weight="bold">Behenjy</text>
+  
+    <rect x="710" y="260" width="120" height="52" rx="8" fill="#C8E6C9" stroke="#1B5E20" stroke-width="2.5"/>
+    <text x="770" y="291" text-anchor="middle" font-size="16" fill="#1B5E20" font-weight="bold">Manandona</text>
+  
+    <rect x="840" y="260" width="120" height="52" rx="8" fill="#C8E6C9" stroke="#1B5E20" stroke-width="2.5"/>
+    <text x="900" y="291" text-anchor="middle" font-size="16" fill="#1B5E20" font-weight="bold">Antanifotsy</text>
+  <text x="500" y="370" text-anchor="middle" font-size="20" fill="#263238">La commune urbaine concentre les quartiers ; les communes rurales regroupent les villages.</text>
+  <rect x="120" y="420" width="760" height="120" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="500" y="460" text-anchor="middle" font-size="21" fill="#263238" font-weight="bold">À retenir : la région est découpée en districts,</text>
+  <text x="500" y="492" text-anchor="middle" font-size="21" fill="#263238" font-weight="bold">et chaque district regroupe plusieurs communes.</text>
+  <text x="500" y="590" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">De la région à la commune : chaque découpage sert à mieux organiser le territoire.</text>
+</svg>
