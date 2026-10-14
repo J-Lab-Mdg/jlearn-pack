@@ -33,7 +33,7 @@ Gabarit d'une unité (12 séances) : CO ×1 · Lexique ×1 · CE ×1 · Langue �
 ## Blocs de livraison
 - Bloc 0 ☑ : extraction PE + plan. — livré
 - Bloc 1 ☑ : infrastructure (builders, build.js, couverture, avant-propos, mode d'emploi, sommaire, tableau de bord) + Unité 1 Le voyage (S1–S12). — livré
-- Bloc 2 ☐ : Unité 2 La vie en société (S13–S24).
+- Bloc 2 ☑ : Unité 2 La vie en société (S13–S24). — livré
 - Bloc 3 ☐ : Unité 3 Les nouvelles technologies (S25–S36).
 - Bloc 4 ☐ : Unité 4 Les sports (S37–S48).
 - Bloc 5 ☐ : Unité 5 Les événements familiaux (S49–S60).
