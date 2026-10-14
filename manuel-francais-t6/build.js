@@ -78,6 +78,20 @@ function contents() {
     tocLink("s10", "    Séance 10 — Lecture-fluidité : la ponctuation"),
     tocLink("s11", "    Séance 11 — Révision"),
     tocLink("s12", "    Séance 12 — Test"),
+    p("", { after: 40 }),
+    tocLink("unit2", "UNITÉ 2 — LA VIE EN SOCIÉTÉ (Séances 13–24)", { bold: true, size: 26 }),
+    tocLink("s13", "    Séance 13 — Compréhension orale : compte-rendu « La journée d'entraide »"),
+    tocLink("s14", "    Séance 14 — Lexique : vivre ensemble — biens publics, patrimoine, savoir-vivre"),
+    tocLink("s15", "    Séance 15 — Compréhension écrite : « Le jardin public d'Antanimena »"),
+    tocLink("s16", "    Séance 16 — Les pronoms démonstratifs"),
+    tocLink("s17", "    Séance 17 — La phrase impérative, l'obligation et la nécessité"),
+    tocLink("s18", "    Séance 18 — Le présent, l'imparfait et les connecteurs logiques"),
+    tocLink("s19", "    Séance 19 — Production orale : le compte-rendu oral"),
+    tocLink("s20", "    Séance 20 — Production écrite (1) : l'affiche — les idées et le plan"),
+    tocLink("s21", "    Séance 21 — Production écrite (2) : rédiger, relire, améliorer"),
+    tocLink("s22", "    Séance 22 — Lecture-fluidité : lire un compte-rendu"),
+    tocLink("s23", "    Séance 23 — Révision"),
+    tocLink("s24", "    Séance 24 — Test"),
   ];
 }
 
@@ -123,6 +137,7 @@ async function main() {
         ...contents(), pageBreak(),
         ...dashboard(), pageBreak(),
         ...require("./unit1")(),
+        ...require("./unit2")(),
       ],
     }],
   });
