@@ -64,11 +64,36 @@ const S = [
     mat: 'Textes et articles, images, carte de l’Afrique et de l’océan Indien',
     revQ: 'Cite deux impacts du changement fréquent de dirigeants.',
     revRA: 'Par exemple la crise économique et la perte de confiance des bailleurs de fonds.',
-    situation: 'À l’aéroport d’Ivato, un avion décolle pour Addis-Abeba avec des diplomates ; un cargo quitte Toamasina pour Maurice chargé de letchis ; des médecins malgaches partent se former en Afrique du Sud. Trois départs, une même réalité : Madagascar n’est pas une île isolée — elle tisse des relations avec ses voisins. Apprenons à les classer.',
-    recit: [
-      'Madagascar parle avec ses voisins depuis bien longtemps. Dès ##1836##, la reine @@Ranavalona Iʳᵉ@@ envoyait des ambassadeurs à Londres et à Paris pour négocier d’égal à égal — la diplomatie malgache ne date pas d’hier ! Aujourd’hui, l’historien classe ces relations en deux formes. La **relation bilatérale** unit deux pays : un accord de pêche entre Madagascar et les Comores, un jumelage entre deux villes. La **relation multilatérale** unit plusieurs pays, souvent au sein d’une **organisation** : adhérer à la COI, c’est s’engager envers tous les membres à la fois.',
-      'Deuxième étiquette : le **domaine**. Les relations couvrent six champs. **Diplomatique** : ambassades, visites officielles, traités. **Militaire** : exercices communs, formation des soldats. **Économique** : investissements, projets de développement. **Commercial** : exportations de vanille, letchis et girofle vers les voisins, importations en retour. **Culturel** : festivals, échanges d’étudiants, langues partagées. **Technique et statutaire** : partage de savoir-faire, experts, règles communes au sein des organisations.',
-      'Une même relation peut mêler plusieurs domaines — un accord commercial se signe par la voie diplomatique ! L’historien décrit donc chaque relation avec ses deux étiquettes : sa **forme** (bilatérale ou multilatérale) et son ou ses **domaines**. Deux questions suffisent : combien de partenaires ? et de quoi parlent-ils ?'
+    situation: 'À l’aéroport d’Ivato, un avion décolle pour Addis-Abeba avec des diplomates ; un cargo quitte Toamasina pour Maurice chargé de letchis ; des médecins malgaches partent se former en Afrique du Sud. Trois départs, une même réalité : Madagascar n’est pas une île isolée — elle tisse des relations avec ses voisins.',
+    legende: 'Un avion de diplomates, un cargo de letchis, des médecins en formation : trois visages des relations extérieures.',
+    motsCles: ['relation bilatérale', 'relation multilatérale', 'organisation', 'diplomatique', 'militaire', 'économique', 'commercial', 'culturel', 'technique et statutaire'],
+    sections: [
+      {
+        titre: 'Relation bilatérale, relation multilatérale',
+        paras: [
+          'La relation bilatérale unit deux pays : un accord de pêche entre Madagascar et les Comores, un jumelage entre deux villes. La relation multilatérale unit plusieurs pays, souvent au sein d’une organisation : adhérer à la COI, c’est s’engager envers tous les membres à la fois.',
+          'Première question à poser : combien de partenaires ? Deux : bilatérale. Plusieurs : multilatérale.',
+        ],
+      },
+      {
+        titre: 'Les six domaines de relation',
+        paras: ['Deuxième étiquette : le domaine. Les relations couvrent six champs :'],
+        puces: [
+          'diplomatique : ambassades, visites officielles, traités ;',
+          'militaire : exercices communs, formation des soldats ;',
+          'économique : investissements, projets de développement ;',
+          'commercial : exportations de vanille, letchis et girofle, importations en retour ;',
+          'culturel : festivals, échanges d’étudiants, langues partagées ;',
+          'technique et statutaire : partage de savoir-faire, experts, règles communes des organisations.',
+        ],
+      },
+      {
+        titre: 'Décrire une relation : forme + domaine',
+        paras: [
+          'Une même relation peut mêler plusieurs domaines — un accord commercial se signe par la voie diplomatique ! L’historien décrit donc chaque relation avec ses deux étiquettes : sa forme (bilatérale ou multilatérale) et son ou ses domaines.',
+          'Cette tradition est ancienne : dès 1836, la reine Ranavalona Iʳᵉ envoyait des ambassadeurs à Londres et à Paris pour négocier d’égal à égal avec les grandes puissances.',
+        ],
+      },
     ],
     doc: {
       titre: 'Communiqué conjoint d’une visite d’État',
@@ -81,17 +106,12 @@ const S = [
         'Diplomatique (visite officielle, accord), économique et commercial (pêche, ligne maritime), technique et culturel (étudiants, experts, formation).',
         'Utile : il date et détaille les engagements ; précaution : un communiqué officiel montre toujours la relation sous son meilleur jour — à croiser avec d’autres sources.']
     },
-    reperes: {
-      dates: [['1836', 'Ranavalona Iʳᵉ envoie des ambassadeurs à Londres et Paris']],
-      persos: [['Ranavalona Iʳᵉ', 'reine qui pratiqua très tôt la diplomatie d’égal à égal']],
-      mots: [['Relation bilatérale', 'relation entre deux pays'],
-        ['Relation multilatérale', 'relation entre plusieurs pays, souvent dans une organisation'],
-        ['Les six domaines', 'diplomatique, militaire, économique, commercial, culturel, technique et statutaire']]
-    },
-    idee: {
-      faux: 'Une relation multilatérale est toujours plus importante qu’une bilatérale.',
-      vrai: 'Non : un grand accord bilatéral peut peser plus lourd qu’une adhésion peu active. La forme dit le NOMBRE de partenaires, pas la valeur de la relation.'
-    },
+    lexique: [
+      ['Relation bilatérale', 'relation entre deux pays'],
+      ['Relation multilatérale', 'relation entre plusieurs pays, souvent dans une organisation'],
+      ['Les six domaines', 'diplomatique, militaire, économique, commercial, culturel, technique et statutaire'],
+      ['Jumelage', 'lien d’amitié et d’échanges entre deux villes'],
+    ],
     synthese: 'bilatérale = deux pays ; multilatérale = plusieurs pays (organisation) ; six domaines : diplomatique, militaire, économique, commercial, culturel, technique et statutaire ; une relation se décrit par sa forme + son domaine.',
     saistu: 'La diplomatie malgache ne date pas d’hier : dès 1836, la reine Ranavalona Iʳᵉ envoya des ambassadeurs à Londres et à Paris pour négocier d’égal à égal avec les grandes puissances. Reçus par les rois, ces émissaires malgaches furent parmi les tout premiers diplomates de l’océan Indien !',
     exos: ['Bilatérale ou multilatérale ? a) Un accord commercial entre Madagascar et le Kenya. b) L’adhésion de Madagascar à la SADC. d) Un jumelage entre Antananarivo et une ville mauricienne. e) Une conférence des cinq membres de la COI.',
@@ -108,11 +128,35 @@ const S = [
     mat: 'Carte de l’Afrique, carte de l’océan Indien, textes et articles, drapeaux',
     revQ: 'Différence entre relation bilatérale et multilatérale ?',
     revRA: 'Bilatérale : deux pays ; multilatérale : plusieurs pays, souvent dans une organisation.',
-    situation: 'Sur la carte de l’Afrique, cinquante-cinq drapeaux entourent une même table : celle de l’Union Africaine. Et sur la carte de l’océan Indien, cinq îles sœurs forment leur propre cercle : la COI. Madagascar siège aux deux tables — l’une continentale, l’autre insulaire. Faisons connaissance avec ces deux maisons communes.',
-    recit: [
-      'En ##mai 1963##, à Addis-Abeba, trente chefs d’État africains signent la charte de l’**Organisation de l’Unité Africaine** (OUA). Nous sommes dans l’élan des indépendances : les jeunes États, dont Madagascar — **membre fondateur** —, veulent parler d’une seule voix, défendre leur souveraineté et achever la décolonisation du continent. En ##2002##, l’organisation se transforme en **Union Africaine** (UA) : nouvelles institutions, nouvelles ambitions — paix et sécurité, intégration économique, grands projets continentaux. Son siège : Addis-Abeba, en Éthiopie.',
-      'La **Commission de l’océan Indien** (COI), elle, joue la carte de la proximité. Créée en ##1982## par l’accord de Port-Louis, elle unit cinq membres insulaires : les Comores, Madagascar — qui adhère en ##1986## —, Maurice, les Seychelles et la Réunion, qui y représente la France. Ses chantiers collent aux réalités des îles : pêche et protection de l’océan, sécurité alimentaire, santé, climat et cyclones, circulation entre les îles. Son siège est à Ébène, à Maurice.',
-      'Deux échelles, deux rôles : l’UA donne à Madagascar une **voix continentale** ; la COI lui donne des **voisins solidaires**. La grande famille de toute l’Afrique d’un côté, le cercle rapproché des îles sœurs de l’autre — et notre pays siège aux deux tables.'
+    situation: 'Sur la carte de l’Afrique, cinquante-cinq drapeaux entourent une même table : celle de l’Union Africaine. Et sur la carte de l’océan Indien, cinq îles sœurs forment leur propre cercle : la COI. Madagascar siège aux deux tables — l’une continentale, l’autre insulaire.',
+    legende: 'Cinquante-cinq drapeaux autour d’une table, cinq îles sœurs autour d’une autre : Madagascar siège aux deux.',
+    motsCles: ['OUA', 'Union Africaine', '1963', '2002', 'membre fondateur', 'COI', '1982', '1986', 'Addis-Abeba', 'Port-Louis'],
+    sections: [
+      {
+        titre: 'De l’OUA à l’Union Africaine',
+        paras: [
+          'En mai 1963, à Addis-Abeba, trente chefs d’État africains signent la charte de l’Organisation de l’Unité Africaine (OUA). Dans l’élan des indépendances, les jeunes États — dont Madagascar, membre fondateur — veulent parler d’une seule voix, défendre leur souveraineté et achever la décolonisation du continent.',
+          'En 2002, l’organisation devient l’Union Africaine (UA) : nouvelles institutions, nouvelles ambitions — paix et sécurité, intégration économique, grands projets continentaux. Son siège : Addis-Abeba, en Éthiopie.',
+        ],
+      },
+      {
+        titre: 'La Commission de l’océan Indien',
+        paras: ['La COI joue la carte de la proximité. Créée en 1982 par l’accord de Port-Louis, elle unit cinq membres insulaires :'],
+        puces: [
+          'les Comores ;',
+          'Madagascar — qui adhère en 1986 ;',
+          'Maurice ;',
+          'les Seychelles ;',
+          'la Réunion, qui y représente la France.',
+        ],
+      },
+      {
+        titre: 'Deux échelles, deux rôles',
+        paras: [
+          'Les chantiers de la COI collent aux réalités des îles : pêche et protection de l’océan, sécurité alimentaire, santé, climat et cyclones. Son siège est à Ébène, à Maurice.',
+          'L’UA donne à Madagascar une voix continentale ; la COI lui donne des voisins solidaires. La grande famille de toute l’Afrique d’un côté, le cercle rapproché des îles sœurs de l’autre.',
+        ],
+      },
     ],
     doc: {
       titre: 'La naissance de l’unité africaine',
@@ -125,19 +169,12 @@ const S = [
         'Renforcer l’unité et la solidarité des États africains ; défendre leur souveraineté et leur intégrité territoriale ; éliminer le colonialisme du continent.',
         'Parce que c’est l’élan des indépendances : les jeunes États, à peine libres, veulent s’unir pour rester libres et aider les peuples encore colonisés.']
     },
-    reperes: {
-      dates: [['25 mai 1963', 'charte d’Addis-Abeba : naissance de l’OUA, Madagascar fondateur'],
-        ['1982', 'accord de Port-Louis : création de la COI'],
-        ['1986', 'Madagascar adhère à la COI'],
-        ['2002', 'l’OUA devient l’Union Africaine']],
-      mots: [['OUA / UA', 'organisation de tous les États africains — unité et paix'],
-        ['COI', 'Commission de l’océan Indien : les cinq îles sœurs'],
-        ['Membre fondateur', 'État présent dès la création d’une organisation']]
-    },
-    idee: {
-      faux: 'Madagascar a adhéré à l’Union Africaine en 2002.',
-      vrai: 'Non : en 2002, c’est l’ORGANISATION qui change de nom (l’OUA devient l’UA). Madagascar en est membre depuis la fondation de l’OUA en 1963 — et même membre fondateur.'
-    },
+    lexique: [
+      ['OUA / UA', 'organisation de tous les États africains — unité et paix'],
+      ['COI', 'Commission de l’océan Indien : les cinq îles sœurs'],
+      ['Membre fondateur', 'État présent dès la création d’une organisation'],
+      ['Souveraineté', 'droit d’un État de se gouverner lui-même'],
+    ],
     synthese: 'OUA 1963 (Madagascar fondateur) → UA 2002 : tous les États africains, unité et paix ; COI 1982 Port-Louis : cinq membres insulaires, Madagascar depuis 1986 ; UA = voix continentale, COI = solidarité des îles.',
     saistu: 'La COI est la seule organisation régionale d’Afrique dont tous les membres sont des îles ! Et son grand chantier s’appelle « l’indianocéanie » : faire des îles de l’océan Indien une famille unie par l’histoire, les langues et l’océan — un mot nouveau pour une très vieille parenté.',
     exos: ['Fiches d’identité. a) Que signifie OUA, et en quelle année naît-elle ? b) Quand devient-elle l’Union Africaine ? d) Où et quand la COI est-elle créée ? e) Cite les cinq membres de la COI.',
@@ -154,11 +191,30 @@ const S = [
     mat: 'Carte de l’Afrique orientale et australe, textes et articles, étiquettes de produits',
     revQ: 'En quelle année Madagascar devient-il membre fondateur de l’OUA ? Membre de la COI ?',
     revRA: '1963 ; 1986.',
-    situation: 'Regarde l’étiquette d’un paquet de sucre ou d’huile au marché : il vient parfois d’Égypte, du Kenya ou d’Afrique du Sud — souvent sans payer de lourdes taxes de douane. Pourquoi ? Parce que Madagascar appartient à de grands marchés communs : le COMESA et la SADC. Deux sigles qui changent le prix de ton panier !',
-    recit: [
-      'Le **COMESA** d’abord — //Common Market for Eastern and Southern Africa//, le marché commun de l’Afrique orientale et australe. Né en ##1994##, il rassemble une vingtaine de pays, de l’Égypte au nord jusqu’à l’Eswatini au sud : un marché de centaines de millions d’habitants, avec son siège à Lusaka, en Zambie. Son outil principal : le **libre-échange** — réduire ou supprimer les **droits de douane** entre membres, pour que les produits circulent et que les prix baissent. Pour Madagascar : vendre vanille, girofle et textiles à un immense marché, et importer moins cher.',
-      'La **SADC** ensuite — //Southern African Development Community//, la communauté de développement de l’Afrique australe. Héritière d’une coopération née en 1980, elle devient communauté de développement en ##1992## autour de l’Afrique australe — Afrique du Sud, Mozambique, Tanzanie, Zambie… Madagascar la rejoint en ##2005##. Son ambition dépasse le commerce : infrastructures, énergie, paix et sécurité régionale, libre circulation. Son siège : Gaborone, au Botswana.',
-      'Sur la carte, les deux ensembles se chevauchent — plusieurs pays, dont le nôtre, appartiennent aux deux. Rien d’étonnant : chaque organisation sert un but différent. Le COMESA ouvre les frontières commerciales ; la SADC construit ensemble. Deux clés pour une même porte : le développement de la région.'
+    situation: 'Regarde l’étiquette d’un paquet de sucre ou d’huile au marché : il vient parfois d’Égypte, du Kenya ou d’Afrique du Sud — souvent sans payer de lourdes taxes de douane. Pourquoi ? Parce que Madagascar appartient à de grands marchés communs : le COMESA et la SADC.',
+    legende: 'Sucre d’Égypte, huile du Kenya… souvent sans lourdes taxes : le secret s’appelle COMESA et SADC.',
+    motsCles: ['COMESA', 'SADC', 'marché commun', 'libre-échange', 'droits de douane', '1994', '1992', '2005', 'Lusaka', 'Gaborone'],
+    sections: [
+      {
+        titre: 'Le COMESA : le grand marché commun',
+        paras: [
+          'Le COMESA — Common Market for Eastern and Southern Africa — est le marché commun de l’Afrique orientale et australe. Né en 1994, il rassemble une vingtaine de pays, de l’Égypte au nord jusqu’à l’Eswatini au sud. Son siège : Lusaka, en Zambie.',
+          'Son outil principal : le libre-échange — réduire ou supprimer les droits de douane entre membres, pour que les produits circulent et que les prix baissent. Pour Madagascar : vendre vanille, girofle et textiles à un immense marché, et importer moins cher.',
+        ],
+      },
+      {
+        titre: 'La SADC : la communauté de développement',
+        paras: [
+          'La SADC — Southern African Development Community — est la communauté de développement de l’Afrique australe. Héritière d’une coopération née en 1980, elle devient communauté de développement en 1992 autour de l’Afrique du Sud, du Mozambique, de la Tanzanie, de la Zambie… Madagascar la rejoint en 2005. Son siège : Gaborone, au Botswana.',
+          'Son ambition dépasse le commerce : infrastructures, énergie, paix et sécurité régionale, libre circulation.',
+        ],
+      },
+      {
+        titre: 'Un pays, plusieurs organisations',
+        paras: [
+          'Sur la carte, les deux ensembles se chevauchent — plusieurs pays, dont le nôtre, appartiennent aux deux. Rien d’étonnant : chaque organisation sert un but différent. Le COMESA ouvre les frontières commerciales ; la SADC construit ensemble.',
+        ],
+      },
     ],
     doc: {
       titre: 'Le pari du marché commun',
@@ -171,19 +227,12 @@ const S = [
         'Un marché commun complet où biens, services, capitaux et personnes circulent librement.',
         'Par exemple, un conteneur de textiles ou de girofle malgache entre au Kenya avec des taxes réduites : il arrive moins cher et se vend mieux.']
     },
-    reperes: {
-      dates: [['1992', 'naissance de la SADC (communauté de développement)'],
-        ['1994', 'naissance du COMESA (marché commun)'],
-        ['2005', 'Madagascar adhère à la SADC']],
-      mots: [['COMESA', 'marché commun de l’Afrique orientale et australe — siège à Lusaka'],
-        ['SADC', 'communauté de développement de l’Afrique australe — siège à Gaborone'],
-        ['Libre-échange', 'commerce sans lourdes taxes de douane entre membres'],
-        ['Droits de douane', 'taxes payées par une marchandise qui franchit une frontière']]
-    },
-    idee: {
-      faux: 'COMESA et SADC, c’est la même chose sous deux sigles.',
-      vrai: 'Non : COMESA = marché COMmun (commerce, libre-échange) ; SADC = communauté de DÉVELOPPEMENT (projets, intégration, paix). Le premier ouvre les frontières commerciales, la seconde construit ensemble — et un pays peut appartenir aux deux.'
-    },
+    lexique: [
+      ['COMESA', 'marché commun de l’Afrique orientale et australe — siège à Lusaka'],
+      ['SADC', 'communauté de développement de l’Afrique australe — siège à Gaborone'],
+      ['Libre-échange', 'commerce sans lourdes taxes de douane entre membres'],
+      ['Droits de douane', 'taxes payées par une marchandise qui franchit une frontière'],
+    ],
     synthese: 'COMESA : marché commun Afrique orientale et australe, 1994, libre-échange ; SADC : communauté de développement d’Afrique australe, 1992, Madagascar membre en 2005 ; un pays peut appartenir aux deux.',
     saistu: 'Le COMESA s’étend sur un territoire immense : du Caire, en Égypte, jusqu’aux rives de l’océan Indien — plus de 600 millions d’habitants ! C’est l’un des plus grands espaces de libre-échange du monde… et tes letchis de Toamasina peuvent y voyager presque sans douane.',
     exos: ['Fiches d’identité. a) Développe le sigle COMESA. b) Développe le sigle SADC. d) Donne l’année de création de chacune. e) Quelle est la mission principale de chacune ?',
@@ -200,11 +249,34 @@ const S = [
     mat: 'Textes et articles sur les retombées de l’adhésion, tableau, carte',
     revQ: 'COMESA et SADC : mission de chacune et année d’adhésion de Madagascar à la SADC ?',
     revRA: 'COMESA : libre-échange ; SADC : développement — adhésion malgache en 2005.',
-    situation: 'Que rapporte vraiment une adhésion ? De beaux drapeaux et des sommets ? Bien plus : quand une crise politique éclate, des médiateurs africains accourent ; quand un cyclone frappe, les voisins aident ; quand un commerçant exporte, les taxes tombent. Mesurons, domaine par domaine, ce que les organisations africaines apportent à la Grande Île.',
-    recit: [
-      'Plan **politique** d’abord : lors des crises malgaches, l’UA et la SADC ont envoyé **médiateurs** et missions de dialogue — et c’est par une feuille de route régionale que la sortie de la crise de ##2009## s’est organisée. L’adhésion offre un cadre de médiation qu’un pays isolé n’aurait pas. Plan **économique** : le libre-échange du COMESA et de la SADC ouvre les marchés, attire les **investissements** et stimule la **concurrence** — les entreprises doivent s’améliorer, les consommateurs y gagnent. Plan **socio-culturel** : programmes communs de lutte contre la pauvreté, santé, éducation ; et la **libre circulation** des hommes, des idées et des cultures — étudiants en mobilité, artistes en tournée, experts partagés.',
-      'Mais l’historien garde son **esprit critique** : l’adhésion est un contrat. Elle impose des règles, des cotisations, de la concurrence pour nos entreprises — et peut se suspendre. Après la crise de ##2009##, Madagascar fut écarté des instances de l’UA et de la SADC pendant près de cinq ans, jusqu’au retour à l’ordre constitutionnel en ##2014##. La preuve par l’histoire récente : la place d’un pays dans les organisations n’est jamais acquise.',
-      'Adhérer donne donc des **droits** ET des **devoirs** ; en tirer profit demande une stratégie — comme le programme t’invite à le faire en élaborant un mini-projet d’avantages commerciaux. Des alliés dans la tempête politique, des clients pour l’économie, des frères de culture pour avancer : voilà ce que pèse une adhésion bien utilisée.'
+    situation: 'Que rapporte vraiment une adhésion ? De beaux drapeaux et des sommets ? Bien plus : quand une crise politique éclate, des médiateurs africains accourent ; quand un cyclone frappe, les voisins aident ; quand un commerçant exporte, les taxes tombent. Mesurons, domaine par domaine.',
+    legende: 'Médiateurs en temps de crise, voisins après le cyclone, taxes réduites pour l’exportateur : que pèse une adhésion ?',
+    motsCles: ['impact politique', 'impact économique', 'impact socio-culturel', 'médiation', 'libre-échange', 'concurrence', 'libre circulation', 'droits', 'devoirs', 'suspension'],
+    sections: [
+      {
+        titre: 'L’impact politique : des alliés dans la tempête',
+        paras: [
+          'Lors des crises malgaches, l’UA et la SADC ont envoyé médiateurs et missions de dialogue — et c’est par une feuille de route régionale que la sortie de la crise de 2009 s’est organisée. L’adhésion offre un cadre de médiation qu’un pays isolé n’aurait pas.',
+        ],
+      },
+      {
+        titre: 'L’impact économique : marchés ouverts, concurrence stimulée',
+        paras: [
+          'Le libre-échange du COMESA et de la SADC ouvre les marchés, attire les investissements et stimule la concurrence — les entreprises doivent s’améliorer, les consommateurs y gagnent.',
+        ],
+      },
+      {
+        titre: 'L’impact socio-culturel : hommes, idées et cultures',
+        paras: [
+          'Programmes communs de lutte contre la pauvreté, santé, éducation ; et la libre circulation des hommes, des idées et des cultures — étudiants en mobilité, artistes en tournée, experts partagés.',
+        ],
+      },
+      {
+        titre: 'Des droits et des devoirs',
+        paras: [
+          'L’adhésion est un contrat : elle impose des règles, des cotisations, de la concurrence — et peut se suspendre. Après la crise de 2009, Madagascar fut écarté des instances de l’UA et de la SADC pendant près de cinq ans, jusqu’au retour à l’ordre constitutionnel en 2014. La place d’un pays dans les organisations n’est jamais acquise : elle se mérite et s’entretient.',
+        ],
+      },
     ],
     doc: {
       titre: 'La région hausse le ton',
@@ -217,17 +289,12 @@ const S = [
         'Le rétablissement de l’ordre constitutionnel, par le dialogue et des élections libres.',
         'Qu’une adhésion impose des devoirs — respecter l’ordre constitutionnel — et que la place d’un membre peut être suspendue s’il ne les respecte pas.']
     },
-    reperes: {
-      dates: [['2009-2014', 'suspension de Madagascar des instances de l’UA et de la SADC']],
-      mots: [['Impact politique', 'médiation et gestion des crises par la région'],
-        ['Impact économique', 'libre-échange, concurrence, investissements'],
-        ['Impact socio-culturel', 'lutte contre la pauvreté, libre circulation des hommes, des idées et des cultures'],
-        ['Suspension', 'mise à l’écart temporaire d’un membre qui viole les règles communes']]
-    },
-    idee: {
-      faux: 'Adhérer à une organisation n’apporte que des avantages.',
-      vrai: 'Non : l’adhésion impose aussi des règles communes, des cotisations, de la concurrence pour nos entreprises — et peut être suspendue en cas de crise grave. Une analyse honnête pèse toujours les deux plateaux de la balance.'
-    },
+    lexique: [
+      ['Impact politique', 'médiation et gestion des crises par la région'],
+      ['Impact économique', 'libre-échange, concurrence, investissements'],
+      ['Impact socio-culturel', 'lutte contre la pauvreté, libre circulation des hommes, des idées et des cultures'],
+      ['Suspension', 'mise à l’écart temporaire d’un membre qui viole les règles communes'],
+    ],
     synthese: 'impacts : politique (gestion des crises, médiation), économique (libre-échange, concurrence, investissements), socio-culturel (lutte contre la pauvreté, libre circulation des hommes, des idées et des cultures) ; l’adhésion = droits et devoirs.',
     saistu: 'Après la crise de 2009, Madagascar a été suspendu des instances de l’Union Africaine et de la SADC pendant près de cinq ans, jusqu’au retour à l’ordre constitutionnel en 2014. La preuve par l’histoire récente : la place d’un pays dans les organisations n’est jamais acquise — elle se mérite et s’entretient.',
     exos: ['Classe chaque impact. a) Des médiateurs régionaux accompagnent un dialogue politique. b) Les droits de douane baissent pour les exportateurs. d) Des étudiants malgaches étudient chez les voisins grâce à un programme commun. e) La concurrence pousse une entreprise locale à moderniser son atelier.',

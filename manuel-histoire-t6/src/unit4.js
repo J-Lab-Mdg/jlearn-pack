@@ -61,11 +61,43 @@ const S = [
     mat: 'Photographies de patrimoines, grandes feuilles d’inventaire, tableau',
     revQ: 'Cite un impact politique et un impact économique de l’adhésion aux organisations africaines.',
     revRA: 'Politique : médiation lors des crises ; économique : libre-échange et concurrence.',
-    situation: 'Sur la colline, le palais de pierre domine la ville depuis plus d’un siècle. Sur l’esplanade, une troupe de hira gasy fait vibrer le public comme au temps des rois. Le palais, on peut le toucher ; le chant, non — et pourtant tous deux sont des trésors hérités des ancêtres. Comment la science les classe-t-elle ? Bienvenue dans le monde du patrimoine.',
-    recit: [
-      'Le mot **patrimoine** vient de l’héritage du père — mais ici, l’héritier est tout un peuple : le patrimoine est l’ensemble des biens hérités du passé que la nation doit transmettre aux générations futures. On le classe en deux grandes familles. Le **patrimoine matériel** regroupe ce que l’on peut toucher : le Rova d’Antananarivo, les tombeaux ornés, les églises et temples anciens, la place du 13-Mai, les statues et portails de pierre des hautes terres — chaque région possède les siens, du Nord au Sud.',
-      'Le **patrimoine immatériel**, lui, se transmet sans forme physique : le **kabary**, art du discours ; le **hira gasy**, théâtre chanté des campagnes ; les rituels du **famadihana** ; les savoir-faire du tissage de la soie ou du travail du zébu ; les contes et les proverbes. La frontière est simple à tester : si l’objet disparaissait, resterait-il quelque chose à transmettre ? Un palais brûlé se perd ; un chant, lui, vit tant que quelqu’un le chante — c’est pourquoi l’immatériel se protège en le **pratiquant**.',
-      'Le monde entier veille sur nos trésors : en ##2001##, la colline royale d’@@Ambohimanga@@ est inscrite au patrimoine mondial de l’UNESCO, et le savoir-faire du bois des @@Zafimaniry@@ figure sur la liste du patrimoine immatériel de l’humanité. Première mission de l’historien local que tu es : **inventorier** — recenser les patrimoines de ta région, les classer en deux colonnes, les photographier ou les décrire. Un trésor inconnu est un trésor déjà à moitié perdu.'
+    situation: 'Sur la colline, le palais de pierre domine la ville depuis plus d’un siècle. Sur l’esplanade, une troupe de hira gasy fait vibrer le public comme au temps des rois. Le palais, on peut le toucher ; le chant, non — et pourtant tous deux sont des trésors hérités des ancêtres.',
+    legende: 'Le palais de pierre se touche ; le chant du hira gasy, non — et pourtant tous deux sont des trésors hérités.',
+    motsCles: ['patrimoine', 'patrimoine matériel', 'patrimoine immatériel', 'kabary', 'hira gasy', 'famadihana', 'inventorier', 'UNESCO', 'transmettre'],
+    sections: [
+      {
+        titre: 'Qu’est-ce que le patrimoine ?',
+        paras: [
+          'Le mot patrimoine vient de l’héritage du père — mais ici, l’héritier est tout un peuple : le patrimoine est l’ensemble des biens hérités du passé que la nation doit transmettre aux générations futures.',
+        ],
+      },
+      {
+        titre: 'Le patrimoine matériel',
+        paras: ['Il regroupe ce que l’on peut toucher :'],
+        puces: [
+          'les édifices, tombeaux et palais royaux (le Rova d’Antananarivo, les tombeaux ornés) ;',
+          'les temples et églises anciennes ;',
+          'les places historiques et commémoratives (la place du 13-Mai) ;',
+          'les statues et portails de pierre des hautes terres.',
+        ],
+      },
+      {
+        titre: 'Le patrimoine immatériel',
+        paras: ['Il se transmet sans forme physique :'],
+        puces: [
+          'le kabary, art du discours ;',
+          'le hira gasy, théâtre chanté des campagnes ;',
+          'les rituels du famadihana ;',
+          'les savoir-faire (tissage de la soie, travail du zébu), les contes et les proverbes.',
+        ],
+      },
+      {
+        titre: 'Inventorier : la première mission',
+        paras: [
+          'La frontière est simple à tester : si l’objet disparaissait, resterait-il quelque chose à transmettre ? Un palais brûlé se perd ; un chant vit tant que quelqu’un le chante — l’immatériel se protège en le pratiquant.',
+          'Première mission de l’historien local que tu es : inventorier — recenser les patrimoines de ta région, les classer en deux colonnes, les photographier ou les décrire. Un trésor inconnu est un trésor déjà à moitié perdu.',
+        ],
+      },
     ],
     doc: {
       titre: 'Ambohimanga, colline sacrée de l’humanité',
@@ -78,17 +110,12 @@ const S = [
         '« Elle reste un lieu de culte vivant où affluent les pèlerins » : les rituels et le sentiment d’identité sont immatériels.',
         'Parce que le monde entier s’engage alors à veiller sur lui : notoriété, protection renforcée, visiteurs — et fierté nationale.']
     },
-    reperes: {
-      dates: [['2001', 'Ambohimanga inscrite au patrimoine mondial de l’UNESCO']],
-      mots: [['Patrimoine', 'biens hérités du passé, à transmettre aux générations futures'],
-        ['Patrimoine matériel', 'édifices, tombeaux, palais, temples, places, statues'],
-        ['Patrimoine immatériel', 'traditions, arts, rituels, pratiques sociales'],
-        ['Inventorier', 'recenser, décrire et classer les biens d’une région']]
-    },
-    idee: {
-      faux: 'Seuls les monuments anciens sont du patrimoine.',
-      vrai: 'Non : une pratique vivante d’aujourd’hui — un savoir-faire de vannerie, une danse régionale — est un patrimoine immatériel à part entière, même sans pierre ni musée.'
-    },
+    lexique: [
+      ['Patrimoine', 'biens hérités du passé, à transmettre aux générations futures'],
+      ['Patrimoine matériel', 'édifices, tombeaux, palais, temples, places, statues'],
+      ['Patrimoine immatériel', 'traditions, arts, rituels, pratiques sociales'],
+      ['Inventorier', 'recenser, décrire et classer les biens d’une région'],
+    ],
     synthese: 'patrimoine = biens hérités à transmettre ; matériel : édifices, tombeaux, palais, temples, places, statues ; immatériel : traditions, arts, rituels, pratiques sociales ; l’immatériel vit par la pratique ; première mission : inventorier.',
     saistu: 'Trois trésors malgaches sont inscrits au patrimoine mondial de l’UNESCO : la colline royale d’Ambohimanga, les forêts humides de l’Atsinanana et le tsingy de Bemaraha. Et le savoir-faire du bois des Zafimaniry figure sur la liste du patrimoine culturel immatériel de l’humanité — le monde entier veille désormais sur nos héritages !',
     exos: ['Matériel ou immatériel ? a) Un tombeau orné des hautes terres. b) L’art du kabary. d) Une statue commémorative. e) Le savoir-faire du tissage de la soie.',
@@ -105,34 +132,51 @@ const S = [
     mat: 'Photographies de la faune et de la flore, carte de Madagascar, documents',
     revQ: 'Donne la différence entre patrimoine matériel et immatériel, avec un exemple de chaque.',
     revRA: 'Matériel : se touche (palais) ; immatériel : se transmet par la pratique (kabary).',
-    situation: 'Un baobab de huit cents ans, un lémurien qui n’existe nulle part ailleurs, un squelette d’hippopotame nain enfoui depuis des millénaires, une rivière qui fait tourner une turbine : la Grande Île est un coffre aux trésors naturels. Mais un trésor, ça s’inventorie — sinon, comment savoir ce que l’on risque de perdre ?',
-    recit: [
-      'Parcourons l’inventaire du coffre. Les **fossiles** d’abord : Madagascar a livré des squelettes d’hippopotames nains, de tortues géantes, d’oiseaux-éléphants et même de dinosaures — des **archives de pierre** qui racontent l’île d’avant les hommes. La **faune** : lémuriens, caméléons, fosa, tortues, oiseaux — un bestiaire unique au monde. La **flore** : baobabs, orchidées, ravinala, palissandres, plantes médicinales comme la pervenche de Madagascar.',
-      'L’**hydrographie** : fleuves, lacs et sources — réserves d’eau douce, d’irrigation et de pêche. Les **ressources énergétiques** enfin : soleil, cours d’eau, vent, et les ressources du sous-sol. Le caractère extraordinaire de cet inventaire tient en un mot : l’**endémisme** — la plupart de nos espèces n’existent QUE chez nous. Si elles disparaissent ici, elles disparaissent de la Terre.',
-      'Ces richesses s’étendent « depuis la protohistoire » : dès ##1658##, le gouverneur @@Étienne de Flacourt@@ décrivait déjà dans son livre les merveilles naturelles de la Grande Île — dont un oiseau géant que la science confirmera deux siècles plus tard ! Fossiles comme forêts sont des héritages : exactement comme les palais et les chants, **la nature est un patrimoine**, et son inventaire est la première étape de sa protection.'
+    situation: 'Un baobab de huit cents ans, un lémurien qui n’existe nulle part ailleurs, un squelette d’hippopotame nain enfoui depuis des millénaires, une rivière qui fait tourner une turbine : la Grande Île est un coffre aux trésors naturels. Mais un trésor, ça s’inventorie.',
+    legende: 'Baobab huit fois centenaire, lémurien unique au monde, fossile enfoui : le coffre aux trésors de la Grande Île.',
+    motsCles: ['fossiles', 'faune', 'flore', 'hydrographie', 'ressources énergétiques', 'endémisme', 'æpyornis', 'archives de pierre'],
+    sections: [
+      {
+        titre: 'Les cinq catégories de richesses naturelles',
+        paras: ['Parcourons l’inventaire du coffre :'],
+        puces: [
+          'les fossiles : hippopotames nains, tortues géantes, oiseaux-éléphants, dinosaures — des archives de pierre qui racontent l’île d’avant les hommes ;',
+          'la faune : lémuriens, caméléons, fosa, tortues, oiseaux — un bestiaire unique au monde ;',
+          'la flore : baobabs, orchidées, ravinala, palissandres, pervenche de Madagascar ;',
+          'l’hydrographie : fleuves, lacs et sources — eau douce, irrigation, pêche ;',
+          'les ressources énergétiques : soleil, cours d’eau, vent, et les ressources du sous-sol.',
+        ],
+      },
+      {
+        titre: 'L’endémisme : des espèces uniques au monde',
+        paras: [
+          'Le caractère extraordinaire de cet inventaire tient en un mot : l’endémisme — la plupart de nos espèces n’existent QUE chez nous. Si elles disparaissent ici, elles disparaissent de la Terre.',
+        ],
+      },
+      {
+        titre: 'La nature est un patrimoine',
+        paras: [
+          'Ces richesses s’étendent « depuis la protohistoire » : dès 1658, le gouverneur Étienne de Flacourt décrivait déjà les merveilles naturelles de la Grande Île — dont un oiseau géant que la science confirmera deux siècles plus tard ! Fossiles comme forêts sont des héritages : exactement comme les palais et les chants, la nature est un patrimoine, et son inventaire est la première étape de sa protection.',
+        ],
+      },
     ],
     doc: {
       titre: 'Un oiseau géant dans le pays des Ampatres',
       source: 'd’après Étienne de Flacourt, Histoire de la Grande Isle Madagascar, 1658 — extrait adapté',
       texte: 'Le vouron patra est un grand oiseau qui hante le pays des Ampatres, dans le Sud, et qui fait des œufs comme l’autruche ; c’est une espèce d’autruche, et ceux des lieux ne le peuvent prendre, car il cherche les endroits les plus déserts. On trouve ses œufs, d’une grandeur prodigieuse, dans le sable.',
-      questions: ['Quel animal Flacourt décrit-il, et sous quel nom scientifique le connaît-on aujourd’hui ?',
+      questions: ['Quel animal Flacourt décrit-il, et sous quel nom le connaît-on aujourd’hui ?',
         'Ce témoignage de 1658 est-il une source fiable à lui seul ? Comment l’a-t-on vérifié ?',
-        'À quelles catégories de richesses naturelles cet oiseau appartient-il aujourd’hui ?'],
+        'À quelle catégorie de richesses naturelles cet oiseau appartient-il aujourd’hui ?'],
       reponses: ['L’oiseau-éléphant, l’æpyornis — le plus grand oiseau de tous les temps, haut de trois mètres.',
         'Non : un récit de voyageur peut exagérer ou se tromper ; il a été vérifié deux siècles plus tard par les fossiles — squelettes et œufs géants retrouvés dans le Sud : le croisement des sources.',
         'Aux fossiles : l’espèce a disparu ; il n’en reste que des ossements et des coquilles — des archives de pierre.']
     },
-    reperes: {
-      dates: [['1658', 'Flacourt décrit le « vouron patra », futur æpyornis']],
-      persos: [['Étienne de Flacourt', 'gouverneur français, premier grand descripteur de l’île']],
-      mots: [['Les cinq catégories', 'fossiles, faune, flore, hydrographie, ressources énergétiques'],
-        ['Endémisme', 'caractère d’une espèce qui n’existe que dans un seul territoire'],
-        ['Fossile', 'reste d’un être vivant conservé dans la pierre']]
-    },
-    idee: {
-      faux: 'Une richesse naturelle, c’est seulement ce qui rapporte de l’argent.',
-      vrai: 'Non : une source, une orchidée ou un fossile sans valeur marchande immédiate sont des richesses nationales — leur valeur est scientifique, écologique et patrimoniale.'
-    },
+    lexique: [
+      ['Les cinq catégories', 'fossiles, faune, flore, hydrographie, ressources énergétiques'],
+      ['Endémisme', 'caractère d’une espèce qui n’existe que dans un seul territoire'],
+      ['Fossile', 'reste d’un être vivant conservé dans la pierre'],
+      ['Æpyornis', '« oiseau-éléphant » disparu, le plus grand oiseau de tous les temps'],
+    ],
     synthese: 'catégories : fossiles, faune, flore, hydrographie, ressources énergétiques ; particularité malgache : l’endémisme — des espèces uniques au monde ; la nature est un patrimoine à inventorier comme les monuments.',
     saistu: 'Avant l’arrivée des hommes vivait à Madagascar le plus grand oiseau de tous les temps : l’æpyornis, « l’oiseau-éléphant », haut de trois mètres — son œuf valait près de deux cents œufs de poule ! On trouve encore des fragments de ses coquilles dans le sable du Sud : tenir dans sa main un morceau d’œuf d’æpyornis, c’est toucher une richesse naturelle… disparue.',
     exos: ['Classe dans la bonne catégorie : a) une orchidée de forêt humide ; b) le fosa ; d) une chute d’eau qui alimente une turbine ; e) un squelette d’oiseau-éléphant.',
@@ -149,11 +193,33 @@ const S = [
     mat: 'Textes de lois simplifiés, photos d’aires protégées, plants d’arbres, documents',
     revQ: 'Cite les catégories de richesses naturelles et un exemple pour deux d’entre elles.',
     revRA: 'Fossiles, faune, flore, hydrographie, ressources énergétiques — ex. : lémurien (faune), baobab (flore).',
-    situation: 'Sur la colline dénudée, les élèves plantent des arbres sous l’œil du garde forestier ; au musée, une vitrine blindée abrite une couronne royale ; à l’entrée du parc, un panneau rappelle la loi. Trois images, un même verbe : protéger. Mais protéger, concrètement, c’est faire quoi ? Le programme nous donne la liste des gestes.',
-    recit: [
-      'Côté nature, quatre chantiers. Protéger le **sol** : lutter contre l’**érosion** et les feux de brousse qui emportent la terre fertile — les « lavaka » qui balafrent les collines sont les cicatrices du sol mal protégé. Protéger les **eaux** : sources, rivières et mer — ni déchets, ni pêche destructrice. Protéger les **forêts** et ce qu’elles renferment : contre les coupes illégales et le **braconnage** de la faune et de la flore. **Reboiser** enfin : replanter chaque année, car un arbre coupé en une heure met vingt ans à revenir.',
-      'Côté patrimoine, trois chantiers : conserver les objets précieux dans des **musées hautement sécurisés** — l’incendie du Rova, le ##6 novembre 1995##, a montré ce qu’un trésor non protégé peut coûter ; multiplier les **aires protégées** — parcs nationaux et réserves, qui couvrent des millions d’hectares ; lutter contre toutes les **pollutions**, qui rongent les pierres comme les écosystèmes.',
-      'Et partout, le même socle : le **respect des lois** — car patrimoine et nature appartiennent à tous, et c’est la loi qui défend le bien de tous. Depuis ##1990##, la **Charte de l’environnement** fait de la protection un devoir de chaque citoyen. L’élève a son rôle : inventorier, sensibiliser, reboiser, alerter.'
+    situation: 'Sur la colline dénudée, les élèves plantent des arbres sous l’œil du garde forestier ; au musée, une vitrine blindée abrite une couronne royale ; à l’entrée du parc, un panneau rappelle la loi. Trois images, un même verbe : protéger.',
+    legende: 'Des élèves qui plantent, une vitrine blindée, un panneau de parc : trois images, un même verbe — protéger.',
+    motsCles: ['protéger', 'reboiser', 'érosion', 'feux de brousse', 'braconnage', 'aires protégées', 'musées', 'pollutions', 'respect des lois'],
+    sections: [
+      {
+        titre: 'Protéger les richesses naturelles : quatre chantiers',
+        puces: [
+          'protéger le sol : lutter contre l’érosion et les feux de brousse — les « lavaka » qui balafrent les collines sont les cicatrices du sol mal protégé ;',
+          'protéger les eaux : sources, rivières et mer — ni déchets, ni pêche destructrice ;',
+          'protéger les forêts et ce qu’elles renferment : contre les coupes illégales et le braconnage de la faune et de la flore ;',
+          'reboiser : replanter chaque année, car un arbre coupé en une heure met vingt ans à revenir.',
+        ],
+      },
+      {
+        titre: 'Protéger les patrimoines : trois chantiers',
+        puces: [
+          'conserver les objets précieux dans des musées hautement sécurisés — l’incendie du Rova, le 6 novembre 1995, a montré ce qu’un trésor non protégé peut coûter ;',
+          'multiplier les aires protégées — parcs nationaux et réserves, des millions d’hectares ;',
+          'lutter contre toutes les pollutions, qui rongent les pierres comme les écosystèmes.',
+        ],
+      },
+      {
+        titre: 'Le respect des lois, socle de tout',
+        paras: [
+          'Partout, le même socle : le respect des lois — car patrimoine et nature appartiennent à tous, et c’est la loi qui défend le bien de tous. Depuis 1990, la Charte de l’environnement fait de la protection un devoir de chaque citoyen. L’élève a son rôle : inventorier, sensibiliser, reboiser, alerter.',
+        ],
+      },
     ],
     doc: {
       titre: 'La loi au service de la nature',
@@ -166,18 +232,12 @@ const S = [
         '« La protection et le respect de l’environnement sont d’intérêt général » — et « il est du devoir de chacun ».',
         'Parce que la nature et le patrimoine appartiennent à tous : seule la loi peut défendre le bien commun contre ceux qui ne respectent pas les gestes volontaires.']
     },
-    reperes: {
-      dates: [['6 novembre 1995', 'incendie du Rova d’Antananarivo'],
-        ['1990', 'Charte de l’environnement malgache']],
-      mots: [['Reboiser', 'replanter des arbres chaque année'],
-        ['Aire protégée', 'parc ou réserve où la nature est défendue par la loi'],
-        ['Braconnage', 'chasse ou prélèvement illégal d’espèces protégées'],
-        ['Érosion', 'perte de la terre fertile emportée par l’eau et le vent']]
-    },
-    idee: {
-      faux: 'Pour protéger, il suffit d’interdire et de punir.',
-      vrai: 'Non : interdire sans expliquer échoue toujours. La protection durable associe la communauté — c’est pourquoi le programme insiste sur la sensibilisation et le respect des lois, pas sur la punition seule.'
-    },
+    lexique: [
+      ['Reboiser', 'replanter des arbres chaque année'],
+      ['Aire protégée', 'parc ou réserve où la nature est défendue par la loi'],
+      ['Braconnage', 'chasse ou prélèvement illégal d’espèces protégées'],
+      ['Érosion', 'perte de la terre fertile emportée par l’eau et le vent'],
+    ],
     synthese: 'nature : protéger sol, eaux, forêts (faune, flore) + reboiser ; patrimoine : musées sécurisés, aires protégées, lutte contre les pollutions ; socle commun : le respect des lois ; chacun peut agir — y compris les élèves.',
     saistu: 'Madagascar a lancé l’un des plus grands défis de reboisement d’Afrique : planter des dizaines de millions d’arbres par an — et chaque mois de janvier, écoles, églises, entreprises et ministères montent aux collines, plants en main. Un record symbolique : en une seule journée de 2020, plus d’un million d’arbres ont été mis en terre sur les collines d’Ankazobe !',
     exos: ['Nature ou patrimoine ? Associe chaque geste : a) installer une vitrine sécurisée au musée. b) Créer une pépinière pour reboiser. d) Interdire les déchets près de la source. e) Classer une réserve en aire protégée.',
@@ -194,11 +254,34 @@ const S = [
     mat: 'Textes et articles, photos de parcs et de sites touristiques, tableau',
     revQ: 'Cite deux gestes de protection de la nature et deux gestes de protection du patrimoine.',
     revRA: 'Nature : reboiser, protéger les eaux ; patrimoine : musées sécurisés, aires protégées.',
-    situation: 'À l’entrée du parc, le jeune guide compte les visiteurs du jour : des familles venues de trois continents pour voir des lémuriens. Au village voisin, l’hôtel embauche, les artisans vendent leurs paniers, l’école a un toit neuf. Protéger coûte des efforts — mais que rapporte-t-il ? Faisons les comptes, sur trois plans.',
-    recit: [
-      'Plan **économique** : chaque visiteur étranger apporte des **devises** — monnaies étrangères précieuses pour le pays ; le **tourisme** fait vivre guides, hôtels, transporteurs, artisans et paysans qui nourrissent tout ce monde. Et protéger, c’est aussi renoncer à l’**exploitation irrationnelle** : la forêt rasée rapporte une fois ; la forêt visitée rapporte tous les ans — l’**écotourisme** transforme la nature en revenu durable.',
-      'Plan **social** : quand la communauté voit les retombées, la **mentalité change** — on respecte les lois parce qu’on en comprend l’intérêt ; les revenus améliorent le **niveau de vie** : emplois, écoles, dispensaires financés par les droits d’entrée des parcs. Plan **culturel** : protégés et entretenus, les patrimoines deviennent **viables** — ils traversent les générations ; et la **sensibilisation communautaire** fait de chaque habitant un gardien fier de ses trésors.',
-      'La boucle est vertueuse : **protection → visiteurs → revenus → meilleure protection**. L’historien conclut : un pays qui garde ses héritages ne garde pas seulement son passé — il finance son avenir.'
+    situation: 'À l’entrée du parc, le jeune guide compte les visiteurs du jour : des familles venues de trois continents pour voir des lémuriens. Au village voisin, l’hôtel embauche, les artisans vendent leurs paniers, l’école a un toit neuf. Protéger coûte des efforts — mais que rapporte-t-il ?',
+    legende: 'Des visiteurs de trois continents pour voir des lémuriens — et au village : emplois, paniers vendus, toit neuf pour l’école.',
+    motsCles: ['devises', 'tourisme', 'écotourisme', 'exploitation irrationnelle', 'niveau de vie', 'respect des lois', 'viabilité', 'sensibilisation communautaire'],
+    sections: [
+      {
+        titre: 'Les avantages économiques',
+        paras: [
+          'Chaque visiteur étranger apporte des devises — monnaies étrangères précieuses pour le pays ; le tourisme fait vivre guides, hôtels, transporteurs, artisans et paysans. Et protéger, c’est renoncer à l’exploitation irrationnelle : la forêt rasée rapporte une fois ; la forêt visitée rapporte tous les ans — l’écotourisme transforme la nature en revenu durable.',
+        ],
+      },
+      {
+        titre: 'Les avantages sociaux',
+        paras: [
+          'Quand la communauté voit les retombées, la mentalité change — on respecte les lois parce qu’on en comprend l’intérêt ; les revenus améliorent le niveau de vie : emplois, écoles, dispensaires financés par les droits d’entrée des parcs.',
+        ],
+      },
+      {
+        titre: 'Les avantages culturels',
+        paras: [
+          'Protégés et entretenus, les patrimoines deviennent viables — ils traversent les générations ; et la sensibilisation communautaire fait de chaque habitant un gardien fier de ses trésors.',
+        ],
+      },
+      {
+        titre: 'La boucle vertueuse',
+        paras: [
+          'Protection → visiteurs → revenus → meilleure protection : la boucle se renforce d’elle-même. Un pays qui garde ses héritages ne garde pas seulement son passé — il finance son avenir.',
+        ],
+      },
     ],
     doc: {
       titre: 'Le parc qui a changé le village',
@@ -211,16 +294,12 @@ const S = [
         '« Quand quelqu’un allume un feu près de la forêt, c’est tout le village qui se lève » : les habitants protègent eux-mêmes.',
         'Le parc protégé attire les visiteurs ; les visiteurs apportent des revenus ; les revenus profitent au village ; le village défend alors la forêt — la protection se renforce d’elle-même.']
     },
-    reperes: {
-      mots: [['Devises', 'monnaies étrangères rapportées au pays'],
-        ['Écotourisme', 'tourisme qui respecte la nature et finance sa protection'],
-        ['Exploitation irrationnelle', 'usage destructeur qui épuise la ressource'],
-        ['Viabilité', 'capacité d’un patrimoine à rester en vie et à se transmettre']]
-    },
-    idee: {
-      faux: 'La protection bloque le développement.',
-      vrai: 'Non : c’est l’exploitation irrationnelle qui tue la ressource — et le revenu avec. La protection bien menée est un investissement : elle rapporte chaque année, durablement.'
-    },
+    lexique: [
+      ['Devises', 'monnaies étrangères rapportées au pays'],
+      ['Écotourisme', 'tourisme qui respecte la nature et finance sa protection'],
+      ['Exploitation irrationnelle', 'usage destructeur qui épuise la ressource'],
+      ['Viabilité', 'capacité d’un patrimoine à rester en vie et à se transmettre'],
+    ],
     synthese: 'économique : devises et revenus du tourisme, fin de l’exploitation irrationnelle ; social : respect des lois, meilleur niveau de vie ; culturel : patrimoines viables, communauté sensibilisée ; protection → visiteurs → revenus → meilleure protection.',
     saistu: 'Dans plusieurs parcs de Madagascar, la moitié des droits d’entrée revient directement aux communautés riveraines : écoles, puits, greniers à riz financés par les visiteurs venus voir les lémuriens. Les habitants, hier tentés par la coupe de la forêt, en sont devenus les meilleurs gardiens — la preuve vivante que protéger, c’est gagner.',
     exos: ['Classe chaque avantage par plan. a) Les devises rapportées par les visiteurs étrangers. b) Le respect des lois devenu naturel au village. d) Le hira gasy transmis aux jeunes générations. e) L’abandon de l’exploitation irrationnelle de la forêt.',

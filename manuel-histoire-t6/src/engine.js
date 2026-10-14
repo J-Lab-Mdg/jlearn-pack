@@ -46,6 +46,33 @@ const M = (text, base = {}) => {
 };
 const pm = (text, opt = {}) => new Paragraph({ alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 110, line: 300 }, shading: opt.fill ? { type: ShadingType.CLEAR, fill: opt.fill } : undefined, children: M(text, opt) });
 const strip = t => t.replace(/##|@@|\*\*|\/\//g, '');
+// --- style Tantara T5 : surlignage automatique des mots-clés (gras bleu) ---
+const pHi = (text, kws, opt = {}) => {
+  if (!kws || !kws.length) return p(text, opt);
+  const pattern = kws.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).sort((a, b) => b.length - a.length).join('|');
+  const regex = new RegExp(`(${pattern})`, 'gi');
+  const parts = text.split(regex).filter(x => x !== '');
+  return new Paragraph({
+    alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 100, line: 300 },
+    children: parts.map(part => kws.some(k => k.toLowerCase() === part.toLowerCase())
+      ? tr(part, { bold: true, color: C.blue }) : tr(part)),
+  });
+};
+// --- encadré type T5 (bord coloré + fond) ---
+const encadre = (titre, paras, fill, border) => new Table({
+  width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED, columnWidths: [9600],
+  borders: {
+    top: { style: BorderStyle.SINGLE, size: 12, color: border }, bottom: { style: BorderStyle.SINGLE, size: 12, color: border },
+    left: { style: BorderStyle.SINGLE, size: 12, color: border }, right: { style: BorderStyle.SINGLE, size: 12, color: border },
+    insideHorizontal: { style: BorderStyle.NONE }, insideVertical: { style: BorderStyle.NONE },
+  },
+  rows: [new TableRow({
+    children: [new TableCell({
+      shading: { type: ShadingType.CLEAR, fill }, margins: { top: 140, bottom: 140, left: 180, right: 180 },
+      children: [new Paragraph({ spacing: { after: 90 }, children: [tr(titre, { bold: true, color: border, size: 25 })] }), ...paras],
+    })],
+  })],
+});
 const mixed = (parts, opt = {}) => new Paragraph({ alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 110, line: 300 }, shading: opt.fill ? { type: ShadingType.CLEAR, fill: opt.fill } : undefined, children: parts.flatMap(([t, o]) => rich(t, o)) });
 const title = (text, level = 1, bookmark) => {
   const run = tr(text, { bold: true, color: level === 1 ? C.red : C.green, size: level === 1 ? 32 : 28 });
@@ -120,7 +147,7 @@ function deroulement(s) {
     r('II. NOUVELLE LEÇON', `Annonce : « Aujourd’hui, nous allons apprendre à ${s.goal}. »`, 'Écoutent.', 'Présentation guidée', 'Tableau', ''),
     r('1. Mise en situation', s.situation, 'Écoutent, observent et proposent des réponses.', 'Situation-problème', 'Illustration, tableau', 'Participation'),
     r('2. Présentation', `Présente le titre « ${s.t} » et l’objectif de la séance.`, 'Écoutent.', 'Explication brève', 'Tableau', ''),
-    r('3. Récit', `Raconte et explique : ${strip(s.recit[0])}`, 'Écoutent le récit, posent des questions et relèvent les dates et les personnages.', 'Récit guidé', 'Tableau, frises, cartes', 'Attention, participation'),
+    r('3. Développement', `Développe la leçon partie par partie : ${s.sections.map(x => x.titre).join(' ; ')}.`, 'Écoutent, répondent aux questions et notent les mots-clés.', 'Exposé interactif, questions-réponses', 'Tableau, frises, cartes', 'Attention, participation'),
     r('4. Étude de document', `Fait lire le document « ${s.doc.titre} » (${s.doc.source}), puis pose les questions.`, 'Lisent le document, répondent aux questions et critiquent la source.', 'Observation dirigée, travail en binômes', 'Document imprimé', 'Esprit critique'),
     r('5. Synthèse', `Donc, ${s.synthese}`, 'Écoutent et reformulent la règle.', 'Synthèse guidée', 'Cahier, tableau', 'Trace écrite'),
     r('6. Application', `${s.exos[0]} ${s.exos[1]}`, `${s.corr[0]} ${s.corr[1]}`, 'Travail individuel puis correction collective', 'Cahier, ardoises', 'Remédiation'),
@@ -140,33 +167,36 @@ function seance(s, i, total, uNo, figBufs) {
   a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 160, after: 160 }, children: [tr(s.t.toUpperCase(), { bold: true, color: C.red, size: 32 })] }));
   const scPath = path.join(__dirname, '..', 'assets', 'scenes', `u${uNo}s${i}.jpg`);
   if (fs.existsSync(scPath)) a.push(imgJpg(fs.readFileSync(scPath), 430));
-  a.push(pm(`//${s.situation}//`, { after: 140 }));
-  a.push(title('Le récit', 2));
-  s.recit.forEach(par => a.push(pm(par)));
+  if (s.legende) a.push(p(s.legende, { italics: true, size: 21, align: AlignmentType.CENTER, after: 160 }));
+  // sections numérotées style T5 (titres du PE, mots-clés surlignés)
+  s.sections.forEach((sec, k) => {
+    a.push(mixed([[`${k + 1}. ${sec.titre}`, { bold: true, color: C.green, size: 26 }]], { after: 80 }));
+    (sec.paras || []).forEach(t => a.push(pHi(t, s.motsCles)));
+    (sec.puces || []).forEach(t => a.push(pHi('• ' + t, s.motsCles, { after: 60 })));
+  });
   if (s.fig && figBufs[s.fig]) a.push(img(figBufs[s.fig]));
-  a.push(title('Étude de document', 2));
-  a.push(mixed([[`Document — ${s.doc.titre} `, { bold: true, color: C.blue }], [`(${s.doc.source})`, { italics: true, size: 20 }]], { after: 60 }));
-  a.push(pm(`//${s.doc.texte}//`, { fill: C.pale }));
-  a.push(mixed([['Questions sur le document', { bold: true, color: C.green }]], { after: 60 }));
-  s.doc.questions.forEach((q, k) => a.push(p(`${k + 1}. ${q}`, { after: 50 })));
-  s.doc.reponses.forEach((rp, k) => a.push(correction(`Réponse ${k + 1}. `, rp)));
-  a.push(title('Les repères', 2));
-  const repHead = (l1, l2, fill) => new TableRow({ children: [cell(l1, { bold: true, fill, color: C.white }), cell(l2, { bold: true, fill, color: C.white })] });
-  if (s.reperes.dates && s.reperes.dates.length) {
-    a.push(table([repHead('Date', 'Événement', C.wine), ...s.reperes.dates.map(r2 => new TableRow({ children: [cell(r2[0], { bold: true }), cell(r2[1])] }))], [2600, 7000]));
-    a.push(new Paragraph({ spacing: { after: 80 }, children: [] }));
-  }
-  if (s.reperes.persos && s.reperes.persos.length) {
-    a.push(table([repHead('Personnage', 'Rôle', C.green), ...s.reperes.persos.map(r2 => new TableRow({ children: [cell(r2[0], { bold: true }), cell(r2[1])] }))], [2600, 7000]));
-    a.push(new Paragraph({ spacing: { after: 80 }, children: [] }));
-  }
-  if (s.reperes.mots && s.reperes.mots.length) {
-    a.push(table([repHead('Mot à connaître', 'Sens', C.blue), ...s.reperes.mots.map(r2 => new TableRow({ children: [cell(r2[0], { bold: true }), cell(r2[1])] }))], [2600, 7000]));
-    a.push(new Paragraph({ spacing: { after: 80 }, children: [] }));
-  }
-  a.push(mixed([['Halte à l’idée reçue — ', { bold: true, color: C.ocre }], [`« ${s.idee.faux} » `, { italics: true }], [s.idee.vrai, {}]], { fill: 'FFF3E0' }));
-  a.push(mixed([['Le savais-tu ? ', { bold: true, color: C.bleu2 }], [s.saistu, {}]], { fill: C.paleBlue }));
-  a.push(mixed([['Trace écrite — ', { bold: true, color: C.green }], [s.synthese, {}]], { fill: C.paleGreen }));
+  a.push(new Paragraph({ spacing: { after: 120 }, children: [] }));
+  // encadré document à étudier (style « Tahirin-kevitra hodinihina »)
+  a.push(encadre('Document à étudier', [
+    p(`${s.doc.titre} — ${s.doc.source}`, { bold: true, size: 21, after: 80, align: AlignmentType.LEFT }),
+    p(`« ${s.doc.texte} »`, { italics: true, after: 100 }),
+    ...s.doc.questions.map((q, k) => p(`${k + 1}. ${q}`, { after: 40 })),
+    new Paragraph({ spacing: { after: 60 }, children: [] }),
+    ...s.doc.reponses.map((rp, k) => new Paragraph({
+      spacing: { after: 40 }, children: [tr(`Réponse ${k + 1}. `, { bold: true, color: C.wine, size: 22 }), ...rich(rp, { size: 22 })],
+    })),
+  ], 'FFF8EF', C.ocre));
+  a.push(new Paragraph({ spacing: { after: 160 }, children: [] }));
+  // encadré le savais-tu ?
+  a.push(encadre('Le savais-tu ?', [p(s.saistu, { size: 22, after: 0 })], C.paleBlue, C.bleu2));
+  a.push(new Paragraph({ spacing: { after: 160 }, children: [] }));
+  // petit lexique
+  a.push(mixed([['Petit lexique', { bold: true, color: C.green, size: 26 }]], { after: 80 }));
+  a.push(table([
+    new TableRow({ children: [cell('Mot', { bold: true, fill: C.gray }), cell('Sens', { bold: true, fill: C.gray })] }),
+    ...s.lexique.map(r2 => new TableRow({ children: [cell(r2[0], { bold: true }), cell(r2[1])] })),
+  ], [2800, 6800]));
+  a.push(new Paragraph({ spacing: { after: 120 }, children: [] }));
   a.push(title('EXERCICES', 2));
   s.exos.forEach((e, k) => a.push(p(`${k + 1}. ${e}`)));
   a.push(title('CORRIGÉS', 2));
@@ -224,7 +254,7 @@ function frontMatter(u) {
     p('Chaque séance associe une fiche de préparation directement exploitable et une leçon conçue pour l’Histoire : un récit vivant qui raconte les faits dans l’ordre du temps, une étude de document pour exercer l’esprit critique, un encadré de repères (dates, personnages, vocabulaire), des frises chronologiques et des schémas exacts, des exercices et un corrigé détaillé. Les contenus mobilisent les repères de Madagascar et véhiculent les valeurs portées par le programme : curiosité et esprit critique, union nationale et patriotisme, savoir vivre ensemble, respect des biens communs et de l’environnement.'),
     title('MODE D’EMPLOI', 1, 'mode'),
     p('La fiche suit trois grandes étapes : I. Révision ; II. Nouvelle leçon, comprenant mise en situation, présentation, observation, analyse, synthèse et application ; III. Évaluation. Aucune durée chiffrée n’est affichée : l’enseignant adapte le rythme à sa classe (volume officiel : 2 heures par semaine).'),
-    p('Code couleur de la leçon : dans le récit, les dates apparaissent en bordeaux, les personnages en vert et les mots importants en gras. Le document à étudier est présenté sur fond gris clair ; « Halte à l’idée reçue » sur fond ocre clair ; « Le savais-tu ? » sur fond bleu clair ; la trace écrite à copier sur fond vert clair ; les corrigés en bordeaux.'),
+    p('Organisation de la leçon : des parties numérotées aux titres tirés du programme (en vert), avec les mots-clés mis en évidence en bleu gras dans le texte ; un encadré « Document à étudier » (texte, questions et réponses) ; un encadré « Le savais-tu ? » sur fond bleu clair ; un « Petit lexique » en tableau ; puis les exercices et leurs corrigés en bordeaux.'),
     title('SOMMAIRE INTERACTIF', 1, 'toc'),
     new Paragraph({ children: [new InternalHyperlink({ anchor: 'u1', children: [tr(`Unité I — ${u.name}`, { bold: true, color: C.blue })] })] }));
   u.sessions.forEach((s, i) => ch.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${i + 1}`, children: [tr(`Séance ${i + 1} — ${s.t}`, { color: C.blue })] })] })));

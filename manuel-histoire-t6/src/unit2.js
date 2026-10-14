@@ -120,10 +120,32 @@ const S = [
     revQ: 'Quelles sont les deux questions qui situent un fait historique ?',
     revRA: 'Quand ? (le temps) et où ? (l’espace).',
     situation: 'Chaque 26 juin, les lampions s’allument et le drapeau blanc-rouge-vert monte dans toutes les cours d’école. Mais que fête-t-on exactement ? Et pourquoi le 14 octobre 1958 est-il, lui aussi, une date capitale ? Pour répondre, remontons à la naissance de la toute première République malgache.',
-    recit: [
-      'Le ##14 octobre 1958##, Madagascar proclame sa première République : la **Repoblika Malagasy**. Elle naît au sein de la communauté française — le pays se gouverne, mais reste lié à l’ancienne puissance coloniale. Puis vient le grand jour : le ##26 juin 1960##, l’indépendance est pleinement retrouvée. Sur le perron, @@Philibert Tsiranana@@, premier président, proclame la souveraineté devant le peuple rassemblé. Deux dates de naissance, donc — et c’est la seconde que nous fêtons chaque année.',
-      'La jeune République se donne ses **emblèmes**, sa carte d’identité pour le monde entier. La **devise** d’abord : « Tanindrazana - Fahafahana - Fandrosoana » — patrie, liberté, progrès : tout un programme en trois mots. Le **drapeau** ensuite : blanc et rouge, couleurs des anciens royaumes, unis au vert du peuple des côtes. L’**hymne** enfin : « Ry tanindrazanay malala ô ! », écrit par le pasteur @@Rahajason@@ et mis en musique par @@Norbert Raharisoa@@ — adopté dès ##1959##, avant même l’indépendance.',
-      'Président durant toute la période, Tsiranana gouverne quatorze années, de ##1958## à ##1972##. En ##mai 1972##, un grand mouvement populaire conteste le pouvoir : le président remet les pleins pouvoirs, et la Première République s’achève. Mais ses emblèmes, eux, ne mourront jamais : le drapeau et l’hymne de 1958 traverseront toutes les Républiques suivantes — un fil d’unité à travers les tempêtes.'
+    legende: 'Chaque 26 juin, le drapeau blanc-rouge-vert monte dans les cours d’école : que fête-t-on exactement ?',
+    motsCles: ['Repoblika Malagasy', '14 octobre 1958', '26 juin 1960', 'indépendance', 'devise', 'drapeau', 'hymne', 'Tanindrazana - Fahafahana - Fandrosoana', 'Philibert Tsiranana', 'mai 1972'],
+    sections: [
+      {
+        titre: 'La naissance : deux dates à ne pas confondre',
+        paras: [
+          'Le 14 octobre 1958, Madagascar proclame sa première République : la Repoblika Malagasy. Elle naît au sein de la communauté française — le pays se gouverne, mais reste lié à l’ancienne puissance coloniale.',
+          'Le 26 juin 1960, l’indépendance est pleinement retrouvée : le président Philibert Tsiranana la proclame devant le peuple rassemblé. C’est cette seconde date que nous fêtons chaque année.',
+        ],
+      },
+      {
+        titre: 'Les emblèmes nationaux',
+        paras: ['La jeune République se donne sa carte d’identité pour le monde entier :'],
+        puces: [
+          'la devise : « Tanindrazana - Fahafahana - Fandrosoana » — patrie, liberté, progrès ;',
+          'le drapeau : blanc et rouge, couleurs des anciens royaumes, unis au vert du peuple des côtes ;',
+          'l’hymne : « Ry tanindrazanay malala ô ! », écrit par le pasteur Rahajason et mis en musique par Norbert Raharisoa, adopté dès 1959.',
+        ],
+      },
+      {
+        titre: 'Le président Tsiranana et la fin de la République',
+        paras: [
+          'Philibert Tsiranana préside durant toute la période : quatorze années, de 1958 à 1972. En mai 1972, un grand mouvement populaire conteste le pouvoir : le président remet les pleins pouvoirs, et la Première République s’achève.',
+          'Mais ses emblèmes ne mourront jamais : le drapeau et l’hymne de 1958 traverseront toutes les Républiques suivantes — un fil d’unité à travers les tempêtes.',
+        ],
+      },
     ],
     doc: {
       titre: 'Le chant de la terre des ancêtres',
@@ -136,20 +158,12 @@ const S = [
         'L’amour fidèle de la terre des ancêtres : le patriotisme.',
         'Parce qu’il témoigne des sentiments et des espoirs des Malgaches au moment de la naissance de la République — et qu’il est chanté sans changement depuis 1958.']
     },
-    reperes: {
-      dates: [['14 octobre 1958', 'proclamation de la Première République'],
-        ['26 juin 1960', 'indépendance de Madagascar — fête nationale'],
-        ['Mai 1972', 'mouvement populaire : fin de la Première République']],
-      persos: [['Philibert Tsiranana', 'président de la Première République (1958-1972)'],
-        ['Rahajason et Raharisoa', 'auteur et compositeur de l’hymne national']],
-      mots: [['Repoblika Malagasy', 'nom officiel de la Première République'],
-        ['Devise', 'formule qui résume l’idéal d’un État'],
-        ['Emblèmes', 'symboles officiels : drapeau, hymne, devise']]
-    },
-    idee: {
-      faux: 'Le 14 octobre 1958, Madagascar est devenu indépendant.',
-      vrai: 'Non : en 1958, la République est proclamée mais reste au sein de la communauté française. L’indépendance complète date du 26 juin 1960 — c’est elle que célèbre la fête nationale.'
-    },
+    lexique: [
+      ['Repoblika Malagasy', 'nom officiel de la Première République'],
+      ['Devise', 'formule qui résume l’idéal d’un État'],
+      ['Emblèmes', 'symboles officiels : drapeau, hymne, devise'],
+      ['Communauté française', 'ensemble des territoires liés à la France en 1958'],
+    ],
     synthese: 'Repoblika Malagasy : proclamée le 14-10-1958, indépendance le 26-6-1960 ; devise Tanindrazana-Fahafahana-Fandrosoana ; drapeau blanc-rouge-vert ; hymne Ry tanindrazanay malala ô ! ; président Philibert Tsiranana jusqu’en 1972.',
     saistu: 'Notre hymne national « Ry tanindrazanay malala ô ! » a été écrit en 1958 par le pasteur Rahajason et mis en musique par Norbert Raharisoa, un professeur de musique. Il fut adopté officiellement le 27 avril 1959 — avant même l’indépendance : les paroles étaient prêtes à accueillir la liberté !',
     exos: ['Carte d’identité. a) Quel est le nom officiel de la Première République ? b) Quelle est sa devise ? d) Quelles sont les couleurs du drapeau ? e) Qui est son président et pendant quelles années ?',
@@ -167,10 +181,32 @@ const S = [
     revQ: 'Devise et président de la Première République ?',
     revRA: 'Tanindrazana - Fahafahana - Fandrosoana ; Philibert Tsiranana.',
     situation: 'En mai 1972, étudiants, lycéens puis travailleurs descendent dans les rues de la capitale. Le 13 mai, la foule immense se rassemble devant l’hôtel de ville : la Première République vit ses derniers mois. Commence alors une période étonnante : trois ans à peine… et quatre chefs d’État successifs !',
-    recit: [
-      'Tout commence par la colère de la jeunesse. Au début de ##1972##, les étudiants en médecine, puis les lycéens, puis les travailleurs protestent : l’université, la langue d’enseignement, la vie chère, la **dépendance** envers l’ancienne puissance coloniale nourrissent le malaise. Le ##13 mai 1972##, une foule immense se rassemble devant l’hôtel de ville d’Antananarivo — la « rotaka » emporte la Première République. Le ##11 octobre 1972##, le président Tsiranana remet les pleins pouvoirs au général @@Gabriel Ramanantsoa@@ : l’armée prend la barre de la **transition**.',
-      'Mais les tensions persistent. Le ##5 février 1975##, Ramanantsoa transmet le pouvoir au colonel @@Richard Ratsimandrava@@ — qui est assassiné six jours plus tard, le ##11 février 1975## : le choc le plus brutal de toute la période. Un **directoire militaire**, conduit par le général @@Gilles Andriamahazo@@, assure alors l’intérim du pays sous le choc.',
-      'Le ##15 juin 1975##, le capitaine de frégate @@Didier Ratsiraka@@ est porté à la tête de l’État. Le ##30 décembre 1975##, après référendum, il proclame la Deuxième République : la transition s’achève. Trois ans à peine, quatre chefs d’État — retiens l’ordre **R-R-A-R** : Ramanantsoa, Ratsimandrava, Andriamahazo, Ratsiraka. C’est la clef de toute la période.'
+    legende: 'Mai 1972 : la foule immense devant l’hôtel de ville — la Première République vit ses derniers mois.',
+    motsCles: ['mai 1972', '13 mai 1972', 'rotaka', 'transition', 'directoire militaire', 'Ramanantsoa', 'Ratsimandrava', 'Andriamahazo', 'Ratsiraka', '30 décembre 1975'],
+    sections: [
+      {
+        titre: 'Le mouvement populaire de mai 1972',
+        paras: [
+          'Tout commence par la colère de la jeunesse : l’université, la langue d’enseignement, la vie chère et la dépendance envers l’ancienne puissance coloniale nourrissent le malaise. Le 13 mai 1972, une foule immense se rassemble devant l’hôtel de ville d’Antananarivo — la « rotaka » emporte la Première République.',
+          'Le 11 octobre 1972, le président Tsiranana remet les pleins pouvoirs au général Gabriel Ramanantsoa : l’armée prend la barre de la transition.',
+        ],
+      },
+      {
+        titre: 'Les quatre chefs d’État de la transition',
+        paras: ['Retiens l’ordre R-R-A-R :'],
+        puces: [
+          'Gabriel Ramanantsoa (11 octobre 1972 - 5 février 1975) ;',
+          'Richard Ratsimandrava (5 - 11 février 1975) — assassiné après six jours, le choc le plus brutal de la période ;',
+          'Gilles Andriamahazo (11 février - 15 juin 1975), à la tête du directoire militaire ;',
+          'Didier Ratsiraka (à partir du 15 juin 1975).',
+        ],
+      },
+      {
+        titre: 'Vers la Deuxième République',
+        paras: [
+          'Le 30 décembre 1975, après référendum, Didier Ratsiraka proclame la Deuxième République : la transition s’achève. Trois ans à peine, quatre chefs d’État — beaucoup de dirigeants ne veut pas dire beaucoup d’années !',
+        ],
+      },
     ],
     doc: {
       titre: 'Un lycéen sur la place, le 13 mai 1972',
@@ -183,22 +219,12 @@ const S = [
         'Une école adaptée, l’enseignement dans la langue malgache, du travail.',
         '« Les anciens disaient que rien ne serait plus comme avant » : ils ont compris qu’une page se tournait.']
     },
-    reperes: {
-      dates: [['13 mai 1972', 'la foule devant l’hôtel de ville : fin de la Première République'],
-        ['11 février 1975', 'assassinat du colonel Ratsimandrava'],
-        ['30 décembre 1975', 'proclamation de la Deuxième République']],
-      persos: [['Gabriel Ramanantsoa', 'général, reçoit les pleins pouvoirs en octobre 1972'],
-        ['Richard Ratsimandrava', 'colonel, chef de l’État six jours en février 1975'],
-        ['Gilles Andriamahazo', 'général, dirige le directoire militaire'],
-        ['Didier Ratsiraka', 'porté à la tête de l’État le 15 juin 1975']],
-      mots: [['Transition', 'période entre deux Républiques'],
-        ['Directoire militaire', 'groupe de militaires qui dirige collectivement l’État'],
-        ['Rotaka', 'nom donné au mouvement populaire de 1972']]
-    },
-    idee: {
-      faux: 'La transition a duré très longtemps, puisque quatre chefs d’État se sont succédé.',
-      vrai: 'Non : de l’arrivée de Ramanantsoa (octobre 1972) à la proclamation de la Deuxième République (décembre 1975), trois ans seulement s’écoulent. Beaucoup de dirigeants ne veut pas dire beaucoup d’années !'
-    },
+    lexique: [
+      ['Transition', 'période entre deux Républiques'],
+      ['Directoire militaire', 'groupe de militaires qui dirige collectivement l’État'],
+      ['Rotaka', 'nom donné au mouvement populaire de 1972'],
+      ['Pleins pouvoirs', 'tous les pouvoirs de l’État remis à un seul dirigeant'],
+    ],
     synthese: 'mai 1972 : fin de la Première République ; transition 1972-1975 ; ordre des quatre chefs d’État : Ramanantsoa, Ratsimandrava (6 jours), Andriamahazo, Ratsiraka ; 30 décembre 1975 : naissance de la Deuxième République.',
     saistu: 'La grande place au cœur d’Antananarivo s’appelle « place du 13-Mai » en souvenir du 13 mai 1972, jour où la foule s’y est rassemblée face à l’hôtel de ville. Depuis, chaque génération de Malgaches y a exprimé ses espoirs : une place devenue, à elle seule, une source d’histoire.',
     exos: ['Dates et ordre. a) Quel mouvement met fin à la Première République, et en quel mois ? b) Qui reçoit les pleins pouvoirs le 11 octobre 1972 ? d) Remets dans l’ordre : Andriamahazo, Ratsiraka, Ramanantsoa, Ratsimandrava. e) Quelle date clôt la transition ?',
@@ -216,10 +242,31 @@ const S = [
     revQ: 'Récite l’ordre des quatre chefs d’État de la transition 1972-1975.',
     revRA: 'Ramanantsoa, Ratsimandrava, Andriamahazo, Ratsiraka.',
     situation: 'Fin décembre 1975, la radio nationale annonce une nouvelle République : la Repoblika Demokratika Malagasy. Un petit livre rouge circule bientôt dans tout le pays ; à l’école, les cours changent de langue ; dans les campagnes naissent des coopératives. Une page entière de notre histoire commence — elle durera dix-huit ans.',
-    recit: [
-      'Le ##30 décembre 1975##, après référendum, naît la **Repoblika Demokratika Malagasy** : la Deuxième République. Nouvelle devise — « Tanindrazana - Tolom-piavotana - Fahafahana », où apparaît **Tolom-piavotana**, le combat libérateur — mais même drapeau blanc-rouge-vert et même hymne : les emblèmes de 1958 traversent les Républiques, signe d’unité nationale.',
-      'Son projet tient dans un petit livre : le **boky mena**, le « livre rouge », charte de la **révolution socialiste malgache**. L’État dirige l’économie ; les coopératives socialistes comme la **SINPA** organisent la collecte et la distribution des produits ; les **collectivités décentralisées** rapprochent l’administration du peuple ; et la **malgachisation** fait de la langue malgache la langue de l’enseignement — toute une génération apprendra les sciences en malgache.',
-      'À la tête de l’État : @@Didier Ratsiraka@@, de ##décembre 1975## à ##août 1991## — quinze ans et demi, la plus longue présidence de notre histoire. Mais à la fin des années 1980, les difficultés économiques s’accumulent ; en ##1991##, d’immenses manifestations pacifiques réclament le changement. La Deuxième République s’efface : la transition vers la Troisième commence.'
+    legende: 'Décembre 1975 : la radio annonce une nouvelle République, et un petit livre rouge circule dans tout le pays.',
+    motsCles: ['Repoblika Demokratika Malagasy', '30 décembre 1975', 'boky mena', 'révolution socialiste', 'SINPA', 'malgachisation', 'collectivités décentralisées', 'Tolom-piavotana', 'Didier Ratsiraka', '1991'],
+    sections: [
+      {
+        titre: 'La carte d’identité de la Deuxième République',
+        paras: [
+          'Le 30 décembre 1975, après référendum, naît la Repoblika Demokratika Malagasy. Nouvelle devise — « Tanindrazana - Tolom-piavotana - Fahafahana », où apparaît Tolom-piavotana, le combat libérateur — mais même drapeau blanc-rouge-vert et même hymne : les emblèmes de 1958 traversent les Républiques.',
+        ],
+      },
+      {
+        titre: 'Le projet du boky mena',
+        paras: ['Son projet tient dans un petit livre : le boky mena, le « livre rouge », charte de la révolution socialiste malgache :'],
+        puces: [
+          'l’État dirige l’économie ;',
+          'les coopératives socialistes comme la SINPA organisent la collecte et la distribution des produits ;',
+          'les collectivités décentralisées rapprochent l’administration du peuple ;',
+          'la malgachisation fait de la langue malgache la langue de l’enseignement.',
+        ],
+      },
+      {
+        titre: 'Dix-huit ans, puis la fin',
+        paras: [
+          'À la tête de l’État : Didier Ratsiraka, de décembre 1975 à août 1991 — quinze ans et demi, la plus longue présidence de notre histoire. À la fin des années 1980, les difficultés économiques s’accumulent ; en 1991, d’immenses manifestations pacifiques réclament le changement : la Deuxième République s’efface.',
+        ],
+      },
     ],
     doc: {
       titre: 'Le projet du « livre rouge »',
@@ -232,19 +279,12 @@ const S = [
         'Les fokonolona et les collectivités décentralisées.',
         'Une école enracinée dans la culture malgache : la malgachisation de l’enseignement.']
     },
-    reperes: {
-      dates: [['30 décembre 1975', 'naissance de la Deuxième République'],
-        ['1991', 'grandes manifestations : fin de la Deuxième République']],
-      persos: [['Didier Ratsiraka', 'chef d’État de 1975 à 1991 — la plus longue présidence']],
-      mots: [['Boky mena', '« livre rouge » : charte de la révolution socialiste malgache'],
-        ['SINPA', 'coopérative socialiste de collecte et distribution des produits'],
-        ['Malgachisation', 'enseignement donné en langue malgache'],
-        ['Collectivités décentralisées', 'administrations locales rapprochées du peuple']]
-    },
-    idee: {
-      faux: 'Chaque nouvelle République change le drapeau et l’hymne.',
-      vrai: 'Non : le drapeau blanc-rouge-vert et l’hymne « Ry tanindrazanay malala ô ! » n’ont JAMAIS changé depuis 1958. Ce qui change avec les Républiques : le nom, la devise, la constitution et la politique.'
-    },
+    lexique: [
+      ['Boky mena', '« livre rouge » : charte de la révolution socialiste malgache'],
+      ['SINPA', 'coopérative socialiste de collecte et distribution des produits'],
+      ['Malgachisation', 'enseignement donné en langue malgache'],
+      ['Collectivités décentralisées', 'administrations locales rapprochées du peuple'],
+    ],
     synthese: 'Repoblika Demokratika Malagasy, 30-12-1975 ; devise Tanindrazana-Tolom-piavotana-Fahafahana ; boky mena = charte de la révolution socialiste ; SINPA, décentralisation, malgachisation ; Ratsiraka chef d’État 1975-1991 ; fin : manifestations de 1991.',
     saistu: 'La malgachisation a transformé l’école : du jour au lendemain, des générations d’élèves ont appris les mathématiques et les sciences en malgache. Les mots savants qu’il fallait inventer — « isa » pour le nombre, « refy » pour la mesure — sont nés dans les années 1970... et tu en utilises certains encore aujourd’hui dans tes manuels !',
     exos: ['Carte d’identité. a) Quel est le nom officiel de la Deuxième République ? b) Quelle est sa date de naissance ? d) Quelle est sa devise ? e) Qui la dirige, et pendant combien d’années ?',
@@ -262,10 +302,30 @@ const S = [
     revQ: 'Nom, texte fondateur et chef d’État de la Deuxième République ?',
     revRA: 'Repoblika Demokratika Malagasy ; le boky mena ; Didier Ratsiraka.',
     situation: 'En 1992, les Malgaches votent une nouvelle constitution ; en mars 1993, un professeur de médecine coiffé d’un chapeau de paille devient président : la Troisième République est née. Elle connaîtra cinq chefs d’État et deux grandes périodes — une histoire mouvementée qu’il faut ranger avec la rigueur de l’historien.',
-    recit: [
-      'Après les manifestations de 1991, les Malgaches votent une nouvelle constitution en ##1992## : la **Repoblikan’i Madagasikara** — la Troisième République — est née. Première période (##1993-2002##) : @@Albert Zafy@@, élu en ##mars 1993##, gouverne sous la devise « Tanindrazana - Fahafahana - Fahamarinana » — la **vérité** remplace le progrès. Empêché par l’Assemblée en ##1996##, il laisse la place au président par intérim @@Norbert Lala Ratsirahonana@@ ; puis @@Didier Ratsiraka@@, de retour, gouverne de ##février 1997## à ##juillet 2002##.',
-      'Deuxième période (##2002-2010##) : l’élection de décembre 2001 débouche sur la grande **crise de 2002** ; @@Marc Ravalomanana@@ s’installe le ##22 février 2002##, et la devise redevient « Tanindrazana - Fahafahana - Fandrosoana ». Réélu en 2006, il démissionne le ##17 mars 2009## au terme d’une nouvelle crise : le pouvoir est transféré le jour même à @@Andry Nirina Rajoelina@@, qui conduit la **transition** de 2009 à 2013.',
-      'Sur toute la période, l’État suit un cap nouveau : **démocratie** et **libéralisation**, intégration à la **mondialisation**, ajustements structurels, promotion du secteur privé. Cinq dirigeants, deux crises, un cap : voilà la Troisième République — la République de la démocratie retrouvée.'
+    legende: 'Mars 1993 : un professeur coiffé d’un chapeau de paille devient président — la Troisième République est née.',
+    motsCles: ['Repoblikan’i Madagasikara', '1992', 'Albert Zafy', 'Ratsirahonana', 'Didier Ratsiraka', 'Marc Ravalomanana', 'crise de 2002', '17 mars 2009', 'démocratie', 'libéralisation', 'mondialisation'],
+    sections: [
+      {
+        titre: 'La première période (1993-2002)',
+        paras: ['Après les manifestations de 1991, les Malgaches votent une nouvelle constitution en 1992 : la Repoblikan’i Madagasikara est née.'],
+        puces: [
+          'Albert Zafy, élu en mars 1993, gouverne sous la devise « Tanindrazana - Fahafahana - Fahamarinana » — la vérité remplace le progrès ;',
+          'empêché par l’Assemblée en 1996, il laisse la place au président par intérim Norbert Lala Ratsirahonana ;',
+          'Didier Ratsiraka, de retour, gouverne de février 1997 à juillet 2002.',
+        ],
+      },
+      {
+        titre: 'La deuxième période (2002-2010)',
+        paras: [
+          'L’élection de décembre 2001 débouche sur la grande crise de 2002 ; Marc Ravalomanana s’installe le 22 février 2002, et la devise redevient « Tanindrazana - Fahafahana - Fandrosoana ». Réélu en 2006, il démissionne le 17 mars 2009 au terme d’une nouvelle crise : le pouvoir est transféré le jour même à Andry Nirina Rajoelina, qui conduit la transition de 2009 à 2013.',
+        ],
+      },
+      {
+        titre: 'Le cap politique : la démocratie retrouvée',
+        paras: [
+          'Sur toute la période, l’État suit un cap nouveau : démocratie et libéralisation, intégration à la mondialisation, ajustements structurels, promotion du secteur privé. Cinq dirigeants, deux crises, un cap : voilà la Troisième République.',
+        ],
+      },
     ],
     doc: {
       titre: 'Mars 1993 : un nouveau président élu',
@@ -278,22 +338,12 @@ const S = [
         'L’élection d’Albert Zafy à la présidence, en mars 1993 — le début de la Troisième République.',
         'Parce que le changement de dirigeant s’est fait par une élection ouverte et non par la rue : l’alternance par les urnes.']
     },
-    reperes: {
-      dates: [['1992', 'nouvelle constitution votée par référendum'],
-        ['22 février 2002', 'Marc Ravalomanana s’installe après la crise'],
-        ['17 mars 2009', 'démission de Ravalomanana, transfert à Rajoelina']],
-      persos: [['Albert Zafy', 'premier président de la Troisième République (1993-1996)'],
-        ['Norbert Lala Ratsirahonana', 'président par intérim (1996-1997)'],
-        ['Marc Ravalomanana', 'président de 2002 à 2009'],
-        ['Andry Nirina Rajoelina', 'conduit la transition 2009-2013']],
-      mots: [['Alternance', 'remplacement d’un dirigeant par un autre, par les urnes'],
-        ['Libéralisation', 'ouverture de l’économie au marché et au secteur privé'],
-        ['Mondialisation', 'intégration du pays aux échanges du monde entier']]
-    },
-    idee: {
-      faux: 'Le Ratsiraka de la Troisième République est un autre homme que celui de la Deuxième.',
-      vrai: 'Non : c’est le même Didier Ratsiraka, à deux époques différentes — chef d’État de la Deuxième République (1975-1991), puis président élu de la Troisième (1997-2002). Sur la frise, cela fait deux segments bien distincts !'
-    },
+    lexique: [
+      ['Alternance', 'remplacement d’un dirigeant par un autre, par les urnes'],
+      ['Libéralisation', 'ouverture de l’économie au marché et au secteur privé'],
+      ['Mondialisation', 'intégration du pays aux échanges du monde entier'],
+      ['Intérim', 'exercice provisoire du pouvoir en attendant une élection'],
+    ],
     synthese: 'Repoblikan’i Madagasikara, 1993-2010, deux périodes ; 1ʳᵉ : Zafy, Ratsirahonana, Ratsiraka ; 2ᵉ : Ravalomanana puis transition 2009-2013 ; politiques : démocratie, libéralisation, mondialisation, ajustements structurels.',
     saistu: 'C’est sous la Troisième République, en 2005, que Madagascar a changé de monnaie : l’ariary a remplacé le franc malgache. L’ariary est l’une des deux seules monnaies au monde qui ne se divise pas en centièmes : il vaut 5 iraimbilanja — un héritage des anciennes pièces d’argent pesées au temps des royaumes !',
     exos: ['Les deux périodes. a) Quelles années couvre la Troisième République ? b) Qui ouvre la première période en 1993 ? d) Qui ouvre la deuxième période en 2002 ? e) Quelles sont les deux devises successives ?',
@@ -311,10 +361,30 @@ const S = [
     revQ: 'Les deux périodes de la Troisième République et leurs premiers présidents ?',
     revRA: '1993-2002 avec Albert Zafy ; 2002-2010 avec Marc Ravalomanana.',
     situation: 'Le 17 novembre 2010, les électeurs déposent dans l’urne un bulletin décisif : une nouvelle constitution est approuvée par référendum. La Quatrième République est née — c’est elle qui organise encore aujourd’hui l’État malgache. Son histoire s’écrit sous nos yeux : nous en sommes les témoins… et les sources de demain !',
-    recit: [
-      'Le ##17 novembre 2010##, les Malgaches approuvent par **référendum** une nouvelle constitution : la Quatrième République est née. Même nom que la Troisième — **Repoblikan’i Madagasikara** —, même drapeau et même hymne que depuis 1958… mais une devise nouvelle : « Fitiavana - Tanindrazana - Fandrosoana » — l’**amour** ouvre désormais la devise nationale.',
-      'La mise en route fut progressive. La transition conduite par @@Andry Rajoelina@@ s’étend de ##2009## à ##2013## ; l’élection de fin 2013 porte @@Hery Rajaonarimampianina@@ à la présidence en ##janvier 2014## ; en ##janvier 2019##, Andry Rajoelina lui succède, cette fois comme président élu, puis est réélu. Le cap affiché : une politique générale fondée sur le **développement durable** — développer le pays sans épuiser ses ressources, en pensant aux générations futures.',
-      'Étudier la Quatrième République a un charme particulier : ses **sources** sont partout autour de nous — journaux, radios, réseaux, témoins directs. Son histoire s’écrit sous nos yeux, et l’historien que tu deviens peut la collecter… en appliquant, bien sûr, la démarche historique !'
+    legende: '17 novembre 2010 : un bulletin dans l’urne, et une nouvelle République est née — la nôtre.',
+    motsCles: ['17 novembre 2010', 'référendum', 'constitution', 'Fitiavana - Tanindrazana - Fandrosoana', 'Rajaonarimampianina', 'Rajoelina', 'développement durable', 'transition'],
+    sections: [
+      {
+        titre: 'La naissance : le référendum de 2010',
+        paras: [
+          'Le 17 novembre 2010, les Malgaches approuvent par référendum une nouvelle constitution : la Quatrième République est née. Même nom que la Troisième — Repoblikan’i Madagasikara —, même drapeau et même hymne que depuis 1958… mais une devise nouvelle : « Fitiavana - Tanindrazana - Fandrosoana » — l’amour ouvre désormais la devise nationale.',
+        ],
+      },
+      {
+        titre: 'Les dirigeants depuis 2010',
+        puces: [
+          'la transition conduite par Andry Rajoelina s’étend de 2009 à 2013 ;',
+          'l’élection de fin 2013 porte Hery Rajaonarimampianina à la présidence en janvier 2014 ;',
+          'en janvier 2019, Andry Rajoelina lui succède, cette fois comme président élu, puis est réélu.',
+        ],
+      },
+      {
+        titre: 'Le cap : le développement durable',
+        paras: [
+          'Le cap affiché est une politique générale fondée sur le développement durable — développer le pays sans épuiser ses ressources, en pensant aux générations futures.',
+          'Étudier la Quatrième République a un charme particulier : ses sources sont partout autour de nous — journaux, radios, réseaux, témoins directs. Son histoire s’écrit sous nos yeux, et l’historien que tu deviens peut la collecter… en appliquant la démarche historique !',
+        ],
+      },
     ],
     doc: {
       titre: 'Le peuple malgache se donne une constitution',
@@ -327,20 +397,12 @@ const S = [
         '« Préserver ses richesses naturelles pour les générations futures. »',
         'Parce qu’elle révèle le projet de société d’une époque : la comparer aux constitutions précédentes, c’est lire ce que chaque République a voulu changer.']
     },
-    reperes: {
-      dates: [['17 novembre 2010', 'référendum : naissance de la Quatrième République'],
-        ['Janvier 2014', 'Hery Rajaonarimampianina, premier président élu'],
-        ['Janvier 2019', 'Andry Rajoelina devient président élu']],
-      persos: [['Hery Rajaonarimampianina', 'président élu de 2014 à 2018'],
-        ['Andry Nirina Rajoelina', 'chef de la transition, puis président élu depuis 2019']],
-      mots: [['Référendum', 'vote par lequel le peuple approuve ou rejette un texte'],
-        ['Constitution', 'loi fondamentale qui organise l’État'],
-        ['Développement durable', 'développer sans épuiser les ressources des générations futures']]
-    },
-    idee: {
-      faux: 'Andry Rajoelina a toujours été un président élu.',
-      vrai: 'Non : il faut distinguer ses deux rôles — chef de la transition (2009-2013, non élu), puis président élu (depuis janvier 2019). Entre les deux : la présidence élue de Hery Rajaonarimampianina (2014-2018).'
-    },
+    lexique: [
+      ['Référendum', 'vote par lequel le peuple approuve ou rejette un texte'],
+      ['Constitution', 'loi fondamentale qui organise l’État'],
+      ['Développement durable', 'développer sans épuiser les ressources des générations futures'],
+      ['Président élu', 'président désigné par le vote des citoyens'],
+    ],
     synthese: 'née du référendum du 17-11-2010 ; devise Fitiavana-Tanindrazana-Fandrosoana ; transition 2009-2013 ; présidents élus : Rajaonarimampianina (2014-2018), Rajoelina (depuis 2019) ; cap : développement durable.',
     saistu: 'La constitution de 2010 est déjà la quatrième de notre histoire — après celles de 1959, de 1975 et de 1992. À chaque République sa constitution : la comparer aux précédentes, c’est lire d’un coup d’œil ce que chaque époque a voulu changer. Quatre textes, quatre projets de société : une mine d’or pour les historiens !',
     exos: ['Carte d’identité. a) De quel événement la Quatrième République est-elle née, et à quelle date ? b) Quelle est sa devise ? d) Quel est son nom officiel ? e) Quels emblèmes partage-t-elle avec les Républiques précédentes ?',
@@ -357,11 +419,40 @@ const S = [
     mat: 'Schéma des institutions, textes constitutionnels simplifiés, tableau comparatif',
     revQ: 'Devise et date de naissance de la Quatrième République ?',
     revRA: 'Fitiavana - Tanindrazana - Fandrosoana ; référendum du 17 novembre 2010.',
-    situation: 'Qui fabrique les lois ? Qui les applique ? Qui punit celui qui les viole ? Si une seule personne faisait les trois, elle serait toute-puissante — et le citoyen sans défense. C’est pourquoi, depuis 1958, chaque République malgache organise l’État en trois pouvoirs séparés. Entrons dans la machine de l’État.',
-    recit: [
-      'L’idée vient de loin. Au ##XVIIIᵉ siècle##, le philosophe @@Montesquieu@@ l’énonce dans //De l’esprit des lois// : pour qu’on ne puisse abuser du pouvoir, il faut que le pouvoir arrête le pouvoir. D’où la **séparation des pouvoirs** : le **pouvoir exécutif** — chef de l’État et gouvernement — applique les lois ; le **pouvoir législatif** — députés et sénateurs — vote les lois ; le **pouvoir judiciaire** — tribunaux et hautes cours — les fait respecter. Trois jambes pour l’État, et aucune ne doit écraser les autres : c’est la protection du citoyen.',
-      'Chaque République malgache a organisé ces pouvoirs à sa manière. Première République : le chef de l’État est aussi chef du gouvernement — l’exécutif est concentré. Deuxième République : un organe original apparaît, le **Conseil Suprême de la Révolution** (C.S.R.), qui oriente l’État selon le boky mena. Troisième République : le modèle complet s’installe — exécutif à deux têtes, Parlement avec députés et sénateurs, et au sommet du judiciaire la **Haute Cour Constitutionnelle** (HCC), gardienne de la constitution.',
-      'Quatrième République : même architecture, renforcée par la **Haute Cour de Justice** (HCJ), chargée de juger les plus hauts responsables. Comparer les institutions, c’est le travail de l’historien : repérer ce qui continue — trois pouvoirs partout — et ce qui change — C.S.R. hier, HCC et HCJ aujourd’hui. La continuité et le changement : deux lunettes à porter ensemble.'
+    situation: 'Qui fabrique les lois ? Qui les applique ? Qui punit celui qui les viole ? Si une seule personne faisait les trois, elle serait toute-puissante — et le citoyen sans défense. C’est pourquoi, depuis 1958, chaque République malgache organise l’État en trois pouvoirs séparés.',
+    legende: 'Qui fabrique les lois ? Qui les applique ? Qui juge ? Entrons dans la machine de l’État.',
+    motsCles: ['pouvoir exécutif', 'pouvoir législatif', 'pouvoir judiciaire', 'séparation des pouvoirs', 'Montesquieu', 'Conseil Suprême de la Révolution', 'HCC', 'HCJ', 'constitution'],
+    sections: [
+      {
+        titre: 'Les trois pouvoirs de l’État',
+        puces: [
+          'le pouvoir exécutif — chef de l’État et gouvernement — applique les lois ;',
+          'le pouvoir législatif — députés et sénateurs — vote les lois ;',
+          'le pouvoir judiciaire — tribunaux et hautes cours — les fait respecter.',
+        ],
+      },
+      {
+        titre: 'Pourquoi les séparer ?',
+        paras: [
+          'L’idée vient du philosophe Montesquieu, au XVIIIᵉ siècle : pour qu’on ne puisse abuser du pouvoir, il faut que le pouvoir arrête le pouvoir. La séparation des pouvoirs protège le citoyen — celui qui applique la loi ne doit être ni celui qui l’écrit, ni celui qui juge.',
+        ],
+      },
+      {
+        titre: 'Les institutions à travers les quatre Républiques',
+        puces: [
+          'Première République : le chef de l’État est aussi chef du gouvernement — l’exécutif est concentré ;',
+          'Deuxième République : un organe original apparaît, le Conseil Suprême de la Révolution (C.S.R.) ;',
+          'Troisième République : exécutif à deux têtes, Parlement avec députés et sénateurs, et la Haute Cour Constitutionnelle (HCC), gardienne de la constitution ;',
+          'Quatrième République : même architecture, renforcée par la Haute Cour de Justice (HCJ), chargée de juger les plus hauts responsables.',
+        ],
+        paras2: [],
+      },
+      {
+        titre: 'Continuité et changement',
+        paras: [
+          'Comparer les institutions, c’est le travail de l’historien : repérer ce qui continue — trois pouvoirs partout — et ce qui change — C.S.R. hier, HCC et HCJ aujourd’hui.',
+        ],
+      },
     ],
     doc: {
       titre: 'Que le pouvoir arrête le pouvoir',
@@ -374,18 +465,12 @@ const S = [
         'L’abus de pouvoir : « tout homme qui a du pouvoir est porté à en abuser » — un seul détenteur des trois pouvoirs serait tout-puissant.',
         'Les quatre constitutions malgaches séparent exécutif, législatif et judiciaire : chaque pouvoir arrête l’autre, comme le voulait Montesquieu.']
     },
-    reperes: {
-      dates: [['1748', 'Montesquieu publie De l’esprit des lois']],
-      persos: [['Montesquieu', 'philosophe français, père de la séparation des pouvoirs']],
-      mots: [['Pouvoir exécutif', 'chef de l’État + gouvernement : applique les lois'],
-        ['Pouvoir législatif', 'députés + sénateurs : vote les lois'],
-        ['Pouvoir judiciaire', 'tribunaux et hautes cours : fait respecter les lois'],
-        ['HCC / HCJ', 'gardienne de la constitution / juge des plus hauts responsables']]
-    },
-    idee: {
-      faux: 'C’est le président qui fait les lois.',
-      vrai: 'Non : il les propose et les applique, mais c’est le Parlement — députés et sénateurs — qui les vote. Chaque pouvoir reste dans son couloir !'
-    },
+    lexique: [
+      ['Pouvoir exécutif', 'chef de l’État + gouvernement : applique les lois'],
+      ['Pouvoir législatif', 'députés + sénateurs : vote les lois'],
+      ['Pouvoir judiciaire', 'tribunaux et hautes cours : fait respecter les lois'],
+      ['HCC / HCJ', 'gardienne de la constitution / juge des plus hauts responsables'],
+    ],
     synthese: 'trois pouvoirs : exécutif (applique), législatif (vote), judiciaire (juge) ; 1ʳᵉ Rép. : exécutif concentré ; 2ᵉ : C.S.R. ; 3ᵉ : exécutif à deux têtes + HCC ; 4ᵉ : HCC et HCJ ; principe : la séparation protège le citoyen.',
     saistu: 'L’idée de séparer les trois pouvoirs a été défendue au XVIIIᵉ siècle par le philosophe français Montesquieu dans « De l’esprit des lois » : « pour qu’on ne puisse abuser du pouvoir, il faut que le pouvoir arrête le pouvoir ». Trois siècles plus tard, presque toutes les constitutions du monde — dont les quatre constitutions malgaches — reposent sur son idée.',
     exos: ['Les trois pouvoirs. a) Qui compose le pouvoir exécutif ? b) Qui compose le pouvoir législatif ? d) Que fait le pouvoir judiciaire ? e) Pourquoi les sépare-t-on ?',
@@ -403,10 +488,29 @@ const S = [
     revQ: 'Cite les trois pouvoirs et leur mission.',
     revRA: 'Exécutif : appliquer les lois ; législatif : les voter ; judiciaire : les faire respecter.',
     situation: 'Quatre Républiques, quatre caps : l’une regarde vers la France, l’autre vers la révolution socialiste, la troisième vers le marché mondial, la quatrième vers le développement durable. Comme un capitaine change de route, l’État malgache a plusieurs fois changé de direction. Comparons les journaux de bord !',
-    recit: [
-      'Première République (##1958-1972##) : jeune État, Madagascar reste étroitement lié à la **communauté française** — coopérants, monnaie, commerce, armée. C’est cette **dépendance** que contestera le mouvement de 1972. Deuxième République (##1975-1993##) : cap inverse ! Le **boky mena** nationalise les grands secteurs, la **SINPA** organise la collecte des produits agricoles, les collectivités décentralisées démocratisent l’administration, la **malgachisation** transforme l’école.',
-      'Troisième République (##1993-2010##) : nouveau renversement — la **démocratie** et la **libéralisation** rouvrent l’économie ; le pays s’intègre à la **mondialisation**, applique les **ajustements structurels** demandés par les bailleurs de fonds et promeut le secteur privé. Quatrième République (depuis ##2010##) : l’État affiche un **développement durable** — croissance, mais sans sacrifier les forêts, les sols et les générations futures.',
-      'La leçon de l’historien : ces principes ne tombent pas du ciel ; chacun répond aux difficultés du cap précédent. La dépendance appelle la révolution ; les difficultés du socialisme appellent la libéralisation ; les excès de l’exploitation appellent le développement durable. Comprendre l’enchaînement, c’est comprendre soixante ans d’histoire.'
+    legende: 'Quatre Républiques, quatre caps : France, socialisme, marché mondial, développement durable.',
+    motsCles: ['dépendance', 'communauté française', 'boky mena', 'SINPA', 'malgachisation', 'libéralisation', 'mondialisation', 'ajustements structurels', 'développement durable'],
+    sections: [
+      {
+        titre: 'Première et Deuxième Républiques : de la dépendance au socialisme',
+        paras: [
+          'Première République (1958-1972) : jeune État, Madagascar reste étroitement lié à la communauté française — coopérants, monnaie, commerce, armée. C’est cette dépendance que contestera le mouvement de 1972.',
+          'Deuxième République (1975-1993) : cap inverse ! Le boky mena nationalise les grands secteurs, la SINPA organise la collecte des produits agricoles, les collectivités décentralisées démocratisent l’administration, la malgachisation transforme l’école.',
+        ],
+      },
+      {
+        titre: 'Troisième et Quatrième Républiques : le marché, puis le durable',
+        paras: [
+          'Troisième République (1993-2010) : nouveau renversement — la démocratie et la libéralisation rouvrent l’économie ; le pays s’intègre à la mondialisation, applique les ajustements structurels demandés par les bailleurs de fonds et promeut le secteur privé.',
+          'Quatrième République (depuis 2010) : l’État affiche un développement durable — croissance, mais sans sacrifier les forêts, les sols et les générations futures.',
+        ],
+      },
+      {
+        titre: 'Comprendre l’enchaînement',
+        paras: [
+          'Ces principes ne tombent pas du ciel : chacun répond aux difficultés du cap précédent. La dépendance appelle la révolution ; les difficultés du socialisme appellent la libéralisation ; les excès de l’exploitation appellent le développement durable. Comprendre l’enchaînement, c’est comprendre soixante ans d’histoire.',
+        ],
+      },
     ],
     doc: {
       titre: 'Un grand-père raconte ses quatre Républiques',
@@ -419,17 +523,13 @@ const S = [
         'Une source orale (témoignage), reconstituée : la mémoire déforme et simplifie — il faut recouper avec archives et journaux.',
         'Que chaque République a tellement changé la vie quotidienne que le pays semblait différent à chaque fois : le principe de base se lit jusque dans la vie des familles.']
     },
-    reperes: {
-      mots: [['1ʳᵉ République', 'dépendance envers la communauté française'],
-        ['2ᵉ République', 'révolution socialiste : boky mena, SINPA, malgachisation'],
-        ['3ᵉ République', 'démocratie, libéralisation, mondialisation, ajustements structurels'],
-        ['4ᵉ République', 'développement durable'],
-        ['Ajustements structurels', 'réformes économiques demandées par les bailleurs de fonds']]
-    },
-    idee: {
-      faux: 'La malgachisation de l’école date de la Troisième République.',
-      vrai: 'Non : c’est une réalisation de la Deuxième République, dans le cadre du boky mena. Toujours accrocher chaque principe à sa République et à ses dates !'
-    },
+    lexique: [
+      ['1ʳᵉ République', 'dépendance envers la communauté française'],
+      ['2ᵉ République', 'révolution socialiste : boky mena, SINPA, malgachisation'],
+      ['3ᵉ République', 'démocratie, libéralisation, mondialisation, ajustements structurels'],
+      ['4ᵉ République', 'développement durable'],
+      ['Ajustements structurels', 'réformes économiques demandées par les bailleurs de fonds'],
+    ],
     synthese: '1ʳᵉ : dépendance envers la communauté française ; 2ᵉ : socialisme du boky mena (SINPA, décentralisation, malgachisation) ; 3ᵉ : démocratie, libéralisation, mondialisation, ajustements structurels ; 4ᵉ : développement durable — chaque cap répond au précédent.',
     saistu: 'SINPA signifie « Sociétés d’Intérêt National des Produits Agricoles » : dans les années 1970, ses dépôts recevaient le riz collecté dans tout le pays avant de le redistribuer. Les anciens se souviennent encore des files d’attente devant ses magasins — un simple sigle peut contenir toute une époque de la vie quotidienne !',
     exos: ['Associer. Relie chaque principe à sa République : a) développement durable ; b) révolution socialiste du boky mena ; d) dépendance envers la communauté française ; e) libéralisation et mondialisation.',
@@ -447,10 +547,36 @@ const S = [
     revQ: 'Associe : boky mena, développement durable, communauté française, libéralisation — à leur République.',
     revRA: '2ᵉ, 4ᵉ, 1ʳᵉ, 3ᵉ République.',
     situation: '1972, 1991, 2002, 2009 : presque une crise par décennie, et à chaque fois le pays retient son souffle — écoles fermées, marchés ralentis, familles autour de la radio. Pourquoi ces secousses reviennent-elles ? Et que coûtent-elles réellement au pays ? L’historien ne juge pas : il analyse les causes et mesure les conséquences.',
-    recit: [
-      'Côté **facteurs**, tout commence souvent par l’écart entre promesses et réalités : le **Programme Général de l’État** n’est pas réalisé, le développement reste mitigé, le quotidien du peuple ne change pas. S’y ajoutent l’aggravation de la **corruption**, qui ronge la confiance, l’**instabilité politique** entretenue par les rivalités, et l’influence des tendances internationales — les vagues de démocratisation ou de contestation qui traversent le monde touchent aussi la Grande Île. Résultat : des **crises cycliques** — ##1972##, ##1991##, ##2002##, ##2009## — presque une par décennie.',
-      'Côté **impacts**, chaque rupture casse la **continuité de l’État** : les projets s’arrêtent, les administrations changent de cap. L’économie plonge, le **chômage** se développe ; la **pauvreté** et l’**insécurité** s’accentuent, et le fossé entre riches et pauvres s’élargit. Les partenaires et **bailleurs de fonds** perdent confiance et suspendent leurs aides ; des infrastructures sont détruites — et les mouvements populaires ont coûté des vies humaines.',
-      'La leçon que le programme nous confie : l’historien ne juge pas les acteurs, il démonte le mécanisme. Comprendre ces engrenages — causes en amont, conséquences en aval — c’est se donner les moyens de les éviter, par l’**union nationale** et la responsabilité citoyenne. La stabilité est le premier capital d’une nation.'
+    legende: '1972, 1991, 2002, 2009 : presque une crise par décennie — pourquoi, et à quel prix ?',
+    motsCles: ['facteurs', 'impacts', 'Programme Général de l’État', 'corruption', 'instabilité politique', 'crises cycliques', 'chômage', 'pauvreté', 'bailleurs de fonds', 'union nationale'],
+    sections: [
+      {
+        titre: 'Les facteurs du changement fréquent de dirigeants',
+        paras: ['Tout commence souvent par l’écart entre promesses et réalités :'],
+        puces: [
+          'le Programme Général de l’État n’est pas réalisé, le développement reste mitigé ;',
+          'la corruption s’aggrave et ronge la confiance ;',
+          'l’instabilité politique est entretenue par les rivalités ;',
+          'les tendances internationales (vagues de démocratisation ou de contestation) touchent aussi la Grande Île.',
+        ],
+      },
+      {
+        titre: 'Les impacts sur le pays',
+        paras: ['Chaque rupture coûte cher :'],
+        puces: [
+          'la continuité de l’État se casse : les projets s’arrêtent, les administrations changent de cap ;',
+          'l’économie plonge, le chômage se développe ;',
+          'la pauvreté et l’insécurité s’accentuent, le fossé entre riches et pauvres s’élargit ;',
+          'les bailleurs de fonds perdent confiance et suspendent leurs aides ;',
+          'des infrastructures sont détruites, et des vies humaines ont été perdues.',
+        ],
+      },
+      {
+        titre: 'La leçon de l’historien',
+        paras: [
+          'L’historien ne juge pas les acteurs : il démonte le mécanisme. Comprendre ces engrenages — causes en amont, conséquences en aval — c’est se donner les moyens de les éviter, par l’union nationale et la responsabilité citoyenne. La stabilité est le premier capital d’une nation.',
+        ],
+      },
     ],
     doc: {
       titre: 'Une ville à l’arrêt',
@@ -463,17 +589,12 @@ const S = [
         'Les bailleurs de fonds : ils suspendent leurs programmes — la perte de confiance des partenaires.',
         'Les causes en amont : programme de l’État non réalisé, corruption, instabilité politique, influences internationales — le document montre l’aval, la leçon explique l’amont.']
     },
-    reperes: {
-      dates: [['1972, 1991, 2002, 2009', 'les quatre grandes crises — presque une par décennie']],
-      mots: [['Facteur', 'cause qui provoque ou prépare une crise'],
-        ['Impact', 'conséquence subie après la crise'],
-        ['Crises cycliques', 'crises qui reviennent à intervalles réguliers'],
-        ['Bailleurs de fonds', 'partenaires qui financent des projets de développement']]
-    },
-    idee: {
-      faux: 'C’est le chômage qui a provoqué les crises.',
-      vrai: 'Non — c’est l’inverse dans l’analyse du programme : le chômage qui se développe est un IMPACT des crises ; les facteurs sont en amont (programme non réalisé, corruption, instabilité…). Ne confonds jamais cause et conséquence.'
-    },
+    lexique: [
+      ['Facteur', 'cause qui provoque ou prépare une crise'],
+      ['Impact', 'conséquence subie après la crise'],
+      ['Crises cycliques', 'crises qui reviennent à intervalles réguliers'],
+      ['Bailleurs de fonds', 'partenaires qui financent des projets de développement'],
+    ],
     synthese: 'facteurs : programme non réalisé, développement mitigé, corruption, crises cycliques, instabilité, influences internationales ; impacts : non-continuité de l’État, crise économique, chômage, pauvreté, insécurité, fossé social, défiance des bailleurs, infrastructures détruites, pertes humaines.',
     saistu: 'Les économistes ont calculé que chaque grande crise fait reculer le pays de plusieurs années de croissance : usines fermées, touristes partis, chantiers arrêtés mettent souvent une décennie à revenir. C’est pourquoi l’on dit que la stabilité est le premier capital d’une nation — un capital invisible, mais plus précieux que l’or.',
     exos: ['Facteurs ou impacts ? Classe : a) aggravation de la corruption ; b) perte de confiance des bailleurs de fonds ; d) non-réalisation du Programme Général de l’État ; e) élargissement du fossé entre riches et pauvres.',
