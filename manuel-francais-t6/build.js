@@ -92,6 +92,20 @@ function contents() {
     tocLink("s22", "    Séance 22 — Lecture-fluidité : lire un compte-rendu"),
     tocLink("s23", "    Séance 23 — Révision"),
     tocLink("s24", "    Séance 24 — Test"),
+    p("", { after: 40 }),
+    tocLink("unit3", "UNITÉ 3 — LES NOUVELLES TECHNOLOGIES (Séances 25–36)", { bold: true, size: 26 }),
+    tocLink("s25", "    Séance 25 — Compréhension orale : tutoriel « Le petit guide de Lova »"),
+    tocLink("s26", "    Séance 26 — Lexique : les mots du numérique"),
+    tocLink("s27", "    Séance 27 — Compréhension écrite : « La salle informatique » — deviner un mot inconnu"),
+    tocLink("s28", "    Séance 28 — L'expression de la cause"),
+    tocLink("s29", "    Séance 29 — La forme négative ; l'impérative négative"),
+    tocLink("s30", "    Séance 30 — Les modes verbaux : infinitif, futur simple, subjonctif"),
+    tocLink("s31", "    Séance 31 — Production orale (1) : opinions et mises en garde — le débat"),
+    tocLink("s32", "    Séance 32 — Production orale (2) : présenter un tutoriel"),
+    tocLink("s33", "    Séance 33 — Production écrite : rédiger un mode d'emploi"),
+    tocLink("s34", "    Séance 34 — Lecture-fluidité : lire un mode d'emploi"),
+    tocLink("s35", "    Séance 35 — Révision"),
+    tocLink("s36", "    Séance 36 — Test"),
   ];
 }
 
@@ -138,6 +152,7 @@ async function main() {
         ...dashboard(), pageBreak(),
         ...require("./unit1")(),
         ...require("./unit2")(),
+        ...require("./unit3")(),
       ],
     }],
   });
