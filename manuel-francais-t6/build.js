@@ -134,6 +134,20 @@ function contents() {
     tocLink("s58", "    Séance 58 — Lecture-fluidité : lire un récit de vie"),
     tocLink("s59", "    Séance 59 — Révision"),
     tocLink("s60", "    Séance 60 — Test"),
+    p("", { after: 40 }),
+    tocLink("unit6", "UNITÉ 6 — LE MONDE IMAGINAIRE (Séances 61–72)", { bold: true, size: 26 }),
+    tocLink("s61", "    Séance 61 — Compréhension orale : conte « Faralahy et l'oiseau de pluie »"),
+    tocLink("s62", "    Séance 62 — Lexique : les mots du monde imaginaire"),
+    tocLink("s63", "    Séance 63 — Compréhension écrite : fable « Le merle et le caméléon »"),
+    tocLink("s64", "    Séance 64 — Les verbes d'action et de mouvement"),
+    tocLink("s65", "    Séance 65 — La forme négative et les pronoms COI"),
+    tocLink("s66", "    Séance 66 — Production orale (1) : la morale et l'utilité des contes"),
+    tocLink("s67", "    Séance 67 — Production orale (2) : raconter un conte en public"),
+    tocLink("s68", "    Séance 68 — Production écrite (1) : le cadavre exquis"),
+    tocLink("s69", "    Séance 69 — Production écrite (2) : inventer mon conte"),
+    tocLink("s70", "    Séance 70 — Lecture expressive : lire son conte"),
+    tocLink("s71", "    Séance 71 — Révision"),
+    tocLink("s72", "    Séance 72 — Test"),
   ];
 }
 
@@ -183,6 +197,7 @@ async function main() {
         ...require("./unit3")(),
         ...require("./unit4")(),
         ...require("./unit5")(),
+        ...require("./unit6")(),
       ],
     }],
   });
