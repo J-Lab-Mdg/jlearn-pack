@@ -12,7 +12,7 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 | Générateur de séances (seance-generator.js, adapté T6) | ✅ Terminé |
 | **Unité 1 — Les régions administratives de Madagascar (S1-S10)** | ✅ **Terminée et intégrée au build** |
 | **Unité 2 — L'utilisation des ressources naturelles (S11-S26)** | ✅ **Terminée et intégrée au build** |
-| **Unité 3 — La population malgache (S27-S38)** | 🔶 **Leçons + révision + examen intégrées (S27-S32 : 6 scènes sur 10 ; S33-S36 à générer)** |
+| **Unité 3 — La population malgache (S27-S38)** | ✅ **Terminée et intégrée au build** |
 | **Unité 3 — La population malgache (S27-S38)** | ⬜ À venir |
 | **Unité 4 — L'exode rural à Madagascar (S39-S50)** | ⬜ À venir |
 | **Unité 5 — Les grandes zones économiques et les activités économiques (S51-S66)** | ⬜ À venir |
@@ -30,8 +30,8 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 - `src/builders.js`, `src/seance-generator.js` — Copiés de geo-t5, adaptés (classe T6, chemins des scènes).
 - `src/verifications.py` — Vérifications structurelles ; contrôle anti-mention-ministérielle en regex `\bminist\w*` (le vocabulaire officiel « régions administratives » reste autorisé, toute mention de ministère reste bloquée).
 - `svg/` — 32 schémas pédagogiques (`geo6_*.png`) : U1 (pyramide administrative, cartes de régions…) + U2 (eau/forêts… mini-projet) + U3 (carte de répartition, densité, causes, accroissement naturel, migration, pendulaire, causes/conséquences, pyramide des âges, impacts de la croissance, population/développement).
-- `scenes/` — 24 scènes semi-réalistes (une par leçon, JPEG 900 px q85) : 8 (U1) + 14 (U2) + 6 (U3, S27-S32) ; 4 scènes U3 restantes (S33-S36) à générer.
-- `output/Manuel_Geographie_T6_JLearn.docx` — Build V3 — Unités 1, 2 et 3 (**7 174 Ko**, 38 séances, 35 fiches, 60 images, 28 documents d'appui).
+- `scenes/` — 28 scènes semi-réalistes (une par leçon, JPEG 900 px q85) : 8 (U1) + 14 (U2) + 10 (U3).
+- `output/Manuel_Geographie_T6_JLearn.docx` — Build V3 — Unités 1, 2 et 3 (**7 795 Ko**, 38 séances, 35 fiches, 64 images, 32 documents d'appui).
 
 ## Générer le manuel
 
