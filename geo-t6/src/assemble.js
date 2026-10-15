@@ -9,6 +9,9 @@ const U1REV = require("./data-unite1-rev");
 const U2A = require("./data-unite2");
 const U2B = require("./data-unite2b");
 const U2REV = require("./data-unite2-rev");
+const U3A = require("./data-unite3");
+const U3B = require("./data-unite3b");
+const U3REV = require("./data-unite3-rev");
 
 // Annexes optionnelles tant qu'elles ne sont pas créées (fin de projet)
 const annexesPath = path.join(__dirname, "annexes.js");
@@ -38,11 +41,20 @@ const UNITES = [
     rev: U2REV.revision,
     exam: U2REV.examen,
   },
+  {
+    id: "unite3",
+    nom: "UNITÉ 3 — LA POPULATION MALGACHE",
+    seances: "Séances 27 à 38",
+    lecons: 10,
+    intro: "Thématique officielle du programme d'études T6 : la population malgache — la répartition inégale de la population (manifestations, notion de densité, zones fortement et peu peuplées, causes et conséquences), l'évolution en nombre de la population (natalité, mortalité, accroissement naturel, facteurs dus à la migration), les migrations (émigration, immigration, mouvement pendulaire, causes et conséquences), la croissance démographique, la structure de la population par âge et par sexe (pyramide des âges) et les impacts de la croissance rapide sur le développement socioéconomique. Durée officielle : 5 heures, soit 10 séances de 30 minutes.",
+    topics: [...U3A.topics, ...U3B.topics],
+    rev: U3REV.revision,
+    exam: U3REV.examen,
+  },
 ];
 
 // Unités encore à produire (affichées comme « à paraître » dans le sommaire et le tableau de bord)
 const FUTURES = [
-  { nom: "UNITÉ 3 — LA POPULATION MALGACHE", seances: "Séances 27 à 38", lecons: 10 },
   { nom: "UNITÉ 4 — L'EXODE RURAL À MADAGASCAR", seances: "Séances 39 à 50", lecons: 10 },
   { nom: "UNITÉ 5 — LES GRANDES ZONES ÉCONOMIQUES ET LES ACTIVITÉS ÉCONOMIQUES", seances: "Séances 51 à 66", lecons: 14 },
   { nom: "UNITÉ 6 — LE VILLAGE ÉCOLOGIQUE", seances: "Séances 67 à 78", lecons: 10 },

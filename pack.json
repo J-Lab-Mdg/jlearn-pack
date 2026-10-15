@@ -972,6 +972,56 @@
       "id": "geo6_mini_projet",
       "url": "/geo6_mini_projet.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo6_repartition_population",
+      "url": "/geo6_repartition_population.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_densite",
+      "url": "/geo6_densite.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_causes_repartition",
+      "url": "/geo6_causes_repartition.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_accroissement",
+      "url": "/geo6_accroissement.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_migration",
+      "url": "/geo6_migration.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_pendulaire",
+      "url": "/geo6_pendulaire.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_causes_consequences_migrations",
+      "url": "/geo6_causes_consequences_migrations.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_pyramide_ages",
+      "url": "/geo6_pyramide_ages.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_impacts_croissance",
+      "url": "/geo6_impacts_croissance.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_population_developpement",
+      "url": "/geo6_population_developpement.png",
+      "type": "image/png"
     }
   ]
 }

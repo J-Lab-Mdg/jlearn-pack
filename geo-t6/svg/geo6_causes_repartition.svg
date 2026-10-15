@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Pourquoi cette répartition inégale ?</text>
+  <rect x="40" y="100" width="440" height="330" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="260" y="138" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">CE QUI ATTIRE LES HOMMES</text>
+  <text x="260" y="190" text-anchor="middle" font-size="18" fill="#263238">• La pluie régulière de la côte est</text>
+  <text x="260" y="225" text-anchor="middle" font-size="18" fill="#263238">• Le climat doux des Hautes Terres</text>
+  <text x="260" y="260" text-anchor="middle" font-size="18" fill="#263238">• Les terres fertiles des vallées</text>
+  <text x="260" y="295" text-anchor="middle" font-size="18" fill="#263238">• Les villes, les ports et les routes</text>
+  
+  <g transform="translate(160,390) scale(1)">
+    <rect x="-16" y="-6" width="32" height="22" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  <g transform="translate(230,395) scale(0.8)">
+    <rect x="-16" y="-6" width="32" height="22" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  <g transform="translate(300,390) scale(1)">
+    <rect x="-16" y="-6" width="32" height="22" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  <g transform="translate(370,395) scale(0.8)">
+    <rect x="-16" y="-6" width="32" height="22" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  <text x="260" y="425" text-anchor="middle" font-size="18" fill="#1B5E20" font-weight="bold">→ des zones peuplées</text>
+  <rect x="520" y="100" width="440" height="330" rx="18" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="740" y="138" text-anchor="middle" font-size="20" fill="#C00000" font-weight="bold">CE QUI ÉLOIGNE LES HOMMES</text>
+  <text x="740" y="190" text-anchor="middle" font-size="18" fill="#263238">• La sécheresse du Grand Sud</text>
+  <text x="740" y="225" text-anchor="middle" font-size="18" fill="#263238">• La chaleur sèche de l'Ouest</text>
+  <text x="740" y="260" text-anchor="middle" font-size="18" fill="#263238">• Les forêts denses, les rochers</text>
+  <text x="740" y="295" text-anchor="middle" font-size="18" fill="#263238">• L'éloignement des villes et routes</text>
+  
+  <g transform="translate(700,390) scale(0.7)">
+    <rect x="-16" y="-6" width="32" height="22" fill="#E0E0E0" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  <g transform="translate(800,395) scale(0.5)">
+    <rect x="-16" y="-6" width="32" height="22" fill="#E0E0E0" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  <text x="740" y="425" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold">→ des zones presque vides</text>
+  <text x="500" y="480" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">Conséquences : des Hautes Terres encombrées où les terres se morcellent,</text>
+  <text x="500" y="508" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">des espaces de l'Ouest et du Sud presque inhabités.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Les hommes s'installent là où la vie est plus facile : eau, terres, villes, routes.</text>
+</svg>

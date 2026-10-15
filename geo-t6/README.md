@@ -11,7 +11,8 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 | Plan de découpage (78 numéros, 6 unités) | ✅ Terminé et validé (`PLAN-FINAL.md`) |
 | Générateur de séances (seance-generator.js, adapté T6) | ✅ Terminé |
 | **Unité 1 — Les régions administratives de Madagascar (S1-S10)** | ✅ **Terminée et intégrée au build** |
-| **Unité 2 — L'utilisation des ressources naturelles (S11-S26)** | 🔶 **Leçons + révision + examen intégrées (S11-S24 : 10 scènes sur 14 ; S21-S24 à régénérer)** |
+| **Unité 2 — L'utilisation des ressources naturelles (S11-S26)** | ✅ **Terminée et intégrée au build** |
+| **Unité 3 — La population malgache (S27-S38)** | 🔶 **Leçons + révision + examen intégrées (S27-S32 : 6 scènes sur 10 ; S33-S36 à générer)** |
 | **Unité 3 — La population malgache (S27-S38)** | ⬜ À venir |
 | **Unité 4 — L'exode rural à Madagascar (S39-S50)** | ⬜ À venir |
 | **Unité 5 — Les grandes zones économiques et les activités économiques (S51-S66)** | ⬜ À venir |
@@ -28,9 +29,9 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 - `src/assemble.js` — Assemblage du manuel (couverture, avant-propos, mode d'emploi, TdM interactive, tableaux de bord, unités disponibles, unités à paraître).
 - `src/builders.js`, `src/seance-generator.js` — Copiés de geo-t5, adaptés (classe T6, chemins des scènes).
 - `src/verifications.py` — Vérifications structurelles ; contrôle anti-mention-ministérielle en regex `\bminist\w*` (le vocabulaire officiel « régions administratives » reste autorisé, toute mention de ministère reste bloquée).
-- `svg/` — 22 schémas pédagogiques (`geo6_*.png`) : U1 (pyramide administrative, 4 cartes de régions, districts/communes, fokontany, situer sa région) + U2 (eau/forêts, halieutique, faune/flore, carte des minerais, énergies, ressources de la région, 4 utilisations, gestion, balance population/ressources, ressources mal exploitées, climat, solutions ×2, mini-projet).
-- `scenes/` — 18 scènes semi-réalistes (une par leçon, JPEG 900 px q85) : 8 (U1) + 10 (U2, S11-S20) ; 4 scènes U2 restantes (S21-S24) à générer.
-- `output/Manuel_Geographie_T6_JLearn.docx` — Build V2 — Unités 1 et 2 (**4 713 Ko**, 26 séances, 24 fiches, 40 images, 18 documents d'appui).
+- `svg/` — 32 schémas pédagogiques (`geo6_*.png`) : U1 (pyramide administrative, cartes de régions…) + U2 (eau/forêts… mini-projet) + U3 (carte de répartition, densité, causes, accroissement naturel, migration, pendulaire, causes/conséquences, pyramide des âges, impacts de la croissance, population/développement).
+- `scenes/` — 24 scènes semi-réalistes (une par leçon, JPEG 900 px q85) : 8 (U1) + 14 (U2) + 6 (U3, S27-S32) ; 4 scènes U3 restantes (S33-S36) à générer.
+- `output/Manuel_Geographie_T6_JLearn.docx` — Build V3 — Unités 1, 2 et 3 (**7 174 Ko**, 38 séances, 35 fiches, 60 images, 28 documents d'appui).
 
 ## Générer le manuel
 

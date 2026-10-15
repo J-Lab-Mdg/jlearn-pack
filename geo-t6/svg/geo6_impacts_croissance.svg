@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les impacts de la croissance rapide de la population</text>
+  <defs><marker id="af" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#546E7A"/></marker>
+<marker id="afR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#C00000"/></marker>
+<marker id="afV" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1E7B34"/></marker>
+<marker id="afB" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#01579B"/></marker></defs>
+  <rect x="300" y="95" width="400" height="80" rx="16" fill="#C00000"/>
+  <text x="500" y="130" text-anchor="middle" font-size="21" fill="#FFFFFF" font-weight="bold">LA POPULATION CROÎT VITE</text>
+  <text x="500" y="157" text-anchor="middle" font-size="16" fill="#FFFFFF" font-style="italic">elle double en une génération</text>
+  <line x1="400" y1="185" x2="300" y2="235" stroke="#546E7A" stroke-width="5" marker-end="url(#af)"/>
+  <line x1="600" y1="185" x2="700" y2="235" stroke="#546E7A" stroke-width="5" marker-end="url(#af)"/>
+  
+    <rect x="60" y="245" width="410" height="120" rx="14" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+    <text x="265" y="295" text-anchor="middle" font-size="19" fill="#C00000" font-weight="bold">INFRASTRUCTURES INSUFFISANTES</text>
+    <text x="265" y="330" text-anchor="middle" font-size="16" fill="#263238">écoles et dispensaires débordés, eau et routes en retard</text>
+  
+    <rect x="530" y="245" width="410" height="120" rx="14" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+    <text x="735" y="295" text-anchor="middle" font-size="19" fill="#C00000" font-weight="bold">MANQUE D'EMPLOI</text>
+    <text x="735" y="330" text-anchor="middle" font-size="16" fill="#263238">les jeunes ne trouvent pas de travail</text>
+  
+    <rect x="60" y="395" width="410" height="120" rx="14" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+    <text x="265" y="445" text-anchor="middle" font-size="19" fill="#C00000" font-weight="bold">L'INSÉCURITÉ</text>
+    <text x="265" y="480" text-anchor="middle" font-size="16" fill="#263238">la pauvreté pousse certains à voler</text>
+  
+    <rect x="530" y="395" width="410" height="120" rx="14" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+    <text x="735" y="445" text-anchor="middle" font-size="19" fill="#C00000" font-weight="bold">LA PAUVRETÉ</text>
+    <text x="735" y="480" text-anchor="middle" font-size="16" fill="#263238">les besoins grandissent plus vite que les richesses</text>
+  <text x="500" y="545" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Quand le pays ne suit pas, la croissance rapide freine le développement.</text>
+</svg>

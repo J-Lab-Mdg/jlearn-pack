@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">La pyramide des âges de Madagascar</text>
+  <line x1="430" y1="100" x2="430" y2="470" stroke="#546E7A" stroke-width="4"/>
+  <rect x="190" y="408" width="240" height="52" fill="#42A5F5" stroke="#1565C0" stroke-width="2"/><rect x="430" y="408" width="240" height="52" fill="#EC407A" stroke="#AD1457" stroke-width="2"/><text x="178" y="442" text-anchor="end" font-size="16" fill="#37474F" font-weight="bold">0 à 14 ans</text><rect x="255" y="349" width="175" height="52" fill="#42A5F5" stroke="#1565C0" stroke-width="2"/><rect x="430" y="349" width="175" height="52" fill="#EC407A" stroke="#AD1457" stroke-width="2"/><text x="243" y="383" text-anchor="end" font-size="16" fill="#37474F" font-weight="bold">15 à 29 ans</text><rect x="310" y="290" width="120" height="52" fill="#42A5F5" stroke="#1565C0" stroke-width="2"/><rect x="430" y="290" width="120" height="52" fill="#EC407A" stroke="#AD1457" stroke-width="2"/><text x="298" y="324" text-anchor="end" font-size="16" fill="#37474F" font-weight="bold">30 à 44 ans</text><rect x="355" y="231" width="75" height="52" fill="#42A5F5" stroke="#1565C0" stroke-width="2"/><rect x="430" y="231" width="75" height="52" fill="#EC407A" stroke="#AD1457" stroke-width="2"/><text x="343" y="265" text-anchor="end" font-size="16" fill="#37474F" font-weight="bold">45 à 59 ans</text><rect x="390" y="172" width="40" height="52" fill="#42A5F5" stroke="#1565C0" stroke-width="2"/><rect x="430" y="172" width="40" height="52" fill="#EC407A" stroke="#AD1457" stroke-width="2"/><text x="378" y="206" text-anchor="end" font-size="16" fill="#37474F" font-weight="bold">60 ans et plus</text>
+  <text x="240" y="120" text-anchor="middle" font-size="19" fill="#1565C0" font-weight="bold">GARÇONS</text>
+  <text x="620" y="120" text-anchor="middle" font-size="19" fill="#AD1457" font-weight="bold">FILLES</text>
+  <text x="430" y="492" text-anchor="middle" font-size="15" fill="#546E7A" font-style="italic">les plus jeunes ↓   l'axe des âges   ↓ les plus anciens</text>
+  <rect x="740" y="150" width="230" height="120" rx="14" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="855" y="185" text-anchor="middle" font-size="18" fill="#1B5E20" font-weight="bold">BASE LARGE</text>
+  <text x="855" y="215" text-anchor="middle" font-size="17" fill="#263238">beaucoup</text>
+  <text x="855" y="240" text-anchor="middle" font-size="17" fill="#263238">d'enfants</text>
+  <rect x="740" y="310" width="230" height="120" rx="14" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="855" y="345" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold">SOMMET FIN</text>
+  <text x="855" y="375" text-anchor="middle" font-size="17" fill="#263238">peu</text>
+  <text x="855" y="400" text-anchor="middle" font-size="17" fill="#263238">d'anciens</text>
+  <text x="500" y="510" text-anchor="middle" font-size="21" fill="#263238" font-weight="bold">Plus de 4 habitants sur 10 ont moins de 15 ans : une population jeune.</text>
+  <text x="500" y="548" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">La pyramide des âges montre la structure de la population par âge et par sexe.</text>
+</svg>
