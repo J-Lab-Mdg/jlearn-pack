@@ -96,7 +96,7 @@ const S10 = {
   titre: "Famerenana sy tombana — Lohahevitra III",
   lohahevitra: "III — Ny fanondranana andevo",
   famerenana: [
-    "Fanjakana VALO no nivarotra andevo : Antakarana, Sakalava, Betsimisaraka, Merina, Betsileo, Antemoro, Antanosy, Mahafaly.",
+    "Fanjakana VALO no nivarotra andevo : Antakarana, Antandroy, Betsileo, Betsimisaraka, Bezanozano, Merina, Sakalava, Sihanaka.",
     "Ny antony : ARA-TAFIKA (basy sy vanja), ARA-PITAOVANA (toaka, sigara, fitaratra, lamba), ARA-TOEKARENA (vola).",
     "Ny fisehony : fifanafihana samy Malagasy nahazoana babo ; ny Sakalava nanafika hatrany Mozambika sy Komaoro.",
     "Ny toerana : ny tsenan'i Moramanga sy ireo seranana amoron-tsiraka ; naondrana tany Mascareignes (Maurice, La Réunion) sy Afrika atsinanana ny andevo.",
@@ -107,7 +107,7 @@ const S10 = {
       points: 4,
       consigne: "Tanisao fanjakana efatra nivarotra andevo.",
       items: [],
-      corrige: [[{ text: "Ohatra : Antakarana, Sakalava, Betsimisaraka, Merina (na Betsileo, Antemoro, Antanosy, Mahafaly)", cle: true }, { text: "." }]],
+      corrige: [[{ text: "Ohatra : Antakarana, Sakalava, Betsimisaraka, Merina (na Antandroy, Betsileo, Bezanozano, Sihanaka)", cle: true }, { text: "." }]],
     },
     {
       points: 4,

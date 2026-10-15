@@ -75,7 +75,7 @@ function annexe3(rootDir) {
   if (im) out.push(im);
   out.push(leg("Sari-tany famintinana : ny lalan'ny varotra andevo", "tovana3"));
   [
-    "Fanjakana VALO no nivarotra andevo : Antakarana, Sakalava, Betsimisaraka, Merina, Betsileo, Antemoro, Antanosy, Mahafaly.",
+    "Fanjakana VALO no nivarotra andevo : Antakarana, Antandroy, Betsileo, Betsimisaraka, Bezanozano, Merina, Sakalava, Sihanaka.",
     "Ny babo azo tamin'ny fifanafihana samy Malagasy no namidy ; ny Sakalava koa nanafika hatrany Mozambika sy ny Nosy Komaoro.",
     "Ny tsenan'i Moramanga sy ireo seranana amoron-tsiraka no toerana nivarotana.",
     "Naondrana tany amin'ny Nosy Mascareignes (Maurice sy La Réunion) sy tany Afrika atsinanana ny andevo, niasa tamin'ny toham-boly fary sy landihazo.",

@@ -47,7 +47,7 @@ const seances = [
   },
   famakafakana: {
     qa: [
-      { q: "Tanisao ireo fanjakana nivarotra andevo.", ra: "Ny fanjakana Antakarana, Sakalava, Betsimisaraka, Merina, Betsileo, Antemoro, Antanosy ary Mahafaly (fanjakana valo)." },
+      { q: "Tanisao ireo fanjakana nivarotra andevo.", ra: "Ny fanjakana Antakarana, Antandroy, Betsileo, Betsimisaraka, Bezanozano, Merina, Sakalava ary Sihanaka (fanjakana valo)." },
       { q: "Inona ny antony ara-tafika nivarotana andevo ?", ra: "Nilaina ny basy sy ny vanja mba hanamafisana ny tafika sy hanafihana ny fanjakana hafa." },
       { q: "Inona ny antony ara-pitaovana ?", ra: "Nila entana vazaha ny mpanjaka : toaka (whisky), sigara, fitaratra, lamba sy fitaovana hafa." },
       { q: "Inona ny antony ara-toekarena ?", ra: "Nahazoana vola ny varotra andevo ka nampitombo ny haren'ny mpanjaka sy ny fanjakany." },
@@ -85,7 +85,7 @@ const seances = [
       {
         titre: "1. Ireo fanjakana nivarotra andevo",
         paras: [
-          "Fanjakana valo teto Madagasikara no nivarotra andevo tamin'ny taonjato XVII ka hatramin'ny XIX : ny fanjakana Antakarana, Sakalava, Betsimisaraka, Merina, Betsileo, Antemoro, Antanosy ary Mahafaly.",
+          "Fanjakana valo teto Madagasikara no nivarotra andevo tamin'ny taonjato XVI ka hatramin'ny XIX : ny fanjakana Antakarana, Antandroy, Betsileo, Betsimisaraka, Bezanozano, Merina, Sakalava ary Sihanaka.",
         ],
         puces: [],
       },
@@ -146,7 +146,7 @@ const seances = [
   imageLegende: "Ny seranana amoron-tsiraka : toerana nanaovana ny varotra andevo",
   famerenana: {
     qa: [
-      { q: "Firy ny fanjakana nivarotra andevo ? Tanisao ny sasany.", ra: "Valo : Antakarana, Sakalava, Betsimisaraka, Merina, Betsileo, Antemoro, Antanosy, Mahafaly." },
+      { q: "Firy ny fanjakana nivarotra andevo ? Tanisao ny sasany.", ra: "Valo : Antakarana, Antandroy, Betsileo, Betsimisaraka, Bezanozano, Merina, Sakalava, Sihanaka." },
       { q: "Inona avy ireo antony nivarotana andevo ?", ra: "Ara-tafika, ara-pitaovana, ara-toekarena." },
     ],
     technique: "Fanontaniana / valiny",
@@ -221,22 +221,22 @@ const seances = [
         paras: [],
         puces: [
           "Ny tsenan'i Moramanga : tsena an-tanety malaza nivarotana andevo ; avy amin'ny hoe « mora ny zaza manga » hono ny anarany.",
-          "Ireo seranana amoron-tsiraka atsinanana sy andrefana : teo no nihaonan'ny mpivarotra Malagasy sy ny sambo vahiny.",
+          "Ireo seranana amoron-tsiraka atsinanana, andrefana ary atsimo-atsinanana : teo no nihaonan'ny mpivarotra Malagasy sy ny sambo vahiny.",
         ],
       },
       {
         titre: "3. Ny toerana nanondranana sy ny entana natakalo",
         paras: [
           "Ny andevo dia naondrana tany amin'ny Nosy Mascareignes (Maurice sy La Réunion) mba hiasa any amin'ny toham-boly fary sy landihazo, ary tany Afrika atsinanana.",
-          "Ny takalo azon'ny mpanjaka Malagasy : basy, vanja, toaka, sigara, fitaratra, lamba ary vola. Ny Betsimisaraka sy ny Merina no mpivarotra lehibe tamin'ny seranana atsinanana.",
+          "Ny takalo azon'ny mpanjaka Malagasy : basy, vanja, toaka, sigara, fitaratra, lamba ary vola. Ny fanjakana Sakalava sy Merina no mpanafika sady mpivarotra lehibe ; nisy koa anefa fanjakana mpividy andevo teto an-toerana, dia ny Merina sy ny Betsimisaraka.",
         ],
         puces: [],
       },
     ],
     tahirinKevitra: [
-      "Tany amin'ny Nosy Mascareignes, ny andevo Malagasy dia nampiasaina tamin'ny toham-boly fary sy landihazo ary ny asa an-trano. Ny mpiasa maro dia maty noho ny hasarotan'ny asa sy ny fitondrana henjana.",
+      "Tany amin'ny Nosy Mascareignes, ny andevo Malagasy dia nampiasaina tamin'ny toham-boly fary, landihazo ary kafe ; ny sasany natao mpiasa an-trano, mpamboly na mpamahana ny biby fiompy. Ny mpiasa maro dia maty noho ny hasarotan'ny asa sy ny fitondrana henjana.",
       "Fanontaniana : Inona no asa nampanaovina ny andevo Malagasy tany Mascareignes ?",
-      "Valiny : Ny fambolena fary sy landihazo ary ny asa an-trano.",
+      "Valiny : Ny fambolena fary, landihazo sy kafe, ny asa an-trano ary ny famahanana ny biby fiompy.",
     ],
   },
   rakibolana: [
