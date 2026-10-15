@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Le commerce intérieur et le commerce extérieur</text>
+  <defs><marker id="af" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#546E7A"/></marker>
+<marker id="afR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#C00000"/></marker>
+<marker id="afV" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1E7B34"/></marker>
+<marker id="afB" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#01579B"/></marker></defs>
+  <rect x="40" y="100" width="420" height="280" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="250" y="138" text-anchor="middle" font-size="19" fill="#1B5E20" font-weight="bold">LE COMMERCE INTÉRIEUR</text>
+  <g transform="translate(120,240) scale(1.2)"><rect x="-16" y="-6" width="32" height="22" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/><path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/></g><g transform="translate(380,240) scale(1.2)"><rect x="-16" y="-6" width="32" height="22" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/><path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/></g>
+  <line x1="180" y1="200" x2="320" y2="200" stroke="#1B5E20" stroke-width="5" marker-end="url(#afV)"/>
+  <line x1="320" y1="240" x2="180" y2="240" stroke="#1B5E20" stroke-width="5" marker-end="url(#afV)"/>
+  <text x="250" y="285" text-anchor="middle" font-size="17" fill="#263238">marchés, boutiques, taxis-brousse :</text>
+  <text x="250" y="315" text-anchor="middle" font-size="16" fill="#263238">on vend chez nous, à nous,</text>
+  <text x="250" y="345" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">en argent malgache</text>
+  <rect x="500" y="100" width="460" height="280" rx="18" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+  <text x="730" y="138" text-anchor="middle" font-size="19" fill="#01579B" font-weight="bold">LE COMMERCE EXTÉRIEUR</text>
+  <g transform="translate(730,330) scale(1.2)"><path d="M -50 0 L 50 0 L 38 18 L -38 18 Z" fill="#546E7A"/><rect x="-14" y="-34" width="28" height="34" fill="#FFFFFF" stroke="#546E7A" stroke-width="2"/><rect x="16" y="-24" width="14" height="24" fill="#B0BEC5" stroke="#546E7A" stroke-width="2"/><rect x="-30" y="-18" width="12" height="18" fill="#FFCA28" stroke="#546E7A" stroke-width="2"/></g>
+  <text x="600" y="220" text-anchor="middle" font-size="16" fill="#1B5E20" font-weight="bold">EXPORTATIONS</text>
+  <text x="600" y="250" text-anchor="middle" font-size="15" fill="#263238">vanille, crevettes,</text>
+  <text x="600" y="275" text-anchor="middle" font-size="15" fill="#263238">textile, nickel</text>
+  <line x1="660" y1="300" x2="700" y2="310" stroke="#1B5E20" stroke-width="5" marker-end="url(#afV)"/>
+  <text x="870" y="220" text-anchor="middle" font-size="16" fill="#C00000" font-weight="bold">IMPORTATIONS</text>
+  <text x="870" y="250" text-anchor="middle" font-size="15" fill="#263238">pétrole, machines,</text>
+  <text x="870" y="275" text-anchor="middle" font-size="15" fill="#263238">médicaments</text>
+  <line x1="800" y1="300" x2="760" y2="310" stroke="#C00000" stroke-width="5" marker-end="url(#afR)"/>
+  <rect x="40" y="410" width="920" height="80" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="500" y="445" text-anchor="middle" font-size="18" fill="#E65100" font-weight="bold">Notre défi : vendre des produits transformés, pas seulement bruts —</text>
+  <text x="500" y="473" text-anchor="middle" font-size="18" fill="#E65100" font-weight="bold">le parfum vaut plus que la gousse.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Dedans, les marchés ; dehors, les navires : les deux commerces du pays.</text>
+</svg>

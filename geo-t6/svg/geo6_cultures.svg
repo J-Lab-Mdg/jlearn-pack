@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Cultures vivrières et cultures commerciales</text>
+  <defs><marker id="af" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#546E7A"/></marker>
+<marker id="afR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#C00000"/></marker>
+<marker id="afV" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1E7B34"/></marker>
+<marker id="afB" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#01579B"/></marker></defs>
+  <rect x="40" y="100" width="440" height="330" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="260" y="138" text-anchor="middle" font-size="19" fill="#1B5E20" font-weight="bold">POUR MANGER (VIVRIÈRES)</text>
+  <g transform="translate(120,330) scale(2.4)"><line x1="0" y1="0" x2="0" y2="-26" stroke="#C0A16B" stroke-width="2"/><ellipse cx="0" cy="-26" rx="5" ry="8" fill="#FFD54F"/><ellipse cx="-5" cy="-18" rx="4" ry="7" fill="#FFD54F"/><ellipse cx="5" cy="-18" rx="4" ry="7" fill="#FFD54F"/><ellipse cx="-5" cy="-10" rx="4" ry="6" fill="#FFD54F"/><ellipse cx="5" cy="-10" rx="4" ry="6" fill="#FFD54F"/></g><g transform="translate(180,335) scale(2)"><line x1="0" y1="0" x2="0" y2="-26" stroke="#C0A16B" stroke-width="2"/><ellipse cx="0" cy="-26" rx="5" ry="8" fill="#FFD54F"/><ellipse cx="-5" cy="-18" rx="4" ry="7" fill="#FFD54F"/><ellipse cx="5" cy="-18" rx="4" ry="7" fill="#FFD54F"/><ellipse cx="-5" cy="-10" rx="4" ry="6" fill="#FFD54F"/><ellipse cx="5" cy="-10" rx="4" ry="6" fill="#FFD54F"/></g><g transform="translate(240,330) scale(2.4)"><line x1="0" y1="0" x2="0" y2="-26" stroke="#C0A16B" stroke-width="2"/><ellipse cx="0" cy="-26" rx="5" ry="8" fill="#FFD54F"/><ellipse cx="-5" cy="-18" rx="4" ry="7" fill="#FFD54F"/><ellipse cx="5" cy="-18" rx="4" ry="7" fill="#FFD54F"/><ellipse cx="-5" cy="-10" rx="4" ry="6" fill="#FFD54F"/><ellipse cx="5" cy="-10" rx="4" ry="6" fill="#FFD54F"/></g>
+  <text x="260" y="210" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">le riz — l'aliment de base</text>
+  <text x="260" y="248" text-anchor="middle" font-size="17" fill="#263238">le maïs, le manioc, la patate douce</text>
+  <text x="260" y="286" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">nourrissent la famille qui cultive</text>
+  <text x="260" y="400" text-anchor="middle" font-size="18" fill="#1B5E20" font-weight="bold">L'assiette de la famille, d'abord.</text>
+  <rect x="520" y="100" width="440" height="330" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="740" y="138" text-anchor="middle" font-size="19" fill="#E65100" font-weight="bold">POUR VENDRE (COMMERCIALES)</text>
+  <text x="740" y="205" text-anchor="middle" font-size="17" fill="#263238">la vanille et le girofle (côte nord-est)</text>
+  <text x="740" y="240" text-anchor="middle" font-size="17" fill="#263238">le café (les pentes de l'est)</text>
+  <text x="740" y="275" text-anchor="middle" font-size="17" fill="#263238">le litchi, le poivre, la cannelle</text>
+  <line x1="700" y1="320" x2="660" y2="410" stroke="#E65100" stroke-width="6" marker-end="url(#af)"/>
+  <line x1="780" y1="320" x2="830" y2="410" stroke="#01579B" stroke-width="6" marker-end="url(#af)"/>
+  <text x="645" y="440" text-anchor="middle" font-size="16" fill="#263238" font-weight="bold">au marché</text>
+  <text x="840" y="440" text-anchor="middle" font-size="16" fill="#263238" font-weight="bold">aux pays lointains</text>
+  <text x="500" y="510" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Vivrières : l'assiette. Commerciales : l'argent du sel, du savon et des cahiers.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Cultiver pour manger, cultiver pour vendre : les deux font la ferme.</text>
+</svg>

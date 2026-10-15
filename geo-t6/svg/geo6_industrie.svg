@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">L'industrie : agroalimentaire, textile, minière</text>
+  <text x="500" y="100" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">Transformer sur place les richesses du pays — voilà l'industrie.</text>
+  <rect x="40" y="130" width="280" height="300" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(180,250)"><rect x="-55" y="-30" width="110" height="60" rx="6" fill="#B0BEC5" stroke="#546E7A" stroke-width="3"/><rect x="-40" y="-55" width="16" height="25" fill="#78909C" stroke="#546E7A" stroke-width="2"/><rect x="24" y="-55" width="16" height="25" fill="#78909C" stroke="#546E7A" stroke-width="2"/><rect x="-25" y="-14" width="14" height="14" fill="#FFF9C4"/><rect x="11" y="-14" width="14" height="14" fill="#FFF9C4"/></g>
+  <text x="180" y="320" text-anchor="middle" font-size="17" fill="#1B5E20" font-weight="bold">AGROALIMENTAIRE</text>
+  <text x="180" y="355" text-anchor="middle" font-size="15" fill="#263238">riz décortiqué, boissons,</text>
+  <text x="180" y="380" text-anchor="middle" font-size="15" fill="#263238">sucre, crevettes congelées</text>
+  <text x="180" y="415" text-anchor="middle" font-size="15" fill="#546E7A" font-style="italic">elle nourrit le pays</text>
+  <rect x="360" y="130" width="280" height="300" rx="18" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(500,250)"><rect x="-55" y="-30" width="110" height="60" rx="6" fill="#B0BEC5" stroke="#546E7A" stroke-width="3"/><rect x="-40" y="-55" width="16" height="25" fill="#78909C" stroke="#546E7A" stroke-width="2"/><rect x="24" y="-55" width="16" height="25" fill="#78909C" stroke="#546E7A" stroke-width="2"/><rect x="-25" y="-14" width="14" height="14" fill="#FFF9C4"/><rect x="11" y="-14" width="14" height="14" fill="#FFF9C4"/></g>
+  <text x="500" y="320" text-anchor="middle" font-size="17" fill="#01579B" font-weight="bold">TEXTILE</text>
+  <text x="500" y="355" text-anchor="middle" font-size="15" fill="#263238">les zones franches cousent</text>
+  <text x="500" y="380" text-anchor="middle" font-size="15" fill="#263238">les vêtements exportés</text>
+  <text x="500" y="415" text-anchor="middle" font-size="15" fill="#546E7A" font-style="italic">des dizaines de milliers d'emplois</text>
+  <rect x="680" y="130" width="280" height="300" rx="18" fill="#ECEFF1" stroke="#90A4AE" stroke-width="3"/>
+  <g transform="translate(820,250)"><rect x="-55" y="-30" width="110" height="60" rx="6" fill="#B0BEC5" stroke="#546E7A" stroke-width="3"/><rect x="-40" y="-55" width="16" height="25" fill="#78909C" stroke="#546E7A" stroke-width="2"/><rect x="24" y="-55" width="16" height="25" fill="#78909C" stroke="#546E7A" stroke-width="2"/><rect x="-25" y="-14" width="14" height="14" fill="#FFF9C4"/><rect x="11" y="-14" width="14" height="14" fill="#FFF9C4"/></g>
+  <text x="820" y="320" text-anchor="middle" font-size="17" fill="#546E7A" font-weight="bold">MINIÈRE</text>
+  <text x="820" y="355" text-anchor="middle" font-size="15" fill="#263238">le minerai lavé, concentré,</text>
+  <text x="820" y="380" text-anchor="middle" font-size="15" fill="#263238">prêt pour les navires</text>
+  <text x="820" y="415" text-anchor="middle" font-size="15" fill="#546E7A" font-style="italic">près des mines et des ports</text>
+  <text x="500" y="490" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">Trois grandes industries : des emplois salariés et des devises pour le développement.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Usines près des villes et des ports ; produits vers les pays lointains.</text>
+</svg>

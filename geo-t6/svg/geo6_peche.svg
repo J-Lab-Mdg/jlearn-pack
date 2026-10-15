@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">La pêche artisanale et la pêche industrielle</text>
+  <rect x="0" y="330" width="1000" height="80" fill="#4FC3F7" opacity="0.5"/>
+  <text x="180" y="100" text-anchor="middle" font-size="19" fill="#E65100" font-weight="bold">LA PÊCHE ARTISANALE</text>
+  <g transform="translate(180,350) scale(1.6)"><path d="M -40 0 Q 0 18 40 0 L 30 8 Q 0 22 -30 8 Z" fill="#8D6E63"/><line x1="0" y1="-2" x2="0" y2="-40" stroke="#6D4C41" stroke-width="3"/><path d="M 0 -40 L 26 -6 L 0 -6 Z" fill="#FFF9C4" stroke="#C0A16B" stroke-width="2"/></g>
+  <text x="180" y="200" text-anchor="middle" font-size="17" fill="#263238">la pirogue, près du bord</text>
+  <text x="180" y="232" text-anchor="middle" font-size="16" fill="#263238">filets, lignes, pièges simples</text>
+  <text x="180" y="264" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">→ le poisson frais du village</text>
+  <text x="180" y="296" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">nourrit les familles</text>
+  <text x="740" y="100" text-anchor="middle" font-size="19" fill="#01579B" font-weight="bold">LA PÊCHE INDUSTRIELLE</text>
+  <g transform="translate(740,345) scale(1.6)"><path d="M -50 0 L 50 0 L 38 18 L -38 18 Z" fill="#546E7A"/><rect x="-14" y="-34" width="28" height="34" fill="#FFFFFF" stroke="#546E7A" stroke-width="2"/><rect x="16" y="-24" width="14" height="24" fill="#B0BEC5" stroke="#546E7A" stroke-width="2"/><rect x="-30" y="-18" width="12" height="18" fill="#FFCA28" stroke="#546E7A" stroke-width="2"/></g>
+  <text x="740" y="200" text-anchor="middle" font-size="17" fill="#263238">le bateau usine, au large</text>
+  <text x="740" y="232" text-anchor="middle" font-size="16" fill="#263238">filets géants, congélation à bord</text>
+  <text x="740" y="264" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">→ crevettes et poissons exportés</text>
+  <text x="740" y="296" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">des devises pour le pays</text>
+  <text x="500" y="470" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">L'une nourrit le peuple, l'autre enrichit le pays — à condition de respecter la mer.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Deux pêches, une seule mer : pêcher sans la vider.</text>
+</svg>

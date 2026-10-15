@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Où domine chaque activité ? Pourquoi là ?</text>
+  <defs><clipPath id="m5"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" transform="translate(330 340) scale(2.3) translate(-50 -100)"/></clipPath></defs>
+  <g transform="translate(330 340) scale(2.3) translate(-50 -100)"><path d="M 58 2 L 71 16 L 79 42 L 75 60 L 80 92 L 78 126 L 71 156 L 61 178 L 52 197 L 41 174 L 32 148 L 25 118 L 20 88 L 21 60 L 24 38 L 34 16 L 47 5 Z" fill="#EFEBE9" stroke="#8D6E63" stroke-width="1.3043478260869565" stroke-linejoin="round"/></g>
+  <g clip-path="url(#m5)">
+    <ellipse cx="330" cy="317" rx="48" ry="80" fill="#AED581"/>
+    <ellipse cx="376" cy="312.4" rx="14" ry="90" fill="#4FC3F7"/>
+    <ellipse cx="366.8" cy="358.4" rx="14" ry="90" fill="#81C784"/>
+    <ellipse cx="346.1" cy="211.2" rx="20" ry="40" fill="#AED581"/>
+    <ellipse cx="284" cy="386" rx="12" ry="30" fill="#7C4DFF"/>
+    <ellipse cx="385.2" cy="519.4" rx="10" ry="20" fill="#7C4DFF"/>
+    <ellipse cx="336.9" cy="144.5" rx="16" ry="12" fill="#FF7043"/>
+  </g>
+  <text x="334.6" y="248" text-anchor="middle" font-size="15" fill="#33691E" font-weight="bold">agriculture</text>
+  <text x="412.8" y="248" text-anchor="start" font-size="15" fill="#0277BD" font-weight="bold">pêche</text>
+  <text x="422" y="367.6" text-anchor="start" font-size="14" fill="#2E7D32" font-weight="bold">forêt de l'est</text>
+  <text x="284" y="358.4" text-anchor="end" font-size="13" fill="#4527A0" font-weight="bold">saphirs</text>
+  <text x="330" y="427.4" text-anchor="middle" font-size="13" fill="#4527A0" font-weight="bold">nickel</text>
+  <text x="336.9" y="128.4" text-anchor="middle" font-size="13" fill="#D84315" font-weight="bold">Nosy Be</text>
+  <rect x="620" y="110" width="350" height="130" rx="14" fill="#FAFAFA" stroke="#90A4AE" stroke-width="3"/>
+  <text x="795" y="143" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">LÉGENDE</text>
+  <text x="645" y="178" text-anchor="start" font-size="16" fill="#263238">agricole   pêche   forêt</text>
+  <text x="645" y="208" text-anchor="start" font-size="16" fill="#263238">minière   touristique</text>
+  <text x="645" y="231" text-anchor="start" font-size="15" fill="#546E7A" font-style="italic">artisanale et industrielle : les villes</text>
+  <rect x="620" y="270" width="350" height="250" rx="14" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="795" y="305" text-anchor="middle" font-size="19" fill="#1B5E20" font-weight="bold">LA RÈGLE</text>
+  <text x="795" y="345" text-anchor="start" font-size="17" fill="#263238">La nature décide :</text>
+  <text x="795" y="375" text-anchor="start" font-size="16" fill="#263238">pluie → riz et forêt,</text>
+  <text x="795" y="403" text-anchor="start" font-size="16" fill="#263238">mer → pêche,</text>
+  <text x="795" y="431" text-anchor="start" font-size="16" fill="#263238">sous-sol → mines.</text>
+  <text x="795" y="470" text-anchor="start" font-size="17" fill="#263238">Les hommes ajoutent :</text>
+  <text x="795" y="498" text-anchor="start" font-size="16" fill="#263238">villes → usines, artisanat.</text>
+  <text x="500" y="600" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Chaque activité occupe la région que la nature et les hommes lui offrent.</text>
+</svg>

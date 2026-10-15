@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">L'artisanat : le travail des mains</text>
+  <rect x="40" y="100" width="300" height="330" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="190" y="138" text-anchor="middle" font-size="18" fill="#E65100" font-weight="bold">LES MATIÈRES</text>
+  <text x="190" y="195" text-anchor="middle" font-size="16" fill="#263238">le raphia des marais</text>
+  <text x="190" y="230" text-anchor="middle" font-size="16" fill="#263238">le bois des forêts</text>
+  <text x="190" y="265" text-anchor="middle" font-size="16" fill="#263238">la corne des zébus</text>
+  <text x="190" y="300" text-anchor="middle" font-size="16" fill="#263238">la soie des vers sauvages</text>
+  <text x="190" y="355" text-anchor="middle" font-size="15" fill="#546E7A" font-style="italic">tout vient du pays même</text>
+  <line x1="360" y1="265" x2="450" y2="265" stroke="#546E7A" stroke-width="6" marker-end="url(#af)"/>
+  <text x="405" y="245" text-anchor="middle" font-size="15" fill="#263238" font-style="italic">les mains</text>
+  <rect x="470" y="100" width="230" height="330" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="585" y="138" text-anchor="middle" font-size="18" fill="#1B5E20" font-weight="bold">LES OUTILS</text>
+  <text x="585" y="200" text-anchor="middle" font-size="16" fill="#263238">le métier à tisser</text>
+  <text x="585" y="230" text-anchor="middle" font-size="16" fill="#263238">de bois,</text>
+  <text x="585" y="275" text-anchor="middle" font-size="16" fill="#263238">le couteau du</text>
+  <text x="585" y="305" text-anchor="middle" font-size="16" fill="#263238">sculpteur,</text>
+  <text x="585" y="350" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">+ machines pour</text>
+  <text x="585" y="378" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">les finitions</text>
+  <line x1="720" y1="265" x2="800" y2="265" stroke="#546E7A" stroke-width="6" marker-end="url(#af)"/>
+  <rect x="820" y="100" width="150" height="330" rx="18" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+  <text x="895" y="138" text-anchor="middle" font-size="17" fill="#01579B" font-weight="bold">PRODUITS</text>
+  <g transform="translate(895,190) scale(1.3)"><path d="M -18 0 L 18 0 L 12 20 L -12 20 Z" fill="#D7A86E" stroke="#8D6E63" stroke-width="2"/><line x1="-14" y1="6" x2="14" y2="6" stroke="#8D6E63" stroke-width="1.5"/><line x1="-13" y1="12" x2="13" y2="12" stroke="#8D6E63" stroke-width="1.5"/><path d="M -18 0 Q 0 -14 18 0" fill="none" stroke="#8D6E63" stroke-width="2"/></g>
+  <text x="895" y="250" text-anchor="middle" font-size="15" fill="#263238">paniers,</text>
+  <text x="895" y="280" text-anchor="middle" font-size="15" fill="#263238">sculptures,</text>
+  <text x="895" y="310" text-anchor="middle" font-size="15" fill="#263238">chapeaux,</text>
+  <text x="895" y="340" text-anchor="middle" font-size="15" fill="#263238">tissus,</text>
+  <text x="895" y="375" text-anchor="middle" font-size="15" fill="#263238">papier</text>
+  <text x="895" y="400" text-anchor="middle" font-size="15" fill="#263238">antemoro</text>
+  <text x="500" y="480" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">La mémoire des mains : un patrimoine des ancêtres qui fait vivre les enfants.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Matières du pays, gestes des ancêtres, produits qui voyagent.</text>
+</svg>

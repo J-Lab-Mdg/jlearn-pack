@@ -1072,6 +1072,76 @@
       "id": "geo6_exode_solutions",
       "url": "/geo6_exode_solutions.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo6_zones_economiques",
+      "url": "/geo6_zones_economiques.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_localisation_zones",
+      "url": "/geo6_localisation_zones.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_cultures",
+      "url": "/geo6_cultures.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_cultures_industrielles",
+      "url": "/geo6_cultures_industrielles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_elevage",
+      "url": "/geo6_elevage.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_peche",
+      "url": "/geo6_peche.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_foret_exploitation",
+      "url": "/geo6_foret_exploitation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_mines_exploitation",
+      "url": "/geo6_mines_exploitation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_artisanat",
+      "url": "/geo6_artisanat.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_industrie",
+      "url": "/geo6_industrie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_tourisme",
+      "url": "/geo6_tourisme.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_commerce",
+      "url": "/geo6_commerce.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_transport",
+      "url": "/geo6_transport.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_nouvelle_technologie",
+      "url": "/geo6_nouvelle_technologie.png",
+      "type": "image/png"
     }
   ]
 }

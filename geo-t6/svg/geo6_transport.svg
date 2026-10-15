@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif"><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Le transport et les voies de communication</text>
+  <defs><marker id="af" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#546E7A"/></marker>
+<marker id="afR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#C00000"/></marker>
+<marker id="afV" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1E7B34"/></marker>
+<marker id="afB" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#01579B"/></marker></defs>
+  <text x="500" y="100" text-anchor="middle" font-size="21" fill="#546E7A" font-weight="bold" font-style="italic">« Une région sans route est un grenier sans porte. »</text>
+  <rect x="0" y="410" width="1000" height="60" fill="#EFEBE9"/>
+  <rect x="0" y="430" width="1000" height="8" fill="#BCAAA4" stroke-dasharray="30 20"/>
+  <g transform="translate(60,200) scale(1.4)"><rect x="-16" y="-6" width="32" height="22" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/><path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/></g><g transform="translate(930,200) scale(1.4)"><rect x="-16" y="-6" width="32" height="22" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/><path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/></g>
+  <line x1="150" y1="170" x2="300" y2="170" stroke="#546E7A" stroke-width="6" marker-end="url(#af)"/>
+  <text x="500" y="160" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">LES QUATRE CHEMINS DU PAYS</text>
+  <text x="200" y="260" text-anchor="middle" font-size="17" fill="#E65100" font-weight="bold">LA ROUTE</text>
+  <text x="200" y="292" text-anchor="middle" font-size="15" fill="#263238">taxis-brousse, camions :</text>
+  <text x="200" y="317" text-anchor="middle" font-size="15" fill="#263238">voyageurs et sacs</text>
+  <text x="500" y="260" text-anchor="middle" font-size="17" fill="#C62828" font-weight="bold">LE RAIL</text>
+  <g transform="translate(500,350) scale(1.1)"><rect x="-38" y="-18" width="60" height="24" rx="4" fill="#C62828" stroke="#8E0000" stroke-width="2"/><rect x="26" y="-10" width="24" height="16" rx="3" fill="#EFEBE9" stroke="#8E0000" stroke-width="2"/><circle cx="-24" cy="10" r="8" fill="#37474F"/><circle cx="8" cy="10" r="8" fill="#37474F"/><circle cx="42" cy="10" r="8" fill="#37474F"/><rect x="-28" y="-12" width="12" height="10" fill="#FFF9C4"/></g>
+  <text x="500" y="292" text-anchor="middle" font-size="15" fill="#263238">le train Toamasina-Antananarivo</text>
+  <text x="500" y="317" text-anchor="middle" font-size="15" fill="#263238">porte les conteneurs</text>
+  <text x="800" y="260" text-anchor="middle" font-size="17" fill="#01579B" font-weight="bold">LA MER ET L'AIR</text>
+  <g transform="translate(760,390) scale(0.8)"><path d="M -50 0 L 50 0 L 38 18 L -38 18 Z" fill="#546E7A"/><rect x="-14" y="-34" width="28" height="34" fill="#FFFFFF" stroke="#546E7A" stroke-width="2"/><rect x="16" y="-24" width="14" height="24" fill="#B0BEC5" stroke="#546E7A" stroke-width="2"/><rect x="-30" y="-18" width="12" height="18" fill="#FFCA28" stroke="#546E7A" stroke-width="2"/></g><g transform="translate(870,280) scale(1.1)"><path d="M -34 0 L 30 -4 L 40 0 L 30 4 Z" fill="#B0BEC5" stroke="#546E7A" stroke-width="2"/><path d="M -6 -2 L 6 -24 L 12 -22 L 6 -2 Z" fill="#90A4AE" stroke="#546E7A" stroke-width="2"/><path d="M -6 2 L 6 24 L 12 22 L 6 2 Z" fill="#90A4AE" stroke="#546E7A" stroke-width="2"/><path d="M -34 -2 L -44 -14 L -38 -14 L -30 -2 Z" fill="#90A4AE"/></g>
+  <text x="800" y="292" text-anchor="middle" font-size="15" fill="#263238">le port de Toamasina :</text>
+  <text x="800" y="317" text-anchor="middle" font-size="15" fill="#263238">le commerce du monde ;</text>
+  <text x="800" y="342" text-anchor="middle" font-size="15" fill="#263238">l'avion : visiteurs pressés</text>
+  <text x="500" y="500" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">Désenclaver, c'est ouvrir le grenier : sans voies, pas de commerce, pas de développement.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Route, rail, mer, air : les artères du pays.</text>
+</svg>

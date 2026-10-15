@@ -15,6 +15,9 @@ const U3REV = require("./data-unite3-rev");
 const U4A = require("./data-unite4");
 const U4B = require("./data-unite4b");
 const U4REV = require("./data-unite4-rev");
+const U5A = require("./data-unite5");
+const U5B = require("./data-unite5b");
+const U5REV = require("./data-unite5-rev");
 
 // Annexes optionnelles tant qu'elles ne sont pas créées (fin de projet)
 const annexesPath = path.join(__dirname, "annexes.js");
@@ -64,11 +67,20 @@ const UNITES = [
     rev: U4REV.revision,
     exam: U4REV.examen,
   },
+  {
+    id: "unite5",
+    nom: "UNITÉ 5 — LES GRANDES ZONES ÉCONOMIQUES ET LES ACTIVITÉS ÉCONOMIQUES",
+    seances: "Séances 51 à 66",
+    lecons: 14,
+    intro: "Thématique officielle du programme d'études T6 : les grandes zones économiques de Madagascar (agricole, de pêche, forestière, minière, artisanale, industrielle, touristique) et les activités économiques — les cultures, l'élevage, la pêche, l'exploitation forestière, les ressources minières, l'artisanat, l'industrie, le tourisme, le commerce, le transport et la nouvelle technologie. Durée officielle : 7 heures, soit 14 séances de 30 minutes.",
+    topics: [...U5A.topics, ...U5B.topics],
+    rev: U5REV.revision,
+    exam: U5REV.examen,
+  },
 ];
 
 // Unités encore à produire (affichées comme « à paraître » dans le sommaire et le tableau de bord)
 const FUTURES = [
-  { nom: "UNITÉ 5 — LES GRANDES ZONES ÉCONOMIQUES ET LES ACTIVITÉS ÉCONOMIQUES", seances: "Séances 51 à 66", lecons: 14 },
   { nom: "UNITÉ 6 — LE VILLAGE ÉCOLOGIQUE", seances: "Séances 67 à 78", lecons: 10 },
 ];
 
