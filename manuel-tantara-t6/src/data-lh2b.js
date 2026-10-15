@@ -1,12 +1,12 @@
 // data-lh2b.js — Lohahevitra II (tohiny) : S12-S16
 const LH = "Lohahevitra II — Madagasikara taorian'ny fahaleovantena";
-const DOC = "PE T6 (MEN, nohavaozina) ; FRP Tantara T6 ; boky Tantara J-Learn";
+const DOC = "PE T6 (MEN, nohavaozina) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 
 const S12 = {
   numero: 12, total: 27, lohahevitra: LH,
   titre: "Ny tetezamita 2009-2014, ny Repoblika faha-4 ary ny taona 2025",
   tanjona: "mitantara ny krizy 2009, ny Repoblika IV ary ny zava-nitranga tamin'ny 2025",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-o, 2-p, 2-r, 2-s)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy 2009-2026, lahatsoratra, solaitrabe",
   image: "images/img_seansa12.png",
   imageLegende: "Frizy : tetezamita 2009-2014, Repoblika IV ary ny taona 2025",
@@ -110,7 +110,7 @@ const S12 = {
     fantatraoVe: [],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« 17 marsa 2009 : natolotry ny filoha Marc Ravalomanana ny miaramila manamboninahitra ny fahefana feno. Nomen'ny filohan'ny fitondrana miaramila an'i Andry Rajoelina avy eo izany fahefana izany. Nanameloka avy hatrany ny fanonganam-panjakana ny Vondrona Eoropeana, ary nampiato ny fandraisan'i Madagasikara anjara tao aminy ny Firaisambe Afrikanina (fampiatoana, fa tsy fandroahana). » (Loharano : FRP Tantara T6)",
+      "« 17 marsa 2009 : natolotry ny filoha Marc Ravalomanana ny miaramila manamboninahitra ny fahefana feno. Nomen'ny filohan'ny fitondrana miaramila an'i Andry Rajoelina avy eo izany fahefana izany. Nanameloka avy hatrany ny fanonganam-panjakana ny Vondrona Eoropeana, ary nampiato ny fandraisan'i Madagasikara anjara tao aminy ny Firaisambe Afrikanina (fampiatoana, fa tsy fandroahana). » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Tamin'iza no nanolotra ny fahefana i Ravalomanana ?",
       "2. Ahoana no nandraisan'ny fianakaviambe iraisam-pirenena izany ?",
       "3. Inona no vokany ho an'i Madagasikara ?",
@@ -148,7 +148,7 @@ const S13 = {
   numero: 13, total: 27, lohahevitra: LH,
   titre: "Ireo andrim-panjakana iorenan'ny Repoblika",
   tanjona: "mitanisa ireo andrim-panjakana telo sy ny anjara asany avy",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-t)",
+  fanovozanKevitra: DOC,
   fitaovana: "Diagrama andrim-panjakana, solaitrabe",
   image: "images/img_seansa13.png",
   imageLegende: "Diagrama : ireo fahefana telo iorenan'ny Repoblika",
@@ -248,7 +248,7 @@ const S13 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Ny fahefana mpanao lalàna dia sahanin'ny Antenimiera roa, dia ny Antenimieram-pirenena (izay ahitana ny solombavambahoaka voafidy manerana an'i Madagasikara) sy ny Antenimierandoholona. Izy ireo no mandany ny volavolan-dalàna aroson'ny governemanta. » (Loharano : FRP Tantara T6)",
+      "« Ny fahefana mpanao lalàna dia sahanin'ny Antenimiera roa, dia ny Antenimieram-pirenena (izay ahitana ny solombavambahoaka voafidy manerana an'i Madagasikara) sy ny Antenimierandoholona. Izy ireo no mandany ny volavolan-dalàna aroson'ny governemanta. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Antenimiera inona avy no misahana ny fahefana mpanao lalàna ?",
       "2. Iza no mifidy ny solombavambahoaka ?",
       "3. Inona no anjara asan'izy ireo ?",
@@ -286,7 +286,7 @@ const S14 = {
   numero: 14, total: 27, lohahevitra: LH,
   titre: "Ireo fototra iorenan'ny Repoblika",
   tanjona: "manazava ireo fototra iorenan'ny Repoblika mandala ny demokrasia",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-v)",
+  fanovozanKevitra: DOC,
   fitaovana: "Diagrama andry, solaitrabe",
   image: "images/img_seansa14.png",
   imageLegende: "Ireo andry iorenan'ny Repoblika mandala ny demokrasia",
@@ -380,7 +380,7 @@ const S14 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Ny Repoblika dia lamin-kevitra izay itambaran'ny vahoaka tsy vakivolo. Repoblika mandala ny demokrasia : anisan'ny mampihatra izany i Madagasikara. » (Loharano : FRP Tantara T6, bokikely momba ny fanabeazana ho olom-pirenena vanona)",
+      "« Ny Repoblika dia lamin-kevitra izay itambaran'ny vahoaka tsy vakivolo. Repoblika mandala ny demokrasia : anisan'ny mampihatra izany i Madagasikara. » (Famintinana narafitra ho an'ity boky ity, araka ny fanabeazana ho olom-pirenena vanona.)",
       "1. Inona no dikan'ny hoe « itambaran'ny vahoaka tsy vakivolo » ?",
       "2. Karazana Repoblika inona no ampiharin'i Madagasikara ?",
       "3. Lazao andry roa ijoroan'izany.",
@@ -418,7 +418,7 @@ const S15 = {
   numero: 15, total: 27, lohahevitra: LH,
   titre: "Ireo politikam-pitondrana faha-Repoblika",
   tanjona: "mampitaha ny politikam-pitondrana nifandimby tamin'ny Repoblika efatra",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-a, 2-v)",
+  fanovozanKevitra: DOC,
   fitaovana: "Fafana mampitaha, solaitrabe",
   image: "images/img_seansa15.png",
   imageLegende: "Fafana : ny politikam-pitondrana nifandimby",
@@ -523,7 +523,7 @@ const S15 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Repoblika faha II : fitondrana nifototra tamin'ny revolisiona sosialista voarakitra anaty Boky Mena ; fitantanam-panjakana ireo sehatra ara-barotra, ara-pamokarana, ara-indostria sy ny angovo. Repoblika faha III : fivoizana ny demokrasia sy ny fahalalahana ; fanomezana vahana ny sehatra tsy miankina. » (Loharano : FRP Tantara T6)",
+      "« Repoblika faha II : fitondrana nifototra tamin'ny revolisiona sosialista voarakitra anaty Boky Mena ; fitantanam-panjakana ireo sehatra ara-barotra, ara-pamokarana, ara-indostria sy ny angovo. Repoblika faha III : fivoizana ny demokrasia sy ny fahalalahana ; fanomezana vahana ny sehatra tsy miankina. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Iza no nitantana ny toekarena tamin'ny Repoblika II ?",
       "2. Inona no niova tamin'ny Repoblika III ?",
       "3. Inona no mety ho tsara sy ratsy amin'ny politika roa ireo ?",
@@ -561,7 +561,7 @@ const S16 = {
   numero: 16, total: 27, lohahevitra: LH,
   titre: "Ny anton'ny fiovaovan'ny mpitondra sy ny vokany",
   tanjona: "manadihady ny anton'ny fiovaovan'ny mpitondra matetika sy ny vokany eo amin'ny firenena",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-y, 2-z)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy ny krizy, lahatsoratra, solaitrabe",
   image: "images/img_seansa16.png",
   imageLegende: "Frizy : ireo krizy politika lehibe (1972, 1991, 2002, 2009, 2025)",
@@ -657,7 +657,7 @@ const S16 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Ireo vokatry ny fiovaovan'ny mpitondra matetika : krizy ara-toekarena, fahantrana, tsy fahatokisan'ny firenena ivelany sy ny mpamatsy vola, fahasimban'ny fotodrafitrasa, fahafatesan'olona (ohatra : tamin'ireo fihetseham-bahoaka nifandimby 1972, 1991, 2002, 2009). » (Loharano : FRP Tantara T6)",
+      "« Ireo vokatry ny fiovaovan'ny mpitondra matetika : krizy ara-toekarena, fahantrana, tsy fahatokisan'ny firenena ivelany sy ny mpamatsy vola, fahasimban'ny fotodrafitrasa, fahafatesan'olona (ohatra : tamin'ireo fihetseham-bahoaka nifandimby 1972, 1991, 2002, 2009). » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Tanisao vokatra telo voalaza ao amin'ny lahatsoratra.",
       "2. Inona no dikan'ny hoe « tsy fahatokisan'ny mpamatsy vola » ?",
       "3. Inona no azonao atao, amin'ny maha mpianatra anao, hampandry fahalemana ny firenena ?",

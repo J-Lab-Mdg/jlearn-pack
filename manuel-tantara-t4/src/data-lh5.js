@@ -1,6 +1,6 @@
 // data-lh5.js — LOHAHEVITRA V : NY FIAVIAN'NY MALAGASY (S15-S21) — Tantara T4
 // Loharano : PE T4 sy FRP T4 (LFK 5-a → 5-g)
-const DOC = "PE Tantara T4 (MEN) sy FRP T4";
+const DOC = "PE Tantara T4 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "V — Ny fiavian'ny Malagasy";
 const FAHENDRENA = "Mankamamy ny maha-Malagasy sy ny tantaram-pirenena";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "milaza ireo toerana telo lehibe niavian'ny razamben'ny Malagasy",
   fahendrena: FAHENDRENA,
   tetika: "Fitrandrahana sarintany ; asa an-tarika ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 5-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sarintanin'ny ranomasimbe indianina ; solaitrabe",
   image: "images/img_s15.png",
   imageLegende: "Ny razamben'ny Malagasy : tonga avy any Azia, Afrika ary Arabia",
@@ -108,7 +108,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Ny fiavian'ny Malagasy dia : avy any Oseania (Ostronesianina) ; avy any Azia (Maleziana, Indonezianina — Java sy Borneo, Sumatra — Indianina) ; avy any Afrika sy Arabia (Bantoa avy any Afrika atsinanana). Nanomboka tamin'ny taonjato faha-V ka hatramin'ny taonjato faha-IX no nanorim-ponenana teto izy ireo. »",
-      "(Nalaina tao amin'ny FRP T4, LFK 5-a.)",
+      "(Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "Fanontaniana : a) Avy aiza ny Indonezianina tonga teto ? b) Firy taonjato teo ho eo no elanelan'ny taonjato faha-V sy faha-IX ?",
       "Valiny : a) Avy any Java, Borneo ary Sumatra (Azia atsimo-atsinanana). b) Taonjato efatra (400 taona teo ho eo).",
     ],
@@ -148,7 +148,7 @@ const seances = [
   tanjona: "mitanisa ireo fitaovam-pifamoivoizana telo nampiasain'ny mpiavy voalohany tonga teto Madagasikara",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana sary ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 5-b)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sarin'ny lakana samihafa ; solaitrabe",
   image: "images/img_s16.png",
   imageLegende: "Ny lakam-bezo, ny lakam-piara ary ny botry",
@@ -244,7 +244,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Ireo fitaovam-pifamoivoizana nampiasain'ireo mpiavy voalohany tonga teto Madagasikara : lakam-bezo, lakam-piara, botry. »",
-      "(Nalaina tao amin'ny Tantaran'i Madagasikara 8è, Maxime Ratoejanahary, tak. 27 — FRP T4, LFK 5-b.)",
+      "(Nalaina tao amin'ny Tantaran'i Madagasikara 8è, Maxime Ratoejanahary, tak. 27.)",
       "Fanontaniana : a) Inona no ilan'ny lakam-bezo ny hazo mitsivalana eo anilany ? b) Inona no mampandeha ny botry ?",
       "Valiny : a) Mba tsy hivadika amin'ny onja izy. b) Ny rivotra mitsoka ny lain-tsambo.",
     ],
@@ -284,7 +284,7 @@ const seances = [
   tanjona: "manondro eo amin'ny sarintany ireo faritra niantsonan'ny mpiavy teto Madagasikara",
   fahendrena: FAHENDRENA,
   tetika: "Fitrandrahana sarintany ; asa an-tarika",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 5-d)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sarintanin'i Madagasikara ; solaitrabe",
   image: "images/img_s17.png",
   imageLegende: "Ireo morontsiraka niantsonan'ny mpiavy",
@@ -374,7 +374,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Ireo faritra niantsonan'ireo mpiavy teto Madagasikara : morontsiraka andrefana (Mahajanga, Morondava) ; morontsiraka avaratra sy avaratra-atsinanana (Nosy Be, Antsiranana, Iharana, Mahavelona, Toamasina, Sainte-Marie) ; morontsiraka atsimo-atsinanana (Mananjary, Matitanana, Taolagnaro) ; morontsiraka atsimo-andrefana (Saint-Augustin). »",
-      "(Nalaina tao amin'ny Tantaran'i Madagasikara 8è, Maxime Ratoejanahary, tak. 29 — FRP T4, LFK 5-d.)",
+      "(Nalaina tao amin'ny Tantaran'i Madagasikara 8è, Maxime Ratoejanahary, tak. 29.)",
       "Fanontaniana : a) Firy ny morontsiraka voatanisa ? b) Aiza ho aiza i Toamasina ?",
       "Valiny : a) Efatra. b) Ao amin'ny morontsiraka atsinanana (avaratra-atsinanana).",
     ],
@@ -414,7 +414,7 @@ const seances = [
   tanjona: "mandahatra araka ny fotoana ireo andiany mpiavy nifanesy teto Madagasikara",
   fahendrena: FAHENDRENA,
   tetika: "Fitrandrahana frizy ; asa an-tarika",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 5-e)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy ; sarintany ; solaitrabe",
   image: "images/img_s18.png",
   imageLegende: "Ireo andiany mpiavy nifanesy : Ostronesianina, Indonezianina sy Maleziana, Afrikanina, Arabo",
@@ -511,7 +511,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Ny nidiran'ny Ostronesianina teto Madagasikara : teo anelanelan'ny taonjato faha-III ka hatramin'ny faha-IV. Ny nidiran'ny Indonezianina sy ny Maleziana : talohan'ny taonjato faha-VII. Ny nidiran'ny Afrikanina : teo anelanelan'ny taonjato faha-VII sy faha-VIII. Ny nidiran'ny Arabo : nanomboka tamin'ny taonjato faha-IX. Maro ny zavatra navelan'ny Arabo : ny fivavahana silamo, ny sorabe, ny anaran'ny andro sy ny anaram-bolana, ny fanandroana. »",
-      "(Nalaina tao amin'ny FRP T4, LFK 5-e.)",
+      "(Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "Fanontaniana : a) Iza no tonga taloha indrindra ? b) Inona no porofo telo mampiseho ny fandalovan'ny Arabo teto ?",
       "Valiny : a) Ny Ostronesianina. b) Ny sorabe, ny anaran'ny andro sy ny anaram-bolana, ny fanandroana.",
     ],
@@ -551,7 +551,7 @@ const seances = [
   tanjona: "milaza ny fitovian'ny teny malagasy amin'ny teny maleziana sy afrikanina, ary ny niavian'ny sorabe sy ny fanandroana",
   fahendrena: FAHENDRENA,
   tetika: "Fampitahana voambolana ; asa an-tarika",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 5-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Fafana fampitahana teny ; solaitrabe",
   image: "images/img_s19.png",
   imageLegende: "Ny sorabe : soratra arabo nanoratana ny teny malagasy",
@@ -650,7 +650,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Raha ny firafitry ny teny sy ny fototeny dia mitovitovy ny an'ny Malagasy sy ny Maleziana. Ohatra : batu/vato, burung/vorona, lanit/lanitra, menak/menaka, pari/vary. Avy amin'ny teny afrikanina kosa : angumbi/aomby, kuku/akoho, mbua/amboa. Ny Arabo no nitondra ny sorabe sy ny fanandroana teto Madagasikara. »",
-      "(Nalaina tao amin'ny FRP T4, LFK 5-f.)",
+      "(Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "Fanontaniana : a) Inona ny teny malagasy mifandraika amin'ny « pari » ? b) Inona no dikan'izany fitoviana izany ?",
       "Valiny : a) Vary. b) Manaporofo izany fa avy any Azia (Malezia, Indonezia) ny ampahany amin'ny razamben'ny Malagasy sy ny teniny.",
     ],
@@ -690,7 +690,7 @@ const seances = [
   tanjona: "milaza ny fiavian'ny fomba fambolena, ny jono, ny foto-tsakafo, ny zavamaneno ary ny fiompiana omby",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana sary ; asa an-tarika ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 5-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary (tanimbary mikitoatoha, valiha, omby) ; solaitrabe",
   image: "images/img_s20.png",
   imageLegende: "Ny tanimbary mikitoatoha, ny valiha ary ny omby : lova avy amin'ny razambe",
@@ -796,7 +796,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Ny fomba fambolem-bary mikitoatoha sy an-koraka dia mitovy amin'ny any Bali. Ny fanaovana tavy dia fanaon'ny Indonezianina sy ny Maleziana. Foto-tsakafo : vary. Ny valiha dia toy ny any Azia atsimo-atsinanana ary ny aponga dia toy ny ao Afrika. Ny fiompiana omby sy ny fampiasana azy eo amin'ny fiaraha-monina (joro, fandevenana) dia avy ao Afrika. »",
-      "(Nalaina tao amin'ny FRP T4, LFK 5-f.)",
+      "(Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "Fanontaniana : a) Inona no zavamaneno avy any Azia ? b) Inona no fombafomba ampiasana ny omby ?",
       "Valiny : a) Ny valiha. b) Ny joro sy ny fandevenana.",
     ],
@@ -838,7 +838,7 @@ const seances = [
   tanjona: "milaza ny fitovian'ny toe-batan'ny Malagasy sasany amin'ny Indonezianina, sy ny fiainan'ny mponina voalohany isam-paritra",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana sary ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 5-g)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary ; solaitrabe",
   image: "images/img_s21.png",
   imageLegende: "Ny vahoaka malagasy : iray ihany na dia samihafa aza ny endrika",
@@ -934,7 +934,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Ny Indonezianina dia misy itovizana betsaka amin'ny Merina sy ny Betsileo : zarazara hoditra, tsotra na olioly volo. »",
-      "(Nalaina tao amin'ny FRP T4, LFK 5-g.)",
+      "(Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "Fanontaniana : a) Inona no porofo hafa (ankoatra ny toe-batana) mampiseho ny fifandraisan'ny Malagasy sy ny Indonezianina ? b) Inona no mampiray ny Malagasy rehetra ?",
       "Valiny : a) Ny fiteny (batu/vato…), ny tanimbary mikitoatoha, ny valiha… b) Ny fiteny iray, ny tanindrazana iray ary ny fihavanana.",
     ],

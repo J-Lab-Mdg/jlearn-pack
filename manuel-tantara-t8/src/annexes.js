@@ -94,7 +94,6 @@ function annexe3() {
     ["Sigla", "Dikany feno", "Fanazavana fohy"],
     [
       ["DDHC", "Déclaration des droits de l'homme et du citoyen", "Fanambarana ny zon'olombelona sy ny olom-pirenena (1789)"],
-      ["FRP", "Fiche de Référence Pédagogique (frantsay)", "Tari-dalana ofisialin'ny mpampianatra"],
       ["JINA", "Jeunesse Nationaliste", "Fikambanana an-tsokosoko tamin'ny tolona 1947"],
       ["LMS", "London Missionary Society", "Misionera anglisy nanorina ny sekoly voalohany (1820)"],
       ["MDRM", "Mouvement Démocratique de la Rénovation Malgache", "Antoko politika voampanga tamin'ny 1947"],

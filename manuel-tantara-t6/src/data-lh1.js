@@ -1,12 +1,12 @@
 // data-lh1.js — Lohahevitra I : Fampidirana ny fianarana Tantara (S2-S5)
 const LH = "Lohahevitra I — Fampidirana ny fianarana Tantara";
-const DOC = "PE T6 (MEN, nohavaozina) ; FRP Tantara T6 ; boky Tantara J-Learn";
+const DOC = "PE T6 (MEN, nohavaozina) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 
 const S2 = {
   numero: 2, total: 27, lohahevitra: LH,
   titre: "Ny antony sy ny zava-kendren'ny fianarana Tantara",
   tanjona: "manazava ny antony ilana ny Tantara sy ny zava-kendren'ny fianarana azy",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 1-a, 1-d)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary, lahatsoratra, solaitrabe, kahie",
   image: "images/img_seansa02.png",
   imageLegende: "Ny lasa manazava ny ankehitriny ary manomana ny hoavy",
@@ -139,7 +139,7 @@ const S3 = {
   numero: 3, total: 27, lohahevitra: LH,
   titre: "Ny fandrefesana ny fotoana : frizy sy kalandrie",
   tanjona: "mampiasa ny frizy kronolojika, manisa ny taon-jato ary mahalala ny karazana kalandrie",
-  fanovozanKevitra: DOC + " (FRP T6, Lohahevitra I — lesona fanampiny J-Learn)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy kronolojika, kalandrie, solaitrabe, tsipika",
   image: "images/img_seansa03.png",
   imageLegende: "Ny fandrefesana ny fotoana : ambaratongan'ny fotoana sy ny frizy kronolojika",
@@ -289,7 +289,7 @@ const S4 = {
   numero: 4, total: 27, lohahevitra: LH,
   titre: "Ireo karazana loharano ara-tantara",
   tanjona: "mitanisa sy manasokajy ireo karazana loharano fanovozan-kevitra ara-tantara",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 1-f, 1-h, 1-i)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary, zavatra tranainy (vola taloha, gazety...), solaitrabe",
   image: "images/img_seansa04.png",
   imageLegende: "Ny sokajin-doharano telo : an-tsoratra, am-bava ary moana",
@@ -434,7 +434,7 @@ const S5 = {
   numero: 5, total: 27, lohahevitra: LH,
   titre: "Ny mampiavaka ireo loharano fanovozan-kevitra",
   tanjona: "mampitaha sy mampiavaka ireo loharano ary milaza ny lanjany amin'ny fandrafetana ny tantara",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 1-g, 1-j, 1-k)",
+  fanovozanKevitra: DOC,
   fitaovana: "Fafana famintinana, sary, solaitrabe",
   image: "images/img_seansa05.png",
   imageLegende: "Fafana : ny sokajin-doharano telo sy ny ohatra amin'izy ireo",

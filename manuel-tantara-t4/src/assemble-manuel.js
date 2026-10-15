@@ -140,7 +140,7 @@ const doc = new B.Document({
   creator: "J-Learn (J-Lab Madagascar) — j.lab.mdg@gmail.com",
   title: "Boky Tantara T4 — J-Learn, Édition 2026",
   subject: "Tantara (Histoire) — kilasy T4",
-  description: "Boky fianarana Tantara T4 : takela-panomanan-desona, lesona misy sary, fanazaran-tena, tombana ary tovana — mifanaraka amin'ny PE sy FRP ofisialy.",
+  description: "Boky fianarana Tantara T4 : takela-panomanan-desona, lesona misy sary, fanazaran-tena, tombana ary tovana — mifanaraka amin'ny fandaharam-pianarana ofisialy (PE).",
   keywords: "Tantara, T4, J-Learn, Madagasikara, manuel scolaire",
   styles: {
     default: { document: { run: { font: B.FONT, size: 24 } } },

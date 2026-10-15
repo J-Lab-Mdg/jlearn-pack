@@ -1,6 +1,6 @@
 // data-lh4.js — LOHAHEVITRA IV : NY VANIM-POTOANAN'NY TANTARAN'I MADAGASIKARA (S12-S13)
 // Loharano : PE T4 sy FRP T4 (LFK 4-a, 4-b, 4-d)
-const DOC = "PE Tantara T4 (MEN) sy FRP T4";
+const DOC = "PE Tantara T4 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "IV — Ny vanim-potoanan'ny tantaran'i Madagasikara";
 
 const seances = [
@@ -12,7 +12,7 @@ const seances = [
   tanjona: "mitantara ny niandohan'ny anarana hoe « Madagasikara »",
   fahendrena: "Mankamamy ny maha-Malagasy sy ny tantaram-pirenena",
   tetika: "Fitrandrahana tahirin-kevitra ; fitantarana ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 4-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sarintany ; tahirin-kevitra momba an'i Marco Polo ; solaitrabe",
   image: "images/img_s12.png",
   imageLegende: "I Marco Polo sy ny sarintany tranainy : ny niandohan'ny anarana « Madagascar »",
@@ -107,7 +107,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Marco Polo (1254-1324) dia tsy tonga taty Madagasikara, fa ny tantara nentin'ny mpivahiny no nampiasainy. Nanoratra boky izy antsoina hoe “Livre des Merveilles” izay mirakitra ny dia nataony tany Azia. “Madagascar” no anarana nomen'i Marco Polo tamin'ny taona 1298, niova ho “Madagasikara” taty aoriana. »",
-      "(Nalaina tao amin'ny FRP T4, LFK 4-a.)",
+      "(Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "Fanontaniana : a) Firenena inona no niavian'i Marco Polo ? b) Amin'ny taonjato fahafiry ny taona 1298 ?",
       "Valiny : a) Italia (mpivahiny italiana izy). b) Taonjato faha-XIII (1201-1300).",
     ],
@@ -146,7 +146,7 @@ const seances = [
   tanjona: "mandahatra araka ny filaharany ireo vanim-potoana dimy lehibe teo amin'ny tantaran'i Madagasikara",
   fahendrena: "Mankamamy ny maha-Malagasy sy ny tantaram-pirenena",
   tetika: "Fitrandrahana frizy kronolojika ; asa an-tarika",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 4-b, 4-d)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy kronolojika ; solaitrabe",
   image: "images/img_s13.png",
   imageLegende: "Ny frizy kronolojikan'ny vanim-potoanan'i Madagasikara",
@@ -242,7 +242,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Fitambaran'ny taona maromaro na taonjato vitsivitsy no atao hoe vanim-potoana. Ireto avy ireo vanim-potoana lehibe nifandimby teo amin'ny tantaran'i Madagasikara : talohan'ny fahafoko (talohan'ny taonjato faha-V) ; fahafoko (taonjato faha-V ka hatramin'ny taonjato faha-XV) ; faha-mpanjaka (1500-1896) ; fanjanahantany (1896-1960) ; fahaleovantena (1960-…). »",
-      "(Nalaina tao amin'ny FRP T4, LFK 4-b.)",
+      "(Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "Fanontaniana : a) Firy taona teo ho eo no naharetan'ny fanjanahantany ? b) Vanim-potoana inona no misy antsika ankehitriny ?",
       "Valiny : a) 64 taona (1896-1960). b) Ny fahaleovantena.",
     ],

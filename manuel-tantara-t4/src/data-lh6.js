@@ -1,6 +1,6 @@
 // data-lh6.js — LOHAHEVITRA VI : NY VAKOKA SY NY HAREM-PIRENENA (S23-S26) — Tantara T4
 // Loharano : PE T4 sy FRP T4 (LFK 6-a → 6-f)
-const DOC = "PE Tantara T4 (MEN) sy FRP T4";
+const DOC = "PE Tantara T4 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "VI — Ny vakoka sy ny harem-pirenena eto Madagasikara";
 const FAHENDRENA = "Fanajana ny fananana iombonana, fandraisana andraikitra";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe vakoka ary mitanisa ny karazany",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana sary ; asa an-tarika ; fitsidihana raha azo atao",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 6-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary (rova, tsangambato, fitaovana tranainy) ; solaitrabe",
   image: "images/img_s23.png",
   imageLegende: "Ny vakoka : ny rova, ny tsangambato ary ireo fitaovana tranainy",
@@ -109,7 +109,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Ny atao hoe “vakoka” dia akora na fitaovana tranainy mirakitra ny ela ahitana taratra ny maha izy azy ny firenena sy ny vahoaka mbamin'ny tantarany ka zary harem-pirenena, rakitsoa sarobidy tehirizina ho fantatry ny taranaka mifandimby. Ny vakoka dia entina ihany koa ilazana ireo kolontsaina sy karazana fomba amam-panao izay nolovaina tamin'ny razambe : ny kabary, ny fitafy sy ny taovolo nentim-paharazana, ny vakodrazana… »",
-      "(Nalaina tao amin'ny Rakibolana malagasy — FRP T4, LFK 6-a.)",
+      "(Nalaina tao amin'ny Rakibolana malagasy.)",
       "Fanontaniana : a) Inona no dikan'ny hoe « tehirizina ho fantatry ny taranaka mifandimby » ? b) Omeo ohatra vakoka iray ao amin'ny faritra misy anao.",
       "Valiny : a) Tsy ho an'ny olona ankehitriny ihany ny vakoka fa ho an'ny zanaka sy ny zafy any aoriana koa. b) Valiny malalaka (rova, vatolahy, doany, tsena tranainy…).",
     ],
@@ -150,7 +150,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe harem-pirenena ary mitanisa ny karazany",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana sary ; asa an-tarika",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 6-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary (tsingy, ala, biby) ; solaitrabe",
   image: "images/img_s24.png",
   imageLegende: "Ny harem-pirenena : ny tsingy, ny ala, ny gidro ary ny baobab",
@@ -248,7 +248,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Ny harem-pirenena : fananana azo tsapain-tanana na tsia mamaritra sy mampiavaka ny faritra na ny kolontsaina. Harem-pirenena ny tsingin'i Bemaraha. Karazany : olona, tany, tanàna, ala, rano, ranomasina, harena an-kibon'ny tany, valan-javaboary, faritra voaaro, vakoka. »",
-      "(Nalaina tao amin'ny Rakibolana ho an'ny mpampianatra, tak. 179 — FRP T4, LFK 6-a.)",
+      "(Nalaina tao amin'ny Rakibolana ho an'ny mpampianatra, tak. 179.)",
       "Fanontaniana : a) Ny vakoka ve harem-pirenena ? b) Omeo karazana harem-pirenena telo hita ao amin'ny faritra misy anao.",
       "Valiny : a) Eny : anisan'ny harem-pirenena ny vakoka. b) Valiny malalaka (ala, renirano, tany fambolena, toerana manan-tantara…).",
     ],
@@ -288,7 +288,7 @@ const seances = [
   tanjona: "milaza ny tombontsoa azo amin'ny fikolokoloana ny vakoka sy ny harem-pirenena, indrindra ny fizahantany",
   fahendrena: FAHENDRENA,
   tetika: "Fitrandrahana lahatsoratra ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 6-b, 6-e)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra ; sary (mpizahan-tany) ; solaitrabe",
   image: "images/img_s25.png",
   imageLegende: "Ny fizahantany : mpizahan-tany mitsidika ny harem-pirenentsika",
@@ -387,7 +387,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Raha tsy hiteny afa-tsy ny rovan'Ambohimanga sy ny rovan'Ambohidratrimo isika : maro ny vahiny no tonga mitsidika ireny. Isan'ny faritra tena mampidi-bola ny alan-javaboary maro eto Madagasikara : biby sy toerana mbola tsy fahita firy any ivelany no hita any. Fa isan'ny tombony lehibe koa ny fitiavan'ny vahiny ny asa tanana malagasy : izy ireny no tena iveloman'ny mpahay ity asa tanana ity. »",
-      "(Nalaina sy nohafohezina tao amin'ny Madagascar-Tribune, « Mahaliana ny vahiny ny vakoka » — FRP T4, LFK 6-e.)",
+      "(Nalaina sy nohafohezina tao amin'ny Madagascar-Tribune, « Mahaliana ny vahiny ny vakoka ».)",
       "Fanontaniana : a) Toerana roa inona no voatanisa ho tian'ny vahiny ? b) Iza no mivelona amin'ny fividianan'ny vahiny ny asa tanana ?",
       "Valiny : a) Ny rovan'Ambohimanga sy ny rovan'Ambohidratrimo (ary ny alan-javaboary). b) Ny mpanao asa tanana malagasy.",
     ],
@@ -427,7 +427,7 @@ const seances = [
   tanjona: "mitanisa ireo fepetra sy lalàna miaro ny vakoka, ary milaza ny anjara asany manokana amin'izany",
   fahendrena: FAHENDRENA,
   tetika: "Fifanakalozan-kevitra ; asa an-tarika ; fanapahan-kevitra iombonana",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 6-d, 6-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary ; solaitrabe",
   image: "images/img_s26.png",
   imageLegende: "Ny fiarovana ny vakoka : anjara asan'ny tsirairay",
@@ -528,7 +528,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "« Manana andraikitra amin'ny fiarovana ny vakoka sy ny harem-pirenena ny olompirenena ho fampivoarana ny isam-paritra : tsy mandoro tanety, tsy mandoto na manimba ny vakoka sy ny harem-pirenena ; mandray anjara amin'ny fanatsarana sy fanadiovana ireo toerana fitsangatsanganana ; fanajana ny lalàna sy ny dinam-piaraha-monina amin'ny fiarovana azy ireo. »",
-      "(Nalaina tao amin'ny FRP T4, LFK 6-f.)",
+      "(Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "Fanontaniana : a) Inona no mety ho vokatry ny fandoroana tanety eo amin'ny harem-pirenena ? b) Inona no atao hoe dina ?",
       "Valiny : a) Mandoro ny ala sy ny zava-manan'aina, manimba ny tany : very ny harem-pirenena. b) Fifanarahana ataon'ny mponina hiarovana ny fananana iombonana.",
     ],

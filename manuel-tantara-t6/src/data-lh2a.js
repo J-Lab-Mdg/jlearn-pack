@@ -1,12 +1,12 @@
 // data-lh2a.js — Lohahevitra II : Madagasikara taorian'ny fahaleovantena (S7-S11)
 const LH = "Lohahevitra II — Madagasikara taorian'ny fahaleovantena";
-const DOC = "PE T6 (MEN, nohavaozina) ; FRP Tantara T6 ; boky Tantara J-Learn";
+const DOC = "PE T6 (MEN, nohavaozina) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 
 const S7 = {
   numero: 7, total: 27, lohahevitra: LH,
   titre: "Ny atao hoe Repoblika sy ny frizin'ireo Repoblika nifandimby",
   tanjona: "mamaritra ny atao hoe Repoblika ary mandahatra amin'ny frizy ireo Repoblika nifandimby teto Madagasikara",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-a, 2-b, 2-d, 2-e)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy kronolojika, sainam-pirenena, solaitrabe",
   image: "images/img_seansa07.png",
   imageLegende: "Frizy : ireo Repoblika nifandimby teto Madagasikara (1958-2026)",
@@ -144,7 +144,7 @@ const S8 = {
   numero: 8, total: 27, lohahevitra: LH,
   titre: "Ny Repoblika voalohany (1958-1972)",
   tanjona: "mitantara ny niorenan'ny Repoblika I, ny mombamomba azy ary ny anton'ny fahataperany",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-f, 2-g)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy, sary, lahatsoratra, solaitrabe",
   image: "images/img_seansa08.png",
   imageLegende: "Ny fankalazana ny fahaleovantena, 26 jona 1960",
@@ -248,7 +248,7 @@ const S8 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Ny 70 %-n'ny vokatra nafaran'i Madagasikara avy any ivelany dia avy any Frantsa avokoa, ary 58 %-n'ny vokatra naondrana kosa no nalefa tany Frantsa. » (Loharano : FRP Tantara T6)",
+      "« Ny 70 %-n'ny vokatra nafaran'i Madagasikara avy any ivelany dia avy any Frantsa avokoa, ary 58 %-n'ny vokatra naondrana kosa no nalefa tany Frantsa. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Inona no asehon'ireo tarehimarika ireo momba ny toekarena tamin'ny Repoblika I ?",
       "2. Nahoana izany no nampitombo ny tsy fahafaham-pon'ny vahoaka ?",
       "3. Inona no fitakiana lehibe nataon'ny mpianatra tamin'ny 1972 ?",
@@ -286,7 +286,7 @@ const S9 = {
   numero: 9, total: 27, lohahevitra: LH,
   titre: "Ny tetezamita 1972-1975 : ny fitondrana miaramila",
   tanjona: "mitantara ny fifandimbiasan'ny mpitondra nandritra ny tetezamita 1972-1975",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-h, 2-i)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy 1972-1975, lahatsoratra, solaitrabe",
   image: "images/img_seansa09.png",
   imageLegende: "Frizy : ny tetezamita 1972-1975",
@@ -376,7 +376,7 @@ const S9 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Ramanantsoa, fanta-daza amin'ny tsy fisian'ny firaisankina teo anivon'ny fitondram-panjakana, dia nanolotra ny fahefana ho an'ny kolonely Richard Ratsimandrava. Maty nisy namono i Ratsimandrava tamin'ny 11 febroary 1975. Ny jeneraly Gilles Andriamahazo no nitondra ny fitondrana (direktoara militera). » (Loharano : FRP Tantara T6)",
+      "« Ramanantsoa, fanta-daza amin'ny tsy fisian'ny firaisankina teo anivon'ny fitondram-panjakana, dia nanolotra ny fahefana ho an'ny kolonely Richard Ratsimandrava. Maty nisy namono i Ratsimandrava tamin'ny 11 febroary 1975. Ny jeneraly Gilles Andriamahazo no nitondra ny fitondrana (direktoara militera). » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Antony inona no nampietry an'i Ramanantsoa ?",
       "2. Hafiriana i Ratsimandrava no teo amin'ny fitondrana ?",
       "3. Inona no atao hoe direktoara miaramila ?",
@@ -414,7 +414,7 @@ const S10 = {
   numero: 10, total: 27, lohahevitra: LH,
   titre: "Ny Repoblika faharoa (1975-1991)",
   tanjona: "mitantara ny Repoblika II : ny Boky Mena, ny sosialisma ary ny hetsi-bahoaka 1991",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-j, 2-k)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy 1975-1991, lahatsoratra, solaitrabe",
   image: "images/img_seansa10.png",
   imageLegende: "Frizy : ny Repoblika faharoa (1975-1991)",
@@ -512,7 +512,7 @@ const S10 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Niezaka ny hitondra hevi-baovao sy fijery vaovao tamin'ny alalan'ny fandaharan'asa iray dia ny Boky Mena ity manamboninahitra tantsambo ity, ary naharesy lahatra ny maro tamin'ny Malagasy izy tamin'izany. Noho ireo toe-javatra maro nitranga ka niteraka fahoriana sy fahasahiranana lalina teo amin'ny fiainam-pirenena, dia voatery ny vahoaka haneho fa tsy afaka ny hiharitra intsony. » (Loharano : FRP Tantara T6)",
+      "« Niezaka ny hitondra hevi-baovao sy fijery vaovao tamin'ny alalan'ny fandaharan'asa iray dia ny Boky Mena ity manamboninahitra tantsambo ity, ary naharesy lahatra ny maro tamin'ny Malagasy izy tamin'izany. Noho ireo toe-javatra maro nitranga ka niteraka fahoriana sy fahasahiranana lalina teo amin'ny fiainam-pirenena, dia voatery ny vahoaka haneho fa tsy afaka ny hiharitra intsony. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Iza ilay « manamboninahitra tantsambo » resahina eto ?",
       "2. Inona no anaran'ny fandaharan'asany ?",
       "3. Nahoana ny vahoaka no nitokona tamin'ny farany ?",
@@ -550,7 +550,7 @@ const S11 = {
   numero: 11, total: 27, lohahevitra: LH,
   titre: "Ny tetezamita 1991-1993 sy ny Repoblika fahatelo (1993-2010)",
   tanjona: "mitantara ny tetezamita 1991-1993 sy ny Repoblika III ary ireo filoha nifandimby",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 2-l, 2-m, 2-n)",
+  fanovozanKevitra: DOC,
   fitaovana: "Frizy 1991-2010, lahatsoratra, solaitrabe",
   image: "images/img_seansa11.png",
   imageLegende: "Frizy : tetezamita 1991-1993 sy Repoblika III (1993-2010)",
@@ -646,7 +646,7 @@ const S11 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« 25 novambra 1992 : fihodinana voalohan'ny fifidianana filohan'ny Repoblika, narahin'ny fihodinana faharoa tamin'ny 10 febroary 1993. Voafidy ho filoha i Zafy Albert (66,76 %) ary nandray fahefana tamin'ny 27 marsa. » (Loharano : FRP Tantara T6)",
+      "« 25 novambra 1992 : fihodinana voalohan'ny fifidianana filohan'ny Repoblika, narahin'ny fihodinana faharoa tamin'ny 10 febroary 1993. Voafidy ho filoha i Zafy Albert (66,76 %) ary nandray fahefana tamin'ny 27 marsa. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Fihodinana firy no nilaina tamin'io fifidianana io ?",
       "2. Firy isan-jato no azon'i Zafy Albert ?",
       "3. Nahoana ny fifidianana no dingana lehibe amin'ny demokrasia ?",

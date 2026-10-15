@@ -199,7 +199,6 @@ function annexe7() {
     [
       ["MEN", "Ministère de l'Éducation Nationale", "Ny ministera miandraikitra ny fanabeazam-pirenena"],
       ["PE", "Programme Éducatif", "Ny fandaharam-pianarana ofisialy"],
-      ["FRP", "Fitaovana fanampiny ho an'ny mpampianatra", "Boky torolalana ho an'ny mpampianatra"],
       ["ODAS", "Objectifs de Développement de l'Apprentissage Scolaire", "Ireo tanjona fototry ny fianarana"],
       ["UNESCO", "United Nations Educational, Scientific and Cultural Organization", "Fikambanana iraisam-pirenena miaro ny fanabeazana sy ny kolontsaina ary ny vakoka"],
       ["V.A.", "Valiny andrasana", "Ny valiny tokony homen'ny mpianatra"],
@@ -263,14 +262,14 @@ function annexe9(saryList) {
   out.push(B.p("Bibliografia :", { bold: true, size: 24, color: B.GREEN, spacingAfter: 60 }));
   [
     "Ministère de l'Éducation Nationale (MEN), Programme Éducatif — Tantara, kilasy T4 (Édition 2026).",
-    "Ministère de l'Éducation Nationale (MEN), FRP Tantara — kilasy T4 (fitaovana fanampiny ho an'ny mpampianatra).",
+    "CALLET R.P. (François), Tantara ny Andriana eto Madagasikara, 1878-1881 (dikan-teny frantsay : Histoire des rois, 1908).",
     "Marco Polo, Le Livre des Merveilles (Il Milione), 1298.",
     "Rakibolana malagasy sy rakibolana ho an'ny mpampianatra (nakana ny famaritana sasany).",
   ].forEach(t => out.push(B.p("\u2022 " + t, { size: 24, spacingAfter: 40 })));
   out.push(B.p("Webografia :", { bold: true, size: 24, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
   [
-    "plateforme.education.mg — ny sehatra ofisialin'ny MEN ahitana ny PE sy ny FRP.",
-    "Madagascar-Tribune (lahatsoratra « Mahaliana ny vahiny ny vakoka », nohafohezina tao amin'ny FRP).",
+    "plateforme.education.mg — ny sehatra ofisialin'ny MEN ahitana ny fandaharam-pianarana ofisialy.",
+    "Madagascar-Tribune (lahatsoratra « Mahaliana ny vahiny ny vakoka »).",
   ].forEach(t => out.push(B.p("\u2022 " + t, { size: 24, spacingAfter: 40 })));
   out.push(B.p("Lisitry ny sary rehetra ao amin'ny boky :", { bold: true, size: 24, color: B.GREEN, spacingBefore: 120, spacingAfter: 60 }));
   for (const f of saryList) {

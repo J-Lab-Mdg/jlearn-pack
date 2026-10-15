@@ -6,7 +6,7 @@ const S1 = {
   lohahevitra: "Lohahevitra I — Fampidirana ny fianarana Tantara",
   titre: "Famaritana ny Tantara : ny toetrany sy ny tombontsoa entiny",
   tanjona: "mamaritra ny atao hoe Tantara, milaza ny toetrany ary manazava ny tombontsoa entin'ny fahaizana tantara",
-  fanovozanKevitra: "PE T6 (MEN, nohavaozina) ; FRP Tantara T6 (FRP T6, LFK 1-b, 1-d, 1-e) ; boky Tantara J-Learn",
+  fanovozanKevitra: "PE T6 (MEN, nohavaozina) sy ireo boky tantara voatanisa ao amin'ny bibliografia",
   fitaovana: "Lahatsoratra (tahirin-kevitra), sary, solaitrabe, kahie",
   image: "images/img_seansa01.png",
   imageLegende: "Ny Tantara : mitantara ny lasa mba hanazavana ny ankehitriny sy hanatsarana ny hoavy",
@@ -160,7 +160,7 @@ const S1 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio ny fanontaniana :",
-      "« Ny tantara dia fandinihana ny zava-mitranga, ny zava-bita, ary ny zavatra mikasika azy. Ny tantara dia zavatra tantaraina, izy io dia fitaratry ny zava-mitranga efa lasa, ary ny olona mandinika sy mitantara io zavatra io dia lazaina hoe mpahay tantara. » (Loharano : FRP Tantara T6, MEN)",
+      "« Ny tantara dia fandinihana ny zava-mitranga, ny zava-bita, ary ny zavatra mikasika azy. Ny tantara dia zavatra tantaraina, izy io dia fitaratry ny zava-mitranga efa lasa, ary ny olona mandinika sy mitantara io zavatra io dia lazaina hoe mpahay tantara. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Araka ity lahatsoratra ity, inona no atao hoe Tantara ?",
       "2. Iza no antsoina hoe mpahay tantara ?",
       "3. Nahoana ny Tantara no lazaina fa « fitaratry ny zava-mitranga efa lasa » ?",

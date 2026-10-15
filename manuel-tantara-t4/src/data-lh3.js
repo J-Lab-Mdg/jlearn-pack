@@ -1,6 +1,6 @@
 // data-lh3.js — LOHAHEVITRA III : FAMPIDIRANA NY FIANARANA TANTARA (S8-S10) — Tantara T4
 // Loharano : PE T4 sy FRP T4 (LFK 3-a → 3-j)
-const DOC = "PE Tantara T4 (MEN) sy FRP T4";
+const DOC = "PE Tantara T4 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "III — Ny fampidirana ny fianarana tantara";
 const FAHENDRENA = "Fivelaran'ny maha-olona, fitiavana miezaka sy mikaroka";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe angano, mitanisa ny toetoetrany ary milaza ny ilàna azy",
   fahendrena: FAHENDRENA,
   tetika: "Fitantarana angano ; fitrandrahana lahatsoratra ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 3-a, 3-b, 3-d, 3-e)",
+  fanovozanKevitra: DOC,
   fitaovana: "Angano roa (Rapeto sy Rasoalao ; Ny ipaohan'ny papango ny akoho) ; solaitrabe",
   image: "images/img_s08.png",
   imageLegende: "Dadabe mitantara angano amin'ny zafikeliny eo amorom-patana",
@@ -117,7 +117,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "NY IPAOHAN'NY PAPANGO NY AKOHO — « Tera-dahy, hono, ity papango, ka avy ny reniakoho hampivelona azy. Nony efa nifana herinandro izy dia lasa nitsangatsangana, fa nomeny hotaizain'ny akoho ny zanany. Kanjo tratra ela ny papango, ka tezitra ny akoho, dia novonoiny ireo zanany. Rehefa nody ny papango ka hitany fa lany ritra ny zanany, dia tezitra loatra izy ka niady tamin'ny reniakoho. Nony tsy hitany izay hatao, dia nanozona izy hoe : “Hafarako ny taranako hamono ny zanak'ireny reniakoho ireny.” Izany, hono, no ihinanan'ny papango ny akohokely mandraka androany. »",
-      "(Nalaina tao amin'ny Anganon'ny Ntaolo, tak. 192 — FRP T4, LFK 3-e.)",
+      "(Nalaina tao amin'ny Anganon'ny Ntaolo, tak. 192.)",
       "Fanontaniana : a) Iza ireo mpandray anjara ? b) Inona no mampiseho fa angano io tantara io ?",
       "Valiny : a) Ny papango sy ny reniakoho (biby). b) Biby miteny sy manao toy ny olona ny mpandray anjara ; miantomboka amin'ny « hono » izy ; manazava zava-misy (ny ipaohan'ny papango ny akoho) amin'ny fomba noforonina.",
     ],
@@ -157,7 +157,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe tantara, mitanisa ny toetoetrany ary manavaka ny tantara amin'ny angano",
   fahendrena: FAHENDRENA,
   tetika: "Asa an-tarika (vondrona telo) ; fitrandrahana lahatsoratra ; fampitahana",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 3-f, 3-g, 3-h, 3-i)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra (Rainandriamampandry ; Andrianampoinimerina) ; solaitrabe",
   image: "images/img_s09.png",
   imageLegende: "Ny tantara dia zava-nisy marina : misy porofo sy daty voafaritra",
@@ -268,7 +268,7 @@ const seances = [
     ],
     tahirinKevitra: [
       "RAINANDRIAMAMPANDRY — « Fantatra koa amin'ny anarana hoe Rabezandrina ity lehilahy nampandraiketin-dRanavalona III ny fiarovana an'i Toamasina ity. Izy no mpitari-tafika nanohitra mafy ny Frantsay tao Toamasina, ka nahatonga ny fanaovana sonia fanekena iray tamin'ny volana desambra 1885. Nony resy ny tafika malagasy tamin'ny taona 1895 dia natsoina izy ho minisitry ny atitany. Notifirina ampahibemaso teo Antsahamanitra izy niaraka tamin'ny Printsy Ratsimamanga tamin'ny 16 oktobra 1896. Maty tamin-kerim-po lehibe izy. »",
-      "(Nalaina tao amin'ny bokin'i Jeanne Rasoanasy, « Menalamba sy Tanindrazana », tak. 67 — FRP T4, LFK 3-f.)",
+      "(Nalaina tao amin'ny bokin'i Jeanne Rasoanasy, « Menalamba sy Tanindrazana », tak. 67.)",
       "Fanontaniana : a) Inona avy ireo daty hita ao amin'ny lahatsoratra ? b) Nahoana io lahatsoratra io no tantara fa tsy angano ?",
       "Valiny : a) Desambra 1885 ; 1895 ; 16 oktobra 1896. b) Satria zava-nisy marina izy : misy daty mazava, toerana (Toamasina, Antsahamanitra), olona nisy marina ary porofo an-tsoratra.",
     ],
@@ -308,7 +308,7 @@ const seances = [
   tanjona: "mitanisa sy manavaka ireo loharano fanovozan-kevitra ara-tantara telo karazana",
   fahendrena: FAHENDRENA,
   tetika: "Fandinihana zavatra mivaingana ; asa an-tarika ; fanasokajiana",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 3-j)",
+  fanovozanKevitra: DOC,
   fitaovana: "Boky tranainy ; sary fitaovana taloha (lefona, vilany tany) ; solaitrabe",
   image: "images/img_s10.png",
   imageLegende: "Ireo loharano ara-tantara : an-tsoratra, am-bava, moana",

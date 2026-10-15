@@ -1,12 +1,12 @@
 // data-lh4.js — Lohahevitra IV : Vakoka sy harem-pirenena (S22-S25)
 const LH = "Lohahevitra IV — Ny vakoka sy ny harem-pirenena eto Madagasikara";
-const DOC = "PE T6 (MEN, nohavaozina) ; FRP Tantara T6 ; boky Tantara J-Learn";
+const DOC = "PE T6 (MEN, nohavaozina) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 
 const S22 = {
   numero: 22, total: 27, lohahevitra: LH,
   titre: "Ny famaritana ny vakoka sy ireo karazam-bakoka",
   tanjona: "mamaritra ny atao hoe vakoka ary manasokajy ireo karazam-bakoka",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 4-a, 4-b)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary vakoka, solaitrabe",
   image: "images/img_seansa22.png",
   imageLegende: "Ny vakoka malagasy : Ambohimanga, aloalo, kabary, hira gasy, sikotra Zafimaniry",
@@ -108,7 +108,7 @@ const S22 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Ny atao hoe vakoka dia akora na fitaovana tranainy mirakitra ny ela ahitana taratra ny maha izy azy ny firenena sy ny vahoaka mbamin'ny tantarany ka zary harem-pirenena, rakitsoa sarobidy tehirizina ho fantatry ny taranaka mifandimby. » (Loharano : FRP Tantara T6)",
+      "« Ny atao hoe vakoka dia akora na fitaovana tranainy mirakitra ny ela ahitana taratra ny maha izy azy ny firenena sy ny vahoaka mbamin'ny tantarany ka zary harem-pirenena, rakitsoa sarobidy tehirizina ho fantatry ny taranaka mifandimby. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Inona no asehon'ny vakoka momba ny firenena ?",
       "2. Ho an'iza no itehirizana azy ?",
       "3. Nahoana ny vakoka no lazaina hoe « harem-pirenena » ?",
@@ -146,7 +146,7 @@ const S23 = {
   numero: 23, total: 27, lohahevitra: LH,
   titre: "Ny fikolokoloana ny vakoka : tombontsoa sy fomba fiarovana",
   tanjona: "milaza ny tombontsoa azo amin'ny fikolokoloana ny vakoka sy ireo fomba fiarovana azy",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 4-d, 4-e, 4-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra, sary tranom-bakoka, solaitrabe",
   image: "images/img_seansa23.png",
   imageLegende: "Ny fikolokoloana ny vakoka : tranom-bakoka, fizahan-tany, fanarenana",
@@ -243,7 +243,7 @@ const S23 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Kolokoloy, fa hampiditra vola vahiny betsaka ny vakoka Malagasy. Mazana anefa dia tsy ampy ny fikolokoloana ireo vakoka malagasy mbola mijoro. Tsy vitsy ny manondrana antsokosoko ireny harentsika ireny, toy ny sokatra, bibilava... » (Loharano : Madagascar-Tribune, ao amin'ny FRP Tantara T6)",
+      "« Kolokoloy, fa hampiditra vola vahiny betsaka ny vakoka Malagasy. Mazana anefa dia tsy ampy ny fikolokoloana ireo vakoka malagasy mbola mijoro. Tsy vitsy ny manondrana antsokosoko ireny harentsika ireny, toy ny sokatra, bibilava... » (Loharano : gazety Madagascar-Tribune.)",
       "1. Inona no tombony voalazan'ny lahatsoratra ?",
       "2. Inona kosa ny olana roa tsikaritra ?",
       "3. Inona no soso-kevitrao hamahana ireo olana ireo ?",
@@ -281,7 +281,7 @@ const S24 = {
   numero: 24, total: 27, lohahevitra: LH,
   titre: "Ny harem-pirenena : famaritana sy fanasokajiana",
   tanjona: "mamaritra ny harem-pirenena ary manasokajy azy ireo",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 4-g, 4-h)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary harena voajanahary, solaitrabe",
   image: "images/img_seansa24.png",
   imageLegende: "Ny harem-pirenena voajanahary : Tsingy, baobab, gidro, lavanila, vatosoa",
@@ -383,7 +383,7 @@ const S24 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Amin'izao fotoana izao dia voasoratra ao amin'ny lisitry ny vakoka sy harena iraisam-pirenena ny Tsingin'ny Bemaraha izay nosoratana tamin'ny taona 1990, ny ala mandon'Atsinanana nosoratana tamin'ny 2007, ary ny vohimasin'Ambohimanga nosoratana tamin'ny 2001. » (Loharano : FRP Tantara T6)",
+      "« Amin'izao fotoana izao dia voasoratra ao amin'ny lisitry ny vakoka sy harena iraisam-pirenena ny Tsingin'ny Bemaraha izay nosoratana tamin'ny taona 1990, ny ala mandon'Atsinanana nosoratana tamin'ny 2007, ary ny vohimasin'Ambohimanga nosoratana tamin'ny 2001. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Firy ny harena malagasy voatanisa eto ary oviana avy no nosoratana ?",
       "2. Iza no vakoka ara-kolontsaina amin'izy telo ?",
       "3. Inona no tombony ho an'i Madagasikara amin'izany fisoratana izany ?",
@@ -421,7 +421,7 @@ const S25 = {
   numero: 25, total: 27, lohahevitra: LH,
   titre: "Ny fiarovana sy ny fikojana ny harem-pirenena",
   tanjona: "mitanisa ireo fomba fiarovana ny harem-pirenena ary mandray andraikitra amin'izany",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 4-i)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra, sary, solaitrabe",
   image: "images/img_seansa25.png",
   imageLegende: "Ny fiarovana ny harem-pirenena : fambolen-kazo, fanaraha-maso, ady amin'ny doro tanety",
@@ -515,7 +515,7 @@ const S25 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Fiarovana sy fikojana ny harem-pirenena : mamboly hazo sy manara-maso ny hazo voavoly ; miaro ny ala, ny zava-maniry ary ny biby ; ady amin'ny fitrandrahana tsy ara-dalàna, ny fihazana, ary ny fanondranana antsokosoko ; tsy mandoro tanety, tsy manapaka ala. » (Loharano : FRP Tantara T6)",
+      "« Fiarovana sy fikojana ny harem-pirenena : mamboly hazo sy manara-maso ny hazo voavoly ; miaro ny ala, ny zava-maniry ary ny biby ; ady amin'ny fitrandrahana tsy ara-dalàna, ny fihazana, ary ny fanondranana antsokosoko ; tsy mandoro tanety, tsy manapaka ala. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Tanisao fepetra telo voalaza ao amin'ny lahatsoratra.",
       "2. Iza no tokony hampihatra ireo fepetra ireo ?",
       "3. Inona no azonao atao eo anivon'ny sekolinao ?",

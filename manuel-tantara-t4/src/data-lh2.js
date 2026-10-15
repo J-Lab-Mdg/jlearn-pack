@@ -2,7 +2,7 @@
 // Loharano : PE T4 sy FRP T4 (LFK 2-a, 2-b)
 // Fanamarihana : nahitsy ny diso an-tsoratra tao amin'ny FRP p. 13
 // (« 1901-2000 = taonjato faha-XIV ») : ny marina dia taonjato faha-XX.
-const DOC = "PE Tantara T4 (MEN) sy FRP T4";
+const DOC = "PE Tantara T4 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "II — Ny taona sy ny taonjato";
 
 const seances = [
@@ -14,7 +14,7 @@ const seances = [
   tanjona: "mamaky sy manoratra ny tarehimarika romana, ary mamaritra ny taonjato misy ny taona iray",
   fahendrena: "Fahaiza-mandamina sy fanajana ny fotoana",
   tetika: "Fampitahana fafana ; asa an-tarika ; fanazaran-tena an-tsoratra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 2-a, 2-b)",
+  fanovozanKevitra: DOC,
   fitaovana: "Fafana mampitaha ny tarehimarika arabo sy romana ; solaitrabe",
   image: "images/img_s06.png",
   imageLegende: "Ny tarehimarika romana sy ny tarehimarika arabo",

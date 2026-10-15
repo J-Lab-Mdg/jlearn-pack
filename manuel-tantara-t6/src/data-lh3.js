@@ -1,12 +1,12 @@
 // data-lh3.js — Lohahevitra III : Fifandraisana amin'ireo firenena afrikanina sy ny nosy (S18-S20)
 const LH = "Lohahevitra III — Ny fifandraisan'i Madagasikara amin'ireo firenena afrikanina sy ireo nosy ao amin'ny ranomasimbe indianina";
-const DOC = "PE T6 (MEN, nohavaozina) ; FRP Tantara T6 ; boky Tantara J-Learn";
+const DOC = "PE T6 (MEN, nohavaozina) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 
 const S18 = {
   numero: 18, total: 27, lohahevitra: LH,
   titre: "Ireo endri-pifandraisan'i Madagasikara amin'ny firenena hafa",
   tanjona: "mitanisa sy manazava ireo endri-pifandraisan'i Madagasikara amin'ireo firenena afrikanina sy ny nosy manodidina",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 3-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sari-tany Afrika sy ranomasimbe indianina, solaitrabe",
   image: "images/img_seansa18.png",
   imageLegende: "Ny fifandraisan'i Madagasikara amin'i Afrika sy ny nosy manodidina",
@@ -99,7 +99,7 @@ const S18 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Ny fifandraisana roalafy dia fiaraha-miasa, fifanampiana sy famenoana eo amin'ny firenena roa tonta. Fifanarahana no fehezin'izy io izay ahitana fifanarahana amin'ny sehatra maro : ara-toekarena, ara-bola, ara-teknika ary ara-kolontsaina. » (Loharano : FRP Tantara T6)",
+      "« Ny fifandraisana roalafy dia fiaraha-miasa, fifanampiana sy famenoana eo amin'ny firenena roa tonta. Fifanarahana no fehezin'izy io izay ahitana fifanarahana amin'ny sehatra maro : ara-toekarena, ara-bola, ara-teknika ary ara-kolontsaina. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Firy ny firenena voakasiky ny fifandraisana roalafy ?",
       "2. Inona no mifehy izany fifandraisana izany ?",
       "3. Tanisao sehatra telo mety iarahana miasa.",
@@ -137,7 +137,7 @@ const S19 = {
   numero: 19, total: 27, lohahevitra: LH,
   titre: "Ireo fikambanana nidiran'i Madagasikara : UA, COI, COMESA, SADC",
   tanjona: "mitanisa ireo fikambanana misy an'i Madagasikara sy ny tanjon'izy ireo avy",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 3-b, 3-d, 3-e)",
+  fanovozanKevitra: DOC,
   fitaovana: "Fafana ireo fikambanana, sari-tany, solaitrabe",
   image: "images/img_seansa19.png",
   imageLegende: "Ireo fikambanana efatra misy an'i Madagasikara",
@@ -228,7 +228,7 @@ const S19 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Nanomboka ny taona 1984 dia niditra tamin'ny tsenam-paritra aty Afrika i Madagasikara, dia ny Vaomieran'ny ranomasimbe indianina (COI), ny SADC ary ny COMESA. Ny hanamora ny varotra amin'ireo firenena mpikambana ao aminy no tena tanjona. » (Loharano : FRP Tantara T6)",
+      "« Nanomboka ny taona 1984 dia niditra tamin'ny tsenam-paritra aty Afrika i Madagasikara, dia ny Vaomieran'ny ranomasimbe indianina (COI), ny SADC ary ny COMESA. Ny hanamora ny varotra amin'ireo firenena mpikambana ao aminy no tena tanjona. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Fikambanana firy no voatanisa eto ?",
       "2. Inona no tena tanjon'ny fidirana amin'ireo tsenam-paritra ireo ?",
       "3. Iza amin'ireo no mampivondrona ny nosy ihany ?",
@@ -266,7 +266,7 @@ const S20 = {
   numero: 20, total: 27, lohahevitra: LH,
   titre: "Ny vokatry ny fidiran'i Madagasikara amin'ireo fikambanana",
   tanjona: "manadihady ny vokatra ara-politika, ara-toekarena ary ara-tsosialy amin'ny fidirana amin'ireo fikambanana",
-  fanovozanKevitra: DOC + " (FRP T6, LFK 3-f, 3-g, 3-h, 3-i)",
+  fanovozanKevitra: DOC,
   fitaovana: "Lahatsoratra, sary, solaitrabe",
   image: "images/img_seansa20.png",
   imageLegende: "Ny varotra sy ny fifaninanana : vokatry ny fanatontoloana",
@@ -364,7 +364,7 @@ const S20 = {
     ],
     tahirinKevitra: [
       "Vakio ity tahirin-kevitra ity ary valio :",
-      "« Tsy misy intsony ny fifanarahana eo amin'ny firenena roa fotsiny amin'ny fifampivarotana satria misokatra amin'ny firenena rehetra ny fifanakalozana. Mihena ny vidin-javatra eny an-tsena noho ny hamaroany. Miteraka asa ho an'ny tsy manana ny fisian'ireo orinasa vahiny. » (Loharano : FRP Tantara T6)",
+      "« Tsy misy intsony ny fifanarahana eo amin'ny firenena roa fotsiny amin'ny fifampivarotana satria misokatra amin'ny firenena rehetra ny fifanakalozana. Mihena ny vidin-javatra eny an-tsena noho ny hamaroany. Miteraka asa ho an'ny tsy manana ny fisian'ireo orinasa vahiny. » (Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "1. Inona no anaran'io fisokafan'ny varotra maneran-tany io ?",
       "2. Tanisao tombony roa voalaza ao amin'ny lahatsoratra.",
       "3. Inona kosa no mety ho loza raha tsy vonona ny mpamokatra malagasy ?",

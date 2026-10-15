@@ -95,7 +95,6 @@ function annexe3() {
   out.push(table2(
     ["Sigla", "Dikany feno", "Fanazavana fohy"],
     [
-      ["FRP", "Fiche de Référence Pédagogique (frantsay)", "Tari-dalana ofisialin'ny mpampianatra"],
       ["LMS", "London Missionary Society", "Misionera anglisy tonga teto Madagasikara (1818-1820)"],
       ["MEN", "Ministère de l'Éducation Nationale", "Ministeran'ny Fanabeazam-pirenena"],
       ["PE", "Programme d'Études", "Fandaharam-pianarana ofisialy"],

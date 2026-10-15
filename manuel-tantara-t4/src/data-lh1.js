@@ -1,6 +1,6 @@
 // data-lh1.js — LOHAHEVITRA I : NY HABAKA SY NY FOTOANA (S1-S4) — Tantara T4
 // Loharano : PE T4 (p. 101-114) sy FRP T4 (FRP_8eme_3, LFK 1-a → 1-k)
-const DOC = "PE Tantara T4 (MEN) sy FRP T4";
+const DOC = "PE Tantara T4 (MEN) sy ireo boky tantara voatanisa ao amin'ny bibliografia";
 const LH = "I — Ny habaka sy ny fotoana";
 const FAHENDRENA = "Fahaiza-mandamina sy fanajana ny fotoana";
 
@@ -13,7 +13,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe habaka sy tontolo, ary manavaka ny tontolo voajanahary amin'ny tontolo nohajariana",
   fahendrena: FAHENDRENA,
   tetika: "Asa an-tarika ; fijerena ny manodidina ny sekoly ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 1-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sary maneho ireo karazana tontolo ; ny tontolo manodidina ny sekoly ; solaitrabe",
   image: "images/img_s01.png",
   imageLegende: "Ny tontolo voajanahary (ala, tendrombohitra) sy ny tontolo nohajariana (tanàna, tanimbary)",
@@ -164,7 +164,7 @@ const seances = [
   tanjona: "mamaritra ny atao hoe fiarahamonina ary manavaka ny fiarahamonina ao an-tokantrano, ao an-tsekoly ary ao an-tanàna",
   fahendrena: FAHENDRENA,
   tetika: "Fanoritsoritana sary ; asa an-tarika ; fifanakalozan-kevitra",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 1-a)",
+  fanovozanKevitra: DOC,
   fitaovana: "Sarim-pianakaviana ; sarin'ny mpiara-mianatra ; sarin'ny mpiray tanàna",
   image: "images/img_s02.png",
   imageLegende: "Ny fiarahamonina : ny fianakaviana, ny sekoly ary ny tanàna",
@@ -304,7 +304,7 @@ const seances = [
   tanjona: "mampiasa araka ny tokony ho izy ny voambolana mikasika ny andro (maraina, atoandro, hariva, alina) sy ny herinandro",
   fahendrena: FAHENDRENA,
   tetika: "Fifandimbiasam-pitenenana ; fitrandrahana lahatsoratra ; fanontaniana/valiny",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 1-b, 1-d, 1-e, 1-f)",
+  fanovozanKevitra: DOC,
   fitaovana: "Fandaharam-potoana an-dakilasy ; lahatsoratra (Felana sy Lova) ; solaitrabe",
   image: "images/img_s03.png",
   imageLegende: "Ny fizaran'ny iray andro : maraina, atoandro, hariva, alina",
@@ -407,7 +407,7 @@ const seances = [
     tahirinKevitra: [
       "Lahatsoratra 1 — « Felana no anarako. An-tanàn-dehibe izahay no monina. Amin'ny 6 ora aho no mifoha. Raha vao maraina dia midio aho, misakafo, avy eo miomana ho any an-tsekoly. Lany any ny tapak'andro maraina. Mbola mianatra kosa aho ny tapak'andro hariva aorian'ny sakafo. Amin'ny takariva dia milalao kely aho, manondraka voninkazo ary manao enti-mody. Mamerin-desona kely aho vao matory amin'ny 8 ora sy sasany. »",
       "Lahatsoratra 2 — « Lova kosa no anarako. Ambanivohitra no misy anay. Amin'ny 5 ora sy sasany aho no mifoha. Mamaha-borona, mantsaka, avy eo misakafo maraina ary lasa mianatra. Tapak'andro ihany aho no mianatra. Ny tapak'andro hariva dia maka vilona no raharahako. Ny takariva dia mihaino ny anganon'i Dadabe aho eo am-piandrasana ny sakafo hariva, ary matory amin'ny 8 ora alina. »",
-      "(Nalaina tao amin'ny FRP T4, LFK 1-e.)",
+      "(Famintinana narafitra ho an'ity boky ity, araka ny tahirin-kevitra ofisialy.)",
       "Fanontaniana : a) Amin'ny firy no mifoha i Felana ? Ary i Lova ? b) Inona no ataon'i Lova amin'ny takariva ?",
       "Valiny : a) I Felana amin'ny 6 ora, i Lova amin'ny 5 ora sy sasany. b) Mihaino ny anganon'i Dadabe izy.",
     ],
@@ -447,7 +447,7 @@ const seances = [
   tanjona: "mitanisa ny volana 12 amin'ny taona, mamaritra ny taona ary mampiasa ny voambolana mikasika ny lasa, ny ankehitriny sy ny ho avy",
   fahendrena: FAHENDRENA,
   tetika: "Fitrandrahana kalandrie ; famantarana amin'ny vohon-tanana ; asa an-tarika",
-  fanovozanKevitra: DOC + " (FRP T4, LFK 1-h, 1-i, 1-j, 1-k)",
+  fanovozanKevitra: DOC,
   fitaovana: "Kalandrie ; solaitrabe ; vohon-tanana",
   image: "images/img_s04.png",
   imageLegende: "Ny kalandrie : fitaovana ahafantarana ny volana sy ny taona",
