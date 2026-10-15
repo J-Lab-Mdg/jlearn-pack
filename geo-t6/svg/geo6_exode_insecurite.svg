@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Causes de l'exode (2) : l'insécurité et les problèmes fonciers</text>
+  <rect x="40" y="100" width="450" height="310" rx="18" fill="#ECEFF1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="265" y="138" text-anchor="middle" font-size="19" fill="#C00000" font-weight="bold">L'INSÉCURITÉ LA NUIT</text>
+  <rect x="60" y="160" width="410" height="170" rx="14" fill="#37474F"/>
+  
+  <path d="M 410 180 A 20 20 0 1 0 410 220 A 9 20 0 1 1 410 180 Z" fill="#FFE082" stroke="#F9A825" stroke-width="3"/>
+  
+  <g transform="translate(180,265) scale(1.4)">
+    <ellipse cx="0" cy="0" rx="24" ry="13" fill="#8D6E63"/>
+    <circle cx="26" cy="-10" r="8" fill="#8D6E63"/>
+    <path d="M 20 -16 L 26 -26 L 32 -16" fill="none" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+    <path d="M -24 -2 Q -34 -14 -26 -20" fill="none" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-12" y1="12" x2="-12" y2="24" stroke="#5D4037" stroke-width="4"/>
+    <line x1="10" y1="12" x2="10" y2="24" stroke="#5D4037" stroke-width="4"/>
+  </g>
+  <g transform="translate(280,275) scale(1.2)">
+    <ellipse cx="0" cy="0" rx="24" ry="13" fill="#8D6E63"/>
+    <circle cx="26" cy="-10" r="8" fill="#8D6E63"/>
+    <path d="M 20 -16 L 26 -26 L 32 -16" fill="none" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+    <path d="M -24 -2 Q -34 -14 -26 -20" fill="none" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-12" y1="12" x2="-12" y2="24" stroke="#5D4037" stroke-width="4"/>
+    <line x1="10" y1="12" x2="10" y2="24" stroke="#5D4037" stroke-width="4"/>
+  </g>
+  
+  <g transform="translate(360,250) scale(1.4)">
+    <circle cx="0" cy="-16" r="6" fill="#FFB74D"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#FFB74D" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#FFB74D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#FFB74D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#FFB74D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#FFB74D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="265" y="360" text-anchor="middle" font-size="17" fill="#ECEFF1">Des voleurs emmènent les zébus ;</text>
+  <text x="265" y="380" text-anchor="middle" font-size="15" fill="#ECEFF1">les jeunes veillent jusqu'au matin.</text>
+  <text x="265" y="425" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold">Fatigués, effrayés → certains partent.</text>
+  <text x="735" y="360" text-anchor="middle" font-size="17" fill="#263238">Terre cultivée 40 ans, sans papier…</text>
+  <text x="735" y="390" text-anchor="middle" font-size="17" fill="#263238">reprise en une semaine par des cousins.</text>
+  <text x="735" y="425" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold">Sans titre, la terre est fragile → on part.</text>
+  <rect x="510" y="100" width="450" height="310" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="735" y="138" text-anchor="middle" font-size="19" fill="#E65100" font-weight="bold">LES TERRES SANS PAPIER</text>
+  <rect x="650" y="170" width="180" height="120" rx="8" fill="#FFFAF0" stroke="#8D6E63" stroke-width="3"/>
+  <line x1="665" y1="200" x2="815" y2="200" stroke="#B0A08C" stroke-width="2"/>
+  <line x1="665" y1="230" x2="815" y2="230" stroke="#B0A08C" stroke-width="2"/>
+  <line x1="665" y1="260" x2="815" y2="260" stroke="#B0A08C" stroke-width="2"/>
+  <text x="740" y="192" text-anchor="middle" font-size="13" fill="#8D6E63">titre de terre :</text>
+  <text x="740" y="222" text-anchor="middle" font-size="22" fill="#C00000" font-weight="bold">AUCUN</text>
+  <text x="740" y="252" text-anchor="middle" font-size="30" fill="#C00000" font-weight="bold">?</text>
+  <text x="740" y="320" text-anchor="middle" font-size="15" fill="#546E7A" font-style="italic">un conflit d'héritage suffit à tout perdre</text>
+  <text x="500" y="480" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">On part pour être tranquille : l'insécurité et les conflits de terre chassent les ruraux.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Insécurité et problèmes fonciers : d'autres causes de l'exode rural.</text>
+</svg>

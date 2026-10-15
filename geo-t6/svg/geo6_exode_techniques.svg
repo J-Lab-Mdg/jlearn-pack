@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Solution (1) : améliorer les techniques agricoles</text>
+  <rect x="40" y="100" width="290" height="310" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="185" y="138" text-anchor="middle" font-size="18" fill="#1B5E20" font-weight="bold">LES 3 GESTES</text>
+  <text x="185" y="180" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">1. Semer en lignes droites</text>
+  <line x1="90" y1="205" x2="280" y2="205" stroke="#689F38" stroke-width="4" stroke-linecap="round"/><line x1="90" y1="225" x2="280" y2="225" stroke="#689F38" stroke-width="4" stroke-linecap="round"/><line x1="90" y1="245" x2="280" y2="245" stroke="#689F38" stroke-width="4" stroke-linecap="round"/><line x1="90" y1="265" x2="280" y2="265" stroke="#689F38" stroke-width="4" stroke-linecap="round"/>
+  <text x="185" y="300" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">2. Fabriquer du compost</text>
+  <text x="185" y="325" text-anchor="middle" font-size="13" fill="#546E7A" font-style="italic">(les déchets nourrissent la terre)</text>
+  <text x="185" y="365" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">3. Réparer le canal :</text>
+  <text x="185" y="390" text-anchor="middle" font-size="15" fill="#263238">l'eau au bon moment</text>
+  <rect x="360" y="100" width="280" height="310" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="500" y="138" text-anchor="middle" font-size="18" fill="#E65100" font-weight="bold">AVANT</text>
+  <text x="500" y="200" text-anchor="middle" font-size="16" fill="#263238">champ semé à la volée,</text>
+  <text x="500" y="226" text-anchor="middle" font-size="16" fill="#263238">terre fatiguée, eau au hasard</text>
+  <rect x="440" y="290" width="26" height="38" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/><rect x="472" y="290" width="26" height="38" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/><rect x="504" y="290" width="26" height="38" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/><rect x="536" y="290" width="26" height="38" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/>
+  <text x="500" y="355" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">4 sacs de riz</text>
+  <rect x="670" y="100" width="280" height="310" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="810" y="138" text-anchor="middle" font-size="18" fill="#1B5E20" font-weight="bold">APRÈS</text>
+  <text x="810" y="200" text-anchor="middle" font-size="16" fill="#263238">lignes droites, compost,</text>
+  <text x="810" y="226" text-anchor="middle" font-size="16" fill="#263238">eau au bon moment</text>
+  <rect x="715" y="290" width="26" height="38" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="747" y="290" width="26" height="38" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="779" y="290" width="26" height="38" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="811" y="290" width="26" height="38" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="715" y="332" width="26" height="38" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="747" y="332" width="26" height="38" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="779" y="332" width="26" height="38" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="811" y="332" width="26" height="38" fill="#AED581" stroke="#689F38" stroke-width="2"/>
+  <text x="810" y="405" text-anchor="middle" font-size="17" fill="#1B5E20" font-weight="bold">8 sacs de riz : le double !</text>
+  <text x="500" y="460" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Quand la terre nourrit à nouveau, partir n'est plus une question de survie.</text>
+  <text x="500" y="492" text-anchor="middle" font-size="17" fill="#546E7A" font-style="italic">On peut même diversifier : élevage, maraîchage, artisanat.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Mieux cultiver, c'est frapper à la racine de l'exode rural.</text>
+</svg>

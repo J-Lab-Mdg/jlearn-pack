@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+<marker id="af" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#546E7A"/></marker>
+<marker id="afR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#C00000"/></marker>
+<marker id="afV" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1E7B34"/></marker>
+<marker id="afO" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#E65100"/></marker>
+</defs><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Conséquence (2) : le cercle vicieux de l'exode rural</text>
+  
+    <rect x="330" y="130" width="340" height="90" rx="14" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+    <text x="500" y="163" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold">LE VILLAGE S'APPAUVRIT</text>
+    <text x="500" y="195" text-anchor="middle" font-size="15" fill="#263238">récoltes et ventes en baisse, services fermés</text>
+  
+    <rect x="110" y="405" width="340" height="90" rx="14" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+    <text x="280" y="438" text-anchor="middle" font-size="18" fill="#E65100" font-weight="bold">LES HABITANTS PARTENT</text>
+    <text x="280" y="470" text-anchor="middle" font-size="15" fill="#263238">vers la ville : « on vivra mieux là-bas »</text>
+  
+    <rect x="550" y="405" width="340" height="90" rx="14" fill="#ECEFF1" stroke="#90A4AE" stroke-width="3"/>
+    <text x="720" y="438" text-anchor="middle" font-size="18" fill="#546E7A" font-weight="bold">LES BRAS ET LES CLIENTS MANQUENT</text>
+    <text x="720" y="470" text-anchor="middle" font-size="15" fill="#263238">chantiers arrêtés, économie en difficulté</text>
+  <line x1="410" y1="230" x2="350" y2="395" stroke="#546E7A" stroke-width="6" marker-end="url(#af)"/>
+  <text x="330" y="300" text-anchor="middle" font-size="16" fill="#263238" font-style="italic">donc…</text>
+  <line x1="450" y1="455" x2="550" y2="455" stroke="#546E7A" stroke-width="6" marker-end="url(#af)"/>
+  <text x="500" y="435" text-anchor="middle" font-size="16" fill="#263238" font-style="italic">donc…</text>
+  <line x1="650" y1="395" x2="590" y2="230" stroke="#546E7A" stroke-width="6" marker-end="url(#af)"/>
+  <text x="680" y="300" text-anchor="middle" font-size="16" fill="#C00000" font-weight="bold" font-style="italic">…et tout recommence !</text>
+  <text x="500" y="420" text-anchor="middle" font-size="22" fill="#546E7A" font-weight="bold">LE CERCLE</text>
+  <text x="500" y="450" text-anchor="middle" font-size="22" fill="#546E7A" font-weight="bold">VICIEUX</text>
+  <rect x="290" y="545" width="420" height="60" rx="14" fill="#E8F5E9" stroke="#1E7B34" stroke-width="3"/>
+  <text x="500" y="570" text-anchor="middle" font-size="16" fill="#1B5E20" font-weight="bold">POUR EN SORTIR : mieux vivre à la campagne,</text>
+  <text x="500" y="592" text-anchor="middle" font-size="15" fill="#1B5E20">pour que partir ne soit plus une nécessité. (séances 47-48)</text>
+  <text x="500" y="614" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le village s'appauvrit, donc on part ; comme on part, il s'appauvrit encore.</text>
+</svg>

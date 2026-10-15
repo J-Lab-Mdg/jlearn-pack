@@ -1022,6 +1022,56 @@
       "id": "geo6_population_developpement",
       "url": "/geo6_population_developpement.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_notion",
+      "url": "/geo6_exode_notion.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_pauvrete",
+      "url": "/geo6_exode_pauvrete.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_insecurite",
+      "url": "/geo6_exode_insecurite.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_infrastructures",
+      "url": "/geo6_exode_infrastructures.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_main_oeuvre",
+      "url": "/geo6_exode_main_oeuvre.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_retard",
+      "url": "/geo6_exode_retard.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_informel",
+      "url": "/geo6_exode_informel.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_bidonvilles",
+      "url": "/geo6_exode_bidonvilles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_techniques",
+      "url": "/geo6_exode_techniques.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_exode_solutions",
+      "url": "/geo6_exode_solutions.png",
+      "type": "image/png"
     }
   ]
 }

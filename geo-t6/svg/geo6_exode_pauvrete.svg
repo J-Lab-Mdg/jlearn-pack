@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Causes de l'exode (1) : la pauvreté et le chômage</text>
+  <rect x="40" y="100" width="450" height="290" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="265" y="138" text-anchor="middle" font-size="18" fill="#E65100" font-weight="bold">DES CHAMPS DE PLUS EN PLUS PETITS</text>
+  <rect x="80" y="170" width="160" height="80" fill="#AED581" stroke="#689F38" stroke-width="2"/>
+  <text x="160" y="216" text-anchor="middle" font-size="14" fill="#33691E">le champ du père</text>
+  <text x="300" y="215" text-anchor="middle" font-size="14" fill="#546E7A" font-style="italic">partagé entre 5 fils →</text>
+  <rect x="410" y="170" width="28" height="40" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="442" y="170" width="28" height="40" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="474" y="170" width="28" height="40" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="410" y="214" width="28" height="40" fill="#AED581" stroke="#689F38" stroke-width="2"/><rect x="442" y="214" width="28" height="40" fill="#AED581" stroke="#689F38" stroke-width="2"/>
+  <text x="470" y="280" text-anchor="middle" font-size="14" fill="#33691E">5 lopins minuscules</text>
+  <text x="265" y="330" text-anchor="middle" font-size="17" fill="#263238">2 sacs de riz par an :</text>
+  <text x="265" y="356" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold">la terre ne nourrit plus → pauvreté</text>
+  <rect x="510" y="100" width="450" height="290" rx="18" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="735" y="138" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold">AUCUN AUTRE TRAVAIL AU VILLAGE</text>
+  <text x="735" y="195" text-anchor="middle" font-size="18" fill="#263238">Ni usine, ni atelier, ni bureau :</text>
+  <text x="735" y="227" text-anchor="middle" font-size="18" fill="#263238">la terre est le seul employeur.</text>
+  <text x="735" y="290" text-anchor="middle" font-size="18" fill="#263238">Les jeunes attendent, sans emploi :</text>
+  <text x="735" y="322" text-anchor="middle" font-size="19" fill="#C00000" font-weight="bold">c'est le chômage.</text>
+  <text x="500" y="440" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Pauvreté et chômage poussent les jeunes vers les villes,</text>
+  <text x="500" y="470" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">où l'on croit trouver un salaire chaque semaine.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Terres trop petites, aucun autre travail : les premières causes du départ.</text>
+</svg>

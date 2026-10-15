@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Conséquence (3) : le secteur informel en ville</text>
+  <text x="500" y="100" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">Trop d'arrivants, pas assez d'emplois fixes → chacun invente un petit métier.</text>
+  <rect x="40" y="130" width="450" height="280" rx="18" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+  <text x="265" y="168" text-anchor="middle" font-size="18" fill="#01579B" font-weight="bold">LES PETITS MÉTIERS DE LA VILLE</text>
+  <rect x="80" y="200" width="110" height="70" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/>
+  <path d="M 74 200 L 135 175 L 196 200 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  <text x="135" y="240" text-anchor="middle" font-size="15" fill="#263238">étal</text>
+  <text x="135" y="290" text-anchor="middle" font-size="15" fill="#263238" font-weight="bold">le vendeur</text>
+  
+  <g transform="translate(320,260) scale(1.6)">
+    <circle cx="0" cy="-16" r="6" fill="#37474F"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#37474F" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <rect x="345" y="255" width="30" height="40" fill="#8D6E63"/>
+  <text x="330" y="320" text-anchor="middle" font-size="15" fill="#263238" font-weight="bold">le porteur de sacs</text>
+  
+  <g transform="translate(430,260) scale(1.6)">
+    <circle cx="0" cy="-16" r="6" fill="#37474F"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#37474F" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="430" y="320" text-anchor="middle" font-size="15" fill="#263238" font-weight="bold">le réparateur</text>
+  <text x="265" y="370" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">un jour on gagne, un jour rien : la survie</text>
+  <rect x="510" y="130" width="450" height="280" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="735" y="168" text-anchor="middle" font-size="18" fill="#E65100" font-weight="bold">TROIS GRANDS MANQUES</text>
+  <text x="735" y="225" text-anchor="middle" font-size="17" fill="#263238">1. Pas de papier : l'activité n'est pas déclarée.</text>
+  <text x="735" y="275" text-anchor="middle" font-size="17" fill="#263238">2. Pas de contrat : rien n'est écrit, rien n'est sûr.</text>
+  <text x="735" y="325" text-anchor="middle" font-size="17" fill="#263238">3. Pas de garantie : ni maladie payée, ni retraite.</text>
+  <text x="735" y="375" text-anchor="middle" font-size="15" fill="#546E7A" font-style="italic">Le chômage pousse à l'inventer ; il nourrit pourtant des milliers de familles.</text>
+  <text x="500" y="460" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Le secteur informel : des petits métiers sans papier, sans contrat, sans garantie.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Faute d'emplois suffisants, les arrivants inventent des petits métiers pour survivre.</text>
+</svg>

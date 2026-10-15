@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+<marker id="af" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#546E7A"/></marker>
+<marker id="afR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#C00000"/></marker>
+<marker id="afV" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1E7B34"/></marker>
+<marker id="afO" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#E65100"/></marker>
+</defs><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">L'exode rural : quitter la campagne pour la ville, pour toujours</text>
+  <rect x="40" y="110" width="380" height="300" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="230" y="148" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">LA CAMPAGNE</text>
+  <rect x="80" y="190" width="130" height="90" fill="#AED581" stroke="#689F38" stroke-width="2"/><line x1="80" y1="208" x2="210" y2="208" stroke="#689F38" stroke-width="2"/><line x1="80" y1="226" x2="210" y2="226" stroke="#689F38" stroke-width="2"/><line x1="80" y1="244" x2="210" y2="244" stroke="#689F38" stroke-width="2"/><line x1="80" y1="262" x2="210" y2="262" stroke="#689F38" stroke-width="2"/>
+  
+  <g transform="translate(250,210) scale(0.9)">
+    <rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/>
+    <circle cx="0" cy="0" r="18" fill="#2E7D32"/><circle cx="-13" cy="8" r="13" fill="#2E7D32"/><circle cx="13" cy="8" r="13" fill="#2E7D32"/>
+  </g>
+  <g transform="translate(320,230) scale(0.9)">
+    <rect x="-16" y="-6" width="32" height="22" fill="#FFE0B2" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(150,330) scale(1.2)">
+    <circle cx="0" cy="-16" r="6" fill="#78909C"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#78909C" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(200,335) scale(1.2)">
+    <circle cx="0" cy="-16" r="6" fill="#78909C"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#78909C" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="230" y="385" text-anchor="middle" font-size="15" fill="#263238" font-style="italic">ceux qui restent : anciens, femmes, enfants</text>
+  <rect x="580" y="110" width="380" height="300" rx="18" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+  <text x="770" y="148" text-anchor="middle" font-size="20" fill="#01579B" font-weight="bold">LA VILLE</text>
+  
+  <g transform="translate(700,260) scale(1)">
+    <rect x="-34" y="-8" width="22" height="36" fill="#90A4AE" stroke="#546E7A" stroke-width="2"/>
+    <rect x="-8" y="-30" width="18" height="58" fill="#B0BEC5" stroke="#546E7A" stroke-width="2"/>
+    <rect x="14" y="2" width="20" height="26" fill="#A1887F" stroke="#6D4C41" stroke-width="2"/>
+    <rect x="-1" y="-4" width="6" height="6" fill="#FFFFFF"/><rect x="7" y="-4" width="6" height="6" fill="#FFFFFF"/><rect x="15" y="-4" width="6" height="6" fill="#FFFFFF"/><rect x="-1" y="4" width="6" height="6" fill="#FFFFFF"/><rect x="7" y="4" width="6" height="6" fill="#FFFFFF"/><rect x="15" y="4" width="6" height="6" fill="#FFFFFF"/>
+    <rect x="-4" y="4" width="6" height="6" fill="#FFFFFF"/><rect x="4" y="4" width="6" height="6" fill="#FFFFFF"/><rect x="-4" y="14" width="6" height="6" fill="#FFFFFF"/><rect x="4" y="14" width="6" height="6" fill="#FFFFFF"/><rect x="-4" y="24" width="6" height="6" fill="#FFFFFF"/><rect x="4" y="24" width="6" height="6" fill="#FFFFFF"/>
+  </g>
+  <g transform="translate(800,270) scale(0.8)">
+    <rect x="-34" y="-8" width="22" height="36" fill="#90A4AE" stroke="#546E7A" stroke-width="2"/>
+    <rect x="-8" y="-30" width="18" height="58" fill="#B0BEC5" stroke="#546E7A" stroke-width="2"/>
+    <rect x="14" y="2" width="20" height="26" fill="#A1887F" stroke="#6D4C41" stroke-width="2"/>
+    <rect x="-1" y="-4" width="6" height="6" fill="#FFFFFF"/><rect x="7" y="-4" width="6" height="6" fill="#FFFFFF"/><rect x="15" y="-4" width="6" height="6" fill="#FFFFFF"/><rect x="-1" y="4" width="6" height="6" fill="#FFFFFF"/><rect x="7" y="4" width="6" height="6" fill="#FFFFFF"/><rect x="15" y="4" width="6" height="6" fill="#FFFFFF"/>
+    <rect x="-4" y="4" width="6" height="6" fill="#FFFFFF"/><rect x="4" y="4" width="6" height="6" fill="#FFFFFF"/><rect x="-4" y="14" width="6" height="6" fill="#FFFFFF"/><rect x="4" y="14" width="6" height="6" fill="#FFFFFF"/><rect x="-4" y="24" width="6" height="6" fill="#FFFFFF"/><rect x="4" y="24" width="6" height="6" fill="#FFFFFF"/>
+  </g>
+  <g transform="translate(880,280) scale(0.8)">
+    <rect x="-16" y="-6" width="32" height="22" fill="#BBDEFB" stroke="#8D6E63" stroke-width="2"/>
+    <path d="M -20 -6 L 0 -22 L 20 -6 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(640,340) scale(1.2)">
+    <circle cx="0" cy="-16" r="6" fill="#37474F"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#37474F" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(700,345) scale(1.2)">
+    <circle cx="0" cy="-16" r="6" fill="#37474F"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#37474F" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(760,340) scale(1.2)">
+    <circle cx="0" cy="-16" r="6" fill="#37474F"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#37474F" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(820,345) scale(1.2)">
+    <circle cx="0" cy="-16" r="6" fill="#37474F"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#37474F" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="770" y="385" text-anchor="middle" font-size="15" fill="#263238" font-style="italic">les arrivants s'entassent dans les quartiers</text>
+  
+  <g transform="translate(500,210) scale(2.2)">
+    <circle cx="0" cy="-16" r="6" fill="#5D4037"/>
+    <line x1="0" y1="-10" x2="0" y2="6" stroke="#5D4037" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="-6" y2="18" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="6" x2="6" y2="18" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="-8" y2="0" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="0" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="500" y="130" text-anchor="middle" font-size="19" fill="#C00000" font-weight="bold">UN DÉPART DÉFINITIF</text>
+  <line x1="440" y1="250" x2="560" y2="250" stroke="#C00000" stroke-width="8" marker-end="url(#afR)"/>
+  <text x="500" y="290" text-anchor="middle" font-size="16" fill="#263238" font-style="italic">valise, natte, sacs :</text>
+  <text x="500" y="314" text-anchor="middle" font-size="16" fill="#263238" font-style="italic">on ne revient plus vivre au village</text>
+  <text x="500" y="480" text-anchor="middle" font-size="21" fill="#263238" font-weight="bold">L'exode rural, c'est le départ définitif des campagnes vers les villes.</text>
+  <text x="500" y="510" text-anchor="middle" font-size="17" fill="#546E7A" font-style="italic">(Ne pas confondre avec le mouvement pendulaire : l'aller-retour quotidien.)</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Un seul sens, et pour toujours : voilà l'exode rural.</text>
+</svg>

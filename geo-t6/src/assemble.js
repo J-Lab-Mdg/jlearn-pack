@@ -12,6 +12,9 @@ const U2REV = require("./data-unite2-rev");
 const U3A = require("./data-unite3");
 const U3B = require("./data-unite3b");
 const U3REV = require("./data-unite3-rev");
+const U4A = require("./data-unite4");
+const U4B = require("./data-unite4b");
+const U4REV = require("./data-unite4-rev");
 
 // Annexes optionnelles tant qu'elles ne sont pas créées (fin de projet)
 const annexesPath = path.join(__dirname, "annexes.js");
@@ -51,11 +54,20 @@ const UNITES = [
     rev: U3REV.revision,
     exam: U3REV.examen,
   },
+  {
+    id: "unite4",
+    nom: "UNITÉ 4 — L'EXODE RURAL À MADAGASCAR",
+    seances: "Séances 39 à 50",
+    lecons: 10,
+    intro: "Thématique officielle du programme d'études T6 : l'exode rural à Madagascar — la notion de l'exode rural, les différentes causes (la pauvreté, l'insécurité, le chômage, les problèmes fonciers, le manque d'infrastructures), les conséquences en milieu rural (le manque de main-d'œuvre, le retard de développement économique) et en milieu urbain (la prolifération du secteur informel due au chômage, le développement des bidonvilles), et les solutions socio-économiques (l'amélioration des techniques agricoles, le renforcement de la sécurité, la création d'emplois, l'installation des infrastructures, l'implantation d'une ville nouvelle). Durée officielle : 5 heures, soit 10 séances de 30 minutes.",
+    topics: [...U4A.topics, ...U4B.topics],
+    rev: U4REV.revision,
+    exam: U4REV.examen,
+  },
 ];
 
 // Unités encore à produire (affichées comme « à paraître » dans le sommaire et le tableau de bord)
 const FUTURES = [
-  { nom: "UNITÉ 4 — L'EXODE RURAL À MADAGASCAR", seances: "Séances 39 à 50", lecons: 10 },
   { nom: "UNITÉ 5 — LES GRANDES ZONES ÉCONOMIQUES ET LES ACTIVITÉS ÉCONOMIQUES", seances: "Séances 51 à 66", lecons: 14 },
   { nom: "UNITÉ 6 — LE VILLAGE ÉCOLOGIQUE", seances: "Séances 67 à 78", lecons: 10 },
 ];

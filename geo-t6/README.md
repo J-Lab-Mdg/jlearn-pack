@@ -13,6 +13,7 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 | **Unité 1 — Les régions administratives de Madagascar (S1-S10)** | ✅ **Terminée et intégrée au build** |
 | **Unité 2 — L'utilisation des ressources naturelles (S11-S26)** | ✅ **Terminée et intégrée au build** |
 | **Unité 3 — La population malgache (S27-S38)** | ✅ **Terminée et intégrée au build** |
+| **Unité 4 — L'exode rural à Madagascar (S39-S50)** | 🔶 **Leçons + révision + examen intégrées (S39-S44 : 6 scènes sur 10 ; S45-S48 à générer)** |
 | **Unité 3 — La population malgache (S27-S38)** | ⬜ À venir |
 | **Unité 4 — L'exode rural à Madagascar (S39-S50)** | ⬜ À venir |
 | **Unité 5 — Les grandes zones économiques et les activités économiques (S51-S66)** | ⬜ À venir |
@@ -29,9 +30,9 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 - `src/assemble.js` — Assemblage du manuel (couverture, avant-propos, mode d'emploi, TdM interactive, tableaux de bord, unités disponibles, unités à paraître).
 - `src/builders.js`, `src/seance-generator.js` — Copiés de geo-t5, adaptés (classe T6, chemins des scènes).
 - `src/verifications.py` — Vérifications structurelles ; contrôle anti-mention-ministérielle en regex `\bminist\w*` (le vocabulaire officiel « régions administratives » reste autorisé, toute mention de ministère reste bloquée).
-- `svg/` — 32 schémas pédagogiques (`geo6_*.png`) : U1 (pyramide administrative, cartes de régions…) + U2 (eau/forêts… mini-projet) + U3 (carte de répartition, densité, causes, accroissement naturel, migration, pendulaire, causes/conséquences, pyramide des âges, impacts de la croissance, population/développement).
-- `scenes/` — 28 scènes semi-réalistes (une par leçon, JPEG 900 px q85) : 8 (U1) + 14 (U2) + 10 (U3).
-- `output/Manuel_Geographie_T6_JLearn.docx` — Build V3 — Unités 1, 2 et 3 (**7 795 Ko**, 38 séances, 35 fiches, 64 images, 32 documents d'appui).
+- `svg/` — 42 schémas pédagogiques (`geo6_*.png`) : U1 + U2 + U3 + U4 (notion d'exode, causes ×3, main-d'œuvre, cercle vicieux, secteur informel, bidonvilles, techniques agricoles, solutions).
+- `scenes/` — 34 scènes semi-réalistes (une par leçon, JPEG 900 px q85) : 8 (U1) + 14 (U2) + 10 (U3) + 6 (U4, S39-S44) ; 4 scènes U4 restantes (S45-S48) à générer.
+- `output/Manuel_Geographie_T6_JLearn.docx` — Build V4 — Unités 1 à 4 (**9 595 Ko**, 50 séances, 46 fiches, 80 images, 38 documents d'appui).
 
 ## Générer le manuel
 

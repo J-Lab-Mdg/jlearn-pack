@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Solution (2) : sécurité, emplois, infrastructures, ville nouvelle</text>
+  
+    <rect x="30" y="130" width="220" height="230" rx="14" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+    <text x="140" y="168" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold">SÉCURISER</text>
+    <text x="140" y="210" text-anchor="middle" font-size="15" fill="#263238">Patrouilles mixtes,</text><text x="140" y="238" text-anchor="middle" font-size="15" fill="#263238">troupeaux et récoltes</text><text x="140" y="266" text-anchor="middle" font-size="15" fill="#263238">protégés :</text><text x="140" y="294" text-anchor="middle" font-size="15" fill="#263238">la peur recule.</text>
+  
+    <rect x="270" y="130" width="220" height="230" rx="14" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+    <text x="380" y="168" text-anchor="middle" font-size="17" fill="#E65100" font-weight="bold">CRÉER DES EMPLOIS</text>
+    <text x="380" y="210" text-anchor="middle" font-size="15" fill="#263238">Ateliers de</text><text x="380" y="238" text-anchor="middle" font-size="15" fill="#263238">transformation,</text><text x="380" y="266" text-anchor="middle" font-size="15" fill="#263238">chantiers :</text><text x="380" y="294" text-anchor="middle" font-size="15" fill="#263238">des salaris</text><text x="380" y="322" text-anchor="middle" font-size="15" fill="#263238">près des villages.</text>
+  
+    <rect x="510" y="130" width="220" height="230" rx="14" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+    <text x="620" y="168" text-anchor="middle" font-size="17" fill="#01579B" font-weight="bold">ÉQUIPER</text>
+    <text x="620" y="210" text-anchor="middle" font-size="15" fill="#263238">Routes praticables,</text><text x="620" y="238" text-anchor="middle" font-size="15" fill="#263238">écoles, santé,</text><text x="620" y="266" text-anchor="middle" font-size="15" fill="#263238">eau, électricité :</text><text x="620" y="294" text-anchor="middle" font-size="15" fill="#263238">le confort</text><text x="620" y="322" text-anchor="middle" font-size="15" fill="#263238">aux campagnes.</text>
+  
+    <rect x="750" y="130" width="220" height="230" rx="14" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+    <text x="860" y="168" text-anchor="middle" font-size="17" fill="#1B5E20" font-weight="bold">IMPLANTER UNE</text>
+    <text x="860" y="210" text-anchor="middle" font-size="15" fill="#263238">VILLE NOUVELLE :</text><text x="860" y="238" text-anchor="middle" font-size="15" fill="#263238">une ville créée</text><text x="860" y="266" text-anchor="middle" font-size="15" fill="#263238">de toutes pièces,</text><text x="860" y="294" text-anchor="middle" font-size="15" fill="#263238">services et emplois</text><text x="860" y="322" text-anchor="middle" font-size="15" fill="#263238">près des champs.</text>
+  <text x="500" y="420" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Le but : l'équilibre entre la ville et la campagne,</text>
+  <text x="500" y="455" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">pour que chacun choisisse librement où vivre.</text>
+  <text x="500" y="495" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">« Si tout cela sort de terre, mes petits-enfants n'auront plus besoin d'aller si loin pour vivre. »</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Quatre clés pour retenir les habitants — sans les y forcer.</text>
+</svg>

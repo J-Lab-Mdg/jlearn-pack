@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Causes de l'exode (3) : le manque d'infrastructures</text>
+  <defs>
+<marker id="af" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#546E7A"/></marker>
+<marker id="afR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#C00000"/></marker>
+<marker id="afV" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1E7B34"/></marker>
+<marker id="afO" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#E65100"/></marker>
+</defs>
+  <rect x="40" y="100" width="450" height="330" rx="18" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="265" y="138" text-anchor="middle" font-size="19" fill="#C00000" font-weight="bold">AU VILLAGE, IL MANQUE…</text>
+  
+    <circle cx="90" cy="185" r="14" fill="#C62828"/>
+    <text x="120" y="191" text-anchor="start" font-size="17" fill="#263238">la piste coupée en saison des pluies</text>
+  
+    <circle cx="90" cy="230" r="14" fill="#C62828"/>
+    <text x="120" y="236" text-anchor="start" font-size="17" fill="#263238">le collège à 30 km, la pension chère</text>
+  
+    <circle cx="90" cy="275" r="14" fill="#C62828"/>
+    <text x="120" y="281" text-anchor="start" font-size="17" fill="#263238">le dispensaire sans médicaments</text>
+  
+    <circle cx="90" cy="320" r="14" fill="#C62828"/>
+    <text x="120" y="326" text-anchor="start" font-size="17" fill="#263238">l'eau à la source, la lampe à pétrole</text>
+  <text x="265" y="390" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">Chaque geste du quotidien devient un effort.</text>
+  <rect x="510" y="100" width="450" height="330" rx="18" fill="#E3F2FD" stroke="#90A4AE" stroke-width="3"/>
+  <text x="735" y="138" text-anchor="middle" font-size="19" fill="#01579B" font-weight="bold">LA VILLE OFFRE…</text>
+  
+    <circle cx="90" cy="185" r="14" fill="#2E7D32"/>
+    <text x="120" y="191" text-anchor="start" font-size="17" fill="#263238">des écoles de tous les niveaux</text>
+  
+    <circle cx="90" cy="230" r="14" fill="#2E7D32"/>
+    <text x="120" y="236" text-anchor="start" font-size="17" fill="#263238">des hôpitaux et des dispensaires</text>
+  
+    <circle cx="90" cy="275" r="14" fill="#2E7D32"/>
+    <text x="120" y="281" text-anchor="start" font-size="17" fill="#263238">l'eau au robinet, l'électricité</text>
+  
+    <circle cx="90" cy="320" r="14" fill="#2E7D32"/>
+    <text x="120" y="326" text-anchor="start" font-size="17" fill="#263238">des routes goudronnées, des marchés</text>
+  <text x="735" y="390" text-anchor="middle" font-size="16" fill="#546E7A" font-style="italic">Le confort que le village promet à peine.</text>
+  <line x1="500" y1="460" x2="500" y2="460" stroke="#546E7A" stroke-width="5" marker-end="url(#af)"/>
+  <text x="500" y="460" text-anchor="middle" font-size="21" fill="#263238" font-weight="bold">Plus l'écart grandit, plus les familles partent.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Sans routes, écoles, eau ni soins, la vie à la campagne devient trop dure.</text>
+</svg>
