@@ -120,6 +120,20 @@ function contents() {
     tocLink("s46", "    Séance 46 — Lecture-fluidité : reportage et règle de jeu"),
     tocLink("s47", "    Séance 47 — Révision"),
     tocLink("s48", "    Séance 48 — Test"),
+    p("", { after: 40 }),
+    tocLink("unit5", "UNITÉ 5 — LES ÉVÉNEMENTS FAMILIAUX (Séances 49–60)", { bold: true, size: 26 }),
+    tocLink("s49", "    Séance 49 — Compréhension orale : récit de vie « Le mariage de tante Voahangy »"),
+    tocLink("s50", "    Séance 50 — Lexique : les événements familiaux"),
+    tocLink("s51", "    Séance 51 — Compréhension écrite : « Le famadihana » — le texte narratif"),
+    tocLink("s52", "    Séance 52 — Le passé simple des verbes les plus courants"),
+    tocLink("s53", "    Séance 53 — Les indicateurs temporels"),
+    tocLink("s54", "    Séance 54 — Les pronoms COD (le, la, l', les) et COI (lui, leur)"),
+    tocLink("s55", "    Séance 55 — Production orale (1) : débat sur une pratique familiale"),
+    tocLink("s56", "    Séance 56 — Production orale (2) : le mini-reportage"),
+    tocLink("s57", "    Séance 57 — Production écrite : la dictée ; le récit de vie"),
+    tocLink("s58", "    Séance 58 — Lecture-fluidité : lire un récit de vie"),
+    tocLink("s59", "    Séance 59 — Révision"),
+    tocLink("s60", "    Séance 60 — Test"),
   ];
 }
 
@@ -168,6 +182,7 @@ async function main() {
         ...require("./unit2")(),
         ...require("./unit3")(),
         ...require("./unit4")(),
+        ...require("./unit5")(),
       ],
     }],
   });

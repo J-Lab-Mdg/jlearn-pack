@@ -1,0 +1,908 @@
+// Français T6 — UNITÉ 5 — LES ÉVÉNEMENTS FAMILIAUX (10 leçons + révision + test) — Séances 49 à 60 / 72
+const B = require("./builders");
+const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
+        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+const { Table, TableRow, WidthType } = require("docx");
+
+const COLOR = "B03A2E"; // rouge brique événements familiaux
+const SHADE = "FADBD8";
+const TOTAL = 72;
+const META = (title, slo, session, materials) => ({
+  theme: "UNITÉ 5 — LES ÉVÉNEMENTS FAMILIAUX", title, slo,
+  values: "respect des différences, ouverture d'esprit", session, materials,
+});
+
+const bullet = (runs, o = {}) => pr(
+  [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
+  { after: o.after != null ? o.after : 50 });
+const mot = (word, expl) => bullet([
+  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+function box(title, children, shade = SHADE) {
+  return new Table({
+    width: { size: 10400, type: WidthType.DXA },
+    rows: [
+      new TableRow({ children: [cell(
+        [p([run(title, { bold: true, color: COLOR, size: SZ.BODY })], { center: true, after: 40 })],
+        { shade })] }),
+      new TableRow({ children: [cell(children)] }),
+    ],
+  });
+}
+
+// passage de compréhension orale (S49)
+function passageMariage() {
+  return box("PASSAGE D'ÉCOUTE — récit de vie « Le mariage de tante Voahangy »", [
+    p("Je me souviens du mariage de tante Voahangy comme si c'était hier. C'était en septembre, à Ambositra. Trois jours avant la fête, la maison de grand-mère était déjà pleine : les oncles arrivaient de partout, les tantes préparaient des montagnes de riz, et nous, les enfants, nous courions entre les marmites."),
+    p("Le grand jour, tout a commencé par le discours. L'orateur de notre famille s'est levé devant celui de la famille du marié, et les deux hommes ont parlé tour à tour, avec des proverbes que je ne comprenais pas tous — mais les grands souriaient, alors je souriais aussi. Puis le marié a offert le vody ondry à mes grands-parents, et tante Voahangy, dans sa belle robe, a dit oui."),
+    p("Ensuite, on a mangé, on a chanté, on a dansé jusqu'au soir. Avant de partir, grand-mère m'a serré la main très fort : « Tu vois, petit, un mariage, ce n'est pas deux personnes. Ce sont deux familles qui deviennent une seule. » Je n'ai jamais oublié cette phrase.", { after: 40 }),
+  ]);
+}
+// texte de lecture (S51)
+function texteFamadihana() {
+  return box("TEXTE DE LECTURE — « Le famadihana de la famille Rakotobe »", [
+    p("Cette année-là, la famille Rakotobe vivait dispersée : les uns à Antananarivo, les autres jusqu'à Mahajanga. Mais au mois de juillet, une nouvelle circula de maison en maison : le famadihana des ancêtres aurait lieu au village, comme tous les sept ans."),
+    p("La veille de la fête, tous arrivèrent au village d'Ambohijafy. Les hommes dressèrent les tentes, les femmes préparèrent le repas, et l'on entendit la musique des troupes de hira gasy jusqu'à la nuit."),
+    p("Le grand jour, la famille alla au tombeau. Les aînés prirent la parole et rappelèrent le nom de chaque ancêtre. Puis l'on enveloppa les anciens dans des lambamena neufs, ces grands tissus de soie rouge. On porta les ancêtres en dansant, et ce fut un moment étrange et doux : on pleurait un peu, on riait beaucoup, on se racontait les histoires des grands-parents."),
+    p("Le soir, le doyen fit le dernier discours : « Une famille qui se souvient est une famille vivante. » Le lendemain, chacun reprit la route, fatigué et heureux. Toutes les familles de Madagascar ne pratiquent pas le famadihana — chacune honore ses anciens à sa manière. Mais ce jour-là, au village, personne n'aurait voulu être ailleurs.", { after: 40 }),
+  ]);
+}
+
+// ---------- page d'ouverture ----------
+function opening() {
+  return [
+    unitBanner("UNITÉ 5 — LES ÉVÉNEMENTS FAMILIAUX", COLOR, "unit5"),
+    p("", { after: 100 }),
+    p([run("Une famille qui se souvient est une famille vivante.", { bold: true, color: COLOR, size: 40 })], { center: true, after: 120 }),
+    img("u5_famille.png", 440, 768 / 1376),
+    p([run("Dans cette unité, je vais apprendre à :", { bold: true })], { after: 60 }),
+    p("• comprendre un récit de vie et un reportage sur les événements familiaux ;"),
+    p("• employer les mots des événements familiaux : le mariage, la naissance, la circoncision, le décès, l'exhumation ;"),
+    p("• reconnaître et employer le passé simple des verbes les plus courants ;"),
+    p("• situer les faits avec les indicateurs temporels du présent, du passé et du futur ;"),
+    p("• éviter les répétitions avec les pronoms le, la, l', les, lui, leur ;"),
+    p("• donner mon opinion et débattre d'une pratique familiale, avec respect ;"),
+    p("• présenter un mini-reportage sur un événement familial ;"),
+    p("• écrire sans faute une dictée et raconter un événement familial que j'ai vécu ;"),
+    p("• lire un récit à haute voix avec précision.", { after: 120 }),
+    pr([run("Type de texte de l'unité : ", { bold: true }),
+        run("le texte NARRATIF", { bold: true, color: COLOR }),
+        run(" (raconter des événements réels ou imaginés).")], { after: 80 }),
+    pr([run("Valeurs à véhiculer : ", { bold: true }),
+        run("le respect des différences et l'ouverture d'esprit.", { italic: true })], { after: 80 }),
+  ];
+}
+
+// ---------- S49 — Compréhension orale ----------
+function ficheS49() {
+  const meta = META("Compréhension orale : récit de vie « Le mariage de tante Voahangy »",
+    "À la fin de la séance, l'apprenant repère les informations importantes d'un récit de vie entendu et déduit le sens des mots inconnus, notamment par le transfert entre le malgache et le français.",
+    "1 / 12", "texte du passage, grille où/quand/quoi/comment au tableau");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Rappel de l'unité 4 : donne une périphrase et ce qu'elle désigne.")],
+      [fp("Répondent."),
+       fp("R.A. : le ballon rond = le football ; l'île Rouge = Madagascar.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route", "(pré-écoute)"],
+      [fp("Demandez : quelles grandes fêtes réunissent toute votre famille ? Listez : le mariage, la naissance, la circoncision, le famadihana… Annoncez le mot : un récit de vie — quelqu'un raconte ce qu'il a réellement vécu.")],
+      [fp("Répondent, partagent."),
+       fp("R.A. : le mariage de ma cousine ; la circoncision de mon petit frère…")],
+      "Brainstorming", "Tableau"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Compréhension orale : un récit de vie — Le mariage de tante Voahangy ». Tracez la grille : Où ? Quand ? Quoi ? Comment ? Rappelez l'outil nouveau : le transfert — un mot malgache connu aide à comprendre le français (le vody ondry, le kabary).")],
+      [fp("Écoutent, copient la grille.")], "Travail collectif", "Tableau"),
+    stepRow(["3. Observation", "(1re écoute)"],
+      [fp("Lisez le passage avec chaleur (ou faites écouter l'enregistrement). Questions globales : qui raconte ? quel événement ?")],
+      [fp("Écoutent. Répondent."),
+       fp("R.A. : un neveu (ou une nièce) raconte le mariage de sa tante Voahangy.")],
+      "Écoute active", "Texte du passage"),
+    stepRow(["4. Analyse", "(2e écoute)"],
+      [fp("Relisez. Faites compléter la grille : Où ? (à Ambositra) Quand ? (en septembre, trois jours de préparatifs) Quoi ? (le mariage de la tante) Comment ? (les discours, le vody ondry, le repas, les chants et les danses). Puis les mots par le contexte et le transfert : l'orateur (celui qui fait le discours — le kabary), le vody ondry (le présent offert aux parents de la mariée).")],
+      [fp("Complètent la grille, déduisent."),
+       fp("R.A. : l'orateur = celui qui parle au nom de la famille ; le vody ondry = la demande traditionnelle.")],
+      "Complétion", "Grille au tableau"),
+    stepRow(["5. Synthèse"],
+      [fp("Faites résumer le récit dans l'ordre : avant la fête, le grand jour, le soir. Puis la phrase de grand-mère : « Un mariage, ce sont deux familles qui deviennent une seule » — qu'en pensez-vous ?")],
+      [fp("Résument, réagissent."),
+       fp("R.A. : le mariage unit deux familles, pas seulement deux personnes.")],
+      "Reformulation", "----"),
+    stepRow(["6. Entraînement"],
+      [fp("En binômes : racontez en trois phrases un événement familial que vous avez vécu (lequel ? où ? ce que vous avez ressenti). Quelques volontaires partagent.")],
+      [fp("Racontent."),
+       pAns("R.A. : L'année dernière, j'ai assisté à la circoncision de mon petit frère. Toute la famille est venue chez nous. J'étais fier de porter le lamba de fête.", ["circoncision"], { size: SZ.FICHE })],
+      "Binômes — témoignage", "----"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Remplis la grille : où ? quand ? quoi ? comment ?"),
+       fp("2. Qu'est-ce qu'un récit de vie ?"),
+       fp("3. Que veut dire « l'orateur » ? Comment l'as-tu deviné ?")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. à Ambositra — en septembre — le mariage de tante Voahangy — discours, vody ondry, repas, danses. 2. le récit d'un événement réellement vécu. 3. celui qui fait le discours ; grâce au kabary que je connais en malgache.", ["récit de vie"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(49, TOTAL, meta, rows, "s49");
+}
+function lessonS49() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 49", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("ÉCOUTER UN RÉCIT DE VIE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    passageMariage(),
+    p("", { after: 80 }),
+    sub("Le récit de vie :"),
+    p("Quelqu'un raconte un événement qu'il a réellement vécu : on entend les faits, dans l'ordre, et les sentiments de celui qui raconte.", { after: 60 }),
+    sub("Ma grille d'écoute :"),
+    p("• Où ? — à Ambositra ; Quand ? — en septembre ;"),
+    p("• Quoi ? — le mariage de tante Voahangy ;"),
+    p("• Comment ? — les discours, le vody ondry, le repas, les chants et les danses.", { after: 60 }),
+    sub("Un outil de plus : le transfert malgache ↔ français"),
+    p("Un mot de chez nous aide souvent à comprendre le mot français : le kabary m'aide à comprendre « l'orateur » et « le discours ».", { after: 60 }),
+    sub("Mots du texte :"),
+    mot("l'orateur", "celui qui parle au nom de la famille — celui du kabary"),
+    mot("le vody ondry", "le présent offert aux parents de la mariée lors de la demande"),
+    mot("les noces", "la fête du mariage"),
+    p("", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("« Un mariage, ce n'est pas deux personnes. Ce sont deux familles qui deviennent une seule. »")]),
+  ];
+}
+
+// ---------- S50 — Lexique ----------
+function ficheS50() {
+  const meta = META("Lexique : les événements familiaux",
+    "À la fin de la séance, l'apprenant emploie le champ lexical des événements familiaux : le mariage, la naissance, la circoncision, le décès, l'exhumation.",
+    "2 / 12", "étiquettes de mots, tableau en cinq colonnes");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Redis la grille du récit de la séance 49.")],
+      [fp("Répondent."),
+       fp("R.A. : à Ambositra — en septembre — le mariage — discours, vody ondry, fête.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Question : quels sont les grands événements qui marquent la vie d'une famille, du début à la fin de la vie ? Guidez vers les cinq : la naissance, la circoncision, le mariage, le décès, l'exhumation.")],
+      [fp("Proposent, ordonnent."),
+       fp("R.A. : la naissance, la circoncision, le mariage, le décès, le famadihana.")],
+      "Brainstorming", "Tableau"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Lexique : les événements familiaux ». Objectif : nommer chaque événement et ses mots, en français — avec l'aide des mots malgaches que nous connaissons.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Tableau en cinq colonnes à compléter avec les étiquettes : LA NAISSANCE (le nouveau-né, le berceau, féliciter les parents) ; LA CIRCONCISION (le famorana, la fête de famille, l'enfant à l'honneur) ; LE MARIAGE (les fiançailles, le vody ondry, les noces, les mariés, l'alliance) ; LE DÉCÈS (le deuil, les funérailles, présenter ses condoléances) ; L'EXHUMATION (le famadihana, le tombeau familial, le lambamena, honorer les ancêtres).")],
+      [fp("Classent les étiquettes."),
+       fp("R.A. : cinq colonnes complétées, de la naissance à l'exhumation.")],
+      "Jeux", "Étiquettes"),
+    stepRow(["4. Analyse"],
+      [fp("Précisez les registres : pour un décès, on dit « présenter ses condoléances » (et non « bonne fête ! ») ; pour une naissance, « félicitations ». Appuyez-vous sur le transfert : famorana → la circoncision ; famadihana → l'exhumation, le retournement. Insistez sur la valeur : toutes les familles ne pratiquent pas les mêmes coutumes — on respecte les différences.")],
+      [fp("Distinguent les registres."),
+       fp("R.A. : à un deuil : « Toutes mes condoléances » ; à une naissance : « Félicitations ! »")],
+      "Questions-réponses", "Tableau"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez les cinq colonnes. Faites remarquer : chaque événement a ses mots, ses gestes et ses paroles — les connaître, c'est savoir se tenir en famille et chez les autres.")],
+      [fp("Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Jeu des situations : « Ta voisine vient d'avoir un bébé. » « Ton camarade a perdu son grand-père. » « Ta cousine se marie samedi. » — Que dis-tu dans chaque situation ?")],
+      [fp("Répondent en phrases complètes."),
+       pAns("R.A. : Félicitations pour le bébé ! — Toutes mes condoléances. — Tous mes vœux de bonheur aux mariés !", ["condoléances"], { size: SZ.FICHE })],
+      "Jeu de rôle", "----"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Range dans l'ordre de la vie : le mariage — la naissance — l'exhumation — la circoncision — le décès."),
+       fp("2. Donne deux mots du mariage et deux mots de l'exhumation."),
+       fp("3. Que dit-on à une famille en deuil ?")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. naissance, circoncision, mariage, décès, exhumation. 2. le vody ondry, les noces ; le lambamena, le tombeau familial. 3. toutes mes condoléances.", ["lambamena"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(50, TOTAL, meta, rows, "s50");
+}
+function lessonS50() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 50", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LES MOTS DES ÉVÉNEMENTS FAMILIAUX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("1. La naissance :"),
+    mot("le nouveau-né, le berceau", "« Félicitations ! » aux parents"),
+    p("", { after: 40 }),
+    sub("2. La circoncision (le famorana) :"),
+    mot("la fête de famille", "l'enfant est à l'honneur ; la famille se réunit"),
+    p("", { after: 40 }),
+    sub("3. Le mariage :"),
+    mot("les fiançailles, le vody ondry", "la demande traditionnelle aux parents"),
+    mot("les noces, les mariés, l'alliance", "« Tous mes vœux de bonheur ! »"),
+    p("", { after: 40 }),
+    sub("4. Le décès :"),
+    mot("le deuil, les funérailles", "« Toutes mes condoléances. »"),
+    p("", { after: 40 }),
+    sub("5. L'exhumation (le famadihana) :"),
+    mot("le tombeau familial, le lambamena", "le grand tissu de soie rouge ; on honore les ancêtres"),
+    p("", { after: 60 }),
+    sub("Le transfert malgache ↔ français :"),
+    p("famorana → la circoncision ; famadihana → l'exhumation ; kabary → le discours.", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("chaque événement a ses mots et ses paroles — et chaque famille a ses coutumes : on les respecte toutes.")]),
+  ];
+}
+
+// ---------- S51 — Compréhension écrite ----------
+function ficheS51() {
+  const meta = META("Compréhension écrite : « Le famadihana de la famille Rakotobe » — le texte narratif",
+    "À la fin de la séance, l'apprenant repère les informations d'un récit écrit, dégage la structure du texte narratif et observe ses temps.",
+    "3 / 12", "texte de lecture (un par binôme si possible)");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Que dit-on : à une naissance ? à un deuil ? à un mariage ?")],
+      [fp("Répondent."),
+       fp("R.A. : félicitations ; toutes mes condoléances ; tous mes vœux de bonheur.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route", "(pré-lecture)"],
+      [fp("Demandez : qui a déjà assisté à un famadihana ? Comment cela se passe-t-il ? Accueillez aussi ceux qui ne le pratiquent pas : chaque famille honore ses anciens à sa manière.")],
+      [fp("Partagent, écoutent."),
+       fp("R.A. : expériences variées, écoutées avec respect.")],
+      "Brainstorming", "----"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Compréhension écrite : Le famadihana de la famille Rakotobe ». Consigne : lecture silencieuse ; repérer qui, où, quand, et dans quel ordre les choses se passent.")],
+      [fp("Écoutent la consigne.")], "Travail collectif", "----"),
+    stepRow(["3. Observation", "(lecture silencieuse)"],
+      [fp("Lecture silencieuse. Questions globales : de quelle famille parle le texte ? quel événement ? tous les combien ?")],
+      [fp("Lisent. Répondent."),
+       fp("R.A. : la famille Rakotobe ; le famadihana au village d'Ambohijafy ; tous les sept ans.")],
+      "Lecture silencieuse", "Texte de lecture"),
+    stepRow(["4. Analyse", "(lecture analytique)"],
+      [fp("Dégagez la structure du récit : SITUATION INITIALE (la famille vivait dispersée — imparfait), ÉVÉNEMENTS dans l'ordre (la nouvelle circula, tous arrivèrent, la famille alla au tombeau, on enveloppa, on porta — des verbes d'action), SITUATION FINALE (chacun reprit la route, fatigué et heureux). Faites observer ces formes verbales inconnues : circula, arrivèrent, alla, fut… — c'est le passé simple, le temps du récit écrit (étudié à la prochaine séance). Mots à déduire : le doyen (le plus âgé), le lambamena (transfert).")],
+      [fp("Dégagent la structure, relèvent les verbes."),
+       fp("R.A. : début à l'imparfait, actions au passé simple, fin qui referme l'histoire.")],
+      "Lecture analytique", "Texte de lecture"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez : le texte narratif raconte — une situation de départ, des événements dans l'ordre, une situation finale ; l'imparfait plante le décor, le passé simple fait avancer l'action. Relevez aussi la valeur du texte : « chacune honore ses anciens à sa manière ».")],
+      [fp("Récapitulent. Copient."),
+       fp("R.A. : raconter = situation initiale + événements + situation finale.")],
+      "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("En binômes : résumez le récit en quatre phrases — une par paragraphe — avec vos propres mots.")],
+      [fp("Résument."),
+       pAns("R.A. : La famille vivait dispersée. En juillet, tous revinrent au village. Le grand jour, on honora les ancêtres dans les lambamena neufs. Le lendemain, chacun repartit heureux.", ["lambamena"], { size: SZ.FICHE })],
+      "Binômes", "Cahiers"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Donne les trois parties du texte narratif."),
+       fp("2. Quel temps plante le décor ? Quel temps fait avancer l'action ?"),
+       fp("3. Que veut dire « le doyen » ?")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. situation initiale, événements, situation finale. 2. l'imparfait ; le passé simple. 3. le plus âgé de la famille.", ["passé simple"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(51, TOTAL, meta, rows, "s51");
+}
+function lessonS51() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 51", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LIRE UN TEXTE NARRATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    texteFamadihana(),
+    p("", { after: 80 }),
+    sub("La structure du texte narratif :"),
+    p("1. la SITUATION INITIALE — le décor, à l'imparfait : « La famille vivait dispersée… » ;"),
+    p("2. les ÉVÉNEMENTS — les actions, dans l'ordre : « la nouvelle circula… tous arrivèrent… » ;"),
+    p("3. la SITUATION FINALE — l'histoire se referme : « chacun reprit la route, fatigué et heureux. »", { after: 60 }),
+    sub("Les temps du récit :"),
+    p("• l'imparfait plante le décor (l'arrière-plan) ;"),
+    p("• le passé simple fait avancer l'action (le premier plan) — circula, arrivèrent, alla, fut.", { after: 60 }),
+    sub("Mots du texte :"),
+    mot("le doyen", "le plus âgé de la famille"),
+    mot("le lambamena", "le grand tissu de soie rouge des ancêtres"),
+    mot("dispersée", "éparpillée, chacun d'un côté"),
+    p("", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("toutes les familles n'ont pas les mêmes coutumes : chacune honore ses anciens à sa manière — et on respecte chaque manière.")]),
+  ];
+}
+
+// ---------- S52 — Le passé simple ----------
+function ficheS52() {
+  const meta = META("Le passé simple des verbes les plus courants",
+    "À la fin de la séance, l'apprenant identifie les verbes au passé simple, leurs variations morphologiques et leur valeur dans le récit, et les emploie correctement.",
+    "4 / 12", "verbes relevés dans le texte de la séance 51");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Les trois parties du texte narratif ? Les deux temps du récit ?")],
+      [fp("Répondent."),
+       fp("R.A. : situation initiale, événements, situation finale ; imparfait et passé simple.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Relevez au tableau les verbes du texte : circula, arrivèrent, dressèrent, alla, prirent, enveloppa, porta, fut, fit, reprit. À quel temps sont-ils ? Les a-t-on déjà entendus à l'oral ?")],
+      [fp("Observent."),
+       fp("R.A. : c'est le passé simple ; on le lit dans les livres plus qu'on ne l'entend.")],
+      "Observation guidée", "Tableau"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Le passé simple des verbes les plus courants ». C'est le temps du récit écrit : il raconte des actions finies, l'une après l'autre. On l'emploie surtout à la 3e personne (il, elle, ils, elles).")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Classez les formes : VERBES EN -ER → il chanta, ils chantèrent (chanter) ; il arriva, ils arrivèrent ; il enveloppa ; il alla (aller). AUTRES VERBES COURANTS → il finit, ils finirent (finir) ; il prit, ils prirent (prendre) ; il dit (dire) ; il fit (faire) ; il vint (venir) ; il vit (voir). DEUX À RETENIR PAR CŒUR → être : il fut, ils furent ; avoir : il eut, ils eurent.")],
+      [fp("Classent, répètent les formes."),
+       fp("R.A. : -er → -a / -èrent ; être → fut ; avoir → eut.")],
+      "Complétion", "Tableau"),
+    stepRow(["4. Analyse"],
+      [fp("La valeur dans le récit : comparez « La famille vivait dispersée » (imparfait : le décor dure) et « la nouvelle circula » (passé simple : l'action arrive et passe). Entraînez : « Le doyen (se lever) et (faire) le discours. » ; « Les femmes (préparer) le repas et les hommes (dresser) les tentes. »")],
+      [fp("Transforment."),
+       fp("R.A. : se leva, fit ; préparèrent, dressèrent.")],
+      "Questions-réponses", "Tableau"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez le tableau des formes courantes (3e personne) et la règle d'emploi : imparfait pour le décor, passé simple pour les actions du récit écrit.")],
+      [fp("Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Mini-récit en chaîne à l'écrit : chaque binôme écrit trois phrases au passé simple sur une fête de famille imaginaire, avec un verbe en -er, un verbe courant (faire, dire, venir…) et être ou avoir.")],
+      [fp("Rédigent, lisent."),
+       pAns("R.A. : Toute la famille arriva le samedi. Le doyen fit un beau discours. Ce fut une journée inoubliable.", ["fut"], { size: SZ.FICHE })],
+      "Binômes", "Cahiers"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Mets au passé simple (il) : chanter, finir, faire, être."),
+       fp("2. Mets au passé simple (ils) : arriver, prendre, avoir."),
+       fp("3. Imparfait ou passé simple ? « La maison (être) pleine quand l'orateur (se lever). »")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. il chanta, il finit, il fit, il fut. 2. ils arrivèrent, ils prirent, ils eurent. 3. était (décor) ; se leva (action).", ["se leva"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(52, TOTAL, meta, rows, "s52");
+}
+function lessonS52() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 52", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LE PASSÉ SIMPLE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Son emploi :"),
+    p("C'est le temps du récit écrit : il raconte des actions finies, l'une après l'autre. On le rencontre surtout à la 3e personne.", { after: 60 }),
+    sub("Les verbes en -er → -a / -èrent :"),
+    p("chanter → il chanta, ils chantèrent ; arriver → il arriva, ils arrivèrent ; aller → il alla, ils allèrent.", { after: 60 }),
+    sub("Des verbes courants à connaître :"),
+    mot("finir", "il finit, ils finirent"),
+    mot("prendre", "il prit, ils prirent"),
+    mot("dire / faire", "il dit ; il fit"),
+    mot("venir / voir", "il vint ; il vit"),
+    p("", { after: 60 }),
+    sub("Deux à retenir par cœur :"),
+    mot("être", "il fut, ils furent — « Ce fut un moment doux. »"),
+    mot("avoir", "il eut, ils eurent — « Il eut les larmes aux yeux. »"),
+    p("", { after: 60 }),
+    sub("Imparfait ou passé simple ?"),
+    p("• l'imparfait = le décor qui dure : « La famille vivait dispersée. » ;"),
+    p("• le passé simple = l'action qui arrive : « La nouvelle circula. »", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("dans un récit écrit : l'imparfait plante le décor, le passé simple fait avancer l'histoire.")]),
+  ];
+}
+
+// ---------- S53 — Les indicateurs temporels ----------
+function ficheS53() {
+  const meta = META("Les indicateurs temporels du présent, du passé et du futur",
+    "À la fin de la séance, l'apprenant identifie les indicateurs temporels et leur rôle, et les emploie pour donner plus de précision au temps dans ses productions.",
+    "5 / 12", "phrases d'exemple au tableau, étiquettes d'indicateurs");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Mets au passé simple : « Le doyen (faire) le discours et tous (chanter). »")],
+      [fp("Répondent."),
+       fp("R.A. : fit ; chantèrent.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Écrivez : « La famille arriva. » Demandez : quand ? On ne sait pas ! Ajoutez : « La veille de la fête, la famille arriva. » Qu'est-ce qui a changé ?")],
+      [fp("Comparent."),
+       fp("R.A. : on sait maintenant quand — le mot de temps précise le récit.")],
+      "Observation guidée", "Tableau"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Les indicateurs temporels ». Ce sont les mots qui situent les faits dans le temps : présent, passé ou futur.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Classement d'étiquettes en trois colonnes : PRÉSENT — aujourd'hui, maintenant, en ce moment, actuellement ; PASSÉ — hier, avant-hier, la veille, l'avant-veille, autrefois, avant, le jour précédent ; FUTUR — demain, après-demain, le lendemain, plus tard, après, bientôt.")],
+      [fp("Classent."),
+       fp("R.A. : trois colonnes complétées.")],
+      "Jeux", "Étiquettes"),
+    stepRow(["4. Analyse"],
+      [fp("La nuance fine : hier / demain se calculent par rapport à AUJOURD'HUI (celui qui parle) ; la veille / le lendemain se calculent par rapport à UN JOUR DU RÉCIT. Comparez : « Hier, je suis allé au mariage » et « La veille de la fête, tous arrivèrent ». Entraînez avec le texte de la séance 51 : relevez la veille, le grand jour, le soir, le lendemain — le récit avance grâce à eux.")],
+      [fp("Distinguent, relèvent."),
+       fp("R.A. : dans le récit, on dit la veille et le lendemain, pas hier et demain.")],
+      "Analyse", "Texte de la S51"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez les trois colonnes et la règle du récit : hier/demain pour celui qui parle ; la veille/le lendemain pour le récit. Les indicateurs rendent le temps précis et ordonnent les événements.")],
+      [fp("Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("À l'oral : trois phrases sur un événement familial — une au présent (en ce moment…), une au passé (autrefois…), une au futur (plus tard…).")],
+      [fp("Formulent."),
+       pAns("R.A. : En ce moment, ma tante prépare ses noces. Autrefois, les fiançailles duraient des mois. Plus tard, je raconterai cette fête à mes enfants.", ["Autrefois"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Classe : actuellement — l'avant-veille — le lendemain — maintenant — autrefois — bientôt."),
+       fp("2. Hier ou la veille ? « … du mariage, les oncles arrivèrent. »"),
+       fp("3. Complète avec un indicateur du futur : « … , chacun reprit la route. »")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. présent : actuellement, maintenant ; passé : l'avant-veille, autrefois ; futur : le lendemain, bientôt. 2. La veille. 3. Le lendemain.", ["La veille"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(53, TOTAL, meta, rows, "s53");
+}
+function lessonS53() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 53", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LES INDICATEURS TEMPORELS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Ils situent les faits dans le temps :"),
+    mot("PRÉSENT", "aujourd'hui, maintenant, en ce moment, actuellement"),
+    mot("PASSÉ", "hier, avant-hier, la veille, l'avant-veille, autrefois, avant, le jour précédent"),
+    mot("FUTUR", "demain, après-demain, le lendemain, plus tard, après, bientôt"),
+    p("", { after: 60 }),
+    sub("La nuance à connaître :"),
+    p("• hier, demain → par rapport à AUJOURD'HUI, pour celui qui parle : « Hier, je suis allé au mariage. » ;"),
+    p("• la veille, le lendemain → par rapport à UN JOUR DU RÉCIT : « La veille de la fête, tous arrivèrent. Le lendemain, chacun reprit la route. »", { after: 60 }),
+    sub("Leur rôle dans le récit :"),
+    p("Ils ordonnent les événements et rendent le temps précis : la veille → le grand jour → le soir → le lendemain.", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("dans un récit, je dis la veille et le lendemain — hier et demain appartiennent à celui qui parle aujourd'hui.")]),
+  ];
+}
+
+// ---------- S54 — Les pronoms COD et COI ----------
+function ficheS54() {
+  const meta = META("Les pronoms personnels COD (le, la, l', les) et COI (lui, leur)",
+    "À la fin de la séance, l'apprenant identifie les pronoms COD et COI, les mots qu'ils remplacent et leur place, et les emploie pour éviter la répétition, y compris à la forme négative.",
+    "6 / 12", "phrases d'exemple au tableau");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Hier ou la veille ? « … , je suis allé aux noces. » / « … des noces, tous arrivèrent. »")],
+      [fp("Répondent."),
+       fp("R.A. : Hier ; La veille.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Lisez : « J'ai vu les mariés. J'ai félicité les mariés. J'ai offert un cadeau aux mariés. » Qu'est-ce qui gêne ? Comment dire sans répéter ?")],
+      [fp("Repèrent la répétition."),
+       fp("R.A. : « les mariés » revient trois fois ; on peut dire : je les ai félicités, je leur ai offert un cadeau.")],
+      "Observation guidée", "Tableau"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Les pronoms personnels COD et COI ». Ils remplacent un nom pour éviter la répétition — et se placent avant le verbe.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Corpus COD (quoi ? qui ?) : « Je vois le tombeau → je le vois » ; « il porte la malle → il la porte » ; « elle écoute l'orateur → elle l'écoute » ; « on honore les ancêtres → on les honore ». Corpus COI (à qui ?) : « je parle à l'oncle → je lui parle » ; « on offre le vody ondry aux parents → on leur offre le vody ondry ». Faites trouver la question qui distingue : quoi/qui ? → COD ; à qui ? → COI.")],
+      [fp("Observent, posent les questions."),
+       fp("R.A. : le, la, l', les remplacent le COD ; lui, leur remplacent à + personne.")],
+      "Analyse", "Tableau"),
+    stepRow(["4. Analyse"],
+      [fp("La place : toujours avant le verbe — « je le vois », « je lui parle ». À la forme négative, la négation entoure le groupe : « je ne le vois pas », « je ne leur ai rien dit ». Entraînez la transformation en chaîne : « Nous invitons la tante. » « Tu réponds aux cousins. » « Elle ne salue pas le doyen. »")],
+      [fp("Transforment."),
+       fp("R.A. : Nous l'invitons. Tu leur réponds. Elle ne le salue pas.")],
+      "Complétion", "Tableau"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez le tableau : COD → le, la, l', les ; COI (à qqn) → lui (une personne), leur (plusieurs) ; place avant le verbe ; à la négative : ne + pronom + verbe + pas.")],
+      [fp("Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Jeu des devinettes familiales : « Je la porte au famadihana. » (la malle ? la photo ?) « On le fait avant les noces. » « On leur présente ses condoléances. » Puis chaque binôme invente une devinette avec un pronom.")],
+      [fp("Devinent, inventent."),
+       pAns("R.A. : On leur présente ses condoléances → aux familles en deuil.", ["leur"], { size: SZ.FICHE })],
+      "Binômes — jeu", "----"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("1. Remplace par un pronom : « Nous respectons les coutumes. »"),
+       fp("2. « Je téléphone à ma grand-mère. »"),
+       fp("3. Mets à la forme négative : « Je l'ai vu au mariage. »")],
+      [fp("Répondent individuellement."),
+       pAns("R.A. : 1. Nous les respectons. 2. Je lui téléphone. 3. Je ne l'ai pas vu au mariage.", ["lui"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+  ];
+  return fiche(54, TOTAL, meta, rows, "s54");
+}
+function lessonS54() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 54", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LES PRONOMS COD ET COI", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Le COD répond à : quoi ? qui ? → le, la, l', les"),
+    p("• Je vois le tombeau. → Je le vois."),
+    p("• Il porte la malle. → Il la porte."),
+    p("• Elle écoute l'orateur. → Elle l'écoute."),
+    p("• On honore les ancêtres. → On les honore.", { after: 60 }),
+    sub("Le COI répond à : à qui ? → lui, leur"),
+    p("• Je parle à l'oncle. → Je lui parle."),
+    p("• On offre le vody ondry aux parents. → On leur offre le vody ondry.", { after: 60 }),
+    sub("Leur place : avant le verbe"),
+    p("je le vois — je lui parle — je les ai félicités.", { after: 60 }),
+    sub("À la forme négative :"),
+    p("ne + pronom + verbe + pas : « Je ne le vois pas. » — « Je ne leur ai rien dit. »", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("quoi ? qui ? → le, la, l', les ; à qui ? → lui, leur — toujours avant le verbe.")]),
+  ];
+}
+
+// ---------- S55 — Production orale (1) : le débat ----------
+function ficheS55() {
+  const meta = META("Production orale (1) : opinions, questions et débat sur une pratique familiale",
+    "À la fin de la séance, l'apprenant partage son opinion, pose des questions sur un événement familial défini et débat d'une pratique familiale avec respect.",
+    "7 / 12", "question du débat au tableau, expressions utiles affichées");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Remplace par un pronom : « J'écris à mes cousins. » « Nous gardons les photos. »")],
+      [fp("Répondent."),
+       fp("R.A. : Je leur écris. Nous les gardons.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Écrivez la question du débat : « Faut-il dépenser beaucoup d'argent pour les fêtes de famille ? » Sondage à main levée. Rappelez la règle d'or de l'unité : on discute des pratiques, on respecte les personnes et les coutumes de chacun.")],
+      [fp("Votent, écoutent la règle."),
+       fp("R.A. : deux camps se dessinent.")],
+      "Brainstorming", "Tableau"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Le débat sur une pratique familiale ». Affichez les outils : l'opinion (à mon avis… parce que…), la question (les trois constructions), la concession polie (c'est vrai, mais…), le respect (chez nous… / dans d'autres familles…).")],
+      [fp("Lisent les outils.")], "Travail collectif", "Affiche d'expressions"),
+    stepRow(["3. Observation"],
+      [fp("Modelez un échange : « À mon avis, une grande fête honore la famille, parce que tout le village partage la joie. — C'est vrai, mais certaines familles s'endettent pour des années : est-ce raisonnable ? » Faites remarquer : opinion + cause, concession, question qui relance.")],
+      [fp("Observent le modèle."),
+       fp("R.A. : on peut ne pas être d'accord sans se fâcher.")],
+      "Modélisation", "----"),
+    stepRow(["4. Analyse", "(préparation)"],
+      [fp("Chaque camp prépare : deux arguments (avec parce que) et deux questions pour l'autre camp. Exigez des exemples concrets : le prix du zébu, la joie des retrouvailles, les économies de la famille, l'honneur rendu aux anciens.")],
+      [fp("Préparent en groupes."),
+       fp("R.A. : pour — la fête unit la famille ; contre — on peut honorer sans s'endetter.")],
+      "Travail de groupes", "Cahiers"),
+    stepRow(["5. Synthèse", "(le débat)"],
+      [fp("Conduisez le débat : alternez les camps, exigez les expressions affichées et le respect absolu des coutumes de chacun. Notez les meilleurs arguments.")],
+      [fp("Débattent en s'écoutant."),
+       fp("R.A. : échanges vifs mais respectueux.")],
+      "Débat", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Conclusion : chaque apprenant formule une phrase d'équilibre — honorer sa famille ET rester raisonnable.")],
+      [fp("Formulent."),
+       pAns("R.A. : À mon avis, la plus belle fête est celle que la famille peut se permettre : l'honneur est dans le cœur, pas dans la dépense.", ["l'honneur"], { size: SZ.FICHE })],
+      "Travail individuel", "----"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("Observation continue : une opinion avec cause (2 pts), une question correcte (1 pt), une concession polie (1 pt), respect des autres (1 pt).")],
+      [fp("Participent au débat.")],
+      "Observation continue", "Grille d'observation"),
+  ];
+  return fiche(55, TOTAL, meta, rows, "s55");
+}
+function lessonS55() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 55", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("DÉBATTRE D'UNE PRATIQUE FAMILIALE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Mes outils de débat :"),
+    p("• l'opinion : À mon avis, … parce que… ;"),
+    p("• la question : Est-ce raisonnable ? / Que ferais-tu, toi ? ;"),
+    p("• la concession polie : C'est vrai, mais… / Je comprends, pourtant… ;"),
+    p("• le respect : Chez nous, on fait ainsi ; dans d'autres familles, autrement.", { after: 60 }),
+    sub("La règle d'or :"),
+    p("On discute des pratiques, jamais des personnes. Les coutumes des autres familles se respectent comme les nôtres.", { after: 60 }),
+    sub("Exemple d'échange réussi :"),
+    p("« À mon avis, une grande fête honore la famille, parce que tout le village partage la joie. »"),
+    p("« C'est vrai, mais certaines familles s'endettent pour des années : est-ce raisonnable ? »", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("un bon débat ne cherche pas un vainqueur : il cherche une idée plus juste que celle du départ.")]),
+  ];
+}
+
+// ---------- S56 — Production orale (2) : le mini-reportage ----------
+function ficheS56() {
+  const meta = META("Production orale (2) : le mini-reportage sur un événement familial",
+    "À la fin de la séance, l'apprenant produit et présente un mini-reportage sur un événement familial défini, en respectant les conventions de la langue.",
+    "8 / 12", "reportage de la séance 37 et récit de la séance 49 comme modèles");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Les quatre outils du débat ?")],
+      [fp("Répondent."),
+       fp("R.A. : l'opinion avec cause, la question, la concession polie, le respect.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Rappelez le reportage de la pétanque (unité 4) : qu'est-ce qui le rendait vivant ? Le lieu, le moment, les actions, une citation, l'émotion. Un mini-reportage familial suit la même recette.")],
+      [fp("Relèvent les ingrédients."),
+       fp("R.A. : la grille où/quand/quoi/comment + une citation + l'émotion.")],
+      "Observation guidée", "----"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Le mini-reportage ». Chaque binôme choisit un événement familial (réel ou imaginé) : un mariage, une circoncision, un famadihana, l'arrivée d'un bébé. Plan au tableau : 1. l'annonce (où, quand, quoi) ; 2. deux moments forts racontés ; 3. une courte interview (deux questions à un « invité ») ; 4. la phrase de clôture du reporter.")],
+      [fp("Choisissent, copient le plan.")], "Travail collectif", "Tableau"),
+    stepRow(["3. Observation", "(préparation)"],
+      [fp("Préparation en binômes : l'un est le reporter, l'autre l'invité interviewé. Exigez : les indicateurs temporels (la veille, le grand jour, le lendemain), une question correcte à l'interview, le vocabulaire de l'unité.")],
+      [fp("Préparent leur reportage.")],
+      "Travail de binômes", "Cahiers"),
+    stepRow(["4. Analyse", "(répétition)"],
+      [fp("Répétition : le reporter parle comme à la radio (voix vivante), l'invité répond en phrases complètes. Les binômes se chronomètrent : deux minutes maximum.")],
+      [fp("Répètent, ajustent.")],
+      "Répétition", "----"),
+    stepRow(["5. Synthèse", "(présentations)"],
+      [fp("Présentation des mini-reportages. Le public remplit la grille où/quand/quoi/comment pour chaque reportage — c'est la preuve que l'information est passée.")],
+      [fp("Présentent, écoutent, remplissent."),
+       fp("R.A. : les grilles du public sont complètes.")],
+      "Présentation", "Grille d'écoute"),
+    stepRow(["6. Entraînement"],
+      [fp("Retour collectif : qu'est-ce qui a fait les meilleurs reportages ? Trois secrets au tableau.")],
+      [fp("Dégagent."),
+       pAns("R.A. : une annonce claire ; une interview vivante ; une vraie phrase de clôture (« Ici votre reporter, depuis Ambositra ! »).", ["reporter"], { size: SZ.FICHE })],
+      "Travail collectif", "Tableau"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("Barème : annonce complète (1 pt), deux moments forts avec indicateurs temporels (2 pts), interview correcte (1 pt), voix et vie du reportage (1 pt).")],
+      [fp("Présentent en binômes.")],
+      "Présentation notée", "Grille"),
+  ];
+  return fiche(56, TOTAL, meta, rows, "s56");
+}
+function lessonS56() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 56", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("PRÉSENTER UN MINI-REPORTAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Le plan de mon reportage :"),
+    p("1. L'ANNONCE : où, quand, quoi — « Ce dimanche, à Ambositra, toute une famille célèbre un mariage. » ;"),
+    p("2. DEUX MOMENTS FORTS, avec les indicateurs temporels : la veille…, le grand jour… ;"),
+    p("3. L'INTERVIEW : deux questions à un invité — « Que ressentez-vous aujourd'hui ? » ;"),
+    p("4. LA CLÔTURE : « Ici votre reporter, en direct d'Ambositra ! »", { after: 60 }),
+    sub("La voix du reporter :"),
+    p("• vivante : on doit voir la fête en fermant les yeux ;"),
+    p("• précise : les noms, les lieux, les moments ;"),
+    p("• curieuse : les questions font parler l'invité.", { after: 60 }),
+    sub("La preuve du reportage réussi :"),
+    p("Le public peut remplir la grille où ? quand ? quoi ? comment ? sans rien demander.", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("un reportage réussi fait vivre l'événement à ceux qui n'y étaient pas.")]),
+  ];
+}
+
+// ---------- S57 — Production écrite : dictée et récit de vie ----------
+function ficheS57() {
+  const meta = META("Production écrite : la dictée ; rédiger un récit de vie",
+    "À la fin de la séance, l'apprenant transcrit correctement une dictée et rédige un récit de vie sur un événement familial, en respectant la structure du texte narratif.",
+    "9 / 12", "texte de dictée, grille de relecture au tableau");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Les trois parties du texte narratif ? Les deux temps du récit ?")],
+      [fp("Répondent."),
+       fp("R.A. : situation initiale, événements, situation finale ; imparfait et passé simple (ou passé composé).")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route", "(dictée préparée)"],
+      [fp("Écrivez le texte de la dictée au tableau : « La veille de la fête, tous arrivèrent au village. Les femmes préparèrent le repas et les hommes dressèrent les tentes. Ce fut une belle journée : on chanta et l'on dansa jusqu'au soir. » Lecture, observation des pièges : -èrent, fut, la ponctuation. Puis effacez.")],
+      [fp("Lisent, observent les pièges, mémorisent.")],
+      "Dictée préparée", "Tableau"),
+    stepRow(["2. Présentation", "(la dictée)"],
+      [fp("Dictez lentement, en lisant chaque phrase deux fois. Relisez une dernière fois pour la vérification. Correction immédiate au tableau : chacun souligne et corrige ses erreurs.")],
+      [fp("Écrivent la dictée, se corrigent."),
+       fp("R.A. : erreurs repérées et corrigées (accords, -èrent, fut).")],
+      "Dictée", "Cahiers"),
+    stepRow(["3. Observation", "(le récit de vie — plan)"],
+      [fp("Annoncez la suite : « Mon récit de vie — un événement familial que j'ai vécu ». Plan au tableau : 1. la situation initiale (où ? quand ? l'attente — imparfait) ; 2. deux ou trois événements dans l'ordre (avec la veille, le grand jour, ensuite, le soir) ; 3. la situation finale + ce que j'ai ressenti.")],
+      [fp("Choisissent leur événement, notent le plan.")],
+      "Travail collectif", "Tableau"),
+    stepRow(["4. Analyse", "(premier jet)"],
+      [fp("Rédaction du premier jet : huit à dix lignes. Circulez : vérifiez l'imparfait du décor, les actions au passé (passé composé accepté, passé simple encouragé à la 3e personne), les indicateurs temporels, un pronom (le, la, les, lui, leur) pour éviter une répétition.")],
+      [fp("Rédigent leur premier jet.")],
+      "Rédaction individuelle — témoignage", "Cahiers"),
+    stepRow(["5. Synthèse", "(relecture guidée)"],
+      [fp("Grille au tableau : 1. mes trois parties sont-elles visibles ? 2. mon décor est-il à l'imparfait ? 3. mes événements sont-ils dans l'ordre, avec des indicateurs temporels ? 4. ai-je évité une répétition avec un pronom ? 5. majuscules et points ? Relecture individuelle puis croisée.")],
+      [fp("Relisent, corrigent."),
+       fp("R.A. : j'ai répété « ma grand-mère » ; je remplace par « elle » ou « lui ».")],
+      "Relecture guidée", "Grille au tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Mise au propre. Quelques volontaires lisent leur récit ; la classe retrouve les trois parties et relève le plus beau passage.")],
+      [fp("Mettent au propre, lisent, écoutent."),
+       pAns("R.A. : « Le soir, grand-mère m'a serré la main très fort » — on sent l'émotion du témoin.", ["l'émotion"], { size: SZ.FICHE })],
+      "Témoignage", "Cahiers"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("Dictée sur 5 (un point retiré par erreur grave). Récit : trois parties (2 pts), temps corrects (1 pt), indicateurs temporels (1 pt), un pronom bien employé (1 pt).")],
+      [fp("Remettent dictée et récit.")],
+      "Travail individuel", "----"),
+  ];
+  return fiche(57, TOTAL, meta, rows, "s57");
+}
+function lessonS57() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 57", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LA DICTÉE — MON RÉCIT DE VIE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("Pour réussir la dictée :"),
+    p("• j'écoute toute la phrase avant d'écrire ;"),
+    p("• je surveille les pièges du récit : -èrent (ils arrivèrent), fut, les accords ;"),
+    p("• à la relecture, je vérifie majuscules et points.", { after: 60 }),
+    sub("Le plan de mon récit de vie :"),
+    p("1. la SITUATION INITIALE — où ? quand ? l'attente (imparfait) : « Ce matin-là, la maison était pleine… » ;"),
+    p("2. les ÉVÉNEMENTS — dans l'ordre, avec les indicateurs : la veille, le grand jour, ensuite, le soir ;"),
+    p("3. la SITUATION FINALE — la fin et ce que j'ai ressenti : « Je n'ai jamais oublié ce jour. »", { after: 60 }),
+    sub("Ma grille de relecture :"),
+    p("1. Mes trois parties sont-elles visibles ?"),
+    p("2. Le décor à l'imparfait, les actions au passé ?"),
+    p("3. Des indicateurs temporels pour ordonner ?"),
+    p("4. Un pronom pour éviter une répétition ?"),
+    p("5. Majuscules, points, accords ?", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("un récit de vie touche quand on dit ce qu'on a vu ET ce qu'on a ressenti.")]),
+  ];
+}
+
+// ---------- S58 — Lecture-fluidité ----------
+function ficheS58() {
+  const meta = META("Lecture-fluidité : lire un récit de vie à haute voix",
+    "À la fin de la séance, l'apprenant lit un récit avec précision et un rythme adapté, en s'appuyant sur les signes de ponctuation de base.",
+    "10 / 12", "texte de la séance 51, récits des apprenants (séance 57)");
+  const rows = [
+    stepRow(["I. Révision", "Durée : ………"],
+      [fp("Le code des signes : la virgule, le point, les deux-points, les guillemets.")],
+      [fp("Répondent."),
+       fp("R.A. : pause courte ; pause longue ; annonce ; quelqu'un parle, on change de voix.")],
+      "Travail collectif", "----"),
+    sectionRow("II. NOUVELLE LEÇON — Durée : ………"),
+    stepRow(["1. Mise en route"],
+      [fp("Lisez la fin du texte du famadihana d'une voix plate, puis avec le ton juste (douceur, sourire, gravité légère). Quelle lecture respecte le texte ?")],
+      [fp("Comparent."),
+       fp("R.A. : la seconde — le récit demande une voix qui suit l'émotion.")],
+      "Modélisation de la lecture", "Texte de la S51"),
+    stepRow(["2. Présentation"],
+      [fp("Annoncez : « Lecture-fluidité : lire un récit ». Objectif : précision, rythme du récit, respect des signes — et la voix qui change aux citations.")],
+      [fp("Écoutent.")], "Travail collectif", "----"),
+    stepRow(["3. Observation"],
+      [fp("Repérage dans le texte : les virgules qui font respirer la phrase longue, les deux-points qui annoncent (« ces grands tissus de soie rouge »), les guillemets du discours du doyen, le point d'interrogation éventuel. Attention aux passés simples : arrivèrent, dressèrent — à lire exactement.")],
+      [fp("Repèrent."),
+       fp("R.A. : la citation du doyen se lit avec la voix du doyen.")],
+      "Lecture analytique", "Texte de la S51"),
+    stepRow(["4. Analyse", "(lecture modèle puis répétée)"],
+      [fp("Lecture modèle du troisième paragraphe. Lecture répétée en binômes : deux lectures chacun, le camarade suit du doigt, note les mots déformés (lambamena, enveloppa) et vérifie les pauses.")],
+      [fp("Lisent, se corrigent, relisent.")],
+      "Lecture répétée", "Texte de la S51"),
+    stepRow(["5. Synthèse"],
+      [fp("Récapitulez : précision (chaque mot, chaque forme verbale), rythme posé qui suit le récit, autocorrections rapides, voix des citations.")],
+      [fp("Récapitulent. Copient.")], "Travail collectif", "Tableau"),
+    stepRow(["6. Entraînement"],
+      [fp("Chacun lit à haute voix SON récit de vie (séance 57) : le décor posément, les événements avec vie, la dernière phrase lentement. Le groupe relève une réussite par lecture.")],
+      [fp("Lisent leur récit."),
+       pAns("R.A. : la dernière phrase, lue lentement, a ému la classe.", ["lentement"], { size: SZ.FICHE })],
+      "Lecture à haute voix", "Récits des apprenants"),
+    stepRow(["III. Évaluation", "Durée : ………"],
+      [fp("Lecture individuelle notée : six lignes du texte du famadihana — précision (y compris les passés simples), ponctuation, rythme, voix de la citation.")],
+      [fp("Lisent individuellement."),
+       pAns("R.A. : lecture fluide ; « Une famille qui se souvient est une famille vivante » lu avec gravité.", ["vivante"], { size: SZ.FICHE })],
+      "Travail individuel", "Texte de la S51"),
+  ];
+  return fiche(58, TOTAL, meta, rows, "s58");
+}
+function lessonS58() {
+  return [
+    p([run("LEÇON DU JOUR — SÉANCE 58", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    p([run("LIRE UN RÉCIT À HAUTE VOIX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    sub("La voix suit le récit :"),
+    p("• le décor se lit posément ;"),
+    p("• les événements se lisent avec vie ;"),
+    p("• la dernière phrase se lit lentement — c'est elle qu'on retient.", { after: 60 }),
+    sub("Les signes et leur code :"),
+    mot("la virgule ,", "la phrase longue respire"),
+    mot("les deux-points :", "on annonce : « ces grands tissus de soie rouge »"),
+    mot("les guillemets « »", "le doyen parle : je change de voix"),
+    mot("le point .", "pause longue — l'image s'installe"),
+    p("", { after: 60 }),
+    sub("Attention aux formes du récit :"),
+    p("les passés simples se lisent exactement : arrivèrent, dressèrent, enveloppa, fut.", { after: 60 }),
+    sub("Pour une lecture fluide :"),
+    p("• je lis chaque mot avec précision et je me corrige vite ;"),
+    p("• je m'entraîne : deux lectures valent mieux qu'une.", { after: 60 }),
+    pr([run("À retenir : ", { bold: true }),
+        run("lire un récit, c'est prêter sa voix à ceux qui ont vécu l'histoire.")]),
+  ];
+}
+
+// ---------- La grande leçon ----------
+function bigLesson() {
+  return [
+    unitBanner("LEÇON — UNITÉ 5 : LES ÉVÉNEMENTS FAMILIAUX (récapitulatif)", COLOR),
+    p("", { after: 80 }),
+    sub("1. Les mots de l'unité :"),
+    pr([run("Les cinq événements : ", { bold: true }), run("la naissance, la circoncision (famorana), le mariage, le décès, l'exhumation (famadihana).", { bold: true, color: C.BLUE })], { after: 40 }),
+    pr([run("Les mots de chacun : ", { bold: true }), run("le nouveau-né ; le vody ondry, les noces ; le deuil, les condoléances ; le tombeau, le lambamena.", { bold: true, color: C.BLUE })], { after: 80 }),
+    sub("2. Le texte narratif :"),
+    p("situation initiale (imparfait — le décor) → événements dans l'ordre (passé simple — l'action) → situation finale.", { after: 80 }),
+    sub("3. Le passé simple des verbes courants :"),
+    p("-er → il chanta, ils chantèrent ; finir → il finit ; prendre → il prit ; faire → il fit ; dire → il dit ; venir → il vint ; être → il fut ; avoir → il eut.", { after: 80 }),
+    sub("4. Les indicateurs temporels :"),
+    p("présent : aujourd'hui, maintenant, actuellement ; passé : hier, la veille, l'avant-veille, autrefois ; futur : demain, le lendemain, plus tard. Dans le récit : la veille et le lendemain, pas hier et demain.", { after: 80 }),
+    sub("5. Les pronoms COD et COI :"),
+    p("quoi ? qui ? → le, la, l', les ; à qui ? → lui, leur ; avant le verbe ; à la négative : je ne le vois pas.", { after: 80 }),
+    sub("6. À l'oral et à l'écrit :"),
+    p("le débat respectueux : opinion + cause, concession polie, respect des coutumes ; le mini-reportage : annonce, moments forts, interview, clôture ; le récit de vie : trois parties, indicateurs temporels, les faits et les sentiments.", { after: 80 }),
+  ];
+}
+
+// ---------- Exercices ----------
+function exercises() {
+  return [
+    p([run("EXERCICES", { bold: true, size: 30 })], { center: true, after: 140 }),
+    pr([run("Exercice 1 (4 points). ", { bold: true }), run("Complète avec : condoléances — noces — lambamena — nouveau-né. 1. Au famadihana, on enveloppe les ancêtres dans des … neufs. 2. Toute la famille admire le …. 3. Les … de ma tante ont duré deux jours. 4. À la famille en deuil, on présente ses ….")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 2 (4 points). ", { bold: true }), run("Mets au passé simple : 1. « Les oncles (arriver) la veille. » 2. « Le doyen (faire) le discours. » 3. « Ce (être) une belle fête. » 4. « Tous (prendre) la route le lendemain. »")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 3 (4 points). ", { bold: true }), run("Classe ces indicateurs (présent, passé ou futur) : actuellement — autrefois — le lendemain — en ce moment — l'avant-veille — bientôt — maintenant — plus tard.")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 4 (4 points). ", { bold: true }), run("Remplace par un pronom (le, la, l', les, lui, leur) : 1. « Nous respectons les coutumes. » 2. « Je parle à mon oncle. » 3. « Elle garde la photo du mariage. » 4. « On offre le vody ondry aux parents. »")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 5 (4 points). ", { bold: true }), run("Hier ou la veille ? demain ou le lendemain ? 1. « … , je suis allé aux noces de ma cousine. » 2. « … de la fête, tous arrivèrent au village. » 3. « … , j'irai féliciter les parents du bébé. » 4. « … , chacun reprit la route. »")]),
+    p("", { after: 140 }),
+    p([run("Total : 20 points", { bold: true })], { after: 160 }),
+    p([run("CORRIGÉ", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
+    pAns("Ex.1 : lambamena — nouveau-né — noces — condoléances. (1 pt chacun)", ["condoléances"]),
+    pAns("Ex.2 : arrivèrent — fit — fut — prirent. (1 pt chacun)", ["fut"]),
+    pAns("Ex.3 : présent : actuellement, en ce moment, maintenant ; passé : autrefois, l'avant-veille ; futur : le lendemain, bientôt, plus tard. (0,5 pt chacun)", ["autrefois"]),
+    pAns("Ex.4 : 1. Nous les respectons. 2. Je lui parle. 3. Elle la garde. 4. On leur offre le vody ondry. (1 pt chacun)", ["leur"]),
+    pAns("Ex.5 : 1. Hier — 2. La veille — 3. Demain — 4. Le lendemain. (1 pt chacun)", ["La veille"]),
+  ];
+}
+
+// ---------- Révision (S59) ----------
+function revision() {
+  const B2 = require("./builders");
+  return [
+    B2.bookmarkTitle("s59", "SÉANCE 59 / 72", { bold: true, size: 28, after: 60 }),
+    p([run("RÉVISION — UNITÉ 5 : LES ÉVÉNEMENTS FAMILIAUX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    p([run("Je réponds :", { bold: true })], { after: 80 }),
+    p("1. Cite les cinq événements familiaux de l'unité, dans l'ordre de la vie."),
+    pAns("R.A. : la naissance, la circoncision, le mariage, le décès, l'exhumation.", ["l'exhumation"]),
+    p("2. Que dit-on à une naissance ? à un deuil ? à un mariage ?"),
+    pAns("R.A. : félicitations ; toutes mes condoléances ; tous mes vœux de bonheur.", ["condoléances"]),
+    p("3. Donne les trois parties du texte narratif et le temps de chacune."),
+    pAns("R.A. : situation initiale (imparfait), événements (passé simple), situation finale.", ["imparfait"]),
+    p("4. Mets au passé simple (il, puis ils) : chanter, faire, être."),
+    pAns("R.A. : il chanta / ils chantèrent ; il fit / ils firent ; il fut / ils furent.", ["furent"]),
+    p("5. Quelle est la différence entre « hier » et « la veille » ?"),
+    pAns("R.A. : hier se calcule par rapport à aujourd'hui (celui qui parle) ; la veille, par rapport à un jour du récit.", ["la veille"]),
+    p("6. Donne deux indicateurs du présent, deux du passé, deux du futur."),
+    pAns("R.A. : maintenant, actuellement ; autrefois, l'avant-veille ; le lendemain, plus tard.", ["actuellement"]),
+    p("7. Remplace par un pronom : « J'écoute l'orateur. » « Nous écrivons à nos cousins. »"),
+    pAns("R.A. : Je l'écoute. Nous leur écrivons.", ["leur"]),
+    p("8. Mets à la forme négative : « Je les ai vus au famadihana. »"),
+    pAns("R.A. : Je ne les ai pas vus au famadihana.", ["ne les ai pas"]),
+    p("9. Donne le plan d'un mini-reportage."),
+    pAns("R.A. : l'annonce (où, quand, quoi), deux moments forts, l'interview, la clôture.", ["l'interview"]),
+    p("10. Quelle est la règle d'or du débat sur les pratiques familiales ?"),
+    pAns("R.A. : on discute des pratiques, on respecte les personnes — chaque famille a ses coutumes.", ["respecte"]),
+  ];
+}
+
+// ---------- Test (S60) ----------
+function testPaper() {
+  const B2 = require("./builders");
+  return [
+    B2.bookmarkTitle("s60", "SÉANCE 60 / 72", { bold: true, size: 28, after: 60 }),
+    p([run("TEST — UNITÉ 5 : LES ÉVÉNEMENTS FAMILIAUX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 60 }),
+    pr([run("Durée : ………        ", { bold: true }), run("Total : 20 points", { bold: true })], { center: true, after: 160 }),
+    pr([run("Exercice 1 (4 points). ", { bold: true }), run("Complète avec : deuil — vody ondry — famadihana — berceau. 1. Avant les noces, le marié offre le … aux parents de la mariée. 2. Le nouveau-né dort dans son …. 3. Tous les sept ans, cette famille célèbre le …. 4. Toute la classe partage le … de notre camarade.")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 2 (4 points). ", { bold: true }), run("Lis : « La veille des noces, les tantes préparèrent le repas. Le grand jour, l'orateur fit un long discours et ce fut très beau. » 1-2. Relève deux verbes au passé simple et donne leur infinitif. 3. Relève deux indicateurs temporels. 4. Lequel se calcule par rapport à un jour du récit ?")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 3 (4 points). ", { bold: true }), run("Mets au passé simple : 1. « Les invités (arriver) de partout. » 2. « Le doyen (dire) le nom de chaque ancêtre. » 3. « Chacun (avoir) sa part de riz. » 4. « Ils (venir) à pied du village voisin. »")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 4 (4 points). ", { bold: true }), run("Remplace par un pronom : 1. « Je félicite les mariés. » 2. « Nous téléphonons à grand-mère. » 3. « Elle n'oublie pas cette journée. » 4. Mets à la forme négative : « Je lui ai parlé. »")]),
+    p("", { after: 120 }),
+    pr([run("Exercice 5 (4 points). ", { bold: true }), run("Rédige en cinq ou six lignes le début d'un récit de vie sur un événement familial : la situation initiale à l'imparfait, un premier événement au passé, un indicateur temporel.")]),
+    p("", { after: 140 }),
+    p([run("CORRIGÉ", { bold: true, size: SZ.SUB, color: C.PINK })], { center: true, after: 120 }),
+    pAns("Ex.1 : vody ondry — berceau — famadihana — deuil. (1 pt chacun)", ["famadihana"]),
+    pAns("Ex.2 : 1-2. préparèrent (préparer), fit (faire), fut (être) — deux suffisent. 3. la veille, le grand jour. 4. la veille. (1 pt chacun)", ["la veille"]),
+    pAns("Ex.3 : arrivèrent — dit — eut — vinrent. (1 pt chacun)", ["vinrent"]),
+    pAns("Ex.4 : 1. Je les félicite. 2. Nous lui téléphonons. 3. Elle ne l'oublie pas. 4. Je ne lui ai pas parlé. (1 pt chacun)", ["ne lui ai pas"]),
+    pAns("Ex.5 : situation initiale à l'imparfait (1 pt), un événement au passé (1 pt), un indicateur temporel (1 pt), correction de la langue (1 pt).", ["imparfait"]),
+  ];
+}
+
+module.exports = function unit5() {
+  return [
+    ...opening(), pageBreak(),
+    ...ficheS49(), pageBreak(), ...lessonS49(), pageBreak(),
+    ...ficheS50(), pageBreak(), ...lessonS50(), pageBreak(),
+    ...ficheS51(), pageBreak(), ...lessonS51(), pageBreak(),
+    ...ficheS52(), pageBreak(), ...lessonS52(), pageBreak(),
+    ...ficheS53(), pageBreak(), ...lessonS53(), pageBreak(),
+    ...ficheS54(), pageBreak(), ...lessonS54(), pageBreak(),
+    ...ficheS55(), pageBreak(), ...lessonS55(), pageBreak(),
+    ...ficheS56(), pageBreak(), ...lessonS56(), pageBreak(),
+    ...ficheS57(), pageBreak(), ...lessonS57(), pageBreak(),
+    ...ficheS58(), pageBreak(), ...lessonS58(), pageBreak(),
+    ...bigLesson(), pageBreak(),
+    ...exercises(), pageBreak(),
+    ...revision(), pageBreak(),
+    ...testPaper(), pageBreak(),
+    ...iCan("UNITÉ 5", COLOR, [
+      "Je comprends un récit de vie et je retrouve où, quand, quoi, comment.",
+      "J'emploie les mots des cinq événements familiaux, de la naissance à l'exhumation.",
+      "Je sais quoi dire : félicitations, tous mes vœux, toutes mes condoléances.",
+      "Je reconnais la structure du récit : situation initiale, événements, situation finale.",
+      "J'emploie le passé simple des verbes courants : il chanta, il fit, il fut, il eut.",
+      "Je situe les faits avec les indicateurs temporels — la veille, le lendemain dans le récit.",
+      "J'évite les répétitions avec le, la, l', les, lui, leur.",
+      "Je débats d'une pratique familiale avec respect et je présente un mini-reportage.",
+      "J'écris une dictée sans faute grave et je raconte un événement que j'ai vécu.",
+    ], "PROCHAINE ÉTAPE → UNITÉ 6 : LE MONDE IMAGINAIRE"),
+  ];
+};
+module.exports.COLOR = COLOR;
+module.exports.SHADE = SHADE;
