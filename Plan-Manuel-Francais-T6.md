@@ -35,7 +35,7 @@ Gabarit d'une unité (12 séances) : CO ×1 · Lexique ×1 · CE ×1 · Langue �
 - Bloc 1 ☑ : infrastructure (builders, build.js, couverture, avant-propos, mode d'emploi, sommaire, tableau de bord) + Unité 1 Le voyage (S1–S12). — livré
 - Bloc 2 ☑ : Unité 2 La vie en société (S13–S24). — livré
 - Bloc 3 ☑ : Unité 3 Les nouvelles technologies (S25–S36). — livré
-- Bloc 4 ☐ : Unité 4 Les sports (S37–S48).
+- Bloc 4 ☑ : Unité 4 Les sports (S37–S48). — livré
 - Bloc 5 ☐ : Unité 5 Les événements familiaux (S49–S60).
 - Bloc 6 ☐ : Unité 6 Le monde imaginaire (S61–S72).
 - Bloc 7 ☐ : 6 annexes + page finale.

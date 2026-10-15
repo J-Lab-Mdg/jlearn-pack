@@ -106,6 +106,20 @@ function contents() {
     tocLink("s34", "    Séance 34 — Lecture-fluidité : lire un mode d'emploi"),
     tocLink("s35", "    Séance 35 — Révision"),
     tocLink("s36", "    Séance 36 — Test"),
+    p("", { after: 40 }),
+    tocLink("unit4", "UNITÉ 4 — LES SPORTS (Séances 37–48)", { bold: true, size: 26 }),
+    tocLink("s37", "    Séance 37 — Compréhension orale : reportage « La finale de pétanque »"),
+    tocLink("s38", "    Séance 38 — Lexique : les mots du sport"),
+    tocLink("s39", "    Séance 39 — Compréhension écrite : « Pourquoi faire du sport ? »"),
+    tocLink("s40", "    Séance 40 — Les types de phrases"),
+    tocLink("s41", "    Séance 41 — Les formes de phrases ; la négation au passé composé"),
+    tocLink("s42", "    Séance 42 — La périphrase"),
+    tocLink("s43", "    Séance 43 — Production orale (1) : opinions et questions sur un sport"),
+    tocLink("s44", "    Séance 44 — Production orale (2) : exposer les bienfaits d'un sport"),
+    tocLink("s45", "    Séance 45 — Production écrite : inventer un sport, rédiger ses règles de jeu"),
+    tocLink("s46", "    Séance 46 — Lecture-fluidité : reportage et règle de jeu"),
+    tocLink("s47", "    Séance 47 — Révision"),
+    tocLink("s48", "    Séance 48 — Test"),
   ];
 }
 
@@ -153,6 +167,7 @@ async function main() {
         ...require("./unit1")(),
         ...require("./unit2")(),
         ...require("./unit3")(),
+        ...require("./unit4")(),
       ],
     }],
   });
