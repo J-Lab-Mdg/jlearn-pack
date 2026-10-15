@@ -87,6 +87,7 @@ const seances = [
         paras: [
           "Ny fanjanahantany dia ny fakana sy ny fitondrana tany iray ataon'ny firenena vahiny matanjaka : alainy ny fahefana, ny tany sy ny harena ary fehezany ny mponina hiasa ho azy.",
           "Tamin'ny fifanarahana 5 aogositra 1890 dia neken'ny Anglisy ho zaram-pahefan'i Frantsa i Madagasikara, ary neken'i Frantsa ho an'ny Anglisy kosa i Zanzibar.",
+          "Tsy neken'ny mpanjakavavy Ranavalona III sy ny praiminisitra Rainilaiarivony anefa izany protectorat izany, ka niteraka ny ady tamin'i Frantsa : tafiditra tao Antananarivo ny tafika frantsay tamin'ny 1895, ary ny 6 aogositra 1896 dia nofoanana ny protectorat ka nambara ho zanatany frantsay i Madagasikara.",
         ],
         puces: [],
       },

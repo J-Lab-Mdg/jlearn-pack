@@ -93,7 +93,7 @@ const seances = [
         titre: "2. Ireo karazana vakoka",
         paras: [],
         puces: [
-          "Vakoka hita maso : tsangambato, trano manan-tantara, tsena tranainy, fiangonana manan-tantara, rova, aloalo, fasan'ny mpanjaka, fitaovana tranainy sy ireo zavatra sarobidy tehirizina…",
+          "Vakoka hita maso : tsangambato, trano manan-tantara, tsena tranainy, fiangonana manan-tantara, rova, aloalo, fasan'ny mpanjaka, ny taolam-balon'ireo olo-malaza, fitaovana tranainy sy ireo zavatra sarobidy tehirizina…",
           "Vakoka tsy hita maso : ny kabary, ny hira gasy sy ny vakodrazana, ny fomba amam-panao, ny angano, ny ohabolana…",
         ],
       },

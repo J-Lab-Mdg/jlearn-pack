@@ -95,7 +95,7 @@ const seances = [
           "ny fety (mariazy, famadihana, fetin'ny sekoly…) ;",
           "ny fambolen-kazo sy ny asa tanamaro ;",
           "ny tsena isan-kerinandro ;",
-          "ny doro tanety sy ny tsy fandriampahalemana (zava-mitranga ratsy).",
+          "ny doro tanety, ny halatra sy ny vono olona ary ny tsy fandriampahalemana (zava-mitranga ratsy).",
         ],
       },
       {
