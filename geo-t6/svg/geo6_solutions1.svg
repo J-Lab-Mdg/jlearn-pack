@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les solutions (1) : bien exploiter et replanter</text>
+  <rect x="50" y="110" width="290" height="300" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="195" y="150" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">EXPLOITER</text>
+  <text x="195" y="185" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">RATIONNELLEMENT</text>
+  <text x="195" y="240" text-anchor="middle" font-size="17" fill="#263238">Prendre seulement</text>
+  <text x="195" y="268" text-anchor="middle" font-size="17" fill="#263238">ce dont on a besoin ;</text>
+  <text x="195" y="296" text-anchor="middle" font-size="17" fill="#263238">laisser grandir les</text>
+  <text x="195" y="324" text-anchor="middle" font-size="17" fill="#263238">petits poissons et</text>
+  <text x="195" y="352" text-anchor="middle" font-size="17" fill="#263238">les jeunes arbres.</text>
+  <rect x="355" y="110" width="290" height="300" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="500" y="150" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">REPLANTER</text>
+  <text x="500" y="195" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">LES FORÊTS</text>
+  
+  <g transform="translate(430,300) scale(0.9)">
+    <rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/>
+    <circle cx="0" cy="0" r="18" fill="#66BB6A"/><circle cx="-13" cy="8" r="13" fill="#66BB6A"/><circle cx="13" cy="8" r="13" fill="#66BB6A"/>
+  </g>
+  <g transform="translate(500,290) scale(1.1)">
+    <rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/>
+    <circle cx="0" cy="0" r="18" fill="#43A047"/><circle cx="-13" cy="8" r="13" fill="#43A047"/><circle cx="13" cy="8" r="13" fill="#43A047"/>
+  </g>
+  <g transform="translate(570,300) scale(0.9)">
+    <rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/>
+    <circle cx="0" cy="0" r="18" fill="#66BB6A"/><circle cx="-13" cy="8" r="13" fill="#66BB6A"/><circle cx="13" cy="8" r="13" fill="#66BB6A"/>
+  </g>
+  <text x="500" y="385" text-anchor="middle" font-size="18" fill="#263238">Un arbre coupé,</text>
+  <text x="500" y="410" text-anchor="middle" font-size="18" fill="#263238" font-weight="bold">un arbre replanté !</text>
+  <rect x="660" y="110" width="290" height="300" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="805" y="150" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">CHOISIR DES</text>
+  <text x="805" y="185" text-anchor="middle" font-size="18" fill="#1B5E20" font-weight="bold">CULTURES ADAPTÉES</text>
+  <text x="805" y="240" text-anchor="middle" font-size="17" fill="#263238">Des plantes qui</text>
+  <text x="805" y="268" text-anchor="middle" font-size="17" fill="#263238">supportent la</text>
+  <text x="805" y="296" text-anchor="middle" font-size="17" fill="#263238">sécheresse et le</text>
+  <text x="805" y="324" text-anchor="middle" font-size="17" fill="#263238">vent : le manioc,</text>
+  <text x="805" y="352" text-anchor="middle" font-size="17" fill="#263238">le sisal, le pois</text>
+  <text x="805" y="380" text-anchor="middle" font-size="17" fill="#263238">d'angole…</text>
+  <text x="500" y="480" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Bien exploiter, replanter, cultiver autrement : la nature reprend des forces.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Exploiter rationnellement, reboiser, adapter les cultures : les ressources retrouvent leur équilibre.</text>
+</svg>

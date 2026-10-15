@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Quand les ressources sont mal exploitées</text>
+  <rect x="50" y="100" width="440" height="200" rx="18" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="270" y="140" text-anchor="middle" font-size="20" fill="#C00000" font-weight="bold">LA FORÊT BRÛLÉE</text>
+  <text x="270" y="190" text-anchor="middle" font-size="17" fill="#263238">Le tavy détruit la forêt pour quelques récoltes ;</text>
+  <text x="270" y="217" text-anchor="middle" font-size="17" fill="#263238">les arbres coupés ne repoussent pas ;</text>
+  <text x="270" y="244" text-anchor="middle" font-size="17" fill="#263238">la pluie emporte la terre nue : l'érosion.</text>
+  
+  <g transform="translate(150,320) scale(1)">
+    <rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/>
+    <circle cx="0" cy="0" r="18" fill="#8D6E63"/><circle cx="-13" cy="8" r="13" fill="#8D6E63"/><circle cx="13" cy="8" r="13" fill="#8D6E63"/>
+  </g>
+  <g transform="translate(230,320) scale(1)">
+    <rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/>
+    <circle cx="0" cy="0" r="18" fill="#8D6E63"/><circle cx="-13" cy="8" r="13" fill="#8D6E63"/><circle cx="13" cy="8" r="13" fill="#8D6E63"/>
+  </g>
+  <text x="310" y="325" text-anchor="start" font-size="16" fill="#C00000" font-style="italic">→ des arbres morts</text>
+  <rect x="510" y="100" width="440" height="200" rx="18" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="730" y="140" text-anchor="middle" font-size="20" fill="#C00000" font-weight="bold">LA MER VIDÉE</text>
+  <text x="730" y="190" text-anchor="middle" font-size="17" fill="#263238">La surpêche prend les petits poissons</text>
+  <text x="730" y="217" text-anchor="middle" font-size="17" fill="#263238">et les poissons porteurs d'œufs ;</text>
+  <text x="730" y="244" text-anchor="middle" font-size="17" fill="#263238">demain, il n'en restera plus assez.</text>
+  
+  <g transform="translate(640,320) scale(1.2)">
+    <ellipse cx="0" cy="0" rx="20" ry="10" fill="#90A4AE"/>
+    <path d="M 18 0 L 30 -9 L 30 9 Z" fill="#90A4AE"/>
+    <circle cx="-10" cy="-2" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <g transform="translate(740,320) scale(1.2)">
+    <ellipse cx="0" cy="0" rx="20" ry="10" fill="#90A4AE"/>
+    <path d="M 18 0 L 30 -9 L 30 9 Z" fill="#90A4AE"/>
+    <circle cx="-10" cy="-2" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <text x="830" y="325" text-anchor="start" font-size="16" fill="#C00000" font-style="italic">→ des poissons rares</text>
+  <rect x="50" y="360" width="900" height="160" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="500" y="400" text-anchor="middle" font-size="21" fill="#E65100" font-weight="bold">DES ESPÈCES DISPARAISSENT</text>
+  <text x="500" y="445" text-anchor="middle" font-size="18" fill="#263238">Des animaux et des plantes de Madagascar ont déjà disparu pour toujours :</text>
+  <text x="500" y="473" text-anchor="middle" font-size="18" fill="#263238">l'oiseau-éléphant, le plus grand oiseau du monde, le lémurien géant…</text>
+  <text x="500" y="501" text-anchor="middle" font-size="18" fill="#263238">D'autres sont en danger aujourd'hui, comme le plus grand lémurien vivant.</text>
+  <text x="500" y="600" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Exploiter sans mesure, c'est perdre nos richesses pour toujours.</text>
+</svg>

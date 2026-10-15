@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Monter un mini-projet qui respecte les ressources</text>
+  <text x="500" y="95" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">Exemple : élever des poissons dans un étang du village.</text>
+  
+    <rect x="50" y="110" width="210" height="230" rx="14" fill="#F1F8E9" stroke="#7CB342" stroke-width="3"/>
+    <circle cx="155" cy="150" r="22" fill="#7CB342"/>
+    <text x="155" y="158" text-anchor="middle" font-size="22" font-weight="bold" fill="#FFFFFF">1</text>
+    <text x="155" y="200" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">OBSERVER</text>
+    <text x="155" y="235" text-anchor="middle" font-size="15" fill="#263238">Quelles ressources</text><text x="155" y="262" text-anchor="middle" font-size="15" fill="#263238">autour de nous ?</text><text x="155" y="289" text-anchor="middle" font-size="15" fill="#263238">L'eau de la rivière,</text><text x="155" y="316" text-anchor="middle" font-size="15" fill="#263238">les terrains libres.</text>
+  
+    <rect x="280" y="110" width="210" height="230" rx="14" fill="#F1F8E9" stroke="#7CB342" stroke-width="3"/>
+    <circle cx="385" cy="150" r="22" fill="#7CB342"/>
+    <text x="385" y="158" text-anchor="middle" font-size="22" font-weight="bold" fill="#FFFFFF">2</text>
+    <text x="385" y="200" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">CHOISIR</text>
+    <text x="385" y="235" text-anchor="middle" font-size="15" fill="#263238">Une activité qui</text><text x="385" y="262" text-anchor="middle" font-size="15" fill="#263238">utilise la ressource</text><text x="385" y="289" text-anchor="middle" font-size="15" fill="#263238">sans l'épuiser :</text><text x="385" y="316" text-anchor="middle" font-size="15" fill="#263238">la pisciculture !</text>
+  
+    <rect x="510" y="110" width="210" height="230" rx="14" fill="#F1F8E9" stroke="#7CB342" stroke-width="3"/>
+    <circle cx="615" cy="150" r="22" fill="#7CB342"/>
+    <text x="615" y="158" text-anchor="middle" font-size="22" font-weight="bold" fill="#FFFFFF">3</text>
+    <text x="615" y="200" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">MONTER</text>
+    <text x="615" y="235" text-anchor="middle" font-size="15" fill="#263238">Creuser l'étang,</text><text x="615" y="262" text-anchor="middle" font-size="15" fill="#263238">remplir d'eau,</text><text x="615" y="289" text-anchor="middle" font-size="15" fill="#263238">élever les alevins,</text><text x="615" y="316" text-anchor="middle" font-size="15" fill="#263238">nourrir, surveiller.</text>
+  
+    <rect x="740" y="110" width="210" height="230" rx="14" fill="#F1F8E9" stroke="#7CB342" stroke-width="3"/>
+    <circle cx="845" cy="150" r="22" fill="#7CB342"/>
+    <text x="845" y="158" text-anchor="middle" font-size="22" font-weight="bold" fill="#FFFFFF">4</text>
+    <text x="845" y="200" text-anchor="middle" font-size="17" fill="#263238" font-weight="bold">PRÉSENTER</text>
+    <text x="845" y="235" text-anchor="middle" font-size="15" fill="#263238">Dessiner le projet,</text><text x="845" y="262" text-anchor="middle" font-size="15" fill="#263238">calculer ce qu'il</text><text x="845" y="289" text-anchor="middle" font-size="15" fill="#263238">rapporte, le montrer</text><text x="845" y="316" text-anchor="middle" font-size="15" fill="#263238">à la classe et au village.</text>
+  <text x="500" y="400" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Une bonne activité économique utilise la ressource… et la laisse vivre.</text>
+  <text x="500" y="450" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">Règle d'or du mini-projet : la ressource doit encore être là</text>
+  <text x="500" y="478" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">quand les enfants de tes enfants grandiront.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Observer, choisir, monter, présenter : la démarche du mini-projet de l'unité.</text>
+</svg>

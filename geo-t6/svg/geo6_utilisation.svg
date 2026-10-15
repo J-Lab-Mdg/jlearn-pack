@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">À quoi servent les ressources naturelles ?</text>
+  
+    <rect x="50" y="120" width="210" height="240" rx="14" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+    <text x="155" y="155" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">SE NOURRIR</text>
+    <text x="155" y="200" text-anchor="middle" font-size="16" fill="#263238">Le riz des rizières,</text><text x="155" y="230" text-anchor="middle" font-size="16" fill="#263238">le poisson des rivières,</text><text x="155" y="260" text-anchor="middle" font-size="16" fill="#263238">les fruits de la forêt,</text><text x="155" y="290" text-anchor="middle" font-size="16" fill="#263238">la viande des zébus.</text>
+  
+    <rect x="280" y="120" width="210" height="240" rx="14" fill="#F1F8E9" stroke="#90A4AE" stroke-width="3"/>
+    <text x="385" y="155" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">SE SOIGNER</text>
+    <text x="385" y="200" text-anchor="middle" font-size="16" fill="#263238">Les plantes médicinales,</text><text x="385" y="230" text-anchor="middle" font-size="16" fill="#263238">le miel de la ruche,</text><text x="385" y="260" text-anchor="middle" font-size="16" fill="#263238">l'eau pure des sources.</text>
+  
+    <rect x="510" y="120" width="210" height="240" rx="14" fill="#EFEBE9" stroke="#90A4AE" stroke-width="3"/>
+    <text x="615" y="155" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">CONSTRUIRE</text>
+    <text x="615" y="200" text-anchor="middle" font-size="16" fill="#263238">Le bois des forêts,</text><text x="615" y="230" text-anchor="middle" font-size="16" fill="#263238">l'argile des briques,</text><text x="615" y="260" text-anchor="middle" font-size="16" fill="#263238">le sable des rivières,</text><text x="615" y="290" text-anchor="middle" font-size="16" fill="#263238">les pierres des carrières.</text>
+  
+    <rect x="740" y="120" width="210" height="240" rx="14" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+    <text x="845" y="155" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">VENDRE</text>
+    <text x="845" y="200" text-anchor="middle" font-size="16" fill="#263238">La vanille et le girofle,</text><text x="845" y="230" text-anchor="middle" font-size="16" fill="#263238">les crevettes pêchées,</text><text x="845" y="260" text-anchor="middle" font-size="16" fill="#263238">les minerais extraits,</text><text x="845" y="290" text-anchor="middle" font-size="16" fill="#263238">l'artisanat de raphia.</text>
+  <text x="500" y="420" text-anchor="middle" font-size="20" fill="#263238" font-weight="bold">Nous utilisons les ressources naturelles chaque jour, sans toujours y penser.</text>
+  <text x="500" y="470" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">Manger un plat de riz, se soigner, vivre dans une maison, vendre au marché :</text>
+  <text x="500" y="498" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">tout vient de la nature.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Se nourrir, se soigner, construire, vendre : quatre utilisations de nos ressources.</text>
+</svg>

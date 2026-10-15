@@ -902,6 +902,76 @@
       "id": "geo6_regions_sud",
       "url": "/geo6_regions_sud.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo6_eau_foret",
+      "url": "/geo6_eau_foret.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_halieutique",
+      "url": "/geo6_halieutique.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_faune_flore",
+      "url": "/geo6_faune_flore.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_minerais",
+      "url": "/geo6_minerais.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_energies",
+      "url": "/geo6_energies.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_ressources_region",
+      "url": "/geo6_ressources_region.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_utilisation",
+      "url": "/geo6_utilisation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_gestion",
+      "url": "/geo6_gestion.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_equilibre",
+      "url": "/geo6_equilibre.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_problemes_ressources",
+      "url": "/geo6_problemes_ressources.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_climat_ressources",
+      "url": "/geo6_climat_ressources.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_solutions1",
+      "url": "/geo6_solutions1.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_solutions2",
+      "url": "/geo6_solutions2.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_mini_projet",
+      "url": "/geo6_mini_projet.png",
+      "type": "image/png"
     }
   ]
 }

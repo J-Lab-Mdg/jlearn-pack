@@ -6,6 +6,9 @@ const B = require("./builders");
 const { generateSeanceDocContent } = require("./seance-generator");
 const U1 = require("./data-unite1");
 const U1REV = require("./data-unite1-rev");
+const U2A = require("./data-unite2");
+const U2B = require("./data-unite2b");
+const U2REV = require("./data-unite2-rev");
 
 // Annexes optionnelles tant qu'elles ne sont pas créées (fin de projet)
 const annexesPath = path.join(__dirname, "annexes.js");
@@ -25,11 +28,20 @@ const UNITES = [
     rev: U1REV.revision,
     exam: U1REV.examen,
   },
+  {
+    id: "unite2",
+    nom: "UNITÉ 2 — L'UTILISATION DES RESSOURCES NATURELLES",
+    seances: "Séances 11 à 26",
+    lecons: 14,
+    intro: "Thématique officielle du programme d'études T6 : l'utilisation des ressources naturelles — les ressources renouvelables (eau, forêts, ressources halieutiques, faune et flore), les ressources non renouvelables (minerais, énergies fossiles), les ressources de sa région, les quatre grandes utilisations, la gestion et le déséquilibre entre population et ressources, les ressources mal exploitées et les espèces disparues, le changement climatique, les solutions, et le mini-projet. Durée officielle : 7 heures, soit 14 séances de 30 minutes.",
+    topics: [...U2A.topics, ...U2B.topics],
+    rev: U2REV.revision,
+    exam: U2REV.examen,
+  },
 ];
 
 // Unités encore à produire (affichées comme « à paraître » dans le sommaire et le tableau de bord)
 const FUTURES = [
-  { nom: "UNITÉ 2 — L'UTILISATION DES RESSOURCES NATURELLES", seances: "Séances 11 à 26", lecons: 14 },
   { nom: "UNITÉ 3 — LA POPULATION MALGACHE", seances: "Séances 27 à 38", lecons: 10 },
   { nom: "UNITÉ 4 — L'EXODE RURAL À MADAGASCAR", seances: "Séances 39 à 50", lecons: 10 },
   { nom: "UNITÉ 5 — LES GRANDES ZONES ÉCONOMIQUES ET LES ACTIVITÉS ÉCONOMIQUES", seances: "Séances 51 à 66", lecons: 14 },

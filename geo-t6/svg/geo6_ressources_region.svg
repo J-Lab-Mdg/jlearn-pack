@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les ressources naturelles de ma région</text>
+  <text x="500" y="95" text-anchor="middle" font-size="19" fill="#546E7A" font-style="italic">Exemple : la région Vakinankaratra, autour d'Antsirabe.</text>
+  <rect x="60" y="120" width="420" height="180" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="270" y="160" text-anchor="middle" font-size="18" fill="#1B5E20" font-weight="bold">SOUS LA TERRE ET DANS LE SOL</text>
+  <text x="270" y="205" text-anchor="middle" font-size="17" fill="#263238">Les terres riches pour le riz et les légumes,</text>
+  <text x="270" y="232" text-anchor="middle" font-size="17" fill="#263238">les collines d'eucalyptus et de pins,</text>
+  <text x="270" y="259" text-anchor="middle" font-size="17" fill="#263238">le sable et l'argile des carrières.</text>
+  <rect x="520" y="120" width="420" height="180" rx="18" fill="#E1F5FE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="730" y="160" text-anchor="middle" font-size="18" fill="#01579B" font-weight="bold">DANS L'EAU ET LE CIEL</text>
+  <text x="730" y="205" text-anchor="middle" font-size="17" fill="#263238">Les rivières qui descendent des Hautes Terres,</text>
+  <text x="730" y="232" text-anchor="middle" font-size="17" fill="#263238">la pluie des hautes terres,</text>
+  <text x="730" y="259" text-anchor="middle" font-size="17" fill="#263238">le vent et le soleil généreux.</text>
+  <rect x="60" y="340" width="880" height="120" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="500" y="385" text-anchor="middle" font-size="21" fill="#E65100" font-weight="bold">Et chez toi ? Complète :</text>
+  <text x="500" y="425" text-anchor="middle" font-size="20" fill="#263238">« Dans ma région, les habitants utilisent ……… , ……… et ……… chaque jour. »</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Chaque région possède ses richesses : le sol, l'eau, la forêt, les minerais, le soleil.</text>
+</svg>

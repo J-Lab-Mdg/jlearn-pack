@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Gérer les ressources naturelles sans les détruire</text>
+  <text x="500" y="100" text-anchor="middle" font-size="20" fill="#546E7A" font-style="italic">Gérer, c'est décider ensemble comment utiliser sans épuiser.</text>
+  <rect x="50" y="130" width="290" height="300" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="195" y="170" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">PROTÉGER</text>
+  <text x="195" y="225" text-anchor="middle" font-size="18" fill="#263238">Créer des parcs</text>
+  <text x="195" y="253" text-anchor="middle" font-size="18" fill="#263238">et des réserves,</text>
+  <text x="195" y="281" text-anchor="middle" font-size="18" fill="#263238">garder les forêts</text>
+  <text x="195" y="309" text-anchor="middle" font-size="18" fill="#263238">qui restent.</text>
+  
+  <g transform="translate(195,390) scale(1.1)">
+    <rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/>
+    <circle cx="0" cy="0" r="18" fill="#2E7D32"/><circle cx="-13" cy="8" r="13" fill="#2E7D32"/><circle cx="13" cy="8" r="13" fill="#2E7D32"/>
+  </g>
+  <rect x="355" y="130" width="290" height="300" rx="18" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/>
+  <text x="500" y="170" text-anchor="middle" font-size="20" fill="#E65100" font-weight="bold">RÉGLEMENTER</text>
+  <text x="500" y="225" text-anchor="middle" font-size="18" fill="#263238">Respecter les règles</text>
+  <text x="500" y="253" text-anchor="middle" font-size="18" fill="#263238">et les dina des</text>
+  <text x="500" y="281" text-anchor="middle" font-size="18" fill="#263238">villages : ne pas</text>
+  <text x="500" y="309" text-anchor="middle" font-size="18" fill="#263238">pêcher n'importe quand.</text>
+  <text x="500" y="400" text-anchor="middle" font-size="40" fill="#263238">📜</text>
+  <rect x="660" y="130" width="290" height="300" rx="18" fill="#E1F5FE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="805" y="170" text-anchor="middle" font-size="20" fill="#01579B" font-weight="bold">REMPLACER</text>
+  <text x="805" y="225" text-anchor="middle" font-size="18" fill="#263238">Replanter les arbres</text>
+  <text x="805" y="253" text-anchor="middle" font-size="18" fill="#263238">coupés, laisser le</text>
+  <text x="805" y="281" text-anchor="middle" font-size="18" fill="#263238">sol se reposer,</text>
+  <text x="805" y="309" text-anchor="middle" font-size="18" fill="#263238">laisser grandir les</text>
+  <text x="805" y="337" text-anchor="middle" font-size="18" fill="#263238">petits poissons.</text>
+  <text x="500" y="500" text-anchor="middle" font-size="21" fill="#263238" font-weight="bold">Protéger, réglementer, remplacer : trois clés d'une bonne gestion.</text>
+  <text x="500" y="545" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Une bonne gestion laisse aux enfants de demain les mêmes richesses qu'aujourd'hui.</text>
+</svg>

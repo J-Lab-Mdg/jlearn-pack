@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Georgia, 'Times New Roman', serif">
+  <text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Les ressources et le changement climatique</text>
+  <text x="500" y="95" text-anchor="middle" font-size="20" fill="#546E7A" font-style="italic">Brûler forêts, pétrole et charbon réchauffe l'atmosphère de la Terre.</text>
+  <text x="250" y="200" text-anchor="middle" font-size="20" fill="#1B5E20" font-weight="bold">LA TERRE</text>
+  <circle cx="760" cy="190" r="34" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/><line x1="800" y1="190" x2="810" y2="190" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="788.2842712474619" y1="218.2842712474619" x2="795.3553390593274" y2="225.35533905932738" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="760" y1="230" x2="760" y2="240" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="731.7157287525381" y1="218.2842712474619" x2="724.6446609406727" y2="225.35533905932738" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="720" y1="190" x2="710" y2="190" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="731.7157287525381" y1="161.7157287525381" x2="724.6446609406726" y2="154.64466094067262" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="760" y1="150" x2="760" y2="140" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="788.2842712474619" y1="161.7157287525381" x2="795.3553390593273" y2="154.64466094067262" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="250" cy="330" r="90" fill="#A5D6A7" stroke="#2E7D32" stroke-width="4"/>
+  <text x="250" y="338" text-anchor="middle" font-size="60" fill="#263238">🌍</text>
+  
+    <g transform="translate(150,250) scale(1)">
+      <ellipse cx="0" cy="0" rx="30" ry="16" fill="#B0BEC5"/>
+      <ellipse cx="-22" cy="6" rx="18" ry="12" fill="#B0BEC5"/>
+      <ellipse cx="22" cy="6" rx="18" ry="12" fill="#B0BEC5"/>
+    </g>
+    <g transform="translate(380,240) scale(0.8)">
+      <ellipse cx="0" cy="0" rx="30" ry="16" fill="#B0BEC5"/>
+      <ellipse cx="-22" cy="6" rx="18" ry="12" fill="#B0BEC5"/>
+      <ellipse cx="22" cy="6" rx="18" ry="12" fill="#B0BEC5"/>
+    </g>
+  <text x="500" y="300" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">Les gaz rejetés forment un épais manteau</text>
+  <text x="500" y="328" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">qui garde la chaleur autour de la Terre :</text>
+  <text x="500" y="356" text-anchor="middle" font-size="19" fill="#C00000" font-weight="bold">la planète se réchauffe.</text>
+  <rect x="50" y="440" width="900" height="130" rx="18" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="500" y="480" text-anchor="middle" font-size="20" fill="#C00000" font-weight="bold">Les manifestations à Madagascar :</text>
+  <text x="500" y="515" text-anchor="middle" font-size="18" fill="#263238">des saisons déréglées, des cyclones plus violents, des sécheresses longues dans le Grand Sud,</text>
+  <text x="500" y="543" text-anchor="middle" font-size="18" fill="#263238">des pluies qui arrivent mal, une mer qui monte sur les côtes.</text>
+  <text x="500" y="600" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Le changement climatique frappe déjà Madagascar : chacun doit protéger ses ressources.</text>
+</svg>
