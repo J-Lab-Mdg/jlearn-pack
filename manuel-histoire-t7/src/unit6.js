@@ -33,6 +33,7 @@ figs.u6f2 = (() => { const { s, y } = head('Ethnie, tribu ou groupe de populatio
   b += txt(500, top + 4 * 56 + 120, 'on parle donc de « groupes de population » : Merina, Vezo, Bara…', 21, PINK2, 'bold', 'middle');
   return svg(1000, top + 4 * 56 + 152, s + b); })();
 
+
 const S = [
   {
     t: 'Du clan au Royaume de Madagascar', comp: 'L’évolution de l’organisation politique à Madagascar', theme: 'Les spécificités et l’évolution de chaque organisation sociale',
@@ -41,13 +42,52 @@ const S = [
     revQ: 'Cite les quatre caractères communs qui fondent l’identité malgache.',
     revRA: 'La langue, le respect des razana, le fihavanana, le riz et le zébu.',
     situation: 'Au début, quelques familles autour d’un ancien respecté ; des siècles plus tard, un roi reçoit les ambassadeurs d’Europe au nom de tout Madagascar. Entre les deux : quinze siècles de regroupements, d’alliances et de conquêtes. Comment passe-t-on du clan familial à l’État royal ? C’est l’histoire politique de l’île en quatre marches.',
-    def: 'L’organisation politique de Madagascar a évolué en quatre étapes : le clan (du Vᵉ au XVIᵉ siècle), dirigé par un chef de clan ; les confédérations claniques, unions de clans sous un roitelet ; les royaumes malgaches (1500 à 1810), États régionaux rivaux ; et le Royaume de Madagascar à partir du règne de Radama Iᵉʳ (1810-1896), qui unifie la plus grande partie de l’île en un seul État.',
-    autrement: 'familles → clans → unions de clans → royaumes régionaux → un royaume pour presque toute l’île : à chaque marche, le pouvoir s’étend et s’organise davantage.',
-    concept: 'Le clan d’abord (Vᵉ-XVIᵉ siècle) : un groupe de familles descendant d’un ancêtre commun, installé sur un territoire ; le chef de clan — souvent l’aîné le plus sage — rend la justice, répartit les terres, préside les rites ; l’économie est villageoise : riz, zébus, entraide. Puis les clans voisins s’allient — contre un danger, pour un mariage, autour d’un marché : ce sont les confédérations claniques, dirigées par un roitelet, chef reconnu par plusieurs clans ; le pouvoir se concentre, des capitales naissent sur les collines fortifiées. Troisième marche (1500-1810) : les royaumes malgaches — le royaume sakalava du Menabe puis du Boina à l’Ouest, le royaume betsimisaraka unifié par Ratsimilaho à l’Est, les royaumes betsileo du centre-sud, le royaume merina des hautes terres, réunifié par Andrianampoinimerina (vers 1787-1810) depuis Ambohimanga... Chaque royaume a ses institutions : souverain sacré, conseillers, tributs, armée, grands marchés ; selon les régions, des personnages marquants réalisent de grandes œuvres — digues et rizières d’Andrianampoinimerina, fédération côtière de Ratsimilaho, puissance maritime sakalava. Dernière marche : en 1810, Radama Iᵉʳ succède à son père Andrianampoinimerina ; armé, allié aux Britanniques, il étend son autorité sur la majeure partie de l’île : les traités internationaux le reconnaissent roi de Madagascar — le Royaume de Madagascar (1810-1896) est un État au sens plein : lois écrites, ministères, armée de métier, diplomatie, écoles. Attention à la différence : LES royaumes malgaches (pluriel, régionaux, rivaux) et LE Royaume de Madagascar (singulier, englobant, reconnu). Cette marche vers l’unité, brisée en 1896 par la colonisation, a préparé la nation d’aujourd’hui.',
+    legende: 'Du clan familial autour d’un ancien à l’État royal recevant les ambassadeurs : quinze siècles en quatre marches.',
+    motsCles: ['clan', 'chef de clan', 'confédérations claniques', 'roitelet', 'royaumes malgaches', 'Ratsimilaho', 'Andrianampoinimerina', 'Radama Iᵉʳ', 'Royaume de Madagascar', 'État'],
+    sections: [
+      {
+        titre: 'Les deux premières marches : clan et confédérations',
+        paras: [
+          'Le clan d’abord (Vᵉ-XVIᵉ siècle) : un groupe de familles descendant d’un ancêtre commun, installé sur un territoire ; le chef de clan — souvent l’aîné le plus sage — rend la justice, répartit les terres, préside les rites ; l’économie est villageoise : riz, zébus, entraide.',
+          'Puis les clans voisins s’allient — contre un danger, pour un mariage, autour d’un marché : ce sont les confédérations claniques, dirigées par un roitelet, chef reconnu par plusieurs clans ; le pouvoir se concentre, des capitales naissent sur les collines fortifiées.',
+        ],
+      },
+      {
+        titre: 'Troisième marche : les royaumes malgaches (1500-1810)',
+        paras: ['Des États régionaux rivaux se constituent :'],
+        puces: [
+          'le royaume sakalava du Menabe puis du Boina à l’Ouest, puissance maritime ;',
+          'le royaume betsimisaraka, unifié par Ratsimilaho à l’Est vers 1712 ;',
+          'les royaumes betsileo du centre-sud ;',
+          'le royaume merina des hautes terres, réunifié par Andrianampoinimerina (vers 1787-1810) depuis Ambohimanga — digues, rizières et grands kabary.',
+        ],
+      },
+      {
+        titre: 'Quatrième marche : le Royaume de Madagascar (1810-1896)',
+        paras: [
+          'Chaque royaume avait ses institutions : souverain sacré, conseillers, tributs, armée, grands marchés. En 1810, Radama Iᵉʳ succède à son père Andrianampoinimerina ; armé, allié aux Britanniques, il étend son autorité sur la majeure partie de l’île : les traités internationaux le reconnaissent roi de Madagascar. Le Royaume de Madagascar (1810-1896) est un État au sens plein : lois écrites, ministères, armée de métier, diplomatie, écoles.',
+          'Attention à la différence : LES royaumes malgaches (pluriel, régionaux, rivaux) et LE Royaume de Madagascar (singulier, englobant, reconnu). Cette marche vers l’unité, brisée en 1896 par la colonisation, a préparé la nation d’aujourd’hui.',
+        ],
+      },
+    ],
+    doc: {
+      titre: '« La mer est la limite de ma rizière »',
+      source: 'd’après le kabary d’Andrianampoinimerina rapporté dans le Tantara ny Andriana du R.P. Callet (1878) — extrait adapté',
+      texte: 'Andrianampoinimerina réunit le peuple et dit : « Voici ce que je vous déclare : l’Imerina est rassemblée sous mon autorité, mais ce n’est pas là le terme de mon dessein. Car ma rizière ne s’arrête pas aux collines que vous voyez : ny ranomasina no valam-parihiko — c’est la mer qui est la limite de ma rizière. Travaillez donc la terre, creusez les canaux, remplissez les greniers : un royaume fort est un royaume qui mange à sa faim. »',
+      questions: ['Que signifie la formule « ny ranomasina no valam-parihiko » ?',
+        'Quel lien le roi établit-il entre l’agriculture et la puissance du royaume ?',
+        'Qui réalisera en partie ce projet d’unification, et quelle étape politique cela ouvre-t-il ?'],
+      reponses: ['« La mer est la limite de ma rizière » : le roi annonce son projet d’étendre son autorité jusqu’aux côtes — unifier toute l’île.',
+        'Un royaume fort est un royaume qui mange à sa faim : digues, canaux et greniers pleins sont la base de la puissance politique.',
+        'Son fils Radama Iᵉʳ, à partir de 1810 : c’est la quatrième marche, le Royaume de Madagascar, État unifié et reconnu par les traités.']
+    },
+    lexique: [
+      ['Clan', 'groupe de familles descendant d’un ancêtre commun'],
+      ['Roitelet', 'chef reconnu par plusieurs clans confédérés'],
+      ['Kabary', 'grand discours public du souverain au peuple'],
+      ['État', 'pouvoir organisé : lois, institutions, armée, diplomatie'],
+    ],
     synthese: 'clan (Vᵉ-XVIᵉ, chef de clan) → confédérations claniques (roitelet) → royaumes malgaches (1500-1810 : sakalava, betsimisaraka, betsileo, merina…) → Royaume de Madagascar (1810-1896, Radama Iᵉʳ) : concentration progressive du pouvoir jusqu’à l’État unifié.',
-    method: ['Ranger les quatre étapes sur la frise avec leurs dates.', 'Pour chaque étape : qui dirige, sur quel territoire, avec quelles institutions ?', 'Distinguer les royaumes malgaches (pluriel) du Royaume de Madagascar (singulier).'],
-    exemple: 'Ratsimilaho unifie les clans de la côte Est vers 1712 : on passe de clans dispersés à un royaume betsimisaraka — l’exemple parfait de la troisième marche. Un siècle plus tard, Radama Iᵉʳ franchit la quatrième.',
-    erreur: 'Croire que le Royaume de Madagascar a existé « de tout temps » : il naît en 1810 d’une longue évolution — avant lui, l’île connaissait des royaumes rivaux, et avant eux des clans. L’unité politique est une construction historique, pas un état naturel.',
     saistu: 'Andrianampoinimerina gouvernait depuis Ambohimanga par de célèbres kabary : il réunissait le peuple et déclarait « Ny ranomasina no valam-parihiko » — « la mer est la limite de ma rizière » ! Son fils Radama Iᵉʳ réalisa en partie ce rêve : à sa mort en 1828, son autorité couvrait la majeure partie de l’île, et les puissances étrangères signaient des traités avec « le roi de Madagascar ».',
     exos: ['Range dans l’ordre chronologique : a) le Royaume de Madagascar ; b) le clan ; d) les royaumes malgaches ; e) les confédérations claniques.',
       'Les étapes. a) Qui dirige un clan, et sur quoi repose son autorité ? b) Qu’est-ce qu’une confédération clanique ? d) Cite trois royaumes malgaches régionaux. e) Donne les dates du Royaume de Madagascar.',
@@ -64,13 +104,51 @@ const S = [
     revQ: 'Cite les quatre étapes de l’évolution politique de Madagascar avec une date chacune.',
     revRA: 'Clan (Vᵉ-XVIᵉ), confédérations claniques, royaumes malgaches (1500-1810), Royaume de Madagascar (1810-1896).',
     situation: 'On entend parfois : « les dix-huit tribus de Madagascar » ou « l’ethnie merina, l’ethnie vezo »... Mais que valent ces mots au regard de la science ? Le dictionnaire en main, l’historien vérifie chaque concept — et sa conclusion va te surprendre : à Madagascar, il n’y a ni ethnie ni tribu.',
-    def: 'Une ethnie est un peuple qui possède sa propre langue et sa propre culture, distinctes de celles de ses voisins. Une tribu est un groupe uni par la descendance d’un ancêtre commun, réel ou supposé. Un groupe de population est simplement l’ensemble des habitants d’une même région, partageant des coutumes locales. Tout compte fait, à Madagascar, il n’y a ni ethnie ni tribu : les Malgaches parlent une seule langue et partagent une même culture — on parle donc de groupes de population.',
-    autrement: 'ethnie = langue et culture à part ; tribu = un ancêtre commun ; groupe de population = les gens d’une région. Les Malgaches partageant langue et culture, seuls les « groupes de population » existent chez nous.',
-    concept: 'Appliquons les définitions comme un test scientifique. Test de l’ethnie : les Merina, les Vezo ou les Bara ont-ils des langues différentes ? Non — tous parlent le malgache, avec des variétés régionales qui se comprennent entre elles, comme les accents d’une même langue ; leur culture profonde — razana, fihavanana, riz, zébu — est commune. Le test échoue : pas d’ethnies. Test de la tribu : chaque groupe descend-il d’un ancêtre unique ? Non — l’unité IV l’a montré : toutes les régions sont nées du même brassage de vagues austronésiennes, africaines, arabes et européennes ; les généalogies se croisent d’un bout à l’autre de l’île. Le test échoue : pas de tribus. Reste le concept juste : le groupe de population — les habitants d’une région, unis par des coutumes locales, un habitat, des activités : les Vezo par la mer, les Betsileo par les terrasses, les Antandroy par les troupeaux. D’où viennent alors les mots « tribu » et « ethnie » ? Largement de l’époque coloniale : classer les Malgaches en « tribus » séparées servait à diviser pour régner — la fameuse politique des races de l’administration coloniale. Les abandonner n’est donc pas une coquetterie de vocabulaire : c’est un acte scientifique (les définitions ne s’appliquent pas) ET un acte civique (refuser les divisions héritées). Les mots font l’histoire : dire « groupe de population », c’est dire l’unité du peuple malgache.',
+    legende: 'Le dictionnaire en main, l’historien teste chaque mot : « ethnie » ? « tribu » ? La science répond : ni l’un ni l’autre.',
+    motsCles: ['ethnie', 'tribu', 'groupe de population', 'test de la langue', 'test de l’ancêtre', 'brassage', 'politique des races', 'époque coloniale', 'unité du peuple malgache'],
+    sections: [
+      {
+        titre: 'Trois concepts, trois définitions',
+        paras: ['Avant de juger, définissons :'],
+        puces: [
+          'une ethnie est un peuple qui possède sa propre langue et sa propre culture, distinctes de celles de ses voisins ;',
+          'une tribu est un groupe uni par la descendance d’un ancêtre commun, réel ou supposé ;',
+          'un groupe de population est simplement l’ensemble des habitants d’une même région, partageant des coutumes locales.',
+        ],
+      },
+      {
+        titre: 'Le double test appliqué à Madagascar',
+        paras: [
+          'Test de l’ethnie : les Merina, les Vezo ou les Bara ont-ils des langues différentes ? Non — tous parlent le malgache, avec des variétés régionales qui se comprennent entre elles, comme les accents d’une même langue ; leur culture profonde — razana, fihavanana, riz, zébu — est commune. Le test échoue : pas d’ethnies.',
+          'Test de la tribu : chaque groupe descend-il d’un ancêtre unique ? Non — l’unité IV l’a montré : toutes les régions sont nées du même brassage de vagues austronésiennes, africaines, arabes et européennes ; les généalogies se croisent d’un bout à l’autre de l’île. Le test échoue : pas de tribus.',
+          'Reste le concept juste : le groupe de population — les habitants d’une région, unis par des coutumes locales, un habitat, des activités : les Vezo par la mer, les Betsileo par les terrasses, les Antandroy par les troupeaux.',
+        ],
+      },
+      {
+        titre: 'Les mots font l’histoire',
+        paras: [
+          'D’où viennent alors les mots « tribu » et « ethnie » ? Largement de l’époque coloniale : classer les Malgaches en « tribus » séparées servait à diviser pour régner — la fameuse politique des races de l’administration coloniale. Les abandonner n’est donc pas une coquetterie de vocabulaire : c’est un acte scientifique (les définitions ne s’appliquent pas) ET un acte civique (refuser les divisions héritées). Dire « groupe de population », c’est dire l’unité du peuple malgache.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'La « politique des races » du colonisateur',
+      source: 'd’après les instructions du général Gallieni, gouverneur de Madagascar (1898) — extrait adapté',
+      texte: 'L’action administrative doit s’appuyer sur ce que nous nommerons la politique des races : il convient de reconnaître les différentes populations de l’île, de les administrer séparément, chacune selon ses chefs et ses coutumes propres, et de ne point laisser l’une dominer les autres. Le gouvernement de la colonie traitera ainsi avec chaque groupe pris à part, au lieu de s’adresser à un peuple unique.',
+      questions: ['Que recommande la « politique des races » décrite dans ce texte ?',
+        'Quel intérêt le pouvoir colonial trouve-t-il à « administrer séparément » les populations ?',
+        'En quoi la leçon d’aujourd’hui répond-elle à ce document ?'],
+      reponses: ['Reconnaître des populations distinctes et les administrer séparément, chacune avec ses chefs et coutumes, sans s’adresser à un peuple unique.',
+        'Diviser pour régner : des groupes traités à part s’unissent plus difficilement contre le colonisateur qu’un peuple reconnu comme un.',
+        'La science montre qu’il n’y a ni ethnies ni tribus à Madagascar — une seule langue, un même brassage : abandonner ce vocabulaire colonial, c’est rétablir la vérité et l’unité du peuple malgache.']
+    },
+    lexique: [
+      ['Ethnie', 'peuple ayant sa propre langue et sa propre culture'],
+      ['Tribu', 'groupe uni par la descendance d’un ancêtre commun'],
+      ['Groupe de population', 'habitants d’une même région aux coutumes locales'],
+      ['Politique des races', 'méthode coloniale consistant à diviser pour régner'],
+    ],
     synthese: 'ethnie : langue et culture propres — non applicable (une seule langue malgache) ; tribu : ancêtre commun unique — non applicable (brassage général) ; groupe de population : habitants d’une région — le concept juste pour Madagascar ; ni ethnie ni tribu : un seul peuple, divers et uni.',
-    method: ['Réciter les trois définitions avec leur critère propre.', 'Appliquer chaque critère au cas malgache (test de la langue, test de l’ancêtre).', 'Conclure avec le vocabulaire juste et expliquer pourquoi il importe.'],
-    exemple: 'Un journaliste écrit « l’ethnie vezo » ; l’élève historien corrige : les Vezo parlent malgache et partagent la culture commune — ce sont un groupe de population défini par la vie en mer, non une ethnie.',
-    erreur: 'Répéter « les dix-huit tribus de Madagascar » : ce classement, popularisé à l’époque coloniale, ne résiste ni au test de la langue ni à celui de l’ancêtre commun. La science dit : des groupes de population d’un seul peuple.',
     saistu: 'Le malgache est parlé par tous les habitants d’une île plus grande que la France — alors que la Papouasie-Nouvelle-Guinée, à peine plus petite, compte plus de 800 langues ! Cette unité linguistique exceptionnelle est l’un des arguments les plus forts des savants : Madagascar est bien le pays d’un seul peuple aux multiples visages.',
     exos: ['Vrai ou faux ? Corrige. a) Une ethnie se définit par sa langue et sa culture propres. b) Les Malgaches parlent des langues différentes selon les régions. d) Une tribu se définit par un ancêtre commun. e) À Madagascar, on compte dix-huit ethnies.',
       'Les concepts. a) Définis l’ethnie. b) Définis la tribu. d) Définis le groupe de population. e) Quelle est la conclusion du programme pour Madagascar ?',
