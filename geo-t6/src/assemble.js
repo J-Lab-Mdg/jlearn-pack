@@ -18,6 +18,9 @@ const U4REV = require("./data-unite4-rev");
 const U5A = require("./data-unite5");
 const U5B = require("./data-unite5b");
 const U5REV = require("./data-unite5-rev");
+const U6A = require("./data-unite6");
+const U6B = require("./data-unite6b");
+const U6REV = require("./data-unite6-rev");
 
 // Annexes optionnelles tant qu'elles ne sont pas créées (fin de projet)
 const annexesPath = path.join(__dirname, "annexes.js");
@@ -77,12 +80,20 @@ const UNITES = [
     rev: U5REV.revision,
     exam: U5REV.examen,
   },
+  {
+    id: "unite6",
+    nom: "UNITÉ 6 — LE VILLAGE ÉCOLOGIQUE",
+    seances: "Séances 67 à 78",
+    lecons: 10,
+    intro: "Thématique officielle du programme d'études T6 : le village écologique — l'organisation d'un village écologique (l'organisation juridique : l'autorité locale et les notables, les droits coutumiers ; l'organisation socioéconomique : les modes de vie, les loisirs, les activités économiques), les structures d'un village écologique (l'habitation, l'architecture, les infrastructures économiques, les sites naturels), les normes à respecter pour la construction d'un village écologique (le respect de l'environnement, la disposition par rapport à la topographie, le respect des croyances et des traditions ancestrales, l'implantation des différentes infrastructures : blocs sanitaires, écoles, espaces culturels), la comparaison d'un village et d'un village écologique, et la conception d'une maquette. Durée officielle : 5 heures, soit 10 séances de 30 minutes.",
+    topics: [...U6A.topics, ...U6B.topics],
+    rev: U6REV.revision,
+    exam: U6REV.examen,
+  },
 ];
 
-// Unités encore à produire (affichées comme « à paraître » dans le sommaire et le tableau de bord)
-const FUTURES = [
-  { nom: "UNITÉ 6 — LE VILLAGE ÉCOLOGIQUE", seances: "Séances 67 à 78", lecons: 10 },
-];
+// Toutes les unités du programme sont désormais produites
+const FUTURES = [];
 
 const thin = { style: BorderStyle.SINGLE, size: 4, color: "BBBBBB" };
 const borders = { top: thin, bottom: thin, left: thin, right: thin, insideHorizontal: thin, insideVertical: thin };
@@ -112,7 +123,7 @@ function avantPropos() {
   return [
     B.headingWithBookmark("Avant-propos", "avantpropos", { size: 30, after: 200 }),
     B.p("Ce manuel de Géographie, destiné aux élèves de la classe de T6, a été conçu pour accompagner l'enseignant et l'élève tout au long de l'année scolaire, conformément au programme d'études officiel en vigueur à Madagascar.", { size: 21, after: 140 }),
-    B.p("Il propose, pour chacune des 66 séances de 30 minutes qui composent le programme de Géographie de T6, une fiche de préparation détaillée, une leçon rédigée, ainsi que des exercices avec leurs corrigés détaillés notés selon un barème.", { size: 21, after: 140 }),
+    B.p("Il propose, pour chacun des 78 numéros qui composent le programme de Géographie de T6 (66 séances de leçon, 6 séances de révision et 6 sujets d'examen), une fiche de préparation détaillée, une leçon rédigée, ainsi que des exercices avec leurs corrigés détaillés notés selon un barème.", { size: 21, after: 140 }),
     B.p("Les séances sont regroupées en six unités thématiques : les régions administratives de Madagascar, l'utilisation des ressources naturelles, la population malgache, l'exode rural à Madagascar, les grandes zones économiques et les activités économiques, et le village écologique. Chaque unité se termine par une séance de révision puis par un sujet d'examen avec son corrigé, pour préparer les élèves aux évaluations. Un glossaire, des cartes muettes, une auto-évaluation, une table des illustrations et les sources complètent l'ouvrage.", { size: 21, after: 140 }),
     B.p("Cette édition a été élaborée avec le plus grand soin. Malgré toute l'attention portée à sa rédaction et à sa relecture, il est possible que quelques erreurs (orthographe, grammaire, ou autres coquilles) s'y soient glissées : nous vous remercions par avance de votre indulgence.", { size: 21, after: 140 }),
     B.p("L'équipe J-Lab accueille avec attention tous les retours des enseignants et des élèves qui utilisent ce manuel : signalement d'erreurs, suggestions d'amélioration, comme appréciations sur les points forts de l'ouvrage. Vos remarques contribuent directement à l'amélioration des prochaines éditions.", { size: 21, after: 140 }),
@@ -186,7 +197,7 @@ function boardRow(cols, widths, header = false) {
 function tableauDeBord() {
   const out = [];
   out.push(B.headingWithBookmark("Tableau de bord général", "tableaudebord", { size: 30, after: 200 }));
-  out.push(B.p("Le programme officiel de Géographie T6 prévoit 33 heures de contenu (séances de 30 minutes), réparties en six thématiques. Le manuel comptera 78 numéros : 66 séances de leçon, 6 séances de révision et 6 sujets d'examen, complétés par les annexes en fin d'ouvrage.", { size: 21, after: 160 }));
+  out.push(B.p("Le programme officiel de Géographie T6 prévoit 33 heures de contenu (séances de 30 minutes), réparties en six thématiques. Le manuel compte 78 numéros : 66 séances de leçon, 6 séances de révision et 6 sujets d'examen, complétés par les annexes en fin d'ouvrage.", { size: 21, after: 160 }));
   const rows = [
     boardRow(["Unité", "Séances", "Leçons", "Révision + Examen"], [46, 18, 12, 24], true),
     ...UNITES.map((u) => boardRow([u.nom.replace(/UNITÉ \d+ — /, `Unité ${UNITES.indexOf(u) + 1} — `), u.seances, String(u.lecons), "2 (incluses)"], [46, 18, 12, 24])),

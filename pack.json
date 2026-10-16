@@ -1142,6 +1142,56 @@
       "id": "geo6_nouvelle_technologie",
       "url": "/geo6_nouvelle_technologie.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo6_village_ecologique_notion",
+      "url": "/geo6_village_ecologique_notion.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_organisation_juridique",
+      "url": "/geo6_organisation_juridique.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_dina",
+      "url": "/geo6_dina.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_modes_vie_loisirs",
+      "url": "/geo6_modes_vie_loisirs.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_activites_village_eco",
+      "url": "/geo6_activites_village_eco.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_habitation_architecture",
+      "url": "/geo6_habitation_architecture.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_infrastructures_sites",
+      "url": "/geo6_infrastructures_sites.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_normes_environnement_topographie",
+      "url": "/geo6_normes_environnement_topographie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_normes_traditions",
+      "url": "/geo6_normes_traditions.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_maquette_compare",
+      "url": "/geo6_maquette_compare.png",
+      "type": "image/png"
     }
   ]
 }
