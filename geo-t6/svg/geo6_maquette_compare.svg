@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Georgia, 'Times New Roman', serif"><defs><marker id="af" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#546E7A"/></marker>
+<marker id="afR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#C00000"/></marker>
+<marker id="afV" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1E7B34"/></marker>
+<marker id="afB" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#01579B"/></marker></defs><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Comparer : le village d'avant et le village écologique</text>
+  <rect x="35" y="100" width="440" height="330" rx="18" fill="#FFEBEE" stroke="#90A4AE" stroke-width="3"/>
+  <text x="255" y="130" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold">LE VILLAGE D'AVANT</text>
+  <path d="M 90 330 Q 200 180 340 330 Z" fill="#D7CCC8" stroke="#A1887F" stroke-width="3"/>
+  <text x="215" y="230" text-anchor="middle" font-size="14" fill="#263238" font-weight="bold">colline nue,</text>
+  <text x="215" y="252" text-anchor="middle" font-size="14" fill="#263238" font-weight="bold">ravins rouges</text>
+  <g transform="translate(120,380) scale(1)"><rect x="-14" y="-8" width="28" height="26" rx="3" fill="#78909C" stroke="#455A64" stroke-width="2"/><rect x="-17" y="-12" width="34" height="5" rx="2" fill="#455A64"/><line x1="-6" y1="-2" x2="-6" y2="14" stroke="#455A64" stroke-width="2"/><line x1="6" y1="-2" x2="6" y2="14" stroke="#455A64" stroke-width="2"/></g><text x="280" y="375" text-anchor="middle" font-size="14" fill="#263238">déchets au vent,</text>
+  <g transform="translate(380,330) scale(1.2)"><path d="M 0 0 Q -8 -12 0 -22 Q 8 -32 0 -42" fill="none" stroke="#90A4AE" stroke-width="5" stroke-linecap="round" opacity="0.7"/></g><text x="280" y="405" text-anchor="middle" font-size="14" fill="#263238">foyers qui fument</text>
+  <rect x="525" y="100" width="440" height="330" rx="18" fill="#E8F5E9" stroke="#90A4AE" stroke-width="3"/>
+  <text x="745" y="130" text-anchor="middle" font-size="18" fill="#1B5E20" font-weight="bold">LE VILLAGE ÉCOLOGIQUE</text>
+  <path d="M 580 330 Q 690 180 830 330 Z" fill="#AED581" stroke="#689F38" stroke-width="3"/>
+  <g transform="translate(650,270) scale(0.8)"><rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/><circle cx="0" cy="0" r="18" fill="#2E7D32"/><circle cx="-13" cy="8" r="13" fill="#2E7D32"/><circle cx="13" cy="8" r="13" fill="#2E7D32"/></g><g transform="translate(730,290) scale(0.7)"><rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/><circle cx="0" cy="0" r="18" fill="#2E7D32"/><circle cx="-13" cy="8" r="13" fill="#2E7D32"/><circle cx="13" cy="8" r="13" fill="#2E7D32"/></g><g transform="translate(790,260) scale(0.6)"><rect x="-4" y="8" width="8" height="20" fill="#6D4C41"/><circle cx="0" cy="0" r="18" fill="#2E7D32"/><circle cx="-13" cy="8" r="13" fill="#2E7D32"/><circle cx="13" cy="8" r="13" fill="#2E7D32"/></g>
+  <text x="745" y="230" text-anchor="middle" font-size="14" fill="#263238" font-weight="bold">colline replantée,</text>
+  <text x="745" y="252" text-anchor="middle" font-size="14" fill="#263238" font-weight="bold">la terre tient</text>
+  <g transform="translate(610,395) scale(0.6)"><rect x="-24" y="-16" width="48" height="32" fill="#01579B" stroke="#0277BD" stroke-width="2"/><line x1="0" y1="-16" x2="0" y2="16" stroke="#4FC3F7" stroke-width="2"/><line x1="-24" y1="0" x2="24" y2="0" stroke="#4FC3F7" stroke-width="2"/><line x1="-24" y1="-16" x2="-32" y2="-30" stroke="#546E7A" stroke-width="4"/><line x1="-24" y1="-16" x2="-14" y2="-30" stroke="#546E7A" stroke-width="4"/><line x1="0" y1="16" x2="0" y2="30" stroke="#546E7A" stroke-width="4"/></g><text x="745" y="375" text-anchor="middle" font-size="14" fill="#263238">déchets triés,</text>
+  <text x="745" y="405" text-anchor="middle" font-size="14" fill="#263238">énergie propre</text>
+  <line x1="480" y1="265" x2="520" y2="265" stroke="#546E7A" stroke-width="6" marker-end="url(#af)"/>
+  <text x="500" y="250" text-anchor="middle" font-size="15" fill="#546E7A" font-weight="bold" font-style="italic">le défi</text>
+  <text x="500" y="480" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">Sur la maquette du village, chaque différence se voit d'un coup d'œil :</text>
+  <text x="500" y="510" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">l'eau, la terre, l'air, l'énergie — et la vie avec.</text>
+  <text x="500" y="570" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">Comparer, c'est comprendre : la maquette convainc mieux que mille discours.</text>
+</svg>

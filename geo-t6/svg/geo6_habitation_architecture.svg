@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Georgia, 'Times New Roman', serif"><defs><marker id="af" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#546E7A"/></marker>
+<marker id="afR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#C00000"/></marker>
+<marker id="afV" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1E7B34"/></marker>
+<marker id="afB" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#01579B"/></marker></defs><text x="500" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">La maison bien construite : pensée pour le climat</text>
+  <g transform="translate(150,120) scale(1.2)"><path d="M -20 0 A 12 12 0 0 1 -14 -16 A 16 16 0 0 1 14 -14 A 11 11 0 0 1 20 0 Z" fill="#B3E5FC" stroke="#0288D1" stroke-width="2"/><line x1="-12" y1="8" x2="-15" y2="18" stroke="#4FC3F7" stroke-width="3" stroke-linecap="round"/><line x1="0" y1="8" x2="-3" y2="18" stroke="#4FC3F7" stroke-width="3" stroke-linecap="round"/><line x1="12" y1="8" x2="9" y2="18" stroke="#4FC3F7" stroke-width="3" stroke-linecap="round"/></g>
+  <text x="150" y="185" text-anchor="middle" font-size="14" fill="#0277BD" font-style="italic">la pluie glisse</text>
+  <text x="150" y="207" text-anchor="middle" font-size="14" fill="#0277BD" font-style="italic">loin des murs</text>
+  <g transform="translate(500,330)">
+  <path d="M -190 -40 L 0 -140 L 190 -40 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="3"/>
+  <path d="M -230 -35 L -190 -62 L -160 -40 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  <path d="M 160 -40 L 190 -62 L 230 -35 Z" fill="#C0553B" stroke="#8D6E63" stroke-width="2"/>
+  <rect x="-160" y="-40" width="320" height="130" fill="#FFE0B2" stroke="#8D6E63" stroke-width="3"/>
+  <rect x="-120" y="-10" width="36" height="36" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+  <rect x="84" y="-10" width="36" height="36" fill="#B3E5FC" stroke="#5D4037" stroke-width="2"/>
+  <rect x="-10" y="20" width="40" height="70" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+  <path d="M 190 -40 L 300 -40 L 300 90 L 190 90 Z" fill="#FFF3E0" stroke="#8D6E63" stroke-width="3"/>
+  <g transform="translate(255,-60) scale(1)"><path d="M 0 0 Q -8 -12 0 -22 Q 8 -32 0 -42" fill="none" stroke="#90A4AE" stroke-width="5" stroke-linecap="round" opacity="0.7"/></g>
+  <text x="255" y="120" text-anchor="middle" font-size="13" fill="#546E7A" font-style="italic">cuisine séparée</text>
+  <text x="-100" y="50" text-anchor="middle" font-size="13" fill="#546E7A" font-style="italic">séjour</text>
+</g>
+  <circle cx="870" cy="120" r="24" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/><line x1="900" y1="120" x2="910" y2="120" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="891.2132034355964" y1="141.21320343559643" x2="898.2842712474619" y2="148.2842712474619" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="870" y1="150" x2="870" y2="160" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="848.7867965644036" y1="141.21320343559643" x2="841.7157287525381" y2="148.2842712474619" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="840" y1="120" x2="830" y2="120" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="848.7867965644035" y1="98.78679656440357" x2="841.7157287525381" y2="91.7157287525381" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="870" y1="90" x2="870" y2="80" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/><line x1="891.2132034355964" y1="98.78679656440357" x2="898.2842712474619" y2="91.7157287525381" stroke="#F9A825" stroke-width="4" stroke-linecap="round"/>
+  <text x="870" y="185" text-anchor="middle" font-size="14" fill="#E65100" font-style="italic">la véranda regarde</text>
+  <text x="870" y="207" text-anchor="middle" font-size="14" fill="#E65100" font-style="italic">le soleil levant</text>
+  <line x1="830" y1="170" x2="740" y2="250" stroke="#F9A825" stroke-width="5" marker-end="url(#afV)"/>
+  <text x="150" y="330" text-anchor="middle" font-size="14" fill="#1B5E20" font-style="italic">l'air traverse</text>
+  <text x="150" y="352" text-anchor="middle" font-size="14" fill="#1B5E20" font-style="italic">par les fenêtres</text>
+  <text x="150" y="374" text-anchor="middle" font-size="14" fill="#1B5E20" font-style="italic">en face à face</text>
+  <line x1="205" y1="345" x2="330" y2="345" stroke="#1E7B34" stroke-width="5" marker-end="url(#afV)"/>
+  <line x1="700" y1="345" x2="600" y2="345" stroke="#1E7B34" stroke-width="5" marker-end="url(#afV)"/>
+  <text x="500" y="480" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">Murs de brique cuite du pays, toit débordant, fenêtres croisées,</text>
+  <text x="500" y="510" text-anchor="middle" font-size="19" fill="#263238" font-weight="bold">véranda au bon soleil, cuisine séparée avec cheminée.</text>
+  <text x="500" y="560" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic">La maison travaille avec le climat, jamais contre lui.</text>
+</svg>
