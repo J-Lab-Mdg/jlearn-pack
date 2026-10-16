@@ -127,6 +127,8 @@ function lessonS1() {
     discBadge("COMPRÉHENSION ORALE", COLOR),
     p("", { after: 40 }),
     p([run("ÉCOUTER UN DOCUMENTAIRE SUR LE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_taxibrousse.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     passagePourquoiVoyager(),
     p("", { after: 80 }),
     sub("Pour comprendre un document entendu :"),
@@ -139,6 +141,8 @@ function lessonS1() {
     mot("une étape", "un arrêt du voyage"),
     mot("la biodiversité", "toutes les formes de vie d'une région"),
     mot("un voyage gastronomique", "un voyage pour découvrir la cuisine des régions"),
+    p("", { after: 80 }),
+    img("b1_paysage.png", 250, 768 / 1376),
   ];
 }
 
@@ -195,6 +199,8 @@ function lessonS2() {
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
     p("", { after: 40 }),
     p([run("LES TYPES DE VOYAGE À MADAGASCAR", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_carte.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     sub("Les quatre types de voyage :"),
     mot("le voyage touristique", "le soleil, les plages, le repos — Nosy Be"),
     mot("le voyage culturel", "les monuments, l'histoire, les artisans — le Rova d'Antananarivo"),
@@ -212,6 +218,8 @@ function lessonS2() {
     mot("le trajet", "le chemin suivi, d'étape en étape"),
     pr([run("Pour préparer un itinéraire : ", { bold: true }),
         run("je repère ma destination, je mesure la distance, je choisis mes étapes.")], { after: 40 }),
+    p("", { after: 80 }),
+    img("b1_valise.png", 250, 768 / 1376),
   ];
 }
 
@@ -270,6 +278,8 @@ function lessonS3() {
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
     p("", { after: 40 }),
     p([run("LE TEXTE DESCRIPTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_train.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     texteTrainFalaise(),
     p("", { after: 80 }),
     sub("La structure du texte descriptif :"),
@@ -284,6 +294,8 @@ function lessonS3() {
     mot("un dépliant touristique", "un petit document plié qui présente un lieu aux voyageurs"),
     mot("une falaise", "une paroi rocheuse très raide"),
     mot("une bananeraie", "un champ de bananiers"),
+    p("", { after: 80 }),
+    img("b1_paysage.png", 250, 768 / 1376),
   ];
 }
 
@@ -339,6 +351,8 @@ function lessonS4() {
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
     p("", { after: 40 }),
     p([run("LES EXPRESSIONS IMAGÉES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_pirogue.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     sub("1. La comparaison — avec un mot outil (comme, pareil à, ressembler à) :"),
     pr([run("Le train serpente ", { }), run("comme un long serpent de fer", { bold: true, color: C.SALMON }), run(".")]),
     pr([run("Le lac brille ", { }), run("comme un miroir", { bold: true, color: C.SALMON }), run(".")], { after: 60 }),
@@ -352,6 +366,8 @@ function lessonS4() {
     p("À faire voir ce qu'on décrit. Une description sans image informe ; une description imagée fait voyager le lecteur.", { after: 60 }),
     pr([run("Attention : ", { bold: true, color: C.RED }),
         run("dans la métaphore, ne cherche pas « comme » — c'est justement son absence qui fait la différence.")]),
+    p("", { after: 80 }),
+    img("b1_train.png", 250, 768 / 1376),
   ];
 }
 
@@ -410,6 +426,8 @@ function lessonS5() {
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
     p("", { after: 40 }),
     p([run("LES ADJECTIFS QUALIFICATIFS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_plage.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     sub("1. Leur position :"),
     p("• les adjectifs courts et fréquents se placent souvent avant le nom : un long voyage, une belle plage, un vieux train ;"),
     p("• les autres se placent après : une route nationale, la forêt dense, un ciel gris.", { after: 60 }),
@@ -424,6 +442,8 @@ function lessonS5() {
     pr([run("Attention : ", { bold: true, color: C.RED }),
         run("l'attribut s'accorde avec le sujet, même s'il en est loin : la mer, au bout de la longue descente, est "),
         run("calme", { bold: true, color: C.SALMON }), run(".")]),
+    p("", { after: 80 }),
+    img("b1_paysage.png", 250, 768 / 1376),
   ];
 }
 
@@ -481,6 +501,8 @@ function lessonS6() {
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
     p("", { after: 40 }),
     p([run("LES MARQUEURS DE LIEU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_carte.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     sub("Les trois familles :"),
     pr([run("• la position — ", { bold: true }), run("dans, sur, sous, au milieu de, au-dessus de, au-dessous de, dehors ;", { bold: true, color: C.SALMON })]),
     pr([run("• la proximité — ", { bold: true }), run("près de, loin de, à côté de, proche, ici ;", { bold: true, color: C.SALMON })]),
@@ -493,6 +515,8 @@ function lessonS6() {
     p("« Sur le quai, les marchandes installent leurs paniers. À côté d'elles, les enfants jouent. Au-dessus de la gare, le ciel reste gris. Au loin, on aperçoit déjà la mer. »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un marqueur de lieu bien choisi remplace un long discours ; il place chaque chose sous les yeux du lecteur.")]),
+    p("", { after: 80 }),
+    img("b1_plage.png", 250, 768 / 1376),
   ];
 }
 
@@ -549,6 +573,8 @@ function lessonS7() {
     discBadge("PRODUCTION ORALE", COLOR),
     p("", { after: 40 }),
     p([run("DONNER SON AVIS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_eleve_avis.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     sub("La boîte à outils de l'avis :"),
     pr([run("• pour ouvrir — ", { bold: true }), run("à mon avis, selon moi, personnellement, je trouve que, je pense que ;", { bold: true, color: C.SALMON })]),
     pr([run("• pour justifier — ", { bold: true }), run("parce que, car ;", { bold: true, color: C.SALMON })]),
@@ -562,6 +588,8 @@ function lessonS7() {
     p("• je peux refuser une idée, jamais me moquer de la personne.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un avis sans justification est une humeur ; un avis justifié est un argument.")]),
+    p("", { after: 80 }),
+    img("b1_plage.png", 250, 768 / 1376),
   ];
 }
 
@@ -616,6 +644,8 @@ function lessonS8() {
     discBadge("PRODUCTION ÉCRITE", COLOR),
     p("", { after: 40 }),
     p([run("DÉCRIRE UN PAYSAGE : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_paysage.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     sub("Avant d'écrire, je rassemble mes idées :"),
     p("• OÙ se trouve mon paysage ? (région, distance, accès)"),
     p("• QUE voit-on — au premier plan, au milieu, au loin ?"),
@@ -632,6 +662,8 @@ function lessonS8() {
     p("III. Un lieu frais et paisible ; conseil : y aller à la saison des pluies.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un plan solide fait la moitié du travail ; sans plan, la description tourne en rond.")]),
+    p("", { after: 80 }),
+    img("b1_ecrire.png", 250, 768 / 1376),
   ];
 }
 
@@ -685,6 +717,8 @@ function lessonS9() {
     discBadge("PRODUCTION ÉCRITE", COLOR),
     p("", { after: 40 }),
     p([run("RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_ecrire.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     sub("Pour rédiger mon texte descriptif :"),
     p("• je suis mon plan, partie par partie ;"),
     p("• j'écris des phrases complètes : majuscule, verbe, point ;"),
@@ -702,6 +736,8 @@ function lessonS9() {
     p("• supprimer ce qui se répète.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un texte n'est jamais fini au premier jet ; c'est la relecture qui en fait un bon texte.")]),
+    p("", { after: 80 }),
+    img("b1_valise.png", 250, 768 / 1376),
   ];
 }
 
@@ -756,6 +792,8 @@ function lessonS10() {
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
     p("", { after: 40 }),
     p([run("LIRE AVEC LA PONCTUATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("b1_lecture.png", 250, 768 / 1376),
+    p("", { after: 80 }),
     sub("Le code des signes :"),
     mot("le point .", "pause longue ; la voix descend"),
     mot("la virgule ,", "pause courte"),
@@ -771,6 +809,8 @@ function lessonS10() {
     p("• je m'entraîne en relisant plusieurs fois le même passage.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("la ponctuation est la respiration du texte ; qui la respecte lit déjà bien.")]),
+    p("", { after: 80 }),
+    img("b1_train.png", 250, 768 / 1376),
   ];
 }
 
