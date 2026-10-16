@@ -30,6 +30,49 @@ const rich = (text, opt = {}) => {
   return out.length ? out : [tr(text, opt)];
 };
 const p = (text, opt = {}) => new Paragraph({ alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 110, line: 300 }, indent: opt.indent ? { left: opt.indent } : undefined, shading: opt.fill ? { type: ShadingType.CLEAR, fill: opt.fill } : undefined, children: rich(text, opt) });
+// Balises du récit : ##date## (bordeaux gras), @@personnage@@ (vert gras), **mot-clé** (gras), //italique//
+const M = (text, base = {}) => {
+  const out = []; const re = /##(.+?)##|@@(.+?)@@|\*\*(.+?)\*\*|\/\/(.+?)\/\//g; let last = 0, m;
+  while ((m = re.exec(text))) {
+    if (m.index > last) out.push(tr(text.slice(last, m.index), base));
+    if (m[1] !== undefined) out.push(tr(m[1], { ...base, bold: true, color: C.wine }));
+    else if (m[2] !== undefined) out.push(tr(m[2], { ...base, bold: true, color: C.green }));
+    else if (m[3] !== undefined) out.push(tr(m[3], { ...base, bold: true }));
+    else out.push(tr(m[4], { ...base, italics: true }));
+    last = re.lastIndex;
+  }
+  if (last < text.length) out.push(tr(text.slice(last), base));
+  return out.length ? out : [tr(text, base)];
+};
+const pm = (text, opt = {}) => new Paragraph({ alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 110, line: 300 }, shading: opt.fill ? { type: ShadingType.CLEAR, fill: opt.fill } : undefined, children: M(text, opt) });
+const strip = t => t.replace(/##|@@|\*\*|\/\//g, '');
+// --- style Tantara T5 : surlignage automatique des mots-clés (gras bleu) ---
+const pHi = (text, kws, opt = {}) => {
+  if (!kws || !kws.length) return p(text, opt);
+  const pattern = kws.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).sort((a, b) => b.length - a.length).join('|');
+  const regex = new RegExp(`(${pattern})`, 'gi');
+  const parts = text.split(regex).filter(x => x !== '');
+  return new Paragraph({
+    alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 100, line: 300 },
+    children: parts.map(part => kws.some(k => k.toLowerCase() === part.toLowerCase())
+      ? tr(part, { bold: true, color: C.blue }) : tr(part)),
+  });
+};
+// --- encadré type T5 (bord coloré + fond) ---
+const encadre = (titre, paras, fill, border) => new Table({
+  width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED, columnWidths: [9600],
+  borders: {
+    top: { style: BorderStyle.SINGLE, size: 12, color: border }, bottom: { style: BorderStyle.SINGLE, size: 12, color: border },
+    left: { style: BorderStyle.SINGLE, size: 12, color: border }, right: { style: BorderStyle.SINGLE, size: 12, color: border },
+    insideHorizontal: { style: BorderStyle.NONE }, insideVertical: { style: BorderStyle.NONE },
+  },
+  rows: [new TableRow({
+    children: [new TableCell({
+      shading: { type: ShadingType.CLEAR, fill }, margins: { top: 140, bottom: 140, left: 180, right: 180 },
+      children: [new Paragraph({ spacing: { after: 90 }, children: [tr(titre, { bold: true, color: border, size: 25 })] }), ...paras],
+    })],
+  })],
+});
 const mixed = (parts, opt = {}) => new Paragraph({ alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 110, line: 300 }, shading: opt.fill ? { type: ShadingType.CLEAR, fill: opt.fill } : undefined, children: parts.flatMap(([t, o]) => rich(t, o)) });
 const title = (text, level = 1, bookmark) => {
   const run = tr(text, { bold: true, color: level === 1 ? C.red : C.green, size: level === 1 ? 32 : 28 });
@@ -104,8 +147,8 @@ function deroulement(s) {
     r('II. NOUVELLE LEÇON', `Annonce : « Aujourd’hui, nous allons apprendre à ${s.goal}. »`, 'Écoutent.', 'Présentation guidée', 'Tableau', ''),
     r('1. Mise en situation', s.situation, 'Écoutent, observent et proposent des réponses.', 'Situation-problème', 'Illustration, tableau', 'Participation'),
     r('2. Présentation', `Présente le titre « ${s.t} » et l’objectif de la séance.`, 'Écoutent.', 'Explication brève', 'Tableau', ''),
-    r('3. Observation', s.exemple, 'Observent l’exemple résolu.', 'Observation dirigée', 'Document imprimé', 'Compréhension'),
-    r('4. Analyse', `Guide l’analyse : ${s.concept}`, 'Expliquent la démarche et vérifient le résultat.', 'Recherche en binômes', 'Documents, cartes, frises', 'Raisonnement'),
+    r('3. Développement', `Développe la leçon partie par partie : ${s.sections.map(x => x.titre).join(' ; ')}.`, 'Écoutent, répondent aux questions et notent les mots-clés.', 'Exposé interactif, questions-réponses', 'Tableau, frises, cartes', 'Attention, participation'),
+    r('4. Étude de document', `Fait lire le document « ${s.doc.titre} » (${s.doc.source}), puis pose les questions.`, 'Lisent le document, répondent aux questions et critiquent la source.', 'Observation dirigée, travail en binômes', 'Document imprimé', 'Esprit critique'),
     r('5. Synthèse', `Donc, ${s.synthese}`, 'Écoutent et reformulent la règle.', 'Synthèse guidée', 'Cahier, tableau', 'Trace écrite'),
     r('6. Application', `${s.exos[0]} ${s.exos[1]}`, `${s.corr[0]} ${s.corr[1]}`, 'Travail individuel puis correction collective', 'Cahier, ardoises', 'Remédiation'),
     r('III. Évaluation', `Résous sans modèle : ${s.exos[0]} Puis justifie l’une de tes réponses.`, `${s.corr[0]} La justification s’appuie sur la règle de la leçon.`, 'Travail individuel', 'Feuille, cahier', 'Maîtrise de l’objectif')
@@ -124,15 +167,36 @@ function seance(s, i, total, uNo, figBufs) {
   a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 160, after: 160 }, children: [tr(s.t.toUpperCase(), { bold: true, color: C.red, size: 32 })] }));
   const scPath = path.join(__dirname, '..', 'assets', 'scenes', `u${uNo}s${i}.jpg`);
   if (fs.existsSync(scPath)) a.push(imgJpg(fs.readFileSync(scPath), 430));
-  a.push(mixed([['Définition — ', { bold: true, color: C.green }], [s.def, { bold: true }]]));
-  a.push(mixed([['Autrement dit : ', { bold: true, color: C.blue }], [s.autrement, {}]]));
-  a.push(p(s.concept));
+  if (s.legende) a.push(p(s.legende, { italics: true, size: 21, align: AlignmentType.CENTER, after: 160 }));
+  // sections numérotées style T5 (titres du PE, mots-clés surlignés)
+  s.sections.forEach((sec, k) => {
+    a.push(mixed([[`${k + 1}. ${sec.titre}`, { bold: true, color: C.green, size: 26 }]], { after: 80 }));
+    (sec.paras || []).forEach(t => a.push(pHi(t, s.motsCles)));
+    (sec.puces || []).forEach(t => a.push(pHi('• ' + t, s.motsCles, { after: 60 })));
+  });
   if (s.fig && figBufs[s.fig]) a.push(img(figBufs[s.fig]));
-  a.push(title('Méthode', 2));
-  s.method.forEach((m, k) => a.push(p(`${k + 1}. ${m}`, { after: 60 })));
-  a.push(mixed([['Exemple — ', { bold: true, color: C.blue }], [s.exemple, {}]]));
-  a.push(mixed([['Erreur à éviter — ', { bold: true, color: C.ocre }], [s.erreur, {}]]));
-  a.push(mixed([['Le savais-tu ? ', { bold: true, color: C.bleu2 }], [s.saistu, {}]], { fill: C.paleBlue }));
+  a.push(new Paragraph({ spacing: { after: 120 }, children: [] }));
+  // encadré document à étudier (style « Tahirin-kevitra hodinihina »)
+  a.push(encadre('Document à étudier', [
+    p(`${s.doc.titre} — ${s.doc.source}`, { bold: true, size: 21, after: 80, align: AlignmentType.LEFT }),
+    p(`« ${s.doc.texte} »`, { italics: true, after: 100 }),
+    ...s.doc.questions.map((q, k) => p(`${k + 1}. ${q}`, { after: 40 })),
+    new Paragraph({ spacing: { after: 60 }, children: [] }),
+    ...s.doc.reponses.map((rp, k) => new Paragraph({
+      spacing: { after: 40 }, children: [tr(`Réponse ${k + 1}. `, { bold: true, color: C.wine, size: 22 }), ...rich(rp, { size: 22 })],
+    })),
+  ], 'FFF8EF', C.ocre));
+  a.push(new Paragraph({ spacing: { after: 160 }, children: [] }));
+  // encadré le savais-tu ?
+  a.push(encadre('Le savais-tu ?', [p(s.saistu, { size: 22, after: 0 })], C.paleBlue, C.bleu2));
+  a.push(new Paragraph({ spacing: { after: 160 }, children: [] }));
+  // petit lexique
+  a.push(mixed([['Petit lexique', { bold: true, color: C.green, size: 26 }]], { after: 80 }));
+  a.push(table([
+    new TableRow({ children: [cell('Mot', { bold: true, fill: C.gray }), cell('Sens', { bold: true, fill: C.gray })] }),
+    ...s.lexique.map(r2 => new TableRow({ children: [cell(r2[0], { bold: true }), cell(r2[1])] })),
+  ], [2800, 6800]));
+  a.push(new Paragraph({ spacing: { after: 120 }, children: [] }));
   a.push(title('EXERCICES', 2));
   s.exos.forEach((e, k) => a.push(p(`${k + 1}. ${e}`)));
   a.push(title('CORRIGÉS', 2));
@@ -186,11 +250,11 @@ function frontMatter(u) {
     new Paragraph({ alignment: AlignmentType.CENTER, children: [tr('Programme officiel malgache — Édition 2026', { size: 26 })] }),
     page(),
     title('AVANT-PROPOS', 1, 'avant'),
-    p('Ce manuel accompagne l’enseignant dans la mise en œuvre du programme officiel d’Histoire de la classe de T8 (huitième). Il couvre les sept thématiques du programme en sept unités : l’Histoire orale, les Temps modernes, l’époque contemporaine, les royaumes malgaches du XVᵉ au XIXᵉ siècle, le Royaume de Madagascar (1810-1896), Madagascar colonie française, et les patrimoines culturels et historiques de Madagascar, à raison de 2 heures par semaine. Conformément au programme, il développe la pensée historique et la démarche historique : exploiter des sources primaires, situer les faits dans le temps et dans l’espace, analyser les causes et les conséquences, et interpréter les réalités sociales pour comprendre le passé, expliquer le présent et améliorer le futur.'),
-    p('Chaque séance associe une fiche de préparation directement exploitable, une leçon structurée avec définitions rigoureuses et reformulations simples, des frises chronologiques et des schémas exacts, des exercices et un corrigé détaillé. Les contenus mobilisent les repères de Madagascar et véhiculent les valeurs portées par le programme : curiosité et esprit critique, union nationale et patriotisme, savoir vivre ensemble, respect des biens communs et de l’environnement.'),
+    p('Ce manuel accompagne l’enseignant dans la mise en œuvre du programme officiel d’Histoire de la classe de T8 (quatrième). Il couvre les sept thématiques du programme en sept unités : l’Histoire orale, les Temps modernes, l’époque contemporaine, les royaumes malgaches du XVᵉ au XIXᵉ siècle, le Royaume de Madagascar (1810-1896), Madagascar colonie française, et les patrimoines culturels et historiques de Madagascar, à raison de 2 heures par semaine. Conformément au programme, il développe la pensée historique et la démarche historique : exploiter des sources primaires, situer les faits dans le temps et dans l’espace, analyser les causes et les conséquences, et interpréter les réalités sociales pour comprendre le passé, expliquer le présent et améliorer le futur.'),
+    p('Chaque séance associe une fiche de préparation directement exploitable et une leçon conçue pour l’Histoire : un récit vivant qui raconte les faits dans l’ordre du temps, une étude de document pour exercer l’esprit critique, un encadré de repères (dates, personnages, vocabulaire), des frises chronologiques et des schémas exacts, des exercices et un corrigé détaillé. Les contenus mobilisent les repères de Madagascar et véhiculent les valeurs portées par le programme : curiosité et esprit critique, union nationale et patriotisme, savoir vivre ensemble, respect des biens communs et de l’environnement.'),
     title('MODE D’EMPLOI', 1, 'mode'),
     p('La fiche suit trois grandes étapes : I. Révision ; II. Nouvelle leçon, comprenant mise en situation, présentation, observation, analyse, synthèse et application ; III. Évaluation. Aucune durée chiffrée n’est affichée : l’enseignant adapte le rythme à sa classe (volume officiel : 2 heures par semaine).'),
-    p('Code couleur : titre de leçon en rouge ; sous-titres en vert ; « Définition » en vert et « Autrement dit » en bleu ; « Erreur à éviter » en ocre ; corrigés en bordeaux ; encadré « Le savais-tu ? » sur fond bleu clair.'),
+    p('Organisation de la leçon : des parties numérotées aux titres tirés du programme (en vert), avec les mots-clés mis en évidence en bleu gras dans le texte ; un encadré « Document à étudier » (texte, questions et réponses) ; un encadré « Le savais-tu ? » sur fond bleu clair ; un « Petit lexique » en tableau ; puis les exercices et leurs corrigés en bordeaux.'),
     title('SOMMAIRE INTERACTIF', 1, 'toc'),
     new Paragraph({ children: [new InternalHyperlink({ anchor: 'u1', children: [tr(`Unité I — ${u.name}`, { bold: true, color: C.blue })] })] }));
   u.sessions.forEach((s, i) => ch.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${i + 1}`, children: [tr(`Séance ${i + 1} — ${s.t}`, { color: C.blue })] })] })));

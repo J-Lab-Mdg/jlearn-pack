@@ -29,6 +29,7 @@ figs.u1f2 = (() => { const { s, y } = head('Produire une source orale : la chaî
   b += txt(500, top + 8 * 64 + 16, 'le dossier final devient une SOURCE pour d’autres historiens', 21, OCRE, 'bold', 'middle');
   return svg(1000, top + 8 * 64 + 48, s + b); })();
 
+
 const S = [
   {
     t: 'Réaliser une enquête orale', comp: 'L’Histoire orale', theme: 'Les techniques de l’enquête orale : de la question à l’entretien',
@@ -37,13 +38,52 @@ const S = [
     revQ: 'En T7, quelles étaient les cinq étapes de préparation d’un projet d’Histoire orale ?',
     revRA: 'Thème délimité, questionnaire, personnes ressources, lieu de rencontre, rendez-vous.',
     situation: 'La classe de Niry a obtenu un rendez-vous avec Dadabe Rakoto, ancien instituteur du village. Mais une fois assis devant lui, les élèves parlent tous en même temps, posent trois questions d’un coup, regardent leurs cahiers au lieu du vieil homme… et Dadabe se tait. Un entretien ne s’improvise pas : il existe de vraies techniques pour qu’un témoin livre sa mémoire. Lesquelles ?',
-    def: 'L’enquête orale est la collecte d’informations historiques auprès de témoins, par l’entretien. Elle se prépare : on choisit le thème et l’objet de l’enquête, on formule la question, et le groupe se concerte pour répartir les rôles. Pendant l’entretien, l’enquêteur garde le contact visuel, fait preuve d’empathie, pose une seule question à la fois, laisse le témoin raconter librement et le recadre poliment s’il s’éloigne du sujet.',
-    autrement: 'pour qu’un ancien raconte vraiment, il faut le regarder, le comprendre, lui poser une question simple à la fois, le laisser parler — et le ramener doucement au sujet s’il s’égare.',
-    concept: 'Tout commence avant la rencontre : le thème (par exemple « l’école de notre commune ») est précisé en un objet d’enquête (« l’école pendant les années 1970 »), puis en une question d’enquête claire. Le groupe se concerte : qui pose les questions ? qui note ? qui enregistre ? qui surveille le temps ? Un entretien où tout le monde parle est un entretien perdu. Pendant la rencontre, le contact visuel montre au témoin qu’on l’écoute : les yeux dans le cahier, l’attention tombe, et le témoin aussi se décourage. L’empathie consiste à se mettre à la place du témoin : certains souvenirs sont douloureux ou intimes, on ne force jamais, on respecte les silences. On pose une seule question à la fois : deux questions ensemble, et le témoin n’en retient qu’une. Puis on laisse raconter librement : les détours d’un récit contiennent souvent des informations précieuses que le questionnaire n’avait pas prévues. Enfin, si le témoin s’éloigne trop longtemps du sujet, on recadre avec politesse : « C’est très intéressant — et à l’école, comment cela se passait-il ? ». À Madagascar, le respect dû aux aînés ajoute ses règles : saluer selon l’usage, se présenter, remercier, et demander la permission avant d’enregistrer.',
+    legende: 'Tous parlent en même temps, les yeux dans les cahiers… et Dadabe se tait : un entretien ne s’improvise pas.',
+    motsCles: ['enquête orale', 'thème', 'objet d’enquête', 'question d’enquête', 'concertation', 'contact visuel', 'empathie', 'une seule question', 'raconter librement', 'recadrer'],
+    sections: [
+      {
+        titre: 'Avant la rencontre : préparer et se concerter',
+        paras: [
+          'L’enquête orale est la collecte d’informations historiques auprès de témoins, par l’entretien. Tout commence avant la rencontre : le thème (par exemple « l’école de notre commune ») est précisé en un objet d’enquête (« l’école pendant les années 1970 »), puis en une question d’enquête claire.',
+          'Le groupe se concerte : qui pose les questions ? qui note ? qui enregistre ? qui surveille le temps ? Un entretien où tout le monde parle est un entretien perdu.',
+        ],
+      },
+      {
+        titre: 'Pendant l’entretien : les cinq techniques',
+        paras: ['Face au témoin, cinq règles font la réussite :'],
+        puces: [
+          'garder le contact visuel : les yeux dans le cahier, l’attention tombe — et le témoin aussi se décourage ;',
+          'faire preuve d’empathie : se mettre à la place du témoin ; certains souvenirs sont douloureux ou intimes, on ne force jamais, on respecte les silences ;',
+          'poser une seule question à la fois : deux questions ensemble, et le témoin n’en retient qu’une ;',
+          'laisser le témoin raconter librement : les détours d’un récit contiennent souvent des informations précieuses que le questionnaire n’avait pas prévues ;',
+          'recadrer avec politesse s’il s’éloigne trop longtemps du sujet : « C’est très intéressant — et à l’école, comment cela se passait-il ? ».',
+        ],
+      },
+      {
+        titre: 'Le respect malgache des aînés',
+        paras: [
+          'À Madagascar, le respect dû aux aînés ajoute ses règles : saluer selon l’usage, se présenter, remercier, et demander la permission avant d’enregistrer.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Les conseils du collecteur de mémoire',
+      source: 'd’après les guides d’entretien des grandes archives d’Histoire orale — texte reconstitué',
+      texte: 'N’oubliez jamais que le témoin vous fait un don : celui de sa mémoire. Regardez-le pendant qu’il parle ; votre regard est son encouragement. Ne posez qu’une question, puis taisez-vous : le silence de l’enquêteur est son meilleur outil, car c’est dans les silences que remontent les souvenirs. Si le récit s’égare, ne coupez pas : attendez une respiration, et ramenez doucement votre interlocuteur au sujet. Et quand un souvenir fait trembler sa voix, n’insistez pas — un enquêteur n’est pas un juge.',
+      questions: ['Retrouve dans ce texte trois des cinq techniques de la leçon.',
+        'Pourquoi le silence est-il appelé « le meilleur outil » de l’enquêteur ?',
+        'Que signifie la dernière phrase : « un enquêteur n’est pas un juge » ?'],
+      reponses: ['Le contact visuel (« regardez-le »), une seule question à la fois, le recadrage poli (« ramenez doucement au sujet ») — et aussi l’empathie (« n’insistez pas »).',
+        'Parce qu’il laisse le témoin raconter librement : c’est dans les silences que remontent les souvenirs imprévus et précieux.',
+        'L’enquêteur ne force pas, n’accuse pas, ne vérifie pas en direct : il écoute avec empathie et respecte les émotions du témoin.']
+    },
+    lexique: [
+      ['Enquête orale', 'collecte d’informations historiques auprès de témoins'],
+      ['Objet d’enquête', 'aspect précis du thème que l’on étudie'],
+      ['Empathie', 'capacité à se mettre à la place du témoin'],
+      ['Recadrer', 'ramener poliment le témoin au sujet de l’enquête'],
+    ],
     synthese: 'Enquête orale = collecter la mémoire d’un témoin par l’entretien ; avant : thème, objet, question, concertation du groupe ; pendant : contact visuel, empathie, une question à la fois, récit libre, recadrage poli.',
-    method: ['Préciser le thème, l’objet et la question de l’enquête ; se répartir les rôles.', 'Conduire l’entretien : regarder le témoin, écouter, une seule question à la fois.', 'Laisser raconter librement, recadrer poliment, remercier et demander les permissions.'],
-    exemple: 'Enquête sur le marché communal : Vola pose les questions une à une en regardant la marchande ; Hery note ; Lova enregistre avec permission. Quand la marchande dérive vers la politique, Vola recadre : « Et les prix du riz à cette époque ? ».',
-    erreur: 'Transformer l’entretien en interrogatoire : enchaîner les questions fermées (« oui ou non ? ») sans laisser le témoin raconter. Le témoignage devient sec et pauvre. L’entretien d’Histoire orale est une écoute guidée, pas un contrôle de connaissances.',
     saistu: 'Les historiens professionnels utilisent exactement ces techniques ! Les grandes archives sonores du monde — comme celles des anciens combattants ou des survivants de catastrophes — ont été constituées par des milliers d’entretiens menés selon ces règles : une question à la fois, récit libre, respect du témoin. Ta petite enquête de classe suit la même méthode que les chercheurs des universités.',
     exos: ['Vrai ou faux ? Corrige si faux. a) On pose deux ou trois questions à la fois pour gagner du temps. b) Le contact visuel encourage le témoin. d) Si le témoin s’éloigne du sujet, on l’interrompt sèchement. e) Le groupe se concerte avant l’entretien pour répartir les rôles.',
       'Les techniques. a) Qu’est-ce que l’empathie dans un entretien ? b) Pourquoi laisse-t-on le témoin raconter librement ? d) Comment recadrer poliment un témoin ? e) Cite deux règles de politesse malgaches à respecter avec un témoin âgé.',
@@ -60,13 +100,48 @@ const S = [
     revQ: 'Cite trois techniques à respecter pendant un entretien d’enquête orale.',
     revRA: 'Contact visuel, empathie, une seule question à la fois, récit libre, recadrage poli (trois suffisent).',
     situation: 'L’enquête est finie : la classe de Niry rapporte deux heures d’enregistrement et des pages de notes. Et maintenant ? Si tout reste dans le téléphone, rien n’aura servi. Pour que la mémoire de Dadabe Rakoto devienne un document d’Histoire — une source que d’autres pourront utiliser — il faut la retranscrire, l’analyser, la vérifier et la présenter. C’est la fabrication d’une source orale.',
-    def: 'Produire une source orale, c’est transformer des témoignages recueillis en document historique utilisable. La démarche comprend : poser la problématique (question de recherche), élaborer la grille d’entretien, choisir les témoins et les supports, mener l’entretien, retranscrire les témoignages, les analyser par rapport à la question de recherche, les recouper avec des sources écrites et d’autres sources orales, puis constituer un dossier et le présenter oralement.',
-    autrement: 'on écrit mot à mot ce que le témoin a dit, on vérifie si cela répond à notre question, on compare avec d’autres sources — et on range le tout dans un dossier qu’on présente à la classe.',
-    concept: 'La problématique est la boussole du projet : « Comment l’école de notre commune a-t-elle changé entre 1970 et 1990 ? ». La grille d’entretien liste les questions qui en découlent. Après l’entretien vient la retranscription : écrire fidèlement les paroles du témoin, sans rien ajouter ni corriger — même les hésitations peuvent avoir un sens. Puis l’analyse : que répond le témoignage à la problématique ? Qu’apprend-on de neuf ? Qu’est-ce qui reste obscur ? Vient alors l’étape qui fait de l’élève un vrai historien : le recoupement. La mémoire peut se tromper — dates mélangées, souvenirs embellis. On confronte donc le témoignage à des sources écrites (registres, journaux, photographies datées) et à d’autres témoignages : ce qui concorde est solide ; ce qui diverge appelle la prudence. Enfin, le dossier rassemble tout : problématique, grille, retranscriptions, analyse, conclusion, et la présentation orale restitue le travail devant la classe. Ce dossier devient à son tour une source : dans vingt ans, un chercheur pourra s’en servir. La boucle de l’Histoire orale est bouclée — l’esprit d’analyse et l’esprit critique en sont les deux piliers.',
+    legende: 'Deux heures d’enregistrement dans un téléphone ne sont pas encore une source : il faut retranscrire, analyser, vérifier.',
+    motsCles: ['source orale', 'problématique', 'grille d’entretien', 'retranscription', 'analyse', 'recoupement', 'sources écrites', 'dossier', 'présentation', 'esprit critique'],
+    sections: [
+      {
+        titre: 'De la problématique à la retranscription',
+        paras: [
+          'La problématique est la boussole du projet : « Comment l’école de notre commune a-t-elle changé entre 1970 et 1990 ? ». La grille d’entretien liste les questions qui en découlent ; on choisit ensuite les témoins et les supports, puis on mène l’entretien.',
+          'Après l’entretien vient la retranscription : écrire fidèlement les paroles du témoin, sans rien ajouter ni corriger — même les hésitations peuvent avoir un sens.',
+        ],
+      },
+      {
+        titre: 'Analyser et recouper : le travail de l’historien',
+        paras: [
+          'Puis l’analyse : que répond le témoignage à la problématique ? Qu’apprend-on de neuf ? Qu’est-ce qui reste obscur ?',
+          'Vient alors l’étape qui fait de l’élève un vrai historien : le recoupement. La mémoire peut se tromper — dates mélangées, souvenirs embellis. On confronte donc le témoignage à des sources écrites (registres, journaux, photographies datées) et à d’autres témoignages : ce qui concorde est solide ; ce qui diverge appelle la prudence.',
+        ],
+      },
+      {
+        titre: 'Le dossier et la présentation',
+        paras: [
+          'Enfin, le dossier rassemble tout : problématique, grille, retranscriptions, analyse, conclusion ; et la présentation orale restitue le travail devant la classe. Ce dossier devient à son tour une source : dans vingt ans, un chercheur pourra s’en servir. La boucle de l’Histoire orale est bouclée — l’esprit d’analyse et l’esprit critique en sont les deux piliers.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Comment fut fabriqué le Tantara ny Andriana',
+      source: 'd’après la démarche exposée par le R.P. François Callet, Tantara ny Andriana (1878) — extrait adapté',
+      texte: 'J’ai recueilli ces récits de la bouche même des anciens qui gardent la tradition. Je les ai écrits dans leur langue, tels qu’ils furent prononcés, sans y mêler mes propres paroles : car ce sont les ancêtres qui parlent ici, non moi. Lorsque les versions différaient, je les ai notées toutes, l’une après l’autre, afin que le lecteur puisse les comparer. Et j’ai rassemblé le tout en un livre, pour que la mémoire des royaumes ne meure pas avec ceux qui la portent.',
+      questions: ['Quelle règle de la retranscription Callet applique-t-il ? Cite la phrase qui le montre.',
+        'Que fait Callet quand deux versions d’un récit diffèrent, et à quelle étape de la leçon cela correspond-il ?',
+        'En quoi le livre de Callet illustre-t-il la phrase « le dossier devient à son tour une source » ?'],
+      reponses: ['La fidélité absolue : « je les ai écrits dans leur langue, tels qu’ils furent prononcés, sans y mêler mes propres paroles ».',
+        'Il note toutes les versions pour qu’on puisse les comparer : c’est le recoupement des témoignages, l’étape critique de la démarche.',
+        'Son dossier d’entretiens, devenu livre, est aujourd’hui l’une des sources majeures de l’histoire de l’Imerina : les chercheurs s’en servent plus d’un siècle après.']
+    },
+    lexique: [
+      ['Problématique', 'question de recherche qui guide toute l’enquête'],
+      ['Retranscription', 'écriture fidèle, mot à mot, des paroles du témoin'],
+      ['Recoupement', 'confrontation d’un témoignage à d’autres sources'],
+      ['Dossier', 'ensemble ordonné des pièces de l’enquête, présenté à la classe'],
+    ],
     synthese: 'Source orale : problématique → grille d’entretien → témoins et supports → entretien → retranscription fidèle → analyse → recoupement avec sources écrites et orales → dossier et présentation. La mémoire se vérifie toujours.',
-    method: ['Retranscrire fidèlement les paroles, sans corriger ni ajouter.', 'Analyser : confronter le témoignage à la problématique de départ.', 'Recouper avec des sources écrites et d’autres témoignages avant de conclure ; constituer le dossier.'],
-    exemple: 'Dadabe affirme que l’école a brûlé « vers 1975 ». Le registre communal indique l’incendie en 1977. La classe retient 1977 en signalant l’écart : le recoupement a corrigé la mémoire sans disqualifier le témoin.',
-    erreur: 'Prendre le témoignage pour argent comptant et le recopier comme une vérité : une source orale non recoupée n’est qu’un souvenir. Sans confrontation avec d’autres sources, le dossier n’a pas de valeur historique.',
     saistu: 'Le « Tantara ny Andriana », somme monumentale de l’histoire de l’Imerina, est né exactement de cette démarche : au XIXᵉ siècle, le père Callet a interrogé des anciens, retranscrit leurs récits en malgache, recoupé les versions entre elles — et son dossier est devenu l’une des sources majeures de l’histoire de Madagascar. Une source orale bien produite peut traverser les siècles !',
     exos: ['Remets la chaîne dans l’ordre : a) retranscrire les témoignages ; b) poser la problématique ; d) recouper avec d’autres sources ; e) mener l’entretien.',
       'Les étapes. a) Qu’est-ce qu’une problématique ? b) Pourquoi la retranscription doit-elle être fidèle ? d) Que fait-on pendant l’analyse ? e) Que contient le dossier final ?',
