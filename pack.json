@@ -1212,6 +1212,26 @@
       "id": "geo6_carte_muette_village",
       "url": "/geo6_carte_muette_village.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo6_carte_muette_villes",
+      "url": "/geo6_carte_muette_villes.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_carte_muette_ressources",
+      "url": "/geo6_carte_muette_ressources.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_carte_muette_exode",
+      "url": "/geo6_carte_muette_exode.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_carte_muette_voies",
+      "url": "/geo6_carte_muette_voies.png",
+      "type": "image/png"
     }
   ]
 }

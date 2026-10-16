@@ -154,9 +154,11 @@ gloss_terms = re.findall(r'\["([^"]+)",', gloss_block.group(1)) if gloss_block e
 report("Glossaire ≥ 60 termes", len(gloss_terms) >= 60, f"{len(gloss_terms)} termes dans annexes.js")
 absents = [t for t in gloss_terms if t.lower() not in full_low]
 report("Tous les termes du glossaire figurent dans le manuel", not absents, ", ".join(absents[:5]))
-report("4 consignes de cartes muettes", full.count("Consigne :") == 4, str(full.count("Consigne :")))
+report("8 consignes de cartes muettes", full.count("Consigne :") == 8, str(full.count("Consigne :")))
 for m in ["Les 24 régions à compléter", "La répartition de la population à compléter",
-          "Les zones économiques à compléter", "Le village écologique à légender"]:
+          "Les grandes villes à nommer", "Les ressources naturelles à identifier",
+          "Les zones économiques à compléter", "L'exode rural à compléter",
+          "Les voies de communication à compléter", "Le village écologique à légender"]:
     report(f"Carte muette « {m} »", m in full)
 eval_block = re.search(r"const AUTO_EVAL = \[(.*?)\n\];", annex_src, re.S)
 n_comps = len(re.findall(r"\"J[e'" + "’]", eval_block.group(1))) if eval_block else 0
@@ -166,7 +168,7 @@ report("Auto-évaluation : 6 unités", eval_block and eval_block.group(1).count(
 for m in ["Acquis", "En cours", "À revoir"]:
     report(f"Colonne « {m} » de l'auto-évaluation", m in full)
 report("Table des illustrations : 66 lignes + annexe",
-       len(re.findall(r"Les 24 régions à compléter ; la répartition de la population", full)) == 1
+       len(re.findall(r"Les 24 régions ; la répartition de la population", full)) == 1
        and full.count("Table des illustrations") >= 2)
 for m in ["Programme d'études officiel T6", "Collection J-Learn"]:
     report(f"Source « {m} » citée", m in full)

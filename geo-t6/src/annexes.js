@@ -1,5 +1,5 @@
 // annexes.js — Annexes du Manuel de Géographie T6
-// 1. Glossaire — 2. Cartes muettes — 3. Auto-évaluation — 4. Table des illustrations — 5. Loharanom-Baovao (sources)
+// 1. Glossaire — 2. Cartes muettes — 3. Auto-évaluation — 4. Table des illustrations — 5. Sources
 const path = require("path");
 const fs = require("fs");
 const { AlignmentType, Table, TableRow, WidthType, BorderStyle } = require("docx");
@@ -156,21 +156,21 @@ function annexesContent(topics) {
 
   // Page d'ouverture des annexes
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("ANNEXES", "annexes", { size: 30, after: 80, align: AlignmentType.CENTER }));
-  out.push(B.p("Le glossaire, les cartes muettes, l'auto-évaluation, la table des illustrations et les sources complètent le manuel.", { size: 21, italics: true, align: AlignmentType.CENTER, after: 200 }));
+  out.push(B.headingWithBookmark("ANNEXES", "annexes", { size: 34, after: 80, align: AlignmentType.CENTER }));
+  out.push(B.p("Le glossaire, les cartes muettes, l'auto-évaluation, la table des illustrations et les sources complètent le manuel.", { size: 25, italics: true, align: AlignmentType.CENTER, after: 200 }));
 
   // ── 1. GLOSSAIRE ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Glossaire", "glossaire", { size: 26, after: 120, align: AlignmentType.CENTER }));
-  out.push(B.p("Les définitions reprennent le vocabulaire des six thématiques du programme d'études officiel T6 et des leçons du manuel.", { size: 19, italics: true, after: 120 }));
+  out.push(B.headingWithBookmark("Glossaire", "glossaire", { size: 30, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.p("Les définitions reprennent le vocabulaire des six thématiques du programme d'études officiel T6 et des leçons du manuel.", { size: 23, italics: true, after: 120 }));
   out.push(new Table({
     borders, width: { size: 100, type: WidthType.PERCENTAGE },
     rows: [
       tRow(["Terme", "Définition"], [26, 74], { header: true }),
       ...GLOSSAIRE.map(([t, d]) => new TableRow({
         children: [
-          B.cell([B.p(t, { size: 19, bold: true, color: B.BLUE })], { width: 26 }),
-          B.cell([B.p(d, { size: 19 })], { width: 74 }),
+          B.cell([B.p(t, { size: 23, bold: true, color: B.BLUE })], { width: 26 }),
+          B.cell([B.p(d, { size: 23 })], { width: 74 }),
         ],
       })),
     ],
@@ -179,29 +179,45 @@ function annexesContent(topics) {
 
   // ── 2. CARTES MUETTES ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Cartes muettes", "cartesmuettes", { size: 26, after: 120, align: AlignmentType.CENTER }));
-  out.push(B.p("Recopie ou complète ces cartes dans ton cahier, puis remplis les pointillés.", { size: 21, italics: true, after: 160 }));
+  out.push(B.headingWithBookmark("Cartes muettes", "cartesmuettes", { size: 30, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.p("Recopie ou complète ces cartes dans ton cahier, puis remplis les pointillés.", { size: 25, italics: true, after: 160 }));
 
-  out.push(B.p("1. Les 24 régions à compléter", { size: 22, bold: true, before: 100, after: 60, color: B.GREEN }));
-  out.push(B.p("Consigne : écris le nom de chaque région à côté de son numéro. Pour les régions de ta zone, ajoute le chef-lieu.", { size: 20, italics: true, after: 60 }));
-  out.push(...imgBlock("geo6_carte_muette_regions", "La carte muette des 24 régions de Madagascar : vingt-quatre numéros à nommer."));
+  out.push(B.p("1. Les 24 régions à compléter", { size: 26, bold: true, before: 100, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : chaque numéro marque le chef-lieu d'une région. Écris le nom de chaque région à côté de son numéro. Pour les régions de ta zone, ajoute le nom du chef-lieu.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geo6_carte_muette_regions", "La carte muette des 24 régions de Madagascar : vingt-quatre numéros placés sur les chefs-lieux, à nommer."));
 
-  out.push(B.p("2. La répartition de la population à compléter", { size: 22, bold: true, before: 160, after: 60, color: B.GREEN }));
-  out.push(B.p("Consigne : nomme chaque zone (rouge : très peuplée ; verte : peu peuplée), puis explique pourquoi avec tes mots.", { size: 20, italics: true, after: 60 }));
+  out.push(B.p("2. La répartition de la population à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : nomme chaque zone (rouge : très peuplée ; verte : peu peuplée), puis explique pourquoi avec tes mots.", { size: 24, italics: true, after: 60 }));
   out.push(...imgBlock("geo6_carte_muette_population", "La carte muette de la répartition de la population : les points rouges pour les zones denses, les points verts pour les zones clairsemées."));
 
-  out.push(B.p("3. Les zones économiques à compléter", { size: 22, bold: true, before: 160, after: 60, color: B.GREEN }));
-  out.push(B.p("Consigne : écris le nom de chaque zone économique à côté de son numéro, cite une activité et un exemple de région malgache.", { size: 20, italics: true, after: 60 }));
+  out.push(B.p("3. Les grandes villes à nommer", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : l'étoile marque la capitale. Écris son nom, puis le nom des six grandes villes numérotées.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geo6_carte_muette_villes", "La carte muette des grandes villes : la capitale à l'étoile et six villes numérotées à nommer."));
+
+  out.push(B.p("4. Les ressources naturelles à identifier", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : pour chaque numéro, nomme la ressource naturelle, puis dis si elle est renouvelable ou non renouvelable.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geo6_carte_muette_ressources", "La carte muette des ressources naturelles : six ressources numérotées à identifier et à classer."));
+
+  out.push(B.p("5. Les zones économiques à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : écris le nom de chaque zone économique à côté de son numéro, cite une activité et un exemple de région malgache.", { size: 24, italics: true, after: 60 }));
   out.push(...imgBlock("geo6_carte_muette_zones", "La carte muette des zones économiques : sept pictogrammes numérotés à identifier."));
 
-  out.push(B.p("4. Le village écologique à légender", { size: 22, bold: true, before: 160, after: 60, color: B.GREEN }));
-  out.push(B.p("Consigne : écris le nom de chaque élément du village écologique à côté de son numéro : la source, les rizières, l'étang, l'atelier, le marché, l'école, le dépôt de tri, la forêt replantée, les panneaux solaires.", { size: 20, italics: true, after: 60 }));
+  out.push(B.p("6. L'exode rural à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : les flèches rouges montrent le départ des campagnes vers les villes. Nomme les villes d'arrivée, puis donne deux causes et deux conséquences de l'exode rural.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geo6_carte_muette_exode", "La carte muette de l'exode rural : les flèches rouges de la campagne vers les grandes villes."));
+
+  out.push(B.p("7. Les voies de communication à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : nomme les villes numérotées, puis indique quelles villes relient les routes, où passe le chemin de fer et quels sont les ports.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geo6_carte_muette_voies", "La carte muette des voies de communication : les routes, le chemin de fer, les ports et l'avion."));
+
+  out.push(B.p("8. Le village écologique à légender", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : écris le nom de chaque élément du village écologique à côté de son numéro : la source, les rizières, l'étang, l'atelier, le marché, l'école, le dépôt de tri, la colline replantée, les panneaux solaires.", { size: 24, italics: true, after: 60 }));
   out.push(...imgBlock("geo6_carte_muette_village", "Le plan du village écologique : neuf éléments numérotés à légender."));
 
   // ── 3. AUTO-ÉVALUATION ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Auto-évaluation", "autoevaluation", { size: 26, after: 120, align: AlignmentType.CENTER }));
-  out.push(B.p("Après chaque unité, coche la colonne qui correspond à ce que tu sais faire. Demande conseil à ton maître ou à ta maîtresse pour progresser.", { size: 21, italics: true, after: 160 }));
+  out.push(B.headingWithBookmark("Auto-évaluation", "autoevaluation", { size: 30, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.p("Après chaque unité, coche la colonne qui correspond à ce que tu sais faire. Demande conseil à ton maître ou à ta maîtresse pour progresser.", { size: 25, italics: true, after: 160 }));
   const evalRows = [tRow(["Compétence — Je suis capable de…", "Acquis", "En cours", "À revoir"], [52, 16, 16, 16], { header: true })];
   AUTO_EVAL.forEach(([unit, comps]) => {
     evalRows.push(tRow([unit, "", "", ""], [52, 16, 16, 16], { bold: true, bg: "F5F5F5", color: B.BLUE }));
@@ -212,18 +228,18 @@ function annexesContent(topics) {
 
   // ── 4. TABLE DES ILLUSTRATIONS ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Table des illustrations", "illustrations", { size: 26, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.headingWithBookmark("Table des illustrations", "illustrations", { size: 30, after: 120, align: AlignmentType.CENTER }));
   const illRows = [tRow(["Séance", "Titre de la séance", "Illustration"], [10, 45, 45], { header: true })];
   topics.forEach((t) => {
     illRows.push(new TableRow({
       children: [
-        B.cell([B.p(String(t.numero), { size: 18 })], { width: 10 }),
-        B.cell([B.p(t.titre, { size: 18 })], { width: 45 }),
+        B.cell([B.p(String(t.numero), { size: 22 })], { width: 10 }),
+        B.cell([B.p(t.titre, { size: 22 })], { width: 45 }),
         B.cell(
           [
-            B.p(t.image && t.image.legende ? t.image.legende : "—", { size: 18 }),
+            B.p(t.image && t.image.legende ? t.image.legende : "—", { size: 22 }),
             ...(t.scene && t.scene.legende
-              ? [B.p(t.scene.legende.replace(/^Document\s*:\s*/, ""), { size: 18, color: "555555" })]
+              ? [B.p(t.scene.legende.replace(/^Document\s*:\s*/, ""), { size: 22, color: "555555" })]
               : []),
           ],
           { width: 45 }
@@ -233,9 +249,9 @@ function annexesContent(topics) {
   });
   illRows.push(new TableRow({
     children: [
-      B.cell([B.p("Annexe", { size: 18 })], { width: 10 }),
-      B.cell([B.p("Cartes muettes", { size: 18 })], { width: 45 }),
-      B.cell([B.p("Les 24 régions à compléter ; la répartition de la population à compléter ; les zones économiques à compléter ; le village écologique à légender.", { size: 18 })], { width: 45 }),
+      B.cell([B.p("Annexe", { size: 22 })], { width: 10 }),
+      B.cell([B.p("Cartes muettes", { size: 22 })], { width: 45 }),
+      B.cell([B.p("Les 24 régions ; la répartition de la population ; les grandes villes ; les ressources naturelles ; les zones économiques ; l'exode rural ; les voies de communication ; le village écologique à légender.", { size: 23 })], { width: 45 }),
     ],
   }));
   out.push(new Table({ borders, width: { size: 100, type: WidthType.PERCENTAGE }, rows: illRows }));
@@ -243,12 +259,12 @@ function annexesContent(topics) {
 
   // ── 5. LOHARANOM-BAOVAO (SOURCES) ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Loharanom-Baovao (sources)", "sources", { size: 26, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.headingWithBookmark("Sources", "sources", { size: 30, after: 120, align: AlignmentType.CENTER }));
   SOURCES.forEach(([s, d]) => {
-    out.push(B.p(`• ${s}`, { size: 21, after: 40 }));
-    out.push(B.p(d, { size: 19, italics: true, indent: 360, after: 120, color: "555555" }));
+    out.push(B.p(`• ${s}`, { size: 25, after: 40 }));
+    out.push(B.p(d, { size: 23, italics: true, indent: 360, after: 120, color: "555555" }));
   });
-  out.push(B.p("Aucune source internet n'a été utilisée pour l'élaboration de ce manuel : tous les contenus, le vocabulaire et les volumes horaires suivent fidèlement le programme d'études officiel T6 en vigueur à Madagascar.", { size: 20, italics: true, before: 80, after: 200 }));
+  out.push(B.p("Aucune source internet n'a été utilisée pour l'élaboration de ce manuel : tous les contenus, le vocabulaire et les volumes horaires suivent fidèlement le programme d'études officiel T6 en vigueur à Madagascar.", { size: 24, italics: true, before: 80, after: 200 }));
 
   return out;
 }

@@ -1,4 +1,4 @@
-// make-svg-annexes.js — Cartes muettes pour les annexes du Manuel Géographie T6
+// make-svg-annexes.js — Cartes muettes pour les annexes du Manuel Géographie T6 (contour réaliste de Madagascar)
 const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
@@ -49,127 +49,335 @@ const poubelle = (x, y, s = 1) => `<g transform="translate(${x},${y}) scale(${s}
 const panneauSolaire = (x, y, s = 1) => `<g transform="translate(${x},${y}) scale(${s})"><rect x="-24" y="-16" width="48" height="32" fill="#01579B" stroke="#0277BD" stroke-width="2"/><line x1="0" y1="-16" x2="0" y2="16" stroke="#4FC3F7" stroke-width="2"/><line x1="-24" y1="0" x2="24" y2="0" stroke="#4FC3F7" stroke-width="2"/><line x1="-24" y1="-16" x2="-32" y2="-30" stroke="#546E7A" stroke-width="4"/><line x1="-24" y1="-16" x2="-14" y2="-30" stroke="#546E7A" stroke-width="4"/><line x1="0" y1="16" x2="0" y2="30" stroke="#546E7A" stroke-width="4"/></g>`;
 const cloture = (x1, y, x2, c = "#8D6E63") => { let s = `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="${c}" stroke-width="3"/>`; for (let x = x1; x <= x2; x += 24) s += `<line x1="${x}" y1="${y - 10}" x2="${x}" y2="${y + 10}" stroke="${c}" stroke-width="3"/>`; return s; };
 
-// ── Cartes muettes U6/annexes ──────────────────────────────────────────
-const badge = (x, y, n, c = "#01579B") => `<circle cx="${x}" cy="${y}" r="12" fill="${c}" stroke="#FFF" stroke-width="2"/><text x="${x}" y="${y + 5}" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">${n}</text>`;
-const ligneLeg = (x, y, n) => `${badge(x + 12, y, n)}${t(x + 44, y + 5, "………………………………", { a: "start", z: 18, c: "#78909C" })}`;
-const point = (x, y, r = 3, f = "#37474F") => `<circle cx="${x}" cy="${y}" r="${r}" fill="${f}"/>`;
+// ── Contour réaliste de Madagascar (coordonnées géographiques réelles) ──
+// Projection linéaire lat/lon -> SVG ; ratio réel N-S/E-O ≈ 1.93
+const LAT0 = -11.8, LAT1 = -25.7, LON0 = 43.0, LON1 = 50.6;
 
-// Carte muette 1 — Les 24 régions
+const REAL_COAST = [
+  [-11.95, 49.26], [-12.28, 49.32], [-12.53, 49.45], [-13.65, 50.00], [-14.27, 50.03],
+  [-14.88, 50.27], [-15.35, 50.50], [-15.98, 50.23], [-15.60, 49.75], [-16.17, 49.87],
+  [-17.15, 49.44], [-18.15, 49.42], [-19.90, 48.81], [-21.23, 48.35], [-22.15, 48.02],
+  [-22.79, 47.85], [-23.85, 47.55], [-25.03, 46.99], [-25.59, 45.16], [-24.68, 43.95],
+  [-23.35, 43.67], [-21.75, 43.37], [-20.28, 44.28], [-19.45, 44.45], [-18.06, 44.03],
+  [-17.00, 44.45], [-14.63, 47.76], [-13.68, 48.45], [-12.55, 49.05],
+];
+
+function madaProj(cx, cy, h) {
+  const w = h / 1.93;
+  return (lat, lon) => [
+    cx + (lon - (LON0 + LON1) / 2) / (LON1 - LON0) * w,
+    cy + (lat - (LAT0 + LAT1) / 2) / (LAT1 - LAT0) * h,
+  ];
+}
+
+// Silhouette réaliste de Madagascar + Nosy Be + Sainte-Marie
+function madaR(cx, cy, h, o = {}) {
+  const P = madaProj(cx, cy, h);
+  const d = REAL_COAST.map(([la, lo], i) => {
+    const [x, y] = P(la, lo);
+    return (i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1);
+  }).join(" ") + " Z";
+  const f = o.f || "#F1F8E9", s = o.s || "#8D6E63";
+  let out = `<path d="${d}" fill="${f}" stroke="${s}" stroke-width="${o.sw || 3}" stroke-linejoin="round"/>`;
+  const [nbx, nby] = P(-13.32, 48.26);
+  out += `<ellipse cx="${nbx.toFixed(1)}" cy="${nby.toFixed(1)}" rx="7" ry="5" fill="${f}" stroke="${s}" stroke-width="2"/>`;
+  const [smx, smy] = P(-16.9, 49.86);
+  out += `<ellipse cx="${smx.toFixed(1)}" cy="${smy.toFixed(1)}" rx="3.5" ry="10" fill="${f}" stroke="${s}" stroke-width="2"/>`;
+  return out;
+}
+
+// Les 24 régions, badge placé sur le chef-lieu (coordonnées réelles)
+// Ordre = ordre des leçons : Centre (S2) 1-6, Est (S3) 7-11, Nord/Ouest (S4) 12-18, Sud (S5) 19-24
+const REG24 = [
+  ["Analamanga", -18.91, 47.51], ["Vakinankaratra", -19.87, 47.03], ["Itasy", -19.30, 46.55],
+  ["Bongolava", -18.10, 45.35], ["Amoron'i Mania", -20.53, 47.24], ["Haute Matsiatra", -21.44, 47.09],
+  ["Ambatosoa", -15.30, 49.80], ["Analanjirofo", -17.05, 49.43], ["Atsinanana", -18.45, 49.25],
+  ["Alaotra-Mangoro", -17.60, 48.20], ["Atsimo-Atsinanana", -23.00, 47.60],
+  ["DIANA", -12.35, 49.20], ["SAVA", -14.30, 50.00], ["Sofia", -14.90, 47.80],
+  ["Betsiboka", -16.60, 46.75], ["Boeny", -15.72, 46.32], ["Melaky", -17.90, 44.35],
+  ["Menabe", -20.00, 44.40],
+  ["Ihorombe", -22.40, 46.12], ["Vatovavy", -21.10, 48.20], ["Fitovinany", -22.35, 47.45],
+  ["Atsimo-Andrefana", -23.30, 43.80], ["Androy", -25.20, 45.90], ["Anosy", -24.90, 46.99],
+];
+
+const badge = (x, y, n, c = "#01579B", r = 12) => `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r}" fill="${c}" stroke="#FFF" stroke-width="2"/><text x="${x.toFixed(1)}" y="${(y + 4).toFixed(1)}" text-anchor="middle" font-size="${r >= 11 ? 14 : 12}" font-weight="bold" fill="#FFF">${n}</text>`;
+const ligneLeg = (x, y, n) => `${badge(x + 12, y, n)}${t(x + 34, y + 5, "………………………………", { a: "start", z: 18, c: "#78909C" })}`;
+
+// ── Carte 1 : les 24 régions ──
 function muetteRegions() {
-  // positions locales des 24 régions (ordre des leçons : Centre, Est, Nord/Ouest, Sud)
-  const REG = [
-    [1, 57, 76], [2, 56, 96], [3, 51, 86], [4, 46, 76], [5, 55, 112], [6, 60, 128],
-    [7, 67, 48], [8, 73, 64], [9, 75, 92], [10, 63, 66], [11, 66, 162],
-    [12, 52, 14], [13, 63, 30], [14, 46, 52], [15, 43, 93], [16, 37, 72], [17, 32, 102], [18, 32, 132],
-    [19, 48, 120], [20, 69, 140], [21, 67, 151], [22, 41, 162], [23, 50, 186], [24, 56, 176],
-  ];
   let dots = "";
-  for (const [n, lx, ly] of REG) { const [x, y] = L(280, 330, 480, lx, ly); dots += badge(x, y, n); }
+  REG24.forEach(([nom, la, lo], i) => {
+    const [x, y] = madaProj(280, 330, 460)(la, lo);
+    dots += badge(x, y, i + 1, "#01579B", 10);
+  });
   let leg = "";
-  for (let i = 0; i < 12; i++) { leg += ligneLeg(430, 150 + i * 38, i + 1) + ligneLeg(710, 150 + i * 38, i + 13); }
-  return `${H(1000, 620)}${DEFS}${T("Carte muette : les 24 régions de Madagascar")}
-  ${mada(280, 330, 480, { f: "#F1F8E9" })}
-  ${dots}
-  ${cadre(420, 90, 550, 50, "#FFF8E1")}
-  ${t(695, 122, "Consigne : écris le nom de chaque région à côté de son numéro.", { z: 18, b: true, c: "#E65100" })}
-  ${leg}
-  ${C("Vérifie avec la carte des régions des séances 1 à 6.", 590)}
-</svg>`;
-}
-
-// Carte muette 2 — La répartition de la population
-function muettePopulation() {
-  // clusters de points : Hautes Terres (dense), Côte Est (dense), Ouest (clair), Sud (très clair)
-  let dots = "";
-  const rnd = (a, b) => a + (b - a) * ((Math.sin(a * 37.7 + b * 11.3) + 1) / 2);
-  for (let i = 0; i < 26; i++) { const [x, y] = L(300, 330, 420, rnd(48, 63), rnd(72, 118)); dots += point(x, y, 2.6, "#C00000"); }
-  for (let i = 0; i < 20; i++) { const [x, y] = L(300, 330, 420, rnd(69, 76), rnd(46, 148)); dots += point(x, y, 2.6, "#C00000"); }
-  for (let i = 0; i < 10; i++) { const [x, y] = L(300, 330, 420, rnd(28, 40), rnd(78, 142)); dots += point(x, y, 2.2, "#1E7B34"); }
-  for (let i = 0; i < 7; i++) { const [x, y] = L(300, 330, 420, rnd(44, 59), rnd(158, 190)); dots += point(x, y, 2.2, "#1E7B34"); }
-  const B = (lx, ly, n) => { const [x, y] = L(300, 330, 420, lx, ly); return badge(x, y, n, "#01579B"); };
-  return `${H(1000, 620)}${DEFS}${T("Carte muette : la répartition de la population")}
-  ${mada(300, 330, 420, { f: "#F1F8E9" })}
-  ${dots}
-  ${B(55, 95, 1)}${B(72, 96, 2)}${B(34, 110, 3)}${B(51, 174, 4)}
-  ${cadre(430, 90, 540, 50, "#FFF8E1")}
-  ${t(700, 122, "Consigne : nomme chaque zone (rouge : très peuplée ; verte : peu peuplée).", { z: 17, b: true, c: "#E65100" })}
-  ${ligneLeg(450, 170, 1)}${ligneLeg(450, 210, 2)}${ligneLeg(450, 250, 3)}${ligneLeg(450, 290, 4)}
-  ${t(560, 350, "Puis explique avec tes mots :", { z: 18, b: true })}
-  ${t(560, 390, "— pourquoi les zones rouges attirent", { z: 17 })}
-  ${t(560, 418, "la population ;", { z: 17 })}
-  ${t(560, 452, "— pourquoi les zones vertes", { z: 17 })}
-  ${t(560, 480, "restent peu peuplées.", { z: 17 })}
-  ${C("Vérifie avec la carte des séances 27 à 30.", 590)}
-</svg>`;
-}
-
-// Carte muette 3 — Les zones économiques
-function muetteZones() {
-  const Z = [
-    [1, 48, 90], [2, 36, 60], [3, 63, 122], [4, 41, 106], [5, 54, 118], [6, 60, 80], [7, 56, 182],
-  ];
-  const P = [epi(0, 0, 1.3), "", arbre(0, 0, 1), gemme(0, 0, 1.1), sac(0, 0, 1.1, "#FFE0B2"), "", parasol(0, 0, 1)];
-  let icons = "";
-  for (const [n, lx, ly] of Z) {
-    const [x, y] = L(300, 330, 420, lx, ly);
-    if (n === 2) icons += poisson(x, y, 1);
-    else if (n === 6) icons += immeuble(x, y, 0.42);
-    else icons += P[n - 1].replace('translate(0,0)', `translate(${x},${y})`).replace('translate(0.0,0.0)', `translate(${x},${y})`);
-    icons += badge(x + 26, y - 22, n, "#C00000");
+  for (let i = 0; i < 24; i++) {
+    const col = Math.floor(i / 8), lig = i % 8;
+    leg += ligneLeg(470 + col * 180, 150 + lig * 52, i + 1);
   }
-  return `${H(1000, 620)}${DEFS}${T("Carte muette : les grandes zones économiques")}
-  ${mada(300, 330, 420, { f: "#F1F8E9" })}
-  ${icons}
-  ${cadre(430, 90, 540, 50, "#FFF8E1")}
-  ${t(700, 122, "Consigne : écris le nom de chaque zone économique à côté de son numéro.", { z: 16, b: true, c: "#E65100" })}
-  ${ligneLeg(450, 165, 1)}${ligneLeg(450, 200, 2)}${ligneLeg(450, 235, 3)}${ligneLeg(450, 270, 4)}
-  ${ligneLeg(450, 305, 5)}${ligneLeg(450, 340, 6)}${ligneLeg(450, 375, 7)}
-  ${t(560, 430, "Pour chaque zone, cite une activité", { z: 18, b: true })}
-  ${t(560, 462, "et un exemple de région malgache.", { z: 18, b: true })}
-  ${C("Vérifie avec la carte des séances 51 et 52.", 590)}
+  return `${H(1000, 660)}${DEFS}${T("Carte muette : les 24 régions de Madagascar")}
+  ${madaR(280, 330, 460)}
+  ${dots}
+  ${cadre(460, 90, 520, 50, "#FFF8E1")}
+  ${t(720, 122, "Chaque numéro marque le chef-lieu de la région.", { z: 17, b: true, c: "#E65100" })}
+  ${t(720, 142, "Consigne : écris le nom de chaque région.", { z: 17, b: true, c: "#E65100" })}
+  ${leg}
+  ${t(720, 615, "Vérifie avec les cartes des séances 1 à 6.", { z: 17, i: true, c: "#546E7A" })}
 </svg>`;
 }
 
-// Carte muette 4 — Le village écologique à légender
+// ── Carte 2 : la répartition de la population ──
+function muettePopulation() {
+  const P = madaProj(300, 330, 460);
+  const rnd = (a, b, s) => a + (b - a) * ((Math.sin(a * 37.7 + b * 11.3 + s * 7.3) + 1) / 2);
+  let dots = "";
+  // Hautes Terres (très dense) + vallée de l'est de Tana
+  for (let i = 0; i < 24; i++) { const [x, y] = P(rnd(-19.8, -18.4, i), rnd(46.6, 47.9, i + 40)); dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6" fill="#C00000"/>`; }
+  for (let i = 0; i < 8; i++) { const [x, y] = P(rnd(-21.6, -20.2, i), rnd(46.7, 47.3, i + 80)); dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6" fill="#C00000"/>`; }
+  for (let i = 0; i < 6; i++) { const [x, y] = P(rnd(-18.2, -17.3, i), rnd(48.1, 48.6, i + 120)); dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6" fill="#C00000"/>`; }
+  // Côte Est (dense)
+  for (let i = 0; i < 16; i++) { const [x, y] = P(rnd(-22.5, -13.8, i), rnd(49.2, 50.0, i + 160)); dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.4" fill="#C00000"/>`; }
+  // Nord (Diego) et Nord-Ouest (Mahajanga)
+  for (let i = 0; i < 4; i++) { const [x, y] = P(rnd(-13.3, -12.4, i), rnd(49.1, 49.3, i + 200)); dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.4" fill="#C00000"/>`; }
+  for (let i = 0; i < 3; i++) { const [x, y] = P(rnd(-16.2, -15.4, i), rnd(46.1, 46.4, i + 240)); dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.4" fill="#C00000"/>`; }
+  // Ouest et Sud (peu dense)
+  for (let i = 0; i < 8; i++) { const [x, y] = P(rnd(-20.5, -16.5, i), rnd(43.8, 45.3, i + 280)); dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.2" fill="#1E7B34"/>`; }
+  for (let i = 0; i < 6; i++) { const [x, y] = P(rnd(-25.0, -23.0, i), rnd(43.9, 45.6, i + 320)); dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.2" fill="#1E7B34"/>`; }
+  for (let i = 0; i < 5; i++) { const [x, y] = P(rnd(-24.8, -22.6, i), rnd(45.7, 47.0, i + 360)); dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.2" fill="#1E7B34"/>`; }
+  const B = (la, lo, n) => { const [x, y] = P(la, lo); return badge(x, y, n, "#01579B"); };
+  return `${H(1000, 660)}${DEFS}${T("Carte muette : la répartition de la population")}
+  ${madaR(300, 330, 460)}
+  ${dots}
+  ${B(-19.2, 47.2, 1)}${B(-17.5, 49.6, 2)}${B(-18.5, 44.5, 3)}${B(-23.8, 45.2, 4)}
+  ${cadre(470, 110, 500, 50, "#FFF8E1")}
+  ${t(720, 136, "Points rouges : zones très peuplées ; points verts : zones peu peuplées.", { z: 15, b: true, c: "#E65100" })}
+  ${t(720, 156, "Consigne : nomme chaque zone numérotée, puis explique pourquoi.", { z: 15, b: true, c: "#E65100" })}
+  ${ligneLeg(500, 210, 1)}${ligneLeg(500, 262, 2)}
+  ${ligneLeg(500, 314, 3)}${ligneLeg(500, 366, 4)}
+  ${t(720, 440, "Puis complète :", { z: 18, b: true })}
+  ${t(720, 476, "« La population malgache est inégalement ………… :", { z: 17 })}
+  ${t(720, 508, "les plaines et les villes attirent, l'intérieur", { z: 17 })}
+  ${t(720, 540, "sec et le Grand Sud restent ………… . »", { z: 17 })}
+  ${t(720, 615, "Vérifie avec les cartes des séances 27 à 30.", { z: 17, i: true, c: "#546E7A" })}
+</svg>`;
+}
+
+// ── Carte 3 : les grandes villes ──
+function muetteVilles() {
+  const P = madaProj(300, 330, 460);
+  const VILLES = [
+    ["Antananarivo", -18.91, 47.51, "capitale"],
+    ["Toamasina", -18.15, 49.42], ["Mahajanga", -15.72, 46.32], ["Antsirabe", -19.87, 47.03],
+    ["Fianarantsoa", -21.44, 47.09], ["Toliara", -23.35, 43.67], ["Antsiranana", -12.28, 49.29],
+  ];
+  let marks = "";
+  VILLES.forEach(([nom, la, lo], i) => {
+    const [x, y] = P(la, lo);
+    if (i === 0) {
+      marks += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="13" fill="#C00000" stroke="#FFF" stroke-width="2"/>`;
+      marks += `<path d="M ${x.toFixed(1)} ${(y - 9).toFixed(1)} L ${(x + 3.2).toFixed(1)} ${(y - 2.5).toFixed(1)} L ${(x + 10).toFixed(1)} ${(y - 2.5).toFixed(1)} L ${(x + 4.5).toFixed(1)} ${(y + 1.8).toFixed(1)} L ${(x + 6.5).toFixed(1)} ${(y + 8.5).toFixed(1)} L ${x.toFixed(1)} ${(y + 4.5).toFixed(1)} L ${(x - 6.5).toFixed(1)} ${(y + 8.5).toFixed(1)} L ${(x - 4.5).toFixed(1)} ${(y + 1.8).toFixed(1)} L ${(x - 10).toFixed(1)} ${(y - 2.5).toFixed(1)} L ${(x - 3.2).toFixed(1)} ${(y - 2.5).toFixed(1)} Z" fill="#FFD54F" stroke="#C00000" stroke-width="1.5"/>`;
+    } else {
+      marks += badge(x, y, i);
+    }
+  });
+  return `${H(1000, 660)}${DEFS}${T("Carte muette : les grandes villes de Madagascar")}
+  ${madaR(300, 330, 460)}
+  ${marks}
+  ${cadre(470, 110, 500, 50, "#FFF8E1")}
+  ${t(720, 136, "L'étoile marque la capitale ; les numéros marquent les grandes villes.", { z: 15, b: true, c: "#E65100" })}
+  ${t(720, 156, "Consigne : écris le nom de la capitale et des six villes numérotées.", { z: 15, b: true, c: "#E65100" })}
+  ${ligneLeg(500, 210, 1)}${ligneLeg(500, 262, 2)}${ligneLeg(500, 314, 3)}
+  ${ligneLeg(740, 210, 4)}${ligneLeg(740, 262, 5)}${ligneLeg(740, 314, 6)}
+  ${t(720, 400, "À retenir :", { z: 18, b: true })}
+  ${t(720, 436, "« La ville où siège le chef-lieu de ma région", { z: 17 })}
+  ${t(720, 468, "s'appelle ………… et c'est la ville ………… . »", { z: 17 })}
+  ${t(720, 615, "Vérifie avec les séances 2 à 5 et 27 à 30.", { z: 17, i: true, c: "#546E7A" })}
+</svg>`;
+}
+
+// ── Carte 4 : les ressources naturelles ──
+function muetteRessources() {
+  const P = madaProj(300, 330, 460);
+  const items = [
+    [1, -17.5, 48.25, () => goutte(0, 0, 1.5), "l'eau : lacs et rivières"],
+    [2, -16.6, 49.9, () => arbre(0, 0, 1.1), "la forêt dense de l'Est"],
+    [3, -19.4, 46.4, () => champ(0, 0, 60, 44, 3), "les sols : rizières et champs"],
+    [4, -15.5, 45.6, () => poisson(0, 0, 1.1), "les ressources de la mer"],
+    [5, -22.6, 45.4, () => gemme(0, 0, 1.3), "les minerais et les pierres"],
+    [6, -24.3, 47.4, () => soleil(0, 0, 14), "le soleil, énergie renouvelable"],
+  ];
+  let icons = "";
+  items.forEach(([n, la, lo, fn]) => {
+    const [x, y] = P(la, lo);
+    icons += fn().replace(/translate\(([\d.-]+),([\d.-]+)\)/, `translate(${x.toFixed(1)},${y.toFixed(1)})`);
+    icons += badge(x + 24, y - 20, n, "#C00000");
+  });
+  return `${H(1000, 660)}${DEFS}${T("Carte muette : les ressources naturelles")}
+  ${madaR(300, 330, 460)}
+  ${icons}
+  ${riviere(...P(-16.9, 49.0), ...P(-19.6, 46.9))}
+  ${cadre(470, 110, 500, 50, "#FFF8E1")}
+  ${t(720, 136, "Consigne : pour chaque numéro, nomme la ressource naturelle,", { z: 15, b: true, c: "#E65100" })}
+  ${t(720, 156, "puis dis si elle est renouvelable ou non renouvelable.", { z: 15, b: true, c: "#E65100" })}
+  ${items.map(([n], i) => ligneLeg(500 + (i % 2) * 240, 210 + Math.floor(i / 2) * 62, n)).join("\n  ")}
+  ${t(720, 490, "Coche dans la liste : renouvelable ☐  ou  non renouvelable ☐", { z: 16, b: true })}
+  ${t(720, 615, "Vérifie avec les séances 11 à 13.", { z: 17, i: true, c: "#546E7A" })}
+</svg>`;
+}
+
+// ── Carte 5 : les zones économiques ──
+function muetteZones() {
+  const P = madaProj(300, 330, 460);
+  const items = [
+    [1, -19.3, 47.1, () => epi(0, 0, 1.5), "la zone agricole"],
+    [2, -21.6, 47.7, () => sac(0, 0, 1.2, "#FFE0B2"), "la zone artisanale"],
+    [3, -18.8, 47.6, () => immeuble(0, 0, 0.42), "la zone industrielle"],
+    [4, -16.6, 49.85, () => arbre(0, 0, 1.1), "la zone forestière"],
+    [5, -22.6, 45.3, () => gemme(0, 0, 1.3), "la zone minière"],
+    [6, -16.6, 45.9, () => poisson(0, 0, 1.2), "la zone de pêche"],
+    [7, -13.32, 48.26, () => parasol(0, 0, 1.15), "la zone touristique"],
+  ];
+  let icons = "";
+  items.forEach(([n, la, lo, fn]) => {
+    const [x, y] = P(la, lo);
+    icons += fn().replace(/translate\(([\d.-]+),([\d.-]+)\)/, `translate(${x.toFixed(1)},${y.toFixed(1)})`);
+    icons += badge(x + 24, y - 20, n, "#C00000");
+  });
+  return `${H(1000, 660)}${DEFS}${T("Carte muette : les grandes zones économiques")}
+  ${madaR(300, 330, 460)}
+  ${icons}
+  ${cadre(470, 110, 500, 50, "#FFF8E1")}
+  ${t(720, 136, "Consigne : nomme la zone économique de chaque numéro,", { z: 15, b: true, c: "#E65100" })}
+  ${t(720, 156, "puis cite une activité et un exemple de région.", { z: 15, b: true, c: "#E65100" })}
+  ${items.map(([n], i) => ligneLeg(500, 210 + i * 50, n)).join("\n  ")}
+  ${t(720, 600, "Vérifie avec les séances 51 et 52.", { z: 17, i: true, c: "#546E7A" })}
+</svg>`;
+}
+
+// ── Carte 6 : l'exode rural ──
+function muetteExode() {
+  const P = madaProj(300, 330, 460);
+  const V = (la, lo) => P(la, lo).map((v) => +v.toFixed(1));
+  const villes = [[-18.91, 47.51, "étoile"], [-18.15, 49.42], [-15.72, 46.32], [-19.87, 47.03], [-21.44, 47.09], [-12.28, 49.29]];
+  let marks = "";
+  villes.forEach(([la, lo], i) => {
+    const [x, y] = V(la, lo);
+    if (i === 0) marks += `<circle cx="${x}" cy="${y}" r="12" fill="#C00000" stroke="#FFF" stroke-width="2"/>`;
+    else marks += `<circle cx="${x}" cy="${y}" r="9" fill="#C00000" stroke="#FFF" stroke-width="2"/>`;
+  });
+  // flèches campagnes -> villes
+  const fleches = [
+    [[-16.4, 45.9], [-18.2, 47.2]], [[-19.6, 45.2], [-19.0, 47.3]], // vers Antananarivo (Ouest, Sud-Ouest)
+    [[-16.8, 47.9], [-17.9, 49.2]],                                  // vers Toamasina
+    [[-16.8, 45.5], [-15.9, 46.2]],                                  // vers Mahajanga
+    [[-20.6, 48.2], [-20.1, 47.4]],                                  // vers Antsirabe... (via Brickaville?) non: depuis Atsinanana sud
+    [[-22.6, 47.5], [-21.8, 47.2]],                                  // vers Fianarantsoa
+    [[-13.6, 48.9], [-12.7, 49.2]],                                  // vers Antsiranana
+  ];
+  let fl = "";
+  fleches.forEach(([[a, b], [c, d]]) => { const [x1, y1] = V(a, b), [x2, y2] = V(c, d); fl += fle(x1, y1, x2, y2, "#C00000", 4, "afR"); });
+  return `${H(1000, 660)}${DEFS}${T("Carte muette : l'exode rural à Madagascar")}
+  ${madaR(300, 330, 460)}
+  ${fl}
+  ${marks}
+  ${cadre(470, 110, 500, 50, "#FFF8E1")}
+  ${t(720, 136, "Les flèches rouges montrent le départ des campagnes vers les villes.", { z: 15, b: true, c: "#E65100" })}
+  ${t(720, 156, "Consigne : nomme les villes d'arrivée, puis donne deux causes et deux", { z: 15, b: true, c: "#E65100" })}
+  ${t(720, 176, "conséquences de l'exode rural.", { z: 15, b: true, c: "#E65100" })}
+  ${ligneLeg(500, 230, 1)}${ligneLeg(740, 230, 2)}${ligneLeg(500, 282, 3)}${ligneLeg(740, 282, 3 + 1)}
+  ${ligneLeg(500, 334, 5)}${ligneLeg(740, 334, 6)}
+  ${t(720, 410, "Causes : ……………………………………………………", { z: 17 })}
+  ${t(720, 448, "……………………………………………………………………", { z: 17, c: "#78909C" })}
+  ${t(720, 486, "Conséquences à la campagne : …………", { z: 17 })}
+  ${t(720, 524, "Conséquences à la ville : ……………………………", { z: 17 })}
+  ${t(720, 615, "Vérifie avec les séances 39 à 48.", { z: 17, i: true, c: "#546E7A" })}
+</svg>`;
+}
+
+// ── Carte 7 : les voies de communication ──
+function muetteVoies() {
+  const P = madaProj(300, 330, 460);
+  const V = (la, lo) => P(la, lo).map((v) => +v.toFixed(1));
+  // routes nationales principales (lignes brunes) et chemin de fer (pointillé)
+  const RN2 = [[-18.91, 47.51], [-18.83, 48.44], [-18.15, 49.42]];
+  const RN4 = [[-18.91, 47.51], [-17.88, 46.99], [-16.95, 46.83], [-15.72, 46.32]];
+  const RN7 = [[-18.91, 47.51], [-19.87, 47.03], [-20.53, 47.24], [-21.44, 47.09], [-22.4, 46.12], [-23.35, 43.67]];
+  const RAIL = [[-18.91, 47.51], [-18.6, 48.3], [-18.15, 49.42]];
+  const ligne = (pts, c, sw, dash) => {
+    let d = pts.map(([la, lo], i) => { const [x, y] = V(la, lo); return (i ? "L" : "M") + x + " " + y; }).join(" ");
+    return `<path d="${d}" fill="none" stroke="${c}" stroke-width="${sw}" ${dash ? `stroke-dasharray="${dash}"` : ""} stroke-linecap="round"/>`;
+  };
+  const villes = [[-18.91, 47.51, 1], [-18.15, 49.42, 2], [-15.72, 46.32, 3], [-19.87, 47.03, 4], [-21.44, 47.09, 5], [-23.35, 43.67, 6]];
+  let marks = "";
+  villes.forEach(([la, lo, n]) => { const [x, y] = V(la, lo); marks += badge(x, y, n, "#6D4C41"); });
+  const [ax, ay] = V(-18.6, 47.9);
+  return `${H(1000, 660)}${DEFS}${T("Carte muette : les voies de communication")}
+  ${madaR(300, 330, 460)}
+  ${ligne(RN2, "#8D6E63", 4)}${ligne(RN4, "#8D6E63", 4)}${ligne(RN7, "#8D6E63", 4)}
+  ${ligne(RAIL, "#37474F", 3, "8 6")}
+  ${marks}
+  ${navire(...V(-15.4, 46.1), 0.55)}${navire(...V(-18.0, 49.55), 0.5)}
+  ${avion(ax - 60, ay - 40, 0.5)}
+  ${fle(ax - 40, ay - 34, ax - 18, ay - 20, "#546E7A", 3)}
+  ${cadre(470, 110, 500, 50, "#FFF8E1")}
+  ${t(720, 136, "Consigne : nomme les villes numérotées, puis indique vers quelle ville", { z: 15, b: true, c: "#E65100" })}
+  ${t(720, 156, "mène chaque route, où passe le chemin de fer et quels sont les ports.", { z: 15, b: true, c: "#E65100" })}
+  ${ligneLeg(500, 210, 1)}${ligneLeg(740, 210, 2)}${ligneLeg(500, 262, 3)}
+  ${ligneLeg(740, 262, 4)}${ligneLeg(500, 314, 5)}${ligneLeg(740, 314, 6)}
+  ${t(500, 380, "La route relie ………… à ………… ;", { z: 17 })}
+  ${t(500, 418, "le chemin de fer relie ………… à ………… ;", { z: 17 })}
+  ${t(500, 456, "les navires marquent les ………… .", { z: 17 })}
+  ${t(720, 615, "Vérifie avec la séance 63 (transport) et les séances 51-52.", { z: 17, i: true, c: "#546E7A" })}
+</svg>`;
+}
+
+// ── Carte 8 : le village écologique à légender ──
 function muetteVillage() {
-  return `${H(1000, 620)}${DEFS}${T("Carte muette : le village écologique à légender")}
-  <path d="M 620 190 Q 780 60 940 190 Z" fill="#AED581" stroke="#689F38" stroke-width="3"/>
-  ${arbre(700, 150, 1.1)}${arbre(780, 165, 0.9)}${arbre(860, 150, 1)}${arbre(820, 130, 0.7)}
-  ${badge(650, 120, 8, "#C00000")}
-  ${riviere(60, 130, 340, 110)}
-  ${cloture(110, 160, 300)}
-  ${goutte(150, 135, 1.6)}
-  ${badge(100, 100, 2, "#C00000")}
-  ${champ(70, 400, 200, 120, 5)}
-  ${t(170, 380, "……………………", { z: 15, c: "#78909C" })}
-  ${badge(90, 360, 3, "#C00000")}
-  <ellipse cx="380" cy="450" rx="90" ry="34" fill="#4FC3F7" stroke="#0288D1" stroke-width="2"/>
-  ${poisson(360, 450, 0.7)}${poisson(400, 455, 0.5)}
-  ${badge(300, 410, 4, "#C00000")}
-  ${maison(600, 400, 1.3, "#FFE0B2")}${sac(560, 420, 1, "#D7CCC8")}
-  ${badge(560, 360, 5, "#C00000")}
-  ${maison(470, 240, 1.6, "#B3E5FC")}
-  ${badge(430, 200, 6, "#C00000")}
-  ${maison(700, 300, 1.4, "#FFF9C4")}
-  ${t(700, 340, "……………", { z: 14, c: "#78909C" })}
-  ${badge(660, 260, 7, "#C00000")}
-  ${poubelle(230, 240, 1)}${poubelle(265, 240, 1)}${poubelle(300, 240, 1)}
-  ${badge(230, 200, 1, "#C00000")}
-  ${panneauSolaire(870, 320, 0.75)}
-  ${badge(840, 270, 9, "#C00000")}
+  return `${H(1000, 660)}${DEFS}${T("Carte muette : le village écologique à légender")}
+  <path d="M 600 210 Q 760 70 930 210 Z" fill="#AED581" stroke="#689F38" stroke-width="3"/>
+  ${arbre(690, 160, 1.1)}${arbre(770, 175, 0.9)}${arbre(850, 160, 1)}${arbre(810, 135, 0.7)}
+  ${badge(630, 130, 8, "#C00000")}
+  ${riviere(60, 150, 340, 130)}
+  ${cloture(110, 180, 300)}
+  ${goutte(150, 155, 1.6)}
+  ${badge(95, 120, 2, "#C00000")}
+  ${champ(70, 420, 200, 120, 5)}
+  ${badge(90, 380, 3, "#C00000")}
+  <ellipse cx="380" cy="470" rx="90" ry="34" fill="#4FC3F7" stroke="#0288D1" stroke-width="2"/>
+  ${poisson(360, 470, 0.7)}${poisson(400, 475, 0.5)}
+  ${badge(300, 428, 4, "#C00000")}
+  ${maison(600, 420, 1.3, "#FFE0B2")}${sac(560, 440, 1, "#D7CCC8")}
+  ${badge(555, 380, 5, "#C00000")}
+  ${maison(470, 260, 1.6, "#B3E5FC")}
+  ${badge(430, 218, 6, "#C00000")}
+  ${maison(700, 320, 1.4, "#FFF9C4")}
+  ${badge(660, 280, 7, "#C00000")}
+  ${poubelle(230, 260, 1)}${poubelle(265, 260, 1)}${poubelle(300, 260, 1)}
+  ${badge(230, 218, 1, "#C00000")}
+  ${panneauSolaire(870, 340, 0.75)}
+  ${badge(840, 288, 9, "#C00000")}
   ${cadre(60, 60, 350, 40, "#FFF8E1")}
   ${t(235, 87, "Consigne : écris le nom de chaque élément du village écologique.", { z: 16, b: true, c: "#E65100" })}
-  ${ligneLeg(60, 510, 1)}${ligneLeg(290, 510, 2)}${ligneLeg(520, 510, 3)}
-  ${ligneLeg(60, 548, 4)}${ligneLeg(290, 548, 5)}${ligneLeg(520, 548, 6)}
-  ${ligneLeg(60, 586, 7)}${ligneLeg(290, 586, 8)}${ligneLeg(520, 586, 9)}
-  ${C("Vérifie avec les schémas des séances 67 à 76.", 612)}
+  ${ligneLeg(60, 530, 1)}${ligneLeg(290, 530, 2)}${ligneLeg(520, 530, 3)}
+  ${ligneLeg(60, 572, 4)}${ligneLeg(290, 572, 5)}${ligneLeg(520, 572, 6)}
+  ${ligneLeg(60, 614, 7)}${ligneLeg(290, 614, 8)}${ligneLeg(520, 614, 9)}
+  ${t(720, 430, "Aide-toi des mots suivants :", { z: 17, b: true })}
+  ${t(720, 468, "dépôt de tri — source clôturée —", { z: 16, c: "#546E7A" })}
+  ${t(720, 496, "rizières — étang piscicole — atelier", { z: 16, c: "#546E7A" })}
+  ${t(720, 524, "de raphia — marché — école —", { z: 16, c: "#546E7A" })}
+  ${t(720, 552, "colline replantée — panneaux solaires", { z: 16, c: "#546E7A" })}
+  ${t(720, 615, "Vérifie avec les schémas des séances 67 à 76.", { z: 17, i: true, c: "#546E7A" })}
 </svg>`;
 }
 
 const SVG = {
   geo6_carte_muette_regions: muetteRegions(),
   geo6_carte_muette_population: muettePopulation(),
+  geo6_carte_muette_villes: muetteVilles(),
+  geo6_carte_muette_ressources: muetteRessources(),
   geo6_carte_muette_zones: muetteZones(),
+  geo6_carte_muette_exode: muetteExode(),
+  geo6_carte_muette_voies: muetteVoies(),
   geo6_carte_muette_village: muetteVillage(),
 };
 

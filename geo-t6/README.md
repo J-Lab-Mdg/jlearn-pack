@@ -40,11 +40,11 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 - `src/verifications.py` — Vérifications structurelles ; contrôle anti-mention-ministérielle en regex `\bminist\w*` (le vocabulaire officiel « régions administratives » reste autorisé, toute mention de ministère reste bloquée).
 - `svg/` — 66 schémas pédagogiques (`geo6_*.png`) : U1 (8) + U2 (14) + U3 (10) + U4 (14) + U5 (14) + U6 (10 : notion, organisation juridique, Dina, modes de vie et loisirs, activités, habitation, infrastructures et sites, topographie, traditions, maquette comparée).
 - `scenes/` — 66 scènes semi-réalistes (une par leçon, JPEG 900 px q88) : 8 (U1) + 14 (U2) + 10 (U3) + 10 (U4) + 14 (U5) + 10 (U6).
-- `src/annexes.js` — Annexes : glossaire (64 termes du vocabulaire officiel T6), 4 cartes muettes, auto-évaluation par compétences (6 unités, 28 compétences), table des illustrations (66 leçons + annexe), Loharanom-Baovao (sources).
-- `src/audit.py` — Audit de contenu (adapté de geo-t5) : séquençage, unités, fiches, barèmes des 6 sujets d'examen, corrigés, mots interdits, typographie, images, annexes, vocabulaire officiel — 67 contrôles.
-- `svg/make-svg-annexes.js` — 4 cartes muettes (`geo6_carte_muette_*`) : les 24 régions à compléter, la répartition de la population, les zones économiques, le village écologique à légender.
-- `output/Manuel_Geographie_T6_JLearn.docx` — **Build V7 — édition complète : 6 unités + annexes, 78/78 numéros** (16 527 Ko ; 72 fiches de préparation ; 136 images : 66 schémas + 66 scènes + 4 cartes muettes ; 66 documents d'appui ; 78 mentions « Durée : » ; 18 mentions « Sujet d'examen T6 » ; 0 « à paraître » ; séquençage 1→78 ; verifications.py ✅ ; audit.py 67/67 ✅).
-- Empreinte SHA-256 du build V7 : `19fd858a1835d171f8062a5cd5f50cfa871237e4a6676fd4d601090def746a3a`.
+- `src/annexes.js` — Annexes : glossaire (64 termes du vocabulaire officiel T6), 8 cartes muettes, auto-évaluation par compétences (6 unités, 28 compétences), table des illustrations (66 leçons + annexe), Sources (programme d'études officiel T6).
+- `src/audit.py` — Audit de contenu : séquençage, unités, fiches, barèmes des 6 sujets d'examen, corrigés, mots interdits, typographie, images, annexes (8 cartes), vocabulaire officiel — 71 contrôles.
+- `svg/make-svg-annexes.js` — 8 cartes muettes (`geo6_carte_muette_*`) à contour réel de Madagascar (projection lat/lon réelle, îles Nosy Be et Sainte-Marie) : les 24 régions (badges sur les chefs-lieux), la répartition de la population, les grandes villes, les ressources naturelles, les zones économiques, l'exode rural, les voies de communication, le village écologique à légender.
+- `output/Manuel_Geographie_T6_JLearn.docx` — **Build V8 — édition complète révisée** (16 825 Ko) : couverture au style du manuel SVT T9 (Collection J-Learn / titre rouge / Classe de T6 — Année complète) ; polices agrandies de +2 pt (corps 12,5 pt) ; puces d'exemples supprimées des leçons (paragraphes seuls) ; 8 cartes muettes à contour réel de Madagascar (24 régions positionnées sur les chefs-lieux) ; section « Sources » (sans titre malgache) ; 78/78 numéros ; 72 fiches ; 140 images ; 66 documents d'appui ; 0 « à paraître » ; verifications.py ✅ ; audit.py 71/71 ✅.
+- Empreinte SHA-256 du build V8 : `0782bf531e4eed4266caf252f7f936333833454b498453eed8ae6f4089773856`.
 
 ## Générer le manuel
 

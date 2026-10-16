@@ -19,7 +19,7 @@ const FONT = "Times New Roman";
 // ── Runs : parse les marqueurs **mot** (mot en gras + couleur) ──────────
 // mkRuns("Le **Nord** est en haut", {color: CORRIGE}) → "Nord" gras + couleur
 function mkRuns(text, opts = {}) {
-  const { size = 20, bold = false, italics = false, color = BLACK, kwColor = null } = opts;
+  const { size = 24, bold = false, italics = false, color = BLACK, kwColor = null } = opts;
   const parts = String(text).split(/(\*\*[^*]+\*\*)/g).filter((s) => s !== "");
   return parts.map((part) => {
     const isKw = part.startsWith("**") && part.endsWith("**");
@@ -35,7 +35,7 @@ function mkRuns(text, opts = {}) {
 
 // ── Paragraphe simple (alignement, espacement, puces) ───────────────────
 function p(text, opts = {}) {
-  const { size = 20, bold = false, italics = false, color = BLACK, kwColor = null,
+  const { size = 24, bold = false, italics = false, color = BLACK, kwColor = null,
     align = AlignmentType.LEFT, after = 80, before = 0, indent = 0, bullet = false } = opts;
   return new Paragraph({
     alignment: align,
@@ -47,13 +47,13 @@ function p(text, opts = {}) {
 }
 
 // Paragraphe vide (espacement)
-function pEmpty(size = 14) {
+function pEmpty(size = 18) {
   return new Paragraph({ spacing: { after: 60 }, children: [new TextRun({ text: "", size, font: FONT })] });
 }
 
 // ── Paragraphe avec mot clé coloré partout où il apparaît (leçon) ───────
 function pHighlight(text, keyword, keyColor = BLUE, opts = {}) {
-  const { size = 21, after = 100 } = opts;
+  const { size = 25, after = 100 } = opts;
   if (!keyword) return p(text, { size, after });
   const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const regex = new RegExp(`(${escaped})`, "gi");
@@ -89,12 +89,12 @@ function cell(children, opts = {}) {
 // meta = { discipline, theme, titre, objectif, documentation, classe, seanceNum, total, duree }
 function metaTable(meta) {
   const L = (label, value) => [
-    cell([p(label, { bold: true, size: 20, after: 20 })], { width: 18 }),
-    cell([p(value, { size: 20, after: 20 })], { width: 34 }),
+    cell([p(label, { bold: true, size: 24, after: 20 })], { width: 18 }),
+    cell([p(value, { size: 24, after: 20 })], { width: 34 }),
   ];
   const R = (label, value) => [
-    cell([p(label, { bold: true, size: 20, after: 20 })], { width: 16 }),
-    cell([p(value, { size: 20, after: 20 })], { width: 32 }),
+    cell([p(label, { bold: true, size: 24, after: 20 })], { width: 16 }),
+    cell([p(value, { size: 24, after: 20 })], { width: 32 }),
   ];
   const rows = [];
   const lignesGauche = [
@@ -129,19 +129,19 @@ function deroulementHeader() {
   const row1 = new TableRow({
     tableHeader: true,
     children: [
-      cell([p("Étapes et Durée", { bold: true, size: 18, align: AlignmentType.CENTER })], { shading: HEADER_BG, width: 13 }),
-      cell([p("Déroulement de la leçon", { bold: true, size: 18, align: AlignmentType.CENTER })], { shading: HEADER_BG, colSpan: 2, width: 50 }),
-      cell([p("Technique et Stratégie", { bold: true, size: 18, align: AlignmentType.CENTER })], { shading: HEADER_BG, width: 12 }),
-      cell([p("Support et Matériel", { bold: true, size: 18, align: AlignmentType.CENTER })], { shading: HEADER_BG, width: 14 }),
-      cell([p("Observation", { bold: true, size: 18, align: AlignmentType.CENTER })], { shading: HEADER_BG, width: 11 }),
+      cell([p("Étapes et Durée", { bold: true, size: 22, align: AlignmentType.CENTER })], { shading: HEADER_BG, width: 13 }),
+      cell([p("Déroulement de la leçon", { bold: true, size: 22, align: AlignmentType.CENTER })], { shading: HEADER_BG, colSpan: 2, width: 50 }),
+      cell([p("Technique et Stratégie", { bold: true, size: 22, align: AlignmentType.CENTER })], { shading: HEADER_BG, width: 12 }),
+      cell([p("Support et Matériel", { bold: true, size: 22, align: AlignmentType.CENTER })], { shading: HEADER_BG, width: 14 }),
+      cell([p("Observation", { bold: true, size: 22, align: AlignmentType.CENTER })], { shading: HEADER_BG, width: 11 }),
     ],
   });
   const row2 = new TableRow({
     tableHeader: true,
     children: [
       cell([p("")], { shading: HEADER_BG2, width: 13 }),
-      cell([p("Enseignant", { bold: true, size: 18, align: AlignmentType.CENTER })], { shading: HEADER_BG2, width: 25 }),
-      cell([p("Apprenants", { bold: true, size: 18, align: AlignmentType.CENTER })], { shading: HEADER_BG2, width: 25 }),
+      cell([p("Enseignant", { bold: true, size: 22, align: AlignmentType.CENTER })], { shading: HEADER_BG2, width: 25 }),
+      cell([p("Apprenants", { bold: true, size: 22, align: AlignmentType.CENTER })], { shading: HEADER_BG2, width: 25 }),
       cell([p("")], { shading: HEADER_BG2, width: 12 }),
       cell([p("")], { shading: HEADER_BG2, width: 14 }),
       cell([p("")], { shading: HEADER_BG2, width: 11 }),
@@ -153,15 +153,15 @@ function deroulementHeader() {
 // Ligne d'étape normale (I. Révision, III. Évaluation, sous-étapes 1-6)
 // steps : { etape, duree, enseignant: [Paragraph|string], apprenants: [...], technique, support }
 function stepRow(st) {
-  const toParas = (arr, size = 17) =>
+  const toParas = (arr, size = 21) =>
     (arr || []).map((x) => (typeof x === "string" ? p(x, { size, after: 40 }) : x));
   return new TableRow({
     children: [
-      cell([p(st.etape, { bold: true, size: 18, after: 30 }), ...(st.duree ? [p(st.duree, { italics: true, size: 17 })] : [])], { width: 13 }),
+      cell([p(st.etape, { bold: true, size: 22, after: 30 }), ...(st.duree ? [p(st.duree, { italics: true, size: 21 })] : [])], { width: 13 }),
       cell(toParas(st.enseignant), { width: 25 }),
       cell(toParas(st.apprenants), { width: 25 }),
-      cell(toParas(st.technique ? [st.technique] : [], 17), { width: 12 }),
-      cell(toParas(st.support ? [st.support] : ["—"], 17), { width: 14 }),
+      cell(toParas(st.technique ? [st.technique] : [], 19), { width: 12 }),
+      cell(toParas(st.support ? [st.support] : ["—"], 19), { width: 14 }),
       cell([p("")], { width: 11 }),
     ],
   });
@@ -172,7 +172,7 @@ function sectionRow(text, duree) {
   return new TableRow({
     children: [
       cell(
-        [p(text, { bold: true, size: 19, after: 20 }), ...(duree ? [p(duree, { italics: true, size: 17 })] : [])],
+        [p(text, { bold: true, size: 23, after: 20 }), ...(duree ? [p(duree, { italics: true, size: 21 })] : [])],
         { colSpan: 6, shading: "EAF3FB" }
       ),
     ],
@@ -189,7 +189,7 @@ function deroulementTable(rows) {
 
 // ── Exercices → paragraphes (cellule Enseignant de la fiche) ────────────
 // exo = { consigne, items: [..], corrige: [..], points }
-function exosToParas(exos, size = 16) {
+function exosToParas(exos, size = 20) {
   const out = [];
   exos.forEach((ex, i) => {
     out.push(p(`Exercice ${i + 1} : ${ex.consigne}`, { italics: true, size, after: 30 }));
@@ -200,7 +200,7 @@ function exosToParas(exos, size = 16) {
 }
 
 // Corrigé → paragraphes (cellule Apprenants de la fiche ; mots-clés **..** en rose)
-function corrigeToParas(exos, size = 16) {
+function corrigeToParas(exos, size = 20) {
   const out = [];
   exos.forEach((ex, i) => {
     out.push(p(`Corrigé de l'exercice ${i + 1} :`, { bold: true, size, after: 25 }));
@@ -215,14 +215,14 @@ function leconTitre(text) {
   return new Paragraph({
     alignment: AlignmentType.CENTER,
     spacing: { before: 120, after: 160 },
-    children: [new TextRun({ text, bold: true, color: RED, size: 26, font: FONT })],
+    children: [new TextRun({ text, bold: true, color: RED, size: 30, font: FONT })],
   });
 }
 
 function leconSousTitre(text) {
   return new Paragraph({
     spacing: { before: 140, after: 80 },
-    children: [new TextRun({ text, bold: true, color: GREEN, size: 22, font: FONT })],
+    children: [new TextRun({ text, bold: true, color: GREEN, size: 26, font: FONT })],
   });
 }
 
@@ -230,7 +230,7 @@ function leconSousSousTitre(text) {
   return new Paragraph({
     spacing: { before: 80, after: 60 },
     indent: { left: 240 },
-    children: [new TextRun({ text, bold: true, color: BLACK, size: 21, font: FONT })],
+    children: [new TextRun({ text, bold: true, color: BLACK, size: 25, font: FONT })],
   });
 }
 
@@ -252,7 +252,7 @@ function imageBlock(imgPath, displayWidth, legende) {
     paras.push(new Paragraph({
       alignment: AlignmentType.CENTER,
       spacing: { after: 140 },
-      children: [new TextRun({ text: legende, italics: true, size: 17, color: "444444", font: FONT })],
+      children: [new TextRun({ text: legende, italics: true, size: 21, color: "444444", font: FONT })],
     }));
   }
   return paras;
@@ -303,7 +303,7 @@ function sceneBlock(imgPath, displayWidth, legende) {
     paras.push(new Paragraph({
       alignment: AlignmentType.CENTER,
       spacing: { after: 140 },
-      children: [new TextRun({ text: legende, italics: true, size: 17, color: "444444", font: FONT })],
+      children: [new TextRun({ text: legende, italics: true, size: 21, color: "444444", font: FONT })],
     }));
   }
   return paras;
@@ -311,7 +311,7 @@ function sceneBlock(imgPath, displayWidth, legende) {
 
 // ── Titres + signets (sommaire interactif) ─────────────────────────────
 function headingWithBookmark(text, anchorId, opts = {}) {
-  const { size = 26, bold = true, color = BLACK, align = AlignmentType.LEFT, after = 120, before = 0, level = null } = opts;
+  const { size = 30, bold = true, color = BLACK, align = AlignmentType.LEFT, after = 120, before = 0, level = null } = opts;
   const run = new TextRun({ text, bold, color, size, font: FONT });
   return new Paragraph({
     alignment: align,
@@ -322,7 +322,7 @@ function headingWithBookmark(text, anchorId, opts = {}) {
 }
 
 function tocLink(label, anchor, opts = {}) {
-  const { size = 20, indent = 0, bold = false } = opts;
+  const { size = 24, indent = 0, bold = false } = opts;
   return new Paragraph({
     spacing: { after: 40 },
     indent: indent ? { left: indent } : undefined,
