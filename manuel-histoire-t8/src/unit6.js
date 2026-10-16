@@ -83,6 +83,7 @@ figs.u6f5 = (() => { const { s, y } = head('La marche vers l’indépendance', [
   b += txt(500, top + 4 * 84 + 18, 'soixante-quatre ans après 1896, Madagascar redevient souverain', 21, OCRE, 'bold', 'middle');
   return svg(1000, top + 4 * 84 + 50, s + b); })();
 
+
 const S = [
   {
     t: 'Les origines de la colonisation', comp: 'Madagascar colonie française', theme: 'Causes internes et externes de la colonisation de 1896',
@@ -91,13 +92,49 @@ const S = [
     revQ: 'Qui gouverne réellement le royaume après 1863, et par quel mécanisme ?',
     revRA: 'Le Premier ministre hova (Rainilaiarivony), allié par mariage aux reines successives, avec l’oligarchie merina.',
     situation: 'Le 30 septembre 1895, les canons français tonnent sur Antananarivo ; le lendemain, la reine signe la reddition. L’année suivante, Madagascar est déclaré colonie française et la royauté abolie. Comment un royaume reconnu, doté d’une armée et d’écoles, a-t-il pu tomber ? La réponse se trouve à la fois dans l’île — et à des milliers de kilomètres d’elle.',
-    def: 'La colonisation de Madagascar (1896) a des origines internes : la charte Lambert (1855), par laquelle des privilèges économiques furent promis à un Français ; l’héritage de Jean Laborde, dont la succession servit de prétexte à la France ; la guerre franco-hova de 1895 ; puis l’abdication de Ranavalona III et la fin de la royauté. Et des origines externes : les rivalités coloniales, la conférence de Berlin (1885) et la convention de Zanzibar, la révolution industrielle, et la « mission civilisatrice » invoquée par Jules Ferry.',
-    autrement: 'des querelles franco-malgaches anciennes (charte Lambert, héritage Laborde) fournissent les prétextes ; l’Europe industrielle en course aux colonies fournit le mobile ; la guerre de 1895 fournit le dénouement.',
-    concept: 'Côté interne, tout un passif s’accumule. En 1855, le prince héritier Rakoto — futur Radama II — signe la charte Lambert : ce document promet au Français Joseph Lambert d’immenses privilèges économiques (terres, mines, travaux) ; annulée ensuite par le gouvernement malgache, la charte nourrit une querelle d’indemnités que Paris ressort à chaque crise. S’y ajoute l’héritage de Jean Laborde : cet industriel français, bâtisseur des ateliers de Mantasoa, meurt en 1878 ; le royaume refuse de reconnaître la transmission de ses terres à ses héritiers — car la terre malgache ne se vend pas aux étrangers ; la France en fait un casus belli. Deux guerres franco-hova s’ensuivent : celle de 1883-1885, qui impose un premier traité ambigu, puis celle de 1895 : une colonne française débarque à Majunga, remonte vers les Hautes Terres et prend Antananarivo le 30 septembre. En 1896, la France proclame l’annexion : Madagascar devient colonie ; en 1897, Ranavalona III est contrainte à l’exil — c’est la fin de la royauté. Côté externe, les forces profondes : la révolution industrielle réclame matières premières et débouchés ; les rivalités entre puissances font des colonies une question de rang ; la conférence de Berlin (1885) a codifié le partage, et la convention de Zanzibar a livré Madagascar à l’influence française avec l’accord anglais ; enfin l’idéologie — la « mission civilisatrice » théorisée par Jules Ferry — habille la conquête en devoir moral. Prétextes internes, mobiles externes : quand les deux se rejoignent, le sort de l’île est scellé.',
+    legende: 'Prétextes dans l’île, mobiles en Europe : quand les deux se rejoignent, le sort du royaume est scellé.',
+    motsCles: ['charte Lambert 1855', 'Jean Laborde', 'héritage', 'guerres franco-hova', '1895', 'annexion 1896', 'exil 1897', 'fin de la royauté', 'rivalités coloniales', 'convention de Zanzibar', 'mission civilisatrice'],
+    sections: [
+      {
+        titre: 'Les origines internes : un passif qui s’accumule',
+        paras: ['Côté interne, les prétextes s’empilent :'],
+        puces: [
+          'en 1855, le prince héritier Rakoto — futur Radama II — signe la charte Lambert : ce document promet au Français Joseph Lambert d’immenses privilèges économiques (terres, mines, travaux) ; annulée ensuite par le gouvernement malgache, la charte nourrit une querelle d’indemnités que Paris ressort à chaque crise ;',
+          's’y ajoute l’héritage de Jean Laborde : cet industriel français, bâtisseur des ateliers de Mantasoa, meurt en 1878 ; le royaume refuse de reconnaître la transmission de ses terres à ses héritiers — car la terre malgache ne se vend pas aux étrangers ; la France en fait un casus belli ;',
+          'deux guerres franco-hova s’ensuivent : celle de 1883-1885, qui impose un premier traité ambigu, puis celle de 1895 — une colonne française débarque à Majunga, remonte vers les Hautes Terres et prend Antananarivo le 30 septembre.',
+        ],
+      },
+      {
+        titre: 'Les origines externes : les forces profondes',
+        paras: [
+          'Côté externe : la révolution industrielle réclame matières premières et débouchés ; les rivalités entre puissances font des colonies une question de rang ; la conférence de Berlin (1885) a codifié le partage, et la convention de Zanzibar a livré Madagascar à l’influence française avec l’accord anglais ; enfin l’idéologie — la « mission civilisatrice » théorisée par Jules Ferry — habille la conquête en devoir moral.',
+        ],
+      },
+      {
+        titre: '1896-1897 : l’annexion et la fin de la royauté',
+        paras: [
+          'En 1896, la France proclame l’annexion : Madagascar devient colonie ; en 1897, Ranavalona III est contrainte à l’exil — c’est la fin de la royauté. Prétextes internes, mobiles externes : quand les deux se rejoignent, le sort de l’île est scellé.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'La loi d’annexion de 1896',
+      source: 'd’après la loi française du 6 août 1896 et l’exposé de ses motifs — extraits adaptés',
+      texte: 'Article unique. Est déclarée colonie française l’île de Madagascar, avec les îles qui en dépendent. — Dans l’exposé des motifs, le gouvernement expliquait : les engagements pris envers la France n’ont cessé d’être violés ; les droits acquis par nos nationaux, issus des conventions anciennes, n’ont pas été respectés ; l’ordre ne saurait être garanti que par la prise de possession définitive. L’annexion assurera à notre commerce et à notre industrie les débouchés qu’ils attendent.',
+      questions: ['Quels « prétextes internes » reconnais-tu dans l’exposé des motifs ?',
+        'Quelle phrase révèle le mobile économique de l’annexion ?',
+        'Que penser de l’expression « prise de possession » appliquée à un royaume reconnu par des traités ?'],
+      reponses: ['Les « engagements violés » et les « droits acquis par nos nationaux » renvoient aux querelles de la charte Lambert et de l’héritage Laborde — les prétextes accumulés depuis 1855.',
+        'La dernière : l’annexion doit assurer « à notre commerce et à notre industrie les débouchés qu’ils attendent » — l’aveu du mobile industriel et commercial.',
+        'Elle traite un État souverain, reconnu par des traités, comme une chose que l’on prend : le droit du plus fort remplace le droit des traités — c’est toute la logique coloniale.']
+    },
+    lexique: [
+      ['Charte', 'document accordant des droits ou privilèges'],
+      ['Casus belli', 'fait invoqué pour justifier une guerre'],
+      ['Annexion', 'rattachement d’un territoire à un État par décision unilatérale'],
+      ['Prétexte', 'raison mise en avant pour masquer le vrai mobile'],
+    ],
     synthese: 'Origines internes : charte Lambert (1855), héritage de Jean Laborde, guerre franco-hova de 1895, abdication de Ranavalona III et fin de la royauté. Origines externes : rivalités coloniales, Berlin 1885 et convention de Zanzibar, révolution industrielle, « mission civilisatrice » de Jules Ferry. Résultat : 1896, Madagascar colonie française.',
-    method: ['Classer les causes en deux colonnes : internes (dans l’île) et externes (en Europe).', 'Dater la chaîne finale : guerre 1895 → annexion 1896 → exil de la reine 1897.', 'Montrer que les causes internes sont des prétextes et les externes des mobiles profonds.'],
-    exemple: 'Le schéma de la conquête : la France invoque la charte Lambert et l’héritage Laborde (prétextes), forte de l’accord anglais de la convention de Zanzibar (feu vert), poussée par son industrie et son prestige (mobiles) — et l’expédition de 1895 conclut par la force.',
-    erreur: 'Dater la colonisation de 1895 : cette année-là a lieu la guerre et la prise d’Antananarivo, mais c’est en 1896 que Madagascar est officiellement annexé et déclaré colonie française, et la royauté ne disparaît qu’avec l’exil de la reine en 1897. Trois dates, trois faits distincts.',
     saistu: 'Jean Laborde est un personnage paradoxal : naufragé recueilli en 1831, il bâtit pour Ranavalona I le complexe industriel de Mantasoa — canons, verre, savon, tout y était fabriqué par des milliers d’ouvriers malgaches ! Ami du pouvoir puis expulsé, revenu comme consul de France, c’est sa succession qui servira de prétexte à la conquête. L’homme qui avait industrialisé le royaume fournit, malgré lui, l’argument pour l’abattre.',
     exos: ['Classe en cause interne ou externe : a) la révolution industrielle ; b) la charte Lambert ; d) la convention de Zanzibar ; e) l’héritage de Jean Laborde.',
       'Les dates. a) Quand la charte Lambert est-elle signée ? b) Quand a lieu la guerre franco-hova décisive ? d) Quand Madagascar devient-il colonie ? e) Que se passe-t-il pour Ranavalona III ?',
@@ -114,13 +151,49 @@ const S = [
     revQ: 'Cite deux causes internes et deux causes externes de la colonisation.',
     revRA: 'Internes : charte Lambert, héritage Laborde, guerre de 1895 ; externes : Berlin 1885, convention de Zanzibar, révolution industrielle, mission civilisatrice (deux de chaque).',
     situation: 'Du jour au lendemain, les Malgaches changent de maîtres : plus de reine, plus de Premier ministre — un gouverneur général français règne depuis Antananarivo, et ses ordres descendent jusqu’au moindre village par une chaîne de fonctionnaires. Pour le paysan, la colonisation a trois visages très concrets : le chef de canton, l’impôt et la corvée. Comment la colonie était-elle administrée ?',
-    def: 'La colonie est dirigée par un gouverneur général, dont l’autorité descend par échelons : chef de province, chef de district, chef de canton, aidés d’auxiliaires malgaches (interprètes, commis, gardes). L’exploitation repose sur le code de l’indigénat — un régime de lois spécial pour les colonisés —, le pacte colonial — la colonie ne produit et ne commerce que pour la métropole — et les impôts et prestations obligatoires.',
-    autrement: 'un seul chef français au sommet, des chefs de province, de district et de canton en dessous ; et pour le peuple : des lois à part, un commerce verrouillé au profit de la France, des impôts et des journées de travail dues.',
-    concept: 'La pyramide d’abord. Le gouverneur général — le premier fut Gallieni (1896-1905) — concentre tous les pouvoirs civils et militaires ; il découpe l’île en provinces, confiées à des chefs de province ; chaque province se divise en districts, chaque district en cantons. Les fonctionnaires français étant peu nombreux, l’administration recrute des auxiliaires malgaches — interprètes, commis, gardes, instituteurs — qui font tourner la machine au quotidien : la colonisation gouverne aussi par des mains malgaches. Les instruments ensuite. Le code de l’indigénat sépare juridiquement les habitants : les « citoyens » français relèvent du droit commun ; les « indigènes » — l’immense majorité des Malgaches — relèvent d’un régime spécial où l’administrateur peut punir sans tribunal : amendes, emprisonnement, travail forcé pour des fautes aussi vagues que le « manque de respect ». Le pacte colonial verrouille l’économie : la colonie doit fournir ses matières premières à la métropole, acheter les produits de la métropole, et ne pas développer d’industrie concurrente — Madagascar produit pour la France, pas pour lui-même. Les impôts et prestations complètent le dispositif : impôt de capitation payé par chaque homme adulte — en argent, ce qui force à travailler pour les colons —, impôts sur le bétail et les rizières, et prestations : journées de travail obligatoires et gratuites sur les routes et les chantiers. Ce triple système — droit inégal, économie captive, travail contraint — définit l’exploitation coloniale que la séance suivante détaillera.',
+    legende: 'Du gouverneur général au chef de canton : une pyramide qui descend jusqu’au moindre village.',
+    motsCles: ['gouverneur général', 'Gallieni', 'chef de province', 'chef de district', 'chef de canton', 'auxiliaires', 'code de l’indigénat', 'pacte colonial', 'capitation', 'prestations'],
+    sections: [
+      {
+        titre: 'La pyramide administrative',
+        paras: [
+          'Le gouverneur général — le premier fut Gallieni (1896-1905) — concentre tous les pouvoirs civils et militaires ; il découpe l’île en provinces, confiées à des chefs de province ; chaque province se divise en districts, chaque district en cantons. Les fonctionnaires français étant peu nombreux, l’administration recrute des auxiliaires malgaches — interprètes, commis, gardes, instituteurs — qui font tourner la machine au quotidien : la colonisation gouverne aussi par des mains malgaches.',
+        ],
+      },
+      {
+        titre: 'Les instruments de l’exploitation',
+        paras: ['Trois instruments encadrent la population :'],
+        puces: [
+          'le code de l’indigénat sépare juridiquement les habitants : les « citoyens » français relèvent du droit commun ; les « indigènes » — l’immense majorité des Malgaches — relèvent d’un régime spécial où l’administrateur peut punir sans tribunal : amendes, emprisonnement, travail forcé pour des fautes aussi vagues que le « manque de respect » ;',
+          'le pacte colonial verrouille l’économie : la colonie doit fournir ses matières premières à la métropole, acheter les produits de la métropole, et ne pas développer d’industrie concurrente — Madagascar produit pour la France, pas pour lui-même ;',
+          'les impôts et prestations complètent le dispositif : impôt de capitation payé par chaque homme adulte — en argent, ce qui force à travailler pour les colons —, impôts sur le bétail et les rizières, et prestations : journées de travail obligatoires et gratuites sur les routes et les chantiers.',
+        ],
+      },
+      {
+        titre: 'Un système cohérent',
+        paras: [
+          'Ce triple système — droit inégal, économie captive, travail contraint — définit l’exploitation coloniale que la séance suivante détaillera.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Les « infractions spéciales » de l’indigénat',
+      source: 'd’après les listes officielles d’infractions du régime de l’indigénat appliquées dans les colonies françaises — extraits adaptés',
+      texte: 'Sont punissables, par décision de l’administrateur et sans jugement d’un tribunal, les faits suivants commis par les indigènes : refus de payer l’impôt aux dates fixées ; refus d’accomplir les prestations ; défaut de comparution devant l’administrateur qui convoque ; acte irrespectueux envers un représentant de l’autorité ; propos de nature à affaiblir le respect dû à l’autorité française ; circulation hors du district sans autorisation. Peines : amende et emprisonnement, prononcés par l’administrateur.',
+      questions: ['Qui punit, et de quoi ces punitions se passent-elles ?',
+        'Relève deux « infractions » dont la définition est vague. Pourquoi est-ce dangereux ?',
+        'En quoi ce texte prouve-t-il l’existence de deux catégories d’habitants ?'],
+      reponses: ['L’administrateur lui-même, sans tribunal ni jugement : il est à la fois accusateur et juge — c’est la négation de la justice ordinaire.',
+        '« Acte irrespectueux » et « propos de nature à affaiblir le respect » : des formules si vagues que n’importe quel geste ou parole peut être puni — l’arbitraire est total.',
+        'Il ne s’applique qu’aux « indigènes » : les citoyens français relèvent, eux, des tribunaux ordinaires — deux droits pour deux catégories, c’est l’inégalité faite loi.']
+    },
+    lexique: [
+      ['Indigénat', 'régime juridique d’exception imposé aux colonisés'],
+      ['Pacte colonial', 'règle réservant production et commerce à la métropole'],
+      ['Capitation', 'impôt payé par tête, dû par chaque homme adulte'],
+      ['Prestations', 'journées de travail obligatoires et gratuites'],
+    ],
     synthese: 'Pyramide : gouverneur général → chef de province → chef de district → chef de canton + auxiliaires malgaches. Instruments : code de l’indigénat (lois à part, punitions sans tribunal), pacte colonial (production réservée à la métropole), impôts (capitation, bétail) et prestations (travail obligatoire).',
-    method: ['Réciter la pyramide en quatre échelons plus les auxiliaires.', 'Définir chaque instrument : indigénat, pacte colonial, impôts-prestations.', 'Montrer la logique d’ensemble : administrer peu nombreux, exploiter efficacement.'],
-    exemple: 'Un chef de famille betsileo vers 1910 : il paie la capitation pour lui et ses fils, l’impôt sur ses deux zébus et sa rizière ; il doit dix jours de prestations sur la route du district ; s’il proteste, le chef de district peut le punir sans jugement, au titre de l’indigénat. Tout le système tient dans cette vie-là.',
-    erreur: 'Croire que l’indigénat était un simple règlement administratif : c’était un régime juridique d’exception qui plaçait des millions de personnes hors du droit commun, punissables sans procès. Sa suppression (1946) fut l’une des premières revendications des mouvements malgaches — preuve qu’il était le symbole même de l’inégalité coloniale.',
     saistu: 'L’impôt de capitation avait un but caché : comme il fallait le payer en francs — monnaie que le paysan ne possédait pas —, chacun était forcé de vendre sa récolte aux compagnies ou de louer ses bras aux colons pour s’en procurer. L’impôt ne servait pas qu’à remplir les caisses : il fabriquait de la main-d’œuvre. Les administrateurs eux-mêmes l’appelaient « l’impôt moralisateur »…',
     exos: ['La pyramide. a) Qui dirige la colonie ? b) Cite les trois échelons sous lui. d) Qui sont les auxiliaires ? e) Pourquoi l’administration en a-t-elle besoin ?',
       'Les instruments. a) Définis le code de l’indigénat. b) Définis le pacte colonial. d) Cite deux impôts. e) Que sont les prestations ?',
@@ -137,13 +210,47 @@ const S = [
     revQ: 'Récite la pyramide administrative et les trois instruments de l’exploitation.',
     revRA: 'Gouverneur général → province → district → canton + auxiliaires ; indigénat, pacte colonial, impôts et prestations.',
     situation: 'Sur le port de Toamasina, vers 1930, les sacs de café et de vanille s’empilent vers la France ; dans l’autre sens débarquent tissus, outils et conserves françaises. Entre les deux, trois grandes compagnies encaissent — et sur les routes de l’île, des milliers d’hommes réquisitionnés cassent des pierres. Qui profite réellement de l’économie coloniale ? Une caricature d’époque nous aidera à répondre.',
-    def: 'L’économie coloniale est une économie de traite : la colonie exporte des matières premières à bas prix et importe des produits fabriqués au prix fort. Elle repose sur le travail contraint : corvées puis SMOTIG (Service de la Main-d’Œuvre pour les Travaux d’Intérêt Général, 1926), et elle est dominée par les grandes compagnies de commerce — havraise, lyonnaise et marseillaise — qui contrôlent les échanges et rapatrient leurs profits en France.',
-    autrement: 'Madagascar vend brut et pas cher (café, vanille), achète fabriqué et cher ; les routes et chemins de fer se construisent au travail forcé ; et trois compagnies françaises tiennent tout le commerce.',
-    concept: 'L’économie de traite — à ne pas confondre avec la traite des esclaves de l’unité II — est un système d’échange inégal : la colonie est cantonnée aux produits bruts (café, vanille, girofle, graphite, viande) vendus à bas prix, et doit acheter à la métropole ses produits manufacturés au prix fort ; la différence enrichit la métropole, et la colonie ne peut jamais s’industrialiser — le pacte colonial y veille. Pour équiper le pays au moindre coût, l’administration recourt au travail contraint : d’abord les corvées et prestations — journées dues par chaque homme pour les routes, le portage, le chemin de fer Tananarive-Côte Est ; puis, en 1926, le SMOTIG institutionnalise le système : les jeunes hommes non appelés au service militaire doivent des années de travail sur les grands chantiers, loin de chez eux, pour un salaire dérisoire — les contemporains y ont vu un travail forcé déguisé, et il fut dénoncé jusqu’à la Société des Nations. Au sommet du système trônent les grandes compagnies de commerce — la Compagnie havraise, la Compagnie lyonnaise, la Compagnie marseillaise — dont les noms disent les ports et villes de France où partent les profits : elles achètent aux producteurs malgaches aux prix qu’elles fixent, vendent les importations aux prix qu’elles fixent, et possèdent plantations, comptoirs et flottilles. Les caricatures de l’époque résument le circuit d’un trait : un colon ventru assis sur des sacs de café, porté par un paysan malgache courbé — l’image dit, mieux qu’un long discours, qui travaille et qui profite. Analyser une telle caricature, c’est exercer ton esprit critique : identifier l’auteur, la date, les symboles, le message — et le confronter aux faits.',
+    legende: 'Café et vanille vers la France, produits fabriqués vers l’île : l’échange inégal au cœur du système.',
+    motsCles: ['économie de traite', 'échange inégal', 'matières premières', 'corvées', 'SMOTIG', '1926', 'compagnie havraise', 'compagnie lyonnaise', 'compagnie marseillaise', 'caricature', 'esprit critique'],
+    sections: [
+      {
+        titre: 'L’économie de traite : l’échange inégal',
+        paras: [
+          'L’économie de traite — à ne pas confondre avec la traite des esclaves de l’unité II — est un système d’échange inégal : la colonie est cantonnée aux produits bruts (café, vanille, girofle, graphite, viande) vendus à bas prix, et doit acheter à la métropole ses produits manufacturés au prix fort ; la différence enrichit la métropole, et la colonie ne peut jamais s’industrialiser — le pacte colonial y veille.',
+        ],
+      },
+      {
+        titre: 'Le travail contraint : des corvées au SMOTIG',
+        paras: [
+          'Pour équiper le pays au moindre coût, l’administration recourt au travail contraint : d’abord les corvées et prestations — journées dues par chaque homme pour les routes, le portage, le chemin de fer Tananarive-Côte Est ; puis, en 1926, le SMOTIG (Service de la Main-d’Œuvre pour les Travaux d’Intérêt Général) institutionnalise le système : les jeunes hommes non appelés au service militaire doivent des années de travail sur les grands chantiers, loin de chez eux, pour un salaire dérisoire — les contemporains y ont vu un travail forcé déguisé, et il fut dénoncé jusqu’à la Société des Nations.',
+        ],
+      },
+      {
+        titre: 'Les grandes compagnies — et l’œil de la caricature',
+        paras: [
+          'Au sommet du système trônent les grandes compagnies de commerce — la Compagnie havraise, la Compagnie lyonnaise, la Compagnie marseillaise — dont les noms disent les ports et villes de France où partent les profits : elles achètent aux producteurs malgaches aux prix qu’elles fixent, vendent les importations aux prix qu’elles fixent, et possèdent plantations, comptoirs et flottilles.',
+          'Les caricatures de l’époque résument le circuit d’un trait : un colon ventru assis sur des sacs de café, porté par un paysan malgache courbé — l’image dit, mieux qu’un long discours, qui travaille et qui profite. Analyser une telle caricature, c’est exercer ton esprit critique : identifier l’auteur, la date, les symboles, le message — et le confronter aux faits.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Sur les chantiers du chemin de fer',
+      source: 'texte reconstitué d’après les témoignages et rapports sur les chantiers du Tananarive-Côte Est (années 1900-1910)',
+      texte: 'On est venu me chercher au village pour la prestation : trente jours sur le chantier du chemin de fer, à deux jours de marche de chez moi. Nous creusons la falaise à la pioche, du lever au coucher du soleil ; la fièvre prend les hommes dans les campements et plusieurs ne sont pas revenus. Pendant ce temps, ma rizière attend, et il faudra pourtant payer l’impôt à la fin de l’année. Le contremaître dit que la ligne apportera le progrès. Mais à qui ira le café qu’elle transportera ?',
+      questions: ['Relève les trois fardeaux qui pèsent en même temps sur ce paysan.',
+        'Pourquoi ce texte est-il présenté comme « reconstitué », et que garantit l’historien ?',
+        'La question finale du témoin rejoint-elle la leçon ? Explique.'],
+      reponses: ['La prestation (trente jours de travail loin de chez lui), la rizière laissée à l’abandon, et l’impôt qu’il faudra payer malgré tout — travail contraint et impôt se cumulent.',
+        'Aucun témoignage individuel de ce paysan précis ne nous est parvenu mot à mot : le texte est recomposé, mais chaque élément (durée, conditions, fièvres, impôt) vient des rapports et témoignages d’époque — et l’historien le signale honnêtement.',
+        'Oui : le chemin de fer servira d’abord à exporter le café et les produits bruts vers le port — c’est l’économie de traite ; le « progrès » profite surtout aux compagnies et à la métropole.']
+    },
+    lexique: [
+      ['Économie de traite', 'échange inégal : produits bruts contre produits fabriqués'],
+      ['SMOTIG', 'service de travail obligatoire créé en 1926'],
+      ['Comptoir', 'établissement de commerce d’une compagnie'],
+      ['Caricature', 'dessin satirique qui dénonce par l’exagération'],
+    ],
     synthese: 'Économie de traite : exportations brutes à bas prix contre importations chères — échange inégal. Travail contraint : corvées, portage, puis SMOTIG (1926). Grandes compagnies havraise, lyonnaise, marseillaise : contrôle du commerce, profits rapatriés. La caricature d’époque révèle le système d’un seul regard.',
-    method: ['Définir l’économie de traite par l’échange inégal brut/fabriqué.', 'Dater et expliquer le SMOTIG (1926) et le distinguer des simples corvées.', 'Analyser une caricature : auteur, date, symboles, message, confrontation aux faits.'],
-    exemple: 'Lecture d’une caricature : un planteur en casque colonial se prélasse sur des sacs marqués « café » portés par un travailleur épuisé. Symboles : le casque = le colon ; les sacs = les richesses exportées ; la posture = qui travaille, qui profite. Message : l’économie coloniale repose sur le travail malgache au bénéfice d’autrui. Les faits confirment : salaires dérisoires, profits rapatriés.',
-    erreur: 'Confondre « économie de traite » et « traite des esclaves » : le mot « traite » désigne ici le commerce d’échange inégal entre colonie et métropole (produits bruts contre produits fabriqués), pas la vente d’êtres humains. Deux réalités différentes — deux injustices différentes — que l’historien distingue soigneusement.',
     saistu: 'Le chemin de fer Tananarive-Côte Est (1901-1913) a coûté des milliers de vies parmi les travailleurs réquisitionnés — maladies, accidents, épuisement. Et le SMOTIG fit scandale jusqu’à Genève : à la Société des Nations, les délégués durent répondre aux accusations de travail forcé déguisé. Il fut finalement supprimé en 1936 — dix ans de « service » qui ont marqué toute une génération.',
     exos: ['L’économie de traite. a) Que vend la colonie, et à quel prix ? b) Qu’achète-t-elle, et à quel prix ? d) Qui garantit ce verrouillage ? e) Pourquoi la colonie ne s’industrialise-t-elle pas ?',
       'Le travail contraint. a) Cite deux formes de corvées. b) Que signifie SMOTIG ? d) En quelle année est-il créé ? e) Pourquoi fut-il dénoncé ?',
@@ -160,13 +267,48 @@ const S = [
     revQ: 'Définis l’économie de traite et le SMOTIG.',
     revRA: 'Échange inégal : matières premières à bas prix contre produits fabriqués chers ; SMOTIG (1926) : service de travail obligatoire sur les grands chantiers.',
     situation: 'Dès les premiers mois de la colonisation, des hommes prennent le maquis dans les campagnes de l’Imerina, drapés dans leurs lamba rouges. Vingt ans plus tard, de jeunes étudiants fondent une société secrète. En 1947, l’île entière s’embrase. La domination coloniale n’a jamais été acceptée : trois générations de mouvements se succèdent — avec des objectifs qui évoluent. Lesquels ?',
-    def: 'Les mouvements nationalistes malgaches se succèdent en trois vagues. Pour repousser la présence étrangère : les Menalamba (fin 1895-1898) et les Sadiavahy (1904-1905 et 1914-1917). Pour l’égalité de droits : la VVS (1913-1915) et le mouvement de Jean Ralaimongo (1919-1930). Pour l’émancipation : les mouvements de 1947 — JINA, PANAMA — et les partis MDRM et PADESM.',
-    autrement: 'd’abord chasser l’occupant par les armes (Menalamba, Sadiavahy), puis réclamer les mêmes droits que les Français (VVS, Ralaimongo), enfin exiger l’émancipation (JINA, PANAMA, MDRM, PADESM — et l’insurrection de 1947).',
-    concept: 'Première vague : repousser l’étranger. Dès fin 1895, avant même l’annexion, l’insurrection des Menalamba — « les lamba rouges », de la latérite dont ils teignaient leurs vêtements — embrase l’Imerina : paysans et notables refusent la domination étrangère et ce qu’elle apporte ; la répression de Gallieni en vient à bout vers 1898. Dans le sud et l’ouest, les Sadiavahy reprennent le flambeau en 1904-1905, puis en 1914-1917 : mêmes causes — impôts, réquisitions, présence étrangère —, même objectif : repousser l’occupant. Deuxième vague : l’égalité par le droit. En 1913, de jeunes intellectuels — étudiants en médecine, pasteurs, instituteurs — fondent à Antananarivo la VVS (Vy Vato Sakelika : « Fer, Pierre, Ramification »), société secrète qui veut relever la nation par l’éducation et obtenir l’égalité de droits ; découverte en 1915, elle est brisée par des condamnations féroces. L’idée survit : à partir de 1919, Jean Ralaimongo — instituteur, ancien combattant de 14-18 — mène campagne par les journaux et les pétitions : citoyenneté française pour les Malgaches, fin de l’indigénat, égalité devant la loi ; son mouvement anime les années 1919-1930. Troisième vague : l’émancipation. Après la Seconde Guerre mondiale, l’espoir change d’échelle : le MDRM (Mouvement Démocratique de la Rénovation Malgache) réclame l’émancipation dans la légalité, tandis que le PADESM défend les « déshérités » ; des sociétés secrètes — JINA, PANAMA — préparent l’action directe. Le 29 mars 1947, l’insurrection éclate dans l’est et le sud-est : la répression est terrible — des dizaines de milliers de morts, le MDRM dissous, ses députés condamnés. Mais 1947 devient la grande date-mémoire du nationalisme : l’indépendance n’est plus qu’une question de temps.',
+    legende: 'Des lamba rouges des Menalamba à l’insurrection de 1947 : trois générations de luttes.',
+    motsCles: ['Menalamba', 'Sadiavahy', 'VVS', 'Vy Vato Sakelika', 'Jean Ralaimongo', 'égalité de droits', 'émancipation', 'JINA', 'PANAMA', 'MDRM', 'PADESM', '29 mars 1947'],
+    sections: [
+      {
+        titre: 'Première vague : repousser l’étranger',
+        paras: [
+          'Dès fin 1895, avant même l’annexion, l’insurrection des Menalamba — « les lamba rouges », de la latérite dont ils teignaient leurs vêtements — embrase l’Imerina : paysans et notables refusent la domination étrangère et ce qu’elle apporte ; la répression de Gallieni en vient à bout vers 1898. Dans le sud et l’ouest, les Sadiavahy reprennent le flambeau en 1904-1905, puis en 1914-1917 : mêmes causes — impôts, réquisitions, présence étrangère —, même objectif : repousser l’occupant.',
+        ],
+      },
+      {
+        titre: 'Deuxième vague : l’égalité par le droit',
+        paras: [
+          'En 1913, de jeunes intellectuels — étudiants en médecine, pasteurs, instituteurs — fondent à Antananarivo la VVS (Vy Vato Sakelika : « Fer, Pierre, Ramification »), société secrète qui veut relever la nation par l’éducation et obtenir l’égalité de droits ; découverte en 1915, elle est brisée par des condamnations féroces.',
+          'L’idée survit : à partir de 1919, Jean Ralaimongo — instituteur, ancien combattant de 14-18 — mène campagne par les journaux et les pétitions : citoyenneté française pour les Malgaches, fin de l’indigénat, égalité devant la loi ; son mouvement anime les années 1919-1930.',
+        ],
+      },
+      {
+        titre: 'Troisième vague : l’émancipation — et 1947',
+        paras: [
+          'Après la Seconde Guerre mondiale, l’espoir change d’échelle : le MDRM (Mouvement Démocratique de la Rénovation Malgache) réclame l’émancipation dans la légalité, tandis que le PADESM défend les « déshérités » ; des sociétés secrètes — JINA, PANAMA — préparent l’action directe.',
+          'Le 29 mars 1947, l’insurrection éclate dans l’est et le sud-est : la répression est terrible — des dizaines de milliers de morts, le MDRM dissous, ses députés condamnés. Mais 1947 devient la grande date-mémoire du nationalisme : l’indépendance n’est plus qu’une question de temps.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Jean Ralaimongo réclame l’égalité',
+      source: 'texte reconstitué d’après les campagnes de presse et les pétitions de Jean Ralaimongo (années 1920)',
+      texte: 'Nous avons versé notre sang pour la France dans les tranchées de la Grande Guerre : des milliers de Malgaches sont tombés à ses côtés. Et quand nous rentrons au pays, que trouvons-nous ? L’indigénat, qui nous punit sans juge ; la corvée, qui nous arrache à nos rizières ; l’impôt, qui nous courbe. On nous dit sujets français : nous demandons à être citoyens. Les mêmes lois, les mêmes juges, les mêmes droits pour tous — voilà notre revendication. Nous ne la crierons pas dans les bois : nous l’écrirons dans les journaux et la porterons devant les tribunaux, jusqu’à ce que justice soit faite.',
+      questions: ['Quel argument tiré de la Grande Guerre Ralaimongo avance-t-il ?',
+        'Que revendique-t-il exactement — et que ne revendique-t-il pas encore ?',
+        'Quels moyens d’action annonce-t-il ? En quoi diffèrent-ils de ceux des Menalamba ?'],
+      reponses: ['Les Malgaches ont combattu et sont morts pour la France en 14-18 : ce sacrifice donne droit à l’égalité — on ne peut mourir en égal et vivre en sujet.',
+        'La citoyenneté et l’égalité de droits (mêmes lois, mêmes juges, fin de l’indigénat) — mais pas encore l’indépendance : c’est la deuxième vague, celle de l’égalité.',
+        'Les journaux, les pétitions, les tribunaux — l’action légale et écrite, là où les Menalamba avaient pris les armes : les moyens évoluent avec les générations.']
+    },
+    lexique: [
+      ['Société secrète', 'organisation clandestine aux membres liés par serment'],
+      ['Citoyenneté', 'statut donnant les pleins droits politiques et civils'],
+      ['Émancipation', 'libération d’une domination ; accès à la souveraineté'],
+      ['Insurrection', 'soulèvement armé contre le pouvoir en place'],
+    ],
     synthese: 'Trois vagues : repousser la présence étrangère — Menalamba (fin 1895-1898), Sadiavahy (1904-05, 1914-17) ; égalité de droits — VVS (1913-1915), Jean Ralaimongo (1919-1930) ; émancipation — JINA, PANAMA, MDRM, PADESM, et l’insurrection du 29 mars 1947, durement réprimée.',
-    method: ['Classer chaque mouvement dans sa vague : repousser / égalité / émancipation.', 'Associer chaque sigle à ses dates et à sa nature (insurrection, société secrète, parti).', 'Montrer l’évolution des moyens : armes → journaux et pétitions → partis et insurrection.'],
-    exemple: 'Trois hommes, trois époques : un paysan menalamba de 1896 combat pour chasser l’étranger ; un étudiant de la VVS en 1913 écrit pour l’égalité ; un militant du MDRM en 1946 fait campagne pour l’émancipation. Le but grandit à chaque génération — jusqu’à l’indépendance.',
-    erreur: 'Croire que la VVS était un mouvement armé : c’était une société d’intellectuels — médecins, pasteurs, étudiants — dont les armes étaient l’éducation et les idées. La condamner à des peines de bagne, comme le fit l’administration en 1915, révéla précisément la peur du colonisateur devant la pensée malgache.',
     saistu: 'Parmi les condamnés de la VVS figurait un jeune étudiant en médecine nommé Joseph Raseta — on le retrouve trente ans plus tard député et fondateur du MDRM, condamné une seconde fois après 1947 ! Une même vie traversée par deux générations de lutte : rien ne résume mieux la continuité du nationalisme malgache, de la VVS à l’indépendance.',
     exos: ['Associe chaque mouvement à sa vague : a) VVS ; b) Menalamba ; d) MDRM ; e) Sadiavahy.',
       'Dates et faits. a) Quand les Menalamba se soulèvent-ils ? b) Que signifie leur nom ? d) Quand la VVS est-elle démantelée ? e) Que réclame Jean Ralaimongo, et par quels moyens ?',
@@ -183,13 +325,49 @@ const S = [
     revQ: 'Cite les trois vagues de mouvements nationalistes avec un exemple chacune.',
     revRA: 'Repousser : Menalamba, Sadiavahy ; égalité : VVS, Ralaimongo ; émancipation : JINA, PANAMA, MDRM, PADESM.',
     situation: 'Le 26 juin 1960, à minuit, le drapeau blanc-rouge-vert monte dans la nuit d’Antananarivo : Madagascar est indépendant. Treize ans plus tôt, l’île sortait meurtrie de la répression de 1947. Comment est-on passé, en une décennie, du deuil à la souveraineté retrouvée ? Par une marche en trois étapes — que le monde entier accomplissait en même temps.',
-    def: 'Après 1947, la revendication d’indépendance s’impose peu à peu. La Loi-cadre de 1956 accorde une large autonomie interne : suffrage universel et gouvernement local malgache. Au référendum de 1958, Madagascar choisit le statut de République autonome au sein de la Communauté française : la République malgache est proclamée le 14 octobre 1958. Enfin, le 26 juin 1960, Madagascar accède à l’indépendance.',
-    autrement: 'trois marches : 1956, les Malgaches gouvernent chez eux ; 1958, la République malgache est proclamée ; 26 juin 1960, l’indépendance complète.',
-    concept: 'Le contexte d’abord : après 1947, la répression a brisé les partis, mais rien n’arrête le mouvement du monde — l’Inde est indépendante (1947), la guerre d’Indochine s’achève (1954), l’Afrique s’éveille ; la France comprend qu’il faut réformer avant de tout perdre. Première étape : la Loi-cadre de 1956 (dite loi Defferre). Elle institue le suffrage universel — tous les adultes votent, et non plus une minorité — et crée un conseil de gouvernement malgache : pour la première fois depuis 1896, des ministres malgaches administrent leur pays ; l’autonomie interne est en marche, et les partis renaissent. Deuxième étape : le référendum du 28 septembre 1958. Le général de Gaulle propose aux colonies une Communauté française rénovée : voter « oui », c’est devenir République autonome dans la Communauté ; voter « non », c’est l’indépendance immédiate et la rupture. Madagascar vote majoritairement oui, et le 14 octobre 1958, la République malgache est proclamée — un État, un gouvernement, une assemblée, sous réserve des domaines gardés par Paris (défense, monnaie, diplomatie). Troisième étape : l’indépendance. La Communauté se révèle vite une transition : dès 1959, la nouvelle république négocie le transfert des dernières compétences ; les accords sont signés en avril 1960, et le 26 juin 1960, l’indépendance est proclamée — Philibert Tsiranana devient le premier président de la République malgache. Soixante-quatre ans après l’annexion de 1896, la souveraineté revient — par les urnes et la négociation, portée par un demi-siècle de luttes : des Menalamba aux députés de 1946, chaque génération a préparé ce matin du 26 juin.',
+    legende: 'Minuit, 26 juin 1960 : le drapeau blanc-rouge-vert monte dans la nuit d’Antananarivo.',
+    motsCles: ['décolonisation', 'Loi-cadre 1956', 'suffrage universel', 'autonomie interne', 'référendum 1958', 'Communauté française', 'République malgache', '14 octobre 1958', '26 juin 1960', 'Philibert Tsiranana'],
+    sections: [
+      {
+        titre: 'Le monde décolonise',
+        paras: [
+          'Après 1947, la répression a brisé les partis, mais rien n’arrête le mouvement du monde — l’Inde est indépendante (1947), la guerre d’Indochine s’achève (1954), l’Afrique s’éveille ; la France comprend qu’il faut réformer avant de tout perdre.',
+        ],
+      },
+      {
+        titre: 'Trois étapes vers la souveraineté',
+        paras: ['La marche se fait en trois étapes :'],
+        puces: [
+          'la Loi-cadre de 1956 (dite loi Defferre) : elle institue le suffrage universel — tous les adultes votent, et non plus une minorité — et crée un conseil de gouvernement malgache ; pour la première fois depuis 1896, des ministres malgaches administrent leur pays : l’autonomie interne est en marche, et les partis renaissent ;',
+          'le référendum du 28 septembre 1958 : le général de Gaulle propose aux colonies une Communauté française rénovée ; voter « oui », c’est devenir République autonome dans la Communauté ; voter « non », c’est l’indépendance immédiate et la rupture ; Madagascar vote majoritairement oui, et le 14 octobre 1958, la République malgache est proclamée — un État, un gouvernement, une assemblée, sous réserve des domaines gardés par Paris (défense, monnaie, diplomatie) ;',
+          'l’indépendance : dès 1959, la nouvelle république négocie le transfert des dernières compétences ; les accords sont signés en avril 1960, et le 26 juin 1960, l’indépendance est proclamée — Philibert Tsiranana devient le premier président de la République malgache.',
+        ],
+      },
+      {
+        titre: 'La souveraineté retrouvée',
+        paras: [
+          'Soixante-quatre ans après l’annexion de 1896, la souveraineté revient — par les urnes et la négociation, portée par un demi-siècle de luttes : des Menalamba aux députés de 1946, chaque génération a préparé ce matin du 26 juin.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Le 26 juin 1960 à Antananarivo',
+      source: 'texte reconstitué d’après les comptes rendus de presse de la proclamation de l’indépendance (juin 1960)',
+      texte: 'Dès la veille au soir, la foule avait envahi les abords du stade de Mahamasina. À minuit, les lumières se sont éteintes ; dans le silence, le drapeau français est descendu, puis le drapeau blanc, rouge et vert de la République malgache est monté lentement dans la nuit, salué par une immense clameur et par l’hymne national. Au matin, devant les représentants de nombreux pays, le président Tsiranana a proclamé solennellement l’indépendance de Madagascar, rappelant que la souveraineté retrouvée était l’œuvre de tout un peuple et qu’elle s’était accomplie dans la paix et l’amitié entre les nations.',
+      questions: ['Quels gestes symboliques marquent le passage à l’indépendance ?',
+        'Pourquoi le président rappelle-t-il « l’œuvre de tout un peuple » ?',
+        'Que signale la mention « texte reconstitué », et pourquoi est-elle honnête ?'],
+      reponses: ['La descente du drapeau français et la montée du drapeau malgache à minuit, l’hymne national, la proclamation solennelle devant les nations : des symboles qui disent le transfert de souveraineté.',
+        'Parce que l’indépendance négociée de 1960 récolte ce que les générations de luttes — Menalamba, VVS, Ralaimongo, 1947 — ont semé : elle n’est pas un cadeau, mais un aboutissement.',
+        'Le récit est recomposé à partir des comptes rendus d’époque, sans citer mot à mot un document unique ; l’historien distingue toujours l’extrait authentique du récit reconstitué — c’est une règle de probité.']
+    },
+    lexique: [
+      ['Loi-cadre', 'loi de 1956 ouvrant l’autonomie interne aux colonies'],
+      ['Référendum', 'vote direct du peuple sur une question posée'],
+      ['Communauté française', 'union proposée par de Gaulle en 1958'],
+      ['Souveraineté', 'pouvoir d’un État de se gouverner lui-même'],
+    ],
     synthese: 'Après 1947 : l’idée d’indépendance s’impose, le monde décolonise. 1956 : Loi-cadre — suffrage universel, gouvernement local malgache. 28 septembre 1958 : référendum ; 14 octobre 1958 : proclamation de la République malgache dans la Communauté. 26 juin 1960 : indépendance ; Tsiranana premier président.',
-    method: ['Réciter la frise : 1947 → 1956 → 1958 → 26 juin 1960.', 'Expliquer l’apport de chaque étape : autonomie interne, République, souveraineté complète.', 'Replacer Madagascar dans la décolonisation mondiale (Inde 1947, Afrique 1960).'],
-    exemple: '1960, « l’année de l’Afrique » : dix-sept pays africains deviennent indépendants cette année-là — le Sénégal, la Côte d’Ivoire, le Congo… et Madagascar le 26 juin. La marche malgache s’inscrit dans une vague mondiale : la décolonisation.',
-    erreur: 'Croire que l’indépendance a été « donnée » sans lutte : si la dernière étape fut négociée et pacifique, elle n’aurait jamais eu lieu sans les générations de résistants et de militants — des Menalamba à 1947. La négociation de 1960 récolte ce que un demi-siècle de luttes a semé.',
     saistu: 'Le 26 juin est resté la fête nationale de Madagascar — mais sais-tu que la date fut choisie aussi pour sa symbolique ? Les accords étaient prêts dès avril 1960 ; on retint la fin juin, à la veille des grandes vacances, pour que tout le pays — écoliers compris ! — puisse fêter l’événement. Depuis, chaque 26 juin, lampions, hymne et drapeaux font revivre le premier matin de la souveraineté retrouvée.',
     exos: ['La frise. a) Que change la Loi-cadre de 1956 ? b) Que propose le référendum de 1958 ? d) Quand la République malgache est-elle proclamée ? e) Quand l’indépendance est-elle acquise ?',
       'Comprendre. a) Pourquoi la France réforme-t-elle après 1947 ? b) Que gardait Paris après 1958 ? d) Qui devient premier président ? e) Que signifie « autonomie interne » ?',
