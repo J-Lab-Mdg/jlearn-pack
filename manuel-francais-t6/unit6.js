@@ -1,7 +1,7 @@
 // Français T6 — UNITÉ 6 — LE MONDE IMAGINAIRE (10 leçons + révision + test) — Séances 61 à 72 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "AD1457"; // magenta monde imaginaire
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -123,11 +123,13 @@ function ficheS61() {
        pAns("R.A. : 1. un village, le chef, ses trois fils / la sécheresse, la quête de l'oiseau / la pluie revient. 2. l'oiseau choisit les patients et les bons. 3. l'aîné court et échoue ; le deuxième bondit et échoue ; Faralahy attend et réussit.", ["implicite"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(61, TOTAL, meta, rows, "s61");
+  return fiche(61, TOTAL, meta, rows, "s61", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS61() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 61", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER UN CONTE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     conteFaralahy(),
     p("", { after: 80 }),
@@ -193,11 +195,13 @@ function ficheS62() {
        pAns("R.A. : 1. le conte est un long récit merveilleux ; la fable, une courte histoire d'animaux avec une morale écrite. 2. la légende s'attache à un lieu ou un personnage ; le mythe explique le monde. 3. il était une fois, il y a bien longtemps, depuis ce jour.", ["morale"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(62, TOTAL, meta, rows, "s62");
+  return fiche(62, TOTAL, meta, rows, "s62", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS62() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 62", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MOTS DU MONDE IMAGINAIRE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les quatre grands récits :"),
     mot("le conte", "un récit merveilleux inventé : un héros, des épreuves, une fin heureuse (l'angano)"),
@@ -265,11 +269,13 @@ function ficheS63() {
        pAns("R.A. : 1. deux voisins / le piège, la capture du merle / le merle libéré et guéri de sa moquerie. 2. rien ne sert de courir ; réfléchir avant d'agir protège. 3. le merle a eu honte — il ne se moque plus de personne.", ["implicite"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(63, TOTAL, meta, rows, "s63");
+  return fiche(63, TOTAL, meta, rows, "s63", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS63() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 63", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UNE FABLE, TROUVER LA MORALE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     fableCameleon(),
     p("", { after: 80 }),
@@ -335,11 +341,13 @@ function ficheS64() {
        pAns("R.A. : 1. mouvement : traverser, s'envoler, foncer ; action : saisir, poser, ouvrir. 2. grimpa (courut, se hissa). 3. Il bondit sur le rocher et saisit la plume d'or.", ["bondit"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(64, TOTAL, meta, rows, "s64");
+  return fiche(64, TOTAL, meta, rows, "s64", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS64() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 64", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES VERBES D'ACTION ET DE MOUVEMENT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Deux familles :"),
     mot("les verbes de mouvement", "un déplacement : courir, grimper, bondir, s'envoler, traverser, foncer, ramper, redescendre"),
@@ -404,11 +412,13 @@ function ficheS65() {
        pAns("R.A. : 1. Niry et Beby ne lui parlent pas. 2. Vous ne leur demandez rien. 3. N'ouvre jamais la calebasse rouge !", ["ne lui parlent pas"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(65, TOTAL, meta, rows, "s65");
+  return fiche(65, TOTAL, meta, rows, "s65", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS65() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 65", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LA NÉGATION ET LES PRONOMS COI, ENSEMBLE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Rappel — la négation au passé composé :"),
     p("• « Le merle n'a pas regardé. » « Il n'a rien saisi. » — pas, jamais, plus, rien avant le participe ;"),
@@ -471,11 +481,13 @@ function ficheS66() {
       [fp("Participent.")],
       "Observation continue", "Grille d'observation"),
   ];
-  return fiche(66, TOTAL, meta, rows, "s66");
+  return fiche(66, TOTAL, meta, rows, "s66", "PRODUCTION ORALE", COLOR);
 }
 function lessonS66() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 66", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("INFÉRER LA MORALE, DIRE SON OPINION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Ma méthode pour trouver la morale cachée :"),
     p("1. Qui gagne ? qui perd ?"),
@@ -539,11 +551,13 @@ function ficheS67() {
       [fp("Racontent en trios.")],
       "Présentation notée", "Grille"),
   ];
-  return fiche(67, TOTAL, meta, rows, "s67");
+  return fiche(67, TOTAL, meta, rows, "s67", "PRODUCTION ORALE", COLOR);
 }
 function lessonS67() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 67", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("RACONTER UN CONTE EN PUBLIC", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("À trois, on se partage le conte :"),
     p("• le premier pose le DÉBUT : le décor, les personnages — « Il était une fois… » ;"),
@@ -603,11 +617,13 @@ function ficheS68() {
       [fp("Remettent leur conte collectif.")],
       "Travail collaboratif", "----"),
   ];
-  return fiche(68, TOTAL, meta, rows, "s68");
+  return fiche(68, TOTAL, meta, rows, "s68", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS68() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 68", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("UN CONTE CONSTRUIT ENSEMBLE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le jeu du cadavre exquis :"),
     p("chacun écrit une ligne du conte sans voir les autres, on plie, on passe — puis on déplie et on découvre l'histoire !", { after: 60 }),
@@ -669,11 +685,13 @@ function ficheS69() {
       [fp("Remettent leur conte.")],
       "Travail individuel", "----"),
   ];
-  return fiche(69, TOTAL, meta, rows, "s69");
+  return fiche(69, TOTAL, meta, rows, "s69", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS69() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 69", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("INVENTER MON CONTE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("D'abord, mon monde imaginaire :"),
     p("• un LIEU à moi : une forêt qui chante, une île sous le lac, un village dans les nuages ;"),
@@ -736,11 +754,13 @@ function ficheS70() {
       [fp("Lisent individuellement.")],
       "Travail individuel", "Contes des apprenants"),
   ];
-  return fiche(70, TOTAL, meta, rows, "s70");
+  return fiche(70, TOTAL, meta, rows, "s70", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS70() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 70", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE MON CONTE AVEC EXPRESSION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La prosodie :"),
     p("c'est la mélodie de la voix : elle traduit l'intention de l'auteur — la moquerie du merle, le calme du caméléon, la gravité de la morale.", { after: 60 }),
@@ -765,7 +785,7 @@ function bigLesson() {
     unitBanner("LEÇON — UNITÉ 6 : LE MONDE IMAGINAIRE (récapitulatif)", COLOR),
     p("", { after: 80 }),
     sub("1. Les quatre grands récits :"),
-    pr([run("le conte ", { bold: true, color: C.BLUE }), run("(merveilleux, morale cachée), "), run("la fable ", { bold: true, color: C.BLUE }), run("(animaux, morale écrite), "), run("la légende ", { bold: true, color: C.BLUE }), run("(un lieu réel embelli), "), run("le mythe ", { bold: true, color: C.BLUE }), run("(l'explication du monde).")], { after: 80 }),
+    pr([run("le conte ", { bold: true, color: C.SALMON }), run("(merveilleux, morale cachée), "), run("la fable ", { bold: true, color: C.SALMON }), run("(animaux, morale écrite), "), run("la légende ", { bold: true, color: C.SALMON }), run("(un lieu réel embelli), "), run("le mythe ", { bold: true, color: C.SALMON }), run("(l'explication du monde).")], { after: 80 }),
     sub("2. La grille du conte :"),
     p("DÉBUT (qui, où, quand) → MILIEU (la paix troublée ; comment la rétablir — les péripéties) → FIN (l'issue).", { after: 80 }),
     sub("3. Les mots et formules :"),

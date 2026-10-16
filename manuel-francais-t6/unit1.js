@@ -1,7 +1,7 @@
 // Français T6 — UNITÉ 1 — LE VOYAGE (10 leçons + révision + test) — Séances 1 à 12 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1F618D"; // bleu voyage
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -119,11 +119,13 @@ function ficheS1() {
        pAns("R.A. : 1. touristique, culturel, gastronomique, nature et biodiversité — 2. il repose, il apprend, il ouvre l'esprit, il rend fier du pays — 3. le chemin du voyage, préparé sur la carte — 4. réponse libre justifiée.", ["itinéraire"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(1, TOTAL, meta, rows, "s1");
+  return fiche(1, TOTAL, meta, rows, "s1", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS1() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 1", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER UN DOCUMENTAIRE SUR LE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     passagePourquoiVoyager(),
     p("", { after: 80 }),
@@ -185,11 +187,13 @@ function ficheS2() {
        pAns("R.A. : 1. touristique / gastronomique / nature / culturel — 2. se reposer, apprendre, s'ouvrir, aimer son pays — 3. elle explique les signes de la carte.", ["la légende"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(2, TOTAL, meta, rows, "s2");
+  return fiche(2, TOTAL, meta, rows, "s2", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS2() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 2", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES TYPES DE VOYAGE À MADAGASCAR", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les quatre types de voyage :"),
     mot("le voyage touristique", "le soleil, les plages, le repos — Nosy Be"),
@@ -258,11 +262,13 @@ function ficheS3() {
        pAns("R.A. : 1. introduction, développement, conclusion — 2. dix-sept kilomètres de pente, quarante-huit tunnels, des ponts au-dessus des cascades — 3. c'est leur seul lien avec la côte.", ["quarante-huit tunnels"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(3, TOTAL, meta, rows, "s3");
+  return fiche(3, TOTAL, meta, rows, "s3", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS3() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 3", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LE TEXTE DESCRIPTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     texteTrainFalaise(),
     p("", { after: 80 }),
@@ -325,20 +331,22 @@ function ficheS4() {
        pAns("R.A. : 1. métaphore — 2. comparaison — 3. énumération — 4. exemple : la pluie tombe comme un rideau gris.", ["comparaison"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(4, TOTAL, meta, rows, "s4");
+  return fiche(4, TOTAL, meta, rows, "s4", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS4() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 4", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES EXPRESSIONS IMAGÉES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. La comparaison — avec un mot outil (comme, pareil à, ressembler à) :"),
-    pr([run("Le train serpente ", { }), run("comme un long serpent de fer", { bold: true, color: C.BLUE }), run(".")]),
-    pr([run("Le lac brille ", { }), run("comme un miroir", { bold: true, color: C.BLUE }), run(".")], { after: 60 }),
+    pr([run("Le train serpente ", { }), run("comme un long serpent de fer", { bold: true, color: C.SALMON }), run(".")]),
+    pr([run("Le lac brille ", { }), run("comme un miroir", { bold: true, color: C.SALMON }), run(".")], { after: 60 }),
     sub("2. La métaphore — l'image sans mot outil :"),
-    pr([run("La forêt ", { }), run("forme un mur vert", { bold: true, color: C.BLUE }), run(".")]),
-    pr([run("La route ", { }), run("est un ruban rouge", { bold: true, color: C.BLUE }), run(".")], { after: 60 }),
+    pr([run("La forêt ", { }), run("forme un mur vert", { bold: true, color: C.SALMON }), run(".")]),
+    pr([run("La route ", { }), run("est un ruban rouge", { bold: true, color: C.SALMON }), run(".")], { after: 60 }),
     sub("3. L'énumération — la liste qui accumule les détails :"),
-    pr([run("On vend ", { }), run("des bananes, du café, du poivre, des letchis et des beignets chauds", { bold: true, color: C.BLUE }), run(".")], { after: 20 }),
+    pr([run("On vend ", { }), run("des bananes, du café, du poivre, des letchis et des beignets chauds", { bold: true, color: C.SALMON }), run(".")], { after: 20 }),
     p("Les mots sont séparés par des virgules ; « et » arrive avant le dernier.", { after: 80 }),
     sub("À quoi servent-elles ?"),
     p("À faire voir ce qu'on décrit. Une description sans image informe ; une description imagée fait voyager le lecteur.", { after: 60 }),
@@ -394,18 +402,20 @@ function ficheS5() {
        pAns("R.A. : 1. longue (épithète), tranquilles (épithète), frais (attribut) — 2. vertes, ancienne, immenses.", ["attribut"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(5, TOTAL, meta, rows, "s5");
+  return fiche(5, TOTAL, meta, rows, "s5", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS5() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 5", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES ADJECTIFS QUALIFICATIFS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Leur position :"),
     p("• les adjectifs courts et fréquents se placent souvent avant le nom : un long voyage, une belle plage, un vieux train ;"),
     p("• les autres se placent après : une route nationale, la forêt dense, un ciel gris.", { after: 60 }),
     sub("2. Leur fonction :"),
-    pr([run("• épithète — ", { bold: true }), run("à côté du nom : "), run("la forêt dense, le voyageur fatigué ;", { bold: true, color: C.BLUE })]),
-    pr([run("• attribut du sujet — ", { bold: true }), run("relié au sujet par être, sembler, devenir, paraître, rester : "), run("l'air devient chaud et humide ; la mer est calme.", { bold: true, color: C.BLUE })], { after: 60 }),
+    pr([run("• épithète — ", { bold: true }), run("à côté du nom : "), run("la forêt dense, le voyageur fatigué ;", { bold: true, color: C.SALMON })]),
+    pr([run("• attribut du sujet — ", { bold: true }), run("relié au sujet par être, sembler, devenir, paraître, rester : "), run("l'air devient chaud et humide ; la mer est calme.", { bold: true, color: C.SALMON })], { after: 60 }),
     sub("3. Leur accord — toujours en genre et en nombre avec le nom :"),
     p("• un pont étroit → une route étroite → des routes étroites ;"),
     p("• un village ancien → des villages anciens → des gares anciennes.", { after: 60 }),
@@ -413,7 +423,7 @@ function lessonS5() {
     p("À préciser et enrichir la description : sans adjectifs, « le train traverse la forêt » ; avec eux, « le vieux train traverse la forêt dense et sombre ».", { after: 60 }),
     pr([run("Attention : ", { bold: true, color: C.RED }),
         run("l'attribut s'accorde avec le sujet, même s'il en est loin : la mer, au bout de la longue descente, est "),
-        run("calme", { bold: true, color: C.BLUE }), run(".")]),
+        run("calme", { bold: true, color: C.SALMON }), run(".")]),
   ];
 }
 
@@ -463,16 +473,18 @@ function ficheS6() {
        pAns("R.A. : 1. En haut de / près de (ou à côté de) — 2. au premier plan, au milieu, au loin — 3. exemple : Sur la place, à côté du puits, les femmes vendent des nattes.", ["au premier plan"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(6, TOTAL, meta, rows, "s6");
+  return fiche(6, TOTAL, meta, rows, "s6", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS6() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 6", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MARQUEURS DE LIEU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les trois familles :"),
-    pr([run("• la position — ", { bold: true }), run("dans, sur, sous, au milieu de, au-dessus de, au-dessous de, dehors ;", { bold: true, color: C.BLUE })]),
-    pr([run("• la proximité — ", { bold: true }), run("près de, loin de, à côté de, proche, ici ;", { bold: true, color: C.BLUE })]),
-    pr([run("• la direction du regard — ", { bold: true }), run("à gauche, à droite, en haut, en bas, derrière, au-devant.", { bold: true, color: C.BLUE })], { after: 60 }),
+    pr([run("• la position — ", { bold: true }), run("dans, sur, sous, au milieu de, au-dessus de, au-dessous de, dehors ;", { bold: true, color: C.SALMON })]),
+    pr([run("• la proximité — ", { bold: true }), run("près de, loin de, à côté de, proche, ici ;", { bold: true, color: C.SALMON })]),
+    pr([run("• la direction du regard — ", { bold: true }), run("à gauche, à droite, en haut, en bas, derrière, au-devant.", { bold: true, color: C.SALMON })], { after: 60 }),
     sub("L'ordre du regard dans une description :"),
     p("1. le premier plan : Au premier plan, la rivière brille."),
     p("2. le milieu : Au milieu des rizières, un chemin de terre serpente."),
@@ -529,16 +541,18 @@ function ficheS7() {
        pAns("R.A. : 1. à mon avis, selon moi, personnellement — 2. exemple : À mon avis, le taxi-brousse est pratique, car il s'arrête partout. — 3. C'est vrai que la mer est calme, mais on peut y nager et pêcher.", ["personnellement"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(7, TOTAL, meta, rows, "s7");
+  return fiche(7, TOTAL, meta, rows, "s7", "PRODUCTION ORALE", COLOR);
 }
 function lessonS7() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 7", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("DONNER SON AVIS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La boîte à outils de l'avis :"),
-    pr([run("• pour ouvrir — ", { bold: true }), run("à mon avis, selon moi, personnellement, je trouve que, je pense que ;", { bold: true, color: C.BLUE })]),
-    pr([run("• pour justifier — ", { bold: true }), run("parce que, car ;", { bold: true, color: C.BLUE })]),
-    pr([run("• pour nuancer poliment — ", { bold: true }), run("c'est vrai, mais… / je comprends, pourtant…", { bold: true, color: C.BLUE })], { after: 60 }),
+    pr([run("• pour ouvrir — ", { bold: true }), run("à mon avis, selon moi, personnellement, je trouve que, je pense que ;", { bold: true, color: C.SALMON })]),
+    pr([run("• pour justifier — ", { bold: true }), run("parce que, car ;", { bold: true, color: C.SALMON })]),
+    pr([run("• pour nuancer poliment — ", { bold: true }), run("c'est vrai, mais… / je comprends, pourtant…", { bold: true, color: C.SALMON })], { after: 60 }),
     sub("Un avis complet :"),
     p("expression d'avis + opinion + justification"),
     p("« À mon avis, le voyage nature est le plus intéressant, parce qu'on y apprend ce qu'aucun livre ne montre. »", { after: 60 }),
@@ -594,11 +608,13 @@ function ficheS8() {
        pAns("R.A. : I. La cascade de la rivière Sahatandra, à une heure du village. II. Premier plan : l'eau blanche ; milieu : les rochers noirs ; au loin : la forêt. Image : un rideau d'argent. III. Conseil : y aller à la saison des pluies.", ["rideau d'argent"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(8, TOTAL, meta, rows, "s8");
+  return fiche(8, TOTAL, meta, rows, "s8", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS8() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 8", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("DÉCRIRE UN PAYSAGE : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Avant d'écrire, je rassemble mes idées :"),
     p("• OÙ se trouve mon paysage ? (région, distance, accès)"),
@@ -661,11 +677,13 @@ function ficheS9() {
       [fp("Remettent leur texte.")],
       "Travail individuel", "----"),
   ];
-  return fiche(9, TOTAL, meta, rows, "s9");
+  return fiche(9, TOTAL, meta, rows, "s9", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS9() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 9", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Pour rédiger mon texte descriptif :"),
     p("• je suis mon plan, partie par partie ;"),
@@ -730,11 +748,13 @@ function ficheS10() {
        pAns("R.A. : lecture fluide, pauses aux points et aux virgules, autocorrections rapides.", ["pauses"], { size: SZ.FICHE })],
       "Travail individuel", "Texte de la S3"),
   ];
-  return fiche(10, TOTAL, meta, rows, "s10");
+  return fiche(10, TOTAL, meta, rows, "s10", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS10() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 10", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE AVEC LA PONCTUATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le code des signes :"),
     mot("le point .", "pause longue ; la voix descend"),
@@ -760,9 +780,9 @@ function bigLesson() {
     unitBanner("LEÇON — UNITÉ 1 : LE VOYAGE (récapitulatif)", COLOR),
     p("", { after: 80 }),
     sub("1. Les mots de l'unité :"),
-    pr([run("Les types de voyage : ", { bold: true }), run("touristique, culturel, gastronomique, nature et biodiversité.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("La carte : ", { bold: true }), run("l'itinéraire, l'étape, la légende, l'échelle, le trajet.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Les bienfaits : ", { bold: true }), run("le voyage repose, apprend, ouvre l'esprit, rend fier de son pays.", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("Les types de voyage : ", { bold: true }), run("touristique, culturel, gastronomique, nature et biodiversité.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("La carte : ", { bold: true }), run("l'itinéraire, l'étape, la légende, l'échelle, le trajet.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Les bienfaits : ", { bold: true }), run("le voyage repose, apprend, ouvre l'esprit, rend fier de son pays.", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("2. Le texte descriptif :"),
     p("But : faire voir un lieu. Structure : introduction (situer) → développement (décrire dans l'ordre du regard) → conclusion (impression + conseil).", { after: 80 }),
     sub("3. Les expressions imagées :"),

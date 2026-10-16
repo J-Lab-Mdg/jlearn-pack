@@ -1,7 +1,7 @@
 // Français T6 — UNITÉ 4 — LES SPORTS (10 leçons + révision + test) — Séances 37 à 48 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "D35400"; // orange sports
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -119,11 +119,13 @@ function ficheS37() {
        pAns("R.A. : 1. au marché d'Ambohidava — dimanche après-midi — la finale de pétanque — en triplette, 13 à 12. 2. une équipe de trois ; la petite boule qu'on vise. 3. la persévérance.", ["persévérance"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(37, TOTAL, meta, rows, "s37");
+  return fiche(37, TOTAL, meta, rows, "s37", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS37() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 37", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER UN REPORTAGE SPORTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     passageReportage(),
     p("", { after: 80 }),
@@ -191,11 +193,13 @@ function ficheS38() {
        pAns("R.A. : 1. le football ; la course ; le moraingy. 2. L'arbitre a sifflé une faute contre notre équipe. 3. il rend le cœur plus fort ; trop d'entraînement blesse.", ["moraingy"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(38, TOTAL, meta, rows, "s38");
+  return fiche(38, TOTAL, meta, rows, "s38", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS38() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 38", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MOTS DU SPORT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Les types de sport :"),
     mot("les sports collectifs", "le football, le basket, le rugby — on joue en équipe"),
@@ -268,11 +272,13 @@ function ficheS39() {
        pAns("R.A. : 1. un cœur plus fort, un meilleur sommeil ; la confiance en soi. 2. il finit par se blesser. 3. la résistance à l'effort ; grâce au contexte (« faire un effort plus longtemps »).", ["l'endurance"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(39, TOTAL, meta, rows, "s39");
+  return fiche(39, TOTAL, meta, rows, "s39", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS39() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 39", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UN TEXTE EXPLICATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     texteBienfaits(),
     p("", { after: 80 }),
@@ -337,11 +343,13 @@ function ficheS40() {
        pAns("R.A. : 1. impérative, interrogative, exclamative, déclarative. 2. Est-ce que le match est fini ? / Le match est-il fini ? / Quand le match finit-il ? 3. Repose-toi après l'effort.", ["impérative"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(40, TOTAL, meta, rows, "s40");
+  return fiche(40, TOTAL, meta, rows, "s40", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS40() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 40", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES QUATRE TYPES DE PHRASES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. La phrase déclarative — pour informer :"),
     p("Sujet + verbe, point final. « Les jeunes ont gagné la finale. »", { after: 60 }),
@@ -406,11 +414,13 @@ function ficheS41() {
        pAns("R.A. : 1. Nous n'avons jamais perdu. 2. Elle n'a vu personne. 3. Je n'ai rien raté.", ["personne"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(41, TOTAL, meta, rows, "s41");
+  return fiche(41, TOTAL, meta, rows, "s41", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS41() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 41", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("FORMES DE PHRASES — LA NÉGATION AU PASSÉ COMPOSÉ", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Tout type de phrase a deux formes :"),
     p("• affirmative : « Naivo a raté son tir. »"),
@@ -475,11 +485,13 @@ function ficheS42() {
        pAns("R.A. : 1. le football, le vélo, Madagascar. 2. La pétanque est notre fierté. Le jeu des boules d'acier se joue partout. 3. la maison du savoir.", ["la maison du savoir"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(42, TOTAL, meta, rows, "s42");
+  return fiche(42, TOTAL, meta, rows, "s42", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS42() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 42", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LA PÉRIPHRASE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La périphrase, c'est :"),
     p("un groupe de mots qui remplace un mot, en le décrivant.", { after: 60 }),
@@ -545,11 +557,13 @@ function ficheS43() {
       [fp("Participent.")],
       "Observation continue", "Grille d'observation"),
   ];
-  return fiche(43, TOTAL, meta, rows, "s43");
+  return fiche(43, TOTAL, meta, rows, "s43", "PRODUCTION ORALE", COLOR);
 }
 function lessonS43() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 43", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("DONNER SON OPINION, POSER DES QUESTIONS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Mon opinion, toujours avec sa cause :"),
     p("• À mon avis, la pétanque est un vrai sport, parce qu'elle demande de l'adresse et du calme."),
@@ -611,11 +625,13 @@ function ficheS44() {
       [fp("Exposent individuellement.")],
       "Présentation notée", "Grille"),
   ];
-  return fiche(44, TOTAL, meta, rows, "s44");
+  return fiche(44, TOTAL, meta, rows, "s44", "PRODUCTION ORALE", COLOR);
 }
 function lessonS44() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 44", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("EXPOSER LES BIENFAITS D'UN SPORT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le plan de mon exposé :"),
     p("1. Je PRÉSENTE mon sport — avec une périphrase : « Je vais vous parler du ballon rond… » ;"),
@@ -680,11 +696,13 @@ function ficheS45() {
       [fp("Remettent leur travail.")],
       "Travail individuel", "----"),
   ];
-  return fiche(45, TOTAL, meta, rows, "s45");
+  return fiche(45, TOTAL, meta, rows, "s45", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS45() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 45", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("RÉDIGER DES RÈGLES DE JEU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La forme des règles de jeu :"),
     p("• le NOM du sport ;"),
@@ -751,11 +769,13 @@ function ficheS46() {
        pAns("R.A. : lecture fluide et vivante ; « un carreau ! » lu avec l'exclamation.", ["carreau"], { size: SZ.FICHE })],
       "Travail individuel", "Texte de la S37"),
   ];
-  return fiche(46, TOTAL, meta, rows, "s46");
+  return fiche(46, TOTAL, meta, rows, "s46", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS46() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 46", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UN REPORTAGE, LIRE UNE RÈGLE DE JEU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Deux textes, deux voix :"),
     p("• le REPORTAGE se lit avec vie : le rythme suit le match, l'exclamation éclate, la citation change de voix ;"),
@@ -781,9 +801,9 @@ function bigLesson() {
     unitBanner("LEÇON — UNITÉ 4 : LES SPORTS (récapitulatif)", COLOR),
     p("", { after: 80 }),
     sub("1. Les mots de l'unité :"),
-    pr([run("Les types de sport : ", { bold: true }), run("collectifs (football, basket, rugby), individuels (course, natation, pétanque), de chez nous (moraingy, savika).", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Les règles de jeu : ", { bold: true }), run("le terrain, l'équipe, l'arbitre, la faute, le point, le but.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Le sportif : ", { bold: true }), run("s'entraîner, persévérer, le fair-play, respecter, encourager.", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("Les types de sport : ", { bold: true }), run("collectifs (football, basket, rugby), individuels (course, natation, pétanque), de chez nous (moraingy, savika).", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Les règles de jeu : ", { bold: true }), run("le terrain, l'équipe, l'arbitre, la faute, le point, le but.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Le sportif : ", { bold: true }), run("s'entraîner, persévérer, le fair-play, respecter, encourager.", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("2. Le texte explicatif :"),
     p("il répond à pourquoi ? comment ? — une question, une réponse avec des causes, des exemples, une conclusion.", { after: 80 }),
     sub("3. Les quatre types de phrases :"),

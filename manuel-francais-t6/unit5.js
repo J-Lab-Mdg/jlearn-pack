@@ -1,7 +1,7 @@
 // Français T6 — UNITÉ 5 — LES ÉVÉNEMENTS FAMILIAUX (10 leçons + révision + test) — Séances 49 à 60 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B03A2E"; // rouge brique événements familiaux
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -120,11 +120,13 @@ function ficheS49() {
        pAns("R.A. : 1. à Ambositra — en septembre — le mariage de tante Voahangy — discours, vody ondry, repas, danses. 2. le récit d'un événement réellement vécu. 3. celui qui fait le discours ; grâce au kabary que je connais en malgache.", ["récit de vie"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(49, TOTAL, meta, rows, "s49");
+  return fiche(49, TOTAL, meta, rows, "s49", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS49() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 49", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER UN RÉCIT DE VIE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     passageMariage(),
     p("", { after: 80 }),
@@ -192,11 +194,13 @@ function ficheS50() {
        pAns("R.A. : 1. naissance, circoncision, mariage, décès, exhumation. 2. le vody ondry, les noces ; le lambamena, le tombeau familial. 3. toutes mes condoléances.", ["lambamena"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(50, TOTAL, meta, rows, "s50");
+  return fiche(50, TOTAL, meta, rows, "s50", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS50() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 50", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MOTS DES ÉVÉNEMENTS FAMILIAUX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. La naissance :"),
     mot("le nouveau-né, le berceau", "« Félicitations ! » aux parents"),
@@ -269,11 +273,13 @@ function ficheS51() {
        pAns("R.A. : 1. situation initiale, événements, situation finale. 2. l'imparfait ; le passé simple. 3. le plus âgé de la famille.", ["passé simple"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(51, TOTAL, meta, rows, "s51");
+  return fiche(51, TOTAL, meta, rows, "s51", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS51() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 51", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UN TEXTE NARRATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     texteFamadihana(),
     p("", { after: 80 }),
@@ -340,11 +346,13 @@ function ficheS52() {
        pAns("R.A. : 1. il chanta, il finit, il fit, il fut. 2. ils arrivèrent, ils prirent, ils eurent. 3. était (décor) ; se leva (action).", ["se leva"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(52, TOTAL, meta, rows, "s52");
+  return fiche(52, TOTAL, meta, rows, "s52", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS52() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 52", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LE PASSÉ SIMPLE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Son emploi :"),
     p("C'est le temps du récit écrit : il raconte des actions finies, l'une après l'autre. On le rencontre surtout à la 3e personne.", { after: 60 }),
@@ -414,11 +422,13 @@ function ficheS53() {
        pAns("R.A. : 1. présent : actuellement, maintenant ; passé : l'avant-veille, autrefois ; futur : le lendemain, bientôt. 2. La veille. 3. Le lendemain.", ["La veille"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(53, TOTAL, meta, rows, "s53");
+  return fiche(53, TOTAL, meta, rows, "s53", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS53() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 53", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES INDICATEURS TEMPORELS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Ils situent les faits dans le temps :"),
     mot("PRÉSENT", "aujourd'hui, maintenant, en ce moment, actuellement"),
@@ -481,11 +491,13 @@ function ficheS54() {
        pAns("R.A. : 1. Nous les respectons. 2. Je lui téléphone. 3. Je ne l'ai pas vu au mariage.", ["lui"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(54, TOTAL, meta, rows, "s54");
+  return fiche(54, TOTAL, meta, rows, "s54", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS54() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 54", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES PRONOMS COD ET COI", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le COD répond à : quoi ? qui ? → le, la, l', les"),
     p("• Je vois le tombeau. → Je le vois."),
@@ -549,11 +561,13 @@ function ficheS55() {
       [fp("Participent au débat.")],
       "Observation continue", "Grille d'observation"),
   ];
-  return fiche(55, TOTAL, meta, rows, "s55");
+  return fiche(55, TOTAL, meta, rows, "s55", "PRODUCTION ORALE", COLOR);
 }
 function lessonS55() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 55", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("DÉBATTRE D'UNE PRATIQUE FAMILIALE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Mes outils de débat :"),
     p("• l'opinion : À mon avis, … parce que… ;"),
@@ -613,11 +627,13 @@ function ficheS56() {
       [fp("Présentent en binômes.")],
       "Présentation notée", "Grille"),
   ];
-  return fiche(56, TOTAL, meta, rows, "s56");
+  return fiche(56, TOTAL, meta, rows, "s56", "PRODUCTION ORALE", COLOR);
 }
 function lessonS56() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 56", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("PRÉSENTER UN MINI-REPORTAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le plan de mon reportage :"),
     p("1. L'ANNONCE : où, quand, quoi — « Ce dimanche, à Ambositra, toute une famille célèbre un mariage. » ;"),
@@ -679,11 +695,13 @@ function ficheS57() {
       [fp("Remettent dictée et récit.")],
       "Travail individuel", "----"),
   ];
-  return fiche(57, TOTAL, meta, rows, "s57");
+  return fiche(57, TOTAL, meta, rows, "s57", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS57() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 57", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LA DICTÉE — MON RÉCIT DE VIE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Pour réussir la dictée :"),
     p("• j'écoute toute la phrase avant d'écrire ;"),
@@ -747,11 +765,13 @@ function ficheS58() {
        pAns("R.A. : lecture fluide ; « Une famille qui se souvient est une famille vivante » lu avec gravité.", ["vivante"], { size: SZ.FICHE })],
       "Travail individuel", "Texte de la S51"),
   ];
-  return fiche(58, TOTAL, meta, rows, "s58");
+  return fiche(58, TOTAL, meta, rows, "s58", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS58() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 58", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UN RÉCIT À HAUTE VOIX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La voix suit le récit :"),
     p("• le décor se lit posément ;"),
@@ -779,8 +799,8 @@ function bigLesson() {
     unitBanner("LEÇON — UNITÉ 5 : LES ÉVÉNEMENTS FAMILIAUX (récapitulatif)", COLOR),
     p("", { after: 80 }),
     sub("1. Les mots de l'unité :"),
-    pr([run("Les cinq événements : ", { bold: true }), run("la naissance, la circoncision (famorana), le mariage, le décès, l'exhumation (famadihana).", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Les mots de chacun : ", { bold: true }), run("le nouveau-né ; le vody ondry, les noces ; le deuil, les condoléances ; le tombeau, le lambamena.", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("Les cinq événements : ", { bold: true }), run("la naissance, la circoncision (famorana), le mariage, le décès, l'exhumation (famadihana).", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Les mots de chacun : ", { bold: true }), run("le nouveau-né ; le vody ondry, les noces ; le deuil, les condoléances ; le tombeau, le lambamena.", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("2. Le texte narratif :"),
     p("situation initiale (imparfait — le décor) → événements dans l'ordre (passé simple — l'action) → situation finale.", { after: 80 }),
     sub("3. Le passé simple des verbes courants :"),

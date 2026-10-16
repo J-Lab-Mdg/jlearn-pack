@@ -1,7 +1,7 @@
 // Français T6 — UNITÉ 2 — LA VIE EN SOCIÉTÉ (10 leçons + révision + test) — Séances 13 à 24 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1E8449"; // vert vie en société
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -125,11 +125,13 @@ function ficheS13() {
        pAns("R.A. : 1. à Ambohitsoa — samedi dernier — nettoyage, peinture, plantation — ensemble, par groupes. 2. les jeunes étaient motivés ; l'entraide rapproche les voisins. 3. s'aider les uns les autres.", ["l'entraide"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(13, TOTAL, meta, rows, "s13");
+  return fiche(13, TOTAL, meta, rows, "s13", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS13() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 13", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER UN COMPTE-RENDU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     passageEntraide(),
     p("", { after: 80 }),
@@ -196,11 +198,13 @@ function ficheS14() {
        pAns("R.A. : 1. l'école, la route ; le Rova (ou un monument local). 2. l'entraide est l'action d'aider ; la solidarité, le sentiment qui y pousse. 3. saluer, remercier, laisser sa place à un aîné.", ["patrimoine"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(14, TOTAL, meta, rows, "s14");
+  return fiche(14, TOTAL, meta, rows, "s14", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS14() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 14", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MOTS DE LA VIE EN SOCIÉTÉ", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Les biens de tous :"),
     mot("un bien public", "il sert à tous : l'école, la route, la borne-fontaine, le jardin public"),
@@ -269,11 +273,13 @@ function ficheS15() {
        pAns("R.A. : 1. faire savoir / faire agir. 2. Respectez (Jetez, Tenez…) ; Il est interdit de faire du feu. 3. il appartient à tous et il est entretenu grâce aux impôts de chacun.", ["Il est interdit"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(15, TOTAL, meta, rows, "s15");
+  return fiche(15, TOTAL, meta, rows, "s15", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS15() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 15", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LE TEXTE INFORMATIF ET LE TEXTE INJONCTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     texteReglement(),
     p("", { after: 80 }),
@@ -337,22 +343,24 @@ function ficheS16() {
        pAns("R.A. : 1. celle ; ceux. 2. neutre ; simple. 3. exemple : Ceux qui jettent leurs déchets à la poubelle respectent le quartier.", ["celle"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(16, TOTAL, meta, rows, "s16");
+  return fiche(16, TOTAL, meta, rows, "s16", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS16() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 16", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES PRONOMS DÉMONSTRATIFS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("À quoi servent-ils ?"),
     p("À remplacer un nom déjà cité, pour éviter la répétition :"),
     p("« Les règles du jardin sont utiles ; celles-ci protègent tout le monde. »", { after: 60 }),
     sub("1. Les pronoms simples — ils s'accordent avec le nom remplacé :"),
-    pr([run("• masculin singulier : ", { bold: true }), run("celui", { bold: true, color: C.BLUE }), run("  —  Ce banc est celui de la fontaine.")]),
-    pr([run("• féminin singulier : ", { bold: true }), run("celle", { bold: true, color: C.BLUE }), run("  —  Mon école et celle de mon frère.")]),
-    pr([run("• masculin pluriel : ", { bold: true }), run("ceux", { bold: true, color: C.BLUE }), run("  —  Ceux qui aident reçoivent des remerciements.")]),
-    pr([run("• féminin pluriel : ", { bold: true }), run("celles", { bold: true, color: C.BLUE }), run("  —  Ces fleurs sont celles du massif.")], { after: 60 }),
+    pr([run("• masculin singulier : ", { bold: true }), run("celui", { bold: true, color: C.SALMON }), run("  —  Ce banc est celui de la fontaine.")]),
+    pr([run("• féminin singulier : ", { bold: true }), run("celle", { bold: true, color: C.SALMON }), run("  —  Mon école et celle de mon frère.")]),
+    pr([run("• masculin pluriel : ", { bold: true }), run("ceux", { bold: true, color: C.SALMON }), run("  —  Ceux qui aident reçoivent des remerciements.")]),
+    pr([run("• féminin pluriel : ", { bold: true }), run("celles", { bold: true, color: C.SALMON }), run("  —  Ces fleurs sont celles du massif.")], { after: 60 }),
     sub("2. Les pronoms neutres — ils désignent une idée, une situation :"),
-    pr([run("ce, ceci, cela, ça", { bold: true, color: C.BLUE }), run("  —  Cela fait plaisir à voir. Ça, c'est du beau travail.")], { after: 60 }),
+    pr([run("ce, ceci, cela, ça", { bold: true, color: C.SALMON }), run("  —  Cela fait plaisir à voir. Ça, c'est du beau travail.")], { after: 60 }),
     sub("Leurs emplois :"),
     p("• suivis de -ci ou -là : celui-ci, celle-là ;"),
     p("• suivis de « de » : celui de la fontaine ;"),
@@ -410,20 +418,22 @@ function ficheS17() {
        pAns("R.A. : 1. Respectez les pelouses ; ne courez pas. 2. Il est indispensable de surveiller les enfants près du bassin. 3. Vous devez surveiller les enfants près du bassin.", ["Il est indispensable"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(17, TOTAL, meta, rows, "s17");
+  return fiche(17, TOTAL, meta, rows, "s17", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS17() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 17", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("ORDONNER, OBLIGER, INTERDIRE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. La phrase impérative — pas de sujet exprimé :"),
     p("• trois personnes : Respecte (tu) — Respectons (nous) — Respectez (vous) ;"),
     p("• forme négative : Ne cueillez pas les fleurs.", { after: 60 }),
     sub("2. L'obligation :"),
-    pr([run("il faut + infinitif ; devoir + infinitif ; être obligé de ; avoir l'obligation de", { bold: true, color: C.BLUE })]),
+    pr([run("il faut + infinitif ; devoir + infinitif ; être obligé de ; avoir l'obligation de", { bold: true, color: C.SALMON })]),
     p("« Il faut jeter ses déchets à la poubelle. » — « Vous devez tenir les chiens en laisse. »", { after: 60 }),
     sub("3. La nécessité :"),
-    pr([run("il est essentiel de ; il est indispensable de", { bold: true, color: C.BLUE })]),
+    pr([run("il est essentiel de ; il est indispensable de", { bold: true, color: C.SALMON })]),
     p("« Il est indispensable de surveiller les jeunes enfants près du bassin. »", { after: 60 }),
     sub("4. La tournure impersonnelle :"),
     p("Le « il » ne désigne personne ; elle exprime une règle générale :"),
@@ -482,11 +492,13 @@ function ficheS18() {
        pAns("R.A. : 1. nous étions, vous faisiez, ils avaient. 2. jetait ; utilise. 3. d'abord, ensuite, enfin.", ["nous étions"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(18, TOTAL, meta, rows, "s18");
+  return fiche(18, TOTAL, meta, rows, "s18", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS18() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 18", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("INFORMER AU BON TEMPS, DANS LE BON ORDRE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Le présent — pour maintenant et pour les généralités :"),
     p("« Le jardin accueille des centaines de visiteurs. » — « L'entraide rapproche les voisins. »"),
@@ -496,8 +508,8 @@ function lessonS18() {
     p("Terminaisons, les mêmes pour tous les verbes : -ais, -ais, -ait, -ions, -iez, -aient."),
     p("être : j'étais, nous étions — faire : vous faisiez — devoir : ils devaient.", { after: 60 }),
     sub("3. Les connecteurs logiques — pour ranger les idées :"),
-    pr([run("• la série des nombres : ", { bold: true }), run("premièrement, deuxièmement, troisièmement ;", { bold: true, color: C.BLUE })]),
-    pr([run("• la série du récit : ", { bold: true }), run("d'abord, ensuite, puis, après, enfin.", { bold: true, color: C.BLUE })], { after: 60 }),
+    pr([run("• la série des nombres : ", { bold: true }), run("premièrement, deuxièmement, troisièmement ;", { bold: true, color: C.SALMON })]),
+    pr([run("• la série du récit : ", { bold: true }), run("d'abord, ensuite, puis, après, enfin.", { bold: true, color: C.SALMON })], { after: 60 }),
     sub("Exemple complet :"),
     p("« D'abord, les jeunes ont nettoyé la place. Ensuite, un groupe a repeint l'école. Enfin, les enfants ont planté dix arbres. »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
@@ -548,11 +560,13 @@ function ficheS19() {
       [fp("Prennent connaissance des critères.")],
       "Travail individuel", "----"),
   ];
-  return fiche(19, TOTAL, meta, rows, "s19");
+  return fiche(19, TOTAL, meta, rows, "s19", "PRODUCTION ORALE", COLOR);
 }
 function lessonS19() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 19", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("LE COMPTE-RENDU ORAL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le plan en trois temps :"),
     p("1. Je situe : où ? quand ? — « Samedi dernier, au fokontany d'Ambohitsoa… »"),
@@ -615,11 +629,13 @@ function ficheS20() {
        pAns("R.A. : Titre : L'école est à nous tous. Infos : l'école accueille 400 élèves ; ses bancs sont payés par les parents. Règles : Respecte les bancs — Il faut garder la cour propre — Il est interdit d'écrire sur les murs. Devise : Une école propre, une fierté pour tous.", ["devise"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(20, TOTAL, meta, rows, "s20");
+  return fiche(20, TOTAL, meta, rows, "s20", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS20() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 20", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("L'AFFICHE : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le plan de l'affiche :"),
     p("1. le TITRE — court et accrocheur : « Notre école, notre maison » ;"),
@@ -680,11 +696,13 @@ function ficheS21() {
       [fp("Remettent leur affiche.")],
       "Travail individuel", "----"),
   ];
-  return fiche(21, TOTAL, meta, rows, "s21");
+  return fiche(21, TOTAL, meta, rows, "s21", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS21() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 21", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("RÉDIGER MON AFFICHE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Pour rédiger :"),
     p("• je suis mon plan : titre → informations → règles → devise ;"),
@@ -749,11 +767,13 @@ function ficheS22() {
        pAns("R.A. : lecture fluide ; la citation du chef de fokontany est lue avec une voix différente.", ["citation"], { size: SZ.FICHE })],
       "Travail individuel", "Texte de la S13"),
   ];
-  return fiche(22, TOTAL, meta, rows, "s22");
+  return fiche(22, TOTAL, meta, rows, "s22", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS22() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 22", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UN COMPTE-RENDU À HAUTE VOIX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les signes de base et leur code :"),
     mot("la virgule ,", "pause courte — elle sépare les éléments d'une énumération"),
@@ -781,9 +801,9 @@ function bigLesson() {
     unitBanner("LEÇON — UNITÉ 2 : LA VIE EN SOCIÉTÉ (récapitulatif)", COLOR),
     p("", { after: 80 }),
     sub("1. Les mots de l'unité :"),
-    pr([run("Les biens de tous : ", { bold: true }), run("le bien public, le patrimoine.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Les actions ensemble : ", { bold: true }), run("l'entraide, la solidarité, les activités communautaires.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Les manières : ", { bold: true }), run("le savoir-vivre, la politesse, les règles de vie en classe.", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("Les biens de tous : ", { bold: true }), run("le bien public, le patrimoine.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Les actions ensemble : ", { bold: true }), run("l'entraide, la solidarité, les activités communautaires.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Les manières : ", { bold: true }), run("le savoir-vivre, la politesse, les règles de vie en classe.", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("2. Le compte-rendu :"),
     p("Il rapporte un fait réel. La grille : où ? quand ? quoi ? comment ? Information explicite (écrite) ou implicite (comprise entre les lignes).", { after: 80 }),
     sub("3. Les textes informatif et injonctif :"),

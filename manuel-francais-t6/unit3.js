@@ -1,7 +1,7 @@
 // Français T6 — UNITÉ 3 — LES NOUVELLES TECHNOLOGIES (10 leçons + révision + test) — Séances 25 à 36 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "6C3483"; // violet nouvelles technologies
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -126,11 +126,13 @@ function ficheS25() {
        pAns("R.A. : 1. au village — dimanche — envoyer un message — pas à pas. 2. allumer, ouvrir “Messages”, écrire, envoyer. 3. appuyer sur une image ou un bouton de l'écran.", ["cliquer"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(25, TOTAL, meta, rows, "s25");
+  return fiche(25, TOTAL, meta, rows, "s25", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS25() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 25", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER UN TUTORIEL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     passageTutoriel(),
     p("", { after: 80 }),
@@ -196,11 +198,13 @@ function ficheS26() {
        pAns("R.A. : 1. l'ordinateur, la tablette ; l'écran, le clavier ; cliquer, télécharger. 2. l'écrire avec le clavier. 3. chercher un mot dans un dictionnaire en ligne.", ["le clavier"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(26, TOTAL, meta, rows, "s26");
+  return fiche(26, TOTAL, meta, rows, "s26", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS26() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 26", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MOTS DU NUMÉRIQUE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Les appareils :"),
     mot("le téléphone portable, le smartphone", "pour appeler, envoyer des messages, photographier"),
@@ -274,11 +278,13 @@ function ficheS27() {
        pAns("R.A. : 1. télé- (à distance) + charger → faire venir un document de loin. 2. parce que le monde change ; « parce que ». 3. décomposition, contexte (synonymes/contraires), dictionnaire.", ["parce que"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(27, TOTAL, meta, rows, "s27");
+  return fiche(27, TOTAL, meta, rows, "s27", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS27() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 27", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("DEVINER LE SENS D'UN MOT INCONNU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     texteSalleInfo(),
     p("", { after: 80 }),
@@ -344,11 +350,13 @@ function ficheS28() {
        pAns("R.A. : 1. « Comme l'écran est éteint ». 2. Grâce à ; à cause. 3. Parce que cela protège les machines et économise le courant.", ["Grâce à"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(28, TOTAL, meta, rows, "s28");
+  return fiche(28, TOTAL, meta, rows, "s28", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS28() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 28", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("L'EXPRESSION DE LA CAUSE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La cause, c'est la raison d'un fait. Elle répond à : pourquoi ?"),
     p("", { after: 40 }),
@@ -415,11 +423,13 @@ function ficheS29() {
        pAns("R.A. : 1. Il ne touche jamais aux fils. 2. Ne mangez pas près des claviers. 3. personne.", ["jamais"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(29, TOTAL, meta, rows, "s29");
+  return fiche(29, TOTAL, meta, rows, "s29", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS29() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 29", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LA FORME NÉGATIVE — INTERDIRE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La négation va par deux, autour du verbe :"),
     mot("ne … pas", "« Je ne touche pas aux fils. » — négation simple"),
@@ -487,11 +497,13 @@ function ficheS30() {
        pAns("R.A. : 1. appuyer. 2. nous serons ; vous aurez. 3. que je finisse.", ["serons"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(30, TOTAL, meta, rows, "s30");
+  return fiche(30, TOTAL, meta, rows, "s30", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS30() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 30", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("TROIS MODES VERBAUX DE BASE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. L'infinitif — la consigne neutre :"),
     p("La forme nue du verbe : appuyer, choisir, éteindre. C'est le mode des modes d'emploi et des recettes :"),
@@ -558,11 +570,13 @@ function ficheS31() {
       [fp("Participent au débat.")],
       "Observation continue", "Grille d'observation"),
   ];
-  return fiche(31, TOTAL, meta, rows, "s31");
+  return fiche(31, TOTAL, meta, rows, "s31", "PRODUCTION ORALE", COLOR);
 }
 function lessonS31() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 31", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("DONNER SON OPINION, METTRE EN GARDE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Pour donner mon opinion :"),
     p("• À mon avis, … / Je pense que… / Je trouve que…"),
@@ -626,11 +640,13 @@ function ficheS32() {
       [fp("Présentent individuellement ou en binômes.")],
       "Présentation notée", "Grille"),
   ];
-  return fiche(32, TOTAL, meta, rows, "s32");
+  return fiche(32, TOTAL, meta, rows, "s32", "PRODUCTION ORALE", COLOR);
 }
 function lessonS32() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 32", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("PRÉSENTER UN TUTORIEL À L'ORAL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le plan de mon tutoriel :"),
     p("1. J'annonce : « Je vais vous montrer comment… » ;"),
@@ -693,11 +709,13 @@ function ficheS33() {
       [fp("Remettent leur travail.")],
       "Travail individuel", "----"),
   ];
-  return fiche(33, TOTAL, meta, rows, "s33");
+  return fiche(33, TOTAL, meta, rows, "s33", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS33() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 33", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("RÉDIGER UN MODE D'EMPLOI", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La forme du mode d'emploi :"),
     p("• un TITRE qui annonce l'action : « Comment envoyer un message » ;"),
@@ -766,11 +784,13 @@ function ficheS34() {
        pAns("R.A. : lecture posée ; « Ne télécharge rien sans l'autorisation de l'enseignant » lu avec force.", ["autorisation"], { size: SZ.FICHE })],
       "Travail individuel", "Texte de la S27"),
   ];
-  return fiche(34, TOTAL, meta, rows, "s34");
+  return fiche(34, TOTAL, meta, rows, "s34", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS34() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 34", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UN MODE D'EMPLOI À HAUTE VOIX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les signes et leur code :"),
     mot("les deux-points :", "on annonce une liste ou une explication"),
@@ -797,9 +817,9 @@ function bigLesson() {
     unitBanner("LEÇON — UNITÉ 3 : LES NOUVELLES TECHNOLOGIES (récapitulatif)", COLOR),
     p("", { after: 80 }),
     sub("1. Les mots de l'unité :"),
-    pr([run("Les appareils : ", { bold: true }), run("le téléphone portable, le smartphone, l'ordinateur, la tablette, l'appareil photo, l'imprimante.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Les parties et outils : ", { bold: true }), run("l'écran, le clavier, la souris, la touche, le bureau, la clé USB (le flash disque).", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Les actions : ", { bold: true }), run("allumer, éteindre, cliquer, taper, télécharger, enregistrer, imprimer, se connecter.", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("Les appareils : ", { bold: true }), run("le téléphone portable, le smartphone, l'ordinateur, la tablette, l'appareil photo, l'imprimante.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Les parties et outils : ", { bold: true }), run("l'écran, le clavier, la souris, la touche, le bureau, la clé USB (le flash disque).", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Les actions : ", { bold: true }), run("allumer, éteindre, cliquer, taper, télécharger, enregistrer, imprimer, se connecter.", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("2. Deviner un mot inconnu :"),
     p("je le décompose (télé- + charger), je regarde le contexte (synonymes, contraires), je vérifie au dictionnaire.", { after: 80 }),
     sub("3. Deux types de texte :"),
