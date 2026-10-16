@@ -1,7 +1,7 @@
 // assemble.js — Assemblage du Manuel de Géographie T6 (Collection J-Learn)
 const fs = require("fs");
 const path = require("path");
-const { Document, Packer, AlignmentType, Table, TableRow, WidthType, BorderStyle } = require("docx");
+const { Document, Packer, AlignmentType, Table, TableRow, WidthType, BorderStyle, Paragraph, TextRun } = require("docx");
 const B = require("./builders");
 const { generateSeanceDocContent } = require("./seance-generator");
 const U1 = require("./data-unite1");
@@ -100,17 +100,27 @@ const borders = { top: thin, bottom: thin, left: thin, right: thin, insideHorizo
 
 // ── 1. Couverture ───────────────────────────────────────────────────────
 function coverPage() {
-  // Couverture au style du manuel SVT T9 (Collection J-Learn, sobre, titre rouge)
-  return [
-    B.pEmpty(36), B.pEmpty(36),
-    B.p("Collection J-Learn", { size: 36, bold: true, align: AlignmentType.CENTER, after: 600 }),
-    B.p("Manuel de Géographie", { size: 48, bold: true, align: AlignmentType.CENTER, after: 240, color: "C00000" }),
-    B.p("Classe de T6 — Année complète", { size: 36, bold: true, align: AlignmentType.CENTER, after: 240 }),
-    B.p("Programme officiel malgache — 78 numéros, 6 unités thématiques", { size: 28, align: AlignmentType.CENTER, after: 600 }),
-    B.p("Chaque séance : fiche de préparation + leçon illustrée + exercices corrigés.", { size: 26, italics: true, align: AlignmentType.CENTER, after: 120 }),
-    B.p("Manuel complet : 66 leçons, 6 révisions, 6 sujets d'examen et annexes, avec une numérotation continue des séances, de 1 à 78.", { size: 26, italics: true, align: AlignmentType.CENTER }),
-    B.pageBreak(),
-  ];
+  // Couverture identique au manuel SVT T9 de la collection : image de couverture pleine page,
+  // puis le bloc titre (Collection J-Learn, matière + classe en 72 pt, programme, Madagascar)
+  const coverPath = path.join(__dirname, "..", "..", "geo6_bookcover.png");
+  const out = [];
+  if (fs.existsSync(coverPath)) {
+    out.push(...B.imageBlock(coverPath, 602));
+  }
+  out.push(B.p("Collection J-Learn", { size: 28, bold: true, align: AlignmentType.CENTER, after: 200, color: "1F4E79" }));
+  out.push(new Paragraph({
+    alignment: AlignmentType.CENTER,
+    spacing: { after: 120 },
+    children: [
+      new TextRun({ text: "GÉOGRAPHIE", bold: true, color: "C00000", size: 144, font: B.FONT }),
+      new TextRun({ text: " ", size: 144, font: B.FONT }),
+      new TextRun({ text: "T6", bold: true, color: "000000", size: 144, font: B.FONT }),
+    ],
+  }));
+  out.push(B.p("Programme d'Études — 6 unités thématiques", { size: 24, align: AlignmentType.CENTER, after: 80 }));
+  out.push(B.p("Fiches de préparation · Leçons · Exercices corrigés · Sujets d'examen corrigés", { size: 22, align: AlignmentType.CENTER, after: 80 }));
+  out.push(B.p("Madagascar", { size: 22, align: AlignmentType.CENTER, after: 120 }));
+  return out;
 }
 
 // ── 2. Avant-propos ─────────────────────────────────────────────────────
