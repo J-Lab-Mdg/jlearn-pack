@@ -51,6 +51,7 @@ figs.u5f4 = (() => { const { s, y } = head('L’identité culturelle malgache', 
   tr.forEach((t, i) => { b += box(60 + i * 225, top + 262, 205, 48, t, '#FFF3E0', OCRE, 18); });
   return svg(1000, top + 262 + 80, s + b); })();
 
+
 const S = [
   {
     t: 'Les apports austronésiens et africains', comp: 'Le mode de vie des premiers Malgaches', theme: 'Les apports des civilisations austronésiennes et africaines',
@@ -59,13 +60,52 @@ const S = [
     revQ: 'Cite deux ressemblances et deux différences entre les migrants arrivés à Madagascar.',
     revRA: 'Ressemblances : croyance, langue, zébu-riziculture ; différences : variétés régionales, morphologies.',
     situation: 'Quand tu dis « vary », tu parles austronésien sans le savoir ; quand tu nommes l’« akoho », l’Afrique parle par ta bouche ; et les terrasses de rizières qui escaladent les collines betsileo ont des sœurs jumelles à Bali et à Java. Le mode de vie malgache est un trésor composé : ouvrons l’inventaire de ses premiers fournisseurs.',
-    def: 'Les apports de la civilisation austronésienne comprennent le commerce, la pêche et le fonds de la langue — des mots comme omby, vary, salama ; la civilisation indonésienne a apporté la riziculture en terrasse et le mode d’habillement ; la civilisation africaine a laissé les langues bantou et swahili, notamment dans l’appellation des animaux. Les moyens de transport des migrants étaient la pirogue à balancier, le bateau cousu et le boutre ou « botry ».',
-    autrement: 'l’Asie a donné la langue, le riz et ses terrasses ; l’Afrique a donné des mots, des bêtes et des savoirs d’élevage ; et trois bateaux — pirogue, bateau cousu, boutre — ont tout transporté.',
-    concept: 'L’apport austronésien est le socle : la langue d’abord — le malgache appartient à la famille austronésienne, et ses mots les plus quotidiens le prouvent : vary (le riz), omby (le bœuf), salama (le salut), trano (la maison) ; la pêche et la navigation ensuite, arts des peuples de la mer ; le commerce enfin, qui reliait déjà les îles. L’apport indonésien raffine ce socle : la riziculture en terrasse, prodige d’ingénierie qui sculpte les collines en escaliers irrigués — regarde les terrasses betsileo : c’est l’Asie du Sud-Est à Madagascar — et des manières de se vêtir, comme le lamba drapé. L’apport africain complète : les langues bantou et swahili ont fourni quantité de mots, surtout pour les animaux — akoho (la poule, kuku en swahili), ondry (le mouton) — et les techniques d’élevage du zébu, venu d’Afrique avec ses bergers. Les trois bateaux racontent les trois routes : la pirogue à balancier, stable grâce à son flotteur, est la signature austronésienne — on la voit encore chez les Vezo ; le bateau cousu, aux planches liées par des fibres végétales sans un seul clou, naviguait sur tout l’océan Indien ; le boutre (botry), à la voile triangulaire, est le cargo des côtes africaine et arabe — il dessert toujours Mahajanga ! Le mode de vie malgache est donc un tissage : fils asiatiques et fils africains, serrés au point de ne plus pouvoir les séparer.',
+    legende: 'Les terrasses de rizières des collines betsileo ont des sœurs jumelles à Bali et à Java.',
+    motsCles: ['apport austronésien', 'fonds de la langue', 'pêche', 'commerce', 'riziculture en terrasse', 'lamba', 'bantou', 'swahili', 'zébu', 'pirogue à balancier', 'bateau cousu', 'boutre'],
+    sections: [
+      {
+        titre: 'Trois apports fondateurs',
+        paras: ['Chaque civilisation d’origine a fourni sa part du mode de vie malgache :'],
+        puces: [
+          'l’apport austronésien, le socle : la langue — le malgache appartient à la famille austronésienne, et ses mots les plus quotidiens le prouvent : vary (le riz), omby (le bœuf), salama (le salut), trano (la maison) — ; la pêche et la navigation, arts des peuples de la mer ; le commerce, qui reliait déjà les îles ;',
+          'l’apport indonésien : la riziculture en terrasse, prodige d’ingénierie qui sculpte les collines en escaliers irrigués — regarde les terrasses betsileo : c’est l’Asie du Sud-Est à Madagascar — et des manières de se vêtir, comme le lamba drapé ;',
+          'l’apport africain : les langues bantou et swahili ont fourni quantité de mots, surtout pour les animaux — akoho (la poule, kuku en swahili), ondry (le mouton) — et les techniques d’élevage du zébu, venu d’Afrique avec ses bergers.',
+        ],
+      },
+      {
+        titre: 'Les trois bateaux des migrants',
+        paras: ['Trois bateaux racontent les trois routes :'],
+        puces: [
+          'la pirogue à balancier, stable grâce à son flotteur, est la signature austronésienne — on la voit encore chez les Vezo ;',
+          'le bateau cousu, aux planches liées par des fibres végétales sans un seul clou, naviguait sur tout l’océan Indien ;',
+          'le boutre (botry), à la voile triangulaire, est le cargo des côtes africaine et arabe — il dessert toujours Mahajanga !',
+        ],
+      },
+      {
+        titre: 'Un tissage inséparable',
+        paras: [
+          'Le mode de vie malgache est un tissage : fils asiatiques et fils africains, serrés au point de ne plus pouvoir les séparer. Aucune pratique n’est restée identique à son origine : la riziculture indonésienne s’est mariée au zébu africain — mariage qui n’existe nulle part ailleurs.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Les bateaux cousus de l’océan Indien',
+      source: 'd’après le Périple de la mer Érythrée, guide de navigation grec (Iᵉʳ siècle) — extrait adapté',
+      texte: 'Au-delà des côtes d’Azanie, en Afrique orientale, se trouve le dernier comptoir, appelé Rhapta — nom qui lui vient des petites embarcations cousues dont les habitants se servent. On y trouve en abondance l’ivoire et l’écaille de tortue. Les marchands venus d’Arabie y commercent, connaissent les lieux et les langues, et s’unissent parfois aux habitants. La mer, au-delà, est inexplorée.',
+      questions: ['D’où le comptoir de Rhapta tire-t-il son nom, d’après le texte ?',
+        'Que nous apprend ce document, vieux de deux mille ans, sur la navigation dans l’océan Indien ?',
+        'Pourquoi ce témoignage intéresse-t-il l’historien du peuplement de Madagascar ?'],
+      reponses: ['Des « petites embarcations cousues » des habitants : les bateaux aux planches liées par des fibres, sans clous — les bateaux cousus de la leçon.',
+        'Que dès l’Antiquité, l’océan Indien était une route de commerce active : comptoirs africains, marchands arabes, bateaux cousus, échanges et mariages.',
+        'Parce qu’il prouve que les routes maritimes empruntées plus tard par les migrants vers Madagascar fonctionnaient déjà : l’île est née de cette autoroute maritime.']
+    },
+    lexique: [
+      ['Fonds de la langue', 'vocabulaire de base hérité des premiers locuteurs'],
+      ['Riziculture en terrasse', 'culture du riz en escaliers irrigués sur les pentes'],
+      ['Bateau cousu', 'navire aux planches liées par des fibres, sans clous'],
+      ['Boutre (botry)', 'voilier de charge des côtes arabo-africaines'],
+    ],
     synthese: 'austronésien : commerce, pêche, fonds de la langue (omby, vary, salama) ; indonésien : riziculture en terrasse, habillement ; africain : mots bantou-swahili (animaux), élevage du zébu ; transports : pirogue à balancier, bateau cousu, boutre.',
-    method: ['Classer chaque élément du mode de vie par civilisation d’origine.', 'Chercher la preuve linguistique : comparer le mot malgache à ses cousins malais ou swahilis.', 'Associer chaque moyen de transport à sa route maritime.'],
-    exemple: 'Les terrasses de Betafo : technique indonésienne ; le zébu qui les laboure : apport africain ; le mot vary récolté : fonds austronésien — un seul paysage, trois héritages.',
-    erreur: 'Chercher un apport « pur » : aucune pratique malgache n’est restée identique à son origine ; chaque apport a été adapté à l’île — la riziculture indonésienne s’est mariée au zébu africain, mariage qui n’existe nulle part ailleurs.',
     saistu: 'Le bateau cousu n’a pas un seul clou : ses planches sont percées puis « cousues » avec des cordes de fibre de coco, et les trous calfatés de résine ! Cette technique, décrite dès l’Antiquité dans l’océan Indien, rendait les coques souples face aux récifs. Des épaves cousues ont été retrouvées des côtes d’Oman jusqu’en Asie — l’océan Indien était une véritable autoroute maritime.',
     exos: ['Quelle origine ? a) Le mot « vary ». b) La riziculture en terrasse. d) Le mot « akoho ». e) La pirogue à balancier.',
       'Les apports. a) Cite trois apports austronésiens. b) Cite deux apports indonésiens. d) Cite deux apports africains. e) Nomme les trois moyens de transport des migrants.',
@@ -82,13 +122,52 @@ const S = [
     revQ: 'Cite les trois moyens de transport des migrants et une origine de chacun.',
     revRA: 'Pirogue à balancier (austronésienne), bateau cousu (océan Indien), boutre (côtes arabo-africaines).',
     situation: 'Dans une case du Sud-Est, un vieux katibo trace sur un papier ocre des lettres arabes... qui se lisent en malgache. Au marché, le devin dispose ses graines de sikidy ; au village, on prépare la circoncision du petit dernier ; et le nom du mois sur le calendrier traditionnel sonne comme de l’arabe. Les boutres du IXᵉ siècle ont apporté bien plus que des marchandises.',
-    def: 'Les héritages laissés par la civilisation arabo-musulmane sur la civilisation malgache se classent en trois plans. Sur le plan économique : les comptoirs de commerce et les monnaies. Sur le plan politique : la royauté — la notion d’État et les institutions politiques. Sur le plan socio-culturel : la religion, la polygamie, le plan de la ville, l’écriture sorabe, les chiffres arabes, la circoncision, la géomancie (sikidy), l’astrologie, l’architecture, l’artisanat, ainsi que l’entraide et la solidarité (valitanana).',
-    autrement: 'les islamisés ont laissé le commerce et ses comptoirs, des idées pour gouverner, et tout un trésor culturel : l’écriture sorabe, les devins-astrologues, le sikidy, la circoncision, l’entraide.',
-    concept: 'Plan économique : les Antalaotra tiennent des comptoirs — Mahilaka, Langany, les ports du Nord-Ouest — où l’on échange or, fer, esclaves, tissus et perles contre les produits de l’océan Indien ; les monnaies y circulent, nouveauté dans l’île du troc. Plan politique : les royautés du Sud-Est et d’ailleurs empruntent aux islamisés des idées d’État : un souverain sacré, des institutions, des conseillers lettrés — les katibo, scribes du sorabe, serviront plus tard les rois merina eux-mêmes. Plan socio-culturel, le plus riche : l’écriture sorabe — la langue malgache notée en caractères arabes — fait entrer l’île dans l’écrit ; les Antemoro en sont les gardiens, leurs manuscrits conservent généalogies, remèdes et savoirs secrets. Les chiffres, l’astrologie et le calendrier : les noms des jours et des destins (vintana) viennent de l’arabe ; le devin ombiasy lit les jours fastes et néfastes. La géomancie sikidy, divination par les graines, descend du « ilm al-raml » arabe. La circoncision (famorana) devient une grande fête familiale malgache. S’y ajoutent des éléments d’architecture et d’artisanat, et des valeurs d’entraide et de solidarité — le valitanana, l’aide rendue main pour main. Comme toujours, Madagascar a tout adapté : le sikidy s’est marié au culte des ancêtres, le calendrier arabe au vintana — l’héritage est devenu pleinement malgache.',
+    legende: 'Des lettres arabes qui se lisent en malgache : le katibo trace le sorabe, héritage des boutres du IXᵉ siècle.',
+    motsCles: ['comptoirs', 'monnaies', 'royauté', 'notion d’État', 'sorabe', 'katibo', 'Antemoro', 'sikidy', 'astrologie', 'vintana', 'circoncision', 'valitanana'],
+    sections: [
+      {
+        titre: 'Les plans économique et politique',
+        paras: [
+          'Plan économique : les Antalaotra tiennent des comptoirs — Mahilaka, Langany, les ports du Nord-Ouest — où l’on échange or, fer, esclaves, tissus et perles contre les produits de l’océan Indien ; les monnaies y circulent, nouveauté dans l’île du troc.',
+          'Plan politique : les royautés du Sud-Est et d’ailleurs empruntent aux islamisés des idées d’État : un souverain sacré, des institutions, des conseillers lettrés — les katibo, scribes du sorabe, serviront plus tard les rois merina eux-mêmes.',
+        ],
+      },
+      {
+        titre: 'Le plan socio-culturel, le plus riche',
+        paras: ['Les héritages culturels sont innombrables :'],
+        puces: [
+          'l’écriture sorabe — la langue malgache notée en caractères arabes — fait entrer l’île dans l’écrit ; les Antemoro en sont les gardiens, leurs manuscrits conservent généalogies, remèdes et savoirs secrets ;',
+          'les chiffres, l’astrologie et le calendrier : les noms des jours et des destins (vintana) viennent de l’arabe ; le devin ombiasy lit les jours fastes et néfastes ;',
+          'la géomancie sikidy, divination par les graines, descend du « ilm al-raml » arabe ;',
+          'la circoncision (famorana), devenue une grande fête familiale malgache ;',
+          'des éléments d’architecture et d’artisanat, et des valeurs d’entraide et de solidarité — le valitanana, l’aide rendue main pour main.',
+        ],
+      },
+      {
+        titre: 'Des apports malgachisés',
+        paras: [
+          'Comme toujours, Madagascar a tout adapté : le sikidy s’est marié au culte des ancêtres, le calendrier arabe au vintana — l’héritage est devenu pleinement malgache. L’île a adopté l’écriture, les sciences et des coutumes, mais la religion est restée minoritaire : on a pris les outils plus que la foi.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Les lettrés du Sud-Est et leurs livres',
+      source: 'd’après Étienne de Flacourt, Histoire de la Grande Isle Madagascar (1658) — extrait adapté',
+      texte: 'Ceux du pays de Matitanana ont des livres qu’ils écrivent en caractères arabes, sur un papier qu’ils fabriquent eux-mêmes avec l’écorce d’un arbre et qu’ils lustrent avec soin. Leurs ombiasses, qui sont leurs écrivains et devins, enseignent aux enfants à lire et à écrire ces caractères ; ils gardent dans leurs livres la mémoire de leurs généalogies, leurs remèdes et la science des jours bons et mauvais, qu’ils consultent pour toute affaire d’importance.',
+      questions: ['Qui est l’auteur de ce témoignage et à quelle époque écrit-il ?',
+        'Quels usages des livres en caractères arabes le texte décrit-il ?',
+        'Quel nom la leçon donne-t-elle à cette écriture et à ses gardiens ?'],
+      reponses: ['Étienne de Flacourt, gouverneur français installé à Fort-Dauphin, au XVIIᵉ siècle (1658) — un témoin direct.',
+        'Noter les généalogies, les remèdes et la science des jours fastes et néfastes ; enseigner la lecture et l’écriture aux enfants.',
+        'Le sorabe, écriture de la langue malgache en caractères arabes, gardé par les katibo et devins antemoro du Sud-Est (région de Matitanana).']
+    },
+    lexique: [
+      ['Sorabe', 'la langue malgache écrite en caractères arabes'],
+      ['Katibo', 'scribe et lettré antemoro, gardien des manuscrits'],
+      ['Sikidy', 'divination par les graines, héritée du « ilm al-raml » arabe'],
+      ['Valitanana', 'entraide : l’aide rendue main pour main'],
+    ],
     synthese: 'économique : comptoirs, monnaies ; politique : royauté, notion d’État, institutions ; socio-culturel : sorabe (gardé par les Antemoro), chiffres, astrologie et vintana, sikidy, circoncision, architecture, artisanat, valitanana — des apports adaptés et malgachisés.',
-    method: ['Classer les héritages en trois plans : économique, politique, socio-culturel.', 'Pour chaque héritage, citer sa trace actuelle (mot, pratique, site).', 'Montrer l’adaptation : comment l’apport est devenu malgache.'],
-    exemple: 'Le sorabe : apport arabe (l’alphabet) + langue malgache (le contenu) + gardiens antemoro (la transmission) = un héritage arabo-musulman devenu trésor national.',
-    erreur: 'Croire que l’héritage arabo-musulman a fait de Madagascar un pays musulman : l’île a adopté l’écriture, les sciences et des coutumes, mais la religion est restée minoritaire — on a pris les outils plus que la foi.',
     saistu: 'Les manuscrits sorabe les plus précieux étaient si sacrés qu’on ne pouvait les recopier qu’avec des encres spéciales, et certains katibo apprenaient des livres entiers par cœur ! Plusieurs sorabe anciens sont aujourd’hui conservés dans les bibliothèques d’Europe — et les historiens les étudient comme les plus vieilles pages écrites de la pensée malgache.',
     exos: ['Classe chaque héritage par plan : a) les comptoirs de commerce. b) La notion d’État dans la royauté. d) Le sikidy. e) Les monnaies.',
       'Le sorabe. a) Qu’est-ce que le sorabe ? b) Qui en sont les gardiens ? d) Que contiennent les manuscrits ? e) Pourquoi est-ce une étape importante pour l’Histoire malgache ?',
@@ -105,13 +184,50 @@ const S = [
     revQ: 'Cite les trois plans des héritages arabo-musulmans avec un exemple chacun.',
     revRA: 'Économique : comptoirs, monnaies ; politique : notion d’État ; socio-culturel : sorabe, sikidy, circoncision.',
     situation: 'Les lettres que tu traces en ce moment, l’école où tu les apprends, le temple ou l’église du quartier, le port où accostent les cargos : autant d’héritages d’une vague venue, elle, de l’Ouest. Arrivés au XVᵉ siècle en simples visiteurs, les Européens ont fini par transformer l’économie, l’État et la culture de l’île. Inventaire — avec l’esprit critique de l’historien.',
-    def: 'Les héritages laissés par la civilisation occidentale sur la civilisation malgache se classent en trois plans. Sur le plan économique : la marine marchande, le commerce et l’industrie. Sur le plan politique : la notion d’État, les institutions politiques et les valeurs républicaines. Sur le plan socio-culturel : le christianisme, l’école, l’armée de métier, l’alphabet latin et l’écriture latine.',
-    autrement: 'l’Occident a laissé les navires et les usines, l’État moderne et la République, et surtout l’école, le christianisme et l’alphabet dans lequel s’écrit aujourd’hui le malgache.',
-    concept: 'Plan économique : la marine marchande relie l’île au commerce mondial — comptoirs de traite d’abord, puis grandes compagnies ; au XIXᵉ siècle, Jean Laborde installe pour Ranavalona Iʳᵉ à Mantasoa une cité industrielle — fonderie, canons, verre, savon : l’industrie entre à Madagascar. Plan politique : au contact des Européens, le Royaume de Madagascar se dote des outils de l’État moderne — code de lois écrites, ministères, diplomatie, traités internationaux ; plus tard, les valeurs républicaines — élections, constitution, citoyenneté — fonderont la République malgache. Plan socio-culturel, le plus profond : en 1818, les missionnaires gallois de la LMS ouvrent les premières écoles ; en 1823, Radama Iᵉʳ décide que le malgache s’écrira en alphabet latin — vingt et une lettres, sans c, q, u, w, x — et en 1835, la Bible malgache est le premier grand livre imprimé dans la langue : le christianisme s’enracine, mêlé aux traditions. L’école se répand — avant bien des pays d’Europe, l’Imerina du XIXᵉ siècle scolarise massivement ses enfants ! L’armée de métier, avec grades et uniformes, remplace peu à peu les levées guerrières. L’esprit critique s’impose pourtant : ces héritages sont arrivés mêlés d’intérêts — commerce inégal, rivalités franco-britanniques, puis colonisation (1896-1960), que tu étudieras en T8. L’historien pèse les deux plateaux : des outils précieux — école, écriture, État — et une domination qui a coûté la souveraineté. Hériter n’est pas approuver : c’est comprendre.',
+    legende: 'L’école, l’alphabet, le temple, le port : autant d’héritages de la vague venue de l’Ouest.',
+    motsCles: ['marine marchande', 'industrie', 'Mantasoa', 'Jean Laborde', 'État moderne', 'valeurs républicaines', 'christianisme', 'école 1818', 'alphabet latin 1823', 'armée de métier', 'esprit critique'],
+    sections: [
+      {
+        titre: 'Les plans économique et politique',
+        paras: [
+          'Plan économique : la marine marchande relie l’île au commerce mondial — comptoirs de traite d’abord, puis grandes compagnies ; au XIXᵉ siècle, Jean Laborde installe pour Ranavalona Iʳᵉ à Mantasoa une cité industrielle — fonderie, canons, verre, savon : l’industrie entre à Madagascar.',
+          'Plan politique : au contact des Européens, le Royaume de Madagascar se dote des outils de l’État moderne — code de lois écrites, ministères, diplomatie, traités internationaux ; plus tard, les valeurs républicaines — élections, constitution, citoyenneté — fonderont la République malgache.',
+        ],
+      },
+      {
+        titre: 'Le plan socio-culturel, le plus profond',
+        paras: ['Trois jalons transforment la culture :'],
+        puces: [
+          'en 1818, les missionnaires gallois de la LMS ouvrent les premières écoles ; l’école se répand — avant bien des pays d’Europe, l’Imerina du XIXᵉ siècle scolarise massivement ses enfants ;',
+          'en 1823, Radama Iᵉʳ décide que le malgache s’écrira en alphabet latin — vingt et une lettres, sans c, q, u, w, x ;',
+          'en 1835, la Bible malgache est le premier grand livre imprimé dans la langue : le christianisme s’enracine, mêlé aux traditions ; l’armée de métier, avec grades et uniformes, remplace peu à peu les levées guerrières.',
+        ],
+      },
+      {
+        titre: 'Peser les deux plateaux',
+        paras: [
+          'L’esprit critique s’impose : ces héritages sont arrivés mêlés d’intérêts — commerce inégal, rivalités franco-britanniques, puis colonisation (1896-1960), que tu étudieras en T8. L’historien pèse les deux plateaux : des outils précieux — école, écriture, État — et une domination qui a coûté la souveraineté. Hériter n’est pas approuver : c’est comprendre.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Les premières écoles et l’alphabet du malgache',
+      source: 'd’après les journaux des missionnaires de la London Missionary Society à Antananarivo (années 1820) — texte reconstitué',
+      texte: 'Le roi Radama nous a accordé d’ouvrir des écoles, et les enfants y accourent plus nombreux chaque mois. Restait la grande question : avec quelles lettres écrire la langue de ce pays ? Après de longues discussions, le roi a tranché : les consonnes s’écriront à la manière anglaise, les voyelles à la manière française, et chaque son n’aura qu’une seule lettre. Ainsi la langue malgache possède désormais son alphabet, et les écoliers apprennent à lire dans leur propre langue — bientôt, des livres entiers pourront être imprimés ici même.',
+      questions: ['Quelle décision du roi Radama Iᵉʳ ce texte rapporte-t-il, et de quand date-t-elle ?',
+        'Quel principe rend l’alphabet malgache facile à lire ?',
+        'Quel « grand livre » imprimé en 1835 confirmera la réussite annoncée à la fin du texte ?'],
+      reponses: ['L’adoption de l’alphabet latin pour écrire le malgache, en 1823 : consonnes à l’anglaise, voyelles à la française.',
+        'Chaque son n’a qu’une seule lettre : on lit comme on prononce — un alphabet de vingt et une lettres, sans c, q, u, w, x.',
+        'La Bible malgache de 1835, premier grand livre imprimé dans la langue nationale.']
+    },
+    lexique: [
+      ['LMS', 'London Missionary Society, mission galloise arrivée en 1818'],
+      ['Alphabet latin', 'alphabet adopté en 1823 pour écrire le malgache'],
+      ['Armée de métier', 'armée permanente de soldats formés, avec grades'],
+      ['Esprit critique', 'examen des apports ET des coûts d’un héritage'],
+    ],
     synthese: 'économique : marine marchande, commerce, industrie (Mantasoa) ; politique : État moderne, institutions, valeurs républicaines ; socio-culturel : christianisme, école (1818), alphabet latin (1823), armée de métier ; des héritages mêlés d’intérêts — à évaluer avec esprit critique.',
-    method: ['Classer les héritages en trois plans : économique, politique, socio-culturel.', 'Dater les jalons : 1818 (écoles), 1823 (alphabet latin), XIXᵉ (industrie de Mantasoa).', 'Évaluer avec esprit critique : apports ET domination.'],
-    exemple: 'Ton cahier d’Histoire résume trois héritages d’un coup : l’école qui t’accueille (1818), l’alphabet latin que tu traces (1823), et la langue malgache qu’il écrit — héritage occidental au service d’un trésor national.',
-    erreur: 'Confondre « héritage occidental » et « supériorité occidentale » : l’école ou l’alphabet ne valent pas parce qu’ils sont européens, mais parce que les Malgaches se les sont appropriés pour écrire LEUR langue et instruire LEURS enfants.',
     saistu: 'À Mantasoa, Jean Laborde a bâti dans les années 1830-1840 un complexe unique en Afrique australe : haut fourneau, fonderie de canons, verrerie, savonnerie, poudrière — des milliers d’ouvriers malgaches y travaillaient ! On peut encore visiter les vestiges aujourd’hui. Et la première Bible malgache de 1835 fit de Madagascar l’un des tout premiers pays d’Afrique à posséder un grand livre imprimé dans sa langue nationale.',
     exos: ['Classe chaque héritage par plan : a) la marine marchande. b) Les valeurs républicaines. d) L’école. e) L’industrie de Mantasoa.',
       'Les jalons. a) Que se passe-t-il en 1818 ? b) Et en 1823 ? d) Qui a bâti la cité industrielle de Mantasoa, et pour qui ? e) Cite deux caractéristiques de l’armée de métier.',
@@ -128,13 +244,50 @@ const S = [
     revQ: 'Cite les trois plans des héritages occidentaux avec un exemple chacun.',
     revRA: 'Économique : marine, industrie ; politique : État, valeurs républicaines ; socio-culturel : école, alphabet latin, christianisme.',
     situation: 'Antandroy du grand Sud, Betsileo des terrasses, Vezo de la mer, Sihanaka du lac, Merina des collines : la carte de Madagascar est une mosaïque de groupes de population, chacun fier de ses coutumes. Et pourtant une seule culture malgache les relie tous. Comment chaque pièce enrichit-elle la mosaïque — et comment la mosaïque fait-elle un seul tableau ?',
-    def: 'Les groupes de population de Madagascar — Antandroy, Bara, Betsileo, Bezanozano, Sihanaka, Masikoro, Vezo, Merina, Sakalava, Betsimisaraka, Mikea, Tsimihety, et d’autres — possèdent chacun un héritage culturel, une culture matérielle et des coutumes propres. L’identité culturelle malgache est l’ensemble des caractères uniques des Malgaches, nourris par les apports de toutes les civilisations : c’est un patrimoine identitaire à revaloriser.',
-    autrement: 'chaque groupe de population apporte ses couleurs — habitat, coutumes, arts — et toutes ces couleurs composent une identité malgache unique au monde, qu’il nous revient de faire briller.',
-    concept: 'Chaque groupe cultive son héritage : les Antandroy, pasteurs du Sud épineux, élèvent leurs grands troupeaux et sculptent les aloalo des tombeaux ; les Bara, cavaliers du zébu, gardent leurs rites de bravoure ; les Betsileo sculptent les collines en terrasses ; les Vezo, « nomades de la mer », vivent de la pirogue ; les Sihanaka moissonnent le lac Alaotra ; les Sakalava conservent les reliques royales et le tromba ; les Betsimisaraka, « les nombreux inséparables », peuplent la côte Est du girofle et de la vanille ; les Merina ont bâti les rova des hautes terres ; les Mikea vivent de la forêt, les Tsimihety des collines du Nord, les Masikoro de l’élevage de l’Ouest... La culture matérielle varie — case de bois du Sud, maison de brique rouge des plateaux, case de ravinala de l’Est — comme varient les coutumes : famadihana ici, savatse là, tromba ailleurs. Mais sous la mosaïque court un même fil : la langue, le respect des razana, le fihavanana, le riz et le zébu — les caractères uniques de l’identité malgache, tissés par quinze siècles de brassage austronésien, africain, arabe et européen. Revaloriser cette identité, mission que le programme te confie, c’est : connaître (enquêter sur l’héritage de SON groupe et de sa localité, comme en Histoire orale), respecter (aucun groupe n’est « plus malgache » qu’un autre), transmettre (exposés, fêtes d’école, collectes de contes et de savoir-faire). Une identité ne vit que portée — et c’est ta génération qui la porte désormais.',
+    legende: 'Antandroy, Betsileo, Vezo, Sihanaka, Merina : une mosaïque de groupes — un seul tableau malgache.',
+    motsCles: ['groupes de population', 'héritage culturel', 'culture matérielle', 'coutumes', 'aloalo', 'tromba', 'identité culturelle', 'patrimoine identitaire', 'connaître', 'respecter', 'transmettre'],
+    sections: [
+      {
+        titre: 'Chaque groupe cultive son héritage',
+        paras: [
+          'Les Antandroy, pasteurs du Sud épineux, élèvent leurs grands troupeaux et sculptent les aloalo des tombeaux ; les Bara, cavaliers du zébu, gardent leurs rites de bravoure ; les Betsileo sculptent les collines en terrasses ; les Vezo, « nomades de la mer », vivent de la pirogue ; les Sihanaka moissonnent le lac Alaotra ; les Sakalava conservent les reliques royales et le tromba ; les Betsimisaraka, « les nombreux inséparables », peuplent la côte Est du girofle et de la vanille ; les Merina ont bâti les rova des hautes terres ; les Mikea vivent de la forêt, les Tsimihety des collines du Nord, les Masikoro de l’élevage de l’Ouest...',
+          'La culture matérielle varie — case de bois du Sud, maison de brique rouge des plateaux, case de ravinala de l’Est — comme varient les coutumes : famadihana ici, savatse là, tromba ailleurs.',
+        ],
+      },
+      {
+        titre: 'Le fil commun de l’identité malgache',
+        paras: [
+          'Sous la mosaïque court un même fil : la langue, le respect des razana, le fihavanana, le riz et le zébu — les caractères uniques de l’identité malgache, tissés par quinze siècles de brassage austronésien, africain, arabe et européen.',
+        ],
+      },
+      {
+        titre: 'Revaloriser le patrimoine identitaire',
+        paras: ['Une identité ne vit que portée — et c’est ta génération qui la porte désormais. Revaloriser cette identité, mission que le programme te confie, c’est :'],
+        puces: [
+          'connaître : enquêter sur l’héritage de SON groupe et de sa localité, comme en Histoire orale ;',
+          'respecter : aucun groupe n’est « plus malgache » qu’un autre ;',
+          'transmettre : exposés, fêtes d’école, collectes de contes et de savoir-faire.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Les aloalo, mémoire sculptée du Sud',
+      source: 'd’après les notices des musées et les études sur l’art funéraire mahafaly et antandroy — texte reconstitué',
+      texte: 'Sur les tombeaux de pierre du grand Sud se dressent les aloalo : des poteaux de bois dur, hauts parfois de deux mètres, sculptés d’étages de motifs. On y lit la vie du défunt comme dans un livre debout : ses zébus, sa pirogue, sa maison — et sur les plus récents, un taxi-brousse, un avion, une bicyclette. Chaque aloalo est unique, taillé par un sculpteur dont le savoir se transmet de père en fils. Des musées du monde entier exposent aujourd’hui ces œuvres, et les voyageurs viennent de loin admirer un art que seul Madagascar possède.',
+      questions: ['Qu’est-ce qu’un aloalo et que représente-t-il ?',
+        'Quel détail du texte montre que cette tradition reste vivante et évolue ?',
+        'En quoi ce document illustre-t-il la mission « connaître, respecter, transmettre » de la leçon ?'],
+      reponses: ['Un poteau funéraire sculpté dressé sur les tombeaux du Sud : il raconte la vie du défunt en scènes superposées — zébus, pirogue, maison.',
+        'Les motifs modernes — taxi-brousse, avion, bicyclette — prouvent que les sculpteurs continuent de créer en racontant la vie d’aujourd’hui.',
+        'Le savoir se transmet de père en fils (transmettre) ; le monde entier l’admire (respecter) ; et l’étudier en classe, c’est le connaître : l’art d’un groupe est devenu fierté de toute la nation.']
+    },
+    lexique: [
+      ['Culture matérielle', 'objets, habitat et techniques du quotidien d’un groupe'],
+      ['Aloalo', 'poteau funéraire sculpté des tombeaux du Sud'],
+      ['Identité culturelle', 'ensemble des caractères uniques d’un peuple'],
+      ['Patrimoine identitaire', 'héritage commun à connaître, respecter, transmettre'],
+    ],
     synthese: 'des groupes de population aux héritages propres (habitat, coutumes, arts) ; un fil commun : langue, razana, fihavanana, riz-zébu ; identité malgache = caractères uniques nés du brassage ; mission : connaître, respecter, transmettre — revaloriser le patrimoine identitaire.',
-    method: ['Identifier le groupe de population de sa localité et son héritage culturel.', 'Décrire sa culture matérielle et ses coutumes (enquête, visite, témoins).', 'Relier ses traits aux caractères communs malgaches, puis les présenter pour les revaloriser.'],
-    exemple: 'Exposé modèle : « Chez les Betsileo : terrasses rizicoles (culture matérielle), chants et sculpture du bois (héritage), coutumes funéraires propres — et partout la langue, les razana et le fihavanana qui nous relient à toute l’île. »',
-    erreur: 'Classer les groupes de population en « ethnies » rivales : le brassage historique les a tous mêlés, et le prochain cours montrera qu’à Madagascar, il n’y a ni ethnie ni tribu — seulement des groupes d’un même peuple.',
     saistu: 'Les aloalo, ces poteaux sculptés qui ornent les tombeaux du Sud, racontent la vie du défunt en scènes superposées : zébus, pirogues, maisons, parfois... des taxis-brousse et des avions ! L’art funéraire malgache est si singulier que des aloalo sont exposés dans les grands musées du monde — la créativité d’un groupe devenue fierté de toute la nation.',
     exos: ['Associe chaque groupe à son cadre : a) Vezo ; b) Betsileo ; d) Antandroy ; e) Sihanaka.',
       'Les notions. a) Qu’est-ce que l’héritage culturel d’un groupe ? b) Qu’est-ce que la culture matérielle ? d) Cite les quatre caractères communs à tous les Malgaches. e) Que signifie « revaloriser » l’identité culturelle ?',
