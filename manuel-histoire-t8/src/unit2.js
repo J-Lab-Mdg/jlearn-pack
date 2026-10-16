@@ -85,6 +85,7 @@ figs.u2f5 = (() => { const { s, y } = head('Madagascar aux Temps modernes', ['De
   b += txt(500, top + 6 * 72 + 22, 'le commerce avec les Européens enrichit et arme les royaumes', 21, OCRE, 'bold', 'middle');
   return svg(1000, top + 6 * 72 + 54, s + b); })();
 
+
 const S = [
   {
     t: 'Définir et délimiter les Temps modernes', comp: 'Les Temps modernes', theme: 'La délimitation et les subdivisions des Temps modernes (1492-1789)',
@@ -93,13 +94,50 @@ const S = [
     revQ: 'Quelles sont les quatre périodes de l’Histoire et leurs bornes ?',
     revRA: 'Antiquité (−3 000/476), Moyen Âge (476/1492), Temps modernes (1492/1789), Époque contemporaine (1789/nos jours).',
     situation: 'En 1492, trois petites caravelles espagnoles touchent une terre inconnue des Européens : l’Amérique. En 1789, le peuple de Paris prend la Bastille. Entre ces deux dates s’étend une période où le monde change de visage : les océans se couvrent de navires, les arts renaissent, la chrétienté se divise. Les historiens l’ont appelée les Temps modernes. Pourquoi ces deux bornes, et que contient cette période ?',
-    def: 'Les Temps modernes sont la période de l’Histoire comprise entre 1492, date de l’arrivée de Christophe Colomb en Amérique, et 1789, date de la Révolution française. Trois grands mouvements les caractérisent : les Grandes découvertes, qui ouvrent les routes océaniques ; la Renaissance, renouveau des arts et des sciences ; et la Réforme, qui divise la chrétienté d’Europe occidentale.',
-    autrement: 'de Colomb à la Révolution française, trois siècles où les Européens découvrent le monde, réinventent les arts et se disputent la religion.',
-    concept: 'Pourquoi commencer en 1492 ? Parce que l’arrivée de Colomb en Amérique change l’échelle du monde : jusque-là, Européens, Africains et Asiatiques s’ignoraient du continent américain ; désormais, tous les continents sont reliés par la mer. Pourquoi finir en 1789 ? Parce que la Révolution française renverse l’ordre ancien — rois absolus, société d’ordres — et ouvre l’Époque contemporaine. Entre ces deux bornes, trois mouvements s’enchaînent et se nourrissent : les Grandes découvertes (fin XVᵉ-XVIᵉ siècle) lancent les Européens sur tous les océans, du cap de Bonne-Espérance au tour du monde de Magellan ; la Renaissance (XVᵉ-XVIᵉ siècle), partie d’Italie, redécouvre les modèles de l’Antiquité et fait fleurir peinture, sculpture, architecture et sciences ; la Réforme (XVIᵉ siècle) conteste l’Église catholique et donne naissance au protestantisme. Ces mouvements sont liés : les richesses des découvertes financent les artistes, et l’imprimerie — invention de la Renaissance — diffuse les idées des réformateurs. Madagascar entre dans cette histoire dès 1500, quand le Portugais Diégo Diaz aborde ses côtes.',
+    legende: 'De trois caravelles en 1492 à la Bastille en 1789 : trois siècles où le monde change de visage.',
+    motsCles: ['Temps modernes', '1492', '1789', 'Grandes découvertes', 'Renaissance', 'Réforme', 'protestantisme', 'imprimerie', 'Diégo Diaz'],
+    sections: [
+      {
+        titre: 'Deux bornes, deux basculements',
+        paras: [
+          'Les Temps modernes sont la période de l’Histoire comprise entre 1492, date de l’arrivée de Christophe Colomb en Amérique, et 1789, date de la Révolution française.',
+          'Pourquoi commencer en 1492 ? Parce que l’arrivée de Colomb change l’échelle du monde : jusque-là, Européens, Africains et Asiatiques s’ignoraient du continent américain ; désormais, tous les continents sont reliés par la mer. Pourquoi finir en 1789 ? Parce que la Révolution française renverse l’ordre ancien — rois absolus, société d’ordres — et ouvre l’Époque contemporaine.',
+        ],
+      },
+      {
+        titre: 'Trois grands mouvements',
+        paras: ['Entre ces deux bornes, trois mouvements s’enchaînent et se nourrissent :'],
+        puces: [
+          'les Grandes découvertes (fin XVᵉ-XVIᵉ siècle) lancent les Européens sur tous les océans, du cap de Bonne-Espérance au tour du monde de Magellan ;',
+          'la Renaissance (XVᵉ-XVIᵉ siècle), partie d’Italie, redécouvre les modèles de l’Antiquité et fait fleurir peinture, sculpture, architecture et sciences ;',
+          'la Réforme (XVIᵉ siècle) conteste l’Église catholique et donne naissance au protestantisme.',
+        ],
+      },
+      {
+        titre: 'Des mouvements liés — et Madagascar',
+        paras: [
+          'Ces mouvements sont liés : les richesses des découvertes financent les artistes, et l’imprimerie — invention de la Renaissance — diffuse les idées des réformateurs. Madagascar entre dans cette histoire dès 1500, quand le Portugais Diégo Diaz aborde ses côtes.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Colomb annonce sa découverte',
+      source: 'd’après la lettre de Christophe Colomb à Luis de Santángel (février 1493) — extrait adapté',
+      texte: 'Sachez qu’en trente-trois jours je suis passé des îles Canaries aux Indes avec la flotte que les très illustres souverains m’ont confiée. J’y ai trouvé de très nombreuses îles peuplées d’habitants sans nombre, et de toutes j’ai pris possession au nom de Leurs Altesses, par proclamation et bannière royale déployée, sans que personne ne s’y oppose. Les terres y sont fertiles à merveille, et les gens d’une douceur singulière, qui donnent tout ce qu’ils possèdent contre la moindre bagatelle.',
+      questions: ['Où Colomb croit-il être arrivé, et qu’a-t-il réellement atteint ?',
+        'Que fait Colomb des terres qu’il aborde ? Relève l’expression exacte.',
+        'Pourquoi cette lettre marque-t-elle le début d’une nouvelle période de l’Histoire ?'],
+      reponses: ['Il croit avoir atteint « les Indes » (l’Asie) ; il a en réalité touché l’Amérique, continent inconnu des Européens.',
+        'Il en « prend possession au nom de Leurs Altesses » : les terres et leurs habitants sont annexés à la couronne d’Espagne sans leur accord.',
+        'Parce que 1492 relie pour la première fois tous les continents par la mer : les historiens en font la borne d’entrée des Temps modernes.']
+    },
+    lexique: [
+      ['Temps modernes', 'période de l’Histoire allant de 1492 à 1789'],
+      ['Renaissance', 'renouveau des arts et des sciences inspiré de l’Antiquité'],
+      ['Réforme', 'mouvement religieux qui fonde le protestantisme au XVIᵉ siècle'],
+      ['Convention', 'accord des historiens sur une date de découpage'],
+    ],
     synthese: 'Temps modernes = 1492 (Colomb en Amérique) → 1789 (Révolution française) ; trois mouvements : Grandes découvertes (routes océaniques), Renaissance (arts et sciences), Réforme (division religieuse).',
-    method: ['Borner la période : 1492 et 1789, avec l’événement de chaque borne.', 'Citer les trois grands mouvements et leur domaine (mer, arts, religion).', 'Montrer un lien entre deux mouvements (ex. : imprimerie → diffusion de la Réforme).'],
-    exemple: 'L’année 1517, où Luther publie ses thèses contre les indulgences, appartient aux Temps modernes : elle est entre 1492 et 1789, et illustre le mouvement de la Réforme.',
-    erreur: 'Croire que « moderne » veut dire « récent » : les Temps modernes sont finis depuis 1789 ! Pour l’historien, « moderne » désigne une période précise entre le Moyen Âge et l’Époque contemporaine, pas le monde d’aujourd’hui.',
     saistu: 'Le choix des bornes a fait débat entre historiens ! Certains font commencer les Temps modernes en 1453, quand Constantinople tombe aux mains des Ottomans, d’autres en 1492. Et la borne finale varie selon les pays : les Anglais parlent souvent d’« histoire moderne » jusqu’à nos jours ! Les dates des périodes sont des conventions — des outils de classement, pas des vérités absolues.',
     exos: ['Les bornes. a) Quel événement ouvre les Temps modernes ? b) Quel événement les ferme ? d) Combien de temps dure la période (environ) ? e) Quelle période précède les Temps modernes ?',
       'Associe chaque fait à son mouvement : a) Magellan fait le tour du monde ; b) Michel-Ange sculpte le David ; d) Luther conteste l’Église ; e) Vasco de Gama atteint les Indes.',
@@ -116,13 +154,55 @@ const S = [
     revQ: 'Donne les bornes des Temps modernes et les trois grands mouvements de la période.',
     revRA: '1492-1789 ; Grandes découvertes, Renaissance, Réforme.',
     situation: 'Pendant des siècles, les marins européens ont longé les côtes sans oser s’éloigner. Et soudain, en une trentaine d’années, ils doublent l’Afrique, traversent l’Atlantique, atteignent les Indes et font le tour du monde. Que s’est-il passé ? Pourquoi partir si loin, au péril de sa vie ? Et qui sont ces capitaines dont les noms sont entrés dans l’Histoire ?',
-    def: 'Les Grandes découvertes sont les expéditions maritimes des XVᵉ et XVIᵉ siècles par lesquelles les Européens ont exploré les océans. Leurs facteurs sont les inventions et progrès techniques (caravelle, boussole, astrolabe, cartes marines), la recherche de nouvelles routes commerciales, la soif d’épices et de métaux précieux, et la volonté de découvrir et posséder de nouvelles terres.',
-    autrement: 'de meilleurs bateaux et instruments, l’envie d’or et d’épices, des routes à trouver et des terres à conquérir : voilà ce qui pousse les Européens sur les océans.',
-    concept: 'Le premier facteur est technique : la caravelle, navire maniable qui remonte le vent ; la boussole, qui garde le cap ; l’astrolabe, qui donne la latitude ; les cartes marines, toujours plus précises. Sans ces outils, pas de haute mer. Le deuxième facteur est économique : les routes terrestres vers l’Asie — la route de la soie, les routes des épices — sont longues, coûteuses et contrôlées par des intermédiaires ; après la prise de Constantinople par les Ottomans (1453), les Européens cherchent un chemin maritime direct vers les épices et les métaux précieux. Le troisième facteur est politique et religieux : les royaumes du Portugal et d’Espagne veulent des terres nouvelles, et répandre le christianisme. Alors partent les grands capitaines : Bartolomeu Diaz double le cap de Bonne-Espérance en 1488 — la pointe de l’Afrique est franchie ; Christophe Colomb, cherchant les Indes par l’ouest, touche l’Amérique en 1492 ; Vasco de Gama atteint Calicut, aux Indes, en 1498 ; Amerigo Vespucci explore vers 1500 le continent qui prendra son nom ; la même année, Diégo Diaz, dérouté par une tempête, aborde Madagascar ; enfin l’expédition de Magellan (1519-1522) réalise le premier tour du monde — preuve définitive que la Terre est ronde.',
+    legende: 'En trente ans, les marins d’Europe doublent l’Afrique, traversent l’Atlantique et font le tour du monde.',
+    motsCles: ['caravelle', 'boussole', 'astrolabe', 'cartes marines', 'routes des épices', 'Bartolomeu Diaz', 'Christophe Colomb', 'Vasco de Gama', 'Vespucci', 'Diégo Diaz', 'Magellan'],
+    sections: [
+      {
+        titre: 'Les facteurs du grand départ',
+        paras: ['Trois familles de facteurs expliquent les Grandes découvertes :'],
+        puces: [
+          'un facteur technique : la caravelle, navire maniable qui remonte le vent ; la boussole, qui garde le cap ; l’astrolabe, qui donne la latitude ; les cartes marines, toujours plus précises — sans ces outils, pas de haute mer ;',
+          'un facteur économique : les routes terrestres vers l’Asie — la route de la soie, les routes des épices — sont longues, coûteuses et contrôlées par des intermédiaires ; après la prise de Constantinople par les Ottomans (1453), les Européens cherchent un chemin maritime direct vers les épices et les métaux précieux ;',
+          'un facteur politique et religieux : les royaumes du Portugal et d’Espagne veulent des terres nouvelles, et répandre le christianisme.',
+        ],
+      },
+      {
+        titre: 'Les grands explorateurs',
+        paras: ['Alors partent les grands capitaines :'],
+        puces: [
+          'Bartolomeu Diaz double le cap de Bonne-Espérance en 1488 — la pointe de l’Afrique est franchie ;',
+          'Christophe Colomb, cherchant les Indes par l’ouest, touche l’Amérique en 1492 ;',
+          'Vasco de Gama atteint Calicut, aux Indes, en 1498 ;',
+          'Amerigo Vespucci explore vers 1500 le continent qui prendra son nom ;',
+          'la même année, Diégo Diaz, dérouté par une tempête, aborde Madagascar ;',
+          'l’expédition de Magellan (1519-1522) réalise le premier tour du monde — preuve définitive que la Terre est ronde.',
+        ],
+      },
+      {
+        titre: 'Deux routes, un même but',
+        paras: [
+          'Colomb part vers l’ouest pour atteindre les Indes et trouve l’Amérique ; Vasco de Gama part vers l’est, double l’Afrique et atteint vraiment les Indes. Deux routes, un même but : les épices.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Le retour des survivants du tour du monde',
+      source: 'd’après Antonio Pigafetta, chroniqueur de l’expédition de Magellan, Relation du premier voyage autour du monde (1522) — extrait adapté',
+      texte: 'Le samedi 6 septembre 1522, nous entrâmes dans la baie de Sanlúcar : nous n’étions plus que dix-huit hommes, la plupart malades, sur les deux cent trente-sept partis trois ans plus tôt. Depuis notre départ, nous avions parcouru plus de quatorze mille lieues et fait le tour entier de la Terre, naviguant toujours vers le couchant pour revenir par le levant. Jamais, je crois, aucun homme ne recommencera pareil voyage.',
+      questions: ['Combien d’hommes reviennent, sur combien de partis ? Que révèlent ces chiffres ?',
+        'Quelle phrase du texte prouve la rotondité de la Terre ?',
+        'Magellan lui-même figure-t-il parmi les survivants ? Que sais-tu de son sort ?'],
+      reponses: ['Dix-huit sur deux cent trente-sept : les Grandes découvertes se payaient au prix de vies entières — naufrages, faim, maladies, combats.',
+        '« Naviguant toujours vers le couchant pour revenir par le levant » : partis vers l’ouest, ils sont revenus par l’est — on peut donc faire le tour de la Terre.',
+        'Non : Magellan est mort en route (aux Philippines, en 1521) ; c’est son expédition, achevée par ses compagnons, qui boucla le premier tour du monde (1519-1522).']
+    },
+    lexique: [
+      ['Caravelle', 'navire maniable des XVᵉ-XVIᵉ siècles, capable de remonter le vent'],
+      ['Astrolabe', 'instrument donnant la latitude d’après les astres'],
+      ['Épices', 'poivre, cannelle, girofle… produits d’Asie très recherchés'],
+      ['Expédition', 'voyage organisé d’exploration'],
+    ],
     synthese: 'Facteurs : techniques (caravelle, boussole, astrolabe, cartes), économiques (routes, épices, métaux), politiques (terres nouvelles). Explorateurs : B. Diaz 1488 (cap de Bonne-Espérance), Colomb 1492 (Amérique), Vasco de Gama 1498 (Indes), Vespucci 1500, Diégo Diaz 1500 (Madagascar), Magellan 1519-1522 (tour du monde).',
-    method: ['Classer les facteurs : techniques, économiques, politiques et religieux.', 'Mémoriser le tableau explorateur-date-exploit.', 'Suivre chaque itinéraire sur la carte : vers l’est (Afrique, Indes) ou vers l’ouest (Amérique).'],
-    exemple: 'Pour vérifier qu’on a compris : Colomb part vers l’OUEST pour atteindre les Indes et trouve l’Amérique ; Vasco de Gama part vers l’EST, double l’Afrique et atteint vraiment les Indes. Deux routes, un même but : les épices.',
-    erreur: 'Dire que « Colomb a découvert que la Terre est ronde » : les savants le savaient depuis l’Antiquité ! Colomb a sous-estimé la taille de la Terre ; c’est le voyage de Magellan qui a prouvé la rotondité par les faits. Et l’Amérique était déjà peuplée : « découverte » vaut du point de vue européen.',
     saistu: 'Colomb est mort en 1506 sans savoir qu’il avait touché un continent inconnu des Européens : il a toujours cru avoir atteint l’Asie ! C’est pourquoi il appela « Indiens » les habitants de l’Amérique. Le nouveau continent reçut finalement le prénom d’Amerigo Vespucci, le premier à comprendre qu’il s’agissait d’un « Nouveau Monde ».',
     exos: ['Associe chaque explorateur à son exploit : a) Magellan ; b) Vasco de Gama ; d) Bartolomeu Diaz ; e) Christophe Colomb.',
       'Les facteurs. a) Cite trois progrès techniques qui ont permis la haute mer. b) Pourquoi les Européens cherchent-ils une route maritime vers l’Asie ? d) Que cherchent-ils en plus des épices ? e) Quel rôle joue la religion ?',
@@ -139,13 +219,52 @@ const S = [
     revQ: 'Cite trois explorateurs avec leur date et leur exploit.',
     revRA: 'B. Diaz 1488 (cap de Bonne-Espérance), Colomb 1492 (Amérique), Vasco de Gama 1498 (Indes) — ou autres.',
     situation: 'Après les voyages, le monde ne tourne plus de la même façon. Les ports de l’Atlantique remplacent ceux de la Méditerranée ; l’or d’Amérique inonde l’Espagne ; des empires immenses s’effondrent ; et des millions d’Africains sont arrachés à leur terre. Les Grandes découvertes ont enrichi l’Europe — mais à quel prix pour les autres continents ?',
-    def: 'Les Grandes découvertes déplacent les axes commerciaux de la Méditerranée vers l’Atlantique et donnent naissance aux premiers empires coloniaux, espagnol et portugais, avec des comptoirs en Afrique, en Chine et en Inde. En Amérique, les empires aztèque et inca déclinent et l’économie de plantation se développe. Pour fournir la main-d’œuvre, s’organise le commerce triangulaire : la traite des Noirs, déportation d’Africains réduits en esclavage vers l’Amérique.',
-    autrement: 'l’Europe s’enrichit par l’Atlantique, conquiert l’Amérique et y installe des plantations — et pour les faire travailler, elle achète et déporte des captifs africains : c’est la traite.',
-    concept: 'Première conséquence : le déplacement des axes du commerce. Venise et la Méditerranée déclinent ; Lisbonne, Séville, puis Nantes ou Liverpool, tournés vers l’Atlantique, prospèrent. Deuxième conséquence : les premiers empires coloniaux. L’Espagne domine l’Amérique, où les conquistadors abattent les empires aztèque (1521) et inca (1533), affaiblis aussi par les maladies venues d’Europe ; le Portugal tient le Brésil et un chapelet de comptoirs — escales commerciales fortifiées — le long de l’Afrique, en Inde et jusqu’en Chine. Troisième conséquence : l’économie de plantation. En Amérique, de vastes domaines produisent sucre, tabac, coton pour l’Europe. Mais les populations locales, décimées, ne suffisent plus au travail : les Européens organisent alors le commerce triangulaire. Premier côté du triangle : les navires partent d’Europe chargés d’armes, de tissus et d’alcool, échangés en Afrique contre des captifs. Deuxième côté : la terrible traversée de l’Atlantique — des millions d’hommes, de femmes et d’enfants entassés dans les cales ; beaucoup meurent en route. Troisième côté : vendus comme esclaves aux plantations, ils sont remplacés dans les cales par le sucre et le coton qui repartent vers l’Europe. Les causes de la traite : le besoin de main-d’œuvre en Amérique et les besoins des industries d’Europe. Ses conséquences : la dépopulation de l’Afrique et des îles de l’océan Indien, la régression du continent africain, l’enrichissement de l’Europe — et la naissance d’une nouvelle couche de population aux Amériques, les descendants des déportés.',
+    legende: 'Les ports de l’Atlantique s’éveillent, des empires s’effondrent, des millions d’Africains sont arrachés à leur terre.',
+    motsCles: ['axes commerciaux', 'Atlantique', 'empires coloniaux', 'conquistadors', 'Aztèques', 'Incas', 'comptoirs', 'économie de plantation', 'commerce triangulaire', 'traite des Noirs', 'dépopulation'],
+    sections: [
+      {
+        titre: 'Nouveaux axes, nouveaux empires',
+        paras: [
+          'Première conséquence : le déplacement des axes du commerce. Venise et la Méditerranée déclinent ; Lisbonne, Séville, puis Nantes ou Liverpool, tournés vers l’Atlantique, prospèrent.',
+          'Deuxième conséquence : les premiers empires coloniaux. L’Espagne domine l’Amérique, où les conquistadors abattent les empires aztèque (1521) et inca (1533), affaiblis aussi par les maladies venues d’Europe ; le Portugal tient le Brésil et un chapelet de comptoirs — escales commerciales fortifiées — le long de l’Afrique, en Inde et jusqu’en Chine.',
+        ],
+      },
+      {
+        titre: 'Plantations et commerce triangulaire',
+        paras: [
+          'Troisième conséquence : l’économie de plantation. En Amérique, de vastes domaines produisent sucre, tabac, coton pour l’Europe. Mais les populations locales, décimées, ne suffisent plus au travail : les Européens organisent alors le commerce triangulaire.',
+        ],
+        puces: [
+          'premier côté du triangle : les navires partent d’Europe chargés d’armes, de tissus et d’alcool, échangés en Afrique contre des captifs ;',
+          'deuxième côté : la terrible traversée de l’Atlantique — des millions d’hommes, de femmes et d’enfants entassés dans les cales ; beaucoup meurent en route ;',
+          'troisième côté : vendus comme esclaves aux plantations, ils sont remplacés dans les cales par le sucre et le coton qui repartent vers l’Europe.',
+        ],
+      },
+      {
+        titre: 'La traite : causes et conséquences',
+        paras: [
+          'Les causes de la traite : le besoin de main-d’œuvre en Amérique et les besoins des industries d’Europe. Ses conséquences : la dépopulation de l’Afrique et des îles de l’océan Indien, la régression du continent africain, l’enrichissement de l’Europe — et la naissance d’une nouvelle couche de population aux Amériques, les descendants des déportés. L’historien nomme les faits : la traite est un crime contre l’humanité, reconnu comme tel aujourd’hui.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Dans la cale d’un navire négrier',
+      source: 'd’après Olaudah Equiano, ancien captif africain, Ma véridique histoire (1789) — extrait adapté',
+      texte: 'On me fit descendre sous les ponts. Là, avec la puanteur et les pleurs, je devins si malade que je ne pouvais plus manger. L’entassement était tel, dans cette chaleur suffocante, que chacun avait à peine la place de se tourner ; les chaînes écorchaient la peau, et les cris des femmes comme les gémissements des mourants rendaient la scène presque impossible à décrire. Nous étions devenus, pour nos acheteurs, une simple cargaison.',
+      questions: ['Qui témoigne ici, et pourquoi ce témoignage est-il exceptionnel ?',
+        'Relève deux détails qui décrivent les conditions de la traversée.',
+        'Que dénonce la dernière phrase : « une simple cargaison » ?'],
+      reponses: ['Olaudah Equiano, un ancien captif qui a survécu à la traversée et publié son récit en 1789 : l’une des rares sources écrites par une victime de la traite elle-même.',
+        'L’entassement sous les ponts sans place pour se tourner, la chaleur suffocante, les chaînes qui écorchent, les cris et les gémissements (deux suffisent).',
+        'La déshumanisation : les négriers traitaient des êtres humains comme des marchandises — c’est pourquoi la traite est reconnue aujourd’hui comme un crime contre l’humanité.']
+    },
+    lexique: [
+      ['Conquistador', 'conquérant espagnol de l’Amérique au XVIᵉ siècle'],
+      ['Comptoir', 'escale commerciale fortifiée sur une côte étrangère'],
+      ['Commerce triangulaire', 'circuit Europe → Afrique → Amérique → Europe'],
+      ['Traite des Noirs', 'déportation d’Africains réduits en esclavage'],
+    ],
     synthese: 'Conséquences : axes commerciaux Méditerranée → Atlantique ; empires espagnol et portugais, comptoirs en Afrique, Chine, Inde ; déclin des Aztèques et des Incas ; économie de plantation ; commerce triangulaire (Europe → Afrique → Amérique → Europe) et traite : dépopulation et régression de l’Afrique, enrichissement de l’Europe.',
-    method: ['Distinguer les conséquences : commerciales, politiques (empires), humaines (traite).', 'Dessiner le triangle et nommer la cargaison de chaque côté.', 'Analyser la traite par causes (main-d’œuvre, industries) et conséquences (quatre à connaître).'],
-    exemple: 'Un navire quitte Nantes avec des fusils et des tissus ; il les échange sur la côte africaine contre 300 captifs ; il les vend aux Antilles et revient chargé de sucre. Un seul voyage, trois profits — et 300 vies brisées.',
-    erreur: 'Réduire la traite à un « commerce comme un autre » : c’est une déportation massive d’êtres humains, qui a vidé des régions entières d’Afrique et marqué l’histoire du monde. L’historien nomme les faits : la traite est un crime contre l’humanité, reconnu comme tel aujourd’hui.',
     saistu: 'L’océan Indien aussi a connu la traite : des captifs de Madagascar et d’Afrique orientale furent déportés vers les Mascareignes (île Bourbon, île de France) pour les plantations de café et de canne. C’est pourquoi le programme rappelle la dépopulation « de l’Afrique et des îles de l’océan Indien » : notre région fut, elle aussi, saignée par ce commerce.',
     exos: ['Le triangle. a) Dessine le schéma du commerce triangulaire. b) Que transportent les navires d’Europe vers l’Afrique ? d) Et d’Afrique vers l’Amérique ? e) Et d’Amérique vers l’Europe ?',
       'Les conséquences. a) Quel espace maritime remplace la Méditerranée ? b) Quels deux empires américains déclinent ? d) Qu’est-ce qu’un comptoir ? e) Qu’est-ce que l’économie de plantation ?',
@@ -162,13 +281,48 @@ const S = [
     revQ: 'Cite les deux causes et deux conséquences de la traite des Noirs.',
     revRA: 'Causes : main-d’œuvre pour l’Amérique, industries d’Europe ; conséquences : dépopulation de l’Afrique, enrichissement de l’Europe (ou autres).',
     situation: 'Au même moment où les caravelles sillonnent les mers, l’Europe vit une double révolution intérieure. Dans les ateliers d’Italie, des artistes peignent et sculptent comme jamais ; dans les universités d’Allemagne, un moine nommé Luther défie le pape. Arts et religion : les deux piliers du Moyen Âge sont ébranlés. Comment ces deux mouvements ont-ils transformé l’Europe ?',
-    def: 'La Renaissance est le renouveau des beaux-arts, de l’architecture, de la littérature et des sciences aux XVᵉ et XVIᵉ siècles, inspiré de l’Antiquité et parti d’Italie ; ses grandes figures sont Léonard de Vinci, Copernic, Raphaël, Donatello et Michel-Ange. La Réforme est le mouvement religieux du XVIᵉ siècle qui conteste l’Église catholique et fonde le protestantisme ; ses origines sont l’influence des humanistes, la perte de confiance envers l’Église et l’imprimerie ; ses figures sont Luther, Calvin et Henri VIII.',
-    autrement: 'la Renaissance fait renaître les arts et les sciences sur le modèle antique ; la Réforme, portée par Luther et Calvin, sépare les protestants de l’Église catholique.',
-    concept: 'La Renaissance naît dans les riches cités italiennes — Florence, Rome, Venise — où princes et marchands financent les artistes. On y redécouvre les textes et les formes de l’Antiquité grecque et romaine. Léonard de Vinci peint la Joconde et dessine des machines visionnaires ; Michel-Ange sculpte le David et peint la chapelle Sixtine ; Raphaël et Donatello portent la peinture et la sculpture à leur sommet ; Copernic ose affirmer que la Terre tourne autour du Soleil. L’architecture retrouve colonnes et coupoles antiques ; la littérature fleurit dans les langues de chaque pays. Au cœur du mouvement, les humanistes placent l’Homme et son intelligence au centre de la réflexion. Or ces mêmes humanistes lisent la Bible dans le texte et remarquent les défauts de l’Église : luxe du clergé, vente des indulgences — ces « pardons » payants. La confiance se perd. En 1517, Luther publie ses 95 thèses : le salut vient de la foi, non des pratiques payantes. Grâce à l’imprimerie de Gutenberg, ses idées inondent l’Europe en quelques années. Calvin organise la Réforme à Genève ; en Angleterre, le roi Henri VIII rompt avec le pape et fonde l’anglicanisme. L’Europe se divise : protestants au nord, catholiques au sud. L’Église catholique réplique par la contre-réforme : discipline du clergé restaurée, nouveaux ordres religieux, reconquête des fidèles.',
+    legende: 'Dans les ateliers d’Italie, les arts renaissent ; dans les universités d’Allemagne, Luther défie le pape.',
+    motsCles: ['Renaissance', 'humanistes', 'Léonard de Vinci', 'Copernic', 'Raphaël', 'Donatello', 'Michel-Ange', 'Réforme', 'indulgences', 'Luther', 'Calvin', 'Henri VIII', 'anglicanisme', 'contre-réforme'],
+    sections: [
+      {
+        titre: 'La Renaissance : les arts et les sciences renaissent',
+        paras: [
+          'La Renaissance naît dans les riches cités italiennes — Florence, Rome, Venise — où princes et marchands financent les artistes. On y redécouvre les textes et les formes de l’Antiquité grecque et romaine. Léonard de Vinci peint la Joconde et dessine des machines visionnaires ; Michel-Ange sculpte le David et peint la chapelle Sixtine ; Raphaël et Donatello portent la peinture et la sculpture à leur sommet ; Copernic ose affirmer que la Terre tourne autour du Soleil.',
+          'L’architecture retrouve colonnes et coupoles antiques ; la littérature fleurit dans les langues de chaque pays. Au cœur du mouvement, les humanistes placent l’Homme et son intelligence au centre de la réflexion.',
+        ],
+      },
+      {
+        titre: 'La Réforme : la chrétienté se divise',
+        paras: [
+          'Ces mêmes humanistes lisent la Bible dans le texte et remarquent les défauts de l’Église : luxe du clergé, vente des indulgences — ces « pardons » payants. La confiance se perd. En 1517, Luther publie ses 95 thèses : le salut vient de la foi, non des pratiques payantes. Grâce à l’imprimerie de Gutenberg, ses idées inondent l’Europe en quelques années.',
+          'Calvin organise la Réforme à Genève ; en Angleterre, le roi Henri VIII rompt avec le pape et fonde l’anglicanisme. L’Europe se divise : protestants au nord, catholiques au sud.',
+        ],
+      },
+      {
+        titre: 'La contre-réforme',
+        paras: [
+          'L’Église catholique réplique par la contre-réforme : discipline du clergé restaurée, nouveaux ordres religieux, reconquête des fidèles. La Réforme est le mouvement protestant ; la contre-réforme est la réponse catholique — l’une déclenche l’autre.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Luther contre les indulgences',
+      source: 'd’après Martin Luther, Les 95 thèses affichées à Wittenberg (1517) — extraits adaptés',
+      texte: 'Thèse 21 : ils se trompent, les prêcheurs d’indulgences qui affirment que l’homme est délivré de toute peine par les lettres de pardon du pape. Thèse 43 : il faut enseigner aux chrétiens que celui qui donne aux pauvres ou prête aux nécessiteux fait mieux que celui qui achète des indulgences. Thèse 86 : pourquoi le pape, dont la fortune est aujourd’hui plus grosse que celle des plus riches, ne bâtit-il pas la basilique Saint-Pierre de son propre argent plutôt qu’avec celui des pauvres fidèles ?',
+      questions: ['Que sont les indulgences, et que leur reproche Luther dans la thèse 21 ?',
+        'D’après la thèse 43, qu’est-ce qui vaut mieux qu’acheter une indulgence ?',
+        'Quel défaut de l’Église la thèse 86 dénonce-t-elle, et quel mouvement ces critiques vont-elles déclencher ?'],
+      reponses: ['Des « pardons » payants vendus par l’Église ; Luther nie qu’une lettre achetée puisse délivrer des peines : le salut ne s’achète pas.',
+        'Donner aux pauvres et prêter aux nécessiteux : la vraie foi se prouve par la charité, non par l’argent versé à l’Église.',
+        'Le luxe du clergé et l’enrichissement du pape aux dépens des pauvres ; ces critiques déclenchent la Réforme, naissance du protestantisme — puis la contre-réforme catholique.']
+    },
+    lexique: [
+      ['Humaniste', 'penseur plaçant l’Homme au centre de la réflexion'],
+      ['Indulgence', '« pardon » payant vendu par l’Église'],
+      ['Protestantisme', 'branche chrétienne née de la Réforme de Luther'],
+      ['Contre-réforme', 'riposte de l’Église catholique à la Réforme'],
+    ],
     synthese: 'Renaissance : renouveau des arts et sciences inspiré de l’Antiquité (Vinci, Copernic, Raphaël, Donatello, Michel-Ange). Réforme : origines = humanistes, perte de confiance envers l’Église, imprimerie ; acteurs = Luther, Calvin, Henri VIII ; résultats = protestantisme, anglicanisme, contre-réforme catholique.',
-    method: ['Caractériser la Renaissance : domaines (beaux-arts, architecture, littérature, sciences) + cinq figures.', 'Expliquer la Réforme par ses trois origines, ses trois acteurs, ses trois résultats.', 'Relier les deux mouvements : humanisme et imprimerie servent l’un et l’autre.'],
-    exemple: 'L’imprimerie illustre le lien entre les deux mouvements : née vers 1450, elle diffuse d’abord les textes antiques chers aux humanistes de la Renaissance — puis les thèses de Luther, qui font le tour de l’Europe en quelques semaines.',
-    erreur: 'Confondre Réforme et contre-réforme : la Réforme est le mouvement protestant qui conteste l’Église catholique ; la contre-réforme est la réponse de l’Église catholique pour se corriger et reconquérir les fidèles. L’une déclenche l’autre.',
     saistu: 'Léonard de Vinci incarnait l’idéal de la Renaissance : peintre, ingénieur, anatomiste, musicien… Ses carnets, écrits en miroir de droite à gauche, contiennent des croquis de machines volantes et de chars imaginés trois siècles avant leur invention ! On appelle encore « esprit universel » une personne douée dans tous les domaines, en souvenir de ces géants.',
     exos: ['Associe chaque personnage à son domaine : a) Copernic ; b) Michel-Ange ; d) Luther ; e) Henri VIII.',
       'La Renaissance. a) D’où part le mouvement ? b) Quel modèle inspire les artistes ? d) Cite trois domaines renouvelés. e) Qui sont les humanistes ?',
@@ -185,13 +339,48 @@ const S = [
     revQ: 'Cite deux figures de la Renaissance et deux figures de la Réforme.',
     revRA: 'Renaissance : Vinci, Copernic, Raphaël, Donatello, Michel-Ange ; Réforme : Luther, Calvin, Henri VIII (deux de chaque).',
     situation: 'Le 10 août 1500, un navire portugais dérouté par la tempête aperçoit une côte immense que ses cartes ignorent : Madagascar. Pour la Grande Île, les Temps modernes commencent. Pendant trois siècles, navires européens, comptoirs et marchandises vont transformer les côtes malgaches — et nourrir la puissance de ses royaumes. Comment l’île a-t-elle vécu cette période ?',
-    def: 'À Madagascar, les Temps modernes s’ouvrent en 1500 avec l’arrivée du Portugais Diégo Diaz. Les Européens — Portugais, puis Français et Anglais — établissent des comptoirs sur les côtes et y commercent : riz, zébus, esclaves contre armes et tissus. En mars 1774, le baron Beniowski s’installe à la baie d’Antongil. Ce commerce contribue à la prospérité des royaumes côtiers, puis de ceux des Hautes Terres.',
-    autrement: 'dès 1500, les Européens accostent, installent des comptoirs et commercent ; les royaumes malgaches des côtes s’enrichissent les premiers, ceux des Hautes Terres ensuite.',
-    concept: 'Diégo Diaz cherchait la route des Indes ouverte par Vasco de Gama ; la tempête qui l’écarta du Mozambique lui fit aborder une île que les Portugais crurent d’abord nommer « île Saint-Laurent ». Après eux, Hollandais, Anglais et Français font escale : Madagascar, posée sur la route des Indes, offre eau douce, riz et zébus aux équipages épuisés. Les Européens tentent des installations durables : les Français à Fort-Dauphin (1643-1674), les pirates sur la côte est vers 1700, et en mars 1774 le baron Beniowski, aventurier au service de la France, fonde un établissement à la baie d’Antongil. La plupart de ces comptoirs restent fragiles — climat, maladies, résistance des populations — mais le commerce, lui, prospère : les royaumes malgaches vendent riz, zébus et captifs, et reçoivent en échange armes à feu, poudre, tissus et piastres d’argent. Ces richesses transforment la carte politique de l’île : les royaumes des côtes — sakalava à l’ouest, betsimisaraka à l’est — prospèrent les premiers grâce au commerce direct avec les navires ; puis, à la fin du XVIIIᵉ siècle, les royaumes des Hautes Terres, dont l’Imerina, s’élèvent à leur tour, enrichis par les échanges et armés de fusils. Les Temps modernes préparent ainsi le terrain du grand royaume du XIXᵉ siècle — que nous étudierons à l’unité V.',
+    legende: 'Le 10 août 1500, un navire portugais dérouté par la tempête aperçoit une côte que ses cartes ignorent.',
+    motsCles: ['Diégo Diaz 1500', 'île Saint-Laurent', 'route des Indes', 'escales', 'Fort-Dauphin', 'pirates', 'Beniowski', 'baie d’Antongil', 'comptoirs', 'royaumes côtiers', 'Hautes Terres'],
+    sections: [
+      {
+        titre: 'Les contacts européens',
+        paras: [
+          'Diégo Diaz cherchait la route des Indes ouverte par Vasco de Gama ; la tempête qui l’écarta du Mozambique lui fit aborder une île que les Portugais nommèrent d’abord « île Saint-Laurent ». Après eux, Hollandais, Anglais et Français font escale : Madagascar, posée sur la route des Indes, offre eau douce, riz et zébus aux équipages épuisés.',
+          'Les Européens tentent des installations durables : les Français à Fort-Dauphin (1643-1674), les pirates sur la côte est vers 1700, et en mars 1774 le baron Beniowski, aventurier au service de la France, fonde un établissement à la baie d’Antongil. La plupart de ces comptoirs restent fragiles — climat, maladies, résistance des populations.',
+        ],
+      },
+      {
+        titre: 'Le commerce et l’essor des royaumes',
+        paras: [
+          'Le commerce, lui, prospère : les royaumes malgaches vendent riz, zébus et captifs, et reçoivent en échange armes à feu, poudre, tissus et piastres d’argent.',
+          'Ces richesses transforment la carte politique de l’île : les royaumes des côtes — sakalava à l’ouest, betsimisaraka à l’est — prospèrent les premiers grâce au commerce direct avec les navires ; puis, à la fin du XVIIIᵉ siècle, les royaumes des Hautes Terres, dont l’Imerina, s’élèvent à leur tour, enrichis par les échanges et armés de fusils.',
+        ],
+      },
+      {
+        titre: 'Pas encore une colonisation',
+        paras: [
+          'Aux Temps modernes, les comptoirs européens restent côtiers, précaires et souvent abandonnés : les royaumes malgaches restent maîtres de l’île. La colonisation proprement dite date de 1896 — quatre siècles après Diégo Diaz. Les Temps modernes préparent ainsi le terrain du grand royaume du XIXᵉ siècle — que nous étudierons à l’unité V.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Beniowski s’installe à la baie d’Antongil',
+      source: 'd’après les Mémoires et voyages du baron Maurice-Auguste de Beniowski (publiés en 1790) — extrait adapté',
+      texte: 'Au mois de mars 1774, je débarquai dans la baie d’Antongil avec mes volontaires, et je fis aussitôt commencer les travaux d’un établissement que je nommai Louisbourg : des cases, un hôpital, un magasin et des chemins vers l’intérieur. Je reçus la visite des chefs des environs, auxquels je fis des présents, et je conclus avec plusieurs d’entre eux des traités d’amitié et de commerce : car rien ne se peut dans cette île sans l’accord de ses chefs, qui en sont les véritables maîtres.',
+      questions: ['Où et quand Beniowski s’installe-t-il, et que fait-il construire ?',
+        'Comment s’y prend-il avec les chefs malgaches des environs ?',
+        'Quelle phrase du texte confirme que les Européens ne sont pas encore maîtres de l’île ?'],
+      reponses: ['À la baie d’Antongil, en mars 1774 : il y bâtit l’établissement de Louisbourg — cases, hôpital, magasin, chemins.',
+        'Par la diplomatie : visites, présents, traités d’amitié et de commerce avec les chefs locaux.',
+        '« Rien ne se peut dans cette île sans l’accord de ses chefs, qui en sont les véritables maîtres » : aux Temps modernes, les royaumes malgaches gardent la maîtrise de Madagascar.']
+    },
+    lexique: [
+      ['Escale', 'arrêt d’un navire pour se ravitailler'],
+      ['Piastre', 'monnaie d’argent du commerce de l’océan Indien'],
+      ['Comptoir', 'établissement de commerce européen sur la côte'],
+      ['Royaumes côtiers', 'royaumes de l’ouest et de l’est enrichis par le commerce'],
+    ],
     synthese: 'Madagascar aux Temps modernes : 1500 Diégo Diaz ; escales et comptoirs européens (Fort-Dauphin, pirates, Beniowski à la baie d’Antongil en mars 1774) ; commerce riz-zébus-esclaves contre armes-tissus ; prospérité des royaumes côtiers puis des Hautes Terres.',
-    method: ['Dater les contacts : 1500 (Diégo Diaz), 1643 (Fort-Dauphin), mars 1774 (Beniowski).', 'Décrire le commerce : ce que vendent et ce que reçoivent les royaumes malgaches.', 'Expliquer l’enchaînement : commerce → richesse et armes → essor des royaumes, côtes puis Hautes Terres.'],
-    exemple: 'Un roi sakalava de la côte ouest vend des zébus et des captifs à un navire européen ; il reçoit des fusils ; ces fusils lui permettent d’étendre son royaume : le commerce des Temps modernes nourrit directement la puissance politique.',
-    erreur: 'Croire que les Européens ont « colonisé » Madagascar dès les Temps modernes : leurs comptoirs restent côtiers, précaires et souvent abandonnés. La colonisation proprement dite date de 1896 — quatre siècles après Diégo Diaz. Aux Temps modernes, les royaumes malgaches restent maîtres de l’île.',
     saistu: 'Beniowski est l’un des aventuriers les plus romanesques du XVIIIᵉ siècle : noble hongrois, prisonnier des Russes en Sibérie, évadé par le Pacifique, il convainc la France de lui confier une expédition à Madagascar ! Installé à la baie d’Antongil en mars 1774, il se proclama même « empereur de Madagascar » — avant de mourir en 1786 dans un combat contre les troupes françaises. Sa vie inspira livres et opéras.',
     exos: ['Dates malgaches. a) Qui aborde Madagascar en 1500 ? b) Que fondent les Français en 1643 ? d) Qui s’installe à la baie d’Antongil, et quand ? e) Pourquoi les navires font-ils escale à Madagascar ?',
       'Le commerce. a) Que vendent les royaumes malgaches ? b) Que reçoivent-ils en échange ? d) Quels royaumes prospèrent les premiers ? e) Lesquels s’élèvent ensuite ?',
