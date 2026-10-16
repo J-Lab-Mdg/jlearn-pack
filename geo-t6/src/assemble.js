@@ -382,8 +382,8 @@ function examenSeance(ex) {
 
   const doc = new Document({
     creator: "J-Lab — Collection J-Learn",
-    title: "Manuel de Géographie T6 — J-Learn (V1 — Unité 1)",
-    description: "Manuel scolaire de Géographie, classe de T6 (Madagascar) — 66 leçons, 6 révisions, 6 sujets d'examen : fiches de préparation, leçons, exercices corrigés.",
+    title: "Manuel de Géographie T6 — J-Learn (édition complète)",
+    description: "Manuel scolaire de Géographie, classe de T6 (Madagascar) — 78 numéros : 66 leçons, 6 révisions, 6 sujets d'examen et annexes : fiches de préparation, leçons, exercices corrigés.",
     styles: {
       default: {
         document: { run: { font: "Times New Roman", size: 20 } },

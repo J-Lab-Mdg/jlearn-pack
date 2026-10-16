@@ -16,8 +16,8 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 | **Unité 4 — L'exode rural à Madagascar (S39-S50)** | ✅ **Terminée et intégrée au build** |
 | **Unité 5 — Les grandes zones économiques et les activités économiques (S51-S66)** | ✅ **Terminée et intégrée au build** |
 | **Unité 6 — Le village écologique (S67-S78)** | ✅ **Terminée et intégrée au build** |
-| Annexes (glossaire, cartes muettes, auto-évaluation, table des illustrations, sources) | ⬜ Fin de projet |
-| Audit final + SHA-256 | ⬜ Fin de projet |
+| **Annexes (glossaire, cartes muettes, auto-évaluation, table des illustrations, sources)** | ✅ **Terminées et intégrées au build** |
+| **Audit final** | ✅ **audit.py : 67/67 contrôles OK ; verifications.py : ✅** |
 
 ## Contenu produit
 
@@ -40,14 +40,19 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 - `src/verifications.py` — Vérifications structurelles ; contrôle anti-mention-ministérielle en regex `\bminist\w*` (le vocabulaire officiel « régions administratives » reste autorisé, toute mention de ministère reste bloquée).
 - `svg/` — 66 schémas pédagogiques (`geo6_*.png`) : U1 (8) + U2 (14) + U3 (10) + U4 (14) + U5 (14) + U6 (10 : notion, organisation juridique, Dina, modes de vie et loisirs, activités, habitation, infrastructures et sites, topographie, traditions, maquette comparée).
 - `scenes/` — 66 scènes semi-réalistes (une par leçon, JPEG 900 px q88) : 8 (U1) + 14 (U2) + 10 (U3) + 10 (U4) + 14 (U5) + 10 (U6).
-- `output/Manuel_Geographie_T6_JLearn.docx` — **Build V6.1 — les 6 unités, 78/78 numéros** (16 205 Ko ; 72 fiches de préparation ; 132 images : 66 schémas + 66 scènes ; 66 documents d'appui ; 78 mentions « Durée : » ; 0 « à paraître » ; séquençage 1→78 ; verifications.py ✅).
+- `src/annexes.js` — Annexes : glossaire (64 termes du vocabulaire officiel T6), 4 cartes muettes, auto-évaluation par compétences (6 unités, 28 compétences), table des illustrations (66 leçons + annexe), Loharanom-Baovao (sources).
+- `src/audit.py` — Audit de contenu (adapté de geo-t5) : séquençage, unités, fiches, barèmes des 6 sujets d'examen, corrigés, mots interdits, typographie, images, annexes, vocabulaire officiel — 67 contrôles.
+- `svg/make-svg-annexes.js` — 4 cartes muettes (`geo6_carte_muette_*`) : les 24 régions à compléter, la répartition de la population, les zones économiques, le village écologique à légender.
+- `output/Manuel_Geographie_T6_JLearn.docx` — **Build V7 — édition complète : 6 unités + annexes, 78/78 numéros** (16 527 Ko ; 72 fiches de préparation ; 136 images : 66 schémas + 66 scènes + 4 cartes muettes ; 66 documents d'appui ; 78 mentions « Durée : » ; 18 mentions « Sujet d'examen T6 » ; 0 « à paraître » ; séquençage 1→78 ; verifications.py ✅ ; audit.py 67/67 ✅).
+- Empreinte SHA-256 du build V7 : `19fd858a1835d171f8062a5cd5f50cfa871237e4a6676fd4d601090def746a3a`.
 
 ## Générer le manuel
 
 ```bash
 npm install docx sharp
 node geo-t6/src/assemble.js
-python3 geo-t6/src/verifications.py geo-t6/output/Manuel_Geographie_T6_JLearn.docx
+cd geo-t6 && python3 src/verifications.py && cd ..
+python3 geo-t6/src/audit.py
 ```
 
 ## Structure d'une séance (leçon)
@@ -56,7 +61,7 @@ Fiche de préparation (I. Révision / II. Nouvelle leçon en 6 étapes / III. É
 
 ## Conventions
 
-- Séances de 30 minutes ; numérotation globale « Séance N / 78 » ; français uniquement ; manuel complet standard (révisions + sujets d'examen + annexes en fin de projet).
+- Séances de 30 minutes ; numérotation globale « Séance N / 78 » ; français uniquement ; manuel complet standard (révisions + sujets d'examen + annexes).
 - Fil rouge U1 : Hery et Miora, jumeaux d'Antsirabe ; leur papa chauffeur de taxi-brousse ; leur maman Rasoa ; les cousins Tojo (Toamasina) et Tantely (Toliara) ; Mme Randriamampionona, l'institutrice. Fil rouge U2 : grand-père Maitso et son village des Hautes Terres, tante Vololona, le guide d'Andasibe, le doyen du conseil ; mini-projet filée par le groupe de Hery et Miora (étang piscicole). Fil rouge U3 : Rasoa et son cousin Rado ; fil rouge U4 : Rado le fils aîné parti à Antananarivo ; fil rouge U5 : le taxi-brousse de papa à travers les sept zones économiques ; fil rouge U6 : le village de grand-père Maitso devenu village écologique (chef Rakotomalala, doyenne Soa, la famille Ravao).
 - Aucune mention ministérielle ; prénoms malgaches ; jamais de dates calendaires ; jamais « Oral » en support.
 - Source officielle : `PE RAPE/PE T6.pdf`, section GÉOGRAPHIE, p. 164-182 (aucun FRP T6 dans le dépôt).

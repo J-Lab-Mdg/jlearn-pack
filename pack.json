@@ -1192,6 +1192,26 @@
       "id": "geo6_maquette_compare",
       "url": "/geo6_maquette_compare.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo6_carte_muette_regions",
+      "url": "/geo6_carte_muette_regions.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_carte_muette_population",
+      "url": "/geo6_carte_muette_population.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_carte_muette_zones",
+      "url": "/geo6_carte_muette_zones.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo6_carte_muette_village",
+      "url": "/geo6_carte_muette_village.png",
+      "type": "image/png"
     }
   ]
 }
