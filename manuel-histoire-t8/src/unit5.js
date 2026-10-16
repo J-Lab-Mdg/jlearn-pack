@@ -63,6 +63,7 @@ figs.u5f3 = (() => { const { s, y } = head('L’évolution du Royaume après 186
   b += txt(500, y2 + 5 * 70 + 20, 'source : le Tantara ny Andriana du R.P. Callet', 21, OCRE, 'bold', 'middle');
   return svg(1000, y2 + 5 * 70 + 52, s + b); })();
 
+
 const S = [
   {
     t: 'Le Royaume de Madagascar et ses souverains', comp: 'Le Royaume de Madagascar (1810-1896)', theme: 'Localisation du royaume et succession des souverains',
@@ -71,13 +72,51 @@ const S = [
     revQ: 'Présente les trois castes des royaumes malgaches et les deux volets de leur économie.',
     revRA: 'Libres (Andriana, Hova) et non-libres (andevo) ; agriculture-élevage et traite des esclaves.',
     situation: 'En 1810, un jeune roi d’à peine 18 ans monte sur le trône d’Antananarivo. À sa mort, son royaume ne sera plus celui de l’Imerina, mais le « Royaume de Madagascar », reconnu par les puissances étrangères. Pendant 86 ans, six souverains — un roi fondateur, un fils éphémère et quatre reines — vont diriger cet État avant sa chute en 1896. Qui sont-ils ?',
-    def: 'Le Royaume de Madagascar (1810-1896) est l’État fondé depuis l’Imerina, qui a étendu son autorité sur la majeure partie de l’île depuis sa capitale Antananarivo. Ses souverains se succèdent ainsi : Radama I (1810-1828), Ranavalona I (1828-1861), Radama II (1861-1863), Rasoherina (1863-1868), Ranavalona II (1868-1883) et Ranavalona III (1883-1896).',
-    autrement: 'de 1810 à 1896, six souverains règnent depuis Antananarivo sur la plus grande partie de l’île : Radama I, Ranavalona I, Radama II, puis trois reines — Rasoherina, Ranavalona II, Ranavalona III.',
-    concept: 'Le royaume naît sur les Hautes Terres : Andrianampoinimerina (vers 1787-1810) a unifié l’Imerina et fixé l’ambition — « la mer sera la limite de ma rizière ». Son fils Radama I (1810-1828) la réalise en grande partie : par les armes et la diplomatie, son autorité s’étend sur la majeure partie de l’île — les puissances étrangères le reconnaissent « roi de Madagascar ». À sa mort, son épouse Ranavalona I règne 33 ans (1828-1861) : règne le plus long, marqué par la défense farouche de l’indépendance et des traditions, la méfiance envers les étrangers et la persécution des chrétiens — mais aussi par l’essor d’une industrie naissante avec Jean Laborde. Son fils Radama II (1861-1863) rouvre grand les portes aux étrangers ; son règne, trop rapide dans ses réformes, s’achève en deux ans par son assassinat. S’ouvre alors l’ère des reines : Rasoherina (1863-1868), Ranavalona II (1868-1883) — qui fait du protestantisme la religion d’État — et Ranavalona III (1883-1896), dernière souveraine, qui affrontera la conquête française. Derrière ces trois reines, le pouvoir réel appartient au Premier ministre : nous le verrons à la séance 3. Mémorise la frise : deux rois, puis — après le bref Radama II — quatre reines au total, et les dates-charnières 1810, 1828, 1861, 1863, 1868, 1883, 1896.',
+    legende: 'Six souverains en 86 ans : deux rois, puis — après le bref Radama II — l’ère des reines.',
+    motsCles: ['Royaume de Madagascar', 'Antananarivo', 'Andrianampoinimerina', 'Radama I', 'Ranavalona I', 'Radama II', 'Rasoherina', 'Ranavalona II', 'Ranavalona III', '1810', '1896'],
+    sections: [
+      {
+        titre: 'La naissance du royaume',
+        paras: [
+          'Le royaume naît sur les Hautes Terres : Andrianampoinimerina (vers 1787-1810) a unifié l’Imerina et fixé l’ambition — « la mer sera la limite de ma rizière ». Son fils Radama I (1810-1828) la réalise en grande partie : par les armes et la diplomatie, son autorité s’étend sur la majeure partie de l’île — les puissances étrangères le reconnaissent « roi de Madagascar ».',
+        ],
+      },
+      {
+        titre: 'La succession des souverains',
+        paras: ['Après Radama I se succèdent cinq souverains :'],
+        puces: [
+          'Ranavalona I (1828-1861), son épouse : règne le plus long (33 ans), marqué par la défense farouche de l’indépendance et des traditions, la méfiance envers les étrangers et la persécution des chrétiens — mais aussi par l’essor d’une industrie naissante avec Jean Laborde ;',
+          'Radama II (1861-1863), son fils : il rouvre grand les portes aux étrangers ; son règne, trop rapide dans ses réformes, s’achève en deux ans par son assassinat ;',
+          'Rasoherina (1863-1868), première reine de l’ère nouvelle ;',
+          'Ranavalona II (1868-1883), qui fait du protestantisme la religion d’État ;',
+          'Ranavalona III (1883-1896), dernière souveraine, qui affrontera la conquête française.',
+        ],
+      },
+      {
+        titre: 'Retenir la frise',
+        paras: [
+          'Derrière les trois dernières reines, le pouvoir réel appartient au Premier ministre : nous le verrons à la séance 3. Mémorise la frise : deux rois, puis — après le bref Radama II — quatre reines au total, et les dates-charnières 1810, 1828, 1861, 1863, 1868, 1883, 1896. Les durées de règne : 18, 33, 2, 5, 15 et 13 ans.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Un visiteur reçu à la cour d’Antananarivo',
+      source: 'd’après William Ellis, Three Visits to Madagascar (1858) — extrait adapté',
+      texte: 'La ville couvre le sommet et les pentes d’une longue colline, et le palais de la reine la domine tout entière. Reçu en audience, je trouvai la souveraine assise sous un dais écarlate, entourée des grands officiers du royaume vêtus de riches lamba de soie. Des milliers de personnes se tenaient sur la grande place, en silence. Tout, dans le cérémonial — les salutations, les discours prononcés au nom de la reine, le rang de chacun —, montrait la puissance d’un État organisé, avec ses ministres, ses juges et son armée.',
+      questions: ['Quels détails montrent la puissance de la monarchie malgache ?',
+        'Qui parle « au nom de la reine », et que cela annonce-t-il ?',
+        'Pourquoi le témoignage d’un visiteur étranger doit-il être utilisé avec prudence ?'],
+      reponses: ['Le palais dominant la ville, le dais, les grands officiers en lamba de soie, la foule silencieuse, le cérémonial réglé : tout manifeste un État organisé et hiérarchisé.',
+        'Les discours sont prononcés par les grands officiers : le souverain règne, mais d’autres parlent et agissent pour lui — annonce du rôle croissant des ministres, étudié à la séance 3.',
+        'Ellis est un missionnaire étranger : il voit la cour avec ses propres attentes et intérêts ; l’historien croise son récit avec les sources malgaches, comme le Tantara ny Andriana.']
+    },
+    lexique: [
+      ['Souverain', 'celui ou celle qui détient le pouvoir royal'],
+      ['Frise', 'ligne du temps ordonnant règnes et dates'],
+      ['Rova', 'enceinte royale d’Antananarivo, siège du pouvoir'],
+      ['Règne', 'durée pendant laquelle un souverain gouverne'],
+    ],
     synthese: 'Royaume de Madagascar : capitale Antananarivo, autorité sur la majeure partie de l’île. Souverains : Radama I (1810-1828), Ranavalona I (1828-1861), Radama II (1861-1863), Rasoherina (1863-1868), Ranavalona II (1868-1883), Ranavalona III (1883-1896).',
-    method: ['Réciter la frise des six souverains avec leurs dates.', 'Associer un fait marquant à chaque règne.', 'Situer le royaume : cœur en Imerina, autorité étendue sur la majeure partie de l’île.'],
-    exemple: 'Pour retenir l’ordre : deux « R » masculins d’abord (Radama I, puis — après Ranavalona I — Radama II), et les reines en « R » ensuite : Rasoherina, Ranavalona II, Ranavalona III. Les durées : 18, 33, 2, 5, 15, 13 ans.',
-    erreur: 'Confondre les trois Ranavalona : Ranavalona I est l’épouse de Radama I et règne 33 ans (1828-1861) ; Ranavalona II convertit le royaume au protestantisme (1868-1883) ; Ranavalona III est la dernière reine (1883-1896). Le numéro suffit à les distinguer — vérifie toujours les dates.',
     saistu: 'Ranavalona III n’avait que 22 ans à son couronnement — et elle finit sa vie à des milliers de kilomètres de son île : exilée par les Français après 1897, d’abord à La Réunion puis à Alger, elle y mourut en 1917 sans avoir jamais revu Madagascar. Ses cendres ne furent ramenées au Rova d’Antananarivo qu’en 1938.',
     exos: ['La frise. a) Qui règne de 1810 à 1828 ? b) Qui règne 33 ans ? d) Quel règne ne dure que deux ans ? e) Qui est la dernière souveraine ?',
       'Dates. a) Range dans l’ordre : Ranavalona II, Radama I, Rasoherina, Ranavalona I. b) Associe 1868-1883 à son souverain. d) Quelle date clôt le royaume ? e) Combien de reines se succèdent après Radama II ?',
@@ -94,13 +133,49 @@ const S = [
     revQ: 'Récite la succession des six souverains avec leurs dates.',
     revRA: 'Radama I (1810-1828), Ranavalona I (1828-1861), Radama II (1861-1863), Rasoherina (1863-1868), Ranavalona II (1868-1883), Ranavalona III (1883-1896).',
     situation: 'En 1817, un traité étonnant est signé à Tamatave : le jeune Radama I s’engage à abolir l’exportation d’esclaves — la principale richesse de son royaume ! En échange, les Anglais lui fournissent armes, instructeurs et artisans. Pari risqué, pari gagné : en quinze ans, Radama se dote d’une armée moderne, d’écoles, et d’un royaume qui couvre la majeure partie de l’île. Comment a-t-il fait ?',
-    def: 'Radama I (1810-1828) poursuit l’œuvre d’unification de son père Andrianampoinimerina. Par les traités de 1817 et 1820 avec les Anglais, il abolit la traite des esclaves et reçoit en échange une aide militaire et technique. Il réorganise l’armée (le foloalindahy), crée les écoles du palais et les écoles publiques, envoie des jeunes se former en Angleterre, accueille artisans et missionnaires — le christianisme entre dans le royaume — et établit des postes militaires à Mahabo, Marovoay, Fort-Dauphin et Tamatave.',
-    autrement: 'Radama échange la traite contre l’aide anglaise : fusils, instructeurs, artisans et écoles ; son armée nouvelle plante des garnisons jusqu’aux côtes — le Royaume de Madagascar est né.',
-    concept: 'Tout part d’un calcul diplomatique. Les Anglais, maîtres de Maurice depuis 1810, veulent tarir la traite dans l’océan Indien ; Radama veut des armes et des savoirs. Le traité de 1817, renouvelé en 1820, scelle l’échange : abolition de l’exportation des esclaves contre une compensation annuelle — « l’équivalent » en argent, armes et munitions — et l’envoi d’instructeurs. Première transformation : l’armée. Fini les levées en masse d’autrefois : Radama bâtit une armée permanente, le foloalindahy (« les cent mille hommes »), instruite à l’européenne par des sergents anglais, disciplinée, articulée en grades. Deuxième transformation : l’école. Les missionnaires de la London Missionary Society ouvrent dès 1820 les premières écoles — écoles du palais pour les enfants des grands, puis écoles publiques ; le malgache s’écrit désormais en caractères latins ; des milliers d’enfants apprennent à lire. Des jeunes gens partent se former en Angleterre, des artisans missionnaires enseignent la charpente, la forge, l’imprimerie ; et avec les missionnaires entre le christianisme, qui gagne du terrain dans l’Imerina. Troisième transformation : l’espace. L’armée nouvelle mène les expéditions qui soumettent l’essentiel de l’île : des postes militaires s’installent à Mahabo (pays sakalava du Menabe), Marovoay (Boina), Fort-Dauphin (sud-est) et Tamatave (côte est) — verrous du royaume sur les quatre horizons. À la mort de Radama en 1828, l’Imerina est devenue le Royaume de Madagascar : un État reconnu, armé, scolarisé — première modernisation de l’histoire malgache.',
+    legende: 'Traite abolie contre armes, écoles et instructeurs : le marché de 1817 transforme le royaume.',
+    motsCles: ['Radama I', 'traités de 1817 et 1820', 'abolition de la traite', 'foloalindahy', 'écoles du palais', 'London Missionary Society', 'alphabet latin', 'christianisme', 'Mahabo', 'Marovoay', 'Fort-Dauphin', 'Tamatave'],
+    sections: [
+      {
+        titre: 'Le marché des traités anglais',
+        paras: [
+          'Tout part d’un calcul diplomatique. Les Anglais, maîtres de Maurice depuis 1810, veulent tarir la traite dans l’océan Indien ; Radama veut des armes et des savoirs. Le traité de 1817, renouvelé en 1820, scelle l’échange : abolition de l’exportation des esclaves contre une compensation annuelle — « l’équivalent » en argent, armes et munitions — et l’envoi d’instructeurs.',
+        ],
+      },
+      {
+        titre: 'Trois transformations',
+        paras: ['Le royaume se transforme en quinze ans :'],
+        puces: [
+          'l’armée : fini les levées en masse d’autrefois ; Radama bâtit une armée permanente, le foloalindahy (« les cent mille hommes »), instruite à l’européenne par des sergents anglais, disciplinée, articulée en grades ;',
+          'l’école : les missionnaires de la London Missionary Society ouvrent dès 1820 les premières écoles — écoles du palais pour les enfants des grands, puis écoles publiques ; le malgache s’écrit désormais en caractères latins ; des milliers d’enfants apprennent à lire ; des jeunes gens partent se former en Angleterre, des artisans missionnaires enseignent la charpente, la forge, l’imprimerie — et avec les missionnaires entre le christianisme, qui gagne du terrain dans l’Imerina ;',
+          'l’espace : l’armée nouvelle mène les expéditions qui soumettent l’essentiel de l’île — des postes militaires s’installent à Mahabo (pays sakalava du Menabe), Marovoay (Boina), Fort-Dauphin (sud-est) et Tamatave (côte est), verrous du royaume sur les quatre horizons.',
+        ],
+      },
+      {
+        titre: 'Un État reconnu',
+        paras: [
+          'À la mort de Radama en 1828, l’Imerina est devenue le Royaume de Madagascar : un État reconnu, armé, scolarisé — première modernisation de l’histoire malgache.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Le traité anglo-merina de 1817',
+      source: 'd’après le traité conclu à Tamatave entre Radama I et le gouverneur britannique de Maurice (23 octobre 1817) — extraits adaptés',
+      texte: 'Article premier. Il y aura paix et amitié perpétuelles entre les sujets du roi Radama et ceux de Sa Majesté britannique. Article 2. Le roi Radama s’engage à interdire, dans tous ses domaines, l’exportation des esclaves, et à punir quiconque enfreindra cette défense. Article 3. En considération de cet engagement, il sera remis chaque année au roi Radama un équivalent en piastres, en armes, en poudre et en uniformes. Il recevra en outre des instructeurs pour ses troupes, et des jeunes gens de son royaume seront reçus pour être instruits.',
+      questions: ['Que promet chaque partie dans ce traité ?',
+        'Pourquoi peut-on dire que Radama fait un pari risqué mais calculé ?',
+        'Ce traité abolit-il l’esclavage à Madagascar ? Justifie précisément.'],
+      reponses: ['Radama interdit l’exportation des esclaves ; les Britanniques versent un équivalent annuel (piastres, armes, poudre, uniformes) et fournissent instructeurs et formation pour les jeunes.',
+        'Il renonce à une grande source de revenus (la traite), mais obtient en échange armes, argent et savoirs — de quoi bâtir l’armée et les écoles qui feront de lui le maître de l’île.',
+        'Non : il abolit seulement l’EXPORTATION des esclaves (la traite extérieure) ; l’esclavage intérieur subsiste dans le royaume jusqu’en 1896.']
+    },
+    lexique: [
+      ['Traité', 'accord officiel signé entre deux États'],
+      ['Foloalindahy', 'armée permanente de Radama, « les cent mille hommes »'],
+      ['Missionnaire', 'religieux envoyé pour répandre sa foi et enseigner'],
+      ['Compensation', 'dédommagement versé en échange d’un engagement'],
+    ],
     synthese: 'Radama I : poursuite de l’unification ; traités anglais de 1817 et 1820 (abolition de la traite contre aide) ; armée réorganisée (foloalindahy) ; écoles du palais et publiques dès 1820 ; jeunes formés en Angleterre, artisans ; arrivée du christianisme ; postes de Mahabo, Marovoay, Fort-Dauphin, Tamatave.',
-    method: ['Expliquer le marché des traités : traite abolie CONTRE armes, instructeurs, compensation.', 'Lister les transformations : armée, écoles, élites, religion.', 'Citer les quatre postes militaires et les placer sur la carte.'],
-    exemple: 'Le mot foloalindahy se décompose : folo (dix) × alina (dix mille) = cent mille — « les cent mille hommes ». Le chiffre est symbolique, mais il dit l’ambition : une armée nationale permanente, du jamais-vu dans l’île.',
-    erreur: 'Croire que Radama a aboli l’esclavage : les traités abolissent l’EXPORTATION des esclaves (la traite), pas l’esclavage intérieur, qui subsiste jusqu’en 1896. La nuance est essentielle — et elle explique bien des réalités du royaume au XIXᵉ siècle.',
     saistu: 'C’est sous Radama I que le malgache est passé à l’alphabet latin — et la légende raconte que le roi trancha lui-même : les consonnes anglaises, les voyelles « à la française » ! Décidée vers 1823 avec les missionnaires, cette écriture est celle que tu utilises aujourd’hui : chaque ligne que tu écris en malgache doit quelque chose à ce choix royal.',
     exos: ['Les traités. a) Avec qui sont-ils signés ? b) En quelles années ? d) Que promet Radama ? e) Que reçoit-il en échange ?',
       'Les transformations. a) Comment s’appelle la nouvelle armée ? b) Quelles écoles sont créées ? d) Où des jeunes sont-ils envoyés ? e) Quelle religion entre dans le royaume ?',
@@ -117,13 +192,50 @@ const S = [
     revQ: 'Que prévoient les traités de 1817 et 1820, et cite deux transformations de Radama I.',
     revRA: 'Abolition de la traite contre aide anglaise ; armée (foloalindahy), écoles, jeunes en Angleterre, christianisme (deux suffisent).',
     situation: 'Officiellement, de 1863 à 1896, trois reines gouvernent Madagascar. En réalité, un seul homme dirige : Rainilaiarivony, Premier ministre pendant 31 ans — et époux, successivement, des trois souveraines ! Derrière le trône, une petite élite de grandes familles hova tient l’armée, le commerce et l’administration. Comment ce pouvoir s’organise-t-il, et sur quelles lois s’appuie-t-il ?',
-    def: 'Après 1861, le pouvoir réel passe à une oligarchie merina — un petit groupe de grandes familles hova — dont le chef, le Premier ministre, s’allie par mariage aux souveraines successives. Cette organisation s’appuie sur le code des 305 articles (1881), la déportation des opposants et les impôts levés sur les provinces conquises. La société reste hiérarchisée en Andriana, Hova, olon-tsotra et andevo, et le protestantisme devient religion d’État en 1869. Une source majeure sur le royaume : le Tantara ny Andriana du R.P. Callet.',
-    autrement: 'les reines règnent, mais un Premier ministre hova — marié à la reine — gouverne avec son clan ; il légifère (305 articles), écarte les opposants, taxe les provinces, et fait du protestantisme la religion officielle.',
-    concept: 'Une oligarchie est le gouvernement d’un petit nombre. Celle du royaume naît d’un basculement : à la mort de Radama II (1863), les grandes familles hova — enrichies par le commerce et les charges — imposent un contrat aux souveraines : la reine règne, mais ne décide plus seule ; le Premier ministre, issu de leur rang, gouverne. L’alliance se scelle par le mariage : Rainilaiarivony épouse successivement Rasoherina, Ranavalona II et Ranavalona III — trois reines, un seul gouvernant, de 1864 à 1895. Les instruments du pouvoir : d’abord la loi — le code des 305 articles, promulgué en 1881, rassemble en un seul texte le droit du royaume : organisation de la justice, mariage, propriété, écoles rendues obligatoires, peines ; c’est l’une des premières codifications modernes d’Afrique. Ensuite la contrainte : les opposants sont déportés, les provinces conquises paient l’impôt et fournissent corvées et soldats — ce qui nourrit des résistances durables chez les peuples soumis. La société reste une pyramide : Andriana (nobles), Hova (libres), olon-tsotra (gens du commun) et andevo (non-libres). Enfin la religion : en 1869, Ranavalona II et le Premier ministre se font baptiser — protestants ; le protestantisme devient religion d’État, les temples se multiplient, l’école missionnaire aussi. Sur tout cela, une source exceptionnelle nous renseigne : le Tantara ny Andriana, recueil des traditions orales de l’Imerina collectées par le père jésuite François Callet dans les années 1860-1870 — des milliers de pages en malgache, mémoire écrite d’un royaume.',
+    legende: 'Trois reines, un seul gouvernant : le Premier ministre Rainilaiarivony et son clan tiennent le royaume.',
+    motsCles: ['oligarchie', 'grandes familles hova', 'Premier ministre', 'Rainilaiarivony', 'code des 305 articles', '1881', 'déportation', 'impôts', 'olon-tsotra', 'protestantisme religion d’État', '1869', 'Tantara ny Andriana'],
+    sections: [
+      {
+        titre: 'La reine règne, le Premier ministre gouverne',
+        paras: [
+          'Une oligarchie est le gouvernement d’un petit nombre. Celle du royaume naît d’un basculement : à la mort de Radama II (1863), les grandes familles hova — enrichies par le commerce et les charges — imposent un contrat aux souveraines : la reine règne, mais ne décide plus seule ; le Premier ministre, issu de leur rang, gouverne. L’alliance se scelle par le mariage : Rainilaiarivony épouse successivement Rasoherina, Ranavalona II et Ranavalona III — trois reines, un seul gouvernant, de 1864 à 1895.',
+        ],
+      },
+      {
+        titre: 'Les instruments du pouvoir',
+        paras: ['L’oligarchie gouverne avec trois instruments :'],
+        puces: [
+          'la loi : le code des 305 articles, promulgué en 1881, rassemble en un seul texte le droit du royaume — organisation de la justice, mariage, propriété, écoles rendues obligatoires, peines ; c’est l’une des premières codifications modernes d’Afrique ;',
+          'la contrainte : les opposants sont déportés, les provinces conquises paient l’impôt et fournissent corvées et soldats — ce qui nourrit des résistances durables chez les peuples soumis ;',
+          'la religion : en 1869, Ranavalona II et le Premier ministre se font baptiser — protestants ; le protestantisme devient religion d’État, les temples se multiplient, l’école missionnaire aussi.',
+        ],
+      },
+      {
+        titre: 'Société et sources',
+        paras: [
+          'La société reste une pyramide : Andriana (nobles), Hova (libres), olon-tsotra (gens du commun) et andevo (non-libres).',
+          'Sur tout cela, une source exceptionnelle nous renseigne : le Tantara ny Andriana, recueil des traditions orales de l’Imerina collectées par le père jésuite François Callet dans les années 1860-1870 — des milliers de pages en malgache, mémoire écrite d’un royaume.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Le code des 305 articles',
+      source: 'd’après le code promulgué au nom de la reine Ranavalona II (29 mars 1881) — extraits adaptés',
+      texte: 'Article 1. Voici les lois que je donne à mon royaume ; elles s’appliquent à tous, dans toute l’île. Article 85. Tous les enfants, garçons et filles, ayant l’âge requis, devront fréquenter l’école ; les parents qui les en empêcheront seront punis d’une amende. Article 118. Nul ne peut être condamné sans avoir été jugé selon les lois. Article 262. Quiconque trahira le royaume ou passera à l’ennemi sera puni de la peine la plus sévère.',
+      questions: ['Relève un article qui modernise le royaume et explique pourquoi.',
+        'Quel article protège les habitants contre l’arbitraire ? Que garantit-il ?',
+        'Montre, avec l’article 262, que le code sert aussi à verrouiller le pouvoir.'],
+      reponses: ['L’article 85 : l’école obligatoire pour les garçons ET les filles — une mesure très avancée pour l’époque, qui fait du royaume un pionnier de la scolarisation.',
+        'L’article 118 : nul ne peut être condamné sans jugement selon les lois — c’est le principe de la légalité des peines, protection contre l’arbitraire.',
+        'L’article 262 punit de la peine la plus sévère toute trahison : il permet d’écarter durement les opposants — le même code qui modernise sert aussi à défendre l’oligarchie au pouvoir.']
+    },
+    lexique: [
+      ['Oligarchie', 'gouvernement d’un petit nombre de familles ou de personnes'],
+      ['Code', 'recueil ordonné des lois d’un État'],
+      ['Déportation', 'peine consistant à exiler un condamné loin de chez lui'],
+      ['Religion d’État', 'religion officielle adoptée par le pouvoir'],
+    ],
     synthese: 'Oligarchie merina : grandes familles hova ; Premier ministre (Rainilaiarivony) marié aux reines successives ; code des 305 articles (1881) ; déportation des opposants ; impôts des provinces conquises ; castes Andriana, Hova, olon-tsotra, andevo ; protestantisme religion d’État (1869) ; source : Tantara ny Andriana du R.P. Callet.',
-    method: ['Définir l’oligarchie et le mécanisme reine-Premier ministre (alliance par mariage).', 'Citer les instruments du pouvoir : code de 1881, déportations, impôts des provinces.', 'Présenter la société (quatre groupes) et la religion d’État (1869).'],
-    exemple: 'Le code des 305 articles en action : il rend l’école obligatoire pour les enfants — mesure très moderne — mais il maintient les hiérarchies sociales et prévoit des peines sévères contre les opposants. Une même loi peut moderniser ET verrouiller : c’est tout le paradoxe du royaume.',
-    erreur: 'Croire que les reines n’étaient que des marionnettes sans rôle : elles incarnaient la légitimité royale, sacrée aux yeux du peuple, sans laquelle le Premier ministre n’aurait pas tenu un jour. L’oligarchie avait besoin du trône autant que le trône de l’oligarchie — c’est un partage du pouvoir, pas une disparition de la royauté.',
     saistu: 'Le Tantara ny Andriana est un trésor unique : le père Callet n’a presque rien écrit lui-même — il a noté, en malgache, ce que les anciens de l’Imerina lui racontaient : généalogies, coutumes, discours royaux… Près de 1 200 pages de mémoire orale devenue livre ! C’est exactement la démarche de l’Histoire orale que tu as apprise à l’unité I — appliquée il y a 150 ans.',
     exos: ['Le pouvoir. a) Qu’est-ce qu’une oligarchie ? b) De quel groupe social viennent les Premiers ministres ? d) Comment s’allient-ils aux reines ? e) Qui gouverne de 1864 à 1895 ?',
       'Les instruments. a) Que rassemble le code des 305 articles, et en quelle année ? b) Que deviennent les opposants ? d) Que paient les provinces conquises ? e) Quelle religion devient religion d’État, et quand ?',
@@ -134,6 +246,7 @@ const S = [
     fig: 'u5f3'
   }
 ];
+
 
 const unit5 = {
   no: 5, roman: 'V', name: 'Le Royaume de Madagascar (1810-1896)',
