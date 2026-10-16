@@ -30,6 +30,7 @@ figs.u7f2 = (() => { const { s, y } = head('Protéger et transmettre les patrimo
   b += txt(500, yb + 32, 'chaque génération est le gardien du suivant', 21, OCRE, 'bold', 'middle');
   return svg(1000, yb + 62, s + b); })();
 
+
 const S = [
   {
     t: 'Les patrimoines culturels de Madagascar', comp: 'Les patrimoines culturels et historiques', theme: 'Patrimoine culturel matériel et immatériel',
@@ -38,13 +39,61 @@ const S = [
     revQ: 'Donne les quatre étapes de la marche vers l’indépendance.',
     revRA: 'Après 1947 ; Loi-cadre 1956 ; référendum et République 1958 ; indépendance le 26 juin 1960.',
     situation: 'Le Rova qui domine Antananarivo, les aloalo sculptés du sud, un conte que raconte ta grand-mère, le hiragasy qui fait danser tout un village : qu’ont en commun ces choses si différentes ? Toutes sont des trésors reçus des générations passées — notre patrimoine. Mais un palais se visite, un conte s’écoute : comment classer ces richesses pour mieux les protéger ?',
-    def: 'Le patrimoine culturel est l’ensemble des biens hérités du passé qu’une communauté reconnaît comme siens et veut transmettre. Il est matériel quand il se compose de biens concrets : monuments, sites archéologiques, paysages construits, œuvres d’art, documents. Il est immatériel quand il se compose de pratiques vivantes : traditions orales, arts du spectacle, rituels et pratiques sociales, fêtes.',
-    autrement: 'le patrimoine matériel se touche et se visite (palais, sites, objets, manuscrits) ; le patrimoine immatériel se vit et se pratique (contes, chants, danses, rites, fêtes).',
-    concept: 'Le mot patrimoine vient du latin patrimonium : « ce qui vient des pères » — l’héritage. Appliqué à la culture, il désigne tout ce qu’une communauté — village, région, nation, humanité — reçoit du passé, reconnaît comme précieux et décide de transmettre. Le patrimoine matériel de Madagascar est d’une grande richesse : des monuments comme le Rova d’Antananarivo ou les portes de pierre des villages fortifiés de l’Imerina ; des sites archéologiques, tels les anciens villages des Hautes Terres ou les comptoirs échangeurs de la côte ; des paysages construits — les rizières en terrasses betsileo, œuvre de générations ; des œuvres d’art, comme les aloalo funéraires mahafaly ; des documents, enfin : les sorabe en caractères arabes, les archives royales, les photographies anciennes. Le patrimoine immatériel est tout aussi précieux, mais fragile autrement : il ne vit que tant qu’on le pratique. Les traditions orales — contes (angano), proverbes (ohabolana), généalogies récitées ; les arts du spectacle — le hiragasy des Hautes Terres, les chants et musiques de chaque région ; les rituels et pratiques sociales — le famadihana, les cérémonies de circoncision, les kabary de mariage ; les fêtes — le fandroana d’autrefois, les fêtes de villages. L’UNESCO protège ces deux formes au niveau mondial : la colline royale d’Ambohimanga est classée patrimoine mondial (matériel), et le savoir-faire du bois des Zafimaniry comme le kabary malgache sont inscrits au patrimoine immatériel de l’humanité. Première mission du citoyen : connaître ce double trésor — on ne protège bien que ce qu’on connaît.',
+    legende: 'Un palais se visite, un conte s’écoute : deux formes d’un même trésor hérité.',
+    motsCles: ['patrimoine culturel', 'matériel', 'immatériel', 'monuments', 'sites archéologiques', 'paysages construits', 'œuvres d’art', 'documents', 'traditions orales', 'arts du spectacle', 'rituels', 'fêtes', 'UNESCO', 'Ambohimanga'],
+    sections: [
+      {
+        titre: 'Qu’est-ce que le patrimoine ?',
+        paras: [
+          'Le mot patrimoine vient du latin patrimonium : « ce qui vient des pères » — l’héritage. Appliqué à la culture, il désigne tout ce qu’une communauté — village, région, nation, humanité — reçoit du passé, reconnaît comme précieux et décide de transmettre.',
+        ],
+      },
+      {
+        titre: 'Le patrimoine matériel : ce qui se touche',
+        paras: ['Le patrimoine matériel de Madagascar est d’une grande richesse :'],
+        puces: [
+          'des monuments, comme le Rova d’Antananarivo ou les portes de pierre des villages fortifiés de l’Imerina ;',
+          'des sites archéologiques, tels les anciens villages des Hautes Terres ou les comptoirs échangeurs de la côte ;',
+          'des paysages construits — les rizières en terrasses betsileo, œuvre de générations ;',
+          'des œuvres d’art, comme les aloalo funéraires mahafaly ;',
+          'des documents : les sorabe en caractères arabes, les archives royales, les photographies anciennes.',
+        ],
+      },
+      {
+        titre: 'Le patrimoine immatériel : ce qui se pratique',
+        paras: ['Le patrimoine immatériel est tout aussi précieux, mais fragile autrement : il ne vit que tant qu’on le pratique :'],
+        puces: [
+          'les traditions orales — contes (angano), proverbes (ohabolana), généalogies récitées ;',
+          'les arts du spectacle — le hiragasy des Hautes Terres, les chants et musiques de chaque région ;',
+          'les rituels et pratiques sociales — le famadihana, les cérémonies de circoncision, les kabary de mariage ;',
+          'les fêtes — le fandroana d’autrefois, les fêtes de villages.',
+        ],
+      },
+      {
+        titre: 'Une reconnaissance mondiale',
+        paras: [
+          'L’UNESCO protège ces deux formes au niveau mondial : la colline royale d’Ambohimanga est classée patrimoine mondial (matériel), et le savoir-faire du bois des Zafimaniry comme le kabary malgache sont inscrits au patrimoine immatériel de l’humanité. Première mission du citoyen : connaître ce double trésor — on ne protège bien que ce qu’on connaît.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'La convention du patrimoine mondial',
+      source: 'd’après la Convention de l’UNESCO concernant la protection du patrimoine mondial, culturel et naturel (Paris, 1972) — extraits adaptés',
+      texte: 'Constatant que le patrimoine culturel est de plus en plus menacé de destruction, et que la disparition d’un bien du patrimoine constitue un appauvrissement du patrimoine de tous les peuples du monde, les États signataires conviennent de ce qui suit. Sont considérés comme patrimoine culturel : les monuments, œuvres d’architecture, de sculpture ou de peinture ; les ensembles de constructions ; les sites, œuvres combinées de l’homme et de la nature, ayant une valeur universelle exceptionnelle. Chaque État s’engage à assurer l’identification, la protection, la conservation et la transmission aux générations futures du patrimoine situé sur son territoire.',
+      questions: ['Pourquoi la disparition d’un bien culturel appauvrit-elle « tous les peuples du monde » ?',
+        'Relève les quatre devoirs que chaque État signataire accepte.',
+        'À quelle catégorie de la convention rattaches-tu la colline d’Ambohimanga ? Justifie.'],
+      reponses: ['Parce qu’un bien exceptionnel a une valeur universelle : il appartient à l’histoire de l’humanité entière — sa perte est irréparable pour tous, pas seulement pour son pays.',
+        'Identifier, protéger, conserver et transmettre aux générations futures le patrimoine de son territoire.',
+        'Aux « sites, œuvres combinées de l’homme et de la nature » : la colline unit cité royale, porte de pierre et bois sacrés — c’est à ce titre qu’elle fut classée en 2001.']
+    },
+    lexique: [
+      ['Patrimoine', 'héritage reçu du passé et destiné à être transmis'],
+      ['Matériel', 'patrimoine concret : monuments, objets, documents'],
+      ['Immatériel', 'patrimoine vivant : pratiques, savoirs, expressions'],
+      ['UNESCO', 'organisation des Nations unies pour l’éducation, la science et la culture'],
+    ],
     synthese: 'Patrimoine culturel = héritage commun à transmettre. Matériel : monuments, sites archéologiques, paysages construits, œuvres d’art, documents. Immatériel : traditions orales, arts du spectacle, rituels et pratiques sociales, fêtes. Exemples malgaches : Rova et Ambohimanga ; hiragasy, kabary, famadihana.',
-    method: ['Définir le patrimoine par ses trois traits : hérité, reconnu, à transmettre.', 'Classer tout exemple : matériel (se touche) ou immatériel (se pratique).', 'Illustrer chaque catégorie par un exemple malgache précis.'],
-    exemple: 'Classe : le Rova (monument → matériel), un ohabolana (tradition orale → immatériel), un sorabe (document → matériel), le hiragasy (art du spectacle → immatériel), les terrasses betsileo (paysage construit → matériel).',
-    erreur: 'Croire que seul l’ancien et le monumental fait patrimoine : un savoir-faire de vannerie, une recette, un chant de pêcheurs sont du patrimoine au même titre qu’un palais — et souvent plus menacés, car il suffit d’une génération qui ne pratique plus pour qu’ils meurent.',
     saistu: 'La colline royale d’Ambohimanga a été classée au patrimoine mondial de l’UNESCO en 2001 : ses bois sacrés, sa porte à disque de pierre — qu’une vingtaine d’hommes manœuvraient chaque soir ! — et sa cité royale en font un lieu unique. Et le kabary malgache, l’art oratoire des grandes occasions, est entré en 2021 au patrimoine immatériel de l’humanité : la parole malgache est désormais un trésor mondial.',
     exos: ['Classe en matériel ou immatériel : a) les aloalo mahafaly ; b) un conte angano ; d) les sorabe ; e) le famadihana.',
       'Définitions. a) Que signifie le mot « patrimoine » ? b) Cite les cinq formes du patrimoine matériel. d) Cite les quatre formes du patrimoine immatériel. e) Pourquoi l’immatériel est-il plus fragile ?',
@@ -61,13 +110,54 @@ const S = [
     revQ: 'Distingue patrimoine matériel et immatériel avec deux exemples de chaque.',
     revRA: 'Matériel : se touche — Rova, sorabe ; immatériel : se pratique — hiragasy, famadihana (ou autres exemples).',
     situation: 'En 1995, un incendie a ravagé le Rova d’Antananarivo : en quelques heures, des trésors irremplaçables sont partis en fumée. Ailleurs, des tombes anciennes sont pillées, des contes meurent avec les derniers conteurs, des savoir-faire disparaissent sans bruit. Le patrimoine ne se garde pas tout seul : il faut le défendre. Qui doit le faire — et comment ?',
-    def: 'Les patrimoines historiques — matériels (monuments, sites, objets, documents) et immatériels (coutumes, contes, danses, traditions culinaires, savoir-faire) — doivent être sauvegardés. Leur protection suit une chaîne : les définir, sensibiliser la population à leur valeur, appliquer la loi de protection du patrimoine, les transmettre aux jeunes générations, et entretenir ainsi la mémoire collective de la nation.',
-    autrement: 'protéger le patrimoine, c’est d’abord savoir ce qu’on possède, puis en faire comprendre la valeur, le défendre par la loi, l’enseigner aux jeunes — pour que la nation n’oublie jamais qui elle est.',
-    concept: 'Pourquoi protéger ? Parce que le patrimoine historique est la mémoire collective de la nation : il raconte d’où nous venons, il fonde l’identité commune — un peuple qui perd son patrimoine perd une part de lui-même ; parce qu’il est irremplaçable : un monument brûlé, un conte oublié ne reviennent pas ; et parce qu’il est une richesse d’avenir — le tourisme culturel, les métiers d’art en vivent. Comment protéger ? La chaîne a cinq maillons. Définir : inventorier ce qui fait patrimoine — c’est le travail des historiens, des musées, des communautés elles-mêmes. Sensibiliser : expliquer sa valeur à tous — par l’école, les médias, les journées du patrimoine ; on ne respecte que ce qu’on comprend. Protéger par la loi : Madagascar s’est doté d’une législation sur la protection du patrimoine national, qui classe les biens culturels, interdit leur destruction, leur pillage et leur sortie du territoire, et punit les contrevenants ; les conventions de l’UNESCO complètent cette protection au niveau mondial. Transmettre : le patrimoine immatériel surtout ne survit que par la transmission — les coutumes, les contes, les danses, les traditions culinaires, les savoir-faire doivent passer des anciens aux jeunes : c’est l’affaire des familles, des associations, de l’école… et la tienne. Entretenir la mémoire collective enfin : commémorations, musées, enseignement de l’Histoire — ce manuel lui-même y participe. La boucle de l’année se referme : à l’unité I, tu as appris à recueillir la mémoire des anciens ; tu sais maintenant pourquoi ce geste est vital — chaque enquête orale, chaque conte noté, chaque visite d’un site est un acte de sauvegarde. Le patrimoine n’a pas de meilleurs gardiens que ceux qui l’aiment et le connaissent : vous.',
+    legende: 'Un monument brûlé, un conte oublié ne reviennent pas : le patrimoine ne se garde pas tout seul.',
+    motsCles: ['sauvegarde', 'mémoire collective', 'identité', 'définir', 'sensibiliser', 'loi de protection', 'classement', 'pillage', 'transmission', 'commémoration', 'gardiens du patrimoine'],
+    sections: [
+      {
+        titre: 'Pourquoi protéger ?',
+        paras: ['Trois raisons commandent la sauvegarde :'],
+        puces: [
+          'le patrimoine historique est la mémoire collective de la nation : il raconte d’où nous venons, il fonde l’identité commune — un peuple qui perd son patrimoine perd une part de lui-même ;',
+          'il est irremplaçable : un monument brûlé, un conte oublié ne reviennent pas ;',
+          'il est une richesse d’avenir — le tourisme culturel, les métiers d’art en vivent.',
+        ],
+      },
+      {
+        titre: 'Comment protéger ? La chaîne à cinq maillons',
+        paras: ['La sauvegarde suit une chaîne :'],
+        puces: [
+          'définir : inventorier ce qui fait patrimoine — c’est le travail des historiens, des musées, des communautés elles-mêmes ;',
+          'sensibiliser : expliquer sa valeur à tous — par l’école, les médias, les journées du patrimoine ; on ne respecte que ce qu’on comprend ;',
+          'protéger par la loi : Madagascar s’est doté d’une législation sur la protection du patrimoine national, qui classe les biens culturels, interdit leur destruction, leur pillage et leur sortie du territoire, et punit les contrevenants ; les conventions de l’UNESCO complètent cette protection au niveau mondial ;',
+          'transmettre : le patrimoine immatériel surtout ne survit que par la transmission — les coutumes, les contes, les danses, les traditions culinaires, les savoir-faire doivent passer des anciens aux jeunes : c’est l’affaire des familles, des associations, de l’école… et la tienne ;',
+          'entretenir la mémoire collective : commémorations, musées, enseignement de l’Histoire — ce manuel lui-même y participe.',
+        ],
+      },
+      {
+        titre: 'La boucle de l’année se referme',
+        paras: [
+          'À l’unité I, tu as appris à recueillir la mémoire des anciens ; tu sais maintenant pourquoi ce geste est vital — chaque enquête orale, chaque conte noté, chaque visite d’un site est un acte de sauvegarde. Le patrimoine n’a pas de meilleurs gardiens que ceux qui l’aiment et le connaissent : vous.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'La loi malgache protège le patrimoine national',
+      source: 'd’après l’ordonnance n° 82-029 relative à la sauvegarde, la protection et la conservation du patrimoine national (Madagascar, 1982) — extraits adaptés',
+      texte: 'Le patrimoine national comprend les biens culturels, meubles et immeubles, qui présentent un intérêt pour l’histoire, l’art, l’archéologie ou les traditions du pays. Les biens classés ne peuvent être détruits, déplacés, modifiés ou restaurés sans autorisation. L’exportation des biens culturels classés hors du territoire national est interdite. Les fouilles archéologiques sont soumises à autorisation, et toute découverte fortuite doit être déclarée à l’autorité compétente. Les infractions aux présentes dispositions sont punies conformément à la loi.',
+      questions: ['Quels biens la loi protège-t-elle, et contre quels dangers ?',
+        'Pourquoi interdire l’exportation des biens culturels classés ?',
+        'Que doit faire un paysan qui découvre des poteries anciennes dans son champ ? Pourquoi ?'],
+      reponses: ['Les biens culturels d’intérêt historique, artistique, archéologique ou traditionnel — contre la destruction, le déplacement, la modification sauvage, l’exportation et le pillage des fouilles.',
+        'Parce qu’un bien sorti du territoire est perdu pour la mémoire nationale : il enrichit des collections lointaines au lieu de raconter l’histoire du pays à ses propres enfants.',
+        'Déclarer sa découverte à l’autorité compétente : une poterie arrachée sans méthode perd son contexte — datée et étudiée en place, elle devient une page d’histoire (souviens-toi de la démarche archéologique).']
+    },
+    lexique: [
+      ['Mémoire collective', 'souvenir commun qui fonde l’identité d’une nation'],
+      ['Classement', 'inscription officielle d’un bien sur la liste protégée'],
+      ['Pillage', 'vol ou destruction de biens culturels'],
+      ['Commémoration', 'cérémonie entretenant le souvenir d’un événement'],
+    ],
     synthese: 'Patrimoines historiques matériels et immatériels (coutumes, contes, danses, traditions culinaires, savoir-faire) = mémoire collective de la nation. Chaîne de sauvegarde : définir → sensibiliser → protéger par la loi → transmettre aux jeunes → entretenir la mémoire. Chaque génération en est le gardien.',
-    method: ['Justifier la protection : mémoire collective, caractère irremplaçable, richesse d’avenir.', 'Réciter la chaîne de sauvegarde en cinq maillons.', 'Citer le rôle de la loi de protection et celui de la transmission.'],
-    exemple: 'Un projet de classe complet : inventorier les sites et traditions du fokontany (définir), monter une exposition à l’école (sensibiliser), alerter le fokontany sur une tombe ancienne menacée (protéger), enregistrer les contes d’une grand-mère (transmettre) — une enquête orale devenue acte de sauvegarde.',
-    erreur: 'Penser que la protection du patrimoine est « l’affaire de l’État » seulement : la loi ne peut rien sans les communautés. C’est le villageois qui signale le pillage, la famille qui transmet le conte, l’élève qui interroge les anciens. L’État protège par la loi ; la nation protège par la transmission.',
     saistu: 'Après l’incendie de 1995, le Rova d’Antananarivo a été patiemment reconstruit — des années de travaux pour rendre à la capitale son symbole. Mais le plus émouvant est ailleurs : une partie des objets royaux avait été sauvée des flammes par des mains anonymes, gardée puis restituée. La meilleure assurance d’un patrimoine, ce sont les citoyens qui le considèrent comme leur bien propre.',
     exos: ['La chaîne. a) Cite les cinq maillons de la chaîne de sauvegarde. b) Pourquoi commencer par « définir » ? d) Que fait la loi de protection ? e) Qui assure la transmission ?',
       'Pourquoi protéger ? a) Qu’est-ce que la mémoire collective ? b) Pourquoi dit-on le patrimoine « irremplaçable » ? d) En quoi est-il une richesse d’avenir ? e) Cite cinq formes de patrimoine immatériel historique.',
@@ -78,6 +168,7 @@ const S = [
     fig: 'u7f2'
   }
 ];
+
 
 const unit7 = {
   no: 7, roman: 'VII', name: 'Les patrimoines culturels et historiques de Madagascar',
