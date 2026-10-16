@@ -49,6 +49,7 @@ figs.u4f3 = (() => { const { s, y } = head('Un seul peuple, une belle diversité
   b += txt(500, top + 100 + 3 * 36 + 26, 'la nation malgache : un sentiment national né du brassage des migrations', 21, BLUE, 'bold', 'middle');
   return svg(1000, top + 100 + 3 * 36 + 58, s + b); })();
 
+
 const S = [
   {
     t: 'Les vagues de migration', comp: 'Les origines du peuple malgache', theme: 'La formation du peuple malgache à partir du brassage des migrations',
@@ -56,14 +57,53 @@ const S = [
     mat: 'Cartes des itinéraires, frise chronologique, textes et images',
     revQ: 'Quelles civilisations médiévales avons-nous étudiées dans l’unité précédente ?',
     revRA: 'L’Occident féodal et chrétien, et la civilisation musulmane.',
-    situation: 'Regarde les visages d’une classe malgache : on y devine l’Asie et l’Afrique, parfois l’Arabie ou l’Europe. Écoute la langue : des mots cousins du malais, d’autres du swahili, d’autres de l’arabe. Le peuple malgache est né d’un extraordinaire rendez-vous de navigateurs — reconstitutions la frise de ces arrivées.',
-    def: 'Le peuple malgache s’est formé à partir du brassage de plusieurs vagues de migration : les Austronésiens (IIIᵉ-IVᵉ siècle), ancêtres des Vazimba ; les Africains (VIIᵉ-VIIIᵉ siècle) ; les Indonésiens et Malaisiens (VIIᵉ siècle) ; les islamisés (IXᵉ siècle) — Antalaotra, Iharana, Zafiraminia, Antemoro ; les Européens à partir du XVᵉ siècle — découverte de Diégo-Suarez par les Portugais, de Fort-Dauphin par les Français, pirates et Zanamalata de la côte Est ; puis les Indiens et Indopakistanais au XIXᵉ siècle.',
-    autrement: 'pendant plus de quinze siècles, des pirogues, des boutres puis des navires ont déposé sur l’île des familles venues d’Asie, d’Afrique, d’Arabie, d’Europe et d’Inde — et leur mélange a fait les Malgaches.',
-    concept: 'Les premiers arrivés sont les Austronésiens : partis des îles de l’Asie du Sud-Est, ils traversent l’océan Indien sur leurs pirogues à balancier vers les IIIᵉ-IVᵉ siècles — leurs descendants anciens sont les Vazimba des traditions. Comment traverser 7 000 km d’océan ? Les courants marins et la mousson portent les navigateurs d’est en ouest : la carte des courants explique l’itinéraire, par cabotage le long des côtes de l’Inde et de l’Afrique ou par traversée directe. Suivent les Africains (VIIᵉ-VIIIᵉ siècles), venus de la côte orientale toute proche avec leurs zébus et leurs langues bantoues ; puis de nouvelles vagues indonésiennes et malaisiennes (VIIᵉ siècle). Au IXᵉ siècle arrivent les islamisés, commerçants mêlés d’Arabes, de Persans et de Swahilis : les Antalaotra fondent des comptoirs au Nord-Ouest, d’autres groupes s’installent à Iharana (Nord-Est), les Zafiraminia puis les Antemoro au Sud-Est. Au XVᵉ siècle, l’Europe aborde l’île : les Portugais reconnaissent la baie de Diégo-Suarez, les Français s’installent plus tard à Fort-Dauphin ; au XVIIᵉ-XVIIIᵉ siècle, les pirates hantent la côte Est — leurs enfants nés de mères malgaches, les Zanamalata, joueront un rôle chez les Betsimisaraka. Enfin, au XIXᵉ siècle, Indiens et Indopakistanais viennent commercer. La preuve du brassage ? La langue : fond austronésien, enrichi de mots bantous et d’apports du sorabe arabe — chaque vague a laissé sa trace dans notre bouche.',
+    situation: 'Regarde les visages d’une classe malgache : on y devine l’Asie et l’Afrique, parfois l’Arabie ou l’Europe. Écoute la langue : des mots cousins du malais, d’autres du swahili, d’autres de l’arabe. Le peuple malgache est né d’un extraordinaire rendez-vous de navigateurs — reconstituons la frise de ces arrivées.',
+    legende: 'Des pirogues, des boutres puis des navires ont déposé sur l’île des familles d’Asie, d’Afrique, d’Arabie et d’Europe.',
+    motsCles: ['Austronésiens', 'Vazimba', 'pirogues à balancier', 'mousson', 'Africains', 'islamisés', 'Antalaotra', 'Zafiraminia', 'Antemoro', 'Zanamalata', 'brassage'],
+    sections: [
+      {
+        titre: 'Les six vagues de migration',
+        paras: ['Pendant plus de quinze siècles, les arrivées se succèdent :'],
+        puces: [
+          'les Austronésiens (IIIᵉ-IVᵉ siècle) : partis des îles de l’Asie du Sud-Est sur leurs pirogues à balancier — leurs descendants anciens sont les Vazimba des traditions ;',
+          'les Africains (VIIᵉ-VIIIᵉ siècle) : venus de la côte orientale toute proche avec leurs zébus et leurs langues bantoues ;',
+          'de nouvelles vagues indonésiennes et malaisiennes (VIIᵉ siècle) ;',
+          'les islamisés (IXᵉ siècle), commerçants mêlés d’Arabes, de Persans et de Swahilis : les Antalaotra au Nord-Ouest, d’autres groupes à Iharana (Nord-Est), les Zafiraminia puis les Antemoro au Sud-Est ;',
+          'les Européens à partir du XVᵉ siècle : les Portugais reconnaissent la baie de Diégo-Suarez, les Français s’installent à Fort-Dauphin ; aux XVIIᵉ-XVIIIᵉ siècles, les pirates hantent la côte Est — leurs enfants nés de mères malgaches, les Zanamalata, joueront un rôle chez les Betsimisaraka ;',
+          'les Indiens et Indopakistanais (XIXᵉ siècle), venus commercer.',
+        ],
+      },
+      {
+        titre: 'Comment traverser l’océan ?',
+        paras: [
+          'Comment franchir 7 000 km d’océan ? Les courants marins et la mousson portent les navigateurs d’est en ouest : la carte des courants explique l’itinéraire, par cabotage le long des côtes de l’Inde et de l’Afrique ou par traversée directe.',
+        ],
+      },
+      {
+        titre: 'La preuve du brassage : la langue',
+        paras: [
+          'La langue malgache garde la trace de chaque vague : fond austronésien, enrichi de mots bantous et d’apports du sorabe arabe — chaque vague a laissé sa trace dans notre bouche. Le mot « vary » (riz) est cousin du malais « padi » ; « akoho » (poule) rappelle le swahili « kuku ».',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Le témoignage de la langue',
+      source: 'd’après les travaux du linguiste Otto Christian Dahl, Malgache et Maanjan (1951) — texte reconstitué',
+      texte: 'En comparant mot à mot la langue malgache et le maanyan, parlé par quelques dizaines de milliers de personnes au sud de l’île de Bornéo, on découvre une parenté si étroite qu’elle ne peut être un hasard : les nombres, les parties du corps, les gestes de la vie quotidienne se disent presque de la même façon. Il faut donc conclure que les ancêtres des Malgaches sont partis de cette région de l’Indonésie, emportant leur langue dans leurs pirogues — et que cette langue, enrichie ensuite de mots africains et arabes, est devenue le malgache d’aujourd’hui.',
+      questions: ['Quelle découverte le linguiste a-t-il faite en comparant le malgache et le maanyan ?',
+        'Quelle conclusion historique en tire-t-il ?',
+        'Quels « enrichissements » ultérieurs de la langue le texte signale-t-il, et à quelles vagues correspondent-ils ?'],
+      reponses: ['Une parenté très étroite : nombres, parties du corps et mots de la vie quotidienne se disent presque de la même façon.',
+        'Que les ancêtres des Malgaches sont partis de la région de Bornéo, en Indonésie, en emportant leur langue : la preuve du voyage austronésien.',
+        'Des mots africains (vague bantoue des VIIᵉ-VIIIᵉ siècles) et arabes (vague des islamisés du IXᵉ siècle) : chaque migration a laissé sa trace dans la langue.']
+    },
+    lexique: [
+      ['Austronésiens', 'navigateurs partis des îles d’Asie du Sud-Est'],
+      ['Mousson', 'vent saisonnier de l’océan Indien qui porte les navires'],
+      ['Antalaotra', 'commerçants islamisés installés au Nord-Ouest'],
+      ['Zanamalata', 'enfants des pirates et de mères malgaches, côte Est'],
+    ],
     synthese: 'six vagues : Austronésiens IIIᵉ-IVᵉ (ancêtres des Vazimba), Africains VIIᵉ-VIIIᵉ, Indonésiens-Malaisiens VIIᵉ, islamisés IXᵉ (Antalaotra, Iharana, Zafiraminia, Antemoro), Européens XVᵉ (Diégo-Suarez, Fort-Dauphin, pirates et Zanamalata), Indiens-Indopakistanais XIXᵉ ; courants marins et mousson expliquent les traversées ; la langue malgache garde la trace de chaque vague.',
-    method: ['Tracer la frise des vagues avec leurs siècles.', 'Sur la carte de l’océan Indien, suivre les itinéraires portés par courants et mousson.', 'Associer chaque vague à une trace encore visible (mots, zébu, sorabe, comptoirs).'],
-    exemple: 'Le mot « vary » (riz) est cousin du malais « padi » : trace austronésienne. « Akoho » (poule) rappelle le swahili « kuku » : trace africaine. Les manuscrits sorabe : trace islamisée — trois vagues dans trois mots.',
-    erreur: 'Croire que les migrations furent une « invasion » organisée : ce furent des arrivées successives de petits groupes — familles de navigateurs, commerçants, pasteurs — étalées sur quinze siècles, qui se sont mêlées aux habitants déjà présents.',
     saistu: 'La langue malgache a une sœur jumelle... à 7 500 kilomètres ! Le maanyan, parlé au sud de Bornéo (Indonésie), partage avec le malgache une grande partie de son vocabulaire de base. C’est l’une des plus belles preuves du voyage austronésien — la plus longue migration maritime de l’histoire ancienne de l’humanité, bien avant les caravelles européennes !',
     exos: ['Associe chaque vague à son siècle : a) Austronésiens ; b) islamisés ; d) Européens ; e) Indiens et Indopakistanais.',
       'Les repères. a) Qui sont les ancêtres des Vazimba ? b) Cite deux groupes islamisés et leur région. d) Qui découvre Diégo-Suarez ? Fort-Dauphin ? e) Qui sont les Zanamalata ?',
@@ -80,13 +120,47 @@ const S = [
     revQ: 'Cite les six vagues de migration avec leurs siècles.',
     revRA: 'Austronésiens IIIᵉ-IVᵉ ; Africains VIIᵉ-VIIIᵉ ; Indonésiens-Malaisiens VIIᵉ ; islamisés IXᵉ ; Européens XVᵉ ; Indiens XIXᵉ.',
     situation: 'Où poser sa pirogue quand on découvre une île grande comme un continent ? Près d’une baie abritée, d’une rivière poissonneuse, d’une plaine à zébus ? Chaque groupe de migrants a choisi son rivage — et des siècles plus tard, les archéologues retrouvent leurs villages enfouis, leurs poteries et leurs foyers. La carte du peuplement se reconstitue, fouille après fouille.',
-    def: 'Les zones d’implantation des premiers Malgaches sont la côte Ouest, le Nord et le Nord-Ouest, le Nord-Est, le Sud-Est, le Sud et les Hautes Terres centrales. L’archéologie — l’étude des traces matérielles laissées par les hommes — joue un rôle essentiel pour l’Histoire du peuplement : les fouilles apportent des preuves concrètes (poteries, foyers, ossements, comptoirs) qui confirment, corrigent ou complètent les traditions orales.',
-    autrement: 'les migrants se sont installés sur toutes les façades de l’île avant de gagner l’intérieur — et ce sont les fouilles archéologiques qui permettent de dater et de prouver ces installations.',
-    concept: 'Le peuplement suit une logique : on aborde par les côtes, on remonte ensuite les fleuves vers l’intérieur. La côte Ouest, aux larges plaines, accueille pêcheurs et éleveurs ; le Nord et le Nord-Ouest, tournés vers l’Afrique et l’Arabie, voient fleurir les comptoirs des Antalaotra — Mahilaka, grande ville marchande fouillée par les archéologues, en est le joyau ; le Nord-Est abrite les navigateurs d’Iharana (Vohémar), dont les tombes ont livré de magnifiques objets ; le Sud-Est reçoit les islamisés Zafiraminia puis Antemoro, gardiens du sorabe ; le Sud, terre des pasteurs ; et les Hautes Terres centrales, conquises plus tardivement, se couvrent de rizières et de villages fortifiés de fossés. Comment le sait-on ? Par l’archéologie : à Taolambiby, au Sud, des os entaillés par l’homme sont datés scientifiquement ; dans la grotte d’Andavakoera et sur les sites du Nord, charbons et poteries racontent les premiers campements ; à Mahilaka, les murs d’une cité du XIᵉ siècle sortent du sable. La fouille est une source primaire : elle se fait couche par couche — plus c’est profond, plus c’est ancien —, chaque objet est photographié, daté, comparé. Là où les textes manquent, comme pour le Madagascar ancien, l’archéologie est la mémoire du sol : visiter un site, c’est lire une page d’histoire que personne n’a écrite.',
+    legende: 'Villages enfouis, poteries, foyers : fouille après fouille, la carte du peuplement se reconstitue.',
+    motsCles: ['zones d’implantation', 'archéologie', 'fouilles', 'Mahilaka', 'Iharana (Vohémar)', 'Taolambiby', 'Andavakoera', 'source primaire', 'datation', 'couches'],
+    sections: [
+      {
+        titre: 'Six zones d’implantation',
+        paras: ['On aborde par les côtes, on remonte ensuite les fleuves vers l’intérieur :'],
+        puces: [
+          'la côte Ouest, aux larges plaines : pêcheurs et éleveurs ;',
+          'le Nord et le Nord-Ouest, tournés vers l’Afrique et l’Arabie : les comptoirs des Antalaotra — Mahilaka, grande ville marchande fouillée par les archéologues, en est le joyau ;',
+          'le Nord-Est : les navigateurs d’Iharana (Vohémar), dont les tombes ont livré de magnifiques objets ;',
+          'le Sud-Est : les islamisés Zafiraminia puis Antemoro, gardiens du sorabe ;',
+          'le Sud, terre des pasteurs ;',
+          'les Hautes Terres centrales, conquises plus tardivement : rizières et villages fortifiés de fossés.',
+        ],
+      },
+      {
+        titre: 'L’archéologie, mémoire du sol',
+        paras: [
+          'L’archéologie — l’étude des traces matérielles laissées par les hommes — apporte les preuves : à Taolambiby, au Sud, des os entaillés par l’homme sont datés scientifiquement ; dans la grotte d’Andavakoera et sur les sites du Nord, charbons et poteries racontent les premiers campements ; à Mahilaka, les murs d’une cité du XIᵉ siècle sortent du sable.',
+          'La fouille est une source primaire : elle se fait couche par couche — plus c’est profond, plus c’est ancien —, chaque objet est photographié, daté, comparé. Là où les textes manquent, comme pour le Madagascar ancien, l’archéologie est la mémoire du sol : visiter un site, c’est lire une page d’histoire que personne n’a écrite.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Mahilaka, la ville sortie du sable',
+      source: 'd’après les rapports de fouilles archéologiques de Mahilaka, baie d’Ampasindava (travaux dirigés par Chantal Radimilahy) — texte reconstitué',
+      texte: 'Sous les cocotiers de la baie d’Ampasindava, les sondages ont révélé une véritable ville du XIᵉ siècle, entourée d’un mur d’enceinte : fondations de pierre et de corail, mosquée, ateliers. Les tessons recueillis racontent le commerce : céramiques venues du golfe Persique, porcelaines de Chine, perles de verre, à côté des marmites locales en chlorite. Les charbons des foyers, datés au laboratoire, confirment l’occupation du XIᵉ au XIVᵉ siècle. Mahilaka fut ainsi le plus grand comptoir du Nord-Ouest malgache — la preuve que l’île participait pleinement au grand commerce de l’océan Indien.',
+      questions: ['Quels vestiges les archéologues ont-ils dégagés à Mahilaka ?',
+        'Comment la datation de la ville a-t-elle été établie ?',
+        'Que prouvent les céramiques du golfe Persique et les porcelaines de Chine ?'],
+      reponses: ['Une ville entière du XIᵉ siècle : mur d’enceinte, fondations de pierre et de corail, mosquée, ateliers, tessons de céramique.',
+        'Par la datation au laboratoire des charbons des foyers : occupation du XIᵉ au XIVᵉ siècle — l’archéologie date là où les textes manquent.',
+        'Que Mahilaka commerçait avec l’Arabie, la Perse et la Chine : Madagascar était un carrefour du commerce de l’océan Indien, pas une île isolée.']
+    },
+    lexique: [
+      ['Archéologie', 'étude des traces matérielles laissées par les hommes'],
+      ['Fouille', 'dégagement méthodique d’un site, couche par couche'],
+      ['Source primaire', 'trace directe du passé : objet, vestige, texte d’époque'],
+      ['Comptoir', 'établissement de commerce fondé sur une côte étrangère'],
+    ],
     synthese: 'six zones : côte Ouest, Nord/Nord-Ouest (comptoirs antalaotra, Mahilaka), Nord-Est (Iharana), Sud-Est (Zafiraminia, Antemoro), Sud, Hautes Terres (rizières, villages fortifiés) ; d’abord les côtes, puis l’intérieur ; l’archéologie fournit les preuves : fouilles, poteries, charbons datés.',
-    method: ['Placer les six zones sur la carte de Madagascar.', 'Associer chaque zone à un groupe de migrants ou un mode de vie.', 'Citer pour une zone une preuve archéologique (site, objet, datation).'],
-    exemple: 'Pour prouver l’ancienneté du comptoir de Mahilaka, l’archéologue croise trois indices : les murs dégagés, les tessons de céramique importée d’Arabie et de Chine, et la datation des charbons — trois preuves concordantes, conclusion solide.',
-    erreur: 'Croire que l’archéologie « cherche des trésors » : elle cherche des informations. Un tas de cendres daté vaut plus pour l’historien qu’un bijou sans contexte — c’est pourquoi piller un site, c’est déchirer une page d’histoire à jamais.',
     saistu: 'À Vohémar (Iharana), les archéologues ont découvert des centaines de tombes contenant des bols de chlorite locale, des céramiques chinoises et des perles venues d’Inde : la preuve qu’au Moyen Âge, le Nord-Est malgache commerçait déjà avec la moitié du monde ! La Grande Île n’a jamais été isolée — elle était un carrefour de l’océan Indien.',
     exos: ['Associe chaque zone à son groupe : a) Nord-Ouest ; b) Sud-Est ; d) Nord-Est ; e) Hautes Terres centrales.',
       'L’archéologie. a) Définis l’archéologie. b) Cite trois types de traces qu’une fouille peut livrer. d) Pourquoi fouille-t-on couche par couche ? e) Cite un site archéologique malgache.',
@@ -103,13 +177,50 @@ const S = [
     revQ: 'Cite les six zones d’implantation des premiers Malgaches.',
     revRA: 'Côte Ouest, Nord/Nord-Ouest, Nord-Est, Sud-Est, Sud, Hautes Terres centrales.',
     situation: 'Un pêcheur vezo, une tisserande betsileo, un éleveur bara, une marchande betsimisaraka : quatre visages, quatre régions, quatre manières de vivre — et pourtant, qu’ils se rencontrent, et ils se comprennent : même langue, mêmes salutations, même respect des ancêtres. D’où vient ce miracle d’un peuple si divers et pourtant si un ?',
-    def: 'Le peuple malgache est issu de plusieurs origines ; la nation malgache s’est construite à partir de l’identification de faits communs et manifeste un sentiment national : c’est l’unité dans la diversité. Les ressemblances entre les migrants portent sur la croyance, la langue malgache et la civilisation matérielle — élevage bovin et riziculture ; les différences portent sur la culture (variétés linguistiques régionales, mode vestimentaire, coiffure, us et coutumes) et sur la morphologie humaine, selon les apports asiatiques, africains et islamisés.',
-    autrement: 'venus de partout, les Malgaches partagent l’essentiel — la langue, les croyances anciennes, le zébu et le riz — et gardent chacun leurs couleurs régionales : c’est cela, l’unité dans la diversité.',
-    concept: 'Les ressemblances d’abord — le socle commun. La croyance : partout, le respect de Zanahary (le Créateur) et des razana (les ancêtres), le culte des tombeaux, les grandes cérémonies familiales. La langue : une seule langue malgache, comprise de Diégo à Fort-Dauphin — fait rarissime pour une île-continent ; l’Afrique voisine compte des centaines de langues sur des espaces semblables. La civilisation matérielle : le zébu, richesse et prestige, présent dans les rites comme dans les rizières ; la riziculture, cœur de l’alimentation et du calendrier. Les différences ensuite — les couleurs régionales : chaque région a sa variété de la langue (on dit « accent » ou dialecte), ses habits et coiffures, ses coutumes — ici le famadihana, là le tromba, ailleurs le savatse — ; et les visages varient selon le dosage des héritages asiatique, africain, arabe ou européen. Faut-il y voir des « races » ou des peuples séparés ? Non : les études montrent que chaque Malgache porte à la fois des ancêtres asiatiques et africains — le brassage est dans chacun de nous. C’est pourquoi la nation malgache n’est pas une addition de groupes, mais un sentiment national : la conscience d’une histoire, d’une langue et d’un destin partagés. Le devoir du citoyen — et de l’élève historien — est d’en être le gardien : valoriser chaque culture régionale comme une richesse de la nation, refuser les divisions, cultiver le fihavanana. L’unité n’efface pas la diversité : elle la fait chanter ensemble.',
+    legende: 'Quatre visages, quatre régions — une même langue, un même respect des ancêtres : le miracle malgache.',
+    motsCles: ['unité dans la diversité', 'Zanahary', 'razana', 'langue malgache', 'zébu', 'riziculture', 'variétés régionales', 'brassage', 'sentiment national', 'fihavanana'],
+    sections: [
+      {
+        titre: 'Les ressemblances : le socle commun',
+        paras: ['Venus de partout, les Malgaches partagent l’essentiel :'],
+        puces: [
+          'la croyance : partout, le respect de Zanahary (le Créateur) et des razana (les ancêtres), le culte des tombeaux, les grandes cérémonies familiales ;',
+          'la langue : une seule langue malgache, comprise de Diégo à Fort-Dauphin — fait rarissime pour une île-continent ; l’Afrique voisine compte des centaines de langues sur des espaces semblables ;',
+          'la civilisation matérielle : le zébu, richesse et prestige, présent dans les rites comme dans les rizières ; la riziculture, cœur de l’alimentation et du calendrier.',
+        ],
+      },
+      {
+        titre: 'Les différences : les couleurs régionales',
+        paras: [
+          'Chaque région a sa variété de la langue (on dit « accent » ou dialecte), ses habits et coiffures, ses coutumes — ici le famadihana, là le tromba, ailleurs le savatse ; et les visages varient selon le dosage des héritages asiatique, africain, arabe ou européen.',
+          'Faut-il y voir des « races » ou des peuples séparés ? Non : les études montrent que chaque Malgache porte à la fois des ancêtres asiatiques et africains — le brassage est dans chacun de nous.',
+        ],
+      },
+      {
+        titre: 'La nation et le sentiment national',
+        paras: [
+          'La nation malgache n’est pas une addition de groupes, mais un sentiment national : la conscience d’une histoire, d’une langue et d’un destin partagés. Le devoir du citoyen — et de l’élève historien — est d’en être le gardien : valoriser chaque culture régionale comme une richesse de la nation, refuser les divisions, cultiver le fihavanana. L’unité n’efface pas la diversité : elle la fait chanter ensemble.',
+        ],
+      },
+    ],
+    doc: {
+      titre: 'Le fihavanana, fondement de la nation',
+      source: 'd’après le préambule de la Constitution de la République de Madagascar (2010) — extrait adapté',
+      texte: 'Le peuple malgache souverain, affirmant sa croyance en Andriamanitra Andriananahary, résolu à promouvoir et à développer son héritage de société vivant en harmonie et respectueuse de l’altérité, de la richesse et du dynamisme de ses valeurs culturelles et spirituelles à travers le « fanahy maha-olona », convaincu de la nécessité de la société malgache de retrouver son originalité, son authenticité et sa malgachéité, déclare que le fihavanana et les croyances ancestrales font partie des fondements de la nation.',
+      questions: ['Quelles valeurs communes des Malgaches ce texte officiel met-il en avant ?',
+        'Que signifie « vivre en harmonie et respectueuse de l’altérité » ?',
+        'Pourquoi la Constitution — texte de loi moderne — cite-t-elle le fihavanana et les croyances ancestrales ?'],
+      reponses: ['La croyance en le Créateur, l’harmonie sociale, les valeurs culturelles et spirituelles, le fanahy maha-olona, le fihavanana.',
+        'Vivre ensemble pacifiquement en respectant l’autre dans sa différence — exactement « l’unité dans la diversité » de la leçon.',
+        'Parce que la nation malgache repose sur ce socle commun hérité de l’histoire : la loi moderne reconnaît que le sentiment national plonge ses racines dans les valeurs partagées depuis les migrations.']
+    },
+    lexique: [
+      ['Razana', 'les ancêtres, honorés partout à Madagascar'],
+      ['Dialecte', 'variété régionale d’une même langue'],
+      ['Sentiment national', 'conscience d’appartenir à une même nation'],
+      ['Fihavanana', 'lien de parenté, d’amitié et de solidarité, fondement de la paix sociale'],
+    ],
     synthese: 'ressemblances : croyance (Zanahary, razana), langue malgache unique, zébu et riziculture ; différences : variétés régionales de langue, habits, coutumes, morphologies ; chaque Malgache porte le brassage en lui ; nation = sentiment national ; devoir : vivre en harmonie — l’unité dans la diversité.',
-    method: ['Lister les ressemblances : croyance, langue, civilisation matérielle.', 'Lister les différences : variétés culturelles régionales et morphologies.', 'Conclure par le sentiment national et un engagement concret d’harmonie.'],
-    exemple: 'Un exposé réussi : « le famadihana des Hautes Terres et le savatse du Sud diffèrent — mais tous deux honorent les ancêtres : différence de forme, ressemblance de fond. » Différence en surface, unité en profondeur : voilà la grille d’analyse.',
-    erreur: 'Transformer les différences régionales en divisions : dire « eux » et « nous » entre Malgaches, c’est oublier que toutes les régions descendent des mêmes vagues mélangées. La diversité est une richesse à partager, jamais une frontière.',
     saistu: 'Le fihavanana est si central dans la culture malgache qu’aucun mot français ne le traduit exactement : parenté, amitié, solidarité et paix sociale à la fois ! Le proverbe le résume : « Aleo very tsikalakalam-bola toy izay very tsikalakalam-pihavanana » — mieux vaut perdre un peu d’argent que perdre le fihavanana. Toute une philosophie de l’unité en une phrase.',
     exos: ['Ressemblance ou différence ? a) Le respect des razana. b) La coiffure traditionnelle d’une région. d) La riziculture. e) La variété régionale de la langue.',
       'Le socle commun. a) Cite les trois grandes ressemblances entre les migrants. b) Pourquoi la langue unique est-elle un fait remarquable ? d) Quel rôle joue le zébu dans la vie malgache ? e) Que signifie « sentiment national » ?',
