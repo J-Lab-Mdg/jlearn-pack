@@ -97,6 +97,18 @@ SOURCES = {
          "\u00ab Le d\u00e9veloppement durable \u2026 est une conception du d\u00e9veloppement qui s'inscrit dans une "
          "perspective de long terme et en int\u00e9grant les contraintes environnementales et sociales \u00e0 "
          "l'\u00e9conomie. \u00bb"]),
+    "wiki_discrimination": (
+        "Wikip\u00e9dia (fr) \u2014 \u00ab Discrimination \u00bb, encyclop\u00e9die en ligne, licence CC BY-SA 4.0",
+        "https://fr.wikipedia.org/wiki/Discrimination",
+        ["\u00ab La discrimination sociale est un processus li\u00e9 au fait d'op\u00e9rer une distinction concernant une "
+         "personne ou une cat\u00e9gorie sociale en cr\u00e9ant des fronti\u00e8res dites \u00ab discriminantes \u00bb, "
+         "c'est-\u00e0-dire produisant un rejet visant \u00e0 l'exclusion sociale sur des crit\u00e8res tels que "
+         "l'origine sociale ou ethnique, la religion, le genre, le niveau de son intelligence ou l'\u00e9tat "
+         "de sant\u00e9. \u00bb",
+         "\u00ab Au sens courant, la discrimination est le fait de traiter de mani\u00e8re in\u00e9gale et "
+         "d\u00e9favorable un ou plusieurs individus. \u00bb",
+         "\u00ab Cet individu est dit victime d'une discrimination lorsqu'il est, dans une situation "
+         "identique, trait\u00e9 diff\u00e9remment des autres sans motif l\u00e9gitime. \u00bb"]),
 }
 
 # -----------------------------------------------------------------------------------------------
