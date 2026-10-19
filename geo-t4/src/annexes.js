@@ -1,5 +1,5 @@
 // annexes.js — Annexes du Manuel de Géographie T4
-// 1. Glossaire — 2. Cartes muettes — 3. Auto-évaluation — 4. Table des illustrations — 5. Loharanom-Baovao (sources)
+// 1. Glossaire — 2. Cartes muettes — 3. Auto-évaluation — 4. Table des illustrations — 5. Sources
 const path = require("path");
 const fs = require("fs");
 const { AlignmentType, Table, TableRow, WidthType, BorderStyle } = require("docx");
@@ -130,21 +130,21 @@ function annexesContent(topics) {
 
   // Page d'ouverture des annexes
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("ANNEXES", "annexes", { size: 30, after: 80, align: AlignmentType.CENTER }));
-  out.push(B.p("Le glossaire, les cartes muettes, l'auto-évaluation, la table des illustrations et les sources complètent le manuel.", { size: 21, italics: true, align: AlignmentType.CENTER, after: 200 }));
+  out.push(B.headingWithBookmark("ANNEXES", "annexes", { size: 34, after: 80, align: AlignmentType.CENTER }));
+  out.push(B.p("Le glossaire, les cartes muettes, l'auto-évaluation, la table des illustrations et les sources complètent le manuel.", { size: 25, italics: true, align: AlignmentType.CENTER, after: 200 }));
 
   // ── 1. GLOSSAIRE ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Glossaire", "glossaire", { size: 26, after: 120, align: AlignmentType.CENTER }));
-  out.push(B.p("Les termes signalés par ★ sont repris du glossaire officiel du programme d'études T4.", { size: 19, italics: true, after: 120 }));
+  out.push(B.headingWithBookmark("Glossaire", "glossaire", { size: 30, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.p("Les termes signalés par ★ sont repris du glossaire officiel du programme d'études T4.", { size: 23, italics: true, after: 120 }));
   out.push(new Table({
     borders, width: { size: 100, type: WidthType.PERCENTAGE },
     rows: [
       tRow(["Terme", "Définition"], [26, 74], { header: true }),
       ...GLOSSAIRE.map(([t, d]) => new TableRow({
         children: [
-          B.cell([B.p(t, { size: 19, bold: true, color: B.BLUE })], { width: 26 }),
-          B.cell([B.p(d, { size: 19 })], { width: 74 }),
+          B.cell([B.p(t, { size: 23, bold: true, color: B.BLUE })], { width: 26 }),
+          B.cell([B.p(d, { size: 23 })], { width: 74 }),
         ],
       })),
     ],
@@ -153,25 +153,45 @@ function annexesContent(topics) {
 
   // ── 2. CARTES MUETTES ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Cartes muettes", "cartesmuettes", { size: 26, after: 120, align: AlignmentType.CENTER }));
-  out.push(B.p("Recopie ou complète ces dessins dans ton cahier, puis remplis les pointillés.", { size: 21, italics: true, after: 160 }));
+  out.push(B.headingWithBookmark("Cartes muettes", "cartesmuettes", { size: 30, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.p("Recopie ou complète ces dessins dans ton cahier, puis remplis les pointillés.", { size: 25, italics: true, after: 160 }));
 
-  out.push(B.p("1. La rose des vents à compléter", { size: 22, bold: true, before: 100, after: 60, color: B.GREEN }));
-  out.push(B.p("Consigne : écris les directions qui manquent — les trois points cardinaux et les quatre directions intermédiaires.", { size: 20, italics: true, after: 60 }));
+  out.push(B.p("1. La rose des vents à compléter", { size: 26, bold: true, before: 100, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : écris les sept directions qui manquent — les trois autres points cardinaux et les quatre directions intermédiaires.", { size: 24, italics: true, after: 60 }));
   out.push(...imgBlock("geot4_rose_vents_vide", "La rose des vents à compléter."));
 
-  out.push(B.p("2. La carte de Madagascar à compléter", { size: 22, bold: true, before: 160, after: 60, color: B.GREEN }));
-  out.push(B.p("Consigne : écris les quatre points cardinaux autour de la carte, puis écris le nom de la capitale à côté de l'étoile.", { size: 20, italics: true, after: 60 }));
-  out.push(...imgBlock("geot4_carte_muette_mada", "La carte muette de Madagascar : les points cardinaux et la capitale à placer."));
+  out.push(B.p("2. S'orienter à Madagascar", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : écris les quatre points cardinaux autour de la carte, le nom de la capitale à côté de l'étoile, puis repère Nosy Be et Sainte-Marie.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geot4_carte_muette_mada", "La carte muette de Madagascar : les points cardinaux, la capitale et les îles voisines à placer."));
 
-  out.push(B.p("3. La carte des climats à compléter", { size: 22, bold: true, before: 160, after: 60, color: B.GREEN }));
-  out.push(B.p("Consigne : écris le nom des quatre régions climatiques de Madagascar dans la légende : 1, 2, 3, 4.", { size: 20, italics: true, after: 60 }));
-  out.push(...imgBlock("geot4_carte_muette_climats", "La carte muette des climats de Madagascar, avec sa légende à compléter."));
+  out.push(B.p("3. Les grands reliefs à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : écris le nom des quatre grands reliefs de Madagascar dans la légende.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geot4_carte_muette_reliefs", "La carte muette des grands reliefs : Hautes Terres, plaines de l'Est et de l'Ouest, Sud."));
+
+  out.push(B.p("4. Les cours d'eau et les lacs à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : pour chaque numéro, écris s'il s'agit d'un fleuve ou d'un lac, puis donne son nom.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geot4_carte_muette_hydrographie", "La carte muette des principaux cours d'eau et lacs de Madagascar."));
+
+  out.push(B.p("5. Les climats à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : écris le nom des quatre régions climatiques de Madagascar dans la légende.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geot4_carte_muette_climats", "La carte muette des climats de Madagascar, avec quatre régions à nommer."));
+
+  out.push(B.p("6. Les formations végétales à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : nomme la végétation de chaque zone, puis relie-la au climat correspondant.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geot4_carte_muette_vegetation", "La carte muette des formations végétales : forêt humide, forêt littorale, savane et steppe épineuse."));
+
+  out.push(B.p("7. La répartition de la population à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : décris les quatre zones numérotées en observant les points rouges et verts, puis complète la phrase de synthèse.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geot4_carte_muette_population", "La carte muette de la répartition de la population : zones plus peuplées et moins peuplées."));
+
+  out.push(B.p("8. Les activités de la population à compléter", { size: 26, bold: true, before: 160, after: 60, color: B.GREEN }));
+  out.push(B.p("Consigne : nomme chaque activité représentée, puis classe-la parmi les activités de la terre, de transformation ou d'échange.", { size: 24, italics: true, after: 60 }));
+  out.push(...imgBlock("geot4_carte_muette_activites", "La carte muette des activités de la population : agriculture, élevage, pêche, artisanat, industrie et échanges."));
 
   // ── 3. AUTO-ÉVALUATION ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Auto-évaluation", "autoevaluation", { size: 26, after: 120, align: AlignmentType.CENTER }));
-  out.push(B.p("Après chaque unité, coche la colonne qui correspond à ce que tu sais faire. Demande conseil à ton maître ou à ta maîtresse pour progresser.", { size: 21, italics: true, after: 160 }));
+  out.push(B.headingWithBookmark("Auto-évaluation", "autoevaluation", { size: 30, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.p("Après chaque unité, coche la colonne qui correspond à ce que tu sais faire. Demande conseil à ton maître ou à ta maîtresse pour progresser.", { size: 25, italics: true, after: 160 }));
   const evalRows = [tRow(["Compétence — Je suis capable de…", "Acquis", "En cours", "À revoir"], [52, 16, 16, 16], { header: true })];
   AUTO_EVAL.forEach(([unit, comps]) => {
     evalRows.push(tRow([unit, "", "", ""], [52, 16, 16, 16], { bold: true, bg: "F5F5F5", color: B.BLUE }));
@@ -182,17 +202,17 @@ function annexesContent(topics) {
 
   // ── 4. TABLE DES ILLUSTRATIONS ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Table des illustrations", "illustrations", { size: 26, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.headingWithBookmark("Table des illustrations", "illustrations", { size: 30, after: 120, align: AlignmentType.CENTER }));
   const illRows = [tRow(["Séance", "Titre de la séance", "Illustration"], [10, 45, 45], { header: true })];
   topics.forEach((t) => {
     illRows.push(new TableRow({
       children: [
-        B.cell([B.p(String(t.numero), { size: 18 })], { width: 10 }),
-        B.cell([B.p(t.titre, { size: 18 })], { width: 45 }),
+        B.cell([B.p(String(t.numero), { size: 22 })], { width: 10 }),
+        B.cell([B.p(t.titre, { size: 22 })], { width: 45 }),
         B.cell(
           [
-            B.p(t.image && t.image.legende ? t.image.legende : "—", { size: 18 }),
-            ...(t.scene && t.scene.legende ? [B.p(t.scene.legende, { size: 18, color: "555555" })] : []),
+            B.p(t.image && t.image.legende ? t.image.legende : "—", { size: 22 }),
+            ...(t.scene && t.scene.legende ? [B.p(t.scene.legende, { size: 22, color: "555555" })] : []),
           ],
           { width: 45 }
         ),
@@ -201,9 +221,9 @@ function annexesContent(topics) {
   });
   illRows.push(new TableRow({
     children: [
-      B.cell([B.p("Annexe", { size: 18 })], { width: 10 }),
-      B.cell([B.p("Cartes muettes", { size: 18 })], { width: 45 }),
-      B.cell([B.p("La rose des vents à compléter ; la carte muette de Madagascar ; la carte muette des climats.", { size: 18 })], { width: 45 }),
+      B.cell([B.p("Annexe", { size: 22 })], { width: 10 }),
+      B.cell([B.p("Cartes muettes", { size: 22 })], { width: 45 }),
+      B.cell([B.p("La rose des vents ; l'orientation ; les reliefs ; les cours d'eau et les lacs ; les climats ; la végétation ; la population ; les activités.", { size: 22 })], { width: 45 }),
     ],
   }));
   out.push(new Table({ borders, width: { size: 100, type: WidthType.PERCENTAGE }, rows: illRows }));
@@ -211,12 +231,12 @@ function annexesContent(topics) {
 
   // ── 5. LOHARANOM-BAOVAO (SOURCES) ──
   out.push(B.pageBreak());
-  out.push(B.headingWithBookmark("Loharanom-Baovao (sources)", "sources", { size: 26, after: 120, align: AlignmentType.CENTER }));
+  out.push(B.headingWithBookmark("Sources", "sources", { size: 30, after: 120, align: AlignmentType.CENTER }));
   SOURCES.forEach(([s, d]) => {
-    out.push(B.p(`• ${s}`, { size: 21, after: 40 }));
-    out.push(B.p(d, { size: 19, italics: true, indent: 360, after: 120, color: "555555" }));
+    out.push(B.p(`• ${s}`, { size: 25, after: 40 }));
+    out.push(B.p(d, { size: 23, italics: true, indent: 360, after: 120, color: "555555" }));
   });
-  out.push(B.p("Aucune source internet n'a été utilisée pour l'élaboration de ce manuel : tous les contenus, le vocabulaire et les volumes horaires suivent fidèlement le programme d'études officiel T4 en vigueur à Madagascar.", { size: 20, italics: true, before: 80, after: 200 }));
+  out.push(B.p("Aucune source internet n'a été utilisée pour l'élaboration de ce manuel : tous les contenus, le vocabulaire et les volumes horaires suivent fidèlement le programme d'études officiel T4 en vigueur à Madagascar.", { size: 24, italics: true, before: 80, after: 200 }));
 
   return out;
 }

@@ -14,7 +14,7 @@ const DUREES = { I: "3 min", II: "22 min", III: "5 min" };
 // Un mot clé contenant une majuscule est recherché en respectant la casse
 // (pour ne pas colorer le verbe « est » quand on cherche « Est »).
 function pKw(text, keywords, opts = {}) {
-  const { size = 21, after = 100 } = opts;
+  const { size = 25, after = 100 } = opts;
   const kws = (keywords || []).filter(Boolean);
   if (!kws.length) return B.p(text, { size, after });
   const escaped = kws.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
@@ -53,9 +53,7 @@ function leconBlock(topic) {
     (sec.sous || []).forEach((ss) => {
       out.push(B.leconSousSousTitre(ss.titre));
       (ss.paras || []).forEach((tx) => out.push(pKw(tx, topic.motsCles)));
-      (ss.exemples || []).forEach((ex) => out.push(B.p("• " + ex, { size: 20, after: 60, indent: 480 })));
     });
-    (sec.exemples || []).forEach((ex) => out.push(B.p("• " + ex, { size: 20, after: 60, indent: 360 })));
   });
   // Scène semi-réaliste en illustration de fin de leçon
   if (topic.scene && topic.scene.mode === "illustration") {
@@ -72,17 +70,17 @@ function exercicesBlock(topic) {
   const out = [];
   const exos = [...(topic.appExos || []), ...(topic.evalExos || [])];
   const totalPts = exos.length * 5;
-  out.push(B.p("EXERCICES", { size: 24, bold: true, before: 160, after: 60 }));
+  out.push(B.p("EXERCICES", { size: 28, bold: true, before: 160, after: 60 }));
   exos.forEach((ex, i) => {
-    out.push(B.p(`Exercice ${i + 1} (${ex.points || 5} points)`, { size: 21, bold: true, after: 30 }));
-    out.push(B.p(ex.consigne, { size: 20, italics: true, after: 40 }));
-    (ex.items || []).forEach((it) => out.push(B.p(it, { size: 20, after: 30 })));
+    out.push(B.p(`Exercice ${i + 1} (${ex.points || 5} points)`, { size: 25, bold: true, after: 30 }));
+    out.push(B.p(ex.consigne, { size: 24, italics: true, after: 40 }));
+    (ex.items || []).forEach((it) => out.push(B.p(it, { size: 24, after: 30 })));
   });
-  out.push(B.p(`Total : ${totalPts} points`, { size: 20, bold: true, after: 120 }));
-  out.push(B.p("CORRIGÉ", { size: 22, bold: true, before: 120, after: 60 }));
+  out.push(B.p(`Total : ${totalPts} points`, { size: 24, bold: true, after: 120 }));
+  out.push(B.p("CORRIGÉ", { size: 26, bold: true, before: 120, after: 60 }));
   exos.forEach((ex, i) => {
-    out.push(B.p(`Corrigé de l'exercice ${i + 1} (${ex.points || 5} points) :`, { size: 20, bold: true, after: 30 }));
-    (ex.corrige || []).forEach((c) => out.push(B.p(c, { size: 20, after: 30, kwColor: B.CORRIGE })));
+    out.push(B.p(`Corrigé de l'exercice ${i + 1} (${ex.points || 5} points) :`, { size: 24, bold: true, after: 30 }));
+    (ex.corrige || []).forEach((c) => out.push(B.p(c, { size: 24, after: 30, kwColor: B.CORRIGE })));
   });
   return out;
 }
@@ -92,12 +90,12 @@ function ficheBlock(topic, prevQuestions) {
   const out = [];
   out.push(B.pageBreak());
   out.push(B.p(`SÉANCE ${topic.numero} / ${topic.total}`, {
-    size: 22, bold: true, align: AlignmentType.CENTER, after: 40,
+    size: 26, bold: true, align: AlignmentType.CENTER, after: 40,
   }));
   out.push(B.headingWithBookmark(topic.titre, `seance${topic.numero}`, {
-    size: 26, align: AlignmentType.CENTER, after: 160,
+    size: 30, align: AlignmentType.CENTER, after: 160,
   }));
-  out.push(B.p("FICHE DE PRÉPARATION", { size: 24, bold: true, align: AlignmentType.CENTER, after: 120 }));
+  out.push(B.p("FICHE DE PRÉPARATION", { size: 28, bold: true, align: AlignmentType.CENTER, after: 120 }));
 
   out.push(B.metaTable({
     discipline: "Géographie",

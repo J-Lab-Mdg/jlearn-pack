@@ -88,22 +88,14 @@ const borders = { top: thin, bottom: thin, left: thin, right: thin, insideHorizo
 
 // ── 1. Couverture ───────────────────────────────────────────────────────
 function coverPage() {
-  return [
-    B.pEmpty(28), B.pEmpty(28),
-    B.p("COLLECTION J-LEARN", { size: 26, bold: true, align: AlignmentType.CENTER, after: 300, color: "1F4E79" }),
-    B.pEmpty(20),
-    B.p("GÉOGRAPHIE", { size: 56, bold: true, align: AlignmentType.CENTER, after: 120, color: "C00000" }),
-    B.p("Classe de T5", { size: 32, bold: true, align: AlignmentType.CENTER, after: 400 }),
-    B.pEmpty(16),
-    B.p("Manuel complet : fiches de préparation, leçons,", { size: 24, align: AlignmentType.CENTER, after: 60 }),
-    B.p("exercices corrigés, sujets d'examen et annexes", { size: 24, align: AlignmentType.CENTER, after: 400 }),
-    B.pEmpty(16),
-    B.p("Conforme au programme d'études officiel T5 en vigueur à Madagascar", { size: 20, italics: true, align: AlignmentType.CENTER, after: 200 }),
-    B.p("Volume horaire officiel : 1 heure par semaine — séances de 30 minutes", { size: 20, italics: true, align: AlignmentType.CENTER, after: 200 }),
-    B.pEmpty(20),
-    B.p("Collection J-Learn — Manuels scolaires pour Madagascar", { size: 18, align: AlignmentType.CENTER, after: 60, color: "555555" }),
-    B.pageBreak(),
-  ];
+  // Couverture image pleine page, sur le modèle exact du manuel Anglais T10.
+  const coverPath = path.join(__dirname, "..", "..", "geo5_bookcover.png");
+  const out = [];
+  if (fs.existsSync(coverPath)) {
+    out.push(...B.imageBlock(coverPath, 602));
+  }
+  out.push(B.pageBreak());
+  return out;
 }
 
 // ── 2. Avant-propos ─────────────────────────────────────────────────────

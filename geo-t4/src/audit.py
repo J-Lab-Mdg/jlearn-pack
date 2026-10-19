@@ -128,16 +128,28 @@ for f in FAUTES:
 report("Aucune faute de la liste curated", not hits_fautes, " || ".join(hits_fautes[:6]))
 
 # ── 9. Images et légendes ──
-media = [n for n in z.namelist() if n.startswith("word/media/")]
+media = [n for n in z.namelist() if n.startswith("word/media/") and "." in n.rsplit("/", 1)[-1]]
 # scènes intégrées = champs "scene: {" dans les fichiers de données
 n_scenes = 0
 for _f in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data-*.js")):
     with open(_f, encoding="utf-8") as _fh:
         n_scenes += _fh.read().count("scene: {")
-expected_img = 64 + n_scenes
-report(f"{expected_img} images embarquées (64 schémas + {n_scenes} scènes)", len(media) == expected_img, str(len(media)))
+annexes_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "annexes.js")
+with open(annexes_path, encoding="utf-8") as _fh:
+    annexes_src = _fh.read()
+n_muettes = annexes_src.count('imgBlock("geot4_')
+expected_img = 1 + 60 + n_scenes + n_muettes
+report(f"{expected_img} images embarquées (1 couverture + 60 schémas + {n_scenes} scènes + {n_muettes} cartes)",
+       len(media) == expected_img, str(len(media)))
 n_leg = len(re.findall(r"Schéma|Carte|Tableau|Affiche|Document :|Illustration :|La rose des vents à compléter", full))
 report("Légendes d'images présentes", n_leg >= expected_img, f"occurrences : {n_leg}")
+report("8 consignes d'annexes cartographiques", full.count("Consigne :") == 8, str(full.count("Consigne :")))
+for m in ["La rose des vents à compléter", "S'orienter à Madagascar",
+          "Les grands reliefs à compléter", "Les cours d'eau et les lacs à compléter",
+          "Les climats à compléter", "Les formations végétales à compléter",
+          "La répartition de la population à compléter", "Les activités de la population à compléter"]:
+    report(f"Annexe « {m} »", m in full)
+report("Section « Sources »", "Sources" in full and "Loharanom-Baovao" not in full)
 
 # ── 10. R.A. ──
 report("R.A. présents (≥ 700)", full.count("R.A.") >= 700, str(full.count("R.A.")))

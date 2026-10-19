@@ -1,17 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Georgia, 'Times New Roman', serif">
-  <text x="550" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1F4E79">La carte de Madagascar à compléter</text>
-  <g transform="translate(350,70)">
-    <path d="M 205,15 C 235,50 265,90 268,135 C 300,160 322,180 315,205 C 305,225 285,230 282,255 C 300,290 305,330 295,370 C 288,420 275,455 250,500 C 235,535 210,565 188,588 C 172,570 178,545 172,515 C 160,470 170,430 158,390 C 148,350 160,315 150,275 C 142,240 155,205 148,170 C 142,130 160,90 178,55 C 186,35 195,22 205,15 Z" fill="#F5F5F5" stroke="#5D4037" stroke-width="4" stroke-linejoin="round"/>
-    
-  <g transform="translate(232,295) scale(1.2)">
-    <polygon points="0,-15 3.8,-5.3 14.3,-4.6 6.2,2 8.8,12.1 0,6.5 -8.8,12.1 -6.2,2 -14.3,-4.6 -3.8,-5.3" fill="#C00000" stroke="#7F0000" stroke-width="2"/>
-  </g>
-    <text x="262" y="290" font-size="26" font-weight="bold" fill="#C00000">……</text>
-    <text x="262" y="316" font-size="19" fill="#546E7A">la capitale ?</text>
-  </g>
-  <text x="555" y="46" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
-  <text x="555" y="708" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
-  <text x="292" y="380" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
-  <text x="818" y="380" text-anchor="middle" font-size="30" font-weight="bold" fill="#1F4E79">……</text>
-  <text x="550" y="712" text-anchor="middle" font-size="24" fill="#546E7A" font-style="italic"> </text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" font-family="Georgia, 'Times New Roman', serif"><defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1F4E79"/></marker></defs><text x="500" y="50" text-anchor="middle" font-size="30" font-weight="bold" fill="#1E7B34">Carte muette : s'orienter à Madagascar</text><path d="M378.8 105.1 L380.7 116.2 L384.9 124.7 L402.5 162.6 L403.5 183.5 L411.2 204.1 L418.6 220.0 L409.9 241.3 L394.5 228.5 L398.4 247.8 L384.6 280.9 L384.0 314.7 L364.4 373.9 L349.7 418.9 L339.1 450.0 L333.6 471.6 L324.0 507.4 L306.1 547.3 L247.5 566.3 L208.7 535.5 L199.7 490.5 L190.1 436.4 L219.3 386.7 L224.7 358.7 L211.2 311.7 L224.7 275.8 L330.8 195.7 L352.9 163.6 L372.1 125.4 Z" fill="#F1F8E9" stroke="#8D6E63" stroke-width="3" stroke-linejoin="round"/><ellipse cx="346.8" cy="151.4" rx="7" ry="5" fill="#F1F8E9" stroke="#8D6E63" stroke-width="2"/><ellipse cx="398.1" cy="272.4" rx="3.5" ry="10" fill="#F1F8E9" stroke="#8D6E63" stroke-width="2"/><polygon points="322.8,326.4 326.3,335.6 336.1,336.1 328.4,342.2 331.0,351.7 322.8,346.3 314.6,351.7 317.2,342.2 309.5,336.1 319.3,335.6" fill="#FFD54F" stroke="#C00000" stroke-width="3"/>
+  <text x="300" y="82" text-anchor="middle" font-size="27" fill="#1F4E79" font-weight="bold">……</text><text x="300" y="625" text-anchor="middle" font-size="27" fill="#1F4E79" font-weight="bold">……</text><text x="145" y="345" text-anchor="middle" font-size="27" fill="#1F4E79" font-weight="bold">……</text><text x="455" y="345" text-anchor="middle" font-size="27" fill="#1F4E79" font-weight="bold">……</text>
+  <rect x="520" y="105" width="430" height="365" rx="16" fill="#FFF8E1" stroke="#90A4AE" stroke-width="3"/><text x="735" y="145" text-anchor="middle" font-size="21" fill="#E65100" font-weight="bold">Consigne</text><text x="550" y="185" text-anchor="start" font-size="18" fill="#263238">1. Écris les quatre points cardinaux</text><text x="550" y="215" text-anchor="start" font-size="18" fill="#263238">autour de la carte.</text>
+  <text x="550" y="270" text-anchor="start" font-size="18" fill="#263238">2. L'étoile marque la capitale :</text><text x="550" y="305" text-anchor="start" font-size="18" fill="#263238">son nom est ………………………………</text><text x="550" y="360" text-anchor="start" font-size="18" fill="#263238">3. Entoure l'île de Nosy Be et</text><text x="550" y="390" text-anchor="start" font-size="18" fill="#263238">souligne l'île Sainte-Marie.</text>
+  <text x="735" y="600" text-anchor="middle" font-size="18" fill="#546E7A" font-style="italic">Aide-toi des séances 3 à 7.</text></svg>

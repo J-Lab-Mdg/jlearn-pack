@@ -1232,6 +1232,31 @@
       "id": "geo6_carte_muette_voies",
       "url": "/geo6_carte_muette_voies.png",
       "type": "image/png"
+    },
+    {
+      "id": "geot4_carte_muette_reliefs",
+      "url": "/geot4_carte_muette_reliefs.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_carte_muette_hydrographie",
+      "url": "/geot4_carte_muette_hydrographie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_carte_muette_vegetation",
+      "url": "/geot4_carte_muette_vegetation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_carte_muette_population",
+      "url": "/geot4_carte_muette_population.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geot4_carte_muette_activites",
+      "url": "/geot4_carte_muette_activites.png",
+      "type": "image/png"
     }
   ]
 }

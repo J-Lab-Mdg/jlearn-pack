@@ -123,10 +123,10 @@
 
 ## Annexes prévues (fin de manuel, version complète)
 1. Glossaire (reprend les définitions des leçons + glossaire officiel du PE T4)
-2. Cartes muettes (Madagascar : régions, climat) + rose des vents vierge à compléter
+2. Huit annexes cartographiques : rose des vents, orientation, reliefs, hydrographie, climats, végétation, population et activités (contour réel de Madagascar)
 3. Auto-évaluation (tableau de compétences Acquis / En cours / À revoir)
 4. Table des illustrations
-5. Bibliographie / webographie (« Loharanom-Baovao »)
+5. Bibliographie / webographie (« Sources »)
 
 ## Stack technique
 - Node.js + package `docx` (v9) — Traitement C (génération de zéro)

@@ -9,9 +9,16 @@ Source officielle : `PE RAPE/PE T4.pdf` (Programme d'Études T4, section GÉOGRA
 - ✅ **Unité 3 — Les éléments du paysage naturel** (Séances 25-38 : 12 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE3.docx` (contient Unités 1+2+3)
 - ✅ **Unité 4 — L'Environnement** (Séances 39-56 : 16 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE4.docx` (contient Unités 1+2+3+4)
 - ✅ **Unité 5 — L'Homme et les activités quotidiennes** (Séances 57-76 : 18 leçons + révision + sujet d'examen) → `output/Manuel_Geographie_T4_V1_UNITE5.docx`
-- ✅ **Fusion finale + annexes** (glossaire 47 termes dont glossaire officiel ★, cartes muettes ×3, auto-évaluation 16 compétences, table des illustrations 67 lignes, Loharanom-Baovao) → **`output/Manuel_Geographie_T4_JLearn.docx` + `.sha256` (LIVRABLE FINAL, 76 séances + annexes)**
+- ✅ **Fusion finale + annexes** (glossaire 47 termes dont glossaire officiel ★, cartes et activités muettes ×8, auto-évaluation 16 compétences, table des illustrations 67 lignes, Sources) → **`output/Manuel_Geographie_T4_JLearn.docx` + `.sha256` (LIVRABLE FINAL, 76 séances + annexes)**
 
 Le découpage complet des 76 séances est dans **PLAN-FINAL.md** (validé par l'utilisateur).
+
+## Build révisé — couverture et lisibilité
+- `output/Manuel_Geographie_T4_JLearn.docx` — **16 850 Ko**, 76 séances, **135 images**, audit **48/48** et vérifications structurelles ✅.
+- Couverture image identique à GEO T6 (`geo4_bookcover.png`) : seule la classe est passée de T6 à T4 ; image pleine page puis bloc titre de la collection.
+- Polices agrandies de **+2 pt** dans tout le manuel ; exemples à puces retirés du rendu des leçons ; section **« Sources »**.
+- **8 annexes cartographiques** : rose des vents, orientation, reliefs, hydrographie, climats, végétation, population et activités ; toutes les cartes utilisent le contour géographique réel de Madagascar, Nosy Be et Sainte-Marie.
+- SHA-256 : `937a8af144eb8948868ffe0daf00fe97f8f07db20813af19ff6f577f5b5940de`.
 
 ## Décisions verrouillées (ne pas re-demander)
 - Séances de **30 minutes** (conformes au PE : 1 h/semaine, 2 séances), ratio I/II/III = 3/22/5 min
@@ -30,7 +37,7 @@ geo-t4/
 ├── svg/make-svg-u3.js     # Schémas Unité 3 (12 schémas)
 ├── svg/make-svg-u4.js     # Schémas Unité 4 (16 schémas)
 ├── svg/make-svg-u5.js     # Schémas Unité 5 (18 schémas)
-├── svg/make-svg-annexes.js# Schémas annexes (cartes muettes, rose vierge)
+├── svg/make-svg-annexes.js# 8 annexes (rose des vents + 7 cartes au contour réel de Madagascar)
 ├── src/
 │   ├── builders.js        # Constructeurs docx (méta-table invisible, 6 colonnes, couleurs…)
 │   ├── seance-generator.js# topic → fiche I/II/III + leçon + EXERCICES notés
@@ -63,7 +70,7 @@ npm install docx sharp        # à la racine du dépôt (node_modules non versio
 node geo-t4/svg/make-svg.js   # régénérer les schémas si modifiés
 node geo-t4/src/assemble.js   # → output/Manuel_Geographie_T4_JLearn.docx (76 séances + annexes)
 python3 geo-t4/src/verifications.py  # structure XML
-python3 geo-t4/src/audit.py           # contenu (38 contrôles) — rapport : ../Audit-final-Manuel-Geographie-T4.md
+python3 geo-t4/src/audit.py           # contenu (48 contrôles) — rapport : ../Audit-final-Manuel-Geographie-T4.md
 ```
 
 Pour les unités suivantes : créer `data-uniteN.js` (même structure de topic que data-unite1.js),
@@ -80,7 +87,7 @@ Corrigé à cette occasion : items « a)/b) » du sujet d'examen de l'Unité 5 h
 Rapport : `Conformite-FRP-T4-Geographie.md` (racine du dépôt). 8 enrichissements intégrés
 (mangrove/savoka, éléments du climat, barrage hydroélectrique, plantes médicinales, causes naturelles
 cyclone/sécheresse, réchauffement climatique, réserves naturelles, 27 millions d'habitants, produits locaux) ;
-glossaire 51 termes ; FRP cité dans les Loharanom-Baovao.
+glossaire 51 termes ; FRP cité dans les Sources.
 
 ## Analyse du FRP T4 Fascicule 2 (document entier)
 📄 **9 octobre 2026 : analyse intégrale du FRP** (Maths p. 4-54 + ST p. 55-98 + Géo p. 99-127) :
