@@ -6,7 +6,7 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 
 ## Couverture — modèle Anglais T10
 - `geo5_bookcover.png` reprend exactement la première page de `Nos manuels/Anglais_T10_JLearn.pdf` ; seul le grand titre **« ANGLAIS T10 »** est remplacé par **« GÉOGRAPHIE T5 »**.
-- Le logo, « LESSON PLAN », le slogan, l'enseignante, le tableau et son contenu, les coordonnées et « Édition 2026 » restent inchangés.
+- Le logo, « LESSON PLAN », le slogan, l'enseignante, le décor, les coordonnées et « Édition 2026 » restent inchangés. Les six écritures du tableau sont traduites en français : « Contenu du PE », « Fiches de préparation », « Leçons », « Exercices », « Sujets d'examen et corrigés », « Chansons et fichiers audio (codes QR) ».
 - La couverture est intégrée en première page pleine (15,9 × 23,9 cm).
 
 ## État d'avancement
@@ -46,7 +46,7 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 - `src/audit.py` — Audit de contenu final (57 contrôles : séquençage, barèmes, corrigés, annexes, typographie, images, R.A.).
 - `svg/` — 66 schémas pédagogiques + 4 cartes muettes (`geo5_*.png`) : 14+8+27+4+13 leçons + 4 annexes — complet.
 - `scenes/` — 66 scènes semi-réalistes (une par leçon) — complet. (JPEG 900 px, q85), intégrées comme documents d'appui.
-- `output/Manuel_Geographie_T5_JLearn.docx` — Build final COMPLET (**17 663 Ko**, 76 séances + annexes, **137 images**, audit 57/57 et vérifications structurelles ✅ ; SHA-256 : `0c8fea08c557052ee9dbf6544f673b4351af32ad4762b94c511f52977e3bd2dc`).
+- `output/Manuel_Geographie_T5_JLearn.docx` — Build final COMPLET (**17 658 Ko**, 76 séances + annexes, **137 images**, audit 57/57 et vérifications structurelles ✅ ; SHA-256 : `897e765977f29172fe350c9deb0db79549bf9bde80f778f699660b6e579b1210`).
 
 ## Générer le manuel
 
