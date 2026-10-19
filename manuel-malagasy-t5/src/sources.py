@@ -88,6 +88,15 @@ SOURCES = {
          "physiologiques, intellectuels, sociaux et affectifs des enfants et concerne les mineurs en danger "
          "ou en risque de l\'être. »"]),
 
+    "wiki_dev_durable": (
+        "Wikip\u00e9dia (fr) \u2014 « D\u00e9veloppement durable », encyclop\u00e9die en ligne, licence CC BY-SA 4.0",
+        "https://fr.wikipedia.org/wiki/D\u00e9veloppement_durable",
+        ["\u00ab Le d\u00e9veloppement durable est un d\u00e9veloppement qui r\u00e9pond aux besoins du pr\u00e9sent sans "
+         "compromettre la capacit\u00e9 des g\u00e9n\u00e9rations futures de r\u00e9pondre aux leurs. \u00bb (rapport de la "
+         "Commission mondiale sur l'environnement et le d\u00e9veloppement)",
+         "\u00ab Le d\u00e9veloppement durable \u2026 est une conception du d\u00e9veloppement qui s'inscrit dans une "
+         "perspective de long terme et en int\u00e9grant les contraintes environnementales et sociales \u00e0 "
+         "l'\u00e9conomie. \u00bb"]),
 }
 
 # -----------------------------------------------------------------------------------------------

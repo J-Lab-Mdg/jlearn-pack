@@ -37,13 +37,37 @@ python3 -m pip install --quiet --target /home/user/pydeps python-docx Pillow
 - `src/builders.py` — bas niveau (rich/para/cell_add/no_borders/shade/add_image) + `meta_table()`,
   `deroulement()` (tableau 11×6, ligne `II.` fusionnée gridSpan=6 et grise), `seance_complet()`.
 - `src/data_pilote.py` — 1 fiche (Vakiteny, lohahevitra 1) = échantillon de validation.
-- `src/data_loha1.py` — les 4 fiches du lohahevitra 1 (réimporte la fiche Vakiteny, aucune duplication).
-- `src/verify.py` — 207 invariants sur le .docx **et** lint des données (durées, types d'exercices,
-  minima matière, lettrage, placeholders, interdits).
+- `src/data_loha1.py` — les 4 fiches du lohahevitra 1 (format long, clés explicites).
+- `src/data_loha2.py`, `src/data_loha3.py` — lohahevitra 2 et 3, **format compact** (clés courtes).
+- `src/sources.py` — `SOURCES = {clé: (référence, URL, [passages recopiés verbatim])}` : toute source
+  extérieure est stockée là, citée fiche par fiche (`loharano`/`so`) et recopiée après le corrigé.
+- `src/verify.py` — 209 invariants sur le .docx **et** lint des données (durées, types d'exercices,
+  minima matière, lettrage, placeholders, interdits, présence des blocs `LOHARANON-KEVITRA`).
 - `output/` — les .docx générés.
+
+## Checklist du format compact (à lire avant d'écrire un `data_lohaN.py`)
+
+Le vérificateur est strict : ces 8 points évitent tous les allers-retours rencontrés sur 2 et 3.
+
+1. Clés : `n, zt, lh, lt, tj, ns, du, fa, si, fo, di, fit, obs1, obsg, ka, tec, sy, fp, to, le, re, fe, so, cu`
+   (normalisées par `norm_all()` ; les clés longues du thème 1 restent acceptées).
+2. `le` : la leçon. Blocs `("h", titre)`, `("p", paragraphe)`, `("l", ligne)`, `("x", [liste])`,
+   `("d", [répliques])`. **Toute fiche doit contenir une section `("h", "Ny teny vaovao")`.**
+3. La fiche `Fanehoan-kevitra am-bava` doit contenir un **dialogue** (`("d", [...])`), sinon `verify` échoue.
+4. Chaque `Fanazaran-tena` (`fp`) et chaque exercice (`fe`) : **4 items minimum** ; `fe` porte `p` = 4 à 6.
+5. Jamais `→` dans une chaîne rendue ; jamais ` . ` ni ` , ` (finir l'item à compléter par le blanc,
+   sans point) ; jamais deux espaces consécutifs dans une même ligne.
+6. QCM : une option par item (`"a) …"`, `"b) …"`, `"d) …"`, `"e) …"`), lettrage **sans `c`**.
+7. Ne pas écrire `Lohateny :` dans le corps d'une fiche (réserve de l'étiquette de la méta-table) ;
+   remplacer par « Ny lohateny dia … ».
+8. `so` :liste de clés de `sources.py` ; **omettre la clé** si la fiche n'a pas de source web (ne pas
+   mettre `[]`). Le bloc est imprimé après les corrigés, plus une annexe finale en 3 parties.
 
 ## État
 
-Échantillon validé, `lohahevitra 1` (4 fiches) livré pour relecture du malagasy. Reste au pilote :
-`lohahevitra` 2 à 5 (16 fiches). Le propriétaire du projet relit le malagasy ; les corrections sont
-ensuite propagées par recherche/remplacement dans les données, puis re-vérifiées.
+Thèmes **1, 2 et 3** livrés (12 fiches), chacun `verify.py` → **TUATUA (209 invariants)**.
+Les 4 zana-taranja sont couverts par thème ; aucune image ; `Faharetany` vide ; corrigés sous chaque
+`Fanazaran-tena` ; `LOHARANON-KEVITRA` en fiche + annexe. Reste : thèmes **4 à 15** (`data_loha4.py` …
+`data_loha15.py`), puis assemblage en un seul `Manuel_Malagasy_T5_V1.docx` (60 fiches).
+Le propriétaire du projet relit le malagasy ; les corrections sont ensuite propagées par
+recherche/remplacement dans les données, puis re-vérifiées.
