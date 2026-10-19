@@ -22,6 +22,18 @@ for p in xml.split("</w:p>"):
     if t.strip():
         paras.append(t.strip())
 full = "\n".join(paras)
+
+# Protection J-Learn : filigrane et pied de page sont stockés hors de document.xml.
+protection_xml = "\n".join(
+    z.read(n).decode("utf-8")
+    for n in z.namelist()
+    if re.fullmatch(r"word/(?:header|footer)\d+\.xml", n)
+)
+rels_xml = "\n".join(
+    z.read(n).decode("utf-8")
+    for n in z.namelist()
+    if n.endswith(".rels")
+)
 full_low = full.lower()
 
 issues = []
@@ -141,8 +153,8 @@ for _f in glob.glob(os.path.join(SRC, "data-*.js")):
 with open(os.path.join(SRC, "annexes.js"), encoding="utf-8") as _fh:
     annex_src = _fh.read()
 n_muettes = len(re.findall(r'imgBlock\("geo6_', annex_src))
-expected_img = 1 + 66 + n_scenes + n_muettes
-report(f"{expected_img} images embarquées (1 couverture + 66 schémas + {n_scenes} scènes + {n_muettes} cartes muettes)",
+expected_img = 2 + 66 + n_scenes + n_muettes
+report(f"{expected_img} images embarquées (1 couverture + 1 QR officiel + 66 schémas + {n_scenes} scènes + {n_muettes} cartes muettes)",
        len(media) == expected_img, str(len(media)))
 n_leg = len(re.findall(r"Schéma|Carte|Tableau|Document :", full))
 report("Légendes d'images présentes", n_leg >= expected_img, f"occurrences : {n_leg}")
@@ -182,6 +194,14 @@ report("Vocabulaire officiel : « 24 régions » cité", full.count("24 régions
 for m in ["chef-lieu", "fokontany", "accroissement naturel", "mouvement pendulaire",
           "exode rural", "secteur informel", "bidonville", "devises", "écotourisme", "Dina"]:
     report(f"Vocabulaire officiel « {m} » présent", m.lower() in full_low)
+
+# ── Protection officielle J-Learn ──
+FACEBOOK_URL = "https://web.facebook.com/profile.php?id=61575599505051"
+report("Page « Authenticité et droits »", "AUTHENTICITÉ ET DROITS" in full and "ATTENTION AUX REVENTES NON AUTORISÉES" in full)
+report("QR et message de vérification officiels", "Scannez ce QR code" in full)
+report("Filigrane diagonal J-Learn", "COPIE OFFICIELLE J-LEARN" in protection_xml)
+report("Pied de page anti-revente", "Vente autorisée exclusivement via" in protection_xml)
+report("Lien Facebook officiel intégré", FACEBOOK_URL in rels_xml)
 
 # ── Résumé ──
 print(f"─ AUDIT DE CONTENU : {DOCX} " + "─" * 30)

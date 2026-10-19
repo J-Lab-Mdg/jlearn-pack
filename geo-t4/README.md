@@ -14,11 +14,18 @@ Source officielle : `PE RAPE/PE T4.pdf` (Programme d'Études T4, section GÉOGRA
 Le découpage complet des 76 séances est dans **PLAN-FINAL.md** (validé par l'utilisateur).
 
 ## Build révisé — couverture et lisibilité
-- `output/Manuel_Geographie_T4_JLearn.docx` — **16 850 Ko**, 76 séances, **135 images**, audit **48/48** et vérifications structurelles ✅.
+- `output/Manuel_Geographie_T4_JLearn.docx` — **16 857 Ko**, 76 séances, **136 images** (couverture + QR officiel inclus), audit **53/53** et vérifications structurelles ✅.
 - Couverture image identique à GEO T6 (`geo4_bookcover.png`) : seule la classe est passée de T6 à T4 ; image pleine page puis bloc titre de la collection.
 - Polices agrandies de **+2 pt** dans tout le manuel ; exemples à puces retirés du rendu des leçons ; section **« Sources »**.
 - **8 annexes cartographiques** : rose des vents, orientation, reliefs, hydrographie, climats, végétation, population et activités ; toutes les cartes utilisent le contour géographique réel de Madagascar, Nosy Be et Sainte-Marie.
-- SHA-256 : `937a8af144eb8948868ffe0daf00fe97f8f07db20813af19ff6f577f5b5940de`.
+- SHA-256 : `d0c955601adc4785556d1a99abda9f9932de022ed3b495fe28a5c5e73851031c`.
+
+## Protection anti-revente
+- Page **« Authenticité et droits »** après la couverture, avec avertissement public et QR code vérifiable.
+- Filigrane diagonal discret **« COPIE OFFICIELLE J-LEARN »** sur toutes les pages intérieures.
+- Pied de page anti-revente avec pagination et lien cliquable vers l'unique page de vente officielle : `https://web.facebook.com/profile.php?id=61575599505051`.
+- Composant commun : `jlearn-protection.js` ; QR officiel : `jlearn_facebook_officiel_qr.png`.
+- Pour la distribution commerciale, conserver le DOCX privé et privilégier un PDF exporté afin de rendre le retrait de ces protections plus difficile.
 
 ## Décisions verrouillées (ne pas re-demander)
 - Séances de **30 minutes** (conformes au PE : 1 h/semaine, 2 séances), ratio I/II/III = 3/22/5 min
@@ -70,7 +77,7 @@ npm install docx sharp        # à la racine du dépôt (node_modules non versio
 node geo-t4/svg/make-svg.js   # régénérer les schémas si modifiés
 node geo-t4/src/assemble.js   # → output/Manuel_Geographie_T4_JLearn.docx (76 séances + annexes)
 python3 geo-t4/src/verifications.py  # structure XML
-python3 geo-t4/src/audit.py           # contenu (48 contrôles) — rapport : ../Audit-final-Manuel-Geographie-T4.md
+python3 geo-t4/src/audit.py           # contenu (53 contrôles) — rapport : ../Audit-final-Manuel-Geographie-T4.md
 ```
 
 Pour les unités suivantes : créer `data-uniteN.js` (même structure de topic que data-unite1.js),

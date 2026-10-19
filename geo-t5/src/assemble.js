@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { Document, Packer, AlignmentType, Table, TableRow, WidthType, BorderStyle } = require("docx");
 const B = require("./builders");
+const Protect = require("../../jlearn-protection");
 const { generateSeanceDocContent } = require("./seance-generator");
 const U1A = require("./data-unite1");
 const U1B = require("./data-unite1b");
@@ -335,6 +336,7 @@ function examenSeance(ex) {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const children = [
     ...coverPage(),
+    ...Protect.authenticityPage(B, "Géographie T5"),
     ...avantPropos(),
     ...modeEmploi(),
     ...tableDesMatieres(),
@@ -370,7 +372,12 @@ function examenSeance(ex) {
       },
     },
     sections: [{
-      properties: { page: { margin: { top: 900, bottom: 900, left: 1000, right: 1000 } } },
+      properties: {
+        titlePage: true,
+        page: { margin: { top: 900, bottom: 900, left: 1000, right: 1000 } },
+      },
+      headers: Protect.headers(),
+      footers: Protect.footers(),
       children,
     }],
   });

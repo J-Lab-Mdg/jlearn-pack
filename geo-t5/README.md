@@ -9,6 +9,13 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 - Le titre supérieur est traduit en « FICHE DE PRÉPARATION ». Le logo, le slogan, l'enseignante, le décor, les coordonnées et « Édition 2026 » restent inchangés. Les six écritures du tableau sont également en français : « Contenu du PE », « Fiches de préparation », « Leçons », « Exercices », « Sujets d'examen et corrigés », « Chansons et fichiers audio (codes QR) ».
 - La couverture est intégrée en première page pleine (15,9 × 23,9 cm).
 
+## Protection anti-revente
+- Page **« Authenticité et droits »** après la couverture, avec avertissement public et QR code vérifiable.
+- Filigrane diagonal discret **« COPIE OFFICIELLE J-LEARN »** sur toutes les pages intérieures.
+- Pied de page anti-revente avec pagination et lien cliquable vers l'unique page de vente officielle : `https://web.facebook.com/profile.php?id=61575599505051`.
+- Composant commun : `jlearn-protection.js` ; QR officiel : `jlearn_facebook_officiel_qr.png`.
+- Pour la distribution commerciale, conserver le DOCX privé et privilégier un PDF exporté afin de rendre le retrait de ces protections plus difficile.
+
 ## État d'avancement
 
 | Élément | État |
@@ -22,7 +29,7 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 | **Unité 5 — La vie rurale et la vie urbaine (S62-S76)** | ✅ **Terminée et intégrée au build** |
 | **66/66 leçons + 5 révisions + 5 sujets d'examen = 76 numéros** | ✅ **COMPLET** |
 | **Annexes (glossaire 55 termes, 4 cartes muettes, auto-évaluation, table des illustrations, sources)** | ✅ **Terminées et intégrées au build** |
-| Audit complet (audit.py) | ✅ **57/57 contrôles OK** |
+| Audit complet (audit.py) | ✅ **62/62 contrôles OK** |
 
 ## Contenu produit
 
@@ -43,10 +50,10 @@ Manuel scolaire de Géographie pour la classe de **T5** (Madagascar), conforme a
 - `src/data-unite5-rev.js` — S75 révision (20 notions + 15 questions) et S76 sujet d'examen final (4 exercices × 5 pts, corrigé).
 - `src/assemble.js` — Assemblage du manuel complet (couverture pleine page modèle Anglais T10, avant-propos, mode d'emploi, TdM interactive, tableaux de bord, séances, annexes).
 - `src/annexes.js` — Annexes : glossaire (55 termes du vocabulaire T5), 4 cartes muettes (planisphère, océan Indien, Madagascar, régions naturelles), auto-évaluation par compétences (23 items sur 5 unités), table des illustrations (66 leçons + annexe), Loharanom-Baovao (sources).
-- `src/audit.py` — Audit de contenu final (57 contrôles : séquençage, barèmes, corrigés, annexes, typographie, images, R.A.).
+- `src/audit.py` — Audit de contenu final (62 contrôles : séquençage, barèmes, corrigés, annexes, typographie, images, R.A.).
 - `svg/` — 66 schémas pédagogiques + 4 cartes muettes (`geo5_*.png`) : 14+8+27+4+13 leçons + 4 annexes — complet.
 - `scenes/` — 66 scènes semi-réalistes (une par leçon) — complet. (JPEG 900 px, q85), intégrées comme documents d'appui.
-- `output/Manuel_Geographie_T5_JLearn.docx` — Build final COMPLET (**17 645 Ko**, 76 séances + annexes, **137 images**, audit 57/57 et vérifications structurelles ✅ ; SHA-256 : `c3c761ba1510cce611039b2e5a11befcaccac237305abbafba89fa066b14a4c6`).
+- `output/Manuel_Geographie_T5_JLearn.docx` — Build final COMPLET protégé (**17 651 Ko**, 76 séances + annexes, **138 images** avec QR officiel, audit 62/62 et vérifications structurelles ✅ ; SHA-256 : `925543f88a506374ac5379946e311a038b9e157d431e40f97c5c00f23d9266d2`).
 
 ## Générer le manuel
 

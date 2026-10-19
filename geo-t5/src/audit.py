@@ -23,6 +23,18 @@ for p in xml.split("</w:p>"):
         paras.append(t.strip())
 full = "\n".join(paras)
 
+# Protection J-Learn : filigrane et pied de page sont stockés hors de document.xml.
+protection_xml = "\n".join(
+    z.read(n).decode("utf-8")
+    for n in z.namelist()
+    if re.fullmatch(r"word/(?:header|footer)\d+\.xml", n)
+)
+rels_xml = "\n".join(
+    z.read(n).decode("utf-8")
+    for n in z.namelist()
+    if n.endswith(".rels")
+)
+
 issues = []
 ok = []
 
@@ -135,8 +147,8 @@ for _f in glob.glob(os.path.join(SRC, "data-*.js")):
 with open(os.path.join(SRC, "annexes.js"), encoding="utf-8") as _fh:
     annex_src = _fh.read()
 n_muettes = len(re.findall(r'imgBlock\("geo5_', annex_src))
-expected_img = 1 + 66 + n_scenes + n_muettes
-report(f"{expected_img} images embarquées (1 couverture + 66 schémas + {n_scenes} scènes + {n_muettes} cartes muettes)",
+expected_img = 2 + 66 + n_scenes + n_muettes
+report(f"{expected_img} images embarquées (1 couverture + 1 QR officiel + 66 schémas + {n_scenes} scènes + {n_muettes} cartes muettes)",
        len(media) == expected_img, str(len(media)))
 n_leg = len(re.findall(r"Schéma|Carte|Tableau|Document :|Le planisphère à compléter|L'océan Indien à compléter", full))
 report("Légendes d'images présentes", n_leg >= expected_img, f"occurrences : {n_leg}")
@@ -168,6 +180,14 @@ report("Sommaire : liens vers les 5 annexes", all(a in xml for a in
 
 # ── 11. R.A. ──
 report("R.A. présents (≥ 760)", full.count("R.A.") >= 760, str(full.count("R.A.")))
+
+# ── Protection officielle J-Learn ──
+FACEBOOK_URL = "https://web.facebook.com/profile.php?id=61575599505051"
+report("Page « Authenticité et droits »", "AUTHENTICITÉ ET DROITS" in full and "ATTENTION AUX REVENTES NON AUTORISÉES" in full)
+report("QR et message de vérification officiels", "Scannez ce QR code" in full)
+report("Filigrane diagonal J-Learn", "COPIE OFFICIELLE J-LEARN" in protection_xml)
+report("Pied de page anti-revente", "Vente autorisée exclusivement via" in protection_xml)
+report("Lien Facebook officiel intégré", FACEBOOK_URL in rels_xml)
 
 # ── Résumé ──
 print(f"─ AUDIT DE CONTENU : {DOCX} " + "─" * 30)

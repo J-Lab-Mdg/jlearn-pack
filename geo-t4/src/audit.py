@@ -23,6 +23,18 @@ for p in xml.split("</w:p>"):
         paras.append(t.strip())
 full = "\n".join(paras)
 
+# Protection J-Learn : filigrane et pied de page sont stockés hors de document.xml.
+protection_xml = "\n".join(
+    z.read(n).decode("utf-8")
+    for n in z.namelist()
+    if re.fullmatch(r"word/(?:header|footer)\d+\.xml", n)
+)
+rels_xml = "\n".join(
+    z.read(n).decode("utf-8")
+    for n in z.namelist()
+    if n.endswith(".rels")
+)
+
 issues = []
 ok = []
 
@@ -138,8 +150,8 @@ annexes_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "annexes
 with open(annexes_path, encoding="utf-8") as _fh:
     annexes_src = _fh.read()
 n_muettes = annexes_src.count('imgBlock("geot4_')
-expected_img = 1 + 60 + n_scenes + n_muettes
-report(f"{expected_img} images embarquées (1 couverture + 60 schémas + {n_scenes} scènes + {n_muettes} cartes)",
+expected_img = 2 + 60 + n_scenes + n_muettes
+report(f"{expected_img} images embarquées (1 couverture + 1 QR officiel + 60 schémas + {n_scenes} scènes + {n_muettes} cartes)",
        len(media) == expected_img, str(len(media)))
 n_leg = len(re.findall(r"Schéma|Carte|Tableau|Affiche|Document :|Illustration :|La rose des vents à compléter", full))
 report("Légendes d'images présentes", n_leg >= expected_img, f"occurrences : {n_leg}")
@@ -153,6 +165,14 @@ report("Section « Sources »", "Sources" in full and "Loharanom-Baovao" not in 
 
 # ── 10. R.A. ──
 report("R.A. présents (≥ 700)", full.count("R.A.") >= 700, str(full.count("R.A.")))
+
+# ── Protection officielle J-Learn ──
+FACEBOOK_URL = "https://web.facebook.com/profile.php?id=61575599505051"
+report("Page « Authenticité et droits »", "AUTHENTICITÉ ET DROITS" in full and "ATTENTION AUX REVENTES NON AUTORISÉES" in full)
+report("QR et message de vérification officiels", "Scannez ce QR code" in full)
+report("Filigrane diagonal J-Learn", "COPIE OFFICIELLE J-LEARN" in protection_xml)
+report("Pied de page anti-revente", "Vente autorisée exclusivement via" in protection_xml)
+report("Lien Facebook officiel intégré", FACEBOOK_URL in rels_xml)
 
 # ── Résumé ──
 print(f"─ AUDIT DE CONTENU : {DOCX} " + "─" * 30)

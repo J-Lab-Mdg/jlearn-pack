@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const { Document, Packer, AlignmentType, Table, TableRow, WidthType, BorderStyle, Paragraph, TextRun } = require("docx");
 const B = require("./builders");
+const Protect = require("../../jlearn-protection");
 const { generateSeanceDocContent } = require("./seance-generator");
 const U1 = require("./data-unite1");
 const U1REV = require("./data-unite1-rev");
@@ -111,6 +112,7 @@ function coverPage() {
   out.push(B.p("Programme d'Études — 5 unités thématiques", { size: 24, align: AlignmentType.CENTER, after: 80 }));
   out.push(B.p("Fiches de préparation · Leçons · Exercices corrigés · Sujets d'examen corrigés", { size: 22, align: AlignmentType.CENTER, after: 80 }));
   out.push(B.p("Madagascar", { size: 22, align: AlignmentType.CENTER, after: 120 }));
+  out.push(B.pageBreak());
   return out;
 }
 
@@ -349,6 +351,7 @@ function examenSeance(ex) {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const children = [
     ...coverPage(),
+    ...Protect.authenticityPage(B, "Géographie T4"),
     ...avantPropos(),
     ...modeEmploi(),
     ...tableDesMatieres(),
@@ -382,7 +385,12 @@ function examenSeance(ex) {
       },
     },
     sections: [{
-      properties: { page: { margin: { top: 900, bottom: 900, left: 1000, right: 1000 } } },
+      properties: {
+        titlePage: true,
+        page: { margin: { top: 900, bottom: 900, left: 1000, right: 1000 } },
+      },
+      headers: Protect.headers(),
+      footers: Protect.footers(),
       children,
     }],
   });

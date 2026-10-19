@@ -17,7 +17,14 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 | **Unité 5 — Les grandes zones économiques et les activités économiques (S51-S66)** | ✅ **Terminée et intégrée au build** |
 | **Unité 6 — Le village écologique (S67-S78)** | ✅ **Terminée et intégrée au build** |
 | **Annexes (glossaire, cartes muettes, auto-évaluation, table des illustrations, sources)** | ✅ **Terminées et intégrées au build** |
-| **Audit final** | ✅ **audit.py : 67/67 contrôles OK ; verifications.py : ✅** |
+| **Audit final** | ✅ **audit.py : 76/76 contrôles OK ; verifications.py : ✅** |
+
+## Protection anti-revente
+- Page **« Authenticité et droits »** après la couverture, avec avertissement public et QR code vérifiable.
+- Filigrane diagonal discret **« COPIE OFFICIELLE J-LEARN »** sur toutes les pages intérieures.
+- Pied de page anti-revente avec pagination et lien cliquable vers l'unique page de vente officielle : `https://web.facebook.com/profile.php?id=61575599505051`.
+- Composant commun : `jlearn-protection.js` ; QR officiel : `jlearn_facebook_officiel_qr.png`.
+- Pour la distribution commerciale, conserver le DOCX privé et privilégier un PDF exporté afin de rendre le retrait de ces protections plus difficile.
 
 ## Contenu produit
 
@@ -41,10 +48,10 @@ Manuel scolaire de Géographie pour la classe de **T6** (Madagascar), conforme a
 - `svg/` — 66 schémas pédagogiques (`geo6_*.png`) : U1 (8) + U2 (14) + U3 (10) + U4 (14) + U5 (14) + U6 (10 : notion, organisation juridique, Dina, modes de vie et loisirs, activités, habitation, infrastructures et sites, topographie, traditions, maquette comparée).
 - `scenes/` — 66 scènes semi-réalistes (une par leçon, JPEG 900 px q88) : 8 (U1) + 14 (U2) + 10 (U3) + 10 (U4) + 14 (U5) + 10 (U6).
 - `src/annexes.js` — Annexes : glossaire (64 termes du vocabulaire officiel T6), 8 cartes muettes, auto-évaluation par compétences (6 unités, 28 compétences), table des illustrations (66 leçons + annexe), Sources (programme d'études officiel T6).
-- `src/audit.py` — Audit de contenu : séquençage, unités, fiches, barèmes des 6 sujets d'examen, corrigés, mots interdits, typographie, images, annexes (8 cartes), vocabulaire officiel — 71 contrôles.
+- `src/audit.py` — Audit de contenu : séquençage, unités, fiches, barèmes des 6 sujets d'examen, corrigés, mots interdits, typographie, images, annexes (8 cartes), vocabulaire officiel et protection anti-revente — 76 contrôles.
 - `svg/make-svg-annexes.js` — 8 cartes muettes (`geo6_carte_muette_*`) à contour réel de Madagascar (projection lat/lon réelle, îles Nosy Be et Sainte-Marie) : les 24 régions (badges sur les chefs-lieux), la répartition de la population, les grandes villes, les ressources naturelles, les zones économiques, l'exode rural, les voies de communication, le village écologique à légender.
-- `output/Manuel_Geographie_T6_JLearn.docx` — **Build V9 — édition complète** (18 682 Ko) : couverture identique au manuel SVT T9 de la collection (image de couverture pleine page `geo6_bookcover.png` + bloc titre Collection J-Learn / GÉOGRAPHIE T6 en 72 pt bicolore / Programme d'Études — 6 unités thématiques / Madagascar) ; polices +2 pt ; leçons sans puces d'exemples ; 8 cartes muettes à contour réel de Madagascar ; section « Sources » ; 78/78 numéros ; 72 fiches ; 141 images ; 66 documents d'appui ; 0 « à paraître » ; verifications.py ✅ ; audit.py 71/71 ✅.
-- Empreinte SHA-256 du build V9 : `6d62a801d7aadcbd400cefca9f781855efd9e758751b22eb3e98f1be6cbdf755`.
+- `output/Manuel_Geographie_T6_JLearn.docx` — **Build V10 — édition complète protégée** (18 688 Ko) : couverture image ; polices +2 pt ; leçons sans puces d’exemples ; 8 cartes muettes au contour réel de Madagascar ; section « Sources » ; page d’authenticité, QR Facebook officiel, filigrane et pied de page anti-revente ; 78/78 numéros ; 72 fiches ; 142 images ; 66 documents d’appui ; verifications.py ✅ ; audit.py 76/76 ✅.
+- Empreinte SHA-256 du build V10 : `524057f617184706fd2e43a7e61ba219da18bcb7e5838465018d08b28c2d4dea`.
 
 ## Générer le manuel
 
