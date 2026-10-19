@@ -6,6 +6,14 @@ Historique des changements du skill, version par version. Sert surtout à **mett
 
 ---
 
+## Corrections de langue issues de la relecture T5 (19/10 — échantillon + lohahevitra 1)
+
+Appliquées aux données ET consignées dans `fiabilite-malgache.md` §4 pour ne jamais revenir dessus :
+`miteny`/`itenenana` (jamais « resena ») · `lamosin-tanana`/`lanin-tanana` (jamais « lamosina » seul) ·
+`tongotra` (au lieu de « atidoha ») · `tsy azo famelezana` (au lieu de « tsy azo tohina ») ·
+`tsy hangidy ny kibo` (au lieu de « manetry ny kibo ») · une seule ligne « Fanazaran-tena » par
+exercice avec ses `VALINY` immédiatement après · lettrage des QCM sans `c` (a b d e).
+
 ## v21
 
 - **`vocabulaire-langues.md` resynchronisé sur la structure I / II (6 sous-étapes) / III** dans les 3 gabarits (MG, FR, EN) —

@@ -198,16 +198,16 @@ FICHE_TENY = {
     "fitaovana_fandinihana": "Fehezanteny voasoratra eo amin'ny tabilao",
     "famakafakana": [
         ("Ao amin'ny « tanako », iza no tompon'ny tanana ?", "Izay miteny (aho)."),
-        ("Ao amin'ny « tananao » kosa ?", "Izay resena (ianao)."),
-        ("Ary ao amin'ny « tanany » ?", "Izay tsy miteny ary tsy resena (izy)."),
-        ("Inona no ampiasaina rehefa ao anaty izay resena ny olona miteny ?",
+        ("Ao amin'ny « tananao » kosa ?", "Izay itenenana (ianao)."),
+        ("Ary ao amin'ny « tanany » ?", "Izay tsy miteny sady tsy itenenana (izy)."),
+        ("Inona no ampiasaina rehefa ao anaty izay itenenana ny olona miteny ?",
          "**-ntsika** : « ny tanan**antsika** »."),
-        ("Inona kosa rehefa tsy ao anaty izay resena ny olona miteny ?",
+        ("Inona kosa rehefa tsy ao anaty izay itenenana ny olona miteny ?",
          "**-nay** : « ny tanan**ay** »."),
     ],
     "tech_famakafakana": "Famantarana ny fitsipika / Asa iombonana",
     "fandravonana": "ny mpisolo tena tampisaka dia teny kely tafangora amin'ny faran'ny anarana ilazana "
-                    "ny tompony : **-ko** ho an'ny miteny, **-nao** ho an'ny resena, **-ny** ho an'ny "
+                    "ny tompony : **-ko** ho an'ny miteny, **-nao** ho an'ny itenenana, **-ny** ho an'ny "
                     "fahatelo ; **-ntsika** sy **-nareo** no ampiasaina rehefa ao isika na ianareo, fa "
                     "**-nay** ho an'ny « izahay » ; matetika miova ny faran'ny anarana rehefa tafangora "
                     "izy, ohatra ny hoe ny reny no lasa reniko.",
@@ -217,10 +217,10 @@ FICHE_TENY = {
                    "d) tanana + izahay : ………………", "e) tanana + isika : ………………"],
          "cor": ["a) tananao", "b) tanany", "d) tananay", "e) tanantsika"]},
         {"c": "Safio valiny mety.",
-         "items": ["1) Raha ao anaty izay resena ny olona miteny, ny ampahany ampiasaina dia …",
+         "items": ["1) Raha ao anaty izay itenenana ny olona miteny, ny ampahany ampiasaina dia …",
                    "a) -nay b) -ny d) -ntsika e) -ko",
                    "2) Ny « -ko » dia mampiseho ny tompon'ny …",
-                   "a) olona resena b) olona miteny d) olona fahatelo e) olona marobe",
+                   "a) olona itenenana b) olona miteny d) olona fahatelo e) olona marobe",
                    "3) « Ny fianarana … dia sarobidine » (izahay) : ny teny mety dia …",
                    "a) fianaranao b) fianarako d) fianaranay e) fianarantsika",
                    "4) Izay marina amin'ireto dia …",
@@ -230,9 +230,9 @@ FICHE_TENY = {
     ],
     "tombana": [
         ("Inona ny mpisolo tena tampisaka ho an'ny olona miteny ?", "-ko : « ny tanako »."),
-        ("Ho an'izay resena kosa ?", "-nao : « ny tananao »."),
+        ("Ho an'izay itenenana kosa ?", "-nao : « ny tananao »."),
         ("Inona no mampiavaka ny « -nay » sy ny « -ntsika » ?",
-         "Ny -nay dia an'ny izahay (tsy ao izay resena), ny -ntsika dia an'ny isika (ao izay resena)."),
+         "Ny -nay dia an'ny izahay (tsy ao izay itenenana), ny -ntsika dia an'ny isika (ao izay itenenana)."),
         ("Amboary fehezanteny iray mampiasa ny « -ntsika ».",
          "Ohatra : Madio ny tanantsika, ry namako."),
     ],
@@ -248,7 +248,7 @@ FICHE_TENY = {
         ("x", ["Diso : Ny **tananoko** dia maloto. Marina : Ny **tanako** dia maloto. "
                "(fitsipika : tsy misy mpisolo roa miaraka)",
                "Diso : Maloto ny **tananay**, ry namako! Marina : Maloto ny **tanantsika**, ry namako ! "
-               "(fampiasana : ao anaty « isika » ny resena, ka -ntsika ilay ampiasaina)",
+               "(fampiasana : ao anaty « isika » ny itenenana, ka -ntsika ilay ampiasaina)",
                "Diso : Ny **tananako** dia maloto. Marina : Ny **tanako** dia maloto. "
                "(tsipelina : ny anarana mahatapitra amin'ny -a, ka ny -a iray no levona)"]),
         ("h", "Ny teny vaovao"),
@@ -261,8 +261,8 @@ FICHE_TENY = {
         "manomboka amin'ireo : « Manao ahoana, ry namako ? ».",
     ],
     "retenir": [
-        "-ko : an'ny miteny ; -nao : an'ny resena ; -ny : an'ny fahatelo.",
-        "-ntsika = isika (ao izay resena) ; -nay = izahay (tsy ao izay resena).",
+        "-ko : an'ny miteny ; -nao : an'ny itenenana ; -ny : an'ny fahatelo.",
+        "-ntsika = isika (ao izay itenenana) ; -nay = izahay (tsy ao izay itenenana).",
         "Tafangora amin'ny anarana ireo, ka matetika miova ny farany : ny reny no lasa reniko.",
     ],
     "fanazaran_tenay": [
@@ -279,7 +279,7 @@ FICHE_TENY = {
          "items": ["1) « Ny soratra … dia very. » (izy)", "a) -ko b) -ny d) -nao e) -nay",
                    "2) Ny « -nareo » dia mampiseho ny …",
                    "a) izahay b) ianareo d) isika e) aho",
-                   "3) Izay mampiseho ny olona resena dia …", "a) -nao b) -ko d) -ny e) -nay",
+                   "3) Izay mampiseho ny olona itenenana dia …", "a) -nao b) -ko d) -ny e) -nay",
                    "4) « Ny … » hanehoana ny tanan'ny reny : a) ny tanan'ny reny b) ny tanareny "
                    "d) ny tanany e) ny tananony"],
          "cor": ["1) **b) -ny**", "2) **b) ianareo**", "3) **a) -nao**", "4) **a) ny tanan'ny reny**"]},

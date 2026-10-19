@@ -90,6 +90,10 @@ Erreurs réelles corrigées sur des manuels précédents — à ne pas reproduir
 | Alphabet complet (a, b, c…) pour lettrer un QCM/appariement | a, b, d, e, f, g, h, i, j, k, l, m, n, o, p, r, s, t, v, z | L'alphabet malgache n'a pas de C, Q, U, W, X |
 | Zana-taranja ajouté par défaut à toute matière | Vérifier au cas par cas | Certaines matières (ex. Tantara) n'ont pas de sous-discipline |
 | Isika utilisé pour tout "nous" | Distinguer isika (inclusif) / izahay (exclusif) | Les deux se traduisent par "nous" mais ne sont pas interchangeables |
+| « resena » pour désigner l'interlocuteur dans une leçon de grammaire | **miteny** (le locuteur) / **itenenana** (l'interlocuteur) | Choix terminologique validé par le propriétaire du projet (T5) : « resena » n'est pas employé pour nommer les personnes de la parole |
+| « lamosina » employé seul pour la main | **lamosin-tanana** (dos de la main) / **lanin-tanana** (paume) | « lamosina » seul = le dos ; pour la main il faut le composé, et la paume est « lanina » (comme « lanim-ponitra » pour la plante du pied) |
+| « atidoha » pour « les pieds/les jambes » dans une consigne d'hygiène | **tongotra** | « atidoha » désigne la jambe/le mollet ; pour le lavage corps+extrémités, le terme usuel est « tongotra » |
+| « Takiana : ilaina, tsy azo tohina » | **tsy azo famelezana** | « tohina » ne rend pas « négliger » ; la tournure usuelle est « tsy azo famelezana » |
 | Traduction mot à mot d'une phrase française | Analyser la construction complète (voix, élément mis en avant) avant de traduire | L'ordre des mots et la voix verbale du malgache ne suivent pas le schéma français |
 
 **Cette liste s'enrichit à chaque nouvelle erreur repérée** — voir section 5.
