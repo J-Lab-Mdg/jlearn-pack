@@ -60,8 +60,16 @@ Le vérificateur est strict : ces 8 points évitent tous les allers-retours renc
 6. QCM : une option par item (`"a) …"`, `"b) …"`, `"d) …"`, `"e) …"`), lettrage **sans `c`**.
 7. Ne pas écrire `Lohateny :` dans le corps d'une fiche (réserve de l'étiquette de la méta-table) ;
    remplacer par « Ny lohateny dia … ».
-8. `so` :liste de clés de `sources.py` ; **omettre la clé** si la fiche n'a pas de source web (ne pas
+8. `so` : liste de clés de `sources.py` ; **omettre la clé** si la fiche n'a pas de source web (ne pas
    mettre `[]`). Le bloc est imprimé après les corrigés, plus une annexe finale en 3 parties.
+9. Dans une liste `("x", [...])`, **ne pas commencer les items par `—`** : le gabarit ajoute déjà le
+   tiret (sinon « — — Diso : … »).
+10. Quand un item finit par `)`, la fermeture correcte est `)"]),` — et **jamais** `")]),` (piège
+    rencontré trois fois : il casse `ast.parse`, donc le build, sans rien écrire).
+11. Un item à compléter ne doit **jamais** être suivi de ` . ` ou ` , ` : « ……………… » seul, ou
+    « ……………… dia … ».
+12. `Fandravonana` : ne pas écrire « Koa, » dans la donnée, le gabarit le place déjà (sinon le
+    vérificateur compte `NFICHE + 1`).
 
 ## État
 

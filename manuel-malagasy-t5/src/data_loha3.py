@@ -92,11 +92,11 @@ FICHE_BAVA = {
         ("h", "Teny enti-manohana hevitra"),
         ("p", "Mety amin'ny filazana hevitra: **satria**, **noho izany**, **ohatra**, **araka izany**."),
         ("h", "Ohatra diso sy ny fanitsiana"),
-        ("x", ["— Diso : « Ny ala dia tsy ilaina. » — Marina : « Ny ala dia ilaina, **satria** mitahiry "
+        ("x", ["Diso : « Ny ala dia tsy ilaina. » — Marina : « Ny ala dia ilaina, **satria** mitahiry "
                "rano ny tany. » (hevi-drery : ohatra mifandray amin'ny antony)",
-               "— Diso : « Mba lanity ! » (tsy misy teny mpandamina) — Marina : « **Azafady**, aza "
+               "Diso : « Mba lanity ! » (tsy misy teny mpandamina) — Marina : « **Azafady**, aza "
                "ariany ny fako eto. » (teny amim-panajana)",
-               "— Diso : « rehefa maina ny renirano, dia … » (tsy vita) — Marina : « **Rehefa** maina ny "
+               "Diso : « rehefa maina ny renirano, dia … » (tsy vita) — Marina : « **Rehefa** maina ny "
                "renirano, dia mitondra rano avy any an-dakana ny mpinamana. »"]),
         ("h", "Ny teny vaovao"),
         ("p", "**harena** : ny fananana sarobidy; **fiarovana** : ny fomba tsy hahatonga ny ratra; "
@@ -315,11 +315,11 @@ FICHE_TENY = {
               "tsirairay dia hafa amin'ny hafa. Amin'ny teny frantsay : « différent / divers » et « chacun "
               "est différent »."),
         ("h", "Ohatra diso sy ny fanitsiana"),
-        ("x", ["— Diso : « Ny zavatra **samy hafa** ao amin'ny ala dia sarobidy. » (hevitro : maro "
+        ("x", ["Diso : « Ny zavatra **samy hafa** ao amin'ny ala dia sarobidy. » (hevitro : maro "
                "karazana) — Marina : « Ny zavatra **samihafa** ao amin'ny ala dia sarobidy. »",
-               "— Diso : « **Samihafa** asa nanan'ireo : ny iray mamboly, ny iray mijono. » — Marina : "
+               "Diso : « **Samihafa** asa nanan'ireo : ny iray mamboly, ny iray mijono. » — Marina : "
                "« **Samy hafa** asa nanan'ireo … » (izay tsirairay) ",
-               "— Diso : « Ny ala sy ny tany fambolen-tsakafo vaovao dia renifameno. » — Marina : « Ny ala dia "
+               "Diso : « Ny ala sy ny tany fambolen-tsakafo vaovao dia renifameno. » — Marina : « Ny ala dia "
                "**zana-pameno** amin'ny harena voajanahary. »"]),
         ("h", "Ny teny vaovao"),
         ("p", "**renifameno** : teny iombonana; **zana-pameno** : teny manokana; **sokajy** : ampahany "
@@ -427,11 +427,11 @@ FICHE_TSORA = {
                "U, W, X.",
                "**Mari-piatoana** : teboka, baraingo, tsoraka, faingo, teboka roa, farango sosona."]),
         ("h", "Ohatra diso sy ny fanitsiana"),
-        ("x", ["— Diso : « Ny fako maina, mando ary loto dia zavatra samy hafa. » (hevitro : maro "
+        ("x", ["Diso : « Ny fako maina, mando ary loto dia zavatra samy hafa. » (hevitro : maro "
                "karazana) — Marina : « … zavatra **samihafa**. »",
-               "— Diso : « misy karatra fizarana ho an ny kilasy » — Marina : « … ho **an'ny** kilasy » "
+               "Diso : « misy karatra fizarana ho an ny kilasy » — Marina : « … ho **an'ny** kilasy » "
                "(mpanamarika ny toerana : « an'ny », fa tsy « an ny »)",
-               "— Diso : Lahatsoratra tsy misy teboka eo amin'ny faran'ny fehezanteny — Marina : "
+               "Diso : Lahatsoratra tsy misy teboka eo amin'ny faran'ny fehezanteny — Marina : "
                "**teboka** isaky ny fehezanteny (mari-piatoana)"]),
         ("h", "Ny teny vaovao"),
         ("p", "**fako maina** : tariby sy takelaka; **fako mando** : sisa-tsakafo; **fako loto** : vy sy "

@@ -109,6 +109,16 @@ SOURCES = {
          "d\u00e9favorable un ou plusieurs individus. \u00bb",
          "\u00ab Cet individu est dit victime d'une discrimination lorsqu'il est, dans une situation "
          "identique, trait\u00e9 diff\u00e9remment des autres sans motif l\u00e9gitime. \u00bb"]),
+    "wiki_demokrasia": (
+        "Wikipédia (fr) — « Démocratie », encyclopédie en ligne, licence CC BY-SA 4.0",
+        "https://fr.wikipedia.org/wiki/D%C3%A9mocratie",
+        ["« La démocratie … est, à l'origine, un régime politique dans lequel le pouvoir appartient au "
+         "peuple, qui l'exerce directement ou par l'intermédiaire de représentants élus. Elle repose sur "
+         "des principes fondamentaux tels que la participation citoyenne, la liberté d'expression, "
+         "l'égalité devant la loi, et le respect de droits fondamentaux. »",
+         "« Le dénominateur commun des démocraties est l'existence d'institutions et de lois qui visent à "
+         "protéger la population des dérives tyranniques ou dictatoriales que peut exercer une personne ou "
+         "un groupe quelconque, y compris la majorité. »"]),
 }
 
 # -----------------------------------------------------------------------------------------------

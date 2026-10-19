@@ -86,10 +86,10 @@ FICHE_BAVA = {
                "Mpampianatra : Misaotra, Rina. Mba lazao aminay, Soa, hoe inona no hevitro.",
                "Soa : Eto am-pamaranana, dia manaiky aho fa diso izay voalazako, satria tsy ny akanjo no manamarika ny olona."]),
         ("h", "Ohatra diso sy ny fanitsiana"),
-        ("x", ["— Diso : « Tsy mety izany, satria zanaky ny mpanjono izy ! » — Marina : « Tsy mety izany, "
+        ("x", ["Diso : « Tsy mety izany, satria zanaky ny mpanjono izy ! » — Marina : « Tsy mety izany, "
                "**satria** mitovy zo ny siky rehetra. » (antony mifandraika amin'ny hevitra)",
-               "— Diso : « Mba mangina ianao ! » — Marina : « **Azafady**, andraso aho, vao hilaza. »",
-               "— Diso : « Ny mahantra dia tsy mety mianatra. » — Marina : « **Tsy marina** izany, **satria** "
+               "Diso : « Mba mangina ianao ! » — Marina : « **Azafady**, andraso aho, vao hilaza. »",
+               "Diso : « Ny mahantra dia tsy mety mianatra. » — Marina : « **Tsy marina** izany, **satria** "
                "mitovy zo ny rehetra. » (hevitra takarina: tsy misy antony ara-dalàna)"]),
         ("h", "Ny teny vaovao"),
         ("p", "**fijoroana** : ny hanohana mafy; "
@@ -329,11 +329,11 @@ FICHE_TENY = {
         ("p", "Ny **no** dia mampiseho ny ampahany lehibe (fampisongadina); ny **ho** no maraka ny hoavy. "
               "Ohatra : « Ny fifanajana **no ho** fototry ny fiaraha-monina. »"),
         ("h", "Ohatra diso sy ny fanitsiana"),
-        ("x", ["— Diso : « **Nony** ny harena, dia voafoize izy. » — Marina : « **Noho ny** harena, dia "
+        ("x", ["Diso : « **Nony** ny harena, dia voafoize izy. » — Marina : « **Noho ny** harena, dia "
                "voafoize izy. » (anarana no manaraka)",
-               "— Diso : « **Noho ny** nody tany, dia nianatra. » — Marina : « **Nony** nody tany, dia "
+               "Diso : « **Noho ny** nody tany, dia nianatra. » — Marina : « **Nony** nody tany, dia "
                "nianatra. » (matoanteny no manaraka)",
-               "— Diso : « Ny fifanajana **noho** fototra. » — Marina : « Ny fifanajana **no ho** fototra. » "
+               "Diso : « Ny fifanajana **noho** fototra. » — Marina : « Ny fifanajana **no ho** fototra. » "
                "(fampisongadina + hoavy)"]),
         ("h", "Ny teny vaovao"),
         ("p", "**fampisongadina** : ny fampisehoana ny ampahany lehibe; **antony** : ny zavatra mahatonga; "
@@ -444,11 +444,11 @@ FICHE_TSORA = {
         ("p", "**Noho ny** + anarana (antony); **Nony** + matoanteny (fotoana); **… no ho …** "
               "(fampisongadina amin'ny hoavy). Tsipelina : teny miafara amin'ny -y, abidia **21 litera**."),
         ("h", "Ohatra diso sy ny fanitsiana"),
-        ("x", ["— Diso : « **Nony** ny tsy fahampian-tsakafo, dia tsy mianatra. » — Marina : « **Noho ny** "
+        ("x", ["Diso : « **Nony** ny tsy fahampian-tsakafo, dia tsy mianatra. » — Marina : « **Noho ny** "
                "tsy fahampian-tsakafo … » (anarana no manaraka)",
-               "— Diso : « Ny fianarana dia **an'ny** mpanankarena ihany. » — Marina : « Ny fianarana "
+               "Diso : « Ny fianarana dia **an'ny** mpanankarena ihany. » — Marina : « Ny fianarana "
                "dia **zon'ny** rehetra. » (zo, fa tsy fananana)",
-               "— Diso : « Ny hazo no ho voaaro noho ny mampidi-toza. » — Marina : « … **satria** "
+               "Diso : « Ny hazo no ho voaaro noho ny mampidi-toza. » — Marina : « … **satria** "
                "mampidi-toza. » (tsy milaka ny antony)"]),
         ("h", "Ny teny vaovao"),
         ("p", "**adihevitra** : fifanakalozan-kevitra ara-tsaina; **hevitra adina** : ny toe-kevitra "
