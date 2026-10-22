@@ -6,9 +6,9 @@ URL       : https://fr.wikipedia.org/wiki/D%C3%A9mocratie
 LICENCE / ATTRIBUTION : Encyclopédie en ligne, article rédigé par des contributeurs ; texte sous licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 (CC BY-SA 4.0). La copie verbatim des passages ci-dessous est donc licite à condition de conserver l'attribution : « Wikipédia, auteurs de l'article, licence CC BY-SA 4.0 ».
 
 UTILISE DANS LE MANUEL :
-  - loha5 · fiche 17 · Fanehoan-kevitra am-bava · « Ny fandraisana anjara amin'ny resaka iombonana »
-  - loha5 · fiche 18 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Fivoriana ao amin'ny tanàna »
-  - loha5 · fiche 20 · Asa an-tsoratra · « Lahatsoratra fampahafantarana : ny asa iombonana ao amin'ny tanàna »
+  - loha5 · fiche 1 · Fanehoan-kevitra am-bava · « Ny fandraisana anjara amin'ny resaka iombonana »
+  - loha5 · fiche 2 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Fivoriana ao amin'ny tanàna »
+  - loha5 · fiche 4 · Asa an-tsoratra · « Lahatsoratra fampahafantarana : ny asa iombonana ao amin'ny tanàna »
 
 --------------------------------------------------------------------------
 PASSAGES RECOPIES MOT POUR MOT (tels qu'imprimés dans le manuel) :

@@ -6,7 +6,7 @@ URL       : https://fr.wikipedia.org/wiki/Malgache
 LICENCE / ATTRIBUTION : Encyclopédie en ligne, article rédigé par des contributeurs ; texte sous licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 (CC BY-SA 4.0). La copie verbatim des passages ci-dessous est donc licite à condition de conserver l'attribution : « Wikipédia, auteurs de l'article, licence CC BY-SA 4.0 ».
 
 UTILISE DANS LE MANUEL :
-  - loha2 · fiche 7 · Fiasan'ny teny · « Ny tendro sy ny teny miafara amin'ny -ka, -tra, -na »
+  - loha2 · fiche 3 · Fiasan'ny teny · « Ny tendro sy ny teny miafara amin'ny -ka, -tra, -na »
 
 --------------------------------------------------------------------------
 PASSAGES RECOPIES MOT POUR MOT (tels qu'imprimés dans le manuel) :

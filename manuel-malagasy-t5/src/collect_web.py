@@ -30,17 +30,19 @@ MODULES = ["data_pilote"] + ["data_loha%d" % i for i in range(1, 16)]
 
 # ---------------------------------------------------------------- fiches utilisatrices
 usage = {}
+NFICHE = 0
 for m in MODULES:
     try:
         mod = importlib.import_module(m)
     except ModuleNotFoundError:
         continue
-    for s in norm_all(getattr(mod, "SEANCES", [])):
+    seances = norm_all(getattr(mod, "SEANCES", []))
+    NFICHE += len(seances)
+    for i, s in enumerate(seances, 1):   # le manuel numérote les fiches par position
         for k in (s.get("loharano") or []):
             usage.setdefault(k, []).append(
-                "%s · fiche %s · %s · « %s »" % (
-                    m.replace("data_", "").replace("pilote", "pilote"),
-                    s.get("n", "?"), s.get("zana_taranja", "?"), s.get("lohateny", "?")))
+                "%s · fiche %d · %s · « %s »" % (
+                    m.replace("data_", ""), i, s.get("zana_taranja", "?"), s.get("lohateny", "?")))
 
 
 def licence(cle, ref):
@@ -76,7 +78,8 @@ for i, cle in enumerate(cles, 1):
         "",
         "UTILISE DANS LE MANUEL :",
     ]
-    for u in usage.get(cle, []) or ["(aucune fiche ne cite cette clé pour l'instant)"]:
+    for u in usage.get(cle, []) or [
+            "(clé réservée pour les fiches à venir : aucune fiche livrée ne la cite encore)"]:
         lignes.append("  - " + u)
     if os.path.exists(os.path.join(INTEGRAL, cle + ".txt")):
         lignes.append("")
@@ -192,8 +195,9 @@ r.bold = True
 r.font.size = Pt(15)
 r.font.color.rgb = BORDEAUX
 p = doc.add_paragraph()
-r = p.add_run("Manuel Fiteny Malagasy T5 · %d loharano voamarina · thèmes 1 à 5 (%d fiches)"
-              % (len(cles), sum(len(v) for v in usage.values())))
+r = p.add_run("Manuel Fiteny Malagasy T5 · %d loharano voamarina · %d fiches déjà écrites, "
+              "avec %d renvois vers ces sources"
+              % (len(cles), NFICHE, sum(len(v) for v in usage.values())))
 r.italic = True
 r.font.size = Pt(10)
 p = doc.add_paragraph()
