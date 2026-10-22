@@ -87,3 +87,12 @@ licence et attribution, passages recopiés verbatim, fiches utilisatrices), `00_
 de collecte des thèmes 6 à 15) et `RECAPITULATIF.docx`, puis emballe le tout dans
 `output/Loharanon-kevitra_Web_T5_V1.zip`. Le texte intégral d'une page, quand il est collecté, est déposé
 dans `sources_web/full/<clé>.txt` avant de relancer le script.
+
+**Règle des pages web (validée par le propriétaire).** Le contenu vient d'abord de **l'édition malagaise
+de l'encyclopédie** (`mg.wikipedia.org`), et la page est **collée en entier** — titre, titres de section,
+exemples, liste « Jereo koa », « Loharano sy fanamarihana », mention de licence, tout — dans
+`sources_web/full/<clé>.txt`. Le manuel l'imprime telle quelle après le `VALINY` de la fiche (amorce
+« Pejy fenony : ity manontolo ity, tsy misy nesorina na novana na ovaina. »), et le dossier la reproduit
+aussi. Rien n'est résumé, corrigé ou rogné : si le texte de la page contient une coquille, elle reste,
+parce que c'est la page. Les passages de `sources.py` ne servent que d'index au cas où la page
+n'aurait pas encore été collectée.

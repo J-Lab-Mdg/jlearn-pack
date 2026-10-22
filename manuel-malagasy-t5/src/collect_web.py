@@ -68,6 +68,8 @@ fichiers = []
 for i, cle in enumerate(cles, 1):
     ref, url, passages = SOURCES[cle]
     nom = "%02d_%s.txt" % (i, cle)
+    fpath = os.path.join(INTEGRAL, cle + ".txt")
+    page = open(fpath, encoding="utf-8").read().split("\n") if os.path.exists(fpath) else []
     lignes = [
         "LOHARANON-KEVITRA %d — %s" % (i, cle),
         "=" * 74,
@@ -81,13 +83,16 @@ for i, cle in enumerate(cles, 1):
     for u in usage.get(cle, []) or [
             "(clé réservée pour les fiches à venir : aucune fiche livrée ne la cite encore)"]:
         lignes.append("  - " + u)
-    if os.path.exists(os.path.join(INTEGRAL, cle + ".txt")):
+    if page:
         lignes.append("")
-        lignes.append("TEXTES INTEGRALS : full/%s.txt (page collectée en entier, en plus des passages)"
-                      % cle)
+        lignes.append("La page est reproduite en entier plus bas, telle qu'elle a été ouverte : "
+                      "rien n'en a été retiré, ni les titres de section, ni l'avertissement de licence.")
     lignes += ["", "-" * 74, "PASSAGES RECOPIES MOT POUR MOT (tels qu'imprimés dans le manuel) :", "-" * 74, ""]
-    for j, p in enumerate(passages, 1):
-        lignes += ["[%d] %s" % (j, p), ""]
+    for j in range(len(passages)):
+        lignes += ["[%d] %s" % (j + 1, passages[j]), ""]
+    if page:
+        lignes += ["", "-" * 74, "PEJY FENONY — texte intégral de la page, collé tel que :" + "-" * 18, ""]
+        lignes += [ln.rstrip() for ln in page if ln.strip()]
     with open(os.path.join(DOSSIER, nom), "w", encoding="utf-8") as f:
         f.write("\n".join(lignes).rstrip() + "\n")
     fichiers.append(nom)
@@ -206,8 +211,13 @@ r = p.add_run("Une source n'est retenue que si la page a été ouverte et si le 
               "condition de conserver l'attribution.")
 r.font.size = Pt(10)
 
+FULL_OK = 0
 for i, cle in enumerate(cles, 1):
     ref, url, passages = SOURCES[cle]
+    fpd = os.path.join(INTEGRAL, cle + ".txt")
+    page = [ln.strip() for ln in open(fpd, encoding="utf-8").read().split("\n") if ln.strip()] \
+        if os.path.exists(fpd) else []
+    FULL_OK += 1 if page else 0
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(14)
     r = p.add_run("%d. %s" % (i, ref))
@@ -234,10 +244,22 @@ for i, cle in enumerate(cles, 1):
         r = p.add_run(t)
         r.italic = True
         r.font.size = Pt(10)
-    p = doc.add_paragraph()
-    r = p.add_run("Passages recopiés dans le manuel ci-dessus, après les corrigés de la fiche.")
-    r.font.size = Pt(8)
-    r.font.color.rgb = NOIR
+    if page:
+        p = doc.add_paragraph()
+        r = p.add_run("PEJY FENONY — texte intégral de la page, collé tel quel :")
+        r.bold = True
+        r.font.size = Pt(9)
+        for ln in page:
+            p = doc.add_paragraph()
+            p.paragraph_format.left_indent = Cm(0.5)
+            p.paragraph_format.space_after = Pt(1)
+            r = p.add_run(ln)
+            r.font.size = Pt(8)
+    else:
+        p = doc.add_paragraph()
+        r = p.add_run("Passages recopiés dans le manuel ci-dessus, après les corrigés de la fiche. "
+                      "Page intégrale non encore collectée.")
+        r.font.size = Pt(8)
 
 docx_name = "RECAPITULATIF.docx"
 doc.save(os.path.join(DOSSIER, docx_name))
@@ -259,6 +281,7 @@ with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
 with zipfile.ZipFile(zip_path) as z:
     noms = z.namelist()
 print("ZIP : %s | %d o | %d fichiers" % (zip_nom, os.path.getsize(zip_path), len(noms)))
-print("clés : %d | citations en fiche : %d" % (len(cles), sum(len(v) for v in usage.values())))
+print("clés : %d | citations en fiche : %d | pages entières collées : %d/%d"
+      % (len(cles), sum(len(v) for v in usage.values()), FULL_OK, len(cles)))
 for k in cles:
     print("  %-26s %d passage(s) · %d fiche(s)" % (k, len(SOURCES[k][2]), len(usage.get(k, []))))

@@ -119,6 +119,12 @@ SOURCES = {
          "« Le dénominateur commun des démocraties est l'existence d'institutions et de lois qui visent à "
          "protéger la population des dérives tyranniques ou dictatoriales que peut exercer une personne ou "
          "un groupe quelconque, y compris la majorité. »"]),
+    "mgwiki_fehezanteny": (
+        "Wikipedia (mg) — « Fehezanteny », Wikipedia malagasy, vasontolo malalaka",
+        "https://mg.wikipedia.org/wiki/Fehezanteny",
+        ["« Ny fehezanteny dia teny na andian-teny tononina na soratana manara-pitsipika ka azo "
+         "ampitana hafatra mahaleo tena, noho izy azo sarahana amin' ny andian-teny hafa izay mety "
+         "hitovy fiasa aminy. »"]),
 }
 
 # -----------------------------------------------------------------------------------------------

@@ -403,6 +403,18 @@ def seance_complet(doc, s, n, total, durees):
     return doc
 
 
+FULL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "sources_web", "full")
+
+
+def full_page(cle):
+    """Texte intégral d'une page web, tel qu'il a été collé dans sources_web/full/<clé>.txt."""
+    path = os.path.join(FULL_DIR, cle + ".txt")
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as f:
+        return [ln.strip() for ln in f.read().split("\n") if ln.strip()]
+
+
 def loharano_block(doc, s):
     """Bloc « LOHARANON-KEVITRA » : référence + URL + passage exact de la page recopié (après le VALINY)."""
     from sources import SOURCES
@@ -416,3 +428,9 @@ def loharano_block(doc, s):
         para(doc, url, 9, BLEU, False, False, None, indent=0.6)
         for parag in extrait:
             para(doc, parag, 10, NOIR, False, True, None, indent=0.9, space_after=3)
+        page = full_page(k)
+        if page:
+            para(doc, "Pejy fenony : ity manontolo ity, tsy misy nesorina na novana na ovaina.",
+                 9, VERT, True, False, None, indent=0.6)
+            for ln in page:
+                para(doc, ln, 8, NOIR, False, False, None, indent=0.9, space_after=1)

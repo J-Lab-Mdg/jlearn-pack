@@ -7,13 +7,14 @@ Contenu des thèmes 1 à 5 du manuel Fiteny Malagasy T5 (12 à 20 fiches livrée
 | 1 | `wiki_hygiene_mains` | Wikipédia (fr) — « Hygiène des mains », encyclopédie en ligne, licence CC BY-SA 4.0 | https://fr.wikipedia.org/wiki/Hygi%C3%A8ne_des_mains | 2 |
 | 2 | `ohab_fahasalamana` | Ohabolana — « Ny fahasalamana dia ambony lavitra noho ny fananan-karena », ohabolana.org | https://ohabolana.org/ohabolana/vakio/o470fdb9660b7d | 1 |
 | 3 | `ohab_nify` | Ohabolana — « Ny nify, sady haingo no fahasalamana », ohabolana.org | https://ohabolana.org/ohabolana/vakio/o44868ce76e8e1 | 2 |
-| 4 | `jica_vakiteny` | JICA / PAGEM — « Vakiteny Modely (Famakiana tantara) », manuels de langue malgache, rapport d'appui à l'éducation | https://openjicareport.jica.go.jp/pdf/12356002.pdf | 12 |
+| 4 | `jica_vakiteny` | JICA / PAGEM — « Vakiteny Modely (Famakiana tantara) », manuels de langue malgache, rapport d'appui à l'éducation | https://openjicareport.jica.go.jp/pdf/12356002.pdf | 13 |
 | 5 | `wiki_malgache_ortographe` | Wikipédia (fr) — « Malgache », sections Orthographe et Prononciation, licence CC BY-SA 4.0 | https://fr.wikipedia.org/wiki/Malgache | 1 |
 | 6 | `wiki_violence` | Wikipédia (fr) — « Violence », encyclopédie en ligne, licence CC BY-SA 4.0 | https://fr.wikipedia.org/wiki/Violence | 2 |
 | 7 | `wiki_protection_enfance` | Wikipédia (fr) — « Protection de l'enfance », encyclopédie en ligne, licence CC BY-SA 4.0 | https://fr.wikipedia.org/wiki/Protection_de_l%27enfance | 3 |
 | 8 | `wiki_dev_durable` | Wikipédia (fr) — « Développement durable », encyclopédie en ligne, licence CC BY-SA 4.0 | https://fr.wikipedia.org/wiki/Développement_durable | 3 |
 | 9 | `wiki_discrimination` | Wikipédia (fr) — « Discrimination », encyclopédie en ligne, licence CC BY-SA 4.0 | https://fr.wikipedia.org/wiki/Discrimination | 4 |
 | 10 | `wiki_demokrasia` | Wikipédia (fr) — « Démocratie », encyclopédie en ligne, licence CC BY-SA 4.0 | https://fr.wikipedia.org/wiki/D%C3%A9mocratie | 3 |
+| 11 | `mgwiki_fehezanteny` | Wikipedia (mg) — « Fehezanteny », Wikipedia malagasy, vasontolo malalaka | https://mg.wikipedia.org/wiki/Fehezanteny | 1 |
 
 ## Méthode
 

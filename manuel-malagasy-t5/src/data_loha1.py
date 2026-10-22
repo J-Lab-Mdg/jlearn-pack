@@ -172,6 +172,7 @@ FICHE_BAVA = {
 FICHE_TENY = {
     "n": 3,
     "taranja": "Malagasy",
+    "loharano": ["mgwiki_fehezanteny", "jica_vakiteny"],
     "zana_taranja": "Fiasan'ny teny",
     "lohahevitra": "1. Ny fitandroana ny fahasalamana",
     "lohateny": "Ny mpisolo tena tampisaka : -ko, -nao, -ny",
