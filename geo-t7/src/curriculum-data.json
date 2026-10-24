@@ -1,0 +1,1411 @@
+[
+  {
+    "id": "unite1",
+    "nom": "UNITÉ 1 — INITIATION À L'ÉTUDE DE LA GÉOGRAPHIE",
+    "theme": "Initiation à l'étude de la géographie",
+    "first": 1,
+    "revNum": 7,
+    "examNum": 8,
+    "duration": 6,
+    "intro": "Cette unité définit la géographie, son objet et son utilité, distingue les principaux documents géographiques, applique les étapes de la démarche géographique et apprend à lire le titre, l'orientation, la légende, l'échelle, la source, la date et l'auteur.",
+    "opening": [
+      [
+        "Que peut-on observer autour de l'école ?",
+        "On peut observer des habitations, des voies, des activités, des reliefs et de la végétation."
+      ],
+      [
+        "À quoi sert une carte ?",
+        "Une carte sert à représenter et à localiser des éléments dans un espace."
+      ]
+    ],
+    "seeds": [
+      [
+        "La géographie : notion, objet et utilité",
+        "géographie",
+        "La géographie est la science qui étudie les espaces de la Terre, les milieux naturels, les populations, leurs activités et leurs relations.",
+        [
+          "Elle observe et localise les phénomènes à la surface de la Terre.",
+          "Elle décrit et explique l'organisation des territoires.",
+          "Elle étudie les relations entre les êtres humains et leur environnement.",
+          "Elle aide à s'orienter, aménager l'espace, prévenir les risques et préserver les ressources."
+        ],
+        [
+          "espace",
+          "territoire",
+          "environnement"
+        ],
+        "Fara observe le quartier de l'école et cherche pourquoi les maisons, les rues, les cultures et la rivière sont disposées ainsi.",
+        "Observer, localiser, décrire et expliquer pour mieux agir dans l'espace."
+      ],
+      [
+        "Les documents géographiques visuels",
+        "document géographique",
+        "Un document géographique apporte des informations localisées sur un espace ; le croquis, le plan, la carte et la photographie en sont des formes visuelles.",
+        [
+          "Le croquis simplifie un espace pour en faire ressortir les idées essentielles.",
+          "Le plan représente avec précision un espace de petite étendue vu d'en haut.",
+          "La carte représente un territoire à une échelle choisie au moyen de figurés.",
+          "La photographie montre un paysage depuis le sol, les airs ou un satellite."
+        ],
+        [
+          "croquis",
+          "plan",
+          "carte",
+          "photographie"
+        ],
+        "Mialy compare un plan de l'école, une carte de la commune, un croquis et une photographie aérienne.",
+        "Choisir le document selon l'étendue étudiée et l'information recherchée."
+      ],
+      [
+        "Les textes, tableaux et graphiques en géographie",
+        "document statistique",
+        "Les textes, tableaux statistiques et graphiques fournissent des informations écrites ou chiffrées qui complètent les documents visuels.",
+        [
+          "Un texte présente des faits, des explications ou le point de vue d'un auteur.",
+          "Un tableau statistique organise des valeurs en lignes et en colonnes.",
+          "Un graphique rend visibles une évolution, une comparaison ou une répartition.",
+          "Toute donnée doit être lue avec son titre, son unité, sa source et sa période."
+        ],
+        [
+          "texte",
+          "tableau statistique",
+          "graphique",
+          "donnée"
+        ],
+        "Toky étudie le même phénomène dans un court texte, un tableau de nombres et une courbe.",
+        "Identifier la nature du document avant d'en extraire une information précise."
+      ],
+      [
+        "Observer, décrire et interpréter",
+        "démarche géographique",
+        "La démarche géographique est une suite d'opérations qui permet d'étudier méthodiquement un territoire ou un document.",
+        [
+          "Observer consiste à relever attentivement ce qui est visible sans l'expliquer trop vite.",
+          "Décrire consiste à nommer, localiser, classer et caractériser les éléments observés.",
+          "Interpréter consiste à donner du sens aux informations et aux relations repérées.",
+          "Ces étapes s'appuient sur des preuves tirées du document ou du terrain."
+        ],
+        [
+          "observation",
+          "description",
+          "interprétation"
+        ],
+        "Soa observe une photographie de paysage, dresse la liste des éléments puis cherche ce qu'ils révèlent.",
+        "Séparer d'abord les faits observés de leur explication."
+      ],
+      [
+        "Analyser, commenter et synthétiser",
+        "analyse géographique",
+        "Analyser un document géographique consiste à décomposer ses informations, les mettre en relation et expliquer leurs causes et conséquences.",
+        [
+          "L'analyse compare les lieux, les valeurs et les évolutions.",
+          "Le commentaire organise les observations et les explications dans un raisonnement.",
+          "La synthèse rassemble les idées essentielles en une réponse courte et cohérente.",
+          "Une conclusion répond à la question posée sans répéter tous les détails."
+        ],
+        [
+          "analyse",
+          "commentaire",
+          "synthèse",
+          "conclusion"
+        ],
+        "Hery confronte une carte et un graphique avant de rédiger quelques phrases de conclusion.",
+        "Appuyer chaque explication sur une information vérifiable puis hiérarchiser les idées."
+      ],
+      [
+        "Les éléments d'un document géographique",
+        "lecture documentaire",
+        "Lire un document géographique consiste à examiner son titre, son orientation, sa légende, son échelle, sa source, sa date et son auteur.",
+        [
+          "Le titre indique le sujet et l'espace étudié ; l'orientation situe les directions.",
+          "La légende explique les couleurs, les figurés et les symboles.",
+          "L'échelle relie les dimensions du document aux dimensions réelles.",
+          "La source, la date et l'auteur permettent d'évaluer l'origine et la validité de l'information."
+        ],
+        [
+          "titre",
+          "orientation",
+          "légende",
+          "échelle",
+          "source",
+          "auteur"
+        ],
+        "Voahirana reçoit une carte sans titre ni source et comprend qu'elle ne peut pas encore l'interpréter correctement.",
+        "Présenter le document et vérifier ses éléments avant toute analyse."
+      ]
+    ]
+  },
+  {
+    "id": "unite2",
+    "nom": "UNITÉ 2 — LA PLANÈTE TERRE",
+    "theme": "La planète Terre",
+    "first": 9,
+    "revNum": 19,
+    "examNum": 20,
+    "duration": 10,
+    "intro": "Cette unité situe la Terre dans l'Univers et le Système solaire, décrit ses caractéristiques, ses quatre composantes et sa structure interne, puis utilise les lignes imaginaires et les coordonnées avant d'expliquer les conséquences de la rotation et de la révolution.",
+    "opening": [
+      [
+        "Sur quelle planète vivons-nous ?",
+        "Nous vivons sur la planète Terre."
+      ],
+      [
+        "Que représente un globe ?",
+        "Il représente la Terre en trois dimensions."
+      ]
+    ],
+    "seeds": [
+      [
+        "L'Univers et le Système solaire",
+        "Univers",
+        "L'Univers est l'ensemble de tout ce qui existe : galaxies, étoiles, astres, planètes, satellites, comètes, météores, matière et espace.",
+        [
+          "Une galaxie rassemble des milliards d'étoiles, du gaz et de la poussière.",
+          "Le Système solaire comprend le Soleil et les astres soumis à son attraction.",
+          "Une étoile produit sa lumière tandis qu'une planète tourne autour d'une étoile.",
+          "Les satellites, comètes et météoroïdes sont d'autres corps célestes."
+        ],
+        [
+          "galaxie",
+          "étoile",
+          "astre",
+          "comète",
+          "météore"
+        ],
+        "Lova classe des images du Soleil, d'une planète, d'une comète et d'une galaxie.",
+        "Aller du plus vaste au plus proche : Univers, galaxie, Système solaire, Terre."
+      ],
+      [
+        "La place de la Terre dans l'Univers",
+        "place de la Terre",
+        "La Terre appartient au Système solaire, situé dans la galaxie appelée Voie lactée, elle-même incluse dans l'Univers.",
+        [
+          "La Terre est la troisième planète à partir du Soleil.",
+          "Elle accomplit une révolution sur une orbite autour du Soleil.",
+          "La Lune est son satellite naturel.",
+          "Sa position, son atmosphère et l'eau liquide créent des conditions favorables à la vie."
+        ],
+        [
+          "Voie lactée",
+          "troisième planète",
+          "Lune",
+          "orbite"
+        ],
+        "Aina emboîte quatre étiquettes : Terre, Système solaire, Voie lactée et Univers.",
+        "Situer la Terre à plusieurs échelles sans confondre galaxie et Système solaire."
+      ],
+      [
+        "Les caractéristiques de la Terre",
+        "caractéristiques de la Terre",
+        "La Terre est une planète presque sphérique, légèrement aplatie aux pôles, de dimensions mesurables et dont l'axe est incliné.",
+        [
+          "Son rayon moyen est d'environ 6 371 kilomètres et son diamètre d'environ 12 742 kilomètres.",
+          "Sa circonférence équatoriale approche 40 000 kilomètres.",
+          "Son axe est incliné d'environ 23,5 degrés par rapport à la verticale de son orbite.",
+          "Les océans couvrent près de 71 % de sa surface et les terres environ 29 %."
+        ],
+        [
+          "forme",
+          "rayon",
+          "diamètre",
+          "circonférence",
+          "inclinaison"
+        ],
+        "Tiana compare un globe, un cercle gradué et une photographie de la Terre prise de l'espace.",
+        "Caractériser la Terre par sa forme, ses dimensions et l'inclinaison de son axe."
+      ],
+      [
+        "Les composantes de la Terre",
+        "composantes de la Terre",
+        "La Terre fonctionne grâce à quatre grandes composantes : la lithosphère, l'atmosphère, l'hydrosphère et la biosphère.",
+        [
+          "La lithosphère correspond à l'enveloppe rocheuse superficielle.",
+          "L'atmosphère est l'enveloppe gazeuse entourant le globe.",
+          "L'hydrosphère regroupe toutes les eaux liquides, solides et gazeuses.",
+          "La biosphère rassemble les êtres vivants et les espaces où la vie est présente."
+        ],
+        [
+          "lithosphère",
+          "atmosphère",
+          "hydrosphère",
+          "biosphère"
+        ],
+        "Mamy classe une roche, un nuage, une rivière et une plante dans les quatre composantes.",
+        "Identifier chaque composante puis rechercher ses échanges avec les autres."
+      ],
+      [
+        "L'interrelation entre les composantes de la Terre",
+        "interrelation",
+        "Une interrelation est une relation réciproque : chaque composante de la Terre agit sur les autres et en reçoit des effets.",
+        [
+          "La biosphère échange des gaz avec l'atmosphère par la respiration et la photosynthèse.",
+          "L'atmosphère et l'hydrosphère échangent de l'eau par évaporation et précipitation.",
+          "L'eau altère la lithosphère et transporte des éléments utiles aux êtres vivants.",
+          "Une modification importante d'une composante peut perturber l'ensemble du système terrestre."
+        ],
+        [
+          "échange",
+          "photosynthèse",
+          "précipitation",
+          "système terrestre"
+        ],
+        "Kanto suit le trajet de l'eau entre un lac, l'air, le sol et les plantes.",
+        "Expliquer une relation dans les deux sens et non comme une action isolée."
+      ],
+      [
+        "La structure interne du globe",
+        "structure interne",
+        "Le globe est formé de couches concentriques : l'écorce terrestre, le manteau et le noyau.",
+        [
+          "L'écorce est la couche rocheuse externe, mince sous les océans et plus épaisse sous les continents.",
+          "Le manteau s'étend sous l'écorce et représente la plus grande partie du volume terrestre.",
+          "Le noyau, très chaud et riche en métaux, comprend une partie externe et une partie interne.",
+          "Les propriétés et les mouvements internes expliquent une partie de l'activité tectonique."
+        ],
+        [
+          "écorce terrestre",
+          "manteau",
+          "noyau",
+          "couche"
+        ],
+        "Noro découpe le dessin d'un globe pour placer les trois grandes couches internes.",
+        "Lire une coupe de l'extérieur vers le centre et comparer les épaisseurs."
+      ],
+      [
+        "Les parallèles et les méridiens",
+        "lignes imaginaires",
+        "Les lignes imaginaires forment un réseau de repérage : les parallèles entourent la Terre d'Ouest en Est et les méridiens relient les pôles.",
+        [
+          "L'équateur est le parallèle de latitude zéro degré.",
+          "Les tropiques du Cancer et du Capricorne limitent la zone intertropicale.",
+          "Les cercles polaires Arctique et Antarctique entourent les zones polaires.",
+          "Le méridien de Greenwich vaut zéro degré et le méridien opposé cent quatre-vingts degrés."
+        ],
+        [
+          "équateur",
+          "tropique",
+          "cercle polaire",
+          "Greenwich"
+        ],
+        "Feno trace l'équateur, les tropiques, les cercles polaires et deux méridiens sur un globe.",
+        "Distinguer les parallèles des méridiens par leur direction et leur référence."
+      ],
+      [
+        "La latitude et la longitude",
+        "coordonnées géographiques",
+        "Les coordonnées géographiques associent la latitude et la longitude afin de localiser précisément un point sur le globe.",
+        [
+          "La latitude mesure l'écart angulaire au Nord ou au Sud de l'équateur.",
+          "La longitude mesure l'écart angulaire à l'Est ou à l'Ouest de Greenwich.",
+          "Elles s'expriment en degrés, éventuellement complétés par des minutes et secondes.",
+          "L'intersection du parallèle et du méridien recherchés donne la position."
+        ],
+        [
+          "latitude",
+          "longitude",
+          "degré",
+          "coordonnées"
+        ],
+        "Sarobidy reçoit une latitude Sud et une longitude Est puis retrouve Madagascar sur un atlas.",
+        "Lire la latitude avec Nord ou Sud, puis la longitude avec Est ou Ouest."
+      ],
+      [
+        "La rotation de la Terre et ses conséquences",
+        "rotation",
+        "La rotation est le mouvement de la Terre sur elle-même, d'Ouest en Est, autour de l'axe des pôles en environ vingt-quatre heures.",
+        [
+          "La face éclairée connaît le jour tandis que la face opposée connaît la nuit.",
+          "La rotation produit l'alternance régulière du jour et de la nuit.",
+          "Le globe est divisé en vingt-quatre fuseaux horaires d'environ quinze degrés.",
+          "Les heures diffèrent entre les lieux selon leur longitude."
+        ],
+        [
+          "jour",
+          "nuit",
+          "fuseau horaire",
+          "axe"
+        ],
+        "Ialy constate qu'il fait jour à Madagascar quand un correspondant situé loin vers l'Ouest vit encore la nuit.",
+        "Relier le sens de rotation, l'éclairement et les différences d'heure."
+      ],
+      [
+        "La révolution de la Terre et ses conséquences",
+        "révolution",
+        "La révolution est le mouvement annuel de la Terre autour du Soleil ; avec l'inclinaison de l'axe, elle produit les saisons.",
+        [
+          "La Terre parcourt son orbite en un peu plus de trois cent soixante-cinq jours.",
+          "L'éclairement varie au cours de l'année dans chaque hémisphère.",
+          "Les saisons sont inversées entre les hémisphères Nord et Sud.",
+          "La durée du jour et de la nuit devient inégale sauf près des équinoxes."
+        ],
+        [
+          "orbite",
+          "saison",
+          "hémisphère",
+          "durée du jour"
+        ],
+        "Tahina compare la saison et la durée du jour à Madagascar avec celles d'un pays de l'hémisphère Nord.",
+        "Expliquer ensemble la révolution et l'inclinaison de l'axe."
+      ]
+    ]
+  },
+  {
+    "id": "unite3",
+    "nom": "UNITÉ 3 — L'INTERRELATION ENTRE RELIEF, CLIMAT, HYDROGRAPHIE ET VÉGÉTATION",
+    "theme": "L'interrelation entre relief, climat, hydrographie et végétation",
+    "first": 21,
+    "revNum": 33,
+    "examNum": 34,
+    "duration": 12,
+    "intro": "Cette unité caractérise le relief terrestre et sous-marin, distingue temps et climat, étudie l'atmosphère, les éléments, les zones et les problèmes climatiques, puis explique le cycle de l'eau, les eaux continentales et marines ainsi que leurs relations avec la végétation.",
+    "opening": [
+      [
+        "Qu'appelle-t-on relief ?",
+        "Le relief est l'ensemble des formes de la surface terrestre."
+      ],
+      [
+        "D'où vient l'eau des rivières ?",
+        "Elle vient surtout des précipitations, du ruissellement et des eaux souterraines."
+      ]
+    ],
+    "seeds": [
+      [
+        "Le relief terrestre : formes et mesures",
+        "relief terrestre",
+        "Le relief terrestre est l'ensemble des formes de la surface des continents, décrites par leur altitude, leur dénivellation et leur pente.",
+        [
+          "Les formes majeures sont les montagnes, les plateaux et les plaines.",
+          "Les vallées, collines, cuvettes et versants sont des formes de détail.",
+          "L'altitude est la hauteur d'un point par rapport au niveau moyen de la mer.",
+          "La dénivellation compare deux altitudes et la pente mesure l'inclinaison du terrain."
+        ],
+        [
+          "montagne",
+          "plateau",
+          "plaine",
+          "altitude",
+          "pente"
+        ],
+        "Hasina lit un profil topographique allant d'une plaine à une montagne en traversant une vallée.",
+        "Nommer la forme puis la caractériser par l'altitude, la dénivellation et la pente."
+      ],
+      [
+        "Le relief sous-marin",
+        "relief sous-marin",
+        "Le relief sous-marin est l'ensemble des formes du fond des mers et des océans.",
+        [
+          "La plateforme continentale prolonge le continent sous une faible profondeur.",
+          "Le talus continental descend vers le bassin océanique profond.",
+          "La dorsale est une longue chaîne de montagnes sous-marines.",
+          "La fosse sous-marine est une dépression très profonde et allongée."
+        ],
+        [
+          "plateforme continentale",
+          "bassin océanique",
+          "dorsale",
+          "fosse"
+        ],
+        "Vola observe une coupe allant du littoral à une fosse océanique.",
+        "Lire le profil depuis le continent vers le bassin océanique et comparer les profondeurs."
+      ],
+      [
+        "Le temps, le climat et leurs sciences",
+        "climat",
+        "Le temps décrit l'état momentané de l'atmosphère ; le climat correspond aux conditions moyennes et à leur variabilité sur une longue durée.",
+        [
+          "La météorologie observe le temps et établit des prévisions à court terme.",
+          "La climatologie étudie les climats, leurs variations et leur évolution durable.",
+          "Température, précipitations et vents caractérisent un climat.",
+          "Un événement quotidien ne suffit pas pour définir le climat d'un lieu."
+        ],
+        [
+          "temps",
+          "météorologie",
+          "climatologie"
+        ],
+        "Njaka compare le bulletin météorologique du jour avec un graphique de moyennes climatiques.",
+        "Ne pas confondre une situation atmosphérique brève avec une tendance de longue durée."
+      ],
+      [
+        "L'atmosphère et ses couches",
+        "atmosphère",
+        "L'atmosphère est l'enveloppe gazeuse de la Terre ; elle protège la vie et se divise en couches aux caractéristiques différentes.",
+        [
+          "L'air contient surtout de l'azote et de l'oxygène, avec d'autres gaz en faibles proportions.",
+          "La troposphère est la couche basse où se produisent les principaux phénomènes météorologiques.",
+          "La stratosphère contient la majeure partie de l'ozone atmosphérique.",
+          "La température et la densité de l'air varient avec l'altitude dans les couches supérieures."
+        ],
+        [
+          "troposphère",
+          "stratosphère",
+          "ozone",
+          "air"
+        ],
+        "Malala place nuages, avions et couche d'ozone sur une coupe verticale de l'atmosphère.",
+        "Lire les couches depuis le sol et relier chacune à une fonction."
+      ],
+      [
+        "Les éléments du climat",
+        "éléments du climat",
+        "Les principaux éléments du climat observés sont la température, le vent et les précipitations.",
+        [
+          "Le thermomètre mesure la température de l'air.",
+          "La girouette indique la direction du vent et l'anémomètre sa vitesse.",
+          "Le pluviomètre mesure la hauteur des précipitations.",
+          "Les relevés réguliers permettent de comparer les périodes et les lieux."
+        ],
+        [
+          "température",
+          "vent",
+          "précipitations",
+          "instrument"
+        ],
+        "Miora effectue les relevés d'une petite station météorologique scolaire.",
+        "Associer chaque élément à son unité, son instrument et sa variation."
+      ],
+      [
+        "Les zones climatiques du monde",
+        "zone climatique",
+        "Les grandes zones climatiques se répartissent surtout selon la latitude et l'énergie solaire reçue.",
+        [
+          "La zone chaude se situe entre les deux tropiques.",
+          "Les zones tempérées s'étendent des tropiques aux cercles polaires.",
+          "Les zones froides entourent les pôles au-delà des cercles polaires.",
+          "Relief, altitude, vents et océans créent des différences à l'intérieur de chaque zone."
+        ],
+        [
+          "zone chaude",
+          "zone tempérée",
+          "zone froide",
+          "latitude"
+        ],
+        "Fanja colore les zones climatiques sur un globe portant les parallèles remarquables.",
+        "Localiser les zones avant d'en décrire les températures et les pluies."
+      ],
+      [
+        "Les problèmes climatiques actuels",
+        "problème climatique",
+        "Le trou de la couche d'ozone et le dérèglement climatique sont deux problèmes distincts qui modifient la protection ou l'équilibre de l'atmosphère.",
+        [
+          "L'amincissement de l'ozone stratosphérique augmente certains rayonnements ultraviolets au sol.",
+          "Les gaz à effet de serre supplémentaires renforcent le réchauffement global.",
+          "Le dérèglement climatique modifie températures, pluies et événements extrêmes.",
+          "Les causes et les solutions diffèrent ; il faut éviter de confondre ozone et effet de serre."
+        ],
+        [
+          "couche d'ozone",
+          "effet de serre",
+          "dérèglement climatique"
+        ],
+        "Solo compare deux schémas : l'un sur l'ozone, l'autre sur les gaz à effet de serre.",
+        "Identifier précisément le mécanisme avant de proposer une solution."
+      ],
+      [
+        "Les mesures face aux problèmes climatiques",
+        "action climatique",
+        "L'action climatique associe adaptation, résilience et atténuation pour réduire les risques et les causes du dérèglement.",
+        [
+          "L'adaptation ajuste les activités aux effets présents ou attendus.",
+          "La résilience est la capacité à résister, se rétablir et apprendre après un choc.",
+          "L'atténuation réduit les émissions ou augmente le stockage du carbone.",
+          "De bonnes pratiques agricoles protègent l'eau, le sol et les récoltes face aux aléas."
+        ],
+        [
+          "adaptation",
+          "résilience",
+          "atténuation",
+          "pratique agricole"
+        ],
+        "Sitraka prépare avec des agriculteurs un plan combinant économie d'eau, arbres et cultures adaptées.",
+        "Choisir une mesure selon le risque, les causes et les moyens locaux."
+      ],
+      [
+        "Le cycle de l'eau",
+        "cycle de l'eau",
+        "Le cycle de l'eau est la circulation continue de l'eau entre océans, atmosphère, continents et sous-sol.",
+        [
+          "L'évaporation et l'évapotranspiration envoient de la vapeur dans l'atmosphère.",
+          "La condensation forme les nuages puis les précipitations ramènent l'eau au sol.",
+          "Le ruissellement alimente les cours d'eau.",
+          "L'infiltration recharge le sol et les nappes souterraines avant le retour vers les océans."
+        ],
+        [
+          "évaporation",
+          "condensation",
+          "précipitation",
+          "infiltration"
+        ],
+        "Onja suit sur un schéma le trajet d'une goutte depuis l'océan jusqu'à une rivière.",
+        "Présenter le cycle comme une circulation sans début ni fin unique."
+      ],
+      [
+        "Les eaux continentales",
+        "eaux continentales",
+        "Les eaux continentales regroupent les cours d'eau, les lacs et les eaux souterraines présents sur les continents.",
+        [
+          "Ruisseaux, rivières et fleuves s'organisent dans des bassins versants.",
+          "Les lacs occupent des dépressions naturelles ou des retenues aménagées.",
+          "Les nappes souterraines remplissent les pores et fissures des roches.",
+          "Le régime d'un cours d'eau varie avec les pluies, la fonte et les prélèvements."
+        ],
+        [
+          "fleuve",
+          "lac",
+          "nappe souterraine",
+          "bassin versant"
+        ],
+        "Tsanta suit un affluent jusqu'au fleuve et repère un lac et une nappe sur une coupe.",
+        "Distinguer eaux de surface et eaux souterraines puis expliquer leur alimentation."
+      ],
+      [
+        "Les eaux marines",
+        "eaux marines",
+        "Les mers et les océans sont des eaux salées en mouvement, caractérisées par leur salinité, leur température, leurs marées et leurs courants.",
+        [
+          "Un océan est plus vaste et profond qu'une mer, généralement plus proche des continents.",
+          "La salinité dépend notamment de l'évaporation, des pluies et des apports fluviaux.",
+          "Les marées sont des variations périodiques du niveau de la mer.",
+          "Les courants marins déplacent de grandes masses d'eau et influencent les climats."
+        ],
+        [
+          "mer",
+          "océan",
+          "salinité",
+          "marée",
+          "courant marin"
+        ],
+        "Fy compare une carte des courants à la température des côtes voisines.",
+        "Décrire une eau marine par sa position, sa salinité, sa température et ses mouvements."
+      ],
+      [
+        "Climat, hydrographie et végétation",
+        "interrelation des milieux",
+        "Le climat, le réseau hydrographique et la végétation sont interdépendants : chacun influence la répartition et le fonctionnement des autres.",
+        [
+          "Les précipitations alimentent les rivières, les lacs, les nappes et les plantes.",
+          "La température et l'eau déterminent en grande partie les types de végétation.",
+          "La végétation ralentit le ruissellement, favorise l'infiltration et protège les sols.",
+          "Les eaux et les plantes renvoient de l'humidité vers l'atmosphère."
+        ],
+        [
+          "réseau hydrographique",
+          "végétation",
+          "précipitation",
+          "interdépendance"
+        ],
+        "Bemiray compare une carte climatique, une carte hydrographique et une carte de végétation de la même région.",
+        "Superposer les informations pour expliquer les relations plutôt que les étudier séparément."
+      ]
+    ]
+  },
+  {
+    "id": "unite4",
+    "nom": "UNITÉ 4 — CARACTÉRISTIQUES DE LA POPULATION MONDIALE",
+    "theme": "Caractéristiques de la population mondiale",
+    "first": 35,
+    "revNum": 43,
+    "examNum": 44,
+    "duration": 8,
+    "intro": "Cette unité analyse la répartition inégale de la population mondiale, les foyers de forte, moyenne et faible densité, les facteurs physiques, historiques, socioculturels et économiques, puis l'évolution due à la natalité, la mortalité et aux migrations.",
+    "opening": [
+      [
+        "La population est-elle également répartie sur Terre ?",
+        "Non, certaines régions sont très peuplées et d'autres presque vides."
+      ],
+      [
+        "Qu'est-ce qu'une ville ?",
+        "Une ville est un espace densément bâti où se concentrent habitants, activités et services."
+      ]
+    ],
+    "seeds": [
+      [
+        "La répartition et la densité de la population",
+        "densité de population",
+        "La densité de population est le nombre moyen d'habitants par kilomètre carré ; elle sert à comparer l'occupation des territoires.",
+        [
+          "Elle se calcule en divisant la population par la superficie.",
+          "La population mondiale est très inégalement répartie.",
+          "Une moyenne nationale peut masquer de fortes différences régionales.",
+          "Une carte de densité fait apparaître foyers de peuplement et espaces peu peuplés."
+        ],
+        [
+          "population",
+          "superficie",
+          "habitant par km²"
+        ],
+        "Rija compare deux territoires de même population mais de superficies différentes.",
+        "Calculer puis interpréter la densité sans la confondre avec l'effectif total."
+      ],
+      [
+        "Les foyers de forte densité",
+        "foyer de forte densité",
+        "Un foyer de forte densité est une vaste région où la population est nombreuse et concentrée de manière durable.",
+        [
+          "L'Asie de l'Est et l'Asie du Sud regroupent les principaux foyers mondiaux.",
+          "L'Europe forme un autre foyer ancien et urbanisé.",
+          "Les vallées, plaines fertiles, littoraux et grandes villes concentrent souvent les habitants.",
+          "L'ancienneté du peuplement et le développement économique renforcent ces concentrations."
+        ],
+        [
+          "Asie de l'Est",
+          "Asie du Sud",
+          "Europe",
+          "concentration"
+        ],
+        "Hanitra repère les zones les plus foncées sur une carte mondiale des densités.",
+        "Localiser chaque foyer et expliquer sa concentration par plusieurs facteurs."
+      ],
+      [
+        "Les densités moyennes et faibles",
+        "faible densité",
+        "Les espaces de densité moyenne alternent concentrations et vides ; les espaces de faible densité comptent peu d'habitants sur de vastes surfaces.",
+        [
+          "Les déserts chauds et froids sont difficiles à peupler durablement.",
+          "Les hautes montagnes limitent transports, cultures et installation.",
+          "Certaines forêts denses restent peu accessibles.",
+          "Des ressources, une ville ou un axe de transport peuvent créer une concentration locale."
+        ],
+        [
+          "densité moyenne",
+          "désert humain",
+          "contrainte"
+        ],
+        "Nantenaina compare le Sahara, l'Amazonie, l'Himalaya et un littoral peuplé.",
+        "Décrire le niveau de densité puis rechercher les contraintes et les exceptions."
+      ],
+      [
+        "Les facteurs physiques de la répartition",
+        "facteur physique",
+        "Les facteurs physiques sont les caractéristiques naturelles qui favorisent ou limitent l'installation des populations.",
+        [
+          "Un climat tempéré ou suffisamment arrosé facilite de nombreuses activités.",
+          "Les plaines et vallées favorisent l'agriculture, les constructions et les transports.",
+          "La disponibilité de l'eau est essentielle aux habitants et aux productions.",
+          "Les risques, le froid, l'aridité, la pente ou l'isolement peuvent limiter le peuplement."
+        ],
+        [
+          "climat",
+          "relief",
+          "eau",
+          "contrainte naturelle"
+        ],
+        "Bako explique pourquoi une vallée fertile est plus peuplée qu'un haut massif voisin.",
+        "Un milieu n'impose pas seul le peuplement : les sociétés peuvent aménager les contraintes."
+      ],
+      [
+        "Les facteurs historiques et socioculturels",
+        "facteur historique",
+        "L'histoire et les choix socioculturels expliquent la permanence ou le déplacement de nombreux peuplements.",
+        [
+          "Un peuplement ancien laisse des villes, des cultures et des réseaux durables.",
+          "Les migrations, conflits et frontières ont redistribué les populations.",
+          "Les lieux religieux, familiaux ou identitaires peuvent attirer ou retenir les habitants.",
+          "Les politiques de peuplement et d'aménagement influencent aussi la répartition."
+        ],
+        [
+          "histoire",
+          "migration",
+          "culture",
+          "frontière"
+        ],
+        "Zo recherche pourquoi une vieille ville reste dense malgré un site naturel peu favorable.",
+        "Associer les héritages du passé aux choix actuels des sociétés."
+      ],
+      [
+        "Les facteurs économiques de la répartition",
+        "facteur économique",
+        "Les emplois, les marchés, les services et les réseaux attirent la population vers certains territoires.",
+        [
+          "Les régions agricoles productives fixent une population rurale importante.",
+          "Industries, commerces et services concentrent les habitants dans les villes.",
+          "Ports, routes et grands axes facilitent activités et échanges.",
+          "Les inégalités d'emploi et de revenu provoquent des déplacements de population."
+        ],
+        [
+          "emploi",
+          "activité",
+          "réseau",
+          "attractivité"
+        ],
+        "Mickaël observe la croissance d'une ville autour d'un port, d'usines et d'un carrefour routier.",
+        "Relier l'attractivité d'un lieu aux emplois, services et connexions disponibles."
+      ],
+      [
+        "La croissance naturelle de la population",
+        "croissance naturelle",
+        "La croissance naturelle résulte de la différence entre natalité et mortalité au sein d'une population.",
+        [
+          "Le taux de natalité mesure la fréquence des naissances.",
+          "Le taux de mortalité mesure la fréquence des décès.",
+          "Lorsque les naissances dépassent les décès, l'accroissement naturel est positif.",
+          "Une courbe permet d'observer la vitesse et les phases de l'évolution démographique."
+        ],
+        [
+          "natalité",
+          "mortalité",
+          "accroissement naturel",
+          "courbe"
+        ],
+        "Elia interprète une courbe et compare le nombre de naissances et de décès.",
+        "Calculer la différence puis expliquer son effet sur l'évolution du nombre d'habitants."
+      ],
+      [
+        "Le solde migratoire et l'évolution démographique",
+        "solde migratoire",
+        "Le solde migratoire est la différence entre les arrivées et les départs ; il complète l'accroissement naturel pour expliquer l'évolution totale.",
+        [
+          "L'immigration correspond à l'arrivée de personnes dans un territoire.",
+          "L'émigration correspond au départ de personnes vers un autre territoire.",
+          "Un solde positif augmente la population et un solde négatif la réduit.",
+          "Évolution totale égale accroissement naturel plus solde migratoire."
+        ],
+        [
+          "immigration",
+          "émigration",
+          "mouvement migratoire",
+          "évolution totale"
+        ],
+        "Tovo étudie un tableau de naissances, décès, arrivées et départs d'un pays.",
+        "Distinguer le mouvement naturel du mouvement migratoire avant de les additionner."
+      ]
+    ]
+  },
+  {
+    "id": "unite5",
+    "nom": "UNITÉ 5 — LA POPULATION FACE AUX PROBLÈMES ENVIRONNEMENTAUX",
+    "theme": "La population face aux problèmes environnementaux",
+    "first": 45,
+    "revNum": 57,
+    "examNum": 58,
+    "duration": 12,
+    "intro": "Cette unité étudie l'érosion, les lavaka, les terres dénudées, la désertification et la sécheresse, leurs facteurs, les manifestations, causes et conséquences du dérèglement climatique, ainsi que les solutions d'adaptation et de sensibilisation.",
+    "opening": [
+      [
+        "Qu'est-ce qu'une pollution ?",
+        "C'est l'introduction de substances ou d'énergies nuisibles dans un milieu."
+      ],
+      [
+        "Pourquoi protéger une forêt ?",
+        "Elle abrite des espèces, protège les sols, stocke du carbone et fournit des ressources."
+      ]
+    ],
+    "seeds": [
+      [
+        "L'érosion et les lavaka",
+        "érosion",
+        "L'érosion enlève et transporte les matériaux du sol ; le lavaka est une grande excavation d'érosion qui entaille certains versants de Madagascar.",
+        [
+          "Le ruissellement concentré creuse rigoles, ravines puis excavations.",
+          "Les pentes, les pluies intenses et des sols fragiles augmentent le risque.",
+          "La disparition de la végétation accélère l'érosion.",
+          "Les pertes de sol réduisent la fertilité et chargent les rivières en sédiments."
+        ],
+        [
+          "lavaka",
+          "ruissellement",
+          "ravine",
+          "sédiment"
+        ],
+        "Dera observe une ravine profonde sur un versant dénudé après de fortes pluies.",
+        "Maintenir la couverture végétale et ralentir le ruissellement."
+      ],
+      [
+        "Les terres dénudées",
+        "terre dénudée",
+        "Une terre dénudée est un sol privé d'une couverture végétale suffisante et directement exposé au soleil, au vent et à la pluie.",
+        [
+          "Les défrichements, feux, coupes et surpâturage peuvent retirer la couverture.",
+          "La pluie frappe le sol et emporte les particules fines.",
+          "L'humidité et la matière organique diminuent rapidement.",
+          "Paillage, cultures de couverture et reboisement protègent la surface."
+        ],
+        [
+          "couverture végétale",
+          "défrichement",
+          "surpâturage"
+        ],
+        "Fifaliana compare une parcelle nue et une parcelle couverte pendant une averse.",
+        "Ne jamais laisser durablement un sol fragile sans protection."
+      ],
+      [
+        "La désertification",
+        "désertification",
+        "La désertification est la dégradation des terres dans les zones sèches sous l'effet des variations climatiques et des activités humaines.",
+        [
+          "La végétation se raréfie et le sol perd sa fertilité.",
+          "Surpâturage, déboisement et pratiques inadaptées aggravent l'aridité.",
+          "La production agricole et les ressources en eau diminuent.",
+          "Agroforesterie, gestion des pâturages et économie d'eau limitent le processus."
+        ],
+        [
+          "zone sèche",
+          "fertilité",
+          "aridité",
+          "agroforesterie"
+        ],
+        "Saholy suit le recul de la végétation autour d'un village soumis à une forte pression sur les terres.",
+        "Adapter les prélèvements à la capacité de renouvellement du milieu."
+      ],
+      [
+        "La sécheresse",
+        "sécheresse",
+        "La sécheresse est une période anormalement longue de déficit de précipitations entraînant un manque d'eau pour les milieux et les sociétés.",
+        [
+          "La sécheresse météorologique commence par un déficit de pluie.",
+          "Les sols, cours d'eau et nappes peuvent ensuite manquer d'eau.",
+          "Cultures, élevage, santé et alimentation sont affectés.",
+          "Stockage, économies, cultures adaptées et alerte réduisent les effets."
+        ],
+        [
+          "déficit de pluie",
+          "pénurie",
+          "réserve d'eau"
+        ],
+        "Bemiray constate la baisse d'un puits et le flétrissement des cultures pendant une longue période sèche.",
+        "Surveiller les réserves et organiser les usages avant la pénurie."
+      ],
+      [
+        "Les facteurs de dégradation de l'environnement",
+        "facteur de dégradation",
+        "La dégradation de l'environnement résulte de facteurs humains, technologiques et naturels qui se combinent.",
+        [
+          "Les facteurs humains comprennent surexploitation, déforestation, feux et mauvaises pratiques.",
+          "Les facteurs technologiques incluent rejets, équipements polluants et procédés mal contrôlés.",
+          "Cyclones, sécheresses, éruptions ou mouvements de terrain sont des facteurs naturels.",
+          "La vulnérabilité augmente lorsque l'aménagement ignore les limites du milieu."
+        ],
+        [
+          "facteur humain",
+          "facteur technologique",
+          "facteur naturel"
+        ],
+        "Lantosoa classe les causes d'une dégradation observée près d'une rivière et d'un atelier.",
+        "Identifier plusieurs causes et leurs relations avant d'attribuer une responsabilité."
+      ],
+      [
+        "Sécheresse et désertification : signes du dérèglement",
+        "manifestation climatique",
+        "Une manifestation climatique est un changement observable du climat ou de ses effets dans les milieux et les activités.",
+        [
+          "Certaines régions connaissent des sécheresses plus longues ou plus fréquentes.",
+          "La désertification peut s'aggraver lorsque l'aridité et les pressions humaines se combinent.",
+          "Les calendriers agricoles deviennent moins prévisibles.",
+          "Une observation locale doit être comparée à des données sur une longue durée."
+        ],
+        [
+          "dérèglement",
+          "sécheresse",
+          "désertification",
+          "saison"
+        ],
+        "Faniry compare les témoignages agricoles avec une série de pluies enregistrées sur une longue période.",
+        "Distinguer un épisode isolé d'une évolution climatique durable."
+      ],
+      [
+        "La fonte des glaciers et la perturbation des saisons",
+        "fonte des glaciers",
+        "La hausse durable des températures accélère la perte de nombreux glaciers et perturbe le rythme habituel des saisons.",
+        [
+          "Le recul des glaciers modifie les réserves d'eau de certaines régions.",
+          "La fonte des glaces continentales contribue à l'élévation du niveau marin.",
+          "Les débuts et durées des saisons peuvent devenir irréguliers.",
+          "Les plantes, animaux et activités agricoles doivent s'adapter à ces changements."
+        ],
+        [
+          "glacier",
+          "saison",
+          "niveau marin",
+          "température"
+        ],
+        "Miangaly compare des images d'un glacier et un calendrier cultural modifié.",
+        "Relier chaque manifestation à une tendance mesurée et à ses conséquences."
+      ],
+      [
+        "Déforestation, culture sur brûlis et feux",
+        "cause du dérèglement",
+        "La déforestation, la culture sur brûlis et les feux de brousse émettent du carbone et réduisent la capacité de la végétation à le stocker.",
+        [
+          "Couper ou brûler la forêt libère une partie du carbone accumulé.",
+          "La disparition des arbres réduit l'absorption future du dioxyde de carbone.",
+          "Les feux répétés dégradent sols, habitats et cycle local de l'eau.",
+          "Protection, alternatives agricoles et reboisement réduisent ces causes."
+        ],
+        [
+          "déforestation",
+          "culture sur brûlis",
+          "feu de brousse",
+          "carbone"
+        ],
+        "Andry observe les effets d'un feu répété sur un versant auparavant boisé.",
+        "Éviter les brûlis incontrôlés et restaurer durablement la végétation."
+      ],
+      [
+        "Pollutions, énergies fossiles, industrie et transports",
+        "émission de gaz à effet de serre",
+        "Les énergies fossiles, l'industrie, les transports et certaines pollutions augmentent les gaz à effet de serre dans l'atmosphère.",
+        [
+          "La combustion du charbon, du pétrole et du gaz émet du dioxyde de carbone.",
+          "L'industrie et les transports consomment beaucoup d'énergie fossile.",
+          "Certains déchets et activités agricoles émettent du méthane.",
+          "Sobriété, efficacité et énergies renouvelables réduisent les émissions."
+        ],
+        [
+          "énergie fossile",
+          "industrie",
+          "transport",
+          "dioxyde de carbone"
+        ],
+        "Hanta relie une centrale, une usine et des véhicules à un schéma de l'effet de serre.",
+        "Réduire les émissions à la source plutôt que seulement réparer leurs effets."
+      ],
+      [
+        "Réchauffement, niveau marin et insécurité alimentaire",
+        "conséquence climatique",
+        "Le dérèglement climatique réchauffe la Terre, élève le niveau marin, perturbe les saisons culturales et menace la sécurité alimentaire.",
+        [
+          "Les vagues de chaleur affectent santé, eau, cultures et élevage.",
+          "La montée de la mer expose les littoraux bas à l'érosion et aux submersions.",
+          "Les pluies irrégulières réduisent ou déplacent certaines productions.",
+          "La baisse des récoltes et la hausse des prix aggravent l'insécurité alimentaire."
+        ],
+        [
+          "réchauffement",
+          "montée des eaux",
+          "saison culturale",
+          "insécurité alimentaire"
+        ],
+        "Rindra étudie les difficultés d'un village côtier cultivant des terres menacées par le sel.",
+        "Identifier les personnes et activités les plus exposées afin de préparer l'adaptation."
+      ],
+      [
+        "Migrations forcées, maladies et écosystèmes",
+        "impact humain et écologique",
+        "Les effets climatiques peuvent forcer des déplacements, favoriser certaines maladies et perturber les écosystèmes.",
+        [
+          "La perte d'eau, de terres ou d'habitations peut provoquer une migration forcée.",
+          "Chaleur, inondations et changements d'aires d'espèces influencent certains risques sanitaires.",
+          "Des espèces se déplacent, déclinent ou perdent leur habitat.",
+          "Les populations les plus pauvres disposent souvent de moins de moyens de protection."
+        ],
+        [
+          "migration forcée",
+          "réfugié",
+          "maladie",
+          "écosystème"
+        ],
+        "Vololona suit la situation d'une famille déplacée après la répétition d'aléas climatiques.",
+        "Associer protection sociale, santé, conservation et adaptation territoriale."
+      ],
+      [
+        "S'adapter et sensibiliser face au dérèglement",
+        "adaptation climatique",
+        "L'adaptation climatique réduit les dommages en ajustant les pratiques, les équipements et l'organisation des communautés.",
+        [
+          "Le reboisement protège les sols, l'eau et contribue à stabiliser le cycle local de l'eau.",
+          "L'économie verte développe des activités sobres et des énergies renouvelables.",
+          "La sensibilisation prépare la communauté aux risques et aux changements de pratiques.",
+          "Un mini-projet précise le problème, le public, les actions, les responsables et les indicateurs."
+        ],
+        [
+          "reboisement",
+          "économie verte",
+          "énergie renouvelable",
+          "sensibilisation"
+        ],
+        "Rasoa et sa classe conçoivent une campagne locale associant arbres, économie d'énergie et préparation aux risques.",
+        "Transformer l'information en un projet réalisable, suivi et partagé."
+      ]
+    ]
+  },
+  {
+    "id": "unite6",
+    "nom": "UNITÉ 6 — ACTIVITÉS ÉCONOMIQUES DE LA POPULATION MONDIALE",
+    "theme": "Activités économiques de la population mondiale",
+    "first": 59,
+    "revNum": 65,
+    "examNum": 66,
+    "duration": 6,
+    "intro": "Cette unité classe les activités dans les secteurs primaire, secondaire et tertiaire, montre leur interdépendance, puis définit la mondialisation de l'économie, ses acteurs, ses facteurs et ses conséquences.",
+    "opening": [
+      [
+        "Qu'est-ce qu'une activité économique ?",
+        "C'est une activité qui produit ou échange des biens et des services."
+      ],
+      [
+        "D'où viennent les produits vendus au marché ?",
+        "Ils proviennent de l'agriculture, de l'artisanat, de l'industrie ou du commerce."
+      ]
+    ],
+    "seeds": [
+      [
+        "Les trois secteurs d'activités économiques",
+        "secteurs économiques",
+        "Les activités économiques sont classées en secteurs primaire, secondaire et tertiaire selon leur place dans la production des biens et services.",
+        [
+          "Le secteur primaire exploite ou cultive les ressources naturelles.",
+          "Le secteur secondaire transforme les matières premières par l'artisanat et l'industrie.",
+          "Le secteur tertiaire fournit des services, du commerce et des transports.",
+          "Les secteurs sont interdépendants dans les chaînes de production."
+        ],
+        [
+          "primaire",
+          "secondaire",
+          "tertiaire",
+          "activité"
+        ],
+        "Manoa suit le parcours du riz depuis la rizière jusqu'au repas vendu dans un restaurant.",
+        "Identifier la fonction de chaque activité avant de la classer."
+      ],
+      [
+        "Espaces économiques et interdépendance des secteurs",
+        "espace économique",
+        "Un espace économique est organisé par des activités, des acteurs et des réseaux qui relient production, transformation, distribution et consommation.",
+        [
+          "Les espaces agricoles dépendent des sols, de l'eau, des marchés et des techniques.",
+          "Les espaces artisanaux et industriels transforment les matières et concentrent des emplois.",
+          "Transports, commerce, finance et information relient les secteurs.",
+          "Une perturbation dans un secteur se répercute sur les autres."
+        ],
+        [
+          "espace agricole",
+          "espace industriel",
+          "interdépendance",
+          "réseau"
+        ],
+        "Fetra localise sur une carte mondiale les lieux successifs de production et de transformation d'un produit.",
+        "Étudier les flux pour comprendre les relations entre secteurs et territoires."
+      ],
+      [
+        "La mondialisation de l'économie",
+        "mondialisation",
+        "La mondialisation de l'économie est l'intensification des échanges et des interdépendances entre les territoires à l'échelle mondiale.",
+        [
+          "Les marchandises, capitaux, informations, services et personnes circulent davantage.",
+          "Les étapes d'une même production peuvent être réparties entre plusieurs pays.",
+          "Les territoires sont reliés par des réseaux matériels et numériques.",
+          "La mondialisation intègre les économies mais de manière inégale."
+        ],
+        [
+          "flux",
+          "interdépendance",
+          "réseau mondial",
+          "échange"
+        ],
+        "Faly suit un vêtement conçu, produit, transporté et vendu dans plusieurs pays.",
+        "Repérer les lieux, acteurs et flux d'une chaîne mondiale."
+      ],
+      [
+        "Les acteurs de la mondialisation",
+        "acteur de la mondialisation",
+        "Les acteurs de la mondialisation sont les organisations et les personnes qui décident, produisent, financent, transportent, réglementent ou consomment à l'échelle mondiale.",
+        [
+          "Les entreprises organisent des chaînes de production et de vente internationales.",
+          "Les États aménagent, réglementent et négocient les échanges.",
+          "Les organisations internationales, banques et associations influencent les règles et projets.",
+          "Travailleurs, migrants et consommateurs participent aux flux par leurs choix."
+        ],
+        [
+          "entreprise",
+          "État",
+          "organisation internationale",
+          "consommateur"
+        ],
+        "Miora identifie les décisions de plusieurs acteurs autour de l'exportation d'un produit malgache.",
+        "Préciser pour chaque acteur son rôle, son pouvoir et sa responsabilité."
+      ],
+      [
+        "Les facteurs de la mondialisation",
+        "facteur de mondialisation",
+        "Les progrès des transports, des télécommunications, du numérique et l'ouverture des échanges accélèrent la mondialisation.",
+        [
+          "Les navires, ports, avions et routes transportent plus vite de grandes quantités.",
+          "Internet transmet instantanément informations, commandes et paiements.",
+          "Les accords commerciaux facilitent certains échanges entre pays.",
+          "Les investissements et la recherche de marchés répartissent les activités à l'échelle mondiale."
+        ],
+        [
+          "transport",
+          "télécommunication",
+          "numérique",
+          "accord commercial"
+        ],
+        "Tsiry compare le temps nécessaire pour envoyer une information et une marchandise entre deux continents.",
+        "Distinguer les réseaux d'information, de transport et de financement."
+      ],
+      [
+        "Les conséquences de la mondialisation",
+        "conséquence de la mondialisation",
+        "La mondialisation crée des débouchés, des emplois et des échanges de connaissances, mais aussi des dépendances, inégalités et impacts environnementaux.",
+        [
+          "Les consommateurs accèdent à davantage de produits et de services.",
+          "Des territoires attirent investissements, technologies et emplois.",
+          "La concurrence peut fragiliser certains producteurs et travailleurs.",
+          "Les transports, extractions et productions augmentent parfois pollution et émissions."
+        ],
+        [
+          "débouché",
+          "concurrence",
+          "dépendance",
+          "inégalité"
+        ],
+        "Mamy compare les avantages et les difficultés d'une filière locale intégrée au marché mondial.",
+        "Évaluer ensemble les bénéfices, les risques et leur répartition entre acteurs."
+      ]
+    ]
+  },
+  {
+    "id": "unite7",
+    "nom": "UNITÉ 7 — GESTION DES RESSOURCES NATURELLES",
+    "theme": "Gestion des ressources naturelles",
+    "first": 67,
+    "revNum": 79,
+    "examNum": 80,
+    "duration": 12,
+    "intro": "Cette unité classe les ressources renouvelables et non renouvelables, analyse les causes de leur épuisement, définit la durabilité, l'utilisation rationnelle et les luttes contre la dégradation, puis prépare un mini-projet local de gestion durable.",
+    "opening": [
+      [
+        "Qu'est-ce qu'une ressource naturelle ?",
+        "C'est un élément de la nature utilisé pour satisfaire un besoin humain."
+      ],
+      [
+        "Une ressource renouvelable est-elle inépuisable ?",
+        "Non, elle peut s'épuiser si elle est consommée plus vite qu'elle ne se renouvelle."
+      ]
+    ],
+    "seeds": [
+      [
+        "Les ressources naturelles renouvelables",
+        "ressource renouvelable",
+        "Une ressource renouvelable peut se reconstituer à l'échelle humaine si son milieu et son rythme de renouvellement sont respectés.",
+        [
+          "Les ressources faunistiques regroupent les animaux sauvages utiles ou protégés.",
+          "Les ressources floristiques et forestières fournissent plantes, bois et services écologiques.",
+          "Les ressources halieutiques proviennent des eaux et se renouvellent par reproduction.",
+          "L'eau se renouvelle par son cycle mais reste limitée et inégalement accessible."
+        ],
+        [
+          "faune",
+          "flore",
+          "forêt",
+          "halieutique",
+          "eau"
+        ],
+        "Santatra recense autour de sa localité l'eau, les plantes, les animaux, la forêt et les poissons.",
+        "Comparer le prélèvement à la capacité réelle de renouvellement."
+      ],
+      [
+        "Les ressources naturelles non renouvelables",
+        "ressource non renouvelable",
+        "Une ressource non renouvelable existe en stock limité et se forme beaucoup plus lentement qu'elle n'est consommée.",
+        [
+          "Les ressources minières fournissent métaux, minéraux et matériaux.",
+          "Le pétrole est une ressource énergétique fossile extraite du sous-sol.",
+          "Un gisement devient exploitable selon sa qualité, sa quantité, la technique et le coût.",
+          "Réduction, substitution et recyclage ralentissent l'épuisement des stocks."
+        ],
+        [
+          "minerai",
+          "gisement",
+          "pétrole",
+          "stock"
+        ],
+        "Lalaina compare le temps de formation d'un minerai à la vitesse de son extraction.",
+        "Prévoir l'ensemble du cycle d'une ressource limitée, de l'extraction au recyclage."
+      ],
+      [
+        "Croissance démographique et pression sur les ressources",
+        "pression démographique",
+        "La croissance et la concentration de la population augmentent les besoins en eau, alimentation, énergie, terres et matériaux.",
+        [
+          "Natalité et mortalité déterminent l'accroissement naturel.",
+          "La densité influence l'intensité locale des besoins et des rejets.",
+          "Le solde migratoire et l'exode rural déplacent la demande entre territoires.",
+          "La pression dépend aussi des modes de consommation et des techniques."
+        ],
+        [
+          "natalité",
+          "mortalité",
+          "densité",
+          "solde migratoire",
+          "exode rural"
+        ],
+        "Rado compare l'évolution des besoins d'une ville recevant de nombreux nouveaux habitants.",
+        "Relier nombre d'habitants, consommation par personne et capacité du milieu."
+      ],
+      [
+        "L'exploitation abusive et illicite",
+        "exploitation abusive",
+        "L'exploitation abusive prélève trop ou dégrade le milieu ; l'exploitation illicite enfreint les lois et les droits d'usage.",
+        [
+          "La coupe excessive empêche une forêt de se renouveler.",
+          "La pêche interdite ou destructrice réduit les stocks et les habitats.",
+          "L'extraction clandestine peut polluer, provoquer des accidents et priver la collectivité de revenus.",
+          "Surveillance, droits clairs, sanctions et alternatives économiques sont nécessaires."
+        ],
+        [
+          "surexploitation",
+          "illicite",
+          "règle",
+          "surveillance"
+        ],
+        "Voara étudie un prélèvement clandestin effectué dans une zone protégée.",
+        "Respecter les limites écologiques, les droits locaux et les lois."
+      ],
+      [
+        "Le gaspillage et le secteur informel",
+        "gaspillage",
+        "Le gaspillage utilise ou jette une ressource sans satisfaire durablement un besoin ; certaines activités informelles échappent aussi aux règles de gestion.",
+        [
+          "Les pertes d'eau, d'énergie et d'aliments augmentent inutilement les prélèvements.",
+          "Des produits jetables accélèrent l'extraction et l'accumulation de déchets.",
+          "Le secteur informel fournit des revenus mais peut manquer d'équipements et de contrôle.",
+          "Réparation, tri, formalisation et accès à de meilleures techniques réduisent les pertes."
+        ],
+        [
+          "perte",
+          "déchet",
+          "secteur informel",
+          "formalisation"
+        ],
+        "Tsiory mesure l'eau perdue par une fuite et observe la récupération non protégée de matériaux.",
+        "Réduire les pertes tout en améliorant les conditions de travail et le respect des règles."
+      ],
+      [
+        "La notion de durabilité",
+        "durabilité",
+        "La durabilité consiste à satisfaire les besoins présents tout en conservant les ressources et les possibilités des générations futures.",
+        [
+          "La dimension environnementale maintient les écosystèmes et les renouvellements.",
+          "La dimension économique assure une activité viable et économe.",
+          "La dimension sociale recherche équité, santé, participation et droits.",
+          "Une décision durable évalue les effets à long terme et à plusieurs échelles."
+        ],
+        [
+          "environnement",
+          "économie",
+          "équité",
+          "génération future"
+        ],
+        "Narindra compare deux projets utilisant la même ressource mais avec des effets à long terme différents.",
+        "Évaluer ensemble environnement, économie et justice sociale."
+      ],
+      [
+        "Conserver les ressources et respecter les lois",
+        "conservation",
+        "La conservation protège, utilise avec précaution et restaure les ressources afin de maintenir leurs fonctions et leur disponibilité.",
+        [
+          "Les aires protégées préservent des habitats et espèces remarquables.",
+          "Les règles fixent zones, périodes, techniques et quantités autorisées.",
+          "Le respect des lois limite les prélèvements illégaux et clarifie les responsabilités.",
+          "Les communautés locales doivent participer aux décisions et au suivi."
+        ],
+        [
+          "aire protégée",
+          "loi",
+          "quota",
+          "participation"
+        ],
+        "Nirina examine le règlement partagé d'une forêt et les zones réservées à différents usages.",
+        "Connaître la règle, comprendre sa raison et participer à son application."
+      ],
+      [
+        "Améliorer les techniques et valoriser les ressources",
+        "utilisation rationnelle",
+        "L'utilisation rationnelle obtient un service utile avec moins de pertes, moins de dégâts et une meilleure valorisation locale.",
+        [
+          "Des techniques efficaces économisent eau, énergie et matières.",
+          "La transformation locale peut créer davantage de valeur et d'emplois.",
+          "L'entretien des équipements évite pannes, fuites et déchets.",
+          "Le suivi des prélèvements vérifie que l'usage reste dans les limites durables."
+        ],
+        [
+          "efficacité",
+          "technique",
+          "valorisation",
+          "suivi"
+        ],
+        "Fitia compare deux méthodes de production selon leur rendement, leurs pertes et leurs effets.",
+        "Choisir une technique adaptée au milieu, accessible et contrôlable."
+      ],
+      [
+        "Le reboisement et la restauration",
+        "reboisement",
+        "Le reboisement installe des arbres sur un terrain déboisé ; la restauration cherche plus largement à retrouver les fonctions d'un écosystème dégradé.",
+        [
+          "Les espèces choisies doivent convenir au sol, au climat et aux besoins locaux.",
+          "Planter ne suffit pas : les jeunes arbres doivent être protégés et suivis.",
+          "Haies et forêts ralentissent l'érosion et favorisent l'infiltration.",
+          "La restauration d'habitats aide la biodiversité et le stockage du carbone."
+        ],
+        [
+          "plantation",
+          "espèce locale",
+          "restauration",
+          "suivi"
+        ],
+        "Tahiry prépare avec sa classe un espace vert et un suivi des plants autour de l'école.",
+        "Planter au bon endroit, protéger, mesurer la survie et remplacer les pertes."
+      ],
+      [
+        "Énergies renouvelables, compostage et recyclage",
+        "lutte contre la dégradation",
+        "Les énergies renouvelables, le compostage et le recyclage réduisent l'usage de ressources épuisables et la quantité de déchets.",
+        [
+          "L'hydraulique utilise l'eau en mouvement, l'éolien le vent et le solaire le rayonnement.",
+          "Le compostage transforme des matières organiques en amendement du sol.",
+          "Le biogaz valorise la décomposition de matières organiques pour produire un combustible.",
+          "Le recyclage réintroduit des matières dans la production et la biomasse fournit une énergie à gérer durablement."
+        ],
+        [
+          "hydraulique",
+          "éolien",
+          "solaire",
+          "compost",
+          "biogaz",
+          "biomasse"
+        ],
+        "Tiana organise les déchets de l'école entre compost, recyclage et résidus à traiter.",
+        "Réduire d'abord les besoins puis valoriser les flux disponibles localement."
+      ],
+      [
+        "Les types de gestion durable",
+        "gestion durable",
+        "La gestion durable combine des actions humaines et économiques pour adapter les besoins, améliorer la production et partager équitablement les ressources.",
+        [
+          "La gestion humaine comprend information, santé familiale et maîtrise volontaire de la croissance des besoins.",
+          "L'amélioration des techniques augmente l'efficacité sans multiplier les dégâts.",
+          "La création d'emplois durables réduit la dépendance aux exploitations destructrices.",
+          "Le renforcement des secteurs formels améliore règles, sécurité, suivi et contribution collective."
+        ],
+        [
+          "gestion humaine",
+          "production",
+          "emploi",
+          "secteur formel"
+        ],
+        "Mino compare plusieurs solutions sociales et économiques proposées par les acteurs d'une commune.",
+        "Associer accompagnement humain, emplois, techniques et règles plutôt qu'une mesure isolée."
+      ],
+      [
+        "Un mini-projet local de gestion des ressources",
+        "mini-projet",
+        "Un mini-projet de gestion durable part d'un état des lieux, choisit une ressource et organise des actions, des partenariats et une évaluation.",
+        [
+          "L'état des lieux recense ressources, usages, acteurs, problèmes et potentialités.",
+          "L'objectif indique un résultat réalisable et un indicateur mesurable.",
+          "École, familles, associations, FRAM, partenaires et responsables locaux peuvent coopérer.",
+          "Le plan précise tâches, moyens, responsabilités, suivi et amélioration."
+        ],
+        [
+          "état des lieux",
+          "partenaire",
+          "objectif",
+          "indicateur"
+        ],
+        "Mialy et sa classe préparent un jardin scolaire économe en eau avec l'appui de la communauté.",
+        "Observer, consulter, choisir, planifier, agir, mesurer puis améliorer."
+      ]
+    ]
+  }
+]

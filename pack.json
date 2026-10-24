@@ -1257,6 +1257,376 @@
       "id": "geot4_carte_muette_activites",
       "url": "/geot4_carte_muette_activites.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo7_s01",
+      "url": "/geo7_s01.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s02",
+      "url": "/geo7_s02.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s03",
+      "url": "/geo7_s03.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s04",
+      "url": "/geo7_s04.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s05",
+      "url": "/geo7_s05.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s06",
+      "url": "/geo7_s06.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s09",
+      "url": "/geo7_s09.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s10",
+      "url": "/geo7_s10.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s11",
+      "url": "/geo7_s11.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s12",
+      "url": "/geo7_s12.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s13",
+      "url": "/geo7_s13.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s14",
+      "url": "/geo7_s14.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s15",
+      "url": "/geo7_s15.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s16",
+      "url": "/geo7_s16.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s17",
+      "url": "/geo7_s17.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s18",
+      "url": "/geo7_s18.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s21",
+      "url": "/geo7_s21.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s22",
+      "url": "/geo7_s22.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s23",
+      "url": "/geo7_s23.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s24",
+      "url": "/geo7_s24.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s25",
+      "url": "/geo7_s25.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s26",
+      "url": "/geo7_s26.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s27",
+      "url": "/geo7_s27.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s28",
+      "url": "/geo7_s28.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s29",
+      "url": "/geo7_s29.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s30",
+      "url": "/geo7_s30.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s31",
+      "url": "/geo7_s31.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s32",
+      "url": "/geo7_s32.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s35",
+      "url": "/geo7_s35.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s36",
+      "url": "/geo7_s36.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s37",
+      "url": "/geo7_s37.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s38",
+      "url": "/geo7_s38.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s39",
+      "url": "/geo7_s39.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s40",
+      "url": "/geo7_s40.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s41",
+      "url": "/geo7_s41.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s42",
+      "url": "/geo7_s42.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s45",
+      "url": "/geo7_s45.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s46",
+      "url": "/geo7_s46.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s47",
+      "url": "/geo7_s47.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s48",
+      "url": "/geo7_s48.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s49",
+      "url": "/geo7_s49.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s50",
+      "url": "/geo7_s50.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s51",
+      "url": "/geo7_s51.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s52",
+      "url": "/geo7_s52.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s53",
+      "url": "/geo7_s53.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s54",
+      "url": "/geo7_s54.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s55",
+      "url": "/geo7_s55.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s56",
+      "url": "/geo7_s56.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s59",
+      "url": "/geo7_s59.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s60",
+      "url": "/geo7_s60.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s61",
+      "url": "/geo7_s61.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s62",
+      "url": "/geo7_s62.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s63",
+      "url": "/geo7_s63.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s64",
+      "url": "/geo7_s64.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s67",
+      "url": "/geo7_s67.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s68",
+      "url": "/geo7_s68.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s69",
+      "url": "/geo7_s69.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s70",
+      "url": "/geo7_s70.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s71",
+      "url": "/geo7_s71.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s72",
+      "url": "/geo7_s72.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s73",
+      "url": "/geo7_s73.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s74",
+      "url": "/geo7_s74.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s75",
+      "url": "/geo7_s75.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s76",
+      "url": "/geo7_s76.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s77",
+      "url": "/geo7_s77.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_s78",
+      "url": "/geo7_s78.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_planisphere_vide",
+      "url": "/geo7_planisphere_vide.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_coordonnees",
+      "url": "/geo7_coordonnees.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_relief_profil",
+      "url": "/geo7_relief_profil.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_zones_climatiques",
+      "url": "/geo7_zones_climatiques.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_cycle_eau",
+      "url": "/geo7_cycle_eau.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_densites_mondiales",
+      "url": "/geo7_densites_mondiales.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_flux_economiques",
+      "url": "/geo7_flux_economiques.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo7_gestion_ressources",
+      "url": "/geo7_gestion_ressources.png",
+      "type": "image/png"
     }
   ]
 }
