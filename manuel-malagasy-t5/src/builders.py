@@ -342,18 +342,18 @@ def deroulement(doc, s, duree_i, duree_ii, duree_iii):
     return der
 
 
-def seance_complet(doc, s, n, total, durees):
-    """[page] Seho n/N + lohateny + TAKELA-PANOMANAN-DESONA + LEÇON + FANAZARAN-TENA + VALINY."""
+def takela_block(doc, s, n, total, durees):
+    """TAKELA-PANOMANAN-DESONA : méta-table + grille I/II/III (la préparation du maître)."""
     di, dii, diii = durees
-    page_break(doc)
-    para(doc, f"SEHO {n} / {total}", 13, NOIR, True, False, C, bookmark=f"bm_seho{n}")
-    para(doc, s["lohateny"], 16, ROUGE, True, False, C)
     para(doc, "TAKELA-PANOMANAN-DESONA", 13, NOIR, True, False, C)
     meta_table(doc, s, n, total)
     doc.add_paragraph()
     deroulement(doc, s, di, dii, diii)
+    return doc
 
-    page_break(doc)
+
+def lesona_block(doc, s, n):
+    """LESONA : la leçon elle-même (blocs h/l/d/x/n), Fampahalalana fanampiny, à retenir."""
     para(doc, "LESONA", 13, NOIR, True, False, None)
     para(doc, s["lohateny"], 15, ROUGE, True, False, None, bookmark=f"bm_lesona{n}")
     if s.get("libre_img"):
@@ -384,7 +384,11 @@ def seance_complet(doc, s, n, total, durees):
         para(doc, "Ny tsy maintsy tadiavin'ny mpianatra", 12, VERT, True, False, None)
         for line in s["retenir"]:
             para(doc, "• " + line, 11, NOIR, False, False, None, kw_color=BLEU, indent=0.4)
+    return doc
 
+
+def fanazaran_block(doc, s, n):
+    """FANAZARAN-TENA : une consigne par exercice, VALINY imprimé juste en dessous (bordeaux)."""
     para(doc, "FANAZARAN-TENA", 13, NOIR, True, False, None, bookmark=f"bm_fanazarana{n}")
     para(doc, "Avy hatrany ao ambanin'ny fanazaran-tena tsirairay ny VALINY.", 9, NOIR, False, True, C,
          space_after=8)
@@ -399,7 +403,42 @@ def seance_complet(doc, s, n, total, durees):
         para(doc, e["c"], 11, NOIR, True, False, None, kw_color=BORDEAUX)
         for j, line in enumerate(e["cor"], start=1):
             para(doc, line, 11, NOIR, False, False, None, kw_color=BORDEAUX, indent=0.6)
+    return doc
+
+
+def seance_complet(doc, s, n, total, durees):
+    """[page] Seho n/N + lohateny + TAKELA-PANOMANAN-DESONA + LEÇON + FANAZARAN-TENA + VALINY.
+
+    Ordre du manuel tel qu'il est buildé pour l'instant : la fiche de préparation d'abord, la leçon
+    sur la page suivante.
+    """
+    di, dii, diii = durees
+    page_break(doc)
+    para(doc, f"SEHO {n} / {total}", 13, NOIR, True, False, C, bookmark=f"bm_seho{n}")
+    para(doc, s["lohateny"], 16, ROUGE, True, False, C)
+    takela_block(doc, s, n, total, (di, dii, diii))
+    page_break(doc)
+    lesona_block(doc, s, n)
+    fanazaran_block(doc, s, n)
     loharano_block(doc, s)
+    return doc
+
+
+def seance_lesona_aloha(doc, s, n, total, durees):
+    """[page] Fiche modèle : LA LEÇON D'ABORD, la fiche de préparation après.
+
+    Ordre demandé par le propriétaire : LESONA -> FANAZARAN-TENA + VALINY -> LOHARANON-KEVITRA (la page
+    web collée en entier) -> TAKELA-PANOMANAN-DESONA (méta-table + grille I/II/III).
+    """
+    di, dii, diii = durees
+    page_break(doc)
+    para(doc, f"SEHO {n} / {total}", 13, NOIR, True, False, C, bookmark=f"bm_seho{n}")
+    para(doc, s["lohateny"], 16, ROUGE, True, False, C)
+    lesona_block(doc, s, n)
+    fanazaran_block(doc, s, n)
+    loharano_block(doc, s)
+    page_break(doc)
+    takela_block(doc, s, n, total, (di, dii, diii))
     return doc
 
 

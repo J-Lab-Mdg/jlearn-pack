@@ -20,6 +20,8 @@ DUREES_OK = {(3, 14, 3), (5, 20, 5), (7, 30, 8)}
 DOCX = sys.argv[1] if len(sys.argv) > 1 else "output/Echantillon_Malagasy_T5_V1.docx"
 NFICHE = int(sys.argv[2]) if len(sys.argv) > 2 else 1
 MODULE = sys.argv[3] if len(sys.argv) > 3 else None
+# 4e argument « modele » : fiche modèle isolée (page de firafitra + 1 fiche, sans sommaire ni annexe)
+MODELE = len(sys.argv) > 4 and sys.argv[4] == "modele"
 
 with zipfile.ZipFile(DOCX) as z:
     xml = z.read("word/document.xml").decode("utf-8")
@@ -39,7 +41,8 @@ def add(label, got, want, kind="eq"):
 # ---- structure du fichier
 add("sectPr (1 seule section)", xml.count("<w:sectPr"), 1)
 add("préfixe ns0: parasite", xml.count("ns0:"), 0)
-add("gridCol (2 méta + 6 déroulement) x fiches", len(re.findall(r"<w:gridCol", xml)), 8 * NFICHE)
+add("gridCol (2 méta + 6 déroulement) x fiches", len(re.findall(r"<w:gridCol", xml)),
+    8 * NFICHE + (3 if MODELE else 0))   # +3 : tableau des blocs du modèle
 add("Times New Roman déclaré", xml.count('w:ascii="Times New Roman"') >= 50 * NFICHE, True)
 add("aucun champ TOC natif", xml.count("<w:fldChar"), 0)
 
@@ -58,7 +61,7 @@ for k in "123456":
 add("durées = 3 lignes I/II/III uniquement", len(re.findall(r"\(\d+ min\)", body)), 3 * NFICHE)
 add("Kilasy : 5e", body.count("Kilasy : 5e"), NFICHE)
 add("Faharetany vide (ni 'min' collé après)", len(re.findall(r"Faharetany : [A-Z]", body)), 0)
-add("hyperliens sommaire >= fiches*3", xml.count("<w:hyperlink"), 3 * NFICHE, "ge")
+add("hyperliens sommaire >= fiches*3", xml.count("<w:hyperlink"), 0 if MODELE else 3 * NFICHE, "ge")
 add("aucune image dans ce pilote (décision)", xml.count("<w:drawing"), 0)
 # Note culturelle et ohabolana : FACULTATIVES (décision propriétaire 19/10) — on vérifie seulement
 # qu'elles ne sont jamais coupées ni inventées quand elles existent.
@@ -75,13 +78,14 @@ add("espace avant « . » ou « , »",
     len([1 for m in re.findall(r"<w:t[^>]*>([^<]*)</w:t>", xml) if re.search(r"\s[,.](?!\.)", m)]), 0)
 # le tableau de déroulement : 11 lignes x 6 colonnes, ligne 3 fusionnée + grisée
 tbls = re.findall(r"<w:tbl>.*?</w:tbl>", xml, re.S)
-add("tables = 2 par fiche", len(tbls), 2 * NFICHE)
-der = tbls[1] if len(tbls) > 1 else ""
+add("tables = 2 par fiche", len(tbls), 2 * NFICHE + (1 if MODELE else 0))   # +1 : tableau des blocs
+META = tbls[1] if MODELE else tbls[0]            # le modèle intercale le tableau des blocs
+der = tbls[2] if MODELE else (tbls[1] if len(tbls) > 1 else "")
 add("lignes du déroulement", len(re.findall(r"<w:tr\b", der)), 11)
 add("gridCol du déroulement", len(re.findall(r"<w:gridCol", der)), 6)
 add("vMerge/gridSpan de la ligne II. LESONA VAOVAO", len(re.findall(r'w:gridSpan w:val="6"', der)), 1)
 add("fond gris de la ligne fusionnée", der.count('w:fill="D9D9D9"'), 1)
-add("méta-table sans bordures", len(re.findall(r"<w:tbl>", tbls[0])) and tbls[0].count('w:val="none"'), 6)
+add("méta-table sans bordures", len(re.findall(r"<w:tbl>", META)) and META.count('w:val="none"'), 6)
 # le gabarit : chaque ligne de la méta-table est présente une fois par fiche
 for lab in ["Taranja :", "Zana-taranja :", "Lohahevitra :", "Lohateny :", "Tanjona manokana :",
             "Fanovozan-kevitra :", "Kilasy :", "Seho n° :", "Daty :"]:
@@ -143,8 +147,9 @@ if MODULE:
 # le bloc « LOHARANON-KEVITRA » est attendu une fois par fiche déclarant une source, + l'annexe finale
 _SRC = __import__("builders").norm_all(importlib.import_module(MODULE).SEANCES) if MODULE else []
 NFICHES_SRC = len([s for s in _SRC if s.get("loharano")])
+_LOHA = sum(1 for s in _SRC[:NFICHE] if s.get("loharano")) if MODULE else NFICHES_SRC
 add("blocs Loharanon-kevitra (fiches + annexe finale)", body.count("LOHARANON-KEVITRA"),
-    NFICHES_SRC + 1)
+    _LOHA + (0 if MODELE else 1))
 add("aucune date de consultation (« consulté le »)", body.lower().count("consult"), 0)
 
 bad = [c for c in checks if not c[3]]

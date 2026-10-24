@@ -3,6 +3,7 @@
 
     python3 src/build.py data_pilote Echantillon_Malagasy_T5_V1
     python3 src/build.py data_loha1  Manuel_Malagasy_T5_Loha1_V1
+    python3 src/build.py data_loha1  Manuel_Malagasy_T5_Loha1_V1 lesona   # la leçon d'abord
 
 Le module de données doit exposer `SEANCES` (liste de dictionnaires, voir data_pilote.py).
 La numérotation des fiches (`Seho n° N / TOTAL`, signets du sommaire) est calculée ici : les
@@ -16,7 +17,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from docx.shared import Pt
 
-from builders import (new_document, para, seance_complet, sommaire_link, norm_all,
+from builders import (new_document, para, seance_complet, seance_lesona_aloha, sommaire_link, norm_all,
                       PAGEBREAK, ROUGE, NOIR, VERT, BLEU)
 from sources import SOURCES, biblio
 
@@ -123,6 +124,8 @@ def loharano_final(doc, seances):
 def main():
     module = sys.argv[1] if len(sys.argv) > 1 else "data_loha1"
     out_name = sys.argv[2] if len(sys.argv) > 2 else "Manuel_Malagasy_T5_Pilote_V1"
+    # 3e argument « lesona » : la leçon d'abord, la fiche de préparation après (ordre du fiche modèle)
+    lesona_aloha = len(sys.argv) > 3 and sys.argv[3] == "lesona"
     seances = norm_all(importlib.import_module(module).SEANCES)
     notes = (module == "data_pilote")
 
@@ -132,7 +135,10 @@ def main():
     sommaire(doc, seances)
     total = len(seances)
     for idx, s in enumerate(seances, start=1):
-        seance_complet(doc, s, idx, total, s.get("durees", (5, 20, 5)))
+        if lesona_aloha:
+            seance_lesona_aloha(doc, s, idx, total, s.get("durees", (5, 20, 5)))
+        else:
+            seance_complet(doc, s, idx, total, s.get("durees", (5, 20, 5)))
     loharano_final(doc, seances)
     os.makedirs(OUT_DIR, exist_ok=True)
     out = os.path.join(OUT_DIR, out_name + ".docx")

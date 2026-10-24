@@ -80,6 +80,23 @@ Les 4 zana-taranja sont couverts par thème ; aucune image ; `Faharetany` vide ;
 Le propriétaire du projet relit le malagasy ; les corrections sont ensuite propagées par
 recherche/remplacement dans les données, puis re-vérifiées.
 
+## Fiche modèle — la leçon d'abord
+
+`./run.sh src/build_modele.py data_loha1 Manuel_Malagasy_T5_FICHE-MODELE_V1 1` écrit **une fiche modèle** :
+page de firafitra (ce que contient chaque bloc, termes voamarina, isan'ny seho, interdit) puis la fiche dans
+l'ordre demandé — **LESONA → FANAZARAN-TENA + VALINY → LOHARANON-KEVITRA (page entière) →
+TAKELA-PANOMANAN-DESONA**. Avec `0` à la place de `1`, tout le thème est imprimé dans cet ordre.
+
+Le même ordre est obtenu sur un thème entier par un drapeau, sans toucher aux données :
+
+```sh
+./run.sh src/build.py data_loha1 Manuel_Malagasy_T5_Loha1_V1 lesona
+```
+
+Le build garde l'ordre historique (fiche de préparation d'abord) tant que le drapeau n'est pas passé.
+`verify.py` accepte le fichier isolé avec un 4e argument `modele` (pas de sommaire, pas d'annexe,
+tableau des blocs en plus) : `./run.sh src/verify.py output/…-FICHE-MODELE_V1.docx 1 data_loha1 modele`.
+
 ## Termes malgaches : jamais inventés, jamais traduits de force
 
 `refs/EXPLOITATION_DU_PE_T5.txt` (copie du document du propriétaire, à la racine du dépôt sur `main`)
