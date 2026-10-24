@@ -1,7 +1,7 @@
 # Plan & paramètres — **Manuel Malagasy T5 (V1)** — Traitement C
 
 Décisions actées (réponses du 16/10) : **matière = taranja MALAGASY**, **niveau = T5 (7e / CM2)**,
-**Traitement C** (génération de zéro par script), **sources = PE T5 + FRP**, **skill = v20 d'abord**.
+**Traitement C** (génération de zéro par script), **sources = PE T5 + FRP**, skill **v21** appliqué (le §5 ci-dessous décrit v18→v19 : c'est l'état de l'art au moment du plan, la chaîne livrée est passée au-delà).
 Fichiers sources : voir `Analyse-preT5-Manuel-Malagasy.md`.
 
 ---
@@ -184,6 +184,39 @@ utilisée par le skill v21, et le `V.A.` est écrit dans la même cellule que l'
 
 Typographie relevée dans ce même document : espace française avant `:` (1042×) et avant `?` (257×)
 → le contrôle « pas d'espace avant ponctuation » de `verify.py` ne vérifie donc que ` . , !`.
+
+### Le modèle du manuel, tel qu'il est réellement livré (24/10) — fiche modèle V2
+
+Le doute éditorial ci-dessus (`1. / 2.1` du FFMOM contre `I. / II. / III.` du skill) est tranché, et le
+**gabarit de référence** n'est plus le FFMOM mais notre propre fiche modèle :
+`manuel-malagasy-t5/src/data_modele.py` → `output/Manuel_Malagasy_T5_FICHE-MODELE_V2.docx`.
+
+1. **Ordre de la fiche : la leçon d'abord.** `SEHO n / total` · titre · **LESONA** (blocs `h` titre de
+   section, `l` texte lu, `x` règle/exemple, `p` paragraphe, `n` note, `d` dialogue) · `Fampahalalana
+   fanampiny` · `Ny tsy maintsy tadiavin'ny mpianatra` · **FANAZARAN-TENA** puis les `VALINY` (bordeaux) ·
+   **LOHARANON-KEVITRA** · saut de page · **TAKELA-PANOMANAN-DESONA** (méta-table + grille I/II/III), la
+   grille devenant la fiche de préparation de l'adulte, plus le carnet de l'élève. Le drapeau `lesona` de
+   `src/build.py` applique cet ordre à un thème entier sans toucher aux données.
+2. **Le contenu long = la page web collée en entier**, éditée en malgache (`mg.wikipedia.org`) : titre,
+   sections, exemples, `Jereo koa`, `Loharano sy fanamarihana`, mention de licence — rien n'est nettoyé ni
+   corrigé, les coquilles de la page restent. Une notion sur deux environ est déjà servie par une page
+   dédiée de l'édition malgaise.
+3. **Aucun libellé inventé.** `Fizahan-takila` (pas « Sommaire »), `Tari-dresaka` (pas « Mise en situation »
+   ni `Fitarihan-tsaina`, recopié du document du propriétaire), `Fifanakalozan-kevitra`/`adihevitra` (pas
+   « Brainstorming »), et la leçon enseigne `miteny`/`itenenana`, jamais `resena` pour une personne qui
+   parle. Le tableau §4 ci-dessus (« il faut écrire les textes, risque : inventer ») est levé par une règle
+   plus stricte : **chaque énoncé malgache est vérifié avant d'entrer dans un `.docx`** — recherche dans
+   l'index de l'édition malgaise (`action=query&list=search&srsearch=%22expression%22`), `totalhits ≥ 1` →
+   l'expression est notée `voamarina` dans `fianarana-malagasy/CARNET.md` avec la phrase et l'URL, `0` →
+   elle rejoint `fianarana-malagasy/LISTE-ROUGE.md` et **ne s'écrit pas**. Deux mots que j'avais employés
+   sans preuve sont morts à ce jeu : `sabonina` (le mot est `savony`) et `fandroavana` (`fanadiovana`).
+4. **Contrôle** : `src/verify.py` — 217 invariants sur un thème assemblé, 106 sur la fiche modèle isolée
+   (4e argument `modele`) ; `python3 fianarana-malagasy/fikarohana.py --rouge` refuse la réapparition d'une
+   faute bannie dans les données imprimées ; `./run.sh src/collect_web.py V1` régénère le dossier
+   `sources_web/`, le `RECAPITULATIF.docx` et le ZIP des sources.
+5. **Livrable** : un seul `.docx` par thème à ce jour (thèmes 1 à 5, 20 fiches), sans image, sans contrôle
+   intermédiaire, `Faharetany` de la méta-table laissé vide, durées 3/14/3 (seho 20) et 5/20/5 (seho 30)
+   — le point « à confirmer » du §1 est donc **confirmé** : le PE donne les durées, la méta-table reste vide.
 
 ### Décisions du 19/10 (après échantillon) — périmètre et mode de livraison
 
