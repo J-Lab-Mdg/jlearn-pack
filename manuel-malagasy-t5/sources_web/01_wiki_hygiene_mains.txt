@@ -1,0 +1,20 @@
+LOHARANON-KEVITRA 1 — wiki_hygiene_mains
+==========================================================================
+
+REFERENCE : Wikipédia (fr) — « Hygiène des mains », encyclopédie en ligne, licence CC BY-SA 4.0
+URL       : https://fr.wikipedia.org/wiki/Hygi%C3%A8ne_des_mains
+LICENCE / ATTRIBUTION : Encyclopédie en ligne, article rédigé par des contributeurs ; texte sous licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 (CC BY-SA 4.0). La copie verbatim des passages ci-dessous est donc licite à condition de conserver l'attribution : « Wikipédia, auteurs de l'article, licence CC BY-SA 4.0 ».
+
+UTILISE DANS LE MANUEL :
+  - pilote · fiche 1 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Fandroana ny Tanana »
+  - loha1 · fiche 2 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Fandroana ny Tanana »
+
+--------------------------------------------------------------------------
+PASSAGES RECOPIES MOT POUR MOT (tels qu'imprimés dans le manuel) :
+--------------------------------------------------------------------------
+
+[1] « La pratique de l'hygiène des mains consiste en l'application d'une série de mesures destinées à assurer la propreté des mains dans un objectif essentiellement sanitaire. Le but du lavage des mains, dans la vie quotidienne, est la détersion, laquelle consiste à enlever les saletés, notamment les graisses et la matière organique, d'éventuels produits toxiques, et certains microbes. »
+
+[2] « Dans la vie quotidienne, la pratique de l'hygiène des mains participe à prévenir la transmission manuportée de germes responsables de maladies infectieuses (telles la grippe, les gastro-entérites aiguës, le choléra, les germes responsables d'intoxication alimentaire), mais aussi de substances toxiques pour l'humain (chimiques ou biologiques), avec lesquels les mains auraient pu être en contact. »
+
+[3] « … il est recommandé de se laver les mains avant et après avoir, manipulé des aliments, manger, être allé aux toilettes, s'être occupé de quelqu'un d'autre, notamment des personnes fragiles (enfants, personnes âgées) ainsi qu'à de nombreux autres moments clés. »
