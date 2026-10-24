@@ -1,0 +1,1297 @@
+[
+  {
+    "id": "unite1",
+    "nom": "UNITÉ 1 — LA STRUCTURE ÉCONOMIQUE DE MADAGASCAR",
+    "theme": "La structure économique de Madagascar",
+    "first": 1,
+    "revNum": 19,
+    "examNum": 20,
+    "duration": 18,
+    "intro": "Cette unité caractérise l'économie malgache, ses dépendances et ses secteurs, puis étudie ses principales branches d'activité et ses réseaux.",
+    "opening": [
+      [
+        "Quels sont les trois secteurs économiques ?",
+        "Le primaire exploite les ressources, le secondaire transforme et le tertiaire fournit des services."
+      ],
+      [
+        "Qu'est-ce que l'informel ?",
+        "Ce sont des activités exercées hors d'une partie des enregistrements ou protections du secteur formel."
+      ]
+    ],
+    "seeds": [
+      [
+        "Caractères et dépendance de l’économie malgache",
+        "économie en développement",
+        "L’économie malgache est en développement, sous-industrialisée et encore dépendante de financements, techniques et marchés extérieurs.",
+        [
+          "PIB et PNB mesurent des dimensions différentes de la richesse.",
+          "Le primaire occupe une forte part des actifs.",
+          "La transformation locale reste insuffisante.",
+          "Diversification, formation et production locale réduisent la dépendance."
+        ],
+        [
+          "PIB",
+          "PNB",
+          "sous-industrialisation",
+          "dépendance"
+        ],
+        "Aina analyse des documents et une situation malgache sur « caractères et dépendance de l’économie malgache ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Économie extravertie et balance commerciale",
+        "économie extravertie",
+        "Une économie extravertie est très tournée vers l’extérieur ; la balance commerciale compare exportations et importations.",
+        [
+          "Les exportations apportent des recettes.",
+          "Les importations répondent aux besoins non produits localement.",
+          "Une balance est déficitaire quand les importations dépassent les exportations.",
+          "Transformer localement améliore la valeur ajoutée."
+        ],
+        [
+          "exportation",
+          "importation",
+          "balance commerciale"
+        ],
+        "Fara analyse des documents et une situation malgache sur « économie extravertie et balance commerciale ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Secteurs formel et informel",
+        "structure économique",
+        "La structure économique associe secteurs primaire, secondaire et tertiaire, exercés dans des cadres formels ou informels.",
+        [
+          "Le formel est enregistré et soumis aux règles.",
+          "L’informel fournit emplois et services de proximité.",
+          "Faible capital et démarches difficiles favorisent l’informalité.",
+          "Simplification et protection sociale facilitent la formalisation."
+        ],
+        [
+          "secteur formel",
+          "secteur informel",
+          "formalisation"
+        ],
+        "Hery analyse des documents et une situation malgache sur « secteurs formel et informel ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Politiques économiques malgaches",
+        "politique économique",
+        "Une politique économique regroupe des choix visant à orienter production, investissement, services et développement.",
+        [
+          "Le Programme d’ajustement structurel a porté des réformes économiques.",
+          "Le Madagascar Action Plan a organisé des priorités.",
+          "L’Initiative Émergence Madagascar a proposé des projets de transformation.",
+          "Toute politique se juge par objectifs, moyens, résultats et effets sociaux."
+        ],
+        [
+          "PAS",
+          "MAP",
+          "IEM",
+          "évaluation"
+        ],
+        "Mialy analyse des documents et une situation malgache sur « politiques économiques malgaches ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Cultures à Madagascar",
+        "agriculture malgache",
+        "L’agriculture associe cultures vivrières, industrielles et d’exportation dans des régions variées.",
+        [
+          "Riz, manioc, maïs et patate douce contribuent à l’alimentation.",
+          "Canne à sucre, coton et arachide alimentent des transformations.",
+          "Vanille, girofle, café, cacao, poivre et litchi sont exportés.",
+          "Climat, sol, eau, travail et marché déterminent la production."
+        ],
+        [
+          "vivrière",
+          "industrielle",
+          "exportation"
+        ],
+        "Toky analyse des documents et une situation malgache sur « cultures à madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Élevage à Madagascar",
+        "élevage",
+        "L’élevage fournit aliments, force de travail, matières et revenus grâce aux bovins, caprins, ovins, porcins et volailles.",
+        [
+          "L’élevage extensif utilise de grands pâturages.",
+          "L’intensification apporte alimentation et soins suivis.",
+          "Maladies, vols, eau rare et pâturages dégradés limitent la filière.",
+          "Santé animale, fourrage, sécurité et marchés sont des solutions."
+        ],
+        [
+          "bovin",
+          "pâturage",
+          "santé animale"
+        ],
+        "Soa analyse des documents et une situation malgache sur « élevage à madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Modes de culture, problèmes et solutions agricoles",
+        "mode de culture",
+        "Les modes de culture organisent sol, eau, semences et travail selon les milieux et objectifs.",
+        [
+          "La riziculture irriguée maîtrise l’eau.",
+          "La culture pluviale dépend des pluies.",
+          "Brûlis répété, érosion, faible équipement et stockage limité réduisent les rendements.",
+          "Irrigation, agroécologie, conseil et coopératives apportent des solutions."
+        ],
+        [
+          "riziculture",
+          "culture sur brûlis",
+          "agroécologie"
+        ],
+        "Kanto analyse des documents et une situation malgache sur « modes de culture, problèmes et solutions agricoles ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Zones et types de pêche",
+        "pêche malgache",
+        "La pêche exploite eaux marines et continentales par des techniques traditionnelles, industrielles et aquacoles.",
+        [
+          "La pêche traditionnelle approvisionne les marchés proches.",
+          "La pêche industrielle utilise navires et chaîne du froid.",
+          "Pisciculture, rizipisciculture et aquaculture élèvent des organismes.",
+          "Côtes, lacs, rivières, mangroves et récifs sont des zones majeures."
+        ],
+        [
+          "pêche traditionnelle",
+          "pêche industrielle",
+          "aquaculture"
+        ],
+        "Noro analyse des documents et une situation malgache sur « zones et types de pêche ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Problèmes et solutions de la pêche",
+        "gestion halieutique",
+        "La gestion halieutique maintient stocks et revenus en adaptant captures, engins, périodes et habitats.",
+        [
+          "Surpêche et engins destructeurs réduisent les stocks.",
+          "Manque de froid et de routes provoque des pertes.",
+          "Pollution et destruction des mangroves menacent la reproduction.",
+          "Repos biologique, tailles minimales et aquaculture durable sont utiles."
+        ],
+        [
+          "surpêche",
+          "stock",
+          "repos biologique"
+        ],
+        "Voahirana analyse des documents et une situation malgache sur « problèmes et solutions de la pêche ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Forêts et exploitation forestière",
+        "forêt malgache",
+        "Les forêts humides, sèches, épineuses et les plantations fournissent bois, plantes et services écologiques.",
+        [
+          "Bois de chauffe et charbon répondent à des besoins domestiques.",
+          "Bois d’œuvre et plantes ont des usages spécialisés.",
+          "Les produits forestiers créent des revenus.",
+          "Coupes, feux et défrichements réduisent la couverture forestière."
+        ],
+        [
+          "forêt humide",
+          "charbonnage",
+          "bois d’œuvre"
+        ],
+        "Sarobidy analyse des documents et une situation malgache sur « forêts et exploitation forestière ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Préservation et valorisation de la forêt",
+        "gestion forestière durable",
+        "La gestion forestière durable maintient biodiversité, production, eau, sols et bénéfices locaux.",
+        [
+          "Un inventaire estime espèces, volumes et régénération.",
+          "Reboisement et restauration choisissent des espèces adaptées.",
+          "Foyers économes et énergies alternatives réduisent la pression.",
+          "Participation communautaire et contrôle limitent les coupes illicites."
+        ],
+        [
+          "inventaire",
+          "reboisement",
+          "communauté"
+        ],
+        "Tiana analyse des documents et une situation malgache sur « préservation et valorisation de la forêt ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Types d’industries à Madagascar",
+        "industrie malgache",
+        "L’industrie transforme des matières premières grâce au travail, aux machines, à l’énergie et à l’organisation.",
+        [
+          "L’agroalimentaire transforme les produits agricoles et halieutiques.",
+          "L’extractif traite les ressources du sous-sol.",
+          "Le textile transforme fibres et fabrique vêtements.",
+          "Mécanique, chimie et autres branches diversifient le tissu industriel."
+        ],
+        [
+          "agroalimentaire",
+          "extractive",
+          "textile"
+        ],
+        "Mamy analyse des documents et une situation malgache sur « types d’industries à madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Localisation et facteurs industriels",
+        "implantation industrielle",
+        "Une industrie se localise selon matières, énergie, eau, transport, main-d’œuvre, marché et services.",
+        [
+          "Les villes concentrent clients, travailleurs et réseaux.",
+          "Les ports facilitent importations et exportations.",
+          "La proximité des ressources réduit certains coûts.",
+          "Une implantation mal préparée accroît pollution et congestion."
+        ],
+        [
+          "centre industriel",
+          "port",
+          "facteur de localisation"
+        ],
+        "Feno analyse des documents et une situation malgache sur « localisation et facteurs industriels ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Entreprises, problèmes et solutions industriels",
+        "entreprise industrielle",
+        "Grandes entreprises, PMI, PME et artisanat affrontent des contraintes de financement, énergie, équipement et compétences.",
+        [
+          "Les grandes entreprises mobilisent capital et salariés.",
+          "PMI, PME et artisans s’adaptent aux marchés locaux.",
+          "Coûts d’énergie et transport limitent la production.",
+          "Formation, crédit, qualité et énergie renouvelable soutiennent la modernisation."
+        ],
+        [
+          "PMI",
+          "PME",
+          "artisanat",
+          "énergie renouvelable"
+        ],
+        "Tahina analyse des documents et une situation malgache sur « entreprises, problèmes et solutions industriels ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Commerce intérieur et extérieur",
+        "commerce malgache",
+        "Le commerce relie producteurs et consommateurs dans le pays et sur les marchés extérieurs.",
+        [
+          "Marchés, boutiques et grossistes organisent le commerce intérieur.",
+          "Importations et exportations relient Madagascar au monde.",
+          "Routes, stockage, crédit et normes influencent les échanges.",
+          "Diversification et transformation locale améliorent la balance."
+        ],
+        [
+          "commerce intérieur",
+          "commerce extérieur",
+          "balance"
+        ],
+        "Ialy analyse des documents et une situation malgache sur « commerce intérieur et extérieur ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Tourisme à Madagascar",
+        "tourisme",
+        "Le tourisme valorise paysages, biodiversité et cultures en créant services, emplois et recettes.",
+        [
+          "Tourismes balnéaire, culturel et écologique mobilisent des ressources différentes.",
+          "Hébergement, transport, guidage et artisanat forment une chaîne.",
+          "Accès, formation, saisonnalité et protection sont des défis.",
+          "Le tourisme responsable partage les revenus et respecte les sites."
+        ],
+        [
+          "écotourisme",
+          "patrimoine",
+          "flux touristique"
+        ],
+        "Vola analyse des documents et une situation malgache sur « tourisme à madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Télécommunications et réseaux",
+        "télécommunication",
+        "Les télécommunications transmettent voix, images et données par téléphone, radio, télévision et internet.",
+        [
+          "Un réseau dense dessert de nombreux lieux.",
+          "Un réseau lâche laisse des zones éloignées.",
+          "La connexion soutient commerce, santé et éducation.",
+          "Coût, énergie, équipement et compétences créent une fracture numérique."
+        ],
+        [
+          "réseau dense",
+          "internet",
+          "fracture numérique"
+        ],
+        "Mickaël analyse des documents et une situation malgache sur « télécommunications et réseaux ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Transports : réseaux, problèmes et perspectives",
+        "système de transport",
+        "Le transport combine réseaux routier, ferroviaire, fluvial, maritime et aérien.",
+        [
+          "Routes et moyens locaux assurent les déplacements terrestres.",
+          "Chemins de fer relient plusieurs axes économiques.",
+          "Ports, voies d’eau et aéroports ouvrent les régions.",
+          "Entretien insuffisant, enclavement et coût exigent investissements et complémentarité."
+        ],
+        [
+          "route",
+          "chemin de fer",
+          "port",
+          "aéroport"
+        ],
+        "Elia analyse des documents et une situation malgache sur « transports : réseaux, problèmes et perspectives ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ]
+    ]
+  },
+  {
+    "id": "unite2",
+    "nom": "UNITÉ 2 — LA MÉTHODOLOGIE DE TRAITEMENT DE DEVOIR",
+    "theme": "La méthodologie de traitement de devoir",
+    "first": 21,
+    "revNum": 25,
+    "examNum": 26,
+    "duration": 4,
+    "intro": "Cette unité apprend à analyser un sujet et à rédiger un devoir composé de géographie.",
+    "opening": [
+      [
+        "Que faut-il faire avant de rédiger ?",
+        "Lire le sujet, définir les mots clés, formuler la problématique et bâtir un plan."
+      ],
+      [
+        "À quoi sert une transition ?",
+        "Elle résume une partie et annonce la suivante."
+      ]
+    ],
+    "seeds": [
+      [
+        "Analyser le sujet et construire la problématique",
+        "problématique",
+        "La problématique est la question centrale à laquelle le devoir doit répondre.",
+        [
+          "Les mots clés délimitent thème, espace et action demandée.",
+          "Les connaissances utiles sont sélectionnées au brouillon.",
+          "Les questions deviennent des axes affirmatifs.",
+          "Le plan ordonne des parties complémentaires."
+        ],
+        [
+          "mot clé",
+          "brouillon",
+          "plan"
+        ],
+        "Aina analyse des documents et une situation malgache sur « analyser le sujet et construire la problématique ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Rédiger l’introduction",
+        "introduction",
+        "L’introduction ouvre le sujet, présente la problématique et annonce le plan.",
+        [
+          "Une phrase situe le thème.",
+          "Les termes essentiels sont définis.",
+          "La problématique est clairement formulée.",
+          "L’annonce présente les grandes étapes sans développer."
+        ],
+        [
+          "phrase introductive",
+          "problématique",
+          "annonce du plan"
+        ],
+        "Fara analyse des documents et une situation malgache sur « rédiger l’introduction ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Construire le développement et les transitions",
+        "développement",
+        "Le développement répond par des parties argumentées, détaillées et reliées.",
+        [
+          "Chaque partie commence par une idée directrice.",
+          "Arguments, faits et localisations soutiennent la démonstration.",
+          "Les paragraphes évitent les listes sans logique.",
+          "La transition fait le bilan puis annonce la suite."
+        ],
+        [
+          "argument",
+          "exemple précis",
+          "transition"
+        ],
+        "Hery analyse des documents et une situation malgache sur « construire le développement et les transitions ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Rédiger la conclusion et relire",
+        "conclusion",
+        "La conclusion répond, synthétise et peut ouvrir sur une perspective pertinente.",
+        [
+          "Elle ne répète pas mot à mot le développement.",
+          "La réponse centrale apparaît nettement.",
+          "L’ouverture reste liée au sujet.",
+          "La relecture vérifie logique, précision, langue et équilibre."
+        ],
+        [
+          "synthèse",
+          "ouverture",
+          "relecture"
+        ],
+        "Mialy analyse des documents et une situation malgache sur « rédiger la conclusion et relire ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ]
+    ]
+  },
+  {
+    "id": "unite3",
+    "nom": "UNITÉ 3 — LES POTENTIALITÉS NATURELLES DE MADAGASCAR",
+    "theme": "Les potentialités naturelles de Madagascar",
+    "first": 27,
+    "revNum": 45,
+    "examNum": 46,
+    "duration": 18,
+    "intro": "Cette unité étudie les composantes du milieu, leurs utilités économiques et les cinq régions naturelles.",
+    "opening": [
+      [
+        "Qu’est-ce qu’une potentialité naturelle ?",
+        "Une possibilité offerte par le milieu et mobilisable durablement."
+      ],
+      [
+        "Une ressource devient-elle automatiquement une richesse ?",
+        "Non : compétences, équipements, règles et gestion sont nécessaires."
+      ]
+    ],
+    "seeds": [
+      [
+        "Relief de Madagascar",
+        "relief malgache",
+        "Le relief associe massifs montagneux, plateaux, plaines intérieures et plaines côtières.",
+        [
+          "Les Hautes Terres forment un axe central élevé.",
+          "Des massifs dominent le Nord et le Centre.",
+          "Les plaines côtières sont étroites à l’Est et plus larges à l’Ouest.",
+          "Altitude et pente influencent activités et peuplement."
+        ],
+        [
+          "massif",
+          "plateau",
+          "plaine côtière"
+        ],
+        "Aina analyse des documents et une situation malgache sur « relief de madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Quatre grands types de climats",
+        "climat de Madagascar",
+        "Madagascar présente des climats tropical humide, tropical sec, tropical d’altitude et tropical semi-aride.",
+        [
+          "Est et Sambirano sont humides.",
+          "Ouest et Centre-Sud ont une saison sèche.",
+          "Les Hautes Terres sont tempérées par l’altitude.",
+          "Sud et Sud-Ouest sont secs et irrégulièrement arrosés."
+        ],
+        [
+          "humide",
+          "sec",
+          "altitude",
+          "semi-aride"
+        ],
+        "Fara analyse des documents et une situation malgache sur « quatre grands types de climats ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Végétation de Madagascar",
+        "végétation malgache",
+        "La végétation varie selon climat, sol, altitude et actions humaines.",
+        [
+          "Les forêts humides caractérisent une partie de l’Est et du Nord.",
+          "Les savanes couvrent de vastes espaces occidentaux et centraux.",
+          "La brousse épineuse est adaptée au Sud.",
+          "Défrichement, feux et reboisement modifient les couvertures."
+        ],
+        [
+          "forêt dense",
+          "savane",
+          "brousse épineuse"
+        ],
+        "Hery analyse des documents et une situation malgache sur « végétation de madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Sols de Madagascar",
+        "sol malgache",
+        "Les sols ferralitiques, ferrugineux, volcaniques et alluviaux ont des potentialités différentes.",
+        [
+          "Les sols ferralitiques peuvent être lessivés.",
+          "Les ferrugineux dominent dans des régions à saison sèche.",
+          "Les sols volcaniques sont souvent fertiles.",
+          "Les alluvions des vallées soutiennent une agriculture productive."
+        ],
+        [
+          "ferralitique",
+          "ferrugineux",
+          "volcanique",
+          "alluvion"
+        ],
+        "Mialy analyse des documents et une situation malgache sur « sols de madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Fleuves de l’Est",
+        "hydrographie de l’Est",
+        "Les fleuves orientaux sont souvent courts, rapides, abondants et peu navigables.",
+        [
+          "Les pluies alimentent leurs débits.",
+          "Les pentes créent rapides et potentiel hydroélectrique.",
+          "Crues et érosion menacent certaines vallées.",
+          "Eau, énergie et écosystèmes se gèrent à l’échelle du bassin."
+        ],
+        [
+          "débit",
+          "pente",
+          "hydroélectricité"
+        ],
+        "Toky analyse des documents et une situation malgache sur « fleuves de l’est ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Fleuves de l’Ouest et du Sud, lacs et lagunes",
+        "eaux intérieures",
+        "Les cours occidentaux sont souvent longs, ceux du Sud irréguliers ; lacs et lagunes complètent le réseau.",
+        [
+          "Les fleuves occidentaux traversent de larges bassins.",
+          "Certains cours du Sud sont temporaires.",
+          "Lacs et lagunes soutiennent pêche, eau et biodiversité.",
+          "Ensablement, pollution et prélèvements menacent ces milieux."
+        ],
+        [
+          "fleuve occidental",
+          "cours temporaire",
+          "lac",
+          "lagune"
+        ],
+        "Soa analyse des documents et une situation malgache sur « fleuves de l’ouest et du sud, lacs et lagunes ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Milieux naturels, agriculture et pêche",
+        "utilité du milieu naturel",
+        "Relief, climat, sol et eau déterminent des potentialités agricoles et halieutiques.",
+        [
+          "Plaines, vallées et sols fertiles favorisent les cultures.",
+          "Pluies et irrigation règlent les calendriers.",
+          "Côtes, lacs et rivières fournissent du poisson.",
+          "Surexploitation et aléas exigent une gestion durable."
+        ],
+        [
+          "potentialité agricole",
+          "ressource halieutique"
+        ],
+        "Kanto analyse des documents et une situation malgache sur « milieux naturels, agriculture et pêche ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Forêts, mines et artisanat",
+        "valorisation des ressources",
+        "Forêts, minerais et matières locales soutiennent exploitation, mines et artisanat.",
+        [
+          "Bois et plantes fournissent énergie et matériaux.",
+          "Les mines créent des revenus mais aussi des impacts.",
+          "L’artisanat transforme fibres, argile, pierre ou métal.",
+          "Transformation locale et traçabilité augmentent la valeur."
+        ],
+        [
+          "mine",
+          "artisanat",
+          "matière première"
+        ],
+        "Noro analyse des documents et une situation malgache sur « forêts, mines et artisanat ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Milieux, industrie, transport et commerce",
+        "aménagement économique",
+        "Les milieux influencent implantation industrielle, réseaux de transport et échanges.",
+        [
+          "Relief et rivières orientent les routes.",
+          "Énergie, eau et matières attirent les industries.",
+          "Ports et plaines littorales ouvrent des axes commerciaux.",
+          "Les aménagements doivent réduire risques et fragmentation."
+        ],
+        [
+          "infrastructure",
+          "axe commercial",
+          "implantation"
+        ],
+        "Voahirana analyse des documents et une situation malgache sur « milieux, industrie, transport et commerce ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Milieux naturels et tourisme",
+        "potentialité touristique",
+        "Paysages, biodiversité et littoraux sont des potentialités touristiques.",
+        [
+          "Montagnes, parcs et plages attirent des visiteurs.",
+          "Accès et qualité des services influencent les flux.",
+          "Les revenus peuvent financer emplois et conservation.",
+          "Fréquentation, déchets et constructions peuvent menacer les sites."
+        ],
+        [
+          "paysage",
+          "parc",
+          "tourisme durable"
+        ],
+        "Sarobidy analyse des documents et une situation malgache sur « milieux naturels et tourisme ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Cinq grandes régions naturelles",
+        "région naturelle",
+        "Une région naturelle associe relief, climat, végétation, sol et hydrographie cohérents.",
+        [
+          "Les Hautes Terres occupent l’intérieur élevé.",
+          "L’Ouest présente plaines et saison sèche.",
+          "Le Sud est marqué par l’aridité.",
+          "L’Est humide et le Nord diversifié complètent les ensembles."
+        ],
+        [
+          "Hautes Terres",
+          "Ouest",
+          "Sud",
+          "Est",
+          "Nord"
+        ],
+        "Tiana analyse des documents et une situation malgache sur « cinq grandes régions naturelles ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Hautes Terres centrales",
+        "Hautes Terres",
+        "Les Hautes Terres associent altitudes, climat d’altitude, vallées aménagées et activités concentrées.",
+        [
+          "Rizières et cultures valorisent vallées et bassins.",
+          "Élevage, artisanat, industrie et services sont diversifiés.",
+          "Érosion et pression foncière limitent la mise en valeur.",
+          "Conservation des sols et transport soutiennent le développement."
+        ],
+        [
+          "rizière",
+          "bassin",
+          "érosion"
+        ],
+        "Mamy analyse des documents et une situation malgache sur « hautes terres centrales ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Ouest de Madagascar",
+        "région de l’Ouest",
+        "L’Ouest associe plaines, plateaux, climat tropical sec, savanes et grands fleuves.",
+        [
+          "Cultures valorisent certaines plaines.",
+          "Élevage et pêche complètent les activités.",
+          "Mines, tourisme et commerce offrent d’autres possibilités.",
+          "Feux, érosion, enclavement et irrégularité de l’eau sont des contraintes."
+        ],
+        [
+          "savane",
+          "élevage",
+          "plaine occidentale"
+        ],
+        "Feno analyse des documents et une situation malgache sur « ouest de madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Sud de Madagascar",
+        "région du Sud",
+        "Le Sud présente milieux secs et ressources agricoles, pastorales et minières spécifiques.",
+        [
+          "Sisal, coton et arachide s’adaptent à certains espaces.",
+          "Élevages bovin, caprin et ovin sont importants.",
+          "Ilménite, saphir, graphite, mica ou calcaire sont exploités.",
+          "Sécheresse et eau rare imposent résilience et partage équitable."
+        ],
+        [
+          "semi-aride",
+          "sisal",
+          "ressource minière"
+        ],
+        "Tahina analyse des documents et une situation malgache sur « sud de madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Est de Madagascar",
+        "région de l’Est",
+        "L’Est humide associe versant escarpé, forêt, fleuves rapides, cultures d’exportation et ports.",
+        [
+          "Vanille, girofle, litchi, café et poivre trouvent des conditions favorables.",
+          "Pêche, mines, industrie et tourisme diversifient l’économie.",
+          "Les ports relient la région aux échanges.",
+          "Cyclones, érosion et déforestation fragilisent les activités."
+        ],
+        [
+          "culture d’exportation",
+          "port",
+          "forêt humide"
+        ],
+        "Ialy analyse des documents et une situation malgache sur « est de madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Nord de Madagascar",
+        "région du Nord",
+        "Le Nord combine massifs, bassins, climats variés, forêts, littoraux et biodiversité.",
+        [
+          "Cultures vivrières et d’exportation sont diversifiées.",
+          "Élevage, pêche et industrie valorisent les ressources.",
+          "Paysages, parcs et littoraux soutiennent le tourisme.",
+          "Cyclones et pression sur les milieux demandent prévention."
+        ],
+        [
+          "Sambirano",
+          "biodiversité",
+          "littoral"
+        ],
+        "Vola analyse des documents et une situation malgache sur « nord de madagascar ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Comparaison des potentialités régionales",
+        "comparaison régionale",
+        "Comparer les régions consiste à croiser cartes et indicateurs de milieux, activités et problèmes.",
+        [
+          "Une carte montre une variable.",
+          "Une superposition révèle des relations.",
+          "Une potentialité dépend des techniques et du marché.",
+          "Les échanges créent complémentarités et dépendances."
+        ],
+        [
+          "carte thématique",
+          "superposition",
+          "complémentarité"
+        ],
+        "Mickaël analyse des documents et une situation malgache sur « comparaison des potentialités régionales ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Mise en valeur durable des régions",
+        "mise en valeur durable",
+        "La mise en valeur durable utilise les potentialités sans dégrader les ressources ni exclure les populations.",
+        [
+          "Érosion, pollution et surexploitation réduisent les capacités futures.",
+          "Enclavement et manque d’énergie limitent les initiatives.",
+          "Formation, infrastructures et transformation locale renforcent l’économie.",
+          "Concertation, règles et suivi rendent la gestion équitable."
+        ],
+        [
+          "enclavement",
+          "transformation locale",
+          "concertation"
+        ],
+        "Elia analyse des documents et une situation malgache sur « mise en valeur durable des régions ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ]
+    ]
+  },
+  {
+    "id": "unite4",
+    "nom": "UNITÉ 4 — LES POTENTIALITÉS DÉMOGRAPHIQUES DE MADAGASCAR",
+    "theme": "Les potentialités démographiques de Madagascar",
+    "first": 47,
+    "revNum": 57,
+    "examNum": 58,
+    "duration": 10,
+    "intro": "Cette unité analyse indicateurs, évolution, migrations, répartition et structure de la population.",
+    "opening": [
+      [
+        "Qu’est-ce qu’un indicateur démographique ?",
+        "Une mesure statistique décrivant une population."
+      ],
+      [
+        "La population est-elle un atout ?",
+        "Oui, si santé, formation et emplois permettent de développer ses capacités."
+      ]
+    ],
+    "seeds": [
+      [
+        "Natalité, mortalité et accroissement naturel",
+        "accroissement naturel",
+        "L’accroissement naturel est la différence entre natalité et mortalité.",
+        [
+          "La natalité mesure les naissances.",
+          "La mortalité mesure les décès.",
+          "Une différence positive augmente naturellement la population.",
+          "Les taux se comparent pour une même période et unité."
+        ],
+        [
+          "natalité",
+          "mortalité",
+          "taux"
+        ],
+        "Aina analyse des documents et une situation malgache sur « natalité, mortalité et accroissement naturel ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Fécondité, espérance de vie et doublement",
+        "indicateur démographique",
+        "Ces indicateurs éclairent rythme, santé et structure d’une population.",
+        [
+          "La fécondité estime le nombre moyen d’enfants par femme.",
+          "L’espérance de vie résume les conditions de mortalité.",
+          "Le doublement dépend du rythme de croissance.",
+          "Aucun indicateur ne suffit seul à juger le bien-être."
+        ],
+        [
+          "fécondité",
+          "espérance de vie",
+          "doublement"
+        ],
+        "Fara analyse des documents et une situation malgache sur « fécondité, espérance de vie et doublement ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Évolution de la population malgache",
+        "croissance démographique",
+        "La population évolue selon natalité, mortalité et migrations.",
+        [
+          "La baisse de mortalité peut accélérer l’accroissement.",
+          "Une population jeune entraîne de nombreuses naissances potentielles.",
+          "Santé, éducation et choix familiaux influencent la fécondité.",
+          "La croissance augmente besoins et main-d’œuvre future."
+        ],
+        [
+          "rythme",
+          "population jeune",
+          "besoin"
+        ],
+        "Hery analyse des documents et une situation malgache sur « évolution de la population malgache ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Formes de migration",
+        "migration",
+        "Une migration est un changement durable de résidence, interne ou international.",
+        [
+          "L’exode rural conduit vers les villes.",
+          "Les migrations interrégionales relient départ et accueil.",
+          "L’émigration quitte le pays et l’immigration y entre.",
+          "Certains déplacements sont saisonniers."
+        ],
+        [
+          "exode rural",
+          "émigration",
+          "immigration"
+        ],
+        "Mialy analyse des documents et une situation malgache sur « formes de migration ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Causes et conséquences migratoires",
+        "dynamique migratoire",
+        "Emploi, études, famille, foncier ou environnement provoquent des migrations aux effets variés.",
+        [
+          "Les départs réduisent parfois la main-d’œuvre.",
+          "Transferts et compétences peuvent soutenir les familles.",
+          "Les villes doivent fournir logement, eau et emplois.",
+          "Précarité et habitat informel exigent des politiques inclusives."
+        ],
+        [
+          "zone de départ",
+          "zone d’accueil",
+          "transfert"
+        ],
+        "Toky analyse des documents et une situation malgache sur « causes et conséquences migratoires ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Répartition spatiale et densités",
+        "densité de population",
+        "La population est inégalement répartie entre zones denses et espaces faiblement peuplés.",
+        [
+          "Hautes Terres et villes concentrent des habitants.",
+          "Certaines zones sèches ou enclavées sont peu denses.",
+          "La densité divise population par superficie.",
+          "Une moyenne masque les contrastes locaux."
+        ],
+        [
+          "forte densité",
+          "faible densité",
+          "superficie"
+        ],
+        "Soa analyse des documents et une situation malgache sur « répartition spatiale et densités ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Causes de l’inégale répartition",
+        "facteur de peuplement",
+        "Relief, eau, climat, histoire, activités, infrastructures et sécurité influencent le peuplement.",
+        [
+          "Sols et eau favorisent certaines installations.",
+          "Emplois et services attirent vers les villes.",
+          "Les transports renforcent les axes accessibles.",
+          "Risques et aridité peuvent limiter l’installation."
+        ],
+        [
+          "facteur physique",
+          "facteur économique",
+          "infrastructure"
+        ],
+        "Kanto analyse des documents et une situation malgache sur « causes de l’inégale répartition ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Structure par âge et par sexe",
+        "pyramide des âges",
+        "La pyramide des âges représente la population par sexe et groupes d’âge.",
+        [
+          "Une base large indique beaucoup de jeunes.",
+          "Le centre renseigne sur les âges actifs.",
+          "Le sommet décrit les personnes âgées.",
+          "La structure oriente écoles, emplois, santé et protection."
+        ],
+        [
+          "âge",
+          "sexe",
+          "population active"
+        ],
+        "Noro analyse des documents et une situation malgache sur « structure par âge et par sexe ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Structure par activité et problèmes",
+        "population active",
+        "La structure d’activité répartit actifs occupés, chômeurs et inactifs entre secteurs.",
+        [
+          "Une forte part agricole caractérise de nombreux territoires.",
+          "Sous-emploi et informalité réduisent revenus et protection.",
+          "Formation et compétences influencent le chômage.",
+          "Politiques de population, emploi et services doivent être coordonnées."
+        ],
+        [
+          "emploi",
+          "chômage",
+          "inactivité",
+          "secteur"
+        ],
+        "Voahirana analyse des documents et une situation malgache sur « structure par activité et problèmes ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Démographie et développement économique",
+        "interdépendance démographique",
+        "Population et économie s’influencent par besoins, travail, consommation et investissement.",
+        [
+          "Une population saine et formée accroît les capacités.",
+          "Une croissance rapide peut dépasser écoles, soins et emplois.",
+          "Les activités attirent et redistribuent la population.",
+          "Investir dans les personnes transforme le potentiel en développement."
+        ],
+        [
+          "capital humain",
+          "productivité",
+          "service"
+        ],
+        "Sarobidy analyse des documents et une situation malgache sur « démographie et développement économique ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ]
+    ]
+  },
+  {
+    "id": "unite5",
+    "nom": "UNITÉ 5 — LA PROTECTION DE L’ENVIRONNEMENT",
+    "theme": "La protection de l’environnement",
+    "first": 59,
+    "revNum": 67,
+    "examNum": 68,
+    "duration": 8,
+    "intro": "Cette unité étudie les pressions environnementales puis développe gestion des déchets, écogestes et projets.",
+    "opening": [
+      [
+        "Pourquoi protéger l’environnement ?",
+        "Parce que santé, eau, alimentation et économie dépendent de milieux fonctionnels."
+      ],
+      [
+        "Qu’est-ce qu’un écogeste ?",
+        "Une action quotidienne réduisant consommation, pollution ou gaspillage."
+      ]
+    ],
+    "seeds": [
+      [
+        "Croissance démographique et pressions",
+        "pression environnementale",
+        "La croissance et la concentration humaines augmentent besoins, prélèvements, déchets et occupation du sol.",
+        [
+          "La demande de bois peut accélérer la déforestation.",
+          "Des services insuffisants favorisent insalubrité et pollution.",
+          "Le manque de logements développe des quartiers précaires.",
+          "Aménagement, services et consommation responsable réduisent la pression."
+        ],
+        [
+          "déforestation",
+          "insalubrité",
+          "bidonville"
+        ],
+        "Aina analyse des documents et une situation malgache sur « croissance démographique et pressions ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Dégradation, besoins en bois et eau",
+        "dégradation environnementale",
+        "La dégradation des forêts et bassins réduit bois disponible, infiltration et régulation de l’eau.",
+        [
+          "Le manque de bois affecte cuisson et construction.",
+          "La perte d’arbres expose sols et sources.",
+          "Le cycle local de l’eau peut être perturbé.",
+          "Foyers économes, alternatives et reboisement apportent des réponses."
+        ],
+        [
+          "bois de chauffe",
+          "bassin versant",
+          "captage"
+        ],
+        "Fara analyse des documents et une situation malgache sur « dégradation, besoins en bois et eau ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Érosion, infertilité et famine",
+        "dégradation des sols",
+        "L’érosion enlève la couche fertile et peut réduire les récoltes jusqu’à aggraver l’insécurité alimentaire.",
+        [
+          "Pluie et vent emportent les sols nus.",
+          "La perte de matière organique réduit la fertilité.",
+          "La baisse de production fragilise revenus et alimentation.",
+          "Couverture, terrasses, compost et agroforesterie restaurent les sols."
+        ],
+        [
+          "érosion",
+          "fertilité",
+          "famine"
+        ],
+        "Hery analyse des documents et une situation malgache sur « érosion, infertilité et famine ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Classer et gérer les déchets",
+        "gestion des déchets",
+        "La gestion organise réduction, collecte, tri, traitement et élimination sûre des déchets.",
+        [
+          "Les organiques peuvent être compostés.",
+          "Les non-dégradables exigent réemploi, recyclage ou stockage.",
+          "Produits chimiques et toxiques nécessitent des lieux réservés.",
+          "Le tri à la source évite les mélanges dangereux."
+        ],
+        [
+          "organique",
+          "non dégradable",
+          "toxique",
+          "tri"
+        ],
+        "Mialy analyse des documents et une situation malgache sur « classer et gérer les déchets ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Compostage, biogaz et recyclage",
+        "valorisation des déchets",
+        "Valoriser les déchets transforme certaines matières en compost, énergie ou nouveaux produits.",
+        [
+          "Le compost améliore la matière organique du sol.",
+          "Le biogaz valorise une décomposition sans oxygène.",
+          "Le recyclage économise des matières premières.",
+          "Sécurité, tri et débouché conditionnent la réussite."
+        ],
+        [
+          "compost",
+          "biogaz",
+          "recyclage"
+        ],
+        "Toky analyse des documents et une situation malgache sur « compostage, biogaz et recyclage ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Fertilité des sols et écogestes",
+        "écogeste",
+        "Les écogestes et pratiques de conservation réduisent gaspillage et dégradation.",
+        [
+          "Paillage, rotation et compost entretiennent le sol.",
+          "Économiser eau et énergie réduit les prélèvements.",
+          "Éviter brûlage et rejets protège air et eau.",
+          "Mesurer avant et après vérifie l’effet."
+        ],
+        [
+          "paillage",
+          "rotation",
+          "économie"
+        ],
+        "Soa analyse des documents et une situation malgache sur « fertilité des sols et écogestes ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Sensibilisation de la communauté",
+        "sensibilisation environnementale",
+        "La sensibilisation mobilise autour du reboisement, des feux, de la pollution et de l’urbanisation.",
+        [
+          "Le message part d’un problème observé.",
+          "Le public et les moyens sont précis.",
+          "Le plan d’urbanisme réduit l’occupation des zones à risque.",
+          "Associations, clubs et familles partagent les rôles."
+        ],
+        [
+          "reboisement",
+          "feu de brousse",
+          "plan d’urbanisme"
+        ],
+        "Kanto analyse des documents et une situation malgache sur « sensibilisation de la communauté ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Mini-projet environnemental",
+        "projet environnemental",
+        "Un mini-projet organise diagnostic, objectif, actions, moyens, partenaires et évaluation.",
+        [
+          "Le diagnostic localise causes, acteurs et effets.",
+          "L’objectif doit être mesurable.",
+          "Jardin scolaire, reboisement ou gestion des déchets sont possibles.",
+          "Le suivi mesure participation et effets."
+        ],
+        [
+          "club",
+          "jardin scolaire",
+          "suivi"
+        ],
+        "Noro analyse des documents et une situation malgache sur « mini-projet environnemental ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ]
+    ]
+  },
+  {
+    "id": "unite6",
+    "nom": "UNITÉ 6 — LA LUTTE CONTRE LA PAUVRETÉ À MADAGASCAR",
+    "theme": "La lutte contre la pauvreté à Madagascar",
+    "first": 69,
+    "revNum": 75,
+    "examNum": 76,
+    "duration": 6,
+    "intro": "Cette unité analyse des solutions politiques, sociales, économiques et culturelles puis conçoit une PME locale.",
+    "opening": [
+      [
+        "Qu’est-ce que la pauvreté ?",
+        "Une privation de ressources, services ou capacités empêchant de satisfaire les besoins essentiels."
+      ],
+      [
+        "Une entreprise peut-elle répondre à un besoin social ?",
+        "Oui, si elle fournit un service utile et crée des emplois responsables."
+      ]
+    ],
+    "seeds": [
+      [
+        "Comprendre la pauvreté",
+        "pauvreté",
+        "La pauvreté touche revenus, alimentation, logement, santé, éducation, sécurité et pouvoir d’agir.",
+        [
+          "La pauvreté monétaire mesure des ressources insuffisantes.",
+          "L’accès aux services révèle d’autres privations.",
+          "Les causes combinent économie, territoire, institutions et risques.",
+          "Le diagnostic écoute les personnes et distingue causes et symptômes."
+        ],
+        [
+          "privation",
+          "inégalité",
+          "vulnérabilité"
+        ],
+        "Aina analyse des documents et une situation malgache sur « comprendre la pauvreté ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Solutions politiques et diplomatiques",
+        "gouvernance et souveraineté",
+        "Bonne gouvernance, démocratie, droit et relations équilibrées favorisent la lutte contre la pauvreté.",
+        [
+          "Transparence améliore l’usage des ressources.",
+          "Participation adapte les décisions aux besoins.",
+          "Stabilité et justice sécurisent personnes et investissements.",
+          "La coopération extérieure respecte priorités et autonomie du pays."
+        ],
+        [
+          "démocratie",
+          "bonne gouvernance",
+          "coopération"
+        ],
+        "Fara analyse des documents et une situation malgache sur « solutions politiques et diplomatiques ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Solutions sociales",
+        "politique sociale",
+        "Éducation, santé et accompagnement démographique volontaire renforcent capacités et égalité.",
+        [
+          "Une éducation de qualité développe les compétences.",
+          "La santé pour tous protège familles et productivité.",
+          "Les services familiaux permettent des choix responsables.",
+          "La protection sociale aide face aux chocs."
+        ],
+        [
+          "éducation",
+          "santé",
+          "protection sociale"
+        ],
+        "Hery analyse des documents et une situation malgache sur « solutions sociales ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Solutions économiques et culturelles",
+        "développement inclusif",
+        "Un développement durable et la valorisation culturelle créent revenus, emplois et cohésion.",
+        [
+          "Agriculture, industrie locale et services créent de la valeur.",
+          "Infrastructures et financement soutiennent les initiatives.",
+          "Festivals, artisanat et art culinaire valorisent la culture malgache.",
+          "Les bénéfices doivent être partagés et les ressources protégées."
+        ],
+        [
+          "emploi",
+          "culture malgache",
+          "valeur ajoutée"
+        ],
+        "Mialy analyse des documents et une situation malgache sur « solutions économiques et culturelles ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Ressources et idée de petite entreprise",
+        "entrepreneuriat",
+        "L’entrepreneuriat transforme une idée en activité répondant à un besoin avec des ressources organisées.",
+        [
+          "Les compétences forment la ressource humaine.",
+          "Locaux, outils et matières sont matériels.",
+          "Épargne, crédit ou partenariat fournissent le financement.",
+          "L’étude des besoins évite une offre sans utilité."
+        ],
+        [
+          "PME",
+          "ressource humaine",
+          "capital"
+        ],
+        "Toky analyse des documents et une situation malgache sur « ressources et idée de petite entreprise ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ],
+      [
+        "Étude de faisabilité et maquette",
+        "étude de faisabilité",
+        "L’étude vérifie marché, technique, organisation, finances et impacts avant de créer une entreprise.",
+        [
+          "L’étude de débouché identifie clients, concurrence et prix.",
+          "Le plan technique précise production et équipements.",
+          "Le budget compare coûts, recettes et financement.",
+          "La maquette présente emplois et impacts sociaux et environnementaux."
+        ],
+        [
+          "débouché",
+          "budget",
+          "commercialisation",
+          "maquette"
+        ],
+        "Soa analyse des documents et une situation malgache sur « étude de faisabilité et maquette ».",
+        "Relier les faits, leurs causes, leurs effets et une action adaptée au territoire."
+      ]
+    ]
+  }
+]
