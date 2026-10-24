@@ -396,7 +396,7 @@ const S41 = {
         ],
         exemples: [
           "Le voisin de l'oncle Rivo a tout quitté pour devenir gardien à Toamasina.",
-          "« En ville, au moins, on dort », dit un jeune veilleur du village.",
+          "L'insécurité rurale peut pousser des habitants à rechercher un lieu de résidence jugé plus sûr.",
         ],
       },
     ],
@@ -531,7 +531,7 @@ const S42 = {
           "Ainsi s'additionnent les causes de l'exode rural : pauvreté, chômage, insécurité, problèmes de terre, manque d'infrastructures. La séance suivante regarde ce que ces départs laissent derrière eux.",
         ],
         exemples: [
-          "« Comment veux-tu que les gens restent ? » dit grand-père en repliant la lettre.",
+          "L'absence d'école, de soins, d'eau, d'électricité et de routes renforce les départs.",
           "Le taxi-brousse du vendredi emporte chaque semaine une nouvelle famille.",
         ],
       },

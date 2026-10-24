@@ -242,7 +242,7 @@ const S51 = {
         titre: "3. À nous de jouer !",
         paras: [
           "Dans la salle de classe, on installe trois paniers pour trier.",
-          "Chaque élève regarde son déchet avant de le jeter : « Reste de nourriture ? Papier ? Verre ou métal ? »",
+          "Avant le dépôt, chaque déchet est identifié : matière organique, papier, verre, métal ou autre matière.",
         ],
         exemples: [
           "Le pot de fleurs de la maîtresse, fabriqué avec une bouteille coupée, trône désormais sur le bureau.",

@@ -5,6 +5,7 @@ const path = require("path");
 const { Document, Packer, AlignmentType, Table, TableRow, WidthType, BorderStyle, Paragraph, TextRun } = require("docx");
 const B = require("./builders");
 const Protect = require("../../jlearn-protection");
+const GeoEnrich = require("../../geo-enrichissements");
 const { generateSeanceDocContent } = require("./seance-generator");
 const U1 = require("./data-unite1");
 const U1REV = require("./data-unite1-rev");
@@ -368,12 +369,14 @@ function examenSeance(ex) {
       children.push(...generateSeanceDocContent(topic, prevQuestions));
       prevQuestions = topic.questionsRevision;
     });
+    children.push(...GeoEnrich.recapitulatifContent(B, u, numUnite, "T4"));
     children.push(...revisionSeance(u.rev, numUnite));
     children.push(...examenSeance(u.exam));
   });
 
   // Annexes (glossaire, cartes muettes, auto-évaluation, table des illustrations, sources)
   children.push(...annexesContent(UNITES.flatMap((u) => u.topics)));
+  children.push(...GeoEnrich.atlasContent(B, "T4"));
 
   const doc = new Document({
     creator: "J-Lab — Collection J-Learn",

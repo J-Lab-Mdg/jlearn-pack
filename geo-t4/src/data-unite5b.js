@@ -344,7 +344,7 @@ const S65 = {
         titre: "1. La définition du fady",
         paras: [
           "Le fady est une interdiction traditionnelle : la coutume défend certains actes, certains jours ou certains lieux.",
-          "Le mot fady veut dire « interdit », « défendu ».",
+          "Le mot fady désigne une interdiction traditionnelle.",
         ],
       },
       {
@@ -359,7 +359,7 @@ const S65 = {
             titre: "a. Des fady différents partout",
             paras: [
               "Chaque région, chaque village a ses fady : ce qui est fady ici ne l'est pas forcément ailleurs.",
-              "Le voyageur avisé demande toujours : « Y a-t-il un fady ici ? »",
+              "Avant toute activité, le voyageur vérifie les fady et les règles du lieu.",
             ],
           },
         ],

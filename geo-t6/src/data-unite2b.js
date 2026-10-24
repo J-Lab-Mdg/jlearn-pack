@@ -262,7 +262,7 @@ const S19 = {
         ],
         exemples: [
           "La grand-mère de la fontaine se souvient du temps où l'eau manquait moins.",
-          "Les anciens du village disent : « Beaucoup d'enfants, oui, mais une terre qui doit pouvoir les nourrir. »",
+          "La croissance de la population doit être mise en relation avec la capacité des terres et des services à satisfaire les besoins.",
         ],
       },
     ],
@@ -397,7 +397,7 @@ const S20 = {
           "Aujourd'hui, d'autres sont en danger : le plus grand lémurien vivant, l'indri, et beaucoup d'animaux et de plantes endémiques. Une espèce disparue ne revient jamais.",
         ],
         exemples: [
-          "Le guide d'Andasibe montre un indri : « Il en reste moins que d'habitants dans ce village. »",
+          "La raréfaction de certaines espèces montre l'effet de la destruction de leurs habitats.",
           "Les naturalistes étudient les os de l'oiseau-éléphant : personne ne pourra jamais le revoir vivant.",
         ],
       },

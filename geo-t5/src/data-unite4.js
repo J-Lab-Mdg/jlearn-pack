@@ -514,7 +514,7 @@ const S59 = {
           "Chaque écolier peut planter un arbre, fermer le robinet, trier les déchets et raconter à sa famille pourquoi la nature est un trésor fragile.",
         ],
         exemples: [
-          "« Notre trésor ne durera que si nous le protégeons ensemble », conclut le président du comité.",
+          "La conservation des ressources exige une action collective, des règles et un suivi durable.",
         ],
       },
     ],

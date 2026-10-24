@@ -398,7 +398,7 @@ const S13 = {
         ],
         exemples: [
           "Les parcs nationaux, comme celui d'Andasibe, protègent la forêt et ses habitants.",
-          "Le guide d'Andasibe répète : « La forêt d'abord, les animaux suivront. »",
+          "La protection de la forêt maintient les habitats nécessaires à la faune.",
         ],
       },
     ],
@@ -533,7 +533,7 @@ const S14 = {
           "Une fois extraits et utilisés, ils ont disparu pour toujours. C'est pourquoi il ne faut pas les gaspiller et éviter de les détruire en les exploitant mal.",
         ],
         exemples: [
-          "Papa le dit en repartant : « Un saphir extrait, c'est un saphir de moins sur Terre. »",
+          "Un minerai extrait ne se reconstitue pas à l'échelle humaine.",
           "Les mines abandonnées laissent des trous immenses : la terre ne se referme pas.",
         ],
       },

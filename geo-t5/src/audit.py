@@ -147,8 +147,9 @@ for _f in glob.glob(os.path.join(SRC, "data-*.js")):
 with open(os.path.join(SRC, "annexes.js"), encoding="utf-8") as _fh:
     annex_src = _fh.read()
 n_muettes = len(re.findall(r'imgBlock\("geo5_', annex_src))
-expected_img = 2 + 66 + n_scenes + n_muettes
-report(f"{expected_img} images embarquées (1 couverture + 1 QR officiel + 66 schémas + {n_scenes} scènes + {n_muettes} cartes muettes)",
+n_atlas = 5
+expected_img = 2 + 66 + n_scenes + n_muettes + n_atlas
+report(f"{expected_img} images embarquées (1 couverture + 1 QR officiel + 66 schémas + {n_scenes} scènes + {n_muettes} cartes muettes + {n_atlas} cartes-atlas)",
        len(media) == expected_img, str(len(media)))
 n_leg = len(re.findall(r"Schéma|Carte|Tableau|Document :|Le planisphère à compléter|L'océan Indien à compléter", full))
 report("Légendes d'images présentes", n_leg >= expected_img, f"occurrences : {n_leg}")

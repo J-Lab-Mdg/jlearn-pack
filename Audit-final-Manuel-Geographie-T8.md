@@ -4,65 +4,40 @@
 
 Fichier : `geo-t8/output/Manuel_Geographie_T8_JLearn.docx`
 
-- Taille : **12 731 Kio**
-- SHA-256 : `49ae0d02fde5e46ff4c2d65e45875dcd97d91dcde08443594ad421ec07d6b453`
-- Outils : `geo-t8/src/verifications.py` et `geo-t8/src/audit.py`
+- Taille : **12 743 Kio**
+- SHA-256 : `f848ddbd0a65c8aa7689f26edfae5ade801cf2031aaa1c6778f79818522e7bde`
 - Résultat : **toutes les vérifications structurelles passent ; audit de contenu 75/75**.
 
-## 1. Couverture du programme T8
+## Structure pédagogique
 
-| Thématique | Durée | Leçons | Révision | Examen | État |
-|---|---:|---:|---:|---:|---|
-| Les pays développés | 7 h | 7 | 1 | 1 | Couvert |
-| La méthodologie de traitement de devoir | 2 h | 2 | 1 | 1 | Couvert |
-| Les pays en développement | 7 h | 7 | 1 | 1 | Couvert |
-| L’Afrique | 12 h | 12 | 1 | 1 | Couvert |
-| Le dérèglement climatique | 17 h | 17 | 1 | 1 | Couvert |
-| Les différentes sources d’énergie | 11 h | 11 | 1 | 1 | Couvert |
-| **Total** | **56 h** | **56** | **6** | **6** | **68 numéros** |
+- **56 leçons**, **6 révisions** et **6 examens**, soit **68 numéros**.
+- **62 fiches de préparation**.
+- Récapitulatif géographique ajouté après chacune des **6 unités**.
+- Chaque récapitulatif relie les notions à leur échelle, leur localisation, les éléments à observer et l'atlas.
 
-Références : `PE RAPE/PE T8.pdf`, section Géographie, pages PDF 188–201, et `PE RAPE/FRP_8eme.pdf`, section Géographie.
+## Enrichissement cartographique
 
-Les contenus structurants ont été vérifiés : localisation et critères des pays développés ; méthode du commentaire dirigé ; indicateurs et diversité des pays en développement ; milieux, population, organisations, atouts et problèmes de l’Afrique ; manifestations, causes, conséquences et réponses au dérèglement climatique ; classification et usages économiques des sources d’énergie.
+- Nouvel **Atlas cartographique exploitable T8** placé dans les annexes.
+- **10 cartes ou schémas de localisation** sélectionnés pour les contenus cartographiables.
+- Les thèmes concernant Madagascar utilisent désormais de vraies cartes de synthèse sur le fond de la Grande Île : relief, climats, végétation, sols, hydrographie, population, migrations, cultures, élevage, pêche, forêts, mines, industries, tourisme, transports, environnement, régions naturelles et zones économiques.
+- Échelle adaptée au sujet : milieu local, Madagascar, Afrique ou monde.
+- Chaque document comporte un titre, une orientation, une légende, une échelle géographique, une lecture guidée et un renvoi aux sources.
+- Page finale regroupant les sources cartographiques `[S1]` à `[S4]` et la note sur la généralisation pédagogique.
+- Total du DOCX : **132 illustrations placées**.
 
-## 2. Structure pédagogique
+## Nettoyage éditorial
 
-- 68 numéros présents et ordonnés de 1 à 68.
-- 56 leçons de 60 minutes et 6 révisions, soit 62 fiches de préparation.
-- Déroulement : révision 5 minutes, nouvelle leçon 45 minutes, évaluation 10 minutes.
-- 56 blocs d’exercices ; 4 exercices notés sur 5 et corrigés par leçon.
-- 6 sujets d’examen de 60 minutes, chacun avec 4 exercices et un total vérifié de 20 points.
-- 685 réponses attendues « R.A. ».
-- Sommaire interactif : 83 signets et 83 liens, sans élément orphelin.
+- Les leçons utilisent déjà des formulations géographiques objectives sans dialogue narratif.
+- Les fiches de préparation et leurs questions-réponses pédagogiques sont conservées.
+- Français uniquement, sans mention ministérielle ni éditeur concurrent.
+- Aucun support « Oral » isolé, marqueur TODO, texte corrompu ou lien de sommaire orphelin.
 
-## 3. Illustrations et annexes
+## Protection et livraison
 
-- 56 schémas pédagogiques originaux.
-- 56 scènes semi-réalistes intégrées, une par leçon.
-- 8 annexes : développement mondial, indicateurs, commentaire, Afrique physique, organisations africaines, chaîne climatique, classement énergétique et mini-projet énergétique.
-- 122 illustrations placées dans le DOCX, couverture et QR compris.
-- Glossaire de 56 notions, auto-évaluation des 6 unités, table des illustrations et sources.
-- `pack.json` contient 389 entrées après l’ajout des 64 images GEO T8.
-
-## 4. Conformité éditoriale
-
-- Français uniquement et vocabulaire officiel conservé.
-- Aucune mention ministérielle ni éditeur concurrent.
-- Aucun support « Oral » isolé.
-- Aucun marqueur TODO, balisage `**`, double espace ou texte corrompu.
-- Parenthèses et guillemets français équilibrés.
-- Structure DOCX valide et sommaire interactif complet.
-
-Une précision scientifique est intégrée dans la leçon sur les cataclysmes : séismes et tsunamis sont des risques géologiques et ne sont pas causés par le dérèglement climatique, même s’ils figurent dans la liste des phénomènes du programme.
-
-## 5. Protection anti-revente
-
-- Page « Authenticité et droits » présente.
-- QR et message de vérification présents.
-- URL officielle intégrée : `https://web.facebook.com/profile.php?id=61575599505051`.
-- Filigrane diagonal `COPIE OFFICIELLE J-LEARN` vérifié.
-- Pied de page légal et pagination vérifiés.
+- Page d'authenticité, QR officiel, filigrane diagonal et pied de page légal vérifiés.
+- Copie finale : `Nos manuels/Manuel_Geographie_T8_JLearn.docx`.
+- Copie source et copie finale strictement identiques.
 
 ## Conclusion
 
-**L’édition GEO T8 couvre les 56 heures de contenus officiels en 68 numéros et satisfait les critères demandés : fiches, leçons, exercices, corrigés, révisions, examens, illustrations, cartes, annexes et protection officielle. Aucun défaut détecté par les contrôles automatisés finaux.**
+**Le manuel GEO T8 a été remplacé par l'édition enrichie : récapitulatifs géographiques après chaque unité, atlas détaillé et sourcé en annexe, cartes thématiques localisées et suppression des dialogues narratifs dans les leçons. Tous les contrôles automatisés passent.**

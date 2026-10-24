@@ -645,7 +645,7 @@ const S66 = {
           "Cette complémentarité s'appelle l'interdépendance : chaque milieu donne ce que l'autre ne produit pas.",
         ],
         exemples: [
-          "« La ville a faim sans nous, et nous sommes bloqués sans elle », résume le grand-père de Rado.",
+          "La campagne approvisionne la ville, tandis que la ville fournit marchés, services et équipements à la campagne.",
         ],
       },
     ],
@@ -907,7 +907,7 @@ const S68 = {
           "Les villages vieillissent et se vident ; et les villes, déjà pleines, grossissent encore.",
         ],
         exemples: [
-          "« Notre village vieillit », soupire le doyen de Mandrosoa.",
+          "Le départ des jeunes augmente la part des personnes âgées et réduit la main-d'œuvre du village.",
         ],
       },
     ],

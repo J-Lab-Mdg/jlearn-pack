@@ -150,8 +150,9 @@ annexes_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "annexes
 with open(annexes_path, encoding="utf-8") as _fh:
     annexes_src = _fh.read()
 n_muettes = annexes_src.count('imgBlock("geot4_')
-expected_img = 2 + 60 + n_scenes + n_muettes
-report(f"{expected_img} images embarquées (1 couverture + 1 QR officiel + 60 schémas + {n_scenes} scènes + {n_muettes} cartes)",
+n_atlas = 6
+expected_img = 2 + 60 + n_scenes + n_muettes + n_atlas
+report(f"{expected_img} images embarquées (1 couverture + 1 QR officiel + 60 schémas + {n_scenes} scènes + {n_muettes} cartes + {n_atlas} cartes-atlas)",
        len(media) == expected_img, str(len(media)))
 n_leg = len(re.findall(r"Schéma|Carte|Tableau|Affiche|Document :|Illustration :|La rose des vents à compléter", full))
 report("Légendes d'images présentes", n_leg >= expected_img, f"occurrences : {n_leg}")

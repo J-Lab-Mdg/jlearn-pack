@@ -112,7 +112,7 @@ const S39 = {
           "Décrire son Environnement, c'est dire ce qu'on voit autour de soi.",
         ],
         exemples: [
-          "Rasoa décrit son Environnement : « Je vois la montagne, des arbres, le zébu du voisin, la rivière, mon école et les maisons du village. »",
+          "Un environnement local associe relief, végétation, animaux, eau, bâtiments et voies de communication.",
         ],
       },
     ],
@@ -478,7 +478,7 @@ const S42 = {
       {
         titre: "3. Naturel ou artificiel ?",
         paras: [
-          "Devant un élément, on se demande : « Est-ce que la nature l'a fait, ou est-ce que l'homme l'a fabriqué ? »",
+          "La classification vérifie si l'élément provient de la nature ou s'il a été fabriqué par l'homme.",
           "Si l'homme l'a fabriqué, l'élément est artificiel.",
         ],
         exemples: [
@@ -592,7 +592,7 @@ const S43 = {
       {
         titre: "2. Comment classer un élément ?",
         paras: [
-          "On pose trois questions : « Est-il vivant ? », « La nature l'a-t-elle fait ? », « L'homme l'a-t-il fabriqué ? »",
+          "Trois critères servent au classement : vivant ou non-vivant, naturel ou fabriqué par l'homme.",
           "S'il naît, grandit, se nourrit et meurt : il est vivant.",
           "Si la nature l'a fait sans vie : il est non-vivant.",
           "Si l'homme l'a fabriqué : il est artificiel.",
@@ -731,7 +731,7 @@ const S44 = {
             titre: "a. La chaîne qui se tient",
             paras: [
               "On peut dessiner les liens par des flèches : soleil → plante → zébu → homme.",
-              "Chaque flèche veut dire : « a besoin de » ou « aide ».",
+              "Chaque flèche représente une relation de dépendance ou d'aide entre deux éléments.",
             ],
           },
         ],

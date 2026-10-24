@@ -126,7 +126,7 @@ const S44 = {
           "Briser ce cercle est l'enjeu des solutions que nous verrons en fin d'unité : améliorer la vie à la campagne, pour que partir ne soit plus une nécessité.",
         ],
         exemples: [
-          "« C'est un cercle », dit grand-père en refermant sa natte.",
+          "Le départ de la population et le retard d'équipement peuvent former un cercle cumulatif.",
           "Chaque départ rend le départ suivant plus probable.",
         ],
       },
@@ -534,7 +534,7 @@ const S47 = {
           "Plusieurs activités, plusieurs revenus : la famille tient au village, et les jeunes, comme Tovo, songent à revenir. Améliorer les techniques agricoles, c'est frapper à la racine de l'exode rural.",
         ],
         exemples: [
-          "Tovo, revenu pour les vacances, calcule : « Avec le double de récolte, je peux vivre ici. »",
+          "L'amélioration des rendements peut stabiliser les revenus et réduire les départs contraints.",
           "Le groupe de femmes du village lance un élevage de poules avec l'argent des sacs doubles.",
         ],
       },
@@ -671,7 +671,7 @@ const S48 = {
         ],
         exemples: [
           "Au carrefour du village, les piquets de la ville nouvelle sont plantés : école, marché couvert, ateliers.",
-          "« Mes petits-enfants n'auront plus besoin d'aller si loin pour vivre », sourit grand-père.",
+          "La sécurité, les emplois et les infrastructures permettent aux jeunes de choisir de rester dans leur région.",
         ],
       },
     ],

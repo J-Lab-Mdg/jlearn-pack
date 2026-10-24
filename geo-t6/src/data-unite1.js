@@ -647,7 +647,7 @@ const S5 = {
           "C'est la partie la plus chaude et la plus sèche de l'île : le pays des plantes épineuses, des zébus et du soleil.",
         ],
         exemples: [
-          "Tantely raconte que à Toliara, on appelle la mer « le grand bleu » tant le ciel est clair.",
+          "À Toliara, le ciel souvent dégagé et le littoral lumineux caractérisent le paysage côtier.",
           "L'Androy, autour d'Ambovombe, est le pays des tombes royales et des chantres de zébus.",
         ],
       },
@@ -805,8 +805,8 @@ const S6 = {
           "Connaître son district et sa commune, c'est savoir où trouver les services : l'école, le centre de santé, les bureaux où l'on fait les papiers.",
         ],
         exemples: [
-          "Hery peut dire : « J'habite la commune d'Antsirabe, dans le district d'Antsirabe, dans la région Vakinankaratra. »",
-          "Pour les papiers importants, papa dit toujours : « Il faut aller au district ! »",
+          "Une adresse administrative précise successivement la commune, le district et la région.",
+          "Le district accueille plusieurs services administratifs importants.",
         ],
       },
     ],
@@ -1077,7 +1077,7 @@ const S8 = {
           "On ajoute son district, sa commune et son fokontany : ainsi, chacun sait exactement où il habite dans le grand découpage de Madagascar.",
         ],
         exemples: [
-          "Hery écrit fièrement : « Région Vakinankaratra, chef-lieu Antsirabe, district d'Antsirabe, commune d'Antsirabe, fokontany Mahazoarivo. »",
+          "Une fiche territoriale indique la région, le chef-lieu, le district, la commune et le fokontany.",
           "Miora dessine la frontière de la région au feutre rouge sur sa carte.",
         ],
       },

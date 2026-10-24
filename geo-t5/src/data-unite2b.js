@@ -383,7 +383,7 @@ const S23 = {
           "Grâce aux cases A1, B2, C6…, on saura exactement où placer le nord de l'île, le sud, les îles et les villes.",
         ],
         exemples: [
-          "On dira par exemple : « le cap d'Ambre se trouve vers la case C6 », comme on annonce « B4 » à la bataille navale.",
+          "Le quadrillage permet de repérer le cap d'Ambre dans une case définie par une lettre et un nombre.",
         ],
       },
     ],

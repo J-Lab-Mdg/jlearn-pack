@@ -2307,6 +2307,96 @@
       "id": "geo9_projet_pme",
       "url": "/geo9_projet_pme.png",
       "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_climats",
+      "url": "/atlas_mada_climats.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_cultures",
+      "url": "/atlas_mada_cultures.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_elevage",
+      "url": "/atlas_mada_elevage.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_environnement",
+      "url": "/atlas_mada_environnement.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_forets",
+      "url": "/atlas_mada_forets.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_hydrographie",
+      "url": "/atlas_mada_hydrographie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_industries",
+      "url": "/atlas_mada_industries.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_migrations",
+      "url": "/atlas_mada_migrations.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_mines",
+      "url": "/atlas_mada_mines.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_peche",
+      "url": "/atlas_mada_peche.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_population",
+      "url": "/atlas_mada_population.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_regions_naturelles",
+      "url": "/atlas_mada_regions_naturelles.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_relief",
+      "url": "/atlas_mada_relief.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_sols",
+      "url": "/atlas_mada_sols.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_tourisme",
+      "url": "/atlas_mada_tourisme.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_transports",
+      "url": "/atlas_mada_transports.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_vegetation",
+      "url": "/atlas_mada_vegetation.png",
+      "type": "image/png"
+    },
+    {
+      "id": "atlas_mada_zones_economiques",
+      "url": "/atlas_mada_zones_economiques.png",
+      "type": "image/png"
     }
   ]
 }

@@ -385,7 +385,7 @@ const S60 = {
           "Les ballots partent chaque semaine vers le port de Toamasina, puis vers les pays lointains. La textile rapporte des devises et fait vivre des familles entières — comme celle de Rado.",
         ],
         exemples: [
-          "« Cent machines à coudre, et je suis devenu l'une des personnes assises derrière », écrit Rado.",
+          "Une usine textile associe machines, ouvriers, énergie, matières premières et organisation de la production.",
           "Le camion des pull-overs part chaque vendredi vers le port.",
         ],
       },
@@ -805,7 +805,7 @@ const S63 = {
         ],
         exemples: [
           "Depuis que la piste du village est praticable, les sacs de riz partent au marché toute l'année.",
-          "« Une région sans route est un grenier sans porte », répète papa en démarrant.",
+          "Sans voie de communication, une région productive reste enclavée et accède difficilement aux marchés.",
         ],
       },
     ],

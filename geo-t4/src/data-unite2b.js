@@ -218,8 +218,8 @@ const S18 = {
           "On peut aussi dire : à côté de, en face de, près de, loin de.",
         ],
         exemples: [
-          "« La cantine est au Sud des salles de classe. »",
-          "« Le bureau du directeur est à l'Est des salles de classe. »",
+          "La cantine se situe au sud des salles de classe.",
+          "Le bureau du directeur se situe à l'est des salles de classe.",
         ],
       },
       {
@@ -338,8 +338,8 @@ const S19 = {
           "Ces lieux sont de bons repères parce que tout le monde les connaît et qu'ils ne changent pas de place.",
         ],
         exemples: [
-          "« L'école est au Nord du marché. »",
-          "« L'école est à l'Est de l'église, près de la grande route. »",
+          "L'école se situe au nord du marché.",
+          "L'école se situe à l'est de l'église, près de la grande route.",
         ],
       },
       {

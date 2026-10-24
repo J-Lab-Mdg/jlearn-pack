@@ -512,7 +512,7 @@ const S75 = {
           "Aucun marteau ne les touche : l'implantation des infrastructures commence par respecter ces interdits. Le village écologique ne bouscule pas les croyances : il s'appuie sur elles, car des hommes qui respectent leurs ancêtres respectent aussi leur terre.",
         ],
         exemples: [
-          "« Pas un marteau sur les tombes », tranche la doyenne Soa.",
+          "Les travaux doivent respecter les tombeaux, les lieux sacrés et les règles de la communauté.",
           "Le jour fady de la colline, aucun chantier ne travaille.",
         ],
       },
@@ -559,7 +559,7 @@ const S76 = {
     ["Où place-t-on le point d'eau et l'école ?", "L'eau au centre des habitations ; l'école au calme, loin des tombes et du marché."],
   ],
   miseEnSituation: {
-    texte: "Fin d'année. Au fond de la classe de Mme Randriamampionona, une grande table porte la maquette du travail de l'année : deux villages côte à côte. À gauche, le village d'avant : colline dénudée, rivière encombrée, déchets au vent. À droite, le village écologique : source clôturée, colline replantée, étang bleu, toits propres, petits panneaux solaires en papier d'argent. « Comparez », dit la maîtresse. Hery pointe la colline : « Ici la terre partait avec la pluie ; là, les arbres la retiennent. » Miora montre la rivière : « Ici les déchets ; là, la clôture et le dépôt. » Les parents approuvent : la maquette raconte mieux que mille discours.",
+    texte: "Fin d'année. Au fond de la classe de Mme Randriamampionona, une grande table porte la maquette du travail de l'année : deux villages côte à côte. À gauche, le village d'avant : colline dénudée, rivière encombrée, déchets au vent. À droite, le village écologique : source clôturée, colline replantée, étang bleu, toits propres, petits panneaux solaires en papier d'argent. « Comparez », dit la maîtresse. Hery pointe la colline : « Ici la terre partait avec la pluie ; là, les arbres la retiennent. » La comparaison oppose une rivière polluée à une rivière protégée par des équipements de gestion des déchets. Les parents approuvent : la maquette raconte mieux que mille discours.",
     question: "Quelles différences entre un village ordinaire et un village écologique, et comment la maquette les fait-elle voir ?",
     ra: "Le village écologique protège son eau, sa forêt et sa terre, gère ses déchets et son énergie. La maquette — carton, argile, papier, mousse — montre tout cela d'un coup d'œil : comparer, c'est comprendre.",
     support: "Schéma de la comparaison des deux villages (page Leçon)",
@@ -648,8 +648,8 @@ const S76 = {
           "La comparaison fait comprendre mieux que le discours : l'eau, la terre, l'air et la santé changent de visage d'un village à l'autre — et la vie avec.",
         ],
         exemples: [
-          "Hery pointe la colline : « Ici la terre partait ; là, les arbres la retiennent. »",
-          "Miora montre la rivière : « Ici les déchets ; là, la clôture et le dépôt. »",
+          "La comparaison montre qu'un versant reboisé retient mieux le sol qu'un versant nu.",
+          "La comparaison oppose une rivière polluée à une rivière protégée par des équipements de gestion des déchets.",
         ],
       },
       {

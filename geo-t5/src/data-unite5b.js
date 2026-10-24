@@ -232,7 +232,7 @@ const S70 = {
           "L'air y est pur, le cadre paisible, et les vivres bon marché : le riz du village coûte moins cher que celui de la ville.",
         ],
         exemples: [
-          "« On vit tranquille », disait le groupe de Soa au débat.",
+          "Le milieu rural offre souvent un cadre moins dense, proche des terres agricoles et des ressources naturelles.",
         ],
       },
       {
@@ -242,7 +242,7 @@ const S70 = {
           "Elle offre du travail à beaucoup : commerces, usines, bureaux, chantiers — et des loisirs variés.",
         ],
         exemples: [
-          "« On trouve du travail ! », répondait le groupe de Rakoto.",
+          "Le milieu urbain concentre de nombreux emplois, services, commerces et équipements.",
         ],
       },
       {
@@ -646,7 +646,7 @@ const S73 = {
           "Chaque geste compte : planter un arbre, trier un sac, éteindre un feu — la terre propre est l'affaire de tous.",
         ],
         exemples: [
-          "« Notre environnement, c'est notre maison commune », a dit le chef de quartier.",
+          "La protection de l'environnement rural et urbain repose sur une responsabilité collective.",
         ],
       },
     ],
@@ -757,7 +757,7 @@ const S74 = {
           "Chaque ligne du tableau oppose la colonne campagne à la colonne ville : nature contre immeubles, dispersion contre densité.",
         ],
         exemples: [
-          "Rakoto a écrit « rizières et prairies » en face de « immeubles et marchés ».",
+          "Le tableau compare les rizières et prairies rurales aux immeubles et marchés urbains.",
         ],
       },
       {
@@ -767,7 +767,7 @@ const S74 = {
           "Partout aussi, ils protègent leur environnement : la maison commune n'a pas de colonne.",
         ],
         exemples: [
-          "Soa a remarqué que la ligne « entraide » existe dans les deux colonnes.",
+          "L'entraide existe dans les milieux rural et urbain sous des formes différentes.",
         ],
       },
       {
@@ -777,7 +777,7 @@ const S74 = {
           "La campagne nourrit la ville, la ville équipe la campagne — et Madagascar a besoin de ses deux mains.",
         ],
         exemples: [
-          "« Deux milieux différents, mais complémentaires ! », ont conclu Soa et Rakoto.",
+          "Les milieux rural et urbain sont différents et complémentaires.",
         ],
       },
     ],

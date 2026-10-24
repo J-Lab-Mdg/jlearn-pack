@@ -125,7 +125,7 @@ const S67 = {
           "Et surtout, il prépare l'avenir : les enfants qui grandissent aujourd'hui trouveront demain les mêmes richesses. Voilà pourquoi des villages de Madagascar se lancent ce défi, unité après unité de vie.",
         ],
         exemples: [
-          "« Devenir un village écologique », le défi affiché au bureau du fokontany.",
+          "L'objectif d'un village écologique est affiché et traduit en actions collectives mesurables.",
           "Les rizières du village n'ont jamais été aussi propres ni aussi vertes.",
         ],
       },
@@ -386,7 +386,7 @@ const S69 = {
           "Aujourd'hui, beaucoup de villages écrivent leurs Dina dans le grand cahier du fokontany : la règle ancienne pour la source, la règle nouvelle pour les déchets ou le reboisement. La parole reste le cœur du Dina, le papier n'en est que la mémoire.",
         ],
         exemples: [
-          "« Celui qui coupe un arbre de la source paie un zébu », dit le Dina jauni.",
+          "Un Dina peut prévoir une réparation ou une sanction en cas de coupe d'arbre près d'une source.",
           "Le Dina neuf des déchets a été signé le mois dernier par tous les chefs de famille.",
         ],
       },

@@ -495,7 +495,7 @@ const S37 = {
           "C'est la saison du repiquage du riz : les rizières inondées verdissent. Mais c'est aussi la saison des cyclones, de décembre à mars.",
         ],
         exemples: [
-          "Le village de Ranofaly vit au rythme des averses : « la saison des pluies nourrit ».",
+          "À Ranofaly, les averses de la saison des pluies alimentent les cultures et les réserves d'eau.",
         ],
       },
       {
@@ -1172,7 +1172,7 @@ const S42 = {
           "Le soir, les troupeaux descendent boire au fleuve : c'est l'abreuvement.",
         ],
         exemples: [
-          "« Notre rivière, c'est notre trésor », répète la maman de Soa.",
+          "La rivière constitue une ressource essentielle pour l'eau, l'irrigation, la pêche et les écosystèmes.",
         ],
       },
     ],

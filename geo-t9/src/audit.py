@@ -80,7 +80,7 @@ for fault in [r"\benvironement\b", r"\bdeveloppement\b", r"\bgeographie\b", r"\b
 # Illustrations embarquées et fichiers sources.
 drawings = xml.count("<w:drawing>")
 media = [n for n in z.namelist() if n.startswith("word/media/") and "." in n.split("/")[-1]]
-report("138 illustrations placées", drawings == 138, str(drawings))
+report("153 illustrations placées", drawings == 153, str(drawings))
 report("Médias embarqués non vides", all(z.getinfo(n).file_size > 0 for n in media), str(len(media)))
 scene_files = glob.glob(os.path.join(ROOT, "geo-t9", "scenes", "scene_s*.jpg"))
 diagram_files = glob.glob(os.path.join(ROOT, "geo9_s[0-9][0-9].png"))
