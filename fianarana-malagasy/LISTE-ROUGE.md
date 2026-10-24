@@ -12,6 +12,10 @@ réapparition.
 | `taran-tanana` | non employé par le corpus | **`rantsan-tanana`** | mg.wikipedia « Dimy » | FAKANA |
 | `veroso` | verbe inventé par moi : 0 page dans l'édition malgaise | **`Safidio`** (choisir), **`Hamarino`** (vérifier) | PE T5 p.18 « hisafidy », p.17 « hanamarina » | TENY |
 | `amboary` | « composer » qui n'existe pas dans le PE (0 occurrence locale) | **`Mamorao`** | EXPLOITATION DU PE T5 : « mamorona fanontaniana » | TENY |
+| `androavana` | « se laver (le corps) » formé de ma main sur `fandroana` | **`mandro`** (se baigner) ou tourner avec `manasa` / `fanamainana` | CARNET, lignes `mandro` et `lamba madio` | TENY |
+| `famelezana` (dans `tsy azo famelezana`) | aucune trace du mot | **`tsy azo lavina`** | PE : « laviko » | TENY |
+| `zam-jerena` | nominalisation inventée | **`azo hijerena`** | cadre lu « azo asolo savony » | TENY |
+| `natsangana` (pour dire « mis en avant ») | non attesté dans le corpus | **`apetraka voalohany`** | corpus local (`apetraka`) | TENY |
 | `sakafo ara-potoana` | tournure sans trace : le repas « à heure fixe » n'est pas attesté | **`isan'andro`**, **`fiainana andavanandro`** | mg.wikipedia « Rano », PE p.18 | TENY |
 | `resena` pour dire « celui qui parle » | ce mot-là n'appartient pas à la langue scolaire ; le propriétaire l'a repris une fois pour toutes | **`miteny`** / **`itenenana`** | consigne du propriétaire | TENY |
 | `farango sosona` = les guillemets | le PE donne `farango sosona` = « … » | guillemets = `fanonana` (ou ne pas les nommer) | PE T5, p.16 | FAKANA |

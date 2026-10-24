@@ -6,6 +6,7 @@
     python3 fikarohana.py --corpus                                   ce que le corpus local contient
     python3 fikarohana.py --carnet                                   les lignes du CARNET non retrouvées
     python3 fikarohana.py --rouge                                    les fautes de la LISTE-ROUGE encore présentes
+    python3 fikarohana.py --fanamarinana data_modele                 chaque mot de la fiche doit avoir une trace locale
     python3 fikarohana.py --teny fandroana                           occurrences dans le corpus, avec contexte
 
 Deux sources de vérité : l'index de mg.wikipedia.org (recherche plein texte, si le réseau sortant est
@@ -222,6 +223,43 @@ def carnet():
     return len(manques)
 
 
+def fanamarinana(module):
+    """Le contrôle le plus dur : chaque mot d'une fiche doit être écrit quelque part dans le corpus.
+
+    Une fiche est dite propre quand ses tokens sans apostrophe se retrouvent tels quels dans le PE, les
+    pages collées ou `refs/`. Les mots de base du malgache (`etsy`, `kely`, `mafana` …) peuvent rester sur
+    la liste : la langue est vivante, le corpus est petit. Mais un mot qui n'y est PAS et qui n'est pas un
+    mot de base — `veroso`, `amboary`, `zam-jerena` — est une invention de l'agent, et c'est exactement ce
+    que ce contrôle cherche à attraper.
+    """
+    corpus = set()
+    for d in CORPUS:
+        if not os.path.isdir(d):
+            continue
+        for rac, _dirs, files in os.walk(d):
+            for f in files:
+                if f.endswith((".txt", ".md")):
+                    with open(os.path.join(rac, f), encoding="utf-8", errors="replace") as fh:
+                        corpus.update(re.findall(r"[a-z']+(?:-[a-z']+)*", hiovy(fh.read())))
+    chem = os.path.join(MANUEL, "src", module + ".py")
+    with open(chem, encoding="utf-8") as f:
+        src = f.read()
+    mots = []
+    for node in ast.parse(src).body:
+        if isinstance(node, (ast.Assign, ast.AnnAssign)):
+            for lit in ast.walk(node):
+                if isinstance(lit, ast.Constant) and isinstance(lit.value, str):
+                    txt = malemy(lit.value.replace("**", ""))
+                    mots += re.findall(r"[a-z']+(?:-[a-z']+)*", txt)
+    clefs = {k for k in re.findall(r'"([a-z0-9_]+)":', src)}
+    hors = sorted({w for w in mots if len(w) > 3 and "'" not in w and w not in corpus and w not in clefs})
+    print("%s : %d mot(s) écrit(s), %d sans trace exacte dans le corpus (%d%%)"
+          % (module, len(mots), len(hors), 100 * len(hors) // max(1, len(set(mots)))))
+    for i in range(0, len(hors), 8):
+        print("    " + "  ".join(hors[i:i + 8]))
+    return len(hors)
+
+
 def main():
     args = sys.argv[1:]
     if not args:
@@ -229,6 +267,9 @@ def main():
         return
     if args[0] == "--corpus":
         menu()
+    elif args[0] == "--fanamarinana" and len(args) > 1:
+        for mod in args[1:]:
+            fanamarinana(mod)
     elif args[0] == "--rouge":
         sys.exit(1 if rouge() else 0)
     elif args[0] == "--carnet":

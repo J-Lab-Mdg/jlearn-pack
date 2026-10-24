@@ -136,7 +136,7 @@ FICHE_BAVA = {
                "Diso : Taorian'ny mihinana manasa tanana. Marina : Taorian'ny mihinana, manasa tanana. "
                "(mari-piatoana : tsy nisy tsoraka nanasarana ny ampahany roa)"]),
         ("h", "Ny teny vaovao"),
-        ("p", "**fepetra** : ny toe-javatra ilazana izay atao ; **takiana** : ilaina, tsy azo famelezana ; "
+        ("p", "**fepetra** : ny toe-javatra ilazana izay atao ; **takiana** : ilaina, tsy azo lavina ; "
               "**ara-potoana** : araka ny fotoana nomena ; **fatoriana** : ny fandriana ; "
               "**mpanamarika fotoana** : ny teny mampiseho ny fotoana."),
     ],

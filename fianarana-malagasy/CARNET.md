@@ -24,6 +24,9 @@ ici de mémoire : si je ne peux pas écrire la colonne 3, la ligne n'existe pas.
 | `soraty` | écris | mg.wikipedia, 8 pages : « **Soraty** amin'ny boky izay hitanao » | **voamarina** | les exercices d'écriture |
 | `ampiasao` | utilise | mg.wikipedia, 6 pages : « **Ampiasao** tsara Ny andro iainanao » | **voamarina** | les exercices d'application |
 | `misy ifandraisany ny X sy ny Y` | il y a un lien entre X et Y | PE p.17 : « hanamarina raha **misy ifandraisany** ny lahatsoratra sy ny sary » | **voamarina** | préférer cette tournure à « mifandray amin'ny… » |
+| `tsy tokony hadinoana` | ne doit pas être oublié | racine `handina` (oublier) — à ne pas confondre avec `mandinika` (examiner), que le PE écrit `handinika ny sary` | **voamarina** | la consigne de la fiche pilote sur les parties de la main |
+| `tsy azo lavina` | indispensable, qu'on ne peut refuser | PE, formule « tsy manaiky aho / **laviko** » | **voamarina** | remplace `tsy azo famelezana` (aucune trace) dans la glose de `takiana` |
+| `ny lamba madio no ampiasaina amin'ny fanamainana` | c'est un linge propre qui sert à sécher | cadre `ampiasaina amin'ny …` lu dans « Savony » ; `maina` dans le corpus local | **mety** | remplace `Androavana amin'ny lamba` — `androavana` n'existe pas, le verbe est `mandro` |
 | `Aza + matoanteny` | ne … pas (defense) | PE T5, § Fitsipiky ny teny : « filaza mandidy **mandrara** (aza) » | **voamarina** | la consigne d'hygiène négative : `Aza sotroina ny rano maloto !` |
 | `mahasalama ny vatana` | le corps est en bonne santé | formule du PE reprise dans `EXPLOITATION DU PE T5` : « mahasalama ve ny … ? » | **voamarina** | ne pas écrire « mitahiry fahasalamana » sans objet clair |
 | `vakina` / `vakio` | qui doit être lu / lis | mg.wikipedia, 68 pages pour `vakio` | **voamarina** | `ny lahatsoratra dia tsy mbola vakina` |

@@ -102,10 +102,10 @@ SEANCES = [
         "tombana": [
             ("Inona no dingana voalohany amin'ny fanasana ny tanana ?",
              "Rano madio no ampiasaina vao misy savony."),
-            ("Inona ny tapany amin'ny tanana tsy tokony hadinoina ?",
-             "Ny lamosin-tanana sy ny eo anelanelan'ny rantsan-tanana."),
+            ("Inona no tsy tokony hadinoana amin'ny fanasana ny tanana ?",
+             "Ny lamosin-tanana sy ny eo anelanelan'ny rantsan-tanana, satria ao no mitahiry maloto."),
             ("Inona no atao rehefa vita ny fanasana ny tanana ?",
-             "Androavana amin'ny lamba madio."),
+             "Ny lamba madio no ampiasaina amin'ny fanamainana ny tanana."),
             ("Inona no hafatry ny lahatsoratra amin'ny teny anao ?",
              "Ny fahasalamana dia manomboka amin'ny fanasana ny tanana."),
         ],
