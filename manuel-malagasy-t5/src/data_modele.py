@@ -1,18 +1,24 @@
 # -*- coding: utf-8 -*-
-"""FICHE MODÈLE V2 — Vakiteny, lohahevitra 1 — écrase en malgache **vérifié**.
+"""FICHE MODÈLE V2 — Vakiteny, lohahevitra 1 — écrasée en malgache **vérifié**.
 
-Règle appliquée à la lettre : ici, aucun énoncé n'est écrit de mémoire. Chaque phrase est soit
+Règle tenue à la lettre : aucun énoncé écrit de mémoire. Trois statuts seulement, inscrits dans
+`fianarana-malagasy/CARNET.md` (et les rejets dans `LISTE-ROUGE.md`) :
 
-* **voalaza avokoa** (recopiée telle quelle) — page `Rano` de l'édition malgaise de l'encyclopédie
-  (`sources_web/full/mgwiki_rano.txt`, collée en entier après les corrigés) —,
-* soit **prête le cadre d'une phrase du PE T5** (`refs/PE_T5_malagasy_p9-26.txt`, § Vakiteny, p.14-18 :
-  `Mialohan'ny vakiteny / Mandritra ny vakiteny / Aorian'ny vakiteny`, `Tetika amam-paika`,
-  `Mari-piatoana : teboka, baraingo, tsoraka, faingo…`), l'objet seul change quand il le faut ;
-* soit **mety** : modèle attesté ailleurs dans le corpus (`manasa tanana`, `toerana banga`).
+* **voalaza avokoa** — la phrase est recopiée telle quelle : page `Rano` de l'édition malgaise de
+  l'encyclopédie (`sources_web/full/mgwiki_rano.txt`, collée en entier après les corrigés) ;
+* **voasazy amin'ny PE** — la consigne prend le cadre du § Vakiteny du PE T5
+  (`refs/PE_T5_malagasy_p9-26.txt`, p.14-18 : `Mialohan'ny / Mandritra ny / Aorian'ny vakiteny`,
+  `haminavina ny mety ho votoatin'ny lahatsoratra`, `hanamarina ny vinavina natao`,
+  `hamantatra sy hanamarina ny hevi-dehibe raketin'ny lahatsoratra`, `Tetika amam-paika : Fanontaniana
+  arahim-baliny, Fifanakalozan-kevitra, Adihevitra`, `Mari-piatoana : teboka, baraingo, tsoraka, faingo,
+  teboka roa, teboka amam-paingo, farango sosona`) — l'objet seul change quand il le faut, parce que le
+  manuel n'a pas d'image ;
+* **mety** — modèle attesté ailleurs dans le corpus (`manasa tanana`, `toerana banga`, `fanasana ny
+  tanana` sur le modèle lu `Fanasan-tongotra`) : accepté, mais signalé au relecteur.
 
 Ce qui n'a pas de preuve n'apparaît pas : ni `sabonina` (0 page — `savony`), ni `fandroavana`
-(`fanadiovana`), ni `veroso` (0 page — le PE dit `hisafidy` → `Safidio`), ni `manasa nify`.
-Les attestations sont dans `fianarana-malagasy/CARNET.md`, les rejets dans `LISTE-ROUGE.md`.
+(`fanadiovana`), ni `veroso` (0 page — le PE dit `hisafidy` → `Safidio`), ni `amboary` (`Mamorao`), ni
+`sakafo ara-potoana` (`isan'andro`), ni `manasa nify`, ni `fanasan-tanana`.
 
 Ordre de la fiche : LESONA → FANAZARAN-TENA + VALINY → LOHARANON-KEVITRA → TAKELA-PANOMANAN-DESONA.
 """
@@ -36,10 +42,10 @@ FICHE_VAKITENY = {
          "Mety ho azo amin'ny fisotroana rano maloto ny aretina : ny kolera, ny bilarziozy, ny tefoedra."),
         ("Iza no mila manasa tanana ?", "Ny rehetra, alohan'ny mihinana ary aorian'izay koa."),
     ],
-    "obs1": "Ny efa fantatra no averina eto; ny lahatsoratra dia tsy mbola nosokajiana.",
+    "obs1": "Ny efa fantatra no averina eto; ny lahatsoratra vaovao dia tsy mbola vakina.",
 
-    # ---- II.1 Tari-dresaka : la consigne du PE elle-même (Mialohan'ny vakiteny)
-    "si": "Fanontaniana : Rehefa ny lohateny dia hoe « Ny rano, iankinan'ny aina », inona no mety ho "
+    # ---- II.1 Tari-dresaka : la consigne du PE (Mialohan'ny vakiteny), objet changé faute d'image
+    "si": "Fanontaniana : Ny lohateny dia hoe « Ny rano, iankinan'ny aina » — inona no mety ho "
           "votoatin'ny lahatsoratra ? V.A. : Misy ifandraisany ny rano sy ny fahasalamana, satria "
           "iankinan'ny aina ny rano.",
     "fit1": "Solaitrabe",
@@ -60,8 +66,8 @@ FICHE_VAKITENY = {
     "ka": [
         ("Inona no atao hoe rano araka ny lahatsoratra ?",
          "Ny rano dia akora iankinan'ny aina eto an-tany."),
-        ("Rano ve ny vatan'ny olombelona ?",
-         "Ny 3/4 ny vatan'ny olombelona dia rano avokoa."),
+        ("Misy rano ao amin'ny vatan'ny olombelona ve ?",
+         "Eny, ny 3/4 ny vatan'ny olombelona dia rano avokoa."),
         ("Inona no mila atao isan'andro ?",
          "Mila misotro rano isan'andro isika mba hikolokoloana an'io."),
         ("Inona no mety mitondra ny rano maloto ?",
@@ -72,7 +78,7 @@ FICHE_VAKITENY = {
          "Na miady aza ny tompon'ny tanimbary mifanao ambony sy ambany dia mahay mifanaraka foana amin'ny "
          "fizaran-drano."),
         ("Misy ifandraisany ve ny lahatsoratra sy ny fiainana andavanandro ?",
-         "Misy: ny fanasana ny tanana sy ny fisotroana rano madio dia fepetra fototra isan'andro."),
+         "Misy : ny fanasana ny tanana sy ny fisotroana rano madio dia fepetra fototra isan'andro."),
     ],
     "tec": "Fanontaniana arahim-baliny / Fifanakalozan-kevitra / Adihevitra",
 
@@ -88,10 +94,11 @@ FICHE_VAKITENY = {
         ("Inona no ilaina isan'andro ?", "Ny rano madio sotroina."),
         ("Inona no atao rehefa maloto ny rano ?",
          "Tsara raha ampangotrahina, na ampiana fanafody."),
-        ("Inona no mari-piatoana faran'ny fehezanteny filazana ?", "Ny teboka."),
+        ("Inona no mari-piatoana amin'ny faran'ny fehezanteny voalohany amin'ny lahatsoratra ?",
+         "Ny teboka."),
     ],
 
-    # ---- la leçon : trois phrases recopiées de la page, une construite sur le même cadre
+    # ---- la leçon : trois paragraphes recopiés de la page, un construit sur le même cadre
     "le": [
         ("h", "Lahatsoratra : « Ny rano, iankinan'ny aina »"),
         ("l", "Ny rano dia akora iankinan'ny aina eto an-tany. Ny 3/4 ny vatan'ny olombelona dia rano "
@@ -102,9 +109,9 @@ FICHE_VAKITENY = {
               "isan-karazany ahiana hahatonga aretina. Anisan'ny aretina mety ho azo amin'ny fisotroana rano "
               "maloto ny kolera, ny bilarziozy, ny tefoedra sns. Tsara raha ampangotrahina ny rano vao "
               "sotroina, na farafaharatsiny ampiana fanafody tahaka ny Sur'Eau."),
-        ("l", "Mety ho azo amin'ny tanana maloto ny aretina, toy ny fisotroana rano maloto. Koa ny "
-              "fanasana ny tanana amin'ny savony sy rano madio, alohan'ny mihinana ary aorian'izay, dia "
-              "fepetra fototra ho an'ny fahasalamana."),
+        ("l", "Mety ho azo amin'ny tanana maloto ny aretina, toy ny fisotroana rano maloto. Koa ny fanasana "
+              "ny tanana amin'ny savony sy rano madio, alohan'ny mihinana ary aorian'izay, dia fepetra "
+              "fototra ho an'ny fahasalamana."),
         ("l", "Manan-danja be amin'ny aina ny rano hany ka manan-danja amin'ny fiarahamonina koa. Iza no "
               "manana fahefana amin'ny rano ? Izay manana fahefana amin'ny rano no manana fahefana amin'ny "
               "rehetra. Ny rano madio dia fahasalamana ; ny fahasalamana dia ambony lavitra noho ny "
@@ -113,30 +120,29 @@ FICHE_VAKITENY = {
         ("x", ["Ny rano dia akora iankinan'ny aina : entimilaza + **dia** + lazaina (tso-drafitra).",
                "Izay manana fahefana amin'ny rano no manana fahefana amin'ny rehetra : **izay … no …** "
                "(mivadi-drafitra), ilay lazaina no natsangana.",
-               "Tsara raha ampangotrahina ny rano : **tsara raha** + matoanteny amin'ny -ina, ny "
-               "torohevitra momba ny fahasalamana.",
+               "Tsara raha ampangotrahina ny rano : **tsara raha** + matoanteny amin'ny -ina, indrindra "
+               "amin'ny torohevitra momba ny fahasalamana.",
                "Manan-danja be amin'ny aina ny rano hany ka manan-danja … koa : **hany ka** no "
                "mampifandray ny toetra sy ny voka-dratsiny."]),
         ("h", "Ohatra diso sy ny fanitsiana"),
         ("x", ["Diso : Ny 3/4 ny vatan'ny olombelona rano. — Marina : Ny 3/4 ny vatan'ny olombelona **dia** "
-               "rano avokoa. (tsy nisy ny teny « dia » nananjara ny entimilaza sy ny lazaina)",
+               "rano avokoa. (tsy nisy ny teny « dia » ; ny entimilaza sy ny lazaina dia tsy mifandray)",
                "Diso : Ny rano dia akora iankinan'ny aina — Marina : Ny rano dia akora iankinan'ny aina. "
-               "(tsy nisy teboka ny faran'ny fehezanteny)",
+               "(tsy nisy teboka teo amin'ny faran'ny fehezanteny)",
                "Diso : Mila misotro rano isika mba hikolokoloana. — Marina : Mila misotro rano isika mba "
-               "hikolokoloana **an'io**. (tsy voalaza ny zavatra kolokoloana)"]),
+               "hikolokoloana **an'io**. (tsy voalaza ny zavatra hikolokoloana)"]),
         ("h", "Ny teny vaovao"),
-        ("p", "Ireo voambolana vaovao na sarotra tao amin'ny lahatsoratra : **iankinan'ny aina** : ny akora "
-              "ilaina mba hanana aina, toy ny sakafo mahavelona ; **hikolokoloana** : ny hitahiry azy "
-              "ho an'ny aina ; **mikiraoba** : ny zavatra kely tsy hita maso ao amin'ny rano maloto, "
-              "mety hahatonga aretina ; **ampangotra** : ny rano natao ho mafana amin'ny afo vao "
-              "sotroina ; **isan'andro** : isaky ny andro ; **fizaran-drano** : ny fomba fizarana ny rano "
-              "eny an-tanimbary."),
+        ("p", "Ireo voambolana vaovao na sarotra tao amin'ny lahatsoratra : **iankinan'ny aina** : ny "
+              "zavatra ilain'ny aina mba ho velona ; **hikolokoloana** : hitahiry, tsy avela hiala ; "
+              "**mikiraoba** : ny zavatra kely tsy hita maso ao amin'ny rano maloto, mety hahatonga "
+              "aretina ; **ampangotra** : ny rano natao ho mafana amin'ny afo vao sotroina ; **isan'andro** : "
+              "isaky ny andro ; **fizaran-drano** : ny fomba fizarana ny rano eny an-tanimbary."),
     ],
 
     # ---- fampahalalana fanampiny
     "cu": [
-        "Ny fehezanteny voalaza etsy ambony dia misy ao amin'ny pejy « Rano » (Wikipedia malagasy), "
-        "etsy ambanin'ny VALINY no pejy manontolo azo hijerena, ka tsy misy nesorina na novana tao.",
+        "Ny fehezanteny voalaza etsy ambony dia misy ao amin'ny pejy « Rano » (Wikipedia malagasy), etsy "
+        "ambanin'ny VALINY no pejy manontolo azo hijerena, ka tsy misy nesorina na novana tao.",
         "Ny **savony** dia « siran'ny asidra matavy … ampiasaina amin'ny fanadiovana sy fandamana » "
         "(Wikipedia malagasy, « Savony ») ; ny **lavenona** kosa dia « azo asolo savony » (Wikipedia "
         "malagasy, « Lavenona »).",
@@ -150,13 +156,13 @@ FICHE_VAKITENY = {
         "Ny fanasana ny tanana amin'ny savony sy rano madio dia fepetra fototra ho an'ny fahasalamana.",
     ],
 
-    # ---- fampiharana : consignes prises du PE et du vocabulaire attesté
+    # ---- fampiharana : consignes prises du PE, vocabulaire attesté
     "fp": [
         {"c": "Ampiasao ny mari-piatoana mety : teboka (.), baraingo (?), tsoraka (!).",
          "i": ["1) Ny rano dia akora iankinan'ny aina",
-               "2) Inona no atao ny rano vao sotroina",
-               "3) Mazoto ny rehetra manasa tanana alohan'ny mihinana",
-               "4) Rano ve ny vatan'ny olombelona"],
+               "2) Misy rano ao amin'ny vatan'ny olombelona ve",
+               "3) Aza sotroina ny rano maloto",
+               "4) Firy amin'ny vatan'ny olombelona no rano"],
          "v": ["1) teboka", "2) baraingo", "3) tsoraka", "4) baraingo"]},
         {"c": "Safidio ny teny mety ho an'ny toerana banga, dia soraty eo : iankinan'ny aina, isan'andro, "
               "ampangotrahina, fizaran-drano.",
@@ -187,16 +193,15 @@ FICHE_VAKITENY = {
          "v": ["1) Ohatra : Ny rano madio dia ilaina isan'andro.",
                "2) Ohatra : Ny tanimbary ambony sy ambany dia mahay mifanaraka foana amin'ny "
                "fizaran-drano.",
-               "3) Ohatra : Manan-danja be ny fanadiovana, hany ka mitahiry fahasalamana ny olona "
-               "mazoto.",
+               "3) Ohatra : Manan-danja be ny fanadiovana, hany ka mahasalama ny vatana.",
                "4) Ohatra : Ny biby sy ny zavamaniry dia mila rano koa."]},
         {"c": "Hilaza ny hevi-dehibe raketin'ny lahatsoratra : inona no voalaza amin'ireto andalana ireto ?",
          "i": ["1) Ny andalana voalohany", "2) Ny andalana faharoa", "3) Ny andalana fahatelo",
                "4) Ny andalana fahefatra"],
          "v": ["1) Ny maha-iankinan'ny aina ny rano.",
-               "2) Ny tsy fahampian'ny rano maloto ho an'ny fahasalamana.",
-               "3) Ny ifandraisan'ny tanana maloto sy ny aretina.",
-               "4) Ny lanjan'ny rano eo amin'ny fiarahamonina."]},
+               "2) Ny rano maloto dia mety mitondra aretina.",
+               "3) Ny fanasana ny tanana dia fepetra fototra ho an'ny fahasalamana.",
+               "4) Ny rano dia manana lanja eo amin'ny fiarahamonina."]},
     ],
 }
 
