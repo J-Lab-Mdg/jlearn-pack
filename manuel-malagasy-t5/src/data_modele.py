@@ -90,7 +90,7 @@ FICHE_VAKITENY = {
 
     # ---- III. Tombana : questions-réponses simples
     "to": [
-        ("Inona no lohatenin'ny lahatsoratra nosokajiana ?", "« Ny rano, iankinan'ny aina »."),
+        ("Inona no lohatenin'ny lahatsoratra vakina ?", "« Ny rano, iankinan'ny aina »."),
         ("Inona no ilaina isan'andro ?", "Ny rano madio sotroina."),
         ("Inona no atao rehefa maloto ny rano ?",
          "Tsara raha ampangotrahina, na ampiana fanafody."),
@@ -119,7 +119,7 @@ FICHE_VAKITENY = {
         ("h", "Firafitry ny fehezanteny hita ao amin'ny lahatsoratra"),
         ("x", ["Ny rano dia akora iankinan'ny aina : entimilaza + **dia** + lazaina (tso-drafitra).",
                "Izay manana fahefana amin'ny rano no manana fahefana amin'ny rehetra : **izay … no …** "
-               "(mivadi-drafitra), ilay lazaina no natsangana.",
+               "(mivadi-drafitra) : ny lazaina no apetraka voalohany.",
                "Tsara raha ampangotrahina ny rano : **tsara raha** + matoanteny amin'ny -ina, indrindra "
                "amin'ny torohevitra momba ny fahasalamana.",
                "Manan-danja be amin'ny aina ny rano hany ka manan-danja … koa : **hany ka** no "
@@ -169,7 +169,7 @@ FICHE_VAKITENY = {
          "i": ["1) Ny rano dia akora ………… eto an-tany.",
                "2) Mila misotro rano ………… isika mba hikolokoloana an'io.",
                "3) Tsara raha ………… ny rano vao sotroina.",
-               "4) Eny an-tanimbary dia mahay mifanaraka foana amin'ny ………… ny mpamboly."],
+               "4) Eny an-tanimbary dia mahay mifanaraka foana amin'ny ………… ny tompon'ny tanimbary."],
          "v": ["1) **iankinan'ny aina**", "2) **isan'andro**", "3) **ampangotrahina**",
                "4) **fizaran-drano**"]},
     ],
@@ -198,7 +198,7 @@ FICHE_VAKITENY = {
         {"c": "Hilaza ny hevi-dehibe raketin'ny lahatsoratra : inona no voalaza amin'ireto andalana ireto ?",
          "i": ["1) Ny andalana voalohany", "2) Ny andalana faharoa", "3) Ny andalana fahatelo",
                "4) Ny andalana fahefatra"],
-         "v": ["1) Ny maha-iankinan'ny aina ny rano.",
+         "v": ["1) Ny rano dia akora iankinan'ny aina.",
                "2) Ny rano maloto dia mety mitondra aretina.",
                "3) Ny fanasana ny tanana dia fepetra fototra ho an'ny fahasalamana.",
                "4) Ny rano dia manana lanja eo amin'ny fiarahamonina."]},
