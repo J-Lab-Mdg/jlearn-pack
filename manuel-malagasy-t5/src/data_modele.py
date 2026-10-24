@@ -135,8 +135,8 @@ FICHE_VAKITENY = {
 
     # ---- fampahalalana fanampiny
     "cu": [
-        "Ny fehezanteny voalaza etsy ambony dia misy ao amin'ny pejy « Rano » (Wikipedia malagasy) : "
-        "Etsy ambanin'ny VALINY no pejy manontolo azo hijerena, ka tsy misy nesorina na novana tao.",
+        "Ny fehezanteny voalaza etsy ambony dia misy ao amin'ny pejy « Rano » (Wikipedia malagasy), "
+        "etsy ambanin'ny VALINY no pejy manontolo azo hijerena, ka tsy misy nesorina na novana tao.",
         "Ny **savony** dia « siran'ny asidra matavy … ampiasaina amin'ny fanadiovana sy fandamana » "
         "(Wikipedia malagasy, « Savony ») ; ny **lavenona** kosa dia « azo asolo savony » (Wikipedia "
         "malagasy, « Lavenona »).",
