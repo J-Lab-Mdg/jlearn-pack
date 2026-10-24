@@ -83,9 +83,15 @@ S1 = {
         ("body", "La perméabilité est la capacité du sol à laisser l'eau le traverser. Un sol sableux est "
                  "généralement très perméable ; un sol argileux est peu perméable."),
         ("section", "2. Les propriétés chimiques du sol"),
+        ("sub", "a. L'acidité ou la basicité (le pH)"),
         ("body", "Un sol peut être acide, basique ou neutre, selon les substances chimiques qu'il contient. "
                  "Cette propriété influence beaucoup les plantes qui peuvent y pousser : certaines cultures "
                  "préfèrent un sol plutôt acide, d'autres un sol plutôt neutre ou basique."),
+        ("sub", "b. La richesse en nutriments"),
+        ("body", "Un sol fertile contient des éléments nutritifs essentiels, notamment l'azote, le phosphore "
+                 "et le potassium, que les plantes absorbent par leurs racines pour grandir. Ces éléments "
+                 "proviennent surtout de la décomposition de la matière organique (feuilles mortes, humus, "
+                 "débris végétaux)."),
     ],
     "exercices": [
         ("Exercice 1 (5 points)", " — Cite les cinq propriétés physiques du sol étudiées dans la leçon."),

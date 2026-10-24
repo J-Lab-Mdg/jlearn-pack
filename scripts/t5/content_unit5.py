@@ -75,7 +75,15 @@ S1 = {
                  "mordu un rat infecté. Symptômes : fièvre élevée, ganglions gonflés et douloureux (bubons). "
                  "Madagascar est le pays du monde qui déclare le plus de cas de peste chaque année ; la maladie "
                  "reste présente de façon endémique sur les Hautes Terres Centrales."),
-        ("section", "4. Pourquoi comprendre la transmission ?"),
+        ("section", "4. Les grandes voies de transmission des maladies infectieuses"),
+        ("body", "Au-delà de ces trois exemples, on distingue en général quatre grandes voies de transmission "
+                 "des maladies infectieuses : la voie aérienne (par les gouttelettes de salive projetées en "
+                 "toussant, éternuant ou parlant, comme pour la grippe) ; la voie orale ou hydrique (en "
+                 "buvant une eau ou en mangeant un aliment souillé, comme pour le choléra) ; la voie cutanée, "
+                 "par la piqûre ou la morsure d'un vecteur animal (comme le moustique pour le paludisme, ou "
+                 "la puce pour la peste) ; et la voie de contact (contact direct avec une personne malade ou "
+                 "un objet qu'elle a touché)."),
+        ("section", "5. Pourquoi comprendre la transmission ?"),
         ("body", "Connaître le mode de transmission d'une maladie permet de savoir comment s'en protéger : "
                  "éviter les piqûres de moustiques, boire une eau propre, limiter le contact avec les rats et "
                  "leurs puces. Ces moyens de prévention seront étudiés dans la séance suivante."),
@@ -176,7 +184,14 @@ S2 = {
                  "sévère, ganglions gonflés), il faut : se rendre rapidement à un centre de santé de base (CSB) "
                  "ou un hôpital ; ne jamais attendre que les symptômes s'aggravent ; suivre le traitement "
                  "prescrit jusqu'au bout ; se reposer et bien s'hydrater."),
-        ("section", "5. La responsabilité de chacun"),
+        ("section", "5. Garder les numéros utiles à portée de main"),
+        ("body", "Il est utile de connaître à l'avance les coordonnées du centre de santé de base (CSB) ou de "
+                 "l'hôpital le plus proche de chez soi, pour ne pas perdre de temps en cas d'urgence. Par "
+                 "exemple, à Antananarivo, le grand hôpital public HJRA (Hôpital Joseph Ravoahangy "
+                 "Andrianavalona, à Ampefiloha) est joignable au 020 22 279 79. Chaque élève devrait, avec "
+                 "l'aide d'un adulte, noter dans son cahier les coordonnées du centre de santé de sa propre "
+                 "localité."),
+        ("section", "6. La responsabilité de chacun"),
         ("body", "Chaque personne a un rôle à jouer : en respectant les gestes de prévention et en consultant "
                  "rapidement un agent de santé en cas de symptômes, on se protège soi-même et on protège sa "
                  "famille et sa communauté."),

@@ -256,8 +256,12 @@ S3 = {
                    "Des solutions aqueuses variées : eau salée, eau sucrée, jus de citron, eau savonneuse.")),
         ("section", "3. Acidité, basicité, neutralité"),
         ("body", "Une solution peut être acide (comme le jus de citron ou le vinaigre), basique (comme l'eau "
-                 "savonneuse ou l'eau de Javel) ou neutre (comme l'eau pure). On peut mesurer ce caractère à "
-                 "l'aide d'un papier indicateur (papier pH)."),
+                 "savonneuse, l'eau de Javel ou le bicarbonate de soude dissous dans l'eau) ou neutre (comme "
+                 "l'eau pure). On peut mesurer ce caractère à l'aide d'un papier indicateur (papier pH)."),
+        ("body", "On reconnaît souvent une solution acide à son goût piquant ou aigre (comme le citron), "
+                 "tandis qu'une solution basique a souvent un aspect glissant au toucher et un goût amer "
+                 "(comme l'eau savonneuse). Attention : il ne faut jamais goûter une solution inconnue en "
+                 "classe, certaines étant dangereuses."),
         ("section", "4. La conductivité électrique"),
         ("body", "Certaines solutions aqueuses, comme l'eau salée, conduisent le courant électrique, car les "
                  "substances dissoutes permettent au courant de circuler. L'eau pure ou distillée, elle, "

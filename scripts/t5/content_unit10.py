@@ -160,6 +160,8 @@ S2 = {
         ("section", "1. L'impact sur l'eau"),
         ("body", "Les déchets jetés dans les rivières, les lacs ou près des puits polluent l'eau, la rendant "
                  "dangereuse à boire et nuisible pour les poissons et les autres animaux aquatiques."),
+        ("body", "Les déchets jetés dans les cours d'eau peuvent aussi obstruer les canaux d'évacuation des "
+                 "eaux de pluie, ce qui peut aggraver les inondations lors de fortes pluies."),
         ("section", "2. L'impact sur le sol"),
         ("body", "Les déchets enterrés ou abandonnés peuvent libérer des substances qui appauvrissent le sol ou "
                  "le rendent impropre à la culture."),
