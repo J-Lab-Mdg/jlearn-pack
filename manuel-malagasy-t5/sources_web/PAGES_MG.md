@@ -10,6 +10,17 @@ ci-dessous ne sont pas supposés : chacun a été **vérifié dans l'index de l'
 | clé | article (titre exact) | fiche |
 |---|---|---|
 | `mgwiki_fehezanteny` | Fehezanteny | thème 1, fiche 3 (Fiasan'ny teny) — notion `Rafitry ny fehezanteny` |
+| `mgwiki_rano` | Rano | **fiche modèle V2** (`data_modele.py`) et thème 1, fiche pilote — leçon de vocabulaire et de compréhension ; la section `Fahasalamana` de l'article est le texte lu lui-même |
+
+**Comment une page entre dans le manuel** (le seul canal réseau du sandbox est l'outil de récupération de
+page — `curl` et `urllib` sont bouchés) : `fetch_page https://mg.wikipedia.org/wiki/<Titre>` → recopier le
+texte **tel quel** dans `full/<clé>.txt` → créer la clé dans `src/sources.py` (`u:` le titre et la section
+cités, `c:` la phrase en fiche) → inscrire `<clé>` dans le `loharano` de la fiche. Une page non recopiée ne
+doit pas être citée. Après chaque copie : `./run.sh src/collect_web.py V1`.
+
+Utiles aussi, lues dans l'index mais **pas encore recopiées** : `Savony` (1 292 octets, définit le mot
+`savony` — 41 pages — et non `sabonina`, 0 page), `Lavenona`, `Dimy` (`rantsan-tanana`), `Tara`,
+`Bokin' i Nehemia` (titre de section `Fanadiovana ny tanàna`).
 
 ## À collecter pour les thèmes 1 à 5 (titres vérifiés)
 

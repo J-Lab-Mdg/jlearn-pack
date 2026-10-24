@@ -170,7 +170,7 @@ FICHE_BAVA = {
          "cor": ["1) **b) mialoha**", "2) **b) manaraka**", "3) **d) vao**", "4) **b)**"]},
         {"c": "Mameno ny toerana banga amin'ny mpanamarika fotoana mety.",
          "p": 4,
-         "items": ["1) ……………… ny fandroana, manomana daka sy sabonina.",
+         "items": ["1) ……………… ny fandroana, manomana daka sy savony.",
                    "2) Manasa nify isika, ……………… mandry.",
                    "3) ……………… nianatra, dia nandry ao am-patoriana.",
                    "4) ……………… miala amin'ny tokana maraina, manasa tanana aho."],
@@ -203,7 +203,7 @@ FICHE_TENY = {
     "durees": (5, 20, 5),          # seho 30 minitra
 
     "famerenana": [
-        ("Inona no atao hoe anarana ?", "Ny teny manonona olona na zavatra, ohatra : tanana, rano, sabonina."),
+        ("Inona no atao hoe anarana ?", "Ny teny manonona olona na zavatra, ohatra : tanana, rano, savony."),
         ("Ny teny hoe « tanana » dia anarana manokana ve ?", "Tsy anarana manokana, fa anarana iombonana."),
         ("Inona no mampiseho ny tompon'ny zavatra iray ?",
          "Ny teny kely tafangora amin'ny faran'ny anarana, ohatra ny -ko."),

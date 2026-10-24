@@ -15,6 +15,7 @@ Contenu des thèmes 1 à 5 du manuel Fiteny Malagasy T5 (12 à 20 fiches livrée
 | 9 | `wiki_discrimination` | Wikipédia (fr) — « Discrimination », encyclopédie en ligne, licence CC BY-SA 4.0 | https://fr.wikipedia.org/wiki/Discrimination | 4 |
 | 10 | `wiki_demokrasia` | Wikipédia (fr) — « Démocratie », encyclopédie en ligne, licence CC BY-SA 4.0 | https://fr.wikipedia.org/wiki/D%C3%A9mocratie | 3 |
 | 11 | `mgwiki_fehezanteny` | Wikipedia (mg) — « Fehezanteny », Wikipedia malagasy, vasontolo malalaka | https://mg.wikipedia.org/wiki/Fehezanteny | 1 |
+| 12 | `mgwiki_rano` | Wikipedia (mg) — « Rano », section « Fahasalamana », Wikipedia malagasy, vasontolo malalaka | https://mg.wikipedia.org/wiki/Rano | 2 |
 
 ## Méthode
 

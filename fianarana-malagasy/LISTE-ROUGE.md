@@ -7,6 +7,9 @@ réapparition.
 | diso | nahoana | marina | voamarina amin'ny | jaraina |
 |---|---|---|---|---|
 | `Fandroana ny Tanana` (titre de leçon) | `mandro/fandroana` = se baigner, et `Fandroana` = le bain royal ; ce n'est pas le lavage des mains | **`Fanasana ny tanana`** (titre) et **`Manasa tanana`** (consigne) | mg.wikipedia « Fandroana », « Alahamadibe », « Tanala » ; « Volafotsy » pour `fanasana` | TENY |
+| `sabonina` | 0 page dans le corpus : le mot malgache est `savony` | **`savony`** | mg.wikipedia, article Savony (41 pages) | TENY |
+| `fandroavana` | mot composé de ma façon pour « lavage » | **`fanadiovana`** | mg.wikipedia, 142 pages (Savony, Lavenona) | TENY |
+| `taran-tanana` | non employé par le corpus | **`rantsan-tanana`** | mg.wikipedia « Dimy » | FAKANA |
 | `resena` pour dire « celui qui parle » | ce mot-là n'appartient pas à la langue scolaire ; le propriétaire l'a repris une fois pour toutes | **`miteny`** / **`itenenana`** | consigne du propriétaire | TENY |
 | `farango sosona` = les guillemets | le PE donne `farango sosona` = « … » | guillemets = `fanonana` (ou ne pas les nommer) | PE T5, p.16 | FAKANA |
 | `tsofoka` désignant les quotes | `tsirinteny tsofoka amin'ny matoanteny` = `-in-`, `-if-`, `-amp-` | garder le terme du PE pour les infixes | PE T5, p.19 | FAKANA |

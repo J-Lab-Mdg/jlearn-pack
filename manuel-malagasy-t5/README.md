@@ -97,6 +97,25 @@ Le build garde l'ordre historique (fiche de préparation d'abord) tant que le dr
 `verify.py` accepte le fichier isolé avec un 4e argument `modele` (pas de sommaire, pas d'annexe,
 tableau des blocs en plus) : `./run.sh src/verify.py output/…-FICHE-MODELE_V1.docx 1 data_loha1 modele`.
 
+### V2 : le modèle écrit sur le malgache vérifié
+
+`src/data_modele.py` est une fiche **refaite**, non corrigée : le même gabarit, mais le malgache ne vient
+plus de mémoire. Chaque tournure a été lue dans une page de l'édition malgaise de l'encyclopédie avant
+d'être écrite, et l'attestation (page, phrase, URL) est consignée dans
+`../fianarana-malagasy/CARNET.md`. Ce qui n'est pas trouvé n'est **pas** écrit.
+
+```sh
+./run.sh src/build_modele.py data_modele Manuel_Malagasy_T5_FICHE-MODELE_V2 1
+./run.sh src/verify.py output/Manuel_Malagasy_T5_FICHE-MODELE_V2.docx 1 data_modele modele
+python3 ../fianarana-malagasy/fikarohana.py --rouge     # aucune faute bannie ne doit revenir
+```
+
+La leçon est une lecture de la page `Rano` (`sources_web/full/mgwiki_rano.txt`, collée en entier après les
+corrigés). Deux mots inventés ont disparu à cette occasion : `sabonina` (0 page — le mot est `savony`,
+41 pages et article dédié) et `fandroavana` (0 page — le mot est `fanadiovana`, 142 pages). Le balayage
+`--rouge` ne lit que les littéraux des données, hors commentaires : citer une faute pour expliquer pourquoi
+elle est bannie n'est pas la réécrire.
+
 ## Termes malgaches : jamais inventés, jamais traduits de force
 
 `refs/EXPLOITATION_DU_PE_T5.txt` (copie du document du propriétaire, à la racine du dépôt sur `main`)

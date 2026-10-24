@@ -9,6 +9,15 @@ ici de mémoire : si je ne peux pas écrire la colonne 3, la ligne n'existe pas.
 | `fanasana ny tanana` | le lavage des mains (nom) | modèle lu : « **fanasana** sary » (Krômia/Volafotsy), « nampanao **fanasana ny** tongotr'ireo anjely » (Fanasan-tongotra) | **mety** (modèle attesté, `fanasan-tanana` = 0 occurrence littérale) | titre de leçon, après `ny` |
 | `Fanasan-tongotra` | le lavement des pieds | titre d'article mg.wikipedia « Fanasan-tongotra (fivavahana) » | **voamarina** | prouve le composé `fanasan-` + `-ny` trait d'union |
 | `mandro` / `fandroana` | se baigner / le bain ; `Fandroana` = fetin-draharan'ny andriana | mg.wikipedia « Fandroana » : « Ny **fandroan'** andriana na Fandroana dia firavoravoana anaovana **fampandroana** masina ny andriana » ; « Alahamadibe » : « …**mandro** avokoa ny vahoaka » | **voamarina** | ne désigne **jamais** les mains |
+| `savony` | le savon | mg.wikipedia, article **Savony** : « Ny **savony** dia siran'ny asidra matavy … ampiasaina amin'ny **fanadiovana** sy fandamana » (41 pages) | **voamarina** | le mot `sabonina` (0 page) n'a jamais été écrit dans ce corpus |
+| `fanadiovana` | le nettoyage, la propreté | mg.wikipedia, 142 pages : « fanadiovana ny solitany » ; « Amin'ny fanaovana zavatra sasany (fidiovana, sns) » (Lavenona) | **voamarina** | `fanadiovana ny tanana` = **mety** (cadre lu, objet changé) |
+| `rantsan-tanana` | les doigts | mg.wikipedia, 29 pages : « manana **rantsan-tanana** dimy sy **rantsan-tongotra** dimy » (Dimy) | **voamarina** | le corpus ne dit pas `taran-tanana` |
+| `ny 3/4 ny vatan'ny olombelona dia rano avokoa` | trois quarts du corps humain sont de l'eau | mg.wikipedia, **Rano** (Fahasalamana) | **voamarina** | modèle `Ny X dia Y avokoa` |
+| `tsara raha` + verbe en `-ina` | il vaut mieux que … soit fait | **Rano** : « Tsara raha ampangotrahina ny rano vao sotroina » | **voamarina** | la tournure des consignes d'hygiène |
+| `hany ka` | et donc, si bien que | **Rano** (Fiarahamonina) | **voamarina** | ne pas rendre par `ary noho izany` seulement |
+| `izay … no …` | celui qui … est celui qui… | **Rano** : « Izay manana fahefana amin'ny rano no manana fahefana amin'ny rehetra. » | **voamarina** | mivadi-drafitra |
+| `manasa nify` | se brosser les dents | **aucune page** (0 occurrence) | **tsy hita** | gardé dans les fiches livrées sur le modèle `manasa tanana`, à valider par le relecteur |
+| `fanasan-tanana` | le lavage des mains (composé) | 0 occurrence littérale ; modèle lu : `Fanasan-tongotra` | **mety** | préférer `fanasana ny tanana` ou `fanadiovana ny tanana` |
 | `Ny fandroana no isan-taona fa ny fihavanana kosa isan'andro.` | proverbe | mg.wikipedia « Fihavanana » (ohabolana citée dans l'article) | **voamarina** | bon exemple de `no` + `fa` + `kosa` |
 | `Aza manao fihavanan'amboa, ka taolana iray no isarahana.` | proverbe (interdit) | mg.wikipedia « Fihavanana » | **voamarina** | prouve `aza` + verbe `mi-`, et `ka` consécutif |
 | `ho an'ny saka` | pour les chats | mg.wikipedia « Toksoplasmosis » | **voamarina** | `ho an'ny` + nom |

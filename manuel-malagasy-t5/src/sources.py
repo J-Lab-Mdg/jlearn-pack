@@ -125,6 +125,11 @@ SOURCES = {
         ["« Ny fehezanteny dia teny na andian-teny tononina na soratana manara-pitsipika ka azo "
          "ampitana hafatra mahaleo tena, noho izy azo sarahana amin' ny andian-teny hafa izay mety "
          "hitovy fiasa aminy. »"]),
+    "mgwiki_rano": (
+        "Wikipedia (mg) — « Rano », section « Fahasalamana », Wikipedia malagasy, vasontolo malalaka",
+        "https://mg.wikipedia.org/wiki/Rano",
+        ["« Ny rano dia sakafo mahavelona sy iankinan'ny aina. Ny 3/4 ny vatan'ny olombelona dia rano "
+         "avokoa. Ary mila misotro rano isan'andro isika mba hikolokoloana an'io. »"]),
 }
 
 # -----------------------------------------------------------------------------------------------

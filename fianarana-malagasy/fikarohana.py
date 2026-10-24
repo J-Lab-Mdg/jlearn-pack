@@ -12,6 +12,7 @@ Deux sources de vérité : l'index de mg.wikipedia.org (recherche plein texte, s
 ouvert) et le corpus local (les pages collées pour le manuel + les .txt de refs/). Une expression absente
 des deux n'est pas utilisable : elle va dans LISTE-ROUGE.md.
 """
+import ast
 import os
 import re
 import sys
@@ -110,6 +111,28 @@ def menu():
     print("TOTAL : %d fichier(s)" % len(laharana()))
 
 
+def texte_donnees(path):
+    """Le malgache destine a l'impression : les litteraux des affectations, hors commentaires et docstring.
+
+    Une faute citee dans un commentaire (la liste rouge elle-meme, la docstring qui explique pourquoi un mot
+    est banni) n'est pas une reaparition : seule la donnee imprimee compte. D'ou le passage par l'arbre
+    syntaxique plutot que par la lecture brute du fichier.
+    """
+    with open(path, encoding="utf-8") as f:
+        src = f.read()
+    try:
+        tree = ast.parse(src)
+    except SyntaxError:
+        return src.split("\n")
+    lignes = []
+    for node in tree.body:
+        if isinstance(node, (ast.Assign, ast.AnnAssign)):
+            for lit in ast.walk(node):
+                if isinstance(lit, ast.Constant) and isinstance(lit.value, str):
+                    lignes.extend(lit.value.split("\n"))
+    return lignes or src.split("\n")
+
+
 def rouge():
     t = laharana()
     srcs = [os.path.join(MANUEL, "src", f) for f in sorted(os.listdir(os.path.join(MANUEL, "src")))
@@ -124,12 +147,10 @@ def rouge():
             fautes.append(m.group(1))
     n = 0
     for path in srcs:
-        with open(path, encoding="utf-8") as f:
-            body = f.read()
         for fa in fautes:
-            for i, line in enumerate(body.split("\n"), 1):
+            for i, line in enumerate(texte_donnees(path), 1):
                 if hiovy(fa) in hiovy(line):
-                    print("  %-26s l.%-5d %s" % (os.path.relpath(path, ROOT), i, line.strip()[:110]))
+                    print("  %-26s bloc %-5d %s" % (os.path.relpath(path, ROOT), i, line.strip()[:110]))
                     n += 1
     print("LISTE-ROUGE : %d faute(s) recherchée(s), %d réapparition(s) dans %d module(s) de données"
           % (len(fautes), n, len(srcs)))
