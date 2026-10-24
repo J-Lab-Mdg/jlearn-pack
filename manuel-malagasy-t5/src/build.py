@@ -39,7 +39,7 @@ AVANT_PROPOS = [
 
 NOTES = [
     ("Convention 1 — Structure", "Fiche = 3 grandes étapes : I. Famerenana / II. LESONA VAOVAO "
-     "(6 sous-étapes : Fitarihan-tsaina, Fanolorana, Fandinihana, Famakafakana, Fandravonana, "
+     "(6 sous-étapes : Tari-dresaka, Fanolorana, Fandinihana, Famakafakana, Fandravonana, "
      "Fampiharana) / III. Tombana. Aucune durée sur les sous-étapes."),
     ("Convention 2 — Minutage", "Séance de 30 minitra : 5 / 20 / 5. Séance de 20 minitra : 3 / 14 / 3. "
      "La durée n'est inscrite que sur les trois lignes I, II et III."),

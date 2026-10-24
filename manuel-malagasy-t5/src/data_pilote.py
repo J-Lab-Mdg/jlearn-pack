@@ -38,7 +38,7 @@ SEANCES = [
              "Rano madio sy savony, ary lamba madio ho an'ny fanadiovana."),
         ],
 
-        # ---- II.1 Fitarihan-tsaina : question simple dont la V.A. touche au titre de la leçon
+        # ---- II.1 Tari-dresaka : question simple dont la V.A. touche au titre de la leçon
         "situation": "Fanontaniana : Rehefa hohavainao ny sakafo, inona no tokony ho voalohany ataosinao ? "
                      "V.A. : Ny fanasana ny tanana.",
 
