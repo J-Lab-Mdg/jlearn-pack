@@ -48,7 +48,7 @@ Gabarit d'une unité (12 séances) : CO ×1 · Lexique ×1 · CE ×1 · Langue �
 Choix utilisateur : banque d'images par unité (2-3 par leçon) ; badge sous-discipline coloré en début de fiche ET de leçon (termes adaptés + terme PE entre parenthèses) ; mots clés des leçons en rouge saumon + surlignage jaune pour les plus importants (pas dans les exercices).
 - Bloc R1 ☑ : badges + couleurs saumon/jaune T6 (60 fiches + 60 leçons). — livré
 - Bloc R2 ☑ : banque d'images U1 T6 (10 images b1_*, 2 par leçon, compressées). — livré
-- Bloc R3 ☐ : banques U2 + U3 T6.
+- Bloc R3 ◐ : banque U2 T6 livrée ; U3 à générer (limite images par tour).
 - Bloc R4 ☐ : banques U4 + U5 + U6 T6.
 - Bloc R5 ☐ : badges + couleurs saumon/jaune T5.
 - Bloc R6 ☐ : banques U1 + U2 T5.
