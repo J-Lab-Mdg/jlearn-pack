@@ -22,7 +22,7 @@ SEANCES = [
         "taranja": "Malagasy",
         "zana_taranja": "Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra)",
         "lohahevitra": "1. Ny fitandroana ny fahasalamana",
-        "lohateny": "Fandroana ny Tanana",
+        "lohateny": "Fanasana ny tanana",
         "tanjona": "mamaky mazava sy tsy misy diso ny lahatsoratra fohy, ary hamaritra ny hevi-dehibe ao anatiny",
         "doc": "PE 5e, FRP 5e",
         "isan_ny_seho": 2,
@@ -43,23 +43,23 @@ SEANCES = [
                      "V.A. : Ny fanasana ny tanana.",
 
         # ---- II.2 Fanolorana : formule figée (le verbe de l'objectif prend le préfixe futur h-)
-        "fanolorana": "Androany isika dia hianatra lesona vaovao hoe : « Fandroana ny Tanana ». "
+        "fanolorana": "Androany isika dia hianatra lesona vaovao hoe : « Fanasana ny tanana ». "
                       "Aorian'ity seho ity ianareo dia ho afaka hamaky mazava sy tsy misy diso ny lahatsoratra "
                       "fohy momba ny fahasalamana, ary hamaritra ny hevi-dehibe ao anatiny.",
 
         # ---- II.3 Fandinihana : les élèves observent seulement, ils ne répondent pas encore
         "fandinihana": [
-            "Asehoko eo amin'ny tabilao ny lahatsoratra « Fandroana ny Tanana » sy ny sary mifandraika amin'izany.",
+            "Asehoko eo amin'ny tabilao ny lahatsoratra « Fanasana ny tanana » sy ny sary mifandraika amin'izany.",
             "Jereo aloha ny lohateny, ny isa ny fehezanteny, ary ny sary ao anaty lahatsoratra.",
         ],
-        "fitaovana_fandinihana": "Lahatsoratra voasoratra eo amin'ny tabilao sy sary lehibe momba ny fandroana tanana",
+        "fitaovana_fandinihana": "Lahatsoratra voasoratra eo amin'ny tabilao sy sary lehibe momba ny fanasana ny tanana",
         "loharano": ["wiki_hygiene_mains", "ohab_nify", "jica_vakiteny"],
         "obs_fandinihana": "Ny zava-jerena (lohateny, isa ny fehezanteny, sary) no avoaka amin'ny "
                            "Famakafakana, fa tsy eto.",
 
         # ---- II.4 Famakafakana : une ligne par couple question / V.A.
         "famakafakana": [
-            ("Inona ny lohatenin'ny lahatsoratra ?", "« Fandroana ny Tanana » ny lohateny."),
+            ("Inona ny lohatenin'ny lahatsoratra ?", "« Fanasana ny tanana » ny lohateny."),
             ("Fehezanteny firy ny ao anaty lahatsoratra ?", "Dimy (5) ny fehezanteny ao anatiny."),
             ("Inona no fomba mora indrindra hiarovana ny tena araka ny lahatsoratra ?",
              "Ny **fanasana ny tanana amin'ny sabonina sy rano madio**."),

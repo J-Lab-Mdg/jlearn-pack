@@ -6,9 +6,9 @@ URL       : https://openjicareport.jica.go.jp/pdf/12356002.pdf
 LICENCE / ATTRIBUTION : Document public d'un programme de coopération : cité comme référence bibliographique (exemplaire de travail), sans reproduction intégrale.
 
 UTILISE DANS LE MANUEL :
-  - pilote · fiche 1 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Fandroana ny Tanana »
+  - pilote · fiche 1 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Fanasana ny tanana »
   - loha1 · fiche 1 · Fanehoan-kevitra am-bava · « Ny fepetra fototra amin'ny fahasalamana »
-  - loha1 · fiche 2 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Fandroana ny Tanana »
+  - loha1 · fiche 2 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Fanasana ny tanana »
   - loha1 · fiche 3 · Fiasan'ny teny · « Ny mpisolo tena tampisaka : -ko, -nao, -ny »
   - loha1 · fiche 4 · Asa an-tsoratra · « Firafitry ny lahatsoratra fohy »
   - loha2 · fiche 2 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Ny teny mahery lava noho ny tanana »
