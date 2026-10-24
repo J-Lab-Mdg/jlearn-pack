@@ -62,17 +62,49 @@ def laharana():
     return out
 
 
+def _marininteny(txt, loose=False):
+    """chaîne -> (chaîne comparables, index d'origine de chaque caractère).
+
+    Le corpus vient de PDF : les phrases du PE sont coupées en milieu de ligne, et la leçon recopiée de
+    l'encyclopédie contient des sauts de ligne partout. Une recherche ligne par ligne raterait donc
+    « haminavina ny mety ho votoatin'ny ⏎ lahatsoratra », qui est bien la phrase du PE. D'où une
+    comparaison sur le fichier entier, espaces normalisés, en gardant l'index d'origine pour le contexte.
+    """
+    out, idx = [], []
+    for k, ch in enumerate(txt):
+        c = "'" if ch in "\u2019\u2018" else ch
+        c = (c.lower() or " ")
+        if c.isspace():
+            c = " "
+        if loose:
+            base = "".join(x for x in unicodedata.normalize("NFD", c)
+                           if unicodedata.category(x) != "Mn")
+            c = (base or c)[:1]
+        if out and c == " " and out[-1] == " ":
+            continue
+        out.append(c)
+        idx.append(k)
+    return "".join(out), idx
+
+
 def fikaro_masino(oxford, loose=False):
-    """occurrences exactes (ou sans accents) dans le corpus local."""
+    """occurrences exactes (ou sans accents) dans le corpus local : [(chemin, ligne, extrait)]."""
+    needle, _ = _marininteny(oxford, loose)
     hits = []
+    if not needle:
+        return hits
     for path, text in laharana():
-        for n, line in enumerate(text.split("\n"), 1):
-            a = malemy(line) if loose else hiovy(line)
-            b = malemy(oxford) if loose else hiovy(oxford)
-            if b and b in a:
-                i = a.find(b)
-                extra = "" if not loose else "  [accents ignorés]"
-                hits.append((path, n, line[max(0, i - 70):i + len(oxford) + 70].strip() + extra))
+        plat, idx = _marininteny(text, loose)
+        start = 0
+        while True:
+            i = plat.find(needle, start)
+            if i < 0:
+                break
+            a, b = idx[i], (idx[i + len(needle) - 1] + 80 if i + len(needle) <= len(idx) else len(text))
+            extrait = " ".join(text[max(0, a - 70):b].split())
+            extra = "  [accents ignorés]" if loose else ""
+            hits.append((path, text.count("\n", 0, a) + 1, extrait + extra))
+            start = i + len(needle)
     return hits
 
 
@@ -159,6 +191,18 @@ def rouge():
     return n
 
 
+def misy_etonka(ox):
+    """True si la trace locale existe — une ligne du CARNET peut aligner plusieurs variantes
+    (« X / Y / Z », « X -> Y ») : il suffit que l'une d'elles se retrouve dans le corpus.
+    """
+    if fikaro_masino(ox) or fikaro_masino(ox, loose=True):
+        return True
+    for part in re.split(r"\s*(?:/|->|\u2192|;)\s*", ox):
+        if len(part) > 6 and (fikaro_masino(part) or fikaro_masino(part, loose=True)):
+            return True
+    return False
+
+
 def carnet():
     manques = []
     for cols in tableau(CARNET):
@@ -168,7 +212,7 @@ def carnet():
         if not m:
             continue
         ox = m.group(1)
-        if not fikaro_masino(ox) and not fikaro_masino(ox, loose=True):
+        if not misy_etonka(ox):
             manques.append(ox)
     print("CARNET : %d expression(s) sans trace dans le corpus local :" % len(manques))
     for ox in manques:
