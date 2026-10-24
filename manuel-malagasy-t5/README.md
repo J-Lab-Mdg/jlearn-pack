@@ -128,6 +128,22 @@ fait autorité pour le vocabulaire et la démarche. Conséquences appliquées au
 | Brainstorming | **Fifanakalozan-kevitra**, **adihevitra** |
 | « rappel », « observation », « analyse » | **Famerenana**, **Fandinihana**, **Famakafakana** |
 
+**Recette de vérification d'une expression** (le sandbox n'a que `fetch_page` comme sortie réseau ; `curl`
+et `urllib` répondent http 000) :
+
+```sh
+# 1. l'expression, entre guillemets, dans l'index de l'édition malagaise
+https://mg.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22manasa%20tanana%22&srlimit=8&format=json
+#    totalhits >= 1  ->  voamarina ; 0  ->  on ne l'écrit pas
+# 2. consigner phrase + titre + URL dans ../fianarana-malagasy/CARNET.md (etat : voamarina / mety / diso)
+# 3. contrôler les livrables :
+python3 ../fianarana-malagasy/fikarohana.py --carnet   # expressions sans trace locale à ce jour
+python3 ../fianarana-malagasy/fikarohana.py --rouge     # exit 1 si une faute bannie revient dans les données
+```
+
+Un mot **licite mais au sens faux** (par ex. `resena` pour une personne qui parle) est marqué `FAKANA` dans
+`LISTE-ROUGE.md` et n'est pas compté comme réapparition ; seul `TENY` bloque l'écriture.
+
 Déroulé d'une séance, tel que le document le décrit : `Famerenana` (le geste de celui qui demande la
 parole) → `Tari-dresaka` (mamorona fanontaniana) → `Fanolorana` → `Fandinihana` (jereo ny sary, décrits en
 toutes lettres faute d'image) → `Famakafakana` (inona avy no hitanareo ?) → adihevitra réglé entre
