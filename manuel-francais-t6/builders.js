@@ -5,6 +5,8 @@ const {
   Paragraph, TextRun, Table, TableRow, TableCell, WidthType, BorderStyle,
   AlignmentType, VerticalMergeType, ImageRun, PageBreak, ShadingType,
   VerticalAlign, Bookmark, InternalHyperlink,
+  HorizontalPositionRelativeFrom, HorizontalPositionAlign,
+  VerticalPositionRelativeFrom, TextWrappingType, TextWrappingSide,
 } = require("docx");
 
 // couleurs
@@ -75,6 +77,20 @@ const img = (file, width, ratio) => new Paragraph({
   children: [new ImageRun({
     data: fs.readFileSync(path.join(IMG_DIR, file)), type: "png",
     transformation: { width, height: Math.round(width * ratio) },
+  })],
+});
+// image flottante à droite, le texte s'enroule autour (mise en page moderne)
+const imgFloat = (file, width, ratio) => new Paragraph({
+  spacing: { after: 0 },
+  children: [new ImageRun({
+    data: fs.readFileSync(path.join(IMG_DIR, file)), type: "png",
+    transformation: { width, height: Math.round(width * ratio) },
+    floating: {
+      horizontalPosition: { relative: HorizontalPositionRelativeFrom.MARGIN, align: HorizontalPositionAlign.RIGHT },
+      verticalPosition: { relative: VerticalPositionRelativeFrom.PARAGRAPH, offset: 0 },
+      wrap: { type: TextWrappingType.SQUARE, side: TextWrappingSide.LEFT },
+      margins: { left: 114300, bottom: 114300 },
+    },
   })],
 });
 const pageBreak = () => new Paragraph({ children: [new PageBreak()] });
@@ -186,7 +202,7 @@ const deroulement = (rows) => new Table({
 const discBadge = (label, color) => new Table({
   width: { size: 10400, type: WidthType.DXA }, borders: noBorders(),
   rows: [new TableRow({ children: [
-    cell([p([run("SOUS-DISCIPLINE : " + label, { bold: true, color: C.WHITE, size: 24 })], { center: true, after: 20 })],
+    cell([p([run(label, { bold: true, color: C.WHITE, size: 24 })], { center: true, after: 20 })],
       { shade: color, vAlign: VerticalAlign.CENTER }),
   ]})],
 });
@@ -220,7 +236,7 @@ function iCan(unitLabel, color, items, nextText) {
 }
 
 module.exports = {
-  C, SZ, FONT, run, p, pr, kw, pAns, noBorders, cell, img, pageBreak,
+  C, SZ, FONT, run, p, pr, kw, pAns, noBorders, cell, img, imgFloat, pageBreak,
   bookmarkTitle, tocLink, unitBanner, audioBox, fp, metaTable, headerRows, discBadge,
   sectionRow, stepRow, deroulement, fiche, lessonTitle, sub, iCan,
 };
