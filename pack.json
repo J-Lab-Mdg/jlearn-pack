@@ -1627,6 +1627,326 @@
       "id": "geo7_gestion_ressources",
       "url": "/geo7_gestion_ressources.png",
       "type": "image/png"
+    },
+    {
+      "id": "geo8_s01",
+      "url": "/geo8_s01.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s02",
+      "url": "/geo8_s02.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s03",
+      "url": "/geo8_s03.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s04",
+      "url": "/geo8_s04.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s05",
+      "url": "/geo8_s05.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s06",
+      "url": "/geo8_s06.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s07",
+      "url": "/geo8_s07.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s10",
+      "url": "/geo8_s10.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s11",
+      "url": "/geo8_s11.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s14",
+      "url": "/geo8_s14.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s15",
+      "url": "/geo8_s15.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s16",
+      "url": "/geo8_s16.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s17",
+      "url": "/geo8_s17.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s18",
+      "url": "/geo8_s18.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s19",
+      "url": "/geo8_s19.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s20",
+      "url": "/geo8_s20.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s23",
+      "url": "/geo8_s23.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s24",
+      "url": "/geo8_s24.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s25",
+      "url": "/geo8_s25.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s26",
+      "url": "/geo8_s26.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s27",
+      "url": "/geo8_s27.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s28",
+      "url": "/geo8_s28.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s29",
+      "url": "/geo8_s29.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s30",
+      "url": "/geo8_s30.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s31",
+      "url": "/geo8_s31.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s32",
+      "url": "/geo8_s32.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s33",
+      "url": "/geo8_s33.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s34",
+      "url": "/geo8_s34.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s37",
+      "url": "/geo8_s37.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s38",
+      "url": "/geo8_s38.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s39",
+      "url": "/geo8_s39.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s40",
+      "url": "/geo8_s40.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s41",
+      "url": "/geo8_s41.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s42",
+      "url": "/geo8_s42.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s43",
+      "url": "/geo8_s43.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s44",
+      "url": "/geo8_s44.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s45",
+      "url": "/geo8_s45.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s46",
+      "url": "/geo8_s46.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s47",
+      "url": "/geo8_s47.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s48",
+      "url": "/geo8_s48.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s49",
+      "url": "/geo8_s49.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s50",
+      "url": "/geo8_s50.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s51",
+      "url": "/geo8_s51.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s52",
+      "url": "/geo8_s52.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s53",
+      "url": "/geo8_s53.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s56",
+      "url": "/geo8_s56.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s57",
+      "url": "/geo8_s57.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s58",
+      "url": "/geo8_s58.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s59",
+      "url": "/geo8_s59.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s60",
+      "url": "/geo8_s60.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s61",
+      "url": "/geo8_s61.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s62",
+      "url": "/geo8_s62.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s63",
+      "url": "/geo8_s63.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s64",
+      "url": "/geo8_s64.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s65",
+      "url": "/geo8_s65.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_s66",
+      "url": "/geo8_s66.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_planisphere_developpement",
+      "url": "/geo8_planisphere_developpement.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_indicateurs_developpement",
+      "url": "/geo8_indicateurs_developpement.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_commentaire_document",
+      "url": "/geo8_commentaire_document.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_afrique_physique",
+      "url": "/geo8_afrique_physique.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_afrique_organisations",
+      "url": "/geo8_afrique_organisations.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_chaine_climat",
+      "url": "/geo8_chaine_climat.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_sources_energie",
+      "url": "/geo8_sources_energie.png",
+      "type": "image/png"
+    },
+    {
+      "id": "geo8_projet_energie",
+      "url": "/geo8_projet_energie.png",
+      "type": "image/png"
     }
   ]
 }

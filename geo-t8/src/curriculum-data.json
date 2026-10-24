@@ -1,0 +1,1184 @@
+[
+  {
+    "id": "unite1",
+    "nom": "UNITÉ 1 — LES PAYS DÉVELOPPÉS",
+    "theme": "Les pays développés",
+    "first": 1,
+    "revNum": 8,
+    "examNum": 9,
+    "duration": 7,
+    "intro": "Cette unité localise les grands ensembles développés, définit le développement, étudie les critères économiques, sociodémographiques et politiques, puis compare les points communs et la diversité économique des pays du Nord.",
+    "opening": [
+      [
+        "Que signifie développer un territoire ?",
+        "Développer un territoire consiste à améliorer durablement les conditions de vie, les activités et les services."
+      ],
+      [
+        "Un pays riche est-il développé par un seul indicateur ?",
+        "Non, il faut combiner des indicateurs économiques, sociaux, démographiques et politiques."
+      ]
+    ],
+    "seeds": [
+      [
+        "Développement et localisation des pays développés",
+        "développement",
+        "Le développement est un processus durable d'amélioration des conditions de vie, des capacités humaines, de l'économie et de l'organisation d'une société.",
+        [
+          "Les expressions pays développés, pays riches et pays du Nord désignent des réalités proches mais non parfaitement identiques.",
+          "Les principaux ensembles se situent en Amérique du Nord, en Europe et dans l'aire Asie-Pacifique.",
+          "La localisation se lit sur un planisphère en distinguant pays, ensembles régionaux et pôles majeurs.",
+          "Le niveau de développement se mesure avec plusieurs indicateurs complémentaires."
+        ],
+        [
+          "pays riches",
+          "pays du Nord",
+          "indicateur"
+        ],
+        "Fara classe des cartes et tableaux pour repérer les grands pôles de développement du monde.",
+        "Ne jamais réduire le développement à la seule richesse monétaire."
+      ],
+      [
+        "L'Amérique du Nord développée",
+        "Amérique du Nord",
+        "L'Amérique du Nord constitue un grand pôle développé dominé par les États-Unis et le Canada, fortement urbanisé et intégré aux échanges mondiaux.",
+        [
+          "Les métropoles concentrent commandement, finance, recherche et services supérieurs.",
+          "L'agriculture productive s'appuie sur la mécanisation, les réseaux et de vastes marchés.",
+          "L'industrie associe productions anciennes, hautes technologies et innovation.",
+          "Les inégalités sociales et territoriales montrent que la richesse n'est pas répartie uniformément."
+        ],
+        [
+          "États-Unis",
+          "Canada",
+          "métropole",
+          "innovation"
+        ],
+        "Mialy suit sur une carte les grandes villes, régions productives et axes d'échanges nord-américains.",
+        "Décrire à la fois la puissance, l'organisation et les contrastes d'un espace développé."
+      ],
+      [
+        "L'Union européenne, un grand pôle développé",
+        "Union européenne",
+        "L'Union européenne rassemble des États qui coopèrent dans un espace fortement urbanisé, productif et connecté, malgré des niveaux de développement variés.",
+        [
+          "Un réseau dense de villes et de transports relie les territoires.",
+          "Le secteur tertiaire occupe une place majeure dans l'emploi et la richesse.",
+          "Industrie, agriculture et recherche restent puissantes et diversifiées.",
+          "Les écarts entre régions centrales, périphériques et anciennes régions industrielles créent des contrastes."
+        ],
+        [
+          "Europe",
+          "intégration",
+          "réseau",
+          "contraste"
+        ],
+        "Toky compare une carte des transports, une carte des villes et un tableau économique européen.",
+        "Étudier l'Union comme un ensemble intégré mais non uniforme."
+      ],
+      [
+        "L'aire Asie-Pacifique développée",
+        "aire Asie-Pacifique",
+        "L'aire Asie-Pacifique regroupe des économies très dynamiques reliées par les façades maritimes, l'industrie, le commerce et l'innovation.",
+        [
+          "Le Japon et la Corée du Sud disposent d'activités industrielles et technologiques avancées.",
+          "La Chine occupe une place mondiale majeure mais présente de forts contrastes de développement.",
+          "Les ports et métropoles littorales organisent des flux considérables.",
+          "Les chaînes de valeur régionales relient production, finance, transport et consommation."
+        ],
+        [
+          "Japon",
+          "Corée du Sud",
+          "Chine",
+          "façade maritime"
+        ],
+        "Soa suit le trajet d'un produit électronique entre plusieurs ports et métropoles d'Asie-Pacifique.",
+        "Éviter de présenter l'aire comme homogène ; comparer ses territoires et leurs fonctions."
+      ],
+      [
+        "Les critères économiques du développement",
+        "critère économique",
+        "Les critères économiques mesurent la production, les revenus, la structure des activités, la puissance des échanges et la capacité d'innovation.",
+        [
+          "Le PIB mesure la valeur produite sur un territoire et le PNB s'intéresse aux revenus liés aux acteurs nationaux.",
+          "Le secteur tertiaire occupe généralement une place importante dans les économies développées.",
+          "Les entreprises, banques et places commerciales exercent une forte influence internationale.",
+          "La recherche scientifique et l'innovation technologique soutiennent la productivité et la compétitivité."
+        ],
+        [
+          "PIB",
+          "PNB",
+          "secteur tertiaire",
+          "innovation"
+        ],
+        "Hery compare le PIB, la structure de l'emploi et les dépenses de recherche de plusieurs pays.",
+        "Croiser les indicateurs et les rapporter à la population avant de conclure."
+      ],
+      [
+        "Les critères sociodémographiques du développement",
+        "critère sociodémographique",
+        "Les critères sociodémographiques décrivent la population, l'éducation, la santé et le niveau de vie pour apprécier le développement humain.",
+        [
+          "L'espérance de vie et l'accès aux soins renseignent sur l'état sanitaire.",
+          "Une faible fécondité et le vieillissement caractérisent de nombreux pays développés.",
+          "Un taux d'alphabétisation élevé traduit un large accès à l'éducation de base.",
+          "L'IDH combine santé, éducation et revenu ; il complète les indicateurs purement économiques."
+        ],
+        [
+          "espérance de vie",
+          "fécondité",
+          "alphabétisation",
+          "IDH"
+        ],
+        "Voahirana analyse une fiche statistique contenant santé, éducation, revenu et structure par âge.",
+        "Interpréter les indicateurs ensemble et rechercher les inégalités internes."
+      ],
+      [
+        "Points communs et diversité des pays développés",
+        "diversité des pays développés",
+        "Les pays développés partagent richesse, industrialisation, services avancés et faible croissance démographique, mais leurs trajectoires et niveaux restent divers.",
+        [
+          "Le tertiaire et le quaternaire, lié aux connaissances et aux hautes technologies, sont très développés.",
+          "La Triade associe les grands pôles nord-américain, européen et asiatique.",
+          "Les anciens pays de l'Est ont connu des trajectoires économiques et politiques particulières.",
+          "Stabilité des institutions, participation politique et influence diplomatique varient selon les pays."
+        ],
+        [
+          "Triade",
+          "secteur quaternaire",
+          "anciens pays de l'Est",
+          "stabilité"
+        ],
+        "Aina construit un tableau comparatif de trois pays développés appartenant à des pôles différents.",
+        "Dégager les ressemblances sans effacer la diversité des modèles de développement."
+      ]
+    ]
+  },
+  {
+    "id": "unite2",
+    "nom": "UNITÉ 2 — LA MÉTHODOLOGIE DE TRAITEMENT DE DEVOIR",
+    "theme": "La méthodologie de traitement de devoir",
+    "first": 10,
+    "revNum": 12,
+    "examNum": 13,
+    "duration": 2,
+    "intro": "Cette unité entraîne au commentaire dirigé d'un document géographique : travail préliminaire, introduction, développement organisé, transitions et conclusion critique.",
+    "opening": [
+      [
+        "Que faut-il faire avant de rédiger ?",
+        "Il faut lire le sujet, identifier le document, relever les mots clés et préparer un plan."
+      ],
+      [
+        "Pourquoi citer le document ?",
+        "La référence au document prouve et précise l'explication."
+      ]
+    ],
+    "seeds": [
+      [
+        "Préparer et introduire un commentaire de document",
+        "introduction du commentaire",
+        "L'introduction d'un commentaire présente le document, dégage son idée générale et annonce le plan qui guidera la réponse.",
+        [
+          "Le travail préliminaire identifie nature, titre, auteur, source, date, contexte et espace étudié.",
+          "La lecture des directives permet de transformer les questions en axes affirmatifs.",
+          "Les mots clés et informations essentielles sont relevés et classés au brouillon.",
+          "L'introduction reste brève, précise et annonce clairement les parties du développement."
+        ],
+        [
+          "travail préliminaire",
+          "présentation",
+          "idée générale",
+          "plan"
+        ],
+        "Noro prépare le commentaire d'une carte accompagnée d'un tableau statistique.",
+        "Ne commencer la rédaction qu'après avoir compris le document et construit le plan."
+      ],
+      [
+        "Développer et conclure un commentaire de document",
+        "développement du commentaire",
+        "Le développement explique les parties annoncées en s'appuyant sur le document et les connaissances ; la conclusion en dégage l'intérêt et les limites.",
+        [
+          "Chaque partie répond à un axe du plan et commence par une idée claire.",
+          "Les références précises au document justifient l'analyse sans remplacer l'explication.",
+          "Une transition résume la partie achevée et annonce la suivante.",
+          "La conclusion répond à la question, présente l'intérêt du document et signale ses limites."
+        ],
+        [
+          "référence",
+          "transition",
+          "intérêt",
+          "limite"
+        ],
+        "Kanto rédige deux parties reliées par une transition puis évalue ce que le document montre ou ne montre pas.",
+        "Organiser l'argumentation, justifier chaque idée et terminer par un regard critique."
+      ]
+    ]
+  },
+  {
+    "id": "unite3",
+    "nom": "UNITÉ 3 — LES PAYS EN DÉVELOPPEMENT",
+    "theme": "Les pays en développement",
+    "first": 14,
+    "revNum": 21,
+    "examNum": 22,
+    "duration": 7,
+    "intro": "Cette unité localise les pays en développement, étudie les critères économiques, démographiques, éducatifs, sanitaires et politiques, puis compare leurs points communs et la diversité de leurs niveaux de développement.",
+    "opening": [
+      [
+        "Où se situent de nombreux pays en développement ?",
+        "Ils se situent surtout en Afrique, en Asie tropicale et en Amérique latine."
+      ],
+      [
+        "Tous les pays du Sud ont-ils le même niveau ?",
+        "Non, leurs revenus, structures économiques et indicateurs humains sont très différents."
+      ]
+    ],
+    "seeds": [
+      [
+        "Notions et localisation des pays en développement",
+        "pays en développement",
+        "Un pays en développement connaît des progrès économiques et humains mais conserve des besoins importants, des vulnérabilités ou de fortes inégalités.",
+        [
+          "Les expressions pays du Sud et Tiers Monde sont historiques et doivent être utilisées avec prudence.",
+          "De nombreux pays concernés se trouvent en Afrique, en Asie tropicale et en Amérique latine.",
+          "La notion de pays en voie de développement insiste sur un processus et non une situation immobile.",
+          "Les catégories simplifient une réalité très diverse et changeante."
+        ],
+        [
+          "pays du Sud",
+          "Tiers Monde",
+          "localisation"
+        ],
+        "Sarobidy localise plusieurs pays et compare leur revenu, leur IDH et leur structure économique.",
+        "Employer des indicateurs actuels et éviter les jugements dévalorisants sur les populations."
+      ],
+      [
+        "Les critères économiques du sous-développement",
+        "critère économique",
+        "Les difficultés économiques se lisent dans la faiblesse du revenu moyen, la structure productive, l'emploi et la capacité de transformation.",
+        [
+          "Un PIB ou PNB faible limite souvent les ressources disponibles, surtout lorsqu'il est rapporté à une population nombreuse.",
+          "Le secteur primaire occupe fréquemment une part importante de l'emploi et des exportations.",
+          "Une industrie de transformation limitée réduit la valeur ajoutée produite localement.",
+          "Transport, commerce, tourisme et finance peuvent manquer d'équipements, de professionnalisation ou d'accès au crédit."
+        ],
+        [
+          "secteur primaire",
+          "industrie",
+          "valeur ajoutée",
+          "revenu"
+        ],
+        "Tiana suit l'exportation d'une matière brute puis compare sa valeur à celle du produit transformé.",
+        "Rechercher les causes structurelles et les possibilités de transformation locale."
+      ],
+      [
+        "Croissance démographique et jeunesse",
+        "démographie des pays en développement",
+        "De nombreux pays en développement connaissent une croissance démographique rapide et une population très jeune, avec des situations très variables.",
+        [
+          "Une natalité élevée peut maintenir une forte proportion d'enfants et de jeunes.",
+          "La baisse de la mortalité accélère la croissance lorsque la natalité demeure forte.",
+          "Une mortalité infantile élevée révèle des difficultés de santé et de nutrition.",
+          "La jeunesse crée de grands besoins en écoles, formation, santé et emplois, mais aussi un potentiel humain."
+        ],
+        [
+          "natalité",
+          "mortalité infantile",
+          "population jeune"
+        ],
+        "Mamy interprète une pyramide des âges et calcule les besoins futurs en salles de classe.",
+        "Présenter la jeunesse à la fois comme un besoin d'investissement et une ressource potentielle."
+      ],
+      [
+        "Éducation et santé",
+        "développement humain",
+        "L'accès à une éducation et à une santé de qualité améliore les capacités humaines, la productivité et l'autonomie des populations.",
+        [
+          "L'analphabétisme et la déscolarisation limitent l'accès à l'information et aux emplois qualifiés.",
+          "L'éloignement ou l'insécurité peuvent empêcher la fréquentation des écoles et centres de soin.",
+          "Malnutrition, manque de personnel et coût des médicaments aggravent les vulnérabilités.",
+          "L'IDH rapproche santé, éducation et revenu afin de comparer le développement humain."
+        ],
+        [
+          "déscolarisation",
+          "malnutrition",
+          "centre de soin",
+          "IDH"
+        ],
+        "Feno compare la distance aux services essentiels dans une région rurale et une grande ville.",
+        "Mesurer l'accès réel, la qualité et l'équité, pas seulement le nombre d'équipements."
+      ],
+      [
+        "Gouvernance et stabilité politique",
+        "gouvernance",
+        "La gouvernance désigne la manière dont les décisions publiques sont préparées, appliquées, contrôlées et rendues responsables devant la population.",
+        [
+          "L'instabilité politique perturbe les investissements, les services et la continuité des projets.",
+          "La mauvaise gestion et la corruption détournent des ressources utiles au développement.",
+          "Le respect des droits, des règles et de la participation renforce la confiance.",
+          "Des institutions efficaces doivent être accessibles, transparentes et capables d'appliquer les décisions."
+        ],
+        [
+          "institution",
+          "stabilité",
+          "transparence",
+          "participation"
+        ],
+        "Tahina étudie les effets de changements répétés de règles sur un projet d'infrastructure.",
+        "Évaluer la gouvernance par ses résultats, sa transparence et le respect des droits."
+      ],
+      [
+        "Les points communs des pays en développement",
+        "points communs",
+        "Les pays en développement présentent certains traits fréquents, sans former un ensemble homogène.",
+        [
+          "Beaucoup se situent dans les régions tropicales mais le climat n'explique pas seul leur situation.",
+          "La pauvreté touche une part importante de la population et s'accompagne souvent de fortes inégalités.",
+          "L'histoire coloniale a influencé frontières, économies et réseaux commerciaux.",
+          "L'agriculture et le secteur informel occupent souvent une place importante dans l'emploi."
+        ],
+        [
+          "pauvreté",
+          "héritage colonial",
+          "agriculture",
+          "secteur informel"
+        ],
+        "Ialy compare plusieurs fiches pays pour distinguer ressemblances et exceptions.",
+        "Présenter les facteurs naturels, historiques, économiques et politiques sans explication unique."
+      ],
+      [
+        "La diversité du monde en développement",
+        "diversité du Sud",
+        "Les pays en développement se distinguent par leurs ressources, leurs revenus, leur industrialisation, leurs institutions et leurs indicateurs humains.",
+        [
+          "Les pays les moins avancés cumulent de fortes vulnérabilités économiques et humaines.",
+          "Les pays pétroliers disposent de revenus d'exportation élevés mais peuvent rester dépendants d'une ressource.",
+          "Les nouveaux pays industrialisés ont renforcé transformation, exportations et capacités techniques.",
+          "Les pays émergents connaissent une croissance et une influence accrues, avec souvent de fortes inégalités."
+        ],
+        [
+          "PMA",
+          "pays pétrolier",
+          "NPI",
+          "pays émergent"
+        ],
+        "Vola place quatre profils de pays dans un tableau comparatif sans établir de classement moral.",
+        "Comparer trajectoires, atouts, vulnérabilités et répartition des progrès."
+      ]
+    ]
+  },
+  {
+    "id": "unite4",
+    "nom": "UNITÉ 4 — L'AFRIQUE",
+    "theme": "L'Afrique",
+    "first": 23,
+    "revNum": 35,
+    "examNum": 36,
+    "duration": 12,
+    "intro": "Cette unité situe et caractérise l'Afrique, ses milieux naturels et sa population, étudie les organisations régionales auxquelles Madagascar participe, la diversité des niveaux de développement, les atouts, problèmes et solutions durables.",
+    "opening": [
+      [
+        "Dans quel hémisphère se trouve l'Afrique ?",
+        "L'Afrique s'étend dans les hémisphères Nord et Sud et est traversée par l'équateur."
+      ],
+      [
+        "Madagascar appartient-il à l'Afrique ?",
+        "Oui, Madagascar est un État insulaire africain de l'océan Indien."
+      ]
+    ],
+    "seeds": [
+      [
+        "Situation, limites et régions de l'Afrique",
+        "continent africain",
+        "L'Afrique est un continent traversé par l'équateur, bordé par l'Atlantique, l'océan Indien, la Méditerranée et la mer Rouge.",
+        [
+          "Elle se divise couramment en Afrique du Nord, de l'Ouest, centrale, de l'Est et australe.",
+          "Madagascar et d'autres îles complètent les territoires continentaux.",
+          "L'isthme de Suez relie l'Afrique à l'Asie tandis que les mers et océans forment l'essentiel de ses limites.",
+          "Ses grandes dimensions Nord-Sud et Est-Ouest expliquent une forte diversité de milieux."
+        ],
+        [
+          "Afrique du Nord",
+          "Afrique australe",
+          "île",
+          "limite"
+        ],
+        "Lova complète une carte muette avec les cinq régions, les océans, les mers et Madagascar.",
+        "Toujours situer le continent à l'échelle mondiale avant d'étudier ses régions."
+      ],
+      [
+        "Les reliefs de l'Afrique",
+        "relief africain",
+        "Le relief africain est dominé par de vastes plateaux, des cuvettes intérieures et plusieurs massifs ou chaînes de montagnes.",
+        [
+          "Les plateaux occupent une grande partie du continent.",
+          "Les cuvettes du Congo, du Tchad et du Kalahari sont de vastes dépressions intérieures.",
+          "L'Atlas, les hauts plateaux d'Afrique orientale et les montagnes du Rift constituent des ensembles majeurs.",
+          "Escarpements, vallées et volcans diversifient les formes régionales."
+        ],
+        [
+          "plateau",
+          "cuvette",
+          "montagne",
+          "Rift"
+        ],
+        "Njaka lit une carte hypsométrique et trace un profil entre une cuvette et un haut plateau.",
+        "Relier formes, altitudes et localisation plutôt que mémoriser des noms isolés."
+      ],
+      [
+        "Climats et végétations de l'Afrique",
+        "milieu naturel africain",
+        "Les climats et végétations africains s'organisent largement de part et d'autre de l'équateur, de la forêt humide aux déserts.",
+        [
+          "Le climat équatorial chaud et humide favorise une forêt dense.",
+          "Les climats tropicaux alternent saisons des pluies et saisons sèches, avec savanes.",
+          "Les déserts du Sahara, du Namib et du Kalahari connaissent une forte aridité.",
+          "Relief, altitude, courants marins et distance à la mer créent des contrastes régionaux."
+        ],
+        [
+          "forêt équatoriale",
+          "savane",
+          "désert",
+          "milieu tropical"
+        ],
+        "Fanja associe une carte des pluies à une carte de la végétation africaine.",
+        "Expliquer la végétation par l'eau, la température et les facteurs régionaux."
+      ],
+      [
+        "Fleuves, lacs et grands deltas africains",
+        "hydrographie africaine",
+        "L'hydrographie africaine comprend de grands fleuves, des lacs majeurs et des deltas essentiels aux sociétés et aux écosystèmes.",
+        [
+          "Le Nil, le Congo, le Niger, le Zambèze et l'Orange drainent de vastes bassins.",
+          "Les lacs Victoria, Tanganyika et Malawi comptent parmi les grands lacs africains.",
+          "Les deltas du Nil et du Niger concentrent eau, sédiments, activités et populations.",
+          "Barrages, irrigation, pêche et navigation créent des usages mais aussi des conflits et impacts."
+        ],
+        [
+          "Nil",
+          "Congo",
+          "lac Victoria",
+          "delta"
+        ],
+        "Onja suit les bassins des grands fleuves depuis leurs sources jusqu'à la mer.",
+        "Étudier ensemble réseau, usages, amont, aval et partage de l'eau."
+      ],
+      [
+        "Croissance et jeunesse de la population africaine",
+        "population africaine",
+        "La population africaine connaît une croissance rapide et présente une forte proportion de jeunes, avec des rythmes différents selon les pays.",
+        [
+          "Une fécondité encore élevée entretient de nombreuses naissances.",
+          "La baisse de la mortalité contribue à l'accroissement naturel.",
+          "La jeunesse augmente les besoins en santé, éducation, logements et emplois.",
+          "Une population formée et en bonne santé peut devenir un moteur majeur de développement."
+        ],
+        [
+          "fécondité",
+          "accroissement naturel",
+          "jeunesse"
+        ],
+        "Tsanta interprète une pyramide des âges et prévoit les besoins de la prochaine génération.",
+        "Relier dynamique démographique, investissements sociaux et possibilités d'emploi."
+      ],
+      [
+        "Répartition et diversité de la population africaine",
+        "peuplement africain",
+        "La population africaine est inégalement répartie et très diverse par ses langues, cultures, religions et modes de vie.",
+        [
+          "Les vallées, littoraux, hauts plateaux favorables et grandes villes concentrent les habitants.",
+          "Les déserts, forêts difficiles d'accès et certaines zones arides ont de faibles densités.",
+          "Les migrations et l'urbanisation transforment rapidement la répartition.",
+          "La diversité culturelle constitue une richesse et ne doit pas servir à enfermer les personnes dans des catégories fixes."
+        ],
+        [
+          "densité",
+          "urbanisation",
+          "langue",
+          "religion"
+        ],
+        "Fy compare une carte des densités à celles du relief, de l'eau et des villes.",
+        "Expliquer le peuplement par des facteurs multiples et respecter la diversité humaine."
+      ],
+      [
+        "SADC, COMESA et Commission de l'océan Indien",
+        "organisation régionale",
+        "Une organisation régionale réunit des États voisins pour coopérer dans les échanges, les infrastructures, la sécurité ou la gestion de problèmes communs.",
+        [
+          "La SADC favorise la coopération en Afrique australe.",
+          "Le COMESA développe un marché commun en Afrique orientale et australe.",
+          "La Commission de l'océan Indien rassemble des membres insulaires et régionaux autour d'intérêts partagés.",
+          "Madagascar participe à ces organisations afin d'améliorer coopération, échanges et projets communs."
+        ],
+        [
+          "SADC",
+          "COMESA",
+          "COI",
+          "coopération"
+        ],
+        "Rija trace les espaces de trois organisations et repère leurs chevauchements autour de Madagascar.",
+        "Comparer objectifs, membres, avantages et obligations de chaque organisation."
+      ],
+      [
+        "Madagascar et l'Union africaine",
+        "Union africaine",
+        "L'Union africaine rassemble les États du continent pour favoriser coopération, paix, intégration et développement.",
+        [
+          "Madagascar participe aux décisions et programmes continentaux.",
+          "La coopération peut soutenir diplomatie, infrastructures, santé, éducation et sécurité.",
+          "L'adhésion demande aussi de respecter des engagements communs et de contribuer aux actions.",
+          "Les résultats dépendent de la volonté des États et de la mise en œuvre concrète."
+        ],
+        [
+          "intégration africaine",
+          "diplomatie",
+          "engagement"
+        ],
+        "Bako prépare un débat équilibré sur les avantages et contraintes de la participation de Madagascar.",
+        "Évaluer une organisation par ses objectifs, ses moyens, ses décisions et ses résultats."
+      ],
+      [
+        "Afrique francophone et anglophone",
+        "espace linguistique",
+        "Les espaces francophones et anglophones africains résultent largement de l'histoire coloniale, tout en coexistant avec de nombreuses langues africaines.",
+        [
+          "Le français ou l'anglais servent souvent dans l'enseignement, les institutions et les relations internationales.",
+          "Des organisations linguistiques soutiennent coopération culturelle, éducative et diplomatique.",
+          "Le multilinguisme facilite certains échanges mais pose aussi des défis d'accès et d'équité.",
+          "Les langues africaines transmettent des savoirs, identités et créations essentielles."
+        ],
+        [
+          "francophonie",
+          "anglophonie",
+          "multilinguisme"
+        ],
+        "Hanitra compare les langues officielles et les langues parlées dans plusieurs États africains.",
+        "Distinguer langue officielle, langue de communication et langues maternelles."
+      ],
+      [
+        "La diversité des niveaux de développement en Afrique",
+        "diversité africaine",
+        "Les pays africains ont des niveaux et des trajectoires de développement différents selon leurs ressources, activités, institutions et indicateurs humains.",
+        [
+          "Des économies émergentes diversifient industrie, services et échanges.",
+          "Plusieurs pays pétroliers tirent une part importante de leurs revenus des hydrocarbures.",
+          "De nombreux pays les moins avancés cumulent vulnérabilités économiques et sociales.",
+          "Un même pays présente souvent de forts contrastes entre régions, villes et campagnes."
+        ],
+        [
+          "pays émergent",
+          "pays pétrolier",
+          "PMA",
+          "contraste"
+        ],
+        "Elia construit une typologie à partir de plusieurs indicateurs plutôt que d'un seul revenu.",
+        "Comparer sans hiérarchie simpliste et rechercher la répartition réelle des progrès."
+      ],
+      [
+        "Les atouts de l'Afrique contemporaine",
+        "atout africain",
+        "L'Afrique dispose d'importants atouts économiques, humains, naturels et culturels pour construire son développement.",
+        [
+          "Sols, eau, minerais, énergies et biodiversité offrent de nombreuses potentialités à gérer durablement.",
+          "Une population jeune peut soutenir innovation, travail et marchés si elle accède à la formation.",
+          "Les cultures, patrimoines et créations enrichissent identité, tourisme et industries culturelles.",
+          "Les marchés régionaux et le numérique peuvent renforcer les échanges et les initiatives locales."
+        ],
+        [
+          "ressource naturelle",
+          "potentiel humain",
+          "culture",
+          "innovation"
+        ],
+        "Mickaël cartographie les ressources, les universités, les entreprises et les patrimoines d'une région africaine.",
+        "Transformer un potentiel en avantage durable grâce aux compétences, aux règles et à la valeur locale."
+      ],
+      [
+        "Problèmes et solutions pour l'Afrique",
+        "développement durable de l'Afrique",
+        "Le développement durable de l'Afrique exige de réduire pauvreté, dépendances, conflits et insuffisances d'infrastructures tout en valorisant les atouts du continent.",
+        [
+          "Les dépendances financières, technologiques et commerciales limitent parfois l'autonomie des choix.",
+          "Conflits, faim, pauvreté et manque de routes, écoles ou soins fragilisent les populations.",
+          "Éducation, santé, participation des femmes et emplois productifs renforcent les capacités humaines.",
+          "Intégration régionale, diversification économique et gestion durable des ressources améliorent la résilience."
+        ],
+        [
+          "dépendance",
+          "infrastructure",
+          "égalité",
+          "intégration"
+        ],
+        "Rasoa et ses camarades proposent un plan reliant un problème précis à des actions réalisables.",
+        "Formuler des solutions adaptées, financées, suivies et construites avec les populations."
+      ]
+    ]
+  },
+  {
+    "id": "unite5",
+    "nom": "UNITÉ 5 — LE DÉRÈGLEMENT CLIMATIQUE",
+    "theme": "Le dérèglement climatique",
+    "first": 37,
+    "revNum": 54,
+    "examNum": 55,
+    "duration": 17,
+    "intro": "Cette unité analyse les manifestations, causes et conséquences du dérèglement climatique, les comportements responsables, les conventions, le rôle des associations et la conception d'un mini-projet de sensibilisation et de résilience.",
+    "opening": [
+      [
+        "Qu'est-ce que le climat ?",
+        "Le climat décrit les conditions atmosphériques moyennes et leur variabilité sur une longue durée."
+      ],
+      [
+        "Un événement extrême est-il toujours causé uniquement par le climat ?",
+        "Non, ses effets dépendent aussi de l'exposition, de la vulnérabilité et de l'aménagement."
+      ]
+    ],
+    "seeds": [
+      [
+        "Réchauffement et irrégularité des pluies",
+        "dérèglement climatique",
+        "Le dérèglement climatique est une modification durable du climat ; il se manifeste notamment par le réchauffement global et des pluies plus irrégulières.",
+        [
+          "La température moyenne augmente sous l'effet du renforcement anthropique de l'effet de serre.",
+          "Les saisons pluviales peuvent changer de début, de durée ou d'intensité.",
+          "Les moyennes et les extrêmes évoluent différemment selon les régions.",
+          "Une tendance climatique se démontre avec des observations longues, pas un seul événement."
+        ],
+        [
+          "réchauffement",
+          "saison pluviale",
+          "tendance"
+        ],
+        "Malala compare des séries de température et de pluie sur plusieurs décennies sans utiliser de date de classe.",
+        "S'appuyer sur des séries longues et distinguer tendance, variabilité et événement."
+      ],
+      [
+        "La sécheresse",
+        "sécheresse",
+        "La sécheresse est un déficit durable de pluie et d'eau disponible qui affecte sols, rivières, nappes, activités et écosystèmes.",
+        [
+          "La sécheresse météorologique commence par un manque de précipitations.",
+          "Les réserves du sol et les cours d'eau diminuent ensuite.",
+          "Agriculture, élevage, santé et alimentation deviennent plus vulnérables.",
+          "Économie d'eau, stockage, alerte et cultures adaptées réduisent les dommages."
+        ],
+        [
+          "déficit",
+          "réserve d'eau",
+          "adaptation"
+        ],
+        "Dera suit la baisse d'un puits, d'une rivière et de l'humidité d'un champ.",
+        "Organiser les usages avant la pénurie et protéger les sources."
+      ],
+      [
+        "Les inondations",
+        "inondation",
+        "Une inondation est la submersion temporaire d'un espace habituellement sec par débordement, ruissellement, remontée d'eau ou action marine.",
+        [
+          "Des pluies intenses peuvent dépasser la capacité d'infiltration et des réseaux.",
+          "Déboisement, sols imperméables et occupation des zones basses aggravent le risque.",
+          "Les dommages dépendent de l'aléa, des enjeux exposés et de la vulnérabilité.",
+          "Zones d'expansion des crues, drainage, alerte et évacuation réduisent le risque."
+        ],
+        [
+          "crue",
+          "ruissellement",
+          "vulnérabilité",
+          "évacuation"
+        ],
+        "Fifaliana compare deux quartiers touchés par la même pluie mais aménagés différemment.",
+        "Ne pas confondre pluie extrême et catastrophe ; réduire l'exposition et la vulnérabilité."
+      ],
+      [
+        "L'intensification des cyclones",
+        "cyclone tropical",
+        "Un cyclone tropical est une vaste dépression océanique accompagnée de vents violents, pluies intenses et parfois submersion marine.",
+        [
+          "Il se forme au-dessus d'eaux tropicales suffisamment chaudes dans des conditions favorables.",
+          "Le changement climatique peut renforcer les pluies et la proportion des cyclones les plus intenses.",
+          "Vent, crue, glissement et submersion peuvent se combiner.",
+          "Alerte, abris, construction résistante et protection côtière sauvent des vies."
+        ],
+        [
+          "vent violent",
+          "submersion",
+          "alerte",
+          "abri"
+        ],
+        "Vololona repère l'itinéraire d'évacuation d'un village côtier avant l'arrivée d'un cyclone.",
+        "Suivre l'alerte officielle et préparer la mise en sécurité avant le danger."
+      ],
+      [
+        "Séismes et tsunamis : distinguer les risques",
+        "séisme et tsunami",
+        "Les séismes et tsunamis sont principalement des risques géologiques ; le programme les rapproche des cataclysmes, mais ils ne sont pas causés par le dérèglement climatique.",
+        [
+          "Un séisme résulte d'une rupture brutale dans la croûte terrestre.",
+          "Un tsunami est une série de vagues souvent déclenchée par un séisme sous-marin.",
+          "Le climat n'en augmente pas la fréquence, contrairement à certains aléas météorologiques.",
+          "Prévention, normes, alerte et évacuation littorale restent indispensables."
+        ],
+        [
+          "risque géologique",
+          "faille",
+          "vague",
+          "évacuation"
+        ],
+        "Saholy classe cyclone, sécheresse, séisme et tsunami selon leur origine.",
+        "Distinguer précisément risques climatiques et géologiques tout en préparant chacun."
+      ],
+      [
+        "La déforestation et le climat",
+        "déforestation",
+        "La déforestation contribue au dérèglement climatique en libérant du carbone et en réduisant la capacité des forêts à l'absorber.",
+        [
+          "Les arbres stockent du carbone dans le bois, les racines et les sols.",
+          "Coupe et brûlage libèrent une partie de ce stock dans l'atmosphère.",
+          "La disparition de la forêt modifie aussi eau, sols, température locale et biodiversité.",
+          "Protection, gestion durable, agroforesterie et restauration réduisent les émissions."
+        ],
+        [
+          "carbone",
+          "stockage",
+          "agroforesterie"
+        ],
+        "Andry compare le bilan d'un versant forestier et d'un versant brûlé.",
+        "Éviter les destructions et restaurer des écosystèmes adaptés au milieu."
+      ],
+      [
+        "Pollutions et gaz à effet de serre",
+        "gaz à effet de serre",
+        "Les pollutions de l'air et de l'eau dégradent les milieux ; l'augmentation des gaz à effet de serre due aux activités humaines renforce en plus le réchauffement.",
+        [
+          "Fumées, particules, eaux usées et produits chimiques nuisent à la santé et aux écosystèmes.",
+          "Le dioxyde de carbone provient surtout des combustibles fossiles et de la déforestation.",
+          "Le méthane est émis notamment par certaines activités agricoles, déchets et exploitations énergétiques.",
+          "Prévenir les rejets, réduire les émissions et renforcer les puits de carbone limitent les impacts."
+        ],
+        [
+          "pollution",
+          "dioxyde de carbone",
+          "méthane",
+          "émission"
+        ],
+        "Hanta relie véhicules, usine, élevage, eaux usées et forêt à deux schémas sur pollution et climat.",
+        "Distinguer pollution locale et effet climatique, puis agir en priorité sur les sources."
+      ],
+      [
+        "Déchets, ordures et climat",
+        "gestion des déchets",
+        "Le pullulement des déchets pollue les milieux et peut émettre des gaz à effet de serre lors de la décomposition ou du brûlage.",
+        [
+          "Les déchets organiques enfouis sans contrôle peuvent produire du méthane.",
+          "Le brûlage à l'air libre émet fumées, particules et gaz.",
+          "La fabrication de produits jetés gaspille matières et énergie.",
+          "Réduction, tri, compostage, réemploi et recyclage limitent les impacts."
+        ],
+        [
+          "méthane",
+          "brûlage",
+          "tri",
+          "compostage"
+        ],
+        "Faniry organise un diagnostic des déchets de l'école et de leur destination.",
+        "Réduire d'abord, puis séparer et traiter chaque matière correctement."
+      ],
+      [
+        "Calendrier agricole et rendement",
+        "agriculture et climat",
+        "Le dérèglement climatique perturbe les périodes de semis, de croissance et de récolte, avec des effets sur les rendements.",
+        [
+          "Des pluies tardives ou irrégulières retardent certaines activités agricoles.",
+          "Chaleur, sécheresse, inondation et nouveaux ravageurs affectent les cultures.",
+          "Une baisse de rendement réduit revenus et disponibilité alimentaire.",
+          "Variétés adaptées, diversification, eau maîtrisée et information climatique renforcent la résilience."
+        ],
+        [
+          "calendrier agricole",
+          "rendement",
+          "culture adaptée"
+        ],
+        "Bemiray ajuste un calendrier cultural après avoir étudié les pluies et les besoins des plantes.",
+        "Croiser prévisions, savoirs locaux, diversité des cultures et conservation des sols."
+      ],
+      [
+        "Pénurie alimentaire et maladies",
+        "impact climatique",
+        "Le dérèglement climatique peut aggraver les pénuries alimentaires et certains risques de maladies en modifiant eau, chaleur, récoltes et milieux.",
+        [
+          "La baisse de production et les ruptures de transport réduisent l'offre alimentaire.",
+          "Les prix peuvent augmenter et fragiliser les ménages pauvres.",
+          "Chaleur, inondation et eau contaminée favorisent certains problèmes sanitaires.",
+          "Nutrition, eau sûre, surveillance sanitaire et protection sociale réduisent les impacts."
+        ],
+        [
+          "pénurie",
+          "sécurité alimentaire",
+          "maladie infectieuse"
+        ],
+        "Rindra étudie une chaîne reliant aléa, récolte, prix, alimentation et santé.",
+        "Agir ensemble sur production, accès à l'alimentation, eau et prévention sanitaire."
+      ],
+      [
+        "Adaptation, résilience et atténuation",
+        "action climatique",
+        "L'action climatique associe adaptation aux effets, résilience face aux chocs et atténuation des causes.",
+        [
+          "L'adaptation ajuste pratiques, bâtiments et services aux risques actuels ou attendus.",
+          "La résilience permet de résister, se rétablir et améliorer la préparation.",
+          "L'atténuation réduit les émissions ou augmente le stockage du carbone.",
+          "Une stratégie locale combine souvent ces trois dimensions."
+        ],
+        [
+          "adaptation",
+          "résilience",
+          "atténuation"
+        ],
+        "Tsiory classe plusieurs actions selon qu'elles réduisent une cause, un dommage ou le temps de rétablissement.",
+        "Définir l'objectif de chaque action et suivre son efficacité."
+      ],
+      [
+        "Reboisement et agroécologie",
+        "agroécologie",
+        "Le reboisement et l'agroécologie utilisent les fonctions du vivant pour protéger sols, eau, biodiversité et production face au climat.",
+        [
+          "Des arbres adaptés stockent du carbone et protègent le sol.",
+          "L'agroforesterie associe arbres, cultures ou élevage sur un même espace.",
+          "Paillage, rotations et diversité biologique améliorent humidité et fertilité.",
+          "La réussite exige choix des espèces, entretien, suivi et participation locale."
+        ],
+        [
+          "reboisement",
+          "agroforesterie",
+          "paillage",
+          "fertilité"
+        ],
+        "Narindra conçoit une parcelle qui associe haies, cultures diversifiées et couverture du sol.",
+        "Adapter les pratiques au milieu et mesurer les résultats sur plusieurs saisons."
+      ],
+      [
+        "Recycler les déchets et les ordures",
+        "recyclage",
+        "Le recyclage transforme des matières usagées en ressources nouvelles et réduit extraction, énergie et déchets lorsqu'il est bien organisé.",
+        [
+          "Le tri à la source améliore la qualité des matières récupérées.",
+          "Le réemploi prolonge la vie d'un objet sans le transformer.",
+          "Le compostage valorise les déchets organiques et nourrit le sol.",
+          "Le recyclage complète la réduction et ne justifie pas la surconsommation."
+        ],
+        [
+          "tri",
+          "réemploi",
+          "compost",
+          "matière"
+        ],
+        "Tiana répartit les déchets d'une activité entre refus, réemploi, compostage, recyclage et résidu.",
+        "Appliquer la priorité : réduire, réemployer, puis recycler."
+      ],
+      [
+        "Énergie propre et écogestes",
+        "écogeste",
+        "Un écogeste est une action quotidienne simple qui réduit consommation, pollution ou gaspillage ; son effet augmente lorsqu'il devient collectif.",
+        [
+          "Éteindre les appareils inutilisés et choisir des équipements efficaces économise l'énergie.",
+          "Marcher, partager un transport ou mieux organiser les trajets réduit certains rejets.",
+          "Les énergies renouvelables limitent l'usage de combustibles fossiles lorsqu'elles sont adaptées.",
+          "Une règle d'école ou de quartier transforme les gestes isolés en pratique durable."
+        ],
+        [
+          "énergie propre",
+          "sobriété",
+          "efficacité"
+        ],
+        "Mino mesure la consommation avant et après un plan d'écogestes dans l'école.",
+        "Choisir une action mesurable et vérifier l'économie réellement obtenue."
+      ],
+      [
+        "Conventions climatiques et accord de Paris",
+        "coopération climatique",
+        "Les conventions climatiques organisent la coopération internationale pour mesurer les émissions, fixer des objectifs et soutenir l'action.",
+        [
+          "La Convention-cadre fournit un cadre commun aux négociations sur le climat.",
+          "La Conférence des Parties réunit régulièrement les États signataires.",
+          "L'accord de Paris engage les pays à présenter et renforcer leurs contributions climatiques.",
+          "Les accords internationaux doivent être traduits en politiques et actions locales vérifiables."
+        ],
+        [
+          "COP",
+          "accord de Paris",
+          "engagement",
+          "coopération"
+        ],
+        "Fitia simule une négociation où plusieurs territoires proposent des efforts et des soutiens.",
+        "Distinguer objectif international, engagement national et action locale."
+      ],
+      [
+        "ONG et associations face au climat",
+        "acteur climatique",
+        "Les ONG et associations informent, expérimentent, accompagnent les communautés, défendent des causes et contrôlent parfois l'action climatique.",
+        [
+          "La sensibilisation transforme des informations complexes en messages accessibles.",
+          "Les projets locaux peuvent soutenir reboisement, énergie, agriculture, eau ou préparation aux risques.",
+          "Le plaidoyer porte les besoins des populations dans les décisions.",
+          "Transparence, compétences, partenariats et évaluation renforcent la crédibilité."
+        ],
+        [
+          "ONG",
+          "association",
+          "sensibilisation",
+          "plaidoyer"
+        ],
+        "Mialy compare le rôle d'une association locale, d'une collectivité et d'un service technique.",
+        "Vérifier les objectifs, les bénéficiaires, les moyens et les résultats de chaque acteur."
+      ],
+      [
+        "Mini-projet : voyage d'étude et sensibilisation",
+        "mini-projet climatique",
+        "Un mini-projet climatique organise une étude de terrain et une sensibilisation afin de comprendre un problème, partager des solutions et évaluer l'action.",
+        [
+          "Le lieu de visite est choisi selon une question précise et des règles de sécurité.",
+          "Les élèves préparent grille d'observation, entretiens et supports didactiques.",
+          "L'exposé partage constats, causes, conséquences et propositions avec la communauté.",
+          "Un indicateur mesure la participation, l'apprentissage ou le changement obtenu."
+        ],
+        [
+          "voyage d'étude",
+          "matériel didactique",
+          "exposé",
+          "indicateur"
+        ],
+        "Sitraka et sa classe préparent une visite écologique puis une exposition destinée aux familles.",
+        "Définir le problème, préparer, observer, restituer, agir et évaluer."
+      ]
+    ]
+  },
+  {
+    "id": "unite6",
+    "nom": "UNITÉ 6 — LES DIFFÉRENTES SOURCES D'ÉNERGIE",
+    "theme": "Les différentes sources d'énergie",
+    "first": 56,
+    "revNum": 67,
+    "examNum": 68,
+    "duration": 11,
+    "intro": "Cette unité distingue énergies renouvelables et non renouvelables, étudie biomasse, solaire, éolien et hydraulique, relie énergie et activités économiques, compare avantages et limites et conçoit un mini-projet local.",
+    "opening": [
+      [
+        "Pourquoi utilise-t-on de l'énergie ?",
+        "L'énergie permet de chauffer, éclairer, déplacer, produire, transformer et communiquer."
+      ],
+      [
+        "Une énergie renouvelable est-elle sans impact ?",
+        "Non, toute installation consomme de l'espace et des matériaux et doit être choisie avec soin."
+      ]
+    ],
+    "seeds": [
+      [
+        "Énergie, source et usage",
+        "énergie",
+        "L'énergie est la capacité de produire un mouvement, de la chaleur, de la lumière ou une transformation ; elle provient de sources converties pour les usages humains.",
+        [
+          "Une source primaire existe dans la nature avant transformation.",
+          "L'électricité est un vecteur produit à partir de plusieurs sources.",
+          "Les besoins varient entre logement, agriculture, industrie, transport et services.",
+          "Sobriété et efficacité réduisent la quantité nécessaire pour un même service."
+        ],
+        [
+          "source primaire",
+          "électricité",
+          "sobriété",
+          "efficacité"
+        ],
+        "Santatra suit la chaîne allant d'une source naturelle à une lampe, une pompe ou un moteur.",
+        "Distinguer source, transformation, transport et usage final."
+      ],
+      [
+        "Les énergies non renouvelables",
+        "énergie non renouvelable",
+        "Une énergie non renouvelable provient d'un stock limité qui se reconstitue trop lentement à l'échelle humaine.",
+        [
+          "Charbon, pétrole et gaz sont des combustibles fossiles riches en énergie.",
+          "L'uranium alimente les centrales nucléaires sans combustion de carbone, mais produit des déchets spécifiques.",
+          "Extraction, transport et utilisation créent risques, pollutions et émissions variables.",
+          "Économies, diversification et alternatives réduisent la dépendance aux stocks."
+        ],
+        [
+          "charbon",
+          "pétrole",
+          "gaz",
+          "uranium"
+        ],
+        "Lalaina compare l'origine, l'usage et les impacts de quatre sources non renouvelables.",
+        "Évaluer tout le cycle de la mine ou du puits jusqu'aux déchets."
+      ],
+      [
+        "Les énergies renouvelables",
+        "énergie renouvelable",
+        "Une énergie renouvelable utilise un flux naturel qui se reconstitue rapidement, comme le soleil, le vent, l'eau ou la biomasse gérée durablement.",
+        [
+          "Le potentiel dépend du climat, du relief, de l'eau, des sols et des équipements.",
+          "La production solaire et éolienne varie avec les conditions météorologiques.",
+          "Stockage, réseaux et diversité des sources améliorent la continuité.",
+          "Renouvelable ne signifie pas sans impact sur espace, matériaux ou biodiversité."
+        ],
+        [
+          "flux",
+          "potentiel",
+          "stockage",
+          "réseau"
+        ],
+        "Voara choisit un bouquet énergétique pour un village en comparant ressources et besoins.",
+        "Adapter la source au lieu, au service attendu, au coût et aux impacts."
+      ],
+      [
+        "La biomasse",
+        "biomasse",
+        "La biomasse est la matière organique végétale ou animale utilisée pour produire chaleur, combustible, gaz ou électricité.",
+        [
+          "Bois, résidus agricoles et déchets organiques sont des formes de biomasse.",
+          "Le biogaz provient de la décomposition contrôlée de matières organiques.",
+          "La biomasse n'est durable que si les prélèvements n'épuisent ni forêts ni sols.",
+          "Foyers améliorés et valorisation des résidus réduisent consommation et fumées."
+        ],
+        [
+          "bois-énergie",
+          "résidu",
+          "biogaz",
+          "foyer amélioré"
+        ],
+        "Tovo compare un foyer traditionnel, un foyer amélioré et un petit digesteur à biogaz.",
+        "Vérifier la ressource disponible, son renouvellement et la qualité de l'air."
+      ],
+      [
+        "L'énergie solaire",
+        "énergie solaire",
+        "L'énergie solaire utilise le rayonnement du Soleil pour produire chaleur ou électricité.",
+        [
+          "Un chauffe-eau solaire transforme le rayonnement en chaleur.",
+          "Un panneau photovoltaïque transforme la lumière en électricité.",
+          "La production varie avec l'ensoleillement, l'orientation, les ombres et l'entretien.",
+          "Batterie, réseau ou adaptation des usages permet de gérer l'intermittence."
+        ],
+        [
+          "photovoltaïque",
+          "chaleur",
+          "ensoleillement",
+          "batterie"
+        ],
+        "Nirina étudie l'orientation de panneaux destinés à une école rurale.",
+        "Dimensionner l'installation selon les besoins prioritaires et la ressource solaire."
+      ],
+      [
+        "L'énergie éolienne",
+        "énergie éolienne",
+        "L'énergie éolienne transforme l'énergie du vent en mouvement mécanique puis souvent en électricité.",
+        [
+          "La vitesse et la régularité du vent déterminent le potentiel d'un site.",
+          "Une éolienne comprend des pales, un rotor, une génératrice et un support.",
+          "La production varie et nécessite réseau, stockage ou complément d'autres sources.",
+          "Implantation, bruit, paysage, oiseaux et acceptation locale doivent être étudiés."
+        ],
+        [
+          "vent",
+          "rotor",
+          "génératrice",
+          "implantation"
+        ],
+        "Faly mesure le vent en plusieurs lieux avant de proposer un emplacement.",
+        "Observer longtemps le vent et consulter les habitants avant l'installation."
+      ],
+      [
+        "L'énergie hydraulique",
+        "énergie hydraulique",
+        "L'énergie hydraulique utilise l'eau en mouvement ou en hauteur pour produire un travail mécanique ou de l'électricité.",
+        [
+          "Un barrage stocke de l'eau tandis qu'une centrale au fil de l'eau utilise le débit disponible.",
+          "La puissance dépend du débit et de la hauteur de chute.",
+          "L'hydroélectricité peut fournir une production pilotable et durable.",
+          "Barrages et dérivations modifient écosystèmes, sédiments et usages en amont et en aval."
+        ],
+        [
+          "barrage",
+          "débit",
+          "turbine",
+          "hauteur de chute"
+        ],
+        "Rado suit l'eau depuis une retenue jusqu'à la turbine puis au réseau.",
+        "Évaluer énergie produite, partage de l'eau, sécurité et continuité écologique."
+      ],
+      [
+        "Énergie, agriculture, pêche et mines",
+        "énergie du secteur primaire",
+        "Le secteur primaire utilise l'énergie pour cultiver, irriguer, conserver, pêcher, extraire et transporter les ressources.",
+        [
+          "Pompes, outils et machines augmentent la capacité de production agricole.",
+          "Le froid conserve poissons et produits périssables.",
+          "Les mines consomment de l'énergie pour creuser, concasser, pomper et transporter.",
+          "Une énergie fiable améliore la production mais doit éviter gaspillage et pollution."
+        ],
+        [
+          "irrigation",
+          "chaîne du froid",
+          "extraction"
+        ],
+        "Tahiry calcule les besoins d'une pompe solaire et d'une chambre froide communautaire.",
+        "Choisir la source selon le besoin, la durée d'usage et les ressources locales."
+      ],
+      [
+        "Énergie et transformation des produits locaux",
+        "transformation locale",
+        "L'énergie permet de transformer les produits locaux afin d'améliorer conservation, qualité, valeur et revenus.",
+        [
+          "Moulins, séchoirs, presses et ateliers transforment les matières premières.",
+          "La chaleur, le froid et l'électricité répondent à des besoins différents.",
+          "Une transformation locale crée des emplois et réduit certaines pertes.",
+          "Entretien, sécurité, coût et disponibilité des pièces conditionnent la réussite."
+        ],
+        [
+          "moulin",
+          "séchage",
+          "valeur ajoutée",
+          "atelier"
+        ],
+        "Fetra compare un séchoir solaire et un équipement alimenté par combustible.",
+        "Dimensionner l'équipement au volume produit, au marché et aux capacités d'entretien."
+      ],
+      [
+        "Énergie, commerce, transports et tourisme",
+        "énergie du secteur tertiaire",
+        "Commerce, transports et tourisme dépendent d'une énergie fiable pour déplacer, éclairer, conserver, communiquer et accueillir.",
+        [
+          "Les transports utilisent surtout des carburants mais l'électrification progresse selon les contextes.",
+          "Boutiques et marchés ont besoin d'éclairage, de froid et de moyens de paiement.",
+          "Le tourisme utilise énergie pour mobilité, hébergement, eau et services.",
+          "Efficacité, transports collectifs et sources propres réduisent coûts et impacts."
+        ],
+        [
+          "transport",
+          "commerce",
+          "tourisme",
+          "service"
+        ],
+        "Tsiry réalise le bilan énergétique simplifié d'un petit hébergement touristique.",
+        "Prioriser les besoins utiles, réduire les pertes et choisir un approvisionnement fiable."
+      ],
+      [
+        "Mini-projet d'énergie renouvelable locale",
+        "projet énergétique",
+        "Un mini-projet énergétique répond à un besoin économique local par une source renouvelable adaptée, un budget, des partenaires et un suivi.",
+        [
+          "Le diagnostic précise le besoin, les bénéficiaires et les ressources disponibles.",
+          "Le choix compare avantages, limites, coût, entretien et impacts des solutions.",
+          "Le plan indique matériel, responsabilités, financement, sécurité et formation.",
+          "Des indicateurs mesurent énergie produite, service rendu, économies et durabilité."
+        ],
+        [
+          "diagnostic",
+          "partenaire",
+          "budget",
+          "indicateur"
+        ],
+        "Mialy et sa classe conçoivent un séchoir solaire ou une pompe renouvelable pour une activité locale.",
+        "Partir du besoin réel, choisir avec les usagers, tester, mesurer et améliorer."
+      ]
+    ]
+  }
+]
