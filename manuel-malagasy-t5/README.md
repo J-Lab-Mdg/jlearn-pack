@@ -140,6 +140,21 @@ collées après le corrigé : `Kabary` et `Fihavanana` (`sources_web/full/`, lic
 production libre ne reçoit pas de phrase inventée : son `FANITSIANA` renvoie des phrases copiées, sous
 `Ohatra:`.
 
+### V3 bis : toutes les fiches de `Fiasan'ny teny` (Tsipelina · Fitsipiky ny teny)
+
+La 1re séance de chaque unité est celle du propriétaire (sur `samihafa / samy hafa`, dans son exemple).
+`src/data_fiasan.py` donne les suivantes — 4 pour `Tsipelina`, 8 pour `Fitsipiky ny teny`, dans l'ordre du
+PE p.18-19 —, chacune au gabarit de l'exemple : takela · `LESONA:` · `FANAZARAN-TENA` · `FANITSIANA`.
+
+```sh
+./run.sh src/build_fiche.py data_fiasan Manuel_Malagasy_T5_TSIPELINA-FITSIPIKA_V1
+python3 ../fianarana-malagasy/fikarohana.py --fanamarinana data_fiasan
+```
+
+Là où le PE ne donne pas d'exemple (`nony`, `no ho`, les paires accentuées `barìka`/`terý`/`arý`, les
+mpanampy `tsy maintsy`/`aoka`/`mba`), la fiche imprime un tiret et une note au maître : **aucune phrase
+inventée pour remplir le vide**.
+
 ## Termes malgaches : jamais inventés, jamais traduits de force
 
 `refs/EXPLOITATION_DU_PE_T5.txt` (copie du document du propriétaire, à la racine du dépôt sur `main`)

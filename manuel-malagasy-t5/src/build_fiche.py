@@ -187,6 +187,19 @@ def lesona(doc, d):
                 r.bold = True
                 r.font.name = "Arial"
                 r.font.color.rgb = rgb(C_EX)
+        elif kind == "tabl":
+            tete, andalana = val
+            t = doc.add_table(rows=1 + len(andalana), cols=len(tete))
+            t.alignment = WD_TABLE_ALIGNMENT.CENTER
+            bordures(t)
+            for j, h in enumerate(tete):
+                cellule(t.cell(0, j), h, size=10, bold=True,
+                        align=WD_ALIGN_PARAGRAPH.CENTER)
+            for i, row in enumerate(andalana, start=1):
+                for j, v in enumerate(row):
+                    cellule(t.cell(i, j), v, size=10.5, color=C_EX, bold=True,
+                            align=WD_ALIGN_PARAGRAPH.CENTER)
+            p(doc, "", size=6)
         elif kind == "note":
             p(doc, "(" + val + ")", size=8, italic=True, color=C_NOTA, space_after=5)
 
@@ -330,13 +343,18 @@ def main():
     style.font.name = "Arial"
     style.font.size = Pt(11)
 
-    p(doc, d["zt"], size=taille_titre(d["zt"]), bold=True, color=C_ZT, space_after=10)
-    takela(doc, d)
-    saut(doc)
-    lesona(doc, d)
-    exercices(doc, d)
-    fanitsiana(doc, d)
-    loharano(doc, d)
+    fiches = d.get("FICHES") or [d]
+    for k, f in enumerate(fiches):
+        if k:
+            saut(doc)
+        p(doc, f["zt"], size=taille_titre(f["zt"]), bold=True, color=C_ZT, space_after=10)
+        takela(doc, f)
+        saut(doc)
+        lesona(doc, f)
+        exercices(doc, f)
+        fanitsiana(doc, f)
+        if f.get("loharano") or f.get("pages"):
+            loharano(doc, f)
 
     if not os.path.isdir(os.path.join(RACINE, "output")):
         os.makedirs(os.path.join(RACINE, "output"))
