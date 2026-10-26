@@ -138,7 +138,7 @@ function lessonS49() {
     p("• Comment ? — les discours, le vody ondry, le repas, les chants et les danses.", { after: 60 }),
     sub("Un outil de plus : le transfert malgache ↔ français"),
     p("Un mot de chez nous aide souvent à comprendre le mot français : le kabary m'aide à comprendre « l'orateur » et « le discours ».", { after: 60 }),
-    sub("Mots du texte :"),
+    sub("Vocabulaire — mots du texte :"),
     mot("l'orateur", "celui qui parle au nom de la famille — celui du kabary"),
     mot("le vody ondry", "le présent offert aux parents de la mariée lors de la demande"),
     mot("les noces", "la fête du mariage"),
@@ -222,6 +222,10 @@ function lessonS50() {
     p("famorana → la circoncision ; famadihana → l'exhumation ; kabary → le discours.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("chaque événement a ses mots et ses paroles — et chaque famille a ses coutumes : on les respecte toutes.")]),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« assister à un mariage » (y être présent)" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("la confusion avec « assister quelqu'un », qui veut dire l'aider" + ".")]),
   ];
 }
 
@@ -290,7 +294,7 @@ function lessonS51() {
     sub("Les temps du récit :"),
     p("• l'imparfait plante le décor (l'arrière-plan) ;"),
     p("• le passé simple fait avancer l'action (le premier plan) — circula, arrivèrent, alla, fut.", { after: 60 }),
-    sub("Mots du texte :"),
+    sub("Vocabulaire — mots du texte :"),
     mot("le doyen", "le plus âgé de la famille"),
     mot("le lambamena", "le grand tissu de soie rouge des ancêtres"),
     mot("dispersée", "éparpillée, chacun d'un côté"),

@@ -218,6 +218,10 @@ function lessonS62() {
     p("En malgache : « Angano angano, arira arira… »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("la fable écrit sa morale ; le conte cache la sienne — c'est au lecteur de la trouver.")]),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« raconter un conte », « raconter une histoire »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« dire un conte »" + ".")]),
   ];
 }
 
@@ -285,7 +289,7 @@ function lessonS63() {
     p("la deviner quand elle n'est pas écrite : je regarde qui gagne, qui perd, et pourquoi. Dans le conte de Faralahy, la morale se devine : la patience et la bonté sont récompensées.", { after: 60 }),
     sub("Du proverbe à la fable :"),
     p("« Fais comme le tanalahy : regarde devant, pense à l'après. » — la sagesse malgache et la fable disent la même chose, chacune à sa manière.", { after: 60 }),
-    sub("Mots du texte :"),
+    sub("Vocabulaire — mots du texte :"),
     mot("se moquer", "rire de quelqu'un pour le rabaisser"),
     mot("un piège", "ce qui est caché pour attraper"),
     mot("prudent", "qui réfléchit avant d'agir"),

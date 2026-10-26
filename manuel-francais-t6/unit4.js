@@ -136,7 +136,7 @@ function lessonS37() {
     p("• Quand ? — dimanche après-midi ;"),
     p("• Quoi ? — la finale du tournoi de pétanque ;"),
     p("• Comment ? — en triplette, 13 à 12, sur un dernier tir.", { after: 60 }),
-    sub("Mots du texte (devinés par le contexte) :"),
+    sub("Vocabulaire — mots du texte (devinés par le contexte) :"),
     mot("une triplette", "une équipe de trois joueurs"),
     mot("le cochonnet", "la petite boule que l'on vise"),
     mot("un carreau", "le tir qui chasse la boule adverse et prend sa place"),
@@ -221,6 +221,10 @@ function lessonS38() {
     p("– si l'on exagère : les blessures, la fatigue, les leçons négligées.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("le sport rend plus fort quand il reste équilibré : de l'effort, du repos, du temps pour l'école.")]),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« jouer au football », « faire de la lutte »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« jouer football », sans le petit mot « au »" + ".")]),
   ];
 }
 
@@ -289,7 +293,7 @@ function lessonS39() {
     p("4. une CONCLUSION : « La règle d'or tient en un mot : l'équilibre. »", { after: 60 }),
     sub("Les indices du texte explicatif :"),
     p("pourquoi ? comment ? — parce que, car, grâce à — des exemples — un plan visible (paragraphes).", { after: 60 }),
-    sub("Mots du texte :"),
+    sub("Vocabulaire — mots du texte :"),
     mot("l'endurance", "la résistance à l'effort — faire un effort longtemps sans se fatiguer"),
     mot("se blesser", "se faire mal (de la famille de blessure)"),
     mot("l'excès", "le trop — le contraire de l'équilibre"),
@@ -495,7 +499,7 @@ function lessonS42() {
     p([run("LA PÉRIPHRASE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La périphrase, c'est :"),
     p("un groupe de mots qui remplace un mot, en le décrivant.", { after: 60 }),
-    sub("Des périphrases à connaître :"),
+    sub("Vocabulaire — des périphrases à connaître :"),
     mot("le ballon rond", "le football"),
     mot("le ballon ovale", "le rugby"),
     mot("la petite reine", "le vélo, la bicyclette"),

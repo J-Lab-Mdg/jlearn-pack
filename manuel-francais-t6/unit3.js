@@ -145,9 +145,9 @@ function lessonS25() {
     p("• Où ? Quand ? — la situation ;"),
     p("• Quoi ? — ce qu'on apprend à faire ;"),
     p("• Comment ? — les étapes, dans l'ordre.", { after: 60 }),
-    sub("Les mots qui ordonnent les étapes :"),
+    sub("Vocabulaire — les mots qui ordonnent les étapes :"),
     p("d'abord → ensuite → après → puis → enfin. Dans un tutoriel, l'ordre des étapes ne se change pas.", { after: 60 }),
-    sub("Mots du texte :"),
+    sub("Vocabulaire — mots du texte :"),
     mot("l'écran", "la partie du téléphone où l'on voit les images et les lettres"),
     mot("une touche", "un petit bouton pour écrire une lettre ou un chiffre"),
     mot("cliquer", "appuyer sur une image ou un bouton de l'écran"),
@@ -233,6 +233,10 @@ function lessonS26() {
     p("", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("à l'école, le numérique est un outil : il aide à chercher, à écrire, à présenter — il ne travaille pas à notre place.")]),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« allumer » et « éteindre » l'ordinateur" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« ouvrir » et « fermer » l'ordinateur (on ouvre un fichier, pas la machine)" + ".")]),
   ];
 }
 
@@ -306,7 +310,7 @@ function lessonS27() {
     sub("Explicatif ou injonctif ?"),
     p("• « Grâce à l'Internet, les élèves consultent un dictionnaire en ligne. » → explicatif : on explique ;"),
     p("• « Ne télécharge rien sans l'autorisation de l'enseignant. » → injonctif : on ordonne.", { after: 60 }),
-    sub("Mots du texte :"),
+    sub("Vocabulaire — mots du texte :"),
     mot("la connexion", "le lien avec Internet"),
     mot("en ligne", "sur Internet"),
     mot("autonome", "qui sait se débrouiller seul"),

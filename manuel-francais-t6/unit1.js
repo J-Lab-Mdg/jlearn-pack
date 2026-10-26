@@ -137,7 +137,7 @@ function lessonS1() {
     p("• Je devine le sens des mots inconnus grâce au contexte et à la décomposition des mots : bio- (la vie), gastro- (le ventre)."),
     p("• Je reformule l'essentiel avec mes propres mots.", { after: 80 }),
     imgFloat("b1_paysage.png", 170, 768 / 1376),
-    sub("Mes premiers mots de l'unité :"),
+    sub("Vocabulaire — mes premiers mots de l'unité :"),
     mot("un itinéraire", "le chemin du voyage, tracé sur la carte"),
     mot("une étape", "un arrêt du voyage"),
     mot("la biodiversité", "toutes les formes de vie d'une région"),
@@ -218,6 +218,10 @@ function lessonS2() {
     mot("le trajet", "le chemin suivi, d'étape en étape"),
     pr([run("Pour préparer un itinéraire : ", { bold: true }),
         run("je repère ma destination, je mesure la distance, je choisis mes étapes.")], { after: 40 }),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« monter dans le taxi-brousse », « voyager en pirogue »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« monter sur le taxi-brousse »" + ".")]),
   ];
 }
 
@@ -289,7 +293,7 @@ function lessonS3() {
     p("• des adjectifs et des détails précis : dix-sept kilomètres, quarante-huit tunnels ;"),
     p("• des indications de lieu : de chaque côté de la voie, au-dessus des cascades ;"),
     p("• des images qui rendent la description vivante : « comme un long serpent de fer » — nous les étudierons à la prochaine séance.", { after: 60 }),
-    sub("Mots du texte :"),
+    sub("Vocabulaire — mots du texte :"),
     mot("un dépliant touristique", "un petit document plié qui présente un lieu aux voyageurs"),
     mot("une falaise", "une paroi rocheuse très raide"),
     mot("une bananeraie", "un champ de bananiers"),

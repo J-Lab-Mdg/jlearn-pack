@@ -148,7 +148,7 @@ function lessonS13() {
     sub("Explicite ou implicite ?"),
     p("• l'information explicite est écrite dans le texte : « les enfants ont planté dix jeunes arbres » ;"),
     p("• l'information implicite se comprend entre les lignes : « dès six heures, les jeunes étaient déjà là » → ils étaient motivés.", { after: 60 }),
-    sub("Mots du texte :"),
+    sub("Vocabulaire — mots du texte :"),
     mot("l'entraide", "s'aider les uns les autres"),
     mot("le fokontany", "le quartier ou le village, la plus petite communauté administrative"),
     mot("un compte-rendu", "un texte qui rapporte ce qui s'est réellement passé"),
@@ -228,6 +228,10 @@ function lessonS14() {
     p("", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("respecter un bien public, c'est respecter le travail et l'argent de tous.")]),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« rendre service à quelqu'un »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« donner service »" + ".")]),
   ];
 }
 
