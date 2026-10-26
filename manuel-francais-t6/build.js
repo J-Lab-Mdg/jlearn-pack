@@ -8,7 +8,7 @@ const { C, SZ, FONT, run, p, pr, img, pageBreak, tocLink, bookmarkTitle, cell } 
 // ---------- couverture (pleine page, marges 0,5 cm) ----------
 function cover() {
   const f = path.join(__dirname, "img", "cover_francais_t6.png");
-  if (fs.existsSync(f)) return [img("cover_francais_t6.png", 718, 1376 / 768)];
+  if (fs.existsSync(f)) return [img("cover_francais_t6.png", 718, 1264 / 848)];
   return [p([run("FRANÇAIS T6 — J-LEARN", { bold: true, size: 72 })], { center: true })];
 }
 

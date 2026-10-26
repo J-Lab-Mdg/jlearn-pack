@@ -7,7 +7,7 @@
 - Annexe officielle du PE : les stratégies de lecture (reprise en annexe du manuel).
 
 ## Formule (adaptation de la formule J-Learn Anglais T7→T11)
-- Fiches pédagogiques en **français simple**, gabarit I. Révision / II. NOUVELLE LEÇON / III. Évaluation.
+- Fiches de préparation en **français simple**, gabarit I. Révision / II. NOUVELLE LEÇON / III. Évaluation.
 - Mots clés en **gras et/ou italique** ; durées des séances vides (………) ; puces verticales ; leçons riches
   (exemples, tableaux, mini-dialogues) — pas de phrase de clôture « je copie la leçon ».
 - Mascottes **Koto & Soa** ; beaucoup de visuels (4-6 images sélectives par leçon) ; grande police.
