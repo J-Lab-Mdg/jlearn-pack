@@ -49,7 +49,7 @@ Choix utilisateur : banque d'images par unité (2-3 par leçon) ; badge sous-dis
 - Bloc R1 ☑ : badges + couleurs saumon/jaune T6 (60 fiches + 60 leçons). — livré
 - Bloc R2 ☑ : banque d'images U1 T6 (10 images b1_*, 2 par leçon, compressées). — livré
 - Bloc R3 ☑ : banques U2 + U3 T6. — livré
-- Bloc R4 ◐ : banque U4 T6 livrée ; U5 + U6 à suivre.
+- Bloc R4 ☑ : banques U4 + U5 + U6 T6. — livré — T6 100% illustré
 - Bloc R5 ☐ : badges + couleurs saumon/jaune T5.
 - Bloc R6 ☐ : banques U1 + U2 T5.
 - Bloc R7 ☐ : banques U3 + U4 T5.
