@@ -52,5 +52,5 @@ Choix utilisateur : banque d'images par unité (2-3 par leçon) ; badge sous-dis
 - Bloc R4 ☑ : banques U4 + U5 + U6 T6. — livré — T6 100% illustré
 - Bloc R5 ☑ : badges + couleurs saumon/jaune + Vocabulaire T5. — livré
 - Bloc R6 ☑ : banques U1 + U2 T5 (fait).
-- Bloc R7 ◐ : banques U3 + U4 T5 (U4 fait, U3 restant).
-- Bloc R8 ☐ : banques U5 + U6 T5.
+- Bloc R7 ☑ : banques U3 + U4 T5 (fait).
+- Bloc R8 ☑ : banques U5 + U6 T5 (fait) — RETROFIT T5+T6 TERMINÉ.
