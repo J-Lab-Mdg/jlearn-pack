@@ -1,7 +1,7 @@
 // Français T5 — UNITÉ 3 — LES SERVICES PUBLICS (10 leçons + révision + test) — Séances 25 à 36 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "6C3483"; // violet services publics
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -117,11 +117,13 @@ function ficheS25() {
        pAns("R.A. : 1. le bureau de poste — 2. madame Hanta au guichet, le facteur qui distribue — 3. transporter le courrier, verser les mandats — 4. la personne qui utilise un service public.", ["bureau de poste", "facteur"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(25, TOTAL, meta, rows, "s25");
+  return fiche(25, TOTAL, meta, rows, "s25", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS25() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 25", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER UN REPORTAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     reportagePoste(),
     p("", { after: 80 }),
@@ -130,7 +132,7 @@ function lessonS25() {
     p("• les USAGERS — qui vient utiliser le service ?"),
     p("• le PERSONNEL — qui y travaille, et que fait chacun ?"),
     p("• les MISSIONS — quels services sont rendus à la population ?", { after: 80 }),
-    sub("Mes premiers mots de l'unité :"),
+    sub("Vocabulaire — mes premiers mots de l'unité :"),
     mot("un usager", "la personne qui utilise le service public"),
     mot("le guichet", "la fenêtre où l'on est servi"),
     mot("un formulaire", "le papier à remplir"),
@@ -183,7 +185,7 @@ function ficheS26() {
        pAns("R.A. : centre de santé — bureau de poste — caserne des pompiers — mairie — commissariat.", ["centre de santé", "mairie"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(26, TOTAL, meta, rows, "s26");
+  return fiche(26, TOTAL, meta, rows, "s26", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS26() {
   const t = (rows) => new Table({
@@ -191,11 +193,13 @@ function lessonS26() {
     rows: [
       new TableRow({ children: ["LE SERVICE", "QUI Y TRAVAILLE ?", "SON RÔLE"].map(h =>
         cell([p([run(h, { bold: true, color: C.WHITE, size: SZ.FICHE })], { center: true, after: 20 })], { shade: COLOR })) }),
-      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.BLUE : C.BLACK })], { after: 20 })])) })),
+      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.SALMON : C.BLACK })], { after: 20 })])) })),
     ],
   });
   return [
     p([run("LEÇON DU JOUR — SÉANCE 26", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES SERVICES PUBLICS ET LEURS RÔLES", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     t([
       ["l'école", "le maître, la maîtresse", "instruire les enfants"],
@@ -207,7 +211,7 @@ function lessonS26() {
       ["la caserne", "les pompiers", "éteindre les incendies, secourir"],
     ]),
     p("", { after: 80 }),
-    sub("Les mots de la vie quotidienne :"),
+    sub("Vocabulaire — les mots de la vie quotidienne :"),
     mot("faire la queue, attendre son tour", "au guichet, chacun son tour !"),
     mot("un acte de naissance", "le papier officiel de la naissance"),
     mot("un carnet de santé", "le carnet des soins et des vaccins"),
@@ -215,6 +219,10 @@ function lessonS26() {
     p("", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un service public appartient à tous et sert tout le monde : c'est un bien commun que chacun doit respecter.", { italic: true, color: COLOR })]),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« aller à la poste, à la mairie »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« aller au poste » (le poste, c'est l'emploi !)" + ".")]),
   ];
 }
 
@@ -259,11 +267,13 @@ function ficheS27() {
        pAns("R.A. : 1. les naissances — 2. les villageois qui ont un problème — 3. les pompiers, le commissariat — 4. au centre du village (ou : dans la première salle…).", ["les naissances", "au centre du village"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(27, TOTAL, meta, rows, "s27");
+  return fiche(27, TOTAL, meta, rows, "s27", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS27() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 27", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UN ARTICLE SUR UN SERVICE PUBLIC", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     articleMairie(),
     p("", { after: 80 }),
@@ -325,18 +335,20 @@ function ficheS28() {
        pAns("R.A. (exemple) : Les usagers remplissent les formulaires. Le commerçant envoie un colis. La guichetière lit les adresses.", ["remplissent", "envoie", "lit"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(28, TOTAL, meta, rows, "s28");
+  return fiche(28, TOTAL, meta, rows, "s28", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS28() {
   const t = (title, rows) => new Table({
     width: { size: 10400, type: WidthType.DXA },
     rows: [
       new TableRow({ children: [cell([p([run(title, { bold: true, color: C.WHITE, size: SZ.FICHE })], { center: true, after: 20 })], { colSpan: 2, shade: COLOR })] }),
-      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.BLUE : C.BLACK })], { after: 20 })])) })),
+      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.SALMON : C.BLACK })], { after: 20 })])) })),
     ],
   });
   return [
     p([run("LEÇON DU JOUR — SÉANCE 28", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("REMPLIR, ENVOYER, LIRE AU PRÉSENT", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     t("REMPLIR (2e groupe) — le -ISS- au pluriel !", [
       ["je remplis", "nous remplissons"],
@@ -357,9 +369,9 @@ function lessonS28() {
     ]),
     p("", { after: 80 }),
     sub("Au service public, ces verbes travaillent dur :"),
-    pr([run("Les usagers ", { size: SZ.BODY }), run("remplissent", { bold: true, color: C.BLUE }),
-        run(" les formulaires ; la poste "), run("envoie", { bold: true, color: C.BLUE }),
-        run(" les lettres ; l'employée "), run("lit", { bold: true, color: C.BLUE }), run(" les registres.")]),
+    pr([run("Les usagers ", { size: SZ.BODY }), run("remplissent", { bold: true, color: C.SALMON }),
+        run(" les formulaires ; la poste "), run("envoie", { bold: true, color: C.SALMON }),
+        run(" les lettres ; l'employée "), run("lit", { bold: true, color: C.SALMON }), run(" les registres.")]),
   ];
 }
 
@@ -407,11 +419,13 @@ function ficheS29() {
        pAns("R.A. (exemple) : Le médecin examine les enfants pour protéger leur santé. La mairie répare le puits afin de donner de l'eau propre au village.", ["pour protéger", "afin de donner"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(29, TOTAL, meta, rows, "s29");
+  return fiche(29, TOTAL, meta, rows, "s29", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS29() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 29", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LE COMPLÉMENT CIRCONSTANCIEL DE BUT", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     pr([run("Il répond à la question : ", { size: SZ.BODY }),
         run("POUR QUOI FAIRE ? DANS QUEL BUT ?", { bold: true, color: C.RED })], { after: 80 }),
@@ -473,25 +487,27 @@ function ficheS30() {
        pAns("R.A. (exemple) : Le pompier est un héros qui sauve des vies. La carte d'identité est un papier que la mairie délivre. Le CSB est l'endroit où l'on vaccine les enfants.", ["qui sauve", "que la mairie délivre", "où l'on vaccine"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(30, TOTAL, meta, rows, "s30");
+  return fiche(30, TOTAL, meta, rows, "s30", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS30() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 30", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES PRONOMS RELATIFS : QUI, QUE, OÙ", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     p("Les pronoms relatifs sont les agrafes de la phrase : ils relient deux phrases en une et chassent les répétitions !", { after: 80 }),
     sub("QUI — remplace le sujet :"),
     pr([run("Voici le facteur. Le facteur distribue les lettres. → Voici le facteur ", { size: SZ.BODY }),
-        run("qui distribue les lettres", { bold: true, color: C.BLUE }), run(".")], { after: 60 }),
+        run("qui distribue les lettres", { bold: true, color: C.SALMON }), run(".")], { after: 60 }),
     sub("QUE — remplace le complément :"),
     pr([run("On reconnaît ce bâtiment. → le bâtiment ", { size: SZ.BODY }),
-        run("que l'on reconnaît", { bold: true, color: C.BLUE }), run(".")], { after: 60 }),
+        run("que l'on reconnaît", { bold: true, color: C.SALMON }), run(".")], { after: 60 }),
     sub("OÙ — remplace un lieu :"),
     pr([run("On court au commissariat. → le commissariat ", { size: SZ.BODY }),
-        run("où l'on court", { bold: true, color: C.BLUE }), run(" en cas de danger.")], { after: 80 }),
+        run("où l'on court", { bold: true, color: C.SALMON }), run(" en cas de danger.")], { after: 80 }),
     sub("La phrase qui bégaie, la phrase qui brille :"),
     pr([run("✗ ", { bold: true, color: C.RED }), run("« Voici l'infirmière. L'infirmière vaccine les bébés. »", { italic: true })], { after: 30 }),
-    pr([run("✓ ", { bold: true, color: C.GREEN }), run("« Voici l'infirmière "), run("qui", { bold: true, color: C.BLUE }), run(" vaccine les bébés ! »")]),
+    pr([run("✓ ", { bold: true, color: C.GREEN }), run("« Voici l'infirmière "), run("qui", { bold: true, color: C.SALMON }), run(" vaccine les bébés ! »")]),
   ];
 }
 
@@ -536,11 +552,13 @@ function ficheS31() {
       [fp("S'auto-évaluent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(31, TOTAL, meta, rows, "s31");
+  return fiche(31, TOTAL, meta, rows, "s31", "PRODUCTION ORALE", COLOR);
 }
 function lessonS31() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 31", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCHANGER ET DONNER SON AVIS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les expressions pour donner son avis :"),
     mot("Je pense que…", "Je pense que l'école est essentielle."),
@@ -599,11 +617,13 @@ function ficheS32() {
       [fp("Cochent.")],
       "Auto-évaluation", "Liste de contrôle"),
   ];
-  return fiche(32, TOTAL, meta, rows, "s32");
+  return fiche(32, TOTAL, meta, rows, "s32", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS32() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 32", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MON TEXTE SUR UN SERVICE PUBLIC (1) : LE PLAN", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     pr([run("Sujet : ", { bold: true, color: C.RED }),
         run("Décris un service public, réel ou imaginaire, et explique son rôle.", { italic: true })], { after: 80 }),
@@ -659,11 +679,13 @@ function ficheS33() {
       [fp("Rendent leur production.")],
       "Travail individuel", "----"),
   ];
-  return fiche(33, TOTAL, meta, rows, "s33");
+  return fiche(33, TOTAL, meta, rows, "s33", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS33() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 33", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MON TEXTE SUR UN SERVICE PUBLIC (2) : RÉDIGER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("La mission enrichissement :"),
     p("Un premier jet est une maison en briques ; l'enrichissement, c'est la peinture ! J'ajoute :"),
@@ -719,11 +741,13 @@ function ficheS34() {
       [fp("Cochent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(34, TOTAL, meta, rows, "s34");
+  return fiche(34, TOTAL, meta, rows, "s34", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS34() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 34", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("BIEN PRONONCER, BIEN LIRE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Mes trois outils de lecteur :"),
     mot("la prononciation", "j'articule chaque syllabe : com-mis-sa-riat, é-tat ci-vil"),
@@ -731,11 +755,11 @@ function lessonS34() {
     mot("les pauses", "petit arrêt à la virgule, grand arrêt au point"),
     p("", { after: 80 }),
     sub("Mon virelangue d'échauffement :"),
-    pr([run("« Le facteur farceur refuse les affreuses factures. »", { italic: true, bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("« Le facteur farceur refuse les affreuses factures. »", { italic: true, bold: true, color: C.SALMON })], { after: 80 }),
     sub("Les mots longs de l'unité — je les découpe :"),
     p("• le com-mis-sa-riat — l'é-tat ci-vil — le for-mu-laire — les re-gistres — la gui-che-tière", { after: 80 }),
     pr([run("La phrase à faire vivre : ", { bold: true }),
-        run("« Respecter les services publics, c'est se respecter soi-même ! »", { italic: true, color: C.BLUE })]),
+        run("« Respecter les services publics, c'est se respecter soi-même ! »", { italic: true, color: C.SALMON })]),
   ];
 }
 
@@ -747,7 +771,7 @@ function bigLesson() {
     sub("1. Les services publics et leurs rôles :"),
     p("L'école instruit ; l'hôpital et le CSB soignent ; la mairie délivre les papiers et organise le village ; la poste transporte le courrier et verse les mandats ; la banque garde l'argent ; le commissariat protège ; les pompiers secourent. Un service public est un bien commun !", { after: 80 }),
     sub("2. Les mots de la vie quotidienne :"),
-    pr([run("l'usager, le guichet, le formulaire, le mandat, l'acte de naissance, le carnet de santé, le livret d'épargne, faire la queue, attendre son tour.", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("l'usager, le guichet, le formulaire, le mandat, l'acte de naissance, le carnet de santé, le livret d'épargne, faire la queue, attendre son tour.", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("3. Les verbes d'action au présent :"),
     p("remplir (nous remplissons — le -iss- !), envoyer (j'envoie — le y devient i !), lire (ils lisent — le s !).", { after: 80 }),
     sub("4. Le complément circonstanciel de but :"),

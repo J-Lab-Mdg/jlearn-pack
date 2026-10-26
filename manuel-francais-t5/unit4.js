@@ -1,7 +1,7 @@
 // Français T5 — UNITÉ 4 — LES LOISIRS (10 leçons + révision + test) — Séances 37 à 48 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "D35400"; // orange loisirs
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -118,11 +118,13 @@ function ficheS37() {
        pAns("R.A. : 1. Pourquoi avons-nous besoin des loisirs ? — 2. se détendre, grandir (ou se faire des amis) — 3. la perte de temps, le gaspillage d'argent, la fatigue — 4. chasser le stress, se détendre.", ["Pourquoi", "se détendre"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(37, TOTAL, meta, rows, "s37");
+  return fiche(37, TOTAL, meta, rows, "s37", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS37() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 37", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER UN TEXTE EXPLICATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     passageLoisirs(),
     p("", { after: 80 }),
@@ -130,7 +132,7 @@ function lessonS37() {
     p("• Son but : expliquer, informer, faire comprendre."),
     p("• Son indice : il répond à une question — Pourquoi ? Comment ?"),
     p("• Son temps préféré : le présent de l'indicatif.", { after: 80 }),
-    sub("Mes premiers mots de l'unité :"),
+    sub("Vocabulaire — mes premiers mots de l'unité :"),
     mot("se détendre", "se reposer, relâcher le corps"),
     mot("se déstresser", "chasser le stress (dé- = enlever !)"),
     mot("transmettre", "donner ce que l'on sait"),
@@ -181,11 +183,13 @@ function ficheS38() {
        pAns("R.A. : AVANTAGES → se faire des amis, se déstresser, se distraire ; INCONVÉNIENTS → perte de temps, fatigue, gaspillage d'argent.", ["AVANTAGES", "INCONVÉNIENTS"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(38, TOTAL, meta, rows, "s38");
+  return fiche(38, TOTAL, meta, rows, "s38", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS38() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 38", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MOTS DES LOISIRS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les familles de loisirs :"),
     mot("sportifs", "le sport, la randonnée, la pêche, la promenade, le vélo"),
@@ -195,14 +199,18 @@ function lessonS38() {
     mot("les jeux", "les cartes, le fanorona, la marelle"),
     p("", { after: 60 }),
     sub("Chaque loisir a son verbe :"),
-    pr([run("FAIRE du vélo — JOUER aux cartes — PRATIQUER un sport — ALLER au cinéma — LIRE, ÉCRIRE", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("FAIRE du vélo — JOUER aux cartes — PRATIQUER un sport — ALLER au cinéma — LIRE, ÉCRIRE", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("Avantages et inconvénients :"),
     pr([run("☀ Avantages : ", { bold: true, color: C.GREEN }), run("se distraire, se déstresser, se faire des amis.")], { after: 40 }),
     pr([run("⚠ Inconvénients : ", { bold: true, color: C.RED }), run("la perte de temps, le gaspillage d'argent, la fatigue.")], { after: 80 }),
-    sub("Mes outils de vocabulaire :"),
+    sub("Vocabulaire — mes outils :"),
     mot("les synonymes", "presque le même sens : s'amuser ≈ se distraire"),
     mot("les antonymes", "le contraire : gagner ≠ perdre ; avantage ≠ inconvénient"),
     mot("la formation des mots", "distraire → distraction ; gaspiller → gaspillage ; dé- = enlever"),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« jouer au fanorona », « jouer aux cartes »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« jouer le fanorona »" + ".")]),
   ];
 }
 
@@ -248,20 +256,22 @@ function ficheS39() {
        pAns("R.A. : 1. expliquer, faire comprendre — 2. Pourquoi ? Comment ? — 3. parce que, en effet (ou car, ainsi, donc) — 4. vingt-deux.", ["Pourquoi ? Comment ?", "parce que"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(39, TOTAL, meta, rows, "s39");
+  return fiche(39, TOTAL, meta, rows, "s39", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS39() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 39", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LE TEXTE EXPLICATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     texteFanorona(),
     p("", { after: 80 }),
     sub("La carte d'identité du texte explicatif :"),
-    pr([run("But : ", { bold: true }), run("expliquer, informer, faire comprendre.", { bold: true, color: C.BLUE })], { after: 40 }),
+    pr([run("But : ", { bold: true }), run("expliquer, informer, faire comprendre.", { bold: true, color: C.SALMON })], { after: 40 }),
     pr([run("Caractéristiques : ", { bold: true }), run("il répond aux questions "), run("Pourquoi ? Comment ?", { bold: true, color: C.RED }), run(" — verbes au présent de l'indicatif.")], { after: 40 }),
     pr([run("Structure : ", { bold: true }), run("introduction (la question) → développement (l'explication) → conclusion.")], { after: 80 }),
     sub("Les connecteurs explicatifs :"),
-    pr([run("car, parce que, en effet, ainsi, donc", { bold: true, color: C.BLUE }),
+    pr([run("car, parce que, en effet, ainsi, donc", { bold: true, color: C.SALMON }),
         run(" — ils collent les raisons aux idées !")], { after: 80 }),
     sub("Descriptif ou explicatif ?"),
     p("• Le texte DESCRIPTIF répond à « c'est comment ? » — il peint un tableau."),
@@ -313,11 +323,13 @@ function ficheS40() {
        pAns("R.A. (exemple) : Je joue souvent au football. Je dribble rapidement vers le but.", ["souvent", "rapidement"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(40, TOTAL, meta, rows, "s40");
+  return fiche(40, TOTAL, meta, rows, "s40", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS40() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 40", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES ADVERBES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     p("L'adverbe est un petit mot INVARIABLE qui précise le verbe — comme l'épice précise le goût !", { after: 80 }),
     sub("Les quatre familles :"),
@@ -328,10 +340,10 @@ function lessonS40() {
     p("", { after: 80 }),
     sub("La fabrique des adverbes en -MENT :"),
     pr([run("adjectif + -ment : ", { bold: true, color: C.RED }),
-        run("lent → lentement ; facile → facilement ; douce → doucement ; courageuse → courageusement", { bold: true, color: C.BLUE })], { after: 80 }),
+        run("lent → lentement ; facile → facilement ; douce → doucement ; courageuse → courageusement", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("La règle d'or :"),
     pr([run("L'adverbe ne s'accorde JAMAIS : ", { size: SZ.BODY }),
-        run("elles jouent bien — ils lisent beaucoup.", { bold: true, color: C.BLUE })]),
+        run("elles jouent bien — ils lisent beaucoup.", { bold: true, color: C.SALMON })]),
   ];
 }
 
@@ -377,11 +389,13 @@ function ficheS41() {
        pAns("R.A. (exemple) : Combien de joueurs faut-il ? — Koto et Soa pratiquent la danse. — Koto et Soa ne pratiquent pas la danse.", ["Combien", "ne pratiquent pas"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(41, TOTAL, meta, rows, "s41");
+  return fiche(41, TOTAL, meta, rows, "s41", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS41() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 41", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("INTERROGER, DOUBLER LE SUJET, DIRE NON", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("1. Les pronoms interrogatifs :"),
     mot("Qui ?", "pour une personne : Qui gagne la partie ?"),
@@ -390,8 +404,8 @@ function lessonS41() {
     p("", { after: 60 }),
     sub("2. Le sujet composé :"),
     pr([run("Deux sujets reliés par ET → le verbe passe au PLURIEL !", { bold: true, color: C.RED })], { after: 40 }),
-    pr([run("Niry et Beby ", { bold: true, color: C.BLUE }), run("vont", { bold: true, color: C.RED }),
-        run(" à l'école. — "), run("Le chien et le chat ", { bold: true, color: C.BLUE }),
+    pr([run("Niry et Beby ", { bold: true, color: C.SALMON }), run("vont", { bold: true, color: C.RED }),
+        run(" à l'école. — "), run("Le chien et le chat ", { bold: true, color: C.SALMON }),
         run("sont", { bold: true, color: C.RED }), run(" dans la cour.")], { after: 80 }),
     sub("3. La phrase négative — les lunettes du NON :"),
     mot("ne … pas", "Je ne joue pas ce soir."),
@@ -447,18 +461,20 @@ function ficheS42() {
        pAns("R.A. (exemple) : Nous plaçons nos pions sur le plateau. Nous partageons le goûter après la partie.", ["plaçons", "partageons"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(42, TOTAL, meta, rows, "s42");
+  return fiche(42, TOTAL, meta, rows, "s42", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS42() {
   const t = (title, rows) => new Table({
     width: { size: 10400, type: WidthType.DXA },
     rows: [
       new TableRow({ children: [cell([p([run(title, { bold: true, color: C.WHITE, size: SZ.FICHE })], { center: true, after: 20 })], { colSpan: 2, shade: COLOR })] }),
-      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.BLUE : C.BLACK })], { after: 20 })])) })),
+      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.SALMON : C.BLACK })], { after: 20 })])) })),
     ],
   });
   return [
     p([run("LEÇON DU JOUR — SÉANCE 42", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES VERBES EN -CER ET -GER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le secret des deux gardiens :"),
     pr([run("Devant le O de -ons : ", { size: SZ.BODY }),
@@ -478,8 +494,8 @@ function lessonS42() {
     ]),
     p("", { after: 80 }),
     sub("Les verbes amis :"),
-    pr([run("-cer : ", { bold: true }), run("commencer, placer, avancer → nous commençons, nous plaçons, nous avançons", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("-ger : ", { bold: true }), run("manger, voyager, partager, ranger → nous mangeons, nous voyageons, nous partageons, nous rangeons", { bold: true, color: C.BLUE })]),
+    pr([run("-cer : ", { bold: true }), run("commencer, placer, avancer → nous commençons, nous plaçons, nous avançons", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("-ger : ", { bold: true }), run("manger, voyager, partager, ranger → nous mangeons, nous voyageons, nous partageons, nous rangeons", { bold: true, color: C.SALMON })]),
   ];
 }
 
@@ -524,16 +540,18 @@ function ficheS43() {
       [fp("S'auto-évaluent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(43, TOTAL, meta, rows, "s43");
+  return fiche(43, TOTAL, meta, rows, "s43", "PRODUCTION ORALE", COLOR);
 }
 function lessonS43() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 43", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCHANGER ET EXPOSER SUR LES LOISIRS", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Pour justifier mon choix :"),
-    pr([run("Je préfère … ", { bold: true, color: C.BLUE }),
+    pr([run("Je préfère … ", { bold: true, color: C.SALMON }),
         run("parce que / car ", { bold: true, color: C.RED }),
-        run("…", { bold: true, color: C.BLUE })], { after: 40 }),
+        run("…", { bold: true, color: C.SALMON })], { after: 40 }),
     p("« Je préfère la lecture parce qu'elle enrichit mon vocabulaire. »", { after: 80 }),
     sub("Pour comparer deux loisirs :"),
     p("• les avantages de l'un ET de l'autre ;"),
@@ -588,11 +606,13 @@ function ficheS44() {
       [fp("Cochent.")],
       "Auto-évaluation", "Liste de contrôle"),
   ];
-  return fiche(44, TOTAL, meta, rows, "s44");
+  return fiche(44, TOTAL, meta, rows, "s44", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS44() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 44", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MON TEXTE EXPLICATIF (1) : INVENTER ET PLANIFIER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     pr([run("Sujet : ", { bold: true, color: C.RED }),
         run("Invente un jeu (ou choisis une activité de loisir) et explique-le en trois paragraphes.", { italic: true })], { after: 80 }),
@@ -649,11 +669,13 @@ function ficheS45() {
       [fp("Rendent leur production.")],
       "Travail individuel", "----"),
   ];
-  return fiche(45, TOTAL, meta, rows, "s45");
+  return fiche(45, TOTAL, meta, rows, "s45", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS45() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 45", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MON TEXTE EXPLICATIF (2) : RÉDIGER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("La recette du bon texte explicatif :"),
     p("• J'accroche avec une question : « Connaissez-vous … ? »"),
@@ -710,11 +732,13 @@ function ficheS46() {
       [fp("Cochent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(46, TOTAL, meta, rows, "s46");
+  return fiche(46, TOTAL, meta, rows, "s46", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS46() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 46", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE EN ÉCHO, LIRE EN CHŒUR", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La lecture en écho :"),
     p("• Le maître (ou un camarade) lit une phrase avec sa musique : pauses, intonation, expression."),
@@ -725,9 +749,9 @@ function lessonS46() {
     p("• Même rythme, mêmes pauses, même souffle."),
     p("• Le chœur donne du courage : personne ne lit seul, tout le monde progresse !", { after: 80 }),
     sub("Le rappel du lecteur :"),
-    pr([run("fluidité ", { bold: true, color: C.BLUE }), run("(sans hésiter) + "),
-        run("précision ", { bold: true, color: C.BLUE }), run("(tous les mots) + "),
-        run("expressivité ", { bold: true, color: C.BLUE }), run("(la voix vit) = lecture réussie !")]),
+    pr([run("fluidité ", { bold: true, color: C.SALMON }), run("(sans hésiter) + "),
+        run("précision ", { bold: true, color: C.SALMON }), run("(tous les mots) + "),
+        run("expressivité ", { bold: true, color: C.SALMON }), run("(la voix vit) = lecture réussie !")]),
   ];
 }
 

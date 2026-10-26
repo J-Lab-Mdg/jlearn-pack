@@ -1,7 +1,7 @@
 // Français T5 — UNITÉ 5 — LES MÉTIERS (10 leçons + révision + test) — Séances 49 à 60 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B03A2E"; // rouge brique métiers
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -121,21 +121,23 @@ function ficheS49() {
        pAns("R.A. : 1. les métiers du village — 2. le riz et le manioc, avec sa bêche — 3. le marteau, la scie (ou le rabot) — 4. puisque un bon artisan vise toujours l'excellence.", ["les métiers", "l'excellence"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(49, TOTAL, meta, rows, "s49");
+  return fiche(49, TOTAL, meta, rows, "s49", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS49() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 49", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("J'ÉCOUTE UN REPORTAGE SUR LES MÉTIERS", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Le reportage :"),
     p("• Un journaliste va sur le terrain, interroge des personnes et rapporte leurs paroles."),
     p("• On y entend des interviews : les paroles sont entre guillemets « … ».", { after: 80 }),
     sub("Pour chaque métier, je retiens quatre informations :"),
-    pr([run("QUI ? ", { bold: true, color: C.BLUE }), run("(le métier)  —  "),
-        run("QUOI ? ", { bold: true, color: C.BLUE }), run("(les missions)  —  "),
-        run("AVEC QUOI ? ", { bold: true, color: C.BLUE }), run("(les outils)  —  "),
-        run("OÙ ? ", { bold: true, color: C.BLUE }), run("(le lieu de travail)")], { after: 80 }),
-    sub("Mots nouveaux :"),
+    pr([run("QUI ? ", { bold: true, color: C.SALMON }), run("(le métier)  —  "),
+        run("QUOI ? ", { bold: true, color: C.SALMON }), run("(les missions)  —  "),
+        run("AVEC QUOI ? ", { bold: true, color: C.SALMON }), run("(les outils)  —  "),
+        run("OÙ ? ", { bold: true, color: C.SALMON }), run("(le lieu de travail)")], { after: 80 }),
+    sub("Vocabulaire — mots nouveaux :"),
     mot("la cultivatrice", "celle qui cultive les champs (← cultiver)."),
     mot("le charpentier", "l'artisan qui construit en bois."),
     mot("la matière première", "ce que la nature donne et que l'on transforme : le bois, le coton…"),
@@ -194,11 +196,13 @@ function ficheS50() {
        pAns("R.A. : 1. primaire (pêcheur), secondaire (charpentier), tertiaire (instituteur) — 2. tertiaire, primaire, secondaire — 3. filet→pêcheur, balance→commerçante, bêche→cultivateur — 4. le bois → des meubles (ou le coton → des vêtements).", ["primaire", "secondaire", "tertiaire"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(50, TOTAL, meta, rows, "s50");
+  return fiche(50, TOTAL, meta, rows, "s50", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS50() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 50", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES TROIS SECTEURS D'ACTIVITÉS", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("1. Le secteur PRIMAIRE — on récolte ce que la nature donne :"),
     p("agriculture, pêche, élevage → le cultivateur, le pêcheur, l'éleveur."),
@@ -212,8 +216,12 @@ function lessonS50() {
     sub("Les matières premières :"),
     p("ce que la nature donne et que l'on transforme : le riz, le poisson, le bois, le coton, le fer.", { after: 80 }),
     sub("Activités rurales et urbaines :"),
-    pr([run("rurales ", { bold: true, color: C.BLUE }), run("= à la campagne (cultiver, élever) ; "),
-        run("urbaines ", { bold: true, color: C.BLUE }), run("= en ville (bureaux, usines, commerces).")]),
+    pr([run("rurales ", { bold: true, color: C.SALMON }), run("= à la campagne (cultiver, élever) ; "),
+        run("urbaines ", { bold: true, color: C.SALMON }), run("= en ville (bureaux, usines, commerces).")]),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« travailler dans une usine, dans un atelier »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« travailler sur l'usine »" + ".")]),
   ];
 }
 
@@ -265,11 +273,13 @@ function ficheS51() {
        pAns("R.A. : 1. Pourquoi dit-on que le charpentier bâtit l'avenir ? — 2. construire la charpente, bâtir ponts et meubles — 3. la force et la précision (ou la patience) — 4. car / puisque / parce que / grâce à.", ["Pourquoi", "grâce à"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(51, TOTAL, meta, rows, "s51");
+  return fiche(51, TOTAL, meta, rows, "s51", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS51() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 51", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UN TEXTE EXPLICATIF SUR UN MÉTIER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Le texte explicatif sur un métier répond à cinq questions :"),
     p("1. Quelles MISSIONS ? — ce que fait le professionnel."),
@@ -283,7 +293,7 @@ function lessonS51() {
     sub("L'arme secrète de l'explication — les connecteurs de cause :"),
     pr([run("car, parce que, puisque, grâce à", { bold: true, color: C.RED }),
         run(" — ils répondent à la question « pourquoi ? ».")], { after: 80 }),
-    sub("Mots nouveaux :"),
+    sub("Vocabulaire — mots nouveaux :"),
     mot("la charpente", "le squelette de bois qui porte le toit."),
     mot("la poutre", "une grosse pièce de bois de la charpente."),
     mot("bâclé", "fait trop vite et mal. Le contraire du travail soigné !"),
@@ -335,11 +345,13 @@ function ficheS52() {
        pAns("R.A. : 1. Grâce à — 2. À cause de — 3. En raison de — 4. exemple : Grâce à l'instituteur, je sais lire.", ["Grâce à", "À cause de", "En raison de"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(52, TOTAL, meta, rows, "s52");
+  return fiche(52, TOTAL, meta, rows, "s52", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS52() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 52", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LA CAUSE (1) : DANS LA PHRASE SIMPLE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("La cause, c'est la réponse à « pourquoi ? »."),
     p("Dans la phrase simple, on l'exprime avec une expression + un NOM :", { after: 80 }),
@@ -347,8 +359,8 @@ function lessonS52() {
         run("positive ", { bold: true, color: C.GREEN }), run(": « Grâce à son maître, Ratovo connaît le bois. »")], { after: 60 }),
     pr([run("À CAUSE DE ", { bold: true, color: C.RED }), run("+ nom → cause "),
         run("négative ", { bold: true, color: C.RED }), run(": « À cause du cyclone, les pêcheurs restent au port. »")], { after: 60 }),
-    pr([run("EN RAISON DE ", { bold: true, color: C.BLUE }), run("+ nom → cause "),
-        run("neutre, officielle ", { bold: true, color: C.BLUE }), run(": « En raison de la fête, le marché est fermé. »")], { after: 80 }),
+    pr([run("EN RAISON DE ", { bold: true, color: C.SALMON }), run("+ nom → cause "),
+        run("neutre, officielle ", { bold: true, color: C.SALMON }), run(": « En raison de la fête, le marché est fermé. »")], { after: 80 }),
     sub("L'astuce de Koto :"),
     p("Je dis merci ? → grâce à. Je me plains ? → à cause de. Je lis une affiche de la mairie ? → en raison de !"),
   ];
@@ -402,11 +414,13 @@ function ficheS53() {
        pAns("R.A. : 1. Le forgeron est fort, car il frappe le fer toute la journée. — 2. Parce que les microbes menacent les malades. — 3. Puisque tu connais le chemin, guide-nous. — 4. + nom : grâce à, en raison de ; + phrase : parce que, car.", ["car", "Parce que", "Puisque"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(53, TOTAL, meta, rows, "s53");
+  return fiche(53, TOTAL, meta, rows, "s53", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS53() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 53", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LA CAUSE (2) : CAR, PARCE QUE, PUISQUE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     p("Ces trois mots sont suivis d'une PHRASE entière (sujet + verbe) :", { after: 80 }),
     pr([run("CAR ", { bold: true, color: C.RED }),
@@ -467,22 +481,24 @@ function ficheS54() {
        pAns("R.A. : 1. bâtissent — 2. construisons — 3. cultive — 4. pêchez — 5. bâtis.", ["bâtissent", "construisons", "cultive", "pêchez", "bâtis"], { size: SZ.FICHE })],
       "Travail individuel", "Cahiers"),
   ];
-  return fiche(54, TOTAL, meta, rows, "s54");
+  return fiche(54, TOTAL, meta, rows, "s54", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS54() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 54", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("CULTIVER, PÊCHER, CONSTRUIRE, BÂTIR AU PRÉSENT", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("1er groupe — cultiver, pêcher (comme chanter) :"),
     p("je cultive, tu cultives, il cultive, nous cultivons, vous cultivez, ils cultivent."),
     p("je pêche, tu pêches, elle pêche, nous pêchons, vous pêchez, elles pêchent.", { after: 80 }),
     sub("2e groupe — bâtir (comme finir et remplir) :"),
     pr([run("je bâtis, tu bâtis, il bâtit, "),
-        run("nous bâtissons, vous bâtissez, ils bâtissent", { bold: true, color: C.BLUE }),
+        run("nous bâtissons, vous bâtissez, ils bâtissent", { bold: true, color: C.SALMON }),
         run(" — le -iss- revient au pluriel !")], { after: 80 }),
     sub("3e groupe — construire :"),
     pr([run("je construis, tu construis, il construit, "),
-        run("nous construisons, vous construisez, ils construisent", { bold: true, color: C.BLUE }),
+        run("nous construisons, vous construisez, ils construisent", { bold: true, color: C.SALMON }),
         run(".")], { after: 80 }),
     sub("Les pièges :"),
     p("• il bâtit, il construit — pas de -s à « il » !"),
@@ -535,11 +551,13 @@ function ficheS55() {
       [fp("S'auto-évaluent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(55, TOTAL, meta, rows, "s55");
+  return fiche(55, TOTAL, meta, rows, "s55", "PRODUCTION ORALE", COLOR);
 }
 function lessonS55() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 55", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("INTERVIEWER ET PRÉSENTER UN MÉTIER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Les cinq questions du journaliste :"),
     p("1. Quelles sont vos missions ?"),
@@ -601,11 +619,13 @@ function ficheS56() {
       [fp("Cochent.")],
       "Auto-évaluation", "Liste de contrôle"),
   ];
-  return fiche(56, TOTAL, meta, rows, "s56");
+  return fiche(56, TOTAL, meta, rows, "s56", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS56() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 56", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MON TEXTE EXPLICATIF (1) : LA FICHE MÉTIER ET LE PLAN", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     pr([run("Sujet : ", { bold: true, color: C.RED }),
         run("Choisis un métier et explique-le : missions, compétences, outils, lieu d'exercice, importance.", { italic: true })], { after: 80 }),
@@ -665,11 +685,13 @@ function ficheS57() {
       [fp("Rendent leur production.")],
       "Travail individuel", "----"),
   ];
-  return fiche(57, TOTAL, meta, rows, "s57");
+  return fiche(57, TOTAL, meta, rows, "s57", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS57() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 57", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MON TEXTE EXPLICATIF (2) : RÉDIGER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("La recette du texte explicatif sur un métier :"),
     p("• J'accroche avec une question : « Pourquoi dit-on que… ? »"),
@@ -727,11 +749,13 @@ function ficheS58() {
       [fp("S'auto-évaluent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(58, TOTAL, meta, rows, "s58");
+  return fiche(58, TOTAL, meta, rows, "s58", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS58() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 58", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LA PONCTUATION, PARTITION DU LECTEUR", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le code du lecteur :"),
     pr([run(",  ", { bold: true, color: C.RED, size: 32 }), run("petite pause — je respire à peine ;")], { after: 50 }),
@@ -743,9 +767,9 @@ function lessonS58() {
     p("Je découpe la phrase en morceaux qui se lisent d'un seul souffle :"),
     p("« Quand une nouvelle maison s'élève au village, / on entend souvent : / c'est le charpentier / qui bâtit l'avenir ! »", { after: 80 }),
     sub("Le trio gagnant :"),
-    pr([run("fluidité ", { bold: true, color: C.BLUE }), run("+ "),
-        run("précision ", { bold: true, color: C.BLUE }), run("+ "),
-        run("expressivité ", { bold: true, color: C.BLUE }),
+    pr([run("fluidité ", { bold: true, color: C.SALMON }), run("+ "),
+        run("précision ", { bold: true, color: C.SALMON }), run("+ "),
+        run("expressivité ", { bold: true, color: C.SALMON }),
         run("= une lecture qui donne envie d'écouter !")]),
   ];
 }

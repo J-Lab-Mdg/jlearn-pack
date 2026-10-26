@@ -1,7 +1,7 @@
 // Français T5 — UNITÉ 1 — L'ENVIRONNEMENT (10 leçons + révision + test) — Séances 1 à 12 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1E8449"; // vert environnement
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -116,11 +116,13 @@ function ficheS1() {
        pAns("R.A. : 1. le village d'Anjà et sa forêt — 2. les feux de brousse, la déforestation — 3. l'aire protégée, le reboisement, les barrières de feux — 4. planter de nouveaux arbres.", ["reboisement"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(1, TOTAL, meta, rows, "s1");
+  return fiche(1, TOTAL, meta, rows, "s1", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS1() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 1", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER ET COMPRENDRE UN TEXTE DESCRIPTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     passageAnja(),
     p("", { after: 80 }),
@@ -130,7 +132,7 @@ function lessonS1() {
     p("• Je devine le sens des mots inconnus grâce au contexte et aux images."),
     p("• Je distingue l'information principale des informations secondaires."),
     p("• Je résume le texte en deux ou trois phrases, avec mes propres mots.", { after: 80 }),
-    sub("Mes premiers mots de l'unité :"),
+    sub("Vocabulaire — mes premiers mots de l'unité :"),
     mot("le reboisement", "planter de nouveaux arbres"),
     mot("une aire protégée", "une zone où la nature est protégée"),
     mot("les feux de brousse", "les feux qui brûlent les collines et les champs"),
@@ -180,11 +182,13 @@ function ficheS2() {
        pAns("R.A. : DANGER → feux de brousse, désertification, changement climatique ; PROTECTION → conservation, barrières de feux, préservation.", ["DANGER", "PROTECTION"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(2, TOTAL, meta, rows, "s2");
+  return fiche(2, TOTAL, meta, rows, "s2", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS2() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 2", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MOTS DE L'ENVIRONNEMENT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("La dégradation de l'environnement (les dangers) :"),
     mot("la pollution", "l'air, l'eau ou le sol sont salis"),
@@ -202,9 +206,13 @@ function lessonS2() {
     p("", { after: 60 }),
     sub("La fabrique des mots :"),
     pr([run("dé- ", { bold: true, color: C.RED }), run("= destruction, perte → "),
-        run("déforestation, désertification", { bold: true, color: C.BLUE })], { after: 40 }),
+        run("déforestation, désertification", { bold: true, color: C.SALMON })], { after: 40 }),
     pr([run("-tion ", { bold: true, color: C.RED }), run("= nom d'action → "),
-        run("pollution, préservation, conservation", { bold: true, color: C.BLUE })], { after: 40 }),
+        run("pollution, préservation, conservation", { bold: true, color: C.SALMON })], { after: 40 }),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« il y a beaucoup d'arbres »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« il y a beaucoup des arbres »" + ".")]),
   ];
 }
 
@@ -252,16 +260,18 @@ function ficheS3() {
        pAns("R.A. : 1. décrire un phénomène ou un lieu — 2. introduction, développement, conclusion — 3. ex. : « forêt humide » ; « à l'est d'Antananarivo ».", ["introduction, développement, conclusion"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(3, TOTAL, meta, rows, "s3");
+  return fiche(3, TOTAL, meta, rows, "s3", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS3() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 3", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LE TEXTE DESCRIPTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     texteAndasibe(),
     p("", { after: 80 }),
     sub("Le texte descriptif :"),
-    pr([run("But : ", { bold: true }), run("décrire un phénomène ou un lieu", { bold: true, color: C.BLUE }),
+    pr([run("But : ", { bold: true }), run("décrire un phénomène ou un lieu", { bold: true, color: C.SALMON }),
         run(" (une forêt, un parc, une ville, une plage…).")], { after: 50 }),
     pr([run("Caractéristiques : ", { bold: true }), run("des indications de lieu, des groupes nominaux avec compléments du nom, des adjectifs qualificatifs, des verbes d'état au présent ou à l'imparfait.")], { after: 50 }),
     pr([run("Structure : ", { bold: true })], { after: 30 }),
@@ -319,28 +329,30 @@ function ficheS4() {
        pAns("R.A. (exemple) : Premièrement, je traverse le village. Ensuite, je longe la rivière. Pour finir, j'arrive à l'école.", ["Premièrement", "Ensuite", "Pour finir"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(4, TOTAL, meta, rows, "s4");
+  return fiche(4, TOTAL, meta, rows, "s4", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS4() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 4", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MOTS DE TRANSITION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     p("Les mots de transition sont les panneaux indicateurs du texte : ils organisent les idées et montrent le chemin au lecteur.", { after: 80 }),
     sub("Pour ouvrir :"),
-    pr([run("d'abord, premièrement, pour commencer", { bold: true, color: C.BLUE })], { after: 60 }),
+    pr([run("d'abord, premièrement, pour commencer", { bold: true, color: C.SALMON })], { after: 60 }),
     sub("Pour continuer :"),
-    pr([run("ensuite, puis, de plus, après", { bold: true, color: C.BLUE })], { after: 60 }),
+    pr([run("ensuite, puis, de plus, après", { bold: true, color: C.SALMON })], { after: 60 }),
     sub("Pour fermer :"),
-    pr([run("enfin, finalement, pour conclure", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("enfin, finalement, pour conclure", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("La règle d'or :"),
     pr([run("Le mot de transition se place en tête de phrase et il est suivi d'une "),
         run("virgule", { bold: true, color: C.RED }), run(".")], { after: 60 }),
     pr([run("Exemple : ", { bold: true }),
-        run("D'abord,", { bold: true, color: C.BLUE }),
+        run("D'abord,", { bold: true, color: C.SALMON }),
         run(" on aperçoit les rizières. "),
-        run("Ensuite,", { bold: true, color: C.BLUE }),
+        run("Ensuite,", { bold: true, color: C.SALMON }),
         run(" la forêt commence. "),
-        run("Enfin,", { bold: true, color: C.BLUE }),
+        run("Enfin,", { bold: true, color: C.SALMON }),
         run(" on arrive au village.")]),
   ];
 }
@@ -389,17 +401,19 @@ function ficheS5() {
        pAns("R.A. : CC de lieu → Au sommet de la colline ; compléments du nom → de la forêt, du village.", ["Au sommet de la colline"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(5, TOTAL, meta, rows, "s5");
+  return fiche(5, TOTAL, meta, rows, "s5", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS5() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 5", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("PRÉCISER ET SITUER : COMPLÉMENT DU NOM ET CC DE LIEU", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("1. Le complément du nom — pour PRÉCISER :"),
     pr([run("nom + de / du / de la / des + nom", { bold: true, color: C.RED })], { after: 40 }),
-    pr([run("la forêt ", { size: SZ.BODY }), run("du village", { bold: true, color: C.BLUE }),
-        run("  •  le chant "), run("des oiseaux", { bold: true, color: C.BLUE }),
-        run("  •  les sentiers "), run("de terre brune", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("la forêt ", { size: SZ.BODY }), run("du village", { bold: true, color: C.SALMON }),
+        run("  •  le chant "), run("des oiseaux", { bold: true, color: C.SALMON }),
+        run("  •  les sentiers "), run("de terre brune", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("2. Le complément circonstanciel de lieu — pour SITUER :"),
     pr([run("Je pose la question : ", { size: SZ.BODY }), run("OÙ ?", { bold: true, color: C.RED })], { after: 40 }),
     mot("au pied de la montagne", "le village se trouve au pied de la montagne"),
@@ -457,18 +471,20 @@ function ficheS6() {
        pAns("R.A. (exemple) : De la fenêtre, j'aperçois les rizières. Autrefois, le marché se trouvait près de la rivière.", ["j'aperçois", "se trouvait"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(6, TOTAL, meta, rows, "s6");
+  return fiche(6, TOTAL, meta, rows, "s6", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS6() {
   const t = (title, rows) => new Table({
     width: { size: 10400, type: WidthType.DXA },
     rows: [
       new TableRow({ children: [cell([p([run(title, { bold: true, color: C.WHITE, size: SZ.FICHE })], { center: true, after: 20 })], { colSpan: 3, shade: COLOR })] }),
-      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.BLUE : C.BLACK })], { after: 20 })])) })),
+      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.SALMON : C.BLACK })], { after: 20 })])) })),
     ],
   });
   return [
     p([run("LEÇON DU JOUR — SÉANCE 6", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES VERBES DE LA DESCRIPTION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     p("Dans une description, le présent dit MAINTENANT ; l'imparfait dit AUTREFOIS.", { after: 80 }),
     t("VOIR — présent / imparfait", [
@@ -538,11 +554,13 @@ function ficheS7() {
       [fp("S'auto-évaluent avec la grille.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(7, TOTAL, meta, rows, "s7");
+  return fiche(7, TOTAL, meta, rows, "s7", "PRODUCTION ORALE", COLOR);
 }
 function lessonS7() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 7", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("DÉCRIRE UN LIEU À L'ORAL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le plan de mon exposé :"),
     p("1. Je présente le lieu — « Voici la colline de mon village. »"),
@@ -554,7 +572,7 @@ function lessonS7() {
     p("• la voix claire, les gestes, le regard vers le public ;"),
     p("• je peux poser des questions, demander une clarification, admettre mes erreurs, demander l'avis de mes camarades.", { after: 80 }),
     sub("Pour situer dans l'image :"),
-    pr([run("au premier plan — au second plan — au fond — à gauche — à droite — au centre — au sommet — au pied", { bold: true, color: C.BLUE })]),
+    pr([run("au premier plan — au second plan — au fond — à gauche — à droite — au centre — au sommet — au pied", { bold: true, color: C.SALMON })]),
   ];
 }
 
@@ -599,11 +617,13 @@ function ficheS8() {
       [fp("Cochent la liste de contrôle.")],
       "Auto-évaluation", "Liste de contrôle"),
   ];
-  return fiche(8, TOTAL, meta, rows, "s8");
+  return fiche(8, TOTAL, meta, rows, "s8", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS8() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 8", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCRIRE UN TEXTE DESCRIPTIF (1) : LE PLAN", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     pr([run("Sujet : ", { bold: true, color: C.RED }),
         run("Décris un lieu de ton village ou de ton quartier que tu veux protéger.", { italic: true })], { after: 80 }),
@@ -660,11 +680,13 @@ function ficheS9() {
       [fp("Rendent leur production.")],
       "Travail individuel", "----"),
   ];
-  return fiche(9, TOTAL, meta, rows, "s9");
+  return fiche(9, TOTAL, meta, rows, "s9", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS9() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 9", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCRIRE UN TEXTE DESCRIPTIF (2) : RÉDIGER ET AMÉLIORER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Les étapes de l'écrivain :"),
     p("1. Je suis mon plan : une partie = un paragraphe."),
@@ -723,11 +745,13 @@ function ficheS10() {
        pAns("R.A. : point → grande pause ; virgule → petite pause ; point-virgule → pause moyenne ; deux points → annonce ; point d'interrogation → question ; point d'exclamation → émotion.", ["grande pause", "petite pause"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(10, TOTAL, meta, rows, "s10");
+  return fiche(10, TOTAL, meta, rows, "s10", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS10() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 10", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE À HAUTE VOIX : LA PONCTUATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les signes de ponctuation et leur rôle :"),
     mot("le point  .", "grande pause — la voix descend"),
@@ -751,8 +775,8 @@ function bigLesson() {
     unitBanner("LEÇON — UNITÉ 1 : L'ENVIRONNEMENT (récapitulatif)", COLOR),
     p("", { after: 80 }),
     sub("1. Les mots de l'unité :"),
-    pr([run("Dangers : ", { bold: true }), run("la pollution, la déforestation, la désertification, les feux de brousse, le changement climatique.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Remèdes : ", { bold: true }), run("le reboisement, la préservation, la conservation, les aires protégées, les barrières de feux.", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("Dangers : ", { bold: true }), run("la pollution, la déforestation, la désertification, les feux de brousse, le changement climatique.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Remèdes : ", { bold: true }), run("le reboisement, la préservation, la conservation, les aires protégées, les barrières de feux.", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("2. Le texte descriptif :"),
     p("But : décrire un lieu. Structure : introduction → développement → conclusion. Caractéristiques : indications de lieu, compléments du nom, adjectifs qualificatifs, verbes d'état au présent ou à l'imparfait.", { after: 80 }),
     sub("3. Les mots de transition :"),

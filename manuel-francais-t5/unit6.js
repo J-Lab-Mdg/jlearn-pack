@@ -1,7 +1,7 @@
 // Français T5 — UNITÉ 6 — LES CONTES ET LÉGENDES (10 leçons + révision + test) — Séances 61 à 72 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "AD1457"; // rose foncé contes
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -120,11 +120,13 @@ function ficheS61() {
        pAns("R.A. : 1. imaginaire — il y a une sorcière et un sortilège — 2. le lac devient noir, plus de poissons — 3. parce que le lac nourrit le village : c'est aussi sa responsabilité — 4. qui fait le mal.", ["imaginaire", "responsabilité"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(61, TOTAL, meta, rows, "s61");
+  return fiche(61, TOTAL, meta, rows, "s61", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS61() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 61", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("J'ÉCOUTE UN CONTE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Le conte :"),
     p("• une histoire IMAGINAIRE (fictive) : elle n'est pas vraiment arrivée ;"),
@@ -132,11 +134,11 @@ function lessonS61() {
     p("• il commence par une formule : « Il était une fois… » ;"),
     p("• il se transmet de bouche à oreille, le soir, depuis toujours.", { after: 80 }),
     sub("Pour comprendre un conte, je cherche :"),
-    pr([run("QUI ? ", { bold: true, color: C.BLUE }), run("personnages principaux et secondaires — "),
-        run("OÙ ? QUAND ? ", { bold: true, color: C.BLUE }), run("le lieu et le temps — "),
-        run("QUEL PROBLÈME ? ", { bold: true, color: C.BLUE }), run("— "),
-        run("QUEL DÉNOUEMENT ? ", { bold: true, color: C.BLUE }), run("(la solution)")], { after: 80 }),
-    sub("Mots nouveaux :"),
+    pr([run("QUI ? ", { bold: true, color: C.SALMON }), run("personnages principaux et secondaires — "),
+        run("OÙ ? QUAND ? ", { bold: true, color: C.SALMON }), run("le lieu et le temps — "),
+        run("QUEL PROBLÈME ? ", { bold: true, color: C.SALMON }), run("— "),
+        run("QUEL DÉNOUEMENT ? ", { bold: true, color: C.SALMON }), run("(la solution)")], { after: 80 }),
+    sub("Vocabulaire — mots nouveaux :"),
     mot("maléfique", "qui fait le mal. La sorcière maléfique !"),
     mot("un sortilège", "un mauvais sort jeté par la magie."),
     mot("le dénouement", "le moment où le problème se dénoue, se résout."),
@@ -194,11 +196,13 @@ function ficheS62() {
        pAns("R.A. : 1. il était une fois ; dans un pays lointain — 2. soudain, tout à coup — 3. ils vécurent heureux et eurent beaucoup d'enfants — 4. ex. : le génie / la sorcière.", ["il était une fois", "soudain", "tout à coup"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(62, TOTAL, meta, rows, "s62");
+  return fiche(62, TOTAL, meta, rows, "s62", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS62() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 62", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LA BOÎTE À OUTILS DU CONTEUR", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Tiroir 1 — Les formules d'ouverture :"),
     p("Il était une fois… • Il y a très longtemps… • Dans un pays lointain…", { after: 80 }),
@@ -214,6 +218,10 @@ function lessonS62() {
     mot("les héros", "le héros, l'héroïne — courageux et responsables, comme Soafara !"),
     mot("les maléfiques", "la sorcière (la sorcellerie, les sortilèges !)."),
     mot("les créatures", "le géant, le génie — parfois bons, parfois terribles."),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« raconter un conte », « raconter une histoire »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« dire un conte »" + ".")]),
   ];
 }
 
@@ -266,27 +274,29 @@ function ficheS63() {
        pAns("R.A. : 1. la légende explique un lieu ou un fait réel avec du merveilleux — 2. situation initiale, élément perturbateur, péripéties, résolution, situation finale — 3. la tempête — 4. les lacs de la région.", ["situation initiale", "élément perturbateur", "péripéties"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(63, TOTAL, meta, rows, "s63");
+  return fiche(63, TOTAL, meta, rows, "s63", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS63() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 63", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LE SCHÉMA NARRATIF — LE SQUELETTE DES CONTES", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Tous les contes et légendes suivent cinq étapes :"),
-    pr([run("1. LA SITUATION INITIALE ", { bold: true, color: C.BLUE }),
+    pr([run("1. LA SITUATION INITIALE ", { bold: true, color: C.SALMON }),
         run("— tout va bien, on présente le héros. (« Il était une fois… », à l'imparfait)")], { after: 50 }),
     pr([run("2. L'ÉLÉMENT PERTURBATEUR ", { bold: true, color: C.RED }),
         run("— un problème éclate ! (« Un jour… », « Soudain… »)")], { after: 50 }),
-    pr([run("3. LES PÉRIPÉTIES ", { bold: true, color: C.BLUE }),
+    pr([run("3. LES PÉRIPÉTIES ", { bold: true, color: C.SALMON }),
         run("— les aventures et les épreuves du héros.")], { after: 50 }),
     pr([run("4. LA RÉSOLUTION ", { bold: true, color: C.GREEN }),
         run("— le problème est réglé. (« Heureusement… »)")], { after: 50 }),
-    pr([run("5. LA SITUATION FINALE ", { bold: true, color: C.BLUE }),
+    pr([run("5. LA SITUATION FINALE ", { bold: true, color: C.SALMON }),
         run("— une nouvelle vie commence. (« Depuis ce jour… », « Ils vécurent heureux… »)")], { after: 80 }),
     sub("Conte ou légende ?"),
     p("• le CONTE : tout est imaginaire, n'importe où, n'importe quand ;"),
     p("• la LÉGENDE : elle part d'un lieu ou d'un fait réel (nos collines, un lac…) et l'explique avec du merveilleux.", { after: 80 }),
-    sub("Mots nouveaux :"),
+    sub("Vocabulaire — mots nouveaux :"),
     mot("bienfaiteur", "celui qui fait le bien (bien + faire)."),
     mot("une péripétie", "une aventure, un rebondissement du récit."),
     mot("un récif", "un rocher à fleur d'eau, dangereux pour les pirogues."),
@@ -341,21 +351,23 @@ function ficheS64() {
        pAns("R.A. : 1. Le roi l'appelle. — 2. Les enfants l'écoutent. — 3. les villageois — 4. pronom (il est devant le verbe !).", ["l'appelle", "l'écoutent", "pronom"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(64, TOTAL, meta, rows, "s64");
+  return fiche(64, TOTAL, meta, rows, "s64", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS64() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 64", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES PRONOMS PERSONNELS COD", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("À quoi servent-ils ?"),
     p("À remplacer un groupe nominal COD pour éviter les répétitions :"),
     pr([run("« Darafify voit les pirogues : il "), run("les", { bold: true, color: C.RED }),
         run(" soulève. » (les = les pirogues)")], { after: 80 }),
     sub("Le tableau des pronoms COD :"),
-    pr([run("LE ", { bold: true, color: C.BLUE }), run("masculin singulier — « Le sortilège ? Elle le jette. »")], { after: 50 }),
-    pr([run("LA ", { bold: true, color: C.BLUE }), run("féminin singulier — « La légende ? Soa la raconte. »")], { after: 50 }),
-    pr([run("L' ", { bold: true, color: C.BLUE }), run("devant une voyelle — « Le conte ? Je l'adore ! »")], { after: 50 }),
-    pr([run("LES ", { bold: true, color: C.BLUE }), run("pluriel — « Les pirogues ? Il les sauve. »")], { after: 50 }),
+    pr([run("LE ", { bold: true, color: C.SALMON }), run("masculin singulier — « Le sortilège ? Elle le jette. »")], { after: 50 }),
+    pr([run("LA ", { bold: true, color: C.SALMON }), run("féminin singulier — « La légende ? Soa la raconte. »")], { after: 50 }),
+    pr([run("L' ", { bold: true, color: C.SALMON }), run("devant une voyelle — « Le conte ? Je l'adore ! »")], { after: 50 }),
+    pr([run("LES ", { bold: true, color: C.SALMON }), run("pluriel — « Les pirogues ? Il les sauve. »")], { after: 50 }),
     p("Et aussi : me, te, nous, vous — « Le génie nous protège. »", { after: 80 }),
     sub("Ma méthode en trois pas :"),
     p("1. Je trouve le COD : je demande « qui ? quoi ? » après le verbe."),
@@ -414,11 +426,13 @@ function ficheS65() {
        pAns("R.A. : 1. habitaient — 2. finissais — 3. raconterons — 4. se réunissait.", ["habitaient", "finissais", "raconterons", "se réunissait"], { size: SZ.FICHE })],
       "Travail individuel", "Cahiers"),
   ];
-  return fiche(65, TOTAL, meta, rows, "s65");
+  return fiche(65, TOTAL, meta, rows, "s65", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS65() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 65", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("L'IMPARFAIT, LE FUTUR ET LES VERBES PRONOMINAUX", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("L'imparfait — le temps du décor du conte :"),
     p("terminaisons : -ais, -ais, -ait, -ions, -iez, -aient."),
@@ -484,18 +498,20 @@ function ficheS66() {
        pAns("R.A. : 1. partie — 2. arrivés — 3. lancée — 4. de beaux châteaux bleus.", ["partie", "arrivés", "lancée", "beaux châteaux bleus"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(66, TOTAL, meta, rows, "s66");
+  return fiche(66, TOTAL, meta, rows, "s66", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS66() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 66", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LE PASSÉ COMPOSÉ ET SES ACCORDS", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Le passé composé = être ou avoir (au présent) + participe passé :"),
     p("il a lancé, elle est rentrée, ils se sont réunis — le temps des ACTIONS du conte.", { after: 80 }),
     sub("Les trois règles d'or de l'accord :"),
     pr([run("1. Avec ÊTRE ", { bold: true, color: C.GREEN }),
         run("(et les verbes pronominaux) → accord avec le sujet : elle est rentréE, ils sont partiS, la sorcière s'est enfuiE.")], { after: 50 }),
-    pr([run("2. Avec AVOIR ", { bold: true, color: C.BLUE }),
+    pr([run("2. Avec AVOIR ", { bold: true, color: C.SALMON }),
         run("→ pas d'accord : elle a lancé la fleur.")], { after: 50 }),
     pr([run("3. MAIS ", { bold: true, color: C.RED }),
         run("si le COD est placé AVANT le verbe → accord avec ce COD : « La fleur ? Elle L'a lancéE. » « Les pirogues ? Il LES a sauvéES. »")], { after: 80 }),
@@ -551,20 +567,22 @@ function ficheS67() {
       [fp("S'auto-évaluent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(67, TOTAL, meta, rows, "s67");
+  return fiche(67, TOTAL, meta, rows, "s67", "PRODUCTION ORALE", COLOR);
 }
 function lessonS67() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 67", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("DEVENIR CONTEUR : LA VOIX, LES GESTES, LE VISAGE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Les quatre secrets du conteur :"),
-    pr([run("1. LA VOIX ", { bold: true, color: C.BLUE }),
+    pr([run("1. LA VOIX ", { bold: true, color: C.SALMON }),
         run("— grosse voix du géant, voix pointue de la sorcière, chuchotement du mystère…")], { after: 50 }),
-    pr([run("2. LE DÉBIT ", { bold: true, color: C.BLUE }),
+    pr([run("2. LE DÉBIT ", { bold: true, color: C.SALMON }),
         run("— lent pour le suspense, rapide pour la poursuite !")], { after: 50 }),
-    pr([run("3. LES GESTES ", { bold: true, color: C.BLUE }),
+    pr([run("3. LES GESTES ", { bold: true, color: C.SALMON }),
         run("— je montre la montagne, je mime le géant qui soulève les pirogues.")], { after: 50 }),
-    pr([run("4. LE VISAGE ", { bold: true, color: C.BLUE }),
+    pr([run("4. LE VISAGE ", { bold: true, color: C.SALMON }),
         run("— mes yeux s'agrandissent de peur, mon sourire annonce la fin heureuse.")], { after: 80 }),
     sub("Mon plan de conteur — cinq mots-clés, pas de par cœur :"),
     p("situation initiale → élément perturbateur → péripéties → résolution → situation finale."),
@@ -615,11 +633,13 @@ function ficheS68() {
       [fp("Cochent.")],
       "Auto-évaluation", "Liste de contrôle"),
   ];
-  return fiche(68, TOTAL, meta, rows, "s68");
+  return fiche(68, TOTAL, meta, rows, "s68", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS68() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 68", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MON CONTE (1) : INVENTER ET ORGANISER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     pr([run("Sujet : ", { bold: true, color: C.RED }),
         run("Invente un conte ou une légende de 15 à 20 lignes, en respectant le schéma narratif.", { italic: true })], { after: 80 }),
@@ -679,11 +699,13 @@ function ficheS69() {
       [fp("Rendent leur production.")],
       "Travail individuel", "----"),
   ];
-  return fiche(69, TOTAL, meta, rows, "s69");
+  return fiche(69, TOTAL, meta, rows, "s69", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS69() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 69", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MON CONTE (2) : RÉDIGER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("La recette du conte réussi :"),
     p("• J'ouvre avec la formule : « Il était une fois… » — et le décor à l'IMPARFAIT."),
@@ -742,11 +764,13 @@ function ficheS70() {
       [fp("S'auto-évaluent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(70, TOTAL, meta, rows, "s70");
+  return fiche(70, TOTAL, meta, rows, "s70", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS70() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 70", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LE THÉÂTRE DES LECTEURS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Le principe :"),
     p("• En petit groupe, on se partage un passage : un NARRATEUR + les PERSONNAGES."),
@@ -757,9 +781,9 @@ function lessonS70() {
     p("• j'entoure les ? (la voix monte) et les ! (la voix s'exclame) ;"),
     p("• je choisis MA voix : grosse voix du géant, ricanement de la sorcière…", { after: 80 }),
     sub("Le trio gagnant, une dernière fois :"),
-    pr([run("fluidité ", { bold: true, color: C.BLUE }), run("+ "),
-        run("précision ", { bold: true, color: C.BLUE }), run("+ "),
-        run("expressivité ", { bold: true, color: C.BLUE }),
+    pr([run("fluidité ", { bold: true, color: C.SALMON }), run("+ "),
+        run("précision ", { bold: true, color: C.SALMON }), run("+ "),
+        run("expressivité ", { bold: true, color: C.SALMON }),
         run("— toutes les techniques de l'année : la ponctuation, l'écho, le chœur, et maintenant le théâtre !")]),
   ];
 }

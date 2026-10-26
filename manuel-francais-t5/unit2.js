@@ -1,7 +1,7 @@
 // Français T5 — UNITÉ 2 — LE VOYAGE (10 leçons + révision + test) — Séances 13 à 24 / 72
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
-        unitBanner, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
+        unitBanner, discBadge, img, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "1F618D"; // bleu voyage
@@ -16,7 +16,7 @@ const bullet = (runs, o = {}) => pr(
   [run("•  ", { bold: true, color: COLOR, size: SZ.BODY }), ...runs],
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
-  run(word, { bold: true, color: C.BLUE }), ...(expl ? [run("  —  " + expl)] : [])]);
+  run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -116,18 +116,20 @@ function ficheS13() {
        pAns("R.A. : 1. Morondava — 2. l'allée des baobabs, la plage — 3. l'autocar, l'avion — 4. garder sa place à l'avance.", ["Morondava", "baobabs"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(13, TOTAL, meta, rows, "s13");
+  return fiche(13, TOTAL, meta, rows, "s13", "COMPRÉHENSION ORALE", COLOR);
 }
 function lessonS13() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 13", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("ÉCOUTER UNE BROCHURE DE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     brochureMorondava(),
     p("", { after: 80 }),
     sub("La brochure de voyage :"),
     p("• C'est un document qui présente une destination pour donner envie de la visiter."),
     p("• J'y cherche les informations essentielles : le lieu, les paysages, les moyens d'accès, les activités, les curiosités, les services.", { after: 80 }),
-    sub("Mes premiers mots du voyage :"),
+    sub("Vocabulaire — mes premiers mots du voyage :"),
     mot("la gare routière", "l'endroit d'où partent les autocars"),
     mot("la réservation", "garder sa place à l'avance"),
     mot("le billet", "le papier qui prouve que j'ai payé ma place"),
@@ -178,17 +180,19 @@ function ficheS14() {
        pAns("R.A. : RURAL → charrette, motoculteur ; URBAIN → tuk-tuk, cyclopousse ; PRÉPARATION → réservation, billet.", ["RURAL", "URBAIN"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(14, TOTAL, meta, rows, "s14");
+  return fiche(14, TOTAL, meta, rows, "s14", "VOCABULAIRE (LEXIQUE)", COLOR);
 }
 function lessonS14() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 14", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES MOTS DU VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les moyens de transport à Madagascar :"),
     pr([run("À la campagne (rural) : ", { bold: true }),
-        run("la charrette, la pirogue, le motoculteur", { bold: true, color: C.BLUE })], { after: 40 }),
+        run("la charrette, la pirogue, le motoculteur", { bold: true, color: C.SALMON })], { after: 40 }),
     pr([run("En ville (urbain) : ", { bold: true }),
-        run("le cyclopousse, le taxi, le bus, la moto-taxi, le taxi-be, le tuk-tuk, l'autocar", { bold: true, color: C.BLUE })], { after: 80 }),
+        run("le cyclopousse, le taxi, le bus, la moto-taxi, le taxi-be, le tuk-tuk, l'autocar", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("Les établissements du voyage :"),
     mot("la gare routière", "les autocars partent d'ici"),
     mot("le port", "les bateaux et les pirogues"),
@@ -199,9 +203,13 @@ function lessonS14() {
     mot("les sites touristiques", "les endroits à visiter"),
     p("", { after: 60 }),
     sub("La préparation du voyage :"),
-    pr([run("la réservation, le billet, le budget, les frais de transport, les accessoires de voyage", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("la réservation, le billet, le budget, les frais de transport, les accessoires de voyage", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("Le champ lexical :"),
     p("Tous ces mots appartiennent au même grand thème : c'est le champ lexical du voyage. Un champ lexical = une famille de mots autour d'un même thème."),
+    p("", { after: 60 }),
+    sub("Vocabulaire — on dit… / à éviter… :"),
+    pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« voyager en avion, en taxi-brousse »" + ".")], { after: 40 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« voyager avec l'avion »" + ".")]),
   ];
 }
 
@@ -246,11 +254,13 @@ function ficheS15() {
        pAns("R.A. : 1. en avion ou en bateau — 2. plages de sable blanc, collines d'ylang-ylang — 3. excursions, hôtels — 4. magnifiques (ou turquoise, parfumées…).", ["en avion ou en bateau"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(15, TOTAL, meta, rows, "s15");
+  return fiche(15, TOTAL, meta, rows, "s15", "COMPRÉHENSION ÉCRITE", COLOR);
 }
 function lessonS15() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 15", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE UNE BROCHURE : LES CHAMPS LEXICAUX", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     brochureNosyBe(),
     p("", { after: 80 }),
@@ -312,11 +322,13 @@ function ficheS16() {
        pAns("R.A. (exemple) : Mon école se trouve près de l'église. Le marché est à côté de la gare routière. La rivière coule loin du village.", ["près de", "à côté de", "loin du"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(16, TOTAL, meta, rows, "s16");
+  return fiche(16, TOTAL, meta, rows, "s16", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS16() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 16", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES PRÉPOSITIONS DE LIEU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     p("Les prépositions de lieu placent les personnes et les choses dans l'espace.", { after: 80 }),
     sub("Les six prépositions à connaître :"),
@@ -330,8 +342,8 @@ function lessonS16() {
     sub("La machine à CC de lieu :"),
     pr([run("préposition + nom = CC de lieu", { bold: true, color: C.RED }),
         run("  (il répond à la question OÙ ?)")], { after: 50 }),
-    pr([run("Exemple : ", { bold: true }), run("Dans la réserve,", { bold: true, color: C.BLUE }),
-        run(" on aperçoit des lémuriens "), run("près des arbres", { bold: true, color: C.BLUE }), run(".")], { after: 80 }),
+    pr([run("Exemple : ", { bold: true }), run("Dans la réserve,", { bold: true, color: C.SALMON }),
+        run(" on aperçoit des lémuriens "), run("près des arbres", { bold: true, color: C.SALMON }), run(".")], { after: 80 }),
     sub("Attention aux contractions !"),
     pr([run("de + le = du ", { bold: true, color: C.RED }), run("→ à côté du port   •   "),
         run("de + les = des ", { bold: true, color: C.RED }), run("→ près des plages")]),
@@ -382,18 +394,20 @@ function ficheS17() {
        pAns("R.A. (exemple) : Les visiteurs émerveillés admirent les paysages splendides de l'île. — des monuments nationaux.", ["splendides", "nationaux"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(17, TOTAL, meta, rows, "s17");
+  return fiche(17, TOTAL, meta, rows, "s17", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS17() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 17", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("LES ADJECTIFS QUALIFICATIFS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("L'adjectif : l'habit du nom"),
     p("L'adjectif qualificatif dit comment est la personne ou la chose. Il s'accorde avec le nom :", { after: 40 }),
-    pr([run("une plage ", { size: SZ.BODY }), run("magnifique", { bold: true, color: C.BLUE }),
-        run("  →  des plages "), run("magnifiques", { bold: true, color: C.BLUE })], { after: 80 }),
-    sub("Ma banque d'adjectifs du voyage :"),
-    pr([run("magnifique, splendide, calme, turquoise, accueillant, pittoresque, confortable, majestueux, parfumé", { bold: true, color: C.BLUE })], { after: 80 }),
+    pr([run("une plage ", { size: SZ.BODY }), run("magnifique", { bold: true, color: C.SALMON }),
+        run("  →  des plages "), run("magnifiques", { bold: true, color: C.SALMON })], { after: 80 }),
+    sub("Vocabulaire — ma banque d'adjectifs du voyage :"),
+    pr([run("magnifique, splendide, calme, turquoise, accueillant, pittoresque, confortable, majestueux, parfumé", { bold: true, color: C.SALMON })], { after: 80 }),
     sub("Le piège du pluriel : -al → -AUX"),
     mot("royal → royaux", "des spectacles royaux"),
     mot("principal → principaux", "les hôtels principaux"),
@@ -401,7 +415,7 @@ function lessonS17() {
     mot("original → originaux", "des circuits originaux"),
     p("", { after: 60 }),
     pr([run("Mais au féminin, pas de piège : ", { bold: true }),
-        run("des avenues royales, des routes principales, des fêtes originales", { bold: true, color: C.BLUE }), run(".")]),
+        run("des avenues royales, des routes principales, des fêtes originales", { bold: true, color: C.SALMON }), run(".")]),
   ];
 }
 
@@ -449,18 +463,20 @@ function ficheS18() {
        pAns("R.A. (exemple) : J'irais à Morondava avec ma famille. Nous prendrions des photos sous les baobabs.", ["J'irais", "prendrions"], { size: SZ.FICHE })],
       "Travail individuel", "----"),
   ];
-  return fiche(18, TOTAL, meta, rows, "s18");
+  return fiche(18, TOTAL, meta, rows, "s18", "GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR);
 }
 function lessonS18() {
   const t = (title, rows) => new Table({
     width: { size: 10400, type: WidthType.DXA },
     rows: [
       new TableRow({ children: [cell([p([run(title, { bold: true, color: C.WHITE, size: SZ.FICHE })], { center: true, after: 20 })], { colSpan: 3, shade: COLOR })] }),
-      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.BLUE : C.BLACK })], { after: 20 })])) })),
+      ...rows.map(r => new TableRow({ children: r.map((x, i) => cell([p([run(x, { size: SZ.FICHE, bold: i === 0, color: i === 0 ? C.SALMON : C.BLACK })], { after: 20 })])) })),
     ],
   });
   return [
     p([run("LEÇON DU JOUR — SÉANCE 18", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    p("", { after: 40 }),
     p([run("CINQ VERBES IRRÉGULIERS DU VOYAGE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     p("Le présent dit ce qui se passe ; le conditionnel dit le rêve, le souhait, la politesse.", { after: 80 }),
     t("ALLER — présent / conditionnel", [
@@ -481,9 +497,9 @@ function lessonS18() {
     p("", { after: 60 }),
     sub("Le repère du conditionnel :"),
     pr([run("toujours un R avant la terminaison : ", { size: SZ.BODY }),
-        run("j'irais, je ferais, je viendrais, je prendrais, je mettrais", { bold: true, color: C.BLUE })], { after: 50 }),
+        run("j'irais, je ferais, je viendrais, je prendrais, je mettrais", { bold: true, color: C.SALMON })], { after: 50 }),
     pr([run("La politesse du voyageur : ", { bold: true }),
-        run("« Je voudrais un billet pour Morondava, s'il vous plaît ! »", { italic: true, color: C.BLUE })]),
+        run("« Je voudrais un billet pour Morondava, s'il vous plaît ! »", { italic: true, color: C.SALMON })]),
   ];
 }
 
@@ -529,11 +545,13 @@ function ficheS19() {
       [fp("S'auto-évaluent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(19, TOTAL, meta, rows, "s19");
+  return fiche(19, TOTAL, meta, rows, "s19", "PRODUCTION ORALE", COLOR);
 }
 function lessonS19() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 19", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ORALE", COLOR),
+    p("", { after: 40 }),
     p([run("DÉCRIRE ET COMPARER DES DESTINATIONS", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Le plan du guide touristique :"),
     p("1. Destination A — paysages, transports, activités."),
@@ -545,7 +563,7 @@ function lessonS19() {
     p("• les prépositions pour situer : près de, à côté de, dans, sur ;"),
     p("• les mots de transition : d'abord, ensuite, enfin.", { after: 80 }),
     sub("La phrase magique du rêveur :"),
-    pr([run("« Si je pouvais choisir, j'irais à … , je prendrais … , je ferais … ! »", { italic: true, bold: true, color: C.BLUE })]),
+    pr([run("« Si je pouvais choisir, j'irais à … , je prendrais … , je ferais … ! »", { italic: true, bold: true, color: C.SALMON })]),
   ];
 }
 
@@ -590,11 +608,13 @@ function ficheS20() {
       [fp("Cochent.")],
       "Auto-évaluation", "Liste de contrôle"),
   ];
-  return fiche(20, TOTAL, meta, rows, "s20");
+  return fiche(20, TOTAL, meta, rows, "s20", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS20() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 20", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MA BROCHURE DE VOYAGE (1) : LE PLAN", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     pr([run("Sujet : ", { bold: true, color: C.RED }),
         run("Décris une destination de voyage, réelle ou imaginaire, pour donner envie de la visiter.", { italic: true })], { after: 80 }),
@@ -651,11 +671,13 @@ function ficheS21() {
       [fp("Rendent leur brochure.")],
       "Travail individuel", "----"),
   ];
-  return fiche(21, TOTAL, meta, rows, "s21");
+  return fiche(21, TOTAL, meta, rows, "s21", "PRODUCTION ÉCRITE", COLOR);
 }
 function lessonS21() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 21", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("PRODUCTION ÉCRITE", COLOR),
+    p("", { after: 40 }),
     p([run("MA BROCHURE DE VOYAGE (2) : RÉDIGER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     sub("Les phrases qui brillent :"),
     p("• l'ouverture : « Bienvenue à …, la perle de … ! »"),
@@ -712,11 +734,13 @@ function ficheS22() {
       [fp("Cochent.")],
       "Auto-évaluation", "Grille"),
   ];
-  return fiche(22, TOTAL, meta, rows, "s22");
+  return fiche(22, TOTAL, meta, rows, "s22", "LECTURE (LECTURE-FLUIDITÉ)", COLOR);
 }
 function lessonS22() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 22", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
+    discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    p("", { after: 40 }),
     p([run("LIRE COMME UN GUIDE TOURISTIQUE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("Les quatre secrets de la lecture expressive :"),
     mot("les pauses", "petit arrêt à la virgule, grand arrêt au point"),
@@ -729,7 +753,7 @@ function lessonS22() {
         run("// ", { bold: true, color: C.RED }), run("= grande pause (point)   "),
         run("↗ ", { bold: true, color: C.RED }), run("= la voix monte")], { after: 80 }),
     pr([run("Exemple : ", { bold: true }),
-        run("« Au nord-ouest de Madagascar / se trouve Nosy Be, / la plus célèbre des îles malgaches. // »", { italic: true, color: C.BLUE })]),
+        run("« Au nord-ouest de Madagascar / se trouve Nosy Be, / la plus célèbre des îles malgaches. // »", { italic: true, color: C.SALMON })]),
   ];
 }
 
@@ -739,11 +763,11 @@ function bigLesson() {
     unitBanner("LEÇON — UNITÉ 2 : LE VOYAGE (récapitulatif)", COLOR),
     p("", { after: 80 }),
     sub("1. Les mots du voyage :"),
-    pr([run("Transports ruraux : ", { bold: true }), run("charrette, pirogue, motoculteur", { bold: true, color: C.BLUE }),
-        run(" — urbains : ", { bold: true }), run("cyclopousse, taxi, bus, moto-taxi, taxi-be, tuk-tuk, autocar.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Établissements : ", { bold: true }), run("gare routière, port, aéroport, hôtel, restaurant, agence de voyage, sites touristiques.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Préparation : ", { bold: true }), run("réservation, billet, budget, frais de transport, accessoires.", { bold: true, color: C.BLUE })], { after: 40 }),
-    pr([run("Paysage : ", { bold: true }), run("montagne, colline, rizières, vallées, plage, forêt.", { bold: true, color: C.BLUE })], { after: 40 }),
+    pr([run("Transports ruraux : ", { bold: true }), run("charrette, pirogue, motoculteur", { bold: true, color: C.SALMON }),
+        run(" — urbains : ", { bold: true }), run("cyclopousse, taxi, bus, moto-taxi, taxi-be, tuk-tuk, autocar.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Établissements : ", { bold: true }), run("gare routière, port, aéroport, hôtel, restaurant, agence de voyage, sites touristiques.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Préparation : ", { bold: true }), run("réservation, billet, budget, frais de transport, accessoires.", { bold: true, color: C.SALMON })], { after: 40 }),
+    pr([run("Paysage : ", { bold: true }), run("montagne, colline, rizières, vallées, plage, forêt.", { bold: true, color: C.SALMON })], { after: 40 }),
     p("Un champ lexical = une famille de mots autour d'un même thème.", { after: 80 }),
     sub("2. Les prépositions de lieu :"),
     p("dans, sur, sous, à côté de, près de, loin de — préposition + nom = CC de lieu (où ?). Contractions : de + le = du ; de + les = des.", { after: 80 }),

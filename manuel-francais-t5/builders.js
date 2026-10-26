@@ -5,12 +5,15 @@ const {
   Paragraph, TextRun, Table, TableRow, TableCell, WidthType, BorderStyle,
   AlignmentType, VerticalMergeType, ImageRun, PageBreak, ShadingType,
   VerticalAlign, Bookmark, InternalHyperlink,
+  HorizontalPositionRelativeFrom, HorizontalPositionAlign,
+  VerticalPositionRelativeFrom, TextWrappingType, TextWrappingSide,
 } = require("docx");
 
 // couleurs
 const C = {
   RED: "C00000", GREEN: "1E7B34", BLUE: "1F4E79", PINK: "C2185B",
   GRAY: "666666", BLACK: "000000", WHITE: "FFFFFF",
+  SALMON: "E8604C",
   HDR1: "DDEEFF", HDR2: "F5F5F5", SECT: "EAEAEA",
 };
 // tailles (demi-points)
@@ -21,6 +24,7 @@ const IMG_DIR = path.join(__dirname, "img");
 const run = (text, o = {}) => new TextRun({
   text, bold: !!o.bold, italics: !!o.italic, color: o.color || C.BLACK,
   size: o.size || SZ.BODY, font: FONT,
+  ...(o.hl ? { highlight: "yellow" } : {}),
 });
 const p = (text, o = {}) => new Paragraph({
   alignment: o.center ? AlignmentType.CENTER : AlignmentType.LEFT,
@@ -73,6 +77,20 @@ const img = (file, width, ratio) => new Paragraph({
   children: [new ImageRun({
     data: fs.readFileSync(path.join(IMG_DIR, file)), type: "png",
     transformation: { width, height: Math.round(width * ratio) },
+  })],
+});
+// image flottante à droite, le texte s'enroule autour (mise en page moderne)
+const imgFloat = (file, width, ratio) => new Paragraph({
+  spacing: { after: 0 },
+  children: [new ImageRun({
+    data: fs.readFileSync(path.join(IMG_DIR, file)), type: "png",
+    transformation: { width, height: Math.round(width * ratio) },
+    floating: {
+      horizontalPosition: { relative: HorizontalPositionRelativeFrom.MARGIN, align: HorizontalPositionAlign.RIGHT },
+      verticalPosition: { relative: VerticalPositionRelativeFrom.PARAGRAPH, offset: 0 },
+      wrap: { type: TextWrappingType.SQUARE, side: TextWrappingSide.LEFT },
+      margins: { left: 114300, bottom: 114300 },
+    },
   })],
 });
 const pageBreak = () => new Paragraph({ children: [new PageBreak()] });
@@ -180,9 +198,19 @@ const deroulement = (rows) => new Table({
   rows: [...headerRows(), ...rows],
 });
 // fiche complète : meta + rows + en-tête de séance avec bookmark
-function fiche(globalNo, totalSessions, meta, rows, bookmarkId) {
+// badge de sous-discipline (fond couleur d'unité)
+const discBadge = (label, color) => new Table({
+  width: { size: 10400, type: WidthType.DXA }, borders: noBorders(),
+  rows: [new TableRow({ children: [
+    cell([p([run(label, { bold: true, color: C.WHITE, size: 24 })], { center: true, after: 20 })],
+      { shade: color, vAlign: VerticalAlign.CENTER }),
+  ]})],
+});
+
+function fiche(globalNo, totalSessions, meta, rows, bookmarkId, disc, discColor) {
   return [
     bookmarkTitle(bookmarkId, `SÉANCE ${globalNo} / ${totalSessions}`, { bold: true, size: 28, after: 60 }),
+    ...(disc ? [discBadge(disc, discColor), p("", { after: 60 })] : []),
     p([run(meta.title, { bold: true, size: 26 })], { center: true, after: 140 }),
     p([run("FICHE DE PRÉPARATION", { bold: true, size: 30 })], { center: true, after: 160 }),
     metaTable(meta), p("", { after: 100 }), deroulement(rows),
@@ -208,7 +236,7 @@ function iCan(unitLabel, color, items, nextText) {
 }
 
 module.exports = {
-  C, SZ, FONT, run, p, pr, kw, pAns, noBorders, cell, img, pageBreak,
-  bookmarkTitle, tocLink, unitBanner, audioBox, fp, metaTable, headerRows,
+  C, SZ, FONT, run, p, pr, kw, pAns, noBorders, cell, img, imgFloat, pageBreak,
+  bookmarkTitle, tocLink, unitBanner, audioBox, fp, metaTable, headerRows, discBadge,
   sectionRow, stepRow, deroulement, fiche, lessonTitle, sub, iCan,
 };
