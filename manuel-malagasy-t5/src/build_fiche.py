@@ -18,6 +18,9 @@ sora, ny habe, ny loko na ny lisitra isan'ireo).
                 dingana : I. Famerenana · 1. Fitarihan-tsaina · 2. Fanolorana · 3. Fandinihana ·
                 4. Famakafakana · 5. Fandravonana · 6. Fampiharana · III. Tombana
                 (oresaka ny Mpampianatra = teny atao ; Mpianatra = « V.A. : … » ; « ---- »)
+    note        (décision du maître, 2026-10-29) : une ligne de source en petits caractères
+                (9 pt, italique, parenthèses) est laissée sous CHAQUE bloc « Ohatra: » ; la
+                source est aussi reprise en fin de fiche sous LOHARANON-KEVITRA.
     LESONA      « LESONA: » souligne ; titre magenta FF00FF gras+souligne voarindra ;
                 rubriques = LISITRA ISOAN'NY (numPr) loko 00B0F0 gras+souligne ;
                 glose = maints gras-italique, 1re ligne retiree 360 ;
