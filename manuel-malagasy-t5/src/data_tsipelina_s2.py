@@ -1,19 +1,24 @@
 # -*- coding: utf-8 -*-
 """Fiche 2e seho — Tsipelina — « NOHO NY / NONY / NO HO »
 
-V6 — fandrindrana araka ny fichiermodele (`Nos manuels/EXEMPLE DE MALAGASY.docx`),
-nodianina tamin'ny dika feno vaovao (`refs/EXEMPLE_DU_MANUEL.txt`, natao tamin'ny
-`src/dump_docx.py`, izay manaiky ny takela sy ny mpanaraka typographique):
+V7 — fandaminana araka ny marinin'ny fichiermodele (XML ihany no natao pirinty, fa tsy ny
+dika teksy : `refs/EXEMPLE_DU_MANUEL.txt` indro izao, sady misy ny takela, ny notes de bas
+de page sy ny sary an-tanana (flèches) :
 
-    (1) 6 saha ambonin'ny takela : Taranja/Daty, Zana-taranja/Kilasy, Lohahevitra/Seho n°,
-        Lohateny/Isan'ny seho, V. P. M: + Fitaovana:/Faharetany, Fanovozan-kevitra ;
-    (2) takela feno : teny am-pampianarana sy featsiny, « V.A. : … » valiny atoky,
-        Fanamarihana banga, « ---- » rehefa tsy misy fitaovana, ore-minitra « (…. min) » ;
-    (3) FANAZARAN-TENA : 3 latihan-kianja (« Ampifandraiso amin'ny alalan'ny tsilo »,
-        « Fenoy … ny banga », « Mamorona fehezanteny … ») ;
-    (4) **fehezanteny VAOVAO** ao anaty fanazaran-tena : tsy misy akory ny ohatra
-        voasoratra ao amin'ny lesona. Isaky ny fehezanteny nolavalina dia misy ny
-        laharany ao `refs/rakibolana_noho.txt`.
+    * Times New Roman 12 pt (decision du maitre 2026-10-29) ;
+    * lesona = **telo** (toy ny modele : isa iray isaky ny zavatra inarana),
+      « Noho ny (Noho) » · « Nony » · « No ho » — ny tenin'ny mpampianatra ihany,
+      naniana votoaty, naniana « Ohatra: », naniana **note en bas de page** ;
+    * ny loharano (URL, PE, Rakibolana) dia lasa **notes de bas de page** (w:footnoteReference),
+      tsy ao intsony anaty rivotan'ny lesona ;
+    * `V. P. M` : misy appel de note ao amin'ny modele — « Voka-pianarana manokana » ;
+    * FANAZARAN-TENA « Ampifandraiso amin'ny alalan'ny tsilo » : **mangina ny filaharana**
+      (tsy mifandimby ny valiny) ary tsy misy flèche ; ny flèches (connecteur droit
+      magenta FF00FF + pointe de flèche, `straightConnector1`) dia **ao amin'ny FANITSIANA**
+      ihany, toy ny an'ny modele (6 traits) ;
+    * tsy misy fehezanteny avy amin'ny lesona amin'ny fanazaran-tena ;
+    * tsy misy teny na heverina invented : ohatra fohy ihany, voangana tamin'ny
+      Rakibolana/malagasyword.org/PE T5 na nomen'ny mpampianatra.
 """
 import os
 import sys
@@ -39,6 +44,7 @@ FIELDS = {
     "Lohateny": LT,
     "Isan'ny seho": "…",
     "V. P. M": "Mampiasa ny fitsipi-panoratana ny teny ao anaty lahatsoratra",
+    "V. P. M note": "Voka-pianarana manokana",
     "Fitaovana": "Solaitrabe",
     "Faharetany": "",
     "Fanovozan-kevitra": "PE T5",
@@ -55,10 +61,9 @@ GRILLE = [
      "Asa tsirairay", "----", ""),
     ("II. LESONA VAOVAO (…. min)",),
     ("1. Fitarihan-tsaina",
-     "Namaky ampahany amin'ny lahatsoratra momba ny rano i Ravao. Toy izao ny soratra teo : "
-     "« Noho ny oksizena izay elektronegativa dia sintoniny manatona azy ny tambatra "
-     "elektrona anankiroa izay eo amin'ny firaisany amin'ireo Hidrozena avy. » "
-     "Sahiran-tsaina izy hoe ny « Noho ny » no nampifandray ny antony sy ny voka.",
+     "Mamaky fehezanteny roa i Ravao : « Tsy nivoaka izy noho ny ranonorana. » sy « Nony "
+     "tonga tany an-trano izy, dia natory avy hatrany. » Sahiran-tsaina izy hoe tsy mitovy "
+     "ny teny nampifandray ny ampahany roa amin'ireo fehezanteny ireo.",
      "Mihaino",
      "Asa iombonana", "", ""),
     ("2. Fanolorana",
@@ -70,35 +75,35 @@ GRILLE = [
      "Asa iombonana", "Solaitrabe", ""),
     ("3. Fandinihana",
      "Diniho ity fehezanteny ity.\n"
-     "Nony tonga tany an-trano izy, dia natory avy hatrany.\n"
-     "Inona no nampifandray ny fotoana teo amin'ireo ampahany roa ?",
+     "Reraka izy noho ny ratra nahazo azy.\n"
+     "Inona no antony, inona no voka ?",
      "Mijery.",
      "Asa iombonana", "Fehezanteny\nSolaitrabe", ""),
     ("4. Famakafakana",
      "Asaintsika i Mora hamaky an'io fehezanteny io.\n"
-     "Maninona hono no ampiasaina ny « nony » ?\n"
-     "Inona no dikan'izany « nony » izany ?\n"
-     "Fandravonana vonjimaika: Raha manana ny hevitra hoe « rehefa » ny fehezanteny, dia "
-     "« nony » no ampiasaina.\n"
-     "Raha ovaina amin'ny « raha » izany ilay hoe « nony » dia lasa hoe ahoana ? Mbola "
-     "marina ve izany fehezanteny izany ?\n"
-     "Manao ahoana ny fanoratra an'ilay « no ho » azo soloina hoe « noho » ?",
+     "Maninona hono no ampiasaina ny « noho ny » ?\n"
+     "Inona no dikan'izany « noho ny » izany ?\n"
+     "Fandravonana vonjimaika: Raha manana ny hevitra hoe « satria » ny fehezanteny, dia "
+     "« noho ny » no ampiasaina.\n"
+     "Fandinihana (tohiny): Diniho indray ity fehezanteny manaraka ity:\n"
+     "Nony lasa izy, dia nody izahay.\n"
+     "Raha ovaina amin'ny « rehefa » izany ilay hoe « Nony » dia lasa hoe ahoana ? Mbola "
+     "marina ve izany fehezanteny izany ?",
      "Mamaky i Mora (na mpianatra hafa nananga-tanana)\n"
-     "V.A.: Ny fotoana.\n"
-     "V.A.: « Rehefa ».\n"
+     "V.A.: Ny ranonorana.\n"
+     "V.A.: Ny antony.\n"
      "Mihaino\n"
      "Mijery\n"
      "Mamaly\n"
      "V.A.: Eny.\n"
-     "V.A.: Tsy marina, fa roa teny ny « no ho » : ny « no » sy ny « ho ».",
+     "V.A.: Nody izahay, rehefa lasa izy.",
      "Asa tsirairay.", "Fehezanteny", ""),
     ("5. Fandravonana",
-     "Rehefa milaza antony ny fehezanteny dia ampiasaina ny « noho ny », ka anarana no "
-     "manaraka azy.\n"
-     "Fa ny « nony » kosa dia manana ny hevitra hoe « rehefa », ka matoanteny no manaraka "
-     "azy.\n"
-     "Ny « no ho » dia ampiasaina rehefa mifandray amin'ny matoantenin'ny iharana ny ampahany "
-     "voamarina.",
+     "« Noho ny » : teny entina hanehoana ny antony mahatonga ny zavatra iray, ka anarana na "
+     "mpisolo anarana no manaraka azy.\n"
+     "« Nony » : teny fampitohizana hanehoana fotoana, ka matoanteny no manaraka azy.\n"
+     "« No ho » : tsy teny tokana fa roa teny miaraka, ampiasaina amin'ny fampitahana zavatra "
+     "roa.",
      "Mihaino",
      "Asa iombonana", "Solaitrabe", ""),
     ("6. Fampiharana",
@@ -118,82 +123,82 @@ GRILLE = [
 ]
 
 # ------------------------------------------------------------------ LESONA
-# ** ** = teny ilazavana voamarika (toy ny modele : « Mianatra taranja **samihafa** izahay. »)
+# ** ** = teny ilazavana voamarika ; « note » = note de bas de page (tsy anaty lahatsoratra)
 LESONA = [
-    ("h2", "Noho ny"),
-    ("p", "Raha manana ny hevitra hoe « satria » na « antony » ny fehezanteny dia « noho ny » "
-          "no ampiasaina, ka anarana na mpisolo anarana no manaraka azy."),
+    ("h2", "Noho ny (Noho)"),
+    ("p", "Ampiasaina mba hanehoana ny **antony** mahatonga ny zavatra iray (midika hoe "
+          "« a cause de » na « en raison de » amin'ny teny frantsay). Manaraka an'io teny io "
+          "foana ny **anarana** na **mpisolo anarana**."),
     ("ohatra", ["Tsy nivoaka izy **noho ny** ranonorana.",
-                "Tafita izy **noho ny** fiezahany."]),
-    ("note", "PE T5, Fiasan'ny teny · Tsipelina, p.18 : « Fanoratana ny: samihafa/samy hafa, "
-             "noho ny/nony/no ho » ; Rakibolana, « noho » (ppk.) = « azon'ny, satria »."),
-    ("h2", "Noho"),
-    ("p", "« Teny entina mampitaha zavatra roa » koa ny **noho** ; rehefa fehezanteny kosa "
-          "manaraka azy dia tsy misy ny « ny »."),
-    ("ohatra", ["Ny fahasalamana dia ambony lavitra **noho** ny fananan-karena.",
-                "**Noho** ianao mividy boky betsaka, dia ahenako ny vidin'ny tsirairay."]),
-    ("note", "Rakibolana Malagasy, « noho » (p, mt. sy ppt. Teh.) ; ohabolana, ohabolana.org."),
+                "Tafita izy **noho ny** fiezahany.",
+                "Ny fahasalamana dia ambony lavitra **noho ny** fananan-karena."]),
+    ("note", "Rakibolana Malagasy, « noho » — https://www.rakibolana.org/rakibolana/teny/noho : "
+             "« Enti-milaza antony anaovan-javatra, satria » sy « Teny entina mampitaha zavatra "
+             "roa » ; ohabolana : ohabolana.org."),
     ("h2", "Nony"),
-    ("p", "Raha manana ny hevitra hoe « rehefa » na « raha » ny fehezanteny — dia ny zavatra "
-          "natao taorian'ny hafa — ampiasaina ny **nony**, ka matoanteny lasa no manaraka "
-          "azy."),
-    ("ohatra", ["**Nony** niamboho Ranavalona reniny, dia nitsoka ny rivo-pahafahana.",
-                "**Nony** handeha indrindra izahay no avy ny orana."]),
+    ("p", "Teny fampitohizana ampiasaina hanehoana **fotoana** (midika hoe « lorsque », "
+          "« quand » na « dès que » amin'ny teny frantsay). Matetika izy io no arahina "
+          "**matoanteny** ary ampiasaina rehefa mitantara zavatra efa lasa."),
+    ("ohatra", ["**Nony** tonga tany an-trano izy, dia natory avy hatrany.",
+                "**Nony** nahita ny reniny ny zaza, dia nitsiky."]),
     ("note", "Rakibolana an-tserasera, « nony » (conjonction) — "
-             "https://malagasyword.org/bins/teny2/nony ; analog : fony, raha, rehefa."),
+             "https://malagasyword.org/bins/teny2/nony : « Rehefa (raha milaza ny lasa ny "
+             "matoanteny manaraka azy) » ; analog : fony, raha, rehefa."),
     ("h2", "No ho"),
-    ("p", "Matoantenin'ny iharana ny **no** ; rehefa misy tovana ny matoanteny dia "
-          "**mitovona ny ho**, ka atao hoe **hovitaiko**, **ho tonga**."),
-    ("ohatra", ["Ho tonga rahampitso izy.  =  Rahampitso izy **no ho** tonga.",
-                "Hovitaiko ity rahariva.  =  Rahariva ity **no** hovitaiko."]),
-    ("note", "Ohatra nomen'ny mpampianatra, recopies mot pour mot (refs/rakibolana_noho.txt)."),
-    ("p", "Jerena tsara : roa teny ny **no ho** (ny « no » sy ny « ho »), teny iray kosa ny "
-          "**noho**. Tsy azo ovaina ny iray ho ny iray."),
+    ("p", "Tsy teny tokana mitambatra ity fa **roa teny miaraka** (Mpanoritra/Mpisolo « no » + "
+          "Mpampitaha « ho »). Ampiasaina amin'ny fampitahana zavatra roa izy io, indrindra "
+          "rehefa misy **finiavana** na **safidy** atao (midika hoe « plutôt que » amin'ny "
+          "teny frantsay)."),
+    ("ohatra", ["Ny hianatra **no ho** ny hilalao no tsara.",
+                "Andriamanitra **no ho** ny olombelona no tokony hoterena."]),
+    ("note", "Fanamarihana : raha matoantenin'ny iharana misy tovana, mitovona ny ho — "
+             "« Hovitaiko ity rahariva » = « Rahariva ity no hovitaiko » ; « Ho tonga "
+             "rahampitso izy » = « Rahampitso izy no ho tonga » ; « Ho vita ity rahariva » = "
+             "« Rahariva no ho vita ity »."),
 ]
 
 # ------------------------------------------------------- FANAZARAN-TENA
-# Fehezanteny vaovao daholo eto : ny ohatra ao amin'ny lesona dia tsy miverina intsony.
+# Fehezanteny vaovao, fohy, voamarina — ary ny filaharana dia mangina (tsy mifandimby ny valiny).
 EXOS = [
     {"consigne": "Ampifandraiso amin'ny alalan'ny tsilo.",
      "tsilo": (["Reraka izy noho ny",
-                "Nony lasa izy,",
-                "Nony nahita ny reniny ny zaza,",
-                "Ampiasaina ny teny",
+                "Mamy ny akondro noho ny",
+                "Ilaina noho ny volamena",
+                "Noho ianao nandiso fotoana,",
                 "noho ny",
                 "nony",
                 "no ho"],
+               # filaharana mifandimby eto : ny mpandrindra `melange()` no mandoko azy,
+               # mba tsy hitan'ny mpianatra amin'ny andalana ihany ny valiny.
                ["ratra nahazo azy.",
-                "dia nody izahay.",
-                "dia nitsiky.",
-                "ho fitaovana ianarana, ifandraisana ary anehoana hevitra.",
+                "voasary.",
+                "ny vy.",
+                "dia tsy hahazo valisoa ianao.",
                 "antony",
                 "rehefa",
-                "matoantenin'ny iharana"])},
+                "safidy"])},
     {"consigne": "Fenoy « noho ny » na « noho » na « nony » na « no » na « ho » ny banga.",
-     "banga": "Ny lahatsoratra ampiasaina dia mety …………………… lahatsoratra mitantara, "
-              "manoritsoritra na mampahalala. …………………… midona ny orana, velon-tsento i "
-              "Sahondra mahatsiaro andreniny. Ho vita ity rahariva. = Rahariva "
-              "…………………… vita ity. Ny teny mahery lava …………………… ny tanana."},
-    {"consigne": "Mamorona fehezanteny telo ahitana ny hoe « noho ny », « nony » sy "
-                 "« no ho »."},
+     "banga": "………………… midona ny orana, velon-tsento i Sahondra mahatsiaro andreniny. Ny "
+              "lahatsoratra ampiasaina dia mety …………………… lahatsoratra mitantara, "
+              "manoritsoritra na mampahalala. Rahariva …………………… vita ity. …………………… ianao "
+              "mividy boky betsaka, dia ahenako ny vidin'ny tsirairay."},
+    {"consigne": "Mamorona fehezanteny roa ahitana ny hoe « noho ny » sy ny hoe « nony »."},
 ]
 
 FANITSIANA = [
     {"tsilo": [("Reraka izy noho ny", "ratra nahazo azy."),
-               ("Nony lasa izy,", "dia nody izahay."),
-               ("Nony nahita ny reniny ny zaza,", "dia nitsiky."),
-               ("Ampiasaina ny teny", "ho fitaovana ianarana, ifandraisana ary anehoana "
-                                      "hevitra."),
+               ("Mamy ny akondro noho ny", "voasary."),
+               ("Ilaina noho ny volamena", "ny vy."),
+               ("Noho ianao nandiso fotoana,", "dia tsy hahazo valisoa ianao."),
                ("noho ny", "antony"),
                ("nony", "rehefa"),
-               ("no ho", "matoantenin'ny iharana")]},
-    {"banga": "Ny lahatsoratra ampiasaina dia mety [[ho]] lahatsoratra mitantara, "
-              "manoritsoritra na mampahalala. [[Nony]] midona ny orana, velon-tsento i "
-              "Sahondra mahatsiaro andreniny. Ho vita ity rahariva. = Rahariva [[no ho]] vita "
-              "ity. Ny teny mahery lava [[noho]] ny tanana."},
-    {"ohatra": ["Ny zava-dehibe : anarana no manaraka ny « noho ny » ; matoanteny lasa no "
-                "manaraka ny « nony » ; ary rehefa misy tovana ny matoanteny dia mitovona ny "
-                "« ho » ao anaty « no ho »."]},
+               ("no ho", "safidy")]},
+    {"banga": "[[Nony]] midona ny orana, velon-tsento i Sahondra mahatsiaro andreniny. Ny "
+              "lahatsoratra ampiasaina dia mety [[ho]] lahatsoratra mitantara, manoritsoritra "
+              "na mampahalala. Rahariva [[no ho]] vita ity. [[Noho]] ianao mividy boky "
+              "betsaka, dia ahenako ny vidin'ny tsirairay."},
+    {"ohatra": ["Ny zava-dehibe : anarana na mpisolo anarana no manaraka ny « noho ny » ; "
+                "matoanteny no manaraka ny « nony » ; ary roa teny ny « no ho »."]},
 ]
 
 LALANA = ("Lazao ny fampiasana ny « noho ny », ny « nony » ary ny « no ho » ao anaty "
@@ -201,12 +206,12 @@ LALANA = ("Lazao ny fampiasana ny « noho ny », ny « nony » ary ny « no ho �
 
 FICHE = fiche(ZT, LT, LESONA, EXOS, FANITSIANA, LALANA, seho="2", isan="2",
               loharano=[
+    "Rakibolana an-tserasera, « noho » — https://malagasyword.org/bins/teny2/noho : "
+    "« Ilaina noho ny volamena ny vy » ; « Mamy ny akondro noho ny voasary » ; « Noho ianao "
+    "nandiso fotoana, dia tsy hahazo valisoa ianao ». Pejy 2 : « no ho, locution — marque un "
+    "point de depart, depuis… jusqu'a : Hatramin' ny folo no ho miakatra ».",
     "PE T5, taranja Malagasy, p.18 (Fiasan'ny teny · Tsipelina) : « Fanoratana ny: "
-    "samihafa/samy hafa, noho ny/nony/no ho » ; p.9 : « Ny lahatsoratra ampiasaina dia mety "
-    "ho lahatsoratra mitantara, manoritsoritra na mampahalala » ; « ampiasaina ny teny ho "
-    "fitaovana ianarana, ifandraisana ary anehoana hevitra ».",
-    "PE T5, p.9 : « 1. Ny fitandroana ny fahasalamana » (lohahevitra voasoratra ao amin'ny "
-    "takela).",
+    "samihafa/samy hafa, noho ny/nony/no ho ».",
     "Rakibolana Malagasy, « noho » — https://www.rakibolana.org/rakibolana/teny/noho : "
     "« Reraka izy noho ny ratra nahazo azy » ; « Noho ianao mividy boky betsaka, dia ahenako "
     "ny vidin'ny tsirairay ». Contenu non libre : citation courte avec URL, tsy misy dika "
@@ -214,19 +219,18 @@ FICHE = fiche(ZT, LT, LESONA, EXOS, FANITSIANA, LALANA, seho="2", isan="2",
     "Rakibolana an-tserasera, « nony » — https://malagasyword.org/bins/teny2/nony : « Nony "
     "niamboho Ranavalona reniny, dia nitsoka ny rivo-pahafahana » ; « Nony midona ny orana, "
     "velon-tsento i Sahondra mahatsiaro andreniny » ; « Nony handeha indrindra izahay no avy "
-    "ny orana » ; analog : fony, raha, rehefa.",
+    "ny orana » ; « Nony lasa izy, dia nody izahay ».",
     "Ohabolana : « Ny fahasalamana dia ambony lavitra noho ny fananan-karena. » "
-    "(ohabolana.org, sources_web/02_ohab_fahasalamana.txt) ; « Ny teny mahery lava noho ny "
-    "tanana. » (JICA/PAGEM, vakiteny modely, sources_web/04_jica_vakiteny.txt).",
-    "mGWikipedia, pejy « Rano » (sources_web/full/mgwiki_rano.txt) : « Noho ny oksizena izay "
-    "elektronegativa dia sintoniny manatona azy ny tambatra elektrona anankiroa izay eo "
-    "amin'ny firaisany amin'ireo Hidrozena avy. » — Licence CC BY-SA 4.0.",
-    "Ohatra nomen'ny mpampianatra (2026-10-29) : « Tsy nivoaka izy noho ny ranonorana. », "
-    "« Tafita izy noho ny fiezahany. », « Nony tonga tany an-trano izy, dia natory avy "
-    "hatrany. », « Nony nahita ny reniny ny zaza, dia nitsiky. », « Ho tonga rahampitso izy. "
-    "= Rahampitso izy no ho tonga. », « Ho vita ity rahariva. = Rahariva no ho vita ity. », "
-    "« Hovitaiko ity rahariva. = Rahariva ity no hovitaiko. » — voatahiry mot pour mot ao "
-    "refs/rakibolana_noho.txt.",
+    "(ohabolana.org) ; « Ny teny mahery lava noho ny tanana. » (JICA/PAGEM, vakiteny modely).",
+    "PE T5, p.9 : « Ny lahatsoratra ampiasaina dia mety ho lahatsoratra mitantara, "
+    "manoritsoritra na mampahalala » ; « ampiasaina ny teny ho fitaovana ianarana, "
+    "ifandraisana ary anehoana hevitra ».",
+    "Ohatra nomen'ny mpampianatra (2026-10-29), recopiées mot pour mot ao "
+    "refs/rakibolana_noho.txt : « Tsy nivoaka izy noho ny ranonorana. » ; « Tafita izy noho "
+    "ny fiezahany. » ; « Nony tonga tany an-trano izy, dia natory avy hatrany. » ; « Nony "
+    "nahita ny reniny ny zaza, dia nitsiky. » ; « Ny hianatra no ho ny hilalao no tsara. » ; "
+    "« Andriamanitra no ho ny olombelona no tokony hoterena. » ; « Hovitaiko ity rahariva = "
+    "Rahariva ity no hovitaiko. »",
 ])
 
 FICHE["fields"] = FIELDS

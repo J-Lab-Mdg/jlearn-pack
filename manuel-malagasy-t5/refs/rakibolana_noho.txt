@@ -104,3 +104,40 @@ AO AMIN'NY FANAZARAN-TENA (vaovao, tsy misy miverina amin'ny lesona) :
  - Ho vita ity rahariva. = Rahariva no ho vita ity.                    (mpampianatra)
  - Ny teny mahery lava noho ny tanana.                                 (JICA/PAGEM vakiteny,
                                                                         sources_web/04)
+
+# ---------------- 4e passe : pejy « noho » amin'ny Rakibolana an-tserasera (2026-10-29)
+# https://malagasyword.org/bins/teny2/noho — « Updated on 2026-10-18 ». Contenu NON libre :
+# lignes utiles citées avec l'URL, tsy misy dika amin'ny pejy manontolo.
+
+Entry 1 — noho, conjunction :
+ - « Azon' ny : Reraka izy noho ny ratra nahazo azy. »
+ - « Teny entina mampitaha zavatra roa ka ilay eo aorianany milaza ny zavatra fototry ny
+   fampitahana : Ilaina noho ny volamena ny vy ~ Mamy ny akondro noho ny voasary. »
+ - « Enti-milaza antony anaovan-javatra, satria : Noho ianao m'ividy boky betsaka, dia
+   ahenako ny vidin'ny tsirairay. »
+ - Anglais : « rather, than; on account of; because. It is also used in the comparison of
+   adjectives, as a sign of the comparative degree, and is sometimes preceded by kokoa. »
+ - Français : « à cause de; plus que; plutôt que » ; « comme; noho est suivi immédiatement du
+   sujet du verbe : Noho ianao nandiso fotoana, dia tsy hahazo valisoa ianao (Comme vous
+   n'êtes pas venu à l'heure exacte, vous n'aurez pas de récompense) ».
+ - Analog : satria.
+ - Exemples littéraires : « Maty noho ny sitrapoko mantsy Ilay, hoy indray ny teniny, sady
+   vonto sy ontsa indray izy » ; « Very noho ny tahotra ny antsipika nony lany ireo vato
+   natoraka ».
+
+Entry 2 — no ho, locution :
+ - Anglais : « implies motion towards ».
+ - Français : « marque un point de départ, et signifie ; depuis... jusqu'à... : Hatramin' ny
+   folo no ho miakatra (Depuis dix en montant) ~ Hatramin' ny folo no ho midina (Depuis dix
+   en descendant) ~ Hatrany no ho mankaty (Depuis là-bas jusqu'ici) ».
+
+# FIKAROHANA : ny diksionera dia manome « plutôt que » ho an'ny « noho » (fifanoherana), fa TSY
+# ho an'ny « no ho ». Ny « no ho » ao amin'ny Rakibolana an-tserasera dia locution hafa
+# (« depuis… jusqu'à »). Ny fanazavana napetraka amin'ny lesona dia tsy miovatra : ny an'ny
+# mpampianatra (fampitahana zavatra roa, finiavana na safidy) + ny note en bas de page
+# (« mitovona ny ho »). Jereo fianarana-malagasy/CARNET.md.
+
+Ohatra vaovao azo ampiasaina (fohy, voamarina) :
+ - Ilaina noho ny volamena ny vy.
+ - Mamy ny akondro noho ny voasary.
+ - Noho ianao nandiso fotoana, dia tsy hahazo valisoa ianao.

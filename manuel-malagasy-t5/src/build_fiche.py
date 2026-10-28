@@ -59,7 +59,7 @@ C_REP = "FF00FF"        # valin'ny famoronana
 BANDE = "D9D9D9"
 COLS_CHAMPS = (6576, 3175)
 COLS_GRILLE = (1634, 3744, 1559, 1194, 1328, 1610)
-COLS_TSILO = (2545, 567, 5812)
+COLS_TSILO = (3200, 567, 5157)
 STYLE_GRILLE = "TableGrid"
 
 # andian-dahatsoratra : filaharan'ny zanaky ny w:pPr (schema OOXML)
@@ -70,6 +70,141 @@ ORDRE_PPR = ["pStyle", "keepNext", "keepLines", "pageBreakBefore", "framePr", "w
              "contextualSpacing", "mirrorIndents", "suppressOverlap", "jc", "textDirection",
              "textAlignment", "textboxTightWrap", "outlineLvl", "divId", "cnfStyle",
              "rPr", "sectPr", "pPrChange"]
+
+
+CT_FOOTNOTES = "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml"
+
+
+class Notes(object):
+    """Notes de bas de page reels (Word), comme dans le fichier modele : le modele porte
+    <w:footnoteReference w:id="1"/> sur le libelle « V. P. M » et la note « Voka-pianarana
+    manokana » en bas de page. Le gabarit de python-docx n'a pas de partie footnotes : on la
+    cree et on la reecrit a chaque note."""
+
+    DEBUT = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
+             '<w:footnotes xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" '
+             'xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" '
+             'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" '
+             'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" '
+             'xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" '
+             'xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">')
+
+    def __init__(self, doc):
+        from docx.opc.part import Part
+        from docx.opc.packuri import PackURI
+        from docx.opc.constants import RELATIONSHIP_TYPE as RT
+        self.doc = doc
+        self.notes = []
+        tete = ('<w:footnote w:type="separator" w:id="-1"><w:p><w:pPr>'
+                '<w:spacing w:after="0" w:line="240" w:lineRule="auto"/></w:pPr></w:p></w:footnote>'
+                '<w:footnote w:type="continuationSeparator" w:id="0"><w:p><w:pPr>'
+                '<w:spacing w:after="0" w:line="240" w:lineRule="auto"/></w:pPr></w:p></w:footnote>')
+        self.part = Part(PackURI("/word/footnotes.xml"), CT_FOOTNOTES,
+                         (self.DEBUT + tete + "</w:footnotes>").encode("utf-8"), doc.part.package)
+        doc.part.relate_to(self.part, RT.NUMBERING if False else
+                           "http://schemas.openxmlformats.org/officeDocument/2006/relationships/footnotes")
+        self.tete = tete
+
+    def appel(self, par, txt):
+        """Renvoie le run d'appel (exposant, chiffre auto) et enregistre le texte de la note."""
+        no = len(self.notes) + 1
+        nid = 1000 + no
+        ligne = ('<w:p><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/></w:pPr>'
+                 '<w:r><w:rPr><w:vertAlign w:val="superscript"/><w:sz w:val="18"/></w:rPr>'
+                 '<w:footnoteRef/></w:r><w:r><w:rPr><w:sz w:val="18"/></w:rPr>'
+                 '<w:t xml:space="preserve"> %s</w:t></w:r></w:p>' % _esc(txt))
+        self.notes.append('<w:footnote w:id="%d">%s</w:footnote>' % (nid, ligne))
+        self.part._blob = (self.DEBUT + self.tete + "".join(self.notes) +
+                           "</w:footnotes>").encode("utf-8")
+        r = par.add_run()
+        rPr = r._r.get_or_add_rPr()
+        va = OxmlElement("w:vertAlign"); va.set(qn("w:val"), "superscript")
+        rPr.append(va)
+        ref = OxmlElement("w:footnoteReference"); ref.set(qn("w:id"), str(nid))
+        r._r.append(ref)
+        return r
+
+
+def _esc(txt):
+    return (txt or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+# ---------------------------------------------------------------- deSSINs
+NS_DES = ('xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" '
+          'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" '
+          'xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" '
+          'xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" '
+          'xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" '
+          'xmlns:v="urn:schemas-microsoft-com:vml" '
+          'xmlns:o="urn:schemas-microsoft-com:office:office" '
+          'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"')
+PT = 12700            # EMU par point
+HAUT_LIGNE = 22.0     # hauteur de rangee imposee (440 twips) pour que la fleche tombe juste
+X_DEPART = -30.0      # depart dans la colonne de gauche (relatif a la colonne du milieu)
+LARGEUR = 118.0       # longueur horizontale du trait
+
+
+def fleche(par, i, j):
+    """Trait relie le tapany ankavia (rangee i) au tapany ankavanana (rangee j), a la facon du
+    modele : `straightConnector1`, `a:ln w="12700"` FF00FF + `tailEnd type="triangle"`,
+    ancre flottante dans la colonne du milieu (donc par-dessus le texte, non imprime dans
+    l'exercice : l'exercice, lui, reste sans fleche)."""
+    from docx.oxml import parse_xml
+    dy = (j - i) * HAUT_LIGNE
+    if dy >= 0:
+        haut, flipV, vfrom, vto = 8.0, "", "0,0", "%d,%d" % (int(LARGEUR * 12700 / PT),
+                                                             int(max(dy, 2) * 12700 / PT))
+    else:
+        haut, flipV = 8.0 + dy, "<a:flipV/>"
+        vfrom, vto = "0,%d" % int(-dy * 12700 / PT), "%d,0" % int(LARGEUR * 12700 / PT)
+    cy = int(round(max(abs(dy), 2.0) * PT))
+    cx = int(round(LARGEUR * PT))
+    nom = "Connecteur droit avec flèche %d" % (i + 1)
+    xml = (
+        '<mc:AlternateContent %s><mc:Choice Requires="wps"><w:drawing>'
+        '<wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0" '
+        'relativeHeight="251659264" behindDoc="0" locked="0" layoutInCell="1" '
+        'allowOverlap="1"><wp:simplePos x="0" y="0"/>'
+        '<wp:positionH relativeFrom="column"><wp:posOffset>%d</wp:posOffset></wp:positionH>'
+        '<wp:positionV relativeFrom="paragraph"><wp:posOffset>%d</wp:posOffset></wp:positionV>'
+        '<wp:extent cx="%d" cy="%d"/><wp:effectExtent l="38100" t="38100" r="60960" b="60960"/>'
+        '<wp:wrapNone/><wp:docPr id="%d" name="%s"/><wp:cNvGraphicFramePr/>'
+        '<a:graphic><a:graphicData uri="http://schemas.microsoft.com/office/word/2010/'
+        'wordprocessingShape"><wps:wsp><wps:cNvCnPr/><wps:spPr>'
+        '<a:xfrm>%s<a:off x="0" y="0"/><a:ext cx="%d" cy="%d"/></a:xfrm>'
+        '<a:prstGeom prst="straightConnector1"><a:avLst/></a:prstGeom>'
+        '<a:ln w="12700"><a:solidFill><a:srgbClr val="FF00FF"/></a:solidFill>'
+        '<a:tailEnd type="triangle"/></a:ln></wps:spPr><wps:bodyPr/></wps:wsp>'
+        '</a:graphicData></a:graphic></wp:anchor></w:drawing></mc:Choice>'
+        '<mc:Fallback><w:pict><v:line id="%s" o:spid="_x0000_s1026" '
+        'style="position:absolute;margin-left:%.1fpt;margin-top:%.1fpt;width:%.1fpt;'
+        'height:%.1fpt;%sz-index:251659264;mso-wrap-style:square;'
+        'mso-position-horizontal:absolute;mso-position-horizontal-relative:text;'
+        'mso-position-vertical:absolute;mso-position-vertical-relative:text" from="%s" to="%s" '
+        'o:inset="0,0"><v:stroke weight="1pt" color="#FF00FF" endarrow="block" />'
+        '</v:line></w:pict></mc:Fallback></mc:AlternateContent>'
+        % (NS_DES, int(round(X_DEPART * PT)), int(round(haut * PT)), cx, cy, 750554311 + i,
+           nom, flipV, cx, cy, nom, X_DEPART, haut, LARGEUR, max(abs(dy), 2.0),
+           'flip:v;' if flipV else '', vfrom, vto))
+    par._p.append(parse_xml(xml))
+
+
+def melange(droite, decalage=2):
+    """Manda ny filaharan'ny tapany ankavanana : ny mpianatra dia tsy mahita ny valiny
+    mifandimby (fy : « les eleves vont les trouver facilement »). Renvoie (liste mele,
+    {i_gauche: j_droite})."""
+    n = len(droite)
+    k = decalage
+    while any((i + k) % n == i for i in range(n)) or n < 2:
+        k += 1
+        if k > n:
+            break
+    mele = [droite[(i + k) % n] for i in range(n)]
+    rezo = {}
+    for i, val in enumerate(droite):
+        j = mele.index(val)
+        rezo[i] = j
+    return mele, rezo
 
 
 def rgb(h):
@@ -269,12 +404,31 @@ def _ordre_tblPr(tblPr):
         tblPr.append(c)
 
 
+def _tabalo_tsilo(doc, gauche, droite):
+    """Tabilao fampifandraisana : 3 kolona 3200 | 567 | 5157 (toy ny modele, 8924 twips
+    amin'ny totaly), rangee hajana 440 twips mba hajana tsara ny sarin'ny tsilo."""
+    t = doc.add_table(rows=len(gauche), cols=3)
+    style_table(t, STYLE_GRILLE)
+    t.alignment = WD_TABLE_ALIGNMENT.CENTER
+    largeur(t, COLS_TSILO, total=sum(COLS_TSILO))
+    for i in range(len(gauche)):
+        cellule(t.cell(i, 0), "%s \u2022" % gauche[i], space=0)
+        cellule(t.cell(i, 1), "", space=0)
+        cellule(t.cell(i, 2), droite[i], space=0)
+        trPr = t.rows[i]._tr.get_or_add_trPr()
+        h = OxmlElement('w:trHeight')
+        h.set(qn('w:val'), '440')
+        h.set(qn('w:hRule'), 'atLeast')
+        trPr.append(h)
+    return t
+
+
 def cellule(cell, txt, bold=False, italic=False, under=False, color=None, align=None,
-            fond=None):
+            fond=None, space=2):
     cell.text = ""
     for i, part in enumerate((txt or "").split("\n")):
         par = cell.paragraphs[0] if i == 0 else cell.add_paragraph()
-        par.paragraph_format.space_after = Pt(2)
+        par.paragraph_format.space_after = Pt(space)
         par.paragraph_format.space_before = Pt(0)
         if align is not None:
             par.alignment = align
@@ -304,7 +458,7 @@ def _saha(c, spec):
     return "\n".join(lignes)
 
 
-def takela(doc, d):
+def takela(doc, d, notes=None):
     p(doc, "TAKELA-PANOMANAN-DESONA", bold=True, color=C_NOIR, centre=True, space_after=6)
     c = d["fields"]
     rangs = c.get("rangs")
@@ -317,6 +471,13 @@ def takela(doc, d):
     for i, (g, dr) in enumerate(rangs):
         cellule(t.cell(i, 0), _saha(c, g))
         cellule(t.cell(i, 1), _saha(c, dr))
+    # « V. P. M » : le modele porte un appel de note ici, avec « Voka-pianarana manokana »
+    if notes is not None:
+        for row in t.rows:
+            for cell in row.cells:
+                par = cell.paragraphs[0]
+                if par.text.startswith("V. P. M"):
+                    notes.appel(par, c.get("V. P. M note", "Voka-pianarana manokana"))
 
     lignes = d["grille"]
     g = doc.add_table(rows=2 + len(lignes), cols=6)
@@ -347,7 +508,7 @@ def takela(doc, d):
 
 
 # --------------------------------------------------------------- LESONA
-def lesona(doc, d, listes):
+def lesona(doc, d, listes, notes):
     saut(doc)
     p(doc, "LESONA:", under=True, space_after=2)
     p(doc, d["lt"], bold=True, under=True, color=C_LECON, centre=True, space_after=2,
@@ -355,27 +516,28 @@ def lesona(doc, d, listes):
     rub = listes.groupe(gauche=360, hanging=360)
     groupe = None
     etiq = 0
+    dernier = None
     for kind, val in d["lesona"]:
         if kind == "h2":
             groupe = None
             p(doc, val, bold=True, under=True, color=C_RUBRIQUE, liste=rub, space_after=2,
               keep=True)
         elif kind == "p":
-            p(doc, val, color=C_NOIR, first_line=360, space_after=2)
+            dernier = p(doc, val, color=C_NOIR, first_line=360, space_after=2)
         elif kind == "note":
-            p(doc, "(" + val + ")", italic=True, size=9, space_after=2)
+            notes.appel(dernier, val) if dernier is not None else p(doc, val, size=9)
         elif kind == "ohatra":
             etiq += 1
             p(doc, "Ohatra:", italic=True, under=True, color=C_OHATRA,
               first_line=None if etiq == 1 else 720, space_after=2, keep=True)
             groupe = listes.groupe(gauche=1080, hanging=360)
             for it in val:
-                p(doc, it, liste=groupe, space_after=2)
+                dernier = p(doc, it, liste=groupe, space_after=2)
             p(doc, "", space_after=2, left=2160)
         elif kind == "bul":
             groupe = listes.groupe(gauche=1080, hanging=360)
             for it in val:
-                p(doc, it, liste=groupe, space_after=2)
+                dernier = p(doc, it, liste=groupe, space_after=2)
             p(doc, "", space_after=2, left=2160)
         elif kind == "tabl":
             tete, andalana = val
@@ -399,14 +561,10 @@ def exercices(doc, d, listes):
         p(doc, ex["consigne"], liste=consignes, space_after=2, keep=True)
         if "tsilo" in ex:
             gauche, droite = ex["tsilo"]
-            t = doc.add_table(rows=max(len(gauche), len(droite)), cols=3)
-            style_table(t, STYLE_GRILLE)
-            t.alignment = WD_TABLE_ALIGNMENT.CENTER
-            largeur(t, COLS_TSILO, total=sum(COLS_TSILO))
-            for i in range(len(gauche)):
-                cellule(t.cell(i, 0), "%s \u2022" % gauche[i])
-                cellule(t.cell(i, 1), "")
-                cellule(t.cell(i, 2), droite[i] if i < len(droite) else "")
+            n = min(len(gauche), len(droite))
+            mele, rezo = melange(list(droite[:n]))
+            ex["_mele"], ex["_rezo"] = mele, rezo
+            t = _tabalo_tsilo(doc, list(gauche[:n]), mele)
             p(doc, "", space_after=2)
         elif "banga" in ex:
             lignes = ex["banga"]
@@ -427,9 +585,22 @@ def fanitsiana(doc, d, listes):
         cons = d["exos"][n - 1]["consigne"] if n - 1 < len(d["exos"]) else ""
         p(doc, cons, liste=consignes, space_after=2, keep=True)
         if "tsilo" in rep:
-            for gauche, droite in rep["tsilo"]:
-                p(doc, "%s : %s" % (gauche, droite), color=C_NOIR, first_line=720,
-                  space_after=2)
+            # le modele : le FANITSIANA dia mamerina ny tabilao mitovy, ary eto no misy ny
+            # « Connecteur droit avec flèche » magenta — 6 traits, iray isaky ny andalana.
+            ex = d["exos"][n - 1]
+            if "tsilo" not in ex:            # fiche laoza : tabilao betsy tsy misy tsilo
+                for gauche, droite in rep["tsilo"]:
+                    p(doc, "%s : %s" % (gauche, droite), color=C_NOIR, first_line=720,
+                      space_after=2)
+                p(doc, "", space_after=2)
+                continue
+            gauche = list(ex["tsilo"][0])
+            mele = ex.get("_mele") or list(ex["tsilo"][1])
+            rezo = ex.get("_rezo") or {}
+            t = _tabalo_tsilo(doc, gauche, mele)
+            for i in range(len(gauche)):
+                if i in rezo:
+                    fleche(t.cell(i, 1).paragraphs[0], i, rezo[i])
         elif "banga" in rep:
             lignes = rep["banga"]
             if isinstance(lignes, str):
@@ -531,10 +702,13 @@ def main():
     s.page_width, s.page_height = Cm(21), Cm(29.7)
     s.left_margin = s.right_margin = s.top_margin = s.bottom_margin = Twips(1020)
     normal = doc.styles["Normal"]
-    normal.font.name = "Calibri"
-    normal.font.size = Pt(11)
+    normal.font.name = "Times New Roman"   # decision du maitre (2026-10-29) : TNR 12
+    normal.font.size = Pt(12)
+    for el in ("w:rFonts",):
+        pass
     normal.paragraph_format.space_after = Pt(10)
     listes = Listes(doc)
+    notes = Notes(doc)
 
     for k, f in enumerate(fiches):
         if k:
@@ -544,8 +718,8 @@ def main():
         p(doc, f["zt"], color=C_TITRE_ZT.get(f["zt"], "E36C0A"), size=90, centre=True,
           space_after=13)
         p(doc, "", space_after=0)
-        takela(doc, f)
-        lesona(doc, f, listes)
+        takela(doc, f, notes)
+        lesona(doc, f, listes, notes)
         exercices(doc, f, listes)
         fanitsiana(doc, f, listes)
         loharano(doc, f)

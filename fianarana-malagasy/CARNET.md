@@ -106,3 +106,27 @@ ici de mémoire : si je ne peux pas écrire la colonne 3, la ligne n'existe pas.
 | `FANITSIANA` = `gras+souligné FA6A97` ; on **rappelle la consigne** dans une liste numérotée separate puis le corrigé : texte noir, mot inséré en `italique FF00FF` inline ; productions libres = paragraphe entier `italique FF00FF` | `[p] FANITSIANA {run:b|u|FA6A97}`, `[r58 c…]` | idem |
 | les lignes de source en petits caractères sous chaque `Ohatra:` | demande du maître (2026-10-29) : « lignes de source en petits caractères sous chaque `Ohatra:` — **garde** » | **règle durable** : le `note` (9 pt, italique, entre parenthèses) suit immédiatement le groupe d'exemples, sur toutes les fiches ; la source reste aussi reprise en fin de fiche sous `LOHARANON-KEVITRA` |
 | **les phrases des exercices ne sont jamais celles de la leçon** | leçon `Mianatra taranja samihafa izahay.` vs exercices `… ny biby ompian-dRakoto.`, `Ahitana biby samihafa ao amin'ny valanjavaboahary.` | règle dure : `controles()` du constructeur refuse désormais toute phrase de la leçon reprise dans FANAZARAN-TENA |
+
+## Fanamarinana vaovao (2026-10-29) — « noho » sy « no ho » ao amin'ny Rakibolana an-tserasera
+# Pejy : https://malagasyword.org/bins/teny2/noho (Updated 2026-10-18), voalaza ao
+# `manuel-malagasy-t5/refs/rakibolana_noho.txt` (4e passe).
+
+| forme / heveritra | preuve | decision |
+|---|---|---|
+| `noho` = « plutôt que » | article `noho`, explication française : « à cause de; plus que; **plutôt que** » | le « plutôt que » que j'avais lu dans un texte en ligne appartenait à **`noho`** (comparaison), pas à `no ho` : incohérence taham-pamaky |
+| `no ho` (locution) | même page, entrée 2 : « implies motion towards » / « marque un point de départ, depuis… jusqu'à : Hatramin' ny folo no ho miakatra » | sens **tsy mbola** nampidina amin'ny lesona — fanontania natao taminy |
+| `Ilaina noho ny volamena ny vy.` / `Mamy ny akondro noho ny voasary.` | même page, sens 2 (fifanoherana) | ohatra **fohy** — ampiasaina amin'ny « Ampifandraiso amin'ny alalan'ny tsilo » |
+| `Noho ianao nandiso fotoana, dia tsy hahazo valisoa ianao.` | même page, note grammaticale (1.12) : « noho est suivi immédiatement du sujet du verbe » | ohatra antony + fehezanteny manaraka — ao amin'ny fanazaran-tena |
+| ohatra lava / teny sarotra | même page : « Maty noho ny sitrapoko mantsy Ilay… », « Very noho ny tahotra ny antsipika nony lany ireo vato natoraka » | tsy nampiasaina : T5 = ohatra fohy ihany (araka ny filazan'ny mpampianatra) |
+
+## Filaharana sy endrika (didim-pitsipika avy amin'ny mpampianatra, 2026-10-29)
+| # | didy | fanaovana |
+|---|---|---|
+| 1 | « Times new roman 12 » | police = Times New Roman, 12 pt (Normal), ny titre 90 pt ihany no miovina |
+| 2 | l'exercice tsilo ne doit pas être aligné | `melange()` : caca ny tapany ankavanana (fandroohana 2), tsy misy andalana mifandimby valiny |
+| 3 | « tu ne vois pas mes flèches ? » | `fleche()` : `straightConnector1` FF00FF 1 pt + `tailEnd type="triangle"`, ancré flottant ao amin'ny kolon'ny tsilo — **ao amin'ny FANITSIANA ihany** (toy ny modele : 0 dessin dans l'exercice, 6 dans le corrige) |
+| 4 | « ta fitarihan-tsaina est trop scientifique, il y a des mots que t'as inventés » | nesorina ny fehezanteny momba ny oksizena ; Fitarihan-tsaina = ohatra fohy napetrak'ny mpampianatra ihany |
+| 5 | « on apprend trois choses, analyse mon modèle » | lesona = 3 blocs (`Noho ny (Noho)` · `Nony` · `No ho`), isa iray isaky ny zavatra, toy ny modele (3 rubrique : Samihafa / Samy hafa / Ny toerana misy azy) |
+| 6 | « le vrai contenu et le note en bas de page » | votoatin'ny `No ho` = ny tenin'ny mpampianatra (roa teny, fampitahana, finiavana/safidy) + `Fanamarihana: … mitovona ny ho …` **amin'ny note de bas de page** |
+| 7 | « pourquoi tu mets cela dans le corps de la leçon ; cela devrait être dans la note en bas de page » | ny loharano (URL, PE, dictionnaire) dia lasa `w:footnoteReference` + `word/footnotes.xml` (cree par le constructeur) ; `V. P. M` = note « Voka-pianarana manokana » toy ny modele |
+| 8 | « n'invente pas d'autre élément » | nesorina ny paragraphes d'avertissement inventes (« Jerena tsara : roa teny ny no ho… ») |
