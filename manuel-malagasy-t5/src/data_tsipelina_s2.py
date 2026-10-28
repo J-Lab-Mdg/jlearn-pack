@@ -61,7 +61,7 @@ GRILLE = [
      "Asa tsirairay", "----", ""),
     ("II. LESONA VAOVAO (…. min)",),
     ("1. Fitarihan-tsaina",
-     "Mamaky fehezanteny roa i Ravao : « Tsy nivoaka izy noho ny ranonorana. » sy « Nony "
+     "Namaky fehezanteny roa i Ravao : « Tsy nivoaka izy noho ny ranonorana. » sy « Nony "
      "tonga tany an-trano izy, dia natory avy hatrany. » Sahiran-tsaina izy hoe tsy mitovy "
      "ny teny nampifandray ny ampahany roa amin'ireo fehezanteny ireo.",
      "Mihaino",
@@ -150,11 +150,24 @@ LESONA = [
           "rehefa misy **finiavana** na **safidy** atao (midika hoe « plutôt que » amin'ny "
           "teny frantsay)."),
     ("ohatra", ["Ny hianatra **no ho** ny hilalao no tsara.",
-                "Andriamanitra **no ho** ny olombelona no tokony hoterena."]),
-    ("note", "Fanamarihana : raha matoantenin'ny iharana misy tovana, mitovona ny ho — "
-             "« Hovitaiko ity rahariva » = « Rahariva ity no hovitaiko » ; « Ho tonga "
-             "rahampitso izy » = « Rahampitso izy no ho tonga » ; « Ho vita ity rahariva » = "
-             "« Rahariva no ho vita ity »."),
+                "Andriamanitra **no ho** ny olombelona no tokony hoterena.",
+                "Hovitaiko ity rahariva.  =  Rahariva ity **no** hovitaiko."]),
+    ("p", "Misy ny « no ho » (roa teny) kosa ao amin'ny Rakibolana, ampiasaina aorian'ny "
+          "« hatramin' » na « hatrany » : hatramin'ny isa na toerana iray **ka hatramin'ny** "
+          "hafa (midika hoe « depuis… jusqu'à » amin'ny teny frantsay). Raha "
+          "matoantenin'ny iharana misy tovana ny matoanteny kosa dia **mitovona ny ho**."),
+    ("ohatra", ["Hatramin' ny folo **no ho** miakatra.",
+                "Hatramin' ny folo **no ho** midina.",
+                "Hatrany **no ho** mankaty."]),
+    ("note", "Rakibolana an-tserasera, « noho » — https://malagasyword.org/bins/teny2/noho : "
+             "« à cause de ; plus que ; plutôt que » (sens 1 sy 2) ary, ho an'ny « no ho "
+             "(locution) », « marque un point de depart, et signifie ; depuis… jusqu'à : "
+             "Hatramin' ny folo no ho miakatra ». Ny hoe « plutôt que » dia avy amin'ny « noho », "
+             "fa TSY avy amin'ny « no ho »."),
+    ("note", "Fanamarihana nomen'ny mpampianatra : raha matoantenin'ny iharana misy tovana, "
+             "mitovona ny ho — « Hovitaiko ity rahariva » = « Rahariva ity no hovitaiko » ; "
+             "« Ho tonga rahampitso izy » = « Rahampitso izy no ho tonga » ; « Ho vita ity "
+             "rahariva » = « Rahariva no ho vita ity »."),
 ]
 
 # ------------------------------------------------------- FANAZARAN-TENA
@@ -180,7 +193,8 @@ EXOS = [
     {"consigne": "Fenoy « noho ny » na « noho » na « nony » na « no » na « ho » ny banga.",
      "banga": "………………… midona ny orana, velon-tsento i Sahondra mahatsiaro andreniny. Ny "
               "lahatsoratra ampiasaina dia mety …………………… lahatsoratra mitantara, "
-              "manoritsoritra na mampahalala. Rahariva …………………… vita ity. …………………… ianao "
+              "manoritsoritra na mampahalala. Ho vita ity rahariva. = Rahariva …………………… vita ity. "
+              "………………… ianao "
               "mividy boky betsaka, dia ahenako ny vidin'ny tsirairay."},
     {"consigne": "Mamorona fehezanteny roa ahitana ny hoe « noho ny » sy ny hoe « nony »."},
 ]
@@ -195,7 +209,7 @@ FANITSIANA = [
                ("no ho", "safidy")]},
     {"banga": "[[Nony]] midona ny orana, velon-tsento i Sahondra mahatsiaro andreniny. Ny "
               "lahatsoratra ampiasaina dia mety [[ho]] lahatsoratra mitantara, manoritsoritra "
-              "na mampahalala. Rahariva [[no ho]] vita ity. [[Noho]] ianao mividy boky "
+              "na mampahalala. Ho vita ity rahariva. = Rahariva [[no ho]] vita ity. [[Noho]] ianao mividy boky "
               "betsaka, dia ahenako ny vidin'ny tsirairay."},
     {"ohatra": ["Ny zava-dehibe : anarana na mpisolo anarana no manaraka ny « noho ny » ; "
                 "matoanteny no manaraka ny « nony » ; ary roa teny ny « no ho »."]},

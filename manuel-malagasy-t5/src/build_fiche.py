@@ -59,7 +59,7 @@ C_REP = "FF00FF"        # valin'ny famoronana
 BANDE = "D9D9D9"
 COLS_CHAMPS = (6576, 3175)
 COLS_GRILLE = (1634, 3744, 1559, 1194, 1328, 1610)
-COLS_TSILO = (3200, 567, 5157)
+COLS_TSILO = (3400, 567, 4957)
 STYLE_GRILLE = "TableGrid"
 
 # andian-dahatsoratra : filaharan'ny zanaky ny w:pPr (schema OOXML)
@@ -141,51 +141,108 @@ NS_DES = ('xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006
 PT = 12700            # EMU par point
 HAUT_LIGNE = 22.0     # hauteur de rangee imposee (440 twips) pour que la fleche tombe juste
 X_DEPART = -30.0      # depart dans la colonne de gauche (relatif a la colonne du milieu)
-LARGEUR = 118.0       # longueur horizontale du trait
+LARGEUR = 88.0        # longueur horizontale du trait : tipona eo am-piandohan'ny
+# tapany ankavanana, ka tsy mboina manjavona amin'ny soratra
 
 
-def fleche(par, i, j):
-    """Trait relie le tapany ankavia (rangee i) au tapany ankavanana (rangee j), a la facon du
-    modele : `straightConnector1`, `a:ln w="12700"` FF00FF + `tailEnd type="triangle"`,
-    ancre flottante dans la colonne du milieu (donc par-dessus le texte, non imprime dans
-    l'exercice : l'exercice, lui, reste sans fleche)."""
-    from docx.oxml import parse_xml
-    dy = (j - i) * HAUT_LIGNE
-    if dy >= 0:
-        haut, flipV, vfrom, vto = 8.0, "", "0,0", "%d,%d" % (int(LARGEUR * 12700 / PT),
-                                                             int(max(dy, 2) * 12700 / PT))
+def _image(doc, nom, bytes_, type_):
+    """Partie media + relation (python-docx n'a pas d'API pour le SVG : on ecrit la partie
+    nous-memes, Word lit l'Override de [Content_Types].xml)."""
+    from docx.opc.part import Part
+    from docx.opc.packuri import PackURI
+    from docx.opc.constants import RELATIONSHIP_TYPE as RT
+    k = len(getattr(doc, "_svg_compte", [])) + 1
+    if not hasattr(doc, "_svg_compte"):
+        doc._svg_compte = []
+    doc._svg_compte.append(nom)
+    part = Part(PackURI("/word/media/%s%d.%s" % (nom, k, type_.split("/")[-1].replace("svg+xml", "svg").replace("png", "png"))),
+                type_, bytes_, doc.part.package)
+    return doc.part.relate_to(part, RT.IMAGE)
+
+
+def _form(w, h, vers_le_haut):
+    """Coordonnees du trait + pointe de fleche, en pixels (96 ppp)."""
+    pad = 3.0
+    x0, x1 = pad, w - pad - 5
+    if vers_le_haut:
+        y0, y1, ya = h - pad, pad, pad + 8
     else:
-        haut, flipV = 8.0 + dy, "<a:flipV/>"
-        vfrom, vto = "0,%d" % int(-dy * 12700 / PT), "%d,0" % int(LARGEUR * 12700 / PT)
-    cy = int(round(max(abs(dy), 2.0) * PT))
+        y0, y1, ya = pad, h - pad, h - pad - 8
+    dx, dy = x1 - x0, y1 - y0
+    n = (dx * dx + dy * dy) ** 0.5 or 1.0
+    ux, uy = dx / n, dy / n
+    b = 2.8                                        # largeur de la pointe (triangle)
+    px, py = -uy * b, ux * b                       # perpendiculaire
+    base_x, base_y = x1 - ux * 8, y1 - uy * 8
+    poly = [(x1, y1), (base_x + px, base_y + py), (base_x - px, base_y - py)]
+    return (x0, y0), (x1, y1), (y0, y1, ya), poly
+
+
+def fleche(par, i, j, doc=None):
+    """Sary SVG (fallback PNG) : « tsilo » mitovy amin'ny an'ny modele — connecteur
+    magenta FF00FF misy pointe de fleche — ancore flottante ao anaty kolon'ny tabilao
+    afovoany, ka mameno ambony an'ny lahatsoratra tsy manova ny halavan'ny rangee.
+    (demande du maitre 2026-10-29 : « fais les en svg »)."""
+    from docx.oxml import parse_xml
+    try:
+        from PIL import Image, ImageDraw
+    except Exception:
+        Image = None
+    dy_pt = (j - i) * HAUT_LIGNE
+    vers_le_haut = dy_pt < 0
+    H_pt = max(abs(dy_pt), 8.0)
+    W_px = int(round(LARGEUR * 96 / 72.0))
+    H_px = max(int(round(H_pt * 96 / 72.0)), 12)
+    (x0, y0), (x1, y1), (ya, yb, yc), poly = _form(W_px, H_px, vers_le_haut)
+    haut, poly_s = poly[0], " ".join("%d,%d" % (round(a), round(b)) for a, b in poly)
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d">'
+           '<line x1="%d" y1="%d" x2="%d" y2="%d" stroke="#FF00FF" stroke-width="1.333" '
+           'stroke-linecap="round"/><polygon points="%s" fill="#FF00FF"/></svg>'
+           % (W_px, H_px, W_px, H_px, x0, y0, round(haut[0]), round(haut[1]), poly_s))
+    blob_png = b""
+    if Image is not None:
+        img = Image.new("RGBA", (W_px, H_px), (0, 0, 0, 0))
+        dr = ImageDraw.Draw(img)
+        dr.line([x0, y0, round(haut[0]), haut[1]], fill=(255, 0, 255, 255), width=2)
+        dr.polygon(poly, fill=(255, 0, 255, 255))
+        import io as _io
+        buf = _io.BytesIO()
+        img.save(buf, "PNG")
+        blob_png = buf.getvalue()
+    rid_png = _image(doc, "fleche", blob_png, "image/png") if blob_png else None
+    rid_svg = _image(doc, "fleche", svg.encode("utf-8"), "image/svg+xml")
+    if rid_png is None:
+        rid_png = rid_svg
     cx = int(round(LARGEUR * PT))
-    nom = "Connecteur droit avec flèche %d" % (i + 1)
+    cy = int(round(H_pt * PT))
+    posH = int(round(X_DEPART * PT))
+    posV = int(round((8.0 if not vers_le_haut else 8.0 - H_pt) * PT))
+    nom = "tsilo %d" % (i + 1)
     xml = (
-        '<mc:AlternateContent %s><mc:Choice Requires="wps"><w:drawing>'
-        '<wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0" '
-        'relativeHeight="251659264" behindDoc="0" locked="0" layoutInCell="1" '
-        'allowOverlap="1"><wp:simplePos x="0" y="0"/>'
+        '<w:drawing xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" '
+        'xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" '
+        'xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" '
+        'xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" '
+        'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">'
+        '<wp:anchor distT="0" distB="0" distL="0" distR="0" simplePos="0" '
+        'relativeHeight="251659264" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">'
+        '<wp:simplePos x="0" y="0"/>'
         '<wp:positionH relativeFrom="column"><wp:posOffset>%d</wp:posOffset></wp:positionH>'
         '<wp:positionV relativeFrom="paragraph"><wp:posOffset>%d</wp:posOffset></wp:positionV>'
-        '<wp:extent cx="%d" cy="%d"/><wp:effectExtent l="38100" t="38100" r="60960" b="60960"/>'
+        '<wp:extent cx="%d" cy="%d"/><wp:effectExtent l="25400" t="25400" r="25400" b="25400"/>'
         '<wp:wrapNone/><wp:docPr id="%d" name="%s"/><wp:cNvGraphicFramePr/>'
-        '<a:graphic><a:graphicData uri="http://schemas.microsoft.com/office/word/2010/'
-        'wordprocessingShape"><wps:wsp><wps:cNvCnPr/><wps:spPr>'
-        '<a:xfrm>%s<a:off x="0" y="0"/><a:ext cx="%d" cy="%d"/></a:xfrm>'
-        '<a:prstGeom prst="straightConnector1"><a:avLst/></a:prstGeom>'
-        '<a:ln w="12700"><a:solidFill><a:srgbClr val="FF00FF"/></a:solidFill>'
-        '<a:tailEnd type="triangle"/></a:ln></wps:spPr><wps:bodyPr/></wps:wsp>'
-        '</a:graphicData></a:graphic></wp:anchor></w:drawing></mc:Choice>'
-        '<mc:Fallback><w:pict><v:line id="%s" o:spid="_x0000_s1026" '
-        'style="position:absolute;margin-left:%.1fpt;margin-top:%.1fpt;width:%.1fpt;'
-        'height:%.1fpt;%sz-index:251659264;mso-wrap-style:square;'
-        'mso-position-horizontal:absolute;mso-position-horizontal-relative:text;'
-        'mso-position-vertical:absolute;mso-position-vertical-relative:text" from="%s" to="%s" '
-        'o:inset="0,0"><v:stroke weight="1pt" color="#FF00FF" endarrow="block" />'
-        '</v:line></w:pict></mc:Fallback></mc:AlternateContent>'
-        % (NS_DES, int(round(X_DEPART * PT)), int(round(haut * PT)), cx, cy, 750554311 + i,
-           nom, flipV, cx, cy, nom, X_DEPART, haut, LARGEUR, max(abs(dy), 2.0),
-           'flip:v;' if flipV else '', vfrom, vto))
+        '<a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">'
+        '<pic:pic><pic:nvPicPr><pic:cNvPr id="%d" name="%s"/><pic:cNvPicPr/></pic:nvPicPr>'
+        '<pic:blipFill><a:blip r:embed="%s"><a:extLst>'
+        '<a:ext uri="{96DAC541-7B7A-43D3-8B79-37D633B846F1}">'
+        '<asvg:svgBlip xmlns:asvg="http://schemas.microsoft.com/office/drawing/2016/SVG/main" '
+        'r:embed="%s"/></a:ext></a:extLst></a:blip>'
+        '<a:stretch><a:fillRect/></a:stretch></pic:blipFill>'
+        '<pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="%d" cy="%d"/></a:xfrm>'
+        '<a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr>'
+        '</pic:pic></a:graphicData></a:graphic></wp:anchor></w:drawing>'
+        % (posH, posV, cx, cy, 750554311 + i, nom, 750554311 + i, nom,
+           rid_png, rid_svg, cx, cy))
     par._p.append(parse_xml(xml))
 
 
@@ -418,7 +475,7 @@ def _tabalo_tsilo(doc, gauche, droite):
         trPr = t.rows[i]._tr.get_or_add_trPr()
         h = OxmlElement('w:trHeight')
         h.set(qn('w:val'), '440')
-        h.set(qn('w:hRule'), 'atLeast')
+        h.set(qn('w:hRule'), 'exact')
         trPr.append(h)
     return t
 
@@ -600,7 +657,7 @@ def fanitsiana(doc, d, listes):
             t = _tabalo_tsilo(doc, gauche, mele)
             for i in range(len(gauche)):
                 if i in rezo:
-                    fleche(t.cell(i, 1).paragraphs[0], i, rezo[i])
+                    fleche(t.cell(i, 1).paragraphs[0], i, rezo[i], doc)
         elif "banga" in rep:
             lignes = rep["banga"]
             if isinstance(lignes, str):
