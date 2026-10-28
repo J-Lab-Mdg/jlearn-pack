@@ -11,10 +11,10 @@ Application locale autonome permettant d'aspirer proprement et de consulter **10
 
 ## 1. Démarrage en 1 clic sur votre ordinateur
 
-### Sous Windows
+### Sous Windows (aucune installation requise !)
 1. Décompressez le dossier `malagasyword-offline`.
 2. Double-cliquez sur **`LANCER_WINDOWS.bat`**.
-   *(Si Python 3 n'est pas encore installé : téléchargez-le sur https://www.python.org/downloads/ en cochant « Add python.exe to PATH »).*
+   - Si Python 3 n'est pas installé sur votre PC, le script **télécharge et décompresse tout seul une version portable officielle de Python 3.12 (~11 Mo)** dans le sous-dossier `runtime\python\` (une seule fois, sans droits administrateur ni installation système, puis fonctionne **100 % hors-ligne** pour toujours).
 3. Votre navigateur s'ouvre automatiquement sur **`http://127.0.0.1:8765`**.
 
 ### Sous Linux / macOS / Android (Termux)

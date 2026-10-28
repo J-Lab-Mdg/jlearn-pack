@@ -57,7 +57,7 @@ def _detect_lan_ips() -> List[str]:
 def build_clean_pack_zip_bytes() -> bytes:
     """Construit à la volée une archive propre `malagasyword-offline.zip` prête à décompresser sur PC."""
     buf = io.BytesIO()
-    excluded_dirs = {"__pycache__", "data", ".git", ".pytest_cache"}
+    excluded_dirs = {"__pycache__", "data", "runtime", ".git", ".pytest_cache"}
     excluded_exts = {".pyc", ".pyo", ".db", ".db-wal", ".db-shm", ".zip"}
 
     with zipfile.ZipFile(buf, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
@@ -358,8 +358,20 @@ def main() -> int:
     print("  (Fermez cette fenêtre ou appuyez sur Ctrl+C pour quitter)")
     print("=" * 72)
 
+    def _open_ui() -> None:
+        try:
+            if os.name == "nt" and hasattr(os, "startfile"):
+                os.startfile(local_url)  # type: ignore[attr-defined]
+            else:
+                webbrowser.open(local_url)
+        except Exception:
+            try:
+                webbrowser.open(local_url)
+            except Exception:
+                pass
+
     if not args.no_browser:
-        threading.Timer(0.6, lambda: webbrowser.open(local_url)).start()
+        threading.Timer(0.6, _open_ui).start()
 
     try:
         server.serve_forever()

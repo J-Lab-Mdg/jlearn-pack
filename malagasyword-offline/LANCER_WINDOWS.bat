@@ -1,31 +1,13 @@
 @echo off
-chcp 65001 >nul
 cd /d "%~dp0"
-title MalagasyWord Offline (Mode Complet)
-
-where py >nul 2>nul
-if %errorlevel%==0 (
-    py -3 malagasyword_offline.py
-    goto :end
-)
-
-where python >nul 2>nul
-if %errorlevel%==0 (
-    python malagasyword_offline.py
-    goto :end
-)
-
-where python3 >nul 2>nul
-if %errorlevel%==0 (
-    python3 malagasyword_offline.py
-    goto :end
-)
-
+if exist "malagasyword_offline.py" goto :run
 echo ======================================================================
-echo  [!] Python 3 n'a pas ete detecte sur cet ordinateur.
-echo  Installez Python 3 gratuitement depuis : https://www.python.org/downloads/
-echo  (Cochez bien "Add python.exe to PATH" lors de l'installation)
+echo  [!] ATTENTION : Archive .zip non extraite !
+echo  Faites un clic droit sur malagasyword-offline.zip puis choisissez
+echo  "Extraire tout..." avant de double-cliquer sur LANCER_WINDOWS.bat.
 echo ======================================================================
 pause
-
-:end
+exit /b 1
+:run
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0bootstrap_windows.ps1" %*
+if errorlevel 1 pause
