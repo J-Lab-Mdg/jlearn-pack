@@ -1,0 +1,43 @@
+# Gabarit d'une fiche du manuel, relevé dans le fichier du proprietaire :
+#   Nos manuels/EXEMPLE DE MALAGASY.docx  (branche main du depot J-Lab-Mdg/jlearn-pack)
+# Exemple fourni : une fiche de Tsipelina puis une fiche de Fitsipika, meme notion (samihafa / samy hafa).
+# Ce fichier ne contient que les LIBELLES et les FORMULES D'EXERCICE, pour que la verification de langue
+# (fianarana-malagasy/fikarohana.py) trouve une trace locale a chaque mot que le manuel imprime.
+# Contenu recopie de l'exemple : ne pas lui ajouter de mot invente.
+
+Tsipelina
+Fitsipika
+TAKELA-PANOMANAN-DESONA
+Taranja : Malagasy
+Daty : ...
+Zana-taranja :
+Seho n° :
+Isan'ny seho :
+Dingana sy Faharetany
+Fizotry ny Lesona
+Mpampianatra
+Mpianatra
+Tetika Amam-paika
+Fitaovana
+Fanamarihana
+I. Famerenana
+LESONA:
+FANAZARAN-TENA
+FANITSIANA
+Ohatra:
+SAMIHAFA SA SAMY HAFA
+Samihafa
+Samy hafa
+Ny toerana misy azy ao anaty fehezanteny
+Raha manana ny hevitra hoe "isan-karazany" ny hoe "samihafa" dia mitambatra ny fanoratra azy : "samihafa".
+Raha manana ny hevitra hoe "tsy mitovy" ny hoe "samy hafa" dia misaraka ny fanoratra azy : "samy hafa".
+Matetika no hita eny am-piandohan'ny fehezanteny (atao EM) ny samy hafa (misaraka). Tsy voatery ho toy izany foana anefa. Tsy voatery ho eny afovoan'ny fehezanteny hatrany koa ny samihafa (mitambatra).
+Ampifandraiso amin'ny alalan'ny tsilo
+Fenoy samy hafa na samihafa ny banga
+Mamorona fehezanteny roa ahitana ny hoe "samy hafa" sy ny hoe "samihafa". Ampiasao ireto teny ireto: biby, valanjavaboahary, voay, akoho.
+Mianatra taranja samihafa izahay.
+Taranja samy hafa tanteraka ny Malagasy sy ny Anglisy.
+Samy hafa tanteraka taranja ny Malagasy sy ny Anglisy.
+Ahitana biby samihafa ao amin'ny valanjavaboahary.
+Samy hafa ny akoho sy ny voay.
+Voka-pianarana manokana
