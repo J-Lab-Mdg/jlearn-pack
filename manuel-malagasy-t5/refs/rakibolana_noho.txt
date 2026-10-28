@@ -67,3 +67,40 @@ Dictionnaire (Rakibolana malagasy, via https://malagasyword.org/bins/teny2/nony)
  - Tamin' ny (raha milaza ny ho avy ny matoanteny manaraka azy ao anatin' ny tantara) : Nony handeha
    indrindra izahay no avy ny orana.
  - Analog : fony, raha, rehefa.
+
+# ---------------- 3e passe : lisitra feno ny fehezanteny ampiasaina amin'ny fiche
+# (Isaky ny fehezanteny eto dia nalaina amin'ny loharano voalaza eo ambony, tsy nosoratana
+#  vaovao. Ampiasaina amin'ny fanamarinana : `python3 fianarana-malagasy/fikarohana.py
+#  --fanamarinana data_tsipelina_s2`.)
+
+AO AMIN'NY LESONA :
+ - Tsy nivoaka izy noho ny ranonorana.                        (mpampianatra, refs ci-dessus)
+ - Tafita izy noho ny fiezahany.                              (mpampianatra, refs ci-dessus)
+ - Ny fahasalamana dia ambony lavitra noho ny fananan-karena. (ohabolana.org, sources_web/02)
+ - Noho ianao mividy boky betsaka, dia ahenako ny vidin'ny tsirairay. (Rakibolana « noho », ppt. Teh.)
+ - Nony niamboho Ranavalona reniny, dia nitsoka ny rivo-pahafahana.   (Rakibolana « nony », Rehefa)
+ - Nony handeha indrindra izahay no avy ny orana.                     (Rakibolana « nony », Tamin' ny)
+ - Ho tonga rahampitso izy. = Rahampitso izy no ho tonga.             (mpampianatra, rectification)
+ - Hovitaiko ity rahariva. = Rahariva ity no hovitaiko.               (mpampianatra, rectification)
+
+AO AMIN'NY TAKELA :
+ - Noho ny oksizena izay elektronegativa dia sintoniny manatona azy ny tambatra elektrona
+   anankiroa izay eo amin'ny firaisany amin'ireo Hidrozena avy.       (mGWikipedia « Rano »,
+                                                                        sources_web/full/mgwiki_rano.txt)
+ - Nony tonga tany an-trano izy, dia natory avy hatrany.             (mpampianatra)
+ - Mianatra taranja samihafa izahay.                                 (modele, refs/EXEMPLE_DU_MANUEL.txt)
+ - Samy hafa ny omby sy ny akoho.                                    (modele, refs/EXEMPLE_DU_MANUEL.txt)
+
+AO AMIN'NY FANAZARAN-TENA (vaovao, tsy misy miverina amin'ny lesona) :
+ - Reraka izy noho ny ratra nahazo azy.                               (Rakibolana « noho », ppk.)
+ - Nony lasa izy, dia nody izahay.                                    (malagasyword.org « nony »,
+                                                                       filazana frantsay : « lorsque,
+                                                                       quand, après que » ; jereo
+                                                                       fianarana-malagasy/CARNET.md)
+ - Nony nahita ny reniny ny zaza, dia nitsiky.                        (mpampianatra)
+ - Ampiasaina ny teny ho fitaovana ianarana, ifandraisana ary anehoana hevitra. (PE T5 p.9)
+ - Ny lahatsoratra ampiasaina dia mety ho lahatsoratra mitantara, manoritsoritra na mampahalala.
+                                                                        (PE T5 p.9)
+ - Ho vita ity rahariva. = Rahariva no ho vita ity.                    (mpampianatra)
+ - Ny teny mahery lava noho ny tanana.                                 (JICA/PAGEM vakiteny,
+                                                                        sources_web/04)
