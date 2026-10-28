@@ -1,0 +1,17 @@
+{
+  "name": "MalagasyWord Offline — Rakibolana & Encyclopédie",
+  "short_name": "MalagasyWord",
+  "description": "Dictionnaire et encyclopédie malgache-français-anglais et proverbes (Ohabolana) 100% hors-ligne.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf6",
+  "theme_color": "#1f6f50",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
