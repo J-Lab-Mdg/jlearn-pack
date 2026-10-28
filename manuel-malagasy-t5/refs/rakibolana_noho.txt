@@ -45,3 +45,25 @@ Raha hamintina izany :
  - Noho ny = Satria misy... (Antony)
  - Nony = Rehefa... (Fotoana)
  - No ho = Toy izay... (Fampitahana / Safidy)
+
+# ---------------- 2e passe : « no ho » rectifie par le proprietaire, « nony » verifie au dictionnaire
+# (message du 2026-10-29 ; malagasyword.org = compilation de dictionnaires, contenu NON libre :
+#  on cite les lignes utiles avec l'URL, on ne copie pas la page.)
+
+Correction du proprietaire : le « no ho » n'est pas une locution signifiant « plutôt que ».
+ - Ho tonga rahampitso izy.
+ - Rahampitso izy no ho tonga.
+ - Ho vita ity rahariva.
+ - Rahariva no ho vita ity.
+ - Fanamarihana : raha matoantenin' ny iharana misy tovana, mitovona ny ho :
+   Hovitaiko ity rahariva = Rahariva ity no hovitaiko.
+ Source indiquee : https://malagasyword.org/bins/teny2
+
+Dictionnaire (Rakibolana malagasy, via https://malagasyword.org/bins/teny2/nony) — « nony », conjonction :
+ - Rehefa (raha milaza ny lasa ny matoanteny manaraka azy) : Nony niamboho Ranavalona reniny, dia nitsoka
+   ny rivo-pahafahana.
+ - Isaky ny (raha milaza ny ankehitriny ny matoanteny manaraka azy) : Nony midona ny orana, velon-tsento
+   i Sahondra mahatsiaro andreniny.
+ - Tamin' ny (raha milaza ny ho avy ny matoanteny manaraka azy ao anatin' ny tantara) : Nony handeha
+   indrindra izahay no avy ny orana.
+ - Analog : fony, raha, rehefa.

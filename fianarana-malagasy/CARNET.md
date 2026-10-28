@@ -74,3 +74,11 @@ ici de mémoire : si je ne peux pas écrire la colonne 3, la ligne n'existe pas.
 | `amin'ny alalan'ny teny tsara rindra`, `fahasahiana`, `mandaha-teny`, `avo feo`, `ohampitenenana` | page recopiée `sources_web/full/mgwiki_kabary.txt` (article « Kabary ») | lexique de la leçon d'expression orale : pris de la page, collée en entier derrière le corrigé |
 | `Maro karazana ny kabary satria maro tokoa ny hafatra hampitaina.` | même page, § Ny karazana kabary | exemple de `satria` : phrase copiée, présentée comme `Ohatra:` |
 | `Fenoy ny banga`, `Ampifandraiso amin'ny alalan'ny tsilo`, `FANITSIANA` | `refs/EXEMPLE_DU_MANUEL.txt` (relevé de `Nos manuels/EXEMPLE DE MALAGASY.docx`) | libellés d'exercices et titre du corrigé du manuel : repris de l'exemple du propriétaire |
+| forme | preuve | decision |
+|---|---|---|
+| `noho ny` = antony | Rakibolana Malagasy, « noho » : « Enti-milaza antony anaovan-javatra, satria » — https://www.rakibolana.org/rakibolana/teny/noho | garde ; la cause et la comparaison se partagent la meme forme |
+| `noho ny` = fampitahana | meme article : « Teny entina mampitaha zavatra roa » ; ohabolana « Ny fahasalamana dia ambony lavitra noho ny fananan-karena. » | garde |
+| `nony` = `Rehefa` / `Isaky ny` / `Tamin' ny` | Malagasy Dictionary and Encyclopedia, « nony » (conjonction), Rakibolana malagasy — https://malagasyword.org/bins/teny2/nony ; analog `fony`, `raha`, `rehefa` | **conjonction de temps**, pas une forme de `noho ny` ; ohatra : « Nony lasa izy, dia nody izahay. » |
+| `no ho` (glose « plutôt que ») | **faute de sens relevée par le maître** : la glose venait d'un texte trouvé en ligne, le dictionnaire ne la donne pas | `no ho` = `no` + `ho` ; gardee dans ce carnet (et non dans LISTE-ROUGE, qui ne police que des formes) |
+| `no ho` | rectification du proprietaire : « Ho tonga rahampitso izy. = Rahampitso izy no ho tonga. » ; `no` = marika ny mivadi-drafitra (PE p.19), `ho` = mpanamarika ny ho avy (PE p.19) | **PAS une locution signifiant « plutot que »** ; la glose que j'avais reprise d'un texte trouve en ligne etait fausse, retiree |
+| `Hovitaiko` (mitovona ny ho) | rectification du proprietaire : « Raha matoantenin' ny iharana misy tovana, mitovona ny ho : Hovitaiko ity rahariva = Rahariva ity no hovitaiko. » | regle d'ecriture a enoncer dans la leson, exemple recopie tel quel |
