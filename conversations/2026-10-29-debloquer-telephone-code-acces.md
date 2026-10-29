@@ -575,6 +575,28 @@ l'appareil « n'a pas d'eSIM ».
 | **Fournisseur sans numéro** : Tuta, Proton Mail, Mailfence | Si c'est **juste une adresse email** | Inscription sans téléphone (CAPTCHA ou e-mail de secours). Tuta : 1 Go gratuit, Allemagne. Proton : 1 Go, Suisse, adresse de récupération facultative |
 | ~~SMS jetables / numéros virtuels~~ | **à éviter** | Souvent bloqués ; le compte peut être perdu ou suspendu |
 
+### Compte Google : l'ordre des opérations qui marche
+
+1. **Une carte SIM neuve** (Telma, Orange, Airtel) : un numéro qui n'a jamais servi à Google est accepté
+   quasi à tous les coups. C'est le facteur décisif — pas la difficulté de l'interface.
+2. **Créer le compte sur un ordinateur**, dans Chrome ou Edge, sur `accounts.google.com/signup` — pas dans
+   l'assistant de configuration du téléphone, qui est le chemin le plus strict.
+3. Quand le numéro est demandé, chercher le lien **« Ignorer » / « Passer »** avant de saisir quoi que ce soit.
+4. Une fois le compte créé, **l'ajouter sur le téléphone** : Paramètres → Comptes → Ajouter un compte → Google.
+
+**Pièges qui font échouer la création :**
+
+| Piège | Effet |
+|---|---|
+| Un numéro déjà utilisé pour plusieurs comptes Google | « Ce numéro ne peut pas être utilisé pour la vérification » |
+| Plusieurs tentatives d'affilée sur la même connexion | Blocage temporaire, attendre 24 h |
+| VPN, Tor, ou navigateur en navigation privée | Refus quasi systématique |
+| Création directement dans l'assistant Android après un effacement | Chemin le plus strict, souvent bloquant |
+| Achat de comptes « tout faits » ou numéros virtuels jetables | Compte verrouillé plus tard, récupération impossible |
+
+**Rappel utile :** WhatsApp, Signal et les SMS **n'ont pas besoin de compte Google** — seulement d'un numéro de
+téléphone. Le compte Google ne sert qu'au Play Store, à la synchronisation et à Gmail.
+
 **Attention à la destination du compte :**
 
 - **Adresse email simple** → Tuta ou Proton, aucun numéro nécessaire.
