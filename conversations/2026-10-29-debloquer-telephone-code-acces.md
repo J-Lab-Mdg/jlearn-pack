@@ -560,7 +560,38 @@ Avec ça, la réponse devient : « sur ce modèle, il y a / il n'y a pas de solu
 
 ---
 
-## 10. Sources
+## 10. Après le déblocage — recréer un compte email (question du 29/10)
+
+Le téléphone est vierge : il faut recréer un compte. La création demande un **numéro de téléphone**, et
+l'appareil « n'a pas d'eSIM ».
+
+> **Point clé : l'eSIM n'a rien à voir.** Une vérification par SMS demande un **numéro de téléphone**, pas une
+> eSIM. N'importe quelle carte SIM physique suffit — le ZTE a un tiroir nano-SIM classique.
+
+| Route | Quand l'utiliser | Remarque |
+|---|---|---|
+| **Carte SIM locale** (Telma / Orange / Airtel) | Le plus simple et le plus sûr | Quelques milliers d'ariary ; le numéro appartient à votre ami, il garde la main sur son compte |
+| **Le numéro d'un proche** | Si aucune SIM n'est disponible tout de suite | Le code arrive sur un autre téléphone ; le numéro peut être retiré ensuite dans les paramètres du compte |
+| **Fournisseur sans numéro** : Tuta, Proton Mail, Mailfence | Si c'est **juste une adresse email** | Inscription sans téléphone (CAPTCHA ou e-mail de secours). Tuta : 1 Go gratuit, Allemagne. Proton : 1 Go, Suisse, adresse de récupération facultative |
+| ~~SMS jetables / numéros virtuels~~ | **à éviter** | Souvent bloqués ; le compte peut être perdu ou suspendu |
+
+**Attention à la destination du compte :**
+
+- **Adresse email simple** → Tuta ou Proton, aucun numéro nécessaire.
+- **Compte Google (Play Store, WhatsApp, synchronisation)** → Google demande presque toujours un numéro :
+  il faut passer par une SIM physique ou le numéro d'un proche. Il n'existe pas de contournement fiable.
+
+**Le piège à ne pas répéter :** quelqu'un qui vérifie un compte avec le numéro d'un tiers **ne contrôle pas la
+récupération** de ce compte — le titulaire de la ligne peut le récupérer. Pour un compte important (Google,
+banque), utiliser sa propre ligne.
+
+**Et surtout :** activer tout de suite une **adresse de secours** ou des **codes de récupération**, et ne jamais
+accepter une « clé d'accès » (passkey) avant d'avoir un code d'écran mémorisé. C'est exactement l'enchaînement
+qui a bloqué ce téléphone.
+
+---
+
+## 11. Sources
 
 - Google Chrome Help — *Gérer les clés d'accès dans Chrome* (Android 9+, verrouillage d'écran obligatoire) :
   <https://support.google.com/chrome/answer/13168025>
