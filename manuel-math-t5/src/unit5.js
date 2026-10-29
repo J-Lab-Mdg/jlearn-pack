@@ -136,7 +136,9 @@ const S = [
       'a) 300 cm ; b) 2,5 m ; d) 7 000 m ; e) 4,5 km.',
       'a) 235 cm ; b) 5 250 m ; d) 3 km 5 m = 3 005 m, donc 3 050 m > 3 km 5 m ; e) 980 m < 1 200 m < 1,5 km (soit 1 500 m).',
       'a) 4 × 1,2 = 4,8 km ; b) 5 × 4,8 = 24 km ; d) 24 000 m ; e) au 11ᵉ jour : 10 jours font 48 km (pas assez), 11 jours font 52,8 km.'],
-    fig: 'u5f1'
+    fig: 'u5f1',
+    cahier: [['table',{sub:['km','hm','dam','m','dm','cm','mm'],rows:[['','','','3','5','0','']]}],['txt','3,5 m = 350 cm : chaque saut de colonne = × 10 ou ÷ 10.'],['noex']],
+    jeu: 'Toise express : estime la largeur de la salle en mètres, puis vérifiez en comptant les pas. Qui s’est le moins trompé ?'
   },
   {
     t: 'Le périmètre des polygones', comp: 'Mesure', theme: 'Périmètre : formules et problèmes',
@@ -165,7 +167,9 @@ const S = [
       'a) 4 × 7 = 28 cm ; b) (9 + 4) × 2 = 26 cm ; d) 3 × 6 = 18 cm ; e) 5 + 7 + 9 = 21 cm.',
       'a) 36 ÷ 4 = 9 cm ; b) 30 ÷ 2 = 15, puis 15 − 9 = 6 cm ; d) (25 + 18) × 2 = 86 m ; e) 86 × 12 000 = 1 032 000 Ar.',
       'a) 4 × 15 = 60 m ; b) 60 − 2 = 58 m ; d) 6 rouleaux (5 rouleaux = 50 m, insuffisant) ; e) 60 − 58 = 2 m.'],
-    fig: 'u5f2'
+    fig: 'u5f2',
+    cahier: [['table',{sub:['Figure','Périmètre'],rows:[['carré','c × 4'],['rectangle','(L + l) × 2'],['triangle','a + b + c'],['cercle','2 × π × r']]}],['txt','Le périmètre, c’est le tour complet — comme une clôture.'],['noex']],
+    jeu: 'La clôture : un champ carré de 25 m de côté. Combien de mètres de clôture ? Et s’il faut une porte de 2 m ? (100 m ; 98 m.)'
   },
   {
     t: 'La circonférence du cercle', comp: 'Mesure', theme: 'Circonférence : C = d × 3,14',
@@ -194,7 +198,9 @@ const S = [
       'a) 10 × 3,14 = 31,4 cm ; b) 12,56 cm ; d) 2 × 3,14 × 3 = 18,84 cm ; e) 62,8 cm.',
       'a) 60 × 3,14 = 188,4 cm ; b) 1 884 cm ; d) 18,84 m ; e) 100 ÷ 1,884 ≈ 53 tours.',
       'a) circonférence = diamètre × π ; b) 6,28 ÷ 3,14 = 2 m ; d) 1 m ; e) le grand rayon vaut 1 + 1 = 2 m, donc 2 × 3,14 × 2 = 12,56 m.'],
-    fig: 'u5f3'
+    fig: 'u5f3',
+    cahier: [['table',{sub:['Figure','Aire'],rows:[['carré','c × c'],['rectangle','L × l'],['triangle','(b × h) ÷ 2'],['disque','π × r × r']]}],['vx',[[true,'périmètre en m, aire en m² : deux unités différentes !']]],['noex']],
+    jeu: 'Le pavage : combien de carreaux de 1 dm sur 1 dm pour couvrir une table de 12 dm sur 8 dm ? (96 carreaux = 96 dm² !)'
   },
   {
     t: 'La masse : estimer, mesurer, convertir', comp: 'Mesure', theme: 'Unités de masse jusqu’à la tonne',
@@ -223,7 +229,9 @@ const S = [
       'a) 3 000 g ; b) 4,5 kg ; d) 2 000 kg ; e) 1 000 g = 1 kg.',
       'a) en kg (300 à 400 kg environ) ; b) en g ; d) en kg ; e) en t.',
       'a) 25 000 g ; b) 25 000 ÷ 500 = 50 sachets ; d) 50 × 2 500 = 125 000 Ar ; e) 125 000 − 110 000 = 15 000 Ar.'],
-    fig: 'u5f4'
+    fig: 'u5f4',
+    cahier: [['table',{sub:['Solide','Volume'],rows:[['cube','a × a × a'],['pavé','L × l × h'],['cylindre','π × r² × h']]}],['txt','Le volume se mesure en cm³, dm³, m³ — et 1 dm³ = 1 litre !'],['noex']],
+    jeu: 'Le déménageur : combien de cubes de 1 cm de côté dans une boîte de 5 cm × 4 cm × 3 cm ? (60 cubes.)'
   },
   {
     t: 'La capacité : litres et conversions', comp: 'Mesure', theme: 'Unités de capacité ; lien capacité-masse',
@@ -252,7 +260,9 @@ const S = [
       'a) 300 cL ; b) 2,5 L ; d) 5 000 mL ; e) 1,5 L.',
       'a) 150 cL ; b) 150 ÷ 25 = 6 verres ; d) 4 × 25 = 100 cL ; e) 1 L.',
       'a) 200 ÷ 12,5 = 16 arrosoirs ; b) 16 × 12,5 = 200 L : c’est juste ; d) 16 ÷ 4 = 4 jours ; e) 3 jours = 12 arrosoirs = 150 L utilisés, il reste 200 − 150 = 50 L.'],
-    fig: 'u5f5'
+    fig: 'u5f5',
+    cahier: [['table',{sub:['kg','hg','dag','g','dg','cg','mg'],rows:[['2','5','0','0','','','']]}],['txt','2,5 kg = 2 500 g — même glissement que pour les longueurs !'],['noex']],
+    jeu: 'La balance humaine : classe du plus léger au plus lourd : 1 500 g, 1,2 kg, 18 hg. (1,2 kg < 1 500 g < 18 hg.)'
   },
   {
     t: 'La mesure du temps : conversions et opérations', comp: 'Mesure', theme: 'Temps : conversions, calculs de durées',
@@ -281,7 +291,9 @@ const S = [
       'a) 120 min ; b) 3 min ; d) 200 s ; e) 1 h 30 min.',
       'a) 2 h 35 min ; b) à 11 h 45 ; d) à 17 h 20 ; e) 2 h 35 + 2 h 50 = 5 h 25 min.',
       'a) à 22 h 25 ; b) de 21 h 30 à 22 h 25 : 55 minutes ; d) à 15 h 55 ; e) 60 + 50 = 110 minutes.'],
-    fig: 'u5f6'
+    fig: 'u5f6',
+    cahier: [['table',{sub:['L','dL','cL','mL'],rows:[['1','10','100','1 000']]}],['vx',[[true,'1 L = 1 dm³ : les capacités et les volumes se rejoignent !']]],['noex']],
+    jeu: 'Le doseur : une bouteille de 1,5 L remplit combien de verres de 25 cL ? (6 verres.)'
   },
   {
     t: 'L’aire du rectangle et du carré', comp: 'Mesure', theme: 'Aires : rectangle et carré',
@@ -310,7 +322,9 @@ const S = [
       'a) 6 × 6 = 36 cm² ; b) 8 × 5 = 40 cm² ; d) 144 m² ; e) 140 m².',
       'a) 9 × 6 = 54 m² ; b) 54 carreaux ; d) 54 × 8 000 = 432 000 Ar ; e) (9 + 6) × 2 = 30 m.',
       'a) 24 × 15 = 360 m² ; b) 8 × 8 = 64 m² ; d) 360 − 64 = 296 m² ; e) 296 × 1 500 = 444 000 Ar.'],
-    fig: 'u5f7'
+    fig: 'u5f7',
+    cahier: [['table',{sub:['h','min','s'],rows:[['1','60','3 600'],['2','120','7 200']]}],['vx',[[false,'1 h 30 = 130 min ? Non !'],[true,'1 h 30 = 90 min : on compte en base 60']]],['noex']],
+    jeu: 'Course contre la montre : le film commence à 20 h 45 et dure 1 h 50. À quelle heure finit-il ? (22 h 35.)'
   },
   {
     t: 'L’aire du triangle ; comparer des aires', comp: 'Mesure', theme: 'Aire du triangle ; comparaison d’aires',
@@ -339,7 +353,9 @@ const S = [
       'a) (6 × 4) ÷ 2 = 12 cm² ; b) 35 cm² ; d) 27 cm² ; e) 12,5 cm².',
       'a) (24 × 2) ÷ 8 = 6 cm ; b) triangle : (12 × 5) ÷ 2 = 30 cm² ; rectangle : 6 × 5 = 30 cm² : aires égales ; d) 12 cm² et 24 cm² : la seconde est le double ; e) parce qu’un triangle est la moitié d’un rectangle de même base et de même hauteur.',
       'a) (40 × 25) ÷ 2 = 500 m² ; b) (40 × 15) ÷ 2 = 300 m² ; d) 500 + 300 = 800 m² ; e) 800 × 2 = 1 600 kg de maïs.'],
-    fig: 'u5f8'
+    fig: 'u5f8',
+    cahier: [['table',{sub:['Montant (Ar)','Forme','Pour acheter…'],rows:[['500','pièce/billet','1 pain'],['2 000','billet','1 cahier'],['10 000','billet','1 poulet']]}],['txt','Pour rendre la monnaie, on complète : 3 600 → 4 000 → 5 000.'],['noex']],
+    jeu: 'Le marchand : tu achètes pour 7 300 Ar et tu donnes 10 000 Ar. Décris le rendu billet par billet ! (200 + 500 + 2 000 = 2 700 Ar.)'
   },
   {
     t: 'Le volume : cubes unités, cube et pavé droit', comp: 'Mesure', theme: 'Notion intuitive de volume (cm³)',
@@ -368,7 +384,9 @@ const S = [
       'a) 3 × 3 × 3 = 27 cm³ ; b) 125 cm³ ; d) 48 cm³ ; e) 90 cm³.',
       'a) 20 × 10 × 5 = 1 000 cm³ ; b) 1 000 cubes ; d) un cube d’arête 5 cm vaut 125 cm³ : 1 000 ÷ 125 = 8 cubes ; e) 4 cubes par longueur × 2 par largeur × 1 par hauteur = 8 : c’est juste.',
       'a) 2 × 1 × 1,5 = 3 m³ ; b) 3 000 L ; d) 2/3 × 3 000 = 2 000 L ; e) il manque 1 000 L, soit 1 000 ÷ 20 = 50 bidons.'],
-    fig: 'u5f9'
+    fig: 'u5f9',
+    cahier: [['txt','Toujours la même unité avant de calculer !'],['vx',[[false,'2 m + 50 cm = 52 ? Jamais sans convertir !'],[true,'200 cm + 50 cm = 250 cm = 2,50 m']]],['noex']],
+    jeu: 'Pièges en stock : 1 kg de plumes ou 1 kg de pierres, lequel est le plus lourd ? (Aucun : c’est le même kg !)'
   }
 ];
 

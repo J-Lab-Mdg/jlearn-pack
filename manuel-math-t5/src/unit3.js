@@ -113,7 +113,9 @@ const S = [
       'a) + 2 : 10 puis 12 ; b) + 5 : 20 puis 25 ; d) + 2 : 9 puis 11 ; e) − 10 : 50 puis 40.',
       'a) croissant : un triangle de plus à chaque étape ; b) 4 triangles ; d) 6 triangles ; e) par exemple : carré, rond, carré, rond, carré, rond… (le groupe « carré-rond » se répète).',
       'a) non : 6 + 3 = 9, or le terme suivant est 12 ; b) chaque terme est multiplié par 2 ; d) 48 puis 96 ; e) croissant : les valeurs augmentent selon une règle.'],
-    fig: 'u3f1'
+    fig: 'u3f1',
+    cahier: [['txt','2 → 4 → 6 → 8 → ?        motif : + 2'],['vx',[[true,'3 ; 6 ; 12 ; 24 : motif × 2'],[false,'3 ; 6 ; 12 ; 24 : motif + 3 ? Vérifie : 6 + 3 = 9, pas 12 !']]],['noex']],
+    jeu: 'Invente ta suite ! Ton voisin doit deviner ton motif en trois essais maximum.'
   },
   {
     t: 'Le rang d’un terme : relier le rang à la quantité', comp: 'Algèbre', theme: 'Rang d’un terme et relation rang-quantité',
@@ -142,7 +144,9 @@ const S = [
       'a) 6 ; b) rang 4 ; d) 18 ; e) le rang 1.',
       'a) + 3 à chaque rang ; b) quantité = 3 × rang ; d) 3 × 7 = 21 allumettes ; e) 30 ÷ 3 = 10 : au rang 10.',
       'a) quantité = 5 × rang ; b) 5 × 9 = 45 boutons ; d) 60 ÷ 5 = 12 : rang 12 ; e) non : la robe de rang 13 demande 5 × 13 = 65 boutons, et 65 > 60.'],
-    fig: 'u3f2'
+    fig: 'u3f2',
+    cahier: [['table',{sub:['Rang','1','2','3','4','10'],rows:[['Quantité','3','6','9','12','30']]}],['txt','Quantité = 3 × rang : la règle relie la place à la valeur.'],['noex']],
+    jeu: 'Le devin : dans une suite où quantité = 5 × rang, que vaut le rang 100 ? Réponds sans compter un par un ! (500.)'
   },
   {
     t: 'Les tableaux de valeurs', comp: 'Algèbre', theme: 'Tableaux de valeurs simples',
@@ -171,7 +175,9 @@ const S = [
       'a) + 4 ; b) quantité = 4 × rang ; d) 32 ; e) rang 10.',
       'a) 21 (rang 3) et 35 (rang 5) ; b) quantité = 7 × rang ; d) 70 ; e) non : 50 n’est pas un multiple de 7.',
       'a) 6 (chaque table apporte 6 chaises) ; b) 6 × 7 = 42 chaises ; d) 54 ÷ 6 = 9 tables ; e) 6 ; 12 ; 18 ; 24 ; 30 ; 36.'],
-    fig: 'u3f3'
+    fig: 'u3f3',
+    cahier: [['table',{sub:['Rang','1','2','3','4','5','6'],rows:[['Quantité','7','14','21','28','35','42']]}],['txt','Quantité = 7 × rang — et 50 n’apparaîtra jamais : ce n’est pas un multiple de 7 !'],['noex']],
+    jeu: 'Chasse à l’intrus : rang 1 → 4 ; rang 2 → 8 ; rang 3 → 11 ; rang 4 → 16. Où est l’erreur ? (11 : ce devrait être 12.)'
   },
   {
     t: 'La correspondance entre deux quantités', comp: 'Algèbre', theme: 'Relations simples et proportionnalité intuitive',
@@ -200,7 +206,9 @@ const S = [
       'a) 6 400 Ar ; b) 16 000 Ar ; d) 32 000 Ar ; e) 3 200 : le prix d’un kilogramme.',
       'a) 12 400 ÷ 2 = 6 200 Ar ; b) 2 × 12 400 = 24 800 Ar ; d) 12 400 + 18 600 = 31 000 Ar ; e) 6 200 ; 12 400 ; 18 600 ; 24 800 ; 31 000.',
       'a) 120 km = 2 × 60 km : 2 × 1,8 = 3,6 L ; b) 30 km est la moitié de 60 km : 0,9 L ; d) 90 km = 60 + 30 : 1,8 + 0,9 = 2,7 L ; e) 100 km : 1,8 ÷ 60 = 0,03 L par km, donc 0,03 × 100 = 3 L.'],
-    fig: 'u3f4'
+    fig: 'u3f4',
+    cahier: [['table',{sub:['Litres','1','2','3','4','5'],rows:[['Ariary','6 200','12 400','18 600','24 800','31 000']]}],['txt','On passe d’une ligne à l’autre en multipliant par 6 200 : le coefficient !'],['noex']],
+    jeu: 'Marché malin : 3 mangues coûtent 1 500 Ar. Et 9 mangues ? Réponds sans poser d’opération ! (3 fois plus : 4 500 Ar.)'
   },
   {
     t: 'La règle de trois', comp: 'Algèbre', theme: 'Règle de trois et valeur inconnue dans un tableau',
@@ -229,7 +237,9 @@ const S = [
       'a) 7 500 ÷ 3 = 2 500 Ar ; b) 5 × 2 500 = 12 500 Ar ; d) 8 × 2 500 = 20 000 Ar ; e) la règle de trois : on passe d’abord par le prix de l’unité.',
       'a) 60 ÷ 4 = 15 g ; b) 7 × 15 = 105 g ; d) 150 g ; e) 150 ÷ 15 = 10 m.',
       'a) première ligne 6 et 10 (m²), deuxième ligne 9 et ? (litres) ; b) ? = (10 × 9) ÷ 6 = 90 ÷ 6 = 15 L ; d) (12 × 6) ÷ 9 = 72 ÷ 9 = 8 m² ; e) 9 ÷ 6 = 1,5 : il faut 1,5 L par m².'],
-    fig: 'u3f5'
+    fig: 'u3f5',
+    cahier: [['txt','6 m² → 9 L de peinture ; 10 m² → ? L'],['txt','? = (10 × 9) ÷ 6 = 15 L : c’est le produit en croix !'],['noex']],
+    jeu: 'L’échelle de la carte : 2 cm sur la carte = 10 km réels. Que valent 7 cm ? (35 km.)'
   },
   {
     t: 'Le sens du signe égal', comp: 'Algèbre', theme: 'Égalité et équivalence entre deux expressions',
@@ -258,7 +268,9 @@ const S = [
       'a) vrai ; b) vrai : une égalité se lit dans les deux sens ; d) vrai : 13 = 13 ; e) faux : 13 n’est pas égal à 15.',
       'a) 15 ; b) 8 ; d) 25 ; e) 48.',
       'a) 3 × ? + 2 = 14 ; b) 14 − 2 = 12 kg ; d) 12 ÷ 3 = 4 kg ; e) 3 × 4 + 2 = 14 : la balance est bien en équilibre.'],
-    fig: 'u3f6'
+    fig: 'u3f6',
+    cahier: [['vx',[[true,'8 + 5 = 10 + 3 : les deux côtés valent 13'],[false,'8 + 5 = 13 + 2 : la balance penche !']]],['txt','Le signe = est une balance en équilibre : même valeur des deux côtés.'],['noex']],
+    jeu: 'Balance folle : complète 25 + ? = 3 × 10. (5, car les deux côtés doivent faire 30 !)'
   },
   {
     t: 'Trouver la valeur inconnue', comp: 'Algèbre', theme: 'Équations simples et essais systématiques',
@@ -287,7 +299,9 @@ const S = [
       'a) 23 ; b) 34 ; d) 9 ; e) 40.',
       'a) 175 ; b) 10 ; d) on retire d’abord 10 des deux côtés (4 × ? = 40), puis on divise par 4 ; e) par exemple 3 × ? + 1 = 22.',
       'a) 4 × ? + 500 = 4 500 ; b) 4 500 − 500 = 4 000 Ar ; d) 4 000 ÷ 4 = 1 000 Ar ; e) 4 × 1 000 + 500 = 4 500 Ar : c’est juste.'],
-    fig: 'u3f7'
+    fig: 'u3f7',
+    cahier: [['txt','4 × ? + 500 = 4 500'],['txt','4 × ? = 4 000, donc ? = 1 000'],['vx',[[true,'vérification : 4 × 1 000 + 500 = 4 500']]],['noex']],
+    jeu: 'Le nombre caché : je pense à un nombre, je le double, j’ajoute 3 et j’obtiens 15. Quel est mon nombre ? (6.)'
   }
 ];
 

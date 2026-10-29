@@ -116,7 +116,9 @@ const S = [
       'a) « Quel est ton sport préféré ? » ; b) football, basket, course, danse (par exemple) ; d) les élèves de l’école ; e) par exemple : « Le football sera le sport le plus choisi. »',
       'a) un questionnaire distribué dans les maisons, des entrevues dans un lieu public ; b) au hasard ; d) pour que les résultats ne soient pas faussés (biaisés) et restent valables ; e) les réponses pencheraient vers les goûts des enfants : le sondage serait biaisé.',
       'a) non : une seule classe ne représente pas toute l’école ; b) tirer au sort des élèves dans toutes les classes ; d) « Comment viens-tu à l’école ? » ; e) à pied, à vélo, en taxi-be, en charrette, autre.'],
-    fig: 'u6f1'
+    fig: 'u6f1',
+    cahier: [['vx',[[true,'on interroge des personnes choisies AU HASARD'],[false,'interroger seulement ses amis : résultats biaisés !']]],['txt','Une bonne enquête : une question claire + un échantillon varié.'],['noex']],
+    jeu: 'Mini-sondage : pose à cinq camarades la question « thé ou café à la maison ? » et note les réponses dans un tableau.'
   },
   {
     t: 'Collecter et organiser : tableaux simples et chronologiques', comp: 'Traitement de données', theme: 'Collecte et tableaux des effectifs',
@@ -145,7 +147,9 @@ const S = [
       'a) mangue 4 ; banane 3 ; letchi 2 ; ananas 1 ; b) 4 ; d) 10 personnes ; e) par ordre alphabétique ou par effectif décroissant.',
       'a) un tableau chronologique ; b) mercredi (15°) ; d) vendredi, samedi et dimanche ; e) pour suivre l’évolution de la température au fil du temps.',
       'a) 7 + 8 + 4 + 3 + 3 = 25 : le compte est bon ; b) les fraises ; d) les mûres et les pêches ; e) 8 clients sur 25 choisissent les fraises ; pour 50 fruits (le double), il faut 2 × 8 = 16 fraises.'],
-    fig: 'u6f2'
+    fig: 'u6f2',
+    cahier: [['table',{sub:['Fruit','mangue','fraise','banane','mûre','pêche'],rows:[['Effectif','7','8','4','3','3']]}],['txt','Le total des effectifs = 25 = le nombre d’élèves interrogés.'],['noex']],
+    jeu: 'L’enquêteur : compte les lettres du prénom de chaque élève de ta rangée et dresse le tableau des effectifs !'
   },
   {
     t: 'Diagrammes en barres et pictogrammes', comp: 'Traitement de données', theme: 'Représentations : barres et pictogrammes',
@@ -174,7 +178,9 @@ const S = [
       'a) celle du football ; b) 12 + 8 + 6 + 4 = 30 élèves ; d) 12 − 4 = 8 ; e) 8 ÷ 2 = 4 dessins.',
       'a) le nombre de sacs ; b) celle du manioc (12) ; d) 2 graduations (6 = 2 × 3) ; e) quatre barres de hauteurs 9, 6, 12 et 3.',
       'a) 4 × 10 = 40 zébus ; b) 35 zébus ; d) 40 + 60 + 35 + 20 = 155 zébus ; e) la moitié de 10, soit 5 zébus.'],
-    fig: 'u6f3'
+    fig: 'u6f3',
+    cahier: [['txt','Diagramme à bandes : une barre par catégorie, hauteur = effectif.'],['vx',[[true,'les barres partent toutes de zéro'],[false,'des barres de largeurs différentes : interdit !']]],['noex']],
+    jeu: 'L’œil de lynx : dans le diagramme des fruits, quelle barre dépasse toutes les autres ? Réponds en 3 secondes ! (La fraise : 8.)'
   },
   {
     t: 'Interpréter des données', comp: 'Traitement de données', theme: 'Lecture et interprétation de données',
@@ -203,7 +209,9 @@ const S = [
       'a) 4 élèves ; b) 9 + 4 + 1 = 14 élèves ; d) 5 + 4 + 2 + 9 + 4 + 1 = 25 : c’est juste ; e) non : le diagramme s’arrête à 120 min, il ne donne aucune information au-delà.',
       'a) samedi (60 bols) ; b) jeudi (20 bols) ; d) 30 + 25 + 35 + 20 + 40 + 60 + 55 = 265 bols ; e) 60 − 20 = 40 bols.',
       'a) janvier (450 mm) ; b) juin et juillet ; d) 450 mm contre 200 mm : plus du double ; e) il pleut beaucoup pendant l’été (décembre à mars) et presque pas en hiver : saison des pluies et saison sèche bien marquées.'],
-    fig: 'u6f4'
+    fig: 'u6f4',
+    cahier: [['table',{sub:['Temps TV','0-20 min','20-40','40-60','plus de 60'],rows:[['Élèves','2','4','6','18']]}],['txt','L’histogramme regroupe par tranches — idéal pour les mesures.'],['noex']],
+    jeu: 'Lecture éclair : combien d’élèves regardent la télé MOINS de 40 minutes ? (2 + 4 = 6 élèves.)'
   },
   {
     t: 'Expériences aléatoires et tableaux de dénombrement', comp: 'Traitement de données', theme: 'Expériences aléatoires : dés, pièces, jetons',
@@ -232,7 +240,9 @@ const S = [
       'a) 1, 2, 3, 4, 5 et 6 ; b) 6 issues ; d) non : elle n’existe pas sur le dé ; e) oui, si le dé est équilibré : c’est l’équiprobabilité.',
       'a) rouge, bleu, jaune ; b) 3 + 2 + 1 = 6 boules ; d) le rouge : 3 boules sur 6 ; e) tableau : rouge 3 ; bleu 2 ; jaune 1.',
       'a) PP, PF, FP, FF ; b) 4 issues ; d) 2 issues : PF et FP ; e) oui : une chance sur quatre chacune.'],
-    fig: 'u6f5'
+    fig: 'u6f5',
+    cahier: [['table',{sub:['Expérience','Issues possibles'],rows:[['pièce','pile, face'],['dé','1, 2, 3, 4, 5, 6'],['roue 4 couleurs','R, B, V, J']]}],['txt','Lister TOUTES les issues avant de parler de chances !'],['noex']],
+    jeu: 'L’arbre magique : on lance une pièce DEUX fois. Liste toutes les issues possibles ! (PP, PF, FP, FF : quatre issues.)'
   },
   {
     t: 'La probabilité expérimentale', comp: 'Traitement de données', theme: 'Fréquences et probabilité expérimentale',
@@ -261,7 +271,9 @@ const S = [
       'a) pile ou face ; b) parce que les deux issues ont exactement la même chance de se produire ; d) 1/2 ; e) 50 %.',
       'a) 1/6 ; b) 3/6 = 1/2 ; d) 2/6 = 1/3 (les issues 1 et 2) ; e) probabilité = nombre de résultats favorables ÷ nombre de résultats équiprobables.',
       'a) 30/50 ; b) 3/5 ; d) 20/50 = 2/5 ; e) parce que les deux issues ne sont pas équiprobables : seule la répétition de l’expérience permet d’estimer leurs chances.'],
-    fig: 'u6f6'
+    fig: 'u6f6',
+    cahier: [['table',{sub:['Événement','Probabilité'],rows:[['pile','1/2 = 50 %'],['faire un 6','1/6'],['nombre pair au dé','3/6 = 1/2']]}],['txt','probabilité = cas favorables ÷ cas possibles (issues équiprobables)'],['noex']],
+    jeu: 'Pari malin : au dé, vaut-il mieux parier « plus grand que 4 » ou « nombre pair » ? (Pair : 3 chances sur 6 contre 2 sur 6 !)'
   }
 ];
 

@@ -179,7 +179,9 @@ const S = [
       'a) aigu ; b) droit ; d) obtus ; e) plat.',
       'a) par un petit carré au sommet ; b) AÔB : la lettre du sommet s’écrit toujours au centre, sous le chapeau ; d) 0° : ses deux côtés sont confondus ; e) 360° : un tour complet.',
       'a) 90° : angle droit ; b) 180° : angle plat ; d) 30° : angle aigu ; e) non : un angle aigu mesure moins de 90°, c’est lui qui tient dans l’angle droit, jamais l’inverse.'],
-    fig: 'u4f1'
+    fig: 'u4f1',
+    cahier: [['table',{sub:['point','droite','segment','demi-droite'],rows:[['A','(d)','[AB]','[Ax)']]}],['txt','La droite est infinie des deux côtés ; le segment a deux bouts.'],['noex']],
+    jeu: 'Chasse aux lignes : trouve dans la classe un objet « segment », un objet « droite » (presque !) et un objet « point ». Top chrono !'
   },
   {
     t: 'Classer les triangles selon leurs côtés', comp: 'Géométrie', theme: 'Triangle équilatéral, isocèle, scalène',
@@ -208,7 +210,9 @@ const S = [
       'a) équilatéral ; b) isocèle ; d) scalène (quelconque) ; e) équilatéral.',
       'a) 20 − 6 = 14 cm ; b) 14 ÷ 2 = 7 cm chacun ; d) non : il faudrait 6 cm partout, soit un périmètre de 18 cm et non 20 cm ; e) croquis avec deux petits traits sur les côtés de 7 cm.',
       'a) vrai : il possède bien au moins deux côtés égaux ; b) faux : 2 + 3 = 5 < 8, les deux petits côtés ne peuvent pas rejoindre les extrémités du grand ; d) faux : scalène signifie justement trois côtés tous différents ; e) faux : deux côtés égaux suffisent.'],
-    fig: 'u4f2'
+    fig: 'u4f2',
+    cahier: [['table',{sub:['Angle','Mesure'],rows:[['nul','0°'],['aigu','entre 0° et 90°'],['droit','90°'],['obtus','entre 90° et 180°'],['plat','180°']]}],['txt','Notation : angle ABC, le sommet B toujours au milieu !'],['noex']],
+    jeu: 'Le corps-angle : avec tes deux bras, montre un angle droit, puis un aigu, puis un obtus. Ton voisin devine lequel !'
   },
   {
     t: 'Classer les triangles selon leurs angles', comp: 'Géométrie', theme: 'Triangle rectangle, angles aigus, angle obtus',
@@ -237,7 +241,9 @@ const S = [
       'a) triangle rectangle (et isocèle) ; b) triangle aux trois angles aigus (acutangle) ; d) triangle avec un angle obtus (obtusangle) ; e) acutangle : c’est le triangle équilatéral.',
       'a) non : 90° + 90° = 180°, il ne reste rien pour le troisième angle ; b) non : la somme dépasserait 180° ; d) oui : c’est le triangle acutangle ; e) oui : par exemple 90°, 45°, 45°.',
       'a) 180° ; b) 180 − 35 − 55 = 90° ; d) triangle rectangle ; e) 180 − 35 − 25 = 120° : le triangle serait obtusangle.'],
-    fig: 'u4f3'
+    fig: 'u4f3',
+    cahier: [['vx',[[true,'perpendiculaires : elles se coupent en formant un angle DROIT'],[false,'« elles se croisent, donc perpendiculaires » : pas forcément !'],[true,'parallèles : même écartement partout, jamais de rencontre']]],['noex']],
+    jeu: 'Détective : les lignes de ton cahier Seyès sont-elles parallèles ou perpendiculaires ? Et les grandes avec les verticales ? (Parallèles entre elles ; perpendiculaires entre les deux familles !)'
   },
   {
     t: 'Les propriétés des triangles : côtés, sommets, angles', comp: 'Géométrie', theme: 'Description complète d’un triangle',
@@ -266,7 +272,9 @@ const S = [
       'a) 3 sommets : A, B et C ; b) 3 côtés ; d) 3 angles ; e) [AB], [BC] et [CA].',
       'a) 7 + 9 + 12 = 28 cm ; b) non : les trois côtés sont différents ; d) en face du côté de 12 cm, le plus long ; e) 7 + 9 = 16 > 12 : le triangle existe bien.',
       'a) 5 + 5 = 10 cm ; b) non : les deux baguettes s’aplatissent exactement sur la troisième, aucun triangle ne se forme ; d) oui : 5 + 5 = 10 > 8 ; e) isocèle (deux côtés de 5 cm).'],
-    fig: 'u4f4'
+    fig: 'u4f4',
+    cahier: [['table',{sub:['Triangle','Particularité'],rows:[['quelconque','rien de spécial'],['isocèle','2 côtés égaux'],['équilatéral','3 côtés égaux'],['rectangle','1 angle droit']]}],['vx',[[true,'3, 4 et 5 cm : triangle possible (3 + 4 > 5)'],[false,'2, 3 et 7 cm : impossible, 2 + 3 < 7 !']]],['noex']],
+    jeu: 'Impossible ou pas ? Peut-on tracer un triangle de côtés 5, 5 et 10 cm ? (Non : 5 + 5 = 10, les côtés restent à plat !)'
   },
   {
     t: 'Polygones et quadrilatères', comp: 'Géométrie', theme: 'Figures géométriques planes',
@@ -295,7 +303,9 @@ const S = [
       'a) le triangle ; b) le quadrilatère ; d) le pentagone ; e) l’hexagone.',
       'a) le carré ; b) le rectangle ; d) le losange ; e) le parallélogramme.',
       'a) vrai : il a 4 angles droits ; b) faux : ses côtés ne sont pas forcément tous égaux ; d) vrai : il a 4 côtés égaux ; e) vrai : dans ABCD, ce sont [AC] et [BD].'],
-    fig: 'u4f5'
+    fig: 'u4f5',
+    cahier: [['table',{sub:['Triangle','Angles'],rows:[['acutangle','3 angles aigus'],['rectangle','1 angle droit'],['obtusangle','1 angle obtus']]}],['txt','La somme des trois angles fait toujours 180°.'],['noex']],
+    jeu: 'Angle mystère : un triangle a deux angles de 60° et 70°. Quel est le troisième ? (180 − 130 = 50°.)'
   },
   {
     t: 'Tracer avec les outils : règle, équerre, compas', comp: 'Géométrie', theme: 'Utilisation des outils de géométrie',
@@ -324,7 +334,9 @@ const S = [
       'a) la règle graduée ; b) l’équerre ; d) le compas ; e) le compas.',
       'a), b), d) constructions sur le cahier ; e) un triangle rectangle en A, de côtés 6 cm et 4 cm.',
       'a) le côté de 6 cm, par exemple ; b) le compas ; d) un arc de rayon 5 cm centré sur une extrémité, un arc de rayon 4 cm centré sur l’autre : leur point de rencontre est le troisième sommet ; e) l’écartement du compas reporte la longueur d’un seul geste, sans erreur de lecture.'],
-    fig: 'u4f6'
+    fig: 'u4f6',
+    cahier: [['table',{sub:['Quadrilatère','Côtés','Angles'],rows:[['carré','4 égaux','4 droits'],['rectangle','égaux 2 à 2','4 droits'],['losange','4 égaux','pas forcément droits']]}],['vx',[[true,'un carré est un rectangle ET un losange à la fois !']]],['noex']],
+    jeu: 'Qui suis-je ? J’ai 4 côtés égaux mais aucun angle droit. (Le losange !)'
   },
   {
     t: 'Reproduire une figure', comp: 'Géométrie', theme: 'Reproduction sur quadrillage et à l’échelle simple',
@@ -353,7 +365,9 @@ const S = [
       'a) les sommets de la figure ; b) en carreaux : vers la droite ou la gauche, puis vers le haut ou le bas ; d) les sommets, que l’on relie ensuite ; e) que les longueurs et la forme sont exactement les mêmes.',
       'a) 5 carreaux ; b) 3 carreaux ; d) tracé sur quadrillage ; e) A(3 ; 1).',
       'a) la règle, l’équerre et le compas ; b) d’abord le carré, puis le demi-cercle sur le côté choisi ; d) 2 cm : la moitié du côté de 4 cm ; e) en mesurant les côtés et le rayon, ou en superposant les deux figures.'],
-    fig: 'u4f7'
+    fig: 'u4f7',
+    cahier: [['table',{sub:['Côtés','3','4','5','6','8'],rows:[['Polygone','triangle','quadrilatère','pentagone','hexagone','octogone']]}],['txt','Régulier = tous les côtés ET tous les angles égaux (comme l’alvéole d’abeille).'],['noex']],
+    jeu: 'Safari des polygones : trouve autour de toi un hexagone caché (écrou, alvéole, ballon de foot…). Le premier qui en voit un gagne !'
   },
   {
     t: 'Décomposer un quadrilatère en triangles', comp: 'Géométrie', theme: 'Décomposition de polygones',
@@ -382,7 +396,9 @@ const S = [
       'a) 2 triangles ; b) 4 triangles ; d) [AC] ; e) [BD].',
       'a) ABC et ACD ; b) deux triangles rectangles (en B et en D) ; d) elles sont égales : chacune vaut la moitié du rectangle ; e) (8 × 5) ÷ 2 = 20 cm².',
       'a) 2 triangles ; b) parce qu’on sait calculer l’aire d’un triangle : il suffit ensuite d’additionner ; d) MNP et MPQ ; e) la diagonale [NQ].'],
-    fig: 'u4f8'
+    fig: 'u4f8',
+    cahier: [['vx',[[true,'symétrie : chaque point a son jumeau à la MÊME distance de l’axe'],[false,'un simple déplacement n’est pas une symétrie !']]],['txt','Test du pliage : si les deux moitiés se superposent, l’axe est bon.'],['noex']],
+    jeu: 'Miroir alphabet : quelles lettres majuscules ont un axe de symétrie ? Trouve-en cinq ! (A, H, M, O, T…)'
   },
   {
     t: 'Composer de nouvelles figures par assemblage', comp: 'Géométrie', theme: 'Composition de figures',
@@ -411,7 +427,9 @@ const S = [
       'a) un rectangle ; b) un rectangle ; d) un grand carré ; e) un losange.',
       'a) deux triangles rectangles isocèles ; b) 4 × 8 = 32 cm ; d) un grand triangle ou un parallélogramme ; e) non : on n’a rien ajouté ni enlevé, l’aire est conservée.',
       'a) 3 × 4 ou 2 × 6 (ou encore 1 × 12) ; b) l’assemblage 1 × 12 ; d) non : 12 n’est pas un carré parfait (3 × 3 = 9, 4 × 4 = 16) ; e) 12 dm² dans tous les cas.'],
-    fig: 'u4f9'
+    fig: 'u4f9',
+    cahier: [['table',{sub:['Outil','Il sert à…'],rows:[['règle','tracer, mesurer'],['équerre','angle droit'],['compas','cercles, reports'],['rapporteur','mesurer les angles']]}],['txt','Un programme de construction se suit pas à pas, comme une recette.'],['noex']],
+    jeu: 'Dictée de figure : décris une figure simple à ton voisin, sans la montrer. Il la trace. Comparez : est-elle identique ?'
   }
 ];
 

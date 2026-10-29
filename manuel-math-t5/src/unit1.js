@@ -129,7 +129,9 @@ const S = [
       'a) quinze mille ; b) soixante mille quinze ; d) trois cent quatre mille ; e) neuf cent quatre-vingt-dix-neuf mille neuf cent quatre-vingt-dix-neuf.',
       'a) 45 004 ; b) 405 000 ; d) 40 504 ; e) 400 050 ; ordre : 40 504 < 45 004 < 400 050 < 405 000.',
       'a) 203 070 ; b) il a oublié que la classe des unités s’écrit toujours avec TROIS chiffres : « soixante-dix » devient 070 ; d) 204 070 ; e) deux cent trois mille soixante-neuf.'],
-    fig: 'u1f1'
+    fig: 'u1f1',
+    cahier: [['boxes',{items:[['348','#FDE7EF','classe des mille'],['256','#E8F5E9','classe des unités']],lecture:'On lit : « trois cent quarante-huit » + « mille » + « deux cent cinquante-six ».'}],['vx',[[true,'« quarante mille sept » = 40 007 (TROIS chiffres pour les unités)'],[false,'407 : il manque les zéros du milieu !']]],['noex']],
+    jeu: 'Devinette : je suis un nombre de six chiffres ; ma classe des mille est 205 et ma classe des unités 030. Qui suis-je ? (Réponse : 205 030.)'
   },
   {
     t: 'La valeur de position : le tableau de numération', comp: 'Nombre', theme: 'Valeur de position jusqu’à 1 000 000',
@@ -158,7 +160,9 @@ const S = [
       'a) 2 ; b) 3 ; d) 8 ; e) 5.',
       'a) 456 ; b) 763 ; d) 802 ; e) 100.',
       'a) par exemple 587 210 (toute réponse avec le 8 en colonne DM convient) ; b) 875 210 ; d) 70 000 ; e) parce qu’un 0 placé devant ne compte pas : « 058 721 » est en réalité 58 721, un nombre de cinq chiffres seulement.'],
-    fig: 'u1f2'
+    fig: 'u1f2',
+    cahier: [['table',{groups:[['CLASSE DES MILLE','#F3E5F5',3],['CLASSE DES UNITÉS','#E8F5E9',3]],sub:['C','D','U','C','D','U'],rows:[['5','0','7','2','1','3']]}],['txt','Le 5 vaut 500 000 ; le 0 garde la place des dizaines de mille !'],['noex']],
+    jeu: 'Le chiffre mystère : dans 870 452, je vaux 70 000. Qui suis-je ? (Réponse : le chiffre 7.)'
   },
   {
     t: 'Comparer et ordonner avec >, < et =', comp: 'Nombre', theme: 'Comparaison et rangement des nombres',
@@ -187,7 +191,9 @@ const S = [
       'a) < ; b) > ; d) = ; e) >.',
       'a) 481 005 > 480 150 > 480 015 > 408 510 ; b) 480 015 (15 d’écart seulement) ; d) 481 005 > 480 150 > 480 100 > 480 015 > 408 510 ; e) par exemple 450 000 (tout nombre strictement compris convient).',
       'a) Toamasina > Mahajanga > Antsirabe > Fianarantsoa ; b) Antsirabe et Mahajanga (430 d’écart) ; d) Mahajanga : 246 022 + 4 000 = 250 022 > 250 000, alors qu’Antsirabe n’atteint que 249 592 ; e) 189 879 < 198 879 : même nombre de chiffres, on compare colonne par colonne depuis la gauche : 1 = 1, puis 8 < 9.'],
-    fig: 'u1f3'
+    fig: 'u1f3',
+    cahier: [['vx',[[true,'458 217 > 456 998 : on compare colonne par colonne depuis la GAUCHE (8 > 6)'],[false,'« 456 998 gagne parce que 998 est gros » : faux !']]],['txt','Plus de chiffres = plus grand : 100 000 > 99 999.'],['noex']],
+    jeu: 'Duel de nombres : chacun écrit six chiffres au hasard, puis forme le plus grand nombre possible. Qui gagne la manche ?'
   },
   {
     t: 'Composer les grands nombres par groupements', comp: 'Nombre', theme: 'Composition jusqu’à 1 000 000',
@@ -216,7 +222,9 @@ const S = [
       'a) 3 ; b) 9 ; d) 20 ; e) 50.',
       'a) 7 billets ; b) 14 billets ; d) 35 billets ; e) 5 × 50 000 = 250 000, il reste 100 000, soit 4 billets de 25 000.',
       'a) par exemple 10 × 50 000 + 11 × 25 000 = 500 000 + 275 000 = 775 000 Ar ; b) 16 coupures (15 de 50 000 et 1 de 25 000) ; d) 775 000 − 12 × 50 000 = 775 000 − 600 000 = 175 000 = 7 × 25 000, donc 7 coupures ; e) 600 000 + 175 000 = 775 000 : le compte est bon.'],
-    fig: 'u1f4'
+    fig: 'u1f4',
+    cahier: [['table',{sub:['Paquets de…','10 000','25 000','50 000'],rows:[['pour 100 000','10','4','2']]}],['txt','Composer, c’est réunir des paquets — comme rendre la monnaie au marché !'],['noex']],
+    jeu: 'Jeu du banquier : compose 500 000 Ar avec le moins de billets possible (50 000, 25 000 et 10 000). Peux-tu faire exactement 10 billets ?'
   },
   {
     t: 'Décomposer les nombres de plusieurs façons', comp: 'Nombre', theme: 'Décomposition jusqu’à 1 000 000',
@@ -245,7 +253,9 @@ const S = [
       'a) 4 000 + 500 + 7 ; b) 80 000 + 6 000 + 20 ; d) 300 000 + 900 + 5 ; e) 900 000 + 90 000 + 9 000.',
       'a) 604 090 ; b) 20 503 ; d) 70 056 ; e) 80 400.',
       'a) 527 centaines ; b) 52 milliers et 700 unités ; d) 3 480 ; e) oui : 65 × 100 = 6 500.'],
-    fig: 'u1f5'
+    fig: 'u1f5',
+    cahier: [['txt','68 425 = (6 × 10 000) + (8 × 1 000) + (4 × 100) + (2 × 10) + 5'],['txt','Autres découpages : 68 milliers et 425 unités ; 684 centaines et 25 unités.'],['noex']],
+    jeu: 'Puzzle : 700 309 = (7 × ?) + (3 × ?) + 9. Retrouve les deux paquets ! (Réponse : 100 000 et 100.)'
   },
   {
     t: 'Représenter les fractions : numérateur et dénominateur', comp: 'Nombre', theme: 'Fractions simples',
@@ -274,7 +284,9 @@ const S = [
       'a) 5/6 ; b) 1/6 ; d) 1 : l’unité entière ; e) 4/5.',
       'a) 1/4 ; b) 1 000 ÷ 4 = 250 g ; d) 1/5, soit 200 g ; e) le nombre total de parts égales réalisées.',
       'a) 600 × 6 = 3 600 g ; b) 3 600 ÷ 24 = 150 g ; d) 150/600 = 1/4 de gâteau ; e) 24 × 150 = 3 600 g : le compte est bon.'],
-    fig: 'u1f6'
+    fig: 'u1f6',
+    cahier: [['barres',[[4,3,'3/4 : on prend 3 parts sur 4','#F8BBD0'],[4,1,'1/4 : une part sur 4','#BBDEFB']]],['txt','Le bas (dénominateur) dit comment on coupe ; le haut (numérateur) dit combien on prend.'],['noex']],
+    jeu: 'Devinette : je partage une galette en 8 parts égales et j’en mange la moitié des parts. Quelle fraction ai-je mangée ? (4/8, c’est-à-dire 1/2 !)'
   },
   {
     t: 'Les fractions équivalentes', comp: 'Nombre', theme: 'Équivalences (dénominateurs 2, 3, 4, 5, 6, 8, 10, 100)',
@@ -303,7 +315,9 @@ const S = [
       'a) 5/10 ; b) 4/6 ; d) 75/100 ; e) 1/2.',
       'a) 3/4 ; b) 1/10 ; d) 2/3 ; e) 1/2.',
       'a) ni l’une ni l’autre : 2/4 = 4/8 = 1/2, les deux bandes sont coloriées pareil ; b) par exemple 5/10 ou 50/100 ; d) on multiplie haut et bas par 2 ; e) replier la bande coupe chaque part en deux : il y a deux fois plus de parts, mais chacune est deux fois plus petite — la partie coloriée s’arrête au même endroit.'],
-    fig: 'u1f7'
+    fig: 'u1f7',
+    cahier: [['barres',[[2,1,'1/2','#F8BBD0'],[4,2,'2/4','#C5E1A5'],[8,4,'4/8','#BBDEFB']]],['txt','Trois écritures, la même quantité : la partie coloriée s’arrête au même endroit !'],['noex']],
+    jeu: 'Les jumelles : trouve en 30 secondes trois fractions égales à 1/3. (Par exemple 2/6, 3/9 et 4/12.)'
   },
   {
     t: 'Comparer et placer des fractions sur la droite numérique', comp: 'Nombre', theme: 'Fractions sur la droite numérique',
@@ -332,7 +346,9 @@ const S = [
       'a) < ; b) > ; d) = ; e) >.',
       'a) 6/12 ; b) 9/12 ; d) 8/12 ; e) 1/2 < 2/3 < 3/4.',
       'a) 5/8 ; 3/4 = 6/8 ; 1/2 = 4/8 ; b) Hery (6/8) ; d) Vola (4/8 = 1/2) ; e) sur la droite graduée de 0/8 à 8/8, on marque Vola à 4/8, Naina à 5/8, Hery à 6/8.'],
-    fig: 'u1f8'
+    fig: 'u1f8',
+    cahier: [['droite',{n:8,pts:[[4,'4/8'],[5,'5/8'],[6,'6/8']]}],['txt','Même dénominateur → le plus grand numérateur gagne : 6/8 > 5/8 > 4/8.'],['noex']],
+    jeu: 'Le plus gourmand : vaut-il mieux 1/3 ou 1/4 du même gâteau ? Explique ! (1/3 : moins de parts, donc des parts plus grosses.)'
   },
   {
     t: 'Fraction impropre et nombre fractionnaire', comp: 'Nombre', theme: 'Fractions impropres et nombres fractionnaires (jusqu’à 2)',
@@ -361,7 +377,9 @@ const S = [
       'a) 1 + 1/4 ; b) 1 + 2/5 ; d) 1 + 1/8 ; e) 1 + 1/10.',
       'a) 5/3 ; b) 11/8 ; d) 3/2 ; e) 8/4.',
       'a) 11/6 ; b) 6 entre 1 fois dans 11, reste 5 : 11/6 = 1 + 5/6 ; d) 2 pizzas ; e) 12/6 − 11/6 = 1/6.'],
-    fig: 'u1f9'
+    fig: 'u1f9',
+    cahier: [['barres',[[4,4,'4/4 = 1 entier','#C5E1A5'],[4,3,'et encore 3/4','#F8BBD0']]],['txt','7/4 = 4/4 + 3/4 = 1 + 3/4 : un entier plein, et il reste trois quarts.'],['noex']],
+    jeu: 'Pizza party : les invités mangent 9 parts de pizzas coupées en 4. Combien de pizzas entières ? (2 pizzas et 1/4.)'
   },
   {
     t: 'Les nombres décimaux jusqu’aux centièmes', comp: 'Nombre', theme: 'Nombres décimaux : dixièmes et centièmes',
@@ -390,7 +408,9 @@ const S = [
       'a) 3,5 ; b) 12,08 ; d) 0,42 ; e) 7,70 (c’est-à-dire 7,7).',
       'a) 3 ; b) 7 ; d) 6 unités ; e) quarante-six unités et trente-sept centièmes.',
       'a) 0,35 ; b) 35 + 7 = 42 cases, soit 0,42 ; d) 60 cases (6 colonnes) ; e) 1 : l’unité entière.'],
-    fig: 'u1f10'
+    fig: 'u1f10',
+    cahier: [['table',{groups:[['PARTIE ENTIÈRE','#E8F5E9',1],['PARTIE DÉCIMALE','#FDE7EF',2]],sub:['U','d','c'],rows:[['2','7','5']]}],['txt','2,75 = 2 unités, 7 dixièmes et 5 centièmes — la virgule marque la frontière.'],['noex']],
+    jeu: 'Le prix mystère : je suis entre 2,70 et 2,80, et mon chiffre des centièmes est 5. Qui suis-je ? (2,75.)'
   },
   {
     t: 'Comparer et ordonner les nombres décimaux', comp: 'Nombre', theme: 'Comparaison des décimaux ; 0,4 = 0,40',
@@ -419,7 +439,9 @@ const S = [
       'a) > ; b) = ; d) < ; e) >.',
       'a) ils sont égaux : 5,3 = 5,30 ; b) 5,09 < 5,1 < 5,3 ; d) 5,09 < 5,1 < 5,25 < 5,3 ; e) par exemple 5,2 (tout décimal strictement compris convient).',
       'a) Mamy (14,25 s, le plus petit temps) ; b) 14,25 < 14,5 < 14,52 < 15,02 ; d) 15,02 s ; e) on complète 14,5 en 14,50, puis on compare les centièmes : 50 < 52, donc 14,5 < 14,52.'],
-    fig: 'u1f11'
+    fig: 'u1f11',
+    cahier: [['vx',[[true,'3,5 = 3,50 : on complète avec un zéro, puis on compare'],[false,'« 3,5 < 3,45 parce que 5 < 45 » : faux !']]],['noex']],
+    jeu: 'Podium éclair : range 14,5 ; 14,25 ; 14,52 en 20 secondes ! (14,25 < 14,5 < 14,52.)'
   },
   {
     t: 'Fractions décimales et nombres décimaux', comp: 'Nombre', theme: 'Relation fractions décimales — décimaux',
@@ -448,7 +470,9 @@ const S = [
       'a) 0,7 ; b) 0,45 ; d) 1,30 (c’est-à-dire 1,3) ; e) 0,03.',
       'a) 9/10 ; b) 7/100 ; d) 25/10 ; e) 25/100 = 1/4.',
       'a) 3/4 = 75/100 ; b) 0,75 ; d) 0,5 ; e) 7/10 = 0,70 < 3/4 = 0,75 < 0,8.'],
-    fig: 'u1f12'
+    fig: 'u1f12',
+    cahier: [['table',{sub:['Fraction décimale','Nombre décimal'],rows:[['7/10','0,7'],['45/100','0,45'],['3/100','0,03']]}],['noex']],
+    jeu: 'Mémo éclair : 3/4 en décimal ? Et 0,5 en fraction ? (0,75 et 1/2.)'
   }
 ];
 

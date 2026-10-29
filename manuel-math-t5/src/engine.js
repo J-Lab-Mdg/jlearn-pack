@@ -85,7 +85,7 @@ function dateSeance(k) {
   return `${jours[d.getDay()]} ${d.getDate()} ${mois[d.getMonth()]} ${d.getFullYear()}`;
 }
 function cahierSvg(s) {
-  const W = 1240, H = 1660, MARG = 150, STEP = 62, INK = '#1A3FA8', F = 'Caveat, DejaVu Serif';
+  const W = 1240, H = 1660, MARG = 150, STEP = 62, INK = '#1A3FA8', F = 'Sacramento, DejaVu Serif';
   let b = `<rect width="100%" height="100%" fill="#FDFDF8"/>`;
   // quadrillage Seyès : interlignes fines + lignes principales + verticales
   for (let y = 100; y <= H - 50; y += STEP) {
@@ -99,37 +99,124 @@ function cahierSvg(s) {
   // date réaliste
   b += `<text x="${W - 60}" y="${y - 14}" font-family="${F}" font-size="34" fill="${INK}" text-anchor="end">${s._date || 'Date : ……………………'}</text>`;
   y += STEP;
-  // titre en MAJUSCULES souligné en rouge
+  // titre en MAJUSCULES souligné en rouge (taille auto pour tenir dans la page)
   const T = s.t.toUpperCase();
-  const tSize = T.length > 42 ? 34 : 44;
-  b += `<text x="${(MARG + W) / 2}" y="${y - 14}" font-family="${F}" font-size="${tSize}" font-weight="bold" fill="${INK}" text-anchor="middle">${escXml(T)}</text>`;
-  const tw = T.length * tSize * 0.42;
+  // titre sur 1 ou 2 lignes, taille ajustée à la plus longue ligne (Sacramento : capitales larges)
+  let tLines = [T];
+  if (T.length > 26) {
+    const words = T.split(' ');
+    let l1 = '', l2 = '';
+    for (const w of words) { if ((l1 + ' ' + w).trim().length <= Math.ceil(T.length / 2) + 4 && !l2) l1 = (l1 + ' ' + w).trim(); else l2 = (l2 + ' ' + w).trim(); }
+    tLines = l2 ? [l1, l2] : [l1];
+  }
+  const tMax = Math.max(...tLines.map(l => l.length));
+  const tSize = Math.max(26, Math.min(42, Math.floor((W - MARG - 110) / (tMax * 0.78))));
+  let tw = 0;
+  for (const tl of tLines) {
+    b += `<text x="${(MARG + W) / 2}" y="${y - 14}" font-family="${F}" font-size="${tSize}" font-weight="bold" fill="${INK}" text-anchor="middle" word-spacing="16">${escXml(tl)}</text>`;
+    tw = tl.length * tSize * 0.40;
+    y += STEP;
+  }
+  y -= STEP;
   b += `<line x1="${(MARG + W) / 2 - tw / 2}" y1="${y - 2}" x2="${(MARG + W) / 2 + tw / 2}" y2="${y - 2}" stroke="#D23B3B" stroke-width="3"/>`;
   y += STEP * 2;
-  // encadré Règle (stylo rouge)
-  const regleLines = wrapTxt(s.def, 56);
-  const boxTop = y - STEP + 16, boxH = (regleLines.length + 1) * STEP + 8;
-  b += `<rect x="${MARG + 14}" y="${boxTop}" width="${W - MARG - 70}" height="${boxH}" rx="12" fill="none" stroke="#D23B3B" stroke-width="3.5"/>`;
-  b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="36" font-weight="bold" fill="#D23B3B">Règle :</text>`;
-  y += STEP;
-  for (const line of regleLines) {
-    b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="35" fill="${INK}">${escXml(line)}</text>`;
-    y += STEP;
-  }
-  y += STEP;
-  // Exemple (stylo vert pour le mot, bleu pour le texte)
-  b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="36" font-weight="bold" fill="#2E7D32">Exemple :</text>`;
-  y += STEP;
-  const exLines = wrapTxt(firstSentences(s.exemple, 210), 60);
-  for (const line of exLines) {
-    if (y > H - 130) break;
-    b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="35" fill="${INK}">${escXml(line)}</text>`;
-    y += STEP;
-  }
-  // mention crayon en bas
-  if (y < H - 170) {
-    y += STEP;
-    b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="33" fill="#8A8A8A">Exercices n° 1 et 2 → sur le cahier d’exercices.</text>`;
+  const X0 = MARG + 40, USABLE = W - MARG - 90;
+  const extra = (s.cahier || []).filter(bl => bl[0] !== 'noex');
+  const noex = (s.cahier || []).some(bl => bl[0] === 'noex');
+  const blocks = [['regle', s.def], ...extra];
+  if (!noex) blocks.push(['ex', firstSentences(s.exemple, 190)]);
+  const wline = (line, size = 36, color = INK, x = X0) => { b += `<text x="${x}" y="${y - 14}" font-family="${F}" font-size="${size}" fill="${color}">${escXml(line)}</text>`; y += STEP; };
+  for (const bl of blocks) {
+    if (y > H - 200) break;
+    const kind = bl[0], val = bl[1];
+    if (kind === 'regle') {
+      const lines = wrapTxt(val, 56);
+      const boxTop = y - STEP + 16, boxH = (lines.length + 1) * STEP + 8;
+      b += `<rect x="${MARG + 14}" y="${boxTop}" width="${W - MARG - 70}" height="${boxH}" rx="12" fill="none" stroke="#D23B3B" stroke-width="3.5"/>`;
+      b += `<text x="${X0}" y="${y - 14}" font-family="${F}" font-size="38" font-weight="bold" fill="#D23B3B">Règle :</text>`;
+      y += STEP;
+      for (const l of lines) wline(l);
+      y += STEP;
+    } else if (kind === 'txt') {
+      for (const l of wrapTxt(val, 58)) wline(l, 36, bl[2] || INK);
+    } else if (kind === 'ex') {
+      b += `<text x="${X0}" y="${y - 14}" font-family="${F}" font-size="38" font-weight="bold" fill="#2E7D32">Exemple :</text>`;
+      y += STEP;
+      for (const l of wrapTxt(val, 58)) { if (y > H - 110) break; wline(l); }
+    } else if (kind === 'vx') {
+      for (const [ok, text] of val) {
+        const sym = ok ? '✓' : '✗', col = ok ? '#2E7D32' : '#D23B3B';
+        const lines = wrapTxt(text, 52);
+        b += `<text x="${X0}" y="${y - 14}" font-family="DejaVu Sans" font-size="34" font-weight="bold" fill="${col}">${sym}</text>`;
+        lines.forEach((l, j) => wline(l, 36, j === 0 ? col : INK, X0 + 46));
+      }
+    } else if (kind === 'table') {
+      const { groups, sub, rows } = val;
+      const nc = sub.length, cw = Math.min(USABLE / nc, nc <= 4 ? 480 : 170);
+      const tx = X0, tW = cw * nc;
+      let ty = y - STEP + 20;
+      const rowH = STEP * 0.9;
+      if (groups) {
+        let gx = tx;
+        for (const [label, fill, span] of groups) {
+          const gw = cw * span;
+          b += `<rect x="${gx}" y="${ty}" width="${gw}" height="${rowH}" fill="${fill}" stroke="#444" stroke-width="2"/>`;
+          b += `<text x="${gx + gw / 2}" y="${ty + rowH / 2 + 11}" font-family="${F}" font-size="29" font-weight="bold" fill="#333" text-anchor="middle">${escXml(label)}</text>`;
+          gx += gw;
+        }
+        ty += rowH;
+      }
+      sub.forEach((hcell, j) => {
+        b += `<rect x="${tx + j * cw}" y="${ty}" width="${cw}" height="${rowH}" fill="#F1F5FB" stroke="#444" stroke-width="2"/>`;
+        b += `<text x="${tx + j * cw + cw / 2}" y="${ty + rowH / 2 + 11}" font-family="${F}" font-size="31" font-weight="bold" fill="#1F4E79" text-anchor="middle">${escXml(String(hcell))}</text>`;
+      });
+      ty += rowH;
+      for (const row of rows) {
+        row.forEach((cellv, j) => {
+          b += `<rect x="${tx + j * cw}" y="${ty}" width="${cw}" height="${rowH}" fill="white" stroke="#444" stroke-width="2"/>`;
+          b += `<text x="${tx + j * cw + cw / 2}" y="${ty + rowH / 2 + 11}" font-family="${F}" font-size="31" fill="${INK}" text-anchor="middle">${escXml(String(cellv))}</text>`;
+        });
+        ty += rowH;
+      }
+      y = ty + STEP + 20; y = Math.ceil((y - 100) / STEP) * STEP + 100;
+    } else if (kind === 'boxes') {
+      const items = val.items, bw = 220, bh = STEP * 1.6;
+      let bx = X0;
+      const by = y - STEP + 20;
+      for (const [digits, fill, label] of items) {
+        b += `<rect x="${bx}" y="${by}" width="${bw}" height="${bh}" rx="10" fill="${fill}" stroke="#1F4E79" stroke-width="3"/>`;
+        b += `<text x="${bx + bw / 2}" y="${by + bh / 2 + 16}" font-family="${F}" font-size="48" font-weight="bold" fill="${INK}" text-anchor="middle">${escXml(digits)}</text>`;
+        b += `<line x1="${bx + bw / 2}" y1="${by + bh + 6}" x2="${bx + bw / 2}" y2="${by + bh + 34}" stroke="#B25000" stroke-width="2.5"/>`;
+        b += `<path d="M ${bx + bw / 2 - 7} ${by + bh + 26} L ${bx + bw / 2} ${by + bh + 36} L ${bx + bw / 2 + 7} ${by + bh + 26}" fill="none" stroke="#B25000" stroke-width="2.5"/>`;
+        b += `<text x="${bx + bw / 2}" y="${by + bh + 66}" font-family="${F}" font-size="28" fill="#B25000" text-anchor="middle">${escXml(label)}</text>`;
+        bx += bw + 36;
+      }
+      y = by + bh + 80; y = Math.ceil((y - 100) / STEP) * STEP + 100 + STEP;
+      if (val.lecture) for (const l of wrapTxt(val.lecture, 58)) wline(l);
+    } else if (kind === 'barres') {
+      for (const [n, k, label, fill] of val) {
+        const bw2 = 560, bh2 = 40, by2 = y - STEP + 24, cw2 = bw2 / n;
+        for (let i = 0; i < n; i++) b += `<rect x="${X0 + i * cw2}" y="${by2}" width="${cw2}" height="${bh2}" fill="${i < k ? (fill || '#F8BBD0') : 'white'}" stroke="#1F4E79" stroke-width="2.5"/>`;
+        b += `<text x="${X0 + bw2 + 30}" y="${by2 + bh2 / 2 + 12}" font-family="${F}" font-size="36" font-weight="bold" fill="${INK}">${escXml(label)}</text>`;
+        y += STEP;
+      }
+      y += STEP * 0.5; y = Math.ceil((y - 100) / STEP) * STEP + 100;
+    } else if (kind === 'droite') {
+      const { n, pts } = val, len = 820, ly = y + 10;
+      b += `<line x1="${X0}" y1="${ly}" x2="${X0 + len}" y2="${ly}" stroke="#1F4E79" stroke-width="3.5"/>`;
+      for (let i = 0; i <= n; i++) {
+        const xi = X0 + i * len / n;
+        b += `<line x1="${xi}" y1="${ly - 10}" x2="${xi}" y2="${ly + 10}" stroke="#1F4E79" stroke-width="2.5"/>`;
+      }
+      b += `<text x="${X0}" y="${ly + 46}" font-family="${F}" font-size="30" fill="#333" text-anchor="middle">0</text>`;
+      b += `<text x="${X0 + len}" y="${ly + 46}" font-family="${F}" font-size="30" fill="#333" text-anchor="middle">1</text>`;
+      for (const [i, label] of pts) {
+        const xi = X0 + i * len / n;
+        b += `<circle cx="${xi}" cy="${ly}" r="7" fill="#D23B3B"/>`;
+        b += `<text x="${xi}" y="${ly - 22}" font-family="${F}" font-size="30" font-weight="bold" fill="#D23B3B" text-anchor="middle">${escXml(label)}</text>`;
+      }
+      y += STEP * 2;
+    }
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">${b}</svg>`;
 }
@@ -225,6 +312,10 @@ function seance(s, i, total, uNo, figBufs, cahierBuf) {
   s.exos.forEach((e, k) => a.push(p(`${k + 1}. ${e}`)));
   a.push(title('CORRIGÉS', 2));
   s.corr.forEach((c, k) => a.push(correction(`${k + 1}. `, c)));
+  if (s.jeu) {
+    a.push(banner('PETIT JEU', C.wine));
+    a.push(p(s.jeu, { fill: 'FFF8E1' }));
+  }
   if (cahierBuf) {
     a.push(page());
     a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 0, after: 40 }, children: [tr('MON CAHIER', { bold: true, color: C.wine, size: 30 })] }));
@@ -329,4 +420,4 @@ async function buildUnit(u, figBufs) {
   console.log(`${out}: ${buf.length} octets`);
 }
 
-module.exports = { buildUnit };
+module.exports = { buildUnit, cahierSvg, dateSeance, U_OFFSET };

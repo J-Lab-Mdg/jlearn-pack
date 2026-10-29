@@ -169,7 +169,9 @@ const S = [
       'a) soustraction : 12 − 5 = 7 mangues ; b) addition : 35 + 12 = 47 billes ; d) multiplication : 3 × 25 = 75 kg ; e) soustraction : 42 − 28 = 14 places.',
       'a) « Combien de billes Paul a-t-il gagnées ? » ; b) son âge, 8 ans : donnée inutile ; d) 18 et 25 ; e) 25 − 18 = 7 billes gagnées.',
       'a) « Quel est le prix des 3 cahiers ? » ; b) 3 × 5 000 = 15 000 Ar ; d) 20 000 − 15 000 = 5 000 Ar ; e) 2 × 5 000 = 10 000 Ar, donc 20 000 − 10 000 = 10 000 Ar.'],
-    fig: 'u2f1'
+    fig: 'u2f1',
+    cahier: [['table',{sub:['Situation','Opération'],rows:[['on réunit, on ajoute','+'],['on retire, on compare','−'],['des paquets identiques','×'],['on partage, on groupe','÷']]}],['noex']],
+    jeu: 'Mime mathématique : ton voisin mime « retirer » ou « réunir » avec des objets, tu annonces l’opération en premier !'
   },
   {
     t: 'Additionner jusqu’à 1 000 000', comp: 'Opération', theme: 'Addition avec et sans retenue',
@@ -198,7 +200,9 @@ const S = [
       'a) 24 999 ; b) 500 000 ; d) 124 110 ; e) 1 000.',
       'a) 556 665 ; b) 210 987 + 345 678 = 556 665 : l’ordre ne change pas la somme ; d) 100 000 ; e) 544 000.',
       'a) « Quel est le total collecté ? » ; b) 238 450 + 197 865 = 436 315 kg ; d) non, car 436 315 < 450 000 ; e) 450 000 − 436 315 = 13 685 kg.'],
-    fig: 'u2f2'
+    fig: 'u2f2',
+    cahier: [['table',{sub:['','C M','D M','U M','C','D','U'],rows:[['','2','3','8','4','5','0'],['+','1','9','7','8','6','5'],['=','4','3','6','3','1','5']]}],['txt','On aligne les colonnes et on n’oublie pas les retenues !'],['noex']],
+    jeu: 'La cible : atteins exactement 1 000 000 en additionnant deux nombres ronds. (Par exemple 600 000 + 400 000.)'
   },
   {
     t: 'Soustraire jusqu’à 1 000 000', comp: 'Opération', theme: 'Soustraction avec et sans retenue',
@@ -227,7 +231,9 @@ const S = [
       'a) 4 444 ; b) 49 999 ; d) 52 222 ; e) 55 000.',
       'a) 315 550 ; b) 315 550 + 87 650 = 403 200 : c’est juste ; d) 576 001 ; e) 75 000.',
       'a) « Quel volume total a-t-on retiré ? » ; b) 38 750 + 29 480 = 68 230 L ; d) 125 000 − 68 230 = 56 770 L ; e) 56 770 + 68 230 = 125 000 L : le compte est bon.'],
-    fig: 'u2f3'
+    fig: 'u2f3',
+    cahier: [['vx',[[true,'50 000 − 1 = 49 999 : tous les zéros basculent'],[false,'50 000 − 1 = 49 991 : erreur de retenue !']]],['txt','On vérifie toujours une soustraction par l’addition inverse.'],['noex']],
+    jeu: 'Compte à rebours : pars de 100 000 et retire 11 111 trois fois de suite ! (88 889 ; 77 778 ; 66 667.)'
   },
   {
     t: 'Vérifier un résultat : preuve et estimation', comp: 'Opération', theme: 'Vérification des calculs',
@@ -256,7 +262,9 @@ const S = [
       'a) environ 10 000 ; exact : 10 010 ; b) environ 10 000 ; exact : 9 950 ; d) environ 40 × 20 = 800 ; exact : 819 ; e) environ 300 × 9 = 2 700 ; exact : 2 718.',
       'a) 4 198 + 1 234 = 5 432 : juste ; b) 648 ÷ 9 = 72 : juste ; d) 34 × 25 = 850 : juste ; e) 9 500 − 2 500 = 7 000 : juste.',
       'a) 1 + 2 + 3 + 4 = 10, puis 1 + 0 = 1 ; b) 2 + 3 = 5 ; d) 2 + 8 + 3 + 8 + 2 = 23, puis 2 + 3 = 5 ; e) oui : 1 × 5 = 5, qui est bien le chiffre trouvé pour le produit — la preuve par neuf rend le résultat très probable (mais elle ne détecte pas toutes les erreurs, comme deux chiffres échangés).'],
-    fig: 'u2f4'
+    fig: 'u2f4',
+    cahier: [['txt','1 234 → 1 + 2 + 3 + 4 = 10 → 1        23 → 5        1 × 5 = 5'],['txt','28 382 → 2 + 8 + 3 + 8 + 2 = 23 → 5 : même chiffre !'],['vx',[[true,'5 = 5 : le produit est très probablement juste'],[false,'la preuve par 9 ne voit pas deux chiffres échangés']]],['noex']],
+    jeu: 'Magicien du 9 : choisis un nombre, additionne ses chiffres, retire cette somme du nombre : le résultat est toujours un multiple de 9. Vérifie !'
   },
   {
     t: 'Multiplier : 3 chiffres × 2 chiffres', comp: 'Opération', theme: 'Multiplication posée',
@@ -285,7 +293,9 @@ const S = [
       'a) 4 922 ; b) 9 455 ; d) 5 535 ; e) 9 120.',
       'a) 8 320 ; b) 2 912 ; d) 8 320 + 2 912 = 11 232 ; e) la multiplication posée donne bien 11 232.',
       'a) environ 140 × 25 = 3 500 cahiers ; b) 136 × 24 = 3 264 cahiers ; d) 3 264 − 1 750 = 1 514 cahiers ; e) 136 donne 1 + 3 + 6 = 10 puis 1 ; 24 donne 6 ; 1 × 6 = 6 ; et 3 264 donne 3 + 2 + 6 + 4 = 15 puis 6 : la preuve est bonne.'],
-    fig: 'u2f5'
+    fig: 'u2f5',
+    cahier: [['txt','416 × 27 = (416 × 20) + (416 × 7)'],['txt','= 8 320 + 2 912 = 11 232'],['txt','On découpe le multiplicateur, puis on additionne les deux produits.'],['noex']],
+    jeu: 'Casse-tête : calcule 25 × 16 de tête ! Astuce : 25 × 4 × 4 = 100 × 4. (400.)'
   },
   {
     t: 'Diviser avec quotient et reste', comp: 'Opération', theme: 'Division euclidienne simple',
@@ -314,7 +324,9 @@ const S = [
       'a) 12 ; b) 23, reste 3 ; d) 21, reste 4 ; e) 8.',
       'a) 240 < 384 < 2 400 ; b) 2 chiffres ; d) 384 ÷ 24 = 16, reste 0 ; e) 16 × 24 + 0 = 384 : c’est juste.',
       'a) 30 × 10 = 300 < 875 < 30 × 100 = 3 000, donc 2 chiffres au quotient ; b) 875 ÷ 30 = 29, reste 5 : 29 plateaux pleins ; d) 5 œufs ; e) 30 plateaux : il faut un plateau de plus pour les 5 œufs restants.'],
-    fig: 'u2f6'
+    fig: 'u2f6',
+    cahier: [['txt','875 ÷ 30 : comme 30 × 10 < 875 < 30 × 100, le quotient a 2 chiffres.'],['txt','875 = (30 × 29) + 5 : quotient 29, reste 5.'],['vx',[[true,'le reste (5) est plus petit que le diviseur (30)'],[false,'un reste plus grand que le diviseur : à refaire !']]],['noex']],
+    jeu: 'Partage express : 100 bonbons pour 7 amis. Combien chacun, et combien pour toi s’il en reste ? (14 chacun, et il t’en reste 2 !)'
   },
   {
     t: 'Partage et groupement : le sens de la division', comp: 'Opération', theme: 'Les deux sens de la division',
@@ -343,7 +355,9 @@ const S = [
       'a) partage : 48 ÷ 6 = 8 bonbons chacun ; b) groupement : 8 paquets ; d) groupement : 12 bidons ; e) partage : 12 L chacune.',
       'a) une division : 156 ÷ 12 ; b) 13 kg ; d) 13 sacs ; e) c’est la même division — seul le sens change : partager (combien chacun ?) ou grouper (combien de groupes ?).',
       'a) 1 000 000 ÷ 8 = 125 000 Ar ; b) non, le reste est 0 ; d) 1 000 000 ÷ 150 000 : 6 écoles (6 × 150 000 = 900 000) ; e) 1 000 000 − 900 000 = 100 000 Ar.'],
-    fig: 'u2f7'
+    fig: 'u2f7',
+    cahier: [['table',{sub:['PARTAGE','GROUPEMENT'],rows:[['48 bonbons ÷ 6 enfants','48 bonbons ÷ paquets de 6'],['= 8 bonbons chacun','= 8 paquets']]}],['txt','La même division raconte deux histoires différentes !'],['noex']],
+    jeu: 'Double sens : invente DEUX histoires différentes pour la division 36 ÷ 4 — une de partage, une de groupement.'
   },
   {
     t: 'Multiplier des fractions', comp: 'Opération', theme: 'Multiplication de fractions simples',
@@ -372,7 +386,9 @@ const S = [
       'a) 1/6 ; b) 6/20 = 3/10 ; d) 6/21 = 2/7 ; e) 8/5.',
       'a) 12/72 = 1/6 ; b) 10/30 = 1/3 ; d) 35/70 = 1/2 ; e) parce que les nombres restent petits : on croise les simplifications (par exemple 5 avec 5, 7 avec 7) avant de multiplier.',
       'a) 1/2 × 3/5 ; b) 3/10 ; d) 3/5 × 40 = 24 filles ; e) 3/10 × 40 = 12 filles à natte (c’est bien la moitié de 24).'],
-    fig: 'u2f8'
+    fig: 'u2f8',
+    cahier: [['barres',[[5,3,'3/5','#F8BBD0'],[10,3,'1/2 × 3/5 = 3/10','#BBDEFB']]],['txt','On multiplie les numérateurs entre eux, et les dénominateurs entre eux.'],['noex']],
+    jeu: 'Devinette gourmande : la moitié de la moitié de la moitié d’un gâteau, quelle fraction ? (1/8 !)'
   },
   {
     t: 'Diviser des fractions', comp: 'Opération', theme: 'Division de fractions simples',
@@ -401,7 +417,9 @@ const S = [
       'a) 3/2 ; b) 8/5 ; d) 1/7 ; e) 4.',
       'a) 1/2 × 4/1 = 4/2 = 2 ; b) 2/7 × 8/3 = 16/21 ; d) 3/5 × 1/2 = 3/10 ; e) « Combien y a-t-il de quarts dans une moitié ? » — réponse : 2.',
       'a) 3/2 ÷ 1/4 ; b) 3/2 × 4/1 ; d) 12/2 = 6 gobelets ; e) 6 × 1/4 = 6/4 = 3/2 L : toute la bouteille est bien servie.'],
-    fig: 'u2f9'
+    fig: 'u2f9',
+    cahier: [['txt','3/2 ÷ 1/4 = 3/2 × 4/1 = 12/2 = 6'],['txt','Diviser par une fraction, c’est multiplier par son inverse !'],['vx',[[true,'l’inverse de 2/3 est 3/2'],[false,'l’inverse de 2/3 n’est pas −2/3 !']]],['noex']],
+    jeu: 'Horloge malice : combien de quarts d’heure dans une heure et demie ? (6 !)'
   },
   {
     t: 'Additionner et soustraire des nombres décimaux', comp: 'Opération', theme: 'Addition et soustraction de décimaux',
@@ -430,7 +448,9 @@ const S = [
       'a) 7,7 ; b) 13 ; d) 5,25 ; e) 12,55.',
       'a) 1,5 + 0,75 + 2,25 = 4,5 kg ; b) oui : 4,5 + 0,5 = 5 kg exactement ; d) 0,5 kg ; e) 4,5 + 0,5 = 5 : la limite est atteinte, pas dépassée.',
       'a) 14,25 + 14,50 = 28,75 s ; b) 28,75 + 14,52 = 43,27 s ; d) 14,52 − 14,25 = 0,27 s ; e) pour additionner ensemble les chiffres de même valeur : unités avec unités, dixièmes avec dixièmes, centièmes avec centièmes.'],
-    fig: 'u2f10'
+    fig: 'u2f10',
+    cahier: [['txt','14,25 + 14,50 = 28,75 : on ALIGNE les virgules !'],['vx',[[true,'14,25 + 14,5 = 28,75'],[false,'14,25 + 14,5 = 15,70 : virgules mal alignées !']]],['noex']],
+    jeu: 'Caisse magique : calcule 20 − 7,45 de tête ! Astuce : 20 − 7 = 13, puis 13 − 0,45. (12,55.)'
   },
   {
     t: 'Multiplier et diviser des nombres décimaux', comp: 'Opération', theme: 'Multiplication et division de décimaux',
@@ -459,7 +479,9 @@ const S = [
       'a) 32 ; b) 4 570 ; d) 6,72 ; e) 0,58.',
       'a) 10 ; b) 10 ; d) 2,4 ; e) 4,5.',
       'a) entre 12 500 × 2 = 25 000 et 12 500 × 3 = 37 500 Ar ; b) 12 500 × 2,4 = 30 000 Ar ; d) 50 000 − 30 000 = 20 000 Ar ; e) 100 000 ÷ 12 500 = 8 mètres.'],
-    fig: 'u2f11'
+    fig: 'u2f11',
+    cahier: [['table',{sub:['× 10','× 100','÷ 10','÷ 100'],rows:[['3,2 → 32','3,2 → 320','3,2 → 0,32','3,2 → 0,032']]}],['txt','Multiplier ou diviser par 10, 100 : la virgule glisse !'],['noex']],
+    jeu: 'La virgule baladeuse : 45,7 × 100, puis le résultat ÷ 10. Combien ? (457.)'
   },
   {
     t: 'La priorité des opérations', comp: 'Opération', theme: 'Chaînes d’opérations avec et sans parenthèses',
@@ -488,7 +510,9 @@ const S = [
       'a) 17 ; b) 32 ; d) 17 ; e) 2.',
       'a) 7 × 5 + 10 = 45 ; b) 60 ÷ 6 = 10 ; d) 100 − 50 = 50 ; e) 6 + 36 = 42.',
       'a) la multiplication, prioritaire sur l’addition ; b) 4/5 × 2/3 = 8/15 ; d) 2/3 = 10/15 ; e) 10/15 + 8/15 = 18/15 = 6/5.'],
-    fig: 'u2f12'
+    fig: 'u2f12',
+    cahier: [['vx',[[true,'5 + 3 × 4 = 5 + 12 = 17 : la multiplication d’abord'],[false,'5 + 3 × 4 = 8 × 4 = 32 : interdit !']]],['txt','Parenthèses d’abord, puis × et ÷, puis + et −.'],['noex']],
+    jeu: 'Fabrique 24 : avec les nombres 2, 3 et 4 et les signes de ton choix, obtiens 24 ! (2 × 3 × 4 = 24.)'
   },
   {
     t: 'Le calcul mental : stratégies efficaces', comp: 'Opération', theme: 'Stratégies de calcul mental variées',
@@ -517,7 +541,9 @@ const S = [
       'a) 76 ; b) 64 ; d) 100 ; e) 2 499.',
       'a) 680 ÷ 2 = 340 ; b) 480 ÷ 10 = 48 ; d) 700 − 7 = 693 ; e) 8 008.',
       'a) 4 × 2 500 = 4 × 25 centaines = 100 centaines ; b) 10 000 Ar ; d) 15 000 Ar ; e) 25 000 Ar, soit 5 billets de 5 000 Ar.'],
-    fig: 'u2f13'
+    fig: 'u2f13',
+    cahier: [['table',{sub:['Astuce','Exemple'],rows:[['+ 29, c’est + 30 − 1','47 + 29 = 76'],['× 5, c’est × 10 ÷ 2','68 × 5 = 340'],['× 99, c’est × 100 − une fois','99 × 7 = 693']]}],['noex']],
+    jeu: 'Tournoi du calcul mental : 25 × 4 ? 1 500 + 999 ? 83 − 19 ? Le premier qui répond gagne ! (100 ; 2 499 ; 64.)'
   }
 ];
 
