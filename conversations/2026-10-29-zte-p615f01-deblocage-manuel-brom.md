@@ -598,7 +598,7 @@ liste** → **Afficher tous les périphériques** → **Disquette fournie…** �
 spd_dump.exe --wait 300 exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec read_part misc 0 64 misc_test.bin reset
 ```
 
-Puis, **en gardant Volume bas enfoncé**, brancher le câble USB-C.
+Puis **maintenir la touche**, brancher le câble USB-C, et **relâcher la touche dès que le port apparaît** (environ 2 secondes).
 
 | Ce qui s'affiche | Signification |
 |---|---|
@@ -607,6 +607,25 @@ Puis, **en gardant Volume bas enfoncé**, brancher le câble USB-C.
 | `misc_test.bin` apparaît dans le dossier | ✅ **Accès en lecture confirmé, tu peux continuer** |
 | `find port failed` | Connexion perdue, relancer, ne pas continuer |
 | `CHECK_BAUD FAIL` | Normal sur les versions corrigées : le binaire se reconnecte seul |
+| `Successfully connected to port: N` | ✅ Le pilote fonctionne : Windows a bien créé un COM pour le téléphone |
+| `Successfully connected` **puis** `usb_send failed (0 / 1)` | Le port s'est ouvert mais l'appareil a quitté le mode BROM aussitôt : voir l'encadré ci-dessous |
+
+> ### ⚠️ Résultat réel du 29/10 — première tentative
+>
+> ```text
+> Waiting for dl_diag connection (300s)
+> Successfully connected to port: 5
+> usb_send failed (0 / 1)
+> Appuyez sur une touche pour continuer...
+> ```
+>
+> puis le téléphone a démarré sur **Android recovery** (et non sur l'écran de verrouillage).
+>
+> **Lecture :** `Successfully connected to port: 5` = le pilote `oem29.inf` **fonctionne**, Windows a bien créé un port COM pour le téléphone — c'était le point bloquant de toute la journée. `usb_send failed (0 / 1)` = le tout premier octet de synchronisation n'a pas pu être écrit : l'appareil avait **déjà quitté** le mode BROM au moment de l'échange. Cause : **Volume bas maintenu** est interprété par la chaîne de démarrage de ce modèle comme « démarrer en recovery » — l'appareil s'est donc réinitialisé juste après l'ouverture du port.
+>
+> **Aucune écriture n'a eu lieu** : `misc_test.bin` n'a pas été créé, rien n'a été modifié dans le téléphone.
+>
+> **Correction :** relâcher la touche **dès que le port apparaît** (≈ 2 s après le branchement). Si l'échec se répète : **Volume haut**, puis les **deux touches**, puis **sans aucune touche** (voir §13.10).
 
 > En `cmd`, tout tient sur **une seule ligne** (pas de `\` de continuation comme sous Linux).
 
@@ -635,6 +654,9 @@ encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `m
 | `Channel9.dll` introuvable | DLL absente ou mauvais dossier courant | Vérifier `dir`, rester dans le dossier du paquet |
 | Le téléphone apparaît puis disparaît | Fenêtre courte, batterie faible, câble instable | Charger à 50 %+, relancer la commande **avant** de brancher |
 | `find port failed` répété | USB 3, hub, câble long | Port USB 2.0 direct sur la carte mère, câble court |
+| `Successfully connected to port: N` puis `usb_send failed (0 / 1)` | L'appareil a quitté le mode BROM avant le premier échange — le plus souvent parce que la touche était **encore maintenue** | Relâcher la touche dès l'apparition du port ; essayer **Volume haut** ; vérifier que le téléphone était bien **éteint** et non en veille |
+| Après la commande, le téléphone démarre en **Android recovery** | Volume bas maintenu = déclencheur du recovery sur ce modèle (constaté le 29/10) | « Reboot system now » → éteindre complètement → refaire la séquence en relâchant la touche |
+| `usb_send failed` alors qu'aucune touche n'était enfoncée | Le port COM ouvert était celui du diag Android (`PID_4D01`), pas le BROM (`PID_4D00`) | `pnputil /enum-devices /connected /class Ports` doit montrer `VID_1782&PID_4D00` ; sinon le téléphone n'était pas en BROM |
 | Le prompt affiche `C:\Windows\system32` | `cmd` a été ouvert depuis le menu Démarrer, pas depuis le dossier du paquet | `cd /d C:\zte-unlock`, ou rouvrir `cmd` depuis la barre d'adresse du dossier |
 | On ne sait plus où le zip a été extrait | — | `dir /b C:\zte-unlock` **d'abord** : la recherche `where /r %USERPROFILE%` ne voit **que** le profil (Bureau, Téléchargements, Documents, OneDrive) et renvoie donc « impossible de trouver » même quand tout est en place dans `C:\zte-unlock` |
 | `where /r %USERPROFILE% spd_dump.exe` renvoie « impossible de trouver » | Normal si l'extraction est dans `C:\zte-unlock` (hors profil), ou si le zip est encore **dans** son `.zip` | Ne pas conclure à un fichier manquant : `dir /b C:\zte-unlock`, puis `dir /s /b "%USERPROFILE%\Downloads\*.zip"` |
