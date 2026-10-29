@@ -48,6 +48,80 @@ const metaCell = lines => new TableCell({
 const table = (rows, columnWidths, opt = {}) => new Table({ width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED, borders: opt.noBorders ? noBorders : borders, rows, columnWidths });
 const bullet = text => new Paragraph({ bullet: { level: 0 }, spacing: { after: 80 }, children: rich(text) });
 const correction = (label, text) => new Paragraph({ spacing: { after: 80 }, children: [tr(label, { bold: true, color: C.wine }), ...rich(text)] });
+const banner = (text, fill) => new Paragraph({ spacing: { before: 180, after: 110 }, shading: { type: ShadingType.CLEAR, fill }, children: [tr('  ' + text, { bold: true, color: C.white, size: 26 })] });
+
+// ---------- Page « Mon cahier » : trace écrite attendue, sur page Seyès ----------
+const escXml = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+function wrapTxt(text, max) {
+  // garder les nombres du type « 1 000 000 » sur une seule ligne
+  while (/\d \d{3}(?!\d)/.test(text)) text = text.replace(/(\d) (\d{3})(?!\d)/g, '$1\u00A0$2');
+  const words = text.split(' '); const lines = []; let cur = '';
+  for (const w of words) {
+    if ((cur + ' ' + w).trim().length > max) { if (cur) lines.push(cur); cur = w; }
+    else cur = (cur ? cur + ' ' : '') + w;
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+function firstSentences(text, maxLen) {
+  const parts = text.split('. '); let out = '';
+  for (const s of parts) {
+    const cand = out ? out + '. ' + s : s;
+    if (cand.length > maxLen && out) break;
+    out = cand;
+    if (out.length > maxLen) break;
+  }
+  if (!/[.!?]$/.test(out)) out += '.';
+  return out;
+}
+function cahierSvg(s) {
+  const W = 1240, H = 1660, MARG = 150, STEP = 62, INK = '#1A3FA8', F = 'Caveat, DejaVu Serif';
+  let b = `<rect width="100%" height="100%" fill="#FDFDF8"/>`;
+  // quadrillage Seyès : interlignes fines + lignes principales + verticales
+  for (let y = 100; y <= H - 50; y += STEP) {
+    for (let k = 1; k <= 3; k++) b += `<line x1="30" y1="${y - k * STEP / 4}" x2="${W - 20}" y2="${y - k * STEP / 4}" stroke="#D5E2F2" stroke-width="1"/>`;
+    b += `<line x1="30" y1="${y}" x2="${W - 20}" y2="${y}" stroke="#9FB9DC" stroke-width="1.6"/>`;
+  }
+  for (let x = 92; x < W - 20; x += STEP) b += `<line x1="${x}" y1="30" x2="${x}" y2="${H - 30}" stroke="#D5E2F2" stroke-width="1"/>`;
+  b += `<line x1="${MARG}" y1="30" x2="${MARG}" y2="${H - 30}" stroke="#E08080" stroke-width="3"/>`;
+  b += `<rect x="20" y="20" width="${W - 40}" height="${H - 40}" fill="none" stroke="#C8C8C8" stroke-width="2"/>`;
+  let y = 100;
+  // date
+  b += `<text x="${W - 60}" y="${y - 14}" font-family="${F}" font-size="34" fill="${INK}" text-anchor="end">Date : ……………………</text>`;
+  y += STEP;
+  // titre souligné en rouge
+  const tSize = s.t.length > 42 ? 38 : 46;
+  b += `<text x="${(MARG + W) / 2}" y="${y - 14}" font-family="${F}" font-size="${tSize}" font-weight="bold" fill="${INK}" text-anchor="middle">${escXml(s.t)}</text>`;
+  const tw = s.t.length * tSize * 0.40;
+  b += `<line x1="${(MARG + W) / 2 - tw / 2}" y1="${y - 2}" x2="${(MARG + W) / 2 + tw / 2}" y2="${y - 2}" stroke="#D23B3B" stroke-width="3"/>`;
+  y += STEP * 2;
+  // encadré Règle (stylo rouge)
+  const regleLines = wrapTxt(s.def, 56);
+  const boxTop = y - STEP + 16, boxH = (regleLines.length + 1) * STEP + 8;
+  b += `<rect x="${MARG + 14}" y="${boxTop}" width="${W - MARG - 70}" height="${boxH}" rx="12" fill="none" stroke="#D23B3B" stroke-width="3.5"/>`;
+  b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="36" font-weight="bold" fill="#D23B3B">Règle :</text>`;
+  y += STEP;
+  for (const line of regleLines) {
+    b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="35" fill="${INK}">${escXml(line)}</text>`;
+    y += STEP;
+  }
+  y += STEP;
+  // Exemple (stylo vert pour le mot, bleu pour le texte)
+  b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="36" font-weight="bold" fill="#2E7D32">Exemple :</text>`;
+  y += STEP;
+  const exLines = wrapTxt(firstSentences(s.exemple, 210), 60);
+  for (const line of exLines) {
+    if (y > H - 130) break;
+    b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="35" fill="${INK}">${escXml(line)}</text>`;
+    y += STEP;
+  }
+  // mention crayon en bas
+  if (y < H - 170) {
+    y += STEP;
+    b += `<text x="${MARG + 40}" y="${y - 14}" font-family="${F}" font-size="33" fill="#8A8A8A">Exercices n° 1 et 2 → sur le cahier d’exercices.</text>`;
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">${b}</svg>`;
+}
 const page = () => new Paragraph({ children: [new PageBreak()] });
 const img = (buf, widthPx = 500) => {
   const { w, h } = pngSize(buf);
@@ -112,7 +186,7 @@ function deroulement(s) {
   ], [1300, 2200, 2000, 1500, 1400, 1200]);
 }
 
-function seance(s, i, total, uNo, figBufs) {
+function seance(s, i, total, uNo, figBufs, cahierBuf) {
   const a = [];
   a.push(page());
   a.push(title(`SÉANCE ${i} / ${total} — ${s.t.toUpperCase()}`, 1, `u${uNo}_l${i}`));
@@ -124,19 +198,28 @@ function seance(s, i, total, uNo, figBufs) {
   a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 160, after: 160 }, children: [tr(s.t.toUpperCase(), { bold: true, color: C.red, size: 32 })] }));
   const scPath = path.join(__dirname, '..', 'assets', 'scenes', `u${uNo}s${i}.jpg`);
   if (fs.existsSync(scPath)) a.push(imgJpg(fs.readFileSync(scPath), 430));
-  a.push(mixed([['Définition — ', { bold: true, color: C.green }], [s.def, { bold: true }]]));
+  a.push(mixed([['Objectif : ', { bold: true, color: C.wine }], [`à la fin de cette leçon, tu sauras ${s.goal}.`, { italics: true }]], { fill: C.pale }));
+  a.push(banner('LA RÈGLE', C.green));
+  a.push(mixed([[s.def, { bold: true }]]));
   a.push(mixed([['Autrement dit : ', { bold: true, color: C.blue }], [s.autrement, {}]]));
   a.push(p(s.concept));
   if (s.fig && figBufs[s.fig]) a.push(img(figBufs[s.fig]));
-  a.push(title('Méthode', 2));
-  s.method.forEach((m, k) => a.push(p(`${k + 1}. ${m}`, { after: 60 })));
-  a.push(mixed([['Exemple — ', { bold: true, color: C.blue }], [s.exemple, {}]]));
-  a.push(mixed([['Erreur à éviter — ', { bold: true, color: C.ocre }], [s.erreur, {}]]));
+  a.push(banner('LES ÉTAPES, PAS À PAS', C.blue));
+  s.method.forEach((m, k) => a.push(mixed([[`Étape ${k + 1} — `, { bold: true, color: C.blue }], [m, {}]], { after: 60 })));
+  a.push(mixed([['Exemple guidé — ', { bold: true, color: C.blue }], [s.exemple, {}]]));
+  a.push(banner('ATTENTION AU PIÈGE !', C.red));
+  a.push(p(s.erreur, { fill: 'FDECEA' }));
   a.push(mixed([['Le savais-tu ? ', { bold: true, color: C.bleu2 }], [s.saistu, {}]], { fill: C.paleBlue }));
   a.push(title('EXERCICES', 2));
   s.exos.forEach((e, k) => a.push(p(`${k + 1}. ${e}`)));
   a.push(title('CORRIGÉS', 2));
   s.corr.forEach((c, k) => a.push(correction(`${k + 1}. `, c)));
+  if (cahierBuf) {
+    a.push(page());
+    a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 120, after: 60 }, children: [tr('MON CAHIER', { bold: true, color: C.wine, size: 32 })] }));
+    a.push(p('Voici la trace écrite attendue dans le cahier de l’élève à la fin de cette leçon.', { align: AlignmentType.CENTER, after: 60 }));
+    a.push(img(cahierBuf, 470));
+  }
   return a;
 }
 
@@ -212,7 +295,12 @@ async function buildUnit(u, figBufs) {
       new TableRow({ children: [cell('Séances', { bold: true, fill: C.blue, color: C.white }), cell('Apprentissages', { bold: true, fill: C.blue, color: C.white }), cell('Révision', { bold: true, fill: C.blue, color: C.white }), cell('Examen', { bold: true, fill: C.blue, color: C.white })] }),
       new TableRow({ children: [cell(`${total}`), cell(`${u.sessions.length}`), cell('1'), cell('1')] })
     ], [2400, 2400, 2400, 2400]));
-  u.sessions.forEach((s, i) => children.push(...seance(s, i + 1, total, u.no, figBufs)));
+  const sharp = require('sharp');
+  const cahierBufs = [];
+  for (let i = 0; i < u.sessions.length; i++) {
+    cahierBufs[i] = await sharp(Buffer.from(cahierSvg(u.sessions[i])), { density: 110 }).png().toBuffer();
+  }
+  u.sessions.forEach((s, i) => children.push(...seance(s, i + 1, total, u.no, figBufs, cahierBufs[i])));
   children.push(...revision(u), ...exam(u));
 
   const doc = new Document({
