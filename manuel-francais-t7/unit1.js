@@ -1,4 +1,4 @@
-// Français T7 — UNITÉ 1 — LA CULTURE (10 leçons + révision + test) — Séances 1 à 12 / 72
+// Français T7 — UNITÉ 1 — LA CULTURE (10 leçons + révision + test) — Séances 1 à 12 / 84
 const B = require("./builders");
 const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, discBadge, img, imgFloat, pageBreak, lessonTitle, sub, iCan, cell } = B;
@@ -6,7 +6,7 @@ const { Table, TableRow, WidthType } = require("docx");
 
 const COLOR = "B03A2E"; // brique — la culture
 const SHADE = "FADBD8";
-const TOTAL = 72;
+const TOTAL = 84;
 const META = (title, slo, session, materials) => ({
   theme: "UNITÉ 1 — LA CULTURE", title, slo,
   values: "fierté nationale, respect du patrimoine, ouverture d'esprit", session, materials,
@@ -17,6 +17,12 @@ const bullet = (runs, o = {}) => pr(
   { after: o.after != null ? o.after : 50 });
 const mot = (word, expl) => bullet([
   run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
+// exemple à la manière des manuels : tiret, phrase avec l'essentiel en gras, note entre crochets
+const exLine = (runs, note, o = {}) => pr([
+  run("–  ", { bold: true, color: COLOR }), ...runs,
+  ...(note ? [run("   [" + note + "]", { italic: true, color: C.GRAY, size: 26 })] : []),
+], { after: o.after != null ? o.after : 60 });
+const exTitre = () => pr([run("Exemples :", { italic: true })], { after: 50 });
 function box(title, children, shade = SHADE) {
   return new Table({
     width: { size: 10400, type: WidthType.DXA },
@@ -130,17 +136,23 @@ function lessonS1() {
     p([run("ÉCOUTER UN REPORTAGE SUR LA CULTURE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     passageVisages(),
     p("", { after: 80 }),
-    sub("Pour comprendre un document entendu :"),
-    p("• J'écoute d'abord sans écrire : de quoi parle le document ?"),
-    p("• À la deuxième écoute, je repère les détails avec les questions guides : quoi ? où ? qui ? pour quoi faire ?"),
-    p("• Je devine le sens des mots inconnus grâce au contexte : le patrimoine, c'est « l'héritage reçu des anciens »."),
-    p("• Je reformule l'essentiel avec mes propres mots.", { after: 80 }),
-    sub("Vocabulaire — mes premiers mots de l'unité :"),
+    sub("1. Pour comprendre, j'écoute deux fois"),
+    exLine([run("1re écoute : je cherche le "), run("sujet", { bold: true, color: C.SALMON, hl: true }), run(".")],
+      "De quoi parle-t-on ? → de la culture malgache"),
+    exLine([run("2e écoute : je repère les détails avec "), run("qui ? quoi ? où ? comment ?", { bold: true, color: C.SALMON, hl: true })],
+      "quatre petites questions, quatre réponses"),
+    exLine([run("Mot inconnu : le "), run("contexte", { bold: true, color: C.SALMON, hl: true }), run(" me le dit.")],
+      "le patrimoine, « c'est-à-dire l'héritage reçu des anciens » : la phrase donne le sens !", { after: 80 }),
+    sub("2. Vocabulaire — mes premiers mots de l'unité"),
     mot("la culture", "tout ce qu'un peuple invente, partage et transmet"),
     mot("le patrimoine", "l'héritage reçu des anciens"),
     mot("un rite", "une cérémonie qui marque un moment de la vie"),
     mot("l'artisanat", "les objets faits à la main : paniers, bois sculpté, soie"),
-    mot("transmettre", "donner aux plus jeunes ce que l'on a reçu"),
+    mot("transmettre", "donner aux plus jeunes ce que l'on a reçu", ),
+    p("", { after: 40 }),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Complète : « La culture, c'est tout ce qu'un peuple ………, ……… et ………. »"),
+    p("2. Cite deux rites entendus dans le reportage.", { after: 60 }),
   ];
 }
 
@@ -199,20 +211,25 @@ function lessonS2() {
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
     p("", { after: 40 }),
     p([run("LES ÉLÉMENTS DE LA CULTURE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
-    sub("Vocabulaire — les sept familles de la culture :"),
+    sub("1. Vocabulaire — les sept familles de la culture"),
     mot("la nourriture", "le romazava, le ravitoto, le koba, le poisson au lait de coco"),
     mot("l'habitat", "la maison de brique rouge, la case en bois, la maison de ravinala"),
     mot("les vêtements", "le lamba, le chapeau de paille, le lambahoany"),
     mot("la langue", "le malgache, les proverbes, le kabary"),
     mot("les danses et musiques", "le salegy, l'afindrafindrao, le hira gasy, la valiha"),
-    mot("les rites", "la circoncision, le famadihana, le mariage traditionnel"),
-    mot("l'artisanat", "le panier tressé, le bois sculpté, la soie tissée"),
-    p("", { after: 80 }),
-    sub("On dit… / À éviter…"),
+    mot("les rites et coutumes funéraires", "la circoncision (famorana, sambatra), le mariage, le famadihana"),
+    mot("l'artisanat et les arts", "le panier tressé, le bois sculpté, la soie tissée"),
+    p("", { after: 60 }),
+    exTitre(),
+    exLine([run("Pendant le famadihana, ma grand-mère porte son plus beau "), run("lamba", { bold: true, color: C.SALMON, hl: true }), run(".")],
+      "un rite + un vêtement : deux familles dans une phrase"),
+    exLine([run("Le "), run("kabary", { bold: true, color: C.SALMON, hl: true }), run(" ouvre toutes les grandes fêtes.")],
+      "l'art de bien parler appartient à la famille « langue »", { after: 80 }),
+    sub("2. On dit… / À éviter…"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« la langue malgache »", { bold: true })], { after: 40 }),
-    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« le langage malgache » — le langage, c'est la manière de parler ; la langue, c'est ce que parle un peuple.")], { after: 80 }),
-    sub("Je retiens :"),
-    p("La culture d'un peuple regroupe sept grandes familles. Chaque région de Madagascar a ses plats, ses maisons, ses danses : c'est notre richesse commune.", { after: 60 }),
+    pr([run("À éviter : ", { bold: true, color: C.RED }), run("« le langage malgache »   "), run("[la langue = ce que parle un peuple ; le langage = la manière de parler]", { italic: true, color: C.GRAY, size: 26 })], { after: 80 }),
+    sub("Exercice — je classe :"),
+    p("Mets chaque mot dans sa famille : le salegy — le ravitoto — la case en bois — le sambatra.", { after: 60 }),
   ];
 }
 
@@ -274,13 +291,19 @@ function lessonS3() {
     p([run("LIRE UN ARTICLE DE PRESSE — LE TEXTE INFORMATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     texteHiraGasy(),
     p("", { after: 80 }),
-    sub("La structure du texte informatif (l'article de presse) :"),
-    pr([run("1. Le titre", { bold: true, color: C.SALMON, hl: true }), run(" — court et accrocheur : il donne envie de lire.")], { after: 40 }),
-    pr([run("2. Le chapeau", { bold: true, color: C.SALMON, hl: true }), run(" — deux ou trois phrases, souvent en italique : il résume l'article (qui ? quoi ? où ? quand ?).")], { after: 40 }),
-    pr([run("3. Le corps", { bold: true, color: C.SALMON, hl: true }), run(" — les paragraphes qui détaillent, dans l'ordre, avec des connecteurs : dès le matin, ensuite, à la fin.")], { after: 80 }),
-    sub("Je retiens :"),
-    p("• Le texte informatif donne des informations exactes et vérifiées : il répond aux questions qui ? quoi ? où ? quand ? comment ?"),
-    p("• La citation entre guillemets rend l'article vivant : ce sont les paroles exactes d'une personne.", { after: 60 }),
+    sub("1. L'article de presse a trois parties"),
+    exLine([run("Le titre", { bold: true, color: C.SALMON, hl: true }), run(" : court, il attire.")],
+      "« Le hira gasy, un spectacle complet »"),
+    exLine([run("Le chapeau", { bold: true, color: C.SALMON, hl: true }), run(" : deux ou trois phrases en italique, il résume.")],
+      "il répond à qui ? quoi ? où ? quand ?"),
+    exLine([run("Le corps", { bold: true, color: C.SALMON, hl: true }), run(" : les paragraphes qui détaillent, dans l'ordre.")],
+      "dès le matin → ensuite → à la fin", { after: 80 }),
+    sub("2. La citation"),
+    exTitre(),
+    exLine([run("« Mon grand-père chantait déjà »", { bold: true, color: C.SALMON, hl: true }), run(", explique un artiste.")],
+      "les guillemets donnent les paroles exactes : l'article devient vivant", { after: 80 }),
+    sub("Exercice — je retrouve dans le texte :"),
+    p("1. Recopie le titre. — 2. Souligne le chapeau. — 3. Encadre une citation.", { after: 60 }),
   ];
 }
 
@@ -339,20 +362,21 @@ function lessonS4() {
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
     p("", { after: 40 }),
     p([run("LES VERBES DU 1er ET DU 2e GROUPE AU PRÉSENT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
-    sub("Le 1er groupe : infinitif en -er"),
-    pr([run("danser : ", { bold: true }), run("je danse, tu danses, il/elle danse, nous dansons, vous dansez, ils/elles ", {}), run("dansent", { bold: true, color: C.SALMON, hl: true })], { after: 40 }),
-    p("Terminaisons : -e, -es, -e, -ons, -ez, -ent.", { after: 80 }),
-    sub("Le 2e groupe : infinitif en -ir, avec -issons à « nous »"),
-    pr([run("applaudir : ", { bold: true }), run("j'applaudis, tu applaudis, il/elle applaudit, nous ", {}), run("applaudissons", { bold: true, color: C.SALMON, hl: true }), run(", vous applaudissez, ils/elles applaudissent")], { after: 40 }),
-    p("Terminaisons : -is, -is, -it, -issons, -issez, -issent.", { after: 80 }),
-    sub("Le test du 2e groupe :"),
-    p("• Je mets le verbe avec « nous » : finir → nous finissons → 2e groupe."),
-    p("• partir → nous partons (pas de -issons) → ce n'est PAS le 2e groupe.", { after: 80 }),
-    sub("Vocabulaire — des verbes de la culture :"),
-    mot("tisser", "1er groupe : les artisans tissent la soie"),
-    mot("sculpter", "1er groupe : il sculpte le bois"),
-    mot("réussir", "2e groupe : nous réussissons la fête"),
-    mot("grandir", "2e groupe : les enfants grandissent avec les contes"),
+    sub("1. Le 1er groupe : infinitif en -er"),
+    pr([run("On utilise : ", {}), run("-e, -es, -e, -ons, -ez, -ent", { bold: true, color: C.SALMON, hl: true })], { after: 50 }),
+    exTitre(),
+    exLine([run("je dans"), run("e", { bold: true, color: C.SALMON, hl: true }), run(", nous dans"), run("ons", { bold: true, color: C.SALMON, hl: true }), run(", ils dans"), run("ent", { bold: true, color: C.SALMON, hl: true })],
+      "radical « dans- » + terminaison", { after: 80 }),
+    sub("2. Le 2e groupe : infinitif en -ir… avec -issons"),
+    pr([run("On utilise : ", {}), run("-is, -is, -it, -issons, -issez, -issent", { bold: true, color: C.SALMON, hl: true })], { after: 50 }),
+    exTitre(),
+    exLine([run("je fin"), run("is", { bold: true, color: C.SALMON, hl: true }), run(", nous fin"), run("issons", { bold: true, color: C.SALMON, hl: true }), run(", ils fin"), run("issent", { bold: true, color: C.SALMON, hl: true })],
+      "le « -iss- » est la marque du 2e groupe", { after: 80 }),
+    sub("3. Le test du 2e groupe"),
+    exLine([run("finir → nous "), run("finissons", { bold: true, color: C.SALMON, hl: true })], "-issons : c'est bien le 2e groupe ✔"),
+    exLine([run("partir → nous "), run("partons", { bold: true })], "pas de -issons : ce n'est PAS le 2e groupe !", { after: 80 }),
+    sub("Exercice — je conjugue au présent :"),
+    p("Les enfants (grandir) ……… — Nous (choisir) ……… — Les femmes (tisser) ……… — Vous (préparer) ………", { after: 60 }),
   ];
 }
 
@@ -412,16 +436,20 @@ function lessonS5() {
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
     p("", { after: 40 }),
     p([run("LA FORME ACTIVE ET LA FORME PASSIVE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
-    sub("La forme active : le sujet fait l'action."),
-    pr([run("Les artisans ", { bold: true, color: C.SALMON, hl: true }), run("tissent la soie. → Les artisans agissent.")], { after: 80 }),
-    sub("La forme passive : le sujet subit l'action."),
-    pr([run("La soie ", { bold: true, color: C.SALMON, hl: true }), run("est tissée par les artisans. → La soie ne fait rien : elle subit.")], { after: 40 }),
-    p("• Le verbe passif = être + participe passé : est tissée, sont transmis, était admiré."),
-    pr([run("• Celui qui fait l'action est le "), run("complément d'agent", { bold: true, color: C.SALMON, hl: true }), run(", introduit par « par » : par les artisans.")], { after: 40 }),
-    p("• Parfois, l'agent n'est pas dit : « Le hira gasy est transmis de génération en génération. »", { after: 80 }),
-    sub("Je retiens :"),
-    p("• Pour reconnaître le passif, je cherche : être + participe passé, et je demande : le sujet agit-il ou subit-il ?"),
-    p("• Le passif met en valeur ce qui subit l'action : « La soie est tissée » parle d'abord de la soie.", { after: 60 }),
+    sub("1. La forme active"),
+    p("Le sujet FAIT l'action."),
+    exTitre(),
+    exLine([run("Les artisans", { bold: true, color: C.SALMON, hl: true }), run(" tissent la soie.")],
+      "les artisans agissent", { after: 80 }),
+    sub("2. La forme passive"),
+    pr([run("Le sujet SUBIT l'action. On utilise : ", {}), run("être + participe passé", { bold: true, color: C.SALMON, hl: true }), run(" (+ "), run("par", { bold: true, color: C.SALMON, hl: true }), run(" …)")], { after: 50 }),
+    exTitre(),
+    exLine([run("La soie", { bold: true, color: C.SALMON, hl: true }), run(" est tissée "), run("par les artisans", { bold: true, color: C.SALMON, hl: true }), run(".")],
+      "la soie ne fait rien : elle subit ; « par les artisans » = le complément d'agent"),
+    exLine([run("Le hira gasy "), run("est transmis", { bold: true, color: C.SALMON, hl: true }), run(" de génération en génération.")],
+      "ici, l'agent n'est pas dit", { after: 80 }),
+    sub("Exercice — active ou passive ?"),
+    p("1. Le public applaudit les danseurs. — 2. Le kabary est écouté avec respect. — 3. Les paniers sont tressés par les femmes.", { after: 60 }),
   ];
 }
 
@@ -480,17 +508,20 @@ function lessonS6() {
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
     p("", { after: 40 }),
     p([run("LA FORME PASSIVE : TRANSFORMATION ET ACCORD", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
-    sub("Transformer l'actif en passif : trois étapes."),
-    p("Phrase active : Le village prépare la fête."),
-    pr([run("1. ", { bold: true }), run("Le COD devient sujet", { bold: true, color: C.SALMON, hl: true }), run(" : la fête → en tête de phrase.")], { after: 40 }),
-    pr([run("2. ", { bold: true }), run("Le verbe devient être + participe passé", { bold: true, color: C.SALMON, hl: true }), run(", au même temps : prépare → est préparée.")], { after: 40 }),
-    pr([run("3. ", { bold: true }), run("Le sujet devient complément d'agent", { bold: true, color: C.SALMON, hl: true }), run(" : par le village.")], { after: 40 }),
-    p("Phrase passive : La fête est préparée par le village.", { after: 80 }),
-    sub("L'accord du participe passé au passif :"),
-    p("• Au passif, le participe passé s'accorde toujours avec le sujet :"),
-    p("• La fête est préparée. — Les chants sont appris. — Les danses sont admirées.", { after: 80 }),
-    sub("Attention au temps de « être » :"),
-    p("• Présent : La fête est préparée. • Imparfait : La fête était préparée. • Futur : La fête sera préparée.", { after: 60 }),
+    sub("1. Transformer l'actif en passif : trois étapes"),
+    pr([run("Le village prépare la fête.  →  La fête ", { bold: true }), run("est préparée", { bold: true, color: C.SALMON, hl: true }), run(" par le village.", { bold: true })], { after: 50 }),
+    exLine([run("1. Le "), run("COD devient sujet", { bold: true, color: C.SALMON, hl: true })], "la fête passe en tête de phrase"),
+    exLine([run("2. Le verbe devient "), run("être + participe passé", { bold: true, color: C.SALMON, hl: true })], "au même temps : prépare → est préparée"),
+    exLine([run("3. Le sujet devient "), run("complément d'agent", { bold: true, color: C.SALMON, hl: true })], "avec « par » : par le village", { after: 80 }),
+    sub("2. L'accord : avec le sujet, toujours !"),
+    exTitre(),
+    exLine([run("La fête est prépar"), run("ée", { bold: true, color: C.SALMON, hl: true }), run(".")], "féminin singulier"),
+    exLine([run("Les chants sont appr"), run("is", { bold: true, color: C.SALMON, hl: true }), run(".")], "masculin pluriel"),
+    exLine([run("Les danses sont admir"), run("ées", { bold: true, color: C.SALMON, hl: true }), run(".")], "féminin pluriel", { after: 80 }),
+    sub("3. Attention au temps de « être »"),
+    p("est préparée (présent) — était préparée (imparfait) — sera préparée (futur).", { after: 80 }),
+    sub("Exercice — je transforme comme dans l'exemple :"),
+    p("« Les femmes tissent les lambas. » → Les lambas ……… — « Mon oncle sculpte cette statue. » → Cette statue ………", { after: 60 }),
   ];
 }
 
@@ -546,18 +577,18 @@ function lessonS7() {
     discBadge("PRODUCTION ORALE", COLOR),
     p("", { after: 40 }),
     p([run("PRÉSENTER UN ÉLÉMENT DE LA CULTURE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
-    sub("Le plan de ma présentation (une minute) :"),
-    pr([run("1. L'accroche", { bold: true, color: C.SALMON, hl: true }), run(" — une question : « Connaissez-vous le salegy ? » (la voix monte ↗)")], { after: 40 }),
-    pr([run("2. Les informations", { bold: true, color: C.SALMON, hl: true }), run(" — deux ou trois phrases exactes : ce que c'est, où, quand, comment.")], { after: 40 }),
-    pr([run("3. L'exclamation finale", { bold: true, color: C.SALMON, hl: true }), run(" — « Quel rythme entraînant ! » (le volume augmente)")], { after: 80 }),
-    sub("L'intonation, la musique de la phrase :"),
-    p("• Phrase interrogative : la voix monte à la fin ↗ « Connaissez-vous le koba ? »"),
-    p("• Phrase exclamative : le volume augmente ! « Quel délice ! »"),
-    p("• Phrase déclarative : la voix descend doucement à la fin ↘", { after: 80 }),
-    sub("Vocabulaire — pour présenter :"),
+    sub("1. Le plan de ma présentation (une minute)"),
+    exLine([run("L'accroche", { bold: true, color: C.SALMON, hl: true }), run(" : une question.")], "« Connaissez-vous le salegy ? » — la voix monte ↗"),
+    exLine([run("Les informations", { bold: true, color: C.SALMON, hl: true }), run(" : deux ou trois phrases exactes.")], "ce que c'est, où, quand, comment"),
+    exLine([run("L'exclamation finale", { bold: true, color: C.SALMON, hl: true }), run(".")], "« Quel rythme entraînant ! » — le volume augmente !", { after: 80 }),
+    sub("2. Un modèle complet"),
+    pr([run("« Connaissez-vous le koba ? C'est un gâteau de riz, d'arachide et de sucre. On l'enveloppe dans des feuilles de banane. On le vend sur tous les marchés. Quel délice ! »", { italic: true })], { after: 80 }),
+    sub("3. Vocabulaire — pour présenter"),
     mot("une accroche", "la phrase qui attire l'attention du public"),
-    mot("l'intonation", "la musique de la voix : elle monte, elle descend"),
-    mot("présenter", "faire connaître quelque chose au public"),
+    mot("l'intonation", "la musique de la voix : elle monte ↗, elle descend ↘"),
+    p("", { after: 40 }),
+    sub("Exercice — à toi de présenter :"),
+    p("Complète pour ton élément préféré : « Connaissez-vous ……… ? C'est ……… On ……… Quel ……… ! »", { after: 60 }),
   ];
 }
 
@@ -613,15 +644,17 @@ function lessonS8() {
     discBadge("PRODUCTION ÉCRITE", COLOR),
     p("", { after: 40 }),
     p([run("MON ARTICLE INFORMATIF (1) : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
-    sub("Avant d'écrire, je prépare !"),
-    pr([run("1. Je choisis mon sujet", { bold: true, color: C.SALMON, hl: true }), run(" : un plat, une danse, un rite, un objet d'artisanat de ma région.")], { after: 40 }),
-    pr([run("2. Je remplis ma carte des questions", { bold: true, color: C.SALMON, hl: true }), run(" : quoi ? qui ? où ? quand ? comment ? pourquoi ?")], { after: 40 }),
-    pr([run("3. J'écris mon plan en trois lignes", { bold: true, color: C.SALMON, hl: true }), run(" : le titre → le chapeau → le corps (deux paragraphes).")], { after: 80 }),
-    sub("Mon plan d'article :"),
-    p("• Le titre : court et accrocheur. Exemple : « Le koba, roi des marchés »."),
-    p("• Le chapeau : une ou deux phrases qui résument (qui ? quoi ? où ?)."),
-    p("• Paragraphe 1 : je décris (ce que c'est, comment c'est fait)."),
-    p("• Paragraphe 2 : j'explique pourquoi c'est important pour notre culture.", { after: 60 }),
+    sub("1. Avant d'écrire : trois gestes"),
+    exLine([run("Je choisis mon sujet", { bold: true, color: C.SALMON, hl: true }), run(".")], "un plat, une danse, un rite, un objet de ma région"),
+    exLine([run("Je remplis ma carte des questions", { bold: true, color: C.SALMON, hl: true }), run(" : quoi ? qui ? où ? quand ? comment ? pourquoi ?")], "au moins quatre réponses"),
+    exLine([run("J'écris mon plan en trois lignes", { bold: true, color: C.SALMON, hl: true }), run(" : titre → chapeau → corps.")], "le corps = deux paragraphes", { after: 80 }),
+    sub("2. Un exemple de plan"),
+    exLine([run("Titre : ", { bold: true }), run("« Le koba, roi des marchés »", { bold: true, color: C.SALMON, hl: true })], "court et accrocheur"),
+    exLine([run("Chapeau : ", { bold: true }), run("Sur tous les marchés de l'île, on vend ce gâteau enveloppé de feuilles de banane.", { italic: true })], "il répond à quoi ? où ?"),
+    exLine([run("Paragraphe 1 : ", { bold: true }), run("je décris.")], "ce que c'est, comment c'est fait"),
+    exLine([run("Paragraphe 2 : ", { bold: true }), run("j'explique pourquoi c'est important.")], "sa place dans notre culture", { after: 80 }),
+    sub("Exercice — ton plan en trois lignes :"),
+    p("Sujet imposé : « La valiha ». Écris le titre, le chapeau (une phrase) et les deux idées de paragraphes.", { after: 60 }),
   ];
 }
 
@@ -675,18 +708,19 @@ function lessonS9() {
     discBadge("PRODUCTION ÉCRITE", COLOR),
     p("", { after: 40 }),
     p([run("MON ARTICLE INFORMATIF (2) : RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
-    sub("Je rédige (huit à dix lignes) :"),
-    p("• J'écris au présent de l'indicatif."),
-    p("• Je transforme chaque idée de ma carte en phrase complète."),
-    p("• J'emploie au moins une phrase passive : « Le koba est vendu sur tous les marchés. »"),
-    p("• Je relie mes idées : d'abord, ensuite, enfin.", { after: 80 }),
-    sub("Ma grille de relecture :"),
-    pr([run("1. ", { bold: true }), run("Mes trois parties", { bold: true, color: C.SALMON, hl: true }), run(" sont là : titre, chapeau, corps.")], { after: 40 }),
-    pr([run("2. ", { bold: true }), run("Mes verbes", { bold: true, color: C.SALMON, hl: true }), run(" sont bien conjugués (1er groupe : -ent ; 2e groupe : -issent).")], { after: 40 }),
-    pr([run("3. ", { bold: true }), run("Mes phrases", { bold: true, color: C.SALMON, hl: true }), run(" commencent par une majuscule et finissent par un point.")], { after: 40 }),
-    pr([run("4. ", { bold: true }), run("Ma phrase passive", { bold: true, color: C.SALMON, hl: true }), run(" est bien accordée : « Les paniers sont tressés… »")], { after: 80 }),
-    sub("Le conseil du journaliste :"),
-    p("Le titre définitif s'écrit souvent en dernier, quand on sait exactement ce que dit l'article !", { after: 60 }),
+    sub("1. Je rédige (huit à dix lignes)"),
+    exLine([run("J'écris au "), run("présent de l'indicatif", { bold: true, color: C.SALMON, hl: true }), run(".")], "le temps du texte informatif"),
+    exLine([run("J'emploie au moins une "), run("phrase passive", { bold: true, color: C.SALMON, hl: true }), run(".")], "« Le koba est vendu sur tous les marchés. »"),
+    exLine([run("Je relie mes idées : "), run("d'abord, ensuite, enfin", { bold: true, color: C.SALMON, hl: true }), run(".")], "le lecteur me suit pas à pas", { after: 80 }),
+    sub("2. Je relis avec ma grille"),
+    exLine([run("Mes trois parties", { bold: true, color: C.SALMON, hl: true }), run(" sont là : titre, chapeau, corps.")], null),
+    exLine([run("Mes verbes", { bold: true, color: C.SALMON, hl: true }), run(" sont bien conjugués.")], "1er groupe : -ent ; 2e groupe : -issent"),
+    exLine([run("Ma phrase passive", { bold: true, color: C.SALMON, hl: true }), run(" est bien accordée.")], "« Les paniers sont tressés… »", { after: 80 }),
+    sub("3. J'améliore : un exemple"),
+    exLine([run("le koba cest bon  →  Le koba ", {}), run("est un délicieux gâteau de riz et d'arachide", { bold: true, color: C.SALMON, hl: true }), run(".")],
+      "je corrige ET j'enrichis : une phrase complète, précise", { after: 80 }),
+    sub("Exercice — améliore comme dans l'exemple :"),
+    p("« la valiha cest joli » → ………", { after: 60 }),
   ];
 }
 
@@ -741,17 +775,17 @@ function lessonS10() {
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
     p("", { after: 40 }),
     p([run("LIRE UN REPORTAGE À HAUTE VOIX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
-    sub("La ponctuation guide ma voix :"),
-    pr([run("• La virgule ( , )", { bold: true, color: C.SALMON, hl: true }), run(" → petite pause : je marque / sur mon texte.")], { after: 40 }),
-    pr([run("• Le point ( . )", { bold: true, color: C.SALMON, hl: true }), run(" → grande pause, la voix descend : je marque //.")], { after: 40 }),
-    pr([run("• Le point d'interrogation ( ? )", { bold: true, color: C.SALMON, hl: true }), run(" → la voix monte.")], { after: 40 }),
-    pr([run("• Le point d'exclamation ( ! )", { bold: true, color: C.SALMON, hl: true }), run(" → la voix devient plus forte.")], { after: 40 }),
-    pr([run("• Les guillemets « … »", { bold: true, color: C.SALMON, hl: true }), run(" → je change légèrement de voix : quelqu'un parle.")], { after: 80 }),
-    sub("Pour lire comme un journaliste de radio :"),
-    p("• Je prépare mon texte : je marque les pauses au crayon."),
-    p("• Je lis par groupes de souffle, ni trop vite ni trop lentement."),
-    p("• Je regarde mon public de temps en temps."),
-    p("• Je m'entraîne : plus on lit, mieux on lit !", { after: 60 }),
+    sub("1. La ponctuation guide ma voix"),
+    exLine([run("la virgule ( , )", { bold: true, color: C.SALMON, hl: true }), run(" → petite pause.")], "je marque / sur mon texte"),
+    exLine([run("le point ( . )", { bold: true, color: C.SALMON, hl: true }), run(" → grande pause, la voix descend.")], "je marque //"),
+    exLine([run("le point d'interrogation ( ? )", { bold: true, color: C.SALMON, hl: true }), run(" → la voix monte ↗.")], null),
+    exLine([run("le point d'exclamation ( ! )", { bold: true, color: C.SALMON, hl: true }), run(" → la voix devient plus forte !")], null),
+    exLine([run("les guillemets « … »", { bold: true, color: C.SALMON, hl: true }), run(" → je change légèrement de voix.")], "quelqu'un parle", { after: 80 }),
+    sub("2. Je prépare ma lecture comme un journaliste de radio"),
+    exLine([run("Je marque les pauses au crayon, puis je lis par "), run("groupes de souffle", { bold: true, color: C.SALMON, hl: true }), run(".")],
+      "ni trop vite, ni trop lentement — et je regarde mon public", { after: 80 }),
+    sub("Exercice — marque / et //, puis lis à haute voix :"),
+    p("« Dès le matin, les familles s'installent sur les gradins. Les artistes arrivent en cortège, vêtus de rouge et de blanc. Quel spectacle ! »", { after: 60 }),
   ];
 }
 
@@ -804,8 +838,8 @@ function exercises() {
 function revision() {
   const B2 = require("./builders");
   return [
-    B2.bookmarkTitle("s11", "SÉANCE 11 / 72", { bold: true, size: 28, after: 60 }),
-    p([run("RÉVISION — UNITÉ 1 : LA CULTURE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    B2.bookmarkTitle("s11", "SÉANCE 11 / 84", { bold: true, size: 28, after: 60 }),
+    p([run("RÉVISION ET DICTÉE — UNITÉ 1 : LA CULTURE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     p([run("Je réponds :", { bold: true })], { after: 80 }),
     p("1. Cite les sept familles de la culture, avec un exemple chacune."),
     pAns("R.A. : nourriture (romazava), habitat (maison de brique), vêtements (lamba), langue (kabary), danses (salegy), rites (famadihana), artisanat (panier tressé).", ["artisanat"]),
@@ -827,6 +861,10 @@ function revision() {
     pAns("R.A. : avec le sujet : les danses sont admirées.", ["le sujet"]),
     p("10. Donne le plan d'une présentation orale réussie."),
     pAns("R.A. : une accroche (question, voix qui monte), des informations exactes, une exclamation finale.", ["accroche"]),
+    p("", { after: 80 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« La culture malgache est transmise de génération en génération. Les artisans tissent la soie et les femmes tressent de jolis paniers. Pendant les grandes fêtes, les familles réussissent à garder vivantes les traditions des anciens. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("transmise", { bold: true, color: C.SALMON, hl: true }), run(" [passif : accord avec « la culture »], "), run("tissent", { bold: true, color: C.SALMON, hl: true }), run(" [1er groupe, ils → -ent], "), run("réussissent", { bold: true, color: C.SALMON, hl: true }), run(" [2e groupe → -issent], "), run("vivantes", { bold: true, color: C.SALMON, hl: true }), run(" [s'accorde avec « les traditions »].")], { after: 60 }),
   ];
 }
 
@@ -834,7 +872,7 @@ function revision() {
 function testPaper() {
   const B2 = require("./builders");
   return [
-    B2.bookmarkTitle("s12", "SÉANCE 12 / 72", { bold: true, size: 28, after: 60 }),
+    B2.bookmarkTitle("s12", "SÉANCE 12 / 84", { bold: true, size: 28, after: 60 }),
     p([run("TEST — UNITÉ 1 : LA CULTURE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 60 }),
     pr([run("Durée : ………        ", { bold: true }), run("Total : 20 points", { bold: true })], { center: true, after: 160 }),
     pr([run("Exercice 1 (4 points). ", { bold: true }), run("Complète avec : patrimoine — rite — artisanat — transmettre. 1. Le famadihana est un … important. 2. Les paniers tressés font partie de l'…. 3. La culture est notre … commun. 4. Les aînés doivent … leurs savoirs aux jeunes.")]),
