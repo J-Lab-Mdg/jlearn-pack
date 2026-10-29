@@ -361,6 +361,35 @@ Windows redémarre. **L'autorisation ne dure que jusqu'au prochain redémarrage*
 > redémarrer (un filigrane « Mode test » apparaît sur le bureau). À annuler après :
 > `bcdedit /set {current} testsigning off`.
 
+### 13.3 bis — Ce que l'étape B fait, et ne fait PAS
+
+Question posée : *« est-ce que ça met en danger le PC ? est-ce que je pourrai encore lire nos échanges ? »*
+
+**Réponse : oui, tout reste accessible. L'étape B ne touche ni Internet, ni le navigateur, ni les fichiers.**
+
+| L'étape B ne modifie PAS | L'étape B modifie |
+|---|---|
+| La connexion Internet, le Wi-Fi | Uniquement la règle « Windows n'accepte que les pilotes signés par Microsoft » |
+| Le navigateur, la session Arena, l'historique | Et seulement **jusqu'au prochain redémarrage** |
+| Les fichiers, les dossiers, les données | |
+| Le compte Microsoft, les mots de passe | |
+| L'antivirus, le pare-feu | |
+
+Autrement dit : on autorise Windows à charger un pilote qui n'a pas le certificat Microsoft, pendant une seule
+session. Un redémarrage normal annule tout automatiquement.
+
+**Ce qui reste lisible après l'opération :**
+
+- La conversation dans Arena (elle est stockée côté service, pas sur ce PC) ;
+- Tout le dossier `conversations/` du dépôt GitHub, qui contient déjà cette procédure ;
+- Rien de tout cela n'est affecté par un réglage de pilote.
+
+⚠️ **Le rebours** : si l'étape D demande un redémarrage (par exemple après l'installation du Redistributable
+Visual C++), **l'autorisation F7 est perdue**. Il faut alors refaire l'étape B avant d'installer le pilote SPD.
+
+> ⛔ Ne pas utiliser la variante `bcdedit /set {current} testsigning on` pour cette opération : elle est
+> permanente et affiche un filigrane « Mode test ». La méthode **F7** est temporaire, plus simple, et suffit.
+
 ### 13.4 Étape B — Ajouter le dossier aux exclusions antivirus
 
 Avant d'extraire le zip :
