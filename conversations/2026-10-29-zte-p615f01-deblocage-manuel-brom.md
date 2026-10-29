@@ -512,6 +512,16 @@ C:\zte-unlock\drivers\sprdvmdm.inf    (modem, inutile ici)
    **On n'utilise que `sprdvcom.inf`.** Les fichiers `.sys` / `.cat` accompagnent ces `.inf` dans le même dossier :
    ne pas déplacer les `.inf` seuls, le pilote ne se chargerait pas.
 
+   ⚠️ **Piège rencontré le 29/10** : dans la boîte « Disquette fournie… », `sprdadb.inf` est le **voisin
+   alphabétique** de `sprdvcom.inf`. Si l'assistant propose les modèles **`Android Bootloader`, `ADB Interface`,
+   `Composite ADB Interface`**, c'est qu'on a chargé **`sprdadb.inf`** (pilote ADB, inutile ici) : cliquer de
+   nouveau sur **Disquette fournie…** et viser `sprdvcom.inf`. Le bon fichier propose **`SPRD U2S Diag`**
+   (identifiants matériels `USB\VID_1782&PID_4D00`, `USB\VID_1782&PID_4D01&MI_00`, `3D00`, `3D10`, `5D03`,
+   `5D04`, `5D29`).
+   Astuce : dans la boîte de dialogue, au lieu de parcourir, **taper le chemin complet** dans le champ
+   « Nom du fichier » → `C:\zte-unlock\drivers\sprdvcom.inf` → **OK**. Aucun risque de se tromper de ligne.
+   Annuler l'assistant n'installe rien et n'abîme rien.
+
 **Installation (le téléphone doit être branché — refaire §13.3 juste avant)**
 
 4. **Téléphone éteint**, maintenir **Volume bas**, brancher le câble USB-C au PC.
