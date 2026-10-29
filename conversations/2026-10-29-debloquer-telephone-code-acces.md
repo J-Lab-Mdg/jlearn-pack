@@ -594,6 +594,13 @@ l'appareil « n'a pas d'eSIM ».
 | Création directement dans l'assistant Android après un effacement | Chemin le plus strict, souvent bloquant |
 | Achat de comptes « tout faits » ou numéros virtuels jetables | Compte verrouillé plus tard, récupération impossible |
 
+**Si Google affiche « Validez certaines informations » avec un QR code à scanner** (écran anti-robot) :
+c'est un signal de risque, pas une erreur. Deux issues — la plus courte est de **recommencer la création
+directement sur le téléphone**, dans l'application **Play Store** (Compte → Créer un compte), ce qui supprime
+l'étape du QR code. La seconde est de scanner le QR avec le téléphone connecté en Wi-Fi ; Google peut alors
+demander d'**envoyer un SMS de validation**, donc une carte SIM avec du crédit. Si les deux échouent :
+attendre **24 h** (le signal de risque retombe) et refaire la création sur le téléphone.
+
 **Rappel utile :** WhatsApp, Signal et les SMS **n'ont pas besoin de compte Google** — seulement d'un numéro de
 téléphone. Le compte Google ne sert qu'au Play Store, à la synchronisation et à Gmail.
 
