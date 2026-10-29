@@ -18,7 +18,8 @@ L'objectif : ne rien perdre, pouvoir relire plus tard, et partager facilement un
 
 | Date | Sujet | Fichier | Statut |
 |------|-------|---------|--------|
-| 2026-10-29 | Téléphone Android bloqué par un code créé pendant une « clé d'accès » (passkey) : diagnostic et plan de récupération | [`2026-10-29-debloquer-telephone-code-acces.md`](./2026-10-29-debloquer-telephone-code-acces.md) | Plan d'action ouvert |
+| 2026-10-29 | Téléphone Android bloqué par un code créé pendant une « clé d'accès » (passkey) — **ZTE P615F01, Android 15** : diagnostic, menu sans effacement, solutions | [`2026-10-29-debloquer-telephone-code-acces.md`](./2026-10-29-debloquer-telephone-code-acces.md) | Solutions proposées, en attente de test |
+| 2026-10-29 | Vérification de deux budgets de fournitures manuscrits : `FCE = 393 000 Ar` et `RPI ÉTAT = 1 098 000 Ar` | [`2026-10-29-analyse-budget-fournitures-fce-rpi.md`](./2026-10-29-analyse-budget-fournitures-fce-rpi.md) | FCE exacte ; RPI : écart de 11 400 Ar à arbitrer |
 
 ## Gabarit d'une nouvelle conversation
 

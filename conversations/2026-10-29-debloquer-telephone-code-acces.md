@@ -4,8 +4,9 @@
 > **Sujet** : un téléphone demande un code au démarrage ; ce code a été « inventé » la veille lors de la création
 > d'un compte en ligne, à cause d'une demande de **clé d'accès** (*passkey*).
 > **Question posée** : comment résoudre ça ?
-> **Statut** : plan d'action ouvert — blocage signalé le 29/10 : *le menu ne propose pas d'option « Wipe data »* ;
-> marque du téléphone non identifiée ; photos de l'écran à fournir.
+> **Statut** : **téléphone identifié** (ZTE P615F01, Android 15). Le menu de récupération ne propose pas
+> d'effacement — c'est voulu par le constructeur. Prochaine étape : vérifier la présence d'un compte Google,
+> puis effacer à distance (§7.4) ou passer par un atelier (§7.5).
 
 ---
 
@@ -293,7 +294,146 @@ Faire défiler **tout** le menu avec Volume bas avant de conclure :
 
 ---
 
-## 7. Informations à demander pour aller plus loin
+## 7. Mise à jour 2 du 29/10 — le téléphone est identifié : **ZTE P615F01, Android 15**
+
+Deux photos ont été fournies : l'écran du menu de démarrage et l'écran de verrouillage. Le diagnostic est
+maintenant établi, sans supposition.
+
+### 7.1 Ce que montrent exactement les photos
+
+**Photo 1 — le menu de démarrage**
+
+```
+Android Recovery
+ZTE/P615F01_1/P615F01
+15/AP3A.240905.015.A2/20260916.1023…
+user/release-keys
+Use volume up/down and power.
+
+  Reboot system now
+  Apply update from SD card
+  Mount /system
+  View recovery logs
+  Run graphics test
+  Run locale test
+  Power off
+```
+
+- **Modèle** : `P615F01` = plateforme **ZTE Blade A56 Pro (Z2474) / Blade A76**, puce **Unisoc**.
+  Le préfixe `15/` indique **Android 15**. Le build date du **16 septembre 2026** : téléphone neuf ou très récent.
+- **Confirmation du problème** : la liste ne contient **aucune ligne `Wipe data/factory reset`**. Le blocage
+  signalé est donc réel, et il n'est pas dû à une mauvaise manipulation.
+
+**Photo 2 — l'écran de verrouillage**
+
+```
+        🔒
+   Saisissez votre mot de passe
+   [____________________]
+
+   URGENCE              ANNULER
+   (clavier AZERTY complet : 1-0, a-z, ?123)
+```
+
+- C'est bien le **mot de passe de l'écran du téléphone**, pas un mot de passe Google. La demande d'un compte
+  Google afficherait « Connectez-vous avec votre compte Google » et proposerait « Mot de passe oublié ? ».
+  Ici, **aucun lien de secours** n'est proposé.
+- Le champ accepte **lettres et chiffres** : le code choisi peut très bien n'être que des chiffres
+  (`1234`, une date…) saisis dans un champ texte.
+
+### 7.2 Pourquoi ce menu n'a pas d'option d'effacement
+
+Ce n'est **ni un bug, ni un téléphone abîmé** : c'est un choix du constructeur.
+
+Depuis Android 10, la commande d'effacement du *recovery* est réservée aux images signées par le fabricant, et la
+plupart des marques retirent l'entrée du menu pour éviter qu'un voleur efface un appareil. Samsung a fait la même
+chose : la One UI 8.5 ne laisse plus que trois entrées dans son menu de recovery. ZTE applique la même politique,
+encore plus strictement.
+
+**Conséquence pratique** : sur ce modèle, la réinitialisation par les touches est **impossible**. Il faut passer
+par une autre voie. C'est exactement ce que dit la documentation : la seule réinitialisation officielle restante
+est celle déclenchée **à distance**, depuis le compte Google.
+
+### 7.3 La question qui décide de tout : y a-t-il un compte Google sur ce téléphone ?
+
+| Situation | Après un effacement | Verdict |
+|---|---|---|
+| **Aucun compte Google** n'a jamais été ajouté | Aucune protection FRP → le téléphone démarre normalement | ✅ Effacer est **sans risque** (hors données) |
+| Un **compte Google** est connecté | L'écran « Vérifiez votre compte » revient : il faut **l'adresse + le mot de passe** de ce compte | ⚠️ Sans ces identifiants, le téléphone devient inutilisable |
+
+**Comment le savoir** : depuis l'ordinateur (on voit Chrome ouvert sur la photo), se connecter sur
+`google.com/android/find` avec le compte du propriétaire.
+
+- Si le ZTE **apparaît** dans la liste → un compte est bien connecté, **et** le téléphone est en ligne.
+- S'il **n'apparaît pas** → soit aucun compte, soit téléphone hors ligne.
+
+> Ne pas sauter cette étape. C'est elle qui autorise (ou interdit) tout le reste.
+
+### 7.4 Plan A — l'effacement à distance (le « wipe » qui manque au menu)
+
+1. Sur le téléphone : choisir **`Reboot system now`** pour sortir du menu, et laisser démarrer jusqu'à l'écran
+   du mot de passe.
+2. **Connecter le téléphone à Internet** : tirer la barre de notifications vers le bas depuis l'écran de
+   verrouillage permet généralement d'activer le Wi-Fi ou les données mobiles.
+3. Sur l'ordinateur : `google.com/android/find` → sélectionner le ZTE → **Rétablir la configuration d'usine**.
+4. Le téléphone s'efface et redémarre.
+
+C'est **exactement** l'effacement cherché, mais déclenché à distance. Conditions : compte Google connecté +
+téléphone en ligne.
+
+### 7.5 Plan B — la voie du réparateur (puce Unisoc)
+
+Le matériel est un **Unisoc** (plateforme `ums9230`). Les ateliers équipés — outils type Pandora, EFT Pro,
+UnlockTool, Chimera, ou l'outil officiel Unisoc *ResearchDownload* avec un firmware `.PAC` — peuvent **formater la
+partition utilisateur** et **réinitialiser la protection FRP** par câble USB, en mode BROM/FDL.
+
+- Résultat : téléphone comme neuf. **Toutes les données sont perdues.**
+- À exiger avant de laisser l'appareil : **preuve d'achat**, **devis écrit**, **bon de dépôt**, et la question
+  explicite « *le FRP sera-t-il aussi enlevé ?* » (sinon le téléphone redemandera le compte Google après le flash).
+- À Antananarivo, les boutiques de réparation du centre-ville pratiquent ce type d'intervention. Demander
+  précisément : « *flash Unisoc, format userdata, reset FRP* ».
+
+### 7.6 Plan C — support ZTE
+
+Formulaire officiel : `support.ztedevices.com`. Demander la procédure de réinitialisation pour **P615F01**,
+en citant le numéro de build `20260916.1023…`. Réponse lente, mais officielle et gratuite.
+
+### 7.7 Peut-on encore essayer des mots de passe ?
+
+Oui — mais **de façon organisée et limitée**.
+
+- Ce téléphone **n'a pas** d'effacement automatique après X essais (contrairement à l'option Samsung, désactivée
+  par défaut de toute façon). Le seul coût d'un échec est le **délai d'attente**, qui augmente : 30 s, puis
+  1 min, 5 min, 30 min.
+- Donc : **10 à 15 essais au maximum**, choisis **à l'avance**, classés par probabilité, et **notés sur papier**.
+  Pas de saisie au hasard pendant une heure.
+- Rappel : les données sont chiffrées par ce mot de passe. Un logiciel ne peut pas le « casser ». Seuls des
+  essais intelligents ont une chance.
+- Le champ accepte lettres **et** chiffres : si l'ami n'a tapé que des chiffres, il faut les saisir **dans ce
+  champ texte**, sans se laisser troubler par le clavier AZERTY.
+
+### 7.8 Ce qu'il ne faut pas faire sur ce téléphone précis
+
+| À éviter | Pourquoi |
+|---|---|
+| `Apply update from SD card` avec un `.zip` trouvé sur Internet | Aucun bénéfice, et un fichier non signé peut bloquer définitivement l'appareil |
+| `Mount /system` | Inutile : le système est en lecture seule sur Android moderne |
+| Payer un « déblocage sans perte de données » | Impossible : le chiffrement est lié au mot de passe |
+| Faire flasher l'appareil **avant** d'avoir vérifié le compte Google | Sinon il faudra payer **en plus** un déblocage FRP |
+| Publier l'IMEI ou le numéro de série | Risque d'usage frauduleux |
+
+### 7.9 Bilan honnête
+
+- Les données **ne sont pas encore perdues** : le téléphone démarre et affiche son écran de verrouillage.
+- Mais sans le mot de passe, **personne** ne peut les lire — ni un réparateur, ni un logiciel, ni ZTE.
+- Trois issues seulement : **retrouver le mot de passe** (§7.7), **effacer à distance** (§7.4), ou **passer par un
+  atelier** (§7.5).
+- **Avant tout effacement**, refaire le tour des sauvegardes (§3, étape 3) : photos Google, contacts, Drive, carte
+  SD, WhatsApp Web si un ordinateur était déjà lié.
+
+---
+
+## 8. Informations à demander pour aller plus loin
 
 Pour donner une procédure exacte (au lieu d'un plan général), il faut :
 
@@ -308,7 +448,7 @@ Avec ça, la réponse devient : « sur ce modèle, il y a / il n'y a pas de solu
 
 ---
 
-## 8. Sources
+## 9. Sources
 
 - Google Chrome Help — *Gérer les clés d'accès dans Chrome* (Android 9+, verrouillage d'écran obligatoire) :
   <https://support.google.com/chrome/answer/13168025>
@@ -321,6 +461,18 @@ Avec ça, la réponse devient : « sur ce modèle, il y a / il n'y a pas de solu
   <https://eu.community.samsung.com/t5/other-galaxy-s-series/unexpected-factory-reset-on-my-s21-ultra/td-p/5569008>
 - Mobidocs — *Oubli du code ou schéma Samsung* (état réel de SmartThings Find) :
   <https://mobidocs.fr/tutoriels/oublie-du-code-ou-schema-de-deverrouillage-samsung>
+- Rapport d'atelier — *FRP Reset ZTE Blade A56 Pro (Z2474)* : confirme que `P615F01` est bien le produit de la
+  série Blade A56/A76 (plateforme Unisoc `ums9230`, Android 15, SDK 35) :
+  <https://www.gsmzone.com/experience-reports/frp-reset-zte-blade-a56-pro-z2474-pandora-tool>
+- Fiche produit ZTE Blade A76 `P615F01-GREY` (Unisoc T7250, Android 15, 128 Go) :
+  <https://www.roscenter.com/product/zte-blade-a76-6-75-hd-4gb-8gb-128gb-polar-grey>
+- Guide *SPD Research Tool* (outil officiel Unisoc, firmwares `.PAC`, effacement des données) :
+  <https://spdflashtool.com/tutorial/use-spd-research-tool/>
+- PhoneArena — *Samsung retire des outils du menu recovery* (précédent de constructeur) :
+  <https://www.phonearena.com/news/samsung-update-is-removing-most-android-recovery-menu-tools-from-its-phones_id178630>
+- Devicеsfаq — *« L'option Wipe data/factory reset n'apparaît pas »* (causes usuelles) :
+  <https://www.devicesfaq.com/en/help/what-to-do-if-the-text-no-command-appears>
+- Support ZTE : <https://support.ztedevices.com>
 
 ---
 
@@ -334,3 +486,8 @@ Avec ça, la réponse devient : « sur ce modèle, il y a / il n'y a pas de solu
 | Le déverrouillage à distance Samsung n'existe plus | certain |
 | L'option « code oublié » existe encore sur certains modèles (Xiaomi, Huawei, Transsion…) | probable, à vérifier sur l'appareil |
 | Retirer l'appareil du compte Google évite la protection FRP | à vérifier, non fiable |
+| `P615F01` = ZTE Blade A56 Pro / A76, Android 15, puce Unisoc | certain |
+| Le menu recovery de ce modèle n'a pas d'option d'effacement, par conception | certain (visible sur photo) |
+| L'écran demande le mot de passe de l'écran, pas celui du compte Google | certain (visuel + absence de lien de secours) |
+| Ce modèle n'efface pas automatiquement après 15 essais | probable (aucune option de ce type documentée chez ZTE) |
+| Un atelier Unisoc peut formater et retirer le FRP | certain (rapports d'atelier publiés sur ce modèle) |
