@@ -318,7 +318,171 @@ Si le BROM ne répond pas, ou si une commande fait peur, c'est la voie raisonnab
 
 ---
 
-## Sources
+## 13. Procédure Windows 10 (config réelle : câble USB-C)
+
+Le matériel utilisé est un **PC Windows 10** avec le **câble USB-C d'origine** du téléphone. La méthode est la
+même qu'en Linux, mais Windows ajoute trois obstacles qu'il faut régler **avant** de brancher quoi que ce soit.
+
+### 13.1 Les trois pièges Windows (dans l'ordre d'apparition)
+
+| # | Piège | Symptôme | Solution |
+|---|---|---|---|
+| 1 | **Pilote non signé** | Le téléphone apparaît comme « Périphérique inconnu », aucun `SPRD U2S Diag` | Désactiver la vérification de signature, puis installer le pilote SPD |
+| 2 | **Antivirus** | `spd_dump.exe` disparaît du dossier, ou « menace supprimée » | Ajouter le dossier aux exclusions de Windows Defender **avant** d'extraire |
+| 3 | **Câble USB-C de charge seule** | Aucun périphérique détecté, quel que soit le pilote | Tester le câble, en changer si besoin |
+
+Et un quatrième, plus discret : **il faut la bibliothèque `MSVCP140.dll`** (Visual C++ Redistributable). Sans elle,
+`spd_dump.exe` se ferme instantanément avec le code `0xC0000135`.
+
+### 13.2 Vérifier le câble USB-C AVANT tout le reste
+
+Sur beaucoup de téléphones, le câble fourni ne transporte que l'électricité, pas les données. Test simple :
+
+1. Brancher un **autre** appareil USB-C au PC avec ce câble (téléphone, clé USB-C, disque externe).
+2. Si rien n'apparaît dans l'explorateur Windows → **le câble est inutilisable** pour cette opération.
+3. Autre test : brancher le ZTE allumé au PC. Windows doit faire un bruit de connexion et afficher l'appareil
+   dans le Gestionnaire de périphériques.
+
+> Si le câble ne transporte pas de données, aucun pilote, aucun outil, aucune commande ne fonctionnera.
+> C'est la cause n°1 des échecs silencieux.
+
+### 13.3 Étape A — Autoriser les pilotes non signés (obligatoire)
+
+Le pilote Unisoc (`SPRD U2S Diag`) n'est pas signé par Microsoft. Windows 10 le refuse par défaut.
+
+1. Enregistrer son travail.
+2. Menu Démarrer → clic sur **Redémarrer** en maintenant **Maj (Shift)** enfoncé.
+3. **Dépannage** → **Options avancées** → **Paramètres de démarrage** → **Redémarrer**.
+4. Au menu, taper **7** (ou F7) : *Désactiver la vérification obligatoire des signatures de pilote*.
+
+Windows redémarre. **L'autorisation ne dure que jusqu'au prochain redémarrage** : installer le pilote maintenant.
+
+> Variante persistante : `bcdedit /set {current} testsigning on` dans une invite **administrateur**, puis
+> redémarrer (un filigrane « Mode test » apparaît sur le bureau). À annuler après :
+> `bcdedit /set {current} testsigning off`.
+
+### 13.4 Étape B — Ajouter le dossier aux exclusions antivirus
+
+Avant d'extraire le zip :
+
+1. **Sécurité Windows** → **Protection contre les virus et menaces** → **Gérer les paramètres**.
+2. Descendre à **Exclusions** → **Ajouter ou supprimer des exclusions** → **Dossier**.
+3. Choisir `C:\zte-unlock` (ou le dossier retenu).
+
+Sans ça, Defender classe `spd_dump.exe` comme *HackTool* et le supprime. Ce n'est pas une infection : c'est un
+outil d'atelier, mais l'antivirus ne fait pas la différence.
+
+### 13.5 Étape C — Extraire et inspecter le paquet
+
+1. Clic droit sur le zip → **Extraire tout** → dossier `C:\zte-unlock`.
+2. Ouvrir ce dossier, cliquer dans la barre d'adresse, taper `cmd`, valider. Une invite s'ouvre **déjà dans le
+   bon dossier**.
+3. Taper :
+
+```bat
+dir
+```
+
+**Ce qu'on doit y trouver :**
+
+| Fichier | Rôle | Obligatoire |
+|---|---|---|
+| `spd_dump.exe` | L'outil lui-même | ✅ |
+| `Channel9.dll` | Bibliothèque de communication | ✅ (si fournie) |
+| `Channel.ini` | Configuration | ✅ (si fournie) |
+| `fdl1-dl.bin` | Premier étage de chargement | ✅ |
+| `fdl2-dl.bin` | Second étage, celui qui lit/écrit | ✅ |
+| `custom_exec_no_verify_65015f08.bin` | Payload de la faille | ✅ |
+| `fdl2-cboot.bin`, `misc-wipe.bin` | Déblocage bootloader, ordre d'effacement | ⬜ utile |
+| `*.bat` | Scripts prêts à l'emploi | ⬜ bonus |
+
+> **Si `spd_dump.exe` est absent** (le paquet peut ne contenir que les binaires Linux), il faut récupérer une
+> version Windows : elle est fournie dans d'autres paquets du même auteur (dossiers UMS9620 / *universal*).
+> Ne pas mélanger des `.exe` et des `.bin` provenant de paquets différents : garder l'ensemble homogène.
+
+4. Test de démarrage :
+
+```bat
+spd_dump.exe --help
+```
+
+- Une liste de commandes s'affiche → ✅ tout est bon.
+- Message sur `MSVCP140.dll` manquant → installer **Visual C++ Redistributable 2015-2022 (x64)** depuis le site
+  Microsoft, puis réessayer.
+- « Ce programme ne peut pas s'exécuter » / code `0xC0000135` → même cause : la bibliothèque VC++ manque.
+
+### 13.6 Étape D — Installer le pilote SPD
+
+1. Télécharger les **SPD USB Drivers** (Spreadtrum / Unisoc, version 4.2x, paquet `SPRD_Unisoc`).
+2. **Téléphone éteint**, maintenir **Volume bas**, brancher le câble USB-C au PC.
+3. Gestionnaire de périphériques (clic droit sur Démarrer) : chercher un périphérique inconnu, souvent nommé
+   `SPRD U2S Diag`, `SCI USB2Serial` ou `Unknown Device`.
+4. Clic droit → **Mettre à jour le pilote** → **Rechercher un pilote sur mon ordinateur** →
+   **Choisir dans une liste de pilotes disponibles** → **Disquette fournie…** → pointer sur le fichier `.inf`
+   du paquet (`sprdvcom.inf`).
+5. Ignorer l'avertissement de signature, puis vérifier : le périphérique doit apparaître sous
+   **Ports (COM et LPT)** en `SPRD U2S Diag (COMx)`.
+
+> Le périphérique peut n'apparaître que **quelques secondes**. Faire la manipulation sans traîner, ou laisser le
+> gestionnaire ouvert avant de brancher.
+
+### 13.7 Étape E — Test à blanc (lecture seule, n'écrit rien)
+
+**Toujours dans `cmd`, dans le dossier du paquet.** Lancer la commande **avant** de brancher le téléphone :
+
+```bat
+spd_dump.exe --wait 300 exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec read_part misc 0 64 misc_test.bin reset
+```
+
+Puis, **en gardant Volume bas enfoncé**, brancher le câble USB-C.
+
+| Ce qui s'affiche | Signification |
+|---|---|
+| `waiting for device` puis rien | Le téléphone n'est pas vu : pilote, câble ou touche |
+| `BSL_REP_VER: "SPRD3"` | ✅ Communication établie |
+| `misc_test.bin` apparaît dans le dossier | ✅ **Accès en lecture confirmé, tu peux continuer** |
+| `find port failed` | Connexion perdue, relancer, ne pas continuer |
+| `CHECK_BAUD FAIL` | Normal sur les versions corrigées : le binaire se reconnecte seul |
+
+> En `cmd`, tout tient sur **une seule ligne** (pas de `\` de continuation comme sous Linux).
+
+### 13.8 Étape F — Effacer
+
+```bat
+spd_dump.exe --wait 300 exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec e userdata e metadata reset
+```
+
+Puis **ne rien toucher**. Le téléphone redémarre seul.
+
+### 13.9 Étape G — Vérifier
+
+Assistant de configuration, choix de la langue, **aucune demande de compte Google**. Si un mot de passe est
+encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `misc-wipe.bin`.
+
+### 13.10 Dépannage spécifique Windows
+
+| Symptôme | Cause | Action |
+|---|---|---|
+| Rien dans le Gestionnaire de périphériques | Câble de charge seule, ou mauvais port | Changer de câble, prendre un port USB **2.0** à l'arrière du PC |
+| « Périphérique inconnu » avec triangle jaune | Pilote non installé, ou signature réactivée | Refaire §13.3 puis §13.6 (l'autorisation expire à chaque redémarrage) |
+| Code 10 / Code 52 | Code 52 = signature encore bloquée | Redémarrer avec F7, réinstaller |
+| `spd_dump.exe` disparaît | Defender l'a supprimé | Exclusion de dossier (§13.4), ré-extraire le zip |
+| Fenêtre qui se ferme en 1 seconde | `MSVCP140.dll` manquant | Installer le Redistributable VC++ x64 |
+| `Channel9.dll` introuvable | DLL absente ou mauvais dossier courant | Vérifier `dir`, rester dans le dossier du paquet |
+| Le téléphone apparaît puis disparaît | Fenêtre courte, batterie faible, câble instable | Charger à 50 %+, relancer la commande **avant** de brancher |
+| `find port failed` répété | USB 3, hub, câble long | Port USB 2.0 direct sur la carte mère, câble court |
+
+### 13.11 Ce qu'il faut m'envoyer pour continuer
+
+1. La sortie de `dir` dans le dossier extrait (ou une capture).
+2. Le résultat de `spd_dump.exe --help`.
+3. Une capture du Gestionnaire de périphériques après branchement en mode BROM.
+
+Avec ces trois éléments, la suite peut être donnée **ligne par ligne**, sans approximation.
+
+---
+
+## 14. Sources
 
 - Paquet **`ums9230_universal_unlock_EMMC.zip`** (Unisoc UMS9230, eMMC) :
   <https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/releases/tag/1.72>
@@ -328,6 +492,14 @@ Si le BROM ne répond pas, ou si une commande fait peur, c'est la voie raisonnab
 - Outil `spd_dump` (source) : <https://github.com/TomKing062/spreadtrum_flash>
 - Description de la faille CVE-2022-38694 par NCC Group :
   <https://research.nccgroup.com/2022/09/02/theres-another-hole-in-your-soc-unisoc-rom-vulnerabilities/>
+- Outil multi-plateforme documentant `spd_dump.exe` + `Channel9.dll` + pilote `SPRD U2S Diag` sous Windows :
+  <https://github.com/Milordick/unisoc-tool-rs>
+- Installation des pilotes Unisoc/Spreadtrum et désactivation de la vérification de signature (Hovatek) :
+  <https://www.hovatek.com/forum/thread-827.html>
+- Procédure de désactivation de la vérification de signature (Windows 10/11, pas à pas) :
+  <https://rompalace.com/guides/install-usb-drivers/>
+- Paquets de pilotes SPD/Unisoc 4.2x (non signés, Windows 7 à 11) :
+  <https://gsm6.com/spreadtrum-unisoc-spd-drivers-download-latest/>
 - Rapport d'atelier confirmant le BROM sur ce ZTE (`P615F01`, `ums9230_6h10`, EMMC, A/B) :
   <https://www.gsmzone.com/experience-reports/frp-reset-zte-blade-a56-pro-z2474-pandora-tool>
 
@@ -341,3 +513,7 @@ Si le BROM ne répond pas, ou si une commande fait peur, c'est la voie raisonnab
 | Effacer `userdata` + `metadata` suffit | très probable (c'est la procédure standard sur FBE) |
 | Le BROM de ce modèle n'est pas corrigé | probable (rapports d'atelier sur ce modèle en 2026) |
 | Le `misc-wipe.bin` est dans le paquet | à vérifier à l'ouverture du zip |
+| `spd_dump.exe` + `Channel9.dll` = chaîne Windows de référence | certain (documenté par plusieurs projets) |
+| Le pilote `SPRD U2S Diag` n'est pas signé → F7 obligatoire | certain |
+| `spd_dump.exe` exige `MSVCP140.dll` | certain (erreur 0xC0000135 documentée) |
+| Le paquet EMMC contient des binaires Windows | **à vérifier** avec `dir` |
