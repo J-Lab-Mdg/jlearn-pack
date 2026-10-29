@@ -325,6 +325,10 @@ même qu'en Linux, mais Windows ajoute trois obstacles qu'il faut régler **avan
 
 ### 13.1 Les trois pièges Windows (dans l'ordre d'apparition)
 
+> **Lettres des étapes** (celles employées dans la conversation) : **A** câble → **B** touche 7 → **C** exclusions
+> Defender → **D** extraction + `--help` → **E** pilote SPD → **F** test à blanc → **G** effacement → **H** vérification.
+
+
 | # | Piège | Symptôme | Solution |
 |---|---|---|---|
 | 1 | **Pilote non signé** | Le téléphone apparaît comme « Périphérique inconnu », aucun `SPRD U2S Diag` | Désactiver la vérification de signature, puis installer le pilote SPD |
@@ -334,7 +338,7 @@ même qu'en Linux, mais Windows ajoute trois obstacles qu'il faut régler **avan
 Et un quatrième, plus discret : **il faut la bibliothèque `MSVCP140.dll`** (Visual C++ Redistributable). Sans elle,
 `spd_dump.exe` se ferme instantanément avec le code `0xC0000135`.
 
-### 13.2 Vérifier le câble USB-C AVANT tout le reste
+### 13.2 Étape A — Vérifier le câble USB-C AVANT tout le reste
 
 Sur beaucoup de téléphones, le câble fourni ne transporte que l'électricité, pas les données. Test simple :
 
@@ -346,7 +350,11 @@ Sur beaucoup de téléphones, le câble fourni ne transporte que l'électricité
 > Si le câble ne transporte pas de données, aucun pilote, aucun outil, aucune commande ne fonctionnera.
 > C'est la cause n°1 des échecs silencieux.
 
-### 13.3 Étape A — Autoriser les pilotes non signés (obligatoire)
+### 13.3 Étape B — Autoriser les pilotes non signés (obligatoire)
+
+> **État au 29/10** : refait après le redémarrage du matin, PC revenu sur le bureau sans erreur — autorisation
+> active pour la session en cours. C'est cette session qui doit servir à installer le pilote (§13.6) puis à faire
+> le test à blanc (§13.7) : **ne pas redémarrer entre-temps**.
 
 Le pilote Unisoc (`SPRD U2S Diag`) n'est pas signé par Microsoft. Windows 10 le refuse par défaut.
 
@@ -361,7 +369,7 @@ Windows redémarre. **L'autorisation ne dure que jusqu'au prochain redémarrage*
 > redémarrer (un filigrane « Mode test » apparaît sur le bureau). À annuler après :
 > `bcdedit /set {current} testsigning off`.
 
-### 13.3 bis — Ce que l'étape B fait, et ne fait PAS
+### 13.3 bis — Ce que l'étape B (touche 7) fait, et ne fait PAS
 
 Question posée : *« est-ce que ça met en danger le PC ? est-ce que je pourrai encore lire nos échanges ? »*
 
@@ -384,13 +392,13 @@ session. Un redémarrage normal annule tout automatiquement.
 - Tout le dossier `conversations/` du dépôt GitHub, qui contient déjà cette procédure ;
 - Rien de tout cela n'est affecté par un réglage de pilote.
 
-⚠️ **Le rebours** : si l'étape D demande un redémarrage (par exemple après l'installation du Redistributable
+⚠️ **Le revers** : si une étape demande un redémarrage (par exemple après l'installation du Redistributable
 Visual C++), **l'autorisation F7 est perdue**. Il faut alors refaire l'étape B avant d'installer le pilote SPD.
 
 > ⛔ Ne pas utiliser la variante `bcdedit /set {current} testsigning on` pour cette opération : elle est
 > permanente et affiche un filigrane « Mode test ». La méthode **F7** est temporaire, plus simple, et suffit.
 
-### 13.4 Étape B — Ajouter le dossier aux exclusions antivirus
+### 13.4 Étape C — Ajouter le dossier aux exclusions antivirus
 
 Avant d'extraire le zip :
 
@@ -401,7 +409,7 @@ Avant d'extraire le zip :
 Sans ça, Defender classe `spd_dump.exe` comme *HackTool* et le supprime. Ce n'est pas une infection : c'est un
 outil d'atelier, mais l'antivirus ne fait pas la différence.
 
-### 13.5 Étape C — Extraire et inspecter le paquet
+### 13.5 Étape D — Extraire et inspecter le paquet
 
 1. Clic droit sur le zip → **Extraire tout** → dossier `C:\zte-unlock`.
 2. Ouvrir ce dossier, cliquer dans la barre d'adresse, taper `cmd`, valider. Une invite s'ouvre **déjà dans le
@@ -472,7 +480,7 @@ Toutes les commandes utiles sont annoncées : `--wait`, `exec_addr`, `fdl FILE a
 > devrait pas l'annoncer. Non bloquant : nous n'utiliserons **jamais** `baudrate`. Le test à blanc (§13.7) sert
 > précisément à valider la chaîne réelle sur l'appareil avant tout effacement.
 
-### 13.6 Étape D — Installer le pilote SPD
+### 13.6 Étape E — Installer le pilote SPD
 
 > **Le zip de l'outil ne contient aucun pilote** : vérifié le 29/10, `C:\zte-unlock` n'a que des `.exe`, `.dll`,
 > `.bin`, un sous-dossier et un `.bat`. Le pilote se télécharge séparément.
@@ -524,7 +532,7 @@ hérité** → **Installer le matériel que je sélectionne manuellement dans un
 périphériques** → **Disquette fournie…** → le même `.inf`. Le pilote est alors enregistré avant même le premier
 branchement, et §13.6 s'exécute ensuite sans course contre la montre.
 
-### 13.7 Étape E — Test à blanc (lecture seule, n'écrit rien)
+### 13.7 Étape F — Test à blanc (lecture seule, n'écrit rien)
 
 **Toujours dans `cmd`, dans le dossier du paquet.** Lancer la commande **avant** de brancher le téléphone :
 
@@ -544,7 +552,7 @@ Puis, **en gardant Volume bas enfoncé**, brancher le câble USB-C.
 
 > En `cmd`, tout tient sur **une seule ligne** (pas de `\` de continuation comme sous Linux).
 
-### 13.8 Étape F — Effacer
+### 13.8 Étape G — Effacer
 
 ```bat
 spd_dump.exe --wait 300 exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec e userdata e metadata reset
@@ -552,7 +560,7 @@ spd_dump.exe --wait 300 exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2
 
 Puis **ne rien toucher**. Le téléphone redémarre seul.
 
-### 13.9 Étape G — Vérifier
+### 13.9 Étape H — Vérifier
 
 Assistant de configuration, choix de la langue, **aucune demande de compte Google**. Si un mot de passe est
 encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `misc-wipe.bin`.
