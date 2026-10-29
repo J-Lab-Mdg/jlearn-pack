@@ -598,7 +598,18 @@ liste** → **Afficher tous les périphériques** → **Disquette fournie…** �
 spd_dump.exe --wait 300 exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec read_part misc 0 64 misc_test.bin reset
 ```
 
-Puis **maintenir la touche**, brancher le câble USB-C, et **relâcher la touche dès que le port apparaît** (environ 2 secondes).
+Puis entrer en mode download avec la **méthode officielle** (encadré ci-dessous) : câble déjà branché, puis **Power + Volume haut maintenus 7 à 10 secondes**.
+
+> ### 🔑 Comment entrer en mode download — méthode officielle
+>
+> Source : wiki du projet (`Unlock` + `SupportList`), écrit par l'auteur de `spd_dump`.
+>
+> > « To enter U2S DIAG mode, it is **power + vol up** / **power + vol down** (most common) / **power + vol up + vol down**, if all not work, then have to find testpoint on motherboard. »
+> > « **Press key combination for 7-10 seconds** to enter download mode. »
+>
+> Autrement dit : ce n'est **pas** « maintenir Volume et brancher le câble ». Il faut **Power + une touche de volume**, tenues **7 à 10 secondes**, câble **déjà branché**. C'est l'oubli des deux premiers essais : le téléphone se contentait de démarrer normalement (recovery avec Volume bas, animation de charge avec Vol+ + Vol−).
+>
+> Ordre des essais : **Power + Vol+** → **Power + Vol−** → **Power + Vol+ + Vol−**. Si aucun ne marche : *test point* sur la carte mère (démontage).
 
 | Ce qui s'affiche | Signification |
 |---|---|
@@ -675,7 +686,8 @@ encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `m
 | `Successfully connected to port: N` puis `usb_send failed (0 / 1)` | L'appareil a quitté le mode BROM avant le premier échange — le plus souvent parce que la touche était **encore maintenue** | Relâcher la touche dès l'apparition du port ; essayer **Volume haut** ; vérifier que le téléphone était bien **éteint** et non en veille |
 | `Successfully connected to port: N` puis `device removed, exiting...` | Le port COM est apparu puis a disparu tout de suite : l'appareil a changé de mode USB (fin de fenêtre BROM, passage au chargeur, à Android ou au bootloader) | Arrêter **complètement** le téléphone (écran noir), puis essayer les combinaisons dans l'ordre : **Vol+ + Vol−**, **Vol+ + Vol− + Power**, **Vol+ seul**, **aucune touche**. Relancer avec `--verbose` pour voir l'identifiant du périphérique |
 | Après la commande, le téléphone démarre en **Android recovery** | Volume bas maintenu = déclencheur du recovery sur ce modèle (constaté le 29/10) | « Reboot system now » → éteindre complètement → refaire la séquence en relâchant la touche |
-| Le téléphone démarre en Android normal | La touche n'a pas été lue comme « download mode » | Éteindre, refaire avec **Vol+ et Vol− ensemble** ; en dernier recours **sans aucune touche** |
+| Écran **noir quelques secondes puis animation de charge** | Démarrage normal sur chargeur — le téléphone n'est **jamais** entré en download mode | La combinaison doit inclure **Power** et être tenue **7–10 s** (voir l'encadré de §13.7) |
+| Le téléphone démarre en Android normal | La touche n'a pas été lue comme « download mode » | Éteindre, refaire avec **Power + Vol+** tenu 7–10 s |
 | `usb_send failed` alors qu'aucune touche n'était enfoncée | Le port COM ouvert était celui du diag Android (`PID_4D01`), pas le BROM (`PID_4D00`) | `pnputil /enum-devices /connected /class Ports` doit montrer `VID_1782&PID_4D00` ; sinon le téléphone n'était pas en BROM |
 | `Accès refusé.` juste après avoir tapé quelque chose comme `C:\zte-unlock>)` | Le **prompt** affiché dans la documentation a été collé comme s'il s'agissait d'une commande | Le prompt n'est pas une commande : taper `cd /d C:\zte-unlock` (voir ligne suivante) |
 | Le prompt affiche `C:\Windows\system32` | `cmd` a été ouvert depuis le menu Démarrer, pas depuis le dossier du paquet | `cd /d C:\zte-unlock`, ou rouvrir `cmd` depuis la barre d'adresse du dossier |
@@ -693,6 +705,9 @@ Avec ces trois éléments, la suite peut être donnée **ligne par ligne**, sans
 ---
 
 ## 14. Sources
+
+- **Wiki officiel de l'outil** (TomKing062) — <https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/Unlock> et <https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/SupportList> : « power + vol up / power + vol down / power + vol up + vol down », **tenues 7 à 10 secondes** ; à défaut, *test point* sur la carte mère. Le wiki précise aussi que le pilote SPRD et le pilote libusb sont **incompatibles** : un seul à la fois dans Windows.
+- **README de `spd_dump`** — <https://github.com/TomKing062/spreadtrum_flash> : options `--wait`, `--kick` (route `boot_diag → cali_diag → dl_diag`), `--verbose <0|1|2>` (le niveau est **obligatoire**), `-r/--reconnect`, `--kickto`, commandes `timeout`, `baudrate`, `read_part`, `w`, `e`, `r all|all_lite`.
 
 - Paquet **`ums9230_universal_unlock_EMMC.zip`** (Unisoc UMS9230, eMMC) :
   <https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/releases/tag/1.72>
