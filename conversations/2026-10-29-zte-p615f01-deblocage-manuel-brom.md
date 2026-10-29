@@ -536,11 +536,33 @@ C:\zte-unlock\drivers\sprdvmdm.inf    (modem, inutile ici)
 > Le périphérique peut n'apparaître que **quelques secondes**. Faire la manipulation sans traîner, ou laisser le
 > gestionnaire ouvert avant de brancher.
 
-**Variante sans le téléphone** (pré-installation du pilote dans le magasin Windows) : Gestionnaire de
-périphériques → clic sur le nom de l'ordinateur en haut de la liste → menu **Action** → **Ajouter un matériel
-hérité** → **Installer le matériel que je sélectionne manuellement dans une liste** → **Afficher tous les
-périphériques** → **Disquette fournie…** → le même `.inf`. Le pilote est alors enregistré avant même le premier
-branchement, et §13.6 s'exécute ensuite sans course contre la montre.
+**Méthode recommandée — `pnputil`, sans assistant et sans liste de modèles**
+
+L'assistant graphique pose deux problèmes vécus le 29/10 :
+
+- il **réutilise le dernier `.inf` chargé** : après avoir ouvert `sprdadb.inf` une fois, re-sélectionner
+  `sprdvcom.inf` peut réafficher la même liste (`Android Bootloader`, `ADB Interface`, `Composite ADB Interface`)
+  sans erreur visible ;
+- il oblige à **choisir un modèle à la main**, alors que Windows sait très bien associer le pilote à l'appareil
+  par son identifiant matériel.
+
+On contourne les deux avec **une commande**, dans une invite **exécutée en administrateur** :
+
+```bat
+pnputil /add-driver C:\zte-unlock\drivers\sprdvcom.inf /install
+```
+
+Sortie attendue : `Package de pilotes ajouté avec succès` + un nom `oemXX.inf`. La mention « aucun périphérique
+correspondant » est **normale** à ce stade : elle signifie que le paquet est enregistré et attend l'appareil.
+Au premier branchement en mode BROM, Windows reconnaît `USB\VID_1782&PID_4D00` tout seul et crée le COM.
+
+Si `pnputil` refuse le paquet (erreur de signature), c'est que la touche **7** n'est plus active → refaire §13.3.
+
+**Variante graphique** (si `pnputil` est indisponible) : Gestionnaire de périphériques → clic sur le nom de
+l'ordinateur en haut de la liste → menu **Action** → **Ajouter un matériel d'ancienne version**
+(« hérité » selon la version de Windows) → **Installer le matériel que je sélectionne manuellement dans une
+liste** → **Afficher tous les périphériques** → **Disquette fournie…** → taper le **chemin complet** de
+`sprdvcom.inf` dans le champ « Nom du fichier ».
 
 ### 13.7 Étape F — Test à blanc (lecture seule, n'écrit rien)
 
