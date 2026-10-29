@@ -155,14 +155,14 @@ const S = [
     revRA: '1492-1789 ; Grandes découvertes, Renaissance, Réforme.',
     situation: 'Pendant des siècles, les marins européens ont longé les côtes sans oser s’éloigner. Et soudain, en une trentaine d’années, ils doublent l’Afrique, traversent l’Atlantique, atteignent les Indes et font le tour du monde. Que s’est-il passé ? Pourquoi partir si loin, au péril de sa vie ? Et qui sont ces capitaines dont les noms sont entrés dans l’Histoire ?',
     legende: 'En trente ans, les marins d’Europe doublent l’Afrique, traversent l’Atlantique et font le tour du monde.',
-    motsCles: ['caravelle', 'boussole', 'astrolabe', 'cartes marines', 'routes des épices', 'Bartolomeu Diaz', 'Christophe Colomb', 'Vasco de Gama', 'Vespucci', 'Diégo Diaz', 'Magellan'],
+    motsCles: ['caravelle', 'boussole', 'astrolabe', 'cartes marines', 'routes des épices', 'Bartolomeu Diaz', 'Christophe Colomb', 'Vasco de Gama', 'Vespucci', 'Diégo Diaz', 'Magellan', 'Jacques Cartier'],
     sections: [
       {
         titre: 'Les facteurs du grand départ',
         paras: ['Trois familles de facteurs expliquent les Grandes découvertes :'],
         puces: [
           'un facteur technique : la caravelle, navire maniable qui remonte le vent ; la boussole, qui garde le cap ; l’astrolabe, qui donne la latitude ; les cartes marines, toujours plus précises — sans ces outils, pas de haute mer ;',
-          'un facteur économique : les routes terrestres vers l’Asie — la route de la soie, les routes des épices — sont longues, coûteuses et contrôlées par des intermédiaires ; après la prise de Constantinople par les Ottomans (1453), les Européens cherchent un chemin maritime direct vers les épices et les métaux précieux ;',
+          'un facteur économique : les routes terrestres vers l’Asie — la route de la soie, les routes des épices — sont longues, coûteuses et contrôlées par des intermédiaires ; après la prise de Constantinople par les Ottomans (1453), les Européens cherchent un chemin maritime direct vers les épices et les métaux précieux — rêvant des richesses de l’Asie décrites dès le XIIIᵉ siècle par le voyageur vénitien Marco Polo ;',
           'un facteur politique et religieux : les royaumes du Portugal et d’Espagne veulent des terres nouvelles, et répandre le christianisme.',
         ],
       },
@@ -175,7 +175,8 @@ const S = [
           'Vasco de Gama atteint Calicut, aux Indes, en 1498 ;',
           'Amerigo Vespucci explore vers 1500 le continent qui prendra son nom ;',
           'la même année, Diégo Diaz, dérouté par une tempête, aborde Madagascar ;',
-          'l’expédition de Magellan (1519-1522) réalise le premier tour du monde — preuve définitive que la Terre est ronde.',
+          'l’expédition de Magellan (1519-1522) réalise le premier tour du monde — preuve définitive que la Terre est ronde ;',
+          'enfin, pour la France, Jacques Cartier explore en 1534 le Canada et le fleuve Saint-Laurent : toutes les grandes nations d’Europe sont désormais sur les mers.',
         ],
       },
       {
@@ -202,7 +203,7 @@ const S = [
       ['Épices', 'poivre, cannelle, girofle… produits d’Asie très recherchés'],
       ['Expédition', 'voyage organisé d’exploration'],
     ],
-    synthese: 'Facteurs : techniques (caravelle, boussole, astrolabe, cartes), économiques (routes, épices, métaux), politiques (terres nouvelles). Explorateurs : B. Diaz 1488 (cap de Bonne-Espérance), Colomb 1492 (Amérique), Vasco de Gama 1498 (Indes), Vespucci 1500, Diégo Diaz 1500 (Madagascar), Magellan 1519-1522 (tour du monde).',
+    synthese: 'Facteurs : techniques (caravelle, boussole, astrolabe, cartes), économiques (routes, épices, métaux), politiques (terres nouvelles). Explorateurs : B. Diaz 1488 (cap de Bonne-Espérance), Colomb 1492 (Amérique), Vasco de Gama 1498 (Indes), Vespucci 1500, Diégo Diaz 1500 (Madagascar), Magellan 1519-1522 (tour du monde), Cartier 1534 (Canada, pour la France).',
     saistu: 'Colomb est mort en 1506 sans savoir qu’il avait touché un continent inconnu des Européens : il a toujours cru avoir atteint l’Asie ! C’est pourquoi il appela « Indiens » les habitants de l’Amérique. Le nouveau continent reçut finalement le prénom d’Amerigo Vespucci, le premier à comprendre qu’il s’agissait d’un « Nouveau Monde ».',
     exos: ['Associe chaque explorateur à son exploit : a) Magellan ; b) Vasco de Gama ; d) Bartolomeu Diaz ; e) Christophe Colomb.',
       'Les facteurs. a) Cite trois progrès techniques qui ont permis la haute mer. b) Pourquoi les Européens cherchent-ils une route maritime vers l’Asie ? d) Que cherchent-ils en plus des épices ? e) Quel rôle joue la religion ?',
@@ -243,7 +244,7 @@ const S = [
       {
         titre: 'La traite : causes et conséquences',
         paras: [
-          'Les causes de la traite : le besoin de main-d’œuvre en Amérique et les besoins des industries d’Europe. Ses conséquences : la dépopulation de l’Afrique et des îles de l’océan Indien, la régression du continent africain, l’enrichissement de l’Europe — et la naissance d’une nouvelle couche de population aux Amériques, les descendants des déportés. L’historien nomme les faits : la traite est un crime contre l’humanité, reconnu comme tel aujourd’hui.',
+          'Les causes de la traite : le besoin de main-d’œuvre en Amérique, les besoins des premières industries d’Europe — et les accords conclus entre les trafiquants et certains chefs locaux d’Afrique, qui livraient des captifs contre des marchandises. Ses conséquences : la dépopulation de l’Afrique et des îles de l’océan Indien, la régression du continent africain, l’enrichissement de l’Europe — et la naissance d’une nouvelle couche de population aux Amériques, les descendants des déportés. L’historien nomme les faits : la traite est un crime contre l’humanité, reconnu comme tel aujourd’hui.',
         ],
       },
     ],
@@ -301,7 +302,8 @@ const S = [
       {
         titre: 'La contre-réforme',
         paras: [
-          'L’Église catholique réplique par la contre-réforme : discipline du clergé restaurée, nouveaux ordres religieux, reconquête des fidèles. La Réforme est le mouvement protestant ; la contre-réforme est la réponse catholique — l’une déclenche l’autre.',
+          'L’Église catholique réplique par la contre-réforme : au concile de Trente (1545-1563), elle restaure la discipline du clergé, précise sa doctrine et fonde de nouveaux ordres religieux pour reconquérir les fidèles. La Réforme est le mouvement protestant ; la contre-réforme est la réponse catholique — l’une déclenche l’autre.',
+          'La division religieuse dégénère en violences : pendant plus d’un siècle, guerres de religion et massacres déchirent la France, l’Angleterre et l’Empire allemand, jusqu’aux traités de Westphalie (1648) qui rétablissent la paix entre États catholiques et protestants.',
         ],
       },
     ],
@@ -322,14 +324,14 @@ const S = [
       ['Protestantisme', 'branche chrétienne née de la Réforme de Luther'],
       ['Contre-réforme', 'riposte de l’Église catholique à la Réforme'],
     ],
-    synthese: 'Renaissance : renouveau des arts et sciences inspiré de l’Antiquité (Vinci, Copernic, Raphaël, Donatello, Michel-Ange). Réforme : origines = humanistes, perte de confiance envers l’Église, imprimerie ; acteurs = Luther, Calvin, Henri VIII ; résultats = protestantisme, anglicanisme, contre-réforme catholique.',
+    synthese: 'Renaissance : renouveau des arts et sciences inspiré de l’Antiquité (Vinci, Copernic, Raphaël, Donatello, Michel-Ange). Réforme : origines = humanistes, perte de confiance envers l’Église, imprimerie ; acteurs = Luther, Calvin, Henri VIII ; résultats = protestantisme, anglicanisme, contre-réforme catholique (concile de Trente, 1545-1563) ; guerres de religion jusqu’aux traités de Westphalie (1648).',
     saistu: 'Léonard de Vinci incarnait l’idéal de la Renaissance : peintre, ingénieur, anatomiste, musicien… Ses carnets, écrits en miroir de droite à gauche, contiennent des croquis de machines volantes et de chars imaginés trois siècles avant leur invention ! On appelle encore « esprit universel » une personne douée dans tous les domaines, en souvenir de ces géants.',
     exos: ['Associe chaque personnage à son domaine : a) Copernic ; b) Michel-Ange ; d) Luther ; e) Henri VIII.',
       'La Renaissance. a) D’où part le mouvement ? b) Quel modèle inspire les artistes ? d) Cite trois domaines renouvelés. e) Qui sont les humanistes ?',
       'La Réforme. a) Donne les trois origines de la Réforme. b) Que reproche Luther à l’Église ? d) Que fonde Henri VIII ? e) Comment l’Église catholique répond-elle ?'],
     corr: ['a) sciences (astronomie) ; b) beaux-arts (sculpture, peinture) ; d) religion : fondateur de la Réforme protestante ; e) religion : fondateur de l’anglicanisme.',
       'a) d’Italie (Florence, Rome, Venise) ; b) l’Antiquité grecque et romaine ; d) beaux-arts, architecture, littérature, sciences (trois suffisent) ; e) des penseurs qui placent l’Homme et son intelligence au centre de la réflexion.',
-      'a) l’influence des humanistes, la perte de confiance envers l’Église, l’imprimerie ; b) le luxe du clergé et la vente des indulgences ; d) l’anglicanisme, en rompant avec le pape ; e) par la contre-réforme : discipline restaurée, nouveaux ordres, reconquête des fidèles.'],
+      'a) l’influence des humanistes, la perte de confiance envers l’Église, l’imprimerie ; b) le luxe du clergé et la vente des indulgences ; d) l’anglicanisme, en rompant avec le pape ; e) par la contre-réforme : concile de Trente (1545-1563), discipline restaurée, nouveaux ordres, reconquête des fidèles.'],
     fig: 'u2f4'
   },
   {
