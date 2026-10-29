@@ -569,8 +569,20 @@ Si `pnputil` refuse le paquet (erreur de signature), c'est que la touche **7** n
 >    `ADB Interface`, `Composite ADB Interface`). La liste vue dans l'assistant n'était donc **pas** un simple
 >    effet de mémoire de la boîte de dialogue : l'hypothèse « mauvais fichier chargé » était fausse.
 >
-> Reste à vérifier que ce même `.inf` contient aussi les identifiants Spreadtrum :
-> `findstr /i "VID_1782" C:\zte-unlock\drivers\*.inf`
+> **Vérification faite le 29/10** : `findstr /i "VID_1782"` confirme la ligne décisive dans `sprdvcom.inf` :
+>
+> ```
+> %USBCOMM_DL%  = Serial_Inst, USB\VID_1782&PID_4D00
+> %SPRD.DIAG%   = Serial_Inst, USB\VID_1782&PID_4D01&MI_01
+> ```
+>
+> `VID_1782&PID_4D00` **est** l'identifiant du mode BROM/DIAG du téléphone. Le paquet `oem29.inf` déjà enregistré
+> couvre donc l'appareil : **aucune installation supplémentaire, aucune liste de modèles à choisir**. Au premier
+> branchement en mode BROM, Windows crée le port COM tout seul.
+>
+> **Périphériques à ne pas débrancher** : souris et clavier (même amovible) sont des périphériques HID — ils ne
+> créent pas de port COM et `spd_dump` ne cherche que le périphérique Spreadtrum. Seul un **autre téléphone**
+> branché en mode transfert doit être débranché.
 
 **Variante graphique** (si `pnputil` est indisponible) : Gestionnaire de périphériques → clic sur le nom de
 l'ordinateur en haut de la liste → menu **Action** → **Ajouter un matériel d'ancienne version**
