@@ -601,6 +601,16 @@ l'étape du QR code. La seconde est de scanner le QR avec le téléphone connect
 demander d'**envoyer un SMS de validation**, donc une carte SIM avec du crédit. Si les deux échouent :
 attendre **24 h** (le signal de risque retombe) et refaire la création sur le téléphone.
 
+**Liens de création (vérifiés le 29/10) :**
+
+| Service | Création | Lecture des mails |
+|---|---|---|
+| **Proton Mail** (recommandé) | `https://account.proton.me/signup` — choisir l'offre **Free / Gratuit** à l'étape 1 | `https://mail.proton.me` |
+| **Tuta** (secours) | `https://app.tuta.com/signup` | `https://app.tuta.com` |
+
+Toujours **taper l'adresse** dans la barre du navigateur : passer par un moteur de recherche expose aux
+publicités qui imitent ces sites.
+
 **Décision du 29/10 : compte Google reporté.** Google ne propose plus de code par SMS à cet utilisateur : il
 n'affiche qu'un **QR code** qui, une fois scanné, demande d'**envoyer un SMS à un numéro `+1`** (américain) en
 recopiant sans modification un code entre parenthèses. Sans crédit international, l'opération est impossible.
