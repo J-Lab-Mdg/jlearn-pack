@@ -491,8 +491,18 @@ Toutes les commandes utiles sont annoncées : `--wait`, `exec_addr`, `fdl FILE a
 dir /s /b C:\zte-unlock\drivers\*.inf
 ```
 
-   Noms attendus selon le paquet : `sprdvcom.inf` / `SciU2S.inf` (SCI USB2Serial) ou `Spreadtrum_Jungo.inf`.
-   S'il existe un sous-dossier `x64`, prendre celui-là.
+   **Résultat réellement obtenu le 29/10** dans `C:\zte-unlock\drivers` (les quatre sont à la racine, pas de
+   sous-dossier `x64`) :
+
+```
+C:\zte-unlock\drivers\rdavcom.inf     (RDA, inutile ici)
+C:\zte-unlock\drivers\sprdadb.inf     (ADB, inutile ici)
+C:\zte-unlock\drivers\sprdvcom.inf    <-- celui du port COM diag : à utiliser
+C:\zte-unlock\drivers\sprdvmdm.inf    (modem, inutile ici)
+```
+
+   **On n'utilise que `sprdvcom.inf`.** Les fichiers `.sys` / `.cat` accompagnent ces `.inf` dans le même dossier :
+   ne pas déplacer les `.inf` seuls, le pilote ne se chargerait pas.
 
 **Installation (le téléphone doit être branché — refaire §13.3 juste avant)**
 
@@ -614,3 +624,4 @@ Avec ces trois éléments, la suite peut être donnée **ligne par ligne**, sans
 | Le dossier d'extraction échappe à `where /r %USERPROFILE%` | certain (`C:\zte-unlock` est hors profil) |
 | `spd_dump.exe --help` fonctionne sur ce PC | **certain** (29/10, `sha1:fa0becf5…`) |
 | Le zip de l'outil contient un pilote | **faux** : aucun `.inf` — pilote à télécharger séparément |
+| Le pilote utile est `sprdvcom.inf` | **certain** : présent dans `C:\zte-unlock\drivers` depuis le 29/10 |
