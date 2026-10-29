@@ -423,7 +423,26 @@ dir
 | `fdl2-dl.bin` | Second étage, celui qui lit/écrit | ✅ |
 | `custom_exec_no_verify_65015f08.bin` | Payload de la faille | ✅ |
 | `fdl2-cboot.bin`, `misc-wipe.bin` | Déblocage bootloader, ordre d'effacement | ⬜ utile |
-| `*.bat` | Scripts prêts à l'emploi | ⬜ bonus |
+| `chsize.exe`, `gen_spl-unlock.exe` | Outils annexes de l'auteur | ❌ **ne pas exécuter** |
+| `unlock_autopatch_9230.bat` | Automatise la séquence « unlock » du guide Cubot | ❌ **ne pas exécuter** |
+
+**Inventaire réellement confirmé le 29/10 sur le PC** (`dir /b` dans `C:\zte-unlock`) — les six fichiers
+obligatoires sont présents :
+
+```
+Channel.ini            fdl1-dl.bin   misc-wipe.bin
+Channel9.dll           fdl2-cboot.bin  spd_dump.exe
+chsize.exe             fdl2-dl.bin     ums9230_universal_unlock_EMMC   (sous-dossier)
+custom_exec_no_verify_65015f08.bin     unlock_autopatch_9230.bat
+gen_spl-unlock.exe
+```
+
+> ⚠️ **Ne jamais double-cliquer `unlock_autopatch_9230.bat`, ni lancer `gen_spl-unlock.exe` / `chsize.exe`.**
+> Le `.bat` rejoue la séquence du guide Cubot : elle **efface `splloader`** et réécrit `uboot`
+> (`e splloader`, `w uboot fdl2-cboot.bin`). C'est un **déverrouillage de bootloader**, hors de notre plan,
+> et une erreur d'adresse y est irréversible. Nous n'utilisons que `spd_dump.exe` avec les commandes listées
+> en §13.7/§13.8. `misc-wipe.bin` et `fdl2-cboot.bin` sont conservés comme **solutions de repli**, pas comme
+> point de départ.
 
 > **Si `spd_dump.exe` est absent** (le paquet peut ne contenir que les binaires Linux), il faut récupérer une
 > version Windows : elle est fournie dans d'autres paquets du même auteur (dossiers UMS9620 / *universal*).
@@ -544,8 +563,9 @@ Avec ces trois éléments, la suite peut être donnée **ligne par ligne**, sans
 | Un paquet EMMC existe pour cette puce | certain (fichier publié, ~5 900 téléchargements) |
 | Effacer `userdata` + `metadata` suffit | très probable (c'est la procédure standard sur FBE) |
 | Le BROM de ce modèle n'est pas corrigé | probable (rapports d'atelier sur ce modèle en 2026) |
-| Le `misc-wipe.bin` est dans le paquet | à vérifier à l'ouverture du zip |
+| Le `misc-wipe.bin` est dans le paquet | **certain** (vu dans `C:\zte-unlock` le 29/10) |
 | `spd_dump.exe` + `Channel9.dll` = chaîne Windows de référence | certain (documenté par plusieurs projets) |
 | Le pilote `SPRD U2S Diag` n'est pas signé → F7 obligatoire | certain |
 | `spd_dump.exe` exige `MSVCP140.dll` | certain (erreur 0xC0000135 documentée) |
-| Le paquet EMMC contient des binaires Windows | **à vérifier** avec `dir` |
+| Le paquet EMMC contient des binaires Windows | **certain** : `spd_dump.exe` + `Channel9.dll` extraits le 29/10 |
+| Le dossier d'extraction échappe à `where /r %USERPROFILE%` | certain (`C:\zte-unlock` est hors profil) |
