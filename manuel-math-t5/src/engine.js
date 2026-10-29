@@ -389,9 +389,19 @@ async function buildUnit(u, figBufs) {
   const total = u.sessions.length + 2;
   const children = [];
   if (u.no === 1) children.push(...frontMatter(u));
-  children.push(page(), title(`UNITÉ ${u.roman} — ${u.name.toUpperCase()}`, 1, `u${u.no}`),
-    p(`Résultat d’apprentissage général : ${u.rag}`),
-    p(`Valeurs à véhiculer : ${u.valeurs}.`),
+  children.push(page(),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 2200, after: 200 }, children: [tr(`UNITÉ ${u.roman}`, { bold: true, color: C.blue, size: 76 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 160 }, shading: { type: ShadingType.CLEAR, fill: C.pale }, children: [new Bookmark({ id: `u${u.no}`, children: [tr(u.name.toUpperCase(), { bold: true, color: C.red, size: 56 })] })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 400 }, children: [tr('Sous-discipline du programme de Mathématiques T5', { italics: true, color: C.green, size: 24 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 }, children: [tr('Résultat d’apprentissage général', { bold: true, color: C.wine, size: 24 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 300 }, children: rich(u.rag, { size: 24 }) }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 }, children: [tr('Valeurs à véhiculer', { bold: true, color: C.wine, size: 24 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 200 }, children: rich(`${u.valeurs}.`, { size: 24 }) }),
+    page(),
+    title(`UNITÉ ${u.roman} — ${u.name.toUpperCase()} : DANS CETTE UNITÉ`, 1),
+    ...u.sessions.map((s, i) => bullet(`Séance ${i + 1} — ${s.t}`)),
+    bullet(`Séance ${u.sessions.length + 1} — Révision de l’unité ${u.roman}`),
+    bullet(`Séance ${u.sessions.length + 2} — Sujet d’examen format CEPE`),
     title('Tableau de bord', 2),
     table([
       new TableRow({ children: [cell('Séances', { bold: true, fill: C.blue, color: C.white }), cell('Apprentissages', { bold: true, fill: C.blue, color: C.white }), cell('Révision', { bold: true, fill: C.blue, color: C.white }), cell('Examen', { bold: true, fill: C.blue, color: C.white })] }),

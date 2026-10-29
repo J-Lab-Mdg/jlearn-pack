@@ -43,11 +43,13 @@ figs.u5f3 = (() => { const { s, y } = head('La circonférence du cercle', ['Le t
   b += txt(cx, cy - 14, 'diamètre d = 70 cm', 20, PINK2, 'bold', 'middle');
   b += seg(cx, cy, cx + r * Math.cos(-0.9), cy + r * Math.sin(-0.9), GREEN, 3.5);
   b += txt(cx + 86, cy - 74, 'rayon', 19, GREEN, 'bold', 'middle');
-  b += box(560, top + 55, 380, 56, 'd = 2 × rayon', GREENL, GREEN, 24);
-  b += box(560, top + 135, 380, 56, 'C = d × 3,14', '#FDE7EF', PINK2, 26);
-  b += txt(750, top + 240, 'C = 70 × 3,14 = 219,8 cm', 22, OCRE, 'bold', 'middle');
-  b += txt(500, top + 305, 'la roue de 70 cm avance de 2,198 m à chaque tour !', 21, BLUE, 'bold', 'middle');
-  return svg(1000, top + 337, s + b); })();
+  b += box(560, top + 40, 380, 52, 'd = 2 × r   ;   r = d ÷ 2', GREENL, GREEN, 22);
+  b += box(560, top + 108, 380, 52, 'C = d × 3,14', '#FDE7EF', PINK2, 24);
+  b += box(560, top + 176, 380, 52, 'aire du disque = 3,14 × r × r', '#FFF3E0', OCRE, 21);
+  b += box(560, top + 244, 380, 52, 'à reculons : d = C ÷ 3,14', BLUEL, BLUE, 21);
+  b += txt(320, top + 330, 'C = 70 × 3,14 = 219,8 cm', 22, OCRE, 'bold', 'middle');
+  b += txt(500, top + 382, 'la roue de 70 cm avance de 2,198 m à chaque tour !', 21, BLUE, 'bold', 'middle');
+  return svg(1000, top + 414, s + b); })();
 // S4 — masses
 figs.u5f4 = (() => { const { s, y } = head('Le tableau des masses', ['Du gramme à la tonne : t, q, kg, hg, dag, g — et les grandes équivalences.']);
   const top = y + 20;
@@ -221,7 +223,7 @@ const S = [
       'a) 36 ÷ 4 = 9 cm ; b) 30 ÷ 2 = 15, puis 15 − 9 = 6 cm ; d) (25 + 18) × 2 = 86 m ; e) 86 × 12 000 = 1 032 000 Ar.',
       'a) 4 × 15 = 60 m ; b) 60 − 2 = 58 m ; d) 6 rouleaux (5 rouleaux = 50 m, insuffisant) ; e) 60 − 58 = 2 m.'],
     fig: 'u5f2',
-    cahier: [['table',{sub:['Figure','Périmètre'],rows:[['carré','c × 4'],['rectangle','(L + l) × 2'],['triangle','a + b + c'],['polygone régulier','côté × nb de côtés']]}],['txt','Le périmètre, c’est le tour complet — comme une clôture.'],['noex']],
+    cahier: [['table',{sub:['Figure','Périmètre'],rows:[['carré','P = c × 4'],['rectangle','P = (L + l) × 2'],['triangle','P = a + b + c'],['polygone régulier','P = côté × nb de côtés'],['demi-périmètre','DP = P ÷ 2 = L + l'],['retrouver le côté','c = P ÷ 4']]}],['txt','Le périmètre, c’est le tour complet — comme une clôture.'],['noex']],
     jeu: 'La clôture : un champ carré de 25 m de côté. Combien de mètres de clôture ? Et s’il faut une porte de 2 m ? (100 m ; 98 m.)'
   },
   {
@@ -252,7 +254,7 @@ const S = [
       'a) 60 × 3,14 = 188,4 cm ; b) 1 884 cm ; d) 18,84 m ; e) 100 ÷ 1,884 ≈ 53 tours.',
       'a) circonférence = diamètre × π ; b) 6,28 ÷ 3,14 = 2 m ; d) 1 m ; e) le grand rayon vaut 1 + 1 = 2 m, donc 2 × 3,14 × 2 = 12,56 m.'],
     fig: 'u5f3',
-    cahier: [['table',{sub:['Donnée','Formule'],rows:[['diamètre d','C = d × 3,14'],['rayon r','C = 2 × 3,14 × r']]}],['txt','π ≈ 3,14 : le même nombre pour TOUS les cercles du monde !'],['noex']],
+    cahier: [['table',{sub:['Donnée','Formule'],rows:[['diamètre d','C = d × 3,14'],['rayon r','C = 2 × 3,14 × r'],['aire du disque','A = 3,14 × r × r'],['retrouver d','d = C ÷ 3,14']]}],['txt','d = 2 × r ; r = d ÷ 2 — et π ≈ 3,14 pour TOUS les cercles !'],['noex']],
     jeu: 'Tour de roue : une roue de 70 cm de diamètre avance de combien en un tour ? (70 × 3,14 ≈ 220 cm ≈ 2,20 m.)'
   },
   {
@@ -376,7 +378,7 @@ const S = [
       'a) 9 × 6 = 54 m² ; b) 54 carreaux ; d) 54 × 8 000 = 432 000 Ar ; e) (9 + 6) × 2 = 30 m.',
       'a) 24 × 15 = 360 m² ; b) 8 × 8 = 64 m² ; d) 360 − 64 = 296 m² ; e) 296 × 1 500 = 444 000 Ar.'],
     fig: 'u5f7',
-    cahier: [['table',{sub:['Figure','Aire'],rows:[['carré','c × c'],['rectangle','L × l']]}],['vx',[[true,'périmètre en m, aire en m² : deux unités différentes !']]],['noex']],
+    cahier: [['table',{sub:['Figure','Aire'],rows:[['carré','A = c × c'],['rectangle','A = L × l'],['retrouver un côté','L = A ÷ l']]}],['vx',[[true,'périmètre en m, aire en m² : deux unités différentes !']]],['noex']],
     jeu: 'Le pavage : combien de carreaux de 1 dm sur 1 dm pour couvrir une table de 12 dm sur 8 dm ? (96 carreaux = 96 dm² !)'
   },
   {
@@ -407,7 +409,7 @@ const S = [
       'a) (24 × 2) ÷ 8 = 6 cm ; b) triangle : (12 × 5) ÷ 2 = 30 cm² ; rectangle : 6 × 5 = 30 cm² : aires égales ; d) 12 cm² et 24 cm² : la seconde est le double ; e) parce qu’un triangle est la moitié d’un rectangle de même base et de même hauteur.',
       'a) (40 × 25) ÷ 2 = 500 m² ; b) (40 × 15) ÷ 2 = 300 m² ; d) 500 + 300 = 800 m² ; e) 800 × 2 = 1 600 kg de maïs.'],
     fig: 'u5f8',
-    cahier: [['table',{sub:['Figure','Aire'],rows:[['triangle','(b × h) ÷ 2'],['trapèze','(B + b) × h ÷ 2'],['parallélogramme','b × h']]}],['txt','Le triangle est un demi-rectangle : son aire aussi !'],['noex']],
+    cahier: [['table',{sub:['Figure','Aire'],rows:[['triangle','A = (b × h) ÷ 2'],['trapèze','A = (B + b) × h ÷ 2'],['parallélogramme','A = b × h'],['retrouver la base','b = (A × 2) ÷ h']]}],['txt','Le triangle est un demi-rectangle : son aire aussi !'],['noex']],
     jeu: 'Pliage malin : plie un rectangle de papier le long d’une diagonale : deux triangles d’aires… ? (Égales : chacun la moitié !)'
   },
   {
