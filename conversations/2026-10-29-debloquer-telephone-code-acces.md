@@ -4,9 +4,9 @@
 > **Sujet** : un téléphone demande un code au démarrage ; ce code a été « inventé » la veille lors de la création
 > d'un compte en ligne, à cause d'une demande de **clé d'accès** (*passkey*).
 > **Question posée** : comment résoudre ça ?
-> **Statut** : **téléphone identifié** (ZTE P615F01, Android 15). Le menu de récupération ne propose pas
-> d'effacement — c'est voulu par le constructeur. Prochaine étape : vérifier la présence d'un compte Google,
-> puis effacer à distance (§7.4) ou passer par un atelier (§7.5).
+> **Statut** : **téléphone identifié** (ZTE P615F01, Android 15) et **sans compte Google**. Le menu de
+> récupération ne propose pas d'effacement — c'est voulu par le constructeur. Sans compte Google, aucune
+> protection FRP : l'effacement en atelier est sûr. **Voie retenue : formatage par un atelier (§8.4 et §8.5).**
 
 ---
 
@@ -433,7 +433,114 @@ Oui — mais **de façon organisée et limitée**.
 
 ---
 
-## 8. Informations à demander pour aller plus loin
+## 8. Mise à jour 3 — **aucun compte Google sur le téléphone**
+
+Information transmise le 29/10 : *« aucun compte Google dans le téléphone, malheureusement »*.
+
+Le mot « malheureusement » est compréhensible, mais cette information est en réalité **la meilleure nouvelle de
+tout le dossier**. Voici pourquoi.
+
+### 8.1 Ce que ça change
+
+| Conséquence | Détail |
+|---|---|
+| ✅ **Le risque de brique disparaît** | La protection FRP ne se déclenche que si un compte Google était configuré. Après un effacement, le téléphone redémarrera sur l'assistant de configuration **sans réclamer d'identifiants**. C'était le seul vrai danger de l'opération. |
+| ❌ **L'effacement à distance est mort** | Sans compte, l'appareil n'apparaît pas dans `google.com/android/find`. Le Plan A (§7.4) tombe. |
+| ✅ **L'atelier devient la voie normale** | Formater la partition utilisateur par câble USB sur puce Unisoc est une intervention courante, rapide, et désormais **sans risque de verrouillage résiduel**. |
+
+En clair : on perdait une porte de sortie (l'effacement à distance), on gagne la garantie que **le téléphone
+restera utilisable après l'effacement**. C'est un bon échange.
+
+### 8.2 Mais il faut en être certain — trois vérifications
+
+Tout le raisonnement repose sur cette information. Or un compte a pu être ajouté **pendant** la création de la clé
+d'accès (les clés d'accès Android sont stockées dans le Gestionnaire de mots de passe Google, lié à un compte).
+
+| Vérification | Où | Ce qu'on regarde |
+|---|---|---|
+| 1. Boîte mail | La boîte utilisée par le propriétaire | Un message « Bienvenue dans votre nouveau compte Google », « Votre appareil ZTE a été ajouté », ou une alerte de connexion autour de la date du incident |
+| 2. Activité du compte | `myaccount.google.com/deviceactivity` | La liste des appareils connectés : le ZTE y figure-t-il ? |
+| 3. Indice très fiable | Le téléphone lui-même | **WhatsApp / Play Store installés ?** Une application installée depuis le Play Store **exige** un compte Google. Si Play Store fonctionnait, un compte existait. |
+
+> Si l'une de ces trois vérifications révèle un compte, **ne pas faire formater** avant d'avoir retrouvé
+> l'adresse et le mot de passe de ce compte. Sinon la boutique efface le téléphone et il réclamera ensuite des
+> identifiants introuvables.
+
+### 8.3 Ce qui est réellement en jeu
+
+Sans compte Google et sur un téléphone de quelques semaines (build du 16/09/2026), le volume de données est
+probablement faible. Inventaire à faire avant de décider :
+
+| Donnée | Où elle survit | Perdue à l'effacement ? |
+|---|---|---|
+| Photos sur **carte SD** | Sur la carte, lisible sur un ordinateur | ❌ Non, si on retire la carte avant |
+| Photos sur mémoire interne | Nulle part | ✅ Oui |
+| Contacts sur **carte SIM** | Sur la SIM | ❌ Non |
+| Contacts dans le téléphone | Nulle part | ✅ Oui, sauf carnet papier |
+| WhatsApp | Sauvegarde locale ou Google Drive | ✅ Oui, sans sauvegarde |
+| Applications (APK) | Réinstallables | ✅ Oui, mais sans importance |
+| Documents, PDF | Nulle part | ✅ Oui |
+
+**Conclusion** : le calcul coût/bénéfice penche très fortement vers l'effacement. Passer des heures (et de
+l'argent) à tenter de récupérer un téléphone quasi vide n'a pas de sens.
+
+### 8.4 Le plan, maintenant qu'il est simplifié
+
+1. **Arrêter les essais** après 10–15 tentatives réfléchies (§7.7). Le mot de passe est un champ texte : il a pu
+   contenir des lettres. Faire une liste écrite, classée, et s'y tenir.
+2. **Sauver ce qui est sauvable** : retirer la **carte SD** et la lire sur un ordinateur ; sortir la **carte SIM**
+   et relever les contacts ; vérifier `photos.google.com` au cas où.
+3. **Passer par un atelier** (§8.5). C'est la voie normale, pas un aveu d'échec.
+4. **Vérifier au retrait** : le téléphone doit s'allumer sur l'assistant de configuration (choix de la langue),
+   **sans écran « Vérifiez votre compte Google »**.
+
+### 8.5 Le script pour la boutique
+
+À dire, dans cet ordre :
+
+> « Bonjour. Ce téléphone ZTE (modèle **P615F01**) a un mot de passe oublié. Aucun compte Google n'est dessus.
+> Je veux juste **formater la partition utilisateur** (*format userdata*), pas forcément reflasher tout le
+> système. C'est une puce **Unisoc**. Vous pouvez le faire par câble USB ? »
+
+Questions à poser **avant** de laisser l'appareil :
+
+- « Combien ça coûte ? » (demander le prix ferme, pas une fourchette)
+- « Vous formatez seulement les données, ou vous réinstallez tout le firmware ? » → **préférer le formatage simple**
+  : moins risqué, plus rapide, suffisant
+- « Est-ce que le téléphone redémarrera comme neuf, sans rien me demander ? »
+- « Vous me donnez un reçu avec l'IMEI ? »
+
+À exiger au retour :
+
+- Le téléphone démarre sur l'**assistant de configuration** (langue, Wi-Fi)
+- **Aucune** demande de compte Google
+- Le Wi-Fi, l'appareil photo et le son fonctionnent
+
+Outil utilisé par l'atelier : en général un logiciel de service Unisoc (Pandora, EFT Pro, UnlockTool, ou
+*ResearchDownload*). Ne pas demander à le faire soi-même : sans le bon firmware `.PAC` pour ce modèle précis, le
+risque de rendre l'appareil inutilisable est réel.
+
+### 8.6 Si aucun atelier ne veut le faire
+
+- **Support ZTE** : `support.ztedevices.com` — demander la procédure de réinitialisation pour `P615F01`, en
+  citant le build `20260916.1023…`.
+- **Le vendeur** : le téléphone est récent (septembre 2026). S'il a une facture et une garantie, c'est le premier
+  interlocuteur. Beaucoup de revendeurs prennent en charge ce type de déblocage.
+- **Autres boutiques** : les stands de réparation téléphone du centre-ville font tous du Unisoc ; il suffit d'en
+  trouver un équipé du câble et du logiciel.
+
+### 8.7 Le vrai enseignement
+
+Le problème n'aurait pas dû exister : la clé d'accès était **facultative**. Sur presque tous les sites, un lien
+« **Utiliser un mot de passe** » ou « **Plus d'options** » permet d'éviter complètement la création d'un
+verrouillage d'écran. C'est cette ligne-là qui manquait au moment du choix.
+
+Règle à retenir pour la suite : **un verrouillage d'écran se choisit, il ne se subit pas.** Si un écran propose
+d'en créer un, on reprend la main, on choisit un code connu, et **on le note le jour même**.
+
+---
+
+## 9. Informations à demander pour aller plus loin
 
 Pour donner une procédure exacte (au lieu d'un plan général), il faut :
 
@@ -448,7 +555,7 @@ Avec ça, la réponse devient : « sur ce modèle, il y a / il n'y a pas de solu
 
 ---
 
-## 9. Sources
+## 10. Sources
 
 - Google Chrome Help — *Gérer les clés d'accès dans Chrome* (Android 9+, verrouillage d'écran obligatoire) :
   <https://support.google.com/chrome/answer/13168025>
@@ -491,3 +598,5 @@ Avec ça, la réponse devient : « sur ce modèle, il y a / il n'y a pas de solu
 | L'écran demande le mot de passe de l'écran, pas celui du compte Google | certain (visuel + absence de lien de secours) |
 | Ce modèle n'efface pas automatiquement après 15 essais | probable (aucune option de ce type documentée chez ZTE) |
 | Un atelier Unisoc peut formater et retirer le FRP | certain (rapports d'atelier publiés sur ce modèle) |
+| Sans compte Google, aucun FRP ne se déclenche après effacement | certain (principe même de la protection FRP) |
+| Ouvrir le Play Store ou WhatsApp exige un compte Google | certain |
