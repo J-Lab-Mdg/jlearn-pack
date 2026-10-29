@@ -411,7 +411,7 @@ async function buildUnit(u, figBufs) {
   const cahierBufs = [];
   for (let i = 0; i < u.sessions.length; i++) {
     u.sessions[i]._date = dateSeance((U_OFFSET[u.no] || 0) + i);
-    cahierBufs[i] = await sharp(Buffer.from(cahierSvg(u.sessions[i])), { density: 110 }).png().toBuffer();
+    cahierBufs[i] = await sharp(Buffer.from(cahierSvg(u.sessions[i])), { density: 96 }).png({ palette: true, colors: 128, compressionLevel: 9 }).toBuffer();
   }
   u.sessions.forEach((s, i) => children.push(...seance(s, i + 1, total, u.no, figBufs, cahierBufs[i])));
   children.push(...revision(u), ...exam(u));

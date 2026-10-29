@@ -83,7 +83,7 @@ async function render(figs) {
   const out = {};
   for (const [name, sv] of Object.entries(figs)) {
     fs.writeFileSync(path.join(DIR, `${name}.svg`), sv);
-    await sharp(Buffer.from(sv), { density: 110 }).png().toFile(path.join(DIR, `${name}.png`));
+    await sharp(Buffer.from(sv), { density: 96 }).png({ palette: true, colors: 128, compressionLevel: 9 }).toFile(path.join(DIR, `${name}.png`));
     out[name] = fs.readFileSync(path.join(DIR, `${name}.png`));
   }
   return out;

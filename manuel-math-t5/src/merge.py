@@ -232,6 +232,7 @@ ann = W / 'annexes.docx'; a.save(ann)
 master = Document(units[0]); composer = Composer(master)
 for i in range(2, N_UNITS + 1):
     composer.append(Document(stripped(units[i - 1], i)))
+composer.append(Document(R / 'Manuel_Mathematiques_T5_EXAMENS.docx'))
 composer.append(Document(ann))
 
 # ---------- SOMMAIRE COMPLET ----------
@@ -274,6 +275,8 @@ for unit_no in range(2, N_UNITS + 1):
         raw = re.sub(r'^SÉANCE \d+ / \d+ — ', '', session_title)
         links.append((f'Séance {k} — {sentence(raw, ROMANS[unit_no])}', f'u{unit_no}_l{k}', True))
 links.extend([
+    ('Sujets d’examen — Opérations (20 sujets corrigés)', 'exop', False),
+    ('Sujets d’examen — Problèmes (20 sujets corrigés)', 'expb', False),
     ('Annexes', 'annexes', False), ('Annexe 1 — Glossaire', 'annexe1', True),
     ('Annexe 2 — Formules et propriétés', 'annexe2', True), ('Annexe 3 — Résumé des méthodes', 'annexe3', True),
     ('Annexe 4 — Auto-évaluation', 'annexe4', True), ('Annexe 5 — Index', 'annexe5', True),
@@ -288,4 +291,21 @@ else:
 
 out = R / 'livrables' / 'Manuel_Mathematiques_T5_JLearn_V1.docx'
 composer.save(out)
+
+# ---------- allègement : recompression des JPEG embarqués ----------
+import zipfile, shutil, io
+from PIL import Image
+tmp = R / 'work_merge' / 'light.docx'
+with zipfile.ZipFile(out) as zin, zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as zout:
+    for item in zin.infolist():
+        data = zin.read(item.filename)
+        if item.filename.startswith('word/media/') and item.filename.lower().endswith(('.jpg', '.jpeg')) and len(data) > 80_000:
+            im = Image.open(io.BytesIO(data)).convert('RGB')
+            if max(im.size) > 1150:
+                im.thumbnail((1150, 1150), Image.LANCZOS)
+            buf = io.BytesIO(); im.save(buf, 'JPEG', quality=66, optimize=True)
+            if buf.tell() < len(data):
+                data = buf.getvalue()
+        zout.writestr(item, data)
+shutil.move(tmp, out)
 print('OK :', out, out.stat().st_size, 'octets')
