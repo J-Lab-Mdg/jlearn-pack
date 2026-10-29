@@ -595,10 +595,23 @@ liste** → **Afficher tous les périphériques** → **Disquette fournie…** �
 **Toujours dans `cmd`, dans le dossier du paquet.** Lancer la commande **avant** de brancher le téléphone :
 
 ```bat
-spd_dump.exe --wait 300 exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec read_part misc 0 64 misc_test.bin reset
+spd_dump.exe --wait 300 --kick exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec read_part misc 0 64 misc_test.bin reset
 ```
 
-Puis entrer en mode download avec la **méthode officielle** (encadré ci-dessous) : câble déjà branché, puis **Power + Volume haut maintenus 7 à 10 secondes**.
+> ### 🔑 `--kick` : la vraie clé pour un ZTE UMS9230 (retour d'expérience)
+>
+> Sur un **ZTE Blade A36 (UMS9230, eMMC)** — plateforme identique à celle de ce téléphone — `spd_dump` **fonctionne sans appuyer sur aucune touche**, à condition d'utiliser l'option `--kick` (issue #330 du dépôt). Le déroulé observé par cet utilisateur :
+>
+> 1. câble branché sur un téléphone **éteint**, aucune touche ;
+> 2. l'écran affiche **« Calibration Mode »** pendant environ 3 secondes ;
+> 3. l'écran devient **noir** ;
+> 4. `spd_dump` se connecte en `boot_diag`, envoie le *kick*, bascule en `dl_diag` (BROM) et affiche `BSL_REP_VER: "SPRD4:AutoD"`.
+>
+> Sans `--kick`, l'outil n'attend que `dl_diag` : il rate la première interface et sort en `device removed, exiting...` — exactement ce qu'on a vu. `--kick` suit la route complète `boot_diag → cali_diag → dl_diag`.
+>
+> Si `--kick` ne suffit pas, l'auteur conseille `--kickto 2` (même route, forcée sur `dl_diag`).
+>
+> Combinaisons de touches : à essayer **seulement** si `--kick` échoue — voir l'encadré ci-dessous. (encadré ci-dessous) : câble déjà branché, puis **Power + Volume haut maintenus 7 à 10 secondes**.
 
 > ### 🔑 Comment entrer en mode download — méthode officielle
 >
@@ -608,6 +621,8 @@ Puis entrer en mode download avec la **méthode officielle** (encadré ci-dessou
 > > « **Press key combination for 7-10 seconds** to enter download mode. »
 >
 > Autrement dit : ce n'est **pas** « maintenir Volume et brancher le câble ». Il faut **Power + une touche de volume**, tenues **7 à 10 secondes**, câble **déjà branché**. C'est l'oubli des deux premiers essais : le téléphone se contentait de démarrer normalement (recovery avec Volume bas, animation de charge avec Vol+ + Vol−).
+>
+> ⚠️ **Mais pour un ZTE UMS9230, commencer par `--kick` sans aucune touche** (voir l'encadré `--kick` ci-dessus) : c'est la méthode qui a fonctionné sur un modèle de la même famille. Les combinaisons ci-dessus ne servent qu'en repli.
 >
 > Ordre des essais : **Power + Vol+** → **Power + Vol−** → **Power + Vol+ + Vol−**. Si aucun ne marche : *test point* sur la carte mère (démontage).
 
@@ -687,6 +702,8 @@ encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `m
 | `Successfully connected to port: N` puis `device removed, exiting...` | Le port COM est apparu puis a disparu tout de suite : l'appareil a changé de mode USB (fin de fenêtre BROM, passage au chargeur, à Android ou au bootloader) | Arrêter **complètement** le téléphone (écran noir), puis essayer les combinaisons dans l'ordre : **Vol+ + Vol−**, **Vol+ + Vol− + Power**, **Vol+ seul**, **aucune touche**. Relancer avec `--verbose` pour voir l'identifiant du périphérique |
 | Après la commande, le téléphone démarre en **Android recovery** | Volume bas maintenu = déclencheur du recovery sur ce modèle (constaté le 29/10) | « Reboot system now » → éteindre complètement → refaire la séquence en relâchant la touche |
 | Écran **noir quelques secondes puis animation de charge** | Démarrage normal sur chargeur — le téléphone n'est **jamais** entré en download mode | La combinaison doit inclure **Power** et être tenue **7–10 s** (voir l'encadré de §13.7) |
+| Interminable suite de `CurTime: x, CurPort: 0` | `--verbose 1` affiche chaque demi-seconde l'attente du port ; **`CurPort: 0` = aucun port détecté** | `Ctrl+C` pour arrêter (ou fermer la fenêtre, sans risque). Ajouter `--kick` |
+| `device removed, exiting...` dès le branchement | L'outil n'écoute que `dl_diag` et rate l'interface `boot_diag/cali_diag` du début de démarrage | Lancer avec **`--kick`** (route complète), puis `--kickto 2` si besoin |
 | Le téléphone démarre en Android normal | La touche n'a pas été lue comme « download mode » | Éteindre, refaire avec **Power + Vol+** tenu 7–10 s |
 | `usb_send failed` alors qu'aucune touche n'était enfoncée | Le port COM ouvert était celui du diag Android (`PID_4D01`), pas le BROM (`PID_4D00`) | `pnputil /enum-devices /connected /class Ports` doit montrer `VID_1782&PID_4D00` ; sinon le téléphone n'était pas en BROM |
 | `Accès refusé.` juste après avoir tapé quelque chose comme `C:\zte-unlock>)` | Le **prompt** affiché dans la documentation a été collé comme s'il s'agissait d'une commande | Le prompt n'est pas une commande : taper `cd /d C:\zte-unlock` (voir ligne suivante) |
@@ -707,6 +724,7 @@ Avec ces trois éléments, la suite peut être donnée **ligne par ligne**, sans
 ## 14. Sources
 
 - **Wiki officiel de l'outil** (TomKing062) — <https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/Unlock> et <https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/SupportList> : « power + vol up / power + vol down / power + vol up + vol down », **tenues 7 à 10 secondes** ; à défaut, *test point* sur la carte mère. Le wiki précise aussi que le pilote SPRD et le pilote libusb sont **incompatibles** : un seul à la fois dans Windows.
+- **Issue #330 du dépôt** — <https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/issues/330> : ZTE Blade A36 (UMS9230, eMMC). Téléphone **éteint, aucune touche** : l'écran affiche « Calibration Mode » ~3 s puis devient noir, et `spd_dump --wait 300 --kick …` se connecte (`boot_diag` → `dl_diag`, `BSL_REP_VER: "SPRD4:AutoD"`). L'auteur recommande `--kickto 2` en secours.
 - **README de `spd_dump`** — <https://github.com/TomKing062/spreadtrum_flash> : options `--wait`, `--kick` (route `boot_diag → cali_diag → dl_diag`), `--verbose <0|1|2>` (le niveau est **obligatoire**), `-r/--reconnect`, `--kickto`, commandes `timeout`, `baudrate`, `read_part`, `w`, `e`, `r all|all_lite`.
 
 - Paquet **`ums9230_universal_unlock_EMMC.zip`** (Unisoc UMS9230, eMMC) :
