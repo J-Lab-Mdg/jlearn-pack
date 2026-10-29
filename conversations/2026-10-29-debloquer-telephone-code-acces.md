@@ -601,6 +601,16 @@ l'étape du QR code. La seconde est de scanner le QR avec le téléphone connect
 demander d'**envoyer un SMS de validation**, donc une carte SIM avec du crédit. Si les deux échouent :
 attendre **24 h** (le signal de risque retombe) et refaire la création sur le téléphone.
 
+**SIM sans crédit : recevoir plutôt qu'envoyer.** Recevoir un SMS ou un appel est **gratuit** ; c'est
+l'**envoi** vers un numéro étranger qui est facturé. Il faut donc refuser la route « envoyer un code à Google »
+(écran QR sur ordinateur) et privilégier la création **sur le téléphone** avec l'option *recevoir* :
+
+| Méthode | Gratuit ? | Remarque |
+|---|---|---|
+| Google **envoie** un code par SMS | oui | La voie normale de la création de compte |
+| Google **appelle** et dicte le code (appel vocal) | oui | À choisir si le SMS n'arrive pas |
+| Vous **envoyez** un SMS à Google (écran QR) | **non** | Numéro international, facturé |
+
 **Rappel utile :** WhatsApp, Signal et les SMS **n'ont pas besoin de compte Google** — seulement d'un numéro de
 téléphone. Le compte Google ne sert qu'au Play Store, à la synchronisation et à Gmail.
 
