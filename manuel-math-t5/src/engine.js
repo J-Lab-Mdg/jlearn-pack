@@ -85,7 +85,7 @@ function dateSeance(k) {
   return `${jours[d.getDay()]} ${d.getDate()} ${mois[d.getMonth()]} ${d.getFullYear()}`;
 }
 function cahierSvg(s) {
-  const W = 1240, H = 1660, MARG = 150, STEP = 62, INK = '#1A3FA8', F = 'Sacramento, DejaVu Serif';
+  const W = 1240, H = 1660, MARG = 150, STEP = 62, INK = '#1A3FA8', F = 'Sacramento, DejaVu Serif', FT = 'Tinos, DejaVu Serif';
   let b = `<rect width="100%" height="100%" fill="#FDFDF8"/>`;
   // quadrillage Seyès : interlignes fines + lignes principales + verticales
   for (let y = 100; y <= H - 50; y += STEP) {
@@ -97,7 +97,7 @@ function cahierSvg(s) {
   b += `<rect x="20" y="20" width="${W - 40}" height="${H - 40}" fill="none" stroke="#C8C8C8" stroke-width="2"/>`;
   let y = 100;
   // date réaliste
-  b += `<text x="${W - 60}" y="${y - 14}" font-family="${F}" font-size="34" fill="${INK}" text-anchor="end">${s._date || 'Date : ……………………'}</text>`;
+  b += `<text x="${(MARG + W) / 2}" y="${y}" font-family="${F}" font-size="36" fill="${INK}" text-anchor="middle">${s._date || 'Date : ……………………'}</text>`;
   y += STEP;
   // titre en MAJUSCULES souligné en rouge (taille auto pour tenir dans la page)
   const T = s.t.toUpperCase();
@@ -110,44 +110,45 @@ function cahierSvg(s) {
     tLines = l2 ? [l1, l2] : [l1];
   }
   const tMax = Math.max(...tLines.map(l => l.length));
-  const tSize = Math.max(26, Math.min(42, Math.floor((W - MARG - 110) / (tMax * 0.78))));
+  const tSize = Math.max(28, Math.min(40, Math.floor((W - MARG - 110) / (tMax * 0.62))));
   let tw = 0;
   for (const tl of tLines) {
-    b += `<text x="${(MARG + W) / 2}" y="${y - 14}" font-family="${F}" font-size="${tSize}" font-weight="bold" fill="${INK}" text-anchor="middle" word-spacing="16">${escXml(tl)}</text>`;
-    tw = tl.length * tSize * 0.40;
+    b += `<text x="${(MARG + W) / 2}" y="${y}" font-family="${FT}" font-size="${tSize}" font-weight="bold" fill="${INK}" text-anchor="middle">${escXml(tl)}</text>`;
+    tw = tl.length * tSize * 0.52;
     y += STEP;
   }
   y -= STEP;
-  b += `<line x1="${(MARG + W) / 2 - tw / 2}" y1="${y - 2}" x2="${(MARG + W) / 2 + tw / 2}" y2="${y - 2}" stroke="#D23B3B" stroke-width="3"/>`;
+  b += `<line x1="${(MARG + W) / 2 - tw / 2}" y1="${y + 8}" x2="${(MARG + W) / 2 + tw / 2}" y2="${y + 8}" stroke="#D23B3B" stroke-width="3"/>`;
   y += STEP * 2;
   const X0 = MARG + 40, USABLE = W - MARG - 90;
   const extra = (s.cahier || []).filter(bl => bl[0] !== 'noex');
   const noex = (s.cahier || []).some(bl => bl[0] === 'noex');
   const blocks = [['regle', s.def], ...extra];
   if (!noex) blocks.push(['ex', firstSentences(s.exemple, 190)]);
-  const wline = (line, size = 36, color = INK, x = X0) => { b += `<text x="${x}" y="${y - 14}" font-family="${F}" font-size="${size}" fill="${color}">${escXml(line)}</text>`; y += STEP; };
+  const rich = (txt0, size = 36) => escXml(String(txt0)).replace(/(^|[\s\u00A0(«»])([A-ZÀ-ÖØ-Þ]{2,}(?:[\s\u00A0][A-ZÀ-ÖØ-Þ]{2,})*)(?=$|[\s\u00A0)«»,.:;!?’])/g, (m0, pre, caps) => `${pre}<tspan font-family="${FT}" font-size="${Math.round(size * 0.82)}">${caps}</tspan>`);
+  const wline = (line, size = 36, color = INK, x = X0) => { b += `<text x="${x}" y="${y}" font-family="${F}" font-size="${size}" fill="${color}">${rich(line, size)}</text>`; y += STEP; };
   for (const bl of blocks) {
     if (y > H - 200) break;
     const kind = bl[0], val = bl[1];
     if (kind === 'regle') {
       const lines = wrapTxt(val, 56);
-      const boxTop = y - STEP + 16, boxH = (lines.length + 1) * STEP + 8;
+      const boxTop = y - STEP + 24, boxH = (lines.length + 1) * STEP + 14;
       b += `<rect x="${MARG + 14}" y="${boxTop}" width="${W - MARG - 70}" height="${boxH}" rx="12" fill="none" stroke="#D23B3B" stroke-width="3.5"/>`;
-      b += `<text x="${X0}" y="${y - 14}" font-family="${F}" font-size="38" font-weight="bold" fill="#D23B3B">Règle :</text>`;
+      b += `<text x="${X0}" y="${y}" font-family="${F}" font-size="38" font-weight="bold" fill="#D23B3B">Règle :</text>`;
       y += STEP;
       for (const l of lines) wline(l);
       y += STEP;
     } else if (kind === 'txt') {
       for (const l of wrapTxt(val, 58)) wline(l, 36, bl[2] || INK);
     } else if (kind === 'ex') {
-      b += `<text x="${X0}" y="${y - 14}" font-family="${F}" font-size="38" font-weight="bold" fill="#2E7D32">Exemple :</text>`;
+      b += `<text x="${X0}" y="${y}" font-family="${F}" font-size="38" font-weight="bold" fill="#2E7D32">Exemple :</text>`;
       y += STEP;
       for (const l of wrapTxt(val, 58)) { if (y > H - 110) break; wline(l); }
     } else if (kind === 'vx') {
       for (const [ok, text] of val) {
         const sym = ok ? '✓' : '✗', col = ok ? '#2E7D32' : '#D23B3B';
         const lines = wrapTxt(text, 52);
-        b += `<text x="${X0}" y="${y - 14}" font-family="DejaVu Sans" font-size="34" font-weight="bold" fill="${col}">${sym}</text>`;
+        b += `<text x="${X0}" y="${y}" font-family="DejaVu Sans" font-size="34" font-weight="bold" fill="${col}">${sym}</text>`;
         lines.forEach((l, j) => wline(l, 36, j === 0 ? col : INK, X0 + 46));
       }
     } else if (kind === 'table') {
@@ -161,20 +162,20 @@ function cahierSvg(s) {
         for (const [label, fill, span] of groups) {
           const gw = cw * span;
           b += `<rect x="${gx}" y="${ty}" width="${gw}" height="${rowH}" fill="${fill}" stroke="#444" stroke-width="2"/>`;
-          b += `<text x="${gx + gw / 2}" y="${ty + rowH / 2 + 11}" font-family="${F}" font-size="29" font-weight="bold" fill="#333" text-anchor="middle">${escXml(label)}</text>`;
+          b += `<text x="${gx + gw / 2}" y="${ty + rowH / 2 + 11}" font-family="${FT}" font-size="25" font-weight="bold" fill="#333" text-anchor="middle">${escXml(label)}</text>`;
           gx += gw;
         }
         ty += rowH;
       }
       sub.forEach((hcell, j) => {
         b += `<rect x="${tx + j * cw}" y="${ty}" width="${cw}" height="${rowH}" fill="#F1F5FB" stroke="#444" stroke-width="2"/>`;
-        b += `<text x="${tx + j * cw + cw / 2}" y="${ty + rowH / 2 + 11}" font-family="${F}" font-size="31" font-weight="bold" fill="#1F4E79" text-anchor="middle">${escXml(String(hcell))}</text>`;
+        b += `<text x="${tx + j * cw + cw / 2}" y="${ty + rowH / 2 + 11}" font-family="${F}" font-size="31" font-weight="bold" fill="#1F4E79" text-anchor="middle">${rich(hcell, 31)}</text>`;
       });
       ty += rowH;
       for (const row of rows) {
         row.forEach((cellv, j) => {
           b += `<rect x="${tx + j * cw}" y="${ty}" width="${cw}" height="${rowH}" fill="white" stroke="#444" stroke-width="2"/>`;
-          b += `<text x="${tx + j * cw + cw / 2}" y="${ty + rowH / 2 + 11}" font-family="${F}" font-size="31" fill="${INK}" text-anchor="middle">${escXml(String(cellv))}</text>`;
+          b += `<text x="${tx + j * cw + cw / 2}" y="${ty + rowH / 2 + 11}" font-family="${F}" font-size="31" fill="${INK}" text-anchor="middle">${rich(cellv, 31)}</text>`;
         });
         ty += rowH;
       }

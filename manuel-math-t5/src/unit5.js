@@ -15,16 +15,26 @@ figs.u5f1 = (() => { const { s, y } = head('Le tableau des longueurs', ['Chaque 
   b += txt(500, top + 2 * 54 + 80, '4 km = 4 000 m ; 250 cm = 2,50 m ; 7 cm = 70 mm', 21, GREEN, 'bold', 'middle');
   return svg(1000, top + 2 * 54 + 112, s + b); })();
 // S2 — périmètre
-figs.u5f2 = (() => { const { s, y } = head('Le périmètre : le tour complet', ['On additionne tous les côtés — ou on utilise la formule de la figure.']);
+figs.u5f2 = (() => { const { s, y } = head('Le périmètre : toutes les formules', ['On additionne tous les côtés — ou on utilise la formule de chaque figure.']);
   const top = y + 30;
   let b = poly([[100, top + 160], [360, top + 160], [360, top], [100, top]], BLUEL, BLUE, 3.5);
-  b += txt(230, top + 195, '8 m', 21, BLUE, 'bold', 'middle') + txt(72, top + 85, '5 m', 21, BLUE, 'bold', 'middle');
-  b += txt(230, top + 245, 'P = (8 + 5) × 2 = 26 m', 22, PINK2, 'bold', 'middle');
-  b += poly([[600, top + 160], [760, top + 160], [760, top], [600, top]], GREENL, GREEN, 3.5);
-  b += txt(680, top + 195, '6 m', 21, GREEN, 'bold', 'middle');
-  b += txt(680, top + 245, 'P = 6 × 4 = 24 m', 22, PINK2, 'bold', 'middle');
-  b += txt(500, top + 300, 'rectangle : P = (longueur + largeur) × 2 ; carré : P = côté × 4', 21, OCRE, 'bold', 'middle');
-  return svg(1000, top + 332, s + b); })();
+  b += txt(230, top + 192, '8 m', 20, BLUE, 'bold', 'middle') + txt(72, top + 85, '5 m', 20, BLUE, 'bold', 'middle');
+  b += txt(230, top + 240, 'rectangle : P = (L + l) × 2 = (8 + 5) × 2 = 26 m', 20, PINK2, 'bold', 'middle');
+  b += poly([[640, top + 160], [800, top + 160], [800, top], [640, top]], GREENL, GREEN, 3.5);
+  b += txt(720, top + 192, '6 m', 20, GREEN, 'bold', 'middle');
+  b += txt(720, top + 240, 'carré : P = c × 4 = 6 × 4 = 24 m', 20, PINK2, 'bold', 'middle');
+  const t2 = top + 300;
+  b += poly([[120, t2 + 150], [400, t2 + 150], [300, t2 + 15]], '#FDE7EF', PINK2, 3.5);
+  b += txt(260, t2 + 180, 'a = 9 m', 18, PINK2, 'bold', 'middle');
+  b += txt(165, t2 + 75, 'b = 6 m', 18, PINK2, 'bold', 'middle');
+  b += txt(395, t2 + 75, 'c = 5 m', 18, PINK2, 'bold', 'middle');
+  b += txt(260, t2 + 228, 'triangle : P = a + b + c = 9 + 6 + 5 = 20 m', 20, PINK2, 'bold', 'middle');
+  const hx = 700, hy = t2 + 85, hr = 82, hpts = [];
+  for (let k = 0; k < 6; k++) hpts.push([hx + hr * Math.cos(Math.PI / 6 + k * Math.PI / 3), hy + hr * Math.sin(Math.PI / 6 + k * Math.PI / 3)]);
+  b += poly(hpts, '#FFF3E0', OCRE, 3.5);
+  b += txt(hx, hy + 7, 'côté 4 m', 18, OCRE, 'bold', 'middle');
+  b += txt(hx, t2 + 228, 'polygone régulier : P = côté × nb de côtés = 4 × 6 = 24 m', 19, OCRE, 'bold', 'middle');
+  return svg(1000, t2 + 258, s + b); })();
 // S3 — circonférence
 figs.u5f3 = (() => { const { s, y } = head('La circonférence du cercle', ['Le tour du cercle vaut environ 3,14 fois son diamètre.']);
   const top = y + 30, cx = 320, cy = top + 150, r = 125;
@@ -76,20 +86,28 @@ figs.u5f7 = (() => { const { s, y } = head('L’aire : compter les carreaux', ['
   b += txt(500, top + 3 * c + 86, 'l’aire se mesure en unités CARRÉES : cm², m²…', 21, PINK2, 'bold', 'middle');
   return svg(1000, top + 3 * c + 118, s + b); })();
 // S8 — aire du triangle
-figs.u5f8 = (() => { const { s, y } = head('L’aire du triangle : un demi-rectangle', ['La diagonale coupe le rectangle en deux triangles égaux.']);
+figs.u5f8 = (() => { const { s, y } = head('Les aires : triangle, trapèze, parallélogramme', ['Le triangle est un demi-rectangle ; chaque figure a sa formule d’aire.']);
   const top = y + 30;
-  let b = poly([[120, top + 170], [420, top + 170], [420, top], [120, top]], 'none', BLUE, 3.5);
-  b += poly([[120, top + 170], [420, top + 170], [420, top]], GREENL, GREEN, 3);
-  b += dash(120, top + 170, 420, top, PINK2, 3);
-  b += txt(270, top + 205, 'base 6 cm', 20, BLUE, 'bold', 'middle') + txt(455, top + 88, 'hauteur', 19, BLUE, 'bold');
-  b += txt(455, top + 112, '4 cm', 19, BLUE, 'bold');
-  b += box(600, top + 25, 360, 60, 'aire du triangle', '#FDE7EF', PINK2, 24);
-  b += box(600, top + 95, 360, 60, '= (base × hauteur) ÷ 2', '#FDE7EF', PINK2, 22);
-  b += txt(780, top + 195, 'A = (6 × 4) ÷ 2 = 12 cm²', 22, OCRE, 'bold', 'middle');
-  b += txt(500, top + 250, 'le triangle vert est la moitié exacte du rectangle 6 × 4', 20, GREEN, 'bold', 'middle');
-  return svg(1000, top + 282, s + b); })();
+  let b = poly([[120, top + 150], [400, top + 150], [400, top], [120, top]], 'none', BLUE, 3.5);
+  b += poly([[120, top + 150], [400, top + 150], [400, top]], GREENL, GREEN, 3);
+  b += dash(120, top + 150, 400, top, PINK2, 3);
+  b += txt(260, top + 182, 'base 6 cm', 19, BLUE, 'bold', 'middle') + txt(448, top + 80, 'h = 4 cm', 18, BLUE, 'bold');
+  b += txt(260, top + 228, 'A = (b × h) ÷ 2 = (6 × 4) ÷ 2 = 12 cm²', 20, PINK2, 'bold', 'middle');
+  b += box(620, top + 20, 350, 56, 'triangle = (b × h) ÷ 2', '#FDE7EF', PINK2, 22);
+  b += box(620, top + 92, 350, 56, 'la moitié exacte du rectangle !', GREENL, GREEN, 20);
+  const t2 = top + 290;
+  b += poly([[120, t2 + 130], [400, t2 + 130], [340, t2 + 15], [190, t2 + 15]], BLUEL, BLUE, 3.5);
+  b += dash(265, t2 + 15, 265, t2 + 130, PINK2, 3);
+  b += txt(260, t2 + 160, 'B = 9 cm', 18, BLUE, 'bold', 'middle') + txt(265, t2 + 2, 'b = 5 cm', 18, BLUE, 'bold', 'middle') + txt(302, t2 + 80, 'h = 4', 17, PINK2, 'bold');
+
+  b += poly([[560, t2 + 130], [840, t2 + 130], [900, t2 + 15], [620, t2 + 15]], GREENL, GREEN, 3.5);
+  b += dash(650, t2 + 15, 650, t2 + 130, PINK2, 3);
+  b += txt(700, t2 + 160, 'b = 9 cm', 18, GREEN, 'bold', 'middle') + txt(658, t2 + 80, 'h = 4', 17, PINK2, 'bold');
+  b += txt(500, t2 + 210, 'trapèze : A = (B + b) × h ÷ 2 = (9 + 5) × 4 ÷ 2 = 28 cm²', 19, BLUE, 'bold', 'middle');
+  b += txt(500, t2 + 246, 'parallélogramme : A = b × h = 9 × 4 = 36 cm²', 19, GREEN, 'bold', 'middle');
+  return svg(1000, t2 + 276, s + b); })();
 // S9 — volume
-figs.u5f9 = (() => { const { s, y } = head('Le volume : compter les cubes', ['Un pavé de 4 sur 3 sur 2 contient 24 cubes unités d’un cm³.']);
+figs.u5f9 = (() => { const { s, y } = head('Le volume : compter les cubes — et toutes les formules', ['Un pavé de 4 sur 3 sur 2 contient 24 cubes unités d’un cm³.']);
   const top = y + 45, c = 46, ox = 230, oy = top + 200, kx = 0.5, ky = 0.26;
   let b = '';
   const cube = (i, j, k) => {
@@ -103,10 +121,45 @@ figs.u5f9 = (() => { const { s, y } = head('Le volume : compter les cubes', ['Un
   b += txt(ox + 2 * c + 20, oy + 40, '4 cubes', 20, BLUE, 'bold', 'middle');
   b += txt(ox + 4 * c + 100, oy - 20, '3 rangées', 20, GREEN, 'bold');
   b += txt(ox - 80, oy - 60, '2 étages', 20, PINK2, 'bold');
-  b += box(640, top + 30, 330, 56, 'V = 4 × 3 × 2', GREENL, GREEN, 26);
-  b += txt(805, top + 130, '= 24 cm³', 28, OCRE, 'bold', 'middle');
-  b += txt(500, oy + 95, 'le volume se mesure en unités CUBES : le cm³ est un petit dé de 1 cm d’arête', 19, PINK2, 'bold', 'middle');
-  return svg(1000, oy + 127, s + b); })();
+  b += box(640, top + 30, 330, 56, 'pavé droit : V = L × l × h', GREENL, GREEN, 22);
+  b += txt(805, top + 130, 'V = 4 × 3 × 2 = 24 cm³', 24, OCRE, 'bold', 'middle');
+  b += txt(500, oy + 90, 'le volume se mesure en unités CUBES : le cm³ est un petit dé de 1 cm d’arête', 19, PINK2, 'bold', 'middle');
+  const yA = oy + 125, yB = yA + 215;
+  const solid = (cx2, yr, kind) => {
+    let o = '';
+    if (kind === 'cube') {
+      o += `<rect x="${cx2 - 45}" y="${yr + 30}" width="80" height="80" fill="${GREENL}" stroke="${GREEN}" stroke-width="2.5"/>`;
+      o += `<polygon points="${cx2 - 45},${yr + 30} ${cx2 - 23},${yr + 16} ${cx2 + 57},${yr + 16} ${cx2 + 35},${yr + 30}" fill="#C5E1A5" stroke="${GREEN}" stroke-width="2.5"/>`;
+      o += `<polygon points="${cx2 + 35},${yr + 30} ${cx2 + 57},${yr + 16} ${cx2 + 57},${yr + 96} ${cx2 + 35},${yr + 110}" fill="#A5D6A7" stroke="${GREEN}" stroke-width="2.5"/>`;
+    } else if (kind === 'prisme') {
+      o += `<polygon points="${cx2 - 60},${yr + 110} ${cx2 + 10},${yr + 110} ${cx2 - 25},${yr + 40}" fill="${BLUEL}" stroke="${BLUE}" stroke-width="2.5"/>`;
+      o += `<polygon points="${cx2 + 10},${yr + 110} ${cx2 + 60},${yr + 92} ${cx2 + 25},${yr + 22} ${cx2 - 25},${yr + 40}" fill="#9FC3E8" stroke="${BLUE}" stroke-width="2.5"/>`;
+      o += seg(cx2 - 60, yr + 110, cx2 - 10, yr + 92, BLUE, 2.5) + seg(cx2 - 10, yr + 92, cx2 + 60, yr + 92, BLUE, 2.5);
+    } else if (kind === 'cylindre') {
+      o += `<rect x="${cx2 - 45}" y="${yr + 30}" width="90" height="70" fill="${BLUEL}" stroke="none"/>`;
+      o += seg(cx2 - 45, yr + 30, cx2 - 45, yr + 100, BLUE, 2.5) + seg(cx2 + 45, yr + 30, cx2 + 45, yr + 100, BLUE, 2.5);
+      o += `<ellipse cx="${cx2}" cy="${yr + 100}" rx="45" ry="14" fill="${BLUEL}" stroke="${BLUE}" stroke-width="2.5"/>`;
+      o += `<ellipse cx="${cx2}" cy="${yr + 30}" rx="45" ry="14" fill="#9FC3E8" stroke="${BLUE}" stroke-width="2.5"/>`;
+    } else if (kind === 'pyramide') {
+      o += `<polygon points="${cx2 - 55},${yr + 100} ${cx2 + 5},${yr + 112} ${cx2 + 60},${yr + 96} ${cx2},${yr + 88}" fill="#FFE0B2" stroke="${OCRE}" stroke-width="2.5"/>`;
+      o += `<polygon points="${cx2 - 55},${yr + 100} ${cx2 + 5},${yr + 112} ${cx2 + 2},${yr + 18}" fill="#FFF3E0" stroke="${OCRE}" stroke-width="2.5"/>`;
+      o += `<polygon points="${cx2 + 5},${yr + 112} ${cx2 + 60},${yr + 96} ${cx2 + 2},${yr + 18}" fill="#FFE8C9" stroke="${OCRE}" stroke-width="2.5"/>`;
+    } else if (kind === 'cone') {
+      o += `<polygon points="${cx2 - 45},${yr + 96} ${cx2 + 45},${yr + 96} ${cx2},${yr + 14}" fill="#FDE7EF" stroke="${PINK2}" stroke-width="2.5"/>`;
+      o += `<ellipse cx="${cx2}" cy="${yr + 96}" rx="45" ry="14" fill="#F8BBD0" stroke="${PINK2}" stroke-width="2.5"/>`;
+    } else if (kind === 'boule') {
+      o += circle(cx2, yr + 62, 50, GREEN, GREENL, 2.5);
+      o += `<ellipse cx="${cx2}" cy="${yr + 62}" rx="50" ry="16" fill="none" stroke="${GREEN}" stroke-width="2" stroke-dasharray="8 6"/>`;
+    }
+    return o;
+  };
+  b += solid(170, yA, 'cube') + txt(170, yA + 140, 'cube : V = a × a × a', 18, GREEN, 'bold', 'middle') + txt(170, yA + 166, 'aire totale = 6 × a²', 17, GREEN, 'normal', 'middle');
+  b += solid(500, yA, 'prisme') + txt(500, yA + 140, 'prisme : V = aire base × h', 18, BLUE, 'bold', 'middle') + txt(500, yA + 166, 'latérale = périmètre base × h', 17, BLUE, 'normal', 'middle');
+  b += solid(830, yA, 'cylindre') + txt(830, yA + 140, 'cylindre : V = 3,14 × r² × h', 18, BLUE, 'bold', 'middle') + txt(830, yA + 166, 'latérale = 2 × 3,14 × r × h', 17, BLUE, 'normal', 'middle');
+  b += solid(170, yB, 'pyramide') + txt(170, yB + 140, 'pyramide :', 18, OCRE, 'bold', 'middle') + txt(170, yB + 166, 'V = aire base × h ÷ 3', 17, OCRE, 'normal', 'middle');
+  b += solid(500, yB, 'cone') + txt(500, yB + 140, 'cône :', 18, PINK2, 'bold', 'middle') + txt(500, yB + 166, 'V = 3,14 × r² × h ÷ 3', 17, PINK2, 'normal', 'middle');
+  b += solid(830, yB, 'boule') + txt(830, yB + 140, 'boule (sphère) :', 18, GREEN, 'bold', 'middle') + txt(830, yB + 166, 'aire = 4 × 3,14 × r²', 17, GREEN, 'normal', 'middle');
+  return svg(1000, yB + 196, s + b); })();
 
 const S = [
   {
@@ -168,7 +221,7 @@ const S = [
       'a) 36 ÷ 4 = 9 cm ; b) 30 ÷ 2 = 15, puis 15 − 9 = 6 cm ; d) (25 + 18) × 2 = 86 m ; e) 86 × 12 000 = 1 032 000 Ar.',
       'a) 4 × 15 = 60 m ; b) 60 − 2 = 58 m ; d) 6 rouleaux (5 rouleaux = 50 m, insuffisant) ; e) 60 − 58 = 2 m.'],
     fig: 'u5f2',
-    cahier: [['table',{sub:['Figure','Périmètre'],rows:[['carré','c × 4'],['rectangle','(L + l) × 2'],['triangle','a + b + c'],['cercle','2 × π × r']]}],['txt','Le périmètre, c’est le tour complet — comme une clôture.'],['noex']],
+    cahier: [['table',{sub:['Figure','Périmètre'],rows:[['carré','c × 4'],['rectangle','(L + l) × 2'],['triangle','a + b + c'],['polygone régulier','côté × nb de côtés']]}],['txt','Le périmètre, c’est le tour complet — comme une clôture.'],['noex']],
     jeu: 'La clôture : un champ carré de 25 m de côté. Combien de mètres de clôture ? Et s’il faut une porte de 2 m ? (100 m ; 98 m.)'
   },
   {
@@ -199,8 +252,8 @@ const S = [
       'a) 60 × 3,14 = 188,4 cm ; b) 1 884 cm ; d) 18,84 m ; e) 100 ÷ 1,884 ≈ 53 tours.',
       'a) circonférence = diamètre × π ; b) 6,28 ÷ 3,14 = 2 m ; d) 1 m ; e) le grand rayon vaut 1 + 1 = 2 m, donc 2 × 3,14 × 2 = 12,56 m.'],
     fig: 'u5f3',
-    cahier: [['table',{sub:['Figure','Aire'],rows:[['carré','c × c'],['rectangle','L × l'],['triangle','(b × h) ÷ 2'],['disque','π × r × r']]}],['vx',[[true,'périmètre en m, aire en m² : deux unités différentes !']]],['noex']],
-    jeu: 'Le pavage : combien de carreaux de 1 dm sur 1 dm pour couvrir une table de 12 dm sur 8 dm ? (96 carreaux = 96 dm² !)'
+    cahier: [['table',{sub:['Donnée','Formule'],rows:[['diamètre d','C = d × 3,14'],['rayon r','C = 2 × 3,14 × r']]}],['txt','π ≈ 3,14 : le même nombre pour TOUS les cercles du monde !'],['noex']],
+    jeu: 'Tour de roue : une roue de 70 cm de diamètre avance de combien en un tour ? (70 × 3,14 ≈ 220 cm ≈ 2,20 m.)'
   },
   {
     t: 'La masse : estimer, mesurer, convertir', comp: 'Mesure', theme: 'Unités de masse jusqu’à la tonne',
@@ -230,8 +283,8 @@ const S = [
       'a) en kg (300 à 400 kg environ) ; b) en g ; d) en kg ; e) en t.',
       'a) 25 000 g ; b) 25 000 ÷ 500 = 50 sachets ; d) 50 × 2 500 = 125 000 Ar ; e) 125 000 − 110 000 = 15 000 Ar.'],
     fig: 'u5f4',
-    cahier: [['table',{sub:['Solide','Volume'],rows:[['cube','a × a × a'],['pavé','L × l × h'],['cylindre','π × r² × h']]}],['txt','Le volume se mesure en cm³, dm³, m³ — et 1 dm³ = 1 litre !'],['noex']],
-    jeu: 'Le déménageur : combien de cubes de 1 cm de côté dans une boîte de 5 cm × 4 cm × 3 cm ? (60 cubes.)'
+    cahier: [['table',{sub:['t','q','kg','hg','dag','g'],rows:[['','','2','5','0','0']]}],['txt','2 500 g = 2,5 kg ; 1 t = 1 000 kg ; 1 q = 100 kg.'],['noex']],
+    jeu: 'La balance humaine : classe du plus léger au plus lourd : 1 500 g ; 1,2 kg ; 18 hg. (1,2 kg < 1 500 g < 18 hg.)'
   },
   {
     t: 'La capacité : litres et conversions', comp: 'Mesure', theme: 'Unités de capacité ; lien capacité-masse',
@@ -261,8 +314,8 @@ const S = [
       'a) 150 cL ; b) 150 ÷ 25 = 6 verres ; d) 4 × 25 = 100 cL ; e) 1 L.',
       'a) 200 ÷ 12,5 = 16 arrosoirs ; b) 16 × 12,5 = 200 L : c’est juste ; d) 16 ÷ 4 = 4 jours ; e) 3 jours = 12 arrosoirs = 150 L utilisés, il reste 200 − 150 = 50 L.'],
     fig: 'u5f5',
-    cahier: [['table',{sub:['kg','hg','dag','g','dg','cg','mg'],rows:[['2','5','0','0','','','']]}],['txt','2,5 kg = 2 500 g — même glissement que pour les longueurs !'],['noex']],
-    jeu: 'La balance humaine : classe du plus léger au plus lourd : 1 500 g, 1,2 kg, 18 hg. (1,2 kg < 1 500 g < 18 hg.)'
+    cahier: [['table',{sub:['L','dL','cL','mL'],rows:[['1','10','100','1 000']]}],['vx',[[true,'1 L = 1 dm³ : les capacités et les volumes se rejoignent !']]],['noex']],
+    jeu: 'Le doseur : une bouteille de 1,5 L remplit combien de verres de 25 cL ? (6 verres.)'
   },
   {
     t: 'La mesure du temps : conversions et opérations', comp: 'Mesure', theme: 'Temps : conversions, calculs de durées',
@@ -292,8 +345,8 @@ const S = [
       'a) 2 h 35 min ; b) à 11 h 45 ; d) à 17 h 20 ; e) 2 h 35 + 2 h 50 = 5 h 25 min.',
       'a) à 22 h 25 ; b) de 21 h 30 à 22 h 25 : 55 minutes ; d) à 15 h 55 ; e) 60 + 50 = 110 minutes.'],
     fig: 'u5f6',
-    cahier: [['table',{sub:['L','dL','cL','mL'],rows:[['1','10','100','1 000']]}],['vx',[[true,'1 L = 1 dm³ : les capacités et les volumes se rejoignent !']]],['noex']],
-    jeu: 'Le doseur : une bouteille de 1,5 L remplit combien de verres de 25 cL ? (6 verres.)'
+    cahier: [['table',{sub:['h','min','s'],rows:[['1','60','3 600'],['2','120','7 200']]}],['vx',[[false,'1 h 30 = 130 min ? Non !'],[true,'1 h 30 = 90 min : on compte en base 60']]],['noex']],
+    jeu: 'Course contre la montre : le film commence à 20 h 45 et dure 1 h 50. À quelle heure finit-il ? (22 h 35.)'
   },
   {
     t: 'L’aire du rectangle et du carré', comp: 'Mesure', theme: 'Aires : rectangle et carré',
@@ -323,8 +376,8 @@ const S = [
       'a) 9 × 6 = 54 m² ; b) 54 carreaux ; d) 54 × 8 000 = 432 000 Ar ; e) (9 + 6) × 2 = 30 m.',
       'a) 24 × 15 = 360 m² ; b) 8 × 8 = 64 m² ; d) 360 − 64 = 296 m² ; e) 296 × 1 500 = 444 000 Ar.'],
     fig: 'u5f7',
-    cahier: [['table',{sub:['h','min','s'],rows:[['1','60','3 600'],['2','120','7 200']]}],['vx',[[false,'1 h 30 = 130 min ? Non !'],[true,'1 h 30 = 90 min : on compte en base 60']]],['noex']],
-    jeu: 'Course contre la montre : le film commence à 20 h 45 et dure 1 h 50. À quelle heure finit-il ? (22 h 35.)'
+    cahier: [['table',{sub:['Figure','Aire'],rows:[['carré','c × c'],['rectangle','L × l']]}],['vx',[[true,'périmètre en m, aire en m² : deux unités différentes !']]],['noex']],
+    jeu: 'Le pavage : combien de carreaux de 1 dm sur 1 dm pour couvrir une table de 12 dm sur 8 dm ? (96 carreaux = 96 dm² !)'
   },
   {
     t: 'L’aire du triangle ; comparer des aires', comp: 'Mesure', theme: 'Aire du triangle ; comparaison d’aires',
@@ -354,8 +407,8 @@ const S = [
       'a) (24 × 2) ÷ 8 = 6 cm ; b) triangle : (12 × 5) ÷ 2 = 30 cm² ; rectangle : 6 × 5 = 30 cm² : aires égales ; d) 12 cm² et 24 cm² : la seconde est le double ; e) parce qu’un triangle est la moitié d’un rectangle de même base et de même hauteur.',
       'a) (40 × 25) ÷ 2 = 500 m² ; b) (40 × 15) ÷ 2 = 300 m² ; d) 500 + 300 = 800 m² ; e) 800 × 2 = 1 600 kg de maïs.'],
     fig: 'u5f8',
-    cahier: [['table',{sub:['Montant (Ar)','Forme','Pour acheter…'],rows:[['500','pièce/billet','1 pain'],['2 000','billet','1 cahier'],['10 000','billet','1 poulet']]}],['txt','Pour rendre la monnaie, on complète : 3 600 → 4 000 → 5 000.'],['noex']],
-    jeu: 'Le marchand : tu achètes pour 7 300 Ar et tu donnes 10 000 Ar. Décris le rendu billet par billet ! (200 + 500 + 2 000 = 2 700 Ar.)'
+    cahier: [['table',{sub:['Figure','Aire'],rows:[['triangle','(b × h) ÷ 2'],['trapèze','(B + b) × h ÷ 2'],['parallélogramme','b × h']]}],['txt','Le triangle est un demi-rectangle : son aire aussi !'],['noex']],
+    jeu: 'Pliage malin : plie un rectangle de papier le long d’une diagonale : deux triangles d’aires… ? (Égales : chacun la moitié !)'
   },
   {
     t: 'Le volume : cubes unités, cube et pavé droit', comp: 'Mesure', theme: 'Notion intuitive de volume (cm³)',
@@ -385,8 +438,8 @@ const S = [
       'a) 20 × 10 × 5 = 1 000 cm³ ; b) 1 000 cubes ; d) un cube d’arête 5 cm vaut 125 cm³ : 1 000 ÷ 125 = 8 cubes ; e) 4 cubes par longueur × 2 par largeur × 1 par hauteur = 8 : c’est juste.',
       'a) 2 × 1 × 1,5 = 3 m³ ; b) 3 000 L ; d) 2/3 × 3 000 = 2 000 L ; e) il manque 1 000 L, soit 1 000 ÷ 20 = 50 bidons.'],
     fig: 'u5f9',
-    cahier: [['txt','Toujours la même unité avant de calculer !'],['vx',[[false,'2 m + 50 cm = 52 ? Jamais sans convertir !'],[true,'200 cm + 50 cm = 250 cm = 2,50 m']]],['noex']],
-    jeu: 'Pièges en stock : 1 kg de plumes ou 1 kg de pierres, lequel est le plus lourd ? (Aucun : c’est le même kg !)'
+    cahier: [['table',{sub:['Solide','Volume'],rows:[['cube','a × a × a'],['pavé droit','L × l × h'],['prisme','aire base × h'],['cylindre','3,14 × r² × h']]}],['txt','1 dm³ = 1 litre !'],['noex']],
+    jeu: 'Le déménageur : combien de cubes de 1 cm de côté dans une boîte de 5 cm × 4 cm × 3 cm ? (60 cubes.)'
   }
 ];
 
