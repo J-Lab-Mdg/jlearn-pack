@@ -152,3 +152,36 @@ ary nampidirina tamin'ny **5. Fandravonana** an'ny takela (« mets en Fandravona
 
 **Fehezanteny = mandeha iray ihany** : lesona S1 S2 S3 S4 S5 S8 S10 S11 S12 S16 S17 S18 S19 S21 ;
 exos S6 S7 S15 S23 (tsilo) + S14 S22 S20 S9 (banga) ; takela echo S1 S2 S4 S12 + S13, S24 S25.
+
+## 2026-10-29 (3) — V11 : loharano ofisialy mba tsy hanaraka ny lesona intsony
+
+**Nataon'ny mpanabe** : « c'est pas difficile de trouver d'autre phrase, t'as pas accès à
+internet toi ? » → tsy maintsy **mpikarohana vaovao** ny takela, fa tsy ny an'ny lesona
+avaina (零 echo entre le takela et la leçon).
+
+Loharano ofisialy azo (2026-10-29, voasoratra ao `manuel-malagasy-t5/refs/rakibolana_noho.txt`,
+6e passe) :
+1. **Prof. Siméon Rajaona, « Ny Matoanteny eo amin'ny teny malagasy », Akademia Malagasy** —
+   teny-malagasy.akademia-malagasy.mg/matoanteny.php. §2.1 : « fotsy volo Rakoto » ;
+   mpamari-toejavatra : « noho ny ahiahy » → **fehezanteny feno : « Fotsy volo Rakoto noho ny
+   ahiahy. »** §1.4.6 : « mifamaho sy mifaningotra ny kian-teny *no* sy ny mpamaritra *ny*,
+   ka ny kian-teny *no* sisa miseho, nitelina ny mpanoritra *ny* : \*i Koto no ny ao > i Koto
+   no ao » §1.4.7 : « i Soa no maditra ». **§1.3.2 « Fanamarihana a) Tsipelina »** : misy
+   andalana antsoina hoe *Tsipelina* mihitsy ao amin'ny gramatikam-pikambana — tsy mbola
+   mazava ny dikany azo teo amin'ny pejy → **abenin'ny mpampianatra** raha misy boky
+   tena izy.
+2. **Baiboly Malagasy (dika 1910), Mat 16,2** : « Nony hariva, dia hoy ianareo : Ho tsara ny
+   andro, fa mena ny lanitra. » → ohatra **vaovao** ho an'ny « nony » (takela 4).
+3. **PROGRAMMES SCOLAIRES 8ème** (education.gov.mg) — « Takela-teny fanonona na mitovitovy
+   endrika : samy hafa, samihafa / noho ny, nony » ; « Fehezanteny banga » ; « solaitra » ;
+   « ampikarohina teny na andianteny mifanohitra hevitra izy ; asaina mampifandray sy
+   manoratra azy ireny » → manamarina ny anaran'ny karazana fanazaran-tena ampiasaina.
+4. **Rakibolana, « dia »** : « Nony tonga izy dia niteny » ; « Rakoto dia mpianatra mazoto » ;
+   « Soa dia soa ».
+5. Ny teny ara-drafitra (**mpampiankina fehezankevitra**) dia nalaina tamin'ny pejy
+   « Fehezanteny » (Wikipedia malagasy, efa tao `sources_web/11`) — nisolo ny
+   « teny fampitohizana » notamiko teo aloha.
+
+**Fifanekena** : le FANITSIANA dia **sary** (tsy azo ovaina anaty Word) — nanaiky ny
+mpanabe ; ny FANAZARAN-TENA kosa dia **tabilao Word** (modifiable) ; 4 paires ihany ;
+`Daty`/`Seho n°`/`Isan'ny seho` = **fao banga** (pointillés du modèle) ; tsilo 1 pt magenta.

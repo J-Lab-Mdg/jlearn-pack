@@ -175,3 +175,57 @@ Phrases (une seule apparition chacune sur la fiche) :
   exos    : S6 S7 S15 S23 (tsilo) | S14 S22 S20 S9 (banga)
   takela  : S1 S2 S4 S12 (echo volontaire, comme le modele) + S13 (Fampiharana)
             + S24 S25 (Famerenana, fiche 1)
+
+----------------------------------------------------------------------
+6e PASSE (2026-10-29) — loharano ofisialy vaovao (Akademia Malagasy, Baiboly,
+                    Programme scolaire, Rakibolana « dia »)
+----------------------------------------------------------------------
+Ny dikany : mba hamenoana ny takela (Fitarihan-tsaina / Fandinihana / Famakafakana)
+amin'ny fehezanteny **vaovao** — mba tsy hanaraka ny lesona intsony (fanamarihana
+nataon'ny mpanabe : « c'est pas difficile de trouver d'autre phrase »).
+
+1) Prof. Siméon Rajaona, « Ny Matoanteny eo amin'ny teny malagasy », Akademia Malagasy
+   https://teny-malagasy.akademia-malagasy.mg/matoanteny.php
+   - §2.1 (ohatra, entimilaza tsy matoanteny) : « eto aho ny alahady ; tsara ny andro ;
+     fotsy volo Rakoto. »
+   - mpamari-toejavatra : « noho ny ahiahy » — ka ny fehezanteny feno :
+     « (2) fotsy ny volon-dRakoto noho ny ahiahy » ary « (6) fotsy volo Rakoto noho ny ahiahy »
+     (roa endrika hita tao amin'ny dikam-pikarohana tamin'ity pejy ity, 2026-10-29).
+   - §1.4.6 b) : « mifamaho sy mifaningotra ny kian-teny no sy ny mpamaritra ny, ka ny
+     kian-teny no sisa miseho, nitelina ny mpanoritra ny : *i Koto no ny ao > i Koto no ao »
+   - §1.4.7 (Fampiasana manokana ny kian-teny no) : « ny fehezanteny hoe : i Soa no maditra
+     dia tsy mifamaly, mivadi-drafitra, amin'ny hoe : maditra i Soa, fa amin'ny hoe :
+     ny maditra dia i Soa. Fa raha fehezanteny iainkinana no eo, milaza anton-javatra, dia
+     izay vao mifamaly … Toy izany no hitantsika amin'ny hoe : i Soa no maditra, dia satria
+     mijaly anaty ; izay midika hoe : matoa maditra i Soa, dia satria mijaly anaty. »
+   - §1.3.2 « Fanamarihana a) Tsipelina » : misy andalana antsoina hoe « Tsipelina »
+     mihitsy (tsy mbola voadicaina tsara ny dika azo teo amin'ny pejy — mila jeren'ny
+     mpampianatra vao ampiasaina).
+
+2) Baiboly Malagasy (dika 1910), tolo-tsoratra : https://nybaiboly.org/Concordance-malagasy/Bibliquest-Malagasy.bbq
+   - Matiteo 16,2 : « Ary Izy namaly ka nanao taminy hoe: Nony hariva, dia hoy ianareo:
+     Ho tsara ny andro, fa mena ny lanitra. »
+   - (hita koa : « Nony mandre aho, dia mandevilevy ny kiboko » ; « Nony antoandro matin'ny
+     hain'andro aho, ary nony alina dia matin'ny fanala » — Salamo 121,6)
+
+3) Rakibolana Malagasy, « dia » — https://www.rakibolana.org/rakibolana/teny/dia
+   - « Kian-teny fampiasa : a) Mba hampitohy fehezan-kevitra roa raha lasa aloha ilay
+     fehezan-kevitra miankina : Nony tonga izy dia niteny hoe.., b) mba hampitohy
+     indraindray ny teny enti-milaza amin'ny teny lazaina : Rakoto dia mpianatra mazoto. »
+   - « p.mt. : Atao anelanelan'ny teny miverina indroa mba ho fanamafisan-kevitra :
+     Soa dia soa » ; « ppt.: Mitovy amin'ny sy na ary : Nitsangana izy dia niteny. »
+
+4) PROGRAMME SCOLAIRE 8ème, Minisiteran'ny Fanabeazam-pirenena —
+   https://www.education.gov.mg/wp-content/uploads/2016/10/PROGRAMMES-SCOLAIRES-8%C3%A8me.pdf
+   - « Takela-teny fanonona na mitovitovy endrika : samy hafa, samihafa / noho ny, nony » ;
+     « Fehezanteny banga » ; « Solaitra » ; « Fehezanteny na ampaham-pehezanteny » ;
+     « ampikarohina teny na andianteny mifanohitra hevitra izy ; asaina mampifandray sy
+     manoratra azy ireny tsiroaroa izy » -> manamarina ny karazana fanazaran-tena natao
+     (tsilo = « Ampifandraiso amin'ny alalan'ny tsilo » ; banga = « Fehezanteny banga »).
+
+5) Teny ara-drafitra : « mpampiankina fehezankevitra » (subordonnant) — efa tao amin'ny
+   sources_web/11_mgwiki_fehezanteny.txt (mg.wikipedia, « Fehezanteny ») :
+   « ny fampiasana mpampitohy sy mpampiankin-teny na mpampiankina fehezankevitra » —
+   tsara kokoa noho ny hoe « teny fampitohizana » (notamiko teo aloha) ho an'ny « nony ».
+   Sady tamin'ny boky taranjara (« Malagasy 1ère ») dia : « Nony : mpampiankina fehezankevitra
+   milaza fotoana. »
