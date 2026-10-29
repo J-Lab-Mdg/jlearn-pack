@@ -636,6 +636,49 @@ spd_dump.exe --wait 300 --kick exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 f
 | `Successfully connected to port: N` | ✅ Le pilote fonctionne : Windows a bien créé un COM pour le téléphone |
 | `Successfully connected` **puis** `usb_send failed (0 / 1)` | Le port s'est ouvert mais l'appareil a quitté le mode BROM aussitôt : voir l'encadré ci-dessous |
 
+> ### ✅ Résultat réel du 29/10 — essai 5 (`--kick`, aucune touche) : **SUCCÈS**
+>
+> ```text
+> Waiting for boot_diag/cali_diag/dl_diag connection (300s)
+> Successfully connected to port: 5      ← interface boot_diag/cali_diag
+> Unknown response  7e 00 00 00 00 08 00 d5 00 7e     ← sans conséquence, reconnexion automatique
+> Successfully connected to port: 5      ← dl_diag
+> CHECK_BAUD bootrom
+> BSL_REP_VER: "SPRD4"
+> CMD_CONNECT bootrom
+> EXEC FDL1
+> CHECK_BAUD FDL1
+> BSL_REP_VER: "SPRD4:AutoD\0"
+> CMD_CONNECT FDL1
+> KEEP_CHARGE FDL1
+> FDL2: incompatible partition          ← message normal, présent aussi sur les autres ZTE
+> EXEC FDL2
+> DISABLE_TRANSCODE
+> Reading Partition List
+> ...
+> Total number of partitions: 77
+> Storage is emmc
+> Device is using slot b
+> Read Part Done: misc+0x0, target: 0x40, read: 0x40
+> ```
+>
+> **Accès complet confirmé** : FDL1 **et** FDL2 exécutés, table de partitions lue, `misc_test4.bin` de **64 octets** écrit dans `C:\zte-unlock`. FDL2 = la couche qui écrit : on a donc aussi le droit d'écriture, sans avoir rien écrit.
+>
+> **`--kick` est indispensable sur ce modèle.** C'est la différence entre `device removed, exiting...` et un accès complet.
+
+#### Table de partitions relevée le 29/10 (eMMC, A/B, 77 partitions)
+
+| # | Partition | Taille | Rôle |
+|---|---|---|---|
+| 0 | `splloader` | 256 KB | **interdit** |
+| 1 | `prodnv` | 64 MB | **interdit** |
+| 2 | `miscdata` | 1 MB | **interdit** |
+| 3 | `misc` | 1 MB | drapeau de démarrage (BCB) |
+| 21 | `persist` | 2 MB | **interdit** |
+| 22 | `ztecfg` / `ztepersist` | 8 / 32 MB | **interdit** |
+| 55 | `metadata` | 64 MB | clés de chiffrement → **à effacer avec `userdata`** |
+| 77 | `userdata` | **104 920 MB** | code d'écran + données → **à effacer** |
+
 > ### ⚠️ Résultat réel du 29/10 — première tentative
 >
 > ```text
@@ -676,12 +719,16 @@ spd_dump.exe --wait 300 --kick exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 f
 ### 13.8 Étape G — Effacer
 
 ```bat
-spd_dump.exe --wait 300 exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec e userdata e metadata reset
+spd_dump.exe --wait 300 --kick exec_addr 0x65015f08 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec e userdata e metadata reset
 ```
+
+Procédure : téléphone **éteint** → lancer la commande → **brancher le câble, aucune touche** → attendre la lecture de la table (≈ 30 s) puis l'effacement. **Ne rien débrancher** pendant l'opération. Sur 104 Go, l'effacement peut durer plusieurs minutes sans affichage de progression.
 
 Puis **ne rien toucher**. Le téléphone redémarre seul.
 
 ### 13.9 Étape H — Vérifier
+
+Au `reset`, le téléphone redémarre et le **premier démarrage est long** (10 à 20 minutes) : il recrée `userdata` et les clés. Ne pas s'inquiéter, ne pas débrancher, ne pas forcer l'extinction.
 
 Assistant de configuration, choix de la langue, **aucune demande de compte Google**. Si un mot de passe est
 encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `misc-wipe.bin`.
