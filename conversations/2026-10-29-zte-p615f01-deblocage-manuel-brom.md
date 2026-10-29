@@ -500,6 +500,8 @@ encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `m
 | `Channel9.dll` introuvable | DLL absente ou mauvais dossier courant | Vérifier `dir`, rester dans le dossier du paquet |
 | Le téléphone apparaît puis disparaît | Fenêtre courte, batterie faible, câble instable | Charger à 50 %+, relancer la commande **avant** de brancher |
 | `find port failed` répété | USB 3, hub, câble long | Port USB 2.0 direct sur la carte mère, câble court |
+| Le prompt affiche `C:\Windows\system32` | `cmd` a été ouvert depuis le menu Démarrer, pas depuis le dossier du paquet | `cd /d C:\zte-unlock`, ou rouvrir `cmd` depuis la barre d'adresse du dossier |
+| On ne sait plus où le zip a été extrait | — | `where /r %USERPROFILE% spd_dump.exe` donne le chemin complet |
 
 ### 13.11 Ce qu'il faut m'envoyer pour continuer
 
