@@ -27,7 +27,7 @@ def stripped(src, n):
     for el in list(body):
         if el.tag == qn('w:sectPr'):
             continue
-        if el.tag == qn('w:p') and f'UNITÉ {ROMANS[n]} —' in text(el) and 'SÉANCE' not in text(el):
+        if el.tag == qn('w:p') and f'UNITÉ {ROMANS[n]}' in text(el) and 'SÉANCE' not in text(el):
             found = True
         if not found:
             body.remove(el)
