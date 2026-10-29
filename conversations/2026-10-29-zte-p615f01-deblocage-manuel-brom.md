@@ -625,6 +625,20 @@ Puis **maintenir la touche**, brancher le câble USB-C, et **relâcher la touche
 >
 > **Aucune écriture n'a eu lieu** : `misc_test.bin` n'a pas été créé, rien n'a été modifié dans le téléphone.
 >
+> ### ⚠️ Résultat réel du 29/10 — deuxième tentative (Vol+ + Vol− maintenus)
+>
+> ```text
+> Waiting for dl_diag connection (300s)
+> Successfully connected to port: 5
+> device removed, exiting...
+> ```
+>
+> Le port COM s'est ouvert **puis** a disparu : l'appareil a quitté le mode avant tout échange. Différent de la première tentative (`usb_send failed`) : plus de démarrage en recovery, donc la combinaison change bien le comportement, mais la fenêtre est trop courte côté Windows.
+>
+> **Toujours aucune écriture.** `misc_test2.bin` n'a pas été créé.
+>
+> **Point à vérifier avant chaque essai :** le téléphone doit être **complètement éteint** (écran noir obtenu par « Éteindre », pas une simple mise en veille), et l'écran doit **rester noir** pendant l'opération. Si l'écran s'allume (logo, chargeur, Android), l'appareil n'est pas en BROM : les octets envoyés par `spd_dump` partent vers l'interface Android (`VID_18D1`), que le paquet `oem29.inf` accepte aussi — piège à connaître.
+>
 > **Correction :** sur ZTE, la combinaison documentée du *Download Mode* est **Volume haut + Volume bas enfoncés ensemble**, puis brancher le câble (Volume bas seul = recovery, c'est ce qu'on a obtenu). Ordre des essais :
 >
 > 1. **Vol+ et Vol− ensemble**, câble branché, maintenir 3–5 s puis relâcher — écran **noir**, c'est normal ;
@@ -659,6 +673,7 @@ encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `m
 | Le téléphone apparaît puis disparaît | Fenêtre courte, batterie faible, câble instable | Charger à 50 %+, relancer la commande **avant** de brancher |
 | `find port failed` répété | USB 3, hub, câble long | Port USB 2.0 direct sur la carte mère, câble court |
 | `Successfully connected to port: N` puis `usb_send failed (0 / 1)` | L'appareil a quitté le mode BROM avant le premier échange — le plus souvent parce que la touche était **encore maintenue** | Relâcher la touche dès l'apparition du port ; essayer **Volume haut** ; vérifier que le téléphone était bien **éteint** et non en veille |
+| `Successfully connected to port: N` puis `device removed, exiting...` | Le port COM est apparu puis a disparu tout de suite : l'appareil a changé de mode USB (fin de fenêtre BROM, passage au chargeur, à Android ou au bootloader) | Arrêter **complètement** le téléphone (écran noir), puis essayer les combinaisons dans l'ordre : **Vol+ + Vol−**, **Vol+ + Vol− + Power**, **Vol+ seul**, **aucune touche**. Relancer avec `--verbose` pour voir l'identifiant du périphérique |
 | Après la commande, le téléphone démarre en **Android recovery** | Volume bas maintenu = déclencheur du recovery sur ce modèle (constaté le 29/10) | « Reboot system now » → éteindre complètement → refaire la séquence en relâchant la touche |
 | Le téléphone démarre en Android normal | La touche n'a pas été lue comme « download mode » | Éteindre, refaire avec **Vol+ et Vol− ensemble** ; en dernier recours **sans aucune touche** |
 | `usb_send failed` alors qu'aucune touche n'était enfoncée | Le port COM ouvert était celui du diag Android (`PID_4D01`), pas le BROM (`PID_4D00`) | `pnputil /enum-devices /connected /class Ports` doit montrer `VID_1782&PID_4D00` ; sinon le téléphone n'était pas en BROM |
