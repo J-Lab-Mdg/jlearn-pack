@@ -459,20 +459,60 @@ spd_dump.exe --help
   Microsoft, puis réessayer.
 - « Ce programme ne peut pas s'exécuter » / code `0xC0000135` → même cause : la bibliothèque VC++ manque.
 
+**Résultat réellement obtenu le 29/10** (`spd_dump.exe --help` depuis `C:\zte-unlock`) — ✅ l'outil démarre :
+
+```
+branch:main, sha1:fa0becf5e3f026b3b99103c65de6eb9a8348b27c
+```
+
+Toutes les commandes utiles sont annoncées : `--wait`, `exec_addr`, `fdl FILE addr`, `exec`, `read_part`, `r`,
+`e|erase_part`, `w|write_part`, `p|print`, `size_part`, `check_part`, `reset`, `poweroff`.
+
+> Cette version **liste `baudrate`** alors que le guide de référence indique qu'une version Windows compatible ne
+> devrait pas l'annoncer. Non bloquant : nous n'utiliserons **jamais** `baudrate`. Le test à blanc (§13.7) sert
+> précisément à valider la chaîne réelle sur l'appareil avant tout effacement.
+
 ### 13.6 Étape D — Installer le pilote SPD
 
-1. Télécharger les **SPD USB Drivers** (Spreadtrum / Unisoc, version 4.2x, paquet `SPRD_Unisoc`).
-2. **Téléphone éteint**, maintenir **Volume bas**, brancher le câble USB-C au PC.
-3. Gestionnaire de périphériques (clic droit sur Démarrer) : chercher un périphérique inconnu, souvent nommé
+> **Le zip de l'outil ne contient aucun pilote** : vérifié le 29/10, `C:\zte-unlock` n'a que des `.exe`, `.dll`,
+> `.bin`, un sous-dossier et un `.bat`. Le pilote se télécharge séparément.
+
+**Préparation (sans le téléphone, sans risque)**
+
+1. Télécharger le paquet de pilotes SPD/Unisoc **v4.21.39.134** (8,24 Mo) :
+   <https://assets.gsm6.com/Drivers/SPRD_Unisoc_v4.21.39.134_GSM6.com.zip>
+   Miroir si le lien direct tombe :
+   <https://drive.google.com/drive/folders/15dJKHIHDdpJuzG5g_FKraFRJQULqw3lc>
+2. Clic droit sur le zip → **Extraire tout** → destination **`C:\zte-unlock\drivers`** : à l'intérieur du dossier
+   déjà exclu de Defender (§13.4), sinon l'antivirus peut supprimer les `.inf` / `.sys`.
+3. Repérer les `.inf` et noter le chemin exact :
+
+```bat
+dir /s /b C:\zte-unlock\drivers\*.inf
+```
+
+   Noms attendus selon le paquet : `sprdvcom.inf` / `SciU2S.inf` (SCI USB2Serial) ou `Spreadtrum_Jungo.inf`.
+   S'il existe un sous-dossier `x64`, prendre celui-là.
+
+**Installation (le téléphone doit être branché — refaire §13.3 juste avant)**
+
+4. **Téléphone éteint**, maintenir **Volume bas**, brancher le câble USB-C au PC.
+5. Gestionnaire de périphériques (clic droit sur Démarrer) : chercher un périphérique inconnu, souvent nommé
    `SPRD U2S Diag`, `SCI USB2Serial` ou `Unknown Device`.
-4. Clic droit → **Mettre à jour le pilote** → **Rechercher un pilote sur mon ordinateur** →
+6. Clic droit → **Mettre à jour le pilote** → **Rechercher un pilote sur mon ordinateur** →
    **Choisir dans une liste de pilotes disponibles** → **Disquette fournie…** → pointer sur le fichier `.inf`
-   du paquet (`sprdvcom.inf`).
-5. Ignorer l'avertissement de signature, puis vérifier : le périphérique doit apparaître sous
+   repéré à l'étape 3.
+7. Ignorer l'avertissement de signature, puis vérifier : le périphérique doit apparaître sous
    **Ports (COM et LPT)** en `SPRD U2S Diag (COMx)`.
 
 > Le périphérique peut n'apparaître que **quelques secondes**. Faire la manipulation sans traîner, ou laisser le
 > gestionnaire ouvert avant de brancher.
+
+**Variante sans le téléphone** (pré-installation du pilote dans le magasin Windows) : Gestionnaire de
+périphériques → clic sur le nom de l'ordinateur en haut de la liste → menu **Action** → **Ajouter un matériel
+hérité** → **Installer le matériel que je sélectionne manuellement dans une liste** → **Afficher tous les
+périphériques** → **Disquette fournie…** → le même `.inf`. Le pilote est alors enregistré avant même le premier
+branchement, et §13.6 s'exécute ensuite sans course contre la montre.
 
 ### 13.7 Étape E — Test à blanc (lecture seule, n'écrit rien)
 
@@ -551,6 +591,9 @@ Avec ces trois éléments, la suite peut être donnée **ligne par ligne**, sans
   <https://rompalace.com/guides/install-usb-drivers/>
 - Paquets de pilotes SPD/Unisoc 4.2x (non signés, Windows 7 à 11) :
   <https://gsm6.com/spreadtrum-unisoc-spd-drivers-download-latest/>
+  — lien direct du paquet v4.21.39.134 (8,24 Mo), INF `sprdvcom.inf` / `SciU2S.inf` / `Spreadtrum_Jungo.inf`,
+  procédure « Ajouter un matériel hérité » :
+  <https://assets.gsm6.com/Drivers/SPRD_Unisoc_v4.21.39.134_GSM6.com.zip>
 - Rapport d'atelier confirmant le BROM sur ce ZTE (`P615F01`, `ums9230_6h10`, EMMC, A/B) :
   <https://www.gsmzone.com/experience-reports/frp-reset-zte-blade-a56-pro-z2474-pandora-tool>
 
@@ -569,3 +612,5 @@ Avec ces trois éléments, la suite peut être donnée **ligne par ligne**, sans
 | `spd_dump.exe` exige `MSVCP140.dll` | certain (erreur 0xC0000135 documentée) |
 | Le paquet EMMC contient des binaires Windows | **certain** : `spd_dump.exe` + `Channel9.dll` extraits le 29/10 |
 | Le dossier d'extraction échappe à `where /r %USERPROFILE%` | certain (`C:\zte-unlock` est hors profil) |
+| `spd_dump.exe --help` fonctionne sur ce PC | **certain** (29/10, `sha1:fa0becf5…`) |
+| Le zip de l'outil contient un pilote | **faux** : aucun `.inf` — pilote à télécharger séparément |
