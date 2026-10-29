@@ -601,6 +601,14 @@ l'étape du QR code. La seconde est de scanner le QR avec le téléphone connect
 demander d'**envoyer un SMS de validation**, donc une carte SIM avec du crédit. Si les deux échouent :
 attendre **24 h** (le signal de risque retombe) et refaire la création sur le téléphone.
 
+**Décision du 29/10 : compte Google reporté.** Google ne propose plus de code par SMS à cet utilisateur : il
+n'affiche qu'un **QR code** qui, une fois scanné, demande d'**envoyer un SMS à un numéro `+1`** (américain) en
+recopiant sans modification un code entre parenthèses. Sans crédit international, l'opération est impossible.
+→ On crée donc une adresse **non-Gmail** : **Proton Mail** (Suisse) ou **Tuta** (Allemagne), sans numéro de
+téléphone. Conséquence : pas de Play Store pour l'instant, mais le téléphone reste pleinement utilisable
+(navigateur, appareil photo, appels, SMS) et l'adresse servira plus tard de **courriel de secours** au compte
+Google.
+
 **SIM sans crédit : recevoir plutôt qu'envoyer.** Recevoir un SMS ou un appel est **gratuit** ; c'est
 l'**envoi** vers un numéro étranger qui est facturé. Il faut donc refuser la route « envoyer un code à Google »
 (écran QR sur ordinateur) et privilégier la création **sur le téléphone** avec l'option *recevoir* :
