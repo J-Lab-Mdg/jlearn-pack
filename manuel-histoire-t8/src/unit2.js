@@ -227,7 +227,7 @@ const S = [
         titre: 'Nouveaux axes, nouveaux empires',
         paras: [
           'Première conséquence : le déplacement des axes du commerce. Venise et la Méditerranée déclinent ; Lisbonne, Séville, puis Nantes ou Liverpool, tournés vers l’Atlantique, prospèrent.',
-          'Deuxième conséquence : les premiers empires coloniaux. L’Espagne domine l’Amérique, où les conquistadors abattent les empires aztèque (1521) et inca (1533), affaiblis aussi par les maladies venues d’Europe ; le Portugal tient le Brésil et un chapelet de comptoirs — escales commerciales fortifiées — le long de l’Afrique, en Inde et jusqu’en Chine.',
+          'Deuxième conséquence : les premiers empires coloniaux. L’Espagne domine l’Amérique, où les conquistadors abattent les empires aztèque (1521) et inca (1533), affaiblis aussi par les maladies venues d’Europe ; le Portugal tient le Brésil et un chapelet de comptoirs — escales commerciales fortifiées — le long de l’Afrique, en Inde et jusqu’en Chine. Ce partage du monde entre les deux couronnes avait même été fixé sur le papier dès 1494 par le traité de Tordesillas, qui traçait une ligne de séparation à travers l’Atlantique.',
         ],
       },
       {

@@ -146,8 +146,8 @@ const S = [
         titre: 'Trois transformations',
         paras: ['Le royaume se transforme en quinze ans :'],
         puces: [
-          'l’armée : fini les levées en masse d’autrefois ; Radama bâtit une armée permanente, le foloalindahy (« les cent mille hommes »), instruite à l’européenne par des sergents anglais, disciplinée, articulée en grades ;',
-          'l’école : les missionnaires de la London Missionary Society ouvrent dès 1820 les premières écoles — écoles du palais pour les enfants des grands, puis écoles publiques ; le malgache s’écrit désormais en caractères latins ; des milliers d’enfants apprennent à lire ; des jeunes gens partent se former en Angleterre, des artisans missionnaires enseignent la charpente, la forge, l’imprimerie — et avec les missionnaires entre le christianisme, qui gagne du terrain dans l’Imerina ;',
+          'l’armée : fini les levées en masse d’autrefois ; Radama bâtit une armée permanente, le foloalindahy (« les cent mille hommes »), instruite à l’européenne par des sergents anglais, disciplinée, articulée en grades — elle compte déjà près de 12 000 soldats de métier vers 1821 ;',
+          'l’école : les missionnaires de la London Missionary Society — les deux premiers, David Jones et Thomas Bevan, débarquent à Toamasina dès 1818 — ouvrent à partir de 1820 les premières écoles — écoles du palais pour les enfants des grands, puis écoles publiques ; le malgache s’écrit désormais en caractères latins ; des milliers d’enfants apprennent à lire ; des jeunes gens partent se former en Angleterre, des artisans missionnaires enseignent la charpente, la forge, l’imprimerie — et avec les missionnaires entre le christianisme, qui gagne du terrain dans l’Imerina ;',
           'l’espace : l’armée nouvelle mène les expéditions qui soumettent l’essentiel de l’île — des postes militaires s’installent à Mahabo (pays sakalava du Menabe), Marovoay (Boina), Fort-Dauphin (sud-est) et Tamatave (côte est), verrous du royaume sur les quatre horizons.',
         ],
       },

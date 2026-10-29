@@ -58,7 +58,7 @@ const S = [
         paras: ['Faisons le tour de la carte :'],
         puces: [
           'au nord, le royaume antakarana contrôle la pointe de l’île et ses baies ;',
-          'à l’ouest et au nord-ouest, les puissants royaumes sakalava — le Menabe au centre-ouest, le Boina au nord-ouest — fondés par des dynasties venues du sud-ouest ; leurs souverains règnent sur d’immenses pâturages à zébus et sur les ports qui commercent avec les boutres arabes et les navires européens ;',
+          'à l’ouest et au nord-ouest, les puissants royaumes sakalava — le Menabe au centre-ouest, le Boina au nord-ouest — fondés par la dynastie maroserana venue du sud-ouest : après l’ancêtre vénéré Andriamisara, le roi Andriandahifotsy étend le Menabe au-delà du fleuve Mangoky au XVIIᵉ siècle, puis ses fils poussent la conquête vers le nord, où naît le Boina ; leurs souverains règnent sur d’immenses pâturages à zébus et sur les ports qui commercent avec les boutres arabes et les navires européens ;',
           'au sud, l’Androy et le pays mahafaly vivent de l’élevage dans un milieu sec ;',
           'au sud-est, les Antemoro — héritiers d’ancêtres venus par l’océan Indien et détenteurs des sorabe, manuscrits en caractères arabes — et les Antanosy ;',
           'sur la côte est, les Betsimisaraka forment au XVIIIᵉ siècle une confédération qui unifie les peuples du littoral ;',
@@ -113,7 +113,7 @@ const S = [
       {
         titre: 'Une société de castes',
         paras: [
-          'La caste est un groupe héréditaire : on y naît, on s’y marie, on ne la quitte pas. Chez les Merina : les Andriana, nobles apparentés au souverain, répartis en sous-groupes avec leurs privilèges ; les Hova, hommes libres, cultivateurs, artisans, commerçants — la masse de la population ; et les andevo, non-libres, attachés au service des deux premiers groupes. Les autres royaumes ont la même architecture sous d’autres noms : chez les Sakalava, les nobles sont les ampanjaka, et les hommes libres ont leurs propres appellations régionales.',
+          'La caste est un groupe héréditaire : on y naît, on s’y marie, on ne la quitte pas. Chez les Merina : les Andriana, nobles apparentés au souverain, répartis en sous-groupes avec leurs privilèges ; les Hova, hommes libres — on dit aussi olontsotra, les « gens du commun » —, cultivateurs, artisans, commerçants : la masse de la population ; et les andevo, non-libres, attachés au service des deux premiers groupes. Les autres royaumes ont la même architecture sous d’autres noms : chez les Sakalava, les nobles sont les ampanjaka, et les hommes libres ont leurs propres appellations régionales.',
         ],
       },
       {

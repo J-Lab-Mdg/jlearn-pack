@@ -101,7 +101,7 @@ const S = [
         puces: [
           'en 1855, le prince héritier Rakoto — futur Radama II — signe la charte Lambert : ce document promet au Français Joseph Lambert d’immenses privilèges économiques (terres, mines, travaux) ; annulée ensuite par le gouvernement malgache, la charte nourrit une querelle d’indemnités que Paris ressort à chaque crise ;',
           's’y ajoute l’héritage de Jean Laborde : cet industriel français, bâtisseur des ateliers de Mantasoa, meurt en 1878 ; le royaume refuse de reconnaître la transmission de ses terres à ses héritiers — car la terre malgache ne se vend pas aux étrangers ; la France en fait un casus belli ;',
-          'deux guerres franco-hova s’ensuivent : celle de 1883-1885, qui impose un premier traité ambigu, puis celle de 1895 — une colonne française débarque à Majunga, remonte vers les Hautes Terres et prend Antananarivo le 30 septembre.',
+          'deux guerres franco-hova s’ensuivent : celle de 1883-1885, qui impose un premier traité ambigu instaurant une sorte de protectorat — que le Premier ministre Rainilaiarivony refuse d’appliquer et surnomme le « protectorat fantôme » —, puis celle de 1894-1895 : le corps expéditionnaire du général Duchesne débarque à Majunga, remonte vers les Hautes Terres au prix de terribles pertes (les fièvres tuent bien plus que les combats) et prend Antananarivo le 30 septembre.',
         ],
       },
       {
@@ -152,12 +152,12 @@ const S = [
     revRA: 'Internes : charte Lambert, héritage Laborde, guerre de 1895 ; externes : Berlin 1885, convention de Zanzibar, révolution industrielle, mission civilisatrice (deux de chaque).',
     situation: 'Du jour au lendemain, les Malgaches changent de maîtres : plus de reine, plus de Premier ministre — un gouverneur général français règne depuis Antananarivo, et ses ordres descendent jusqu’au moindre village par une chaîne de fonctionnaires. Pour le paysan, la colonisation a trois visages très concrets : le chef de canton, l’impôt et la corvée. Comment la colonie était-elle administrée ?',
     legende: 'Du gouverneur général au chef de canton : une pyramide qui descend jusqu’au moindre village.',
-    motsCles: ['gouverneur général', 'Gallieni', 'chef de province', 'chef de district', 'chef de canton', 'auxiliaires', 'code de l’indigénat', 'pacte colonial', 'capitation', 'prestations'],
+    motsCles: ['gouverneur général', 'Gallieni', 'pacification', 'chef de province', 'chef de district', 'chef de canton', 'auxiliaires', 'code de l’indigénat', 'pacte colonial', 'capitation', 'prestations'],
     sections: [
       {
         titre: 'La pyramide administrative',
         paras: [
-          'Le gouverneur général — le premier fut Gallieni (1896-1905) — concentre tous les pouvoirs civils et militaires ; il découpe l’île en provinces, confiées à des chefs de province ; chaque province se divise en districts, chaque district en cantons. Les fonctionnaires français étant peu nombreux, l’administration recrute des auxiliaires malgaches — interprètes, commis, gardes, instituteurs — qui font tourner la machine au quotidien : la colonisation gouverne aussi par des mains malgaches.',
+          'Le gouverneur général — le premier fut Gallieni (1896-1905) — concentre tous les pouvoirs civils et militaires. Ses premières années sont celles de la « pacification » : pour briser les révoltes, il combine des méthodes brutales — la politique de la terre brûlée (villages et récoltes détruits), le « diviser pour régner » qui dresse les régions les unes contre les autres, la « politique des races » qui s’appuie sur les rivalités entre communautés — et la méthode de la « tache d’huile » : contrôler d’abord le centre, puis étendre l’occupation de proche en proche, poste militaire après poste militaire ; il découpe l’île en provinces, confiées à des chefs de province ; chaque province se divise en districts, chaque district en cantons. Les fonctionnaires français étant peu nombreux, l’administration recrute des auxiliaires malgaches — interprètes, commis, gardes, instituteurs — qui font tourner la machine au quotidien : la colonisation gouverne aussi par des mains malgaches.',
         ],
       },
       {
@@ -222,7 +222,7 @@ const S = [
       {
         titre: 'Le travail contraint : des corvées au SMOTIG',
         paras: [
-          'Pour équiper le pays au moindre coût, l’administration recourt au travail contraint : d’abord les corvées et prestations — journées dues par chaque homme pour les routes, le portage, le chemin de fer Tananarive-Côte Est ; puis, en 1926, le SMOTIG (Service de la Main-d’Œuvre pour les Travaux d’Intérêt Général) institutionnalise le système : les jeunes hommes non appelés au service militaire doivent des années de travail sur les grands chantiers, loin de chez eux, pour un salaire dérisoire — les contemporains y ont vu un travail forcé déguisé, et il fut dénoncé jusqu’à la Société des Nations.',
+          'Pour équiper le pays au moindre coût, l’administration recourt au travail contraint : d’abord les corvées et prestations — journées dues par chaque homme pour les routes, le portage, le chemin de fer Tananarive-Côte Est ; puis, en 1926, le gouverneur général Marcel Olivier crée le SMOTIG (Service de la Main-d’Œuvre pour les Travaux d’Intérêt Général), qui institutionnalise le système : les jeunes hommes non appelés au service militaire doivent des années de travail sur les grands chantiers, loin de chez eux, pour un salaire dérisoire — les contemporains y ont vu un travail forcé déguisé, et il fut dénoncé jusqu’à la Société des Nations.',
         ],
       },
       {
@@ -287,7 +287,7 @@ const S = [
         titre: 'Troisième vague : l’émancipation — et 1947',
         paras: [
           'Après la Seconde Guerre mondiale, l’espoir change d’échelle : le MDRM (Mouvement Démocratique de la Rénovation Malgache) réclame l’émancipation dans la légalité, tandis que le PADESM défend les « déshérités » ; des sociétés secrètes — JINA, PANAMA — préparent l’action directe.',
-          'Le 29 mars 1947, l’insurrection éclate dans l’est et le sud-est : la répression est terrible — des dizaines de milliers de morts, le MDRM dissous, ses députés condamnés. Mais 1947 devient la grande date-mémoire du nationalisme : l’indépendance n’est plus qu’une question de temps.',
+          'Dans la nuit du 29 mars 1947, l’insurrection éclate dans les districts de Moramanga et de Manakara, puis s’étend à toute la côte est : la répression est terrible — des dizaines de milliers de morts, le MDRM dissous, ses députés condamnés. Mais 1947 devient la grande date-mémoire du nationalisme : l’indépendance n’est plus qu’une question de temps.',
         ],
       },
     ],
@@ -339,7 +339,7 @@ const S = [
         paras: ['La marche se fait en trois étapes :'],
         puces: [
           'la Loi-cadre de 1956 (dite loi Defferre) : elle institue le suffrage universel — tous les adultes votent, et non plus une minorité — et crée un conseil de gouvernement malgache ; pour la première fois depuis 1896, des ministres malgaches administrent leur pays : l’autonomie interne est en marche, et les partis renaissent ;',
-          'le référendum du 28 septembre 1958 : le général de Gaulle propose aux colonies une Communauté française rénovée ; voter « oui », c’est devenir République autonome dans la Communauté ; voter « non », c’est l’indépendance immédiate et la rupture ; Madagascar vote majoritairement oui, et le 14 octobre 1958, la République malgache est proclamée — un État, un gouvernement, une assemblée, sous réserve des domaines gardés par Paris (défense, monnaie, diplomatie) ;',
+          'le référendum du 28 septembre 1958 : le général de Gaulle propose aux colonies une Communauté française rénovée ; voter « oui », c’est devenir République autonome dans la Communauté ; voter « non », c’est l’indépendance immédiate et la rupture ; Madagascar vote « oui » à près de 77 %, et le 14 octobre 1958, la République malgache est proclamée — un État, un gouvernement, une assemblée, sous réserve des domaines gardés par Paris (défense, monnaie, diplomatie) ;',
           'l’indépendance : dès 1959, la nouvelle république négocie le transfert des dernières compétences ; les accords sont signés en avril 1960, et le 26 juin 1960, l’indépendance est proclamée — Philibert Tsiranana devient le premier président de la République malgache.',
         ],
       },

@@ -40,7 +40,7 @@ figs.u3f3 = (() => { const { s, y } = head('1789 : la Révolution française', [
   const top = y + 12;
   const ev = [['14 juillet 1789', 'prise de la Bastille', '#FDE7EF', PINK2],
     ['1789', 'Assemblée constituante', BLUEL, BLUE],
-    ['août 1789', 'abolition des privilèges : fin de l’Ancien Régime', GREENL, GREEN],
+    ['4 août 1789', 'abolition des privilèges : fin de l’Ancien Régime', GREENL, GREEN],
     ['1789', 'Déclaration des droits de l’Homme et du citoyen', BLUEL, BLUE],
     ['1792', 'proclamation de la République', '#FDE7EF', PINK2],
     ['1792-1796', 'premières années de la République', GREENL, GREEN]];
@@ -118,7 +118,7 @@ const S = [
       {
         titre: 'L’exception anglaise',
         paras: [
-          'Une exception intrigue les penseurs : l’Angleterre, où depuis la fin du XVIIᵉ siècle le roi partage le pouvoir avec un Parlement qui vote les lois et l’impôt — c’est le parlementarisme, que les philosophes français citeront en modèle.',
+          'Une exception intrigue les penseurs : l’Angleterre, où depuis la fin du XVIIᵉ siècle le roi partage le pouvoir avec un Parlement qui vote les lois et l’impôt ; ce Parlement compte deux chambres — la Chambre des lords, héréditaire, et la Chambre des communes, élue — : c’est le parlementarisme, que les philosophes français citeront en modèle.',
         ],
       },
     ],
@@ -218,16 +218,16 @@ const S = [
     revRA: 'Montesquieu : séparation des pouvoirs ; Voltaire : tolérance ; Rousseau : volonté du peuple.',
     situation: 'Été 1789. Le royaume de France est en faillite, le pain manque, et le roi masse des troupes autour de Paris. Le 14 juillet, la foule marche sur une vieille forteresse-prison, symbole de l’arbitraire royal : la Bastille tombe en quelques heures. En un été, mille ans de monarchie vacillent. Et de l’autre côté de l’Atlantique, treize colonies viennent déjà de montrer l’exemple en devenant les États-Unis. Comment ces deux révolutions ont-elles changé le monde ?',
     legende: 'Le 14 juillet 1789, la Bastille tombe en quelques heures : en un été, mille ans de monarchie vacillent.',
-    motsCles: ['états généraux', 'Assemblée constituante', '14 juillet 1789', 'Bastille', 'abolition des privilèges', 'Déclaration des droits de l’Homme', 'République 1792', 'treize colonies', 'guerre d’indépendance', 'États-Unis'],
+    motsCles: ['états généraux', 'Assemblée constituante', '14 juillet 1789', 'Bastille', 'abolition des privilèges', 'Déclaration des droits de l’Homme', 'République 1792', 'Napoléon Bonaparte', 'treize colonies', 'guerre d’indépendance', 'États-Unis'],
     sections: [
       {
         titre: 'L’été 1789 : la chaîne des événements',
-        paras: ['Tout s’enchaîne vite en France :'],
+        paras: ['Trois crises se conjuguent alors en France : une crise économique (les mauvaises récoltes), une crise sociale (le pain cher, le chômage) et une crise politique (une monarchie à bout de souffle et ruinée). Tout s’enchaîne vite :'],
         puces: [
           'le roi, ruiné, convoque les états généraux — l’assemblée des trois ordres, qui n’avait plus siégé depuis 175 ans ;',
           'le tiers état, méprisé, se proclame Assemblée nationale constituante : la nation, et non le roi, écrira désormais les règles ;',
           'le 14 juillet 1789, Paris prend la Bastille : le peuple entre dans l’Histoire ;',
-          'en août, l’Assemblée abolit les privilèges et les droits seigneuriaux : en une nuit, l’Ancien Régime s’effondre.',
+          'dans la nuit du 4 août 1789, l’Assemblée abolit les privilèges et les droits seigneuriaux : en une nuit, l’Ancien Régime s’effondre.',
         ],
       },
       {
@@ -235,6 +235,7 @@ const S = [
         paras: [
           'Puis vient le texte fondateur : la Déclaration des droits de l’Homme et du citoyen — « Les hommes naissent et demeurent libres et égaux en droits » ; liberté, propriété, sûreté, souveraineté de la nation, séparation des pouvoirs : les idées des Lumières deviennent loi.',
           'La monarchie survit trois ans, affaiblie ; en 1792, la République est proclamée — ses premières années (1792-1796) seront orageuses, entre guerres et luttes intérieures, mais l’essentiel est acquis : le pouvoir vient du peuple.',
+          'La Révolution s’achève en 1799, quand un jeune général, Napoléon Bonaparte, prend le pouvoir par un coup d’État ; sacré empereur en 1804, il domine l’Europe jusqu’à sa chute en 1815. Mais ni lui ni les rois revenus après lui n’effaceront les acquis de 1789 : l’égalité devant la loi et la souveraineté de la nation sont là pour rester.',
         ],
       },
       {
@@ -261,7 +262,7 @@ const S = [
       ['DDHC', 'Déclaration des droits de l’Homme et du citoyen (1789)'],
       ['République', 'régime sans roi, où le pouvoir vient du peuple'],
     ],
-    synthese: '14 juillet 1789 : prise de la Bastille ; Assemblée constituante ; abolition des privilèges = fin de l’Ancien Régime ; Déclaration des droits de l’Homme et du citoyen ; République en 1792 (débuts 1792-1796). États-Unis : 13 colonies → guerre d’indépendance → première nation née des Lumières.',
+    synthese: '14 juillet 1789 : prise de la Bastille ; Assemblée constituante ; abolition des privilèges = fin de l’Ancien Régime ; Déclaration des droits de l’Homme et du citoyen ; République en 1792 (débuts 1792-1796) ; coup d’État de Bonaparte en 1799, Empire de 1804 à 1815 — mais les acquis de 1789 demeurent. États-Unis : 13 colonies → guerre d’indépendance → première nation née des Lumières.',
     saistu: 'La Révolution française a parlé au monde entier — jusqu’à Madagascar : au XIXᵉ siècle, les mots « liberté » et « égalité » voyagent avec les livres et les missionnaires. Et quand Madagascar devient indépendant en 1960, sa première constitution proclame, elle aussi, les droits fondamentaux hérités de 1789. Les idées n’ont pas de frontières.',
     exos: ['Dates et faits. a) Que se passe-t-il le 14 juillet 1789 ? b) Que fait l’Assemblée en août 1789 ? d) Quel grand texte est adopté en 1789 ? e) Quand la République est-elle proclamée ?',
       'Les États-Unis. a) Combien de colonies se soulèvent ? b) Contre quel pays ? d) Pourquoi refusent-elles l’impôt ? e) Quelle idée de Montesquieu appliquent-elles ?',
