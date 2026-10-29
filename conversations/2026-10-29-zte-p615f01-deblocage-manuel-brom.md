@@ -625,7 +625,11 @@ Puis **maintenir la touche**, brancher le câble USB-C, et **relâcher la touche
 >
 > **Aucune écriture n'a eu lieu** : `misc_test.bin` n'a pas été créé, rien n'a été modifié dans le téléphone.
 >
-> **Correction :** relâcher la touche **dès que le port apparaît** (≈ 2 s après le branchement). Si l'échec se répète : **Volume haut**, puis les **deux touches**, puis **sans aucune touche** (voir §13.10).
+> **Correction :** sur ZTE, la combinaison documentée du *Download Mode* est **Volume haut + Volume bas enfoncés ensemble**, puis brancher le câble (Volume bas seul = recovery, c'est ce qu'on a obtenu). Ordre des essais :
+>
+> 1. **Vol+ et Vol− ensemble**, câble branché, maintenir 3–5 s puis relâcher — écran **noir**, c'est normal ;
+> 2. **Vol+ seul** ;
+> 3. **aucune touche** (beaucoup d'appareils Unisoc entrent en download mode tout seuls câble branché, téléphone éteint).
 
 > En `cmd`, tout tient sur **une seule ligne** (pas de `\` de continuation comme sous Linux).
 
@@ -656,6 +660,7 @@ encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `m
 | `find port failed` répété | USB 3, hub, câble long | Port USB 2.0 direct sur la carte mère, câble court |
 | `Successfully connected to port: N` puis `usb_send failed (0 / 1)` | L'appareil a quitté le mode BROM avant le premier échange — le plus souvent parce que la touche était **encore maintenue** | Relâcher la touche dès l'apparition du port ; essayer **Volume haut** ; vérifier que le téléphone était bien **éteint** et non en veille |
 | Après la commande, le téléphone démarre en **Android recovery** | Volume bas maintenu = déclencheur du recovery sur ce modèle (constaté le 29/10) | « Reboot system now » → éteindre complètement → refaire la séquence en relâchant la touche |
+| Le téléphone démarre en Android normal | La touche n'a pas été lue comme « download mode » | Éteindre, refaire avec **Vol+ et Vol− ensemble** ; en dernier recours **sans aucune touche** |
 | `usb_send failed` alors qu'aucune touche n'était enfoncée | Le port COM ouvert était celui du diag Android (`PID_4D01`), pas le BROM (`PID_4D00`) | `pnputil /enum-devices /connected /class Ports` doit montrer `VID_1782&PID_4D00` ; sinon le téléphone n'était pas en BROM |
 | Le prompt affiche `C:\Windows\system32` | `cmd` a été ouvert depuis le menu Démarrer, pas depuis le dossier du paquet | `cd /d C:\zte-unlock`, ou rouvrir `cmd` depuis la barre d'adresse du dossier |
 | On ne sait plus où le zip a été extrait | — | `dir /b C:\zte-unlock` **d'abord** : la recherche `where /r %USERPROFILE%` ne voit **que** le profil (Bureau, Téléchargements, Documents, OneDrive) et renvoie donc « impossible de trouver » même quand tout est en place dans `C:\zte-unlock` |
