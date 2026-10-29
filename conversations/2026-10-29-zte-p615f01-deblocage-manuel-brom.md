@@ -501,7 +501,8 @@ encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `m
 | Le téléphone apparaît puis disparaît | Fenêtre courte, batterie faible, câble instable | Charger à 50 %+, relancer la commande **avant** de brancher |
 | `find port failed` répété | USB 3, hub, câble long | Port USB 2.0 direct sur la carte mère, câble court |
 | Le prompt affiche `C:\Windows\system32` | `cmd` a été ouvert depuis le menu Démarrer, pas depuis le dossier du paquet | `cd /d C:\zte-unlock`, ou rouvrir `cmd` depuis la barre d'adresse du dossier |
-| On ne sait plus où le zip a été extrait | — | `where /r %USERPROFILE% spd_dump.exe` donne le chemin complet |
+| On ne sait plus où le zip a été extrait | — | `dir /b C:\zte-unlock` **d'abord** : la recherche `where /r %USERPROFILE%` ne voit **que** le profil (Bureau, Téléchargements, Documents, OneDrive) et renvoie donc « impossible de trouver » même quand tout est en place dans `C:\zte-unlock` |
+| `where /r %USERPROFILE% spd_dump.exe` renvoie « impossible de trouver » | Normal si l'extraction est dans `C:\zte-unlock` (hors profil), ou si le zip est encore **dans** son `.zip` | Ne pas conclure à un fichier manquant : `dir /b C:\zte-unlock`, puis `dir /s /b "%USERPROFILE%\Downloads\*.zip"` |
 
 ### 13.11 Ce qu'il faut m'envoyer pour continuer
 
