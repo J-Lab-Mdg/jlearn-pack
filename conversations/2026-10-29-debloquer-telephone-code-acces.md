@@ -6,7 +6,9 @@
 > **Question posée** : comment résoudre ça ?
 > **Statut** : **téléphone identifié** (ZTE P615F01, Android 15) et **sans compte Google**. Le menu de
 > récupération ne propose pas d'effacement — c'est voulu par le constructeur. Sans compte Google, aucune
-> protection FRP : l'effacement en atelier est sûr. **Voie retenue : formatage par un atelier (§8.4 et §8.5).**
+> protection FRP : un effacement est sûr.
+> **Déblocage manuel (BROM/Unisoc) : voir le protocole dédié**
+> → [`2026-10-29-zte-p615f01-deblocage-manuel-brom.md`](./2026-10-29-zte-p615f01-deblocage-manuel-brom.md)
 
 ---
 

@@ -19,6 +19,7 @@ L'objectif : ne rien perdre, pouvoir relire plus tard, et partager facilement un
 | Date | Sujet | Fichier | Statut |
 |------|-------|---------|--------|
 | 2026-10-29 | Téléphone Android bloqué par un code créé pendant une « clé d'accès » (passkey) — **ZTE P615F01, Android 15, sans compte Google** : diagnostic, menu sans effacement, solution par atelier | [`2026-10-29-debloquer-telephone-code-acces.md`](./2026-10-29-debloquer-telephone-code-acces.md) | Effacement en atelier = voie retenue |
+| 2026-10-29 | **ZTE P615F01 : déblocage manuel par BROM/Unisoc** (sans passer par le fabricant) — protocole complet, commandes, risques | [`2026-10-29-zte-p615f01-deblocage-manuel-brom.md`](./2026-10-29-zte-p615f01-deblocage-manuel-brom.md) | À exécuter |
 | 2026-10-29 | Vérification de deux budgets de fournitures manuscrits : `FCE = 393 000 Ar` et `RPI ÉTAT = 1 098 000 Ar` | [`2026-10-29-analyse-budget-fournitures-fce-rpi.md`](./2026-10-29-analyse-budget-fournitures-fce-rpi.md) | FCE exacte ; RPI : écart de 11 400 Ar à arbitrer |
 
 ## Gabarit d'une nouvelle conversation
