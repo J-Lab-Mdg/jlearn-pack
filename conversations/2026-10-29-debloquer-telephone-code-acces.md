@@ -4,7 +4,8 @@
 > **Sujet** : un téléphone demande un code au démarrage ; ce code a été « inventé » la veille lors de la création
 > d'un compte en ligne, à cause d'une demande de **clé d'accès** (*passkey*).
 > **Question posée** : comment résoudre ça ?
-> **Statut** : plan d'action ouvert — il manque le modèle du téléphone et le texte exact affiché à l'écran.
+> **Statut** : plan d'action ouvert — blocage signalé le 29/10 : *le menu ne propose pas d'option « Wipe data »* ;
+> marque du téléphone non identifiée ; photos de l'écran à fournir.
 
 ---
 
@@ -243,7 +244,56 @@ Au redémarrage : configuration comme un téléphone neuf, puis **connexion avec
 
 ---
 
-## 6. Informations à demander pour aller plus loin
+## 6. Mise à jour du 29/10 — « le menu ne propose pas de Wipe data »
+
+Réponse recueillie : le menu s'ouvre bien, **mais aucune option d'effacement n'apparaît**. Marque du téléphone
+non identifiée. Photos de l'écran proposées par l'utilisateur.
+
+### 6.1 Neuf fois sur dix, ce n'est pas le bon menu
+
+| Ce qui est affiché | Ce que c'est réellement | Que faire |
+|---|---|---|
+| Logo + « Fastboot mode » + Start / Restart Bootloader / Recovery Mode / Power Off | **Fastboot**, pas le Recovery | Descendre sur **Recovery Mode** (Volume bas), valider avec **Power** |
+| Triangle + « Downloading… Do not turn off target » | **Download / Odin** (Samsung) | Maintenir **Power + Volume bas** ~10 s pour redémarrer, puis refaire la combinaison du Recovery |
+| Robot vert avec « No command » | **Recovery en attente** : le menu existe mais reste caché | Maintenir **Power**, appuyer une fois sur **Volume +**, relâcher |
+| Écran texte « Android Recovery » + liste d'options | **Recovery** standard | Faire défiler : l'option est souvent sous la ligne de flottaison |
+| Menu avec seulement « Reboot / Shutdown / Download » | **eRecovery** constructeur (Huawei, Honor…) | Chercher dans *More / Autres*, sinon passer par l'effacement à distance |
+
+### 6.2 Le nom de l'option change selon les marques
+
+Faire défiler **tout** le menu avec Volume bas avant de conclure :
+
+- `Wipe data/factory reset`
+- `Wipe all data` / `Wipe Data`
+- `Factory data reset` / `Reset to factory settings`
+- `Format data` / `Format /data`
+- `Clear eMMC` / `Erase all data`
+
+### 6.3 Si l'option n'existe vraiment pas
+
+1. **Effacement à distance** — conditions : téléphone allumé, connecté à Internet, et connecté au compte.
+   - Google : `google.com/android/find` → *Rétablir la configuration d'usine*
+   - Samsung : `smartthingsfind.samsung.com` → *Effacer les données*
+   - Xiaomi / Redmi / Poco : `i.mi.com` → *Effacer l'appareil*
+   - Huawei / Honor : `cloud.huawei.com` → *Effacer les données*
+   - Oppo / Realme / OnePlus / Vivo : portail cloud du constructeur
+2. **Centre de service agréé**, avec preuve d'achat : reflashage du firmware (Odin, box MTK). L'effacement devient
+   certain, mais les données sont perdues.
+3. **Tecno / Infinix / itel** : réseau **Carlcare** (service officiel Transsion).
+
+### 6.4 Photos à demander pour diagnostiquer
+
+1. L'**écran de verrouillage** complet — c'est le plus important : il donne le texte exact de la demande de code.
+2. Le **menu actuel**, plein écran, **avec le titre en haut** (il indique « Android Recovery », la version, le modèle).
+3. Le même menu **après avoir défilé jusqu'en bas**.
+4. Si possible, l'**étiquette** du téléphone (sous la batterie) ou la boîte : pour obtenir le modèle exact.
+
+> Consigne de prudence : **masquer l'adresse e-mail** du compte Google si elle apparaît. Jamais de mot de passe ni de
+> code en clair sur une photo publiée.
+
+---
+
+## 7. Informations à demander pour aller plus loin
 
 Pour donner une procédure exacte (au lieu d'un plan général), il faut :
 
@@ -258,7 +308,7 @@ Avec ça, la réponse devient : « sur ce modèle, il y a / il n'y a pas de solu
 
 ---
 
-## 7. Sources
+## 8. Sources
 
 - Google Chrome Help — *Gérer les clés d'accès dans Chrome* (Android 9+, verrouillage d'écran obligatoire) :
   <https://support.google.com/chrome/answer/13168025>
