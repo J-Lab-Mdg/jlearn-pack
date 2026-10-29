@@ -74,6 +74,16 @@ function firstSentences(text, maxLen) {
   if (!/[.!?]$/.test(out)) out += '.';
   return out;
 }
+// date scolaire réaliste pour chaque séance (année 2026-2027, jours ouvrables)
+const U_OFFSET = { 1: 0, 2: 12, 3: 25, 4: 32, 5: 41, 6: 50 };
+function dateSeance(k) {
+  const d = new Date(2026, 9, 5); // lundi 5 octobre 2026, rentrée
+  d.setDate(d.getDate() + Math.round(k * 3.5));
+  while (d.getDay() === 0 || d.getDay() === 6) d.setDate(d.getDate() + 1);
+  const jours = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+  const mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+  return `${jours[d.getDay()]} ${d.getDate()} ${mois[d.getMonth()]} ${d.getFullYear()}`;
+}
 function cahierSvg(s) {
   const W = 1240, H = 1660, MARG = 150, STEP = 62, INK = '#1A3FA8', F = 'Caveat, DejaVu Serif';
   let b = `<rect width="100%" height="100%" fill="#FDFDF8"/>`;
@@ -86,13 +96,14 @@ function cahierSvg(s) {
   b += `<line x1="${MARG}" y1="30" x2="${MARG}" y2="${H - 30}" stroke="#E08080" stroke-width="3"/>`;
   b += `<rect x="20" y="20" width="${W - 40}" height="${H - 40}" fill="none" stroke="#C8C8C8" stroke-width="2"/>`;
   let y = 100;
-  // date
-  b += `<text x="${W - 60}" y="${y - 14}" font-family="${F}" font-size="34" fill="${INK}" text-anchor="end">Date : ……………………</text>`;
+  // date réaliste
+  b += `<text x="${W - 60}" y="${y - 14}" font-family="${F}" font-size="34" fill="${INK}" text-anchor="end">${s._date || 'Date : ……………………'}</text>`;
   y += STEP;
-  // titre souligné en rouge
-  const tSize = s.t.length > 42 ? 38 : 46;
-  b += `<text x="${(MARG + W) / 2}" y="${y - 14}" font-family="${F}" font-size="${tSize}" font-weight="bold" fill="${INK}" text-anchor="middle">${escXml(s.t)}</text>`;
-  const tw = s.t.length * tSize * 0.40;
+  // titre en MAJUSCULES souligné en rouge
+  const T = s.t.toUpperCase();
+  const tSize = T.length > 42 ? 34 : 44;
+  b += `<text x="${(MARG + W) / 2}" y="${y - 14}" font-family="${F}" font-size="${tSize}" font-weight="bold" fill="${INK}" text-anchor="middle">${escXml(T)}</text>`;
+  const tw = T.length * tSize * 0.42;
   b += `<line x1="${(MARG + W) / 2 - tw / 2}" y1="${y - 2}" x2="${(MARG + W) / 2 + tw / 2}" y2="${y - 2}" stroke="#D23B3B" stroke-width="3"/>`;
   y += STEP * 2;
   // encadré Règle (stylo rouge)
@@ -216,9 +227,8 @@ function seance(s, i, total, uNo, figBufs, cahierBuf) {
   s.corr.forEach((c, k) => a.push(correction(`${k + 1}. `, c)));
   if (cahierBuf) {
     a.push(page());
-    a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 120, after: 60 }, children: [tr('MON CAHIER', { bold: true, color: C.wine, size: 32 })] }));
-    a.push(p('Voici la trace écrite attendue dans le cahier de l’élève à la fin de cette leçon.', { align: AlignmentType.CENTER, after: 60 }));
-    a.push(img(cahierBuf, 470));
+    a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 0, after: 40 }, children: [tr('MON CAHIER', { bold: true, color: C.wine, size: 30 })] }));
+    a.push(img(cahierBuf, 640));
   }
   return a;
 }
@@ -298,6 +308,7 @@ async function buildUnit(u, figBufs) {
   const sharp = require('sharp');
   const cahierBufs = [];
   for (let i = 0; i < u.sessions.length; i++) {
+    u.sessions[i]._date = dateSeance((U_OFFSET[u.no] || 0) + i);
     cahierBufs[i] = await sharp(Buffer.from(cahierSvg(u.sessions[i])), { density: 110 }).png().toBuffer();
   }
   u.sessions.forEach((s, i) => children.push(...seance(s, i + 1, total, u.no, figBufs, cahierBufs[i])));
