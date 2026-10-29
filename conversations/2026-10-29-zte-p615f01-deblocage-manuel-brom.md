@@ -5,6 +5,8 @@
 > **Objectif** : effacer `userdata` pour que le téléphone démarre sur l'assistant de configuration
 > **Contexte** : aucun compte Google → **aucune protection FRP** → pas de risque de téléphone verrouillé après coup
 > **Difficulté** : moyenne à élevée · **durée** : 1 à 3 h · **matériel** : PC + câble USB de données
+> **Statut** : ✅ **RÉSOLU le 29 octobre 2026** — téléphone débloqué, sans passer par le fabricant.
+> **Ce qui a débloqué tout** : l'option **`--kick`** de `spd_dump` (route `boot_diag → cali_diag → dl_diag`), sur un ZTE **sans aucune touche à presser**, puis `e userdata` + `e metadata`.
 
 ---
 
@@ -12,7 +14,7 @@
 
 ```
 BROM (gravé dans la puce, indestructible)
-   │  ← on y entre avec Volume bas + câble USB
+   │  ← on y entre avec --kick (câble branché, AUCUNE touche sur ce ZTE)
    ├─ faille CVE-2022-38694 à l'adresse 0x65015f08
    │     └─ permet de charger du code non signé
    ├─ FDL1 puis FDL2  (petits programmes envoyés par le PC)
@@ -729,6 +731,22 @@ Puis **ne rien toucher**. Le téléphone redémarre seul.
 ### 13.9 Étape H — Vérifier
 
 Au `reset`, le téléphone redémarre et le **premier démarrage est long** (10 à 20 minutes) : il recrée `userdata` et les clés. Ne pas s'inquiéter, ne pas débrancher, ne pas forcer l'extinction.
+
+> ### ✅ Résultat réel du 29/10
+>
+> Après `e userdata` + `e metadata` + `reset`, le téléphone **redémarre normalement** et arrive sur
+> l'**assistant de configuration**. Plus aucun code d'écran, plus aucune « clé d'accès » demandée.
+> **Déblocage réussi, par le propriétaire, sans intervention du fabricant ni d'un atelier.**
+>
+> Récapitulatif des cinq tentatives et de ce qui les distinguait :
+>
+> | Essai | Ce qui a été fait | Résultat |
+> |---|---|---|
+> | 1 | Volume bas maintenu au branchement | `usb_send failed` → démarre en **recovery** |
+> | 2 | Vol+ + Vol− maintenus | `device removed, exiting...` → écran de charge |
+> | 3 | `--verbose` seul, Power + Vol+ 10 s | `CurPort: 0` pendant 71 s, aucun port |
+> | 4 | `--verbose 1` (niveau seul) | idem, attente sans fin |
+> | **5** | **`--kick`, aucune touche** | ✅ **BROM → FDL1 → FDL2, accès complet** |
 
 Assistant de configuration, choix de la langue, **aucune demande de compte Google**. Si un mot de passe est
 encore demandé, appliquer la variante « ceinture et bretelles » (§8) avec `misc-wipe.bin`.

@@ -7,7 +7,10 @@
 > **Statut** : **téléphone identifié** (ZTE P615F01, Android 15) et **sans compte Google**. Le menu de
 > récupération ne propose pas d'effacement — c'est voulu par le constructeur. Sans compte Google, aucune
 > protection FRP : un effacement est sûr.
-> **Déblocage manuel (BROM/Unisoc) : voir le protocole dédié**
+> **✅ Résolu le 29 octobre 2026** : effacement de `userdata` + `metadata` par le propriétaire lui-même, en mode
+> BROM (Unisoc), avec `spd_dump --kick`. Le téléphone redémarre sur l'assistant de configuration, sans code.
+> Aucun envoi au fabricant, aucun atelier.
+> **Déblocage manuel (BROM/Unisoc) — protocole complet et retour d'expérience**
 > → [`2026-10-29-zte-p615f01-deblocage-manuel-brom.md`](./2026-10-29-zte-p615f01-deblocage-manuel-brom.md)
 
 ---
