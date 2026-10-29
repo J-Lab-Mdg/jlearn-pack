@@ -558,6 +558,20 @@ Au premier branchement en mode BROM, Windows reconnaît `USB\VID_1782&PID_4D00` 
 
 Si `pnputil` refuse le paquet (erreur de signature), c'est que la touche **7** n'est plus active → refaire §13.3.
 
+> **Résultat réel du 29/10** : `Package de pilotes correctement ajouté` — nom publié **`oem29.inf`**. Mais
+> `pnputil` a lié le paquet à des interfaces **`USB\VID_18D1&PID_4EE8&MI_01 / MI_02 / MI_03`** — c'est-à-dire
+> **VID Google/Android**, et **pas** `VID_1782` (Spreadtrum). Deux enseignements :
+>
+> 1. **un appareil Android était branché au PC** au moment de la commande. À débrancher avant l'entrée en mode
+>    BROM : `spd_dump` doit voir **un seul** port, et un téléphone allumé qui bascule en MTP/ADB vient perturber
+>    la détection.
+> 2. le `sprdvcom.inf` **de ce paquet** contient réellement des entrées ADB (`Android Bootloader`,
+>    `ADB Interface`, `Composite ADB Interface`). La liste vue dans l'assistant n'était donc **pas** un simple
+>    effet de mémoire de la boîte de dialogue : l'hypothèse « mauvais fichier chargé » était fausse.
+>
+> Reste à vérifier que ce même `.inf` contient aussi les identifiants Spreadtrum :
+> `findstr /i "VID_1782" C:\zte-unlock\drivers\*.inf`
+
 **Variante graphique** (si `pnputil` est indisponible) : Gestionnaire de périphériques → clic sur le nom de
 l'ordinateur en haut de la liste → menu **Action** → **Ajouter un matériel d'ancienne version**
 (« hérité » selon la version de Windows) → **Installer le matériel que je sélectionne manuellement dans une
