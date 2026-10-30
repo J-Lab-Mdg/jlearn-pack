@@ -141,6 +141,9 @@ function lessonS37() {
     mot("transmettre", "donner ce que l'on sait"),
     mot("gaspiller", "dépenser pour rien"),
     mot("un passe-temps", "une activité pour les moments libres"),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. À quelle question le texte répond-il ?"),
+    p("2. Redis une raison entendue, avec « parce que ».", { after: 60 }),
   ];
 }
 
@@ -217,6 +220,9 @@ function lessonS38() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« jouer au fanorona », « jouer aux cartes »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« jouer le fanorona »" + ".")]),
+    sub("Exercice — chaque loisir avec son verbe :"),
+    p("Complète : « Je ……… au football. Je ……… la danse. Je ……… du vélo. Je ……… aux cartes. »"),
+    pr([run("[jouer à un jeu, pratiquer un art, faire du sport]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -285,6 +291,8 @@ function lessonS39() {
     sub("Descriptif ou explicatif ?"),
     p("• Le texte DESCRIPTIF répond à « c'est comment ? » — il peint un tableau."),
     p("• Le texte EXPLICATIF répond à « pourquoi ? comment ? » — il allume la lumière !"),
+    sub("Exercice — descriptif ou explicatif ?"),
+    p("1. « La cour est grande et ombragée. » — 2. « Le sport muscle le cœur, car il le fait battre plus fort. » Justifie, puis entoure le connecteur.", { after: 60 }),
   ];
 }
 
@@ -356,6 +364,8 @@ function lessonS40() {
     sub("La règle d'or :"),
     pr([run("L'adverbe ne s'accorde JAMAIS : ", { size: SZ.BODY }),
         run("elles jouent bien — ils lisent beaucoup.", { bold: true, color: C.SALMON })]),
+    sub("Exercice — la fabrique des adverbes :"),
+    p("lent → ……… ; doux → ……… ; vrai → ……… — puis place « souvent » dans une phrase sur ton loisir préféré.", { after: 60 }),
   ];
 }
 
@@ -429,6 +439,8 @@ function lessonS41() {
     p("", { after: 40 }),
     pr([run("Attention : ", { bold: true, color: C.RED }),
         run("devant une voyelle, ne devient n' : il n'écoute pas, elle n'aime plus.")]),
+    sub("Exercice — la phrase gymnaste :"),
+    p("« Koto et Soa jouent aux cartes. » 1. Mets à la forme négative. 2. Pose la question avec « Qui ». 3. Réponds à « Que fais-tu le dimanche ? »", { after: 60 }),
   ];
 }
 
@@ -514,6 +526,9 @@ function lessonS42() {
     sub("Les verbes amis :"),
     pr([run("-cer : ", { bold: true }), run("commencer, placer, avancer → nous commençons, nous plaçons, nous avançons", { bold: true, color: C.SALMON })], { after: 40 }),
     pr([run("-ger : ", { bold: true }), run("manger, voyager, partager, ranger → nous mangeons, nous voyageons, nous partageons, nous rangeons", { bold: true, color: C.SALMON })]),
+    sub("Exercice — les deux gardiens au travail :"),
+    p("Conjugue avec « nous » : lancer, nager, commencer, manger."),
+    pr([run("[ç garde le son s devant o ; e garde le son j après g]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -583,6 +598,8 @@ function lessonS43() {
     p("3. Pourquoi c'est bien ? — les bienfaits, avec parce que, en effet, donc !", { after: 80 }),
     sub("Mon corps parle aussi :"),
     p("• posture droite, gestes qui montrent, intonation vivante, regard vers le public !"),
+    sub("Exercice — justifie ton choix :"),
+    p("Présente ton loisir préféré en trois phrases : « Je préfère… », « parce que… », « De plus… ».", { after: 60 }),
   ];
 }
 
@@ -650,6 +667,8 @@ function lessonS44() {
     p("1. C'est quoi ? — je présente mon jeu et son nom."),
     p("2. Comment ? — matériel, joueurs, règles, étapes, but."),
     p("3. Pourquoi ? — les bienfaits justifiés !"),
+    sub("Exercice — ton plan d'explication :"),
+    p("Bâtis le plan de l'explication de ton jeu préféré : le matériel, les règles dans l'ordre, le but du jeu.", { after: 60 }),
   ];
 }
 
@@ -717,6 +736,9 @@ function lessonS45() {
     p("☐ Un adverbe, une phrase négative."),
     p("☐ nous commençons (ç !), nous partageons (ge !)."),
     p("☐ 15 à 20 lignes, majuscules et points."),
+    sub("Exercice — améliore comme un écrivain :"),
+    p("« on joue a la marelle cest facile on saute » → corrige et relie avec un connecteur : ………"),
+    pr([run("[exemple : Nous jouons à la marelle : c'est facile, parce qu'il suffit de sauter dans les cases.]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -782,6 +804,8 @@ function lessonS46() {
     pr([run("fluidité ", { bold: true, color: C.SALMON }), run("(sans hésiter) + "),
         run("précision ", { bold: true, color: C.SALMON }), run("(tous les mots) + "),
         run("expressivité ", { bold: true, color: C.SALMON }), run("(la voix vit) = lecture réussie !")]),
+    sub("Exercice — en écho puis en chœur :"),
+    p("Avec ton voisin, lis en écho : « Nous lançons, nous plaçons, nous commençons ! » — puis toute la rangée en chœur, bien ensemble.", { after: 60 }),
   ];
 }
 

@@ -141,6 +141,9 @@ function lessonS25() {
     mot("un formulaire", "le papier à remplir"),
     mot("un mandat", "de l'argent envoyé par la poste"),
     mot("trier le courrier", "ranger les lettres par destination"),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Quel service public le reportage visite-t-il ?"),
+    p("2. Cite deux employés entendus et ce que fait chacun.", { after: 60 }),
   ];
 }
 
@@ -229,6 +232,8 @@ function lessonS26() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« aller à la poste, à la mairie »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« aller au poste » (le poste, c'est l'emploi !)" + ".")]),
+    sub("Exercice — où vais-je ?"),
+    p("Pour envoyer une lettre → ……… ; pour un acte de naissance → ……… ; pour me faire soigner → ……… ; pour apprendre → ………", { after: 60 }),
   ];
 }
 
@@ -297,6 +302,9 @@ function lessonS27() {
         run(" tient ce guichet » — « le commissariat ", { italic: true }), run("où", { bold: true, color: C.RED }),
         run(" l'on court »", { italic: true })], { after: 50 }),
     p("Ces petits mots s'appellent les pronoms relatifs — rendez-vous à la séance 30 !"),
+    sub("Exercice — je retrouve dans le texte :"),
+    p("1. L'information principale du premier paragraphe."),
+    p("2. Une phrase reliée par « qui » ou « que » — recopie-la et entoure le petit mot.", { after: 60 }),
   ];
 }
 
@@ -384,6 +392,8 @@ function lessonS28() {
     pr([run("Les usagers ", { size: SZ.BODY }), run("remplissent", { bold: true, color: C.SALMON }),
         run(" les formulaires ; la poste "), run("envoie", { bold: true, color: C.SALMON }),
         run(" les lettres ; l'employée "), run("lit", { bold: true, color: C.SALMON }), run(" les registres.")]),
+    sub("Exercice — le bon verbe au bon poste :"),
+    p("Complète avec distribuer, peser, remplir, coller : « Le facteur ……… le courrier. L'employé ……… le colis. Je ……… le formulaire et je ……… le timbre. »", { after: 60 }),
   ];
 }
 
@@ -455,6 +465,9 @@ function lessonS29() {
     p("• On plante des arbres pour sauver la forêt (bravo, unité 1 !).", { after: 80 }),
     pr([run("Astuce : ", { bold: true, color: C.RED }),
         run("le CC de but explique la MISSION d'une action : c'est lui qui répond quand on demande « pourquoi faire ? ».")]),
+    sub("Exercice — fabrique le but :"),
+    p("Relie avec « pour » : « Je fais la queue. Je veux un timbre. » → ………"),
+    pr([run("[pour + infinitif quand c'est la même personne ; pour que + phrase sinon]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -526,6 +539,8 @@ function lessonS30() {
     sub("La phrase qui bégaie, la phrase qui brille :"),
     pr([run("✗ ", { bold: true, color: C.RED }), run("« Voici l'infirmière. L'infirmière vaccine les bébés. »", { italic: true })], { after: 30 }),
     pr([run("✓ ", { bold: true, color: C.GREEN }), run("« Voici l'infirmière "), run("qui", { bold: true, color: C.SALMON }), run(" vaccine les bébés ! »")]),
+    sub("Exercice — je relie sans bégayer :"),
+    p("1. « Voici le facteur. Le facteur apporte les lettres. » → ……… — 2. « le guichet ……… je paie » — 3. « le village ……… je suis né ».", { after: 60 }),
   ];
 }
 
@@ -594,6 +609,8 @@ function lessonS31() {
     p("• je reformule : « Si je comprends bien, tu dis que… ».", { after: 80 }),
     sub("Le plan de mon compte rendu :"),
     p("1. Le lieu et le personnel — 2. Ce qu'on y fait — 3. Son rôle (pour… afin de…) — 4. Mon avis !"),
+    sub("Exercice — donne ton avis :"),
+    p("En trois phrases : « À mon avis… », « parce que… », « Je suis d'accord avec… (ou : Je ne suis pas d'accord, car…) ».", { after: 60 }),
   ];
 }
 
@@ -660,6 +677,8 @@ function lessonS32() {
     p("• les verbes d'action au présent : remplir, envoyer, lire, soigner, protéger ;"),
     p("• le CC de but : pour soigner les malades, afin de protéger la santé ;"),
     p("• les pronoms relatifs : l'infirmière qui vaccine, le guichet que l'on voit, la salle où l'on attend."),
+    sub("Exercice — ton plan :"),
+    p("Bâtis le plan de ton compte rendu d'une visite (poste, mairie ou dispensaire) : trois parties, une idée par partie.", { after: 60 }),
   ];
 }
 
@@ -726,6 +745,9 @@ function lessonS33() {
     p("☐ Mon pronom relatif (qui, que, où)."),
     p("☐ Le lexique des services publics."),
     p("☐ Majuscules, points, virgules."),
+    sub("Exercice — améliore comme un écrivain :"),
+    p("« on a été a la poste c'était bien » → corrige et enrichis : ………"),
+    pr([run("[exemple : Nous sommes allés à la poste, où le facteur nous a montré le tri du courrier.]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -790,6 +812,8 @@ function lessonS34() {
     p("• le com-mis-sa-riat — l'é-tat ci-vil — le for-mu-laire — les re-gistres — la gui-che-tière", { after: 80 }),
     pr([run("La phrase à faire vivre : ", { bold: true }),
         run("« Respecter les services publics, c'est se respecter soi-même ! »", { italic: true, color: C.SALMON })]),
+    sub("Exercice — découpe puis lis d'une traite :"),
+    p("ad-mi-nis-tra-tion — cor-res-pon-dance — puis relis le virelangue deux fois, de plus en plus vite !", { after: 60 }),
   ];
 }
 
