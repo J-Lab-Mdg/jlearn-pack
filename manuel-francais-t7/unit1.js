@@ -446,6 +446,8 @@ function lessonS5() {
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
     p("", { after: 40 }),
     p([run("LA FORME ACTIVE ET LA FORME PASSIVE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("u1_lamba.png", 440, 0.5581),
+    p("", { after: 60 }),
     sub("1. La forme active"),
     p("Le sujet FAIT l'action."),
     exTitre(),
