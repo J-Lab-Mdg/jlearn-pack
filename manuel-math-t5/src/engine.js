@@ -317,11 +317,9 @@ function seance(s, i, total, uNo, figBufs, cahierBuf) {
     a.push(banner('PETIT JEU', C.wine));
     a.push(p(s.jeu, { fill: 'FFF8E1' }));
   }
-  if (cahierBuf) {
-    a.push(page());
-    a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 0, after: 40 }, children: [tr('MON CAHIER', { bold: true, color: C.wine, size: 30 })] }));
-    a.push(img(cahierBuf, 640));
-  }
+  // La page graphique « MON CAHIER » a été retirée : elle répétait une fiche
+  // générique et donnait une impression artificielle. La règle, l’exemple court
+  // et les exercices restent directement dans la leçon, sans cadre imposé.
   return a;
 }
 
@@ -407,13 +405,7 @@ async function buildUnit(u, figBufs) {
       new TableRow({ children: [cell('Séances', { bold: true, fill: C.blue, color: C.white }), cell('Apprentissages', { bold: true, fill: C.blue, color: C.white }), cell('Révision', { bold: true, fill: C.blue, color: C.white }), cell('Examen', { bold: true, fill: C.blue, color: C.white })] }),
       new TableRow({ children: [cell(`${total}`), cell(`${u.sessions.length}`), cell('1'), cell('1')] })
     ], [2400, 2400, 2400, 2400]));
-  const sharp = require('sharp');
-  const cahierBufs = [];
-  for (let i = 0; i < u.sessions.length; i++) {
-    u.sessions[i]._date = dateSeance((U_OFFSET[u.no] || 0) + i);
-    cahierBufs[i] = await sharp(Buffer.from(cahierSvg(u.sessions[i])), { density: 96 }).png({ palette: true, colors: 128, compressionLevel: 9 }).toBuffer();
-  }
-  u.sessions.forEach((s, i) => children.push(...seance(s, i + 1, total, u.no, figBufs, cahierBufs[i])));
+  u.sessions.forEach((s, i) => children.push(...seance(s, i + 1, total, u.no, figBufs, undefined)));
   children.push(...revision(u), ...exam(u));
 
   const doc = new Document({
