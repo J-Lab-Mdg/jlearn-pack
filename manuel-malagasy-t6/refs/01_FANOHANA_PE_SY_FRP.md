@@ -42,7 +42,7 @@ ho an'ny vahatao hafa → ny mpampianatra no mitsinjara (PE p.13). `Daty` : **ma
 ## 3. Fitsipiky ny asa ho an'ny T6 (voamarina amin'ity valiny ity)
 - **Lahatsoratra iray ihany manontolo** : `output/Malagasy_T6_J-Learn.docx` — mihenjanina isaky ny
   lesona vaovao (tsy rakitra isaky ny seho intsony).
-- **Tombana** (tsy « deho » : tsy teny malagasy mihitsy — Nataoko tam-pDisadiko tamin'ny T5) → ny teny marina ao amin'ny PE dia `Tombana` (critères) sy `fitsapana` (sapandra).
+- **Tombana** (tsy « deho » : teny tsy malagasy izay nataoko tamin'ny T5 — sokoiko) → ny teny marina ao amin'ny PE dia `Tombana` (critères) sy `fitsapana` (sapandra).
   Isaky ny lesona : **Tombana 1 (10 pt) + Tombana 2 (10 pt) + valiny**.
 - **Loharano** : FRP/PE = azo ohabolaina ; **internet** = Rakibolana, malagasyword.org,
   ohabolana.mamaloga.com, Akademia Malagasy, edu.gov.mg, **gazety** (Zika, Le Pays, TVM…) —
