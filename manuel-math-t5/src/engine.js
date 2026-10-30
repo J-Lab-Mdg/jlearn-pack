@@ -181,7 +181,7 @@ function frontMatter(u) {
   u.sessions.forEach((s, i) => ch.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${i + 1}`, children: [tr(`Leçon ${i + 1} — ${s.t}`, { color: C.blue })] })] })));
   const total = u.sessions.length + 2;
   ch.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${total - 1}`, children: [tr('Révision de l’unité I', { color: C.blue })] })] }),
-    new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${total}`, children: [tr('Sujet d’examen', { color: C.blue })] })] }));
+    new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${total}`, children: [tr('Sujet d’examen format CEPE — unité I', { color: C.blue })] })] }));
   return ch;
 }
 

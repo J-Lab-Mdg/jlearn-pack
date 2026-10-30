@@ -307,10 +307,14 @@ links = []
 for unit_no in range(2, N_UNITS + 1):
     links.append((f'Unité {ROMANS[unit_no]} — {NAMES[unit_no]}', f'u{unit_no}', False))
     source = Document(units[unit_no - 1])
-    session_titles = [p.text for p in source.paragraphs if re.match(r'^SÉANCE \d+ / \d+ —', p.text)]
-    for k, session_title in enumerate(session_titles, 1):
-        raw = re.sub(r'^SÉANCE \d+ / \d+ — ', '', session_title)
-        links.append((f'Séance {k} — {sentence(raw, ROMANS[unit_no])}', f'u{unit_no}_l{k}', True))
+    # Les documents d’unité portent leurs entrées de sommaire sous la forme
+    # « Leçon n — … » ; elles servent de source unique pour le sommaire détaillé.
+    lesson_titles = [p.text.strip() for p in source.paragraphs if re.match(r'^Leçon \d+ —', p.text.strip())]
+    for k, lesson_title in enumerate(lesson_titles, 1):
+        raw = re.sub(r'^Leçon \d+ — ', '', lesson_title)
+        links.append((f'Leçon {k} — {sentence(raw, ROMANS[unit_no])}', f'u{unit_no}_l{k}', True))
+    links.append((f'Révision de l’unité {ROMANS[unit_no]}', f'u{unit_no}_l{len(lesson_titles) + 1}', True))
+    links.append((f'Sujet d’examen format CEPE — unité {ROMANS[unit_no]}', f'u{unit_no}_l{len(lesson_titles) + 2}', True))
 links.extend([
     ('Méthodes d’or — La boîte à outils du CEPE (9 fiches)', 'mor', False),
     ('Sujets d’examen — Opérations (20 sujets corrigés)', 'exop', False),
