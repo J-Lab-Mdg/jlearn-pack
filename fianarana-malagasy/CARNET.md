@@ -199,3 +199,18 @@ p.12-26). **Relevé feno : `manuel-malagasy-t6/refs/00_FANAMARIHANA.md`.**
   **tsy mila hamboarina**.
 - FRP p.6-8 : « Mandrafitra ny takela-panomanan-desona » → ny takela 6-dingana dia **aza
   ampiasaina** (fa ny 6 anaran'ny dingana dia avy amin'ny modele, tsy avy amin'ny FRP).
+
+## 2026-10-30 (14h50) — FANAVOANA HAINGANA : « teny verindroa » ≠ « teny mitovy fanonona »
+
+Mpanabe : « *attend le teny verindroa n'est pas ca. le verindroa c'est quand lava = lavalava,
+matory = matoritory. mais les teny mitovy fanonona fa samihafa hevitra ce sont des mots qui ont la
+même prononciation mais d'écriture différente et sens différent* ».
+- **verindroa** = fototeny **averina indroa** (reduplication) : `lava > lavalava`,
+  `matory > matoritory`, FRP p.79 : `lavalava, menamena, lavidavitra`. Rakibolana : « verindroa =
+  fahadisoana noho ny teny na litera averina indroa » (fr. *doublon*).
+- **mitovy fanonona fa samy hafa hevitra** = **homophones** (mianaka / mihanaka) — **tsy**
+  verindroa. Ny S1 T6 voalohany dia **namboarina amin'izany** → **tokony averina**.
+- **FRP** : lesona TSIPELINA (p.74-76) = 1a homophones · 1b tendro · 1d *tanjon'ny* verindroa ·
+  1e fanakambanan-teny. Ny **verindroa marina** (famaritana + ohatra) dia ao amin'ny
+  **Sokajin-teny / Mpamari-toetra, p.78-79** ; mpamaritr'isa p.80 (`tsi-`/`ki-`) ; p.62 (marika
+  an'ny lahatsoratra manoritsoritra). ⇒ **manana azy ny FRP, fatsy ao amin'ny TSIPELINA**.
