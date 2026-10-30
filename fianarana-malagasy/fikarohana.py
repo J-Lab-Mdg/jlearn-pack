@@ -23,7 +23,7 @@ import urllib.request
 
 IHERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(IHERE)
-MANUEL = os.path.join(ROOT, "manuel-malagasy-t5")
+MANUEL = os.path.join(ROOT, os.environ.get("JLEARN_TATITRA", "manuel-malagasy-t5"))
 CORPUS = [os.path.join(IHERE, "corpus"),
           os.path.join(MANUEL, "sources_web", "full"),
           os.path.join(MANUEL, "sources_web"),
