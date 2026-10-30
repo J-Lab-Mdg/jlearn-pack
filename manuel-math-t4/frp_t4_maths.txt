@@ -1,0 +1,2176 @@
+
+========== PAGE PDF 4 ==========
+4  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                    
+ 
+                     MATHEMATHIQUES 
+ 
+ 
+ 
+ 
+ 
+ 
+MATHEMATIQUES
+
+========== PAGE PDF 5 ==========
+5  
+COMPOSANTE I  
+NOMBRE 
+ 
+RES 1-a : Support de cours 
+NOMBRE NATUREL 
+ 
+ 
+
+
+========== PAGE PDF 6 ==========
+6  
+RES 1-b : Ressource documentaire 
+NOMBRE NATUREL / UTILISATION DU TABLEAU DE NUMERATION 
+ 
+Un nombre s’écrit avec des chiffres, comme un mot s’écrit en lettres. 
+ 
+Pour lire ou écrire un grand nombre, il faut faire des groupes de 3 chiffres en 
+partant de la droite. Chaque groupe s’appelle une classe. 
+Dans chaque classe, il y a un chiffre des unités, un chiffre des dizaines et un chiffre 
+des centaines. 
+On peut s’aider du tableau suivant : 
+ 
+Remarques : 
+ 
+1. Dans chaque colonne du tableau,  je ne place qu’un seul chiffre. On   entend le mot « mille » 
+2. Lorsque j’écris un nombre sans tableau,  je laisse un espace entre les différentes classes.  
+ 
+Ex1 : 6 217 se lit « 6 mille 217 » : Six-mille-deux-cent-dix- sept  
+Ex2 : 4 023 se lit « 4 mille 23 » : Quatre-mille-vingt-trois 
+Ex3 : 52 486 se lit « 52 mille 486 » : Cinquante-deux-mille-quatre-cent-quatre-
+vingt-six 
+ 
+
+
+========== PAGE PDF 7 ==========
+7  
+Ex4 : 245 872 se lit « 245 mille 872 » : Deux-cent-quarante-cinq-mille-huit-cent-
+soixante-douze 
+ 
+RES 1-c : précis du cours 
+PLANCHE SUR L’ECRITURE DES NOMBRES EN LETTRE 
+ 
+RES 1-d : précis du cours 
+METHODE DE RANGEMENT DE NOMBRES NATURELS 
+1) Comparaison 
+a- Je regarde d’abord le nombre de chiffres, celui qui a le plus de chiffres est le plus grand. 
+Exemple :     
+2 450 
+est plus 
+grand 
+que 
+675 
+4 chiffres et 
+3 
+chiffr
+es 
+On écrit : 2 450 ˃ 675 
+      
+b- Si le nombre de chiffres est le même, je les compare un à un en partant 
+de la gauche. Exemple : 
+On écrit : 7512 < 7 812 
+2) Rangement 
+a- Pour ranger des nombres, il suffit de les comparer. 
+b- Ranger des nombres dans l’ordre croissant revient à les ranger du plus petit au plus 
+grand. 
+
+
+========== PAGE PDF 8 ==========
+8  
+    Exemple1 : 12 671 < 32 671 < 45 980 < 121 900 
+c- Ranger des nombres dans l’ordre décroissant revient à les ranger du plus grand au plus 
+petit. 
+Exemple2 : 990 400 > 457 901 > 421 300 > 32 678 Je place les signes < ou > 
+entre les nombres, la pointe vers le plus petit. 
+
+========== PAGE PDF 9 ==========
+9  
+RES 1-f : Ressource documentaire 
+NOTION DE FRACTION 
+ 
+ 
+ 
+ 
+Quand on partage une unité en parts égales, chaque part représente une fraction de cette unité. 
+ 
+Le numérateur indique le nombre de parts prises. 
+ 
+Le dénominateur indique en combien de parts l’unité a été divisée. 
+ 
+RES 1-e : Support de cours 
+REPRESENTATION DES NOMBRES NATURELS 0 JUSQU‟A 100 000 A L’AIDE 
+DE MATERIELS CONCRETS 
+
+
+========== PAGE PDF 10 ==========
+10  
+RES 1-h : Ressource documentaire 
+CRITERE DE DIVISIBILITE 
+ 
+ 
+ 
+ 
+ 
+ 
+Divisible par 2 
+Les multiples de 2 : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34… 
+Si un nombre est pair (son chiffre des unités est 0, 2, 4, 6, 8), alors ce nombre est         divisible par 2. 
+Exemples : 
+2358 est divisible par 2… Car son chiffre d’unité est 8. (2358 : 2 =1179) 
+1179 n’est pas divisible par 2 
+ 
+Divisible par 3 
+Les multiples de 3 : 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48… 
+Si la somme des chiffres d’un nombre est 3, 6, ou 9, alors ce nombre est divisible par 3. 
+Exemples : 
+432 est divisible par 3… car la somme est égale à 9 ; 
+121 n’est pas divisible par 3 
+Divisible par 5 
+Les multiples de 5 : 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75… 
+Si un nombre a pour chiffre des unités 0 ou 5, alors ce nombre est divisible       par 5  
+RES 1-g : Support de cours 
+FORME ET NOMBRE DE DIVISION (COMPLETER LE TABLEAU CI-DESSOUS) 
+
+
+========== PAGE PDF 11 ==========
+11  
+RES 1-i : ressource documentaire 
+SIMPLIFICATION DES FRACTIONS 
+RES 1-j: précis du cours 
+COMPARAISON DES FRACTIONS 
+Exemples : 
+30 485 est divisible par 5… Car l’unité est 5 (30 485 : 5 = 6 097)  
+6097 n’est pas divisible par 5 
+ 
+ 
+ 
+ 
+ 
+- Divisible par 6 : 
+Les multiples de 6 : 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90… 
+Si un nombre est divisible par 3 et par 2, alors ce nombre est divisible par 6. 
+Exemples : 
+3 072 est divisible par 6… Car il est divisible par 3 et par 2. (3 072 : 6 = 512) 
+ 
+ 
+Une fraction peut être égale à un nombre entier. 
+Si le numérateur est divisible par le dénominateur, alors la fraction est égale à un nombre 
+entier. 
+Exemples : 
+ 
+- Fractions égales 
+Si on multiplie ou si on divise le numérateur et le dénominateur d’une fraction par un même 
+nombre, on obtient une fraction égale.     
+Exemples : 
+- Simplification des fractions 
+Si le numérateur et le dénominateur sont divisibles par un même nombre, on peut simplifier la 
+fraction en divisant le numérateur et le dénominateur par ce nombre et les deux fractions sont égales. 
+Exemple : 
+ 
+ 
+ 
+Pour comparer des fractions entre elles : 
+Si elles ont le même dénominateur, on compare les numérateurs 
+
+
+========== PAGE PDF 12 ==========
+12  
+RES 1-k : guide d’orientation 
+PUZZLE DE FRACTION 
+Sinon, on les met sous le même dénominateur avant de comparer leur numérateur 
+ 
+ 
+ 
+On peut aussi comparer une fraction avec l’unité, de 
+manière à voir si elle est inférieure ou supérieure à 1. Pour cela, il faut comparer son 
+numérateur avec son dénominateur. 
+ Numérateur > Dénominateur fraction > 1 
+ 
+Exemple :  
+ Numérateur < Dénominateur fraction < 1 
+ 
+Exemple :  
+ 
+1. Les matériels nécessaires : 
+ Des cartons de dimension ; 
+ Des papiers blancs ; 
+ Ciseaux, colles, règle graduée. 
+2. Modèle des pièces de puzzle de fraction 
+ 
+ 
+3. Mode de fabrication : 
+a- Tracer le fond selon la forme des deux pièces du puzzle sur le carton puis le découper en 
+deux parties; 
+  
+b- Tracer sur les papiers blancs un cercle de 8 cm de diamètre ; 
+c- Diviser la surface de chaque cercle suivant son diamètre, en parties égales à un 
+dénominateur nécessaire  par exemple 2 ; 3 ; 4 ; 5 ; 10. 
+
+
+========== PAGE PDF 13 ==========
+13  
+ 
+ 
+ 
+d- Colorer les portions ou la partie de la surface correspondante à une fraction nécessaire puis 
+découper le cercle et le coller sur la partie droite d’une pièce du puzzle. La partie colorée 
+représente le numérateur. 
+ 
+e- Écrire sur un papier blanc une fraction correspondante à la portion colorée ; découper ce 
+papier et le coller sur la partie gauche du puzzle. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4. Mode d’utilisation : 
+· Présenter et faire identifier les pièces du puzzle de fraction par les apprenants ; 
+ 
+ 
+· 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+· Définir le concept fraction avec le puzzle fraction ; 
+
+
+========== PAGE PDF 14 ==========
+14  
+ 
+ 
+ 
+ 
+- Réaliser une représentation concrète de la fraction par l’assemblage de l’objet à manipuler ; 
+- Exprimer en termes de fractions la figure coloriée ; 
+- Déduire la représentation de la fraction à travers des figures ; 
+- Chercher la figure qui traduit la somme ou la différence des fractions de même dénominateur ou 
+la différence des fractions de même dénominateur. 
+- Encourager les apprenants à appliquer les notions mathématiques relatives à la fraction dans les 
+faits réels de la vie quotidienne. 
+ 
+ 
+ 
+1. Lecture et écriture des nombres décimaux 
+ 
+Un nombre décimal est composé d’une partie entière et d’une partie décimale séparée par une virgule. 
+Tout nombre entier peut s’écrire sous la forme d’un nombre décimal. 
+Exemple : 48 = 48,0 = 48,00 = 48,000… 
+ 
+ 
+62,57 se lit « 62 virgule 57 » Dans ce nombre, il y a 6 dizaines, 2 unités, 5 dixièmes. 
+ 
+2. Comparaison des nombres décimaux 
+Pour comparer des nombres décimaux, on compare d’abord la partie entière  
+                                         16,3 > 14,72 car 16 > 14 
+ 
+S’ils ont la même partie entière, on compare la partie décimale 
+ 
+                                               16,26 < 16,34 car 26 < 34 
+ 
+        Attention ! La partie décimale la plus longue n’est pas forcément la plus grande ! 
+ 
+32,4 =  32,40 = 32,400 
+32,4 > 32,365 car 400 > 365 
+ 
+Encadrement des nombres :   
+A l’unité près : 
+    8<8,362<9 
+Au dixième près : 
+RES 1-l : Précis du cours 
+NOMBRES DECIMAUX 
+
+========== PAGE PDF 15 ==========
+15  
+8,3<8,362<8,4 
+Au centième près : 
+8,36<8,362<8,37 
+ 
+ 
+ 
+ 
+ 
+ 
+                  
+                     
+ 
+RES 1-m : Support de cours 
+LES CARTONS DE TYPE MONTESSORI 
+
+========== PAGE PDF 16 ==========
+16  
+RES 1-o : support de court 
+LES CHIFFRES ROMAINS DE I A M 
+Res1-n : Guide d’orientation 
+UTILISATION DE CARTON 
+ 
+ 
+ 
+                    Principe d’utilisation : 
+Afficher un nombre quelconque en superposant un carton de chaque classe (unité, dizaine, centaines…). 
+Exemples : 
+ Pour afficher 237, il faut superposer les cartons 200 ; 30 et 7 en les 
+alignant du côté des unités c’est-à-dire à droite.
+ Pour afficher 0,453, il faut superposer les cartons 0,003 ; 0,05 et 0,4 en les alignant du côté 
+des unités c'est-à-dire à gauche.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Les nombres romains s'écrivent avec les symboles : 
+I = 1 ;    V = 5 ;     X = 10 ;     L = 50 ;     C = 100 ;    D = 500 ;    M = 1000 
+ 
+Règle : 
+On peut ajouter au maximum trois fois les nombres I, X, C et M. 
+Exemples : 
+- 3 s’écrit : III (1+1+1) 
+- 20 s’écrit : XX (10+10) 
+- 300 s’écrit : CCC (100+100+100) 
+RES 1-p : Précis du cours 
+L’ECRITURE EN CHIFFRES ROMAINS 
+
+========== PAGE PDF 17 ==========
+17  
+ On écrit toujours un nombre romain en commençant par les plus grands symboles : 
+ D’abord M puis D, puis C, puis L, puis X, puis V et enfin I. Ex. 1537 s’écrit : MDXXXVII 
+ 
+ 
+ 
+ Si les nombres I, X et C sont placés avant un nombre plus grand, alors on les soustrait : 
+ 
+Exemples : 
+ 
+- 4 s’écrit : IV (5-1) 
+ 
+- 40 s’écrit : XL (50-10) 
+ 
+- 900 s’écrit : CM (1000-100) 
+ 
+Exemples : 
+ 
+- 17 s'écrit XVII (10+5+1+1=17) 
+-  
+- 39 s’écrit XXXIX (10+10+10+10-1=39) 
+-  
+- 48 s'écrit XLVIII (50-10+5+1+1+1=48) 
+ 
+- 94  s’écrit XCIV (100-10+5-1=94) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+========== PAGE PDF 18 ==========
+18  
+ 
+ 
+ 
+ 
+COMPOSANTE II 
+OPERATION SUR LES NOMBRES 
+ 
+ 
+ 
+RES 2 -a: Ressource documentaire  
+NOTION SUR LA MULTIPLICATION 
+ 
+ La multiplication, c'est une des 4 opérations de base en mathématiques. Elle consiste à trouver le 
+produit de 2 ou plusieurs facteurs. Le symbole utilisé est le signe . , qui se lit fois. Le 1er facteur 40 
+est le multiplicande, le 2e facteur 8 est le multiplicateur, le résultat 320 est le produit.   
+Alors : facteur = produit F F = P 
+ 
+ Le multiple d'un nombre, c'est le produit d'un nombre qui est multiplié par des  nombres 
+naturels, en commençant par le zéro. 
+ 
+Exemple : 
+Les multiples de 6 sont : {0, 6, 12, 18, 24, ...} 
+ 
+ Les propriétés de la multiplication
+J'utilise l'associativité en multiplication pour regrouper les facteurs d'une façon   différente sans 
+changer le résultat. 
+Exemple : 
+J'utilise la commutativité en multiplication quand je change l'ordre des facteurs de  chaque côté du 
+signe = sans changer le résultat de la multiplication. 
+Exemple : 
+J'utilise la distributivité en multiplication quand je décompose un nombre avant de le  multiplier par 
+un autre nombre. Cela peut être utile pour multiplier mentalement plus facilement. 
+Exemple : 
+La division est l'opération inverse de la multiplication. 
+ 
+ Résumé :
+
+La multiplication, c'est une addition répétée : 
+ 
+Exemple : L'addition de 40+40+40+40  devient 160 
+La multiplication est un moyen plus rapide que l'addition pour calculer. 
+Donc, on peut remplacer que : 40 fois 4 devient 160. 
+
+========== PAGE PDF 19 ==========
+19  
+ 
+Vocabulaire utilisé dans les problèmes pour indiquer la multiplication : Multiplier, produire, 
+multiplication, produit, multiple, fois en tout, par, fois, fois plus... 
+ 
+ 
+ 
+ 
+RES 2-b : précis du cours 
+LA TECHNIQUE DE LA MULTIPLICATION 
+ 
+1- Exemple : 
+ 
+     
+ 
+Je multiplie par le 6, chiffre des unités du multiplicateur, chacun des chiffres du multiplicateur en 
+commençant de la droite vers la gauche. 
+ 
+J'additionne les retenues : 
+- J’écris le 2 à la colonne des unités ; je retiens 1 dizaine à la colonne des dizaines 3 ; puis je fais 
+6 f o i s 3 dizaines =18 dizaines + 1 dizaine (la retenue) = 19 dizaines. 
+- J’écris le 9 à la colonne des dizaines, je retiens 10 dizaines ou 1 centaine à la colonne des  centaines. 
+ 
+Centaines = 24 centaines + 1 centaine (la retenue) = 25 centaines. 
+  Je procède de la même façon avec le 3 (chiffre des dizaines du multiplicateur) ou 30, puis 
+avec le 7 (chiffre des centaines du multiplicateur) ou 700.
+Donc cela équivaut à 3 multiplications séparées. 
+ 
+ J'écris directement mes 3 réponses l'une sous l'autre pour plus de rapidité. Il est très 
+important d'aligner les chiffres selon leur valeur de position : les unités vis-à-vis de la colonne des 
+unités, les dizaines vis-à-vis la colonne des dizaines, les centaines vis-à-vis de la colonne des 
+centaines etc... Je peux placer des zéros pour m'aider à garder la valeur de position des 
+chiffres.
+ 
+
+
+========== PAGE PDF 20 ==========
+20  
+RES 2-c: Ressource documentaire 
+LA NOTION SUR LA DIVISION 
+1) Preuve de la multiplication 
+ 
+ 
+ 
+ 
+ 
+ 
+Dans la croix de la preuve : 
+ En haut, on place la somme des chiffres de 348 : ce qui font 15 donc 6. 
+ En bas, on place la somme des chiffres de 17 : C’est ce qui fait 8 
+ À droite, on place la somme des chiffres de 6 8 (haut bas) = 48 et la somme des chiffres 48= 12 ce qui fait 
+3 . 
+ À gauche, on place la somme des chiffres de 5 916 est 21, ce qui fait 3 
+ 
+ La division, c'est une des 4 opérations de base en mathématiques. Elle 
+permet de trouver le nombre de fois qu'un nombre est contenu dans un autre. La 
+division consiste à trouver le quotient de deux nombres. Diviser, c'est séparer un 
+nombre en parties égales.
+Exemple : 5 4 : 9 = 6 
+Le 1er terme 54 est le dividende. 
+Le 2e terme 9 est le diviseur.  
+Le 3e terme 6 est le quotient.  
+Le 9 est  contenu 6 fois dans 54. 
+ 
+Les symboles utilisés pour la division sont : 
+ 
+ 
+Chacun des symboles utilisés se lit diviser. 
+ 
+
+
+========== PAGE PDF 21 ==========
+21  
+RES 2-d : Précis du cours 
+LA TECHNIQUE DE LA DIVISION 
+ Vocabulaire utilisé dans les problèmes pour indiquer la division : 
+Diviser, séparer, distribuer, partager, fractionner, division, séparation, chaque part,  pour chacun, 
+en combien de parties, de... dans, combien de fois... dans, combien de...dans, ... fois plus petit. 
+ Difficultés rencontrées : 
+- Un chiffre trop élevé au quotient donne un nombre impossible à soustraire. 
+ 
+- Un chiffre trop petit au quotient donne un reste plus grand que le diviseur. 
+ 
+C'est pourquoi, il est important de toujours vérifier si le reste est inférieur au diviseur. 
+ 
+ 
+- Pour éviter d'oublier le 0 au quotient à chaque chiffre que j'abaisse, je dois me poser la 
+question "combien de fois le diviseur est-il contenu dans la portion déterminée du dividende" ? 
+C'est essentiel de répondre à la question, même si c'est 0 fois, et de l'inscrire au quotient. 
+ 
+ 
+- Il faut obligatoirement avoir abaissé un chiffre du dividende avant de poser la question 
+"combien de fois le diviseur est contenu dans le reste" ? Sinon, je me retrouve avec un 0 de 
+trop au quotient. 
+ 
+ 
+ 
+ 
+ 
+Je reviens à la multiplication car la division en est l'inverse. 
+- Tout nombre divisé par lui- même est égal à 1 
+Exemple : 52 : 52 = 1 
+Le nombre 1 dans la division est un élément neutre. 
+ 
+ 
+ 
+
+
+========== PAGE PDF 22 ==========
+22  
+ 
+ 
+J'arrondis le diviseur 24, il devient 20. 
+Je me demande combien de fois 24 (20) est contenu dans 76 ? 3 fois x 24 = 72 
+- J'écris 3 au quotient, puis je multiplie 3 x 24. Je place le 72 sous le 76 et je soustrais ; il 
+me reste 4. Mon reste est plus petit que le diviseur ce qui m'indique que tout est bien. 
+- J'abaisse le chiffre 8 du dividende : j'ai 48. 
+- Je me demande combien de fois le diviseur 24 est contenu dans 48 ? 
+- J'écris 2 au quotient ; je multiplie 2 x 24 ; j'écris 48 sous 48 et je soustrais. 
+- Il reste 0. 
+ 
+ 
+ 
+ 
+ 
+Preuve par 9 de la division 
+Par une multiplication, je peux faire la preuve que le résultat de ma division est exact car 
+la division est l'inverse de la multiplication et la multiplication est l'inverse de la 
+division. 
+ 
+ 
+Exemple : 
+ 
+ 
+ 
+ 
+ 
+ 
+Dans la croix de la preuve  
+ En haut, on place la somme des chiffres de 24 : c’est 2 + 4 ce qui fait 6 
+ En bas, on place la somme des chiffres de 23 : ce qui fait 2 + 3 donc 5. 
+ À droite, on place la somme des chiffres de 6 x 5 +11 (diviseur quotient) + reste, ce qui fait 41 donc 5. 
+ À gauche, on place la somme des chiffres de 563 : c’est 5 + 6 + 3, ce qui fait 14    donc 5 
+
+
+========== PAGE PDF 23 ==========
+23  
+RES 2-e : Précis du cours 
+CALCUL SUR LA FRACTION 
+ 
+Divisibilité 
+ Par 2 
+Un nombre est divisible par 2 si le chiffre des unités de ce nombre est un chiffre pair. 
+                    (0 ;2 ; 4 ; 6 ; 8). 
+Exemple : 2444 est pair donc ce nombre est divisible par 2. 
+ Par 5 
+Un nombre est divisible par 5 si le chiffre des unités est 5 ou 0. 
+ 
+Exemple : 20 135 se divisent par 5 sans reste. 
+ Par 10 
+Un nombre est divisible par 10 si le chiffre des unités est 0. 
+ 
+Exemple : 460 / 10 = 46 (j'enlève le zéro). 
+ Par 100 
+Un nombre est divisible par 100 si les chiffres des unités et des dizaines sont des zéros. 
+ 
+Exemple : 4 500 /100 = 45 (j’enlève les zéros). 
+ Par 1 000 
+ 
+Un nombre est divisible par 1 000 si les chiffres des unités, des dizaines et des   centaines sont des 
+zéros. 
+Exemple :                     (j’enlève les zéros). 
+ 
+ 
+1-Règle d’addition et de soustraction de fraction  
+Formule : 
+ 
+           
+Le symbole, qui se lit "plus ou moins", indique que cette règle s'applique aussi bien aux  
+additions qu'aux soustractions. 
+ 
+Exemple :
+ 
+
+========== PAGE PDF 24 ==========
+24  
+ 
+RES 2-f: Précis du cours 
+CALCUL SUR LE NOMBRE DECIMAUX 
+ 
+Lecture et écriture d’un nombre décimal : 
+ 
+29 ,75 est un nombre décimal. 
+29 est la partie entière et 0,75 est la partie décimale du nombre. 
+7 est le chiffre des dixièmes et 5 est le chiffre des centièmes. 
+Ce nombre se lit : 
+ 
+Vingt-neuf unités et soixante-quinze centièmes ou vingt-neuf unités et  
+Sept dixièmes et cinq centièmes ou vingt-neuf unités virgule soixante-quinze. 
+ 
+Fraction 
+décimal 
+Chiffre des …… Nombre 
+décimal Dizaines unités dixièmes centièmes 
+    
+    2 9 7 5 29,75 
+ 
+  
+ 
+ 
+ 
+29,75 peut se décomposer : 
+ 
+         
+ 
+        
+ 
+            
+ 
+            
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+========== PAGE PDF 25 ==========
+25  
+COMPOSANTE III 
+ALGEBRE 
+RES 3-a : Support de cours 
+DROITE NUMERIQUE 
+RES 3-b : Précis du cours 
+OPERATION SUR L’ALGEBRE 
+ 
+ 
+ 
+.Plus un nombre entier naturel sera éloigné de 0 sur la droite, plus ce nombre sera grand. 
+ 
+ 
+ 
+ 
+ 
+ 
+Les nombres suivants sont représentés sur la droite numérique. 
+ 
+ 
+ 
+On peut voir que 6 est le nombre entier naturel avec la valeur la plus petite, car c'est celui 
+qui est le plus près de 0. Dans le même ordre d'idée, le nombre entier naturel 34 est celui avec la 
+plus grande valeur car il est le plus éloigné de 0. 
+L'ordre croissant de ces nombres est donné par : 6 < 13 < 20 < 34 
+L'ordre décroissant de ces nombres est plutôt donné par : 34 > 20 > 13 > 6 
+ 
+ 
+ 
+ L'associativité
+L'associativité est une propriété d'opération qui  permet de modifier l'ordre des calculs  en 
+regroupant des termes entre parenthèses sans modifier le résultat de l'opération. Cette propriété 
+s'applique à l'addition et à la multiplication. 
+Dans les exemples ci-dessous, la priorité des opérations s'applique. 
+ 
+ Associativité de l’addition : 
+(10 + 20) + 30 = 10 + (20 + 30) 
+30 + 30 = 10 + 50 
+60 = 60 
+
+
+========== PAGE PDF 26 ==========
+26  
+ 
+ Associativité de la multiplication : 
+(10 X 20)  X 30 = 6 000  = 10 X (20 X  30) = 6 000 
+6000 = 6000 
+ 
+ 
+ 
+Attention ! 
+La soustraction et la division ne sont pas des opérations associatives.  
+ (30 - 20) -   10 ≠ 30 - (20 - 10) 
+     10 - 10 ≠ 30 - 10 
+           0 ≠ 20 
+              (100 ÷ 20) ý 5 ≠ 100 ý (20 ý 5) 
+5 ý 5 ≠ 100 ÷ 4 
+       1 ≠ 25 
+ La commutativité
+La commutativité est la propriété d'une opération qui permet de modifier l'ordre des termes sans 
+changer le résultat. Cette propriété s'applique à l'addition et à la multiplication. 
+Commutativité de l’addition : 
+2 + 3 = 3 + 2 
+5 = 5 
+Commutativité de la multiplication :  
+2  3 = 3 2 
+6 = 6 
+Attention ! 
+La soustraction et la division ne sont pas des opérations commutatives.  
+10- 2 ≠ 2 - 10 
+8 ≠ -8 
+10 ÷ 2 ≠ 2 ÷  10 
+5 ≠ 0,2 
+ La distributivité
+ 
+La distributivité est la propriété d'une opération qui permet de distribuer une opération sur les 
+autres termes du calcul. Cette propriété s'applique à la multiplication. Ainsi, il est possible de 
+distribuer une multiplication sur une addition ou une soustraction  
+Exemple : 
+             2(10+5) = (2 10) + (5 2) 
+      2 15 = 20 + 10 
+
+========== PAGE PDF 27 ==========
+27  
+ 30 = 30  
+            2 (10-5) = (2 10) – (2 5) 
+    2 5 = 20-10 
+10 =10 
+  
+ 
+Attention ! 
+La division n'est pas une opération distributive.              
+                                                    10÷(3 + 2) ≠  (10 ÷ 3) + (10 ÷ 2) 
+10 ÷ 5 ≠ 3,33 + 5 
+2 ≠ 8,33 
+La distributivité dans les expressions algébriques 
+Comme la distributivité sur les nombres, la distributivité sur les expressions algébriques s'applique 
+sur chacun des termes à l'intérieur de la parenthèse. 
+Cependant, on ne multiplie que les coefficients de chaque terme dans la parenthèse par le nombre 
+placé en avant de celle-ci. 
+                                                      2 (2y + 3) = (2. 2y) + (2. 3) 
+                                                            4y + 6 = 4y + 6 
+6 (3a + 2y + 4ay + 8z + 9) = (6.3a) + (6.2y) + (6.4ay) + (6. 8 z) + (6. 9) 
+                        18a + 12y + 24ay + 48z + 54 = 18a + 12y + 24ay + 48z + 54 
+ 
+ L'élément neutre
+L'élément neutre est un nombre qui ne modifie pas le résultat d'une opération. 
+Pour l'addition, l'élément neutre est 0 alors que pour la multiplication, l'élément neutre est 1. Dans 
+le cas de l'addition, l'élément neutre est obtenu en additionnant un nombre avec son opposé. 
+Ainsi, on peut déduire que l'élément neutre de l'addition est 0. 
+ 
+Dans le cas de la multiplication, l'élément neutre est obtenu en multipliant un nombre  avec  son 
+inverse. 
+Ainsi, on peut déduire que l'élément neutre de la multiplication est 1. 
+Par contre, la méthodologie est un peu différente lorsqu'on aborde la soustraction et la division. 
+Attention ! 
+Dans la soustraction, il existe aussi un élément neutre. Il s'agit du 0. Cependant, comme la 
+soustraction n'est pas commutative, le 0 doit être placé en 2e. 
+10 - 0 = 10 
+0 - 10 = -10 
+Même chose pour la division. Dans ce cas, l'élément neutre est 1. Comme la division n'est pas 
+
+========== PAGE PDF 28 ==========
+28  
+RES 3-c : Support de cours 
+SYMBOLE DE COMPARAISON 
+commutative, le 1 doit être placé en 2e. 
+2 ÷ 1 = 2 
+1 ÷ 2 = 0,5 
+ L'élément absorbant
+L'élément absorbant est un nombre qui, lorsqu'il est présent dans un calcul, fait que le résultat est 
+toujours 0. 
+ 
+L'élément absorbant est présent dans la multiplication et il s'agit de 0. 
+10 0 = 0 
+3 0 = 0 
+Attention ! 
+L'addition, la soustraction et la division n'ont pas d'élément absorbant. 
+ 
+ 
+ 
+ 
+ 
+ Pour faire la comparaison des nombres, on utilise les symboles :
+ 
+
+
+========== PAGE PDF 29 ==========
+29  
+ Représentation des situations de comparaison
+ 
+
+ Remarques
+Lorsque vous effectuez ces activités, assurez-vous que la quantité des nombres que votre enfant 
+représente est appropriée. 
+Des représentations concrètes et visuelles organisées permettent à votre enfant d'utiliser son sens 
+spatial pour approfondir sa compréhension du nombre et des relations entre les nombres.
+
+
+========== PAGE PDF 30 ==========
+30  
+ 
+ 
+ 
+ Le lexique et/ou les symboles de mathématiques
+Moins – moins que, plus petit que, est inférieur à (<) Plus – plus 
+que, plus grand que, est supérieur à (>) 
+ 
+Égale à – est égale à, est le même que, pareil, (=) 
+ La comparaison des nombres à l’aide d’un outil d’apprentissage 
+Le déroulement de l’activité 
+Demander à votre enfant de : 
+1 Trouver deux représentations de nombres entiers dans les contextes 
+quotidiens que vous pouvez comparer. 
+2 Choisir un outil d’apprentissage de maties approprié pour représenter chacun des deux 
+nombres. 
+3 Identifier les comparaisons possibles entre les deux nombres. 
+4 Répéter l’activité comme vous le souhaitez. 
+ Exemple 
+Le pointage de score de basket-ball lors de match amical en 2017 
+Club jeune fille : 24 
+Club maman : 27 
+L’outil Refendre est sélectionné pour représenter les deux nombres. 
+ 
+ 
+ Illustrations 
+ 
+On peut représenter l'ordre de nombres naturels de petite valeur à l'aide de dessins. Ainsi, plus il y a 
+de dessins (de même valeur) nécessaires à la représentation d'un nombre, plus ce  nombre est grand. 
+ 
+
+
+========== PAGE PDF 31 ==========
+31  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+On peut voir que 1 est le plus petit nombre alors que 12 est le plus grand. 
+L'ordre croissant de ces nombres est donné par : 1 < 4 < 7 < 12 
+L'ordre décroissant est plutôt donné par : 12 > 7 > 4 > 1 
+
+========== PAGE PDF 32 ==========
+32  
+RES 4-a : Support de cours 
+DIFFERENCE ENTRE PERIMETRE ET SURFACE 
+1 an = 365 
+jours 
+1 jour =    
+ 0,00274 
+an, 
+1 jour = 24 
+heures, 
+1 heure 
+= 
+0,0417 
+jour, 
+1 heure = 60 
+minutes, 
+1 minutes 
+= 
+1 minute = 60 
+secondes, 
+1 seconde 
+= 
+RES 4-c : Précis du cours 
+LE MESURE DE LONGUEUR 
+ 
+ 
+ 
+L’aire d’une figure géométrique est la mesure de la surface qui se trouve à l’intérieur 
+de la figure. 
+ 
+ 
+ 
+ 
+ 
+Pour convertir une durée donnée dans une unité dans une autre, on utilise les relations : 
+ 
+ 
+ 
+ 
+Unités de mesure de longueur, de masse, de capacité 
+ 
+Voici un tableau des unités de longueur le plus les plus souvent utilisées 
+ 
+ 
+Préfixe kilo- hecto- déca-  déci- centi- milli- 
+Longueur 
+kilomètr e 
+(km) 
+hectomètr e 
+(hm) 
+décamètr e 
+(dam) 
+mètre 
+(m) 
+décimètr e 
+(dm) 
+centimètr e 
+(cm) 
+millimètr e 
+(mm) 
+Valeur 
+équivalent 
+e à 1 
+mètre 
+0,001 0,01 0,1 1 10 100 1 000 
+ 
+COMPOSANTE IV 
+MESURE 
+RES 4-b : Précis du cours 
+LES RELATIONS DES TEMPS 
+
+========== PAGE PDF 33 ==========
+33  
+Dans ce tableau, chaque unité est 10 fois plus grande que l'unité qui la suit. Ainsi, 1 mètre mesure 10 
+décimètres, 1 décimètre mesure 10 centimètres, et ainsi de suite. 
+REMARQUES 
+ On utilise le kilomètre (km) pour mesurer des distances parcourues en voiture. 
+ On utilise le mètre (m) pour mesurer des bâtiments. 
+ On utilise le centimètre (cm) pour mesurer des objets comme un crayon ou un bureau. 
+ On utilise le millimètre (mm) pour mesurer de très petits objets. 
+ 
+LA CONVERSION DES UNITES DE LONGUEURS 
+ 
+Définition 
+ 
+La conversion d'une unité de mesure consiste à exprimer une grandeur dans une unité de mesure 
+inférieure ou supérieure. 
+On peut utiliser le tableau des unités de mesure pour convertir une mesure en une autre. 
+ 
+Règle à suivre 
+ 
+Il faut : 
+ 
+Multiplier l'unité par 10 lorsqu'on la transforme en une unité plus petite ; 
+Diviser l'unité par 10 lorsqu'on la transforme en une unité plus grande. 
+Il faut multiplier ou diviser par 10 autant de fois qu'on se déplace de position. 
+ 
+ 
+Exemple 
+ 
+On veut convertir 2,3 kilomètres en mètres. 
+Pour passer de km à m, on multiplie par 10 à chaque changement d'unité. 
+
+
+========== PAGE PDF 34 ==========
+34  
+ 
+ 
+Règle 
+Selon cette méthode, il faut : 
+ Placer l'unité du nombre à la position de l'unité de mesure donnée et on place les autres nombres à 
+gauche de celui-ci ;
+ Mettre un 0 dans chaque colonne jusqu’ à la colonne de l'unité de mesure recherchée.
+On veut convertir 34 mètres en centimètres. 
+ 
+Exemple 
+1. Le chiffre 4 est l'unité du nombre, on place donc ce chiffre à la position des mètres dans le tableau. 
+2. On place le 3 dans la colonne à gauche des mètres car il est à gauche du 4 dans le nombre de 
+départ. 
+3. On met des 0 dans chaque colonne de droite, et ce, jusqu‟à la colonne des centimètres (puisque 
+l'objectif est de convertir en centimètres). 
+On obtient le nombre 3 400. Il y a effectivement 3 400 cm dans 34 m. 
+ 
+ 
+Lorsque l'on passe d'une unité de mesure plus petite à une unité plus grande, on doit mettre une 
+virgule dans la colonne de l'unité de mesure recherchée. 
+Exemple : On veut convertir 17 millimètres en mètres. 
+ 
+1. Le chiffre 7 est l'unité du nombre, on place donc ce chiffre à la position des millimètres dans le 
+tableau. 
+2. On place le 1 dans la colonne à gauche des millimètres car il est à gauche du 7 dans le nombre de 
+départ 
+RES 4-d : Guide d’orientation 
+LA METHODE DE TABLEAU DES UNITES 
+
+
+========== PAGE PDF 35 ==========
+35  
+RES 4-e: Ressource documentaire 
+LA MESURE DE SURFACE 
+(aire) 
+Aire de A = 25, il y a 25 carreaux 
+Aire de B = 27 il y a 27 carreaux 
+L’aire de A est plus petite que l’aire de 
+B. 
+ 
+km hm dam M dm cm Mm 
+       
+ 
+3. On ajoute ensuite un 0 dans chaque colonne jusqu’à la colonne des mètres (puisque 
+l'objectif est de convertir en mètres). 
+4. On ajoute finalement une virgule dans la colonne des mètres à la droite du 0. 
+ 
+5. On obtient ainsi le nombre 0,017 m. Il y a effectivement 0,017 mètre dans 17   millimètres. 
+ 
+km hm dam M dm Cm mm 
+   0, 0 1 7 
+ 
+ 
+ 
+ 
+L’aire d’une figure est la mesure de sa surface. On parle aussi de sa superficie. (La surface de A est la 
+partie coloriée en gris). 
+Pour calculer l’aire d’unefigure, il faut rechercher le nombre d’unités d’aire  qu’elle Si l’unité 
+d’aire est m2: 
+ Les unités de mesures d’aire (surface)
+L’unité de base utilisée pour mesurer des aires est le m² (mètre carré), mais on utilise aussi ses 
+multiples et sous-multiples : 
+- 1 mètre carré équivaut à la surface d’un carré dont les côtés mesurent 1 mètre.
+- 1 centimètre carré équivaut à la surface d’un carré dont les côtés  mesurent 1 centimètre :
+
+========== PAGE PDF 36 ==========
+36  
+ kilomètre carré équivaut à la surface d’un carré dont les côtés mesurent 1 kilomètre…
+ Les aires du carré et du rectangle 
+On calcule l’aire d’un carré ou d’un rectangle en multipliant les longueurs de deux côtés consécutifs : 
+ 
+ 
+ Les aires des figures simples : 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ Les conversions des unités de mesures d’aire (surface)
+Pour convertir les unités d’aire, on peut utiliser un tableau de conversion 
+
+
+========== PAGE PDF 37 ==========
+37  
+RES 4-f : Support de cours 
+CONVERSION ENTRE VOLUMES ET CAPACITES (1 L= 1DM3) 
+ 
+ 
+Lecture du tableau : 
+ 
+Ligne 1 : 1 m² = 100 dm² = 10 000 cm² 
+ 
+Ligne 2 : 0,5 dam² = 50 m² = 5 000 dm² = 0,005 hm² 
+ 
+Ligne 3 : 5,4 km² = 540 hm² = 5 400 000 m² 
+ 
+Ligne 4 : 4,5 cm² = 450 mm² = 0,045 dm² 
+ 
+ 
+ 
+ 
+
+
+========== PAGE PDF 38 ==========
+38  
+ 
+ 
+ 
+ 
+ 
+ 
+LEXIQUES : Les unités de mesures 
+ 
+ 
+ 
+ 
+ 
+ 
+QUELQUES UNITES DE BASE 
+Grandeur Unité légale Symbole 
+Longueur ou distance Mètre M 
+Angle plan Radian Rad 
+Masse Kilogramme Kg 
+Temps Seconde S 
+Capacité Litre ℓ 
+
+========== PAGE PDF 39 ==========
+39  
+ 
+ 
+COMPOSANTE V  
+GEOMETRIE 
+ 
+RES 5-a : Support de cours 
+DIFFERENTES FORMES GEOMETRIQUES 
+ 
+ 
+ 
+ Un triangle est un polygone à trois côtés. Il a également trois sommets et trois angles. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+========== PAGE PDF 40 ==========
+40  
+RES 5-b : ressource documentaire 
+NOTION DE TRIANGLE 
+RES 5-c : précis du cours 
+PROPRIETE DES TRIANGLES 
+ 
+ 
+ Les différents types des triangles
+ 
+ 
+
+ Un triangle est une figure plane qui a 3 côtés.
+ 
+
+
+========== PAGE PDF 41 ==========
+41  
+ 
+RES 5-d : Guide d’orientation 
+TRAÇAGE D’UN TRIANGLE 
+ 
+ Comment tracer un triangle quelconque ?
+
+Comment tracer un triangle quelconque ABC avec une règle et un compas ? [AB] = 6cm ; [BC]= 3cm et 
+[AC] = 4cm. 
+ 
+1) On commence par tracer le côté [AB] = 6 cm 
+ 
+ 
+2) Pour tracer le côté [AC] = 4cm, on trace un cercle de rayon 4cm en A. 
+ 
+ 
+ 
+3) Pour tracer le côté [BC] = 3 cm, on trace un cercle de rayon 3 cm en B. 
+ 
+ 
+
+
+========== PAGE PDF 42 ==========
+42  
+ 
+ 
+4) On place le point C à l’intersection des deux cercles. On relie les trois points. 
+ 
+ 
+ Comment tracer un triangle rectangle ?
+ 
+Comment tracer un triangle rectangle ABC ? 
+[AB] = 5 cm, [AC] = 3 cm. 
+ 
+1- On commence par tracer le premier côté [AB] 
+ 
+2- A l’aide de l’équerre, on trace le segment [BC] 
+ 
+3- On marque le point C 
+ 
+4- On relie les trois points et on marque l’angle droit 
+ 
+
+
+========== PAGE PDF 43 ==========
+43  
+ 
+RES 5-e : Ressource documentaire 
+FORME DES QUADRILATERES 
+ 
+ 
+ 
+ 
+RES 5-f : Support de cours 
+ UN QUADRILATERE 
+ 
+ 
+
+
+========== PAGE PDF 44 ==========
+44  
+  
+ 
+RES 5-g : guide d’orientation 
+ TRAÇAGE D’UN RECTANGLE 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+========== PAGE PDF 45 ==========
+45  
+RES 5-i : Guide d’orientation 
+METHODE DE CONSTRUCTION D’UN CERCLE 
+ 
+ 
+ 
+ 
+ 
+Pour tracer un cercle, on utilise un compas. 
+Pour décrire un cercle, il faut connaître quelques mots et expressions : 
+ 
+ 
+ Le point O est le centre du cercle. 
+ Le segment [OB] est le rayon du cercle. 
+ Le segment [AC] est le diamètre du cercle. (C’est égal à 2 fois le rayon). 
+ Le segment [DE] est une corde du cercle. 
+ Le cercle a pour centre le point O et passe par le point A. 
+ Un demi-cercle est la moitié d’un cercle. 
+ Les points qui sont situés à l’intérieur du cercle sont sur le disque de centre O et de rayon [OB] 
+ 
+ 
+Construire un cercle de centre O et de rayon R = 4cm 
+1) On place le centre O du cercle 
+ 
+ 
+ 
+2) On mesure le rayon R= 4 cm à partir du centre O, on le marque avec un crayon 
+ 
+ 
+RES 5-h : Ressource documentaire 
+NOTION DE CERCLE 
+
+
+========== PAGE PDF 46 ==========
+46  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3) Enfin, on trace le cercle de centre O et de rayon R = 4cm 
+ 
+ 
+ 
+RES 5-j: précis du cours  
+CONSTRUCTION DES DROITES 
+ 
+ 
+ Construction de droites perpendiculaires
+Pour construire des droites perpendiculaires, on utilise l’équerre que l’on aligne sur  l’une des 
+droites du côté de l’angle droit. Puis on trace la seconde droite en suivant l’autre côté de l’angle 
+droit. 
+1) Construire la première droite 
+ 
+ 
+ 
+2) A l‟aide d‟une équerre, tracer la droite perpendiculaire 
+ 
+ 
+
+
+========== PAGE PDF 47 ==========
+47  
+3) Enfin, utiliser une règle pour prolonger le tracé 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Construire la droite parallèle
+ 
+Construire la droite (D2) parallèle à la droite (D1) et passant par le point A 
+ 
+ 
+ 
+1) On trace la droite (D) perpendiculaire (D1) à l’aide d’une équerre 
+ 
+ 
+2) On trace ensuite la deuxième droite (D2) qui est perpendiculaire à (D) 
+
+
+========== PAGE PDF 48 ==========
+48  
+RES 5-k : support de cours 
+MODELE DE GEOPLANS ISOMETRIQUES 
+ 
+3) Enfin, on prolonge le tracé avec une règle 
+ 
+ 
+ 
+ 
+ 
+ 
+Deux droites parallèles ne se coupent jamais. Pour construire deux droites parallèles, on construit 
+deux droites qui sont perpendiculaires à une même droite. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+========== PAGE PDF 49 ==========
+49  
+ 
+ 
+ 
+ Exemple de figures planes à reproduire 
+ 
+ 
+ Exemple de figures solides à construire 
+ 
+ 
+
+
+========== PAGE PDF 50 ==========
+50  
+ Nom des figures solides 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+- 
+- 
+- 
+- 
+- 
+- Figures solides dans l’environnement 
+
+
+
+
+
+
+
+========== PAGE PDF 51 ==========
+51  
+RES 5-l : Support de cours 
+LE CYLINDRE DE REVOLUTION 
+
+
+
+
+
+
+- Figures solides et patrons
+Pour construire un solide, on utilise un patron. C’est une représentation à plat (en dimensions) que l’on 
+peut plier pour reconstituer le solide. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. Définitions  
+Un cylindre de révolution est un solide qui a : 
+Deux faces parallèles qui sont des disques de même rayon. Ces disques sont appelés  les bases du  
+cylindre. 
+Une surface latérale qui peut être déroulée en un rectangle. 
+La hauteur d’un cylindre de révolution est la longueur du segment qui joint les centres des disques 
+
+
+========== PAGE PDF 52 ==========
+52  
+de base. 
+2. Patron 
+ 
+ 
+RES 5-m : Support de cours 
+ACTIVITE SUR FIGURES SOLIDES DANS L’ENVIRONNEMET 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+========== PAGE PDF 53 ==========
+53  
+RES 5-n : Guide d’orientation  
+TRANSLATION D’UNE FIGURE 
+ 
+Translation 
+ 
+Effectuer la translation d’une figure, c’est faire glisser cette figure sans le tourner. 
+Ce glissement est défini par un sens, une direction et une longueur. 
+ 
+ 
+1) On commence par étudier le déplacement 
+ 
+ 
+ 
+2) On reproduit le déplacement sur les points qui composent la figure 
+ 
+ 
+3) On relie les points 
+
+
+========== PAGE PDF 54 ==========
+54  
+RES 5-o : précis du cours 
+SYMETRIE D’UNE FIGURE 
+ 
+ 
+ 
+ 
+ 
+Pour savoir si deux dessins sont symétriques, on peut plier le long de l’axe. Si les dessins se 
+superposent exactement, alors ils sont symétriques. 
+our tracer le symétrique d’une figure, il faut compter les carreaux à partir de l’axe 
+ 
+. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1) On commence par compter les carreaux à partir de l’axe. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+========== PAGE PDF 55 ==========
+55  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2) On reproduit les points qui composent la figure 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3) On relie les points 
+
+========== PAGE PDF 56 ==========
+56  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+COMPOSANTE VI 
+TRAITEMENT DES DONNEES ET PROBABILITES 
+ 
+RES 6-a : Ressource documentaire  
+COLLECTE DE DONNEES 
+ 
+ (Notion sur les différentes stratégies de collecte de données (approches : dénombrement  complet, 
+échantillonnage ; méthodes : enregistrement, questionnaire, observation directe, entretien, …) 
+1- Définitions 
+La collecte des don nées consiste à enregistrer une ou plusieurs variables (longueur,  durée, etc.) 
+auprès des membres d'une population d’unités de données. Deux principales approches sont  
+possibles : 
+- Le dénombrement complet par lequel tous les membres de l'ensemble de la popu lation sont 
+mesurés ; 
+- L’échantillonnage par lequel seule une proportion des membres de la population totale est  
+
+========== PAGE PDF 57 ==========
+57  
+mesurée. 
+2- Méthodes 
+Le choix de la méthode dépend de la stratégie de collecte des données, du type de  variable, de la  
+précision souhaitée, du poin t de collecte et des compétences de l'agent  recenseur. Les relations qui 
+existent entre une variable, sa provenance, et les méthodes concrètement utilisées pour sa 
+collecte peuvent aider à choisir la méthode appropriée. Les principales méthodes de collecte sont 
+les suivantes : 
+- L’enregistrement : les registres et les licences sont particulièrement utiles pour un  
+dénombrement complet mais se limitent aux variables qui évoluent lentement. 
+- Les questionnaires : ce sont des formulaires qui sont remplis et retournés par les 
+déclarants. C'est une méthode peu coûteuse, utile là où les taux d'alphabétisation sont  élevés et les  
+déclarants coopératifs. 
+Exemple de réalisation d’un simple sondage : 
+ 
+Dans une Classe de 25 apprenants (population étudiée notée PE), prenez 5 apprenants, 
+demandez à ces apprenants leurs préférences parmi les biscuits suivants : « Bolo » ou 
+« Happy » ? Supposons le résultat suivant : Apprenant 1 : Bolo 
+Apprenant 2 : Bolo  
+Apprenant 3 : Happy  
+Apprenant 4 : Bolo  
+Apprenant 5 : Happy 
+ 
+Donc, 3 apprenants aiment le biscuit « Bolo » et 2 autres aiment « Happy ». Le Taux de Sondage 
+pour  
+« Bolo » est de 3/5 et celui de « Happy » est de 2/5. On peut écrire ainsi :  
+- TS « Bolo » est 3/5 
+- TS « Happy » est 2/5 
+ 
+Prévision des réponses possibles 
+Pour connaître les réponses possibles (RP), il suffit de multiplier les taux de sondage par le nombre 
+de la population étudiée. 
+Combien d’apprenants aiment le biscuit « Bolo » parmi tous les apprenants selon la prévision  
+de réponses ? 
+=> C’est possible que 15 apprenants parmi les 25 aiment le biscuit « Bolo ». 
+
+========== PAGE PDF 58 ==========
+58  
+RES 6-b : précis du cours 
+REPRESENTATION DES DONNEES PRIMAIRES 
+Combien d’apprenants aiment le biscuit « Happy » parmi tous les apprenants selon la prévision 
+de réponses ? 
+=> C’est possible que 10 apprenants parmi les 25 aiment le biscuit « Happy ». Comparaison des 
+résultats  
+Soit la suite de l’expérience précédente, on a questionné le reste des apprenants. 
+Décrire les résultats obtenus de tous les apprenants. Les comparer avec RP (Bolo) et RP(Happy). 
+ Comment se présente l’écart ? 
+ Le sondage est-il éloigné de la réalité ? 
+ Si éloigné, quel était le problème lié à cette défaillance ? 
+ Si non, le sondage était bien réalisé et se rapproche de la réalité 
+ 
+ 
+ 
+ 
+Soit le sondage précédent dont le résultat est : 
+Apprenant 1 : Bolo Apprenant 2 : Bolo Apprenant 3 : Happy 
+Apprenant 4 : Bolo  
+Apprenant 5 : Happy 
+ 
+Donc, 3 apprenants aiment le biscuit « Bolo » et 2 autres aiment « Happy ». Le Taux de Sondage 
+pour  
+« Bolo » est de 3/5 et celui de « Happy » est de 2/5. On peut écrire ainsi :  
+- TS « Bolo » est 3/5 
+- TS « Happy » est 2/5 
+Il y a une autre façon de représenter le résultat de ce sondage, dans un tableau des  effectifs. 
+Expliquer aux apprenants les contenus du tableau et de représentation graphique en le comparant au 
+résultat du précédent sondage. 
+ 
+Biscuits Effectif des 
+
+
+========== PAGE PDF 59 ==========
+59  
+RES 6-c : ressource documentaire 
+REPRESENTATIONS GRAPHIQUES DES DONNEES COLLECTEES 
+apprenants 
+Bolo 3 
+Happy 2 
+Effectif total 5 
+ 
+ 
+                                                    Population étudiée  
+                                                    Effectif de la population  
+                                                    Caractère étudié  
+                                                    Valeurs de caractère étudié  
+                                                    Effectif total 
+ 
+ 
+ 
+ 
+ 
+Description et interprétation du tableau des effectifs 
+Amenez les apprenants à expliquer le contenu du tableau des effectifs en sortant des différentes notions 
+relatives à l’organisation des données. 
+De quoi parle le sondage ? Biscuit préféré des apprenants de la Classe => Caractère 
+ 
+Qui étaient questionnés ? Nous, les apprenants de la Classe => Population étudié e Quelles sont les 
+différents biscuits à choisir ? => Ce sont les valeurs du caractère 
+ 
+Pictogramme ou nuage des points  
+ 
+Les données qui sont agencées dans des colonnes et des lignes sur une feuille de calcul peuvent être  
+représentées dans un  graphique e n nuages de points (XY).  Les graphiques en nuages de points  
+représentent les relations entre les valeurs numériques de plusieurs séries de  données ou deux  
+groupes de nombres sous forme d’une seule série de coordonnées xy. 
+Un graphique en nuages de points comporte deux axes de valeurs, l’un affichant des données 
+numériques sur l’axe horizontal (axe x) et l’autre sur l’axe vertical (axe y). Il associe ces valeurs  
+ 
+
+========== PAGE PDF 60 ==========
+60  
+dans des points de données et les affiche à des intervalles irréguliers ou groupes. Les graphiques 
+en nuages de points sont généralement  utilisés pour afficher et comparer des  valeurs numériques, 
+telles que des données scientifiques, statistiques et d’ingénierie. 
+ 
+Il est conseillé d’utiliser un graphique en nuages de points lorsque : 
+ 
+ vous souhaitez changer l’échelle de l’axe horizontal ; 
+ 
+ vous souhaitez que l’axe horizontal soit une échelle logarithmique ; 
+ 
+ les valeurs de l’axe horizontal ne sont pas régulièrement espacées ; 
+ 
+ l’axe horizontal comporte de nombreux points ; 
+ 
+ vous souhaitez afficher le s données de la feuille de données qui comprennent des  paires ou des 
+valeurs regroupées et ajuster les échelles indépendantes d’un graphique en nuage de points pour fournir 
+plus d’informations sur les valeurs regroupées ; 
+ vous souhaitez afficher les similitudes entre les grands ensembles de données au lieu des 
+différences entre les points de données ; 
+ vous souhaitez comparer plusieurs points de données quelle que soit la période ; plus vous  
+incluez de données dans un graphique en nuages de points, plus les comparaisons sont satisfaisantes. 
+Pour agencer les données sur une feuille de données afin de les représenter dans un graphique en 
+nuages de points, placez les valeurs x dans une ligne ou une colonne, puis ajoutez les valeurs 
+correspondantes dans les lignes ou colonnes adjacentes. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+========== PAGE PDF 61 ==========
+61  
+RES 6-d : précis du cours 
+REPRESENTATION D’UN NUAGE DE POINTS 
+ 
+ 
+ 
+ 
+Méthode : Représenter un nuage de points 
+Le tableau suivant présente l’évolution du budget publicitaire et du chiffre d’affaires d’une 
+société au cours des 6 dernières années : 
+Budget publicitaire 
+en milliers d’euros xi 
+ 
+8 
+ 
+10 
+ 
+12 
+ 
+14 
+ 
+16 
+ 
+18 
+Chiffre d’affaires 
+en milliers d’euros 
+ 
+40 
+ 
+55 
+ 
+55 
+ 
+70 
+ 
+75 
+ 
+95 
+ 
+2) Dans un repère, représenter le nuage de points (xi ; yi). 
+3) Déterminer les coordonnées du point moyen G du nuage de points 
+ 
+ 
+ 
+2) x = (8 + 10 + 12 + 14 + 16 + 18) : 6 = 13 
+Y = (40 + 55 + 55 + 70 + 75 + 95) : 6 = 65. 
+Le point moyen G du nuage de points a pour coordonnées (13 ; 65). On peut placer ce point dans le 
+repère. 
+Les coordonnées du point moyen G sont (x ; y) tel que x est la moyenne des xi et y est la moyenne 
+des yi 
+
+
+========== PAGE PDF 62 ==========
+62  
+RES 6-e : ressource documentaire 
+DIAGRAMME 
+ 
+Diagramme en barre (en bâtons ou à bandes) : 
+ 
+Un diagramme à bandes est utilisé lorsque nous voulons voir des informations de 
+manière répartie. Il peut être utilisé afin de compiler n'importe quelles données, dans l'exemple 
+ci-haut, il s'agit des animaux de compagnie que des gens ont. Il est à noter qu'un tableau peut 
+être représenté au vertical, ou à l'horizontal. Dans l'exemple ci-haut, le diagramme est affiché à 
+la verticale car les bandes grandissent vers le haut. 
+Les éléments importants d'un diagramme à bandes sont les suivants : 
+ 
+Le titre : Celui-ci indique de quoi il est question dans le diagramme. Dans le cas  présent, il 
+est formulé sous forme de question en demandant « Quel est votre animal de compagnie ? » 
+Les sous -titres : Ceux -ci servent à identifier quelles sont les données cumulées. Dans  notre 
+exemple, le premier sous-titre indique que les données qui grandiront au vertical. 
+Représenteront le nombre de personnes, tandis que lui au-dessous du tableau représente le type 
+d'animal choisi. 
+Les données quantitatives : Dans nos mots, cela veut dire les données représentées par des  
+nombres. À la gauche du tableau, on peut voir des nombres allant en ordre croissant (0, 5,  10, 15, 
+20, 25, 30, 35). De plus, ces nombres sont associés au sous-titre « nombre de personnes »,  
+cela fait donc du sens de donner une valeur à ces nombres pour savoir combien  de personnes ont 
+répondus. 
+
+
+========== PAGE PDF 63 ==========
+63  
+ 
+
+========== PAGE PDF 64 ==========
+64  
+RES 6- g : support de cours 
+PROBABILITE 
+RES 6-f: précis du cours 
+DIAGRAMME EN BATONS 
+Les données qualitatives : Si on les compare avec le point précèdent, celles-ci ne 
+représentent pas des nombres, mais des mots ! Notre sous-titre lié à cette section est le type 
+d'animal. Il est, donc, normal de répondre à un type d'animal par « chien » ou « chat » et non 
+«15 » ! 
+Les bandes : Enfin, les bandes constituent l'élément le plus important de notre diagramme,  
+car sinon on ne pourrait pas l'appeler le diagramme à bandes ! Celles -ci représentent les données  
+recueillies par un sondage. Dans le cas présent, celles -ci nous permettent de voir que 10 personnes  
+ont des oiseaux, 20 des chats, etc. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Définition 
+La probabilité est liée au hasard. Celle-ci décrit la possibilité qu’un résultat se produise. 
+Le résultat 
+Dans les expériences liées au hasard, un résultat peut être : 
+ 
+IMPOSSIBLE, POSSIBLE, CERTAIN. 
+Par exemple, prenons un dé à 6 faces : 
+ 
+Il contient 6 faces numérotées de 1 à 6 illustrées ci-dessous : 
+ 
+
+
+========== PAGE PDF 65 ==========
+65  
+ 
+ 
+ 
+ 
+ 
+ 
+Donc, lançons le dé en l’air.  
+- Il sera IMPOSSIBLE d’obtenir 0 ou 7 ou 8 ou autre nombre supérieur à 6. 
+- Il sera POSSIBLE d’obtenir 1, 2, 3, 4, 5, ou 6. Ce serait possible aussi de piger un 
+chiffre pair (2, 4, 6) ou un chiffre impair (1, 3, 5). 
+- Il est CERTAIN d’obtenir un de ces nombres : 1, 2, 3, 4, 5, 6. 
+En cas de résultat POSSIBLE  
+Il pourra être : 
+- MOINS PROBABLE,  
+- EGALEMENT PROBABLE, ou  
+- PLUS         PROBABLE. 
+Par exemple, soit un sac contenant 8 jetons de 4 couleurs différentes : 
+ 
+ 
+- Il sera MOINS PROBABLE de piger un jeton rouge ou bleu, autant de fois qu’avec les 
+jetons vert et jaune car il n’y en a qu’un sur 8 jetons dans le sac. 
+- Il sera EGALEMENT PROBABLE de piger un jeton rouge qu’un jeton bleu car le 
+nombre de chaque jeton est égal. 
+
+
+========== PAGE PDF 66 ==========
+66  
+- Il sera PLUS PROBABLE d’obtenir un jeton jaune car il y en a beaucoup dans le sac, plus 
+que les autres.
+
+========== PAGE PDF 67 ==========
+67  
+RES 6-h : Ressource documentaire 
+PROBABILITES EXPERIMENTALES 
+RES 6-i : Ressource documentaire 
+NOTION SUR L’ECHELLE DE PROBABILITE 
+ 
+ 
+ 
+ 
+ 
+Définition
+La probabilité expérimentale est la probabilité qu’un résultat se produise après répétition 
+d’essai. Un essai est le fait de tirer au hasard ou de piger au hasard. Lors des essais,  il est possible de 
+mettre les résultats  dans un tableau appelé  « tableau de dénombrement ».  La probabilité 
+expérimentale est le nombre de réalisation d’un évènement (E) par rapport au nombre d’essais 
+réalisés. 
+Exemple :,  
+Soit un sac contenant 3 billes de couleurs différentes : blanche, rouge, verte. 
+On pige une bille dans le sac, et on répète l’action 10 fois. Les résultats obtenus sont inscrits dans le 
+tableau de dénombrement suivant : 
+ 
+Blanche Verte Verte Rouge Blanche 
+Blanche Blanche Rouge Blanche Blanche 
+ 
+Donc, on a obtenu 2 fois les couleurs Rouge et Verte, 6 fois la couleur Blanche. 
+- Il est également probable d’obtenir une couleur verte que rouge. 
+- Il est plus probable de tirer une bille blanche. 
+- Il est moins probable de tirer une boule rouge que blanche. 
+ 
+ 
+C’est une forme de présentation approximative de probabilité d’un évènement, de la chance de 
+réalisation d’un évènement. Sur une échelle de probabilité, la chance de réa lisation d’un évènement 
+varie de l’impossible au certain, en passant par le milieu qui correspond à l’égalité de chance. 
+
+
+========== PAGE PDF 68 ==========
+68  
+ 
+Soit un évènement E et P(E) la probabilité de l’évènement E, les chances de réalisation de 
+l’évènement E, sur une échelle de probabilité, sont représentées dans le tableau suivant :
+
+========== PAGE PDF 69 ==========
+ 
+ 
+Pour mémorisation 
+ 
+POUR MEMORISATION 
+ 
+Conditions 
+Chances de réalisation de E 
+P(E) = 0 Impossible 
+0 < P(E) < 0,25 Improbable 
+0,25 ≤ P(E) < 0,5 Peu probable 
+P(E) = 0,5 A égalité de chance 
+0,5 < P(E) < 0,75 Probable 
+0,75 ≤ P(E) < 1 Très probable 
+P(E) = 1 Certain 
+ 
+ 
+Exemples de situations 
+ Je vais aller faire de l’équitation après l’école. 
+ Il y aura de la pluie demain. 
+ Je vais manger un fruit pour le dîner. 
+ Je vais peindre aujourd’hui. 
+ Je vais voir mon cousin aujourd’hui. 
+ Je vais jouer avec un chien après l’école. 
+ Je vais aller chez le médecin cette semaine. 
+ Je vais trouver un œuf de dinosaure un jour. 
+ Je vais voir une girafe sur le toit de l’école cet été. 
+ Je vais boire trois verres d’eau après souper. 
+ Il y aura un arc-en-ciel dans le ciel au mois de janvier. 
+ Nous sortirons à la récréation cet après-midi. 
+ Je vais voir un bonhomme de neige en retournant à la maison cet après-midi. 
+ Je vais me coucher avant 20 h ce soir. 
+ Je vais lire une histoire avec quelqu’un aujourd’hui. 
+ Mon enseignante aura 100 ans cette année. 
+ Je vais aller à la plage cet après-midi. 
+ 
+ 
+ 
+
+========== PAGE PDF 70 ==========
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SCIENCES ET TECHNOLOGIE 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+& 
+  
