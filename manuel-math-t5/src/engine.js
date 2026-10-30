@@ -49,6 +49,22 @@ const img = (buf, widthPx = 500) => {
   const { w, h } = pngSize(buf);
   return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 120, after: 120 }, children: [new ImageRun({ type: 'png', data: buf, transformation: { width: widthPx, height: Math.round(widthPx * h / w) } })] });
 };
+function jpgSize(buf) {
+  let i = 2;
+  while (i < buf.length - 9) {
+    if (buf[i] !== 0xFF) { i++; continue; }
+    const marker = buf[i + 1];
+    if (marker >= 0xC0 && marker <= 0xCF && ![0xC4, 0xC8, 0xCC].includes(marker)) {
+      return { h: buf.readUInt16BE(i + 5), w: buf.readUInt16BE(i + 7) };
+    }
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  return { w: 1150, h: 627 };
+}
+const imgJpg = (buf, widthPx = 470) => {
+  const { w, h } = jpgSize(buf);
+  return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 100, after: 120 }, children: [new ImageRun({ type: 'jpg', data: buf, transformation: { width: widthPx, height: Math.round(widthPx * h / w) } })] });
+};
 
 function firstSentences(text, maxLen) {
   const parts = text.split('. '); let out = '';
@@ -66,6 +82,8 @@ function seance(s, i, uNo, figBufs) {
   const short = (text, max = 360) => firstSentences(String(text || ''), max);
   a.push(page());
   a.push(title(s.t.toUpperCase(), 1, `u${uNo}_l${i}`));
+  const scenePath = path.join(__dirname, '..', 'assets', 'scenes', `u${uNo}s${i}.jpg`);
+  if (fs.existsSync(scenePath)) a.push(imgJpg(fs.readFileSync(scenePath)));
 
   if (s.layout === 'nombres') {
     a.push(title('1. Les nombres jusqu’à 1 000 000', 2));

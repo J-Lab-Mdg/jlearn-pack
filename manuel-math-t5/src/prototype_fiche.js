@@ -3,7 +3,7 @@ const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   WidthType, AlignmentType, BorderStyle, ShadingType, PageBreak,
-  Header, Footer, PageNumber, TableLayoutType
+  Header, Footer, PageNumber, TableLayoutType, ImageRun
 } = require('docx');
 
 const C = {
@@ -62,6 +62,14 @@ children.push(new Paragraph({
   spacing: { after: 220 },
   children: [run('LIRE ET ÉCRIRE LES NOMBRES JUSQU’À 1 000 000', { bold: true, color: C.red, size: 32 })]
 }));
+const scenePath = path.join(__dirname, '..', 'assets', 'scenes', 'u1s1.jpg');
+if (fs.existsSync(scenePath)) {
+  children.push(new Paragraph({
+    alignment: AlignmentType.CENTER,
+    spacing: { before: 20, after: 140 },
+    children: [new ImageRun({ type: 'jpg', data: fs.readFileSync(scenePath), transformation: { width: 470, height: 256 } })]
+  }));
+}
 
 children.push(heading('1. Les nombres jusqu’à 1 000 000'));
 children.push(para('Pour ne pas se tromper, on écrit le nombre de droite à gauche, une case à la fois. On sépare d’abord le nombre en groupes de trois chiffres à partir de la droite.'));
