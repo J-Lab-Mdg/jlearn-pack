@@ -255,7 +255,7 @@ FICHE = fiche(ZT, LT, LESONA, EXOS, FANITSIANA, LALANA, seho="1", isan="2", sary
     "RAPE T6, édisiona septambra 2026, plateforme.education.mg → /theme/biblio/pix/pdf/RAPE_T6.pdf "
     ": taranja Malagasy, p.6-7 — herinandro 1→33, andiany 5 (7-7-7-6-6), 4 ora/kerinandro ; "
     "« Fanaambanan-teny » = coquille amin'ny RAPE.",
-    "FRP 6ème Malagasy (soram-boaka taloha 93 pejy, « FRP_6eme_MLG.pdf »), p.74-76 : « réserve » "
+    "FRP 6ème Malagasy (93 pejy, « FRP_6eme_MLG.pdf »), p.74-76 : « réserve » "
     "an'ny lesona efa voasoratra feno (LFK 1a-1e) ; LFK 1d sy 1e = lesona manaraka (S2 sy S3).",
     "PE T6, PROGRAMME D'ETUDES — PDF « PE T6.pdf », taranja Malagasy, p.12-26 : p.13 « LANJAN'ORA "
     ": ora 4 isan-kerinandro » ; p.15 « FAFAN'NY VOTOATINY : Fiasan'ny teny — Tsipelina : Teny "
