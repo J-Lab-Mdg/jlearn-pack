@@ -5,51 +5,21 @@ const { head, svg, txt, nline, dot, tableEl, box, arrow, seg, bar, grid100, PINK
 
 const figs = {};
 // S1 — lire et écrire jusqu'à 1 000 000 (mots-nombres + tableau CDU + cache)
-figs.u1f1 = (() => { const { s, y } = head('Lire un grand nombre : mots-nombres, tableau, cache', ['Une classe = toujours 3 chiffres (C D U). On lit une classe à la fois, jamais tout d’un coup.']);
-  const top = y + 6;
-  let b = box(60, top, 880, 44, 'RÉVISION DES MOTS-NOMBRES DES DIZAINES (appris au T3)', BLUEL, BLUE, 21);
-  const mots = ['vingt', 'trente', 'quarante', 'cinquante', 'soixante'];
-  mots.forEach((m, i) => b += box(60 + i * 178, top + 56, 168, 40, m, GREENL, GREEN, 19));
-  b += txt(938, top + 82, '…', 24, GREEN, 'bold', 'middle');
-  const pieges = [['70 : soixante-dix (60 + 10)', '75 → soixante-quinze'], ['80 : quatre-vingts (4 × 20)', '85 → quatre-vingt-cinq'], ['90 : quatre-vingt-dix (80 + 10)', '95 → quatre-vingt-quinze']];
-  pieges.forEach((pg, i) => {
-    const x = 60 + i * 298;
-    b += `<rect x="${x}" y="${top + 112}" width="286" height="78" rx="10" fill="#FDE7EF" stroke="${PINK2}" stroke-width="3"/>`;
-    b += txt(x + 143, top + 143, pg[0], 19, PINK2, 'bold', 'middle');
-    b += txt(x + 143, top + 175, pg[1], 18, '#222', 'normal', 'middle');
-  });
-  const ty = top + 218, cw = 70, x0 = 86;
-  const classes = ['MILLIARDS', 'MILLIONS', 'MILLE', 'UNITÉS'];
-  classes.forEach((cl, i) => {
-    b += `<rect x="${x0 + i * 3 * cw}" y="${ty}" width="${3 * cw}" height="44" fill="${i === 3 ? GREENL : BLUEL}" stroke="${BLUE}" stroke-width="3"/>`;
-    b += txt(x0 + i * 3 * cw + 3 * cw / 2, ty + 30, cl, 20, '#222', 'bold', 'middle');
-  });
-  const cdu = ['C', 'D', 'U', 'C', 'D', 'U', 'C', 'D', 'U', 'C', 'D', 'U'];
-  const digs = ['6', '', '', '1', '4', '8', '3', '7', '5', '2', '0', '4'];
-  cdu.forEach((c, i) => {
-    const x = x0 + i * cw;
-    b += `<rect x="${x}" y="${ty + 44}" width="${cw}" height="34" fill="#FFF3E0" stroke="${BLUE}" stroke-width="2"/>`;
-    b += txt(x + cw / 2, ty + 44 + 24, c, 17, OCRE, 'bold', 'middle');
-    b += `<rect x="${x}" y="${ty + 78}" width="${cw}" height="54" fill="white" stroke="${BLUE}" stroke-width="2.5"/>`;
-    if (digs[i]) b += txt(x + cw / 2, ty + 78 + 38, digs[i], 30, '#222', 'bold', 'middle');
-  });
-  b += arrow(x0 + 11.4 * cw, ty + 172, x0 + 0.6 * cw, ty + 172, GREEN, 4);
-  b += txt(500, ty + 200, 'POUR ÉCRIRE : de droite à gauche (le chiffre des unités entre le premier)', 19, GREEN, 'bold', 'middle');
-  b += txt(500, ty + 230, 'POUR LIRE : de gauche à droite, une classe après l’autre', 19, PINK2, 'bold', 'middle');
-  const ky = ty + 258;
-  b += txt(500, ky, 'LE CACHE : une fenêtre découpée dans un carton', 20, BLUE, 'bold', 'middle');
-  const kx = 105, kw = 190;
-  ['6', '148', '375', '204'].forEach((n, i) => {
-    b += `<rect x="${kx + i * (kw + 14)}" y="${ky + 16}" width="${kw}" height="58" fill="${i === 3 ? 'white' : '#B0BEC5'}" stroke="${BLUE}" stroke-width="3"/>`;
-    b += txt(kx + i * (kw + 14) + kw / 2, ky + 56, n, 30, i === 3 ? PINK2 : '#546E7A', 'bold', 'middle');
-  });
-  b += txt(310, ky + 104, 'classes cachées', 17, '#546E7A', 'normal', 'middle');
-  b += txt(790, ky + 104, 'je lis : « deux cent quatre »', 19, PINK2, 'bold', 'middle');
-  b += txt(500, ky + 136, 'on ne découvre qu’une classe : 3 chiffres, aucune confusion possible', 19, '#222', 'normal', 'middle');
-  b += txt(500, ky + 168, '6 148 375 204 → six milliards cent quarante-huit millions', 20, GREEN, 'bold', 'middle');
-  b += txt(500, ky + 198, 'trois cent soixante-quinze mille deux cent quatre', 20, GREEN, 'bold', 'middle');
-  b += box(140, ky + 218, 720, 44, '« quarante mille sept » → 40 | 007 → 40 007 (3 chiffres par classe)', '#FFF3E0', OCRE, 19);
-  return svg(1000, ky + 278, s + b); })();
+figs.u1f1 = (() => { const { s, y } = head('Lire et écrire un nombre par classes', ['Je sépare toujours les chiffres par groupes de trois.']);
+  const top = y + 18, cw = 78, x0 = 145;
+  const data = [
+    ['MILLIONS','MILLIONS','MILLIONS','MILLE','MILLE','MILLE','UNITÉS','UNITÉS','UNITÉS'],
+    ['C','D','U','C','D','U','C','D','U'],
+    ['','','','3','4','8','2','5','6']
+  ];
+  let b = tableEl(x0, top, Array(9).fill(cw), 46, data, BLUEL);
+  b += txt(500, top + 178, '348 | 256', 32, PINK2, 'bold', 'middle');
+  b += txt(500, top + 216, '348 mille et 256 unités', 21, GREEN, 'bold', 'middle');
+  b += arrow(500, top + 238, 500, top + 270, GREEN, 4);
+  b += box(120, top + 282, 760, 54, '348 256 se lit : trois cent quarante-huit mille deux cent cinquante-six.', GREENL, GREEN, 22);
+  b += txt(500, top + 378, 'Pour écrire : « deux cent trois mille soixante-dix » → 203 | 070', 22, BLUE, 'bold', 'middle');
+  b += box(235, top + 400, 230, 52, '203', BLUEL, BLUE, 28) + box(535, top + 400, 230, 52, '070', GREENL, GREEN, 28);
+  return svg(1000, top + 480, s + b); })();
 // S2 — valeur de position
 figs.u1f2 = (() => { const { s, y } = head('Le tableau de numération', ['Dans 507 213, le même chiffre ne vaut pas partout la même chose.']);
   const top = y + 20;
