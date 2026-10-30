@@ -149,6 +149,9 @@ function lessonS61() {
     p("", { after: 60 }),
     pr([run("La leçon de Soafara : ", { bold: true }),
         run("« Le lac nourrit tout le village, c'est aussi ma responsabilité ! »", { italic: true, color: COLOR })]),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Qui est le héros du conte, et où vit-il ?"),
+    p("2. Quelle épreuve traverse-t-il ? Comment l'histoire finit-elle ?", { after: 60 }),
   ];
 }
 
@@ -228,6 +231,8 @@ function lessonS62() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« raconter un conte », « raconter une histoire »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« dire un conte »" + ".")]),
+    sub("Exercice — ouvre les bons tiroirs :"),
+    p("Commence un conte avec une formule d'ouverture, un indicateur de temps et un personnage du merveilleux : « ……… , ……… , vivait ……… »", { after: 60 }),
   ];
 }
 
@@ -309,6 +314,8 @@ function lessonS63() {
     mot("bienfaiteur", "celui qui fait le bien (bien + faire)."),
     mot("une péripétie", "une aventure, un rebondissement du récit."),
     mot("un récif", "un rocher à fleur d'eau, dangereux pour les pirogues."),
+    sub("Exercice — remets les cinq étapes dans l'ordre :"),
+    p("l'épreuve — le héros et son lieu — la fin heureuse — le problème — le départ. Puis dis : conte ou légende ? « On raconte que le lac Anosy serait né des larmes d'une reine. »", { after: 60 }),
   ];
 }
 
@@ -387,6 +394,9 @@ function lessonS64() {
     p("3. Je le place AVANT le verbe.", { after: 80 }),
     sub("Le piège :"),
     p("le, la, les + NOM = article (le lac) ; le, la, les + VERBE = pronom COD (je le vois) !"),
+    sub("Exercice — remplace sans bégayer :"),
+    p("« Soafara voit la pirogue. Soafara pousse la pirogue. » → remplace avec le, la, l' ou les : ………"),
+    pr([run("[le pronom COD se place AVANT le verbe : elle la pousse]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -463,6 +473,8 @@ function lessonS65() {
     p("je me lève, tu te lèves, il se lève, nous nous levons, vous vous levez, ils se lèvent.", { after: 80 }),
     sub("L'astuce de Koto :"),
     p("Pour le futur, je pars de l'infinitif tout entier : raconter + ai = je raconterai !"),
+    sub("Exercice — les temps du conte :"),
+    p("1. Mets le décor à l'imparfait : « La princesse (vivre) près du lac. » — 2. Fais une promesse au futur : « Tu (devenir) roi. » — 3. Conjugue : « Elle (se lever) à l'aube. »", { after: 60 }),
   ];
 }
 
@@ -540,6 +552,8 @@ function lessonS66() {
     p("• merveilleux reste merveilleux ;"),
     pr([run("• attention ! ", { bold: true, color: C.RED }),
         run("bleu → bleuS, fou → fouS — un simple -s : « des lacs bleus, de beaux contes merveilleux ! »")]),
+    sub("Exercice — accorde au passé composé :"),
+    p("1. « La princesse est (arrivé). » — 2. « Les pirogues ? Il les a (posé) sur l'eau. » — 3. « des contes (nouveau) » — 4. « des rubans (bleu) ».", { after: 60 }),
   ];
 }
 
@@ -610,6 +624,8 @@ function lessonS67() {
     p("Et à chaque étape, un outil du conteur : il était une fois, un jour, soudain, heureusement, depuis ce jour.", { after: 80 }),
     sub("L'astuce de Soa :"),
     p("Je regarde mon public dans les yeux : un conteur ne parle pas à ses sandales !"),
+    sub("Exercice — ton plan de conteur :"),
+    p("Choisis un conte que tu connais et note tes cinq mots-clés — un par étape. Puis raconte-le à ton voisin avec la voix qui change.", { after: 60 }),
   ];
 }
 
@@ -679,6 +695,8 @@ function lessonS68() {
     p("5. Situation finale — la nouvelle vie + la formule de fin.", { after: 80 }),
     sub("Le conseil du conteur :"),
     p("Un bon héros est autonome et responsable : il agit, il n'attend pas que la solution tombe du ciel !"),
+    sub("Exercice — ton casting :"),
+    p("Invente ton héros, son lieu, son problème et son aide merveilleuse — remplis les cinq cases de ta fiche en mots-clés.", { after: 60 }),
   ];
 }
 
@@ -747,6 +765,9 @@ function lessonS69() {
     p("☐ Les accords : elle est partie, ils sont arrivés, il les a sauvées."),
     p("☐ Un pronom COD pour chasser une répétition."),
     p("☐ 15 à 20 lignes, majuscules et points."),
+    sub("Exercice — améliore comme un conteur :"),
+    p("« il y avait une fille elle etait gentille un génie arrive » → corrige, ajoute la formule d'ouverture et l'imparfait du décor : ………"),
+    pr([run("[exemple : Il était une fois une jeune fille au cœur doux. Un soir, un génie apparut…]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -815,6 +836,8 @@ function lessonS70() {
         run("précision ", { bold: true, color: C.SALMON }), run("+ "),
         run("expressivité ", { bold: true, color: C.SALMON }),
         run("— toutes les techniques de l'année : la ponctuation, l'écho, le chœur, et maintenant le théâtre !")]),
+    sub("Exercice — le théâtre des lecteurs :"),
+    p("À trois : un narrateur, deux personnages. Préparez votre partition (qui lit quoi ?), puis jouez la scène de la rencontre — chaque voix doit être différente !", { after: 60 }),
   ];
 }
 

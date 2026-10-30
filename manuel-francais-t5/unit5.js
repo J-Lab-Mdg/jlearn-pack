@@ -149,6 +149,9 @@ function lessonS49() {
     p("", { after: 60 }),
     pr([run("La leçon du reportage : ", { bold: true }),
         run("chaque métier est utile — chaque main compte !", { bold: true, color: COLOR })]),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Cite deux métiers entendus dans le reportage."),
+    p("2. Pour l'un d'eux, redis les quatre informations : le nom, le lieu, les gestes, l'outil.", { after: 60 }),
   ];
 }
 
@@ -228,6 +231,9 @@ function lessonS50() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« travailler dans une usine, dans un atelier »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« travailler sur l'usine »" + ".")]),
+    sub("Exercice — je range chaque métier dans son secteur :"),
+    p("le pêcheur — la couturière — l'institutrice — le planteur — le maçon — l'infirmier."),
+    pr([run("[la nature donne → primaire ; on transforme → secondaire ; on sert les autres → tertiaire]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -306,6 +312,9 @@ function lessonS51() {
     mot("la charpente", "le squelette de bois qui porte le toit."),
     mot("la poutre", "une grosse pièce de bois de la charpente."),
     mot("bâclé", "fait trop vite et mal. Le contraire du travail soigné !"),
+    sub("Exercice — je retrouve dans le texte :"),
+    p("1. L'information principale (réponds : quel métier ? que fait-il ?)."),
+    p("2. Une phrase avec un connecteur de cause — recopie-la et entoure le connecteur.", { after: 60 }),
   ];
 }
 
@@ -375,6 +384,8 @@ function lessonS52() {
     imgFloat("a5_charpentier.png", 170, 768 / 1376),
     sub("L'astuce de Koto :"),
     p("Je dis merci ? → grâce à. Je me plains ? → à cause de. Je lis une affiche de la mairie ? → en raison de !"),
+    sub("Exercice — réponds à « pourquoi ? » :"),
+    p("Relie avec « parce que » : « Le charpentier choisit un bois sec. Le bois sec ne se tord pas. » → ………", { after: 60 }),
   ];
 }
 
@@ -449,6 +460,8 @@ function lessonS53() {
     imgFloat("a5_marche.png", 170, 768 / 1376),
     sub("L'astuce de Soa :"),
     p("« Pourquoi ? » → je réponds avec parce que. Tout le monde le sait déjà ? → puisque. J'ajoute la raison après une virgule ? → car."),
+    sub("Exercice — varie la famille de la cause :"),
+    p("Dis la même idée de trois façons : avec « parce que », avec « car », avec « grâce à » : « La récolte est belle… la pluie est tombée à temps. »", { after: 60 }),
   ];
 }
 
@@ -523,6 +536,8 @@ function lessonS54() {
     p("• nous bâtissons, ils construisent — le -iss- et le -s- reviennent au pluriel.", { after: 80 }),
     pr([run("La phrase mémo : ", { bold: true }),
         run("« Nous cultivons, vous pêchez, ils bâtissent et elles construisent : tout le village travaille ! »", { italic: true, color: COLOR })]),
+    sub("Exercice — conjugue au présent :"),
+    p("cultiver (nous) — bâtir (ils) — construire (il) — remplir (vous).", { after: 60 }),
   ];
 }
 
@@ -595,6 +610,8 @@ function lessonS55() {
     pr([run("métier + secteur + missions + outils + lieu + ", { bold: true }),
         run("pourquoi il est utile ", { bold: true, color: C.RED }),
         run("(grâce à, car, parce que !)")]),
+    sub("Exercice — prépare ton interview :"),
+    p("Écris les cinq questions du journaliste pour un artisan de ton quartier — chacune commence par un mot différent.", { after: 60 }),
   ];
 }
 
@@ -665,6 +682,8 @@ function lessonS56() {
     p("2. Les missions, les outils, le lieu."),
     p("3. Les compétences."),
     p("4. L'importance du métier — la réponse au pourquoi !"),
+    sub("Exercice — ta fiche métier :"),
+    p("Choisis un métier de ton village et remplis les six cases de ta fiche, puis bâtis ton plan sur le modèle du charpentier.", { after: 60 }),
   ];
 }
 
@@ -732,6 +751,9 @@ function lessonS57() {
     p("☐ Les verbes au présent : il bâtit, ils construisent…"),
     p("☐ Le vocabulaire des métiers : secteur, missions, matière première…"),
     p("☐ Majuscules, points, et « car » jamais en début de phrase !"),
+    sub("Exercice — améliore comme un écrivain :"),
+    p("« le maçon fait des maisons cest un bon métier » → corrige, ajoute une cause : ………"),
+    pr([run("[exemple : Le maçon bâtit des maisons solides, car il pose chaque brique avec soin.]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -801,6 +823,8 @@ function lessonS58() {
         run("précision ", { bold: true, color: C.SALMON }), run("+ "),
         run("expressivité ", { bold: true, color: C.SALMON }),
         run("= une lecture qui donne envie d'écouter !")]),
+    sub("Exercice — joue la partition :"),
+    p("Marque les groupes de souffle puis lis : « Le forgeron chauffe le fer, le bat sur l'enclume, puis le plonge dans l'eau froide. Quel métier ! »", { after: 60 }),
   ];
 }
 
