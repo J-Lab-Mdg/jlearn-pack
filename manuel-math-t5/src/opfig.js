@@ -46,17 +46,19 @@ function subSvg(a, b, result) {
 function mulSvg(a, b, result) {
   const aa = String(a), bb = String(b), step = 54, width = Math.max(aa.length, bb.length + 1, String(result).length) * step + 190;
   const x = 500 - Math.max(aa.length, bb.length + 1, String(result).length) * step / 2;
-  const ones = Number(aa) * (Number(bb) % 10);
-  const tens = Number(aa) * (Math.floor(Number(bb) / 10) * 10);
+  const fu = Number(bb) % 10;
+  const ones = Number(aa) * fu;
+  const tensDigit = Math.floor(Number(bb) / 10);
+  const tens = Number(aa) * (tensDigit * 10);
   let s = heading('Multiplication posée', 'Je calcule par les unités, puis par les dizaines décalées.');
   s += cols(aa, x + (String(result).length - aa.length) * step, 145, step, 36);
   s += T(x - 48, 195, '×', 35, BLUE, 'bold', 'middle');
   s += cols(bb, x + (String(result).length - bb.length) * step, 195, step, 36);
   s += line(x - 55, 220, String(result).length * step + 75);
   s += cols(String(ones), x + (String(result).length - String(ones).length) * step, 270, step, 32, PINK2);
-  s += T(x + String(result).length * step + 35, 270, '← unités', 19, PINK2, 'bold');
+  s += T(x + String(result).length * step + 28, 270, `${F(b)} → ${fu} unités : ${F(a)} × ${fu}`, 15, PINK2, 'bold');
   s += cols(String(tens), x + (String(result).length - String(tens).length) * step, 325, step, 32, OCRE);
-  s += T(x + String(result).length * step + 35, 325, '← dizaines : décalage', 19, OCRE, 'bold');
+  s += T(x + String(result).length * step + 28, 325, `${F(b)} → ${tensDigit} dizaines : ${F(a)} × ${tensDigit * 10}`, 14, OCRE, 'bold');
   s += line(x - 55, 350, String(result).length * step + 75);
   s += cols(String(result), x, 405, step, 38, GREEN);
   s += arrow(x + (String(result).length - 1) * step, 110, x + (String(result).length - 1) * step, 128, PINK2, 3);
@@ -105,12 +107,24 @@ function fractionSvg(expression, result, note) {
 }
 
 function decimalSvg(expression, result) {
+  const nums = String(expression).split(/[+−×÷]/).map(x => x.trim()).filter(Boolean);
+  const opMatch = String(expression).match(/[+−×÷]/);
+  const op = opMatch ? opMatch[0] : '';
+  const all = [...nums, String(result)];
+  const max = Math.max(...all.map(x => x.length));
+  const step = 46, x = 510 - max * step / 2;
   let s = heading('Calcul décimal posé', 'Les virgules restent dans la même colonne.');
-  s += box(180, 145, 640, 72, expression, BLUEL, BLUE, 31);
-  s += arrow(500, 235, 500, 285, PINK2, 5);
-  s += box(180, 305, 640, 72, result, GREENL, GREEN, 31);
-  s += T(500, 430, 'unités | dixièmes | centièmes', 23, OCRE, 'bold', 'middle');
-  return svg(1000, 480, s);
+  nums.forEach((n, i) => {
+    const y = 145 + i * 54;
+    if (i > 0) s += T(x - 40, y, op, 30, BLUE, 'bold', 'middle');
+    s += cols(n, x + (max - n.length) * step, y, step, 31);
+  });
+  const lineY = 145 + nums.length * 54 - 24;
+  s += line(x - 55, lineY, max * step + 70);
+  s += arrow(x + Math.max(1, max - 3) * step, lineY + 12, x + Math.max(1, max - 3) * step, lineY + 36, PINK2, 3);
+  s += cols(String(result), x + (max - String(result).length) * step, lineY + 68, step, 35, GREEN);
+  s += T(500, lineY + 120, 'unités | dixièmes | centièmes : virgule sous virgule', 22, OCRE, 'bold', 'middle');
+  return svg(1000, lineY + 160, s);
 }
 
 function conversionSvg(expression, result) {
@@ -123,4 +137,24 @@ function conversionSvg(expression, result) {
   return svg(1000, 420, s);
 }
 
-module.exports = { addSvg, subSvg, mulSvg, longDivisionSvg, fractionSvg, decimalSvg, conversionSvg };
+// Modèle court pour les questions CEPE qui ne sont pas une simple ligne de calcul :
+// périmètre, prix, rendement, durée ou quantité. Le chemin montre les données,
+// l'opération choisie et le résultat, au lieu de laisser l'enfant deviner la méthode.
+function modelSvg(titleText, data, operation, result) {
+  let s = heading(titleText, 'Je relie les données à l’opération avant de répondre.');
+  const rows = Array.isArray(data) ? data : [data];
+  rows.forEach((d, i) => {
+    const y = 135 + i * 68;
+    s += box(70, y, 270, 48, d, i % 2 ? '#F8FBFF' : BLUEL, BLUE, 22);
+    s += arrow(355, y + 24, 425, y + 24, OCRE, 4);
+  });
+  const oy = 135 + rows.length * 68;
+  s += seg(425, 159, 425, oy + 29, OCRE, 3);
+  s += arrow(425, oy + 29, 435, oy + 29, OCRE, 4);
+  s += box(435, oy, 250, 58, operation, '#FFF4DF', OCRE, 22);
+  s += arrow(695, oy + 29, 755, oy + 29, GREEN, 4);
+  s += box(765, oy, 200, 58, result, GREENL, GREEN, 19);
+  return svg(1000, oy + 95, s);
+}
+
+module.exports = { addSvg, subSvg, mulSvg, longDivisionSvg, fractionSvg, decimalSvg, conversionSvg, modelSvg };

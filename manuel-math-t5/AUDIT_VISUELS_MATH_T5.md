@@ -12,3 +12,5 @@
 ## Reste à traiter dans une prochaine passe
 
 Les priorités 2 et 3 de cet audit restent la feuille de route : modèles en barres dans les 40 corrigés de problèmes, renforcement visuel des unités III à VI et simplification des pages « Mon cahier ».
+
+L’audit spécifique des formats d’épreuves malgaches et du tableau de réponse `Solution | Résultat | Opération` est documenté dans `AUDIT_SUJETS_CEPE_MADAGASCAR.md`.
