@@ -233,3 +233,19 @@ sarahavana amin'ny « manamafy hevitra » an'ny verindroa (1d).
   (LFK 2d) → izany no hampiononana ny colonesin'ny tabilao ao amin'ny Manuela ; (3) « **Ny Matoanteny sy
   ny mpamari-toetra dia aza atao mandidy** » (*Vakina > vakio*, LFK 2g). Voasoratra ao
   `manuel-malagasy-t6/refs/03_FRP_T6_EDISIONA-2026-10.md` § 5.
+
+- *Fanampiana (10/31, fiova 2):* nomen'ny mpanabe laharam-pikambana vaovao : **RASOLOFOSON
+  Tovonjanahary Jorosoa, « Ny endriky ny matoanteny verindroa amin'ny teny malagasy », mémoire
+  Maîtrise, Oniversiten'Antananarivo, STe.La.Ri.M., 10 Nov. 2014** (directeur RALALAOHERIVONY
+  Baholisoa Simone ; 188 p., Scribd 779789422). Vokatra : (1) « tsy mahakasika ny tsirinteny ny
+  fitsipika fa **ny fototeny ihany** no azo atao verindroa » + « ataon'ny mpiteny ankehitriny
+  verindroa anefa ny **sampanteny** » ; (2) **3** lanja : fanamafisan-kevitra / fanalefahan-kevitra /
+  **manova hevitra** ; (3) karazana 3 araka endrika : **am-panovonana** (`telo→tetelo`,
+  `loha→loloha`, `boka→boboka`), **am-panovanana** (`ady→adidy`, `fohy→fohiky` Th),
+  **am-panatsofohana** (`vanaka→vananaka`, `sanaka→sananaka`) → **ara-dalàna ny `matory→matoritory`** ;
+  (4) TOVANA II = 758 andalana **ara-boambolana** : `roa→roaroa/mandroaroa` (mita → diso ny ôhatra
+  `*roarova` natao teo), `soritra→soritsoritra→manoritsoritra` (★ = lohatenin'ny « Lahatsoratra
+  manoritsoritra »), `lehy→lehalehy→mandehandeha`, `ngadona→ngadongadona`. Voatahiry ao
+  `manuel-malagasy-t6/refs/04_VERINDROA-MEMOIRE-UA-2014.md`. **Didy vaovao**: « rehefa tsy hita
+  ao anaty rakibolana ny teny iray dia **tsy midika izany hoe diso** » → mampanontany momba ny
+  toetr'ireo teny (`fepero`, `mihaninkanika`, `matoritory`) ary mitady loharano hafa.
