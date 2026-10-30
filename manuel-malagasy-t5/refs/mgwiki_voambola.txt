@@ -1,0 +1,65 @@
+# Formes vérifiées sur l'édition malgaise de l'encyclopédie (API `list=search`), recopiées avec leur page.
+# `totalhits` = nombre de pages qui contiennent la forme exacte. Les phrases sont des citations courtes de
+# Wikipédia en malgache (licence CC BY-SA 4.0, attribution : nom de la page + URL de la page).
+# But : donner au manuel une trace locale pour chaque mot qu'il imprime (`fikarohana.py --fanamarinana`).
+
+"mainka" — 79 pages
+ - page « Ramanantsoa Gabriel » : « vao mainka niady hevitra, dia nesorina izy taorian'ny fitsapan-kevi-bahoaka »
+ - page « Fikambanan'ny Mpampiasa Sidina ana Habakabaka Sivily Iraisam-Pirenena » :
+   « Ny ICAO dia vao mainka mampiasa ireo fitsipika sy torolalana mifehy ny fifamoivoizana »
+ - page « Madagasikara » : « Izay fisainana izay koa dia vao mainka ampitomboin'ny fikambanana tsy miankina
+   amin'ny fanjakana (ONG) »
+
+"maika" — 44 pages
+ - page « Krizy » : « Krizy ara-pahasalamana: fiparitahan'ny aretina na toe-pahasalamana maika. »
+ - page « Antananarivo » : « Ny taxi kosa dia lafo vidy kokoa saingy ampiasain'ny olona rehefa maika na misy
+   entana. »
+ - page « Iràna » : « …dia nanome an'i Iràna fampindramam-bola maika mitentina 45 tapitrisa dôlara i Etazonia. »
+ - page « Sianida » : « …hitsaboana vonjy maika ny fiakaran'ny tosi-dra vonjy maika… »
+
+Kamban-teny ampiasana tsipi-panohizana — traces déjà dans le dépôt, relevées ici pour la leçon :
+ - `fitsipi-panoratana`   (refs/PE_T5_malagasy_p9-26.txt, Tombana : « Mampihatra ny fitsipi-panoratana teny
+   verindroa ao anaty fehezanteny ny mpianatra. »)
+ - `sokajin-dahatsoratra` (refs/PE_T5_malagasy_p9-26.txt, Asa an-tsoratra : « handamina ny heviny araka ny
+   sokajin-dahatsoratra »)
+ - `mari-pamantarana`     (refs/PE_T5_malagasy_p9-26.txt, Fahaiza-mihaino : « Mari-pamantarana ao anaty
+   lahatsoratra »)
+ - `fanampim-panazavana`   (refs/PE_T5_malagasy_p9-26.txt, Fanehoan-kevitra am-bava : « Fangatahana
+   fanampim-panazavana »)
+ - `fandaharam-pibeazana`  (refs/PE_T5_malagasy_p9-26.txt, p.9 : « Ny fandaharam-pibeazana dia mikendry ny
+   fampivelarana ireto fahaiza-manaon'ny mpianatra ireto »)
+ - `fihavanam-bato` sy `fihavanan-dandy` (sources_web/full/mgwiki_fihavanana.txt, ohabolana)
+ - `fampindramam-bola` (page « Iràna », ci-dessus)
+ - `mananga-tanana` (refs/EXPLOITATION_DU_PE_T5.txt : « Mihaino tsara ary mananga-tanana rehefa hiteny. »)
+ - `rantsan-tanana`  (mg.wikipedia, page « Dimy » — voir LISTE-ROUGE.md)
+
+Tsirinteny — instances relevées dans les mêmes sources :
+ `-in-` : « sintoniny » (page Rano), « ampitomboin'ny » (page Madagasikara)
+ `-if-` : « ifandraisana » (refs/PE_T5_malagasy_p9-26.txt : « ampiasaina ny teny ho fitaovana ianarana,
+   ifandraisana ary anehoana hevitra »)
+ `-amp-` : « ampiasaina », « fampivelarana », « ampirisihina », « mampahalala » (mêmes lignes du PE)
+
+Mpanampy — instances : « azo averina » (PE), « tsy azo atohy » (ohabolana, page Fihavanana),
+ « azo foanana na afindrafindra toerana » (page Fehezanteny), « tsy azontsika » (refs/EXPLOITATION_DU_PE_T5.txt),
+ « tokony hatao » (même ligne), « mety ho lahatsoratra » (PE p.9)
+
+Mpisolo tena tampisaka — instances : « ianaranay » (refs/EXEMPLE_DU_MANUEL.txt : « Samihafa ny taranja
+ianaranay. »), « ny hevitrao / ny hevitrareo » (refs/EXPLOITATION_DU_PE_T5.txt), « sintoniny » (page Rano),
+ « azontsika » (même ligne que ci-dessus), « azy » (page Rano : « manatona azy »)
+
+Rafi-fehezanteny — instances : « firaisana Hidrozena no iantsoana azy » (page Rano), « Ny kabary dia lahateny
+atao amin'ny feo avo » (page Kabary), « Ny fandaharam-pibeazana dia mikendry… » (PE p.9), « inona no tokony
+hatao ? » (refs/EXPLOITATION_DU_PE_T5.txt), « Matetika no hita eny am-piandohan'ny fehezanteny (atao EM) ny
+samy hafa (misaraka). » (refs/EXEMPLE_DU_MANUEL.txt)
+
+Filaza mandidy — instances : « Aza atao fihavanam-bato… », « Aza manao fihavanan'amboa… », « Aza manao
+havana raha misy patsa… » (page Fihavanana) ; « tsarà, salamà, mahavità » (PE, Mandidy mirary).
+
+Formules de consigne verifiees en ligne (mg.wikipedia, API list=search) et employees telles quelles :
+ - « Soraty amin'ny boky izay hitanao » — 8 pages contenant « soraty » ; c'est le modele de mes
+   consignes « Soraty amin'ny boky izay hitanao ny fehezanteny ahitana ny hoe … ».
+ - « Ampiasao tsara Ny andro iainanao » — 6 pages contenant « ampiasao » ; modele de « Ampiasao ireto
+   teny ireto: … ».
+ - « mamorona » / imperatif « Mamorao » — refs/EXPLOITATION_DU_PE_T5.txt, « Tari-dresaka : mamorona
+   fanontaniana ».
+ - « vakio » — 68 pages, modele des consignes de lecture.
