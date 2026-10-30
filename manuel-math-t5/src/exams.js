@@ -33,6 +33,7 @@ function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; le
 const F = n => Math.round(n).toLocaleString('fr-FR').replace(/\u202F/g, '\u00A0');
 const FD = x => x.toLocaleString('fr-FR', { minimumFractionDigits: 0, maximumFractionDigits: 2 }).replace(/\u202F/g, '\u00A0');
 const pgcd = (a, b) => b ? pgcd(b, a % b) : a;
+const n9 = n => { n = Math.abs(n); while (n > 9) n = String(n).split('').reduce((a, c) => a + (+c), 0); return n; };
 
 // ---------- SUJETS OPÉRATIONS ----------
 function sujetOperations(k) {
@@ -56,13 +57,15 @@ function sujetOperations(k) {
   items.push(`${F(e)} × ${f}`);
   corr.push([`On décompose le multiplicateur : ${f} = ${fd} + ${fu}.`,
     `${F(e)} × ${fd} = ${F(e * fd)}  et  ${F(e)} × ${fu} = ${F(e * fu)}.`,
-    `${F(e)} × ${f} = ${F(e * fd)} + ${F(e * fu)} = ${F(e * f)}.`]);
+    `${F(e)} × ${f} = ${F(e * fd)} + ${F(e * fu)} = ${F(e * f)}.`,
+    `Preuve par 9 (croix) : ${e} → ${n9(e)} ; ${f} → ${n9(f)} ; ${n9(e)} × ${n9(f)} = ${n9(n9(e) * n9(f))}, et ${F(e * f)} → ${n9(e * f)} ✓`]);
   // 4. division euclidienne
   const h = ri(12, 45), q = ri(23, 97), rr = ri(1, h - 1), g = h * q + rr;
   items.push(`${F(g)} ÷ ${h}`);
   corr.push([`Encadrement : ${h} × 10 = ${F(h * 10)} < ${F(g)} < ${h} × 100 = ${F(h * 100)} → le quotient a 2 chiffres.`,
     `${F(g)} = (${h} × ${q}) + ${rr} : quotient ${q}, reste ${rr}.`,
-    `Vérification : ${h} × ${q} + ${rr} = ${F(h * q)} + ${rr} = ${F(g)} ✓ (le reste ${rr} est bien plus petit que ${h}).`]);
+    `Vérification : ${h} × ${q} + ${rr} = ${F(h * q)} + ${rr} = ${F(g)} ✓ (le reste ${rr} est bien plus petit que ${h}).`,
+    `Croix de la preuve par 9 : H ${n9(h)} × B ${n9(q)} + reste ${rr} → ${n9(h * q + rr)}, comme ${F(g)} → ${n9(g)} ✓`]);
   // 5. fractions (4 variantes)
   const v = k % 4;
   if (v === 0) {
@@ -133,7 +136,10 @@ const TEMPLATES = [
       steps: [`Étape 1 — Prix du riz : ${n} × ${F(pk)} = ${F(riz)} Ar.`,
         `Étape 2 — Dépense totale : ${F(riz)} + ${F(s)} = ${F(tot)} Ar.`,
         `Étape 3 — Monnaie rendue : ${F(B)} − ${F(tot)} = ${F(rendu)} Ar.`],
-      rep: `On lui rend ${F(rendu)} Ar.`
+      rep: `On lui rend ${F(rendu)} Ar.`,
+      qc: `Pour rendre la monnaie, il faut d’abord connaître le prix TOTAL des achats : le total est la question cachée.`,
+      mi: `« à … Ar le kapoaka » (prix unitaire → ×) ; « et un savon » (réunion → +) ; « combien lui rend-on » (écart → −).`,
+      op: `multiplication (prix du riz), puis addition (total), puis soustraction (monnaie rendue).`
     };
   },
   (ri) => { // partage en sachets
@@ -144,7 +150,10 @@ const TEMPLATES = [
       steps: [`Étape 1 — Conversion : ${R} kg = ${R} × 1 000 = ${F(Rg)} g.`,
         `Étape 2 — Division : ${F(Rg)} ÷ ${F(m)} = ${F(nb)}${reste ? `, reste ${F(reste)}` : ' exactement'}.`,
         `Vérification : ${F(m)} × ${F(nb)}${reste ? ` + ${F(reste)}` : ''} = ${F(Rg)} ✓`],
-      rep: `Il obtient ${F(nb)} sachets pleins${reste ? ` et il reste ${F(reste)} g` : ' et il ne reste rien'}.`
+      rep: `Il obtient ${F(nb)} sachets pleins${reste ? ` et il reste ${F(reste)} g` : ' et il ne reste rien'}.`,
+      qc: `On ne peut diviser que des grammes par des grammes : la conversion kg → g est la question cachée.`,
+      mi: `« partage… en sachets de » → division ; « kg » et « g » dans le même énoncé → conversion d’abord.`,
+      op: `conversion, puis division euclidienne : combien de paquets de … g dans … g, et que reste-t-il ?`
     };
   },
   (ri) => { // proportionnalité carburant
@@ -155,7 +164,10 @@ const TEMPLATES = [
       steps: [`Étape 1 — Pour 1 km : ${cc} ÷ 100 = ${FD(cc / 100)} L (ou on raisonne par paquets de 100 km).`,
         `Étape 2 — Pour ${D} km : ${cc} × ${D} ÷ 100 = ${FD(conso)} L.`,
         `C’est un tableau de proportionnalité : 100 km → ${cc} L ; ${D} km → ${FD(conso)} L.`],
-      rep: `Il consomme ${FD(conso)} L pour ${D} km.`
+      rep: `Il consomme ${FD(conso)} L pour ${D} km.`,
+      qc: `La consommation est donnée pour 100 km, on la cherche pour un autre trajet : c’est un tableau de proportionnalité.`,
+      mi: `« … L pour 100 km… pour … km ? » → proportionnalité (produit en croix ou retour à l’unité).`,
+      op: `multiplication et division par le coefficient : on raisonne par paquets de 100 km.`
     };
   },
   (ri) => { // clôture périmètre
@@ -165,7 +177,10 @@ const TEMPLATES = [
       enonce: `Le champ rectangulaire de Rakoto mesure ${L} m de longueur et ${l} m de largeur. Il veut le clôturer avec du grillage vendu ${F(f)} Ar le mètre. Combien va coûter la clôture ?`,
       steps: [`Étape 1 — Périmètre : P = (L + l) × 2 = (${L} + ${l}) × 2 = ${F(P)} m.`,
         `Étape 2 — Coût : ${F(P)} × ${F(f)} = ${F(cout)} Ar.`],
-      rep: `La clôture coûtera ${F(cout)} Ar.`
+      rep: `La clôture coûtera ${F(cout)} Ar.`,
+      qc: `Le grillage suit le TOUR du champ : le périmètre est la question cachée — impossible d’acheter des mètres sans connaître le tour !`,
+      mi: `« clôturer » → le tour → périmètre ; « … Ar le mètre » → × ensuite.`,
+      op: `périmètre (L + l) × 2, puis multiplication par le prix du mètre.`
     };
   },
   (ri) => { // aire et dalles
@@ -176,7 +191,10 @@ const TEMPLATES = [
       steps: [`Étape 1 — Aire de la salle : A = L × l = ${L} × ${l} = ${F(A)} m².`,
         `Étape 2 — Nombre de dalles : ${F(A)} dalles de 1 m² (1 dalle par m²).`,
         `Étape 3 — Prix total : ${F(A)} × ${F(dp)} = ${F(cout)} Ar.`],
-      rep: `Il faut ${F(A)} dalles, pour ${F(cout)} Ar.`
+      rep: `Il faut ${F(A)} dalles, pour ${F(cout)} Ar.`,
+      qc: `Une dalle couvre exactement 1 m² : le nombre de dalles est donc l’AIRE de la salle.`,
+      mi: `« carreler… dalles de 1 m² » → aire ; « pour quel prix total » → ×.`,
+      op: `aire L × l, puis multiplication par le prix de la dalle.`
     };
   },
   (ri) => { // fractions de récolte
@@ -187,7 +205,10 @@ const TEMPLATES = [
       steps: [`Étape 1 — Quantité vendue : 3/4 de ${F(Fk)} = (${F(Fk)} ÷ 4) × 3 = ${F(Fk / 4)} × 3 = ${F(vendu)} kg.`,
         `Étape 2 — Recette : ${F(vendu)} × ${F(pz)} = ${F(recette)} Ar.`,
         `Étape 3 — Part gardée : ${F(Fk)} − ${F(vendu)} = ${F(garde)} kg (c’est bien 1/4 de la récolte).`],
-      rep: `Sa recette est de ${F(recette)} Ar et elle garde ${F(garde)} kg.`
+      rep: `Sa recette est de ${F(recette)} Ar et elle garde ${F(garde)} kg.`,
+      qc: `Vendre les 3/4 oblige à calculer D’ABORD cette quantité en kilos : c’est la question cachée.`,
+      mi: `« les 3/4 de » → fraction de la récolte (÷ 4 puis × 3) ; « au kilo » → × par le prix.`,
+      op: `fraction de la récolte, puis multiplication pour la recette, puis soustraction pour la part gardée.`
     };
   },
   (ri) => { // tissu décimaux
@@ -197,7 +218,10 @@ const TEMPLATES = [
       enonce: `Pour coudre des uniformes, une maman achète ${FD(mt)} m de tissu à ${F(pm)} Ar le mètre. Elle paie avec un billet de ${F(B)} Ar. Quel est le prix du tissu, et combien lui rend-on ?`,
       steps: [`Étape 1 — Prix du tissu : ${FD(mt)} × ${F(pm)} = ${F(cout)} Ar.`,
         `Étape 2 — Monnaie rendue : ${F(B)} − ${F(cout)} = ${F(rendu)} Ar.`],
-      rep: `Le tissu coûte ${F(cout)} Ar ; on lui rend ${F(rendu)} Ar.`
+      rep: `Le tissu coûte ${F(cout)} Ar ; on lui rend ${F(rendu)} Ar.`,
+      qc: `Le prix du tissu d’abord, la monnaie ensuite : on ne rend pas la monnaie sans connaître le total.`,
+      mi: `« … m à … Ar le mètre » (prix unitaire → ×) ; « combien lui rend-on » (écart → −).`,
+      op: `multiplication à virgules, puis soustraction.`
     };
   },
   (ri) => { // durées
@@ -209,7 +233,10 @@ const TEMPLATES = [
       steps: [`Étape 1 — On additionne les heures : ${h1} h + ${dh} h = ${h1 + dh} h.`,
         `Étape 2 — On additionne les minutes : ${m1} min + ${dm} min = ${m1 + dm} min${m1 + dm >= 60 ? ` = 1 h ${m1 + dm - 60} min (on ne dépasse jamais 60 min !)` : ''}.`,
         `Étape 3 — Heure d’arrivée : ${H} h ${M < 10 ? '0' + M : M} min.`],
-      rep: `Il arrive à ${H} h ${M < 10 ? '0' + M : M} min.`
+      rep: `Il arrive à ${H} h ${M < 10 ? '0' + M : M} min.`,
+      qc: `On additionne les heures avec les heures et les minutes avec les minutes — et si les minutes dépassent 60, on échange contre 1 heure.`,
+      mi: `« part à… le trajet dure… » → addition de durées (base 60).`,
+      op: `addition sexagésimale : colonne des heures, colonne des minutes, échange à 60.`
     };
   },
   (ri) => { // épargne
@@ -220,7 +247,10 @@ const TEMPLATES = [
       steps: [`Étape 1 — On cherche combien de fois ${F(ep)} entre dans ${F(V)} : c’est une division.`,
         `Étape 2 — ${F(V)} ÷ ${F(ep)} = ${F(sem)}.`,
         `Vérification : ${F(ep)} × ${F(sem)} = ${F(V)} ✓`],
-      rep: `Il lui faudra ${F(sem)} semaines.`
+      rep: `Il lui faudra ${F(sem)} semaines.`,
+      qc: `Combien de « paquets » de … Ar tiennent dans le prix du vélo : l’épargne hebdomadaire est comme un paquet qu’on répète.`,
+      mi: `« combien de semaines » → combien de fois → division (groupement).`,
+      op: `division : on cherche combien de fois l’épargne entre dans le prix total.`
     };
   },
   (ri) => { // école rangées et bus
@@ -231,7 +261,10 @@ const TEMPLATES = [
       steps: [`Étape 1 — Nombre de rangées : ${F(ne)} ÷ ${rg} = ${nr} rangées.`,
         `Étape 2 — Personnes à transporter : ${F(ne)} + ${extra} = ${F(tot)}.`,
         `Étape 3 — ${F(tot)} ÷ 30 = ${Math.floor(tot / 30)}${rest ? `, reste ${rest} : il faut un bus de plus pour les ${rest} personnes restantes` : ' exactement'}.`],
-      rep: `Il y a ${nr} rangées et il faut ${bus} bus.`
+      rep: `Il y a ${nr} rangées et il faut ${bus} bus.`,
+      qc: `Deux questions bien séparées : d’abord les rangées (division), puis les bus (division avec reste — et il faut l’interpréter !).`,
+      mi: `« en rangées de » → ÷ ; « et … enseignants » → + ; « bus de 30 places » → ÷ avec reste.`,
+      op: `division, addition, puis division avec interprétation du reste : le reste impose un bus DE PLUS.`
     };
   },
 ];
@@ -273,8 +306,8 @@ for (let k = 1; k <= 20; k++) {
 }
 children.push(...entryPage('PROBLÈMES', 'expb', [
   'Des problèmes de la vie courante à Madagascar : marché, champs, transport, école…',
-  'Pour chaque problème : lis deux fois, repère les données utiles,',
-  'pose les questions intermédiaires, puis rédige ta réponse en phrase complète.',
+  'Pour chaque problème : lis deux fois, repère la question cachée et les mots-indices,',
+  'choisis l’opération, calcule bien posé, puis rédige ta réponse en phrase complète.',
 ]));
 for (let k = 1; k <= 20; k++) {
   const probs = sujetProblemes(k);
@@ -287,6 +320,9 @@ for (let k = 1; k <= 20; k++) {
   children.push(banner(`CORRIGÉ DU SUJET N° ${k}`, C.green));
   probs.forEach((pr, i) => {
     children.push(p(`Problème ${i + 1} — démarche :`, { bold: true, color: C.wine, after: 60 }));
+    children.push(p(`Question cachée : ${pr.qc}`, { indent: 360, after: 50, italics: true, color: C.wine }));
+    children.push(p(`Mots-indices : ${pr.mi}`, { indent: 360, after: 50, italics: true, color: C.blue }));
+    children.push(p(`Opérations choisies : ${pr.op}`, { indent: 360, after: 70, italics: true, color: C.ocre }));
     pr.steps.forEach(st => children.push(p(st, { indent: 360, after: 60 })));
     children.push(p(`Réponse : ${pr.rep}`, { indent: 360, bold: true, color: C.green }));
   });

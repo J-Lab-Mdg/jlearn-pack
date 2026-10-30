@@ -232,6 +232,7 @@ ann = W / 'annexes.docx'; a.save(ann)
 master = Document(units[0]); composer = Composer(master)
 for i in range(2, N_UNITS + 1):
     composer.append(Document(stripped(units[i - 1], i)))
+composer.append(Document(R / 'Manuel_Mathematiques_T5_METHODES.docx'))
 composer.append(Document(R / 'Manuel_Mathematiques_T5_EXAMENS.docx'))
 composer.append(Document(ann))
 
@@ -275,6 +276,7 @@ for unit_no in range(2, N_UNITS + 1):
         raw = re.sub(r'^SÉANCE \d+ / \d+ — ', '', session_title)
         links.append((f'Séance {k} — {sentence(raw, ROMANS[unit_no])}', f'u{unit_no}_l{k}', True))
 links.extend([
+    ('Méthodes d’or — La boîte à outils du CEPE (9 fiches)', 'mor', False),
     ('Sujets d’examen — Opérations (20 sujets corrigés)', 'exop', False),
     ('Sujets d’examen — Problèmes (20 sujets corrigés)', 'expb', False),
     ('Annexes', 'annexes', False), ('Annexe 1 — Glossaire', 'annexe1', True),

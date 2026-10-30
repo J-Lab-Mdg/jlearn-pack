@@ -1,16 +1,55 @@
 // UNITÉ 1 — NOMBRE (PE T5) : 12 séances + révision + examen format CEPE
 const L = require('./figlib');
 const { buildUnit } = require('./engine');
-const { head, svg, txt, nline, dot, tableEl, box, arrow, seg, bar, grid100, PINK, PINK2, GREEN, GREENL, BLUE, OCRE } = L;
+const { head, svg, txt, nline, dot, tableEl, box, arrow, seg, bar, grid100, PINK, PINK2, GREEN, GREENL, BLUE, BLUEL, OCRE } = L;
 
 const figs = {};
-// S1 — lire et écrire jusqu'à 1 000 000
-figs.u1f1 = (() => { const { s, y } = head('Lire un grand nombre par classes', ['On sépare les chiffres par tranches de trois, en partant de la droite.']);
-  const top = y + 20;
-  let b = tableEl(120, top, [380, 380], 56, [['Classe des mille', 'Classe des unités'], ['348', '256']]);
-  b += txt(500, top + 2 * 56 + 50, '348 256 se lit : « trois cent quarante-huit mille deux cent cinquante-six »', 21, PINK2, 'bold', 'middle');
-  b += txt(500, top + 2 * 56 + 88, '1 000 000 = mille fois mille : un million', 21, GREEN, 'bold', 'middle');
-  return svg(1000, top + 2 * 56 + 118, s + b); })();
+// S1 — lire et écrire jusqu'à 1 000 000 (mots-nombres + tableau CDU + cache)
+figs.u1f1 = (() => { const { s, y } = head('Lire un grand nombre : mots-nombres, tableau, cache', ['Une classe = toujours 3 chiffres (C D U). On lit une classe à la fois, jamais tout d’un coup.']);
+  const top = y + 6;
+  let b = box(60, top, 880, 44, 'RÉVISION DES MOTS-NOMBRES DES DIZAINES (appris au T3)', BLUEL, BLUE, 21);
+  const mots = ['vingt', 'trente', 'quarante', 'cinquante', 'soixante'];
+  mots.forEach((m, i) => b += box(60 + i * 178, top + 56, 168, 40, m, GREENL, GREEN, 19));
+  b += txt(938, top + 82, '…', 24, GREEN, 'bold', 'middle');
+  const pieges = [['70 : soixante-dix (60 + 10)', '75 → soixante-quinze'], ['80 : quatre-vingts (4 × 20)', '85 → quatre-vingt-cinq'], ['90 : quatre-vingt-dix (80 + 10)', '95 → quatre-vingt-quinze']];
+  pieges.forEach((pg, i) => {
+    const x = 60 + i * 298;
+    b += `<rect x="${x}" y="${top + 112}" width="286" height="78" rx="10" fill="#FDE7EF" stroke="${PINK2}" stroke-width="3"/>`;
+    b += txt(x + 143, top + 143, pg[0], 19, PINK2, 'bold', 'middle');
+    b += txt(x + 143, top + 175, pg[1], 18, '#222', 'normal', 'middle');
+  });
+  const ty = top + 218, cw = 70, x0 = 86;
+  const classes = ['MILLIARDS', 'MILLIONS', 'MILLE', 'UNITÉS'];
+  classes.forEach((cl, i) => {
+    b += `<rect x="${x0 + i * 3 * cw}" y="${ty}" width="${3 * cw}" height="44" fill="${i === 3 ? GREENL : BLUEL}" stroke="${BLUE}" stroke-width="3"/>`;
+    b += txt(x0 + i * 3 * cw + 3 * cw / 2, ty + 30, cl, 20, '#222', 'bold', 'middle');
+  });
+  const cdu = ['C', 'D', 'U', 'C', 'D', 'U', 'C', 'D', 'U', 'C', 'D', 'U'];
+  const digs = ['6', '', '', '1', '4', '8', '3', '7', '5', '2', '0', '4'];
+  cdu.forEach((c, i) => {
+    const x = x0 + i * cw;
+    b += `<rect x="${x}" y="${ty + 44}" width="${cw}" height="34" fill="#FFF3E0" stroke="${BLUE}" stroke-width="2"/>`;
+    b += txt(x + cw / 2, ty + 44 + 24, c, 17, OCRE, 'bold', 'middle');
+    b += `<rect x="${x}" y="${ty + 78}" width="${cw}" height="54" fill="white" stroke="${BLUE}" stroke-width="2.5"/>`;
+    if (digs[i]) b += txt(x + cw / 2, ty + 78 + 38, digs[i], 30, '#222', 'bold', 'middle');
+  });
+  b += arrow(x0 + 11.4 * cw, ty + 172, x0 + 0.6 * cw, ty + 172, GREEN, 4);
+  b += txt(500, ty + 200, 'POUR ÉCRIRE : de droite à gauche (le chiffre des unités entre le premier)', 19, GREEN, 'bold', 'middle');
+  b += txt(500, ty + 230, 'POUR LIRE : de gauche à droite, une classe après l’autre', 19, PINK2, 'bold', 'middle');
+  const ky = ty + 258;
+  b += txt(500, ky, 'LE CACHE : une fenêtre découpée dans un carton', 20, BLUE, 'bold', 'middle');
+  const kx = 105, kw = 190;
+  ['6', '148', '375', '204'].forEach((n, i) => {
+    b += `<rect x="${kx + i * (kw + 14)}" y="${ky + 16}" width="${kw}" height="58" fill="${i === 3 ? 'white' : '#B0BEC5'}" stroke="${BLUE}" stroke-width="3"/>`;
+    b += txt(kx + i * (kw + 14) + kw / 2, ky + 56, n, 30, i === 3 ? PINK2 : '#546E7A', 'bold', 'middle');
+  });
+  b += txt(310, ky + 104, 'classes cachées', 17, '#546E7A', 'normal', 'middle');
+  b += txt(790, ky + 104, 'je lis : « deux cent quatre »', 19, PINK2, 'bold', 'middle');
+  b += txt(500, ky + 136, 'on ne découvre qu’une classe : 3 chiffres, aucune confusion possible', 19, '#222', 'normal', 'middle');
+  b += txt(500, ky + 168, '6 148 375 204 → six milliards cent quarante-huit millions', 20, GREEN, 'bold', 'middle');
+  b += txt(500, ky + 198, 'trois cent soixante-quinze mille deux cent quatre', 20, GREEN, 'bold', 'middle');
+  b += box(140, ky + 218, 720, 44, '« quarante mille sept » → 40 | 007 → 40 007 (3 chiffres par classe)', '#FFF3E0', OCRE, 19);
+  return svg(1000, ky + 278, s + b); })();
 // S2 — valeur de position
 figs.u1f2 = (() => { const { s, y } = head('Le tableau de numération', ['Dans 507 213, le même chiffre ne vaut pas partout la même chose.']);
   const top = y + 20;
@@ -105,17 +144,17 @@ const S = [
   {
     t: 'Lire et écrire les nombres jusqu’à 1 000 000', comp: 'Nombre', theme: 'Nombres naturels jusqu’à 1 000 000',
     goal: 'lire et écrire en chiffres et en lettres les nombres naturels jusqu’à 1 000 000',
-    mat: 'Étiquettes de chiffres, tableau de numération, cahier, ardoises',
+    mat: 'Étiquettes de chiffres, tableau de numération, cache en carton, cahier, ardoises',
     revQ: 'Écris en chiffres : « huit mille deux cent trois ».',
     revRA: '8 203.',
     situation: 'Au marché d’Analakely, un marchand de riz affiche le prix d’un grand sac : 348 256 Ar. Voary sait lire « mille », mais ce nombre-là est bien plus long ! Comment lire sans se tromper un nombre de six chiffres ?',
     def: 'Pour lire un grand nombre, on sépare ses chiffres en classes de trois chiffres en partant de la droite : la classe des unités, puis la classe des mille. Le nombre 1 000 000, qui vaut mille fois mille, s’appelle un million.',
     autrement: 'on coupe le nombre en tranches de trois chiffres, et on lit tranche après tranche en disant « mille » entre les deux.',
-    concept: 'Prenons le nombre 348 256. On le coupe en deux tranches, comme on coupe une pizza : 348 | 256. On lit la tranche de gauche : « trois cent quarante-huit ». On dit le mot « mille ». Puis on lit la tranche de droite : « deux cent cinquante-six ». Et voilà : trois cent quarante-huit mille deux cent cinquante-six ! Le petit espace entre les tranches n’est pas une décoration : il montre la frontière entre les classes. Pour écrire un nombre que l’on te dicte, écris d’abord la classe des mille, puis TROIS chiffres pour la classe des unités. S’il manque des chiffres, complète avec des zéros : « quarante mille sept » s’écrit 40 007 — jamais 407 !',
+    concept: 'Tout commence par les MOTS-NOMBRES, appris dès le T3 : vingt, trente, quarante, cinquante, soixante… et les trois mots-pièges : 70 = soixante-dix (60 + 10), 80 = quatre-vingts (4 × 20), 90 = quatre-vingt-dix (80 + 10) — c’est pourquoi 75 se dit soixante-quinze et 95 quatre-vingt-quinze. Ensuite, un secret qui change tout : on ne lit JAMAIS tous les chiffres d’un coup, on lit TROIS chiffres à la fois, une classe après l’autre. Prenons 348 256 : on le coupe en deux tranches, comme une pizza : 348 | 256. On lit la tranche de gauche, on dit « mille », puis la tranche de droite : trois cent quarante-huit mille deux cent cinquante-six ! Pour ne jamais mélanger les classes, l’astuce des maîtres : le CACHE, une fenêtre découpée dans un carton — on cache toutes les classes et on ne découvre que celle qu’on lit : 3 chiffres, pas un de plus. Et comme une classe se lit toujours de la même façon, tu peux déjà lire jusqu’aux milliards : 6 | 148 | 375 | 204 se lit « six milliards cent quarante-huit millions trois cent soixante-quinze mille deux cent quatre ». Attention au sens : on ÉCRIT de droite à gauche (le chiffre des unités entre le premier dans le tableau), mais on LIT de gauche à droite. « Quarante mille sept » s’écrit 40 007 — la classe des unités garde ses trois chiffres, jamais 407 !',
     synthese: 'classes de trois chiffres depuis la droite ; on lit la classe des mille, le mot « mille », puis la classe des unités ; chaque classe à droite doit avoir ses trois chiffres.',
-    method: ['Séparer le nombre en tranches de trois chiffres en partant de la droite.', 'Lire la tranche de gauche puis dire « mille ».', 'Lire la tranche de droite ; en écrivant, compléter chaque classe avec des zéros si besoin.'],
+    method: ['Réviser d’abord les mots-nombres des dizaines, surtout soixante-dix, quatre-vingts, quatre-vingt-dix.', 'Séparer le nombre en classes de trois chiffres en partant de la droite.', 'Lire avec le cache : une classe à la fois, de gauche à droite, en disant « mille », « millions », « milliards » entre les classes.', 'Pour écrire un nombre dicté, remplir le tableau de droite à gauche et compléter chaque classe avec des zéros si besoin.'],
     exemple: '602 040 se lit « six cent deux mille quarante » ; « quinze mille neuf » s’écrit 15 009.',
-    erreur: 'Écrire « quarante mille sept » 407 ou 4 007 : la classe des unités doit garder ses trois chiffres, donc 40 007. Compter les chiffres après « mille » !',
+    erreur: 'Lire 95 « nonante-cinq » : ce mot n’existe pas en français, on dit quatre-vingt-quinze. Écrire « quarante mille sept » 407 ou 4 007 : la classe des unités doit garder ses trois chiffres, donc 40 007. Compter les chiffres après « mille » !',
     saistu: 'Madagascar compte environ 30 millions d’habitants, et sa capitale Antananarivo en abrite plus de 1 000 000 à elle seule : chaque fois que tu écris un million, tu écris à peu près le nombre d’habitants de Tana !',
     exos: ['Écris en lettres : a) 7 245 ; b) 83 060 ; d) 500 500 ; e) 1 000 000.',
       'Écris en chiffres : a) douze mille trois cent quatre ; b) deux cent mille vingt ; d) neuf cent quatre-vingt-dix mille ; e) six cent un mille huit.',

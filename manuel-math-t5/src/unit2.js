@@ -40,12 +40,31 @@ figs.u2f3 = (() => { const { s, y } = head('Poser une grande soustraction', ['50
   b += txt(500, top + 252, 'vérification : 363 500 + 136 500 = 500 000 ✓', 22, OCRE, 'bold', 'middle');
   return svg(1000, top + 284, s + b); })();
 // S4 — vérifier un résultat
-figs.u2f4 = (() => { const { s, y } = head('Vérifier sans refaire pareil', ['Deux gardiens du calcul : l’opération inverse et l’ordre de grandeur.']);
-  const top = y + 25;
-  let b = box(90, top, 820, 60, 'PREUVE : 742 − 268 = 474, car 474 + 268 = 742', GREENL, GREEN, 24);
-  b += box(90, top + 85, 820, 60, 'ESTIMATION : 742 − 268, c’est proche de 700 − 300 = 400', '#FFF3E0', OCRE, 24);
-  b += txt(500, top + 195, 'si la preuve retombe juste ET que l’ordre de grandeur colle, le résultat est sûr', 20, PINK2, 'bold', 'middle');
-  return svg(1000, top + 228, s + b); })();
+figs.u2f4 = (() => { const { s, y } = head('La preuve par 9 : la croix qui contrôle × et ÷', ['Chaque nombre devient un seul chiffre (somme de ses chiffres) : la croix les compare.']);
+  const top = y + 14;
+  let b = txt(250, top + 20, 'MULTIPLICATION : 47 × 73 = 3 431', 21, BLUE, 'bold', 'middle');
+  b += txt(750, top + 20, 'DIVISION : 425 ÷ 7 = 60, reste 5', 21, BLUE, 'bold', 'middle');
+  const croix = (cx, cy, vals) => {
+    let r = seg(cx - 58, cy - 58, cx + 58, cy + 58, BLUE, 5) + seg(cx - 58, cy + 58, cx + 58, cy - 58, BLUE, 5);
+    r += txt(cx, cy - 74, vals[0], 32, PINK2, 'bold', 'middle');
+    r += txt(cx, cy + 102, vals[1], 32, PINK2, 'bold', 'middle');
+    r += txt(cx - 92, cy + 12, vals[2], 32, GREEN, 'bold', 'middle');
+    r += txt(cx + 92, cy + 12, vals[3], 32, OCRE, 'bold', 'middle');
+    r += txt(cx, cy - 102, 'H', 15, '#888', 'bold', 'middle');
+    r += txt(cx, cy + 132, 'B', 15, '#888', 'bold', 'middle');
+    r += txt(cx - 136, cy + 12, 'G', 15, '#888', 'bold', 'middle');
+    r += txt(cx + 136, cy + 12, 'D', 15, '#888', 'bold', 'middle');
+    return r;
+  };
+  b += croix(250, top + 190, ['2', '1', '2', '2']);
+  b += croix(750, top + 190, ['7', '6', '2', '2']);
+  b += txt(250, top + 372, '47 → 4+7 = 11 → 2 (H) ; 73 → 10 → 1 (B)', 18, '#222', 'normal', 'middle');
+  b += txt(250, top + 400, 'produit 3 431 → 2 (G) ; D = H × B = 2 × 1 = 2 ✓', 18, '#222', 'normal', 'middle');
+  b += txt(750, top + 372, 'diviseur 7 (H) ; quotient 60 → 6 (B)', 18, '#222', 'normal', 'middle');
+  b += txt(750, top + 400, 'dividende 425 → 2 (G) ; D = (H × B) + 5 = 47 → 2 ✓', 18, '#222', 'normal', 'middle');
+  b += box(80, top + 424, 840, 46, 'MULTIPLICATION : D = H × B.  DIVISION : D = (H × B) + reste.  Si G = D → résultat ✓', GREENL, GREEN, 19);
+  b += box(80, top + 486, 840, 46, 'RÉDUIRE : additionner les chiffres jusqu’à un seul : 3431 → 11 → 2 (les 9 se jettent !)', '#FFF3E0', OCRE, 19);
+  return svg(1000, top + 552, s + b); })();
 // S5 — multiplication posée
 figs.u2f5 = (() => { const { s, y } = head('Multiplier : 324 × 46', ['Deux produits partiels : par les unités, puis par les dizaines (décalage !).']);
   const top = y + 30, x = 480, dx = 46;
@@ -64,12 +83,37 @@ figs.u2f5 = (() => { const { s, y } = head('Multiplier : 324 × 46', ['Deux prod
   b += txt(500, top + 300, '324 × 46 = 1 944 + 12 960 = 14 904 : le second produit est décalé d’un rang', 20, BLUE, 'bold', 'middle');
   return svg(1000, top + 332, s + b); })();
 // S6 — division posée
-figs.u2f6 = (() => { const { s, y } = head('Diviser avec quotient et reste', ['127 mangues partagées entre 5 bols : 25 chacune, et il en reste 2.']);
-  const top = y + 25;
-  let b = tableEl(190, top, [310, 310], 56, [['dividende 127', 'diviseur 5'], ['reste 2', 'quotient 25']]);
-  b += txt(500, top + 2 * 56 + 48, '127 = (5 × 25) + 2 : la preuve de la division', 24, GREEN, 'bold', 'middle');
-  b += txt(500, top + 2 * 56 + 86, 'le reste est TOUJOURS plus petit que le diviseur (2 &lt; 5)', 21, PINK2, 'bold', 'middle');
-  return svg(1000, top + 2 * 56 + 118, s + b); })();
+figs.u2f6 = (() => { const { s, y } = head('La division posée, étape par étape : 127 ÷ 5', ['« Dans… combien de fois… ? » — la seule question à se répéter, colonne après colonne.']);
+  const top = y + 26, x = 230, dx = 46;
+  let b = '';
+  '127'.split('').forEach((c, i) => b += txt(x + i * dx, top + 40, c, 33, '#222', 'bold', 'middle'));
+  b += seg(x + 3 * dx + 8, top - 4, x + 3 * dx + 8, top + 64, BLUE, 4);
+  b += seg(x + 3 * dx + 8, top - 4, x + 3 * dx + 112, top - 4, BLUE, 4);
+  b += txt(x + 3 * dx + 40, top + 40, '5', 33, PINK2, 'bold', 'middle');
+  b += txt(x - 8, top - 20, '2', 34, GREEN, 'bold', 'middle');
+  b += txt(x + dx - 8, top - 20, '5', 34, GREEN, 'bold', 'middle');
+  b += txt(x - 44, top + 84, '−', 26, '#222', 'bold', 'middle');
+  b += txt(x, top + 84, '1', 27, '#222', 'bold', 'middle');
+  b += txt(x + dx, top + 84, '0', 27, '#222', 'bold', 'middle');
+  b += seg(x - 54, top + 100, x + 2 * dx, top + 100, BLUE, 3);
+  b += txt(x + dx - 8, top + 130, '2', 30, '#222', 'bold', 'middle');
+  b += txt(x + 2 * dx - 8, top + 130, '7', 30, OCRE, 'bold', 'middle');
+  b += arrow(x + 2 * dx + 30, top + 112, x + 2 * dx - 4, top + 122, OCRE, 3.5);
+  b += txt(x - 44, top + 174, '−', 26, '#222', 'bold', 'middle');
+  b += txt(x, top + 174, '2', 27, '#222', 'bold', 'middle');
+  b += txt(x + dx, top + 174, '5', 27, '#222', 'bold', 'middle');
+  b += seg(x - 54, top + 190, x + 2 * dx, top + 190, BLUE, 3);
+  b += txt(x + 2 * dx - 8, top + 218, '2', 30, PINK2, 'bold', 'middle');
+  const ax = 590;
+  b += txt(ax, top - 16, 'Dans 12, combien de fois 5 ?', 20, '#222', 'normal');
+  b += txt(ax, top + 14, '→ 2 fois, car 2 × 5 = 10 ; 12 − 10 = 2', 20, '#222', 'normal');
+  b += txt(ax, top + 44, 'J’abaisse le 7 : ça fait 27.', 20, OCRE, 'bold');
+  b += txt(ax, top + 74, 'Dans 27, combien de fois 5 ?', 20, '#222', 'normal');
+  b += txt(ax, top + 104, '→ 5 fois, car 5 × 5 = 25 ; 27 − 25 = 2', 20, '#222', 'normal');
+  b += txt(ax, top + 134, 'Quotient 25, reste 2 (2 &lt; 5 ✓)', 21, GREEN, 'bold');
+  b += box(90, top + 252, 820, 48, 'PREUVE ROYALE : (5 × 25) + 2 = 125 + 2 = 127 = le dividende ✓', GREENL, GREEN, 22);
+  b += box(90, top + 316, 820, 46, 'RÈGLE D’OR : le reste est toujours plus petit que le diviseur — sinon le quotient est trop petit !', '#FDE7EF', PINK2, 18);
+  return svg(1000, top + 386, s + b); })();
 // S7 — partage et groupement
 figs.u2f7 = (() => { const { s, y } = head('Une division, deux questions', ['24 ÷ 4 répond à deux questions très différentes… avec le même calcul !']);
   const top = y + 25;
@@ -242,14 +286,14 @@ const S = [
     revQ: 'Calcule 10 000 − 3 650.',
     revRA: '6 350.',
     situation: 'Au contrôle, Lalao a écrit 742 − 268 = 574. Sa voisine trouve 474. Sans refaire le calcul une troisième fois, comment savoir laquelle a raison ? Deux gardiens veillent : la preuve et l’estimation.',
-    def: 'Vérifier un calcul, c’est contrôler son résultat sans le refaire à l’identique. La preuve utilise l’opération inverse : une soustraction se vérifie par une addition, et une addition se vérifie en retranchant l’un des termes du total. L’estimation compare le résultat à un ordre de grandeur obtenu avec des nombres arrondis.',
+    def: 'Vérifier un calcul, c’est contrôler son résultat sans le refaire à l’identique. La preuve utilise l’opération inverse : une soustraction se vérifie par une addition, et une addition se vérifie en retranchant l’un des termes du total. L’estimation compare le résultat à un ordre de grandeur obtenu avec des nombres arrondis. Enfin, la preuve par neuf contrôle une multiplication ou une division en quelques secondes, à l’aide d’une croix.',
     autrement: 'la preuve refait le chemin à l’envers ; l’estimation regarde de loin si la réponse est « dans la bonne zone ».',
-    concept: 'Les deux gardiens ne travaillent pas pareil. L’estimation est rapide et approximative : 742 − 268, c’est environ 700 − 300 = 400 ; le 574 de Lalao est trop loin, le 474 de sa voisine est crédible. La preuve est lente mais exacte : 474 + 268 = 742 ✓, tandis que 574 + 268 = 842 ✗ — verdict sans appel. Le bon réflexe du candidat au CEPE : estimer AVANT de calculer (pour savoir où l’on va), prouver APRÈS (pour signer son résultat). Celui qui rend sa copie sans vérifier laisse ses fautes de retenue se promener en liberté.',
+    concept: 'Les deux gardiens ne travaillent pas pareil. L’estimation est rapide et approximative : 742 − 268, c’est environ 700 − 300 = 400 ; le 574 de Lalao est trop loin, le 474 de sa voisine est crédible. La preuve est lente mais exacte : 474 + 268 = 742 ✓, tandis que 574 + 268 = 842 ✗ — verdict sans appel. La preuve par neuf complète la panoplie : réduire chaque nombre à un seul chiffre (la somme de ses chiffres, recommencée jusqu’à un chiffre), puis tracer la croix. Multiplication : haut et bas reçoivent les réduits des deux facteurs, la gauche celui du produit — et la droite se calcule : haut × bas ; si gauche = droite, tout va bien. Division : haut = diviseur, bas = quotient, gauche = dividende — et la droite se calcule : (haut × bas) + reste ; si gauche = droite, la division est bonne. Petit garde-fou : la preuve par neuf rend le résultat très probable, pas certain — elle ne voit pas deux chiffres simplement échangés ! Le bon réflexe du candidat au CEPE : estimer AVANT de calculer (pour savoir où l’on va), prouver APRÈS (pour signer son résultat). Celui qui rend sa copie sans vérifier laisse ses fautes de retenue se promener en liberté.',
     synthese: 'estimation avant (nombres arrondis), preuve après (opération inverse) ; soustraction ↔ addition sont inverses l’une de l’autre.',
-    method: ['Arrondir les nombres et calculer de tête l’ordre de grandeur.', 'Effectuer l’opération posée.', 'Appliquer la preuve par l’opération inverse et conclure.'],
+    method: ['Arrondir les nombres et calculer de tête l’ordre de grandeur.', 'Effectuer l’opération posée.', 'Appliquer la preuve par l’opération inverse et conclure.', 'Pour × et ÷ : réduire chaque nombre à un chiffre et tracer la croix (multiplication → droite = haut × bas ; division → droite = (haut × bas) + reste).'],
     exemple: '1 258 + 3 747 = 5 005 ; estimation 1 300 + 3 700 = 5 000 ✓ ; preuve 5 005 − 3 747 = 1 258 ✓.',
     erreur: 'Vérifier en refaisant exactement le même calcul : on refait souvent la même faute au même endroit ! L’opération INVERSE, elle, emprunte un autre chemin et débusque l’erreur.',
-    saistu: 'Les comptables de la Renaissance avaient une botte secrète, la « preuve par neuf », qui contrôlait une multiplication en quelques secondes avec les restes de la division par 9. Ton futur professeur de collège la connaît sûrement — demande-lui de te montrer ce tour de magie !',
+    saistu: 'La preuve par neuf a plus de mille ans : née chez les calculateurs indiens, elle a voyagé chez les marchands arabes puis dans les comptoirs vénitiens. En anglais on l’appelle « casting out nines » — « jeter les neuf » — car en réduisant un nombre, on peut jeter les 9 au passage : 945 → 9 + 4 + 5 = 18 → 9, ou directement 4 + 5 = 9 → jeter ! Pourquoi 9 ? Parce qu’un nombre et la somme de ses chiffres laissent le même reste dans la division par 9 : la croix compare des restes, en secret.',
     exos: ['Vérifie par la preuve et corrige si besoin : a) 456 + 287 = 743 ; b) 902 − 356 = 556 ; d) 5 480 + 2 520 = 8 000 ; e) 10 000 − 4 444 = 6 666.',
       'Donne un ordre de grandeur puis calcule : a) 4 897 + 3 108 ; b) 9 012 − 2 987 ; d) 49 850 + 25 103 ; e) 80 125 − 39 884.',
       'Rivo a payé 13 750 Ar et 8 300 Ar au marché ; il affirme avoir dépensé 23 050 Ar. a) Estime la dépense. b) Son total est-il crédible ? d) Prouve par la soustraction. e) Conclus en une phrase.',
