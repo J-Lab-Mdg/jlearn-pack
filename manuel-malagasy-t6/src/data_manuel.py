@@ -8,7 +8,7 @@
 FANDRINDANA (araka ny lisitry ny **FRP T6, édisiona Oktobra 2026** ; gandra = **RAPE T6
 sept. 2026**, 4 ora/kerinandro, `Daty` = mangina) :
   herin. 1-7  : S1 = LFK 1a + 1b (vita, V2) — S2 = LFK 1d verindroa (vita) — S3 = LFK 1e
-                Fanakambanan-teny — S4 = rima/ngadona (LII 2d tononkalo)
+                Fanakambanan-teny (vita) — S4 = rima/ngadona (LII 2d tononkalo)
   herin. 8-14 : S5 = LFK 2a tsirinteny — S6 = LFK 2d Fandrasan-teny (marika « < »,
                 fanatsaram-peo) — S7 = LFK 2e anaran'ny tsirinteny
   herin. 15-21: S8 = LFK 2b Mpanoritra — S9 = LFK 2c Mpamari-toetra — S10 = LFK 2c
@@ -24,10 +24,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import data_tsipelina_s1  # noqa: E402
 import data_tsipelina_s2  # noqa: E402
+import data_tsipelina_s3  # noqa: E402
 
 LESONS = [
     data_tsipelina_s1.FICHE,
     data_tsipelina_s2.FICHE,
+    data_tsipelina_s3.FICHE,
 ]
 
 FICHE = {"FICHES": LESONS}
