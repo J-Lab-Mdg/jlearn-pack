@@ -56,6 +56,24 @@ function tableEl(x, y, colW, rowH, data, headerFill = BLUEL) {
   }
   return s;
 }
+function groupedTable(x, y, colW, rowH, groups, rows, headerFill = BLUEL) {
+  let s = '', cx = x;
+  for (const [label, span] of groups) {
+    const w = colW * span;
+    s += `<rect x="${cx}" y="${y}" width="${w}" height="${rowH}" fill="${headerFill}" stroke="${BLUE}" stroke-width="2.5"/>`;
+    s += txt(cx + w / 2, y + rowH / 2 + 9, label, 25, '#222', 'bold', 'middle');
+    cx += w;
+  }
+  for (let r = 0; r < rows.length; r++) {
+    cx = x;
+    for (const value of rows[r]) {
+      s += `<rect x="${cx}" y="${y + (r + 1) * rowH}" width="${colW}" height="${rowH}" fill="white" stroke="${BLUE}" stroke-width="2.5"/>`;
+      s += txt(cx + colW / 2, y + (r + 1) * rowH + rowH / 2 + 9, value, 25, '#222', 'normal', 'middle');
+      cx += colW;
+    }
+  }
+  return s;
+}
 function arrow(x1, y1, x2, y2, color = GREEN, wd = 4) {
   const a = Math.atan2(y2 - y1, x2 - x1), L = 14;
   return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${wd}"/>`
@@ -90,4 +108,4 @@ async function render(figs) {
 }
 function pngSize(buf) { return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) }; }
 
-module.exports = { BLUE, PINK, PINK2, GREEN, GREENL, OCRE, BLUEL, SER, head, svg, bar, txt, grid100, nline, dot, tableEl, arrow, axes, box, rightAngle, poly, seg, circle, render, pngSize, DIR };
+module.exports = { BLUE, PINK, PINK2, GREEN, GREENL, OCRE, BLUEL, SER, head, svg, bar, txt, grid100, nline, dot, tableEl, groupedTable, arrow, axes, box, rightAngle, poly, seg, circle, render, pngSize, DIR };

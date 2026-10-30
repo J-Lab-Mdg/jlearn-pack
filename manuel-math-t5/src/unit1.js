@@ -1,18 +1,18 @@
 // UNITÉ 1 — NOMBRE (PE T5) : 12 séances + révision + examen format CEPE
 const L = require('./figlib');
 const { buildUnit } = require('./engine');
-const { head, svg, txt, nline, dot, tableEl, box, arrow, seg, bar, grid100, PINK, PINK2, GREEN, GREENL, BLUE, BLUEL, OCRE } = L;
+const { head, svg, txt, nline, dot, tableEl, groupedTable, box, arrow, seg, bar, grid100, PINK, PINK2, GREEN, GREENL, BLUE, BLUEL, OCRE } = L;
 
 const figs = {};
 // S1 — lire et écrire jusqu'à 1 000 000 (mots-nombres + tableau CDU + cache)
 figs.u1f1 = (() => { const { s, y } = head('Lire et écrire un nombre par classes', ['Je sépare toujours les chiffres par groupes de trois.']);
   const top = y + 18, cw = 78, x0 = 145;
-  const data = [
-    ['MILLIONS','MILLIONS','MILLIONS','MILLE','MILLE','MILLE','UNITÉS','UNITÉS','UNITÉS'],
+  const groups = [['MILLIONS', 3], ['MILLE', 3], ['UNITÉS', 3]];
+  const rows = [
     ['C','D','U','C','D','U','C','D','U'],
     ['','','','3','4','8','2','5','6']
   ];
-  let b = tableEl(x0, top, Array(9).fill(cw), 46, data, BLUEL);
+  let b = groupedTable(x0, top, cw, 46, groups, rows, BLUEL);
   b += txt(500, top + 178, '348 | 256', 32, PINK2, 'bold', 'middle');
   b += txt(500, top + 216, '348 mille et 256 unités', 21, GREEN, 'bold', 'middle');
   b += arrow(500, top + 238, 500, top + 270, GREEN, 4);
@@ -139,6 +139,10 @@ const S = [
       'a) 45 004 ; b) 405 000 ; d) 40 504 ; e) 400 050 ; ordre : 40 504 < 45 004 < 400 050 < 405 000.',
       'a) 203 070 ; b) il a oublié que la classe des unités s’écrit toujours avec TROIS chiffres : « soixante-dix » devient 070 ; d) 204 070 ; e) deux cent trois mille soixante-neuf.'],
     fig: 'u1f1',
+    petitProbleme: {
+      question: 'Maman gagne 870 000 Ar par mois. Qu’est-ce qui est écrit en lettres sur la fiche de paie ?',
+      correction: 'Huit cent soixante-dix mille ariary.'
+    },
     cahier: [['boxes',{items:[['348','#FDE7EF','classe des mille'],['256','#E8F5E9','classe des unités']],lecture:'On lit : « trois cent quarante-huit » + « mille » + « deux cent cinquante-six ».'}],['vx',[[true,'« quarante mille sept » = 40 007 (TROIS chiffres pour les unités)'],[false,'407 : il manque les zéros du milieu !']]],['noex']],
     jeu: 'Devinette : je suis un nombre de six chiffres ; ma classe des mille est 205 et ma classe des unités 030. Qui suis-je ? (Réponse : 205 030.)'
   },
