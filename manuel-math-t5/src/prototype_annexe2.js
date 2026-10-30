@@ -52,8 +52,13 @@ function cardCell(children) {
   });
 }
 function formulaLine(formula, unit, example) {
+  const formulas = Array.isArray(formula) ? formula : [formula];
+  const formulaParagraphs = formulas.map((item, i) => mixed([
+    [i === 0 ? 'Formule : ' : '                 ', { bold: true, color: C.blue }],
+    [item, { bold: true, color: C.red, size: 24 }]
+  ], { fill: C.pale, after: 3 }));
   return [
-    mixed([['Formule : ', { bold: true, color: C.blue }], [formula, { bold: true, color: C.red, size: 26 }]], { fill: C.pale, after: 55 }),
+    ...formulaParagraphs,
     mixed([['Grandeurs et unité : ', { bold: true, color: C.green }], [unit]], { fill: C.paleGreen, after: 55 }),
     mixed([['Exemple : ', { italics: true, underline: true }], [example]], { after: 30 })
   ];
@@ -175,8 +180,8 @@ async function main() {
 
   const sections = [
     { title: 'PÉRIMÈTRES ET AIRES', intro: 'On mesure le contour en unités de longueur et la surface en unités carrées. Les dimensions doivent être dans la même unité.', cards: [
-      ['Carré', 'Les quatre côtés ont la même longueur.', 'ann2_carre', 'P = 4 × c ;   A = c × c', 'c en cm ou m ; P en cm ou m ; A en cm² ou m².', 'Si c = 5 cm : P = 4 × 5 = 20 cm ; A = 5 × 5 = 25 cm².', 'Pour retrouver le côté : c = P ÷ 4.'],
-      ['Rectangle', 'Deux longueurs L et deux largeurs l.', 'ann2_rectangle', 'P = 2 × (L + l) ;   A = L × l', 'L et l en cm ou m ; P en cm ou m ; A en cm² ou m².', 'Si L = 8 cm et l = 3 cm : P = 22 cm ; A = 24 cm².', 'Formules inverses : L = A ÷ l ; l = A ÷ L ; L = P ÷ 2 − l.'],
+      ['Carré', 'Les quatre côtés ont la même longueur.', 'ann2_carre', ['P = 4 × c ;   A = c × c', 'c = P ÷ 4'], 'c en cm ou m ; P en cm ou m ; A en cm² ou m².', 'Si c = 5 cm : P = 20 cm ; A = 25 cm². Si P = 20 cm : c = 20 ÷ 4 = 5 cm.', 'Le côté c se retrouve avec le périmètre : c = P ÷ 4.'],
+      ['Rectangle', 'Deux longueurs L et deux largeurs l.', 'ann2_rectangle', ['P = 2 × (L + l) ;   A = L × l', 'L = A ÷ l ;   l = A ÷ L', 'L = P ÷ 2 − l ;   l = P ÷ 2 − L'], 'L et l en cm ou m ; P en cm ou m ; A en cm² ou m².', 'Si L = 8 cm et l = 3 cm : P = 22 cm ; A = 24 cm². Si A = 24 cm² et l = 3 cm : L = 8 cm.', 'Les deux formules inverses du périmètre sont à connaître : L = P ÷ 2 − l et l = P ÷ 2 − L.'],
       ['Triangle', 'Trois côtés a, b et c ; une base b et sa hauteur h.', 'ann2_triangle', 'P = a + b + c ;   A = (b × h) ÷ 2', 'P en cm ou m ; A en cm² ou m² ; h perpendiculaire à b.', 'Si a = 5 cm, b = 6 cm, c = 7 cm : P = 18 cm. Si h = 4 cm : A = 12 cm².', 'La somme des angles d’un triangle est 180°.'],
       ['Polygone régulier et demi-périmètre', 'Un polygone régulier possède n côtés égaux de longueur c.', 'ann2_polygone', 'P = n × c ;   DP = P ÷ 2', 'P et DP en cm ou m ; n est sans unité.', 'Un hexagone de côté 4 cm : P = 6 × 4 = 24 cm ; DP = 12 cm.', 'Pour un polygone quelconque, on additionne tous les côtés.']
     ]},
@@ -186,10 +191,10 @@ async function main() {
       ['Parallélogramme', 'Base b et hauteur h perpendiculaire à cette base.', 'ann2_parallelogramme', 'A = b × h', 'b et h en cm ou m ; A en cm² ou m².', 'Si b = 7 cm et h = 3 cm : A = 21 cm².', 'Formules inverses : b = A ÷ h ; h = A ÷ b.']
     ]},
     { title: 'SOLIDES ET VOLUMES', intro: 'Le volume mesure l’espace occupé. On utilise des unités cubes : cm³, dm³ ou m³.', cards: [
-      ['Cube', 'Les trois dimensions sont égales à l’arête a.', 'ann2_cube', 'V = a × a × a = a³', 'a en cm ou m ; V en cm³ ou m³.', 'Si a = 4 cm : V = 4 × 4 × 4 = 64 cm³.', 'Un cube est un pavé droit particulier.'],
-      ['Pavé droit', 'Longueur L, largeur l et hauteur h.', 'ann2_pave', 'V = L × l × h', 'L, l et h en cm ou m ; V en cm³ ou m³.', 'Si L = 8 cm, l = 3 cm et h = 2 cm : V = 48 cm³.', 'Pour retrouver une dimension : L = V ÷ (l × h).'],
-      ['Prisme', 'Aire de la base et hauteur du prisme.', 'ann2_prisme', 'V = A_base × h', 'A_base en cm² ou m² ; h en cm ou m ; V en cm³ ou m³.', 'Si A_base = 12 cm² et h = 5 cm : V = 60 cm³.', 'La base peut être un triangle, un rectangle ou un autre polygone.'],
-      ['Cylindre', 'Rayon r de la base et hauteur h.', 'ann2_cylindre', 'V = π × r² × h', 'r et h en cm ou m ; V en cm³ ou m³.', 'Si r = 2 cm et h = 5 cm : V ≈ 3,14 × 4 × 5 = 62,8 cm³.', 'La base du cylindre est un disque : A_base = πr².']
+      ['Cube', 'Les trois dimensions sont égales à l’arête a.', 'ann2_cube', ['A_latérale = 4 × a² ;   A_totale = 6 × a²', 'V = a × a × a = a³'], 'a en cm ou m ; aires en cm² ou m² ; V en cm³ ou m³.', 'Si a = 4 cm : A_latérale = 64 cm² ; A_totale = 96 cm² ; V = 64 cm³.', 'Un cube est un pavé droit particulier.'],
+      ['Pavé droit', 'Longueur L, largeur l et hauteur h.', 'ann2_pave', ['A_latérale = 2 × (L + l) × h', 'A_totale = 2 × (L × l + L × h + l × h)', 'V = L × l × h'], 'L, l et h en cm ou m ; aires en cm² ou m² ; V en cm³ ou m³.', 'Si L = 8 cm, l = 3 cm et h = 2 cm : A_latérale = 44 cm² ; A_totale = 92 cm² ; V = 48 cm³.', 'La base est le rectangle L × l ; l’aire latérale entoure cette base.'],
+      ['Prisme droit', 'Aire et périmètre de la base, puis hauteur du prisme.', 'ann2_prisme', ['A_latérale = P_base × h', 'A_totale = A_latérale + 2 × A_base', 'V = A_base × h'], 'P_base en cm ou m ; A_base, A_latérale et A_totale en cm² ou m² ; V en cm³ ou m³.', 'Si P_base = 14 cm, A_base = 12 cm² et h = 5 cm : A_latérale = 70 cm² ; A_totale = 94 cm² ; V = 60 cm³.', 'La base peut être un triangle, un rectangle ou un autre polygone.'],
+      ['Cylindre', 'Rayon r de la base et hauteur h.', 'ann2_cylindre', ['A_latérale = 2 × π × r × h', 'A_totale = A_latérale + 2 × π × r²', 'V = π × r² × h'], 'r et h en cm ou m ; aires en cm² ou m² ; V en cm³ ou m³.', 'Si r = 2 cm et h = 5 cm : A_latérale ≈ 62,8 cm² ; A_totale ≈ 87,92 cm² ; V ≈ 62,8 cm³.', 'La base du cylindre est un disque : A_base = πr².']
     ]},
     { title: 'PROPRIÉTÉS ET UNITÉS À RETENIR', intro: 'Ces repères permettent de vérifier si une formule et une unité conviennent au problème.', cards: [
       ['Angles des polygones étudiés', 'Les angles intérieurs se lisent sur la figure.', 'ann2_proprietes', 'Triangle : 180° ;   quadrilatère : 360°', 'Un angle se mesure en degrés (°).', 'Dans un triangle, si deux angles mesurent 60° et 70°, le troisième mesure 50°.', 'Carré et rectangle : quatre angles droits.'],
