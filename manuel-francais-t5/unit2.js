@@ -138,6 +138,9 @@ function lessonS13() {
     mot("le billet", "le papier qui prouve que j'ai payé ma place"),
     mot("le budget", "l'argent prévu pour le voyage"),
     mot("majestueux", "grand et magnifique, comme un roi"),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Complète : « Destination ……… »."),
+    p("2. Cite deux merveilles promises par la brochure.", { after: 60 }),
   ];
 }
 
@@ -216,6 +219,8 @@ function lessonS14() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« voyager en avion, en taxi-brousse »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« voyager avec l'avion »" + ".")]),
+    sub("Exercice — je classe :"),
+    p("Transport, établissement ou préparation ? le taxi-brousse — l'hôtel — le billet — la pirogue — la valise — la gare routière.", { after: 60 }),
   ];
 }
 
@@ -284,6 +289,8 @@ function lessonS15() {
     p("• des adjectifs qui valorisent : turquoise, magnifiques, parfumées, royal ;"),
     p("• des indications de lieu : au nord-ouest, près du port, sur la plage ;"),
     p("• le présent de description : l'île offre, les hôtels se trouvent."),
+    sub("Exercice — je retrouve dans la brochure :"),
+    p("1. Un mot du champ lexical de la mer. — 2. Un adjectif qui fait rêver. — 3. La phrase qui invite le lecteur à venir.", { after: 60 }),
   ];
 }
 
@@ -359,6 +366,9 @@ function lessonS16() {
     sub("Attention aux contractions !"),
     pr([run("de + le = du ", { bold: true, color: C.RED }), run("→ à côté du port   •   "),
         run("de + les = des ", { bold: true, color: C.RED }), run("→ près des plages")]),
+    sub("Exercice — complète avec la bonne préposition :"),
+    p("« Nous partons ……… Morondava ……… taxi-brousse. ……… la route, nous dormons ……… ma tante. »"),
+    pr([run("[à + ville, en + véhicule fermé, chez + personne]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -431,6 +441,8 @@ function lessonS17() {
     p("", { after: 60 }),
     pr([run("Mais au féminin, pas de piège : ", { bold: true }),
         run("des avenues royales, des routes principales, des fêtes originales", { bold: true, color: C.SALMON }), run(".")]),
+    sub("Exercice — accorde l'habit du nom :"),
+    p("1. des plages (magnifique) — 2. des parcs (national) — 3. une forêt (frais) — 4. des paysages (merveilleux).", { after: 60 }),
   ];
 }
 
@@ -518,6 +530,8 @@ function lessonS18() {
         run("j'irais, je ferais, je viendrais, je prendrais, je mettrais", { bold: true, color: C.SALMON })], { after: 50 }),
     pr([run("La politesse du voyageur : ", { bold: true }),
         run("« Je voudrais un billet pour Morondava, s'il vous plaît ! »", { italic: true, color: C.SALMON })]),
+    sub("Exercice — passe au rêve :"),
+    p("Transforme au conditionnel : « Nous visitons l'allée des baobabs. » — « Je prends la pirogue. » — puis commence une phrase par « J'aimerais… »", { after: 60 }),
   ];
 }
 
@@ -585,6 +599,8 @@ function lessonS19() {
     p("• les mots de transition : d'abord, ensuite, enfin.", { after: 80 }),
     sub("La phrase magique du rêveur :"),
     pr([run("« Si je pouvais choisir, j'irais à … , je prendrais … , je ferais … ! »", { italic: true, bold: true, color: C.SALMON })]),
+    sub("Exercice — parle comme un guide :"),
+    p("Prépare trois phrases sur ta région : une avec « plus… que », une avec « le plus… de », une avec « J'aimerais vous montrer… ».", { after: 60 }),
   ];
 }
 
@@ -652,6 +668,8 @@ function lessonS20() {
     p("• tourisme : sites touristiques, hôtel, excursion, visiteurs ;"),
     p("• adjectifs valorisants : splendide, majestueux, pittoresque, accueillant ;"),
     p("• connecteurs de lieu : dans, sur, près de, à côté de, au bord de."),
+    sub("Exercice — ton plan de brochure :"),
+    p("Bâtis le plan d'une brochure pour ton village : un titre qui accroche, deux attraits avec un adjectif chacun, une phrase d'invitation.", { after: 60 }),
   ];
 }
 
@@ -717,6 +735,9 @@ function lessonS21() {
     p("☐ Le lexique du voyage (transports, paysage, tourisme)."),
     p("☐ Les verbes irréguliers bien conjugués (on y va, vous faites, les visiteurs viennent…)."),
     p("☐ Majuscules, points, virgules."),
+    sub("Exercice — améliore comme un écrivain :"),
+    p("« venez dans mon village il est joli on mange bien » → corrige et fais briller : ………"),
+    pr([run("[exemple : Venez découvrir mon village fleuri : ses fruits sucrés vous attendent !]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -784,6 +805,9 @@ function lessonS22() {
         run("↗ ", { bold: true, color: C.RED }), run("= la voix monte")], { after: 80 }),
     pr([run("Exemple : ", { bold: true }),
         run("« Au nord-ouest de Madagascar / se trouve Nosy Be, / la plus célèbre des îles malgaches. // »", { italic: true, color: C.SALMON })]),
+    sub("Exercice — annote puis lis avec enthousiasme :"),
+    p("« Venez admirer le coucher du soleil sur l'allée des baobabs ! Vous ne l'oublierez jamais. »"),
+    pr([run("[la voix monte sur le point d'exclamation, puis ralentit sur la promesse]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 

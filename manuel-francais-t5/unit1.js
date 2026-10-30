@@ -140,6 +140,9 @@ function lessonS1() {
     mot("une aire protégée", "une zone où la nature est protégée"),
     mot("les feux de brousse", "les feux qui brûlent les collines et les champs"),
     mot("les barrières de feux", "des bandes de terrain nu qui arrêtent le feu"),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Que veut dire « le reboisement » ? Et « une aire protégée » ?"),
+    p("2. Redis le passage en deux phrases : ce que le feu a détruit, ce que le village a décidé.", { after: 60 }),
   ];
 }
 
@@ -219,6 +222,9 @@ function lessonS2() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« il y a beaucoup d'arbres »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« il y a beaucoup des arbres »" + ".")]),
+    sub("Exercice — je classe dans le bon panier :"),
+    p("DANGER ou REMÈDE ? la déforestation — le reboisement — la pollution — l'aire protégée — les feux de brousse — la conservation."),
+    pr([run("[souviens-toi : dé- détruit, -tion fabrique des noms d'action]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -291,6 +297,9 @@ function lessonS3() {
     p("• Je lis d'abord silencieusement, en entier."),
     p("• Je cherche l'information principale, puis les informations secondaires."),
     p("• Je souligne les mots de transition : ils montrent le chemin du texte."),
+    sub("Exercice — je retrouve dans le texte :"),
+    p("1. Un détail que l'on VOIT et un détail que l'on ENTEND."),
+    p("2. La phrase qui donne l'idée principale du texte.", { after: 60 }),
   ];
 }
 
@@ -366,6 +375,9 @@ function lessonS4() {
         run(" la forêt commence. "),
         run("Enfin,", { bold: true, color: C.SALMON }),
         run(" on arrive au village.")]),
+    sub("Exercice — complète avec d'abord, ensuite, enfin :"),
+    p("« ……… nous préparons les jeunes plants. ……… nous creusons les trous sur la colline. ……… nous arrosons chaque arbre. »"),
+    pr([run("[un mot pour ouvrir, un pour continuer, un pour fermer : jamais deux fois le même]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -439,6 +451,8 @@ function lessonS5() {
     p("• Le complément du nom précise un nom : quelle forêt ? → la forêt du village."),
     p("• Le CC de lieu situe l'action : où ? → au sommet de la colline."),
     p("• Ces deux outils enrichissent la description !"),
+    sub("Exercice — complément du nom ou CC de lieu ?"),
+    p("1. « la forêt du village » — 2. « Les lémuriens sautent dans les arbres. » — 3. « les maisons en terre rouge » — 4. « Derrière l'école, la colline est verte. »", { after: 60 }),
   ];
 }
 
@@ -527,6 +541,9 @@ function lessonS6() {
     mot("regarder", "avec attention : je regarde le lémurien"),
     mot("apercevoir", "de loin, un instant : j'aperçois le toit de l'école"),
     mot("se trouver", "pour situer : le parc se trouve à l'est"),
+    sub("Exercice — je chasse « il y a » :"),
+    p("Remplace par un verbe plus précis : « Dans la forêt, il y a des lémuriens. » — « Au pied de la montagne, il y a le village. »"),
+    pr([run("[sautent, jouent, se cachent… / s'étend, se blottit… : le verbe précis peint l'image]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -594,6 +611,8 @@ function lessonS7() {
     p("• je peux poser des questions, demander une clarification, admettre mes erreurs, demander l'avis de mes camarades.", { after: 80 }),
     sub("Pour situer dans l'image :"),
     pr([run("au premier plan — au second plan — au fond — à gauche — à droite — au centre — au sommet — au pied", { bold: true, color: C.SALMON })]),
+    sub("Exercice — à toi de jouer :"),
+    p("Prépare la description de ta cour d'école en trois phrases : la vue d'ensemble, un détail précis, ton avis — puis dis-la à voix haute.", { after: 60 }),
   ];
 }
 
@@ -661,6 +680,8 @@ function lessonS8() {
     p("• les compléments du nom : la rivière du village, le chant des oiseaux ;"),
     p("• les CC de lieu : au bord de l'eau, au pied de la colline ;"),
     p("• les verbes de description : on voit, on aperçoit, se trouve."),
+    sub("Exercice — ton plan :"),
+    p("Bâtis le plan d'une description de ton lieu préféré : trois idées dans l'ordre (vue d'ensemble → détails → avis), et un mot de transition prévu pour chacune.", { after: 60 }),
   ];
 }
 
@@ -728,6 +749,9 @@ function lessonS9() {
     p("☐ J'ai employé au moins deux mots de l'unité (pollution, reboisement…)."),
     p("☐ Mes verbes voir, apercevoir, se trouver sont bien conjugués."),
     p("☐ Majuscules, points, virgules après les transitions."),
+    sub("Exercice — améliore comme un écrivain :"),
+    p("« il y a une foret elle est jolie » → corrige, ajoute un verbe précis et un adjectif : ………"),
+    pr([run("[exemple : La forêt fraîche s'étend derrière le village.]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -796,6 +820,8 @@ function lessonS10() {
     p("• Je respire aux groupes de souffle, jamais au milieu d'un mot !"),
     p("• Ma voix vit : elle monte aux questions, elle s'exclame aux « ! »."),
     p("• Fluidité (sans hésiter) + précision (tous les mots) + expressivité (la voix) = lecture réussie !"),
+    sub("Exercice — prépare puis lis à voix haute :"),
+    p("Marque / et // puis lis : « Derrière l'école, la colline est verte. Les enfants plantent, arrosent, chantent ! Qui protège la forêt ? »", { after: 60 }),
   ];
 }
 
