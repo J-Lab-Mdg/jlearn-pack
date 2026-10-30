@@ -69,7 +69,7 @@ function sujetOperations(k) {
   corr.push([`On décompose le multiplicateur : ${f} = ${fd} + ${fu}.`,
     `${F(e)} × ${fd} = ${F(e * fd)}  et  ${F(e)} × ${fu} = ${F(e * fu)}.`,
     `${F(e)} × ${f} = ${F(e * fd)} + ${F(e * fu)} = ${F(e * f)}.`,
-    `Preuve par 9 (croix) : ${e} → ${n9(e)} ; ${f} → ${n9(f)} ; ${n9(e)} × ${n9(f)} = ${n9(n9(e) * n9(f))}, et ${F(e * f)} → ${n9(e * f)} ✓`]);
+    `Contrôle visuel par 9 : ${e} → ${n9(e)} ; ${f} → ${n9(f)} ; ${n9(e)} × ${n9(f)} = ${n9(n9(e) * n9(f))}, et ${F(e * f)} → ${n9(e * f)} ✓`]);
   // 4. division euclidienne
   const h = ri(12, 45), q = ri(23, 97), rr = ri(1, h - 1), g = h * q + rr;
   items.push(`${F(g)} ÷ ${h}`);
@@ -77,7 +77,7 @@ function sujetOperations(k) {
   corr.push([`Encadrement : ${h} × 10 = ${F(h * 10)} < ${F(g)} < ${h} × 100 = ${F(h * 100)} → le quotient a 2 chiffres.`,
     `${F(g)} = (${h} × ${q}) + ${rr} : quotient ${q}, reste ${rr}.`,
     `Vérification : ${h} × ${q} + ${rr} = ${F(h * q)} + ${rr} = ${F(g)} ✓ (le reste ${rr} est bien plus petit que ${h}).`,
-    `Croix de la preuve par 9 : H ${n9(h)} × B ${n9(q)} + reste ${rr} → ${n9(h * q + rr)}, comme ${F(g)} → ${n9(g)} ✓`]);
+    `Contrôle visuel par 9 : H ${n9(h)} × B ${n9(q)} + reste ${rr} → ${n9(h * q + rr)}, comme ${F(g)} → ${n9(g)} ✓`]);
   // 5. fractions (4 variantes)
   const v = k % 4;
   if (v === 0) {

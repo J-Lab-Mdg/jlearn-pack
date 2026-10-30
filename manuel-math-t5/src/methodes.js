@@ -1,6 +1,6 @@
 // MÉTHODES D'OR — la boîte à outils du CEPE (itération 6).
 // 9 fiches illustrées : résoudre un problème, lire les grands nombres, bien poser les opérations,
-// preuve par 9 en croix, division pas à pas, fractions, durées, intervalles, checklist.
+// preuve par 9 dessinée, division pas à pas, fractions, durées, intervalles, checklist.
 const fs = require('fs');
 const path = require('path');
 const L = require('./figlib');
@@ -139,7 +139,7 @@ figs.m3f1 = (() => { const { s, y } = head('Bien poser : trois règles d’or av
   return svg(1000, my + 330, s + b); })();
 
 // F4 — la croix de la preuve par 9
-figs.m4f1 = (() => { const { s, y } = head('La croix de la preuve par 9', ['Réduis chaque nombre à un seul chiffre, trace la croix, compare.']);
+figs.m4f1 = (() => { const { s, y } = head('Le schéma de contrôle par 9', ['Réduis chaque nombre, suis les flèches et compare.']);
   const top = y + 14;
   let b = txt(250, top + 20, 'MULTIPLICATION : 47 × 73 = 3 431', 21, BLUE, 'bold', 'middle');
   b += txt(750, top + 20, 'DIVISION : 425 ÷ 7 = 60, reste 5', 21, BLUE, 'bold', 'middle');
@@ -277,7 +277,7 @@ figs.m9f1 = (() => { const { s, y } = head('La checklist du CEPE — épreuve OP
     'Relis la leçon si besoin (fractions, conversions…)',
     'Brouillon propre : chiffres alignés, une opération par ligne',
     'Convertis les unités AVANT de calculer (m et cm jamais mélangés !)',
-    'Vérifie : ordre de grandeur, puis preuve (croix par 9 pour × et ÷)',
+    'Vérifie : ordre de grandeur, puis schéma par 9 pour × et ÷',
     'Recopie et réponds en PHRASE COMPLÈTE, avec l’unité (Ar, m, kg…)',
   ];
   let b = '';
@@ -302,13 +302,13 @@ figs.m9f1 = (() => { const { s, y } = head('La checklist du CEPE — épreuve OP
     new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 160 }, shading: { type: ShadingType.CLEAR, fill: C.pale }, children: [new Bookmark({ id: 'mor', children: [tr('LA BOÎTE À OUTILS DU CEPE', { bold: true, color: C.red, size: 50 })] })] }),
     new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 400 }, children: [tr('9 fiches illustrées — tout ce qui facilite les calculs et les problèmes', { italics: true, color: C.green, size: 26 })] }),
     p([tr('Les astuces des maîtres, rassemblées au même endroit : le cache pour lire les grands nombres,', { size: 24 })], { align: AlignmentType.CENTER, after: 60 }),
-    p([tr('la croix de la preuve par 9, la division pas à pas, les mots-indices des problèmes…', { size: 24 })], { align: AlignmentType.CENTER, after: 60 }),
+    p([tr('le schéma de contrôle par 9, la division pas à pas, les mots-indices des problèmes…', { size: 24 })], { align: AlignmentType.CENTER, after: 60 }),
     p([tr('À relire avant chaque examen — et à garder toute ta scolarité !', { size: 24, bold: true, color: C.wine })], { align: AlignmentType.CENTER, after: 300 }),
     p('Sommaire des fiches :', { bold: true, after: 80 }),
     p('1. Comment résoudre un problème — la méthode en 6 étapes', { indent: 240, after: 40 }),
     p('2. Lire un grand nombre — mots-nombres, tableau CDU et cache', { indent: 240, after: 40 }),
     p('3. Bien poser les quatre opérations — unités, virgules, zéros', { indent: 240, after: 40 }),
-    p('4. La preuve par 9 — la croix qui contrôle × et ÷', { indent: 240, after: 40 }),
+    p('4. La preuve par 9 — le schéma qui contrôle × et ÷', { indent: 240, after: 40 }),
     p('5. La division posée — pas à pas, avec la preuve royale', { indent: 240, after: 40 }),
     p('6. Les fractions — les quatre opérations en images', { indent: 240, after: 40 }),
     p('7. Les durées — calculer quand les retenues valent 60', { indent: 240, after: 40 }),
@@ -352,14 +352,14 @@ figs.m9f1 = (() => { const { s, y } = head('La checklist du CEPE — épreuve OP
   children.push(img(figBufs.m3f1));
 
   // FICHE 4
-  children.push(page(), title('FICHE 4 — LA PREUVE PAR 9 : LA CROIX MAGIQUE', 1, 'mor4'));
-  children.push(p('La preuve par neuf contrôle une multiplication ou une division en quelques secondes. Elle a plus de mille ans — et elle tient dans une croix.'));
+  children.push(page(), title('FICHE 4 — LA PREUVE PAR 9 : LE SCHÉMA MAGIQUE', 1, 'mor4'));
+  children.push(p('La preuve par neuf contrôle une multiplication ou une division en quelques secondes. Elle se lit dans un dessin à quatre directions.'));
   children.push(p([tr('Étape 1 — RÉDUIS chaque nombre à un seul chiffre : ', { bold: true, color: C.green }), tr('additionne ses chiffres, et recommence jusqu’à un seul. 47 → 4 + 7 = 11 → 1 + 1 = 2. Astuce des calculateurs : jette les 9 au passage !')]));
-  children.push(p([tr('Étape 2 — Trace la croix (un grand ×) et place : ', { bold: true, color: C.green }), tr('MULTIPLICATION → en HAUT et en BAS les réduits des deux facteurs, à GAUCHE le réduit du produit. DIVISION → en HAUT le réduit du diviseur, en BAS celui du quotient, à GAUCHE celui du dividende.')]));
+  children.push(p([tr('Étape 2 — Place les nombres sur le schéma et suis les branches : ', { bold: true, color: C.green }), tr('MULTIPLICATION → en HAUT et en BAS les réduits des deux facteurs, à GAUCHE le réduit du produit. DIVISION → en HAUT le réduit du diviseur, en BAS celui du quotient, à GAUCHE celui du dividende.')]));
   children.push(p([tr('Étape 3 — Calcule la DROITE : ', { bold: true, color: C.green }), tr('multiplication → droite = haut × bas ; division → droite = (haut × bas) + reste. Si GAUCHE = DROITE, le résultat est très probablement juste ✓')]));
   children.push(img(figBufs.m4f1));
-  children.push(p('Exemple de réduction rapide : 425 → 4 + 2 + 5 = 11 → 1 + 1 = 2. Et 945 : on jette le 9, 4 + 5 = 9 → on jette encore → 0 : parfait pour la croix !', { fill: 'FFF8E1' }));
-  children.push(p([tr('Limite de la croix : ', { bold: true, color: C.red }), tr('elle ne voit pas deux chiffres simplement échangés (2 13 au lieu de 213 garde le même réduit). « Très probablement juste », donc — et pas « sûrement juste ». Pour la certitude, la preuve complète reste la reine : (diviseur × quotient) + reste = dividende.')], { fill: 'FDE7EF' }));
+  children.push(p('Exemple de réduction rapide : 425 → 4 + 2 + 5 = 11 → 1 + 1 = 2. Et 945 : on jette le 9, 4 + 5 = 9 → on jette encore → 0 : les flèches du schéma font le contrôle !', { fill: 'FFF8E1' }));
+  children.push(p([tr('Limite du schéma : ', { bold: true, color: C.red }), tr('elle ne voit pas deux chiffres simplement échangés (2 13 au lieu de 213 garde le même réduit). « Très probablement juste », donc — et pas « sûrement juste ». Pour la certitude, la preuve complète reste la reine : (diviseur × quotient) + reste = dividende.')], { fill: 'FDE7EF' }));
 
   // FICHE 5
   children.push(page(), title('FICHE 5 — LA DIVISION POSÉE PAS À PAS', 1, 'mor5'));
@@ -401,7 +401,7 @@ figs.m9f1 = (() => { const { s, y } = head('La checklist du CEPE — épreuve OP
   children.push(p('Les consignes officielles de l’épreuve, transformées en huit réflexes. Coche-les dans ta tête — ou recopie-les en haut de ton brouillon à chaque examen.'));
   children.push(img(figBufs.m9f1));
   children.push(banner('ET POUR L’ÉPREUVE DE PROBLÈMES…', C.wine));
-  children.push(p('Même armure : lis deux fois, une question à la fois, cherche la question cachée (fiche 1), choisis l’opération avec les mots-indices, convertis les unités, vérifie avec la croix par 9 (fiche 4) et la preuve royale (fiche 5) — puis réponds en phrase complète avec l’unité. Bon CEPE !', { fill: 'FFF8E1' }));
+  children.push(p('Même armure : lis deux fois, une question à la fois, cherche la question cachée (fiche 1), choisis l’opération avec les mots-indices, convertis les unités, vérifie avec le schéma par 9 (fiche 4) et la preuve royale (fiche 5) — puis réponds en phrase complète avec l’unité. Bon CEPE !', { fill: 'FFF8E1' }));
 
   const doc = new Document({
     styles: { default: { document: { run: { font: 'Times New Roman', size: 24 }, paragraph: { spacing: { line: 300 } } } } },
