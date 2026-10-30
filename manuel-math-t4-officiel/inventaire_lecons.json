@@ -1,0 +1,115 @@
+{
+  "titre": "Manuel de mathématiques T4 — inventaire officiel",
+  "statut": "architecture éditoriale initiale, contenu du manuel à produire",
+  "sources": {
+    "pe": "PE T4.pdf, pages imprimées 67-77",
+    "frp": "FRP T4 Fascicule 2.pdf, pages imprimées 5-54"
+  },
+  "unites": [
+    {
+      "id": "U1",
+      "nom": "Nombre",
+      "duree_officielle_heures": 40,
+      "valeurs": ["rigueur", "respect mutuel"],
+      "lecons": [
+        {"id":"U1-L01","titre":"Représenter, lire et écrire les nombres naturels jusqu’à 100 000","objectif":"Représenter une quantité et lire ou écrire le nombre correspondant.","activite":"Manipuler des blocs ou schémas de base 10 et associer quantité, chiffres et lettres.","supports":["blocs de base 10","tableau de numération"],"sources":{"pe":"p. 67","frp":"pp. 5-8"}},
+        {"id":"U1-L02","titre":"Comparer et ranger les nombres jusqu’à 100 000","objectif":"Comparer deux nombres entiers puis les ranger dans l’ordre croissant ou décroissant.","activite":"Comparer d’abord le nombre de chiffres, puis les rangs de gauche à droite.","supports":["tableau de numération","cartons de nombres"],"sources":{"pe":"p. 67","frp":"pp. 6-8"}},
+        {"id":"U1-L03","titre":"Composer et décomposer les nombres de 10 000 à 100 000","objectif":"Composer et décomposer un nombre de plusieurs façons avec les symboles mathématiques.","activite":"Utiliser le tableau de numération et des cartons de classes ou de valeurs.","supports":["tableau de numération","cartons de valeur"],"sources":{"pe":"p. 68","frp":"pp. 7-8, 14"}},
+        {"id":"U1-L04","titre":"Représenter une fraction simple","objectif":"Traduire une part d’un tout ou d’une collection par une fraction.","activite":"Partager des bandes, cercles ou carrés en parts égales et colorier une fraction.","supports":["bandes de fractions","puzzle de fractions"],"sources":{"pe":"p. 68","frp":"pp. 9-11"}},
+        {"id":"U1-L05","titre":"Reconnaître et produire des fractions équivalentes","objectif":"Établir le lien entre plusieurs représentations d’une même fraction.","activite":"Superposer des bandes et produire des fractions équivalentes.","supports":["bandes de fractions","droite numérique"],"sources":{"pe":"p. 68","frp":"pp. 11-12"}},
+        {"id":"U1-L06","titre":"Simplifier, comparer et ordonner des fractions simples","objectif":"Simplifier, comparer et ordonner des fractions simples inférieures ou égales à 1.","activite":"Simplifier par fractions équivalentes et comparer à l’aide de représentations ou de la droite numérique.","supports":["droite numérique","puzzle de fractions"],"sources":{"pe":"p. 68","frp":"pp. 11-12"}},
+        {"id":"U1-L07","titre":"Lire, écrire et décomposer les nombres décimaux","objectif":"Utiliser les nombres décimaux jusqu’à l’ordre des centièmes.","activite":"Placer les chiffres dans un tableau de numération et relier dixièmes et centièmes aux fractions décimales.","supports":["tableau de numération","cartons de valeur"],"sources":{"pe":"p. 69","frp":"pp. 13-14, 22"}},
+        {"id":"U1-L08","titre":"Relier fractions décimales et nombres décimaux","objectif":"Comparer et ordonner des nombres décimaux simples.","activite":"Utiliser une droite numérique et des écritures en dixièmes ou centièmes.","supports":["droite numérique","tableau de numération"],"sources":{"pe":"p. 69","frp":"pp. 13, 22"}},
+        {"id":"U1-L09","titre":"Lire et écrire les chiffres romains de I à M","objectif":"Utiliser les symboles romains et les principes d’addition et de soustraction.","activite":"Lire des dates, des numéros de chapitres ou des cadrans et écrire les nombres correspondants.","supports":["symboles romains","horloge ou documents historiques"],"sources":{"pe":"p. 69","frp":"p. 15"}},
+        {"id":"U1-L10","titre":"Consolidation et évaluation de l’unité Nombre","objectif":"Mobiliser les apprentissages de l’unité dans des exercices et problèmes courts.","activite":"Ateliers de représentation, comparaison, fractions, décimaux et chiffres romains.","supports":["supports des leçons U1-L01 à U1-L09"],"sources":{"pe":"pp. 67-69","frp":"pp. 5-15"}}
+      ]
+    },
+    {
+      "id": "U2",
+      "nom": "Opération",
+      "duree_officielle_heures": 45,
+      "valeurs": ["persévérance", "rigueur"],
+      "lecons": [
+        {"id":"U2-L01","titre":"Donner du sens à la multiplication","objectif":"Relier addition réitérée, multiplication et vocabulaire des facteurs.","activite":"Construire des groupes égaux à partir d’une situation-problème.","supports":["objets à regrouper","table de multiplication"],"sources":{"pe":"p. 70","frp":"p. 16"}},
+        {"id":"U2-L02","titre":"Multiplier un nombre naturel par deux ou trois chiffres","objectif":"Appliquer la technique usuelle de la multiplication avec ou sans retenue.","activite":"Décomposer les produits partiels puis vérifier le résultat.","supports":["table de multiplication","situation-problème"],"sources":{"pe":"p. 70","frp":"pp. 17-18"}},
+        {"id":"U2-L03","titre":"Donner du sens à la division","objectif":"Employer dividende, diviseur, quotient et reste dans une situation de partage.","activite":"Distribuer une collection et formuler la division correspondante.","supports":["objets à partager","situation-problème"],"sources":{"pe":"p. 70","frp":"p. 18-19"}},
+        {"id":"U2-L04","titre":"Diviser un nombre naturel par deux ou trois chiffres","objectif":"Appliquer la technique usuelle et contrôler que le reste est inférieur au diviseur.","activite":"Effectuer une division posée avec essais, soustractions et abaissements successifs.","supports":["situation-problème","table de multiplication"],"sources":{"pe":"p. 70","frp":"p. 20"}},
+        {"id":"U2-L05","titre":"Utiliser la divisibilité à partir de la division","objectif":"Justifier qu’un nombre est divisible par un autre à l’aide de la division.","activite":"Tester des divisions exactes et repérer les critères utilisables.","supports":["cartons de nombres","situation-problème"],"sources":{"pe":"p. 70","frp":"p. 21"}},
+        {"id":"U2-L06","titre":"Additionner et soustraire des fractions de même dénominateur","objectif":"Effectuer l’addition ou la soustraction et simplifier le résultat.","activite":"Assembler ou retirer des parts sur des bandes de fractions.","supports":["bandes de fractions","puzzle de fractions"],"sources":{"pe":"p. 70","frp":"pp. 9-12"}},
+        {"id":"U2-L07","titre":"Additionner et soustraire des nombres décimaux","objectif":"Poser et effectuer des additions ou soustractions de nombres décimaux jusqu’aux centièmes.","activite":"Aligner les virgules dans une situation de monnaie ou de mesure.","supports":["monnaie","règle graduée"],"sources":{"pe":"p. 71","frp":"p. 22"}},
+        {"id":"U2-L08","titre":"Multiplier et diviser mentalement par 10, 100 et 1 000","objectif":"Utiliser une stratégie de calcul mental donnant un résultat naturel.","activite":"Construire des chaînes de calcul et expliquer le déplacement des rangs.","supports":["petits exercices","cartons de nombres"],"sources":{"pe":"p. 71","frp":"pp. 7-8, 14"}},
+        {"id":"U2-L09","titre":"Additionner et soustraire mentalement jusqu’à 1 000","objectif":"Choisir une stratégie de calcul mental adaptée.","activite":"Utiliser décomposition, commutativité, double et compensation.","supports":["situations-problèmes","cartons de nombres"],"sources":{"pe":"p. 71","frp":"p. 23-26, à sélectionner selon le PE"}},
+        {"id":"U2-L10","titre":"Consolidation et résolution de problèmes de l’unité Opération","objectif":"Choisir et justifier une opération dans une situation de la vie courante.","activite":"Résoudre des problèmes mêlant multiplication, division, fractions, décimaux et calcul mental.","supports":["situations-problèmes","supports des leçons U2-L01 à U2-L09"],"sources":{"pe":"pp. 70-71","frp":"pp. 16-22"}}
+      ]
+    },
+    {
+      "id": "U3",
+      "nom": "Algèbre",
+      "duree_officielle_heures": 23,
+      "valeurs": ["rigueur", "persévérance"],
+      "lecons": [
+        {"id":"U3-L01","titre":"Observer une suite non numérique à motif répété","objectif":"Identifier et prolonger une régularité dans une suite de figures ou d’objets.","activite":"Décrire le motif avec des dessins et des mots.","supports":["figures ou dessins","table de valeurs"],"sources":{"pe":"p. 72","frp":"p. 23"}},
+        {"id":"U3-L02","titre":"Observer une suite non numérique à motif croissant","objectif":"Construire et prolonger une suite dont le motif évolue régulièrement.","activite":"Comparer plusieurs termes et expliciter la transformation observée.","supports":["figures ou dessins","table de valeurs"],"sources":{"pe":"p. 72","frp":"p. 23"}},
+        {"id":"U3-L03","titre":"Décrire une suite numérique : régularité, terme et rang","objectif":"Identifier la règle d’une suite numérique et situer un terme par son rang.","activite":"Compléter une suite et verbaliser la régularité.","supports":["droite numérique","table de valeurs"],"sources":{"pe":"p. 72","frp":"p. 23"}},
+        {"id":"U3-L04","titre":"Construire une table de valeurs","objectif":"Relier une régularité à une table de valeurs.","activite":"Compléter les colonnes rang, terme et règle à partir d’un motif.","supports":["table de valeurs","figures ou dessins"],"sources":{"pe":"p. 72","frp":"p. 23"}},
+        {"id":"U3-L05","titre":"Créer une suite numérique et justifier sa règle","objectif":"Élaborer une suite et expliquer la régularité par des nombres, des mots ou une table.","activite":"Créer puis faire deviner une suite à un autre groupe.","supports":["cartons de nombres","table de valeurs"],"sources":{"pe":"p. 72","frp":"p. 23"}},
+        {"id":"U3-L06","titre":"Comprendre le sens de l’égalité","objectif":"Représenter une situation d’égalité avec les signes +, −, ×, ÷ et =.","activite":"Construire des chaînes de calcul avec des cartons mobiles.","supports":["cartons mobiles","symboles mathématiques"],"sources":{"pe":"p. 72","frp":"pp. 23-26, à filtrer selon le PE"}},
+        {"id":"U3-L07","titre":"Utiliser commutativité, compensation, double et éléments neutres","objectif":"Utiliser ces propriétés pour transformer une égalité sans changer sa valeur.","activite":"Comparer deux écritures et expliquer pourquoi elles sont égales.","supports":["cartons mobiles","chaînes de calcul"],"sources":{"pe":"p. 72","frp":"pp. 23-26, à filtrer selon le PE"}},
+        {"id":"U3-L08","titre":"Trouver une valeur manquante dans une égalité","objectif":"Déterminer l’inconnue d’une situation d’égalité simple.","activite":"Résoudre des égalités à trou en représentant la situation.","supports":["symboles mathématiques","situation-problème"],"sources":{"pe":"p. 72","frp":"pp. 23-26, à filtrer selon le PE"}},
+        {"id":"U3-L09","titre":"Consolidation et évaluation de l’unité Algèbre","objectif":"Identifier, construire et justifier suites, tables de valeurs et égalités.","activite":"Ateliers de suites et d’égalités suivis d’une évaluation courte.","supports":["supports des leçons U3-L01 à U3-L08"],"sources":{"pe":"p. 72","frp":"p. 23"}}
+      ]
+    },
+    {
+      "id": "U4",
+      "nom": "Géométrie",
+      "duree_officielle_heures": 45,
+      "valeurs": ["équité", "confiance en soi"],
+      "lecons": [
+        {"id":"U4-L01","titre":"Reconnaître les angles aigu, droit, obtus et plat","objectif":"Distinguer les types d’angles et estimer leur mesure.","activite":"Comparer des angles d’objets de la vie courante à l’angle droit.","supports":["équerre","figures géométriques"],"sources":{"pe":"p. 73","frp":"pp. 33-34"}},
+        {"id":"U4-L02","titre":"Mesurer et comparer des angles","objectif":"Mesurer et tracer des angles avec le rapporteur et l’équerre.","activite":"Estimer puis vérifier la mesure de plusieurs angles.","supports":["rapporteur","équerre","règle"],"sources":{"pe":"p. 73","frp":"pp. 33-34"}},
+        {"id":"U4-L03","titre":"Identifier et classer les triangles","objectif":"Décrire et classer les triangles par leurs côtés et leurs angles.","activite":"Trier des triangles puis justifier le classement.","supports":["papier quadrillé","équerre"],"sources":{"pe":"pp. 73-74","frp":"pp. 34-37"}},
+        {"id":"U4-L04","titre":"Construire des triangles","objectif":"Construire des triangles à partir de longueurs ou d’angles donnés.","activite":"Tracer avec règle, équerre et compas en suivant une procédure.","supports":["règle","équerre","compas"],"sources":{"pe":"pp. 73-74","frp":"pp. 35-37"}},
+        {"id":"U4-L05","titre":"Identifier et classer les quadrilatères","objectif":"Décrire carré, rectangle, trapèze et losange à partir de leurs propriétés.","activite":"Classer des figures et vérifier côtés et angles.","supports":["papier quadrillé","équerre"],"sources":{"pe":"pp. 73-74","frp":"pp. 37-38"}},
+        {"id":"U4-L06","titre":"Construire des quadrilatères","objectif":"Construire les principales formes de quadrilatères.","activite":"Tracer un rectangle puis généraliser la démarche aux autres formes.","supports":["règle","équerre","papier quadrillé"],"sources":{"pe":"pp. 73-74","frp":"p. 38"}},
+        {"id":"U4-L07","titre":"Décrire et construire un cercle","objectif":"Identifier centre, rayon, diamètre et circonférence ; construire un cercle.","activite":"Tracer un cercle à partir d’un centre et d’un rayon ou d’un diamètre.","supports":["compas","règle"],"sources":{"pe":"p. 74","frp":"pp. 39-40"}},
+        {"id":"U4-L08","titre":"Identifier les propriétés des solides","objectif":"Reconnaître cube, pavé droit, cylindre, sphère, boule, cône et pyramide.","activite":"Observer, comparer et décrire bases, faces, arêtes et hauteur.","supports":["objets concrets","modèles de solides"],"sources":{"pe":"p. 74","frp":"pp. 43-46"}},
+        {"id":"U4-L09","titre":"Construire des patrons et des objets en carton","objectif":"Construire un solide en respectant ses éléments caractéristiques.","activite":"Élaborer, découper et plier des patrons de solides.","supports":["carton","ciseaux","colle","objets concrets"],"sources":{"pe":"p. 74","frp":"pp. 44-46"}},
+        {"id":"U4-L10","titre":"Réaliser une translation simple","objectif":"Déplacer une figure horizontalement, verticalement ou obliquement sans la tourner.","activite":"Reproduire le déplacement de chaque point puis relier les points.","supports":["papier à points","papier quadrillé","géoplan"],"sources":{"pe":"p. 75","frp":"pp. 46-47"}},
+        {"id":"U4-L11","titre":"Réaliser une réflexion simple","objectif":"Tracer l’image d’une figure après une réflexion donnée.","activite":"Utiliser un axe et compter les carreaux pour construire le reflet.","supports":["papier quadrillé","géoplan"],"sources":{"pe":"p. 75","frp":"pp. 46-47"}},
+        {"id":"U4-L12","titre":"Consolidation et évaluation de l’unité Géométrie","objectif":"Identifier, mesurer, construire et transformer des figures et des solides.","activite":"Parcours d’ateliers de construction et d’identification.","supports":["supports des leçons U4-L01 à U4-L11"],"sources":{"pe":"pp. 73-75","frp":"pp. 33-47"}}
+      ]
+    },
+    {
+      "id": "U5",
+      "nom": "Mesure",
+      "duree_officielle_heures": 25,
+      "valeurs": ["équité", "rigueur"],
+      "lecons": [
+        {"id":"U5-L01","titre":"Distinguer périmètre et surface","objectif":"Différencier le contour d’une figure et la surface qu’elle contient.","activite":"Comparer des figures par superposition et observation.","supports":["papier quadrillé","papier chemise","petits carrés"],"sources":{"pe":"p. 75","frp":"pp. 27-28"}},
+        {"id":"U5-L02","titre":"Mesurer une surface avec des unités carrées","objectif":"Mesurer une surface par dénombrement d’unités carrées.","activite":"Recouvrir des figures et compter les petits carrés.","supports":["petits carrés en carton","papier quadrillé"],"sources":{"pe":"p. 75","frp":"pp. 27-28"}},
+        {"id":"U5-L03","titre":"Calculer l’aire du rectangle et du carré","objectif":"Déduire et appliquer les formules de l’aire du rectangle et du carré.","activite":"Relier quadrillage, longueur, largeur et formule.","supports":["petits carrés","figures quadrillées"],"sources":{"pe":"pp. 75-76","frp":"p. 28"}},
+        {"id":"U5-L04","titre":"Calculer l’aire du parallélogramme et du trapèze","objectif":"Utiliser les formules d’aire des figures prévues par le programme.","activite":"Transformer ou décomposer les figures pour relier manipulation et formule.","supports":["petits carrés","figures découpées"],"sources":{"pe":"pp. 75-76","frp":"p. 28"}},
+        {"id":"U5-L05","titre":"Calculer l’aire des triangles et du losange","objectif":"Calculer l’aire de triangles et de quadrilatères à l’aide des formules.","activite":"Relier triangles et rectangles ou parallélogrammes par découpage.","supports":["petits carrés en carton","figures découpées"],"sources":{"pe":"p. 76","frp":"p. 28"}},
+        {"id":"U5-L06","titre":"Convertir les unités de longueur, de surface et les unités agraires","objectif":"Effectuer des conversions et des opérations sur les unités de mesure.","activite":"Placer une mesure dans un tableau de conversion puis résoudre un problème.","supports":["tableau de conversion","règle graduée"],"sources":{"pe":"p. 76","frp":"pp. 30-32"}},
+        {"id":"U5-L07","titre":"Lire l’heure et convertir les unités de temps","objectif":"Lire une horloge analogique ou numérique et relier heure, minute et seconde.","activite":"Lire des horaires et résoudre des situations de la vie quotidienne.","supports":["horloge analogique","horloge numérique"],"sources":{"pe":"p. 76","frp":"p. 29"}},
+        {"id":"U5-L08","titre":"Résoudre des problèmes de mesure et consolider l’unité","objectif":"Choisir une unité, convertir et effectuer l’opération adaptée.","activite":"Résoudre des problèmes d’aires, de conversions et de temps.","supports":["tableau de conversion","supports des leçons U5-L01 à U5-L07"],"sources":{"pe":"pp. 75-76","frp":"pp. 27-32"}}
+      ]
+    },
+    {
+      "id": "U6",
+      "nom": "Traitement de données",
+      "duree_officielle_heures": 20,
+      "valeurs": ["confiance en soi", "goût de l’effort"],
+      "lecons": [
+        {"id":"U6-L01","titre":"Concevoir une fiche d’enquête ou de sondage","objectif":"Formuler une question simple et préparer une collecte limitée.","activite":"Construire en groupe un questionnaire court.","supports":["fiche d’enquête","tableau de collecte"],"sources":{"pe":"p. 77","frp":"p. 48"}},
+        {"id":"U6-L02","titre":"Collecter et enregistrer les réponses","objectif":"Recueillir et enregistrer des données primaires.","activite":"Réaliser un sondage de classe avec un nombre restreint de réponses.","supports":["questionnaire","fiche de collecte"],"sources":{"pe":"p. 77","frp":"pp. 48-50"}},
+        {"id":"U6-L03","titre":"Organiser les données dans un tableau des effectifs","objectif":"Dénombrer les réponses et organiser les résultats.","activite":"Passer de la fiche brute au tableau des effectifs.","supports":["tableau des effectifs","données collectées"],"sources":{"pe":"p. 77","frp":"pp. 50-52"}},
+        {"id":"U6-L04","titre":"Représenter les données par pictogramme et diagramme à bandes","objectif":"Représenter des données primaires avec un diagramme simple.","activite":"Construire une représentation à partir du tableau des effectifs.","supports":["tableau des effectifs","papier quadrillé"],"sources":{"pe":"p. 77","frp":"pp. 50-52"}},
+        {"id":"U6-L05","titre":"Comparer les représentations et tirer une conclusion","objectif":"Interpréter les données et comparer les résultats de la collecte.","activite":"Répondre à des questions et justifier une conclusion à partir du diagramme.","supports":["pictogramme","diagramme à bandes"],"sources":{"pe":"p. 77","frp":"pp. 50-52"}},
+        {"id":"U6-L06","titre":"Réaliser une expérience aléatoire simple","objectif":"Organiser les résultats et dénombrer les issues possibles.","activite":"Lancer une pièce ou un dé et enregistrer les résultats.","supports":["pièces de monnaie","dés","tableau de résultats"],"sources":{"pe":"p. 77","frp":"pp. 53-54"}},
+        {"id":"U6-L07","titre":"Classer les événements selon leur probabilité","objectif":"Employer impossible, peu probable, possible, probable, très probable et certain.","activite":"Prédire puis classer des événements d’une expérience simple.","supports":["pièces de monnaie","dés","cartes d’événements"],"sources":{"pe":"p. 77","frp":"pp. 53-54"}},
+        {"id":"U6-L08","titre":"Consolider et évaluer l’unité Traitement de données","objectif":"Collecter, représenter, interpréter et discuter une expérience simple.","activite":"Mini-enquête ou expérience avec tableau, diagramme et conclusion.","supports":["supports des leçons U6-L01 à U6-L07"],"sources":{"pe":"p. 77","frp":"pp. 48-54"}}
+      ]
+    }
+  ]
+}
