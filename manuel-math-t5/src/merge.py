@@ -5,9 +5,9 @@ from docx import Document
 from docxcompose.composer import Composer
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
-from docx.shared import Pt, RGBColor
+from docx.shared import Pt, RGBColor, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
 
 R = Path(__file__).resolve().parents[1]
 W = R / 'work_merge'; W.mkdir(exist_ok=True)
@@ -50,6 +50,43 @@ def head(d, s, size=18):
 def para(d, s, bold=False):
     p = d.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     font(p.add_run(s), 12, bold); return p
+
+
+def shade(cell, fill):
+    tcPr = cell._tc.get_or_add_tcPr()
+    shd = tcPr.find(qn('w:shd'))
+    if shd is None:
+        shd = OxmlElement('w:shd'); tcPr.append(shd)
+    shd.set(qn('w:fill'), fill)
+
+
+def card_para(cell, parts, size=11, align=WD_ALIGN_PARAGRAPH.LEFT, fill=None, after=2):
+    p = cell.add_paragraph(); p.alignment = align
+    p.paragraph_format.space_after = Pt(after)
+    if fill:
+        pPr = p._p.get_or_add_pPr(); shd = OxmlElement('w:shd'); shd.set(qn('w:fill'), fill); pPr.append(shd)
+    for s, bold, color, italic in parts:
+        r = p.add_run(s); font(r, size, bold, color); r.italic = italic
+    return p
+
+
+def annex_card(d, title, subtitle, image_name, formulas, units, example, note):
+    table = d.add_table(rows=1, cols=1); table.style = 'Table Grid'; table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    cell = table.cell(0, 0); cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+    shade(cell, 'FFFFFF')
+    card_para(cell, [(title, True, (31, 78, 121), False)], 15, WD_ALIGN_PARAGRAPH.CENTER, after=1)
+    card_para(cell, [(subtitle, False, (102, 102, 102), False)], 9, WD_ALIGN_PARAGRAPH.CENTER, after=5)
+    p = cell.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_after = Pt(6)
+    run = p.add_run(); run.add_picture(str(R / 'assets' / 'figures' / image_name), width=Inches(5.9))
+    for i, formula in enumerate(formulas if isinstance(formulas, list) else [formulas]):
+        card_para(cell, [
+            ('Formule : ' if i == 0 else '                 ', True, (31, 78, 121), False),
+            (formula, True, (166, 28, 0), False)
+        ], 11, WD_ALIGN_PARAGRAPH.LEFT, fill='EEF4F8', after=1)
+    card_para(cell, [('Grandeurs et unité : ', True, (46, 125, 50), False), (units, False, (34, 34, 34), False)], 10, WD_ALIGN_PARAGRAPH.LEFT, fill='E8F5E9', after=2)
+    card_para(cell, [('Exemple : ', True, (34, 34, 34), True), (example, False, (34, 34, 34), False)], 10, WD_ALIGN_PARAGRAPH.LEFT, after=2)
+    card_para(cell, [(note, False, (34, 34, 34), False)], 9, WD_ALIGN_PARAGRAPH.LEFT, fill='FFF8E1', after=2)
+    d.add_page_break()
 
 
 # ---------- ANNEXES ----------
@@ -107,39 +144,38 @@ for t, v in gloss:
     p = a.add_paragraph()
     font(p.add_run(t + ' : '), 12, True, (31, 78, 121)); font(p.add_run(v + '.'), 12)
 
-a.add_page_break(); head(a, 'ANNEXE 2 — FORMULES ET PROPRIÉTÉS')
-rows = [
-    ('Notion', 'Formule ou propriété'),
-    ('Tableau de numération', 'centaines de mille, dizaines de mille, unités de mille, centaines, dizaines, unités'),
-    ('Comparer des nombres', 'on compare d’abord le nombre de chiffres, puis chiffre par chiffre en partant de la gauche'),
-    ('Fractions équivalentes', 'on multiplie (ou divise) le numérateur et le dénominateur par le même nombre'),
-    ('Décimaux', '0,4 = 0,40 ; 4/10 = 0,4 ; 25/100 = 0,25'),
-    ('Preuve de la soustraction', 'différence + nombre retranché = nombre de départ'),
-    ('Preuve de la division', 'dividende = diviseur × quotient + reste, avec reste < diviseur'),
-    ('Multiplier des fractions', 'numérateur × numérateur et dénominateur × dénominateur'),
-    ('Diviser par une fraction', 'diviser, c’est multiplier par la fraction renversée'),
-    ('Priorité des opérations', 'parenthèses d’abord ; puis × et ÷ ; puis + et − ; à priorité égale, de gauche à droite'),
-    ('Multiplier par 10, 100, 1 000', 'la virgule se déplace vers la droite de 1, 2 ou 3 rangs'),
-    ('Diviser par 10, 100, 1 000', 'la virgule se déplace vers la gauche de 1, 2 ou 3 rangs'),
-    ('Règle de trois', 'prix de 9 stylos connaissant 3 stylos à 700 Ar : (9 × 700) ÷ 3 = 2 100 Ar'),
-    ('Périmètre du carré', 'P = côté × 4'),
-    ('Périmètre du rectangle', 'P = (longueur + largeur) × 2'),
-    ('Circonférence du cercle', 'C = diamètre × 3,14'),
-    ('Aire du carré', 'A = côté × côté'),
-    ('Aire du rectangle', 'A = longueur × largeur'),
-    ('Aire du triangle', 'A = (base × hauteur) ÷ 2'),
-    ('Volume du cube et du pavé', 'on compte les cubes unités : longueur × largeur × hauteur (en cm³)'),
-    ('Unités de longueur', 'km, hm, dam, m, dm, cm, mm — chaque unité vaut 10 fois la suivante'),
-    ('Unités de masse', 't, q, kg, hg, dag, g — 1 t = 1 000 kg ; 1 kg = 1 000 g'),
-    ('Unités de capacité', 'hL, daL, L, dL, cL, mL — 1 L = 100 cL = 1 000 mL ; 1 L d’eau pèse 1 kg'),
-    ('Mesure du temps', '1 h = 60 min ; 1 min = 60 s ; 1 jour = 24 h ; 1 an = 12 mois ou 365 jours'),
-    ('Probabilité expérimentale', 'nombre de fois où l’événement se produit ÷ nombre total d’essais'),
+sections = [
+    ('PÉRIMÈTRES ET AIRES', 'On mesure le contour en unités de longueur et la surface en unités carrées. Les dimensions doivent être dans la même unité.', [
+        ('Carré', 'Les quatre côtés ont la même longueur.', 'ann2_carre.png', ['P = 4 × c ;   A = c × c', 'c = P ÷ 4'], 'c en cm ou m ; P en cm ou m ; A en cm² ou m².', 'Si c = 5 cm : P = 20 cm ; A = 25 cm². Si P = 20 cm : c = 20 ÷ 4 = 5 cm.', 'Le côté c se retrouve avec le périmètre : c = P ÷ 4.'),
+        ('Rectangle', 'Deux longueurs L et deux largeurs l.', 'ann2_rectangle.png', ['P = 2 × (L + l) ;   A = L × l', 'L = A ÷ l ;   l = A ÷ L', 'L = P ÷ 2 − l ;   l = P ÷ 2 − L'], 'L et l en cm ou m ; P en cm ou m ; A en cm² ou m².', 'Si L = 8 cm et l = 3 cm : P = 22 cm ; A = 24 cm². Si A = 24 cm² et l = 3 cm : L = 8 cm.', 'Les deux formules inverses du périmètre sont à connaître : L = P ÷ 2 − l et l = P ÷ 2 − L.'),
+        ('Triangle', 'Trois côtés a, b et c ; une base b et sa hauteur h.', 'ann2_triangle.png', ['P = a + b + c ;   A = (b × h) ÷ 2'], 'P en cm ou m ; A en cm² ou m² ; h perpendiculaire à b.', 'Si a = 5 cm, b = 6 cm, c = 7 cm : P = 18 cm. Si h = 4 cm : A = 12 cm².', 'La somme des angles d’un triangle est 180°.'),
+        ('Polygone régulier et demi-périmètre', 'Un polygone régulier possède n côtés égaux de longueur c.', 'ann2_polygone.png', ['P = n × c ;   DP = P ÷ 2'], 'P et DP en cm ou m ; n est sans unité.', 'Un hexagone de côté 4 cm : P = 6 × 4 = 24 cm ; DP = 12 cm.', 'Pour un polygone quelconque, on additionne tous les côtés.')
+    ]),
+    ('CERCLE ET FIGURES À BASES PARALLÈLES', 'Pour le cercle, on utilise π ≈ 3,14. Le diamètre traverse le centre ; le rayon va du centre au bord.', [
+        ('Cercle et disque', 'Rayon r, diamètre d, circonférence C et aire du disque A.', 'ann2_cercle.png', ['d = 2r ; r = d ÷ 2 ; C = πd = 2πr ; A = πr²'], 'r et d en cm ou m ; C en cm ou m ; A en cm² ou m².', 'Si r = 3 cm : d = 6 cm ; C ≈ 18,84 cm ; A ≈ 28,26 cm².', 'Ne pas confondre la circonférence C, qui est une longueur, et l’aire A, qui est une surface.'),
+        ('Trapèze', 'Grande base B, petite base b et hauteur h.', 'ann2_trapeze.png', ['A = (B + b) × h ÷ 2'], 'B, b et h en cm ou m ; A en cm² ou m².', 'Si B = 10 cm, b = 6 cm et h = 4 cm : A = 32 cm².', 'Formules inverses : h = (2A) ÷ (B + b) ; B = (2A ÷ h) − b.'),
+        ('Parallélogramme', 'Base b et hauteur h perpendiculaire à cette base.', 'ann2_parallelogramme.png', ['A = b × h'], 'b et h en cm ou m ; A en cm² ou m².', 'Si b = 7 cm et h = 3 cm : A = 21 cm².', 'Formules inverses : b = A ÷ h ; h = A ÷ b.')
+    ]),
+    ('SOLIDES ET VOLUMES', 'Le volume mesure l’espace occupé. L’aire latérale couvre les faces autour du solide ; l’aire totale comprend aussi les bases.', [
+        ('Cube', 'Les trois dimensions sont égales à l’arête a.', 'ann2_cube.png', ['A_latérale = 4 × a² ;   A_totale = 6 × a²', 'V = a × a × a = a³'], 'a en cm ou m ; aires en cm² ou m² ; V en cm³ ou m³.', 'Si a = 4 cm : A_latérale = 64 cm² ; A_totale = 96 cm² ; V = 64 cm³.', 'Un cube est un pavé droit particulier.'),
+        ('Pavé droit', 'Longueur L, largeur l et hauteur h.', 'ann2_pave.png', ['A_latérale = 2 × (L + l) × h', 'A_totale = 2 × (L × l + L × h + l × h)', 'V = L × l × h'], 'L, l et h en cm ou m ; aires en cm² ou m² ; V en cm³ ou m³.', 'Si L = 8 cm, l = 3 cm et h = 2 cm : A_latérale = 44 cm² ; A_totale = 92 cm² ; V = 48 cm³.', 'La base est le rectangle L × l ; l’aire latérale entoure cette base.'),
+        ('Prisme droit', 'Aire et périmètre de la base, puis hauteur du prisme.', 'ann2_prisme.png', ['A_latérale = P_base × h', 'A_totale = A_latérale + 2 × A_base', 'V = A_base × h'], 'P_base en cm ou m ; A_base, A_latérale et A_totale en cm² ou m² ; V en cm³ ou m³.', 'Si P_base = 14 cm, A_base = 12 cm² et h = 5 cm : A_latérale = 70 cm² ; A_totale = 94 cm² ; V = 60 cm³.', 'La base peut être un triangle, un rectangle ou un autre polygone.'),
+        ('Cylindre', 'Rayon r de la base et hauteur h.', 'ann2_cylindre.png', ['A_latérale = 2 × π × r × h', 'A_totale = A_latérale + 2 × π × r²', 'V = π × r² × h'], 'r et h en cm ou m ; aires en cm² ou m² ; V en cm³ ou m³.', 'Si r = 2 cm et h = 5 cm : A_latérale ≈ 62,8 cm² ; A_totale ≈ 87,92 cm² ; V ≈ 62,8 cm³.', 'La base du cylindre est un disque : A_base = πr².')
+    ]),
+    ('PROPRIÉTÉS ET UNITÉS À RETENIR', 'Ces repères permettent de vérifier si une formule et une unité conviennent au problème.', [
+        ('Angles des polygones étudiés', 'Les angles intérieurs se lisent sur la figure.', 'ann2_proprietes.png', ['Triangle : 180° ;   quadrilatère : 360°'], 'Un angle se mesure en degrés (°).', 'Dans un triangle, si deux angles mesurent 60° et 70°, le troisième mesure 50°.', 'Carré et rectangle : quatre angles droits.'),
+        ('Choisir la bonne unité', 'La grandeur demandée indique l’unité du résultat.', 'ann2_unites.png', ['Longueur / périmètre : cm ou m ; aire : cm² ou m² ; volume : cm³ ou m³'], 'Capacité : mL, cL, dL, L ; 1 dm³ = 1 L ; 1 cm³ = 1 mL.', 'Une longueur de 8 cm ne peut pas donner une aire de 8 cm : il faut appliquer la formule et écrire cm².', 'Toujours convertir les mesures dans la même unité avant de calculer.')
+    ])
 ]
-t = a.add_table(rows=0, cols=2); t.style = 'Table Grid'; t.alignment = WD_TABLE_ALIGNMENT.CENTER
-for i, row in enumerate(rows):
-    c = t.add_row().cells
-    for j, s in enumerate(row):
-        font(c[j].paragraphs[0].add_run(s), 11, i == 0)
+a.add_page_break()
+head(a, 'ANNEXE 2 — FORMULES ET PROPRIÉTÉS')
+para(a, 'Chaque carte présente une figure repérée, les grandeurs utiles, la formule directement dessous, les unités et un exemple. Les lettres utilisées : c = côté, L = longueur, l = largeur, b = petite base, B = grande base, h = hauteur, r = rayon, d = diamètre, n = nombre de côtés.')
+for section_title, intro, cards in sections:
+    a.add_page_break()
+    head(a, section_title, 16)
+    para(a, intro)
+    for title, subtitle, image_name, formulas, unit_desc, example, note in cards:
+        annex_card(a, title, subtitle, image_name, formulas, unit_desc, example, note)
 
 a.add_page_break(); head(a, 'ANNEXE 3 — RÉSUMÉ DES MÉTHODES')
 methods = [
