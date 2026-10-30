@@ -4,8 +4,11 @@ const fs = require('fs');
 const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, AlignmentType, ShadingType, PageBreak,
-  Header, Footer, PageNumber, Bookmark, Math: DocxMath, MathFraction, MathRun
+  Header, Footer, PageNumber, Bookmark, ImageRun, Math: DocxMath, MathFraction, MathRun
 } = require('docx');
+const sharp = require('sharp');
+const { pngSize } = require('./figlib');
+const OPFIG = require('./opfig');
 
 const C = { red: 'C00000', green: '2E7D32', blue: '1F4E79', wine: 'C2185B', ocre: 'B25000', pale: 'EAF2F8', white: 'FFFFFF', black: '000000' };
 const tr = (text, opt = {}) => new TextRun({ text, font: 'Times New Roman', size: opt.size || 24, bold: !!opt.bold, color: opt.color || C.black, italics: !!opt.italics });
@@ -27,6 +30,11 @@ const title = (text, level = 1, bookmark) => {
 };
 const banner = (text, fill) => new Paragraph({ spacing: { before: 180, after: 110 }, shading: { type: ShadingType.CLEAR, fill }, children: [tr('  ' + text, { bold: true, color: C.white, size: 26 })] });
 const page = () => new Paragraph({ children: [new PageBreak()] });
+const svgPng = async (sv) => sharp(Buffer.from(sv), { density: 96 }).resize({ width: 800 }).png({ palette: true, colors: 64, compressionLevel: 9 }).toBuffer();
+const imageParagraph = (buf, width = 500) => {
+  const { w, h } = pngSize(buf);
+  return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 80, after: 100 }, children: [new ImageRun({ type: 'png', data: buf, transformation: { width, height: Math.round(width * h / w) } })] });
+};
 
 // ---------- outils ----------
 function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
@@ -39,15 +47,17 @@ const n9 = n => { n = Math.abs(n); while (n > 9) n = String(n).split('').reduce(
 function sujetOperations(k) {
   const r = mulberry32(1000 + k * 7);
   const ri = (lo, hi) => lo + Math.floor(r() * (hi - lo + 1));
-  const items = [], corr = [];
+  const items = [], corr = [], visuals = [];
   // 1. addition
   const a = ri(123456, 523456), b = ri(54321, 999999 - a);
   items.push(`${F(a)} + ${F(b)}`);
+  visuals.push(OPFIG.addSvg(a, b, a + b));
   corr.push([`On pose l’addition en alignant les chiffres par colonnes (unités sous unités).`,
     `${F(a)} + ${F(b)} = ${F(a + b)}.`]);
   // 2. soustraction
   const c = ri(300000, 987654), d = ri(12345, c - 10000);
   items.push(`${F(c)} − ${F(d)}`);
+  visuals.push(OPFIG.subSvg(c, d, c - d));
   corr.push([`On pose la soustraction, le plus grand nombre en haut, et on gère les retenues.`,
     `${F(c)} − ${F(d)} = ${F(c - d)}.`,
     `Vérification par l’addition : ${F(c - d)} + ${F(d)} = ${F(c)} ✓`]);
@@ -55,6 +65,7 @@ function sujetOperations(k) {
   const e = ri(214, 987), f = ri(23, 97);
   const fd = Math.floor(f / 10) * 10, fu = f % 10;
   items.push(`${F(e)} × ${f}`);
+  visuals.push(OPFIG.mulSvg(e, f, e * f));
   corr.push([`On décompose le multiplicateur : ${f} = ${fd} + ${fu}.`,
     `${F(e)} × ${fd} = ${F(e * fd)}  et  ${F(e)} × ${fu} = ${F(e * fu)}.`,
     `${F(e)} × ${f} = ${F(e * fd)} + ${F(e * fu)} = ${F(e * f)}.`,
@@ -62,6 +73,7 @@ function sujetOperations(k) {
   // 4. division euclidienne
   const h = ri(12, 45), q = ri(23, 97), rr = ri(1, h - 1), g = h * q + rr;
   items.push(`${F(g)} ÷ ${h}`);
+  visuals.push(OPFIG.longDivisionSvg(g, h, q, rr));
   corr.push([`Encadrement : ${h} × 10 = ${F(h * 10)} < ${F(g)} < ${h} × 100 = ${F(h * 100)} → le quotient a 2 chiffres.`,
     `${F(g)} = (${h} × ${q}) + ${rr} : quotient ${q}, reste ${rr}.`,
     `Vérification : ${h} × ${q} + ${rr} = ${F(h * q)} + ${rr} = ${F(g)} ✓ (le reste ${rr} est bien plus petit que ${h}).`,
@@ -72,6 +84,7 @@ function sujetOperations(k) {
     const den = [5, 7, 8, 9, 11, 12][ri(0, 5)], na = ri(1, den - 1), nb2 = ri(1, den);
     const s = na + nb2, gg = pgcd(s, den);
     items.push(`${na}/${den} + ${nb2}/${den}`);
+    visuals.push(OPFIG.fractionSvg(`${na}/${den} + ${nb2}/${den}`, `${s}/${den}`, 'Même dénominateur : les numérateurs se réunissent.'));
     const lines = [`Même dénominateur : on additionne les numérateurs.`, `${na}/${den} + ${nb2}/${den} = ${s}/${den}.`];
     if (gg > 1) lines.push(`On simplifie par ${gg} : ${s}/${den} = ${s / gg}/${den / gg}.`);
     corr.push(lines);
@@ -79,6 +92,7 @@ function sujetOperations(k) {
     const na = ri(2, 5), nb2 = ri(3, 9), ne = ri(4, 9);
     const num = na * nb2, den = nb2 * ne;
     items.push(`${na}/${nb2} × ${nb2}/${ne}`);
+    visuals.push(OPFIG.fractionSvg(`${na}/${nb2} × ${nb2}/${ne}`, `${na}/${ne}`, 'Je multiplie les deux fractions puis je simplifie.'));
     corr.push([`On multiplie les numérateurs entre eux et les dénominateurs entre eux.`,
       `${na}/${nb2} × ${nb2}/${ne} = ${num}/${den}.`,
       `On simplifie par ${nb2} (simplification croisée) : le résultat est ${na}/${ne}.`]);
@@ -86,6 +100,7 @@ function sujetOperations(k) {
     const na = ri(2, 7), nb2 = ri(3, 9), nc = ri(2, 7), nd = ri(3, 9);
     const num = na * nd, den = nb2 * nc, gg = pgcd(num, den);
     items.push(`${na}/${nb2} ÷ ${nc}/${nd}`);
+    visuals.push(OPFIG.fractionSvg(`${na}/${nb2} ÷ ${nc}/${nd}`, `${num}/${den}`, 'Je retourne la deuxième fraction et je multiplie.'));
     const lines = [`Diviser par une fraction, c’est multiplier par son inverse.`,
       `${na}/${nb2} ÷ ${nc}/${nd} = ${na}/${nb2} × ${nd}/${nc} = ${num}/${den}.`];
     if (gg > 1) lines.push(`On simplifie par ${gg} : ${num}/${den} = ${num / gg}/${den / gg}.`);
@@ -93,6 +108,7 @@ function sujetOperations(k) {
   } else {
     const n = ri(3, 9), nb2 = ri(2, 7), na = ri(1, nb2 * 2);
     items.push(`${n} − ${na}/${nb2}`);
+    visuals.push(OPFIG.fractionSvg(`${n} − ${na}/${nb2}`, `${n * nb2 - na}/${nb2}`, 'Je transforme l’entier en fraction de même dénominateur.'));
     corr.push([`On écrit l’entier en fraction : ${n} = ${n * nb2}/${nb2}.`,
       `${n} − ${na}/${nb2} = ${n * nb2}/${nb2} − ${na}/${nb2} = ${n * nb2 - na}/${nb2}.`]);
   }
@@ -101,11 +117,13 @@ function sujetOperations(k) {
   if (w === 0) {
     const x = ri(1234, 9876) / 100, y = ri(123, 987) / 10;
     items.push(`${FD(x)} + ${FD(y)}`);
+    visuals.push(OPFIG.decimalSvg(`${FD(x)} + ${FD(y)}`, `${FD(Math.round((x + y) * 100) / 100)}`));
     corr.push([`On aligne les virgules l’une sous l’autre (on peut compléter avec des zéros).`,
       `${FD(x)} + ${FD(y)} = ${FD(Math.round((x + y) * 100) / 100)}.`]);
   } else if (w === 1) {
     const x = ri(5000, 9876) / 100, y = ri(123, 4900) / 100;
     items.push(`${FD(x)} − ${FD(y)}`);
+    visuals.push(OPFIG.decimalSvg(`${FD(x)} − ${FD(y)}`, `${FD(Math.round((x - y) * 100) / 100)}`));
     corr.push([`On aligne les virgules, puis on soustrait colonne par colonne.`,
       `${FD(x)} − ${FD(y)} = ${FD(Math.round((x - y) * 100) / 100)}.`]);
   } else if (w === 2) {
@@ -116,14 +134,15 @@ function sujetOperations(k) {
       () => { const km = ri(12, 78) / 10; return [`Convertir ${FD(km)} km en m`, [`1 km = 1 000 m.`, `${FD(km)} km = ${F(km * 1000)} m.`]]; },
     ];
     const [it, co] = convs[k % 4]();
-    items.push(it); corr.push(co);
+    items.push(it); visuals.push(OPFIG.conversionSvg(it, co[1])); corr.push(co);
   } else {
     const H = ri(1, 3), M = [15, 20, 30, 45, 50][ri(0, 4)];
     items.push(`Convertir ${H} h ${M} min en minutes`);
+    visuals.push(OPFIG.conversionSvg(`${H} h ${M} min`, `${H * 60 + M} min`));
     corr.push([`1 h = 60 min, donc ${H} h = ${H} × 60 = ${H * 60} min.`,
       `${H} h ${M} min = ${H * 60} + ${M} = ${H * 60 + M} min.`]);
   }
-  return { items, corr };
+  return { items, corr, visuals };
 }
 
 // ---------- SUJETS PROBLÈMES ----------
@@ -287,48 +306,55 @@ function entryPage(kind, bookmark, intro) {
   ];
 }
 
-const children = [];
-children.push(...entryPage('OPÉRATIONS', 'exop', [
-  'Chaque sujet couvre tout le programme : grands nombres, les quatre opérations,',
-  'fractions, nombres décimaux et conversions.',
-  'Fais chaque sujet SANS regarder le corrigé, puis compare ta démarche !',
-]));
-for (let k = 1; k <= 20; k++) {
-  const { items, corr } = sujetOperations(k);
-  children.push(page(), title(`SUJET N° ${k} — OPÉRATIONS`, 1, `exop${k}`));
-  children.push(p('Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.', { fill: 'FFF8E1' }));
-  items.forEach((it, i) => children.push(p(`${i + 1}.  ${it}${it.startsWith('Convertir') ? '' : ' = …'}`, { indent: 240 })));
-  children.push(banner(`CORRIGÉ DU SUJET N° ${k}`, C.green));
-  corr.forEach((lines, i) => {
-    children.push(p(`${i + 1}.`, { after: 40 }));
-    lines.forEach(l => children.push(p(l, { indent: 360, after: 60 })));
-  });
-}
-children.push(...entryPage('PROBLÈMES', 'expb', [
-  'Des problèmes de la vie courante à Madagascar : marché, champs, transport, école…',
-  'Pour chaque problème : lis deux fois, repère la question cachée et les mots-indices,',
-  'choisis l’opération, calcule bien posé, puis rédige ta réponse en phrase complète.',
-]));
-for (let k = 1; k <= 20; k++) {
-  const probs = sujetProblemes(k);
-  children.push(page(), title(`SUJET N° ${k} — PROBLÈMES`, 1, `expb${k}`));
-  children.push(p('Résous chaque problème en montrant toutes les étapes. Durée conseillée : 40 minutes.', { fill: 'FFF8E1' }));
-  probs.forEach((pr, i) => {
-    children.push(p(`Problème ${i + 1}.`, { bold: true, after: 60 }));
-    children.push(p(pr.enonce, { indent: 240 }));
-  });
-  children.push(banner(`CORRIGÉ DU SUJET N° ${k}`, C.green));
-  probs.forEach((pr, i) => {
-    children.push(p(`Problème ${i + 1} — démarche :`, { bold: true, color: C.wine, after: 60 }));
-    children.push(p(`Question cachée : ${pr.qc}`, { indent: 360, after: 50, italics: true, color: C.wine }));
-    children.push(p(`Mots-indices : ${pr.mi}`, { indent: 360, after: 50, italics: true, color: C.blue }));
-    children.push(p(`Opérations choisies : ${pr.op}`, { indent: 360, after: 70, italics: true, color: C.ocre }));
-    pr.steps.forEach(st => children.push(p(st, { indent: 360, after: 60 })));
-    children.push(p(`Réponse : ${pr.rep}`, { indent: 360, bold: true, color: C.green }));
-  });
+async function assembleChildren() {
+  const children = [];
+  children.push(...entryPage('OPÉRATIONS', 'exop', [
+    'Chaque sujet couvre tout le programme : grands nombres, les quatre opérations,',
+    'fractions, nombres décimaux et conversions.',
+    'Fais chaque sujet SANS regarder le corrigé, puis compare ta démarche !',
+  ]));
+  for (let k = 1; k <= 20; k++) {
+    const { items, corr, visuals } = sujetOperations(k);
+    const images = await Promise.all(visuals.map(svgPng));
+    children.push(page(), title(`SUJET N° ${k} — OPÉRATIONS`, 1, `exop${k}`));
+    children.push(p('Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.', { fill: 'FFF8E1' }));
+    items.forEach((it, i) => children.push(p(`${i + 1}.  ${it}${it.startsWith('Convertir') ? '' : ' = …'}`, { indent: 240 })));
+    children.push(banner(`CORRIGÉ DU SUJET N° ${k}`, C.green));
+    corr.forEach((lines, i) => {
+      children.push(p(`${i + 1}.`, { after: 40 }));
+      if (images[i]) children.push(imageParagraph(images[i], 470));
+      const shown = i === 1 ? [lines[0], lines[2]] : i === 2 ? [lines[2], lines[3]] : i === 3 ? [lines[0], lines[1], lines[3]] : lines;
+      shown.forEach(l => children.push(p(l, { indent: 360, after: 60 })));
+    });
+  }
+  children.push(...entryPage('PROBLÈMES', 'expb', [
+    'Des problèmes de la vie courante à Madagascar : marché, champs, transport, école…',
+    'Pour chaque problème : lis deux fois, repère la question cachée et les mots-indices,',
+    'choisis l’opération, calcule bien posé, puis rédige ta réponse en phrase complète.',
+  ]));
+  for (let k = 1; k <= 20; k++) {
+    const probs = sujetProblemes(k);
+    children.push(page(), title(`SUJET N° ${k} — PROBLÈMES`, 1, `expb${k}`));
+    children.push(p('Résous chaque problème en montrant toutes les étapes. Durée conseillée : 40 minutes.', { fill: 'FFF8E1' }));
+    probs.forEach((pr, i) => {
+      children.push(p(`Problème ${i + 1}.`, { bold: true, after: 60 }));
+      children.push(p(pr.enonce, { indent: 240 }));
+    });
+    children.push(banner(`CORRIGÉ DU SUJET N° ${k}`, C.green));
+    probs.forEach((pr, i) => {
+      children.push(p(`Problème ${i + 1} — démarche :`, { bold: true, color: C.wine, after: 60 }));
+      children.push(p(`Question cachée : ${pr.qc}`, { indent: 360, after: 50, italics: true, color: C.wine }));
+      children.push(p(`Mots-indices : ${pr.mi}`, { indent: 360, after: 50, italics: true, color: C.blue }));
+      children.push(p(`Opérations choisies : ${pr.op}`, { indent: 360, after: 70, italics: true, color: C.ocre }));
+      pr.steps.forEach(st => children.push(p(st, { indent: 360, after: 60 })));
+      children.push(p(`Réponse : ${pr.rep}`, { indent: 360, bold: true, color: C.green }));
+    });
+  }
+  return children;
 }
 
 (async () => {
+  const children = await assembleChildren();
   const doc = new Document({
     styles: { default: { document: { run: { font: 'Times New Roman', size: 24 }, paragraph: { spacing: { line: 300 } } } } },
     sections: [{

@@ -120,7 +120,23 @@ figs.m3f1 = (() => { const { s, y } = head('Bien poser : trois règles d’or av
   b += txt(640, vy + 138, '3,5 = 3,50', 20, OCRE, 'bold');
   b += box(60, vy + 216, 880, 46, 'ATTENTION AUX ZÉROS : 13,01 × 40,1 — chaque zéro compte, aucun ne se perd !', '#FFF3E0', OCRE, 19);
   b += box(60, vy + 278, 880, 46, 'ESTIME AVANT (13 × 40 ≈ 520), VÉRIFIE APRÈS (preuve, fiche 4)', GREENL, GREEN, 19);
-  return svg(1000, vy + 344, s + b); })();
+  // Exemple de multiplication : le dessin remplace l’explication abstraite.
+  const mx = 430, my = vy + 390, md = 48;
+  b += txt(500, my, 'MULTIPLICATION POSÉE : 693 × 94', 22, BLUE, 'bold', 'middle');
+  '693'.split('').forEach((c, i) => b += txt(mx + (i + 2) * md, my + 48, c, 31, '#222', 'bold', 'middle'));
+  b += txt(mx + md, my + 94, '×', 30, BLUE, 'bold', 'middle');
+  '94'.split('').forEach((c, i) => b += txt(mx + (i + 3) * md, my + 94, c, 31, '#222', 'bold', 'middle'));
+  b += seg(mx + 10, my + 112, mx + 5 * md + 10, my + 112, BLUE, 3);
+  '2772'.split('').forEach((c, i) => b += txt(mx + (i + 1) * md, my + 150, c, 30, PINK2, 'bold', 'middle'));
+  b += arrow(mx + 4 * md + 5, my + 98, mx + 4 * md + 5, my + 132, PINK2, 3);
+  '62370'.split('').forEach((c, i) => b += txt(mx + i * md, my + 192, c, 30, OCRE, 'bold', 'middle'));
+  b += arrow(mx + 3 * md + 5, my + 98, mx + 3 * md + 5, my + 174, OCRE, 3);
+  b += seg(mx + 10, my + 210, mx + 5 * md + 10, my + 210, BLUE, 3);
+  '65142'.split('').forEach((c, i) => b += txt(mx + i * md, my + 250, c, 32, GREEN, 'bold', 'middle'));
+  b += txt(760, my + 150, '× 4 unités', 17, PINK2, 'bold');
+  b += txt(760, my + 192, '× 9 dizaines', 17, OCRE, 'bold');
+  b += txt(500, my + 294, 'les flèches montrent d’où vient chaque ligne', 19, BLUE, 'bold', 'middle');
+  return svg(1000, my + 330, s + b); })();
 
 // F4 — la croix de la preuve par 9
 figs.m4f1 = (() => { const { s, y } = head('La croix de la preuve par 9', ['Réduis chaque nombre à un seul chiffre, trace la croix, compare.']);
@@ -129,6 +145,8 @@ figs.m4f1 = (() => { const { s, y } = head('La croix de la preuve par 9', ['Réd
   b += txt(750, top + 20, 'DIVISION : 425 ÷ 7 = 60, reste 5', 21, BLUE, 'bold', 'middle');
   const croix = (cx, cy, vals) => {
     let r = seg(cx - 58, cy - 58, cx + 58, cy + 58, BLUE, 5) + seg(cx - 58, cy + 58, cx + 58, cy - 58, BLUE, 5);
+    r += arrow(cx, cy - 48, cx + 48, cy - 16, PINK2, 3) + arrow(cx, cy + 48, cx + 48, cy + 16, OCRE, 3);
+    r += arrow(cx - 48, cy - 16, cx - 8, cy - 3, GREEN, 3);
     r += txt(cx, cy - 74, vals[0], 32, PINK2, 'bold', 'middle');
     r += txt(cx, cy + 102, vals[1], 32, PINK2, 'bold', 'middle');
     r += txt(cx - 92, cy + 12, vals[2], 32, GREEN, 'bold', 'middle');

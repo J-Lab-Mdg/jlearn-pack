@@ -46,6 +46,8 @@ figs.u2f4 = (() => { const { s, y } = head('La preuve par 9 : la croix qui contr
   b += txt(750, top + 20, 'DIVISION : 425 ÷ 7 = 60, reste 5', 21, BLUE, 'bold', 'middle');
   const croix = (cx, cy, vals) => {
     let r = seg(cx - 58, cy - 58, cx + 58, cy + 58, BLUE, 5) + seg(cx - 58, cy + 58, cx + 58, cy - 58, BLUE, 5);
+    r += arrow(cx, cy - 48, cx + 48, cy - 16, PINK2, 3) + arrow(cx, cy + 48, cx + 48, cy + 16, OCRE, 3);
+    r += arrow(cx - 48, cy - 16, cx - 8, cy - 3, GREEN, 3);
     r += txt(cx, cy - 74, vals[0], 32, PINK2, 'bold', 'middle');
     r += txt(cx, cy + 102, vals[1], 32, PINK2, 'bold', 'middle');
     r += txt(cx - 92, cy + 12, vals[2], 32, GREEN, 'bold', 'middle');
@@ -80,7 +82,9 @@ figs.u2f5 = (() => { const { s, y } = head('Multiplier : 324 × 46', ['Deux prod
   b += txt(x - 150, top + 186, '324 × 4 →', 22, OCRE, 'bold');
   b += seg(x + 20, top + 208, x + 5 * dx + 20, top + 208, BLUE, 3.5);
   '14904'.split('').forEach((c, i) => b += txt(x + i * dx, top + 248, c, 32, GREEN, 'bold', 'middle'));
-  b += txt(500, top + 300, '324 × 46 = 1 944 + 12 960 = 14 904 : le second produit est décalé d’un rang', 20, BLUE, 'bold', 'middle');
+  b += arrow(x + 4 * dx, top + 48, x + 4 * dx, top + 125, PINK2, 3);
+  b += arrow(x + 3 * dx, top + 48, x + 3 * dx, top + 170, OCRE, 3);
+  b += txt(500, top + 300, 'les flèches partent des unités et des dizaines ; la deuxième ligne est décalée', 20, BLUE, 'bold', 'middle');
   return svg(1000, top + 332, s + b); })();
 // S6 — division posée
 figs.u2f6 = (() => { const { s, y } = head('La division posée, étape par étape : 127 ÷ 5', ['« Dans… combien de fois… ? » — la seule question à se répéter, colonne après colonne.']);
