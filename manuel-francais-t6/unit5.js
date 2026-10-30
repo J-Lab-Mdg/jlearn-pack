@@ -148,6 +148,9 @@ function lessonS49() {
     p("", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("« Un mariage, ce n'est pas deux personnes. Ce sont deux familles qui deviennent une seule. »")]),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Qui raconte sa vie, et quel événement familial est au cœur du récit ?"),
+    p("2. Redis un souvenir entendu, au passé.", { after: 60 }),
   ];
 }
 
@@ -232,6 +235,8 @@ function lessonS50() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« assister à un mariage » (y être présent)" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("la confusion avec « assister quelqu'un », qui veut dire l'aider" + ".")]),
+    sub("Exercice — je classe les événements :"),
+    p("Naissance, famorana, mariage ou décès ? le vœu de bonheur — le lamba neuf du petit garçon — la demande officielle — les condoléances.", { after: 60 }),
   ];
 }
 
@@ -310,6 +315,8 @@ function lessonS51() {
     p("", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("toutes les familles n'ont pas les mêmes coutumes : chacune honore ses anciens à sa manière — et on respecte chaque manière.")]),
+    sub("Exercice — je retrouve dans le récit :"),
+    p("1. La situation de départ. — 2. L'événement qui change tout. — 3. Un verbe à l'imparfait (le décor) et un verbe au passé (l'action).", { after: 60 }),
   ];
 }
 
@@ -389,6 +396,9 @@ function lessonS52() {
     p("• le passé simple = l'action qui arrive : « La nouvelle circula. »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("dans un récit écrit : l'imparfait plante le décor, le passé simple fait avancer l'histoire.")]),
+    sub("Exercice — au passé simple :"),
+    p("Conjugue : « Ce jour-là, grand-père (arriver) à l'aube ; il (être) le premier ; tous (chanter). »"),
+    pr([run("[-er → -a / -èrent ; être → fut]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -461,6 +471,8 @@ function lessonS53() {
     p("Ils ordonnent les événements et rendent le temps précis : la veille → le grand jour → le soir → le lendemain.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("dans un récit, je dis la veille et le lendemain — hier et demain appartiennent à celui qui parle aujourd'hui.")]),
+    sub("Exercice — situe dans le temps :"),
+    p("Complète avec la veille, ce jour-là, le lendemain : « ………, on prépara la maison. ………, les invités arrivèrent. ………, chacun repartit avec un souvenir. »", { after: 60 }),
   ];
 }
 
@@ -535,6 +547,8 @@ function lessonS54() {
     p("ne + pronom + verbe + pas : « Je ne le vois pas. » — « Je ne leur ai rien dit. »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("quoi ? qui ? → le, la, l', les ; à qui ? → lui, leur — toujours avant le verbe.")]),
+    sub("Exercice — remplace sans répéter :"),
+    p("1. « Je vois ma grand-mère. » → Je ……… vois. — 2. « Il parle à ses cousins. » → Il ……… parle. — 3. Mets la phrase 1 à la forme négative.", { after: 60 }),
   ];
 }
 
@@ -606,6 +620,8 @@ function lessonS55() {
     p("« C'est vrai, mais certaines familles s'endettent pour des années : est-ce raisonnable ? »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un bon débat ne cherche pas un vainqueur : il cherche une idée plus juste que celle du départ.")]),
+    sub("Exercice — débats en respectant :"),
+    p("Avec ton voisin : l'un défend une pratique familiale, l'autre pose deux questions polies — sans jamais juger la famille de l'autre.", { after: 60 }),
   ];
 }
 
@@ -676,6 +692,8 @@ function lessonS56() {
     p("Le public peut remplir la grille où ? quand ? quoi ? comment ? sans rien demander.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un reportage réussi fait vivre l'événement à ceux qui n'y étaient pas.")]),
+    sub("Exercice — ton mini-reportage :"),
+    p("Prépare ton plan : l'annonce (où ? quand ? quoi ?), deux moments forts, une phrase d'interview, la clôture.", { after: 60 }),
   ];
 }
 
@@ -750,6 +768,9 @@ function lessonS57() {
     p("5. Majuscules, points, accords ?", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un récit de vie touche quand on dit ce qu'on a vu ET ce qu'on a ressenti.")]),
+    sub("Exercice — améliore comme un écrivain :"),
+    p("« le jour du mariage de ma tante tout le monde était la on a bien mangé » → corrige, ajoute un indicateur temporel et un pronom : ………"),
+    pr([run("[exemple : Ce jour-là, toute la famille entoura ma tante ; je la revois encore sourire.]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -824,6 +845,8 @@ function lessonS58() {
     p("• je m'entraîne : deux lectures valent mieux qu'une.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("lire un récit, c'est prêter sa voix à ceux qui ont vécu l'histoire.")]),
+    sub("Exercice — la voix suit le récit :"),
+    p("Lis en changeant d'allure : « La maison dormait encore. Soudain, les tambours éclatèrent ! Quelle fête, mes amis, quelle fête ! »", { after: 60 }),
   ];
 }
 

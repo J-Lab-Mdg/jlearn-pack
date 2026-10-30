@@ -147,6 +147,9 @@ function lessonS37() {
     p("", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("« J'ai raté cent fois, alors j'ai recommencé cent fois » — c'est la persévérance, la première qualité du sportif.")]),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Quel sport et quel événement le reportage raconte-t-il ?"),
+    p("2. Redis le moment fort en une phrase exclamative.", { after: 60 }),
   ];
 }
 
@@ -231,6 +234,8 @@ function lessonS38() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« jouer au football », « faire de la lutte »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« jouer football », sans le petit mot « au »" + ".")]),
+    sub("Exercice — je classe :"),
+    p("Type de sport, mot des règles ou comportement ? le marquage — la lutte traditionnelle — encourager l'adversaire — le hors-jeu — la course — respecter l'arbitre.", { after: 60 }),
   ];
 }
 
@@ -307,6 +312,8 @@ function lessonS39() {
     mot("se blesser", "se faire mal (de la famille de blessure)"),
     mot("l'excès", "le trop — le contraire de l'équilibre"),
     mot("négliger", "ne pas s'occuper de ce qui compte"),
+    sub("Exercice — je retrouve dans le texte :"),
+    p("1. La question à laquelle le texte répond. — 2. Une explication avec « car » ou « parce que » — recopie-la et entoure le connecteur.", { after: 60 }),
   ];
 }
 
@@ -381,6 +388,8 @@ function lessonS40() {
     p("informer → déclarative ; demander → interrogative ; m'émerveiller → exclamative ; conseiller, ordonner → impérative.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("le signe final est l'indice du type : . pour déclarer, ? pour demander, ! pour s'exclamer, . ou ! pour ordonner.")]),
+    sub("Exercice — les quatre types :"),
+    p("Dis le type de chaque phrase, puis transforme la première en interrogative (trois constructions) : « L'équipe s'entraîne le samedi. » — « Quel beau match ! » — « Passez le ballon ! »", { after: 60 }),
   ];
 }
 
@@ -455,6 +464,9 @@ function lessonS41() {
     p("• on ne dit pas « Je n'ai vu pas » : pas se place avant le participe.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("au passé composé, la négation entoure l'auxiliaire — sauf personne, qui se place après le participe passé.")]),
+    sub("Exercice — la négation au passé composé :"),
+    p("Mets à la forme négative : « L'équipe a gagné. » — « Il a vu quelqu'un. »"),
+    pr([run("[ne et pas encadrent l'auxiliaire ; personne attend la fin de la phrase]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -532,6 +544,8 @@ function lessonS42() {
     p("Une périphrase doit rester claire. Si le lecteur ne comprend plus de quoi on parle, on garde le mot simple.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("la périphrase décrit à la place de nommer : elle évite la répétition et enrichit l'explication.")]),
+    sub("Exercice — parle en périphrases :"),
+    p("De qui ou de quoi parle-t-on ? « le roi des animaux » — « le ballon rond » — puis invente une périphrase pour « le vélo ».", { after: 60 }),
   ];
 }
 
@@ -605,6 +619,8 @@ function lessonS43() {
     p("• je réponds par une phrase complète, pas par un seul mot.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("une bonne question fait parler les autres ; une bonne opinion donne toujours sa raison.")]),
+    sub("Exercice — opinion et questions :"),
+    p("1. Donne ton opinion sur ton sport préféré, avec sa cause. — 2. Pose la même question des trois façons : « tu t'entraînes le samedi ».", { after: 60 }),
   ];
 }
 
@@ -677,6 +693,8 @@ function lessonS44() {
     p("• à la fin, je réponds aux questions.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un exposé convainc quand chaque bienfait a sa cause — et quand la voix donne envie d'essayer.")]),
+    sub("Exercice — ton exposé :"),
+    p("Prépare le plan de ton exposé « Les bienfaits de … » : la périphrase de présentation, trois bienfaits avec leur cause, la mise en garde finale.", { after: 60 }),
   ];
 }
 
@@ -754,6 +772,8 @@ function lessonS45() {
     p("1. Nom, matériel, terrain, joueurs ? 2. Règles numérotées et claires ? 3. Une interdiction négative ? 4. Le but du jeu ? 5. Mes phrases sont-elles complètes ?", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("une règle de jeu réussie se vérifie en jouant : si les joueurs se disputent, une règle manque de clarté.")]),
+    sub("Exercice — tes règles de jeu :"),
+    p("Rédige pour un jeu de ton choix : le matériel, trois règles numérotées (dont une interdiction négative), le but du jeu.", { after: 60 }),
   ];
 }
 
@@ -826,6 +846,8 @@ function lessonS46() {
     p("• je m'entraîne : deux lectures valent mieux qu'une.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("lire un reportage, c'est faire revivre le match ; lire une règle, c'est permettre de jouer sans dispute.")]),
+    sub("Exercice — deux textes, deux voix :"),
+    p("Lis en reporter enthousiaste : « Quel match, chers auditeurs ! » — puis en arbitre calme : « Règle 1 : ne jamais toucher le ballon avec la main. »", { after: 60 }),
   ];
 }
 

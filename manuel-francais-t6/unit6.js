@@ -149,6 +149,9 @@ function lessonS61() {
     p("« Angano angano, arira arira… » → « Il était une fois… » — chaque langue a sa formule pour ouvrir la porte de l'imaginaire.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("« La pluie ne vient pas à celui qui court, elle vient à celui qui sait attendre. »")]),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Qui est le héros, et quel est son problème ?"),
+    p("2. Cite une péripétie, puis la fin du conte. Qu'a-t-on compris sans que le conte le dise ?", { after: 60 }),
   ];
 }
 
@@ -228,6 +231,8 @@ function lessonS62() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« raconter un conte », « raconter une histoire »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« dire un conte »" + ".")]),
+    sub("Exercice — les quatre grands récits :"),
+    p("Conte, légende, fable ou mythe ? 1. Des animaux qui parlent et une leçon. — 2. « On raconte que le lac serait né des larmes d'une reine. » — 3. « Il était une fois… » — 4. Le récit des origines du monde.", { after: 60 }),
   ];
 }
 
@@ -305,6 +310,8 @@ function lessonS63() {
     p("", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("qui regarde devant et pense à l'après arrive entier.")]),
+    sub("Exercice — trouve la morale :"),
+    p("Lis : « La petite tortue avança chaque jour ; le lièvre moqueur dormit trop longtemps. » Quelle est la morale cachée ? Quel proverbe malgache s'en rapproche ?", { after: 60 }),
   ];
 }
 
@@ -379,6 +386,8 @@ function lessonS64() {
     p("un verbe précis vaut mieux que trois adjectifs : « il se précipita » en dit plus que « il alla très très vite ».", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("les verbes d'action et de mouvement sont les muscles du récit : ils font voir la scène.")]),
+    sub("Exercice — la nuance fait l'image :"),
+    p("Remplace « aller » par un verbe plus précis : « Le héros (alla) vers la forêt » → il marcha ? il courut ? il se glissa ? Choisis et justifie l'image.", { after: 60 }),
   ];
 }
 
@@ -454,6 +463,9 @@ function lessonS65() {
     p("l'impérative négative ouvre l'aventure : « N'ouvre jamais cette porte ! » « Ne parle à personne en chemin ! »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("le pronom reste collé au verbe ; la négation entoure le tout : ne lui parle pas, ne leur dis rien.")]),
+    sub("Exercice — l'ordre à retenir :"),
+    p("1. « Le génie a parlé au pêcheur. » → remplace « au pêcheur » par un pronom. — 2. Mets la phrase à la forme négative."),
+    pr([run("[Il lui a parlé. / Il ne lui a pas parlé : le pronom reste collé au verbe]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -526,6 +538,8 @@ function lessonS66() {
     p("« À mon avis, les contes ne sont pas que pour les petits, parce que la sagesse n'a pas d'âge. »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("la morale se cache dans la victoire du héros : qui gagne, et grâce à quoi ?")]),
+    sub("Exercice — morale et opinion :"),
+    p("Choisis un conte que tu connais : dis sa morale en une phrase, puis ton opinion avec sa cause : « Je trouve que… , car… ».", { after: 60 }),
   ];
 }
 
@@ -598,6 +612,8 @@ function lessonS67() {
     p("je garde l'ordre des péripéties, mais je choisis mes mots — c'est mon conte pendant que je le raconte.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("le conteur ne lit pas une histoire : il la fait vivre devant ceux qui l'écoutent.")]),
+    sub("Exercice — raconte, ne récite pas :"),
+    p("À trois : partagez-vous un conte (début, milieu, fin). Chacun note ses mots-clés, puis racontez-le d'une traite — avec la voix qui change !", { after: 60 }),
   ];
 }
 
@@ -668,6 +684,8 @@ function lessonS68() {
     p("• les pronoms (le, la, lui, leur) et les mots de liaison recousent l'histoire.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("écrire ensemble, c'est veiller chacun à sa phrase — et tous à la même histoire.")]),
+    sub("Exercice — le conte en chaîne :"),
+    p("En rangée : le premier écrit la situation de départ, le deuxième le problème, le troisième l'épreuve… une ligne chacun, puis lecture à voix haute du conte complet.", { after: 60 }),
   ];
 }
 
@@ -739,6 +757,9 @@ function lessonS69() {
     p("1. Six étapes ? 2. Le même héros partout ? 3. Un interdit ou un conseil ? 4. Des verbes vivants ? 5. Une morale qu'on devine ? 6. Majuscules, points, accords ?", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("mon conte est réussi si un camarade peut en deviner la morale sans que je la lui dise.")]),
+    sub("Exercice — améliore comme un conteur :"),
+    p("« il y avait un garçon il va dans la foret il trouve un trésor » → corrige, mets le décor à l'imparfait et ajoute une formule d'ouverture : ………"),
+    pr([run("[exemple : Il était une fois un garçon courageux qui vivait près de la grande forêt. Un matin, il découvrit un trésor…]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -810,6 +831,8 @@ function lessonS70() {
     p("• si je trébuche, je me corrige vite et je continue.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("une lecture expressive réussie : le public devine la morale sans qu'on la lui dise.")]),
+    sub("Exercice — ta lecture expressive :"),
+    p("Prépare ton passage préféré de ton conte : marque les pauses, choisis la voix de chaque personnage, puis lis-le à la classe avec confiance.", { after: 60 }),
   ];
 }
 
