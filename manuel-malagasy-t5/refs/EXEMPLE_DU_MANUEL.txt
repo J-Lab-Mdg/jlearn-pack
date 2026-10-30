@@ -1,0 +1,364 @@
+# dika feno ny refs/.tmp_modele.docx — paragrafo sy tabilao ary ny mpanaraka
+# (ojaina amin'ny fandrindrana ny rakitra vaovao)
+
+[.] (banga)   {jc(val=center)}
+[.] (banga)   {jc(val=center)}
+[.] (banga)   {jc(val=center)}
+[.] (banga)   {jc(val=center)}
+[p] Tsipelina   {jc(val=center) run:E36C0A|90.0pt}
+[.] (banga)   {run:b|000000}
+[p] TAKELA-PANOMANAN-DESONA   {jc(val=center) spacing(after=120) run:b|000000}
+
+[TABILAO 1] style=- w=0 kolona=6576/3175
+  <r0 c0> Taranja : Malagasy
+  <r0 c1> Daty : ...
+  <r1 c0> Zana-taranja : Tsipelina
+  <r1 c1> Kilasy : T5
+  <r2 c0> Lohahevitra : 1. Ny fitandroana ny fahasalamana
+  <r2 c1> Seho n° : …
+  <r3 c0> Lohateny : Samihafa/samy hafa
+  <r3 c1> Isan'ny seho : …
+  <r4 c0> V. P. M: Mampiasa ny fitsipi-panoratana ny teny ao anaty lahatsoratra \n Fitaovana: Solaitrabe
+  <r4 c1> Faharetany :
+  <r5 c0> Fanovozan-kevitra : PE T5
+  <r5 c1> (banga)
+
+
+[TABILAO 2] style=Grilledutableau w=11069 kolona=1634/3744/1559/1194/1328/1610
+  <r0 c0> Dingana sy Faharetany  [fusion]
+  <r0 c1> Fizotry ny Lesona  [etane-sur-2]
+  <r0 c2> Tetika Amam-paika  [fusion]
+  <r0 c3> Fitaovana  [fusion]
+  <r0 c4> Fanamarihana  [fusion]
+  <r1 c0> (banga)  [fusion]
+  <r1 c1> Mpampianatra
+  <r1 c2> Mpianatra
+  <r1 c3> (banga)  [fusion]
+  <r1 c4> (banga)  [fusion]
+  <r1 c5> (banga)  [fusion]
+  <r2 c0> I. Famerenana (…. min)
+  <r2 c1> Araka ny nianarantsika tao amin’ny kilasy T4, rehefa inona no ampiasaina ny “an’i” ary rehefa inona ny “any”?
+  <r2 c2> V.A. : Ampiasaina ny “an’i” eo alohan’ny anaran-tsamirery toy ny hoe “an’i Koto, an’i Soa”. Ampiasaina kosa ny “any” eo alohana toerana toy ny hoe “any Antsirabe” na “any an-tsaha”
+  <r2 c3> Asa tsirairay
+  <r2 c4> ----
+  <r2 c5> (banga)
+  <r3 c0> II. LESONA VAOVAO (…. min)  [fond=D9D9D9 etane-sur-6]
+  <r4 c0> 1. Fitarihan-tsaina
+  <r4 c1> Namaky peta-drindrina i Ketaka. Toy izao ny soratra teo : “Ilaina ny mianatra fomba fambolena samihafa. Samy hafa be mantsy ny mamboly amin’ny vanim-potoana mafana sy ny mamboly rehefa ririnina.” Sahiran-tsaina izy hoe mitovy ny famakiana an’ireo teny ireo nefa samy hafa ny fanoratra azy.
+  <r4 c2> Mihaino
+  <r4 c3> Asa iombonana
+  <r4 c4> (banga)
+  <r4 c5> (banga)
+  <r5 c0> 2. Fanolorana
+  <r5 c1> Izay indrindra no ianarantsika androany di any fomba fanoratra ny “samihafa sy ny samihafa”. Ho hainareo amin’izay ny mampiasa ny fitsipi-panoratana an’ireo teny ireo.
+  <r5 c2> Mihaino.
+  <r5 c3> Asa iombonana
+  <r5 c4> Solaitrabe
+  <r5 c5> (banga)
+  <r6 c0> 3. Fandinihana
+  <r6 c1> Diniho ity fehezanteny ity. \n Samy hafa ny omby sy ny akoho.
+  <r6 c2> Mijery.
+  <r6 c3> Asa iombonana
+  <r6 c4> Fehezanteny \n Solaitrabe
+  <r6 c5> (banga)
+  <r7 c0> 4. Famakafakana
+  <r7 c1> Asaintsika i Mora hamaky an’io fehezanteny io. \n Maninona hono ny omby sy ny akoho? \n Inona no dikan’izany samy hafa izany? \n Raha ovaina hoe “Tsy mitovy” izany ilay hoe “samy hafa” dia lasa hoe ahoana? Mbola marina ve izany fehezanteny izany? \n Manao ahoana ny fanoratra an’ilay samy hafa azo soloina hoe “tsy mitovy”? \n Fandravonana vonjimaika: Raha manana ny hevitra hoe “tsy mitovy” àry ny hoe “samy hafa” dia misaraka ny fanoratra azy : “samy hafa”. \n Fandinihana (tohiny): Diniho indray ity fehezanteny manaraka ity: \n Mivarotra entana samihafa Ravao. \n Hoatran’ny ahoana hono ny entana amidin-dRavao? \n Inona ny hevitr’ilay hoe “samihafa” eto? \n Raha soloina àry ilay hoe “samihafa” dia lasa hoe ahoana? \n Manao ahoana ny fanoratra an’ilay samy hafa azo soloina hoe “tsy mitovy”?
+  <r7 c2> Mamaky i Mora  (na mpianatra hafa nananga-tanana) \n V.A.: Samy hafa \n V.A.: Tsy mitovy \n V.A.: Tsy mitovy ny omby sy ny akoho \n V.A.: Eny. \n V.A.: Samy hafa misaraka ny fanoratra azy. \n Mihaino \n Mijery \n Mamaly \n V.A.: samihafa \n V.A.:Isan-karazany \n Mivarotra entana isan-karazany Ravao. \n V.A.: Samihafa mitambatra ny fanoratra azy.
+  <r7 c3> Asa tsirairay.
+  <r7 c4> Fehezanteny
+  <r7 c5> (banga)
+  <r8 c0> 5. Fandravonana
+  <r8 c1> Raha manana ny hevitra hoe “tsy mitovy” ny hoe “samy hafa” dia misaraka ny fanoratra azy : “samy hafa”. \n Fa raha manana ny hevitra hoe “isan-karazany” kosa ny hoe “samihafa” dia mitambatra ny fanoratra azy : “samihafa”.
+  <r8 c2> Mihaino
+  <r8 c3> Asa iombonana
+  <r8 c4> Solaitrabe
+  <r8 c5> (banga)
+  <r9 c0> 6. Fampiharana
+  <r9 c1> Rehefa inona hoe ny heviny dia misaraka ny hoe samy hafa? \n Rehefa inona kosa hoe ny heviny dia mitambatra ny fanoratra azy? \n Ampifandraiso amin’ny alalan’ny tsilo
+  <r9 c2> V.A. : tsy mitovy \n Isan-karazany \n Mamaly
+  <r9 c3> Asa tsirairay
+  <r9 c4> Kahie
+  <r9 c5> (banga)
+  <r10 c0> III. Tombana (… min)
+  <r10 c1> Ampifandraiso amin’ny alalan’ny tsilo
+  <r10 c2> Mamaly
+  <r10 c3> Asa tsirairay
+  <r10 c4> Kahie
+  <r10 c5> (banga)
+
+[p] LESONA:   {run:u}
+[p] SAMIHAFA SA SAMY HAFA   {jc(val=center) run:b|u|FF00FF}
+[p] Samihafa   {numPr() run:b|u|00B0F0}
+[p] Raha manana ny hevitra hoe “isan-karazany” ny hoe “samihafa” dia mitambatra ny fanoratra azy : “samihafa”.   {ind(firstLine=360) run:000000}
+[p] Ohatra:   {spacing(after=40) run:000000}
+[p] Mianatra taranja samihafa izahay.   {numPr() spacing(after=40)}
+[p] Mianatra taranja isan-karazany izahay.   {numPr() spacing(after=40)}
+[.] (banga)   {spacing(after=40) ind(left=2160)}
+[p] Samy hafa   {numPr() run:b|u|00B0F0}
+[p] Raha manana ny hevitra hoe “tsy mitovy” ny hoe “samy hafa” dia misaraka ny fanoratra azy : “samy hafa”.   {spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+[p] Ohatra:   {spacing(after=40) ind(firstLine=720) run:i|u|78B832}
+[p] Taranja samy hafa tanteraka ny Malagasy sy ny Anglisy.   {numPr() spacing(after=40)}
+[p] Taranja tsy mitovy tanteraka ny Malagasy sy ny Anglisy.   {numPr() spacing(after=40)}
+[.] (banga)   {spacing(after=40)}
+[p] Ny toerana misy azy ao anaty fehezanteny   {numPr() run:b|u|00B0F0}
+[p] Matetika no hita eny am-piandohan’ny fehezanteny (atao EM) ny samy hafa (misaraka). Tsy voatery ho toy izany foana anefa. Tsy voatery ho eny afovoan’ny fehezanteny hatrany koa ny samihafa (mitambatra).
+[p] Ohatra:   {spacing(after=40) ind(firstLine=720) run:i|u|78B832}
+[p] Taranja samy hafa tanteraka ny Malagasy sy ny Anglisy.   {numPr() spacing(after=40)}
+[p] Samy hafa tanteraka taranja ny Malagasy sy ny Anglisy.   {numPr() spacing(after=40) run:b|i|F76995}
+[.] (banga)   {spacing(after=40) ind(left=2160)}
+[p] Mianatra taranja samihafa izahay.   {numPr() spacing(after=40)}
+[p] Samihafa ny taranja ianaranay.   {numPr() spacing(after=40) run:b|i|F76995}
+[.] (banga)   {spacing(after=40) ind(left=2160)}
+[.] (banga)   {spacing(after=40)}
+[.] (banga)   {spacing(after=40)}
+[.] (banga)   {spacing(after=40)}
+[.] (banga)   {spacing(after=40) run:i|000000}
+[.] (banga)   {run:i|000000}
+[p] FANAZARAN-TENA   {spacing(after=40) run:b|u|000000}
+[p] Ampifandraiso amin’ny alalan’ny tsilo   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+
+[TABILAO 3] style=Grilledutableau w=8924 kolona=2545/567/5812
+  <r0 c0> Samy hafa …•
+  <r0 c1> (banga)
+  <r0 c2> … ireo boky entinay isan’andro mba hovakina.
+  <r1 c0> (banga)
+  <r1 c1> (banga)
+  <r1 c2> … be izany hoe maloto sy madio izany.
+  <r2 c0> (banga)
+  <r2 c1> (banga)
+  <r2 c2> … ny karazana lamba zairin’i Neny.
+  <r3 c0> Samihafa …  •
+  <r3 c1> (banga)
+  <r3 c2> … tanteraka ny mitomany sy ny miomehy.
+  <r4 c0> (banga)
+  <r4 c1> (banga)
+  <r4 c2> Isan-karazany
+  <r5 c0> (banga)
+  <r5 c1> (banga)
+  <r5 c2> Tsy mitovy
+
+[.] (banga)   {spacing(after=40)}
+[p] Fenoy samy hafa na samihafa ny banga   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+[p] Nandalo teto aminay ny rivo-doza Mitia ary nanimba zavatra ………… toy ny fambolena, ny lalana ary ny foto-drafitrasa …………. . Tsy naharitra ela taorian’izay akory anefa dia nirotsaka indray ny oram-be. Marina aloha fa …………… ny rivo-doza sy ny tondra-drano. Mitovitovy ihany anefa ny vokany eo amin’ny lafim-piainana ……….. ety ambanivohitra. Ilaina ny orana nefa …………. ny hoe orana antonony ilain’ny zava-maniry sy ny orana be loatra izay manimba aok’izany.   {spacing(after=40) ind(firstLine=720) run:000000}
+[.] (banga)   {spacing(after=40) ind(firstLine=720)}
+[p] Mamorona fehezanteny roa ahitana ny hoe “samy hafa” sy ny hoe “samihafa”. Ampiasao ireto teny ireto: biby, valanjavaboahary, voay, akoho.   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+[.] (banga)   {spacing(after=40)}
+[p] FANITSIANA   {spacing(after=40) run:b|u|FA6A97}
+[p] Ampifandraiso amin’ny alalan’ny tsilo   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+
+[TABILAO 4] style=Grilledutableau w=8924 kolona=2545/567/5812
+  <r0 c0> Samy hafa …•
+  <r0 c1> (banga)
+  <r0 c2> … ireo boky entinay isan’andro mba hovakina.
+  <r1 c0> (banga)
+  <r1 c1> (banga)
+  <r1 c2> … be izany hoe maloto sy madio izany.
+  <r2 c0> (banga)
+  <r2 c1> (banga)
+  <r2 c2> … ny karazana lamba zairin’i Neny.
+  <r3 c0> Samihafa …  •
+  <r3 c1> (banga)
+  <r3 c2> … tanteraka ny mitomany sy ny miomehy.
+  <r4 c0> (banga)
+  <r4 c1> (banga)
+  <r4 c2> Isan-karazany
+  <r5 c0> (banga)
+  <r5 c1> (banga)
+  <r5 c2> Tsy mitovy
+
+[.] (banga)   {spacing(after=40)}
+[p] Fenoy samy hafa na samihafa ny banga   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+[p] Nandalo teto aminay ny rivo-doza Mitia ary nanimba zavatra samihafa toy ny fambolena, ny lalana ary ny foto-drafitrasa samihafa. Tsy naharitra ela taorian’izay akory anefa dia nirotsaka indray ny oram-be. Marina aloha fa samy hafa ny rivo-doza sy ny tondra-drano. Mitovitovy ihany anefa ny vokany eo amin’ny lafim-piainana samihafa ety ambanivohitra. Ilaina ny orana nefa samy hafa ny hoe orana antonony ilain’ny zava-maniry sy ny orana be loatra izay manimba aok’izany.   {spacing(after=40) ind(firstLine=720) run:000000}
+[.] (banga)   {spacing(after=40) ind(firstLine=720)}
+[p] Mamorona fehezanteny roa ahitana ny hoe “samy hafa” sy ny hoe “samihafa”. Ampiasao ireto teny ireto: biby, valanjavaboahary, voay, akoho.   {numPr() spacing(after=40) run:000000}
+[p] Ahitana biby samihafa ao amin’ny valanjavaboahary.   {spacing(after=40) run:i|FF00FF}
+[p] Samy hafa ny akoho sy ny voay.   {spacing(after=40) run:i|FF00FF}
+[.] (banga)   {run:FA6A97}
+[.] (banga)   {run:FA6A97}
+[.] (banga)   {run:FA6A97}
+[.] (banga)   {run:FA6A97}
+[.] (banga)   {run:FA6A97}
+[.] (banga)   {jc(val=center)}
+[.] (banga)   {jc(val=center)}
+[p] Fitsipika   {jc(val=center) spacing(after=40) run:365F91|90.0pt}
+[.] (banga)   {run:365F91|90.0pt}
+[p] TAKELA-PANOMANAN-DESONA   {jc(val=center) spacing(after=120) run:b|000000}
+
+[TABILAO 5] style=- w=0 kolona=6576/3175
+  <r0 c0> Taranja : Malagasy
+  <r0 c1> Daty : ...
+  <r1 c0> Zana-taranja : Fitsipika
+  <r1 c1> Kilasy : T5
+  <r2 c0> Lohahevitra : 1. Ny fitandroana ny fahasalamana
+  <r2 c1> Seho n° : …
+  <r3 c0> Lohateny : Tsirinteny tsofoka amin’ny matoanteny : -in-, -if-, -amp-
+  <r3 c1> Isan'ny seho : …
+  <r4 c0> V. P. M: Mampiasa ny fitsipiky ny teny ao anaty lahatsoratra \n Fitaovana: Solaitrabe
+  <r4 c1> Faharetany :
+  <r5 c0> Fanovozan-kevitra : PE T5
+  <r5 c1> (banga)
+
+
+[TABILAO 6] style=Grilledutableau w=11069 kolona=1634/3566/1737/1194/1328/1610
+  <r0 c0> Dingana sy Faharetany  [fusion]
+  <r0 c1> Fizotry ny Lesona  [etane-sur-2]
+  <r0 c2> Tetika Amam-paika  [fusion]
+  <r0 c3> Fitaovana  [fusion]
+  <r0 c4> Fanamarihana  [fusion]
+  <r1 c0> (banga)  [fusion]
+  <r1 c1> Mpampianatra
+  <r1 c2> Mpianatra
+  <r1 c3> (banga)  [fusion]
+  <r1 c4> (banga)  [fusion]
+  <r1 c5> (banga)  [fusion]
+  <r2 c0> I. Famerenana (…. min)
+  <r2 c1> Araka ny nianarantsika tao amin’ny kilasy T4,ahoana ny fanoratra ny teny hoe sarotra rehefa tovanana “faha-” sy “ha-”?
+  <r2 c2> V.A. : fahasarotana, hasarotana.
+  <r2 c3> Asa tsirairay
+  <r2 c4> ----
+  <r2 c5> (banga)
+  <r3 c0> II. LESONA VAOVAO (…. min)  [fond=D9D9D9 etane-sur-6]
+  <r4 c0> 1. Fitarihan-tsaina
+  <r4 c1> Sendra nihaino radio i Rina indray mandeha no lasa saina rehefa nilaza ny mpanolotra fandaharana hoe “tolotra sy tinady”. Nanontany ny dadany izy hoe inona ny dikan’izany teny hoe “tinady” izany. \n Ianareo ve mba efa naheno an’izany?
+  <r4 c2> Mihaino \n Mamaly
+  <r4 c3> Asa iombonana
+  <r4 c4> (banga)
+  <r4 c5> (banga)
+  <r5 c0> 2. Fanolorana
+  <r5 c1> Izay indrindra no ianarantsika androany dia ny tsirinteny tsofoka amin’ny matoanteny : -in-, -if-, -amp-. Ho hainareo amin’izay ny mampiasa ny fitsipiky ny teny ampiasana an’ireo teny ireo.
+  <r5 c2> Mihaino.
+  <r5 c3> Asa iombonana
+  <r5 c4> Solaitrabe
+  <r5 c5> (banga)
+  <r6 c0> 3. Fandinihana
+  <r6 c1> Diniho ity fehezanteny ity. \n Navesatra loatra ny entana ka tinapaka ny tady. \n Mifanampy i Samy sy Randria. \n Mampatory zaza Ravao.
+  <r6 c2> Mijery.
+  <r6 c3> Asa iombonana
+  <r6 c4> Fehezanteny \n Solaitrabe
+  <r6 c5> (banga)
+  <r7 c0> 4. Famakafakana
+  <r7 c1> Asaintsika i Mora hamaky an’io fehezanteny io. \n Araka ilay fehezanteny voalohany, naninona hono ny entana? \n Dia nanao ahoana ny tady avy eo? \n Inona no dikan’izany samy hafa izany? \n Mety ho inona ny dikan’izany “tinapaka” izany \n Izay mihitsy. Nisy inona ary natsofoka na nasisika tao amin’ny teny hoe tapaka ka nahazoana ny hoe “tinapaka”? \n Anisan’ny tsofoka ary ny “-in”. \n Inona izany ny teny azo avy amin’ny hoe “tinady” raha esorina ny tsofoka, ary inona ny teny azo avy aminy?Diniho indray ilay fehezanteny faharoa. \n Inona no ataon’i Samy? \n Inona no ataon-dRandria? \n Inona no ataon’izy roa lahy \n Inona ary ny tsy mampitovy ny hoe “manampy” syn y hoe “mifanampy”? \n Anisan’ny tsofoka ary ny “-if-”. \n Asio tsofoka “-if-” ary ny hoe “manoratra, manoro, manary, …. \n Diniho indray ilay fehezanteny fahatelo. \n Mampatory zaza Ravao. \n Iza no mampatory? \n Maninona ilay zaza? \n Inona ny mampiavaka ny hoe “mampatory”sy ny hoe “matory”? \n Anisan’ny tsofoka ary ny “-amp-”. \n Asio tsofoka “-amp-” àry ny hoe mandro, mitafy, mianatra, mitomany.
+  <r7 c2> Mamaky i Mora  (na mpianatra hafa nananga-tanana) \n V.A.: \n Navesatra loatra \n Tinapaka \n Mety hoe tapaka \n -in- \n Tady, avy amin’ny hoe mitady \n Manampy an-dRandria \n Manampy an’i Sampy \n Mifanampy \n Misy “-if-” ny hoe mifanampy. \n Mifanoratra, mifanoro, mifanary… \n Ravao \n Matory \n Misy hoe “-amp-” ny mampatory \n mampandro, mampitafy, mampianatra, mampitomany.
+  <r7 c3> Asa tsirairay.
+  <r7 c4> Fehezanteny
+  <r7 c5> (banga)
+  <r8 c0> 5. Fandravonana
+  <r8 c1> Ny  tsofoka,  ao  amin'  ny  fiteny malagasy,  dia  ampahan-teny  asisika  ao  amin'  ny  teny  mbahahazoana sampan-teny. Ohatra amin' izany ireto: -in-, -if-, -amp-.
+  <r8 c2> Mihaino
+  <r8 c3> Asa iombonana
+  <r8 c4> Solaitrabe
+  <r8 c5> (banga)
+  <r9 c0> 6. Fampiharana
+  <r9 c1> Asio tsofoka ireto: \n -in-: tefy,tafy, kasa \n -if- : manaraka, manimba, manilika \n -amp-: miditra, mody, matavy
+  <r9 c2> Mamaly \n V.A. : tinefy, tinafy, kinasa, mifanaraka, mifanimba, mifanilika, mampiditra, mampody, mampatavy
+  <r9 c3> Asa tsirairay
+  <r9 c4> Kahie
+  <r9 c5> (banga)
+  <r10 c0> III. Tombana (… min)
+  <r10 c1> Fidio ny tsofoka mifanaraka amin’ny teny misy tsipika \n Tafara-dalana izahay roa lahy. Nandimby nametraka fanontaniana teo izahay. Nahafantatra ny namany izy. Varian-dresaka izahay ka tsy nisy vidy ny entana nafaran’i Neny.
+  <r10 c2> Mamaly \n Nifandimby, nampahafantatra, vinidy
+  <r10 c3> Asa tsirairay
+  <r10 c4> Kahie
+  <r10 c5> (banga)
+
+[p] LESONA:   {run:u}
+[p] SAMIHAFA SA SAMY HAFA   {jc(val=center) run:b|u|FF00FF}
+[p] Samihafa   {numPr() run:b|u|00B0F0}
+[p] Raha manana ny hevitra hoe “isan-karazany” ny hoe “samihafa” dia mitambatra ny fanoratra azy : “samihafa”.   {ind(firstLine=360) run:000000}
+[p] Ohatra:   {spacing(after=40) run:000000}
+[p] Mianatra taranja samihafa izahay.   {numPr() spacing(after=40)}
+[p] Mianatra taranja isan-karazany izahay.   {numPr() spacing(after=40)}
+[.] (banga)   {spacing(after=40) ind(left=2160)}
+[p] Samy hafa   {numPr() run:b|u|00B0F0}
+[p] Raha manana ny hevitra hoe “tsy mitovy” ny hoe “samy hafa” dia misaraka ny fanoratra azy : “samy hafa”.   {spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+[p] Ohatra:   {spacing(after=40) ind(firstLine=720) run:i|u|78B832}
+[p] Taranja samy hafa tanteraka ny Malagasy sy ny Anglisy.   {numPr() spacing(after=40)}
+[p] Taranja tsy mitovy tanteraka ny Malagasy sy ny Anglisy.   {numPr() spacing(after=40)}
+[.] (banga)   {spacing(after=40)}
+[p] Ny toerana misy azy ao anaty fehezanteny   {numPr() run:b|u|00B0F0}
+[p] Matetika no hita eny am-piandohan’ny fehezanteny (atao EM) ny samy hafa (misaraka). Tsy voatery ho toy izany foana anefa. Tsy voatery ho eny afovoan’ny fehezanteny hatrany koa ny samihafa (mitambatra).
+[p] Ohatra:   {spacing(after=40) ind(firstLine=720) run:i|u|78B832}
+[p] Taranja samy hafa tanteraka ny Malagasy sy ny Anglisy.   {numPr() spacing(after=40)}
+[p] Samy hafa tanteraka taranja ny Malagasy sy ny Anglisy.   {numPr() spacing(after=40) run:b|i|F76995}
+[.] (banga)   {spacing(after=40) ind(left=2160)}
+[p] Mianatra taranja samihafa izahay.   {numPr() spacing(after=40)}
+[p] Samihafa ny taranja ianaranay.   {numPr() spacing(after=40) run:b|i|F76995}
+[.] (banga)   {spacing(after=40) ind(left=2160)}
+[.] (banga)   {spacing(after=40)}
+[.] (banga)   {spacing(after=40)}
+[.] (banga)   {spacing(after=40)}
+[.] (banga)   {spacing(after=40) run:i|000000}
+[.] (banga)   {run:i|000000}
+[p] FANAZARAN-TENA   {spacing(after=40) run:b|u|000000}
+[p] Ampifandraiso amin’ny alalan’ny tsilo   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+
+[TABILAO 7] style=Grilledutableau w=8924 kolona=2545/567/5812
+  <r0 c0> Samy hafa …•
+  <r0 c1> (banga)
+  <r0 c2> … ireo boky entinay isan’andro mba hovakina.
+  <r1 c0> (banga)
+  <r1 c1> (banga)
+  <r1 c2> … be izany hoe maloto sy madio izany.
+  <r2 c0> (banga)
+  <r2 c1> (banga)
+  <r2 c2> … ny karazana lamba zairin’i Neny.
+  <r3 c0> Samihafa …  •
+  <r3 c1> (banga)
+  <r3 c2> … tanteraka ny mitomany sy ny miomehy.
+  <r4 c0> (banga)
+  <r4 c1> (banga)
+  <r4 c2> Isan-karazany
+  <r5 c0> (banga)
+  <r5 c1> (banga)
+  <r5 c2> Tsy mitovy
+
+[.] (banga)   {spacing(after=40)}
+[p] Fenoy samy hafa na samihafa ny banga   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+[p] Nandalo teto aminay ny rivo-doza Mitia ary nanimba zavatra ………… toy ny fambolena, ny lalana ary ny foto-drafitrasa …………. . Tsy naharitra ela taorian’izay akory anefa dia nirotsaka indray ny oram-be. Marina aloha fa …………… ny rivo-doza sy ny tondra-drano. Mitovitovy ihany anefa ny vokany eo amin’ny lafim-piainana ……….. ety ambanivohitra. Ilaina ny orana nefa …………. ny hoe orana antonony ilain’ny zava-maniry sy ny orana be loatra izay manimba aok’izany.   {spacing(after=40) ind(firstLine=720) run:000000}
+[.] (banga)   {spacing(after=40) ind(firstLine=720)}
+[p] Mamorona fehezanteny roa ahitana ny hoe “samy hafa” sy ny hoe “samihafa”. Ampiasao ireto teny ireto: biby, valanjavaboahary, voay, akoho.   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+[.] (banga)   {spacing(after=40)}
+[p] FANITSIANA   {spacing(after=40) run:b|u|FA6A97}
+[p] Ampifandraiso amin’ny alalan’ny tsilo   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+
+[TABILAO 8] style=Grilledutableau w=8924 kolona=2545/567/5812
+  <r0 c0> Samy hafa …•
+  <r0 c1> (banga)
+  <r0 c2> … ireo boky entinay isan’andro mba hovakina.
+  <r1 c0> (banga)
+  <r1 c1> (banga)
+  <r1 c2> … be izany hoe maloto sy madio izany.
+  <r2 c0> (banga)
+  <r2 c1> (banga)
+  <r2 c2> … ny karazana lamba zairin’i Neny.
+  <r3 c0> Samihafa …  •
+  <r3 c1> (banga)
+  <r3 c2> … tanteraka ny mitomany sy ny miomehy.
+  <r4 c0> (banga)
+  <r4 c1> (banga)
+  <r4 c2> Isan-karazany
+  <r5 c0> (banga)
+  <r5 c1> (banga)
+  <r5 c2> Tsy mitovy
+
+[.] (banga)   {spacing(after=40)}
+[p] Fenoy samy hafa na samihafa ny banga   {numPr() spacing(after=40) run:000000}
+[.] (banga)   {spacing(after=40)}
+[p] Nandalo teto aminay ny rivo-doza Mitia ary nanimba zavatra samihafa toy ny fambolena, ny lalana ary ny foto-drafitrasa samihafa. Tsy naharitra ela taorian’izay akory anefa dia nirotsaka indray ny oram-be. Marina aloha fa samy hafa ny rivo-doza sy ny tondra-drano. Mitovitovy ihany anefa ny vokany eo amin’ny lafim-piainana samihafa ety ambanivohitra. Ilaina ny orana nefa samy hafa ny hoe orana antonony ilain’ny zava-maniry sy ny orana be loatra izay manimba aok’izany.   {spacing(after=40) ind(firstLine=720) run:000000}
+[.] (banga)   {spacing(after=40) ind(firstLine=720)}
+[p] Mamorona fehezanteny roa ahitana ny hoe “samy hafa” sy ny hoe “samihafa”. Ampiasao ireto teny ireto: biby, valanjavaboahary, voay, akoho.   {numPr() spacing(after=40) run:000000}
+[p] Ahitana biby samihafa ao amin’ny valanjavaboahary.   {spacing(after=40) run:i|FF00FF}
+[p] Samy hafa ny akoho sy ny voay.   {spacing(after=40) run:i|FF00FF}
+[.] (banga)   {run:FA6A97}
+[.] (banga)   {jc(val=center) spacing(after=40)}
