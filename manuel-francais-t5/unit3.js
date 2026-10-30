@@ -862,6 +862,10 @@ function revision() {
     p("Chaque binôme défend un service public : « Il faut garder notre service, pour… afin de… ! » — deux CC de but par plaidoirie, et une expression d'avis.", { after: 60 }),
     sub("Atelier 5 — Lecture éclair (10 min) :"),
     p("Lecture expressive du dernier paragraphe de « La mairie, la maison de tous » : la phrase finale doit soulever la classe !", { after: 60 }),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Au bureau de poste, le facteur prépare les lettres. Maman remplit un mandat au guichet, pendant que les usagers attendent leur tour. La mairie est ouverte tous les matins. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("le facteur", { bold: true, color: C.SALMON, hl: true }), run(" [celui qui porte les lettres], "), run("un mandat", { bold: true, color: C.SALMON, hl: true }), run(" [t muet à la fin], "), run("les usagers", { bold: true, color: C.SALMON, hl: true }), run(" [ceux qui utilisent le service].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 3 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
   ];
 }

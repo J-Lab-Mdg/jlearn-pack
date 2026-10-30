@@ -199,12 +199,10 @@ const deroulement = (rows) => new Table({
 });
 // fiche complète : meta + rows + en-tête de séance avec bookmark
 // badge de sous-discipline (fond couleur d'unité)
-const discBadge = (label, color) => new Table({
-  width: { size: 10400, type: WidthType.DXA }, borders: noBorders(),
-  rows: [new TableRow({ children: [
-    cell([p([run(label, { bold: true, color: C.WHITE, size: 24 })], { center: true, after: 20 })],
-      { shade: color, vAlign: VerticalAlign.CENTER }),
-  ]})],
+const discBadge = (label, color) => new Paragraph({
+  alignment: AlignmentType.CENTER,
+  spacing: { after: 40 },
+  children: [new TextRun({ text: label, bold: true, color, size: 30, font: FONT, underline: {} })],
 });
 
 function fiche(globalNo, totalSessions, meta, rows, bookmarkId, disc, discColor) {

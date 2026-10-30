@@ -899,6 +899,10 @@ function revision() {
     pAns("R.A. : l'annonce (où, quand, quoi), deux moments forts, l'interview, la clôture.", ["l'interview"]),
     p("10. Quelle est la règle d'or du débat sur les pratiques familiales ?"),
     pAns("R.A. : on discute des pratiques, on respecte les personnes — chaque famille a ses coutumes.", ["respecte"]),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Samedi, toute la famille s'est réunie pour le baptême du petit dernier. Les invités sont arrivés dès le matin, et grand-mère a raconté les souvenirs d'autrefois. Quel beau moment de partage ! »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("s'est réunie", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec la famille, féminin], "), run("sont arrivés", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec être], "), run("le baptême", { bold: true, color: C.SALMON, hl: true }), run(" [p muet et accent circonflexe].")], { after: 80 }),
   ];
 }
 

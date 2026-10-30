@@ -902,6 +902,10 @@ function revision() {
     pAns("R.A. : présenter (périphrase), trois bienfaits avec causes, mise en garde, conclusion.", ["bienfaits"]),
     p("10. Que doit contenir une règle de jeu complète ?"),
     pAns("R.A. : le nom, le matériel, le terrain, les joueurs, des règles numérotées (dont une interdiction négative), le but du jeu.", ["but du jeu"]),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Le sport fortifie le corps et calme l'esprit. Avant le match, les joueurs s'échauffent longuement ; il est interdit de jouer sans échauffement. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("s'échauffent", { bold: true, color: C.SALMON, hl: true }), run(" [deux f : les muscles chauffent], "), run("longuement", { bold: true, color: C.SALMON, hl: true }), run(" [adverbe en -ment], "), run("il est interdit de", { bold: true, color: C.SALMON, hl: true }), run(" [la tournure impersonnelle de la règle].")], { after: 80 }),
   ];
 }
 

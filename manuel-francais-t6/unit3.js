@@ -920,6 +920,10 @@ function revision() {
     pAns("R.A. : que tu éteignes ; que tu sois.", ["éteignes"]),
     p("10. Donne le plan d'un mode d'emploi réussi."),
     pAns("R.A. : un titre, des étapes numérotées dans l'ordre, un seul mode (infinitif ou impératif), une mise en garde à la forme négative.", ["mise en garde"]),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Il faut que tu éteignes la radio avant de sortir et que tu sois prudent avec les prises. Un bon mode d'emploi donne des étapes numérotées et une mise en garde. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("que tu éteignes", { bold: true, color: C.SALMON, hl: true }), run(" [subjonctif après il faut que], "), run("que tu sois", { bold: true, color: C.SALMON, hl: true }), run(" [être au subjonctif], "), run("une mise en garde", { bold: true, color: C.SALMON, hl: true }), run(" [l'avertissement qui protège].")], { after: 80 }),
   ];
 }
 

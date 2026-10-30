@@ -861,6 +861,10 @@ function revision() {
     p("", { after: 40 }),
     sub("Atelier 5 — Lecture du guide (10 min) :"),
     p("En binômes : lire le dernier paragraphe de la brochure de Nosy Be avec l'enthousiasme d'un guide. Le binôme coche : pauses ? intonation ? débit ?", { after: 60 }),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« À la gare routière, les voyageurs montent dans le taxi-brousse. Papa achète les billets au guichet, puis nous partons pour Morondava. Le voyage dure toute la journée. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("la gare routière", { bold: true, color: C.SALMON, hl: true }), run(" [la gare des routes, pas des trains], "), run("le taxi-brousse", { bold: true, color: C.SALMON, hl: true }), run(" [avec son trait d'union], "), run("le guichet", { bold: true, color: C.SALMON, hl: true }), run(" [la petite fenêtre où l'on paie].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 2 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
   ];
 }

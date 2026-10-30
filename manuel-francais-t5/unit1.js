@@ -867,6 +867,10 @@ function revision() {
     p("En binômes : lire le 1er paragraphe d'Andasibe avec fluidité et expressivité. Le binôme coche : pauses respectées ? voix vivante ? tous les mots lus ?", { after: 60 }),
     sub("Atelier 5 — Le plan éclair (10 min) :"),
     p("Sujet surprise : « Décris le marché de ton village. » En cinq minutes, bâtis le plan (intro / développement / conclusion) avec trois mots clés par partie. Mise en commun rapide.", { after: 60 }),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Notre village protège sa forêt. Les enfants plantent de jeunes arbres derrière l'école : c'est le reboisement. Les barrières de feux arrêtent les feux de brousse. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("le reboisement", { bold: true, color: C.SALMON, hl: true }), run(" [re- = de nouveau : on plante de nouveau], "), run("les barrières de feux", { bold: true, color: C.SALMON, hl: true }), run(" [elles barrent la route au feu], "), run("les feux de brousse", { bold: true, color: C.SALMON, hl: true }), run(" [feux au pluriel : un x].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 1 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
   ];
 }

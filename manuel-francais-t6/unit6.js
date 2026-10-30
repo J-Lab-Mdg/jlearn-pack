@@ -886,6 +886,10 @@ function revision() {
     pAns("R.A. : la formule d'ouverture, la voix qui change avec les personnages, le silence avant le moment fort.", ["le silence"]),
     p("10. Donne les six étapes du canevas d'un conte."),
     pAns("R.A. : le héros et son lieu ; la paix troublée ; le départ ; la rencontre (conseil ou interdit) ; l'épreuve ; l'issue.", ["l'épreuve"]),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Il était une fois un jeune pêcheur qui vivait au bord d'une rivière tranquille. Une nuit, une voix mystérieuse l'appela : c'était le génie des eaux. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("Il était une fois", { bold: true, color: C.SALMON, hl: true }), run(" [la formule d'ouverture du conte], "), run("mystérieuse", { bold: true, color: C.SALMON, hl: true }), run(" [féminin de mystérieux], "), run("l'appela", { bold: true, color: C.SALMON, hl: true }), run(" [passé simple, sans accent].")], { after: 80 }),
   ];
 }
 

@@ -852,6 +852,10 @@ function revision() {
     p("Lecture chorale de la comptine de conjugaison : « Nous lançons, nous plaçons, nous commençons ! Nous nageons, nous mangeons, nous partageons ! » — puis chaque rangée épelle un verbe.", { after: 60 }),
     sub("Atelier 5 — L'explication minute (10 min) :"),
     p("En binômes : expliquer la marelle (ou un jeu de la cour) en quatre phrases avec premièrement / ensuite / enfin / parce que. Les meilleurs passent au tableau !", { after: 60 }),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Pendant les vacances, nous jouons dans la cour. Nous lançons le ballon, nous nageons à la rivière et nous partageons le goûter. Les loisirs reposent le corps et l'esprit. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("nous lançons", { bold: true, color: C.SALMON, hl: true }), run(" [ç devant o : la cédille garde le son s], "), run("nous nageons", { bold: true, color: C.SALMON, hl: true }), run(" [e après g : il garde le son j], "), run("les loisirs", { bold: true, color: C.SALMON, hl: true }), run(" [s au pluriel].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 4 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
   ];
 }

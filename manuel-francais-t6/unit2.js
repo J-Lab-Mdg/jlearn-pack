@@ -902,6 +902,10 @@ function revision() {
     pAns("R.A. : vous étiez, nous avions, ils faisaient.", ["vous étiez"]),
     p("10. Range ces connecteurs et emploie-les dans trois phrases sur une journée d'entraide : enfin / d'abord / ensuite."),
     pAns("R.A. : d'abord, ensuite, enfin — D'abord, nous avons balayé la place. Ensuite, nous avons repeint l'école. Enfin, nous avons partagé le repas.", ["d'abord"]),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Autrefois, le village n'avait ni électricité ni fontaine. D'abord, les habitants ont creusé le puits ; ensuite, ils ont repeint l'école ; enfin, ils ont partagé un grand repas. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("autrefois", { bold: true, color: C.SALMON, hl: true }), run(" [le mot qui appelle l'imparfait], "), run("ni… ni…", { bold: true, color: C.SALMON, hl: true }), run(" [la double négation, sans pas], "), run("le puits", { bold: true, color: C.SALMON, hl: true }), run(" [s final, même au singulier].")], { after: 80 }),
   ];
 }
 

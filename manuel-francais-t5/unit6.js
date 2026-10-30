@@ -885,6 +885,10 @@ function revision() {
     p("Ardoise : elle est partie — ils se sont réunis — la fleur ? il l'a cueillie — de beaux contes merveilleux — des lacs bleus. On épelle, on justifie chaque accord !", { after: 60 }),
     sub("Atelier 5 — Le conteur minute (10 min) :"),
     p("En binômes : raconter un mini-conte en cinq phrases — une par étape du schéma, avec la voix et les gestes. Les plus captivants passent devant la classe !", { after: 60 }),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Il était une fois une princesse qui vivait près d'un grand lac. Les pirogues ? Le génie les a posées sur l'eau. Les contes merveilleux sont arrivés jusqu'à nous. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("les a posées", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec « les » = les pirogues, placé avant], "), run("merveilleux", { bold: true, color: C.SALMON, hl: true }), run(" [eux à la fin], "), run("sont arrivés", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec être].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 6 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
   ];
 }

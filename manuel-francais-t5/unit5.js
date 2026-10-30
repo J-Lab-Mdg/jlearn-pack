@@ -871,6 +871,10 @@ function revision() {
     p("Ardoise : il bâtit — nous bâtissons — ils construisent — vous cultivez — nous construisons — elles pêchent. On épelle, on corrige, on recommence !", { after: 60 }),
     sub("Atelier 5 — L'interview éclair (10 min) :"),
     p("En binômes : trois questions du journaliste, trois réponses avec le vocabulaire des métiers, puis présentation en deux phrases au groupe. La ponctuation s'entend dans la voix !", { after: 60 }),
+    p("", { after: 40 }),
+    p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("« Le charpentier scie les planches et la couturière coud une robe. Chaque métier demande du courage et des mains habiles. Plus tard, je choisirai un métier qui fera vivre mon village. »", { italic: true })], { after: 60 }),
+    pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("le charpentier", { bold: true, color: C.SALMON, hl: true }), run(" [il travaille les charpentes de bois], "), run("la couturière", { bold: true, color: C.SALMON, hl: true }), run(" [accent grave sur le è], "), run("je choisirai", { bold: true, color: C.SALMON, hl: true }), run(" [futur : -rai].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 5 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
   ];
 }
