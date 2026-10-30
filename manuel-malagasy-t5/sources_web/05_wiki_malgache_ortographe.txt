@@ -1,0 +1,17 @@
+LOHARANON-KEVITRA 5 — wiki_malgache_ortographe
+==========================================================================
+
+REFERENCE : Wikipédia (fr) — « Malgache », sections Orthographe et Prononciation, licence CC BY-SA 4.0
+URL       : https://fr.wikipedia.org/wiki/Malgache
+LICENCE / ATTRIBUTION : Encyclopédie en ligne, article rédigé par des contributeurs ; texte sous licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 (CC BY-SA 4.0). La copie verbatim des passages ci-dessous est donc licite à condition de conserver l'attribution : « Wikipédia, auteurs de l'article, licence CC BY-SA 4.0 ».
+
+UTILISE DANS LE MANUEL :
+  - loha2 · fiche 3 · Fiasan'ny teny · « Ny tendro sy ny teny miafara amin'ny -ka, -tra, -na »
+
+--------------------------------------------------------------------------
+PASSAGES RECOPIES MOT POUR MOT (tels qu'imprimés dans le manuel) :
+--------------------------------------------------------------------------
+
+[1] « Dans l'aspect actuel de l'orthographe, qui comporte 21 lettres (à savoir les 26 lettres standards de l'alphabet latin moins le c, le q, le w, le u et le x), le o se prononce comme le « ou » français (encore que dans certaines régions, notamment dans les régions côtières — nord, nord-ouest, ouest… et pas uniquement dans les campagnes —, il puisse aussi se prononcer comme en français). En revanche, la diphtongue ao tend à se prononcer comme un simple o. Le i se trouvant à la fin de chaque mot s'écrit toujours y lequel est quasiment muet. Le e est prononcé comme un é français. Pour les consonnes, le tr et le dr représentent des alvéolaires affriquées, proches du « tram » et du « dream » de l'anglais, avec davantage d'insistance sur le r qui est toujours roulé, comme en italien. Le g est dur, comme dans « gare ». Le s, est toujours sourd (comme le ss en français), et légèrement chuinté. Le ts se prononce comme dans « tsigane ». »
+
+[2] « L'accent tonique tombe en général sur l'avant-dernière syllabe du mot, à moins que celui-ci ne se termine en -ka, -tra, ou -na, auquel cas l'accent tombe sur l'antépénultième. Les voyelles inaccentuées se trouvant à la fin de chaque mot sont à peine prononcées. »

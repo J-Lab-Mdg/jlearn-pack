@@ -1,0 +1,91 @@
+# LOHARANO — lesona S1/S2 « Teny verindroa » (T6). Citation verbatim + toerana.
+# Fikarohana 2026-10-30. `--fanamarinana` = tsindry amin'ireo lahatsoratra ireo.
+
+## A. FRP 6ème Malagasy (antantan-taratasy ofisialy) — PDF : `PE RAPE/FRP_6eme_MLG.pdf`
+#  (extrait : refs/FRP_6eme_MLG.txt ; marika Pejy = namboarin'ny abaka_pdf.py)
+[FRP p.74] TSIPELINA / Fanoratana teny mitovy fanonona fa samy hafa hevitra (LFK 1a: Lesona)
+  mianaka : Ohatra : Lasa niantsena izy mianaka.
+  mihanaka : Ohatra : Vaky ny paompy dia nihanaka eran'ny tokontany ny rano.
+  havana/avana
+  havana : Ohatra : Aza mandalo tana-misy havana.
+  avana : Ohatra : Rehefa hitsahatra ny orana dia misy avana miseho eny amin'ny lanitra.
+  manantitra/manatitra
+  manantitra : Ohatra : Manantitra ny arahaba Tompoko.
+  manatitra : Ohatra : Tonga nanatitra vary teo ry Rabe.
+  manantona/manatona
+  manantona : Ohatra : Manantona ny lamba amin'ny tady i Neny.
+  manatona : Ohatra: Haingana ianao fa efa manatona ny fahavalo.
+# NOTE : ny « ' » ao amin'ny PDF = U+201F (‟) — lasa ' (U+2019) eto, fa tsy manova ny teny.
+[FRP p.74] TSIPELINA / Teny roa avahan'ny tendro (LFK 1b: Lesona)
+  àry : kianteny mamehy hevitra   oh : Ianao àry tsy handeha akory !
+  ary : mpampitohy                oh : Mividy vary sy laoka ary mofomamy i Neny.
+  mazana : mafy                   oh : Mazana be ilay niaka-piakarana.
+  Mazàna : matetika               Oh : Mandalo mazàna eto amintsika iny mpivarotra iny.
+[FRP p.75] TSIPELINA / Tanjon'ny fampiasana teny verindroa (LFK 1d: Lesona)
+  Manalefaka hevitra  Ohatra : Mihantahanta indray i Lita kely marina a !
+  Manamafy hevitra    Ohatra: Fepero ihany ny ankizy amin'ity tia mihaninkanika ity.
+[FRP p.75-76] TSIPELINA / Fepetra amin'ny fanakambanan-teny (LFK 1e: Lesona)
+  sary tany lasa sarin-tany ; Tranona fokonolona lasa tranom-pokonolona
+  ravina saonjo lasa ravin-tsaonjo ; Mirana lava lasa miran-dava ; Lavenona fotsy lasa lavenom-potsy
+  satroka vehivavy lasa satro-behivavy ; Tapaka fe lasa tapa-pe ; Tongotra soavaly lasa tongo-tsoavaly
+  trano (ananana) vorona (tompony) lasa tranom-borona ; Taho penina lasa tahom-penina ; tongo-parafara
+  fitsipika : « Raha tsy miafara amin'ny -ka, -tra, -na ny teny voalohany, dia asiana « n » aloha izy
+  vao atohy amin'ny teny manaraka ka ovana ny renisoratra voalohan'ilay teny manaraka. »
+
+## B. Rakibolana (serasera.org) — fehezanteny fanampiny, internet
+[Rakibolana mianaka] http://www.rakibolana.org/rakibolana/teny/mianaka (nampidirin'i hery, 10/03/2017)
+  « Mpianaka (anaka) p, t.: ... Teny enti-milaza ny fandraisan'ny ray na ny reny amin'ny zanaka
+   ara-pihavanana: Lasa nitsangantsangana Rabe sy Ikoto mianaka. »
+[Rakibolana manatitra] http://www.rakibolana.org/rakibolana/teny/manatitra (admin, 09/08/2011)
+  « (atitra) mt.p. (manatera): Manolotra, manome zavatra ho an'olona ... Mitondra miverina, mamerina:
+   Mahagaga ahy fa mbola tsy nanatitra ny volako izy hatramin'izao. »
+[Rakibolana mihanaka] http://www.rakibolana.org/rakibolana/teny/mihanaka
+  « (hanaka) mt.: Miely eran'ny toerana iray, miparitaka, mihahaka, manenika tsikelikely » — ny
+   ohatra ao amin'ity pejy ity dia voaloto (sortie OCR : « Andeha hsuw maka kifafa nhobar… ») ⇒
+   TSY AMPIASAINA ; ohatra = an'ny FRP ihany.
+[Rakibolana mazana] http://www.rakibolana.org/rakibolana/teny/mazana — « Mazàna ... Matetika » (loto
+   koa ny lahatsoratra) ⇒ TSY AMPIASAINA ho ohatra ; ampiasaina ho fanamafisan'ny dikany ihany.
+[Rakibolana manantitra] http://www.rakibolana.org/rakibolana/teny/manantitra → « TSY HITAO ny teny
+  manantitra notadiavinao » ⇒ **tsy misy loharano hafa** : ny FRP (p.74) ihany no loharano.
+
+## C. PE T6 — cadre (citation verbatim)
+[PE T6 p.15] « Fiasan'ny teny — Tsipelina : Teny verindroa · Fanakambanan-teny »
+[PE T6 p.13] « Ny fandaharam-pibeazana ao amin'ny T6 dia manokana ora 4 isan-kerinandro ho an'ny
+  taranja malagasy. Ny mpampianatra no mitsinjara sy mandrindra io ora voalaza io »
+[PE T6 p.26] « TOROVOLANA — Allitération : tamberin-drenifeo, renifeo iray no miverimberina na
+  renifeo mifanakaiky fanonana. Assonance : tamberin-janapeo, zanapeo iray no miverimberina na
+  zanapeo mifanakaiky fanonana. »
+
+## B2. Rakibolana an-tserasera (malagasyword.org, D. Stark) — mikaroka 30/10/2026, pejy voamarina
+[malagasyword mianaka] https://malagasyword.org/bins/teny2/mianaka
+  « Teny enti-milaza ny fifandraisan' ny ray na ny reny amin' ny zanaka ara-pihavanana:
+   Lasa nitsangantsangana Rabe sy Ikoto mianaka. » ; fr. : « être parents et fils » ;
+   « parents et enfants (s) ensemble » ; « tèlo mìanaka: parents et un enfant ».
+  ohatra hafa : « Nony tonga teo izy telo mianaka dia hatairana moa zany! » ;
+   « Ry Katy mianakavy no mba mpamangy azy mianaka. » ; « Ka iza no tianareo mianaka amin' ireto? »
+[malagasyword avana] https://malagasyword.org/bins/teny2/avana
+  n. : « Zava-miseho indraindray eny amin' ny habakabaka, rehefa misy orana, izay miendrika
+   andohalambo makadiry mipaka amin' ny lanin' ny vodilanitra roa, ary misy loko fito fototry ny
+   loko rehetra: mena, volondaoranjy, vony, maitso, manga, angana ary volomparasy; rehefa misy
+   avana miseho dia fambara fa efa hitsahatra ny orana » ; fr. : « arc-en-ciel » ;
+   « nimbe, lumière, éclat, splendeur » ; syn. antsibenandriamanitra.
+  Entry (2/2) avana (root ava, passive) : « qu'on sarcle » — « Enti-milaza ny voly izay
+   karakaraina ka ongotana ny ahidratsy maniry eo aminy: Efa tokony havana ity tanimbary itỳ fa
+   be loatra ireo ahidratsy ».
+  ohatra : « jereo ange iry avana! » ; « Rehefa vita ny famonoana dia latsaka ny erika, ary nisy avana ».
+[malagasyword havana] https://malagasyword.org/bins/teny2/havana
+  n. : « Ireo olona misy fifandraisana noho ny razana iombonana na noho ny fanambadiana:
+   Misaona izy fa misy havany maty » ; « Olona mifankatia amin' ny tena, sakaiza: Mandrosoa,
+   tompoko; havana ianareo fa tsy olon-hafa » ; fr. : « parent » ; « allié, ami ».
+  ohatra : « Tsy andalako havana, tsy ananako olon-tiana. » [ny kabary] ;
+   « Tsy manana havana koa, fa izaho irery. » ; « Be havana koa ianareo izany! »
+[malagasyword manantitra] https://malagasyword.org/bins/teny2/manantitra
+  (root antitra, active verb) fr. : « répéter; rendre une couleur plus foncée » ;
+  en. : « to ask minutely, to scrutinise, to enquire into repeatedly, to go over a lesson again
+   and again, etc., so as to impress it on the memory; to age; to make to last, to make to
+   endure; to render deeper and permanent, as colours. »
+  ohatra : « Mbola manantitra ny fisaorako anareo aho, lehiretsy. » ;
+   « Fa eo amin'ny vontoatin'izy roa no tena ahafahana manantitra fa mifamatotra tokoa ny tety
+   arana sy ny tantara raza. »
+[malagasyword manatitra] https://malagasyword.org/bins/teny2/manatitra — tsy nosedaina (Rakibolana
+  ihany no nomena, anton'ny mpanabe : loharano malagasy mivantana).
