@@ -142,6 +142,9 @@ function lessonS1() {
     mot("une étape", "un arrêt du voyage"),
     mot("la biodiversité", "toutes les formes de vie d'une région"),
     mot("un voyage gastronomique", "un voyage pour découvrir la cuisine des régions"),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Quelle destination le documentaire fait-il découvrir ?"),
+    p("2. Cite deux merveilles entendues, avec un détail chacune.", { after: 60 }),
   ];
 }
 
@@ -222,6 +225,8 @@ function lessonS2() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« monter dans le taxi-brousse », « voyager en pirogue »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« monter sur le taxi-brousse »" + ".")]),
+    sub("Exercice — je classe les voyages :"),
+    p("Quel type de voyage ? rendre visite à la famille — découvrir un parc national — se reposer à la plage — vendre au grand marché. Ajoute un bienfait du voyage.", { after: 60 }),
   ];
 }
 
@@ -297,6 +302,8 @@ function lessonS3() {
     mot("un dépliant touristique", "un petit document plié qui présente un lieu aux voyageurs"),
     mot("une falaise", "une paroi rocheuse très raide"),
     mot("une bananeraie", "un champ de bananiers"),
+    sub("Exercice — je retrouve dans le texte :"),
+    p("1. La phrase de la vue d'ensemble. — 2. Un détail précis. — 3. La phrase qui donne l'avis de l'auteur.", { after: 60 }),
   ];
 }
 
@@ -368,6 +375,9 @@ function lessonS4() {
     p("À faire voir ce qu'on décrit. Une description sans image informe ; une description imagée fait voyager le lecteur.", { after: 60 }),
     pr([run("Attention : ", { bold: true, color: C.RED }),
         run("dans la métaphore, ne cherche pas « comme » — c'est justement son absence qui fait la différence.")]),
+    sub("Exercice — comparaison, métaphore ou énumération ?"),
+    p("1. « La mer brille comme un miroir. » — 2. « L'allée des baobabs, cathédrale de la route. » — 3. « Des pirogues, des filets, des paniers, des fruits. »"),
+    pr([run("[le mot outil trahit la comparaison ; sans mot outil, c'est la métaphore]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -443,6 +453,8 @@ function lessonS5() {
     pr([run("Attention : ", { bold: true, color: C.RED }),
         run("l'attribut s'accorde avec le sujet, même s'il en est loin : la mer, au bout de la longue descente, est "),
         run("calme", { bold: true, color: C.SALMON }), run(".")]),
+    sub("Exercice — accorde l'adjectif :"),
+    p("1. des plages (doré) — 2. une forêt (frais) — 3. des parcs (national) — 4. des eaux (bleu).", { after: 60 }),
   ];
 }
 
@@ -515,6 +527,8 @@ function lessonS6() {
     p("« Sur le quai, les marchandes installent leurs paniers. À côté d'elles, les enfants jouent. Au-dessus de la gare, le ciel reste gris. Au loin, on aperçoit déjà la mer. »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un marqueur de lieu bien choisi remplace un long discours ; il place chaque chose sous les yeux du lecteur.")]),
+    sub("Exercice — l'ordre du regard :"),
+    p("Décris la cour de l'école en trois phrases : « Au premier plan… », « Plus loin… », « Au fond… ».", { after: 60 }),
   ];
 }
 
@@ -587,6 +601,8 @@ function lessonS7() {
     p("• je peux refuser une idée, jamais me moquer de la personne.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un avis sans justification est une humeur ; un avis justifié est un argument.")]),
+    sub("Exercice — ton avis complet :"),
+    p("Donne ton avis sur une destination : « À mon avis… , car… » — puis réponds poliment à un camarade qui pense le contraire.", { after: 60 }),
   ];
 }
 
@@ -660,6 +676,8 @@ function lessonS8() {
     p("III. Un lieu frais et paisible ; conseil : y aller à la saison des pluies.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un plan solide fait la moitié du travail ; sans plan, la description tourne en rond.")]),
+    sub("Exercice — ton plan :"),
+    p("Bâtis le plan de la description de ton paysage préféré : trois parties, un marqueur de lieu prévu pour chacune.", { after: 60 }),
   ];
 }
 
@@ -733,6 +751,9 @@ function lessonS9() {
     p("• supprimer ce qui se répète.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un texte n'est jamais fini au premier jet ; c'est la relecture qui en fait un bon texte.")]),
+    sub("Exercice — améliore comme un écrivain :"),
+    p("« la plage est belle il y a du sable il y a des pirogue » → corrige, ajoute une image : ………"),
+    pr([run("[exemple : La plage dorée s'étire au loin ; les pirogues se reposent sur le sable comme de grands poissons.]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -805,6 +826,8 @@ function lessonS10() {
     p("• je m'entraîne en relisant plusieurs fois le même passage.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("la ponctuation est la respiration du texte ; qui la respecte lit déjà bien.")]),
+    sub("Exercice — prépare puis lis :"),
+    p("Marque / et // puis lis : « Au loin, la mer scintille. Quel spectacle ! Qui veut nager ? »", { after: 60 }),
   ];
 }
 

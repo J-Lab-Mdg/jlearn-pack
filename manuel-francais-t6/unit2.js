@@ -152,6 +152,9 @@ function lessonS13() {
     mot("l'entraide", "s'aider les uns les autres"),
     mot("le fokontany", "le quartier ou le village, la plus petite communauté administrative"),
     mot("un compte-rendu", "un texte qui rapporte ce qui s'est réellement passé"),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Réponds : quoi ? où ? quand ?"),
+    p("2. Donne une information implicite : qu'as-tu compris sans que le texte le dise ?", { after: 60 }),
   ];
 }
 
@@ -232,6 +235,8 @@ function lessonS14() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« rendre service à quelqu'un »" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« donner service »" + ".")]),
+    sub("Exercice — je classe :"),
+    p("Biens de tous, actions ensemble ou bonnes manières ? la fontaine — balayer la place — saluer les anciens — le lavoir — repeindre l'école — céder sa place.", { after: 60 }),
   ];
 }
 
@@ -306,6 +311,8 @@ function lessonS15() {
     p("• exemple : « Article 4 — Il est interdit de faire du feu. »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un même document peut mélanger les deux : le règlement du jardin informe d'abord, puis ordonne.")]),
+    sub("Exercice — informatif ou injonctif ?"),
+    p("1. « La bibliothèque ouvre à huit heures. » — 2. « Rangez les livres après la lecture ! » Justifie ta réponse.", { after: 60 }),
   ];
 }
 
@@ -383,6 +390,9 @@ function lessonS16() {
     p("• suivis de « qui / que » : ceux qui respectent le jardin.", { after: 60 }),
     pr([run("Attention : ", { bold: true, color: C.RED }),
         run("le pronom simple prend toujours le genre et le nombre du nom qu'il remplace.")]),
+    sub("Exercice — remplace sans répéter :"),
+    p("« Ce puits est neuf ; ce puits d'à côté est ancien. » → ……… — puis complète : « Chacun aide son voisin : ……… est notre fihavanana. »"),
+    pr([run("[celui-ci, celui-là ; cela pour l'idée entière]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -461,6 +471,8 @@ function lessonS17() {
     p("Jetez vos déchets. → Il faut jeter ses déchets. → On doit jeter ses déchets. → Il est essentiel de jeter ses déchets.", { after: 60 }),
     pr([run("Attention : ", { bold: true, color: C.RED }),
         run("à l'impératif, les verbes en -er perdent le s de « tu » : tu respectes → respecte.")]),
+    sub("Exercice — ordonne de trois façons :"),
+    p("Avec « rendre les livres à temps » : 1. une phrase impérative — 2. avec « il faut » — 3. avec « il est obligatoire de ».", { after: 60 }),
   ];
 }
 
@@ -536,6 +548,8 @@ function lessonS18() {
     p("« D'abord, les jeunes ont nettoyé la place. Ensuite, un groupe a repeint l'école. Enfin, les enfants ont planté dix arbres. »", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("avant / maintenant : l'imparfait peint la situation d'hier, le présent celle d'aujourd'hui.")]),
+    sub("Exercice — au bon temps, dans le bon ordre :"),
+    p("1. Conjugue : « Autrefois, le village (ne pas avoir) de fontaine ; aujourd'hui, chacun (venir) y puiser. » — 2. Range avec d'abord / ensuite / enfin trois actions d'une journée d'entraide.", { after: 60 }),
   ];
 }
 
@@ -608,6 +622,8 @@ function lessonS19() {
     p("• l'imparfait pour la situation d'avant, le présent pour le résultat d'aujourd'hui.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un bon compte-rendu répond aux quatre questions avant même qu'on les pose.")]),
+    sub("Exercice — ton compte-rendu :"),
+    p("Prépare le plan en trois temps d'un compte-rendu sur une activité de la classe — une phrase par temps.", { after: 60 }),
   ];
 }
 
@@ -679,6 +695,8 @@ function lessonS20() {
     p("LA FONTAINE, C'EST NOUS ! — La borne-fontaine sert à cent familles. Elle est entretenue par le fokontany. — 1. Ferme le robinet après usage. 2. Il faut garder l'endroit propre. 3. Il est interdit d'y laver les véhicules. — L'eau de tous, la responsabilité de chacun.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("une affiche informe d'abord, fait agir ensuite — comme le règlement du jardin.")]),
+    sub("Exercice — ton plan d'affiche :"),
+    p("Bâtis le plan d'une affiche « Journée de propreté » : le slogan, les informations (où ? quand ?), deux consignes.", { after: 60 }),
   ];
 }
 
@@ -752,6 +770,9 @@ function lessonS21() {
     p("• lire l'affiche à voix haute : ce qui se dit mal se lit mal.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("une affiche se lit en dix secondes ; chaque mot doit mériter sa place.")]),
+    sub("Exercice — améliore comme un afficheur :"),
+    p("« il faut pas jeter les ordures ici » → transforme en consigne d'affiche, avec un slogan : ………"),
+    pr([run("[exemple : Ne jetez plus vos ordures ici ! Notre place propre, notre fierté !]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -826,6 +847,8 @@ function lessonS22() {
     p("• je m'entraîne : deux lectures valent mieux qu'une.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("lire un compte-rendu, c'est rendre l'événement vivant pour celui qui n'y était pas.")]),
+    sub("Exercice — lis avec le code :"),
+    p("Lis en changeant de voix pour la parole rapportée : « Le travail est fini. — Merci à tous ! a dit le chef du fokontany. »", { after: 60 }),
   ];
 }
 

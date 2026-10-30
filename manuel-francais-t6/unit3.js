@@ -152,6 +152,9 @@ function lessonS25() {
     mot("une touche", "un petit bouton pour écrire une lettre ou un chiffre"),
     mot("cliquer", "appuyer sur une image ou un bouton de l'écran"),
     mot("un tutoriel", "une marche à suivre expliquée pas à pas"),
+    sub("Exercice — j'ai bien écouté :"),
+    p("1. Que t'apprend à faire le tutoriel ?"),
+    p("2. Redis trois étapes dans l'ordre, avec d'abord, puis, enfin.", { after: 60 }),
   ];
 }
 
@@ -237,6 +240,8 @@ function lessonS26() {
     sub("Vocabulaire — on dit… / à éviter… :"),
     pr([run("On dit : ", { bold: true, color: C.GREEN }), run("« allumer » et « éteindre » l'ordinateur" + ".")], { after: 40 }),
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« ouvrir » et « fermer » l'ordinateur (on ouvre un fichier, pas la machine)" + ".")]),
+    sub("Exercice — je classe :"),
+    p("Appareil, partie ou action ? l'écran — allumer — le clavier — enregistrer — la radio — télécharger.", { after: 60 }),
   ];
 }
 
@@ -314,6 +319,9 @@ function lessonS27() {
     mot("la connexion", "le lien avec Internet"),
     mot("en ligne", "sur Internet"),
     mot("autonome", "qui sait se débrouiller seul"),
+    sub("Exercice — devine avec le contexte :"),
+    p("« Je sauvegarde mon travail pour ne pas le perdre. » Que veut dire « sauvegarder » ? Quel mot de la même famille connais-tu ?"),
+    pr([run("[sauver + garder : le mot porte sa définition en lui]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -390,6 +398,8 @@ function lessonS28() {
     p("• parce que répond à une question ; car ne commence jamais la phrase.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("pour expliquer, je donne la cause : parce que, car, comme + phrase ; grâce à, à cause de + nom.")]),
+    sub("Exercice — fabrique la cause :"),
+    p("Relie : « L'écran s'éteint. La batterie est vide. » 1. avec « parce que » — 2. avec « à cause de ».", { after: 60 }),
   ];
 }
 
@@ -467,6 +477,9 @@ function lessonS29() {
     p("À l'oral, on entend « touche pas » ; à l'écrit, le ne est obligatoire.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("pour interdire, je mets l'impératif à la forme négative : ne + verbe + pas (jamais, rien, plus, personne).")]),
+    sub("Exercice — interdis correctement :"),
+    p("1. Transforme en interdiction : « toucher les fils électriques ». — 2. Corrige : « je sais pas » ; « il écoute personne »."),
+    pr([run("[la négation va toujours par deux : ne… pas, ne… personne]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
   ];
 }
 
@@ -544,6 +557,8 @@ function lessonS30() {
     p("• il faut que + subjonctif insiste sur l'obligation.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("infinitif = consigne neutre ; futur = ce qui se passera ; subjonctif = après il faut que, pour que.")]),
+    sub("Exercice — la même consigne, trois modes :"),
+    p("Avec « éteindre l'appareil » : 1. à l'infinitif — 2. au futur simple — 3. avec « il faut que tu… ».", { after: 60 }),
   ];
 }
 
@@ -619,6 +634,8 @@ function lessonS31() {
     p("• un exemple concret vaut mieux qu'un grand mot.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("une opinion sans raison ne pèse rien : je dis ce que je pense, puis pourquoi je le pense.")]),
+    sub("Exercice — opinion et mise en garde :"),
+    p("1. Donne ton opinion sur le téléphone en classe : « Je pense que… , car… ». — 2. Ajoute une mise en garde : « Attention à… ».", { after: 60 }),
   ];
 }
 
@@ -690,6 +707,8 @@ function lessonS32() {
     p("Si le public peut redire mes étapes dans l'ordre, mon tutoriel a réussi.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un tutoriel réussi se suit les yeux fermés : des étapes courtes, ordonnées, précises.")]),
+    sub("Exercice — ton tutoriel :"),
+    p("Prépare un tutoriel en quatre étapes : « Comment envoyer un message » — un verbe d'action au début de chaque étape.", { after: 60 }),
   ];
 }
 
@@ -769,6 +788,8 @@ function lessonS33() {
     p("5. Mes mots sont-ils précis ?", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("un bon mode d'emploi se vérifie en le faisant faire : si le lecteur hésite, une étape manque de précision.")]),
+    sub("Exercice — ton mode d'emploi :"),
+    p("Rédige trois consignes numérotées à l'infinitif et une mise en garde à la forme négative, pour l'appareil de ton choix.", { after: 60 }),
   ];
 }
 
@@ -842,6 +863,8 @@ function lessonS34() {
     p("• je m'entraîne : deux lectures valent mieux qu'une.", { after: 60 }),
     pr([run("À retenir : ", { bold: true }),
         run("bien lire un mode d'emploi, c'est permettre à l'autre d'agir en même temps.")]),
+    sub("Exercice — lis comme une notice :"),
+    p("Lis trois consignes d'une voix claire et ferme, avec une pause nette à chaque numéro — ton voisin doit pouvoir les exécuter sans te faire répéter.", { after: 60 }),
   ];
 }
 
