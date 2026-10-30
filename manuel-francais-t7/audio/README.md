@@ -13,4 +13,5 @@ Passages d'écoute (compréhension orale) lus par une voix française, un clip p
 | u7_s73_ecoute.mp3 | Séance 73 | Le guide « Bienvenue au parc d'Andasibe » |
 
 Ces fichiers sont des copies de sauvegarde. La diffusion aux enseignants se fait via le
-dossier Google Drive public « JLearn Français T7 » (lecture seule, MP3 uniquement).
+dossier Google Drive public « JLearn Français T7 » (lecture seule, MP3 uniquement) :
+https://drive.google.com/drive/folders/10isfL88Hr7SNYTHbIvILTP15eqd7_iOs
