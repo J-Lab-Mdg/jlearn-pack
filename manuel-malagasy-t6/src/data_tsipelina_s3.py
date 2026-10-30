@@ -80,8 +80,8 @@ GRILLE = [
      "Inona no natao tamin'ny farany amin'ny teny voalohany ? Inona no natao "
      "tamin'ny voalohan'ny teny faharoa ?",
      "Mijery, mamaly.\n"
-     "V.A. : indraindray dia tsy very ny -ka/-tra/-na fa miala ; ary ny « n » noampy — ny renifeo "
-     "manaraka azy dia miova : s → ts, f → p, v → b, l → d.",
+     "V.A. : ny « n » no **ampiana** eo anelanelan'ny roa teny (*sary* → *sarin-*), ary ny renifeo "
+     "voalohan'ny teny faharoa dia **miova** : s → ts, f → p, v → b, l → d.",
      "Asa iombonana", "Fehezanteny\nSolaitrabe", ""),
     ("4. Famakafakana (4 min)",
      "« *Hamaritra ny fepetra amin'ny teny tsy maintsy akambana sy ny antony anaovana "
@@ -118,14 +118,14 @@ LESONA = [
           "**tsipi-panohizana** (« - »). Izay no atao eto amin'ny boky : *sary tany* → "
           "**sarin-tany**."),
 
-    ("h2", "Ny zavatra je-hina (Votoatiny an'ny PE)"),
+    ("h2", "Ny zavatra hodinihina (Votoatiny an'ny PE)"),
     ("p", "Ny PE (Tsipelina : « Fanakambanan-teny : fepetra amin'ny fanakambanan-teny ») dia "
           "mametraka ireo singa efatra ireo : « **Fananana sy tompony** » · « **Hetsika sy "
           "mpanao azy** » · « **Teny voalohany miafara amin'ny -ka, -tra, -na, teny faharoa "
           "manomboka amin'ny zana-peo sy manomboka amin'ny renifeo** » · « **Fampiasana "
           "mpampikambana na** … ». *Mangina ny tapany farany* amin'ireo singa ireo ao amin'ny "
           "lahatsoratra ananantsika : nitohy hatramin'ny « na » ny andian-tsoratra, ka tsy "
-          "nohamboarina eto. Ny ôhatra ao amin'ny FRP no mamerena azy : *trano (ananana) "
+          "nohamboarina eto. Ny ôhatra ao amin'ny FRP no manazava izany : *trano (ananana) "
           "vorona (tompony)* → **tranom-borona** (fananana sy tompony)."),
     ("h2", "Fitsipika 1 — n ampiana alohan'ny teny manaraka"),
     ("p", "« *Raha tsy miafara amin'ny **-ka, -tra, -na** ny teny voalohany, dia asiana « **n** » "
@@ -156,7 +156,7 @@ LESONA = [
                 "Tapaka fe → **tapa-pe**",
                 "Tongotra soavaly → **tongo-tsoavaly**"]),
 
-    ("h2", "Fepetra : ovany no atao, ovany tsy atao"),
+    ("h2", "Fepetra : ny atao sy ny tsy atao"),
     ("p", "Amin'ny ankapobeny dia **afa-tsy** ireo toy izay : (i) ny **teny miverina** (izay "
           "miverina indroa ny ampahany aminy) ary (ii) ny milaza **tompon-javatra sy zavatra "
           "ananana** (oh : *trano* ananana *vorona* → **tranom-borona**) → **tsy atao** ny "
