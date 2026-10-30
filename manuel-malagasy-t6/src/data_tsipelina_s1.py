@@ -1,8 +1,17 @@
 # -*- coding: utf-8 -*-
-"""T6 — lesona S1 : Fiasan'ny teny · Tsipelina · « TENY VERINDROA »            (V1)
+"""T6 — lesona S1 : Fiasan'ny teny · Tsipelina · LFK 1a + 1b            (V2)
 
-FIFANDRANANA (didin'ny mpanabe, 30/10) : « on va suivre le PE, le PE donne le titre et le
-FRP les ressources (on compare) ».
+**FIOVANA (V2, 31/10)** : fototra = **FRP T6 ÉDITION OCTOBRE 2026** (plateforme.education.mg) ;
+gandra = **RAPE T6 éd. sept. 2026**, taranja Malagasy, **herinandro 1 → 7** (4 ora/kerinandro,
+tsy misy daty : « Tsy ahitana daty na vanim-potoana mamaritra ny tetiandrom-pampianarana »).
+Ny lohateny dia **avalan'ny FRP** (LFK 1a + 1b) ; ny « Teny verindroa » (LFK 1d) dia lasa **S2**,
+satria ny verindroa dia **fiverenan'ny teny iray** (lava → lavalava), araka ny didin'ny mpanabe
+30/10. Ny tabilao lesona<->herinandro : `refs/03_FRP_T6_EDISIONA-2026-10.md`. (V1)
+
+FIFANDRANANA (didin'ny mpanabe, 30/10) : « c'est le frp qui est assez complet pour fitsipika
+sy tsipelina. On devrait alors se pencher sur la liste du FRP pas le PE » → ny **lohateny** dia
+avy amin'ny **FRP** ; ny **PE** dia tazonina ho cadre ihany (heures, `Tombana`, `Fitaovana`,
+`Sahanasa`) ; ny fifanoherana PE-FRP voasoratra ao amin'ny `note`.
   * LOHATENY sy dingana = **PE T6, p.21-22** « FIASAN'NY TENY - Tsipelina » :
     `Fahendrena voizina : fahatokisan-tena, fizakantena` · `Faharetany : ora 12` ·
     `Voka-pianarana manokana : Mifehy ny fitsipi-panoratana ny teny malagasy` ·
@@ -31,7 +40,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fiche_pe import fiche  # noqa: E402
 
 ZT = "Tsipelina"
-LT = "Teny verindroa"
+LT = ("Teny mitovy fanonona fa samy hafa hevitra\nsy ny teny roa avahan'ny tendro")
 
 # ------------------------------------------------------------------ SAHA
 FIELDS = {
@@ -43,7 +52,7 @@ FIELDS = {
     "Daty": "__________",
     "Zana-taranja": "Fiasan'ny teny · " + ZT,
     "Kilasy": "T6",
-    "Lohahevitra": "FIASAN'NY TENY - Tsipelina (PE T6 p.21)",
+    "Lohahevitra": "FIASAN'NY TENY - Tsipelina (RAPE T6 herin. 1-7 · FRP LFK 1a-1b)",
     "Seho n°": "1",
     "Lohateny": LT,
     "Isan'ny seho": "2",
@@ -51,7 +60,8 @@ FIELDS = {
     "V. P. M note": "Voka-pianarana manokana (PE T6, p.21)",
     "Fitaovana": "Ampahan-dahatsoratra novakina na nohenoina",
     "Faharetany": "ora 12",
-    "Fanovozan-kevitra": "PE T6 p.21-22 · FRP 6ème p.74-75",
+    "Fanovozan-kevitra": "FRP T6 éd. oct. 2026 (LFK 1a-1b) · RAPE T6 sept. 2026, herinandro "
+              "1→7 (coquille « Fanaambanan-teny ») · PE T6 p.21-22",
 }
 
 # ------------------------------------------------------------------ TAKELA
@@ -61,7 +71,9 @@ GRILLE = [
     ("I. Famerenana (5 min)",
      "Araka ny natao tamin'ny seho teo aloha : rehefa mitovy fanonona ny teny roa fa samy "
      "hafa hevitra, inona no ilazana ireo teny ireo ?",
-     "V.A. : Teny verindroa. Ny litera na ny tendro no manavaka azy : « mianaka » sy « mihanaka ».",
+     "V.A. : Mitovy fanonona ireo fa samy hafa hevitra sy soratra — **tsy verindroa** (satria tsy "
+     "naverina indroa ny teny iray). Ny litera na ny tendro no manavaka azy : « mianaka » sy "
+     "« mihanaka ».",
      "Asa tsirairay", "----", ""),
     ("II. LESONA VAOVAO (… min)",),
     ("1. Fitarihan-tsaina (3 min)",
@@ -71,8 +83,8 @@ GRILLE = [
      "Mamaky.",
      "Asan-tarika", "Ampahan-dahatsoratra", ""),
     ("2. Fanolorana (2 min)",
-     "Lazao ny lohateny : « Fanoratana teny mitovy fanonona fa samy hafa hevitra » (FRP 6ème, "
-     "p.74). Izany no atao androany hoe teny verindroa.\n"
+     "Lazao ny lohateny : « Fanoratana teny mitovy fanonona fa samy hafa hevitra » (FRP T6 "
+     "éd. 2026, LFK 1a) sy « Teny roa avahan' ny tendro » (LFK 1b).\n"
      "Soraty amin'ny tabilao ny roa teny : mianaka / mihanaka.",
      "Mihaino.",
      "Asa iombonana", "Solaitrabe", ""),
@@ -123,9 +135,10 @@ GRILLE = [
 LESONA = [
     ("h2", "Teny mitovy fanonona fa samy hafa hevitra"),
     ("p", "Ny lohateny ataon'ny Fikarohana fanamboarana ny takela-panomana ny lesona dia : "
-          "« **Fanoratana teny mitovy fanonona fa samy hafa hevitra** ». Roa teny **mitovy "
-          "fanonona** fa **samy hafa hevitra** no atao hoe **teny verindroa** : ny **soratra** "
-          "no manavaka azy."),
+          "« **Fanoratana teny mitovy fanonona fa samy hafa hevitra** » (FRP T6 éd. 2026, LFK 1a) : "
+          "roa teny **mitovy fanonona** fa **samy hafa hevitra** sy **soratra** ; **tsy** atao hoe "
+          "« teny verindroa » intsony, fa ny verindroa dia **fiverenan'ny teny iray** (lava → "
+          "lavalava, LFK 1d = lesona manaraka) ; amin'ny teny frantsay : *homophones*."),
     ("p", "**mianaka** = « Teny enti-milaza ny fifandraisan' ny ray na ny reny amin' ny zanaka "
           "ara-pihavanana » (midika amin'ny teny frantsay hoe « être parents et fils ») ; "
           "**mihanaka** = « Miely eran' ny toerana iray, miparitaka, mihahaka, manenika "
@@ -150,8 +163,8 @@ LESONA = [
                 "Mahagaga ahy fa mbola tsy **nanatitra** ny volako izy hatramin'izao."]),
     ("note", "FRP 6ème Malagasy — PDF « FRP_6eme_MLG.pdf » (Minisiteran'ny Fanabeazam-pirenena : "
              "« boky fanovozan-kevitra » ho an'ny kilasy T1 hatramin'ny T9, HAFATRY NY MINISTERA, "
-             "p.2 ; TSY voalaza ao amin'ny PDF ny fanambarana ny litera « FRP », ka tsy "
-             "nohamboarina eto), "
+             "p.2 ; mitovy ny votoaty ; ary ny edisiona vaovao (Oktobra 2026) dia "
+             "milaza fa « FASCICULE DE RESSOURCES PÉDAGOGIQUES (FRP) »), "
              "p.74 (LFK 1a : Lesona, « TSIPELINA / Fanoratana teny mitovy fanonona fa samy "
              "hafa hevitra ») : ireo 8 fehezanteny ireo, voasoro teny-teny (« eran‟ny » = "
              "eran'ny, « amin‟ny » = amin'ny : ny guillemet-haut ao amin'ny PDF no novaina "
@@ -191,19 +204,6 @@ LESONA = [
     ("note", "FRP 6ème, p.74 (LFK 1b : Lesona, « TSIPELINA / Teny roa avahan' ny tendro ») : "
              "ireo dikany sy ohatra ireo, voasoro teny-teny."),
 
-    ("h2", "Tanjony : manalefaka sy manamafy hevitra"),
-    ("p", "Lanjan'ny fampiasana ny teny verindroa (PE T6, p.21) : mety **manalefaka hevitra** "
-          "na **manamafy hevitra** ny fomba fampiasana azy. Hoy ny FRP (p.75), LFK 1d : "
-          "« Tanjon' ny fampiasana teny verindroa »."),
-    ("ohatra", ["**Manalefaka hevitra** : Mihantahanta indray i Lita kely marina a !",
-                "**Manamafy hevitra** : Fepero ihany ny ankizy amin' ity tia "
-                "mihaninkanika ity."]),
-    ("note", "PE T6, PROGRAMME D'ETUDES, taranja Malagasy, p.21-22 (« FIASAN'NY TENY -Tsipelina » : "
-             "« Votoatiny : Teny verindroa : lanjan' ny fampiasana ny teny verindroa - "
-             "Manalefaka hevitra - Manamafy hevitra » ; « Faharetany : ora 12 » ; « Voka-"
-             "pianarana manokana : Mifehy ny fitsipi-panoratana ny teny malagasy » ; "
-             "« Fitaovana : Ampahan-dahatsoratra novakina na nohenoina ») sy FRP 6ème, p.75 "
-             "(LFK 1d)."),
 ]
 
 # ------------------------------------------------------- FANAZARAN-TENA
@@ -235,21 +235,28 @@ FANITSIANA = [
     {"banga": "[[Manantona]] ny lamba amin' ny tady i Neny.  |  Haingana ianao fa efa "
               "[[manatona]] ny fahavalo.  |  Vaky ny paompy dia [[nihanaka]] eran' ny "
               "tokontany ny rano.  |  Lasa niantsena izy [[mianaka]]."},
-    {"ohatra": ["Ny zava-dehibe : roa teny mitovy fanonona fa samy hafa hevitra, ka ny soratra "
-                "(litera na tendro) no manavaka azy ; izay no atao hoe teny "
-                "verindroa (FRP 6ème, p.74-75)."]},
+    {"ohatra": ["Ny zava-dehibe : roa teny mitovy fanonona fa samy hafa hevitra sy "
+                "soratra (mianaka / mihanaka ; mazana / mazàna) ; tsy misy "
+                "ifandraisany amin'ny teny verindroa — fiverenan'ny teny iray no "
+                "atao hoe verindroa (lava / lavalava)."]},
 ]
 
-LALANA = ("Lazao ny fomba fanoratana ny teny verindroa sy ny tanjon'ny fampiasana azy ao anaty "
-          "fehezanteny.")
+LALANA = ("Lazao ny fomba fanoratana ny teny **mitovy fanonona fa samy hafa hevitra** "
+          "(mianaka / mihanaka) sy ny **teny roa avahan'ny tendro** (mazana / mazàna) ao "
+          "anaty fehezanteny.")
 
 FICHE = fiche(ZT, LT, LESONA, EXOS, FANITSIANA, LALANA, seho="1", isan="2", sary=True,
               loharano=[
-    "« Boky fanovozan-kevitra » 6ème, taranja Malagasy (FRP 6ème Malagasy), "
-    "Minisiteran'ny Fanabeazam-pirenena — PDF « FRP_6eme_MLG.pdf », p.74-76 : TSIPELINA "
-    "(Lesona) — LFK 1a « Fanoratana teny mitovy fanonona fa samy hafa hevitra », LFK 1b "
-    "« Teny roa avahan' ny tendro », LFK 1d « Tanjon' ny fampiasana teny verindroa », "
-    "LFK 1e « Fepetra amin' ny fanakambanan-teny » (lesona manaraka).",
+    "FRP T6 — « FASCICULE DE RESSOURCES PÉDAGOGIQUES », taranja Malagasy, **ÉDITION "
+    "OCTOBRE 2026**, Minisiteran'ny Fanabeazam-pirenena : plateforme.education.mg → "
+    "/bibliotheque-numerique/theme/biblio/pix/frp/college/FRP_T6/FRP_MLG_T6.pdf — LFK 1a "
+    "« TSIPELINA / Fanoratana teny mitovy fanonona fa samy hafa hevitra » sy LFK 1b « TSIPELINA "
+    "/ Teny roa avahan' ny tendro » (mitovy votoaty amin'ny dikan-teny taloha, p.74-75).",
+    "RAPE T6, édisiona septambra 2026, plateforme.education.mg → /theme/biblio/pix/pdf/RAPE_T6.pdf "
+    ": taranja Malagasy, p.6-7 — herinandro 1→33, andiany 5 (7-7-7-6-6), 4 ora/kerinandro ; "
+    "« Fanaambanan-teny » = coquille amin'ny RAPE.",
+    "FRP 6ème Malagasy (soram-boaka taloha 93 pejy, « FRP_6eme_MLG.pdf »), p.74-76 : « réserve » "
+    "an'ny lesona efa voasoratra feno (LFK 1a-1e) ; LFK 1d sy 1e = lesona manaraka (S2 sy S3).",
     "PE T6, PROGRAMME D'ETUDES — PDF « PE T6.pdf », taranja Malagasy, p.12-26 : p.13 « LANJAN'ORA "
     ": ora 4 isan-kerinandro » ; p.15 « FAFAN'NY VOTOATINY : Fiasan'ny teny — Tsipelina : Teny "
     "verindroa · Fanakambanan-teny » ; p.21-22 « FIASAN'NY TENY - Tsipelina » (Faharetany : "

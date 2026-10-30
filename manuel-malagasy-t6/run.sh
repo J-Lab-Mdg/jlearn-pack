@@ -5,8 +5,14 @@
 #   ./run.sh src/build.py data_loha1 Manuel_Malagasy_T5_Loha1_V1
 DEPS=/home/user/pydeps
 export PYTHONPATH="$DEPS${PYTHONPATH:+:$PYTHONPATH}"
-if ! python3 -c "import docx, PIL" >/dev/null 2>&1; then
+if ! python3 -c "import docx, PIL, fontTools" >/dev/null 2>&1; then
     echo "[run.sh] installation des dépendances dans $DEPS …"
-    python3 -m pip install --quiet --target "$DEPS" python-docx Pillow pypdf
+    python3 -m pip install --quiet --target "$DEPS" python-docx Pillow pypdf fonttools
+fi
+# Polices Tinos : hors dépôt aussi (/home/user/police) -> re-telecharger si le sandbox les a perdues
+DOS=$(cd "$(dirname "$0")" && pwd)
+if [ ! -f /home/user/police/Tinos-Regular.ttf ]; then
+    echo "[run.sh] polise Tinos tsy hita -> fetch_police.py …"
+    python3 "$DOS/src/fetch_police.py" >/dev/null 2>&1 || echo "[run.sh] EKIPESY : tsy azo nalaina ny polise"
 fi
 exec python3 "$@"

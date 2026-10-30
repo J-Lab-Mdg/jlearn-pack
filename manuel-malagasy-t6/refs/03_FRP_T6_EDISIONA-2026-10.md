@@ -109,3 +109,20 @@ mampianarina mivantana fa fototra iorenana ny « fihetsika tokony horaisina » s
 pejy nefa azo inoana; mameno ny andiany 15→21.
 - Tsy misy **Baiboly** na tantara ara-pivavahana ao amin'ity PDF ity → ny didy « oui sauf Baiboly » dia
 voaaro amin'ny alalan'ny tononkalo (LFK 2d/tononkalo + santionany Narivony).
+
+## 7. FIOVANA V2 tamin'ny S1 (31/10) — ary ny fandaminana vaovao
+- `data_tsipelina_s1.py` **V2** : `LT` = **lohatenin'ny FRP** : « Teny mitovy fanonona fa samy hafa
+  hevitra sy ny teny roa avahan'ny tendro » (LFK 1a + 1b) ; `Lohahevitra` : « FIASAN'NY TENY -
+  Tsipelina (RAPE T6 herin. 1-7 · FRP LFK 1a-1b) » ; `Daty` : __________ (mangina araka ny RAPE) ;
+  `Isan'ny seho` : 2. **Nalaina** ny bokin'ny LFK 1d (« Tanjony : manalefaka sy manamafy hevitra ») —
+  voatazona ao `refs/_bloc_1d_telo_amin_S1.txt` hampiasaina amin'ny **S2**.
+- **Fandrindrana vaovao** (araka ny lisitry ny FRP, satria « c'est le frp qui est assez complet ») :
+  **S1 = 1a + 1b** (vita, V2) · **S2 = 1d** (Teny verindroa : tanjony + famoronana) · **S3 = 1e**
+  (Fanakambanan-teny) · **S4 = 2a** (Tsirinteny) · **S5 = 2d Fandrasan-teny** (marika `<`,
+  fanatsaram-peo) · **S6 = 2e** (anaran'ny tsirinteny) · **S7 = 2b/2c** (Mpanoritra) · **S8 = 2c**
+  (Mpamari-toetra) · **S9 = 2c** (Mpamaritr'isa — misy fifandranana amin'ny verindroa : « tsi-/ki- ») ·
+  **S10 = 2f** (Famadihana ny RF ho L) · **S11 = 2g** (Filaza mandidy) · **S12 = LII 2d** (Tononkalo :
+  ngadona, ba, rima) · **S13 → S16 = LI** (Lahatsoratra manoritsoritra). Herinandro : 1-7 (S1-S3) ·
+  8-14 (S4, S5, S12) · 15-21 (S6-S11) · 22-27 (S11-S12 + mpanoratra) · 28-33 (S13-S16).
+- Rakitra fanampiny : `/home/user/police` sy `/home/user/pydeps` (fontTools) **tsy ao anaty dépôt** →
+  very isaky ny miverina ny sandbox ; `run.sh` (V2) dia mandraike azy izao (fetch_police + pip fonttools).
