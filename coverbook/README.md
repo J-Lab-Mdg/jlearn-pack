@@ -24,3 +24,4 @@ Les fichiers existants restent à leur emplacement d’origine et ne seront ni d
 | `TANTARA T5 coverbook.png` | TANTARA T5 | Couverture MATH 7e (`bookcovers6.png`), adaptée avec un autre personnage et des accents ocre/doré |
 | `SVT T4 coverbook.png` | SVT T4 (version française) | Même collection, adaptée avec une enseignante et des éléments de sciences de la vie |
 | `FRANCAIS T1 coverbook.png` à `FRANCAIS T12 coverbook.png` | Français T1 à T12 | Série littéraire ; femme d’Anglais T10 sur les tomes impairs et homme de SVT T9 sur les tomes pairs |
+| `GEOGRAPHIE T4 coverbook.png` à `GEOGRAPHIE T12 coverbook.png` | Géographie T4 à T12 | Série cartographique avec carte de Madagascar, globe et atlas ; alternance des deux personnes de référence |
