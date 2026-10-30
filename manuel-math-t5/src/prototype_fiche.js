@@ -59,11 +59,6 @@ const answer = (label, text) => new Paragraph({
 const children = [];
 children.push(new Paragraph({
   alignment: AlignmentType.CENTER,
-  spacing: { before: 100, after: 80 },
-  children: [run('MATHÉMATIQUES — T5', { bold: true, color: C.gray, size: 22 })]
-}));
-children.push(new Paragraph({
-  alignment: AlignmentType.CENTER,
   spacing: { after: 220 },
   children: [run('LIRE ET ÉCRIRE LES NOMBRES JUSQU’À 1 000 000', { bold: true, color: C.red, size: 32 })]
 }));

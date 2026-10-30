@@ -30,7 +30,7 @@ const rich = (text, opt = {}) => {
   return out.length ? out : [tr(text, opt)];
 };
 const p = (text, opt = {}) => new Paragraph({ alignment: opt.align || AlignmentType.JUSTIFIED, spacing: { after: opt.after ?? 110, line: 300 }, indent: opt.indent ? { left: opt.indent } : undefined, shading: opt.fill ? { type: ShadingType.CLEAR, fill: opt.fill } : undefined, children: rich(text, opt) });
-const example = text => new Paragraph({ alignment: AlignmentType.JUSTIFIED, spacing: { before: 100, after: 130, line: 300 }, children: rich(text, { italics: true, underline: true, bold: false }) });
+const example = text => new Paragraph({ alignment: AlignmentType.JUSTIFIED, spacing: { before: 100, after: 130, line: 300 }, children: [tr('Exemple :', { italics: true, underline: true }), ...rich(` ${text}`)] });
 const title = (text, level = 1, bookmark) => {
   const run = tr(text, { bold: true, color: level === 1 ? C.red : C.green, size: level === 1 ? 32 : 28 });
   const children = bookmark ? [new Bookmark({ id: bookmark, children: [run] })] : [run];
@@ -65,23 +65,33 @@ function seance(s, i, uNo, figBufs) {
   const a = [];
   const short = (text, max = 360) => firstSentences(String(text || ''), max);
   a.push(page());
-  a.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 120, after: 80 }, children: [tr('MATHÉMATIQUES — T5', { bold: true, color: C.gray, size: 22 })] }));
   a.push(title(s.t.toUpperCase(), 1, `u${uNo}_l${i}`));
 
-  // Comme dans le prototype : une notion descriptive, sans étiquette pédagogique générique.
-  a.push(title(s.theme || s.t, 2));
-  a.push(p(short(s.def, 360)));
-  if (s.autrement) a.push(p(short(s.autrement, 220), { color: C.blue, italics: true }));
-  if (s.fig && figBufs[s.fig]) a.push(img(figBufs[s.fig]));
+  if (s.layout === 'nombres') {
+    a.push(title('1. Les nombres jusqu’à 1 000 000', 2));
+    a.push(p(short(s.def, 360)));
+    if (s.autrement) a.push(p(short(s.autrement, 220), { color: C.blue, italics: true }));
+    if (s.fig && figBufs[s.fig]) a.push(img(figBufs[s.fig]));
 
-  // L’exemple est une phrase de la fiche, pas un sous-titre.
-  if (s.exemple) a.push(example(short(s.exemple, 420)));
-  // Les étapes restent lisibles mais ne sont pas précédées du mot « Méthode ».
-  if (s.method && s.method.length) {
-    s.method.slice(0, 4).forEach((m, k) => a.push(p(`${k + 1}. ${short(m, 230)}`, { after: 55, indent: 260 })));
+    a.push(title('2. Lecture', 2));
+    a.push(p(short(s.lecture, 320)));
+    a.push(p(short(s.mots, 360), { fill: C.pale }));
+
+    a.push(title('3. Écriture', 2));
+    a.push(p(short(s.ecriture, 360)));
+    if (s.method && s.method.length) s.method.slice(0, 4).forEach((m, k) => a.push(p(`${k + 1}. ${short(m, 230)}`, { after: 55, indent: 260 })));
+    if (s.exemple) a.push(example(short(s.exemple, 420)));
+    a.push(p(short(s.synthese || s.def, 300), { fill: C.paleGreen, bold: true }));
+  } else {
+    // Pour les autres leçons : une notion descriptive, sans titre pédagogique générique.
+    a.push(title(s.theme || s.t, 2));
+    a.push(p(short(s.def, 360)));
+    if (s.autrement) a.push(p(short(s.autrement, 220), { color: C.blue, italics: true }));
+    if (s.fig && figBufs[s.fig]) a.push(img(figBufs[s.fig]));
+    if (s.exemple) a.push(example(short(s.exemple, 420)));
+    if (s.method && s.method.length) s.method.slice(0, 4).forEach((m, k) => a.push(p(`${k + 1}. ${short(m, 230)}`, { after: 55, indent: 260 })));
+    a.push(p(short(s.synthese || s.def, 300), { fill: C.paleGreen, bold: true }));
   }
-  // La règle est mise en évidence sans créer un intertitre obligatoire.
-  a.push(p(short(s.synthese || s.def, 300), { fill: C.paleGreen, bold: true }));
   if (s.saistu) a.push(p(`Le savais-tu ? ${short(s.saistu, 210)}`, { fill: C.paleBlue, color: C.blue }));
   if (s.erreur) a.push(p(`Attention : ${short(s.erreur, 230)}`, { fill: C.yellow }));
 
