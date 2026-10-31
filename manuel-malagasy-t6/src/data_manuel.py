@@ -27,6 +27,8 @@ import data_fitsipika  # noqa: E402
 import data_fitsipika2  # noqa: E402
 import data_literatiora  # noqa: E402
 import data_toro_lalana  # noqa: E402
+import data_zt16  # noqa: E402
+import pe_t6  # noqa: E402
 
 FAR_TSIPELINA = "FARITANA I · TSIPELINA"
 
@@ -50,20 +52,24 @@ LESONS += list(data_fitsipika.FICHES) + list(data_fitsipika2.FICHES) + \
 for f in data_toro_lalana.FICHES:
     f["fields"]["Seho n°"] = "—"
 LESONS += data_toro_lalana.FICHES
+# ny firaketana ilain'ny rafitra ZANA-TARANJA an'ny PE (ZT I, II, V, VI)
+LESONS += list(data_zt16.FICHES)
 
 TONGOLO = {
-    "titre": "MANUELA MALAGASY · T6",
-    "sots": "FIASAN'NY TENY · TSIPELINA · FITSIPIKY NY TENY · LITERATIORA",
-    "lignes": ["15 lesona feno miaraka amin'ny takela-panomanan-desa sy ny sary",
-               "Mifototra amin'ny **FRP Malagasy T6 — ÉDITION OCTOBRE 2026**",
-               "sy ny **RAPE T6 septambra 2026** (4 ora/kerinandro) · ny **PE T6** ho an'ny "
-               "dingana",
-               "Kilasy T6 · Zana-taranja : Malagasy · Taona mpianatra 2026-2027",
-               "J-Lab · Antananarivo"],
-    "farany": ["Ny votoatiny rehetra dia an'ny loharano voalaza ao amin'ny « LOHARANON-KEVITRA » "
+    "titre": "MANUELA MALAGASY \u00b7 T6",
+    "sots": "ZANA-TARANJA I-VI \u00b7 KOLONTSAINA \u00b7 LITERATIORA \u00b7 FIASAN'NY TENY \u00b7 "
+            "ASA AN-TSORATRA",
+    "lignes": ["%d firaketana feno miaraka amin'ny takela-panomanan-desa sy ny sary" % len(LESONS),
+               "Voafaritra araka ny **ZANA-TARANJA 6** an'ny **PE T6** \u2014 ora %d feno"
+               % pe_t6.total(),
+               "Mifototra amin'ny **FRP Malagasy T6 \u2014 \u00c9DITION OCTOBRE 2026**",
+               "sy ny **RAPE T6 septambra 2026** (4 ora isaky ny kerinandro)",
+               "Kilasy T6 \u00b7 Zana-taranja : Malagasy \u00b7 Taona mpianatra 2026-2027",
+               "J-Lab \u00b7 Antananarivo"],
+    "farany": ["Ny votoatiny rehetra dia an'ny loharano voalaza ao amin'ny \u00ab LOHARANON-KEVITRA \u00bb "
                "isaky ny lesona.",
-               "`Daty` : mangina (araka ny RAPE) · `Isan'ny seho` : 2 · `Faharetany` : ora 12 sy "
-               "ora 20"],
+               "`Daty` : mangina (araka ny RAPE) \u00b7 `Isan'ny seho` : 2 \u00b7 `Faharetany` : araka ny "
+               "ora lanin'ny PE isaky ny ZANA-TARANJA"],
 }
 
 SOMMAIRE_NOTES = [

@@ -90,3 +90,37 @@ Ny mpitantana vaovao dia **`src/build_manuel_t6.py`** (tsy `build_fiche.py data_
   rehetra voasokajy **teny-teny** avy amin'ny PE (extrait : `refs/10_PE_T6_ZANATARANJA.txt`).
 - `src/sortsy.py` : marika / rohy / titre / fizarana — rafitra ihany, tsy mikasika ny votoaty.
 - Dernier build : **1 274 058 o · 1 340 par. · 71 tabilao · 134 190 car. · 48 sary · TUATUA**.
+
+## V.2 — Ny firaketana vaovao ilain'ny rafitra ZANA-TARANJA (01/11/2026)
+
+Nianarak-dalana ny « V.1 » : nitaky **6 firaketana** fanampiny ny fizarana ara-PE — natao daholo
+ireo, ka **24 firaketana** no anisan'ny laharisa (18 + 6).
+
+| Firaketana | ZANA-TARANJA | Faharetany ara-PE | Loharano |
+|---|---|---|---|
+| Ny tanindrazana sy ny firenena | I · 1 | ora 20 | PE ZT I + FRP LFK 6i sy tak. 33 |
+| Ny olombelona sy ny tontolo iainana | I · 2 | ora 18 | PE ZT I + FRP LOHAHEVITRA IX (LFK 9, tak. 50) sy LFK 3b (tak. 23) |
+| Sarin-teny tamberim-peo | II | ora 12 | PE ZT II + FRP tak. 63 · Programme 4e · Pôetawebs · ENS-CPN |
+| Ny mpanoratra : RAKOTOMALALA Eric Fredy Jaofera | II | ora 14 | PE ZT II + Wikipedia/Pôetawebs/HAVATSA-UPEM (dinika 01/11/2026) |
+| Ny matoanteny : fototeny sy sampan-teny | V | ampahany amin'ny ora 20 | PE ZT V + FRP LFK 2a-2d |
+| Famoronana lahatsoratra manoritsoritra | VI | ora 20 | PE ZT VI + FRP tak. 63 |
+
+Fitsipika notandrevina : **tsy misy dikany voforina** — ny « Vontoatiny/Sahanasa/Tetika/Fitaovana/
+Tombana » rehetra dia **teny-teny** avy amin'ny PE ; ny fanononana ivelany dia voasoratra ao anaty
+« » ary ny loharano misy ny **roa ambin'ny folo Novambra 2026**. Noho izany :
+
+- **RAKOTOMALALA** : tsy misy ny tantarany ao amin'ny FRP T6 (LFK LII 2a = Jean NARIVONY ihany),
+  ka ny Wikipedia malagasy sy ny tranonkala HAVATSA-UPEM Frantsa no natao loharano. Nohamarinina
+  fa **mifangaro** ny lahatsoratra Wikipedia : ny taona 1938/1940/1943 sy ny mari-boninahitra dia
+  an'i **Fredy Rajaofera (1902-1968)**, raibeny — voasoratra ao amin'ny « note » mba tsy
+  ho diso fianarana. Tsy nisy fanamafisana ny **fahaterahana** (30 Avrily 1962 araka ny bilaogy
+  *skyrock* an'ilay mpanoratra, fa tsy azo vakina intsony ilay pejy) — ka tsy nampidirina.
+- **tamberin-drenifeo / tamberim-janapeo** : ny PE dia mamela ny anarany ihany ; ny
+  fanazavana dia nalaina amin'ny **Programme 4e** sy amin'ny **Akademiam-Pirenena**
+  (poetawebs), ary ny ôhatra dia tononkalo FRP tak. 33, ka **ny fiverenan'ny feo sy ny fototeny**
+  ihany no namaritan-teny (tsy nisy fanapahan-kevitry ny siantsifika).
+- `Faharetany` : **ora** an'ny PE (tsy intsony ny 7-7-7-6-6 natao teo) ; voafaritra indray ny
+  takelaky ny lesona **A0** (tabilao ZANA-TARANJA, 144 ora = 36 kerinandro).
+
+Voka : **24 signet · 58 rohy anatiny · 7 fizarana · 1 658 par. · 98 tabilao · 170 598 car. · 142
+media (71 sary SVG) · TUATUA** — `output/Malagasy_T6_J-Learn.docx` (1 319 101 o).

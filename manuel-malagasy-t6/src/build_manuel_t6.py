@@ -38,7 +38,12 @@ COULEUR_LIEN = "1F4E79"
 
 # ----------------------------------------------------------------- ny firaketana
 # (n° an'ny ZANA-TARANJA, index ao amin'ny LESONS taloha) — ny votoaty dia tsy mikasika akory
-GROUPE = {2: [11, 12, 13, 14], 3: [15, 16, 17], 4: [0, 1, 2], 5: [3, 4, 5, 6, 7, 8, 9, 10]}
+GROUPE = {1: [18, 19],                 # ZT I : firaketana vaovao 2
+          2: [11, 12, 13, 14, 20, 21],  # ZT II : literatiora + Sarin-teny + Mpanoratra
+          3: [15, 16, 17],              # ZT III : fepetra sy tekinika (toro-lalana)
+          4: [0, 1, 2],                 # ZT IV : tsipelina
+          5: [3, 4, 5, 6, 7, 8, 9, 10, 22],   # ZT V : fitsipiky ny teny + Ny matoanteny
+          6: [23]}
 
 
 def num_roma(n):
@@ -78,7 +83,8 @@ def laharisa(doc, mapy, par_zt, n_fiche):
                            "PE T6", "", "bm_zt%d" % n))
         for idx, numero in par_zt.get(n, []):
             f = mapy[(n, idx)][0]
-            lignes.append((str(numero), f["lt"], f.get("lfk", ""), f.get("heri", ""),
+            lignes.append((str(numero), " ".join(f["lt"].split()), f.get("lfk", ""),
+                           f.get("heri", ""),
                            "bm_fiche%d" % numero))
     SO.table_sommaire(doc, lignes)
     for ln in ("Laharisa : ny firaketana %d rehetra ; « PE T6 » = ny ZANA-TARANJA sy ny ora "
@@ -155,12 +161,14 @@ def fiche(doc, f, numero, total, listes, notes):
     par = BF.p(doc, "", centre=True, space_after=0)
     SO.marika(par, "bm_fiche%d" % numero)
     f["fields"]["Seho n°"] = "%d / %d" % (numero, total)
-    BF.p(doc, f["faritana"], color=BF.C_TITRE_ZT.get(f["zt"], "E36C0A"), size=30, bold=True,
+    BF.p(doc, f["faritana"], color=(f.get("zt_color") or BF.C_TITRE_ZT.get(f["zt"], "E36C0A")),
+         size=30, bold=True,
          centre=True, space_after=3)
     if f.get("faritana_sous"):
         BF.p(doc, f["faritana_sous"], size=11, centre=True, italic=True, color="595959",
              space_after=8)
-    tonon_titre(doc, "LESONA %d — %s" % (numero, f["lt"]), 2, taille=15, loko=BF.C_LECON,
+    tonon_titre(doc, "LESONA %d — %s" % (numero, " ".join(f["lt"].split())), 2, taille=15,
+                loko=BF.C_LECON,
                 centre=True, space_after=10)
     BF.takela(doc, f, notes)
     BF.lesona(doc, f, listes, notes)

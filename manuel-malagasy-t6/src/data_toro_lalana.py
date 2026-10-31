@@ -15,7 +15,7 @@ from fiche_t6 import fiche_t6  # noqa: E402
 ZT = "Toro-lalana"
 FAR = "FARITANA IV · TORO-LALANA"
 ETAPE = [("Lazao ny antony anaovana ity boky ity.", "Mihaino.", "Asa iombonana", "—", ""),
-         ("Vakio ny lisitry ny lesona 15 sy ny toro-lalana 3.", "Mamaky.", "Asa samirery", "Boky", ""),
+         ("Vakio ny laharisa sy ny tabilao momba ny ZANA-TARANJA.", "Mamaky.", "Asa samirery", "Boky", ""),
          ("Inona no fanovozan-kevitra ilaina ?", "Mamaly.", "Asan-tarika", "—", ""),
          ("Zarao : votoatin'ny mpianatra / an'ny mpampianatra.", "Mamarina.", "Asa mifampiha",
           "Tabilao", ""),
@@ -33,19 +33,20 @@ LESONA_A0 = [
           "(4 ora/kerinandro). Ny **PE T6** (p.21-26) kosa dia ny momba ny **dingana**, ny "
           "**Fitaovana** ary ny **Tombana**."),
     ("sary", "planning"),
-    ("h2", "Lisitry ny lesona"),
-    ("tabl", (["Laharana", "Faritana · Lohateny", "LFK", "Herinandro"],
-              [["L1-L3", "TSIPELINA : teny mitovy fanonona · avahan'ny tendro · verindroa · "
-                "fanakambanan-teny", "1a · 1b · 1d · 1e", "1→7"],
-               ["L4", "FITSIPIKY NY TENY : Tsirinteny", "2a", "8→14"],
-               ["L5-L7", "FITSIPIKY NY TENY : mpanoritra · mpamari-toetra · mpamaritr'isa",
-                "2b · 2c", "15→21"],
-               ["L8-L11", "FITSIPIKY NY TENY : fandrasan-teny · anaran'ny tsirinteny · RF→L · "
-                "filaza mandidy", "2d · 2e · 2f · 2g", "22→27"],
-               ["L12", "LITERATIORA : ny literatiora manoritsoritra", "LI 1a", "1→7 · 28→33"],
-               ["L13-L14", "MPANORATRA : Jean Narivony · santionany", "LII 2a · 2b", "22→27"],
-               ["L15", "TONONKALO : andininy · ngadona · rima", "LII 2d", "8→14"],
-               ["A0-A2", "TORO-LALANA ho an'ny mpampianatra", "—", "—"]],
+    ("h2", "Lisitry ny firaketana araka ny ZANA-TARANJA"),
+    ("tabl", (["Zana-taranja", "Votoatiny an'ny manuela", "LFK", "Faharetany ara-PE"],
+              [["**I**", "MALAGASY, KOLONTSAINA ARY FIARAHAMONINA : *ny tanindrazana sy ny firenena* "
+                "· *ny olombelona sy ny tontolo iainana*", "—", "ora 38 (20 + 18)"],
+               ["**II**", "TONTOLON'NY LITERATIORA : literatiora amin'ny ankapobeny · tononkalo · "
+                "sarin-teny · mpanoratra", "LI 1a · LII 2a-2d", "ora 54 (14 + 14 + 12 + 14)"],
+               ["**III**", "*Fepetra sy tekinika fitrandrahana ireo lohahevitra* — ny toro-lalana "
+                "ho an'ny mpampianatra (A0-A2)", "—", "—"],
+               ["**IV**", "FIASAN'NY TENY - TSIPELINA : teny mitovy fanonona · avahan'ny tendro · "
+                "verindroa · fanakambanan-teny", "1a · 1b · 1d · 1e", "ora 12"],
+               ["**V**", "FIASAN'NY TENY - FITSIPIKY NY TENY : tsirinteny · sokajin-teny · "
+                "matoanteny · fandrasan-teny · filaza mandidy", "2a-2g", "ora 20"],
+               ["**VI**", "ASA AN-TSORATRA - LAHATSORATRA MANORITSORITRA : famakafakana sy "
+                "famorona", "—", "ora 20"]],
               [900, 5100, 1900, 1967])),
     ("h2", "Ny fepetra ara-piteny natao"),
     ("bul", ["**Lesaona** : amin'ny teny malagasy daholo, tsy misy dikany amin'ny teny hafa.",
@@ -54,14 +55,15 @@ LESONA_A0 = [
              "*note* ho an'ny mpampianatra).",
              "**Tsy misy teny na hevitra voforina** : ny ôhatra rehetra dia an'ny FRP, na "
              "voamarina amin'ny loharano lazaina, na ilazana fa *tsy voamarina*.",
-             "`Daty` : **mangina** (araka ny RAPE) ; `Faharetany` : ora 12 (Tsipelina) sy ora 20 "
-             "(Fitsipiky ny teny sy literatiora) — araka ny PE T6 p.15-25.",
+             "`Daty` : **mangina** (araka ny RAPE) ; `Faharetany` : ora 38 (ZT I) · ora 54 "
+             "(ZT II) · ora 12 (ZT IV) · ora 20 (ZT V sy ZT VI) — araka ny PE T6 ; 144 ora feno "
+             "= 36 kerinandro.",
              "Ny **sary** sy ny **grafique** (tsilo, hazatrafi ka, timeline, gant) dia voalamina "
              "amin'ny **SVG** mba tsy ho levona amin'ny Word ; ny soratra ao anatiny dia "
              "**contour**, ka tsy mila polise."]),
     ("note", "Ireo lesona 3 voalohany (Tsipelina) dia ny efa nampiharina tamin'ny seho : ny L2 (teny "
              "verindroa) dia mifototra amin'ny **tanoran'ny mpampianatra** (01/11/2026) — voasoro "
-             "teny-teny ao amin'ny boky. Koa ny fomba fanaovana azy (rafitra I→IV, ôhatra, tabilao "
+             "teny-teny ao amin'ny boky. Koa ny fomba fanaovana azy (rafitra ZANA-TARANJA I→VI, ôhatra, tabilao "
              "isaky ny abidy) no modely, fa tsy ny lesona hafa."),
 ]
 
@@ -169,7 +171,7 @@ LESONA_A2 = [
 ]
 
 FICHES = [
-    fiche_t6(ZT, "Fampidirana : ny boky, ny lesona 15, ny fepetra", "—", "—", 0, ETAPE,
+    fiche_t6(ZT, "Fampidirana : ny boky, ny firaketana 24, ny fepetra", "—", "—", 0, ETAPE,
              LESONA_A0,
              [{"consigne": "Inona no fotodrafitrasa ampiasaina amin'ny lesona tsirairay ?"},
               {"consigne": "Inona no tokony hatao raha tsy hita ao amin'ny boky ny votoatiny "
@@ -184,14 +186,14 @@ FICHES = [
               "plateforme.education.mg → /bibliotheque-numerique/theme/biblio/pix/frp/college/"
               "FRP_T6/FRP_MLG_T6.pdf.",
               "RAPE T6 septambra 2026 : plateforme.education.mg → /theme/biblio/pix/pdf/RAPE_T6.pdf "
-              "(4 ora/kerinandro ; 5 andiany 7-7-7-6-6).",
+              "(4 ora/kerinandro).",
               "PE T6 (Programme d'Études), p.13 (LANJAN'ORA), p.15-25 (Faharetany, Takela), "
               "p.21-26 (Sahanasa, Fitaovana, Tombana).",
               "Rakibolana : *Malagasy Dictionary and Encyclopedia* (malagasyword.org/bins/teny2) "
               "sy rakibolana.org — nampiasaina hamerina teny ihany, tsy ho loharano fitsipika.",
               "Ny sary rehetra : voalamina amin'ny `src/sary_fano.py` (SVG + PNG, soratra = "
               "contour) — azo ovaina sy avoaka indray."],
-             faritana=FAR, faritana_sous="ny boky manontolo · 15 lesona + 3 toro-lalana · 33 herinandro",
+             faritana_sous="ny boky manontolo · 24 firaketana · ZANA-TARANJA 6",
              faharetany="—", fitaovana="Boky + takela"),
     fiche_t6(ZT, "Ireo lohahevitra an'ny taona sy ny FFLJ", "—", "—", 0,
              [("Mamerina ny lohahevitra efa voaseho (III-VIII).", "Mamaly.", "Asan-tarika", "—",
