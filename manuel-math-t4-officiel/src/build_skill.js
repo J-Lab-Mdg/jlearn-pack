@@ -150,7 +150,8 @@ function fiche(lesson, data, unit, globalNo, total) {
 }
 function figureFor(lesson) {
   const id = lesson.id;
-  if (id.startsWith('U1-L01') || id.startsWith('U1-L02') || id.startsWith('U1-L03')) return 'nombre_places';
+  if (id.startsWith('U1-L01')) return 'graphic_numération_t4';
+  if (id.startsWith('U1-L02') || id.startsWith('U1-L03')) return 'nombre_places';
   if (id.startsWith('U1-L04') || id.startsWith('U1-L05') || id.startsWith('U1-L06') || id.startsWith('U2-L06')) return 'fraction_parts';
   if (id.startsWith('U1-L07') || id.startsWith('U1-L08') || id.startsWith('U2-L07')) return 'decimal_table';
   if (id.startsWith('U2-L01') || id.startsWith('U2-L02')) return 'multiplication';
@@ -171,12 +172,23 @@ function figureFor(lesson) {
   if (id.startsWith('U6-L06') || id.startsWith('U6-L07') || id.startsWith('U6-L08')) return 'probability';
   return null;
 }
-function figureParagraph(name) {
-  const file = path.join(FIG_DIR, `${name}.png`);
-  if (!fs.existsSync(file)) return p('Support visuel à produire.', { italics: true, color: '666666' });
+function imageParagraph(file, type, width) {
+  if (!fs.existsSync(file)) return null;
   const buf = fs.readFileSync(file);
-  const w = buf.readUInt32BE(16), h = buf.readUInt32BE(20), width = 620, height = Math.max(120, Math.round(width * h / w));
-  return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 100, after: 120 }, children: [new ImageRun({ type: 'png', data: buf, transformation: { width, height } })] });
+  let w, h;
+  if (type === 'png') { w = buf.readUInt32BE(16); h = buf.readUInt32BE(20); }
+  else { w = 1365; h = 768; }
+  const height = Math.max(120, Math.round(width * h / w));
+  return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 100, after: 120 }, children: [new ImageRun({ type, data: buf, transformation: { width, height } })] });
+}
+function figureParagraph(name) {
+  return imageParagraph(path.join(FIG_DIR, `${name}.png`), 'png', 620) || p('Support visuel à produire.', { italics: true, color: '666666' });
+}
+function coverParagraph() {
+  return imageParagraph(path.join(ROOT, 'assets', 'cover_math_t4_scene.png'), 'png', 520) || p('Illustration de couverture à produire.', { italics: true, color: '666666' });
+}
+function sceneParagraph() {
+  return imageParagraph(path.join(ROOT, 'assets', 'scenes', 'scene_numeration_classe.jpg'), 'jpg', 620) || p('Scène pédagogique à produire.', { italics: true, color: '666666' });
 }
 function learnerLesson(lesson, data) {
   const aItems = exerciseBlock(data, 0); const eItems = exerciseBlock(data, 2);
@@ -186,6 +198,7 @@ function learnerLesson(lesson, data) {
   const keywords = data.retain.join(' ');
   return [
     page(), heading(`LEÇON — ${lesson.titre}`, 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`),
+    ...(lesson.id === 'U1-L01' ? [sceneParagraph()] : []),
     heading('1. À retenir', 2), p([tr('Mots-clés : ', { bold: true, color: C.blue }), ...rich(keywords, { color: C.blue, bold: true })]),
     ...data.retain.map(x => bullet(x)),
     heading('2. Exemple guidé', 2), p(data.example, { fill: C.paleGreen }),
@@ -222,6 +235,7 @@ function frontMatter(units, total) {
     return arr;
   })];
   return [
+    coverParagraph(),
     new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 1600, after: 200 }, children: [tr('MATHÉMATIQUES', { bold: true, color: C.blue, size: 54 })] }),
     new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 250 }, children: [tr('T4', { bold: true, color: C.red, size: 84 })] }),
     p('Manuel de l’apprenant et fiches de préparation enseignant', { align: AlignmentType.CENTER, size: 28, color: C.blue }),

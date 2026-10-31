@@ -6,7 +6,7 @@
 - Signets totaux : 123
 - Liens internes totaux : 120
 - Liens attendus dans le sommaire : 120
-- Images intégrées : 18
+- Images intégrées : 21
 
 ## Contrôles
 
@@ -26,7 +26,7 @@
 
 ## État des illustrations
 
-✅ 18 images PNG sont intégrées dans le DOCX, à partir des figures mathématiques générées en SVG/PNG.
+✅ 21 images PNG sont intégrées dans le DOCX, à partir des figures mathématiques générées en SVG/PNG.
 
 ## Conclusion
 
