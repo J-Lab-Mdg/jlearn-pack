@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pass-Éducation Offline — Cours & Bibliothèque PDF (PS → Terminale)</title>
+  <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icon.svg" alt="Icône" class="brand-icon" />
+      <div>
+        <h1>Pass-Éducation Offline</h1>
+        <p class="subtitle">Bibliothèque personnelle de Cours &amp; PDF hors-ligne (Maternelle → Lycée)</p>
+      </div>
+    </div>
+
+    <div class="topbar-actions">
+      <div class="stats-pills">
+        <span class="stat-pill" id="statResources" title="Nombre total de fiches indexées">0 fiches</span>
+        <span class="stat-pill stat-pdf" id="statPdfs" title="Fichiers PDF enregistrés sur votre disque">0 PDF sur PC</span>
+        <span class="stat-pill" id="statDisk" title="Espace disque total occupé (base + PDF)">0 Mo</span>
+      </div>
+      <button class="btn btn-ghost" id="btnOpenFolder" title="Ouvrir le dossier local contenant vos PDF">📂 Dossier PDF</button>
+      <button class="btn btn-ghost" id="btnScanPersonal" title="Indexer les fichiers .pdf déposés dans pdfs/99_Import_Personnel/">📥 Indexer mes PDF</button>
+      <button class="btn btn-primary" id="btnOpenSync">⚡ Choisir Classes &amp; Télécharger</button>
+    </div>
+  </header>
+
+  <!-- Bandeau de progression en direct quand une synchronisation tourne -->
+  <div class="live-sync-banner hidden" id="liveSyncBanner">
+    <div class="live-sync-info">
+      <span class="pulse-dot"></span>
+      <strong id="liveStageLabel">Synchronisation en cours…</strong>
+      <span id="liveCurrentItem" class="muted"></span>
+    </div>
+    <div class="live-sync-right">
+      <span id="liveSessionCount" class="badge">0 PDF</span>
+      <button class="btn btn-sm btn-danger" id="btnBannerPause">⏸ Pause</button>
+      <button class="btn btn-sm btn-ghost" id="btnBannerDetails">Détails</button>
+    </div>
+  </div>
+
+  <!-- Barre de recherche plein-texte + filtres rapides -->
+  <section class="filter-panel">
+    <div class="search-row">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Rechercher un cours, un thème ou un mot à l'intérieur des PDF (ex : soustraction retenue, fractions, verbe infinitif, atome…)"
+          autocomplete="off"
+        />
+        <button class="clear-btn hidden" id="btnClearSearch" title="Effacer">✕</button>
+      </div>
+
+      <select id="subjectSelect" class="filter-select" aria-label="Filtrer par matière">
+        <option value="">📚 Toutes les matières</option>
+      </select>
+
+      <select id="typeSelect" class="filter-select" aria-label="Filtrer par type">
+        <option value="">🗂️ Tous les types</option>
+      </select>
+
+      <select id="pdfFilterSelect" class="filter-select" aria-label="Filtrer par disponibilité PDF">
+        <option value="">📄 Tous (PDF + Texte)</option>
+        <option value="downloaded">✅ PDF téléchargés sur PC</option>
+        <option value="has_pdf">☁️ Avec PDF gratuit disponible</option>
+      </select>
+    </div>
+
+    <div class="class-chips" id="classChips" role="tablist" aria-label="Filtrer par niveau scolaire">
+      <button class="chip active" data-class="">Toutes classes</button>
+    </div>
+  </section>
+
+  <!-- Espace principal à 2 colonnes : Liste des fiches + Lecteur PDF/HTML intégré -->
+  <main class="workspace">
+    <section class="results-pane">
+      <div class="results-header">
+        <span id="resultsCountLabel">Chargement…</span>
+        <span id="demoNotice" class="demo-badge hidden">Mode démo initial — cliquez sur « Choisir Classes &amp; Télécharger »</span>
+      </div>
+      <div class="results-list" id="resultsList"></div>
+      <div class="load-more-wrap hidden" id="loadMoreWrap">
+        <button class="btn btn-ghost" id="btnLoadMore">Afficher plus de résultats</button>
+      </div>
+    </section>
+
+    <section class="viewer-pane" id="viewerPane">
+      <div class="empty-viewer" id="emptyViewer">
+        <div class="empty-card">
+          <h2>📚 Sélectionnez une fiche à gauche</h2>
+          <p>
+            Consultez et imprimez vos <strong>vrais fichiers PDF hors-ligne</strong> directement dans cette fenêtre,
+            ou lisez la version texte complète du cours.
+          </p>
+          <ul class="tips-list">
+            <li><strong>100 % gratuit &amp; sans compte :</strong> des milliers de PDF de <em>Cours / Leçons / Traces écrites</em> sont téléchargeables librement de la PS à la Terminale.</li>
+            <li><strong>Recherche dans les PDF :</strong> chaque fichier PDF téléchargé a son texte indexé pour une recherche instantanée sans connexion.</li>
+            <li><strong>Vos propres PDF :</strong> glissez n'importe quel PDF personnel dans <code>pdfs/99_Import_Personnel/</code> puis cliquez sur <em>« Indexer mes PDF »</em>.</li>
+          </ul>
+          <button class="btn btn-primary" id="btnEmptyOpenSync">⚡ Choisir mes Classes &amp; Matières à télécharger</button>
+        </div>
+      </div>
+
+      <div class="detail-viewer hidden" id="detailViewer">
+        <div class="detail-header">
+          <div class="detail-meta-row">
+            <span class="badge badge-class" id="detClass"></span>
+            <span class="badge badge-subject" id="detSubject"></span>
+            <span class="badge badge-type" id="detType"></span>
+            <span class="badge" id="detPdfStatus"></span>
+          </div>
+          <h2 id="detTitle">Titre</h2>
+          <div class="detail-toolbar">
+            <div class="tab-group">
+              <button class="tab-btn active" id="tabBtnPdf" data-tab="pdf">📄 Lecteur PDF</button>
+              <button class="tab-btn" id="tabBtnHtml" data-tab="html">📖 Texte du cours</button>
+              <button class="tab-btn" id="tabBtnPdfText" data-tab="pdftext">🔎 Texte indexé du PDF</button>
+            </div>
+            <div class="detail-actions">
+              <button class="btn btn-sm btn-primary hidden" id="btnDownloadSinglePdf">⬇️ Télécharger ce PDF</button>
+              <a class="btn btn-sm btn-ghost hidden" id="btnSavePdf" target="_blank" rel="noopener">💾 Ouvrir / Enregistrer PDF</a>
+              <button class="btn btn-sm btn-ghost hidden" id="btnPrintPdf">🖨️ Imprimer</button>
+              <button class="btn btn-sm btn-ghost hidden" id="btnShowInFolder">📂 Voir le fichier</button>
+            </div>
+          </div>
+          <div class="local-path-bar hidden" id="detPathBar"></div>
+        </div>
+
+        <div class="detail-body">
+          <div class="tab-panel" id="panelPdf">
+            <iframe id="pdfFrame" class="pdf-frame" title="Lecteur PDF hors-ligne"></iframe>
+            <div class="no-pdf-box hidden" id="noPdfBox">
+              <h3>📄 Fichier PDF non encore présent sur le disque</h3>
+              <p id="noPdfMessage">
+                Le texte complet de cette fiche est consultable hors-ligne dans l'onglet <strong>« Texte du cours »</strong>.
+              </p>
+              <div class="no-pdf-actions">
+                <button class="btn btn-primary hidden" id="btnTryFetchPdfNow">⬇️ Télécharger le PDF gratuit maintenant</button>
+                <button class="btn btn-ghost" id="btnSwitchToHtml">📖 Lire le texte hors-ligne</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel hidden" id="panelHtml">
+            <article class="lesson-article" id="detHtmlContent"></article>
+          </div>
+
+          <div class="tab-panel hidden" id="panelPdfText">
+            <pre class="pdf-extracted-pre" id="detPdfText"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Fenêtre modale : Sélection à la carte des Classes, Matières et Lancement Téléchargement -->
+  <div class="modal-backdrop hidden" id="syncModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h2>⚡ Synchronisation Hors-Ligne Pass-Éducation</h2>
+          <p class="muted">Cochez les classes et matières souhaitées. Pause et reprise automatiques à tout moment.</p>
+        </div>
+        <button class="close-btn" id="btnCloseModal" aria-label="Fermer">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="info-callout">
+          <strong>ℹ️ À propos des comptes sur Pass-Éducation :</strong> l'inscription sur <em>pass-education.fr</em> est payante (il n'existe pas de compte gratuit).
+          <strong>Sans aucun compte</strong>, cet outil télécharge automatiquement <strong>tous les vrais PDF gratuits publics</strong> (plus de 6 300 cours, leçons, traces écrites, coloriages &amp; fiches gratuites dans <code>/free-pdf/</code>) + le texte intégral des fiches !
+        </div>
+
+        <!-- 1. Choix des classes -->
+        <div class="form-section">
+          <div class="section-title-row">
+            <h3>1. Niveaux scolaires à télécharger</h3>
+            <div class="preset-btns">
+              <button type="button" class="btn btn-xs btn-ghost" data-preset-class="all">Tout cocher</button>
+              <button type="button" class="btn btn-xs btn-ghost" data-preset-class="maternelle">Maternelle</button>
+              <button type="button" class="btn btn-xs btn-ghost" data-preset-class="primaire">Primaire (CP–CM2)</button>
+              <button type="button" class="btn btn-xs btn-ghost" data-preset-class="college">Collège (6e–3e)</button>
+              <button type="button" class="btn btn-xs btn-ghost" data-preset-class="lycee">Lycée</button>
+              <button type="button" class="btn btn-xs btn-ghost" data-preset-class="none">Aucun</button>
+            </div>
+          </div>
+          <div class="checkbox-grid-classes" id="syncClassGrid"></div>
+        </div>
+
+        <!-- 2. Choix des matières -->
+        <div class="form-section">
+          <div class="section-title-row">
+            <h3>2. Matières à inclure</h3>
+            <div class="preset-btns">
+              <button type="button" class="btn btn-xs btn-ghost" data-preset-subj="all">Toutes matières</button>
+              <button type="button" class="btn btn-xs btn-ghost" data-preset-subj="fr_math">Français + Maths</button>
+              <button type="button" class="btn btn-xs btn-ghost" data-preset-subj="none">Aucune</button>
+            </div>
+          </div>
+          <div class="checkbox-grid-subjects" id="syncSubjectGrid"></div>
+        </div>
+
+        <!-- 3. Options PDF -->
+        <div class="form-section">
+          <h3>3. Options de stockage sur votre PC</h3>
+          <label class="check-row">
+            <input type="checkbox" id="chkDownloadPdfs" checked />
+            <span><strong>Télécharger les vrais fichiers <code>.pdf</code> sur mon disque</strong> (classés dans <code>pdfs/&lt;Classe&gt;/&lt;Matière&gt;/</code> + indexés pour la recherche plein-texte)</span>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" id="chkOnlyWithPdf" />
+            <span><strong>Uniquement les ressources avec PDF gratuit</strong> (plus rapide — ignore les fiches d'exercices qui n'ont que du texte HTML)</span>
+          </label>
+
+          <details class="advanced-box">
+            <summary>🔑 Optionnel : J'ai déjà un abonnement payant Pass-Éducation (Cookie adhérent)</summary>
+            <p class="muted small-note">
+              Laissez vide pour télécharger gratuitement tous les cours et PDF publics. Si vous êtes abonné payant Pass-Éducation, vous pouvez coller ici l'en-tête <code>Cookie</code> de votre navigateur pour récupérer aussi vos PDF d'exercices/évaluations.
+            </p>
+            <input type="text" id="inputMemberCookie" class="text-input" placeholder="Optionnel : wordpress_logged_in_...=..." />
+          </details>
+        </div>
+
+        <!-- État détaillé -->
+        <div class="sync-status-box" id="modalSyncStatusBox">
+          <div class="sync-status-line">
+            <strong id="modalStageText">Prêt à démarrer</strong>
+            <span id="modalSessionMb" class="badge">0 Mo téléchargés</span>
+          </div>
+          <div class="muted small-note" id="modalCurrentItemText"></div>
+          <div class="error-text hidden" id="modalErrorText"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="/download-pack" class="btn btn-ghost">📦 Exporter le pack (.zip)</a>
+        <div class="modal-footer-right">
+          <button class="btn btn-danger hidden" id="btnModalStop">⏸ Mettre en pause</button>
+          <button class="btn btn-primary" id="btnModalStart">🚀 Démarrer / Reprendre le téléchargement</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
