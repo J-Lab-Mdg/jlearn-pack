@@ -7,7 +7,7 @@ const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   WidthType, AlignmentType, BorderStyle, ShadingType, PageBreak,
-  Footer, PageNumber, Bookmark, InternalHyperlink, TableLayoutType,
+  Footer, PageNumber, Bookmark, InternalHyperlink, TableLayoutType, ImageRun,
   Math: DocxMath, MathFraction, MathRun
 } = require('docx');
 
@@ -15,6 +15,8 @@ const ROOT = path.join(__dirname, '..');
 const inventory = JSON.parse(fs.readFileSync(path.join(ROOT, 'inventaire_lecons.json'), 'utf8'));
 const bank = JSON.parse(fs.readFileSync(path.join(__dirname, 'content_bank.json'), 'utf8'));
 const OUT = path.join(ROOT, 'livrables', 'Manuel_Mathematiques_T4_JLearn_SkillV1.docx');
+const FIG_DIR = path.join(ROOT, 'assets', 'figures');
+const { generate: generateFigures } = require('./figures_t4');
 
 const C = {
   red: 'C00000', green: '2E7D32', blue: '1F4E79', wine: 'C2185B', ocre: 'B25000',
@@ -146,8 +148,39 @@ function fiche(lesson, data, unit, globalNo, total) {
     p('Les étapes de la fiche sont rédigées pour être utilisées directement en classe. Les exercices de cette table ne portent pas de barème ; le barème apparaît uniquement dans la section EXERCICES.', { size: 16, italics: true, color: '666666' })
   ];
 }
+function figureFor(lesson) {
+  const id = lesson.id;
+  if (id.startsWith('U1-L01') || id.startsWith('U1-L02') || id.startsWith('U1-L03')) return 'nombre_places';
+  if (id.startsWith('U1-L04') || id.startsWith('U1-L05') || id.startsWith('U1-L06') || id.startsWith('U2-L06')) return 'fraction_parts';
+  if (id.startsWith('U1-L07') || id.startsWith('U1-L08') || id.startsWith('U2-L07')) return 'decimal_table';
+  if (id.startsWith('U2-L01') || id.startsWith('U2-L02')) return 'multiplication';
+  if (id.startsWith('U2-L03') || id.startsWith('U2-L04') || id.startsWith('U2-L05')) return 'division';
+  if (id.startsWith('U2-L08') || id.startsWith('U2-L09')) return 'conversions';
+  if (id.startsWith('U3-L01') || id.startsWith('U3-L02') || id.startsWith('U3-L03') || id.startsWith('U3-L04') || id.startsWith('U3-L05')) return 'sequence';
+  if (id.startsWith('U3-L06') || id.startsWith('U3-L07') || id.startsWith('U3-L08') || id.startsWith('U3-L09')) return 'equality';
+  if (id.startsWith('U4-L01') || id.startsWith('U4-L02')) return 'angles';
+  if (id.startsWith('U4-L03') || id.startsWith('U4-L04')) return 'triangles';
+  if (id.startsWith('U4-L05') || id.startsWith('U4-L06')) return 'quadrilaterals';
+  if (id.startsWith('U4-L07')) return 'circle';
+  if (id.startsWith('U4-L08') || id.startsWith('U4-L09')) return 'solids';
+  if (id.startsWith('U4-L10') || id.startsWith('U4-L11')) return 'transformations';
+  if (id.startsWith('U4-L12')) return 'triangles';
+  if (id.startsWith('U5-L01') || id.startsWith('U5-L02') || id.startsWith('U5-L03') || id.startsWith('U5-L04') || id.startsWith('U5-L05') || id.startsWith('U5-L08')) return 'area';
+  if (id.startsWith('U5-L06') || id.startsWith('U5-L07')) return 'conversions';
+  if (id.startsWith('U6-L01') || id.startsWith('U6-L02') || id.startsWith('U6-L03') || id.startsWith('U6-L04') || id.startsWith('U6-L05')) return 'data';
+  if (id.startsWith('U6-L06') || id.startsWith('U6-L07') || id.startsWith('U6-L08')) return 'probability';
+  return null;
+}
+function figureParagraph(name) {
+  const file = path.join(FIG_DIR, `${name}.png`);
+  if (!fs.existsSync(file)) return p('Support visuel à produire.', { italics: true, color: '666666' });
+  const buf = fs.readFileSync(file);
+  const w = buf.readUInt32BE(16), h = buf.readUInt32BE(20), width = 620, height = Math.max(120, Math.round(width * h / w));
+  return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 100, after: 120 }, children: [new ImageRun({ type: 'png', data: buf, transformation: { width, height } })] });
+}
 function learnerLesson(lesson, data) {
   const aItems = exerciseBlock(data, 0); const eItems = exerciseBlock(data, 2);
+  const figure = figureFor(lesson);
   const aAnswers = answersBlock(data, 0); const eAnswers = answersBlock(data, 2);
   const visualRows = [data.visual[0], ...data.visual.slice(1)];
   const keywords = data.retain.join(' ');
@@ -156,7 +189,7 @@ function learnerLesson(lesson, data) {
     heading('1. À retenir', 2), p([tr('Mots-clés : ', { bold: true, color: C.blue }), ...rich(keywords, { color: C.blue, bold: true })]),
     ...data.retain.map(x => bullet(x)),
     heading('2. Exemple guidé', 2), p(data.example, { fill: C.paleGreen }),
-    heading('3. Support visuel', 2), table([new TableRow({ children: data.visual[0].map(x => cell(x, { bold: true, fill: C.green, color: C.white, size: 17 })) }), ...data.visual.slice(1).map(r => new TableRow({ children: r.map(x => cell(x, { size: 17 })) }))], data.visual[0].map(() => Math.floor(9600 / data.visual[0].length))),
+    heading('3. Support visuel', 2), figureParagraph(figure), table([new TableRow({ children: data.visual[0].map(x => cell(x, { bold: true, fill: C.green, color: C.white, size: 17 })) }), ...data.visual.slice(1).map(r => new TableRow({ children: r.map(x => cell(x, { size: 17 })) }))], data.visual[0].map(() => Math.floor(9600 / data.visual[0].length))),
     heading('4. Exercices', 2), p('Les exercices sont notés sur 8 points. Chaque partie vaut 1 point par réponse correcte.'),
     p([tr('A. ', { bold: true, color: C.blue }), ...rich(exerciseText(aItems))]),
     p([tr('B. ', { bold: true, color: C.blue }), ...rich(exerciseText(eItems))]),
@@ -203,6 +236,8 @@ function frontMatter(units, total) {
 async function main() {
   const total = inventory.unites.reduce((s, u) => s + u.lecons.length, 0);
   if (total !== 57) throw new Error(`Nombre de leçons inattendu : ${total}`);
+  const generatedFigures = await generateFigures();
+  console.log(`Supports visuels générés : ${generatedFigures.length}`);
   const children = [...frontMatter(inventory.unites, total)];
   let global = 0;
   inventory.unites.forEach((unit, ui) => {

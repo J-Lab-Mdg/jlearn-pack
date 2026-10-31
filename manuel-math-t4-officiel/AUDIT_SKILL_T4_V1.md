@@ -6,7 +6,7 @@
 - Signets totaux : 123
 - Liens internes totaux : 120
 - Liens attendus dans le sommaire : 120
-- Images intégrées : 0
+- Images intégrées : 18
 
 ## Contrôles
 
@@ -26,9 +26,9 @@
 
 ## État des illustrations
 
-⚠️ Aucun fichier image n’est encore intégré dans cette V1 skill. Les supports visuels actuels sont des tableaux DOCX ; les figures SVG/PNG du standard T5 restent à produire pour les fractions, angles, solides, aires, conversions et diagrammes.
+✅ 18 images PNG sont intégrées dans le DOCX, à partir des figures mathématiques générées en SVG/PNG.
 
 ## Conclusion
 
 ✅ La structure de fiche, la police, les liens internes et les compteurs de sections sont conformes au premier niveau de contrôle du skill.
-⚠️ La V1 n’est pas encore le livrable final : il reste à enrichir les illustrations, la variété des exercices, les barèmes détaillés et les vérifications numériques exhaustives.
+⚠️ La V1 n’est pas encore le livrable final : il reste à enrichir la variété des exercices, les barèmes détaillés et les vérifications numériques exhaustives.

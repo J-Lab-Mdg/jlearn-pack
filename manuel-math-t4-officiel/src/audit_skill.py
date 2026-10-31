@@ -58,16 +58,17 @@ def main():
     ]
     for label, ok in checks:
         report.append(f"| {label} | {'✅ OK' if ok else '❌ ÉCHEC'} |")
+    illustrations = (f"✅ {len(media)} images PNG sont intégrées dans le DOCX, à partir des figures mathématiques générées en SVG/PNG." if media else "⚠️ Aucune image n’est encore intégrée dans cette V1 skill.")
     report += [
         "",
         "## État des illustrations",
         "",
-        "⚠️ Aucun fichier image n’est encore intégré dans cette V1 skill. Les supports visuels actuels sont des tableaux DOCX ; les figures SVG/PNG du standard T5 restent à produire pour les fractions, angles, solides, aires, conversions et diagrammes.",
+        illustrations,
         "",
         "## Conclusion",
         "",
         "✅ La structure de fiche, la police, les liens internes et les compteurs de sections sont conformes au premier niveau de contrôle du skill.",
-        "⚠️ La V1 n’est pas encore le livrable final : il reste à enrichir les illustrations, la variété des exercices, les barèmes détaillés et les vérifications numériques exhaustives.",
+        "⚠️ La V1 n’est pas encore le livrable final : il reste à enrichir la variété des exercices, les barèmes détaillés et les vérifications numériques exhaustives.",
     ]
     REPORT.write_text("\n".join(report) + "\n", encoding="utf-8")
     failed = [label for label, ok in checks if not ok]
