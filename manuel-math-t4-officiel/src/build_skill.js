@@ -101,33 +101,29 @@ function row(step, teacher, learners, technique, support, observation, opt = {})
 function sectionRow(text) {
   return new TableRow({ children: [cell(text, { span: 6, bold: true, fill: C.paleBlue, color: C.blue, size: 18 })] });
 }
-function applicationItems(data) {
-  const base = data.exercises.slice();
-  while (base.length < 4) base.push(`Explique avec une phrase ou une représentation la règle utilisée dans : ${data.example}`);
-  return base.slice(0, 4);
+function blockItems(data, evaluation = false) {
+  const source = evaluation && Array.isArray(data.evaluation) ? data.evaluation : data.exercises;
+  const extras = evaluation ? [] : (data.extra_application || []);
+  const items = source.concat(extras);
+  while (items.length < 4) items.push(`Explique avec une phrase ou une représentation la règle utilisée dans : ${data.example}`);
+  return items.slice(0, 4);
 }
-function applicationAnswers(data) {
-  const base = data.corrections.slice();
-  while (base.length < 4) base.push(`La justification doit reprendre la règle : ${data.retain[0]}`);
-  return base.slice(0, 4);
+function blockAnswers(data, evaluation = false) {
+  const source = evaluation && Array.isArray(data.evaluation_corrections) ? data.evaluation_corrections : data.corrections;
+  const extras = evaluation ? [] : (data.extra_application_corrections || []);
+  const items = source.concat(extras);
+  while (items.length < 4) items.push(`La justification doit reprendre la règle : ${data.retain[0]}`);
+  return items.slice(0, 4);
 }
-function exerciseBlock(data, start = 0) {
-  const items = applicationItems(data).slice(start, start + 4);
-  if (items.length < 4) items.push(...applicationItems(data).slice(0, 4 - items.length));
-  return items;
-}
-function answersBlock(data, start = 0) {
-  const items = applicationAnswers(data).slice(start, start + 4);
-  if (items.length < 4) items.push(...applicationAnswers(data).slice(0, 4 - items.length));
-  return items;
-}
+function exerciseBlock(data, evaluation = false) { return blockItems(data, evaluation); }
+function answersBlock(data, evaluation = false) { return blockAnswers(data, evaluation); }
 function exerciseText(items) { return items.map((x, i) => `${i + 1}. ${x}`).join('\n'); }
 function answerText(items) { return items.map((x, i) => `${i + 1}. ${x}`).join('\n'); }
 
 function fiche(lesson, data, unit, globalNo, total) {
   const visual = data.visual.map(r => r.join(' | ')).join('; ');
-  const aItems = exerciseBlock(data, 0); const aAnswers = answersBlock(data, 0);
-  const eItems = exerciseBlock(data, 2); const eAnswers = answersBlock(data, 2);
+  const aItems = exerciseBlock(data, false); const aAnswers = answersBlock(data, false);
+  const eItems = exerciseBlock(data, true); const eAnswers = answersBlock(data, true);
   const rows = [
     new TableRow({ children: [cell('Étapes et durée', { span: 1, bold: true, fill: C.blue, color: C.white, size: 17 }), cell('Déroulement de la leçon', { span: 2, bold: true, fill: C.blue, color: C.white, size: 17 }), cell('Technique et stratégie', { bold: true, fill: C.blue, color: C.white, size: 17 }), cell('Support et matériel', { bold: true, fill: C.blue, color: C.white, size: 17 }), cell('Observation', { bold: true, fill: C.blue, color: C.white, size: 17 })] }),
     new TableRow({ children: [cell('I. Révision', { bold: true, fill: C.pale, size: 17 }), cell('Enseignant', { bold: true, fill: C.pale, size: 17 }), cell('Apprenants', { bold: true, fill: C.pale, size: 17 }), cell('—', { fill: C.pale, size: 17 }), cell('—', { fill: C.pale, size: 17 }), cell('—', { fill: C.pale, size: 17 })] }),
@@ -191,9 +187,9 @@ function sceneParagraph() {
   return imageParagraph(path.join(ROOT, 'assets', 'scenes', 'scene_numeration_classe.jpg'), 'jpg', 620) || p('Scène pédagogique à produire.', { italics: true, color: '666666' });
 }
 function learnerLesson(lesson, data) {
-  const aItems = exerciseBlock(data, 0); const eItems = exerciseBlock(data, 2);
+  const aItems = exerciseBlock(data, false); const eItems = exerciseBlock(data, true);
   const figure = figureFor(lesson);
-  const aAnswers = answersBlock(data, 0); const eAnswers = answersBlock(data, 2);
+  const aAnswers = answersBlock(data, false); const eAnswers = answersBlock(data, true);
   const visualRows = [data.visual[0], ...data.visual.slice(1)];
   const keywords = data.retain.join(' ');
   return [
