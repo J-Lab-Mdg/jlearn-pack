@@ -388,7 +388,7 @@ function annex8() {
     p("déjà — très — après — été — école — élève — père — mère — frère — derrière — première — rivière — lumière — théâtre — forêt — île — hôpital — bientôt — plutôt — tôt — côté — âge — être — fête", { after: 30 }),
     note("astuce : l'accent circonflexe est souvent le souvenir d'un ancien « s » : forêt → forestier"),
     sub("3. Ils doublent une lettre"),
-    p("terre — femme — homme — comme — comment — année — appeler — arriver — attendre — attention — personne — commencer — ennemi — nourriture ? non : elle ne double pas ! — belle — nouvelle — meilleur — difficile ? non plus ! — ville — mille", { after: 30 }),
+    p("terre — femme — homme — comme — comment — année — appeler — arriver — attendre — attention — personne — commencer — ennemi — belle — nouvelle — meilleur — ville — mille — aller — chienne — grosse — paresseux", { after: 30 }),
     note("les pièges inverses : nourriture, difficile, apercevoir — une seule lettre !")
   , sub("4. Ils ne s'écrivent pas comme ils se prononcent"),
     p("monsieur — femme — fils — automne — temps — sept — vingt — second — aujourd'hui — oignon — eau — beaucoup — longtemps — pied — nez — riz — tabac — estomac", { after: 30 }),
