@@ -131,15 +131,15 @@ function fiche(lesson, data, unit, globalNo, total) {
   const rows = [
     new TableRow({ children: [cell('Étapes et durée', { span: 1, bold: true, fill: C.blue, color: C.white, size: 17 }), cell('Déroulement de la leçon', { span: 2, bold: true, fill: C.blue, color: C.white, size: 17 }), cell('Technique et stratégie', { bold: true, fill: C.blue, color: C.white, size: 17 }), cell('Support et matériel', { bold: true, fill: C.blue, color: C.white, size: 17 }), cell('Observation', { bold: true, fill: C.blue, color: C.white, size: 17 })] }),
     new TableRow({ children: [cell('I. Révision', { bold: true, fill: C.pale, size: 17 }), cell('Enseignant', { bold: true, fill: C.pale, size: 17 }), cell('Apprenants', { bold: true, fill: C.pale, size: 17 }), cell('—', { fill: C.pale, size: 17 }), cell('—', { fill: C.pale, size: 17 }), cell('—', { fill: C.pale, size: 17 })] }),
-    row('I. Révision', `Rappelle oralement une notion de l’unité ${unit.nom}. Question : que signifie « ${data.retain[0]} » ? R.A. : ${data.retain[0]}`, 'Écoutent puis répondent oralement avec le vocabulaire déjà étudié.', 'Questionnement oral', '—', 'La réponse montre le rappel de la notion précédente.'),
+    row('I. Révision', `Rappelle oralement une notion de l’unité ${unit.nom}. Question : que signifie « ${data.retain[0]} » ? R.A. : ${data.retain[0]}`, 'Écoutent puis répondent oralement avec le vocabulaire déjà étudié.', 'Question-réponse, travail collectif', '—', 'La réponse montre le rappel de la notion précédente.'),
     sectionRow('II. NOUVELLE LEÇON — durée globale : non précisée dans le PE'),
-    row('1. Mise en situation', `Situation : ${lesson.activite} Question de départ : que cherchons-nous à déterminer ? R.A. : ${lesson.objectif}`, 'Écoutent et répondent à l’oral.', 'Questionnement et contextualisation', lesson.supports.join(', '), 'La réponse est reliée à l’objectif.'),
-    row('2. Présentation', `Annonce : « Aujourd’hui, nous allons apprendre à ${lesson.objectif.toLowerCase()} »`, 'Écoutent le titre et l’objectif.', 'Présentation explicite', 'Tableau noir', 'Le titre est compris.'),
-    row('3. Observation', `Observez l’exemple : ${data.example} Observez aussi le support : ${visual}.`, 'Observent silencieusement le support.', 'Observation guidée', lesson.supports.join(', '), 'Aucune réponse n’est demandée à cette étape.'),
-    row('4. Analyse', `Question 1 : Que montre l’exemple ? R.A. : ${data.example}\nQuestion 2 : Quelle règle faut-il retenir ? R.A. : ${data.retain[0]}\nQuestion 3 : Comment vérifier ? R.A. : ${data.retain[1] || 'représenter ou calculer avant de conclure.'}`, 'Répondent aux questions et justifient leurs procédures.', 'Manipulation, verbalisation, comparaison', lesson.supports.join(', '), 'Les réponses sont confrontées et corrigées.'),
-    row('5. Synthèse', `Donc, ${data.retain.join(' ')} Exemple : ${data.example}`, 'Écoutent la synthèse et la reformulent oralement.', 'Institutionnalisation', 'Tableau noir, cahier', 'La trace écrite est exacte.'),
-    row('6. Application', `Travail guidé.\n${exerciseText(aItems)}`, `Corrigé guidé.\n${answerText(aAnswers)}`, 'Entraînement individuel puis correction collective', 'Cahier, ardoise, supports de la leçon', 'Repérer les erreurs de méthode.'),
-    row('III. Évaluation', `Travail individuel.\n${exerciseText(eItems)}`, `Corrigé attendu.\n${answerText(eAnswers)}`, 'Évaluation formative', 'Cahier, règle ou matériel indiqué', 'L’apprenant justifie sa réponse.'),
+    row('1. Mise en situation', `Situation : ${lesson.activite} Question de départ : que cherchons-nous à déterminer ? R.A. : ${lesson.objectif}`, 'Écoutent et répondent à l’oral.', 'Brainstorming, question-réponse, travail collectif', lesson.supports.join(', '), 'La réponse est reliée à l’objectif.'),
+    row('2. Présentation', `Annonce : « Aujourd’hui, nous allons apprendre à ${lesson.objectif.toLowerCase()} »`, 'Écoutent le titre et l’objectif.', 'Présentation dialoguée, question-réponse', 'Tableau noir', 'Le titre est compris.'),
+    row('3. Observation', `Observez l’exemple : ${data.example} Observez aussi le support : ${visual}.`, 'Observent silencieusement le support.', 'Observation guidée, travail de groupe', lesson.supports.join(', '), 'Aucune réponse n’est demandée à cette étape.'),
+    row('4. Analyse', `Question 1 : Que montre l’exemple ? R.A. : ${data.example}\nQuestion 2 : Quelle règle faut-il retenir ? R.A. : ${data.retain[0]}\nQuestion 3 : Comment vérifier ? R.A. : ${data.retain[1] || 'représenter ou calculer avant de conclure.'}`, 'Répondent aux questions et justifient leurs procédures.', 'Question-réponse, manipulation, brainstorming, mise en commun', lesson.supports.join(', '), 'Les réponses sont confrontées et corrigées.'),
+    row('5. Synthèse', `Donc, ${data.retain.join(' ')} Exemple : ${data.example}`, 'Écoutent la synthèse et la reformulent oralement.', 'Travail collectif, reformulation', 'Tableau noir, cahier', 'La trace écrite est exacte.'),
+    row('6. Application', `Travail guidé.\n${exerciseText(aItems)}`, `Corrigé guidé.\n${answerText(aAnswers)}`, 'Travail individuel, correction collective', 'Cahier, ardoise, supports de la leçon', 'Repérer les erreurs de méthode.'),
+    row('III. Évaluation', `Travail individuel.\n${exerciseText(eItems)}`, `Corrigé attendu.\n${answerText(eAnswers)}`, 'Travail individuel, auto-correction', 'Fiche d’évaluation, règle ou matériel indiqué', 'L’apprenant justifie sa réponse.'),
   ];
   return [
     heading(`SÉANCE ${globalNo} / ${total} — ${lesson.titre.toUpperCase()}`, 1, `seance${globalNo}`),
@@ -185,7 +185,7 @@ function figureParagraph(name) {
   return imageParagraph(path.join(FIG_DIR, `${name}.png`), 'png', 620) || p('Support visuel à produire.', { italics: true, color: '666666' });
 }
 function coverParagraph() {
-  return imageParagraph(path.join(ROOT, 'assets', 'cover_math_t4_scene.png'), 'png', 520) || p('Illustration de couverture à produire.', { italics: true, color: '666666' });
+  return imageParagraph(path.join(ROOT, 'assets', 'cover_math_t4.png'), 'png', 520) || p('Illustration de couverture à produire.', { italics: true, color: '666666' });
 }
 function sceneParagraph() {
   return imageParagraph(path.join(ROOT, 'assets', 'scenes', 'scene_numeration_classe.jpg'), 'jpg', 620) || p('Scène pédagogique à produire.', { italics: true, color: '666666' });
