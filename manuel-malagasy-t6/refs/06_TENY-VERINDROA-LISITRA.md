@@ -102,3 +102,15 @@ FRP sy ny Torolalana ho an'ny `lavalava` sy `matoritory`.
    Tsipelina, ventinasa I, herinandro-1, seho-1 (Fanazaran-tsaina 1 sy 6) ary Valin'ny
    Fanazaran-tsaina 11-1 sy 16-6. Tsy misy laharan-pejy miseho amin'ny dikan-teny
    (`docs.google.com/document/d/13AdMAiiH4TN__G83-nB8agyDuRyhlwZs`).
+
+## F. Fifamindrana amin'ny rakitra efa nety (mba tsy hiverimberina ny fikarohana)
+
+`refs/rakibolana_teny_verindroa.txt` (2026-10-30) — **loharano voamarina** ho an'ny S1 sy S2 :
+**§A** = FRP p.74-76 teny-teny (LFK 1a `mianaka/mihanaka`, `havana/avana`, `manantitra/manatitra`,
+`manantona/manatona` ; LFK 1b `àry/ary`, `mazana/Mazàna` ; LFK 1d `lavalava, menamena, lavidavitra,
+matoritory, sitatsitaka` ; LFK 1e ny 3 fitsipika + ny 11 ôhatra) ; **§B** = Rakibolana an-tserasera
+(`mianaka`, `manatitra`, `mihanaka` — *loto* ny ôhatra → **tsy ampiasaina** ; `manantitra` — **tsy hita**
+→ ny FRP ihany no loharano) ; **§B2** = malagasyword/Stark (`avana` = arc-en-ciel, ...) ;
+**§C** = PE T6 (cadre : ora 4 isan-kerinandro, p.13 ; p.15 « Tsipelina : Teny verindroa ·
+Fanakambanan-teny » ; p.26 *Torovolana* : allitération = « tamberin-drenifeo », assonance =
+« tamberin-janapeo » → **ilaina amin'ny S4 (rima sy ngadona)**).
