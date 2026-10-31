@@ -130,6 +130,7 @@ function lessonS49() {
     p([run("ÉCOUTER UN RÉCIT DE VIE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("b5_mariage.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/102B7TWwBTzxkqh1WIXcGbzizSQA1WQoZ/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageMariage(),
     p("", { after: 80 }),
     sub("Le récit de vie :"),

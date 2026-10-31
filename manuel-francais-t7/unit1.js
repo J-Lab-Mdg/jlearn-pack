@@ -138,6 +138,7 @@ function lessonS1() {
     p([run("ÉCOUTER UN REPORTAGE SUR LA CULTURE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_hiragasy.png", 440, 0.5578),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1O5Wodzyf_UbWSpRgLgryuYKWWKUiy2aG/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageVisages(),
     p("", { after: 80 }),
     sub("1. Pour comprendre, j'écoute deux fois"),

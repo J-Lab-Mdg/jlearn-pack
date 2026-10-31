@@ -140,6 +140,7 @@ function lessonS73() {
     p([run("COMPRENDRE UNE VISITE GUIDÉE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_visite.png", 440, 0.5581),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1WYp_XBSNR-eUGQxCXphJrTOGP07eYf_S/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageAndasibe(),
     p("", { after: 80 }),
     sub("1. Le guide organise sa visite"),

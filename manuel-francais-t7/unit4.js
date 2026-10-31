@@ -138,6 +138,7 @@ function lessonS37() {
     p([run("COMPRENDRE UN TÉMOIGNAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_temoignage.png", 440, 0.5581),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1cqlFTQ9x_7AzZXkLqbIOVRTMSNLBGOZ0/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageNaivo(),
     p("", { after: 80 }),
     sub("1. Le témoignage : une personne raconte SA vérité"),

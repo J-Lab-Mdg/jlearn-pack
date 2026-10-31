@@ -126,6 +126,7 @@ function lessonS1() {
     p([run("ÉCOUTER ET COMPRENDRE UN TEXTE DESCRIPTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("a1_foret.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1y04prg4YzNaSjXi89JgfWJ3ZzdRXlOS2/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageAnja(),
     p("", { after: 80 }),
     sub("Pour comprendre un texte entendu :"),

@@ -136,6 +136,7 @@ function lessonS25() {
     p([run("ÉCOUTER UN TUTORIEL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("b3_bebe.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1SJCA9GuKrevy27vavHeTfu3sfDkhPoWH/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageTutoriel(),
     p("", { after: 80 }),
     sub("Le tutoriel :"),

@@ -133,6 +133,7 @@ function lessonS61() {
     p([run("ÉCOUTER UN CONTE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("b6_conteur.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1gfpxlmWWAbzNcg79XtkT103VncBuB5eP/view", { color: "1F618D", size: 22 })], { after: 120 }),
     conteFaralahy(),
     p("", { after: 80 }),
     sub("Ma nouvelle grille d'écoute :"),

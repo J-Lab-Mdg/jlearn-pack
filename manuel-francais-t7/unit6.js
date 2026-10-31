@@ -138,6 +138,7 @@ function lessonS61() {
     p([run("COMPRENDRE UN PORTRAIT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_pecheur.png", 440, 0.5581),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1ZYLyW5Smx_ab0s3sN3NwEauBjan8gWaf/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageRakoto(),
     p("", { after: 80 }),
     sub("1. Le portrait : décrire une personne en trois touches"),

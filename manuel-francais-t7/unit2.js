@@ -138,6 +138,7 @@ function lessonS13() {
     p([run("COMPRENDRE UN COMPTE-RENDU ENTENDU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_radio.png", 440, 0.5581),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1NyxssFRRJe-qpf7n3K0XPE2fvy_oA5an/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageMoisson(),
     p("", { after: 80 }),
     sub("1. Le compte-rendu : j'écoute comme un témoin"),

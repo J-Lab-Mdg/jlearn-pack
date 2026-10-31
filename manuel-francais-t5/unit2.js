@@ -126,6 +126,7 @@ function lessonS13() {
     p([run("ÉCOUTER UNE BROCHURE DE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("b1_paysage.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/14SA54_pqo1_ugxoer3qBvqjh8atdszlY/view", { color: "1F618D", size: 22 })], { after: 120 }),
     brochureMorondava(),
     p("", { after: 80 }),
     sub("La brochure de voyage :"),

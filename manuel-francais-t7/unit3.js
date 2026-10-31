@@ -140,6 +140,7 @@ function lessonS25() {
     p([run("COMPRENDRE UN FLASH D'INFORMATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_studio.png", 440, 0.5581),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1n3Vi-Tlsu6EsBD7PVzH4x2QA4E8HFuEr/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageFlash(),
     p("", { after: 80 }),
     sub("1. Le flash d'information : court et précis"),

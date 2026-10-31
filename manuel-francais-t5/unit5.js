@@ -808,6 +808,7 @@ function lessonS58() {
     p([run("LA PONCTUATION, PARTITION DU LECTEUR", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("b1_lecture.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1ZXJWAvKv2e_Ria77ZpEUVhiOdCHLZgcm/view", { color: "1F618D", size: 22 })], { after: 120 }),
     sub("Le code du lecteur :"),
     pr([run(",  ", { bold: true, color: C.RED, size: 32 }), run("petite pause — je respire à peine ;")], { after: 50 }),
     pr([run(".  ", { bold: true, color: C.RED, size: 32 }), run("grande pause — la voix descend ;")], { after: 50 }),

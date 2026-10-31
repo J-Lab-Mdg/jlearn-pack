@@ -128,6 +128,7 @@ function lessonS37() {
     p([run("ÉCOUTER UN TEXTE EXPLICATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("a4_loisirs.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1I01BRchf_DWu4f-zAqAVIUj-RqbfoymF/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageLoisirs(),
     p("", { after: 80 }),
     sub("Le texte explicatif — premier contact :"),

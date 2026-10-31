@@ -129,6 +129,7 @@ function lessonS1() {
     p([run("ÉCOUTER UN DOCUMENTAIRE SUR LE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("b1_taxibrousse.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1gYOfxM3gKtx30A7hQCALGSe0q3GXfWA5/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passagePourquoiVoyager(),
     p("", { after: 80 }),
     sub("Pour comprendre un document entendu :"),

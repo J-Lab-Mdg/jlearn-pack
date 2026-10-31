@@ -135,6 +135,7 @@ function lessonS13() {
     p([run("ÉCOUTER UN COMPTE-RENDU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("b2_entraide.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1EuYk6y-MlZcPDki8_-Y0uQSFVwhou3xv/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageEntraide(),
     p("", { after: 80 }),
     sub("Le compte-rendu :"),

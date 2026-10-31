@@ -822,6 +822,7 @@ function lessonS70() {
     p([run("LE THÉÂTRE DES LECTEURS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("b1_lecture.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1w9857RH_pK4kSFQF2P_spPnsd1BpGt19/view", { color: "1F618D", size: 22 })], { after: 120 }),
     sub("Le principe :"),
     p("• En petit groupe, on se partage un passage : un NARRATEUR + les PERSONNAGES."),
     p("• On prépare, on répète… puis on présente la lecture comme au théâtre, le livre à la main !", { after: 80 }),

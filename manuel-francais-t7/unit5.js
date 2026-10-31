@@ -138,6 +138,7 @@ function lessonS49() {
     p([run("ÉCOUTER UN REPORTAGE QUI DÉCRIT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_ferme.png", 440, 0.5581),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1f6pm-K8s8Hw7i7GXRNmO1UZF40NTp5_u/view", { color: "1F618D", size: 22 })], { after: 120 }),
     passageFerme(),
     p("", { after: 80 }),
     sub("1. J'écoute avec mes cinq sens"),

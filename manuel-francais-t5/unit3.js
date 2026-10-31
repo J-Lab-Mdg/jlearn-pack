@@ -127,6 +127,7 @@ function lessonS25() {
     p([run("ÉCOUTER UN REPORTAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("a3_poste.png", 440, 768 / 1376),
     p("", { after: 60 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1j0n8y6y6-vj8puVa1AeDInlUCpTJ4Y2g/view", { color: "1F618D", size: 22 })], { after: 120 }),
     reportagePoste(),
     p("", { after: 80 }),
     sub("Dans un reportage sur un service public, je repère :"),
