@@ -855,6 +855,8 @@ function revision() {
   return [
     B2.bookmarkTitle("s11", "SÉANCE 11 / 84", { bold: true, size: 28, after: 60 }),
     p([run("RÉVISION ET DICTÉE — UNITÉ 1 : LA CULTURE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    img("u1_famadihana.png", 440, 0.5581),
+    p("", { after: 60 }),
     p([run("Je réponds :", { bold: true })], { after: 80 }),
     p("1. Cite les sept familles de la culture, avec un exemple chacune."),
     pAns("R.A. : nourriture (romazava), habitat (maison de brique), vêtements (lamba), langue (kabary), danses (salegy), rites (famadihana), artisanat (panier tressé).", ["artisanat"]),
