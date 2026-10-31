@@ -168,7 +168,7 @@ LESONA = [
     ("note", "Lanja fahatelo hita amin'ny fikarohana (mémoire UA 2014, §1.1.1.2) : ny verindroa dia "
              "mety **manova hevitra** tanteraka ny fototeny (*vanaka* → *vananaka*). **Tsy "
              "ampidirina** amin'ny leçon na amin'ny tombana izany ; ampiasao amin'ny fanazavana "
-             "am-bava ihany, raha misy mpianatra manontany. Ny *Torolalana* 2015 kosa dia minanana "
+             "am-bava ihany, raha misy mpianatra manontany. Ny *Torolalana* 2015 kosa dia nilaza "
              "hoe « **matetika** natao hanalefaka ny hevitra » ny verindroa : **ny FRP T6 no "
              "arahina** eto (roa tanjona), satria boky ho an'ny ambaratonga voalohany ilay *Torolalana*."),
 
@@ -197,7 +197,7 @@ LESONA = [
                 "*fady* → **fadifady** · *ady* → **adidy** · *maty* → **matimaty** — eto dia ny "
                 "**feo farany** (y) no miova ho *i*, fa tsy ny renifeo."]),
     ("p", "Ireo lohateny hita tetsy ambony dia mifanaraka amin'ireo hita amin'ny **fanakambanan-"
-          "teny** (FRP, LFK 1e) : *s → ts*, *f → p*, *v → b*, *l → d*. Nyaniana amin'ny "
+          "teny** (FRP, LFK 1e) : *s → ts*, *f → p*, *v → b*, *l → d*. Misy koa amin'ny "
           "**verindroa** koa ny **r → dr** sy ny **z → j**."),
     ("note", "Famaritana fanampiny (Torolalana 2015, Tsipelina ventinasa I) : manavaka koa izy « ireo "
              "**tsy ahitana fiovana** (*ela*/*elaela*) » sy « ireo **mirakitra fiovana** (*sarotra*/"
@@ -210,7 +210,7 @@ LESONA = [
     ("h2", "IV. Teny verindroa isaky ny abidy"),
     ("p", "Abidy iray isaky ny andiany : eo amin'ny kolona **a** ny **verindroa tsotra**, eo amin'ny "
           "kolona **b** ny **verindroa misy fiovana** (voasoratra anaty honakona ny litera miova). Ny "
-          "teny voalohany ao amin'ny selule rehetra dia ny **fototeny** ; ny manaraka ny zana-tsipìka "
+          "teny voalohany ao amin'ny tabilao dia ny **fototeny** ; ny manaraka ny zana-tsipìka "
           "dia ny endrika **verindroa**."),
     ("tabl", (["Abidy", "a. Verindroa tsotra", "b. Verindroa misy fiovana"],
               [["**a**", "—", "*ady* → **adidy** (y → i)"],
@@ -327,7 +327,7 @@ FANITSIANA = [
                 "d'autre »."]},
     {"ohatra": ["Tsindry : *matevina* = (loko) matroka, tena ; *halemy* = malemy, tsy mafy "
                 "intsony ; *adidy* = « asa na andraikitra tsy maintsy ataon' ny tsirairay ».",
-                "Raha misy mihehezany : ilazao **ao anaty fehezanteny** ny teny verindroa — ny "
+                "Raha tsy azo antoka : ilazao **ao anaty fehezanteny** ny teny verindroa — ny "
                 "hevitry ny teny manodidina no manamarina hoe manalefaka na manamafy."]},
 ]
 
