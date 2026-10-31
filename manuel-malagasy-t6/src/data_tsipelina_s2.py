@@ -157,6 +157,45 @@ LESONA = [
           "alohan'ny isa* » (FRP, LFK 2c). Raha ny fototeny *roa* kosa dia azo averina : *roa* → "
           "**roaroa** (*mandroaroa*), fa rehefa isa ampiasaina dia **tsiroa / siroa**."),
 
+    ("h2", "Roa karazana endrika — ary ny litera mety miova"),
+    ("p", "Misy boky ministera ho an'ny ambaratonga voalohany izay manavaka **roa karazana** "
+          "endrika : ireo **tsy ahitana fiovana** sy ireo **misy fiovana** (*Torolalana* ho an'ny "
+          "boky KINGAVOLA sy HAIVOLA, MEN, 2015 — Tsipelina, ventinasa I, herinandro-1, seho-1) :"),
+    ("ohatra", ["**Tsy ahitana fiovana** : *ela* → **elaela** · *miova* → **miovaova** · "
+                "*fitopa* → **fitopatopa** · *toro* → **atorotoro**",
+                "**Misy fiovana** : *sarotra* → **sarotsarotra** (s → ts) · *javona* → "
+                "**manjavojavona** (z → j) · *faritra* → **voafariparitra** (f → p) · *maty* → "
+                "**matimaty** (y → i)"]),
+    ("p", "Tsy hafa amin'ireo **renifeo** miova amin'ny **fanakambanan-teny** ireo fanovana ireo "
+          "(*s → ts*, *f → p*, *v → b*, *l → d* — FRP, LFK 1e) : rehefa **atohy** na "
+          "**averina** ny teny dia mety miova ny renifeo voalohan'ny ampahany manaraka."),
+
+    ("h2", "Lahatsoratra fijerena : karohy ny teny verindroa ao"),
+    ("p", "*Santionany* avy amin'ny *Torolalana* 2015 (Valin'ny Fanazaran-tsaina **11-1**) — **tsy "
+          "novaina**, tenim-pisoran'ny boky : vakio mangina, dia karohy ireo teny verindroa ao."),
+    ("p", "« **Elaela** ihany vao tody tany Amerika ireo sambo maromaro indray niainga tany "
+          "Pôrtogaly. Hitady an'i India ny foto-diany saingy noho ny fitsoky ny rivotra **miovaova** "
+          "sy ny **fitopatopan'** ny onja mahery dia **nivilivily** ny fizotry ny lalany. Mba "
+          "**atorotoroy** ahy eto amin'ny sarintany hoe ny tany sy ny toerana **malazalaza** efa "
+          "**fantapantatra** tamin'izany andro izany. […] **Sarotsarotra** ihany ny mamaky ny "
+          "anarana voasoratra eo. Somary efa **antitrantitra** mantsy io sarintany io ka "
+          "**matimaty** sy **manjavojavona** ny soratra. »"),
+    ("ohatra", ["**11** : *elaela* (ela) · *miovaova* (miova) · *fitopatopa* (fitopa) · "
+                "*nivilivily* (vily) · *atorotoroy* (toro) · *malazalaza* (laza) · *fantapantatra* "
+                "(fantatra) · *sarotsarotra* (sarotra) · *antitrantitra* (trantitra) · *matimaty* "
+                "(maty) · *manjavojavona* (javona)",
+                "Glose : *somary* = mais, quant a · *nivilivily* = a erre de cote et d'autre · "
+                "*antitrantitra* = tres ancien · *matimaty* = presque efface (avy amin'ny *maty*)"]),
+    ("note", "Teny fanamafana ho an'ny mpampianatra : (1) ny *Torolalana* 2015 dia milaza fa « "
+             "**tsy mitovy tanteraka ny hevitry ny teny tsotra sy ny teny verindroa** » (*tsara* / "
+             "*tsaratsara*) ary fa « **matetika natao hanalefaka ny hevitra** » ny verindroa ; ny "
+             "FRP T6 no mitazona ny **roa** tanjona (manalefaka **sy** manamafy), ka **ny FRP no "
+             "arahina** — ampiasao kosa ilay « *tsy mitovy tanteraka* » mba hampahatsiahivanana fa "
+             "**tsy fanovana teny fotsiny** ny verindroa. (2) Ao amin'ny dikan-teny ananantsika dia "
+             "misy **fiverimberana** soratra eo am-pelanan'ny teny *voafariparitra* : nasiam-panapoaka "
+             "(*[…]*) ilay ampahany, fa tsy nohamboarina. (3) *Boky ho an'ny ambaratonga voalohany "
+             "(Kilasy faha-8 sy faha-7) ity* : **loharano momba ny fomba fampianarana** ihany no "
+             "angalana aminy — ny lista an'ny FRP T6 ihany no fototra ho an'ny votoaty."),
     ("h2", "Tsy izay rehetra voalaza indroa dia verindroa"),
     ("p", "Raha **roa teny** samy hafa no voalaza indroa dia **tsy** teny verindroa izany ; **iray "
           "teny** ihany averina vao atao hoe verindroa."),
@@ -195,6 +234,10 @@ EXOS = [
                  "d) « Mamela veloma ombieny ombieny. »"},
     {"consigne": "Mamorona fehezanteny roa : iray **manalefaka** hevitra, fa ny iray **manamafy** "
                  "hevitra ; samy mampiasa teny verindroa."},
+    {"consigne": "Zarao amin'ny karazana **roa** ireo teny verindroa ireo : (1) **tsy ahitana "
+                 "fiovana** ; (2) **misy fiovana** — dia lazao koa ny litera miova.\n"
+                 "elaela · miovaova · nivilivily · malazalaza · atorotoroy · fantapantatra · "
+                 "sarotsarotra · matimaty · manjavojavona"},
 ]
 
 # ------------------------------------------------------------------ FANITSIANA
@@ -214,6 +257,12 @@ FANITSIANA = [
                 "toe-javatra ao anaty fehezanteny."]},
     {"ohatra": ["Tsindry : *matevina* = (loko) matroka, tena ; *halemy* = malemy, tsy mafy "
                 "intsony ; *adidy* = « asa na andraikitra tsy maintsy ataon' ny tsirairay »."]},
+    {"ohatra": ["**1** : elaela, miovaova, nivilivily, malazalaza, atorotoroy — **2** : "
+                "fantapantatra (p ampiana), sarotsarotra (s → ts), matimaty (y → i), "
+                "manjavojavona (z → j)",
+                "Jereo ny fototeny : *sarotra* → *sarotsarotra* (ny *s* an'ny fototeny dia lasa *ts* "
+                "eo amin'ny ampahany faharoa). Raha tsy misy litera nampiana na miova eo amin'ny "
+                "fiverenana, dia karazana **(1)** izany."]},
 ]
 
 LALANA = ("Tadiavo 5 teny verindroa ao amin'ny lahatsoratra na boky novakinao tamin'ity "
@@ -231,6 +280,22 @@ FICHE = fiche(ZT, LT, LESONA, EXOS, FANITSIANA, LALANA, seho="3", isan="2", sary
     "2.2 : « Ny tsofoka dia manamafy ny hevitry ny mpamari-toetra »).",
     "FRP 6ème Malagasy (93 pejy), p.75 : mitovy teny-teny ny LFK 1d → "
     "fanamafiana fa tsy niova ny votoaty eo anelanelan'ny dikan-teny roa.",
+    "*TOROLALANA ho an'ny BOKY KINGAVOLA sy HAIVOLA — Kilasy faha-8 sy faha-7 (natambatra)*, "
+    "Ministeran'ny Fanabeazam-Pirenena / Foibe Famolavolana Fandaharam-pibeazana sy Fehin-kevitra "
+    "(D.C.I), **edisiona fahefatra**, Natonta-Faninefany, Antananarivo, 2015 (fandrindrana "
+    "ankapobeny : ZANDRY Seraphin Fred Aime, Talen'ny UERP ; « Tsy azo adika na alaina tahaka », "
+    "copyright © MEN). **Fizarana 2.4** « Ny Fandalinana ny teny » : dingana *Fanolorana → "
+    "Fanazavana → Fanaovana ny fanazaran-tsaina am-bava → Fanaovana ny fanazaran-tsaina "
+    "an-tsoratra*, ary « **tsy hisy… ny Fanazaran-tsaina miendrika fanomezam-pahalalana** » ; "
+    "**fizarana 3** (tabilao Tsipelina : ventinasa 1 = « **Fanoratana teny verindroa** », ventinasa "
+    "2 = « Fanoratana ny teny nampiharana ny fitsipiky ny fanakambanan-teny ») ; **fizarana 4** "
+    "(Tari-dalana ho an'ny Kilasy faha-8) — Tsipelina, herinandro-1, seho-1, Fanazaran-tsaina "
+    "voalohany : tanjona « Mahasoratra ara-pitsipika ny teny atao verindroa ny mpianatra », roa "
+    "karazana endrika, ny fanovana *s > ts*, *z > j*, *f > p* ; ary **Valin'ny Fanazaran-tsaina "
+    "11-1** (lahatsoratra *elaela / miovaova / sarotsarotra / manjavojavona*). Copie numerique : "
+    "https://docs.google.com/document/d/13AdMAiiH4TN__G83-nB8agyDuRyhlwZs — **tsy misy laharan-pejy "
+    "miseho** ; koa loharano *fomba fampianarana* ihany ity (ambaratonga voalohany), fa ny FRP T6 "
+    "ihany no fototra ho an'ny votoaty.",
     "RASOLOFOSON, Tovonjanahary Jorosoa, *Ny endriky ny matoanteny verindroa amin'ny teny "
     "malagasy*, Voka-pikarohana ahazoana ny mari-pahaizana Maîtrise ès-lettres, "
     "Oniversiten'Antananarivo — Sampana Teny sy Lahabolana ary Riba Malagasy (STe.La.Ri.M.), "
