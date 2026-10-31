@@ -1,7 +1,0 @@
-data/*.db
-data/*.db-wal
-data/*.db-shm
-runtime/
-__pycache__/
-*.pyc
-*.zip

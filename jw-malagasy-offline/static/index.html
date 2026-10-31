@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JW Malagasy Offline — JWPUB, EPUB, PDF &amp; Recherche Hors-Ligne</title>
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- EN-TÊTE PRINCIPAL -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="/icon.svg" alt="MG" class="brand-logo" />
+      <div>
+        <h1 class="brand-title">JW Malagasy Offline <span class="badge-mg">MG</span></h1>
+        <p class="brand-sub" id="statsHeaderText">Chargement de la bibliothèque hors-ligne…</p>
+      </div>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="btn btn-outline" id="btnPhoneGuide" title="Utiliser sur Android, iPhone et Disque Dur Externe">
+        📱 Téléphone &amp; Disque Externe
+      </button>
+      <button class="btn btn-update" id="btnQuickUpdate" title="Vérifier en ligne les nouveaux numéros et mises à jour">
+        🔄 Vérifier mises à jour
+      </button>
+      <button class="btn btn-primary" id="btnOpenSync">
+        ⬇ Télécharger (JWPUB / EPUB / PDF)
+      </button>
+    </div>
+  </header>
+
+  <!-- BANDEAU DE PROGRESSION EN DIRECT -->
+  <div id="syncBanner" class="sync-banner hidden">
+    <div class="sync-banner-info">
+      <span class="spinner"></span>
+      <span id="syncBannerMsg">Synchronisation en cours…</span>
+    </div>
+    <button class="btn btn-danger btn-sm" id="btnBannerStop">⏹ Arrêter proprement</button>
+  </div>
+
+  <!-- BARRE DE RECHERCHE & FILTRES -->
+  <section class="search-panel">
+    <div class="search-mode-tabs">
+      <button class="mode-tab active" data-mode="catalog" id="tabModeCatalog">
+        📚 Catalogue &amp; Fichiers (<span id="countCatalog">0</span>)
+      </button>
+      <button class="mode-tab" data-mode="fulltext" id="tabModeFulltext">
+        🔍 Recherche Plein-Texte dans les Chapitres (<span id="countChapters">0</span> toko)
+      </button>
+    </div>
+
+    <div class="search-row">
+      <div class="search-input-wrap">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Rechercher un titre, symbole (bi12, lff, w, mwb) ou un mot/verset malgache (ex: Fanjakan'Andriamanitra, Salamo 83)…"
+          autocomplete="off"
+        />
+        <button class="btn-clear hidden" id="btnClearSearch" title="Effacer">✕</button>
+      </div>
+      <button class="btn btn-primary" id="btnRunSearch">Rechercher</button>
+    </div>
+
+    <div class="filter-bar">
+      <div class="cat-pills" id="categoryPills">
+        <button class="pill active" data-cat="">Toutes catégories</button>
+      </div>
+
+      <div class="extra-filters">
+        <label class="chk-inline" title="Afficher uniquement les publications déjà présentes sur votre disque">
+          <input type="checkbox" id="chkDownloadedOnly" />
+          <span>Sur disque uniquement</span>
+        </label>
+        <label class="chk-inline">
+          <input type="checkbox" id="chkFavoritesOnly" />
+          <span>★ Favoris</span>
+        </label>
+        <select id="selFormatFilter" class="select-sm">
+          <option value="">Tous formats</option>
+          <option value="JWPUB">JWPUB (JW Library)</option>
+          <option value="EPUB">EPUB (Chapitres)</option>
+          <option value="PDF">PDF</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENU PRINCIPAL : LISTE À GAUCHE + LECTEUR À DROITE -->
+  <main class="workspace" id="mainWorkspace">
+    <!-- COLONNE GAUCHE : LISTE DES PUBLICATIONS OU RÉSULTATS PLEIN-TEXTE -->
+    <section class="list-pane" id="listPane">
+      <div class="list-header">
+        <span id="listSummaryText">Publications</span>
+        <span class="disk-badge" id="diskBadge" title="Espace disponible sur le lecteur actuel">Disque : …</span>
+      </div>
+      <div class="cards-list" id="cardsContainer"></div>
+    </section>
+
+    <!-- COLONNE DROITE : LECTEUR DE CHAPITRES EPUB / VISIONNEUSE PDF -->
+    <section class="reader-pane" id="readerPane">
+      <div id="readerEmptyState" class="reader-empty">
+        <div class="empty-card">
+          <h2>📖 Lecteur Hors-Ligne &amp; Export Téléphone (MG)</h2>
+          <p>
+            Sélectionnez une publication à gauche pour <strong>lire ses chapitres en malgache hors-ligne</strong>,
+            ouvrir son <strong>PDF</strong>, ou récupérer son fichier <strong><code>.jwpub</code></strong> pour
+            <em>JW Library</em> sur Android et iPhone.
+          </p>
+          <div class="quick-tips">
+            <div class="tip-box">
+              <strong>1. Télécharger vos catégories</strong>
+              <span>Cliquez sur <em>« ⬇ Télécharger (JWPUB / EPUB / PDF) »</em> en haut à droite et cochez Baiboly, Boky, Tilikambo Fiambenana, etc.</span>
+            </div>
+            <div class="tip-box">
+              <strong>2. Rechercher comme sur une bibliothèque d'étude</strong>
+              <span>Les fichiers <code>.epub</code> et <code>.pdf</code> téléchargés sont automatiquement indexés chapitre par chapitre en malgache.</span>
+            </div>
+            <div class="tip-box">
+              <strong>3. Mettre à jour plus tard en 1 clic</strong>
+              <span>Branchez votre disque dur externe sur un PC connecté et cliquez sur <em>« 🔄 Vérifier mises à jour »</em> : seules les nouveautés sont ajoutées !</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="readerActive" class="reader-active hidden">
+        <div class="reader-toolbar">
+          <button class="btn btn-outline btn-sm mobile-back" id="btnMobileBack">← Retour liste</button>
+          <div class="reader-pub-meta">
+            <span class="pub-cat-tag" id="readerCatTag">Boky</span>
+            <h2 id="readerPubTitle">Titre</h2>
+          </div>
+          <div class="reader-file-btns" id="readerFileBtns"></div>
+        </div>
+
+        <!-- Barre de navigation des chapitres EPUB -->
+        <div class="chapter-nav" id="chapterNavBar">
+          <button class="btn btn-outline btn-sm" id="btnPrevChap">◀ Préc.</button>
+          <select id="selChapterToc" class="chapter-select"></select>
+          <button class="btn btn-outline btn-sm" id="btnNextChap">Suiv. ▶</button>
+          <div class="font-controls">
+            <button class="btn btn-outline btn-sm" id="btnFontMinus" title="Réduire la taille du texte">A-</button>
+            <button class="btn btn-outline btn-sm" id="btnFontPlus" title="Agrandir la taille du texte">A+</button>
+            <button class="btn btn-outline btn-sm" id="btnToggleNight" title="Mode lecture nuit">🌙</button>
+          </div>
+        </div>
+
+        <!-- Contenu du chapitre EPUB -->
+        <article class="chapter-body" id="chapterBody"></article>
+
+        <!-- Visionneuse PDF intégrée -->
+        <div class="pdf-viewer-wrap hidden" id="pdfViewerWrap">
+          <div class="pdf-viewer-bar">
+            <span>📄 Visionneuse PDF hors-ligne</span>
+            <div>
+              <button class="btn btn-outline btn-sm" id="btnBackToChapters">📖 Revenir aux chapitres texte</button>
+              <a class="btn btn-primary btn-sm" id="linkOpenPdfTab" href="#" target="_blank" rel="noopener">↗ Plein écran / Imprimer</a>
+            </div>
+          </div>
+          <iframe id="pdfFrame" title="Lecteur PDF"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODALE : TÉLÉCHARGEMENT PAR SÉLECTION & MISE À JOUR -->
+  <div class="modal-backdrop hidden" id="syncModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>⬇ Télécharger &amp; Mettre à jour les publications (Malgache — MG)</h2>
+        <button class="btn-close" id="btnCloseSyncModal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="storage-alert" id="modalStorageInfo">
+          💾 Dossier de stockage : <code id="lblFilesDir">./fichiers</code> — Espace libre : <strong id="lblDiskFree">…</strong>
+        </div>
+
+        <!-- 1. FORMATS -->
+        <div class="form-group">
+          <label class="group-title">1. Formats de fichiers à télécharger :</label>
+          <div class="format-checks">
+            <label class="card-check">
+              <input type="checkbox" class="fmt-chk" value="JWPUB" checked />
+              <div>
+                <strong>📲 JWPUB</strong>
+                <small>Pour importer hors-ligne dans l'application officielle <em>JW Library</em> (Android, iPhone, PC)</small>
+              </div>
+            </label>
+            <label class="card-check">
+              <input type="checkbox" class="fmt-chk" value="EPUB" checked />
+              <div>
+                <strong>📖 EPUB (Recommandé)</strong>
+                <small>Indexe automatiquement tous les chapitres &amp; versets pour la recherche hors-ligne</small>
+              </div>
+            </label>
+            <label class="card-check">
+              <input type="checkbox" class="fmt-chk" value="PDF" checked />
+              <div>
+                <strong>📄 PDF</strong>
+                <small>Mise en page originale identique à l'édition imprimée</small>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- 2. CATÉGORIES -->
+        <div class="form-group">
+          <div class="group-header-row">
+            <label class="group-title">2. Catégories en malgache (`MG`) :</label>
+            <div>
+              <button type="button" class="btn-link" id="btnCheckAllCats">Tout cocher</button> ·
+              <button type="button" class="btn-link" id="btnCheckBooksOnly">Livres &amp; Bible seulement</button>
+            </div>
+          </div>
+          <div class="cat-checks-grid" id="modalCatChecks"></div>
+        </div>
+
+        <!-- 3. PÉRIODE & CATALOGUE COMPLET -->
+        <div class="form-group two-cols">
+          <div>
+            <label class="group-title" for="selSyncYearMin">3. Années à inclure (pour les périodiques) :</label>
+            <select id="selSyncYearMin" class="select-full">
+              <option value="2024">Depuis 2024 (Récent &amp; rapide — ~0,5 à 1,5 Go)</option>
+              <option value="2020" selected>Depuis 2020 (Recommandé — ~1,5 à 3,5 Go)</option>
+              <option value="2015">Depuis 2015 (~3 à 5 Go)</option>
+              <option value="2000">Depuis 2000 (~4 à 7 Go)</option>
+              <option value="0">Toutes les années disponibles (1970–2026 — ~5 à 8 Go)</option>
+            </select>
+          </div>
+          <div>
+            <label class="group-title" for="inpMaxPubs">Limite max par session :</label>
+            <input type="number" id="inpMaxPubs" class="select-full" value="300" min="1" max="3000" />
+          </div>
+        </div>
+
+        <label class="chk-block">
+          <input type="checkbox" id="chkSyncFullCatalog" />
+          <span>
+            <strong>Charger tout le catalogue historique officiel Malgache (1970–2026)</strong>
+            <small>Télécharge une fois l'index officiel du catalogue (~57 Mo compressé) pour découvrir toutes les publications malgaches anciennes et récentes, puis supprime le fichier temporaire.</small>
+          </span>
+        </label>
+
+        <!-- Dossier personnalisé (optionnel) -->
+        <details class="advanced-box">
+          <summary>⚙️ Options Disque Dur Externe &amp; Fichiers déjà téléchargés</summary>
+          <div class="advanced-inner">
+            <p class="small-note">
+              <strong>Astuce portabilité :</strong> si vous placez tout le dossier <code>jw-malagasy-offline</code> directement sur votre disque dur externe, laissez ce champ vide : le sous-dossier relatif <code>fichiers/</code> suivra automatiquement quelle que soit la lettre du disque (<code>D:</code>, <code>E:</code>, <code>F:</code>) !
+            </p>
+            <div class="dir-row">
+              <input type="text" id="inpCustomDir" placeholder="Chemin personnalisé optionnel (ex: E:\JW_Malagasy_Fichiers)" />
+              <button type="button" class="btn btn-outline btn-sm" id="btnSaveCustomDir">Enregistrer</button>
+            </div>
+            <div style="margin-top:10px;">
+              <button type="button" class="btn btn-outline btn-sm" id="btnScanLocalFolder">
+                📂 Scanner et indexer les fichiers déjà copiés dans le dossier « fichiers/ »
+              </button>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="btnCancelSync">Fermer</button>
+        <button class="btn btn-update" id="btnModalRunUpdate" title="Vérifie le catalogue officiel et ne télécharge que les nouveautés ou fichiers modifiés">
+          🔄 Vérifier &amp; télécharger uniquement les mises à jour
+        </button>
+        <button class="btn btn-primary" id="btnModalStartDownload">
+          ⬇ Lancer le téléchargement
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE : GUIDE TÉLÉPHONE (ANDROID & IPHONE) + DISQUE DUR EXTERNE -->
+  <div class="modal-backdrop hidden" id="phoneModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>📱 Utiliser sur Android, iPhone &amp; Disque Dur Externe (0 Mo Internet)</h2>
+        <button class="btn-close" id="btnClosePhoneModal">✕</button>
+      </div>
+      <div class="modal-body guide-body">
+        <div class="wifi-box">
+          <h3>📶 Méthode 1 — Recherche &amp; Téléchargement sans câble en Wi-Fi local (Android &amp; iPhone)</h3>
+          <p>
+            Connectez votre téléphone et cet ordinateur au même Wi-Fi (ou au <strong>partage de connexion</strong> du téléphone, même <em>sans forfait Internet actif</em>), puis ouvrez cette adresse dans <strong>Chrome (Android)</strong> ou <strong>Safari (iPhone)</strong> :
+          </p>
+          <div class="lan-url-list" id="lanUrlList"></div>
+          <p class="small-note">
+            Depuis votre téléphone, vous pourrez <strong>rechercher instantanément dans tous les chapitres malgaches</strong> stockés sur le disque dur externe ET toucher le bouton <code>📲 JWPUB</code> d'un livre pour l'ouvrir directement dans <strong>JW Library</strong> !
+          </p>
+        </div>
+
+        <div class="guide-grid">
+          <div class="guide-card">
+            <h4>🤖 Sur Android (100 % autonome dehors)</h4>
+            <ol>
+              <li>Dans le dossier <code>jw-malagasy-offline/fichiers/JWPUB/</code>, vos fichiers <code>.jwpub</code> sont rangés proprement par catégorie.</li>
+              <li>Copiez-les sur le téléphone (câble USB ou clé USB-C) : touchez un fichier <code>.jwpub</code> dans l'appli <em>Fichiers</em> → choisissez <strong>JW Library</strong>.</li>
+              <li><strong>Bonus moteur de recherche sur Android sans PC :</strong> installez <em>Termux</em> une fois, copiez le dossier et tapez <code>bash lancer.sh</code> puis ouvrez <code>http://127.0.0.1:8767</code> dans Chrome !</li>
+            </ol>
+          </div>
+          <div class="guide-card">
+            <h4>🍏 Sur iPhone / iPad (iOS)</h4>
+            <ol>
+              <li>En Wi-Fi local via l'adresse ci-dessus dans <strong>Safari</strong> : touchez <code>📲 JWPUB</code> sur une publication → <em>Télécharger</em> → touchez le fichier → <strong>Partager → JW Library</strong>.</li>
+              <li>Ou par câble USB / AirDrop / clé Lightning-USB-C : copiez les fichiers <code>.jwpub</code> ou <code>.epub</code> dans l'app <strong>Fichiers</strong> de l'iPhone → touchez un <code>.jwpub</code> → <strong>JW Library</strong> (ou <em>Livres</em> d'Apple pour les <code>.epub</code>).</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="hdd-warning">
+          <strong>💾 Règle d'or pour votre Disque Dur Externe :</strong>
+          Avant de débrancher le câble USB de votre disque dur externe, <strong>fermez toujours la fenêtre noire du serveur</strong> (ou cliquez sur <em>Arrêter proprement</em> si un téléchargement est en cours) afin que la base SQLite enregistre proprement toutes les données.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btnOkPhoneModal">Compris</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

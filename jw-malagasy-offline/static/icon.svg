@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="22" fill="#2b4c7e"/>
+  <path d="M28 28h52c8 0 14 6 14 14v58c0-6-5-10-12-10H28V28z" fill="#fcfbf7"/>
+  <path d="M36 42h38v6H36zm0 14h38v6H36zm0 14h26v6H36z" fill="#2b4c7e"/>
+  <rect x="66" y="74" width="38" height="28" rx="6" fill="#d97706"/>
+  <text x="85" y="93" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#ffffff">MG</text>
+</svg>

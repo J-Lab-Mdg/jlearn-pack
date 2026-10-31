@@ -1,9 +1,0 @@
-data/*.db
-data/*.db-wal
-data/*.db-shm
-pdfs/
-runtime/
-__pycache__/
-*.pyc
-*.zip
-*.part

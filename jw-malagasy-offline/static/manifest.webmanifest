@@ -1,0 +1,16 @@
+{
+  "name": "JW Malagasy Offline — JWPUB, EPUB, PDF & Recherche",
+  "short_name": "JW MG Offline",
+  "description": "Bibliothèque personnelle hors-ligne en malgache (JWPUB, EPUB, PDF, mises à jour et recherche plein-texte)",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f5f7",
+  "theme_color": "#2b4c7e",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
