@@ -58,3 +58,35 @@ JLEARN_TATITRA=manuel-malagasy-t6 ./run.sh ../fianarana-malagasy/fikarohana.py -
 - **`Faharetany`** : nangonina tamin'ny taratasy ofisialy izany (ora 20 isaky ny lesona araka ny tabilao 7-7-7-6-6) ; mety ho ovaina araka ny tokony ho izy.
 - **L14 (Santionany amin'ny asa sorany)** : **0 sary** — ny santionany tononkalo / tantara dia navela ho anaty tabilao sy ny lahabaoza (`tononkalo`).
 - Rakitra tsy mba voafaritra ara-potoana ao amin'ny FRP : misy lesona 3 (12→15) nampifandimbiasina amin'ny herinandro 1 (L12) satria literatiora ny atao hoe « faran'ny taona » araka ny fandaharana an'ny RAPE.
+
+---
+
+# V2 (2026-11-01) · Rafitra araka ny ZANA-TARANJA an'ny PE T6 + laharisa interactif
+
+Ny mpitantana vaovao dia **`src/build_manuel_t6.py`** (tsy `build_fiche.py data_manuel` intsony) :
+
+```bash
+./run.sh src/sary_fano.py
+./run.sh src/build_manuel_t6.py          # -> output/Malagasy_T6_J-Learn.docx
+```
+
+| ZANA-TARANJA | Anarana ara-PE | Ora PE | Firaketana ao amin'ny boky |
+|---|---|---|---|
+| I | MALAGASY, KOLONTSAINA ARY FIARAHAMONINA | 38 (20 + 18) | mbola ho soratana (tanindrazana sy firenena · olombelona sy tontolo iainana) |
+| II | TONTOLON'NY LITERATIORA | 54 (14+14+12+14) | L12 literatiora · L13 Narivony · L14 santionany · L15 tononkalo/rima — **mbola : Sarin-teny, Rakotomalala** |
+| III | Fepetra sy tekinika fitrandrahana ireo lohahevitra (Votoatiny) | — | laharisa + fandaharam-potoana + toro-lalana 3 (A0-A2) |
+| IV | FIASAN'NY TENY - Tsipelina | 12 | L1 teny mitovy fanonona · L2 verindroa · L3 fanakambanan-teny |
+| V | FIASAN'NY TENY - Fitsipiky ny teny | 20 | L4-L7 tsirinteny/sokajin-teny · L8-L11 fitsipika — **mbola : matoanteny** |
+| VI | ASA AN-TSORATRA - Lahatsoratra manoritsoritra | 20 | mbola ho soratana (5 puce : famaritana, mari-pamantarana, endrika, firafitra, famoronana) |
+
+- **Laharisa interactif** : tabilao misy rohy anatiny (`w:hyperlink w:anchor`) mankany amin'ny
+  signets `bm_zt1..6` sy `bm_fiche1..18` + « ◄ Miverina amin'ny laharisa » isaky ny farany
+  → **tsy mila `Update field`** (didin'ny mpampiasa : hyperlink ihany, fa tsy champ TOC).
+- **Navigation** : style `Heading 1/2` + `w:outlineLvl` (35 lohateny) → miseho ao amin'ny
+  « volet Navigation » an'ny Word.
+- **Fizarana (section) 7** : en-tête miverimberina = « ZANA-TARANJA N · <anarana> » ;
+  tongony = « Pajy PAGE / NUMPAGES » (champs calculés à l'ouverture).
+- `src/pe_t6.py` : **ny Vontoatiny / Sahanasa / Tetika amam-paika / Fitaovana / Voka-pianarana**
+  rehetra voasokajy **teny-teny** avy amin'ny PE (extrait : `refs/10_PE_T6_ZANATARANJA.txt`).
+- `src/sortsy.py` : marika / rohy / titre / fizarana — rafitra ihany, tsy mikasika ny votoaty.
+- Dernier build : **1 274 058 o · 1 340 par. · 71 tabilao · 134 190 car. · 48 sary · TUATUA**.
