@@ -158,6 +158,15 @@ function lessonS1() {
     sub("Exercice — j'ai bien écouté :"),
     p("1. Complète : « La culture, c'est tout ce qu'un peuple ………, ……… et ………. »"),
     p("2. Cite deux rites entendus dans le reportage.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Vrai ou faux ? Justifie. ", { bold: true, color: C.SALMON }), run("a) La culture, c'est seulement les danses. — b) Un peuple transmet sa culture aux jeunes. — c) Le lamba est un plat.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : la culture, c'est tout ce qu'un peuple invente, partage et transmet. b) Vrai. c) Faux : le lamba est un vêtement.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Choisis la bonne réponse. ", { bold: true, color: C.SALMON }), run("Un reportage sert surtout à : a) donner des ordres — b) informer — c) faire pleurer.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("b) informer.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Remets la méthode dans l'ordre. ", { bold: true, color: C.SALMON }), run("a) Je réponds aux questions. — b) J'écoute une première fois sans écrire. — c) Je lis les questions. — d) J'écoute une deuxième fois et je note.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("c → b → d → a : je lis les questions, j'écoute, je réécoute en notant, je réponds.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. Trouve la question. ", { bold: true, color: C.SALMON }), run("Voici la réponse : « Le famadihana et le famorana. » Écris la question qui convient.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Quels rites le reportage cite-t-il ?", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
@@ -238,6 +247,15 @@ function lessonS2() {
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« le langage malgache »   "), run("[la langue = ce que parle un peuple ; le langage = la manière de parler]", { italic: true, color: C.GRAY, size: 26 })], { after: 80 }),
     sub("Exercice — je classe :"),
     p("Mets chaque mot dans sa famille : le salegy — le ravitoto — la case en bois — le sambatra.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Chasse à l'intrus. ", { bold: true, color: C.SALMON }), run("Barre l'intrus : le romazava — le koba — la valiha — le ravitoto.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("La valiha : c'est un instrument de musique, les trois autres sont des plats.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Relie chaque mot à sa famille. ", { bold: true, color: C.SALMON }), run("le lambahoany • le hira gasy • la maison de ravinala • le kabary  →  la langue / les vêtements / les danses et musiques / l'habitat.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("lambahoany → vêtements ; hira gasy → danses et musiques ; maison de ravinala → habitat ; kabary → langue.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Devinette. ", { bold: true, color: C.SALMON }), run("Je suis un gâteau de riz, d'arachide et de sucre, enveloppé dans des feuilles de banane. Qui suis-je ?")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Le koba.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. J'écris. ", { bold: true, color: C.SALMON }), run("Écris deux phrases sur un plat malgache que tu aimes. Utilise « délicieux » et « préparer ».")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Ma mère prépare le romazava chaque dimanche. Ce plat est délicieux avec du riz chaud.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
@@ -314,6 +332,15 @@ function lessonS3() {
       "les guillemets donnent les paroles exactes : l'article devient vivant", { after: 80 }),
     sub("Exercice — je retrouve dans le texte :"),
     p("1. Recopie le titre. — 2. Souligne le chapeau. — 3. Encadre une citation.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Choisis la bonne réponse. ", { bold: true, color: C.SALMON }), run("Le chapeau d'un article, c'est : a) la première phrase qui résume — b) le titre — c) la photo.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) la première phrase qui résume l'essentiel.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Vrai ou faux ? ", { bold: true, color: C.SALMON }), run("a) Une citation rapporte les paroles exactes entre guillemets. — b) Le titre se place à la fin de l'article.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : le titre est en haut, c'est lui qui attire l'œil.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Remets l'article dans l'ordre. ", { bold: true, color: C.SALMON }), run("a) le corps de l'article — b) le titre — c) le chapeau.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("b → c → a : titre, puis chapeau, puis corps de l'article.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. Relie chaque partie à son rôle. ", { bold: true, color: C.SALMON }), run("le titre • le chapeau • la citation  →  résume l'essentiel / donne la parole à un témoin / attire l'œil.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("titre → attire l'œil ; chapeau → résume l'essentiel ; citation → donne la parole à un témoin.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
@@ -388,6 +415,15 @@ function lessonS4() {
     exLine([run("partir → nous "), run("partons", { bold: true })], "pas de -issons : ce n'est PAS le 2e groupe !", { after: 80 }),
     sub("Exercice — je conjugue au présent :"),
     p("Les enfants (grandir) ……… — Nous (choisir) ……… — Les femmes (tisser) ……… — Vous (préparer) ………", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Complète le tableau. ", { bold: true, color: C.SALMON }), run("tisser : je ……… , nous ……… , ils ……… — grandir : je ……… , nous ……… , ils ………")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("je tisse, nous tissons, ils tissent — je grandis, nous grandissons, ils grandissent.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Chasse à l'intrus. ", { bold: true, color: C.SALMON }), run("Barre le verbe qui n'est pas du 2e groupe : finir — choisir — partir — grandir.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Partir : on dit « nous partons », sans -issons. Il est du 3e groupe.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Complète le texte. ", { bold: true, color: C.SALMON }), run("Les artisans (sculpter) ……… le bois. Nous (réussir) ……… nos paniers. Tu (danser) ……… le salegy.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("sculptent — réussissons — danses.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. Chasse aux erreurs. ", { bold: true, color: C.SALMON }), run("Deux erreurs se cachent : « Nous finissons la natte. Les enfants grandient vite. Vous préparrez le repas. »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("grandient → grandissent ; préparrez → préparez.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
@@ -463,6 +499,15 @@ function lessonS5() {
       "ici, l'agent n'est pas dit", { after: 80 }),
     sub("Exercice — active ou passive ?"),
     p("1. Le public applaudit les danseurs. — 2. Le kabary est écouté avec respect. — 3. Les paniers sont tressés par les femmes.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Choisis la bonne réponse. ", { bold: true, color: C.SALMON }), run("Dans « Les paniers sont tressés par les femmes », le sujet : a) fait l'action — b) subit l'action.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("b) il subit l'action : ce sont les femmes qui tressent.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Classe : active ou passive ? ", { bold: true, color: C.SALMON }), run("a) Le public admire les danseurs. — b) La valiha est fabriquée en bambou. — c) Les femmes tissent la soie. — d) Le kabary est écouté par tous.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Actives : a et c. Passives : b et d.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Vrai ou faux ? ", { bold: true, color: C.SALMON }), run("À la forme passive, on trouve souvent « par » devant celui qui fait vraiment l'action.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Vrai : « par les femmes », « par tous » — c'est le complément d'agent.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. J'écris. ", { bold: true, color: C.SALMON }), run("Écris une phrase active sur le hira gasy, puis transforme-la à la forme passive.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : La foule applaudit les chanteurs. → Les chanteurs sont applaudis par la foule.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
@@ -535,6 +580,15 @@ function lessonS6() {
     p("est préparée (présent) — était préparée (imparfait) — sera préparée (futur).", { after: 80 }),
     sub("Exercice — je transforme comme dans l'exemple :"),
     p("« Les femmes tissent les lambas. » → Les lambas ……… — « Mon oncle sculpte cette statue. » → Cette statue ………", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Complète avec « être » au bon temps. ", { bold: true, color: C.SALMON }), run("La fête ……… préparée (présent). — La fête ……… préparée (imparfait). — La fête ……… préparée (futur).")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("est préparée — était préparée — sera préparée.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Chasse aux erreurs d'accord. ", { bold: true, color: C.SALMON }), run("« Les lambas sont tissé par les femmes. La statue est sculptés par mon oncle. »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("tissé → tissés (les lambas, masculin pluriel) ; sculptés → sculptée (la statue, féminin singulier).", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Complète le texte. ", { bold: true, color: C.SALMON }), run("Le koba ……… vendu au marché chaque matin. Hier, les paniers ……… tressés sous la véranda. (est / étaient)")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("est — étaient.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. Enrichis la phrase. ", { bold: true, color: C.SALMON }), run("Ajoute « par + celui qui fait l'action » : « Le riz est cultivé ……… . »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : par les paysans des hautes terres.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
@@ -604,6 +658,15 @@ function lessonS7() {
     p("", { after: 40 }),
     sub("Exercice — à toi de présenter :"),
     p("Complète pour ton élément préféré : « Connaissez-vous ……… ? C'est ……… On ……… Quel ……… ! »", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Remets le modèle dans l'ordre. ", { bold: true, color: C.SALMON }), run("a) Quel délice ! — b) Connaissez-vous le koba ? — c) On le vend sur tous les marchés. — d) C'est un gâteau de riz et d'arachide.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("b → d → c → a : question, définition, usage, exclamation finale.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Relie chaque phrase à son rôle. ", { bold: true, color: C.SALMON }), run("la question d'accroche • la définition • l'exclamation finale  →  donne envie d'écouter / montre mon enthousiasme / explique ce que c'est.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("question → donne envie d'écouter ; définition → explique ; exclamation → montre mon enthousiasme.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Jeu de rôle à deux. ", { bold: true, color: C.SALMON }), run("L'un présente le lamba en une minute avec le plan de la leçon ; l'autre pose deux questions polies, puis on échange les rôles.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Pistes de questions : Avec quoi est-il tissé ? Quand le porte-t-on ?", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. J'observe l'image. ", { bold: true, color: C.SALMON }), run("Regarde l'illustration de la leçon : écris deux phrases au présent sur ce que fait l'élève.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : L'élève présente son exposé devant la classe. Les camarades écoutent avec attention.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
@@ -671,6 +734,15 @@ function lessonS8() {
     exLine([run("Paragraphe 2 : ", { bold: true }), run("j'explique pourquoi c'est important.")], "sa place dans notre culture", { after: 80 }),
     sub("Exercice — ton plan en trois lignes :"),
     p("Sujet imposé : « La valiha ». Écris le titre, le chapeau (une phrase) et les deux idées de paragraphes.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Choisis la bonne réponse. ", { bold: true, color: C.SALMON }), run("On écrit son plan : a) après avoir rédigé — b) avant de rédiger — c) jamais.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("b) avant de rédiger : le plan est la charpente de l'article.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Remets les gestes dans l'ordre. ", { bold: true, color: C.SALMON }), run("a) Je classe mes idées. — b) Je cherche mes idées. — c) Je rédige mon plan en trois lignes.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("b → a → c : je cherche, je classe, puis j'écris le plan.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Complète le plan. ", { bold: true, color: C.SALMON }), run("Sujet : « Le salegy ». Titre : ……… — Chapeau (une phrase) : ……… — Idée 1 : ……… — Idée 2 : ………")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Titre : Le salegy, la danse qui fait vibrer le Nord. Chapeau : Né sur la côte, le salegy anime toutes les fêtes. Idée 1 : ses origines. Idée 2 : son rythme et ses instruments.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. La famille de mots. ", { bold: true, color: C.SALMON }), run("Complète la famille de « informer » : une ……… , un texte ……… , un journaliste bien ……… .")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("une information, un texte informatif, un journaliste bien informé.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
@@ -737,6 +809,15 @@ function lessonS9() {
       "je corrige ET j'enrichis : une phrase complète, précise", { after: 80 }),
     sub("Exercice — améliore comme dans l'exemple :"),
     p("« la valiha cest joli » → ………", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Chasse aux erreurs. ", { bold: true, color: C.SALMON }), run("Quatre erreurs se cachent : « les artisan sculpte le bois il son habiles »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Les artisans sculptent le bois ; ils sont habiles. (majuscule, pluriels, « sont », ponctuation)", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Enrichis comme un écrivain. ", { bold: true, color: C.SALMON }), run("« La valiha est jolie. » → ajoute un détail précis et un sentiment.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : La valiha, tube de bambou aux cordes fines, charme tous ceux qui l'écoutent.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Vrai ou faux ? Ma grille de relecture. ", { bold: true, color: C.SALMON }), run("a) Je relis une seule fois, très vite. — b) Je vérifie majuscules, points et accords. — c) Je remplace un mot pauvre par un mot précis.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : on relit lentement, plusieurs fois. b) Vrai. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. J'écris. ", { bold: true, color: C.SALMON }), run("Écris deux phrases sur la soie tissée en utilisant « d'abord » et « ensuite ».")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : D'abord, les femmes préparent les fils de soie. Ensuite, elles tissent le lamba sur le métier.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
@@ -802,6 +883,15 @@ function lessonS10() {
       "ni trop vite, ni trop lentement — et je regarde mon public", { after: 80 }),
     sub("Exercice — marque / et //, puis lis à haute voix :"),
     p("« Dès le matin, les familles s'installent sur les gradins. Les artistes arrivent en cortège, vêtus de rouge et de blanc. Quel spectacle ! »", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Choisis la bonne réponse. ", { bold: true, color: C.SALMON }), run("Une phrase qui finit par « ! » se lit avec : a) une voix plate — b) une voix expressive — c) un murmure.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("b) une voix expressive : le point d'exclamation montre l'émotion.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("2. Marque les pauses. ", { bold: true, color: C.SALMON }), run("Recopie et place / (petite pause) et // (grande pause) : « Les artistes arrivent en cortège, vêtus de rouge et de blanc. Quel spectacle ! »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Les artistes arrivent en cortège, / vêtus de rouge et de blanc. // Quel spectacle ! //", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("3. Vrai ou faux ? ", { bold: true, color: C.SALMON }), run("a) Je respire aux virgules. — b) Je lis le plus vite possible pour finir avant les autres.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : un bon lecteur prend son temps et articule.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
+    pr([run("4. Jeu de rôle. ", { bold: true, color: C.SALMON }), run("Lis le passage de la leçon comme un journaliste de radio ; ton voisin note un point réussi et un point à améliorer, puis échangez.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Points à observer : les pauses, la voix qui monte aux « ! », l'articulation.", { italic: true, color: C.GRAY, size: 24 })], { after: 80 }),
   ];
 }
 
