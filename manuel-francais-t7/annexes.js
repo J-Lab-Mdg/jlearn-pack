@@ -341,6 +341,201 @@ function finalPage() {
   ];
 }
 
+
+// ============ ANNEXE 7 — Le tribunal des homophones ============
+function annex7() {
+  return [
+    ...annexTitle("annex7", 7, "LE TRIBUNAL DES HOMOPHONES"),
+    p("Les homophones se prononcent pareil mais ne s'écrivent pas pareil. L'annexe 6 a jugé a/à, et/est, on/ont, son/sont. Voici les autres accusés — puis le grand test !", { after: 100 }),
+    sub("1. ce / se"),
+    bullet([run("ce", { bold: true, color: C.SALMON, hl: true }), run(" montre quelque chose : "), run("ce panier, ce chant", { bold: true }), run(". — "), run("se", { bold: true, color: C.SALMON, hl: true }), run(" fait partie du verbe : "), run("il se lève", { bold: true }), run(".")]),
+    note("astuce : remplace par « le » → « le panier » marche : c'est CE. « il le lève » ne veut rien dire ici : c'est SE"),
+    sub("2. ou / où"),
+    bullet([run("ou", { bold: true, color: C.SALMON, hl: true }), run(" = un choix : "), run("du riz ou du manioc", { bold: true }), run(". — "), run("où", { bold: true, color: C.SALMON, hl: true }), run(" = un lieu : "), run("le village où je suis né", { bold: true }), run(".")]),
+    note("astuce : si tu peux dire « ou bien », écris OU sans accent"),
+    sub("3. la / là"),
+    bullet([run("la", { bold: true, color: C.SALMON, hl: true }), run(" accompagne un nom : "), run("la valiha", { bold: true }), run(". — "), run("là", { bold: true, color: C.SALMON, hl: true }), run(" montre un endroit : "), run("viens là !", { bold: true })]),
+    sub("4. ses / ces"),
+    bullet([run("ses", { bold: true, color: C.SALMON, hl: true }), run(" = les siens : "), run("Rakoto range ses outils", { bold: true }), run(". — "), run("ces", { bold: true, color: C.SALMON, hl: true }), run(" = ceux que je montre : "), run("regarde ces baobabs !", { bold: true })]),
+    note("astuce : « ces baobabs-là » marche → CES ; « ses outils à lui » marche → SES"),
+    sub("5. mes / mais"),
+    bullet([run("mes", { bold: true, color: C.SALMON, hl: true }), run(" = les miens : "), run("mes cahiers", { bold: true }), run(". — "), run("mais", { bold: true, color: C.SALMON, hl: true }), run(" = une opposition : "), run("petit mais courageux", { bold: true }), run(".")]),
+    sub("6. peu / peut / peux"),
+    bullet([run("peu", { bold: true, color: C.SALMON, hl: true }), run(" = pas beaucoup. — "), run("il peut / tu peux", { bold: true, color: C.SALMON, hl: true }), run(" = le verbe pouvoir.")]),
+    note("astuce : mets la phrase à l'imparfait → « il pouvait » : c'est le verbe"),
+    p("", { after: 60 }),
+    sub("Le grand test du tribunal (10 phrases)"),
+    p("1. (Ce / Se) matin, le marché (ce / se) remplit vite.", { after: 20 }),
+    p("2. Tu veux du poisson (ou / où) des crevettes ?", { after: 20 }),
+    p("3. Voici le village (ou / où) vivent mes cousins.", { after: 20 }),
+    p("4. Pose (la / là) natte ici, pas (la / là) !", { after: 20 }),
+    p("5. Soa a prêté (ses / ces) crayons ; regarde (ses / ces) jolis dessins au mur !", { after: 20 }),
+    p("6. (Mes / Mais) parents sont fatigués, (mes / mais) ils sourient.", { after: 20 }),
+    p("7. Il dort très (peu / peut), (mes / mais) il (peu / peut) encore travailler.", { after: 40 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("1. Ce, se — 2. ou — 3. où — 4. la, là — 5. ses, ces — 6. Mes, mais — 7. peu, mais, peut.", { italic: true, color: C.GRAY, size: 24 })], { after: 60 }),
+  ];
+}
+
+// ============ ANNEXE 8 — Les 100 mots à ne plus jamais rater ============
+function annex8() {
+  return [
+    ...annexTitle("annex8", 8, "LES 100 MOTS À NE PLUS JAMAIS RATER"),
+    p("Les mots que l'on écrit tous les jours… et que l'on rate tous les jours ! Étudie une famille par semaine : au test, ils ne te surprendront plus.", { after: 100 }),
+    sub("1. Ils finissent par une lettre muette"),
+    p("toujours — jamais — puis — alors — moins — dans — sans — sous — vers — temps — corps — repas — pays — fois — mois — bois — bras — dos — nid — fond — bord — champ — blanc — grand", { after: 30 }),
+    note("astuce : cherche un mot de la même famille — grand → grande, champ → champêtre"),
+    sub("2. Leur accent est obligatoire"),
+    p("déjà — très — après — été — école — élève — père — mère — frère — derrière — première — rivière — lumière — théâtre — forêt — île — hôpital — bientôt — plutôt — tôt — côté — âge — être — fête", { after: 30 }),
+    note("astuce : l'accent circonflexe est souvent le souvenir d'un ancien « s » : forêt → forestier"),
+    sub("3. Ils doublent une lettre"),
+    p("terre — femme — homme — comme — comment — année — appeler — arriver — attendre — attention — personne — commencer — ennemi — nourriture ? non : elle ne double pas ! — belle — nouvelle — meilleur — difficile ? non plus ! — ville — mille", { after: 30 }),
+    note("les pièges inverses : nourriture, difficile, apercevoir — une seule lettre !")
+  , sub("4. Ils ne s'écrivent pas comme ils se prononcent"),
+    p("monsieur — femme — fils — automne — temps — sept — vingt — second — aujourd'hui — oignon — eau — beaucoup — longtemps — pied — nez — riz — tabac — estomac", { after: 30 }),
+    sub("5. Les invariables à savoir par cœur"),
+    p("maintenant — pendant — souvent — surtout — aussi — assez — encore — enfin — ensuite — ensemble — pourtant — parfois — quelquefois — presque — malgré — parmi — chez — hier — demain — ici — ailleurs — dehors — dedans — partout", { after: 30 }),
+    note("rituel : trois mots par jour sur l'ardoise — en un mois, les cent mots sont à toi"),
+  ];
+}
+
+// ============ ANNEXE 9 — La boîte à connecteurs ============
+function annex9() {
+  return [
+    ...annexTitle("annex9", 9, "LA BOÎTE À CONNECTEURS"),
+    p("Les connecteurs sont les panneaux indicateurs du texte : ils relient les idées et guident le lecteur. Choisis le bon rayon de la boîte !", { after: 100 }),
+    sub("1. Pour AJOUTER une idée"),
+    bullet([run("et, aussi, de plus, ensuite, puis, enfin", { bold: true, color: C.SALMON, hl: true })]),
+    note("exemple : Le hira gasy unit la parole, la musique et aussi la danse."),
+    sub("2. Pour OPPOSER"),
+    bullet([run("mais, pourtant, cependant, au contraire, malgré", { bold: true, color: C.SALMON, hl: true })]),
+    note("exemple : La valiha semble fragile, pourtant sa voix remplit toute la place."),
+    sub("3. Pour EXPLIQUER la cause"),
+    bullet([run("car, parce que, puisque, grâce à, à cause de", { bold: true, color: C.SALMON, hl: true })]),
+    note("exemple : Le public écoute en silence, car l'art de bien parler est admiré."),
+    sub("4. Pour DIRE la conséquence"),
+    bullet([run("donc, alors, c'est pourquoi, ainsi", { bold: true, color: C.SALMON, hl: true })]),
+    note("exemple : Il a plu toute la nuit, donc la rizière est pleine."),
+    sub("5. Pour ORGANISER le temps"),
+    bullet([run("d'abord, ensuite, puis, pendant, dès que, soudain, enfin", { bold: true, color: C.SALMON, hl: true })]),
+    note("exemple : D'abord le kabary, ensuite les chants, enfin les danseurs !"),
+    sub("6. Pour SITUER dans l'espace"),
+    bullet([run("ici, là, à gauche, à droite, devant, derrière, au loin, près de, au milieu de", { bold: true, color: C.SALMON, hl: true })]),
+    note("exemple : Au milieu de la cour, les artistes saluent ; au loin, les collines écoutent."),
+    sub("7. Pour COMPARER"),
+    bullet([run("comme, plus… que, moins… que, autant… que, le même… que", { bold: true, color: C.SALMON, hl: true })]),
+    note("exemple : La soie est plus douce que le coton."),
+    sub("8. Pour CONCLURE"),
+    bullet([run("enfin, finalement, en résumé, pour conclure", { bold: true, color: C.SALMON, hl: true })]),
+    note("exemple : En résumé, la culture est un trésor que chacun doit transmettre."),
+  ];
+}
+
+// ============ ANNEXE 10 — Mes modèles de textes prêts à l'emploi ============
+function annex10() {
+  const modele = (titre, color, squelette, texte, mots) => [
+    sub(titre),
+    ...squelette.map(s => bullet([run(s)])),
+    pr([run("Modèle : ", { bold: true }), run(texte, { italic: true })], { after: 40 }),
+    note("les mots qui aident : " + mots),
+    p("", { after: 60 }),
+  ];
+  return [
+    ...annexTitle("annex10", 10, "MES MODÈLES DE TEXTES PRÊTS À L'EMPLOI"),
+    p("Un modèle court et annoté pour chaque texte de l'année. Avant d'écrire, relis le modèle du genre — puis écris le tien, avec tes mots.", { after: 100 }),
+    ...modele("1. L'article informatif (unités 1 et 3)", UCOL.u1,
+      ["le titre court qui attire l'œil", "le chapeau : une phrase qui résume", "deux paragraphes : une idée chacun", "une citation entre guillemets"],
+      "La valiha, la voix de bambou. Cet instrument accompagne les fêtes depuis des générations. On la fabrique avec un tube de bambou et des cordes fines. On en joue aux mariages et aux grandes fêtes. « Sans valiha, pas de fête », sourit un musicien.",
+      "selon, en effet, c'est-à-dire"),
+    ...modele("2. Le compte-rendu (unité 2)", UCOL.u2,
+      ["quoi ? où ? quand ? dès la première phrase", "les faits dans l'ordre", "une phrase impersonnelle au moins", "la phrase de clôture"],
+      "Samedi, la fête de l'école a eu lieu dans la grande cour. Il est huit heures quand les classes défilent. Les parents applaudissent chaque groupe. Il faut saluer le travail des maîtres : tout était prêt à temps. La journée s'achève par un grand goûter.",
+      "il y a, il faut, il est + heure"),
+    ...modele("3. Le fait divers (unité 4)", UCOL.u4,
+      ["un titre bref", "qui ? quoi ? où ? quand ? comment ?", "les temps du récit : passé composé et imparfait", "une phrase sur les suites"],
+      "Un zébu en vadrouille au marché. Hier matin, un zébu échappé a traversé le marché d'Anosibe. Les vendeuses rangeaient leurs étals quand l'animal est apparu. Plus de peur que de mal : son propriétaire l'a vite ramené. L'enquête du quartier… est déjà close !",
+      "hier, soudain, aussitôt, finalement"),
+    ...modele("4. La description (unité 5)", UCOL.u5,
+      ["une vue d'ensemble d'abord", "les détails dans un ordre : de loin à près", "les cinq sens et des adjectifs précis", "une impression finale"],
+      "Au matin, la rizière s'étend comme un miroir vert. De loin, les terrasses dessinent des escaliers géants. Plus près, l'eau sent la terre mouillée ; les jeunes plants, tendres et dorés, frissonnent au vent. On resterait là des heures.",
+      "comme, semble, paraît, au loin, plus près"),
+    ...modele("5. Le portrait (unité 6)", UCOL.u6,
+      ["qui est-ce ? son métier, son âge", "le corps puis le caractère", "un détail qui raconte une vie", "une parole rapportée"],
+      "Rainizafy est pêcheur depuis quarante ans. Son visage est buriné par le sel, mais ses yeux rient toujours. Ses mains, larges comme des pagaies, réparent le filet sans regarder. « La mer m'a tout appris », dit-il simplement.",
+      "qui, que, dont, où — les relatifs du portrait"),
+    ...modele("6. Le dépliant écologique (unité 7)", UCOL.u7,
+      ["un slogan à l'impératif", "trois gestes concrets", "une raison : car, grâce à", "où en savoir plus"],
+      "Protégeons notre forêt ! Plante un arbre à chaque saison. Trie tes déchets. Économise l'eau du puits. Car une colline verte retient la pluie et nourrit le village. Renseigne-toi auprès de ton fokontany.",
+      "plantez, triez, protégez — l'impératif du dépliant"),
+  ];
+}
+
+// ============ ANNEXE 11 — La carte culturelle de Madagascar ============
+function annex11() {
+  return [
+    ...annexTitle("annex11", 11, "LA CARTE CULTURELLE DE MADAGASCAR"),
+    p("Tout le manuel sur une seule image ! Retrouve sur la carte les trésors rencontrés dans les sept unités.", { after: 80 }),
+    img("carte_culturelle.png", 300, 1.7917),
+    sub("Je lis la carte"),
+    bullet([run("Le Nord : ", { bold: true }), run("le cacao d'Ambanja et la vanille de la SAVA (unité 5).")]),
+    bullet([run("La côte Est : ", { bold: true }), run("les litchis de décembre, la forêt humide et les lémuriens (unités 5 et 7).")]),
+    bullet([run("Les Hautes Terres : ", { bold: true }), run("les rizières en terrasses, la maison de brique rouge, la valiha et le hira gasy (unités 1 et 5).")]),
+    bullet([run("L'Ouest : ", { bold: true }), run("l'allée des baobabs et les troupeaux de zébus (unités 2 et 7).")]),
+    bullet([run("Le Sud et la côte : ", { bold: true }), run("les tsingy et les pirogues à balancier des pêcheurs (unités 6 et 7).")]),
+    p("", { after: 40 }),
+    sub("Le jeu de la carte"),
+    bullet([run("Choisis un pictogramme, retrouve sa leçon dans le manuel, puis présente-le en une minute avec le plan de la séance 7 !")]),
+  ];
+}
+
+// ============ ANNEXE 12 — Je m'évalue, unité par unité ============
+function annex12() {
+  const item = (t) => bullet([run(t), run("   ☆ ☆ ☆", { bold: true, color: C.SALMON })]);
+  const unite = (titre, color, items) => [
+    pr([run(titre, { bold: true, color: color })], { after: 40 }),
+    ...items.map(item),
+    p("", { after: 50 }),
+  ];
+  return [
+    ...annexTitle("annex12", 12, "JE M'ÉVALUE, UNITÉ PAR UNITÉ"),
+    p("À la fin de chaque unité, colorie tes étoiles : ☆ = j'essaie encore, ☆☆ = je sais presque, ☆☆☆ = je sais et je peux expliquer à un camarade. Sois honnête : c'est TON tableau de bord.", { after: 100 }),
+    ...unite("UNITÉ 1 — LA CULTURE", UCOL.u1, [
+      "Je sais citer les sept familles de la culture avec un exemple.",
+      "Je sais conjuguer les verbes du 1er et du 2e groupe au présent.",
+      "Je sais transformer une phrase active en phrase passive et faire l'accord.",
+      "Je sais écrire un petit article informatif avec titre et chapeau."]),
+    ...unite("UNITÉ 2 — LES US ET COUTUMES", UCOL.u2, [
+      "Je sais expliquer ce qu'est un fady avec respect.",
+      "Je sais reconnaître et employer la phrase impersonnelle.",
+      "Je sais rédiger un compte-rendu dans l'ordre des faits.",
+      "Je sais lire un compte-rendu à haute voix sans hésiter."]),
+    ...unite("UNITÉ 3 — LES MÉDIAS", UCOL.u3, [
+      "Je sais nommer les différents médias et leur usage.",
+      "Je sais donner les valeurs du présent et de l'imparfait.",
+      "Je sais accorder le participe passé avec avoir quand il le faut.",
+      "Je sais présenter un flash d'information devant la classe."]),
+    ...unite("UNITÉ 4 — LA DÉLINQUANCE JUVÉNILE", UCOL.u4, [
+      "Je sais expliquer les dangers de la drogue et où trouver de l'aide.",
+      "Je sais employer les pronoms indéfinis et possessifs.",
+      "Je sais écrire un fait divers avec les temps du récit.",
+      "Je sais donner mon avis dans un débat en écoutant les autres."]),
+    ...unite("UNITÉ 5 — AGRICULTURE ET ÉLEVAGE", UCOL.u5, [
+      "Je sais présenter un produit de ma région avec fierté.",
+      "Je sais décrire avec les cinq sens et des adjectifs précis.",
+      "Je sais employer les verbes attributifs et les adverbes.",
+      "Je sais rédiger une description organisée, de loin à près."]),
+    ...unite("UNITÉ 6 — LA PÊCHE", UCOL.u6, [
+      "Je sais raconter le métier d'un pêcheur avec ses mots.",
+      "Je sais relier deux phrases avec qui, que, où, dont.",
+      "Je sais construire une phrase complexe avec un articulateur.",
+      "Je sais écrire le portrait d'un métier avec un détail qui raconte."]),
+    ...unite("UNITÉ 7 — L'ENVIRONNEMENT", UCOL.u7, [
+      "Je sais citer trois gestes qui protègent la nature.",
+      "Je sais employer les relatifs composés : lequel, auquel, duquel.",
+      "Je sais situer un lieu avec les indicateurs spatiaux.",
+      "Je sais créer un dépliant écologique avec un slogan à l'impératif."]),
+  ];
+}
+
 module.exports = function annexes() {
   return [
     ...annex1(), pageBreak(),
@@ -349,6 +544,12 @@ module.exports = function annexes() {
     ...annex4(), pageBreak(),
     ...annex5(), pageBreak(),
     ...annex6(), pageBreak(),
+    ...annex7(), pageBreak(),
+    ...annex8(), pageBreak(),
+    ...annex9(), pageBreak(),
+    ...annex10(), pageBreak(),
+    ...annex11(), pageBreak(),
+    ...annex12(), pageBreak(),
     ...finalPage(),
   ];
 };
