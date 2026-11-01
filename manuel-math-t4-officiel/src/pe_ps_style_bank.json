@@ -1,0 +1,1263 @@
+{
+  "lessons": {
+    "U1-L01": {
+      "intro": "Manipuler des blocs ou schémas de base 10 et associer quantité, chiffres et lettres.",
+      "section_title": "Représenter, lire et écrire les nombres naturels jusqu’à 100 000",
+      "section_text": "Un nombre jusqu’à 100 000 se lit par classes : milliers puis unités. Chaque chiffre occupe un rang dans le tableau de numération.",
+      "example": "34 206 se lit trente-quatre mille deux cent six.",
+      "formula": "",
+      "method_title": "Classement et représentation — Représenter, lire et écrire les nombres naturels jusqu’à 100 000",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Représenter, lire et écrire les nombres naturels jusqu’à 100 000 ».",
+        "Utiliser la représentation ou la propriété indiquée : Un nombre jusqu’à 100 000 se lit par classes : milliers puis unités.",
+        "Vérifier le résultat avec Chaque chiffre occupe un rang dans le tableau de numération.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "Un nombre jusqu’à 100 000 se lit par classes : milliers puis unités.",
+        "Chaque chiffre occupe un rang dans le tableau de numération.",
+        "34 206 se lit trente-quatre mille deux cent six.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": "L’ancien programme scolaire développe aussi la lecture et l’écriture de nombres au-delà de 100 000, jusqu’au million et au milliard. Cette extension n’est pas exigible dans le PE T4 ; elle peut servir de support documentaire."
+    },
+    "U1-L02": {
+      "intro": "Comparer d’abord le nombre de chiffres, puis les rangs de gauche à droite.",
+      "section_title": "Comparer et ranger les nombres jusqu’à 100 000",
+      "section_text": "Pour comparer, on regarde d’abord le nombre de chiffres. Si les nombres ont autant de chiffres, on compare les rangs de gauche à droite.",
+      "example": "45 260 > 45 206 car les dizaines sont différentes : 6 dizaines est supérieur à 0 dizaine.",
+      "formula": "",
+      "method_title": "Classement et représentation — Comparer et ranger les nombres jusqu’à 100 000",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Comparer et ranger les nombres jusqu’à 100 000 ».",
+        "Utiliser la représentation ou la propriété indiquée : Pour comparer, on regarde d’abord le nombre de chiffres.",
+        "Vérifier le résultat avec Si les nombres ont autant de chiffres, on compare les rangs de gauche à droite.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "Pour comparer, on regarde d’abord le nombre de chiffres.",
+        "Si les nombres ont autant de chiffres, on compare les rangs de gauche à droite.",
+        "45 260 > 45 206 car les dizaines sont différentes : 6 dizaines est supérieur à 0 dizaine.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": "L’ancien programme scolaire compare aussi des nombres jusqu’au million et au milliard. Dans le PE T4, le périmètre obligatoire reste limité à 100 000."
+    },
+    "U1-L03": {
+      "intro": "Utiliser le tableau de numération et des cartons de classes ou de valeurs.",
+      "section_title": "Composer et décomposer les nombres de 10 000 à 100 000",
+      "section_text": "Décomposer, c’est écrire un nombre comme une somme de valeurs de rang. Composer, c’est réunir ces valeurs pour retrouver le nombre.",
+      "example": "56 304 = 50 000 + 6 000 + 300 + 0 + 4.",
+      "formula": "",
+      "method_title": "Classement et représentation — Composer et décomposer les nombres de 10 000 à 100 000",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Composer et décomposer les nombres de 10 000 à 100 000 ».",
+        "Utiliser la représentation ou la propriété indiquée : Décomposer, c’est écrire un nombre comme une somme de valeurs de rang.",
+        "Vérifier le résultat avec Composer, c’est réunir ces valeurs pour retrouver le nombre.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "Décomposer, c’est écrire un nombre comme une somme de valeurs de rang.",
+        "Composer, c’est réunir ces valeurs pour retrouver le nombre.",
+        "56 304 = 50 000 + 6 000 + 300 + 0 + 4.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": "L’ancien programme scolaire prolonge la composition et la décomposition au-delà de 100 000. Cette extension est documentaire et ne remplace pas le contenu PE."
+    },
+    "U1-L04": {
+      "intro": "Partager des bandes, cercles ou carrés en parts égales et colorier une fraction.",
+      "section_title": "Représenter une fraction simple",
+      "section_text": "Une fraction représente des parts égales d’un tout ou d’une collection. Le numérateur compte les parts prises ; le dénominateur compte toutes les parts égales.",
+      "example": "Une bande partagée en 4 parts égales dont 3 sont colorées représente 3/4.",
+      "formula": "",
+      "method_title": "Classement et représentation — Représenter une fraction simple",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Représenter une fraction simple ».",
+        "Utiliser la représentation ou la propriété indiquée : Une fraction représente des parts égales d’un tout ou d’une collection.",
+        "Vérifier le résultat avec Le numérateur compte les parts prises ; le dénominateur compte toutes les parts égales.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "Une fraction représente des parts égales d’un tout ou d’une collection.",
+        "Le numérateur compte les parts prises ; le dénominateur compte toutes les parts égales.",
+        "Une bande partagée en 4 parts égales dont 3 sont colorées représente 3/4.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": ""
+    },
+    "U1-L05": {
+      "intro": "Superposer des bandes et produire des fractions équivalentes.",
+      "section_title": "Reconnaître et produire des fractions équivalentes",
+      "section_text": "Deux fractions sont équivalentes lorsqu’elles représentent la même quantité. On multiplie ou on divise le numérateur et le dénominateur par le même nombre non nul.",
+      "example": "1/2 = 2/4 = 4/8 : les écritures changent, mais la part reste la même.",
+      "formula": "",
+      "method_title": "Classement et représentation — Reconnaître et produire des fractions équivalentes",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Reconnaître et produire des fractions équivalentes ».",
+        "Utiliser la représentation ou la propriété indiquée : Deux fractions sont équivalentes lorsqu’elles représentent la même quantité.",
+        "Vérifier le résultat avec On multiplie ou on divise le numérateur et le dénominateur par le même nombre non nul.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "Deux fractions sont équivalentes lorsqu’elles représentent la même quantité.",
+        "On multiplie ou on divise le numérateur et le dénominateur par le même nombre non nul.",
+        "1/2 = 2/4 = 4/8 : les écritures changent, mais la part reste la même.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": ""
+    },
+    "U1-L06": {
+      "intro": "Simplifier par fractions équivalentes et comparer à l’aide de représentations ou de la droite numérique.",
+      "section_title": "Simplifier, comparer et ordonner des fractions simples",
+      "section_text": "Pour simplifier, on divise le numérateur et le dénominateur par le même nombre. Pour comparer, on utilise une représentation, la droite numérique ou un dénominateur commun simple.",
+      "example": "6/8 = 3/4 après division du haut et du bas par 2.",
+      "formula": "",
+      "method_title": "Classement et représentation — Simplifier, comparer et ordonner des fractions simples",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Simplifier, comparer et ordonner des fractions simples ».",
+        "Utiliser la représentation ou la propriété indiquée : Pour simplifier, on divise le numérateur et le dénominateur par le même nombre.",
+        "Vérifier le résultat avec Pour comparer, on utilise une représentation, la droite numérique ou un dénominateur commun simple.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "Pour simplifier, on divise le numérateur et le dénominateur par le même nombre.",
+        "Pour comparer, on utilise une représentation, la droite numérique ou un dénominateur commun simple.",
+        "6/8 = 3/4 après division du haut et du bas par 2.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": ""
+    },
+    "U1-L07": {
+      "intro": "Placer les chiffres dans un tableau de numération et relier dixièmes et centièmes aux fractions décimales.",
+      "section_title": "Lire, écrire et décomposer les nombres décimaux",
+      "section_text": "La virgule sépare la partie entière et la partie décimale. Dans les centièmes, le premier chiffre après la virgule est le dixième et le second le centième.",
+      "example": "62,57 = 62 unités + 5 dixièmes + 7 centièmes.",
+      "formula": "",
+      "method_title": "Classement et représentation — Lire, écrire et décomposer les nombres décimaux",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Lire, écrire et décomposer les nombres décimaux ».",
+        "Utiliser la représentation ou la propriété indiquée : La virgule sépare la partie entière et la partie décimale.",
+        "Vérifier le résultat avec Dans les centièmes, le premier chiffre après la virgule est le dixième et le second le centième.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "La virgule sépare la partie entière et la partie décimale.",
+        "Dans les centièmes, le premier chiffre après la virgule est le dixième et le second le centième.",
+        "62,57 = 62 unités + 5 dixièmes + 7 centièmes.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": ""
+    },
+    "U1-L08": {
+      "intro": "Utiliser une droite numérique et des écritures en dixièmes ou centièmes.",
+      "section_title": "Relier fractions décimales et nombres décimaux",
+      "section_text": "Un nombre décimal peut s’écrire avec une fraction décimale : 0,75 = 75/100. Pour comparer, on compare la partie entière puis les dixièmes et les centièmes.",
+      "example": "32,4 = 32,40 ; donc 32,4 > 32,365 car 32,400 > 32,365.",
+      "formula": "",
+      "method_title": "Classement et représentation — Relier fractions décimales et nombres décimaux",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Relier fractions décimales et nombres décimaux ».",
+        "Utiliser la représentation ou la propriété indiquée : Un nombre décimal peut s’écrire avec une fraction décimale : 0,75 = 75/100.",
+        "Vérifier le résultat avec Pour comparer, on compare la partie entière puis les dixièmes et les centièmes.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "Un nombre décimal peut s’écrire avec une fraction décimale : 0,75 = 75/100.",
+        "Pour comparer, on compare la partie entière puis les dixièmes et les centièmes.",
+        "32,4 = 32,40 ; donc 32,4 > 32,365 car 32,400 > 32,365.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": ""
+    },
+    "U1-L09": {
+      "intro": "Lire des dates, des numéros de chapitres ou des cadrans et écrire les nombres correspondants.",
+      "section_title": "Lire et écrire les chiffres romains de I à M",
+      "section_text": "Les symboles de base sont I=1, V=5, X=10, L=50, C=100, D=500 et M=1 000. On additionne les symboles dans l’ordre habituel ; dans IV, IX, XL, XC, CD et CM, le plus petit est soustrait.",
+      "example": "VIII = 5 + 1 + 1 + 1 = 8 ; IV = 5 − 1 = 4.",
+      "formula": "",
+      "method_title": "Classement et représentation — Lire et écrire les chiffres romains de I à M",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Lire et écrire les chiffres romains de I à M ».",
+        "Utiliser la représentation ou la propriété indiquée : Les symboles de base sont I=1, V=5, X=10, L=50, C=100, D=500 et M=1 000.",
+        "Vérifier le résultat avec On additionne les symboles dans l’ordre habituel ; dans IV, IX, XL, XC, CD et CM, le plus petit est soustrait.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "Les symboles de base sont I=1, V=5, X=10, L=50, C=100, D=500 et M=1 000.",
+        "On additionne les symboles dans l’ordre habituel ; dans IV, IX, XL, XC, CD et CM, le plus petit est soustrait.",
+        "VIII = 5 + 1 + 1 + 1 = 8 ; IV = 5 − 1 = 4.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": ""
+    },
+    "U1-L10": {
+      "intro": "Ateliers de représentation, comparaison, fractions, décimaux et chiffres romains.",
+      "section_title": "Consolidation et évaluation de l’unité Nombre",
+      "section_text": "Je justifie ma réponse avec un tableau, une représentation ou une comparaison. Je vérifie les fractions, les décimaux et les écritures avant de conclure.",
+      "example": "Dans 0,75, la fraction décimale correspondante est 75/100, qui se simplifie en 3/4.",
+      "formula": "",
+      "method_title": "Classement et représentation — Consolidation et évaluation de l’unité Nombre",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Consolidation et évaluation de l’unité Nombre ».",
+        "Utiliser la représentation ou la propriété indiquée : Je justifie ma réponse avec un tableau, une représentation ou une comparaison.",
+        "Vérifier le résultat avec Je vérifie les fractions, les décimaux et les écritures avant de conclure.."
+      ],
+      "attention": "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros.",
+      "retain": [
+        "Je justifie ma réponse avec un tableau, une représentation ou une comparaison.",
+        "Je vérifie les fractions, les décimaux et les écritures avant de conclure.",
+        "Dans 0,75, la fraction décimale correspondante est 75/100, qui se simplifie en 3/4.",
+        "Toujours placer les chiffres de droite à gauche dans le tableau de numération ; une classe incomplète conserve ses zéros."
+      ],
+      "ps_note": ""
+    },
+    "U2-L01": {
+      "intro": "Construire des groupes égaux à partir d’une situation-problème.",
+      "section_title": "Donner du sens à la multiplication",
+      "section_text": "Multiplier, c’est réunir plusieurs groupes égaux. Dans 6 × 4, 6 et 4 sont les facteurs et 24 est le produit.",
+      "example": "4 groupes de 6 objets donnent 4 × 6 = 24 objets.",
+      "formula": "Produit = multiplicande × multiplicateur",
+      "method_title": "Calcul et vérification — Donner du sens à la multiplication",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Donner du sens à la multiplication ».",
+        "Utiliser la représentation ou la propriété indiquée : Multiplier, c’est réunir plusieurs groupes égaux.",
+        "Vérifier le résultat avec Dans 6 × 4, 6 et 4 sont les facteurs et 24 est le produit.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "Multiplier, c’est réunir plusieurs groupes égaux.",
+        "Dans 6 × 4, 6 et 4 sont les facteurs et 24 est le produit.",
+        "4 groupes de 6 objets donnent 4 × 6 = 24 objets.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": ""
+    },
+    "U2-L02": {
+      "intro": "Décomposer les produits partiels puis vérifier le résultat.",
+      "section_title": "Multiplier un nombre naturel par deux ou trois chiffres",
+      "section_text": "On multiplie chaque chiffre du multiplicande par chaque chiffre du multiplicateur. Les produits partiels sont décalés selon le rang du chiffre multiplicateur.",
+      "example": "234 × 12 = 234 × 2 + 234 × 10 = 468 + 2 340 = 2 808.",
+      "formula": "",
+      "method_title": "Calcul et vérification — Multiplier un nombre naturel par deux ou trois chiffres",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Multiplier un nombre naturel par deux ou trois chiffres ».",
+        "Utiliser la représentation ou la propriété indiquée : On multiplie chaque chiffre du multiplicande par chaque chiffre du multiplicateur.",
+        "Vérifier le résultat avec Les produits partiels sont décalés selon le rang du chiffre multiplicateur.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "On multiplie chaque chiffre du multiplicande par chaque chiffre du multiplicateur.",
+        "Les produits partiels sont décalés selon le rang du chiffre multiplicateur.",
+        "234 × 12 = 234 × 2 + 234 × 10 = 468 + 2 340 = 2 808.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": ""
+    },
+    "U2-L03": {
+      "intro": "Distribuer une collection et formuler la division correspondante.",
+      "section_title": "Donner du sens à la division",
+      "section_text": "Diviser, c’est partager en parts égales ou chercher combien de fois un nombre est contenu dans un autre. Dans 37 ÷ 5, 37 est le dividende, 5 le diviseur, 7 le quotient et 2 le reste.",
+      "example": "37 objets partagés par 5 donnent 7 objets par part et 2 objets restent : 37 = 5 × 7 + 2.",
+      "formula": "Dividende = diviseur × quotient + reste",
+      "method_title": "Calcul et vérification — Donner du sens à la division",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Donner du sens à la division ».",
+        "Utiliser la représentation ou la propriété indiquée : Diviser, c’est partager en parts égales ou chercher combien de fois un nombre est contenu dans un autre.",
+        "Vérifier le résultat avec Dans 37 ÷ 5, 37 est le dividende, 5 le diviseur, 7 le quotient et 2 le reste.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "Diviser, c’est partager en parts égales ou chercher combien de fois un nombre est contenu dans un autre.",
+        "Dans 37 ÷ 5, 37 est le dividende, 5 le diviseur, 7 le quotient et 2 le reste.",
+        "37 objets partagés par 5 donnent 7 objets par part et 2 objets restent : 37 = 5 × 7 + 2.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": "L’ancien programme scolaire travaille aussi la division par un chiffre. Le PE T4 demande principalement la division par un diviseur de deux ou trois chiffres ; la division par un chiffre est conservée comme prérequis utile."
+    },
+    "U2-L04": {
+      "intro": "Effectuer une division posée avec essais, soustractions et abaissements successifs.",
+      "section_title": "Diviser un nombre naturel par deux ou trois chiffres",
+      "section_text": "À chaque étape, le reste doit être inférieur au diviseur. On abaisse les chiffres du dividende et on vérifie par quotient × diviseur + reste.",
+      "example": "768 ÷ 24 = 32 car 24 × 32 = 768 et le reste est 0.",
+      "formula": "",
+      "method_title": "Calcul et vérification — Diviser un nombre naturel par deux ou trois chiffres",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Diviser un nombre naturel par deux ou trois chiffres ».",
+        "Utiliser la représentation ou la propriété indiquée : À chaque étape, le reste doit être inférieur au diviseur.",
+        "Vérifier le résultat avec On abaisse les chiffres du dividende et on vérifie par quotient × diviseur + reste.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "À chaque étape, le reste doit être inférieur au diviseur.",
+        "On abaisse les chiffres du dividende et on vérifie par quotient × diviseur + reste.",
+        "768 ÷ 24 = 32 car 24 × 32 = 768 et le reste est 0.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": ""
+    },
+    "U2-L05": {
+      "intro": "Tester des divisions exactes et repérer les critères utilisables.",
+      "section_title": "Utiliser la divisibilité à partir de la division",
+      "section_text": "Un nombre est divisible par un autre lorsque la division donne un reste nul. La division permet de justifier, et non seulement de deviner, la divisibilité.",
+      "example": "84 est divisible par 7 car 84 ÷ 7 = 12, sans reste.",
+      "formula": "Dividende = diviseur × quotient + reste",
+      "method_title": "Calcul et vérification — Utiliser la divisibilité à partir de la division",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Utiliser la divisibilité à partir de la division ».",
+        "Utiliser la représentation ou la propriété indiquée : Un nombre est divisible par un autre lorsque la division donne un reste nul.",
+        "Vérifier le résultat avec La division permet de justifier, et non seulement de deviner, la divisibilité.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "Un nombre est divisible par un autre lorsque la division donne un reste nul.",
+        "La division permet de justifier, et non seulement de deviner, la divisibilité.",
+        "84 est divisible par 7 car 84 ÷ 7 = 12, sans reste.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": ""
+    },
+    "U2-L06": {
+      "intro": "Assembler ou retirer des parts sur des bandes de fractions.",
+      "section_title": "Additionner et soustraire des fractions de même dénominateur",
+      "section_text": "Pour additionner ou soustraire des fractions de même dénominateur, on garde le dénominateur. On additionne ou soustrait les numérateurs puis on simplifie si nécessaire.",
+      "example": "2/7 + 3/7 = 5/7 ; 6/8 − 2/8 = 4/8 = 1/2.",
+      "formula": "a/b + c/b = (a + c)/b",
+      "method_title": "Calcul et vérification — Additionner et soustraire des fractions de même dénominateur",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Additionner et soustraire des fractions de même dénominateur ».",
+        "Utiliser la représentation ou la propriété indiquée : Pour additionner ou soustraire des fractions de même dénominateur, on garde le dénominateur.",
+        "Vérifier le résultat avec On additionne ou soustrait les numérateurs puis on simplifie si nécessaire.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "Pour additionner ou soustraire des fractions de même dénominateur, on garde le dénominateur.",
+        "On additionne ou soustrait les numérateurs puis on simplifie si nécessaire.",
+        "2/7 + 3/7 = 5/7 ; 6/8 − 2/8 = 4/8 = 1/2.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": ""
+    },
+    "U2-L07": {
+      "intro": "Aligner les virgules dans une situation de monnaie ou de mesure.",
+      "section_title": "Additionner et soustraire des nombres décimaux",
+      "section_text": "Pour poser des décimaux, on aligne les virgules. Les dixièmes doivent être sous les dixièmes et les centièmes sous les centièmes.",
+      "example": "12,50 + 3,75 = 16,25.",
+      "formula": "Aligner les virgules avant de calculer.",
+      "method_title": "Calcul et vérification — Additionner et soustraire des nombres décimaux",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Additionner et soustraire des nombres décimaux ».",
+        "Utiliser la représentation ou la propriété indiquée : Pour poser des décimaux, on aligne les virgules.",
+        "Vérifier le résultat avec Les dixièmes doivent être sous les dixièmes et les centièmes sous les centièmes.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "Pour poser des décimaux, on aligne les virgules.",
+        "Les dixièmes doivent être sous les dixièmes et les centièmes sous les centièmes.",
+        "12,50 + 3,75 = 16,25.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": ""
+    },
+    "U2-L08": {
+      "intro": "Construire des chaînes de calcul et expliquer le déplacement des rangs.",
+      "section_title": "Multiplier et diviser mentalement par 10, 100 et 1 000",
+      "section_text": "Multiplier par 10, 100 ou 1 000 décale les chiffres vers les rangs supérieurs. Diviser par 10, 100 ou 1 000 décale les chiffres dans l’autre sens.",
+      "example": "36 × 100 = 3 600 et 3 600 ÷ 100 = 36.",
+      "formula": "× 10, × 100, × 1 000 : les chiffres se décalent vers la gauche.",
+      "method_title": "Calcul et vérification — Multiplier et diviser mentalement par 10, 100 et 1 000",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Multiplier et diviser mentalement par 10, 100 et 1 000 ».",
+        "Utiliser la représentation ou la propriété indiquée : Multiplier par 10, 100 ou 1 000 décale les chiffres vers les rangs supérieurs.",
+        "Vérifier le résultat avec Diviser par 10, 100 ou 1 000 décale les chiffres dans l’autre sens.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "Multiplier par 10, 100 ou 1 000 décale les chiffres vers les rangs supérieurs.",
+        "Diviser par 10, 100 ou 1 000 décale les chiffres dans l’autre sens.",
+        "36 × 100 = 3 600 et 3 600 ÷ 100 = 36.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": ""
+    },
+    "U2-L09": {
+      "intro": "Utiliser décomposition, commutativité, double et compensation.",
+      "section_title": "Additionner et soustraire mentalement jusqu’à 1 000",
+      "section_text": "Je décompose les nombres pour rendre le calcul plus facile. La compensation modifie les termes de façon équilibrée pour garder le même résultat.",
+      "example": "48 + 27 = 50 + 25 = 75.",
+      "formula": "",
+      "method_title": "Calcul et vérification — Additionner et soustraire mentalement jusqu’à 1 000",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Additionner et soustraire mentalement jusqu’à 1 000 ».",
+        "Utiliser la représentation ou la propriété indiquée : Je décompose les nombres pour rendre le calcul plus facile.",
+        "Vérifier le résultat avec La compensation modifie les termes de façon équilibrée pour garder le même résultat.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "Je décompose les nombres pour rendre le calcul plus facile.",
+        "La compensation modifie les termes de façon équilibrée pour garder le même résultat.",
+        "48 + 27 = 50 + 25 = 75.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": ""
+    },
+    "U2-L10": {
+      "intro": "Résoudre des problèmes mêlant multiplication, division, fractions, décimaux et calcul mental.",
+      "section_title": "Consolidation et résolution de problèmes de l’unité Opération",
+      "section_text": "Je lis la question avant de choisir l’opération. Je vérifie que l’unité et le résultat correspondent à la situation.",
+      "example": "8 boîtes de 24 craies : 8 × 24 = 192 craies.",
+      "formula": "",
+      "method_title": "Calcul et vérification — Consolidation et résolution de problèmes de l’unité Opération",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Consolidation et résolution de problèmes de l’unité Opération ».",
+        "Utiliser la représentation ou la propriété indiquée : Je lis la question avant de choisir l’opération.",
+        "Vérifier le résultat avec Je vérifie que l’unité et le résultat correspondent à la situation.."
+      ],
+      "attention": "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat.",
+      "retain": [
+        "Je lis la question avant de choisir l’opération.",
+        "Je vérifie que l’unité et le résultat correspondent à la situation.",
+        "8 boîtes de 24 craies : 8 × 24 = 192 craies.",
+        "Choisir l’opération, poser les nombres selon leur valeur de position, calculer puis vérifier le résultat."
+      ],
+      "ps_note": ""
+    },
+    "U3-L01": {
+      "intro": "Décrire le motif avec des dessins et des mots.",
+      "section_title": "Observer une suite non numérique à motif répété",
+      "section_text": "Une suite non numérique est une suite de figures ou d’objets. Le motif répété est l’élément qui revient régulièrement.",
+      "example": "Rouge, bleu, rouge, bleu, … : le motif est rouge–bleu.",
+      "formula": "",
+      "method_title": "Régularité et relation — Observer une suite non numérique à motif répété",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Observer une suite non numérique à motif répété ».",
+        "Utiliser la représentation ou la propriété indiquée : Une suite non numérique est une suite de figures ou d’objets.",
+        "Vérifier le résultat avec Le motif répété est l’élément qui revient régulièrement.."
+      ],
+      "attention": "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme.",
+      "retain": [
+        "Une suite non numérique est une suite de figures ou d’objets.",
+        "Le motif répété est l’élément qui revient régulièrement.",
+        "Rouge, bleu, rouge, bleu, … : le motif est rouge–bleu.",
+        "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme."
+      ],
+      "ps_note": ""
+    },
+    "U3-L02": {
+      "intro": "Comparer plusieurs termes et expliciter la transformation observée.",
+      "section_title": "Observer une suite non numérique à motif croissant",
+      "section_text": "Une suite à motif croissant change selon une régularité. On observe ce qui est ajouté ou retiré d’un terme au suivant.",
+      "example": "●●, ●●●●, ●●●●●● : on ajoute 2 points à chaque terme.",
+      "formula": "",
+      "method_title": "Régularité et relation — Observer une suite non numérique à motif croissant",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Observer une suite non numérique à motif croissant ».",
+        "Utiliser la représentation ou la propriété indiquée : Une suite à motif croissant change selon une régularité.",
+        "Vérifier le résultat avec On observe ce qui est ajouté ou retiré d’un terme au suivant.."
+      ],
+      "attention": "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme.",
+      "retain": [
+        "Une suite à motif croissant change selon une régularité.",
+        "On observe ce qui est ajouté ou retiré d’un terme au suivant.",
+        "●●, ●●●●, ●●●●●● : on ajoute 2 points à chaque terme.",
+        "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme."
+      ],
+      "ps_note": ""
+    },
+    "U3-L03": {
+      "intro": "Compléter une suite et verbaliser la régularité.",
+      "section_title": "Décrire une suite numérique : régularité, terme et rang",
+      "section_text": "Le terme est un élément de la suite ; le rang indique sa position. La régularité est la règle qui permet de passer d’un terme au suivant.",
+      "example": "Dans 4, 7, 10, 13, le terme de rang 3 est 10 et la règle est +3.",
+      "formula": "",
+      "method_title": "Régularité et relation — Décrire une suite numérique : régularité, terme et rang",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Décrire une suite numérique : régularité, terme et rang ».",
+        "Utiliser la représentation ou la propriété indiquée : Le terme est un élément de la suite ; le rang indique sa position.",
+        "Vérifier le résultat avec La régularité est la règle qui permet de passer d’un terme au suivant.."
+      ],
+      "attention": "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme.",
+      "retain": [
+        "Le terme est un élément de la suite ; le rang indique sa position.",
+        "La régularité est la règle qui permet de passer d’un terme au suivant.",
+        "Dans 4, 7, 10, 13, le terme de rang 3 est 10 et la règle est +3.",
+        "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme."
+      ],
+      "ps_note": ""
+    },
+    "U3-L04": {
+      "intro": "Compléter les colonnes rang, terme et règle à partir d’un motif.",
+      "section_title": "Construire une table de valeurs",
+      "section_text": "Une table de valeurs organise les rangs et les termes. Chaque colonne doit suivre la même régularité que la suite.",
+      "example": "Pour la règle +4 à partir de 2 : rang 1 → 2, rang 2 → 6, rang 3 → 10.",
+      "formula": "",
+      "method_title": "Régularité et relation — Construire une table de valeurs",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Construire une table de valeurs ».",
+        "Utiliser la représentation ou la propriété indiquée : Une table de valeurs organise les rangs et les termes.",
+        "Vérifier le résultat avec Chaque colonne doit suivre la même régularité que la suite.."
+      ],
+      "attention": "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme.",
+      "retain": [
+        "Une table de valeurs organise les rangs et les termes.",
+        "Chaque colonne doit suivre la même régularité que la suite.",
+        "Pour la règle +4 à partir de 2 : rang 1 → 2, rang 2 → 6, rang 3 → 10.",
+        "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme."
+      ],
+      "ps_note": ""
+    },
+    "U3-L05": {
+      "intro": "Créer puis faire deviner une suite à un autre groupe.",
+      "section_title": "Créer une suite numérique et justifier sa règle",
+      "section_text": "Pour créer une suite, je choisis un premier terme et une règle. Je peux vérifier ma règle en calculant plusieurs termes et en les plaçant dans une table.",
+      "example": "Premier terme 6, règle +4 : 6, 10, 14, 18, … .",
+      "formula": "",
+      "method_title": "Régularité et relation — Créer une suite numérique et justifier sa règle",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Créer une suite numérique et justifier sa règle ».",
+        "Utiliser la représentation ou la propriété indiquée : Pour créer une suite, je choisis un premier terme et une règle.",
+        "Vérifier le résultat avec Je peux vérifier ma règle en calculant plusieurs termes et en les plaçant dans une table.."
+      ],
+      "attention": "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme.",
+      "retain": [
+        "Pour créer une suite, je choisis un premier terme et une règle.",
+        "Je peux vérifier ma règle en calculant plusieurs termes et en les plaçant dans une table.",
+        "Premier terme 6, règle +4 : 6, 10, 14, 18, … .",
+        "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme."
+      ],
+      "ps_note": ""
+    },
+    "U3-L06": {
+      "intro": "Construire des chaînes de calcul avec des cartons mobiles.",
+      "section_title": "Comprendre le sens de l’égalité",
+      "section_text": "Le signe = signifie que les deux membres ont la même valeur. Une égalité peut être lue de gauche à droite ou de droite à gauche.",
+      "example": "7 + 5 = 12 et 12 = 7 + 5 sont deux écritures de la même égalité.",
+      "formula": "Les deux membres d’une égalité ont la même valeur.",
+      "method_title": "Régularité et relation — Comprendre le sens de l’égalité",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Comprendre le sens de l’égalité ».",
+        "Utiliser la représentation ou la propriété indiquée : Le signe = signifie que les deux membres ont la même valeur.",
+        "Vérifier le résultat avec Une égalité peut être lue de gauche à droite ou de droite à gauche.."
+      ],
+      "attention": "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme.",
+      "retain": [
+        "Le signe = signifie que les deux membres ont la même valeur.",
+        "Une égalité peut être lue de gauche à droite ou de droite à gauche.",
+        "7 + 5 = 12 et 12 = 7 + 5 sont deux écritures de la même égalité.",
+        "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme."
+      ],
+      "ps_note": ""
+    },
+    "U3-L07": {
+      "intro": "Comparer deux écritures et expliquer pourquoi elles sont égales.",
+      "section_title": "Utiliser commutativité, compensation, double et éléments neutres",
+      "section_text": "La commutativité permet de changer l’ordre dans une addition ou une multiplication. L’élément neutre de l’addition est 0 ; celui de la multiplication est 1.",
+      "example": "4 + 9 = 9 + 4 et 7 × 1 = 7.",
+      "formula": "",
+      "method_title": "Régularité et relation — Utiliser commutativité, compensation, double et éléments neutres",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Utiliser commutativité, compensation, double et éléments neutres ».",
+        "Utiliser la représentation ou la propriété indiquée : La commutativité permet de changer l’ordre dans une addition ou une multiplication.",
+        "Vérifier le résultat avec L’élément neutre de l’addition est 0 ; celui de la multiplication est 1.."
+      ],
+      "attention": "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme.",
+      "retain": [
+        "La commutativité permet de changer l’ordre dans une addition ou une multiplication.",
+        "L’élément neutre de l’addition est 0 ; celui de la multiplication est 1.",
+        "4 + 9 = 9 + 4 et 7 × 1 = 7.",
+        "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme."
+      ],
+      "ps_note": ""
+    },
+    "U3-L08": {
+      "intro": "Résoudre des égalités à trou en représentant la situation.",
+      "section_title": "Trouver une valeur manquante dans une égalité",
+      "section_text": "Pour trouver une valeur manquante, je cherche l’opération inverse ou je représente l’égalité. Je vérifie la valeur trouvée dans les deux membres.",
+      "example": "□ + 7 = 15 : la valeur manquante est 8 car 8 + 7 = 15.",
+      "formula": "Les deux membres d’une égalité ont la même valeur.",
+      "method_title": "Régularité et relation — Trouver une valeur manquante dans une égalité",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Trouver une valeur manquante dans une égalité ».",
+        "Utiliser la représentation ou la propriété indiquée : Pour trouver une valeur manquante, je cherche l’opération inverse ou je représente l’égalité.",
+        "Vérifier le résultat avec Je vérifie la valeur trouvée dans les deux membres.."
+      ],
+      "attention": "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme.",
+      "retain": [
+        "Pour trouver une valeur manquante, je cherche l’opération inverse ou je représente l’égalité.",
+        "Je vérifie la valeur trouvée dans les deux membres.",
+        "□ + 7 = 15 : la valeur manquante est 8 car 8 + 7 = 15.",
+        "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme."
+      ],
+      "ps_note": ""
+    },
+    "U3-L09": {
+      "intro": "Ateliers de suites et d’égalités suivis d’une évaluation courte.",
+      "section_title": "Consolidation et évaluation de l’unité Algèbre",
+      "section_text": "Je décris la régularité avant de compléter la suite. Je vérifie une égalité en calculant séparément ses deux membres.",
+      "example": "Dans 2, 5, 8, 11, la règle est +3 ; le terme suivant est 14.",
+      "formula": "",
+      "method_title": "Régularité et relation — Consolidation et évaluation de l’unité Algèbre",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Consolidation et évaluation de l’unité Algèbre ».",
+        "Utiliser la représentation ou la propriété indiquée : Je décris la régularité avant de compléter la suite.",
+        "Vérifier le résultat avec Je vérifie une égalité en calculant séparément ses deux membres.."
+      ],
+      "attention": "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme.",
+      "retain": [
+        "Je décris la régularité avant de compléter la suite.",
+        "Je vérifie une égalité en calculant séparément ses deux membres.",
+        "Dans 2, 5, 8, 11, la règle est +3 ; le terme suivant est 14.",
+        "Observer plusieurs termes, formuler la règle, puis vérifier cette règle sur un autre terme."
+      ],
+      "ps_note": ""
+    },
+    "U4-L01": {
+      "intro": "Comparer des angles d’objets de la vie courante à l’angle droit.",
+      "section_title": "Reconnaître les angles aigu, droit, obtus et plat",
+      "section_text": "Un angle est formé par deux demi-droites ayant la même origine. Un angle aigu est plus petit qu’un angle droit ; un obtus est plus grand ; un plat est aligné.",
+      "example": "Une équerre permet de reconnaître l’angle droit de 90°.",
+      "formula": "Angle droit = 90° ; angle plat = 180°.",
+      "method_title": "Propriété et construction — Reconnaître les angles aigu, droit, obtus et plat",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Reconnaître les angles aigu, droit, obtus et plat ».",
+        "Utiliser la représentation ou la propriété indiquée : Un angle est formé par deux demi-droites ayant la même origine.",
+        "Vérifier le résultat avec Un angle aigu est plus petit qu’un angle droit ; un obtus est plus grand ; un plat est aligné.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Un angle est formé par deux demi-droites ayant la même origine.",
+        "Un angle aigu est plus petit qu’un angle droit ; un obtus est plus grand ; un plat est aligné.",
+        "Une équerre permet de reconnaître l’angle droit de 90°.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U4-L02": {
+      "intro": "Estimer puis vérifier la mesure de plusieurs angles.",
+      "section_title": "Mesurer et comparer des angles",
+      "section_text": "Le sommet du rapporteur se place sur le sommet de l’angle. Un côté de l’angle doit suivre la ligne 0° du rapporteur.",
+      "example": "Un angle lu à 60° est plus petit qu’un angle lu à 110°.",
+      "formula": "Angle droit = 90° ; angle plat = 180°.",
+      "method_title": "Propriété et construction — Mesurer et comparer des angles",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Mesurer et comparer des angles ».",
+        "Utiliser la représentation ou la propriété indiquée : Le sommet du rapporteur se place sur le sommet de l’angle.",
+        "Vérifier le résultat avec Un côté de l’angle doit suivre la ligne 0° du rapporteur.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Le sommet du rapporteur se place sur le sommet de l’angle.",
+        "Un côté de l’angle doit suivre la ligne 0° du rapporteur.",
+        "Un angle lu à 60° est plus petit qu’un angle lu à 110°.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U4-L03": {
+      "intro": "Trier des triangles puis justifier le classement.",
+      "section_title": "Identifier et classer les triangles",
+      "section_text": "Un triangle possède trois côtés, trois sommets et trois angles. On peut classer les triangles par les côtés ou par les angles.",
+      "example": "Un triangle équilatéral a trois côtés de même longueur ; un triangle rectangle possède un angle droit.",
+      "formula": "Angle droit = 90° ; angle plat = 180°.",
+      "method_title": "Propriété et construction — Identifier et classer les triangles",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Identifier et classer les triangles ».",
+        "Utiliser la représentation ou la propriété indiquée : Un triangle possède trois côtés, trois sommets et trois angles.",
+        "Vérifier le résultat avec On peut classer les triangles par les côtés ou par les angles.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Un triangle possède trois côtés, trois sommets et trois angles.",
+        "On peut classer les triangles par les côtés ou par les angles.",
+        "Un triangle équilatéral a trois côtés de même longueur ; un triangle rectangle possède un angle droit.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U4-L04": {
+      "intro": "Tracer avec règle, équerre et compas en suivant une procédure.",
+      "section_title": "Construire des triangles",
+      "section_text": "Une construction se fait avec des instruments et une suite d’étapes précises. Je relie les points seulement après avoir vérifié les longueurs ou l’angle demandé.",
+      "example": "Pour un triangle ABC, je trace AB, puis les arcs de centres A et B avec les rayons nécessaires ; leur intersection donne C.",
+      "formula": "Angle droit = 90° ; angle plat = 180°.",
+      "method_title": "Propriété et construction — Construire des triangles",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Construire des triangles ».",
+        "Utiliser la représentation ou la propriété indiquée : Une construction se fait avec des instruments et une suite d’étapes précises.",
+        "Vérifier le résultat avec Je relie les points seulement après avoir vérifié les longueurs ou l’angle demandé.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Une construction se fait avec des instruments et une suite d’étapes précises.",
+        "Je relie les points seulement après avoir vérifié les longueurs ou l’angle demandé.",
+        "Pour un triangle ABC, je trace AB, puis les arcs de centres A et B avec les rayons nécessaires ; leur intersection donne C.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U4-L05": {
+      "intro": "Classer des figures et vérifier côtés et angles.",
+      "section_title": "Identifier et classer les quadrilatères",
+      "section_text": "Un quadrilatère a quatre côtés et quatre sommets. Le carré, le rectangle, le trapèze et le losange se distinguent par leurs côtés et leurs angles.",
+      "example": "Un carré possède quatre côtés égaux et quatre angles droits ; un rectangle possède quatre angles droits.",
+      "formula": "",
+      "method_title": "Propriété et construction — Identifier et classer les quadrilatères",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Identifier et classer les quadrilatères ».",
+        "Utiliser la représentation ou la propriété indiquée : Un quadrilatère a quatre côtés et quatre sommets.",
+        "Vérifier le résultat avec Le carré, le rectangle, le trapèze et le losange se distinguent par leurs côtés et leurs angles.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Un quadrilatère a quatre côtés et quatre sommets.",
+        "Le carré, le rectangle, le trapèze et le losange se distinguent par leurs côtés et leurs angles.",
+        "Un carré possède quatre côtés égaux et quatre angles droits ; un rectangle possède quatre angles droits.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U4-L06": {
+      "intro": "Tracer un rectangle puis généraliser la démarche aux autres formes.",
+      "section_title": "Construire des quadrilatères",
+      "section_text": "Pour construire, je commence par un côté de référence. L’équerre aide à construire les angles droits et la règle aide à prolonger les côtés.",
+      "example": "Pour construire un rectangle, je trace un côté, deux perpendiculaires puis le côté opposé de même longueur.",
+      "formula": "",
+      "method_title": "Propriété et construction — Construire des quadrilatères",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Construire des quadrilatères ».",
+        "Utiliser la représentation ou la propriété indiquée : Pour construire, je commence par un côté de référence.",
+        "Vérifier le résultat avec L’équerre aide à construire les angles droits et la règle aide à prolonger les côtés.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Pour construire, je commence par un côté de référence.",
+        "L’équerre aide à construire les angles droits et la règle aide à prolonger les côtés.",
+        "Pour construire un rectangle, je trace un côté, deux perpendiculaires puis le côté opposé de même longueur.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U4-L07": {
+      "intro": "Tracer un cercle à partir d’un centre et d’un rayon ou d’un diamètre.",
+      "section_title": "Décrire et construire un cercle",
+      "section_text": "Le centre est le point fixe du cercle. Le rayon relie le centre à un point du cercle ; le diamètre passe par le centre et vaut deux rayons.",
+      "example": "Si le rayon vaut 4 cm, le diamètre vaut 8 cm.",
+      "formula": "d = 2 × r",
+      "method_title": "Propriété et construction — Décrire et construire un cercle",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Décrire et construire un cercle ».",
+        "Utiliser la représentation ou la propriété indiquée : Le centre est le point fixe du cercle.",
+        "Vérifier le résultat avec Le rayon relie le centre à un point du cercle ; le diamètre passe par le centre et vaut deux rayons.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Le centre est le point fixe du cercle.",
+        "Le rayon relie le centre à un point du cercle ; le diamètre passe par le centre et vaut deux rayons.",
+        "Si le rayon vaut 4 cm, le diamètre vaut 8 cm.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U4-L08": {
+      "intro": "Observer, comparer et décrire bases, faces, arêtes et hauteur.",
+      "section_title": "Identifier les propriétés des solides",
+      "section_text": "Un solide est un objet à trois dimensions. On l’identifie par ses bases, faces, arêtes, sommets et sa hauteur lorsque ces éléments sont présents.",
+      "example": "Un cube possède 6 faces carrées, 12 arêtes et 8 sommets.",
+      "formula": "",
+      "method_title": "Propriété et construction — Identifier les propriétés des solides",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Identifier les propriétés des solides ».",
+        "Utiliser la représentation ou la propriété indiquée : Un solide est un objet à trois dimensions.",
+        "Vérifier le résultat avec On l’identifie par ses bases, faces, arêtes, sommets et sa hauteur lorsque ces éléments sont présents.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Un solide est un objet à trois dimensions.",
+        "On l’identifie par ses bases, faces, arêtes, sommets et sa hauteur lorsque ces éléments sont présents.",
+        "Un cube possède 6 faces carrées, 12 arêtes et 8 sommets.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": "L’ancien programme scolaire développe le volume du cube et du parallélépipède rectangle. Le PE T4 demande ici l’identification des propriétés des solides ; le volume est un complément PS."
+    },
+    "U4-L09": {
+      "intro": "Élaborer, découper et plier des patrons de solides.",
+      "section_title": "Construire des patrons et des objets en carton",
+      "section_text": "Un patron est une représentation plane que l’on peut plier pour former un solide. Les faces qui se rejoignent doivent avoir des dimensions compatibles.",
+      "example": "Le patron d’un cube comporte six carrés qui se replient pour former ses six faces.",
+      "formula": "",
+      "method_title": "Propriété et construction — Construire des patrons et des objets en carton",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Construire des patrons et des objets en carton ».",
+        "Utiliser la représentation ou la propriété indiquée : Un patron est une représentation plane que l’on peut plier pour former un solide.",
+        "Vérifier le résultat avec Les faces qui se rejoignent doivent avoir des dimensions compatibles.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Un patron est une représentation plane que l’on peut plier pour former un solide.",
+        "Les faces qui se rejoignent doivent avoir des dimensions compatibles.",
+        "Le patron d’un cube comporte six carrés qui se replient pour former ses six faces.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": "La fabrication détaillée de patrons et d’objets en carton est mobilisée comme support de construction. Les développements de volume de l’ancien PS restent complémentaires."
+    },
+    "U4-L10": {
+      "intro": "Reproduire le déplacement de chaque point puis relier les points.",
+      "section_title": "Réaliser une translation simple",
+      "section_text": "Une translation fait glisser chaque point dans le même sens, la même direction et sur la même distance. La figure ne tourne pas et ne change pas de taille.",
+      "example": "Déplacer un triangle de 3 carreaux vers la droite donne une image dont chaque sommet est 3 carreaux à droite.",
+      "formula": "",
+      "method_title": "Propriété et construction — Réaliser une translation simple",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Réaliser une translation simple ».",
+        "Utiliser la représentation ou la propriété indiquée : Une translation fait glisser chaque point dans le même sens, la même direction et sur la même distance.",
+        "Vérifier le résultat avec La figure ne tourne pas et ne change pas de taille.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Une translation fait glisser chaque point dans le même sens, la même direction et sur la même distance.",
+        "La figure ne tourne pas et ne change pas de taille.",
+        "Déplacer un triangle de 3 carreaux vers la droite donne une image dont chaque sommet est 3 carreaux à droite.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U4-L11": {
+      "intro": "Utiliser un axe et compter les carreaux pour construire le reflet.",
+      "section_title": "Réaliser une réflexion simple",
+      "section_text": "Une réflexion est un reflet par rapport à un axe. Chaque point et son image sont à la même distance de l’axe, de part et d’autre.",
+      "example": "Pour réfléchir une figure sur un axe vertical, je compte les carreaux jusqu’à l’axe puis je reporte la même distance de l’autre côté.",
+      "formula": "",
+      "method_title": "Propriété et construction — Réaliser une réflexion simple",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Réaliser une réflexion simple ».",
+        "Utiliser la représentation ou la propriété indiquée : Une réflexion est un reflet par rapport à un axe.",
+        "Vérifier le résultat avec Chaque point et son image sont à la même distance de l’axe, de part et d’autre.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Une réflexion est un reflet par rapport à un axe.",
+        "Chaque point et son image sont à la même distance de l’axe, de part et d’autre.",
+        "Pour réfléchir une figure sur un axe vertical, je compte les carreaux jusqu’à l’axe puis je reporte la même distance de l’autre côté.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U4-L12": {
+      "intro": "Parcours d’ateliers de construction et d’identification.",
+      "section_title": "Consolidation et évaluation de l’unité Géométrie",
+      "section_text": "Je nomme la propriété utilisée avant de construire ou de répondre. Je contrôle mesure, longueur, angle, distance ou nombre de faces selon la figure.",
+      "example": "Un cercle de rayon 5 cm a un diamètre de 10 cm ; c’est une relation géométrique à vérifier.",
+      "formula": "",
+      "method_title": "Propriété et construction — Consolidation et évaluation de l’unité Géométrie",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Consolidation et évaluation de l’unité Géométrie ».",
+        "Utiliser la représentation ou la propriété indiquée : Je nomme la propriété utilisée avant de construire ou de répondre.",
+        "Vérifier le résultat avec Je contrôle mesure, longueur, angle, distance ou nombre de faces selon la figure.."
+      ],
+      "attention": "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue.",
+      "retain": [
+        "Je nomme la propriété utilisée avant de construire ou de répondre.",
+        "Je contrôle mesure, longueur, angle, distance ou nombre de faces selon la figure.",
+        "Un cercle de rayon 5 cm a un diamètre de 10 cm ; c’est une relation géométrique à vérifier.",
+        "Observer les côtés, les angles ou les éléments caractéristiques, puis justifier la propriété reconnue."
+      ],
+      "ps_note": ""
+    },
+    "U5-L01": {
+      "intro": "Comparer des figures par superposition et observation.",
+      "section_title": "Distinguer périmètre et surface",
+      "section_text": "Le périmètre mesure le contour ; la surface mesure l’intérieur de la figure. Deux figures peuvent avoir le même périmètre et des surfaces différentes.",
+      "example": "Un rectangle de 5 cm sur 3 cm a un périmètre de 16 cm ; son aire est 15 cm².",
+      "formula": "P = somme des longueurs des côtés",
+      "method_title": "Unité, formule et résultat — Distinguer périmètre et surface",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Distinguer périmètre et surface ».",
+        "Utiliser la représentation ou la propriété indiquée : Le périmètre mesure le contour ; la surface mesure l’intérieur de la figure.",
+        "Vérifier le résultat avec Deux figures peuvent avoir le même périmètre et des surfaces différentes.."
+      ],
+      "attention": "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat.",
+      "retain": [
+        "Le périmètre mesure le contour ; la surface mesure l’intérieur de la figure.",
+        "Deux figures peuvent avoir le même périmètre et des surfaces différentes.",
+        "Un rectangle de 5 cm sur 3 cm a un périmètre de 16 cm ; son aire est 15 cm².",
+        "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat."
+      ],
+      "ps_note": ""
+    },
+    "U5-L02": {
+      "intro": "Recouvrir des figures et compter les petits carrés.",
+      "section_title": "Mesurer une surface avec des unités carrées",
+      "section_text": "Une unité carrée recouvre une petite partie de la surface. L’aire par unités carrées est le nombre de carrés nécessaires pour recouvrir la figure sans trous ni chevauchements.",
+      "example": "Une figure recouverte par 18 petits carrés a une aire de 18 unités carrées.",
+      "formula": "Aire = nombre d’unités carrées couvertes.",
+      "method_title": "Unité, formule et résultat — Mesurer une surface avec des unités carrées",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Mesurer une surface avec des unités carrées ».",
+        "Utiliser la représentation ou la propriété indiquée : Une unité carrée recouvre une petite partie de la surface.",
+        "Vérifier le résultat avec L’aire par unités carrées est le nombre de carrés nécessaires pour recouvrir la figure sans trous ni chevauchements.."
+      ],
+      "attention": "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat.",
+      "retain": [
+        "Une unité carrée recouvre une petite partie de la surface.",
+        "L’aire par unités carrées est le nombre de carrés nécessaires pour recouvrir la figure sans trous ni chevauchements.",
+        "Une figure recouverte par 18 petits carrés a une aire de 18 unités carrées.",
+        "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat."
+      ],
+      "ps_note": ""
+    },
+    "U5-L03": {
+      "intro": "Relier quadrillage, longueur, largeur et formule.",
+      "section_title": "Calculer l’aire du rectangle et du carré",
+      "section_text": "L’aire du rectangle est longueur × largeur. L’aire du carré est côté × côté.",
+      "example": "Rectangle 8 cm × 3 cm : A = 8 × 3 = 24 cm².",
+      "formula": "A = L × l",
+      "method_title": "Unité, formule et résultat — Calculer l’aire du rectangle et du carré",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Calculer l’aire du rectangle et du carré ».",
+        "Utiliser la représentation ou la propriété indiquée : L’aire du rectangle est longueur × largeur.",
+        "Vérifier le résultat avec L’aire du carré est côté × côté.."
+      ],
+      "attention": "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat.",
+      "retain": [
+        "L’aire du rectangle est longueur × largeur.",
+        "L’aire du carré est côté × côté.",
+        "Rectangle 8 cm × 3 cm : A = 8 × 3 = 24 cm².",
+        "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat."
+      ],
+      "ps_note": ""
+    },
+    "U5-L04": {
+      "intro": "Transformer ou décomposer les figures pour relier manipulation et formule.",
+      "section_title": "Calculer l’aire du parallélogramme et du trapèze",
+      "section_text": "L’aire du parallélogramme est base × hauteur. L’aire du trapèze est la moyenne des deux bases multipliée par la hauteur.",
+      "example": "Parallélogramme : b=7 cm et h=4 cm, donc A=28 cm².",
+      "formula": "A = base × hauteur",
+      "method_title": "Unité, formule et résultat — Calculer l’aire du parallélogramme et du trapèze",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Calculer l’aire du parallélogramme et du trapèze ».",
+        "Utiliser la représentation ou la propriété indiquée : L’aire du parallélogramme est base × hauteur.",
+        "Vérifier le résultat avec L’aire du trapèze est la moyenne des deux bases multipliée par la hauteur.."
+      ],
+      "attention": "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat.",
+      "retain": [
+        "L’aire du parallélogramme est base × hauteur.",
+        "L’aire du trapèze est la moyenne des deux bases multipliée par la hauteur.",
+        "Parallélogramme : b=7 cm et h=4 cm, donc A=28 cm².",
+        "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat."
+      ],
+      "ps_note": ""
+    },
+    "U5-L05": {
+      "intro": "Relier triangles et rectangles ou parallélogrammes par découpage.",
+      "section_title": "Calculer l’aire des triangles et du losange",
+      "section_text": "L’aire d’un triangle est base × hauteur ÷ 2. L’aire d’un losange peut être calculée par diagonale × diagonale ÷ 2.",
+      "example": "Triangle b=10 cm, h=4 cm : A=10 × 4 ÷ 2 = 20 cm².",
+      "formula": "A triangle = (base × hauteur) ÷ 2 ; A losange = (D × d) ÷ 2",
+      "method_title": "Unité, formule et résultat — Calculer l’aire des triangles et du losange",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Calculer l’aire des triangles et du losange ».",
+        "Utiliser la représentation ou la propriété indiquée : L’aire d’un triangle est base × hauteur ÷ 2.",
+        "Vérifier le résultat avec L’aire d’un losange peut être calculée par diagonale × diagonale ÷ 2.."
+      ],
+      "attention": "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat.",
+      "retain": [
+        "L’aire d’un triangle est base × hauteur ÷ 2.",
+        "L’aire d’un losange peut être calculée par diagonale × diagonale ÷ 2.",
+        "Triangle b=10 cm, h=4 cm : A=10 × 4 ÷ 2 = 20 cm².",
+        "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat."
+      ],
+      "ps_note": ""
+    },
+    "U5-L06": {
+      "intro": "Placer une mesure dans un tableau de conversion puis résoudre un problème.",
+      "section_title": "Convertir les unités de longueur, de surface et les unités agraires",
+      "section_text": "Dans un tableau de conversion, chaque changement d’unité de longueur vaut 10. Pour les surfaces, chaque changement d’unité vaut 100 ; je vérifie toujours la grandeur mesurée.",
+      "example": "2,3 km = 2 300 m ; 4 m² = 400 dm².",
+      "formula": "Aire = nombre d’unités carrées couvertes.",
+      "method_title": "Unité, formule et résultat — Convertir les unités de longueur, de surface et les unités agraires",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Convertir les unités de longueur, de surface et les unités agraires ».",
+        "Utiliser la représentation ou la propriété indiquée : Dans un tableau de conversion, chaque changement d’unité de longueur vaut 10.",
+        "Vérifier le résultat avec Pour les surfaces, chaque changement d’unité vaut 100 ; je vérifie toujours la grandeur mesurée.."
+      ],
+      "attention": "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat.",
+      "retain": [
+        "Dans un tableau de conversion, chaque changement d’unité de longueur vaut 10.",
+        "Pour les surfaces, chaque changement d’unité vaut 100 ; je vérifie toujours la grandeur mesurée.",
+        "2,3 km = 2 300 m ; 4 m² = 400 dm².",
+        "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat."
+      ],
+      "ps_note": "L’ancien programme scolaire traite également des conversions de masse et de capacité. La présente leçon principale reste limitée aux longueurs, surfaces et unités agraires du PE T4."
+    },
+    "U5-L07": {
+      "intro": "Lire des horaires et résoudre des situations de la vie quotidienne.",
+      "section_title": "Lire l’heure et convertir les unités de temps",
+      "section_text": "1 heure = 60 minutes et 1 minute = 60 secondes. Je lis d’abord l’aiguille des heures puis celle des minutes, ou les deux nombres de l’horloge numérique.",
+      "example": "2 h 30 min = 150 min.",
+      "formula": "1 h = 60 min ; 1 min = 60 s.",
+      "method_title": "Unité, formule et résultat — Lire l’heure et convertir les unités de temps",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Lire l’heure et convertir les unités de temps ».",
+        "Utiliser la représentation ou la propriété indiquée : 1 heure = 60 minutes et 1 minute = 60 secondes.",
+        "Vérifier le résultat avec Je lis d’abord l’aiguille des heures puis celle des minutes, ou les deux nombres de l’horloge numérique.."
+      ],
+      "attention": "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat.",
+      "retain": [
+        "1 heure = 60 minutes et 1 minute = 60 secondes.",
+        "Je lis d’abord l’aiguille des heures puis celle des minutes, ou les deux nombres de l’horloge numérique.",
+        "2 h 30 min = 150 min.",
+        "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat."
+      ],
+      "ps_note": "L’ancien programme scolaire propose des problèmes de temps plus étendus. Le PE T4 retient la lecture et la conversion des unités de temps."
+    },
+    "U5-L08": {
+      "intro": "Résoudre des problèmes d’aires, de conversions et de temps.",
+      "section_title": "Résoudre des problèmes de mesure et consolider l’unité",
+      "section_text": "Je choisis l’unité adaptée, je convertis si nécessaire, puis je calcule. Je termine par une phrase avec l’unité du résultat.",
+      "example": "Une cour de 12 m × 8 m a une aire de 96 m² ; 96 m² = 9 600 dm².",
+      "formula": "",
+      "method_title": "Unité, formule et résultat — Résoudre des problèmes de mesure et consolider l’unité",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Résoudre des problèmes de mesure et consolider l’unité ».",
+        "Utiliser la représentation ou la propriété indiquée : Je choisis l’unité adaptée, je convertis si nécessaire, puis je calcule.",
+        "Vérifier le résultat avec Je termine par une phrase avec l’unité du résultat.."
+      ],
+      "attention": "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat.",
+      "retain": [
+        "Je choisis l’unité adaptée, je convertis si nécessaire, puis je calcule.",
+        "Je termine par une phrase avec l’unité du résultat.",
+        "Une cour de 12 m × 8 m a une aire de 96 m² ; 96 m² = 9 600 dm².",
+        "Mettre les mesures dans la même unité, choisir la formule adaptée et écrire l’unité du résultat."
+      ],
+      "ps_note": "Les problèmes de masse, capacité et volume de l’ancien programme scolaire sont conservés dans l’annexe documentaire ; cette séance principale consolide les mesures prévues par le PE T4."
+    },
+    "U6-L01": {
+      "intro": "Construire en groupe un questionnaire court.",
+      "section_title": "Concevoir une fiche d’enquête ou de sondage",
+      "section_text": "Une enquête commence par une question claire. La fiche doit permettre de recueillir la même information pour chaque personne interrogée.",
+      "example": "Question : Quel fruit préfères-tu ? Réponses proposées : mangue, banane, orange.",
+      "formula": "",
+      "method_title": "Collecte, organisation et interprétation — Concevoir une fiche d’enquête ou de sondage",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Concevoir une fiche d’enquête ou de sondage ».",
+        "Utiliser la représentation ou la propriété indiquée : Une enquête commence par une question claire.",
+        "Vérifier le résultat avec La fiche doit permettre de recueillir la même information pour chaque personne interrogée.."
+      ],
+      "attention": "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause.",
+      "retain": [
+        "Une enquête commence par une question claire.",
+        "La fiche doit permettre de recueillir la même information pour chaque personne interrogée.",
+        "Question : Quel fruit préfères-tu ? Réponses proposées : mangue, banane, orange.",
+        "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause."
+      ],
+      "ps_note": ""
+    },
+    "U6-L02": {
+      "intro": "Réaliser un sondage de classe avec un nombre restreint de réponses.",
+      "section_title": "Collecter et enregistrer les réponses",
+      "section_text": "Je recueille une réponse par personne et je l’enregistre sans la modifier. Les données primaires sont les réponses recueillies directement.",
+      "example": "Pour 5 réponses : mangue, banane, mangue, orange, mangue, j’enregistre chaque réponse puis je compte.",
+      "formula": "",
+      "method_title": "Collecte, organisation et interprétation — Collecter et enregistrer les réponses",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Collecter et enregistrer les réponses ».",
+        "Utiliser la représentation ou la propriété indiquée : Je recueille une réponse par personne et je l’enregistre sans la modifier.",
+        "Vérifier le résultat avec Les données primaires sont les réponses recueillies directement.."
+      ],
+      "attention": "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause.",
+      "retain": [
+        "Je recueille une réponse par personne et je l’enregistre sans la modifier.",
+        "Les données primaires sont les réponses recueillies directement.",
+        "Pour 5 réponses : mangue, banane, mangue, orange, mangue, j’enregistre chaque réponse puis je compte.",
+        "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause."
+      ],
+      "ps_note": ""
+    },
+    "U6-L03": {
+      "intro": "Passer de la fiche brute au tableau des effectifs.",
+      "section_title": "Organiser les données dans un tableau des effectifs",
+      "section_text": "L’effectif est le nombre de fois qu’une valeur apparaît. L’effectif total est le nombre de réponses recueillies.",
+      "example": "Données : A, B, A, C, A, B → A:3, B:2, C:1 ; total 6.",
+      "formula": "Effectif = nombre de fois où une réponse apparaît.",
+      "method_title": "Collecte, organisation et interprétation — Organiser les données dans un tableau des effectifs",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Organiser les données dans un tableau des effectifs ».",
+        "Utiliser la représentation ou la propriété indiquée : L’effectif est le nombre de fois qu’une valeur apparaît.",
+        "Vérifier le résultat avec L’effectif total est le nombre de réponses recueillies.."
+      ],
+      "attention": "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause.",
+      "retain": [
+        "L’effectif est le nombre de fois qu’une valeur apparaît.",
+        "L’effectif total est le nombre de réponses recueillies.",
+        "Données : A, B, A, C, A, B → A:3, B:2, C:1 ; total 6.",
+        "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause."
+      ],
+      "ps_note": ""
+    },
+    "U6-L04": {
+      "intro": "Construire une représentation à partir du tableau des effectifs.",
+      "section_title": "Représenter les données par pictogramme et diagramme à bandes",
+      "section_text": "Un pictogramme utilise un symbole ; un diagramme à bandes utilise des longueurs ou des hauteurs. Le titre et les catégories doivent être lisibles.",
+      "example": "Si un symbole représente 2 élèves et qu’une catégorie compte 6 élèves, il faut 3 symboles.",
+      "formula": "",
+      "method_title": "Collecte, organisation et interprétation — Représenter les données par pictogramme et diagramme à bandes",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Représenter les données par pictogramme et diagramme à bandes ».",
+        "Utiliser la représentation ou la propriété indiquée : Un pictogramme utilise un symbole ; un diagramme à bandes utilise des longueurs ou des hauteurs.",
+        "Vérifier le résultat avec Le titre et les catégories doivent être lisibles.."
+      ],
+      "attention": "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause.",
+      "retain": [
+        "Un pictogramme utilise un symbole ; un diagramme à bandes utilise des longueurs ou des hauteurs.",
+        "Le titre et les catégories doivent être lisibles.",
+        "Si un symbole représente 2 élèves et qu’une catégorie compte 6 élèves, il faut 3 symboles.",
+        "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause."
+      ],
+      "ps_note": ""
+    },
+    "U6-L05": {
+      "intro": "Répondre à des questions et justifier une conclusion à partir du diagramme.",
+      "section_title": "Comparer les représentations et tirer une conclusion",
+      "section_text": "Interpréter, c’est lire une information et la justifier avec les données. Je compare les effectifs avant de tirer une conclusion.",
+      "example": "Si mangue a 6 réponses et orange 2, la mangue est préférée par 4 élèves de plus.",
+      "formula": "",
+      "method_title": "Collecte, organisation et interprétation — Comparer les représentations et tirer une conclusion",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Comparer les représentations et tirer une conclusion ».",
+        "Utiliser la représentation ou la propriété indiquée : Interpréter, c’est lire une information et la justifier avec les données.",
+        "Vérifier le résultat avec Je compare les effectifs avant de tirer une conclusion.."
+      ],
+      "attention": "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause.",
+      "retain": [
+        "Interpréter, c’est lire une information et la justifier avec les données.",
+        "Je compare les effectifs avant de tirer une conclusion.",
+        "Si mangue a 6 réponses et orange 2, la mangue est préférée par 4 élèves de plus.",
+        "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause."
+      ],
+      "ps_note": ""
+    },
+    "U6-L06": {
+      "intro": "Lancer une pièce ou un dé et enregistrer les résultats.",
+      "section_title": "Réaliser une expérience aléatoire simple",
+      "section_text": "Une expérience aléatoire dépend du hasard ; on ne connaît pas le résultat avant de la réaliser. On note les issues possibles et on organise les résultats observés.",
+      "example": "Avec une pièce, les issues possibles sont pile et face.",
+      "formula": "",
+      "method_title": "Collecte, organisation et interprétation — Réaliser une expérience aléatoire simple",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Réaliser une expérience aléatoire simple ».",
+        "Utiliser la représentation ou la propriété indiquée : Une expérience aléatoire dépend du hasard ; on ne connaît pas le résultat avant de la réaliser.",
+        "Vérifier le résultat avec On note les issues possibles et on organise les résultats observés.."
+      ],
+      "attention": "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause.",
+      "retain": [
+        "Une expérience aléatoire dépend du hasard ; on ne connaît pas le résultat avant de la réaliser.",
+        "On note les issues possibles et on organise les résultats observés.",
+        "Avec une pièce, les issues possibles sont pile et face.",
+        "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause."
+      ],
+      "ps_note": ""
+    },
+    "U6-L07": {
+      "intro": "Prédire puis classer des événements d’une expérience simple.",
+      "section_title": "Classer les événements selon leur probabilité",
+      "section_text": "Impossible ne peut pas se produire ; certain se produira. Entre les deux, on peut dire peu probable, possible, probable ou très probable selon les résultats possibles.",
+      "example": "Obtenir 7 avec un dé à six faces est impossible ; obtenir un nombre inférieur à 7 est certain.",
+      "formula": "",
+      "method_title": "Collecte, organisation et interprétation — Classer les événements selon leur probabilité",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Classer les événements selon leur probabilité ».",
+        "Utiliser la représentation ou la propriété indiquée : Impossible ne peut pas se produire ; certain se produira.",
+        "Vérifier le résultat avec Entre les deux, on peut dire peu probable, possible, probable ou très probable selon les résultats possibles.."
+      ],
+      "attention": "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause.",
+      "retain": [
+        "Impossible ne peut pas se produire ; certain se produira.",
+        "Entre les deux, on peut dire peu probable, possible, probable ou très probable selon les résultats possibles.",
+        "Obtenir 7 avec un dé à six faces est impossible ; obtenir un nombre inférieur à 7 est certain.",
+        "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause."
+      ],
+      "ps_note": ""
+    },
+    "U6-L08": {
+      "intro": "Mini-enquête ou expérience avec tableau, diagramme et conclusion.",
+      "section_title": "Consolider et évaluer l’unité Traitement de données",
+      "section_text": "Je distingue les résultats observés des prédictions faites avant l’expérience. Je justifie une probabilité simple par les issues possibles ou par les effectifs observés.",
+      "example": "Dans un sac avec 3 jetons rouges et 1 bleu, rouge est plus probable que bleu.",
+      "formula": "",
+      "method_title": "Collecte, organisation et interprétation — Consolider et évaluer l’unité Traitement de données",
+      "method_steps": [
+        "Lire la consigne et repérer les données de « Consolider et évaluer l’unité Traitement de données ».",
+        "Utiliser la représentation ou la propriété indiquée : Je distingue les résultats observés des prédictions faites avant l’expérience.",
+        "Vérifier le résultat avec Je justifie une probabilité simple par les issues possibles ou par les effectifs observés.."
+      ],
+      "attention": "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause.",
+      "retain": [
+        "Je distingue les résultats observés des prédictions faites avant l’expérience.",
+        "Je justifie une probabilité simple par les issues possibles ou par les effectifs observés.",
+        "Dans un sac avec 3 jetons rouges et 1 bleu, rouge est plus probable que bleu.",
+        "Recueillir les réponses, les compter sans doublon, organiser les résultats puis conclure sans inventer de cause."
+      ],
+      "ps_note": ""
+    }
+  },
+  "annexes": [
+    [
+      "PS-A01",
+      "Droite, demi-droite et segment de droite"
+    ],
+    [
+      "PS-A02",
+      "Mesures de masse"
+    ],
+    [
+      "PS-A03",
+      "Multiplication et division des nombres décimaux"
+    ],
+    [
+      "PS-A04",
+      "Prix d’achat, frais et prix de revient"
+    ],
+    [
+      "PS-A05",
+      "Capacités : litre et sous-multiples"
+    ],
+    [
+      "PS-A06",
+      "Prix de vente, bénéfice et perte"
+    ],
+    [
+      "PS-A07",
+      "Capacités : multiples du litre"
+    ],
+    [
+      "PS-A08",
+      "Problèmes de capacité"
+    ],
+    [
+      "PS-A09",
+      "Budget familial"
+    ],
+    [
+      "PS-A10",
+      "Proportionnalité"
+    ],
+    [
+      "PS-A11",
+      "Épargne et placement"
+    ],
+    [
+      "PS-A12",
+      "Partages inégaux"
+    ],
+    [
+      "PS-A13",
+      "Volume, capacité et masse"
+    ],
+    [
+      "PS-A14",
+      "Droites parallèles, perpendiculaires et sécantes"
+    ],
+    [
+      "PS-A15",
+      "Nombres au-delà de 100 000 — extension jusqu’au milliard"
+    ]
+  ]
+}

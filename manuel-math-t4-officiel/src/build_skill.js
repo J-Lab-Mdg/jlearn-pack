@@ -8,6 +8,7 @@ const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   WidthType, AlignmentType, BorderStyle, ShadingType, PageBreak,
   Footer, PageNumber, Bookmark, InternalHyperlink, TableLayoutType, ImageRun, SectionType,
+  FootnoteReferenceRun,
   Math: DocxMath, MathFraction, MathRun
 } = require('docx');
 
@@ -15,6 +16,8 @@ const ROOT = path.join(__dirname, '..');
 const PROTOTYPE = process.env.PROTOTYPE === '1';
 const inventorySource = JSON.parse(fs.readFileSync(path.join(ROOT, 'inventaire_lecons.json'), 'utf8'));
 const bank = JSON.parse(fs.readFileSync(path.join(__dirname, 'content_bank.json'), 'utf8'));
+const styleBank = JSON.parse(fs.readFileSync(path.join(__dirname, 'pe_ps_style_bank.json'), 'utf8'));
+const footnoteIds = Object.fromEntries(Object.entries(styleBank.lessons).filter(([, s]) => s.ps_note).map(([id], i) => [id, i + 1]));
 const PROTOTYPE_IDS = new Set(['U1-L01', 'U4-L03', 'U5-L03']);
 const inventory = PROTOTYPE
   ? { unites: inventorySource.unites.map(u => ({ ...u, lecons: u.lecons.filter(l => PROTOTYPE_IDS.has(l.id)) })).filter(u => u.lecons.length) }
@@ -267,34 +270,53 @@ function modelLesson(lesson, data) {
     p('Vérifie le calcul, la représentation, l’unité et la propriété utilisée.', { fill: C.yellow, italics: true })
   ];
 }
-function learnerLesson(lesson, data) {
-  if (PROTOTYPE && data.prototype_model) return modelLesson(lesson, data);
+function visualTableFromData(data, size = 20) {
+  const rows = [new TableRow({ children: data.visual[0].map(x => cell(x, { bold: true, fill: C.green, color: C.white, size })) })];
+  data.visual.slice(1).forEach(r => rows.push(new TableRow({ children: r.map(x => cell(x, { size })) })));
+  return table(rows, data.visual[0].map(() => Math.floor(9600 / data.visual[0].length)));
+}
+function fullRetainsCard(style, data) {
+  const inner = [
+    ...style.retain.slice(0, 4).map(x => p(x, { size: 28 })),
+    formulaBox(style.formula || 'Représentation et propriété à retenir.'),
+    visualTableFromData(data, 24)
+  ];
+  return new Table({ width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED, borders: { top: { style: BorderStyle.SINGLE, size: 12, color: C.green }, bottom: { style: BorderStyle.SINGLE, size: 12, color: C.green }, left: { style: BorderStyle.SINGLE, size: 12, color: C.green }, right: { style: BorderStyle.SINGLE, size: 12, color: C.green }, insideHorizontal: gridB, insideVertical: gridB }, rows: [
+    new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.green }, children: [p('JE RETIENS', { align: AlignmentType.CENTER, color: C.white, bold: true, size: 30 })] })] }),
+    new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: 'F4FBF4' }, margins: { top: 140, bottom: 140, left: 160, right: 160 }, children: inner })] })
+  ] });
+}
+function fullLesson(lesson, data, unit, globalNo, total) {
+  const style = styleBank.lessons[lesson.id];
   const aItems = exerciseBlock(data, false); const eItems = exerciseBlock(data, true);
-  const figure = figureFor(lesson);
   const aAnswers = answersBlock(data, false); const eAnswers = answersBlock(data, true);
-  const longExercises = PROTOTYPE && Array.isArray(data.prototype_exercises);
-  const exerciseItems = longExercises ? data.prototype_exercises : [...aItems, ...eItems];
-  const exerciseAnswers = longExercises ? data.prototype_corrections : [...aAnswers, ...eAnswers];
-  const scenes = scenesFor(lesson);
-  const method = methodFor(lesson);
-  const keywords = data.retain.join(' ');
-  const visualTable = table([new TableRow({ children: data.visual[0].map(x => cell(x, { bold: true, fill: C.green, color: C.white, size: 17 })) }), ...data.visual.slice(1).map(r => new TableRow({ children: r.map(x => cell(x, { size: 17 })) }))], data.visual[0].map(() => Math.floor(9600 / data.visual[0].length)));
-  const sceneBlocks = scenes.flatMap((file, i) => [heading(i === 0 ? 'Je découvre : observer la situation' : 'Je manipule : expliquer la démarche', 2), imageParagraph(file, 'png', 470)]);
+  const scene = scenesFor(lesson)[0];
+  const noteId = footnoteIds[lesson.id];
+  const objectiveChildren = [tr('Objectif : ', { bold: true, color: C.blue }), ...rich(lesson.objectif)];
+  if (noteId) objectiveChildren.push(new FootnoteReferenceRun(noteId));
+  const method = [heading(style.method_title, 2), ...style.method_steps.map((x, i) => p(`${i + 1}. ${x}`))];
   return [
     page(), heading(`LEÇON — ${lesson.titre}`, 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`),
-    p([tr('Objectif : ', { bold: true, color: C.blue }), ...rich(lesson.objectif)], { fill: C.paleBlue }),
-    heading(`Situation de départ — ${lesson.activite}`, 2), p(`Observe la situation : ${lesson.activite} Explique ce que tu cherches à déterminer : ${lesson.objectif}.`),
-    ...sceneBlocks,
-    heading('Je retiens la notion', 2), ...data.retain.map(x => bullet(x)),
-    heading(method.title, 2), ...method.steps.map((x, i) => p(`${i + 1}. ${x}`)),
-    heading('Exemple expliqué', 2), p(data.example, { fill: C.paleGreen }),
-    heading('Attention à cette erreur', 2), p(method.attention, { fill: C.yellow }),
-    heading('Schéma mathématique', 2), figureParagraph(figure), visualTable,
-    heading('Je m’entraîne', 2), p(longExercises ? 'Douze exercices progressifs : application, représentation, comparaison, justification, erreur à corriger, problème et recherche.' : 'Exercices d’application et d’évaluation liés à la notion.'),
-    ...(longExercises ? [p(rich(exerciseText(exerciseItems)))] : [p([tr('Application. ', { bold: true, color: C.blue }), ...rich(exerciseText(aItems))]), p([tr('Évaluation. ', { bold: true, color: C.blue }), ...rich(exerciseText(eItems))])]),
-    heading('Corrigé détaillé', 2), p(rich(answerText(exerciseAnswers))),
-    p('Vérifie le calcul, la représentation, l’unité, la propriété ou la stratégie avant de conclure.', { fill: C.yellow, italics: true })
+    ...(scene ? [imageParagraph(scene, 'png', 240)] : []),
+    p(objectiveChildren, { fill: C.paleBlue }),
+    p(style.intro),
+    heading(style.section_title, 2), p(style.section_text),
+    heading('Exemple', 2), p(style.example, { italics: true, underline: true }),
+    ...(style.formula ? [formulaBox(style.formula)] : []),
+    ...method,
+    heading('Attention', 2), p(style.attention, { fill: C.yellow }),
+    heading('Je retiens', 2), fullRetainsCard(style, data),
+    heading('Exercices', 1),
+    page(), heading('Exercice 1 — Application', 2), p(rich(exerciseText(aItems))),
+    page(), heading('Exercice 2 — Évaluation', 2), p(rich(exerciseText(eItems))),
+    page(), heading('Corrigé — Application', 2), p(rich(answerText(aAnswers))),
+    page(), heading('Corrigé — Évaluation', 2), p(rich(answerText(eAnswers))),
+    p('La réponse doit comporter le calcul, la représentation ou la propriété utilisée, puis une phrase-réponse lorsque la situation le demande.', { fill: C.paleGreen, italics: true })
   ];
+}
+function learnerLesson(lesson, data, unit, globalNo, total) {
+  if (PROTOTYPE && data.prototype_model) return modelLesson(lesson, data);
+  return fullLesson(lesson, data, unit, globalNo, total);
 }
 function unitIntro(unit, unitNo) {
   const total = unit.lecons.length;
@@ -307,6 +329,17 @@ function unitIntro(unit, unitNo) {
       ...unit.lecons.map((l, i) => new TableRow({ children: [cell(`${i + 1}`, { size: 17 }), cell(l.titre, { size: 17 }), cell(l.supports.join(', '), { size: 17 })] }))
     ], [900, 5200, 3500]),
     p(`Cette unité comprend ${total} leçons. Chaque leçon est suivie d’exercices et d’un corrigé.`, { italics: true, color: '666666' })
+  ];
+}
+function annexSection() {
+  return [
+    page(), heading('ANNEXES — COMPLÉMENTS DE L’ANCIEN PROGRAMME SCOLAIRE', 1, 'annexes'),
+    p('Les leçons ci-dessous appartiennent à l’ancien programme scolaire ou développent des contenus qui ne figurent pas dans le PE T4. Elles sont conservées comme ressources documentaires facultatives. Elles ne constituent pas des compétences obligatoires du manuel PE T4.'),
+    table([
+      new TableRow({ children: [cell('Référence', { bold: true, fill: C.ocre, color: C.white }), cell('Leçon documentaire PS', { bold: true, fill: C.ocre, color: C.white }), cell('Statut', { bold: true, fill: C.ocre, color: C.white })] }),
+      ...styleBank.annexes.map(a => new TableRow({ children: [cell(a[0], { size: 18 }), cell(a[1], { size: 18 }), cell('Annexe facultative — hors contenu obligatoire PE T4', { size: 18 })] }))
+    ], [1400, 4200, 4000]),
+    p('Les annexes détaillées seront rédigées avec la même structure de leçon que le corps principal, mais elles resteront séparées de la progression PE.', { italics: true, color: '666666' })
   ];
 }
 function coverPage() {
@@ -349,13 +382,15 @@ async function main() {
       const data = bank[lesson.id];
       if (!data) throw new Error(`Banque absente : ${lesson.id}`);
       children.push(...fiche(lesson, data, unit, global, total));
-      children.push(...learnerLesson(lesson, data));
+      children.push(...learnerLesson(lesson, data, unit, global, total));
     });
   });
-  children.push(page(), heading('SOURCES ET CONTRÔLE', 1, 'sources'), p('PE T4.pdf, pages imprimées 67–77. FRP T4 Fascicule 2.pdf, pages imprimées 5–54. La progression suit le PE lorsque la numérotation du FRP diffère.'), p(`Le manuel contient ${total} fiches identifiées, chacune reliée à une leçon, à des exercices et à un corrigé.`));
+  children.push(...annexSection());
+  children.push(page(), heading('SOURCES ET CONTRÔLE', 1, 'sources'), p('PE T4.pdf, pages imprimées 67–77. FRP T4 Fascicule 2.pdf, pages imprimées 5–54. L’ancien programme scolaire et ses extensions sont signalés dans les notes PS et les annexes.'), p(`Le manuel contient ${total} fiches identifiées, chacune reliée à une leçon, à des exercices et à un corrigé.`));
   const doc = new Document({
     numbering: { config: [{ reference: 'lesson-number', levels: [{ level: 0, format: 'decimal', text: '%1.', alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 360, hanging: 180 } } } }] }] },
     styles: { default: { document: { run: { font: 'Times New Roman', size: 22 }, paragraph: { spacing: { line: 300 } } } } },
+    footnotes: Object.fromEntries(Object.entries(styleBank.lessons).filter(([, s]) => s.ps_note).map(([id, s]) => [String(footnoteIds[id]), { children: [p(`Complément PS — ${s.ps_note}`, { size: 17 })] }])),
     sections: [
       {
         properties: { page: { size: { width: 11906, height: 16838 }, margin: { top: 0, right: 0, bottom: 0, left: 0 } } },

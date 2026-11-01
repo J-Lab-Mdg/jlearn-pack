@@ -31,8 +31,10 @@ def main():
         ("57 fiches de préparation", xml.count("FICHE DE PRÉPARATION") == len(ids)),
         ("57 tables de déroulement", xml.count("Étapes et durée") == len(ids)),
         ("6 colonnes matérialisées par la ligne d’en-tête", xml.count("Déroulement de la leçon") == len(ids)),
-        ("57 sections d’exercices", xml.count("4. Exercices") == len(ids)),
-        ("57 sections de corrigés", xml.count("5. Corrigé détaillé") == len(ids)),
+        ("57 sections d’exercices", xml.count("Exercice 1 — Application") == len(ids) and xml.count("Exercice 2 — Évaluation") == len(ids)),
+        ("57 sections de corrigés", xml.count("Corrigé — Application") == len(ids) and xml.count("Corrigé — Évaluation") == len(ids)),
+        ("57 blocs Je retiens", xml.count("JE RETIENS") == len(ids)),
+        ("notes PS intégrées lorsque prévues", xml.count("footnoteReference") == 9),
         ("police Times New Roman présente", xml.count("Times New Roman") > 0),
         ("aucun support nommé Oral", ">Oral<" not in xml),
         ("aucun champ TOC natif", "w:instrText" not in xml),
@@ -67,8 +69,9 @@ def main():
         "",
         "## Conclusion",
         "",
-        "✅ La structure de fiche, la police, les liens internes et les compteurs de sections sont conformes au premier niveau de contrôle du skill.",
-        "⚠️ La V1 n’est pas encore le livrable final : il reste à enrichir la variété des exercices, les barèmes détaillés et les vérifications numériques exhaustives.",
+        "✅ La structure de fiche, la police, les liens internes, les blocs Je retiens et les notes PS sont contrôlés.",
+        "✅ Le corps principal suit les 57 leçons PE ; les extensions PS sont signalées et les contenus PS-only sont indexés en annexe.",
+        "⚠️ La V1 reste à contrôler visuellement page par page et les scènes pédagogiques devront être ajoutées progressivement à chaque leçon.",
     ]
     REPORT.write_text("\n".join(report) + "\n", encoding="utf-8")
     failed = [label for label, ok in checks if not ok]
