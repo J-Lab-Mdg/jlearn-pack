@@ -127,7 +127,7 @@ LESONA_A2 = [
              "« *Fehezina ny fizotry ny lesona sy ny votoatiny* »",
              "« *Hamarinina raha ao ireo singa ara-pahalalana ilaina amin'ny lohahevitra "
              "hampianarina (marihina ireo singa tsy tafiditra ka tokony hampiana)* »",
-             "« *Mandrafitra ny takela-panomanan-desa* »"]),
+             "« *Mandrafitra ny takela-panomanan-desona* »"]),
     ("h2", "Ny karazana boky roa ao amin'ny FRP"),
     ("tabl", (["Anarana", "Ny atao hoe", "Antony ampiasaina"],
               [["**Tahirin-kevitra ho an'ny mpampianatra**", "« *mety miseho amin'ny endrika "
@@ -161,7 +161,7 @@ LESONA_A2 = [
              "« Faharetany ») ; ny fisarana azy amin'ireo dingana 6 (5-3-2-4-4-3-4 min) dia "
              "namboarina ho an'ity boky ity, ka azo ovaina araka ny kilasy sy ny seho."),
     ("h2", "Soso-kevitra fanampiny"),
-    ("ohatra", ["Ny lesona tsirairay dia natao ho **2 seho** : (1) fandinihana sy famakafakana, "
+    ("ohatra", ["Ny lesona tsirairay dia natao ho **seho roa** : (1) fandinihana sy famakafakana, "
                 "(2) fandravonana, fampiharana ary tombana.",
                 "Aza adino ny **mari-piatoana** amin'ny fanoratana : io no "
                 "ampahazoana antoka ny fanonona marina amin'ny namakiana.",
@@ -176,7 +176,7 @@ FICHES = [
              [{"consigne": "Inona no fotodrafitrasa ampiasaina amin'ny lesona tsirairay ?"},
               {"consigne": "Inona no tokony hatao raha tsy hita ao amin'ny boky ny votoatiny "
                            "ilaina ?"}],
-             [{"note": "Takela-panomanan-desa (6 dingana + Famerenana + Tombana) → LESONA → "
+             [{"note": "Takela-panomanan-desona (dingana 6 + Famerenana + Tombana) → LESONA → "
                        "FANAZARAN-TENA → FANITSIANA → LOHARANON-KEVITRA."},
               {"note": "Ilazao fa **tsy hamboarina** ny votoatiny tsy hita, fa ampidirina amin'ny "
                        "*note* ho an'ny mpampianatra — toy izay natao tamin'ny L2 (tabilao « Teny "
@@ -234,7 +234,7 @@ FICHES = [
                "Asa mifampiha", "Tabilao", ""),
               ("Zarao ny criteria 14 hita amin'ny tabilao FFLJ.", "Mamarina.", "Asa samirery",
                "Kahie", ""),
-              ("Fandravonana : ny takelany = takela-panomanan-desa.", "Mamaly.", "Asa iombonana",
+              ("Fandravonana : ny takelany = takela-panomanan-desona.", "Mamaly.", "Asa iombonana",
                "—", ""),
               ("Mamorona ny tombana ho an'ny seho manaraka.", "Mamorona.", "Asa samirery",
                "Kahie", "")],
@@ -243,7 +243,7 @@ FICHES = [
               {"consigne": "Inona no mampiavaka ny « tahirin-kevitra » amin'ny « lesona » ?"}],
              [{"note": "Vakina iray manontolo → ahazoana ny firafiny sy ny votoatiny → feheza ny "
                        "fizotra → hamarinina ny singa ara-pahalalana ilaina → mandrafitra ny "
-                       "takela-panomanan-desa."},
+                       "takela-panomanan-desona."},
               {"note": "Ny « tahirin-kevitra » = ho an'ny mpampianatra (fahalalana fanampiny) ; ny "
                        "« lesona » = feno sy efa voarindra anaty lalan-tsaina, ampiasaina "
                        "mivantana amin'ny mpianatra."}],

@@ -405,3 +405,24 @@ sarahavana amin'ny « manamafy hevitra » an'ny verindroa (1d).
   rakibolana koa**. Ny 10 toerana ao amin'ny T5 dia **mbola tsy novaina**: rakitra **vita** izy, ary
   ny fiovana tokony hatao dia anan'ny mpanabe fanapahan-kevitra, fa tsy aho. Lisitra feno ao
   ambony (releva 11/01, 3).
+
+- *Refonte T6 (11/02, tranche 1 — ny teny)* : voalohan'ny mpanabe (11/01) dia **nokarakaraina** ny
+  `manuel-malagasy-t6/src/` : **49 toerana novaina** ao amin'ireo rakitra **12**. (1) **40**
+  filaharan'ny isa → **anarana alina vao isa** (`roa teny`→`teny roa`, `efatra ôhatra`→`ôhatra
+  efatra`, `7 andininy`→`andininy 7`, `4 teny`→`teny 4`, `ny 12 teny`→`ny teny 12`, `2 seho`→`seho
+  roa`, `roa karazana`→`karazana roa`…) — fa tsy ny **isa mijery** : `roa arivo`, `roa alina`,
+  `valo ora alina`, `10 000 ariary`. (2) **7** `takela-panomanan-desa` → **`desona`**, araka ny FRP
+  p.6-8 verbatim : « ***Mandrafitra ny takela-panomanan-desona*** » (`FRP_6eme_MLG.txt` L196 sy
+  L2917) — **tsy** `fandravonana` (teny ao amin'ny PE *tabilao ny votoatiny* ihany, L155). (3) **ny
+  glose natao an-tsainy** momba ny **RF** (`data_fitsipika2.py` L133) : « *ny fehezanteny mivady
+  (R + F)* » → **nofafana**, satria **tsy mampiseho fanazavana** ny FRP (L2684-2693 : « *RF avadika
+  ho L* » + tabilao **`L / Iharana` · `EM` · `RF`**) ; ary `mivady` dia **mpivady** (roa
+  tonta/malahelo) ao amin'ny rakibolana — ka tsy fanazavana ny « RF » izany. (4) **ôhatra natao an-tsainy** `Fanafody no vidaovina.` → **voalavina** : ny ôhatra
+  marina anisan'ny FRP (LFK 2g) dia « *Mividy fanafody ianao.* (filaza tsotra) / *Mividiana
+  fanafody.* (filaza mandidy) » — ary **`renifameno` = 0** hita ao amin'ny refs rehetra.
+  **Tsy voakasika** : ny teny **voakopi teny-teny** avy amin'ny boky (`roa lahy sy telo vavy`,
+  `tsy mitovy tanteraka…`) sy ny laharana fotsiny (`LFK 2f`, `p.83`, `Kilasy faha-8`, `8 × 4 = 32`).
+  Firaketana aorony : `desa` **0** · `desona` **6** · `vidaovina` **0** · LISTE-ROUGE **0
+  réapparition** · `TUATUA` · rakitra **1 658** andalana / **98** tabilao · **1 319 184** o.
+  Filaharan'ny isa, lahatsoratra fanamafana : **`manuel-malagasy-t6/refs/11_FILAHARANAN-DISA.md`**.
+  **T5 : tsy nanenjana akory** (vita izy).

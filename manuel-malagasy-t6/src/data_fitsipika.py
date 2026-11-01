@@ -80,7 +80,7 @@ EXOS_4 = [
                  "*farofy*, *kahihitra*, *vavana*."},
     {"consigne": "Soraty ny fehezanteny roa mampiseho ny m-**vakiny miova** (*n-* / *m-*) amin'ny "
                  "fototeny *lalao*."},
-    {"consigne": "Inona no atao hoe tovona famoronana anarana ? Aseho roa ohatra ao amin'ny boky."},
+    {"consigne": "Inona no atao hoe tovona famoronana anarana ? Aseho ohatra roa ao amin'ny boky."},
 ]
 
 FANITSIANA_4 = [
@@ -130,7 +130,7 @@ LESONA_5 = [
     ("p", "Raha **tsy misy Ra-** ny anarana dia **i** no ampiasaina (*Tonga i Naivo.*) ; rehefa "
           "**misy Ra-** kosa dia **mitambatra** izany (*Rakoto*, fa tsy *i Rakoto*) — araka ny "
           "lazain'ny FRP etsy ambony. Koa amin'ny fanoratana dia : *Hoy Rakoto* ✓ · *Hoy i Koto* ✓ "
-          "· ***Hoy i Rakoto*** ✗ (roa karazana mpanoritra eo anelanelan'ny teny iray)."),
+          "· ***Hoy i Rakoto*** ✗ (karazana mpanoritra roa eo anelanelan'ny teny iray)."),
     ("ohatra", ["*Ho avy **ry** Rabe mianakavy.*", "*Moa efa tonga teo **ilay** mpandrafitra ?*",
                 "*Vao nandatsaka **Ikalamara** dia tsy hita izay nandehanany.*"]),
 ]
@@ -236,7 +236,7 @@ FANITSIANA_6 = [
 
 LOHARANO_6 = [
     "FRP T6 éd. Oktobra 2026, p.78-80 : « LFK 2b : Sokajin-teny — **MPAMARI-TOETRA** » "
-    "(Famaritana · 2.1 foto-teny · 2.2 sampanteny + ny 4 karazana).",
+    "(Famaritana · 2.1 foto-teny · 2.2 sampanteny + ny karazana 4).",
     "Lisitry ny mpamari-toetra (*tsara, mainty, makirana, kizitina, lalina, sariaka, mateza, mando, "
     "mjidina, hentitra, velona, malazo, tamana*) : teny-teny avy amin'ny FRP, p.80.",
     "Ny fifandraisana amin'ny teny verindroa (*lavalava, menamena, lavidavitra*) : FRP p.78 (2.1) — "
@@ -372,7 +372,7 @@ FICHES = [
               ("Soraty ny lohateny sy ny famaritana.", "Mihaino.", "Asa iombonana",
                "Solaitrabe", "FRP p.80."),
               ("Diniho : *fahatelo* / *ampahatelony* / *hateloana* / *fanintelony* — inona no "
-               "miova ?", "Mamaly.", "Asa mifampiha", "Tabilao", "4 endrika amin'ny isa *telo*."),
+               "miova ?", "Mamaly.", "Asa mifampiha", "Tabilao", "endrika 4 amin'ny isa *telo*."),
               ("Zarao amin'ny karazana 6 ireto : *impolo*, *fahatelo*, *ampahafolony*, "
                "*havaloana*, *fanindiminy*, *roa*.", "Mamaly.", "Asa samirery", "Kahie", ""),
               ("Tsilo : isa ↔ laharana.", "Mamaly.", "Asa iombonana", "Solaitrabe", ""),

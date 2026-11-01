@@ -96,7 +96,7 @@ GRILLE = [
      "V.A. : ireo valiny voasoratra ao amin'ny FANITSIANA.",
      "Asa iombonana", "Solaitrabe · tabilao", ""),
     ("6. Fampiharana (4 min)",
-     "Fenoy ny banga, dia misafidy ny **R** (roa teny voalaza indroa) na **V** (teny iray "
+     "Fenoy ny banga, dia misafidy ny **R** (teny roa voalaza indroa) na **V** (teny iray "
      "averina = verindroa).",
      "V.A. : ireo valiny voasoratra ao amin'ny FANITSIANA.\n"
      "Mamaly",
@@ -226,7 +226,7 @@ EXOS = [
      "banga": "Naverina indroa ny lokon' ny trano ka ………………… tsara.  |  Vereno indroa io hosy "
               "io mba ………………… tsara.  |  Aleo atao verindroa io kofehy io mba ho ………………… .  |  "
               "Tady verindroa io ka tsy ………………… intsony."},
-    {"consigne": "Misafidy : lazao hoe **R** (roa teny voalaza indroa) na **V** (teny iray "
+    {"consigne": "Misafidy : lazao hoe **R** (teny roa voalaza indroa) na **V** (teny iray "
                  "averina = verindroa).\n"
                  "a) Nandeha nandeha izy.   b) Nandehandeha izy.   c) Menamena ny ravina.   "
                  "d) « Mamela veloma ombieny ombieny. »"},
@@ -280,7 +280,7 @@ FANITSIANA = [
 ]
 
 # ------------------------------------------------------------------ LALANA
-LALANA = ("Tadiavo 5 teny verindroa ao amin'ny lahatsoratra na boky novakinao tamin'ity "
+LALANA = ("Tadiavo teny verindroa 5 ao amin'ny lahatsoratra na boky novakinao tamin'ity "
           "herinandro ity, soraty amin'ny tabilao [abidy | fototeny | teny verindroa | tsotra na "
           "misy fiovana], fafao ny tsirin-teny mba hahitana ny fototeny, ary ampiasao ao anaty "
           "fehezanteny nataonao manokana izy rehetra.")

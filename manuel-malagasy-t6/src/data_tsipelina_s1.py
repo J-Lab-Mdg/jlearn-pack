@@ -84,11 +84,11 @@ GRILLE = [
      "Asan-tarika", "Ampahan-dahatsoratra", ""),
     ("2. Fanolorana (2 min)",
      "Lazao ny lohateny : « Fanoratana teny mitovy fanonona fa samy hafa hevitra » sy « Teny roa avahan' ny tendro ».\n"
-     "Soraty amin'ny tabilao ny roa teny : mianaka / mihanaka.",
+     "Soraty amin'ny tabilao ny teny roa : mianaka / mihanaka.",
      "Mihaino.",
      "Asa iombonana", "Solaitrabe", ""),
     ("3. Fandinihana (4 min)",
-     "Diniho ireo roa teny ireo.\n"
+     "Diniho ireo teny roa ireo.\n"
      "mianaka : Lasa niantsena izy mianaka.\n"
      "mihanaka : Vaky ny paompy dia nihanaka eran'ny tokontany ny rano.\n"
      "Inona no mampitovy azy, inona no manavaka azy ?",
@@ -136,7 +136,7 @@ LESONA = [
     ("h2", "Teny mitovy fanonona fa samy hafa hevitra"),
     ("p", "Ny lohateny ataon'ny Fikarohana fanamboarana ny takela-panomana ny lesona dia : "
           "« **Fanoratana teny mitovy fanonona fa samy hafa hevitra** » : "
-          "roa teny **mitovy fanonona** fa **samy hafa hevitra** sy **soratra** ; **tsy** atao hoe "
+          "teny roa **mitovy fanonona** fa **samy hafa hevitra** sy **soratra** ; **tsy** atao hoe "
           "« teny verindroa » intsony, fa ny verindroa dia **fiverenan'ny teny iray** (lava → "
           "lavalava, LFK 1d = lesona manaraka)."),
     ("p", "**mianaka** = « Teny enti-milaza ny fifandraisan' ny ray na ny reny amin' ny zanaka "
@@ -167,7 +167,7 @@ LESONA = [
              "p.2 ; mitovy ny votoaty ; ary ny edisiona vaovao (Oktobra 2026) dia "
              "milaza fa « FASCICULE DE RESSOURCES PÉDAGOGIQUES »), "
              "p.74 (LFK 1a : Lesona, « TSIPELINA / Fanoratana teny mitovy fanonona fa samy "
-             "hafa hevitra ») : ireo 8 fehezanteny ireo, voasoro teny-teny (« eran‟ny » = "
+             "hafa hevitra ») : ireo fehezanteny 8 ireo, voasoro teny-teny (« eran‟ny » = "
              "eran'ny, « amin‟ny » = amin'ny : ny guillemet-haut ao amin'ny PDF no novaina "
              "ho ' , tsy niovana ny teny)."),
     ("note", "Rakibolana Malagasy — « mianaka » : « Lasa nitsangantsangana Rabe sy Ikoto "
@@ -231,7 +231,7 @@ FANITSIANA = [
     {"banga": "[[Manantona]] ny lamba amin' ny tady i Neny.  |  Haingana ianao fa efa "
               "[[manatona]] ny fahavalo.  |  Vaky ny paompy dia [[nihanaka]] eran' ny "
               "tokontany ny rano.  |  Lasa niantsena izy [[mianaka]]."},
-    {"ohatra": ["Ny zava-dehibe : roa teny mitovy fanonona fa samy hafa hevitra sy "
+    {"ohatra": ["Ny zava-dehibe : teny roa mitovy fanonona fa samy hafa hevitra sy "
                 "soratra (mianaka / mihanaka ; mazana / mazàna) ; tsy misy "
                 "ifandraisany amin'ny teny verindroa — fiverenan'ny teny iray no "
                 "atao hoe verindroa (lava / lavalava)."]},

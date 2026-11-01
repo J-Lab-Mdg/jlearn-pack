@@ -59,7 +59,7 @@ TONGOLO = {
     "titre": "MANUELA MALAGASY \u00b7 T6",
     "sots": "ZANA-TARANJA I-VI \u00b7 KOLONTSAINA \u00b7 LITERATIORA \u00b7 FIASAN'NY TENY \u00b7 "
             "ASA AN-TSORATRA",
-    "lignes": ["%d firaketana feno miaraka amin'ny takela-panomanan-desa sy ny sary" % len(LESONS),
+    "lignes": ["%d firaketana feno miaraka amin'ny takela-panomanan-desona sy ny sary" % len(LESONS),
                "Voafaritra araka ny **ZANA-TARANJA 6** an'ny **PE T6** \u2014 ora %d feno"
                % pe_t6.total(),
                "Mifototra amin'ny **FRP Malagasy T6 \u2014 \u00c9DITION OCTOBRE 2026**",

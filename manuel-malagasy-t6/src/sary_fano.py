@@ -580,8 +580,8 @@ SARYS["tovona-mivaky"] = lambda: lisa(
 
 SARYS["andininy"] = lambda: boites(
     [["**andininy** (strophe)", "ampahany amin'ny tononkalo : andalana vitsivitsy miaraka",
-      "*Iny Ankaratra iny* = 6 andininy"],
-     ["**andalana** (vers)", "ireo teny manaraka ny tsipika iray", "4 andalana isaky ny andininy"],
+      "*Iny Ankaratra iny* = andininy 6"],
+     ["**andalana** (vers)", "ireo teny manaraka ny tsipika iray", "andalana 4 isaky ny andininy"],
      ["**zanapeo**", "ny ampahany amin'ny feo mitondra (na tsy mitondra) ny tsindry",
       "*ma*-di-ka ; *tsi*-ri-ry"],
      ["**ngadona**", "« *zanapeo mitondra ny tsindrim-peo* » — tononina mafy",

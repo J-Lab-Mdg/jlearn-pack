@@ -79,7 +79,7 @@ GRILLE = [
      "Inona no natao tamin'ny farany amin'ny teny voalohany ? Inona no natao "
      "tamin'ny voalohan'ny teny faharoa ?",
      "Mijery, mamaly.\n"
-     "V.A. : ny « n » no **ampiana** eo anelanelan'ny roa teny (*sary* → *sarin-*), ary ny renifeo "
+     "V.A. : ny « n » no **ampiana** eo anelanelan'ny teny roa (*sary* → *sarin-*), ary ny renifeo "
      "voalohan'ny teny faharoa dia **miova** : s → ts, f → p, v → b, l → d.",
      "Asa iombonana", "Fehezanteny\nSolaitrabe", ""),
     ("4. Famakafakana (4 min)",
@@ -91,7 +91,7 @@ GRILLE = [
      "(3) satro-behivavy, tapa-pe, tongo-tsoavaly.",
      "Asa tsirairay.", "Fehezanteny", ""),
     ("5. Fandravonana (3 min)",
-     "Ampifandraiso amin'ny alalan'ny tsilo : ny roa teny sy ny endrika **atambatra** azy.",
+     "Ampifandraiso amin'ny alalan'ny tsilo : ny teny roa sy ny endrika **atambatra** azy.",
      "V.A. : ireo valiny voasoratra ao amin'ny FANITSIANA.",
      "Asa iombonana", "Solaitrabe", ""),
     ("6. Fampiharana (4 min)",
@@ -226,7 +226,7 @@ FANITSIANA = [
                 "faharoa dia miova rehefa aorian'ny « n » : s → ts, f → p, v → b, l → d."]},
 ]
 
-LALANA = ("Tadiavo 5 teny atambatra ao amin'ny lahatsoratra na boky novakinao tamin'ity "
+LALANA = ("Tadiavo teny atambatra 5 ao amin'ny lahatsoratra na boky novakinao tamin'ity "
           "herinandro ity, soraty amin'ny tabilao [teny roa | endrika atambatra | fitsipika 1 "
           "na 2 na 3], ary ampiasao ao anaty fehezanteny nataonao manokana izy rehetra.")
 
@@ -236,7 +236,7 @@ FICHE = fiche(ZT, LT, LESONA, EXOS, FANITSIANA, LALANA, seho="4", isan="2", sary
     "Minisiteran'ny Fanabeazam-pirenena : plateforme.education.mg → "
     "/bibliotheque-numerique/theme/biblio/pix/frp/college/FRP_T6/FRP_MLG_T6.pdf — « FEPETRA SY "
     "TEKINIKA ITRANDRAHANA IREO LOHAHEVITRA → LOHAHEVITRA I → FIASAN'NY TENY → **TSIPELINA** » : "
-    "LFK 1e « Fepetra amin'ny fanakambanan-teny » (ny fitsipika telo sy ny 9 ôhatra : sarin-tany, "
+    "LFK 1e « Fepetra amin'ny fanakambanan-teny » (ny fitsipika telo sy ny ôhatra 9 : sarin-tany, "
     "tranom-pokonolona, ravin-tsaonjo, miran-dava, lavenom-potsy, satro-behivavy, tapa-pe, "
     "tongo-tsoavaly, tranom-borona, tahom-penina, tongo-parafara) ary LFK 2c « Mpamaritr'isa » "
     "(« Atambatra fa tsy asiana tsipi-panohizana »). Tsy misy laharan-pejy voasoratra amin'ity "

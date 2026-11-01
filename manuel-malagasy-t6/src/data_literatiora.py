@@ -94,8 +94,8 @@ LOHARANO_12 = [
     "FRP T6 éd. Oktobra 2026, p.62 : « LOHAHEVITRA I — NY SOKAJIN-DAHATSORATRA / LFK 1a : "
     "Lesona → Ny literatiora manoritsoritra » (Famaritana · Ny firafiny · Ny mampiavaka azy : "
     "endrika ivelany sy votoatiny).",
-    "Ny santionany *Iny Ankaratra iny* : FRP p.68 (LFK 2b) — **2 andininy** voalohany ihany no "
-    "nampidirina eto ; ny tononkalo feno (6 andininy) : poetawebs.e-monsite.com/pages/fakafaka/"
+    "Ny santionany *Iny Ankaratra iny* : FRP p.68 (LFK 2b) — **andininy 2** voalohany ihany no "
+    "nampidirina eto ; ny tononkalo feno (andininy 6) : poetawebs.e-monsite.com/pages/fakafaka/"
     "page-39.htm (Nangonin'i Toetra Ràja).",
     "RAPE T6 sept. 2026 : LI 1a → herinandro 1→7 sy 28→33 ; ora 4/kerinandro.",
 ]
@@ -177,7 +177,7 @@ LESONA_13 = [
     ("note", "Ny lohateny rehetra ao amin'ny « sangan'asa » dia an'ny FRP (p.65-67). Misy "
              "kôpi taloha 93 p. mitovy teny-teny. Nohamarinina koa tamin'ny sorapiainan'i Toetra "
              "Ràja (poetawebs.e-monsite.com, 15/06/2018) sy amin'ny takelaka "
-             "vetso.serasera.org/mpanoratra/jean-narivony (13 tononkalo ao) — mitovy ny daty sy ny "
+             "vetso.serasera.org/mpanoratra/jean-narivony (tononkalo 13 ao) — mitovy ny daty sy ny "
              "anisany ; ny fifanoherana kely dia voasoratra ao amin'ny *note* momba ny tononkalo."),
 ]
 
@@ -220,7 +220,7 @@ LESONA_14 = [
                    ["Iny Ankaratra iny lahy", "Raha atrehina atoandro,", "Mahavonto ny fanahy,",
                     "Sady mampihandrohandro"]]),
     ("p", "Jean NARIVONY — FRP p.68 ; *Takelaka notsongaina I*, tak. 68. Loharano an-ty evelona : "
-          "poetawebs.e-monsite.com/pages/fakafaka/page-39.htm (ny tononkalo feno = **6 andininy**)."),
+          "poetawebs.e-monsite.com/pages/fakafaka/page-39.htm (ny tononkalo feno = **andininy 6**)."),
     ("h2", "Santionany 2 — TAKARIVA"),
     ("tononkalo", [["Tazanina iry vodilanitra mavo,", "Zay hany tratry ny maso voafetra,",
                     "Jerena lavitra manjavozavo,", "Ka ory ny saina, ny vava mitsetra."],
@@ -238,7 +238,7 @@ LESONA_14 = [
                     "No dia mampiloatra ny sentoko foana,",
                     "Dia sento mitambatra ho tononkira !"]]),
     ("p", "Jean NARIVONY — FRP p.68-69 ; loharano : vetso.serasera.org/tononkalo/jean-narivony/"
-          "takariva (7 andininy × 4 andalana). *Tononkalo sy Lahatsoratra, Amboara 2, Boky 1*, "
+          "takariva (andininy 7 × andalana 4). *Tononkalo sy Lahatsoratra, Amboara 2, Boky 1*, "
           "tak. 7."""),
     ("note", "Fifanoherana kely eo amin'ireo kopi roa : « *Jerena lavitra* » / « *Jerena Lavitra* » (vetso) ; « *tononkira* » / « *tonon-kira* » (vetso) ; « *aty "
              "an-dakira* » / « *aty andakira* ». Amin'ny andininy farany dia voasoratra « *larivo* » "
@@ -295,8 +295,8 @@ EXOS_14 = [
 ]
 
 FANITSIANA_14 = [
-    {"note": "*Iny Ankaratra iny* = 2 andininy voasoro (6 + 4 andalana) ; *Takariva* = 7 andininy "
-             "× 4 andalana = 28 ; *Ny Tenindrazako* = 8 × 4 = 32 ; *Rajakom-bazaha* (faran'ny) = "
+    {"note": "*Iny Ankaratra iny* = andininy 2 voasoro (andalana 6 + 4) ; *Takariva* = andininy 7 "
+             "× andalana 4 = 28 ; *Ny Tenindrazako* = 8 × 4 = 32 ; *Rajakom-bazaha* (faran'ny) = "
              "2 × 4 = 8."},
     {"tsilo": (["**Iny Ankaratra iny**", "**Takariva**", "**Ny Tenindrazako**",
                 "**Rajakom-bazaha**"],
@@ -314,7 +314,7 @@ LOHARANO_14 = [
     "asa sorany » — ny tononkalo rehetra **teny-teny**.",
     "Loharano an-ty evelona : poetawebs.e-monsite.com/pages/fakafaka/page-39.htm (*Iny Ankaratra "
     "iny* feno, *Takariva*, *Ny diako*) · vetso.serasera.org (*Takariva*, *Ny Tenindrazako*, "
-    "*Rajakom-bazaha* : 13 tononkalo an'ny poeta). Nohamarinina 01/11/2026.",
+    "*Rajakom-bazaha* : tononkalo 13 an'ny poeta). Nohamarinina 01/11/2026.",
     "*Amboaran-tononkalo*, 1966, Antananarivo : Edisiona Salohy — tak. 175 ho an'ny "
     "*Rajakom-bazaha* (lazaina ao amin'ny FRP).",
 ]
@@ -334,7 +334,7 @@ LESONA_15 = [
                ["**taralila**", "**UU ┴ U**", "*tsaikona tsaikona ngadona tsaikona*"]],
               [2400, 2400, 5067])),
     ("h2", "Ireo karazana rima"),
-    ("p", "**a) Araka ny laharam-pisehoany** — telo karazana omen'ny boky ; **b) araka ny "
+    ("p", "**a) Araka ny laharam-pisehoany** — karazana telo omen'ny boky ; **b) araka ny "
           "hafenoany** — efatra."),
     ("sary", "rima"),
     ("tabl", (["Karazana", "Marika", "Ôhatra ao amin'ny FRP"],
@@ -418,7 +418,7 @@ FICHES = [
                "Mamaly.", "Asa samirery", "Kahie", "Azo atao amin'ny tabilao 3 kolona."),
               ("Famakafakana amin'ny alalan'ny sary (FANITSIANA).", "Mamaly.", "Asa iombonana",
                "Solaitrabe", ""),
-              ("Mamorona 3 fehezanteny manoritsoritra.", "Mamorona.", "Asa samirery", "Kahie",
+              ("Mamorona fehezanteny 3 manoritsoritra.", "Mamorona.", "Asa samirery", "Kahie",
                "Tombana : LI 1a")],
              LESONA_12, EXOS_12, FANITSIANA_12, LOHARANO_12,
              faritana=FAR, faritana_sous="LI 1a · herinandro 1→7 sy 28→33 · ora 20",
@@ -455,7 +455,7 @@ FICHES = [
              fitaovana="Tononkalo voasoratra"),
     fiche_t6(ZT, "Ny tononkalo : andininy, ngadona, rima", "LII 2d", "8→14", 16,
              [("Mamerina ny *andininy* sy ny *andalana* (LII 2b).", "Mamaly.", "Asan-tarika",
-               "—", "Santionany : 7 andininy ao amin'ny *Takariva*."),
+               "—", "Santionany : andininy 7 ao amin'ny *Takariva*."),
               ("Lazao ny lohateny sy ny famaritana 3 (ngadona, tsaikona, ba).", "Mihaino.",
                "Asa iombonana", "Solaitrabe", "FRP p.71."),
               ("Jereo ny vanin'andalana : *lila*, *ralila*, *taralila* — inona no miova?",
@@ -464,7 +464,7 @@ FICHES = [
                "Asa samirery", "Kahie", ""),
               ("Mariky ny rima amin'ny santionany roa (FANITSIANA).", "Mamaly.", "Asa iombonana",
                "Solaitrabe", ""),
-              ("Mamorona andininy iray (4 andalana) misy rima *aa bb*.", "Mamorona.",
+              ("Mamorona andininy iray (andalana 4) misy rima *aa bb*.", "Mamorona.",
                "Asa samirery", "Kahie", "Tombana : LII 2d")],
              LESONA_15, EXOS_15, FANITSIANA_15, LOHARANO_15,
              faritana=FAR, faritana_sous="LII 2d · herinandro 8→14 · ora 20",

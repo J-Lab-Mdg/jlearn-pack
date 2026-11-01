@@ -210,7 +210,7 @@ ZT = [
                 "vontoatiny": [("Laharisa sy fandaharana",
                                 ["Ny laharisan'ny boky sy ny rohy miverina (sommaire interactif)",
                                  "Fepetra ara-pedagojia nampiasaina",
-                                 "Fomba fanaovana ny takela-panomanan-desa",
+                                 "Fomba fanaovana ny takela-panomanan-desona",
                                  "Fomba fitrandrahana ny lohahevitra : tahirin-kevitra, fandinihana, "
                                  "adihevitra",
                                  "Voka-pianarana (Tombana) sy ny fomba fanolorana azy"])],

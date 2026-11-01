@@ -68,7 +68,7 @@ FANITSIANA_8 = [
 
 LOHARANO_8 = [
     "FRP T6 éd. Oktobra 2026, p.82 : « LFK 2d : FITSIPIKY NY TENY / Fandrasana teny — Marika "
-    "famantarana fa handrasa teny : < ; Fomba fandrasana teny » + ny 8 ôhatra.",
+    "famantarana fa handrasa teny : < ; Fomba fandrasana teny » + ny ôhatra 8 voasoro ao.",
     "Fifandraisana amin'ny LFK 2a (Tsirinteny) sy 1a/1e (tsipelina) : ny teny iray ihany no "
     "miverina, fa ny karazana tsirinteny no voatondro eto.",
     "RAPE T6 sept. 2026 : herinandro 22→27 ho an'ny LFK 2d-2g.",
@@ -86,7 +86,7 @@ LESONA_9 = [
                 "*f-*, *mp-*, *ki-*, *ko-*"],
                ["**Tovana**", "eo **ambany/ao anaty** — amin'ny farany", "*-ana*, *-ina* "
                 "(*volo-ina*, *vava-ana*)"],
-               ["**Tsirinteny sara-droa**", "**roa ampahany** mifandimby: tovona + tovana",
+               ["**Tsirinteny sara-droa**", "**ampahany roa** mifandimby : tovona + tovana",
                 "*i-…-ana* (*filalaovana*)"],
                ["**Tsofoka**", "**ao anaty** fototeny, manatevina azy", "*t-al-esaka*, "
                 "*b-il-itika*, *s-ol-anga*, *f-in-aritra*"]],
@@ -106,7 +106,7 @@ EXOS_9 = [
      "tsilo": (["**Tovona**", "**Tovana**", "**Sara-droa**", "**Tsofoka**"],
                ["*nofo-s-ana*", "*ka-hihitra*", "*f-in-aritra*", "*Φ-i-lalao-v-ana*"])},
     {"consigne": "Fototeny ihany ve ny *kitratraina* ? Lazao ny karazana tsirinteny hita ao."},
-    {"consigne": "Mamorona roa teny misy tsofoka ary roa misy tovona tsy mivaky."},
+    {"consigne": "Mamorona teny roa misy tsofoka ary roa misy tovona tsy mivaky."},
 ]
 
 FANITSIANA_9 = [
@@ -130,8 +130,10 @@ LOHARANO_9 = [
 # =========================================================== L10 · 2f
 LESONA_10 = [
     ("h2", "Ny atao hoe famadihana ny RF ho L"),
-    ("p", "« *Fomba tsotra indrindra famadihana ny RF ho L* ». Ny **RF** dia ny fehezanteny **mivady** (*R* + *F* : ny toerana anaovan'ny mpandray anjara lehibe), ny "
-          "**L** kosa dia ny lazaina — ka ny dingana dia : **mamerina ny EM** (ny zavatra "
+    ("p", "« *Fomba tsotra indrindra famadihana ny RF ho L* » — voasoratra amin'ny FRP p.83 hoe "
+          "« *RF avadika ho L* ». Ny **L** dia ny lazaina (*L / Iharana*) ; **tsy misy fanazavana** "
+          "ho an'ny « RF » na « EM » ao amin'ny boky — ampiasaina toy izay voasoratra amin'ny "
+          "tabilao ihany izany. Ny dingana dia : **mamerina ny EM** (ny zavatra "
           "tokony ho reniraina) **ho aloha**, ary **hamadihady ny matoanteny** mba "
           "hanarahana ny *« no »*."""),
     ("sary", "rf-ho-l"),
@@ -167,8 +169,8 @@ EXOS_10 = [
 ]
 
 FANITSIANA_10 = [
-    {"note": "*Milalao baolina i Lita.* → *Baolina no lalaovin' i Lita.* ; *Mividy fanafody "
-             "ianao.* → *Fanafody no vidaovina.* (toy ny ôhatra ao amin'ny FRP)."},
+    {"note": "*Milalao baolina i Lita.* → *Baolina no lalaovin' i Lita.*  (*Baolina no lalaovin' i Lita* "
+             "no ôhatra anisan'ny boky, LFK 2f)."},
     {"note": "*Vary no vidian' i Neny.* — araka ny fomba amin'ny boky : *Baolina no lalaovin' "
              "i Lita* (*lalao* + *-v-* + *-ina*) → *vary* + *-ana* → *vidiana*, *n'* alohan'ny "
              "*i Neny*."},
@@ -256,7 +258,7 @@ FICHES = [
                "Mamaly.", "Asa mifampiha", "Tabilao", "Miova ho *Φ-a-tao* ny *atao*."),
               ("Zarao: tovona mivaky / tsy mivaky / tovana / sara-droa / tsofoka ao amin'ny "
                "*filalaovana*.", "Mamaly.", "Asa samirery", "Kahie", ""),
-              ("Sary fandrasan-teny : 4 teny, 4 fandravana.", "Mamaly amin'ny tsilo.",
+              ("Sary fandrasan-teny : teny 4, fandravana 4.", "Mamaly amin'ny tsilo.",
                "Asa iombonana", "Solaitrabe", ""),
               ("Mandraza teny roa hafa (oh : *mahafinaritra*, *voloina*).", "Mamorona.",
                "Asa samirery", "Kahie", "Tombana : LFK 2d")],
@@ -271,11 +273,11 @@ FICHES = [
                "Solaitrabe", ""),
               ("Omeo anarana ny tsirinteny isaky ny ampahany.", "Mamaly.", "Asa mifampiha",
                "Tabilao", ""),
-              ("Zarao amin'ny karazana efatra ny 12 teny ao amin'ny tabilao.", "Mamaly.",
+              ("Zarao amin'ny karazana efatra ny teny 12 ao amin'ny tabilao.", "Mamaly.",
                "Asa samirery", "Kahie", ""),
               ("Inona no atao amin'ny tsofoka amin'ny mpamari-toetra ?",
                "« *manamafy ny hevitra* ».", "Asa iombonana", "—", ""),
-              ("Mamorona 4 teny : iray isaky ny karazana.", "Mamorona.", "Asa samirery", "Kahie",
+              ("Mamorona teny efatra : iray isaky ny karazana.", "Mamorona.", "Asa samirery", "Kahie",
                "")],
              LESONA_9, EXOS_9, FANITSIANA_9, LOHARANO_9,
              faritana=FAR, faritana_sous="LFK 2e · herinandro 22→27 · ora 20"),
@@ -293,7 +295,7 @@ FICHES = [
                "Asa samirery", "Kahie", "Tombana : LFK 2f")],
              LESONA_10, EXOS_10, FANITSIANA_10, LOHARANO_10,
              faritana=FAR, faritana_sous="LFK 2f · herinandro 22→27 · ora 20",
-             tombana=("Manamarina amin'ny alalan'ny efatra ôhatra : afaka mamadika RF ho L ny "
+             tombana=("Manamarina amin'ny alalan'ny ôhatra efatra : afaka mamadika RF ho L ny "
                       "mpianatra ?", "Mamaly.", "Asa samirery",
                       "Mamadihady ny RF ho L amin'ny alalan'ny « no » sy ny tovana ny mpianatra.")),
     fiche_t6(ZT, "Filaza mandidy", "LFK 2g", "22→27", 12,
@@ -306,7 +308,7 @@ FICHES = [
               ("Inona no very ? Karohy ny mpisolo tena.", "Mamaly.", "Asa samirery", "Kahie", ""),
               ("Tsilo: *vakina → vakio* ; *soa → soavà* ; *valio* ; *manaovana*.", "Mamaly.",
                "Asa iombonana", "Solaitrabe", ""),
-              ("Mamorona roa ôhatra ho an'ny fianakaviana / ho an'ny kilasy.", "Mamorona.",
+              ("Mamorona ôhatra roa ho an'ny fianakaviana / ho an'ny kilasy.", "Mamorona.",
                "Asa samirery", "Kahie", "Tombana : LFK 2g")],
              LESONA_11, EXOS_11, FANITSIANA_11, LOHARANO_11,
              faritana=FAR, faritana_sous="LFK 2g · herinandro 22→27 · ora 20",

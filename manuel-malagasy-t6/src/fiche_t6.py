@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""`fiche_t6.py` — mpanampy mamorona **takela-panomanan-desa + lesona** ho an'ny manuela feno.
+"""`fiche_t6.py` — mpanampy mamorona **takela-panomanan-desona + lesona** ho an'ny manuela feno.
 
 Miverina amin'ny gabarit ôfisialy (`fiche_pe.py`) ny rakitra, ka ny lesona tsirairay dia
 mamokatra :
