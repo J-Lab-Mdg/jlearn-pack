@@ -4,7 +4,9 @@ Date de l’audit : 1 novembre 2026
 
 ## 1. Périmètre et sources contrôlés
 
-- `manuel-histoire-t7/livrables/Manuel_Histoire_T7_JLearn_V1.docx`
+**Correction importante :** le premier contrôle avait été effectué sur le fichier local `manuel-histoire-t7/livrables/Manuel_Histoire_T7_JLearn_V1.docx`, et non sur le fichier indiqué dans le lien GitHub. L’audit ci-dessous est maintenant recalé sur le fichier exact du lien :
+
+- `Nos manuels/Histoire_T7_JLearn.docx` sur `origin/main` — fichier lié par l’utilisateur, 16 010 579 octets ;
 - `manuel-histoire-t7/PLAN.md`
 - `manuel-histoire-t7/src/engine.js`
 - `PE_T7.docx`
@@ -31,6 +33,7 @@ La version T7 finale contient :
 | Séances affichées dans le DOCX | 37 |
 | Scènes | 25 |
 | Figures mathématiques/historiques | 25 |
+| Médias intégrés dans le fichier lié | 54 (25 scènes, 25 figures et médias de couverture/front matter) |
 
 Le découpage des 25 séances de contenu est cohérent avec le `PLAN.md` :
 
@@ -71,9 +74,17 @@ Contrôle automatisé : les 25 séances ont chacune :
 - 1 bloc d’exercices ;
 - 1 bloc de corrigés.
 
-### 2.3. Conclusion sur T7
+### 2.3. Anomalie repérée dans le fichier T7 lié
 
-La dernière version T7 constitue un **bon modèle de référence structurelle** pour T8 : la progression est lisible, les unités sont séparées, les scènes et figures sont présentes et chaque séance possède une fiche de préparation ainsi qu’une leçon documentée.
+La page d’authenticité du fichier lié contient la phrase :
+
+> `Ce manuel « Géographie T4 » est une publication officielle J-Learn.`
+
+Cette mention est incohérente dans un manuel d’Histoire T7 et doit être remplacée par une formulation Histoire T7 avant toute diffusion commerciale. La même page contient également des éléments de vente et de droits qui ne figurent pas dans la version locale du générateur : il faut donc traiter le fichier lié comme une édition différente, et non comme un simple doublon du DOCX local.
+
+### 2.4. Conclusion sur T7
+
+La dernière version T7 du lien constitue un **bon modèle de référence structurelle** pour T8 : la progression est lisible, les unités sont séparées, les scènes et figures sont présentes et chaque séance possède une fiche de préparation ainsi qu’une leçon documentée.
 
 Toutefois, un défaut du moteur T7 est également présent dans T8 : le champ `s.synthese` est utilisé dans la fiche de préparation, mais il n’est pas rendu comme une trace écrite autonome dans la partie élève de la leçon. La synthèse existe donc dans le tableau enseignant, mais pas comme rubrique finale visible avant les exercices.
 
