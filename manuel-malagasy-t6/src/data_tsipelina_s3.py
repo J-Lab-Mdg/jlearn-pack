@@ -2,8 +2,9 @@
 """T6 — lesona S3 : Fiasan'ny teny · Tsipelina · « Fepetra amin'ny fanakambanan-teny » (V1)
 
 FIFANDRANANA (didin'ny mpanabe, 30 sy 31/10 ; rafitana 01/11)
-  * VOTOATY sy LOHATENY = **FRP T6, ÉDITION OCTOBRE 2026** : « FEPETRA SY TEKINIKA
-    ITRANDRAHANA IREO LOHAHEVITRA → LOHAHEVITRA I → FIASAN'NY TENY → TSIPELINA → LFK 1e :
+  * VOTOATY sy LOHATENY = **FRP T6, ÉDITION OCTOBRE 2026** : lohateny anisan'ny PE,
+    « *Ny fepetra sy tekinika fitrandrahana ireo lohahevitra ireo* » (PE_T6.txt L346) → ny
+    lalan'ny FRP : LOHAHEVITRA I → FIASAN'NY TENY → TSIPELINA → LFK 1e :
     « TSIPELINA / Fepetra amin'ny fanakambanan-teny ». Tsy misy laharan-pejy aseho amin'ny
     PDF 2026 → **azojavona amin'ny code lesona + lohatenin-dingana** ; ny dikan-teny 93 p.
     dia p.75-76 (mitovy teny-teny, **anisan'izany ny coquille « rsha »** → voamarina fa
@@ -14,7 +15,7 @@ FIFANDRANANA (didin'ny mpanabe, 30 sy 31/10 ; rafitana 01/11)
   * NY FEHEZA MANGINA (« ... rsha tsy amin'ny teny miverina ... ») dia **ampana mitsivalana**
     amin'ny ohatra ao amin'ny boky (tranom-borona, tahom-penina, tongo-parafara) ; ny
     fanamarihana momba ny coquille dia ao amin'ny `note` ho an'ny mpampianatra.
-  * MIFANDRAY AMIN'NY FITSIPIKY NY TENY : LFK 2c (mpamaritr'isa) « **Atambatra fa tsy
+  * MIFANDRAY AMIN'NY FITSIPIKY NY TENY : « MPAMARITR'ISA » (FRP p.80-81) « **Atambatra fa tsy
     asiana tsipi-panohizana** » → *faharoa, fahefatra, ampahatelony, hateloana, fanindroany*.
   * CADRE = PE T6 p.21-22 ; RAPE T6 sept. 2026 (herinandro 1→7, 4 ora/kerinandro) ; `Daty`
     mangina ; `Faharetany : ora 12` raporitra. Gabarit takela = 6 dingana, TNR 12, Tinos ;
@@ -235,10 +236,11 @@ FICHE = fiche(ZT, LT, LESONA, EXOS, FANITSIANA, LALANA, seho="4", isan="2", sary
     "FRP T6 — « FASCICULE DE RESSOURCES PÉDAGOGIQUES », taranja Malagasy, **ÉDITION OCTOBRE 2026**, "
     "Minisiteran'ny Fanabeazam-pirenena : plateforme.education.mg → "
     "/bibliotheque-numerique/theme/biblio/pix/frp/college/FRP_T6/FRP_MLG_T6.pdf — « FEPETRA SY "
-    "TEKINIKA ITRANDRAHANA IREO LOHAHEVITRA → LOHAHEVITRA I → FIASAN'NY TENY → **TSIPELINA** » : "
+    "TEKINIKA FITRANDRAHANA IREO LOHAHEVITRA » (lohateny anisan'ny PE) → LOHAHEVITRA I → "
+     "FIASAN'NY TENY → **TSIPELINA** : "
     "LFK 1e « Fepetra amin'ny fanakambanan-teny » (ny fitsipika telo sy ny ôhatra 9 : sarin-tany, "
     "tranom-pokonolona, ravin-tsaonjo, miran-dava, lavenom-potsy, satro-behivavy, tapa-pe, "
-    "tongo-tsoavaly, tranom-borona, tahom-penina, tongo-parafara) ary LFK 2c « Mpamaritr'isa » "
+    "tongo-tsoavaly, tranom-borona, tahom-penina, tongo-parafara) ary « MPAMARITR'ISA » (p.80) "
     "(« Atambatra fa tsy asiana tsipi-panohizana »). Tsy misy laharan-pejy voasoratra amin'ity "
     "PDF ity amin'ireo dingana ireo.",
     "FRP 6ème Malagasy (93 pejy, « FRP_6eme_MLG.pdf »), p.75-76 : mitovy teny-teny — **anisan'izany "

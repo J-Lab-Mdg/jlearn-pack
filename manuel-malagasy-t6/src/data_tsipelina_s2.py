@@ -69,7 +69,7 @@ GRILLE = [
      "Mamaky.",
      "Asan-tarika", "Ampahan-dahatsoratra", ""),
     ("2. Fanolorana (2 min)",
-     "Lazao ny lohateny : « TSIPELINA / **Ny teny verindroa** » ; soraty amin'ny solaitrabe ny "
+     "Lazao ny lohatenin'ny lesona : « **Ny teny verindroa** » ; soraty amin'ny solaitrabe ny "
      "fizarana efatra : **I. Famaritana · II. Ny heviny · III. Ny endriny · IV. Isaky ny "
      "abidy**.\n"
      "Soraty amin'ny tabilao : *lava* = *lavalava* · *faritra* = *fariparitra*.",
@@ -305,8 +305,8 @@ FICHE = fiche(ZT, LT, LESONA, EXOS, FANITSIANA, LALANA, seho="3", isan="2", sary
     "« TSIPELINA / Tanjon'ny fampiasana teny verindroa » (Manalefaka hevitra : « Mihantahanta "
     "indray i Lita kely marina a ! » · Manamafy hevitra : « Fepero ihany ny ankizy amin' ity tia "
     "mihaninkanika ity. ») ; LFK 2b Mpamari-toetra (*lavalava*, *menamena*, *lavidavitra*, "
-    "*matoritory*, *sitatsitaka*, *soritsoritra*) ; LFK 2c Mpamaritr'isa (« Tsy azo atao verindroa "
-    "raha tsy asiana tsi- na ki- eo alohany ») ; LFK 1e (fanakambanan-teny : s → ts, f → p, "
+    "*matoritory*, *sitatsitaka*, *soritsoritra*) ; « MPAMARITR'ISA » (FRP p.80) : « Tsy azo atao verindroa "
+    "raha tsy asiana “tsi-” na “ki-” eo alohany » ; LFK 1e (fanakambanan-teny : s → ts, f → p, "
     "v → b, l → d).",
     "*TOROLALANA ho an'ny BOKY KINGAVOLA sy HAIVOLA — Kilasy faha-8 sy faha-7 (natambatra)*, "
     "Ministeran'ny Fanabeazam-Pirenena / D.C.I, **edisiona fahefatra**, Natonta-Faninefany, "
@@ -322,8 +322,9 @@ FICHE = fiche(ZT, LT, LESONA, EXOS, FANITSIANA, LALANA, seho="3", isan="2", sary
     "RASOLOFOSON, Tovonjanahary Jorosoa, *Ny endriky ny matoanteny verindroa amin'ny teny malagasy*, "
     "mémoire Maîtrise ès-lettres, Oniversiten'Antananarivo (STe.La.Ri.M.), notarihin-dRALALAOHERIVONY "
     "Baholisoa Simone, 2014, 188 p. : §1.1.1 (ny tady, ny kofehy, ny loko, ny hosy → ôhatra ao "
-    "amin'ny II.b sy amin'ny fanazaran-tena 2) ; §1.1.1.1 (« ny fototeny ihany no averina ») ; "
-    "TOVANA II « lisitry ny verindroa ara-boambolana » (*hohokohoka*, *roaroa*). Version en ligne : "
+    "amin'ny II.b sy amin'ny fanazaran-tena 2) ; §1.1.1.1 : « *tsy mahakasika ny tsirinteny ny fitsipika fa ny fototeny ihany no azo atao "
+    "verindroa* » ; "
+    "TOVANA II : « Fafana maneho ny lisitry ny verindroa ara-boambolana » (*hohokohoka*, *roaroa*). Version en ligne : "
     "fr.scribd.com/document/779789422/rasolofosonTovonjanaharyJ-MG-M1-14. **Tsy ampidirina** eto ny "
     "momba ny « a miova ho o » (*boka → boboka*, *kibo → kibobo*), voalamina 01/11/2026.",
     "PE T6, PROGRAMME D'ETUDES — taranja Malagasy, p.21-22 « FIASAN'NY TENY - Tsipelina » "

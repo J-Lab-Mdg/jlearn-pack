@@ -502,7 +502,7 @@ def _isa_s2():
                     "inenina", "ifito", "ivalo"],
                    ["fe-potoana", "—", "—", "hateloana", "hefarana", "hadimiana", "henemana",
                     "hafitoana", "havaloana"]],
-                   tete=["Karazana mpamaritr'isa (FRP, LFK 2c)", "", "", "", "", "", "", "", ""],
+                   tete=["Karazana mpamaritr'isa (FRP p.80-81)", "", "", "", "", "", "", "", ""],
                    cols=[128.0] + [45.6] * 8, pt=8.0, h_rangee=16.0)
 
 

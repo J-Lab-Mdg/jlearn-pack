@@ -426,3 +426,17 @@ sarahavana amin'ny « manamafy hevitra » an'ny verindroa (1d).
   réapparition** · `TUATUA` · rakitra **1 658** andalana / **98** tabilao · **1 319 184** o.
   Filaharan'ny isa, lahatsoratra fanamafana : **`manuel-malagasy-t6/refs/11_FILAHARANAN-DISA.md`**.
   **T5 : tsy nanenjana akory** (vita izy).
+
+- *Refonte T6 (11/02, tranche 2 sy 3 — ny loharano)* : **tranche 2** = 6 fifandraisana pejy
+  (FRP p.NN) voamarina amin'ny **index** `===== PEJY n =====` ; **tranche 3** = (i) **36 kaody**
+  ao amin'ny FRP → **tsy misy « …c » akory**, ka ny « LFK 2c » **7 toerana** nataoko dia
+  **voalaiky** (naposina « MPAMARITR'ISA », p.80-81) ; (ii) **12** lohateny « LFK … » natao
+  teny-teny araka ny boky (kaody *lanja* lohateny, tsy miara-lohateny intsony) ; (iii) ny
+  « *FEPETRA SY TEKINIKA **I**TRANDRAHANA* » → **FI**TRANDRAHANA (tenin'ny PE L346) ; (iv) ny
+  baiko natao an-tsainy « *Hodihoireo…* » → **Diniho…** ; (v) « Ahitana betsaka an'**ireo** » →
+  an'**ireto** (FRP p.63). Firaketana : **43** quote ofisialy → **0** tsy verbatim · `LFK 2c` 0 ·
+  `vidaovina` 0 · `panomanan-desa` 0 · LISTE-ROUGE 0 · `TUATUA` · **1 659** andalana /
+  **98** tabilao / **171 546** litera. Fifandraisan'ireo kaody sy ny « tsy azo verifika eto » :
+  **`manuel-malagasy-t6/refs/12_…md`** (pejy) sy **`refs/13_…md`** (kaody + sokajin'ny 46
+  residue). Ny 22 ao amin'ny sokajy (b) dia **loharana ivelany misy URL sy daty** — azo miverina,
+  fa tsy azo refesina eto : **refs/14** no hitahirizana azy raha tina.

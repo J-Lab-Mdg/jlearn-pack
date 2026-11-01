@@ -220,10 +220,11 @@ LESONA_C = [
           "*tamberin-jana-peo* ». Ny atao hoe sarin-teny fampitahana — izay efa noresahina tamin'ny"
           " lesona momba ny literatiora manoritsoritra — dia voalaza amin'ny FRP amin'ny hoe : "
           "« *Sarin-teny fampitahana, toy ny fanomezana aina ny tsy manana aina* »."),
-    ("note", "FRP T6, literatiora (tak. 63) : « *Ahitana betsaka an'ireo : filazam-potoana* "
-             "*ankehitriny amin'ny matoanteny · mari-piatoana · mpamari-toetra · tambyn-teny sy* "
-             "*mpanampy · mpisolo isan-karazany · sarin-teny fampitahana · teny verindroa ·* "
-             "*fehezanteny fohy* »."),
+    ("note", "FRP T6, literatiora (p.63) : « *Ahitana betsaka an'ireto* » : *Filazam-potoana "
+             "ankehitriny amin'ny matoanteny · Mari-piatoana · Mpamari-toetra · Tambin-teny sy "
+             "mpanampy · Mpisolo isan-karazany · Sarin-teny fampitahana… · Teny verindroa · "
+             "Fehezanteny fohy* » (isaky ny andalana ny baiko ao amin'ny boky, ka ny iray "
+             "voafaingana tamin'ny « … »)."),
     ("h2", "Ny tamberin-drenifeo"),
     ("p", "Araka ny fandaharana an'ny taranja Malagasy, ny *tamberin-drenifeo* dia « *tokana na* "
           "*mifanakaiky an-dohan-teny mifanesy* », izay atao hoe **Allitération** amin'ny teny "

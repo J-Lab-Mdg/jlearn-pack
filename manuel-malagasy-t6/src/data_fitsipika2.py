@@ -67,8 +67,8 @@ FANITSIANA_8 = [
 ]
 
 LOHARANO_8 = [
-    "FRP T6 éd. Oktobra 2026, p.82 : « LFK 2d : FITSIPIKY NY TENY / Fandrasana teny — Marika "
-    "famantarana fa handrasa teny : < ; Fomba fandrasana teny » + ny ôhatra 8 voasoro ao.",
+    "FRP T6 éd. Oktobra 2026, p.82 : « LFK 2d: Lesona » → « FITSIPIKY NY TENY/ Fandrasana teny » : "
+    "« Marika famantarana fa handrasa teny : < » sy « Fomba fandrasana teny » + ny ôhatra 8 voasoro ao.",
     "Fifandraisana amin'ny LFK 2a (Tsirinteny) sy 1a/1e (tsipelina) : ny teny iray ihany no "
     "miverina, fa ny karazana tsirinteny no voatondro eto.",
     "RAPE T6 sept. 2026 : herinandro 22→27 ho an'ny LFK 2d-2g.",
@@ -120,7 +120,7 @@ FANITSIANA_9 = [
 ]
 
 LOHARANO_9 = [
-    "FRP T6 éd. Oktobra 2026, p.82 : « LFK 2e : FITSIPIKY NY TENY / Anaran'ny tsirinteny » "
+    "FRP T6 éd. Oktobra 2026, p.82 : « LFK 2e: Lesona » → « FITSIPIKY NY TENY/ Anaran'ny tsirinteny » "
     "(karazana efatra).",
     "Ny ôhatra rehetra (*ma-dio*, *maha-finaritra*, *ka-hihitra*, *fa-rofy*, *volo-ina*, "
     "*nofo-s-ana*, *vava-ana*, *t-al-esaka*, *b-il-itika*, *s-ol-anga*, *f-in-aritra*, "
@@ -179,7 +179,7 @@ FANITSIANA_10 = [
 ]
 
 LOHARANO_10 = [
-    "FRP T6 éd. Oktobra 2026, p.83 : « LFK 2f : FITSIPIKY NY TENY / Famadihana ny RF ho L » + ny "
+    "FRP T6 éd. Oktobra 2026, p.83 : « LFK 2f : Lesona » → « FITSIPIKY NY TENY/ Famadihana ny RF ho L » + ny "
     "ôhatra (*Milalao baolina i Lita.* / *Baolina no lalaovin' i Lita.* / *Lalaovina < Φ-lalao-v-ina* "
     "/ *Lalaovina ny baolina*).",
     "Ny « anjara asa fototra (EM, L) sy fameno » : FRP LFK 2b, p.78 (mpamari-toetra).",
@@ -241,7 +241,7 @@ FANITSIANA_11 = [
 ]
 
 LOHARANO_11 = [
-    "FRP T6 éd. Oktobra 2026, p.83 : « LFK 2g : FITSIPIKY NY TENY / Filaza mandidy » — ny "
+    "FRP T6 éd. Oktobra 2026, p.83 : « LFK 2g: Lesona » → « FITSIPIKY NY TENY/ Filaza mandidy » — ny "
     "famaritana, ny ôhatra roa, « *Ny Matoanteny sy ny mpamari-toetra dia aza atao mandidy* », "
     "*Vakina > vakio*, *Soa > soa-v-a*.",
     "Ny « *-v-* : fanatsaram-peo » : FRP LFK 2d (p.82).",

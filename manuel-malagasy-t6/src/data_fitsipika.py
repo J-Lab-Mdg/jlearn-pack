@@ -101,9 +101,9 @@ FANITSIANA_4 = [
 
 LOHARANO_4 = [
     "FRP T6 — « Fascicule de Ressources Pédagogiques », taranja Malagasy, ÉDITION OCTOBRE 2026, "
-    "Minisiteran'ny Fanabeazam-pirenena : FEPETRA SY TEKINIKA ITRANDRAHANA IREO LOHAHEVITRA → "
-    "LOHAHEVITRA II → FITSIPIKY NY TENY → « LFK 2a : Tsirinteny » (p.77).",
-    "FRP T6 (kopi 93 p.), p.82 : « LFK 2d : Fandrasana teny » — ny fandravan-teny ampiasaina ho "
+    "Minisiteran'ny Fanabeazam-pirenena : « FEPETRA SY TEKINIKA FITRANDRAHANA IREO LOHAHEVITRA » → "
+    "LOHAHEVITRA II → FITSIPIKY NY TENY → « LFK 2a: Lesona » → « FITSIPIKY NY TENY/ Tsirinteny » (p.77).",
+    "FRP T6 (kopi 93 p.), p.82 : « LFK 2d: Lesona » → « FITSIPIKY NY TENY/ Fandrasana teny » — ny fandravan-teny ampiasaina ho "
     "marina amin'ny fanamafisana ny karazana tsirinteny.",
     "RAPE T6 sept. 2026 : 4 ora/kerinandro ; Malagasy p.6-7.",
 ]
@@ -162,8 +162,8 @@ FANITSIANA_5 = [
 ]
 
 LOHARANO_5 = [
-    "FRP T6 éd. Oktobra 2026 : LOHAHEVITRA II → FITSIPIKY NY TENY → « LFK 2b : Sokajin-teny — "
-    "**Mpanoritra** » (p.78), teny-teny.",
+    "FRP T6 éd. Oktobra 2026 : LOHAHEVITRA II → FITSIPIKY NY TENY → « LFK 2b : Lesona » → « FITSIPIKY NY TENY/ "
+    "Sokajin-teny » + ny lohateny « **Mpanoritra** : » (p.78), teny-teny.",
     "Ny ôhatra rehetra (*Tonga i Naivo.*, *Misaotra betsaka anao Ranaotra.*, *Ho avy ry Rabe "
     "mianakavy.*, *Nandrifatra ilay mena ka tsy tana.*, *Vao nandatsaka Ikalamara…*) dia an'ny FRP.",
     "RAPE T6 sept. 2026 : herinandro 15→21 ho an'ny LFK 2b.",
@@ -235,7 +235,7 @@ FANITSIANA_6 = [
 ]
 
 LOHARANO_6 = [
-    "FRP T6 éd. Oktobra 2026, p.78-80 : « LFK 2b : Sokajin-teny — **MPAMARI-TOETRA** » "
+    "FRP T6 éd. Oktobra 2026, p.78-80 : « LFK 2b : Lesona » → « FITSIPIKY NY TENY/ Sokajin-teny » + « **NY MPAMARI-TOETRA** » "
     "(Famaritana · 2.1 foto-teny · 2.2 sampanteny + ny karazana 4).",
     "Lisitry ny mpamari-toetra (*tsara, mainty, makirana, kizitina, lalina, sariaka, mateza, mando, "
     "mjidina, hentitra, velona, malazo, tamana*) : teny-teny avy amin'ny FRP, p.80.",
@@ -307,6 +307,9 @@ LOHARANO_7 = [
     "g) + ny marika « *Atambatra fa tsy asiana tsipi-panohizana* ».",
     "Fifandraisana amin'ny fanakambanan-teny : FRP LFK 1e (p.75-76) — *faharoa*, *ampahatelony*, "
     "*hateloana*, *fanindroany*.",
+    "Kaody : ny FRP (p.9-49 sy p.62-83) dia mamorona ny dingana amin'ny anarana « LFK 1a », « LFK "
+    "1b », « LFK 1d », « LFK 2a »… **tsy misy « …c » akory** — koa dia ny lohateny (« "
+    "MPAMARITR'ISA », p.80) sy ny pejy no ampiasaina eto, fa tsy kaody natao an-tsainy.",
     "Rakibolana / *Malagasy Dictionary and Encyclopedia* (malagasyword.org) — namerina teny "
     "*hefarana*, *fanindroany*, *impolo* ihany (tsy nampidirina ho fitsipika).",
 ]
@@ -319,7 +322,7 @@ FICHES = [
               ("Lazao ny lohateny : « FITSIPIKY NY TENY / **Tsirinteny** ». Soraty ny karazana "
                "efatra ivoarany.", "Mihaino, manoratra ny lohateny.", "Asa iombonana",
                "Solaitrabe", "FRP LFK 2a sy 2e."),
-              ("« *Hodihoireo ny teny rehetra misy tsirinteny ary ataovy kisaraka ny fototeny* » : "
+              ("Diniho ny teny rehetra misy tsirinteny ary ataovy kisaraka ny fototeny : "
                "*nilalaovana*, *hilalaovana*, *atao*, *sinaritra*.",
                "Manavaka ny fototeny sy ny tsirinteny.", "Asa samirery", "Kahie", ""),
               ("Zarao amin'ny **koveta** efatra ireo teny : tovona mivaky / tovona tsy mivaky / "
@@ -366,7 +369,7 @@ FICHES = [
              LESONA_6, EXOS_6, FANITSIANA_6, LOHARANO_6,
              faritana=FAR, faritana_sous="LFK 2b (mpamari-toetra) · herinandro 15→21 · ora 20",
              ),
-    fiche_t6(ZT, "Sokajin-teny : ny mpamaritr'isa", "LFK 2c", "15→21", 8,
+    fiche_t6(ZT, "Sokajin-teny : ny mpamaritr'isa", "MPAMARITR'ISA · p.80-81", "15→21", 8,
              [("Lazao ny isa 1-10 amin'ny teny malagasy.", "Mamaly.", "Asan-tarika", "—",
                "Famerenana."),
               ("Soraty ny lohateny sy ny famaritana.", "Mihaino.", "Asa iombonana",
@@ -377,9 +380,9 @@ FICHES = [
                "*havaloana*, *fanindiminy*, *roa*.", "Mamaly.", "Asa samirery", "Kahie", ""),
               ("Tsilo : isa ↔ laharana.", "Mamaly.", "Asa iombonana", "Solaitrabe", ""),
               ("Soraty ny fehezanteny: « *… aho amin'ny … andro* » amin'ny isa roa na telo.",
-               "Mamorona.", "Asa samirery", "Kahie", "Tombana : LFK 2c")],
+               "Mamorona.", "Asa samirery", "Kahie", "Tombana : mpamaritr'isa (p.80)")],
              LESONA_7, EXOS_7, FANITSIANA_7, LOHARANO_7,
-             faritana=FAR, faritana_sous="LFK 2c (mpamaritr'isa) · herinandro 15→21 · ora 20",
+             faritana=FAR, faritana_sous="Mpamaritr'isa (p.80-81) · herinandro 15→21 · ora 20",
              ),
 ]
 

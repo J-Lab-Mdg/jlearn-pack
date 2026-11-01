@@ -33,7 +33,7 @@ LESONA_12 = [
                 "« *Misy sehatra ifantohan'ny fijery sy ny fisainana* » — ôhatra ao amin'ny boky : "
                 "*zavatra, bika, toetran'olona, toerana*"]),
     ("h2", "3. Ny mampiavaka azy"),
-    ("p", "**Endrika ivelany** — « *Ahitana betsaka an'ireo* » :"),
+    ("p", "**Endrika ivelany** — « *Ahitana betsaka an'ireto* » (FRP p.63, teny-teny) :"),
     ("tabl", (["Endrika ivelany", "Votoatiny"],
               [["Filazam-potoana **ankehitriny** amin'ny matoanteny",
                 "« *Toy ny mahita mivantana sy mahazo sary an-tsaina ny zavatra soritsoritana "
@@ -91,8 +91,8 @@ FANITSIANA_12 = [
 ]
 
 LOHARANO_12 = [
-    "FRP T6 éd. Oktobra 2026, p.62 : « LOHAHEVITRA I — NY SOKAJIN-DAHATSORATRA / LFK 1a : "
-    "Lesona → Ny literatiora manoritsoritra » (Famaritana · Ny firafiny · Ny mampiavaka azy : "
+    "FRP T6 éd. Oktobra 2026, p.62 : « LOHAHEVITRA I », "
+    "« NY SOKAJIN-DAHATSORATRA/Ny literatiora manoritsoritra », « LFK 1a: Lesona » (Famaritana · Ny firafiny · Ny mampiavaka azy : "
     "endrika ivelany sy votoatiny).",
     "Ny santionany *Iny Ankaratra iny* : FRP p.68 (LFK 2b) — **andininy 2** voalohany ihany no "
     "nampidirina eto ; ny tononkalo feno (andininy 6) : poetawebs.e-monsite.com/pages/fakafaka/"
@@ -203,7 +203,7 @@ FANITSIANA_13 = [
 ]
 
 LOHARANO_13 = [
-    "FRP T6 éd. Oktobra 2026, p.63-68 : « LFK 2a : Lesona → NY MPANORATRA / JEAN NARIVONY na "
+    "FRP T6 éd. Oktobra 2026, p.63-68 : « LFK 2a : Lesona » → « NY MPANORATRA/ JEAN NARIVONY na "
     "RAJAONARIVONY Jean (1898-1980) » — ny tantaran'ny fiainana rehetra sy ny lisitry ny "
     "sangan'asa, **Nangonin'i Toetra Ràja** (lazaina ao amin'ny boky).",
     "Nohamarinina tamin'ny : poetawebs.e-monsite.com/pages/sorapiainana/page-39-1.html sy "
@@ -312,7 +312,7 @@ FANITSIANA_14 = [
 ]
 
 LOHARANO_14 = [
-    "FRP T6 éd. Oktobra 2026, p.68-71 : « LFK 2b : Lesona → NY MPANORATRA / Santionany amin'ny "
+    "FRP T6 éd. Oktobra 2026, p.68-71 : « LFK 2b: Lesona » → « NY MPANORATRA / Santionany amin'ny "
     "asa sorany » — ny tononkalo rehetra **teny-teny**.",
     "Loharano an-ty evelona : poetawebs.e-monsite.com/pages/fakafaka/page-39.htm (*Iny Ankaratra "
     "iny* feno, *Takariva*, *Ny diako*) · vetso.serasera.org (*Takariva*, *Ny Tenindrazako*, "
@@ -395,7 +395,7 @@ FANITSIANA_15 = [
 ]
 
 LOHARANO_15 = [
-    "FRP T6 éd. Oktobra 2026, p.71-73 : « LFK 2d : Lesona → NY MPANORATRA / Ny asa soratra kanto "
+    "FRP T6 éd. Oktobra 2026, p.71-73 : LFK 2d : « Lesona » → « NY MPANORATRA / Ny asa soratra kanto "
     "mampiavaka azy eo amin'ny tononkalo » — 1. andininy sy andalana · 2. ngadona · 3. rima + ny "
     "ôhatra rehetra (mifanjohy, mifaningotra, mifampisakambina, feno mihoatra, feno, zara fa feno, "
     "sary rima).",
