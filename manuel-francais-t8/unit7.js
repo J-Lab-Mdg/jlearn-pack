@@ -548,6 +548,7 @@ function lessonS77() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 77", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1_v2bboxNxQRWy-85KmOT_tJxUpxWH7NU/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES STRUCTURES POUR DONNER UNE CONSIGNE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Quatre manières de faire agir"),
@@ -638,6 +639,7 @@ function lessonS78() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 78", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1kUHw61Aeltuz5RbrwswS2ydFoBGIec7u/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ET, ENSUITE, PUIS, APRÈS, ENFIN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. La chaîne des étapes"),
@@ -728,6 +730,7 @@ function lessonS79() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 79", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/15txcTqICeGcvAKSgSjCMgDga7JY9fjD3/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("EXPLIQUER UN GESTE TECHNIQUE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Mon plan en quatre temps (1 min 30)"),
@@ -814,6 +817,7 @@ function lessonS80() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 80", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE (1)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1MrwE4Fjx6L5K9XnT6BUtNOrGspXyOTxo/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MA NOTICE D'UTILISATION — LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Le projet"),
@@ -895,6 +899,7 @@ function lessonS81() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 81", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE (2)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1SiRBFjN_Iz4wqnim75SW2DbO3iXi0l4K/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RÉDIGER, RELIRE, AMÉLIORER MA NOTICE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Je rédige à partir de mon plan"),
@@ -983,6 +988,7 @@ function lessonS82() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 82", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1hP2_xy9rN1D105wqPsQrh7eQ-UUccnvF/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UNE NOTICE AVEC FLUIDITÉ", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_telephone.png", 440, 0.5578),
@@ -1092,6 +1098,7 @@ function revision() {
     pAns("R.A. : relire sa notice comme un inconnu : s'il réussirait du premier coup, la notice est bonne.", ["étourdi"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1xpBH9QyWbbwOkqSXZWI4DeeW0gN1KM0b/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Avant de dormir, éteindre le téléphone et le poser loin du lit. Ensuite, ouvrir un livre ou écouter une douce musique. Enfin, garder les yeux fermés : les écrans attendront demain. Bien utilisées, les nouvelles technologies restent nos servantes, jamais nos maîtresses. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("éteindre", { bold: true, color: C.SALMON, hl: true }), run(" [infinitif du 3e groupe, -dre], "), run("Ensuite / Enfin", { bold: true, color: C.SALMON, hl: true }), run(" [les articulateurs de l'unité, suivis d'une virgule], "), run("attendront", { bold: true, color: C.SALMON, hl: true }), run(" [futur, deux t], "), run("utilisées / servantes / maîtresses", { bold: true, color: C.SALMON, hl: true }), run(" [accords au féminin pluriel avec « technologies » ; accent circonflexe de maîtresses].")], { after: 60 }),
   ];
