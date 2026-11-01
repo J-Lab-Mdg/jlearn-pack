@@ -186,18 +186,33 @@ function imageParagraph(file, type, width) {
 function figureParagraph(name) {
   return imageParagraph(path.join(FIG_DIR, `${name}.png`), 'png', 620) || p('Support visuel à produire.', { italics: true, color: '666666' });
 }
-function sceneFor(lesson) {
+function scenesFor(lesson) {
   const scenes = {
-    'U1-L01': 'scene_u1_l01.png',
-    'U4-L03': 'scene_u4_l03.png',
-    'U5-L03': 'scene_u5_l03.png'
+    'U1-L01': ['scene_u1_l01.png', 'scene_u1_l01_b.png'],
+    'U4-L03': ['scene_u4_l03.png', 'scene_u4_l03_b.png'],
+    'U5-L03': ['scene_u5_l03.png', 'scene_u5_l03_b.png']
   };
-  const file = scenes[lesson.id];
-  return file && fs.existsSync(path.join(ROOT, 'assets', 'scenes', file)) ? path.join(ROOT, 'assets', 'scenes', file) : null;
+  return (scenes[lesson.id] || []).map(file => path.join(ROOT, 'assets', 'scenes', file)).filter(fs.existsSync);
 }
-function sceneParagraph(lesson) {
-  const file = sceneFor(lesson);
-  return file ? imageParagraph(file, 'png', 520) : null;
+function methodFor(lesson) {
+  const methods = {
+    'U1-L01': {
+      title: 'Méthode : lire et écrire un nombre par classes',
+      steps: ['Sépare le nombre en classe des milliers et classe des unités.', 'Lis chaque classe de gauche à droite.', 'Repère la valeur de chaque chiffre dans le tableau de numération.'],
+      attention: 'Un zéro garde une place dans le nombre : on ne supprime pas la position qu’il occupe.'
+    },
+    'U4-L03': {
+      title: 'Méthode : classer un triangle',
+      steps: ['Mesure ou compare les trois côtés.', 'Cherche si trois côtés, deux côtés ou aucun côté sont égaux.', 'Observe aussi les angles pour reconnaître un triangle rectangle.'],
+      attention: 'Un triangle peut avoir deux propriétés : il peut être à la fois isocèle et rectangle.'
+    },
+    'U5-L03': {
+      title: 'Méthode : calculer l’aire d’un rectangle ou d’un carré',
+      steps: ['Repère la longueur et la largeur, avec la même unité.', 'Multiplie longueur × largeur.', 'Écris le résultat en unité carrée ; pour un carré, multiplie côté × côté.'],
+      attention: 'Une addition des côtés calcule le périmètre, pas l’aire.'
+    }
+  };
+  return methods[lesson.id] || { title: 'Méthode de la leçon', steps: [], attention: 'Vérifie toujours la propriété et l’unité utilisées.' };
 }
 function coverParagraph() {
   const file = path.join(ROOT, 'assets', 'cover_math_t4.png');
@@ -212,20 +227,25 @@ function learnerLesson(lesson, data) {
   const longExercises = PROTOTYPE && Array.isArray(data.prototype_exercises);
   const exerciseItems = longExercises ? data.prototype_exercises : [...aItems, ...eItems];
   const exerciseAnswers = longExercises ? data.prototype_corrections : [...aAnswers, ...eAnswers];
-  const scene = sceneParagraph(lesson);
+  const scenes = scenesFor(lesson);
+  const method = methodFor(lesson);
   const keywords = data.retain.join(' ');
   const visualTable = table([new TableRow({ children: data.visual[0].map(x => cell(x, { bold: true, fill: C.green, color: C.white, size: 17 })) }), ...data.visual.slice(1).map(r => new TableRow({ children: r.map(x => cell(x, { size: 17 })) }))], data.visual[0].map(() => Math.floor(9600 / data.visual[0].length)));
+  const sceneBlocks = scenes.flatMap((file, i) => [heading(i === 0 ? 'Je découvre : observer la situation' : 'Je manipule : expliquer la démarche', 2), imageParagraph(file, 'png', 470)]);
   return [
     page(), heading(`LEÇON — ${lesson.titre}`, 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`),
-    heading(`1. Situation-problème — ${lesson.activite}`, 2), p(`Point de départ : ${lesson.activite} Question à résoudre : ${lesson.objectif}.`),
-    heading(`2. Découverte guidée — ${lesson.objectif}`, 2), p(data.example, { fill: C.paleGreen }),
-    ...(scene ? [heading('3. Scène de classe : observer et agir', 2), scene] : []),
-    heading('4. Représentation mathématique', 2), figureParagraph(figure), visualTable,
-    heading('5. Règle et vocabulaire de la séance', 2), p([tr('Mots-clés : ', { bold: true, color: C.blue }), ...rich(keywords, { color: C.blue, bold: true })]), ...data.retain.map(x => bullet(x)),
-    heading('6. Exercices variés', 2), p(longExercises ? 'Douze exercices : calcul, représentation, comparaison, justification, erreur à corriger, situation-problème et recherche.' : 'Exercices d’application et d’évaluation : chaque réponse doit être justifiée lorsque la consigne le demande.'),
+    p([tr('Objectif : ', { bold: true, color: C.blue }), ...rich(lesson.objectif)], { fill: C.paleBlue }),
+    heading(`Situation de départ — ${lesson.activite}`, 2), p(`Observe la situation : ${lesson.activite} Explique ce que tu cherches à déterminer : ${lesson.objectif}.`),
+    ...sceneBlocks,
+    heading('Je retiens la notion', 2), ...data.retain.map(x => bullet(x)),
+    heading(method.title, 2), ...method.steps.map((x, i) => p(`${i + 1}. ${x}`)),
+    heading('Exemple expliqué', 2), p(data.example, { fill: C.paleGreen }),
+    heading('Attention à cette erreur', 2), p(method.attention, { fill: C.yellow }),
+    heading('Schéma mathématique', 2), figureParagraph(figure), visualTable,
+    heading('Je m’entraîne', 2), p(longExercises ? 'Douze exercices progressifs : application, représentation, comparaison, justification, erreur à corriger, problème et recherche.' : 'Exercices d’application et d’évaluation liés à la notion.'),
     ...(longExercises ? [p(rich(exerciseText(exerciseItems)))] : [p([tr('Application. ', { bold: true, color: C.blue }), ...rich(exerciseText(aItems))]), p([tr('Évaluation. ', { bold: true, color: C.blue }), ...rich(exerciseText(eItems))])]),
-    heading('7. Corrigé raisonné', 2), p(rich(answerText(exerciseAnswers))),
-    p('Contrôle final : vérifie le calcul, la représentation, le signe, l’unité, la propriété ou la stratégie utilisée.', { fill: C.yellow, italics: true })
+    heading('Corrigé détaillé', 2), p(rich(answerText(exerciseAnswers))),
+    p('Vérifie le calcul, la représentation, l’unité, la propriété ou la stratégie avant de conclure.', { fill: C.yellow, italics: true })
   ];
 }
 function unitIntro(unit, unitNo) {
