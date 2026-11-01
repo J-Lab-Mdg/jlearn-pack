@@ -904,6 +904,7 @@ function lessonS33() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 33", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1keHC8pO5DB3DQZXykNk4l83yI4ldMcvq/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Je rédige mouvement par mouvement"),
@@ -982,6 +983,7 @@ function lessonS34() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 34", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1myrXGr0j4Ood6zV1oS3qKQRsTTec8PR-/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN TEXTE EXPLICATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_hiragasy.png", 440, 0.5578),
@@ -1092,6 +1094,7 @@ function revision() {
     pAns("R.A. : l'explication doit rester neutre : c'est un savoir, pas une opinion.", ["neutre"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1R93Ccr08t8oWBucB95mTv74oI52jolna/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« L'art occupe une grande place dans la vie des hommes. La musique, par exemple, accompagne nos fêtes et console nos peines. Grâce au chant et à la danse, les artistes transmettent la sagesse des anciens. Autrement dit, chaque œuvre est un message que l'artiste adresse au monde. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("occupe", { bold: true, color: C.SALMON, hl: true }), run(" [présent de vérité générale], "), run("transmettent", { bold: true, color: C.SALMON, hl: true }), run(" [3e groupe, -ent], "), run("par exemple / grâce au / autrement dit", { bold: true, color: C.SALMON, hl: true }), run(" [les connecteurs de l'explication], "), run("œuvre", { bold: true, color: C.SALMON, hl: true }), run(" [avec œ collé].")], { after: 60 }),
   ];

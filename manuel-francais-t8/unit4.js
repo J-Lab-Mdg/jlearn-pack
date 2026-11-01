@@ -155,6 +155,7 @@ function lessonS37() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 37", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1hwpl0srHQWRER9G5_fu4c3EfuxPZl9qO/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UN REPORTAGE CHEZ UNE ARTISANE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_potiere.png", 440, 0.5578),
@@ -254,6 +255,7 @@ function lessonS38() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 38", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1dGkb7uXdW0LskqoE88-T9Qphl7MZN4Ex/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("FORMES D'ARTISANAT, OUTILS ET MATÉRIAUX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_outils.png", 440, 0.5578),
@@ -352,6 +354,7 @@ function lessonS39() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 39", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1iYaaM4VOBXQmE2tEk2YKgZH_XlZRTpme/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE REPORTAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_reporter.png", 440, 0.5578),
@@ -446,6 +449,7 @@ function lessonS40() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 40", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/18fDMitozSqcGqhpmJix-dXWAhzqV6ptS/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES CONNECTEURS SPATIAUX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_atelierbois.png", 440, 0.5578),
@@ -542,6 +546,7 @@ function lessonS41() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 41", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/12PWdKF-q4XIresaztEo5REjviwFc-TC_/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES MOYENS POUR EXPLIQUER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u4_bijoutier.png", 170, 0.5578),
@@ -638,6 +643,7 @@ function lessonS42() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 42", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1WUwZ5YRJK92_fNVXuC4qdBr0RfourMxV/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES ARTICULATEURS LOGIQUES D'ORDRE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_vannerie.png", 440, 0.5578),
@@ -730,6 +736,7 @@ function lessonS43() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 43", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1rp_mbYCfjMt5QDYiBN3v2QJfTCrT77fn/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("DEMANDER UNE PRÉCISION, UNE CLARIFICATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_question.png", 440, 0.5578),
