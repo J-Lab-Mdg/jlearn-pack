@@ -1,0 +1,13 @@
+    ("h2", "Tanjony : manalefaka sy manamafy hevitra"),
+    ("p", "Lanjan'ny fampiasana ny teny verindroa (PE T6, p.21) : mety **manalefaka hevitra** "
+          "na **manamafy hevitra** ny fomba fampiasana azy. Hoy ny FRP (p.75), LFK 1d : "
+          "« Tanjon' ny fampiasana teny verindroa »."),
+    ("ohatra", ["**Manalefaka hevitra** : Mihantahanta indray i Lita kely marina a !",
+                "**Manamafy hevitra** : Fepero ihany ny ankizy amin' ity tia "
+                "mihaninkanika ity."]),
+    ("note", "PE T6, PROGRAMME D'ETUDES, taranja Malagasy, p.21-22 (« FIASAN'NY TENY -Tsipelina » : "
+             "« Votoatiny : Teny verindroa : lanjan' ny fampiasana ny teny verindroa - "
+             "Manalefaka hevitra - Manamafy hevitra » ; « Faharetany : ora 12 » ; « Voka-"
+             "pianarana manokana : Mifehy ny fitsipi-panoratana ny teny malagasy » ; "
+             "« Fitaovana : Ampahan-dahatsoratra novakina na nohenoina ») sy FRP 6ème, p.75 "
+             "(LFK 1d)."),
