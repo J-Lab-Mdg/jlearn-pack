@@ -362,9 +362,64 @@ function visualTableFromData(data, size = 20) {
   data.visual.slice(1).forEach(r => rows.push(new TableRow({ children: r.map(x => cell(x, { size })) })));
   return table(rows, data.visual[0].map(() => Math.floor(9600 / data.visual[0].length)));
 }
+function numberLessonTable() {
+  return table([
+    new TableRow({ children: [cell('Classe des mille', { span: 3, bold: true, fill: C.blue, color: C.white, size: 18, align: AlignmentType.CENTER }), cell('Classe des unités simples', { span: 3, bold: true, fill: C.blue, color: C.white, size: 18, align: AlignmentType.CENTER })] }),
+    new TableRow({ children: ['C', 'D', 'U', 'C', 'D', 'U'].map(x => cell(x, { bold: true, fill: C.pale, size: 18, align: AlignmentType.CENTER })) }),
+    new TableRow({ children: ['', '', '3', '0', '8', '5'].map(x => cell(x, { size: 23, align: AlignmentType.CENTER })) }),
+    new TableRow({ children: ['', '', '1', '8', '4', '8'].map(x => cell(x, { size: 23, align: AlignmentType.CENTER })) }),
+    new TableRow({ children: ['', '', '9', '9', '9', '9'].map(x => cell(x, { size: 23, align: AlignmentType.CENTER })) }),
+    new TableRow({ children: ['', '1', '0', '0', '0', '0'].map(x => cell(x, { size: 23, align: AlignmentType.CENTER })) })
+  ], [1600, 1600, 1600, 1600, 1600, 1600]);
+}
+function genericLessonBody(lesson, data, style, noteId) {
+  const title = nominalTitle(lesson);
+  const methodLabel = (style.method_title || 'Propriété et procédure').split(' — ')[0];
+  const steps = [
+    `MÉTHODE 1 — ${data.retain[0]}`,
+    `MÉTHODE 2 — ${data.retain[1] || style.attention}`,
+    `VÉRIFICATION — ${style.example}`
+  ];
+  const situation = [tr(lesson.activite, { color: C.black })];
+  if (noteId) situation.push(new FootnoteReferenceRun(noteId));
+  return [
+    p(situation),
+    heading(`1. ${title}`, 2), p(style.section_text),
+    ...(figureFor(lesson) ? [figureParagraph(figureFor(lesson))] : []),
+    p(style.example, { italics: true }),
+    ...(data.visual && data.visual.length ? [visualTableFromData(data, 20)] : []),
+    heading(`2. ${methodLabel}`, 2), ...steps.map(x => p([tr(x, { bold: true, color: C.green })], { align: AlignmentType.LEFT })),
+    ...(style.formula ? [formulaBox(style.formula)] : []),
+    attentionBox(style.attention),
+    fullRetainsCard(style, data)
+  ];
+}
+function numberLessonBody(data, noteId) {
+  const situation = [tr('Au marché de Mahamasina, un prix est écrit 34 206 Ar. Comment lire ce nombre et comment l’écrire en lettres ?')];
+  if (noteId) situation.push(new FootnoteReferenceRun(noteId));
+  return [
+    p(situation),
+    heading('1. Tableau de numération', 2),
+    p('Un nombre s’écrit avec les chiffres 0 à 9. Les chiffres sont groupés par classes de trois chiffres, en partant de la droite : la classe des unités simples, puis la classe des mille. Dans chaque classe, on distingue les centaines, les dizaines et les unités.'),
+    p('Tableau de numération : 3 085, 1 848, 9 999 et 10 000.', { align: AlignmentType.LEFT }),
+    numberLessonTable(),
+    p('3 085 se lit : « trois mille quatre-vingt-cinq ». 1 848 se lit : « mille huit cent quarante-huit ». 9 999 se lit : « neuf mille neuf cent quatre-vingt-dix-neuf ». 10 000 se lit : « dix mille ».'),
+    heading('2. Lecture des nombres', 2),
+    p('Pour lire un nombre, je sépare les classes et je lis chaque classe dans l’ordre.'),
+    p([tr('Méthode 1 — Lecture par classes : ', { bold: true, color: C.green }), tr('je sépare les classes par un espace ; je lis la classe des mille en ajoutant « mille » ; je lis la classe des unités simples ; je réunis les deux lectures.')]),
+    heading('3. Écriture des nombres', 2),
+    p('Pour écrire un nombre dicté, je repère le mot « mille », puis je complète chaque classe sur trois positions.'),
+    p([tr('Méthode 2 — Écriture à partir des mots : ', { bold: true, color: C.green }), tr('je repère la classe des mille ; j’écris la classe des unités simples sur trois chiffres ; je complète les positions vides avec des zéros.')]),
+    p('« Cinq mille vingt et un » → 5 | 021 → 5 021.'),
+    heading('4. Décomposition', 2),
+    p('3 085 = 3 000 + 80 + 5 = (3 × 1 000) + (8 × 10) + (5 × 1). Dans 3 085, le chiffre des unités de mille est 3, le chiffre des centaines est 0, le chiffre des dizaines est 8 et le chiffre des unités est 5.'),
+    formulaBox('Décomposition : 34 206 = 30 000 + 4 000 + 200 + 6.'),
+    attentionBox('Mille est invariable. Le zéro peut marquer une position vide. Il faut distinguer le chiffre d’une position du nombre total de milliers ou de centaines.'),
+    fullRetainsCard({ retain: ['Un nombre se lit par classes de trois chiffres.', 'Je sépare les classes en partant de la droite.', 'Je lis la classe des mille puis la classe des unités simples.', 'Je complète les positions vides avec des zéros et je respecte la valeur de chaque chiffre.'] }, data)
+  ];
+}
 function fullRetainsCard(style, data) {
   const inner = style.retain.slice(0, 4).map(x => p(x, { size: 24 }));
-  if (data.visual && data.visual.length) inner.push(visualTableFromData(data, 20));
   return new Table({ width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED,
     borders: { top: { style: BorderStyle.SINGLE, size: 12, color: C.green }, bottom: { style: BorderStyle.SINGLE, size: 12, color: C.green }, left: { style: BorderStyle.SINGLE, size: 12, color: C.green }, right: { style: BorderStyle.SINGLE, size: 12, color: C.green }, insideHorizontal: gridB, insideVertical: gridB },
     rows: [new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.green }, children: [p('JE RETIENS', { align: AlignmentType.CENTER, color: C.white, bold: true, size: 27 })] })] }),
@@ -374,25 +429,14 @@ function fullRetainsCard(style, data) {
 function fullLesson(lesson, data, unit, globalNo, total) {
   const style = styleBank.lessons[lesson.id];
   const scene = scenesFor(lesson, unit)[0];
-  const figureName = figureFor(lesson);
   const noteId = footnoteIds[lesson.id];
   const title = nominalTitle(lesson);
   const sets = exerciseSets(lesson, data, style);
-  const objectiveChildren = [tr('Objectif : ', { bold: true, color: C.blue }), ...rich(lesson.objectif)];
-  if (noteId) objectiveChildren.push(new FootnoteReferenceRun(noteId));
-  const methods = style.method_steps.map((x, i) => p(`${i + 1}. ${x}`, { align: AlignmentType.LEFT }));
+  const body = lesson.id === 'U1-L01' ? numberLessonBody(data, noteId) : genericLessonBody(lesson, data, style, noteId);
   return [
     page(), heading('LEÇON', 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`), heading(title, 1),
-    ...(scene ? [imageParagraph(scene, 'png', 240)] : []),
-    p(objectiveChildren, { fill: C.paleBlue }),
-    p(style.intro),
-    heading('1. Notion', 2), p(style.section_text),
-    heading('2. Exemple', 2), p(style.example, { italics: true }),
-    ...(figureName ? [figureParagraph(figureName)] : []),
-    ...(style.formula ? [formulaBox(style.formula)] : []),
-    heading('3. Méthode', 2), ...methods,
-    attentionBox(style.attention),
-    heading('Je retiens', 2), fullRetainsCard(style, data),
+    ...(scene ? [imageParagraph(scene, 'png', 620)] : []),
+    ...body,
     page(), heading(`EXERCICES — Séance ${globalNo} : ${title}`, 1),
     heading('Application', 2),
     heading('Exercice 1 — Application directe', 2), ...itemParagraphs(sets.app1),
