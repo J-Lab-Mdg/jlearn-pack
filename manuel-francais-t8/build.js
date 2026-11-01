@@ -164,6 +164,19 @@ function contents() {
     tocLink("s83", "    Séance 83 — Révision et dictée"),
     tocLink("s84", "    Séance 84 — Test"),
     p("", { after: 40 }),
+    tocLink("annex1", "ANNEXE 1 — L'imagier des 7 thématiques", { bold: true, size: 26 }),
+    tocLink("annex2", "ANNEXE 2 — Le guide du rédacteur (faire agir, raconter, expliquer)", { bold: true, size: 26 }),
+    tocLink("annex3", "ANNEXE 3 — Toute la conjugaison de l'année", { bold: true, size: 26 }),
+    tocLink("annex4", "ANNEXE 4 — Flashcards et jeux de classe", { bold: true, size: 26 }),
+    tocLink("annex5", "ANNEXE 5 — Les stratégies de lecture (annexe officielle du programme)", { bold: true, size: 26 }),
+    tocLink("annex6", "ANNEXE 6 — Orthographe et accords", { bold: true, size: 26 }),
+    tocLink("annex7", "ANNEXE 7 — Le tribunal des homophones", { bold: true, size: 26 }),
+    tocLink("annex8", "ANNEXE 8 — Les 100 mots à ne plus jamais rater", { bold: true, size: 26 }),
+    tocLink("annex9", "ANNEXE 9 — La boîte à connecteurs", { bold: true, size: 26 }),
+    tocLink("annex10", "ANNEXE 10 — Mes modèles de textes prêts à l'emploi", { bold: true, size: 26 }),
+    tocLink("annex11", "ANNEXE 11 — La carte touristique et culturelle de Madagascar", { bold: true, size: 26 }),
+    tocLink("annex12", "ANNEXE 12 — Je m'évalue, unité par unité", { bold: true, size: 26 }),
+    p("", { after: 40 }),
   ];
 }
 
