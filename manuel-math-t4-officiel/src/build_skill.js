@@ -188,9 +188,9 @@ function figureParagraph(name) {
 }
 function scenesFor(lesson) {
   const scenes = {
-    'U1-L01': ['scene_u1_l01.png', 'scene_u1_l01_b.png'],
-    'U4-L03': ['scene_u4_l03.png', 'scene_u4_l03_b.png'],
-    'U5-L03': ['scene_u5_l03.png', 'scene_u5_l03_b.png']
+    'U1-L01': ['scene_u1_l01_landscape_a.png', 'scene_u1_l01_landscape_b.png'],
+    'U4-L03': ['scene_u4_l03_landscape_a.png', 'scene_u4_l03_landscape_b.png'],
+    'U5-L03': ['scene_u5_l03_landscape_a.png', 'scene_u5_l03_landscape_b.png']
   };
   return (scenes[lesson.id] || []).map(file => path.join(ROOT, 'assets', 'scenes', file)).filter(fs.existsSync);
 }
@@ -226,6 +226,24 @@ function modelTable(model) {
   model.table_rows.forEach(r => rows.push(new TableRow({ children: r.map(x => cell(x, { size: 17 })) })));
   return table(rows, widths);
 }
+function retainsCard(model) {
+  const inner = [
+    p(model.intro, { size: 18 }),
+    p(model.rules.join(' '), { size: 17 }),
+    p(model.distinction, { fill: C.paleGreen, size: 17 }),
+    p(model.attention, { fill: C.yellow, italics: true, size: 17 }),
+    modelTable(model)
+  ];
+  return new Table({
+    width: { size: 9600, type: WidthType.DXA },
+    layout: TableLayoutType.FIXED,
+    borders: { top: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, bottom: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, left: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, right: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, insideHorizontal: { style: BorderStyle.SINGLE, size: 4, color: 'B7CDE3' }, insideVertical: { style: BorderStyle.SINGLE, size: 4, color: 'B7CDE3' } },
+    rows: [
+      new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.blue }, children: [p('JE RETIENS', { align: AlignmentType.CENTER, color: C.white, bold: true, size: 24 })] })] }),
+      new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: 'F4F9FD' }, margins: { top: 140, bottom: 140, left: 160, right: 160 }, children: inner })] })
+    ]
+  });
+}
 function modelLesson(lesson, data) {
   const model = data.prototype_model;
   const scenes = scenesFor(lesson);
@@ -235,10 +253,9 @@ function modelLesson(lesson, data) {
   return [
     page(), heading(`LEÇON — ${lesson.titre}`, 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`),
     p([tr('Objectif : ', { bold: true, color: C.blue }), ...rich(lesson.objectif)], { fill: C.paleBlue }),
-    heading(model.table_title, 2), p(model.intro), modelTable(model),
+    heading(model.table_title, 2), p(model.intro),
     heading('Exemples', 2), ...model.examples.map(x => bullet(x)),
-    heading('Règles à retenir', 2), ...model.rules.map(x => bullet(x)),
-    heading('ATTENTION', 2), p(model.attention, { fill: C.yellow }),
+    heading('Je retiens', 2), retainsCard(model),
     heading('Méthode', 2), ...model.method.map((x, i) => p(`${i + 1}. ${x}`)),
     heading('Exemple expliqué', 2), p(model.distinction, { fill: C.paleGreen }),
     ...scenes.flatMap((file, i) => [heading(i === 0 ? 'Situation de découverte' : 'Situation de manipulation', 2), imageParagraph(file, 'png', 470)]),
