@@ -1,0 +1,231 @@
+# Releve pour la 2e seance de Tsipelina : « noho ny / nony / no ho »
+# Liens fournis par le proprietaire (2026-10-29) :
+#   https://www.rakibolana.org/rakibolana/teny/noho
+#   https://www.rakibolana.org/rakibolana/teny/nony
+#   https://www.rakibolana.org/rakibolana/teny/no
+#   https://tenymalagasy.org/bins/teny2/noho
+# Le dictionnaire en ligne Rakibolana (Eugene Heriniaina, serasera.org) n'est pas sous licence libre :
+# on n'en colle pas la page, on en cite l'article en le reproduisant exactement (citation courte, avec URL).
+
+Dikan'ny teny : noho — Rakibolana Malagasy
+ppk.: Azon'ny: Reraka izy noho ny ratra nahazo azy.
+p, mt.: Teny entina mampitaha zavatra roa ka Ray eo aorianany milaza ny zavatra fototry ny fampitahana:
+  Ilaina noho ... ny vola-mena ... ny vy. / Mamy ... ny akondro noho ny ...sary.
+ppt. Teh.: Enti-milaza antony anaovan-javatra, satria: Noho ianao mividy boky betsaka, dia ahenako ny
+  vidin' ny tsirairay.
+(Ahitsio : https://www.rakibolana.org/rakibolana/ahitsio/19533 — © Eugene Heriniaina - serasera.org 1999-2026)
+
+# Fanazavana sy ohatra nan'ny mpampianatra (message du 2026-10-29, texte garde mot pour mot) :
+
+Amin'ny teny malagasy, misy fahasamihafana lehibe ny fampiasana ny "noho ny", "nony", ary ny "no ho".
+
+1. Noho ny (Noho)
+Ampiasaina mba hanehoana ny antony mahatonga ny zavatra iray (midika hoe "a cause de" na "en raison de"
+amin'ny teny frantsay). Manaraka an'io teny io foana ny anarana na mpisolo anarana.
+Ohatra:
+ - Tsy nivoaka izy noho ny ranonorana.
+ - Tafita izy noho ny fiezahany.
+
+2. Nony
+Teny fampitohizana ampiasaina hanehoana fotoana (midika hoe "lorsque", "quand", na "des que" amin'ny teny
+frantsay). Matetika izy io no arahina matoanteny ary ampiasaina rehefa mitantara zavatra efa lasa.
+Ohatra:
+ - Nony tonga tany an-trano izy, dia natory avy hatrany.
+ - Nony nahita ny reniny ny zaza, dia nitsiky.
+
+3. No ho
+Tsy teny tokana mitambatra ity fa teny roa miaraka (Mpanoritra/Mpisolo "No" + Mpampitaha "ho").
+Ampiasaina amin'ny fampitahana zavatra roa izy io, indrindra rehefa misy finiavana na safidy atao
+(midika hoe "plutot que" amin'ny teny frantsay).
+Ohatra:
+ - Ny hianatra no ho ny hilalao no tsara.
+ - Andriamanitra no ho ny olombelona no tokony hoterena.
+
+Raha hamintina izany :
+ - Noho ny = Satria misy... (Antony)
+ - Nony = Rehefa... (Fotoana)
+ - No ho = Toy izay... (Fampitahana / Safidy)
+
+# ---------------- 2e passe : « no ho » rectifie par le proprietaire, « nony » verifie au dictionnaire
+# (message du 2026-10-29 ; malagasyword.org = compilation de dictionnaires, contenu NON libre :
+#  on cite les lignes utiles avec l'URL, on ne copie pas la page.)
+
+Correction du proprietaire : le « no ho » n'est pas une locution signifiant « plutôt que ».
+ - Ho tonga rahampitso izy.
+ - Rahampitso izy no ho tonga.
+ - Ho vita ity rahariva.
+ - Rahariva no ho vita ity.
+ - Fanamarihana : raha matoantenin' ny iharana misy tovana, mitovona ny ho :
+   Hovitaiko ity rahariva = Rahariva ity no hovitaiko.
+ Source indiquee : https://malagasyword.org/bins/teny2
+
+Dictionnaire (Rakibolana malagasy, via https://malagasyword.org/bins/teny2/nony) — « nony », conjonction :
+ - Rehefa (raha milaza ny lasa ny matoanteny manaraka azy) : Nony niamboho Ranavalona reniny, dia nitsoka
+   ny rivo-pahafahana.
+ - Isaky ny (raha milaza ny ankehitriny ny matoanteny manaraka azy) : Nony midona ny orana, velon-tsento
+   i Sahondra mahatsiaro andreniny.
+ - Tamin' ny (raha milaza ny ho avy ny matoanteny manaraka azy ao anatin' ny tantara) : Nony handeha
+   indrindra izahay no avy ny orana.
+ - Analog : fony, raha, rehefa.
+
+# ---------------- 3e passe : lisitra feno ny fehezanteny ampiasaina amin'ny fiche
+# (Isaky ny fehezanteny eto dia nalaina amin'ny loharano voalaza eo ambony, tsy nosoratana
+#  vaovao. Ampiasaina amin'ny fanamarinana : `python3 fianarana-malagasy/fikarohana.py
+#  --fanamarinana data_tsipelina_s2`.)
+
+AO AMIN'NY LESONA :
+ - Tsy nivoaka izy noho ny ranonorana.                        (mpampianatra, refs ci-dessus)
+ - Tafita izy noho ny fiezahany.                              (mpampianatra, refs ci-dessus)
+ - Ny fahasalamana dia ambony lavitra noho ny fananan-karena. (ohabolana.org, sources_web/02)
+ - Noho ianao mividy boky betsaka, dia ahenako ny vidin'ny tsirairay. (Rakibolana « noho », ppt. Teh.)
+ - Nony niamboho Ranavalona reniny, dia nitsoka ny rivo-pahafahana.   (Rakibolana « nony », Rehefa)
+ - Nony handeha indrindra izahay no avy ny orana.                     (Rakibolana « nony », Tamin' ny)
+ - Ho tonga rahampitso izy. = Rahampitso izy no ho tonga.             (mpampianatra, rectification)
+ - Hovitaiko ity rahariva. = Rahariva ity no hovitaiko.               (mpampianatra, rectification)
+
+AO AMIN'NY TAKELA :
+ - Noho ny oksizena izay elektronegativa dia sintoniny manatona azy ny tambatra elektrona
+   anankiroa izay eo amin'ny firaisany amin'ireo Hidrozena avy.       (mGWikipedia « Rano »,
+                                                                        sources_web/full/mgwiki_rano.txt)
+ - Nony tonga tany an-trano izy, dia natory avy hatrany.             (mpampianatra)
+ - Mianatra taranja samihafa izahay.                                 (modele, refs/EXEMPLE_DU_MANUEL.txt)
+ - Samy hafa ny omby sy ny akoho.                                    (modele, refs/EXEMPLE_DU_MANUEL.txt)
+
+AO AMIN'NY FANAZARAN-TENA (vaovao, tsy misy miverina amin'ny lesona) :
+ - Reraka izy noho ny ratra nahazo azy.                               (Rakibolana « noho », ppk.)
+ - Nony lasa izy, dia nody izahay.                                    (malagasyword.org « nony »,
+                                                                       filazana frantsay : « lorsque,
+                                                                       quand, après que » ; jereo
+                                                                       fianarana-malagasy/CARNET.md)
+ - Nony nahita ny reniny ny zaza, dia nitsiky.                        (mpampianatra)
+ - Ampiasaina ny teny ho fitaovana ianarana, ifandraisana ary anehoana hevitra. (PE T5 p.9)
+ - Ny lahatsoratra ampiasaina dia mety ho lahatsoratra mitantara, manoritsoritra na mampahalala.
+                                                                        (PE T5 p.9)
+ - Ho vita ity rahariva. = Rahariva no ho vita ity.                    (mpampianatra)
+ - Ny teny mahery lava noho ny tanana.                                 (JICA/PAGEM vakiteny,
+                                                                        sources_web/04)
+
+# ---------------- 4e passe : pejy « noho » amin'ny Rakibolana an-tserasera (2026-10-29)
+# https://malagasyword.org/bins/teny2/noho — « Updated on 2026-10-18 ». Contenu NON libre :
+# lignes utiles citées avec l'URL, tsy misy dika amin'ny pejy manontolo.
+
+Entry 1 — noho, conjunction :
+ - « Azon' ny : Reraka izy noho ny ratra nahazo azy. »
+ - « Teny entina mampitaha zavatra roa ka ilay eo aorianany milaza ny zavatra fototry ny
+   fampitahana : Ilaina noho ny volamena ny vy ~ Mamy ny akondro noho ny voasary. »
+ - « Enti-milaza antony anaovan-javatra, satria : Noho ianao m'ividy boky betsaka, dia
+   ahenako ny vidin'ny tsirairay. »
+ - Anglais : « rather, than; on account of; because. It is also used in the comparison of
+   adjectives, as a sign of the comparative degree, and is sometimes preceded by kokoa. »
+ - Français : « à cause de; plus que; plutôt que » ; « comme; noho est suivi immédiatement du
+   sujet du verbe : Noho ianao nandiso fotoana, dia tsy hahazo valisoa ianao (Comme vous
+   n'êtes pas venu à l'heure exacte, vous n'aurez pas de récompense) ».
+ - Analog : satria.
+ - Exemples littéraires : « Maty noho ny sitrapoko mantsy Ilay, hoy indray ny teniny, sady
+   vonto sy ontsa indray izy » ; « Very noho ny tahotra ny antsipika nony lany ireo vato
+   natoraka ».
+
+Entry 2 — no ho, locution :
+ - Anglais : « implies motion towards ».
+ - Français : « marque un point de départ, et signifie ; depuis... jusqu'à... : Hatramin' ny
+   folo no ho miakatra (Depuis dix en montant) ~ Hatramin' ny folo no ho midina (Depuis dix
+   en descendant) ~ Hatrany no ho mankaty (Depuis là-bas jusqu'ici) ».
+
+# FIKAROHANA : ny diksionera dia manome « plutôt que » ho an'ny « noho » (fifanoherana), fa TSY
+# ho an'ny « no ho ». Ny « no ho » ao amin'ny Rakibolana an-tserasera dia locution hafa
+# (« depuis… jusqu'à »). Ny fanazavana napetraka amin'ny lesona dia tsy miovatra : ny an'ny
+# mpampianatra (fampitahana zavatra roa, finiavana na safidy) + ny note en bas de page
+# (« mitovona ny ho »). Jereo fianarana-malagasy/CARNET.md.
+
+Ohatra vaovao azo ampiasaina (fohy, voamarina) :
+ - Ilaina noho ny volamena ny vy.
+ - Mamy ny akondro noho ny voasary.
+ - Noho ianao nandiso fotoana, dia tsy hahazo valisoa ianao.
+
+----------------------------------------------------------------------
+5e PASSE (2026-10-29) — V10 : tsilo = SARY SVG FENO + discoveries anaty lesona
+----------------------------------------------------------------------
+
+Demandes du maitre (verbatim) :
+  1. « elle doit atteindre la bonne ligne »               -> flèches longues, qui tombent
+     sur la ligne cible (pas une flèche courte décorative).
+  2. « mets en Fandravonana »                             -> les 3 gloses (antony / fotoana /
+     fampitahana-safidy) sorties du tsilo, mises dans la ligne 5. Fandravonana du takela.
+  3. « tu vois le tableau la avec les fleches pour que tout sois ok tu generes les textes
+      aussi dans le svg et le fleches entrera bien »       -> le FANITSIANA n'est plus un
+     tableau Word + ancre flottante : c'est UNE image SVG qui contient la grille, les textes
+     (contours de glyphes, donc aucune police requise) et les flèches. Layout unique =>
+     correspondance garantie. build_fiche: fiche(..., sary=True) + _sary_ao_anaty() ;
+     moteur : src/sary_tabalo.py ; contrôle visuel : src/sary_tsilo.py.
+  4. « entre tous dans la lecon » (les 3 découvertes)      -> noho = ppk. « Azon'ny » (moyen),
+     « noho » + mpisolo anarana/matoanteny + « dia » (Rakibolana : « Suivi immédiatement du
+     sujet du verbe »), nony : analogues « fony, raha, rehefa ».
+  5. « on se concentre d'abord sur cette unique seance entiere » -> les 11 autres fiches ne
+     sont PAS touchées (le mode image est piloté par un flag par fiche, pas global).
+
+Decouverte outil (importante pour la suite) : 0 police dans le sandbox -> telecharge
+Tinos (OFL 1.1, metriques = Times New Roman) via ./run.sh src/fetch_police.py, dans
+/home/user/police/. Avec les vraies metriques, les fragments du tsilo font 126 à 211 pt
+pour des colonnes de 209 / 234 pt : RIEN ne déborde. Avec DejaVu (plus large de ~25 %) je
+croyais 3 lignes trop longues : fausse alerte -> les largeurs COLS_TSILO = 4400|567|4899
+gardent une marge confortable.
+
+Phrases (une seule apparition chacune sur la fiche) :
+  lesona  : S1 S2 S5 S3 S4 S8 | S10 S11 S12 | S16 S17 S18 S19 S21
+  exos    : S6 S7 S15 S23 (tsilo) | S14 S22 S20 S9 (banga)
+  takela  : S1 S2 S4 S12 (echo volontaire, comme le modele) + S13 (Fampiharana)
+            + S24 S25 (Famerenana, fiche 1)
+
+----------------------------------------------------------------------
+6e PASSE (2026-10-29) — loharano ofisialy vaovao (Akademia Malagasy, Baiboly,
+                    Programme scolaire, Rakibolana « dia »)
+----------------------------------------------------------------------
+Ny dikany : mba hamenoana ny takela (Fitarihan-tsaina / Fandinihana / Famakafakana)
+amin'ny fehezanteny **vaovao** — mba tsy hanaraka ny lesona intsony (fanamarihana
+nataon'ny mpanabe : « c'est pas difficile de trouver d'autre phrase »).
+
+1) Prof. Siméon Rajaona, « Ny Matoanteny eo amin'ny teny malagasy », Akademia Malagasy
+   https://teny-malagasy.akademia-malagasy.mg/matoanteny.php
+   - §2.1 (ohatra, entimilaza tsy matoanteny) : « eto aho ny alahady ; tsara ny andro ;
+     fotsy volo Rakoto. »
+   - mpamari-toejavatra : « noho ny ahiahy » — ka ny fehezanteny feno :
+     « (2) fotsy ny volon-dRakoto noho ny ahiahy » ary « (6) fotsy volo Rakoto noho ny ahiahy »
+     (roa endrika hita tao amin'ny dikam-pikarohana tamin'ity pejy ity, 2026-10-29).
+   - §1.4.6 b) : « mifamaho sy mifaningotra ny kian-teny no sy ny mpamaritra ny, ka ny
+     kian-teny no sisa miseho, nitelina ny mpanoritra ny : *i Koto no ny ao > i Koto no ao »
+   - §1.4.7 (Fampiasana manokana ny kian-teny no) : « ny fehezanteny hoe : i Soa no maditra
+     dia tsy mifamaly, mivadi-drafitra, amin'ny hoe : maditra i Soa, fa amin'ny hoe :
+     ny maditra dia i Soa. Fa raha fehezanteny iainkinana no eo, milaza anton-javatra, dia
+     izay vao mifamaly … Toy izany no hitantsika amin'ny hoe : i Soa no maditra, dia satria
+     mijaly anaty ; izay midika hoe : matoa maditra i Soa, dia satria mijaly anaty. »
+   - §1.3.2 « Fanamarihana a) Tsipelina » : misy andalana antsoina hoe « Tsipelina »
+     mihitsy (tsy mbola voadicaina tsara ny dika azo teo amin'ny pejy — mila jeren'ny
+     mpampianatra vao ampiasaina).
+
+2) Baiboly Malagasy (dika 1910), tolo-tsoratra : https://nybaiboly.org/Concordance-malagasy/Bibliquest-Malagasy.bbq
+   - Matiteo 16,2 : « Ary Izy namaly ka nanao taminy hoe: Nony hariva, dia hoy ianareo:
+     Ho tsara ny andro, fa mena ny lanitra. »
+   - (hita koa : « Nony mandre aho, dia mandevilevy ny kiboko » ; « Nony antoandro matin'ny
+     hain'andro aho, ary nony alina dia matin'ny fanala » — Salamo 121,6)
+
+3) Rakibolana Malagasy, « dia » — https://www.rakibolana.org/rakibolana/teny/dia
+   - « Kian-teny fampiasa : a) Mba hampitohy fehezan-kevitra roa raha lasa aloha ilay
+     fehezan-kevitra miankina : Nony tonga izy dia niteny hoe.., b) mba hampitohy
+     indraindray ny teny enti-milaza amin'ny teny lazaina : Rakoto dia mpianatra mazoto. »
+   - « p.mt. : Atao anelanelan'ny teny miverina indroa mba ho fanamafisan-kevitra :
+     Soa dia soa » ; « ppt.: Mitovy amin'ny sy na ary : Nitsangana izy dia niteny. »
+
+4) PROGRAMME SCOLAIRE 8ème, Minisiteran'ny Fanabeazam-pirenena —
+   https://www.education.gov.mg/wp-content/uploads/2016/10/PROGRAMMES-SCOLAIRES-8%C3%A8me.pdf
+   - « Takela-teny fanonona na mitovitovy endrika : samy hafa, samihafa / noho ny, nony » ;
+     « Fehezanteny banga » ; « Solaitra » ; « Fehezanteny na ampaham-pehezanteny » ;
+     « ampikarohina teny na andianteny mifanohitra hevitra izy ; asaina mampifandray sy
+     manoratra azy ireny tsiroaroa izy » -> manamarina ny karazana fanazaran-tena natao
+     (tsilo = « Ampifandraiso amin'ny alalan'ny tsilo » ; banga = « Fehezanteny banga »).
+
+5) Teny ara-drafitra : « mpampiankina fehezankevitra » (subordonnant) — efa tao amin'ny
+   sources_web/11_mgwiki_fehezanteny.txt (mg.wikipedia, « Fehezanteny ») :
+   « ny fampiasana mpampitohy sy mpampiankin-teny na mpampiankina fehezankevitra » —
+   tsara kokoa noho ny hoe « teny fampitohizana » (notamiko teo aloha) ho an'ny « nony ».
+   Sady tamin'ny boky taranjara (« Malagasy 1ère ») dia : « Nony : mpampiankina fehezankevitra
+   milaza fotoana. »
