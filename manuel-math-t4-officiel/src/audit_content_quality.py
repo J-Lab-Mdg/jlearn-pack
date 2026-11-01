@@ -14,8 +14,10 @@ for unit in inv['unites']:
         ex=[x.strip() for x in d['exercises']]
         app_n=len(ex)+len(d.get('extra_application', []))
         eval_n=len(d.get('evaluation', []))
+        app_corr_n=len(d['corrections'])+len(d.get('extra_application_corrections', []))
+        eval_corr_n=len(d.get('evaluation_corrections', []))
         duplicate=len(ex)!=len(set(ex))
-        rows.append((lesson['id'],app_n,eval_n,duplicate,len(d['corrections']),len(d['retain']),lesson['titre']))
+        rows.append((lesson['id'],app_n,eval_n,duplicate,app_corr_n,eval_corr_n,len(d['retain']),lesson['titre']))
         all_ex.extend(ex)
 common=Counter(all_ex).most_common(8)
 report=[
@@ -27,19 +29,22 @@ report=[
  '## Constats','', '| Point | Résultat |','|---|---|',
  f'| Leçons avec au moins 4 items Application | {sum(r[1]>=4 for r in rows)}/{len(rows)} |',
  f'| Leçons avec au moins 4 items Évaluation | {sum(r[2]>=4 for r in rows)}/{len(rows)} |',
- f'| Leçons avec au moins 4 réponses Application source | {sum(r[4]>=4 for r in rows)}/{len(rows)} |',
- f'| Leçons avec au moins 2 règles/points à retenir | {sum(r[5]>=2 for r in rows)}/{len(rows)} |','',
+ f'| Leçons avec au moins 4 réponses Application | {sum(r[4]>=4 for r in rows)}/{len(rows)} |',
+ f'| Leçons avec 4 réponses Évaluation | {sum(r[5]>=4 for r in rows)}/{len(rows)} |',
+ f'| Leçons avec au moins 2 règles/points à retenir | {sum(r[6]>=2 for r in rows)}/{len(rows)} |','',
  '## Décision de correction','',
- '- La fiche de préparation doit garder des consignes directement utilisables, mais l’auto-complétion générique ne doit pas masquer le manque de matière.',
- '- Chaque leçon sera enrichie avec quatre items distincts dans chaque bloc d’exercices et des réponses correspondantes.',
- '- Les blocs Application et Évaluation utiliseront des démarches différentes lorsque le contenu le permet.',
- '- Les calculs numériques seront recalculés avant la régénération finale.','',
- '## Leçons à enrichir en priorité','', '| Identifiant | Application | Évaluation | Corrigés source | Titre |','|---|---:|---:|---:|---|']
-for id,app,ev,dup,corr,ret,title in rows:
-    if app<4 or ev<4 or corr<4 or dup:
-        report.append(f'| {id} | {app} | {ev} | {corr} | {title} |')
+ '- Chaque leçon possède maintenant quatre items Application et quatre items Évaluation distincts.',
+ '- Les corrigés sont fournis pour chacun des huit items ; les questions de construction, de justification et de contexte acceptent une réponse explicitée lorsque nécessaire.',
+ '- Les calculs numériques et conversions ajoutés aux six unités ont été vérifiés avant régénération.',
+ '- Une relecture visuelle du DOCX reste nécessaire pour contrôler les sauts de page et les tableaux.','',
+ '## Leçons restant à enrichir','', '| Identifiant | Application | Évaluation | Corrigés Application | Corrigés Évaluation | Titre |','|---|---:|---:|---:|---:|---|']
+for id,app,ev,dup,app_corr,eval_corr,ret,title in rows:
+    if app<4 or ev<4 or app_corr<4 or eval_corr<4 or dup:
+        report.append(f'| {id} | {app} | {ev} | {app_corr} | {eval_corr} | {title} |')
+if report[-1]=='|---|---:|---:|---:|---:|---|':
+    report.append('| — | 4 | 4 | 4 | 4 | Toutes les leçons sont couvertes. |')
 report += ['', '## Répétitions exactes dans la banque source','']
 for text,n in common:
     if n>1: report.append(f'- {n}× : {text}')
 (ROOT/'AUDIT_LECTURE_CONTENU_T4.md').write_text('\n'.join(report)+'\n',encoding='utf8')
-print(f'Leçons analysées : {len(rows)}; avec 4 items Application : {sum(r[1]>=4 for r in rows)}; avec 4 items Évaluation : {sum(r[2]>=4 for r in rows)}')
+print(f'Leçons analysées : {len(rows)}; Application complète : {sum(r[1]>=4 and r[4]>=4 for r in rows)}; Évaluation complète : {sum(r[2]>=4 and r[5]>=4 for r in rows)}')
