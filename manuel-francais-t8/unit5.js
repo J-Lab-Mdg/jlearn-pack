@@ -733,6 +733,7 @@ function lessonS55() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 55", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1-N1D02UqVjkw4aMUadIkCARf52mlTGv2/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RACONTER UNE FÊTE TRADITIONNELLE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_raconter.png", 440, 0.5578),
@@ -828,6 +829,7 @@ function lessonS56() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 56", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1pOHA-5Qwafu2Ig2yKv89CAxUWLGKlCsK/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCRIRE UN RÉCIT : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u5_cahier.png", 170, 0.5578),
@@ -916,6 +918,7 @@ function lessonS57() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 57", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1eTI252uNpSPIUg53sGAMbH_lDddsInVU/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Je rédige étape par étape"),
@@ -997,6 +1000,7 @@ function lessonS58() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 58", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1Oy8UPrBVUYbuP_NmHetDhJAbhwz_VNDc/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN RÉCIT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_veillee.png", 440, 0.5578),
@@ -1107,6 +1111,7 @@ function revision() {
     pAns("R.A. : par une leçon de vie, transmise par un ancien.", ["leçon"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1yVP8E2E8fHJxElBsLTtTuPB9-gdF1tCy/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Ce matin-là, tout le village était en fête. Les femmes préparaient le riz pendant que les hommes dressaient le grand chapiteau. Quand les musiciens ont commencé à jouer, les invités sont venus de partout et ont dansé jusqu'au soir. Depuis ce jour, chacun le sait : nos traditions renforcent le fihavanana, ce lien précieux qui unit les familles. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("était / préparaient", { bold: true, color: C.SALMON, hl: true }), run(" [l'imparfait du décor], "), run("sont venus", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec être], "), run("ce matin-là / depuis ce jour", { bold: true, color: C.SALMON, hl: true }), run(" [les indicateurs du schéma], "), run("chapiteau", { bold: true, color: C.SALMON, hl: true }), run(" [finale en -eau].")], { after: 60 }),
   ];

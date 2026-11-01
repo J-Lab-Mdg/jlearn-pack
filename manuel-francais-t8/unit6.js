@@ -155,6 +155,7 @@ function lessonS61() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 61", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/13DNVYvw4ea_77KRu568LCG1DHWSxfdEL/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UNE CHRONIQUE SUR LA MUSIQUE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     passageMusique(),
@@ -252,6 +253,7 @@ function lessonS62() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 62", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1u1sExS7FCGFHXF42xp33qKcYgaBqpYYs/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES MOTS DE LA MUSIQUE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_instruments.png", 440, 0.5578),
@@ -352,6 +354,7 @@ function lessonS63() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 63", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1ft-kOXLnOtavle5UOXwrcCp1wFBjl0Zh/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN TEXTE EXPLICATIF SUR UNE MUSIQUE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_salegy.png", 440, 0.5578),
@@ -446,6 +449,7 @@ function lessonS64() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 64", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1DmWBYmcfSLxJ4LOknuXRiqcu4-q-oVB-/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES ARTICULATEURS POUR EXPLIQUER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Ma boîte enrichie (souvenir de l'unité 3 + nouveautés)"),
@@ -540,6 +544,7 @@ function lessonS65() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 65", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1l2GlmVR1w18BrX2W7YuW616iwdgizlsE/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("DÉDUIRE ET ILLUSTRER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Les articulateurs pour DÉDUIRE"),
