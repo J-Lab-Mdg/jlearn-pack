@@ -472,7 +472,7 @@ function annex10() {
 // ============ ANNEXE 11 — La carte touristique et culturelle de Madagascar ============
 function annex11() {
   const carte = fs.existsSync(path.join(__dirname, "img", "carte_culturelle.png"))
-    ? [img("carte_culturelle.png", 300, 1.7917)] : [];
+    ? [img("carte_culturelle.png", 320, 1.4906)] : [];
   return [
     ...annexTitle("annex11", 11, "LA CARTE TOURISTIQUE ET CULTURELLE DE MADAGASCAR"),
     p("Tout le manuel sur une seule image ! Retrouve sur la carte les trésors rencontrés dans les sept unités.", { after: 80 }),
