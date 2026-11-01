@@ -9,8 +9,8 @@
 
 | Point | Résultat |
 |---|---|
-| Leçons avec au moins 4 items Application | 20/57 |
-| Leçons avec au moins 4 items Évaluation | 20/57 |
+| Leçons avec au moins 4 items Application | 29/57 |
+| Leçons avec au moins 4 items Évaluation | 29/57 |
 | Leçons avec au moins 4 réponses Application source | 0/57 |
 | Leçons avec au moins 2 règles/points à retenir | 57/57 |
 
@@ -45,15 +45,15 @@
 | U2-L08 | 4 | 4 | 3 | Multiplier et diviser mentalement par 10, 100 et 1 000 |
 | U2-L09 | 4 | 4 | 3 | Additionner et soustraire mentalement jusqu’à 1 000 |
 | U2-L10 | 4 | 4 | 3 | Consolidation et résolution de problèmes de l’unité Opération |
-| U3-L01 | 3 | 0 | 3 | Observer une suite non numérique à motif répété |
-| U3-L02 | 3 | 0 | 3 | Observer une suite non numérique à motif croissant |
-| U3-L03 | 3 | 0 | 3 | Décrire une suite numérique : régularité, terme et rang |
-| U3-L04 | 3 | 0 | 3 | Construire une table de valeurs |
-| U3-L05 | 3 | 0 | 3 | Créer une suite numérique et justifier sa règle |
-| U3-L06 | 3 | 0 | 3 | Comprendre le sens de l’égalité |
-| U3-L07 | 3 | 0 | 3 | Utiliser commutativité, compensation, double et éléments neutres |
-| U3-L08 | 3 | 0 | 3 | Trouver une valeur manquante dans une égalité |
-| U3-L09 | 3 | 0 | 3 | Consolidation et évaluation de l’unité Algèbre |
+| U3-L01 | 4 | 4 | 3 | Observer une suite non numérique à motif répété |
+| U3-L02 | 4 | 4 | 3 | Observer une suite non numérique à motif croissant |
+| U3-L03 | 4 | 4 | 3 | Décrire une suite numérique : régularité, terme et rang |
+| U3-L04 | 4 | 4 | 3 | Construire une table de valeurs |
+| U3-L05 | 4 | 4 | 3 | Créer une suite numérique et justifier sa règle |
+| U3-L06 | 4 | 4 | 3 | Comprendre le sens de l’égalité |
+| U3-L07 | 4 | 4 | 3 | Utiliser commutativité, compensation, double et éléments neutres |
+| U3-L08 | 4 | 4 | 3 | Trouver une valeur manquante dans une égalité |
+| U3-L09 | 4 | 4 | 3 | Consolidation et évaluation de l’unité Algèbre |
 | U4-L01 | 3 | 0 | 3 | Reconnaître les angles aigu, droit, obtus et plat |
 | U4-L02 | 3 | 0 | 3 | Mesurer et comparer des angles |
 | U4-L03 | 3 | 0 | 3 | Identifier et classer les triangles |
