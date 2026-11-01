@@ -7,14 +7,19 @@ const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   WidthType, AlignmentType, BorderStyle, ShadingType, PageBreak,
-  Footer, PageNumber, Bookmark, InternalHyperlink, TableLayoutType, ImageRun,
+  Footer, PageNumber, Bookmark, InternalHyperlink, TableLayoutType, ImageRun, SectionType,
   Math: DocxMath, MathFraction, MathRun
 } = require('docx');
 
 const ROOT = path.join(__dirname, '..');
-const inventory = JSON.parse(fs.readFileSync(path.join(ROOT, 'inventaire_lecons.json'), 'utf8'));
+const PROTOTYPE = process.env.PROTOTYPE === '1';
+const inventorySource = JSON.parse(fs.readFileSync(path.join(ROOT, 'inventaire_lecons.json'), 'utf8'));
 const bank = JSON.parse(fs.readFileSync(path.join(__dirname, 'content_bank.json'), 'utf8'));
-const OUT = path.join(ROOT, 'livrables', 'Manuel_Mathematiques_T4_JLearn_SkillV1.docx');
+const PROTOTYPE_IDS = new Set(['U1-L01', 'U4-L03', 'U5-L03']);
+const inventory = PROTOTYPE
+  ? { unites: inventorySource.unites.map(u => ({ ...u, lecons: u.lecons.filter(l => PROTOTYPE_IDS.has(l.id)) })).filter(u => u.lecons.length) }
+  : inventorySource;
+const OUT = path.join(ROOT, 'livrables', PROTOTYPE ? 'Manuel_Mathematiques_T4_JLearn_SkillV2_PROTOTYPE.docx' : 'Manuel_Mathematiques_T4_JLearn_SkillV1.docx');
 const FIG_DIR = path.join(ROOT, 'assets', 'figures');
 const { generate: generateFigures } = require('./figures_t4');
 
@@ -138,6 +143,7 @@ function fiche(lesson, data, unit, globalNo, total) {
     row('III. Évaluation', `Travail individuel.\n${exerciseText(eItems)}`, `Corrigé attendu.\n${answerText(eAnswers)}`, 'Travail individuel, auto-correction', 'Fiche d’évaluation, règle ou matériel indiqué', 'L’apprenant justifie sa réponse.'),
   ];
   return [
+    page(),
     heading(`SÉANCE ${globalNo} / ${total} — ${lesson.titre.toUpperCase()}`, 1, `seance${globalNo}`),
     heading('FICHE DE PRÉPARATION', 2), meta(lesson, unit, globalNo, total),
     table(rows, [1500, 2700, 1700, 1500, 1400, 800]),
@@ -180,31 +186,46 @@ function imageParagraph(file, type, width) {
 function figureParagraph(name) {
   return imageParagraph(path.join(FIG_DIR, `${name}.png`), 'png', 620) || p('Support visuel à produire.', { italics: true, color: '666666' });
 }
+function sceneFor(lesson) {
+  const scenes = {
+    'U1-L01': 'scene_u1_l01.png',
+    'U4-L03': 'scene_u4_l03.png',
+    'U5-L03': 'scene_u5_l03.png'
+  };
+  const file = scenes[lesson.id];
+  return file && fs.existsSync(path.join(ROOT, 'assets', 'scenes', file)) ? path.join(ROOT, 'assets', 'scenes', file) : null;
+}
+function sceneParagraph(lesson) {
+  const file = sceneFor(lesson);
+  return file ? imageParagraph(file, 'png', 520) : null;
+}
 function coverParagraph() {
-  return imageParagraph(path.join(ROOT, 'assets', 'cover_math_t4.png'), 'png', 520) || p('Illustration de couverture à produire.', { italics: true, color: '666666' });
+  const file = path.join(ROOT, 'assets', 'cover_math_t4.png');
+  if (!fs.existsSync(file)) return p('Illustration de couverture à produire.', { italics: true, color: '666666' });
+  return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 0, after: 0 }, children: [new ImageRun({ type: 'png', data: fs.readFileSync(file), transformation: { width: 595, height: 842 } })] });
 }
-function sceneParagraph() {
-  return imageParagraph(path.join(ROOT, 'assets', 'scenes', 'scene_numeration_classe.jpg'), 'jpg', 620) || p('Scène pédagogique à produire.', { italics: true, color: '666666' });
-}
+
 function learnerLesson(lesson, data) {
   const aItems = exerciseBlock(data, false); const eItems = exerciseBlock(data, true);
   const figure = figureFor(lesson);
   const aAnswers = answersBlock(data, false); const eAnswers = answersBlock(data, true);
-  const visualRows = [data.visual[0], ...data.visual.slice(1)];
+  const longExercises = PROTOTYPE && Array.isArray(data.prototype_exercises);
+  const exerciseItems = longExercises ? data.prototype_exercises : [...aItems, ...eItems];
+  const exerciseAnswers = longExercises ? data.prototype_corrections : [...aAnswers, ...eAnswers];
+  const scene = sceneParagraph(lesson);
   const keywords = data.retain.join(' ');
+  const visualTable = table([new TableRow({ children: data.visual[0].map(x => cell(x, { bold: true, fill: C.green, color: C.white, size: 17 })) }), ...data.visual.slice(1).map(r => new TableRow({ children: r.map(x => cell(x, { size: 17 })) }))], data.visual[0].map(() => Math.floor(9600 / data.visual[0].length)));
   return [
     page(), heading(`LEÇON — ${lesson.titre}`, 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`),
-    ...(lesson.id === 'U1-L01' ? [sceneParagraph()] : []),
-    heading('1. À retenir', 2), p([tr('Mots-clés : ', { bold: true, color: C.blue }), ...rich(keywords, { color: C.blue, bold: true })]),
-    ...data.retain.map(x => bullet(x)),
-    heading('2. Exemple guidé', 2), p(data.example, { fill: C.paleGreen }),
-    heading('3. Support visuel', 2), figureParagraph(figure), table([new TableRow({ children: data.visual[0].map(x => cell(x, { bold: true, fill: C.green, color: C.white, size: 17 })) }), ...data.visual.slice(1).map(r => new TableRow({ children: r.map(x => cell(x, { size: 17 })) }))], data.visual[0].map(() => Math.floor(9600 / data.visual[0].length))),
-    heading('4. Exercices', 2), p('Les exercices sont notés sur 8 points. Chaque partie vaut 1 point par réponse correcte.'),
-    p([tr('A. ', { bold: true, color: C.blue }), ...rich(exerciseText(aItems))]),
-    p([tr('B. ', { bold: true, color: C.blue }), ...rich(exerciseText(eItems))]),
-    heading('5. Corrigé détaillé', 2), p([tr('A. ', { bold: true, color: C.wine }), ...rich(answerText(aAnswers))]),
-    p([tr('B. ', { bold: true, color: C.wine }), ...rich(answerText(eAnswers))]),
-    p('Vérifie toujours le calcul, le signe, l’unité ou la propriété utilisée avant de conclure.', { fill: C.yellow, italics: true })
+    heading(`1. Situation-problème — ${lesson.activite}`, 2), p(`Point de départ : ${lesson.activite} Question à résoudre : ${lesson.objectif}.`),
+    heading(`2. Découverte guidée — ${lesson.objectif}`, 2), p(data.example, { fill: C.paleGreen }),
+    ...(scene ? [heading('3. Scène de classe : observer et agir', 2), scene] : []),
+    heading('4. Représentation mathématique', 2), figureParagraph(figure), visualTable,
+    heading('5. Règle et vocabulaire de la séance', 2), p([tr('Mots-clés : ', { bold: true, color: C.blue }), ...rich(keywords, { color: C.blue, bold: true })]), ...data.retain.map(x => bullet(x)),
+    heading('6. Exercices variés', 2), p(longExercises ? 'Douze exercices : calcul, représentation, comparaison, justification, erreur à corriger, situation-problème et recherche.' : 'Exercices d’application et d’évaluation : chaque réponse doit être justifiée lorsque la consigne le demande.'),
+    ...(longExercises ? [p(rich(exerciseText(exerciseItems)))] : [p([tr('Application. ', { bold: true, color: C.blue }), ...rich(exerciseText(aItems))]), p([tr('Évaluation. ', { bold: true, color: C.blue }), ...rich(exerciseText(eItems))])]),
+    heading('7. Corrigé raisonné', 2), p(rich(answerText(exerciseAnswers))),
+    p('Contrôle final : vérifie le calcul, la représentation, le signe, l’unité, la propriété ou la stratégie utilisée.', { fill: C.yellow, italics: true })
   ];
 }
 function unitIntro(unit, unitNo) {
@@ -220,6 +241,9 @@ function unitIntro(unit, unitNo) {
     p(`Cette unité comprend ${total} leçons. Chaque leçon est suivie d’exercices et d’un corrigé.`, { italics: true, color: '666666' })
   ];
 }
+function coverPage() {
+  return [coverParagraph()];
+}
 function frontMatter(units, total) {
   const toc = [page(), heading('SOMMAIRE INTERACTIF', 1, 'sommaire'), p('Clique sur une unité ou une séance pour atteindre directement sa fiche. Les liens sont des liens internes vers des signets.'), ...units.flatMap((u, ui) => {
     const arr = [new Paragraph({ children: [new InternalHyperlink({ anchor: `unite${ui + 1}`, children: [tr(`Unité ${ui + 1} — ${u.nom}`, { bold: true, color: C.blue })] })] })];
@@ -231,8 +255,7 @@ function frontMatter(units, total) {
     return arr;
   })];
   return [
-    coverParagraph(),
-    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 1600, after: 200 }, children: [tr('MATHÉMATIQUES', { bold: true, color: C.blue, size: 54 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 400, after: 200 }, children: [tr('MATHÉMATIQUES', { bold: true, color: C.blue, size: 54 })] }),
     new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 250 }, children: [tr('T4', { bold: true, color: C.red, size: 84 })] }),
     p('Manuel de l’apprenant et fiches de préparation enseignant', { align: AlignmentType.CENTER, size: 28, color: C.blue }),
     p('Construire à partir du PE T4 et du FRP T4 — Collection J-Learn', { align: AlignmentType.CENTER, size: 20 }),
@@ -245,7 +268,8 @@ function frontMatter(units, total) {
 }
 async function main() {
   const total = inventory.unites.reduce((s, u) => s + u.lecons.length, 0);
-  if (total !== 57) throw new Error(`Nombre de leçons inattendu : ${total}`);
+  const expectedTotal = PROTOTYPE ? 3 : 57;
+  if (total !== expectedTotal) throw new Error(`Nombre de leçons inattendu : ${total} (attendu ${expectedTotal})`);
   const generatedFigures = await generateFigures();
   console.log(`Supports visuels générés : ${generatedFigures.length}`);
   const children = [...frontMatter(inventory.unites, total)];
@@ -264,11 +288,17 @@ async function main() {
   const doc = new Document({
     numbering: { config: [{ reference: 'lesson-number', levels: [{ level: 0, format: 'decimal', text: '%1.', alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 360, hanging: 180 } } } }] }] },
     styles: { default: { document: { run: { font: 'Times New Roman', size: 22 }, paragraph: { spacing: { line: 300 } } } } },
-    sections: [{
-      properties: { page: { margin: { top: 900, right: 1000, bottom: 900, left: 1000 } } },
-      footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [tr('J-Learn — Mathématiques T4 — page ', { size: 17, color: '666666' }), new TextRun({ children: [PageNumber.CURRENT], font: 'Times New Roman', size: 17, color: '666666' })] })] }) },
-      children
-    }]
+    sections: [
+      {
+        properties: { page: { size: { width: 11906, height: 16838 }, margin: { top: 0, right: 0, bottom: 0, left: 0 } } },
+        children: coverPage()
+      },
+      {
+        properties: { type: SectionType.NEXT_PAGE, page: { size: { width: 11906, height: 16838 }, margin: { top: 900, right: 1000, bottom: 900, left: 1000 } } },
+        footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [tr('J-Learn — Mathématiques T4 — page ', { size: 17, color: '666666' }), new TextRun({ children: [PageNumber.CURRENT], font: 'Times New Roman', size: 17, color: '666666' })] })] }) },
+        children
+      }
+    ]
   });
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   const buf = await Packer.toBuffer(doc);
