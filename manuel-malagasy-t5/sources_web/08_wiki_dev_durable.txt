@@ -1,0 +1,19 @@
+LOHARANON-KEVITRA 8 — wiki_dev_durable
+==========================================================================
+
+REFERENCE : Wikipédia (fr) — « Développement durable », encyclopédie en ligne, licence CC BY-SA 4.0
+URL       : https://fr.wikipedia.org/wiki/Développement_durable
+LICENCE / ATTRIBUTION : Encyclopédie en ligne, article rédigé par des contributeurs ; texte sous licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 (CC BY-SA 4.0). La copie verbatim des passages ci-dessous est donc licite à condition de conserver l'attribution : « Wikipédia, auteurs de l'article, licence CC BY-SA 4.0 ».
+
+UTILISE DANS LE MANUEL :
+  - loha3 · fiche 1 · Fanehoan-kevitra am-bava · « Ny fiarovana ny ala sy ny rano »
+  - loha3 · fiche 2 · Vakiteny (vakiteny miaina sy fahazoan-dahatsoratra) · « Ny ala sy ny renirano »
+  - loha3 · fiche 4 · Asa an-tsoratra · « Lahatsoratra fampahafantarana : ny fiarovana ny tontolo manodidina »
+
+--------------------------------------------------------------------------
+PASSAGES RECOPIES MOT POUR MOT (tels qu'imprimés dans le manuel) :
+--------------------------------------------------------------------------
+
+[1] « Le développement durable est un développement qui répond aux besoins du présent sans compromettre la capacité des générations futures de répondre aux leurs. » (rapport de la Commission mondiale sur l'environnement et le développement)
+
+[2] « Le développement durable … est une conception du développement qui s'inscrit dans une perspective de long terme et en intégrant les contraintes environnementales et sociales à l'économie. »
