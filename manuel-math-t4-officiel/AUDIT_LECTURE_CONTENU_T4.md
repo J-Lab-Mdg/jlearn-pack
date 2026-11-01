@@ -9,8 +9,8 @@
 
 | Point | Résultat |
 |---|---|
-| Leçons avec au moins 4 items Application | 10/57 |
-| Leçons avec au moins 4 items Évaluation | 10/57 |
+| Leçons avec au moins 4 items Application | 20/57 |
+| Leçons avec au moins 4 items Évaluation | 20/57 |
 | Leçons avec au moins 4 réponses Application source | 0/57 |
 | Leçons avec au moins 2 règles/points à retenir | 57/57 |
 
@@ -35,16 +35,16 @@
 | U1-L08 | 4 | 4 | 3 | Relier fractions décimales et nombres décimaux |
 | U1-L09 | 4 | 4 | 3 | Lire et écrire les chiffres romains de I à M |
 | U1-L10 | 4 | 4 | 3 | Consolidation et évaluation de l’unité Nombre |
-| U2-L01 | 3 | 0 | 3 | Donner du sens à la multiplication |
-| U2-L02 | 3 | 0 | 3 | Multiplier un nombre naturel par deux ou trois chiffres |
-| U2-L03 | 3 | 0 | 3 | Donner du sens à la division |
-| U2-L04 | 3 | 0 | 3 | Diviser un nombre naturel par deux ou trois chiffres |
-| U2-L05 | 3 | 0 | 3 | Utiliser la divisibilité à partir de la division |
-| U2-L06 | 3 | 0 | 3 | Additionner et soustraire des fractions de même dénominateur |
-| U2-L07 | 3 | 0 | 3 | Additionner et soustraire des nombres décimaux |
-| U2-L08 | 3 | 0 | 3 | Multiplier et diviser mentalement par 10, 100 et 1 000 |
-| U2-L09 | 3 | 0 | 3 | Additionner et soustraire mentalement jusqu’à 1 000 |
-| U2-L10 | 3 | 0 | 3 | Consolidation et résolution de problèmes de l’unité Opération |
+| U2-L01 | 4 | 4 | 3 | Donner du sens à la multiplication |
+| U2-L02 | 4 | 4 | 3 | Multiplier un nombre naturel par deux ou trois chiffres |
+| U2-L03 | 4 | 4 | 3 | Donner du sens à la division |
+| U2-L04 | 4 | 4 | 3 | Diviser un nombre naturel par deux ou trois chiffres |
+| U2-L05 | 4 | 4 | 3 | Utiliser la divisibilité à partir de la division |
+| U2-L06 | 4 | 4 | 3 | Additionner et soustraire des fractions de même dénominateur |
+| U2-L07 | 4 | 4 | 3 | Additionner et soustraire des nombres décimaux |
+| U2-L08 | 4 | 4 | 3 | Multiplier et diviser mentalement par 10, 100 et 1 000 |
+| U2-L09 | 4 | 4 | 3 | Additionner et soustraire mentalement jusqu’à 1 000 |
+| U2-L10 | 4 | 4 | 3 | Consolidation et résolution de problèmes de l’unité Opération |
 | U3-L01 | 3 | 0 | 3 | Observer une suite non numérique à motif répété |
 | U3-L02 | 3 | 0 | 3 | Observer une suite non numérique à motif croissant |
 | U3-L03 | 3 | 0 | 3 | Décrire une suite numérique : régularité, terme et rang |

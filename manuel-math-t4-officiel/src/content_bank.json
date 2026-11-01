@@ -555,6 +555,24 @@
         "Mot",
         "produit"
       ]
+    ],
+    "extra_application": [
+      "Représente 4 × 7 par une addition répétée."
+    ],
+    "extra_application_corrections": [
+      "7 + 7 + 7 + 7 = 28."
+    ],
+    "evaluation": [
+      "Écris la multiplication correspondant à 9 groupes de 6.",
+      "Calcule 8 × 7 puis 7 × 8.",
+      "Une boîte contient 12 craies. Combien de craies dans 4 boîtes ?",
+      "Explique pourquoi 0 × 25 = 0."
+    ],
+    "evaluation_corrections": [
+      "9 × 6 = 54.",
+      "56 dans les deux cas.",
+      "4 × 12 = 48 craies.",
+      "Zéro groupe de 25 ne contient aucun objet."
     ]
   },
   "U2-L02": {
@@ -590,6 +608,24 @@
         "125 × 24",
         "3 000"
       ]
+    ],
+    "extra_application": [
+      "Pose et calcule 234 × 6."
+    ],
+    "extra_application_corrections": [
+      "1 404."
+    ],
+    "evaluation": [
+      "Pose et calcule 407 × 8.",
+      "Pose et calcule 132 × 15.",
+      "Pose et calcule 204 × 12.",
+      "Explique pourquoi on additionne les produits partiels."
+    ],
+    "evaluation_corrections": [
+      "3 256.",
+      "1 980.",
+      "2 448.",
+      "Chaque chiffre du multiplicateur représente une partie de la multiplication ; les produits partiels sont additionnés."
     ]
   },
   "U2-L03": {
@@ -629,6 +665,24 @@
         "2",
         "reste"
       ]
+    ],
+    "extra_application": [
+      "Partage 45 objets en 5 parts égales."
+    ],
+    "extra_application_corrections": [
+      "45 ÷ 5 = 9 objets par part."
+    ],
+    "evaluation": [
+      "Calcule 72 ÷ 8.",
+      "Partage 37 objets entre 5 personnes : quotient et reste ?",
+      "Calcule 96 ÷ 12.",
+      "Explique pourquoi le reste doit être inférieur au diviseur."
+    ],
+    "evaluation_corrections": [
+      "9.",
+      "37 ÷ 5 = 7 reste 2.",
+      "8.",
+      "Si le reste était au moins égal au diviseur, on pourrait encore former une part entière."
     ]
   },
   "U2-L04": {
@@ -664,6 +718,24 @@
         "Contrôle",
         "reste < diviseur"
       ]
+    ],
+    "extra_application": [
+      "Calcule 648 ÷ 18."
+    ],
+    "extra_application_corrections": [
+      "36."
+    ],
+    "evaluation": [
+      "Calcule 1 536 ÷ 16.",
+      "Calcule 2 015 ÷ 15 et donne le reste.",
+      "Calcule 987 ÷ 9 et donne le reste.",
+      "Vérifie 1 536 ÷ 16 par une multiplication."
+    ],
+    "evaluation_corrections": [
+      "96.",
+      "134 reste 5.",
+      "109 reste 6.",
+      "16 × 96 = 1 536."
     ]
   },
   "U2-L05": {
@@ -698,6 +770,24 @@
         "95 ÷ 4 = 23 r3",
         "non divisible"
       ]
+    ],
+    "extra_application": [
+      "135 est-il divisible par 5 ? Justifie."
+    ],
+    "extra_application_corrections": [
+      "Oui : 135 ÷ 5 = 27."
+    ],
+    "evaluation": [
+      "72 est-il divisible par 8 ? Justifie.",
+      "143 est-il divisible par 3 ? Justifie par la somme des chiffres.",
+      "246 est-il divisible par 2 ?",
+      "Explique ce que signifie une division exacte."
+    ],
+    "evaluation_corrections": [
+      "Oui : 72 ÷ 8 = 9.",
+      "Non : 1 + 4 + 3 = 8, qui n’est pas un multiple de 3.",
+      "Oui, car 246 est pair et 246 ÷ 2 = 123.",
+      "Le reste est égal à zéro."
     ]
   },
   "U2-L06": {
@@ -732,6 +822,24 @@
         "5",
         "7"
       ]
+    ],
+    "extra_application": [
+      "Calcule 3/11 + 5/11."
+    ],
+    "extra_application_corrections": [
+      "8/11."
+    ],
+    "evaluation": [
+      "Calcule 9/14 − 4/14.",
+      "Calcule 3/8 + 2/8.",
+      "Calcule 11/15 − 6/15 et simplifie si possible.",
+      "Explique pourquoi le dénominateur ne change pas."
+    ],
+    "evaluation_corrections": [
+      "5/14.",
+      "5/8.",
+      "5/15 = 1/3.",
+      "Les parts ont la même taille ; on additionne ou soustrait seulement le nombre de parts."
     ]
   },
   "U2-L07": {
@@ -776,6 +884,24 @@
         "2",
         "5"
       ]
+    ],
+    "extra_application": [
+      "Calcule 7,25 + 1,80."
+    ],
+    "extra_application_corrections": [
+      "9,05."
+    ],
+    "evaluation": [
+      "Calcule 12,50 − 3,75.",
+      "Calcule 2,35 + 4,6.",
+      "Calcule 20 − 7,85.",
+      "Explique pourquoi on aligne les virgules."
+    ],
+    "evaluation_corrections": [
+      "8,75.",
+      "6,95.",
+      "12,15.",
+      "On aligne les unités, dixièmes et centièmes de même rang."
     ]
   },
   "U2-L08": {
@@ -811,6 +937,24 @@
         "47 × 1 000",
         "47 000"
       ]
+    ],
+    "extra_application": [
+      "Calcule 45 × 1 000."
+    ],
+    "extra_application_corrections": [
+      "45 000."
+    ],
+    "evaluation": [
+      "Calcule 72 × 100.",
+      "Calcule 64 000 ÷ 1 000.",
+      "Calcule 5 × 100.",
+      "Explique le déplacement des chiffres quand on multiplie par 10, 100 ou 1 000."
+    ],
+    "evaluation_corrections": [
+      "7 200.",
+      "64.",
+      "500.",
+      "Les chiffres se décalent vers la gauche dans l’écriture ; on ajoute les zéros nécessaires."
     ]
   },
   "U2-L09": {
@@ -846,6 +990,24 @@
         "48 + 27",
         "50 + 25"
       ]
+    ],
+    "extra_application": [
+      "Calcule mentalement 48 + 52 en regroupant les compléments à 100."
+    ],
+    "extra_application_corrections": [
+      "100."
+    ],
+    "evaluation": [
+      "Calcule mentalement 68 + 27.",
+      "Calcule mentalement 1 000 − 386.",
+      "Calcule 245 + 199 en transformant 199 en 200 − 1.",
+      "Décris une stratégie pour calculer 49 + 36 sans poser l’opération."
+    ],
+    "evaluation_corrections": [
+      "95.",
+      "614.",
+      "444.",
+      "49 + 36 = 50 + 36 − 1 = 85."
     ]
   },
   "U2-L10": {
@@ -881,6 +1043,24 @@
         "parts de même dénominateur",
         "+ ou − de fractions"
       ]
+    ],
+    "extra_application": [
+      "8 boîtes contiennent chacune 24 crayons. Combien de crayons en tout ?"
+    ],
+    "extra_application_corrections": [
+      "8 × 24 = 192 crayons."
+    ],
+    "evaluation": [
+      "245 livres sont répartis sur 5 étagères égales. Combien par étagère ?",
+      "Une recette utilise 3/10 L puis 4/10 L. Quelle quantité totale ?",
+      "7 sacs pèsent chacun 18 kg. Quelle masse totale ?",
+      "Choisis l’opération pour 156 élèves répartis en 12 groupes égaux et justifie."
+    ],
+    "evaluation_corrections": [
+      "245 ÷ 5 = 49 livres.",
+      "3/10 + 4/10 = 7/10 L.",
+      "7 × 18 = 126 kg.",
+      "La division : 156 ÷ 12 = 13 élèves par groupe."
     ]
   },
   "U3-L01": {
