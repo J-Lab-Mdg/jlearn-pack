@@ -220,26 +220,29 @@ function coverParagraph() {
   return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 0, after: 0 }, children: [new ImageRun({ type: 'png', data: fs.readFileSync(file), transformation: { width: 595, height: 842 } })] });
 }
 
-function modelTable(model) {
+function modelTable(model, size = 17) {
   const widths = model.table_headers.map(() => Math.floor(9600 / model.table_headers.length));
-  const rows = [new TableRow({ children: model.table_headers.map(x => cell(x, { bold: true, fill: C.blue, color: C.white, size: 17 })) })];
-  model.table_rows.forEach(r => rows.push(new TableRow({ children: r.map(x => cell(x, { size: 17 })) })));
+  const rows = [new TableRow({ children: model.table_headers.map(x => cell(x, { bold: true, fill: C.blue, color: C.white, size })) })];
+  model.table_rows.forEach(r => rows.push(new TableRow({ children: r.map(x => cell(x, { size })) })));
   return table(rows, widths);
+}
+function formulaBox(formula) {
+  return new Table({ width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED, borders: gridBorders, rows: [new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.paleGreen }, children: [p(formula, { align: AlignmentType.CENTER, bold: true, color: C.green, size: 30 })] })] })] });
 }
 function retainsCard(model) {
   const inner = [
-    p(model.intro, { size: 18 }),
-    p(model.rules.join(' '), { size: 17 }),
-    p(model.distinction, { fill: C.paleGreen, size: 17 }),
-    p(model.attention, { fill: C.yellow, italics: true, size: 17 }),
-    modelTable(model)
+    p(model.intro, { size: 28 }),
+    p(model.rules.join(' '), { size: 28 }),
+    p(model.distinction, { fill: C.paleGreen, size: 28 }),
+    p(model.attention, { fill: C.yellow, italics: true, size: 28 }),
+    modelTable(model, 28)
   ];
   return new Table({
     width: { size: 9600, type: WidthType.DXA },
     layout: TableLayoutType.FIXED,
     borders: { top: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, bottom: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, left: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, right: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, insideHorizontal: { style: BorderStyle.SINGLE, size: 4, color: 'B7CDE3' }, insideVertical: { style: BorderStyle.SINGLE, size: 4, color: 'B7CDE3' } },
     rows: [
-      new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.blue }, children: [p('JE RETIENS', { align: AlignmentType.CENTER, color: C.white, bold: true, size: 24 })] })] }),
+      new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.blue }, children: [p('JE RETIENS', { align: AlignmentType.CENTER, color: C.white, bold: true, size: 30 })] })] }),
       new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: 'F4F9FD' }, margins: { top: 140, bottom: 140, left: 160, right: 160 }, children: inner })] })
     ]
   });
@@ -247,21 +250,20 @@ function retainsCard(model) {
 function modelLesson(lesson, data) {
   const model = data.prototype_model;
   const scenes = scenesFor(lesson);
-  const figure = figureFor(lesson);
   const items = data.prototype_exercises;
   const answers = data.prototype_corrections;
+  const sections = data.prototype_sections || [];
+  const exercisePages = items.flatMap((item, i) => [page(), heading(`Exercice ${i + 1}`, 2), p(rich(item))]);
   return [
     page(), heading(`LEÇON — ${lesson.titre}`, 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`),
+    ...(scenes[0] ? [imageParagraph(scenes[0], 'png', 240)] : []),
     p([tr('Objectif : ', { bold: true, color: C.blue }), ...rich(lesson.objectif)], { fill: C.paleBlue }),
-    heading(model.table_title, 2), p(model.intro),
-    heading('Exemples', 2), ...model.examples.map(x => bullet(x)),
+    p(model.intro),
+    ...sections.flatMap(section => [heading(section.title, 2), p(section.text), formulaBox(section.formula), ...(section.example || []).map(x => p(x, { italics: true }))]),
     heading('Je retiens', 2), retainsCard(model),
-    heading('Méthode', 2), ...model.method.map((x, i) => p(`${i + 1}. ${x}`)),
-    heading('Exemple expliqué', 2), p(model.distinction, { fill: C.paleGreen }),
-    ...scenes.flatMap((file, i) => [heading(i === 0 ? 'Situation de découverte' : 'Situation de manipulation', 2), imageParagraph(file, 'png', 470)]),
-    heading('Représentation mathématique', 2), figureParagraph(figure),
-    heading('Exercices progressifs', 2), p('Application directe, représentation, comparaison, justification, erreur à corriger, situation-problème et recherche.'), p(rich(exerciseText(items))),
-    heading('Corrigé détaillé', 2), p(rich(answerText(answers))),
+    heading('Exercices', 2), p('Les exercices sont progressifs et mobilisent le calcul, la représentation, la justification, la correction d’erreur, la situation-problème et la recherche.'),
+    ...exercisePages,
+    page(), heading('Corrigé', 1), ...answers.map((answer, i) => [heading(`Exercice ${i + 1}`, 2), p(rich(answer))]).flat(),
     p('Vérifie le calcul, la représentation, l’unité et la propriété utilisée.', { fill: C.yellow, italics: true })
   ];
 }

@@ -36,5 +36,19 @@ b['U5-L03']['prototype_model']={
  'attention':'Ne calcule pas l’aire en additionnant les côtés : une addition des côtés concerne le périmètre.',
  'method':['Repère la longueur et la largeur, ou le côté du carré.', 'Choisis la formule.', 'Effectue le calcul et écris l’unité carrée.']
 }
+b['U1-L01']['prototype_sections']=[
+ {'title':'Lire un nombre dans le tableau', 'text':'On commence par la droite, avec les unités simples. On lit ensuite les classes de gauche à droite : milliers puis unités.', 'formula':'34 206 = 30 000 + 4 000 + 200 + 6'},
+ {'title':'Écrire un nombre en chiffres', 'text':'On place chaque chiffre dans la colonne qui correspond à sa valeur, puis on sépare les classes par un espace.', 'formula':'soixante-dix-mille-quatre-cent-cinq = 70 405'},
+ {'title':'Chiffre et nombre de milliers', 'text':'Le chiffre des milliers regarde une seule case. Le nombre de milliers regroupe toutes les valeurs jusqu’à cette case.', 'formula':'Dans 34 206 : chiffre des milliers = 4 ; nombre de milliers = 34'}
+]
+b['U4-L03']['prototype_sections']=[
+ {'title':'Triangle équilatéral', 'text':'Un triangle équilatéral possède trois côtés de même longueur.', 'formula':'AB = BC = CA'},
+ {'title':'Triangle isocèle', 'text':'Un triangle isocèle possède deux côtés de même longueur. Il faut montrer ou mesurer ces deux côtés pour justifier le classement.', 'formula':'AB = AC'},
+ {'title':'Triangle rectangle', 'text':'Un triangle rectangle possède un angle droit. On peut vérifier cet angle avec une équerre.', 'formula':'un angle = 90°'}
+]
+b['U5-L03']['prototype_sections']=[
+ {'title':'1. Aire du rectangle', 'text':'Pour calculer l’aire d’un rectangle, on multiplie la longueur par la largeur.', 'formula':'A = L × l', 'example':['Exemple :','On donne d’abord la formule : A = L × l.','On remplace par les nombres : A = 8 m × 5 m.','On calcule : A = 40 m².','On n’oublie jamais que m × m = m².']},
+ {'title':'2. Aire du carré', 'text':'Un carré a quatre côtés égaux. Pour calculer son aire, on multiplie le côté par lui-même.', 'formula':'A = côté × côté', 'example':['Exemple :','Pour un carré de côté 6 cm : A = 6 cm × 6 cm = 36 cm².']}
+]
 p.write_text(json.dumps(b,ensure_ascii=False,indent=2),encoding='utf8')
 print('Contenu modèle ajouté pour 3 leçons')
