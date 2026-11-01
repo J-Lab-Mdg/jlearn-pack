@@ -31,8 +31,8 @@ def main():
         ("57 fiches de préparation", xml.count("FICHE DE PRÉPARATION") == len(ids)),
         ("57 tables de déroulement", xml.count("Étapes et durée") == len(ids)),
         ("6 colonnes matérialisées par la ligne d’en-tête", xml.count("Déroulement de la leçon") == len(ids)),
-        ("57 sections d’exercices", xml.count("Exercice 1 — Application") == len(ids) and xml.count("Exercice 2 — Évaluation") == len(ids)),
-        ("57 sections de corrigés", xml.count("Corrigé — Application") == len(ids) and xml.count("Corrigé — Évaluation") == len(ids)),
+        ("57 séances avec 4 exercices", all(xml.count(label) == len(ids) for label in ["Exercice 1 — Application directe", "Exercice 2 — Représentation et justification", "Exercice 3 — Réinvestissement", "Exercice 4 — Situation et transfert"])),
+        ("57 séances avec 4 corrigés", all(xml.count(label) == len(ids) for label in ["Corrigé de l’exercice 1", "Corrigé de l’exercice 2", "Corrigé de l’exercice 3", "Corrigé de l’exercice 4"])),
         ("57 blocs Je retiens", xml.count("JE RETIENS") == len(ids)),
         ("notes PS intégrées lorsque prévues", xml.count("footnoteReference") == 9),
         ("police Times New Roman présente", xml.count("Times New Roman") > 0),
@@ -71,7 +71,8 @@ def main():
         "",
         "✅ La structure de fiche, la police, les liens internes, les blocs Je retiens et les notes PS sont contrôlés.",
         "✅ Le corps principal suit les 57 leçons PE ; les extensions PS sont signalées et les contenus PS-only sont indexés en annexe.",
-        "⚠️ La V1 reste à contrôler visuellement page par page et les scènes pédagogiques devront être ajoutées progressivement à chaque leçon.",
+        "✅ Chaque leçon reçoit une scène paysage et un support visuel mathématique, sans légende ajoutée.",
+        "⚠️ Une validation pédagogique détaillée des formulations et des calculs reste recommandée avant impression.",
     ]
     REPORT.write_text("\n".join(report) + "\n", encoding="utf-8")
     failed = [label for label, ok in checks if not ok]

@@ -27,7 +27,7 @@ const FIG_DIR = path.join(ROOT, 'assets', 'figures');
 const { generate: generateFigures } = require('./figures_t4');
 
 const C = {
-  red: 'C00000', green: '2E7D32', blue: '1F4E79', wine: 'C2185B', ocre: 'B25000',
+  red: 'C00000', green: '2E7D32', blue: '1F4E79', wine: 'C2185B', ocre: 'B25000', salmon: 'D96C5F',
   black: '000000', white: 'FFFFFF', pale: 'EAF2F8', paleGreen: 'E8F5E9',
   paleBlue: 'E3F2FD', yellow: 'FFF8E1', gray: 'E7E6E6', line: '808080'
 };
@@ -96,7 +96,7 @@ function labelTable(leftRows, rightRows) {
 }
 function meta(lesson, unit, globalNo, total) {
   return labelTable(
-    [['Discipline :', 'Mathématiques'], ['Sous-discipline :', unit.nom], ['Thème :', lesson.titre], ['Objectif spécifique :', lesson.objectif], ['Documentation :', `PE T4 ${lesson.sources.pe} ; FRP T4 ${lesson.sources.frp}`], ['Support et matériel :', lesson.supports.join(', ')]],
+    [['Discipline :', 'Mathématiques'], ['Sous-discipline :', unit.nom], ['Thème :', nominalTitle(lesson)], ['Objectif spécifique :', lesson.objectif], ['Documentation :', `PE T4 ${lesson.sources.pe} ; FRP T4 ${lesson.sources.frp}`], ['Support et matériel :', lesson.supports.join(', ')]],
     [['Date :', '________________'], ['Classe :', 'T4'], ['Séance n° :', `${globalNo} / ${total}`], ['Durée :', 'non précisée dans le PE'], ['Valeurs :', unit.valeurs.join(', ')], ['Référence :', lesson.id]]
   );
 }
@@ -127,6 +127,113 @@ function exerciseBlock(data, evaluation = false) { return blockItems(data, evalu
 function answersBlock(data, evaluation = false) { return blockAnswers(data, evaluation); }
 function exerciseText(items) { return items.map((x, i) => `${i + 1}. ${x}`).join('\n'); }
 function answerText(items) { return items.map((x, i) => `${i + 1}. ${x}`).join('\n'); }
+function itemParagraphs(items) { return items.map((x, i) => p(rich(`${i + 1}. ${x}`), { align: AlignmentType.LEFT, after: 65 })); }
+function correctionParagraphs(items) { return items.map((x, i) => p([tr(`${i + 1}. Réponse : `, { bold: true, color: C.salmon }), ...rich(x)], { align: AlignmentType.LEFT, after: 65 })); }
+const NOMINAL_TITLES = {
+  'U1-L01': 'Représentation, lecture et écriture des nombres naturels jusqu’à 100 000',
+  'U1-L02': 'Comparaison et rangement des nombres jusqu’à 100 000',
+  'U1-L03': 'Composition et décomposition des nombres de 10 000 à 100 000',
+  'U1-L04': 'Représentation d’une fraction simple',
+  'U1-L05': 'Reconnaissance et production de fractions équivalentes',
+  'U1-L06': 'Simplification, comparaison et rangement de fractions simples',
+  'U1-L07': 'Lecture, écriture et décomposition des nombres décimaux',
+  'U1-L08': 'Lien entre fractions décimales et nombres décimaux',
+  'U1-L09': 'Chiffres romains : lecture et écriture de I à M',
+  'U1-L10': 'Consolidation et évaluation de l’unité Nombre',
+  'U2-L01': 'Sens de la multiplication',
+  'U2-L02': 'Multiplication d’un nombre naturel par deux ou trois chiffres',
+  'U2-L03': 'Sens de la division',
+  'U2-L04': 'Division d’un nombre naturel par deux ou trois chiffres',
+  'U2-L05': 'Divisibilité à partir de la division',
+  'U2-L06': 'Addition et soustraction de fractions de même dénominateur',
+  'U2-L07': 'Addition et soustraction de nombres décimaux',
+  'U2-L08': 'Multiplication et division mentales par 10, 100 et 1 000',
+  'U2-L09': 'Addition et soustraction mentales jusqu’à 1 000',
+  'U2-L10': 'Consolidation et résolution de problèmes de l’unité Opération',
+  'U3-L01': 'Suite non numérique à motif répété',
+  'U3-L02': 'Suite non numérique à motif croissant',
+  'U3-L03': 'Suite numérique : régularité, terme et rang',
+  'U3-L04': 'Table de valeurs',
+  'U3-L05': 'Création d’une suite numérique et justification de sa règle',
+  'U3-L06': 'Sens de l’égalité',
+  'U3-L07': 'Propriétés de l’égalité : commutativité, compensation, double et éléments neutres',
+  'U3-L08': 'Valeur manquante dans une égalité',
+  'U3-L09': 'Consolidation et évaluation de l’unité Algèbre',
+  'U4-L01': 'Angles aigu, droit, obtus et plat',
+  'U4-L02': 'Mesure et comparaison des angles',
+  'U4-L03': 'Identification et classement des triangles',
+  'U4-L04': 'Construction des triangles',
+  'U4-L05': 'Identification et classement des quadrilatères',
+  'U4-L06': 'Construction des quadrilatères',
+  'U4-L07': 'Cercle : description et construction',
+  'U4-L08': 'Propriétés des solides',
+  'U4-L09': 'Patrons et objets en carton',
+  'U4-L10': 'Translation simple',
+  'U4-L11': 'Réflexion simple',
+  'U4-L12': 'Consolidation et évaluation de l’unité Géométrie',
+  'U5-L01': 'Distinction entre périmètre et surface',
+  'U5-L02': 'Mesure d’une surface avec des unités carrées',
+  'U5-L03': 'Aire du rectangle et du carré',
+  'U5-L04': 'Aire du parallélogramme et du trapèze',
+  'U5-L05': 'Aire des triangles et du losange',
+  'U5-L06': 'Conversion des unités de longueur, de surface et des unités agraires',
+  'U5-L07': 'Lecture de l’heure et conversion des unités de temps',
+  'U5-L08': 'Problèmes de mesure et consolidation de l’unité Mesure',
+  'U6-L01': 'Fiche d’enquête ou de sondage',
+  'U6-L02': 'Collecte et enregistrement des réponses',
+  'U6-L03': 'Tableau des effectifs',
+  'U6-L04': 'Pictogramme et diagramme à bandes',
+  'U6-L05': 'Comparaison des représentations et conclusion',
+  'U6-L06': 'Expérience aléatoire simple',
+  'U6-L07': 'Classement des événements selon leur probabilité',
+  'U6-L08': 'Consolidation et évaluation de l’unité Traitement de données'
+};
+function nominalTitle(lesson) { return NOMINAL_TITLES[lesson.id] || lesson.titre.replace(/^\s*(Représenter|Lire|Écrire|Comparer|Ranger|Calculer|Construire|Identifier|Reconnaître|Mesurer|Convertir|Résoudre|Observer|Décrire|Créer|Trouver|Utiliser|Donner|Multiplier|Diviser|Additionner|Soustraire|Réaliser)\b/i, ''); }
+function generatedApplication2(data, style) {
+  return [
+    `Représente ou schématise : ${data.example}`,
+    `Explique la règle : ${data.retain[0]}`,
+    `Justifie la propriété : ${data.retain[1] || data.retain[0]}`,
+    `Indique la précaution à respecter : ${style.attention}`
+  ];
+}
+function generatedApplication2Corrections(data, style) {
+  return [
+    `Une représentation correcte doit traduire : ${data.example}`,
+    data.retain[0],
+    data.retain[1] || data.retain[0],
+    style.attention
+  ];
+}
+function generatedEvaluation2(lesson, data, style) {
+  return [
+    `Résous une situation de la vie courante liée à « ${nominalTitle(lesson)} » en utilisant la règle étudiée.`,
+    `Rédige les étapes de résolution à partir de l’exemple : ${data.example}`,
+    `Propose un exemple qui respecte la propriété suivante : ${data.retain[0]}`,
+    `Vérifie une réponse en appliquant cette consigne : ${style.attention}`
+  ];
+}
+function generatedEvaluation2Corrections(data, style) {
+  return [
+    `La situation est correcte si elle utilise la règle : ${data.retain[0]}`,
+    `Les étapes doivent reprendre l’exemple et aboutir à une réponse vérifiable : ${data.example}`,
+    `L’exemple proposé doit respecter : ${data.retain[0]}`,
+    style.attention
+  ];
+}
+function exerciseSets(lesson, data, style) {
+  const proto = Array.isArray(data.prototype_exercises) ? data.prototype_exercises : [];
+  const protoAnswers = Array.isArray(data.prototype_corrections) ? data.prototype_corrections : [];
+  const app1 = proto.length >= 4 ? proto.slice(0, 4) : blockItems(data, false);
+  const app1Answers = protoAnswers.length >= 4 ? protoAnswers.slice(0, 4) : blockAnswers(data, false);
+  const app2 = proto.length >= 8 ? proto.slice(4, 8) : generatedApplication2(data, style);
+  const app2Answers = protoAnswers.length >= 8 ? protoAnswers.slice(4, 8) : generatedApplication2Corrections(data, style);
+  const eval1 = blockItems(data, true);
+  const eval1Answers = blockAnswers(data, true);
+  const eval2 = proto.length >= 12 ? proto.slice(8, 12) : generatedEvaluation2(lesson, data, style);
+  const eval2Answers = protoAnswers.length >= 12 ? protoAnswers.slice(8, 12) : generatedEvaluation2Corrections(data, style);
+  return { app1, app1Answers, app2, app2Answers, eval1, eval1Answers, eval2, eval2Answers };
+}
 
 function fiche(lesson, data, unit, globalNo, total) {
   const visual = data.visual.map(r => r.join(' | ')).join('; ');
@@ -147,7 +254,7 @@ function fiche(lesson, data, unit, globalNo, total) {
   ];
   return [
     page(),
-    heading(`SÉANCE ${globalNo} / ${total} — ${lesson.titre.toUpperCase()}`, 1, `seance${globalNo}`),
+    heading(`SÉANCE ${globalNo} / ${total} — ${nominalTitle(lesson).toUpperCase()}`, 1, `seance${globalNo}`),
     heading('FICHE DE PRÉPARATION', 2), meta(lesson, unit, globalNo, total),
     table(rows, [1500, 2700, 1700, 1500, 1400, 800]),
     p('Les étapes de la fiche sont rédigées pour être utilisées directement en classe. Les exercices de cette table ne portent pas de barème ; le barème apparaît uniquement dans la section EXERCICES.', { size: 16, italics: true, color: '666666' })
@@ -189,13 +296,22 @@ function imageParagraph(file, type, width) {
 function figureParagraph(name) {
   return imageParagraph(path.join(FIG_DIR, `${name}.png`), 'png', 620) || p('Support visuel à produire.', { italics: true, color: '666666' });
 }
-function scenesFor(lesson) {
+function scenesFor(lesson, unit = null) {
   const scenes = {
     'U1-L01': ['scene_u1_l01_landscape_a.png', 'scene_u1_l01_landscape_b.png'],
     'U4-L03': ['scene_u4_l03_landscape_a.png', 'scene_u4_l03_landscape_b.png'],
     'U5-L03': ['scene_u5_l03_landscape_a.png', 'scene_u5_l03_landscape_b.png']
   };
-  return (scenes[lesson.id] || []).map(file => path.join(ROOT, 'assets', 'scenes', file)).filter(fs.existsSync);
+  const unitScenes = {
+    'Nombre': 'scene_unit_nombre.png',
+    'Opération': 'scene_unit_operation.png',
+    'Algèbre': 'scene_unit_algebra.png',
+    'Géométrie': 'scene_unit_geometrie.png',
+    'Mesure': 'scene_unit_mesure.png',
+    'Traitement de données': 'scene_unit_donnees.png'
+  };
+  const files = scenes[lesson.id] || (unit && unitScenes[unit.nom] ? [unitScenes[unit.nom]] : []);
+  return files.map(file => path.join(ROOT, 'assets', 'scenes', file)).filter(fs.existsSync);
 }
 function methodFor(lesson) {
   const methods = {
@@ -230,45 +346,16 @@ function modelTable(model, size = 17) {
   return table(rows, widths);
 }
 function formulaBox(formula) {
-  return new Table({ width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED, borders: gridBorders, rows: [new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.paleGreen }, children: [p(formula, { align: AlignmentType.CENTER, bold: true, color: C.green, size: 30 })] })] })] });
-}
-function retainsCard(model) {
-  const inner = [
-    p(model.intro, { size: 28 }),
-    p(model.rules.join(' '), { size: 28 }),
-    p(model.distinction, { fill: C.paleGreen, size: 28 }),
-    p(model.attention, { fill: C.yellow, italics: true, size: 28 }),
-    modelTable(model, 28)
-  ];
-  return new Table({
-    width: { size: 9600, type: WidthType.DXA },
-    layout: TableLayoutType.FIXED,
-    borders: { top: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, bottom: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, left: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, right: { style: BorderStyle.SINGLE, size: 12, color: C.blue }, insideHorizontal: { style: BorderStyle.SINGLE, size: 4, color: 'B7CDE3' }, insideVertical: { style: BorderStyle.SINGLE, size: 4, color: 'B7CDE3' } },
-    rows: [
-      new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.blue }, children: [p('JE RETIENS', { align: AlignmentType.CENTER, color: C.white, bold: true, size: 30 })] })] }),
-      new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: 'F4F9FD' }, margins: { top: 140, bottom: 140, left: 160, right: 160 }, children: inner })] })
-    ]
+  return new Table({ width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED,
+    borders: { top: { style: BorderStyle.SINGLE, size: 12, color: C.ocre }, bottom: { style: BorderStyle.SINGLE, size: 12, color: C.ocre }, left: { style: BorderStyle.SINGLE, size: 12, color: C.ocre }, right: { style: BorderStyle.SINGLE, size: 12, color: C.ocre }, insideHorizontal: noB, insideVertical: noB },
+    rows: [new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.yellow }, margins: { top: 110, bottom: 110, left: 150, right: 150 }, children: [p('FORMULE', { bold: true, color: C.ocre, size: 24 }), p(formula, { align: AlignmentType.CENTER, bold: true, color: C.black, size: 24 })] })] })]
   });
 }
-function modelLesson(lesson, data) {
-  const model = data.prototype_model;
-  const scenes = scenesFor(lesson);
-  const items = data.prototype_exercises;
-  const answers = data.prototype_corrections;
-  const sections = data.prototype_sections || [];
-  const exercisePages = items.flatMap((item, i) => [page(), heading(`Exercice ${i + 1}`, 2), p(rich(item))]);
-  return [
-    page(), heading(`LEÇON — ${lesson.titre}`, 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`),
-    ...(scenes[0] ? [imageParagraph(scenes[0], 'png', 240)] : []),
-    p([tr('Objectif : ', { bold: true, color: C.blue }), ...rich(lesson.objectif)], { fill: C.paleBlue }),
-    p(model.intro),
-    ...sections.flatMap(section => [heading(section.title, 2), p(section.text), formulaBox(section.formula), ...(section.example || []).map(x => p(x, { italics: true }))]),
-    heading('Je retiens', 2), retainsCard(model),
-    heading('Exercices', 2), p('Les exercices sont progressifs et mobilisent le calcul, la représentation, la justification, la correction d’erreur, la situation-problème et la recherche.'),
-    ...exercisePages,
-    page(), heading('Corrigé', 1), ...answers.map((answer, i) => [heading(`Exercice ${i + 1}`, 2), p(rich(answer))]).flat(),
-    p('Vérifie le calcul, la représentation, l’unité et la propriété utilisée.', { fill: C.yellow, italics: true })
-  ];
+function attentionBox(text) {
+  return new Table({ width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED,
+    borders: { top: { style: BorderStyle.SINGLE, size: 12, color: C.red }, bottom: { style: BorderStyle.SINGLE, size: 12, color: C.red }, left: { style: BorderStyle.SINGLE, size: 12, color: C.red }, right: { style: BorderStyle.SINGLE, size: 12, color: C.red }, insideHorizontal: noB, insideVertical: noB },
+    rows: [new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.yellow }, margins: { top: 110, bottom: 110, left: 150, right: 150 }, children: [p('ATTENTION', { bold: true, color: C.red, size: 24 }), p(text, { size: 22 })] })] })]
+  });
 }
 function visualTableFromData(data, size = 20) {
   const rows = [new TableRow({ children: data.visual[0].map(x => cell(x, { bold: true, fill: C.green, color: C.white, size })) })];
@@ -276,42 +363,49 @@ function visualTableFromData(data, size = 20) {
   return table(rows, data.visual[0].map(() => Math.floor(9600 / data.visual[0].length)));
 }
 function fullRetainsCard(style, data) {
-  const inner = [
-    ...style.retain.slice(0, 4).map(x => p(x, { size: 28 })),
-    formulaBox(style.formula || 'Représentation et propriété à retenir.'),
-    visualTableFromData(data, 24)
-  ];
-  return new Table({ width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED, borders: { top: { style: BorderStyle.SINGLE, size: 12, color: C.green }, bottom: { style: BorderStyle.SINGLE, size: 12, color: C.green }, left: { style: BorderStyle.SINGLE, size: 12, color: C.green }, right: { style: BorderStyle.SINGLE, size: 12, color: C.green }, insideHorizontal: gridB, insideVertical: gridB }, rows: [
-    new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.green }, children: [p('JE RETIENS', { align: AlignmentType.CENTER, color: C.white, bold: true, size: 30 })] })] }),
-    new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: 'F4FBF4' }, margins: { top: 140, bottom: 140, left: 160, right: 160 }, children: inner })] })
-  ] });
+  const inner = style.retain.slice(0, 4).map(x => p(x, { size: 24 }));
+  if (data.visual && data.visual.length) inner.push(visualTableFromData(data, 20));
+  return new Table({ width: { size: 9600, type: WidthType.DXA }, layout: TableLayoutType.FIXED,
+    borders: { top: { style: BorderStyle.SINGLE, size: 12, color: C.green }, bottom: { style: BorderStyle.SINGLE, size: 12, color: C.green }, left: { style: BorderStyle.SINGLE, size: 12, color: C.green }, right: { style: BorderStyle.SINGLE, size: 12, color: C.green }, insideHorizontal: gridB, insideVertical: gridB },
+    rows: [new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: C.green }, children: [p('JE RETIENS', { align: AlignmentType.CENTER, color: C.white, bold: true, size: 27 })] })] }),
+      new TableRow({ children: [new TableCell({ shading: { type: ShadingType.CLEAR, fill: 'F4FBF4' }, margins: { top: 130, bottom: 130, left: 160, right: 160 }, children: inner })] })]
+  });
 }
 function fullLesson(lesson, data, unit, globalNo, total) {
   const style = styleBank.lessons[lesson.id];
-  const aItems = exerciseBlock(data, false); const eItems = exerciseBlock(data, true);
-  const aAnswers = answersBlock(data, false); const eAnswers = answersBlock(data, true);
-  const scene = scenesFor(lesson)[0];
+  const scene = scenesFor(lesson, unit)[0];
+  const figureName = figureFor(lesson);
   const noteId = footnoteIds[lesson.id];
+  const title = nominalTitle(lesson);
+  const sets = exerciseSets(lesson, data, style);
   const objectiveChildren = [tr('Objectif : ', { bold: true, color: C.blue }), ...rich(lesson.objectif)];
   if (noteId) objectiveChildren.push(new FootnoteReferenceRun(noteId));
-  const method = [heading(style.method_title, 2), ...style.method_steps.map((x, i) => p(`${i + 1}. ${x}`))];
+  const methods = style.method_steps.map((x, i) => p(`${i + 1}. ${x}`, { align: AlignmentType.LEFT }));
   return [
-    page(), heading(`LEÇON — ${lesson.titre}`, 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`),
+    page(), heading('LEÇON', 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`), heading(title, 1),
     ...(scene ? [imageParagraph(scene, 'png', 240)] : []),
     p(objectiveChildren, { fill: C.paleBlue }),
     p(style.intro),
-    heading(style.section_title, 2), p(style.section_text),
-    heading('Exemple', 2), p(style.example, { italics: true, underline: true }),
+    heading('1. Notion', 2), p(style.section_text),
+    heading('2. Exemple', 2), p(style.example, { italics: true }),
+    ...(figureName ? [figureParagraph(figureName)] : []),
     ...(style.formula ? [formulaBox(style.formula)] : []),
-    ...method,
-    heading('Attention', 2), p(style.attention, { fill: C.yellow }),
+    heading('3. Méthode', 2), ...methods,
+    attentionBox(style.attention),
     heading('Je retiens', 2), fullRetainsCard(style, data),
-    heading('Exercices', 1),
-    page(), heading('Exercice 1 — Application', 2), p(rich(exerciseText(aItems))),
-    page(), heading('Exercice 2 — Évaluation', 2), p(rich(exerciseText(eItems))),
-    page(), heading('Corrigé — Application', 2), p(rich(answerText(aAnswers))),
-    page(), heading('Corrigé — Évaluation', 2), p(rich(answerText(eAnswers))),
-    p('La réponse doit comporter le calcul, la représentation ou la propriété utilisée, puis une phrase-réponse lorsque la situation le demande.', { fill: C.paleGreen, italics: true })
+    page(), heading(`EXERCICES — Séance ${globalNo} : ${title}`, 1),
+    heading('Application', 2),
+    heading('Exercice 1 — Application directe', 2), ...itemParagraphs(sets.app1),
+    heading('Exercice 2 — Représentation et justification', 2), ...itemParagraphs(sets.app2),
+    heading('Évaluation', 2),
+    heading('Exercice 3 — Réinvestissement', 2), ...itemParagraphs(sets.eval1),
+    heading('Exercice 4 — Situation et transfert', 2), ...itemParagraphs(sets.eval2),
+    heading('CORRIGÉ', 1),
+    heading('Corrigé de l’exercice 1 — Application directe', 2), ...correctionParagraphs(sets.app1Answers),
+    heading('Corrigé de l’exercice 2 — Représentation et justification', 2), ...correctionParagraphs(sets.app2Answers),
+    heading('Corrigé de l’exercice 3 — Réinvestissement', 2), ...correctionParagraphs(sets.eval1Answers),
+    heading('Corrigé de l’exercice 4 — Situation et transfert', 2), ...correctionParagraphs(sets.eval2Answers),
+    p([tr('Mots-clés de vérification : ', { bold: true, color: C.salmon }), tr('propriété, démarche, calcul, unité, phrase-réponse.')], { fill: 'FCE4D6', italics: true })
   ];
 }
 function learnerLesson(lesson, data, unit, globalNo, total) {
@@ -326,7 +420,7 @@ function unitIntro(unit, unitNo) {
     heading('Tableau de bord', 2),
     table([
       new TableRow({ children: [cell('Leçon', { bold: true, fill: C.blue, color: C.white }), cell('Titre', { bold: true, fill: C.blue, color: C.white }), cell('Support principal', { bold: true, fill: C.blue, color: C.white })] }),
-      ...unit.lecons.map((l, i) => new TableRow({ children: [cell(`${i + 1}`, { size: 17 }), cell(l.titre, { size: 17 }), cell(l.supports.join(', '), { size: 17 })] }))
+      ...unit.lecons.map((l, i) => new TableRow({ children: [cell(`${i + 1}`, { size: 17 }), cell(nominalTitle(l), { size: 17 }), cell(l.supports.join(', '), { size: 17 })] }))
     ], [900, 5200, 3500]),
     p(`Cette unité comprend ${total} leçons. Chaque leçon est suivie d’exercices et d’un corrigé.`, { italics: true, color: '666666' })
   ];
@@ -350,8 +444,8 @@ function frontMatter(units, total) {
     const arr = [new Paragraph({ children: [new InternalHyperlink({ anchor: `unite${ui + 1}`, children: [tr(`Unité ${ui + 1} — ${u.nom}`, { bold: true, color: C.blue })] })] })];
     u.lecons.forEach((l, li) => {
       const global = units.slice(0, ui).reduce((s, x) => s + x.lecons.length, 0) + li + 1;
-      arr.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `seance${global}`, children: [tr(`Fiche ${global} — ${l.titre}`, { color: C.blue, size: 19 })] })] }));
-      arr.push(new Paragraph({ indent: { left: 720 }, children: [new InternalHyperlink({ anchor: `lecon${l.id.replace(/[^A-Za-z0-9]/g, '')}`, children: [tr(`Leçon — ${l.titre}`, { color: C.blue, size: 18 })] })] }));
+      arr.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `seance${global}`, children: [tr(`Fiche ${global} — ${nominalTitle(l)}`, { color: C.blue, size: 19 })] })] }));
+      arr.push(new Paragraph({ indent: { left: 720 }, children: [new InternalHyperlink({ anchor: `lecon${l.id.replace(/[^A-Za-z0-9]/g, '')}`, children: [tr(`Leçon — ${nominalTitle(l)}`, { color: C.blue, size: 18 })] })] }));
     });
     return arr;
   })];
