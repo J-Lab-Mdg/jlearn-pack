@@ -152,6 +152,12 @@ def page_fizarana(doc, z, fiches):
             BF.p(doc, "Sary fandaharana tsy natao : %s" % e, size=9, italic=True, space_after=4)
         BF.p(doc, "Ora feno ara-PE : %d ora (ZANA-TARANJA I 38 + II 54 + IV 12 + V 20 + VI 20) "
                   "· 4 ora isaky ny kerinandro = 36 kerinandro." % pe_t6.total(), size=9.5,
+             italic=True, color="595959", space_after=2)
+        BF.p(doc, "**Fifandraisana** : 4 ora × 36 kerinandro = 144 ora ; ny RAPE T6 "
+                  "(éd. sept. 2026) kosa dia mamaritra ny taom-pianarana amin'ny herinandro "
+                  "**1→33** (iany 5 : 7-7-7-6-6) → ka **3 kerinandro / 12 ora** no elanelana "
+                  "eo amin'ny filaharana ora sy ny kalandrie ofisialy : ny mpampianatra no "
+                  "mitsara ny fampiasana azy (famerenana, fanamarinana ny tombana).", size=9.5,
              italic=True, color="595959", space_after=6)
 
 
