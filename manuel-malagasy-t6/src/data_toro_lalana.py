@@ -3,7 +3,7 @@
 
 Ireto dingana ireto dia **tsy votoatin'ny mpianatra** fa fampiharana ny
 « TOROLALANA FITRANDRAHANA NY LESONA » an'ny FRP T6 (éd. Oktobra 2026, p.5-9), ny
-**FFLJ** (p.84-87) ary ny lisitry ny lohahevitra 13 (p.23-180). Nangonina eto mba
+**FFLJ** (p.84-93) ary ny lisitry ny lohahevitra 13 (p.23-180). Nangonina eto mba
 tsy hanaintaintanana ny mpampianatra eo am-pikarohana boky roa.
 """
 import os
@@ -104,7 +104,7 @@ LESONA_A1 = [
              "Ny fanabeazana sy ny asa mendrika",
              "Ny rariny sy fandriampahalemana"]),
     ("h2", "Ny fomba fijery sy ny toetra azo refesina"),
-    ("p", "Ao amin'ny tabilao an'ny FRP (p.85-87) dia voalaza ireto **fomba fijery** ireto : "
+    ("p", "Ao amin'ny tabilao an'ny FRP (p.85-93) dia voalaza ireto **fomba fijery** ireto : "
           "« *Fizaràna ny tarika (ENY vs TSIA)* » · « *Fitarihan-dresaka* » · « *Fanatanterahana "
           "ny adihevitra* » · « *Tsoa-kevitra* ». Ary ireto **toetra** ireto : *fahatokisan-tena* · "
           "*fandeferana* · *fizakantena sy fahafahana maniratenana* · *fandraisana andraikitra* · "
@@ -116,7 +116,7 @@ LESONA_A1 = [
     ("note", "Ny tabilao an'ny PDF (6 kolona : FOMBA FIJERY · AMPIASAINA · INONA IZANY · INONA NO "
              "ENTINY · AHOANA NY FANATANTERAHANA AZY · …) dia tsy azo verifika teny-teny amin'ny "
              "fandrafetana ny lahatsoratra, ka ny lisitra ihany no aseho eto. Raha ilaina ny "
-             "fifandrian'ireo kolona dia jerena mivantana amin'ny FRP p.85-87."),
+             "fifandrian'ireo kolona dia jerena mivantana amin'ny FRP p.85-93."),
 ]
 
 # ------------------------------------------------------------------ A2
@@ -218,8 +218,9 @@ FICHES = [
                        "fanatanterahana ny adihevitra, tsoa-kevitra."}],
              ["FRP T6 éd. Oktobra 2026, p.23-180 : LOHAHEVITRA III…XIII (« support de cours » sy "
               "« tahirin-kevitra »).",
-              "FRP T6, p.84-87 : « FIASAN'NY TENY AO ANATIN'NY HODIDINA AHITANA FIMAROAN-TENY SY "
-              "FIMAROAN-KOLONTSAINA » + « IREO FOMBA FIJERY MIFANDRAIKA AMIN'NY FFLJ » + ny "
+              "FRP T6, p.74 : « FIASAN'NY TENY AO ANATIN'NY HODIDINA AHITANA FIMAROAN-TENY SY "
+              "FIMAROAN-KOLONTSAINA » (lohateny anisan'ny fizarana) ; **p.84-93** : « IREO FOMBA "
+              "FIJERY MIFANDRAIKA AMIN'NY FFLJ » + ny "
               "soso-kevitra roa (fampiatiana ireo kasingan'ny FFLJ amin'ny fandaharam-pianarana ; "
               "fanentanana sy fanofanana ny mpampianatra).",
               "Ny santionany azo ampiasaina amin'ireo lohahevitra ireo : *Iny Ankaratra iny*, "

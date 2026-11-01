@@ -239,7 +239,7 @@ LOHARANO_6 = [
     "(Famaritana · 2.1 foto-teny · 2.2 sampanteny + ny karazana 4).",
     "Lisitry ny mpamari-toetra (*tsara, mainty, makirana, kizitina, lalina, sariaka, mateza, mando, "
     "mjidina, hentitra, velona, malazo, tamana*) : teny-teny avy amin'ny FRP, p.80.",
-    "Ny fifandraisana amin'ny teny verindroa (*lavalava, menamena, lavidavitra*) : FRP p.78 (2.1) — "
+    "Ny fifandraisana amin'ny teny verindroa (*lavalava, menamena, lavidavitra*) : FRP p.78-79 (2.1) — "
     "tsy misy ao amin'ny lisitra 13 p.80 (jereo ny *note*).",
 ]
 

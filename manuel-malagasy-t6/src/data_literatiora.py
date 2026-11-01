@@ -219,7 +219,9 @@ LESONA_14 = [
                     "Ka mamoha alahelo."],
                    ["Iny Ankaratra iny lahy", "Raha atrehina atoandro,", "Mahavonto ny fanahy,",
                     "Sady mampihandrohandro"]]),
-    ("p", "Jean NARIVONY — FRP p.68 ; *Takelaka notsongaina I*, tak. 68. Loharano an-ty evelona : "
+    ("p", "Jean NARIVONY — santionany : FRP p.68 (LFK 2b) ; ny boky nahazoana azy dia voalaza "
+          "amin'ny p.65 : « *Takelaka notsongaina I* » (*Iny Ankaratra iny* - tak 68). "
+          "Loharano an-ty evelona : "
           "poetawebs.e-monsite.com/pages/fakafaka/page-39.htm (ny tononkalo feno = **andininy 6**)."),
     ("h2", "Santionany 2 — TAKARIVA"),
     ("tononkalo", [["Tazanina iry vodilanitra mavo,", "Zay hany tratry ny maso voafetra,",
