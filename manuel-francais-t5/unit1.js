@@ -4,6 +4,20 @@ const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, discBadge, img, imgFloat, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
+const relier = (left, right) => new Table({
+  width: { size: 8200, type: WidthType.DXA },
+  rows: [
+    new TableRow({ children: [
+      cell([pr([run("Colonne A", { bold: true, size: 24, color: C.GRAY })], { after: 10 })], { w: 4100, shade: "F5F5F5" }),
+      cell([pr([run("Colonne B", { bold: true, size: 24, color: C.GRAY })], { after: 10 })], { w: 4100, shade: "F5F5F5" }),
+    ] }),
+    ...left.map((l, i) => new TableRow({ children: [
+      cell([pr([run("•  " + l)], { after: 10 })], { w: 4100 }),
+      cell([pr([run("•  " + right[i])], { after: 10 })], { w: 4100 }),
+    ] })),
+  ],
+});
+
 const COLOR = "1E8449"; // vert environnement
 const SHADE = "D5F5E3";
 const TOTAL = 72;
@@ -144,6 +158,22 @@ function lessonS1() {
     sub("Exercice — j'ai bien écouté :"),
     p("1. Que veut dire « le reboisement » ? Et « une aire protégée » ?"),
     p("2. Redis le passage en deux phrases : ce que le feu a détruit, ce que le village a décidé.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Justifie.")], { after: 30 }),
+    p("a) Le texte entendu décrit une usine moderne.", { after: 20 }),
+    p("b) Le feu a détruit une partie de la forêt.", { after: 20 }),
+    p("c) Le village a décidé de replanter des arbres.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : il décrit la forêt du village. b) Vrai. c) Vrai : c'est le reboisement.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. QCM.", { bold: true, color: C.SALMON }), run(" Une « aire protégée », c'est :")], { after: 30 }),
+    p("a) un terrain de football", { after: 20 }),
+    p("b) un parc ou une réserve naturelle", { after: 20 }),
+    p("c) un champ de riz", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Réponse b) : un parc ou une réserve naturelle, où la nature est gardée en bon état.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Famille de mots.", { bold: true, color: C.SALMON }), run(" Complète : reboiser → le ……… ; protéger → la ……… ; planter → la ……… .")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("le reboisement ; la protection ; la plantation.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. J'écris.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Résume le passage entendu en deux phrases : ce que le feu a détruit, puis ce que le village a décidé.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Le feu de brousse a détruit une partie de la forêt. Alors, le village a décidé de reboiser la colline et de creuser des barrières de feux.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -226,6 +256,23 @@ function lessonS2() {
     sub("Exercice — je classe dans le bon panier :"),
     p("DANGER ou REMÈDE ? la déforestation — le reboisement — la pollution — l'aire protégée — les feux de brousse — la conservation."),
     pr([run("[souviens-toi : dé- détruit, -tion fabrique des noms d'action]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Chasse à l'intrus.", { bold: true, color: C.SALMON }), run(" Barre le mot qui n'est pas un danger :")], { after: 30 }),
+    pr([run("•  ", { bold: true, color: COLOR }), run("la pollution")], { after: 20 }),
+    pr([run("•  ", { bold: true, color: COLOR }), run("la déforestation")], { after: 20 }),
+    pr([run("•  ", { bold: true, color: COLOR }), run("la préservation")], { after: 20 }),
+    pr([run("•  ", { bold: true, color: COLOR }), run("les feux de brousse")], { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("La préservation : c'est un remède, pas un danger !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Relie chaque mot (A) à son sens (B).", { bold: true, color: C.SALMON })], { after: 30 }),
+    relier(["la déforestation", "le reboisement", "une aire protégée", "la pollution"],
+           ["on coupe les forêts", "planter de nouveaux arbres", "un parc, une réserve naturelle", "l'air et l'eau sont salis"]),
+    p("", { after: 40 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("déforestation → on coupe les forêts ; reboisement → planter ; aire protégée → parc, réserve ; pollution → l'air et l'eau salis.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. La fabrique des mots.", { bold: true, color: C.SALMON }), run(" Complète avec -tion : polluer → la ……… ; conserver → la ……… ; préserver → la ……… .")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("la pollution ; la conservation ; la préservation.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. J'écris.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Écris deux phrases : un danger qui menace ta région, puis le remède. Utilise « reboisement » ou « aire protégée ».", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Chaque année, les feux de brousse menacent nos collines. Grâce au reboisement, la forêt reprend des couleurs.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -301,6 +348,22 @@ function lessonS3() {
     sub("Exercice — je retrouve dans le texte :"),
     p("1. Un détail que l'on VOIT et un détail que l'on ENTEND."),
     p("2. La phrase qui donne l'idée principale du texte.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Justifie.")], { after: 30 }),
+    p("a) Le texte descriptif raconte des événements dans l'ordre du temps.", { after: 20 }),
+    p("b) On y trouve des adjectifs qualificatifs et des verbes d'état.", { after: 20 }),
+    p("c) La conclusion donne une impression générale.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : il décrit un lieu ou un phénomène ; raconter, c'est le texte narratif. b) Vrai. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Remets la description dans l'ordre.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("a) Quelle impression de paix se dégage de ce lieu !", { after: 20 }),
+    p("b) Le parc se trouve au nord du village.", { after: 20 }),
+    p("c) On y voit des lémuriens, des fougères géantes et un ruisseau clair.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("b → c → a : présentation du lieu, description des éléments, impression générale.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Relève les détails.", { bold: true, color: C.SALMON }), run(" Dans « La forêt fraîche s'étend derrière le village ; on entend le chant des oiseaux », trouve un détail que l'on VOIT et un détail que l'on ENTEND.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("On voit : la forêt fraîche qui s'étend. On entend : le chant des oiseaux.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. J'écris.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Décris ta salle de classe en trois phrases : la présentation, un détail précis, ton impression.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Notre salle de classe se trouve près de la cour. Au fond, le tableau noir brille sous la lumière. C'est un endroit que j'aime beaucoup.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -379,6 +442,22 @@ function lessonS4() {
     sub("Exercice — complète avec d'abord, ensuite, enfin :"),
     p("« ……… nous préparons les jeunes plants. ……… nous creusons les trous sur la colline. ……… nous arrosons chaque arbre. »"),
     pr([run("[un mot pour ouvrir, un pour continuer, un pour fermer : jamais deux fois le même]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Complète.", { bold: true, color: C.SALMON }), run(" Avec d'abord, ensuite, enfin :")], { after: 30 }),
+    p("a) ………, nous balayons la cour de l'école.", { after: 20 }),
+    p("b) ………, nous arrosons les jeunes plants.", { after: 20 }),
+    p("c) ………, nous rangeons les outils.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) D'abord, b) Ensuite, c) Enfin. Un mot pour ouvrir, un pour continuer, un pour fermer.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Chasse aux erreurs.", { bold: true, color: C.SALMON }), run(" Corrige les deux fautes : « Ensuite nous plantons les arbres. D'abord, nous arrosons. D'abord, nous chantons. »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Il manque la virgule après « Ensuite » ; et « D'abord » est répété : jamais deux fois le même mot de transition !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. QCM.", { bold: true, color: C.SALMON }), run(" Le mot de transition se place :")], { after: 30 }),
+    p("a) à la fin de la phrase", { after: 20 }),
+    p("b) en tête de phrase, suivi d'une virgule", { after: 20 }),
+    p("c) n'importe où, sans virgule", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Réponse b) : en tête de phrase, suivi d'une virgule.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. J'écris.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Raconte ta matinée en trois phrases avec d'abord, ensuite, enfin.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : D'abord, je me lave et je m'habille. Ensuite, je prends mon petit déjeuner. Enfin, je pars à l'école avec mon frère.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -454,6 +533,20 @@ function lessonS5() {
     p("• Ces deux outils enrichissent la description !"),
     sub("Exercice — complément du nom ou CC de lieu ?"),
     p("1. « la forêt du village » — 2. « Les lémuriens sautent dans les arbres. » — 3. « les maisons en terre rouge » — 4. « Derrière l'école, la colline est verte. »", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Classe.", { bold: true, color: C.SALMON }), run(" Complément du nom ou CC de lieu ?")], { after: 30 }),
+    p("a) le chant des oiseaux", { after: 20 }),
+    p("b) au bord du ruisseau", { after: 20 }),
+    p("c) les sentiers de terre brune", { after: 20 }),
+    p("d) derrière l'école", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Compléments du nom : a) et c) — ils précisent un nom. CC de lieu : b) et d) — ils répondent à la question « où ? ».", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Complète.", { bold: true, color: C.SALMON }), run(" Ajoute un complément du nom : la forêt ……… ; les maisons ……… ; le chant ……… .")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemples : la forêt du village ; les maisons en terre rouge ; le chant des oiseaux.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Trouve la question.", { bold: true, color: C.SALMON }), run(" « Les lémuriens sautent dans les arbres. » Quelle question poses-tu pour trouver le CC de lieu ?")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Où sautent les lémuriens ? → dans les arbres.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. J'écris.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Écris deux phrases sur ton village : une avec un complément du nom, une avec un CC de lieu.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : La rivière du village coule doucement. Au pied de la colline, les zébus se reposent.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -545,6 +638,23 @@ function lessonS6() {
     sub("Exercice — je chasse « il y a » :"),
     p("Remplace par un verbe plus précis : « Dans la forêt, il y a des lémuriens. » — « Au pied de la montagne, il y a le village. »"),
     pr([run("[sautent, jouent, se cachent… / s'étend, se blottit… : le verbe précis peint l'image]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Je chasse « il y a ».", { bold: true, color: C.SALMON }), run(" Remplace par un verbe plus précis :")], { after: 30 }),
+    p("a) Sur la colline, il y a des arbres.", { after: 20 }),
+    p("b) Près de la rivière, il y a des oiseaux.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemples : a) Sur la colline, les arbres se dressent fièrement. b) Près de la rivière, les oiseaux chantent.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Présent ou imparfait ?", { bold: true, color: C.SALMON }), run(" Explique ton choix :")], { after: 30 }),
+    p("a) Autrefois, la forêt couvrait toute la colline.", { after: 20 }),
+    p("b) Aujourd'hui, les jeunes arbres grandissent.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) imparfait : « autrefois » dit le passé. b) présent : « aujourd'hui » dit maintenant.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Relie le verbe (A) à sa nuance (B).", { bold: true, color: C.SALMON })], { after: 30 }),
+    relier(["voir", "regarder", "apercevoir", "se trouver"],
+           ["mes yeux reçoivent l'image", "j'observe avec attention", "je distingue à peine, au loin", "être situé quelque part"]),
+    p("", { after: 40 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("voir → recevoir l'image ; regarder → avec attention ; apercevoir → au loin ; se trouver → être situé.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. J'écris.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Décris ta maison en deux phrases : une avec « se trouve », une avec un verbe précis de ton choix.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Ma maison se trouve au bord du chemin. Derrière, un grand manguier étend ses branches.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -614,6 +724,22 @@ function lessonS7() {
     pr([run("au premier plan — au second plan — au fond — à gauche — à droite — au centre — au sommet — au pied", { bold: true, color: C.SALMON })]),
     sub("Exercice — à toi de jouer :"),
     p("Prépare la description de ta cour d'école en trois phrases : la vue d'ensemble, un détail précis, ton avis — puis dis-la à voix haute.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Remets l'exposé dans l'ordre.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("a) C'est un endroit magnifique à protéger !", { after: 20 }),
+    p("b) Voici la rizière de mon oncle.", { after: 20 }),
+    p("c) Au premier plan, l'eau brille ; au fond, la colline verdoie.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("b → c → a : je présente, je décris, je conclus.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("a) Pendant l'exposé, je lis mes notes mot à mot.", { after: 20 }),
+    p("b) Je regarde le public en parlant.", { after: 20 }),
+    p("c) Je peux demander l'avis de mes camarades.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : des mots clés seulement ! b) Vrai. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Complète pour situer.", { bold: true, color: C.SALMON }), run(" « Au premier ………, les fleurs ; au ………, la montagne bleue ; à ………, le vieux puits. »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Au premier plan ; au fond ; à gauche (ou à droite).", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Jeu de rôle.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Décris la cour de l'école à un camarade ; il te pose une question avec « où ? » ; réponds avec un CC de lieu.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Réponse libre. Vérifie : plan en trois étapes, mots pour situer, voix claire.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -683,6 +809,21 @@ function lessonS8() {
     p("• les verbes de description : on voit, on aperçoit, se trouve."),
     sub("Exercice — ton plan :"),
     p("Bâtis le plan d'une description de ton lieu préféré : trois idées dans l'ordre (vue d'ensemble → détails → avis), et un mot de transition prévu pour chacune.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Range dans le bon bloc.", { bold: true, color: C.SALMON }), run(" Introduction, développement ou conclusion ?")], { after: 30 }),
+    p("a) Protégeons ce coin de paradis !", { after: 20 }),
+    p("b) La cascade se trouve au nord du village.", { after: 20 }),
+    p("c) L'eau fraîche tombe sur les rochers noirs ; les fougères brillent.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Introduction : b). Développement : c). Conclusion : a).", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("a) On rédige tout le texte avant de faire le plan.", { after: 20 }),
+    p("b) Une partie du plan = un paragraphe du texte.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : d'abord les idées et le plan ! b) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Ma boîte à outils.", { bold: true, color: C.SALMON }), run(" Pour ton sujet, prépare : un complément du nom, un CC de lieu, un mot de transition.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : l'ombre des manguiers ; au bord de la rivière ; d'abord.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. J'écris.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Bâtis ton plan en trois lignes : vue d'ensemble → deux détails → ton avis.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : 1. Le lac derrière chez moi. 2. L'eau calme, les pirogues, les oiseaux blancs. 3. Un trésor à protéger de la pollution.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -753,6 +894,16 @@ function lessonS9() {
     sub("Exercice — améliore comme un écrivain :"),
     p("« il y a une foret elle est jolie » → corrige, ajoute un verbe précis et un adjectif : ………"),
     pr([run("[exemple : La forêt fraîche s'étend derrière le village.]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Chasse aux erreurs.", { bold: true, color: C.SALMON }), run(" « il y a une foret elle est jolie » — trouve trois problèmes.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("La majuscule manque ; « forêt » a perdu son accent ; « il y a » et « jolie » sont trop vagues. Exemple corrigé : La forêt fraîche s'étend derrière le village.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Enrichis la phrase.", { bold: true, color: C.SALMON }), run(" « Le parc est beau. » Ajoute un adjectif précis, un CC de lieu et un verbe de description.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Au cœur du village, le parc ombragé déploie ses grands arbres.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. La grille de relecture.", { bold: true, color: C.SALMON }), run(" Quelles cases coches-tu en relisant : « D'abord, on aperçoit la rivière du village. » ?")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Mot de transition + virgule ✓ ; verbe de description « apercevoir » ✓ ; complément du nom « du village » ✓.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. J'écris.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Rédige le premier jet de ton introduction : deux phrases qui présentent ton lieu.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Mon lieu préféré se trouve au pied de la colline. C'est un petit verger que mon grand-père a planté.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -823,6 +974,19 @@ function lessonS10() {
     p("• Fluidité (sans hésiter) + précision (tous les mots) + expressivité (la voix) = lecture réussie !"),
     sub("Exercice — prépare puis lis à voix haute :"),
     p("Marque / et // puis lis : « Derrière l'école, la colline est verte. Les enfants plantent, arrosent, chantent ! Qui protège la forêt ? »", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Place les pauses.", { bold: true, color: C.SALMON }), run(" Recopie et marque / (petite pause) et // (grande pause) : « Les enfants plantent, arrosent, chantent ! »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Les enfants plantent, / arrosent, / chantent ! //", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Relie le signe à son rôle.", { bold: true, color: C.SALMON })], { after: 30 }),
+    relier(["le point .", "la virgule ,", "le point d'interrogation ?", "le point d'exclamation !"],
+           ["grande pause, la voix descend", "petite pause dans la phrase", "la voix monte : on questionne", "la voix s'exclame : surprise, joie"]),
+    p("", { after: 40 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("point → grande pause ; virgule → petite pause ; ? → la voix monte ; ! → la voix s'exclame.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Chasse aux erreurs.", { bold: true, color: C.SALMON }), run(" « qui protège la forêt. » — corrige la ponctuation.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Qui protège la forêt ? — majuscule au début, point d'interrogation à la fin : c'est une question !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. À voix haute.", { bold: true, color: C.SALMON })], { after: 30 }),
+    p("Lis le paragraphe d'entraînement deux fois : d'abord lentement pour les mots, ensuite avec l'expression : la voix monte à la question, s'exclame au « ! ».", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Réponse libre. Vérifie : pauses marquées, pas d'hésitation, la voix vit.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
