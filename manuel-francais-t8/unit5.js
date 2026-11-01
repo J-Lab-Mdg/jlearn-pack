@@ -155,6 +155,7 @@ function lessonS49() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 49", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1wbzIgoilQDOijWBqD_OxvrPS2BiSdbVc/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UN RÉCIT DE FÊTE TRADITIONNELLE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_famadihana.png", 440, 0.5578),
@@ -254,6 +255,7 @@ function lessonS50() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 50", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1HyiOeS9BW_9s1Tao5AhjICYS-qnDKBdd/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES FÊTES ET LES RITES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_fete.png", 440, 0.5578),
@@ -350,6 +352,7 @@ function lessonS51() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 51", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1ZrooXoKkAcdWu5WreI-vyonHUbF-doS4/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("UN RÉCIT ET SA CONSTRUCTION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_cortege.png", 440, 0.5578),
@@ -449,6 +452,7 @@ function lessonS52() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 52", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1oSAx8d9IXjAt8z7PYQAjdRuY6fgaYhaI/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE SCHÉMA NARRATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_vodiondry.png", 440, 0.5578),
@@ -544,6 +548,7 @@ function lessonS53() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 53", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1EWb3JYgJcYacg_BM5lNH8vYXi9SHBy9F/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES INDICES DU TEXTE NARRATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u5_accordeon.png", 170, 0.5578),
@@ -638,6 +643,7 @@ function lessonS54() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 54", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/10a3gHTbYeNnvibBNioXJqshXODW5lmzV/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("PRÉSENT, IMPARFAIT, PASSÉ COMPOSÉ : LES TROIS GROUPES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u5_classe.png", 170, 0.5578),

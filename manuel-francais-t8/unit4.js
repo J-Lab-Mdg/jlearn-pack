@@ -830,6 +830,7 @@ function lessonS44() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 44", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1xvXdAEjin92BKkGyi2EO6hGU5tvZUtYE/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE REPORTAGE SUR UN ARTISAN : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u4_notes.png", 170, 0.5578),
@@ -919,6 +920,7 @@ function lessonS45() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 45", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1THTaZ3SszKeUmfd2tFPPUdjo8hW0zc7i/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Je rédige bloc par bloc"),
@@ -999,6 +1001,7 @@ function lessonS46() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 46", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/13_7QYYLp-VFBXwTHA9c-xZ0qH9HeEy7V/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN REPORTAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_rafidy.png", 440, 0.5578),
@@ -1109,6 +1112,7 @@ function revision() {
     pAns("R.A. : « Peux-tu me donner un exemple concret ? » ; « Si je comprends bien, tu veux dire que… »", ["exemple concret"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1wmJnc4iPrXc1KjNk-rM8lKys8JnbdLoT/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Derrière le marché, l'atelier du menuisier embaume le bois frais. D'abord, l'artisan choisit ses planches avec soin ; ensuite, il les scie et les assemble ; enfin, il ponce chaque meuble avec patience. Étant donné que tout se fait à la main, chaque objet est unique. Ce savoir-faire, c'est-à-dire l'habileté héritée des anciens, fait la fierté du quartier. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("derrière", { bold: true, color: C.SALMON, hl: true }), run(" [connecteur spatial, deux r], "), run("d'abord / ensuite / enfin", { bold: true, color: C.SALMON, hl: true }), run(" [la série complète], "), run("étant donné que", { bold: true, color: C.SALMON, hl: true }), run(" [en trois mots], "), run("savoir-faire", { bold: true, color: C.SALMON, hl: true }), run(" [avec le trait d'union].")], { after: 60 }),
   ];
