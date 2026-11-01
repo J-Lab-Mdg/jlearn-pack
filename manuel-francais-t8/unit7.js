@@ -160,6 +160,7 @@ function lessonS73() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 73", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1gaB_PG2Gt_I7mh4InJ78gjm8-dSZRu7E/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UNE NOTICE ORALE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_club.png", 440, 0.5578),
@@ -258,6 +259,7 @@ function lessonS74() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 74", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1qjA98aaBskcw3pkHp-pkqeel0IsBx5rw/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES MOTS DES NOUVELLES TECHNOLOGIES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. L'ordinateur et ses parties"),
@@ -356,6 +358,7 @@ function lessonS75() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 75", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1CHd-_7dLR_hzuw_mkyV35M_isrVcVHaj/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LA NOTICE TECHNIQUE ET LE DÉPLIANT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_lampe.png", 440, 0.5578),
@@ -450,6 +453,7 @@ function lessonS76() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 76", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1Xu1UnTFOFalKwB9r7qjrDiYgTYf84eQU/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE MODE INFINITIF ET LA PHRASE INFINITIVE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. L'infinitif, carte d'identité du verbe"),

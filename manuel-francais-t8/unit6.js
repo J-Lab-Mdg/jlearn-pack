@@ -641,6 +641,7 @@ function lessonS66() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 66", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1VN1FnV8ubByyqVjcb3hzvUrxvuahlGgL/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ANNONCE, EXPLICATION, ILLUSTRATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. La marche à trois temps"),
@@ -725,6 +726,7 @@ function lessonS67() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 67", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1CfpJbAgiVr4Q5coYa_6N9GRFai8NMWAJ/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("PRÉSENTER SA MUSIQUE PRÉFÉRÉE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u6_eleve.png", 170, 0.5578),
@@ -820,6 +822,7 @@ function lessonS68() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 68", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/14aRrei4RCt_Vqgl2F7XMG3AmJBuER_rY/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE TEXTE EXPLICATIF SUR UN INSTRUMENT : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Mon plan en quatre blocs"),
@@ -907,6 +910,7 @@ function lessonS69() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 69", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/17rSJL8_N-ynlc_SXsAZclDhKH6elTb6K/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Je rédige bloc par bloc"),
@@ -987,6 +991,7 @@ function lessonS70() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 70", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1sKlpKoWXywGcKytPBn8NEg51fdef6n32/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN TEXTE EXPLICATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_valiha.png", 440, 0.5578),
@@ -1097,6 +1102,7 @@ function revision() {
     pAns("R.A. : « est » et « c'est-à-dire » : La valiha est une cithare tubulaire, c'est-à-dire…", ["c'est-à-dire"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1rTmJlElkP0iCK-sbwJEE2NVN1ycZjHDc/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« La musique adoucit nos journées. Vu que ses rythmes sont entraînants, le salegy fait danser petits et grands. La valiha, par exemple, accompagne les grandes cérémonies de la vie ; ainsi, chaque événement possède sa mélodie. Bref, un peuple qui chante garde son cœur en bonne santé. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("adoucit", { bold: true, color: C.SALMON, hl: true }), run(" [présent de vérité générale, finale -it], "), run("entraînants", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec « rythmes », accent circonflexe], "), run("vu que / par exemple / ainsi / bref", { bold: true, color: C.SALMON, hl: true }), run(" [les articulateurs de l'unité], "), run("cérémonies", { bold: true, color: C.SALMON, hl: true }), run(" [les trois accents !].")], { after: 60 }),
   ];
