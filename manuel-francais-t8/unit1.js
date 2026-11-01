@@ -145,6 +145,7 @@ function lessonS1() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 1", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/17rTItsGaaOSkI8ViGFJ--QfVSbKthEDb/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER LES CONSIGNES D'UN GUIDE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_guide.png", 440, 0.5578),
@@ -241,6 +242,7 @@ function lessonS2() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 2", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1dAlblnLj75pwZxg44OG7pVet-dasyJsp/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES MOTS DU TOURISME", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_voyageurs.png", 440, 0.5578),
@@ -341,6 +343,7 @@ function lessonS3() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 3", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/11TJ-VK_9NQT50thiviayy2FqrB4XypJd/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE TEXTE INJONCTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_tsingy.png", 440, 0.5578),
@@ -438,6 +441,7 @@ function lessonS4() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 4", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1N6--TyZbEC5PHYBHs1cQ8yutW8gt2YK9/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("L'IMPÉRATIF PRÉSENT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u1_lemurien.png", 170, 0.5578),
@@ -537,6 +541,7 @@ function lessonS5() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 5", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1azA-FF7ywV29CsvMxUQ_jS5HUWB0CJHl/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES TROIS FAÇONS DE DONNER UNE CONSIGNE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_panneau.png", 440, 0.5578),
@@ -635,6 +640,7 @@ function lessonS6() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 6", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1P54yf5O3Mstep3jdODs8BaywqlG7crE4/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES ARTICULATEURS CHRONOLOGIQUES ET SPATIAUX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_isalo.png", 440, 0.5578),
@@ -723,6 +729,7 @@ function lessonS7() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 7", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1Z1nBDFsB-S9PO8zD2bxY1URA0su74QWd/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("JOUER LE GUIDE : CONSEILLER UN VISITEUR", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_classe.png", 440, 0.5578),
@@ -818,6 +825,7 @@ function lessonS8() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 8", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1x5jVEnfFDHZcRERh8afCM9OONtV5_4kr/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE RÈGLEMENT DE VISITE : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u1_gare.png", 170, 0.5578),
@@ -909,6 +917,7 @@ function lessonS9() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 9", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/17nFZKnxNsk2KvfG8qmvvh6B9C8zc0Hb0/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u1_ecriture.png", 170, 0.5578),
@@ -994,6 +1003,7 @@ function lessonS10() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 10", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1634x_VpfuzNi7lzSETJ-WXrwlbPxkVYf/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN TEXTE INJONCTIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Les trois clés de la lecture fluide"),
