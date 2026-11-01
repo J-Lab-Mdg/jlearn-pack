@@ -34,16 +34,23 @@ réapparition.
 | `atin'ny vato` | non relu | **`fitaterana ny vato`** | correction appliquée au thème 5 | TENY |
 | une liste de `sahanasa` que je n'ai pas lue dans le PE | le PE énumère ses propres listes par branche | recopier la sienne, ne pas la reconstituer | `refs/PE_T5_malagasy_p9-26.txt` |
 
-| `afohana` / `afohy` (au sens « faire cuire » puis « servir ») | passif et impératif **formés de ma main** sur `fandrahoana` ; tsy misy nilazaina toy izany | **`masaka`** (cuit), **`andrahoina`** / **`handroina`** (à faire cuire), **`Andrahoy`** (impératif lu) | dico EN-MG-FR (cook/cooked/boil) + « *Andrahoy aloha ny hena* », « *Andrahoina ny vary* » | TENY |
-| `mohanina` / `mahanina` | `mo-` napetrako teo anoloan'ny `hanina` : tsy misy toy izany | **`hanina`** — **`nohanina`** (lasa), **`hohanina`** (hoavy) ; ohatra mety : *ho hanina mafana* | didin'ny mpanabe, 01/11/2026 | FAKANA |
-| `vera roa`, `vera valo` (isa aorian'ny venty) | manaraka ny filaharan'ny frantsay aho ; ny malagasy dia **ny isa aloha vao ny venty** | **`roa vera`**, **`valo vera`** (toy ny hoe *roa arivo ariary*, *dimy kapoaka*) | didin'ny mpanabe, 01/11/2026 | FAKANA |
-| `sitranin'ny maro` (pour « ce que la plupart préfèrent ») | nobakaiana | **`no tena tiana`** | TENY |
-| `aroka` (jeter l'eau de lavage) | nobakaiana | **`elaelao`** — **mety** ihany, modely: « *Elaela kely vao tapohana rano kely* » | TENY |
-| `loaka` (la marmite) | tsy nangonina tam'ny loharano | **tsy atao anarana ny fitaovana** : *atao ao anaty rano*, *avelao eo amin'ny afo* | TENY |
-| `Ampiheno ny afo` (réduire le feu) | causatif nobakaiana avy amin'ny `hena` ; **mety** ihany, tsy voamarina | **mampanontany** | TENY |
-| `Fandraharanana` (titre pour « accompagnements ») | `miharatra` = utiliser, fa ny hevitra tinao lazaina dia ny laoka | **`Laoka`** / *Ny laoka amin'ny vary sosoa* | FAKANA |
-| `maty ny vary sosoa misy anana` | nanjary `maty` ny teny hoe « manasitrana » : diso tanteraka | **`sakafo manasitrana sy mamelona hery`** (teny-teny) | TENY |
-| `Mitoera foana izay mangotraka` + « ny loza dia ny rano mikendry eny ambony fatana » | nampifangaro tamin'ny ohabolana *Mitsaha-menimenina, toy ny vary sosoa voatondraka*, izay momba ny **menomenona** tsy ny loaka mitoaka | **`Mihazona maso`** (mety) + **`mitanika`** (déborder, voamarina) | FAKANA |
+| `afohana` / `afohy` (au sens « faire cuire », puis « servir ») | passif et impératif **formés de ma main** sur `fandrahoana` ; le mpanabe : « **`Afohy` = tsy fiteny** » | **`masaka`** (cuit), **`andrahoina`** / **`handroina`** (à faire cuire), **`Andrahoy`** (impératif lu) | dico EN-MG-FR (cook/cooked/boil) + « *Andrahoy aloha ny hena* » + **didin'ny mpanabe, 01/11/2026** | TENY |
+| `mohanina` / `mahanina` | `mo-` napetrako teo anoloan'ny `hanina` : tsy misy toy izany | **`hanina`** — **`nohanina`** (lasa), **`hohanina`** (hoavy) ; ohatra : *ho hanina mafana* | didin'ny mpanabe, 01/11/2026 | FAKANA |
+| `vera roa`, `vera valo` (isa aorian'ny **venty**) | manaraka ny filaharan'ny frantsay aho ; amin'ny miera sy ny vola dia **ny isa aloha vao ny venty** | **`roa vera`**, **`valo vera`** (toy ny hoe *roa arivo ariary*, *dimy kapoaka*) | didin'ny mpanabe, 01/11/2026 | FAKANA |
+| `roa mofo`, `telo trano` (isa alohan'ny **anarana**) | nampianaiko ny lalan'ny venty tamin'ny zavatra isa ihany koa | **anarana + isa** : *mofo telo*, *trano roa*, *zaza enina*, *vady maro*, *gana folo* | didin'ny mpanabe, 01/11/2026 — **roa lalana : venty → isa alina ; zavatra → anarana alina** | FAKANA |
+| `sitranin'ny maro` (pour « ce que la plupart préfèrent ») | nobakaiana | **`ankafizin'ny ankamaroan'ny olona`** | didin'ny mpanabe 01/11 + modèle lu, 5 pages : « mozika **ankafizin'** tanora » (Basesa), « zavamaniry **ankafizin'ny** mpamboly » | TENY |
+| `Asao ny vary, dia aroka ny rano` | **`aroka`** = diso fampiasa | **`Sasao ny vary, dia asio rano`** ; jeter l'eau de rinçage = **`Ario ny rano avy nanasana vary`** | didin'ny mpanabe, 01/11/2026 | TENY |
+| `loaka` (pour la louche / la marmite) — **FAKANA : mot licite, sens faux** : `loaka` = **lavaka** (trou) ; le mpanabe : « *loaka ny akanjoko ka mila tampenana na zairina* » | **marmite = `vilany`** → **`Arotsaka anaty vilany ny vary sy ny rano`** | mg.wikipedia : `loaka` = 21 pages (« *misy loaka kely* », Kipantsona) ; `vilany` = 52 pages + article **Vilany** ; didin'ny mpanabe | TENY |
+| `elaelao` (pour « égoutter ») | je l'avais marqué `mety` : c'était faux — **`tsy matoanteny ilay elaela`** (didin'ny mpanabe) : adverbe de temps ihany, 20 pages, toujours **après** le verbe | **`Andraso elaela`** ; `avelao elaela` = **mety** (modely : « *rehefa mijanona elaela* », Ronono) | didin'ny mpanabe + mg.wikipedia | TENY |
+| `Ampiheno ny afo` (réduire le feu) | causatif nobakaiana avy amin'ny `hena` | **`Alefaho ny afo`** (`malefaka` = moa ; « *malefaka ny toetaniny* », 144 pages) ; **`Ahenao`** koa, tenin'ny mpanabe | didin'ny mpanabe, 01/11/2026 | TENY |
+| `Fandraharanana` (titre pour « accompagnements ») | **tsy fiteny** (didin'ny mpanabe) ; `miharatra` = utiliser | **`Laoka`** | didin'ny mpanabe, 01/11/2026 | FAKANA |
+| `maty ny vary sosoa misy anana` | **tsy fiteny** (didin'ny mpanabe) | **`sakafo manasitrana sy mamelona hery`** (teny-teny voasoratra amin'ny loharano) | didin'ny mpanabe 01/11 + agir-avec-madagascar (over-blog) | TENY |
+| `Mitoera foana izay mangotraka` + « *ny loza dia ny rano mikendry* » | nampifangaro tamin'ny ohabolana « *Mitsaha-menimenina, toy ny vary sosoa voatondraka* », izay momba ny **menomenona** fa tsy ny vilany mitoaka ; ary `loza` = **malheur** | **`Jerijereo matetika, sao mandroatra`** — `mandroatra` = déborder, 5 pages (« *matetika **mandroatra** be ary maneno mafy* » ; « ***mandroatra ny vary**, haroina aminy indray* ») | didin'ny mpanabe 01/11 + mg.wikipedia (Voambolan'ny jeôgrafia, Alika, Afo) | FAKANA |
+| `Raha sisa ny vary` (les restes de riz) | tsy mazava : « raha sisa » = « s'il reste » | **`Ny ambim-bary`** (na *ny ambina vary*) — lu : « *ilay **ambim-bary** miraikitra amin'ny vilany* » | didin'ny mpanabe 01/11 + mg.wikipedia **Ranon'ampango** (1 page) | TENY |
+| `omeo ny sira` | roa ny objet, tsy mety toy izany | **`asio sira`** | didin'ny mpanabe, 01/11/2026 | FAKANA |
+| `atao ho hanina` / `ho hanina mafana` pour rendre « servir » | `hanina` = **manger**, fa tsy « servir » | **servir = `manome sakafo`** (7 pages : « *Manome sakafo be dia be ho an'ny olombelona ny ranomasina* », Ranomasina), **`mizara sakafo`**, **`mampisakafo`** (tsy hita tao amin'ny rakibolana) | didin'ny mpanabe, 01/11/2026 | TENY |
+| Ligne retirée : `fatana` (le réchaud) | je l'avais inscrite ici sans preuve : `fatana` **existe** (10 pages : « *Fatana mirehitra amin'ny alalan'ny etona* », Etona ; « *averina amin'ny fatana* », Mofo atody) | **licite** ; mais le texte préféré reste *avelao eo amin'ny afo*, lu dans les recettes | auto-reprise, 01/11/2026 — l'absence dans un dico ne prouve pas la faute | FAKANA |
+| `Mihazona maso` (surveiller) | marika **`mety`** ihany, tsy nangonina tam'ny loharano | lasa **`Jerijereo matetika, sao mandroatra`**, izay tenin'ny mpanabe | didin'ny mpanabe, 01/11/2026 | FAKANA |
 
 ## Ny didy ho ahy (ce que cette liste m'impose)
 
@@ -52,3 +59,11 @@ réapparition.
 3. Quand le propriétaire reprend une de mes phrases, la faute va ici **le même jour**, avec la preuve.
 4. Si un mot de cette liste revient dans un module de données, le build doit le dire :
    `./run.sh ../fianarana-malagasy/fikarohana.py --rouge`.
+5. **Filaharana ny isa** (didin'ny mpanabe, 01/11/2026) : amin'ny **venty** sy ny vola dia **isa alina vao
+   venty** (*roa vera*, *roa arivo ariary*) ; amin'ny **zavatra** dia **anarana alina vao isa** (*mofo telo*,
+   *trano roa*, *zaza enina*, *vady maro*, *gana folo*). Tsy misy lalana tokana hamonoana ireo roa.
+6. Misy isa-teny **tsy matoanteny** : `elaela` → `Andraso elaela`, fa tsy `*elaelao`. Raha tsy fantatro ny
+   fomba nahazoana azy (`Ahenao`), dia ampiasao araka izany nomena azy ihany, ary mitazona ny marika `mety`.
+7. Ny miera : **roa heny no rano noho ny vary** (1 : 4). Ireo isa sy fotoana (20 / 25-30 / 45 minitra) dia
+   **avy amin'ny loharano**, fa tsy didin'ny mpanabe : ampidiro ao anaty `LOHARANON-KEVITRA` ny fifanoheran'ny loharano.
+

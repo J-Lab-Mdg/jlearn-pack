@@ -56,6 +56,23 @@ ici de mémoire : si je ne peux pas écrire la colonne 3, la ligne n'existe pas.
 | `Androany isika dia hianatra lesona vaovao hoe : …` | annonce de la leçon | décision de projet, validée par le propriétaire | **voamarina** (convention) | formule d'ouverture, jamais modifiée |
 | `fandroana` (sens plein : la toilette, le bain du corps) | « Alohan'ny fandroana, manomana daka sy sabonina » ; ne désigne **pas** le lavage des mains | mg.wikipedia « Fandroana » (fandroan'andriana), « Alahamadibe » : « mandro avokoa ny vahoaka » | **voamarina** | emploi **légitime** : ne pas remplacer par `fanasana` quand il s'agit du corps entier |
 | `resena` (pour une personne qui parle) | — | vu dans mes brouillons ; le propriétaire l'a repris : miteny / itenenana | **diso** | voir `LISTE-ROUGE.md` |
+| `ankafizin'ny ankamaroan'ny olona` | ce que préfère le plus grand nombre | didin'ny mpanabe 01/11 + modèle lu (5 pages) : « *mozika **ankafizin'** tanora* » (Basesa), « *zavamaniry **ankafizin'ny** mpamboly* » (Mpanjakavavin'ny alina), « *toetra hajaina sy **ankafizin'ny** fiarahamonina* » (Firaisankina) | **voamarina** (modèle, 5 pages) | remplace `sitranin'ny maro` ; la forme complète n'a que 0 occurrence dans le corpus — c'est **le mpanabe** qui la donne |
+| `vilany` | la marmite, le pot profond | mg.wikipedia, article **Vilany** : « *Ny **vilany** dia kojakoja an-dakozia lalina … misy sarony hanakana ny fivoajan'ny eton-drano* » (52 pages) | **voamarina** | `loaka` (21 pages) = **lavaka**, jamais la marmite |
+| `ambim-bary` | le riz qui reste, attaché au fond | mg.wikipedia **Ranon'ampango** : « *ilay **ambim-bary** miraikitra amin'ny vilany* » (1 page) | **voamarina** (1 page) | pour « les restes de riz » ; ne pas écrire `raha sisa ny vary` |
+| `mandroatra` | déborder | 5 pages : « *noho ny rano mianjera mafy, dia matetika **mandroatra** be* » (Voambolan'ny jeôgrafia) ; fisoitra : « ***mandroatra ny vary**, haroina aminy indray* » (Alika, Afo) | **voamarina** | c'est le verbe de la consigne : *sao mandroatra* |
+| `Jerijereo matetika, sao mandroatra.` | Surveille souvent, de peur que ça déborde | didin'ny mpanabe, 01/11/2026 | **voamarina** (mpanabe) | remplace `Mitoera foana izay mangotraka` + `Mihazona maso` |
+| `malefaka` → `Alefaho ny afo` | doux, moa → réduis le feu | mg.wikipedia, 144 pages : « *malefaka ny toetaniny* » (Islandy), « *vatana malefaka lava* » (Kalamara) | **voamarina** (adjectif) ; l'impératif **mety** (modely), validé par le mpanabe | `Ampiheno ny afo` = diso ; `Afohy` = **tsy fiteny** |
+| `Sasao ny vary, dia asio rano` | Lave le riz, puis mets de l'eau | didin'ny mpanabe, 01/11/2026 (« *toy ny kobanina rano* ») | **voamarina** (mpanabe) | `Asao` pour « laver » = tsy ampy |
+| `Arotsaka anaty vilany ny vary sy ny rano` | On verse le riz et l'eau dans la marmite | didin'ny mpanabe 01/11 ; modèle lu dans le net : « *arotsaka ao rehefa voasasa* » (sosoa-anana) | **voamarina** | le récipient se nomme : `vilany` |
+| `Ario ny rano avy nanasana vary` | Jette l'eau de rinçage | didin'ny mpanabe, 01/11/2026 (`ario ny rano` = 0 page dans le corpus) | **voamarina** (mpanabe) / **tsy hita** (rakibolana) | ne jamais écrire `aroka` pour « jeter » |
+| `Andraso elaela` | Attends un moment | `elaela` adverbe, 20 pages : « *rehefa mijanona **elaela*** » (Ronono), « ***elaela** taoriana* » | **voamarina** | **`elaela` n'est pas un verbe** : jamais `elaelao` |
+| `asio sira` | mets du sel | didin'ny mpanabe, 01/11/2026 | **voamarina** | pas `omeo ny sira` |
+| `manome sakafo` | pourvoir de nourriture | 7 pages : « *Manome sakafo be dia be ho an'ny olombelona ny ranomasina* » (Ranomasina) ; « *…tambatsela manome sakafo azy* » (Angiospermae) | **voamarina** | un des trois verbes donnés par le mpanabe pour « servir » |
+| `mizara sakafo`, `mampisakafo` | partager le repas / donner à manger | didin'ny mpanabe 01/11 ; 0 occurrence dans le corpus | **mety** | ses trois verbes sont à l'infinitif : la forme impérative n'est pas vérifiée (`zaro` ? `zarao` ?) → je ne les employe pas tels quels |
+| `mofo telo`, `trano roa`, `zaza enina`, `vady maro`, `gana folo` | nom + nombre | didin'ny mpanabe, 01/11/2026 | **voamarina** (didy) | à ne pas confondre avec `roa vera` / `roa arivo ariary` (isa alina amin'ny venty sy ny vola) |
+| `fatana` | le réchaud, le fourneau | mg.wikipedia, 10 pages : « ***Fatana** mirehitra amin' ny alalan' ny etona* » (Etona) ; « *averina amin' ny **fatana*** » (Mofo atody) ; « *ho azon' ny tananao ankavanana … tahaka ny **fatana** misy afo mirehitra* » (Salamo faha-21) | **voamarina** | mot licite : j'avais eu tort de l'inscrire dans la liste rouge sans preuve |
+| `atody` | l'œuf (et la préparation d'œufs) | titre d'article mg.wikipedia **Mofo atody** (« *rehefa handrotsaka azy … dia averina amin' ny fatana* ») ; + didin'ny mpanabe : « *mofo telo* » | **voamarina** | le `atody` de mes `Laoka` appuie sur un titre d'article, pas sur ma mémoire |
+| `sao` + verbe | de peur que … (mise en garde) | **Mofo atody** : « ***Tandremana sao** may* » ; + le mpanabe : « ***Jerijereo matetika sao** mandroatra* » | **voamarina** | la tournure de la mise en garde dans une recette ; `sao mandroatra` = 0 page, mais le modèle est écrit **« Tandremana sao may »** |
 
 ## Ny fomba fanaovana (comment ajouter une ligne)
 
@@ -267,3 +284,23 @@ sarahavana amin'ny « manamafy hevitra » an'ny verindroa (1d).
   (« disperser, s'enfuir ») fa tsy « faire bouillir » → **`mangotraka`** (dico EN-MG-FR :
   *boiling → mangotraka*) sy **`mitanika`** (déborder).
   **Fanontaniny velona : (i) fehezanteny mety (ii) laoka (iii) mihazona ny rano (iv) « réduire le feu ».
+
+- *Valin'ny fanontaniana (11/01, 2 — lahatsoratra « Ny vary sosoa »)* : **namaly ny mpanabe**, ary
+  **voasolon-diny** ny fehezin-dresaka rehetra nangoniko teo. Isaky ny teny nomeny :
+  (1) **`ankafizin'ny ankamaroan'ny olona`** (« ce que la plupart préfèrent ») — voamarina amin'ny
+  rakibolana, 5 pages `ankafizin'ny`. (2) **`Sasao ny vary, dia asio rano`** (toy ny *kobanina rano*) :
+  `asao` + `aroka` = diso roa. (3) **`Andraso elaela`** : « **tsy matoanteny ilay `elaela`** » → ny
+  `elaelao` nangoniko teo dia matoanteny noforonina ; 20 pages amin'ny rakibolana, adverbe foana,
+  **après** ny matoanteny (« *rehefa mijanona elaela* », Ronono). (4) **`loaka` = lavaka** (trou :
+  « *loaka ny akanjoko ka mila tampenana na zairina* »), marmite = **`vilany`** (52 pages + article) →
+  **`Arotsaka anaty vilany ny vary sy ny rano`** ; **`Ampiheno` = tsy**, **`Ahenao` / `Alefaho`**
+  (`malefaka`, 144 pages), **`Afohy` = tsy fiteny**. (5) **`Fandraharanana`** sy
+  **`maty ny vary sosoa misy anana`** = **tsy fiteny** ; restes = **`Ny ambim-bary`** (1 page :
+  « *ilay ambim-bary miraikitra amin'ny vilany* », Ranon'ampango) ; ébullition à surveiller =
+  **`Jerijereo matetika, sao mandroatra`** (`mandroatra` = 5 pages, dont « *mandroatra ny vary,*
+  *haroina aminy indray* ») ; **`omeo ny sira` → `asio sira`** ; jeter l'eau de lavage =
+  **`Ario ny rano avy nanasana vary`** ; servir = **`manome sakafo` / `mizara sakafo` / `mampisakafo`**.
+  (6) **Filaharana ny isa**, lalana roa : **venty sy vola → isa alina** (*roa vera*, *roa arivo ariary*),
+  **zavatra → anarana alina** (*mofo telo*, *trano roa*, *zaza enina*, *vady maro*, *gana folo*).
+  **Vokany** : voasoratra indray ny lahatsoratra → `fianarana-malagasy/NY-VARY-SOSOA.md` ; 16 lignes diso voatahiry ao `LISTE-ROUGE.md` (+ 1 ligne retire : `fatana`, izay **licite** — 10 pages dans le corpus). **Tsy voalahatra intsony** : ny
+  fanontaniana efatra efa natao, satria voavaly avokoa.
