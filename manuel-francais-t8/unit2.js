@@ -1003,6 +1003,7 @@ function lessonS22() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 22", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1zz8pAO3BdOBOQUzDOXyINxGqrArt4QK1/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN RÉCIT DE MANIÈRE EXPRESSIVE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_grandsud.png", 440, 0.5578),
@@ -1113,6 +1114,7 @@ function revision() {
     pAns("R.A. : à encadrer les paroles exactes d'un personnage.", ["paroles"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1wP30e7gONqdvDYg5GPcCI2Jt6Wd24lCC/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« La veille du cyclone, le ciel était gris et la mer semblait calme. Pendant la nuit, le vent a arraché les toits et la rivière a inondé les rizières. Aussitôt, les familles se sont abritées à l'école. Le lendemain, tout le village a nettoyé les rues, car la solidarité est la plus forte des richesses. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("était", { bold: true, color: C.SALMON, hl: true }), run(" [imparfait du décor], "), run("a arraché", { bold: true, color: C.SALMON, hl: true }), run(" [passé composé de l'action], "), run("se sont abritées", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec « les familles »], "), run("la veille / le lendemain", { bold: true, color: C.SALMON, hl: true }), run(" [les indicateurs qui encadrent le récit].")], { after: 60 }),
   ];

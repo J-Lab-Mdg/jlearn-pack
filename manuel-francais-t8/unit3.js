@@ -155,6 +155,7 @@ function lessonS25() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 25", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/12cAxkWwom1IgwGXiBOkmU8DH4HL44Ukp/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UNE CHRONIQUE SUR LES ARTS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_chronique.png", 440, 0.5578),
@@ -249,6 +250,7 @@ function lessonS26() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 26", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1FpsBstB3PzgGmb3H3ztyiCu21okwwUvk/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES MOTS DES ARTS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_peintre.png", 440, 0.5578),
@@ -348,6 +350,7 @@ function lessonS27() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 27", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1HyoNJCoksFA5CP_OklB-wE4c6y3yQr6V/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE TEXTE EXPLICATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_sculpture.png", 440, 0.5578),
@@ -444,6 +447,7 @@ function lessonS28() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 28", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1_bNAZv3e-ADFXiuYpBqv2b0ofRywRrFo/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("DÉFINIR, ILLUSTRER, REFORMULER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u3_danse.png", 170, 0.5578),
@@ -539,6 +543,7 @@ function lessonS29() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 29", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1wm2cSqu1B9xd3jCK31wMrT-KSF6yrTVu/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE PRÉSENT DE VÉRITÉ GÉNÉRALE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_cinema.png", 440, 0.5578),
@@ -632,6 +637,7 @@ function lessonS30() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 30", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1FImP-RAvKBNA8L9Ae3EWJZVv0tV-bYnU/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES CONNECTEURS LOGIQUES DE L'EXPLICATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_architecture.png", 440, 0.5578),
@@ -719,6 +725,7 @@ function lessonS31() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 31", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/11goPodv7KT9yFgxThftVMBLAslcFVWXX/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("EXPLIQUER UN ART À LA CLASSE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_expose.png", 440, 0.5578),
@@ -811,6 +818,7 @@ function lessonS32() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 32", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1uDdxwf7SRSXt9U7Qjz60N1Yp-8s0uQz_/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE PARAGRAPHE EXPLICATIF : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u3_atelier.png", 170, 0.5578),
