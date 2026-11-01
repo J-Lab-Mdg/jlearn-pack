@@ -304,3 +304,51 @@ sarahavana amin'ny « manamafy hevitra » an'ny verindroa (1d).
   **zavatra → anarana alina** (*mofo telo*, *trano roa*, *zaza enina*, *vady maro*, *gana folo*).
   **Vokany** : voasoratra indray ny lahatsoratra → `fianarana-malagasy/NY-VARY-SOSOA.md` ; 16 lignes diso voatahiry ao `LISTE-ROUGE.md` (+ 1 ligne retire : `fatana`, izay **licite** — 10 pages dans le corpus). **Tsy voalahatra intsony** : ny
   fanontaniana efatra efa natao, satria voavaly avokoa.
+
+- *Fanamarinana (11/01, 3 — ny lalana vaovao momba ny isa : « anarana alina vao isa »)* : nodimbiasin'ny
+  mpanabe aho tamin'ny didiny (`mofo telo`, `trano roa`, `zaza enina`). Natao fikarohana amin'ny rakitra
+  **clos** roa (tsy novaina na inona na inona — mijery ihany aho) :
+  **T5** :
+
+    `T5 data_loha2.py` L354 = « **folo fehezanteny** »
+    `T5 data_loha2.py` L271 = « **roa teny** »
+    `T5 data_loha2.py` L465 = « **telo ampahany** »
+    `T5 data_loha3.py` L362/373/464 = « **folo fehezanteny** »
+    `T5 data_loha3.py` L314 = « **roa teny** »
+    `T5 data_loha3.py` L469 = « **telo ampahany** »
+    `T5 data_loha4.py` L376/387/480 = « **folo fehezanteny** »
+    `T5 data_loha4.py` L344 = « **iray teny** »
+    `T5 data_loha4.py` L280/281 = « **roa lahatsoratra** »
+    `T5 data_loha4.py` L344 = « **roa teny** »
+    `T5 data_loha4.py` L484 = « **telo ampahany** »
+    `T5 data_loha5.py` L381/393/485 = « **folo fehezanteny** »
+    `T5 data_tsipelina_s2.py` L109/176/182/238 = « **roa teny** »
+  **T6** :
+    `T6 data_fitsipika.py` L133 = « **roa karazana** »
+    `T6 data_fitsipika.py` L83 = « **roa ohatra** »
+    `T6 data_fitsipika2.py` L296 = « **efatra ôhatra** »
+    `T6 data_fitsipika2.py` L89 = « **roa ampahany** »
+    `T6 data_fitsipika2.py` L109 = « **roa teny** »
+    `T6 data_fitsipika2.py` L309 = « **roa ôhatra** »
+    `T6 data_literatiora.py` L337 = « **telo karazana** »
+    `T6 data_tsipelina_s1.py` L87/91/139/234 = « **roa teny** »
+    `T6 data_tsipelina_s2.py` L99/229 = « **roa teny** »
+    `T6 data_tsipelina_s3.py` L82/94 = « **roa teny** »
+  **Raha tsiambaratelo** :
+  (i) **roa filaharana miara-mipoitra ao amin'ny T5** — « *hanoratra lahatsoratra valo hatramin'ny folo
+  **fehezanteny*** » : `data_loha2.py` L354 · `data_loha3.py` L362, L373, L464 · `data_loha4.py` L376,
+  L387, L480 · `data_loha5.py` L381, L393, L485 = **10 toerana** (anaty `tj:` sy `consigne`) ;
+  « *fehezanteny valo ka hatramin'ny folo* » : `data_loha3.py` L469 · `data_loha4.py` L484 ·
+  `data_loha5.py` L489 = **4 toerana** (anaty `v:`, izay fanamarihana ny asa). Ny anarana (`fehezanteny`)
+  dia **mialoha** ny isa amin'ny fanamarihana, fa **manaraka** ny isa amin'ny consigne : ilay 10 toerana
+  no mifanohitra amin'ny didy vaovao. **T6 : 0 occurrence** amin'ireo roa endrika ireo.
+  (ii) ny isa **ambiny** (`8 fehezanteny`, `4 andalana`, `2 andininy`, `4 teny`, `2 sampanteny`) dia
+  **tsy voaresaka** : laharana sy isa voasoratra amin'ny chiffre, toy ny `2 kapoaka` — tsy mitovy
+  fiantraikany amin'ny soratra ihany koa, satria misy ao anaty consigne (`data_loha1.py` L326, L394-396,
+  L446-447 ; `data_fitsipika.py` L239, L361 ; `data_fitsipika2.py` L71, L259, L278 ; `data_literatiora.py`
+  L97, L241, L298-299, L467 ; `data_toro_lalana.py` L164).
+  (iii) **tsy azo mikasika** : « *roa lahy sy telo vavy* » (`T6 data_literatiora.py` L115) — feheza
+  voakopi **teny-teny** avy amin'ny loharano ; ary ny parenthèse « (roa teny) » / « (iray teny) »
+  (`data_loha4.py` L344, `data_tsipelina_s2.py` L176, L182, L238, `data_tsipelina_s3.py` L82), izay
+  mamaritra **isa-teny** ao anaty fandalinana fitsipika, fa tsy isa zavatra.
+  **Tsy misy ovana natao** na T5 na T6 : miandry ny « ia » avy aminy aho, araka ny didy maharitra.
