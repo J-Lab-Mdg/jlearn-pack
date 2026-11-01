@@ -1111,6 +1111,7 @@ function revision() {
     pAns("R.A. : À faire / À ne pas faire.", ["À faire"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1FAzXh_IxjtQkTlRx8-PyxeyJ5FZqpiX4/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Visiteurs, respectez la nature ! D'abord, restez sur les sentiers balisés. Ensuite, ne jetez aucun déchet dans le parc. Enfin, écoutez les conseils de votre guide : il faut protéger ce patrimoine unique pour les générations futures. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("respectez", { bold: true, color: C.SALMON, hl: true }), run(" [impératif avec vous → -ez], "), run("balisés", { bold: true, color: C.SALMON, hl: true }), run(" [s'accorde avec « les sentiers »], "), run("aucun", { bold: true, color: C.SALMON, hl: true }), run(" [ne… aucun : défense totale], "), run("générations futures", { bold: true, color: C.SALMON, hl: true }), run(" [pluriel : deux -s].")], { after: 60 }),
   ];

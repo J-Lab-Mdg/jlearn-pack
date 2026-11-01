@@ -158,6 +158,7 @@ function lessonS13() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 13", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1ebaF9Acjf-TJ3eqxL9BQG_x7diDp3ynw/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UN DIALOGUE SUR UNE CATASTROPHE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_dialogue.png", 440, 0.5578),
@@ -256,6 +257,7 @@ function lessonS14() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 14", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1anVdk27th_Sseq2--MgMz7jVEa6dTTYs/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES FLÉAUX NATURELS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_inondation.png", 440, 0.5578),
@@ -352,6 +354,7 @@ function lessonS15() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 15", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1RE6-NQaxrT0TMrf1GSXrlA5dvoIONP38/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE TEXTE NARRATIF", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_secheresse.png", 440, 0.5578),
@@ -451,6 +454,7 @@ function lessonS16() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 16", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1cgWjkBoCHKmfiUVtKtlj6aieQzHDdrDm/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("QUESTION TOTALE, QUESTION PARTIELLE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u2_radio.png", 170, 0.5578),
@@ -544,6 +548,7 @@ function lessonS17() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 17", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1qZEpUXjnYbiUnrpXRdrOK4kCi6RCU5ol/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES TEMPS DU RÉCIT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_abri.png", 440, 0.5578),
@@ -640,6 +645,7 @@ function lessonS18() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 18", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1W5PZaNn8ZDBBc4TfGwhZLULThSVfCggq/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES INDICATEURS DE TEMPS ET DE LIEU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_lendemain.png", 440, 0.5578),
@@ -733,6 +739,7 @@ function lessonS19() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 19", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1BzwsmESrUWeAH-iRKw2v0Koh8i9unMK2/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("INTERROGER UN TÉMOIN, RACONTER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_temoin.png", 440, 0.5578),
@@ -825,6 +832,7 @@ function lessonS20() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 20", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1diNqozbyUZl4ErnDrKmh6NdwRtH3yt0Q/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE RÉCIT D'UNE CATASTROPHE : LES IDÉES ET LE PLAN", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     imgFloat("u2_prevention.png", 170, 0.5578),
@@ -913,6 +921,7 @@ function lessonS21() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 21", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/146bVPOt8NrNzgpm7Lcw-DdlpxiAvNGZ4/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RÉDIGER, RELIRE, AMÉLIORER", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     sub("1. Je rédige case par case"),
