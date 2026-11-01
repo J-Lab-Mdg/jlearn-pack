@@ -220,7 +220,36 @@ function coverParagraph() {
   return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 0, after: 0 }, children: [new ImageRun({ type: 'png', data: fs.readFileSync(file), transformation: { width: 595, height: 842 } })] });
 }
 
+function modelTable(model) {
+  const widths = model.table_headers.map(() => Math.floor(9600 / model.table_headers.length));
+  const rows = [new TableRow({ children: model.table_headers.map(x => cell(x, { bold: true, fill: C.blue, color: C.white, size: 17 })) })];
+  model.table_rows.forEach(r => rows.push(new TableRow({ children: r.map(x => cell(x, { size: 17 })) })));
+  return table(rows, widths);
+}
+function modelLesson(lesson, data) {
+  const model = data.prototype_model;
+  const scenes = scenesFor(lesson);
+  const figure = figureFor(lesson);
+  const items = data.prototype_exercises;
+  const answers = data.prototype_corrections;
+  return [
+    page(), heading(`LEÇON — ${lesson.titre}`, 1, `lecon${lesson.id.replace(/[^A-Za-z0-9]/g, '')}`),
+    p([tr('Objectif : ', { bold: true, color: C.blue }), ...rich(lesson.objectif)], { fill: C.paleBlue }),
+    heading(model.table_title, 2), p(model.intro), modelTable(model),
+    heading('Exemples', 2), ...model.examples.map(x => bullet(x)),
+    heading('Règles à retenir', 2), ...model.rules.map(x => bullet(x)),
+    heading('ATTENTION', 2), p(model.attention, { fill: C.yellow }),
+    heading('Méthode', 2), ...model.method.map((x, i) => p(`${i + 1}. ${x}`)),
+    heading('Exemple expliqué', 2), p(model.distinction, { fill: C.paleGreen }),
+    ...scenes.flatMap((file, i) => [heading(i === 0 ? 'Situation de découverte' : 'Situation de manipulation', 2), imageParagraph(file, 'png', 470)]),
+    heading('Représentation mathématique', 2), figureParagraph(figure),
+    heading('Exercices progressifs', 2), p('Application directe, représentation, comparaison, justification, erreur à corriger, situation-problème et recherche.'), p(rich(exerciseText(items))),
+    heading('Corrigé détaillé', 2), p(rich(answerText(answers))),
+    p('Vérifie le calcul, la représentation, l’unité et la propriété utilisée.', { fill: C.yellow, italics: true })
+  ];
+}
 function learnerLesson(lesson, data) {
+  if (PROTOTYPE && data.prototype_model) return modelLesson(lesson, data);
   const aItems = exerciseBlock(data, false); const eItems = exerciseBlock(data, true);
   const figure = figureFor(lesson);
   const aAnswers = answersBlock(data, false); const eAnswers = answersBlock(data, true);
