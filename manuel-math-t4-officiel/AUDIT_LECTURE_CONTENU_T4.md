@@ -9,8 +9,8 @@
 
 | Point | Résultat |
 |---|---|
-| Leçons avec au moins 4 items Application | 29/57 |
-| Leçons avec au moins 4 items Évaluation | 29/57 |
+| Leçons avec au moins 4 items Application | 41/57 |
+| Leçons avec au moins 4 items Évaluation | 41/57 |
 | Leçons avec au moins 4 réponses Application source | 0/57 |
 | Leçons avec au moins 2 règles/points à retenir | 57/57 |
 
@@ -54,18 +54,18 @@
 | U3-L07 | 4 | 4 | 3 | Utiliser commutativité, compensation, double et éléments neutres |
 | U3-L08 | 4 | 4 | 3 | Trouver une valeur manquante dans une égalité |
 | U3-L09 | 4 | 4 | 3 | Consolidation et évaluation de l’unité Algèbre |
-| U4-L01 | 3 | 0 | 3 | Reconnaître les angles aigu, droit, obtus et plat |
-| U4-L02 | 3 | 0 | 3 | Mesurer et comparer des angles |
-| U4-L03 | 3 | 0 | 3 | Identifier et classer les triangles |
-| U4-L04 | 3 | 0 | 3 | Construire des triangles |
-| U4-L05 | 3 | 0 | 3 | Identifier et classer les quadrilatères |
-| U4-L06 | 3 | 0 | 3 | Construire des quadrilatères |
-| U4-L07 | 3 | 0 | 3 | Décrire et construire un cercle |
-| U4-L08 | 3 | 0 | 3 | Identifier les propriétés des solides |
-| U4-L09 | 3 | 0 | 3 | Construire des patrons et des objets en carton |
-| U4-L10 | 3 | 0 | 3 | Réaliser une translation simple |
-| U4-L11 | 3 | 0 | 3 | Réaliser une réflexion simple |
-| U4-L12 | 3 | 0 | 3 | Consolidation et évaluation de l’unité Géométrie |
+| U4-L01 | 4 | 4 | 3 | Reconnaître les angles aigu, droit, obtus et plat |
+| U4-L02 | 4 | 4 | 3 | Mesurer et comparer des angles |
+| U4-L03 | 4 | 4 | 3 | Identifier et classer les triangles |
+| U4-L04 | 4 | 4 | 3 | Construire des triangles |
+| U4-L05 | 4 | 4 | 3 | Identifier et classer les quadrilatères |
+| U4-L06 | 4 | 4 | 3 | Construire des quadrilatères |
+| U4-L07 | 4 | 4 | 3 | Décrire et construire un cercle |
+| U4-L08 | 4 | 4 | 3 | Identifier les propriétés des solides |
+| U4-L09 | 4 | 4 | 3 | Construire des patrons et des objets en carton |
+| U4-L10 | 4 | 4 | 3 | Réaliser une translation simple |
+| U4-L11 | 4 | 4 | 3 | Réaliser une réflexion simple |
+| U4-L12 | 4 | 4 | 3 | Consolidation et évaluation de l’unité Géométrie |
 | U5-L01 | 3 | 0 | 3 | Distinguer périmètre et surface |
 | U5-L02 | 3 | 0 | 3 | Mesurer une surface avec des unités carrées |
 | U5-L03 | 3 | 0 | 3 | Calculer l’aire du rectangle et du carré |
