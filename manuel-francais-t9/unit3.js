@@ -876,6 +876,7 @@ function lessonS33() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 33", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1yMTopDg6qpwfRUDf1mXztKEXxlIt6q9x/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON RÉCIT DE VOYAGE (2) : LE CARNET", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u3_ecrire.png", 440, 0.5578),
@@ -966,6 +967,7 @@ function lessonS34() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 34", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1SreOORk_eKBcFKHxHCBvujn8VZOUmRe2/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE COMME UN CONTEUR", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_lecture.png", 440, 0.5578),
@@ -1084,6 +1086,7 @@ function revision() {
     pAns("R.A. : la pause de suspense — un silence, puis la voix bondit.", ["suspense"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1u1uuHhAZXdHwPOZB8M-dnD_oRySa19xV/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Le train quitte Fianarantsoa au lever du jour. Il traverse dix-sept tunnels et des forêts épaisses. Soudain, la mer apparaît au bout de la vallée : notre voyage s'achève à Manakara. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("Fianarantsoa", { bold: true, color: C.SALMON, hl: true }), run(" [majuscule du lieu], "), run("dix-sept", { bold: true, color: C.SALMON, hl: true }), run(" [le trait d'union], "), run("épaisses", { bold: true, color: C.SALMON, hl: true }), run(" [féminin pluriel : deux s + es], "), run("s'achève", { bold: true, color: C.SALMON, hl: true }), run(" [accent grave + apostrophe].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 3 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
