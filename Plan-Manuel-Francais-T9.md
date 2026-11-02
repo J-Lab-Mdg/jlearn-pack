@@ -46,7 +46,7 @@ U1 `AF601A`/FAE5D3 (artisanat terre cuite) · U2 `1A5276`/D4E6F1 (pays bleu mond
 - [x] 12 annexes + page finale
 - [x] Images (71 : 10 par unité + carte des merveilles annexe 11)
 - [x] Audios (77 clips voice-01, fournées de 10) + dossier Drive T9 public + liens 🎧 + audio/README.md — 77/77 en ligne et liés ✓
-- [ ] Couverture coverbook (fournie par l'utilisateur)
+- [x] Couverture coverbook (fournie par l'utilisateur) — intégrée pleine page, compressée 358 Ko ✓
 - [x] Vérifs finales : « / 84 » = 84 ✓, 🎧 = 77 ✓, liens Drive = 77 ✓, Je m'entraîne = 70 (+2 avant-propos) ✓, LEÇON DU JOUR = 70 ✓, dictées = 7 ✓, rootKey = 0 ✓, س = 0 ✓, aucune trace GitHub/atelier ✓ — à refaire une dernière fois après l'insertion de la couverture
 
 ## Rappel retrofit T5 (EN PAUSE)
