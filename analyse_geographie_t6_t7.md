@@ -7,9 +7,10 @@
 ## 1. Conclusion exécutive
 
 - Le **manuel de Géographie T6** a été retrouvé exactement sous `origin/main:Geographie_T6_JLearn.docx`, à la racine du dépôt. Il s’agit bien d’un manuel complet et non d’un programme ou d’un FRP.
-- Aucun fichier correspondant à un **manuel de Géographie T7** n’est présent dans l’arbre de `origin/main` : ni `Geographie_T7_JLearn.docx`, ni `Manuel_Geographie_T7*.docx`, ni autre DOCX explicitement identifié T7.
-- Le dépôt contient bien les **références officielles T7** (`PE T7.pdf`, `PE_T7.docx`, `FRP_GEO_T7.pdf`), mais ces documents ne sont pas un manuel J-Learn T7.
-- `Manuel_Geographie_3e_VF_V1.docx` ne peut pas être retenu comme T7 : sa page de titre indique explicitement **Classe de 3ème** ; dans la nomenclature scolaire malgache, cela correspond à T9, pas à T7.
+- Le manuel T7 a finalement été retrouvé grâce au chemin fourni par l’utilisateur : `origin/arena/01a0d344-jlearn-pack:Nos manuels/Manuel_Geographie_T7_JLearn.docx`. Il était absent de `origin/main`, mais bien présent dans une branche de travail du dépôt.
+- Le T7 est un véritable manuel J-Learn : 80 numéros, 66 leçons, 7 révisions et 7 sujets d’examen corrigés.
+- Le dépôt contient également les **références officielles T7** (`PE T7.pdf`, `PE_T7.docx`, `FRP_GEO_T7.pdf`).
+- `Manuel_Geographie_3e_VF_V1.docx` ne doit pas être retenu comme T7 : sa page de titre indique explicitement **Classe de 3ème** ; dans la nomenclature scolaire malgache, cela correspond à T9, pas à T7.
 - Aucun manuel n’a été modifié. Le présent diagnostic est un livrable séparé.
 
 ## 2. Inventaire des fichiers retrouvés
@@ -17,6 +18,7 @@
 | Fichier | Emplacement / référence | Taille | Identification | Verdict |
 |---|---|---:|---|---|
 | `Geographie_T6_JLearn.docx` | `origin/main:/Geographie_T6_JLearn.docx` | 19 558 707 octets | Titre `GÉOGRAPHIE T6`; classe T6; 78 numéros | **Véritable manuel T6** |
+| `Manuel_Geographie_T7_JLearn.docx` | `origin/arena/01a0d344-jlearn-pack:/Nos manuels/Manuel_Geographie_T7_JLearn.docx` | 71 718 443 octets | `Manuel de Géographie T7`; 7 unités; 80 numéros | **Véritable manuel T7** |
 | `Manuel_Geographie_1ereACD_V1_FINAL.docx` | racine locale et `origin/main:/Manuel_Geographie_1ereACD_V1_FINAL.docx` | 22 520 772 octets | `Classes de 1ère A, C, D`; 5 unités; 23 séances | Manuel lycée, **pas T7** |
 | `Manuel_Geographie_3e_VF_V1.docx` | racine locale et `origin/main:/Manuel_Geographie_3e_VF_V1.docx` | 631 305 octets | `Classe de 3ème`; 18 séances | Manuel de 3ème/T9, **pas T7** |
 | `hg geo raps.docx` | racine locale et `origin/main:/hg geo raps.docx` | 56 751 octets | Planning annuel Histoire/Géographie, dates 2020–2021, objectifs et semaines | Document de travail/planification, **pas un manuel** |
@@ -29,6 +31,21 @@
 
 Le fichier T6 a été identifié dans le commit `b1d130df8c738044b6d412190872de435e22dbd9`, avec le blob `fcc064e4464a9776657e8d76f272df2b94d0673d`. Il n’est pas présent dans le checkout de la branche d’audit, mais son contenu a été lu directement par `git show origin/main:Geographie_T6_JLearn.docx`, sans le copier ni le modifier dans le dépôt de travail.
 
+### Version et emplacement du DOCX T7
+
+Le chemin fourni par l’utilisateur a été vérifié directement dans la branche `arena/01a0d344-jlearn-pack` :
+
+- chemin : `Nos manuels/Manuel_Geographie_T7_JLearn.docx` ;
+- commit de la dernière version observée : `fd635697baebbdade5e95f6df8ec9810b52b24a5` ;
+- blob : `09a3f2ff1bf306aa2e8b505d925d7e9725888dcd` ;
+- taille : 71 718 443 octets ;
+- propriété interne : `Manuel de Géographie T7 — J-Learn (édition complète protégée)` ;
+- révision Word : `1` ;
+- création/modification dans les propriétés OOXML : `2026-10-24T07:50:01.810Z` ;
+- dernier auteur indiqué : `Un-named`.
+
+Le fichier n’a pas été copié ni modifié dans la branche de la présente analyse ; il a été lu depuis la branche de travail indiquée dans l’URL brute.
+
 ### Version interne du DOCX T6
 
 Les propriétés OOXML indiquent :
@@ -40,22 +57,40 @@ Les propriétés OOXML indiquent :
 - création et dernière modification : `2026-10-30T06:08:00Z` ;
 - description : 78 numéros, 66 leçons, 6 révisions, 6 sujets d’examen et annexes.
 
-## 3. Pourquoi le T7 n’est pas un manuel
+## 3. Identification et nature du manuel T7
 
-La recherche de l’arbre complet de `origin/main` ne renvoie qu’un programme et un FRP pour la Géographie T7. Le DOCX `PE_T7.docx` contient la section officielle Géographie, mais pas une succession de fiches de préparation, leçons, exercices et corrigés formant un manuel J-Learn.
+Le fichier indiqué par l’utilisateur est bien présent dans le dépôt, mais pas dans `origin/main`. Il se trouve dans une branche de travail distincte :
 
-Le FRP T7 est un document d’accompagnement ministériel : il expose des ressources par thématique, des textes, des précis et des guides d’exploitation. Il ne comporte pas la structure éditoriale d’un manuel élève/enseignant complet.
+`origin/arena/01a0d344-jlearn-pack:/Nos manuels/Manuel_Geographie_T7_JLearn.docx`
 
-Le candidat le plus proche par matière, `Manuel_Geographie_3e_VF_V1.docx`, est explicitement hors niveau :
+Le contenu confirme qu’il s’agit d’un manuel complet :
 
-- page de titre : `Classe de 3ème` ;
-- avant-propos : programme de Géographie de 3ème ;
-- 18 séances ;
-- sujets et corrigés de fin d’ouvrage.
+- page d’authenticité et droits J-Learn ;
+- avant-propos destiné à la classe de T7 ;
+- mode d’emploi ;
+- table des matières interactive ;
+- 7 unités ;
+- 66 leçons de 60 minutes ;
+- 7 révisions et 7 examens corrigés ;
+- fiches de préparation, leçons, exercices, corrigés, glossaire, cartes muettes et sources.
 
-Le fichier `hg geo raps.docx` est encore d’une autre nature : son contenu est organisé en tableaux `Objectifs spécifiques / Référence dans le programme / Nombre de séance / Semaine / Mois`, avec des dates de l’année scolaire 2020–2021. Il ne contient ni leçons rédigées ni exercices corrigés.
+La conclusion précédente doit donc être rectifiée : **le manuel T7 n’est pas absent du dépôt ; il est absent de `origin/main` mais présent dans la branche `arena/01a0d344-jlearn-pack`.**
 
-**Conclusion documentaire : le manuel Géographie T7 est absent du dépôt audité.** Il ne faut pas rebaptiser le manuel de 3ème pour combler cette absence.
+Les trois autres candidats ne changent pas de statut : `Manuel_Geographie_3e_VF_V1.docx` est un manuel de 3ème/T9, `Manuel_Geographie_1ereACD_V1_FINAL.docx` concerne la 1ère A/C/D, et `hg geo raps.docx` est un planning annuel sans leçons ni corrigés.
+
+### Structure éditoriale du T7
+
+| Unité | Leçons | Révision | Examen | Durée officielle |
+|---|---:|---:|---:|---:|
+| 1. Initiation à l’étude de la Géographie | 1–6 | 7 | 8 | 6 h |
+| 2. La planète Terre | 9–18 | 19 | 20 | 10 h |
+| 3. Relief, climat, hydrographie et végétation | 21–32 | 33 | 34 | 12 h |
+| 4. Caractéristiques de la population mondiale | 35–42 | 43 | 44 | 8 h |
+| 5. Population face aux problèmes environnementaux | 45–56 | 57 | 58 | 12 h |
+| 6. Activités économiques de la population mondiale | 59–64 | 65 | 66 | 6 h |
+| 7. Gestion des ressources naturelles | 67–78 | 79 | 80 | 12 h |
+
+Les leçons totalisent `6 + 10 + 12 + 8 + 12 + 6 + 12 = 66 heures`, exactement comme le PE T7. Le manuel annonce correctement deux leçons de 60 minutes par semaine pour un volume officiel de deux heures hebdomadaires. Chaque leçon comprend quatre exercices notés sur 5 points, puis un corrigé détaillé ; chaque examen est noté sur 20 points.
 
 ## 4. Structure du manuel T6
 
@@ -199,32 +234,97 @@ Autres observations techniques :
 
 | Fichier | ZIP/XML | Médias | Navigation | Lecture du contenu |
 |---|---|---:|---|---|
+| `Nos manuels/Manuel_Geographie_T7_JLearn.docx` | valide, relations internes résolues | 125 médias, 142 références d’image | 94 signets et 94 liens internes, cibles résolues | Manuel T7, 80 numéros, 7 unités |
 | `Manuel_Geographie_1ereACD_V1_FINAL.docx` | valide, relations internes résolues | 15 médias, 16 références d’image | 31 signets/liens internes, cibles résolues | Manuel de 1ère A/C/D, 23 séances, 5 unités |
 | `Manuel_Geographie_3e_VF_V1.docx` | valide, relations internes résolues | 2 médias | aucun signet ni lien interne | Manuel de 3ème, 18 séances |
 | `hg geo raps.docx` | valide, relations internes résolues | 6 médias, dont certains réutilisés | aucun signet ni hyperlien | Planning Histoire/Géographie, 8 tableaux, pas de leçons/corrigés |
 
 Ces trois fichiers ne doivent pas être présentés comme un manuel T7.
 
-## 9. Référentiel T7 disponible pour une future comparaison
+## 9. Comparaison du manuel T7 avec le PE et le FRP officiels
 
-Le PE T7 et le FRP `FRP_GEO_T7.pdf` définissent sept thématiques, qui devront structurer l’audit d’un futur manuel T7 :
+Le PE T7 et le FRP `FRP_GEO_T7.pdf` définissent sept thématiques et un volume total de 66 heures. Le manuel T7 reprend exactement ces sept unités et leur ordre.
 
-1. **Initiation à l’étude de la Géographie** : 6 heures ;
-2. **La planète Terre** : 10 heures ;
-3. **Interrelation relief–climat–hydrographie–végétation** : 12 heures ;
-4. **Caractéristiques de la population mondiale** : 8 heures ;
-5. **Population face aux problèmes environnementaux** : 12 heures ;
-6. **Activités économiques de la population mondiale** : 6 heures ;
-7. **Gestion des ressources naturelles** : 12 heures.
+| Référence officielle T7 | Présence dans le manuel | Évaluation |
+|---|---|---|
+| Initiation à la Géographie : notion, documents, démarche, éléments d’un document | Séances 1–6 | Couverture explicite |
+| Planète Terre : Univers, système solaire, caractéristiques, composantes, structure interne, lignes imaginaires, coordonnées, rotation et révolution | Séances 9–18 | Couverture explicite |
+| Relief, climat, hydrographie, végétation et leurs interrelations | Séances 21–32 | Couverture explicite |
+| Population mondiale : répartition, facteurs et évolution | Séances 35–42 | Couverture explicite |
+| Population face aux problèmes environnementaux : dégradation, dérèglement climatique, causes, conséquences, adaptation | Séances 45–56 | Couverture explicite |
+| Activités économiques : secteurs, espaces économiques, mondialisation et interdépendances | Séances 59–64 | Couverture explicite |
+| Gestion des ressources : renouvelables/non renouvelables, épuisement, durabilité, gestion durable | Séances 67–78 | Couverture explicite, avec mini-projet |
 
-Le total annoncé est de 66 heures. Un manuel T7 authentique devra donc notamment contenir l’initiation à la démarche géographique, les documents et coordonnées géographiques, le système Terre, le relief, le climat, l’hydrographie, la population mondiale, les problèmes environnementaux, les secteurs économiques, la mondialisation et la gestion durable des ressources. Ces thèmes ne sont pas ceux du manuel T6 et ne peuvent pas être remplacés par une simple copie ou un changement de couverture.
+### Alignement pédagogique T7
+
+Le manuel reprend la démarche ODAS du programme — observation, description, analyse et synthèse — et la décline dans les fiches de préparation. Les documents visuels, textes, tableaux et graphiques sont traités dès l’unité 1. Les cartes et schémas d’activités des annexes prolongent la construction de repères et de représentations spatiales demandée par le PE.
+
+La progression est donc **fortement alignée sur le PE T7 et le FRP T7 sur le plan des thèmes, des durées et de la structure**. Les adaptations J-Learn sont identifiables : scènes locales, exercices, corrigés, schémas et mini-projet.
+
+### Incomplétudes éditoriales internes au T7
+
+Le manuel est substantiellement présent, mais certaines parties annoncées ne sont pas achevées :
+
+- la partie consolidée `LEÇONS` ne reprend que l’unité 1 ; le paragraphe final précise que le résumé des unités 2 à 7 « sera ajouté dans une prochaine étape » ;
+- le glossaire annonce `66 notions fondamentales des sept thématiques`, mais contient uniquement le glossaire de l’unité 1 ; les termes des unités 2 à 7 sont explicitement annoncés comme à ajouter ;
+- les cartes et schémas d’activités sont listés en 8 annexes et présents comme supports textuellement décrits, mais leur cohérence finale avec les 66 leçons doit être vérifiée lors du rendu PDF ;
+- la section des sources cite `FRP_7eme_2`, nom qui ne correspond pas au fichier retrouvé dans le dépôt (`PE RAPE/FRP_GEO_T7.pdf`) ; la référence doit être normalisée ;
+- la citation du PE indique les pages 150–167. Dans le PDF officiel retrouvé, la section Géographie commence à la page physique 151 (page imprimée 120) et les pages doivent être vérifiées avant publication.
+
+### Terminologie et relecture de langue
+
+La structure de niveau et de matière est cohérente : aucune occurrence de T6, T8, T9, 3ème, 1ère, Mathématiques ou Histoire comme discipline concurrente n’a été relevée. Les mentions de T5/T6 dans les sources renvoient aux manuels J-Learn antérieurs utilisés comme références de scènes.
+
+Des erreurs de formulation répétées doivent cependant être corrigées dans le gabarit des corrigés, notamment :
+
+- `dans l'étude de érosion` → `dans l'étude de l'érosion` ;
+- `Il s'agit de érosion` → `Il s'agit de l'érosion` ;
+- `dans l'étude de exploitation abusive` → `dans l'étude de l'exploitation abusive` ;
+- `Il s'agit de exploitation abusive` → `Il s'agit de l'exploitation abusive`.
+
+Les données scientifiques, les chiffres démographiques, les références aux saisons, au climat, aux migrations et aux ressources doivent également être relus avec des sources datées. Le FRP contient lui-même des ressources web hétérogènes ; le manuel ne doit pas transformer une formulation de ressource en donnée non datée présentée comme définitive.
+
+### Audit OOXML du DOCX T7
+
+Audit réalisé directement sur le fichier de la branche `arena/01a0d344-jlearn-pack` :
+
+| Contrôle | Résultat |
+|---|---:|
+| Test ZIP (`ZipFile.testzip`) | OK (`None`) |
+| Entrées de l’archive | 144 |
+| Relations OOXML totales | 142 |
+| Relations internes non résolues | 0 |
+| Relations externes | 2, toutes vers la page Facebook J-Learn |
+| XML et `.rels` parseables | 100 % |
+| Médias intégrés | 125 fichiers |
+| Références d’image | 142 objets, 124 relations distinctes ; plusieurs images sont réutilisées |
+| Formats images | 77 PNG + 48 JPEG |
+| Images décodables | 125/125 |
+| Signets début/fin | 94/94, aucun signet orphelin |
+| Signets nommés distincts | 94 |
+| Hyperliens internes | 94 |
+| Hyperliens internes vers une cible inexistante | 0 |
+| Hyperliens totaux dans `document.xml` | 95, dont 1 externe |
+| Sauts de page explicites | 162 |
+| Objets graphiques avec texte alternatif | 0 sur 142 |
+
+La table des matières du T7 est donc techniquement mieux complète que celle du T6 : ses 94 liens internes pointent vers des signets existants. L’archive et les relations sont valides. La faiblesse commune aux deux manuels est l’accessibilité : les objets `wp:docPr` n’ont ni `descr` ni `title`.
+
+Les propriétés étendues `docProps/app.xml` du T7 sont vides, contrairement à un DOCX Word entièrement recalculé. Le nombre de pages, de mots et de caractères devra être régénéré après la dernière mise en page et après l’ajout du glossaire et des résumés manquants.
+
+### Sources et droits
+
+La section `Sources` du T7 cite le PE, le FRP, les manuels GEO T5/T6 et un vocabulaire géographique général. Elle ne donne pas de crédit individuel aux médias intégrés. Les images doivent recevoir des crédits ou une mention de statut de création/adaptation, et leur réutilisation doit être vérifiée avant diffusion commerciale.
 
 ## 10. Recommandations sans modification des manuels
 
-1. Conserver le diagnostic suivant dans la fiche de production : **T6 disponible ; T7 manuel absent**.
+1. Corriger le diagnostic de localisation : **T6 est dans `origin/main` ; T7 est dans `arena/01a0d344-jlearn-pack/Nos manuels/`**.
 2. Ne pas renommer `Manuel_Geographie_3e_VF_V1.docx` en T7.
-3. Corriger les deux ancres internes manquantes du T6 avant toute nouvelle exportation PDF.
-4. Régénérer les propriétés Word et renseigner les textes alternatifs des images.
-5. Compléter les sources du T6 avec le FRP, les données chiffrées et les crédits des images.
-6. Vérifier les éléments administratifs sensibles : nombre de régions, chefs-lieux, superficies, districts, communes, statut du fokontany et formulation sur la limitation des naissances.
-7. Pour T7, rechercher un fichier fourni séparément ou lancer une production dédiée alignée sur les sept thématiques officielles ; ne pas utiliser le manuel T6 comme substitut.
+3. Pour T6, corriger les deux ancres internes manquantes (`autoevaluation`, `illustrations`) avant toute nouvelle exportation PDF.
+4. Pour T7, compléter la partie consolidée `LEÇONS` pour les unités 2 à 7.
+5. Compléter le glossaire T7 promis pour les sept unités.
+6. Normaliser les références sources (`FRP_7eme_2` vers `PE RAPE/FRP_GEO_T7.pdf`) et vérifier les pages citées du PE.
+7. Régénérer les propriétés Word et renseigner les textes alternatifs des images des deux manuels.
+8. Compléter les sources avec les données chiffrées, les cartes et les crédits des médias.
+9. Corriger les erreurs grammaticales récurrentes dans les corrigés T7 et effectuer une relecture scientifique finale.
+10. Ne modifier aucun manuel avant validation de ce diagnostic et de la liste des corrections prioritaires.
