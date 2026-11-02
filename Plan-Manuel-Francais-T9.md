@@ -41,7 +41,7 @@ U1 `AF601A`/FAE5D3 (artisanat terre cuite) · U2 `1A5276`/D4E6F1 (pays bleu mond
 - [x] Unité 4 — LA CORRUPTION (12 séances complètes, exercices corrigés, révision/dictée, test)
 - [x] Unité 5 — L'ALIMENTATION ET LA SANTÉ (12 séances complètes, exercices corrigés, révision/dictée, test)
 - [x] Unité 6 — LES MÉDIAS ET LES NTIC (12 séances complètes, exercices corrigés, révision/dictée, test)
-- [ ] Unité 7 — LES MÉTIERS ET LES PROFESSIONS
+- [x] Unité 7 — LES MÉTIERS ET LES PROFESSIONS
 - [ ] Révisions/dictées/tests ×7
 - [ ] 12 annexes
 - [ ] Images (~56, fournées de 10)
