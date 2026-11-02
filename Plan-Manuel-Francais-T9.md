@@ -34,8 +34,8 @@ Structures langagières transversales (PO) : « Peux-tu me donner un exemple con
 U1 `AF601A`/FAE5D3 (artisanat terre cuite) · U2 `1A5276`/D4E6F1 (pays bleu monde) · U3 `117864`/D0ECE7 (tourisme vert nature) · U4 `922B21`/F2D7D5 (corruption rouge alerte) · U5 `1E8449`/D5F5E3 (alimentation vert santé) · U6 `6C3483`/E8DAEF (médias violet numérique) · U7 `283747`/D6DBDF (métiers gris costume)
 
 ## Suivi
-- [ ] Scaffold `manuel-francais-t9/` (builders T8 copiés, build.js, avant-propos, page garde)
-- [ ] Unité 1 — L'ARTISANAT (fiches + leçons + exercices + corrigés)
+- [x] Scaffold `manuel-francais-t9/` (builders + build.js + sommaire 84 séances)
+- [x] Unité 1 — L'ARTISANAT (12 séances complètes, 40 exercices corrigés)
 - [ ] Unités 2–7
 - [ ] Révisions/dictées/tests ×7
 - [ ] 12 annexes
