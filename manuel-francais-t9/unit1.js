@@ -152,6 +152,7 @@ function lessonS1() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 1", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1xzodb1OM61-yNCy-I2rxVb-F5mK4DQb_/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UN REPORTAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_atelier.png", 440, 0.5578),
@@ -245,6 +246,7 @@ function lessonS2() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 2", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1tiB0HF1lqsrkvdVTXwPdE5CemOz5UuZx/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES MOTS DE L'ARTISANAT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_poterie.png", 440, 0.5578),
@@ -345,6 +347,7 @@ function lessonS3() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 3", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1rD50ybNLPRVBsW3xGR9Qs5w3E26xmFt3/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN REPORTAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_lamba.png", 440, 0.5578),
@@ -440,6 +443,7 @@ function lessonS4() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 4", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1oOhoRxUrn2ELhk7g9VNut5ChwrT9RrRM/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES CONNECTEURS SPATIAUX", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_atelier_plan.png", 440, 0.5578),
@@ -535,6 +539,7 @@ function lessonS5() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 5", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/13YRfnjjdV9uXIa4SD6IjqYwFR1XqwVuj/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE REPORTAGE : SA CARTE D'IDENTITÉ", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u1_reporter.png", 440, 0.5578),
@@ -632,6 +637,7 @@ function lessonS6() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 6", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1MMdaWFLmaXluQbGjMRlZW3yL7GiJxmWq/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("DEMANDER UNE PRÉCISION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u1_dialogue.png", 440, 0.5578),
@@ -725,6 +731,7 @@ function lessonS7() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 7", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/15ScRI1kI2QcVpgT9AkYo-r3M19x6YbBI/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("DÉBATTRE : L'AVENIR DE L'ARTISANAT", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u1_debat.png", 440, 0.5578),
@@ -817,6 +824,7 @@ function lessonS8() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 8", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1AefMpqVy9aU2Yz3ojk3e71wO8RfbIOg5/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON TEXTE EXPLICATIF (1) : LE PLAN", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u1_ecrire.png", 440, 0.5578),
@@ -908,6 +916,7 @@ function lessonS9() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 9", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1Qg7iVBtVQNwqH9YH4Ml4JYqAqF2YjLBZ/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON TEXTE EXPLICATIF (2) : RÉDIGER", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u1_redaction.png", 440, 0.5578),
@@ -998,6 +1007,7 @@ function lessonS10() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 10", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1R9JEIxGEe7TXMyt8fEJ-CtZS0V-xl6C7/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN REPORTAGE COMME À LA RADIO", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u1_lecture.png", 440, 0.5578),
