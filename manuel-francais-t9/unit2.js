@@ -152,6 +152,7 @@ function lessonS13() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 13", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/16t86isD7dvN8_AJGAmFYKrwDM66bEMNH/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UN GUIDE DE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_pyramides.png", 440, 0.5578),
@@ -242,6 +243,7 @@ function lessonS14() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 14", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("VOCABULAIRE (LEXIQUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1ENIobhh42NwytdIOmUztzijil6jeiayz/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES MOTS DES PAYS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_drapeaux.png", 440, 0.5578),
@@ -341,6 +343,7 @@ function lessonS15() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 15", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1Mhu2-5of_AXLd0grAT0g9l9AStwA6BGv/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES SEPT MERVEILLES DU MONDE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u2_merveilles.png", 440, 0.5578),
@@ -434,6 +437,7 @@ function lessonS16() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 16", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1DkwASfVJDeNk5n2V5q_G5OqSUd2YOey4/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES INDICATEURS CHRONOLOGIQUES", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u2_etapes.png", 440, 0.5578),
@@ -529,6 +533,7 @@ function lessonS17() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 17", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1AzHPdVnEmRU3dlHJ9T7j2DutSbSBFGlB/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE GUIDE DE VOYAGE : SA CARTE D'IDENTITÉ", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u2_guide_livre.png", 440, 0.5578),
@@ -624,6 +629,7 @@ function lessonS18() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 18", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("GRAMMAIRE (FONCTIONNEMENT DE LA LANGUE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/13LLx_rcm0DWO0WEkKE-n1PMWUivQ2dj0/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("PRÉSENTER UN PAYS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u2_presentation.png", 440, 0.5578),
@@ -714,6 +720,7 @@ function lessonS19() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 19", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1m2hMPOcKnLwlAxjxYKGg_jgpsq_B-E4d/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON EXPOSÉ : UNE MERVEILLE DU MONDE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u2_expose.png", 440, 0.5578),
@@ -807,6 +814,7 @@ function lessonS20() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 20", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1pTKuGjrcDiYXuNy8KG2qNxHQoI4ZAXE-/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON GUIDE DE VOYAGE (1) : LE PLAN", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u2_ecrire.png", 440, 0.5578),
@@ -898,6 +906,7 @@ function lessonS21() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 21", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1qlW4IJWAv3Hj5Ez08TXgp1PmjsyT48x6/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON GUIDE DE VOYAGE (2) : LE DÉPLIANT", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u2_depliant.png", 440, 0.5578),

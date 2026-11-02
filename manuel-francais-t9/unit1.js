@@ -1123,6 +1123,7 @@ function revision() {
     pAns("R.A. : elle change : je deviens le témoin qui parle.", ["change"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/18zi5_Fv3dEWuruaUtBgHdKi3U68h9s2J/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Dans son atelier, l'artisan façonne l'argile avec patience. Derrière lui, les jarres sèchent à l'ombre ; là-bas, près du four, les assiettes attendent la cuisson. Grâce à ce métier, tout le village vit de la poterie. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("façonne", { bold: true, color: C.SALMON, hl: true }), run(" [un seul n à façonne ? non : deux n ? regarde bien : f-a-ç-o-n-n-e, avec la cédille], "), run("derrière lui", { bold: true, color: C.SALMON, hl: true }), run(" [accent grave], "), run("près du four", { bold: true, color: C.SALMON, hl: true }), run(" [la contraction du], "), run("sèchent", { bold: true, color: C.SALMON, hl: true }), run(" [accent grave, -ent du pluriel].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 1 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
