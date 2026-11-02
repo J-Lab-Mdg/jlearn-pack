@@ -150,6 +150,7 @@ function lessonS25() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 25", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1uEhvN3Tj2y0hAFq4yBneqmucTZ977vAx/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UN RÉCIT DE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_tente.png", 440, 0.5578),
@@ -241,6 +242,7 @@ function lessonS26() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 26", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LEXIQUE (VOCABULAIRE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1kn8lJEBv7Z9VU9VS31YhjJ2WU5ORAf_y/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES MOTS DU TOURISME", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_mots_tourisme.png", 440, 0.5578),
@@ -334,6 +336,7 @@ function lessonS27() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 27", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1LEAqG7mS7u7FSqvPe9M1eC-lQLluOSv9/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN RÉCIT DE VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_train.png", 440, 0.5578),
@@ -422,6 +425,7 @@ function lessonS28() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 28", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1HEH8bGq9_S2SQNeI69Bn-ziSS1oNoHn-/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE SCHÉMA ACTANCIEL : LES 5 RÔLES", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u3_schema.png", 440, 0.5578),
@@ -509,6 +513,7 @@ function lessonS29() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 29", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1v3sYsGY_x6_33h3-Q2LDy5z2EpiDdzPU/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES VALEURS DU PRÉSENT", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_present.png", 440, 0.5578),
@@ -600,6 +605,7 @@ function lessonS30() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 30", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1BdpUoKibM2XKtjwAiu5_rspf7fkJy5oZ/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("JUXTAPOSÉE, COORDONNÉE, SUBORDONNÉE", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u3_connecteurs.png", 440, 0.5578),
@@ -690,6 +696,7 @@ function lessonS31() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 31", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1O_sh4aliLvuZRaYU9-c_x98NXI2udee1/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RACONTER SON VOYAGE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u3_raconter.png", 440, 0.5578),
@@ -777,6 +784,7 @@ function lessonS32() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 32", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1wrCpJXbowrKiLUMHGtwr4UP0F6nnOqRD/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON RÉCIT DE VOYAGE (1) : LE PLAN", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u3_plan.png", 440, 0.5578),

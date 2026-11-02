@@ -997,6 +997,7 @@ function lessonS22() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 22", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1Nw4QWZIqwH4NPr7glD5h9DfeKqUeBaM3/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE COMME UN GUIDE ENTHOUSIASTE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u2_lecture.png", 440, 0.5578),
@@ -1115,6 +1116,7 @@ function revision() {
     pAns("R.A. : elle rebondit à chaque élément de la liste et monte sur le !", ["monte"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1G5zEhRtWYZYjFkT-Gnx8Jek4_5chtIif/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« D'abord, le visiteur découvre la grande pyramide de Gizeh, la seule merveille encore debout. Ensuite, il navigue sur le Nil jusqu'aux temples anciens. Enfin, il goûte la cuisine égyptienne au bord du fleuve. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("D'abord", { bold: true, color: C.SALMON, hl: true }), run(" [apostrophe + virgule après], "), run("la seule merveille", { bold: true, color: C.SALMON, hl: true }), run(" [seule avec un e], "), run("jusqu'aux", { bold: true, color: C.SALMON, hl: true }), run(" [jusqu' + aux temples, pluriel], "), run("égyptienne", { bold: true, color: C.SALMON, hl: true }), run(" [deux n + accent aigu].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 2 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
