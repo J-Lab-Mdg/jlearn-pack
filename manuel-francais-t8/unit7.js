@@ -18,7 +18,7 @@ const bullet = (runs, o = {}) => pr(
 const mot = (word, expl) => bullet([
   run(word, { bold: true, color: C.SALMON, hl: true }), ...(expl ? [run("  —  " + expl)] : [])]);
 const exLine = (runs, note, o = {}) => pr([
-  run("–  ", { bold: true, color: COLOR }), ...runs,
+  run("–  ", { bold: true, color: COLOR }), ...runs.flat(),
   ...(note ? [run("   [" + note + "]", { italic: true, color: C.GRAY, size: 26 })] : []),
 ], { after: o.after != null ? o.after : 60 });
 const exTitre = () => pr([run("Exemples :", { italic: true })], { after: 50 });
