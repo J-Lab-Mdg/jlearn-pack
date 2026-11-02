@@ -38,7 +38,8 @@ U1 `AF601A`/FAE5D3 (artisanat terre cuite) · U2 `1A5276`/D4E6F1 (pays bleu mond
 - [x] Unité 1 — L'ARTISANAT (12 séances complètes, 40 exercices corrigés)
 - [x] Unité 2 — LES PAYS (12 séances complètes, exercices corrigés, révision/dictée, test)
 - [x] Unité 3 — LE TOURISME (12 séances complètes, exercices corrigés, révision/dictée, test)
-- [ ] Unités 4–7
+- [x] Unité 4 — LA CORRUPTION (12 séances complètes, exercices corrigés, révision/dictée, test)
+- [ ] Unités 5–7
 - [ ] Révisions/dictées/tests ×7
 - [ ] 12 annexes
 - [ ] Images (~56, fournées de 10)
