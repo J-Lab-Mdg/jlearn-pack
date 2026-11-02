@@ -154,6 +154,7 @@ function lessonS61() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 61", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1DydQE3cNP_j3TucZY6TxK4rfy6hgjL8P/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UN COMPTE RENDU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_reunion.png", 440, 0.5578),
@@ -247,6 +248,7 @@ function lessonS62() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 62", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LEXIQUE (VOCABULAIRE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/104xSOQbzFuXBi0mqX8oY3plLWebn8MTY/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MÉDIAS, TECHNOLOGIES, SÉCURITÉ", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u6_mots_medias.png", 440, 0.5578),
@@ -345,6 +347,7 @@ function lessonS63() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 63", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1i5r7QQCeu_rc88x2GrjcZalW6qWdCR1x/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN COMPTE RENDU", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_journee.png", 440, 0.5578),
@@ -435,6 +438,7 @@ function lessonS64() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 64", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/15zMvkkpFCXmM242njiv0qIeOQMB6klM9/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE « IL » IMPERSONNEL", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_impersonnel.png", 440, 0.5578),
@@ -528,6 +532,7 @@ function lessonS65() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 65", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1a6GP9U_rqbM-TF-DcoYjrG26zLX8g20o/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LA VOIX ACTIVE ET LA VOIX PASSIVE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u6_passif.png", 440, 0.5578),

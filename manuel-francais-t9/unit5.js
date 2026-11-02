@@ -707,6 +707,7 @@ function lessonS55() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 55", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1rAF41BW84sfpd4n1XaZoOBvVeSfHmKJc/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("CONVAINCRE : MON ASSIETTE ÉQUILIBRÉE", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u5_expose.png", 440, 0.5578),
@@ -792,6 +793,7 @@ function lessonS56() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 56", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/10rkba5rIXFoIVmQKmXYyeduEIUHiIo1V/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON ARTICLE DE NUTRITION (1) : LE PLAN", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u5_plan.png", 440, 0.5578),
@@ -883,6 +885,7 @@ function lessonS57() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 57", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1lYLDldQPwkzpDxGIQcMzVw-KtYeHbBDd/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON ARTICLE DE NUTRITION (2) : LA RÉDACTION", { bold: true, size: 32, color: COLOR })], { center: true, after: 140 }),
     img("u5_ecrire.png", 440, 0.5578),
@@ -973,6 +976,7 @@ function lessonS58() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 58", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1woyHq-Krz875HYW95JPLQwF3lJxETfMz/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE COMME UN CONSEILLER SANTÉ", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u5_lecture.png", 440, 0.5578),
@@ -1092,6 +1096,7 @@ function revision() {
     pAns("R.A. : on le détache syllabe par syllabe : QUIN-ZE morceaux !", ["détache"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1nsqgvcE_-4yPX4DC76ZQPizJiVRbeBNM/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Chaque matin, certains élèves partent à l'école le ventre vide. Pourtant, un bon petit-déjeuner donne de l'énergie pour toute la matinée. Mangeons du riz et des fruits, buvons de l'eau : notre santé commence dans l'assiette. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("certains", { bold: true, color: C.SALMON, hl: true }), run(" [pluriel en -s], "), run("petit-déjeuner", { bold: true, color: C.SALMON, hl: true }), run(" [le trait d'union], "), run("l'énergie", { bold: true, color: C.SALMON, hl: true }), run(" [é + gie], "), run("Mangeons", { bold: true, color: C.SALMON, hl: true }), run(" [le e après le g !], "), run("l'assiette", { bold: true, color: C.SALMON, hl: true }), run(" [deux s, deux t].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 5 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
