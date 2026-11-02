@@ -72,15 +72,19 @@ const cell = (children, o = {}) => new TableCell({
   shading: o.shade ? { type: ShadingType.CLEAR, fill: o.shade } : undefined,
   margins: { top: 60, bottom: 60, left: 100, right: 100 },
 });
-const img = (file, width, ratio) => new Paragraph({
+const img = (file, width, ratio) => {
+  if (!fs.existsSync(path.join(IMG_DIR, file))) return new Paragraph({ spacing: { after: 0 }, children: [] });
+  return new Paragraph({
   alignment: AlignmentType.CENTER, spacing: { after: 120 },
   children: [new ImageRun({
     data: fs.readFileSync(path.join(IMG_DIR, file)), type: "png",
     transformation: { width, height: Math.round(width * ratio) },
   })],
-});
+}); };
 // image flottante à droite, le texte s'enroule autour (mise en page moderne)
-const imgFloat = (file, width, ratio) => new Paragraph({
+const imgFloat = (file, width, ratio) => {
+  if (!fs.existsSync(path.join(IMG_DIR, file))) return new Paragraph({ spacing: { after: 0 }, children: [] });
+  return new Paragraph({
   spacing: { after: 0 },
   children: [new ImageRun({
     data: fs.readFileSync(path.join(IMG_DIR, file)), type: "png",
@@ -92,7 +96,7 @@ const imgFloat = (file, width, ratio) => new Paragraph({
       margins: { left: 114300, bottom: 114300 },
     },
   })],
-});
+}); };
 const pageBreak = () => new Paragraph({ children: [new PageBreak()] });
 
 // bookmark sur un titre (pour sommaire interactif)
