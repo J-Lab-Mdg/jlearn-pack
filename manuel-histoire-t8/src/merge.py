@@ -254,10 +254,11 @@ a.add_page_break(); head(a, 'ANNEXE 6 — ÉVALUATIONS')
 para(a, 'Sept sujets d’examen sur 20 points figurent à la fin des unités. Chaque sujet comporte cinq exercices avec corrigé détaillé et barème : questions de cours, frise ou repères chronologiques, étude de document et réflexion organisée, dans l’esprit des évaluations du collège.')
 
 a.add_page_break(); head(a, 'BIBLIOGRAPHIE ET WEBOGRAPHIE')
-para(a, 'Ministère de l’Éducation Nationale de Madagascar, Programme d’études — Classe de T8, section Histoire (PE T8).')
+para(a, 'Ministère de l’Éducation Nationale de Madagascar, PE_T8.docx, section Histoire, tableau des contenus, pp. 169–187.')
+para(a, 'Manuel-histoire-t8/PLAN.md, progression de référence : 7 unités et 24 séances de contenu.')
 para(a, 'Collection J-Learn, Manuel Tantara T8 (édition en langue malgache), J-Lab Madagascar, édition 2026.')
 para(a, 'Collection J-Learn, charte de conception des manuels scolaires, version 18.')
-para(a, 'Plateforme officielle des programmes éducatifs : plateforme.education.mg.')
+para(a, 'Les documents historiques adaptés sont référencés dans chaque encadré « Document à étudier » ; l’enseignant est invité à consulter les éditions complètes avant utilisation en classe.')
 
 annex_marks = {
     'ANNEXES — HISTOIRE T8': 'annexes', 'ANNEXE 1 — GLOSSAIRE': 'annexe1',
@@ -297,15 +298,15 @@ def hyperlink_paragraph(label, anchor, indent=False):
 
 def sentence(s, roman):
     if 'RÉVISION' in s:
-        return f'Révision de l’unité {roman}'
+        return f'Révision complémentaire de l’unité {roman}'
     if 'EXAMEN' in s:
-        return f'Sujet d’examen — unité {roman}'
+        return f'Sujet d’examen complémentaire — unité {roman}'
     return s.capitalize()
 
 
 body_el = master.element.body
 paras = list(master.paragraphs)
-toc_i = next(i for i, p in enumerate(paras) if p.text == 'SOMMAIRE INTERACTIF')
+toc_i = next(i for i, p in enumerate(paras) if p.text in ('SOMMAIRE', 'SOMMAIRE INTERACTIF'))
 insert_before = None
 for par in paras[toc_i + 1:]:
     if par._p.xpath('.//w:br[@w:type="page"]'):

@@ -121,7 +121,7 @@ function metaTable(s, i, total) {
         ['Thème : ', s.theme],
         ['Titre : ', s.t],
         ['Objectif spécifique : ', `À la fin de la séance, l’apprenant est capable de ${s.goal}.`],
-        ['Documentation : ', 'Programme d’études T8 (MEN) ; manuel J-Learn Histoire T8'],
+        ['Documentation : ', 'PE T8 (MEN), section Histoire, pp. 169–187 ; PLAN.md T8 ; documents historiques cités dans la séance'],
         ['Support et matériel : ', s.mat]
       ]),
       metaCell([
@@ -206,7 +206,7 @@ function seance(s, i, total, uNo, figBufs) {
 
 function revision(u) {
   const total = u.sessions.length + 2, i = u.sessions.length + 1;
-  return [page(), title(`SÉANCE ${i} / ${total} — RÉVISION DE L’UNITÉ ${u.roman}`, 1, `u${u.no}_l${i}`),
+  return [page(), title(`SÉANCE ${i} / ${total} — RÉVISION DE L’UNITÉ ${u.roman} — SÉANCE COMPLÉMENTAIRE`, 1, `u${u.no}_l${i}`),
     title('Tableau de synthèse', 2),
     table([
       new TableRow({ children: [cell('Notion', { bold: true, fill: C.blue, color: C.white }), cell('À savoir', { bold: true, fill: C.blue, color: C.white }), cell('À savoir faire', { bold: true, fill: C.blue, color: C.white })] }),
@@ -221,7 +221,7 @@ function revision(u) {
 function exam(u) {
   const total = u.sessions.length + 2, i = total;
   const pts = [4, 4, 4, 4, 4];
-  return [page(), title(`SÉANCE ${i} / ${total} — SUJET D’EXAMEN — UNITÉ ${u.roman}`, 1, `u${u.no}_l${i}`),
+  return [page(), title(`SÉANCE ${i} / ${total} — SUJET D’EXAMEN — UNITÉ ${u.roman} — SÉANCE COMPLÉMENTAIRE`, 1, `u${u.no}_l${i}`),
     p('Barème : 20 points. Rédige des réponses complètes, justifiées et bien organisées.'),
     ...u.exam.exos.map((e, k) => p(`Exercice ${k + 1} — ${pts[k]} points. ${e}`)),
     title('CORRIGÉ ET BARÈME', 2),
@@ -245,22 +245,30 @@ function frontMatter(u) {
     }));
     ch.push(page());
   }
-  ch.push(title('MANUEL D’HISTOIRE — CLASSE DE T8', 1, 'cover'),
-    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 250, after: 200 }, children: [tr('Collection J-Learn', { bold: true, size: 36, color: C.blue })] }),
-    new Paragraph({ alignment: AlignmentType.CENTER, children: [tr('Programme officiel malgache — Édition 2026', { size: 26 })] }),
+  ch.push(title('AUTHENTICITÉ ET DROITS', 1, 'authenticite'),
+    title('ATTENTION AUX REVENTES NON AUTORISÉES', 2),
+    p('Ce manuel « Histoire T8 » est une publication officielle J-Learn. Il est vendu exclusivement par la page Facebook officielle J-Learn indiquée ci-dessous.'),
+    p('Tout fichier proposé par un autre compte, une autre page ou un revendeur est une copie non autorisée. Avant tout achat, vérifiez le lien officiel.'),
+    p('Page officielle : https://web.facebook.com/profile.php?id=61575599505051', { align: AlignmentType.CENTER, color: C.blue }),
+    p('© 2026 J-Learn — Tous droits réservés. Toute revente, reproduction, modification ou diffusion intégrale ou partielle sans autorisation écrite de J-Learn est interdite.', { size: 20, italics: true }),
     page(),
     title('AVANT-PROPOS', 1, 'avant'),
     p('Ce manuel accompagne l’enseignant dans la mise en œuvre du programme officiel d’Histoire de la classe de T8 (quatrième). Il couvre les sept thématiques du programme en sept unités : l’Histoire orale, les Temps modernes, l’époque contemporaine, les royaumes malgaches du XVᵉ au XIXᵉ siècle, le Royaume de Madagascar (1810-1896), Madagascar colonie française, et les patrimoines culturels et historiques de Madagascar, à raison de 2 heures par semaine. Conformément au programme, il développe la pensée historique et la démarche historique : exploiter des sources primaires, situer les faits dans le temps et dans l’espace, analyser les causes et les conséquences, et interpréter les réalités sociales pour comprendre le passé, expliquer le présent et améliorer le futur.'),
     p('Chaque séance associe une fiche de préparation directement exploitable et une leçon conçue pour l’Histoire : un récit vivant qui raconte les faits dans l’ordre du temps, une étude de document pour exercer l’esprit critique, un encadré de repères (dates, personnages, vocabulaire), des frises chronologiques et des schémas exacts, des exercices et un corrigé détaillé. Les contenus mobilisent les repères de Madagascar et véhiculent les valeurs portées par le programme : curiosité et esprit critique, union nationale et patriotisme, savoir vivre ensemble, respect des biens communs et de l’environnement.'),
     title('MODE D’EMPLOI', 1, 'mode'),
     p('La fiche suit trois grandes étapes : I. Révision ; II. Nouvelle leçon, comprenant mise en situation, présentation, observation, analyse, synthèse et application ; III. Évaluation. Aucune durée chiffrée n’est affichée : l’enseignant adapte le rythme à sa classe (volume officiel : 2 heures par semaine).'),
+    p('Les 24 séances de contenu suivent le découpage du PE T8. Chaque unité ajoute une séance de révision et un sujet d’examen : ces 14 séances sont des séances complémentaires d’évaluation et ne remplacent pas les séances de contenu du PE.'),
     p('Organisation de la leçon : des parties numérotées aux titres tirés du programme (en vert), avec les mots-clés mis en évidence en bleu gras dans le texte ; un encadré « Document à étudier » (texte, questions et réponses) ; un encadré « Le savais-tu ? » sur fond bleu clair ; un « Petit lexique » en tableau ; puis les exercices et leurs corrigés en bordeaux.'),
-    title('SOMMAIRE INTERACTIF', 1, 'toc'),
+    title('SOURCES ET TRAÇABILITÉ', 1, 'sources_t8'),
+    p('Source normative : Ministère de l’Éducation Nationale de Madagascar, PE_T8.docx, section Histoire, tableau des contenus, pp. 169–187.'),
+    p('Source de progression : manuel-histoire-t8/PLAN.md, 7 unités et 24 séances de contenu. Les révisions et examens sont signalés comme complémentaires.'),
+    p('Les documents historiques sont indiqués par leur nature, leur auteur ou leur ouvrage dans chaque encadré « Document à étudier ». Les extraits sont adaptés à des fins pédagogiques et doivent être confrontés à la source complète par l’enseignant.'),
+    title('SOMMAIRE', 1, 'toc'),
     new Paragraph({ children: [new InternalHyperlink({ anchor: 'u1', children: [tr(`Unité I — ${u.name}`, { bold: true, color: C.blue })] })] }));
   u.sessions.forEach((s, i) => ch.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${i + 1}`, children: [tr(`Séance ${i + 1} — ${s.t}`, { color: C.blue })] })] })));
   const total = u.sessions.length + 2;
-  ch.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${total - 1}`, children: [tr(`Séance ${total - 1} — Révision de l’unité I`, { color: C.blue })] })] }),
-    new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${total}`, children: [tr(`Séance ${total} — Sujet d’examen`, { color: C.blue })] })] }));
+  ch.push(new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${total - 1}`, children: [tr(`Séance ${total - 1} — Révision complémentaire de l’unité I`, { color: C.blue })] })] }),
+    new Paragraph({ indent: { left: 360 }, children: [new InternalHyperlink({ anchor: `u1_l${total}`, children: [tr(`Séance ${total} — Sujet d’examen complémentaire`, { color: C.blue })] })] }));
   return ch;
 }
 
@@ -273,9 +281,10 @@ async function buildUnit(u, figBufs) {
     p(`Valeurs à véhiculer : ${u.valeurs}.`),
     title('Tableau de bord', 2),
     table([
-      new TableRow({ children: [cell('Séances', { bold: true, fill: C.blue, color: C.white }), cell('Apprentissages', { bold: true, fill: C.blue, color: C.white }), cell('Révision', { bold: true, fill: C.blue, color: C.white }), cell('Examen', { bold: true, fill: C.blue, color: C.white })] }),
-      new TableRow({ children: [cell(`${total}`), cell(`${u.sessions.length}`), cell('1'), cell('1')] })
-    ], [2400, 2400, 2400, 2400]));
+      new TableRow({ children: [cell('Contenu PE', { bold: true, fill: C.blue, color: C.white }), cell('Révision complémentaire', { bold: true, fill: C.blue, color: C.white }), cell('Examen complémentaire', { bold: true, fill: C.blue, color: C.white }), cell('Total affiché', { bold: true, fill: C.blue, color: C.white })] }),
+      new TableRow({ children: [cell(`${u.sessions.length} séances`), cell('1 séance'), cell('1 séance'), cell(`${total} séances`)] })
+    ], [2400, 2400, 2400, 2400]),
+    p(`Les ${u.sessions.length} séances de contenu suivent le PE T8. La révision et l’examen de l’unité sont ajoutés comme séances complémentaires d’évaluation.`, { italics: true, color: '666666', size: 19 }));
   u.sessions.forEach((s, i) => children.push(...seance(s, i + 1, total, u.no, figBufs)));
   children.push(...revision(u), ...exam(u));
 

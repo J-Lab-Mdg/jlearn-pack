@@ -243,7 +243,32 @@ Les séances de révision et les sujets d’examen sont présents et correctemen
 
 C’est cohérent avec leur fonction d’évaluation, mais le manuel devrait le signaler explicitement dans le mode d’emploi afin d’éviter de les confondre avec des séances ordinaires.
 
-## 5. Verdict d’audit T8
+## 5. Pass de correction appliqué
+
+Les quatre demandes de correction ont été appliquées au générateur T8 :
+
+1. couverture T8 conservée et front matter refait pour éviter le doublon de titre ;
+2. page `AUTHENTICITÉ ET DROITS` ajoutée avec la mention correcte `Histoire T8` ;
+3. révisions et examens renommés `séances complémentaires` dans le mode d’emploi, les tableaux de bord, les titres de séances et le sommaire ;
+4. sources renforcées avec `PE_T8.docx`, section Histoire, pages 169–187, `PLAN.md`, et une règle de traçabilité pour les documents historiques.
+
+Le fichier a ensuite été régénéré à partir des sept unités et réaudité :
+
+- 24 séances de contenu ;
+- 7 révisions complémentaires ;
+- 7 examens complémentaires ;
+- 1 page d’authenticité ;
+- 0 occurrence de `Géographie T4` ;
+- 49 médias intégrés ;
+- 58 signets et 106 liens internes ;
+- archive DOCX valide.
+
+Les deux points signalés précédemment mais non inclus dans cette passe restent ouverts :
+
+- ajouter la synthèse directement dans la partie élève de chaque leçon ;
+- agrandir les scènes et les figures.
+
+## 6. Verdict d’audit T8
 
 ### État structurel : ✅ conforme
 
