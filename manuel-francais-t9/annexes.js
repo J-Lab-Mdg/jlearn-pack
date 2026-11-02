@@ -483,7 +483,7 @@ function annex10() {
 // ============ ANNEXE 11 — La carte des merveilles : Madagascar et le monde ============
 function annex11() {
   const carte = fs.existsSync(path.join(__dirname, "img", "carte_merveilles.png"))
-    ? [img("carte_merveilles.png", 320, 1.4906)] : [];
+    ? [img("carte_merveilles.png", 300, 1.7911)] : [];
   return [
     ...annexTitle("annex11", 11, "LA CARTE DES MERVEILLES : MADAGASCAR ET LE MONDE"),
     p("Tout le manuel sur une seule image ! Retrouve les trésors rencontrés dans les sept unités — ceux de la Grande Île et ceux du monde.", { after: 80 }),
