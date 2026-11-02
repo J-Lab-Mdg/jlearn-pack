@@ -44,7 +44,7 @@ U1 `AF601A`/FAE5D3 (artisanat terre cuite) · U2 `1A5276`/D4E6F1 (pays bleu mond
 - [x] Unité 7 — LES MÉTIERS ET LES PROFESSIONS
 - [x] Révisions/dictées/tests ×7 (incluses dans chaque unité)
 - [x] 12 annexes + page finale
-- [ ] Images (~56, fournées de 10)
+- [x] Images (70 : 10 par unité, fournées de 10)
 - [ ] Audios (77 clips voice-01, fournées de 10) + dossier Drive T9 public + liens 🎧
 - [ ] Couverture coverbook (fournie par l'utilisateur)
 - [ ] Vérifs finales : « / 84 » = 84, 🎧 = 77, Je m'entraîne = 70, rootKey = 0 (leçon du bug T8 : toujours scanner !)
