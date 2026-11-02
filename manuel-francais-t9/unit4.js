@@ -154,6 +154,7 @@ function lessonS37() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 37", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/10qMuVa3ukftJwYxwN045mt_JX8sqSrw5/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UNE CHRONIQUE D'OPINION", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u4_radio.png", 440, 0.5578),
@@ -246,6 +247,7 @@ function lessonS38() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 38", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LEXIQUE (VOCABULAIRE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1N3ehK57dEWCcsKTZLEZ45KxX0qOUycrV/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES MOTS DE L'INTÉGRITÉ", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_mots_integrite.png", 440, 0.5578),
@@ -344,6 +346,7 @@ function lessonS39() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 39", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1sQcn46sk7AuJZ3G03hC9_Ef2gdAfizWp/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN ARTICLE D'OPINION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_journal.png", 440, 0.5578),
@@ -432,6 +435,7 @@ function lessonS40() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 40", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1q4R5ZHF1kTkfykhmjAlg2SWNoodTTZ_t/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LA CAUSE, LA CONSÉQUENCE, LE BUT", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u4_cause.png", 440, 0.5578),
@@ -522,6 +526,7 @@ function lessonS41() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 41", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1WeEyWxnclVWgDHt6Mt1ssV-qaa8ImLVN/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LA CONDITION ET L'OPPOSITION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_condition.png", 440, 0.5578),
@@ -608,6 +613,7 @@ function lessonS42() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 42", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1YhZf3P2sZG-I6lu-SgzaKeK7BEuPiX0O/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("SIX TEMPS ET MODES POUR ARGUMENTER", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u4_conjugaison.png", 440, 0.5578),
@@ -701,6 +707,7 @@ function lessonS43() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 43", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1zHPmIFPqdNoutjc-Ve427HdTSGrgvaoc/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE DÉBAT : ARGUMENTER SANS SE FÂCHER", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u4_debat.png", 440, 0.5578),
