@@ -796,6 +796,7 @@ function lessonS44() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 44", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1gD45toHiCM3Vrs6J3qg7iB1AtT2kfScx/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON ARTICLE D'OPINION (1) : LE PLAN", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u4_plan.png", 440, 0.5578),
@@ -888,6 +889,7 @@ function lessonS45() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 45", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1WS2WHEkH3657mkw5BHtJM_jRqHRkUWhZ/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON ARTICLE D'OPINION (2) : LA RÉDACTION", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u4_ecrire.png", 440, 0.5578),
@@ -978,6 +980,7 @@ function lessonS46() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 46", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/15IoYfaTOgdxuqczjphz1fhkuLB5EqsPI/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE AVEC CONVICTION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u4_lecture.png", 440, 0.5578),
@@ -1096,6 +1099,7 @@ function revision() {
     pAns("R.A. : plus fort et plus lent — c'est le sommet de l'article.", ["plus fort"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/18stwx5DIRuORmaIEoZco8-XTfqDKCvGp/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« La corruption ruine notre pays. Si chacun refuse le petit billet, les choses changeront. Il faut donc du courage : l'honnêteté commence par un simple mot, le mot non. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("ruine", { bold: true, color: C.SALMON, hl: true }), run(" [un seul n], "), run("Si chacun refuse", { bold: true, color: C.SALMON, hl: true }), run(" [présent après si !], "), run("changeront", { bold: true, color: C.SALMON, hl: true }), run(" [futur : -eront], "), run("l'honnêteté", { bold: true, color: C.SALMON, hl: true }), run(" [deux n + accent circonflexe].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 4 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),

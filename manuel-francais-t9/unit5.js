@@ -152,6 +152,7 @@ function lessonS49() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 49", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1TThsjhchWdv1uwF01DATX8XA4WueuQ9G/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UNE CHRONIQUE SANTÉ", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_radio.png", 440, 0.5578),
@@ -243,6 +244,7 @@ function lessonS50() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 50", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LEXIQUE (VOCABULAIRE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1mggRjP00km6C0uuPcXcpyJoc14Uqk0OF/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES NUTRIMENTS, TRAVAILLEURS INVISIBLES", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u5_nutriments.png", 440, 0.5578),
@@ -340,6 +342,7 @@ function lessonS51() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 51", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1Un3R-XsacnJyc25k8DCFJseLF0WLk04o/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE UN ARTICLE DE NUTRITION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_article.png", 440, 0.5578),
@@ -428,6 +431,7 @@ function lessonS52() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 52", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1kI2heXdmjjKEXb-VzvZrnnqp8GwsAODT/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES PRONOMS INDÉFINIS (1)", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_indefinis.png", 440, 0.5578),
@@ -518,6 +522,7 @@ function lessonS53() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 53", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1_TQMiM_3hYRTPLTnoN4_XSkU-xzP0BLo/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES PRONOMS INDÉFINIS (2)", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u5_quelquun.png", 440, 0.5578),
@@ -613,6 +618,7 @@ function lessonS54() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 54", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1U8iWeuMeQ8EjiVB2MDblLRzmjg-Nx1FF/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("L'ARGUMENTATION : LA MACHINE À CONVAINCRE", { bold: true, size: 32, color: COLOR })], { center: true, after: 140 }),
     img("u5_argument.png", 440, 0.5578),
