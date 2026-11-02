@@ -152,6 +152,7 @@ function lessonS73() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 73", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/18VANJ6CFLeCLwomjUecg3eGtFvZXyG7c/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("ÉCOUTER UNE OFFRE D'EMPLOI", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_radio.png", 440, 0.5578),
@@ -242,6 +243,7 @@ function lessonS74() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 74", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LEXIQUE (VOCABULAIRE)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1NJ_iL8w44pQ1HC7v2mf7_LBZf31NXJ2f/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MÉTIERS, QUALITÉS, COMPÉTENCES", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u7_mots_metiers.png", 440, 0.5578),
@@ -341,6 +343,7 @@ function lessonS75() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 75", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("COMPRÉHENSION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/17fR6lnlsFf-qUdyTwMpC_vJY-3HpSlZ2/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("OFFRE, CV, LETTRE DE MOTIVATION", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u7_documents.png", 440, 0.5578),
@@ -427,6 +430,7 @@ function lessonS76() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 76", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/15DeNzgQjqNtCBVHxFLiqVfY7ze7vlDiO/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES VERBES DU 3e GROUPE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_conjugaison.png", 440, 0.5578),

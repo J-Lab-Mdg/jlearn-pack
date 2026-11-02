@@ -624,6 +624,7 @@ function lessonS66() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 66", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1ZwPXtiFUcfwjb6wiZP7_aUMNc8trM7vN/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RAPPORTER AVEC NEUTRALITÉ", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_balance.png", 440, 0.5578),
@@ -711,6 +712,7 @@ function lessonS67() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 67", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1S3XRrmNPq8rFZC1An4akUaK6Lt_u7LFP/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("RENDRE COMPTE EN UNE MINUTE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u6_rendrecompte.png", 440, 0.5578),
@@ -795,6 +797,7 @@ function lessonS68() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 68", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1uH2xrEp15mdjvJvddv8L26u-zQ6K785w/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON COMPTE RENDU (1) : LE PLAN", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u6_plan.png", 440, 0.5578),
@@ -890,6 +893,7 @@ function lessonS69() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 69", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/18ySu745d3AFqF6STv0eRZnpRtFBwWz-4/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("MON COMPTE RENDU (2) : LA RÉDACTION", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u6_ecrire.png", 440, 0.5578),
@@ -980,6 +984,7 @@ function lessonS70() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 70", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1f1rPmToor9BtWk34TkDBTTwjoQ1IpTaQ/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE COMME UN SECRÉTAIRE DE SÉANCE", { bold: true, size: 34, color: COLOR })], { center: true, after: 140 }),
     img("u6_lecture.png", 440, 0.5578),
@@ -1100,6 +1105,7 @@ function revision() {
     pAns("R.A. : déclarer, annoncer (expliquer) ; marqué : prétendre (avouer, oser dire).", ["prétendre"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/19yAhrckxWP1Lo8CI_1RwHDPvAyvZs2XX/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« La réunion a commencé à neuf heures. Il s'agissait de la sécurité en ligne. Plusieurs règles ont été adoptées : un mot de passe secret et des sources vérifiées. La séance a été levée à dix heures. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("Il s'agissait", { bold: true, color: C.SALMON, hl: true }), run(" [deux s + ait], "), run("ont été adoptées", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec les règles : -ées], "), run("vérifiées", { bold: true, color: C.SALMON, hl: true }), run(" [féminin pluriel], "), run("a été levée", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec la séance : -ée].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 6 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
