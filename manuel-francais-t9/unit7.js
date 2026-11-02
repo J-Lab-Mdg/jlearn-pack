@@ -522,6 +522,7 @@ function lessonS77() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 77", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1qoKz7RujNUUXFGfIDSHGcNDtQfjHDgNa/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LE PARTICIPE PASSÉ AVEC AVOIR", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u7_accord.png", 440, 0.5578),
@@ -615,6 +616,7 @@ function lessonS78() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 78", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("FONCTIONNEMENT DE LA LANGUE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1vomsRhnJ5PqC5OErUrQvZTxeo2RY9TQ6/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LES PRONOMS POSSESSIFS", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_possessifs.png", 440, 0.5578),
@@ -704,6 +706,7 @@ function lessonS79() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 79", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ORALE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1wPcc07tb7UyZIzMxSQTeh3J-ZDpfDCq3/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("L'ENTRETIEN D'EMBAUCHE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_entretien.png", 440, 0.5578),
@@ -794,6 +797,7 @@ function lessonS80() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 80", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/16qzux85xMPU9VyYOhaWDsX4kR1ej43xe/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("JE RÉDIGE MON CV D'ÉLÈVE", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
     img("u7_cv.png", 440, 0.5578),
@@ -883,6 +887,7 @@ function lessonS81() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 81", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("PRODUCTION ÉCRITE", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/13aGJ3-mN543LpBtPKhvlwjPCq62kuMHk/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("JE RÉDIGE MA LETTRE DE MOTIVATION", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u7_lettre.png", 440, 0.5578),
@@ -971,6 +976,7 @@ function lessonS82() {
   return [
     p([run("LEÇON DU JOUR — SÉANCE 82", { bold: true, color: COLOR, size: 28 })], { center: true, after: 60 }),
     discBadge("LECTURE FLUIDITÉ", COLOR),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/10cWkbDWb-WkE021yOS5lD8CTX1CzDSao/view", { color: "1F618D", size: 22 })], { after: 120 }),
     p("", { after: 40 }),
     p([run("LIRE SA LETTRE D'UNE VOIX ASSURÉE", { bold: true, size: 36, color: COLOR })], { center: true, after: 140 }),
     img("u7_lecture.png", 440, 0.5578),
@@ -1088,6 +1094,7 @@ function revision() {
     pAns("R.A. : l'entrée (saluer, se présenter), les questions (réponses prouvées), la sortie (une question, remercier).", ["sortie"]),
     p("", { after: 80 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1DkIPYMat5in4C2LGPKAFSMK18v94rAl0/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Monsieur, j'ai lu votre annonce avec attention. La formation que j'ai suivie m'a appris la patience et le travail soigné. Je serai ponctuel et je prendrai soin de votre atelier. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("que j'ai suivie", { bold: true, color: C.SALMON, hl: true }), run(" [accord avec la formation : le COD est avant !], "), run("m'a appris", { bold: true, color: C.SALMON, hl: true }), run(" [participe court, COD après : invariable], "), run("je serai", { bold: true, color: C.SALMON, hl: true }), run(" [futur de être : -ai], "), run("je prendrai", { bold: true, color: C.SALMON, hl: true }), run(" [futur de prendre : -rai].")], { after: 80 }),
     pr([run("Demain : le TEST de l'unité 7 — relis ta grande leçon récapitulative !", { bold: true, color: C.RED })]),
