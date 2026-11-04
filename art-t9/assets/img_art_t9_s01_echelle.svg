@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360">
+  <rect width="1100" height="360" fill="#ffffff"/>
+  <text x="550" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#1F4E79">Les nuances (valeurs) : du noir au blanc</text>
+  <g>
+    <rect x="70"  y="90" width="160" height="120" fill="#000000" stroke="#333" stroke-width="1"/>
+    <rect x="230" y="90" width="160" height="120" fill="#3a3a3a" stroke="#333" stroke-width="1"/>
+    <rect x="390" y="90" width="160" height="120" fill="#7a7a7a" stroke="#333" stroke-width="1"/>
+    <rect x="550" y="90" width="160" height="120" fill="#b5b5b5" stroke="#333" stroke-width="1"/>
+    <rect x="710" y="90" width="160" height="120" fill="#e2e2e2" stroke="#333" stroke-width="1"/>
+    <rect x="870" y="90" width="160" height="120" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  </g>
+  <g font-family="Georgia, serif" font-size="21" fill="#000" text-anchor="middle">
+    <text x="150" y="245">Noir</text>
+    <text x="310" y="245">Gris foncé</text>
+    <text x="470" y="245">Gris moyen</text>
+    <text x="630" y="245">Gris clair</text>
+    <text x="790" y="245">Gris très clair</text>
+    <text x="950" y="245">Blanc</text>
+  </g>
+  <text x="550" y="305" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-style="italic" fill="#333">Plus on ajoute de gris entre le noir et le blanc, plus l'objet paraît « rond » : c'est le volume.</text>
+  <line x1="90" y1="330" x2="1010" y2="330" stroke="#C00000" stroke-width="3"/>
+  <polygon points="1010,330 990,322 990,338" fill="#C00000"/>
+  <text x="90" y="352" font-family="Georgia, serif" font-size="17" fill="#C00000">Ombre</text>
+  <text x="1010" y="352" text-anchor="end" font-family="Georgia, serif" font-size="17" fill="#C00000">Lumière</text>
+</svg>

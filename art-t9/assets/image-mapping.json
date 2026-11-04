@@ -1,0 +1,12 @@
+{
+  "manuels": "Arts T9 — Collection J-Learn",
+  "seance_01": {
+    "titre": "Dessin à partir d’un objet — Les nuances (noir, blanc, gris)",
+    "images": [
+      { "id": "img_art_t9_s01_objet", "fichier": "img_art_t9_s01_objet_1100.png", "role": "scène / photo d’observation", "ou": "haut de la page LEÇON" },
+      { "id": "img_art_t9_s01_volume", "fichier": "img_art_t9_s01_volume.png", "role": "graphique / schéma lumière-ombre", "ou": "LEÇON section 2" },
+      { "id": "img_art_t9_s01_echelle", "fichier": "img_art_t9_s01_echelle.png", "role": "graphique / échelle de nuances", "ou": "LEÇON section 3" },
+      { "id": "img_art_t9_s01_exemple", "fichier": "img_art_t9_s01_exemple_1100.png", "role": "exemple de production attendue", "ou": "CORRIGÉ" }
+    ]
+  }
+}
