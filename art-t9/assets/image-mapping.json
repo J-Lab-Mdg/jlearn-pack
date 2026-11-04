@@ -6,6 +6,12 @@
       { "id": "img_art_t9_s01_objet", "fichier": "img_art_t9_s01_objet_1100.png", "role": "scène / photo d’observation", "ou": "haut de la page LEÇON" },
       { "id": "img_art_t9_s01_volume", "fichier": "img_art_t9_s01_volume.png", "role": "graphique / schéma lumière-ombre", "ou": "LEÇON section 2" },
       { "id": "img_art_t9_s01_echelle", "fichier": "img_art_t9_s01_echelle.png", "role": "graphique / échelle de nuances", "ou": "LEÇON section 3" },
+      { "id": "pasapas_s01_et1_ok", "fichier": "pasapas_s01_et1_ok_1100.jpg", "role": "pas-à-pas / étape 1 / ✓ OK", "ou": "LEÇON section 4, étape 1" },
+      { "id": "pasapas_s01_et2_ok", "fichier": "pasapas_s01_et2_ok_1100.jpg", "role": "pas-à-pas / étape 2 / ✓ OK", "ou": "LEÇON section 4, étape 2" },
+      { "id": "pasapas_s01_et3_ok", "fichier": "pasapas_s01_et3_ok_1100.jpg", "role": "pas-à-pas / étape 3 / ✓ OK", "ou": "LEÇON section 4, étape 3" },
+      { "id": "pasapas_s01_et3_pasok", "fichier": "pasapas_s01_et3_pasok_1100.jpg", "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION", "ou": "LEÇON section 4, étape 3" },
+      { "id": "pasapas_s01_et4_ok", "fichier": "pasapas_s01_et4_ok_1100.jpg", "role": "pas-à-pas / étape 4 / ✓ OK", "ou": "LEÇON section 4, étape 4" },
+      { "id": "pasapas_s01_et4_pasok", "fichier": "pasapas_s01_et4_pasok_1100.jpg", "role": "pas-à-pas / étape 4 / ✗ PAS OK / ATTENTION", "ou": "LEÇON section 4, étape 4" },
       { "id": "img_art_t9_s01_exemple", "fichier": "img_art_t9_s01_exemple_1100.png", "role": "exemple de production attendue", "ou": "CORRIGÉ" }
     ]
   }

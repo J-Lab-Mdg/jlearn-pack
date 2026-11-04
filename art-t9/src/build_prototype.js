@@ -68,13 +68,43 @@ function img(file, w) {
     "img_art_t9_s01_echelle.png": [1100, 360],
     "img_art_t9_s01_volume.png": [1100, 620],
     "img_art_t9_s01_exemple_1100.png": [1100, 733],
+    "pasapas_s01_et1_ok_1100.jpg": [1100, 1100],
+    "pasapas_s01_et2_ok_1100.jpg": [1100, 1100],
+    "pasapas_s01_et3_ok_1100.jpg": [1100, 1100],
+    "pasapas_s01_et3_pasok_1100.jpg": [1100, 1100],
+    "pasapas_s01_et4_ok_1100.jpg": [1100, 733],
+    "pasapas_s01_et4_pasok_1100.jpg": [1100, 1100],
   }[file];
   const h = Math.round(w * dims[1] / dims[0]);
+  const type = file.toLowerCase().endsWith(".jpg") ? "jpg" : "png";
   return new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60, before: 60 },
-    children: [new ImageRun({ type: "png", data: fs.readFileSync(path.join(ASSETS, file)),
+    children: [new ImageRun({ type, data: fs.readFileSync(path.join(ASSETS, file)),
       transformation: { width: w, height: h } })] });
 }
 function caption(text) { return p(text, { align: AlignmentType.CENTER, italics: true, size: 17, color: "555555", after: 140 }); }
+function okOnly(file, cap) {
+  return [
+    p("✓ OK — résultat attendu", { bold: true, color: GREEN, size: 19, align: AlignmentType.CENTER, after: 60 }),
+    img(file, 300),
+    caption(cap),
+  ];
+}
+function okVsPasOk(okFile, okCap, badFile, badCap) {
+  return new Table({
+    borders: thinBorders(), width: { size: 10200, type: WidthType.DXA },
+    columnWidths: [5100, 5100], layout: "fixed",
+    rows: [new TableRow({ children: [
+      cell([
+        p("✓ OK — résultat attendu", { bold: true, color: GREEN, size: 19, align: AlignmentType.CENTER, after: 60 }),
+        img(okFile, 250), caption(okCap),
+      ], { width: 5100, shading: "F0FFF0" }),
+      cell([
+        p("✗ PAS OK — ATTENTION !", { bold: true, color: RED, size: 19, align: AlignmentType.CENTER, after: 60 }),
+        img(badFile, 250), caption(badCap),
+      ], { width: 5100, shading: "FFF0F0" }),
+    ] })],
+  });
+}
 function bookmark(id, text, o = {}) {
   return new Paragraph({ spacing: { after: o.after ?? 120, before: o.before ?? 0 }, alignment: o.align,
     children: [new Bookmark({ id, children: [run(text, { size: o.size ?? 26, bold: true, color: o.color ?? BLACK })] })] });
@@ -250,12 +280,23 @@ function lecon() {
     pLesson("Les nuances, aussi appelées valeurs, sont les différents degrés de gris entre le noir et le blanc : noir, gris foncé, gris moyen, gris clair, gris très clair, blanc. Plus on place de nuances différentes, plus l’objet paraît rond : c’est le volume. Un objet dessiné avec une seule couleur uniforme paraît plat.", KW),
     img("img_art_t9_s01_echelle.png", 560),
     caption("L’échelle de nuances, du noir (ombre) au blanc (lumière)."),
-    p("4. Les étapes du dessin d’objet", { bold: true, color: GREEN, size: 23, before: 120, after: 80 }),
-    pLesson("a. Tracer la forme générale de l’objet, sans appuyer sur le crayon.", KW),
-    pLesson("b. Placer les zones claires (côté lumière) et les zones foncées (côté ombre).", KW),
-    pLesson("c. Dégrader les gris entre le clair et le foncé pour donner du volume.", KW),
-    pLesson("d. Ajouter l’ombre portée sous l’objet, sur la table.", KW),
-    pLesson("e. Améliorer le dessin selon les remarques des camarades ou de l’enseignant.", KW),
+    new Paragraph({ children: [new PageBreak()] }),
+    p("4. Les étapes du dessin d’objet — pas-à-pas illustré", { bold: true, color: GREEN, size: 23, before: 120, after: 80 }),
+    pLesson("Observe chaque étape. Quand une erreur est fréquente, compare le résultat attendu (✓ OK) avec le résultat à éviter (✗ PAS OK — ATTENTION !).", KW),
+    p("Étape 1 — Tracer la forme générale", { bold: true, size: 21, before: 100, after: 60 }),
+    ...okOnly("pasapas_s01_et1_ok_1100.jpg", "Traits de construction légers, proportions du gobelet, sans appuyer sur le crayon."),
+    p("Étape 2 — Placer la lumière", { bold: true, size: 21, before: 100, after: 60 }),
+    ...okOnly("pasapas_s01_et2_ok_1100.jpg", "Le côté gauche reste clair (lumière) ; le côté droit commence à être légèrement grisé (ombre)."),
+    p("Étape 3 — Dégrader les gris", { bold: true, size: 21, before: 100, after: 60 }),
+    okVsPasOk(
+      "pasapas_s01_et3_ok_1100.jpg", "Dégradé progressif : clair → gris moyen → foncé. L’objet paraît rond.",
+      "pasapas_s01_et3_pasok_1100.jpg", "Erreur fréquente : gris uniforme en aplat, sans dégradé. L’objet paraît plat."),
+    p("Étape 4 — Ajouter l’ombre portée", { bold: true, size: 21, before: 100, after: 60 }),
+    okVsPasOk(
+      "pasapas_s01_et4_ok_1100.jpg", "Ombre portée douce du côté opposé à la lumière (à droite si la lumière vient de gauche).",
+      "pasapas_s01_et4_pasok_1100.jpg", "Erreur fréquente : ombre portée du même côté que la lumière. La lumière et l’ombre deviennent incohérentes."),
+    p("Étape 5 — Améliorer le dessin", { bold: true, size: 21, before: 100, after: 60 }),
+    pLesson("Compare ton dessin aux critères de réussite, écoute les remarques des camarades ou de l’enseignant, puis corrige les nuances, la lumière ou l’ombre portée.", KW),
   ];
 }
 
@@ -322,12 +363,14 @@ function notePrototype() {
     p("• La production artistique est le cœur des étapes Application et Évaluation (pratique dominant). Un court exercice écrit vient en complément (vocabulaire, appréciation).", { size: 19, after: 60 }),
     p("• Le « corrigé » d’une production n’est pas une réponse unique : on fournit un exemple de production attendue + une grille de critères de réussite. Les exercices écrits, eux, ont un corrigé classique.", { size: 19, after: 60 }),
     p("• Le matériel est simple, local et recyclable, conformément au PE. Les démarches du PE (appréciation, création, interprétation) apparaissent dans la colonne « Technique et Stratégie ».", { size: 19, after: 60 }),
-    p("• Les illustrations mélangent scène (photo de l’objet), graphique (échelle de nuances, schéma lumière/ombre) et exemple de production dessinée.", { size: 19, after: 140 }),
+    p("• Les illustrations mélangent scène (photo de l’objet), graphique (échelle de nuances, schéma lumière/ombre) et exemple de production dessinée.", { size: 19, after: 60 }),
+    p("• Pour les arts visuels, la leçon ajoute un pas-à-pas illustré : une image ✓ OK à chaque étape, et un contre-exemple ✗ PAS OK avec « ATTENTION ! » seulement quand l’erreur est fréquente.", { size: 19, after: 140 }),
     p("À valider avec l’utilisateur", { bold: true, color: GREEN, size: 22, after: 80 }),
     p("1. La place respective production / écrit dans Application et Évaluation.", { size: 19, after: 50 }),
     p("2. La présentation du corrigé (exemple + grille de critères).", { size: 19, after: 50 }),
     p("3. Le niveau de détail de la fiche et de la leçon.", { size: 19, after: 50 }),
     p("4. Le style des illustrations.", { size: 19, after: 50 }),
+    p("5. Le pas-à-pas illustré (✓ OK / ✗ PAS OK — ATTENTION !) dans la leçon.", { size: 19, after: 50 }),
   ];
 }
 function sommaire() {
