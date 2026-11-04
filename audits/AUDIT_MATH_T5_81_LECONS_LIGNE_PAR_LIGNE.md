@@ -1,0 +1,9749 @@
+# Audit intégral — Mathématiques T5
+
+**Fichier analysé :** `Manuel-Mathematiques-7e-COMPLET.docx`
+
+Ce rapport reprend les 81 séances ligne par ligne, y compris les paragraphes et le contenu des tableaux. Le fichier original n’a pas été modifié.
+
+## Résumé structurel
+
+- Séances détectées : **81** (le document annonce 81).
+- Paragraphes dans les blocs de séances : **3286**.
+- Tableaux rencontrés dans les blocs de séances : **186**.
+- Exercices titrés : **324**.
+- Corrigés titrés : **324**.
+- Séances possédant un total : **81/81**.
+
+## Tableau de contrôle des 81 séances
+
+| Séance | Titre | Paragraphes | Tableaux | Exercices | Corrigés | Total | Sections attendues | Alertes |
+|---:|---|---:|---:|---:|---:|:---:|---|---|
+| 1 | Les nombres de 0 à 999 | 69 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 2 | Les nombres de 0 à 999 999 | 57 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 3 | Les nombres de 0 à 999 999 999 | 56 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 4 | Les nombres de 0 à 999 999 999 999 | 56 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 5 | Le carré | 49 | 2 | 4 | 4 | oui | oui | — |
+| 6 | Le rectangle | 50 | 2 | 4 | 4 | oui | oui | — |
+| 7 | Le triangle | 47 | 2 | 4 | 4 | oui | oui | — |
+| 8 | Les unités de mesure de longueur | 42 | 3 | 4 | 4 | oui | oui | — |
+| 9 | L'échelle sur une carte | 36 | 2 | 4 | 4 | oui | oui | — |
+| 10 | L'addition | 39 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 11 | La soustraction | 38 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 12 | La multiplication | 41 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 13 | La division | 40 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 14 | La divisibilité par 2 | 35 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 15 | La divisibilité par 5 | 35 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 16 | La divisibilité par 3 | 36 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 17 | La divisibilité par 9 | 36 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 18 | Le parallélogramme | 50 | 2 | 4 | 4 | oui | oui | — |
+| 19 | Le trapèze | 44 | 2 | 4 | 4 | oui | oui | — |
+| 20 | Le losange | 48 | 2 | 4 | 4 | oui | oui | — |
+| 21 | Le cercle | 45 | 2 | 4 | 4 | oui | oui | — |
+| 22 | Les unités de mesure de capacité | 40 | 3 | 4 | 4 | oui | oui | — |
+| 23 | Les unités de mesure d'aire | 42 | 2 | 4 | 4 | oui | oui | — |
+| 24 | Présentation, lecture et écriture des nombres décimaux | 49 | 3 | 4 | 4 | oui | oui | — |
+| 25 | Comparaison et rangement des nombres décimaux | 40 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 26 | L'addition des nombres décimaux | 37 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 27 | La soustraction des nombres décimaux | 37 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 28 | La multiplication des nombres décimaux | 37 | 3 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 29 | La division des nombres décimaux | 36 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 30 | Aire du parallélogramme | 41 | 2 | 4 | 4 | oui | oui | — |
+| 31 | Aire du trapèze | 43 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 32 | Aire du losange | 42 | 2 | 4 | 4 | oui | oui | — |
+| 33 | Aire du cercle | 42 | 2 | 4 | 4 | oui | oui | — |
+| 34 | Résoudre des problèmes relatifs à la mesure d'aire | 38 | 2 | 4 | 4 | oui | oui | — |
+| 35 | Présentation et écriture d'une fraction | 33 | 6 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 36 | Simplification de fractions | 40 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 37 | Comparaison de fractions | 40 | 2 | 4 | 4 | oui | oui | — |
+| 38 | L'addition de fractions | 40 | 2 | 4 | 4 | oui | oui | — |
+| 39 | La soustraction de fractions | 40 | 2 | 4 | 4 | oui | oui | — |
+| 40 | La multiplication de fractions | 41 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 41 | La division de fractions | 40 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 42 | Résoudre des problèmes avec des fractions | 35 | 2 | 4 | 4 | oui | oui | — |
+| 43 | Intervalles et piquets — circuit ouvert | 44 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 44 | Intervalles et piquets — circuit fermé | 42 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 45 | Les unités de mesure de volume | 42 | 2 | 4 | 4 | oui | oui | — |
+| 46 | Correspondance entre unités de volume et de capacité | 41 | 2 | 4 | 4 | oui | oui | — |
+| 47 | Notion d'échange, frais, prix d'achat et prix de vente | 35 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 48 | Le bénéfice | 35 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 49 | La perte | 37 | 2 | 4 | 4 | oui | oui | titre d’exercice répété; lettrage a/b/d/e détecté |
+| 50 | Les grandeurs proportionnelles | 39 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 51 | Résoudre des problèmes de proportionnalité | 37 | 2 | 4 | 4 | oui | oui | — |
+| 52 | Le cube | 49 | 2 | 4 | 4 | oui | oui | — |
+| 53 | Le parallélépipède rectangle | 47 | 2 | 4 | 4 | oui | oui | — |
+| 54 | Le cylindre | 48 | 2 | 4 | 4 | oui | oui | — |
+| 55 | Unités de mesure de volume — approfondissement | 38 | 2 | 4 | 4 | oui | oui | — |
+| 56 | Résoudre des problèmes relatifs à la mesure de volume | 36 | 2 | 4 | 4 | oui | oui | — |
+| 57 | Le pourcentage et la remise | 38 | 2 | 4 | 4 | oui | oui | — |
+| 58 | La facture (avec taxe) | 34 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 59 | Le budget familial | 35 | 2 | 4 | 4 | oui | oui | — |
+| 60 | Les mesures agraires | 41 | 2 | 4 | 4 | oui | oui | titre d’exercice répété; lettrage a/b/d/e détecté |
+| 61 | Les nombres sexagésimaux — unités de temps | 34 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 62 | Les partages égaux | 35 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 63 | Les partages proportionnels | 38 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 64 | Les partages inégaux | 36 | 2 | 4 | 4 | oui | oui | — |
+| 65 | Décomposition de figures irrégulières | 42 | 2 | 4 | 4 | oui | oui | — |
+| 66 | Le mouvement uniforme — notion et vitesse | 35 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 67 | Le mouvement uniforme — résolution de problèmes | 35 | 2 | 4 | 4 | oui | oui | — |
+| 68 | Notion d'épargne | 34 | 2 | 4 | 4 | oui | oui | — |
+| 69 | Les lieux de placement | 35 | 2 | 4 | 4 | oui | oui | — |
+| 70 | Le capital | 35 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 71 | L'intérêt | 40 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 72 | Méthode de calcul d'aire de polygones irréguliers | 43 | 2 | 4 | 4 | oui | oui | — |
+| 73 | Problèmes d'aire de polygones irréguliers | 39 | 2 | 4 | 4 | oui | oui | — |
+| 74 | Correspondance entre unités de volume et de capacité — approfondissement | 37 | 2 | 4 | 4 | oui | oui | — |
+| 75 | Vitesse moyenne et unités de vitesse | 35 | 2 | 4 | 4 | oui | oui | — |
+| 76 | Durée de placement | 36 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 77 | Taux de placement | 36 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 78 | Révision — calcul d'aire de polygones irréguliers | 37 | 2 | 4 | 4 | oui | oui | — |
+| 79 | Correspondance entre unités de capacité et de masse | 34 | 2 | 4 | 4 | oui | oui | — |
+| 80 | Distance parcourue | 36 | 2 | 4 | 4 | oui | oui | titre d’exercice répété |
+| 81 | Durée de parcours | 54 | 4 | 4 | 4 | oui | oui | — |
+
+## Répétitions textuelles importantes
+
+Les lignes ci-dessous apparaissent au moins quatre fois dans des séances différentes. Elles peuvent être des formulations pédagogiques volontairement répétées, mais elles doivent être contrôlées pour éviter une leçon copiée au mauvais endroit.
+
+- Séances 1, 2, 3, 4, 24 : Décomposer un nombre, c'est écrire la valeur de chaque chiffre séparément, selon sa position dans le tableau de numération.
+- Séances 1, 2, 3, 4, 24 : Pour comparer deux nombres, on compare d'abord le nombre de chiffres, puis classe par classe en partant de la gauche.
+- Séances 1, 2, 3, 4, 24 : Ranger des nombres, c'est les placer dans l'ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).
+- Séances 1, 2, 3, 4 : Un nombre s'écrit dans un tableau de numération composé de classes de trois colonnes chacune (Centaines, Dizaines, Unités). Chaque chiffre occupe une place précise selon sa valeur.
+
+## Lecture ligne par ligne
+
+### Séance 1 / 81 — Les nombres de 0 à 999
+
+- Indicateurs : 69 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 1 / 81
+- `P` Les nombres de 0 à 999
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres jusqu'au milliard
+- `T3C3` Séance n° :
+- `T3C4` 1 à 3
+- `T4C1` Titre :
+- `T4C2` Les nombres de 0 à 999
+- `T4C3` Durée :
+- `T4C4` 3 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Lire, écrire, décomposer, comparer, ranger et résoudre des problèmes avec des nombres de 0 à 999
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e (page 89)
+- `T7C1` Support et matériel :
+- `T7C2` Tableau de numération, tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quels sont les trois chiffres qui composent un nombre à trois chiffres ?Combien font 10 dizaines ?Cite un nombre à deux chiffres et un nombre à trois chiffres.
+- `T3C3` R.A. : Les centaines (C), les dizaines (D) et les unités (U).R.A. : 10 dizaines font 1 centaine (100).R.A. : Réponse libre, par exemple : 45 (deux chiffres) et 128 (trois chiffres).
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Au marché de Sabotsy, Vola compte les tomates que sa mère a vendues aujourd'hui : elle a vendu 7 caisses pleines de 100 tomates, 6 tas de 10 tomates, et 4 tomates seules. Vola se demande combien de tomates cela représente au total, et comment écrire ce nombre correctement.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les nombres de 0 à 999 ». Après cette séance, vous serez capables de lire, écrire, décomposer, comparer et ranger des nombres de 0 à 999.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le tableau de numération affiché au tableau noir, avec les colonnes C, D, U.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de colonnes voyez-vous dans ce tableau ?Dans le nombre 764, quel chiffre est dans la colonne des centaines ?Dans le nombre 602, quel chiffre est dans la colonne des dizaines ?Comment lit-on le nombre 602 à voix haute ?Comment lit-on le nombre 573 ?
+- `T8C3` R.A. : Trois colonnes : Centaines (C), Dizaines (D), Unités (U).R.A. : Le chiffre 7 est dans la colonne des centaines.R.A. : Le chiffre 0 est dans la colonne des dizaines : il n'y a aucune dizaine dans ce nombre.R.A. : On lit « six cent deux » — le zéro des dizaines ne se prononce pas, mais il garde sa place dans le tableau.R.A. : On lit « cinq cent soixante-treize ».
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un nombre de 0 à 999 s'écrit avec au maximum trois chiffres, placés dans le tableau de numération : Centaines (C), Dizaines (D), Unités (U). Chaque chiffre garde sa place même s'il vaut zéro. Pour lire le nombre, on énonce les centaines, puis le nombre formé par les dizaines et les unités ensemble.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Lecture et écritureÉcris en lettres les nombres suivants.a) 256b) 840c) 703d) 999Exercice 2 — DécompositionDécompose chaque nombre selon ses centaines, dizaines et unités, comme dans l'exemple : 234 = 200 + 30 + 4.a) 567b) 908c) 120d) 645
+- `T10C3` a) deux cent cinquante-sixb) huit cent quarantec) sept cent troisd) neuf cent quatre-vingt-dix-neuf a) 567 = 500 + 60 + 7b) 908 = 900 + 8c) 120 = 100 + 20d) 645 = 600 + 40 + 5
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Lecture et écritureÉcris en chiffres les nombres suivants.a) sept cent seizeb) quatre cent deuxc) neuf cent quatre-vingt-douzed) trois cent soixante-quinzeExercice 2 — Comparaison et rangementCompare les nombres suivants avec le signe qui convient (<, > ou =), puis range-les du plus petit au plus grand.a) 458 ... 584b) 720 ... 702c) Range dans l'ordre croissant : 391, 139, 913, 319
+- `T11C3` a) 716b) 402c) 992d) 375 a) 458 < 584b) 720 > 702c) 139 < 319 < 391 < 913
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les nombres de 0 à 999
+- `P` 1. Lecture et écriture
+- `P` Un nombre s'écrit dans un tableau de numération composé de classes de trois colonnes chacune (Centaines, Dizaines, Unités). Chaque chiffre occupe une place précise selon sa valeur.
+- `P` Exemples :
+- `T1C1` Nombre
+- `T1C2` C
+- `T1C3` D
+- `T1C4` U
+- `T1C5` En lettres
+- `T2C1` 764
+- `T2C2` 7
+- `T2C3` 6
+- `T2C4` 4
+- `T2C5` sept cent soixante-quatre
+- `T3C1` 602
+- `T3C2` 6
+- `T3C3` 0
+- `T3C4` 2
+- `T3C5` six cent deux
+- `T4C1` 573
+- `T4C2` 5
+- `T4C3` 7
+- `T4C4` 3
+- `T4C5` cinq cent soixante-treize
+- `T5C1` 918
+- `T5C2` 9
+- `T5C3` 1
+- `T5C4` 8
+- `T5C5` neuf cent dix-huit
+- `T6C1` 305
+- `T6C2` 3
+- `T6C3` 0
+- `T6C4` 5
+- `T6C5` trois cent cinq
+- `P` Attention : Attention à la lecture des nombres de 60 à 99 : en français, soixante-cinq (65) et soixante-quinze (75) commencent tous les deux par « soixante », mais 65 = 60 + 5 alors que 75 = 60 + 15. De même, attention au zéro placé au milieu d'un nombre (comme dans 602) : il ne s'entend pas à l'oral, mais il faut toujours l'écrire pour garder trois chiffres.
+- `P` 2. Décomposition d'un nombre
+- `P` Décomposer un nombre, c'est écrire la valeur de chaque chiffre séparément, selon sa position dans le tableau de numération.
+- `P` 709 = 700 + 9
+- `P` 234 = 200 + 30 + 4
+- `P` 481 = 400 + 80 + 1
+- `P` 350 = 300 + 50
+- `P` 3. Comparaison de deux nombres
+- `P` Pour comparer deux nombres, on compare d'abord le nombre de chiffres, puis classe par classe en partant de la gauche.
+- `P` 764 > 602 — On compare d'abord les centaines : 7 est plus grand que 6, donc 764 > 602.
+- `P` 573 < 602 — Les centaines sont différentes : 5 est plus petit que 6, donc 573 < 602.
+- `P` 481 = 481 — Les centaines, les dizaines et les unités sont identiques, donc 481 = 481.
+- `P` 4. Rangement d'une série de nombres
+- `P` Ranger des nombres, c'est les placer dans l'ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).
+- `P` Nombres donnés : 764, 305, 918, 573
+- `P` Ordre croissant : 305 < 573 < 764 < 918
+- `P` Ordre décroissant : 918 > 764 > 573 > 305
+- `P` EXERCICES
+- `P` Exercice 1 — Lecture et écriture (5 points)
+- `P` Écris en lettres les nombres suivants.
+- `P` a) 256
+- `P` b) 840
+- `P` c) 703
+- `P` d) 999
+- `P` Corrigé :
+- `P` a) deux cent cinquante-six
+- `P` b) huit cent quarante
+- `P` c) sept cent trois
+- `P` d) neuf cent quatre-vingt-dix-neuf
+- `P` Exercice 2 — Décomposition (5 points)
+- `P` Décompose chaque nombre selon ses centaines, dizaines et unités, comme dans l'exemple : 234 = 200 + 30 + 4.
+- `P` a) 567
+- `P` b) 908
+- `P` c) 120
+- `P` d) 645
+- `P` Corrigé :
+- `P` a) 567 = 500 + 60 + 7
+- `P` b) 908 = 900 + 8
+- `P` c) 120 = 100 + 20
+- `P` d) 645 = 600 + 40 + 5
+- `P` Exercice 1 — Lecture et écriture (5 points)
+- `P` Écris en chiffres les nombres suivants.
+- `P` a) sept cent seize
+- `P` b) quatre cent deux
+- `P` c) neuf cent quatre-vingt-douze
+- `P` d) trois cent soixante-quinze
+- `P` Corrigé :
+- `P` a) 716
+- `P` b) 402
+- `P` c) 992
+- `P` d) 375
+- `P` Exercice 2 — Comparaison et rangement (5 points)
+- `P` Compare les nombres suivants avec le signe qui convient (<, > ou =), puis range-les du plus petit au plus grand.
+- `P` a) 458 ... 584
+- `P` b) 720 ... 702
+- `P` c) Range dans l'ordre croissant : 391, 139, 913, 319
+- `P` Corrigé :
+- `P` a) 458 < 584
+- `P` b) 720 > 702
+- `P` c) 139 < 319 < 391 < 913
+- `P` Total : 20 points
+
+### Séance 2 / 81 — Les nombres de 0 à 999 999
+
+- Indicateurs : 57 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 2 / 81
+- `P` Les nombres de 0 à 999 999
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres jusqu'au milliard
+- `T3C3` Séance n° :
+- `T3C4` 4 à 7
+- `T4C1` Titre :
+- `T4C2` Les nombres de 0 à 999 999
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Lire, écrire, décomposer, comparer, ranger et résoudre des problèmes avec des nombres de 0 à 999 999
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e (page 89)
+- `T7C1` Support et matériel :
+- `T7C2` Tableau de numération à deux classes, tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Dans le nombre 764, quel chiffre est le chiffre des centaines ?Range dans l'ordre croissant : 305, 573, 148.
+- `T3C3` R.A. : Le chiffre 7.R.A. : 148 < 305 < 573.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` La commune rurale d'Ambohimanga a compté sa population lors du dernier recensement : 245 380 habitants. Rova n'a jamais vu un nombre aussi grand écrit sur son cahier et se demande comment le lire correctement.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les nombres de 0 à 999 999 ». Après cette séance, vous serez capables de lire, écrire, décomposer, comparer et ranger des nombres jusqu'à six chiffres.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le tableau de numération à deux classes affiché au tableau noir : la classe des Mille (C-D-U) à gauche, la classe des Unités (C-D-U) à droite.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de classes voyez-vous maintenant dans ce tableau ?Dans le nombre 245 380, quels chiffres forment la classe des Mille ?Comment lit-on 245 380 ?Comment écrit-on 1 000 en lettres ?Comment lit-on 302 040 ?
+- `T8C3` R.A. : Deux classes : la classe des Mille et la classe des Unités.R.A. : 245 forme la classe des Mille.R.A. : On lit « deux cent quarante-cinq mille trois cent quatre-vingts ».R.A. : On écrit « mille », jamais « un mille » : le mot mille ne prend jamais « un » devant lui.R.A. : On lit « trois cent deux mille quarante » : le zéro des centaines dans la classe des unités ne se prononce pas, mais il garde sa place.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour lire un nombre de 0 à 999 999, on le sépare en deux classes de trois chiffres : la classe des Mille (à gauche) et la classe des Unités (à droite), séparées par un espace. On lit chaque classe comme un nombre de 0 à 999, puis on ajoute le mot « mille » après la première classe (sauf si elle vaut 000, on ne dit rien). Le mot « mille » ne change jamais, il ne prend jamais « un » devant lui ni de « s ».
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Lecture et écritureÉcris en lettres les nombres suivants.a) 128 450b) 6 000c) 500 007Exercice 2 — DécompositionDécompose chaque nombre selon ses classes et ses chiffres.a) 356 208b) 40 090
+- `T10C3` a) cent vingt-huit mille quatre cent cinquanteb) six millec) cinq cent mille sept a) 356 208 = 300 000 + 50 000 + 6 000 + 200 + 8b) 40 090 = 40 000 + 90
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Lecture et écritureÉcris en chiffres les nombres suivants.a) quatre-vingt-treize mille deux cent cinqb) sept cent millec) mille deuxExercice 2 — Comparaison et rangementCompare avec le signe qui convient, puis range dans l'ordre décroissant.a) 128 450 ... 128 045b) Range dans l'ordre décroissant : 45 200, 452 000, 4 520, 245 000
+- `T11C3` a) 93 205b) 700 000c) 1 002 a) 128 450 > 128 045b) 452 000 > 245 000 > 45 200 > 4 520
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les nombres de 0 à 999 999
+- `P` 1. Lecture et écriture
+- `P` Un nombre s'écrit dans un tableau de numération composé de classes de trois colonnes chacune (Centaines, Dizaines, Unités). Chaque chiffre occupe une place précise selon sa valeur.
+- `P` Exemples :
+- `T1C1` Nombre
+- `T1C2` Mille
+- `T1C3` Unités
+- `T1C4` En lettres
+- `T2C1` 764 502
+- `T2C2` 764
+- `T2C3` 502
+- `T2C4` sept cent soixante-quatre mille cinq cent deux
+- `T3C1` 100 000
+- `T3C2` 100
+- `T3C3` 000
+- `T3C4` cent mille
+- `T4C1` 5 000
+- `T4C2` 005
+- `T4C3` 000
+- `T4C4` cinq mille
+- `T5C1` 302 040
+- `T5C2` 302
+- `T5C3` 040
+- `T5C4` trois cent deux mille quarante
+- `T6C1` 245 380
+- `T6C2` 245
+- `T6C3` 380
+- `T6C4` deux cent quarante-cinq mille trois cent quatre-vingts
+- `P` Attention : le mot « mille » ne change jamais : on ne dit jamais « un mille » (on dit simplement « mille ») et il ne prend jamais de « s », même pour plusieurs milliers (ex. « deux cent mille », pas « deux cent milles »). Attention aussi à bien séparer les classes par un espace en écrivant les chiffres : 245 380, et non 245380 ou 245,380.
+- `P` 2. Décomposition d'un nombre
+- `P` Décomposer un nombre, c'est écrire la valeur de chaque chiffre séparément, selon sa position dans le tableau de numération.
+- `P` 245 380 = 200 000 + 40 000 + 5 000 + 300 + 80
+- `P` 302 040 = 300 000 + 2 000 + 40
+- `P` 60 705 = 60 000 + 700 + 5
+- `P` 3. Comparaison de deux nombres
+- `P` Pour comparer deux nombres, on compare d'abord le nombre de chiffres, puis classe par classe en partant de la gauche.
+- `P` 764 502 < 802 304 — On compare d'abord la classe des Mille : 764 est plus petit que 802, donc 764 502 < 802 304.
+- `P` 245 380 > 245 210 — La classe des Mille est identique (245 = 245), on compare alors la classe des Unités : 380 > 210, donc 245 380 > 245 210.
+- `P` 4. Rangement d'une série de nombres
+- `P` Ranger des nombres, c'est les placer dans l'ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).
+- `P` Nombres donnés : 764 502, 245 380, 802 304, 60 705
+- `P` Ordre croissant : 60 705 < 245 380 < 764 502 < 802 304
+- `P` Ordre décroissant : 802 304 > 764 502 > 245 380 > 60 705
+- `P` EXERCICES
+- `P` Exercice 1 — Lecture et écriture (5 points)
+- `P` Écris en lettres les nombres suivants.
+- `P` a) 128 450
+- `P` b) 6 000
+- `P` c) 500 007
+- `P` Corrigé :
+- `P` a) cent vingt-huit mille quatre cent cinquante
+- `P` b) six mille
+- `P` c) cinq cent mille sept
+- `P` Exercice 2 — Décomposition (5 points)
+- `P` Décompose chaque nombre selon ses classes et ses chiffres.
+- `P` a) 356 208
+- `P` b) 40 090
+- `P` Corrigé :
+- `P` a) 356 208 = 300 000 + 50 000 + 6 000 + 200 + 8
+- `P` b) 40 090 = 40 000 + 90
+- `P` Exercice 1 — Lecture et écriture (5 points)
+- `P` Écris en chiffres les nombres suivants.
+- `P` a) quatre-vingt-treize mille deux cent cinq
+- `P` b) sept cent mille
+- `P` c) mille deux
+- `P` Corrigé :
+- `P` a) 93 205
+- `P` b) 700 000
+- `P` c) 1 002
+- `P` Exercice 2 — Comparaison et rangement (5 points)
+- `P` Compare avec le signe qui convient, puis range dans l'ordre décroissant.
+- `P` a) 128 450 ... 128 045
+- `P` b) Range dans l'ordre décroissant : 45 200, 452 000, 4 520, 245 000
+- `P` Corrigé :
+- `P` a) 128 450 > 128 045
+- `P` b) 452 000 > 245 000 > 45 200 > 4 520
+- `P` Total : 20 points
+
+### Séance 3 / 81 — Les nombres de 0 à 999 999 999
+
+- Indicateurs : 56 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 3 / 81
+- `P` Les nombres de 0 à 999 999 999
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres jusqu'au milliard
+- `T3C3` Séance n° :
+- `T3C4` 8 à 12
+- `T4C1` Titre :
+- `T4C2` Les nombres de 0 à 999 999 999
+- `T4C3` Durée :
+- `T4C4` 5 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Lire, écrire, décomposer, comparer, ranger et résoudre des problèmes avec des nombres de 0 à 999 999 999
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e (page 89)
+- `T7C1` Support et matériel :
+- `T7C2` Tableau de numération à trois classes, tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION12 min
+- `T3C2` Comment lit-on 302 040 ?Le mot « mille » change-t-il au pluriel ?
+- `T3C3` R.A. : On lit « trois cent deux mille quarante ».R.A. : Non, « mille » ne change jamais : ni « un mille », ni « milles ».
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 75 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Selon les chiffres officiels, Madagascar compte environ 29 millions d'habitants. Koto lit ce nombre dans son livre d'histoire-géographie : « 29 000 000 ». Il compte les zéros un à un, mais il aimerait comprendre comment lire ce nombre sans les compter à chaque fois.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les nombres de 0 à 999 999 999 ». Après cette séance, vous serez capables de lire, écrire, décomposer, comparer et ranger des nombres jusqu'à neuf chiffres.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le tableau de numération à trois classes affiché au tableau noir : Million (C-D-U), Mille (C-D-U), Unités (C-D-U).
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de classes voyez-vous maintenant ?Dans 29 000 000, quel chiffre est dans la classe des Millions ?Comment lit-on 1 000 000 ?Comment lit-on 2 000 000 ?Comment lit-on 305 764 502 ?
+- `T8C3` R.A. : Trois classes : Millions, Mille, Unités.R.A. : 29 est dans la classe des Millions (la classe Mille et la classe Unités valent 000).R.A. : On lit « un million » : contrairement à « mille », le mot « million » prend bien « un » devant lui.R.A. : On lit « deux millions » : le mot « million » prend un « s » au pluriel, contrairement à « mille ».R.A. : On lit « trois cent cinq millions sept cent soixante-quatre mille cinq cent deux ».
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour lire un nombre de 0 à 999 999 999, on le sépare en trois classes de trois chiffres : Millions, Mille, Unités, séparées par un espace. On lit chaque classe comme un nombre de 0 à 999, en ajoutant le nom de la classe. Attention : « million » est un vrai nom, il prend « un » devant lui (un million) et un « s » au pluriel (deux millions), contrairement à « mille » qui ne change jamais.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Lecture et écritureÉcris en lettres les nombres suivants.a) 4 000 000b) 12 500 000c) 700 003 000Exercice 2 — DécompositionDécompose chaque nombre selon ses classes et ses chiffres.a) 3 040 200b) 82 000 015
+- `T10C3` a) quatre millionsb) douze millions cinq cent millec) sept cent millions trois mille a) 3 040 200 = 3 000 000 + 40 000 + 200b) 82 000 015 = 80 000 000 + 2 000 000 + 15
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION25 min
+- `T11C2` Exercice 1 — Lecture et écritureÉcris en chiffres les nombres suivants.a) neuf millions cinquante milleb) un million deux centsc) trois cent millionsExercice 2 — Comparaison et rangementCompare avec le signe qui convient, puis range dans l'ordre croissant.a) 6 200 000 ... 620 000b) Range dans l'ordre croissant : 45 000 000, 4 500 000, 450 000 000, 450 000
+- `T11C3` a) 9 050 000b) 1 000 200c) 300 000 000 a) 6 200 000 > 620 000b) 450 000 < 4 500 000 < 45 000 000 < 450 000 000
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les nombres de 0 à 999 999 999
+- `P` 1. Lecture et écriture
+- `P` Un nombre s'écrit dans un tableau de numération composé de classes de trois colonnes chacune (Centaines, Dizaines, Unités). Chaque chiffre occupe une place précise selon sa valeur.
+- `P` Exemples :
+- `T1C1` Nombre
+- `T1C2` Million
+- `T1C3` Mille
+- `T1C4` Unités
+- `T1C5` En lettres
+- `T2C1` 305 764 502
+- `T2C2` 305
+- `T2C3` 764
+- `T2C4` 502
+- `T2C5` trois cent cinq millions sept cent soixante-quatre mille cinq cent deux
+- `T3C1` 1 000 000
+- `T3C2` 001
+- `T3C3` 000
+- `T3C4` 000
+- `T3C5` un million
+- `T4C1` 2 000 000
+- `T4C2` 002
+- `T4C3` 000
+- `T4C4` 000
+- `T4C5` deux millions
+- `T5C1` 29 000 000
+- `T5C2` 029
+- `T5C3` 000
+- `T5C4` 000
+- `T5C5` vingt-neuf millions
+- `T6C1` 150 020 300
+- `T6C2` 150
+- `T6C3` 020
+- `T6C4` 300
+- `T6C5` cent cinquante millions vingt mille trois cents
+- `P` Attention : « million » n'est pas comme « mille » : c'est un vrai nom qui prend « un » devant lui (un million, jamais juste « million ») et un « s » au pluriel (trois millions). Attention aussi au nombre de chiffres : un nombre à neuf chiffres est toujours plus grand qu'un nombre à huit chiffres ou moins, même si le premier chiffre semble petit (ex. 100 000 000 a neuf chiffres et est plus grand que 99 000 000 qui n'en a que huit).
+- `P` 2. Décomposition d'un nombre
+- `P` Décomposer un nombre, c'est écrire la valeur de chaque chiffre séparément, selon sa position dans le tableau de numération.
+- `P` 305 764 502 = 300 000 000 + 5 000 000 + 700 000 + 60 000 + 4 000 + 500 + 2
+- `P` 150 020 300 = 100 000 000 + 50 000 000 + 20 000 + 300
+- `P` 3. Comparaison de deux nombres
+- `P` Pour comparer deux nombres, on compare d'abord le nombre de chiffres, puis classe par classe en partant de la gauche.
+- `P` 305 764 502 > 29 000 000 — 305 764 502 a neuf chiffres, 29 000 000 en a huit (moins de chiffres = nombre plus petit), donc 305 764 502 > 29 000 000.
+- `P` 150 020 300 > 150 020 030 — Les classes Millions (150) et une partie de la classe Mille sont identiques ; on compare finement : 020 300 > 020 030, donc 150 020 300 > 150 020 030.
+- `P` 4. Rangement d'une série de nombres
+- `P` Ranger des nombres, c'est les placer dans l'ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).
+- `P` Nombres donnés : 305 764 502, 29 000 000, 150 020 300, 2 000 000
+- `P` Ordre croissant : 2 000 000 < 29 000 000 < 150 020 300 < 305 764 502
+- `P` Ordre décroissant : 305 764 502 > 150 020 300 > 29 000 000 > 2 000 000
+- `P` EXERCICES
+- `P` Exercice 1 — Lecture et écriture (5 points)
+- `P` Écris en lettres les nombres suivants.
+- `P` a) 4 000 000
+- `P` b) 12 500 000
+- `P` c) 700 003 000
+- `P` Corrigé :
+- `P` a) quatre millions
+- `P` b) douze millions cinq cent mille
+- `P` c) sept cent millions trois mille
+- `P` Exercice 2 — Décomposition (5 points)
+- `P` Décompose chaque nombre selon ses classes et ses chiffres.
+- `P` a) 3 040 200
+- `P` b) 82 000 015
+- `P` Corrigé :
+- `P` a) 3 040 200 = 3 000 000 + 40 000 + 200
+- `P` b) 82 000 015 = 80 000 000 + 2 000 000 + 15
+- `P` Exercice 1 — Lecture et écriture (5 points)
+- `P` Écris en chiffres les nombres suivants.
+- `P` a) neuf millions cinquante mille
+- `P` b) un million deux cents
+- `P` c) trois cent millions
+- `P` Corrigé :
+- `P` a) 9 050 000
+- `P` b) 1 000 200
+- `P` c) 300 000 000
+- `P` Exercice 2 — Comparaison et rangement (5 points)
+- `P` Compare avec le signe qui convient, puis range dans l'ordre croissant.
+- `P` a) 6 200 000 ... 620 000
+- `P` b) Range dans l'ordre croissant : 45 000 000, 4 500 000, 450 000 000, 450 000
+- `P` Corrigé :
+- `P` a) 6 200 000 > 620 000
+- `P` b) 450 000 < 4 500 000 < 45 000 000 < 450 000 000
+- `P` Total : 20 points
+
+### Séance 4 / 81 — Les nombres de 0 à 999 999 999 999
+
+- Indicateurs : 56 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 4 / 81
+- `P` Les nombres de 0 à 999 999 999 999
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres jusqu'au milliard
+- `T3C3` Séance n° :
+- `T3C4` 13 à 18
+- `T4C1` Titre :
+- `T4C2` Les nombres de 0 à 999 999 999 999
+- `T4C3` Durée :
+- `T4C4` 6 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Lire, écrire, décomposer, comparer, ranger et résoudre des problèmes avec des nombres jusqu'au milliard
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e (page 89)
+- `T7C1` Support et matériel :
+- `T7C2` Tableau de numération à quatre classes, tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION15 min
+- `T3C2` Comment lit-on 2 000 000 ?« Million » prend-il un « s » au pluriel ?
+- `T3C3` R.A. : On lit « deux millions ».R.A. : Oui, contrairement à « mille » qui ne change jamais.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 90 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Dans le journal, Nivo lit que le budget national de Madagascar pour l'année dépasse 7 000 000 000 000 d'ariary. Elle n'a jamais vu un nombre aussi long et se demande combien de classes il contient et comment le lire.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les nombres de 0 à 999 999 999 999 ». Après cette séance, vous serez capables de lire, écrire, décomposer, comparer et ranger des nombres jusqu'à douze chiffres, c'est-à-dire jusqu'au milliard.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le tableau de numération à quatre classes affiché au tableau noir : Milliard (C-D-U), Million (C-D-U), Mille (C-D-U), Unités (C-D-U).
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de classes voyez-vous maintenant ?Combien de chiffres au maximum peut avoir un nombre dans ce tableau ?Comment lit-on 1 000 000 000 ?« Milliard » prend-il un « s » au pluriel ?Comment lit-on 512 034 007 128 ?
+- `T8C3` R.A. : Quatre classes : Milliards, Millions, Mille, Unités.R.A. : Douze chiffres au maximum (quatre classes de trois chiffres).R.A. : On lit « un milliard » : comme « million », le mot « milliard » prend « un » devant lui.R.A. : Oui : on dit « sept milliards » avec un « s », comme pour « million ».R.A. : On lit « cinq cent douze milliards trente-quatre millions sept mille cent vingt-huit ».
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour lire un nombre jusqu'au milliard, on le sépare en quatre classes de trois chiffres : Milliards, Millions, Mille, Unités, séparées par un espace. On lit chaque classe comme un nombre de 0 à 999, en ajoutant le nom de la classe (sauf si elle vaut 000, on ne dit rien). « Milliard », comme « million », prend « un » devant lui et un « s » au pluriel. « Mille » ne change jamais.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Lecture et écritureÉcris en lettres les nombres suivants.a) 3 000 000 000b) 15 200 000 000c) 6 000 000 500Exercice 2 — DécompositionDécompose chaque nombre selon ses classes.a) 4 020 000 000b) 100 000 000 300
+- `T10C3` a) trois milliardsb) quinze milliards deux cents millionsc) six milliards cinq cents a) 4 020 000 000 = 4 000 000 000 + 20 000 000b) 100 000 000 300 = 100 000 000 000 + 300
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION30 min
+- `T11C2` Exercice 1 — Lecture et écritureÉcris en chiffres les nombres suivants.a) deux milliards cinquante millionsb) neuf milliardsc) un milliard trois cent milleExercice 2 — Comparaison et rangementCompare avec le signe qui convient, puis range dans l'ordre décroissant.a) 3 200 000 000 ... 320 000 000b) Range dans l'ordre décroissant : 500 000 000, 5 000 000 000, 50 000 000, 5 000 000
+- `T11C3` a) 2 050 000 000b) 9 000 000 000c) 1 000 300 000 a) 3 200 000 000 > 320 000 000b) 5 000 000 000 > 500 000 000 > 50 000 000 > 5 000 000
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les nombres de 0 à 999 999 999 999
+- `P` 1. Lecture et écriture
+- `P` Un nombre s'écrit dans un tableau de numération composé de classes de trois colonnes chacune (Centaines, Dizaines, Unités). Chaque chiffre occupe une place précise selon sa valeur.
+- `P` Exemples :
+- `T1C1` Nombre
+- `T1C2` Milliard
+- `T1C3` Million
+- `T1C4` Mille
+- `T1C5` Unités
+- `T1C6` En lettres
+- `T2C1` 512 034 007 128
+- `T2C2` 512
+- `T2C3` 034
+- `T2C4` 007
+- `T2C5` 128
+- `T2C6` cinq cent douze milliards trente-quatre millions sept mille cent vingt-huit
+- `T3C1` 1 000 000 000
+- `T3C2` 001
+- `T3C3` 000
+- `T3C4` 000
+- `T3C5` 000
+- `T3C6` un milliard
+- `T4C1` 7 000 000 000
+- `T4C2` 007
+- `T4C3` 000
+- `T4C4` 000
+- `T4C5` 000
+- `T4C6` sept milliards
+- `T5C1` 20 305 000 000
+- `T5C2` 020
+- `T5C3` 305
+- `T5C4` 000
+- `T5C5` 000
+- `T5C6` vingt milliards trois cent cinq millions
+- `P` Attention : « milliard » se comporte comme « million » : il prend « un » devant lui (un milliard) et un « s » au pluriel (cinq milliards) — jamais comme « mille » qui ne change jamais. Le plus sûr pour comparer deux très grands nombres est de compter d'abord le nombre total de chiffres : celui qui en a le plus est toujours le plus grand, quel que soit son premier chiffre.
+- `P` 2. Décomposition d'un nombre
+- `P` Décomposer un nombre, c'est écrire la valeur de chaque chiffre séparément, selon sa position dans le tableau de numération.
+- `P` 512 034 007 128 = 500 000 000 000 + 12 000 000 000 + 34 000 000 + 7 000 + 100 + 20 + 8
+- `P` 7 000 000 000 = 7 000 000 000
+- `P` 3. Comparaison de deux nombres
+- `P` Pour comparer deux nombres, on compare d'abord le nombre de chiffres, puis classe par classe en partant de la gauche.
+- `P` 512 034 007 128 > 20 305 000 000 — 512 034 007 128 a douze chiffres, 20 305 000 000 en a onze, donc 512 034 007 128 > 20 305 000 000.
+- `P` 7 000 000 000 > 1 000 000 000 — Les deux nombres ont dix chiffres ; on compare le chiffre des milliards : 7 > 1, donc 7 000 000 000 > 1 000 000 000.
+- `P` 4. Rangement d'une série de nombres
+- `P` Ranger des nombres, c'est les placer dans l'ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).
+- `P` Nombres donnés : 512 034 007 128, 7 000 000 000, 20 305 000 000, 1 000 000 000
+- `P` Ordre croissant : 1 000 000 000 < 7 000 000 000 < 20 305 000 000 < 512 034 007 128
+- `P` Ordre décroissant : 512 034 007 128 > 20 305 000 000 > 7 000 000 000 > 1 000 000 000
+- `P` EXERCICES
+- `P` Exercice 1 — Lecture et écriture (5 points)
+- `P` Écris en lettres les nombres suivants.
+- `P` a) 3 000 000 000
+- `P` b) 15 200 000 000
+- `P` c) 6 000 000 500
+- `P` Corrigé :
+- `P` a) trois milliards
+- `P` b) quinze milliards deux cents millions
+- `P` c) six milliards cinq cents
+- `P` Exercice 2 — Décomposition (5 points)
+- `P` Décompose chaque nombre selon ses classes.
+- `P` a) 4 020 000 000
+- `P` b) 100 000 000 300
+- `P` Corrigé :
+- `P` a) 4 020 000 000 = 4 000 000 000 + 20 000 000
+- `P` b) 100 000 000 300 = 100 000 000 000 + 300
+- `P` Exercice 1 — Lecture et écriture (5 points)
+- `P` Écris en chiffres les nombres suivants.
+- `P` a) deux milliards cinquante millions
+- `P` b) neuf milliards
+- `P` c) un milliard trois cent mille
+- `P` Corrigé :
+- `P` a) 2 050 000 000
+- `P` b) 9 000 000 000
+- `P` c) 1 000 300 000
+- `P` Exercice 2 — Comparaison et rangement (5 points)
+- `P` Compare avec le signe qui convient, puis range dans l'ordre décroissant.
+- `P` a) 3 200 000 000 ... 320 000 000
+- `P` b) Range dans l'ordre décroissant : 500 000 000, 5 000 000 000, 50 000 000, 5 000 000
+- `P` Corrigé :
+- `P` a) 3 200 000 000 > 320 000 000
+- `P` b) 5 000 000 000 > 500 000 000 > 50 000 000 > 5 000 000
+- `P` Total : 20 points
+
+### Séance 5 / 81 — Le carré
+
+- Indicateurs : 49 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 5 / 81
+- `P` Le carré
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Périmètre et aire des figures planes
+- `T3C3` Séance n° :
+- `T3C4` 19 à 20
+- `T4C1` Titre :
+- `T4C2` Le carré
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un carré, calculer son périmètre et son aire
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du carré, règle graduée, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Combien de côtés a une figure plane comme un rectangle ?Qu'est-ce qu'un angle droit ?
+- `T3C3` R.A. : Quatre côtés.R.A. : Un angle qui mesure 90°, comme le coin d'une feuille de cahier.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Hery veut clôturer un terrain carré de 13 mètres de côté pour son potager. Il doit acheter du grillage pour tout le tour, et il veut aussi savoir quelle surface il pourra cultiver.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le carré ». Après cette séance, vous serez capables de reconnaître un carré et de calculer son périmètre et son aire.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du carré dessinée au tableau, avec la mesure de son côté indiquée.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de côtés a cette figure ?Que remarquez-vous en comparant les longueurs des quatre côtés ?Que remarquez-vous sur les angles du carré ?Si le côté du terrain d'Hery mesure 13 m, comment calculer la longueur totale du grillage à acheter ?
+- `T8C3` R.A. : Quatre côtés.R.A. : Les quatre côtés ont exactement la même longueur.R.A. : Les quatre angles sont des angles droits (90°).R.A. : Il faut additionner les 4 côtés : 13 + 13 + 13 + 13, soit 13 × 4.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le carré est une figure plane à quatre côtés égaux et quatre angles droits. Pour calculer son périmètre, on additionne ses 4 côtés égaux, ce qui revient à multiplier la longueur d'un côté par 4 : P = c × 4. Pour calculer son aire, on multiplie la longueur du côté par elle-même : A = c × c.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — PérimètreCalcule le périmètre d'un carré de côté 7 m.P = ?Exercice 2 — AireCalcule l'aire d'un carré de côté 7 m.A = ?
+- `T10C3` a) P = 7 × 4 = 28 m a) A = 7 × 7 = 49 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUn champ carré a un côté de 21 m. Calcule son périmètre et son aire.a) Périmètreb) AireExercice 2 — ProblèmeRova veut clôturer un jardin carré de 10 m de côté avec un grillage qui coûte 2 000 ariary le mètre. Quel est le coût total du grillage ?a) Périmètre du jardinb) Coût total
+- `T11C3` a) P = 21 × 4 = 84 mb) A = 21 × 21 = 441 m² a) P = 10 × 4 = 40 mb) Coût = 40 × 2 000 = 80 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le carré
+- `P` c = 13 m
+- `P` Propriétés
+- `P` • 4 côtés de même longueur
+- `P` • 4 angles droits (90°)
+- `P` Formules
+- `P` Périmètre : P = c × 4
+- `P` On additionne les 4 côtés égaux : c + c + c + c = c × 4.
+- `P` Aire : A = c × c
+- `P` L'aire d'un carré est le produit de la longueur du côté par elle-même, car un carré est un rectangle dont la longueur et la largeur sont égales.
+- `P` Exemple
+- `P` Calcule le périmètre et l'aire d'un carré de côté c = 13 m.
+- `P` P = c × 4
+- `P` P = 13 × 4
+- `P` P = 52 m
+- `P` A = c × c
+- `P` A = 13 × 13
+- `P` A = 169 m²
+- `P` Attention : ne pas confondre périmètre (longueur du tour, en mètres) et aire (surface, en mètres carrés) : le périmètre se calcule en additionnant des longueurs, l'aire en multipliant deux longueurs. Le résultat de l'aire s'exprime toujours avec l'unité « au carré » (m²), jamais en mètres simples.
+- `P` EXERCICES
+- `P` Exercice 1 — Périmètre (5 points)
+- `P` Calcule le périmètre d'un carré de côté 7 m.
+- `P` P = ?
+- `P` Corrigé :
+- `P` a) P = 7 × 4 = 28 m
+- `P` Exercice 2 — Aire (5 points)
+- `P` Calcule l'aire d'un carré de côté 7 m.
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = 7 × 7 = 49 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Un champ carré a un côté de 21 m. Calcule son périmètre et son aire.
+- `P` a) Périmètre
+- `P` b) Aire
+- `P` Corrigé :
+- `P` a) P = 21 × 4 = 84 m
+- `P` b) A = 21 × 21 = 441 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Rova veut clôturer un jardin carré de 10 m de côté avec un grillage qui coûte 2 000 ariary le mètre. Quel est le coût total du grillage ?
+- `P` a) Périmètre du jardin
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) P = 10 × 4 = 40 m
+- `P` b) Coût = 40 × 2 000 = 80 000 ariary
+- `P` Total : 20 points
+
+### Séance 6 / 81 — Le rectangle
+
+- Indicateurs : 50 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 6 / 81
+- `P` Le rectangle
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Périmètre et aire des figures planes
+- `T3C3` Séance n° :
+- `T3C4` 21 à 22
+- `T4C1` Titre :
+- `T4C2` Le rectangle
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un rectangle, calculer son périmètre et son aire
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du rectangle, règle graduée, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Combien de côtés et d'angles droits a un carré ?Quelle est la formule du périmètre du carré ?
+- `T3C3` R.A. : 4 côtés égaux et 4 angles droits.R.A. : P = c × 4.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Soa possède un terrain rectangulaire de 18 m de longueur sur 9 m de largeur. Elle veut poser une clôture tout autour et connaître la surface disponible pour construire sa maison.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le rectangle ». Après cette séance, vous serez capables de reconnaître un rectangle et de calculer son périmètre et son aire.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du rectangle dessinée au tableau, avec ses deux dimensions indiquées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de côtés a cette figure ?Tous les côtés ont-ils la même longueur, comme dans le carré ?Que remarquez-vous sur les angles du rectangle ?Comment calculer le tour complet du terrain de Soa (18 m sur 9 m) ?
+- `T8C3` R.A. : Quatre côtés.R.A. : Non : deux côtés sont longs (la longueur) et deux côtés sont courts (la largeur), mais les côtés opposés sont égaux.R.A. : Les quatre angles sont des angles droits (90°), comme dans le carré.R.A. : Il faut additionner les 4 côtés : 18 + 9 + 18 + 9, soit deux fois la somme de la longueur et de la largeur.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le rectangle est une figure plane à quatre côtés et quatre angles droits, avec deux longueurs égales et deux largeurs égales. Pour calculer son périmètre, on additionne les 4 côtés, ce qui revient à faire : P = (L + l) × 2. Pour calculer son aire, on multiplie la longueur par la largeur : A = L × l.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — PérimètreCalcule le périmètre d'un rectangle de longueur 25 m et de largeur 14 m.P = ?Exercice 2 — AireCalcule l'aire du même rectangle (longueur 25 m, largeur 14 m).A = ?
+- `T10C3` a) P = (25 + 14) × 2 = 78 m a) A = 25 × 14 = 350 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUn champ rectangulaire mesure 32 m de longueur et 15 m de largeur. Calcule son périmètre et son aire.a) Périmètreb) AireExercice 2 — ProblèmeKoto veut clôturer un terrain rectangulaire de 40 m de longueur et 20 m de largeur avec un grillage qui coûte 1 500 ariary le mètre. Quel est le coût total ?a) Périmètre du terrainb) Coût total
+- `T11C3` a) P = (32 + 15) × 2 = 94 mb) A = 32 × 15 = 480 m² a) P = (40 + 20) × 2 = 120 mb) Coût = 120 × 1 500 = 180 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le rectangle
+- `P` L = 18 m / l = 9 m
+- `P` Propriétés
+- `P` • 4 côtés : 2 longueurs égales et 2 largeurs égales
+- `P` • 4 angles droits (90°)
+- `P` Formules
+- `P` Périmètre : P = (L + l) × 2
+- `P` Le rectangle a deux longueurs et deux largeurs : on additionne L + l, puis on multiplie par 2 car cette somme apparaît deux fois.
+- `P` Aire : A = L × l
+- `P` L'aire d'un rectangle est le produit de sa longueur par sa largeur.
+- `P` Exemple
+- `P` Calcule le périmètre et l'aire d'un rectangle de longueur L = 18 m et de largeur l = 9 m.
+- `P` P = (L + l) × 2
+- `P` P = (18 + 9) × 2
+- `P` P = 27 × 2
+- `P` P = 54 m
+- `P` A = L × l
+- `P` A = 18 × 9
+- `P` A = 162 m²
+- `P` Attention : ne pas additionner seulement une longueur et une largeur pour le périmètre : il faut bien compter les 4 côtés, donc multiplier la somme (L + l) par 2. Une erreur fréquente est d'oublier ce « × 2 » et de donner un périmètre deux fois trop petit.
+- `P` EXERCICES
+- `P` Exercice 1 — Périmètre (5 points)
+- `P` Calcule le périmètre d'un rectangle de longueur 25 m et de largeur 14 m.
+- `P` P = ?
+- `P` Corrigé :
+- `P` a) P = (25 + 14) × 2 = 78 m
+- `P` Exercice 2 — Aire (5 points)
+- `P` Calcule l'aire du même rectangle (longueur 25 m, largeur 14 m).
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = 25 × 14 = 350 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Un champ rectangulaire mesure 32 m de longueur et 15 m de largeur. Calcule son périmètre et son aire.
+- `P` a) Périmètre
+- `P` b) Aire
+- `P` Corrigé :
+- `P` a) P = (32 + 15) × 2 = 94 m
+- `P` b) A = 32 × 15 = 480 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Koto veut clôturer un terrain rectangulaire de 40 m de longueur et 20 m de largeur avec un grillage qui coûte 1 500 ariary le mètre. Quel est le coût total ?
+- `P` a) Périmètre du terrain
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) P = (40 + 20) × 2 = 120 m
+- `P` b) Coût = 120 × 1 500 = 180 000 ariary
+- `P` Total : 20 points
+
+### Séance 7 / 81 — Le triangle
+
+- Indicateurs : 47 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 7 / 81
+- `P` Le triangle
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Périmètre et aire des figures planes
+- `T3C3` Séance n° :
+- `T3C4` 23 à 24
+- `T4C1` Titre :
+- `T4C2` Le triangle
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un triangle, calculer son périmètre et son aire
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du triangle, règle graduée, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du rectangle ?Quelle est l'unité de l'aire d'un terrain mesuré en mètres ?
+- `T3C3` R.A. : A = L × l.R.A. : Le mètre carré (m²).
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Aina possède un terrain en forme de triangle, hérité de sa grand-mère. La base mesure 12 m, la hauteur 9 m, et le troisième côté (l'hypoténuse) 15 m. Elle veut connaître la longueur totale de la clôture et la surface du terrain.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le triangle ». Après cette séance, vous serez capables de reconnaître un triangle et de calculer son périmètre et son aire.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du triangle dessinée au tableau, avec sa base, sa hauteur et son troisième côté indiqués.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de côtés a un triangle ?Dans cette figure, quel angle est un angle droit ?Comment calculer le tour complet du terrain d'Aina (12 m, 9 m et 15 m) ?Pour l'aire, pourquoi divise-t-on le produit base × hauteur par 2 ?
+- `T8C3` R.A. : Trois côtés.R.A. : L'angle entre la base et la hauteur.R.A. : Il faut additionner les trois côtés : 12 + 9 + 15.R.A. : Parce qu'un triangle rectangle correspond exactement à la moitié d'un rectangle de mêmes base et hauteur.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le triangle est une figure plane à trois côtés. Pour calculer son périmètre, on additionne ses trois côtés : P = a + b + c. Pour calculer son aire, on multiplie la base par la hauteur puis on divise par 2 : A = (b × h) ÷ 2, car le triangle représente la moitié d'un rectangle de mêmes dimensions.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — PérimètreUn triangle a des côtés de 6 m, 8 m et 10 m. Calcule son périmètre.P = ?Exercice 2 — AireUn triangle a une base de 20 m et une hauteur de 15 m. Calcule son aire.A = ?
+- `T10C3` a) P = 6 + 8 + 10 = 24 m a) A = (20 × 15) ÷ 2 = 150 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUn champ triangulaire a une base de 15 m, une hauteur de 20 m et un troisième côté de 25 m. Calcule son périmètre et son aire.a) Périmètreb) AireExercice 2 — ProblèmeUn terrain triangulaire a une base de 6 m et une hauteur de 8 m. Quelle surface représente-t-il en mètres carrés ?A = ?
+- `T11C3` a) P = 15 + 20 + 25 = 60 mb) A = (15 × 20) ÷ 2 = 150 m² a) A = (6 × 8) ÷ 2 = 24 m²
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le triangle
+- `P` b = 12 m, h = 9 m, hypoténuse = 15 m
+- `P` Propriétés
+- `P` • 3 côtés
+- `P` • Ici, un angle droit entre la base et la hauteur (triangle rectangle)
+- `P` Formules
+- `P` Périmètre : P = a + b + c
+- `P` On additionne simplement les trois côtés du triangle.
+- `P` Aire : A = (b × h) ÷ 2
+- `P` Le triangle rectangle est la moitié d'un rectangle de longueur b et de largeur h ; on divise donc le produit b × h par 2.
+- `P` Exemple
+- `P` Calcule le périmètre et l'aire du terrain d'Aina : base b = 12 m, hauteur h = 9 m, troisième côté = 15 m.
+- `P` P = 12 + 9 + 15
+- `P` P = 36 m
+- `P` A = (b × h) ÷ 2
+- `P` A = (12 × 9) ÷ 2
+- `P` A = 108 ÷ 2
+- `P` A = 54 m²
+- `P` Attention : ne pas oublier de diviser par 2 dans la formule de l'aire du triangle : c'est l'erreur la plus fréquente, car on calcule alors l'aire d'un rectangle au lieu de celle du triangle (le résultat est deux fois trop grand). Attention aussi à ne pas confondre la hauteur avec le troisième côté du triangle : ce ne sont pas la même mesure.
+- `P` EXERCICES
+- `P` Exercice 1 — Périmètre (5 points)
+- `P` Un triangle a des côtés de 6 m, 8 m et 10 m. Calcule son périmètre.
+- `P` P = ?
+- `P` Corrigé :
+- `P` a) P = 6 + 8 + 10 = 24 m
+- `P` Exercice 2 — Aire (5 points)
+- `P` Un triangle a une base de 20 m et une hauteur de 15 m. Calcule son aire.
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = (20 × 15) ÷ 2 = 150 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Un champ triangulaire a une base de 15 m, une hauteur de 20 m et un troisième côté de 25 m. Calcule son périmètre et son aire.
+- `P` a) Périmètre
+- `P` b) Aire
+- `P` Corrigé :
+- `P` a) P = 15 + 20 + 25 = 60 m
+- `P` b) A = (15 × 20) ÷ 2 = 150 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un terrain triangulaire a une base de 6 m et une hauteur de 8 m. Quelle surface représente-t-il en mètres carrés ?
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = (6 × 8) ÷ 2 = 24 m²
+- `P` Total : 20 points
+
+### Séance 8 / 81 — Les unités de mesure de longueur
+
+- Indicateurs : 42 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 8 / 81
+- `P` Les unités de mesure de longueur
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures de longueur
+- `T3C3` Séance n° :
+- `T3C4` 25 à 28
+- `T4C1` Titre :
+- `T4C2` Les unités de mesure de longueur
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Connaître les unités de longueur et convertir une mesure d'une unité à une autre
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau des unités de longueur, mètre ruban, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Quelle unité utilise-t-on pour mesurer la longueur d'un cahier ?Quelle unité utilise-t-on pour mesurer la distance entre deux villes ?
+- `T3C3` R.A. : Le centimètre.R.A. : Le kilomètre.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Lova va au marché pour acheter 3,45 mètres de tissu pour coudre une robe. Le vendeur mesure avec son mètre ruban gradué en centimètres. Lova doit vérifier si le vendeur lui a donné la bonne quantité en centimètres.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les unités de mesure de longueur ». Après cette séance, vous serez capables de connaître les unités de longueur et de convertir une mesure d'une unité à une autre.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le tableau des unités de longueur affiché au tableau noir : km, hm, dam, m, dm, cm, mm.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien d'unités voyez-vous dans ce tableau ?Combien de mètres y a-t-il dans 1 kilomètre ?Pour convertir 3,45 km en mètres, que doit-on faire ?Pour convertir 250 cm en mètres, que doit-on faire ?
+- `T8C3` R.A. : Sept unités : km, hm, dam, m, dm, cm, mm.R.A. : 1 km = 1 000 m.R.A. : On déplace la virgule de trois rangs vers la droite (car on va vers une unité plus petite), ce qui donne 3 450 m.R.A. : On déplace la virgule de deux rangs vers la gauche (car on va vers une unité plus grande), ce qui donne 2,50 m.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, les unités de longueur, du plus grand au plus petit, sont : km, hm, dam, m, dm, cm, mm. Chaque unité vaut 10 fois l'unité suivante. Pour convertir vers une unité plus petite, on déplace la virgule vers la droite ; pour convertir vers une unité plus grande, on déplace la virgule vers la gauche, d'autant de rangs que de colonnes parcourues dans le tableau.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Conversion vers une unité plus petiteConvertis en mètres.a) 0,008 kmb) 12 damExercice 2 — Conversion vers une unité plus grandeConvertis en mètres.a) 1 250 cmb) 45 dm
+- `T10C3` a) 0,008 km = 8 mb) 12 dam = 120 m a) 1 250 cm = 12,50 mb) 45 dm = 4,5 m
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ConversionsConvertis les mesures suivantes.a) 5,2 km en mb) 630 cm en mc) 8 m en mmExercice 2 — ProblèmeLe vendeur de Lova a mesuré 345 cm de tissu. Est-ce la même quantité que 3,45 m demandés par Lova ? Justifie.Réponse et justification
+- `T11C3` a) 5,2 km = 5 200 mb) 630 cm = 6,30 mc) 8 m = 8 000 mm a) Oui : 345 cm = 3,45 m (on déplace la virgule de deux rangs vers la gauche), c'est la même quantité.
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les unités de mesure de longueur
+- `P` Le tableau des unités
+- `T1C1` km
+- `T1C2` hm
+- `T1C3` dam
+- `T1C4` m
+- `T1C5` dm
+- `T1C6` cm
+- `T1C7` mm
+- `T2C1` 3
+- `T2C2` ,
+- `T2C3` 4
+- `T2C4` 5
+- `T2C5` 0
+- `T3C4` 2
+- `T3C5` ,
+- `T3C6` 5
+- `T3C7` 0
+- `T4C4` 7
+- `T4C5` ,
+- `T4C6` 0
+- `T4C7` 5
+- `P` 3,45 km = 3 450 m
+- `P` 250 cm = 2,50 m
+- `P` 7 m 5 cm = 7,05 m
+- `P` Règle de conversion
+- `P` Pour convertir, on place le chiffre des unités de la mesure de départ dans sa colonne du tableau, puis on complète avec des zéros si besoin jusqu'à la colonne de l'unité d'arrivée, en ajoutant la virgule à cette dernière position.
+- `P` Attention : le piège le plus fréquent est de se tromper dans le nombre de rangs à déplacer la virgule : il faut toujours compter précisément le nombre de colonnes entre l'unité de départ et l'unité d'arrivée dans le tableau, jamais déplacer la virgule « au hasard » d'un ou deux rangs.
+- `P` EXERCICES
+- `P` Exercice 1 — Conversion vers une unité plus petite (5 points)
+- `P` Convertis en mètres.
+- `P` a) 0,008 km
+- `P` b) 12 dam
+- `P` Corrigé :
+- `P` a) 0,008 km = 8 m
+- `P` b) 12 dam = 120 m
+- `P` Exercice 2 — Conversion vers une unité plus grande (5 points)
+- `P` Convertis en mètres.
+- `P` a) 1 250 cm
+- `P` b) 45 dm
+- `P` Corrigé :
+- `P` a) 1 250 cm = 12,50 m
+- `P` b) 45 dm = 4,5 m
+- `P` Exercice 1 — Conversions (5 points)
+- `P` Convertis les mesures suivantes.
+- `P` a) 5,2 km en m
+- `P` b) 630 cm en m
+- `P` c) 8 m en mm
+- `P` Corrigé :
+- `P` a) 5,2 km = 5 200 m
+- `P` b) 630 cm = 6,30 m
+- `P` c) 8 m = 8 000 mm
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le vendeur de Lova a mesuré 345 cm de tissu. Est-ce la même quantité que 3,45 m demandés par Lova ? Justifie.
+- `P` Réponse et justification
+- `P` Corrigé :
+- `P` a) Oui : 345 cm = 3,45 m (on déplace la virgule de deux rangs vers la gauche), c'est la même quantité.
+- `P` Total : 20 points
+
+### Séance 9 / 81 — L'échelle sur une carte
+
+- Indicateurs : 36 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 9 / 81
+- `P` L'échelle sur une carte
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures de longueur
+- `T3C3` Séance n° :
+- `T3C4` 29 à 30
+- `T4C1` Titre :
+- `T4C2` L'échelle sur une carte
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Comprendre la notion d'échelle et calculer une distance réelle à partir d'une carte
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Carte de Madagascar, règle graduée, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Combien de mètres y a-t-il dans 1 kilomètre ?Combien de centimètres y a-t-il dans 1 mètre ?
+- `T3C3` R.A. : 1 km = 1 000 m.R.A. : 1 m = 100 cm.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Sur la carte de Madagascar affichée en classe, Tiana mesure avec sa règle 4 cm entre Antananarivo et une ville voisine. Sur la carte est écrit « Échelle : 1/50 000 ». Tiana se demande quelle est la vraie distance entre les deux villes.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « L'échelle sur une carte ». Après cette séance, vous serez capables de comprendre ce que signifie une échelle et de calculer une distance réelle à partir d'une mesure sur une carte.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la carte de Madagascar affichée avec son échelle indiquée « 1/50 000 ».
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Que signifie « 1/50 000 » écrit sur la carte ?Tiana a mesuré 4 cm sur la carte. Combien cela fait-il de centimètres réels ?200 000 cm, combien cela fait-il de kilomètres ?
+- `T8C3` R.A. : Cela signifie que 1 cm mesuré sur la carte représente 50 000 cm dans la réalité.R.A. : 4 × 50 000 = 200 000 cm dans la réalité.R.A. : 200 000 cm = 2 000 m = 2 km.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, l'échelle d'une carte indique le rapport entre une distance mesurée sur la carte et la distance réelle correspondante. Une échelle « 1/n » signifie que 1 cm sur la carte représente n cm dans la réalité. Pour trouver la distance réelle, on multiplie la distance mesurée sur la carte (en cm) par le dénominateur n de l'échelle, puis on convertit le résultat en mètres ou en kilomètres si besoin.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Calcul de distance réelleSur une carte à l'échelle 1/25 000, deux villages sont distants de 6 cm. Calcule la distance réelle en km.Distance réelle = ?Exercice 2 — Calcul de distance réelleSur une carte à l'échelle 1/100 000, une rivière mesure 2,5 cm. Calcule sa longueur réelle en km.Distance réelle = ?
+- `T10C3` a) 6 × 25 000 = 150 000 cm = 1,5 km a) 2,5 × 100 000 = 250 000 cm = 2,5 km
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeSur une carte à l'échelle 1/50 000, la distance entre deux écoles mesure 3 cm. Quelle est la distance réelle en km ?Distance réelle = ?Exercice 2 — Problème inverseLa distance réelle entre deux villes est de 15 km. Sur une carte à l'échelle 1/50 000, quelle sera la distance mesurée sur la carte, en cm ?Distance sur la carte = ?
+- `T11C3` a) 3 × 50 000 = 150 000 cm = 1,5 km a) 15 km = 1 500 000 cm ; 1 500 000 ÷ 50 000 = 30 cm
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` L'échelle sur une carte
+- `P` Règle
+- `P` Donc, l'échelle d'une carte indique le rapport entre une distance mesurée sur la carte et la distance réelle correspondante. Une échelle « 1/n » signifie que 1 cm sur la carte représente n cm dans la réalité. Pour trouver la distance réelle, on multiplie la distance mesurée sur la carte (en cm) par le dénominateur n de l'échelle, puis on convertit le résultat en mètres ou en kilomètres si besoin.
+- `P` Exemple
+- `P` Sur une carte à l'échelle 1/50 000, la distance entre deux villages mesure 4 cm. Calcule la distance réelle en kilomètres.
+- `P` Distance réelle (en cm) = distance sur la carte × dénominateur de l'échelle
+- `P` Distance réelle = 4 × 50 000
+- `P` Distance réelle = 200 000 cm
+- `P` 200 000 cm = 2 000 m = 2 km
+- `P` Attention : toujours convertir la distance mesurée sur la carte en centimètres avant de multiplier par le dénominateur de l'échelle, et bien reconvertir le résultat final en mètres ou en kilomètres — un résultat en centimètres pour une distance entre deux villes n'a pas de sens pratique.
+- `P` EXERCICES
+- `P` Exercice 1 — Calcul de distance réelle (5 points)
+- `P` Sur une carte à l'échelle 1/25 000, deux villages sont distants de 6 cm. Calcule la distance réelle en km.
+- `P` Distance réelle = ?
+- `P` Corrigé :
+- `P` a) 6 × 25 000 = 150 000 cm = 1,5 km
+- `P` Exercice 2 — Calcul de distance réelle (5 points)
+- `P` Sur une carte à l'échelle 1/100 000, une rivière mesure 2,5 cm. Calcule sa longueur réelle en km.
+- `P` Distance réelle = ?
+- `P` Corrigé :
+- `P` a) 2,5 × 100 000 = 250 000 cm = 2,5 km
+- `P` Exercice 1 — Problème (5 points)
+- `P` Sur une carte à l'échelle 1/50 000, la distance entre deux écoles mesure 3 cm. Quelle est la distance réelle en km ?
+- `P` Distance réelle = ?
+- `P` Corrigé :
+- `P` a) 3 × 50 000 = 150 000 cm = 1,5 km
+- `P` Exercice 2 — Problème inverse (5 points)
+- `P` La distance réelle entre deux villes est de 15 km. Sur une carte à l'échelle 1/50 000, quelle sera la distance mesurée sur la carte, en cm ?
+- `P` Distance sur la carte = ?
+- `P` Corrigé :
+- `P` a) 15 km = 1 500 000 cm ; 1 500 000 ÷ 50 000 = 30 cm
+- `P` Total : 20 points
+
+### Séance 10 / 81 — L'addition
+
+- Indicateurs : 39 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 10 / 81
+- `P` L'addition
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les quatre opérations
+- `T3C3` Séance n° :
+- `T3C4` 31 à 32
+- `T4C1` Titre :
+- `T4C2` L'addition
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Poser et effectuer une addition avec retenue, connaître ses propriétés
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Range dans l'ordre croissant : 764, 305, 918.Combien font 10 unités ?
+- `T3C3` R.A. : 305 < 764 < 918.R.A. : 10 unités font 1 dizaine.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Au marché, la mère de Fara a vendu 345 mangues le lundi et 267 mangues le mardi. Fara veut savoir combien de mangues sa mère a vendues en tout sur les deux jours.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « L'addition ». Après cette séance, vous serez capables de poser et d'effectuer une addition avec retenue, et de connaître ses propriétés.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien l'addition 345 + 267 posée en colonnes au tableau noir.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Que fait-on en premier pour poser une addition ?Dans 345 + 267, combien font les unités : 5 + 7 ?Que fait-on de cette retenue ?Et pour finir, les centaines ?
+- `T8C3` R.A. : On aligne les nombres par la droite : unités sous unités, dizaines sous dizaines, centaines sous centaines.R.A. : 5 + 7 = 12 : on écrit 2 et on retient 1 dizaine.R.A. : On l'ajoute à la colonne des dizaines : 4 + 6 + 1 = 11, on écrit 1 et on retient 1 centaine.R.A. : 3 + 2 + 1 (la retenue) = 6.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour poser une addition, on aligne les nombres par la droite, colonne par colonne. On additionne chaque colonne en partant de la droite (les unités). Si le résultat d'une colonne dépasse 9, on écrit le chiffre des unités et on retient le chiffre des dizaines pour l'ajouter à la colonne suivante.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Addition poséePose et effectue l'addition suivante : 4 567 + 2 895.4 567 + 2 895 = ?Exercice 2 — PreuveVérifie le résultat de l'exercice 1 par soustraction.7 462 − 2 895 = ?
+- `T10C3` a) 4 567 + 2 895 = 7 462 a) 7 462 − 2 895 = 4 567, ce qui confirme le résultat.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Addition poséePose et effectue l'addition suivante : 238 + 156 + 72.238 + 156 + 72 = ?Exercice 2 — ProblèmeLa mère de Fara a vendu 345 mangues le lundi et 267 mangues le mardi. Combien de mangues a-t-elle vendues en tout ?Total = ?
+- `T11C3` a) 238 + 156 + 72 = 466 a) 345 + 267 = 612 mangues
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` L'addition
+- `P` Technique opératoire
+- `P` Pour additionner deux nombres, on les pose l'un sous l'autre en alignant les unités, les dizaines et les centaines. On additionne chaque colonne de droite à gauche. Quand une colonne dépasse 9, on pose le chiffre des unités et on reporte la retenue sur la colonne suivante.
+- `P` Exemple posé :
+- `T1C2` 3
+- `T1C3` 4
+- `T1C4` 5
+- `T2C1` +
+- `T2C2` 2
+- `T2C3` 6
+- `T2C4` 7
+- `T3C1` =
+- `T3C2` 6
+- `T3C3` 1
+- `T3C4` 2
+- `P` Unités : 5 + 7 = 12 → on écrit 2, on retient 1.
+- `P` Dizaines : 4 + 6 + 1 (retenue) = 11 → on écrit 1, on retient 1.
+- `P` Centaines : 3 + 2 + 1 (retenue) = 6 → on écrit 6.
+- `P` Résultat : 345 + 267 = 612.
+- `P` Propriétés
+- `P` • Commutativité : l'ordre des nombres ne change pas le résultat (345 + 267 = 267 + 345).
+- `P` • Associativité : on peut regrouper les nombres différemment sans changer le résultat ((238 + 156) + 72 = 238 + (156 + 72)).
+- `P` • La preuve par soustraction : pour vérifier une addition, on soustrait un des deux nombres du résultat, on doit retrouver l'autre nombre (612 − 267 = 345).
+- `P` Attention : bien aligner les chiffres par la droite (unités sous unités) avant d'additionner, surtout quand les nombres n'ont pas le même nombre de chiffres. Une retenue oubliée est l'erreur la plus fréquente : toujours vérifier qu'aucune colonne ne dépasse 9 sans retenue reportée.
+- `P` EXERCICES
+- `P` Exercice 1 — Addition posée (5 points)
+- `P` Pose et effectue l'addition suivante : 4 567 + 2 895.
+- `P` 4 567 + 2 895 = ?
+- `P` Corrigé :
+- `P` a) 4 567 + 2 895 = 7 462
+- `P` Exercice 2 — Preuve (5 points)
+- `P` Vérifie le résultat de l'exercice 1 par soustraction.
+- `P` 7 462 − 2 895 = ?
+- `P` Corrigé :
+- `P` a) 7 462 − 2 895 = 4 567, ce qui confirme le résultat.
+- `P` Exercice 1 — Addition posée (5 points)
+- `P` Pose et effectue l'addition suivante : 238 + 156 + 72.
+- `P` 238 + 156 + 72 = ?
+- `P` Corrigé :
+- `P` a) 238 + 156 + 72 = 466
+- `P` Exercice 2 — Problème (5 points)
+- `P` La mère de Fara a vendu 345 mangues le lundi et 267 mangues le mardi. Combien de mangues a-t-elle vendues en tout ?
+- `P` Total = ?
+- `P` Corrigé :
+- `P` a) 345 + 267 = 612 mangues
+- `P` Total : 20 points
+
+### Séance 11 / 81 — La soustraction
+
+- Indicateurs : 38 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 11 / 81
+- `P` La soustraction
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les quatre opérations
+- `T3C3` Séance n° :
+- `T3C4` 33 à 35
+- `T4C1` Titre :
+- `T4C2` La soustraction
+- `T4C3` Durée :
+- `T4C4` 3 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Poser et effectuer une soustraction avec emprunt, vérifier le résultat par une preuve
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment pose-t-on une addition ?Quelle est la preuve d'une addition ?
+- `T3C3` R.A. : On aligne les nombres par la droite, unités sous unités.R.A. : On soustrait un nombre du résultat, on doit retrouver l'autre nombre.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Rado avait 742 ariary d'économies. Il a dépensé 358 ariary pour acheter un cahier et un stylo. Il veut savoir combien d'argent il lui reste.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La soustraction ». Après cette séance, vous serez capables de poser et d'effectuer une soustraction avec emprunt, et de vérifier votre résultat par une preuve.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la soustraction 742 − 358 posée en colonnes au tableau noir.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Dans 742 − 358, peut-on faire directement 2 − 8 aux unités ?Comment fait-on cet emprunt ?Aux dizaines, que doit-on calculer maintenant ?Aux centaines, que reste-t-il à calculer ?
+- `T8C3` R.A. : Non, 2 est plus petit que 8 : il faut emprunter 1 dizaine au chiffre voisin.R.A. : On transforme le 4 des dizaines en 3, et on ajoute 10 aux unités : 12 − 8 = 4.R.A. : 3 (après l'emprunt) − 5 : c'est encore trop petit, on emprunte à nouveau aux centaines : 13 − 5 = 8.R.A. : 6 (après l'emprunt) − 3 = 3.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour poser une soustraction, on aligne les nombres par la droite. On soustrait chaque colonne de droite à gauche. Quand le chiffre du haut est plus petit que celui du bas, on emprunte 1 dizaine à la colonne suivante (on ajoute 10 au chiffre du haut, et on retire 1 au chiffre voisin de gauche).
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Soustraction poséePose et effectue la soustraction suivante : 6 003 − 1 875.6 003 − 1 875 = ?Exercice 2 — PreuveVérifie le résultat de l'exercice 1 par addition.4 128 + 1 875 = ?
+- `T10C3` a) 6 003 − 1 875 = 4 128 a) 4 128 + 1 875 = 6 003, ce qui confirme le résultat.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Soustraction poséePose et effectue la soustraction suivante : 8 000 − 3 456.8 000 − 3 456 = ?Exercice 2 — ProblèmeRado avait 742 ariary. Il a dépensé 358 ariary. Combien d'argent lui reste-t-il ?Reste = ?
+- `T11C3` a) 8 000 − 3 456 = 4 544 a) 742 − 358 = 384 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La soustraction
+- `P` Technique opératoire
+- `P` Pour soustraire deux nombres, on les pose l'un sous l'autre en alignant les unités, les dizaines et les centaines. On soustrait chaque colonne de droite à gauche. Si le chiffre du haut est plus petit que celui du bas, on emprunte 1 dizaine à la colonne voisine.
+- `P` Exemple posé :
+- `T1C2` 7
+- `T1C3` 4
+- `T1C4` 2
+- `T2C1` −
+- `T2C2` 3
+- `T2C3` 5
+- `T2C4` 8
+- `T3C1` =
+- `T3C2` 3
+- `T3C3` 8
+- `T3C4` 4
+- `P` Unités : 2 est plus petit que 8, on emprunte 1 dizaine → 12 − 8 = 4.
+- `P` Dizaines : 4 devient 3 (après l'emprunt), 3 est plus petit que 5, on emprunte 1 centaine → 13 − 5 = 8.
+- `P` Centaines : 7 devient 6 (après l'emprunt), 6 − 3 = 3.
+- `P` Résultat : 742 − 358 = 384.
+- `P` Propriétés
+- `P` • La soustraction n'est pas commutative : 742 − 358 est différent de 358 − 742.
+- `P` • La preuve par addition : pour vérifier une soustraction, on additionne le résultat et le nombre soustrait, on doit retrouver le premier nombre (384 + 358 = 742).
+- `P` Attention : un emprunt oublié est l'erreur la plus fréquente : dès qu'un chiffre du haut est plus petit que celui du bas, il faut obligatoirement emprunter, jamais soustraire « à l'envers » (petit moins grand). Après un emprunt, ne pas oublier de retirer 1 au chiffre voisin de gauche.
+- `P` EXERCICES
+- `P` Exercice 1 — Soustraction posée (5 points)
+- `P` Pose et effectue la soustraction suivante : 6 003 − 1 875.
+- `P` 6 003 − 1 875 = ?
+- `P` Corrigé :
+- `P` a) 6 003 − 1 875 = 4 128
+- `P` Exercice 2 — Preuve (5 points)
+- `P` Vérifie le résultat de l'exercice 1 par addition.
+- `P` 4 128 + 1 875 = ?
+- `P` Corrigé :
+- `P` a) 4 128 + 1 875 = 6 003, ce qui confirme le résultat.
+- `P` Exercice 1 — Soustraction posée (5 points)
+- `P` Pose et effectue la soustraction suivante : 8 000 − 3 456.
+- `P` 8 000 − 3 456 = ?
+- `P` Corrigé :
+- `P` a) 8 000 − 3 456 = 4 544
+- `P` Exercice 2 — Problème (5 points)
+- `P` Rado avait 742 ariary. Il a dépensé 358 ariary. Combien d'argent lui reste-t-il ?
+- `P` Reste = ?
+- `P` Corrigé :
+- `P` a) 742 − 358 = 384 ariary
+- `P` Total : 20 points
+
+### Séance 12 / 81 — La multiplication
+
+- Indicateurs : 41 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 12 / 81
+- `P` La multiplication
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les quatre opérations
+- `T3C3` Séance n° :
+- `T3C4` 36 à 41
+- `T4C1` Titre :
+- `T4C2` La multiplication
+- `T4C3` Durée :
+- `T4C4` 6 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Poser et effectuer une multiplication par un nombre à deux chiffres, connaître ses propriétés
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION20 min
+- `T3C2` Comment pose-t-on une soustraction avec emprunt ?Combien font 324 × 10 ?
+- `T3C3` R.A. : On emprunte 1 dizaine à la colonne voisine quand le chiffre du haut est trop petit.R.A. : 3 240 : on ajoute simplement un zéro.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 120 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un camion transporte 23 caisses de 324 briques chacune vers un chantier à Antsirabe. Le chef de chantier veut connaître le nombre total de briques livrées avant de signer le bon de réception.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La multiplication ». Après cette séance, vous serez capables de poser et d'effectuer une multiplication par un nombre à deux chiffres, et de connaître ses propriétés.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la multiplication 324 × 23 posée en colonnes au tableau noir, avec ses deux produits intermédiaires.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Par quel chiffre du nombre 23 commence-t-on à multiplier ?Combien fait 324 × 3 ?Combien fait 324 × 20 ?Que fait-on de ces deux résultats intermédiaires ?
+- `T8C3` R.A. : On commence par le chiffre des unités (3), puis on continue avec le chiffre des dizaines (2).R.A. : 324 × 3 = 972 : c'est le premier produit intermédiaire.R.A. : 324 × 20 = 6 480 : c'est le deuxième produit intermédiaire.R.A. : On les additionne : 972 + 6 480 = 7 452.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour multiplier un nombre par un nombre à deux chiffres, on multiplie d'abord par le chiffre des unités, puis par le chiffre des dizaines (en décalant d'un rang vers la gauche), et on additionne les deux résultats intermédiaires pour obtenir le produit final.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Multiplication poséePose et effectue la multiplication suivante : 156 × 47.156 × 47 = ?Exercice 2 — Calcul rapideCalcule directement.a) 156 × 40b) 156 × 7
+- `T10C3` a) 156 × 47 = 7 332 a) 156 × 40 = 6 240b) 156 × 7 = 1 092
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION40 min
+- `T11C2` Exercice 1 — Multiplication poséePose et effectue la multiplication suivante : 238 × 15.238 × 15 = ?Exercice 2 — ProblèmeUn camion transporte 23 caisses de 324 briques chacune. Combien de briques le camion transporte-t-il au total ?Total = ?
+- `T11C3` a) 238 × 15 = 3 570 a) 324 × 23 = 7 452 briques
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La multiplication
+- `P` Technique opératoire
+- `P` Pour multiplier 324 par 23, on multiplie d'abord 324 par 3 (chiffre des unités), puis 324 par 20 (chiffre des dizaines), et on additionne les deux résultats intermédiaires.
+- `P` Exemple posé :
+- `T1C3` 9
+- `T1C4` 7
+- `T1C5` 2
+- `T2C1` +
+- `T2C2` 6
+- `T2C3` 4
+- `T2C4` 8
+- `T2C5` 0
+- `T3C1` =
+- `T3C2` 7
+- `T3C3` 4
+- `T3C4` 5
+- `T3C5` 2
+- `P` 324 × 3 = 972 (premier produit intermédiaire).
+- `P` 324 × 20 = 6 480 (deuxième produit intermédiaire).
+- `P` 972 + 6 480 = 7 452.
+- `P` Résultat : 324 × 23 = 7 452.
+- `P` Propriétés
+- `P` • Commutativité : l'ordre des facteurs ne change pas le résultat (324 × 23 = 23 × 324).
+- `P` • Multiplier par 10, c'est ajouter un zéro à droite du nombre (324 × 10 = 3 240).
+- `P` • La preuve par division : pour vérifier une multiplication, on divise le résultat par un des deux facteurs, on doit retrouver l'autre facteur (7 452 ÷ 23 = 324).
+- `P` Attention : bien décaler le deuxième produit intermédiaire d'un rang vers la gauche (multiplier par les dizaines donne un nombre qui se termine toujours par 0) avant d'additionner. Oublier ce décalage est l'erreur la plus fréquente et donne un résultat beaucoup trop petit.
+- `P` EXERCICES
+- `P` Exercice 1 — Multiplication posée (5 points)
+- `P` Pose et effectue la multiplication suivante : 156 × 47.
+- `P` 156 × 47 = ?
+- `P` Corrigé :
+- `P` a) 156 × 47 = 7 332
+- `P` Exercice 2 — Calcul rapide (5 points)
+- `P` Calcule directement.
+- `P` a) 156 × 40
+- `P` b) 156 × 7
+- `P` Corrigé :
+- `P` a) 156 × 40 = 6 240
+- `P` b) 156 × 7 = 1 092
+- `P` Exercice 1 — Multiplication posée (5 points)
+- `P` Pose et effectue la multiplication suivante : 238 × 15.
+- `P` 238 × 15 = ?
+- `P` Corrigé :
+- `P` a) 238 × 15 = 3 570
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un camion transporte 23 caisses de 324 briques chacune. Combien de briques le camion transporte-t-il au total ?
+- `P` Total = ?
+- `P` Corrigé :
+- `P` a) 324 × 23 = 7 452 briques
+- `P` Total : 20 points
+
+### Séance 13 / 81 — La division
+
+- Indicateurs : 40 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 13 / 81
+- `P` La division
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les quatre opérations
+- `T3C3` Séance n° :
+- `T3C4` 42 à 47
+- `T4C1` Titre :
+- `T4C2` La division
+- `T4C3` Durée :
+- `T4C4` 6 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Poser et effectuer une division euclidienne, distinguer division exacte et division avec reste
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION20 min
+- `T3C2` Quelle est la preuve d'une multiplication ?Combien font 8 × 7 ?
+- `T3C3` R.A. : On divise le résultat par un des facteurs, on doit retrouver l'autre facteur.R.A. : 8 × 7 = 56.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 120 min
+- `T5C1` 1. Mise en situation
+- `T5C2` La maîtresse a 456 cahiers à répartir équitablement entre 8 classes de l'école. Elle veut savoir combien de cahiers donner à chaque classe.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La division ». Après cette séance, vous serez capables de poser et d'effectuer une division, et de distinguer une division exacte d'une division avec reste.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la division 456 ÷ 8 posée au tableau noir, chiffre par chiffre.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Peut-on diviser 4 (centaines) par 8 ?Combien de fois 8 dans 45 ?Que fait-on de ce reste avant de continuer ?Combien de fois 8 dans 56 ?
+- `T8C3` R.A. : Non, 4 est plus petit que 8, on abaisse le chiffre suivant : on prend 45.R.A. : 8 × 5 = 40, donc 5 fois, avec un reste de 45 − 40 = 5.R.A. : On abaisse le chiffre suivant (6) à côté du reste : on obtient 56.R.A. : 8 × 7 = 56, donc exactement 7 fois, reste 0.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour poser une division, on prend les chiffres du nombre à diviser un par un (ou groupés si le premier est trop petit), on cherche combien de fois le diviseur y entre, on écrit ce chiffre au quotient, on soustrait, et on abaisse le chiffre suivant pour continuer. Si le reste final est 0, la division est exacte ; sinon, il reste un reste.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Division poséePose et effectue la division suivante : 1 287 ÷ 15.1 287 ÷ 15 = ?Exercice 2 — PreuveVérifie le résultat de l'exercice 1.15 × 85 + 12 = ?
+- `T10C3` a) 1 287 ÷ 15 = 85, reste 12 a) 15 × 85 + 12 = 1 275 + 12 = 1 287, ce qui confirme le résultat.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION40 min
+- `T11C2` Exercice 1 — Division poséePose et effectue la division suivante : 963 ÷ 9.963 ÷ 9 = ?Exercice 2 — ProblèmeLa maîtresse a 456 cahiers à répartir équitablement entre 8 classes. Combien de cahiers chaque classe recevra-t-elle ?Réponse = ?
+- `T11C3` a) 963 ÷ 9 = 107, reste 0 (division exacte) a) 456 ÷ 8 = 57 cahiers par classe
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La division
+- `P` Technique opératoire
+- `P` Pour diviser 456 par 8, on avance chiffre par chiffre : on cherche combien de fois 8 entre dans 45 (les deux premiers chiffres), puis on abaisse le chiffre suivant pour continuer.
+- `P` Exemple posé :
+- `T1C2` 4
+- `T1C3` 5
+- `T1C4` 6
+- `T2C1` ÷8
+- `T2C2` 0
+- `T2C3` 5
+- `T2C4` 7
+- `P` 4 est plus petit que 8 : on prend 45.
+- `P` 8 × 5 = 40, reste 45 − 40 = 5 ; on écrit 5 au quotient.
+- `P` On abaisse le 6 : on obtient 56.
+- `P` 8 × 7 = 56, reste 0 ; on écrit 7 au quotient.
+- `P` Résultat : 456 ÷ 8 = 57, reste 0 (division exacte).
+- `P` Propriétés
+- `P` • Une division est exacte quand le reste final est 0.
+- `P` • Une division a un reste quand le reste final n'est pas 0 ; le reste est toujours plus petit que le diviseur.
+- `P` • La preuve de la division : quotient × diviseur + reste = nombre à diviser (57 × 8 + 0 = 456).
+- `P` Attention : ne jamais oublier d'abaisser le chiffre suivant après chaque soustraction, et bien vérifier que le reste à chaque étape est toujours plus petit que le diviseur — si ce n'est pas le cas, le chiffre choisi au quotient est trop petit.
+- `P` EXERCICES
+- `P` Exercice 1 — Division posée (5 points)
+- `P` Pose et effectue la division suivante : 1 287 ÷ 15.
+- `P` 1 287 ÷ 15 = ?
+- `P` Corrigé :
+- `P` a) 1 287 ÷ 15 = 85, reste 12
+- `P` Exercice 2 — Preuve (5 points)
+- `P` Vérifie le résultat de l'exercice 1.
+- `P` 15 × 85 + 12 = ?
+- `P` Corrigé :
+- `P` a) 15 × 85 + 12 = 1 275 + 12 = 1 287, ce qui confirme le résultat.
+- `P` Exercice 1 — Division posée (5 points)
+- `P` Pose et effectue la division suivante : 963 ÷ 9.
+- `P` 963 ÷ 9 = ?
+- `P` Corrigé :
+- `P` a) 963 ÷ 9 = 107, reste 0 (division exacte)
+- `P` Exercice 2 — Problème (5 points)
+- `P` La maîtresse a 456 cahiers à répartir équitablement entre 8 classes. Combien de cahiers chaque classe recevra-t-elle ?
+- `P` Réponse = ?
+- `P` Corrigé :
+- `P` a) 456 ÷ 8 = 57 cahiers par classe
+- `P` Total : 20 points
+
+### Séance 14 / 81 — La divisibilité par 2
+
+- Indicateurs : 35 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 14 / 81
+- `P` La divisibilité par 2
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Multiples et diviseurs
+- `T3C3` Séance n° :
+- `T3C4` 48
+- `T4C1` Titre :
+- `T4C2` La divisibilité par 2
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître si un nombre est divisible par 2 sans effectuer la division
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Que signifie une division exacte ?Cite les nombres pairs de 0 à 10.
+- `T3C3` R.A. : Le reste de la division est 0.R.A. : 0, 2, 4, 6, 8, 10.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le maître a 128 bonbons à répartir en parts égales entre les 2 rangées de la classe, sans les compter un par un. Il se demande s'il peut le faire sans reste.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La divisibilité par 2 ». Après cette séance, vous serez capables de reconnaître si un nombre est divisible par 2 sans effectuer la division.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien une liste de nombres écrite au tableau : 128, 245, 350, 891.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quel est le dernier chiffre de 128 ?Quel est le dernier chiffre de 245 ?128 ÷ 2 donne-t-il un reste ?245 ÷ 2 donne-t-il un reste ?
+- `T8C3` R.A. : 8, qui est un chiffre pair.R.A. : 5, qui est un chiffre impair.R.A. : Non, 128 ÷ 2 = 64, reste 0.R.A. : Oui, 245 ÷ 2 = 122, reste 1.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un nombre est divisible par 2 si son dernier chiffre (chiffre des unités) est 0, 2, 4, 6 ou 8 (un chiffre pair). Si le dernier chiffre est 1, 3, 5, 7 ou 9 (un chiffre impair), le nombre n'est pas divisible par 2.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Reconnaître la divisibilité par 2Parmi ces nombres, entoure ceux qui sont divisibles par 2 : 312, 615, 730, 891.312, 615, 730, 891Exercice 2 — JustificationExplique pourquoi 615 n'est pas divisible par 2.Justification
+- `T10C3` a) Divisibles par 2 : 312 et 730 (dernier chiffre pair) a) Le dernier chiffre de 615 est 5, qui est impair, donc 615 n'est pas divisible par 2.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Reconnaître la divisibilité par 2Parmi ces nombres, entoure ceux qui sont divisibles par 2 : 144, 981, 500, 342.144, 981, 500, 342Exercice 2 — ProblèmeUn vendeur a 350 oranges. Peut-il les répartir en 2 tas égaux sans reste ? Justifie.Réponse et justification
+- `T11C3` a) Divisibles par 2 : 144, 500 et 342 (dernier chiffre pair) a) Oui : le dernier chiffre de 350 est 0, qui est pair, donc 350 est divisible par 2 (350 ÷ 2 = 175).
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La divisibilité par 2
+- `P` Règle
+- `P` Donc, un nombre est divisible par 2 si son dernier chiffre (chiffre des unités) est 0, 2, 4, 6 ou 8 (un chiffre pair). Si le dernier chiffre est 1, 3, 5, 7 ou 9 (un chiffre impair), le nombre n'est pas divisible par 2.
+- `T1C1` Nombre
+- `T1C2` Dernier chiffre
+- `T1C3` Divisible ?
+- `T2C1` 128
+- `T2C2` 8
+- `T2C3` Oui
+- `T3C1` 245
+- `T3C2` 5
+- `T3C3` Non
+- `T4C1` 350
+- `T4C2` 0
+- `T4C3` Oui
+- `T5C1` 891
+- `T5C2` 1
+- `T5C3` Non
+- `P` Exemple
+- `P` Le maître a 128 bonbons. Peut-il les répartir en 2 parts égales sans reste ?
+- `P` Dernier chiffre de 128 : 8, qui est pair.
+- `P` Donc 128 est divisible par 2.
+- `P` 128 ÷ 2 = 64 bonbons par rangée, sans reste.
+- `P` Attention : on regarde uniquement le dernier chiffre du nombre, jamais les autres chiffres : un nombre comme 351 248 est divisible par 2 même s'il a beaucoup de chiffres, simplement parce que son dernier chiffre (8) est pair.
+- `P` EXERCICES
+- `P` Exercice 1 — Reconnaître la divisibilité par 2 (5 points)
+- `P` Parmi ces nombres, entoure ceux qui sont divisibles par 2 : 312, 615, 730, 891.
+- `P` 312, 615, 730, 891
+- `P` Corrigé :
+- `P` a) Divisibles par 2 : 312 et 730 (dernier chiffre pair)
+- `P` Exercice 2 — Justification (5 points)
+- `P` Explique pourquoi 615 n'est pas divisible par 2.
+- `P` Justification
+- `P` Corrigé :
+- `P` a) Le dernier chiffre de 615 est 5, qui est impair, donc 615 n'est pas divisible par 2.
+- `P` Exercice 1 — Reconnaître la divisibilité par 2 (5 points)
+- `P` Parmi ces nombres, entoure ceux qui sont divisibles par 2 : 144, 981, 500, 342.
+- `P` 144, 981, 500, 342
+- `P` Corrigé :
+- `P` a) Divisibles par 2 : 144, 500 et 342 (dernier chiffre pair)
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un vendeur a 350 oranges. Peut-il les répartir en 2 tas égaux sans reste ? Justifie.
+- `P` Réponse et justification
+- `P` Corrigé :
+- `P` a) Oui : le dernier chiffre de 350 est 0, qui est pair, donc 350 est divisible par 2 (350 ÷ 2 = 175).
+- `P` Total : 20 points
+
+### Séance 15 / 81 — La divisibilité par 5
+
+- Indicateurs : 35 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 15 / 81
+- `P` La divisibilité par 5
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Multiples et diviseurs
+- `T3C3` Séance n° :
+- `T3C4` 49 à 50
+- `T4C1` Titre :
+- `T4C2` La divisibilité par 5
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître si un nombre est divisible par 5 sans effectuer la division
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment reconnaît-on qu'un nombre est divisible par 2 ?128 est-il divisible par 2 ?
+- `T3C3` R.A. : Son dernier chiffre est pair (0, 2, 4, 6 ou 8).R.A. : Oui, car son dernier chiffre 8 est pair.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le directeur de l'école a 245 crayons à répartir en parts égales entre 5 classes. Il veut savoir si cela tombe juste, sans reste.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La divisibilité par 5 ». Après cette séance, vous serez capables de reconnaître si un nombre est divisible par 5 sans effectuer la division.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien une liste de nombres écrite au tableau : 245, 128, 350, 891.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quel est le dernier chiffre de 245 ?Quel est le dernier chiffre de 350 ?245 ÷ 5 donne-t-il un reste ?128 ÷ 5 donne-t-il un reste ?
+- `T8C3` R.A. : 5.R.A. : 0.R.A. : Non, 245 ÷ 5 = 49, reste 0.R.A. : Oui, 128 ÷ 5 = 25, reste 3.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un nombre est divisible par 5 si son dernier chiffre est 0 ou 5. Pour tout autre dernier chiffre, le nombre n'est pas divisible par 5.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Reconnaître la divisibilité par 5Parmi ces nombres, entoure ceux qui sont divisibles par 5 : 615, 730, 312, 500.615, 730, 312, 500Exercice 2 — Nombres divisibles par 2 ET par 5Parmi les nombres de l'exercice 1, lesquels sont divisibles à la fois par 2 et par 5 ?Réponse
+- `T10C3` a) Divisibles par 5 : 615, 730 et 500 (dernier chiffre 0 ou 5) a) 730 et 500 (dernier chiffre 0 : divisible par 2 et par 5 en même temps)
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Reconnaître la divisibilité par 5Parmi ces nombres, entoure ceux qui sont divisibles par 5 : 981, 144, 342, 675.981, 144, 342, 675Exercice 2 — ProblèmeUn fermier a 891 œufs. Peut-il les ranger en boîtes de 5 œufs sans en avoir qui restent ? Justifie.Réponse et justification
+- `T11C3` a) Divisible par 5 : 675 (dernier chiffre 5) a) Non : le dernier chiffre de 891 est 1, qui n'est ni 0 ni 5, donc 891 n'est pas divisible par 5.
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La divisibilité par 5
+- `P` Règle
+- `P` Donc, un nombre est divisible par 5 si son dernier chiffre est 0 ou 5. Pour tout autre dernier chiffre, le nombre n'est pas divisible par 5.
+- `T1C1` Nombre
+- `T1C2` Dernier chiffre
+- `T1C3` Divisible ?
+- `T2C1` 245
+- `T2C2` 5
+- `T2C3` Oui
+- `T3C1` 128
+- `T3C2` 8
+- `T3C3` Non
+- `T4C1` 350
+- `T4C2` 0
+- `T4C3` Oui
+- `T5C1` 891
+- `T5C2` 1
+- `T5C3` Non
+- `P` Exemple
+- `P` Le directeur a 245 crayons à répartir entre 5 classes. Cela tombe-t-il juste ?
+- `P` Dernier chiffre de 245 : 5.
+- `P` Donc 245 est divisible par 5.
+- `P` 245 ÷ 5 = 49 crayons par classe, sans reste.
+- `P` Attention : ne pas confondre le critère de 5 (dernier chiffre 0 ou 5) avec celui de 2 (dernier chiffre pair) : un nombre qui se termine par 5 est divisible par 5 mais pas par 2, car 5 est impair.
+- `P` EXERCICES
+- `P` Exercice 1 — Reconnaître la divisibilité par 5 (5 points)
+- `P` Parmi ces nombres, entoure ceux qui sont divisibles par 5 : 615, 730, 312, 500.
+- `P` 615, 730, 312, 500
+- `P` Corrigé :
+- `P` a) Divisibles par 5 : 615, 730 et 500 (dernier chiffre 0 ou 5)
+- `P` Exercice 2 — Nombres divisibles par 2 ET par 5 (5 points)
+- `P` Parmi les nombres de l'exercice 1, lesquels sont divisibles à la fois par 2 et par 5 ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 730 et 500 (dernier chiffre 0 : divisible par 2 et par 5 en même temps)
+- `P` Exercice 1 — Reconnaître la divisibilité par 5 (5 points)
+- `P` Parmi ces nombres, entoure ceux qui sont divisibles par 5 : 981, 144, 342, 675.
+- `P` 981, 144, 342, 675
+- `P` Corrigé :
+- `P` a) Divisible par 5 : 675 (dernier chiffre 5)
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un fermier a 891 œufs. Peut-il les ranger en boîtes de 5 œufs sans en avoir qui restent ? Justifie.
+- `P` Réponse et justification
+- `P` Corrigé :
+- `P` a) Non : le dernier chiffre de 891 est 1, qui n'est ni 0 ni 5, donc 891 n'est pas divisible par 5.
+- `P` Total : 20 points
+
+### Séance 16 / 81 — La divisibilité par 3
+
+- Indicateurs : 36 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 16 / 81
+- `P` La divisibilité par 3
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Multiples et diviseurs
+- `T3C3` Séance n° :
+- `T3C4` 51 à 52
+- `T4C1` Titre :
+- `T4C2` La divisibilité par 3
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître si un nombre est divisible par 3 en utilisant la somme de ses chiffres
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment reconnaît-on qu'un nombre est divisible par 5 ?Décompose 123 selon ses chiffres.
+- `T3C3` R.A. : Son dernier chiffre est 0 ou 5.R.A. : 123 = 100 + 20 + 3.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Trois amis, Hery, Tovo et Njara, ont ramassé 123 letchis ensemble. Ils veulent les partager équitablement entre eux trois, sans qu'il en reste.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La divisibilité par 3 ». Après cette séance, vous serez capables de reconnaître si un nombre est divisible par 3 en additionnant ses chiffres.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le nombre 123 écrit au tableau, avec ses chiffres 1, 2 et 3 encadrés séparément.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quels sont les chiffres de 123 ?Combien fait 1 + 2 + 3 ?6 est-il divisible par 3 ?123 ÷ 3 donne-t-il un reste ?
+- `T8C3` R.A. : 1, 2 et 3.R.A. : 1 + 2 + 3 = 6.R.A. : Oui, 6 ÷ 3 = 2, reste 0.R.A. : Non, 123 ÷ 3 = 41, reste 0 : le résultat confirme ce que la somme des chiffres annonçait.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un nombre est divisible par 3 si la somme de ses chiffres est elle-même divisible par 3. On additionne tous les chiffres du nombre, puis on vérifie si ce total est un multiple de 3.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Reconnaître la divisibilité par 3Parmi ces nombres, entoure ceux qui sont divisibles par 3 : 312, 217, 615, 730.312, 217, 615, 730Exercice 2 — JustificationExplique pourquoi 217 n'est pas divisible par 3.Justification
+- `T10C3` a) Divisibles par 3 : 312 (somme 6) et 615 (somme 12) a) La somme des chiffres de 217 est 2 + 1 + 7 = 10, qui n'est pas divisible par 3, donc 217 n'est pas divisible par 3.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Reconnaître la divisibilité par 3Parmi ces nombres, entoure ceux qui sont divisibles par 3 : 891, 144, 500, 342.891, 144, 500, 342Exercice 2 — ProblèmeUn vendeur a 981 mangues à répartir en 3 tas égaux. Le partage tombe-t-il juste ? Justifie.Réponse et justification
+- `T11C3` a) Divisibles par 3 : 891 (somme 18), 144 (somme 9) et 342 (somme 9) a) Oui : la somme des chiffres de 981 est 9 + 8 + 1 = 18, divisible par 3, donc 981 est divisible par 3 (981 ÷ 3 = 327).
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La divisibilité par 3
+- `P` Règle
+- `P` Donc, un nombre est divisible par 3 si la somme de ses chiffres est elle-même divisible par 3. On additionne tous les chiffres du nombre, puis on vérifie si ce total est un multiple de 3.
+- `T1C1` Nombre
+- `T1C2` Somme des chiffres
+- `T1C3` Divisible ?
+- `T2C1` 123
+- `T2C2` 6
+- `T2C3` Oui
+- `T3C1` 459
+- `T3C2` 18
+- `T3C3` Oui
+- `T4C1` 217
+- `T4C2` 10
+- `T4C3` Non
+- `T5C1` 900
+- `T5C2` 9
+- `T5C3` Oui
+- `P` Exemple
+- `P` Hery, Tovo et Njara ont 123 letchis à partager entre eux trois. Le partage tombera-t-il juste ?
+- `P` Chiffres de 123 : 1, 2, 3.
+- `P` Somme : 1 + 2 + 3 = 6.
+- `P` 6 est divisible par 3, donc 123 est divisible par 3.
+- `P` 123 ÷ 3 = 41 letchis chacun, sans reste.
+- `P` Attention : on additionne TOUS les chiffres du nombre, pas seulement le dernier comme pour 2 et 5. Si la première somme obtenue est encore un grand nombre, on peut additionner à nouveau ses chiffres jusqu'à obtenir un nombre facile à vérifier.
+- `P` EXERCICES
+- `P` Exercice 1 — Reconnaître la divisibilité par 3 (5 points)
+- `P` Parmi ces nombres, entoure ceux qui sont divisibles par 3 : 312, 217, 615, 730.
+- `P` 312, 217, 615, 730
+- `P` Corrigé :
+- `P` a) Divisibles par 3 : 312 (somme 6) et 615 (somme 12)
+- `P` Exercice 2 — Justification (5 points)
+- `P` Explique pourquoi 217 n'est pas divisible par 3.
+- `P` Justification
+- `P` Corrigé :
+- `P` a) La somme des chiffres de 217 est 2 + 1 + 7 = 10, qui n'est pas divisible par 3, donc 217 n'est pas divisible par 3.
+- `P` Exercice 1 — Reconnaître la divisibilité par 3 (5 points)
+- `P` Parmi ces nombres, entoure ceux qui sont divisibles par 3 : 891, 144, 500, 342.
+- `P` 891, 144, 500, 342
+- `P` Corrigé :
+- `P` a) Divisibles par 3 : 891 (somme 18), 144 (somme 9) et 342 (somme 9)
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un vendeur a 981 mangues à répartir en 3 tas égaux. Le partage tombe-t-il juste ? Justifie.
+- `P` Réponse et justification
+- `P` Corrigé :
+- `P` a) Oui : la somme des chiffres de 981 est 9 + 8 + 1 = 18, divisible par 3, donc 981 est divisible par 3 (981 ÷ 3 = 327).
+- `P` Total : 20 points
+
+### Séance 17 / 81 — La divisibilité par 9
+
+- Indicateurs : 36 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 17 / 81
+- `P` La divisibilité par 9
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Multiples et diviseurs
+- `T3C3` Séance n° :
+- `T3C4` 53 à 54
+- `T4C1` Titre :
+- `T4C2` La divisibilité par 9
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître si un nombre est divisible par 9 en utilisant la somme de ses chiffres
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment reconnaît-on qu'un nombre est divisible par 3 ?Quelle est la somme des chiffres de 459 ?
+- `T3C3` R.A. : La somme de ses chiffres est divisible par 3.R.A. : 4 + 5 + 9 = 18.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` La coopérative scolaire a récolté 459 ariary de cotisation. Le trésorier veut les répartir équitablement entre 9 groupes d'élèves, sans reste.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La divisibilité par 9 ». Après cette séance, vous serez capables de reconnaître si un nombre est divisible par 9 en additionnant ses chiffres.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le nombre 459 écrit au tableau, avec ses chiffres 4, 5 et 9 encadrés séparément.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quels sont les chiffres de 459 ?Combien fait 4 + 5 + 9 ?18 est-il divisible par 9 ?459 ÷ 9 donne-t-il un reste ?
+- `T8C3` R.A. : 4, 5 et 9.R.A. : 4 + 5 + 9 = 18.R.A. : Oui, 18 ÷ 9 = 2, reste 0.R.A. : Non, 459 ÷ 9 = 51, reste 0 : le résultat confirme ce que la somme des chiffres annonçait.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un nombre est divisible par 9 si la somme de ses chiffres est elle-même divisible par 9. La règle est la même que pour 3, mais avec 9 : on additionne tous les chiffres et on vérifie si le total est un multiple de 9. Un nombre divisible par 9 est toujours aussi divisible par 3, mais l'inverse n'est pas toujours vrai.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Reconnaître la divisibilité par 9Parmi ces nombres, entoure ceux qui sont divisibles par 9 : 891, 144, 500, 342.891, 144, 500, 342Exercice 2 — Divisible par 3 mais pas par 9Le nombre 123 est-il divisible par 9 ? Est-il divisible par 3 ? Explique la différence.Réponse et explication
+- `T10C3` a) Divisibles par 9 : 891 (somme 18), 144 (somme 9) et 342 (somme 9) a) 123 (somme 6) est divisible par 3 mais pas par 9, car 6 est divisible par 3 mais pas par 9.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Reconnaître la divisibilité par 9Parmi ces nombres, entoure ceux qui sont divisibles par 9 : 981, 615, 900, 730.981, 615, 900, 730Exercice 2 — ProblèmeUn club de 9 élèves a récolté 342 graines de haricot pour un projet de jardinage. Le partage entre les 9 élèves tombe-t-il juste ? Justifie.Réponse et justification
+- `T11C3` a) Divisibles par 9 : 981 (somme 18) et 900 (somme 9) a) Oui : la somme des chiffres de 342 est 3 + 4 + 2 = 9, divisible par 9, donc 342 est divisible par 9 (342 ÷ 9 = 38).
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La divisibilité par 9
+- `P` Règle
+- `P` Donc, un nombre est divisible par 9 si la somme de ses chiffres est elle-même divisible par 9. La règle est la même que pour 3, mais avec 9 : on additionne tous les chiffres et on vérifie si le total est un multiple de 9. Un nombre divisible par 9 est toujours aussi divisible par 3, mais l'inverse n'est pas toujours vrai.
+- `T1C1` Nombre
+- `T1C2` Somme des chiffres
+- `T1C3` Divisible ?
+- `T2C1` 459
+- `T2C2` 18
+- `T2C3` Oui
+- `T3C1` 123
+- `T3C2` 6
+- `T3C3` Non
+- `T4C1` 217
+- `T4C2` 10
+- `T4C3` Non
+- `T5C1` 900
+- `T5C2` 9
+- `T5C3` Oui
+- `P` Exemple
+- `P` La coopérative a 459 ariary à répartir entre 9 groupes. Le partage tombera-t-il juste ?
+- `P` Chiffres de 459 : 4, 5, 9.
+- `P` Somme : 4 + 5 + 9 = 18.
+- `P` 18 est divisible par 9, donc 459 est divisible par 9.
+- `P` 459 ÷ 9 = 51 ariary par groupe, sans reste.
+- `P` Attention : tout nombre divisible par 9 est automatiquement divisible par 3 (car 9 est un multiple de 3), mais l'inverse est faux : un nombre divisible par 3 n'est pas forcément divisible par 9 (ex. 123 : somme 6, divisible par 3 seulement).
+- `P` EXERCICES
+- `P` Exercice 1 — Reconnaître la divisibilité par 9 (5 points)
+- `P` Parmi ces nombres, entoure ceux qui sont divisibles par 9 : 891, 144, 500, 342.
+- `P` 891, 144, 500, 342
+- `P` Corrigé :
+- `P` a) Divisibles par 9 : 891 (somme 18), 144 (somme 9) et 342 (somme 9)
+- `P` Exercice 2 — Divisible par 3 mais pas par 9 (5 points)
+- `P` Le nombre 123 est-il divisible par 9 ? Est-il divisible par 3 ? Explique la différence.
+- `P` Réponse et explication
+- `P` Corrigé :
+- `P` a) 123 (somme 6) est divisible par 3 mais pas par 9, car 6 est divisible par 3 mais pas par 9.
+- `P` Exercice 1 — Reconnaître la divisibilité par 9 (5 points)
+- `P` Parmi ces nombres, entoure ceux qui sont divisibles par 9 : 981, 615, 900, 730.
+- `P` 981, 615, 900, 730
+- `P` Corrigé :
+- `P` a) Divisibles par 9 : 981 (somme 18) et 900 (somme 9)
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un club de 9 élèves a récolté 342 graines de haricot pour un projet de jardinage. Le partage entre les 9 élèves tombe-t-il juste ? Justifie.
+- `P` Réponse et justification
+- `P` Corrigé :
+- `P` a) Oui : la somme des chiffres de 342 est 3 + 4 + 2 = 9, divisible par 9, donc 342 est divisible par 9 (342 ÷ 9 = 38).
+- `P` Total : 20 points
+
+### Séance 18 / 81 — Le parallélogramme
+
+- Indicateurs : 50 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 18 / 81
+- `P` Le parallélogramme
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Périmètre et aire des figures planes
+- `T3C3` Séance n° :
+- `T3C4` 55 à 56
+- `T4C1` Titre :
+- `T4C2` Le parallélogramme
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un parallélogramme, calculer son périmètre et son aire
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du parallélogramme, règle graduée, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du rectangle ?Combien de côtés a un rectangle ?
+- `T3C3` R.A. : A = L × l.R.A. : Quatre côtés.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Bako a hérité d'un terrain en forme de parallélogramme. Elle veut clôturer son terrain et connaître sa surface avant d'y planter des légumes.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le parallélogramme ». Après cette séance, vous serez capables de reconnaître un parallélogramme et de calculer son périmètre et son aire.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du parallélogramme dessinée au tableau, avec sa base, son côté et sa hauteur indiqués.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de côtés a un parallélogramme ?Que remarquez-vous sur les côtés opposés ?Les angles sont-ils tous droits, comme dans le rectangle ?Comment calculer le tour complet du terrain de Bako, de base 15 m et de côté 10 m ?
+- `T8C3` R.A. : Quatre côtés.R.A. : Les côtés opposés sont parallèles et de même longueur deux à deux.R.A. : Non, les angles d'un parallélogramme ne sont pas forcément droits.R.A. : On additionne les 4 côtés, deux à deux égaux : (15 + 10) × 2.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le parallélogramme est une figure plane à quatre côtés, avec deux paires de côtés parallèles et égaux deux à deux, mais dont les angles ne sont pas forcément droits. Pour calculer son périmètre, on additionne ses 4 côtés : P = (b + c) × 2. Pour calculer son aire, on multiplie la base par la hauteur (la hauteur est la distance entre la base et le côté opposé, mesurée perpendiculairement) : A = b × h.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — PérimètreCalcule le périmètre d'un parallélogramme de base 20 m et de côté 12 m.P = ?Exercice 2 — AireCalcule l'aire d'un parallélogramme de base 20 m et de hauteur 9 m.A = ?
+- `T10C3` a) P = (20 + 12) × 2 = 64 m a) A = 20 × 9 = 180 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUn champ en parallélogramme a une base de 25 m, un côté de 14 m et une hauteur de 10 m. Calcule son périmètre et son aire.a) Périmètreb) AireExercice 2 — ProblèmeBako veut clôturer son terrain en parallélogramme de base 15 m et de côté 10 m avec un grillage à 1 800 ariary le mètre. Quel est le coût total ?a) Périmètreb) Coût total
+- `T11C3` a) P = (25 + 14) × 2 = 78 mb) A = 25 × 10 = 250 m² a) P = (15 + 10) × 2 = 50 mb) Coût = 50 × 1 800 = 90 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le parallélogramme
+- `P` b = 15 m, c = 10 m, h = 8 m
+- `P` Propriétés
+- `P` • 4 côtés, opposés deux à deux parallèles et de même longueur
+- `P` • Les angles ne sont pas forcément droits
+- `P` Formules
+- `P` Périmètre : P = (b + c) × 2
+- `P` Les côtés opposés sont égaux deux à deux : on additionne la base et le côté, puis on multiplie par 2.
+- `P` Aire : A = b × h
+- `P` L'aire du parallélogramme est le produit de la base par la hauteur, la hauteur étant mesurée perpendiculairement à la base (comme pour un rectangle « redressé »).
+- `P` Exemple
+- `P` Calcule le périmètre et l'aire d'un parallélogramme de base b = 15 m, de côté c = 10 m et de hauteur h = 8 m.
+- `P` P = (b + c) × 2
+- `P` P = (15 + 10) × 2
+- `P` P = 25 × 2
+- `P` P = 50 m
+- `P` A = b × h
+- `P` A = 15 × 8
+- `P` A = 120 m²
+- `P` Attention : ne pas confondre le côté du parallélogramme avec sa hauteur : la hauteur est toujours mesurée perpendiculairement à la base, elle est donc en général plus courte que le côté incliné. Utiliser le côté à la place de la hauteur dans le calcul de l'aire est une erreur fréquente.
+- `P` EXERCICES
+- `P` Exercice 1 — Périmètre (5 points)
+- `P` Calcule le périmètre d'un parallélogramme de base 20 m et de côté 12 m.
+- `P` P = ?
+- `P` Corrigé :
+- `P` a) P = (20 + 12) × 2 = 64 m
+- `P` Exercice 2 — Aire (5 points)
+- `P` Calcule l'aire d'un parallélogramme de base 20 m et de hauteur 9 m.
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = 20 × 9 = 180 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Un champ en parallélogramme a une base de 25 m, un côté de 14 m et une hauteur de 10 m. Calcule son périmètre et son aire.
+- `P` a) Périmètre
+- `P` b) Aire
+- `P` Corrigé :
+- `P` a) P = (25 + 14) × 2 = 78 m
+- `P` b) A = 25 × 10 = 250 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Bako veut clôturer son terrain en parallélogramme de base 15 m et de côté 10 m avec un grillage à 1 800 ariary le mètre. Quel est le coût total ?
+- `P` a) Périmètre
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) P = (15 + 10) × 2 = 50 m
+- `P` b) Coût = 50 × 1 800 = 90 000 ariary
+- `P` Total : 20 points
+
+### Séance 19 / 81 — Le trapèze
+
+- Indicateurs : 44 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 19 / 81
+- `P` Le trapèze
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Périmètre et aire des figures planes
+- `T3C3` Séance n° :
+- `T3C4` 57 à 58
+- `T4C1` Titre :
+- `T4C2` Le trapèze
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un trapèze, calculer son périmètre et son aire
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du trapèze, règle graduée, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du parallélogramme ?Un parallélogramme a-t-il ses 4 côtés égaux ?
+- `T3C3` R.A. : A = b × h.R.A. : Non, seulement les côtés opposés sont égaux deux à deux.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le terrain de Mamy a la forme d'un trapèze : un côté mesure 18 m, le côté opposé (plus court) mesure 10 m, et ils sont espacés de 6 m. Mamy veut calculer la surface de son terrain pour savoir combien de plants de riz il peut y cultiver.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le trapèze ». Après cette séance, vous serez capables de reconnaître un trapèze et de calculer son périmètre et son aire.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du trapèze dessinée au tableau, avec sa grande base, sa petite base et sa hauteur indiquées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de côtés a un trapèze ?Que remarquez-vous sur les deux côtés horizontaux ?Comment appelle-t-on la distance entre les deux bases ?Comment calculer l'aire du terrain de Mamy (bases 18 m et 10 m, hauteur 6 m) ?
+- `T8C3` R.A. : Quatre côtés.R.A. : Ils sont parallèles, mais de longueurs différentes : l'un est plus grand (la grande base), l'autre plus petit (la petite base).R.A. : La hauteur du trapèze.R.A. : On additionne les deux bases, on multiplie par la hauteur, puis on divise par 2.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le trapèze est une figure plane à quatre côtés dont deux sont parallèles mais de longueurs différentes (la grande base B et la petite base b). Pour calculer son périmètre, on additionne ses 4 côtés. Pour calculer son aire, on additionne les deux bases, on multiplie par la hauteur, et on divise par 2 : A = (B + b) × h ÷ 2.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — AireCalcule l'aire d'un trapèze de grande base 24 m, de petite base 14 m et de hauteur 8 m.A = ?Exercice 2 — PérimètreUn trapèze a pour côtés : grande base 20 m, petite base 12 m, et deux côtés obliques de 9 m chacun. Calcule son périmètre.P = ?
+- `T10C3` a) A = (24 + 14) × 8 ÷ 2 = 152 m² a) P = 20 + 12 + 9 + 9 = 50 m
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUn champ en trapèze a une grande base de 30 m, une petite base de 18 m et une hauteur de 10 m. Calcule son aire.A = ?Exercice 2 — ProblèmeLe terrain de Mamy (bases 18 m et 10 m, hauteur 6 m) produit 3 kg de riz par mètre carré. Quelle quantité de riz peut-il espérer récolter ?Quantité totale = ?
+- `T11C3` a) A = (30 + 18) × 10 ÷ 2 = 240 m² a) Aire = (18 + 10) × 6 ÷ 2 = 84 m² ; 84 × 3 = 252 kg de riz
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le trapèze
+- `P` B = 18 m, b = 10 m, h = 6 m
+- `P` Propriétés
+- `P` • 4 côtés, dont deux parallèles de longueurs différentes (grande base B et petite base b)
+- `P` • La hauteur est la distance perpendiculaire entre les deux bases
+- `P` Formules
+- `P` Périmètre : P = somme des 4 côtés
+- `P` Contrairement au carré ou au rectangle, les côtés du trapèze ne sont pas tous égaux deux à deux : il faut connaître et additionner les 4 côtés un par un.
+- `P` Aire : A = (B + b) × h ÷ 2
+- `P` L'aire du trapèze correspond à la moyenne des deux bases multipliée par la hauteur : c'est comme si on faisait la moyenne entre un rectangle de base B et un de base b.
+- `P` Exemple
+- `P` Calcule l'aire du terrain de Mamy : grande base B = 18 m, petite base b = 10 m, hauteur h = 6 m.
+- `P` A = (B + b) × h ÷ 2
+- `P` A = (18 + 10) × 6 ÷ 2
+- `P` A = 28 × 6 ÷ 2
+- `P` A = 168 ÷ 2
+- `P` A = 84 m²
+- `P` Attention : ne pas oublier de diviser par 2 dans la formule de l'aire, tout comme pour le triangle : oublier cette division donne un résultat deux fois trop grand. Bien identifier laquelle des deux bases parallèles est la grande (B) et laquelle est la petite (b) avant de calculer.
+- `P` EXERCICES
+- `P` Exercice 1 — Aire (5 points)
+- `P` Calcule l'aire d'un trapèze de grande base 24 m, de petite base 14 m et de hauteur 8 m.
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = (24 + 14) × 8 ÷ 2 = 152 m²
+- `P` Exercice 2 — Périmètre (5 points)
+- `P` Un trapèze a pour côtés : grande base 20 m, petite base 12 m, et deux côtés obliques de 9 m chacun. Calcule son périmètre.
+- `P` P = ?
+- `P` Corrigé :
+- `P` a) P = 20 + 12 + 9 + 9 = 50 m
+- `P` Exercice 1 — Problème (5 points)
+- `P` Un champ en trapèze a une grande base de 30 m, une petite base de 18 m et une hauteur de 10 m. Calcule son aire.
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = (30 + 18) × 10 ÷ 2 = 240 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le terrain de Mamy (bases 18 m et 10 m, hauteur 6 m) produit 3 kg de riz par mètre carré. Quelle quantité de riz peut-il espérer récolter ?
+- `P` Quantité totale = ?
+- `P` Corrigé :
+- `P` a) Aire = (18 + 10) × 6 ÷ 2 = 84 m² ; 84 × 3 = 252 kg de riz
+- `P` Total : 20 points
+
+### Séance 20 / 81 — Le losange
+
+- Indicateurs : 48 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 20 / 81
+- `P` Le losange
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Périmètre et aire des figures planes
+- `T3C3` Séance n° :
+- `T3C4` 59 à 60
+- `T4C1` Titre :
+- `T4C2` Le losange
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un losange, calculer son périmètre et son aire
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du losange, règle graduée, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du trapèze ?Combien de côtés a un carré ?
+- `T3C3` R.A. : A = (B + b) × h ÷ 2.R.A. : 4 côtés égaux.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Fy fabrique un cerf-volant en forme de losange pour le concours de l'école. Les baguettes qui forment les diagonales mesurent 16 cm et 12 cm. Fy veut connaître la surface de tissu nécessaire et la longueur du tour à coudre.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le losange ». Après cette séance, vous serez capables de reconnaître un losange et de calculer son périmètre et son aire.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du losange dessinée au tableau, avec ses 4 côtés égaux et ses deux diagonales tracées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Que remarquez-vous en comparant les 4 côtés du losange ?Que remarquez-vous en comparant les deux diagonales ?Comment calculer le tour complet du cerf-volant de Fy si le côté mesure 13 cm ?Pour l'aire, avec quelles mesures va-t-on calculer, le côté ou les diagonales ?
+- `T8C3` R.A. : Les 4 côtés ont exactement la même longueur, comme dans un carré.R.A. : Les deux diagonales n'ont pas la même longueur : l'une est plus grande (D), l'autre plus petite (d).R.A. : On multiplie le côté par 4, comme pour un carré : 13 × 4.R.A. : On utilise les diagonales D et d, pas le côté.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le losange est une figure plane à 4 côtés égaux, comme le carré, mais avec des angles pas forcément droits. Pour calculer son périmètre, on multiplie le côté par 4 : P = c × 4. Pour calculer son aire, on utilise ses deux diagonales D (grande) et d (petite) : A = (D × d) ÷ 2.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — PérimètreCalcule le périmètre d'un losange de côté 9 m.P = ?Exercice 2 — AireCalcule l'aire d'un losange dont les diagonales mesurent 20 m et 14 m.A = ?
+- `T10C3` a) P = 9 × 4 = 36 m a) A = (20 × 14) ÷ 2 = 140 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUn panneau de signalisation en losange a un côté de 15 cm. Calcule son périmètre.P = ?Exercice 2 — ProblèmeUn jardin en losange a des diagonales de 25 m et 18 m. Le jardinier paie 500 ariary par mètre carré de terreau. Quel est le coût total pour couvrir tout le jardin ?a) Aire du jardinb) Coût total
+- `T11C3` a) P = 15 × 4 = 60 cm a) A = (25 × 18) ÷ 2 = 225 m²b) Coût = 225 × 500 = 112 500 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le losange
+- `P` c = 13 m, D = 16 m, d = 12 m
+- `P` Propriétés
+- `P` • 4 côtés de même longueur, comme le carré
+- `P` • 2 diagonales de longueurs différentes, qui se coupent perpendiculairement en leur milieu
+- `P` Formules
+- `P` Périmètre : P = c × 4
+- `P` Les 4 côtés sont égaux, donc on multiplie la longueur d'un côté par 4, exactement comme pour le carré.
+- `P` Aire : A = (D × d) ÷ 2
+- `P` Les deux diagonales du losange forment un rectangle de côtés D et d ; le losange occupe exactement la moitié de ce rectangle, d'où la division par 2.
+- `P` Exemple
+- `P` Calcule le périmètre et l'aire du cerf-volant de Fy : côté c = 13 cm, grande diagonale D = 16 cm, petite diagonale d = 12 cm.
+- `P` P = c × 4
+- `P` P = 13 × 4
+- `P` P = 52 cm
+- `P` A = (D × d) ÷ 2
+- `P` A = (16 × 12) ÷ 2
+- `P` A = 192 ÷ 2
+- `P` A = 96 cm²
+- `P` Attention : ne jamais utiliser le côté du losange pour calculer son aire : seules les deux diagonales D et d permettent ce calcul. Ne pas oublier non plus de diviser par 2 le produit des diagonales — c'est l'erreur la plus fréquente sur cette figure.
+- `P` EXERCICES
+- `P` Exercice 1 — Périmètre (5 points)
+- `P` Calcule le périmètre d'un losange de côté 9 m.
+- `P` P = ?
+- `P` Corrigé :
+- `P` a) P = 9 × 4 = 36 m
+- `P` Exercice 2 — Aire (5 points)
+- `P` Calcule l'aire d'un losange dont les diagonales mesurent 20 m et 14 m.
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = (20 × 14) ÷ 2 = 140 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Un panneau de signalisation en losange a un côté de 15 cm. Calcule son périmètre.
+- `P` P = ?
+- `P` Corrigé :
+- `P` a) P = 15 × 4 = 60 cm
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un jardin en losange a des diagonales de 25 m et 18 m. Le jardinier paie 500 ariary par mètre carré de terreau. Quel est le coût total pour couvrir tout le jardin ?
+- `P` a) Aire du jardin
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) A = (25 × 18) ÷ 2 = 225 m²
+- `P` b) Coût = 225 × 500 = 112 500 ariary
+- `P` Total : 20 points
+
+### Séance 21 / 81 — Le cercle
+
+- Indicateurs : 45 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 21 / 81
+- `P` Le cercle
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Périmètre et aire des figures planes
+- `T3C3` Séance n° :
+- `T3C4` 61 à 62
+- `T4C1` Titre :
+- `T4C2` Le cercle
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un cercle, calculer son périmètre (circonférence) et son aire
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du cercle, compas, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du losange ?Combien font 2 × 3,14 ?
+- `T3C3` R.A. : A = (D × d) ÷ 2.R.A. : 2 × 3,14 = 6,28.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le puits du village de Rina a une forme circulaire, avec un rayon de 7 m mesuré depuis le centre jusqu'au bord. Le chef du village veut savoir quelle longueur de mur construire tout autour, et quelle surface d'eau le puits peut contenir à sa surface.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le cercle ». Après cette séance, vous serez capables de reconnaître un cercle et de calculer son périmètre (appelé circonférence) et son aire.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du cercle dessinée au tableau, avec son centre, son rayon indiqués.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Comment appelle-t-on le segment qui va du centre du cercle jusqu'à son bord ?Comment appelle-t-on le tour complet d'un cercle (son périmètre) ?Quel nombre particulier utilise-t-on toujours pour calculer un cercle ?Comment calculer la circonférence du puits de Rina, de rayon 7 m ?
+- `T8C3` R.A. : Le rayon, noté r.R.A. : La circonférence.R.A. : Le nombre pi (π), que l'on utilise avec la valeur approchée 3,14.R.A. : On multiplie 2 par π (3,14) par le rayon : 2 × 3,14 × 7.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le cercle est une figure plane dont tous les points sont à la même distance du centre : cette distance est le rayon (r). Le périmètre d'un cercle s'appelle la circonférence et se calcule avec la formule P = 2 × π × r. L'aire se calcule avec la formule A = π × r × r (ou π × r²). On utilise toujours π ≈ 3,14 dans les calculs.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — CirconférenceCalcule la circonférence d'un cercle de rayon 5 m (π ≈ 3,14).P = ?Exercice 2 — AireCalcule l'aire d'un cercle de rayon 10 m (π ≈ 3,14).A = ?
+- `T10C3` a) P = 2 × 3,14 × 5 = 31,4 m a) A = 3,14 × 10 × 10 = 314 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUne place circulaire a un rayon de 6 m. Le maire veut y installer une bordure tout autour. Quelle longueur de bordure faut-il prévoir ? (π ≈ 3,14)P = ?Exercice 2 — ProblèmeUn bassin circulaire a un rayon de 9 m. Quelle est sa surface ? (π ≈ 3,14)A = ?
+- `T11C3` a) P = 2 × 3,14 × 6 = 37,68 m a) A = 3,14 × 9 × 9 = 254,34 m²
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le cercle
+- `P` r = 7 m
+- `P` Propriétés
+- `P` • Tous les points du cercle sont à la même distance du centre (le rayon r)
+- `P` • Le périmètre d'un cercle s'appelle la circonférence
+- `P` Formules
+- `P` Circonférence (périmètre) : P = 2 × π × r
+- `P` La circonférence est proportionnelle au rayon : elle vaut toujours environ 6,28 fois (2 × 3,14) le rayon du cercle.
+- `P` Aire : A = π × r × r
+- `P` L'aire d'un cercle est proportionnelle au carré du rayon, avec le même nombre π ≈ 3,14 comme coefficient.
+- `P` Exemple
+- `P` Calcule la circonférence et l'aire du puits de Rina, de rayon r = 7 m (on prend π ≈ 3,14).
+- `P` P = 2 × π × r
+- `P` P = 2 × 3,14 × 7
+- `P` P = 43,96 m
+- `P` A = π × r × r
+- `P` A = 3,14 × 7 × 7
+- `P` A = 153,86 m²
+- `P` Attention : ne jamais oublier de multiplier par π (3,14) dans les deux formules — c'est ce qui distingue le cercle des autres figures. Bien distinguer la formule de la circonférence (r multiplié une seule fois) de celle de l'aire (r multiplié par lui-même, deux fois).
+- `P` EXERCICES
+- `P` Exercice 1 — Circonférence (5 points)
+- `P` Calcule la circonférence d'un cercle de rayon 5 m (π ≈ 3,14).
+- `P` P = ?
+- `P` Corrigé :
+- `P` a) P = 2 × 3,14 × 5 = 31,4 m
+- `P` Exercice 2 — Aire (5 points)
+- `P` Calcule l'aire d'un cercle de rayon 10 m (π ≈ 3,14).
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = 3,14 × 10 × 10 = 314 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Une place circulaire a un rayon de 6 m. Le maire veut y installer une bordure tout autour. Quelle longueur de bordure faut-il prévoir ? (π ≈ 3,14)
+- `P` P = ?
+- `P` Corrigé :
+- `P` a) P = 2 × 3,14 × 6 = 37,68 m
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un bassin circulaire a un rayon de 9 m. Quelle est sa surface ? (π ≈ 3,14)
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = 3,14 × 9 × 9 = 254,34 m²
+- `P` Total : 20 points
+
+### Séance 22 / 81 — Les unités de mesure de capacité
+
+- Indicateurs : 40 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 22 / 81
+- `P` Les unités de mesure de capacité
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures de capacité
+- `T3C3` Séance n° :
+- `T3C4` 63 à 64
+- `T4C1` Titre :
+- `T4C2` Les unités de mesure de capacité
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Connaître les unités de capacité et convertir une mesure d'une unité à une autre
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau des unités de capacité, bouteilles graduées, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment convertit-on 3,45 km en mètres ?Quelles sont les unités de longueur, du plus grand au plus petit ?
+- `T3C3` R.A. : On déplace la virgule de trois rangs vers la droite : 3 450 m.R.A. : km, hm, dam, m, dm, cm, mm.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le vendeur d'huile du marché a une bidon de 3,5 litres. Un client lui demande 450 centilitres d'huile. Le vendeur doit vérifier s'il a assez d'huile dans son bidon pour servir ce client.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les unités de mesure de capacité ». Après cette séance, vous serez capables de connaître les unités de capacité et de convertir une mesure d'une unité à une autre.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le tableau des unités de capacité affiché au tableau noir : kl, hl, dal, l, dl, cl, ml.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien d'unités voyez-vous dans ce tableau ?Combien de litres y a-t-il dans 1 décalitre ?Pour convertir 450 cl en litres, que doit-on faire ?Le vendeur a-t-il assez d'huile pour servir 450 cl si son bidon contient 3,5 l ?
+- `T8C3` R.A. : Sept unités : kl, hl, dal, l, dl, cl, ml.R.A. : 1 dal = 10 l.R.A. : On déplace la virgule de deux rangs vers la gauche, ce qui donne 4,5 l.R.A. : On convertit d'abord : 450 cl = 4,5 l. Comme 4,5 l est plus grand que 3,5 l, le vendeur n'a pas assez d'huile.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, les unités de capacité, du plus grand au plus petit, sont : kl, hl, dal, l, dl, cl, ml. Chaque unité vaut 10 fois l'unité suivante, exactement comme pour les longueurs. Pour convertir, on déplace la virgule vers la droite (unité plus petite) ou vers la gauche (unité plus grande), du même nombre de rangs que de colonnes parcourues.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Conversion vers une unité plus petiteConvertis en litres.a) 0,25 hlb) 6 dalExercice 2 — Conversion vers une unité plus grandeConvertis en litres.a) 850 clb) 3 200 ml
+- `T10C3` a) 0,25 hl = 25 lb) 6 dal = 60 l a) 850 cl = 8,50 lb) 3 200 ml = 3,2 l
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ConversionsConvertis les mesures suivantes.a) 4,2 hl en lb) 720 ml en lExercice 2 — ProblèmeLe vendeur a un bidon de 3,5 l d'huile. Un client demande 450 cl. Le vendeur a-t-il assez d'huile ? Justifie et calcule ce qui manque ou ce qui reste.Réponse et calcul
+- `T11C3` a) 4,2 hl = 420 lb) 720 ml = 0,72 l a) 450 cl = 4,5 l ; comme 4,5 l > 3,5 l, il manque 4,5 − 3,5 = 1 l au vendeur.
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les unités de mesure de capacité
+- `P` Le tableau des unités
+- `T1C1` kl
+- `T1C2` hl
+- `T1C3` dal
+- `T1C4` l
+- `T1C5` dl
+- `T1C6` cl
+- `T1C7` ml
+- `T2C1` 3
+- `T2C2` ,
+- `T2C3` 5
+- `T2C4` 0
+- `T2C5` 0
+- `T3C4` 4
+- `T3C5` ,
+- `T3C6` 5
+- `T3C7` 0
+- `T4C4` 2
+- `T4C5` ,
+- `T4C6` 5
+- `P` 3,5 kl = 3 500 l
+- `P` 450 cl = 4,50 l
+- `P` 2 l 5 dl = 2,5 l
+- `P` Règle de conversion
+- `P` Pour convertir, on place le chiffre des unités de la mesure de départ dans sa colonne du tableau, puis on complète avec des zéros si besoin jusqu'à la colonne de l'unité d'arrivée, en ajoutant la virgule à cette dernière position.
+- `P` Attention : le tableau des unités de capacité fonctionne exactement comme celui des longueurs (chaque unité vaut 10 fois la suivante) : ne pas le confondre avec le tableau des unités d'aire, où chaque unité vaut 100 fois la suivante.
+- `P` EXERCICES
+- `P` Exercice 1 — Conversion vers une unité plus petite (5 points)
+- `P` Convertis en litres.
+- `P` a) 0,25 hl
+- `P` b) 6 dal
+- `P` Corrigé :
+- `P` a) 0,25 hl = 25 l
+- `P` b) 6 dal = 60 l
+- `P` Exercice 2 — Conversion vers une unité plus grande (5 points)
+- `P` Convertis en litres.
+- `P` a) 850 cl
+- `P` b) 3 200 ml
+- `P` Corrigé :
+- `P` a) 850 cl = 8,50 l
+- `P` b) 3 200 ml = 3,2 l
+- `P` Exercice 1 — Conversions (5 points)
+- `P` Convertis les mesures suivantes.
+- `P` a) 4,2 hl en l
+- `P` b) 720 ml en l
+- `P` Corrigé :
+- `P` a) 4,2 hl = 420 l
+- `P` b) 720 ml = 0,72 l
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le vendeur a un bidon de 3,5 l d'huile. Un client demande 450 cl. Le vendeur a-t-il assez d'huile ? Justifie et calcule ce qui manque ou ce qui reste.
+- `P` Réponse et calcul
+- `P` Corrigé :
+- `P` a) 450 cl = 4,5 l ; comme 4,5 l > 3,5 l, il manque 4,5 − 3,5 = 1 l au vendeur.
+- `P` Total : 20 points
+
+### Séance 23 / 81 — Les unités de mesure d'aire
+
+- Indicateurs : 42 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 23 / 81
+- `P` Les unités de mesure d'aire
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures d'aire
+- `T3C3` Séance n° :
+- `T3C4` 65 à 66
+- `T4C1` Titre :
+- `T4C2` Les unités de mesure d'aire
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Connaître les unités d'aire et convertir une mesure d'une unité à une autre
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau des unités d'aire, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Combien de fois une unité de longueur vaut-elle la suivante ?Quelle est l'unité de l'aire d'un terrain mesuré en mètres ?
+- `T3C3` R.A. : 10 fois (km, hm, dam, m, dm, cm, mm).R.A. : Le mètre carré (m²).
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le géomètre mesure un grand terrain agricole et trouve 2 hm² (hectomètres carrés). Le propriétaire, habitué à raisonner en mètres carrés pour comparer avec son petit jardin de 300 m², ne comprend pas immédiatement si son terrain est plus grand.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les unités de mesure d'aire ». Après cette séance, vous serez capables de connaître les unités d'aire et de convertir une mesure d'une unité à une autre.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un carré de 1 m de côté à côté d'un carré de 10 m de côté dessinés au tableau.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle est l'aire d'un carré de 1 m de côté ?Quelle est l'aire d'un carré de 10 m de côté (1 décamètre) ?Donc combien de fois 1 dam² vaut-il 1 m² ?Le terrain du géomètre fait 2 hm². Combien cela fait-il de m² ?
+- `T8C3` R.A. : 1 m × 1 m = 1 m².R.A. : 10 m × 10 m = 100 m².R.A. : 1 dam² vaut 100 m², car 10 × 10 = 100 (et non pas 10, comme pour les longueurs).R.A. : 1 hm² = 100 dam² = 10 000 m², donc 2 hm² = 20 000 m².
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, contrairement aux unités de longueur ou de capacité (qui varient par 10), les unités d'aire varient par 100 : km², hm², dam², m², dm², cm², mm². En effet, une unité de longueur ×10 donne une unité d'aire ×100 (car l'aire est une longueur multipliée par une longueur). Pour convertir, on multiplie ou on divise par 100 pour chaque rang parcouru dans le tableau.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Conversion vers une unité plus petiteConvertis en m².a) 3 dam²b) 4,5 dam²Exercice 2 — Conversion vers une unité plus grandeConvertis en m².a) 25 000 cm²b) 350 cm²
+- `T10C3` a) 3 dam² = 300 m²b) 4,5 dam² = 450 m² a) 25 000 cm² = 2,5 m²b) 350 cm² = 0,035 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ConversionsConvertis les mesures suivantes.a) 0,08 hm² en m²b) 6 dam² en cm²Exercice 2 — ProblèmeUn champ mesure 3 hm². Un autre champ voisin mesure 25 000 m². Lequel des deux champs est le plus grand ?Réponse et justification
+- `T11C3` a) 0,08 hm² = 800 m²b) 6 dam² = 6 000 000 cm² a) 3 hm² = 30 000 m², ce qui est plus grand que 25 000 m² : le premier champ est le plus grand.
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les unités de mesure d'aire
+- `P` Règle
+- `P` Donc, contrairement aux unités de longueur ou de capacité (qui varient par 10), les unités d'aire varient par 100 : km², hm², dam², m², dm², cm², mm². En effet, une unité de longueur ×10 donne une unité d'aire ×100 (car l'aire est une longueur multipliée par une longueur). Pour convertir, on multiplie ou on divise par 100 pour chaque rang parcouru dans le tableau.
+- `P` Exemple
+- `P` Le terrain du géomètre mesure 2 hm². Le jardin du propriétaire mesure 300 m². Quel terrain est le plus grand, et de combien ?
+- `P` 1 hm² = 100 dam² = 10 000 m² (deux rangs parcourus, donc ×100 puis ×100 encore, soit ×10 000).
+- `P` 2 hm² = 2 × 10 000 = 20 000 m².
+- `P` Le terrain (20 000 m²) est donc bien plus grand que le jardin (300 m²).
+- `P` Différence : 20 000 − 300 = 19 700 m².
+- `P` Attention : ne pas appliquer la même règle que pour les longueurs (×10 par rang) : pour l'aire, chaque unité vaut 100 fois la suivante, car une aire est le produit de deux longueurs. C'est l'erreur la plus fréquente de cette leçon — bien vérifier qu'on multiplie ou divise par 100 (deux zéros), pas par 10, à chaque rang parcouru.
+- `P` EXERCICES
+- `P` Exercice 1 — Conversion vers une unité plus petite (5 points)
+- `P` Convertis en m².
+- `P` a) 3 dam²
+- `P` b) 4,5 dam²
+- `P` Corrigé :
+- `P` a) 3 dam² = 300 m²
+- `P` b) 4,5 dam² = 450 m²
+- `P` Exercice 2 — Conversion vers une unité plus grande (5 points)
+- `P` Convertis en m².
+- `P` a) 25 000 cm²
+- `P` b) 350 cm²
+- `P` Corrigé :
+- `P` a) 25 000 cm² = 2,5 m²
+- `P` b) 350 cm² = 0,035 m²
+- `P` Exercice 1 — Conversions (5 points)
+- `P` Convertis les mesures suivantes.
+- `P` a) 0,08 hm² en m²
+- `P` b) 6 dam² en cm²
+- `P` Corrigé :
+- `P` a) 0,08 hm² = 800 m²
+- `P` b) 6 dam² = 6 000 000 cm²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un champ mesure 3 hm². Un autre champ voisin mesure 25 000 m². Lequel des deux champs est le plus grand ?
+- `P` Réponse et justification
+- `P` Corrigé :
+- `P` a) 3 hm² = 30 000 m², ce qui est plus grand que 25 000 m² : le premier champ est le plus grand.
+- `P` Total : 20 points
+
+### Séance 24 / 81 — Présentation, lecture et écriture des nombres décimaux
+
+- Indicateurs : 49 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 24 / 81
+- `P` Présentation, lecture et écriture des nombres décimaux
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres décimaux
+- `T3C3` Séance n° :
+- `T3C4` 67 à 69
+- `T4C1` Titre :
+- `T4C2` Présentation, lecture et écriture des nombres décimaux
+- `T4C3` Durée :
+- `T4C4` 3 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître la partie entière et la partie décimale d'un nombre, le lire et l'écrire correctement
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau de numération décimale, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Dans 345, quel chiffre est celui des unités ?Combien font 10 dixièmes d'une unité ?
+- `T3C3` R.A. : Le chiffre 5.R.A. : 10 dixièmes font 1 unité entière.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le vendeur de riz pèse un sac et affiche 3,45 kg sur sa balance. Lala n'a jamais vu de virgule dans un nombre et se demande ce que représentent les chiffres après la virgule.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Présentation, lecture et écriture des nombres décimaux ». Après cette séance, vous serez capables de reconnaître la partie entière et la partie décimale d'un nombre, et de le lire et l'écrire correctement.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le nombre 3,45 écrit au tableau, avec la virgule bien visible entre le 3 et le 4.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Que représente le chiffre avant la virgule dans 3,45 ?Que représentent les chiffres après la virgule ?Comment lit-on 3,45 ?Dans 12,507, combien y a-t-il de chiffres après la virgule, et comment les appelle-t-on ?
+- `T8C3` R.A. : C'est la partie entière : 3 unités entières.R.A. : C'est la partie décimale : 4 dixièmes et 5 centièmes.R.A. : On lit « trois virgule quarante-cinq », ou « 3 unités et 45 centièmes ».R.A. : Trois chiffres : 5 dixièmes, 0 centième, 7 millièmes.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un nombre décimal est composé d'une partie entière (avant la virgule) et d'une partie décimale (après la virgule). Le premier chiffre après la virgule représente les dixièmes, le deuxième les centièmes, le troisième les millièmes. On lit un nombre décimal en disant sa partie entière, puis « virgule », puis chaque chiffre de la partie décimale (ou le nombre formé par cette partie suivi du nom de la dernière position).
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Lecture et écritureÉcris en toutes lettres les nombres suivants.a) 7,2b) 15,08Exercice 2 — DécompositionDécompose chaque nombre en partie entière et partie décimale.a) 8,64b) 20,3
+- `T10C3` a) sept virgule deuxb) quinze virgule zéro huit a) 8,64 = 8 + 0,6 + 0,04b) 20,3 = 20 + 0,3
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ÉcritureÉcris en chiffres les nombres suivants.a) neuf virgule quatreb) trois virgule zéro cinqExercice 2 — ProblèmeLe vendeur affiche 3,45 kg sur sa balance. Combien cela représente-t-il d'unités entières et de centièmes ?Réponse
+- `T11C3` a) 9,4b) 3,05 a) 3 unités entières et 45 centièmes
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Présentation, lecture et écriture des nombres décimaux
+- `P` 1. Lecture et écriture
+- `P` Un nombre décimal s'écrit avec une partie entière (avant la virgule) et une partie décimale (après la virgule) : dixièmes, centièmes, millièmes. Chaque chiffre occupe une place précise selon sa valeur.
+- `P` Exemples :
+- `T1C1` Nombre
+- `T1C2` Partie entière
+- `T1C3` Dixièmes
+- `T1C4` Centièmes
+- `T1C5` Millièmes
+- `T1C6` En lettres
+- `T2C1` 3,45
+- `T2C2` 3
+- `T2C3` 4
+- `T2C4` 5
+- `T2C6` trois virgule quarante-cinq (3 unités et 45 centièmes)
+- `T3C1` 12,507
+- `T3C2` 12
+- `T3C3` 5
+- `T3C4` 0
+- `T3C5` 7
+- `T3C6` douze virgule cinq cent sept
+- `T4C1` 0,8
+- `T4C2` 0
+- `T4C3` 8
+- `T4C6` zéro virgule huit (8 dixièmes)
+- `T5C1` 25,3
+- `T5C2` 25
+- `T5C3` 3
+- `T5C6` vingt-cinq virgule trois
+- `P` Attention : un nombre décimal se compare d'abord par sa partie entière, puis chiffre par chiffre après la virgule (dixièmes, puis centièmes...). Ne jamais comparer les parties décimales comme si c'était des nombres entiers séparés : 3,5 est plus grand que 3,45, même si « 5 » semble plus petit que « 45 » à première vue — il faut ajouter un zéro pour comparer proprement : 3,50 et 3,45.
+- `P` 2. Décomposition d'un nombre
+- `P` Décomposer un nombre, c'est écrire la valeur de chaque chiffre séparément, selon sa position dans le tableau de numération.
+- `P` 3,45 = 3 + 0,4 + 0,05
+- `P` 12,507 = 12 + 0,5 + 0,007
+- `P` 3. Comparaison de deux nombres
+- `P` Pour comparer deux nombres, on compare d'abord le nombre de chiffres, puis classe par classe en partant de la gauche.
+- `P` 3,5 > 3,45 — On compare d'abord les dixièmes : 5 dixièmes est plus grand que 4 dixièmes, donc 3,5 > 3,45 (même si « 45 » semble plus grand que « 5 » à l'œil, ce n'est pas le cas).
+- `P` 4. Rangement d'une série de nombres
+- `P` Ranger des nombres, c'est les placer dans l'ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).
+- `P` Nombres donnés : 3,45, 3,5, 3,4, 3,05
+- `P` Ordre croissant : 3,05 < 3,4 < 3,45 < 3,5
+- `P` Ordre décroissant : 3,5 > 3,45 > 3,4 > 3,05
+- `P` EXERCICES
+- `P` Exercice 1 — Lecture et écriture (5 points)
+- `P` Écris en toutes lettres les nombres suivants.
+- `P` a) 7,2
+- `P` b) 15,08
+- `P` Corrigé :
+- `P` a) sept virgule deux
+- `P` b) quinze virgule zéro huit
+- `P` Exercice 2 — Décomposition (5 points)
+- `P` Décompose chaque nombre en partie entière et partie décimale.
+- `P` a) 8,64
+- `P` b) 20,3
+- `P` Corrigé :
+- `P` a) 8,64 = 8 + 0,6 + 0,04
+- `P` b) 20,3 = 20 + 0,3
+- `P` Exercice 1 — Écriture (5 points)
+- `P` Écris en chiffres les nombres suivants.
+- `P` a) neuf virgule quatre
+- `P` b) trois virgule zéro cinq
+- `P` Corrigé :
+- `P` a) 9,4
+- `P` b) 3,05
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le vendeur affiche 3,45 kg sur sa balance. Combien cela représente-t-il d'unités entières et de centièmes ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 3 unités entières et 45 centièmes
+- `P` Total : 20 points
+
+### Séance 25 / 81 — Comparaison et rangement des nombres décimaux
+
+- Indicateurs : 40 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 25 / 81
+- `P` Comparaison et rangement des nombres décimaux
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres décimaux
+- `T3C3` Séance n° :
+- `T3C4` 70 à 72
+- `T4C1` Titre :
+- `T4C2` Comparaison et rangement des nombres décimaux
+- `T4C3` Durée :
+- `T4C4` 3 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Comparer et ranger des nombres décimaux en évitant le piège de la partie décimale
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Dans 3,45, quelle est la partie entière ? La partie décimale ?Comment appelle-t-on le premier chiffre après la virgule ?
+- `T3C3` R.A. : Partie entière : 3. Partie décimale : 45 centièmes (4 dixièmes, 5 centièmes).R.A. : Le chiffre des dixièmes.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Deux coureurs terminent une course : Njaka en 12,5 secondes et Fetra en 12,45 secondes. Le juge doit désigner le vainqueur, mais les deux élèves ne sont pas d'accord sur qui a couru le plus vite.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Comparaison et rangement des nombres décimaux ». Après cette séance, vous serez capables de comparer et de ranger des nombres décimaux sans tomber dans le piège de la partie décimale.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien les deux temps 12,5 et 12,45 écrits au tableau, l'un sous l'autre avec un zéro ajouté à 12,5 pour obtenir 12,50.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` 12,5 et 12,45 ont-ils la même partie entière ?Comment comparer leurs parties décimales alors ?12,5 s'écrit aussi 12,50. Quel est le chiffre des dixièmes de chacun ?Qui a couru le plus vite, Njaka (12,5 s) ou Fetra (12,45 s) ?
+- `T8C3` R.A. : Oui, tous les deux ont 12 comme partie entière.R.A. : On compare chiffre par chiffre après la virgule : d'abord les dixièmes.R.A. : 12,50 a 5 dixièmes, 12,45 a 4 dixièmes.R.A. : Fetra, car 12,45 est plus petit que 12,50 (moins de temps = plus rapide).
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour comparer deux nombres décimaux, on compare d'abord leur partie entière. Si elles sont égales, on complète les parties décimales avec des zéros pour qu'elles aient le même nombre de chiffres, puis on compare chiffre par chiffre en partant des dixièmes. Pour ranger plusieurs nombres décimaux, on répète cette comparaison deux à deux.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — ComparaisonCompare avec le signe qui convient (<, > ou =).a) 5,3 ... 5,29b) 8,07 ... 8,7Exercice 2 — RangementRange dans l'ordre croissant : 4,5 ; 4,05 ; 4,45 ; 4,4.Ordre croissant
+- `T10C3` a) 5,3 > 5,29b) 8,07 < 8,7 a) 4,05 < 4,4 < 4,45 < 4,5
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ComparaisonCompare avec le signe qui convient.a) 9,08 ... 9,8b) 3,60 ... 3,6Exercice 2 — ProblèmeNjaka a couru en 12,5 secondes et Fetra en 12,45 secondes. Qui a gagné la course ? Justifie.Réponse et justification
+- `T11C3` a) 9,08 < 9,8b) 3,60 = 3,6 a) Fetra a gagné, car 12,45 s < 12,5 s (un temps plus petit signifie une course plus rapide).
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Comparaison et rangement des nombres décimaux
+- `P` Règle
+- `P` Donc, pour comparer deux nombres décimaux, on compare d'abord leur partie entière. Si elles sont égales, on complète les parties décimales avec des zéros pour qu'elles aient le même nombre de chiffres, puis on compare chiffre par chiffre en partant des dixièmes. Pour ranger plusieurs nombres décimaux, on répète cette comparaison deux à deux.
+- `P` Exemple
+- `P` Compare 12,5 et 12,45 pour savoir lequel est le plus petit.
+- `P` Parties entières égales : 12 = 12.
+- `P` On complète : 12,5 devient 12,50.
+- `P` On compare les dixièmes : 5 (dans 12,50) est plus grand que 4 (dans 12,45).
+- `P` Donc 12,45 < 12,50, c'est-à-dire 12,45 < 12,5.
+- `P` Attention : toujours compléter les parties décimales avec des zéros avant de comparer, pour avoir le même nombre de chiffres après la virgule. Ne jamais comparer les parties décimales comme des nombres entiers séparés : 45 n'est pas plus grand que 5 dans ce contexte, car 45 centièmes (0,45) est plus petit que 5 dixièmes (0,50).
+- `P` EXERCICES
+- `P` Exercice 1 — Comparaison (5 points)
+- `P` Compare avec le signe qui convient (<, > ou =).
+- `P` a) 5,3 ... 5,29
+- `P` b) 8,07 ... 8,7
+- `P` Corrigé :
+- `P` a) 5,3 > 5,29
+- `P` b) 8,07 < 8,7
+- `P` Exercice 2 — Rangement (5 points)
+- `P` Range dans l'ordre croissant : 4,5 ; 4,05 ; 4,45 ; 4,4.
+- `P` Ordre croissant
+- `P` Corrigé :
+- `P` a) 4,05 < 4,4 < 4,45 < 4,5
+- `P` Exercice 1 — Comparaison (5 points)
+- `P` Compare avec le signe qui convient.
+- `P` a) 9,08 ... 9,8
+- `P` b) 3,60 ... 3,6
+- `P` Corrigé :
+- `P` a) 9,08 < 9,8
+- `P` b) 3,60 = 3,6
+- `P` Exercice 2 — Problème (5 points)
+- `P` Njaka a couru en 12,5 secondes et Fetra en 12,45 secondes. Qui a gagné la course ? Justifie.
+- `P` Réponse et justification
+- `P` Corrigé :
+- `P` a) Fetra a gagné, car 12,45 s < 12,5 s (un temps plus petit signifie une course plus rapide).
+- `P` Total : 20 points
+
+### Séance 26 / 81 — L'addition des nombres décimaux
+
+- Indicateurs : 37 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 26 / 81
+- `P` L'addition des nombres décimaux
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres décimaux
+- `T3C3` Séance n° :
+- `T3C4` 73
+- `T4C1` Titre :
+- `T4C2` L'addition des nombres décimaux
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Poser et effectuer une addition de nombres décimaux en alignant les virgules
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment compare-t-on 3,5 et 3,45 ?Combien font 45 + 27 (nombres entiers) ?
+- `T3C3` R.A. : On complète 3,5 en 3,50, puis on compare chiffre par chiffre : 3,50 > 3,45.R.A. : 45 + 27 = 72.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Voninkazo achète 3,45 kg de riz et 2,80 kg de haricots au marché. Elle veut connaître le poids total de ses achats pour vérifier qu'elle peut les porter.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « L'addition des nombres décimaux ». Après cette séance, vous serez capables de poser et d'effectuer une addition de nombres décimaux en alignant correctement les virgules.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien l'addition 3,45 + 2,80 posée en colonnes, avec les virgules alignées à la verticale.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Que remarquez-vous sur la position des deux virgules ?Pourquoi a-t-on écrit 2,8 comme 2,80 ?Comment additionne-t-on ensuite ?
+- `T8C3` R.A. : Elles sont alignées l'une sous l'autre.R.A. : Pour que les deux nombres aient le même nombre de chiffres après la virgule, ce qui facilite l'addition.R.A. : Exactement comme une addition de nombres entiers, colonne par colonne, en plaçant la virgule du résultat sous les autres virgules.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour additionner des nombres décimaux, on les pose en alignant les virgules les unes sous les autres (on peut ajouter des zéros à droite si besoin pour avoir le même nombre de chiffres décimaux). On additionne ensuite comme des nombres entiers, colonne par colonne, et on place la virgule du résultat exactement sous les autres virgules.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Addition poséePose et effectue l'addition suivante : 12,5 + 7,75.12,5 + 7,75 = ?Exercice 2 — ProblèmeVoninkazo achète 3,45 kg de riz et 2,80 kg de haricots. Quel est le poids total de ses achats ?Total = ?
+- `T10C3` a) 12,5 + 7,75 = 20,25 a) 3,45 + 2,80 = 6,25 kg
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Addition poséePose et effectue l'addition suivante : 5,6 + 4,25.5,6 + 4,25 = ?Exercice 2 — ProblèmeUn tailleur utilise 1,25 m de tissu pour une chemise et 0,75 m pour un col. Quelle longueur totale de tissu utilise-t-il ?Total = ?
+- `T11C3` a) 5,6 + 4,25 = 9,85 a) 1,25 + 0,75 = 2 m
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` L'addition des nombres décimaux
+- `P` Technique opératoire
+- `P` Pour additionner 3,45 et 2,80, on les pose en alignant les virgules, puis on additionne colonne par colonne comme pour des nombres entiers.
+- `P` Exemple posé :
+- `T1C2` 3
+- `T1C3` ,
+- `T1C4` 4
+- `T1C5` 5
+- `T2C1` +
+- `T2C2` 2
+- `T2C3` ,
+- `T2C4` 8
+- `T2C5` 0
+- `T3C1` =
+- `T3C2` 6
+- `T3C3` ,
+- `T3C4` 2
+- `T3C5` 5
+- `P` Centièmes : 5 + 0 = 5.
+- `P` Dixièmes : 4 + 8 = 12 → on écrit 2, on retient 1.
+- `P` Unités : 3 + 2 + 1 (retenue) = 6.
+- `P` Résultat : 3,45 + 2,80 = 6,25.
+- `P` Propriétés
+- `P` • On peut toujours ajouter des zéros à la fin de la partie décimale sans changer la valeur du nombre (2,8 = 2,80 = 2,800).
+- `P` Attention : toujours aligner les virgules avant d'additionner, jamais aligner les chiffres par la droite comme pour les nombres entiers si les parties décimales n'ont pas le même nombre de chiffres — il faut d'abord compléter avec des zéros.
+- `P` EXERCICES
+- `P` Exercice 1 — Addition posée (5 points)
+- `P` Pose et effectue l'addition suivante : 12,5 + 7,75.
+- `P` 12,5 + 7,75 = ?
+- `P` Corrigé :
+- `P` a) 12,5 + 7,75 = 20,25
+- `P` Exercice 2 — Problème (5 points)
+- `P` Voninkazo achète 3,45 kg de riz et 2,80 kg de haricots. Quel est le poids total de ses achats ?
+- `P` Total = ?
+- `P` Corrigé :
+- `P` a) 3,45 + 2,80 = 6,25 kg
+- `P` Exercice 1 — Addition posée (5 points)
+- `P` Pose et effectue l'addition suivante : 5,6 + 4,25.
+- `P` 5,6 + 4,25 = ?
+- `P` Corrigé :
+- `P` a) 5,6 + 4,25 = 9,85
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un tailleur utilise 1,25 m de tissu pour une chemise et 0,75 m pour un col. Quelle longueur totale de tissu utilise-t-il ?
+- `P` Total = ?
+- `P` Corrigé :
+- `P` a) 1,25 + 0,75 = 2 m
+- `P` Total : 20 points
+
+### Séance 27 / 81 — La soustraction des nombres décimaux
+
+- Indicateurs : 37 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 27 / 81
+- `P` La soustraction des nombres décimaux
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres décimaux
+- `T3C3` Séance n° :
+- `T3C4` 74 à 75
+- `T4C1` Titre :
+- `T4C2` La soustraction des nombres décimaux
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Poser et effectuer une soustraction de nombres décimaux en alignant les virgules
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment pose-t-on une addition de décimaux ?Que peut-on faire si les parties décimales n'ont pas le même nombre de chiffres ?
+- `T3C3` R.A. : On aligne les virgules les unes sous les autres.R.A. : On ajoute des zéros à droite pour les compléter.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Solo avait 8,60 litres d'essence dans son bidon. Il en a utilisé 3,75 litres pour sa moto. Il veut savoir combien de litres il lui reste.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La soustraction des nombres décimaux ». Après cette séance, vous serez capables de poser et d'effectuer une soustraction de nombres décimaux en alignant correctement les virgules.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la soustraction 8,60 − 3,75 posée en colonnes, avec les virgules alignées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Peut-on faire directement 0 − 5 aux centièmes ?Après l'emprunt, que devient le calcul des centièmes ?Et pour les dixièmes, que reste-t-il à calculer ?Pour finir, que calcule-t-on aux unités ?
+- `T8C3` R.A. : Non, il faut emprunter 1 dixième, exactement comme pour les nombres entiers.R.A. : 10 − 5 = 5.R.A. : 6 devient 5 (après l'emprunt), 5 − 7 est encore trop petit, on emprunte à nouveau aux unités : 15 − 7 = 8.R.A. : 8 devient 7 (après l'emprunt), 7 − 3 = 4.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour soustraire des nombres décimaux, on les pose en alignant les virgules (en complétant avec des zéros si besoin). On soustrait ensuite colonne par colonne comme pour des nombres entiers, en empruntant si nécessaire, et on place la virgule du résultat sous les autres virgules.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Soustraction poséePose et effectue la soustraction suivante : 15,20 − 8,45.15,20 − 8,45 = ?Exercice 2 — PreuveVérifie le résultat de l'exercice 1 par addition.6,75 + 8,45 = ?
+- `T10C3` a) 15,20 − 8,45 = 6,75 a) 6,75 + 8,45 = 15,20, ce qui confirme le résultat.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Soustraction poséePose et effectue la soustraction suivante : 10 − 4,35.10 − 4,35 = ?Exercice 2 — ProblèmeSolo avait 8,60 l d'essence. Il en a utilisé 3,75 l. Combien de litres lui reste-t-il ?Reste = ?
+- `T11C3` a) 10 − 4,35 = 5,65 a) 8,60 − 3,75 = 4,85 l
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La soustraction des nombres décimaux
+- `P` Technique opératoire
+- `P` Pour soustraire 3,75 de 8,60, on pose les deux nombres en alignant les virgules, puis on soustrait colonne par colonne, en empruntant si nécessaire.
+- `P` Exemple posé :
+- `T1C2` 8
+- `T1C3` ,
+- `T1C4` 6
+- `T1C5` 0
+- `T2C1` −
+- `T2C2` 3
+- `T2C3` ,
+- `T2C4` 7
+- `T2C5` 5
+- `T3C1` =
+- `T3C2` 4
+- `T3C3` ,
+- `T3C4` 8
+- `T3C5` 5
+- `P` Centièmes : 0 est plus petit que 5, on emprunte 1 dixième → 10 − 5 = 5.
+- `P` Dixièmes : 6 devient 5 (après l'emprunt), 5 est plus petit que 7, on emprunte 1 unité → 15 − 7 = 8.
+- `P` Unités : 8 devient 7 (après l'emprunt), 7 − 3 = 4.
+- `P` Résultat : 8,60 − 3,75 = 4,85.
+- `P` Propriétés
+- `P` • La preuve par addition fonctionne aussi pour les décimaux : 4,85 + 3,75 = 8,60, ce qui confirme le résultat.
+- `P` Attention : quand un nombre entier (comme 10) est soustrait d'un décimal, ne pas oublier de le transformer en décimal équivalent (10,00) pour aligner correctement les virgules avant de soustraire.
+- `P` EXERCICES
+- `P` Exercice 1 — Soustraction posée (5 points)
+- `P` Pose et effectue la soustraction suivante : 15,20 − 8,45.
+- `P` 15,20 − 8,45 = ?
+- `P` Corrigé :
+- `P` a) 15,20 − 8,45 = 6,75
+- `P` Exercice 2 — Preuve (5 points)
+- `P` Vérifie le résultat de l'exercice 1 par addition.
+- `P` 6,75 + 8,45 = ?
+- `P` Corrigé :
+- `P` a) 6,75 + 8,45 = 15,20, ce qui confirme le résultat.
+- `P` Exercice 1 — Soustraction posée (5 points)
+- `P` Pose et effectue la soustraction suivante : 10 − 4,35.
+- `P` 10 − 4,35 = ?
+- `P` Corrigé :
+- `P` a) 10 − 4,35 = 5,65
+- `P` Exercice 2 — Problème (5 points)
+- `P` Solo avait 8,60 l d'essence. Il en a utilisé 3,75 l. Combien de litres lui reste-t-il ?
+- `P` Reste = ?
+- `P` Corrigé :
+- `P` a) 8,60 − 3,75 = 4,85 l
+- `P` Total : 20 points
+
+### Séance 28 / 81 — La multiplication des nombres décimaux
+
+- Indicateurs : 37 paragraphes ; 3 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 28 / 81
+- `P` La multiplication des nombres décimaux
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres décimaux
+- `T3C3` Séance n° :
+- `T3C4` 76
+- `T4C1` Titre :
+- `T4C2` La multiplication des nombres décimaux
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Multiplier un nombre décimal par un nombre entier en plaçant correctement la virgule
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment pose-t-on une soustraction de décimaux ?Combien font 425 × 3 (nombres entiers) ?
+- `T3C3` R.A. : On aligne les virgules, comme pour l'addition.R.A. : 425 × 3 = 1 275.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un maçon achète 3 sacs de ciment à 4,25 kg... en réalité chaque brique nécessite 4,25 kg de sable, et il doit en fabriquer 3. Il veut connaître la quantité totale de sable nécessaire.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La multiplication des nombres décimaux ». Après cette séance, vous serez capables de multiplier un nombre décimal par un nombre entier en plaçant correctement la virgule dans le résultat.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la multiplication 4,25 × 3 posée au tableau, d'abord sans la virgule, puis avec la virgule replacée.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Si on ignore la virgule, que devient 4,25 ?Combien fait 425 × 3 ?Combien de chiffres y avait-il après la virgule dans 4,25 ?Où doit-on replacer la virgule dans 1275 pour respecter ces deux chiffres ?
+- `T8C3` R.A. : 425 (un nombre entier).R.A. : 425 × 3 = 1 275.R.A. : Deux chiffres (2 et 5).R.A. : Deux positions en partant de la droite : 12,75.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour multiplier un nombre décimal par un nombre entier, on effectue d'abord la multiplication comme si les deux nombres étaient entiers (en ignorant la virgule). Ensuite, on compte le nombre de chiffres après la virgule dans le nombre décimal de départ, et on replace la virgule à cette même position en partant de la droite du résultat.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Multiplication poséeEffectue la multiplication suivante : 2,5 × 4.2,5 × 4 = ?Exercice 2 — Multiplication poséeEffectue la multiplication suivante : 6,3 × 5.6,3 × 5 = ?
+- `T10C3` a) 25 × 4 = 100, on replace la virgule à 1 position : 2,5 × 4 = 10,0 a) 63 × 5 = 315, on replace la virgule à 1 position : 6,3 × 5 = 31,5
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Multiplication poséeEffectue la multiplication suivante : 1,45 × 6.1,45 × 6 = ?Exercice 2 — ProblèmeChaque brique nécessite 4,25 kg de sable. Le maçon veut fabriquer 3 briques. Quelle quantité totale de sable lui faut-il ?Total = ?
+- `T11C3` a) 145 × 6 = 870, on replace la virgule à 2 positions : 1,45 × 6 = 8,70 a) 4,25 × 3 = 12,75 kg
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La multiplication des nombres décimaux
+- `P` Technique opératoire
+- `P` Pour multiplier 4,25 par 3, on multiplie d'abord 425 par 3 (en ignorant la virgule), puis on replace la virgule dans le résultat à 2 positions en partant de la droite (car 4,25 avait 2 chiffres après la virgule).
+- `P` Exemple posé :
+- `T1C3` 4
+- `T1C4` 2
+- `T1C5` 5
+- `T2C1` ×3
+- `T2C2` 1
+- `T2C3` 2
+- `T2C4` 7
+- `T2C5` 5
+- `P` 425 × 3 = 1 275 (calcul comme des nombres entiers).
+- `P` 4,25 avait 2 chiffres après la virgule.
+- `P` On replace la virgule à 2 positions en partant de la droite de 1275 : 12,75.
+- `P` Résultat : 4,25 × 3 = 12,75.
+- `P` Propriétés
+- `P` • Le nombre de chiffres après la virgule du résultat est toujours égal au nombre de chiffres après la virgule du nombre décimal de départ (quand on multiplie par un nombre entier).
+- `P` Attention : on ne compte les chiffres après la virgule que dans le(s) nombre(s) décimal(aux) de départ, jamais dans le résultat de la multiplication entière intermédiaire. Toujours vérifier en comptant depuis la droite du résultat, pas depuis la gauche.
+- `P` EXERCICES
+- `P` Exercice 1 — Multiplication posée (5 points)
+- `P` Effectue la multiplication suivante : 2,5 × 4.
+- `P` 2,5 × 4 = ?
+- `P` Corrigé :
+- `P` a) 25 × 4 = 100, on replace la virgule à 1 position : 2,5 × 4 = 10,0
+- `P` Exercice 2 — Multiplication posée (5 points)
+- `P` Effectue la multiplication suivante : 6,3 × 5.
+- `P` 6,3 × 5 = ?
+- `P` Corrigé :
+- `P` a) 63 × 5 = 315, on replace la virgule à 1 position : 6,3 × 5 = 31,5
+- `P` Exercice 1 — Multiplication posée (5 points)
+- `P` Effectue la multiplication suivante : 1,45 × 6.
+- `P` 1,45 × 6 = ?
+- `P` Corrigé :
+- `P` a) 145 × 6 = 870, on replace la virgule à 2 positions : 1,45 × 6 = 8,70
+- `P` Exercice 2 — Problème (5 points)
+- `P` Chaque brique nécessite 4,25 kg de sable. Le maçon veut fabriquer 3 briques. Quelle quantité totale de sable lui faut-il ?
+- `P` Total = ?
+- `P` Corrigé :
+- `P` a) 4,25 × 3 = 12,75 kg
+- `P` Total : 20 points
+
+### Séance 29 / 81 — La division des nombres décimaux
+
+- Indicateurs : 36 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 29 / 81
+- `P` La division des nombres décimaux
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les nombres décimaux
+- `T3C3` Séance n° :
+- `T3C4` 77 à 78
+- `T4C1` Titre :
+- `T4C2` La division des nombres décimaux
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Diviser un nombre décimal par un nombre entier
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment multiplie-t-on un décimal par un entier ?Combien font 96 ÷ 4 (nombres entiers) ?
+- `T3C3` R.A. : On multiplie comme des nombres entiers, puis on replace la virgule selon le nombre de chiffres décimaux du départ.R.A. : 96 ÷ 4 = 24.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Bary a payé 9,60 ariary de cotisation totale pour 4 élèves de son groupe. Il veut savoir combien chaque élève doit lui rembourser individuellement.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La division des nombres décimaux ». Après cette séance, vous serez capables de diviser un nombre décimal par un nombre entier.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la division 9,6 ÷ 4 posée au tableau, avec la virgule du quotient placée dès qu'on l'atteint dans le dividende.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de fois 4 dans 9 (unités) ?Que fait-on ensuite du reste 1, avant d'atteindre la virgule ?On obtient 16 après avoir abaissé le 6. Combien de fois 4 dans 16 ?Quel est donc le résultat de 9,6 ÷ 4 ?
+- `T8C3` R.A. : 2 fois (4 × 2 = 8), reste 1.R.A. : On abaisse le chiffre suivant après la virgule (6), et on place la virgule au quotient au même moment.R.A. : 4 fois exactement (4 × 4 = 16), reste 0.R.A. : 2,4.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour diviser un nombre décimal par un nombre entier, on pose la division comme d'habitude. Dès que l'on abaisse le premier chiffre après la virgule du dividende, on place aussitôt la virgule au quotient, puis on continue la division normalement.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Division poséeEffectue la division suivante : 18,75 ÷ 5.18,75 ÷ 5 = ?Exercice 2 — Division poséeEffectue la division suivante : 7,2 ÷ 6.7,2 ÷ 6 = ?
+- `T10C3` a) 18,75 ÷ 5 = 3,75 a) 7,2 ÷ 6 = 1,2
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Division poséeEffectue la division suivante : 15,5 ÷ 5.15,5 ÷ 5 = ?Exercice 2 — ProblèmeBary a payé 9,6 ariary de cotisation totale pour 4 élèves. Combien chaque élève doit-il lui rembourser ?Réponse = ?
+- `T11C3` a) 15,5 ÷ 5 = 3,1 a) 9,6 ÷ 4 = 2,4 ariary par élève
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La division des nombres décimaux
+- `P` Règle
+- `P` Donc, pour diviser un nombre décimal par un nombre entier, on pose la division comme d'habitude. Dès que l'on abaisse le premier chiffre après la virgule du dividende, on place aussitôt la virgule au quotient, puis on continue la division normalement.
+- `P` Exemple
+- `P` Bary doit répartir 9,6 ariary entre 4 élèves. Combien chaque élève doit-il rembourser ?
+- `P` 9 ÷ 4 : 4 × 2 = 8, reste 1. On écrit 2 au quotient.
+- `P` On abaisse le 6 (après la virgule) : on place la virgule au quotient, on obtient 16.
+- `P` 16 ÷ 4 = 4 exactement, reste 0.
+- `P` Résultat : 9,6 ÷ 4 = 2,4 ariary par élève.
+- `P` Attention : bien placer la virgule au quotient exactement au moment où l'on abaisse le premier chiffre après la virgule du dividende — jamais avant, jamais après. Une virgule mal placée décale complètement le résultat.
+- `P` EXERCICES
+- `P` Exercice 1 — Division posée (5 points)
+- `P` Effectue la division suivante : 18,75 ÷ 5.
+- `P` 18,75 ÷ 5 = ?
+- `P` Corrigé :
+- `P` a) 18,75 ÷ 5 = 3,75
+- `P` Exercice 2 — Division posée (5 points)
+- `P` Effectue la division suivante : 7,2 ÷ 6.
+- `P` 7,2 ÷ 6 = ?
+- `P` Corrigé :
+- `P` a) 7,2 ÷ 6 = 1,2
+- `P` Exercice 1 — Division posée (5 points)
+- `P` Effectue la division suivante : 15,5 ÷ 5.
+- `P` 15,5 ÷ 5 = ?
+- `P` Corrigé :
+- `P` a) 15,5 ÷ 5 = 3,1
+- `P` Exercice 2 — Problème (5 points)
+- `P` Bary a payé 9,6 ariary de cotisation totale pour 4 élèves. Combien chaque élève doit-il lui rembourser ?
+- `P` Réponse = ?
+- `P` Corrigé :
+- `P` a) 9,6 ÷ 4 = 2,4 ariary par élève
+- `P` Total : 20 points
+
+### Séance 30 / 81 — Aire du parallélogramme
+
+- Indicateurs : 41 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 30 / 81
+- `P` Aire du parallélogramme
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Aire des figures planes (approfondissement)
+- `T3C3` Séance n° :
+- `T3C4` 79
+- `T4C1` Titre :
+- `T4C2` Aire du parallélogramme
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Résoudre des problèmes utilisant l'aire du parallélogramme
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du parallélogramme, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du parallélogramme ?La hauteur est-elle la même chose que le côté incliné ?
+- `T3C3` R.A. : A = b × h (base multipliée par la hauteur).R.A. : Non, la hauteur est toujours mesurée perpendiculairement à la base.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le terrain de sport de l'école a la forme d'un parallélogramme, de base 22 m et de hauteur 9 m. Le directeur veut savoir combien de mètres carrés de gazon il doit commander pour le recouvrir entièrement.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Aire du parallélogramme ». Après cette séance, vous serez capables de résoudre des problèmes concrets utilisant cette formule.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du parallélogramme du terrain de sport, avec sa base et sa hauteur indiquées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle formule utilise-t-on pour calculer l'aire du terrain ?Quelles sont les valeurs de b et h pour ce terrain ?Combien fait 22 × 9 ?
+- `T8C3` R.A. : A = b × h.R.A. : b = 22 m et h = 9 m.R.A. : 22 × 9 = 198.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème avec un parallélogramme, on identifie d'abord la base et la hauteur données dans l'énoncé, puis on applique la formule A = b × h. Il faut toujours vérifier que la hauteur utilisée est bien perpendiculaire à la base, pas un côté incliné.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — AireCalcule l'aire d'un parallélogramme de base 16 m et de hauteur 7 m.A = ?Exercice 2 — ProblèmeUn champ en parallélogramme a une base de 30 m et une hauteur de 12 m. Quelle est sa surface ?A = ?
+- `T10C3` a) A = 16 × 7 = 112 m² a) A = 30 × 12 = 360 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeLe terrain de sport (base 22 m, hauteur 9 m) doit être recouvert de gazon à raison de 2 500 ariary le mètre carré. Quel est le coût total ?a) Aireb) Coût totalExercice 2 — Problème inverseUn parallélogramme a une aire de 112 m² et une base de 16 m. Quelle est sa hauteur ?h = ?
+- `T11C3` a) A = 22 × 9 = 198 m²b) Coût = 198 × 2 500 = 495 000 ariary a) h = 112 ÷ 16 = 7 m
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Aire du parallélogramme
+- `P` b = 22 m, h = 9 m
+- `P` Propriétés
+- `P` • Aire = base × hauteur (A = b × h)
+- `P` Formules
+- `P` Aire : A = b × h
+- `P` Rappel : la hauteur est toujours perpendiculaire à la base, jamais le côté incliné.
+- `P` Exemple
+- `P` Calcule l'aire du terrain de sport en parallélogramme, de base 22 m et de hauteur 9 m.
+- `P` A = b × h
+- `P` A = 22 × 9
+- `P` A = 198 m²
+- `P` Attention : dans un problème inverse (trouver la hauteur ou la base à partir de l'aire), on utilise la division au lieu de la multiplication : h = A ÷ b, ou b = A ÷ h.
+- `P` EXERCICES
+- `P` Exercice 1 — Aire (5 points)
+- `P` Calcule l'aire d'un parallélogramme de base 16 m et de hauteur 7 m.
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = 16 × 7 = 112 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un champ en parallélogramme a une base de 30 m et une hauteur de 12 m. Quelle est sa surface ?
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = 30 × 12 = 360 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Le terrain de sport (base 22 m, hauteur 9 m) doit être recouvert de gazon à raison de 2 500 ariary le mètre carré. Quel est le coût total ?
+- `P` a) Aire
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) A = 22 × 9 = 198 m²
+- `P` b) Coût = 198 × 2 500 = 495 000 ariary
+- `P` Exercice 2 — Problème inverse (5 points)
+- `P` Un parallélogramme a une aire de 112 m² et une base de 16 m. Quelle est sa hauteur ?
+- `P` h = ?
+- `P` Corrigé :
+- `P` a) h = 112 ÷ 16 = 7 m
+- `P` Total : 20 points
+
+### Séance 31 / 81 — Aire du trapèze
+
+- Indicateurs : 43 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 31 / 81
+- `P` Aire du trapèze
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Aire des figures planes (approfondissement)
+- `T3C3` Séance n° :
+- `T3C4` 80
+- `T4C1` Titre :
+- `T4C2` Aire du trapèze
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Résoudre des problèmes utilisant l'aire du trapèze
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du trapèze, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du trapèze ?Que représentent B et b dans cette formule ?
+- `T3C3` R.A. : A = (B + b) × h ÷ 2.R.A. : B est la grande base, b est la petite base.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le terrain de Miora a la forme d'un trapèze : une bordure mesure 25 m, la bordure opposée 15 m, et elles sont espacées de 8 m. Miora veut connaître la surface exacte de son terrain avant de le vendre.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Aire du trapèze ». Après cette séance, vous serez capables de résoudre des problèmes concrets utilisant cette formule.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du trapèze du terrain de Miora, avec ses deux bases et sa hauteur indiquées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle formule utilise-t-on pour calculer l'aire du trapèze ?Quelles sont les valeurs de B, b et h pour ce terrain ?Combien fait (25 + 15) × 8 ÷ 2 ?
+- `T8C3` R.A. : A = (B + b) × h ÷ 2.R.A. : B = 25 m, b = 15 m, h = 8 m.R.A. : (25 + 15) × 8 ÷ 2 = 40 × 8 ÷ 2 = 320 ÷ 2 = 160.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème avec un trapèze, on identifie la grande base B, la petite base b et la hauteur h données dans l'énoncé, puis on applique la formule A = (B + b) × h ÷ 2. On n'oublie jamais la division par 2 finale.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — AireCalcule l'aire d'un trapèze de grande base 20 m, de petite base 12 m et de hauteur 6 m.A = ?Exercice 2 — ProblèmeUn champ en trapèze a une grande base de 35 m, une petite base de 20 m et une hauteur de 10 m. Quelle est sa surface ?A = ?
+- `T10C3` a) A = (20 + 12) × 6 ÷ 2 = 96 m² a) A = (35 + 20) × 10 ÷ 2 = 275 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeLe terrain de Miora (bases 25 m et 15 m, hauteur 8 m) se vend à 4 000 ariary le mètre carré. Quel est le prix total du terrain ?a) Aireb) Prix totalExercice 2 — ProblèmeUn trapèze a une aire de 96 m², une grande base de 20 m et une petite base de 12 m. Retrouve sa hauteur (indice : refais le calcul à l'envers).h = ?
+- `T11C3` a) A = (25 + 15) × 8 ÷ 2 = 160 m²b) Prix = 160 × 4 000 = 640 000 ariary a) h = (96 × 2) ÷ (20 + 12) = 192 ÷ 32 = 6 m
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Aire du trapèze
+- `P` B = 25 m, b = 15 m, h = 8 m
+- `P` Propriétés
+- `P` • Aire = (grande base + petite base) × hauteur ÷ 2
+- `P` Formules
+- `P` Aire : A = (B + b) × h ÷ 2
+- `P` Rappel : ne jamais oublier la division par 2 finale.
+- `P` Exemple
+- `P` Calcule l'aire du terrain de Miora : grande base B = 25 m, petite base b = 15 m, hauteur h = 8 m.
+- `P` A = (B + b) × h ÷ 2
+- `P` A = (25 + 15) × 8 ÷ 2
+- `P` A = 40 × 8 ÷ 2
+- `P` A = 320 ÷ 2
+- `P` A = 160 m²
+- `P` Attention : toujours vérifier laquelle des deux bases est la grande (B) et laquelle est la petite (b) avant de calculer — les inverser ne change pas le résultat de l'addition, mais peut créer une confusion dans la compréhension du problème.
+- `P` EXERCICES
+- `P` Exercice 1 — Aire (5 points)
+- `P` Calcule l'aire d'un trapèze de grande base 20 m, de petite base 12 m et de hauteur 6 m.
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = (20 + 12) × 6 ÷ 2 = 96 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un champ en trapèze a une grande base de 35 m, une petite base de 20 m et une hauteur de 10 m. Quelle est sa surface ?
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = (35 + 20) × 10 ÷ 2 = 275 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Le terrain de Miora (bases 25 m et 15 m, hauteur 8 m) se vend à 4 000 ariary le mètre carré. Quel est le prix total du terrain ?
+- `P` a) Aire
+- `P` b) Prix total
+- `P` Corrigé :
+- `P` a) A = (25 + 15) × 8 ÷ 2 = 160 m²
+- `P` b) Prix = 160 × 4 000 = 640 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un trapèze a une aire de 96 m², une grande base de 20 m et une petite base de 12 m. Retrouve sa hauteur (indice : refais le calcul à l'envers).
+- `P` h = ?
+- `P` Corrigé :
+- `P` a) h = (96 × 2) ÷ (20 + 12) = 192 ÷ 32 = 6 m
+- `P` Total : 20 points
+
+### Séance 32 / 81 — Aire du losange
+
+- Indicateurs : 42 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 32 / 81
+- `P` Aire du losange
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Aire des figures planes (approfondissement)
+- `T3C3` Séance n° :
+- `T3C4` 81
+- `T4C1` Titre :
+- `T4C2` Aire du losange
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Résoudre des problèmes utilisant l'aire du losange
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du losange, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du losange ?Que représentent D et d ?
+- `T3C3` R.A. : A = (D × d) ÷ 2.R.A. : D est la grande diagonale, d est la petite diagonale.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Tojo fabrique un panneau de signalisation en forme de losange dont les diagonales mesurent 18 cm et 10 cm. Il veut connaître la surface de métal nécessaire pour le fabriquer.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Aire du losange ». Après cette séance, vous serez capables de résoudre des problèmes concrets utilisant cette formule.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du losange du panneau de Tojo, avec ses deux diagonales indiquées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle formule utilise-t-on pour calculer l'aire du losange ?Quelles sont les valeurs de D et d pour ce panneau ?Combien fait (18 × 10) ÷ 2 ?
+- `T8C3` R.A. : A = (D × d) ÷ 2.R.A. : D = 18 cm et d = 10 cm.R.A. : (18 × 10) ÷ 2 = 180 ÷ 2 = 90.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème avec un losange, on identifie les deux diagonales D et d données dans l'énoncé, puis on applique la formule A = (D × d) ÷ 2. On n'utilise jamais le côté du losange pour ce calcul.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — AireCalcule l'aire d'un losange dont les diagonales mesurent 24 m et 16 m.A = ?Exercice 2 — ProblèmeUn jardin en losange a des diagonales de 30 m et 20 m. Quelle est sa surface ?A = ?
+- `T10C3` a) A = (24 × 16) ÷ 2 = 192 m² a) A = (30 × 20) ÷ 2 = 300 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeLe panneau de Tojo (diagonales 18 cm et 10 cm) coûte 50 ariary par cm² de métal. Quel est le coût total du panneau ?a) Aireb) Coût totalExercice 2 — Problème inverseUn losange a une aire de 192 m² et une grande diagonale de 24 m. Retrouve sa petite diagonale.d = ?
+- `T11C3` a) A = (18 × 10) ÷ 2 = 90 cm²b) Coût = 90 × 50 = 4 500 ariary a) d = (192 × 2) ÷ 24 = 384 ÷ 24 = 16 m
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Aire du losange
+- `P` D = 18 cm, d = 10 cm
+- `P` Propriétés
+- `P` • Aire = (grande diagonale × petite diagonale) ÷ 2
+- `P` Formules
+- `P` Aire : A = (D × d) ÷ 2
+- `P` Rappel : on utilise les diagonales, jamais le côté.
+- `P` Exemple
+- `P` Calcule l'aire du panneau de Tojo : grande diagonale D = 18 cm, petite diagonale d = 10 cm.
+- `P` A = (D × d) ÷ 2
+- `P` A = (18 × 10) ÷ 2
+- `P` A = 180 ÷ 2
+- `P` A = 90 cm²
+- `P` Attention : pour un problème inverse (retrouver une diagonale à partir de l'aire), il faut d'abord multiplier l'aire par 2 avant de diviser par la diagonale connue — oublier ce « × 2 » donne une diagonale deux fois trop petite.
+- `P` EXERCICES
+- `P` Exercice 1 — Aire (5 points)
+- `P` Calcule l'aire d'un losange dont les diagonales mesurent 24 m et 16 m.
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = (24 × 16) ÷ 2 = 192 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un jardin en losange a des diagonales de 30 m et 20 m. Quelle est sa surface ?
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = (30 × 20) ÷ 2 = 300 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Le panneau de Tojo (diagonales 18 cm et 10 cm) coûte 50 ariary par cm² de métal. Quel est le coût total du panneau ?
+- `P` a) Aire
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) A = (18 × 10) ÷ 2 = 90 cm²
+- `P` b) Coût = 90 × 50 = 4 500 ariary
+- `P` Exercice 2 — Problème inverse (5 points)
+- `P` Un losange a une aire de 192 m² et une grande diagonale de 24 m. Retrouve sa petite diagonale.
+- `P` d = ?
+- `P` Corrigé :
+- `P` a) d = (192 × 2) ÷ 24 = 384 ÷ 24 = 16 m
+- `P` Total : 20 points
+
+### Séance 33 / 81 — Aire du cercle
+
+- Indicateurs : 42 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 33 / 81
+- `P` Aire du cercle
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Aire des figures planes (approfondissement)
+- `T3C3` Séance n° :
+- `T3C4` 82
+- `T4C1` Titre :
+- `T4C2` Aire du cercle
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Résoudre des problèmes utilisant l'aire du cercle
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du cercle, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du cercle ?Quelle est la formule de la circonférence ?
+- `T3C3` R.A. : A = π × r × r, avec π ≈ 3,14.R.A. : P = 2 × π × r.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` La citerne d'eau du village a une base circulaire de rayon 8 m. Le maire veut connaître la surface couverte par cette base pour calculer le volume d'eau que la citerne pourra contenir.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Aire du cercle ». Après cette séance, vous serez capables de résoudre des problèmes concrets utilisant cette formule.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du cercle de la base de la citerne, avec son rayon indiqué.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle formule utilise-t-on pour calculer l'aire du cercle ?Quelle est la valeur du rayon de la base de la citerne ?Combien fait 3,14 × 8 × 8 ?
+- `T8C3` R.A. : A = π × r × r.R.A. : r = 8 m.R.A. : 3,14 × 8 × 8 = 200,96.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème avec un cercle, on identifie le rayon r donné (ou déduit) dans l'énoncé, puis on applique la formule A = π × r × r avec π ≈ 3,14. Si l'énoncé donne le diamètre au lieu du rayon, on divise d'abord le diamètre par 2 pour trouver le rayon.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — AireCalcule l'aire d'un cercle de rayon 12 m (π ≈ 3,14).A = ?Exercice 2 — Diamètre donnéUn cercle a un diamètre de 20 m. Calcule son aire (π ≈ 3,14).A = ?
+- `T10C3` a) A = 3,14 × 12 × 12 = 452,16 m² a) rayon = 20 ÷ 2 = 10 m ; A = 3,14 × 10 × 10 = 314 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeLa base de la citerne (rayon 8 m) doit être couverte d'une plaque de béton à 6 000 ariary le mètre carré. Quel est le coût total ?a) Aireb) Coût totalExercice 2 — ProblèmeUn rond-point circulaire a un rayon de 15 m. Calcule sa surface (π ≈ 3,14).A = ?
+- `T11C3` a) A = 3,14 × 8 × 8 = 200,96 m²b) Coût = 200,96 × 6 000 = 1 205 760 ariary a) A = 3,14 × 15 × 15 = 706,5 m²
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Aire du cercle
+- `P` r = 8 m
+- `P` Propriétés
+- `P` • Aire = π × rayon × rayon
+- `P` • Si on connaît le diamètre, le rayon est la moitié du diamètre
+- `P` Formules
+- `P` Aire : A = π × r × r
+- `P` Rappel : π ≈ 3,14, et le rayon est multiplié deux fois par lui-même.
+- `P` Exemple
+- `P` Calcule l'aire de la base circulaire de la citerne, de rayon r = 8 m (π ≈ 3,14).
+- `P` A = π × r × r
+- `P` A = 3,14 × 8 × 8
+- `P` A = 200,96 m²
+- `P` Attention : quand l'énoncé donne le diamètre au lieu du rayon, ne pas oublier de le diviser par 2 avant d'appliquer la formule de l'aire — utiliser directement le diamètre à la place du rayon donne un résultat quatre fois trop grand.
+- `P` EXERCICES
+- `P` Exercice 1 — Aire (5 points)
+- `P` Calcule l'aire d'un cercle de rayon 12 m (π ≈ 3,14).
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = 3,14 × 12 × 12 = 452,16 m²
+- `P` Exercice 2 — Diamètre donné (5 points)
+- `P` Un cercle a un diamètre de 20 m. Calcule son aire (π ≈ 3,14).
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) rayon = 20 ÷ 2 = 10 m ; A = 3,14 × 10 × 10 = 314 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` La base de la citerne (rayon 8 m) doit être couverte d'une plaque de béton à 6 000 ariary le mètre carré. Quel est le coût total ?
+- `P` a) Aire
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) A = 3,14 × 8 × 8 = 200,96 m²
+- `P` b) Coût = 200,96 × 6 000 = 1 205 760 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un rond-point circulaire a un rayon de 15 m. Calcule sa surface (π ≈ 3,14).
+- `P` A = ?
+- `P` Corrigé :
+- `P` a) A = 3,14 × 15 × 15 = 706,5 m²
+- `P` Total : 20 points
+
+### Séance 34 / 81 — Résoudre des problèmes relatifs à la mesure d'aire
+
+- Indicateurs : 38 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 34 / 81
+- `P` Résoudre des problèmes relatifs à la mesure d'aire
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures d'aire (approfondissement)
+- `T3C3` Séance n° :
+- `T3C4` 83
+- `T4C1` Titre :
+- `T4C2` Résoudre des problèmes relatifs à la mesure d'aire
+- `T4C3` Durée :
+- `T5C1` Objectif spécifique :
+- `T5C2` Combiner conversions d'unités d'aire et calculs de surface pour résoudre des problèmes concrets
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Combien de fois une unité d'aire vaut-elle la suivante ?Comment calcule-t-on l'aire d'un rectangle ?
+- `T3C3` R.A. : 100 fois (km², hm², dam², m², dm², cm², mm²).R.A. : A = L × l.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le propriétaire d'un terrain rectangulaire de 45 m sur 30 m veut le vendre en parcelles égales de 500 m² chacune. Il veut savoir combien de parcelles il pourra créer, et à quel prix vendre l'ensemble du terrain à 3 500 ariary le mètre carré.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Résoudre des problèmes relatifs à la mesure d'aire ». Après cette séance, vous serez capables de combiner conversions d'unités et calculs de surface pour résoudre des problèmes concrets.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le terrain rectangulaire de 45 m sur 30 m dessiné au tableau.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Comment calculer l'aire totale du terrain de 45 m sur 30 m ?Combien fait 45 × 30 ?Comment savoir combien de parcelles de 500 m² on peut créer ?Comment calculer le prix total du terrain à 3 500 ariary le m² ?
+- `T8C3` R.A. : A = L × l = 45 × 30.R.A. : 45 × 30 = 1 350 m².R.A. : On divise l'aire totale par l'aire d'une parcelle : 1 350 ÷ 500.R.A. : On multiplie l'aire totale par le prix au mètre carré : 1 350 × 3 500.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème de mesure d'aire, on calcule d'abord l'aire de la figure avec la formule adaptée, en veillant à ce que toutes les mesures soient dans la même unité (on convertit si nécessaire). Ensuite, selon la question posée, on peut diviser cette aire (pour un partage en parcelles égales) ou la multiplier (pour un prix total, une quantité de matériau, etc.).
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Conversion et calculUn champ mesure 3,5 hm². Convertis cette aire en m².RéponseExercice 2 — Partage en parcellesUn terrain de 2 hm² doit être divisé en parcelles de 500 m² chacune. Combien de parcelles peut-on créer ?Nombre de parcelles = ?
+- `T10C3` a) 3,5 hm² = 35 000 m² a) 2 hm² = 20 000 m² ; 20 000 ÷ 500 = 40 parcelles
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Problème completLe terrain de 45 m sur 30 m est vendu en parcelles de 500 m² à 3 500 ariary le m². Combien de parcelles peut-on créer, et quel est le prix total du terrain ?a) Nombre de parcellesb) Prix totalExercice 2 — ProblèmeUne salle de classe rectangulaire mesure 800 cm sur 600 cm. Convertis ces mesures en mètres, puis calcule l'aire de la salle en m².a) Dimensions en mb) Aire
+- `T11C3` a) 1 350 ÷ 500 = 2,7, donc 2 parcelles complètes (il reste 350 m² non utilisés)b) 1 350 × 3 500 = 4 725 000 ariary a) 800 cm = 8 m ; 600 cm = 6 mb) A = 8 × 6 = 48 m²
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Résoudre des problèmes relatifs à la mesure d'aire
+- `P` Règle
+- `P` Donc, pour résoudre un problème de mesure d'aire, on calcule d'abord l'aire de la figure avec la formule adaptée, en veillant à ce que toutes les mesures soient dans la même unité (on convertit si nécessaire). Ensuite, selon la question posée, on peut diviser cette aire (pour un partage en parcelles égales) ou la multiplier (pour un prix total, une quantité de matériau, etc.).
+- `P` Exemple
+- `P` Un terrain rectangulaire de 45 m sur 30 m est vendu à 3 500 ariary le m². Quelle est l'aire totale, et quel est le prix de vente ?
+- `P` Aire = 45 × 30 = 1 350 m².
+- `P` Prix total = 1 350 × 3 500 = 4 725 000 ariary.
+- `P` Attention : toujours vérifier que toutes les mesures d'un même problème sont exprimées dans la même unité avant de calculer une aire ou d'effectuer une conversion — mélanger des mètres et des centimètres sans convertir est l'erreur la plus fréquente dans les problèmes à plusieurs étapes.
+- `P` EXERCICES
+- `P` Exercice 1 — Conversion et calcul (5 points)
+- `P` Un champ mesure 3,5 hm². Convertis cette aire en m².
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 3,5 hm² = 35 000 m²
+- `P` Exercice 2 — Partage en parcelles (5 points)
+- `P` Un terrain de 2 hm² doit être divisé en parcelles de 500 m² chacune. Combien de parcelles peut-on créer ?
+- `P` Nombre de parcelles = ?
+- `P` Corrigé :
+- `P` a) 2 hm² = 20 000 m² ; 20 000 ÷ 500 = 40 parcelles
+- `P` Exercice 1 — Problème complet (5 points)
+- `P` Le terrain de 45 m sur 30 m est vendu en parcelles de 500 m² à 3 500 ariary le m². Combien de parcelles peut-on créer, et quel est le prix total du terrain ?
+- `P` a) Nombre de parcelles
+- `P` b) Prix total
+- `P` Corrigé :
+- `P` a) 1 350 ÷ 500 = 2,7, donc 2 parcelles complètes (il reste 350 m² non utilisés)
+- `P` b) 1 350 × 3 500 = 4 725 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Une salle de classe rectangulaire mesure 800 cm sur 600 cm. Convertis ces mesures en mètres, puis calcule l'aire de la salle en m².
+- `P` a) Dimensions en m
+- `P` b) Aire
+- `P` Corrigé :
+- `P` a) 800 cm = 8 m ; 600 cm = 6 m
+- `P` b) A = 8 × 6 = 48 m²
+- `P` Total : 20 points
+
+### Séance 35 / 81 — Présentation et écriture d'une fraction
+
+- Indicateurs : 33 paragraphes ; 6 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 35 / 81
+- `P` Présentation et écriture d'une fraction
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les fractions
+- `T3C3` Séance n° :
+- `T3C4` 84 à 87
+- `T4C1` Titre :
+- `T4C2` Présentation et écriture d'une fraction
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Comprendre ce qu'est une fraction, identifier le numérateur et le dénominateur
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figures partagées en parts égales, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Combien font 100 ÷ 4 ?Qu'est-ce qu'un partage égal ?
+- `T3C3` R.A. : 100 ÷ 4 = 25.R.A. : Un partage où toutes les parts ont exactement la même taille.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` La mère de Tiana a coupé une galette de riz en 8 parts égales pour la partager avec ses invités. À la fin du repas, 3 parts ont été mangées. Tiana veut savoir comment écrire mathématiquement la quantité de galette mangée.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Présentation et écriture d'une fraction ». Après cette séance, vous serez capables de comprendre ce qu'est une fraction et d'identifier son numérateur et son dénominateur.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un cercle dessiné au tableau, partagé en 8 parts égales, dont 3 sont coloriées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` En combien de parts égales la galette a-t-elle été coupée ?Combien de parts ont été mangées ?Comment écrit-on « 3 parts sur 8 » sous forme de fraction ?Que représente le nombre du bas (8) ?Que représente le nombre du haut (3) ?
+- `T8C3` R.A. : 8 parts égales.R.A. : 3 parts.R.A. : 3/8 : le 3 en haut (numérateur), le 8 en bas (dénominateur).R.A. : Le nombre total de parts égales dans lesquelles le tout a été partagé.R.A. : Le nombre de parts que l'on prend ou que l'on considère.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, une fraction représente une ou plusieurs parts égales d'un tout partagé. Elle s'écrit avec un numérateur (en haut, le nombre de parts prises) et un dénominateur (en bas, le nombre total de parts égales), séparés par une barre de fraction. On lit 3/8 « trois huitièmes ».
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Écrire une fractionUn gâteau est coupé en 6 parts égales, 5 parts sont mangées. Écris la fraction correspondante et lis-la.Fraction et lectureExercice 2 — Identifier numérateur et dénominateurDans la fraction 7/10, quel est le numérateur ? Le dénominateur ?Réponse
+- `T10C3` a) 5/6, on lit « cinq sixièmes » a) Numérateur : 7. Dénominateur : 10.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Écrire une fractionUne planche est divisée en 12 morceaux égaux, 7 morceaux sont utilisés. Écris la fraction correspondante.FractionExercice 2 — ProblèmeLa galette de Tiana était coupée en 8 parts, 3 ont été mangées. Écris la fraction de galette mangée, puis celle de galette restante.a) Fraction mangéeb) Fraction restante
+- `T11C3` a) 7/12 a) 3/8 mangéeb) 5/8 restante (8 − 3 = 5 parts restantes sur 8)
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Présentation et écriture d'une fraction
+- `P` Règle
+- `P` Donc, une fraction représente une ou plusieurs parts égales d'un tout partagé. Elle s'écrit avec un numérateur (en haut, le nombre de parts prises) et un dénominateur (en bas, le nombre total de parts égales), séparés par une barre de fraction. On lit 3/8 « trois huitièmes ».
+- `P` Exemples
+- `T1C1` 38
+- `T1C2` trois huitièmes — 3 parts mangées sur 8 parts de galette
+- `T1C1` 12
+- `T1C2` un demi — la moitié d'un tout
+- `T1C1` 14
+- `T1C2` un quart — une part sur quatre parts égales
+- `T1C1` 56
+- `T1C2` cinq sixièmes — 5 parts sur 6 parts égales
+- `P` Attention : ne jamais inverser le numérateur et le dénominateur : le nombre du bas (dénominateur) est toujours le nombre total de parts égales, le nombre du haut (numérateur) est toujours le nombre de parts prises — jamais l'inverse.
+- `P` EXERCICES
+- `P` Exercice 1 — Écrire une fraction (5 points)
+- `P` Un gâteau est coupé en 6 parts égales, 5 parts sont mangées. Écris la fraction correspondante et lis-la.
+- `P` Fraction et lecture
+- `P` Corrigé :
+- `P` a) 5/6, on lit « cinq sixièmes »
+- `P` Exercice 2 — Identifier numérateur et dénominateur (5 points)
+- `P` Dans la fraction 7/10, quel est le numérateur ? Le dénominateur ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Numérateur : 7. Dénominateur : 10.
+- `P` Exercice 1 — Écrire une fraction (5 points)
+- `P` Une planche est divisée en 12 morceaux égaux, 7 morceaux sont utilisés. Écris la fraction correspondante.
+- `P` Fraction
+- `P` Corrigé :
+- `P` a) 7/12
+- `P` Exercice 2 — Problème (5 points)
+- `P` La galette de Tiana était coupée en 8 parts, 3 ont été mangées. Écris la fraction de galette mangée, puis celle de galette restante.
+- `P` a) Fraction mangée
+- `P` b) Fraction restante
+- `P` Corrigé :
+- `P` a) 3/8 mangée
+- `P` b) 5/8 restante (8 − 3 = 5 parts restantes sur 8)
+- `P` Total : 20 points
+
+### Séance 36 / 81 — Simplification de fractions
+
+- Indicateurs : 40 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 36 / 81
+- `P` Simplification de fractions
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les fractions
+- `T3C3` Séance n° :
+- `T3C4` 88 à 91
+- `T4C1` Titre :
+- `T4C2` Simplification de fractions
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Simplifier une fraction en divisant le numérateur et le dénominateur par un même nombre
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Dans 3/8, quel est le numérateur ? Le dénominateur ?Par quel nombre 8 et 12 sont-ils tous les deux divisibles ?
+- `T3C3` R.A. : Numérateur : 3. Dénominateur : 8.R.A. : Par 4 (8 ÷ 4 = 2, 12 ÷ 4 = 3).
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Zo a écrit la fraction 8/12 pour représenter la partie de son champ déjà labourée. Son camarade Rivo dit qu'on peut écrire cette même quantité plus simplement, avec des nombres plus petits. Zo ne comprend pas comment.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Simplification de fractions ». Après cette séance, vous serez capables de simplifier une fraction en divisant le numérateur et le dénominateur par un même nombre.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la fraction 8/12 écrite au tableau, avec 8 et 12 chacun divisés par 4 juste à côté.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Par quel nombre peut-on diviser à la fois 8 et 12 ?Que devient 8/12 après cette division ?2/3 représente-t-il la même quantité que 8/12 ?Peut-on encore simplifier 2/3 ?
+- `T8C3` R.A. : Par 4, car 8 ÷ 4 = 2 et 12 ÷ 4 = 3, sans reste dans les deux cas.R.A. : 2/3.R.A. : Oui, on a seulement changé l'écriture, pas la valeur : c'est une fraction équivalente, plus simple.R.A. : Non, car 2 et 3 n'ont aucun diviseur commun autre que 1.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, simplifier une fraction, c'est diviser le numérateur et le dénominateur par un même nombre (un diviseur commun), sans changer la valeur de la fraction. On répète l'opération jusqu'à ce que le numérateur et le dénominateur n'aient plus aucun diviseur commun autre que 1 : la fraction est alors dite irréductible.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — SimplificationSimplifie les fractions suivantes.a) 15/20b) 18/24Exercice 2 — Simplification en plusieurs étapesSimplifie 12/36 (tu peux diviser en plusieurs étapes si besoin).12/36 = ?
+- `T10C3` a) 15/20 = 3/4 (divisé par 5)b) 18/24 = 3/4 (divisé par 6) a) 12/36 = 6/18 = 1/3 (divisé par 2 puis par 6, ou directement par 12)
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — SimplificationSimplifie les fractions suivantes.a) 10/25b) 21/28Exercice 2 — ProblèmeZo a labouré 8/12 de son champ. Écris cette fraction sous sa forme la plus simple.Réponse
+- `T11C3` a) 10/25 = 2/5 (divisé par 5)b) 21/28 = 3/4 (divisé par 7) a) 8/12 = 2/3
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Simplification de fractions
+- `P` Règle
+- `P` Donc, simplifier une fraction, c'est diviser le numérateur et le dénominateur par un même nombre (un diviseur commun), sans changer la valeur de la fraction. On répète l'opération jusqu'à ce que le numérateur et le dénominateur n'aient plus aucun diviseur commun autre que 1 : la fraction est alors dite irréductible.
+- `P` Exemple
+- `P` Simplifie la fraction 8/12 représentant le champ labouré de Zo.
+- `P` 8 et 12 sont tous les deux divisibles par 4.
+- `P` 8 ÷ 4 = 2 et 12 ÷ 4 = 3.
+- `P` 8/12 = 2/3.
+- `P` 2 et 3 n'ont plus de diviseur commun : 2/3 est la fraction irréductible.
+- `P` Attention : on doit toujours diviser le numérateur ET le dénominateur par le même nombre, jamais l'un sans l'autre — diviser un seul des deux changerait la valeur de la fraction, pas seulement son écriture.
+- `P` EXERCICES
+- `P` Exercice 1 — Simplification (5 points)
+- `P` Simplifie les fractions suivantes.
+- `P` a) 15/20
+- `P` b) 18/24
+- `P` Corrigé :
+- `P` a) 15/20 = 3/4 (divisé par 5)
+- `P` b) 18/24 = 3/4 (divisé par 6)
+- `P` Exercice 2 — Simplification en plusieurs étapes (5 points)
+- `P` Simplifie 12/36 (tu peux diviser en plusieurs étapes si besoin).
+- `P` 12/36 = ?
+- `P` Corrigé :
+- `P` a) 12/36 = 6/18 = 1/3 (divisé par 2 puis par 6, ou directement par 12)
+- `P` Exercice 1 — Simplification (5 points)
+- `P` Simplifie les fractions suivantes.
+- `P` a) 10/25
+- `P` b) 21/28
+- `P` Corrigé :
+- `P` a) 10/25 = 2/5 (divisé par 5)
+- `P` b) 21/28 = 3/4 (divisé par 7)
+- `P` Exercice 2 — Problème (5 points)
+- `P` Zo a labouré 8/12 de son champ. Écris cette fraction sous sa forme la plus simple.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 8/12 = 2/3
+- `P` Total : 20 points
+
+### Séance 37 / 81 — Comparaison de fractions
+
+- Indicateurs : 40 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 37 / 81
+- `P` Comparaison de fractions
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les fractions
+- `T3C3` Séance n° :
+- `T3C4` 92 à 95
+- `T4C1` Titre :
+- `T4C2` Comparaison de fractions
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Comparer deux fractions de même dénominateur ou de dénominateurs différents
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment simplifie-t-on une fraction ?8/12 simplifié donne quelle fraction ?
+- `T3C3` R.A. : On divise le numérateur et le dénominateur par un même nombre.R.A. : 2/3.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Deux frères comparent leur part de terrain hérité : Bema a reçu 3/4 du terrain familial, et son frère Dax a reçu 5/8. Ils veulent savoir lequel des deux a reçu la plus grande part.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Comparaison de fractions ». Après cette séance, vous serez capables de comparer deux fractions, qu'elles aient le même dénominateur ou des dénominateurs différents.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien les fractions 3/4 et 5/8 écrites au tableau, avec 3/4 transformée en 6/8 juste à côté.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` 3/4 et 5/8 ont-ils le même dénominateur au départ ?Comment transformer 3/4 pour obtenir un dénominateur 8 ?Maintenant que les deux fractions ont le même dénominateur (8), comment les comparer ?Qui a reçu la plus grande part de terrain, Bema (3/4) ou Dax (5/8) ?
+- `T8C3` R.A. : Non : 4 pour l'un, 8 pour l'autre.R.A. : On multiplie le numérateur et le dénominateur par 2 : 3/4 = 6/8.R.A. : On compare simplement les numérateurs : 6 est plus grand que 5.R.A. : Bema, car 3/4 = 6/8, qui est plus grand que 5/8.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour comparer deux fractions qui ont le même dénominateur, on compare simplement leurs numérateurs : la plus grande fraction est celle qui a le plus grand numérateur. Si les dénominateurs sont différents, on transforme d'abord les fractions pour qu'elles aient le même dénominateur (en multipliant numérateur et dénominateur par le même nombre), puis on compare les numérateurs.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Même dénominateurCompare avec le signe qui convient.a) 2/5 ... 3/5b) 7/9 ... 4/9Exercice 2 — Dénominateurs différentsCompare 1/3 et 1/4 en les transformant d'abord au même dénominateur 12.1/3 ... 1/4
+- `T10C3` a) 2/5 < 3/5b) 7/9 > 4/9 a) 1/3 = 4/12 et 1/4 = 3/12, donc 1/3 > 1/4
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ComparaisonCompare avec le signe qui convient.a) 5/6 ... 1/6b) 2/3 ... 5/9Exercice 2 — ProblèmeBema a reçu 3/4 du terrain, Dax a reçu 5/8. Qui a reçu la plus grande part ?Réponse et justification
+- `T11C3` a) 5/6 > 1/6b) 2/3 = 6/9, donc 2/3 > 5/9 a) Bema, car 3/4 = 6/8, qui est plus grand que 5/8.
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Comparaison de fractions
+- `P` Règle
+- `P` Donc, pour comparer deux fractions qui ont le même dénominateur, on compare simplement leurs numérateurs : la plus grande fraction est celle qui a le plus grand numérateur. Si les dénominateurs sont différents, on transforme d'abord les fractions pour qu'elles aient le même dénominateur (en multipliant numérateur et dénominateur par le même nombre), puis on compare les numérateurs.
+- `P` Exemple
+- `P` Compare 3/4 et 5/8 pour savoir qui de Bema ou Dax a reçu la plus grande part de terrain.
+- `P` 3/4 et 5/8 n'ont pas le même dénominateur.
+- `P` On transforme 3/4 : 3/4 = (3×2)/(4×2) = 6/8.
+- `P` On compare 6/8 et 5/8 : 6 est plus grand que 5.
+- `P` Donc 3/4 (= 6/8) est plus grand que 5/8 : Bema a reçu la plus grande part.
+- `P` Attention : on ne peut jamais comparer directement les numérateurs si les dénominateurs sont différents — il faut d'abord les rendre identiques. Comparer 3/4 et 5/8 en disant « 3 est plus petit que 5 » sans transformer les fractions est une erreur fréquente.
+- `P` EXERCICES
+- `P` Exercice 1 — Même dénominateur (5 points)
+- `P` Compare avec le signe qui convient.
+- `P` a) 2/5 ... 3/5
+- `P` b) 7/9 ... 4/9
+- `P` Corrigé :
+- `P` a) 2/5 < 3/5
+- `P` b) 7/9 > 4/9
+- `P` Exercice 2 — Dénominateurs différents (5 points)
+- `P` Compare 1/3 et 1/4 en les transformant d'abord au même dénominateur 12.
+- `P` 1/3 ... 1/4
+- `P` Corrigé :
+- `P` a) 1/3 = 4/12 et 1/4 = 3/12, donc 1/3 > 1/4
+- `P` Exercice 1 — Comparaison (5 points)
+- `P` Compare avec le signe qui convient.
+- `P` a) 5/6 ... 1/6
+- `P` b) 2/3 ... 5/9
+- `P` Corrigé :
+- `P` a) 5/6 > 1/6
+- `P` b) 2/3 = 6/9, donc 2/3 > 5/9
+- `P` Exercice 2 — Problème (5 points)
+- `P` Bema a reçu 3/4 du terrain, Dax a reçu 5/8. Qui a reçu la plus grande part ?
+- `P` Réponse et justification
+- `P` Corrigé :
+- `P` a) Bema, car 3/4 = 6/8, qui est plus grand que 5/8.
+- `P` Total : 20 points
+
+### Séance 38 / 81 — L'addition de fractions
+
+- Indicateurs : 40 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 38 / 81
+- `P` L'addition de fractions
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les fractions
+- `T3C3` Séance n° :
+- `T3C4` 96 à 97
+- `T4C1` Titre :
+- `T4C2` L'addition de fractions
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Additionner deux fractions de même dénominateur ou de dénominateurs différents
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment compare-t-on 3/4 et 5/8 ?1/2 est égal à combien de quarts ?
+- `T3C3` R.A. : On transforme 3/4 en 6/8, puis on compare les numérateurs : 3/4 > 5/8.R.A. : 1/2 = 2/4.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Fara a mangé 2/7 d'un gâteau le matin et 3/7 du même gâteau l'après-midi. Elle veut savoir quelle fraction totale du gâteau elle a mangée dans la journée.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « L'addition de fractions ». Après cette séance, vous serez capables d'additionner deux fractions de même dénominateur ou de dénominateurs différents.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien 2/7 + 3/7 écrit au tableau, avec les numérateurs 2 et 3 encadrés.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` 2/7 et 3/7 ont-ils le même dénominateur ?Quand les dénominateurs sont identiques, que fait-on pour additionner ?Combien fait 2 + 3 ?Quelle fraction totale Fara a-t-elle mangée ?
+- `T8C3` R.A. : Oui, tous les deux ont 7.R.A. : On additionne seulement les numérateurs, le dénominateur ne change pas.R.A. : 5.R.A. : 5/7 du gâteau.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour additionner deux fractions de même dénominateur, on additionne les numérateurs et on garde le même dénominateur. Si les dénominateurs sont différents, on transforme d'abord les fractions pour qu'elles aient le même dénominateur (comme pour la comparaison), puis on additionne les numérateurs.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Même dénominateurCalcule les sommes suivantes.a) 1/5 + 2/5b) 4/9 + 2/9Exercice 2 — Dénominateurs différentsCalcule 1/3 + 1/6 (transforme 1/3 en sixièmes d'abord).1/3 + 1/6 = ?
+- `T10C3` a) 1/5 + 2/5 = 3/5b) 4/9 + 2/9 = 6/9 = 2/3 a) 1/3 = 2/6 ; 2/6 + 1/6 = 3/6 = 1/2
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — AdditionCalcule les sommes suivantes.a) 3/8 + 4/8b) 1/4 + 1/2Exercice 2 — ProblèmeFara a mangé 2/7 d'un gâteau le matin et 3/7 l'après-midi. Quelle fraction totale a-t-elle mangée ?Total = ?
+- `T11C3` a) 3/8 + 4/8 = 7/8b) 1/4 + 2/4 = 3/4 a) 2/7 + 3/7 = 5/7
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` L'addition de fractions
+- `P` Règle
+- `P` Donc, pour additionner deux fractions de même dénominateur, on additionne les numérateurs et on garde le même dénominateur. Si les dénominateurs sont différents, on transforme d'abord les fractions pour qu'elles aient le même dénominateur (comme pour la comparaison), puis on additionne les numérateurs.
+- `P` Exemple
+- `P` Calcule 1/2 + 1/4.
+- `P` 1/2 et 1/4 n'ont pas le même dénominateur.
+- `P` On transforme 1/2 : 1/2 = 2/4.
+- `P` On additionne les numérateurs : 2/4 + 1/4 = 3/4.
+- `P` Résultat : 1/2 + 1/4 = 3/4.
+- `P` Attention : quand on additionne des fractions de même dénominateur, on n'additionne JAMAIS les dénominateurs entre eux — seul le numérateur change, le dénominateur reste identique.
+- `P` EXERCICES
+- `P` Exercice 1 — Même dénominateur (5 points)
+- `P` Calcule les sommes suivantes.
+- `P` a) 1/5 + 2/5
+- `P` b) 4/9 + 2/9
+- `P` Corrigé :
+- `P` a) 1/5 + 2/5 = 3/5
+- `P` b) 4/9 + 2/9 = 6/9 = 2/3
+- `P` Exercice 2 — Dénominateurs différents (5 points)
+- `P` Calcule 1/3 + 1/6 (transforme 1/3 en sixièmes d'abord).
+- `P` 1/3 + 1/6 = ?
+- `P` Corrigé :
+- `P` a) 1/3 = 2/6 ; 2/6 + 1/6 = 3/6 = 1/2
+- `P` Exercice 1 — Addition (5 points)
+- `P` Calcule les sommes suivantes.
+- `P` a) 3/8 + 4/8
+- `P` b) 1/4 + 1/2
+- `P` Corrigé :
+- `P` a) 3/8 + 4/8 = 7/8
+- `P` b) 1/4 + 2/4 = 3/4
+- `P` Exercice 2 — Problème (5 points)
+- `P` Fara a mangé 2/7 d'un gâteau le matin et 3/7 l'après-midi. Quelle fraction totale a-t-elle mangée ?
+- `P` Total = ?
+- `P` Corrigé :
+- `P` a) 2/7 + 3/7 = 5/7
+- `P` Total : 20 points
+
+### Séance 39 / 81 — La soustraction de fractions
+
+- Indicateurs : 40 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 39 / 81
+- `P` La soustraction de fractions
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les fractions
+- `T3C3` Séance n° :
+- `T3C4` 98 à 99
+- `T4C1` Titre :
+- `T4C2` La soustraction de fractions
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Soustraire deux fractions de même dénominateur ou de dénominateurs différents
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment additionne-t-on des fractions de même dénominateur ?1/2 est égal à combien de quarts ?
+- `T3C3` R.A. : On additionne les numérateurs, le dénominateur ne change pas.R.A. : 1/2 = 2/4.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Il restait 5/6 d'un bidon d'huile ce matin. Après la cuisine, il n'en reste plus que 1/6. La cuisinière veut savoir quelle fraction du bidon a été utilisée.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La soustraction de fractions ». Après cette séance, vous serez capables de soustraire deux fractions de même dénominateur ou de dénominateurs différents.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien 5/6 − 1/6 écrit au tableau, avec les numérateurs 5 et 1 encadrés.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` 5/6 et 1/6 ont-ils le même dénominateur ?Quand les dénominateurs sont identiques, que fait-on pour soustraire ?Combien fait 5 − 1 ?Quelle fraction du bidon a été utilisée ?
+- `T8C3` R.A. : Oui, tous les deux ont 6.R.A. : On soustrait seulement les numérateurs, le dénominateur ne change pas.R.A. : 4.R.A. : 4/6, qui se simplifie en 2/3.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour soustraire deux fractions de même dénominateur, on soustrait les numérateurs et on garde le même dénominateur. Si les dénominateurs sont différents, on transforme d'abord les fractions pour qu'elles aient le même dénominateur, puis on soustrait les numérateurs. On simplifie le résultat si possible.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Même dénominateurCalcule les différences suivantes.a) 7/9 − 2/9b) 5/8 − 3/8Exercice 2 — Dénominateurs différentsCalcule 5/6 − 1/3 (transforme 1/3 en sixièmes d'abord).5/6 − 1/3 = ?
+- `T10C3` a) 7/9 − 2/9 = 5/9b) 5/8 − 3/8 = 2/8 = 1/4 a) 1/3 = 2/6 ; 5/6 − 2/6 = 3/6 = 1/2
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — SoustractionCalcule les différences suivantes.a) 9/10 − 3/10b) 3/4 − 1/4Exercice 2 — ProblèmeIl restait 5/6 d'un bidon d'huile, il n'en reste plus que 1/6. Quelle fraction du bidon a été utilisée ?Fraction utilisée = ?
+- `T11C3` a) 9/10 − 3/10 = 6/10 = 3/5b) 3/4 − 1/4 = 2/4 = 1/2 a) 5/6 − 1/6 = 4/6 = 2/3
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La soustraction de fractions
+- `P` Règle
+- `P` Donc, pour soustraire deux fractions de même dénominateur, on soustrait les numérateurs et on garde le même dénominateur. Si les dénominateurs sont différents, on transforme d'abord les fractions pour qu'elles aient le même dénominateur, puis on soustrait les numérateurs. On simplifie le résultat si possible.
+- `P` Exemple
+- `P` Calcule 3/4 − 1/2.
+- `P` 3/4 et 1/2 n'ont pas le même dénominateur.
+- `P` On transforme 1/2 : 1/2 = 2/4.
+- `P` On soustrait les numérateurs : 3/4 − 2/4 = 1/4.
+- `P` Résultat : 3/4 − 1/2 = 1/4.
+- `P` Attention : comme pour l'addition, on ne soustrait jamais les dénominateurs entre eux — seul le numérateur change quand les fractions ont déjà le même dénominateur. Ne pas oublier de simplifier le résultat final si c'est possible.
+- `P` EXERCICES
+- `P` Exercice 1 — Même dénominateur (5 points)
+- `P` Calcule les différences suivantes.
+- `P` a) 7/9 − 2/9
+- `P` b) 5/8 − 3/8
+- `P` Corrigé :
+- `P` a) 7/9 − 2/9 = 5/9
+- `P` b) 5/8 − 3/8 = 2/8 = 1/4
+- `P` Exercice 2 — Dénominateurs différents (5 points)
+- `P` Calcule 5/6 − 1/3 (transforme 1/3 en sixièmes d'abord).
+- `P` 5/6 − 1/3 = ?
+- `P` Corrigé :
+- `P` a) 1/3 = 2/6 ; 5/6 − 2/6 = 3/6 = 1/2
+- `P` Exercice 1 — Soustraction (5 points)
+- `P` Calcule les différences suivantes.
+- `P` a) 9/10 − 3/10
+- `P` b) 3/4 − 1/4
+- `P` Corrigé :
+- `P` a) 9/10 − 3/10 = 6/10 = 3/5
+- `P` b) 3/4 − 1/4 = 2/4 = 1/2
+- `P` Exercice 2 — Problème (5 points)
+- `P` Il restait 5/6 d'un bidon d'huile, il n'en reste plus que 1/6. Quelle fraction du bidon a été utilisée ?
+- `P` Fraction utilisée = ?
+- `P` Corrigé :
+- `P` a) 5/6 − 1/6 = 4/6 = 2/3
+- `P` Total : 20 points
+
+### Séance 40 / 81 — La multiplication de fractions
+
+- Indicateurs : 41 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 40 / 81
+- `P` La multiplication de fractions
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les fractions
+- `T3C3` Séance n° :
+- `T3C4` 100 à 101
+- `T4C1` Titre :
+- `T4C2` La multiplication de fractions
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Multiplier deux fractions entre elles
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment soustrait-on deux fractions de même dénominateur ?Combien font 2 × 3 ? Et 5 × 4 ?
+- `T3C3` R.A. : On soustrait les numérateurs, le dénominateur ne change pas.R.A. : 2 × 3 = 6. 5 × 4 = 20.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Rina veut préparer 2/3 d'une recette qui utilise elle-même 3/5 de litre d'huile pour la quantité complète. Elle veut savoir quelle quantité d'huile elle doit utiliser pour sa portion réduite.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La multiplication de fractions ». Après cette séance, vous serez capables de multiplier deux fractions entre elles.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien 2/3 × 3/5 écrit au tableau, avec les numérateurs reliés entre eux et les dénominateurs reliés entre eux.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` A-t-on besoin que 2/3 et 3/5 aient le même dénominateur pour les multiplier ?Comment calculer le nouveau numérateur ?Comment calculer le nouveau dénominateur ?6/15 peut-il être simplifié ?
+- `T8C3` R.A. : Non, la multiplication de fractions ne demande pas de dénominateur commun.R.A. : On multiplie les deux numérateurs entre eux : 2 × 3 = 6.R.A. : On multiplie les deux dénominateurs entre eux : 3 × 5 = 15.R.A. : Oui, 6/15 = 2/5 (en divisant par 3).
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour multiplier deux fractions, on multiplie les numérateurs entre eux pour obtenir le nouveau numérateur, et on multiplie les dénominateurs entre eux pour obtenir le nouveau dénominateur. On simplifie le résultat si possible. Contrairement à l'addition et à la soustraction, il n'est pas nécessaire d'avoir le même dénominateur au départ.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — MultiplicationCalcule les produits suivants.a) 1/2 × 2/3b) 3/4 × 2/9Exercice 2 — ProblèmeUn champ mesure 4/5 d'hectare. On y cultive du riz sur 1/2 de cette surface. Quelle fraction d'hectare est cultivée en riz ?Réponse
+- `T10C3` a) 1/2 × 2/3 = 2/6 = 1/3b) 3/4 × 2/9 = 6/36 = 1/6 a) 4/5 × 1/2 = 4/10 = 2/5 d'hectare
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — MultiplicationCalcule les produits suivants.a) 2/5 × 3/4b) 1/3 × 3/7Exercice 2 — ProblèmeRina fait 2/3 d'une recette qui utilise 3/5 de litre d'huile. Quelle quantité d'huile utilise-t-elle ?Quantité = ?
+- `T11C3` a) 2/5 × 3/4 = 6/20 = 3/10b) 1/3 × 3/7 = 3/21 = 1/7 a) 2/3 × 3/5 = 6/15 = 2/5 de litre
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La multiplication de fractions
+- `P` Règle
+- `P` Donc, pour multiplier deux fractions, on multiplie les numérateurs entre eux pour obtenir le nouveau numérateur, et on multiplie les dénominateurs entre eux pour obtenir le nouveau dénominateur. On simplifie le résultat si possible. Contrairement à l'addition et à la soustraction, il n'est pas nécessaire d'avoir le même dénominateur au départ.
+- `P` Exemple
+- `P` Rina veut faire 2/3 d'une recette qui utilise 3/5 de litre d'huile. Quelle quantité d'huile doit-elle utiliser ?
+- `P` On multiplie les numérateurs : 2 × 3 = 6.
+- `P` On multiplie les dénominateurs : 3 × 5 = 15.
+- `P` 2/3 × 3/5 = 6/15.
+- `P` On simplifie : 6/15 = 2/5.
+- `P` Rina doit utiliser 2/5 de litre d'huile.
+- `P` Attention : ne jamais chercher un dénominateur commun avant de multiplier des fractions — c'est une règle qui s'applique seulement à l'addition et à la soustraction. Pour la multiplication, on multiplie directement numérateurs entre eux et dénominateurs entre eux.
+- `P` EXERCICES
+- `P` Exercice 1 — Multiplication (5 points)
+- `P` Calcule les produits suivants.
+- `P` a) 1/2 × 2/3
+- `P` b) 3/4 × 2/9
+- `P` Corrigé :
+- `P` a) 1/2 × 2/3 = 2/6 = 1/3
+- `P` b) 3/4 × 2/9 = 6/36 = 1/6
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un champ mesure 4/5 d'hectare. On y cultive du riz sur 1/2 de cette surface. Quelle fraction d'hectare est cultivée en riz ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 4/5 × 1/2 = 4/10 = 2/5 d'hectare
+- `P` Exercice 1 — Multiplication (5 points)
+- `P` Calcule les produits suivants.
+- `P` a) 2/5 × 3/4
+- `P` b) 1/3 × 3/7
+- `P` Corrigé :
+- `P` a) 2/5 × 3/4 = 6/20 = 3/10
+- `P` b) 1/3 × 3/7 = 3/21 = 1/7
+- `P` Exercice 2 — Problème (5 points)
+- `P` Rina fait 2/3 d'une recette qui utilise 3/5 de litre d'huile. Quelle quantité d'huile utilise-t-elle ?
+- `P` Quantité = ?
+- `P` Corrigé :
+- `P` a) 2/3 × 3/5 = 6/15 = 2/5 de litre
+- `P` Total : 20 points
+
+### Séance 41 / 81 — La division de fractions
+
+- Indicateurs : 40 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 41 / 81
+- `P` La division de fractions
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les fractions
+- `T3C3` Séance n° :
+- `T3C4` 102 à 103
+- `T4C1` Titre :
+- `T4C2` La division de fractions
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Diviser une fraction par une autre en multipliant par l'inverse
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment multiplie-t-on deux fractions ?Quel est l'inverse de 4/5 ?
+- `T3C3` R.A. : On multiplie les numérateurs entre eux, et les dénominateurs entre eux.R.A. : 5/4 (on échange le numérateur et le dénominateur).
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un tailleur a 2/3 de mètre de tissu. Il veut savoir combien de morceaux de 4/5 de cette longueur... en réalité il veut diviser 2/3 de mètre en parts de 4/5 pour vérifier une commande. Il ne sait pas comment diviser deux fractions entre elles.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La division de fractions ». Après cette séance, vous serez capables de diviser une fraction par une autre en multipliant par l'inverse.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien 2/3 ÷ 4/5 écrit au tableau, transformé juste à côté en 2/3 × 5/4.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quel est l'inverse de 4/5 ?Par quelle opération remplace-t-on 2/3 ÷ 4/5 ?Combien fait 2/3 × 5/4 ?
+- `T8C3` R.A. : 5/4 (on échange numérateur et dénominateur).R.A. : Par la multiplication 2/3 × 5/4.R.A. : (2 × 5)/(3 × 4) = 10/12, qui se simplifie en 5/6.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour diviser une fraction par une autre, on multiplie la première fraction par l'inverse de la deuxième (on échange le numérateur et le dénominateur de la fraction qui suit le signe ÷, et le signe ÷ devient un signe ×). On effectue ensuite la multiplication normalement, puis on simplifie si possible.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — DivisionCalcule les quotients suivants.a) 3/4 ÷ 1/2b) 5/6 ÷ 2/3Exercice 2 — ProblèmeUn ruban de 3/4 de mètre doit être coupé en morceaux de 1/8 de mètre chacun. Combien de morceaux peut-on obtenir ?Réponse
+- `T10C3` a) 3/4 × 2/1 = 6/4 = 3/2b) 5/6 × 3/2 = 15/12 = 5/4 a) 3/4 ÷ 1/8 = 3/4 × 8/1 = 24/4 = 6 morceaux
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — DivisionCalcule les quotients suivants.a) 2/5 ÷ 3/4b) 4/7 ÷ 2/3Exercice 2 — ProblèmeUn tailleur a 2/3 de mètre de tissu et veut le diviser en morceaux de 4/5 de cette unité. Combien de fois 4/5 tient dans 2/3 ?Réponse = ?
+- `T11C3` a) 2/5 × 4/3 = 8/15b) 4/7 × 3/2 = 12/14 = 6/7 a) 2/3 ÷ 4/5 = 2/3 × 5/4 = 10/12 = 5/6
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La division de fractions
+- `P` Règle
+- `P` Donc, pour diviser une fraction par une autre, on multiplie la première fraction par l'inverse de la deuxième (on échange le numérateur et le dénominateur de la fraction qui suit le signe ÷, et le signe ÷ devient un signe ×). On effectue ensuite la multiplication normalement, puis on simplifie si possible.
+- `P` Exemple
+- `P` Calcule 2/3 ÷ 4/5.
+- `P` On remplace ÷ 4/5 par × 5/4 (l'inverse de 4/5).
+- `P` 2/3 ÷ 4/5 = 2/3 × 5/4.
+- `P` On multiplie : (2 × 5)/(3 × 4) = 10/12.
+- `P` On simplifie : 10/12 = 5/6.
+- `P` Attention : on ne prend l'inverse QUE de la deuxième fraction (celle après le signe ÷), jamais de la première. Prendre l'inverse des deux fractions, ou de la mauvaise, donne un résultat complètement faux.
+- `P` EXERCICES
+- `P` Exercice 1 — Division (5 points)
+- `P` Calcule les quotients suivants.
+- `P` a) 3/4 ÷ 1/2
+- `P` b) 5/6 ÷ 2/3
+- `P` Corrigé :
+- `P` a) 3/4 × 2/1 = 6/4 = 3/2
+- `P` b) 5/6 × 3/2 = 15/12 = 5/4
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un ruban de 3/4 de mètre doit être coupé en morceaux de 1/8 de mètre chacun. Combien de morceaux peut-on obtenir ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 3/4 ÷ 1/8 = 3/4 × 8/1 = 24/4 = 6 morceaux
+- `P` Exercice 1 — Division (5 points)
+- `P` Calcule les quotients suivants.
+- `P` a) 2/5 ÷ 3/4
+- `P` b) 4/7 ÷ 2/3
+- `P` Corrigé :
+- `P` a) 2/5 × 4/3 = 8/15
+- `P` b) 4/7 × 3/2 = 12/14 = 6/7
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un tailleur a 2/3 de mètre de tissu et veut le diviser en morceaux de 4/5 de cette unité. Combien de fois 4/5 tient dans 2/3 ?
+- `P` Réponse = ?
+- `P` Corrigé :
+- `P` a) 2/3 ÷ 4/5 = 2/3 × 5/4 = 10/12 = 5/6
+- `P` Total : 20 points
+
+### Séance 42 / 81 — Résoudre des problèmes avec des fractions
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 42 / 81
+- `P` Résoudre des problèmes avec des fractions
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les fractions
+- `T3C3` Séance n° :
+- `T3C4` 104 à 107
+- `T4C1` Titre :
+- `T4C2` Résoudre des problèmes avec des fractions
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Combiner les 4 opérations sur les fractions pour résoudre des problèmes concrets
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment divise-t-on par une fraction ?Comment multiplie-t-on deux fractions ?
+- `T3C3` R.A. : On multiplie par son inverse.R.A. : Numérateur × numérateur, dénominateur × dénominateur.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le père de Vao possède un champ dont il cultive 3/4 en riz. Sur cette partie cultivée en riz, 2/3 est déjà récolté. Vao veut savoir quelle fraction du champ total a déjà été récoltée, et quelle fraction reste à récolter.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Résoudre des problèmes avec des fractions ». Après cette séance, vous serez capables de combiner les opérations sur les fractions pour résoudre des problèmes en plusieurs étapes.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un rectangle représentant le champ, dont 3/4 est colorié pour le riz, et parmi cette zone, 2/3 est hachuré pour la partie récoltée.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle fraction du champ est cultivée en riz ?Sur cette partie riz, quelle fraction est déjà récoltée ?Comment calculer la fraction du champ TOTAL déjà récoltée ?Combien fait 3/4 × 2/3 ?
+- `T8C3` R.A. : 3/4 du champ total.R.A. : 2/3 de la partie riz.R.A. : On multiplie les deux fractions : 3/4 × 2/3.R.A. : 6/12 = 1/2 du champ total.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème avec des fractions, on identifie d'abord ce que représente chaque fraction dans l'énoncé (une partie d'un tout, ou une partie d'une partie), puis on choisit l'opération adaptée : multiplication pour « une fraction d'une fraction », addition ou soustraction pour combiner ou retirer des parts, division pour partager en parts égales.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Fraction d'une fractionUn réservoir est rempli aux 2/3. On utilise 1/4 de cette eau. Quelle fraction du réservoir total a été utilisée ?RéponseExercice 2 — Combinaison addition/soustractionUn terrain est utilisé pour 2/5 en maïs et 1/5 en haricots. Quelle fraction du terrain reste libre ?Réponse
+- `T10C3` a) 2/3 × 1/4 = 2/12 = 1/6 du réservoir total a) 2/5 + 1/5 = 3/5 utilisée ; 1 − 3/5 = 2/5 reste libre
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ProblèmeLe champ de Vao (cultivé en riz sur 3/4) a déjà 2/3 de récolté. Quelle fraction du champ total reste à récolter ?RéponseExercice 2 — ProblèmeUne citerne de 3/4 de sa capacité totale contient de l'eau. On en utilise la moitié (1/2) pour l'irrigation. Quelle fraction de la capacité totale de la citerne a été utilisée pour l'irrigation ?Réponse
+- `T11C3` a) Récolté : 3/4 × 2/3 = 1/2 ; reste à récolter : 1 − 1/2 = 1/2 a) 3/4 × 1/2 = 3/8 de la capacité totale
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Résoudre des problèmes avec des fractions
+- `P` Règle
+- `P` Donc, pour résoudre un problème avec des fractions, on identifie d'abord ce que représente chaque fraction dans l'énoncé (une partie d'un tout, ou une partie d'une partie), puis on choisit l'opération adaptée : multiplication pour « une fraction d'une fraction », addition ou soustraction pour combiner ou retirer des parts, division pour partager en parts égales.
+- `P` Exemple
+- `P` Le champ de Vao est cultivé en riz sur 3/4 de sa surface. Sur cette partie riz, 2/3 est déjà récolté. Quelle fraction du champ TOTAL est déjà récoltée ? Quelle fraction reste à récolter ?
+- `P` Fraction du champ total récoltée = 3/4 × 2/3 = 6/12 = 1/2.
+- `P` Fraction du champ total restant à récolter = 1 − 1/2 = 1/2.
+- `P` La moitié du champ total est déjà récoltée, l'autre moitié reste à récolter.
+- `P` Attention : bien distinguer « une fraction du tout » (qui se calcule souvent par multiplication) de « une fraction en plus ou en moins » (qui se calcule par addition ou soustraction) — relire attentivement l'énoncé pour choisir la bonne opération avant de calculer.
+- `P` EXERCICES
+- `P` Exercice 1 — Fraction d'une fraction (5 points)
+- `P` Un réservoir est rempli aux 2/3. On utilise 1/4 de cette eau. Quelle fraction du réservoir total a été utilisée ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 2/3 × 1/4 = 2/12 = 1/6 du réservoir total
+- `P` Exercice 2 — Combinaison addition/soustraction (5 points)
+- `P` Un terrain est utilisé pour 2/5 en maïs et 1/5 en haricots. Quelle fraction du terrain reste libre ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 2/5 + 1/5 = 3/5 utilisée ; 1 − 3/5 = 2/5 reste libre
+- `P` Exercice 1 — Problème (5 points)
+- `P` Le champ de Vao (cultivé en riz sur 3/4) a déjà 2/3 de récolté. Quelle fraction du champ total reste à récolter ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Récolté : 3/4 × 2/3 = 1/2 ; reste à récolter : 1 − 1/2 = 1/2
+- `P` Exercice 2 — Problème (5 points)
+- `P` Une citerne de 3/4 de sa capacité totale contient de l'eau. On en utilise la moitié (1/2) pour l'irrigation. Quelle fraction de la capacité totale de la citerne a été utilisée pour l'irrigation ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 3/4 × 1/2 = 3/8 de la capacité totale
+- `P` Total : 20 points
+
+### Séance 43 / 81 — Intervalles et piquets — circuit ouvert
+
+- Indicateurs : 44 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 43 / 81
+- `P` Intervalles et piquets — circuit ouvert
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les intervalles
+- `T3C3` Séance n° :
+- `T3C4` 108 à 111
+- `T4C1` Titre :
+- `T4C2` Intervalles et piquets — circuit ouvert
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer le nombre de piquets nécessaires pour un alignement en ligne droite (circuit ouvert)
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Schéma d'un alignement de piquets, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Combien font 100 ÷ 5 ?Qu'est-ce qu'une distance mesurée en mètres ?
+- `T3C3` R.A. : 100 ÷ 5 = 20.R.A. : La longueur entre deux points.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le chef du village veut planter des piquets tout le long d'une route droite de 100 m, en plaçant un piquet tous les 5 m, du tout début jusqu'à la toute fin de la route. Il veut savoir combien de piquets il doit préparer.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Intervalles et piquets — circuit ouvert ». Après cette séance, vous serez capables de calculer le nombre de piquets nécessaires pour un alignement en ligne droite.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le schéma d'un alignement de 6 piquets sur une ligne droite, avec les distances de 5 m indiquées entre chaque piquet.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien d'intervalles (espaces) voyez-vous entre les 6 piquets du schéma ?Combien de piquets voyez-vous en tout ?Y a-t-il un piquet de plus ou un intervalle de plus ?Pour la route de 100 m avec un piquet tous les 5 m, combien d'intervalles y a-t-il ?
+- `T8C3` R.A. : 5 intervalles.R.A. : 6 piquets.R.A. : Il y a un piquet de plus que le nombre d'intervalles, car il y a un piquet à chaque extrémité de la ligne.R.A. : 100 ÷ 5 = 20 intervalles.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, dans un circuit ouvert (une ligne droite avec un début et une fin, comme une route ou une clôture qui ne se referme pas), le nombre d'intervalles se calcule en divisant la distance totale par la longueur d'un intervalle : nombre d'intervalles = distance ÷ pas. Le nombre de piquets est toujours égal au nombre d'intervalles PLUS 1, car il faut un piquet à chaque extrémité.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Circuit ouvertUne allée droite de 60 m est bordée de piquets tous les 4 m, du début à la fin. Combien de piquets faut-il ?RéponseExercice 2 — Problème inverseUne clôture droite compte 11 piquets espacés régulièrement sur 50 m. Quel est l'espacement entre deux piquets ?Pas = ?
+- `T10C3` a) intervalles = 60 ÷ 4 = 15 ; piquets = 15 + 1 = 16 piquets a) intervalles = 11 − 1 = 10 ; pas = 50 ÷ 10 = 5 m
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Circuit ouvertUne route droite de 144 m est bordée de piquets tous les 8 m. Combien de piquets faut-il ?RéponseExercice 2 — ProblèmeLe chef du village a préparé 21 piquets pour sa route de 100 m. Vérifie que ce nombre est correct en refaisant le calcul.Vérification
+- `T11C3` a) intervalles = 144 ÷ 8 = 18 ; piquets = 18 + 1 = 19 piquets a) intervalles = 100 ÷ 5 = 20 ; piquets = 20 + 1 = 21 : le nombre est correct.
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Intervalles et piquets — circuit ouvert
+- `P` Circuit ouvert — 6 piquets, 5 intervalles de 5 m
+- `P` Propriétés
+- `P` • Un circuit ouvert a un début et une fin distincts (il ne se referme pas sur lui-même)
+- `P` • Nombre de piquets = nombre d'intervalles + 1
+- `P` Formules
+- `P` Nombre d'intervalles : intervalles = distance ÷ pas
+- `P` On divise la distance totale par la longueur d'un intervalle (le « pas », c'est-à-dire l'espace entre deux piquets consécutifs).
+- `P` Nombre de piquets : piquets = intervalles + 1
+- `P` Dans un circuit ouvert, il y a toujours un piquet de plus que le nombre d'intervalles, car chaque extrémité de la ligne porte un piquet.
+- `P` Exemple
+- `P` Le chef du village veut planter des piquets tous les 5 m sur une route droite de 100 m, du début à la fin. Combien de piquets doit-il préparer ?
+- `P` intervalles = distance ÷ pas
+- `P` intervalles = 100 ÷ 5
+- `P` intervalles = 20
+- `P` piquets = intervalles + 1
+- `P` piquets = 20 + 1 = 21 piquets
+- `P` Attention : ne jamais oublier le « + 1 » dans un circuit ouvert : c'est l'erreur la plus fréquente de cette leçon. Sans ce piquet supplémentaire, il manquerait un piquet à une des deux extrémités de la ligne.
+- `P` EXERCICES
+- `P` Exercice 1 — Circuit ouvert (5 points)
+- `P` Une allée droite de 60 m est bordée de piquets tous les 4 m, du début à la fin. Combien de piquets faut-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) intervalles = 60 ÷ 4 = 15 ; piquets = 15 + 1 = 16 piquets
+- `P` Exercice 2 — Problème inverse (5 points)
+- `P` Une clôture droite compte 11 piquets espacés régulièrement sur 50 m. Quel est l'espacement entre deux piquets ?
+- `P` Pas = ?
+- `P` Corrigé :
+- `P` a) intervalles = 11 − 1 = 10 ; pas = 50 ÷ 10 = 5 m
+- `P` Exercice 1 — Circuit ouvert (5 points)
+- `P` Une route droite de 144 m est bordée de piquets tous les 8 m. Combien de piquets faut-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) intervalles = 144 ÷ 8 = 18 ; piquets = 18 + 1 = 19 piquets
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le chef du village a préparé 21 piquets pour sa route de 100 m. Vérifie que ce nombre est correct en refaisant le calcul.
+- `P` Vérification
+- `P` Corrigé :
+- `P` a) intervalles = 100 ÷ 5 = 20 ; piquets = 20 + 1 = 21 : le nombre est correct.
+- `P` Total : 20 points
+
+### Séance 44 / 81 — Intervalles et piquets — circuit fermé
+
+- Indicateurs : 42 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 44 / 81
+- `P` Intervalles et piquets — circuit fermé
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les intervalles
+- `T3C3` Séance n° :
+- `T3C4` 112 à 115
+- `T4C1` Titre :
+- `T4C2` Intervalles et piquets — circuit fermé
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer le nombre de piquets nécessaires pour un circuit qui se referme sur lui-même
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Schéma d'un circuit fermé avec piquets, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Dans un circuit ouvert, comment calcule-t-on le nombre de piquets ?Combien font 60 ÷ 4 ?
+- `T3C3` R.A. : piquets = intervalles + 1.R.A. : 60 ÷ 4 = 15.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le chef du village veut aussi planter des piquets tout autour d'un enclos circulaire de 60 m de tour, en plaçant un piquet tous les 4 m. Comme l'enclos forme une boucle fermée, il se demande si le calcul sera le même que pour la route droite.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Intervalles et piquets — circuit fermé ». Après cette séance, vous serez capables de calculer le nombre de piquets nécessaires pour un circuit qui se referme sur lui-même.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le schéma d'un circuit fermé (un cercle) avec 8 piquets répartis régulièrement tout autour.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de piquets voyez-vous sur ce cercle ?Combien d'intervalles (espaces) y a-t-il entre ces piquets ?Y a-t-il un piquet en plus, comme dans le circuit ouvert ?Pour l'enclos de 60 m avec un piquet tous les 4 m, combien de piquets faut-il ?
+- `T8C3` R.A. : 8 piquets.R.A. : 8 intervalles également, car le dernier piquet est relié au premier pour refermer la boucle.R.A. : Non : ici, le nombre de piquets est exactement égal au nombre d'intervalles.R.A. : 60 ÷ 4 = 15 piquets (pas de + 1 ici).
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, dans un circuit fermé (une boucle qui se referme sur elle-même, comme un enclos circulaire ou un terrain rectangulaire clôturé tout autour), le nombre de piquets est exactement égal au nombre d'intervalles : piquets = distance ÷ pas. On n'ajoute pas de + 1, car il n'y a pas d'extrémité : le dernier intervalle relie le dernier piquet au premier.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Circuit ferméUn enclos rectangulaire a un périmètre de 80 m. On y plante un piquet tous les 5 m tout autour. Combien de piquets faut-il ?RéponseExercice 2 — Problème inverseUn jardin circulaire clôturé compte 15 piquets espacés régulièrement, pour un tour de 75 m. Quel est l'espacement entre deux piquets ?Pas = ?
+- `T10C3` a) piquets = 80 ÷ 5 = 16 piquets a) pas = 75 ÷ 15 = 5 m
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Circuit ferméUn terrain de forme circulaire a un tour de 90 m. On y plante un piquet tous les 6 m. Combien de piquets faut-il ?RéponseExercice 2 — ComparaisonUne route droite de 60 m et un enclos fermé de 60 m de tour sont tous les deux bordés de piquets tous les 4 m. Combien de piquets faut-il pour chacun ? Explique la différence.a) Route droiteb) Enclos fermé
+- `T11C3` a) piquets = 90 ÷ 6 = 15 piquets a) Route (circuit ouvert) : 60 ÷ 4 = 15, + 1 = 16 piquetsb) Enclos (circuit fermé) : 60 ÷ 4 = 15 piquets (pas de + 1)
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Intervalles et piquets — circuit fermé
+- `P` Circuit fermé — 8 piquets, 8 intervalles
+- `P` Propriétés
+- `P` • Un circuit fermé se referme sur lui-même (pas de début ni de fin distincts)
+- `P` • Nombre de piquets = nombre d'intervalles (pas de + 1)
+- `P` Formules
+- `P` Nombre de piquets : piquets = distance ÷ pas
+- `P` Dans un circuit fermé, chaque piquet est suivi d'un intervalle qui mène au piquet suivant, y compris le dernier qui revient au premier : il y a donc autant de piquets que d'intervalles.
+- `P` Exemple
+- `P` Le chef du village veut planter des piquets tous les 4 m tout autour d'un enclos circulaire de 60 m de tour. Combien de piquets doit-il préparer ?
+- `P` piquets = distance ÷ pas
+- `P` piquets = 60 ÷ 4
+- `P` piquets = 15 piquets
+- `P` Attention : ne jamais ajouter le « + 1 » dans un circuit fermé — c'est la règle du circuit ouvert. Bien identifier si le circuit se referme sur lui-même (enclos, terrain clôturé tout autour) ou s'il a un début et une fin (route droite, mur avec deux extrémités) avant de choisir la formule.
+- `P` EXERCICES
+- `P` Exercice 1 — Circuit fermé (5 points)
+- `P` Un enclos rectangulaire a un périmètre de 80 m. On y plante un piquet tous les 5 m tout autour. Combien de piquets faut-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) piquets = 80 ÷ 5 = 16 piquets
+- `P` Exercice 2 — Problème inverse (5 points)
+- `P` Un jardin circulaire clôturé compte 15 piquets espacés régulièrement, pour un tour de 75 m. Quel est l'espacement entre deux piquets ?
+- `P` Pas = ?
+- `P` Corrigé :
+- `P` a) pas = 75 ÷ 15 = 5 m
+- `P` Exercice 1 — Circuit fermé (5 points)
+- `P` Un terrain de forme circulaire a un tour de 90 m. On y plante un piquet tous les 6 m. Combien de piquets faut-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) piquets = 90 ÷ 6 = 15 piquets
+- `P` Exercice 2 — Comparaison (5 points)
+- `P` Une route droite de 60 m et un enclos fermé de 60 m de tour sont tous les deux bordés de piquets tous les 4 m. Combien de piquets faut-il pour chacun ? Explique la différence.
+- `P` a) Route droite
+- `P` b) Enclos fermé
+- `P` Corrigé :
+- `P` a) Route (circuit ouvert) : 60 ÷ 4 = 15, + 1 = 16 piquets
+- `P` b) Enclos (circuit fermé) : 60 ÷ 4 = 15 piquets (pas de + 1)
+- `P` Total : 20 points
+
+### Séance 45 / 81 — Les unités de mesure de volume
+
+- Indicateurs : 42 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 45 / 81
+- `P` Les unités de mesure de volume
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures de volume
+- `T3C3` Séance n° :
+- `T3C4` 116 à 119
+- `T4C1` Titre :
+- `T4C2` Les unités de mesure de volume
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Connaître les unités de volume et convertir une mesure d'une unité à une autre
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Cube de 1 m de côté, cube de 1 dm de côté, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Combien de fois une unité d'aire vaut-elle la suivante ?Quelle est l'unité de l'aire ? Et celle du volume ?
+- `T3C3` R.A. : 100 fois.R.A. : L'aire se mesure en m² (mètres carrés), le volume en m³ (mètres cubes).
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un maçon a coulé un bloc de béton cubique de 2 m de côté. Il veut savoir combien cela représente de dm³, car son fournisseur de béton facture au décimètre cube.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les unités de mesure de volume ». Après cette séance, vous serez capables de connaître les unités de volume et de convertir une mesure d'une unité à une autre.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un cube de 1 m de côté à côté d'un cube de 1 dm de côté, dessinés au tableau.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quel est le volume d'un cube de 1 dm de côté ?Quel est le volume d'un cube de 1 m de côté, exprimé en dm ?Donc combien de fois 1 m³ vaut-il 1 dm³ ?Le bloc de béton du maçon fait 2 m de côté. Combien de dm³ cela représente-t-il si le bloc était un cube de 2 m³ ?
+- `T8C3` R.A. : 1 dm × 1 dm × 1 dm = 1 dm³.R.A. : 1 m = 10 dm, donc 10 dm × 10 dm × 10 dm = 1 000 dm³.R.A. : 1 000 fois (10 × 10 × 10), et non pas 10 comme pour les longueurs, ni 100 comme pour les aires.R.A. : 2 m³ = 2 × 1 000 = 2 000 dm³.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, les unités de volume varient par 1 000 : m³, dm³, cm³, mm³. En effet, une unité de longueur ×10 donne une unité de volume ×1000 (car le volume est une longueur multipliée trois fois par elle-même). Pour convertir, on multiplie ou on divise par 1 000 pour chaque rang parcouru dans le tableau.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Conversion vers une unité plus petiteConvertis en dm³.a) 4 m³b) 3,5 dm³ en cm³Exercice 2 — Conversion vers une unité plus grandeConvertis en dm³.a) 5 000 cm³b) 12 000 cm³
+- `T10C3` a) 4 m³ = 4 000 dm³b) 3,5 dm³ = 3 500 cm³ a) 5 000 cm³ = 5 dm³b) 12 000 cm³ = 12 dm³
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ConversionsConvertis les mesures suivantes.a) 0,008 m³ en dm³b) 7 dm³ en cm³Exercice 2 — ProblèmeLe bloc de béton du maçon fait 2 m³. Le fournisseur facture 500 ariary par dm³. Quel est le coût total ?a) Volume en dm³b) Coût total
+- `T11C3` a) 0,008 m³ = 8 dm³b) 7 dm³ = 7 000 cm³ a) 2 m³ = 2 000 dm³b) 2 000 × 500 = 1 000 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les unités de mesure de volume
+- `P` Règle
+- `P` Donc, les unités de volume varient par 1 000 : m³, dm³, cm³, mm³. En effet, une unité de longueur ×10 donne une unité de volume ×1000 (car le volume est une longueur multipliée trois fois par elle-même). Pour convertir, on multiplie ou on divise par 1 000 pour chaque rang parcouru dans le tableau.
+- `P` Exemple
+- `P` Un bloc de béton a un volume de 2 m³. Combien cela représente-t-il de dm³ ?
+- `P` 1 m³ = 1 000 dm³ (un rang parcouru, donc ×1000).
+- `P` 2 m³ = 2 × 1 000 = 2 000 dm³.
+- `P` Attention : ne pas confondre les 3 tableaux : longueur (×10 par rang), aire (×100 par rang), volume (×1000 par rang). C'est l'erreur la plus fréquente de tout le chapitre mesure — toujours se demander si on mesure une longueur, une surface ou un volume avant de choisir le facteur de conversion.
+- `P` EXERCICES
+- `P` Exercice 1 — Conversion vers une unité plus petite (5 points)
+- `P` Convertis en dm³.
+- `P` a) 4 m³
+- `P` b) 3,5 dm³ en cm³
+- `P` Corrigé :
+- `P` a) 4 m³ = 4 000 dm³
+- `P` b) 3,5 dm³ = 3 500 cm³
+- `P` Exercice 2 — Conversion vers une unité plus grande (5 points)
+- `P` Convertis en dm³.
+- `P` a) 5 000 cm³
+- `P` b) 12 000 cm³
+- `P` Corrigé :
+- `P` a) 5 000 cm³ = 5 dm³
+- `P` b) 12 000 cm³ = 12 dm³
+- `P` Exercice 1 — Conversions (5 points)
+- `P` Convertis les mesures suivantes.
+- `P` a) 0,008 m³ en dm³
+- `P` b) 7 dm³ en cm³
+- `P` Corrigé :
+- `P` a) 0,008 m³ = 8 dm³
+- `P` b) 7 dm³ = 7 000 cm³
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le bloc de béton du maçon fait 2 m³. Le fournisseur facture 500 ariary par dm³. Quel est le coût total ?
+- `P` a) Volume en dm³
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) 2 m³ = 2 000 dm³
+- `P` b) 2 000 × 500 = 1 000 000 ariary
+- `P` Total : 20 points
+
+### Séance 46 / 81 — Correspondance entre unités de volume et de capacité
+
+- Indicateurs : 41 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 46 / 81
+- `P` Correspondance entre unités de volume et de capacité
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures de volume
+- `T3C3` Séance n° :
+- `T3C4` 120 à 123
+- `T4C1` Titre :
+- `T4C2` Correspondance entre unités de volume et de capacité
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Convertir une mesure de volume en mesure de capacité (litres) et inversement
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Cube de 1 dm de côté rempli d'eau, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Combien de fois une unité de volume vaut-elle la suivante ?Quelles sont les unités de capacité ?
+- `T3C3` R.A. : 1 000 fois.R.A. : kl, hl, dal, l, dl, cl, ml.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le maçon a une cuve cubique de 1 dm de côté. Il veut savoir combien de litres d'eau cette cuve peut contenir, pour préparer la bonne quantité d'eau à mélanger avec son ciment.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Correspondance entre unités de volume et de capacité ». Après cette séance, vous serez capables de convertir une mesure de volume en mesure de capacité, et inversement.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un cube de 1 dm de côté rempli d'eau, avec l'inscription « 1 litre » à côté.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quel est le volume de ce cube ?Quelle quantité d'eau ce cube contient-il ?Donc que peut-on dire de 1 dm³ et 1 litre ?Si 1 dm³ = 1 l, combien vaut 1 cm³ en mL ?
+- `T8C3` R.A. : 1 dm³ (1 dm de côté).R.A. : 1 litre.R.A. : 1 dm³ = 1 litre : c'est la même quantité, juste exprimée différemment.R.A. : 1 cm³ = 1 mL, car cm³ est 1 000 fois plus petit que dm³, tout comme mL est 1 000 fois plus petit que L.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, il existe une correspondance exacte entre les unités de volume et les unités de capacité : 1 dm³ = 1 litre (l), et 1 cm³ = 1 millilitre (mL). Grâce à cette correspondance, on peut convertir directement une mesure de volume en litres : on convertit d'abord le volume en dm³, puis on lit directement le nombre de litres.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Volume vers capacitéConvertis en litres.a) 5 dm³b) 3 000 cm³Exercice 2 — Capacité vers volumeConvertis en dm³.a) 8 lb) 250 mL
+- `T10C3` a) 5 dm³ = 5 lb) 3 000 cm³ = 3 dm³ = 3 l a) 8 l = 8 dm³b) 250 mL = 0,25 dm³
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ConversionsConvertis les mesures suivantes.a) 2,5 dm³ en litresb) 1 m³ en litresExercice 2 — ProblèmeUne citerne cubique de 2 m de côté est complètement remplie d'eau. Combien de litres d'eau contient-elle ?Réponse
+- `T11C3` a) 2,5 dm³ = 2,5 lb) 1 m³ = 1 000 dm³ = 1 000 l a) Volume = 2 × 2 × 2 = 8 m³ = 8 000 dm³ = 8 000 l
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Correspondance entre unités de volume et de capacité
+- `P` Règle
+- `P` Donc, il existe une correspondance exacte entre les unités de volume et les unités de capacité : 1 dm³ = 1 litre (l), et 1 cm³ = 1 millilitre (mL). Grâce à cette correspondance, on peut convertir directement une mesure de volume en litres : on convertit d'abord le volume en dm³, puis on lit directement le nombre de litres.
+- `P` Exemple
+- `P` La cuve du maçon est un cube de 1 dm de côté. Combien de litres d'eau peut-elle contenir ?
+- `P` Volume de la cuve = 1 dm × 1 dm × 1 dm = 1 dm³.
+- `P` Or 1 dm³ = 1 litre.
+- `P` La cuve peut contenir 1 litre d'eau.
+- `P` Attention : retenir les deux correspondances exactes : 1 dm³ = 1 litre, et 1 cm³ = 1 millilitre — ce sont les seules deux à mémoriser, toutes les autres conversions s'en déduisent en utilisant les tableaux habituels (×10 pour la longueur, ×1000 pour le volume).
+- `P` EXERCICES
+- `P` Exercice 1 — Volume vers capacité (5 points)
+- `P` Convertis en litres.
+- `P` a) 5 dm³
+- `P` b) 3 000 cm³
+- `P` Corrigé :
+- `P` a) 5 dm³ = 5 l
+- `P` b) 3 000 cm³ = 3 dm³ = 3 l
+- `P` Exercice 2 — Capacité vers volume (5 points)
+- `P` Convertis en dm³.
+- `P` a) 8 l
+- `P` b) 250 mL
+- `P` Corrigé :
+- `P` a) 8 l = 8 dm³
+- `P` b) 250 mL = 0,25 dm³
+- `P` Exercice 1 — Conversions (5 points)
+- `P` Convertis les mesures suivantes.
+- `P` a) 2,5 dm³ en litres
+- `P` b) 1 m³ en litres
+- `P` Corrigé :
+- `P` a) 2,5 dm³ = 2,5 l
+- `P` b) 1 m³ = 1 000 dm³ = 1 000 l
+- `P` Exercice 2 — Problème (5 points)
+- `P` Une citerne cubique de 2 m de côté est complètement remplie d'eau. Combien de litres d'eau contient-elle ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Volume = 2 × 2 × 2 = 8 m³ = 8 000 dm³ = 8 000 l
+- `P` Total : 20 points
+
+### Séance 47 / 81 — Notion d'échange, frais, prix d'achat et prix de vente
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 47 / 81
+- `P` Notion d'échange, frais, prix d'achat et prix de vente
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les échanges commerciaux
+- `T3C3` Séance n° :
+- `T3C4` 124 à 128
+- `T4C1` Titre :
+- `T4C2` Notion d'échange, frais, prix d'achat et prix de vente
+- `T4C3` Durée :
+- `T4C4` 5 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Comprendre les notions de prix d'achat, frais et prix de revient
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Combien font 50 000 + 5 000 ?Qu'est-ce qu'acheter un produit ?
+- `T3C3` R.A. : 50 000 + 5 000 = 55 000.R.A. : C'est donner de l'argent en échange d'un bien.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Bao achète un sac de riz à 50 000 ariary chez un grossiste d'Antsirabe. Pour le transporter jusqu'à son étal du marché, il doit payer 5 000 ariary de frais de transport. Bao veut savoir combien ce sac de riz lui a réellement coûté au total.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Notion d'échange, frais, prix d'achat et prix de vente ». Après cette séance, vous serez capables de comprendre ces notions et de calculer un prix de revient.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le schéma du parcours du sac de riz : achat chez le grossiste, puis transport, jusqu'à l'étal de Bao.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien Bao a-t-il payé pour acheter le sac de riz ? Comment appelle-t-on cette somme ?Combien Bao a-t-il payé en plus pour le transport ? Comment appelle-t-on cette dépense ?Comment calculer ce que le sac de riz a réellement coûté à Bao, transport compris ?Comment appelle-t-on ce total ?
+- `T8C3` R.A. : 50 000 ariary : c'est le prix d'achat (PA).R.A. : 5 000 ariary : ce sont des frais (transport, manutention...).R.A. : On additionne le prix d'achat et les frais : 50 000 + 5 000.R.A. : Le prix de revient.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un échange commercial commence par un achat à un prix d'achat (PA). Des frais supplémentaires (transport, emballage, manutention...) peuvent s'y ajouter. Le prix de revient est le coût total réel du produit pour le vendeur : prix de revient = prix d'achat + frais. C'est ce prix de revient qu'il faudra comparer au prix de vente (PV) pour savoir si le vendeur gagne ou perd de l'argent.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Prix de revientUn commerçant achète des tomates à 80 000 ariary et paie 12 000 ariary de frais de transport. Calcule le prix de revient.Prix de revient = ?Exercice 2 — VocabulaireExplique avec tes mots ce qu'est un « prix de revient » et donne un exemple de frais possible.Réponse libre
+- `T10C3` a) 80 000 + 12 000 = 92 000 ariary a) Le prix de revient est le coût total du produit, achat + frais. Exemple de frais : transport, emballage, douane.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Prix de revientUn commerçant achète des vêtements à 120 000 ariary et paie 15 000 ariary de frais de douane. Calcule le prix de revient.Prix de revient = ?Exercice 2 — ProblèmeBao a acheté son sac de riz à 50 000 ariary et payé 5 000 ariary de transport. Quel est le prix de revient de son sac de riz ?Réponse
+- `T11C3` a) 120 000 + 15 000 = 135 000 ariary a) 50 000 + 5 000 = 55 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Notion d'échange, frais, prix d'achat et prix de vente
+- `P` Règle
+- `P` Donc, un échange commercial commence par un achat à un prix d'achat (PA). Des frais supplémentaires (transport, emballage, manutention...) peuvent s'y ajouter. Le prix de revient est le coût total réel du produit pour le vendeur : prix de revient = prix d'achat + frais. C'est ce prix de revient qu'il faudra comparer au prix de vente (PV) pour savoir si le vendeur gagne ou perd de l'argent.
+- `P` Exemple
+- `P` Bao achète un sac de riz à 50 000 ariary (PA) et paie 5 000 ariary de frais de transport. Quel est le prix de revient du sac de riz ?
+- `P` Prix de revient = prix d'achat + frais
+- `P` Prix de revient = 50 000 + 5 000
+- `P` Prix de revient = 55 000 ariary
+- `P` Attention : ne jamais confondre le prix d'achat (PA, ce que le vendeur a payé pour obtenir le produit) avec le prix de revient (PA + frais, le coût total réel) — le prix de revient est toujours supérieur ou égal au prix d'achat.
+- `P` EXERCICES
+- `P` Exercice 1 — Prix de revient (5 points)
+- `P` Un commerçant achète des tomates à 80 000 ariary et paie 12 000 ariary de frais de transport. Calcule le prix de revient.
+- `P` Prix de revient = ?
+- `P` Corrigé :
+- `P` a) 80 000 + 12 000 = 92 000 ariary
+- `P` Exercice 2 — Vocabulaire (5 points)
+- `P` Explique avec tes mots ce qu'est un « prix de revient » et donne un exemple de frais possible.
+- `P` Réponse libre
+- `P` Corrigé :
+- `P` a) Le prix de revient est le coût total du produit, achat + frais. Exemple de frais : transport, emballage, douane.
+- `P` Exercice 1 — Prix de revient (5 points)
+- `P` Un commerçant achète des vêtements à 120 000 ariary et paie 15 000 ariary de frais de douane. Calcule le prix de revient.
+- `P` Prix de revient = ?
+- `P` Corrigé :
+- `P` a) 120 000 + 15 000 = 135 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Bao a acheté son sac de riz à 50 000 ariary et payé 5 000 ariary de transport. Quel est le prix de revient de son sac de riz ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 50 000 + 5 000 = 55 000 ariary
+- `P` Total : 20 points
+
+### Séance 48 / 81 — Le bénéfice
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 48 / 81
+- `P` Le bénéfice
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les échanges commerciaux
+- `T3C3` Séance n° :
+- `T3C4` 129 à 130
+- `T4C1` Titre :
+- `T4C2` Le bénéfice
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer le bénéfice réalisé lors d'une vente
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment calcule-t-on le prix de revient ?Combien font 65 000 − 55 000 ?
+- `T3C3` R.A. : Prix de revient = prix d'achat + frais.R.A. : 65 000 − 55 000 = 10 000.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le sac de riz de Bao a un prix de revient de 55 000 ariary. Il le revend finalement à 65 000 ariary sur son étal. Bao veut savoir combien d'argent il a gagné sur cette vente.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le bénéfice ». Après cette séance, vous serez capables de calculer le bénéfice réalisé lors d'une vente.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien les deux montants 55 000 (prix de revient) et 65 000 (prix de vente) écrits au tableau, l'un sous l'autre.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Le prix de vente (65 000) est-il plus grand ou plus petit que le prix de revient (55 000) ?Quand le prix de vente est plus grand que le prix de revient, que se passe-t-il pour le vendeur ?Comment calculer ce bénéfice ?Combien Bao a-t-il gagné sur cette vente ?
+- `T8C3` R.A. : Plus grand.R.A. : Le vendeur gagne de l'argent : il fait un bénéfice.R.A. : On soustrait le prix de revient du prix de vente : 65 000 − 55 000.R.A. : 10 000 ariary.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le bénéfice est l'argent gagné par le vendeur lorsque le prix de vente (PV) est supérieur au prix de revient. On le calcule ainsi : bénéfice = prix de vente − prix de revient. Plus la différence est grande, plus le bénéfice est important.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — BénéficeUn commerçant a un prix de revient de 92 000 ariary pour ses tomates, qu'il revend 110 000 ariary. Calcule son bénéfice.Bénéfice = ?Exercice 2 — VocabulaireDans quel cas un vendeur réalise-t-il un bénéfice ?Réponse
+- `T10C3` a) 110 000 − 92 000 = 18 000 ariary a) Quand son prix de vente est supérieur à son prix de revient.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — BénéficeUn commerçant a un prix de revient de 135 000 ariary pour des vêtements, revendus 158 000 ariary. Calcule son bénéfice.Bénéfice = ?Exercice 2 — ProblèmeBao a un prix de revient de 55 000 ariary pour son sac de riz, revendu 65 000 ariary. Quel est son bénéfice ?Réponse
+- `T11C3` a) 158 000 − 135 000 = 23 000 ariary a) 65 000 − 55 000 = 10 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le bénéfice
+- `P` Règle
+- `P` Donc, le bénéfice est l'argent gagné par le vendeur lorsque le prix de vente (PV) est supérieur au prix de revient. On le calcule ainsi : bénéfice = prix de vente − prix de revient. Plus la différence est grande, plus le bénéfice est important.
+- `P` Exemple
+- `P` Le sac de riz de Bao a un prix de revient de 55 000 ariary et se vend 65 000 ariary. Quel est le bénéfice ?
+- `P` Bénéfice = prix de vente − prix de revient
+- `P` Bénéfice = 65 000 − 55 000
+- `P` Bénéfice = 10 000 ariary
+- `P` Attention : toujours soustraire le prix de revient (et non le seul prix d'achat) du prix de vente pour calculer le bénéfice réel — oublier d'inclure les frais dans le prix de revient donne un bénéfice faussement plus élevé.
+- `P` EXERCICES
+- `P` Exercice 1 — Bénéfice (5 points)
+- `P` Un commerçant a un prix de revient de 92 000 ariary pour ses tomates, qu'il revend 110 000 ariary. Calcule son bénéfice.
+- `P` Bénéfice = ?
+- `P` Corrigé :
+- `P` a) 110 000 − 92 000 = 18 000 ariary
+- `P` Exercice 2 — Vocabulaire (5 points)
+- `P` Dans quel cas un vendeur réalise-t-il un bénéfice ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Quand son prix de vente est supérieur à son prix de revient.
+- `P` Exercice 1 — Bénéfice (5 points)
+- `P` Un commerçant a un prix de revient de 135 000 ariary pour des vêtements, revendus 158 000 ariary. Calcule son bénéfice.
+- `P` Bénéfice = ?
+- `P` Corrigé :
+- `P` a) 158 000 − 135 000 = 23 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Bao a un prix de revient de 55 000 ariary pour son sac de riz, revendu 65 000 ariary. Quel est son bénéfice ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 65 000 − 55 000 = 10 000 ariary
+- `P` Total : 20 points
+
+### Séance 49 / 81 — La perte
+
+- Indicateurs : 37 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 49 / 81
+- `P` La perte
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les échanges commerciaux
+- `T3C3` Séance n° :
+- `T3C4` 131 à 133
+- `T4C1` Titre :
+- `T4C2` La perte
+- `T4C3` Durée :
+- `T4C4` 3 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer la perte subie lors d'une vente et résoudre des problèmes combinant bénéfice et perte
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment calcule-t-on un bénéfice ?Combien font 75 000 − 68 000 ?
+- `T3C3` R.A. : Bénéfice = prix de vente − prix de revient (quand le prix de vente est le plus grand).R.A. : 75 000 − 68 000 = 7 000.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le sac de tomates d'un autre vendeur, Rasoa, a un prix de revient de 75 000 ariary, mais les tomates ont commencé à s'abîmer avant la vente. Rasoa doit les brader à 68 000 ariary. Elle veut savoir combien d'argent elle a perdu sur cette vente.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La perte ». Après cette séance, vous serez capables de calculer la perte subie lors d'une vente, et de résoudre des problèmes combinant bénéfice et perte.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien les deux montants 75 000 (prix de revient) et 68 000 (prix de vente) écrits au tableau, l'un sous l'autre.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Le prix de vente (68 000) est-il plus grand ou plus petit que le prix de revient (75 000) ?Quand le prix de vente est plus petit que le prix de revient, que se passe-t-il pour le vendeur ?Comment calculer cette perte ?Combien Rasoa a-t-elle perdu sur cette vente ?
+- `T8C3` R.A. : Plus petit.R.A. : Le vendeur perd de l'argent : il fait une perte.R.A. : On soustrait le prix de vente du prix de revient : 75 000 − 68 000.R.A. : 7 000 ariary.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, la perte est l'argent perdu par le vendeur lorsque le prix de vente (PV) est inférieur au prix de revient. On la calcule ainsi : perte = prix de revient − prix de vente. Pour savoir si une vente donne un bénéfice ou une perte, on compare toujours le prix de vente au prix de revient : PV plus grand → bénéfice ; PV plus petit → perte ; PV égal → ni gain ni perte.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — PerteUn commerçant a un prix de revient de 200 000 ariary pour des habits abîmés, revendus 185 000 ariary. Calcule sa perte.Perte = ?Exercice 2 — Bénéfice ou perte ?Un vendeur a un prix de revient de 40 000 ariary. Il vend son produit 38 000 ariary. Fait-il un bénéfice ou une perte ? De combien ?Réponse
+- `T10C3` a) 200 000 − 185 000 = 15 000 ariary a) Perte, car PV (38 000) < prix de revient (40 000). Perte = 40 000 − 38 000 = 2 000 ariary
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — PerteLe sac de tomates de Rasoa (prix de revient 75 000 ariary) est vendu 68 000 ariary. Quelle est sa perte ?Perte = ?Exercice 2 — Bénéfice ou perte ?Détermine si chaque vente donne un bénéfice ou une perte, et calcule le montant : a) revient 60 000, vente 72 000. b) revient 90 000, vente 84 000.a) Réponseb) Réponse
+- `T11C3` a) 75 000 − 68 000 = 7 000 ariary a) Bénéfice de 72 000 − 60 000 = 12 000 ariaryb) Perte de 90 000 − 84 000 = 6 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La perte
+- `P` Règle
+- `P` Donc, la perte est l'argent perdu par le vendeur lorsque le prix de vente (PV) est inférieur au prix de revient. On la calcule ainsi : perte = prix de revient − prix de vente. Pour savoir si une vente donne un bénéfice ou une perte, on compare toujours le prix de vente au prix de revient : PV plus grand → bénéfice ; PV plus petit → perte ; PV égal → ni gain ni perte.
+- `P` Exemple
+- `P` Le sac de tomates de Rasoa a un prix de revient de 75 000 ariary, vendu 68 000 ariary. Quelle est la perte ?
+- `P` Perte = prix de revient − prix de vente
+- `P` Perte = 75 000 − 68 000
+- `P` Perte = 7 000 ariary
+- `P` Attention : toujours comparer d'abord le prix de vente et le prix de revient avant de choisir l'opération : si on soustrait dans le mauvais sens (prix de vente moins grand nombre), on obtient un résultat négatif qui n'a pas de sens dans ce contexte — mieux vaut identifier bénéfice ou perte AVANT de calculer.
+- `P` EXERCICES
+- `P` Exercice 1 — Perte (5 points)
+- `P` Un commerçant a un prix de revient de 200 000 ariary pour des habits abîmés, revendus 185 000 ariary. Calcule sa perte.
+- `P` Perte = ?
+- `P` Corrigé :
+- `P` a) 200 000 − 185 000 = 15 000 ariary
+- `P` Exercice 2 — Bénéfice ou perte ? (5 points)
+- `P` Un vendeur a un prix de revient de 40 000 ariary. Il vend son produit 38 000 ariary. Fait-il un bénéfice ou une perte ? De combien ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Perte, car PV (38 000) < prix de revient (40 000). Perte = 40 000 − 38 000 = 2 000 ariary
+- `P` Exercice 1 — Perte (5 points)
+- `P` Le sac de tomates de Rasoa (prix de revient 75 000 ariary) est vendu 68 000 ariary. Quelle est sa perte ?
+- `P` Perte = ?
+- `P` Corrigé :
+- `P` a) 75 000 − 68 000 = 7 000 ariary
+- `P` Exercice 2 — Bénéfice ou perte ? (5 points)
+- `P` Détermine si chaque vente donne un bénéfice ou une perte, et calcule le montant : a) revient 60 000, vente 72 000. b) revient 90 000, vente 84 000.
+- `P` a) Réponse
+- `P` b) Réponse
+- `P` Corrigé :
+- `P` a) Bénéfice de 72 000 − 60 000 = 12 000 ariary
+- `P` b) Perte de 90 000 − 84 000 = 6 000 ariary
+- `P` Total : 20 points
+
+### Séance 50 / 81 — Les grandeurs proportionnelles
+
+- Indicateurs : 39 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 50 / 81
+- `P` Les grandeurs proportionnelles
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Grandeurs proportionnelles
+- `T3C3` Séance n° :
+- `T3C4` 134 à 137
+- `T4C1` Titre :
+- `T4C2` Les grandeurs proportionnelles
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître deux grandeurs proportionnelles et utiliser le coefficient de proportionnalité
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau de proportionnalité, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Combien font 9 000 ÷ 3 ?Combien font 3 000 × 5 ?
+- `T3C3` R.A. : 9 000 ÷ 3 = 3 000.R.A. : 3 000 × 5 = 15 000.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Au marché, 3 kg de riz coûtent 9 000 ariary. Mira veut acheter 5 kg de riz et se demande combien elle devra payer, sans avoir à demander au vendeur de recalculer.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les grandeurs proportionnelles ». Après cette séance, vous serez capables de reconnaître deux grandeurs proportionnelles et d'utiliser un coefficient de proportionnalité.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un tableau à deux lignes affiché au tableau noir : « Kg de riz » (3, 5, 8) et « Prix en ariary » (9000, ?, ?).
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quel est le prix pour 1 kg de riz seul (le prix unitaire) ?Ce nombre 3 000 (le prix d'un seul kilo) s'appelle-t-il comment quand on l'utilise pour toute la ligne ?Comment trouver le prix de 5 kg à partir de ce coefficient ?Combien Mira devra-t-elle payer pour 5 kg de riz ?
+- `T8C3` R.A. : 9 000 ÷ 3 = 3 000 ariary le kilo.R.A. : Le coefficient de proportionnalité.R.A. : On multiplie 5 par le coefficient : 5 × 3 000.R.A. : 15 000 ariary.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, deux grandeurs sont proportionnelles quand on passe de l'une à l'autre en multipliant toujours par le même nombre, appelé coefficient de proportionnalité. Pour le trouver, on divise une valeur de la deuxième grandeur par la valeur correspondante de la première grandeur (souvent en utilisant la colonne où l'on connaît les deux valeurs). Une fois le coefficient trouvé, on multiplie chaque valeur de la première grandeur par ce coefficient pour trouver la seconde.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Coefficient4 kg de sucre coûtent 6 000 ariary. Trouve le coefficient de proportionnalité (prix d'1 kg), puis le prix de 7 kg.a) Coefficientb) Prix de 7 kgExercice 2 — TableauComplète le tableau proportionnel : 2 cahiers coûtent 3 000 ariary. Combien coûtent 6 cahiers ?Réponse
+- `T10C3` a) 6 000 ÷ 4 = 1 500 ariary/kgb) 7 × 1 500 = 10 500 ariary a) Coefficient = 3 000 ÷ 2 = 1 500 ; 6 × 1 500 = 9 000 ariary
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Coefficient6 œufs coûtent 1 800 ariary. Trouve le prix d'un œuf, puis le prix de 10 œufs.a) Prix d'un œufb) Prix de 10 œufsExercice 2 — Problème3 kg de riz coûtent 9 000 ariary. Mira veut acheter 8 kg. Combien devra-t-elle payer ?Réponse
+- `T11C3` a) 1 800 ÷ 6 = 300 ariary/œufb) 10 × 300 = 3 000 ariary a) Coefficient = 9 000 ÷ 3 = 3 000 ; 8 × 3 000 = 24 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les grandeurs proportionnelles
+- `P` Règle
+- `P` Donc, deux grandeurs sont proportionnelles quand on passe de l'une à l'autre en multipliant toujours par le même nombre, appelé coefficient de proportionnalité. Pour le trouver, on divise une valeur de la deuxième grandeur par la valeur correspondante de la première grandeur (souvent en utilisant la colonne où l'on connaît les deux valeurs). Une fois le coefficient trouvé, on multiplie chaque valeur de la première grandeur par ce coefficient pour trouver la seconde.
+- `P` Exemple
+- `P` 3 kg de riz coûtent 9 000 ariary. Combien coûtent 5 kg de riz, au même prix au kilo ?
+- `P` Coefficient = 9 000 ÷ 3 = 3 000 ariary par kg.
+- `P` Prix pour 5 kg = 5 × 3 000.
+- `P` Prix pour 5 kg = 15 000 ariary.
+- `P` Attention : toujours vérifier que le coefficient de proportionnalité trouvé donne bien le résultat exact pour la colonne de départ, avant de l'utiliser pour les autres colonnes — une erreur de division au départ se répercute sur tout le tableau.
+- `P` EXERCICES
+- `P` Exercice 1 — Coefficient (5 points)
+- `P` 4 kg de sucre coûtent 6 000 ariary. Trouve le coefficient de proportionnalité (prix d'1 kg), puis le prix de 7 kg.
+- `P` a) Coefficient
+- `P` b) Prix de 7 kg
+- `P` Corrigé :
+- `P` a) 6 000 ÷ 4 = 1 500 ariary/kg
+- `P` b) 7 × 1 500 = 10 500 ariary
+- `P` Exercice 2 — Tableau (5 points)
+- `P` Complète le tableau proportionnel : 2 cahiers coûtent 3 000 ariary. Combien coûtent 6 cahiers ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Coefficient = 3 000 ÷ 2 = 1 500 ; 6 × 1 500 = 9 000 ariary
+- `P` Exercice 1 — Coefficient (5 points)
+- `P` 6 œufs coûtent 1 800 ariary. Trouve le prix d'un œuf, puis le prix de 10 œufs.
+- `P` a) Prix d'un œuf
+- `P` b) Prix de 10 œufs
+- `P` Corrigé :
+- `P` a) 1 800 ÷ 6 = 300 ariary/œuf
+- `P` b) 10 × 300 = 3 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` 3 kg de riz coûtent 9 000 ariary. Mira veut acheter 8 kg. Combien devra-t-elle payer ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Coefficient = 9 000 ÷ 3 = 3 000 ; 8 × 3 000 = 24 000 ariary
+- `P` Total : 20 points
+
+### Séance 51 / 81 — Résoudre des problèmes de proportionnalité
+
+- Indicateurs : 37 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 51 / 81
+- `P` Résoudre des problèmes de proportionnalité
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Grandeurs proportionnelles
+- `T3C3` Séance n° :
+- `T3C4` 138 à 141
+- `T4C1` Titre :
+- `T4C2` Résoudre des problèmes de proportionnalité
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Utiliser la règle de trois ou le quotient unitaire pour résoudre des problèmes de proportionnalité
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Qu'est-ce qu'un coefficient de proportionnalité ?Comment trouve-t-on ce coefficient ?
+- `T3C3` R.A. : Le nombre par lequel on multiplie une grandeur pour obtenir l'autre.R.A. : On divise une valeur connue de la deuxième grandeur par la valeur correspondante de la première.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Une voiture consomme 12 litres d'essence pour parcourir 150 km. Le chauffeur veut savoir combien de litres il lui faudra pour un trajet de 250 km, sans faire d'essai sur la route.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Résoudre des problèmes de proportionnalité ». Après cette séance, vous serez capables d'utiliser la règle de trois ou le quotient unitaire pour résoudre ce type de problème.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un tableau à deux lignes : « Distance (km) » (150, 250) et « Essence (L) » (12, ?).
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle est la quantité d'essence consommée pour 1 km (le quotient unitaire) ?Comment utiliser ce quotient pour trouver la consommation pour 250 km ?Combien de litres faut-il pour 250 km ?Existe-t-il une autre méthode, appelée « règle de trois » ?
+- `T8C3` R.A. : 12 ÷ 150 = 0,08 litre par km.R.A. : On multiplie 250 par 0,08.R.A. : 250 × 0,08 = 20 litres.R.A. : Oui : on peut aussi écrire 12/150 = x/250, puis calculer x = (12 × 250) ÷ 150 = 20.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème de proportionnalité, on peut utiliser deux méthodes : le quotient unitaire (on calcule d'abord la valeur pour 1 unité, puis on multiplie par le nombre d'unités voulu), ou la règle de trois (on écrit l'égalité des deux rapports, puis on calcule la valeur manquante en multipliant en croix et en divisant par le nombre restant). Les deux méthodes donnent toujours le même résultat.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Quotient unitaire8 stylos coûtent 4 000 ariary. Trouve le prix d'un stylo, puis le prix de 12 stylos.a) Prix d'un stylob) Prix de 12 stylosExercice 2 — Règle de trois5 ouvriers plantent 200 arbres en une journée. Combien d'arbres 8 ouvriers planteront-ils dans les mêmes conditions ?Réponse
+- `T10C3` a) 4 000 ÷ 8 = 500 ariaryb) 12 × 500 = 6 000 ariary a) (200 × 8) ÷ 5 = 1 600 ÷ 5 = 320 arbres
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ProblèmeUne voiture consomme 12 L pour 150 km. Combien de litres lui faudra-t-il pour un trajet de 300 km ?RéponseExercice 2 — ProblèmeUne machine produit 90 sacs de ciment en 6 heures. Combien de sacs produira-t-elle en 10 heures, à la même vitesse ?Réponse
+- `T11C3` a) Quotient unitaire = 12 ÷ 150 = 0,08 ; 300 × 0,08 = 24 litres a) (90 × 10) ÷ 6 = 900 ÷ 6 = 150 sacs
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Résoudre des problèmes de proportionnalité
+- `P` Règle
+- `P` Donc, pour résoudre un problème de proportionnalité, on peut utiliser deux méthodes : le quotient unitaire (on calcule d'abord la valeur pour 1 unité, puis on multiplie par le nombre d'unités voulu), ou la règle de trois (on écrit l'égalité des deux rapports, puis on calcule la valeur manquante en multipliant en croix et en divisant par le nombre restant). Les deux méthodes donnent toujours le même résultat.
+- `P` Exemple
+- `P` Une voiture consomme 12 litres pour 150 km. Combien de litres consommera-t-elle pour 250 km ? (méthode du quotient unitaire)
+- `P` Quotient unitaire = 12 ÷ 150 = 0,08 litre par km.
+- `P` Pour 250 km : 250 × 0,08 = 20 litres.
+- `P` Vérification par règle de trois : (12 × 250) ÷ 150 = 3 000 ÷ 150 = 20 litres.
+- `P` Attention : bien vérifier que les deux grandeurs du problème sont réellement proportionnelles (une augmente quand l'autre augmente, dans la même proportion) avant d'appliquer ces méthodes — certaines situations de la vie courante ne sont pas proportionnelles (par exemple, le temps de cuisson d'un gâteau ne double pas si sa taille double).
+- `P` EXERCICES
+- `P` Exercice 1 — Quotient unitaire (5 points)
+- `P` 8 stylos coûtent 4 000 ariary. Trouve le prix d'un stylo, puis le prix de 12 stylos.
+- `P` a) Prix d'un stylo
+- `P` b) Prix de 12 stylos
+- `P` Corrigé :
+- `P` a) 4 000 ÷ 8 = 500 ariary
+- `P` b) 12 × 500 = 6 000 ariary
+- `P` Exercice 2 — Règle de trois (5 points)
+- `P` 5 ouvriers plantent 200 arbres en une journée. Combien d'arbres 8 ouvriers planteront-ils dans les mêmes conditions ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) (200 × 8) ÷ 5 = 1 600 ÷ 5 = 320 arbres
+- `P` Exercice 1 — Problème (5 points)
+- `P` Une voiture consomme 12 L pour 150 km. Combien de litres lui faudra-t-il pour un trajet de 300 km ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Quotient unitaire = 12 ÷ 150 = 0,08 ; 300 × 0,08 = 24 litres
+- `P` Exercice 2 — Problème (5 points)
+- `P` Une machine produit 90 sacs de ciment en 6 heures. Combien de sacs produira-t-elle en 10 heures, à la même vitesse ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) (90 × 10) ÷ 6 = 900 ÷ 6 = 150 sacs
+- `P` Total : 20 points
+
+### Séance 52 / 81 — Le cube
+
+- Indicateurs : 49 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 52 / 81
+- `P` Le cube
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Aire et volume des objets de l'espace
+- `T3C3` Séance n° :
+- `T3C4` 142 à 143
+- `T4C1` Titre :
+- `T4C2` Le cube
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un cube, calculer sa surface totale et son volume
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du cube, un vrai cube (dé, boîte), tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du carré ?Combien de côtés a un carré ?
+- `T3C3` R.A. : A = c × c.R.A. : 4 côtés égaux.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Solo fabrique une boîte cubique en carton de 6 m de côté pour ranger du matériel. Il veut savoir combien de carton il doit prévoir pour recouvrir toutes les faces, et quel volume de matériel la boîte pourra contenir.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le cube ». Après cette séance, vous serez capables de reconnaître un cube, et de calculer sa surface totale et son volume.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du cube dessinée en perspective, avec ses faces visibles et son côté indiqué.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de faces a un cube en tout (visibles et cachées) ?Quelle est la forme de chaque face d'un cube ?Comment calculer la surface totale du cube (les 6 faces réunies) ?Comment calculer le volume du cube ?
+- `T8C3` R.A. : 6 faces.R.A. : Un carré, et toutes les faces sont identiques.R.A. : On calcule l'aire d'une face (c × c), puis on multiplie par 6.R.A. : On multiplie le côté par lui-même trois fois : c × c × c.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le cube est un solide à 6 faces carrées identiques. Sa surface totale se calcule en multipliant l'aire d'une face par 6 : S = 6 × c × c. Son volume se calcule en multipliant le côté trois fois par lui-même : V = c × c × c (aussi noté c³).
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Surface totaleCalcule la surface totale d'un cube de côté 4 m.S = ?Exercice 2 — VolumeCalcule le volume d'un cube de côté 4 m.V = ?
+- `T10C3` a) S = 6 × 4 × 4 = 96 m² a) V = 4 × 4 × 4 = 64 m³
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUn réservoir cubique a un côté de 9 m. Calcule sa surface totale et son volume.a) Surface totaleb) VolumeExercice 2 — ProblèmeLa boîte de Solo (côté 6 m) doit être peinte à 800 ariary le mètre carré. Quel est le coût total de peinture ?a) Surface totaleb) Coût total
+- `T11C3` a) S = 6 × 9 × 9 = 486 m²b) V = 9 × 9 × 9 = 729 m³ a) S = 6 × 6 × 6 = 216 m²b) Coût = 216 × 800 = 172 800 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le cube
+- `P` c = 6 m
+- `P` Propriétés
+- `P` • 6 faces carrées identiques
+- `P` • 12 arêtes de même longueur
+- `P` Formules
+- `P` Surface totale : S = 6 × c × c
+- `P` Le cube a 6 faces carrées identiques : on calcule l'aire d'une face, puis on multiplie par 6.
+- `P` Volume : V = c × c × c
+- `P` Le volume d'un cube s'obtient en multipliant le côté trois fois par lui-même, car les trois dimensions (longueur, largeur, hauteur) sont égales au côté.
+- `P` Exemple
+- `P` Calcule la surface totale et le volume de la boîte cubique de Solo, de côté c = 6 m.
+- `P` S = 6 × c × c
+- `P` S = 6 × 6 × 6
+- `P` S = 216 m²
+- `P` V = c × c × c
+- `P` V = 6 × 6 × 6
+- `P` V = 216 m³
+- `P` Attention : ne pas confondre la formule de la surface totale (6 × c × c, résultat en m²) avec celle du volume (c × c × c, résultat en m³) — les unités sont différentes et permettent de vérifier qu'on n'a pas confondu les deux calculs.
+- `P` EXERCICES
+- `P` Exercice 1 — Surface totale (5 points)
+- `P` Calcule la surface totale d'un cube de côté 4 m.
+- `P` S = ?
+- `P` Corrigé :
+- `P` a) S = 6 × 4 × 4 = 96 m²
+- `P` Exercice 2 — Volume (5 points)
+- `P` Calcule le volume d'un cube de côté 4 m.
+- `P` V = ?
+- `P` Corrigé :
+- `P` a) V = 4 × 4 × 4 = 64 m³
+- `P` Exercice 1 — Problème (5 points)
+- `P` Un réservoir cubique a un côté de 9 m. Calcule sa surface totale et son volume.
+- `P` a) Surface totale
+- `P` b) Volume
+- `P` Corrigé :
+- `P` a) S = 6 × 9 × 9 = 486 m²
+- `P` b) V = 9 × 9 × 9 = 729 m³
+- `P` Exercice 2 — Problème (5 points)
+- `P` La boîte de Solo (côté 6 m) doit être peinte à 800 ariary le mètre carré. Quel est le coût total de peinture ?
+- `P` a) Surface totale
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) S = 6 × 6 × 6 = 216 m²
+- `P` b) Coût = 216 × 800 = 172 800 ariary
+- `P` Total : 20 points
+
+### Séance 53 / 81 — Le parallélépipède rectangle
+
+- Indicateurs : 47 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 53 / 81
+- `P` Le parallélépipède rectangle
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Aire et volume des objets de l'espace
+- `T3C3` Séance n° :
+- `T3C4` 144 à 145
+- `T4C1` Titre :
+- `T4C2` Le parallélépipède rectangle
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un parallélépipède rectangle, calculer sa surface totale et son volume
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du parallélépipède rectangle, une boîte rectangulaire, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule du volume du cube ?Un cube a-t-il toutes ses faces identiques ?
+- `T3C3` R.A. : V = c × c × c.R.A. : Oui, 6 faces carrées identiques.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Voahangy fabrique une caisse en bois rectangulaire de 8 m de longueur, 5 m de largeur et 4 m de hauteur pour stocker des récoltes. Elle veut savoir combien de planches (en surface) elle doit prévoir, et quel volume de récoltes la caisse pourra contenir.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le parallélépipède rectangle ». Après cette séance, vous serez capables de reconnaître cette figure et de calculer sa surface totale et son volume.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du parallélépipède rectangle en perspective, avec sa longueur, sa largeur et sa hauteur indiquées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de faces a un parallélépipède rectangle ?Les 6 faces sont-elles toutes identiques ?Comment calculer la surface totale de la caisse de Voahangy ?Comment calculer le volume de la caisse ?
+- `T8C3` R.A. : 6 faces, comme le cube, mais ce sont des rectangles, pas des carrés.R.A. : Non : elles sont identiques deux à deux (2 faces de L×l, 2 faces de L×h, 2 faces de l×h).R.A. : On calcule l'aire de chaque paire de faces, on additionne, et on multiplie le tout par 2 si on a déjà pris une seule fois chaque paire.R.A. : On multiplie les trois dimensions entre elles : L × l × h.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le parallélépipède rectangle (ou pavé droit) est un solide à 6 faces rectangulaires, identiques deux à deux. Sa surface totale se calcule en additionnant l'aire des 3 paires de faces différentes, puis en multipliant par 2 : S = 2 × (L×l + L×h + l×h). Son volume se calcule en multipliant ses trois dimensions : V = L × l × h.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — VolumeCalcule le volume d'un parallélépipède rectangle de L = 10 m, l = 6 m, h = 5 m.V = ?Exercice 2 — Surface totaleCalcule la surface totale du même parallélépipède (L = 10 m, l = 6 m, h = 5 m).S = ?
+- `T10C3` a) V = 10 × 6 × 5 = 300 m³ a) S = 2 × (10×6 + 10×5 + 6×5) = 2 × (60+50+30) = 2 × 140 = 280 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUn bassin rectangulaire mesure L = 12 m, l = 7 m, h = 6 m. Calcule sa surface totale et son volume.a) Surface totaleb) VolumeExercice 2 — ProblèmeLa caisse de Voahangy (8 m × 5 m × 4 m) doit contenir des sacs de récolte de 2 m³ chacun. Combien de sacs peut-elle contenir au maximum ?Réponse
+- `T11C3` a) S = 2 × (12×7 + 12×6 + 7×6) = 2 × (84+72+42) = 2 × 198 = 396 m²b) V = 12 × 7 × 6 = 504 m³ a) V = 8 × 5 × 4 = 160 m³ ; 160 ÷ 2 = 80 sacs
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le parallélépipède rectangle
+- `P` L = 8 m, l = 5 m, h = 4 m
+- `P` Propriétés
+- `P` • 6 faces rectangulaires, identiques deux à deux
+- `P` • 3 dimensions différentes : longueur (L), largeur (l), hauteur (h)
+- `P` Formules
+- `P` Surface totale : S = 2 × (L×l + L×h + l×h)
+- `P` Il y a 3 paires de faces différentes (dessus/dessous, avant/arrière, gauche/droite) : on additionne l'aire de chaque paire (une seule fois), puis on multiplie par 2 car chaque face a un double.
+- `P` Volume : V = L × l × h
+- `P` Le volume s'obtient en multipliant les trois dimensions du solide entre elles.
+- `P` Exemple
+- `P` Calcule la surface totale et le volume de la caisse de Voahangy : L = 8 m, l = 5 m, h = 4 m.
+- `P` S = 2 × (L×l + L×h + l×h)
+- `P` S = 2 × (8×5 + 8×4 + 5×4)
+- `P` S = 2 × (40 + 32 + 20)
+- `P` S = 2 × 92 = 184 m²
+- `P` V = L × l × h
+- `P` V = 8 × 5 × 4 = 160 m³
+- `P` Attention : bien identifier les 3 dimensions différentes (L, l, h) avant de calculer, et ne jamais utiliser la formule du cube (qui suppose les 3 dimensions égales) pour un parallélépipède rectangle dont les dimensions sont différentes.
+- `P` EXERCICES
+- `P` Exercice 1 — Volume (5 points)
+- `P` Calcule le volume d'un parallélépipède rectangle de L = 10 m, l = 6 m, h = 5 m.
+- `P` V = ?
+- `P` Corrigé :
+- `P` a) V = 10 × 6 × 5 = 300 m³
+- `P` Exercice 2 — Surface totale (5 points)
+- `P` Calcule la surface totale du même parallélépipède (L = 10 m, l = 6 m, h = 5 m).
+- `P` S = ?
+- `P` Corrigé :
+- `P` a) S = 2 × (10×6 + 10×5 + 6×5) = 2 × (60+50+30) = 2 × 140 = 280 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Un bassin rectangulaire mesure L = 12 m, l = 7 m, h = 6 m. Calcule sa surface totale et son volume.
+- `P` a) Surface totale
+- `P` b) Volume
+- `P` Corrigé :
+- `P` a) S = 2 × (12×7 + 12×6 + 7×6) = 2 × (84+72+42) = 2 × 198 = 396 m²
+- `P` b) V = 12 × 7 × 6 = 504 m³
+- `P` Exercice 2 — Problème (5 points)
+- `P` La caisse de Voahangy (8 m × 5 m × 4 m) doit contenir des sacs de récolte de 2 m³ chacun. Combien de sacs peut-elle contenir au maximum ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) V = 8 × 5 × 4 = 160 m³ ; 160 ÷ 2 = 80 sacs
+- `P` Total : 20 points
+
+### Séance 54 / 81 — Le cylindre
+
+- Indicateurs : 48 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 54 / 81
+- `P` Le cylindre
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Aire et volume des objets de l'espace
+- `T3C3` Séance n° :
+- `T3C4` 146 à 147
+- `T4C1` Titre :
+- `T4C2` Le cylindre
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Reconnaître un cylindre, calculer sa surface totale et son volume
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du cylindre, une boîte de conserve, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la formule de l'aire du cercle ?Quelle est la formule du volume du parallélépipède rectangle ?
+- `T3C3` R.A. : A = π × r × r.R.A. : V = L × l × h.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le puits du village a la forme d'un cylindre de 4 m de rayon et 10 m de profondeur (hauteur). Le maire veut savoir quel volume d'eau le puits peut contenir, et quelle surface de béton est nécessaire pour construire ses parois et son fond.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le cylindre ». Après cette séance, vous serez capables de reconnaître un cylindre et de calculer sa surface totale et son volume.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du cylindre, avec son rayon et sa hauteur indiqués.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle est la forme des deux bases d'un cylindre ?Comment calculer l'aire d'une seule base ?Comment calculer le volume du cylindre (le puits) ?La surface totale comprend les deux bases ET la surface latérale (le tour). Comment l'obtenir ?
+- `T8C3` R.A. : Deux cercles identiques (le dessus et le dessous).R.A. : A = π × r × r, comme pour un cercle.R.A. : On multiplie l'aire de la base par la hauteur : V = π × r × r × h.R.A. : On additionne l'aire des deux bases (2 × π × r × r) et l'aire de la surface latérale (2 × π × r × h).
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le cylindre est un solide avec deux bases circulaires identiques et une surface latérale courbe. Son volume se calcule en multipliant l'aire d'une base par la hauteur : V = π × r × r × h. Sa surface totale s'obtient en additionnant l'aire des deux bases et l'aire de la surface latérale : S = 2 × π × r × r + 2 × π × r × h.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — VolumeCalcule le volume d'un cylindre de rayon 3 m et de hauteur 8 m (π ≈ 3,14).V = ?Exercice 2 — Surface totaleCalcule la surface totale du même cylindre (rayon 3 m, hauteur 8 m).S = ?
+- `T10C3` a) V = 3,14 × 3 × 3 × 8 = 226,08 m³ a) S = 2 × 3,14 × 3 × 3 + 2 × 3,14 × 3 × 8 = 56,52 + 150,72 = 207,24 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ProblèmeUne citerne cylindrique a un rayon de 5 m et une hauteur de 12 m. Calcule son volume et sa surface totale (π ≈ 3,14).a) Volumeb) Surface totaleExercice 2 — ProblèmeLe puits (r = 4 m, h = 10 m) est rempli d'eau à raz bord. Combien de litres d'eau contient-il, sachant que 1 m³ = 1 000 litres ?Réponse
+- `T11C3` a) V = 3,14 × 5 × 5 × 12 = 942 m³b) S = 2 × 3,14 × 5 × 5 + 2 × 3,14 × 5 × 12 = 157 + 376,8 = 533,8 m² a) V = 3,14 × 4 × 4 × 10 = 502,4 m³ = 502 400 litres
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le cylindre
+- `P` r = 4 m, h = 10 m
+- `P` Propriétés
+- `P` • 2 bases circulaires identiques (dessus et dessous)
+- `P` • Une surface latérale courbe qui relie les deux bases
+- `P` Formules
+- `P` Volume : V = π × r × r × h
+- `P` Le volume s'obtient en multipliant l'aire d'une base circulaire (π × r × r) par la hauteur, exactement comme pour le parallélépipède rectangle.
+- `P` Surface totale : S = 2 × π × r × r + 2 × π × r × h
+- `P` On additionne l'aire des deux bases (2 × π × r²) et l'aire de la surface latérale, qui est un rectangle « déroulé » de largeur h et de longueur égale à la circonférence d'une base (2 × π × r).
+- `P` Exemple
+- `P` Calcule le volume et la surface totale du puits cylindrique : r = 4 m, h = 10 m (π ≈ 3,14).
+- `P` V = π × r × r × h
+- `P` V = 3,14 × 4 × 4 × 10
+- `P` V = 502,4 m³
+- `P` S = 2 × π × r × r + 2 × π × r × h
+- `P` S = 2 × 3,14 × 4 × 4 + 2 × 3,14 × 4 × 10
+- `P` S = 100,48 + 251,2
+- `P` S = 351,68 m²
+- `P` Attention : ne pas oublier le facteur 2 devant chaque terme dans la formule de la surface totale (deux bases, et la surface latérale qui « fait le tour »), et bien vérifier que r et h sont dans la même unité avant de calculer.
+- `P` EXERCICES
+- `P` Exercice 1 — Volume (5 points)
+- `P` Calcule le volume d'un cylindre de rayon 3 m et de hauteur 8 m (π ≈ 3,14).
+- `P` V = ?
+- `P` Corrigé :
+- `P` a) V = 3,14 × 3 × 3 × 8 = 226,08 m³
+- `P` Exercice 2 — Surface totale (5 points)
+- `P` Calcule la surface totale du même cylindre (rayon 3 m, hauteur 8 m).
+- `P` S = ?
+- `P` Corrigé :
+- `P` a) S = 2 × 3,14 × 3 × 3 + 2 × 3,14 × 3 × 8 = 56,52 + 150,72 = 207,24 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Une citerne cylindrique a un rayon de 5 m et une hauteur de 12 m. Calcule son volume et sa surface totale (π ≈ 3,14).
+- `P` a) Volume
+- `P` b) Surface totale
+- `P` Corrigé :
+- `P` a) V = 3,14 × 5 × 5 × 12 = 942 m³
+- `P` b) S = 2 × 3,14 × 5 × 5 + 2 × 3,14 × 5 × 12 = 157 + 376,8 = 533,8 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le puits (r = 4 m, h = 10 m) est rempli d'eau à raz bord. Combien de litres d'eau contient-il, sachant que 1 m³ = 1 000 litres ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) V = 3,14 × 4 × 4 × 10 = 502,4 m³ = 502 400 litres
+- `P` Total : 20 points
+
+### Séance 55 / 81 — Unités de mesure de volume — approfondissement
+
+- Indicateurs : 38 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 55 / 81
+- `P` Unités de mesure de volume — approfondissement
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures de volume (approfondissement)
+- `T3C3` Séance n° :
+- `T3C4` 148 à 150
+- `T4C1` Titre :
+- `T4C2` Unités de mesure de volume — approfondissement
+- `T4C3` Durée :
+- `T4C4` 3 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Combiner calcul de volume d'un solide et conversion en litres
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment calcule-t-on le volume d'un parallélépipède rectangle ?Quelle est la correspondance entre dm³ et litre ?
+- `T3C3` R.A. : V = L × l × h.R.A. : 1 dm³ = 1 litre.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Une citerne rectangulaire mesure 3 m de longueur, 2 m de largeur et 1,5 m de hauteur. Le propriétaire veut savoir combien de litres d'eau cette citerne peut contenir quand elle est pleine.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Unités de mesure de volume ». Après cette séance, vous serez capables de combiner le calcul du volume d'un solide et sa conversion en litres.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la citerne rectangulaire dessinée au tableau, avec ses trois dimensions indiquées.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Comment calculer le volume de la citerne en m³ ?Combien fait 3 × 2 × 1,5 ?Comment convertir ce volume en litres ?Quelle est la capacité de la citerne en litres ?
+- `T8C3` R.A. : V = L × l × h = 3 × 2 × 1,5.R.A. : 9 m³.R.A. : 1 m³ = 1 000 l, donc on multiplie par 1 000.R.A. : 9 000 litres.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème combinant calcul de volume et conversion, on calcule d'abord le volume du solide avec la formule adaptée (en veillant à ce que toutes les dimensions soient dans la même unité), puis on convertit ce volume en litres si nécessaire, en utilisant la correspondance 1 m³ = 1 000 l (ou 1 dm³ = 1 l).
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Conversion d'unités puis volumeUne caisse mesure 250 cm de longueur, 120 cm de largeur et 80 cm de hauteur. Convertis ces mesures en mètres, puis calcule le volume en m³.a) Dimensions en mb) VolumeExercice 2 — Conversion en litresConvertis le volume trouvé (2,4 m³) en litres.Réponse
+- `T10C3` a) 2,5 m × 1,2 m × 0,8 mb) V = 2,5 × 1,2 × 0,8 = 2,4 m³ a) 2,4 m³ = 2 400 litres
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Problème completUne citerne mesure 4 m de longueur, 2,5 m de largeur et 2 m de hauteur. Calcule son volume en m³, puis sa capacité en litres.a) Volumeb) Capacité en litresExercice 2 — ProblèmeLa citerne de 3 m × 2 m × 1,5 m (9 000 litres) est remplie à moitié. Combien de litres d'eau contient-elle actuellement ?Réponse
+- `T11C3` a) V = 4 × 2,5 × 2 = 20 m³b) 20 m³ = 20 000 litres a) 9 000 ÷ 2 = 4 500 litres
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Unités de mesure de volume — approfondissement
+- `P` Règle
+- `P` Donc, pour résoudre un problème combinant calcul de volume et conversion, on calcule d'abord le volume du solide avec la formule adaptée (en veillant à ce que toutes les dimensions soient dans la même unité), puis on convertit ce volume en litres si nécessaire, en utilisant la correspondance 1 m³ = 1 000 l (ou 1 dm³ = 1 l).
+- `P` Exemple
+- `P` Une citerne mesure 3 m × 2 m × 1,5 m. Quelle est sa capacité en litres ?
+- `P` Volume = 3 × 2 × 1,5 = 9 m³.
+- `P` 9 m³ = 9 × 1 000 = 9 000 litres.
+- `P` Attention : toujours vérifier que les trois dimensions d'un solide sont exprimées dans la même unité avant de calculer le volume — convertir seulement après avoir obtenu le volume final, jamais en mélangeant des unités différentes dans le calcul du volume.
+- `P` EXERCICES
+- `P` Exercice 1 — Conversion d'unités puis volume (5 points)
+- `P` Une caisse mesure 250 cm de longueur, 120 cm de largeur et 80 cm de hauteur. Convertis ces mesures en mètres, puis calcule le volume en m³.
+- `P` a) Dimensions en m
+- `P` b) Volume
+- `P` Corrigé :
+- `P` a) 2,5 m × 1,2 m × 0,8 m
+- `P` b) V = 2,5 × 1,2 × 0,8 = 2,4 m³
+- `P` Exercice 2 — Conversion en litres (5 points)
+- `P` Convertis le volume trouvé (2,4 m³) en litres.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 2,4 m³ = 2 400 litres
+- `P` Exercice 1 — Problème complet (5 points)
+- `P` Une citerne mesure 4 m de longueur, 2,5 m de largeur et 2 m de hauteur. Calcule son volume en m³, puis sa capacité en litres.
+- `P` a) Volume
+- `P` b) Capacité en litres
+- `P` Corrigé :
+- `P` a) V = 4 × 2,5 × 2 = 20 m³
+- `P` b) 20 m³ = 20 000 litres
+- `P` Exercice 2 — Problème (5 points)
+- `P` La citerne de 3 m × 2 m × 1,5 m (9 000 litres) est remplie à moitié. Combien de litres d'eau contient-elle actuellement ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 9 000 ÷ 2 = 4 500 litres
+- `P` Total : 20 points
+
+### Séance 56 / 81 — Résoudre des problèmes relatifs à la mesure de volume
+
+- Indicateurs : 36 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 56 / 81
+- `P` Résoudre des problèmes relatifs à la mesure de volume
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures de volume (approfondissement)
+- `T3C3` Séance n° :
+- `T3C4` 151 à 153
+- `T4C1` Titre :
+- `T4C2` Résoudre des problèmes relatifs à la mesure de volume
+- `T4C3` Durée :
+- `T4C4` 3 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Combiner volume, coût et débit pour résoudre des problèmes concrets
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment convertit-on un volume en litres ?Comment calcule-t-on un prix total à partir d'un prix unitaire ?
+- `T3C3` R.A. : On multiplie le volume en m³ par 1 000.R.A. : On multiplie la quantité par le prix unitaire.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Une citerne cubique de béton de 6 m³ coûte 15 000 ariary le mètre cube à faire construire. Le propriétaire veut connaître le coût total de la construction, puis, une fois remplie, combien de temps il faudra à un robinet qui verse 2 m³ par heure pour la remplir complètement.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Résoudre des problèmes relatifs à la mesure de volume ». Après cette séance, vous serez capables de combiner volume, coût et débit pour résoudre des problèmes concrets.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien les deux parties du problème écrites au tableau : le coût de construction, puis le temps de remplissage.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Comment calculer le coût total de construction de la citerne de 6 m³ ?Combien coûte la construction ?Comment calculer le temps nécessaire pour remplir la citerne avec un débit de 2 m³ par heure ?Combien de temps faudra-t-il pour remplir la citerne ?
+- `T8C3` R.A. : On multiplie le volume par le prix au m³ : 6 × 15 000.R.A. : 90 000 ariary.R.A. : On divise le volume total par le débit : 6 ÷ 2.R.A. : 3 heures.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème de volume avec un coût, on multiplie le volume par le prix unitaire. Pour un problème de remplissage avec un débit (quantité versée par unité de temps), on divise le volume total par le débit pour trouver le temps nécessaire. Il faut toujours bien identifier ce que représente chaque nombre de l'énoncé avant de choisir l'opération.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — CoûtUn bassin de 12 m³ coûte 20 000 ariary le mètre cube à construire. Quel est le coût total ?RéponseExercice 2 — Temps de remplissageUn réservoir de 15 m³ est rempli par une pompe à un débit de 3 m³ par heure. Combien de temps faut-il pour le remplir ?Réponse
+- `T10C3` a) 12 × 20 000 = 240 000 ariary a) 15 ÷ 3 = 5 heures
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Problème completLa citerne de 6 m³ (construction à 15 000 ariary/m³) est remplie par un robinet à 2 m³/heure. Calcule le coût de construction et le temps de remplissage.a) Coûtb) TempsExercice 2 — ProblèmeUn réservoir de 20 m³ se vide à raison de 4 m³ par heure. Combien de temps faudra-t-il pour le vider complètement s'il est plein au départ ?Réponse
+- `T11C3` a) 6 × 15 000 = 90 000 ariaryb) 6 ÷ 2 = 3 heures a) 20 ÷ 4 = 5 heures
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Résoudre des problèmes relatifs à la mesure de volume
+- `P` Règle
+- `P` Donc, pour résoudre un problème de volume avec un coût, on multiplie le volume par le prix unitaire. Pour un problème de remplissage avec un débit (quantité versée par unité de temps), on divise le volume total par le débit pour trouver le temps nécessaire. Il faut toujours bien identifier ce que représente chaque nombre de l'énoncé avant de choisir l'opération.
+- `P` Exemple
+- `P` Une citerne de 6 m³ coûte 15 000 ariary/m³ à construire. Un robinet la remplit à 2 m³/heure. Quel est le coût de construction, et combien de temps faut-il pour la remplir ?
+- `P` Coût = volume × prix unitaire = 6 × 15 000 = 90 000 ariary.
+- `P` Temps de remplissage = volume ÷ débit = 6 ÷ 2 = 3 heures.
+- `P` Attention : bien distinguer les problèmes de coût (multiplication : volume × prix unitaire) des problèmes de temps de remplissage ou de vidange (division : volume ÷ débit) — relire attentivement l'énoncé pour repérer s'il s'agit d'un prix ou d'un débit avant de choisir l'opération.
+- `P` EXERCICES
+- `P` Exercice 1 — Coût (5 points)
+- `P` Un bassin de 12 m³ coûte 20 000 ariary le mètre cube à construire. Quel est le coût total ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 12 × 20 000 = 240 000 ariary
+- `P` Exercice 2 — Temps de remplissage (5 points)
+- `P` Un réservoir de 15 m³ est rempli par une pompe à un débit de 3 m³ par heure. Combien de temps faut-il pour le remplir ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 15 ÷ 3 = 5 heures
+- `P` Exercice 1 — Problème complet (5 points)
+- `P` La citerne de 6 m³ (construction à 15 000 ariary/m³) est remplie par un robinet à 2 m³/heure. Calcule le coût de construction et le temps de remplissage.
+- `P` a) Coût
+- `P` b) Temps
+- `P` Corrigé :
+- `P` a) 6 × 15 000 = 90 000 ariary
+- `P` b) 6 ÷ 2 = 3 heures
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un réservoir de 20 m³ se vide à raison de 4 m³ par heure. Combien de temps faudra-t-il pour le vider complètement s'il est plein au départ ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 20 ÷ 4 = 5 heures
+- `P` Total : 20 points
+
+### Séance 57 / 81 — Le pourcentage et la remise
+
+- Indicateurs : 38 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 57 / 81
+- `P` Le pourcentage et la remise
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Pourcentage, remise, taxe et factures
+- `T3C3` Séance n° :
+- `T3C4` 154 à 155
+- `T4C1` Titre :
+- `T4C2` Le pourcentage et la remise
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer un pourcentage d'une quantité et une remise sur un prix
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Combien font 50 000 ÷ 100 ?Combien font 500 × 15 ?
+- `T3C3` R.A. : 50 000 ÷ 100 = 500.R.A. : 500 × 15 = 7 500.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Une boutique de vêtements annonce « 15 % de remise » sur un pantalon à 50 000 ariary. Nirina veut savoir combien d'argent elle va économiser, et quel sera le prix final à payer.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le pourcentage et la remise ». Après cette séance, vous serez capables de calculer un pourcentage d'une quantité et une remise sur un prix.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien l'écriture « 15 % de 50 000 » au tableau, transformée en 50 000 × 15 ÷ 100.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Que signifie le symbole % ?Comment calculer 15 % de 50 000 ?Combien fait ce calcul ?Comment trouver le prix final après la remise ?
+- `T8C3` R.A. : « Pour cent » : X % signifie X sur 100, soit la fraction X/100.R.A. : On multiplie 50 000 par 15, puis on divise par 100 : 50 000 × 15 ÷ 100.R.A. : 7 500 ariary : c'est le montant de la remise.R.A. : On soustrait la remise du prix initial : 50 000 − 7 500.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, calculer X % d'une quantité, c'est multiplier cette quantité par X puis diviser par 100 (ou multiplier par X/100). Une remise est une réduction de prix exprimée en pourcentage : montant de la remise = prix × taux de remise ÷ 100. Le prix final s'obtient en soustrayant la remise du prix initial : prix final = prix initial − remise.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Calcul de pourcentageCalcule 10 % de 80 000 ariary.RéponseExercice 2 — RemiseUn article coûte 80 000 ariary avec 10 % de remise. Quel est le prix final ?Réponse
+- `T10C3` a) 80 000 × 10 ÷ 100 = 8 000 ariary a) Remise = 8 000 ; prix final = 80 000 − 8 000 = 72 000 ariary
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — RemiseUn meuble coûte 120 000 ariary avec 25 % de remise. Calcule le montant de la remise et le prix final.a) Remiseb) Prix finalExercice 2 — ProblèmeLe pantalon de Nirina coûte 50 000 ariary avec 15 % de remise. Combien va-t-elle économiser, et combien va-t-elle payer ?a) Économieb) Prix payé
+- `T11C3` a) 120 000 × 25 ÷ 100 = 30 000 ariaryb) 120 000 − 30 000 = 90 000 ariary a) 50 000 × 15 ÷ 100 = 7 500 ariaryb) 50 000 − 7 500 = 42 500 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le pourcentage et la remise
+- `P` Règle
+- `P` Donc, calculer X % d'une quantité, c'est multiplier cette quantité par X puis diviser par 100 (ou multiplier par X/100). Une remise est une réduction de prix exprimée en pourcentage : montant de la remise = prix × taux de remise ÷ 100. Le prix final s'obtient en soustrayant la remise du prix initial : prix final = prix initial − remise.
+- `P` Exemple
+- `P` Un pantalon coûte 50 000 ariary. La boutique annonce 15 % de remise. Quel est le prix final ?
+- `P` Remise = 50 000 × 15 ÷ 100 = 7 500 ariary.
+- `P` Prix final = 50 000 − 7 500 = 42 500 ariary.
+- `P` Attention : toujours diviser par 100 après avoir multiplié par le taux — oublier cette division donne un résultat cent fois trop grand. Le prix final est toujours inférieur au prix initial quand on applique une remise.
+- `P` EXERCICES
+- `P` Exercice 1 — Calcul de pourcentage (5 points)
+- `P` Calcule 10 % de 80 000 ariary.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 80 000 × 10 ÷ 100 = 8 000 ariary
+- `P` Exercice 2 — Remise (5 points)
+- `P` Un article coûte 80 000 ariary avec 10 % de remise. Quel est le prix final ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Remise = 8 000 ; prix final = 80 000 − 8 000 = 72 000 ariary
+- `P` Exercice 1 — Remise (5 points)
+- `P` Un meuble coûte 120 000 ariary avec 25 % de remise. Calcule le montant de la remise et le prix final.
+- `P` a) Remise
+- `P` b) Prix final
+- `P` Corrigé :
+- `P` a) 120 000 × 25 ÷ 100 = 30 000 ariary
+- `P` b) 120 000 − 30 000 = 90 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le pantalon de Nirina coûte 50 000 ariary avec 15 % de remise. Combien va-t-elle économiser, et combien va-t-elle payer ?
+- `P` a) Économie
+- `P` b) Prix payé
+- `P` Corrigé :
+- `P` a) 50 000 × 15 ÷ 100 = 7 500 ariary
+- `P` b) 50 000 − 7 500 = 42 500 ariary
+- `P` Total : 20 points
+
+### Séance 58 / 81 — La facture (avec taxe)
+
+- Indicateurs : 34 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 58 / 81
+- `P` La facture (avec taxe)
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Pourcentage, remise, taxe et factures
+- `T3C3` Séance n° :
+- `T3C4` 156
+- `T4C1` Titre :
+- `T4C2` La facture (avec taxe)
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer le montant d'une taxe et établir le prix toutes taxes comprises
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Modèle de facture, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment calcule-t-on 15 % de 50 000 ?Qu'est-ce qu'une remise ?
+- `T3C3` R.A. : 50 000 × 15 ÷ 100 = 7 500.R.A. : Une réduction de prix exprimée en pourcentage.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un menuisier facture 100 000 ariary de travail (montant hors taxe) à un client. Il doit ajouter une taxe de 20 % sur cette facture. Le client veut savoir le montant final qu'il devra payer.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « La facture (avec taxe) ». Après cette séance, vous serez capables de calculer le montant d'une taxe et d'établir le prix toutes taxes comprises.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un modèle de facture au tableau, avec « Montant HT : 100 000 », « Taxe 20 % : ? », « Montant TTC : ? ».
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Que signifie « HT » ? Et « TTC » ?Comment calculer le montant de la taxe de 20 % sur 100 000 ariary ?Contrairement à la remise, que fait-on du montant de la taxe par rapport au prix HT ?Quel est le montant TTC de la facture du menuisier ?
+- `T8C3` R.A. : HT signifie « Hors Taxe » (avant la taxe), TTC signifie « Toutes Taxes Comprises » (après la taxe).R.A. : 100 000 × 20 ÷ 100 = 20 000 ariary.R.A. : On l'ajoute, on ne le soustrait pas.R.A. : 100 000 + 20 000 = 120 000 ariary.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, une taxe est un pourcentage ajouté au prix hors taxe (HT) pour obtenir le prix toutes taxes comprises (TTC) : montant de la taxe = prix HT × taux ÷ 100, puis prix TTC = prix HT + montant de la taxe. C'est l'inverse d'une remise, qui elle se soustrait.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Facture avec taxeUne facture de 250 000 ariary HT comporte une taxe de 18 %. Calcule le montant TTC.RéponseExercice 2 — VocabulaireExplique la différence entre une remise et une taxe.Réponse libre
+- `T10C3` a) Taxe = 250 000 × 18 ÷ 100 = 45 000 ; TTC = 250 000 + 45 000 = 295 000 ariary a) La remise se soustrait du prix (le client paie moins), la taxe s'ajoute au prix (le client paie plus).
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Facture avec taxeUne facture de 75 000 ariary HT comporte une taxe de 20 %. Calcule le montant TTC.RéponseExercice 2 — ProblèmeLe menuisier facture 100 000 ariary HT avec 20 % de taxe. Quel montant le client doit-il payer au total ?Réponse
+- `T11C3` a) Taxe = 75 000 × 20 ÷ 100 = 15 000 ; TTC = 75 000 + 15 000 = 90 000 ariary a) 100 000 + (100 000 × 20 ÷ 100) = 100 000 + 20 000 = 120 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` La facture (avec taxe)
+- `P` Règle
+- `P` Donc, une taxe est un pourcentage ajouté au prix hors taxe (HT) pour obtenir le prix toutes taxes comprises (TTC) : montant de la taxe = prix HT × taux ÷ 100, puis prix TTC = prix HT + montant de la taxe. C'est l'inverse d'une remise, qui elle se soustrait.
+- `P` Exemple
+- `P` Le menuisier facture 100 000 ariary HT, avec une taxe de 20 %. Quel est le montant TTC ?
+- `P` Taxe = 100 000 × 20 ÷ 100 = 20 000 ariary.
+- `P` Montant TTC = 100 000 + 20 000 = 120 000 ariary.
+- `P` Attention : bien retenir le sens de l'opération : la remise SE SOUSTRAIT du prix, la taxe S'AJOUTE au prix — confondre les deux donne systématiquement le résultat inverse de celui attendu.
+- `P` EXERCICES
+- `P` Exercice 1 — Facture avec taxe (5 points)
+- `P` Une facture de 250 000 ariary HT comporte une taxe de 18 %. Calcule le montant TTC.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Taxe = 250 000 × 18 ÷ 100 = 45 000 ; TTC = 250 000 + 45 000 = 295 000 ariary
+- `P` Exercice 2 — Vocabulaire (5 points)
+- `P` Explique la différence entre une remise et une taxe.
+- `P` Réponse libre
+- `P` Corrigé :
+- `P` a) La remise se soustrait du prix (le client paie moins), la taxe s'ajoute au prix (le client paie plus).
+- `P` Exercice 1 — Facture avec taxe (5 points)
+- `P` Une facture de 75 000 ariary HT comporte une taxe de 20 %. Calcule le montant TTC.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Taxe = 75 000 × 20 ÷ 100 = 15 000 ; TTC = 75 000 + 15 000 = 90 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le menuisier facture 100 000 ariary HT avec 20 % de taxe. Quel montant le client doit-il payer au total ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 100 000 + (100 000 × 20 ÷ 100) = 100 000 + 20 000 = 120 000 ariary
+- `P` Total : 20 points
+
+### Séance 59 / 81 — Le budget familial
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 59 / 81
+- `P` Le budget familial
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Pourcentage, remise, taxe et factures
+- `T3C3` Séance n° :
+- `T3C4` 157 à 159
+- `T4C1` Titre :
+- `T4C2` Le budget familial
+- `T4C3` Durée :
+- `T4C4` 3 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer l'économie ou la dette d'une famille à partir de son gain et de ses dépenses
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment calcule-t-on le montant TTC d'une facture ?Combien font 350 000 − 280 000 ?
+- `T3C3` R.A. : Prix HT + montant de la taxe.R.A. : 350 000 − 280 000 = 70 000.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` La famille de Voninkazo a gagné 350 000 ariary ce mois-ci (salaires et ventes). Elle a dépensé 280 000 ariary pour la nourriture, le loyer et les fournitures scolaires. Voninkazo veut savoir combien sa famille a pu économiser ce mois-ci.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le budget familial ». Après cette séance, vous serez capables de calculer l'économie ou la dette d'une famille à partir de son gain et de ses dépenses.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien les deux montants 350 000 (gain) et 280 000 (dépense) écrits au tableau, l'un sous l'autre.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Le gain (350 000) est-il plus grand ou plus petit que la dépense (280 000) ?Quand le gain est plus grand que la dépense, que se passe-t-il pour la famille ?Comment calculer cette économie ?Combien la famille de Voninkazo a-t-elle économisé ?
+- `T8C3` R.A. : Plus grand.R.A. : La famille peut économiser de l'argent.R.A. : On soustrait la dépense du gain : 350 000 − 280 000.R.A. : 70 000 ariary.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le budget familial compare le gain (l'argent reçu : salaires, ventes...) et la dépense (l'argent utilisé : nourriture, loyer, scolarité...) sur une période donnée. Si le gain est supérieur à la dépense, la famille fait une économie : économie = gain − dépense. Si la dépense est supérieure au gain, la famille contracte une dette : dette = dépense − gain.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Économie ou dette ?Une famille gagne 200 000 ariary et dépense 245 000 ariary. Économie ou dette ? Calcule le montant.RéponseExercice 2 — Économie ou dette ?Une famille gagne 500 000 ariary et dépense 420 000 ariary. Économie ou dette ? Calcule le montant.Réponse
+- `T10C3` a) Dette, car la dépense dépasse le gain : 245 000 − 200 000 = 45 000 ariary de dette a) Économie, car le gain dépasse la dépense : 500 000 − 420 000 = 80 000 ariary d'économie
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ProblèmeLa famille de Voninkazo (gain 350 000, dépense 280 000) veut savoir combien elle pourra économiser sur 3 mois si la situation reste la même. Calcule.RéponseExercice 2 — ProblèmeUne famille a un gain mensuel de 180 000 ariary et des dépenses de 210 000 ariary. Que doit-elle faire pour éviter la dette ? Calcule de combien elle doit réduire ses dépenses pour équilibrer son budget.Réponse
+- `T11C3` a) Économie mensuelle = 70 000 ; sur 3 mois : 70 000 × 3 = 210 000 ariary a) Dette actuelle = 210 000 − 180 000 = 30 000 ariary ; elle doit réduire ses dépenses d'au moins 30 000 ariary pour équilibrer son budget.
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le budget familial
+- `P` Règle
+- `P` Donc, le budget familial compare le gain (l'argent reçu : salaires, ventes...) et la dépense (l'argent utilisé : nourriture, loyer, scolarité...) sur une période donnée. Si le gain est supérieur à la dépense, la famille fait une économie : économie = gain − dépense. Si la dépense est supérieure au gain, la famille contracte une dette : dette = dépense − gain.
+- `P` Exemple
+- `P` La famille de Voninkazo a gagné 350 000 ariary et dépensé 280 000 ariary ce mois-ci. Quelle est son économie ?
+- `P` Économie = gain − dépense
+- `P` Économie = 350 000 − 280 000
+- `P` Économie = 70 000 ariary
+- `P` Attention : toujours comparer le gain et la dépense AVANT de choisir l'opération, exactement comme pour le bénéfice et la perte — soustraire dans le mauvais sens donnerait un résultat négatif qui n'a pas de sens dans ce contexte.
+- `P` EXERCICES
+- `P` Exercice 1 — Économie ou dette ? (5 points)
+- `P` Une famille gagne 200 000 ariary et dépense 245 000 ariary. Économie ou dette ? Calcule le montant.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Dette, car la dépense dépasse le gain : 245 000 − 200 000 = 45 000 ariary de dette
+- `P` Exercice 2 — Économie ou dette ? (5 points)
+- `P` Une famille gagne 500 000 ariary et dépense 420 000 ariary. Économie ou dette ? Calcule le montant.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Économie, car le gain dépasse la dépense : 500 000 − 420 000 = 80 000 ariary d'économie
+- `P` Exercice 1 — Problème (5 points)
+- `P` La famille de Voninkazo (gain 350 000, dépense 280 000) veut savoir combien elle pourra économiser sur 3 mois si la situation reste la même. Calcule.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Économie mensuelle = 70 000 ; sur 3 mois : 70 000 × 3 = 210 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Une famille a un gain mensuel de 180 000 ariary et des dépenses de 210 000 ariary. Que doit-elle faire pour éviter la dette ? Calcule de combien elle doit réduire ses dépenses pour équilibrer son budget.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Dette actuelle = 210 000 − 180 000 = 30 000 ariary ; elle doit réduire ses dépenses d'au moins 30 000 ariary pour équilibrer son budget.
+- `P` Total : 20 points
+
+### Séance 60 / 81 — Les mesures agraires
+
+- Indicateurs : 41 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 60 / 81
+- `P` Les mesures agraires
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures agraires
+- `T3C3` Séance n° :
+- `T3C4` 160 à 161
+- `T4C1` Titre :
+- `T4C2` Les mesures agraires
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Connaître les unités agraires (are, hectare, centiare) et calculer un rendement
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau des mesures agraires, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Combien de m² y a-t-il dans 1 dam² ?Combien font 3 × 100 ?
+- `T3C3` R.A. : 1 dam² = 100 m².R.A. : 3 × 100 = 300.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le père de Njaka possède un champ de riz de 3 hectares. Il obtient un rendement de 1 500 kg de riz par hectare. Njaka veut savoir combien de kilogrammes de riz son père récoltera au total, et ce que représente 3 hectares en ares.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les mesures agraires ». Après cette séance, vous serez capables de connaître les unités agraires et de calculer un rendement.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le tableau des mesures agraires affiché au tableau noir : hectare (ha), are (a), centiare (ca).
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle est l'unité agraire de base, équivalente à 1 m² ?Combien de m² fait 1 are (a) ?Combien de m² fait 1 hectare (ha) ?Combien d'ares fait le champ de 3 hectares du père de Njaka ?
+- `T8C3` R.A. : Le centiare (ca) : 1 ca = 1 m².R.A. : 1 a = 100 m² (c'est-à-dire 100 ca).R.A. : 1 ha = 10 000 m² (c'est-à-dire 100 a).R.A. : 3 × 100 = 300 ares.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, les mesures agraires sont utilisées pour les terrains : le centiare (ca) équivaut à 1 m², l'are (a) équivaut à 100 m² (100 ca), et l'hectare (ha) équivaut à 10 000 m² (100 a). Pour calculer un rendement total, on multiplie la surface (en hectares) par le rendement par hectare.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — ConversionConvertis 250 ares en hectares, puis en m².a) En hectaresb) En m²Exercice 2 — RendementUn champ de 2 hectares produit 1 500 kg de riz par hectare. Quelle est la récolte totale ?Réponse
+- `T10C3` a) 250 a = 2,5 hab) 250 a = 25 000 m² a) 2 × 1 500 = 3 000 kg
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ConversionConvertis 4 hectares en ares, puis en m².a) En aresb) En m²Exercice 2 — ProblèmeLe champ du père de Njaka (3 ha) produit 1 500 kg de riz par hectare. Quelle est sa récolte totale ? Combien d'ares fait ce champ ?a) Récolte totaleb) Surface en ares
+- `T11C3` a) 4 ha = 400 ab) 4 ha = 40 000 m² a) 3 × 1 500 = 4 500 kgb) 3 ha = 300 a
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les mesures agraires
+- `P` Règle
+- `P` Donc, les mesures agraires sont utilisées pour les terrains : le centiare (ca) équivaut à 1 m², l'are (a) équivaut à 100 m² (100 ca), et l'hectare (ha) équivaut à 10 000 m² (100 a). Pour calculer un rendement total, on multiplie la surface (en hectares) par le rendement par hectare.
+- `P` Exemple
+- `P` Le champ de riz du père de Njaka fait 3 hectares, avec un rendement de 1 500 kg par hectare. Quelle est la récolte totale ?
+- `P` Surface = 3 hectares.
+- `P` Rendement total = surface × rendement par hectare.
+- `P` Rendement total = 3 × 1 500 = 4 500 kg de riz.
+- `P` Attention : ne pas confondre les unités agraires (are, hectare, centiare, utilisées pour les terrains) avec les unités d'aire habituelles (m², dam², etc.) — un hectare (10 000 m²) correspond exactement à un hectomètre carré (hm²), mais porte un nom différent en contexte agricole.
+- `P` EXERCICES
+- `P` Exercice 1 — Conversion (5 points)
+- `P` Convertis 250 ares en hectares, puis en m².
+- `P` a) En hectares
+- `P` b) En m²
+- `P` Corrigé :
+- `P` a) 250 a = 2,5 ha
+- `P` b) 250 a = 25 000 m²
+- `P` Exercice 2 — Rendement (5 points)
+- `P` Un champ de 2 hectares produit 1 500 kg de riz par hectare. Quelle est la récolte totale ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 2 × 1 500 = 3 000 kg
+- `P` Exercice 1 — Conversion (5 points)
+- `P` Convertis 4 hectares en ares, puis en m².
+- `P` a) En ares
+- `P` b) En m²
+- `P` Corrigé :
+- `P` a) 4 ha = 400 a
+- `P` b) 4 ha = 40 000 m²
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le champ du père de Njaka (3 ha) produit 1 500 kg de riz par hectare. Quelle est sa récolte totale ? Combien d'ares fait ce champ ?
+- `P` a) Récolte totale
+- `P` b) Surface en ares
+- `P` Corrigé :
+- `P` a) 3 × 1 500 = 4 500 kg
+- `P` b) 3 ha = 300 a
+- `P` Total : 20 points
+
+### Séance 61 / 81 — Les nombres sexagésimaux — unités de temps
+
+- Indicateurs : 34 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 61 / 81
+- `P` Les nombres sexagésimaux — unités de temps
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Nombres sexagésimaux
+- `T3C3` Séance n° :
+- `T3C4` 162 à 163
+- `T4C1` Titre :
+- `T4C2` Les nombres sexagésimaux — unités de temps
+- `T4C3` Durée :
+- `T4C4` 2 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Convertir des durées entre heures, minutes et secondes, et additionner des durées
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Horloge, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Combien de minutes y a-t-il dans 1 heure ?Combien de secondes y a-t-il dans 1 minute ?
+- `T3C3` R.A. : 60 minutes.R.A. : 60 secondes.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le bus de Fara part à 7 h et le trajet dure 2 h 45 min. Fara veut savoir à quelle minute totale (depuis le début du trajet) elle arrivera, et combien de minutes son trajet représente en tout.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les nombres sexagésimaux — unités de temps ». Après cette séance, vous serez capables de convertir des durées entre heures, minutes et secondes, et d'additionner des durées.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien une horloge dessinée au tableau, avec les graduations de 60 minutes et 60 secondes.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Pourquoi appelle-t-on ces nombres « sexagésimaux » ?Comment convertir 2 h 45 min en minutes uniquement ?Combien de minutes fait 2 h 45 min ?Comment additionne-t-on deux durées, comme 1 h 50 min + 2 h 25 min ?
+- `T8C3` R.A. : Parce qu'ils changent d'unité tous les 60 (base 60), contrairement aux nombres décimaux habituels qui changent tous les 10.R.A. : On convertit les heures en minutes (2 × 60 = 120), puis on ajoute les minutes restantes (120 + 45).R.A. : 165 minutes.R.A. : On additionne les heures entre elles et les minutes entre elles, puis on convertit si les minutes dépassent 60 (comme une retenue).
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le temps se mesure en heures (h), minutes (min) et secondes (s), avec 60 minutes dans une heure et 60 secondes dans une minute (base 60, d'où le nom « sexagésimal »). Pour convertir une durée en une seule unité, on multiplie les heures par 60 pour les mettre en minutes, puis on additionne. Pour additionner deux durées, on additionne heures avec heures et minutes avec minutes, puis on convertit si les minutes atteignent ou dépassent 60 (60 min = 1 h, comme une retenue).
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — ConversionConvertis 3 h 20 min en minutes.RéponseExercice 2 — Addition de duréesAdditionne 1 h 50 min et 2 h 25 min.Réponse
+- `T10C3` a) 3 × 60 + 20 = 200 minutes a) Heures : 1 + 2 = 3 ; minutes : 50 + 25 = 75 min = 1 h 15 min ; total = 3 h + 1 h 15 min = 4 h 15 min
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ConversionConvertis 245 minutes en heures et minutes.RéponseExercice 2 — ProblèmeLe bus de Fara part à 7 h et le trajet dure 2 h 45 min. À quelle heure arrivera-t-elle ?Réponse
+- `T11C3` a) 245 ÷ 60 = 4 h, reste 5 min ; donc 245 min = 4 h 5 min a) 7 h + 2 h 45 min = 9 h 45 min
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les nombres sexagésimaux — unités de temps
+- `P` Règle
+- `P` Donc, le temps se mesure en heures (h), minutes (min) et secondes (s), avec 60 minutes dans une heure et 60 secondes dans une minute (base 60, d'où le nom « sexagésimal »). Pour convertir une durée en une seule unité, on multiplie les heures par 60 pour les mettre en minutes, puis on additionne. Pour additionner deux durées, on additionne heures avec heures et minutes avec minutes, puis on convertit si les minutes atteignent ou dépassent 60 (60 min = 1 h, comme une retenue).
+- `P` Exemple
+- `P` Le trajet en bus de Fara dure 2 h 45 min. Combien de minutes cela représente-t-il en tout ?
+- `P` 2 h = 2 × 60 = 120 minutes.
+- `P` 120 + 45 = 165 minutes.
+- `P` Attention : ne jamais traiter les minutes comme des centièmes : 2 h 45 min n'est PAS « 2,45 heures » — 45 minutes représentent 45/60 d'heure, pas 45/100. C'est le piège le plus fréquent de cette leçon.
+- `P` EXERCICES
+- `P` Exercice 1 — Conversion (5 points)
+- `P` Convertis 3 h 20 min en minutes.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 3 × 60 + 20 = 200 minutes
+- `P` Exercice 2 — Addition de durées (5 points)
+- `P` Additionne 1 h 50 min et 2 h 25 min.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Heures : 1 + 2 = 3 ; minutes : 50 + 25 = 75 min = 1 h 15 min ; total = 3 h + 1 h 15 min = 4 h 15 min
+- `P` Exercice 1 — Conversion (5 points)
+- `P` Convertis 245 minutes en heures et minutes.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 245 ÷ 60 = 4 h, reste 5 min ; donc 245 min = 4 h 5 min
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le bus de Fara part à 7 h et le trajet dure 2 h 45 min. À quelle heure arrivera-t-elle ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 7 h + 2 h 45 min = 9 h 45 min
+- `P` Total : 20 points
+
+### Séance 62 / 81 — Les partages égaux
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 62 / 81
+- `P` Les partages égaux
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les partages
+- `T3C3` Séance n° :
+- `T3C4` 164 à 169
+- `T4C1` Titre :
+- `T4C2` Les partages égaux
+- `T4C3` Durée :
+- `T4C4` 6 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Partager une quantité en parts strictement égales
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION20 min
+- `T3C2` Combien font 96 ÷ 8 ?Qu'est-ce qu'une division exacte ?
+- `T3C3` R.A. : 96 ÷ 8 = 12.R.A. : Une division dont le reste est 0.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 120 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Rado a récolté 96 mangues dans son jardin. Il veut les partager de manière strictement égale entre ses 8 cousins venus lui rendre visite, sans qu'aucun n'en reçoive plus qu'un autre.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les partages égaux ». Après cette séance, vous serez capables de partager une quantité en parts strictement égales.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien 96 mangues représentées par des jetons au tableau, à répartir en 8 tas identiques.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de personnes doivent recevoir une part ?Que signifie « partage égal » ?Quelle opération permet de trouver la quantité que chaque cousin recevra ?Combien de mangues chaque cousin recevra-t-il ?
+- `T8C3` R.A. : 8 cousins.R.A. : Chaque personne doit recevoir exactement la même quantité, ni plus ni moins.R.A. : La division : on divise la quantité totale par le nombre de personnes.R.A. : 96 ÷ 8 = 12 mangues chacun.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un partage égal consiste à diviser une quantité totale en un certain nombre de parts identiques. On calcule la valeur d'une part en divisant la quantité totale par le nombre de parts : part = quantité totale ÷ nombre de parts. Si la division est exacte, le partage tombe juste ; sinon, il reste un reste qu'il faut gérer séparément (à partager autrement, ou à mettre de côté).
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Partage égal144 cahiers doivent être partagés également entre 12 élèves. Combien chaque élève recevra-t-il ?RéponseExercice 2 — VérificationVérifie le résultat de l'exercice 1 en multipliant la part trouvée par le nombre d'élèves.Vérification
+- `T10C3` a) 144 ÷ 12 = 12 cahiers par élève a) 12 × 12 = 144, ce qui confirme le résultat.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION40 min
+- `T11C2` Exercice 1 — Partage égal315 œufs doivent être partagés également entre 9 vendeuses. Combien chaque vendeuse recevra-t-elle ?RéponseExercice 2 — ProblèmeRado a 96 mangues à partager également entre ses 8 cousins. Combien chacun recevra-t-il ?Réponse
+- `T11C3` a) 315 ÷ 9 = 35 œufs par vendeuse a) 96 ÷ 8 = 12 mangues par cousin
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les partages égaux
+- `P` Règle
+- `P` Donc, un partage égal consiste à diviser une quantité totale en un certain nombre de parts identiques. On calcule la valeur d'une part en divisant la quantité totale par le nombre de parts : part = quantité totale ÷ nombre de parts. Si la division est exacte, le partage tombe juste ; sinon, il reste un reste qu'il faut gérer séparément (à partager autrement, ou à mettre de côté).
+- `P` Exemple
+- `P` Rado a 96 mangues à partager également entre ses 8 cousins. Combien chacun recevra-t-il ?
+- `P` Part = quantité totale ÷ nombre de personnes
+- `P` Part = 96 ÷ 8
+- `P` Part = 12 mangues par cousin
+- `P` Attention : un partage égal suppose que TOUTES les parts sont rigoureusement identiques — si l'énoncé indique que certaines personnes doivent recevoir plus ou moins que d'autres, ce n'est plus un partage égal mais un partage inégal ou proportionnel, qui se calcule différemment.
+- `P` EXERCICES
+- `P` Exercice 1 — Partage égal (5 points)
+- `P` 144 cahiers doivent être partagés également entre 12 élèves. Combien chaque élève recevra-t-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 144 ÷ 12 = 12 cahiers par élève
+- `P` Exercice 2 — Vérification (5 points)
+- `P` Vérifie le résultat de l'exercice 1 en multipliant la part trouvée par le nombre d'élèves.
+- `P` Vérification
+- `P` Corrigé :
+- `P` a) 12 × 12 = 144, ce qui confirme le résultat.
+- `P` Exercice 1 — Partage égal (5 points)
+- `P` 315 œufs doivent être partagés également entre 9 vendeuses. Combien chaque vendeuse recevra-t-elle ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 315 ÷ 9 = 35 œufs par vendeuse
+- `P` Exercice 2 — Problème (5 points)
+- `P` Rado a 96 mangues à partager également entre ses 8 cousins. Combien chacun recevra-t-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 96 ÷ 8 = 12 mangues par cousin
+- `P` Total : 20 points
+
+### Séance 63 / 81 — Les partages proportionnels
+
+- Indicateurs : 38 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 63 / 81
+- `P` Les partages proportionnels
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les partages
+- `T3C3` Séance n° :
+- `T3C4` 170 à 178
+- `T4C1` Titre :
+- `T4C2` Les partages proportionnels
+- `T4C3` Durée :
+- `T4C4` 9 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Partager une quantité en parts proportionnelles à des nombres donnés
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION30 min
+- `T3C2` Comment calcule-t-on un partage égal ?Combien font 2 + 3 + 5 ?
+- `T3C3` R.A. : Part = quantité totale ÷ nombre de personnes.R.A. : 2 + 3 + 5 = 10.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 180 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Trois frères, Tahina, Bila et Fetra, ont travaillé ensemble dans le champ familial : Tahina a travaillé 2 semaines, Bila 3 semaines, et Fetra 5 semaines. Ils ont gagné 120 000 ariary ensemble et veulent le partager selon le temps travaillé par chacun, pas également.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les partages proportionnels ». Après cette séance, vous serez capables de partager une quantité en parts proportionnelles à des nombres donnés.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien les nombres 2, 3 et 5 (semaines travaillées) écrits au tableau, avec leur somme calculée à côté.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de « parts » au total représentent les temps de travail (2 + 3 + 5) ?Comment trouver la valeur d'une seule part parmi ces 10 ?Combien vaut une part ?Comment trouver ce que reçoit chaque frère ?
+- `T8C3` R.A. : 10 parts au total.R.A. : On divise la somme totale à partager par le nombre total de parts : 120 000 ÷ 10.R.A. : 12 000 ariary.R.A. : On multiplie la valeur d'une part par le nombre de parts de chacun : Tahina (2 parts) = 2 × 12 000, Bila (3 parts) = 3 × 12 000, Fetra (5 parts) = 5 × 12 000.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un partage proportionnel répartit une quantité selon des proportions données (par exemple selon le temps travaillé, l'âge, ou toute autre mesure). On additionne d'abord les nombres qui représentent les proportions pour obtenir le nombre total de parts. On divise ensuite la quantité totale par ce nombre de parts pour trouver la valeur d'UNE part. Enfin, on multiplie cette valeur par le nombre de parts de chaque personne.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Partage proportionnelPartage 90 000 ariary proportionnellement aux nombres 1, 2 et 3.RéponseExercice 2 — VérificationVérifie que la somme des trois parts de l'exercice 1 redonne bien 90 000.Vérification
+- `T10C3` a) Total parts = 1+2+3 = 6 ; valeur d'une part = 90 000 ÷ 6 = 15 000 ; parts : 15 000, 30 000, 45 000 ariary a) 15 000 + 30 000 + 45 000 = 90 000, ce qui confirme le résultat.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION60 min
+- `T11C2` Exercice 1 — Partage proportionnelPartage 240 000 ariary proportionnellement aux nombres 3, 4 et 5.RéponseExercice 2 — ProblèmeTahina, Bila et Fetra partagent 120 000 ariary selon leurs semaines de travail (2, 3, 5). Combien chacun reçoit-il ?Réponse
+- `T11C3` a) Total parts = 3+4+5 = 12 ; valeur d'une part = 240 000 ÷ 12 = 20 000 ; parts : 60 000, 80 000, 100 000 ariary a) Valeur d'une part = 120 000 ÷ 10 = 12 000 ; Tahina 24 000, Bila 36 000, Fetra 60 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les partages proportionnels
+- `P` Règle
+- `P` Donc, un partage proportionnel répartit une quantité selon des proportions données (par exemple selon le temps travaillé, l'âge, ou toute autre mesure). On additionne d'abord les nombres qui représentent les proportions pour obtenir le nombre total de parts. On divise ensuite la quantité totale par ce nombre de parts pour trouver la valeur d'UNE part. Enfin, on multiplie cette valeur par le nombre de parts de chaque personne.
+- `P` Exemple
+- `P` Tahina, Bila et Fetra partagent 120 000 ariary proportionnellement à leurs semaines de travail : 2, 3 et 5 semaines.
+- `P` Nombre total de parts = 2 + 3 + 5 = 10.
+- `P` Valeur d'une part = 120 000 ÷ 10 = 12 000 ariary.
+- `P` Tahina (2 parts) = 2 × 12 000 = 24 000 ariary.
+- `P` Bila (3 parts) = 3 × 12 000 = 36 000 ariary.
+- `P` Fetra (5 parts) = 5 × 12 000 = 60 000 ariary.
+- `P` Vérification : 24 000 + 36 000 + 60 000 = 120 000 ariary.
+- `P` Attention : toujours additionner TOUS les nombres de proportion avant de diviser — diviser par le nombre de personnes (comme pour un partage égal) au lieu de la somme des parts est l'erreur la plus fréquente de cette leçon. Vérifier systématiquement que la somme des parts trouvées redonne bien la quantité de départ.
+- `P` EXERCICES
+- `P` Exercice 1 — Partage proportionnel (5 points)
+- `P` Partage 90 000 ariary proportionnellement aux nombres 1, 2 et 3.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Total parts = 1+2+3 = 6 ; valeur d'une part = 90 000 ÷ 6 = 15 000 ; parts : 15 000, 30 000, 45 000 ariary
+- `P` Exercice 2 — Vérification (5 points)
+- `P` Vérifie que la somme des trois parts de l'exercice 1 redonne bien 90 000.
+- `P` Vérification
+- `P` Corrigé :
+- `P` a) 15 000 + 30 000 + 45 000 = 90 000, ce qui confirme le résultat.
+- `P` Exercice 1 — Partage proportionnel (5 points)
+- `P` Partage 240 000 ariary proportionnellement aux nombres 3, 4 et 5.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Total parts = 3+4+5 = 12 ; valeur d'une part = 240 000 ÷ 12 = 20 000 ; parts : 60 000, 80 000, 100 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Tahina, Bila et Fetra partagent 120 000 ariary selon leurs semaines de travail (2, 3, 5). Combien chacun reçoit-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Valeur d'une part = 120 000 ÷ 10 = 12 000 ; Tahina 24 000, Bila 36 000, Fetra 60 000 ariary
+- `P` Total : 20 points
+
+### Séance 64 / 81 — Les partages inégaux
+
+- Indicateurs : 36 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 64 / 81
+- `P` Les partages inégaux
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Les partages
+- `T3C3` Séance n° :
+- `T3C4` 179 à 187
+- `T4C1` Titre :
+- `T4C2` Les partages inégaux
+- `T4C3` Durée :
+- `T4C4` 9 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Partager une quantité entre plusieurs personnes avec une différence fixe connue entre les parts
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION30 min
+- `T3C2` Comment calcule-t-on un partage proportionnel ?Combien font 50 000 − 10 000 ?
+- `T3C3` R.A. : On additionne les nombres de proportion, on divise la quantité totale par cette somme, puis on multiplie par le nombre de parts de chacun.R.A. : 50 000 − 10 000 = 40 000.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 180 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Deux sœurs, Hanta et Vola, doivent se partager 50 000 ariary hérités de leur grand-mère. Le testament précise que Hanta, l'aînée, doit recevoir 10 000 ariary de plus que Vola. Elles veulent savoir combien chacune recevra exactement.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les partages inégaux ». Après cette séance, vous serez capables de partager une quantité entre plusieurs personnes quand on connaît la différence fixe entre leurs parts.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un schéma au tableau : une barre représentant 50 000 ariary, découpée en une part Vola et une part Hanta plus longue de 10 000.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Si on enlève les 10 000 ariary de différence du total, que reste-t-il à partager également ?Combien vaut la part de base (celle de Vola, la plus petite) ?Comment trouver la part de Hanta, qui a 10 000 de plus ?Combien Hanta reçoit-elle ?
+- `T8C3` R.A. : 50 000 − 10 000 = 40 000 ariary, à partager également entre les deux sœurs.R.A. : 40 000 ÷ 2 = 20 000 ariary.R.A. : On ajoute la différence à la part de Vola : 20 000 + 10 000.R.A. : 30 000 ariary.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un partage inégal avec une différence connue se résout ainsi : on soustrait d'abord la différence du total, pour se ramener à un partage égal du reste. On divise ce reste par le nombre de personnes pour trouver la part la plus petite. On ajoute ensuite la différence à cette part pour trouver la part la plus grande. On vérifie toujours que la somme des parts trouvées redonne bien le total de départ.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Partage inégalPartage 80 000 ariary entre A et B, sachant que A doit recevoir 20 000 ariary de plus que B.RéponseExercice 2 — VérificationVérifie que la somme des deux parts de l'exercice 1 redonne bien 80 000.Vérification
+- `T10C3` a) (80 000 − 20 000) ÷ 2 = 30 000 (part de B) ; part de A = 30 000 + 20 000 = 50 000 ariary a) 30 000 + 50 000 = 80 000, ce qui confirme le résultat.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION60 min
+- `T11C2` Exercice 1 — Partage inégal à 3 personnesPartage 150 000 ariary entre A, B et C, sachant que B reçoit 5 000 ariary de plus que A, et que C reçoit 10 000 ariary de plus que A.RéponseExercice 2 — ProblèmeHanta et Vola partagent 50 000 ariary, Hanta recevant 10 000 de plus que Vola. Combien chacune reçoit-elle ?Réponse
+- `T11C3` a) (150 000 − 5 000 − 10 000) ÷ 3 = 45 000 (part de A) ; B = 45 000 + 5 000 = 50 000 ; C = 45 000 + 10 000 = 55 000 ariary a) Vola = (50 000 − 10 000) ÷ 2 = 20 000 ; Hanta = 20 000 + 10 000 = 30 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les partages inégaux
+- `P` Règle
+- `P` Donc, un partage inégal avec une différence connue se résout ainsi : on soustrait d'abord la différence du total, pour se ramener à un partage égal du reste. On divise ce reste par le nombre de personnes pour trouver la part la plus petite. On ajoute ensuite la différence à cette part pour trouver la part la plus grande. On vérifie toujours que la somme des parts trouvées redonne bien le total de départ.
+- `P` Exemple
+- `P` Hanta et Vola partagent 50 000 ariary. Hanta doit recevoir 10 000 ariary de plus que Vola. Combien chacune reçoit-elle ?
+- `P` On enlève la différence : 50 000 − 10 000 = 40 000 ariary.
+- `P` On partage également ce reste : 40 000 ÷ 2 = 20 000 ariary (part de Vola).
+- `P` Part de Hanta = 20 000 + 10 000 = 30 000 ariary.
+- `P` Vérification : 20 000 + 30 000 = 50 000 ariary.
+- `P` Attention : toujours soustraire TOUTES les différences du total avant de diviser par le nombre de personnes, surtout avec 3 personnes ou plus (une différence par personne « en trop » par rapport à la part de base) — oublier une différence dans la soustraction de départ fausse tout le partage.
+- `P` EXERCICES
+- `P` Exercice 1 — Partage inégal (5 points)
+- `P` Partage 80 000 ariary entre A et B, sachant que A doit recevoir 20 000 ariary de plus que B.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) (80 000 − 20 000) ÷ 2 = 30 000 (part de B) ; part de A = 30 000 + 20 000 = 50 000 ariary
+- `P` Exercice 2 — Vérification (5 points)
+- `P` Vérifie que la somme des deux parts de l'exercice 1 redonne bien 80 000.
+- `P` Vérification
+- `P` Corrigé :
+- `P` a) 30 000 + 50 000 = 80 000, ce qui confirme le résultat.
+- `P` Exercice 1 — Partage inégal à 3 personnes (5 points)
+- `P` Partage 150 000 ariary entre A, B et C, sachant que B reçoit 5 000 ariary de plus que A, et que C reçoit 10 000 ariary de plus que A.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) (150 000 − 5 000 − 10 000) ÷ 3 = 45 000 (part de A) ; B = 45 000 + 5 000 = 50 000 ; C = 45 000 + 10 000 = 55 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Hanta et Vola partagent 50 000 ariary, Hanta recevant 10 000 de plus que Vola. Combien chacune reçoit-elle ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Vola = (50 000 − 10 000) ÷ 2 = 20 000 ; Hanta = 20 000 + 10 000 = 30 000 ariary
+- `P` Total : 20 points
+
+### Séance 65 / 81 — Décomposition de figures irrégulières
+
+- Indicateurs : 42 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 65 / 81
+- `P` Décomposition de figures irrégulières
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Surface décomposante
+- `T3C3` Séance n° :
+- `T3C4` 188 à 195
+- `T4C1` Titre :
+- `T4C2` Décomposition de figures irrégulières
+- `T4C3` Durée :
+- `T4C4` 8 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Décomposer un polygone irrégulier en figures simples pour calculer son aire totale
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du polygone irrégulier, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION25 min
+- `T3C2` Quelle est la formule de l'aire du rectangle ?Quelle est la formule de l'aire du triangle ?
+- `T3C3` R.A. : A = L × l.R.A. : A = (b × h) ÷ 2.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 160 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le champ de Bakoly a une forme irrégulière : ce n'est ni un rectangle, ni un triangle, ni aucune figure simple que l'on connaît. Bakoly veut quand même calculer la surface exacte de son champ pour savoir combien de graines il lui faudra.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Décomposition de figures irrégulières ». Après cette séance, vous serez capables de décomposer un polygone irrégulier en figures simples pour calculer son aire totale.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du champ de Bakoly, un pentagone irrégulier, avec une ligne pointillée qui le sépare en un rectangle et un triangle.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` En quelles figures simples le champ de Bakoly a-t-il été décomposé ?Quelles sont les dimensions du rectangle ?Quelles sont les dimensions du triangle ?Comment calculer l'aire totale du champ à partir de ces deux figures ?
+- `T8C3` R.A. : Un rectangle et un triangle.R.A. : 10 m de longueur et 6 m de largeur.R.A. : Une base de 4 m et une hauteur de 6 m.R.A. : On calcule l'aire de chaque figure séparément, puis on les additionne.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour calculer l'aire d'une figure irrégulière (qui n'est ni un carré, ni un rectangle, ni une autre figure simple connue), on la décompose en traçant des lignes qui la séparent en plusieurs figures simples (rectangles, triangles, carrés...) dont on sait calculer l'aire. On calcule ensuite l'aire de chaque partie séparément, et on additionne toutes ces aires pour obtenir l'aire totale de la figure irrégulière.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Décomposition en carré et triangleUne figure est décomposée en un carré de 8 m de côté et un triangle de base 8 m et de hauteur 5 m. Calcule l'aire totale.RéponseExercice 2 — Décomposition en deux rectanglesUne figure en forme de L est décomposée en un rectangle de 12 m × 5 m et un rectangle de 4 m × 3 m. Calcule l'aire totale.Réponse
+- `T10C3` a) Carré = 8 × 8 = 64 m² ; triangle = (8 × 5) ÷ 2 = 20 m² ; total = 64 + 20 = 84 m² a) 12 × 5 = 60 m² ; 4 × 3 = 12 m² ; total = 60 + 12 = 72 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION55 min
+- `T11C2` Exercice 1 — ProblèmeLe champ de Bakoly (rectangle 10 m × 6 m + triangle base 4 m, hauteur 6 m) doit être ensemencé à raison de 0,2 kg de graines par m². Quelle quantité de graines faut-il ?a) Aire totaleb) Quantité de grainesExercice 2 — ProblèmeUne figure irrégulière est décomposée en un rectangle de 15 m × 8 m et un triangle de base 6 m et de hauteur 8 m. Calcule son aire totale.Réponse
+- `T11C3` a) 60 + 12 = 72 m²b) 72 × 0,2 = 14,4 kg de graines a) Rectangle = 15 × 8 = 120 m² ; triangle = (6 × 8) ÷ 2 = 24 m² ; total = 120 + 24 = 144 m²
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Décomposition de figures irrégulières
+- `P` Champ décomposé en rectangle (10 m × 6 m) et triangle (b=4 m, h=6 m)
+- `P` Propriétés
+- `P` • Une figure irrégulière ne correspond à aucune formule d'aire directe
+- `P` • On la décompose toujours en figures simples dont on connaît déjà la formule
+- `P` Formules
+- `P` Aire totale : A totale = somme des aires des figures simples
+- `P` L'aire d'une figure décomposée est toujours égale à la somme des aires de toutes ses parties, car les parties ne se chevauchent pas et couvrent exactement la figure entière.
+- `P` Exemple
+- `P` Le champ de Bakoly est décomposé en un rectangle (10 m × 6 m) et un triangle (base 4 m, hauteur 6 m). Calcule l'aire totale du champ.
+- `P` Aire du rectangle = 10 × 6 = 60 m².
+- `P` Aire du triangle = (4 × 6) ÷ 2 = 12 m².
+- `P` Aire totale = 60 + 12 = 72 m².
+- `P` Attention : toujours vérifier que les figures simples choisies pour la décomposition couvrent exactement la figure irrégulière, sans se chevaucher et sans laisser d'espace vide — une décomposition mal tracée fausse le calcul de l'aire totale, même si chaque formule est appliquée correctement.
+- `P` EXERCICES
+- `P` Exercice 1 — Décomposition en carré et triangle (5 points)
+- `P` Une figure est décomposée en un carré de 8 m de côté et un triangle de base 8 m et de hauteur 5 m. Calcule l'aire totale.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Carré = 8 × 8 = 64 m² ; triangle = (8 × 5) ÷ 2 = 20 m² ; total = 64 + 20 = 84 m²
+- `P` Exercice 2 — Décomposition en deux rectangles (5 points)
+- `P` Une figure en forme de L est décomposée en un rectangle de 12 m × 5 m et un rectangle de 4 m × 3 m. Calcule l'aire totale.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 12 × 5 = 60 m² ; 4 × 3 = 12 m² ; total = 60 + 12 = 72 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Le champ de Bakoly (rectangle 10 m × 6 m + triangle base 4 m, hauteur 6 m) doit être ensemencé à raison de 0,2 kg de graines par m². Quelle quantité de graines faut-il ?
+- `P` a) Aire totale
+- `P` b) Quantité de graines
+- `P` Corrigé :
+- `P` a) 60 + 12 = 72 m²
+- `P` b) 72 × 0,2 = 14,4 kg de graines
+- `P` Exercice 2 — Problème (5 points)
+- `P` Une figure irrégulière est décomposée en un rectangle de 15 m × 8 m et un triangle de base 6 m et de hauteur 8 m. Calcule son aire totale.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Rectangle = 15 × 8 = 120 m² ; triangle = (6 × 8) ÷ 2 = 24 m² ; total = 120 + 24 = 144 m²
+- `P` Total : 20 points
+
+### Séance 66 / 81 — Le mouvement uniforme — notion et vitesse
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 66 / 81
+- `P` Le mouvement uniforme — notion et vitesse
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Nombres sexagésimaux (mouvement uniforme)
+- `T3C3` Séance n° :
+- `T3C4` 196 à 199
+- `T4C1` Titre :
+- `T4C2` Le mouvement uniforme — notion et vitesse
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Comprendre la notion de mouvement uniforme et calculer une vitesse moyenne
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment convertit-on 2 h 45 min en minutes ?Combien font 150 ÷ 3 ?
+- `T3C3` R.A. : 2 × 60 + 45 = 165 minutes.R.A. : 150 ÷ 3 = 50.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un taxi-brousse parcourt 150 km entre deux villes en 3 heures, en roulant à peu près à la même allure tout le long du trajet. Le chauffeur veut savoir à quelle vitesse moyenne il a roulé.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le mouvement uniforme — notion et vitesse ». Après cette séance, vous serez capables de comprendre cette notion et de calculer une vitesse moyenne.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un schéma représentant le trajet du taxi-brousse : 150 km parcourus en 3 heures.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Qu'est-ce qu'un mouvement uniforme ?Quelle est la distance totale parcourue par le taxi-brousse ?Quel est le temps mis ?Comment calculer la vitesse moyenne ?
+- `T8C3` R.A. : Un mouvement où l'on parcourt toujours la même distance pendant le même temps, c'est-à-dire à vitesse constante.R.A. : 150 km.R.A. : 3 heures.R.A. : On divise la distance parcourue par le temps mis : 150 ÷ 3.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un mouvement est dit uniforme quand la vitesse reste constante tout au long du trajet. La vitesse moyenne se calcule en divisant la distance parcourue par le temps mis à la parcourir : vitesse = distance ÷ temps. Elle s'exprime généralement en kilomètres par heure (km/h).
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Calcul de vitesseUne voiture parcourt 240 km en 4 heures. Calcule sa vitesse moyenne.RéponseExercice 2 — VocabulaireExplique avec tes mots ce qu'est un mouvement uniforme.Réponse libre
+- `T10C3` a) 240 ÷ 4 = 60 km/h a) Un mouvement où la vitesse ne change pas : on parcourt la même distance à chaque heure (ou chaque unité de temps).
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Calcul de vitesseUn cycliste parcourt 320 km en 5 heures. Calcule sa vitesse moyenne.RéponseExercice 2 — ProblèmeLe taxi-brousse parcourt 150 km en 3 heures. Quelle est sa vitesse moyenne ?Réponse
+- `T11C3` a) 320 ÷ 5 = 64 km/h a) 150 ÷ 3 = 50 km/h
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le mouvement uniforme — notion et vitesse
+- `P` Règle
+- `P` Donc, un mouvement est dit uniforme quand la vitesse reste constante tout au long du trajet. La vitesse moyenne se calcule en divisant la distance parcourue par le temps mis à la parcourir : vitesse = distance ÷ temps. Elle s'exprime généralement en kilomètres par heure (km/h).
+- `P` Exemple
+- `P` Un taxi-brousse parcourt 150 km en 3 heures. Quelle est sa vitesse moyenne ?
+- `P` Vitesse = distance ÷ temps
+- `P` Vitesse = 150 ÷ 3
+- `P` Vitesse = 50 km/h
+- `P` Attention : la vitesse moyenne se calcule toujours en divisant la distance TOTALE par le temps TOTAL — jamais en faisant la moyenne de plusieurs vitesses partielles si les distances ou les temps parcourus à chaque vitesse sont différents.
+- `P` EXERCICES
+- `P` Exercice 1 — Calcul de vitesse (5 points)
+- `P` Une voiture parcourt 240 km en 4 heures. Calcule sa vitesse moyenne.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 240 ÷ 4 = 60 km/h
+- `P` Exercice 2 — Vocabulaire (5 points)
+- `P` Explique avec tes mots ce qu'est un mouvement uniforme.
+- `P` Réponse libre
+- `P` Corrigé :
+- `P` a) Un mouvement où la vitesse ne change pas : on parcourt la même distance à chaque heure (ou chaque unité de temps).
+- `P` Exercice 1 — Calcul de vitesse (5 points)
+- `P` Un cycliste parcourt 320 km en 5 heures. Calcule sa vitesse moyenne.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 320 ÷ 5 = 64 km/h
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le taxi-brousse parcourt 150 km en 3 heures. Quelle est sa vitesse moyenne ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 150 ÷ 3 = 50 km/h
+- `P` Total : 20 points
+
+### Séance 67 / 81 — Le mouvement uniforme — résolution de problèmes
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 67 / 81
+- `P` Le mouvement uniforme — résolution de problèmes
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Nombres sexagésimaux (mouvement uniforme)
+- `T3C3` Séance n° :
+- `T3C4` 200 à 203
+- `T4C1` Titre :
+- `T4C2` Le mouvement uniforme — résolution de problèmes
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer une distance ou un temps à partir de la vitesse, en utilisant la formule adaptée
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment calcule-t-on une vitesse moyenne ?Combien font 70 × 4 ?
+- `T3C3` R.A. : Vitesse = distance ÷ temps.R.A. : 70 × 4 = 280.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un camion roule à une vitesse constante de 70 km/h pendant 4 heures. Le chauffeur veut savoir quelle distance il aura parcourue à la fin de son trajet, sans consulter le compteur kilométrique.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le mouvement uniforme — résolution de problèmes ». Après cette séance, vous serez capables de calculer une distance ou un temps à partir de la vitesse.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la formule vitesse = distance ÷ temps écrite au tableau, avec ses deux transformations possibles à côté.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Si vitesse = distance ÷ temps, comment retrouver la distance quand on connaît la vitesse et le temps ?Quelle est la vitesse du camion ? Le temps de trajet ?Quelle distance le camion aura-t-il parcourue ?Et si on connaît la vitesse et la distance, comment retrouver le temps ?
+- `T8C3` R.A. : On multiplie la vitesse par le temps : distance = vitesse × temps.R.A. : 70 km/h, pendant 4 heures.R.A. : 70 × 4 = 280 km.R.A. : On divise la distance par la vitesse : temps = distance ÷ vitesse.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, à partir de la formule de base vitesse = distance ÷ temps, on peut retrouver les deux autres grandeurs : distance = vitesse × temps (quand on connaît la vitesse et le temps), et temps = distance ÷ vitesse (quand on connaît la vitesse et la distance). Il faut toujours identifier dans l'énoncé quelles sont les deux grandeurs connues, pour choisir la bonne formule.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Trouver la distanceUne voiture roule à 90 km/h pendant 3 heures. Quelle distance parcourt-elle ?RéponseExercice 2 — Trouver le tempsUn cycliste roulant à 70 km/h parcourt 210 km. Combien de temps a-t-il roulé ?Réponse
+- `T10C3` a) Distance = 90 × 3 = 270 km a) Temps = 210 ÷ 70 = 3 heures
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Trouver le tempsUn train roulant à 45 km/h parcourt 225 km. Combien de temps a-t-il mis ?RéponseExercice 2 — ProblèmeLe camion roule à 70 km/h pendant 4 heures. Quelle distance parcourt-il ?Réponse
+- `T11C3` a) Temps = 225 ÷ 45 = 5 heures a) Distance = 70 × 4 = 280 km
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le mouvement uniforme — résolution de problèmes
+- `P` Règle
+- `P` Donc, à partir de la formule de base vitesse = distance ÷ temps, on peut retrouver les deux autres grandeurs : distance = vitesse × temps (quand on connaît la vitesse et le temps), et temps = distance ÷ vitesse (quand on connaît la vitesse et la distance). Il faut toujours identifier dans l'énoncé quelles sont les deux grandeurs connues, pour choisir la bonne formule.
+- `P` Exemple
+- `P` Un camion roule à 70 km/h pendant 4 heures. Quelle distance parcourt-il ?
+- `P` Distance = vitesse × temps
+- `P` Distance = 70 × 4
+- `P` Distance = 280 km
+- `P` Attention : bien identifier dans l'énoncé quelles sont les DEUX grandeurs déjà connues (vitesse et temps, ou vitesse et distance, ou distance et temps) avant de choisir la formule — utiliser la mauvaise formule (par exemple diviser au lieu de multiplier) donne un résultat qui n'a pas de sens physique.
+- `P` EXERCICES
+- `P` Exercice 1 — Trouver la distance (5 points)
+- `P` Une voiture roule à 90 km/h pendant 3 heures. Quelle distance parcourt-elle ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Distance = 90 × 3 = 270 km
+- `P` Exercice 2 — Trouver le temps (5 points)
+- `P` Un cycliste roulant à 70 km/h parcourt 210 km. Combien de temps a-t-il roulé ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Temps = 210 ÷ 70 = 3 heures
+- `P` Exercice 1 — Trouver le temps (5 points)
+- `P` Un train roulant à 45 km/h parcourt 225 km. Combien de temps a-t-il mis ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Temps = 225 ÷ 45 = 5 heures
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le camion roule à 70 km/h pendant 4 heures. Quelle distance parcourt-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Distance = 70 × 4 = 280 km
+- `P` Total : 20 points
+
+### Séance 68 / 81 — Notion d'épargne
+
+- Indicateurs : 34 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 68 / 81
+- `P` Notion d'épargne
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Placement d'argent
+- `T3C3` Séance n° :
+- `T3C4` 204 à 207
+- `T4C1` Titre :
+- `T4C2` Notion d'épargne
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Comprendre la notion d'épargne et calculer une épargne mensuelle
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Qu'est-ce qu'une économie dans un budget familial ?Que fait-on généralement de l'argent économisé ?
+- `T3C3` R.A. : L'argent qui reste quand le gain est supérieur à la dépense.R.A. : On peut le garder de côté ou le placer pour qu'il rapporte davantage.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le père de Ravo a économisé 500 000 ariary en plusieurs mois. Il gagne 350 000 ariary par mois et dépense 300 000 ariary. Ravo veut comprendre comment son père a réussi à économiser cette somme petit à petit.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Notion d'épargne ». Après cette séance, vous serez capables de comprendre la notion d'épargne et de calculer une épargne mensuelle.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien deux situations dessinées au tableau : un enfant qui dépense tout son argent de poche immédiatement, un autre qui en garde une partie chaque semaine.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Qu'est-ce qu'épargner ?Pourquoi le père de Ravo a-t-il pu économiser 500 000 ariary ?Pourquoi épargner plutôt que tout dépenser immédiatement ?L'épargne est-elle la même chose que de garder de l'argent caché sans y toucher ?
+- `T8C3` R.A. : Mettre de côté une partie de son argent au lieu de le dépenser immédiatement.R.A. : Parce qu'il a dépensé moins que ce qu'il a gagné, et a mis la différence de côté au fil du temps.R.A. : Pour pouvoir faire face à des dépenses futures importantes (études, maladie, projet) sans devoir emprunter.R.A. : Pas tout à fait : l'épargne est souvent placée pour rapporter un intérêt en plus d'être mise de côté, comme nous le verrons dans les prochaines leçons.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, épargner, c'est mettre de côté une partie de son argent au lieu de le dépenser immédiatement, en dépensant moins que ce que l'on gagne. Cette épargne permet de faire face à des besoins futurs sans devoir emprunter, et peut être placée pour rapporter un intérêt supplémentaire, comme nous le verrons dans les leçons suivantes sur les lieux de placement.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — VocabulaireDéfinis avec tes mots ce qu'est l'épargne.Réponse libreExercice 2 — Calcul d'épargneUne famille gagne 280 000 ariary par mois et dépense 220 000 ariary. Combien épargne-t-elle chaque mois ?Réponse
+- `T10C3` a) L'épargne est la partie de l'argent gagné que l'on met de côté au lieu de la dépenser tout de suite. a) 280 000 − 220 000 = 60 000 ariary par mois
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ProblèmeUne personne épargne 40 000 ariary chaque mois. En combien de mois aura-t-elle économisé 480 000 ariary ?RéponseExercice 2 — ProblèmeLe père de Ravo épargne 50 000 ariary par mois. En combien de mois atteindra-t-il 500 000 ariary ?Réponse
+- `T11C3` a) 480 000 ÷ 40 000 = 12 mois a) 500 000 ÷ 50 000 = 10 mois
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Notion d'épargne
+- `P` Règle
+- `P` Donc, épargner, c'est mettre de côté une partie de son argent au lieu de le dépenser immédiatement, en dépensant moins que ce que l'on gagne. Cette épargne permet de faire face à des besoins futurs sans devoir emprunter, et peut être placée pour rapporter un intérêt supplémentaire, comme nous le verrons dans les leçons suivantes sur les lieux de placement.
+- `P` Exemple
+- `P` Le père de Ravo gagne 350 000 ariary par mois et dépense 300 000 ariary. Combien peut-il épargner chaque mois, et en combien de mois aura-t-il économisé 500 000 ariary ?
+- `P` Épargne mensuelle = gain − dépense = 350 000 − 300 000 = 50 000 ariary.
+- `P` Nombre de mois pour atteindre 500 000 ariary = 500 000 ÷ 50 000 = 10 mois.
+- `P` Attention : l'épargne n'est pas seulement de l'argent « caché » sans but : c'est de l'argent activement mis de côté, souvent dans l'intention de le placer pour qu'il fructifie — cette distinction prépare les leçons suivantes sur les lieux de placement, le capital et l'intérêt.
+- `P` EXERCICES
+- `P` Exercice 1 — Vocabulaire (5 points)
+- `P` Définis avec tes mots ce qu'est l'épargne.
+- `P` Réponse libre
+- `P` Corrigé :
+- `P` a) L'épargne est la partie de l'argent gagné que l'on met de côté au lieu de la dépenser tout de suite.
+- `P` Exercice 2 — Calcul d'épargne (5 points)
+- `P` Une famille gagne 280 000 ariary par mois et dépense 220 000 ariary. Combien épargne-t-elle chaque mois ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 280 000 − 220 000 = 60 000 ariary par mois
+- `P` Exercice 1 — Problème (5 points)
+- `P` Une personne épargne 40 000 ariary chaque mois. En combien de mois aura-t-elle économisé 480 000 ariary ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 480 000 ÷ 40 000 = 12 mois
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le père de Ravo épargne 50 000 ariary par mois. En combien de mois atteindra-t-il 500 000 ariary ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 500 000 ÷ 50 000 = 10 mois
+- `P` Total : 20 points
+
+### Séance 69 / 81 — Les lieux de placement
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 69 / 81
+- `P` Les lieux de placement
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Placement d'argent
+- `T3C3` Séance n° :
+- `T3C4` 208 à 211
+- `T4C1` Titre :
+- `T4C2` Les lieux de placement
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Connaître les différents lieux où l'on peut placer son argent et leurs caractéristiques
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Qu'est-ce qu'épargner ?Pourquoi épargne-t-on ?
+- `T3C3` R.A. : Mettre de côté une partie de son argent au lieu de le dépenser immédiatement.R.A. : Pour faire face à des besoins futurs et faire fructifier son argent.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le père de Ravo a décidé d'épargner ses 500 000 ariary, mais il hésite maintenant entre trois options : la caisse d'épargne de son quartier, une banque, ou des bons du Trésor public. Il veut comprendre la différence entre ces trois lieux de placement.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Les lieux de placement ». Après cette séance, vous serez capables de connaître les différents lieux où l'on peut placer son argent et leurs caractéristiques.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un tableau à trois colonnes affiché au tableau noir : Caisse d'épargne, Banque, Trésor public.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Qu'est-ce qu'une caisse d'épargne ?Qu'est-ce qu'une banque ?Qu'est-ce que le Trésor public (bons du Trésor) ?Quel est le point commun entre ces trois lieux de placement ?
+- `T8C3` R.A. : Un établissement simple, souvent de proximité, où l'on peut déposer et retirer de petites sommes d'argent régulièrement.R.A. : Un établissement financier qui propose des comptes, des prêts, et divers placements, souvent pour des sommes plus importantes.R.A. : Un placement auprès de l'État : on prête de l'argent à l'État en échange d'un intérêt garanti après une durée fixée.R.A. : Ils gardent l'argent en sécurité et versent un intérêt en échange du dépôt.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, il existe plusieurs lieux de placement pour épargner de l'argent : la caisse d'épargne (simple et de proximité, pour de petites sommes), la banque (établissement financier proposant plusieurs services), et le Trésor public, où l'on prête de l'argent à l'État en échange d'un intérêt garanti (bons du Trésor). Chacun a ses propres conditions de dépôt, de retrait et de taux d'intérêt.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — VocabulaireCite les trois lieux de placement vus dans cette leçon.RéponseExercice 2 — CaractéristiqueQu'est-ce qui distingue un bon du Trésor d'un dépôt en caisse d'épargne ?Réponse libre
+- `T10C3` a) La caisse d'épargne, la banque, le Trésor public (bons du Trésor). a) Le bon du Trésor bloque l'argent pendant une durée fixée avec un intérêt garanti, alors que la caisse d'épargne permet des dépôts et retraits plus libres.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ComparaisonUn commerçant veut placer une grosse somme pendant plusieurs années sans y toucher, pour un intérêt garanti. Quel lieu de placement lui conseillerais-tu ?Réponse libre justifiéeExercice 2 — ProblèmeLe père de Ravo veut pouvoir retirer son argent facilement en cas d'urgence. Quel lieu de placement choisirait-il, et pourquoi ?Réponse libre justifiée
+- `T11C3` a) Les bons du Trésor, car ils offrent un intérêt garanti sur une durée fixée, adapté à un placement long sans retrait. a) La caisse d'épargne, car elle permet des dépôts et retraits simples et réguliers, contrairement aux bons du Trésor qui bloquent l'argent.
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Les lieux de placement
+- `P` Règle
+- `P` Donc, il existe plusieurs lieux de placement pour épargner de l'argent : la caisse d'épargne (simple et de proximité, pour de petites sommes), la banque (établissement financier proposant plusieurs services), et le Trésor public, où l'on prête de l'argent à l'État en échange d'un intérêt garanti (bons du Trésor). Chacun a ses propres conditions de dépôt, de retrait et de taux d'intérêt.
+- `P` Exemple
+- `P` Le père de Ravo veut placer 500 000 ariary et pouvoir les retirer facilement en cas de besoin urgent. Quel type de lieu de placement lui conviendrait le mieux ?
+- `P` La caisse d'épargne permet des dépôts et retraits simples et réguliers.
+- `P` Les bons du Trésor bloquent l'argent pendant une durée fixée, moins adapté à un besoin urgent.
+- `P` La caisse d'épargne est donc le choix le plus adapté à sa situation.
+- `P` Attention : chaque lieu de placement a ses propres avantages selon le besoin : rapidité de retrait (caisse d'épargne), diversité de services (banque), ou sécurité et garantie sur le long terme (Trésor public) — il n'y a pas un seul « meilleur » choix, cela dépend de la situation de l'épargnant.
+- `P` EXERCICES
+- `P` Exercice 1 — Vocabulaire (5 points)
+- `P` Cite les trois lieux de placement vus dans cette leçon.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) La caisse d'épargne, la banque, le Trésor public (bons du Trésor).
+- `P` Exercice 2 — Caractéristique (5 points)
+- `P` Qu'est-ce qui distingue un bon du Trésor d'un dépôt en caisse d'épargne ?
+- `P` Réponse libre
+- `P` Corrigé :
+- `P` a) Le bon du Trésor bloque l'argent pendant une durée fixée avec un intérêt garanti, alors que la caisse d'épargne permet des dépôts et retraits plus libres.
+- `P` Exercice 1 — Comparaison (5 points)
+- `P` Un commerçant veut placer une grosse somme pendant plusieurs années sans y toucher, pour un intérêt garanti. Quel lieu de placement lui conseillerais-tu ?
+- `P` Réponse libre justifiée
+- `P` Corrigé :
+- `P` a) Les bons du Trésor, car ils offrent un intérêt garanti sur une durée fixée, adapté à un placement long sans retrait.
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le père de Ravo veut pouvoir retirer son argent facilement en cas d'urgence. Quel lieu de placement choisirait-il, et pourquoi ?
+- `P` Réponse libre justifiée
+- `P` Corrigé :
+- `P` a) La caisse d'épargne, car elle permet des dépôts et retraits simples et réguliers, contrairement aux bons du Trésor qui bloquent l'argent.
+- `P` Total : 20 points
+
+### Séance 70 / 81 — Le capital
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 70 / 81
+- `P` Le capital
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Placement d'argent
+- `T3C3` Séance n° :
+- `T3C4` 212 à 219
+- `T4C1` Titre :
+- `T4C2` Le capital
+- `T4C3` Durée :
+- `T4C4` 8 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Comprendre la notion de capital et calculer un capital final après plusieurs versements
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION20 min
+- `T3C2` Quels sont les trois lieux de placement vus précédemment ?Combien font 500 000 + 50 000 ?
+- `T3C3` R.A. : Caisse d'épargne, banque, Trésor public.R.A. : 500 000 + 50 000 = 550 000.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 120 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Ranaivo a déposé 500 000 ariary à la caisse d'épargne. Chaque année, il y ajoute 100 000 ariary supplémentaires provenant de ses économies. Il veut savoir combien d'argent il aura déposé en tout après 3 ans, avant même de compter les intérêts.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Le capital ». Après cette séance, vous serez capables de comprendre la notion de capital et de calculer un capital final après plusieurs versements.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le tableau des dépôts de Ranaivo : 500 000 (dépôt initial), puis +100 000 chaque année pendant 3 ans.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Qu'appelle-t-on le « capital » dans un placement ?Quel est le capital initial déposé par Ranaivo ?Combien ajoute-t-il chaque année ?Quel sera le capital total après 3 ans de versements supplémentaires ?
+- `T8C3` R.A. : La somme d'argent placée, sur laquelle l'intérêt sera calculé.R.A. : 500 000 ariary.R.A. : 100 000 ariary.R.A. : 500 000 + (100 000 × 3) = 800 000 ariary.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, le capital est la somme d'argent placée dans un lieu d'épargne, qui servira de base au calcul de l'intérêt. Le capital peut être un dépôt unique, ou augmenter au fil du temps si l'épargnant ajoute des versements réguliers. Pour calculer le capital total après plusieurs versements identiques, on additionne le dépôt initial et le produit du versement régulier par le nombre de fois où il a été versé.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Capital après versementsBina dépose 300 000 ariary, puis ajoute 50 000 ariary chaque année pendant 4 ans. Quel est son capital total ?RéponseExercice 2 — Problème inverseAprès 5 ans de versements de 40 000 ariary par an, une personne a un capital total de 400 000 ariary. Quel était son dépôt initial ?Réponse
+- `T10C3` a) 300 000 + (50 000 × 4) = 300 000 + 200 000 = 500 000 ariary a) Versements = 40 000 × 5 = 200 000 ; dépôt initial = 400 000 − 200 000 = 200 000 ariary
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION40 min
+- `T11C2` Exercice 1 — Capital après versementsRasoa dépose 200 000 ariary, puis ajoute 60 000 ariary chaque année pendant 5 ans. Quel est son capital total ?RéponseExercice 2 — ProblèmeRanaivo dépose 500 000 ariary, puis ajoute 100 000 ariary chaque année. Quel sera son capital total après 5 ans de versements ?Réponse
+- `T11C3` a) 200 000 + (60 000 × 5) = 200 000 + 300 000 = 500 000 ariary a) 500 000 + (100 000 × 5) = 500 000 + 500 000 = 1 000 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Le capital
+- `P` Règle
+- `P` Donc, le capital est la somme d'argent placée dans un lieu d'épargne, qui servira de base au calcul de l'intérêt. Le capital peut être un dépôt unique, ou augmenter au fil du temps si l'épargnant ajoute des versements réguliers. Pour calculer le capital total après plusieurs versements identiques, on additionne le dépôt initial et le produit du versement régulier par le nombre de fois où il a été versé.
+- `P` Exemple
+- `P` Ranaivo dépose 500 000 ariary, puis ajoute 100 000 ariary chaque année pendant 3 ans. Quel est son capital total après ces 3 ans ?
+- `P` Versements supplémentaires = 100 000 × 3 = 300 000 ariary.
+- `P` Capital total = dépôt initial + versements supplémentaires.
+- `P` Capital total = 500 000 + 300 000 = 800 000 ariary.
+- `P` Attention : le capital est la somme placée, PAS l'argent gagné en intérêt — bien distinguer les deux notions, car l'intérêt (vu dans la prochaine leçon) se calcule à partir du capital, il ne s'y ajoute pas automatiquement sans calcul.
+- `P` EXERCICES
+- `P` Exercice 1 — Capital après versements (5 points)
+- `P` Bina dépose 300 000 ariary, puis ajoute 50 000 ariary chaque année pendant 4 ans. Quel est son capital total ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 300 000 + (50 000 × 4) = 300 000 + 200 000 = 500 000 ariary
+- `P` Exercice 2 — Problème inverse (5 points)
+- `P` Après 5 ans de versements de 40 000 ariary par an, une personne a un capital total de 400 000 ariary. Quel était son dépôt initial ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Versements = 40 000 × 5 = 200 000 ; dépôt initial = 400 000 − 200 000 = 200 000 ariary
+- `P` Exercice 1 — Capital après versements (5 points)
+- `P` Rasoa dépose 200 000 ariary, puis ajoute 60 000 ariary chaque année pendant 5 ans. Quel est son capital total ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 200 000 + (60 000 × 5) = 200 000 + 300 000 = 500 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Ranaivo dépose 500 000 ariary, puis ajoute 100 000 ariary chaque année. Quel sera son capital total après 5 ans de versements ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 500 000 + (100 000 × 5) = 500 000 + 500 000 = 1 000 000 ariary
+- `P` Total : 20 points
+
+### Séance 71 / 81 — L'intérêt
+
+- Indicateurs : 40 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 71 / 81
+- `P` L'intérêt
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Placement d'argent
+- `T3C3` Séance n° :
+- `T3C4` 220 à 227
+- `T4C1` Titre :
+- `T4C2` L'intérêt
+- `T4C3` Durée :
+- `T4C4` 8 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer l'intérêt simple rapporté par un capital placé à un taux donné
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION20 min
+- `T3C2` Qu'est-ce que le capital dans un placement ?Comment calcule-t-on 8 % de 500 000 ?
+- `T3C3` R.A. : La somme d'argent placée, sur laquelle l'intérêt sera calculé.R.A. : 500 000 × 8 ÷ 100 = 40 000.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 120 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Ranaivo a placé un capital de 500 000 ariary à la caisse d'épargne, qui offre un taux d'intérêt de 8 % par an. Il veut savoir combien d'argent son placement lui rapportera après une année.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « L'intérêt ». Après cette séance, vous serez capables de calculer l'intérêt simple rapporté par un capital placé à un taux donné.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien les données du placement écrites au tableau : Capital = 500 000, Taux = 8 % par an, Durée = 1 an.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quel est le capital placé par Ranaivo ?Quel est le taux d'intérêt annuel ?Comment calculer l'intérêt rapporté après 1 an ?Combien d'intérêt Ranaivo recevra-t-il après 1 an ?
+- `T8C3` R.A. : 500 000 ariary.R.A. : 8 % par an.R.A. : On calcule 8 % de 500 000 : 500 000 × 8 ÷ 100.R.A. : 40 000 ariary.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, l'intérêt est la somme d'argent rapportée par un capital placé, calculée selon un taux annuel exprimé en pourcentage. Pour une durée d'un an, l'intérêt se calcule ainsi : intérêt = capital × taux ÷ 100. Le capital final (ce que l'on récupère) s'obtient en ajoutant l'intérêt au capital de départ : capital final = capital + intérêt.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Calcul d'intérêtUn capital de 800 000 ariary est placé à 6 % par an. Calcule l'intérêt après 1 an.RéponseExercice 2 — Capital finalCalcule le capital final du placement de l'exercice 1.Réponse
+- `T10C3` a) 800 000 × 6 ÷ 100 = 48 000 ariary a) 800 000 + 48 000 = 848 000 ariary
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION40 min
+- `T11C2` Exercice 1 — Calcul d'intérêtUn capital de 1 200 000 ariary est placé à 7 % par an. Calcule l'intérêt après 1 an et le capital final.a) Intérêtb) Capital finalExercice 2 — ProblèmeRanaivo place 500 000 ariary à 8 % par an. Quel sera son intérêt, et son capital final après 1 an ?a) Intérêtb) Capital final
+- `T11C3` a) 1 200 000 × 7 ÷ 100 = 84 000 ariaryb) 1 200 000 + 84 000 = 1 284 000 ariary a) 500 000 × 8 ÷ 100 = 40 000 ariaryb) 500 000 + 40 000 = 540 000 ariary
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` L'intérêt
+- `P` Règle
+- `P` Donc, l'intérêt est la somme d'argent rapportée par un capital placé, calculée selon un taux annuel exprimé en pourcentage. Pour une durée d'un an, l'intérêt se calcule ainsi : intérêt = capital × taux ÷ 100. Le capital final (ce que l'on récupère) s'obtient en ajoutant l'intérêt au capital de départ : capital final = capital + intérêt.
+- `P` Exemple
+- `P` Ranaivo place 500 000 ariary à un taux de 8 % par an. Quel intérêt recevra-t-il après 1 an, et quel sera son capital final ?
+- `P` Intérêt = capital × taux ÷ 100
+- `P` Intérêt = 500 000 × 8 ÷ 100
+- `P` Intérêt = 40 000 ariary
+- `P` Capital final = 500 000 + 40 000 = 540 000 ariary
+- `P` Attention : ne jamais oublier de diviser par 100 après avoir multiplié par le taux (comme pour tout pourcentage), et bien distinguer l'intérêt (l'argent gagné en plus) du capital final (le total récupéré, capital + intérêt) — l'énoncé précise toujours lequel des deux est demandé.
+- `P` EXERCICES
+- `P` Exercice 1 — Calcul d'intérêt (5 points)
+- `P` Un capital de 800 000 ariary est placé à 6 % par an. Calcule l'intérêt après 1 an.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 800 000 × 6 ÷ 100 = 48 000 ariary
+- `P` Exercice 2 — Capital final (5 points)
+- `P` Calcule le capital final du placement de l'exercice 1.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 800 000 + 48 000 = 848 000 ariary
+- `P` Exercice 1 — Calcul d'intérêt (5 points)
+- `P` Un capital de 1 200 000 ariary est placé à 7 % par an. Calcule l'intérêt après 1 an et le capital final.
+- `P` a) Intérêt
+- `P` b) Capital final
+- `P` Corrigé :
+- `P` a) 1 200 000 × 7 ÷ 100 = 84 000 ariary
+- `P` b) 1 200 000 + 84 000 = 1 284 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Ranaivo place 500 000 ariary à 8 % par an. Quel sera son intérêt, et son capital final après 1 an ?
+- `P` a) Intérêt
+- `P` b) Capital final
+- `P` Corrigé :
+- `P` a) 500 000 × 8 ÷ 100 = 40 000 ariary
+- `P` b) 500 000 + 40 000 = 540 000 ariary
+- `P` Total : 20 points
+
+### Séance 72 / 81 — Méthode de calcul d'aire de polygones irréguliers
+
+- Indicateurs : 43 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 72 / 81
+- `P` Méthode de calcul d'aire de polygones irréguliers
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Surface décomposante (approfondissement)
+- `T3C3` Séance n° :
+- `T3C4` 228 à 231
+- `T4C1` Titre :
+- `T4C2` Méthode de calcul d'aire de polygones irréguliers
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Décomposer un polygone irrégulier en plusieurs figures simples, y compris avec plus de deux parties
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Figure du polygone hexagonal, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment calcule-t-on l'aire d'une figure décomposée en deux parties ?Quelle est la formule de l'aire du triangle ?
+- `T3C3` R.A. : On calcule l'aire de chaque partie séparément, puis on additionne.R.A. : A = (b × h) ÷ 2.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le terrain d'Andry a une forme d'hexagone irrégulier, avec une pointe triangulaire de chaque côté d'un rectangle central. Andry veut calculer l'aire totale de son terrain pour savoir combien de plants il pourra y installer.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Méthode de calcul d'aire de polygones irréguliers ». Après cette séance, vous serez capables de décomposer un polygone en plus de deux figures simples si nécessaire.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la figure du terrain d'Andry, un hexagone décomposé en un rectangle central et deux triangles identiques de chaque côté.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` En combien de parties le terrain d'Andry est-il décomposé ?Les deux triangles sont-ils identiques ?Comment calculer l'aire totale quand il y a plus de deux parties ?Peut-on simplifier le calcul si deux parties sont identiques ?
+- `T8C3` R.A. : Trois parties : un rectangle et deux triangles.R.A. : Oui, ils ont les mêmes dimensions (base 5 m, hauteur 8 m).R.A. : On calcule l'aire de chaque partie séparément (même si certaines sont identiques), puis on additionne TOUTES les aires trouvées.R.A. : Oui : au lieu de calculer deux fois la même aire, on peut la multiplier par 2 directement.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, la méthode de décomposition s'applique aussi aux polygones décomposés en plus de deux figures simples : on calcule l'aire de chaque partie séparément, puis on additionne toutes les aires. Quand plusieurs parties sont identiques (comme deux triangles de mêmes dimensions), on peut calculer l'aire d'une seule partie et la multiplier par le nombre de parties identiques, pour aller plus vite.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Trois parties identiquesUne figure est décomposée en un carré de 6 m de côté et trois triangles identiques de base 6 m et de hauteur 4 m. Calcule l'aire totale.RéponseExercice 2 — Parties différentesUne figure est décomposée en un rectangle de 10 m × 6 m, un triangle de base 4 m et hauteur 6 m, et un carré de 3 m de côté. Calcule l'aire totale.Réponse
+- `T10C3` a) Carré = 6 × 6 = 36 m² ; un triangle = (6 × 4) ÷ 2 = 12 m² ; 3 triangles = 36 m² ; total = 36 + 36 = 72 m² a) Rectangle = 60 m² ; triangle = 12 m² ; carré = 9 m² ; total = 60 + 12 + 9 = 81 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — ProblèmeLe terrain d'Andry (rectangle 12 m × 8 m + 2 triangles base 5 m, hauteur 8 m) doit recevoir 1 plant tous les 2 m². Combien de plants peut-il installer ?a) Aire totaleb) Nombre de plantsExercice 2 — ProblèmeUne figure est décomposée en un rectangle de 15 m × 10 m et deux triangles identiques de base 6 m et hauteur 10 m. Calcule l'aire totale.Réponse
+- `T11C3` a) 96 + 40 = 136 m²b) 136 ÷ 2 = 68 plants a) Rectangle = 150 m² ; un triangle = 30 m² ; 2 triangles = 60 m² ; total = 150 + 60 = 210 m²
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Méthode de calcul d'aire de polygones irréguliers
+- `P` Terrain décomposé en rectangle (12 m × 8 m) et 2 triangles identiques (b=5 m, h=8 m)
+- `P` Propriétés
+- `P` • Un polygone peut être décomposé en plus de deux figures simples
+- `P` • Des parties identiques peuvent être calculées une seule fois puis multipliées
+- `P` Formules
+- `P` Aire totale : A totale = somme de toutes les aires (avec × nombre si parties identiques)
+- `P` Comme pour une décomposition en 2 parties, on additionne toutes les aires ; les parties identiques peuvent être regroupées par une multiplication pour simplifier le calcul.
+- `P` Exemple
+- `P` Le terrain d'Andry est décomposé en un rectangle (12 m × 8 m) et deux triangles identiques (base 5 m, hauteur 8 m). Calcule l'aire totale.
+- `P` Aire du rectangle = 12 × 8 = 96 m².
+- `P` Aire d'un triangle = (5 × 8) ÷ 2 = 20 m².
+- `P` Comme il y a 2 triangles identiques : 20 × 2 = 40 m².
+- `P` Aire totale = 96 + 40 = 136 m².
+- `P` Attention : bien vérifier que les parties dites « identiques » ont vraiment les mêmes dimensions avant de simplifier par une multiplication — si les deux triangles avaient des dimensions différentes, il faudrait impérativement calculer chaque aire séparément.
+- `P` EXERCICES
+- `P` Exercice 1 — Trois parties identiques (5 points)
+- `P` Une figure est décomposée en un carré de 6 m de côté et trois triangles identiques de base 6 m et de hauteur 4 m. Calcule l'aire totale.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Carré = 6 × 6 = 36 m² ; un triangle = (6 × 4) ÷ 2 = 12 m² ; 3 triangles = 36 m² ; total = 36 + 36 = 72 m²
+- `P` Exercice 2 — Parties différentes (5 points)
+- `P` Une figure est décomposée en un rectangle de 10 m × 6 m, un triangle de base 4 m et hauteur 6 m, et un carré de 3 m de côté. Calcule l'aire totale.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Rectangle = 60 m² ; triangle = 12 m² ; carré = 9 m² ; total = 60 + 12 + 9 = 81 m²
+- `P` Exercice 1 — Problème (5 points)
+- `P` Le terrain d'Andry (rectangle 12 m × 8 m + 2 triangles base 5 m, hauteur 8 m) doit recevoir 1 plant tous les 2 m². Combien de plants peut-il installer ?
+- `P` a) Aire totale
+- `P` b) Nombre de plants
+- `P` Corrigé :
+- `P` a) 96 + 40 = 136 m²
+- `P` b) 136 ÷ 2 = 68 plants
+- `P` Exercice 2 — Problème (5 points)
+- `P` Une figure est décomposée en un rectangle de 15 m × 10 m et deux triangles identiques de base 6 m et hauteur 10 m. Calcule l'aire totale.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Rectangle = 150 m² ; un triangle = 30 m² ; 2 triangles = 60 m² ; total = 150 + 60 = 210 m²
+- `P` Total : 20 points
+
+### Séance 73 / 81 — Problèmes d'aire de polygones irréguliers
+
+- Indicateurs : 39 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 73 / 81
+- `P` Problèmes d'aire de polygones irréguliers
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Surface décomposante (approfondissement)
+- `T3C3` Séance n° :
+- `T3C4` 232 à 235
+- `T4C1` Titre :
+- `T4C2` Problèmes d'aire de polygones irréguliers
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Résoudre des problèmes concrets combinant décomposition de figures et calculs pratiques
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment calcule-t-on l'aire d'un polygone décomposé en plusieurs parties ?Combien font 136 ÷ 2 ?
+- `T3C3` R.A. : On calcule l'aire de chaque partie séparément, puis on additionne toutes les aires.R.A. : 136 ÷ 2 = 68.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le terrain d'Andry (136 m², décomposé en rectangle et deux triangles) doit être entièrement recouvert de gazon. Le gazon coûte 2 500 ariary le mètre carré. Andry veut connaître le coût total, mais aussi combien il devra payer si une partie du terrain (un triangle) reste en terre battue pour un poulailler.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Problèmes d'aire de polygones irréguliers ». Après cette séance, vous serez capables de résoudre des problèmes concrets combinant décomposition de figures et calculs pratiques.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le terrain d'Andry, avec la zone du poulailler (un triangle) marquée différemment sur la figure.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle est l'aire totale du terrain d'Andry ?Quelle est l'aire d'un seul triangle (le poulailler) ?Comment calculer l'aire à gazonner (le terrain SANS le poulailler) ?Comment calculer le coût du gazon pour cette surface ?
+- `T8C3` R.A. : 136 m² (déjà calculé précédemment).R.A. : 20 m².R.A. : On soustrait l'aire du poulailler de l'aire totale : 136 − 20.R.A. : On multiplie l'aire à gazonner par le prix au mètre carré.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour résoudre un problème combinant décomposition et coût, on calcule d'abord l'aire totale (ou l'aire de la partie qui nous intéresse) par décomposition, en additionnant ou en soustrayant les parties selon ce que demande l'énoncé. On multiplie ensuite cette aire par le prix ou la quantité par mètre carré pour obtenir le résultat final (coût, quantité de matériau, nombre d'éléments...).
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Aire restanteUn terrain de 150 m² (décomposé en plusieurs figures) a un carré de 25 m² réservé à un puits. Quelle est l'aire restante utilisable ?RéponseExercice 2 — CoûtL'aire restante de l'exercice 1 (125 m²) doit être carrelée à 8 000 ariary le m². Quel est le coût total ?Réponse
+- `T10C3` a) 150 − 25 = 125 m² a) 125 × 8 000 = 1 000 000 ariary
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Problème completLe terrain d'Andry (136 m²) doit être gazonné sauf le poulailler (20 m²), avec un gazon à 2 500 ariary/m². Calcule le coût total du gazon.a) Aire à gazonnerb) Coût totalExercice 2 — ProblèmeUn terrain de 210 m² (rectangle + 2 triangles) a une mare de 30 m² non cultivable. Le reste est cultivé en riz avec un rendement de 3 kg/m². Quelle est la récolte totale ?a) Aire cultivableb) Récolte totale
+- `T11C3` a) 136 − 20 = 116 m²b) 116 × 2 500 = 290 000 ariary a) 210 − 30 = 180 m²b) 180 × 3 = 540 kg de riz
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Problèmes d'aire de polygones irréguliers
+- `P` Règle
+- `P` Donc, pour résoudre un problème combinant décomposition et coût, on calcule d'abord l'aire totale (ou l'aire de la partie qui nous intéresse) par décomposition, en additionnant ou en soustrayant les parties selon ce que demande l'énoncé. On multiplie ensuite cette aire par le prix ou la quantité par mètre carré pour obtenir le résultat final (coût, quantité de matériau, nombre d'éléments...).
+- `P` Exemple
+- `P` Le terrain d'Andry (136 m²) doit être gazonné, sauf un triangle de 20 m² réservé au poulailler. Le gazon coûte 2 500 ariary/m². Quel est le coût total du gazon ?
+- `P` Aire à gazonner = aire totale − aire du poulailler
+- `P` Aire à gazonner = 136 − 20 = 116 m²
+- `P` Coût total = 116 × 2 500 = 290 000 ariary
+- `P` Attention : bien identifier si le problème demande d'ADDITIONNER des parties (pour trouver une aire totale) ou de SOUSTRAIRE une partie (pour trouver une aire restante après avoir retiré une zone) — les deux opérations utilisent les mêmes aires décomposées, mais donnent des résultats très différents.
+- `P` EXERCICES
+- `P` Exercice 1 — Aire restante (5 points)
+- `P` Un terrain de 150 m² (décomposé en plusieurs figures) a un carré de 25 m² réservé à un puits. Quelle est l'aire restante utilisable ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 150 − 25 = 125 m²
+- `P` Exercice 2 — Coût (5 points)
+- `P` L'aire restante de l'exercice 1 (125 m²) doit être carrelée à 8 000 ariary le m². Quel est le coût total ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 125 × 8 000 = 1 000 000 ariary
+- `P` Exercice 1 — Problème complet (5 points)
+- `P` Le terrain d'Andry (136 m²) doit être gazonné sauf le poulailler (20 m²), avec un gazon à 2 500 ariary/m². Calcule le coût total du gazon.
+- `P` a) Aire à gazonner
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) 136 − 20 = 116 m²
+- `P` b) 116 × 2 500 = 290 000 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Un terrain de 210 m² (rectangle + 2 triangles) a une mare de 30 m² non cultivable. Le reste est cultivé en riz avec un rendement de 3 kg/m². Quelle est la récolte totale ?
+- `P` a) Aire cultivable
+- `P` b) Récolte totale
+- `P` Corrigé :
+- `P` a) 210 − 30 = 180 m²
+- `P` b) 180 × 3 = 540 kg de riz
+- `P` Total : 20 points
+
+### Séance 74 / 81 — Correspondance entre unités de volume et de capacité — approfondissement
+
+- Indicateurs : 37 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 74 / 81
+- `P` Correspondance entre unités de volume et de capacité — approfondissement
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures de volume (révision)
+- `T3C3` Séance n° :
+- `T3C4` 236
+- `T4C1` Titre :
+- `T4C2` Correspondance entre unités de volume et de capacité — approfondissement
+- `T4C3` Durée :
+- `T5C1` Objectif spécifique :
+- `T5C2` Consolider la conversion entre volume et capacité avec des cas variés
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la correspondance entre dm³ et litre ?Quelle est la correspondance entre cm³ et mL ?
+- `T3C3` R.A. : 1 dm³ = 1 litre.R.A. : 1 cm³ = 1 mL.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un livreur d'eau doit remplir plusieurs bidons de tailles différentes : l'un a un volume de 6 dm³, un autre 4 500 cm³, et un dernier 0,25 m³. Il doit indiquer sur chaque bidon sa contenance en litres pour ses clients.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre à approfondir : « Correspondance entre unités de volume et de capacité ». Après cette séance, vous serez capables de consolider cette conversion avec des cas variés, y compris à partir du m³.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien les trois bidons du livreur avec leurs volumes indiqués : 6 dm³, 4 500 cm³, 0,25 m³.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien de litres contient le bidon de 6 dm³ ?Combien de litres contient le bidon de 4 500 cm³ ?Combien de litres contient le bidon de 0,25 m³ ?Quelle démarche a-t-on suivie à chaque fois ?
+- `T8C3` R.A. : 6 litres (1 dm³ = 1 l).R.A. : 4 500 cm³ = 4,5 dm³ = 4,5 litres.R.A. : 0,25 m³ = 250 dm³ = 250 litres (1 m³ = 1 000 dm³).R.A. : On convertit d'abord le volume en dm³, puis on lit directement le nombre de litres.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour convertir n'importe quel volume en litres, quelle que soit l'unité de départ (m³, dm³ ou cm³), on le convertit d'abord en dm³ en utilisant les tableaux habituels (×1000 entre m³ et dm³, ÷1000 entre cm³ et dm³), puis on lit directement le résultat en litres, car 1 dm³ = 1 litre exactement.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Conversions variéesConvertis en litres.a) 3,2 dm³b) 850 cm³Exercice 2 — Depuis le m³Convertis 0,008 m³ en litres.Réponse
+- `T10C3` a) 3,2 dm³ = 3,2 litresb) 850 cm³ = 0,85 litre a) 0,008 m³ = 8 dm³ = 8 litres
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Conversion depuis le m³Convertis 1,5 m³ en litres.RéponseExercice 2 — ProblèmeLe livreur a trois bidons de 6 dm³, 4 500 cm³ et 0,25 m³. Range-les du plus petit au plus grand, en litres.Réponse
+- `T11C3` a) 1,5 m³ = 1 500 dm³ = 1 500 litres a) 4,5 l (4 500 cm³) < 6 l (6 dm³) < 250 l (0,25 m³)
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Correspondance entre unités de volume et de capacité — approfondissement
+- `P` Règle
+- `P` Donc, pour convertir n'importe quel volume en litres, quelle que soit l'unité de départ (m³, dm³ ou cm³), on le convertit d'abord en dm³ en utilisant les tableaux habituels (×1000 entre m³ et dm³, ÷1000 entre cm³ et dm³), puis on lit directement le résultat en litres, car 1 dm³ = 1 litre exactement.
+- `P` Exemple
+- `P` Convertis en litres : 6 dm³, 4 500 cm³, et 0,25 m³.
+- `P` 6 dm³ = 6 litres (conversion directe).
+- `P` 4 500 cm³ = 4 500 ÷ 1 000 = 4,5 dm³ = 4,5 litres.
+- `P` 0,25 m³ = 0,25 × 1 000 = 250 dm³ = 250 litres.
+- `P` Attention : toujours ramener toutes les mesures à la même unité (le dm³, ou directement le litre) avant de les comparer ou de les classer — comparer des nombres exprimés dans des unités différentes sans conversion préalable est une erreur fréquente.
+- `P` EXERCICES
+- `P` Exercice 1 — Conversions variées (5 points)
+- `P` Convertis en litres.
+- `P` a) 3,2 dm³
+- `P` b) 850 cm³
+- `P` Corrigé :
+- `P` a) 3,2 dm³ = 3,2 litres
+- `P` b) 850 cm³ = 0,85 litre
+- `P` Exercice 2 — Depuis le m³ (5 points)
+- `P` Convertis 0,008 m³ en litres.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 0,008 m³ = 8 dm³ = 8 litres
+- `P` Exercice 1 — Conversion depuis le m³ (5 points)
+- `P` Convertis 1,5 m³ en litres.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 1,5 m³ = 1 500 dm³ = 1 500 litres
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le livreur a trois bidons de 6 dm³, 4 500 cm³ et 0,25 m³. Range-les du plus petit au plus grand, en litres.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 4,5 l (4 500 cm³) < 6 l (6 dm³) < 250 l (0,25 m³)
+- `P` Total : 20 points
+
+### Séance 75 / 81 — Vitesse moyenne et unités de vitesse
+
+- Indicateurs : 35 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 75 / 81
+- `P` Vitesse moyenne et unités de vitesse
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Nombres sexagésimaux (mouvement uniforme, suite)
+- `T3C3` Séance n° :
+- `T3C4` 237 à 240
+- `T4C1` Titre :
+- `T4C2` Vitesse moyenne et unités de vitesse
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Convertir une vitesse entre km/h et m/s
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment calcule-t-on une vitesse moyenne ?Combien font 72 ÷ 3,6 ?
+- `T3C3` R.A. : Vitesse = distance ÷ temps.R.A. : 72 ÷ 3,6 = 20.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un panneau routier indique qu'une voiture roule à 72 km/h. Un élève veut savoir à quelle vitesse cela correspond en mètres par seconde (m/s), l'unité utilisée en sciences physiques.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Vitesse moyenne et unités de vitesse ». Après cette séance, vous serez capables de convertir une vitesse entre km/h et m/s.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien l'écriture « 72 km/h » au tableau, transformée étape par étape en m/s.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Que signifie « km/h » ?Que signifie « m/s » ?Combien de mètres y a-t-il dans 1 km ? Combien de secondes dans 1 heure ?Pour convertir km/h en m/s, par quel nombre divise-t-on (grâce à un raccourci) ?
+- `T8C3` R.A. : Kilomètres par heure : la distance parcourue en kilomètres pendant une heure.R.A. : Mètres par seconde : la distance parcourue en mètres pendant une seconde.R.A. : 1 km = 1 000 m ; 1 heure = 3 600 secondes.R.A. : On divise par 3,6 (car 1 000 ÷ 3 600 = 0,2778, et diviser par 3,6 revient au même résultat par un raccourci de calcul).
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour convertir une vitesse de km/h en m/s, on divise par 3,6. Pour convertir une vitesse de m/s en km/h, on multiplie par 3,6 (c'est l'opération inverse). Ce nombre 3,6 vient du fait qu'il y a 1 000 m dans 1 km et 3 600 s dans 1 heure : 3 600 ÷ 1 000 = 3,6.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — km/h vers m/sConvertis 36 km/h en m/s.RéponseExercice 2 — m/s vers km/hConvertis 20 m/s en km/h.Réponse
+- `T10C3` a) 36 ÷ 3,6 = 10 m/s a) 20 × 3,6 = 72 km/h
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — m/s vers km/hUn coureur court à 15 m/s. Convertis cette vitesse en km/h.RéponseExercice 2 — ProblèmeLe panneau routier indique 72 km/h. Convertis cette vitesse en m/s.Réponse
+- `T11C3` a) 15 × 3,6 = 54 km/h a) 72 ÷ 3,6 = 20 m/s
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Vitesse moyenne et unités de vitesse
+- `P` Règle
+- `P` Donc, pour convertir une vitesse de km/h en m/s, on divise par 3,6. Pour convertir une vitesse de m/s en km/h, on multiplie par 3,6 (c'est l'opération inverse). Ce nombre 3,6 vient du fait qu'il y a 1 000 m dans 1 km et 3 600 s dans 1 heure : 3 600 ÷ 1 000 = 3,6.
+- `P` Exemple
+- `P` Une voiture roule à 72 km/h. Quelle est sa vitesse en m/s ?
+- `P` Vitesse en m/s = vitesse en km/h ÷ 3,6
+- `P` Vitesse en m/s = 72 ÷ 3,6
+- `P` Vitesse en m/s = 20 m/s
+- `P` Attention : bien retenir le sens de l'opération : km/h VERS m/s → on DIVISE par 3,6 (la vitesse en m/s est un nombre plus petit) ; m/s VERS km/h → on MULTIPLIE par 3,6 (la vitesse en km/h est un nombre plus grand) — confondre les deux sens est l'erreur la plus fréquente.
+- `P` EXERCICES
+- `P` Exercice 1 — km/h vers m/s (5 points)
+- `P` Convertis 36 km/h en m/s.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 36 ÷ 3,6 = 10 m/s
+- `P` Exercice 2 — m/s vers km/h (5 points)
+- `P` Convertis 20 m/s en km/h.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 20 × 3,6 = 72 km/h
+- `P` Exercice 1 — m/s vers km/h (5 points)
+- `P` Un coureur court à 15 m/s. Convertis cette vitesse en km/h.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 15 × 3,6 = 54 km/h
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le panneau routier indique 72 km/h. Convertis cette vitesse en m/s.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 72 ÷ 3,6 = 20 m/s
+- `P` Total : 20 points
+
+### Séance 76 / 81 — Durée de placement
+
+- Indicateurs : 36 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 76 / 81
+- `P` Durée de placement
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Placement d'argent (suite)
+- `T3C3` Séance n° :
+- `T3C4` 241 à 246
+- `T4C1` Titre :
+- `T4C2` Durée de placement
+- `T4C3` Durée :
+- `T4C4` 6 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer la durée nécessaire pour qu'un capital placé rapporte un intérêt donné
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION20 min
+- `T3C2` Comment calcule-t-on l'intérêt d'un placement sur 1 an ?Combien font 96 000 × 100 ?
+- `T3C3` R.A. : Intérêt = capital × taux ÷ 100.R.A. : 96 000 × 100 = 9 600 000.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 120 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Tiana a placé 600 000 ariary à un taux de 8 % par an. Elle a reçu au total 96 000 ariary d'intérêt. Elle a oublié combien de temps son argent est resté placé, et veut le retrouver par le calcul.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Durée de placement ». Après cette séance, vous serez capables de calculer la durée nécessaire pour qu'un capital placé rapporte un intérêt donné.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la formule intérêt = capital × taux × durée ÷ 100 écrite au tableau, avec la durée isolée d'un côté.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelles sont les données connues dans le problème de Tiana ?Que cherche-t-on ?Si intérêt = capital × taux × durée ÷ 100, comment isoler la durée ?Quelle est la durée du placement de Tiana ?
+- `T8C3` R.A. : Le capital (600 000), le taux (8 %), et l'intérêt reçu (96 000).R.A. : La durée du placement, en années.R.A. : Durée = (intérêt × 100) ÷ (capital × taux).R.A. : (96 000 × 100) ÷ (600 000 × 8) = 2 ans.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, quand on connaît le capital, le taux et l'intérêt total reçu, on peut retrouver la durée du placement en utilisant la formule inversée : durée = (intérêt × 100) ÷ (capital × taux). Cette formule vient directement de la formule de base de l'intérêt, en isolant la durée.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Trouver la duréeUn capital de 400 000 ariary placé à 6 % par an a rapporté 48 000 ariary d'intérêt. Quelle est la durée du placement ?RéponseExercice 2 — VérificationVérifie le résultat de l'exercice 1 en recalculant l'intérêt avec la durée trouvée.Vérification
+- `T10C3` a) Durée = (48 000 × 100) ÷ (400 000 × 6) = 4 800 000 ÷ 2 400 000 = 2 ans a) Intérêt = 400 000 × 6 × 2 ÷ 100 = 48 000 ariary, ce qui confirme le résultat.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION40 min
+- `T11C2` Exercice 1 — Trouver la duréeUn capital de 900 000 ariary placé à 5 % par an a rapporté 135 000 ariary d'intérêt. Quelle est la durée du placement ?RéponseExercice 2 — ProblèmeTiana a placé 600 000 ariary à 8 % par an et a reçu 96 000 ariary d'intérêt. Quelle est la durée du placement ?Réponse
+- `T11C3` a) Durée = (135 000 × 100) ÷ (900 000 × 5) = 13 500 000 ÷ 4 500 000 = 3 ans a) Durée = (96 000 × 100) ÷ (600 000 × 8) = 2 ans
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Durée de placement
+- `P` Règle
+- `P` Donc, quand on connaît le capital, le taux et l'intérêt total reçu, on peut retrouver la durée du placement en utilisant la formule inversée : durée = (intérêt × 100) ÷ (capital × taux). Cette formule vient directement de la formule de base de l'intérêt, en isolant la durée.
+- `P` Exemple
+- `P` Tiana a placé 600 000 ariary à 8 % par an et a reçu 96 000 ariary d'intérêt. Quelle est la durée du placement ?
+- `P` Durée = (intérêt × 100) ÷ (capital × taux)
+- `P` Durée = (96 000 × 100) ÷ (600 000 × 8)
+- `P` Durée = 9 600 000 ÷ 4 800 000
+- `P` Durée = 2 ans
+- `P` Attention : bien multiplier l'intérêt par 100 AVANT de diviser par le produit du capital et du taux — inverser l'ordre des opérations ou oublier ce facteur 100 donne une durée complètement fausse.
+- `P` EXERCICES
+- `P` Exercice 1 — Trouver la durée (5 points)
+- `P` Un capital de 400 000 ariary placé à 6 % par an a rapporté 48 000 ariary d'intérêt. Quelle est la durée du placement ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Durée = (48 000 × 100) ÷ (400 000 × 6) = 4 800 000 ÷ 2 400 000 = 2 ans
+- `P` Exercice 2 — Vérification (5 points)
+- `P` Vérifie le résultat de l'exercice 1 en recalculant l'intérêt avec la durée trouvée.
+- `P` Vérification
+- `P` Corrigé :
+- `P` a) Intérêt = 400 000 × 6 × 2 ÷ 100 = 48 000 ariary, ce qui confirme le résultat.
+- `P` Exercice 1 — Trouver la durée (5 points)
+- `P` Un capital de 900 000 ariary placé à 5 % par an a rapporté 135 000 ariary d'intérêt. Quelle est la durée du placement ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Durée = (135 000 × 100) ÷ (900 000 × 5) = 13 500 000 ÷ 4 500 000 = 3 ans
+- `P` Exercice 2 — Problème (5 points)
+- `P` Tiana a placé 600 000 ariary à 8 % par an et a reçu 96 000 ariary d'intérêt. Quelle est la durée du placement ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Durée = (96 000 × 100) ÷ (600 000 × 8) = 2 ans
+- `P` Total : 20 points
+
+### Séance 77 / 81 — Taux de placement
+
+- Indicateurs : 36 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 77 / 81
+- `P` Taux de placement
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Arithmétique
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Placement d'argent (suite)
+- `T3C3` Séance n° :
+- `T3C4` 247 à 252
+- `T4C1` Titre :
+- `T4C2` Taux de placement
+- `T4C3` Durée :
+- `T4C4` 6 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer le taux d'intérêt d'un placement à partir du capital, de la durée et de l'intérêt reçu
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION20 min
+- `T3C2` Comment calcule-t-on la durée d'un placement ?Combien font 60 000 × 100 ?
+- `T3C3` R.A. : Durée = (intérêt × 100) ÷ (capital × taux).R.A. : 60 000 × 100 = 6 000 000.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 120 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Bako a placé 500 000 ariary pendant 2 ans et a reçu 60 000 ariary d'intérêt au total. Il a oublié le taux d'intérêt annuel de son placement, et veut le retrouver par le calcul.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Taux de placement ». Après cette séance, vous serez capables de calculer le taux d'intérêt d'un placement à partir du capital, de la durée et de l'intérêt reçu.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien la formule intérêt = capital × taux × durée ÷ 100 écrite au tableau, avec le taux isolé d'un côté.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelles sont les données connues dans le problème de Bako ?Que cherche-t-on ?Si intérêt = capital × taux × durée ÷ 100, comment isoler le taux ?Quel est le taux du placement de Bako ?
+- `T8C3` R.A. : Le capital (500 000), la durée (2 ans), et l'intérêt reçu (60 000).R.A. : Le taux d'intérêt annuel, en pourcentage.R.A. : Taux = (intérêt × 100) ÷ (capital × durée).R.A. : (60 000 × 100) ÷ (500 000 × 2) = 6 %.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, quand on connaît le capital, la durée et l'intérêt total reçu, on peut retrouver le taux d'intérêt annuel en utilisant la formule inversée : taux = (intérêt × 100) ÷ (capital × durée). Comme pour la durée, cette formule vient de la formule de base de l'intérêt, en isolant cette fois le taux.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Trouver le tauxUn capital de 800 000 ariary placé pendant 3 ans a rapporté 144 000 ariary d'intérêt. Quel est le taux annuel ?RéponseExercice 2 — VérificationVérifie le résultat de l'exercice 1 en recalculant l'intérêt avec le taux trouvé.Vérification
+- `T10C3` a) Taux = (144 000 × 100) ÷ (800 000 × 3) = 14 400 000 ÷ 2 400 000 = 6 % a) Intérêt = 800 000 × 6 × 3 ÷ 100 = 144 000 ariary, ce qui confirme le résultat.
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION40 min
+- `T11C2` Exercice 1 — Trouver le tauxUn capital de 1 000 000 ariary placé pendant 2 ans a rapporté 140 000 ariary d'intérêt. Quel est le taux annuel ?RéponseExercice 2 — ProblèmeBako a placé 500 000 ariary pendant 2 ans et a reçu 60 000 ariary d'intérêt. Quel est le taux annuel de son placement ?Réponse
+- `T11C3` a) Taux = (140 000 × 100) ÷ (1 000 000 × 2) = 14 000 000 ÷ 2 000 000 = 7 % a) Taux = (60 000 × 100) ÷ (500 000 × 2) = 6 %
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Taux de placement
+- `P` Règle
+- `P` Donc, quand on connaît le capital, la durée et l'intérêt total reçu, on peut retrouver le taux d'intérêt annuel en utilisant la formule inversée : taux = (intérêt × 100) ÷ (capital × durée). Comme pour la durée, cette formule vient de la formule de base de l'intérêt, en isolant cette fois le taux.
+- `P` Exemple
+- `P` Bako a placé 500 000 ariary pendant 2 ans et a reçu 60 000 ariary d'intérêt. Quel est le taux annuel du placement ?
+- `P` Taux = (intérêt × 100) ÷ (capital × durée)
+- `P` Taux = (60 000 × 100) ÷ (500 000 × 2)
+- `P` Taux = 6 000 000 ÷ 1 000 000
+- `P` Taux = 6 %
+- `P` Attention : les trois formules (intérêt, durée, taux) viennent toutes de la même relation de base : intérêt = capital × taux × durée ÷ 100 — bien identifier dans l'énoncé quelles sont les trois données connues et laquelle est demandée avant de choisir la bonne version de la formule.
+- `P` EXERCICES
+- `P` Exercice 1 — Trouver le taux (5 points)
+- `P` Un capital de 800 000 ariary placé pendant 3 ans a rapporté 144 000 ariary d'intérêt. Quel est le taux annuel ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Taux = (144 000 × 100) ÷ (800 000 × 3) = 14 400 000 ÷ 2 400 000 = 6 %
+- `P` Exercice 2 — Vérification (5 points)
+- `P` Vérifie le résultat de l'exercice 1 en recalculant l'intérêt avec le taux trouvé.
+- `P` Vérification
+- `P` Corrigé :
+- `P` a) Intérêt = 800 000 × 6 × 3 ÷ 100 = 144 000 ariary, ce qui confirme le résultat.
+- `P` Exercice 1 — Trouver le taux (5 points)
+- `P` Un capital de 1 000 000 ariary placé pendant 2 ans a rapporté 140 000 ariary d'intérêt. Quel est le taux annuel ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Taux = (140 000 × 100) ÷ (1 000 000 × 2) = 14 000 000 ÷ 2 000 000 = 7 %
+- `P` Exercice 2 — Problème (5 points)
+- `P` Bako a placé 500 000 ariary pendant 2 ans et a reçu 60 000 ariary d'intérêt. Quel est le taux annuel de son placement ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Taux = (60 000 × 100) ÷ (500 000 × 2) = 6 %
+- `P` Total : 20 points
+
+### Séance 78 / 81 — Révision — calcul d'aire de polygones irréguliers
+
+- Indicateurs : 37 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 78 / 81
+- `P` Révision — calcul d'aire de polygones irréguliers
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Géométrie
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Surface décomposante (révision)
+- `T3C3` Séance n° :
+- `T3C4` 253 à 256
+- `T4C1` Titre :
+- `T4C2` Révision — calcul d'aire de polygones irréguliers
+- `T4C3` Durée :
+- `T4C4` 4 séances de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Consolider la méthode de décomposition d'un polygone irrégulier en fin d'année
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION10 min
+- `T3C2` Comment calcule-t-on l'aire d'un polygone décomposé en plusieurs figures ?Que fait-on quand deux parties sont identiques ?
+- `T3C3` R.A. : On calcule l'aire de chaque partie séparément, puis on additionne toutes les aires.R.A. : On calcule l'aire d'une seule partie et on la multiplie par le nombre de parties identiques.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 60 min
+- `T5C1` 1. Mise en situation
+- `T5C2` En fin d'année, la classe de 7e révise tout ce qu'elle a appris sur les polygones irréguliers. Le maître propose un terrain décomposé en un rectangle de 14 m × 7 m et un triangle de base 6 m et de hauteur 7 m, pour vérifier que tout le monde maîtrise la méthode.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons réviser : « Calcul d'aire de polygones irréguliers ». Après cette séance, vous serez capables de consolider cette méthode avant la fin de l'année scolaire.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le terrain proposé par le maître, décomposé en un rectangle et un triangle, dessiné au tableau.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Quelle est la première étape pour calculer l'aire de ce polygone ?Comment calcule-t-on l'aire du rectangle (14 m × 7 m) ?Comment calcule-t-on l'aire du triangle (base 6 m, hauteur 7 m) ?Comment obtient-on l'aire totale du terrain ?
+- `T8C3` R.A. : Identifier les figures simples qui composent la décomposition (ici un rectangle et un triangle).R.A. : A = 14 × 7 = 98 m².R.A. : A = (6 × 7) ÷ 2 = 21 m².R.A. : On additionne : 98 + 21 = 119 m².
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, la méthode de décomposition d'un polygone irrégulier reste toujours la même, quelle que soit la complexité de la figure : on identifie les figures simples qui la composent, on calcule l'aire de chacune avec la formule adaptée, puis on additionne (ou on soustrait, selon le problème) toutes les aires trouvées pour obtenir le résultat final.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Révision carré et triangleUne figure est décomposée en un carré de 5 m de côté et un triangle de base 5 m et de hauteur 3 m. Calcule l'aire totale.RéponseExercice 2 — Révision deux rectanglesUne figure en L est décomposée en un rectangle de 9 m × 6 m et un rectangle de 3 m × 4 m. Calcule l'aire totale.Réponse
+- `T10C3` a) Carré = 5 × 5 = 25 m² ; triangle = (5 × 3) ÷ 2 = 7,5 m² ; total = 25 + 7,5 = 32,5 m² a) 9 × 6 = 54 m² ; 3 × 4 = 12 m² ; total = 54 + 12 = 66 m²
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION20 min
+- `T11C2` Exercice 1 — Problème de révisionLe terrain du maître (rectangle 14 m × 7 m + triangle base 6 m, hauteur 7 m) doit être clôturé avec un grillage à 1 200 ariary le mètre carré protégé. Quel est le coût total pour protéger toute la surface ?a) Aire totaleb) Coût totalExercice 2 — ProblèmeUne figure est décomposée en un carré de 5 m de côté et un triangle de base 5 m et de hauteur 3 m. Quelle est son aire totale ?Réponse
+- `T11C3` a) 98 + 21 = 119 m²b) 119 × 1 200 = 142 800 ariary a) 25 + 7,5 = 32,5 m²
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Révision — calcul d'aire de polygones irréguliers
+- `P` Règle
+- `P` Donc, la méthode de décomposition d'un polygone irrégulier reste toujours la même, quelle que soit la complexité de la figure : on identifie les figures simples qui la composent, on calcule l'aire de chacune avec la formule adaptée, puis on additionne (ou on soustrait, selon le problème) toutes les aires trouvées pour obtenir le résultat final.
+- `P` Exemple
+- `P` Le terrain proposé par le maître est décomposé en un rectangle (14 m × 7 m) et un triangle (base 6 m, hauteur 7 m). Calcule son aire totale.
+- `P` Aire du rectangle = 14 × 7 = 98 m².
+- `P` Aire du triangle = (6 × 7) ÷ 2 = 21 m².
+- `P` Aire totale = 98 + 21 = 119 m².
+- `P` Attention : en cette fin d'année, l'erreur la plus fréquente reste d'oublier de diviser par 2 dans la formule de l'aire du triangle, ou d'additionner une dimension au lieu d'une aire déjà calculée — toujours vérifier que chaque terme additionné est bien une aire (en m², cm²...), jamais une simple longueur.
+- `P` EXERCICES
+- `P` Exercice 1 — Révision carré et triangle (5 points)
+- `P` Une figure est décomposée en un carré de 5 m de côté et un triangle de base 5 m et de hauteur 3 m. Calcule l'aire totale.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Carré = 5 × 5 = 25 m² ; triangle = (5 × 3) ÷ 2 = 7,5 m² ; total = 25 + 7,5 = 32,5 m²
+- `P` Exercice 2 — Révision deux rectangles (5 points)
+- `P` Une figure en L est décomposée en un rectangle de 9 m × 6 m et un rectangle de 3 m × 4 m. Calcule l'aire totale.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 9 × 6 = 54 m² ; 3 × 4 = 12 m² ; total = 54 + 12 = 66 m²
+- `P` Exercice 1 — Problème de révision (5 points)
+- `P` Le terrain du maître (rectangle 14 m × 7 m + triangle base 6 m, hauteur 7 m) doit être clôturé avec un grillage à 1 200 ariary le mètre carré protégé. Quel est le coût total pour protéger toute la surface ?
+- `P` a) Aire totale
+- `P` b) Coût total
+- `P` Corrigé :
+- `P` a) 98 + 21 = 119 m²
+- `P` b) 119 × 1 200 = 142 800 ariary
+- `P` Exercice 2 — Problème (5 points)
+- `P` Une figure est décomposée en un carré de 5 m de côté et un triangle de base 5 m et de hauteur 3 m. Quelle est son aire totale ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 25 + 7,5 = 32,5 m²
+- `P` Total : 20 points
+
+### Séance 79 / 81 — Correspondance entre unités de capacité et de masse
+
+- Indicateurs : 34 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 79 / 81
+- `P` Correspondance entre unités de capacité et de masse
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Mesures de capacité (révision)
+- `T3C3` Séance n° :
+- `T3C4` 257
+- `T4C1` Titre :
+- `T4C2` Correspondance entre unités de capacité et de masse
+- `T4C3` Durée :
+- `T5C1` Objectif spécifique :
+- `T5C2` Connaître la correspondance entre le litre d'eau et le kilogramme
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Récipient d'eau, balance, tableau noir
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Quelle est la correspondance entre dm³ et litre ?Combien de grammes y a-t-il dans 1 kg ?
+- `T3C3` R.A. : 1 dm³ = 1 litre.R.A. : 1 kg = 1 000 g.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Le vendeur d'eau du marché a rempli un bidon de 5 litres d'eau. Un client lui demande combien ce bidon pèse, pour savoir s'il pourra le porter facilement.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Correspondance entre unités de capacité et de masse ». Après cette séance, vous serez capables de connaître la correspondance entre le litre d'eau et le kilogramme.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien un récipient d'1 litre d'eau posé sur une balance, affichant exactement 1 kg.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien pèse 1 litre d'eau ?Cette correspondance vaut-elle pour tous les liquides ?Combien pèsera le bidon d'eau de 5 litres du vendeur ?Comment convertir 750 mL d'eau en grammes ?
+- `T8C3` R.A. : 1 kilogramme.R.A. : Non, elle est spécifique à l'eau ; d'autres liquides (huile, lait...) ont des masses légèrement différentes pour le même volume.R.A. : 5 kilogrammes.R.A. : 750 mL = 0,75 L = 0,75 kg = 750 g (la correspondance reste directe, mL avec g).
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour l'eau, il existe une correspondance directe entre la capacité et la masse : 1 litre d'eau pèse 1 kilogramme, et 1 millilitre d'eau pèse 1 gramme. Cette correspondance permet de convertir facilement une quantité d'eau exprimée en capacité vers une masse, et inversement.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Capacité vers masseConvertis en kg : 2,5 litres d'eau.RéponseExercice 2 — Masse vers capacitéUn bidon d'eau pèse 8 kg. Quelle est sa capacité en litres ?Réponse
+- `T10C3` a) 2,5 litres d'eau = 2,5 kg a) 8 kg d'eau = 8 litres
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — ConversionConvertis en grammes : 750 mL d'eau.RéponseExercice 2 — ProblèmeLe vendeur a un bidon de 3 litres d'eau. Combien ce bidon pèse-t-il ?Réponse
+- `T11C3` a) 750 mL d'eau = 750 g a) 3 litres d'eau = 3 kg
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Correspondance entre unités de capacité et de masse
+- `P` Règle
+- `P` Donc, pour l'eau, il existe une correspondance directe entre la capacité et la masse : 1 litre d'eau pèse 1 kilogramme, et 1 millilitre d'eau pèse 1 gramme. Cette correspondance permet de convertir facilement une quantité d'eau exprimée en capacité vers une masse, et inversement.
+- `P` Exemple
+- `P` Le vendeur a rempli un bidon de 5 litres d'eau. Combien ce bidon d'eau pèse-t-il ?
+- `P` 1 litre d'eau = 1 kg.
+- `P` 5 litres d'eau = 5 kg.
+- `P` Attention : cette correspondance directe (1 L = 1 kg) n'est valable que pour l'EAU — pour d'autres liquides comme l'huile ou le lait, la masse d'un litre est différente, cette leçon ne s'applique donc pas automatiquement à tous les liquides.
+- `P` EXERCICES
+- `P` Exercice 1 — Capacité vers masse (5 points)
+- `P` Convertis en kg : 2,5 litres d'eau.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 2,5 litres d'eau = 2,5 kg
+- `P` Exercice 2 — Masse vers capacité (5 points)
+- `P` Un bidon d'eau pèse 8 kg. Quelle est sa capacité en litres ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 8 kg d'eau = 8 litres
+- `P` Exercice 1 — Conversion (5 points)
+- `P` Convertis en grammes : 750 mL d'eau.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 750 mL d'eau = 750 g
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le vendeur a un bidon de 3 litres d'eau. Combien ce bidon pèse-t-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 3 litres d'eau = 3 kg
+- `P` Total : 20 points
+
+### Séance 80 / 81 — Distance parcourue
+
+- Indicateurs : 36 paragraphes ; 2 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 80 / 81
+- `P` Distance parcourue
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Nombres sexagésimaux (révision mouvement uniforme)
+- `T3C3` Séance n° :
+- `T3C4` 258
+- `T4C1` Titre :
+- `T4C2` Distance parcourue
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer une distance parcourue à partir de la vitesse et du temps, avec un temps non entier
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment calcule-t-on une distance à partir de la vitesse et du temps ?Comment écrit-on 2 h 30 min en heures décimales ?
+- `T3C3` R.A. : Distance = vitesse × temps.R.A. : 2,5 heures.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Un bus roule à 60 km/h pendant 2 h 30 min. Le chauffeur veut connaître la distance totale parcourue, mais le temps n'est pas un nombre d'heures entier.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Distance parcourue ». Après cette séance, vous serez capables de calculer une distance parcourue même quand le temps n'est pas un nombre entier d'heures.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien l'écriture « 2 h 30 min » transformée en « 2,5 h » au tableau.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Combien d'heure représente 30 minutes ?Comment écrire 2 h 30 min sous forme décimale ?Comment calculer la distance parcourue par le bus (60 km/h pendant 2,5 h) ?Quelle distance le bus parcourt-il ?
+- `T8C3` R.A. : 30 min = 0,5 heure (la moitié d'une heure).R.A. : 2,5 heures.R.A. : Distance = vitesse × temps = 60 × 2,5.R.A. : 150 km.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour calculer une distance quand le temps comporte des minutes, on convertit d'abord le temps en heures décimales (30 min = 0,5 h, 15 min = 0,25 h, 45 min = 0,75 h), puis on applique normalement la formule distance = vitesse × temps.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Distance avec temps décimalUne voiture roule à 45 km/h pendant 3 heures. Quelle distance parcourt-elle ?RéponseExercice 2 — Conversion puis calculUn cycliste roule à 20 km/h pendant 1 h 15 min. Quelle distance parcourt-il ?Réponse
+- `T10C3` a) Distance = 45 × 3 = 135 km a) 1 h 15 min = 1,25 h ; distance = 20 × 1,25 = 25 km
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Distance avec temps décimalUn camion roule à 80 km/h pendant 1 h 30 min. Quelle distance parcourt-il ?RéponseExercice 2 — ProblèmeLe bus roule à 60 km/h pendant 2 h 30 min. Quelle distance parcourt-il ?Réponse
+- `T11C3` a) 1 h 30 min = 1,5 h ; distance = 80 × 1,5 = 120 km a) 2 h 30 min = 2,5 h ; distance = 60 × 2,5 = 150 km
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Distance parcourue
+- `P` Règle
+- `P` Donc, pour calculer une distance quand le temps comporte des minutes, on convertit d'abord le temps en heures décimales (30 min = 0,5 h, 15 min = 0,25 h, 45 min = 0,75 h), puis on applique normalement la formule distance = vitesse × temps.
+- `P` Exemple
+- `P` Un bus roule à 60 km/h pendant 2 h 30 min. Quelle distance parcourt-il ?
+- `P` 2 h 30 min = 2,5 heures.
+- `P` Distance = vitesse × temps
+- `P` Distance = 60 × 2,5
+- `P` Distance = 150 km
+- `P` Attention : toujours convertir les minutes en fraction décimale d'heure AVANT de multiplier par la vitesse — multiplier directement par « 30 » au lieu de « 0,5 » (pour 30 minutes) est l'erreur la plus fréquente de cette leçon.
+- `P` EXERCICES
+- `P` Exercice 1 — Distance avec temps décimal (5 points)
+- `P` Une voiture roule à 45 km/h pendant 3 heures. Quelle distance parcourt-elle ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Distance = 45 × 3 = 135 km
+- `P` Exercice 2 — Conversion puis calcul (5 points)
+- `P` Un cycliste roule à 20 km/h pendant 1 h 15 min. Quelle distance parcourt-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 1 h 15 min = 1,25 h ; distance = 20 × 1,25 = 25 km
+- `P` Exercice 1 — Distance avec temps décimal (5 points)
+- `P` Un camion roule à 80 km/h pendant 1 h 30 min. Quelle distance parcourt-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 1 h 30 min = 1,5 h ; distance = 80 × 1,5 = 120 km
+- `P` Exercice 2 — Problème (5 points)
+- `P` Le bus roule à 60 km/h pendant 2 h 30 min. Quelle distance parcourt-il ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) 2 h 30 min = 2,5 h ; distance = 60 × 2,5 = 150 km
+- `P` Total : 20 points
+
+### Séance 81 / 81 — Durée de parcours
+
+- Indicateurs : 54 paragraphes ; 4 tableaux ; 4 exercices titrés ; 4 corrigés titrés ; total : oui.
+- `P` SÉANCE 81 / 81
+- `P` Durée de parcours
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline :
+- `T1C2` Mathématiques
+- `T1C3` Date :
+- `T1C4` _______________
+- `T2C1` Sous discipline :
+- `T2C2` Mesure
+- `T2C3` Classe :
+- `T2C4` 7e
+- `T3C1` Thème :
+- `T3C2` Nombres sexagésimaux (révision mouvement uniforme)
+- `T3C3` Séance n° :
+- `T3C4` 259
+- `T4C1` Titre :
+- `T4C2` Durée de parcours
+- `T4C3` Durée :
+- `T4C4` 1 séance de 30 min
+- `T5C1` Objectif spécifique :
+- `T5C2` Calculer une durée de parcours à partir de la distance et de la vitesse, et l'exprimer en heures et minutes
+- `T6C1` Documentation :
+- `T6C2` Programme officiel de Calcul, classe de 7e
+- `T7C1` Support et matériel :
+- `T7C2` Tableau noir, cahier
+- `T1C1` Étapes et Durée
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et Stratégie
+- `T1C4` Support et Matériel
+- `T1C5` Observation
+- `T2C3` Enseignant
+- `T2C7` Apprenants
+- `T3C1` I. RÉVISION3 min
+- `T3C2` Comment calcule-t-on une durée à partir de la distance et de la vitesse ?Comment convertit-on 0,5 heure en minutes ?
+- `T3C3` R.A. : Durée = distance ÷ vitesse.R.A. : 0,5 × 60 = 30 minutes.
+- `T3C4` Questions/RéponsesIndividuel
+- `T3C5` —
+- `T4C1` II. NOUVELLE LEÇON — 20 min
+- `T5C1` 1. Mise en situation
+- `T5C2` Une voiture doit parcourir 180 km à une vitesse de 60 km/h. Le chauffeur veut connaître la durée exacte du trajet, exprimée en heures et minutes plutôt qu'en heures décimales.
+- `T5C3` Les élèves écoutent et répondent à l'oral.
+- `T5C4` Histoire contextualisée
+- `T5C5` Tableau noir
+- `T6C1` 2. Présentation
+- `T6C2` Aujourd'hui nous allons apprendre : « Durée de parcours ». Après cette séance, vous serez capables de calculer une durée de parcours et de l'exprimer en heures et minutes.
+- `T6C3` Les élèves écoutent.
+- `T6C4` Exposé oral
+- `T6C5` Tableau noir, cahier
+- `T7C1` 3. Observation
+- `T7C2` Regardez et observez bien le calcul 180 ÷ 60 = 3 écrit au tableau, puis un exemple avec un résultat décimal transformé en heures et minutes.
+- `T7C3` Les élèves observent silencieusement.
+- `T7C4` Observation dirigée
+- `T7C5` Support visuel
+- `T8C1` 4. Analyse
+- `T8C2` Comment calculer la durée du trajet de 180 km à 60 km/h ?Combien de temps dure ce trajet ?Si un autre trajet donnait 2,5 heures, comment l'exprimer en heures et minutes ?Comment convertir la partie décimale d'une heure en minutes ?
+- `T8C3` R.A. : Durée = distance ÷ vitesse = 180 ÷ 60.R.A. : 3 heures exactement.R.A. : 2,5 h = 2 h + 0,5 h = 2 h + 30 min = 2 h 30 min.R.A. : On multiplie cette partie décimale par 60.
+- `T8C4` Questions dirigées
+- `T8C5` Support visuel
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, pour calculer une durée de parcours, on divise la distance par la vitesse : durée = distance ÷ vitesse. Si le résultat est un nombre décimal, on convertit la partie décimale en minutes en la multipliant par 60, pour exprimer la durée sous la forme heures et minutes.
+- `T9C3` Les élèves écoutent.
+- `T9C4` Exposé oral
+- `T9C5` Tableau noir
+- `T10C1` 6. Application
+- `T10C2` Exercice 1 — Durée exacteUn train parcourt 210 km à 70 km/h. Quelle est la durée du trajet ?RéponseExercice 2 — Durée avec conversionUne voiture parcourt 150 km à 60 km/h. Exprime la durée en heures et minutes.Réponse
+- `T10C3` a) Durée = 210 ÷ 70 = 3 heures a) Durée = 150 ÷ 60 = 2,5 h = 2 h + (0,5 × 60 min) = 2 h 30 min
+- `T10C4` Travail individuel
+- `T10C5` Cahier, ardoise
+- `T11C1` III. ÉVALUATION7 min
+- `T11C2` Exercice 1 — Durée avec conversionUn camion parcourt 300 km à 75 km/h. Exprime la durée en heures et minutes.RéponseExercice 2 — ProblèmeLa voiture doit parcourir 180 km à 60 km/h. Quelle est la durée du trajet ?Réponse
+- `T11C3` a) Durée = 300 ÷ 75 = 4 heures a) Durée = 180 ÷ 60 = 3 heures
+- `T11C4` Travail individuel
+- `T11C5` Cahier, feuille d'évaluation
+- `P` LEÇON
+- `P` Durée de parcours
+- `P` Règle
+- `P` Donc, pour calculer une durée de parcours, on divise la distance par la vitesse : durée = distance ÷ vitesse. Si le résultat est un nombre décimal, on convertit la partie décimale en minutes en la multipliant par 60, pour exprimer la durée sous la forme heures et minutes.
+- `P` Exemple
+- `P` Une voiture parcourt 180 km à 60 km/h. Quelle est la durée du trajet ?
+- `P` Durée = distance ÷ vitesse
+- `P` Durée = 180 ÷ 60
+- `P` Durée = 3 heures
+- `P` Attention : quand la division donne un résultat décimal, ne jamais lire directement les chiffres après la virgule comme des minutes (2,5 h n'est PAS 2 h 5 min) — il faut multiplier la partie décimale par 60 pour obtenir le nombre exact de minutes (2,5 h = 2 h 30 min).
+- `P` EXERCICES
+- `P` Exercice 1 — Durée exacte (5 points)
+- `P` Un train parcourt 210 km à 70 km/h. Quelle est la durée du trajet ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Durée = 210 ÷ 70 = 3 heures
+- `P` Exercice 2 — Durée avec conversion (5 points)
+- `P` Une voiture parcourt 150 km à 60 km/h. Exprime la durée en heures et minutes.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Durée = 150 ÷ 60 = 2,5 h = 2 h + (0,5 × 60 min) = 2 h 30 min
+- `P` Exercice 1 — Durée avec conversion (5 points)
+- `P` Un camion parcourt 300 km à 75 km/h. Exprime la durée en heures et minutes.
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Durée = 300 ÷ 75 = 4 heures
+- `P` Exercice 2 — Problème (5 points)
+- `P` La voiture doit parcourir 180 km à 60 km/h. Quelle est la durée du trajet ?
+- `P` Réponse
+- `P` Corrigé :
+- `P` a) Durée = 180 ÷ 60 = 3 heures
+- `P` Total : 20 points
+- `P` ANNEXES
+- `P` Formulaire récapitulatif
+- `P` Géométrie — Figures planes
+- `T1C1` Figure
+- `T1C2` Périmètre
+- `T1C3` Aire
+- `T2C1` Carré
+- `T2C2` P = c × 4
+- `T2C3` A = c × c
+- `T3C1` Rectangle
+- `T3C2` P = (L + l) × 2
+- `T3C3` A = L × l
+- `T4C1` Triangle
+- `T4C2` P = a + b + c
+- `T4C3` A = (b × h) ÷ 2
+- `T5C1` Parallélogramme
+- `T5C2` P = (b + c) × 2
+- `T5C3` A = b × h
+- `T6C1` Trapèze
+- `T6C2` P = somme des 4 côtés
+- `T6C3` A = (B + b) × h ÷ 2
+- `T7C1` Losange
+- `T7C2` P = c × 4
+- `T7C3` A = (D × d) ÷ 2
+- `T8C1` Cercle
+- `T8C2` P = 2 × π × r
+- `T8C3` A = π × r × r
+- `P` Géométrie — Solides
+- `T1C1` Solide
+- `T1C2` Surface totale
+- `T1C3` Volume
+- `T2C1` Cube
+- `T2C2` S = 6 × c × c
+- `T2C3` V = c × c × c
+- `T3C1` Parallélépipède rectangle
+- `T3C2` S = 2 × (L×l + L×h + l×h)
+- `T3C3` V = L × l × h
+- `T4C1` Cylindre
+- `T4C2` S = 2×π×r² + 2×π×r×h
+- `T4C3` V = π × r × r × h
+- `P` Mesures — tableaux de conversion
+- `P` • Longueur (× 10 par rang) : km, hm, dam, m, dm, cm, mm
+- `P` • Capacité (× 10 par rang) : kl, hl, dal, l, dl, cl, ml
+- `P` • Aire (× 100 par rang) : km², hm², dam², m², dm², cm², mm²
+- `P` • Volume (× 1000 par rang) : m³, dm³, cm³, mm³
+- `P` • Correspondances : 1 dm³ = 1 litre · 1 cm³ = 1 mL · 1 litre d'eau = 1 kg
+- `P` Arithmétique — Placement d'argent
+- `P` • Intérêt = capital × taux ÷ 100
+- `P` • Durée = (intérêt × 100) ÷ (capital × taux)
+- `P` • Taux = (intérêt × 100) ÷ (capital × durée)
+- `P` Mesure — Mouvement uniforme
+- `P` • Vitesse = distance ÷ temps
+- `P` • Distance = vitesse × temps
+- `P` • Temps = distance ÷ vitesse
+- `P` • Conversion km/h ↔ m/s : diviser (km/h→m/s) ou multiplier (m/s→km/h) par 3,6
+
