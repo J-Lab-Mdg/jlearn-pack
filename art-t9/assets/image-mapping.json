@@ -1,18 +1,671 @@
 {
-  "manuels": "Arts T9 — Collection J-Learn",
-  "seance_01": {
-    "titre": "Dessin à partir d’un objet — Les nuances (noir, blanc, gris)",
-    "images": [
-      { "id": "img_art_t9_s01_objet", "fichier": "img_art_t9_s01_objet_1100.png", "role": "scène / photo d’observation", "ou": "haut de la page LEÇON" },
-      { "id": "img_art_t9_s01_volume", "fichier": "img_art_t9_s01_volume.png", "role": "graphique / schéma lumière-ombre", "ou": "LEÇON section 2" },
-      { "id": "img_art_t9_s01_echelle", "fichier": "img_art_t9_s01_echelle.png", "role": "graphique / échelle de nuances", "ou": "LEÇON section 3" },
-      { "id": "pasapas_s01_et1_ok", "fichier": "pasapas_s01_et1_ok_1100.jpg", "role": "pas-à-pas / étape 1 / ✓ OK", "ou": "LEÇON section 4, étape 1" },
-      { "id": "pasapas_s01_et2_ok", "fichier": "pasapas_s01_et2_ok_1100.jpg", "role": "pas-à-pas / étape 2 / ✓ OK", "ou": "LEÇON section 4, étape 2" },
-      { "id": "pasapas_s01_et3_ok", "fichier": "pasapas_s01_et3_ok_1100.jpg", "role": "pas-à-pas / étape 3 / ✓ OK", "ou": "LEÇON section 4, étape 3" },
-      { "id": "pasapas_s01_et3_pasok", "fichier": "pasapas_s01_et3_pasok_1100.jpg", "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION", "ou": "LEÇON section 4, étape 3" },
-      { "id": "pasapas_s01_et4_ok", "fichier": "pasapas_s01_et4_ok_1100.jpg", "role": "pas-à-pas / étape 4 / ✓ OK", "ou": "LEÇON section 4, étape 4" },
-      { "id": "pasapas_s01_et4_pasok", "fichier": "pasapas_s01_et4_pasok_1100.jpg", "role": "pas-à-pas / étape 4 / ✗ PAS OK / ATTENTION", "ou": "LEÇON section 4, étape 4" },
-      { "id": "img_art_t9_s01_exemple", "fichier": "img_art_t9_s01_exemple_1100.png", "role": "exemple de production attendue", "ou": "CORRIGÉ" }
-    ]
+  "manuel": "Arts T9 — Collection J-Learn",
+  "version": 1,
+  "seances": {
+    "seance_01": {
+      "titre": "Les nuances (noir, blanc, gris)",
+      "images": [
+        {
+          "id": "img_art_t9_s01_objet_1100",
+          "fichier": "img_art_t9_s01_objet_1100.png",
+          "role": "support de leçon",
+          "ou": "Séance 1 — haut de LEÇON"
+        },
+        {
+          "id": "img_art_t9_s01_volume",
+          "fichier": "img_art_t9_s01_volume.png",
+          "role": "graphique / schéma",
+          "ou": "Séance 1 — LEÇON : La lumière et l’ombre"
+        },
+        {
+          "id": "img_art_t9_s01_echelle",
+          "fichier": "img_art_t9_s01_echelle.png",
+          "role": "graphique / schéma",
+          "ou": "Séance 1 — LEÇON : Les nuances (valeurs)"
+        },
+        {
+          "id": "pasapas_s01_et1_ok_1100",
+          "fichier": "pasapas_s01_et1_ok_1100.jpg",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 1 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s01_et2_ok_1100",
+          "fichier": "pasapas_s01_et2_ok_1100.jpg",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 1 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s01_et3_ok_1100",
+          "fichier": "pasapas_s01_et3_ok_1100.jpg",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 1 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s01_et3_pasok_1100",
+          "fichier": "pasapas_s01_et3_pasok_1100.jpg",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 1 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s01_et4_ok_1100",
+          "fichier": "pasapas_s01_et4_ok_1100.jpg",
+          "role": "pas-à-pas / étape 4 / ✓ OK",
+          "ou": "Séance 1 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s01_et4_pasok_1100",
+          "fichier": "pasapas_s01_et4_pasok_1100.jpg",
+          "role": "pas-à-pas / étape 4 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 1 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "img_art_t9_s01_exemple_1100",
+          "fichier": "img_art_t9_s01_exemple_1100.png",
+          "role": "exemple de production attendue",
+          "ou": "Séance 1 — CORRIGÉ"
+        }
+      ]
+    },
+    "seance_02": {
+      "titre": "Formes, lignes et gestion de l’espace",
+      "images": [
+        {
+          "id": "img_art_t9_s02_main",
+          "fichier": "img_art_t9_s02_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 2 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s02_et1_ok",
+          "fichier": "pasapas_s02_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 2 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s02_et2_ok",
+          "fichier": "pasapas_s02_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 2 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s02_et3_ok",
+          "fichier": "pasapas_s02_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 2 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s02_et3_pasok",
+          "fichier": "pasapas_s02_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 2 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_03": {
+      "titre": "Organiser les éléments : répétition, alternance, inversion",
+      "images": [
+        {
+          "id": "img_art_t9_s03_main",
+          "fichier": "img_art_t9_s03_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 3 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s03_et1_ok",
+          "fichier": "pasapas_s03_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 3 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s03_et2_ok",
+          "fichier": "pasapas_s03_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 3 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s03_et3_ok",
+          "fichier": "pasapas_s03_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 3 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s03_et3_pasok",
+          "fichier": "pasapas_s03_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 3 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_04": {
+      "titre": "Couleurs primaires, secondaires, chaudes et froides",
+      "images": [
+        {
+          "id": "img_art_t9_s04_main",
+          "fichier": "img_art_t9_s04_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 4 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s04_et1_ok",
+          "fichier": "pasapas_s04_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 4 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s04_et2_ok",
+          "fichier": "pasapas_s04_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 4 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s04_et3_ok",
+          "fichier": "pasapas_s04_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 4 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s04_et3_pasok",
+          "fichier": "pasapas_s04_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 4 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_05": {
+      "titre": "Tableau peinture paysage : espace et motifs",
+      "images": [
+        {
+          "id": "img_art_t9_s05_main",
+          "fichier": "img_art_t9_s05_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 5 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s05_et1_ok",
+          "fichier": "pasapas_s05_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 5 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s05_et2_ok",
+          "fichier": "pasapas_s05_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 5 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s05_et3_ok",
+          "fichier": "pasapas_s05_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 5 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s05_et3_pasok",
+          "fichier": "pasapas_s05_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 5 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_06": {
+      "titre": "Fabriquer un instrument de percussion recyclable",
+      "images": [
+        {
+          "id": "img_art_t9_s06_main",
+          "fichier": "img_art_t9_s06_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 6 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s06_et1_ok",
+          "fichier": "pasapas_s06_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 6 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s06_et2_ok",
+          "fichier": "pasapas_s06_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 6 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s06_et3_ok",
+          "fichier": "pasapas_s06_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 6 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s06_et3_pasok",
+          "fichier": "pasapas_s06_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 6 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_07": {
+      "titre": "Instruments traditionnels et modernes : familles et usages",
+      "images": [
+        {
+          "id": "img_art_t9_s07_main",
+          "fichier": "img_art_t9_s07_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 7 — haut de LEÇON"
+        }
+      ]
+    },
+    "seance_08": {
+      "titre": "Tempo, pulsation et rythme binaire/ternaire",
+      "images": [
+        {
+          "id": "img_art_t9_s08_main",
+          "fichier": "img_art_t9_s08_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 8 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s08_et1_ok",
+          "fichier": "pasapas_s08_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 8 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s08_et2_ok",
+          "fichier": "pasapas_s08_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 8 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s08_et3_ok",
+          "fichier": "pasapas_s08_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 8 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s08_et3_pasok",
+          "fichier": "pasapas_s08_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 8 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_09": {
+      "titre": "Durée des sons, silence et mesure 12/8",
+      "images": [
+        {
+          "id": "img_art_t9_s09_main",
+          "fichier": "img_art_t9_s09_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 9 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s09_et1_ok",
+          "fichier": "pasapas_s09_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 9 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s09_et2_ok",
+          "fichier": "pasapas_s09_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 9 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s09_et3_ok",
+          "fichier": "pasapas_s09_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 9 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s09_et3_pasok",
+          "fichier": "pasapas_s09_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 9 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_10": {
+      "titre": "Intensité et nuance : fort, doux, montant, descendant",
+      "images": [
+        {
+          "id": "img_art_t9_s10_main",
+          "fichier": "img_art_t9_s10_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 10 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s10_et1_ok",
+          "fichier": "pasapas_s10_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 10 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s10_et2_ok",
+          "fichier": "pasapas_s10_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 10 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s10_et3_ok",
+          "fichier": "pasapas_s10_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 10 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s10_et3_pasok",
+          "fichier": "pasapas_s10_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 10 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_11": {
+      "titre": "Chanter avec des instruments à percussions",
+      "images": [
+        {
+          "id": "img_art_t9_s11_main",
+          "fichier": "img_art_t9_s11_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 11 — haut de LEÇON"
+        }
+      ]
+    },
+    "seance_12": {
+      "titre": "Chanter avec des instruments à cordes",
+      "images": [
+        {
+          "id": "img_art_t9_s12_main",
+          "fichier": "img_art_t9_s12_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 12 — haut de LEÇON"
+        }
+      ]
+    },
+    "seance_13": {
+      "titre": "Choisir un chant régional et les instruments adéquats",
+      "images": [
+        {
+          "id": "img_art_t9_s13_main",
+          "fichier": "img_art_t9_s13_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 13 — haut de LEÇON"
+        }
+      ]
+    },
+    "seance_14": {
+      "titre": "Valse : pulsation ternaire et pas de base",
+      "images": [
+        {
+          "id": "img_art_t9_s14_main",
+          "fichier": "img_art_t9_s14_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 14 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s14_et1_ok",
+          "fichier": "pasapas_s14_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 14 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s14_et2_ok",
+          "fichier": "pasapas_s14_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 14 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s14_et3_ok",
+          "fichier": "pasapas_s14_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 14 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s14_et3_pasok",
+          "fichier": "pasapas_s14_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 14 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_15": {
+      "titre": "Samba et cha-cha-cha : rythme et énergie",
+      "images": [
+        {
+          "id": "img_art_t9_s15_main",
+          "fichier": "img_art_t9_s15_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 15 — haut de LEÇON"
+        }
+      ]
+    },
+    "seance_16": {
+      "titre": "Trajectoires : droite, circulaire, sinueuse, zigzag",
+      "images": [
+        {
+          "id": "img_art_t9_s16_main",
+          "fichier": "img_art_t9_s16_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 16 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s16_et1_ok",
+          "fichier": "pasapas_s16_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 16 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s16_et2_ok",
+          "fichier": "pasapas_s16_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 16 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s16_et3_ok",
+          "fichier": "pasapas_s16_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 16 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s16_et3_pasok",
+          "fichier": "pasapas_s16_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 16 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_17": {
+      "titre": "Mobilité du corps : avancer, reculer, rebondir, tourner",
+      "images": [
+        {
+          "id": "img_art_t9_s17_main",
+          "fichier": "img_art_t9_s17_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 17 — haut de LEÇON"
+        }
+      ]
+    },
+    "seance_18": {
+      "titre": "Créer une courte séquence dansée",
+      "images": [
+        {
+          "id": "img_art_t9_s18_main",
+          "fichier": "img_art_t9_s18_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 18 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s18_et1_ok",
+          "fichier": "pasapas_s18_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 18 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s18_et2_ok",
+          "fichier": "pasapas_s18_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 18 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s18_et3_ok",
+          "fichier": "pasapas_s18_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 18 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s18_et3_pasok",
+          "fichier": "pasapas_s18_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 18 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_19": {
+      "titre": "Présenter, observer et apprécier une chorégraphie",
+      "images": [
+        {
+          "id": "img_art_t9_s19_main",
+          "fichier": "img_art_t9_s19_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 19 — haut de LEÇON"
+        }
+      ]
+    },
+    "seance_20": {
+      "titre": "Attitude, geste, mimique et voix",
+      "images": [
+        {
+          "id": "img_art_t9_s20_main",
+          "fichier": "img_art_t9_s20_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 20 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s20_et1_ok",
+          "fichier": "pasapas_s20_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 20 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s20_et2_ok",
+          "fichier": "pasapas_s20_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 20 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s20_et3_ok",
+          "fichier": "pasapas_s20_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 20 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s20_et3_pasok",
+          "fichier": "pasapas_s20_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 20 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_21": {
+      "titre": "Personnages, lieux, émotions et objets dans un conte",
+      "images": [
+        {
+          "id": "img_art_t9_s21_main",
+          "fichier": "img_art_t9_s21_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 21 — haut de LEÇON"
+        }
+      ]
+    },
+    "seance_22": {
+      "titre": "Organiser l’espace et les lieux pour jouer",
+      "images": [
+        {
+          "id": "img_art_t9_s22_main",
+          "fichier": "img_art_t9_s22_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 22 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s22_et1_ok",
+          "fichier": "pasapas_s22_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 22 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s22_et2_ok",
+          "fichier": "pasapas_s22_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 22 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s22_et3_ok",
+          "fichier": "pasapas_s22_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 22 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s22_et3_pasok",
+          "fichier": "pasapas_s22_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 22 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_23": {
+      "titre": "Jouer un rôle : voix, corps et écoute",
+      "images": [
+        {
+          "id": "img_art_t9_s23_main",
+          "fichier": "img_art_t9_s23_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 23 — haut de LEÇON"
+        }
+      ]
+    },
+    "seance_24": {
+      "titre": "Créer une courte situation dramatique",
+      "images": [
+        {
+          "id": "img_art_t9_s24_main",
+          "fichier": "img_art_t9_s24_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 24 — haut de LEÇON"
+        },
+        {
+          "id": "pasapas_s24_et1_ok",
+          "fichier": "pasapas_s24_et1_ok.png",
+          "role": "pas-à-pas / étape 1 / ✓ OK",
+          "ou": "Séance 24 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s24_et2_ok",
+          "fichier": "pasapas_s24_et2_ok.png",
+          "role": "pas-à-pas / étape 2 / ✓ OK",
+          "ou": "Séance 24 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s24_et3_ok",
+          "fichier": "pasapas_s24_et3_ok.png",
+          "role": "pas-à-pas / étape 3 / ✓ OK",
+          "ou": "Séance 24 — LEÇON pas-à-pas"
+        },
+        {
+          "id": "pasapas_s24_et3_pasok",
+          "fichier": "pasapas_s24_et3_pasok.png",
+          "role": "pas-à-pas / étape 3 / ✗ PAS OK / ATTENTION",
+          "ou": "Séance 24 — LEÇON pas-à-pas"
+        }
+      ]
+    },
+    "seance_25": {
+      "titre": "Jouer devant un public et apprécier la scène",
+      "images": [
+        {
+          "id": "img_art_t9_s25_main",
+          "fichier": "img_art_t9_s25_main.png",
+          "role": "support de leçon",
+          "ou": "Séance 25 — haut de LEÇON"
+        }
+      ]
+    }
   }
 }
