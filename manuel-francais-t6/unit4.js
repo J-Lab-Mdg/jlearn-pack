@@ -4,6 +4,20 @@ const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, discBadge, img, imgFloat, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
+const relier = (left, right) => new Table({
+  width: { size: 8200, type: WidthType.DXA },
+  rows: [
+    new TableRow({ children: [
+      cell([pr([run("Colonne A", { bold: true, size: 24, color: C.GRAY })], { after: 10 })], { w: 4100, shade: "F5F5F5" }),
+      cell([pr([run("Colonne B", { bold: true, size: 24, color: C.GRAY })], { after: 10 })], { w: 4100, shade: "F5F5F5" }),
+    ] }),
+    ...left.map((l, i) => new TableRow({ children: [
+      cell([pr([run("•  " + l)], { after: 10 })], { w: 4100 }),
+      cell([pr([run("•  " + right[i])], { after: 10 })], { w: 4100 }),
+    ] })),
+  ],
+});
+
 const COLOR = "D35400"; // orange sports
 const SHADE = "FDEBD0";
 const TOTAL = 72;
@@ -151,6 +165,19 @@ function lessonS37() {
     sub("Exercice — j'ai bien écouté :"),
     p("1. Quel sport et quel événement le reportage raconte-t-il ?"),
     p("2. Redis le moment fort en une phrase exclamative.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Justifie.")], { after: 30 }),
+    p("a) Le reportage raconte un événement imaginaire.", { after: 20 }),
+    p("b) La finale s'est jouée au terrain du marché d'Ambohidava.", { after: 20 }),
+    p("c) La partie s'est terminée sur 13 à 12.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : c'est le récit vivant d'un événement RÉEL, fait par un témoin. b) Vrai. c) Vrai, sur un dernier tir !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Ma grille d'écoute.", { bold: true, color: C.SALMON }), run(" Réponds : où ? quand ? quoi ? comment ?")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Où ? au terrain du marché d'Ambohidava. Quand ? dimanche après-midi. Quoi ? la finale du tournoi de pétanque. Comment ? en triplette, 13 à 12, sur un dernier tir.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque mot du reportage à son sens.")], { after: 30 }),
+    relier(["une triplette", "le cochonnet", "un carreau", "la relève"], ["le tir qui chasse la boule adverse et prend sa place", "ceux qui prendront la suite des anciens", "une équipe de trois joueurs", "la petite boule que l'on vise"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("triplette → équipe de trois ; cochonnet → la petite boule visée ; carreau → le tir qui chasse la boule adverse ; relève → ceux qui prennent la suite.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Le moment fort.", { bold: true, color: C.SALMON }), run(" Redis-le en une phrase exclamative.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Quel carreau magnifique sur la dernière boule ! [l'exclamation porte l'émotion du match]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -237,6 +264,26 @@ function lessonS38() {
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« jouer football », sans le petit mot « au »" + ".")]),
     sub("Exercice — je classe :"),
     p("Type de sport, mot des règles ou comportement ? le marquage — la lutte traditionnelle — encourager l'adversaire — le hors-jeu — la course — respecter l'arbitre.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Je classe.", { bold: true, color: C.SALMON }), run(" Type de sport, mot des règles ou comportement ?")], { after: 30 }),
+    p("a) le marquage", { after: 20 }),
+    p("b) la lutte traditionnelle", { after: 20 }),
+    p("c) encourager l'adversaire", { after: 20 }),
+    p("d) le hors-jeu", { after: 20 }),
+    p("e) la course", { after: 20 }),
+    p("f) respecter l'arbitre", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Mots des règles : a, d. Types de sport : b, e. Comportements : c, f.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) La pétanque est un sport collectif.", { after: 20 }),
+    p("b) Le moraingy est une boxe traditionnelle de chez nous.", { after: 20 }),
+    p("c) Le fair-play, c'est gagner sans se vanter, perdre sans accuser.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : c'est un sport individuel — on se mesure seul (même en triplette, chacun tire sa boule !). b) Vrai. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Corrige.", { bold: true, color: C.SALMON }), run(" On dit… ou à éviter ?")], { after: 30 }),
+    p("a) « Je joue football tous les samedis. »", { after: 20 }),
+    p("b) « Elle fait de la lutte. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) À corriger : je joue AU football — sans oublier le petit mot « au » ! b) Correct.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Avantages et inconvénients.", { bold: true, color: C.SALMON }), run(" Donne deux + et deux – du sport.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : + un cœur plus fort, de la confiance et des amis ; – si l'on exagère : les blessures et les leçons négligées. La règle d'or : l'équilibre.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -315,6 +362,24 @@ function lessonS39() {
     mot("négliger", "ne pas s'occuper de ce qui compte"),
     sub("Exercice — je retrouve dans le texte :"),
     p("1. La question à laquelle le texte répond. — 2. Une explication avec « car » ou « parce que » — recopie-la et entoure le connecteur.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Remets la structure en ordre.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) des exemples", { after: 20 }),
+    p("b) une question", { after: 20 }),
+    p("c) une conclusion", { after: 20 }),
+    p("d) une réponse avec des causes", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ordre : b → d → a → c. Question, réponse, exemples, conclusion : le plan de l'explication.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque mot du texte à son sens.")], { after: 30 }),
+    relier(["l'endurance", "se blesser", "l'excès", "négliger"], ["ne pas s'occuper de ce qui compte", "la résistance à l'effort", "se faire mal", "le trop — le contraire de l'équilibre"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("endurance → résistance à l'effort ; se blesser → se faire mal ; excès → le trop ; négliger → ne pas s'occuper de ce qui compte.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Les indices du texte explicatif.")], { after: 30 }),
+    p("a) Le texte explicatif répond à « pourquoi ? » et « comment ? ».", { after: 20 }),
+    p("b) Il n'a jamais d'exemples.", { after: 20 }),
+    p("c) Son plan se voit dans les paragraphes.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : les exemples sont un de ses indices — le cœur, les muscles, le sommeil… c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Fabrique une explication.", { bold: true, color: C.SALMON }), run(" Avec « parce que ».")], { after: 30 }),
+    p("« Pourquoi faire du sport ? » — réponds en une phrase.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Il faut faire du sport parce que le corps est fait pour bouger — et la règle d'or tient en un mot : l'équilibre.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -391,6 +456,20 @@ function lessonS40() {
         run("le signe final est l'indice du type : . pour déclarer, ? pour demander, ! pour s'exclamer, . ou ! pour ordonner.")]),
     sub("Exercice — les quatre types :"),
     p("Dis le type de chaque phrase, puis transforme la première en interrogative (trois constructions) : « L'équipe s'entraîne le samedi. » — « Quel beau match ! » — « Passez le ballon ! »", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Quel type de phrase ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « Les jeunes ont gagné la finale. »", { after: 20 }),
+    p("b) « Quel beau match ! »", { after: 20 }),
+    p("c) « Passez le ballon ! »", { after: 20 }),
+    p("d) « Les femmes jouent-elles aussi ? »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) déclarative [informer] — b) exclamative [l'émotion] — c) impérative [faire agir] — d) interrogative [demander].", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Les trois constructions.", { bold: true, color: C.SALMON }), run(" Transforme en interrogative : « L'équipe s'entraîne le samedi. »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("1. Est-ce que l'équipe s'entraîne le samedi ? 2. L'équipe s'entraîne-t-elle le samedi ? [l'inversion] 3. Quand l'équipe s'entraîne-t-elle ?", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque intention à son type de phrase.")], { after: 30 }),
+    relier(["informer", "demander", "s'émerveiller", "conseiller, ordonner"], ["la phrase interrogative", "la phrase impérative", "la phrase déclarative", "la phrase exclamative"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("informer → déclarative ; demander → interrogative ; s'émerveiller → exclamative ; conseiller → impérative.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Fabrique.", { bold: true, color: C.SALMON }), run(" Une exclamative et une impérative sur le sport.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Comme il tire bien ! — Entraînez-vous tous les jours. [le signe final est l'indice du type]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -468,6 +547,26 @@ function lessonS41() {
     sub("Exercice — la négation au passé composé :"),
     p("Mets à la forme négative : « L'équipe a gagné. » — « Il a vu quelqu'un. »"),
     pr([run("[ne et pas encadrent l'auxiliaire ; personne attend la fin de la phrase]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Mets à la forme négative.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « L'équipe a gagné. »", { after: 20 }),
+    p("b) « Il a vu quelqu'un. »", { after: 20 }),
+    p("c) « Nous avons tout perdu. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) L'équipe n'a pas gagné. b) Il n'a vu personne. [personne attend la fin !] c) Nous n'avons rien perdu.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Chasse aux erreurs.", { bold: true, color: C.SALMON }), run(" Corrige.")], { after: 30 }),
+    p("a) « Je n'ai vu pas le match. »", { after: 20 }),
+    p("b) « Il a jamais abandonné. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Je n'ai pas vu le match — pas se place AVANT le participe. b) Il n'a jamais abandonné — le ne est obligatoire à l'écrit, n' devant voyelle.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Choisis la bonne négation.", { bold: true, color: C.SALMON }), run(" jamais, plus, rien ou personne ?")], { after: 30 }),
+    p("a) Elle n'a ……… rejoué après sa blessure — c'est fini.", { after: 20 }),
+    p("b) Ils n'ont vu ……… sur le terrain — aucun être.", { after: 20 }),
+    p("c) Je n'ai ……… perdu — aucune chose.", { after: 20 }),
+    p("d) Il n'a ……… abandonné — aucune fois.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) plus — b) personne — c) rien — d) jamais.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) Au passé composé, la négation entoure l'auxiliaire.", { after: 20 }),
+    p("b) « Personne » se place avant le participe passé.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai : ne + auxiliaire + pas + participe. b) Faux : personne attend la fin — « Je n'ai rencontré personne. »", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -547,6 +646,22 @@ function lessonS42() {
         run("la périphrase décrit à la place de nommer : elle évite la répétition et enrichit l'explication.")]),
     sub("Exercice — parle en périphrases :"),
     p("De qui ou de quoi parle-t-on ? « le roi des animaux » — « le ballon rond » — puis invente une périphrase pour « le vélo ».", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. De qui ou de quoi parle-t-on ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « le roi des animaux »", { after: 20 }),
+    p("b) « le ballon rond »", { after: 20 }),
+    p("c) « la petite reine »", { after: 20 }),
+    p("d) « l'île Rouge »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) le lion — b) le football — c) le vélo, la bicyclette — d) Madagascar.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque périphrase à son mot.")], { after: 30 }),
+    relier(["le ballon ovale", "les boules d'acier", "la boxe de chez nous", "la petite reine"], ["la pétanque", "le vélo", "le rugby", "le moraingy"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("ballon ovale → le rugby ; boules d'acier → la pétanque ; boxe de chez nous → le moraingy ; petite reine → le vélo.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) La périphrase sert à éviter la répétition.", { after: 20 }),
+    p("b) Plus une périphrase est compliquée, mieux c'est.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai : « Le football est populaire. Le ballon rond se joue partout. » b) Faux : si le lecteur ne comprend plus, on garde le mot simple !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Invente.", { bold: true, color: C.SALMON }), run(" Une périphrase pour « la natation ».")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : le sport des bassins — ou : la course dans l'eau. [la périphrase décrit à la place de nommer]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -622,6 +737,19 @@ function lessonS43() {
         run("une bonne question fait parler les autres ; une bonne opinion donne toujours sa raison.")]),
     sub("Exercice — opinion et questions :"),
     p("1. Donne ton opinion sur ton sport préféré, avec sa cause. — 2. Pose la même question des trois façons : « tu t'entraînes le samedi ».", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Complète l'opinion.", { bold: true, color: C.SALMON }), run(" Toujours avec sa cause.")], { after: 30 }),
+    p("« À mon avis, la pétanque est un vrai sport, ……… »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : … parce qu'elle demande de l'adresse et du calme.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Les trois constructions.", { bold: true, color: C.SALMON }), run(" Pose la même question des trois façons : « tu t'entraînes le samedi ».")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("1. Est-ce que tu t'entraînes le samedi ? 2. T'entraînes-tu le samedi ? [l'inversion] 3. Quand t'entraînes-tu ?", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Dans l'échange…")], { after: 30 }),
+    p("a) Je réponds par un seul mot, c'est plus rapide.", { after: 20 }),
+    p("b) « Et vous, qu'en pensez-vous ? » sert à relancer l'échange.", { after: 20 }),
+    p("c) J'écoute la réponse jusqu'au bout.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : je réponds par une phrase complète ! b) Vrai. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. À toi.", { bold: true, color: C.SALMON }), run(" Ton opinion sur ton sport préféré, avec sa cause — puis une question à la classe.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Je trouve que le football rapproche les villages, car tout le monde y joue. Et vous, qui n'est pas d'accord ? Pourquoi ?", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -696,6 +824,23 @@ function lessonS44() {
         run("un exposé convainc quand chaque bienfait a sa cause — et quand la voix donne envie d'essayer.")]),
     sub("Exercice — ton exposé :"),
     p("Prépare le plan de ton exposé « Les bienfaits de … » : la périphrase de présentation, trois bienfaits avec leur cause, la mise en garde finale.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Remets le plan de l'exposé en ordre.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) Je conclus en invitant.", { after: 20 }),
+    p("b) Je présente mon sport avec une périphrase.", { after: 20 }),
+    p("c) Je mets en garde contre l'excès.", { after: 20 }),
+    p("d) Je donne trois bienfaits, chacun avec sa cause.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ordre : b → d → c → a.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque outil de langue à son rôle dans l'exposé.")], { after: 30 }),
+    relier(["une périphrase", "parce que, car, grâce à", "une phrase exclamative", "d'abord, ensuite, enfin"], ["donner les causes", "ranger les bienfaits dans l'ordre", "présenter le sport", "convaincre"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("périphrase → présenter ; parce que, car → les causes ; exclamative → convaincre ; d'abord, ensuite, enfin → l'ordre.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Devant le public…")], { after: 30 }),
+    p("a) Je regarde mes notes tout le temps.", { after: 20 }),
+    p("b) Je parle assez fort, sans courir.", { after: 20 }),
+    p("c) À la fin, je réponds aux questions.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : je regarde la classe ! b) Vrai. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Ton exposé.", { bold: true, color: C.SALMON }), run(" Le plan de « Les bienfaits de … » : périphrase, trois bienfaits avec cause, mise en garde.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Je vais vous parler du ballon rond… D'abord, il fortifie le cœur, parce qu'on court sans arrêt. Ensuite, il apprend l'équipe. Enfin, il donne des amis. Mais il ne faut pas s'entraîner sans repos. Venez essayer !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -775,6 +920,23 @@ function lessonS45() {
         run("une règle de jeu réussie se vérifie en jouant : si les joueurs se disputent, une règle manque de clarté.")]),
     sub("Exercice — tes règles de jeu :"),
     p("Rédige pour un jeu de ton choix : le matériel, trois règles numérotées (dont une interdiction négative), le but du jeu.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" La forme des règles de jeu.")], { after: 30 }),
+    p("a) Les règles sont numérotées.", { after: 20 }),
+    p("b) Il faut au moins une interdiction à la forme négative.", { after: 20 }),
+    p("c) Le but du jeu est inutile si les règles sont claires.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Vrai : « Il est interdit de courir en portant le ballon. » c) Faux : sans but du jeu, on ne sait pas comment on gagne !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Je retrouve dans le SOBIKA-BALL.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) le matériel", { after: 20 }),
+    p("b) le nombre de joueurs", { after: 20 }),
+    p("c) l'interdiction négative", { after: 20 }),
+    p("d) le but du jeu", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) un panier (sobika) et un ballon de chiffon. b) deux équipes de cinq. c) « Il est interdit de courir en portant le ballon » — et « on ne bouscule personne ». d) la première équipe à dix paniers gagne.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Chasse aux erreurs.", { bold: true, color: C.SALMON }), run(" Corrige cette règle fautive.")], { after: 30 }),
+    p("« Règle 2 : courir avec le ballon c'est pas permis et on gagne. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Règle 2 : Il est interdit de courir en portant le ballon. [négation complète, une seule idée par règle — le but du jeu s'écrit à part]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Tes règles de jeu.", { bold: true, color: C.SALMON }), run(" Pour un jeu de ton choix : matériel, trois règles numérotées (dont une interdiction négative), but du jeu.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Grille : nom, matériel, terrain, joueurs ? règles numérotées ? une interdiction négative ? le but du jeu ? Si les joueurs se disputent, une règle manque de clarté !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -849,6 +1011,20 @@ function lessonS46() {
         run("lire un reportage, c'est faire revivre le match ; lire une règle, c'est permettre de jouer sans dispute.")]),
     sub("Exercice — deux textes, deux voix :"),
     p("Lis en reporter enthousiaste : « Quel match, chers auditeurs ! » — puis en arbitre calme : « Règle 1 : ne jamais toucher le ballon avec la main. »", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque signe à son code de lecture.")], { after: 30 }),
+    relier(["la virgule ,", "les deux-points :", "le point d'exclamation !", "les guillemets « »"], ["l'émotion du match", "quelqu'un parle : je change de voix", "pause courte — le récit respire", "on prépare ce qui vient"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("virgule → pause courte ; deux-points → on prépare ce qui vient : « il a tiré : un carreau ! » ; ! → l'émotion ; guillemets → je change de voix.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Deux textes, deux voix.")], { after: 30 }),
+    p("a) Le reportage se lit posément, sans émotion.", { after: 20 }),
+    p("b) La règle de jeu se lit avec chaque numéro détaché.", { after: 20 }),
+    p("c) Les chiffres se lisent avec précision : treize à douze.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : le reportage se lit avec vie — le rythme suit le match ! b) Vrai, avec un point ferme après chaque règle. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Prépare ta partition.", { bold: true, color: C.SALMON }), run(" Marque les pauses / et // et souligne ce qui éclate.")], { after: 30 }),
+    p("« Quel match, chers auditeurs ! Il a tiré : un carreau ! »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Quel match, / chers auditeurs ! // Il a tiré : / un carreau ! // [l'exclamation éclate, les deux-points préparent le coup]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Défi des deux voix.", { bold: true, color: C.SALMON }), run(" Lis en reporter enthousiaste, puis en arbitre calme : « Règle 1 : ne jamais toucher le ballon avec la main. »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Conseil : la même bouche, deux musiques — le reporter vibre et accélère ; l'arbitre pose chaque mot, point ferme après la règle.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
