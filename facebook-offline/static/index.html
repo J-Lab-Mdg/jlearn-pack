@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Page Offline — Publications, Photos, Vidéos &amp; Recherche</title>
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- BARRE SUPÉRIEURE STYLE FACEBOOK -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="/icon.svg" alt="FB" class="brand-logo" />
+      <div>
+        <h1 class="brand-title" id="lblPageName">Ma Page Facebook (Hors-Ligne)</h1>
+        <p class="brand-sub" id="lblHeaderStats">Chargement de vos archives…</p>
+      </div>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="btn btn-outline" id="btnGuide" title="Comment exporter ma Page Facebook + Utiliser sur téléphone">
+        📖 Guide Export Facebook &amp; Téléphone
+      </button>
+      <button class="btn btn-primary" id="btnOpenImport">
+        📥 Importer / Mettre à jour (.zip)
+      </button>
+    </div>
+  </header>
+
+  <!-- BANDEAU D'IMPORT EN DIRECT -->
+  <div class="import-banner hidden" id="importBanner">
+    <div class="banner-left">
+      <span class="spinner"></span>
+      <span id="importBannerMsg">Importation de l'archive Facebook en cours…</span>
+    </div>
+  </div>
+
+  <!-- BARRE DE RECHERCHE & ONGLETS -->
+  <section class="nav-panel">
+    <div class="nav-inner">
+      <div class="view-tabs">
+        <button class="vtab active" data-view="feed" id="tabFeed">📰 Fil des publications (<span id="cntPosts">0</span>)</button>
+        <button class="vtab" data-view="photos" id="tabPhotos">📷 Galerie Photos (<span id="cntPhotos">0</span>)</button>
+        <button class="vtab" data-view="videos" id="tabVideos">🎬 Vidéos &amp; Reels (<span id="cntVideos">0</span>)</button>
+      </div>
+
+      <div class="search-bar" id="searchBarRow">
+        <input
+          type="search"
+          id="inpSearch"
+          placeholder="Rechercher un mot (malgache ou français), un sujet, un hashtag ou une date dans toute votre Page…"
+          autocomplete="off"
+        />
+        <button class="btn btn-blue" id="btnSearch">Rechercher</button>
+      </div>
+
+      <div class="filters-row">
+        <div class="type-pills" id="typePills">
+          <button class="pill active" data-type="">Tout</button>
+          <button class="pill" data-type="photo">📷 Avec Photos</button>
+          <button class="pill" data-type="video">🎬 Avec Vidéos</button>
+          <button class="pill" data-type="text">📝 Textes</button>
+          <button class="pill" data-type="link">🔗 Liens</button>
+        </div>
+        <div class="right-filters">
+          <label class="chk-fav">
+            <input type="checkbox" id="chkFavOnly" />
+            <span>★ Favoris</span>
+          </label>
+          <select id="selYear" class="select-sm">
+            <option value="0">Toutes les années</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="main-area">
+    <div class="feed-container" id="feedContainer"></div>
+    <div class="gallery-grid hidden" id="galleryContainer"></div>
+    <div class="load-more-wrap hidden" id="loadMoreWrap">
+      <button class="btn btn-blue" id="btnLoadMore">Afficher plus de publications</button>
+    </div>
+  </main>
+
+  <!-- VISIONNEUSE PLEIN ÉCRAN PHOTO (LIGHTBOX) -->
+  <div class="lightbox hidden" id="lightbox">
+    <button class="lb-close" id="btnCloseLightbox">✕</button>
+    <img id="lightboxImg" src="" alt="Photo plein écran" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <!-- MODALE D'IMPORTATION (.ZIP FACEBOOK) -->
+  <div class="modal-backdrop hidden" id="importModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>📥 Importer ou Mettre à jour votre Archive Officielle Facebook</h2>
+        <button class="btn-close" id="btnCloseImport">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="info-box">
+          <strong>💡 Méthode recommandée pour les gros fichiers (Disque Dur Externe / Cybercafé) :</strong>
+          <p style="margin:6px 0 0;">
+            Copiez simplement le(s) fichier(s) <code>.zip</code> téléchargé(s) depuis Facebook (même s'il y a plusieurs parties <code>part1.zip</code>, <code>part2.zip</code>…) directement dans ce dossier :
+          </p>
+          <code class="path-code" id="lblImportsDir">./imports</code>
+          <div id="pendingZipsBox" style="margin-top:8px;"></div>
+          <button class="btn btn-blue" id="btnScanFolder" style="margin-top:10px;">
+            🚀 Lancer l'import de tous les fichiers présents dans « imports/ »
+          </button>
+        </div>
+
+        <div class="upload-box">
+          <strong>Ou sélectionner directement un fichier <code>.zip</code> depuis cet écran :</strong>
+          <input type="file" id="inpZipFile" accept=".zip" style="margin-top:8px;display:block;" />
+          <button class="btn btn-outline-dark btn-sm" id="btnUploadZip" style="margin-top:8px;">
+            📤 Envoyer et importer ce fichier .zip
+          </button>
+          <div id="uploadProgText" class="small-muted" style="margin-top:6px;"></div>
+        </div>
+
+        <div class="rename-box">
+          <label for="inpPageTitle"><strong>Nom affiché en haut de votre Page :</strong></label>
+          <div style="display:flex;gap:8px;margin-top:5px;">
+            <input type="text" id="inpPageTitle" placeholder="Ex: Ma Page Éducative J-Learn" style="flex:1;padding:7px 10px;border:1px solid #cbd5e1;border-radius:6px;" />
+            <button class="btn btn-outline-dark btn-sm" id="btnSavePageTitle">Enregistrer</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline-dark" id="btnCancelImport">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE GUIDE : COMMENT EXPORTER SA PAGE FACEBOOK SANS RISQUE + TÉLÉPHONE -->
+  <div class="modal-backdrop hidden" id="guideModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>📖 Comment récupérer toute votre Page Facebook (100 % sûr, 0 blocage)</h2>
+        <button class="btn-close" id="btnCloseGuide">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="step-card">
+          <h3>🏠 Étape 1 — À faire DEPUIS CHEZ VOUS avant d'aller au cybercafé (1 minute, ~0 Mo)</h3>
+          <p class="small-muted">Pourquoi le demander depuis chez vous ? Parce que Facebook met 15 min à quelques heures pour fabriquer le gros fichier <code>.zip</code> sur ses propres serveurs. En le demandant avant de partir, le fichier sera déjà prêt quand vous arriverez au cybercafé !</p>
+          <ol>
+            <li>Ouvrez Facebook et <strong>basculez sur votre Page</strong> (en haut à droite, profil de la Page).</li>
+            <li>Allez dans <strong>Paramètres et confidentialité → Paramètres</strong>.</li>
+            <li>Cliquez sur <strong>« Télécharger les informations de la Page »</strong> (ou <em>Espace Comptes → Vos informations → Exporter vos informations</em>).</li>
+            <li>Cochez au minimum <strong>Publications (Posts)</strong>, <strong>Photos et vidéos</strong> et <strong>Informations sur la Page</strong>.</li>
+            <li>Choisissez :
+              <ul>
+                <li><strong>Période</strong> : <em>Depuis le début (All time)</em></li>
+                <li><strong>Format</strong> : <strong>JSON</strong> *(recommandé pour la recherche parfaite, même si HTML marche aussi !)*</li>
+                <li><strong>Qualité des médias</strong> : <em>Élevée</em> ou <em>Moyenne</em></li>
+              </ul>
+            </li>
+            <li>Cliquez sur <strong>Créer un fichier</strong>.</li>
+          </ol>
+        </div>
+
+        <div class="step-card">
+          <h3>⚡ Étape 2 — Une fois au Cybercafé</h3>
+          <ol>
+            <li>Ouvrez la notification Facebook <em>« Votre fichier est prêt à être téléchargé »</em> et enregistrez le(s) fichier(s) <code>.zip</code> dans <code>facebook-offline\imports\</code> sur votre disque dur externe.</li>
+            <li>Double-cliquez sur <code>LANCER_WINDOWS.bat</code> → cliquez sur <strong>« 📥 Importer / Mettre à jour (.zip) »</strong>.</li>
+            <li>Plus tard (dans 6 mois), exportez uniquement <em>« Les 6 derniers mois »</em> et ré-importez : seuls les nouveaux posts s'ajouteront, <strong>sans aucun doublon</strong> !</li>
+          </ol>
+        </div>
+
+        <div class="step-card wifi-card">
+          <h3>📱 Consulter votre Page sur Android &amp; iPhone en Wi-Fi local (0 Mo Internet)</h3>
+          <p class="small-muted">Même principe que vos autres outils : ouvrez cette adresse dans Chrome (Android) ou Safari (iPhone) sur le même Wi-Fi / partage de connexion :</p>
+          <div id="lanUrlsGuide"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-blue" id="btnOkGuide">Parfait, compris !</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

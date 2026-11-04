@@ -1,0 +1,16 @@
+{
+  "name": "Facebook Page Offline — Publications, Photos, Vidéos & Recherche",
+  "short_name": "FB Offline",
+  "description": "Lecteur et moteur de recherche hors-ligne pour l'export officiel de votre Page Facebook",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f2f5",
+  "theme_color": "#1877f2",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
