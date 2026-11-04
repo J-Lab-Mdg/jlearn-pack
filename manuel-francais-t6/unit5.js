@@ -4,6 +4,20 @@ const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, discBadge, img, imgFloat, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
+const relier = (left, right) => new Table({
+  width: { size: 8200, type: WidthType.DXA },
+  rows: [
+    new TableRow({ children: [
+      cell([pr([run("Colonne A", { bold: true, size: 24, color: C.GRAY })], { after: 10 })], { w: 4100, shade: "F5F5F5" }),
+      cell([pr([run("Colonne B", { bold: true, size: 24, color: C.GRAY })], { after: 10 })], { w: 4100, shade: "F5F5F5" }),
+    ] }),
+    ...left.map((l, i) => new TableRow({ children: [
+      cell([pr([run("•  " + l)], { after: 10 })], { w: 4100 }),
+      cell([pr([run("•  " + right[i])], { after: 10 })], { w: 4100 }),
+    ] })),
+  ],
+});
+
 const COLOR = "B03A2E"; // rouge brique événements familiaux
 const SHADE = "FADBD8";
 const TOTAL = 72;
@@ -152,6 +166,19 @@ function lessonS49() {
     sub("Exercice — j'ai bien écouté :"),
     p("1. Qui raconte sa vie, et quel événement familial est au cœur du récit ?"),
     p("2. Redis un souvenir entendu, au passé.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Justifie.")], { after: 30 }),
+    p("a) Le récit de vie raconte un événement inventé.", { after: 20 }),
+    p("b) Le mariage raconté s'est passé à Ambositra, en septembre.", { after: 20 }),
+    p("c) On entend les faits ET les sentiments de celui qui raconte.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : quelqu'un raconte un événement qu'il a RÉELLEMENT vécu. b) Vrai. c) Vrai — c'est ce qui touche.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Ma grille d'écoute.", { bold: true, color: C.SALMON }), run(" Réponds : où ? quand ? quoi ? comment ?")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Où ? à Ambositra. Quand ? en septembre. Quoi ? le mariage de tante Voahangy. Comment ? les discours, le vody ondry, le repas, les chants et les danses.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque mot à son sens.")], { after: 30 }),
+    relier(["l'orateur", "le vody ondry", "les noces", "le kabary"], ["la fête du mariage", "le discours traditionnel — il aide à comprendre « l'orateur »", "celui qui parle au nom de la famille", "le présent offert aux parents de la mariée"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("orateur → celui qui parle au nom de la famille ; vody ondry → le présent de la demande ; noces → la fête du mariage ; kabary → le discours [le transfert malgache-français !].", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Redis un souvenir.", { bold: true, color: C.SALMON }), run(" Au passé, en une phrase.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Ce jour-là, l'orateur a parlé au nom de la famille, puis tout le monde a chanté et dansé jusqu'au soir.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -238,6 +265,25 @@ function lessonS50() {
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("la confusion avec « assister quelqu'un », qui veut dire l'aider" + ".")]),
     sub("Exercice — je classe les événements :"),
     p("Naissance, famorana, mariage ou décès ? le vœu de bonheur — le lamba neuf du petit garçon — la demande officielle — les condoléances.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Je classe les événements.", { bold: true, color: C.SALMON }), run(" Naissance, famorana, mariage ou décès ?")], { after: 30 }),
+    p("a) le vœu de bonheur", { after: 20 }),
+    p("b) le lamba neuf du petit garçon", { after: 20 }),
+    p("c) la demande officielle", { after: 20 }),
+    p("d) les condoléances", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) le mariage [« Tous mes vœux de bonheur ! »] — b) le famorana — c) le mariage [le vody ondry] — d) le décès.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Le transfert malgache-français.", { bold: true, color: C.SALMON }), run(" Je relie.")], { after: 30 }),
+    relier(["le famorana", "le famadihana", "le kabary", "le lambamena"], ["l'exhumation", "le grand tissu de soie rouge", "la circoncision", "le discours"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("famorana → la circoncision ; famadihana → l'exhumation ; kabary → le discours ; lambamena → le grand tissu de soie rouge.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Que dit-on ?", { bold: true, color: C.SALMON }), run(" Choisis la parole juste.")], { after: 30 }),
+    p("a) aux parents du nouveau-né", { after: 20 }),
+    p("b) aux mariés", { after: 20 }),
+    p("c) à la famille en deuil", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) « Félicitations ! » — b) « Tous mes vœux de bonheur ! » — c) « Toutes mes condoléances. »", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « Assister à un mariage », c'est aider les mariés.", { after: 20 }),
+    p("b) Chaque famille a ses coutumes, et on les respecte toutes.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : assister À un mariage, c'est y être présent — assister QUELQU'UN, c'est l'aider ! b) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -318,6 +364,23 @@ function lessonS51() {
         run("toutes les familles n'ont pas les mêmes coutumes : chacune honore ses anciens à sa manière — et on respecte chaque manière.")]),
     sub("Exercice — je retrouve dans le récit :"),
     p("1. La situation de départ. — 2. L'événement qui change tout. — 3. Un verbe à l'imparfait (le décor) et un verbe au passé (l'action).", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Remets la structure en ordre.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) la situation finale — l'histoire se referme", { after: 20 }),
+    p("b) la situation initiale — le décor", { after: 20 }),
+    p("c) les événements — les actions, dans l'ordre", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ordre : b → c → a. Le décor, les actions, la fin.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Décor ou action ?", { bold: true, color: C.SALMON }), run(" Imparfait ou passé simple ?")], { after: 30 }),
+    p("a) « La famille vivait dispersée. »", { after: 20 }),
+    p("b) « La nouvelle circula. »", { after: 20 }),
+    p("c) « Tous arrivèrent. »", { after: 20 }),
+    p("d) « Chacun reprit la route, fatigué et heureux. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) imparfait → le décor, l'arrière-plan. b), c), d) passé simple → les actions qui font avancer l'histoire.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque mot du récit à son sens.")], { after: 30 }),
+    relier(["le doyen", "le lambamena", "dispersée"], ["éparpillée, chacun d'un côté", "le plus âgé de la famille", "le grand tissu de soie rouge des ancêtres"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("doyen → le plus âgé ; lambamena → le tissu de soie rouge ; dispersée → éparpillée.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Je retrouve dans le récit.", { bold: true, color: C.SALMON }), run(" La situation de départ et l'événement qui change tout.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("R.A. : départ — la famille vivait dispersée ; l'événement — la nouvelle du famadihana circula, et tous arrivèrent.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -400,6 +463,21 @@ function lessonS52() {
     sub("Exercice — au passé simple :"),
     p("Conjugue : « Ce jour-là, grand-père (arriver) à l'aube ; il (être) le premier ; tous (chanter). »"),
     pr([run("[-er → -a / -èrent ; être → fut]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Conjugue au passé simple.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("« Ce jour-là, grand-père (arriver) à l'aube ; il (être) le premier ; tous (chanter). »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("arriva — fut — chantèrent. [-er → -a / -èrent ; être → il fut]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque infinitif à son passé simple.")], { after: 30 }),
+    relier(["finir", "prendre", "venir", "avoir"], ["il prit", "il eut", "il finit", "il vint"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("finir → il finit ; prendre → il prit ; venir → il vint ; avoir → il eut — « Il eut les larmes aux yeux. »", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Imparfait ou passé simple ?", { bold: true, color: C.SALMON }), run(" Complète.")], { after: 30 }),
+    p("a) Chaque année, la maison ……… (être) pleine pour la fête.", { after: 20 }),
+    p("b) Soudain, les tambours ……… (éclater).", { after: 20 }),
+    p("c) Le doyen ……… (dire) le kabary, puis tous ……… (danser).", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) était [le décor qui dure] — b) éclatèrent [l'action qui arrive] — c) dit, puis dansèrent.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Chasse aux erreurs.", { bold: true, color: C.SALMON }), run(" Corrige.")], { after: 30 }),
+    p("« Ils arrivait à l'aube ; ce fûrent un moment doux. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ils arrivèrent à l'aube ; ce fut un moment doux. [ils + -èrent ; être → ce fut, sans accent]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -474,6 +552,25 @@ function lessonS53() {
         run("dans un récit, je dis la veille et le lendemain — hier et demain appartiennent à celui qui parle aujourd'hui.")]),
     sub("Exercice — situe dans le temps :"),
     p("Complète avec la veille, ce jour-là, le lendemain : « ………, on prépara la maison. ………, les invités arrivèrent. ………, chacun repartit avec un souvenir. »", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Je classe.", { bold: true, color: C.SALMON }), run(" Présent, passé ou futur ?")], { after: 30 }),
+    p("a) autrefois", { after: 20 }),
+    p("b) actuellement", { after: 20 }),
+    p("c) après-demain", { after: 20 }),
+    p("d) la veille", { after: 20 }),
+    p("e) bientôt", { after: 20 }),
+    p("f) hier", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Passé : a, d, f. Présent : b. Futur : c, e.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Complète.", { bold: true, color: C.SALMON }), run(" Avec la veille, ce jour-là, le lendemain.")], { after: 30 }),
+    p("« ………, on prépara la maison. ………, les invités arrivèrent. ………, chacun repartit avec un souvenir. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("La veille, on prépara la maison. Ce jour-là, les invités arrivèrent. Le lendemain, chacun repartit avec un souvenir.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « Hier » et « demain » appartiennent à celui qui parle aujourd'hui.", { after: 20 }),
+    p("b) Dans un récit au passé, on écrit « demain, tous arrivèrent ».", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : dans le récit, on dit LE LENDEMAIN — « Le lendemain, tous arrivèrent. »", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Transforme.", { bold: true, color: C.SALMON }), run(" Fais passer la phrase dans le récit.")], { after: 30 }),
+    p("« Hier, je suis allé au mariage ; demain, je repars. » → « Ce jour-là, … »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ce jour-là, il alla au mariage ; le lendemain, il repartit. [hier → la veille ; demain → le lendemain]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -550,6 +647,25 @@ function lessonS54() {
         run("quoi ? qui ? → le, la, l', les ; à qui ? → lui, leur — toujours avant le verbe.")]),
     sub("Exercice — remplace sans répéter :"),
     p("1. « Je vois ma grand-mère. » → Je ……… vois. — 2. « Il parle à ses cousins. » → Il ……… parle. — 3. Mets la phrase 1 à la forme négative.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Remplace sans répéter.", { bold: true, color: C.SALMON }), run(" le, la, l', les, lui ou leur ?")], { after: 30 }),
+    p("a) « Je vois ma grand-mère. » → Je ……… vois.", { after: 20 }),
+    p("b) « Il parle à ses cousins. » → Il ……… parle.", { after: 20 }),
+    p("c) « On honore les ancêtres. » → On ……… honore.", { after: 20 }),
+    p("d) « On offre le vody ondry aux parents. » → On ……… offre le vody ondry.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Je la vois. b) Il leur parle. c) On les honore. d) On leur offre le vody ondry.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. COD ou COI ?", { bold: true, color: C.SALMON }), run(" Pose la question : quoi ? qui ? ou à qui ?")], { after: 30 }),
+    p("a) « Elle écoute l'orateur. »", { after: 20 }),
+    p("b) « Je parle à l'oncle. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) écoute QUI ? → COD → Elle l'écoute. b) parle À QUI ? → COI → Je lui parle.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. À la forme négative.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « Je la vois. »", { after: 20 }),
+    p("b) « Je leur ai tout dit. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Je ne la vois pas. b) Je ne leur ai rien dit. [ne + pronom + verbe + pas/rien]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) Le pronom COD se place après le verbe.", { after: 20 }),
+    p("b) « À qui ? » appelle lui ou leur.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : toujours AVANT le verbe — je le vois, je lui parle. b) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -623,6 +739,19 @@ function lessonS55() {
         run("un bon débat ne cherche pas un vainqueur : il cherche une idée plus juste que celle du départ.")]),
     sub("Exercice — débats en respectant :"),
     p("Avec ton voisin : l'un défend une pratique familiale, l'autre pose deux questions polies — sans jamais juger la famille de l'autre.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque outil de débat à son rôle.")], { after: 30 }),
+    relier(["À mon avis, … parce que…", "C'est vrai, mais…", "Que ferais-tu, toi ?", "Chez nous, on fait ainsi ; ailleurs, autrement."], ["la question qui fait réfléchir", "le respect des coutumes", "l'opinion avec sa raison", "la concession polie"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("À mon avis → l'opinion ; C'est vrai, mais → la concession polie ; Que ferais-tu → la question ; Chez nous / ailleurs → le respect.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" La règle d'or.")], { after: 30 }),
+    p("a) On discute des pratiques, jamais des personnes.", { after: 20 }),
+    p("b) Un bon débat cherche un vainqueur.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : il cherche une idée plus juste que celle du départ !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Complète la concession.", { bold: true, color: C.SALMON }), run(" Poliment.")], { after: 30 }),
+    p("« À mon avis, une grande fête honore la famille, parce que tout le village partage la joie. » — « C'est vrai, mais ……… »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : C'est vrai, mais certaines familles s'endettent pour des années : est-ce raisonnable ?", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Débats en respectant.", { bold: true, color: C.SALMON }), run(" L'un défend une pratique familiale, l'autre pose deux questions polies — sans jamais juger la famille de l'autre.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Grille d'écoute : l'opinion a-t-elle sa raison ? les questions sont-elles polies ? les coutumes de l'autre sont-elles respectées ?", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -695,6 +824,23 @@ function lessonS56() {
         run("un reportage réussi fait vivre l'événement à ceux qui n'y étaient pas.")]),
     sub("Exercice — ton mini-reportage :"),
     p("Prépare ton plan : l'annonce (où ? quand ? quoi ?), deux moments forts, une phrase d'interview, la clôture.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Remets le plan du reportage en ordre.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) la clôture : « Ici votre reporter, en direct ! »", { after: 20 }),
+    p("b) l'annonce : où, quand, quoi", { after: 20 }),
+    p("c) l'interview : deux questions à un invité", { after: 20 }),
+    p("d) deux moments forts, avec les indicateurs temporels", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ordre : b → d → c → a.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" La voix du reporter.")], { after: 30 }),
+    p("a) Vivante : on doit voir la fête en fermant les yeux.", { after: 20 }),
+    p("b) Les noms et les lieux sont des détails inutiles.", { after: 20 }),
+    p("c) Les questions font parler l'invité.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : la précision est une qualité du reporter ! c) Vrai — la curiosité aussi.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Complète l'annonce.", { bold: true, color: C.SALMON }), run(" Où ? quand ? quoi ?")], { after: 30 }),
+    p("« Ce ………, à ………, toute une famille célèbre ……… »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Ce dimanche, à Ambositra, toute une famille célèbre un mariage.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Ton mini-reportage.", { bold: true, color: C.SALMON }), run(" Prépare : l'annonce, deux moments forts, une phrase d'interview, la clôture.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("La preuve du reportage réussi : le public peut remplir la grille où ? quand ? quoi ? comment ? sans rien demander.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -772,6 +918,22 @@ function lessonS57() {
     sub("Exercice — améliore comme un écrivain :"),
     p("« le jour du mariage de ma tante tout le monde était la on a bien mangé » → corrige, ajoute un indicateur temporel et un pronom : ………"),
     pr([run("[exemple : Ce jour-là, toute la famille entoura ma tante ; je la revois encore sourire.]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Améliore comme un écrivain.", { bold: true, color: C.SALMON }), run(" Corrige, ajoute un indicateur temporel et un pronom.")], { after: 30 }),
+    p("« le jour du mariage de ma tante tout le monde était la on a bien mangé »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Ce jour-là, toute la famille entoura ma tante ; je la revois encore sourire. [majuscule, indicateur, pronom « la »]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Remets le plan du récit de vie en ordre.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) la situation finale — la fin et ce que j'ai ressenti", { after: 20 }),
+    p("b) les événements — dans l'ordre, avec les indicateurs", { after: 20 }),
+    p("c) la situation initiale — où ? quand ? l'attente", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ordre : c → b → a.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Pour réussir la dictée.")], { after: 30 }),
+    p("a) J'écris dès le premier mot entendu.", { after: 20 }),
+    p("b) Je surveille les -èrent, fut et les accords.", { after: 20 }),
+    p("c) À la relecture, je vérifie majuscules et points.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : j'écoute TOUTE la phrase avant d'écrire. b) Vrai. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Ton récit de vie.", { bold: true, color: C.SALMON }), run(" Trois parties : le décor à l'imparfait, les actions dans l'ordre, ce que tu as ressenti.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Grille : trois parties visibles ? décor à l'imparfait, actions au passé ? indicateurs temporels ? un pronom contre la répétition ? majuscules, points, accords ?", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -848,6 +1010,20 @@ function lessonS58() {
         run("lire un récit, c'est prêter sa voix à ceux qui ont vécu l'histoire.")]),
     sub("Exercice — la voix suit le récit :"),
     p("Lis en changeant d'allure : « La maison dormait encore. Soudain, les tambours éclatèrent ! Quelle fête, mes amis, quelle fête ! »", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque signe à son code de lecture.")], { after: 30 }),
+    relier(["la virgule ,", "les deux-points :", "les guillemets « »", "le point ."], ["le doyen parle : je change de voix", "pause longue — l'image s'installe", "la phrase longue respire", "on annonce ce qui vient"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("virgule → la phrase respire ; deux-points → on annonce ; guillemets → je change de voix ; point → pause longue.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" La voix suit le récit.")], { after: 30 }),
+    p("a) Le décor se lit posément.", { after: 20 }),
+    p("b) La dernière phrase se lit vite, pour finir.", { after: 20 }),
+    p("c) Les passés simples se lisent exactement : arrivèrent, fut.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : lentement — c'est elle qu'on retient ! c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Prépare ta partition.", { bold: true, color: C.SALMON }), run(" Marque les pauses / et // et l'endroit où la voix change d'allure.")], { after: 30 }),
+    p("« La maison dormait encore. Soudain, les tambours éclatèrent ! »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("La maison dormait encore. // [posément] Soudain, / les tambours éclatèrent ! // [la voix s'anime d'un coup]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Défi de lecture.", { bold: true, color: C.SALMON }), run(" Lis en changeant d'allure : « La maison dormait encore. Soudain, les tambours éclatèrent ! Quelle fête, mes amis, quelle fête ! »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Conseil : trois allures — le décor posé, l'action vive, l'exclamation qui éclate. Deux lectures valent mieux qu'une !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
