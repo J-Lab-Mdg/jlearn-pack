@@ -991,6 +991,7 @@ function lessonS10() {
     discBadge("LECTURE (LECTURE-FLUIDITÉ)", COLOR),
     p("", { after: 40 }),
     p([run("LIRE AVEC LA PONCTUATION", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
+    pr([run("🎧 Audio de la séance : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1_zh75qOz6XCoasEkLfahBuutfD_vcEjm/view", { color: "1F618D", size: 22 })], { after: 120 }),
     img("b1_lecture.png", 440, 768 / 1376),
     p("", { after: 60 }),
     sub("Le code des signes :"),
@@ -1103,6 +1104,7 @@ function revision() {
     pAns("R.A. : expression d'avis + opinion + justification : À mon avis, l'Isalo est le plus beau parc, car ses paysages sont uniques.", ["justification"]),
     p("", { after: 40 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/18U1yehkZvVTvqV6efjb8sn9dMjDzZb05/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« À gauche de la piste, les baobabs se dressent vers le ciel. Près du village, les visiteurs admirent le coucher du soleil. À mon avis, Morondava est la plus belle étape de notre voyage. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "), run("à gauche de", { bold: true, color: C.SALMON, hl: true }), run(" [marqueur de lieu], "), run("se dressent", { bold: true, color: C.SALMON, hl: true }), run(" [les baobabs se lèvent comme des géants], "), run("la plus belle", { bold: true, color: C.SALMON, hl: true }), run(" [superlatif : accord au féminin].")], { after: 80 }),
   ];
