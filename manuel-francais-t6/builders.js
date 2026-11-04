@@ -21,8 +21,9 @@ const SZ = { BODY: 28, FICHE: 24, SUB: 32, TITLE: 40, UNIT: 44 };
 const FONT = "Times New Roman";
 const IMG_DIR = path.join(__dirname, "img");
 
+const curl = (t) => typeof t === "string" ? t.replace(/'/g, "\u2019") : t;
 const run = (text, o = {}) => new TextRun({
-  text, bold: !!o.bold, italics: !!o.italic, color: o.color || C.BLACK,
+  text: curl(text), bold: !!o.bold, italics: !!o.italic, color: o.color || C.BLACK,
   size: o.size || SZ.BODY, font: FONT,
   ...(o.hl ? { highlight: "yellow" } : {}),
 });
@@ -202,7 +203,7 @@ const deroulement = (rows) => new Table({
 const discBadge = (label, color) => new Paragraph({
   alignment: AlignmentType.CENTER,
   spacing: { after: 40 },
-  children: [new TextRun({ text: label, bold: true, color, size: 30, font: FONT, underline: {} })],
+  children: [new TextRun({ text: curl(label), bold: true, color, size: 30, font: FONT, underline: {} })],
 });
 
 function fiche(globalNo, totalSessions, meta, rows, bookmarkId, disc, discColor) {
