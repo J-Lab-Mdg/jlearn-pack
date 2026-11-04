@@ -4,6 +4,20 @@ const { C, SZ, run, p, pr, kw, pAns, fp, fiche, sectionRow, stepRow,
         unitBanner, discBadge, img, imgFloat, pageBreak, lessonTitle, sub, iCan, cell } = B;
 const { Table, TableRow, WidthType } = require("docx");
 
+const relier = (left, right) => new Table({
+  width: { size: 8200, type: WidthType.DXA },
+  rows: [
+    new TableRow({ children: [
+      cell([pr([run("Colonne A", { bold: true, size: 24, color: C.GRAY })], { after: 10 })], { w: 4100, shade: "F5F5F5" }),
+      cell([pr([run("Colonne B", { bold: true, size: 24, color: C.GRAY })], { after: 10 })], { w: 4100, shade: "F5F5F5" }),
+    ] }),
+    ...left.map((l, i) => new TableRow({ children: [
+      cell([pr([run("•  " + l)], { after: 10 })], { w: 4100 }),
+      cell([pr([run("•  " + right[i])], { after: 10 })], { w: 4100 }),
+    ] })),
+  ],
+});
+
 const COLOR = "AD1457"; // magenta monde imaginaire
 const SHADE = "F8BBD0";
 const TOTAL = 72;
@@ -153,6 +167,23 @@ function lessonS61() {
     sub("Exercice — j'ai bien écouté :"),
     p("1. Qui est le héros, et quel est son problème ?"),
     p("2. Cite une péripétie, puis la fin du conte. Qu'a-t-on compris sans que le conte le dise ?", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Justifie.")], { after: 30 }),
+    p("a) Le héros du conte est l'aîné des trois fils.", { after: 20 }),
+    p("b) Dans les contes, la troisième tentative est souvent la bonne.", { after: 20 }),
+    p("c) À la fin, la pluie revient et le village est sauvé.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : c'est Faralahy — l'aîné et le deuxième échouent. b) Vrai. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Ma grille d'écoute.", { bold: true, color: C.SALMON }), run(" Début, milieu, fin.")], { after: 30 }),
+    p("a) DÉBUT : qui ? où ?", { after: 20 }),
+    p("b) MILIEU : qu'est-ce qui a troublé la paix ?", { after: 20 }),
+    p("c) FIN : quelle est l'issue ?", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) un village heureux, le chef, ses trois fils. b) la pluie cessa ; il faut ramener l'oiseau de pluie. c) la pluie revient, le village est sauvé.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Explicite ou implicite ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « La pluie cessa. »", { after: 20 }),
+    p("b) L'oiseau choisit Faralahy parce qu'il est patient et bon.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) explicite — c'est dit dans le conte. b) implicite — cela se comprend entre les lignes.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. D'une langue à l'autre.", { bold: true, color: C.SALMON }), run(" Que signifie « Angano angano, arira arira… » ?")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("C'est la formule d'ouverture malgache — l'équivalent de « Il était une fois… » : chaque langue a sa porte vers l'imaginaire.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -234,6 +265,23 @@ function lessonS62() {
     pr([run("À éviter : ", { bold: true, color: C.RED }), run("« dire un conte »" + ".")]),
     sub("Exercice — les quatre grands récits :"),
     p("Conte, légende, fable ou mythe ? 1. Des animaux qui parlent et une leçon. — 2. « On raconte que le lac serait né des larmes d'une reine. » — 3. « Il était une fois… » — 4. Le récit des origines du monde.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Conte, légende, fable ou mythe ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) Des animaux qui parlent et une leçon.", { after: 20 }),
+    p("b) « On raconte que le lac serait né des larmes d'une reine. »", { after: 20 }),
+    p("c) « Il était une fois… »", { after: 20 }),
+    p("d) Le récit des origines du monde.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) la fable — b) la légende [attachée à un lieu réel, embellie] — c) le conte (l'angano) — d) le mythe.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Je relie.", { bold: true, color: C.SALMON }), run(" Les mots du conte.")], { after: 30 }),
+    relier(["le héros", "l'épreuve", "la quête", "le personnage merveilleux"], ["ce qu'il cherche", "l'animal qui parle, l'esprit, l'oiseau magique", "celui qui part", "ce qu'il affronte"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("héros → celui qui part ; épreuve → ce qu'il affronte ; quête → ce qu'il cherche ; personnage merveilleux → l'animal qui parle, l'esprit.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) La fable écrit sa morale ; le conte cache la sienne.", { after: 20 }),
+    p("b) On dit « dire un conte ».", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai — c'est au lecteur de trouver celle du conte ! b) Faux : on dit « raconter un conte », « raconter une histoire ».", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Complète.", { bold: true, color: C.SALMON }), run(" Avec les formules du voyage dans le temps.")], { after: 30 }),
+    p("« ……… un roi très sage. ………, un dragon parut. ………, le royaume vécut en paix. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Il était une fois un roi très sage. Un jour, un dragon parut. Depuis ce jour, le royaume vécut en paix.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -313,6 +361,19 @@ function lessonS63() {
         run("qui regarde devant et pense à l'après arrive entier.")]),
     sub("Exercice — trouve la morale :"),
     p("Lis : « La petite tortue avança chaque jour ; le lièvre moqueur dormit trop longtemps. » Quelle est la morale cachée ? Quel proverbe malgache s'en rapproche ?", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Trouve la morale cachée.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("« La petite tortue avança chaque jour ; le lièvre moqueur dormit trop longtemps. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Morale : la persévérance vaut mieux que la vitesse — qui avance chaque jour arrive avant qui se croit déjà arrivé.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque mot à son sens.")], { after: 30 }),
+    relier(["se moquer", "un piège", "prudent", "le tanalahy"], ["ce qui est caché pour attraper", "qui réfléchit avant d'agir", "rire de quelqu'un pour le rabaisser", "le caméléon du proverbe : regarde devant, pense à l'après"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("se moquer → rire pour rabaisser ; piège → caché pour attraper ; prudent → réfléchit avant d'agir ; tanalahy → le caméléon du proverbe.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" La fable.")], { after: 30 }),
+    p("a) Ses animaux parlent comme des humains.", { after: 20 }),
+    p("b) Sa morale est toujours cachée.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : dans la fable, la morale est ÉCRITE à la fin — c'est dans le conte qu'elle se devine.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Du proverbe à la fable.", { bold: true, color: C.SALMON }), run(" Quelle sagesse malgache rejoint la morale de la tortue ?")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : « Fais comme le tanalahy : regarde devant, pense à l'après. » — la sagesse malgache et la fable disent la même chose, chacune à sa manière.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -389,6 +450,22 @@ function lessonS64() {
         run("les verbes d'action et de mouvement sont les muscles du récit : ils font voir la scène.")]),
     sub("Exercice — la nuance fait l'image :"),
     p("Remplace « aller » par un verbe plus précis : « Le héros (alla) vers la forêt » → il marcha ? il courut ? il se glissa ? Choisis et justifie l'image.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Je classe.", { bold: true, color: C.SALMON }), run(" Verbe de mouvement ou verbe d'action ?")], { after: 30 }),
+    p("a) bondir", { after: 20 }),
+    p("b) saisir", { after: 20 }),
+    p("c) s'envoler", { after: 20 }),
+    p("d) soulever", { after: 20 }),
+    p("e) ramper", { after: 20 }),
+    p("f) construire", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Mouvement : a, c, e [un déplacement]. Action : b, d, f [un geste].", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. La nuance fait l'image.", { bold: true, color: C.SALMON }), run(" Remplace « aller » : « Le héros (alla) vers la forêt. »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemples : il marcha [le calme], il courut [la hâte], il se glissa [la discrétion] — même déplacement, trois images différentes.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque phrase à son image.")], { after: 30 }),
+    relier(["« Faralahy marcha d'un pas égal »", "« Le merle fonça sans regarder »", "« Le serpent rampa vers le nid »", "« L'oiseau s'envola d'un coup »"], ["l'imprudence", "la menace silencieuse", "le calme", "la liberté soudaine"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("marcha d'un pas égal → le calme ; fonça → l'imprudence ; rampa → la menace silencieuse ; s'envola → la liberté soudaine.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. La règle d'or du conteur.", { bold: true, color: C.SALMON }), run(" Améliore : « il alla très très vite vers la rivière ».")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Il se précipita vers la rivière. [un verbe précis vaut mieux que trois adjectifs !]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -467,6 +544,21 @@ function lessonS65() {
     sub("Exercice — l'ordre à retenir :"),
     p("1. « Le génie a parlé au pêcheur. » → remplace « au pêcheur » par un pronom. — 2. Mets la phrase à la forme négative."),
     pr([run("[Il lui a parlé. / Il ne lui a pas parlé : le pronom reste collé au verbe]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Remplace par un pronom.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « Le génie a parlé au pêcheur. »", { after: 20 }),
+    p("b) « Niry et Beby parlent au merle. »", { after: 20 }),
+    p("c) « Vous demandez des crayons aux voisins. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Il lui a parlé. b) Niry et Beby lui parlent. c) Vous leur demandez des crayons.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Mets à la forme négative.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « Il lui a parlé. »", { after: 20 }),
+    p("b) « Vous leur demandez quelque chose. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Il ne lui a pas parlé. b) Vous ne leur demandez rien. [ne + lui/leur + verbe + pas/rien]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Remets les mots en ordre.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("« rien / ne / je / ai / lui / dit »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Je ne lui ai rien dit. [le pronom reste collé au verbe ; la négation entoure le tout]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. L'interdit du conte.", { bold: true, color: C.SALMON }), run(" Invente deux interdits à l'impérative négative pour ton héros.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemples : N'ouvre jamais cette porte ! Ne parle à personne en chemin ! [l'interdit ouvre l'aventure…]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -541,6 +633,22 @@ function lessonS66() {
         run("la morale se cache dans la victoire du héros : qui gagne, et grâce à quoi ?")]),
     sub("Exercice — morale et opinion :"),
     p("Choisis un conte que tu connais : dis sa morale en une phrase, puis ton opinion avec sa cause : « Je trouve que… , car… ».", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. La méthode en trois questions.", { bold: true, color: C.SALMON }), run(" Applique au conte de l'oiseau de pluie.")], { after: 30 }),
+    p("a) Qui gagne ?", { after: 20 }),
+    p("b) Grâce à quoi ?", { after: 20 }),
+    p("c) Dis la leçon en une phrase.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faralahy. b) grâce à sa patience et sa bonté. c) La patience et la bonté sont récompensées.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque histoire à sa morale.")], { after: 30 }),
+    relier(["Faralahy gagne grâce à sa patience", "le merle perd à cause de sa précipitation", "la tortue avance chaque jour", "le lièvre moqueur dort trop longtemps"], ["réfléchir avant d'agir protège", "se croire arrivé fait perdre", "la patience est récompensée", "la persévérance mène au but"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Faralahy → la patience récompensée ; le merle → réfléchir avant d'agir ; la tortue → la persévérance ; le lièvre → se croire arrivé fait perdre.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" À quoi servent les contes ?")], { after: 30 }),
+    p("a) Ils transmettent la sagesse des anciens.", { after: 20 }),
+    p("b) Ils punissent pour apprendre.", { after: 20 }),
+    p("c) Ils gardent la mémoire de la langue.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : ils apprennent SANS punir — la leçon passe par l'histoire. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Ton opinion.", { bold: true, color: C.SALMON }), run(" Avec sa cause : « Je trouve que les contes… , car… »")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : À mon avis, les contes ne sont pas que pour les petits, parce que la sagesse n'a pas d'âge.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -615,6 +723,22 @@ function lessonS67() {
         run("le conteur ne lit pas une histoire : il la fait vivre devant ceux qui l'écoutent.")]),
     sub("Exercice — raconte, ne récite pas :"),
     p("À trois : partagez-vous un conte (début, milieu, fin). Chacun note ses mots-clés, puis racontez-le d'une traite — avec la voix qui change !", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Qui fait quoi ?", { bold: true, color: C.SALMON }), run(" Remets le partage à trois en ordre.")], { after: 30 }),
+    p("a) donner la fin… et laisser deviner la morale", { after: 20 }),
+    p("b) poser le début : le décor, les personnages", { after: 20 }),
+    p("c) mener le milieu : les péripéties, l'une après l'autre", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ordre : b → c → a. Le premier ouvre, le deuxième mène, le troisième referme.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Les secrets du conteur.")], { after: 30 }),
+    p("a) La voix change avec les personnages.", { after: 20 }),
+    p("b) Le silence se place n'importe où.", { after: 20 }),
+    p("c) On récite le conte mot à mot.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : juste AVANT le moment important ! c) Faux : on raconte, on ne récite pas — je garde l'ordre, je choisis mes mots.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque formule à son rôle.")], { after: 30 }),
+    relier(["« Angano angano… »", "« Il était une fois… »", "« Depuis ce jour… »", "le geste du conteur"], ["la formule d'ouverture en français", "il accompagne les verbes de mouvement", "elle installe le silence", "la formule de clôture"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Angano angano → installe le silence ; Il était une fois → l'ouverture ; Depuis ce jour → la clôture ; le geste → accompagne bondir, s'envoler…", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. À trois !", { bold: true, color: C.SALMON }), run(" Partagez-vous un conte (début, milieu, fin), notez vos mots-clés, racontez d'une traite.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Grille d'écoute : la formule d'ouverture ? l'ordre des péripéties ? la voix qui change ? la morale devinée par le public ?", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -687,6 +811,25 @@ function lessonS68() {
         run("écrire ensemble, c'est veiller chacun à sa phrase — et tous à la même histoire.")]),
     sub("Exercice — le conte en chaîne :"),
     p("En rangée : le premier écrit la situation de départ, le deuxième le problème, le troisième l'épreuve… une ligne chacun, puis lecture à voix haute du conte complet.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Remets le canevas en ordre.", { bold: true, color: C.SALMON }), run(" ")], { after: 30 }),
+    p("a) « Depuis ce jour » + l'issue", { after: 20 }),
+    p("b) « Il était une fois » + un héros + un lieu", { after: 20 }),
+    p("c) l'épreuve + un verbe d'action", { after: 20 }),
+    p("d) « Un jour » + ce qui trouble la paix", { after: 20 }),
+    p("e) la rencontre du personnage merveilleux + son interdit", { after: 20 }),
+    p("f) « Alors » le héros part + un verbe de mouvement", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ordre : b → d → f → e → c → a.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Ce que le jeu apprend.")], { after: 30 }),
+    p("a) Une phrase incomplète suffit, on comprendra.", { after: 20 }),
+    p("b) La cohérence, c'est un seul héros, un seul fil.", { after: 20 }),
+    p("c) Les pronoms et les mots de liaison recousent l'histoire.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Faux : sans phrases complètes, le conte ne tient pas debout ! b) Vrai. c) Vrai.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Écris la ligne manquante.", { bold: true, color: C.SALMON }), run(" La ligne 4 : la rencontre + l'interdit.")], { after: 30 }),
+    p("« … Alors le garçon courut vers la montagne. ……… . L'épreuve commença. »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Il rencontra un vieux caméléon qui lui dit : « Ne regarde jamais derrière toi. »", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Le conte en chaîne.", { bold: true, color: C.SALMON }), run(" Une ligne chacun, puis lecture à voix haute du conte complet.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Vérification collective : chaque phrase est-elle complète ? le héros est-il resté le même du début à la fin ?", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -761,6 +904,23 @@ function lessonS69() {
     sub("Exercice — améliore comme un conteur :"),
     p("« il y avait un garçon il va dans la foret il trouve un trésor » → corrige, mets le décor à l'imparfait et ajoute une formule d'ouverture : ………"),
     pr([run("[exemple : Il était une fois un garçon courageux qui vivait près de la grande forêt. Un matin, il découvrit un trésor…]", { italic: true, color: C.GRAY, size: 26 })], { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Améliore comme un conteur.", { bold: true, color: C.SALMON }), run(" Corrige, décor à l'imparfait, formule d'ouverture.")], { after: 30 }),
+    p("« il y avait un garçon il va dans la foret il trouve un trésor »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Exemple : Il était une fois un garçon courageux qui vivait près de la grande forêt. Un matin, il découvrit un trésor… [imparfait pour le décor, passé simple pour l'action, accent à forêt]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Remets mes outils en ordre d'emploi.", { bold: true, color: C.SALMON }), run(" Du décor à la fin.")], { after: 30 }),
+    p("a) le passé simple pour les actions", { after: 20 }),
+    p("b) l'imparfait pour le décor", { after: 20 }),
+    p("c) la formule de clôture « depuis ce jour »", { after: 20 }),
+    p("d) la formule d'ouverture « il était une fois »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Ordre : d → b → a → c.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" Ma grille de relecture.")], { after: 30 }),
+    p("a) Mon conte doit avoir six étapes.", { after: 20 }),
+    p("b) La morale doit être écrite en toutes lettres.", { after: 20 }),
+    p("c) Un interdit ou un conseil est nécessaire.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai. b) Faux : une morale qu'on DEVINE — le conte cache sa leçon ! c) Vrai — c'est lui qui lance l'aventure.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Ton monde imaginaire.", { bold: true, color: C.SALMON }), run(" Un lieu à toi, un héros, un personnage merveilleux — puis le canevas en six étapes.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Test final : mon conte est réussi si un camarade peut en deviner la morale sans que je la lui dise.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
@@ -834,6 +994,20 @@ function lessonS70() {
         run("une lecture expressive réussie : le public devine la morale sans qu'on la lui dise.")]),
     sub("Exercice — ta lecture expressive :"),
     p("Prépare ton passage préféré de ton conte : marque les pauses, choisis la voix de chaque personnage, puis lis-le à la classe avec confiance.", { after: 60 }),
+    sub("Je m'entraîne :"),
+    pr([run("1. Je relie.", { bold: true, color: C.SALMON }), run(" Chaque moment à son allure de lecture.")], { after: 30 }),
+    relier(["la formule d'ouverture", "les péripéties", "la dernière phrase", "les paroles des personnages"], ["avec vie — les verbes de mouvement s'entendent", "je change de voix", "posément — elle installe le silence", "lentement — c'est elle qui reste"]),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("l'ouverture → posément ; les péripéties → avec vie ; la dernière phrase → lentement ; les paroles → je change de voix.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("2. Vrai ou faux ?", { bold: true, color: C.SALMON }), run(" La prosodie.")], { after: 30 }),
+    p("a) C'est la mélodie de la voix : elle traduit l'intention.", { after: 20 }),
+    p("b) Le point-virgule ne demande aucune pause.", { after: 20 }),
+    p("c) Si je trébuche, je m'arrête longtemps.", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("a) Vrai : la moquerie du merle, le calme du caméléon… b) Faux : sa pause se place entre la virgule et le point. c) Faux : je me corrige vite et je continue !", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("3. Prépare ta partition.", { bold: true, color: C.SALMON }), run(" Marque les pauses / et // et la voix qui change.")], { after: 30 }),
+    p("« Il était une fois un jeune pêcheur. Une nuit, une voix l'appela : « Viens… » »", { after: 20 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("Il était une fois un jeune pêcheur. // [posément] Une nuit, / une voix l'appela : / « Viens… » [voix mystérieuse, presque un murmure]", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
+    pr([run("4. Ta lecture expressive.", { bold: true, color: C.SALMON }), run(" Ton passage préféré : pauses marquées, voix des personnages choisies, lecture à la classe avec confiance.")], { after: 30 }),
+    pr([run("Corrigé : ", { bold: true, italic: true, color: C.GRAY, size: 24 }), run("La preuve de la réussite : le public devine la morale sans qu'on la lui dise.", { italic: true, color: C.GRAY, size: 24 })], { after: 90 }),
   ];
 }
 
