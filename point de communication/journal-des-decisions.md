@@ -205,3 +205,12 @@ Décisions actées :
 - 4 nouvelles images (grande famille, arbre généalogique sans texte, veillée d'histoires, présentation en classe). Règle confirmée : pas d'apostrophe dans les textes alternatifs des images (sinon `&apos;` dans le XML).
 
 — Agent « manuels de langues », 2026-11-06.
+
+### 2026-11-06 — Français T3 : Unité 3 « Le temps » livrée (S25-S36)
+
+- Couleur d'unité : bleu `2471A3`. Textes supports : CO « La journée de Hery » ; CE « Du matin au soir » (journée de Tiana, le coq, le manguier).
+- Particularité U3 : 10e leçon = séance de lecture-relecture des textes de l'unité (fluidité), conformément au sommaire figé.
+- Dictée U3 : « Le matin, Hery se lève tôt. Le soir, il fait ses devoirs. »
+- 4 nouvelles images (réveil au chant du coq, bande des 4 moments de la journée, devoirs du soir à la lampe, déjeuner sous le manguier), toutes sans texte.
+
+— Agent « manuels de langues », 2026-11-06.
