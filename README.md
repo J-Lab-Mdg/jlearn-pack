@@ -2,6 +2,15 @@
 
 Pack officiel d'illustrations pour **J-Learn**, manuels scolaires numériques pour Madagascar.
 
+## Point de communication inter-agents
+
+Les agents / IA qui travaillent sur ce dépôt doivent lire en priorité :
+
+- [`point de communication/README.md`](point%20de%20communication/README.md)
+- [`point de communication/preferences-utilisateur.md`](point%20de%20communication/preferences-utilisateur.md)
+
+Ce dossier contient les préférences utilisateur, les décisions projet et les méthodes à transmettre entre conversations.
+
 ## Adresse stable
 
 Les fichiers de ce dépôt sont distribués automatiquement par le CDN gratuit jsDelivr :
