@@ -4,7 +4,7 @@ const path = require("path");
 const {
   Paragraph, TextRun, Table, TableRow, TableCell, WidthType, BorderStyle,
   AlignmentType, VerticalMergeType, ImageRun, PageBreak, ShadingType,
-  VerticalAlign, Bookmark, InternalHyperlink,
+  VerticalAlign, Bookmark, InternalHyperlink, HeadingLevel,
   HorizontalPositionRelativeFrom, HorizontalPositionAlign,
   VerticalPositionRelativeFrom, TextWrappingType, TextWrappingSide,
 } = require("docx");
@@ -73,19 +73,26 @@ const cell = (children, o = {}) => new TableCell({
   shading: o.shade ? { type: ShadingType.CLEAR, fill: o.shade } : undefined,
   margins: { top: 60, bottom: 60, left: 100, right: 100 },
 });
-const img = (file, width, ratio) => new Paragraph({
+// texte alternatif (accessibilité) généré depuis le nom de fichier si non fourni
+const altFor = (file, desc) => ({
+  name: file, title: "Illustration du manuel",
+  description: desc || ("Illustration : " + file.replace(/\.[a-z]+$/i, "").replace(/[_-]+/g, " ")),
+});
+const img = (file, width, ratio, desc) => new Paragraph({
   alignment: AlignmentType.CENTER, spacing: { after: 120 },
   children: [new ImageRun({
     data: fs.readFileSync(path.join(IMG_DIR, file)), type: "png",
     transformation: { width, height: Math.round(width * ratio) },
+    altText: altFor(file, desc),
   })],
 });
 // image flottante à droite, le texte s'enroule autour (mise en page moderne)
-const imgFloat = (file, width, ratio) => new Paragraph({
+const imgFloat = (file, width, ratio, desc) => new Paragraph({
   spacing: { after: 0 },
   children: [new ImageRun({
     data: fs.readFileSync(path.join(IMG_DIR, file)), type: "png",
     transformation: { width, height: Math.round(width * ratio) },
+    altText: altFor(file, desc),
     floating: {
       horizontalPosition: { relative: HorizontalPositionRelativeFrom.MARGIN, align: HorizontalPositionAlign.RIGHT },
       verticalPosition: { relative: VerticalPositionRelativeFrom.PARAGRAPH, offset: 0 },
@@ -100,6 +107,7 @@ const pageBreak = () => new Paragraph({ children: [new PageBreak()] });
 const bookmarkTitle = (id, text, o = {}) => new Paragraph({
   alignment: o.center !== false ? AlignmentType.CENTER : AlignmentType.LEFT,
   spacing: { after: o.after != null ? o.after : 120 },
+  heading: o.heading || (/^s\d+$/.test(id) ? HeadingLevel.HEADING_2 : undefined),
   children: [new Bookmark({ id, children: [run(text, o)] })],
 });
 const tocLink = (anchor, text, o = {}) => new Paragraph({
@@ -114,7 +122,7 @@ const unitBanner = (label, color, bookmarkId) => new Table({
   width: { size: 10400, type: WidthType.DXA }, borders: noBorders(),
   rows: [new TableRow({ children: [
     cell([bookmarkId
-      ? new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 40 },
+      ? new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 40 }, heading: HeadingLevel.HEADING_1,
           children: [new Bookmark({ id: bookmarkId, children: [run(label, { bold: true, color: C.WHITE, size: SZ.UNIT })] })] })
       : p([run(label, { bold: true, color: C.WHITE, size: SZ.UNIT })], { center: true, after: 40 })],
       { shade: color, vAlign: VerticalAlign.CENTER }),

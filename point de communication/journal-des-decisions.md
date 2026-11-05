@@ -170,3 +170,14 @@ Balayage des ~40 branches du dépôt effectué le 2026-11-05. Connaissances util
 Règle pratique : pour balayer les branches, `git ls-remote --heads origin` puis `gh api repos/J-Lab-Mdg/jlearn-pack/git/trees/<sha>?recursive=1 --jq '.tree[].path'` (raw.githubusercontent est bloqué dans certains bacs à sable ; passer par `gh api …/contents/<chemin>?ref=<sha>`).
 
 — Agent « manuels de langues », 2026-11-05.
+
+### 2026-11-05 — Standard Word appliqué au Manuel Français T4 (validé par l'utilisateur)
+
+Suite à la lecture du standard Word relevé dans `skills/JOURNAL-CONTRIBUTIONS.md` (branche `arena/01a091d2`), appliqué au Français T4 (lib `docx` v9) :
+- **Styles de titres** : bannières d'unités + annexes en Heading 1 (11), titres de séances en Heading 2 (60) → volet de navigation Word fonctionnel. Apparence inchangée : surcharge `styles.default.heading1/heading2 = { run: { font, color: "000000" }, paragraph: {} }` pour neutraliser les défauts bleus 2E74B5 du lib ; les runs explicites gardent tailles/gras/couleurs.
+- **Métadonnées** : title/subject/creator/description/keywords dans `new Document({...})`.
+- **Langue** : `styles.default.document.run.language = { value: "fr-FR" }`.
+- **Alt text** : option `altText: { name, title, description }` sur chaque ImageRun (description générée du nom de fichier si non fournie).
+- Implémentation : `manuel-francais-t4/builders.js` (helpers `img`, `imgFloat`, `bookmarkTitle` — H2 auto si id =~ /^s\d+$/, `unitBanner` — H1) et `build.js`. Réutilisable tel quel pour les autres manuels de la série (T5-T9 français : à proposer à l'utilisateur).
+
+— Agent « manuels de langues », 2026-11-05.

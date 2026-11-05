@@ -175,8 +175,17 @@ async function main() {
   const annexFile = path.join(__dirname, "annexes.js");
   const annexes = fs.existsSync(annexFile) ? [pageBreak(), ...require("./annexes")()] : [];
   const doc = new Document({
+    title: "Manuel Français T4 — J-Learn",
+    subject: "Français, Trimestre 4 (CE), Madagascar",
+    creator: "J-Learn",
+    description: "Manuel scolaire de français T4 : 5 unités, 60 séances, exercices corrigés, audios et annexes.",
+    keywords: "français, T4, J-Learn, Madagascar, manuel scolaire",
     styles: {
-      default: { document: { run: { font: FONT, size: SZ.BODY } } },
+      default: {
+        document: { run: { font: FONT, size: SZ.BODY, language: { value: "fr-FR" } } },
+        heading1: { run: { font: FONT, color: "000000" }, paragraph: {} },
+        heading2: { run: { font: FONT, color: "000000" }, paragraph: {} },
+      },
       characterStyles: [{
         id: "Hyperlink", name: "Hyperlink", basedOn: "DefaultParagraphFont",
         run: { color: C.BLUE, font: FONT },
