@@ -1,4 +1,4 @@
-LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V5
+LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V6
 
 1. ÉTAT D’AVANCEMENT
    - Le modèle correct a été identifié dans `Nos manuels/Math_T5_JLearn.docx`, explicitement intitulé Math T5.
@@ -6,7 +6,7 @@ LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V5
    - Il contient 218 tableaux et 231 illustrations intégrées.
    - Le fichier original Math T5 est inchangé.
    - Une lecture exhaustive des 68 sections réelles est disponible dans `audits/AUDIT_MATH_T5_68_SEANCES_LIGNE_PAR_LIGNE.md`.
-   - Le prototype recommandé est maintenant `manuel-mathematiques-t10/prototypes/Manuel_Mathematiques_T10_JLearn_V5.docx`. V1, V2, V3 et V4 sont conservés comme versions historiques.
+   - Le prototype recommandé est maintenant `manuel-mathematiques-t10/prototypes/Manuel_Mathematiques_T10_JLearn_V6.docx`. V1, V2, V3, V4 et V5 sont conservés comme versions historiques.
 
 2. POINT DE COMMUNICATION DU DÉPÔT
    - `Lettre-de-passation-Relais2.md` est la lettre de communication historique du projet Math 7e/ancien relais ; elle n’est pas écrasée.
@@ -22,16 +22,19 @@ LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V5
    - `skills/jlearn-manuel-scolaire-v18/mathematiques.md` : règles propres aux mathématiques.
    - `skills/jlearn-manuel-scolaire-v18/design-fiche.md` : design de la fiche.
 
-4. STRUCTURE T5 REPRISE DANS LE V5
+4. STRUCTURE T5 REPRISE DANS LE V6
    - Six unités T10 : Logique et algorithmique ; Nombres réels et encadrements ; Trinôme/systèmes/polynômes ; Équations et fonctions ; Vecteurs/droites/cercles ; Statistiques et trigonométrie.
    - Chaque unité comporte deux leçons, une révision et un sujet d’examen prototype.
-   - En-tête de séance local : `SÉANCE 1 / 4 — TITRE` puis `SÉANCE 2 / 4 — TITRE`.
+   - L’unité commence sur sa page ; chaque fiche commence sur une nouvelle page.
+   - En-tête de séance en majuscules, centré et rouge.
+   - Police du corps alignée sur la taille observée dans le Math T5.
    - `FICHE DE PRÉPARATION` avant la méta-table.
    - Méta-table à deux cellules : informations pédagogiques à gauche, date/classe/séance/durée à droite, sans bordure.
-   - Fiche de déroulement à 6 colonnes et 11 lignes, avec en-tête à deux niveaux.
-   - Leçon directement après la fiche, sans titre redondant « LEÇON ».
+   - Fiche de déroulement à 6 colonnes et 11 lignes.
+   - `II. NOUVELLE LEÇON` est une grande étape fusionnée, suivie de six sous-étapes.
+   - Une boîte `EXPLICATION FACILE` suit le titre ; la leçon formelle est placée dans une boîte `RÉSUMÉ DE LA LEÇON`.
    - Progression explicite : leçons → révision de l’unité → sujet d’examen → corrigé séparé.
-   - Code couleur inspiré du T5 réel : titre rouge, sous-titres verts, repères bleus, correction rose.
+   - Code couleur : titres rouges, sous-titres verts, repères bleus, corrections roses.
 
 5. DÉCISIONS VALIDÉES
    - Niveau : T10 / 2nde.
@@ -41,7 +44,7 @@ LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V5
    - Le Math T5 original reste inchangé.
    - La couverture n’est pas encore adaptée ; utiliser le coverbook fourni ultérieurement et ne modifier que la matière et la classe.
 
-6. VÉRIFICATIONS DU V5
+6. VÉRIFICATIONS DU V6
    - Archive DOCX valide (`testzip()` positif).
    - Une seule section Word.
    - Six unités visibles dans le tableau de bord et dans le sommaire.
@@ -49,17 +52,18 @@ LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V5
    - 6 révisions et 6 sujets d’examen format T10.
    - Méta-tables à deux cellules et sans bordures.
    - Fiches à six colonnes et 11 lignes.
+   - 12 boîtes `EXPLICATION FACILE` et 12 cadres `RÉSUMÉ DE LA LEÇON`.
    - 12 signets de séance et 12 liens internes du sommaire conservés.
    - Les formules OMML des leçons existantes sont conservées ; les nouvelles synthèses et évaluations utilisent aussi les symboles mathématiques Unicode.
 
 7. À FAIRE EN PRIORITÉ
-   - Ouvrir le V5 dans Word PC et contrôler les pages, tableaux, liens et équations.
+   - Ouvrir le V6 dans Word PC et contrôler les pages, tableaux, cadres, liens et équations.
    - Vérifier tous les corrigés par calcul réel.
-   - Comparer le découpage proposé avec le volume horaire officiel T10 ; le V5 reste un prototype de structure, pas encore le manuel annuel complet.
+   - Comparer le découpage proposé avec le volume horaire officiel T10 ; le V6 reste un prototype de structure, pas encore le manuel annuel complet.
    - Développer les deux leçons de chaque unité en séances supplémentaires si le programme T10 l’exige.
    - Adapter ensuite la couverture selon les règles utilisateur.
 
 8. QUESTIONS EN SUSPENS
    - Nombre exact de séances T10 à produire dans la version complète.
    - Découpage définitif des grands thèmes en séances quotidiennes.
-   - Validation Word PC du V5.
+   - Validation Word PC du V6.
