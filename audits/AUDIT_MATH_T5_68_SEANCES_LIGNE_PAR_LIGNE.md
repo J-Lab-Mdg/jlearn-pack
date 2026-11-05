@@ -1,0 +1,7456 @@
+# Audit intégral — Mathématiques T5 réel
+
+**Fichier analysé :** `Nos manuels/Math_T5_JLearn.docx`
+
+Ce rapport porte sur le fichier explicitement intitulé Math T5 fourni dans le dépôt. Le document original n’a pas été modifié. Le contenu de la table des matières est exclu de la lecture pédagogique ; l’analyse commence à la première séance réelle.
+
+## Résumé
+
+- Leçons réelles : **56**.
+- Révisions : **6**.
+- Sujets d’examen : **6**.
+- Sections de contenu analysées : **68**.
+- Tableaux dans le document : **218**.
+- Illustrations intégrées : **231** selon le paquet DOCX.
+
+## Structure par unité
+
+| Bloc | Leçons | Révision | Examen |
+|---|---:|---:|---:|
+| Unité I — Nombre | 12 | 1 | 1 |
+| Unité II — Opération | 13 | 1 | 1 |
+| Unité III — Algèbre | 7 | 1 | 1 |
+| Unité IV — Géométrie | 9 | 1 | 1 |
+| Unité V — Mesure | 9 | 1 | 1 |
+| Unité VI — Traitement de données | 6 | 1 | 1 |
+
+## Contrôle des fiches de leçon
+
+| Séance | Titre | Paragraphes | Tableaux | Fiche 6 col. | Exercise/Corr. | Lettrage ancien |
+|---|---|---:|---:|:---:|:---:|:---:|
+| SÉANCE 1 / 14 | LIRE ET ÉCRIRE LES NOMBRES JUSQU’À 1 000 000 | 36 | 2 | oui | oui | oui |
+| SÉANCE 2 / 14 | LA VALEUR DE POSITION : LE TABLEAU DE NUMÉRATION | 27 | 2 | oui | oui | oui |
+| SÉANCE 3 / 14 | COMPARER ET ORDONNER AVEC >, < ET = | 27 | 2 | oui | oui | oui |
+| SÉANCE 4 / 14 | COMPOSER LES GRANDS NOMBRES PAR GROUPEMENTS | 27 | 2 | oui | oui | oui |
+| SÉANCE 5 / 14 | DÉCOMPOSER LES NOMBRES DE PLUSIEURS FAÇONS | 27 | 2 | oui | oui | oui |
+| SÉANCE 6 / 14 | REPRÉSENTER LES FRACTIONS : NUMÉRATEUR ET DÉNOMINATEUR | 27 | 2 | oui | oui | oui |
+| SÉANCE 7 / 14 | LES FRACTIONS ÉQUIVALENTES | 27 | 2 | oui | oui | oui |
+| SÉANCE 8 / 14 | COMPARER ET PLACER DES FRACTIONS SUR LA DROITE NUMÉRIQUE | 27 | 2 | oui | oui | oui |
+| SÉANCE 9 / 14 | FRACTION IMPROPRE ET NOMBRE FRACTIONNAIRE | 27 | 2 | oui | oui | oui |
+| SÉANCE 10 / 14 | LES NOMBRES DÉCIMAUX JUSQU’AUX CENTIÈMES | 27 | 2 | oui | oui | oui |
+| SÉANCE 11 / 14 | COMPARER ET ORDONNER LES NOMBRES DÉCIMAUX | 27 | 2 | oui | oui | oui |
+| SÉANCE 12 / 14 | FRACTIONS DÉCIMALES ET NOMBRES DÉCIMAUX | 27 | 2 | oui | oui | oui |
+| SÉANCE 1 / 15 | LE SENS DES OPÉRATIONS : AJOUTER, RETIRER, RÉUNIR, COMPARER | 27 | 2 | oui | oui | oui |
+| SÉANCE 2 / 15 | ADDITIONNER JUSQU’À 1 000 000 | 27 | 2 | oui | oui | oui |
+| SÉANCE 3 / 15 | SOUSTRAIRE JUSQU’À 1 000 000 | 27 | 2 | oui | oui | oui |
+| SÉANCE 4 / 15 | VÉRIFIER UN RÉSULTAT : PREUVE ET ESTIMATION | 28 | 2 | oui | oui | oui |
+| SÉANCE 5 / 15 | MULTIPLIER : 3 CHIFFRES × 2 CHIFFRES | 27 | 2 | oui | oui | oui |
+| SÉANCE 6 / 15 | DIVISER AVEC QUOTIENT ET RESTE | 27 | 2 | oui | oui | oui |
+| SÉANCE 7 / 15 | PARTAGE ET GROUPEMENT : LE SENS DE LA DIVISION | 27 | 2 | oui | oui | oui |
+| SÉANCE 8 / 15 | MULTIPLIER DES FRACTIONS | 27 | 2 | oui | oui | oui |
+| SÉANCE 9 / 15 | DIVISER DES FRACTIONS | 27 | 2 | oui | oui | oui |
+| SÉANCE 10 / 15 | ADDITIONNER ET SOUSTRAIRE DES NOMBRES DÉCIMAUX | 27 | 2 | oui | oui | oui |
+| SÉANCE 11 / 15 | MULTIPLIER ET DIVISER DES NOMBRES DÉCIMAUX | 27 | 2 | oui | oui | oui |
+| SÉANCE 12 / 15 | LA PRIORITÉ DES OPÉRATIONS | 27 | 2 | oui | oui | oui |
+| SÉANCE 13 / 15 | LE CALCUL MENTAL : STRATÉGIES EFFICACES | 27 | 2 | oui | oui | oui |
+| SÉANCE 1 / 9 | DÉCOUVRIR LES SUITES ET LEURS RÉGULARITÉS | 27 | 2 | oui | oui | oui |
+| SÉANCE 2 / 9 | LE RANG D’UN TERME : RELIER LE RANG À LA QUANTITÉ | 27 | 2 | oui | oui | oui |
+| SÉANCE 3 / 9 | LES TABLEAUX DE VALEURS | 27 | 2 | oui | oui | oui |
+| SÉANCE 4 / 9 | LA CORRESPONDANCE ENTRE DEUX QUANTITÉS | 27 | 2 | oui | oui | oui |
+| SÉANCE 5 / 9 | LA RÈGLE DE TROIS | 27 | 2 | oui | oui | oui |
+| SÉANCE 6 / 9 | LE SENS DU SIGNE ÉGAL | 27 | 2 | oui | oui | oui |
+| SÉANCE 7 / 9 | TROUVER LA VALEUR INCONNUE | 27 | 2 | oui | oui | oui |
+| SÉANCE 1 / 11 | LES ANGLES : AIGU, DROIT, OBTUS | 27 | 2 | oui | oui | oui |
+| SÉANCE 2 / 11 | CLASSER LES TRIANGLES SELON LEURS CÔTÉS | 27 | 2 | oui | oui | oui |
+| SÉANCE 3 / 11 | CLASSER LES TRIANGLES SELON LEURS ANGLES | 27 | 2 | oui | oui | oui |
+| SÉANCE 4 / 11 | LES PROPRIÉTÉS DES TRIANGLES : CÔTÉS, SOMMETS, ANGLES | 27 | 2 | oui | oui | oui |
+| SÉANCE 5 / 11 | POLYGONES ET QUADRILATÈRES | 27 | 2 | oui | oui | oui |
+| SÉANCE 6 / 11 | TRACER AVEC LES OUTILS : RÈGLE, ÉQUERRE, COMPAS | 27 | 2 | oui | oui | oui |
+| SÉANCE 7 / 11 | REPRODUIRE UNE FIGURE | 27 | 2 | oui | oui | oui |
+| SÉANCE 8 / 11 | DÉCOMPOSER UN QUADRILATÈRE EN TRIANGLES | 27 | 2 | oui | oui | oui |
+| SÉANCE 9 / 11 | COMPOSER DE NOUVELLES FIGURES PAR ASSEMBLAGE | 27 | 2 | oui | oui | oui |
+| SÉANCE 1 / 11 | LES MESURES DE LONGUEUR ET LEURS CONVERSIONS | 27 | 2 | oui | oui | oui |
+| SÉANCE 2 / 11 | LE PÉRIMÈTRE DES POLYGONES | 27 | 2 | oui | oui | oui |
+| SÉANCE 3 / 11 | LA CIRCONFÉRENCE DU CERCLE | 27 | 2 | oui | oui | oui |
+| SÉANCE 4 / 11 | LA MASSE : ESTIMER, MESURER, CONVERTIR | 27 | 2 | oui | oui | oui |
+| SÉANCE 5 / 11 | LA CAPACITÉ : LITRES ET CONVERSIONS | 27 | 2 | oui | oui | oui |
+| SÉANCE 6 / 11 | LA MESURE DU TEMPS : CONVERSIONS ET OPÉRATIONS | 27 | 2 | oui | oui | oui |
+| SÉANCE 7 / 11 | L’AIRE DU RECTANGLE ET DU CARRÉ | 27 | 2 | oui | oui | oui |
+| SÉANCE 8 / 11 | L’AIRE DU TRIANGLE ; COMPARER DES AIRES | 27 | 2 | oui | oui | oui |
+| SÉANCE 9 / 11 | LE VOLUME : CUBES UNITÉS, CUBE ET PAVÉ DROIT | 27 | 2 | oui | oui | oui |
+| SÉANCE 1 / 8 | CONCEVOIR UNE ENQUÊTE : QUESTIONS ET HYPOTHÈSES | 27 | 2 | oui | oui | oui |
+| SÉANCE 2 / 8 | COLLECTER ET ORGANISER : TABLEAUX SIMPLES ET CHRONOLOGIQUES | 27 | 2 | oui | oui | oui |
+| SÉANCE 3 / 8 | DIAGRAMMES EN BARRES ET PICTOGRAMMES | 27 | 2 | oui | oui | oui |
+| SÉANCE 4 / 8 | INTERPRÉTER DES DONNÉES | 27 | 2 | oui | oui | oui |
+| SÉANCE 5 / 8 | EXPÉRIENCES ALÉATOIRES ET TABLEAUX DE DÉNOMBREMENT | 27 | 2 | oui | oui | oui |
+| SÉANCE 6 / 8 | LA PROBABILITÉ EXPÉRIMENTALE | 27 | 2 | oui | oui | oui |
+
+## Lecture ligne par ligne
+
+### SÉANCE 1 / 14 — LIRE ET ÉCRIRE LES NOMBRES JUSQU’À 1 000 000
+
+- Indicateurs : 36 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 1 / 14 — LIRE ET ÉCRIRE LES NOMBRES JUSQU’À 1 000 000
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Nombres naturels jusqu’à 1 000 000Titre : Lire et écrire les nombres jusqu’à 1 000 000Objectif spécifique : À la fin de la séance, l’apprenant est capable de lire et écrire en chiffres et en lettres les nombres naturels jusqu’à 1 000 000.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Étiquettes de chiffres, tableau de numération, cache en carton, cahier, ardoises
+- `T1C2` Date : _______________Classe : T5Séance n° : 1 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Écris en chiffres : « huit mille deux cent trois ».
+- `T3C3` R.A. : 8 203.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à lire et écrire en chiffres et en lettres les nombres naturels jusqu’à 1 000 000. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Au marché d’Analakely, un marchand de riz affiche le prix d’un grand sac : 348 256 Ar. Voary sait lire « mille », mais ce nombre-là est bien plus long ! Comment lire sans se tromper un nombre de six chiffres ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Lire et écrire les nombres jusqu’à 1 000 000 » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 602 040 se lit « six cent deux mille quarante » ; « quinze mille neuf » s’écrit 15 009.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Tout commence par les MOTS-NOMBRES, appris dès le T3 : vingt, trente, quarante, cinquante, soixante… et les trois mots-pièges : 70 = soixante-dix (60 + 10), 80 = quatre-vingts (4 × 20), 90 = quatre-vingt-dix (80 + 10) — c’est pourquoi 75 se dit soixante-quinze et 95 quatre-vingt-quinze. Ensuite, un secret qui change tout : on ne lit JAMAIS tous les chiffres d’un coup, on lit TROIS chiffres à la fois, une classe après l’autre. Prenons 348 256 : on le coupe en deux tranches, comme une pizza : 348 \| 256. On lit la tranche de gauche, on dit « mille », puis la tranche de droite : trois cent quarante-huit mille deux cent cinquante-six ! Pour ne jamais mélanger les classes, l’astuce des maîtres : le CACHE, une fenêtre découpée dans un carton — on cache toutes les classes et on ne découvre que celle qu’on lit : 3 chiffres, pas un de plus. Et comme une classe se lit toujours de la même façon, tu peux déjà lire jusqu’aux milliards : 6 \| 148 \| 375 \| 204 se lit « six milliards cent quarante-huit millions trois cent soixante-quinze mille deux cent quatre ». Attention au sens : on ÉCRIT de droite à gauche (le chiffre des unités entre le premier dans le tableau), mais on LIT de gauche à droite. « Quarante mille sept » s’écrit 40 007 — la classe des unités garde ses trois chiffres, jamais 407 !
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, classes de trois chiffres depuis la droite ; on lit la classe des mille, le mot « mille », puis la classe des unités ; chaque classe à droite doit avoir ses trois chiffres.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Écris en lettres : a) 7 245 ; b) 83 060 ; d) 500 500 ; e) 1 000 000. Écris en chiffres : a) douze mille trois cent quatre ; b) deux cent mille vingt ; d) neuf cent quatre-vingt-dix mille ; e) six cent un mille huit.
+- `T10C3` a) sept mille deux cent quarante-cinq ; b) quatre-vingt-trois mille soixante ; d) cinq cent mille cinq cents ; e) un million. a) 12 304 ; b) 200 020 ; d) 990 000 ; e) 601 008.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Écris en lettres : a) 7 245 ; b) 83 060 ; d) 500 500 ; e) 1 000 000. Puis justifie l’une de tes réponses.
+- `T11C3` a) sept mille deux cent quarante-cinq ; b) quatre-vingt-trois mille soixante ; d) cinq cent mille cinq cents ; e) un million. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LIRE ET ÉCRIRE LES NOMBRES JUSQU’À 1 000 000
+- `P` 1. Les nombres jusqu’à 1 000 000
+- `P` Pour lire un grand nombre, on sépare ses chiffres en classes de trois chiffres en partant de la droite : la classe des unités, puis la classe des mille. Le nombre 1 000 000, qui vaut mille fois mille, s’appelle un million.
+- `P` on coupe le nombre en tranches de trois chiffres, et on lit tranche après tranche en disant « mille » entre les deux.
+- `P` 2. Lecture
+- `P` On lit de gauche à droite : la première classe, puis le mot « million » ou « mille », puis la classe suivante. Les zéros qui indiquent une classe vide ne se prononcent pas.
+- `P` Les mots-nombres utiles : zéro, un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix, onze, douze, treize, quatorze, quinze, seize ; vingt, trente, quarante, cinquante, soixante ; soixante-dix, quatre-vingts, quatre-vingt-dix ; cent, mille et million.
+- `P` 3. Écriture
+- `P` Pour écrire un nombre entendu, je cherche d’abord les mots million et mille. Je remplis ensuite le tableau de droite à gauche, un chiffre par case, et je complète les classes avec les zéros nécessaires.
+- `P` 1. 70 = soixante-dix ; 80 = quatre-vingts ; 90 = quatre-vingt-dix.
+- `P` 2. Je sépare le nombre en classes de trois chiffres en partant de la droite : 2 \| 343 \| 216.
+- `P` 3. Je lis les classes de gauche à droite : deux millions, trois cent quarante-trois mille, deux cent seize.
+- `P` 4. Pour écrire un nombre entendu, je place les chiffres de droite à gauche et je complète les classes avec des zéros : 203 070.
+- `P` Exemple : 602 040 se lit « six cent deux mille quarante » ; « quinze mille neuf » s’écrit 15 009.
+- `P` classes de trois chiffres depuis la droite ; on lit la classe des mille, le mot « mille », puis la classe des unités ; chaque classe à droite doit avoir ses trois chiffres.
+- `P` Le savais-tu ? Madagascar compte environ 30 millions d’habitants, et sa capitale Antananarivo en abrite plus de 1 000 000 à elle seule : chaque fois que tu écris un million, tu écris à peu près le nombre d’habitants de Tana !
+- `P` Attention : Lire 95 « nonante-cinq » : ce mot n’existe pas en français, on dit quatre-vingt-quinze. Écrire « quarante mille sept » 407 ou 4 007 : la classe des unités doit garder ses trois chiffres, donc 40 007.
+- `P` EXERCICE
+- `P` 1. Écris en lettres : a) 7 245 ; b) 83 060 ; d) 500 500 ; e) 1 000 000.
+- `P` 2. Écris en chiffres : a) douze mille trois cent quatre ; b) deux cent mille vingt ; d) neuf cent quatre-vingt-dix mille ; e) six cent un mille huit.
+- `P` 3. a) Combien de chiffres a un million ? b) Lis 907 013. d) Écris le nombre juste avant 400 000. e) Écris le nombre juste après 599 999.
+- `P` 4. Écris en lettres : a) 15 000 ; b) 60 015 ; d) 304 000 ; e) 999 999.
+- `P` 5. Écris en chiffres puis range en ordre croissant : a) quarante-cinq mille quatre ; b) quatre cent cinq mille ; d) quarante mille cinq cent quatre ; e) quatre cent mille cinquante.
+- `P` 6. Défi CEPE — Une commune compte « deux cent trois mille soixante-dix » habitants. a) Écris ce nombre en chiffres. b) Le secrétaire a écrit 203 70 : explique son erreur. d) Écris le nombre d’habitants après une hausse de 1 000. e) Écris en lettres le nombre juste avant 203 070.
+- `P` Petit problème
+- `P` Maman gagne 870 000 Ar par mois. Qu’est-ce qui est écrit en lettres sur la fiche de paie ?
+- `P` Correction
+- `P` 1. a) sept mille deux cent quarante-cinq ; b) quatre-vingt-trois mille soixante ; d) cinq cent mille cinq cents ; e) un million.
+- `P` 2. a) 12 304 ; b) 200 020 ; d) 990 000 ; e) 601 008.
+- `P` 3. a) 7 chiffres ; b) neuf cent sept mille treize ; d) 399 999 ; e) 600 000.
+- `P` 4. a) quinze mille ; b) soixante mille quinze ; d) trois cent quatre mille ; e) neuf cent quatre-vingt-dix-neuf mille neuf cent quatre-vingt-dix-neuf.
+- `P` 5. a) 45 004 ; b) 405 000 ; d) 40 504 ; e) 400 050 ; ordre : 40 504 < 45 004 < 400 050 < 405 000.
+- `P` 6. a) 203 070 ; b) il a oublié que la classe des unités s’écrit toujours avec TROIS chiffres : « soixante-dix » devient 070 ; d) 204 070 ; e) deux cent trois mille soixante-neuf.
+- `P` Petit problème. Huit cent soixante-dix mille ariary.
+
+### SÉANCE 2 / 14 — LA VALEUR DE POSITION : LE TABLEAU DE NUMÉRATION
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 2 / 14 — LA VALEUR DE POSITION : LE TABLEAU DE NUMÉRATION
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Valeur de position jusqu’à 1 000 000Titre : La valeur de position : le tableau de numérationObjectif spécifique : À la fin de la séance, l’apprenant est capable de donner la valeur d’un chiffre selon sa position dans un nombre de six chiffres.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Tableau de numération, étiquettes de chiffres, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 2 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Lis le nombre 405 230.
+- `T3C3` R.A. : Quatre cent cinq mille deux cent trente.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à donner la valeur d’un chiffre selon sa position dans un nombre de six chiffres. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Deux élèves ont écrit le nombre « cinq cent sept mille deux cent treize ». Lanto a écrit 507 213 et Hery a écrit 57 213. Un seul a raison. Qui ? Pourquoi ce zéro change-t-il tout ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « La valeur de position : le tableau de numération » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Dans 860 459, le chiffre 6 est dans la colonne DM : il vaut 6 × 10 000 = 60 000.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le tableau de numération donne un nom à chaque colonne : U, D, C pour la classe des unités ; UM, DM, CM pour la classe des mille. Dans 507 213, le chiffre 5 occupe la colonne CM : il vaut 5 × 100 000 = 500 000. Le chiffre 7 occupe la colonne UM et vaut 7 000. Le 0 de la colonne DM signifie « aucune dizaine de mille » — mais sans lui, tous les chiffres de gauche glisseraient d’une colonne et le nombre serait divisé par dix ! C’est pour cela que Lanto a raison et Hery a tort. Attention à distinguer « le chiffre des dizaines de mille » (un seul chiffre) et « le nombre de dizaines de mille » (tout ce qui est à gauche de la colonne, elle comprise : dans 507 213, c’est 50).
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, six colonnes U, D, C, UM, DM, CM ; valeur du chiffre = chiffre × valeur de sa colonne ; le zéro garde la place.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Dans 624 587, donne la valeur du chiffre : a) 6 ; b) 2 ; d) 4 ; e) 8. Écris en chiffres : a) 3 CM 0 DM 8 UM 2 C 0 D 6 U ; b) 9 DM 9 U ; d) le plus grand nombre de 6 chiffres ; e) le plus petit nombre de 6 chiffres.
+- `T10C3` a) 600 000 ; b) 20 000 ; d) 4 000 ; e) 80. a) 308 206 ; b) 90 009 ; d) 999 999 ; e) 100 000.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Dans 624 587, donne la valeur du chiffre : a) 6 ; b) 2 ; d) 4 ; e) 8. Puis justifie l’une de tes réponses.
+- `T11C3` a) 600 000 ; b) 20 000 ; d) 4 000 ; e) 80. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LA VALEUR DE POSITION : LE TABLEAU DE NUMÉRATION
+- `P` Valeur de position jusqu’à 1 000 000
+- `P` Dans un nombre, chaque chiffre a une valeur de position : il vaut selon la colonne qu’il occupe — unités, dizaines, centaines, unités de mille, dizaines de mille, centaines de mille. Le zéro marque une colonne vide et garde la place des autres chiffres.
+- `P` un chiffre, c’est comme une personne dans une file : sa valeur dépend de la place où il se tient.
+- `P` Exemple : Dans 860 459, le chiffre 6 est dans la colonne DM : il vaut 6 × 10 000 = 60 000.
+- `P` 1. Placer le nombre dans le tableau, un chiffre par colonne, en partant de la droite.
+- `P` 2. Repérer la colonne du chiffre étudié.
+- `P` 3. Multiplier le chiffre par la valeur de sa colonne.
+- `P` six colonnes U, D, C, UM, DM, CM ; valeur du chiffre = chiffre × valeur de sa colonne ; le zéro garde la place.
+- `P` Le savais-tu ? Notre façon d’écrire les nombres avec la valeur de position vient d’Inde, a voyagé par les savants arabes, et n’est arrivée en Europe qu’au Moyen Âge.
+- `P` Attention : Oublier le zéro intercalé : « cinq cent sept mille » s’écrit 507 000 et non 57 000. Toujours compter six colonnes pour un nombre de six chiffres.
+- `P` EXERCICE
+- `P` 1. Dans 624 587, donne la valeur du chiffre : a) 6 ; b) 2 ; d) 4 ; e) 8.
+- `P` 2. Écris en chiffres : a) 3 CM 0 DM 8 UM 2 C 0 D 6 U ; b) 9 DM 9 U ; d) le plus grand nombre de 6 chiffres ; e) le plus petit nombre de 6 chiffres.
+- `P` 3. Dans 740 158 : a) quel est le chiffre des dizaines de mille ? b) le chiffre des centaines ? d) le nombre d’unités de mille ? e) que devient le nombre si l’on remplace le 0 par un 9 ?
+- `P` 4. Dans 835 142, quel chiffre occupe la colonne : a) U ; b) DM ; d) CM ; e) UM ?
+- `P` 5. Donne le nombre de : a) dizaines dans 4 560 ; b) centaines dans 76 300 ; d) unités de mille dans 802 450 ; e) dizaines de mille dans 1 000 000.
+- `P` 6. Défi CEPE — Avec les chiffres 5, 0, 8, 2, 7, 1 utilisés une seule fois chacun : a) écris un nombre où le 8 vaut 80 000 ; b) écris le plus grand nombre possible dont le chiffre des unités est 0 ; d) dans ta réponse de b), que vaut le chiffre 7 ? e) Pourquoi un nombre de six chiffres ne peut-il pas commencer par 0 ?
+- `P` Correction
+- `P` 1. a) 600 000 ; b) 20 000 ; d) 4 000 ; e) 80.
+- `P` 2. a) 308 206 ; b) 90 009 ; d) 999 999 ; e) 100 000.
+- `P` 3. a) 4 ; b) 1 ; d) 740 ; e) 749 158, il augmente de 9 000.
+- `P` 4. a) 2 ; b) 3 ; d) 8 ; e) 5.
+- `P` 5. a) 456 ; b) 763 ; d) 802 ; e) 100.
+- `P` 6. a) par exemple 587 210 (toute réponse avec le 8 en colonne DM convient) ; b) 875 210 ; d) 70 000 ; e) parce qu’un 0 placé devant ne compte pas : « 058 721 » est en réalité 58 721, un nombre de cinq chiffres seulement.
+
+### SÉANCE 3 / 14 — COMPARER ET ORDONNER AVEC >, < ET =
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 3 / 14 — COMPARER ET ORDONNER AVEC >, < ET =
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Comparaison et rangement des nombresTitre : Comparer et ordonner avec >, < et =Objectif spécifique : À la fin de la séance, l’apprenant est capable de comparer et ordonner des nombres jusqu’à 1 000 000 à l’aide des symboles >, < et =.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Cartes de nombres, droite numérique, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 3 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Dans 582 140, que vaut le chiffre 8 ?
+- `T3C3` R.A. : 80 000, car il est dans la colonne des dizaines de mille.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à comparer et ordonner des nombres jusqu’à 1 000 000 à l’aide des symboles >, < et =. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Deux villages comptent leurs récoltes de riz : Ambohimanga a récolté 458 217 kg et Ambatolampy 456 998 kg. Les deux nombres commencent pareil… Lequel des deux villages a récolté le plus ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Comparer et ordonner avec >, < et = » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 98 750 < 102 300 (5 chiffres contre 6) ; 731 450 > 731 405 car à la colonne des dizaines, 5 > 0.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La règle tient en deux temps. D’abord compter les chiffres : un nombre de six chiffres dépasse toujours un nombre de cinq chiffres (100 000 > 99 999). Ensuite, à longueur égale, comparer colonne par colonne en partant de la GAUCHE : pour 458 217 et 456 998, on lit 4 = 4, puis 5 = 5, puis 8 > 6 — inutile d’aller plus loin, 458 217 gagne, même si la fin 998 paraît « grosse ». La droite numérique raconte la même histoire : plus un nombre est à droite, plus il est grand. Pour ordonner une liste, on compare de proche en proche et on relie les nombres par le même symbole : 456 998 < 458 217 < 460 000.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, plus de chiffres = plus grand ; à longueur égale, comparaison colonne par colonne depuis la gauche ; la pointe du symbole désigne le petit.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Complète avec >, < ou = : a) 45 870 … 45 807 ; b) 99 999 … 100 000 ; d) 530 200 … 530 200 ; e) 708 415 … 78 415. Range en ordre croissant : a) 25 400 ; 24 500 ; 25 040. b) 310 000 ; 301 000 ; 130 000. d) 999 ; 9 999 ; 99 999. e) 606 060 ; 660 006 ; 600 666.
+- `T10C3` a) > ; b) < ; d) = ; e) >. a) 24 500 < 25 040 < 25 400 ; b) 130 000 < 301 000 < 310 000 ; d) 999 < 9 999 < 99 999 ; e) 600 666 < 606 060 < 660 006.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Complète avec >, < ou = : a) 45 870 … 45 807 ; b) 99 999 … 100 000 ; d) 530 200 … 530 200 ; e) 708 415 … 78 415. Puis justifie l’une de tes réponses.
+- `T11C3` a) > ; b) < ; d) = ; e) >. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` COMPARER ET ORDONNER AVEC >, < ET =
+- `P` Comparaison et rangement des nombres
+- `P` Comparer deux nombres, c’est dire lequel est le plus grand. Le symbole > se lit « est plus grand que », le symbole < « est plus petit que » et le symbole = « est égal à ». Ordonner des nombres, c’est les ranger du plus petit au plus grand (ordre croissant) ou du plus grand au plus petit (ordre décroissant).
+- `P` la pointe du symbole pique toujours le plus petit nombre, et l’ouverture s’offre au plus grand.
+- `P` Exemple : 98 750 < 102 300 (5 chiffres contre 6) ; 731 450 > 731 405 car à la colonne des dizaines, 5 > 0.
+- `P` 1. Compter les chiffres des deux nombres.
+- `P` 2. À longueur égale, comparer les chiffres de gauche à droite jusqu’à la première différence.
+- `P` 3. Écrire le symbole : la pointe vers le petit, l’ouverture vers le grand.
+- `P` plus de chiffres = plus grand ; à longueur égale, comparaison colonne par colonne depuis la gauche ; la pointe du symbole désigne le petit.
+- `P` Le savais-tu ? Les symboles < et > ont été inventés par le mathématicien anglais Thomas Harriot il y a environ 400 ans.
+- `P` Attention : Comparer en partant de la droite : dans 458 217 et 456 998, la fin « 998 » impressionne mais ne décide rien. La première différence EN PARTANT DE LA GAUCHE commande tout.
+- `P` EXERCICE
+- `P` 1. Complète avec >, < ou = : a) 45 870 … 45 807 ; b) 99 999 … 100 000 ; d) 530 200 … 530 200 ; e) 708 415 … 78 415.
+- `P` 2. Range en ordre croissant : a) 25 400 ; 24 500 ; 25 040. b) 310 000 ; 301 000 ; 130 000. d) 999 ; 9 999 ; 99 999. e) 606 060 ; 660 006 ; 600 666.
+- `P` 3. a) Écris le plus grand nombre possible avec les chiffres 7, 0, 3, 9, 1, 5 utilisés une seule fois. b) Écris le plus petit (sans commencer par 0). d) Compare ces deux nombres. e) Un nombre de 6 chiffres peut-il être plus petit qu’un nombre de 5 chiffres ? Justifie.
+- `P` 4. Complète avec >, < ou = : a) 9 999 … 10 001 ; b) 250 101 … 250 011 ; d) 87 000 … 87 000 ; e) 605 009 … 65 009.
+- `P` 5. a) Range en ordre décroissant : 480 150 ; 480 015 ; 481 005 ; 408 510. b) Lequel est le plus proche de 480 000 ? d) Intercale 480 100 au bon endroit dans ton classement. e) Écris un nombre compris entre 408 510 et 480 015.
+- `P` 6. Défi CEPE — Population de quatre villes : Toamasina 326 286 ; Antsirabe 245 592 ; Fianarantsoa 189 879 ; Mahajanga 246 022. a) Range-les de la plus peuplée à la moins peuplée. b) Quelles sont les deux villes aux populations les plus proches ? d) Quelle ville dépassera 250 000 habitants si elle gagne 4 000 habitants ? e) Compare 189 879 et 198 879 en expliquant ta méthode.
+- `P` Correction
+- `P` 1. a) > ; b) < ; d) = ; e) >.
+- `P` 2. a) 24 500 < 25 040 < 25 400 ; b) 130 000 < 301 000 < 310 000 ; d) 999 < 9 999 < 99 999 ; e) 600 666 < 606 060 < 660 006.
+- `P` 3. a) 975 310 ; b) 103 579 ; d) 103 579 < 975 310 ; e) non : le plus petit nombre de 6 chiffres, 100 000, dépasse déjà le plus grand nombre de 5 chiffres, 99 999.
+- `P` 4. a) < ; b) > ; d) = ; e) >.
+- `P` 5. a) 481 005 > 480 150 > 480 015 > 408 510 ; b) 480 015 (15 d’écart seulement) ; d) 481 005 > 480 150 > 480 100 > 480 015 > 408 510 ; e) par exemple 450 000 (tout nombre strictement compris convient).
+- `P` 6. a) Toamasina > Mahajanga > Antsirabe > Fianarantsoa ; b) Antsirabe et Mahajanga (430 d’écart) ; d) Mahajanga : 246 022 + 4 000 = 250 022 > 250 000, alors qu’Antsirabe n’atteint que 249 592 ; e) 189 879 < 198 879 : même nombre de chiffres, on compare colonne par colonne depuis la gauche : 1 = 1, puis 8 < 9.
+
+### SÉANCE 4 / 14 — COMPOSER LES GRANDS NOMBRES PAR GROUPEMENTS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 4 / 14 — COMPOSER LES GRANDS NOMBRES PAR GROUPEMENTS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Composition jusqu’à 1 000 000Titre : Composer les grands nombres par groupementsObjectif spécifique : À la fin de la séance, l’apprenant est capable de composer des nombres jusqu’à 1 000 000 à l’aide de groupements de 10 000, 25 000 et 50 000.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Billets factices, jetons, tableau de numération, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 4 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Range en ordre croissant : 50 000 ; 10 000 ; 25 000.
+- `T3C3` R.A. : 10 000 < 25 000 < 50 000.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à composer des nombres jusqu’à 1 000 000 à l’aide de groupements de 10 000, 25 000 et 50 000. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Pour acheter une bicyclette à 100 000 Ar, Naina vide sa tirelire : elle contient des billets de 10 000 Ar. Son frère propose d’échanger contre des coupures de 25 000… puis de 50 000. Combien de billets de chaque sorte faut-il pour faire exactement 100 000 Ar ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Composer les grands nombres par groupements » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 350 000 = 7 × 50 000 ; ou bien 350 000 = 14 × 25 000 ; ou encore 350 000 = 35 × 10 000.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Les groupements de 10 000, 25 000 et 50 000 sont les plus pratiques parce qu’ils se logent exactement dans les grands nombres ronds : 100 000, c’est 10 paquets de 10 000, ou 4 paquets de 25 000, ou 2 paquets de 50 000. Pour composer 275 000, on peut prendre 5 paquets de 50 000 et 1 paquet de 25 000 ; ou bien 11 paquets de 25 000 ; ou encore 27 paquets de 10 000 et 5 000 — toutes ces compositions désignent LE MÊME nombre. Savoir passer d’un groupement à l’autre, c’est exactement ce que fait le marchand qui rend la monnaie : il échange sans jamais changer le total.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, 100 000 = 10 × 10 000 = 4 × 25 000 = 2 × 50 000 ; un nombre peut se composer de plusieurs façons, le total reste le même.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Combien de billets de 10 000 Ar pour payer : a) 70 000 Ar ; b) 240 000 Ar ; d) 500 000 Ar ; e) 1 000 000 Ar ? Compose avec des paquets de 25 000 : a) 75 000 ; b) 200 000 ; d) 325 000 ; e) 1 000 000.
+- `T10C3` a) 7 ; b) 24 ; d) 50 ; e) 100. a) 3 paquets ; b) 8 paquets ; d) 13 paquets ; e) 40 paquets.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Combien de billets de 10 000 Ar pour payer : a) 70 000 Ar ; b) 240 000 Ar ; d) 500 000 Ar ; e) 1 000 000 Ar ? Puis justifie l’une de tes réponses.
+- `T11C3` a) 7 ; b) 24 ; d) 50 ; e) 100. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` COMPOSER LES GRANDS NOMBRES PAR GROUPEMENTS
+- `P` Composition jusqu’à 1 000 000
+- `P` Composer un nombre, c’est le construire en additionnant des groupements connus : paquets de 10 000, de 25 000, de 50 000, centaines, dizaines, unités. Un même nombre peut être composé de plusieurs façons différentes.
+- `P` composer, c’est faire la somme de ses paquets, comme on réunit des billets pour payer un prix.
+- `P` Exemple : 350 000 = 7 × 50 000 ; ou bien 350 000 = 14 × 25 000 ; ou encore 350 000 = 35 × 10 000.
+- `P` 1. Choisir le groupement (10 000, 25 000 ou 50 000).
+- `P` 2. Chercher combien de paquets entrent dans le nombre.
+- `P` 3. Compléter avec des paquets plus petits et vérifier la somme.
+- `P` 100 000 = 10 × 10 000 = 4 × 25 000 = 2 × 50 000 ; un nombre peut se composer de plusieurs façons, le total reste le même.
+- `P` Le savais-tu ? L’ariary est l’une des rares monnaies du monde qui ne soit pas décimale à l’origine : un ariary valait 5 francs malgaches, et le mot « iraimbilanja » désignait un cinquième d’ariary.
+- `P` Attention : Croire que des compositions différentes donnent des nombres différents : 4 × 25 000 et 2 × 50 000 font tous deux 100 000. On change les paquets, jamais le total.
+- `P` EXERCICE
+- `P` 1. Combien de billets de 10 000 Ar pour payer : a) 70 000 Ar ; b) 240 000 Ar ; d) 500 000 Ar ; e) 1 000 000 Ar ?
+- `P` 2. Compose avec des paquets de 25 000 : a) 75 000 ; b) 200 000 ; d) 325 000 ; e) 1 000 000.
+- `P` 3. Papa doit payer 450 000 Ar. a) Combien de coupures de 50 000 ? b) S’il n’a que 8 coupures de 50 000, combien manque-t-il ? d) Comment compléter avec des billets de 25 000 ? e) Et avec des billets de 10 000 ?
+- `P` 4. Combien de billets de 20 000 Ar pour payer : a) 60 000 Ar ; b) 180 000 Ar ; d) 400 000 Ar ; e) 1 000 000 Ar ?
+- `P` 5. Compose 350 000 Ar : a) uniquement avec des 50 000 ; b) uniquement avec des 25 000 ; d) uniquement avec des 10 000 ; e) avec 5 billets de 50 000 et le reste en 25 000.
+- `P` 6. Défi CEPE — Une coopérative doit payer 775 000 Ar avec des coupures de 50 000, 25 000 et 10 000. a) Propose une composition possible. b) Quel est le plus petit nombre de coupures possible ? d) La caisse ne contient que 12 coupures de 50 000 : combien de 25 000 pour compléter ? e) Vérifie ta réponse de d) par un calcul.
+- `P` Correction
+- `P` 1. a) 7 ; b) 24 ; d) 50 ; e) 100.
+- `P` 2. a) 3 paquets ; b) 8 paquets ; d) 13 paquets ; e) 40 paquets.
+- `P` 3. a) 9 coupures ; b) 8 × 50 000 = 400 000, il manque 50 000 Ar ; d) 2 billets de 25 000 ; e) 5 billets de 10 000.
+- `P` 4. a) 3 ; b) 9 ; d) 20 ; e) 50.
+- `P` 5. a) 7 billets ; b) 14 billets ; d) 35 billets ; e) 5 × 50 000 = 250 000, il reste 100 000, soit 4 billets de 25 000.
+- `P` 6. a) par exemple 10 × 50 000 + 11 × 25 000 = 500 000 + 275 000 = 775 000 Ar ; b) 16 coupures (15 de 50 000 et 1 de 25 000) ; d) 775 000 − 12 × 50 000 = 775 000 − 600 000 = 175 000 = 7 × 25 000, donc 7 coupures ; e) 600 000 + 175 000 = 775 000 : le compte est bon.
+
+### SÉANCE 5 / 14 — DÉCOMPOSER LES NOMBRES DE PLUSIEURS FAÇONS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 5 / 14 — DÉCOMPOSER LES NOMBRES DE PLUSIEURS FAÇONS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Décomposition jusqu’à 1 000 000Titre : Décomposer les nombres de plusieurs façonsObjectif spécifique : À la fin de la séance, l’apprenant est capable de décomposer un nombre jusqu’à 1 000 000 sous forme additive et multiplicative.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Tableau de numération, étiquettes, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 5 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Compose : 3 paquets de 50 000 et 2 paquets de 10 000.
+- `T3C3` R.A. : 150 000 + 20 000 = 170 000.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à décomposer un nombre jusqu’à 1 000 000 sous forme additive et multiplicative. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La coopérative du village a vendu 68 425 kg de letchis. Pour remplir son registre, le secrétaire doit écrire ce nombre « en détail » : combien de dizaines de mille, de milliers, de centaines… Comment ouvrir un nombre pour voir tout ce qu’il contient ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Décomposer les nombres de plusieurs façons » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 405 070 = 400 000 + 5 000 + 70 = (4 × 100 000) + (5 × 1 000) + (7 × 10).
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La décomposition est la radiographie du nombre : elle rend visible ce que le tableau de numération range en colonnes. Elle n’est pas unique ! 68 425, c’est aussi « 68 milliers et 425 unités », ou « 684 centaines et 25 unités » — des découpages différents du même nombre, tous utiles : le premier sert à lire, le deuxième à poser des divisions par 100. Dans l’autre sens, composer consiste à refermer la boîte : (7 × 100 000) + (3 × 100) + 9 se referme en 700 309 — gare aux colonnes vides, qui réclament leurs zéros. Décomposer et composer sont les deux gestes inverses qui donnent la pleine maîtrise des grands nombres.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, décomposition additive = somme des valeurs ; multiplicative = (chiffre × colonne) ; plusieurs décompositions correctes existent pour un même nombre.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Décompose en somme de valeurs : a) 7 254 ; b) 90 306 ; d) 480 019 ; e) 605 500. Recompose : a) 300 000 + 40 000 + 2 000 + 600 + 70 + 1 ; b) (8 × 100 000) + (3 × 100) ; d) 52 milliers et 52 unités ; e) (9 × 10 000) + (9 × 10).
+- `T10C3` a) 7 000 + 200 + 50 + 4 ; b) 90 000 + 300 + 6 ; d) 400 000 + 80 000 + 10 + 9 ; e) 600 000 + 5 000 + 500. a) 342 671 ; b) 800 300 ; d) 52 052 ; e) 90 090.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Décompose en somme de valeurs : a) 7 254 ; b) 90 306 ; d) 480 019 ; e) 605 500. Puis justifie l’une de tes réponses.
+- `T11C3` a) 7 000 + 200 + 50 + 4 ; b) 90 000 + 300 + 6 ; d) 400 000 + 80 000 + 10 + 9 ; e) 600 000 + 5 000 + 500. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` DÉCOMPOSER LES NOMBRES DE PLUSIEURS FAÇONS
+- `P` Décomposition jusqu’à 1 000 000
+- `P` Décomposer un nombre, c’est l’écrire comme une somme qui montre la valeur de chacun de ses chiffres. La décomposition additive donne les valeurs (60 000 + 8 000 + 400 + 20 + 5) ; la décomposition multiplicative détaille chaque valeur en chiffre × colonne : (6 × 10 000) + (8 × 1 000) + (4 × 100) + (2 × 10) + 5.
+- `P` décomposer, c’est ouvrir le nombre comme une boîte et poser côte à côte tout ce qu’elle contient.
+- `P` Exemple : 405 070 = 400 000 + 5 000 + 70 = (4 × 100 000) + (5 × 1 000) + (7 × 10).
+- `P` 1. Placer le nombre dans le tableau de numération.
+- `P` 2. Écrire la valeur de chaque chiffre non nul et les additionner.
+- `P` 3. Pour la forme multiplicative, écrire chaque valeur en chiffre × 100 000, × 10 000, × 1 000….
+- `P` décomposition additive = somme des valeurs ; multiplicative = (chiffre × colonne) ; plusieurs décompositions correctes existent pour un même nombre.
+- `P` Le savais-tu ? Les anciens Égyptiens décomposaient déjà leurs nombres : ils dessinaient un hiéroglyphe différent pour 1, 10, 100, 1 000… et répétaient chaque signe autant de fois que nécessaire.
+- `P` Attention : Décomposer 68 425 en 6 + 8 + 4 + 2 + 5 : on a additionné les chiffres en oubliant leurs colonnes ! Chaque chiffre doit emporter la valeur de sa position.
+- `P` EXERCICE
+- `P` 1. Décompose en somme de valeurs : a) 7 254 ; b) 90 306 ; d) 480 019 ; e) 605 500.
+- `P` 2. Recompose : a) 300 000 + 40 000 + 2 000 + 600 + 70 + 1 ; b) (8 × 100 000) + (3 × 100) ; d) 52 milliers et 52 unités ; e) (9 × 10 000) + (9 × 10).
+- `P` 3. Pour 736 208 : a) décomposition additive ; b) décomposition multiplicative ; d) nombre de centaines complètes ; e) que devient le nombre si l’on ajoute 4 unités de mille ?
+- `P` 4. Décompose selon les valeurs de position : a) 4 507 ; b) 86 020 ; d) 300 905 ; e) 999 000.
+- `P` 5. Recompose : a) (6 × 100 000) + (4 × 1 000) + (9 × 10) ; b) (2 × 10 000) + (5 × 100) + 3 ; d) 70 milliers et 56 unités ; e) 804 centaines.
+- `P` 6. Défi CEPE — a) Écris 52 700 comme un nombre de centaines. b) Écris 52 700 comme milliers et unités. d) Quel nombre vaut 348 dizaines ? e) Rakoto affirme : « 65 centaines, c’est 6 500 ». A-t-il raison ? Justifie.
+- `P` Correction
+- `P` 1. a) 7 000 + 200 + 50 + 4 ; b) 90 000 + 300 + 6 ; d) 400 000 + 80 000 + 10 + 9 ; e) 600 000 + 5 000 + 500.
+- `P` 2. a) 342 671 ; b) 800 300 ; d) 52 052 ; e) 90 090.
+- `P` 3. a) 700 000 + 30 000 + 6 000 + 200 + 8 ; b) (7 × 100 000) + (3 × 10 000) + (6 × 1 000) + (2 × 100) + 8 ; d) 7 362 centaines ; e) 740 208.
+- `P` 4. a) 4 000 + 500 + 7 ; b) 80 000 + 6 000 + 20 ; d) 300 000 + 900 + 5 ; e) 900 000 + 90 000 + 9 000.
+- `P` 5. a) 604 090 ; b) 20 503 ; d) 70 056 ; e) 80 400.
+- `P` 6. a) 527 centaines ; b) 52 milliers et 700 unités ; d) 3 480 ; e) oui : 65 × 100 = 6 500.
+
+### SÉANCE 6 / 14 — REPRÉSENTER LES FRACTIONS : NUMÉRATEUR ET DÉNOMINATEUR
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 6 / 14 — REPRÉSENTER LES FRACTIONS : NUMÉRATEUR ET DÉNOMINATEUR
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Fractions simplesTitre : Représenter les fractions : numérateur et dénominateurObjectif spécifique : À la fin de la séance, l’apprenant est capable de représenter une fraction simple et nommer son numérateur et son dénominateur.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Bandes de papier, galette ou pain à partager, crayons de couleur, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 6 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Décompose 4 507 en somme de valeurs.
+- `T3C3` R.A. : 4 000 + 500 + 7.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à représenter une fraction simple et nommer son numérateur et son dénominateur. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Maman rapporte une galette de manioc pour ses quatre enfants. Elle la coupe en quatre parts égales et en donne trois tout de suite ; la dernière attend le retour de Papa. Quelle écriture mathématique dit exactement « trois parts sur quatre » ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Représenter les fractions : numérateur et dénominateur » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Une tablette de chocolat de 6 carreaux dont on mange 5 : on a mangé , « cinq sixièmes », et il reste .
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Tout commence par le partage ÉGAL : si les parts ne sont pas égales, il n’y a pas de fraction. Une fois l’unité coupée en 4 parts égales, chaque part est un quart (), et trois parts font trois quarts (). Les dénominateurs du programme ont chacun leur nom : demis (2), tiers (3), quarts (4), cinquièmes (5), sixièmes (6), huitièmes (8), dixièmes (10) et centièmes (100). La bande de papier pliée est le meilleur outil pour VOIR une fraction : plier en deux donne des demis, replier donne des quarts… Et si l’on prend toutes les parts, , on reconstitue l’unité entière : = 1.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, fraction = parts égales ; dénominateur (bas) = découpage ; numérateur (haut) = parts prises ; n/n = 1.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Pour chaque situation, écris la fraction : a) 2 parts prises sur 5 ; b) 7 parts sur 8 ; d) 1 part sur 3 ; e) 9 parts sur 10. Donne le numérateur puis le dénominateur : a) ; b) ; d) ; e) .
+- `T10C3` a) ; b) ; d) ; e) . a) 3 et 8 ; b) 5 et 6 ; d) 1 et 2 ; e) 99 et 100.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Pour chaque situation, écris la fraction : a) 2 parts prises sur 5 ; b) 7 parts sur 8 ; d) 1 part sur 3 ; e) 9 parts sur 10. Puis justifie l’une de tes réponses.
+- `T11C3` a) ; b) ; d) ; e) . La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` REPRÉSENTER LES FRACTIONS : NUMÉRATEUR ET DÉNOMINATEUR
+- `P` Fractions simples
+- `P` Une fraction représente une ou plusieurs parts égales de l’unité. Elle s’écrit avec deux nombres séparés par un trait : le dénominateur, en bas, indique en combien de parts égales l’unité est découpée ; le numérateur, en haut, indique combien de parts on prend.
+- `P` le bas dit comment on coupe, le haut dit combien on prend.
+- `P` Exemple : Une tablette de chocolat de 6 carreaux dont on mange 5 : on a mangé , « cinq sixièmes », et il reste .
+- `P` 1. Vérifier que l’unité est partagée en parts égales.
+- `P` 2. Compter les parts du découpage : c’est le dénominateur.
+- `P` 3. Compter les parts prises : c’est le numérateur ; lire la fraction avec son nom (tiers, quarts…).
+- `P` fraction = parts égales ; dénominateur (bas) = découpage ; numérateur (haut) = parts prises ; n/n = 1.
+- `P` Le savais-tu ? Les Égyptiens de l’Antiquité n’utilisaient presque que des fractions de numérateur 1 : pour dire , ils écrivaient + ! L’œil du dieu Horus, découpé en morceaux, leur servait même à noter les fractions , , … sur les sacs de grain.
+- `P` Attention : Écrire quand la galette est coupée en parts inégales : une fraction exige des parts ÉGALES. Toujours contrôler le partage avant d’écrire la fraction.
+- `P` EXERCICE
+- `P` 1. Pour chaque situation, écris la fraction : a) 2 parts prises sur 5 ; b) 7 parts sur 8 ; d) 1 part sur 3 ; e) 9 parts sur 10.
+- `P` 2. Donne le numérateur puis le dénominateur : a) ; b) ; d) ; e) .
+- `P` 3. Une bande est pliée en 6 parts égales ; on en colorie 4. a) Quelle fraction est coloriée ? b) Quelle fraction reste blanche ? d) Que vaut la somme des deux fractions ? e) Que représente ?
+- `P` 4. On partage une tablette de chocolat en 6 parts égales et on en mange 5. a) Quelle fraction a-t-on mangée ? b) Quelle fraction reste-t-il ? d) Que vaut ? e) Écris en chiffres la fraction « quatre cinquièmes ».
+- `P` 5. Un gâteau de 1 000 g est partagé également entre 4 enfants. a) Quelle fraction du gâteau reçoit chacun ? b) Combien de grammes ? d) Et si le même gâteau était partagé entre 5 enfants ? e) Dans l’écriture , que représente le dénominateur ?
+- `P` 6. Défi CEPE — On partage équitablement 6 gâteaux identiques de 600 g entre 24 personnes. a) Quelle est la masse totale de gâteau ? b) Combien de grammes reçoit chaque personne ? d) Quelle fraction d’un gâteau cela représente-t-il ? e) Vérifie que 24 parts redonnent bien la masse totale.
+- `P` Correction
+- `P` 1. a) ; b) ; d) ; e) .
+- `P` 2. a) 3 et 8 ; b) 5 et 6 ; d) 1 et 2 ; e) 99 et 100.
+- `P` 3. a) ; b) ; d) + = ; e) la bande entière : = 1.
+- `P` 4. a) ; b) ; d) 1 : l’unité entière ; e) .
+- `P` 5. a) ; b) 1 000 ÷ 4 = 250 g ; d) , soit 200 g ; e) le nombre total de parts égales réalisées.
+- `P` 6. a) 600 × 6 = 3 600 g ; b) 3 600 ÷ 24 = 150 g ; d) = de gâteau ; e) 24 × 150 = 3 600 g : le compte est bon.
+
+### SÉANCE 7 / 14 — LES FRACTIONS ÉQUIVALENTES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 7 / 14 — LES FRACTIONS ÉQUIVALENTES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Équivalences (dénominateurs 2, 3, 4, 5, 6, 8, 10, 100)Titre : Les fractions équivalentesObjectif spécifique : À la fin de la séance, l’apprenant est capable de reconnaître et construire des fractions équivalentes à l’aide des bandes de fractions.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Bandes de fractions, papier à plier, crayons de couleur, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 7 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Dans la fraction , que représente le 8 ?
+- `T3C3` R.A. : Le dénominateur : l’unité est découpée en 8 parts égales.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à reconnaître et construire des fractions équivalentes à l’aide des bandes de fractions. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Fara dit : « j’ai mangé de ma barre de chocolat » ; Tiana répond : « moi, de la mienne, j’en ai mangé plus ! » Les deux barres sont identiques. Tiana a-t-elle vraiment mangé davantage ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Les fractions équivalentes » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` = = : on a multiplié haut et bas par 2, puis par 10.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Les bandes de fractions rendent l’équivalence visible : sur trois bandes identiques, la partie coloriée de , de et de s’arrête exactement au même endroit. Le secret du calcul : multiplier haut et bas par 2 revient à couper chaque part en deux — deux fois plus de parts, chacune deux fois plus petite, le total ne change pas. La règle fonctionne avec tous les dénominateurs du programme : = = ; = ; = . Dans l’autre sens, diviser haut et bas par le même nombre « simplifie » la fraction : = . Deux fractions apparemment différentes peuvent donc être deux noms du même nombre — c’est ce qui tranchera le débat de Fara et Tiana.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, équivalentes = même quantité ; on multiplie ou divise numérateur ET dénominateur par le même nombre non nul.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Complète : a) = …/6 ; b) = …/6 ; d) = …/8 ; e) = …/10. Vraies ou fausses ? a) = ; b) = ; d) = ; e) = .
+- `T10C3` a) ; b) ; d) ; e) . a) vraie ; b) vraie ; d) vraie (haut et bas × 2) ; e) fausse : = , pas .
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Complète : a) = …/6 ; b) = …/6 ; d) = …/8 ; e) = …/10. Puis justifie l’une de tes réponses.
+- `T11C3` a) ; b) ; d) ; e) . La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LES FRACTIONS ÉQUIVALENTES
+- `P` Équivalences (dénominateurs 2, 3, 4, 5, 6, 8, 10, 100)
+- `P` Deux fractions sont équivalentes lorsqu’elles représentent la même quantité de la même unité. On obtient une fraction équivalente en multipliant — ou en divisant — le numérateur et le dénominateur par le même nombre, différent de zéro.
+- `P` on coupe les parts plus fin (ou plus gros), mais la quantité prise ne bouge pas : = = .
+- `P` Exemple : = = : on a multiplié haut et bas par 2, puis par 10.
+- `P` 1. Poser la fraction de départ.
+- `P` 2. Choisir le multiplicateur (ou le diviseur) commun.
+- `P` 3. Multiplier (ou diviser) le haut ET le bas, puis vérifier sur la bande ou la droite numérique.
+- `P` équivalentes = même quantité ; on multiplie ou divise numérateur ET dénominateur par le même nombre non nul.
+- `P` Le savais-tu ? Dans les cuisines du monde entier, les fractions équivalentes sauvent des recettes : un cuisinier qui n’a pas de verre mesureur de litre peut verser 2 fois de litre — il utilise, sans le dire, l’égalité = !
+- `P` Attention : Multiplier seulement le dénominateur : ne devient pas ! Si l’on touche le bas, on touche le haut de la même façon, sinon la quantité change.
+- `P` EXERCICE
+- `P` 1. Complète : a) = …/6 ; b) = …/6 ; d) = …/8 ; e) = …/10.
+- `P` 2. Vraies ou fausses ? a) = ; b) = ; d) = ; e) = .
+- `P` 3. a) Simplifie . b) Simplifie . d) Trouve deux fractions équivalentes à . e) Fara () et Tiana () : qui a mangé le plus de chocolat ?
+- `P` 4. Complète : a) = …/10 ; b) = 4/… ; d) = …/100 ; e) = 1/….
+- `P` 5. Simplifie au maximum : a) ; b) ; d) ; e) .
+- `P` 6. Défi CEPE — Fara a colorié d’une bande, Tiana d’une bande identique. a) Qui a colorié le plus ? Justifie. b) Donne une troisième écriture de la même fraction. d) Par quel nombre passe-t-on de à (haut et bas) ? e) Explique avec le pliage de la bande pourquoi la quantité ne change pas.
+- `P` Correction
+- `P` 1. a) ; b) ; d) ; e) .
+- `P` 2. a) vraie ; b) vraie ; d) vraie (haut et bas × 2) ; e) fausse : = , pas .
+- `P` 3. a) ; b) ; d) par exemple et ; e) personne : = , elles ont mangé exactement autant.
+- `P` 4. a) ; b) ; d) ; e) .
+- `P` 5. a) ; b) ; d) ; e) .
+- `P` 6. a) ni l’une ni l’autre : = = , les deux bandes sont coloriées pareil ; b) par exemple ou ; d) on multiplie haut et bas par 2 ; e) replier la bande coupe chaque part en deux : il y a deux fois plus de parts, mais chacune est deux fois plus petite — la partie coloriée s’arrête au même endroit.
+
+### SÉANCE 8 / 14 — COMPARER ET PLACER DES FRACTIONS SUR LA DROITE NUMÉRIQUE
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 8 / 14 — COMPARER ET PLACER DES FRACTIONS SUR LA DROITE NUMÉRIQUE
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Fractions sur la droite numériqueTitre : Comparer et placer des fractions sur la droite numériqueObjectif spécifique : À la fin de la séance, l’apprenant est capable de placer des fractions simples sur la droite numérique et les comparer.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Droite numérique tracée au sol et sur papier, bandes de fractions, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 8 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Donne une fraction équivalente à .
+- `T3C3` R.A. : Par exemple ou .
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à placer des fractions simples sur la droite numérique et les comparer. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Sur la route de l’école, Hery a parcouru du chemin et Vola du même chemin. Chacun se dit le plus avancé ! Comment la droite numérique peut-elle les départager sans dispute ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Comparer et placer des fractions sur la droite numérique » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` et : équivalentes et ; est plus à droite, donc > .
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La droite numérique transforme la comparaison en simple coup d’œil — mais encore faut-il placer juste. Deux fractions de MÊME dénominateur se comparent par le numérateur : > . Deux fractions de MÊME numérateur se comparent à l’envers : > , car couper en 3 fait des parts plus grosses que couper en 4. Dans les autres cas, on passe par des équivalentes pour obtenir le même dénominateur : = et = , donc > — Hery est devant. On peut aussi se repérer aux bornes : une fraction vaut quand le haut est la moitié du bas, elle approche 1 quand le haut rattrape le bas.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, même dénominateur → plus grand numérateur gagne ; même numérateur → plus petit dénominateur gagne ; sinon, passer par des fractions équivalentes.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Compare : a) et ; b) et ; d) et ; e) et 1. Place en ordre croissant : a) , , ; b) , , ; d) , , ; e) , , .
+- `T10C3` a) < ; b) > ; d) = ; e) < 1. a) < < ; b) < < ; d) < < (< < ) ; e) < < .
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Compare : a) et ; b) et ; d) et ; e) et 1. Puis justifie l’une de tes réponses.
+- `T11C3` a) < ; b) > ; d) = ; e) < 1. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` COMPARER ET PLACER DES FRACTIONS SUR LA DROITE NUMÉRIQUE
+- `P` Fractions sur la droite numérique
+- `P` Sur la droite numérique, une fraction occupe un point précis entre 0 et 1 (ou au-delà) : on partage le segment unité en autant de parts égales que le dénominateur, puis on avance d’autant de parts que le numérateur. Une fraction est plus grande qu’une autre si son point est plus à droite.
+- `P` la droite est un chemin : le dénominateur fixe la taille des pas, le numérateur dit combien de pas on fait.
+- `P` Exemple : et : équivalentes et ; est plus à droite, donc > .
+- `P` 1. Partager le segment unité selon le dénominateur.
+- `P` 2. Avancer du nombre de parts donné par le numérateur et marquer le point.
+- `P` 3. Pour comparer : même dénominateur, mêmes numérateurs ou équivalentes, puis lire la droite.
+- `P` même dénominateur → plus grand numérateur gagne ; même numérateur → plus petit dénominateur gagne ; sinon, passer par des fractions équivalentes.
+- `P` Le savais-tu ? Les coureurs du marathon voient des panneaux « mi-course » puis « de course » : les organisateurs placent les fractions sur la route comme toi sur la droite numérique.
+- `P` Attention : Croire que > parce que 8 > 4 : plus on coupe fin, plus la part est PETITE. Le grand dénominateur fait la petite part.
+- `P` EXERCICE
+- `P` 1. Compare : a) et ; b) et ; d) et ; e) et 1.
+- `P` 2. Place en ordre croissant : a) , , ; b) , , ; d) , , ; e) , , .
+- `P` 3. Sur un segment de 12 cm représentant l’unité : a) à combien de cm place-t-on ? b) et ? d) et ? e) quelle fraction tombe exactement à 6 cm ?
+- `P` 4. Compare avec >, < ou = : a) et ; b) et ; d) et 1 ; e) et .
+- `P` 5. Pour ranger , et , on passe au dénominateur 12. a) Convertis . b) Convertis . d) Convertis . e) Range les trois fractions en ordre croissant.
+- `P` 6. Défi CEPE — Sur un chemin, trois enfants sont partis du même point : Naina est à du chemin, Hery à , Vola à . a) Convertis les trois fractions en huitièmes. b) Qui est le plus avancé ? d) Qui est exactement au milieu du chemin ? e) Place les trois positions sur une droite graduée en huitièmes.
+- `P` Correction
+- `P` 1. a) < ; b) > ; d) = ; e) < 1.
+- `P` 2. a) < < ; b) < < ; d) < < (< < ) ; e) < < .
+- `P` 3. a) 3 cm ; b) 8 cm ; d) 10 cm ; e) (= ).
+- `P` 4. a) < ; b) > ; d) = ; e) >.
+- `P` 5. a) ; b) ; d) ; e) < < .
+- `P` 6. a) ; = ; = ; b) Hery () ; d) Vola (= ) ; e) sur la droite graduée de à , on marque Vola à , Naina à , Hery à .
+
+### SÉANCE 9 / 14 — FRACTION IMPROPRE ET NOMBRE FRACTIONNAIRE
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 9 / 14 — FRACTION IMPROPRE ET NOMBRE FRACTIONNAIRE
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Fractions impropres et nombres fractionnaires (jusqu’à 2)Titre : Fraction impropre et nombre fractionnaireObjectif spécifique : À la fin de la séance, l’apprenant est capable de transformer une fraction impropre en nombre fractionnaire et inversement, jusqu’à 2.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Bandes de fractions, galettes en papier, droite numérique, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 9 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Compare et 1.
+- `T3C3` R.A. : < 1, car il manque pour faire l’unité.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à transformer une fraction impropre en nombre fractionnaire et inversement, jusqu’à 2. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` À la fête de l’école, chaque gâteau est coupé en 4 parts. Mamy a distribué 5 parts : plus qu’un gâteau entier ! Comment écrire « cinq quarts » — et comment dire la même chose avec des gâteaux entiers et des parts ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Fraction impropre et nombre fractionnaire » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` = 1 + (« un et trois huitièmes ») ; à l’inverse, 1 + = + = .
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le passage de l’une à l’autre est un simple jeu de remplissage. Dans le sens impropre → fractionnaire : combien de fois le dénominateur entre-t-il dans le numérateur ? Pour : 4 entre 1 fois dans 7, reste 3, donc = 1 + . Dans le sens inverse, chaque entier redevient dénominateur/dénominateur : 1 + = + = . Au programme de T5, on reste entre 0 et 2 : les fractions impropres rencontrées valent au plus 2 entiers (= 2). Sur la droite numérique, ces nombres habitent entre 1 et 2 — la preuve que les fractions ne s’arrêtent pas à l’unité.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, numérateur > dénominateur = impropre ; entiers pleins + reste = nombre fractionnaire ; n/n = 1 et 2n/n = 2.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Transforme en nombre fractionnaire : a) ; b) ; d) ; e) . Transforme en fraction impropre : a) 1 + ; b) 1 + ; d) 1 + ; e) 1 + .
+- `T10C3` a) 1 + ; b) 1 + ; d) 1 + ; e) 1 + . a) ; b) ; d) ; e) .
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Transforme en nombre fractionnaire : a) ; b) ; d) ; e) . Puis justifie l’une de tes réponses.
+- `T11C3` a) 1 + ; b) 1 + ; d) 1 + ; e) 1 + . La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` FRACTION IMPROPRE ET NOMBRE FRACTIONNAIRE
+- `P` Fractions impropres et nombres fractionnaires (jusqu’à 2)
+- `P` Une fraction impropre est une fraction dont le numérateur est plus grand que le dénominateur : elle dépasse l’unité. Un nombre fractionnaire associe un nombre entier et une fraction plus petite que 1 : = 1 + , que l’on lit « un et un quart ».
+- `P` quand on a plus de parts qu’il n’en faut pour un entier, on compte les entiers pleins, et la fraction garde le reste.
+- `P` Exemple : = 1 + (« un et trois huitièmes ») ; à l’inverse, 1 + = + = .
+- `P` 1. Chercher combien de fois le dénominateur entre dans le numérateur : c’est l’entier.
+- `P` 2. Écrire le reste sur le dénominateur : c’est la fraction restante.
+- `P` 3. Pour revenir en arrière, convertir chaque entier en n/n et additionner les numérateurs.
+- `P` numérateur > dénominateur = impropre ; entiers pleins + reste = nombre fractionnaire ; n/n = 1 et 2n/n = 2.
+- `P` Le savais-tu ? Les boulangers parlent couramment en fractions impropres : une baguette « bâtarde » pèse de la baguette ordinaire ! Et dans les recettes anglaises, « one and a half cup » — une tasse et demie — s’écrit exactement comme ton nombre fractionnaire : 1 + .
+- `P` Attention : Écrire = 1,4 ou « 1 virgule 4 » : le reste est une FRACTION (), pas un chiffre après la virgule. Un et un quart, c’est 1 + , et l’on verra plus tard que cela vaut 1,25.
+- `P` EXERCICE
+- `P` 1. Transforme en nombre fractionnaire : a) ; b) ; d) ; e) .
+- `P` 2. Transforme en fraction impropre : a) 1 + ; b) 1 + ; d) 1 + ; e) 1 + .
+- `P` 3. Chaque gâteau est coupé en 6 parts ; Mamy distribue 11 parts. a) Écris la fraction impropre. b) Écris le nombre fractionnaire. d) Combien de parts manque-t-il pour 2 gâteaux entiers ? e) Place entre deux entiers sur la droite numérique.
+- `P` 4. Transforme en nombre fractionnaire : a) ; b) ; d) ; e) .
+- `P` 5. Transforme en fraction impropre : a) 1 + ; b) 1 + ; d) 1 + ; e) 2 (en quarts).
+- `P` 6. Défi CEPE — Pour une fête, des pizzas sont coupées en 6 parts égales ; les enfants mangent 11 parts. a) Écris en sixièmes la quantité mangée. b) Transforme en nombre fractionnaire. d) Combien de pizzas entières fallait-il au minimum ? e) S’il y avait 2 pizzas, quelle fraction reste-t-il ?
+- `P` Correction
+- `P` 1. a) 1 + ; b) 1 + ; d) 1 + ; e) 1 + .
+- `P` 2. a) ; b) ; d) ; e) .
+- `P` 3. a) ; b) 1 + ; d) − = : il manque 1 part ; e) entre 1 et 2, tout près de 2.
+- `P` 4. a) 1 + ; b) 1 + ; d) 1 + ; e) 1 + .
+- `P` 5. a) ; b) ; d) ; e) .
+- `P` 6. a) ; b) 6 entre 1 fois dans 11, reste 5 : = 1 + ; d) 2 pizzas ; e) − = .
+
+### SÉANCE 10 / 14 — LES NOMBRES DÉCIMAUX JUSQU’AUX CENTIÈMES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 10 / 14 — LES NOMBRES DÉCIMAUX JUSQU’AUX CENTIÈMES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Nombres décimaux : dixièmes et centièmesTitre : Les nombres décimaux jusqu’aux centièmesObjectif spécifique : À la fin de la séance, l’apprenant est capable de lire, écrire et représenter les nombres décimaux jusqu’aux centièmes.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Grilles de 100 cases, blocs de base 10, tableau de numération, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 10 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Écris en toutes lettres.
+- `T3C3` R.A. : Sept dixièmes.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à lire, écrire et représenter les nombres décimaux jusqu’aux centièmes. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` À l’épicerie, l’étiquette du savon indique 2,75. Noro sait lire 2 et 75, mais que signifie cette virgule ? Et pourquoi la balance du marché affiche-t-elle 1,5 kg quand on pèse un kilo et demi de haricots ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Les nombres décimaux jusqu’aux centièmes » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 0,07 = 7 centièmes : sur la grille, 7 petites cases seulement ; 0,7 = 7 dixièmes : 7 colonnes entières !
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le tableau de numération continue tout simplement à droite de la virgule : après les unités viennent les dixièmes (l’unité coupée en 10), puis les centièmes (coupée en 100). La grille de 100 cases rend tout visible : la grille entière vaut 1, une colonne vaut 1 dixième, une case vaut 1 centième — colorier 25 cases, c’est représenter 0,25. On lit 2,75 « deux unités et soixante-quinze centièmes » (ou « deux virgule soixante-quinze »). Les décimaux servent partout où l’unité ne suffit pas : prix (2,75), mesures (1,5 kg ; 1,65 m), notes… Chaque chiffre garde une valeur de position, exactement comme dans les grands nombres : dans 3,48, le 4 vaut 4 dixièmes et le 8 vaut 8 centièmes.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, virgule = frontière entiers/parties d’unité ; 1er rang = dixièmes, 2e rang = centièmes ; grille : 1 case = 0,01, 1 colonne = 0,1.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Écris en chiffres : a) trois unités et cinq dixièmes ; b) douze unités et huit centièmes ; d) quarante-cinq centièmes ; e) neuf dixièmes. Donne la valeur du chiffre indiqué : a) le 7 dans 4,72 ; b) le 9 dans 15,09 ; d) le 6 dans 6,38 ; e) le 3 dans 0,53.
+- `T10C3` a) 3,5 ; b) 12,08 ; d) 0,45 ; e) 0,9. a) 7 dixièmes = 0,7 ; b) 9 centièmes = 0,09 ; d) 6 unités ; e) 3 centièmes = 0,03.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Écris en chiffres : a) trois unités et cinq dixièmes ; b) douze unités et huit centièmes ; d) quarante-cinq centièmes ; e) neuf dixièmes. Puis justifie l’une de tes réponses.
+- `T11C3` a) 3,5 ; b) 12,08 ; d) 0,45 ; e) 0,9. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LES NOMBRES DÉCIMAUX JUSQU’AUX CENTIÈMES
+- `P` Nombres décimaux : dixièmes et centièmes
+- `P` Un nombre décimal comporte une partie entière et une partie décimale séparées par une virgule. Le premier chiffre après la virgule compte les dixièmes (dixièmes de l’unité) ; le deuxième compte les centièmes. Ainsi 2,75 = 2 unités, 7 dixièmes et 5 centièmes.
+- `P` la virgule marque la frontière : à gauche les entiers, à droite les morceaux d’unité, de plus en plus fins.
+- `P` Exemple : 0,07 = 7 centièmes : sur la grille, 7 petites cases seulement ; 0,7 = 7 dixièmes : 7 colonnes entières !
+- `P` 1. Repérer la virgule : à gauche la partie entière, à droite la partie décimale.
+- `P` 2. Nommer chaque rang : dixièmes puis centièmes.
+- `P` 3. Représenter sur la grille : colorier autant de cases que de centièmes.
+- `P` virgule = frontière entiers/parties d’unité ; 1er rang = dixièmes, 2e rang = centièmes ; grille : 1 case = 0,01, 1 colonne = 0,1.
+- `P` Le savais-tu ? La virgule décimale ne s’est imposée qu’au XVIIᵉ siècle, grâce à l’astronome John Napier.
+- `P` Attention : Lire 2,75 « deux virgule sept cent cinq » ou croire que 0,7 et 0,07 sont égaux : le rang du chiffre change tout — 0,7 vaut dix fois 0,07.
+- `P` EXERCICE
+- `P` 1. Écris en chiffres : a) trois unités et cinq dixièmes ; b) douze unités et huit centièmes ; d) quarante-cinq centièmes ; e) neuf dixièmes.
+- `P` 2. Donne la valeur du chiffre indiqué : a) le 7 dans 4,72 ; b) le 9 dans 15,09 ; d) le 6 dans 6,38 ; e) le 3 dans 0,53.
+- `P` 3. Sur une grille de 100 cases : a) combien de cases pour 0,36 ? b) pour 0,09 ? d) quelle écriture pour 60 cases coloriées ? e) pour la grille entière ?
+- `P` 4. Écris en chiffres : a) trois unités et cinq dixièmes ; b) douze unités et huit centièmes ; d) quarante-deux centièmes ; e) sept unités et soixante-dix centièmes.
+- `P` 5. Dans 46,37 : a) quel est le chiffre des dixièmes ? b) le chiffre des centièmes ? d) que vaut le chiffre 6 ? e) Écris ce nombre en lettres.
+- `P` 6. Défi CEPE — Sur une grille de 100 cases, Lova colorie d’abord 35 cases, puis encore 7 cases. a) Quel nombre décimal représente la première partie coloriée ? b) Et le total colorié ? d) Combien de cases faut-il colorier pour représenter 0,6 ? e) Que représente la grille entièrement coloriée ?
+- `P` Correction
+- `P` 1. a) 3,5 ; b) 12,08 ; d) 0,45 ; e) 0,9.
+- `P` 2. a) 7 dixièmes = 0,7 ; b) 9 centièmes = 0,09 ; d) 6 unités ; e) 3 centièmes = 0,03.
+- `P` 3. a) 36 cases ; b) 9 cases ; d) 0,60 ou 0,6 ; e) 1 (cent centièmes font l’unité).
+- `P` 4. a) 3,5 ; b) 12,08 ; d) 0,42 ; e) 7,70 (c’est-à-dire 7,7).
+- `P` 5. a) 3 ; b) 7 ; d) 6 unités ; e) quarante-six unités et trente-sept centièmes.
+- `P` 6. a) 0,35 ; b) 35 + 7 = 42 cases, soit 0,42 ; d) 60 cases (6 colonnes) ; e) 1 : l’unité entière.
+
+### SÉANCE 11 / 14 — COMPARER ET ORDONNER LES NOMBRES DÉCIMAUX
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 11 / 14 — COMPARER ET ORDONNER LES NOMBRES DÉCIMAUX
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Comparaison des décimaux ; 0,4 = 0,40Titre : Comparer et ordonner les nombres décimauxObjectif spécifique : À la fin de la séance, l’apprenant est capable de comparer et ordonner des nombres décimaux jusqu’aux centièmes.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Grilles de 100 cases, droite numérique graduée, étiquettes, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 11 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Que vaut le chiffre 8 dans 3,78 ?
+- `T3C3` R.A. : 8 centièmes.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à comparer et ordonner des nombres décimaux jusqu’aux centièmes. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Au concours de saut en longueur, Lova a sauté 3,5 m et Tahina 3,47 m. Tahina crie victoire : « 47, c’est plus que 5 ! » Le maître sourit… Qui a vraiment sauté le plus loin ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Comparer et ordonner les nombres décimaux » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 7,3 et 7,28 : 7,3 = 7,30 et 30 centièmes > 28 centièmes, donc 7,3 > 7,28.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : L’erreur de Tahina est la plus répandue de toute l’école primaire : comparer « 47 » et « 5 » comme des entiers. Or la partie décimale n’est pas un nombre collé après la virgule, c’est une somme de rangs : 3,5 = 3,50 = 3 unités et 50 centièmes, tandis que 3,47 n’en a que 47. Donc 3,5 > 3,47 : Lova gagne. L’astuce imparable : compléter avec des zéros pour donner la même longueur aux deux parties décimales, puis comparer comme d’habitude. La grille le confirme : 0,4 colorie 40 cases, 0,40 aussi — même nombre, deux écritures. Sur la droite numérique graduée en centièmes, chaque décimal trouve sa place exacte, et le plus à droite l’emporte.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, entiers d’abord, puis dixièmes, puis centièmes ; compléter par des zéros à droite pour comparer ; 0,4 = 0,40.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Compare : a) 0,8 et 0,80 ; b) 2,09 et 2,9 ; d) 5,61 et 5,16 ; e) 0,07 et 0,7. Range en ordre croissant : a) 1,5 ; 1,05 ; 1,50 ; 1,55. b) 0,9 ; 0,89 ; 1,01. d) 3,33 ; 3,03 ; 3,3. e) 0,1 ; 0,01 ; 0,11.
+- `T10C3` a) 0,8 = 0,80 ; b) 2,09 < 2,9 ; d) 5,61 > 5,16 ; e) 0,07 < 0,7. a) 1,05 < 1,5 = 1,50 < 1,55 ; b) 0,89 < 0,9 < 1,01 ; d) 3,03 < 3,3 < 3,33 ; e) 0,01 < 0,1 < 0,11.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Compare : a) 0,8 et 0,80 ; b) 2,09 et 2,9 ; d) 5,61 et 5,16 ; e) 0,07 et 0,7. Puis justifie l’une de tes réponses.
+- `T11C3` a) 0,8 = 0,80 ; b) 2,09 < 2,9 ; d) 5,61 > 5,16 ; e) 0,07 < 0,7. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` COMPARER ET ORDONNER LES NOMBRES DÉCIMAUX
+- `P` Comparaison des décimaux ; 0,4 = 0,40
+- `P` Pour comparer deux nombres décimaux, on compare d’abord les parties entières ; si elles sont égales, on compare les dixièmes, puis les centièmes. Écrire un zéro à droite de la partie décimale ne change pas le nombre : 0,4 = 0,40.
+- `P` on compare rang par rang, comme pour les grands nombres — et un zéro ajouté tout à droite après la virgule ne pèse rien.
+- `P` Exemple : 7,3 et 7,28 : 7,3 = 7,30 et 30 centièmes > 28 centièmes, donc 7,3 > 7,28.
+- `P` 1. Comparer les parties entières.
+- `P` 2. Compléter les parties décimales avec des zéros pour qu’elles aient la même longueur.
+- `P` 3. Comparer alors rang par rang et conclure.
+- `P` entiers d’abord, puis dixièmes, puis centièmes ; compléter par des zéros à droite pour comparer ; 0,4 = 0,40.
+- `P` Le savais-tu ? Aux Jeux olympiques, les sprinteurs sont départagés au centième de seconde — et parfois au millième ! En 2016, deux nageuses ont touché le mur exactement en même temps au centième près : la médaille d’or a été partagée.
+- `P` Attention : Déclarer 3,47 > 3,5 parce que 47 > 5 : il faut comparer 47 centièmes à 50 centièmes. Le nombre de chiffres après la virgule ne dit RIEN de la grandeur du nombre.
+- `P` EXERCICE
+- `P` 1. Compare : a) 0,8 et 0,80 ; b) 2,09 et 2,9 ; d) 5,61 et 5,16 ; e) 0,07 et 0,7.
+- `P` 2. Range en ordre croissant : a) 1,5 ; 1,05 ; 1,50 ; 1,55. b) 0,9 ; 0,89 ; 1,01. d) 3,33 ; 3,03 ; 3,3. e) 0,1 ; 0,01 ; 0,11.
+- `P` 3. a) Écris trois nombres entre 4,2 et 4,3. b) Un nombre peut-il avoir 2 chiffres après la virgule et être plus petit qu’un nombre à 1 chiffre après la virgule ? Exemple. d) Lova 3,5 m, Tahina 3,47 m : qui gagne et de combien ? e) Range : 3,5 ; 3,47 ; 3,55.
+- `P` 4. Compare avec >, < ou = : a) 3,5 et 3,45 ; b) 0,8 et 0,80 ; d) 12,09 et 12,9 ; e) 7,21 et 7,12.
+- `P` 5. a) Compare 5,3 et 5,30. b) Range 5,3 ; 5,09 ; 5,1 en ordre croissant. d) Intercale 5,25 dans ton classement. e) Écris un nombre décimal compris entre 5,1 et 5,3.
+- `P` 6. Défi CEPE — Temps d’une course : Niry 14,52 s ; Tahina 14,5 s ; Mamy 14,25 s ; Solo 15,02 s. a) Qui a gagné ? b) Range les temps du plus rapide au plus lent. d) Quel temps est le plus proche de 15 secondes ? e) Pour comparer 14,5 et 14,52, explique la bonne méthode.
+- `P` Correction
+- `P` 1. a) 0,8 = 0,80 ; b) 2,09 < 2,9 ; d) 5,61 > 5,16 ; e) 0,07 < 0,7.
+- `P` 2. a) 1,05 < 1,5 = 1,50 < 1,55 ; b) 0,89 < 0,9 < 1,01 ; d) 3,03 < 3,3 < 3,33 ; e) 0,01 < 0,1 < 0,11.
+- `P` 3. a) par exemple 4,21 ; 4,25 ; 4,29 ; b) oui : 2,19 < 2,4 ; d) Lova, de 3 centièmes de mètre (3,50 − 3,47 = 0,03 m) ; e) 3,47 < 3,5 < 3,55.
+- `P` 4. a) > ; b) = ; d) < ; e) >.
+- `P` 5. a) ils sont égaux : 5,3 = 5,30 ; b) 5,09 < 5,1 < 5,3 ; d) 5,09 < 5,1 < 5,25 < 5,3 ; e) par exemple 5,2 (tout décimal strictement compris convient).
+- `P` 6. a) Mamy (14,25 s, le plus petit temps) ; b) 14,25 < 14,5 < 14,52 < 15,02 ; d) 15,02 s ; e) on complète 14,5 en 14,50, puis on compare les centièmes : 50 < 52, donc 14,5 < 14,52.
+
+### SÉANCE 12 / 14 — FRACTIONS DÉCIMALES ET NOMBRES DÉCIMAUX
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 12 / 14 — FRACTIONS DÉCIMALES ET NOMBRES DÉCIMAUX
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : NombreThème : Relation fractions décimales — décimauxTitre : Fractions décimales et nombres décimauxObjectif spécifique : À la fin de la séance, l’apprenant est capable de passer d’une fraction décimale (dixièmes, centièmes) au nombre décimal et inversement.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Grilles de 100 cases, tableau de numération, cartes recto verso, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 12 / 14
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Compare 0,25 et 0,3.
+- `T3C3` R.A. : 0,25 < 0,3, car 25 centièmes < 30 centièmes.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à passer d’une fraction décimale (dixièmes, centièmes) au nombre décimal et inversement. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Sur son cahier, Vola a écrit ; sur l’étiquette du magasin, le même produit affiche 0,25 kg. Le maître affirme : « c’est exactement le même nombre, sous deux habits différents. » Comment passer d’un habit à l’autre ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Fractions décimales et nombres décimaux » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` = 0,7 ; = 1,30 = 1,3 ; dans l’autre sens, 0,85 = .
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le lien vient de la division : une fraction, c’est un partage, et , c’est 4 divisé par 10 — or diviser par 10 décale la virgule d’un rang, ce qui donne 0,4 ; diviser 25 par 100 décale de deux rangs : 0,25. La grille de 100 cases réunit les deux écritures en une seule image : 25 cases coloriées se lisent À LA FOIS et 0,25. Dans le sens décimal → fraction, on lit le nombre à voix haute : 0,7 « sept dixièmes » s’écrit ; 0,09 « neuf centièmes » s’écrit ; 1,3 = . Et les équivalences de fractions se retrouvent : = , exactement comme 0,4 = 0,40. Fractions et décimaux ne sont pas deux mondes : ce sont deux écritures du même monde.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, dénominateur 10 → un rang après la virgule ; dénominateur 100 → deux rangs ; lire le décimal à voix haute donne sa fraction.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Écris en nombre décimal : a) ; b) ; d) ; e) . Écris en fraction décimale : a) 0,9 ; b) 0,37 ; d) 0,03 ; e) 1,7.
+- `T10C3` a) 0,3 ; b) 0,48 ; d) 0,05 ; e) 1,70 = 1,7. a) ; b) ; d) ; e) .
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Écris en nombre décimal : a) ; b) ; d) ; e) . Puis justifie l’une de tes réponses.
+- `T11C3` a) 0,3 ; b) 0,48 ; d) 0,05 ; e) 1,70 = 1,7. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` FRACTIONS DÉCIMALES ET NOMBRES DÉCIMAUX
+- `P` Relation fractions décimales — décimaux
+- `P` Une fraction décimale est une fraction dont le dénominateur est 10 ou 100. Toute fraction décimale s’écrit en nombre décimal : le numérateur se place dans les rangs des dixièmes et des centièmes — = 0,4 et = 0,25. Inversement, tout décimal jusqu’aux centièmes s’écrit en fraction décimale.
+- `P` dixièmes et centièmes ont deux écritures : l’habit fraction () et l’habit virgule (0,4) — c’est le même nombre dessous.
+- `P` Exemple : = 0,7 ; = 1,30 = 1,3 ; dans l’autre sens, 0,85 = .
+- `P` 1. Fraction → décimal : diviser le numérateur par 10 ou 100 en décalant la virgule.
+- `P` 2. Décimal → fraction : lire le nombre (« … dixièmes » ou « … centièmes ») et écrire la fraction entendue.
+- `P` 3. Vérifier sur la grille de 100 cases.
+- `P` dénominateur 10 → un rang après la virgule ; dénominateur 100 → deux rangs ; lire le décimal à voix haute donne sa fraction.
+- `P` Le savais-tu ? Nos pièces de monnaie sont des fractions décimales vivantes : le centime, c’est de l’unité — « cent » comme centième ! Quand tu lis 0,25 sur un prix, tu lis en réalité 25 centièmes, la fraction cachée sous la virgule.
+- `P` Attention : Écrire = 0,0025 ou = 0,04 : compter les rangs ! Un zéro du dénominateur = un rang de décalage : /10 → un rang, /100 → deux rangs.
+- `P` EXERCICE
+- `P` 1. Écris en nombre décimal : a) ; b) ; d) ; e) .
+- `P` 2. Écris en fraction décimale : a) 0,9 ; b) 0,37 ; d) 0,03 ; e) 1,7.
+- `P` 3. a) Montre que = . b) Écris et en décimal. d) Vola écrit et le magasin 0,25 : qui a raison ? e) Range : ; 0,45 ; .
+- `P` 4. Écris en nombre décimal : a) ; b) ; d) ; e) .
+- `P` 5. Écris en fraction décimale : a) 0,9 ; b) 0,07 ; d) 2,5 ; e) 0,25 — puis simplifie la réponse e).
+- `P` 6. Défi CEPE — Un commerçant vend du sucre par paquets de de kg. a) Écris en centièmes. b) Écris en nombre décimal. d) Écris en nombre décimal. e) Range , 0,8 et en ordre croissant.
+- `P` Correction
+- `P` 1. a) 0,3 ; b) 0,48 ; d) 0,05 ; e) 1,70 = 1,7.
+- `P` 2. a) ; b) ; d) ; e) .
+- `P` 3. a) haut et bas × 10 ; b) 0,6 et 0,60 : le même nombre ; d) les deux : ce sont deux écritures du même nombre ; e) 0,45 < (= 0,50) < (= 0,55).
+- `P` 4. a) 0,7 ; b) 0,45 ; d) 1,30 (c’est-à-dire 1,3) ; e) 0,03.
+- `P` 5. a) ; b) ; d) ; e) = .
+- `P` 6. a) = ; b) 0,75 ; d) 0,5 ; e) = 0,70 < = 0,75 < 0,8.
+
+### RÉVISION DE L’UNITÉ I
+
+- Indicateurs : 14 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : non.
+- `P` RÉVISION DE L’UNITÉ I
+- `P` Tableau de synthèse
+- `T1C1` Notion
+- `T1C2` À savoir
+- `T1C3` À savoir faire
+- `T2C1` Grands nombres
+- `T2C2` Classes de trois chiffres ; 1 000 000 = un million
+- `T2C3` Lire et écrire en chiffres et en lettres
+- `T3C1` Valeur de position
+- `T3C2` Colonnes U, D, C, UM, DM, CM ; le zéro garde la place
+- `T3C3` Donner la valeur de chaque chiffre
+- `T4C1` Comparaison
+- `T4C2` Plus de chiffres = plus grand ; sinon colonne par colonne depuis la gauche
+- `T4C3` Utiliser >, < et = ; ranger des listes
+- `T5C1` Composer / décomposer
+- `T5C2` Groupements de 10 000, 25 000, 50 000 ; formes additive et multiplicative
+- `T5C3` Ouvrir et refermer un nombre
+- `T6C1` Fractions
+- `T6C2` Numérateur / dénominateur ; équivalentes (haut et bas × même nombre) ; impropre = 1 + reste
+- `T6C3` Représenter, comparer, placer sur la droite
+- `T7C1` Décimaux
+- `T7C2` Dixièmes puis centièmes ; 0,4 = 0,40 ; = 0,25
+- `T7C3` Lire, comparer, relier aux fractions décimales
+- `P` Questions de révision
+- `P` 1. Écris en chiffres : « six cent quatre mille soixante-dix ».
+- `P` 2. Dans 583 902, donne la valeur du 8 et celle du 9.
+- `P` 3. Range en ordre décroissant : 98 500 ; 100 002 ; 99 999.
+- `P` 4. Complète : = …/8 = 75/… ; puis transforme en nombre fractionnaire.
+- `P` 5. Compare 0,6 ; 0,57 et , puis range-les en ordre croissant.
+- `P` Réponses attendues
+- `P` 1. 604 070.
+- `P` 2. 8 → 80 000 (dizaines de mille) ; 9 → 900 (centaines).
+- `P` 3. 100 002 > 99 999 > 98 500.
+- `P` 4. = = ; = 2 + .
+- `P` 5. 0,57 < (= 0,59) < 0,6 (= 0,60).
+
+### SUJET D’EXAMEN FORMAT CEPE — UNITÉ I
+
+- Indicateurs : 37 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SUJET D’EXAMEN FORMAT CEPE — UNITÉ I
+- `P` Barème : 20 points. Présente clairement tous les calculs et toutes les constructions.
+- `P` Exercice 1 — 4 points. Écriture des nombres. a) Écris en chiffres : « quatre cent trois mille cinquante ». b) Écris 78 205 en lettres. d) Dans 960 347, donne la valeur du chiffre 6. e) Écris le nombre juste après 499 999.
+- `P` Exercice 2 — 4 points. Comparaison et rangement. a) Complète : 87 650 … 87 605. b) Range en ordre croissant : 540 000 ; 504 000 ; 545 000. d) Écris le plus grand nombre de six chiffres tous différents. e) Un sac de riz coûte 148 500 Ar et un autre 149 050 Ar : lequel est le moins cher ?
+- `P` Exercice 3 — 4 points. Fractions. a) Quelle fraction de la bande est coloriée si 5 parts sur 8 le sont ? b) Complète : = …/10. d) Compare et . e) Transforme en nombre fractionnaire.
+- `P` Exercice 4 — 4 points. Nombres décimaux. a) Écris en chiffres : « cinq unités et huit centièmes ». b) Compare 4,5 et 4,45. d) Écris en nombre décimal. e) Range en ordre croissant : 0,7 ; 0,67 ; ; 0,76.
+- `P` Exercice 5 — 4 points. Problème. Au marché, Maman achète un panier à 12 500 Ar. Elle paie avec des billets de 10 000 Ar, de 25 000 Ar ou de 50 000 Ar. a) Combien paie-t-elle avec 2 billets de 10 000 Ar, et combien lui rend-on ? b) Décompose 12 500 en somme de valeurs. d) Elle achète aussi kg de haricots et son fils kg : qui a le plus de haricots ? e) Le prix du kilo de haricots est 3 800 Ar ; écris ce nombre en lettres.
+- `P` CORRIGÉ ET BARÈME
+- `P` Exercice 1. a) 403 050 ; b) soixante-dix-huit mille deux cent cinq ; d) 60 000 ; e) 500 000. Un point par item.
+- `P` Exercice 2. a) > ; b) 504 000 < 540 000 < 545 000 ; d) 987 654 ; e) celui à 148 500 Ar, car 148 500 < 149 050. Un point par item.
+- `P` Exercice 3. a) ; b) ; d) = < = , donc > ; e) = 1 + . Un point par item.
+- `P` Exercice 4. a) 5,08 ; b) 4,5 = 4,50 > 4,45 ; d) 0,36 ; e) 0,67 < 0,7 = < 0,76. Un point par item.
+- `P` Exercice 5. a) 20 000 − 12 500 = 7 500 Ar rendus ; b) 10 000 + 2 000 + 500 ; d) personne : = , autant chacun ; e) trois mille huit cents. Un point par item.
+- `P` UNITÉ II
+- `P` OPÉRATION
+- `P` Sous-discipline du programme de Mathématiques T5
+- `P` Résultat d’apprentissage général
+- `P` effectuer les quatre opérations sur les nombres naturels jusqu’à 1 000 000, les fractions simples et les nombres décimaux, en situation de résolution de problèmes.
+- `P` Valeurs à véhiculer
+- `P` rigueur et autonomie.
+- `P` UNITÉ II — OPÉRATION : DANS CETTE UNITÉ
+- `P` Leçon 1 — Le sens des opérations : ajouter, retirer, réunir, comparer
+- `P` Leçon 2 — Additionner jusqu’à 1 000 000
+- `P` Leçon 3 — Soustraire jusqu’à 1 000 000
+- `P` Leçon 4 — Vérifier un résultat : preuve et estimation
+- `P` Leçon 5 — Multiplier : 3 chiffres × 2 chiffres
+- `P` Leçon 6 — Diviser avec quotient et reste
+- `P` Leçon 7 — Partage et groupement : le sens de la division
+- `P` Leçon 8 — Multiplier des fractions
+- `P` Leçon 9 — Diviser des fractions
+- `P` Leçon 10 — Additionner et soustraire des nombres décimaux
+- `P` Leçon 11 — Multiplier et diviser des nombres décimaux
+- `P` Leçon 12 — La priorité des opérations
+- `P` Leçon 13 — Le calcul mental : stratégies efficaces
+- `P` Révision de l’unité II
+- `P` Sujet d’examen format CEPE
+- `P` Tableau de bord
+- `T1C1` Leçons
+- `T1C2` Apprentissages
+- `T1C3` Révision
+- `T1C4` Examen
+- `T2C1` 15
+- `T2C2` 13
+- `T2C3` 1
+- `T2C4` 1
+
+### SÉANCE 1 / 15 — LE SENS DES OPÉRATIONS : AJOUTER, RETIRER, RÉUNIR, COMPARER
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 1 / 15 — LE SENS DES OPÉRATIONS : AJOUTER, RETIRER, RÉUNIR, COMPARER
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Sens de l’addition et de la soustractionTitre : Le sens des opérations : ajouter, retirer, réunir, comparerObjectif spécifique : À la fin de la séance, l’apprenant est capable de reconnaître dans une situation le sens de l’opération : ajout, retrait, réunion ou comparaison.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Jetons, images de situations, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 1 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Compare 45 807 et 45 870.
+- `T3C3` R.A. : 45 807 < 45 870 (à la colonne des dizaines, 0 < 7).
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à reconnaître dans une situation le sens de l’opération : ajout, retrait, réunion ou comparaison. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Quatre histoires au marché : la marchande AJOUTE 12 oranges à son panier ; un client RETIRE 3 bananes du régime ; deux frères RÉUNISSENT leurs billes ; deux paniers de riz sont COMPARÉS. Quatre histoires, mais seulement deux opérations… Lesquelles ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Le sens des opérations : ajouter, retirer, réunir, comparer » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` « Le car transporte 38 passagers ; 12 descendent à Antsirabe. » Retrait : 38 − 12 = 26 passagers.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le piège des problèmes n’est presque jamais le calcul : c’est le CHOIX de l’opération. Les mots de l’énoncé guident : « en plus, gagne, reçoit » annoncent souvent un ajout ; « ensemble, en tout » une réunion ; « perd, donne, mange » un retrait ; « de plus que, de moins que, quelle différence » une comparaison. Mais attention aux pièges : « Hery a 3 billes de plus que Vola ; Hery en a 15, combien pour Vola ? » — le mot « plus » s’y cache, et pourtant c’est une soustraction (15 − 3 = 12) ! La seule méthode sûre : se représenter la situation, avec un dessin ou des jetons, AVANT d’écrire l’opération.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, ajout et réunion → addition ; retrait et comparaison → soustraction ; on dessine la situation avant de choisir.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Pour chaque situation, écris « ajout », « retrait », « réunion » ou « comparaison » : a) Soa cueille 25 letchis de plus ; b) le car perd 8 passagers ; d) on verse trois sacs de riz dans un même grenier ; e) on cherche de combien le manguier dépasse le papayer. Écris l’opération et calcule : a) 450 + 380 ; b) 1 200 − 745 ; d) Naly a 2 350 Ar, il reçoit 1 500 Ar : combien a-t-il ? e) Un sac pèse 85 kg, un autre 62 kg : quelle différence ?
+- `T10C3` a) ajout ; b) retrait ; d) réunion ; e) comparaison. a) 830 ; b) 455 ; d) 2 350 + 1 500 = 3 850 Ar ; e) 85 − 62 = 23 kg.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Pour chaque situation, écris « ajout », « retrait », « réunion » ou « comparaison » : a) Soa cueille 25 letchis de plus ; b) le car perd 8 passagers ; d) on verse trois sacs de riz dans un même grenier ; e) on cherche de combien le manguier dépasse le papayer. Puis justifie l’une de tes réponses.
+- `T11C3` a) ajout ; b) retrait ; d) réunion ; e) comparaison. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LE SENS DES OPÉRATIONS : AJOUTER, RETIRER, RÉUNIR, COMPARER
+- `P` Sens de l’addition et de la soustraction
+- `P` L’addition traduit deux situations : l’ajout (une quantité augmente) et la réunion (on rassemble plusieurs quantités). La soustraction en traduit deux autres : le retrait (une quantité diminue) et la comparaison (on cherche l’écart entre deux quantités).
+- `P` avant de calculer, on se demande : la quantité grandit-elle, diminue-t-elle, rassemble-t-on, ou cherche-t-on un écart ?
+- `P` Exemple : « Le car transporte 38 passagers ; 12 descendent à Antsirabe. » Retrait : 38 − 12 = 26 passagers.
+- `P` 1. Lire l’énoncé deux fois et repérer la question.
+- `P` 2. Dessiner ou mimer la situation : ça grandit, ça diminue, on rassemble, on compare ?
+- `P` 3. Écrire l’opération qui correspond, calculer, puis vérifier que la réponse a du sens.
+- `P` ajout et réunion → addition ; retrait et comparaison → soustraction ; on dessine la situation avant de choisir.
+- `P` Le savais-tu ? Les quatre sens des opérations existaient déjà sur les tablettes d’argile de Babylone, il y a 4 000 ans : les scribes y posaient des problèmes de greniers à grain que l’on pourrait donner aujourd’hui presque mot pour mot dans une classe de T5 !
+- `P` Attention : Choisir l’opération d’après un seul mot : « plus » ne veut pas toujours dire additionner ! « 3 de plus que Vola » peut exiger une soustraction. C’est la SITUATION qui commande, pas le mot.
+- `P` EXERCICE
+- `P` 1. Pour chaque situation, écris « ajout », « retrait », « réunion » ou « comparaison » : a) Soa cueille 25 letchis de plus ; b) le car perd 8 passagers ; d) on verse trois sacs de riz dans un même grenier ; e) on cherche de combien le manguier dépasse le papayer.
+- `P` 2. Écris l’opération et calcule : a) 450 + 380 ; b) 1 200 − 745 ; d) Naly a 2 350 Ar, il reçoit 1 500 Ar : combien a-t-il ? e) Un sac pèse 85 kg, un autre 62 kg : quelle différence ?
+- `P` 3. Vola a 18 billes ; c’est 5 de plus que Hery. a) Qui a le moins de billes ? b) Quelle opération donne les billes de Hery ? d) Calcule. e) Vérifie en refaisant le chemin inverse.
+- `P` 4. Pour chaque situation, indique l’opération qui convient puis réponds : a) Soa a 12 mangues, elle en donne 5. b) Hery a 35 billes, Naina en a 12 de plus que lui : combien Naina en a-t-il ? d) On réunit 3 sacs de 25 kg. e) Un car de 42 places transporte 28 passagers : combien de places libres ?
+- `P` 5. Paul a 8 ans. Ce matin il avait 18 billes ; ce soir il en a 25. a) Pose la question du problème. b) Quelle donnée est inutile ? d) Quelles données sont indispensables ? e) Réponds à la question.
+- `P` 6. Défi CEPE — Soa a 20 000 Ar ; elle achète 3 cahiers à 5 000 Ar l’un. a) Quelle question intermédiaire faut-il se poser d’abord ? b) Réponds à cette question intermédiaire. d) Combien le vendeur lui rend-il ? e) Et si elle n’achetait que 2 cahiers, combien lui rendrait-il ?
+- `P` Correction
+- `P` 1. a) ajout ; b) retrait ; d) réunion ; e) comparaison.
+- `P` 2. a) 830 ; b) 455 ; d) 2 350 + 1 500 = 3 850 Ar ; e) 85 − 62 = 23 kg.
+- `P` 3. a) Hery ; b) une soustraction, 18 − 5 ; d) 13 billes ; e) 13 + 5 = 18 ✓.
+- `P` 4. a) soustraction : 12 − 5 = 7 mangues ; b) addition : 35 + 12 = 47 billes ; d) multiplication : 3 × 25 = 75 kg ; e) soustraction : 42 − 28 = 14 places.
+- `P` 5. a) « Combien de billes Paul a-t-il gagnées ? » ; b) son âge, 8 ans : donnée inutile ; d) 18 et 25 ; e) 25 − 18 = 7 billes gagnées.
+- `P` 6. a) « Quel est le prix des 3 cahiers ? » ; b) 3 × 5 000 = 15 000 Ar ; d) 20 000 − 15 000 = 5 000 Ar ; e) 2 × 5 000 = 10 000 Ar, donc 20 000 − 10 000 = 10 000 Ar.
+
+### SÉANCE 2 / 15 — ADDITIONNER JUSQU’À 1 000 000
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 2 / 15 — ADDITIONNER JUSQU’À 1 000 000
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Addition avec et sans retenueTitre : Additionner jusqu’à 1 000 000Objectif spécifique : À la fin de la séance, l’apprenant est capable de poser et effectuer des additions de nombres naturels jusqu’à 1 000 000, avec et sans retenue.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Tableau de numération, jetons, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 2 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Quelle situation traduit 125 + 75 : retrait ou réunion ?
+- `T3C3` R.A. : Une réunion (ou un ajout) : la quantité totale rassemble les deux.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à poser et effectuer des additions de nombres naturels jusqu’à 1 000 000, avec et sans retenue. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Deux coopératives livrent leur riz au grand marché : 348 256 kg pour la première, 175 869 kg pour la seconde. Le magasinier doit inscrire le total dans son registre. Comment additionner sans se perdre dans les six chiffres ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Additionner jusqu’à 1 000 000 » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 348 256 + 175 869 = 524 125 ; contrôle : environ 350 000 + 175 000 = 525 000 ✓.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La retenue n’est pas un truc magique : c’est un échange. Quand 6 + 9 = 15 dans la colonne des unités, on y laisse 5 unités et l’on échange les 10 autres contre 1 dizaine, qui rejoint la colonne des dizaines — exactement comme 10 billets de 100 Ar s’échangent contre 1 billet de 1 000 Ar. L’alignement est la moitié du travail : un chiffre mal placé, et tout le calcul s’écroule ; au besoin, on trace les colonnes du tableau de numération. Pour contrôler, l’ordre de grandeur rend un service immédiat : 348 256 + 175 869, c’est environ 350 000 + 175 000 = 525 000 — si l’on trouve 52 000 ou 5 000 000, une erreur s’est glissée.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, aligner par la droite, additionner colonne par colonne, écrire les unités et reporter la retenue ; contrôler par l’ordre de grandeur.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Pose et calcule : a) 2 457 + 3 528 ; b) 45 672 + 38 459 ; d) 254 318 + 169 547 ; e) 507 268 + 492 732. Calcule le total : a) 125 400 + 98 675 ; b) 356 208 + 275 946 ; d) 89 999 + 1 ; e) 428 756 + 90 + 9 000.
+- `T10C3` a) 5 985 ; b) 84 131 ; d) 423 865 ; e) 1 000 000. a) 224 075 ; b) 632 154 ; d) 90 000 ; e) 437 846.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Pose et calcule : a) 2 457 + 3 528 ; b) 45 672 + 38 459 ; d) 254 318 + 169 547 ; e) 507 268 + 492 732. Puis justifie l’une de tes réponses.
+- `T11C3` a) 5 985 ; b) 84 131 ; d) 423 865 ; e) 1 000 000. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` ADDITIONNER JUSQU’À 1 000 000
+- `P` Addition avec et sans retenue
+- `P` Pour additionner deux grands nombres, on les pose en colonnes, chaque chiffre sous celui de même valeur de position, et l’on additionne colonne par colonne en partant des unités. Quand une colonne dépasse 9, on écrit le chiffre des unités et l’on reporte une retenue dans la colonne suivante.
+- `P` on empile les nombres bien droits, colonne par colonne, et chaque dizaine complète déménage d’une colonne vers la gauche.
+- `P` Exemple : 348 256 + 175 869 = 524 125 ; contrôle : environ 350 000 + 175 000 = 525 000 ✓.
+- `P` 1. Poser les nombres en colonnes, unités sous unités.
+- `P` 2. Additionner de droite à gauche ; si une colonne dépasse 9, reporter la retenue.
+- `P` 3. Vérifier avec l’ordre de grandeur.
+- `P` aligner par la droite, additionner colonne par colonne, écrire les unités et reporter la retenue ; contrôler par l’ordre de grandeur.
+- `P` Le savais-tu ? Avant les calculatrices, les comptables chinois et japonais additionnaient des nombres énormes sur un boulier — souvent plus vite qu’une machine ! Les championnats de boulier existent toujours, et les meilleurs élèves finissent par calculer… sur un boulier imaginaire, les doigts dans le vide.
+- `P` Attention : Oublier la retenue ou l’écrire dans la mauvaise colonne : chaque retenue vaut UNE unité de la colonne SUIVANTE, jamais plus, jamais ailleurs.
+- `P` EXERCICE
+- `P` 1. Pose et calcule : a) 2 457 + 3 528 ; b) 45 672 + 38 459 ; d) 254 318 + 169 547 ; e) 507 268 + 492 732.
+- `P` 2. Calcule le total : a) 125 400 + 98 675 ; b) 356 208 + 275 946 ; d) 89 999 + 1 ; e) 428 756 + 90 + 9 000.
+- `P` 3. La commune a récolté 236 450 kg de riz la première semaine et 187 925 kg la seconde. a) Estime le total par l’ordre de grandeur. b) Pose l’addition et calcule. d) Compare avec ton estimation. e) La récolte atteint-elle 400 000 kg ?
+- `P` 4. Pose et effectue : a) 23 456 + 1 543 ; b) 405 230 + 94 770 ; d) 123 456 + 654 ; e) 999 + 1.
+- `P` 5. a) Calcule 345 678 + 210 987. b) Vérifie en additionnant dans l’autre ordre. d) Calcule 87 659 + 12 341. e) Complète : 456 000 + … = 1 000 000.
+- `P` 6. Défi CEPE — Une coopérative a collecté 238 450 kg de riz la première semaine et 197 865 kg la deuxième. L’objectif est 450 000 kg. a) Quelle question intermédiaire se poser ? b) Quel est le total collecté ? d) L’objectif est-il atteint ? e) Combien de kilogrammes manquent-ils ?
+- `P` Correction
+- `P` 1. a) 5 985 ; b) 84 131 ; d) 423 865 ; e) 1 000 000.
+- `P` 2. a) 224 075 ; b) 632 154 ; d) 90 000 ; e) 437 846.
+- `P` 3. a) environ 240 000 + 190 000 = 430 000 ; b) 424 375 kg ; d) proche de l’estimation ✓ ; e) oui, 424 375 > 400 000.
+- `P` 4. a) 24 999 ; b) 500 000 ; d) 124 110 ; e) 1 000.
+- `P` 5. a) 556 665 ; b) 210 987 + 345 678 = 556 665 : l’ordre ne change pas la somme ; d) 100 000 ; e) 544 000.
+- `P` 6. a) « Quel est le total collecté ? » ; b) 238 450 + 197 865 = 436 315 kg ; d) non, car 436 315 < 450 000 ; e) 450 000 − 436 315 = 13 685 kg.
+
+### SÉANCE 3 / 15 — SOUSTRAIRE JUSQU’À 1 000 000
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 3 / 15 — SOUSTRAIRE JUSQU’À 1 000 000
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Soustraction avec et sans retenueTitre : Soustraire jusqu’à 1 000 000Objectif spécifique : À la fin de la séance, l’apprenant est capable de poser et effectuer des soustractions de nombres naturels jusqu’à 1 000 000, avec et sans retenue.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Tableau de numération, billets factices, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 3 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Calcule 25 600 + 4 400.
+- `T3C3` R.A. : 30 000.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à poser et effectuer des soustractions de nombres naturels jusqu’à 1 000 000, avec et sans retenue. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La caisse de l’école contient 500 000 Ar. On achète des fournitures pour 136 500 Ar. Le trésorier pose la soustraction… et tombe sur 0 − 5 ! Comment enlever 5 quand il n’y a rien ? L’emprunt vient à la rescousse.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Soustraire jusqu’à 1 000 000 » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 500 000 − 136 500 = 363 500 ; preuve : 363 500 + 136 500 = 500 000 ✓.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : L’emprunt est l’échange inverse de la retenue : 1 dizaine se monnaie en 10 unités, 1 centaine en 10 dizaines… Avec des zéros en cascade comme dans 500 000 − 136 500, l’emprunt voyage de colonne en colonne : le 0 des unités emprunte au 0 des dizaines, qui emprunte au 0 des centaines, et ainsi de suite jusqu’au 5. La grande différence avec l’addition : la soustraction ne se retourne pas ! 500 000 − 136 500 n’est pas 136 500 − 500 000 ; on écrit toujours le plus grand nombre en haut. Et la preuve est un bonheur : différence + nombre retranché = nombre de départ ; si 363 500 + 136 500 redonne 500 000, le trésorier peut dormir tranquille.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, aligner, soustraire de droite à gauche, emprunter quand le haut est trop petit ; preuve : différence + retranché = départ.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Pose et calcule : a) 8 754 − 3 628 ; b) 52 304 − 28 765 ; d) 400 000 − 265 480 ; e) 1 000 000 − 1. Calcule puis prouve : a) 75 200 − 48 900 ; b) 630 500 − 298 756 ; d) 500 500 − 55 055 ; e) 806 030 − 79 876.
+- `T10C3` a) 5 126 ; b) 23 539 ; d) 134 520 ; e) 999 999. a) 26 300 (26 300 + 48 900 = 75 200 ✓) ; b) 331 744 ✓ ; d) 445 445 ✓ ; e) 726 154 ✓.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Pose et calcule : a) 8 754 − 3 628 ; b) 52 304 − 28 765 ; d) 400 000 − 265 480 ; e) 1 000 000 − 1. Puis justifie l’une de tes réponses.
+- `T11C3` a) 5 126 ; b) 23 539 ; d) 134 520 ; e) 999 999. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` SOUSTRAIRE JUSQU’À 1 000 000
+- `P` Soustraction avec et sans retenue
+- `P` Pour soustraire deux grands nombres, on les pose en colonnes et l’on soustrait colonne par colonne en partant des unités. Quand le chiffre du haut est plus petit que celui du bas, on emprunte une unité à la colonne de gauche, qui vaut dix unités dans la colonne en difficulté.
+- `P` quand une colonne n’a pas assez, elle casse un « gros billet » de la colonne voisine en dix petits.
+- `P` Exemple : 500 000 − 136 500 = 363 500 ; preuve : 363 500 + 136 500 = 500 000 ✓.
+- `P` 1. Poser le plus grand nombre en haut, aligné par la droite.
+- `P` 2. Soustraire colonne par colonne ; emprunter à gauche si nécessaire.
+- `P` 3. Prouver : ajouter la différence au nombre retranché pour retrouver le départ.
+- `P` aligner, soustraire de droite à gauche, emprunter quand le haut est trop petit ; preuve : différence + retranché = départ.
+- `P` Le savais-tu ? Les caissiers d’autrefois ne posaient pas de soustraction pour rendre la monnaie : ils comptaient EN AVANT ! Pour 1 365 Ar payés avec 2 000 Ar, ils disaient « 1 365… 1 400 (35), 1 500 (100), 2 000 (500) » — et la monnaie, 635 Ar, se trouvait toute seule.
+- `P` Attention : Retourner la colonne qui gêne : pour 0 − 5, calculer « 5 − 0 » est la faute la plus fréquente de l’examen ! On n’inverse jamais : on EMPRUNTE.
+- `P` EXERCICE
+- `P` 1. Pose et calcule : a) 8 754 − 3 628 ; b) 52 304 − 28 765 ; d) 400 000 − 265 480 ; e) 1 000 000 − 1.
+- `P` 2. Calcule puis prouve : a) 75 200 − 48 900 ; b) 630 500 − 298 756 ; d) 500 500 − 55 055 ; e) 806 030 − 79 876.
+- `P` 3. Le réservoir du village contient 250 000 L d’eau ; on en consomme 87 650 L. a) Estime ce qui reste. b) Pose la soustraction. d) Écris la preuve. e) Combien manquera-t-il pour remplir à nouveau les 250 000 L ?
+- `P` 4. Pose et effectue : a) 8 765 − 4 321 ; b) 50 000 − 1 ; d) 64 789 − 12 567 ; e) 100 000 − 45 000.
+- `P` 5. a) Calcule 403 200 − 87 650. b) Vérifie par l’addition. d) De 675 000, retire 98 999. e) Complète : … − 24 500 = 50 500.
+- `P` 6. Défi CEPE — Un réservoir contenait 125 000 L d’eau ; on en retire 38 750 L le matin, puis 29 480 L le soir. a) Quelle question intermédiaire se poser ? b) Quel volume total a été retiré ? d) Combien de litres restent-ils ? e) Vérifie en additionnant le reste et le volume retiré.
+- `P` Correction
+- `P` 1. a) 5 126 ; b) 23 539 ; d) 134 520 ; e) 999 999.
+- `P` 2. a) 26 300 (26 300 + 48 900 = 75 200 ✓) ; b) 331 744 ✓ ; d) 445 445 ✓ ; e) 726 154 ✓.
+- `P` 3. a) environ 250 000 − 90 000 = 160 000 L ; b) 162 350 L ; d) 162 350 + 87 650 = 250 000 ✓ ; e) 87 650 L, ce qu’on a consommé.
+- `P` 4. a) 4 444 ; b) 49 999 ; d) 52 222 ; e) 55 000.
+- `P` 5. a) 315 550 ; b) 315 550 + 87 650 = 403 200 : c’est juste ; d) 576 001 ; e) 75 000.
+- `P` 6. a) « Quel volume total a-t-on retiré ? » ; b) 38 750 + 29 480 = 68 230 L ; d) 125 000 − 68 230 = 56 770 L ; e) 56 770 + 68 230 = 125 000 L : le compte est bon.
+
+### SÉANCE 4 / 15 — VÉRIFIER UN RÉSULTAT : PREUVE ET ESTIMATION
+
+- Indicateurs : 28 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 4 / 15 — VÉRIFIER UN RÉSULTAT : PREUVE ET ESTIMATION
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Vérification des calculsTitre : Vérifier un résultat : preuve et estimationObjectif spécifique : À la fin de la séance, l’apprenant est capable de vérifier le résultat d’une addition ou d’une soustraction par l’opération inverse et par l’ordre de grandeur.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Ardoises, cartes d’opérations, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 4 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Calcule 10 000 − 3 650.
+- `T3C3` R.A. : 6 350.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à vérifier le résultat d’une addition ou d’une soustraction par l’opération inverse et par l’ordre de grandeur. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Au contrôle, Lalao a écrit 742 − 268 = 574. Sa voisine trouve 474. Sans refaire le calcul une troisième fois, comment savoir laquelle a raison ? Deux gardiens veillent : la preuve et l’estimation.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Vérifier un résultat : preuve et estimation » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 1 258 + 3 747 = 5 005 ; estimation 1 300 + 3 700 = 5 000 ✓ ; preuve 5 005 − 3 747 = 1 258 ✓.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Les deux gardiens ne travaillent pas pareil. L’estimation est rapide et approximative : 742 − 268, c’est environ 700 − 300 = 400 ; le 574 de Lalao est trop loin, le 474 de sa voisine est crédible. La preuve est lente mais exacte : 474 + 268 = 742 ✓, tandis que 574 + 268 = 842 ✗ — verdict sans appel. La preuve par neuf complète la panoplie : réduire chaque nombre à un seul chiffre (la somme de ses chiffres, recommencée jusqu’à un chiffre), puis placer les réductions dans le schéma. Multiplication : haut et bas reçoivent les réduits des deux facteurs, la gauche celui du produit — et la droite se calcule : haut × bas ; si gauche = droite, tout va bien. Division : haut = diviseur, bas = quotient, gauche = dividende — et la droite se calcule : (haut × bas) + reste ; si gauche = droite, la division est bonne. Petit garde-fou : la preuve par neuf rend le résultat très probable, pas certain — elle ne voit pas deux chiffres simplement échangés ! Le bon réflexe du candidat au CEPE : estimer AVANT de calculer (pour savoir où l’on va), prouver APRÈS (pour signer son résultat). Celui qui rend sa copie sans vérifier laisse ses fautes de retenue se promener en liberté.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, estimation avant (nombres arrondis), preuve après (opération inverse) ; soustraction ↔ addition sont inverses l’une de l’autre.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Vérifie par la preuve et corrige si besoin : a) 456 + 287 = 743 ; b) 902 − 356 = 556 ; d) 5 480 + 2 520 = 8 000 ; e) 10 000 − 4 444 = 6 666. Donne un ordre de grandeur puis calcule : a) 4 897 + 3 108 ; b) 9 012 − 2 987 ; d) 49 850 + 25 103 ; e) 80 125 − 39 884.
+- `T10C3` a) 743 ✓ (743 − 287 = 456) ; b) faux : 902 − 356 = 546 ; d) 8 000 ✓ ; e) faux : 10 000 − 4 444 = 5 556. a) ≈ 8 000 ; 8 005 ; b) ≈ 6 000 ; 6 025 ; d) ≈ 75 000 ; 74 953 ; e) ≈ 40 000 ; 40 241.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Vérifie par la preuve et corrige si besoin : a) 456 + 287 = 743 ; b) 902 − 356 = 556 ; d) 5 480 + 2 520 = 8 000 ; e) 10 000 − 4 444 = 6 666. Puis justifie l’une de tes réponses.
+- `T11C3` a) 743 ✓ (743 − 287 = 456) ; b) faux : 902 − 356 = 546 ; d) 8 000 ✓ ; e) faux : 10 000 − 4 444 = 5 556. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` VÉRIFIER UN RÉSULTAT : PREUVE ET ESTIMATION
+- `P` Vérification des calculs
+- `P` Vérifier un calcul, c’est contrôler son résultat sans le refaire à l’identique. La preuve utilise l’opération inverse : une soustraction se vérifie par une addition, et une addition se vérifie en retranchant l’un des termes du total. L’estimation compare le résultat à un ordre de grandeur obtenu avec des nombres arrondis.
+- `P` la preuve refait le chemin à l’envers ; l’estimation regarde de loin si la réponse est « dans la bonne zone ».
+- `P` Exemple : 1 258 + 3 747 = 5 005 ; estimation 1 300 + 3 700 = 5 000 ✓ ; preuve 5 005 − 3 747 = 1 258 ✓.
+- `P` 1. Arrondir les nombres et calculer de tête l’ordre de grandeur.
+- `P` 2. Effectuer l’opération posée.
+- `P` 3. Appliquer la preuve par l’opération inverse et conclure.
+- `P` 4. Pour × et ÷ : réduire chaque nombre à un chiffre et placer les réductions (multiplication → droite = haut × bas ; division → droite = (haut × bas) + reste).
+- `P` estimation avant (nombres arrondis), preuve après (opération inverse) ; soustraction ↔ addition sont inverses l’une de l’autre.
+- `P` Le savais-tu ? La preuve par neuf a plus de mille ans : née chez les calculateurs indiens, elle a voyagé chez les marchands arabes puis dans les comptoirs vénitiens.
+- `P` Attention : Vérifier en refaisant exactement le même calcul : on refait souvent la même faute au même endroit ! L’opération INVERSE, elle, emprunte un autre chemin et débusque l’erreur.
+- `P` EXERCICE
+- `P` 1. Vérifie par la preuve et corrige si besoin : a) 456 + 287 = 743 ; b) 902 − 356 = 556 ; d) 5 480 + 2 520 = 8 000 ; e) 10 000 − 4 444 = 6 666.
+- `P` 2. Donne un ordre de grandeur puis calcule : a) 4 897 + 3 108 ; b) 9 012 − 2 987 ; d) 49 850 + 25 103 ; e) 80 125 − 39 884.
+- `P` 3. Rivo a payé 13 750 Ar et 8 300 Ar au marché ; il affirme avoir dépensé 23 050 Ar. a) Estime la dépense. b) Son total est-il crédible ? d) Prouve par la soustraction. e) Conclus en une phrase.
+- `P` 4. Donne un ordre de grandeur avant de calculer, puis calcule : a) 4 980 + 5 030 ; b) 19 870 − 9 920 ; d) 39 × 21 ; e) 302 × 9.
+- `P` 5. Vérifie chaque égalité par l’opération inverse : a) 5 432 − 1 234 = 4 198 ? b) 72 × 9 = 648 ? d) 850 ÷ 25 = 34 ? e) 7 000 + 2 500 = 9 500 ?
+- `P` 6. Défi CEPE — On veut vérifier 1 234 × 23 = 28 382 par la preuve par neuf. a) Réduis la somme des chiffres de 1 234 à un seul chiffre. b) Fais de même pour 23. d) Fais de même pour 28 382. e) La preuve confirme-t-elle le résultat ? Explique la règle.
+- `P` Correction
+- `P` 1. a) 743 ✓ (743 − 287 = 456) ; b) faux : 902 − 356 = 546 ; d) 8 000 ✓ ; e) faux : 10 000 − 4 444 = 5 556.
+- `P` 2. a) ≈ 8 000 ; 8 005 ; b) ≈ 6 000 ; 6 025 ; d) ≈ 75 000 ; 74 953 ; e) ≈ 40 000 ; 40 241.
+- `P` 3. a) ≈ 14 000 + 8 000 = 22 000 Ar ; b) oui, 23 050 est proche de 22 000 ; d) 23 050 − 8 300 = 14 750 ✗ : le vrai total est 22 050 Ar ; e) l’estimation était bonne, la preuve a trouvé la faute de 1 000 Ar.
+- `P` 4. a) environ 10 000 ; exact : 10 010 ; b) environ 10 000 ; exact : 9 950 ; d) environ 40 × 20 = 800 ; exact : 819 ; e) environ 300 × 9 = 2 700 ; exact : 2 718.
+- `P` 5. a) 4 198 + 1 234 = 5 432 : juste ; b) 648 ÷ 9 = 72 : juste ; d) 34 × 25 = 850 : juste ; e) 9 500 − 2 500 = 7 000 : juste.
+- `P` 6. a) 1 + 2 + 3 + 4 = 10, puis 1 + 0 = 1 ; b) 2 + 3 = 5 ; d) 2 + 8 + 3 + 8 + 2 = 23, puis 2 + 3 = 5 ; e) oui : 1 × 5 = 5, qui est bien le chiffre trouvé pour le produit — la preuve par neuf rend le résultat très probable (mais elle ne détecte pas toutes les erreurs, comme deux chiffres échangés).
+
+### SÉANCE 5 / 15 — MULTIPLIER : 3 CHIFFRES × 2 CHIFFRES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 5 / 15 — MULTIPLIER : 3 CHIFFRES × 2 CHIFFRES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Multiplication poséeTitre : Multiplier : 3 chiffres × 2 chiffresObjectif spécifique : À la fin de la séance, l’apprenant est capable de poser et effectuer la multiplication d’un nombre de trois chiffres par un nombre de deux chiffres.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Tables de multiplication, quadrillages, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 5 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Récite la table de 6, puis donne 7 × 8.
+- `T3C3` R.A. : 6, 12, 18, 24, 30, 36, 42, 48, 54, 60 ; 7 × 8 = 56.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à poser et effectuer la multiplication d’un nombre de trois chiffres par un nombre de deux chiffres. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Le verger de letchis compte 46 rangées de 324 arbres. Le propriétaire veut connaître le nombre total d’arbres sans les compter un à un — il y passerait la semaine ! La multiplication posée fait le travail en quatre lignes.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Multiplier : 3 chiffres × 2 chiffres » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 324 × 46 : 324 × 6 = 1 944 ; 324 × 4 (dizaines) = 12 960 ; total 14 904 arbres.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le décalage n’est pas une manie d’instituteur : 324 × 46 = 324 × 6 + 324 × 40, et 324 × 40, c’est 324 × 4 DIZAINES = 1 296 dizaines = 12 960 — voilà pourquoi la deuxième ligne glisse d’un rang (on peut marquer le rang libre d’un point ou d’un zéro). Les tables de multiplication jusqu’à 9 doivent couler toutes seules : une hésitation sur 7 × 8 et toute la pyramide tremble. Le contrôle par l’ordre de grandeur reste de garde : 324 × 46 ≈ 300 × 50 = 15 000, tout près du résultat exact 14 904. Vocabulaire à retenir : multiplicande × multiplicateur = produit.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, deux produits partiels (unités puis dizaines décalées d’un rang), puis addition ; contrôle par l’ordre de grandeur.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Pose et calcule : a) 243 × 23 ; b) 517 × 34 ; d) 608 × 45 ; e) 750 × 86. Estime puis calcule : a) 312 × 19 ; b) 498 × 21 ; d) 903 × 52 ; e) 666 × 66.
+- `T10C3` a) 5 589 ; b) 17 578 ; d) 27 360 ; e) 64 500. a) ≈ 300 × 20 = 6 000 ; 5 928 ; b) ≈ 500 × 20 = 10 000 ; 10 458 ; d) ≈ 900 × 50 = 45 000 ; 46 956 ; e) ≈ 700 × 70 = 49 000 ; 43 956.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Pose et calcule : a) 243 × 23 ; b) 517 × 34 ; d) 608 × 45 ; e) 750 × 86. Puis justifie l’une de tes réponses.
+- `T11C3` a) 5 589 ; b) 17 578 ; d) 27 360 ; e) 64 500. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` MULTIPLIER : 3 CHIFFRES × 2 CHIFFRES
+- `P` Multiplication posée
+- `P` Pour multiplier un nombre de trois chiffres (le multiplicande) par un nombre de deux chiffres (le multiplicateur), on calcule deux produits partiels : le multiplicande × le chiffre des unités, puis le multiplicande × le chiffre des dizaines, décalé d’un rang vers la gauche ; on additionne les deux produits.
+- `P` on découpe le multiplicateur : 46 fois, c’est 6 fois… plus 40 fois ; et « 40 fois », ça s’écrit un rang plus à gauche.
+- `P` Exemple : 324 × 46 : 324 × 6 = 1 944 ; 324 × 4 (dizaines) = 12 960 ; total 14 904 arbres.
+- `P` 1. Poser le multiplicande en haut, le multiplicateur en bas, alignés à droite.
+- `P` 2. Multiplier par les unités, puis par les dizaines en décalant d’un rang.
+- `P` 3. Additionner les produits partiels et contrôler l’ordre de grandeur.
+- `P` deux produits partiels (unités puis dizaines décalées d’un rang), puis addition ; contrôle par l’ordre de grandeur.
+- `P` Le savais-tu ? Les Égyptiens multipliaient sans connaître les tables : ils doublaient, doublaient encore, et additionnaient les bonnes lignes ! Pour × 46, ils calculaient × 2, × 4, × 8, × 16, × 32… puis ajoutaient les lignes × 32, × 8, × 4 et × 2.
+- `P` Attention : Oublier le décalage de la deuxième ligne : sans lui, on calcule 324 × 4 au lieu de 324 × 40, et le produit fond de 11 664 ! Marquer le rang libre d’un point avant de commencer.
+- `P` EXERCICE
+- `P` 1. Pose et calcule : a) 243 × 23 ; b) 517 × 34 ; d) 608 × 45 ; e) 750 × 86.
+- `P` 2. Estime puis calcule : a) 312 × 19 ; b) 498 × 21 ; d) 903 × 52 ; e) 666 × 66.
+- `P` 3. Une école commande 28 cartons de 145 cahiers. a) Estime le nombre de cahiers. b) Pose la multiplication. d) Nomme le multiplicande et le multiplicateur. e) Les 4 000 cahiers nécessaires sont-ils couverts ?
+- `P` 4. Pose et effectue : a) 214 × 23 ; b) 305 × 31 ; d) 123 × 45 ; e) 760 × 12.
+- `P` 5. Calcule 416 × 27 en décomposant le multiplicateur : a) 416 × 20 ; b) 416 × 7 ; d) additionne les deux produits ; e) vérifie en posant la multiplication.
+- `P` 6. Défi CEPE — Un libraire reçoit 24 cartons de 136 cahiers chacun. a) Donne un ordre de grandeur du total. b) Calcule le nombre exact de cahiers. d) Il en vend 1 750 : combien en reste-t-il ? e) Vérifie ton produit de b) par la preuve par neuf.
+- `P` Correction
+- `P` 1. a) 5 589 ; b) 17 578 ; d) 27 360 ; e) 64 500.
+- `P` 2. a) ≈ 300 × 20 = 6 000 ; 5 928 ; b) ≈ 500 × 20 = 10 000 ; 10 458 ; d) ≈ 900 × 50 = 45 000 ; 46 956 ; e) ≈ 700 × 70 = 49 000 ; 43 956.
+- `P` 3. a) ≈ 150 × 30 = 4 500 ; b) 145 × 28 = 4 060 ; d) multiplicande 145, multiplicateur 28 ; e) oui : 4 060 > 4 000, il restera même 60 cahiers.
+- `P` 4. a) 4 922 ; b) 9 455 ; d) 5 535 ; e) 9 120.
+- `P` 5. a) 8 320 ; b) 2 912 ; d) 8 320 + 2 912 = 11 232 ; e) la multiplication posée donne bien 11 232.
+- `P` 6. a) environ 140 × 25 = 3 500 cahiers ; b) 136 × 24 = 3 264 cahiers ; d) 3 264 − 1 750 = 1 514 cahiers ; e) 136 donne 1 + 3 + 6 = 10 puis 1 ; 24 donne 6 ; 1 × 6 = 6 ; et 3 264 donne 3 + 2 + 6 + 4 = 15 puis 6 : la preuve est bonne.
+
+### SÉANCE 6 / 15 — DIVISER AVEC QUOTIENT ET RESTE
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 6 / 15 — DIVISER AVEC QUOTIENT ET RESTE
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Division euclidienne simpleTitre : Diviser avec quotient et resteObjectif spécifique : À la fin de la séance, l’apprenant est capable de effectuer une division simple avec quotient et reste et utiliser le vocabulaire : dividende, diviseur, quotient, reste.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Jetons, bols, tables de multiplication, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 6 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Calcule 24 × 5.
+- `T3C3` R.A. : 120.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à effectuer une division simple avec quotient et reste et utiliser le vocabulaire : dividende, diviseur, quotient, reste. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Maman rapporte 127 mangues du verger et veut les répartir également dans 5 bols pour la semaine. Elle distribue, distribue… et à la fin, 2 mangues ne trouvent pas leur place. Combien par bol, et que dire de ces 2 orphelines ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Diviser avec quotient et reste » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 127 ÷ 5 : quotient 25, reste 2 ; preuve (5 × 25) + 2 = 127 ✓.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La division posée s’appuie entièrement sur les tables : pour 127 ÷ 5, on prend les chiffres du dividende de gauche à droite — dans 12, combien de fois 5 ? 2 fois (10), reste 2 ; on abaisse le 7 : dans 27, combien de fois 5 ? 5 fois (25), reste 2. Quotient 25, reste 2. La règle d’or du reste : s’il atteint ou dépasse le diviseur, c’est qu’on pouvait encore servir une tournée — le quotient était trop petit. Et la preuve royale : (5 × 25) + 2 = 127 ✓. Cette égalité, dividende = diviseur × quotient + reste, est la carte d’identité de la division : au CEPE, elle vaut de l’or.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, dividende ÷ diviseur → quotient et reste ; reste < diviseur ; preuve : diviseur × quotient + reste = dividende.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule quotient et reste : a) 58 ÷ 7 ; b) 93 ÷ 4 ; d) 127 ÷ 5 ; e) 250 ÷ 8. Écris la preuve de chaque division : a) 74 ÷ 6 ; b) 100 ÷ 9 ; d) 385 ÷ 7 ; e) 500 ÷ 6.
+- `T10C3` a) 8 reste 2 ; b) 23 reste 1 ; d) 25 reste 2 ; e) 31 reste 2. a) 12 reste 2 : (6 × 12) + 2 = 74 ✓ ; b) 11 reste 1 : (9 × 11) + 1 = 100 ✓ ; d) 55 reste 0 : 7 × 55 = 385 ✓ ; e) 83 reste 2 : (6 × 83) + 2 = 500 ✓.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule quotient et reste : a) 58 ÷ 7 ; b) 93 ÷ 4 ; d) 127 ÷ 5 ; e) 250 ÷ 8. Puis justifie l’une de tes réponses.
+- `T11C3` a) 8 reste 2 ; b) 23 reste 1 ; d) 25 reste 2 ; e) 31 reste 2. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` DIVISER AVEC QUOTIENT ET RESTE
+- `P` Division euclidienne simple
+- `P` Diviser un nombre (le dividende) par un autre (le diviseur), c’est chercher combien de fois le diviseur entre dans le dividende : ce nombre de fois est le quotient, et ce qui ne peut pas être distribué est le reste. Le reste est toujours plus petit que le diviseur, et l’on a : dividende = (diviseur × quotient) + reste.
+- `P` on distribue autant de tournées complètes que possible ; le quotient compte les tournées, le reste ramasse les miettes.
+- `P` Exemple : 127 ÷ 5 : quotient 25, reste 2 ; preuve (5 × 25) + 2 = 127 ✓.
+- `P` 1. Prendre les chiffres du dividende de gauche à droite.
+- `P` 2. À chaque étape, chercher dans la table combien de fois le diviseur entre, soustraire, abaisser le chiffre suivant.
+- `P` 3. Contrôler : reste < diviseur, puis preuve diviseur × quotient + reste = dividende.
+- `P` dividende ÷ diviseur → quotient et reste ; reste < diviseur ; preuve : diviseur × quotient + reste = dividende.
+- `P` Le savais-tu ? Cette division « avec reste » porte le nom d’Euclide, un mathématicien grec d’il y a 2 300 ans.
+- `P` Attention : Laisser un reste plus grand que le diviseur : « 127 ÷ 5 = 24 reste 7 » est faux, car 7 ≥ 5 : on peut encore servir ! Toujours comparer le reste au diviseur avant de conclure.
+- `P` EXERCICE
+- `P` 1. Calcule quotient et reste : a) 58 ÷ 7 ; b) 93 ÷ 4 ; d) 127 ÷ 5 ; e) 250 ÷ 8.
+- `P` 2. Écris la preuve de chaque division : a) 74 ÷ 6 ; b) 100 ÷ 9 ; d) 385 ÷ 7 ; e) 500 ÷ 6.
+- `P` 3. On répartit 178 cahiers entre 8 classes. a) Nomme dividende et diviseur. b) Calcule quotient et reste. d) Écris la preuve. e) Combien de cahiers faudrait-il en plus pour que chaque classe en reçoive 23 ?
+- `P` 4. Effectue (quotient et reste) : a) 84 ÷ 7 ; b) 95 ÷ 4 ; d) 130 ÷ 6 ; e) 72 ÷ 9.
+- `P` 5. Pour 384 ÷ 24 : a) encadre 384 entre 24 × 10 et 24 × 100. b) Combien de chiffres aura le quotient ? d) Effectue la division. e) Vérifie avec quotient × diviseur + reste.
+- `P` 6. Défi CEPE — On range 875 œufs dans des plateaux de 30 œufs. a) Combien de chiffres aura le quotient ? Justifie par un encadrement. b) Combien de plateaux pleins ? d) Combien d’œufs restent-ils ? e) Combien de plateaux faut-il pour transporter TOUS les œufs ?
+- `P` Correction
+- `P` 1. a) 8 reste 2 ; b) 23 reste 1 ; d) 25 reste 2 ; e) 31 reste 2.
+- `P` 2. a) 12 reste 2 : (6 × 12) + 2 = 74 ✓ ; b) 11 reste 1 : (9 × 11) + 1 = 100 ✓ ; d) 55 reste 0 : 7 × 55 = 385 ✓ ; e) 83 reste 2 : (6 × 83) + 2 = 500 ✓.
+- `P` 3. a) dividende 178, diviseur 8 ; b) quotient 22, reste 2 ; d) (8 × 22) + 2 = 178 ✓ ; e) 8 × 23 = 184 : il manque 184 − 178 = 6 cahiers.
+- `P` 4. a) 12 ; b) 23, reste 3 ; d) 21, reste 4 ; e) 8.
+- `P` 5. a) 240 < 384 < 2 400 ; b) 2 chiffres ; d) 384 ÷ 24 = 16, reste 0 ; e) 16 × 24 + 0 = 384 : c’est juste.
+- `P` 6. a) 30 × 10 = 300 < 875 < 30 × 100 = 3 000, donc 2 chiffres au quotient ; b) 875 ÷ 30 = 29, reste 5 : 29 plateaux pleins ; d) 5 œufs ; e) 30 plateaux : il faut un plateau de plus pour les 5 œufs restants.
+
+### SÉANCE 7 / 15 — PARTAGE ET GROUPEMENT : LE SENS DE LA DIVISION
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 7 / 15 — PARTAGE ET GROUPEMENT : LE SENS DE LA DIVISION
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Les deux sens de la divisionTitre : Partage et groupement : le sens de la divisionObjectif spécifique : À la fin de la séance, l’apprenant est capable de distinguer les situations de partage et de groupement et les résoudre par la division.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Jetons, bols, images de situations, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 7 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Division : 94 ÷ 9 ?
+- `T3C3` R.A. : Quotient 10, reste 4 ; preuve (9 × 10) + 4 = 94.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à distinguer les situations de partage et de groupement et les résoudre par la division. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Deux problèmes pour la même classe : « 24 mangues réparties dans 4 bols : combien dans chaque bol ? » et « 24 élèves en équipes de 4 : combien d’équipes ? » Deux questions très différentes… et pourtant le même calcul, 24 ÷ 4. Pourquoi ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Partage et groupement : le sens de la division » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 130 passagers, taxis de 15 places : 130 ÷ 15 = 8 reste 10 → il faut 9 taxis pour emmener tout le monde.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Savoir nommer le sens change tout dans les problèmes : la division 24 ÷ 4 = 6 répond « 6 mangues PAR BOL » dans le partage, mais « 6 ÉQUIPES » dans le groupement — même nombre, unités différentes ! Le reste aussi se lit selon le sens : 127 mangues dans 5 bols (partage), reste 2 mangues NON distribuées ; 127 élèves en équipes de 5 (groupement), 25 équipes et 2 élèves SANS équipe — que faire d’eux ? C’est la question piège du CEPE : « 130 passagers, des taxis-brousse de 15 places, combien de véhicules ? » 130 ÷ 15 = 8 reste 10… mais il faut bien transporter les 10 derniers : 9 véhicules ! Le quotient se corrige parfois d’une unité selon la question posée.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, partage = valeur d’une part ; groupement = nombre de groupes ; le reste s’interprète selon la question, parfois en ajoutant 1 au quotient.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Partage ou groupement ? a) 36 bonbons dans 6 sachets, combien par sachet ? b) 36 bonbons par sachets de 6, combien de sachets ? d) 60 élèves en rangs de 5 ; e) 60 000 Ar partagés entre 4 enfants. Résous : a) 96 cahiers répartis entre 8 classes ; b) 96 cahiers en paquets de 8 ; d) 145 œufs en boîtes de 12 : combien de boîtes pleines ? e) et combien d’œufs hors boîte ?
+- `T10C3` a) partage ; b) groupement ; d) groupement (nombre de rangs) ; e) partage. a) 12 cahiers par classe ; b) 12 paquets ; d) 145 ÷ 12 = 12 reste 1 : 12 boîtes pleines ; e) 1 œuf hors boîte.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Partage ou groupement ? a) 36 bonbons dans 6 sachets, combien par sachet ? b) 36 bonbons par sachets de 6, combien de sachets ? d) 60 élèves en rangs de 5 ; e) 60 000 Ar partagés entre 4 enfants. Puis justifie l’une de tes réponses.
+- `T11C3` a) partage ; b) groupement ; d) groupement (nombre de rangs) ; e) partage. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` PARTAGE ET GROUPEMENT : LE SENS DE LA DIVISION
+- `P` Les deux sens de la division
+- `P` La division a deux sens. Le partage : on connaît le nombre de parts et l’on cherche la valeur d’une part. Le groupement : on connaît la valeur d’un groupe et l’on cherche le nombre de groupes. Les deux situations se résolvent par la même division.
+- `P` partage : « combien dans chacun ? » ; groupement : « combien de paquets ? » — même division, questions différentes.
+- `P` Exemple : 130 passagers, taxis de 15 places : 130 ÷ 15 = 8 reste 10 → il faut 9 taxis pour emmener tout le monde.
+- `P` 1. Identifier le sens : cherche-t-on la valeur d’une part ou le nombre de groupes ?
+- `P` 2. Effectuer la division avec quotient et reste.
+- `P` 3. Interpréter le quotient ET le reste dans les mots de l’énoncé.
+- `P` partage = valeur d’une part ; groupement = nombre de groupes ; le reste s’interprète selon la question, parfois en ajoutant 1 au quotient.
+- `P` Le savais-tu ? Le mot « division » vient du latin dividere, « partager ».
+- `P` Attention : Répondre au problème par le quotient brut sans regarder le reste : « 8 taxis » laisse 10 passagers sur le bord de la route ! Toujours relire la question avant d’écrire la réponse.
+- `P` EXERCICE
+- `P` 1. Partage ou groupement ? a) 36 bonbons dans 6 sachets, combien par sachet ? b) 36 bonbons par sachets de 6, combien de sachets ? d) 60 élèves en rangs de 5 ; e) 60 000 Ar partagés entre 4 enfants.
+- `P` 2. Résous : a) 96 cahiers répartis entre 8 classes ; b) 96 cahiers en paquets de 8 ; d) 145 œufs en boîtes de 12 : combien de boîtes pleines ? e) et combien d’œufs hors boîte ?
+- `P` 3. 130 élèves partent en excursion dans des taxis-brousse de 15 places. a) Pose la division. b) Que signifie le quotient ? d) Que signifie le reste ? e) Combien de véhicules faut-il vraiment ?
+- `P` 4. Partage ou groupement ? Réponds puis calcule : a) 48 bonbons entre 6 enfants ; b) 48 bonbons en paquets de 6 ; d) 60 L versés dans des bidons de 5 L ; e) 60 L partagés entre 5 familles.
+- `P` 5. Un fermier dispose de 156 kg de riz. a) Il les partage entre 12 familles : quelle opération ? b) Combien reçoit chaque famille ? d) S’il faisait des sacs de 12 kg, combien de sacs ? e) Pourquoi trouve-t-on le même nombre aux questions b) et d) ?
+- `P` 6. Défi CEPE — Une association dispose de 1 000 000 Ar. a) Si elle partage également entre 8 écoles, combien reçoit chaque école ? b) Reste-t-il de l’argent ? d) Si elle donne plutôt 150 000 Ar par école, combien d’écoles peut-elle servir ? e) Quel est alors le reste ?
+- `P` Correction
+- `P` 1. a) partage ; b) groupement ; d) groupement (nombre de rangs) ; e) partage.
+- `P` 2. a) 12 cahiers par classe ; b) 12 paquets ; d) 145 ÷ 12 = 12 reste 1 : 12 boîtes pleines ; e) 1 œuf hors boîte.
+- `P` 3. a) 130 ÷ 15 = 8 reste 10 ; b) 8 taxis pleins ; d) 10 élèves restent sans place ; e) 9 véhicules.
+- `P` 4. a) partage : 48 ÷ 6 = 8 bonbons chacun ; b) groupement : 8 paquets ; d) groupement : 12 bidons ; e) partage : 12 L chacune.
+- `P` 5. a) une division : 156 ÷ 12 ; b) 13 kg ; d) 13 sacs ; e) c’est la même division — seul le sens change : partager (combien chacun ?) ou grouper (combien de groupes ?).
+- `P` 6. a) 1 000 000 ÷ 8 = 125 000 Ar ; b) non, le reste est 0 ; d) 1 000 000 ÷ 150 000 : 6 écoles (6 × 150 000 = 900 000) ; e) 1 000 000 − 900 000 = 100 000 Ar.
+
+### SÉANCE 8 / 15 — MULTIPLIER DES FRACTIONS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 8 / 15 — MULTIPLIER DES FRACTIONS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Multiplication de fractions simplesTitre : Multiplier des fractionsObjectif spécifique : À la fin de la séance, l’apprenant est capable de multiplier une fraction par un entier et une fraction par une fraction.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Bandes de fractions, grilles, papier à plier, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 8 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Donne une fraction équivalente à .
+- `T3C3` R.A. : (ou , …).
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à multiplier une fraction par un entier et une fraction par une fraction. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La recette du mofo gasy demande de kapoaka de sucre. Maman triple la recette pour la fête : 3 fois , combien ? Puis elle n’utilise que la moitié de ses de kapoaka de riz moulu : la moitié de , combien ? Les fractions se multiplient !
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Multiplier des fractions » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` × = = ; et 4 × = = .
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Pour l’entier, rien de neuf : 3 × , c’est + + = — la multiplication reste une addition répétée. La vraie nouveauté est fraction × fraction : prendre la moitié de , c’est découper chacun des quarts en deux — l’unité se retrouve en huitièmes, et l’on en garde 3 : × = . Le pliage de papier le montre : plier en 4 dans un sens, en 2 dans l’autre, et l’unité affiche 8 cases dont 3 doublement marquées. De là, la règle mécanique : haut × haut, bas × bas. Surprise à méditer : multiplier par une fraction plus petite que 1 DIMINUE le résultat — la moitié de est plus petite que . « Multiplier » ne veut pas toujours dire « agrandir » !
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, n × a/b = (n × a)/b ; a/b × c/d = (a × c)/(b × d) ; « de » se traduit par × ; multiplier par moins de 1 diminue.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule : a) 2 × ; b) 5 × ; d) 3 × ; e) 4 × . Calcule et simplifie si possible : a) × ; b) × ; d) × ; e) × .
+- `T10C3` a) = ; b) ; d) = 1 + ; e) = 1 + = 1 + . a) ; b) ; d) = ; e) = .
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule : a) 2 × ; b) 5 × ; d) 3 × ; e) 4 × . Puis justifie l’une de tes réponses.
+- `T11C3` a) = ; b) ; d) = 1 + ; e) = 1 + = 1 + . La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` MULTIPLIER DES FRACTIONS
+- `P` Multiplication de fractions simples
+- `P` Multiplier une fraction par un entier, c’est répéter la fraction : 3 × = . Multiplier une fraction par une fraction, c’est prendre une part d’une part : on multiplie les numérateurs entre eux et les dénominateurs entre eux : × = .
+- `P` entier × fraction = la fraction répétée ; fraction × fraction = « une part DE la part » — et le mot « de » se traduit par × .
+- `P` Exemple : × = = ; et 4 × = = .
+- `P` 1. Traduire la situation : « 3 fois » ou « la moitié de » devient × .
+- `P` 2. Multiplier numérateurs ensemble et dénominateurs ensemble.
+- `P` 3. Simplifier le résultat si possible et le situer (plus grand ou plus petit que le départ ?).
+- `P` n × a/b = (n × a)/b ; a/b × c/d = (a × c)/(b × d) ; « de » se traduit par × ; multiplier par moins de 1 diminue.
+- `P` Le savais-tu ? Les charpentiers utilisent la multiplication de fractions tous les jours : la moitié d’une planche de de pouce, le tiers d’un madrier… Aux États-Unis, où l’on mesure encore en pouces et fractions de pouce, impossible de construire une maison sans savoir calculer × !
+- `P` Attention : Multiplier le numérateur ET le dénominateur par l’entier : 3 × ne fait pas ! L’entier ne touche que le numérateur ; serait au contraire une fraction équivalente à .
+- `P` EXERCICE
+- `P` 1. Calcule : a) 2 × ; b) 5 × ; d) 3 × ; e) 4 × .
+- `P` 2. Calcule et simplifie si possible : a) × ; b) × ; d) × ; e) × .
+- `P` 3. Maman prépare de kapoaka de riz moulu et n’en utilise que la moitié. a) Écris l’opération. b) Calcule. d) La quantité utilisée est-elle plus grande ou plus petite que ? e) Que reste-t-il pour demain ?
+- `P` 4. Calcule : a) × ; b) × ; d) × ; e) 4 × .
+- `P` 5. Calcule en simplifiant avant de multiplier : a) × ; b) × ; d) × ; e) Pourquoi simplifier avant rend-il le calcul plus facile ?
+- `P` 6. Défi CEPE — Dans une classe, des élèves sont des filles, et la moitié des filles portent une natte. a) Écris l’opération qui donne la fraction d’élèves qui sont des filles à natte. b) Calcule-la. d) La classe compte 40 élèves : combien de filles ? e) Combien de filles à natte ?
+- `P` Correction
+- `P` 1. a) = ; b) ; d) = 1 + ; e) = 1 + = 1 + .
+- `P` 2. a) ; b) ; d) = ; e) = .
+- `P` 3. a) × ; b) ; d) plus petite : la moitié d’une quantité est toujours plus petite qu’elle ; e) l’autre moitié, de kapoaka.
+- `P` 4. a) ; b) = ; d) = ; e) .
+- `P` 5. a) = ; b) = ; d) = ; e) parce que les nombres restent petits : on croise les simplifications (par exemple 5 avec 5, 7 avec 7) avant de multiplier.
+- `P` 6. a) × ; b) ; d) × 40 = 24 filles ; e) × 40 = 12 filles à natte (c’est bien la moitié de 24).
+
+### SÉANCE 9 / 15 — DIVISER DES FRACTIONS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 9 / 15 — DIVISER DES FRACTIONS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Division de fractions simplesTitre : Diviser des fractionsObjectif spécifique : À la fin de la séance, l’apprenant est capable de diviser une fraction par un entier et une fraction par une fraction non nulle.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Bandes de fractions, verres doseurs en papier, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 9 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Calcule × .
+- `T3C3` R.A. : .
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à diviser une fraction par un entier et une fraction par une fraction non nulle. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Il reste bidon d’huile, et la louche de cuisine mesure de bidon. Combien de louches peut-on encore servir ? « Combien de fois entre dans ? » — c’est une division de fractions, et la bande donne la réponse : 2 louches.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Diviser des fractions » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` ÷ = × = = 6 : il y a 6 huitièmes dans trois quarts.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le renversement n’est pas un tour de passe-passe. « ÷ » demande : combien de quarts dans un demi ? La bande répond 2, et le calcul confirme : × = = 2. Pourquoi renverser ? Parce que diviser par , c’est chercher combien de quarts — et il y a 4 quarts dans CHAQUE unité : diviser par revient donc à multiplier par 4. Pour la division par un entier, deux chemins mènent au même endroit : ÷ 2, c’est partager un demi en deux (), ou multiplier par renversé de . Autre surprise de taille : diviser par une fraction plus petite que 1 AGRANDIT le résultat — 3 ÷ = 6, car il y a 6 demis dans 3 unités. Diviser ne veut pas toujours dire rapetisser !
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, a/b ÷ n = a/(b × n) ; a/b ÷ c/d = a/b × d/c ; diviser par moins de 1 agrandit ; on ne divise jamais par zéro.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule : a) ÷ 2 ; b) ÷ 3 ; d) ÷ 4 ; e) ÷ 5. Calcule en renversant : a) ÷ ; b) ÷ ; d) ÷ ; e) ÷ .
+- `T10C3` a) ; b) ; d) = ; e) . a) 2 ; b) 6 ; d) × = = 4 ; e) × = = .
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule : a) ÷ 2 ; b) ÷ 3 ; d) ÷ 4 ; e) ÷ 5. Puis justifie l’une de tes réponses.
+- `T11C3` a) ; b) ; d) = ; e) . La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` DIVISER DES FRACTIONS
+- `P` Division de fractions simples
+- `P` Diviser une fraction par un entier, c’est la partager : ÷ 2 = . Diviser par une fraction non nulle, c’est chercher combien de fois elle entre dans l’autre ; le calcul se fait en multipliant par la fraction renversée : ÷ = × = 2.
+- `P` diviser par une fraction, c’est multiplier par la fraction retournée tête en bas.
+- `P` Exemple : ÷ = × = = 6 : il y a 6 huitièmes dans trois quarts.
+- `P` 1. Poser la question : « combien de fois entre… » ou « partager en… ».
+- `P` 2. Renverser la fraction diviseuse et transformer la division en multiplication.
+- `P` 3. Calculer haut × haut, bas × bas, puis simplifier et vérifier avec la bande.
+- `P` a/b ÷ n = a/(b × n) ; a/b ÷ c/d = a/b × d/c ; diviser par moins de 1 agrandit ; on ne divise jamais par zéro.
+- `P` Le savais-tu ? La règle « multiplier par l’inverse » a mis longtemps à s’imposer : les mathématiciens indiens du Moyen Âge, comme Brahmagupta, l’utilisaient déjà au VIIᵉ siècle, mille ans avant qu’elle n’entre dans les écoles d’Europe.
+- `P` Attention : Renverser la MAUVAISE fraction : dans ÷ , c’est le diviseur qui se retourne, jamais le ! Retourner le premier donnerait un résultat faux.
+- `P` EXERCICE
+- `P` 1. Calcule : a) ÷ 2 ; b) ÷ 3 ; d) ÷ 4 ; e) ÷ 5.
+- `P` 2. Calcule en renversant : a) ÷ ; b) ÷ ; d) ÷ ; e) ÷ .
+- `P` 3. Il reste de bidon d’huile ; la louche mesure de bidon. a) Écris la division. b) Calcule le nombre de louches. d) Vérifie par la multiplication. e) Avec une louche deux fois plus grande (), combien de louches ?
+- `P` 4. Donne l’inverse de chaque nombre : a) ; b) ; d) 7 ; e) .
+- `P` 5. Calcule : a) ÷ ; b) ÷ ; d) ÷ 2 ; e) Traduis le calcul a) par une question en français.
+- `P` 6. Défi CEPE — Une bouteille contient L de jus ; on remplit des gobelets de L. a) Écris l’opération à faire. b) Transforme-la en multiplication. d) Combien de gobelets pleins obtient-on ? e) Vérifie : que vaut 6 × ?
+- `P` Correction
+- `P` 1. a) ; b) ; d) = ; e) .
+- `P` 2. a) 2 ; b) 6 ; d) × = = 4 ; e) × = = .
+- `P` 3. a) ÷ ; b) 6 louches ; d) 6 × = = ✓ ; e) ÷ = 3 louches.
+- `P` 4. a) ; b) ; d) ; e) 4.
+- `P` 5. a) × = = 2 ; b) × = ; d) × = ; e) « Combien y a-t-il de quarts dans une moitié ? » — réponse : 2.
+- `P` 6. a) ÷ ; b) × ; d) = 6 gobelets ; e) 6 × = = L : toute la bouteille est bien servie.
+
+### SÉANCE 10 / 15 — ADDITIONNER ET SOUSTRAIRE DES NOMBRES DÉCIMAUX
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 10 / 15 — ADDITIONNER ET SOUSTRAIRE DES NOMBRES DÉCIMAUX
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Addition et soustraction de décimauxTitre : Additionner et soustraire des nombres décimauxObjectif spécifique : À la fin de la séance, l’apprenant est capable de poser et effectuer additions et soustractions de nombres décimaux, entre eux et avec des entiers.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Monnaie factice, mètre ruban, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 10 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Compare 3,5 et 3,47.
+- `T3C3` R.A. : 3,5 = 3,50 > 3,47.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à poser et effectuer additions et soustractions de nombres décimaux, entre eux et avec des entiers. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Au marché, Noro achète du savon à 12,75 (en centaines d’ariary) et du sel à 3,5. La marchande pose l’addition… en alignant le 5 de 3,5 sous le 5 de 12,75 ! Le total devient absurde. Où est la faute ? Les virgules n’étaient pas alignées.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Additionner et soustraire des nombres décimaux » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 25 − 7,35 : poser 25,00 − 7,35 = 17,65 ; preuve : 17,65 + 7,35 = 25 ✓.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Tout le secret tient dans l’alignement : 12,75 + 3,5 se pose avec 3,50 sous 12,75 — le 3 sous le 2 des unités, le 5 sous le 7 des dixièmes — et donne 16,25. Aligner par la droite, comme avec les entiers, serait une catastrophe : on additionnerait des dixièmes avec des centièmes ! Le zéro ajouté à 3,5 → 3,50 ne change pas le nombre (0,5 = 0,50, vu à l’unité I) mais rend les colonnes complètes. Avec un entier, même principe : 15 s’écrit 15,00. Retenues et emprunts voyagent exactement comme chez les entiers, et traversent la virgule sans s’arrêter : 10 dixièmes font 1 unité. Preuve et ordre de grandeur restent de service : 16,25 − 3,50 = 12,75 ✓, et 12,75 + 3,5 ≈ 13 + 3 = 16 ✓.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, aligner les virgules, compléter par des zéros, calculer comme des entiers, descendre la virgule ; preuve et estimation comme d’habitude.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Pose et calcule : a) 4,25 + 3,6 ; b) 12,08 + 9,92 ; d) 45,7 + 8,65 ; e) 0,75 + 0,25. Pose et calcule : a) 9,8 − 4,35 ; b) 20 − 6,45 ; d) 15,05 − 7,8 ; e) 100 − 99,99.
+- `T10C3` a) 7,85 ; b) 22 ; d) 54,35 ; e) 1. a) 5,45 ; b) 13,55 ; d) 7,25 ; e) 0,01.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Pose et calcule : a) 4,25 + 3,6 ; b) 12,08 + 9,92 ; d) 45,7 + 8,65 ; e) 0,75 + 0,25. Puis justifie l’une de tes réponses.
+- `T11C3` a) 7,85 ; b) 22 ; d) 54,35 ; e) 1. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` ADDITIONNER ET SOUSTRAIRE DES NOMBRES DÉCIMAUX
+- `P` Addition et soustraction de décimaux
+- `P` Pour additionner ou soustraire des nombres décimaux, on les pose en alignant les virgules — donc les rangs : unités sous unités, dixièmes sous dixièmes. On complète les parties décimales par des zéros pour leur donner la même longueur, puis on calcule comme avec des entiers ; la virgule du résultat s’aligne sous les autres.
+- `P` la virgule est un repère de wagon : tous les trains s’arrêtent à la même gare, et chaque wagon se range derrière le sien.
+- `P` Exemple : 25 − 7,35 : poser 25,00 − 7,35 = 17,65 ; preuve : 17,65 + 7,35 = 25 ✓.
+- `P` 1. Poser en alignant les virgules (entier → ajouter « ,00 »).
+- `P` 2. Compléter les parties décimales à la même longueur par des zéros.
+- `P` 3. Calculer colonne par colonne et placer la virgule du résultat sous les autres.
+- `P` aligner les virgules, compléter par des zéros, calculer comme des entiers, descendre la virgule ; preuve et estimation comme d’habitude.
+- `P` Le savais-tu ? Dans les stations-service, les pompes affichent les litres avec trois décimales : 25,347 L.
+- `P` Attention : Aligner les nombres par la droite comme des entiers : 12,75 + 3,5 deviendrait « 12,75 + 0,35 » ! C’est la virgule qui commande l’alignement, pas le dernier chiffre.
+- `P` EXERCICE
+- `P` 1. Pose et calcule : a) 4,25 + 3,6 ; b) 12,08 + 9,92 ; d) 45,7 + 8,65 ; e) 0,75 + 0,25.
+- `P` 2. Pose et calcule : a) 9,8 − 4,35 ; b) 20 − 6,45 ; d) 15,05 − 7,8 ; e) 100 − 99,99.
+- `P` 3. Hanta mesure 1,38 m ; sa grande sœur mesure 1,6 m. a) Qui est la plus grande ? b) Pose la soustraction des tailles. d) Quelle est la différence ? e) Si Hanta grandit de 0,07 m, quelle sera sa taille ?
+- `P` 4. Pose et effectue : a) 4,5 + 3,2 ; b) 12,75 + 0,25 ; d) 9,6 − 4,35 ; e) 20 − 7,45.
+- `P` 5. Au marché, Soa achète 1,5 kg de tomates, 0,75 kg d’oignons et 2,25 kg de riz. a) Quelle est la masse totale ? b) Son panier supporte 5 kg : peut-elle ajouter 0,5 kg de carottes ? d) Quelle masse peut-elle encore ajouter au maximum ? e) Vérifie ta réponse.
+- `P` 6. Défi CEPE — Trois tours de course : 14,25 s ; 14,5 s ; 14,52 s. a) Additionne les deux premiers temps en alignant les virgules. b) Quel est le temps total des trois tours ? d) Quel est l’écart entre le meilleur et le moins bon tour ? e) Pourquoi faut-il aligner les virgules ?
+- `P` Correction
+- `P` 1. a) 7,85 ; b) 22 ; d) 54,35 ; e) 1.
+- `P` 2. a) 5,45 ; b) 13,55 ; d) 7,25 ; e) 0,01.
+- `P` 3. a) la sœur : 1,6 = 1,60 > 1,38 ; b) 1,60 − 1,38 ; d) 0,22 m ; e) 1,38 + 0,07 = 1,45 m.
+- `P` 4. a) 7,7 ; b) 13 ; d) 5,25 ; e) 12,55.
+- `P` 5. a) 1,5 + 0,75 + 2,25 = 4,5 kg ; b) oui : 4,5 + 0,5 = 5 kg exactement ; d) 0,5 kg ; e) 4,5 + 0,5 = 5 : la limite est atteinte, pas dépassée.
+- `P` 6. a) 14,25 + 14,50 = 28,75 s ; b) 28,75 + 14,52 = 43,27 s ; d) 14,52 − 14,25 = 0,27 s ; e) pour additionner ensemble les chiffres de même valeur : unités avec unités, dixièmes avec dixièmes, centièmes avec centièmes.
+
+### SÉANCE 11 / 15 — MULTIPLIER ET DIVISER DES NOMBRES DÉCIMAUX
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 11 / 15 — MULTIPLIER ET DIVISER DES NOMBRES DÉCIMAUX
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Multiplication et division de décimauxTitre : Multiplier et diviser des nombres décimauxObjectif spécifique : À la fin de la séance, l’apprenant est capable de multiplier et diviser des nombres décimaux entre eux et avec des naturels.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Monnaie factice, étiquettes de prix, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 11 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Calcule 7,5 + 2,5 puis 10 − 3,25.
+- `T3C3` R.A. : 10 ; 6,75.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à multiplier et diviser des nombres décimaux entre eux et avec des naturels. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Le tissu coûte 2,5 (milliers d’ariary) le mètre, et Maman en achète 1,2 m pour un corsage. Le marchand calcule 25 × 12 = 300 sur son papier, puis écrit 3,00. Magie ? Non : il a calculé sans virgules, puis a remis les virgules à leur place.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Multiplier et diviser des nombres décimaux » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 3,25 × 4 = 13 (deux rangs : 325 × 4 = 1 300 → 13,00) ; 9,6 ÷ 4 = 2,4 ; 8,4 ÷ 0,2 = 84 ÷ 2 = 42.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La règle des rangs n’est que la multiplication des fractions décimales en habit court : 2,5 × 1,2 = × = = 3,00 — un rang décimal de chaque facteur, deux rangs au produit. L’estimation fait le garde-fou : 2,5 × 1,2 vaut un peu plus que 2,5 × 1 = 2,5, donc 3 est crédible, et ni 0,3 ni 30. Pour la division, 7,2 ÷ 3 se déroule comme 72 ÷ 3 : on pose, et quand on franchit la virgule du dividende, on la pose au quotient : 2,4. Diviser par un décimal se ramène toujours à un diviseur entier : 4,5 ÷ 1,5 = 45 ÷ 15 = 3 — on a multiplié les DEUX nombres par 10, et un quotient ne change pas quand on multiplie les deux par le même nombre (il y a autant de fois 15 dans 45 que de fois 1,5 dans 4,5).
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, produit : total des rangs décimaux des facteurs ; division par entier : virgule franchie = virgule posée ; division par décimal : décaler les deux virgules pareil.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule : a) 1,5 × 4 ; b) 3,25 × 6 ; d) 2,5 × 1,2 ; e) 0,5 × 0,5. Calcule : a) 9,6 ÷ 4 ; b) 7,5 ÷ 5 ; d) 13,5 ÷ 0,5 ; e) 4,5 ÷ 1,5.
+- `T10C3` a) 6 ; b) 19,5 ; d) 3 ; e) 0,25. a) 2,4 ; b) 1,5 ; d) 27 ; e) 3.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule : a) 1,5 × 4 ; b) 3,25 × 6 ; d) 2,5 × 1,2 ; e) 0,5 × 0,5. Puis justifie l’une de tes réponses.
+- `T11C3` a) 6 ; b) 19,5 ; d) 3 ; e) 0,25. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` MULTIPLIER ET DIVISER DES NOMBRES DÉCIMAUX
+- `P` Multiplication et division de décimaux
+- `P` Pour multiplier des décimaux, on calcule le produit sans tenir compte des virgules, puis on place la virgule au résultat : il doit avoir autant de chiffres après la virgule que les deux facteurs réunis.
+- `P` on enlève les virgules, on calcule, puis on rend au résultat tous les rangs décimaux confisqués.
+- `P` Exemple : 3,25 × 4 = 13 (deux rangs : 325 × 4 = 1 300 → 13,00) ; 9,6 ÷ 4 = 2,4 ; 8,4 ÷ 0,2 = 84 ÷ 2 = 42.
+- `P` 1. Estimer d’abord l’ordre de grandeur du résultat.
+- `P` 2. Calculer sans virgules, puis replacer la virgule (produit : somme des rangs ; division : au franchissement).
+- `P` 3. Confronter à l’estimation pour valider.
+- `P` produit : total des rangs décimaux des facteurs ; division par entier : virgule franchie = virgule posée ; division par décimal : décaler les deux virgules pareil.
+- `P` Le savais-tu ? Le compteur du taxi multiplie des décimaux en continu : tant de centièmes de kilomètre fois tant d’ariary le kilomètre.
+- `P` Attention : Compter les rangs décimaux d’un seul facteur : 2,5 × 1,2 avec un seul rang donnerait 30 — dix fois trop ! On additionne les rangs des DEUX facteurs : 1 + 1 = 2 rangs.
+- `P` EXERCICE
+- `P` 1. Calcule : a) 1,5 × 4 ; b) 3,25 × 6 ; d) 2,5 × 1,2 ; e) 0,5 × 0,5.
+- `P` 2. Calcule : a) 9,6 ÷ 4 ; b) 7,5 ÷ 5 ; d) 13,5 ÷ 0,5 ; e) 4,5 ÷ 1,5.
+- `P` 3. Le mètre de tissu coûte 2,4 (milliers d’Ar). a) Estime le prix de 3,5 m. b) Calcule exactement. d) Maman paie avec 10 : combien lui rend-on ? e) Combien de mètres pour exactement 6 ?
+- `P` 4. Calcule : a) 3,2 × 10 ; b) 45,7 × 100 ; d) 672 ÷ 100 ; e) 5,8 ÷ 10.
+- `P` 5. Calcule : a) 2,5 × 4 ; b) 1,25 × 8 ; d) 7,2 ÷ 3 ; e) 0,75 × 6.
+- `P` 6. Défi CEPE — Un mètre de tissu coûte 12 500 Ar ; maman en achète 2,4 m. a) Donne un ordre de grandeur du prix. b) Calcule le prix exact. d) Elle paie avec 50 000 Ar : combien lui rend-on ? e) Combien de mètres entiers pourrait-elle acheter avec 100 000 Ar ?
+- `P` Correction
+- `P` 1. a) 6 ; b) 19,5 ; d) 3 ; e) 0,25.
+- `P` 2. a) 2,4 ; b) 1,5 ; d) 27 ; e) 3.
+- `P` 3. a) entre 2,4 × 3 = 7,2 et 2,4 × 4 = 9,6 ; b) 2,4 × 3,5 = 8,4 ; d) 10 − 8,4 = 1,6 ; e) 6 ÷ 2,4 = 60 ÷ 24 = 2,5 m.
+- `P` 4. a) 32 ; b) 4 570 ; d) 6,72 ; e) 0,58.
+- `P` 5. a) 10 ; b) 10 ; d) 2,4 ; e) 4,5.
+- `P` 6. a) entre 12 500 × 2 = 25 000 et 12 500 × 3 = 37 500 Ar ; b) 12 500 × 2,4 = 30 000 Ar ; d) 50 000 − 30 000 = 20 000 Ar ; e) 100 000 ÷ 12 500 = 8 mètres.
+
+### SÉANCE 12 / 15 — LA PRIORITÉ DES OPÉRATIONS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 12 / 15 — LA PRIORITÉ DES OPÉRATIONS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Chaînes d’opérations avec et sans parenthèsesTitre : La priorité des opérationsObjectif spécifique : À la fin de la séance, l’apprenant est capable de effectuer une chaîne d’opérations en respectant la priorité des opérations.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Cartes d’opérations, ardoises, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 12 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Calcule 4,5 × 2.
+- `T3C3` R.A. : 9.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à effectuer une chaîne d’opérations en respectant la priorité des opérations. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Le maître écrit au tableau : 5 + 3 × 2. La moitié de la classe répond 16, l’autre moitié 11. Deux réponses pour un seul calcul, c’est une de trop ! Les mathématiciens ont tranché depuis longtemps : il existe un ordre officiel des opérations.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « La priorité des opérations » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 18 − (4 + 2) × 2 = 18 − 6 × 2 = 18 − 12 = 6.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Sans règle commune, chaque calculette du monde donnerait un résultat différent ! La règle dit que 5 + 3 × 2 vaut 5 + 6 = 11 : la multiplication se sert avant l’addition, même placée après elle dans la ligne. Qui veut l’autre résultat doit le COMMANDER avec des parenthèses : (5 + 3) × 2 = 16. Les parenthèses sont les reines : tout ce qu’elles enferment se calcule d’abord, comme un paquet à ouvrir en premier. À égalité de priorité, on lit de gauche à droite : 20 − 8 + 3 = 12 + 3 = 15 (et non 20 − 11 = 9 !), et 24 ÷ 4 × 2 = 6 × 2 = 12. Le bon geste : souligner l’opération prioritaire, la calculer, réécrire la chaîne raccourcie — ligne après ligne, jusqu’au résultat. Les situations réelles fabriquent ces chaînes toutes seules : 3 cahiers à 500 Ar et 2 stylos à 300 Ar, c’est 3 × 500 + 2 × 300 = 1 500 + 600 = 2 100 Ar.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, parenthèses → × et ÷ → + et − ; à priorité égale, de gauche à droite ; réécrire la chaîne à chaque étape.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule : a) 7 + 2 × 5 ; b) 20 − 12 ÷ 4 ; d) 6 × 4 − 10 ; e) 36 ÷ 6 + 3. Calcule : a) (7 + 2) × 5 ; b) (20 − 12) ÷ 4 ; d) 5 × (8 − 3) + 4 ; e) 100 − (25 + 15) × 2.
+- `T10C3` a) 7 + 10 = 17 ; b) 20 − 3 = 17 ; d) 24 − 10 = 14 ; e) 6 + 3 = 9. a) 9 × 5 = 45 ; b) 8 ÷ 4 = 2 ; d) 5 × 5 + 4 = 29 ; e) 100 − 40 × 2 = 100 − 80 = 20.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule : a) 7 + 2 × 5 ; b) 20 − 12 ÷ 4 ; d) 6 × 4 − 10 ; e) 36 ÷ 6 + 3. Puis justifie l’une de tes réponses.
+- `T11C3` a) 7 + 10 = 17 ; b) 20 − 3 = 17 ; d) 24 − 10 = 14 ; e) 6 + 3 = 9. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LA PRIORITÉ DES OPÉRATIONS
+- `P` Chaînes d’opérations avec et sans parenthèses
+- `P` Dans une chaîne d’opérations, on calcule d’abord ce qui est entre parenthèses ; puis les multiplications et divisions, de gauche à droite ; enfin les additions et soustractions, de gauche à droite. C’est la priorité des opérations.
+- `P` parenthèses d’abord, ensuite × et ÷, et les + et − passent en dernier.
+- `P` Exemple : 18 − (4 + 2) × 2 = 18 − 6 × 2 = 18 − 12 = 6.
+- `P` 1. Repérer et calculer d’abord les parenthèses.
+- `P` 2. Souligner puis effectuer les × et ÷ de gauche à droite.
+- `P` 3. Terminer par les + et − de gauche à droite, en réécrivant la chaîne à chaque ligne.
+- `P` parenthèses → × et ÷ → + et − ; à priorité égale, de gauche à droite ; réécrire la chaîne à chaque étape.
+- `P` Le savais-tu ? Tape 5 + 3 × 2 sur deux calculatrices différentes : la calculatrice scientifique répond 11, mais beaucoup de calculatrices simples répondent 16, car elles calculent bêtement de gauche à droite ! C’est pour éviter ces disputes de machines que la priorité des opérations est enseignée partout dans le monde.
+- `P` Attention : Calculer de gauche à droite sans regarder les signes : 5 + 3 × 2 n’est PAS 8 × 2 ! L’ordre d’écriture n’est pas l’ordre de calcul.
+- `P` EXERCICE
+- `P` 1. Calcule : a) 7 + 2 × 5 ; b) 20 − 12 ÷ 4 ; d) 6 × 4 − 10 ; e) 36 ÷ 6 + 3.
+- `P` 2. Calcule : a) (7 + 2) × 5 ; b) (20 − 12) ÷ 4 ; d) 5 × (8 − 3) + 4 ; e) 100 − (25 + 15) × 2.
+- `P` 3. Au marché : 3 cahiers à 800 Ar et 4 stylos à 250 Ar, payés avec 5 000 Ar. a) Écris la chaîne d’opérations de la dépense. b) Calcule la dépense. d) Écris la chaîne de la monnaie rendue. e) Calcule la monnaie.
+- `P` 4. Calcule : a) 5 + 3 × 4 ; b) (5 + 3) × 4 ; d) 20 − 12 ÷ 4 ; e) (20 − 12) ÷ 4.
+- `P` 5. Calcule : a) 7 × (8 − 3) + 10 ; b) 60 ÷ (4 + 2) ; d) 100 − 5 × 5 × 2 ; e) 36 ÷ 6 + 6 × 6.
+- `P` 6. Défi CEPE — On veut calculer + × . a) Quelle opération doit-on faire en premier ? b) Calcule-la. d) Écris en quinzièmes. e) Donne le résultat final, puis simplifie-le.
+- `P` Correction
+- `P` 1. a) 7 + 10 = 17 ; b) 20 − 3 = 17 ; d) 24 − 10 = 14 ; e) 6 + 3 = 9.
+- `P` 2. a) 9 × 5 = 45 ; b) 8 ÷ 4 = 2 ; d) 5 × 5 + 4 = 29 ; e) 100 − 40 × 2 = 100 − 80 = 20.
+- `P` 3. a) 3 × 800 + 4 × 250 ; b) 2 400 + 1 000 = 3 400 Ar ; d) 5 000 − (3 × 800 + 4 × 250) ; e) 5 000 − 3 400 = 1 600 Ar.
+- `P` 4. a) 17 ; b) 32 ; d) 17 ; e) 2.
+- `P` 5. a) 7 × 5 + 10 = 45 ; b) 60 ÷ 6 = 10 ; d) 100 − 50 = 50 ; e) 6 + 36 = 42.
+- `P` 6. a) la multiplication, prioritaire sur l’addition ; b) × = ; d) = ; e) + = = .
+
+### SÉANCE 13 / 15 — LE CALCUL MENTAL : STRATÉGIES EFFICACES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 13 / 15 — LE CALCUL MENTAL : STRATÉGIES EFFICACES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : OpérationThème : Stratégies de calcul mental variéesTitre : Le calcul mental : stratégies efficacesObjectif spécifique : À la fin de la séance, l’apprenant est capable de utiliser des stratégies de calcul mental variées : ×10, ×100, ×1 000, décomposition, doubles, moitiés, compensation.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Ardoises, cartes éclair, chronomètre, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 13 / 15
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Calcule 25 − (5 + 8).
+- `T3C3` R.A. : 25 − 13 = 12.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à utiliser des stratégies de calcul mental variées : ×10, ×100, ×1 000, décomposition, doubles, moitiés, compensation. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Au marché, la marchande annonce « 4 kapoaka à 99 Ar ? 396 ! » avant même que Rivo ait sorti son crayon. Son secret n’est pas un don : elle a calculé 4 × 100 − 4. Les champions du calcul mental ne calculent pas plus vite — ils calculent PLUS MALIN.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Le calcul mental : stratégies efficaces » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 45 × 20 = 45 × 2 × 10 = 90 × 10 = 900 ; et 73 − 29 = 73 − 30 + 1 = 44.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Chaque stratégie a son terrain de chasse. ×10, ×100, ×1 000 : les chiffres glissent vers la gauche — 47 × 100 = 4 700 ; en sens inverse, 35 000 ÷ 1 000 = 35. La décomposition coupe le travail en morceaux : 48 + 27 = 48 + 20 + 7 = 68 + 7 = 75 ; et 6 × 45 = 6 × 40 + 6 × 5 = 240 + 30 = 270. Doubles et moitiés font des échanges : 25 × 16 = 50 × 8 = 100 × 4 = 400 — on double l’un, on prend la moitié de l’autre, le produit ne bouge pas. La compensation arrondit puis répare : 99 + 46 = 100 + 45 = 145 ; 4 × 99 = 400 − 4 = 396 — le secret de la marchande ! Garder des traces écrites des résultats partiels n’est pas tricher : c’est ce que recommande le programme. Et l’entraînement quotidien, cinq minutes par jour, vaut mieux qu’une heure par mois.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, ×/÷ 10, 100, 1 000 = glissement de rangs ; décomposer ; doubles-moitiés ; compensation = arrondir puis réparer.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule de tête : a) 36 × 10 ; b) 58 × 100 ; d) 47 000 ÷ 1 000 ; e) 230 × 1 000. Calcule de tête en décomposant ou compensant : a) 57 + 38 ; b) 99 + 67 ; d) 85 − 29 ; e) 6 × 99.
+- `T10C3` a) 360 ; b) 5 800 ; d) 47 ; e) 230 000. a) 57 + 40 − 2 = 95 ; b) 100 + 66 = 166 ; d) 85 − 30 + 1 = 56 ; e) 600 − 6 = 594.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule de tête : a) 36 × 10 ; b) 58 × 100 ; d) 47 000 ÷ 1 000 ; e) 230 × 1 000. Puis justifie l’une de tes réponses.
+- `T11C3` a) 360 ; b) 5 800 ; d) 47 ; e) 230 000. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LE CALCUL MENTAL : STRATÉGIES EFFICACES
+- `P` Stratégies de calcul mental variées
+- `P` Le calcul mental consiste à calculer de tête, sans poser l’opération, en transformant le calcul en un calcul plus simple : multiplier ou diviser par 10, 100, 1 000 (les chiffres glissent de 1, 2 ou 3 rangs), décomposer les nombres, utiliser les doubles et les moitiés, ou compenser (ajouter d’un côté ce qu’on retire de l’autre).
+- `P` au lieu d’attaquer le calcul de front, on le déguise en calcul facile qui donne le même résultat.
+- `P` Exemple : 45 × 20 = 45 × 2 × 10 = 90 × 10 = 900 ; et 73 − 29 = 73 − 30 + 1 = 44.
+- `P` 1. Observer le calcul : y a-t-il un nombre rond tout proche, un 10 ou 100 caché, un double commode ?
+- `P` 2. Choisir UNE stratégie et transformer le calcul.
+- `P` 3. Effectuer le calcul facile et noter le résultat partiel si besoin.
+- `P` ×/÷ 10, 100, 1 000 = glissement de rangs ; décomposer ; doubles-moitiés ; compensation = arrondir puis réparer.
+- `P` Le savais-tu ? Le record du monde de calcul mental dépasse l’imagination : des champions multiplient deux nombres de huit chiffres de tête en moins d’une minute ! Leur secret est le même que le tien : décomposer, compenser, s’entraîner — simplement poussé à l’extrême pendant des années.
+- `P` Attention : Compenser dans le mauvais sens pour la soustraction : 73 − 29 = 73 − 30 + 1, et non − 1 ! On a retranché 1 de trop, il faut le RENDRE. Vérifier sur un petit exemple en cas de doute : 5 − 2 = 5 − 3 + 1 — correct.
+- `P` EXERCICE
+- `P` 1. Calcule de tête : a) 36 × 10 ; b) 58 × 100 ; d) 47 000 ÷ 1 000 ; e) 230 × 1 000.
+- `P` 2. Calcule de tête en décomposant ou compensant : a) 57 + 38 ; b) 99 + 67 ; d) 85 − 29 ; e) 6 × 99.
+- `P` 3. Calcule par doubles et moitiés : a) 25 × 12 ; b) 50 × 18 ; d) 4 × 35 ; e) 16 × 25. Puis explique ta stratégie préférée en une phrase.
+- `P` 4. Calcule de tête : a) 47 + 29 (pense à 47 + 30 − 1) ; b) 83 − 19 ; d) 25 × 4 ; e) 1 500 + 999.
+- `P` 5. Calcule de tête : a) 68 × 5 (multiplie par 10 puis divise par 2) ; b) 240 ÷ 5 ; d) 99 × 7 (pense à 100 × 7 − 7) ; e) 1 001 × 8.
+- `P` 6. Défi CEPE — Au marché, calcule tout de tête : 4 articles à 2 500 Ar et 2 articles à 7 500 Ar. a) Quelle stratégie pour 4 × 2 500 ? b) Quel est ce produit ? d) Que valent les 2 articles à 7 500 Ar ? e) Quel est le total, et combien de billets de 5 000 Ar faut-il ?
+- `P` Correction
+- `P` 1. a) 360 ; b) 5 800 ; d) 47 ; e) 230 000.
+- `P` 2. a) 57 + 40 − 2 = 95 ; b) 100 + 66 = 166 ; d) 85 − 30 + 1 = 56 ; e) 600 − 6 = 594.
+- `P` 3. a) 50 × 6 = 300 ; b) 100 × 9 = 900 ; d) 2 × 70 = 140 ; e) 8 × 50 = 400 (ou 4 × 100). Toute explication correcte est acceptée.
+- `P` 4. a) 76 ; b) 64 ; d) 100 ; e) 2 499.
+- `P` 5. a) 680 ÷ 2 = 340 ; b) 480 ÷ 10 = 48 ; d) 700 − 7 = 693 ; e) 8 008.
+- `P` 6. a) 4 × 2 500 = 4 × 25 centaines = 100 centaines ; b) 10 000 Ar ; d) 15 000 Ar ; e) 25 000 Ar, soit 5 billets de 5 000 Ar.
+
+### RÉVISION DE L’UNITÉ II
+
+- Indicateurs : 14 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : non.
+- `P` RÉVISION DE L’UNITÉ II
+- `P` Tableau de synthèse
+- `T1C1` Notion
+- `T1C2` À savoir
+- `T1C3` À savoir faire
+- `T2C1` Sens des opérations
+- `T2C2` Ajout, réunion → + ; retrait, comparaison → −
+- `T2C3` Choisir l’opération d’après la situation
+- `T3C1` Addition / soustraction
+- `T3C2` Alignement par colonnes ; retenue = échange ; emprunt = échange inverse
+- `T3C3` Poser et prouver jusqu’à 1 000 000
+- `T4C1` Multiplication
+- `T4C2` 3 chiffres × 2 chiffres : deux produits partiels, décalage d’un rang
+- `T4C3` Poser, calculer, estimer
+- `T5C1` Division
+- `T5C2` Dividende = diviseur × quotient + reste ; reste < diviseur ; partage et groupement
+- `T5C3` Diviser et interpréter le reste
+- `T6C1` Fractions
+- `T6C2` Multiplier : haut × haut, bas × bas ; diviser : × la fraction renversée
+- `T6C3` Calculer avec les fractions simples
+- `T7C1` Décimaux et priorités
+- `T7C2` Virgules alignées ; rangs décimaux du produit ; parenthèses → × ÷ → + −
+- `T7C3` Calculer juste, de tête ou posé
+- `P` Questions de révision
+- `P` 1. Pose et calcule : 268 475 + 356 948, puis écris la preuve de 624 500 − 268 475.
+- `P` 2. Calcule 436 × 57 après avoir donné un ordre de grandeur.
+- `P` 3. 229 œufs en boîtes de 12 : quotient, reste, preuve, et nombre de boîtes à prévoir pour tout ranger ?
+- `P` 4. Calcule : 3 × ; × ; ÷ .
+- `P` 5. Calcule : 12,75 + 3,5 ; 2,5 × 1,2 ; puis 100 − (15 + 5) × 4.
+- `P` Réponses attendues
+- `P` 1. 625 423 ; 624 500 − 268 475 = 356 025 et 356 025 + 268 475 = 624 500 ✓.
+- `P` 2. ≈ 400 × 60 = 24 000 ; 436 × 57 = 24 852.
+- `P` 3. 229 ÷ 12 = 19 reste 1 ; (12 × 19) + 1 = 229 ✓ ; il faut 20 boîtes.
+- `P` 4. = 1 + ; ; 6.
+- `P` 5. 16,25 ; 3 ; 100 − 80 = 20.
+
+### SUJET D’EXAMEN FORMAT CEPE — UNITÉ II
+
+- Indicateurs : 31 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SUJET D’EXAMEN FORMAT CEPE — UNITÉ II
+- `P` Barème : 20 points. Présente clairement tous les calculs et toutes les constructions.
+- `P` Exercice 1 — 4 points. Opérations posées. Pose et effectue : a) 356 248 + 287 965. b) 500 000 − 274 386. d) 408 × 37. e) Écris la preuve de la soustraction du b).
+- `P` Exercice 2 — 4 points. Division. On répartit 365 kg de riz en sacs de 8 kg. a) Pose la division et donne quotient et reste. b) Écris la preuve. d) Combien de sacs pleins obtient-on ? e) Combien de kg manque-t-il pour remplir un sac de plus ?
+- `P` Exercice 3 — 4 points. Fractions. Calcule : a) 4 × . b) × . d) ÷ . e) Il reste de gâteau à partager entre 3 enfants : quelle part pour chacun ?
+- `P` Exercice 4 — 4 points. Décimaux et priorités. a) Calcule 24,5 + 8,75. b) Calcule 30 − 12,65. d) Calcule 3,5 × 2,4. e) Calcule 50 − (12 + 8) × 2.
+- `P` Exercice 5 — 4 points. Problème. Pour la cantine, le directeur achète 36 sacs de riz à 2 450 Ar le kilo, chaque sac pesant 25 kg. a) Combien de kilos de riz en tout ? b) Estime la dépense totale par un ordre de grandeur. d) Calcule la dépense exacte. e) Le budget est de 2 300 000 Ar : suffit-il ? Justifie.
+- `P` CORRIGÉ ET BARÈME
+- `P` Exercice 1. a) 644 213 ; b) 225 614 ; d) 15 096 ; e) 225 614 + 274 386 = 500 000 ✓. Un point par item.
+- `P` Exercice 2. a) 365 ÷ 8 : quotient 45, reste 5 ; b) (8 × 45) + 5 = 365 ✓ ; d) 45 sacs pleins ; e) 8 − 5 = 3 kg. Un point par item.
+- `P` Exercice 3. a) = 2 + ; b) ; d) × = 4 ; e) ÷ 3 = de gâteau chacun. Un point par item.
+- `P` Exercice 4. a) 33,25 ; b) 17,35 ; d) 8,4 ; e) 50 − 40 = 10. Un point par item.
+- `P` Exercice 5. a) 36 × 25 = 900 kg ; b) ≈ 900 × 2 500 = 2 250 000 Ar ; d) 900 × 2 450 = 2 205 000 Ar ; e) oui : 2 205 000 < 2 300 000, il reste 95 000 Ar. Un point par item.
+- `P` UNITÉ III
+- `P` ALGÈBRE
+- `P` Sous-discipline du programme de Mathématiques T5
+- `P` Résultat d’apprentissage général
+- `P` comprendre des relations simples à partir de suites, de situations de proportionnalité et de situations d’égalité.
+- `P` Valeurs à véhiculer
+- `P` esprit de créativité et goût de l’effort.
+- `P` UNITÉ III — ALGÈBRE : DANS CETTE UNITÉ
+- `P` Leçon 1 — Découvrir les suites et leurs régularités
+- `P` Leçon 2 — Le rang d’un terme : relier le rang à la quantité
+- `P` Leçon 3 — Les tableaux de valeurs
+- `P` Leçon 4 — La correspondance entre deux quantités
+- `P` Leçon 5 — La règle de trois
+- `P` Leçon 6 — Le sens du signe égal
+- `P` Leçon 7 — Trouver la valeur inconnue
+- `P` Révision de l’unité III
+- `P` Sujet d’examen format CEPE
+- `P` Tableau de bord
+- `T1C1` Leçons
+- `T1C2` Apprentissages
+- `T1C3` Révision
+- `T1C4` Examen
+- `T2C1` 9
+- `T2C2` 7
+- `T2C3` 1
+- `T2C4` 1
+
+### SÉANCE 1 / 9 — DÉCOUVRIR LES SUITES ET LEURS RÉGULARITÉS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 1 / 9 — DÉCOUVRIR LES SUITES ET LEURS RÉGULARITÉS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : AlgèbreThème : Suites à motif répété ou croissantTitre : Découvrir les suites et leurs régularitésObjectif spécifique : À la fin de la séance, l’apprenant est capable de décrire la régularité d’une suite numérique ou non numérique à motif répété ou croissant.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Perles, graines, cailloux, dessins de suites, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 1 / 9
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Calcule de tête : 25 × 12.
+- `T3C3` R.A. : 50 × 6 = 300 (doubles et moitiés).
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à décrire la régularité d’une suite numérique ou non numérique à motif répété ou croissant. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Soa enfile un collier : deux perles rouges, une bleue, deux rouges, une bleue… Elle s’arrête : « quelle sera la couleur de la 15ᵉ perle ? » Pas besoin d’enfiler jusqu’à 15 : la suite a une régularité, et qui la trouve voit l’avenir du collier !
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Découvrir les suites et leurs régularités » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Suite 5, 10, 15, 20… : règle « + 5 » ; les deux termes suivants sont 25 et 30.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Décrire une régularité, c’est la dire avec des mots précis. Pour le collier : « le motif rouge-rouge-bleu, long de 3 perles, se répète » — et aussitôt tout se calcule : les perles bleues occupent les positions 3, 6, 9, 12, 15… la 15ᵉ perle sera bleue ! Pour une suite croissante de jetons 1, 2, 3, 4…, la règle est « + 1 jeton à chaque figure » ; pour 2, 4, 6, 8…, c’est « + 2 » ; pour 1, 2, 4, 8…, c’est « × 2 » à chaque pas — les règles peuvent additionner ou multiplier. Les suites ne sont pas que des nombres : rythmes frappés, frises dessinées sur les lamba, pas de danse — partout où quelque chose revient régulièrement, il y a une suite. Le travail du mathématicien débutant : observer, dire le motif À VOIX HAUTE, puis prolonger et vérifier.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, suite = liste ordonnée ; motif = ce qui se répète ; répété (le paquet revient) ou croissant (la règle fait grandir) ; dire la règle permet de prolonger.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Donne la règle et les deux termes suivants : a) 4, 8, 12, 16… ; b) 50, 45, 40, 35… ; d) 1, 10, 100, 1 000… ; e) 2, 4, 8, 16… Suite de perles : rouge, rouge, bleu, rouge, rouge, bleu… a) Quel est le motif ? b) Quelle est la longueur du motif ? d) Couleur de la 12ᵉ perle ? e) Couleur de la 16ᵉ perle ?
+- `T10C3` a) + 4 : 20, 24 ; b) − 5 : 30, 25 ; d) × 10 : 10 000, 100 000 ; e) × 2 : 32, 64. a) rouge-rouge-bleu ; b) 3 perles ; d) 12 = 4 motifs complets : bleue ; e) 16 = 5 motifs + 1 : rouge.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Donne la règle et les deux termes suivants : a) 4, 8, 12, 16… ; b) 50, 45, 40, 35… ; d) 1, 10, 100, 1 000… ; e) 2, 4, 8, 16… Puis justifie l’une de tes réponses.
+- `T11C3` a) + 4 : 20, 24 ; b) − 5 : 30, 25 ; d) × 10 : 10 000, 100 000 ; e) × 2 : 32, 64. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` DÉCOUVRIR LES SUITES ET LEURS RÉGULARITÉS
+- `P` Suites à motif répété ou croissant
+- `P` Une suite est une liste d’éléments arrangés dans un ordre déterminé. Le motif est l’ensemble des éléments qui se répètent. Une suite est à motif répété quand le même paquet revient à l’identique, et à motif croissant quand chaque figure grandit en suivant une règle régulière.
+- `P` une suite, c’est une file bien rangée ; sa régularité est le secret qui permet de continuer la file sans se tromper.
+- `P` Exemple : Suite 5, 10, 15, 20… : règle « + 5 » ; les deux termes suivants sont 25 et 30.
+- `P` 1. Observer les premiers éléments et chercher ce qui revient ou ce qui grandit.
+- `P` 2. Formuler la règle en mots : « le motif … se répète » ou « on ajoute … à chaque pas ».
+- `P` 3. Prolonger la suite avec la règle et vérifier sur les éléments connus.
+- `P` suite = liste ordonnée ; motif = ce qui se répète ; répété (le paquet revient) ou croissant (la règle fait grandir) ; dire la règle permet de prolonger.
+- `P` Le savais-tu ? Les frises géométriques des lamba et des nattes malgaches sont des suites à motif répété que les tisserandes connaissent par cœur — sans jamais les écrire ! Et la plus célèbre suite croissante du monde, 1, 1, 2, 3, 5, 8, 13… (chaque terme = la somme des deux précédents), se cache dans les spirales des ananas et des tournesols.
+- `P` Attention : Deviner le terme suivant « au feeling » sans avoir dit la règle : 1, 2, 4… peut continuer par 8 (règle × 2) ou par 7 (règle + 1, + 2, + 3). Sans la règle énoncée, la réponse ne se justifie pas.
+- `P` EXERCICE
+- `P` 1. Donne la règle et les deux termes suivants : a) 4, 8, 12, 16… ; b) 50, 45, 40, 35… ; d) 1, 10, 100, 1 000… ; e) 2, 4, 8, 16…
+- `P` 2. Suite de perles : rouge, rouge, bleu, rouge, rouge, bleu… a) Quel est le motif ? b) Quelle est la longueur du motif ? d) Couleur de la 12ᵉ perle ? e) Couleur de la 16ᵉ perle ?
+- `P` 3. Invente : a) une suite à motif répété avec deux formes ; b) une suite croissante de règle « + 3 » partant de 2 ; d) écris ses cinq premiers termes ; e) explique comment un camarade peut vérifier ta règle.
+- `P` 4. Trouve la régularité, puis donne les deux termes suivants : a) 2 ; 4 ; 6 ; 8 ; … b) 5 ; 10 ; 15 ; … d) 1 ; 3 ; 5 ; 7 ; … e) 80 ; 70 ; 60 ; …
+- `P` 5. On dessine une suite de figures : 1 cercle et 1 triangle, puis 1 cercle et 2 triangles, puis 1 cercle et 3 triangles… a) Est-ce un motif croissant ou répété ? b) Combien de triangles à l’étape 4 ? d) À l’étape 6 ? e) Invente une suite non numérique à motif répété avec deux formes.
+- `P` 6. Défi CEPE — Voici une suite : 3 ; 6 ; 12 ; 24 ; … a) La régularité est-elle « + 3 » ? Vérifie. b) Quelle est la vraie règle ? d) Donne les deux termes suivants. e) Cette suite est-elle à motif croissant ou répété ?
+- `P` Correction
+- `P` 1. a) + 4 : 20, 24 ; b) − 5 : 30, 25 ; d) × 10 : 10 000, 100 000 ; e) × 2 : 32, 64.
+- `P` 2. a) rouge-rouge-bleu ; b) 3 perles ; d) 12 = 4 motifs complets : bleue ; e) 16 = 5 motifs + 1 : rouge.
+- `P` 3. a) par exemple rond-carré-rond-carré ; b) 2, 5, 8, 11, 14 ; d) voir b ; e) il applique la règle « + 3 » à chaque terme et contrôle chaque passage.
+- `P` 4. a) + 2 : 10 puis 12 ; b) + 5 : 20 puis 25 ; d) + 2 : 9 puis 11 ; e) − 10 : 50 puis 40.
+- `P` 5. a) croissant : un triangle de plus à chaque étape ; b) 4 triangles ; d) 6 triangles ; e) par exemple : carré, rond, carré, rond, carré, rond… (le groupe « carré-rond » se répète).
+- `P` 6. a) non : 6 + 3 = 9, or le terme suivant est 12 ; b) chaque terme est multiplié par 2 ; d) 48 puis 96 ; e) croissant : les valeurs augmentent selon une règle.
+
+### SÉANCE 2 / 9 — LE RANG D’UN TERME : RELIER LE RANG À LA QUANTITÉ
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 2 / 9 — LE RANG D’UN TERME : RELIER LE RANG À LA QUANTITÉ
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : AlgèbreThème : Rang d’un terme et relation rang-quantitéTitre : Le rang d’un terme : relier le rang à la quantitéObjectif spécifique : À la fin de la séance, l’apprenant est capable de établir le lien entre le rang d’une figure et le nombre d’objets qui la composent.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Allumettes ou bâtonnets, jetons, dessins de figures, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 2 / 9
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Règle et terme suivant : 3, 6, 9, 12…
+- `T3C3` R.A. : Règle « + 3 » ; terme suivant 15.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à établir le lien entre le rang d’une figure et le nombre d’objets qui la composent. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Rivo construit des tours d’allumettes : la 1ʳᵉ figure a 2 allumettes, la 2ᵉ en a 4, la 3ᵉ en a 6… Son frère le défie : « combien d’allumettes pour la 10ᵉ figure ? » Construire les dix figures prendrait la soirée. Relier le RANG au NOMBRE d’allumettes répond en deux secondes.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Le rang d’un terme : relier le rang à la quantité » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Figures de 3, 6, 9 jetons aux rangs 1, 2, 3 : relation « 3 × rang » ; au rang 7, 3 × 7 = 21 jetons.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Il y a deux façons de voir une suite. La vision « pas à pas » dit comment passer d’un terme au suivant : « + 2 à chaque figure ». La vision « par le rang » dit comment calculer N’IMPORTE QUEL terme directement : ici, nombre d’allumettes = 2 × rang. La seconde est infiniment plus puissante : pour le rang 10, 2 × 10 = 20 allumettes, sans construire les neuf figures d’avant ! Comment trouver la relation ? On teste sur les figures connues : rang 1 → 2 (= 2 × 1 ✓), rang 2 → 4 (= 2 × 2 ✓), rang 3 → 6 (= 2 × 3 ✓) — la relation « × 2 » marche partout, elle est adoptée. Il faut TOUJOURS vérifier sur plusieurs rangs : une relation qui ne marche que sur le premier terme est un mirage.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, rang = position dans la suite ; relation rang → quantité = formule-raccourci ; on la devine sur les premiers termes et on la vérifie sur tous.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` La relation est « 4 × rang ». Combien d’objets aux rangs : a) 3 ; b) 5 ; d) 10 ; e) 25 ? Suite de figures : 5, 10, 15, 20… a) Quelle est la relation rang → quantité ? b) Quantité au rang 8 ? d) Quantité au rang 12 ? e) Quel rang a la figure de 45 objets ?
+- `T10C3` a) 12 ; b) 20 ; d) 40 ; e) 100. a) 5 × rang ; b) 40 ; d) 60 ; e) 45 ÷ 5 = 9 : le rang 9.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : La relation est « 4 × rang ». Combien d’objets aux rangs : a) 3 ; b) 5 ; d) 10 ; e) 25 ? Puis justifie l’une de tes réponses.
+- `T11C3` a) 12 ; b) 20 ; d) 40 ; e) 100. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LE RANG D’UN TERME : RELIER LE RANG À LA QUANTITÉ
+- `P` Rang d’un terme et relation rang-quantité
+- `P` Le rang d’un terme est sa position dans la suite : premier, deuxième, troisième… Relier le rang à la quantité, c’est trouver la relation qui donne directement le nombre d’objets d’une figure à partir de son rang, sans construire toutes les figures précédentes.
+- `P` au lieu de marcher pas à pas jusqu’à la figure voulue, on cherche la formule-raccourci qui saute directement au bon rang.
+- `P` Exemple : Figures de 3, 6, 9 jetons aux rangs 1, 2, 3 : relation « 3 × rang » ; au rang 7, 3 × 7 = 21 jetons.
+- `P` 1. Dresser la liste rang → quantité pour les figures connues.
+- `P` 2. Chercher l’opération qui transforme chaque rang en sa quantité (× 2, × 3, + 5…).
+- `P` 3. Vérifier la relation sur tous les rangs connus, puis l’utiliser pour le rang demandé.
+- `P` rang = position dans la suite ; relation rang → quantité = formule-raccourci ; on la devine sur les premiers termes et on la vérifie sur tous.
+- `P` Le savais-tu ? C’est exactement ainsi que les informaticiens programment : au lieu d’écrire les 1 000 premières valeurs d’une liste, ils donnent la formule du terme de rang n, et l’ordinateur fabrique la liste tout seul.
+- `P` Attention : Confondre le rang et le terme : dans la suite 5, 10, 15…, le « 3ᵉ terme » est 15, pas 3 ! Le rang est la place ; le terme est ce qui occupe la place.
+- `P` EXERCICE
+- `P` 1. La relation est « 4 × rang ». Combien d’objets aux rangs : a) 3 ; b) 5 ; d) 10 ; e) 25 ?
+- `P` 2. Suite de figures : 5, 10, 15, 20… a) Quelle est la relation rang → quantité ? b) Quantité au rang 8 ? d) Quantité au rang 12 ? e) Quel rang a la figure de 45 objets ?
+- `P` 3. Rivo : figures de 2, 4, 6 allumettes… a) Relation rang → quantité ? b) Vérifie-la sur les trois premiers rangs. d) Allumettes au rang 10 ? e) Avec 30 allumettes, jusqu’à quel rang peut-il construire UNE figure ?
+- `P` 4. Dans la suite 3 ; 6 ; 9 ; 12 ; 15 ; … a) Quel est le terme de rang 2 ? b) Quel est le rang du terme 12 ? d) Quel est le terme de rang 6 ? e) Par quel rang commence-t-on à compter ?
+- `P` 5. On construit des triangles avec des allumettes : rang 1 → 3 allumettes ; rang 2 → 6 ; rang 3 → 9… a) Quelle est la régularité ? b) Écris la relation entre quantité et rang. d) Combien d’allumettes au rang 7 ? e) À quel rang utilise-t-on 30 allumettes ?
+- `P` 6. Défi CEPE — Une couturière coud des boutons : robe de rang 1 → 5 boutons ; rang 2 → 10 ; rang 3 → 15… a) Écris la relation entre quantité et rang. b) Combien de boutons pour la robe de rang 9 ? d) Elle a utilisé 60 boutons pour une seule robe : quel est son rang ? e) Peut-elle coudre la robe de rang 13 avec 60 boutons ? Justifie.
+- `P` Correction
+- `P` 1. a) 12 ; b) 20 ; d) 40 ; e) 100.
+- `P` 2. a) 5 × rang ; b) 40 ; d) 60 ; e) 45 ÷ 5 = 9 : le rang 9.
+- `P` 3. a) 2 × rang ; b) 2 × 1 = 2 ✓, 2 × 2 = 4 ✓, 2 × 3 = 6 ✓ ; d) 20 ; e) 30 ÷ 2 = 15 : la figure de rang 15.
+- `P` 4. a) 6 ; b) rang 4 ; d) 18 ; e) le rang 1.
+- `P` 5. a) + 3 à chaque rang ; b) quantité = 3 × rang ; d) 3 × 7 = 21 allumettes ; e) 30 ÷ 3 = 10 : au rang 10.
+- `P` 6. a) quantité = 5 × rang ; b) 5 × 9 = 45 boutons ; d) 60 ÷ 5 = 12 : rang 12 ; e) non : la robe de rang 13 demande 5 × 13 = 65 boutons, et 65 > 60.
+
+### SÉANCE 3 / 9 — LES TABLEAUX DE VALEURS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 3 / 9 — LES TABLEAUX DE VALEURS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : AlgèbreThème : Tableaux de valeurs simplesTitre : Les tableaux de valeursObjectif spécifique : À la fin de la séance, l’apprenant est capable de construire et utiliser un tableau de valeurs pour représenter une relation simple.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Grains de maïs, bâtonnets, grands tableaux tracés, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 3 / 9
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Relation « 3 × rang » : quantité au rang 6 ?
+- `T3C3` R.A. : 18.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à construire et utiliser un tableau de valeurs pour représenter une relation simple. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La maîtresse veut afficher au mur la suite des jetons de la classe : rang 1 → 3 jetons, rang 2 → 6, rang 3 → 9… En dessinant toutes les figures, l’affiche déborde ! Elle trace à la place un tableau à deux lignes : tout y tient, et la règle saute aux yeux.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Les tableaux de valeurs » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Rang 1, 2, 3, 4 → quantité 7, 14, 21, 28 : règle « × 7 » ; au rang 6, 42.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le tableau est l’outil-pivot de toute l’algèbre : il se lit dans TROIS directions. En ligne, on lit la suite : 3, 6, 9, 12… et son pas « + 3 ». En colonne, on lit la relation rang → quantité : chaque nombre du bas vaut 3 × celui du haut — c’est la règle « × 3 ». Et en couple, chaque colonne raconte un fait : « au rang 4, il y a 12 jetons ». La force du tableau : les trous se remplissent par la règle, même loin — la colonne du rang 10 reçoit 30 sans qu’on dessine rien. Remplir un tableau, c’est donc trois gestes : repérer la règle en colonne, la vérifier sur toutes les colonnes pleines, puis compléter les colonnes vides. Le tableau prépare directement la proportionnalité de la prochaine séance.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, deux lignes en face à face ; lecture en ligne (le pas), en colonne (la règle), en couple (un fait) ; la règle vérifiée remplit les trous.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Recopie et complète le tableau de règle « × 6 » : rang 1, 2, 3, 4, 5 → a) rang 2 ? b) rang 3 ? d) rang 4 ? e) rang 5 ? Tableau : rang 1, 2, 3, 4 → quantité 8, 16, 24, 32. a) Quelle est la règle ? b) Quantité au rang 7 ? d) Rang de la quantité 80 ? e) La quantité 36 peut-elle apparaître ? Pourquoi ?
+- `T10C3` a) 12 ; b) 18 ; d) 24 ; e) 30. a) × 8 ; b) 56 ; d) 10 ; e) non : 36 n’est pas un multiple de 8 (8 × 4 = 32, 8 × 5 = 40).
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Recopie et complète le tableau de règle « × 6 » : rang 1, 2, 3, 4, 5 → a) rang 2 ? b) rang 3 ? d) rang 4 ? e) rang 5 ? Puis justifie l’une de tes réponses.
+- `T11C3` a) 12 ; b) 18 ; d) 24 ; e) 30. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LES TABLEAUX DE VALEURS
+- `P` Tableaux de valeurs simples
+- `P` Un tableau de valeurs est un tableau à deux lignes (ou deux colonnes) qui met en face l’une de l’autre deux quantités liées : sur la première ligne le rang (ou la première quantité), sur la seconde la quantité qui lui correspond.
+- `P` le tableau de valeurs, c’est la suite rangée en deux étages : en haut la position, en bas ce qu’elle vaut — chaque colonne forme un couple.
+- `P` Exemple : Rang 1, 2, 3, 4 → quantité 7, 14, 21, 28 : règle « × 7 » ; au rang 6, 42.
+- `P` 1. Tracer deux lignes : rang en haut, quantité en bas.
+- `P` 2. Remplir avec les couples connus et chercher la règle en colonne.
+- `P` 3. Vérifier la règle sur toutes les colonnes pleines, puis compléter les trous.
+- `P` deux lignes en face à face ; lecture en ligne (le pas), en colonne (la règle), en couple (un fait) ; la règle vérifiée remplit les trous.
+- `P` Le savais-tu ? Les feuilles de calcul des ordinateurs — des milliers de lignes et de colonnes — ne sont rien d’autre que des tableaux de valeurs géants.
+- `P` Attention : Chercher la règle seulement en ligne (« + 3 ») et s’arrêter là : pour sauter au rang 10, c’est la règle en COLONNE (« × 3 ») qu’il faut — sinon on doit remplir toutes les colonnes une à une.
+- `P` EXERCICE
+- `P` 1. Recopie et complète le tableau de règle « × 6 » : rang 1, 2, 3, 4, 5 → a) rang 2 ? b) rang 3 ? d) rang 4 ? e) rang 5 ?
+- `P` 2. Tableau : rang 1, 2, 3, 4 → quantité 8, 16, 24, 32. a) Quelle est la règle ? b) Quantité au rang 7 ? d) Rang de la quantité 80 ? e) La quantité 36 peut-elle apparaître ? Pourquoi ?
+- `P` 3. Un cahier coûte 900 Ar. a) Construis le tableau de valeurs pour 1, 2, 3, 4 cahiers. b) Quelle est la règle ? d) Prix de 6 cahiers ? e) Combien de cahiers pour 7 200 Ar ?
+- `P` 4. Un tableau donne : rang 1, 2, 3, 4, 5 et quantité 4, 8, 12, 16, 20. a) Quelle est la régularité ? b) Écris la relation. d) Quelle quantité au rang 8 ? e) À quel rang la quantité vaut-elle 40 ?
+- `P` 5. Complète le tableau : rang 1 à 6 ; quantité 7 ; 14 ; … ; 28 ; … ; 42. a) Trouve les deux valeurs manquantes. b) Écris la relation. d) Quelle quantité au rang 10 ? e) Le nombre 50 peut-il apparaître dans la ligne des quantités ? Pourquoi ?
+- `P` 6. Défi CEPE — Dans une salle de fête, le tableau relie les tables (1 ; 2 ; 3 ; 4) aux chaises (6 ; 12 ; 18 ; 24). a) Quel est le coefficient du tableau ? b) Combien de chaises pour 7 tables ? d) Combien de tables pour 54 chaises ? e) Prolonge la ligne des chaises jusqu’à 6 tables.
+- `P` Correction
+- `P` 1. a) 12 ; b) 18 ; d) 24 ; e) 30.
+- `P` 2. a) × 8 ; b) 56 ; d) 10 ; e) non : 36 n’est pas un multiple de 8 (8 × 4 = 32, 8 × 5 = 40).
+- `P` 3. a) 1 → 900 ; 2 → 1 800 ; 3 → 2 700 ; 4 → 3 600 ; b) prix = 900 × nombre de cahiers ; d) 5 400 Ar ; e) 7 200 ÷ 900 = 8 cahiers.
+- `P` 4. a) + 4 ; b) quantité = 4 × rang ; d) 32 ; e) rang 10.
+- `P` 5. a) 21 (rang 3) et 35 (rang 5) ; b) quantité = 7 × rang ; d) 70 ; e) non : 50 n’est pas un multiple de 7.
+- `P` 6. a) 6 (chaque table apporte 6 chaises) ; b) 6 × 7 = 42 chaises ; d) 54 ÷ 6 = 9 tables ; e) 6 ; 12 ; 18 ; 24 ; 30 ; 36.
+
+### SÉANCE 4 / 9 — LA CORRESPONDANCE ENTRE DEUX QUANTITÉS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 4 / 9 — LA CORRESPONDANCE ENTRE DEUX QUANTITÉS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : AlgèbreThème : Relations simples et proportionnalité intuitiveTitre : La correspondance entre deux quantitésObjectif spécifique : À la fin de la séance, l’apprenant est capable de déterminer la règle d’une relation entre deux quantités qui varient ensemble.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Bâtonnets, grains de maïs, paniers, tableaux de correspondance, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 4 / 9
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Tableau de règle « × 9 » : quantité au rang 4 ?
+- `T3C3` R.A. : 36.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à déterminer la règle d’une relation entre deux quantités qui varient ensemble. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Au verger, chaque panier reçoit exactement 6 mangues. Un panier → 6 mangues ; deux paniers → 12 ; trois → 18… Les deux quantités grandissent ENSEMBLE, d’un même mouvement. Quelle est la règle secrète qui les lie ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « La correspondance entre deux quantités » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 3 kapoaka pèsent 840 g ; 1 kapoaka ? La règle « × 280 » vient de 3 × 280 = 840 ; donc 5 kapoaka → 1 400 g.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La règle d’une correspondance se découvre dans le tableau : paniers 1, 2, 3, 4 → mangues 6, 12, 18, 24. En colonne, chaque nombre du bas vaut 6 × celui du haut : la règle est « × 6 ». Le test de la proportionnalité : 2 fois plus de paniers donne-t-il 2 fois plus de mangues ? 2 → 12 et 4 → 24 : oui ✓. Toutes les correspondances ne sont pas proportionnelles ! L’âge d’un enfant et sa taille varient ensemble, mais un enfant de 10 ans n’est pas deux fois plus grand qu’à 5 ans. Le programme demande de raisonner SANS taux unitaire donné : si 2 paniers → 12 mangues, on trouve la règle en cherchant « 2 × ? = 12 », donc × 6 — par déduction ou par essais systématiques. La règle trouvée se vérifie toujours sur un autre couple avant d’être utilisée.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, correspondance = deux quantités liées ; proportionnelle = même multiplicateur partout (qui double fait doubler) ; la règle se déduit d’un couple et se vérifie sur un autre.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Chaque sachet contient 8 bonbons. Combien de bonbons pour : a) 3 sachets ; b) 5 sachets ; d) 10 sachets ; e) 12 sachets ? Tableau : 2 cahiers → 1 600 Ar ; 4 cahiers → 3 200 Ar. a) Quelle est la règle ? b) Prix de 7 cahiers ? d) Nombre de cahiers pour 8 000 Ar ? e) Le test du double est-il vérifié ?
+- `T10C3` a) 24 ; b) 40 ; d) 80 ; e) 96. a) × 800 ; b) 5 600 Ar ; d) 10 cahiers ; e) oui : 2 → 1 600 et 4 → 3 200, le double donne le double ✓.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Chaque sachet contient 8 bonbons. Combien de bonbons pour : a) 3 sachets ; b) 5 sachets ; d) 10 sachets ; e) 12 sachets ? Puis justifie l’une de tes réponses.
+- `T11C3` a) 24 ; b) 40 ; d) 80 ; e) 96. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LA CORRESPONDANCE ENTRE DEUX QUANTITÉS
+- `P` Relations simples et proportionnalité intuitive
+- `P` Deux quantités sont en correspondance quand à chaque valeur de l’une répond une valeur de l’autre. La relation est proportionnelle quand on passe de la première à la seconde en multipliant toujours par le même nombre : quand l’une double, l’autre double ; quand l’une triple, l’autre triple.
+- `P` deux quantités proportionnelles marchent au même pas : tout ce qui arrive à l’une (doubler, tripler) arrive aussitôt à l’autre.
+- `P` Exemple : 3 kapoaka pèsent 840 g ; 1 kapoaka ? La règle « × 280 » vient de 3 × 280 = 840 ; donc 5 kapoaka → 1 400 g.
+- `P` 1. Mettre les couples connus en tableau de correspondance.
+- `P` 2. Chercher le multiplicateur : « premier nombre × ? = second nombre ».
+- `P` 3. Tester la règle sur un autre couple (et le test du double), puis l’appliquer.
+- `P` correspondance = deux quantités liées ; proportionnelle = même multiplicateur partout (qui double fait doubler) ; la règle se déduit d’un couple et se vérifie sur un autre.
+- `P` Le savais-tu ? Les cartes géographiques sont de la proportionnalité pure : à l’échelle , chaque centimètre de papier correspond à 1 km de terrain, PARTOUT sur la carte.
+- `P` Attention : Croire que toute correspondance est proportionnelle : l’âge et la taille, le rang et la température du jour ne suivent aucun multiplicateur fixe. Avant d’appliquer la règle, faire le test du double !
+- `P` EXERCICE
+- `P` 1. Chaque sachet contient 8 bonbons. Combien de bonbons pour : a) 3 sachets ; b) 5 sachets ; d) 10 sachets ; e) 12 sachets ?
+- `P` 2. Tableau : 2 cahiers → 1 600 Ar ; 4 cahiers → 3 200 Ar. a) Quelle est la règle ? b) Prix de 7 cahiers ? d) Nombre de cahiers pour 8 000 Ar ? e) Le test du double est-il vérifié ?
+- `P` 3. Dis si la relation est proportionnelle : a) nombre de kapoaka de riz et masse de riz ; b) âge et pointure des chaussures ; d) nombre de tickets de bus et prix payé ; e) rang du jour de la semaine et pluie tombée.
+- `P` 4. Au marché, 1 kg de riz coûte 3 200 Ar. a) Combien coûtent 2 kg ? b) 5 kg ? d) 10 kg ? e) Quel est le coefficient qui relie kilogrammes et ariary ?
+- `P` 5. À la station, 2 L d’essence coûtent 12 400 Ar et 3 L coûtent 18 600 Ar. a) Quel est le prix de 1 L ? b) De 4 L (le double de 2 L) ? d) De 5 L (2 L + 3 L) ? e) Dresse le tableau des prix de 1 à 5 L.
+- `P` 6. Défi CEPE — Un scooter consomme 1,8 L d’essence pour 60 km. a) Quelle consommation pour 120 km ? b) Pour 30 km ? d) Pour 90 km ? e) Pour 100 km ?
+- `P` Correction
+- `P` 1. a) 24 ; b) 40 ; d) 80 ; e) 96.
+- `P` 2. a) × 800 ; b) 5 600 Ar ; d) 10 cahiers ; e) oui : 2 → 1 600 et 4 → 3 200, le double donne le double ✓.
+- `P` 3. a) oui ; b) non : la pointure ne double pas quand l’âge double ; d) oui ; e) non : aucune règle ne lie le jour et la pluie.
+- `P` 4. a) 6 400 Ar ; b) 16 000 Ar ; d) 32 000 Ar ; e) 3 200 : le prix d’un kilogramme.
+- `P` 5. a) 12 400 ÷ 2 = 6 200 Ar ; b) 2 × 12 400 = 24 800 Ar ; d) 12 400 + 18 600 = 31 000 Ar ; e) 6 200 ; 12 400 ; 18 600 ; 24 800 ; 31 000.
+- `P` 6. a) 120 km = 2 × 60 km : 2 × 1,8 = 3,6 L ; b) 30 km est la moitié de 60 km : 0,9 L ; d) 90 km = 60 + 30 : 1,8 + 0,9 = 2,7 L ; e) 100 km : 1,8 ÷ 60 = 0,03 L par km, donc 0,03 × 100 = 3 L.
+
+### SÉANCE 5 / 9 — LA RÈGLE DE TROIS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 5 / 9 — LA RÈGLE DE TROIS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : AlgèbreThème : Règle de trois et valeur inconnue dans un tableauTitre : La règle de troisObjectif spécifique : À la fin de la séance, l’apprenant est capable de trouver une quatrième valeur proportionnelle par la règle de trois.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Stylos, monnaie factice, tableaux de proportionnalité, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 5 / 9
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` 5 sachets de 8 bonbons : combien de bonbons ?
+- `T3C3` R.A. : 40.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à trouver une quatrième valeur proportionnelle par la règle de trois. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Au marché, 3 stylos coûtent 700 Ar. Naly en veut 9 : combien va-t-il payer ? Le vendeur n’affiche pas le prix d’UN stylo — et d’ailleurs 700 ÷ 3 ne tombe pas juste ! La règle de trois trouve la réponse sans jamais passer par le prix d’un stylo.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « La règle de trois » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 5 kapoaka de riz pèsent 1 400 g ; 8 kapoaka ? (8 × 1 400) ÷ 5 = 11 200 ÷ 5 = 2 240 g.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Pourquoi ça marche ? Deux lectures du même calcul. Lecture par paquets : 9 stylos = 3 paquets de 3 stylos → 3 × 700 = 2 100 Ar ; la règle de trois fait pareil, dans un autre ordre : (9 × 700) ÷ 3 = 9 ÷ 3 × 700. Lecture par l’unité : 700 ÷ 3 serait le prix d’un stylo, multiplié ensuite par 9 — mais en multipliant D’ABORD (9 × 700 = 6 300), on évite la division qui ne tombe pas juste, et 6 300 ÷ 3 = 2 100 tombe rond. C’est tout l’avantage de l’ordre « multiplier puis diviser ». La règle de trois exige la proportionnalité (prix au même tarif, pas de remise !) et un tableau bien posé : les quantités de même nature l’une sous l’autre, pour ne pas mélanger stylos et ariary.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, quatrième valeur = (valeur en face × nouvelle quantité) ÷ ancienne quantité ; multiplier d’abord, diviser ensuite ; exige la proportionnalité.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule par la règle de trois : a) 3 stylos → 700 Ar, 9 stylos ? b) 2 kg → 5 000 Ar, 7 kg ? d) 4 tickets → 2 000 Ar, 10 tickets ? e) 5 m → 12 000 Ar, 8 m ? Un taxi-brousse parcourt 150 km en 3 heures, à vitesse régulière. a) Pose le tableau. b) Distance en 5 heures ? d) Durée pour 250 km ? e) Vérifie b) par le test des paquets ou du double.
+- `T10C3` a) (9 × 700) ÷ 3 = 2 100 Ar ; b) (7 × 5 000) ÷ 2 = 17 500 Ar ; d) (10 × 2 000) ÷ 4 = 5 000 Ar ; e) (8 × 12 000) ÷ 5 = 19 200 Ar. a) heures 3, 5 / km 150, ? ; b) (5 × 150) ÷ 3 = 250 km ; d) (250 × 3) ÷ 150 = 5 heures ; e) 150 km en 3 h → 50 km par heure → 5 × 50 = 250 ✓.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule par la règle de trois : a) 3 stylos → 700 Ar, 9 stylos ? b) 2 kg → 5 000 Ar, 7 kg ? d) 4 tickets → 2 000 Ar, 10 tickets ? e) 5 m → 12 000 Ar, 8 m ? Puis justifie l’une de tes réponses.
+- `T11C3` a) (9 × 700) ÷ 3 = 2 100 Ar ; b) (7 × 5 000) ÷ 2 = 17 500 Ar ; d) (10 × 2 000) ÷ 4 = 5 000 Ar ; e) (8 × 12 000) ÷ 5 = 19 200 Ar. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LA RÈGLE DE TROIS
+- `P` Règle de trois et valeur inconnue dans un tableau
+- `P` La règle de trois permet de trouver une quatrième valeur quand trois valeurs proportionnelles sont connues : on multiplie, puis on divise. Pour 9 stylos sachant que 3 stylos coûtent 700 Ar, on écrit l’équation : prix = (9 × 700) ÷ 3 = 2 100 Ar.
+- `P` on paie « 9 fois le prix de 700 Ar »… mais comme 700 Ar couvre 3 stylos, on divise par 3 : multiplier par le nouveau, diviser par l’ancien.
+- `P` Exemple : 5 kapoaka de riz pèsent 1 400 g ; 8 kapoaka ? (8 × 1 400) ÷ 5 = 11 200 ÷ 5 = 2 240 g.
+- `P` 1. Poser le tableau : quantités sur une ligne, valeurs sur l’autre, l’inconnue à sa place.
+- `P` 2. Écrire l’équation : (nombre en diagonale × nombre en face) ÷ nombre restant.
+- `P` 3. Calculer en multipliant d’abord, puis vérifier par un chemin différent (paquets, double…).
+- `P` quatrième valeur = (valeur en face × nouvelle quantité) ÷ ancienne quantité ; multiplier d’abord, diviser ensuite ; exige la proportionnalité.
+- `P` Le savais-tu ? La règle de trois est l’outil quotidien des infirmiers du monde entier : « ce flacon contient 500 mg dans 10 mL ; le médecin prescrit 150 mg, combien de mL ? » — (150 × 10) ÷ 500 = 3 mL.
+- `P` Attention : Multiplier les mauvais nombres entre eux : (9 × 3) ÷ 700 mélange des stylos avec des stylos ! Dans la règle de trois, on multiplie toujours deux nombres de NATURES DIFFÉRENTES (stylos × ariary).
+- `P` EXERCICE
+- `P` 1. Calcule par la règle de trois : a) 3 stylos → 700 Ar, 9 stylos ? b) 2 kg → 5 000 Ar, 7 kg ? d) 4 tickets → 2 000 Ar, 10 tickets ? e) 5 m → 12 000 Ar, 8 m ?
+- `P` 2. Un taxi-brousse parcourt 150 km en 3 heures, à vitesse régulière. a) Pose le tableau. b) Distance en 5 heures ? d) Durée pour 250 km ? e) Vérifie b) par le test des paquets ou du double.
+- `P` 3. 6 kapoaka de riz pèsent 1 680 g. a) Écris l’équation du poids de 10 kapoaka. b) Calcule. d) Écris l’équation du nombre de kapoaka pour 840 g. e) Calcule et vérifie.
+- `P` 4. 3 cahiers coûtent 7 500 Ar. a) Quel est le prix d’un cahier ? b) De 5 cahiers ? d) De 8 cahiers ? e) Comment s’appelle la méthode utilisée ?
+- `P` 5. 4 m de fil de fer pèsent 60 g. a) Combien pèse 1 m ? b) 7 m ? d) 10 m ? e) Quelle longueur pèse 150 g ?
+- `P` 6. Défi CEPE — Pour peindre 6 m² de mur, il faut 9 L de peinture. a) Organise les données dans un tableau de proportionnalité. b) Par les produits en croix, calcule la peinture nécessaire pour 10 m². d) Quelle surface peut-on peindre avec 12 L ? e) Quel est le coefficient du tableau ?
+- `P` Correction
+- `P` 1. a) (9 × 700) ÷ 3 = 2 100 Ar ; b) (7 × 5 000) ÷ 2 = 17 500 Ar ; d) (10 × 2 000) ÷ 4 = 5 000 Ar ; e) (8 × 12 000) ÷ 5 = 19 200 Ar.
+- `P` 2. a) heures 3, 5 / km 150, ? ; b) (5 × 150) ÷ 3 = 250 km ; d) (250 × 3) ÷ 150 = 5 heures ; e) 150 km en 3 h → 50 km par heure → 5 × 50 = 250 ✓.
+- `P` 3. a) (10 × 1 680) ÷ 6 ; b) 16 800 ÷ 6 = 2 800 g ; d) (840 × 6) ÷ 1 680 ; e) 5 040 ÷ 1 680 = 3 kapoaka ; vérif : 840 = la moitié de 1 680 → la moitié de 6 = 3 ✓.
+- `P` 4. a) 7 500 ÷ 3 = 2 500 Ar ; b) 5 × 2 500 = 12 500 Ar ; d) 8 × 2 500 = 20 000 Ar ; e) la règle de trois : on passe d’abord par le prix de l’unité.
+- `P` 5. a) 60 ÷ 4 = 15 g ; b) 7 × 15 = 105 g ; d) 150 g ; e) 150 ÷ 15 = 10 m.
+- `P` 6. a) première ligne 6 et 10 (m²), deuxième ligne 9 et ? (litres) ; b) ? = (10 × 9) ÷ 6 = 90 ÷ 6 = 15 L ; d) (12 × 6) ÷ 9 = 72 ÷ 9 = 8 m² ; e) 9 ÷ 6 = 1,5 : il faut 1,5 L par m².
+
+### SÉANCE 6 / 9 — LE SENS DU SIGNE ÉGAL
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 6 / 9 — LE SENS DU SIGNE ÉGAL
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : AlgèbreThème : Égalité et équivalence entre deux expressionsTitre : Le sens du signe égalObjectif spécifique : À la fin de la séance, l’apprenant est capable de comprendre le signe égal comme une équivalence entre deux expressions et compléter des égalités simples.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Balance à plateaux (ou mobile), jetons, cartes d’expressions, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 6 / 9
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` 2 kg coûtent 5 000 Ar ; 3 kg ?
+- `T3C3` R.A. : (3 × 5 000) ÷ 2 = 7 500 Ar.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à comprendre le signe égal comme une équivalence entre deux expressions et compléter des égalités simples. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La maîtresse écrit : 7 + 5 = □ + 2. Presque toute la classe répond 12 ! Mais 7 + 5 = 12 + 2 dirait que 12 égale 14… La balance de la classe tranche : pour équilibrer 7 + 5, il faut poser 10 + 2. Le signe = ne dit pas « réponds ! », il dit « même valeur des deux côtés ».
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Le sens du signe égal » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 15 − 6 = □ + 4 : la gauche vaut 9 ; il faut □ + 4 = 9, donc □ = 5 ; contrôle : 9 = 9 ✓.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Depuis le CP, beaucoup lisent le = comme un bouton « résultat » de calculatrice : « 7 + 5 égale… 12 ! ». Cette lecture fait écrire des horreurs en chaîne comme « 7 + 5 = 12 + 3 = 15 » (faux : 7 + 5 ne vaut pas 15 !). La vraie lecture est symétrique : chaque côté est une expression, et le = certifie qu’elles pèsent pareil. D’où trois pouvoirs nouveaux. Compléter : 8 + □ = 6 + 7 → la droite pèse 13, donc □ = 5. Vérifier : 25 − 8 = 15 + 2 ? Gauche 17, droite 17 : vrai. Transformer : 99 + 46 = 100 + 45 — la compensation du calcul mental n’était qu’une égalité d’équivalence ! La balance à plateaux rend tout cela visible : on charge les deux plateaux, et l’aiguille dit la vérité.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, = signifie « même valeur », pas « voici le résultat » ; on calcule chaque côté séparément pour vérifier ou compléter une égalité.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Vraies ou fausses ? a) 8 + 6 = 10 + 4 ; b) 20 − 5 = 10 + 10 ; d) 3 × 6 = 9 × 2 ; e) 45 ÷ 5 = 3 × 3. Complète : a) 9 + □ = 7 + 8 ; b) □ − 4 = 10 + 6 ; d) 5 × □ = 40 ÷ 2 ; e) 12 + 13 = □ × 5.
+- `T10C3` a) vraie (14 = 14) ; b) fausse (15 ≠ 20) ; d) vraie (18 = 18) ; e) vraie (9 = 9). a) 6 ; b) 20 ; d) 4 ; e) 5.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Vraies ou fausses ? a) 8 + 6 = 10 + 4 ; b) 20 − 5 = 10 + 10 ; d) 3 × 6 = 9 × 2 ; e) 45 ÷ 5 = 3 × 3. Puis justifie l’une de tes réponses.
+- `T11C3` a) vraie (14 = 14) ; b) fausse (15 ≠ 20) ; d) vraie (18 = 18) ; e) vraie (9 = 9). La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LE SENS DU SIGNE ÉGAL
+- `P` Égalité et équivalence entre deux expressions
+- `P` Le signe égal (=) exprime une équivalence : il affirme que les expressions écrites à sa gauche et à sa droite ont exactement la même valeur. Deux expressions différentes peuvent être équivalentes : 7 + 5 = 10 + 2, car les deux valent 12.
+- `P` le = est une balance en équilibre : ce qu’il y a à gauche pèse exactement autant que ce qu’il y a à droite.
+- `P` Exemple : 15 − 6 = □ + 4 : la gauche vaut 9 ; il faut □ + 4 = 9, donc □ = 5 ; contrôle : 9 = 9 ✓.
+- `P` 1. Calculer la valeur du côté complet de l’égalité.
+- `P` 2. Chercher ce qui manque de l’autre côté pour atteindre la même valeur.
+- `P` 3. Vérifier en recalculant LES DEUX côtés séparément.
+- `P` = signifie « même valeur », pas « voici le résultat » ; on calcule chaque côté séparément pour vérifier ou compléter une égalité.
+- `P` Le savais-tu ? Le signe = a été inventé en 1557 par le Gallois Robert Recorde, qui dessina deux petits traits parallèles « parce que rien n’est plus pareil que deux droites jumelles ».
+- `P` Attention : Écrire les calculs en chaîne : « 7 + 5 = 12 + 3 = 15 ». La première égalité devient fausse ! Chaque signe = doit être vrai tout seul : on écrit 7 + 5 = 12, PUIS 12 + 3 = 15.
+- `P` EXERCICE
+- `P` 1. Vraies ou fausses ? a) 8 + 6 = 10 + 4 ; b) 20 − 5 = 10 + 10 ; d) 3 × 6 = 9 × 2 ; e) 45 ÷ 5 = 3 × 3.
+- `P` 2. Complète : a) 9 + □ = 7 + 8 ; b) □ − 4 = 10 + 6 ; d) 5 × □ = 40 ÷ 2 ; e) 12 + 13 = □ × 5.
+- `P` 3. a) Explique pourquoi 7 + 5 = □ + 2 ne se complète pas par 12. b) Donne la bonne valeur. d) Écris une égalité équivalente à 99 + 46 plus facile à calculer. e) Invente une égalité vraie avec deux expressions différentes des deux côtés.
+- `P` 4. Vrai ou faux ? a) 8 + 5 = 13 ; b) 13 = 8 + 5 ; d) 8 + 5 = 10 + 3 ; e) 8 + 5 = 13 + 2.
+- `P` 5. Complète pour que l’égalité soit vraie : a) 25 + … = 40 ; b) 7 × … = 56 ; d) 60 − … = 35 ; e) … ÷ 4 = 12.
+- `P` 6. Défi CEPE — Une balance est en équilibre : à gauche, 3 sacs identiques et un poids de 2 kg ; à droite, un poids de 14 kg. a) Écris l’égalité correspondante. b) Que pèsent les 3 sacs ensemble ? d) Que pèse un sac ? e) Vérifie l’équilibre par un calcul.
+- `P` Correction
+- `P` 1. a) vraie (14 = 14) ; b) fausse (15 ≠ 20) ; d) vraie (18 = 18) ; e) vraie (9 = 9).
+- `P` 2. a) 6 ; b) 20 ; d) 4 ; e) 5.
+- `P` 3. a) 12 + 2 vaudrait 14, mais la gauche vaut 12 : la balance pencherait ; b) □ = 10 ; d) 100 + 45 = 145 ; e) par exemple 6 × 4 = 30 − 6.
+- `P` 4. a) vrai ; b) vrai : une égalité se lit dans les deux sens ; d) vrai : 13 = 13 ; e) faux : 13 n’est pas égal à 15.
+- `P` 5. a) 15 ; b) 8 ; d) 25 ; e) 48.
+- `P` 6. a) 3 × ? + 2 = 14 ; b) 14 − 2 = 12 kg ; d) 12 ÷ 3 = 4 kg ; e) 3 × 4 + 2 = 14 : la balance est bien en équilibre.
+
+### SÉANCE 7 / 9 — TROUVER LA VALEUR INCONNUE
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 7 / 9 — TROUVER LA VALEUR INCONNUE
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : AlgèbreThème : Équations simples et essais systématiquesTitre : Trouver la valeur inconnueObjectif spécifique : À la fin de la séance, l’apprenant est capable de trouver la valeur inconnue d’une équation simple par essais systématiques et prédire le 5ᵉ, 10ᵉ et 15ᵉ terme d’une suite.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Jetons, cartes-équations, tableaux de valeurs, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 7 / 9
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Complète : 14 + □ = 9 + 11.
+- `T3C3` R.A. : □ = 6 (les deux côtés valent 20).
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à trouver la valeur inconnue d’une équation simple par essais systématiques et prédire le 5ᵉ, 10ᵉ et 15ᵉ terme d’une suite. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Le cahier de comptes de la boutique affiche : 897 + □ = 917. La tache d’encre a mangé un nombre ! Hanta essaie 10 : trop petit. Puis 30 : trop grand. Puis 20 : exact ! Trois essais bien guidés, et le nombre caché est retrouvé.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Trouver la valeur inconnue » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` □ × 6 = 84 : essai 10 → 60, trop petit ; 15 → 90, trop grand ; 14 → 84 ✓ ; déduction : 84 ÷ 6 = 14 ✓.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Les essais systématiques ne sont pas des essais au hasard : chaque réponse ORIENTE le suivant. Pour 897 + □ = 917 : essai 10 → 907, trop petit, on monte ; essai 30 → 927, trop grand, on descend ; essai 20 → 917 ✓. On peut aussi raisonner par déduction avec l’opération inverse : □ = 917 − 897 = 20 — les deux chemins mènent au même trésor, et l’un vérifie l’autre. Le programme donne les trois visages de l’équation : 897 + □ = 917 (□ = 20), 897 − □ = 847 (□ = 50), 897 ÷ □ = 299 (□ = 3). Même jeu pour prédire les termes lointains d’une suite : avec la relation « quantité = 4 × rang », le 5ᵉ terme vaut 20, le 10ᵉ vaut 40, le 15ᵉ vaut 60 — la formule prédit l’avenir de la suite sans construire une seule figure. Toujours finir par la VÉRIFICATION : remplacer l’inconnue par la valeur trouvée et contrôler l’égalité.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, équation = égalité à trou ; essais ordonnés (trop grand / trop petit) ou opération inverse ; prédiction des termes par la relation ; vérifier en remplaçant.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Trouve l’inconnue par essais systématiques : a) 345 + □ = 400 ; b) 897 − □ = 847 ; d) □ × 7 = 91 ; e) 897 ÷ □ = 299. Trouve l’inconnue et vérifie : a) □ + 268 = 500 ; b) 6 × □ = 150 ; d) □ − 75 = 125 ; e) 240 ÷ □ = 8.
+- `T10C3` a) 55 (345 + 55 = 400 ✓) ; b) 50 (897 − 50 = 847 ✓) ; d) 13 (13 × 7 = 91 ✓) ; e) 3 (897 ÷ 3 = 299 ✓). a) 232 ; b) 25 ; d) 200 ; e) 30 — chaque solution vérifiée en remplaçant.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Trouve l’inconnue par essais systématiques : a) 345 + □ = 400 ; b) 897 − □ = 847 ; d) □ × 7 = 91 ; e) 897 ÷ □ = 299. Puis justifie l’une de tes réponses.
+- `T11C3` a) 55 (345 + 55 = 400 ✓) ; b) 50 (897 − 50 = 847 ✓) ; d) 13 (13 × 7 = 91 ✓) ; e) 3 (897 ÷ 3 = 299 ✓). La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` TROUVER LA VALEUR INCONNUE
+- `P` Équations simples et essais systématiques
+- `P` Une équation est une égalité qui comporte une valeur inconnue, souvent notée par une case vide ou une lettre. Résoudre l’équation, c’est trouver la valeur de l’inconnue qui rend l’égalité vraie. Les essais systématiques consistent à essayer des valeurs ordonnées, à comparer le résultat au but, et à resserrer jusqu’à la solution.
+- `P` on cherche le nombre caché en jouant au « trop grand / trop petit », et chaque essai rapproche de la cible.
+- `P` Exemple : □ × 6 = 84 : essai 10 → 60, trop petit ; 15 → 90, trop grand ; 14 → 84 ✓ ; déduction : 84 ÷ 6 = 14 ✓.
+- `P` 1. Essayer une valeur raisonnable et calculer le côté de l’inconnue.
+- `P` 2. Comparer au but : trop grand → descendre ; trop petit → monter ; recommencer.
+- `P` 3. Vérifier la solution en remplaçant l’inconnue, et croiser avec l’opération inverse.
+- `P` équation = égalité à trou ; essais ordonnés (trop grand / trop petit) ou opération inverse ; prédiction des termes par la relation ; vérifier en remplaçant.
+- `P` Le savais-tu ? Ta méthode du « trop grand / trop petit » porte un nom savant : la recherche dichotomique.
+- `P` Attention : S’arrêter au premier essai « pas trop loin » : 897 + 19 = 916 n’est PAS 917 ! Une équation n’accepte pas l’à-peu-près : on continue jusqu’à l’égalité exacte, puis on vérifie.
+- `P` EXERCICE
+- `P` 1. Trouve l’inconnue par essais systématiques : a) 345 + □ = 400 ; b) 897 − □ = 847 ; d) □ × 7 = 91 ; e) 897 ÷ □ = 299.
+- `P` 2. Trouve l’inconnue et vérifie : a) □ + 268 = 500 ; b) 6 × □ = 150 ; d) □ − 75 = 125 ; e) 240 ÷ □ = 8.
+- `P` 3. La suite a pour relation « quantité = 4 × rang ». a) Prédis le 5ᵉ terme. b) Le 10ᵉ terme. d) Le 15ᵉ terme. e) Quel rang a le terme 100 ?
+- `P` 4. Trouve la valeur cachée : a) ? + 17 = 40 ; b) ? − 9 = 25 ; d) 6 × ? = 54 ; e) ? ÷ 5 = 8.
+- `P` 5. a) Trouve ? dans 125 + ? = 300. b) Trouve ? dans 4 × ? + 10 = 50. d) Explique ta démarche pour la question b). e) Invente une égalité à trou dont la solution est 7.
+- `P` 6. Défi CEPE — Rasoa achète 4 kapoaka de riz au même prix et une boîte d’allumettes à 500 Ar ; elle paie 4 500 Ar en tout. a) Écris l’égalité avec un ?. b) Que coûtent les 4 kapoaka ensemble ? d) Quel est le prix d’un kapoaka ? e) Vérifie ta réponse.
+- `P` Correction
+- `P` 1. a) 55 (345 + 55 = 400 ✓) ; b) 50 (897 − 50 = 847 ✓) ; d) 13 (13 × 7 = 91 ✓) ; e) 3 (897 ÷ 3 = 299 ✓).
+- `P` 2. a) 232 ; b) 25 ; d) 200 ; e) 30 — chaque solution vérifiée en remplaçant.
+- `P` 3. a) 20 ; b) 40 ; d) 60 ; e) 100 ÷ 4 = 25 : le rang 25.
+- `P` 4. a) 23 ; b) 34 ; d) 9 ; e) 40.
+- `P` 5. a) 175 ; b) 10 ; d) on retire d’abord 10 des deux côtés (4 × ? = 40), puis on divise par 4 ; e) par exemple 3 × ? + 1 = 22.
+- `P` 6. a) 4 × ? + 500 = 4 500 ; b) 4 500 − 500 = 4 000 Ar ; d) 4 000 ÷ 4 = 1 000 Ar ; e) 4 × 1 000 + 500 = 4 500 Ar : c’est juste.
+
+### RÉVISION DE L’UNITÉ III
+
+- Indicateurs : 14 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : non.
+- `P` RÉVISION DE L’UNITÉ III
+- `P` Tableau de synthèse
+- `T1C1` Notion
+- `T1C2` À savoir
+- `T1C3` À savoir faire
+- `T2C1` Suites et régularités
+- `T2C2` Motif répété ou croissant ; la règle se dit avec des mots précis
+- `T2C3` Décrire et prolonger une suite
+- `T3C1` Rang et terme
+- `T3C2` Rang = position ; relation rang → quantité = formule-raccourci
+- `T3C3` Calculer un terme lointain sans tout construire
+- `T4C1` Tableau de valeurs
+- `T4C2` Deux lignes en face à face ; règle en colonne, pas en ligne
+- `T4C3` Construire, lire et compléter un tableau
+- `T5C1` Proportionnalité
+- `T5C2` Même multiplicateur partout ; test du double
+- `T5C3` Reconnaître et utiliser la règle d’une relation
+- `T6C1` Règle de trois
+- `T6C2` (nouvelle quantité × valeur) ÷ ancienne quantité
+- `T6C3` Trouver une quatrième valeur proportionnelle
+- `T7C1` Égalité et inconnue
+- `T7C2` = signifie « même valeur » ; essais systématiques et opération inverse
+- `T7C3` Compléter une égalité, résoudre une équation
+- `P` Questions de révision
+- `P` 1. Suite 7, 14, 21, 28… : donne la règle « pas à pas », la relation rang → quantité, et le 15ᵉ terme.
+- `P` 2. Construis le tableau de valeurs des prix de 1 à 4 savons à 1 200 Ar, et donne la règle.
+- `P` 3. 4 cahiers coûtent 3 600 Ar : prix de 7 cahiers par la règle de trois ?
+- `P` 4. Vraie ou fausse : 36 ÷ 4 = 3 × 3 ? Puis complète : 25 + □ = 18 + 19.
+- `P` 5. Résous par essais systématiques : 768 ÷ □ = 256, puis vérifie.
+- `P` Réponses attendues
+- `P` 1. Pas à pas « + 7 » ; relation « 7 × rang » ; 15ᵉ terme : 7 × 15 = 105.
+- `P` 2. 1 → 1 200 ; 2 → 2 400 ; 3 → 3 600 ; 4 → 4 800 ; règle : prix = 1 200 × nombre de savons.
+- `P` 3. (7 × 3 600) ÷ 4 = 25 200 ÷ 4 = 6 300 Ar.
+- `P` 4. Vraie (9 = 9) ; □ = 12 (les deux côtés valent 37).
+- `P` 5. □ = 3 : essais 2 → 384 trop grand… 4 → 192 trop petit… 3 → 256 ✓ ; vérification 256 × 3 = 768 ✓.
+
+### SUJET D’EXAMEN FORMAT CEPE — UNITÉ III
+
+- Indicateurs : 33 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SUJET D’EXAMEN FORMAT CEPE — UNITÉ III
+- `P` Barème : 20 points. Présente clairement tous les calculs et toutes les constructions.
+- `P` Exercice 1 — 4 points. Suites. On considère la suite 6, 12, 18, 24… a) Donne la règle « pas à pas ». b) Donne la relation entre le rang et le terme. d) Calcule le 10ᵉ terme. e) Quel est le rang du terme 54 ?
+- `P` Exercice 2 — 4 points. Tableau de valeurs. Un sachet contient 5 bonbons. a) Construis le tableau pour 1, 2, 3 et 4 sachets. b) Donne la règle de la relation. d) Combien de bonbons dans 9 sachets ? e) Combien de sachets pour 65 bonbons ?
+- `P` Exercice 3 — 4 points. Règle de trois. Au marché, 3 ananas coûtent 4 500 Ar. a) Écris l’équation du prix de 7 ananas. b) Calcule ce prix. d) Combien d’ananas pour 12 000 Ar ? e) Vérifie d) par un chemin différent.
+- `P` Exercice 4 — 4 points. Égalités. a) L’égalité 14 + 9 = 20 + 3 est-elle vraie ? Justifie. b) Complète : 35 − □ = 16 + 9. d) Complète : □ × 8 = 100 − 36. e) Pourquoi est-il faux d’écrire « 8 + 7 = 15 + 5 = 20 » ?
+- `P` Exercice 5 — 4 points. Problème. Pour la kermesse, chaque table reçoit 4 nappes en papier. a) Construis le tableau de valeurs pour 2, 5 et 10 tables. b) Quelle est la relation ? d) Le stock est de 72 nappes : combien de tables peut-on couvrir ? Écris l’équation et résous-la. e) Prédis le nombre de nappes pour le 15ᵉ rang du tableau (15 tables) et vérifie avec la relation.
+- `P` CORRIGÉ ET BARÈME
+- `P` Exercice 1. a) « + 6 » ; b) terme = 6 × rang ; d) 60 ; e) 54 ÷ 6 = 9 : rang 9. Un point par item.
+- `P` Exercice 2. a) 1 → 5 ; 2 → 10 ; 3 → 15 ; 4 → 20 ; b) bonbons = 5 × sachets ; d) 45 ; e) 65 ÷ 5 = 13 sachets. Un point par item.
+- `P` Exercice 3. a) (7 × 4 500) ÷ 3 ; b) 31 500 ÷ 3 = 10 500 Ar ; d) (12 000 × 3) ÷ 4 500 = 36 000 ÷ 4 500 = 8 ananas ; e) 12 000 ÷ 4 500 ne tombe pas juste, mais 8 ananas = 2 lots de 3 + 2… autre chemin : 6 ananas → 9 000 Ar, 2 ananas → 3 000 Ar, total 12 000 Ar ✓. Un point par item.
+- `P` Exercice 4. a) vraie : 23 = 23 ; b) □ = 10 ; d) □ = 8 ; e) parce que 8 + 7 = 15 est vrai mais « 15 + 5 = 20 » collé derrière fait dire 8 + 7 = 20, qui est faux : chaque = doit être vrai séparément. Un point par item.
+- `P` Exercice 5. a) 2 → 8 ; 5 → 20 ; 10 → 40 ; b) nappes = 4 × tables ; d) 4 × □ = 72, □ = 18 tables ; e) 4 × 15 = 60 nappes. Un point par item.
+- `P` UNITÉ IV
+- `P` GÉOMÉTRIE
+- `P` Sous-discipline du programme de Mathématiques T5
+- `P` Résultat d’apprentissage général
+- `P` explorer, représenter, composer et décomposer les formes géométriques pour en comprendre les propriétés.
+- `P` Valeurs à véhiculer
+- `P` estime de soi et responsabilité.
+- `P` UNITÉ IV — GÉOMÉTRIE : DANS CETTE UNITÉ
+- `P` Leçon 1 — Les angles : aigu, droit, obtus
+- `P` Leçon 2 — Classer les triangles selon leurs côtés
+- `P` Leçon 3 — Classer les triangles selon leurs angles
+- `P` Leçon 4 — Les propriétés des triangles : côtés, sommets, angles
+- `P` Leçon 5 — Polygones et quadrilatères
+- `P` Leçon 6 — Tracer avec les outils : règle, équerre, compas
+- `P` Leçon 7 — Reproduire une figure
+- `P` Leçon 8 — Décomposer un quadrilatère en triangles
+- `P` Leçon 9 — Composer de nouvelles figures par assemblage
+- `P` Révision de l’unité IV
+- `P` Sujet d’examen format CEPE
+- `P` Tableau de bord
+- `T1C1` Leçons
+- `T1C2` Apprentissages
+- `T1C3` Révision
+- `T1C4` Examen
+- `T2C1` 11
+- `T2C2` 9
+- `T2C3` 1
+- `T2C4` 1
+
+### SÉANCE 1 / 11 — LES ANGLES : AIGU, DROIT, OBTUS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 1 / 11 — LES ANGLES : AIGU, DROIT, OBTUS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : GéométrieThème : Types d’anglesTitre : Les angles : aigu, droit, obtusObjectif spécifique : À la fin de la séance, l’apprenant est capable de reconnaître et nommer les angles aigus, droits et obtus à l’aide de l’équerre.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Équerre, équerres en carton pliées, portes et cahiers de la classe, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 1 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Résous : □ × 4 = 60.
+- `T3C3` R.A. : □ = 15 (vérification : 15 × 4 = 60).
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à reconnaître et nommer les angles aigus, droits et obtus à l’aide de l’équerre. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La porte de la classe s’ouvre peu à peu : à peine entrouverte, l’écart est petit ; ouverte « bien carrée », elle forme le coin parfait du mur ; poussée à fond, l’écart devient très large. Cette ouverture qui change de taille, c’est la toute première rencontre avec les ANGLES.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Les angles : aigu, droit, obtus » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Les aiguilles d’une montre à 3 heures forment un angle droit ; à 2 heures, un angle aigu ; à 4 heures, un angle obtus.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La grande découverte : l’angle ne dépend PAS de la longueur des traits ! Un angle dessiné avec des côtés courts peut être plus ouvert qu’un angle aux côtés immenses — seul l’écartement compte, pas la longueur des demi-droites. Pour juger, on fabrique le juge officiel : l’équerre (ou son équerre en carton, obtenue en pliant une feuille deux fois). On pose le coin droit sur le sommet, un bord le long d’un côté : si l’autre côté de l’angle reste CACHÉ sous l’équerre, l’angle est aigu ; s’il dépasse, il est obtus ; s’il suit exactement le bord, il est droit. Les angles droits peuplent la classe : coins du cahier, du tableau, carreaux de la fenêtre — la chasse aux angles est ouverte.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, angle = écartement autour d’un sommet ; l’équerre juge : caché = aigu, exact = droit, dépasse = obtus ; la longueur des côtés ne compte pas.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Observe les aiguilles d’une horloge. L’angle est-il aigu, droit ou obtus à : a) 3 heures ; b) 1 heure ; d) 5 heures ; e) 6 heures (que dire de cet angle ?) ? Dans la classe, trouve et classe : a) deux angles droits ; b) un angle aigu ; d) un angle obtus ; e) explique comment l’équerre t’a aidé pour l’un d’eux.
+- `T10C3` a) droit ; b) aigu ; d) obtus ; e) à 6 h, les aiguilles sont alignées : angle plat, encore plus ouvert que l’obtus. a) coins du cahier, du tableau… ; b) par exemple l’ouverture du compas ; d) par exemple la porte grande ouverte ; e) coin de l’équerre sur le sommet : caché = aigu, dépasse = obtus.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Observe les aiguilles d’une horloge. L’angle est-il aigu, droit ou obtus à : a) 3 heures ; b) 1 heure ; d) 5 heures ; e) 6 heures (que dire de cet angle ?) ? Puis justifie l’une de tes réponses.
+- `T11C3` a) droit ; b) aigu ; d) obtus ; e) à 6 h, les aiguilles sont alignées : angle plat, encore plus ouvert que l’obtus. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LES ANGLES : AIGU, DROIT, OBTUS
+- `P` Types d’angles
+- `P` Un angle est l’écartement entre deux demi-droites qui partent du même point, appelé sommet de l’angle. L’angle droit est l’angle du coin de l’équerre ; un angle aigu est plus fermé que l’angle droit ; un angle obtus est plus ouvert que l’angle droit (sans être plat).
+- `P` un angle, c’est une ouverture de porte : aigu = entrouverte, droit = ouverte bien carrée, obtus = grande ouverte.
+- `P` Exemple : Les aiguilles d’une montre à 3 heures forment un angle droit ; à 2 heures, un angle aigu ; à 4 heures, un angle obtus.
+- `P` 1. Repérer le sommet et les deux côtés de l’angle.
+- `P` 2. Poser le coin droit de l’équerre sur le sommet, un bord le long d’un côté.
+- `P` 3. Conclure : côté caché → aigu ; côté confondu → droit ; côté qui dépasse → obtus.
+- `P` angle = écartement autour d’un sommet ; l’équerre juge : caché = aigu, exact = droit, dépasse = obtus ; la longueur des côtés ne compte pas.
+- `P` Le savais-tu ? Les maçons de l’Égypte ancienne fabriquaient leurs angles droits avec une simple corde à 13 nœuds : tendue en triangle de côtés 3, 4 et 5 intervalles, elle forme un angle droit parfait ! Cette corde magique a dressé les pyramides… et les maçons malgaches utilisent encore la même astuce aujourd’hui.
+- `P` Attention : Juger un angle à la longueur de ses traits : un angle aux grands côtés n’est pas « plus grand » ! Deux traits de 3 cm peuvent former un angle obtus, deux traits de 10 cm un angle aigu.
+- `P` EXERCICE
+- `P` 1. Observe les aiguilles d’une horloge. L’angle est-il aigu, droit ou obtus à : a) 3 heures ; b) 1 heure ; d) 5 heures ; e) 6 heures (que dire de cet angle ?) ?
+- `P` 2. Dans la classe, trouve et classe : a) deux angles droits ; b) un angle aigu ; d) un angle obtus ; e) explique comment l’équerre t’a aidé pour l’un d’eux.
+- `P` 3. Trace : a) un angle aigu ; b) un angle droit à l’équerre ; d) un angle obtus ; e) un angle aigu avec des côtés PLUS LONGS que ceux de ton angle obtus — que remarques-tu ?
+- `P` 4. Donne la nature de chaque angle : a) 45° ; b) 90° ; d) 130° ; e) 180°.
+- `P` 5. a) Comment code-t-on un angle droit sur une figure ? b) Comment note-t-on un angle de sommet O dont les côtés passent par A et B ? d) Que mesure un angle nul ? e) Que mesure un angle plein ?
+- `P` 6. Défi CEPE — Observe les aiguilles d’une montre, comme sur un démonstrateur d’angles. a) Quel angle forment-elles à 3 h ? Donne sa nature. b) À 6 h ? d) À 1 h ? e) Un angle aigu peut-il contenir un angle droit ? Justifie.
+- `P` Correction
+- `P` 1. a) droit ; b) aigu ; d) obtus ; e) à 6 h, les aiguilles sont alignées : angle plat, encore plus ouvert que l’obtus.
+- `P` 2. a) coins du cahier, du tableau… ; b) par exemple l’ouverture du compas ; d) par exemple la porte grande ouverte ; e) coin de l’équerre sur le sommet : caché = aigu, dépasse = obtus.
+- `P` 3. a, b, d) tracés corrects à l’équerre et à la règle ; e) l’angle aux longs côtés reste aigu : la longueur des côtés ne change pas l’ouverture.
+- `P` 4. a) aigu ; b) droit ; d) obtus ; e) plat.
+- `P` 5. a) par un petit carré au sommet ; b) AÔB : la lettre du sommet s’écrit toujours au centre, sous le chapeau ; d) 0° : ses deux côtés sont confondus ; e) 360° : un tour complet.
+- `P` 6. a) 90° : angle droit ; b) 180° : angle plat ; d) 30° : angle aigu ; e) non : un angle aigu mesure moins de 90°, c’est lui qui tient dans l’angle droit, jamais l’inverse.
+
+### SÉANCE 2 / 11 — CLASSER LES TRIANGLES SELON LEURS CÔTÉS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 2 / 11 — CLASSER LES TRIANGLES SELON LEURS CÔTÉS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : GéométrieThème : Triangle équilatéral, isocèle, scalèneTitre : Classer les triangles selon leurs côtésObjectif spécifique : À la fin de la séance, l’apprenant est capable de classer les triangles selon la longueur de leurs côtés : équilatéral, isocèle, scalène.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Pailles, bâtonnets, allumettes, règle graduée, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 2 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Un angle plus ouvert que l’angle droit s’appelle… ?
+- `T3C3` R.A. : Un angle obtus.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à classer les triangles selon la longueur de leurs côtés : équilatéral, isocèle, scalène. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Avec des pailles de 8 cm, 8 cm et 8 cm, Vola construit un triangle parfaitement régulier. Hery prend 8, 8 et 5 : son triangle a deux côtés jumeaux. Naly prend 8, 6 et 5 : aucun côté pareil ! Trois triangles, trois familles — et chaque famille a son nom.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Classer les triangles selon leurs côtés » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Côtés 6 cm, 6 cm, 9 cm : deux jumeaux → triangle isocèle ; côtés 7, 5 et 4 cm : aucun jumeau → scalène.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le classement se fait à la règle graduée : on mesure les trois côtés et on compte les égalités. Sur les figures, les géomètres marquent les côtés égaux par de petits traits identiques — un code secret international : les côtés qui portent le même nombre de traits sont jumeaux, même sans mesurer. Deux subtilités font les bons géomètres. D’abord, l’équilatéral est un isocèle de luxe : il a bien « au moins deux » côtés égaux — mais à notre niveau, on donne à chaque triangle le nom de sa famille la plus précise. Ensuite, trois pailles ne font pas toujours un triangle ! Avec 10, 4 et 3 cm, les deux petites pailles, même mises bout à bout (7 cm), n’atteignent pas la grande : le triangle refuse de se fermer. Les deux petits côtés réunis doivent dépasser le grand.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, mesurer les 3 côtés ; 3 égaux = équilatéral, 2 égaux = isocèle, 0 égal = scalène ; petits traits = côtés jumeaux ; les 2 petits côtés réunis doivent dépasser le grand.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Classe les triangles de côtés : a) 5, 5, 5 cm ; b) 7, 7, 4 cm ; d) 9, 6, 5 cm ; e) 12, 12, 12 cm. Vrai ou faux ? a) Un triangle équilatéral a trois côtés égaux. b) Un triangle isocèle a trois côtés différents. d) Un triangle scalène n’a aucun côté égal. e) Des côtés 10, 4 et 3 cm peuvent former un triangle.
+- `T10C3` a) équilatéral ; b) isocèle ; d) scalène ; e) équilatéral. a) vrai ; b) faux : il en a deux égaux ; d) vrai ; e) faux : 4 + 3 = 7 < 10, le triangle ne se ferme pas.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Classe les triangles de côtés : a) 5, 5, 5 cm ; b) 7, 7, 4 cm ; d) 9, 6, 5 cm ; e) 12, 12, 12 cm. Puis justifie l’une de tes réponses.
+- `T11C3` a) équilatéral ; b) isocèle ; d) scalène ; e) équilatéral. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` CLASSER LES TRIANGLES SELON LEURS CÔTÉS
+- `P` Triangle équilatéral, isocèle, scalène
+- `P` On classe les triangles selon leurs côtés : le triangle équilatéral a ses trois côtés de même longueur ; le triangle isocèle a deux côtés de même longueur ; le triangle scalène (ou quelconque) a ses trois côtés de longueurs différentes.
+- `P` équilatéral = trois jumeaux ; isocèle = deux jumeaux ; scalène = aucun jumeau.
+- `P` Exemple : Côtés 6 cm, 6 cm, 9 cm : deux jumeaux → triangle isocèle ; côtés 7, 5 et 4 cm : aucun jumeau → scalène.
+- `P` 1. Mesurer les trois côtés à la règle (ou comparer les traits de la figure).
+- `P` 2. Compter les côtés égaux : trois, deux ou aucun.
+- `P` 3. Nommer la famille : équilatéral, isocèle ou scalène.
+- `P` mesurer les 3 côtés ; 3 égaux = équilatéral, 2 égaux = isocèle, 0 égal = scalène ; petits traits = côtés jumeaux ; les 2 petits côtés réunis doivent dépasser le grand.
+- `P` Le savais-tu ? Le triangle équilatéral est si parfait qu’on le retrouve partout : dans le panneau « cédez le passage », dans les alvéoles que les abeilles assemblent, et dans les fermes des ponts métalliques.
+- `P` Attention : Classer « à l’œil » : un triangle peut sembler équilatéral alors que ses côtés font 8 ; 8 et 7,5 cm ! La règle graduée est seule juge — ou les petits traits de la figure.
+- `P` EXERCICE
+- `P` 1. Classe les triangles de côtés : a) 5, 5, 5 cm ; b) 7, 7, 4 cm ; d) 9, 6, 5 cm ; e) 12, 12, 12 cm.
+- `P` 2. Vrai ou faux ? a) Un triangle équilatéral a trois côtés égaux. b) Un triangle isocèle a trois côtés différents. d) Un triangle scalène n’a aucun côté égal. e) Des côtés 10, 4 et 3 cm peuvent former un triangle.
+- `P` 3. Avec des pailles : a) propose trois longueurs pour un isocèle ; b) pour un scalène ; d) vérifie que tes trois longueurs du b) peuvent fermer un triangle ; e) donne trois longueurs qui NE FERMENT PAS un triangle et explique.
+- `P` 4. Classe chaque triangle selon ses côtés : a) 5 cm, 5 cm, 5 cm ; b) 6 cm, 6 cm, 4 cm ; d) 3 cm, 4 cm, 5 cm ; e) 7 cm, 7 cm, 7 cm.
+- `P` 5. Un triangle isocèle a un périmètre de 20 cm et sa base mesure 6 cm. a) Que vaut la somme des deux autres côtés ? b) Combien mesure chacun ? d) Ce triangle peut-il être équilatéral ? e) Dessine-le à main levée en codant les côtés égaux.
+- `P` 6. Défi CEPE — Vrai ou faux ? Justifie : a) tout triangle équilatéral est aussi isocèle ; b) un triangle peut avoir des côtés de 2 cm, 3 cm et 8 cm ; d) un triangle quelconque (scalène) peut avoir deux côtés égaux ; e) un triangle isocèle a forcément trois côtés égaux.
+- `P` Correction
+- `P` 1. a) équilatéral ; b) isocèle ; d) scalène ; e) équilatéral.
+- `P` 2. a) vrai ; b) faux : il en a deux égaux ; d) vrai ; e) faux : 4 + 3 = 7 < 10, le triangle ne se ferme pas.
+- `P` 3. a) par exemple 6, 6, 4 ; b) par exemple 7, 5, 4 ; d) 5 + 4 = 9 > 7 ✓ ; e) par exemple 12, 5, 4 : 5 + 4 = 9 < 12, les petits côtés n’atteignent pas le grand.
+- `P` 4. a) équilatéral ; b) isocèle ; d) scalène (quelconque) ; e) équilatéral.
+- `P` 5. a) 20 − 6 = 14 cm ; b) 14 ÷ 2 = 7 cm chacun ; d) non : il faudrait 6 cm partout, soit un périmètre de 18 cm et non 20 cm ; e) croquis avec deux petits traits sur les côtés de 7 cm.
+- `P` 6. a) vrai : il possède bien au moins deux côtés égaux ; b) faux : 2 + 3 = 5 < 8, les deux petits côtés ne peuvent pas rejoindre les extrémités du grand ; d) faux : scalène signifie justement trois côtés tous différents ; e) faux : deux côtés égaux suffisent.
+
+### SÉANCE 3 / 11 — CLASSER LES TRIANGLES SELON LEURS ANGLES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 3 / 11 — CLASSER LES TRIANGLES SELON LEURS ANGLES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : GéométrieThème : Triangle rectangle, angles aigus, angle obtusTitre : Classer les triangles selon leurs anglesObjectif spécifique : À la fin de la séance, l’apprenant est capable de classer les triangles selon leurs angles, en particulier reconnaître le triangle rectangle.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Équerre, triangles en carton, règle, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 3 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Côtés 9, 9 et 9 cm : quelle famille de triangle ?
+- `T3C3` R.A. : Équilatéral.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à classer les triangles selon leurs angles, en particulier reconnaître le triangle rectangle. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Sur le chantier, le charpentier taille les fermes du toit : « celle-ci porte un angle droit, parfaite pour le coin du mur ! Celle-là est toute en angles pointus ; et cette troisième a un angle grand ouvert. » Le charpentier vient de classer ses triangles… par leurs angles.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Classer les triangles selon leurs angles » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Un triangle de côtés 3, 4 et 5 cm : l’équerre révèle un angle droit entre les côtés 3 et 4 → triangle rectangle (et scalène).
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Pourquoi « un seul » angle droit ou obtus ? Essaie d’en dessiner deux : les deux côtés s’enfuient sans jamais se refermer ! Un triangle ne peut loger qu’UN angle droit ou UN angle obtus — les deux autres angles sont forcément aigus. C’est pour cela qu’un seul contrôle à l’équerre peut suffire à baptiser le triangle. Les deux classements se croisent : un triangle de côtés 5, 5 et 7 cm avec un angle droit est à la fois ISOCÈLE (côtés) et RECTANGLE (angles) — on dit « triangle rectangle isocèle », moitié exacte d’un carré coupé par sa diagonale. Le triangle rectangle est le préféré des bâtisseurs : son angle droit épouse les coins des murs, et la moitié d’un rectangle, c’est toujours lui.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, rectangle = un angle droit ; sinon : trois angles aigus, ou un angle obtus ; au plus UN droit ou UN obtus par triangle ; les deux classements se combinent.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Classe selon les angles (teste à l’équerre sur tes tracés) : a) un triangle avec un coin de cahier ; b) un triangle tout pointu ; d) un triangle avec un angle de porte grande ouverte ; e) la moitié d’un carré coupé par sa diagonale. Vrai ou faux ? a) Un triangle peut avoir deux angles droits. b) Un triangle rectangle a exactement un angle droit. d) Un triangle peut être à la fois isocèle et rectangle. e) Un triangle à angle obtus a ses deux autres angles aigus.
+- `T10C3` a) rectangle ; b) trois angles aigus ; d) un angle obtus ; e) rectangle (et isocèle). a) faux ; b) vrai ; d) vrai : le demi-carré ; e) vrai.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Classe selon les angles (teste à l’équerre sur tes tracés) : a) un triangle avec un coin de cahier ; b) un triangle tout pointu ; d) un triangle avec un angle de porte grande ouverte ; e) la moitié d’un carré coupé par sa diagonale. Puis justifie l’une de tes réponses.
+- `T11C3` a) rectangle ; b) trois angles aigus ; d) un angle obtus ; e) rectangle (et isocèle). La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` CLASSER LES TRIANGLES SELON LEURS ANGLES
+- `P` Triangle rectangle, angles aigus, angle obtus
+- `P` On classe aussi les triangles selon leurs angles : le triangle rectangle possède un angle droit ; un triangle peut avoir ses trois angles aigus ; un triangle peut posséder un angle obtus. Un même triangle se décrit donc deux fois : par ses côtés ET par ses angles.
+- `P` on promène l’équerre sur les trois angles : un coin droit → rectangle ; tout pointu → trois angles aigus ; un coin grand ouvert → angle obtus.
+- `P` Exemple : Un triangle de côtés 3, 4 et 5 cm : l’équerre révèle un angle droit entre les côtés 3 et 4 → triangle rectangle (et scalène).
+- `P` 1. Tester les angles du triangle avec le coin de l’équerre.
+- `P` 2. Conclure : un angle droit → rectangle ; un angle qui dépasse → triangle à angle obtus ; sinon → trois angles aigus.
+- `P` 3. Compléter si demandé par le classement des côtés.
+- `P` rectangle = un angle droit ; sinon : trois angles aigus, ou un angle obtus ; au plus UN droit ou UN obtus par triangle ; les deux classements se combinent.
+- `P` Le savais-tu ? La corde à 13 nœuds des maçons fabrique en réalité un triangle RECTANGLE de côtés 3, 4 et 5 : c’est l’exemple le plus ancien du monde.
+- `P` Attention : Chercher deux angles droits dans un triangle : impossible, les côtés ne se refermeraient jamais ! Si l’équerre a trouvé un angle droit, inutile de tester les deux autres pour le classement.
+- `P` EXERCICE
+- `P` 1. Classe selon les angles (teste à l’équerre sur tes tracés) : a) un triangle avec un coin de cahier ; b) un triangle tout pointu ; d) un triangle avec un angle de porte grande ouverte ; e) la moitié d’un carré coupé par sa diagonale.
+- `P` 2. Vrai ou faux ? a) Un triangle peut avoir deux angles droits. b) Un triangle rectangle a exactement un angle droit. d) Un triangle peut être à la fois isocèle et rectangle. e) Un triangle à angle obtus a ses deux autres angles aigus.
+- `P` 3. Trace : a) un triangle rectangle à l’équerre ; b) un triangle aux trois angles aigus ; d) un triangle à angle obtus ; e) décris chacun par ses DEUX classements (côtés et angles).
+- `P` 4. Classe chaque triangle selon ses angles : a) 90°, 45°, 45° ; b) trois angles aigus ; d) un angle de 120° ; e) 60°, 60°, 60°.
+- `P` 5. Réponds et justifie : a) Un triangle peut-il avoir deux angles droits ? b) Un angle droit et un angle obtus ? d) Trois angles aigus ? e) Un triangle rectangle peut-il être isocèle ?
+- `P` 6. Défi CEPE — Dans un triangle, deux angles mesurent 35° et 55°. a) Que vaut la somme des trois angles d’un triangle ? b) Calcule le troisième angle. d) Quelle est la nature du triangle selon ses angles ? e) Si le deuxième angle était 25° au lieu de 55°, quelle serait la nature du triangle ?
+- `P` Correction
+- `P` 1. a) rectangle ; b) trois angles aigus ; d) un angle obtus ; e) rectangle (et isocèle).
+- `P` 2. a) faux ; b) vrai ; d) vrai : le demi-carré ; e) vrai.
+- `P` 3. a, b, d) tracés corrects ; e) par exemple : « scalène et rectangle », « isocèle et trois angles aigus », « scalène avec un angle obtus ».
+- `P` 4. a) triangle rectangle (et isocèle) ; b) triangle aux trois angles aigus (acutangle) ; d) triangle avec un angle obtus (obtusangle) ; e) acutangle : c’est le triangle équilatéral.
+- `P` 5. a) non : 90° + 90° = 180°, il ne reste rien pour le troisième angle ; b) non : la somme dépasserait 180° ; d) oui : c’est le triangle acutangle ; e) oui : par exemple 90°, 45°, 45°.
+- `P` 6. a) 180° ; b) 180 − 35 − 55 = 90° ; d) triangle rectangle ; e) 180 − 35 − 25 = 120° : le triangle serait obtusangle.
+
+### SÉANCE 4 / 11 — LES PROPRIÉTÉS DES TRIANGLES : CÔTÉS, SOMMETS, ANGLES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 4 / 11 — LES PROPRIÉTÉS DES TRIANGLES : CÔTÉS, SOMMETS, ANGLES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : GéométrieThème : Description complète d’un triangleTitre : Les propriétés des triangles : côtés, sommets, anglesObjectif spécifique : À la fin de la séance, l’apprenant est capable de décrire un triangle par ses sommets, ses côtés et ses angles, en utilisant les lettres.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Triangles en carton, règle, équerre, étiquettes de lettres, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 4 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Quel triangle possède un angle droit ?
+- `T3C3` R.A. : Le triangle rectangle.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à décrire un triangle par ses sommets, ses côtés et ses angles, en utilisant les lettres. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Au téléphone, Lanto doit décrire son triangle à sa cousine pour qu’elle le retrace exactement : « il a trois coins… euh, le grand côté en bas… » Impossible de se comprendre ! Les géomètres ont une solution : donner un NOM à chaque coin — A, B, C — et tout décrire avec ces lettres.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Les propriétés des triangles : côtés, sommets, angles » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Triangle MNO : côtés [MN], [NO], [OM] ; si MN = NO, le triangle est isocèle et les angles en M et en O sont égaux.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Les lettres transforment la description vague en message exact : « le triangle ABC, avec AB = 6 cm, BC = 4 cm, CA = 5 cm et l’angle droit en B » — la cousine de Lanto peut maintenant retracer le triangle SANS le voir. Chaque élément se lit dans les lettres : le côté [AB] relie les sommets A et B ; l’angle en B est l’ouverture au sommet B, formée par les côtés [BA] et [BC] ; et le côté [AC], qui ne touche pas B, est le côté OPPOSÉ au sommet B. Cette précision prépare un trésor pour le collège : tous les théorèmes de géométrie parlent ce langage. Dès maintenant, elle permet de rédiger les descriptions des figures de l’examen : qui décrit bien, trace bien.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, 3 sommets (lettres majuscules), 3 côtés ([AB], [BC], [CA]), 3 angles (en A, en B, en C) ; le côté opposé à un sommet ne le touche pas.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Pour le triangle ABC : a) cite ses trois sommets ; b) cite ses trois côtés ; d) comment note-t-on l’angle au sommet C ? e) quel côté est opposé au sommet A ? Le triangle RST a RS = 7 cm, ST = 7 cm, TR = 10 cm. a) Quelle est sa famille de côtés ? b) Quels sont ses deux côtés jumeaux ? d) Quel côté est opposé au sommet S ? e) Si l’angle en S est droit, donne les deux classements du triangle.
+- `T10C3` a) A, B et C ; b) [AB], [BC] et [CA] ; d) l’angle en C ; e) le côté [BC]. a) isocèle ; b) [RS] et [ST] ; d) le côté [TR] ; e) isocèle et rectangle (en S).
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Pour le triangle ABC : a) cite ses trois sommets ; b) cite ses trois côtés ; d) comment note-t-on l’angle au sommet C ? e) quel côté est opposé au sommet A ? Puis justifie l’une de tes réponses.
+- `T11C3` a) A, B et C ; b) [AB], [BC] et [CA] ; d) l’angle en C ; e) le côté [BC]. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LES PROPRIÉTÉS DES TRIANGLES : CÔTÉS, SOMMETS, ANGLES
+- `P` Description complète d’un triangle
+- `P` Un triangle possède trois sommets (ses coins), trois côtés (les segments qui joignent les sommets) et trois angles (les ouvertures aux sommets). On nomme les sommets par des lettres majuscules : le triangle ABC a pour sommets A, B et C, pour côtés les segments [AB], [BC] et [CA], et pour angles les angles en A, en B et en C.
+- `P` les lettres sont les prénoms des coins : une fois les coins baptisés, chaque côté et chaque angle se nomme tout seul.
+- `P` Exemple : Triangle MNO : côtés [MN], [NO], [OM] ; si MN = NO, le triangle est isocèle et les angles en M et en O sont égaux.
+- `P` 1. Nommer les trois sommets par des lettres majuscules.
+- `P` 2. Nommer chaque côté par ses deux sommets entre crochets, chaque angle par son sommet.
+- `P` 3. Décrire : longueurs des côtés, nature des angles, famille du triangle.
+- `P` 3 sommets (lettres majuscules), 3 côtés ([AB], [BC], [CA]), 3 angles (en A, en B, en C) ; le côté opposé à un sommet ne le touche pas.
+- `P` Le savais-tu ? Cette idée de nommer les points par des lettres vient d’Euclide, dont le livre « Les Éléments » (300 ans avant J.-C.) est resté LE manuel de géométrie pendant plus de 2 000 ans — le livre le plus réédité de l’histoire après la Bible ! Tes lettres A, B, C sont les mêmes que celles de ses rouleaux de papyrus.
+- `P` Attention : Nommer un côté par UNE lettre (« le côté A ») : A est un sommet, pas un côté ! Un côté relie DEUX sommets et s’écrit avec leurs deux lettres : [AB].
+- `P` EXERCICE
+- `P` 1. Pour le triangle ABC : a) cite ses trois sommets ; b) cite ses trois côtés ; d) comment note-t-on l’angle au sommet C ? e) quel côté est opposé au sommet A ?
+- `P` 2. Le triangle RST a RS = 7 cm, ST = 7 cm, TR = 10 cm. a) Quelle est sa famille de côtés ? b) Quels sont ses deux côtés jumeaux ? d) Quel côté est opposé au sommet S ? e) Si l’angle en S est droit, donne les deux classements du triangle.
+- `P` 3. Décris pour un camarade (qui doit le tracer sans le voir) un triangle DEF rectangle en D avec DE = 6 cm et DF = 4 cm : a) les sommets ; b) les côtés et leurs longueurs connues ; d) l’angle particulier ; e) écris la description complète en une phrase.
+- `P` 4. Pour un triangle ABC : a) Combien a-t-il de sommets ? b) De côtés ? d) D’angles ? e) Nomme ses trois côtés.
+- `P` 5. Un triangle a des côtés de 7 cm, 9 cm et 12 cm. a) Quel est son périmètre ? b) Est-il isocèle ? d) Le plus grand angle se trouve en face de quel côté ? e) Vérifie que la somme des deux petits côtés dépasse le grand côté.
+- `P` 6. Défi CEPE — Rakoto veut assembler un triangle avec des baguettes de 5 cm, 5 cm et 10 cm. a) Que vaut la somme des deux baguettes de 5 cm ? b) Le triangle peut-il se fermer ? Explique. d) Il remplace la baguette de 10 cm par une de 8 cm : est-ce possible maintenant ? e) Quelle est alors la nature du triangle ?
+- `P` Correction
+- `P` 1. a) A, B et C ; b) [AB], [BC] et [CA] ; d) l’angle en C ; e) le côté [BC].
+- `P` 2. a) isocèle ; b) [RS] et [ST] ; d) le côté [TR] ; e) isocèle et rectangle (en S).
+- `P` 3. a) D, E, F ; b) [DE] = 6 cm, [DF] = 4 cm, [EF] à tracer ; d) l’angle droit en D ; e) « le triangle DEF a un angle droit en D, avec DE = 6 cm et DF = 4 cm ».
+- `P` 4. a) 3 sommets : A, B et C ; b) 3 côtés ; d) 3 angles ; e) [AB], [BC] et [CA].
+- `P` 5. a) 7 + 9 + 12 = 28 cm ; b) non : les trois côtés sont différents ; d) en face du côté de 12 cm, le plus long ; e) 7 + 9 = 16 > 12 : le triangle existe bien.
+- `P` 6. a) 5 + 5 = 10 cm ; b) non : les deux baguettes s’aplatissent exactement sur la troisième, aucun triangle ne se forme ; d) oui : 5 + 5 = 10 > 8 ; e) isocèle (deux côtés de 5 cm).
+
+### SÉANCE 5 / 11 — POLYGONES ET QUADRILATÈRES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 5 / 11 — POLYGONES ET QUADRILATÈRES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : GéométrieThème : Figures géométriques planesTitre : Polygones et quadrilatèresObjectif spécifique : À la fin de la séance, l’apprenant est capable de reconnaître et nommer les polygones simples et les quadrilatères usuels.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Figures en carton, nattes à motifs, géoplan ou quadrillage, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 5 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Dans le triangle ABC, quel côté est opposé au sommet B ?
+- `T3C3` R.A. : Le côté [AC].
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à reconnaître et nommer les polygones simples et les quadrilatères usuels. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Sur la natte de grand-mère, les motifs tressés dessinent des carrés, des losanges, des hexagones… Fara les compte du doigt : « 3 côtés, 4 côtés, 6 côtés ! » Toutes ces figures fermées aux côtés bien droits forment une seule grande famille : les polygones.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Polygones et quadrilatères » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Une figure fermée à 4 côtés égaux sans angle droit : c’est un losange (et pas un carré).
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Deux contrôles font le polygone : FERMÉ (le crayon revient à son départ) et DROIT (aucun côté courbe) — le cercle, tout fermé qu’il est, n’est pas un polygone, et une ligne brisée ouverte non plus. Chez les quadrilatères, les figures s’emboîtent comme des familles : le carré est un rectangle de luxe (ses 4 angles droits… plus 4 côtés égaux) et aussi un losange de luxe (ses 4 côtés égaux… plus 4 angles droits) — le carré cumule les deux titres ! Compter aussi les sommets : un polygone a autant de sommets que de côtés. Et les polygones réguliers — triangle équilatéral, carré, hexagone régulier — sont ceux des pavages : les abeilles et les tisserandes de nattes les ont adoptés bien avant les géomètres.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, polygone = fermé + côtés droits ; nom selon le nombre de côtés ; carré = rectangle ET losange à la fois ; régulier = côtés et angles tous égaux.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Polygone ou non ? a) un carré ; b) un cercle ; d) une ligne brisée ouverte en zigzag ; e) un hexagone. Nomme le polygone : a) 3 côtés ; b) 4 côtés, 4 angles droits, côtés égaux ; d) 4 côtés égaux sans angle droit ; e) 6 côtés.
+- `T10C3` a) oui ; b) non : côté courbe ; d) non : non fermée ; e) oui. a) triangle ; b) carré ; d) losange ; e) hexagone.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Polygone ou non ? a) un carré ; b) un cercle ; d) une ligne brisée ouverte en zigzag ; e) un hexagone. Puis justifie l’une de tes réponses.
+- `T11C3` a) oui ; b) non : côté courbe ; d) non : non fermée ; e) oui. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` POLYGONES ET QUADRILATÈRES
+- `P` Figures géométriques planes
+- `P` Un polygone est une figure plane fermée dont tous les côtés sont des segments de droite. On le nomme d’après son nombre de côtés : triangle (3), quadrilatère (4), pentagone (5), hexagone (6). Parmi les quadrilatères : le carré (4 côtés égaux, 4 angles droits), le rectangle (4 angles droits), le losange (4 côtés égaux) et le trapèze.
+- `P` polygone = enclos fermé fait de barrières droites ; on compte les barrières pour lui donner son nom.
+- `P` Exemple : Une figure fermée à 4 côtés égaux sans angle droit : c’est un losange (et pas un carré).
+- `P` 1. Vérifier : figure fermée ? côtés tous droits ?
+- `P` 2. Compter les côtés et donner le nom de la famille.
+- `P` 3. Pour un quadrilatère, tester les angles (équerre) et les côtés (règle) pour préciser : carré, rectangle, losange, trapèze.
+- `P` polygone = fermé + côtés droits ; nom selon le nombre de côtés ; carré = rectangle ET losange à la fois ; régulier = côtés et angles tous égaux.
+- `P` Le savais-tu ? Les abeilles sont des championnes de géométrie : leurs alvéoles hexagonales utilisent moins de cire que tout autre polygone pour stocker autant de miel ! Les mathématiciens ont mis 2 000 ans à démontrer que l’hexagone régulier est bien le meilleur choix — les abeilles, elles, le savaient déjà.
+- `P` Attention : Appeler « carré » tout quadrilatère régulier d’allure penchée : un losange a 4 côtés égaux mais pas d’angle droit ! L’équerre départage le carré du losange.
+- `P` EXERCICE
+- `P` 1. Polygone ou non ? a) un carré ; b) un cercle ; d) une ligne brisée ouverte en zigzag ; e) un hexagone.
+- `P` 2. Nomme le polygone : a) 3 côtés ; b) 4 côtés, 4 angles droits, côtés égaux ; d) 4 côtés égaux sans angle droit ; e) 6 côtés.
+- `P` 3. Vrai ou faux ? Justifie. a) Tout carré est un rectangle. b) Tout rectangle est un carré. d) Un losange a 4 côtés égaux. e) Un polygone à 5 côtés a 6 sommets.
+- `P` 4. Nomme le polygone qui a : a) 3 côtés ; b) 4 côtés ; d) 5 côtés ; e) 6 côtés.
+- `P` 5. Quel quadrilatère a : a) 4 côtés égaux ET 4 angles droits ? b) 4 angles droits seulement ? d) 4 côtés égaux seulement ? e) ses côtés opposés parallèles deux à deux, sans angle droit ni côtés tous égaux ?
+- `P` 6. Défi CEPE — Vrai ou faux ? Justifie : a) tout carré est un rectangle ; b) tout rectangle est un carré ; d) tout carré est un losange ; e) un quadrilatère possède deux diagonales.
+- `P` Correction
+- `P` 1. a) oui ; b) non : côté courbe ; d) non : non fermée ; e) oui.
+- `P` 2. a) triangle ; b) carré ; d) losange ; e) hexagone.
+- `P` 3. a) vrai : il a bien 4 angles droits ; b) faux : ses côtés ne sont pas forcément égaux ; d) vrai ; e) faux : 5 côtés = 5 sommets.
+- `P` 4. a) le triangle ; b) le quadrilatère ; d) le pentagone ; e) l’hexagone.
+- `P` 5. a) le carré ; b) le rectangle ; d) le losange ; e) le parallélogramme.
+- `P` 6. a) vrai : il a 4 angles droits ; b) faux : ses côtés ne sont pas forcément tous égaux ; d) vrai : il a 4 côtés égaux ; e) vrai : dans ABCD, ce sont [AC] et [BD].
+
+### SÉANCE 6 / 11 — TRACER AVEC LES OUTILS : RÈGLE, ÉQUERRE, COMPAS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 6 / 11 — TRACER AVEC LES OUTILS : RÈGLE, ÉQUERRE, COMPAS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : GéométrieThème : Utilisation des outils de géométrieTitre : Tracer avec les outils : règle, équerre, compasObjectif spécifique : À la fin de la séance, l’apprenant est capable de tracer des figures géométriques simples avec la règle, l’équerre et le compas.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Règle graduée, équerre, compas, crayon bien taillé, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 6 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Quelle figure a 4 côtés égaux ET 4 angles droits ?
+- `T3C3` R.A. : Le carré.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à tracer des figures géométriques simples avec la règle, l’équerre et le compas. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Défi au tableau : tracer un rectangle de 8 cm sur 5 cm « parfait ». Mamy le fait à main levée : les côtés gondolent, les angles penchent. Vola sort règle et équerre : côtés droits, angles exacts. En géométrie, la main ne suffit pas — les outils font la précision.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Tracer avec les outils : règle, équerre, compas » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Triangle équilatéral de 6 cm : segment [AB] de 6 cm ; arc de centre A et rayon 6 cm ; arc de centre B même rayon ; leur croisement est C ; relier.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Les tracés de qualité suivent des rituels précis. Le rectangle de 8 × 5 : tracer la base de 8 cm à la règle ; poser l’équerre à chaque extrémité pour élever deux côtés perpendiculaires de 5 cm ; fermer en reliant les sommets — et contrôler le dernier angle à l’équerre : s’il est droit aussi, le rectangle est réussi. Le cercle : pointe sèche plantée au CENTRE, écartement réglé au RAYON (3 cm d’écartement = cercle de rayon 3 cm), et l’on tourne d’un geste souple sans changer l’écartement. Le compas cache un second métier : REPORTER une longueur — on pique, on écarte jusqu’au bout du segment, et l’on transporte cette ouverture ailleurs, intacte ; c’est ainsi que se construit le triangle équilatéral sans règle graduée : un côté, puis deux arcs de même rayon qui se croisent au troisième sommet.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, règle = segments et mesures ; équerre = angles droits (tracer ET contrôler) ; compas = cercles (centre + rayon) et report de longueurs.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Trace : a) un segment [AB] de 7 cm ; b) un angle droit en A à l’équerre ; d) un cercle de centre A et de rayon 4 cm ; e) un cercle de centre B et de rayon 3 cm. Construis : a) un carré de 6 cm de côté ; b) un rectangle de 9 cm sur 4 cm ; d) contrôle leurs 4 angles à l’équerre ; e) mesure les deux diagonales du rectangle : que remarques-tu ?
+- `T10C3` a, b, d, e) tracés exacts ; les deux cercles se coupent si AB < 4 + 3 = 7 cm… ils se touchent exactement ici (AB = 7) ! a, b) constructions exactes ; d) 4 angles droits dans chaque figure ; e) les diagonales du rectangle ont la même longueur.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Trace : a) un segment [AB] de 7 cm ; b) un angle droit en A à l’équerre ; d) un cercle de centre A et de rayon 4 cm ; e) un cercle de centre B et de rayon 3 cm. Puis justifie l’une de tes réponses.
+- `T11C3` a, b, d, e) tracés exacts ; les deux cercles se coupent si AB < 4 + 3 = 7 cm… ils se touchent exactement ici (AB = 7) ! La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` TRACER AVEC LES OUTILS : RÈGLE, ÉQUERRE, COMPAS
+- `P` Utilisation des outils de géométrie
+- `P` Chaque outil de géométrie a son rôle : la règle sert à tracer des segments droits et à mesurer leurs longueurs ; l’équerre sert à tracer et à vérifier les angles droits ; le compas sert à tracer des cercles et à reporter des longueurs sans les mesurer.
+- `P` la règle fait droit, l’équerre fait carré, le compas fait rond — et à eux trois, ils font tout.
+- `P` Exemple : Triangle équilatéral de 6 cm : segment [AB] de 6 cm ; arc de centre A et rayon 6 cm ; arc de centre B même rayon ; leur croisement est C ; relier.
+- `P` 1. Choisir l’outil d’après ce qu’il faut tracer : droit, carré ou rond.
+- `P` 2. Exécuter le rituel : base à la règle, perpendiculaires à l’équerre, cercles au compas sans changer l’écartement.
+- `P` 3. Contrôler la figure finie : mesures à la règle, angles à l’équerre.
+- `P` règle = segments et mesures ; équerre = angles droits (tracer ET contrôler) ; compas = cercles (centre + rayon) et report de longueurs.
+- `P` Le savais-tu ? Pendant plus de 2 000 ans, les géomètres se sont imposé un jeu très strict : tout construire avec SEULEMENT la règle (non graduée !) et le compas.
+- `P` Attention : Changer l’écartement du compas en cours de cercle : le « cercle » part en spirale ! Tenir le compas par la tête, pas par les branches, et tourner d’un seul mouvement.
+- `P` EXERCICE
+- `P` 1. Trace : a) un segment [AB] de 7 cm ; b) un angle droit en A à l’équerre ; d) un cercle de centre A et de rayon 4 cm ; e) un cercle de centre B et de rayon 3 cm.
+- `P` 2. Construis : a) un carré de 6 cm de côté ; b) un rectangle de 9 cm sur 4 cm ; d) contrôle leurs 4 angles à l’équerre ; e) mesure les deux diagonales du rectangle : que remarques-tu ?
+- `P` 3. Construis au compas un triangle équilatéral de 5 cm de côté : a) trace la base ; b) décris les deux arcs à tracer ; d) achève le triangle ; e) vérifie ses trois côtés à la règle.
+- `P` 4. Quel outil choisis-tu pour : a) tracer un segment de 7 cm ; b) vérifier un angle droit ; d) tracer un cercle ; e) reporter une longueur sans la mesurer ?
+- `P` 5. Construction guidée : a) trace un segment [AB] de 6 cm ; b) avec l’équerre, élève la perpendiculaire à [AB] passant par A ; d) place C sur cette perpendiculaire à 4 cm de A ; e) relie B et C : quelle figure obtiens-tu ?
+- `P` 6. Défi CEPE — On construit à la règle et au compas un triangle de côtés 6 cm, 5 cm et 4 cm. a) Quel côté trace-t-on d’abord ? b) Quel outil permet de trouver le troisième sommet ? d) Décris les deux arcs de cercle à tracer. e) Pourquoi le compas garantit-il des longueurs exactes ?
+- `P` Correction
+- `P` 1. a, b, d, e) tracés exacts ; les deux cercles se coupent si AB < 4 + 3 = 7 cm… ils se touchent exactement ici (AB = 7) !
+- `P` 2. a, b) constructions exactes ; d) 4 angles droits dans chaque figure ; e) les diagonales du rectangle ont la même longueur.
+- `P` 3. a) segment de 5 cm ; b) arc de centre A rayon 5 cm, arc de centre B rayon 5 cm ; d) leur croisement donne le 3ᵉ sommet, relier ; e) les trois côtés mesurent 5 cm ✓.
+- `P` 4. a) la règle graduée ; b) l’équerre ; d) le compas ; e) le compas.
+- `P` 5. a), b), d) constructions sur le cahier ; e) un triangle rectangle en A, de côtés 6 cm et 4 cm.
+- `P` 6. a) le côté de 6 cm, par exemple ; b) le compas ; d) un arc de rayon 5 cm centré sur une extrémité, un arc de rayon 4 cm centré sur l’autre : leur point de rencontre est le troisième sommet ; e) l’écartement du compas reporte la longueur d’un seul geste, sans erreur de lecture.
+
+### SÉANCE 7 / 11 — REPRODUIRE UNE FIGURE
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 7 / 11 — REPRODUIRE UNE FIGURE
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : GéométrieThème : Reproduction sur quadrillage et à l’échelle simpleTitre : Reproduire une figureObjectif spécifique : À la fin de la séance, l’apprenant est capable de reproduire une figure plane sur quadrillage, à l’identique puis à l’échelle simple.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Papier quadrillé, géoplan, modèles de figures, règle, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 7 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Quel outil trace les angles droits ?
+- `T3C3` R.A. : L’équerre.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à reproduire une figure plane sur quadrillage, à l’identique puis à l’échelle simple. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La maîtresse affiche une figure en escalier sur le quadrillage du tableau et demande de la recopier sur le cahier. Mamy copie « à l’œil » : sa figure est toute déformée ! Vola compte les carreaux et place d’abord les SOMMETS : sa copie est la jumelle parfaite du modèle.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Reproduire une figure » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Modèle : « départ, 4 à droite, puis 3 à droite et 2 en haut… » ; à l’échelle 2, le même chemin devient « 8 à droite, puis 6 à droite et 4 en haut… ».
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le secret des pros : les SOMMETS d’abord, les traits ensuite. Qui trace les segments un à un accumule les petites erreurs ; qui place d’abord tous les sommets (en comptant deux fois les carreaux !) obtient une charpente exacte qu’il n’y a plus qu’à relier. Les segments penchés n’effraient pas le quadrillage : une diagonale se décrit « 3 carreaux à droite, 2 en haut » — et la copie reprend exactement le même déplacement. À l’échelle 2, tous les déplacements doublent : « 3 à droite, 2 en haut » devient « 6 à droite, 4 en haut » ; la figure grandit mais garde sa FORME, car tous les côtés grandissent du même coup. Gare à l’erreur classique : doubler la longueur sans doubler la hauteur fabrique une figure écrasée qui ne ressemble plus au modèle. Le contrôle final : compter les carreaux de la copie, côté par côté, contre le modèle.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, repérer les sommets en carreaux ; placer TOUS les sommets, puis relier à la règle ; échelle n = multiplier TOUS les déplacements par n ; contrôler en recomptant.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Sur quadrillage, reproduis à l’identique : a) un rectangle de 6 × 3 carreaux ; b) un triangle rectangle de côtés 4 et 3 carreaux ; d) une figure en escalier de 3 marches ; e) contrôle chaque copie en recomptant. Décris en carreaux le chemin des sommets : a) d’un carré de 4 carreaux de côté ; b) d’une diagonale « 5 à droite, 2 en haut » ; d) reproduis cette diagonale ; e) reproduis-la à l’échelle 2.
+- `T10C3` a, b, d) copies exactes, sommets placés d’abord ; e) tous les côtés recomptés justes. a) 4 à droite, 4 en haut, 4 à gauche, 4 en bas ; b, d) tracé exact ; e) « 10 à droite, 4 en haut ».
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Sur quadrillage, reproduis à l’identique : a) un rectangle de 6 × 3 carreaux ; b) un triangle rectangle de côtés 4 et 3 carreaux ; d) une figure en escalier de 3 marches ; e) contrôle chaque copie en recomptant. Puis justifie l’une de tes réponses.
+- `T11C3` a, b, d) copies exactes, sommets placés d’abord ; e) tous les côtés recomptés justes. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` REPRODUIRE UNE FIGURE
+- `P` Reproduction sur quadrillage et à l’échelle simple
+- `P` Reproduire une figure, c’est en tracer une copie exacte : mêmes longueurs, mêmes angles. Sur quadrillage, on repère chaque sommet par ses déplacements en carreaux (vers la droite, vers le haut…), on place tous les sommets de la copie, puis on les relie à la règle.
+- `P` le quadrillage est une carte au trésor : on compte les carreaux pour retrouver chaque coin, on marque les croix, puis on relie.
+- `P` Exemple : Modèle : « départ, 4 à droite, puis 3 à droite et 2 en haut… » ; à l’échelle 2, le même chemin devient « 8 à droite, puis 6 à droite et 4 en haut… ».
+- `P` 1. Choisir un sommet de départ et décrire chaque sommet suivant en carreaux (droite/gauche, haut/bas).
+- `P` 2. Placer tous les sommets de la copie (déplacements × l’échelle demandée), puis relier à la règle.
+- `P` 3. Contrôler côté par côté en recomptant les carreaux.
+- `P` repérer les sommets en carreaux ; placer TOUS les sommets, puis relier à la règle ; échelle n = multiplier TOUS les déplacements par n ; contrôler en recomptant.
+- `P` Le savais-tu ? Les peintres de fresques géantes utilisent exactement ta méthode : ils quadrillent leur petit dessin, quadrillent le grand mur, puis recopient le contenu carreau par carreau à grande échelle.
+- `P` Attention : Copier les segments à l’œil sans compter : les diagonales glissent d’un carreau et toute la figure se déforme. On COMPTE, on ne devine pas — et on place les sommets avant les traits.
+- `P` EXERCICE
+- `P` 1. Sur quadrillage, reproduis à l’identique : a) un rectangle de 6 × 3 carreaux ; b) un triangle rectangle de côtés 4 et 3 carreaux ; d) une figure en escalier de 3 marches ; e) contrôle chaque copie en recomptant.
+- `P` 2. Décris en carreaux le chemin des sommets : a) d’un carré de 4 carreaux de côté ; b) d’une diagonale « 5 à droite, 2 en haut » ; d) reproduis cette diagonale ; e) reproduis-la à l’échelle 2.
+- `P` 3. Reproduis la figure « drapeau » (mât de 5 carreaux, fanion triangulaire de 2 × 2) : a) à l’identique ; b) à l’échelle 2 ; d) compare les hauteurs des deux mâts ; e) la forme a-t-elle changé ? Pourquoi ?
+- `P` 4. Pour reproduire une figure sur quadrillage : a) Que repère-t-on en premier ? b) Comment compte-t-on les déplacements ? d) Que trace-t-on en premier ? e) Que vérifie-t-on à la fin ?
+- `P` 5. Sur un quadrillage, un rectangle a ses sommets en A(1 ; 1), B(6 ; 1), C(6 ; 4) et D(1 ; 4). a) Quelle est sa longueur en carreaux ? b) Sa largeur ? d) Reproduis-le sur ton cahier. e) On le déplace de 2 carreaux vers la droite : quelles sont les nouvelles coordonnées de A ?
+- `P` 6. Défi CEPE — Une figure est formée d’un carré de 4 cm de côté surmonté d’un demi-cercle posé sur un côté. a) Quels outils faut-il ? b) Dans quel ordre tracer les deux parties ? d) Quel est le rayon du demi-cercle ? e) Comment vérifier que la reproduction est réussie ?
+- `P` Correction
+- `P` 1. a, b, d) copies exactes, sommets placés d’abord ; e) tous les côtés recomptés justes.
+- `P` 2. a) 4 à droite, 4 en haut, 4 à gauche, 4 en bas ; b, d) tracé exact ; e) « 10 à droite, 4 en haut ».
+- `P` 3. a, b) tracés exacts ; d) 5 carreaux contre 10 : le double ; e) non : TOUS les déplacements ont doublé ensemble, la forme est conservée.
+- `P` 4. a) les sommets de la figure ; b) en carreaux : vers la droite ou la gauche, puis vers le haut ou le bas ; d) les sommets, que l’on relie ensuite ; e) que les longueurs et la forme sont exactement les mêmes.
+- `P` 5. a) 5 carreaux ; b) 3 carreaux ; d) tracé sur quadrillage ; e) A(3 ; 1).
+- `P` 6. a) la règle, l’équerre et le compas ; b) d’abord le carré, puis le demi-cercle sur le côté choisi ; d) 2 cm : la moitié du côté de 4 cm ; e) en mesurant les côtés et le rayon, ou en superposant les deux figures.
+
+### SÉANCE 8 / 11 — DÉCOMPOSER UN QUADRILATÈRE EN TRIANGLES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 8 / 11 — DÉCOMPOSER UN QUADRILATÈRE EN TRIANGLES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : GéométrieThème : Décomposition de polygonesTitre : Décomposer un quadrilatère en trianglesObjectif spécifique : À la fin de la séance, l’apprenant est capable de décomposer un quadrilatère en triangles à l’aide de ses diagonales.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Quadrilatères en papier, ciseaux, règle, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 8 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` À l’échelle 3, que devient un déplacement de « 2 carreaux à droite » ?
+- `T3C3` R.A. : 6 carreaux à droite.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à décomposer un quadrilatère en triangles à l’aide de ses diagonales. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Vola découpe un trapèze en papier. D’un coup de ciseaux bien placé — d’un coin au coin opposé — le trapèze tombe en DEUX TRIANGLES. Elle recommence avec un carré, un losange, un rectangle : deux triangles à chaque fois ! Le triangle serait-il caché dans toutes les figures ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Décomposer un quadrilatère en triangles » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Dans le quadrilatère ABCD, la diagonale [AC] donne les triangles ABC et ACD ; la diagonale [BD] donne ABD et BCD.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Un quadrilatère n’a que DEUX diagonales : de chaque sommet, un seul sommet n’est pas voisin. Chacune révèle un découpage différent du même quadrilatère — deux paires de triangles différentes ! La décomposition raconte un secret immense : le triangle est la BRIQUE de toute la géométrie. Un pentagone se découpe en 3 triangles (deux diagonales issues d’un même sommet), un hexagone en 4 — tout polygone finit en triangles. Voilà pourquoi les charpentes et les ponts sont bardés de triangles : contrairement au quadrilatère qui se déforme quand on le pousse (essaie avec quatre pailles articulées !), le triangle est INDÉFORMABLE. Et à l’unité V, l’aire des figures se calculera… en les découpant en triangles. La décomposition prépare la composition de la prochaine séance : découper pour comprendre, assembler pour créer.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, diagonale = segment entre sommets opposés ; 1 diagonale → 2 triangles, 2 diagonales → 4 ; tout polygone se décompose en triangles ; le triangle est indéformable.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Dans le quadrilatère ABCD : a) cite ses deux diagonales ; b) quels triangles donne [AC] ? d) quels triangles donne [BD] ? e) [AB] est-il une diagonale ? Trace et découpe : a) un rectangle et une diagonale : quels triangles obtiens-tu ? b) les deux triangles sont-ils superposables ? d) un carré et SES DEUX diagonales : combien de triangles ? e) ces quatre triangles sont-ils superposables ?
+- `T10C3` a) [AC] et [BD] ; b) ABC et ACD ; d) ABD et BCD ; e) non : A et B sont voisins, [AB] est un côté. a) deux triangles rectangles ; b) oui, parfaitement superposables ; d) 4 triangles ; e) oui : le carré est parfaitement régulier.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Dans le quadrilatère ABCD : a) cite ses deux diagonales ; b) quels triangles donne [AC] ? d) quels triangles donne [BD] ? e) [AB] est-il une diagonale ? Puis justifie l’une de tes réponses.
+- `T11C3` a) [AC] et [BD] ; b) ABC et ACD ; d) ABD et BCD ; e) non : A et B sont voisins, [AB] est un côté. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` DÉCOMPOSER UN QUADRILATÈRE EN TRIANGLES
+- `P` Décomposition de polygones
+- `P` Une diagonale d’un quadrilatère est un segment qui joint deux sommets opposés (non voisins). Décomposer un quadrilatère, c’est le partager en figures plus simples : toute diagonale partage un quadrilatère en deux triangles ; ses deux diagonales le partagent en quatre triangles.
+- `P` la diagonale est le coup de ciseaux magique : un quadrilatère, coupé de coin à coin opposé, donne toujours deux triangles.
+- `P` Exemple : Dans le quadrilatère ABCD, la diagonale [AC] donne les triangles ABC et ACD ; la diagonale [BD] donne ABD et BCD.
+- `P` 1. Repérer deux sommets opposés du quadrilatère.
+- `P` 2. Tracer (ou découper) la diagonale qui les joint.
+- `P` 3. Nommer les triangles obtenus et recommencer avec l’autre diagonale pour comparer.
+- `P` diagonale = segment entre sommets opposés ; 1 diagonale → 2 triangles, 2 diagonales → 4 ; tout polygone se décompose en triangles ; le triangle est indéformable.
+- `P` Le savais-tu ? Regarde un grand pont métallique ou un pylône électrique : des triangles partout ! Les ingénieurs appellent cela la triangulation.
+- `P` Attention : Prendre un côté pour une diagonale : [AB] relie deux sommets VOISINS, c’est un côté ! La diagonale saute par-dessus un sommet : dans ABCD, les diagonales sont [AC] et [BD] seulement.
+- `P` EXERCICE
+- `P` 1. Dans le quadrilatère ABCD : a) cite ses deux diagonales ; b) quels triangles donne [AC] ? d) quels triangles donne [BD] ? e) [AB] est-il une diagonale ?
+- `P` 2. Trace et découpe : a) un rectangle et une diagonale : quels triangles obtiens-tu ? b) les deux triangles sont-ils superposables ? d) un carré et SES DEUX diagonales : combien de triangles ? e) ces quatre triangles sont-ils superposables ?
+- `P` 3. Décompose en triangles par des diagonales issues d’UN seul sommet : a) un quadrilatère : combien de triangles ? b) un pentagone ? d) un hexagone ? e) devine la règle pour un polygone à 10 côtés.
+- `P` 4. a) Combien de triangles obtient-on en traçant UNE diagonale d’un quadrilatère ? b) Et en traçant les deux diagonales ? d) Nomme la diagonale de ABCD qui part de A. e) Celle qui part de B.
+- `P` 5. Dans le rectangle ABCD, on trace la diagonale [AC]. a) Nomme les deux triangles obtenus. b) Quelle est leur nature ? d) Que peut-on dire de leurs aires ? e) Si AB = 8 cm et BC = 5 cm, quelle est l’aire de chaque triangle ?
+- `P` 6. Défi CEPE — Un terrain a la forme d’un quadrilatère quelconque MNPQ. Pour calculer sa surface, le géomètre le découpe en triangles. a) Combien de triangles avec une seule diagonale ? b) Pourquoi cette méthode est-elle pratique ? d) Nomme les deux triangles formés par la diagonale [MP]. e) Quelle autre diagonale pouvait-il choisir ?
+- `P` Correction
+- `P` 1. a) [AC] et [BD] ; b) ABC et ACD ; d) ABD et BCD ; e) non : A et B sont voisins, [AB] est un côté.
+- `P` 2. a) deux triangles rectangles ; b) oui, parfaitement superposables ; d) 4 triangles ; e) oui : le carré est parfaitement régulier.
+- `P` 3. a) 2 ; b) 3 ; d) 4 ; e) toujours 2 de moins que le nombre de côtés : 8 triangles.
+- `P` 4. a) 2 triangles ; b) 4 triangles ; d) [AC] ; e) [BD].
+- `P` 5. a) ABC et ACD ; b) deux triangles rectangles (en B et en D) ; d) elles sont égales : chacune vaut la moitié du rectangle ; e) (8 × 5) ÷ 2 = 20 cm².
+- `P` 6. a) 2 triangles ; b) parce qu’on sait calculer l’aire d’un triangle : il suffit ensuite d’additionner ; d) MNP et MPQ ; e) la diagonale [NQ].
+
+### SÉANCE 9 / 11 — COMPOSER DE NOUVELLES FIGURES PAR ASSEMBLAGE
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 9 / 11 — COMPOSER DE NOUVELLES FIGURES PAR ASSEMBLAGE
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : GéométrieThème : Composition de figuresTitre : Composer de nouvelles figures par assemblageObjectif spécifique : À la fin de la séance, l’apprenant est capable de composer de nouvelles figures en assemblant des formes géométriques simples.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Paires de triangles en carton, pièces de tangram, colle, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 9 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Combien de triangles donnent les 2 diagonales d’un carré ?
+- `T3C3` R.A. : Quatre.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à composer de nouvelles figures en assemblant des formes géométriques simples. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Vola garde ses deux triangles découpés dans le carré. En les tournant et les retournant sur la table, elle assemble… un grand triangle ! Puis un rectangle tout en longueur n’apparaît pas, mais un parallélogramme oui, et le carré se reforme. Mêmes pièces, figures nouvelles : c’est la composition.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Composer de nouvelles figures par assemblage » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Deux triangles rectangles identiques, hypoténuse contre hypoténuse : un rectangle ; petit côté contre petit côté : un grand triangle isocèle.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La règle d’or de l’assemblage : les bords qui se touchent doivent avoir la MÊME longueur — on colle l’hypoténuse contre l’hypoténuse, ou un petit côté contre son jumeau ; un bord qui dépasse, et la figure n’est plus un polygone propre. La grande leçon de la composition : la FORME change, mais la QUANTITÉ de carton ne change pas ! Le grand triangle, le carré et le parallélogramme faits des deux mêmes pièces ont des allures très différentes… et pourtant exactement la même surface. Cette idée — découper puis rassembler sans rien perdre — deviendra à l’unité V LA méthode pour calculer les aires : l’aire du triangle naîtra d’un rectangle coupé en deux. Composition et décomposition sont les deux sens du même voyage : le tangram chinois, avec ses 7 pièces et ses milliers de silhouettes, en est le terrain de jeu parfait.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, assembler bord contre bord, sans trou ni chevauchement ; mêmes pièces → formes différentes mais MÊME surface ; composer et décomposer sont les deux sens du même geste.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Avec deux triangles rectangles identiques en carton, compose : a) un carré (si tes triangles sont des demi-carrés) ou un rectangle ; b) un grand triangle ; d) un parallélogramme ; e) dessine chaque assemblage. Vrai ou faux ? a) Deux triangles identiques peuvent former un rectangle. b) Les figures composées des mêmes pièces ont la même surface. d) On peut laisser un petit trou entre les pièces. e) Retourner une pièce est permis.
+- `T10C3` a, b, d, e) assemblages corrects : bords égaux collés, sans trou ni chevauchement. a) vrai ; b) vrai : la quantité de carton ne change pas ; d) faux ; e) vrai.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Avec deux triangles rectangles identiques en carton, compose : a) un carré (si tes triangles sont des demi-carrés) ou un rectangle ; b) un grand triangle ; d) un parallélogramme ; e) dessine chaque assemblage. Puis justifie l’une de tes réponses.
+- `T11C3` a, b, d, e) assemblages corrects : bords égaux collés, sans trou ni chevauchement. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` COMPOSER DE NOUVELLES FIGURES PAR ASSEMBLAGE
+- `P` Composition de figures
+- `P` Composer des figures, c’est en assembler plusieurs, bord contre bord et sans trou ni chevauchement, pour créer une figure nouvelle. Les mêmes pièces peuvent produire des figures différentes : deux triangles rectangles identiques forment, selon l’assemblage, un carré ou un rectangle, un plus grand triangle, ou un parallélogramme.
+- `P` composer, c’est jouer au puzzle à l’envers : au lieu de refaire le modèle, on invente des figures nouvelles avec les mêmes pièces.
+- `P` Exemple : Deux triangles rectangles identiques, hypoténuse contre hypoténuse : un rectangle ; petit côté contre petit côté : un grand triangle isocèle.
+- `P` 1. Inventorier les pièces et repérer les bords de même longueur.
+- `P` 2. Assembler bord contre bord, en tournant ou retournant les pièces si besoin.
+- `P` 3. Nommer la figure obtenue et chercher un AUTRE assemblage avec les mêmes pièces.
+- `P` assembler bord contre bord, sans trou ni chevauchement ; mêmes pièces → formes différentes mais MÊME surface ; composer et décomposer sont les deux sens du même geste.
+- `P` Le savais-tu ? Le tangram est né en Chine il y a plus de 200 ans : sept pièces découpées dans UN carré — cinq triangles, un carré, un parallélogramme — qui recomposent des milliers de silhouettes : chat, bateau, danseur… Napoléon, dit-on, y jouait pendant son exil.
+- `P` Attention : Assembler avec un trou au milieu ou un coin qui chevauche : la « figure » n’en est plus une ! Les bords doivent coïncider exactement, comme les pièces d’un puzzle bien fait.
+- `P` EXERCICE
+- `P` 1. Avec deux triangles rectangles identiques en carton, compose : a) un carré (si tes triangles sont des demi-carrés) ou un rectangle ; b) un grand triangle ; d) un parallélogramme ; e) dessine chaque assemblage.
+- `P` 2. Vrai ou faux ? a) Deux triangles identiques peuvent former un rectangle. b) Les figures composées des mêmes pièces ont la même surface. d) On peut laisser un petit trou entre les pièces. e) Retourner une pièce est permis.
+- `P` 3. Avec quatre triangles rectangles identiques : a) compose un grand carré ; b) compose un rectangle ; d) compose une autre figure de ton invention et nomme-la ; e) ces figures ont-elles la même surface ? Pourquoi ?
+- `P` 4. Quelle figure obtient-on en assemblant : a) deux triangles rectangles identiques collés par leur plus grand côté ? b) deux carrés identiques côte à côte ? d) quatre carrés identiques en deux rangées de deux ? e) deux triangles équilatéraux identiques collés par un côté ?
+- `P` 5. Un carré de 8 cm de côté est coupé en deux par une diagonale. a) Quelle est la nature des deux triangles ? b) Quel était le périmètre du carré ? d) En recollant les deux triangles autrement, quelle autre figure peut-on former ? e) L’aire totale change-t-elle ?
+- `P` 6. Défi CEPE — Naina assemble 12 carreaux carrés identiques de 1 dm de côté pour former un rectangle plein. a) Propose deux assemblages possibles (rangées × colonnes). b) Lequel donne le rectangle le plus allongé ? d) Peut-elle former un carré avec les 12 carreaux ? e) Quelle est l’aire totale, quel que soit l’assemblage ?
+- `P` Correction
+- `P` 1. a, b, d, e) assemblages corrects : bords égaux collés, sans trou ni chevauchement.
+- `P` 2. a) vrai ; b) vrai : la quantité de carton ne change pas ; d) faux ; e) vrai.
+- `P` 3. a, b, d) assemblages corrects et nommés ; e) oui : les quatre mêmes pièces sont toutes utilisées à chaque fois, la surface totale est identique.
+- `P` 4. a) un rectangle ; b) un rectangle ; d) un grand carré ; e) un losange.
+- `P` 5. a) deux triangles rectangles isocèles ; b) 4 × 8 = 32 cm ; d) un grand triangle ou un parallélogramme ; e) non : on n’a rien ajouté ni enlevé, l’aire est conservée.
+- `P` 6. a) 3 × 4 ou 2 × 6 (ou encore 1 × 12) ; b) l’assemblage 1 × 12 ; d) non : 12 n’est pas un carré parfait (3 × 3 = 9, 4 × 4 = 16) ; e) 12 dm² dans tous les cas.
+
+### RÉVISION DE L’UNITÉ IV
+
+- Indicateurs : 14 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : non.
+- `P` RÉVISION DE L’UNITÉ IV
+- `P` Tableau de synthèse
+- `T1C1` Notion
+- `T1C2` À savoir
+- `T1C3` À savoir faire
+- `T2C1` Angles
+- `T2C2` Aigu (fermé), droit (coin de l’équerre), obtus (ouvert) ; la longueur des côtés ne compte pas
+- `T2C3` Juger un angle à l’équerre
+- `T3C1` Triangles par côtés
+- `T3C2` Équilatéral (3 égaux), isocèle (2), scalène (0) ; petits traits = côtés jumeaux
+- `T3C3` Mesurer, classer, construire
+- `T4C1` Triangles par angles
+- `T4C2` Rectangle (1 droit), trois angles aigus, un angle obtus ; au plus un droit ou un obtus
+- `T4C3` Tester à l’équerre, croiser les deux classements
+- `T5C1` Description
+- `T5C2` Sommets A, B, C ; côtés [AB], [BC], [CA] ; angles en A, B, C
+- `T5C3` Décrire une figure pour qu’on la retrace
+- `T6C1` Polygones
+- `T6C2` Fermé + côtés droits ; carré, rectangle, losange, trapèze ; régulier = tout égal
+- `T6C3` Reconnaître, nommer, justifier
+- `T7C1` Tracer, reproduire, composer
+- `T7C2` Règle, équerre, compas ; sommets d’abord sur quadrillage ; diagonale → 2 triangles
+- `T7C3` Construire, copier à l’échelle, décomposer et assembler
+- `P` Questions de révision
+- `P` 1. Classe les angles : les aiguilles à 1 h, à 3 h, à 5 h.
+- `P` 2. Un triangle a des côtés de 8, 8 et 11 cm et un angle droit : donne ses deux classements.
+- `P` 3. Pourquoi un losange n’est-il pas toujours un carré ? Et pourquoi tout carré est-il un losange ?
+- `P` 4. Décris la construction d’un triangle équilatéral de 6 cm au compas.
+- `P` 5. Dans le quadrilatère KLMN, cite les diagonales et les triangles donnés par chacune.
+- `P` Réponses attendues
+- `P` 1. 1 h : aigu ; 3 h : droit ; 5 h : obtus.
+- `P` 2. Isocèle (8 = 8) et rectangle (un angle droit).
+- `P` 3. Il peut pencher : 4 côtés égaux sans angle droit ; le carré a les 4 côtés égaux, donc il est aussi un losange.
+- `P` 4. Segment [AB] de 6 cm ; arc de centre A rayon 6 ; arc de centre B rayon 6 ; leur croisement est C ; relier [AC] et [BC].
+- `P` 5. [KM] → triangles KLM et KMN ; [LN] → triangles KLN et LMN.
+
+### SUJET D’EXAMEN FORMAT CEPE — UNITÉ IV
+
+- Indicateurs : 33 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SUJET D’EXAMEN FORMAT CEPE — UNITÉ IV
+- `P` Barème : 20 points. Présente clairement tous les calculs et toutes les constructions.
+- `P` Exercice 1 — 4 points. Angles. Observe le coin d’un cahier, une porte entrouverte et une porte poussée à fond contre le mur. a) Classe ces trois angles. b) Quel outil permet de vérifier ? d) Dessine un angle aigu et un angle obtus. e) Un angle aux côtés très longs est-il forcément plus ouvert ? Justifie.
+- `P` Exercice 2 — 4 points. Triangles. Un triangle a pour côtés 9 cm, 9 cm et 13 cm. a) Classe-le selon ses côtés. b) L’équerre montre que tous ses angles sont aigus : complète sa description. d) Peut-on construire un triangle de côtés 12, 5 et 4 cm ? Justifie. e) Trace un triangle rectangle dont les côtés de l’angle droit mesurent 6 cm et 4 cm.
+- `P` Exercice 3 — 4 points. Polygones. a) Parmi : cercle, carré, ligne brisée ouverte, hexagone — lesquels sont des polygones ? b) Quelle différence entre un carré et un losange ? d) Combien de sommets a un pentagone ? e) Cite un polygone régulier.
+- `P` Exercice 4 — 4 points. Reproduction. Une figure a ses sommets reliés par les déplacements « 4 carreaux à droite », puis « 2 à droite et 3 en haut », puis « 6 à gauche », retour au départ. a) Trace-la sur quadrillage. b) Quelle est la nature de cette figure ? d) Reproduis-la à l’échelle 2. e) La forme est-elle conservée ? Pourquoi ?
+- `P` Exercice 5 — 4 points. Problème. Naly découpe un rectangle en carton de 12 cm sur 8 cm. a) Trace ce rectangle aux instruments. b) Trace une diagonale : quelles figures obtient-on ? d) Les deux figures sont-elles superposables ? e) Avec les deux pièces, Naly compose un grand triangle : la surface totale de carton a-t-elle changé ? Justifie.
+- `P` CORRIGÉ ET BARÈME
+- `P` Exercice 1. a) droit ; aigu ; obtus ; b) l’équerre ; d) tracés corrects ; e) non : seule l’ouverture compte, pas la longueur des côtés. Un point par item.
+- `P` Exercice 2. a) isocèle ; b) isocèle avec trois angles aigus ; d) non : 5 + 4 = 9 < 12, il ne se ferme pas ; e) tracé exact à l’équerre. Un point par item.
+- `P` Exercice 3. a) le carré et l’hexagone ; b) le carré a 4 angles droits, le losange pas forcément ; d) 5 sommets ; e) triangle équilatéral, carré (ou hexagone régulier). Un point par item.
+- `P` Exercice 4. a) tracé exact ; b) un trapèze (deux côtés horizontaux parallèles de 6 et 4 carreaux) ; d) déplacements doublés : 8 ; 4 et 6 ; 12 ; e) oui : tous les déplacements ont été multipliés par 2 ensemble. Un point par item.
+- `P` Exercice 5. a) rectangle exact aux instruments ; b) deux triangles rectangles ; d) oui, parfaitement superposables ; e) non : les deux mêmes pièces sont réutilisées, la quantité de carton est la même. Un point par item.
+- `P` UNITÉ V
+- `P` MESURE
+- `P` Sous-discipline du programme de Mathématiques T5
+- `P` Résultat d’apprentissage général
+- `P` décrire des objets et des situations à l’aide de mesures conventionnelles de longueur, masse, capacité et temps, et estimer aires et volumes simples.
+- `P` Valeurs à véhiculer
+- `P` justice et confiance en soi.
+- `P` UNITÉ V — MESURE : DANS CETTE UNITÉ
+- `P` Leçon 1 — Les mesures de longueur et leurs conversions
+- `P` Leçon 2 — Le périmètre des polygones
+- `P` Leçon 3 — La circonférence du cercle
+- `P` Leçon 4 — La masse : estimer, mesurer, convertir
+- `P` Leçon 5 — La capacité : litres et conversions
+- `P` Leçon 6 — La mesure du temps : conversions et opérations
+- `P` Leçon 7 — L’aire du rectangle et du carré
+- `P` Leçon 8 — L’aire du triangle ; comparer des aires
+- `P` Leçon 9 — Le volume : cubes unités, cube et pavé droit
+- `P` Révision de l’unité V
+- `P` Sujet d’examen format CEPE
+- `P` Tableau de bord
+- `T1C1` Leçons
+- `T1C2` Apprentissages
+- `T1C3` Révision
+- `T1C4` Examen
+- `T2C1` 11
+- `T2C2` 9
+- `T2C3` 1
+- `T2C4` 1
+
+### SÉANCE 1 / 11 — LES MESURES DE LONGUEUR ET LEURS CONVERSIONS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 1 / 11 — LES MESURES DE LONGUEUR ET LEURS CONVERSIONS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : MesureThème : Unités de longueur et conversionsTitre : Les mesures de longueur et leurs conversionsObjectif spécifique : À la fin de la séance, l’apprenant est capable de choisir l’unité de longueur appropriée et convertir à l’aide du tableau de conversion.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Mètre ruban, règle graduée, tableau de conversion, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 1 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Deux triangles identiques assemblés peuvent former quelles figures ?
+- `T3C3` R.A. : Un carré ou rectangle, un grand triangle, un parallélogramme.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à choisir l’unité de longueur appropriée et convertir à l’aide du tableau de conversion. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Le géomètre mesure le champ en mètres, la couturière mesure le tissu en centimètres, et le panneau de la route annonce Antsirabe en kilomètres. Trois métiers, trois unités ! Comment choisir la bonne — et comment passer de l’une à l’autre sans se tromper ?
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Les mesures de longueur et leurs conversions » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Convertir 7,8 m en cm : 7 en m, 8 en dm, 0 en cm → 780 cm. Et 3 500 m = 3,5 km.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le tableau de conversion est une machine infaillible, à condition de respecter sa règle d’or : UN CHIFFRE PAR COLONNE, le chiffre des unités du nombre dans la colonne de son unité. Pour convertir 3,25 m en cm : le 3 se pose dans la colonne m, le 2 en dm, le 5 en cm — et on lit 325 cm. Pour 4 km en m : le 4 en km, puis on complète de zéros jusqu’à la colonne m : 4 000 m. Dans l’autre sens, 250 cm → la virgule vient se placer après la colonne m : 2,50 m. Le choix de l’unité est affaire de bon sens : les mm pour l’épaisseur d’une pièce, les cm pour un cahier, les m pour la classe, les km pour la route — mesurer la distance Tana-Antsirabe en cm donnerait un nombre de 8 chiffres ! Avant toute addition de longueurs, tout convertir DANS LA MÊME unité.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, km hm dam m dm cm mm ; × 10 par marche vers la droite ; un chiffre par colonne, zéros pour compléter ; même unité avant de calculer.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Convertis : a) 5 m en cm ; b) 3 km en m ; d) 7,2 cm en mm ; e) 0,8 m en cm. Convertis : a) 450 cm en m ; b) 2 500 m en km ; d) 85 mm en cm ; e) 12 dm en m.
+- `T10C3` a) 500 cm ; b) 3 000 m ; d) 72 mm ; e) 80 cm. a) 4,5 m ; b) 2,5 km ; d) 8,5 cm ; e) 1,2 m.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Convertis : a) 5 m en cm ; b) 3 km en m ; d) 7,2 cm en mm ; e) 0,8 m en cm. Puis justifie l’une de tes réponses.
+- `T11C3` a) 500 cm ; b) 3 000 m ; d) 72 mm ; e) 80 cm. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LES MESURES DE LONGUEUR ET LEURS CONVERSIONS
+- `P` Unités de longueur et conversions
+- `P` L’unité principale des longueurs est le mètre (m). Ses multiples sont le décamètre (dam = 10 m), l’hectomètre (hm = 100 m) et le kilomètre (km = 1 000 m) ; ses sous-multiples sont le décimètre (dm), le centimètre (cm) et le millimètre (mm). Chaque unité vaut 10 fois l’unité placée à sa droite dans le tableau de conversion.
+- `P` les unités de longueur forment un escalier : chaque marche vers la droite multiplie par 10, chaque marche vers la gauche divise par 10.
+- `P` Exemple : Convertir 7,8 m en cm : 7 en m, 8 en dm, 0 en cm → 780 cm. Et 3 500 m = 3,5 km.
+- `P` 1. Tracer le tableau et poser le nombre, un chiffre par colonne, l’unité donnée recevant le chiffre des unités.
+- `P` 2. Compléter avec des zéros jusqu’à l’unité demandée.
+- `P` 3. Lire le résultat, la virgule derrière la nouvelle unité.
+- `P` km hm dam m dm cm mm ; × 10 par marche vers la droite ; un chiffre par colonne, zéros pour compléter ; même unité avant de calculer.
+- `P` Le savais-tu ? Le mètre a été inventé pendant la Révolution française : les savants ont voulu une unité valant la dix-millionième partie du quart du tour de la Terre ! Deux astronomes ont mesuré la France pendant 7 ans pour le calculer.
+- `P` Attention : Croire que « 1 m = 100 cm donc 1,5 m = 105 cm » : la conversion n’est pas un collage de chiffres ! Le tableau donne 150 cm. Toujours poser les colonnes en cas de doute.
+- `P` EXERCICE
+- `P` 1. Convertis : a) 5 m en cm ; b) 3 km en m ; d) 7,2 cm en mm ; e) 0,8 m en cm.
+- `P` 2. Convertis : a) 450 cm en m ; b) 2 500 m en km ; d) 85 mm en cm ; e) 12 dm en m.
+- `P` 3. Le chemin de l’école fait 1,2 km ; Hanta a déjà marché 650 m. a) Convertis 1,2 km en m. b) Quelle distance reste-t-il ? d) Exprime le reste en km. e) Quelle unité choisirais-tu pour mesurer ton cahier ? Pourquoi ?
+- `P` 4. Convertis : a) 3 m en cm ; b) 250 cm en m ; d) 7 km en m ; e) 4 500 m en km.
+- `P` 5. a) Convertis 2 m 35 cm en centimètres. b) Convertis 5 km 250 m en mètres. d) Compare 3 050 m et 3 km 5 m. e) Range en ordre croissant : 1 200 m ; 1,5 km ; 980 m.
+- `P` 6. Défi CEPE — Le chemin de l’école mesure 1,2 km. Lova fait l’aller-retour le matin et l’aller-retour l’après-midi. a) Quelle distance parcourt-elle par jour ? b) Par semaine de 5 jours d’école ? d) Exprime cette distance hebdomadaire en mètres. e) Au bout de combien de jours dépasse-t-elle 50 km ?
+- `P` Correction
+- `P` 1. a) 500 cm ; b) 3 000 m ; d) 72 mm ; e) 80 cm.
+- `P` 2. a) 4,5 m ; b) 2,5 km ; d) 8,5 cm ; e) 1,2 m.
+- `P` 3. a) 1 200 m ; b) 1 200 − 650 = 550 m ; d) 0,55 km ; e) le cm : le cahier est trop petit pour le m, trop grand pour le mm.
+- `P` 4. a) 300 cm ; b) 2,5 m ; d) 7 000 m ; e) 4,5 km.
+- `P` 5. a) 235 cm ; b) 5 250 m ; d) 3 km 5 m = 3 005 m, donc 3 050 m > 3 km 5 m ; e) 980 m < 1 200 m < 1,5 km (soit 1 500 m).
+- `P` 6. a) 4 × 1,2 = 4,8 km ; b) 5 × 4,8 = 24 km ; d) 24 000 m ; e) au 11ᵉ jour : 10 jours font 48 km (pas assez), 11 jours font 52,8 km.
+
+### SÉANCE 2 / 11 — LE PÉRIMÈTRE DES POLYGONES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 2 / 11 — LE PÉRIMÈTRE DES POLYGONES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : MesureThème : Périmètre : formules et problèmesTitre : Le périmètre des polygonesObjectif spécifique : À la fin de la séance, l’apprenant est capable de calculer le périmètre d’un polygone et retrouver une dimension à partir du périmètre.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Ficelle, mètre ruban, règle, figures tracées, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 2 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Convertis 3,4 m en cm.
+- `T3C3` R.A. : 340 cm.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à calculer le périmètre d’un polygone et retrouver une dimension à partir du périmètre. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Papa veut clôturer le potager rectangulaire de 8 m sur 5 m. Combien de mètres de fil acheter ? Il faut la longueur du TOUR complet du potager : son périmètre. Trop court, la clôture bâille ; trop long, l’argent est gaspillé.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Le périmètre des polygones » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Rectangle de 12 m sur 7 m : P = (12 + 7) × 2 = 38 m ; carré de périmètre 48 cm : côté = 48 ÷ 4 = 12 cm.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La formule n’est qu’une addition rangée : le rectangle a deux longueurs et deux largeurs, donc 8 + 5 + 8 + 5 = (8 + 5) × 2 = 26 m — la formule compte plus vite, mais l’addition des côtés marche TOUJOURS, même pour un polygone quelconque de côtés 7, 9, 4 et 6 m (périmètre 26 m aussi !). Les formules savent aussi marcher à reculons : si la clôture d’un carré a pris 36 m, le côté vaut 36 ÷ 4 = 9 m ; si un rectangle de périmètre 26 m a 8 m de longueur, alors longueur + largeur = 26 ÷ 2 = 13, donc largeur = 13 − 8 = 5 m. Piège d’unités : des côtés en m et en cm ne s’additionnent JAMAIS tels quels — tout convertir d’abord. Et le périmètre se mesure en unités de LONGUEUR : m, cm… jamais en m².
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, P = somme de tous les côtés ; rectangle (L + l) × 2 ; carré c × 4 ; à reculons : P ÷ 4 donne le côté du carré, P ÷ 2 − L donne la largeur.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule le périmètre : a) rectangle de 9 m sur 4 m ; b) carré de 7 cm ; d) triangle équilatéral de 12 cm ; e) polygone de côtés 5, 8, 6 et 7 m. Retrouve la dimension : a) carré de périmètre 60 cm ; b) triangle équilatéral de périmètre 27 m ; d) rectangle de périmètre 30 m et de longueur 9 m ; e) rectangle de périmètre 42 cm et de largeur 8 cm.
+- `T10C3` a) 26 m ; b) 28 cm ; d) 36 cm ; e) 26 m. a) côté 15 cm ; b) côté 9 m ; d) largeur 30 ÷ 2 − 9 = 6 m ; e) longueur 42 ÷ 2 − 8 = 13 cm.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule le périmètre : a) rectangle de 9 m sur 4 m ; b) carré de 7 cm ; d) triangle équilatéral de 12 cm ; e) polygone de côtés 5, 8, 6 et 7 m. Puis justifie l’une de tes réponses.
+- `T11C3` a) 26 m ; b) 28 cm ; d) 36 cm ; e) 26 m. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LE PÉRIMÈTRE DES POLYGONES
+- `P` Périmètre : formules et problèmes
+- `P` Le périmètre d’un polygone est la longueur de son tour complet : la somme des longueurs de tous ses côtés. Pour le rectangle, P = (longueur + largeur) × 2 ; pour le carré, P = côté × 4 ; pour tout polygone régulier, P = côté × nombre de côtés.
+- `P` le périmètre, c’est le voyage d’une fourmi qui fait tout le tour de la figure et revient à son départ.
+- `P` Exemple : Rectangle de 12 m sur 7 m : P = (12 + 7) × 2 = 38 m ; carré de périmètre 48 cm : côté = 48 ÷ 4 = 12 cm.
+- `P` 1. Vérifier que tous les côtés sont dans la même unité (convertir sinon).
+- `P` 2. Appliquer la formule de la figure — ou additionner tous les côtés.
+- `P` 3. Contrôler l’ordre de grandeur et écrire l’unité (m, cm…).
+- `P` P = somme de tous les côtés ; rectangle (L + l) × 2 ; carré c × 4 ; à reculons : P ÷ 4 donne le côté du carré, P ÷ 2 − L donne la largeur.
+- `P` Le savais-tu ? Le mot « périmètre » vient du grec peri (autour) et metron (mesure) : « mesurer autour ».
+- `P` Attention : Additionner seulement une longueur et une largeur : (8 + 5) = 13 m n’est que le DEMI-tour ! La fourmi doit revenir à son départ : on multiplie par 2.
+- `P` EXERCICE
+- `P` 1. Calcule le périmètre : a) rectangle de 9 m sur 4 m ; b) carré de 7 cm ; d) triangle équilatéral de 12 cm ; e) polygone de côtés 5, 8, 6 et 7 m.
+- `P` 2. Retrouve la dimension : a) carré de périmètre 60 cm ; b) triangle équilatéral de périmètre 27 m ; d) rectangle de périmètre 30 m et de longueur 9 m ; e) rectangle de périmètre 42 cm et de largeur 8 cm.
+- `P` 3. Le potager de Papa mesure 8 m sur 5 m. a) Calcule le périmètre. b) Le fil se vend par rouleaux de 10 m : combien de rouleaux ? d) Il laisse une porte de 1 m sans fil : quelle longueur de fil faut-il vraiment ? e) Combien coûte la clôture à 3 500 Ar le rouleau (rouleaux entiers) ?
+- `P` 4. Calcule le périmètre : a) un carré de côté 7 cm ; b) un rectangle de 9 cm sur 4 cm ; d) un triangle équilatéral de côté 6 cm ; e) un triangle de côtés 5 cm, 7 cm et 9 cm.
+- `P` 5. a) Le périmètre d’un carré vaut 36 cm : quel est son côté ? b) Un rectangle a un périmètre de 30 cm et une longueur de 9 cm : quelle est sa largeur ? d) Quelle longueur de clôture pour un terrain rectangulaire de 25 m sur 18 m ? e) À 12 000 Ar le mètre, combien coûte cette clôture ?
+- `P` 6. Défi CEPE — Un jardin carré de 15 m de côté doit être entouré d’un grillage, sauf un portail de 2 m de large. a) Quel est le périmètre du jardin ? b) Quelle longueur de grillage faut-il ? d) Le grillage se vend en rouleaux de 10 m : combien de rouleaux acheter ? e) Quelle longueur restera-t-elle inutilisée ?
+- `P` Correction
+- `P` 1. a) 26 m ; b) 28 cm ; d) 36 cm ; e) 26 m.
+- `P` 2. a) côté 15 cm ; b) côté 9 m ; d) largeur 30 ÷ 2 − 9 = 6 m ; e) longueur 42 ÷ 2 − 8 = 13 cm.
+- `P` 3. a) 26 m ; b) 3 rouleaux (26 > 20, il en faut 3) ; d) 26 − 1 = 25 m ; e) 25 m → encore 3 rouleaux : 3 × 3 500 = 10 500 Ar.
+- `P` 4. a) 4 × 7 = 28 cm ; b) (9 + 4) × 2 = 26 cm ; d) 3 × 6 = 18 cm ; e) 5 + 7 + 9 = 21 cm.
+- `P` 5. a) 36 ÷ 4 = 9 cm ; b) 30 ÷ 2 = 15, puis 15 − 9 = 6 cm ; d) (25 + 18) × 2 = 86 m ; e) 86 × 12 000 = 1 032 000 Ar.
+- `P` 6. a) 4 × 15 = 60 m ; b) 60 − 2 = 58 m ; d) 6 rouleaux (5 rouleaux = 50 m, insuffisant) ; e) 60 − 58 = 2 m.
+
+### SÉANCE 3 / 11 — LA CIRCONFÉRENCE DU CERCLE
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 3 / 11 — LA CIRCONFÉRENCE DU CERCLE
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : MesureThème : Circonférence : C = d × 3,14Titre : La circonférence du cercleObjectif spécifique : À la fin de la séance, l’apprenant est capable de calculer la circonférence d’un cercle à partir de son diamètre ou de son rayon.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Ficelle, objets ronds (roue, assiette, boîte), règle, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 3 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Périmètre d’un carré de 11 cm de côté ?
+- `T3C3` R.A. : 44 cm.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à calculer la circonférence d’un cercle à partir de son diamètre ou de son rayon. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La roue de la charrette mesure 70 cm d’un bord à l’autre. À chaque tour, quelle distance parcourt-elle ? Les enfants entourent la roue d’une ficelle, la déroulent, mesurent : environ 2,20 m — un peu plus de 3 fois le diamètre… Toujours « un peu plus de 3 fois », quelle que soit la roue !
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « La circonférence du cercle » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Assiette de 24 cm de diamètre : C = 24 × 3,14 = 75,36 cm ; puits de rayon 0,5 m : C = 1 × 3,14 = 3,14 m.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le nombre 3,14 est la merveille de la séance : TOUS les cercles du monde, de la pièce de monnaie au stade, ont un tour qui vaut environ 3,14 fois leur diamètre. Ce rapport universel s’appelle pi (π) — son écriture décimale ne s’arrête jamais (3,141592…), et 3,14 en est la valeur approchée des écoliers. L’expérience de la ficelle le vérifie : 220 ÷ 70 ≈ 3,14. La formule travaille dans tous les sens : roue de diamètre 70 cm → C = 70 × 3,14 = 219,8 cm ≈ 2,20 m par tour ; et pour 10 tours, 22 m. Avec le rayon, doubler d’abord : r = 35 cm → d = 70 cm → C = 219,8 cm. À reculons enfin : un bassin de tour 12,56 m a pour diamètre 12,56 ÷ 3,14 = 4 m. Attention : le cercle n’est pas un polygone, « côté × nombre de côtés » ne s’applique pas — c’est π qui règne ici.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, d = 2 × r ; C = d × 3,14 (= 2 × r × 3,14) ; à reculons : d = C ÷ 3,14 ; 3,14 ≈ π, le même pour tous les cercles.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule la circonférence : a) d = 10 cm ; b) d = 25 cm ; d) r = 4 m ; e) r = 50 cm. a) Une roue de vélo a un diamètre de 60 cm : circonférence ? b) Distance parcourue en 10 tours ? d) En 100 tours ? e) Convertis ce dernier résultat en mètres.
+- `T10C3` a) 31,4 cm ; b) 78,5 cm ; d) 8 × 3,14 = 25,12 m ; e) 100 × 3,14 = 314 cm. a) 60 × 3,14 = 188,4 cm ; b) 1 884 cm ; d) 18 840 cm ; e) 188,40 m.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule la circonférence : a) d = 10 cm ; b) d = 25 cm ; d) r = 4 m ; e) r = 50 cm. Puis justifie l’une de tes réponses.
+- `T11C3` a) 31,4 cm ; b) 78,5 cm ; d) 8 × 3,14 = 25,12 m ; e) 100 × 3,14 = 314 cm. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LA CIRCONFÉRENCE DU CERCLE
+- `P` Circonférence : C = d × 3,14
+- `P` La circonférence est le périmètre du cercle. Le diamètre d est la longueur qui traverse le cercle en passant par le centre ; le rayon r va du centre au bord, et d = 2 × r. La circonférence se calcule par la formule C = d × 3,14.
+- `P` le tour d’un cercle vaut toujours environ 3,14 fois sa traversée : mesure la traversée, multiplie par 3,14, tu as le tour.
+- `P` Exemple : Assiette de 24 cm de diamètre : C = 24 × 3,14 = 75,36 cm ; puits de rayon 0,5 m : C = 1 × 3,14 = 3,14 m.
+- `P` 1. Repérer la donnée : diamètre ou rayon (rayon → doubler d’abord).
+- `P` 2. Multiplier le diamètre par 3,14.
+- `P` 3. Écrire l’unité et contrôler : la circonférence fait un peu plus de 3 diamètres.
+- `P` d = 2 × r ; C = d × 3,14 (= 2 × r × 3,14) ; à reculons : d = C ÷ 3,14 ; 3,14 ≈ π, le même pour tous les cercles.
+- `P` Le savais-tu ? Le nombre π fascine l’humanité depuis 4 000 ans : les Babyloniens l’estimaient à 3,125, Archimède l’a coincé entre deux fractions, et les ordinateurs connaissent aujourd’hui plus de 100 000 milliards de ses décimales ! Il existe même un « jour de π » : le 14 mars (), fêté par les mathématiciens du monde entier.
+- `P` Attention : Multiplier le RAYON par 3,14 en croyant tenir la circonférence : avec r = 35 cm on obtiendrait 109,9 cm, la moitié du vrai tour ! C’est le DIAMÈTRE qui entre dans la formule.
+- `P` EXERCICE
+- `P` 1. Calcule la circonférence : a) d = 10 cm ; b) d = 25 cm ; d) r = 4 m ; e) r = 50 cm.
+- `P` 2. a) Une roue de vélo a un diamètre de 60 cm : circonférence ? b) Distance parcourue en 10 tours ? d) En 100 tours ? e) Convertis ce dernier résultat en mètres.
+- `P` 3. Le bassin rond du village a une circonférence de 9,42 m. a) Calcule son diamètre. b) Son rayon. d) On veut l’entourer d’une petite barrière vendue au mètre entier : combien de mètres acheter ? e) Pourquoi la ficelle des enfants donne-t-elle « environ » 3,14 et pas exactement ?
+- `P` 4. Prends π ≈ 3,14. Calcule la circonférence d’un cercle de : a) diamètre 10 cm ; b) diamètre 4 cm ; d) rayon 3 cm ; e) rayon 10 cm.
+- `P` 5. Une roue de bicyclette a un diamètre de 60 cm. a) Quelle est sa circonférence ? b) Quelle distance parcourt-elle en 10 tours ? d) Exprime cette distance en mètres. e) Combien de tours environ pour parcourir 100 m ?
+- `P` 6. Défi CEPE — Le tour d’un puits circulaire mesure 6,28 m. a) Quelle formule relie la circonférence et le diamètre ? b) Calcule le diamètre du puits. d) Son rayon. e) On construit une margelle circulaire dont le bord est à 1 m du bord du puits : quelle est la circonférence de ce grand cercle ?
+- `P` Correction
+- `P` 1. a) 31,4 cm ; b) 78,5 cm ; d) 8 × 3,14 = 25,12 m ; e) 100 × 3,14 = 314 cm.
+- `P` 2. a) 60 × 3,14 = 188,4 cm ; b) 1 884 cm ; d) 18 840 cm ; e) 188,40 m.
+- `P` 3. a) 9,42 ÷ 3,14 = 3 m ; b) 1,5 m ; d) 10 m (9,42 arrondi au mètre supérieur) ; e) la mesure à la ficelle est imprécise, et 3,14 est déjà une valeur approchée de π.
+- `P` 4. a) 10 × 3,14 = 31,4 cm ; b) 12,56 cm ; d) 2 × 3,14 × 3 = 18,84 cm ; e) 62,8 cm.
+- `P` 5. a) 60 × 3,14 = 188,4 cm ; b) 1 884 cm ; d) 18,84 m ; e) 100 ÷ 1,884 ≈ 53 tours.
+- `P` 6. a) circonférence = diamètre × π ; b) 6,28 ÷ 3,14 = 2 m ; d) 1 m ; e) le grand rayon vaut 1 + 1 = 2 m, donc 2 × 3,14 × 2 = 12,56 m.
+
+### SÉANCE 4 / 11 — LA MASSE : ESTIMER, MESURER, CONVERTIR
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 4 / 11 — LA MASSE : ESTIMER, MESURER, CONVERTIR
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : MesureThème : Unités de masse jusqu’à la tonneTitre : La masse : estimer, mesurer, convertirObjectif spécifique : À la fin de la séance, l’apprenant est capable de estimer, mesurer et convertir des masses du gramme à la tonne.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Balance à plateaux, poids marqués, objets à peser, tableau de conversion, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 4 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` C = d × … ? Et d = 2 × … ?
+- `T3C3` R.A. : C = d × 3,14 ; d = 2 × rayon.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à estimer, mesurer et convertir des masses du gramme à la tonne. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Sur le marché, la marchande pose le riz sur un plateau et les poids de fonte sur l’autre : 1 kg, 500 g, 250 g… Quand la balance s’équilibre, la masse est lue ! Mais le camion qui livre ses sacs se pèse en tonnes, et le cachet du médicament en milligrammes : la masse aussi a sa famille d’unités.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « La masse : estimer, mesurer, convertir » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 3,2 kg = 3 200 g ; 450 kg = 4,5 q ; 7 t = 7 000 kg ; un sac de ciment estimé « lourd comme 5 seaux » ≈ 50 kg.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La conversion suit la machine habituelle : 2 500 g → le 2 en kg, le 5 en hg, les 0 en dag et g → 2,5 kg. Les géants ont leurs raccourcis : 1 t = 1 000 kg (3 colonnes d’écart), 1 q = 100 kg — un zébu de 4 quintaux pèse 400 kg, et 3 t de riz font 3 000 kg. La nouveauté de la séance est l’ESTIMATION : avant de peser, on devine l’ordre de grandeur avec des repères en tête — une orange ≈ 200 g, un kapoaka de riz rempli ≈ 285 g, un seau d’eau ≈ 10 kg, un zébu adulte ≈ 400 kg, un camion chargé : des tonnes. L’estimation est le garde-fou de la balance : si la pesée du poulet affiche 18 kg, c’est la lecture qui cloche, pas le poulet ! La balance à plateaux, elle, enseigne l’égalité : elle s’équilibre quand les deux masses sont égales — c’est la balance de l’unité III, en chair et en fonte.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, t q kg hg dag g ; 1 t = 1 000 kg, 1 q = 100 kg, 1 kg = 1 000 g ; estimer avant de peser avec des repères (orange 200 g, seau 10 kg, zébu 400 kg).
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Convertis : a) 4 kg en g ; b) 2 500 g en kg ; d) 3 t en kg ; e) 5 q en kg. Choisis l’unité (g, kg, q ou t) : a) une gomme ; b) un sac de riz du marché ; d) un zébu ; e) un camion chargé.
+- `T10C3` a) 4 000 g ; b) 2,5 kg ; d) 3 000 kg ; e) 500 kg. a) g (≈ 20 g) ; b) kg ; d) q (3 à 5 q) ; e) t.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Convertis : a) 4 kg en g ; b) 2 500 g en kg ; d) 3 t en kg ; e) 5 q en kg. Puis justifie l’une de tes réponses.
+- `T11C3` a) 4 000 g ; b) 2,5 kg ; d) 3 000 kg ; e) 500 kg. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LA MASSE : ESTIMER, MESURER, CONVERTIR
+- `P` Unités de masse jusqu’à la tonne
+- `P` La masse mesure ce que pèse un objet. L’unité principale est le gramme (g) ; au-dessus : le décagramme (dag), l’hectogramme (hg), le kilogramme (kg = 1 000 g), le quintal (q = 100 kg) et la tonne (t = 1 000 kg). Le tableau de conversion fonctionne comme celui des longueurs : un chiffre par colonne.
+- `P` même escalier que les longueurs, mais pour le poids : g pour les petits objets, kg pour le quotidien, tonne pour les camions.
+- `P` Exemple : 3,2 kg = 3 200 g ; 450 kg = 4,5 q ; 7 t = 7 000 kg ; un sac de ciment estimé « lourd comme 5 seaux » ≈ 50 kg.
+- `P` 1. Estimer d’abord la masse avec un repère connu.
+- `P` 2. Peser (équilibre des plateaux) ou convertir au tableau, un chiffre par colonne.
+- `P` 3. Confronter mesure et estimation ; écrire l’unité.
+- `P` t q kg hg dag g ; 1 t = 1 000 kg, 1 q = 100 kg, 1 kg = 1 000 g ; estimer avant de peser avec des repères (orange 200 g, seau 10 kg, zébu 400 kg).
+- `P` Le savais-tu ? Pendant 130 ans, le kilogramme du monde entier a été UN objet : un cylindre de métal précieux gardé sous trois cloches de verre près de Paris, le « grand K ».
+- `P` Attention : Confondre les écarts : entre kg et g il y a TROIS colonnes (× 1 000), pas une ! 2,5 kg = 2 500 g, et non 250 g. Le quintal (100 kg) et la tonne (1 000 kg) se confondent aussi : un zébu pèse des quintaux, pas des tonnes.
+- `P` EXERCICE
+- `P` 1. Convertis : a) 4 kg en g ; b) 2 500 g en kg ; d) 3 t en kg ; e) 5 q en kg.
+- `P` 2. Choisis l’unité (g, kg, q ou t) : a) une gomme ; b) un sac de riz du marché ; d) un zébu ; e) un camion chargé.
+- `P` 3. La coopérative stocke 2,4 t de riz. a) Convertis en kg. b) On remplit des sacs de 50 kg : combien de sacs ? d) Un client achète 6 sacs : quelle masse en kg ? e) Exprime le reste du stock en tonnes.
+- `P` 4. Convertis : a) 3 kg en g ; b) 4 500 g en kg ; d) 2 t en kg ; e) 750 g + 250 g, en kg.
+- `P` 5. Choisis l’unité qui convient (g, kg ou t) : a) la masse d’un zébu ; b) d’une orange ; d) d’un sac de riz ; e) d’un camion chargé.
+- `P` 6. Défi CEPE — Une marchande achète 25 kg de sucre pour 110 000 Ar et prépare des sachets de 500 g. a) Convertis 25 kg en grammes. b) Combien de sachets obtient-elle ? d) Elle vend chaque sachet 2 500 Ar : quelle est sa recette totale ? e) Quel est son bénéfice ?
+- `P` Correction
+- `P` 1. a) 4 000 g ; b) 2,5 kg ; d) 3 000 kg ; e) 500 kg.
+- `P` 2. a) g (≈ 20 g) ; b) kg ; d) q (3 à 5 q) ; e) t.
+- `P` 3. a) 2 400 kg ; b) 2 400 ÷ 50 = 48 sacs ; d) 300 kg ; e) 2 400 − 300 = 2 100 kg = 2,1 t.
+- `P` 4. a) 3 000 g ; b) 4,5 kg ; d) 2 000 kg ; e) 1 000 g = 1 kg.
+- `P` 5. a) en kg (300 à 400 kg environ) ; b) en g ; d) en kg ; e) en t.
+- `P` 6. a) 25 000 g ; b) 25 000 ÷ 500 = 50 sachets ; d) 50 × 2 500 = 125 000 Ar ; e) 125 000 − 110 000 = 15 000 Ar.
+
+### SÉANCE 5 / 11 — LA CAPACITÉ : LITRES ET CONVERSIONS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 5 / 11 — LA CAPACITÉ : LITRES ET CONVERSIONS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : MesureThème : Unités de capacité ; lien capacité-masseTitre : La capacité : litres et conversionsObjectif spécifique : À la fin de la séance, l’apprenant est capable de estimer et convertir des capacités et utiliser le lien entre litres d’eau et kilogrammes.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Bouteilles, bidon, verre doseur, entonnoir, eau, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 5 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` 1 tonne = combien de kg ? Et 1 quintal ?
+- `T3C3` R.A. : 1 000 kg ; 100 kg.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à estimer et convertir des capacités et utiliser le lien entre litres d’eau et kilogrammes. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Hanta remplit des bouteilles de 1,5 L avec le bidon de 20 L. « Combien de bouteilles ? » demande sa mère. Et quand Papa charge le bidon plein sur le vélo, il grogne : « il pèse au moins 20 kilos ! » Comment le sait-il sans balance ? Le litre et le kilo sont de vieux complices.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « La capacité : litres et conversions » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 2,5 L = 250 cL ; 500 mL = 0,5 L ; une citerne de 1 500 L d’eau pèse 1 500 kg = 1,5 t.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le tableau des capacités tourne comme les autres : 1,5 L = 150 cL = 1 500 mL ; 250 cL = 2,5 L ; 3 hL = 300 L. Les repères d’estimation : une cuillère ≈ 5 mL, un verre ≈ 20 cL, une grande bouteille = 1,5 L, un seau ≈ 10 L, un bidon jaune = 20 L, un fût = des hectolitres. Le pont capacité-masse est le trésor de la séance : 1 L d’eau pèse exactement 1 kg — donc le bidon de 20 L pèse 20 kg d’eau (plus le plastique), et 1 000 L d’eau (un m³ !) pèsent une tonne. Ce lien, demandé par le programme, sert partout : la citerne de 2 000 L stocke 2 t d’eau — gare au toit qui la porte ! Attention : le pont ne vaut que pour L’EAU — un litre d’huile pèse un peu moins (≈ 0,9 kg), un litre de miel bien plus. Et pour le problème de Hanta : 20 ÷ 1,5 = 13 bouteilles pleines, et il reste 0,5 L.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, hL daL L dL cL mL ; 1 L = 100 cL = 1 000 mL ; repères (verre 20 cL, seau 10 L, bidon 20 L) ; eau : 1 L = 1 kg, 1 000 L = 1 t.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Convertis : a) 3 L en cL ; b) 1 500 mL en L ; d) 2 hL en L ; e) 25 cL en mL. Choisis l’unité (mL, cL, L ou hL) : a) une cuillère de sirop ; b) un verre de jus ; d) un seau ; e) la citerne de l’école.
+- `T10C3` a) 300 cL ; b) 1,5 L ; d) 200 L ; e) 250 mL. a) mL ; b) cL ; d) L ; e) hL.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Convertis : a) 3 L en cL ; b) 1 500 mL en L ; d) 2 hL en L ; e) 25 cL en mL. Puis justifie l’une de tes réponses.
+- `T11C3` a) 300 cL ; b) 1,5 L ; d) 200 L ; e) 250 mL. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LA CAPACITÉ : LITRES ET CONVERSIONS
+- `P` Unités de capacité ; lien capacité-masse
+- `P` La capacité mesure ce qu’un récipient peut contenir. L’unité principale est le litre (L) ; au-dessus : le décalitre (daL) et l’hectolitre (hL = 100 L) ; en dessous : le décilitre (dL), le centilitre (cL) et le millilitre (mL). 1 L = 100 cL = 1 000 mL. Pour l’eau, 1 litre pèse 1 kilogramme.
+- `P` le litre a le même escalier que les autres unités — et pour l’eau, litres et kilos disent le même nombre.
+- `P` Exemple : 2,5 L = 250 cL ; 500 mL = 0,5 L ; une citerne de 1 500 L d’eau pèse 1 500 kg = 1,5 t.
+- `P` 1. Estimer la capacité avec un repère (verre, bouteille, seau, bidon).
+- `P` 2. Convertir au tableau, un chiffre par colonne.
+- `P` 3. Pour l’eau, traduire les litres en kg (même nombre) si le problème parle de masse.
+- `P` hL daL L dL cL mL ; 1 L = 100 cL = 1 000 mL ; repères (verre 20 cL, seau 10 L, bidon 20 L) ; eau : 1 L = 1 kg, 1 000 L = 1 t.
+- `P` Le savais-tu ? Ton corps est un vrai réservoir : il contient environ 35 litres d’eau pour un adulte — près de 60 % de sa masse ! Et le zébu qui rentre du pâturage peut boire plus de 40 L d’un coup : deux bidons jaunes entiers, soit 40 kg d’eau avalés en quelques minutes.
+- `P` Attention : Étendre « 1 L = 1 kg » à tous les liquides : un litre d’huile ne pèse PAS 1 kg ! Le pont litre-kilo est réservé à l’eau.
+- `P` EXERCICE
+- `P` 1. Convertis : a) 3 L en cL ; b) 1 500 mL en L ; d) 2 hL en L ; e) 25 cL en mL.
+- `P` 2. Choisis l’unité (mL, cL, L ou hL) : a) une cuillère de sirop ; b) un verre de jus ; d) un seau ; e) la citerne de l’école.
+- `P` 3. Hanta remplit des bouteilles de 1,5 L au bidon de 20 L. a) Combien de bouteilles pleines ? b) Que reste-t-il dans le bidon ? d) Combien pèse l’eau du bidon plein ? e) Combien pèsent 1 000 L d’eau ? Donne l’unité la mieux adaptée.
+- `P` 4. Convertis : a) 3 L en cL ; b) 250 cL en L ; d) 5 L en mL ; e) 1 500 mL en L.
+- `P` 5. Une bouteille contient 1,5 L de jus. a) Convertis en centilitres. b) Combien de verres de 25 cL peut-on remplir ? d) On a déjà servi 4 verres : quel volume a été servi ? e) Exprime ce volume servi en litres.
+- `P` 6. Défi CEPE — Un fût contient 200 L d’eau ; un arrosoir contient 12,5 L. a) Combien d’arrosoirs pleins peut-on remplir ? b) Vérifie ta réponse par une multiplication. d) On utilise 4 arrosoirs par jour : en combien de jours vide-t-on le fût ? e) Quel volume reste-t-il après 3 jours ?
+- `P` Correction
+- `P` 1. a) 300 cL ; b) 1,5 L ; d) 200 L ; e) 250 mL.
+- `P` 2. a) mL ; b) cL ; d) L ; e) hL.
+- `P` 3. a) 20 ÷ 1,5 → 13 bouteilles pleines ; b) 20 − 13 × 1,5 = 0,5 L ; d) 20 kg ; e) 1 000 kg = 1 tonne.
+- `P` 4. a) 300 cL ; b) 2,5 L ; d) 5 000 mL ; e) 1,5 L.
+- `P` 5. a) 150 cL ; b) 150 ÷ 25 = 6 verres ; d) 4 × 25 = 100 cL ; e) 1 L.
+- `P` 6. a) 200 ÷ 12,5 = 16 arrosoirs ; b) 16 × 12,5 = 200 L : c’est juste ; d) 16 ÷ 4 = 4 jours ; e) 3 jours = 12 arrosoirs = 150 L utilisés, il reste 200 − 150 = 50 L.
+
+### SÉANCE 6 / 11 — LA MESURE DU TEMPS : CONVERSIONS ET OPÉRATIONS
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 6 / 11 — LA MESURE DU TEMPS : CONVERSIONS ET OPÉRATIONS
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : MesureThème : Temps : conversions, calculs de duréesTitre : La mesure du temps : conversions et opérationsObjectif spécifique : À la fin de la séance, l’apprenant est capable de convertir des durées et effectuer des opérations sur les mesures de temps.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Horloge de classe, montre, calendrier, chronomètre, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 6 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Un litre d’eau pèse… ? Et 1 000 L ?
+- `T3C3` R.A. : 1 kg ; 1 000 kg = 1 tonne.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à convertir des durées et effectuer des opérations sur les mesures de temps. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Le taxi-brousse part à 8 h 45 et roule 2 h 30. Rivo calcule : « 8 h 45 + 2 h 30 = 10 h 75… » Dix heures soixante-quinze ?! Cette montre-là n’existe pas : passé 60 minutes, on change d’heure ! Le temps a son propre règlement, et il ne compte pas en dizaines.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « La mesure du temps : conversions et opérations » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 2 h 45 + 1 h 30 = 3 h 75 = 4 h 15 ; et de 7 h 50 à 9 h 20, il s’écoule 10 min + 1 h 20 = 1 h 30.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le temps est le grand rebelle du système décimal : ses échanges se font à 60 (s → min, min → h) et à 24 (h → jour) — héritage des Babyloniens, qui comptaient en base 60. Toutes les techniques des grands nombres s’adaptent : addition 8 h 45 + 2 h 30 → heures : 10 h, minutes : 75 min = 1 h 15 → 11 h 15, l’arrivée du taxi ! Soustraction avec emprunt : 10 h 15 − 9 h 40 → 15 < 40, on casse 1 h en 60 min : 9 h 75 − 9 h 40 = 35 min. Conversions en chaîne : 3 h = 180 min ; 150 min = 2 h 30 ; 2 jours = 48 h. Et la durée entre deux horaires se calcule par étapes commodes : de 9 h 40 à 10 h il y a 20 min, puis 15 min : 35 min en tout — la méthode du « compter en avant », cousine de celle des caissiers de l’unité II.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, 1 min = 60 s, 1 h = 60 min, 1 jour = 24 h ; additionner heures et minutes séparément, échanger à 60 ; durée entre deux horaires : compter en avant.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Convertis : a) 3 min en s ; b) 240 min en h ; d) 2 h 30 en min ; e) 3 jours en h. Calcule : a) 1 h 20 + 2 h 15 ; b) 3 h 50 + 1 h 25 ; d) 5 h 10 − 2 h 40 ; e) 12 h − 7 h 35.
+- `T10C3` a) 180 s ; b) 4 h ; d) 150 min ; e) 72 h. a) 3 h 35 ; b) 4 h 75 = 5 h 15 ; d) 4 h 70 − 2 h 40 = 2 h 30 ; e) 11 h 60 − 7 h 35 = 4 h 25.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Convertis : a) 3 min en s ; b) 240 min en h ; d) 2 h 30 en min ; e) 3 jours en h. Puis justifie l’une de tes réponses.
+- `T11C3` a) 180 s ; b) 4 h ; d) 150 min ; e) 72 h. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LA MESURE DU TEMPS : CONVERSIONS ET OPÉRATIONS
+- `P` Temps : conversions, calculs de durées
+- `P` Les unités de temps sont la seconde (s), la minute (min = 60 s), l’heure (h = 60 min), le jour (= 24 h), la semaine (7 jours), le mois et l’année (12 mois, 365 jours). Pour additionner ou soustraire des durées, on travaille les heures ensemble et les minutes ensemble, en échangeant 60 minutes contre 1 heure chaque fois que nécessaire.
+- `P` le temps compte en 60 et en 24, jamais en 10 : dès que les minutes atteignent 60, elles se transforment en une heure.
+- `P` Exemple : 2 h 45 + 1 h 30 = 3 h 75 = 4 h 15 ; et de 7 h 50 à 9 h 20, il s’écoule 10 min + 1 h 20 = 1 h 30.
+- `P` 1. Poser heures sous heures, minutes sous minutes.
+- `P` 2. Calculer chaque colonne ; si les minutes atteignent 60, échanger contre 1 heure (ou emprunter 1 h = 60 min pour soustraire).
+- `P` 3. Vérifier avec la méthode « compter en avant » sur l’horloge.
+- `P` 1 min = 60 s, 1 h = 60 min, 1 jour = 24 h ; additionner heures et minutes séparément, échanger à 60 ; durée entre deux horaires : compter en avant.
+- `P` Le savais-tu ? Pourquoi 60 ? Les Babyloniens comptaient sur les phalanges : le pouce pointe les 12 phalanges des quatre doigts d’une main, et les 5 doigts de l’autre main comptent les tours : 12 × 5 = 60 ! Ce calcul vieux de 4 000 ans vit encore dans chaque minute de ta montre.
+- `P` Attention : Poser 1 h 30 = 1,30 h et calculer en décimal : FAUX, 1 h 30 = 1,5 h ! Les minutes ne sont pas des centièmes d’heure : on ne mélange jamais l’écriture du temps et l’écriture décimale.
+- `P` EXERCICE
+- `P` 1. Convertis : a) 3 min en s ; b) 240 min en h ; d) 2 h 30 en min ; e) 3 jours en h.
+- `P` 2. Calcule : a) 1 h 20 + 2 h 15 ; b) 3 h 50 + 1 h 25 ; d) 5 h 10 − 2 h 40 ; e) 12 h − 7 h 35.
+- `P` 3. Le taxi-brousse part à 8 h 45 et le voyage dure 2 h 30. a) À quelle heure arrive-t-il ? b) Le retour part à 15 h 20 et arrive à 18 h 05 : durée du retour ? d) Pourquoi le retour dure-t-il plus longtemps ? Propose une raison. e) Durée totale passée sur la route ce jour-là ?
+- `P` 4. Convertis : a) 2 h en minutes ; b) 180 s en minutes ; d) 3 min 20 s en secondes ; e) 90 min en heures et minutes.
+- `P` 5. Le taxi-brousse part à 8 h 45 et arrive à 11 h 20. a) Quelle est la durée du trajet ? b) S’il était parti avec 25 min de retard, à quelle heure serait-il arrivé ? d) Le retour dure 2 h 50 ; il repart à 14 h 30 : heure d’arrivée ? e) Quelle est la durée totale de route aller-retour ?
+- `P` 6. Défi CEPE — Un film commence à 20 h 35 et dure 1 h 50. a) À quelle heure finit-il ? b) Fara doit se coucher à 21 h 30 : combien de minutes du film va-t-elle manquer ? d) Le film est rediffusé le lendemain à 14 h 05 : à quelle heure finira-t-il ? e) Convertis la durée du film en minutes.
+- `P` Correction
+- `P` 1. a) 180 s ; b) 4 h ; d) 150 min ; e) 72 h.
+- `P` 2. a) 3 h 35 ; b) 4 h 75 = 5 h 15 ; d) 4 h 70 − 2 h 40 = 2 h 30 ; e) 11 h 60 − 7 h 35 = 4 h 25.
+- `P` 3. a) 11 h 15 ; b) de 15 h 20 à 18 h 05 : 40 min + 2 h 05 = 2 h 45 ; d) toute raison sensée (route encombrée, arrêts…) ; e) 2 h 30 + 2 h 45 = 5 h 15.
+- `P` 4. a) 120 min ; b) 3 min ; d) 200 s ; e) 1 h 30 min.
+- `P` 5. a) 2 h 35 min ; b) à 11 h 45 ; d) à 17 h 20 ; e) 2 h 35 + 2 h 50 = 5 h 25 min.
+- `P` 6. a) à 22 h 25 ; b) de 21 h 30 à 22 h 25 : 55 minutes ; d) à 15 h 55 ; e) 60 + 50 = 110 minutes.
+
+### SÉANCE 7 / 11 — L’AIRE DU RECTANGLE ET DU CARRÉ
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 7 / 11 — L’AIRE DU RECTANGLE ET DU CARRÉ
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : MesureThème : Aires : rectangle et carréTitre : L’aire du rectangle et du carréObjectif spécifique : À la fin de la séance, l’apprenant est capable de calculer l’aire du rectangle et du carré et distinguer aire et périmètre.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Papier quadrillé, carreaux de 1 cm², figures tracées, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 7 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Calcule 2 h 40 + 1 h 35.
+- `T3C3` R.A. : 3 h 75 = 4 h 15.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à calculer l’aire du rectangle et du carré et distinguer aire et périmètre. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Les carreleurs posent des carreaux de 1 dm de côté dans la salle : 5 carreaux par rangée, 3 rangées. L’écolier qui regarde compte : 15 carreaux ! Il vient de mesurer, sans le savoir, la SURFACE du sol — pas son tour, mais ce qu’il faut pour le COUVRIR.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « L’aire du rectangle et du carré » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Salle de 6 m sur 4 m : aire 24 m², périmètre 20 m — deux réponses, deux unités, deux questions différentes.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La formule naît du carrelage : 5 carreaux par rangée, 3 rangées → 5 × 3 = 15 carreaux, voilà pourquoi aire = L × l. L’unité est le piège favori des examens : le périmètre se mesure en cm (une longueur de fil), l’aire en cm² (un nombre de carreaux) — deux mondes différents ! Deux figures peuvent le crier : un rectangle de 6 × 2 et un carré de 4 ont le MÊME périmètre (16 cm) mais des aires différentes (12 et 16 cm²) ; et un rectangle de 8 × 1 et un carré de 3 ont presque le même périmètre pour des aires de 8 et 9 cm². L’aire marche aussi à reculons : une salle de 24 m² large de 4 m est longue de 24 ÷ 4 = 6 m. Et les unités d’aire ont leur propre escalier, qui grimpe de 100 en 100 : 1 m² = 100 dm² = 10 000 cm² — un m² contient CENT carrés de 1 dm !
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, aire = surface en unités carrées ; rectangle L × l, carré c × c ; périmètre en cm, aire en cm² ; même périmètre n’implique pas même aire ; 1 m² = 10 000 cm².
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule l’aire : a) rectangle de 7 cm sur 4 cm ; b) carré de 9 cm ; d) rectangle de 12 m sur 5 m ; e) carré de 20 m. Pour un rectangle de 10 m sur 3 m : a) calcule l’aire ; b) calcule le périmètre ; d) quelle réponse sert à acheter du grillage pour l’entourer ? e) laquelle sert à acheter du gazon pour le couvrir ?
+- `T10C3` a) 28 cm² ; b) 81 cm² ; d) 60 m² ; e) 400 m². a) 30 m² ; b) 26 m ; d) le périmètre (26 m) ; e) l’aire (30 m²).
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule l’aire : a) rectangle de 7 cm sur 4 cm ; b) carré de 9 cm ; d) rectangle de 12 m sur 5 m ; e) carré de 20 m. Puis justifie l’une de tes réponses.
+- `T11C3` a) 28 cm² ; b) 81 cm² ; d) 60 m² ; e) 400 m². La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` L’AIRE DU RECTANGLE ET DU CARRÉ
+- `P` Aires : rectangle et carré
+- `P` L’aire d’une figure est la mesure de sa surface, en unités carrées : le cm² (un carré de 1 cm de côté), le m²… L’aire du rectangle est longueur × largeur ; l’aire du carré est côté × côté.
+- `P` l’aire compte combien de petits carreaux d’un centimètre de côté il faut pour recouvrir la figure sans trou ni débord.
+- `P` Exemple : Salle de 6 m sur 4 m : aire 24 m², périmètre 20 m — deux réponses, deux unités, deux questions différentes.
+- `P` 1. Vérifier que les deux dimensions sont dans la même unité.
+- `P` 2. Multiplier : L × l (rectangle) ou côté × côté (carré).
+- `P` 3. Écrire l’unité CARRÉE du résultat, et vérifier qu’on ne confond pas avec le périmètre.
+- `P` aire = surface en unités carrées ; rectangle L × l, carré c × c ; périmètre en cm, aire en cm² ; même périmètre n’implique pas même aire ; 1 m² = 10 000 cm².
+- `P` Le savais-tu ? Les rizières de Madagascar se mesurent souvent en ares : 1 are = 100 m², le carré de 10 m sur 10 m.
+- `P` Attention : Répondre « 15 cm » pour une aire : sans le ², la réponse est fausse à l’examen ! L’aire compte des carreaux (cm²), le périmètre mesure du fil (cm). Relire la question : couvrir → aire ; entourer → périmètre.
+- `P` EXERCICE
+- `P` 1. Calcule l’aire : a) rectangle de 7 cm sur 4 cm ; b) carré de 9 cm ; d) rectangle de 12 m sur 5 m ; e) carré de 20 m.
+- `P` 2. Pour un rectangle de 10 m sur 3 m : a) calcule l’aire ; b) calcule le périmètre ; d) quelle réponse sert à acheter du grillage pour l’entourer ? e) laquelle sert à acheter du gazon pour le couvrir ?
+- `P` 3. La salle de classe mesure 8 m sur 6 m. a) Calcule son aire. b) Un carreau couvre 0,25 m² : combien de carreaux pour le sol ? d) La longueur reste 8 m mais l’aire d’une autre salle est 40 m² : quelle est sa largeur ? e) Compare les deux salles en une phrase.
+- `P` 4. Calcule l’aire : a) un carré de côté 6 cm ; b) un rectangle de 8 cm sur 5 cm ; d) un carré de côté 12 m ; e) un rectangle de 20 m sur 7 m.
+- `P` 5. Une salle rectangulaire mesure 9 m sur 6 m. a) Quelle est son aire ? b) Combien de carreaux de 1 m² faut-il pour couvrir le sol ? d) À 8 000 Ar le carreau, quelle est la dépense ? e) Quel est le périmètre de la salle ?
+- `P` 6. Défi CEPE — Un terrain rectangulaire de 24 m sur 15 m porte une maison carrée de 8 m de côté ; le reste est un jardin. a) Quelle est l’aire du terrain ? b) L’aire de la maison ? d) L’aire du jardin ? e) On sème du gazon à 1 500 Ar le m² : combien coûte le jardin ?
+- `P` Correction
+- `P` 1. a) 28 cm² ; b) 81 cm² ; d) 60 m² ; e) 400 m².
+- `P` 2. a) 30 m² ; b) 26 m ; d) le périmètre (26 m) ; e) l’aire (30 m²).
+- `P` 3. a) 48 m² ; b) 48 ÷ 0,25 = 192 carreaux ; d) 40 ÷ 8 = 5 m ; e) la première salle (48 m²) est plus grande que la seconde (40 m²) de 8 m².
+- `P` 4. a) 6 × 6 = 36 cm² ; b) 8 × 5 = 40 cm² ; d) 144 m² ; e) 140 m².
+- `P` 5. a) 9 × 6 = 54 m² ; b) 54 carreaux ; d) 54 × 8 000 = 432 000 Ar ; e) (9 + 6) × 2 = 30 m.
+- `P` 6. a) 24 × 15 = 360 m² ; b) 8 × 8 = 64 m² ; d) 360 − 64 = 296 m² ; e) 296 × 1 500 = 444 000 Ar.
+
+### SÉANCE 8 / 11 — L’AIRE DU TRIANGLE ; COMPARER DES AIRES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 8 / 11 — L’AIRE DU TRIANGLE ; COMPARER DES AIRES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : MesureThème : Aire du triangle ; comparaison d’airesTitre : L’aire du triangle ; comparer des airesObjectif spécifique : À la fin de la séance, l’apprenant est capable de calculer l’aire d’un triangle et comparer des aires de figures.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Papier quadrillé, rectangles en papier à plier, ciseaux, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 8 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Aire et périmètre d’un carré de 5 cm de côté ?
+- `T3C3` R.A. : Aire 25 cm² ; périmètre 20 cm.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à calculer l’aire d’un triangle et comparer des aires de figures. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Vola plie sa feuille rectangulaire le long de la diagonale et la coupe : deux triangles PARFAITEMENT superposables ! Chacun contient donc exactement la MOITIÉ du papier. Si le rectangle faisait 24 cm², chaque triangle fait 12 cm² — l’aire du triangle vient de naître d’un pliage.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « L’aire du triangle ; comparer des aires » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Triangle de base 10 cm et de hauteur 6 cm : (10 × 6) ÷ 2 = 30 cm² — la moitié du rectangle 10 × 6.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le pliage de Vola démontre la formule pour le triangle rectangle : il est la moitié exacte du rectangle, donc (6 × 4) ÷ 2 = 12 cm². Le miracle : la formule vaut pour TOUS les triangles — un triangle penché se laisse enfermer dans un rectangle de même base et même hauteur, et en occupe toujours la moitié. Le vrai piège est la HAUTEUR : ce n’est pas un côté penché, c’est la chute PERPENDICULAIRE de la pointe sur la base — l’équerre de l’unité IV la vérifie. Dans un triangle rectangle, les deux côtés de l’angle droit jouent base et hauteur : cadeau ! Pour COMPARER des aires, trois armes : la formule (calculer puis comparer les nombres), le comptage de carreaux (un demi-carreau + un demi-carreau = 1), et le découpage-recollage de l’unité IV — des figures d’allures très différentes peuvent cacher la même aire, comme les silhouettes du tangram.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, aire du triangle = (base × hauteur) ÷ 2 ; la hauteur tombe perpendiculairement sur la base ; comparer par formule, carreaux ou découpage.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule l’aire du triangle : a) base 8 cm, hauteur 5 cm ; b) base 12 cm, hauteur 7 cm ; d) base 9 m, hauteur 4 m ; e) triangle rectangle de côtés de l’angle droit 6 et 8 cm. Un rectangle de 10 cm sur 6 cm est coupé par sa diagonale. a) Aire du rectangle ? b) Aire de chaque triangle ? d) Les deux triangles ont-ils la même aire ? e) Quel est le périmètre du rectangle (pour ne pas confondre !) ?
+- `T10C3` a) 20 cm² ; b) 42 cm² ; d) 18 m² ; e) (6 × 8) ÷ 2 = 24 cm². a) 60 cm² ; b) 30 cm² ; d) oui : superposables, même aire ; e) (10 + 6) × 2 = 32 cm.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule l’aire du triangle : a) base 8 cm, hauteur 5 cm ; b) base 12 cm, hauteur 7 cm ; d) base 9 m, hauteur 4 m ; e) triangle rectangle de côtés de l’angle droit 6 et 8 cm. Puis justifie l’une de tes réponses.
+- `T11C3` a) 20 cm² ; b) 42 cm² ; d) 18 m² ; e) (6 × 8) ÷ 2 = 24 cm². La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` L’AIRE DU TRIANGLE ; COMPARER DES AIRES
+- `P` Aire du triangle ; comparaison d’aires
+- `P` L’aire d’un triangle est la moitié de l’aire du rectangle qui a la même base et la même hauteur : aire du triangle = (base × hauteur) ÷ 2. La hauteur est la distance qui tombe PERPENDICULAIREMENT de la pointe sur la base.
+- `P` un triangle est toujours un demi-rectangle caché : base fois hauteur, puis on partage en deux.
+- `P` Exemple : Triangle de base 10 cm et de hauteur 6 cm : (10 × 6) ÷ 2 = 30 cm² — la moitié du rectangle 10 × 6.
+- `P` 1. Repérer la base, puis la hauteur perpendiculaire (l’équerre contrôle).
+- `P` 2. Multiplier base × hauteur, puis diviser par 2.
+- `P` 3. Pour comparer des figures : calculer chaque aire dans la même unité, ou compter les carreaux.
+- `P` aire du triangle = (base × hauteur) ÷ 2 ; la hauteur tombe perpendiculairement sur la base ; comparer par formule, carreaux ou découpage.
+- `P` Le savais-tu ? Il y a 4 000 ans, les arpenteurs d’Égypte recalculaient les champs après chaque crue du Nil qui effaçait les bornes : ils découpaient les terrains en triangles et mesuraient leurs aires — c’est la naissance même du mot « géométrie » : geo-metria, la mesure de la terre !
+- `P` Attention : Oublier le ÷ 2 : base × hauteur donne l’aire du RECTANGLE entier, le double du triangle ! Le triangle n’est que la moitié : la division par 2 fait partie de la formule.
+- `P` EXERCICE
+- `P` 1. Calcule l’aire du triangle : a) base 8 cm, hauteur 5 cm ; b) base 12 cm, hauteur 7 cm ; d) base 9 m, hauteur 4 m ; e) triangle rectangle de côtés de l’angle droit 6 et 8 cm.
+- `P` 2. Un rectangle de 10 cm sur 6 cm est coupé par sa diagonale. a) Aire du rectangle ? b) Aire de chaque triangle ? d) Les deux triangles ont-ils la même aire ? e) Quel est le périmètre du rectangle (pour ne pas confondre !) ?
+- `P` 3. Compare les aires : a) triangle de base 10 et hauteur 4 ; b) carré de 5 ; d) rectangle de 7 sur 3 (tout en cm) ; e) range les trois figures de la plus petite à la plus grande aire.
+- `P` 4. Calcule l’aire du triangle : a) base 6 cm, hauteur 4 cm ; b) base 10 cm, hauteur 7 cm ; d) base 9 cm, hauteur 6 cm ; e) base 5 cm, hauteur 5 cm.
+- `P` 5. a) Un triangle a une aire de 24 cm² et une base de 8 cm : quelle est sa hauteur ? b) Compare l’aire du triangle de base 12 cm et hauteur 5 cm avec celle du rectangle de 6 cm sur 5 cm. d) Deux triangles ont la même base de 8 cm, avec des hauteurs de 3 cm et 6 cm : compare leurs aires. e) Pourquoi divise-t-on par 2 dans la formule de l’aire du triangle ?
+- `P` 6. Défi CEPE — Un champ en forme de quadrilatère est coupé par une diagonale en deux triangles : le premier a une base de 40 m et une hauteur de 25 m ; le second, la même base de 40 m et une hauteur de 15 m. a) Aire du premier triangle ? b) Du second ? d) Aire totale du champ ? e) Avec 2 kg de maïs récoltés par m², quelle est la récolte totale ?
+- `P` Correction
+- `P` 1. a) 20 cm² ; b) 42 cm² ; d) 18 m² ; e) (6 × 8) ÷ 2 = 24 cm².
+- `P` 2. a) 60 cm² ; b) 30 cm² ; d) oui : superposables, même aire ; e) (10 + 6) × 2 = 32 cm.
+- `P` 3. a) 20 cm² ; b) 25 cm² ; d) 21 cm² ; e) triangle (20) < rectangle (21) < carré (25).
+- `P` 4. a) (6 × 4) ÷ 2 = 12 cm² ; b) 35 cm² ; d) 27 cm² ; e) 12,5 cm².
+- `P` 5. a) (24 × 2) ÷ 8 = 6 cm ; b) triangle : (12 × 5) ÷ 2 = 30 cm² ; rectangle : 6 × 5 = 30 cm² : aires égales ; d) 12 cm² et 24 cm² : la seconde est le double ; e) parce qu’un triangle est la moitié d’un rectangle de même base et de même hauteur.
+- `P` 6. a) (40 × 25) ÷ 2 = 500 m² ; b) (40 × 15) ÷ 2 = 300 m² ; d) 500 + 300 = 800 m² ; e) 800 × 2 = 1 600 kg de maïs.
+
+### SÉANCE 9 / 11 — LE VOLUME : CUBES UNITÉS, CUBE ET PAVÉ DROIT
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 9 / 11 — LE VOLUME : CUBES UNITÉS, CUBE ET PAVÉ DROIT
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : MesureThème : Notion intuitive de volume (cm³)Titre : Le volume : cubes unités, cube et pavé droitObjectif spécifique : À la fin de la séance, l’apprenant est capable de comprendre la notion de volume en comptant des cubes unités et construire cube et pavé droit.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Cubes unités, boîtes, patrons de cube et de pavé, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 9 / 11
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Aire d’un triangle de base 6 cm et de hauteur 5 cm ?
+- `T3C3` R.A. : (6 × 5) ÷ 2 = 15 cm².
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à comprendre la notion de volume en comptant des cubes unités et construire cube et pavé droit. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Naly remplit une petite boîte avec des dés de 1 cm d’arête : 4 dés par rangée, 3 rangées par étage, 2 étages. « Combien de dés dans la boîte ? » 4 × 3 = 12 par étage, × 2 étages = 24 dés. Naly vient de mesurer un VOLUME : la place que la boîte offre, comptée en petits cubes.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Le volume : cubes unités, cube et pavé droit » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Pavé de 5 cm sur 2 cm sur 3 cm : 5 × 2 = 10 cubes par étage, × 3 étages = 30 cm³.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le volume est le troisième étage de la tour des mesures : le périmètre suit une LIGNE (cm), l’aire couvre une SURFACE (cm²), le volume remplit un ESPACE (cm³) — un exposant de plus à chaque étage ! Le comptage s’organise comme le carrelage en 3D : un étage de 4 × 3 = 12 cubes, 2 étages → 24 cm³ ; d’où la formule L × l × h, trois longueurs multipliées (toutes dans la même unité !). Le cube est le pavé parfait : 3 × 3 × 3 = 27 cm³. La construction des solides (demandée par le programme) passe par les PATRONS : six carrés en croix se plient en cube ; le pavé réclame trois paires de rectangles. Et le volume tend la main aux capacités : la boîte de 10 × 10 × 10 = 1 000 cm³ contient exactement… 1 litre ! Le litre est un cube de 10 cm caché dans la bouteille.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, volume = nombre de cubes unités (cm³) ; pavé : L × l × h ; cube : a × a × a ; patron → solide ; 1 000 cm³ = 1 L.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Calcule le volume : a) pavé de 4 × 3 × 2 cm ; b) pavé de 5 × 4 × 3 cm ; d) cube de 2 cm d’arête ; e) cube de 5 cm d’arête. Une boîte mesure 6 cm sur 4 cm sur 3 cm. a) Combien de cubes de 1 cm³ par étage ? b) Combien d’étages ? d) Volume total ? e) Peut-on y ranger 75 dés de 1 cm³ ?
+- `T10C3` a) 24 cm³ ; b) 60 cm³ ; d) 8 cm³ ; e) 125 cm³. a) 6 × 4 = 24 cubes ; b) 3 étages ; d) 72 cm³ ; e) non : 75 > 72, il manque la place de 3 dés.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Calcule le volume : a) pavé de 4 × 3 × 2 cm ; b) pavé de 5 × 4 × 3 cm ; d) cube de 2 cm d’arête ; e) cube de 5 cm d’arête. Puis justifie l’une de tes réponses.
+- `T11C3` a) 24 cm³ ; b) 60 cm³ ; d) 8 cm³ ; e) 125 cm³. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LE VOLUME : CUBES UNITÉS, CUBE ET PAVÉ DROIT
+- `P` Notion intuitive de volume (cm³)
+- `P` Le volume mesure la place qu’occupe un objet dans l’espace. L’unité est le cube unité : le cm³ est un cube de 1 cm d’arête. Le volume d’un pavé droit se trouve en comptant ses cubes : longueur × largeur × hauteur ; le cube, dont toutes les arêtes sont égales, a pour volume arête × arête × arête.
+- `P` après le fil du périmètre et les carreaux de l’aire, voici les dés du volume : on compte combien de petits cubes remplissent la boîte.
+- `P` Exemple : Pavé de 5 cm sur 2 cm sur 3 cm : 5 × 2 = 10 cubes par étage, × 3 étages = 30 cm³.
+- `P` 1. Compter les cubes d’un étage : longueur × largeur.
+- `P` 2. Multiplier par le nombre d’étages : la hauteur.
+- `P` 3. Écrire l’unité CUBE (cm³) ; pour construire le solide, tracer son patron puis plier.
+- `P` volume = nombre de cubes unités (cm³) ; pavé : L × l × h ; cube : a × a × a ; patron → solide ; 1 000 cm³ = 1 L.
+- `P` Le savais-tu ? Le litre et le cube sont parents cachés : 1 L = 1 000 cm³, le cube de 10 cm d’arête exactement.
+- `P` Attention : Écrire le volume en cm ou en cm² : 24 cm² est une aire, pas un volume ! Trois longueurs multipliées donnent des cm³ — l’exposant 3 compte les trois dimensions.
+- `P` EXERCICE
+- `P` 1. Calcule le volume : a) pavé de 4 × 3 × 2 cm ; b) pavé de 5 × 4 × 3 cm ; d) cube de 2 cm d’arête ; e) cube de 5 cm d’arête.
+- `P` 2. Une boîte mesure 6 cm sur 4 cm sur 3 cm. a) Combien de cubes de 1 cm³ par étage ? b) Combien d’étages ? d) Volume total ? e) Peut-on y ranger 75 dés de 1 cm³ ?
+- `P` 3. a) Dessine le patron d’un cube de 3 cm d’arête (6 carrés en croix). b) Quel est son volume ? d) Combien de cubes de 1 cm³ pour remplir une boîte cubique de 10 cm d’arête ? e) Quelle capacité en litres cela représente-t-il ?
+- `P` 4. Calcule le volume : a) un cube d’arête 3 cm ; b) un cube d’arête 5 cm ; d) un pavé droit de 6 cm × 4 cm × 2 cm ; e) un pavé droit de 10 cm × 3 cm × 3 cm.
+- `P` 5. Une boîte en forme de pavé droit mesure 20 cm × 10 cm × 5 cm. a) Quel est son volume ? b) Combien de cubes de 1 cm³ peut-elle contenir ? d) Combien de cubes d’arête 5 cm ? e) Vérifie ta réponse d) en comptant les cubes par rangées.
+- `P` 6. Défi CEPE — Un réservoir en forme de pavé droit mesure 2 m × 1 m × 1,5 m. a) Quel est son volume en m³ ? b) Sachant que 1 m³ = 1 000 L, quelle est sa capacité en litres ? d) Il est rempli aux : quel volume d’eau contient-il ? e) Combien de bidons de 20 L faut-il pour achever de le remplir ?
+- `P` Correction
+- `P` 1. a) 24 cm³ ; b) 60 cm³ ; d) 8 cm³ ; e) 125 cm³.
+- `P` 2. a) 6 × 4 = 24 cubes ; b) 3 étages ; d) 72 cm³ ; e) non : 75 > 72, il manque la place de 3 dés.
+- `P` 3. a) patron en croix correct ; b) 27 cm³ ; d) 1 000 cubes ; e) 1 litre.
+- `P` 4. a) 3 × 3 × 3 = 27 cm³ ; b) 125 cm³ ; d) 48 cm³ ; e) 90 cm³.
+- `P` 5. a) 20 × 10 × 5 = 1 000 cm³ ; b) 1 000 cubes ; d) un cube d’arête 5 cm vaut 125 cm³ : 1 000 ÷ 125 = 8 cubes ; e) 4 cubes par longueur × 2 par largeur × 1 par hauteur = 8 : c’est juste.
+- `P` 6. a) 2 × 1 × 1,5 = 3 m³ ; b) 3 000 L ; d) × 3 000 = 2 000 L ; e) il manque 1 000 L, soit 1 000 ÷ 20 = 50 bidons.
+
+### RÉVISION DE L’UNITÉ V
+
+- Indicateurs : 14 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : non.
+- `P` RÉVISION DE L’UNITÉ V
+- `P` Tableau de synthèse
+- `T1C1` Notion
+- `T1C2` À savoir
+- `T1C3` À savoir faire
+- `T2C1` Longueurs
+- `T2C2` km hm dam m dm cm mm ; un chiffre par colonne
+- `T2C3` Convertir et choisir la bonne unité
+- `T3C1` Périmètre et circonférence
+- `T3C2` P = somme des côtés ; rectangle (L+l)×2 ; carré c×4 ; C = d × 3,14
+- `T3C3` Calculer un tour, retrouver une dimension
+- `T4C1` Masses
+- `T4C2` t q kg hg dag g ; 1 t = 1 000 kg ; 1 q = 100 kg
+- `T4C3` Estimer, peser, convertir
+- `T5C1` Capacités
+- `T5C2` hL daL L dL cL mL ; 1 L = 100 cL ; eau : 1 L = 1 kg
+- `T5C3` Convertir et utiliser le pont litre-kilo
+- `T6C1` Temps
+- `T6C2` 1 h = 60 min ; 1 jour = 24 h ; échanges à 60, jamais à 10
+- `T6C3` Convertir, additionner, soustraire des durées
+- `T7C1` Aires et volumes
+- `T7C2` Rectangle L×l ; carré c×c ; triangle (b×h)÷2 ; pavé L×l×h ; cm, cm², cm³
+- `T7C3` Calculer et ne pas confondre les trois mesures
+- `P` Questions de révision
+- `P` 1. Convertis : 2,45 m en cm ; 3 200 m en km ; 1,2 t en kg ; 350 cL en L.
+- `P` 2. Un rectangle a un périmètre de 34 cm et une longueur de 10 cm : largeur, puis aire ?
+- `P` 3. Une roue a un rayon de 30 cm : diamètre, circonférence, et distance pour 5 tours ?
+- `P` 4. Le car part à 9 h 50 et arrive à 13 h 15 : durée du trajet ?
+- `P` 5. Un pavé mesure 6 × 5 × 4 cm : volume ? Et combien de litres pour un cube de 10 cm ?
+- `P` Réponses attendues
+- `P` 1. 245 cm ; 3,2 km ; 1 200 kg ; 3,5 L.
+- `P` 2. Largeur 34 ÷ 2 − 10 = 7 cm ; aire 10 × 7 = 70 cm².
+- `P` 3. d = 60 cm ; C = 188,4 cm ; 5 tours = 942 cm = 9,42 m.
+- `P` 4. De 9 h 50 à 13 h 15 : 10 min + 3 h 15 = 3 h 25.
+- `P` 5. 120 cm³ ; le cube de 10 cm vaut 1 000 cm³ = 1 L.
+
+### SUJET D’EXAMEN FORMAT CEPE — UNITÉ V
+
+- Indicateurs : 30 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SUJET D’EXAMEN FORMAT CEPE — UNITÉ V
+- `P` Barème : 20 points. Présente clairement tous les calculs et toutes les constructions.
+- `P` Exercice 1 — 4 points. Conversions. Convertis : a) 4,35 m en cm. b) 2 750 g en kg. d) 2,5 L en cL. e) 2 h 50 min en minutes.
+- `P` Exercice 2 — 4 points. Périmètres. Le terrain de jeu rectangulaire mesure 25 m sur 14 m. a) Calcule son périmètre. b) On l’entoure d’une corde en laissant une entrée de 2 m : longueur de corde ? d) Le rond central du terrain a un diamètre de 3 m : calcule sa circonférence. e) Un carré a le même périmètre que le terrain : quel est son côté ?
+- `P` Exercice 3 — 4 points. Masse et capacité. La citerne de l’école contient 1 500 L d’eau. a) Quelle est la masse de cette eau en kg ? b) Exprime-la en tonnes. d) On remplit des seaux de 10 L : combien de seaux ? e) Chaque classe reçoit 12 seaux et il y a 11 classes : reste-t-il de l’eau ? Justifie.
+- `P` Exercice 4 — 4 points. Aires. Un jardin rectangulaire mesure 9 m sur 6 m. a) Calcule son aire. b) On y trace une allée triangulaire de base 6 m et de hauteur 3 m : calcule son aire. d) Quelle surface reste-t-il pour les légumes ? e) Pourquoi l’aire se mesure-t-elle en m² et le périmètre en m ?
+- `P` Exercice 5 — 4 points. Problème. Le car scolaire part à 6 h 40 pour un trajet de 2 h 45. a) À quelle heure arrive-t-il ? b) Il transporte 40 enfants pesant en moyenne 30 kg chacun : masse totale des enfants en kg, puis en tonnes. d) Le réservoir du car contient 90 L de gazole ; le moteur consomme 15 L par heure : quelle quantité consomme-t-il pendant le trajet de 2 h 45 ? Arrondis d’abord la durée à 3 h pour estimer. e) Reste-t-il plus ou moins de la moitié du réservoir ? Justifie par le calcul avec l’estimation de 3 h.
+- `P` CORRIGÉ ET BARÈME
+- `P` Exercice 1. a) 435 cm ; b) 2,75 kg ; d) 250 cL ; e) 170 min. Un point par item.
+- `P` Exercice 2. a) (25 + 14) × 2 = 78 m ; b) 76 m ; d) 3 × 3,14 = 9,42 m ; e) 78 ÷ 4 = 19,5 m. Un point par item.
+- `P` Exercice 3. a) 1 500 kg ; b) 1,5 t ; d) 150 seaux ; e) 11 × 12 = 132 seaux distribués, il reste 150 − 132 = 18 seaux soit 180 L : oui. Un point par item.
+- `P` Exercice 4. a) 54 m² ; b) (6 × 3) ÷ 2 = 9 m² ; d) 54 − 9 = 45 m² ; e) l’aire compte des carrés d’un mètre (surface), le périmètre mesure une ligne (longueur). Un point par item.
+- `P` Exercice 5. a) 6 h 40 + 2 h 45 = 8 h 85 = 9 h 25 ; b) 1 200 kg = 1,2 t ; d) environ 15 × 3 = 45 L ; e) 45 L = la moitié de 90 L : il reste environ la moitié du réservoir (un peu plus, car le trajet dure moins de 3 h). Un point par item.
+- `P` UNITÉ VI
+- `P` TRAITEMENT DE DONNÉES
+- `P` Sous-discipline du programme de Mathématiques T5
+- `P` Résultat d’apprentissage général
+- `P` collecter, organiser, représenter et interpréter des données, et estimer des probabilités par l’expérience.
+- `P` Valeurs à véhiculer
+- `P` pensée critique et responsabilité.
+- `P` UNITÉ VI — TRAITEMENT DE DONNÉES : DANS CETTE UNITÉ
+- `P` Leçon 1 — Concevoir une enquête : questions et hypothèses
+- `P` Leçon 2 — Collecter et organiser : tableaux simples et chronologiques
+- `P` Leçon 3 — Diagrammes en barres et pictogrammes
+- `P` Leçon 4 — Interpréter des données
+- `P` Leçon 5 — Expériences aléatoires et tableaux de dénombrement
+- `P` Leçon 6 — La probabilité expérimentale
+- `P` Révision de l’unité VI
+- `P` Sujet d’examen format CEPE
+- `P` Tableau de bord
+- `T1C1` Leçons
+- `T1C2` Apprentissages
+- `T1C3` Révision
+- `T1C4` Examen
+- `T2C1` 8
+- `T2C2` 6
+- `T2C3` 1
+- `T2C4` 1
+
+### SÉANCE 1 / 8 — CONCEVOIR UNE ENQUÊTE : QUESTIONS ET HYPOTHÈSES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 1 / 8 — CONCEVOIR UNE ENQUÊTE : QUESTIONS ET HYPOTHÈSES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : Traitement de donnéesThème : Questions d’enquête et hypothèsesTitre : Concevoir une enquête : questions et hypothèsesObjectif spécifique : À la fin de la séance, l’apprenant est capable de formuler une question d’enquête précise et émettre une hypothèse avant de collecter les données.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Grandes feuilles, cahier, exemples de questions écrites au tableau
+- `T1C2` Date : _______________Classe : T5Séance n° : 1 / 8
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Combien d’élèves compte la classe ? Comment le sais-tu avec certitude ?
+- `T3C3` R.A. : On les compte un par un : l’information vient d’un comptage, pas d’une impression.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à formuler une question d’enquête précise et émettre une hypothèse avant de collecter les données. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La maîtresse veut acheter des fruits pour la fête de l’école. « Prenons des bananes, tout le monde adore ça ! » lance Soa. « Pas du tout, le letchi est meilleur ! » répond Rivo. Comment trancher ? Pas en criant plus fort — en menant une ENQUÊTE : on pose la question à toute la classe et les réponses décideront.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Concevoir une enquête : questions et hypothèses » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Question : « quel jour y a-t-il le plus d’absents ? » ; hypothèse : « le lundi » ; collecte : le registre d’appel de la semaine.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Tout commence par une BONNE question d’enquête. Elle doit être précise (« quel est le fruit préféré des élèves de la classe ? » et non « les fruits, c’est bien ? »), porter sur un groupe défini (notre classe, pas « les gens »), et accepter des réponses que l’on peut compter. Vient ensuite l’hypothèse : « je prédis que la banane sera première ». Pourquoi parier avant de compter ? Parce que l’hypothèse oblige à réfléchir à ce qu’on attend, et donne du sens à la collecte : à la fin, les données confirment ou contredisent la prédiction — les deux issues font avancer ! Enfin on prépare la collecte : qui interroger (tous les élèves, une seule fois chacun), quelles réponses possibles prévoir, comment noter. Une enquête bien conçue se déroule ensuite toute seule ; une enquête bâclée donne des données inutilisables — et c’est la responsabilité de l’enquêteur.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, enquête = question précise + hypothèse + collecte + réponse ; la question définit le groupe interrogé et des réponses comptables ; l’hypothèse est le pari à vérifier.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Bonnes ou mauvaises questions d’enquête ? Justifie. a) « Quel est le fruit préféré des élèves de la classe ? » b) « Les mangues, c’est bien ? » d) « Combien de frères et sœurs a chaque élève de la classe ? » e) « Quel jour de la semaine y a-t-il le plus d’absents dans la classe ? » Pour la question « comment les élèves viennent-ils à l’école ? » : a) propose une hypothèse. b) Qui faut-il interroger ? d) Prévois quatre réponses possibles. e) Combien de fois interroger chaque élève ?
+- `T10C3` a) bonne : précise, groupe défini, réponses comptables ; b) mauvaise : vague, chacun comprend autre chose ; d) bonne : la réponse de chacun est un nombre ; e) bonne : il suffit de compter les absents jour par jour. a) par exemple « la plupart viennent à pied » ; b) tous les élèves de la classe ; d) à pied, à vélo, en taxi-be, en charrette ; e) une seule fois — sinon les effectifs sont faussés.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Bonnes ou mauvaises questions d’enquête ? Justifie. a) « Quel est le fruit préféré des élèves de la classe ? » b) « Les mangues, c’est bien ? » d) « Combien de frères et sœurs a chaque élève de la classe ? » e) « Quel jour de la semaine y a-t-il le plus d’absents dans la classe ? » Puis justifie l’une de tes réponses.
+- `T11C3` a) bonne : précise, groupe défini, réponses comptables ; b) mauvaise : vague, chacun comprend autre chose ; d) bonne : la réponse de chacun est un nombre ; e) bonne : il suffit de compter les absents jour par jour. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` CONCEVOIR UNE ENQUÊTE : QUESTIONS ET HYPOTHÈSES
+- `P` Questions d’enquête et hypothèses
+- `P` Une enquête est une démarche organisée pour répondre à une question en recueillant des informations. La question d’enquête est la question précise à laquelle on veut répondre. L’hypothèse est la réponse que l’on prévoit avant de collecter les données.
+- `P` au lieu de deviner, on demande ; et avant de demander, on écrit son pari — l’enquête dira s’il était bon.
+- `P` Exemple : Question : « quel jour y a-t-il le plus d’absents ? » ; hypothèse : « le lundi » ; collecte : le registre d’appel de la semaine.
+- `P` 1. Formuler une question précise, sur un groupe défini, aux réponses comptables.
+- `P` 2. Écrire l’hypothèse : la réponse que l’on prévoit.
+- `P` 3. Préparer la collecte : qui interroger, quelles réponses possibles, comment noter.
+- `P` enquête = question précise + hypothèse + collecte + réponse ; la question définit le groupe interrogé et des réponses comptables ; l’hypothèse est le pari à vérifier.
+- `P` Le savais-tu ? La plus grande enquête de Madagascar est le recensement général de la population : en 2018, des milliers d’agents ont visité une à une toutes les maisons du pays pour compter plus de 25 millions d’habitants.
+- `P` Attention : Poser une question vague : « le sport, c’est important ? ». Chacun comprend autre chose, les réponses ne se comptent pas, l’enquête ne conclut rien. La question doit appeler des réponses précises et dénombrables.
+- `P` EXERCICE
+- `P` 1. Bonnes ou mauvaises questions d’enquête ? Justifie. a) « Quel est le fruit préféré des élèves de la classe ? » b) « Les mangues, c’est bien ? » d) « Combien de frères et sœurs a chaque élève de la classe ? » e) « Quel jour de la semaine y a-t-il le plus d’absents dans la classe ? »
+- `P` 2. Pour la question « comment les élèves viennent-ils à l’école ? » : a) propose une hypothèse. b) Qui faut-il interroger ? d) Prévois quatre réponses possibles. e) Combien de fois interroger chaque élève ?
+- `P` 3. Invente ta propre enquête : a) écris une question précise ; b) écris ton hypothèse ; d) indique le groupe à interroger ; e) explique comment les données diront si ton hypothèse était bonne.
+- `P` 4. Vola veut savoir quel sport préfèrent les élèves de son école. a) Écris la question d’enquête. b) Propose quatre réponses possibles. d) Qui faut-il interroger ? e) Propose une hypothèse à vérifier.
+- `P` 5. Rasoa, vendeuse de fruits au marché, fait un sondage en questionnant ses clients. a) Cite deux autres façons de réaliser un sondage. b) Comment doit-elle choisir les personnes à interroger ? d) Pourquoi ce choix au hasard est-il important ? e) Si elle n’interrogeait que les enfants, que se passerait-il ?
+- `P` 6. Défi CEPE — Une école de 600 élèves veut connaître leur moyen de transport, mais ne peut en interroger que 50. a) Faut-il interroger les élèves d’une seule classe ? Pourquoi ? b) Propose une bonne façon de choisir les 50 élèves. d) Écris la question d’enquête. e) Propose les réponses à cocher.
+- `P` Correction
+- `P` 1. a) bonne : précise, groupe défini, réponses comptables ; b) mauvaise : vague, chacun comprend autre chose ; d) bonne : la réponse de chacun est un nombre ; e) bonne : il suffit de compter les absents jour par jour.
+- `P` 2. a) par exemple « la plupart viennent à pied » ; b) tous les élèves de la classe ; d) à pied, à vélo, en taxi-be, en charrette ; e) une seule fois — sinon les effectifs sont faussés.
+- `P` 3. a) question précise sur un groupe défini ; b) une prédiction claire ; d) par exemple les élèves de la classe ; e) on comptera les réponses : si la réponse la plus fréquente est celle prédite, l’hypothèse était bonne.
+- `P` 4. a) « Quel est ton sport préféré ? » ; b) football, basket, course, danse (par exemple) ; d) les élèves de l’école ; e) par exemple : « Le football sera le sport le plus choisi. »
+- `P` 5. a) un questionnaire distribué dans les maisons, des entrevues dans un lieu public ; b) au hasard ; d) pour que les résultats ne soient pas faussés (biaisés) et restent valables ; e) les réponses pencheraient vers les goûts des enfants : le sondage serait biaisé.
+- `P` 6. a) non : une seule classe ne représente pas toute l’école ; b) tirer au sort des élèves dans toutes les classes ; d) « Comment viens-tu à l’école ? » ; e) à pied, à vélo, en taxi-be, en charrette, autre.
+
+### SÉANCE 2 / 8 — COLLECTER ET ORGANISER : TABLEAUX SIMPLES ET CHRONOLOGIQUES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 2 / 8 — COLLECTER ET ORGANISER : TABLEAUX SIMPLES ET CHRONOLOGIQUES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : Traitement de donnéesThème : Collecte et tableaux des effectifsTitre : Collecter et organiser : tableaux simples et chronologiquesObjectif spécifique : À la fin de la séance, l’apprenant est capable de collecter des données, les dénombrer par bâtons et les organiser en tableau simple ou chronologique.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Ardoises, bâtonnets, grands tableaux tracés, registre d’appel
+- `T1C2` Date : _______________Classe : T5Séance n° : 2 / 8
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Qu’est-ce qu’une hypothèse d’enquête ?
+- `T3C3` R.A. : La réponse que l’on prévoit avant de collecter les données.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à collecter des données, les dénombrer par bâtons et les organiser en tableau simple ou chronologique. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` L’enquête des fruits est lancée : les 24 élèves répondent l’un après l’autre — « mangue ! », « letchi ! », « mangue ! », « banane ! »… Hanta note tout à la suite sur son ardoise, et au bout de dix réponses, c’est déjà un fouillis illisible. Il lui faut l’outil des enquêteurs : le tableau, où chaque réponse devient un petit bâton bien rangé.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Collecter et organiser : tableaux simples et chronologiques » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` 15 réponses collectées, effectifs 6, 6 et 3 : contrôle 6 + 6 + 3 = 15 ✓ — aucune réponse perdue.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le dénombrement par bâtons est la machine à ne rien perdre : à chaque réponse entendue, un bâton — immédiatement, dans la bonne ligne. Les bâtons se groupent par paquets de 5, qui se comptent ensuite d’un coup d’œil : 5, 10, 15… Quand la collecte est finie, on écrit les effectifs en chiffres : mangue 8, banane 6, letchi 7, ananas 3. Puis vient le contrôle du professionnel : la somme des effectifs doit égaler le nombre d’interrogés — 8 + 6 + 7 + 3 = 24 élèves ✓. Si le compte n’y est pas, une réponse a été perdue ou comptée deux fois. Le tableau chronologique obéit à la même logique, mais ses lignes sont les jours ou les mois DANS L’ORDRE : absents de lundi à vendredi, pluie de janvier à décembre… L’ordre du temps ne se mélange jamais, car c’est lui qui montre l’évolution.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, un bâton par réponse, paquets de 5 ; effectif = compte d’une ligne ; somme des effectifs = nombre d’interrogés ; tableau chronologique = données dans l’ordre du temps.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Voici 15 réponses à « quel est ton animal préféré ? » : zébu, poule, zébu, chien, poule, zébu, poule, chien, zébu, poule, zébu, poule, chien, zébu, poule. a) Dresse le tableau avec les bâtons. b) Quel est l’effectif de « zébu » ? d) Celui de « chien » ? e) Vérifie le total. Absents de la semaine : lundi 2, mardi 1, mercredi 0, jeudi 3, vendredi 1. a) Quel jour compte le plus d’absents ? b) Quel jour n’en compte aucun ? d) Combien d’absences dans la semaine ? e) Pourquoi garder les jours dans l’ordre ?
+- `T10C3` a) zébu IIII I, poule IIII I, chien III ; b) 6 ; d) 3 ; e) 6 + 6 + 3 = 15 ✓. a) jeudi (3) ; b) mercredi ; d) 2 + 1 + 0 + 3 + 1 = 7 absences ; e) parce que l’ordre du temps montre l’évolution au fil de la semaine.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Voici 15 réponses à « quel est ton animal préféré ? » : zébu, poule, zébu, chien, poule, zébu, poule, chien, zébu, poule, zébu, poule, chien, zébu, poule. a) Dresse le tableau avec les bâtons. b) Quel est l’effectif de « zébu » ? d) Celui de « chien » ? e) Vérifie le total. Puis justifie l’une de tes réponses.
+- `T11C3` a) zébu IIII I, poule IIII I, chien III ; b) 6 ; d) 3 ; e) 6 + 6 + 3 = 15 ✓. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` COLLECTER ET ORGANISER : TABLEAUX SIMPLES ET CHRONOLOGIQUES
+- `P` Collecte et tableaux des effectifs
+- `P` Collecter des données, c’est recueillir les réponses une à une. L’effectif d’une réponse est le nombre de fois où elle apparaît. Le tableau des effectifs range chaque réponse possible avec son effectif ; le tableau chronologique range les données dans l’ordre du temps (jours, semaines, mois).
+- `P` chaque réponse devient un bâton dans la bonne ligne ; à la fin, on compte les bâtons de chaque ligne : c’est l’effectif.
+- `P` Exemple : 15 réponses collectées, effectifs 6, 6 et 3 : contrôle 6 + 6 + 3 = 15 ✓ — aucune réponse perdue.
+- `P` 1. Tracer le tableau : une ligne par réponse possible (ou par période).
+- `P` 2. À chaque donnée, marquer un bâton dans la bonne ligne, par paquets de 5.
+- `P` 3. Écrire les effectifs en chiffres et vérifier : leur somme = le nombre de données.
+- `P` un bâton par réponse, paquets de 5 ; effectif = compte d’une ligne ; somme des effectifs = nombre d’interrogés ; tableau chronologique = données dans l’ordre du temps.
+- `P` Le savais-tu ? Le plus vieil objet mathématique du monde est un os à bâtons : l’os d’Ishango, trouvé en Afrique près du lac Édouard, porte des entailles groupées vieilles d’environ 20 000 ans.
+- `P` Attention : Noter toutes les réponses en vrac et compter à la fin : on relit dix fois, on se trompe, on perd des réponses. Le bâton se marque AU MOMENT où la réponse arrive — jamais après.
+- `P` EXERCICE
+- `P` 1. Voici 15 réponses à « quel est ton animal préféré ? » : zébu, poule, zébu, chien, poule, zébu, poule, chien, zébu, poule, zébu, poule, chien, zébu, poule. a) Dresse le tableau avec les bâtons. b) Quel est l’effectif de « zébu » ? d) Celui de « chien » ? e) Vérifie le total.
+- `P` 2. Absents de la semaine : lundi 2, mardi 1, mercredi 0, jeudi 3, vendredi 1. a) Quel jour compte le plus d’absents ? b) Quel jour n’en compte aucun ? d) Combien d’absences dans la semaine ? e) Pourquoi garder les jours dans l’ordre ?
+- `P` 3. L’enquête des fruits donne : mangue 8, banane 6, letchi 7, ananas ?, pour 24 élèves. a) Calcule l’effectif manquant. b) Quel est le fruit le plus choisi ? d) Quel est l’écart entre mangue et banane ? e) Combien d’élèves n’ont pas choisi la mangue ?
+- `P` 4. Voici dix réponses au sondage « fruit préféré » : mangue, banane, mangue, letchi, banane, mangue, ananas, mangue, letchi, banane. a) Construis le tableau des effectifs. b) Quel est l’effectif de la mangue ? d) Combien de personnes ont répondu ? e) Dans quel ordre peut-on ranger les données du tableau ?
+- `P` 5. Températures relevées à Antsirabe : lundi 18° ; mardi 16° ; mercredi 15° ; jeudi 17° ; vendredi 19° ; samedi 21° ; dimanche 20°. a) Quel type de tableau convient ? b) Quel est le jour le plus froid ? d) Quels jours dépassent 18° ? e) Pourquoi faut-il garder l’ordre des jours ?
+- `P` 6. Défi CEPE — Au marché, Rasoa a noté les fruits choisis par ses 25 clients : mangues 7 ; fraises 8 ; bananes 4 ; mûres 3 ; pêches 3. a) Vérifie le total des effectifs. b) Quel est le fruit le plus demandé ? d) Quels fruits ont le même effectif ? e) Elle veut commander 50 fruits en respectant ces préférences : combien de fraises doit-elle prévoir ?
+- `P` Correction
+- `P` 1. a) zébu IIII I, poule IIII I, chien III ; b) 6 ; d) 3 ; e) 6 + 6 + 3 = 15 ✓.
+- `P` 2. a) jeudi (3) ; b) mercredi ; d) 2 + 1 + 0 + 3 + 1 = 7 absences ; e) parce que l’ordre du temps montre l’évolution au fil de la semaine.
+- `P` 3. a) 24 − (8 + 6 + 7) = 24 − 21 = 3 ; b) la mangue ; d) 8 − 6 = 2 ; e) 24 − 8 = 16 élèves.
+- `P` 4. a) mangue 4 ; banane 3 ; letchi 2 ; ananas 1 ; b) 4 ; d) 10 personnes ; e) par ordre alphabétique ou par effectif décroissant.
+- `P` 5. a) un tableau chronologique ; b) mercredi (15°) ; d) vendredi, samedi et dimanche ; e) pour suivre l’évolution de la température au fil du temps.
+- `P` 6. a) 7 + 8 + 4 + 3 + 3 = 25 : le compte est bon ; b) les fraises ; d) les mûres et les pêches ; e) 8 clients sur 25 choisissent les fraises ; pour 50 fruits (le double), il faut 2 × 8 = 16 fraises.
+
+### SÉANCE 3 / 8 — DIAGRAMMES EN BARRES ET PICTOGRAMMES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 3 / 8 — DIAGRAMMES EN BARRES ET PICTOGRAMMES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : Traitement de donnéesThème : Représentations : barres et pictogrammesTitre : Diagrammes en barres et pictogrammesObjectif spécifique : À la fin de la séance, l’apprenant est capable de représenter des données par un diagramme en barres et par un pictogramme avec légende.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Papier quadrillé, règle, crayons de couleur, gommettes ou cachets
+- `T1C2` Date : _______________Classe : T5Séance n° : 3 / 8
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Effectifs 8, 6, 7, 3 pour 24 élèves : le contrôle est-il bon ?
+- `T3C3` R.A. : 8 + 6 + 7 + 3 = 24 ✓ : aucune réponse perdue.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à représenter des données par un diagramme en barres et par un pictogramme avec légende. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Le tableau des fruits est exact, mais au fond de la classe, personne ne le lit : des nombres, encore des nombres… Alors Hanta prend le papier quadrillé : une barre rose de 8 carreaux pour la mangue, une verte de 6 pour la banane… En trois secondes, toute la classe VOIT le gagnant. Une image bien construite parle plus vite que cent nombres.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Diagrammes en barres et pictogrammes » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Effectif 14 avec la légende « 1 symbole = 4 » : 14 ÷ 4 = 3 reste 2, donc 3 symboles et un demi-symbole.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Le diagramme en barres se construit avec trois règles d’or. Un : même largeur pour toutes les barres — seule la HAUTEUR porte l’information. Deux : une échelle régulière qui part de zéro — ici 1 carreau = 1 élève, donc mangue 8 carreaux, banane 6, letchi 7, ananas 3. Trois : tout étiqueter — le nom sous chaque barre, l’effectif au sommet. Le pictogramme suit la même idée avec des symboles : si la légende dit « 1 rond = 2 élèves », la mangue (8 élèves) reçoit 4 ronds, la banane (6) en reçoit 3, et le letchi (7) … 3 ronds et demi ! Le demi-symbole est permis et courant. Sans légende, le pictogramme est muet : 4 ronds pourraient valoir 4, 8 ou 400 — la légende est sa clef de lecture, on la vérifie toujours en premier.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, barres : même largeur, échelle régulière partant de zéro, hauteur proportionnelle à l’effectif ; pictogramme : symboles identiques + légende obligatoire ; demi-symbole permis.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Avec les effectifs mangue 8, banane 6, letchi 7, ananas 3 et l’échelle 1 carreau = 1 élève : a) hauteur de la barre « mangue » ? b) Hauteur de la barre « banane » ? d) Quelle barre est la plus haute ? e) Trace le diagramme complet sur papier quadrillé. Pictogramme avec la légende « 1 rond = 2 élèves » : a) combien de ronds pour la mangue (8) ? b) Pour la banane (6) ? d) Pour le letchi (7) ? e) Pourquoi la légende est-elle indispensable ?
+- `T10C3` a) 8 carreaux ; b) 6 carreaux ; d) la mangue ; e) quatre barres de même largeur, hauteurs 8, 6, 7, 3, noms dessous et effectifs au sommet. a) 8 ÷ 2 = 4 ronds ; b) 3 ronds ; d) 3 ronds et demi ; e) sans elle, on ignore la valeur d’un symbole : le pictogramme devient illisible.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Avec les effectifs mangue 8, banane 6, letchi 7, ananas 3 et l’échelle 1 carreau = 1 élève : a) hauteur de la barre « mangue » ? b) Hauteur de la barre « banane » ? d) Quelle barre est la plus haute ? e) Trace le diagramme complet sur papier quadrillé. Puis justifie l’une de tes réponses.
+- `T11C3` a) 8 carreaux ; b) 6 carreaux ; d) la mangue ; e) quatre barres de même largeur, hauteurs 8, 6, 7, 3, noms dessous et effectifs au sommet. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` DIAGRAMMES EN BARRES ET PICTOGRAMMES
+- `P` Représentations : barres et pictogrammes
+- `P` Un diagramme en barres représente chaque effectif par une barre : toutes les barres ont la même largeur, et la hauteur de chaque barre est proportionnelle à l’effectif. Un pictogramme représente les effectifs par de petits symboles identiques ; sa légende indique combien d’unités vaut un symbole.
+- `P` le diagramme en barres, c’est le tableau debout : plus l’effectif est grand, plus sa barre monte ; le pictogramme raconte la même chose avec des petits dessins.
+- `P` Exemple : Effectif 14 avec la légende « 1 symbole = 4 » : 14 ÷ 4 = 3 reste 2, donc 3 symboles et un demi-symbole.
+- `P` 1. Choisir l’échelle : 1 carreau (ou 1 symbole) = combien d’unités ?
+- `P` 2. Tracer une barre (ou une rangée de symboles) par réponse, à la bonne hauteur.
+- `P` 3. Étiqueter : noms, effectifs, et la légende du pictogramme.
+- `P` barres : même largeur, échelle régulière partant de zéro, hauteur proportionnelle à l’effectif ; pictogramme : symboles identiques + légende obligatoire ; demi-symbole permis.
+- `P` Le savais-tu ? Le diagramme en barres a un inventeur : l’Écossais William Playfair, en 1786.
+- `P` Attention : Dessiner des barres de largeurs différentes : la barre large paraît plus importante même si elle est moins haute, et le lecteur est trompé. La largeur ne change JAMAIS ; seule la hauteur parle.
+- `P` EXERCICE
+- `P` 1. Avec les effectifs mangue 8, banane 6, letchi 7, ananas 3 et l’échelle 1 carreau = 1 élève : a) hauteur de la barre « mangue » ? b) Hauteur de la barre « banane » ? d) Quelle barre est la plus haute ? e) Trace le diagramme complet sur papier quadrillé.
+- `P` 2. Pictogramme avec la légende « 1 rond = 2 élèves » : a) combien de ronds pour la mangue (8) ? b) Pour la banane (6) ? d) Pour le letchi (7) ? e) Pourquoi la légende est-elle indispensable ?
+- `P` 3. Livres lus pendant les vacances : Hanta 5, Rivo 3, Soa 6, Naly 2. a) Qui a lu le plus ? b) Qui a lu le moins ? d) Combien de livres en tout ? e) Trace le diagramme en barres (1 carreau = 1 livre).
+- `P` 4. Un diagramme en barres donne les inscriptions aux activités : football 12 ; basket 8 ; course 6 ; danse 4. a) Quelle barre est la plus haute ? b) Combien d’élèves inscrits en tout ? d) Combien d’inscrits de plus au football qu’en danse ? e) Avec un pictogramme où un dessin vaut 2 élèves, combien de dessins pour le basket ?
+- `P` 5. On veut construire un diagramme en barres pour les récoltes : riz 9 sacs ; maïs 6 ; manioc 12 ; patate douce 3. a) Que représente l’axe vertical ? b) Quelle sera la barre la plus haute ? d) Si l’axe est gradué de 3 en 3, à combien de graduations monte la barre du maïs ? e) Construis le diagramme sur ton cahier.
+- `P` 6. Défi CEPE — Un pictogramme montre les zébus de quatre villages ; chaque dessin vaut 10 zébus. Village A : 4 dessins ; village B : 6 dessins ; village D : 3 dessins et demi ; village E : 2 dessins. a) Combien de zébus au village A ? b) Au village D ? d) Combien en tout ? e) Que représente le demi-dessin ?
+- `P` Correction
+- `P` 1. a) 8 carreaux ; b) 6 carreaux ; d) la mangue ; e) quatre barres de même largeur, hauteurs 8, 6, 7, 3, noms dessous et effectifs au sommet.
+- `P` 2. a) 8 ÷ 2 = 4 ronds ; b) 3 ronds ; d) 3 ronds et demi ; e) sans elle, on ignore la valeur d’un symbole : le pictogramme devient illisible.
+- `P` 3. a) Soa (6) ; b) Naly (2) ; d) 5 + 3 + 6 + 2 = 16 livres ; e) barres de hauteurs 5, 3, 6, 2 avec la même largeur.
+- `P` 4. a) celle du football ; b) 12 + 8 + 6 + 4 = 30 élèves ; d) 12 − 4 = 8 ; e) 8 ÷ 2 = 4 dessins.
+- `P` 5. a) le nombre de sacs ; b) celle du manioc (12) ; d) 2 graduations (6 = 2 × 3) ; e) quatre barres de hauteurs 9, 6, 12 et 3.
+- `P` 6. a) 4 × 10 = 40 zébus ; b) 35 zébus ; d) 40 + 60 + 35 + 20 = 155 zébus ; e) la moitié de 10, soit 5 zébus.
+
+### SÉANCE 4 / 8 — INTERPRÉTER DES DONNÉES
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 4 / 8 — INTERPRÉTER DES DONNÉES
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : Traitement de donnéesThème : Lecture et interprétation de donnéesTitre : Interpréter des donnéesObjectif spécifique : À la fin de la séance, l’apprenant est capable de lire, comparer et interpréter des données présentées en tableau ou en diagramme, et juger une hypothèse.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Diagrammes et tableaux préparés, affiches, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 4 / 8
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Légende « 1 symbole = 4 élèves » : quel effectif pour 3 symboles et demi ?
+- `T3C3` R.A. : 3 × 4 = 12, plus le demi-symbole qui vaut 2 : effectif 14.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à lire, comparer et interpréter des données présentées en tableau ou en diagramme, et juger une hypothèse. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Le diagramme des fruits est affiché. La maîtresse ne demande plus « que voyez-vous ? » mais « que COMPREND-on ? ». Rivo lit : « la mangue gagne avec 8 voix ». Soa compare : « 5 voix d’écart entre la première et la dernière ». Hanta conclut : « mon hypothèse banane était fausse — et pour la fête, il faut des mangues ! ». Lire, comparer, conclure : le diagramme a parlé.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Interpréter des données » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Ventes : lundi 12, mardi 9, mercredi 15 → le meilleur jour est mercredi ; écart avec mardi : 15 − 9 = 6 ; total 36.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : L’interprétation suit quatre gestes, du plus simple au plus fort. LIRE : prélever une valeur — « banane : 6 élèves ». COMPARER : classer et mesurer les écarts — la mangue (8) dépasse l’ananas (3) de 5 voix. TOTALISER : retrouver l’ensemble — 8 + 6 + 7 + 3 = 24 réponses, le compte est bon. CONCLURE : revenir à la question d’enquête et à l’hypothèse — la banane n’est pas première, l’hypothèse de Soa est contredite par les données, et la décision suit (acheter surtout des mangues). Et par-dessus tout, le regard critique : avant de croire un diagramme, on vérifie que l’axe part de zéro, que les barres ont la même largeur, que la légende est donnée. Un diagramme dont l’axe commence à 9 fait paraître 12 trois fois plus grand que 10 — l’image peut mentir, le lecteur critique ne se laisse pas faire.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, quatre gestes : lire une valeur, comparer (écarts), totaliser, conclure sur l’hypothèse ; et l’œil critique vérifie axe, largeurs, légende avant de croire l’image.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Sacs de riz vendus : lundi 12, mardi 9, mercredi 15, jeudi 9, vendredi 18. a) Quel est le meilleur jour ? b) Quels jours sont à égalité ? d) Combien de sacs dans la semaine ? e) Quel est l’écart entre le meilleur et le moins bon jour ? Retour sur l’enquête des fruits (mangue 8, banane 6, letchi 7, ananas 3). L’hypothèse de Soa était « la banane sera première ». a) Qui est premier d’après les données ? b) L’hypothèse était-elle bonne ? d) Combien d’élèves ont choisi les deux fruits les moins populaires ? e) Quelle décision prendre pour la fête ?
+- `T10C3` a) vendredi (18) ; b) mardi et jeudi (9) ; d) 12 + 9 + 15 + 9 + 18 = 63 sacs ; e) 18 − 9 = 9 sacs. a) la mangue (8) ; b) non : la banane est troisième (6) ; d) ananas 3 + banane 6 = 9 élèves ; e) acheter surtout des mangues — les données décident.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Sacs de riz vendus : lundi 12, mardi 9, mercredi 15, jeudi 9, vendredi 18. a) Quel est le meilleur jour ? b) Quels jours sont à égalité ? d) Combien de sacs dans la semaine ? e) Quel est l’écart entre le meilleur et le moins bon jour ? Puis justifie l’une de tes réponses.
+- `T11C3` a) vendredi (18) ; b) mardi et jeudi (9) ; d) 12 + 9 + 15 + 9 + 18 = 63 sacs ; e) 18 − 9 = 9 sacs. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` INTERPRÉTER DES DONNÉES
+- `P` Lecture et interprétation de données
+- `P` Interpréter des données, c’est en tirer des informations et des conclusions : lire des valeurs, comparer les effectifs, calculer des totaux et des écarts, répondre à la question d’enquête et dire si l’hypothèse de départ était bonne.
+- `P` le tableau et le diagramme sont des témoins : interpréter, c’est les interroger — qui est premier ? de combien ? et alors, que décide-t-on ?
+- `P` Exemple : Ventes : lundi 12, mardi 9, mercredi 15 → le meilleur jour est mercredi ; écart avec mardi : 15 − 9 = 6 ; total 36.
+- `P` 1. Lire les valeurs demandées directement sur le tableau ou les barres.
+- `P` 2. Comparer : plus grand, plus petit, écarts, et calculer le total.
+- `P` 3. Conclure : répondre à la question d’enquête et juger l’hypothèse — après avoir vérifié que le diagramme est honnête.
+- `P` quatre gestes : lire une valeur, comparer (écarts), totaliser, conclure sur l’hypothèse ; et l’œil critique vérifie axe, largeurs, légende avant de croire l’image.
+- `P` Le savais-tu ? Les prévisions météo que tu entends à la radio sont de l’interprétation de données géante : des millions de mesures de température, de vent et de pression, collectées par des stations et des satellites, sont comparées aux situations passées pour conclure « demain, pluie sur les hautes terres ».
+- `P` Attention : Confondre « voir » et « conclure » : annoncer « la banane a perdu » sans citer les nombres. Une interprétation s’appuie toujours sur des valeurs lues et des calculs — sinon ce n’est qu’une opinion de plus.
+- `P` EXERCICE
+- `P` 1. Sacs de riz vendus : lundi 12, mardi 9, mercredi 15, jeudi 9, vendredi 18. a) Quel est le meilleur jour ? b) Quels jours sont à égalité ? d) Combien de sacs dans la semaine ? e) Quel est l’écart entre le meilleur et le moins bon jour ?
+- `P` 2. Retour sur l’enquête des fruits (mangue 8, banane 6, letchi 7, ananas 3). L’hypothèse de Soa était « la banane sera première ». a) Qui est premier d’après les données ? b) L’hypothèse était-elle bonne ? d) Combien d’élèves ont choisi les deux fruits les moins populaires ? e) Quelle décision prendre pour la fête ?
+- `P` 3. Esprit critique. Un vendeur affiche un diagramme dont l’axe commence à 9 : sa barre de 12 paraît immense face à celle de 10. a) Que faut-il toujours vérifier sur l’axe ? b) Que doivent avoir en commun toutes les barres ? d) Quel est l’écart réel entre 12 et 10 ? e) Pourquoi dit-on que la pensée critique protège le lecteur ?
+- `P` 4. Un diagramme donne le temps de lecture quotidien de 25 élèves : de 0 à 20 min : 5 élèves ; de 20 à 40 min : 4 ; de 40 à 60 min : 2 ; de 60 à 80 min : 9 ; de 80 à 100 min : 4 ; de 100 à 120 min : 1. a) Combien d’élèves lisent de 20 à 40 min ? b) Combien lisent plus d’une heure ? d) Vérifie que le total fait bien 25. e) Peut-on affirmer que certains élèves lisent plus de deux heures ?
+- `P` 5. Bols de soupe vendus par une gargote : lundi 30 ; mardi 25 ; mercredi 35 ; jeudi 20 ; vendredi 40 ; samedi 60 ; dimanche 55. a) Quel est le meilleur jour ? b) Le moins bon ? d) Quel est le total de la semaine ? e) Combien de bols de plus le samedi que le jeudi ?
+- `P` 6. Défi CEPE — Pluies relevées à Mahajanga (en mm) : janvier 450 ; février 400 ; mars 200 ; juin 5 ; juillet 2 ; décembre 380. a) Quel est le mois le plus arrosé ? b) Quels mois du tableau appartiennent à la saison sèche ? d) Compare les pluies de janvier et de mars. e) Quelle conclusion tires-tu sur le climat de la ville ?
+- `P` Correction
+- `P` 1. a) vendredi (18) ; b) mardi et jeudi (9) ; d) 12 + 9 + 15 + 9 + 18 = 63 sacs ; e) 18 − 9 = 9 sacs.
+- `P` 2. a) la mangue (8) ; b) non : la banane est troisième (6) ; d) ananas 3 + banane 6 = 9 élèves ; e) acheter surtout des mangues — les données décident.
+- `P` 3. a) qu’il part de zéro ; b) la même largeur ; d) 12 − 10 = 2 seulement ; e) parce qu’elle fait vérifier l’image avant d’y croire : axe, largeurs, légende.
+- `P` 4. a) 4 élèves ; b) 9 + 4 + 1 = 14 élèves ; d) 5 + 4 + 2 + 9 + 4 + 1 = 25 : c’est juste ; e) non : le diagramme s’arrête à 120 min, il ne donne aucune information au-delà.
+- `P` 5. a) samedi (60 bols) ; b) jeudi (20 bols) ; d) 30 + 25 + 35 + 20 + 40 + 60 + 55 = 265 bols ; e) 60 − 20 = 40 bols.
+- `P` 6. a) janvier (450 mm) ; b) juin et juillet ; d) 450 mm contre 200 mm : plus du double ; e) il pleut beaucoup pendant l’été (décembre à mars) et presque pas en hiver : saison des pluies et saison sèche bien marquées.
+
+### SÉANCE 5 / 8 — EXPÉRIENCES ALÉATOIRES ET TABLEAUX DE DÉNOMBREMENT
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 5 / 8 — EXPÉRIENCES ALÉATOIRES ET TABLEAUX DE DÉNOMBREMENT
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : Traitement de donnéesThème : Expériences aléatoires : dés, pièces, jetonsTitre : Expériences aléatoires et tableaux de dénombrementObjectif spécifique : À la fin de la séance, l’apprenant est capable de reconnaître une expérience aléatoire et enregistrer ses résultats dans un tableau de dénombrement.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Dés, pièces de monnaie, jetons colorés dans un sac opaque, ardoises
+- `T1C2` Date : _______________Classe : T5Séance n° : 5 / 8
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Diagramme honnête : les trois vérifications du lecteur critique ?
+- `T3C3` R.A. : Axe partant de zéro, barres de même largeur, légende présente.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à reconnaître une expérience aléatoire et enregistrer ses résultats dans un tableau de dénombrement. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` Naly lance un dé : 4. Il relance : 2. Encore : 4, puis 6, puis 1… « Je parie que le prochain est un 3 ! » Perdu : c’est un 5. Personne au monde ne peut prévoir le prochain lancer — pas même la maîtresse ! Pourtant, en notant chaque résultat d’un bâton, quelque chose d’étonnant apparaît au bout de 30 lancers : le hasard, imprévisible au coup par coup, se laisse compter.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « Expériences aléatoires et tableaux de dénombrement » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Pièce lancée 20 fois : pile IIII IIII I (11), face IIII IIII (9) ; contrôle 11 + 9 = 20 ✓.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : Trois objets royaux du hasard entrent en classe. Le dé : six résultats possibles, 1 à 6. La pièce : deux résultats, pile ou face. Le sac de jetons colorés : autant de résultats que de couleurs. À chaque fois, le même paradoxe : chaque essai est imprévisible, mais la LISTE des possibles est parfaitement connue d’avance — c’est la signature de l’expérience aléatoire. Face au hasard, le mathématicien sort son arme de la séance 2 : le tableau de dénombrement. Une ligne par résultat possible, un bâton par essai, et le contrôle sacré : la somme des effectifs doit égaler le nombre d’essais — nos 30 lancers donnent 4 + 6 + 5 + 7 + 3 + 5 = 30 ✓. Attention à l’illusion du joueur : après trois 6 de suite, le dé ne « doit » rien — il ne se souvient de rien, et le quatrième lancer reste aussi imprévisible que le premier.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, aléatoire = résultat imprévisible, possibles connus ; dé (6), pièce (2), jetons (couleurs) ; tableau de dénombrement + contrôle : somme des effectifs = nombre d’essais.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Expérience aléatoire ou non ? Justifie. a) Lancer un dé. b) Mesurer la longueur de la table avec une règle. d) Tirer un jeton d’un sac sans regarder. e) Se demander si le soleil se lèvera demain. Dé lancé 30 fois : face 1 → 4 fois, face 2 → 6, face 3 → 5, face 4 → 7, face 5 → 3, face 6 → 5. a) Quelle face est la plus sortie ? b) La moins sortie ? d) Calcule la somme des effectifs. e) À quoi cette somme doit-elle être égale ?
+- `T10C3` a) oui : résultat imprévisible parmi six possibles ; b) non : le résultat se mesure, il n’y a pas de hasard ; d) oui : couleur imprévisible parmi les couleurs du sac ; e) non : le résultat est certain. a) la face 4 (7 fois) ; b) la face 5 (3 fois) ; d) 4 + 6 + 5 + 7 + 3 + 5 = 30 ; e) au nombre de lancers : 30 ✓.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Expérience aléatoire ou non ? Justifie. a) Lancer un dé. b) Mesurer la longueur de la table avec une règle. d) Tirer un jeton d’un sac sans regarder. e) Se demander si le soleil se lèvera demain. Puis justifie l’une de tes réponses.
+- `T11C3` a) oui : résultat imprévisible parmi six possibles ; b) non : le résultat se mesure, il n’y a pas de hasard ; d) oui : couleur imprévisible parmi les couleurs du sac ; e) non : le résultat est certain. La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` EXPÉRIENCES ALÉATOIRES ET TABLEAUX DE DÉNOMBREMENT
+- `P` Expériences aléatoires : dés, pièces, jetons
+- `P` Une expérience aléatoire est une expérience dont le résultat ne peut pas être prévu à l’avance, même si l’on connaît la liste de tous les résultats possibles. Le tableau de dénombrement enregistre, par des bâtons puis des effectifs, le nombre de fois où chaque résultat est apparu.
+- `P` on ne sait jamais CE QUI va sortir, mais on sait tout ce qui PEUT sortir — et on compte fidèlement ce qui EST sorti.
+- `P` Exemple : Pièce lancée 20 fois : pile IIII IIII I (11), face IIII IIII (9) ; contrôle 11 + 9 = 20 ✓.
+- `P` 1. Lister tous les résultats possibles : une ligne de tableau chacun.
+- `P` 2. Réaliser les essais et marquer un bâton par résultat, au fur et à mesure.
+- `P` 3. Écrire les effectifs et contrôler : leur somme = le nombre d’essais.
+- `P` aléatoire = résultat imprévisible, possibles connus ; dé (6), pièce (2), jetons (couleurs) ; tableau de dénombrement + contrôle : somme des effectifs = nombre d’essais.
+- `P` Le savais-tu ? Les dés sont parmi les plus vieux jouets de l’humanité : on en a retrouvé en Mésopotamie et en Égypte vieux de 5 000 ans, souvent taillés dans des osselets de zébu ou de mouton — l’astragale.
+- `P` Attention : Croire que le hasard a de la mémoire : « le 6 n’est pas sorti depuis longtemps, il va forcément sortir ». Faux ! Le dé ne se souvient de rien : chaque lancer repart de zéro.
+- `P` EXERCICE
+- `P` 1. Expérience aléatoire ou non ? Justifie. a) Lancer un dé. b) Mesurer la longueur de la table avec une règle. d) Tirer un jeton d’un sac sans regarder. e) Se demander si le soleil se lèvera demain.
+- `P` 2. Dé lancé 30 fois : face 1 → 4 fois, face 2 → 6, face 3 → 5, face 4 → 7, face 5 → 3, face 6 → 5. a) Quelle face est la plus sortie ? b) La moins sortie ? d) Calcule la somme des effectifs. e) À quoi cette somme doit-elle être égale ?
+- `P` 3. Pièce lancée 50 fois : pile 27 fois, face 23 fois. a) Quel est l’effectif de pile ? b) Celui de face ? d) Vérifie le contrôle du tableau. e) Les deux résultats sortent-ils à peu près aussi souvent ?
+- `P` 4. On lance un dé à six faces. a) Cite toutes les issues possibles. b) Combien y en a-t-il ? d) L’issue « 7 » est-elle possible ? e) Toutes les issues ont-elles la même chance de sortir ?
+- `P` 5. Un sac contient 3 boules rouges, 2 boules bleues et 1 boule jaune ; on tire une boule au hasard. a) Quelles sont les issues possibles ? b) Combien de boules en tout ? d) Quelle couleur a le plus de chances de sortir ? e) Dresse le tableau de dénombrement des boules.
+- `P` 6. Défi CEPE — On lance deux pièces de monnaie en même temps (P pour pile, F pour face). a) Liste toutes les issues possibles. b) Combien y en a-t-il ? d) Combien d’issues donnent exactement un pile ? e) « Deux piles » et « deux faces » ont-ils la même chance ?
+- `P` Correction
+- `P` 1. a) oui : résultat imprévisible parmi six possibles ; b) non : le résultat se mesure, il n’y a pas de hasard ; d) oui : couleur imprévisible parmi les couleurs du sac ; e) non : le résultat est certain.
+- `P` 2. a) la face 4 (7 fois) ; b) la face 5 (3 fois) ; d) 4 + 6 + 5 + 7 + 3 + 5 = 30 ; e) au nombre de lancers : 30 ✓.
+- `P` 3. a) 27 ; b) 23 ; d) 27 + 23 = 50 ✓ ; e) oui : presque moitié-moitié, 27 contre 23.
+- `P` 4. a) 1, 2, 3, 4, 5 et 6 ; b) 6 issues ; d) non : elle n’existe pas sur le dé ; e) oui, si le dé est équilibré : c’est l’équiprobabilité.
+- `P` 5. a) rouge, bleu, jaune ; b) 3 + 2 + 1 = 6 boules ; d) le rouge : 3 boules sur 6 ; e) tableau : rouge 3 ; bleu 2 ; jaune 1.
+- `P` 6. a) PP, PF, FP, FF ; b) 4 issues ; d) 2 issues : PF et FP ; e) oui : une chance sur quatre chacune.
+
+### SÉANCE 6 / 8 — LA PROBABILITÉ EXPÉRIMENTALE
+
+- Indicateurs : 27 paragraphes ; 2 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SÉANCE 6 / 8 — LA PROBABILITÉ EXPÉRIMENTALE
+- `P` FICHE DE PRÉPARATION
+- `T1C1` Discipline : MathématiquesComposante : Traitement de donnéesThème : Fréquences et probabilité expérimentaleTitre : La probabilité expérimentaleObjectif spécifique : À la fin de la séance, l’apprenant est capable de calculer des fréquences et estimer une probabilité expérimentale pour comparer et prédire.Documentation : Programme d’études T5 (MEN) ; sujets d’examen CEPE ; manuel J-Learn Math T5Support et matériel : Sacs opaques, jetons rouges, bleus et jaunes, dés, pièces, cahier
+- `T1C2` Date : _______________Classe : T5Séance n° : 6 / 8
+- `T1C1` Étapes
+- `T1C2` Déroulement de la leçon
+- `T1C3` Technique et stratégie
+- `T1C4` Support et matériel
+- `T1C5` Observation
+- `T2C2` Enseignant
+- `T2C3` Apprenants
+- `T3C1` I. Révision
+- `T3C2` Dé lancé 30 fois : à quoi doit être égale la somme des effectifs ?
+- `T3C3` R.A. : À 30, le nombre de lancers.
+- `T3C4` Questions-réponses
+- `T3C5` Tableau, ardoises
+- `T3C6` Acquis à consolider
+- `T4C1` II. NOUVELLE LEÇON
+- `T4C2` Annonce : « Aujourd’hui, nous allons apprendre à calculer des fréquences et estimer une probabilité expérimentale pour comparer et prédire. »
+- `T4C3` Écoutent.
+- `T4C4` Présentation guidée
+- `T4C5` Tableau
+- `T5C1` 1. Mise en situation
+- `T5C2` La maîtresse apporte un sac opaque : « il contient 10 jetons, mais je ne vous dirai pas leurs couleurs ! ». Interdiction d’ouvrir le sac. Alors la classe tire un jeton, note sa couleur, le remet, et recommence 20 fois : rouge, rouge, bleu, rouge, jaune… Au tableau : rouge 12, bleu 6, jaune 2. Sans jamais ouvrir le sac, la classe va deviner ce qu’il contient. Magie ? Non : probabilité expérimentale.
+- `T5C3` Écoutent, observent et proposent des réponses.
+- `T5C4` Situation-problème
+- `T5C5` Illustration, tableau
+- `T5C6` Participation
+- `T6C1` 2. Présentation
+- `T6C2` Présente le titre « La probabilité expérimentale » et l’objectif de la séance.
+- `T6C3` Écoutent.
+- `T6C4` Explication brève
+- `T6C5` Tableau
+- `T7C1` 3. Observation
+- `T7C2` Face 6 sortie 12 fois sur 60 lancers : fréquence = — environ un lancer sur cinq.
+- `T7C3` Observent l’exemple résolu.
+- `T7C4` Observation dirigée
+- `T7C5` Figure imprimée
+- `T7C6` Compréhension
+- `T8C1` 4. Analyse
+- `T8C2` Guide l’analyse : La fréquence transforme un effectif en PART du total : rouge est sorti 12 fois sur 20, fréquence = ; bleu = ; jaune = . Les fréquences se comparent (le rouge sort 6 fois plus souvent que le jaune) et surtout, elles PRÉDISENT : si les tirages sont à l’image du sac, les 10 jetons devraient se répartir comme les fréquences — de 10 = 6 rouges, de 10 = 3 bleus, de 10 = 1 jaune. Le sac, ouvert enfin, confirme ! Deux lois gouvernent ce pouvoir. Première : la somme des fréquences fait toujours le total entier (+ + = ). Seconde, la plus importante : plus le nombre d’essais est GRAND, plus la fréquence devient fiable — 20 tirages donnent une bonne idée, 200 donneraient une estimation remarquable. C’est pourquoi on dit probabilité EXPÉRIMENTALE : elle naît de l’expérience répétée, patiemment comptée.
+- `T8C3` Expliquent la démarche et vérifient le résultat.
+- `T8C4` Recherche en binômes
+- `T8C5` Ardoises, instruments
+- `T8C6` Raisonnement
+- `T9C1` 5. Synthèse
+- `T9C2` Donc, fréquence = effectif ÷ total des essais ; les fréquences se comparent et estiment le contenu caché ; somme des fréquences = le tout ; plus d’essais = estimation plus sûre.
+- `T9C3` Écoutent et reformulent la règle.
+- `T9C4` Synthèse guidée
+- `T9C5` Cahier, tableau
+- `T9C6` Trace écrite
+- `T10C1` 6. Application
+- `T10C2` Un dé est lancé 60 fois : la face 6 sort 12 fois, la face 1 sort 9 fois. a) Quelle est la fréquence de la face 6 ? b) Simplifie-la. d) Quelle est la fréquence de la face 1, simplifiée ? e) Laquelle des deux faces est sortie le plus souvent ? Sac de jetons, 20 tirages avec remise : rouge 12, bleu 6, jaune 2. a) Fréquence du rouge, simplifiée ? b) Fréquence du bleu, simplifiée ? d) Fréquence du jaune, simplifiée ? e) De quelle couleur le sac contient-il probablement le plus de jetons ?
+- `T10C3` a) ; b) = ; d) = ; e) la face 6 (12 fois contre 9). a) = ; b) = ; d) = ; e) le rouge : sa fréquence est de loin la plus grande.
+- `T10C4` Travail individuel puis correction collective
+- `T10C5` Cahier, ardoises
+- `T10C6` Remédiation
+- `T11C1` III. Évaluation
+- `T11C2` Résous sans modèle : Un dé est lancé 60 fois : la face 6 sort 12 fois, la face 1 sort 9 fois. a) Quelle est la fréquence de la face 6 ? b) Simplifie-la. d) Quelle est la fréquence de la face 1, simplifiée ? e) Laquelle des deux faces est sortie le plus souvent ? Puis justifie l’une de tes réponses.
+- `T11C3` a) ; b) = ; d) = ; e) la face 6 (12 fois contre 9). La justification s’appuie sur la règle de la leçon.
+- `T11C4` Travail individuel
+- `T11C5` Feuille, cahier
+- `T11C6` Maîtrise de l’objectif
+- `P` LA PROBABILITÉ EXPÉRIMENTALE
+- `P` Fréquences et probabilité expérimentale
+- `P` La fréquence d’un résultat est le quotient de son effectif par le nombre total d’essais. La probabilité expérimentale d’un résultat est sa fréquence observée sur un grand nombre d’essais : elle estime la chance que ce résultat se produise.
+- `P` la fréquence répond à « quelle part des essais a donné ce résultat ? » — et cette part, mesurée longtemps, devient la meilleure prédiction du futur.
+- `P` Exemple : Face 6 sortie 12 fois sur 60 lancers : fréquence = — environ un lancer sur cinq.
+- `P` 1. Compter l’effectif de chaque résultat dans le tableau de dénombrement.
+- `P` 2. Diviser chaque effectif par le nombre total d’essais : c’est la fréquence (à simplifier).
+- `P` 3. Utiliser les fréquences pour comparer les résultats et estimer ce qui est caché — en se rappelant que plus d’essais rendent l’estimation plus sûre.
+- `P` fréquence = effectif ÷ total des essais ; les fréquences se comparent et estiment le contenu caché ; somme des fréquences = le tout ; plus d’essais = estimation plus sûre.
+- `P` Le savais-tu ? Pendant la Seconde Guerre mondiale, le mathématicien John Kerrich, prisonnier au Danemark, occupa sa captivité à lancer une pièce… 10 000 fois ! Résultat : 5 067 piles, soit une fréquence de — très proche d’une moitié.
+- `P` Attention : Prendre l’effectif pour la fréquence : « rouge : 12 » ne dit rien tout seul — 12 sur 20, c’est énorme ; 12 sur 2 000, c’est minuscule. La fréquence compare TOUJOURS l’effectif au total des essais.
+- `P` EXERCICE
+- `P` 1. Un dé est lancé 60 fois : la face 6 sort 12 fois, la face 1 sort 9 fois. a) Quelle est la fréquence de la face 6 ? b) Simplifie-la. d) Quelle est la fréquence de la face 1, simplifiée ? e) Laquelle des deux faces est sortie le plus souvent ?
+- `P` 2. Sac de jetons, 20 tirages avec remise : rouge 12, bleu 6, jaune 2. a) Fréquence du rouge, simplifiée ? b) Fréquence du bleu, simplifiée ? d) Fréquence du jaune, simplifiée ? e) De quelle couleur le sac contient-il probablement le plus de jetons ?
+- `P` 3. Le sac de l’exercice 2 contient exactement 10 jetons. a) Estime le nombre de jetons rouges. b) Le nombre de bleus. d) Le nombre de jaunes. e) Comment rendre ces estimations encore plus sûres ?
+- `P` 4. On lance une pièce de monnaie équilibrée. a) Quelles sont les issues possibles ? b) Pourquoi parle-t-on d’équiprobabilité ? d) Quelle est la probabilité d’obtenir pile ? e) Écris cette probabilité en pourcentage.
+- `P` 5. On lance un dé équilibré à six faces. a) Quelle est la probabilité d’obtenir 4 ? b) D’obtenir un nombre pair ? d) D’obtenir un nombre plus petit que 3 ? e) Rappelle la formule de la probabilité en cas d’équiprobabilité.
+- `P` 6. Défi CEPE — Niry a lancé 50 fois une punaise : elle est retombée pointe en l’air 30 fois. a) Quelle est la probabilité expérimentale de « pointe en l’air » ? b) Simplifie cette fraction. d) Quelle est la probabilité expérimentale de « pointe vers le sol » ? e) Pourquoi fallait-il faire l’expérience au lieu d’un simple calcul ?
+- `P` Correction
+- `P` 1. a) ; b) = ; d) = ; e) la face 6 (12 fois contre 9).
+- `P` 2. a) = ; b) = ; d) = ; e) le rouge : sa fréquence est de loin la plus grande.
+- `P` 3. a) de 10 = 6 rouges ; b) de 10 = 3 bleus ; d) de 10 = 1 jaune ; e) faire beaucoup plus de tirages : la fréquence devient plus fiable.
+- `P` 4. a) pile ou face ; b) parce que les deux issues ont exactement la même chance de se produire ; d) ; e) 50 %.
+- `P` 5. a) ; b) = ; d) = (les issues 1 et 2) ; e) probabilité = nombre de résultats favorables ÷ nombre de résultats équiprobables.
+- `P` 6. a) ; b) ; d) = ; e) parce que les deux issues ne sont pas équiprobables : seule la répétition de l’expérience permet d’estimer leurs chances.
+
+### RÉVISION DE L’UNITÉ VI
+
+- Indicateurs : 14 paragraphes ; 1 tableaux ; lettrage a/b/d/e détecté : non.
+- `P` RÉVISION DE L’UNITÉ VI
+- `P` Tableau de synthèse
+- `T1C1` Notion
+- `T1C2` À savoir
+- `T1C3` À savoir faire
+- `T2C1` Enquête
+- `T2C2` Question précise + hypothèse + collecte + réponse par les données
+- `T2C3` Concevoir une enquête et formuler une hypothèse
+- `T3C1` Collecte et effectifs
+- `T3C2` Un bâton par réponse, paquets de 5 ; somme des effectifs = nombre d’interrogés
+- `T3C3` Dresser un tableau des effectifs ou chronologique
+- `T4C1` Diagramme en barres
+- `T4C2` Même largeur, échelle régulière partant de zéro, hauteur proportionnelle
+- `T4C3` Construire et étiqueter un diagramme
+- `T5C1` Pictogramme
+- `T5C2` Symboles identiques + légende obligatoire ; demi-symbole permis
+- `T5C3` Représenter et lire un pictogramme
+- `T6C1` Interprétation
+- `T6C2` Lire, comparer, totaliser, conclure — et vérifier que l’image est honnête
+- `T6C3` Tirer des conclusions et juger une hypothèse
+- `T7C1` Hasard et fréquences
+- `T7C2` Aléatoire = imprévisible aux possibles connus ; fréquence = effectif ÷ essais
+- `T7C3` Dénombrer une expérience et estimer une probabilité
+- `P` Questions de révision
+- `P` 1. Donne une bonne question d’enquête sur les goûts de la classe, et une hypothèse qui l’accompagne.
+- `P` 2. Réponses collectées : zébu 4, poule 7, canard 3, pour 14 élèves interrogés. Le tableau est-il complet et juste ?
+- `P` 3. Diagramme : brèdes 15, tomates 10, carottes 20, oignons 5 (bottes vendues). Donne le plus vendu, le total et l’écart maximal.
+- `P` 4. Un dé est lancé 36 fois ; la face 3 sort 6 fois. Calcule sa fréquence et simplifie-la.
+- `P` 5. Sac inconnu : sur 30 tirages avec remise, le rouge sort 18 fois. Fréquence du rouge ? Estimation pour un sac de 10 jetons ?
+- `P` Réponses attendues
+- `P` 1. Par exemple : « quel est le jeu préféré des élèves de la classe ? » ; hypothèse : « je prédis le fanorona ».
+- `P` 2. Contrôle : 4 + 7 + 3 = 14 ✓ — la somme des effectifs retombe sur le nombre d’interrogés, le tableau est juste.
+- `P` 3. Les carottes (20) ; total 15 + 10 + 20 + 5 = 50 bottes ; écart maximal 20 − 5 = 15.
+- `P` 4. = .
+- `P` 5. Fréquence = ; estimation : de 10 = 6 jetons rouges environ.
+
+### SUJET D’EXAMEN FORMAT CEPE — UNITÉ VI
+
+- Indicateurs : 1150 paragraphes ; 94 tableaux ; lettrage a/b/d/e détecté : oui.
+- `P` SUJET D’EXAMEN FORMAT CEPE — UNITÉ VI
+- `P` Barème : 20 points. Présente clairement tous les calculs et toutes les constructions.
+- `P` Exercice 1 — 4 points. Enquête. On veut savoir comment les élèves de la classe viennent à l’école. a) Écris une question d’enquête précise. b) Propose une hypothèse. d) Qui faut-il interroger, et combien de fois chacun ? e) Pourquoi la réponse finale doit-elle venir des données et non d’un avis ?
+- `P` Exercice 2 — 4 points. Tableau des effectifs. Les 20 élèves répondent à « quel est ton sport préféré ? » : football 9, course 5, natation 4, basket 2. a) Dresse le tableau des effectifs. b) Quel est le sport le plus choisi ? d) Vérifie le contrôle du tableau. e) Combien d’élèves n’ont pas choisi le football ?
+- `P` Exercice 3 — 4 points. Diagramme en barres. Bottes vendues au marché : brèdes 15, tomates 10, carottes 20, oignons 5. a) Avec l’échelle 1 carreau = 5 bottes, donne la hauteur de chaque barre. b) Trace le diagramme. d) Quel est l’écart entre carottes et oignons ? e) Que faut-il vérifier pour que le diagramme soit honnête ?
+- `P` Exercice 4 — 4 points. Expérience aléatoire. Un dé est lancé 25 fois ; la face 6 sort 5 fois. a) Pourquoi ce lancer de dé est-il une expérience aléatoire ? b) Quelle est la fréquence de la face 6 ? d) Simplifie-la. e) Après trois 6 de suite, le 6 a-t-il plus de chances de sortir au lancer suivant ? Justifie.
+- `P` Exercice 5 — 4 points. Problème. Un sac opaque contient 10 jetons. On tire 40 fois avec remise : rouge 28 fois, bleu 8 fois, jaune 4 fois. a) Calcule la fréquence de chaque couleur, simplifiée. b) Quelle couleur domine le sac ? d) Estime la composition du sac. e) La classe refait 400 tirages au lieu de 40 : qu’est-ce qui change pour l’estimation ?
+- `P` CORRIGÉ ET BARÈME
+- `P` Exercice 1. a) « comment chaque élève de la classe vient-il à l’école ? » ; b) par exemple « la plupart viennent à pied » ; d) tous les élèves de la classe, une seule fois chacun ; e) parce qu’un avis isolé peut se tromper : seules les données collectées répondent pour tout le groupe. Un point par item.
+- `P` Exercice 2. a) football 9, course 5, natation 4, basket 2 (avec bâtons par paquets de 5) ; b) le football ; d) 9 + 5 + 4 + 2 = 20 ✓ ; e) 20 − 9 = 11 élèves. Un point par item.
+- `P` Exercice 3. a) brèdes 3 carreaux, tomates 2, carottes 4, oignons 1 ; b) quatre barres de même largeur, hauteurs 3, 2, 4, 1 carreaux, étiquetées ; d) 20 − 5 = 15 bottes ; e) axe partant de zéro, barres de même largeur, échelle régulière. Un point par item.
+- `P` Exercice 4. a) le résultat de chaque lancer est imprévisible, bien que les six résultats possibles soient connus ; b) ; d) = ; e) non : le dé n’a pas de mémoire, chaque lancer reste imprévisible. Un point par item.
+- `P` Exercice 5. a) rouge = ; bleu = ; jaune = ; b) le rouge ; d) de 10 = 7 rouges, de 10 = 2 bleus, de 10 = 1 jaune ; e) l’estimation devient plus sûre : plus les essais sont nombreux, plus les fréquences sont fiables. Un point par item.
+- `P` MÉTHODES
+- `P` D’OR
+- `P` LA BOÎTE À OUTILS DU CEPE
+- `P` À relire avant chaque examen — et à garder toute ta scolarité !
+- `P` 1. Comment résoudre un problème — la méthode en 6 étapes
+- `P` 2. Lire un grand nombre — mots-nombres, tableau CDU et cache
+- `P` 3. Bien poser les quatre opérations — unités, virgules, zéros
+- `P` 4. La preuve par 9 — le schéma qui contrôle × et ÷
+- `P` 5. La division posée — pas à pas, avec la preuve royale
+- `P` 6. Les fractions — les quatre opérations en images
+- `P` 7. Les durées — calculer quand les retenues valent 60
+- `P` 8. Piquets et intervalles — le piège des extrémités
+- `P` 9. La checklist du CEPE — épreuve OPÉRATION
+- `P` FICHE 1 — RÉSOUDRE UN PROBLÈME : LA MÉTHODE EN 6 ÉTAPES
+- `P` Un problème, c’est une histoire avec une question. Voici le chemin en six étapes — le même pour tous les problèmes du CEPE.
+- `P` Lis l’énoncé DEUX FOIS.
+- `P` La première fois pour l’histoire (qui ? quoi ? où ?), la deuxième fois pour les chiffres. Souligne les données utiles au crayon.
+- `P` Barre les données inutiles.
+- `P` « Rova, qui a 12 ans, achète 4 cahiers à 800 Ar » : l’âge de Rova ne sert à rien ! Les énoncés du CEPE cachent souvent des chiffres piégeurs.
+- `P` Repère la QUESTION, puis cherche la QUESTION CACHÉE.
+- `P` C’est ce qu’il faut calculer AVANT de pouvoir répondre. « Combien lui rend-on ? » cache une autre question : « Combien a-t-elle dépensé en tout ? » — on ne rend pas la monnaie sans connaître le total !
+- `P` Choisis l’opération
+- `P` Avec les mots-indices ci-dessous, ou en dessinant la situation : la quantité grandit (+), diminue (−), se répète (×), se partage (÷).
+- `P` Calcule dans la colonne « Opération », BIEN POSÉ :
+- `P` Chiffres alignés, une opération par ligne. N’oublie pas les unités (m, g, cm², Ariary…)
+- `P` Vérifie, puis réponds dans la colonne « Résultat » :
+- `P` 1500 Ar + 700 Ar = [Solution]
+- `P` 1500 Ar + 700 AR (posée) [Opération]
+- `P` =2200 Ar [Résultat]
+- `P` UN EXEMPLE COMPLET, DU DÉBUT À LA FIN
+- `P` « Soa achète 3 kapoaka de riz à 1 200 Ar le kapoaka et un savon à 2 500 Ar. Elle paie avec un billet de 20 000 Ar. Combien lui rend-on ? »
+- `P` Question cachée : combien a-t-elle dépensé en tout ? On ne peut pas rendre la monnaie sans le total !
+- `P` Mots-indices : « à 1 200 Ar le kapoaka » (prix unitaire → ×), « et un savon » (réunion → +), « combien lui rend-on » (écart → −).
+- `P` Démarche : 3 × 1 200 = 3 600 Ar (riz) ; 3 600 + 2 500 = 6 100 Ar (total) ; 20 000 − 6 100 = 13 900 Ar.
+- `P` Réponse : On lui rend 13 900 Ar.
+- `P` FICHE 2 — LIRE UN GRAND NOMBRE
+- `P` Les enfants de T3 ont appris les mots-nombres ; les voilà revenus, et ce sont eux qui font tout le travail. Trois phrases suffisent pour lire n’importe quel nombre :
+- `P` « Je révise mes mots-nombres. » Vingt, trente, quarante, cinquante, soixante… et les trois mots-pièges : soixante-dix (60 + 10), quatre-vingts (4 × 20), quatre-vingt-dix (80 + 10). 75 = soixante-quinze, 95 = quatre-vingt-quinze.
+- `P` « Je lis TROIS chiffres à la fois. » Dans chaque classe (Unités, Mille, Millions, Milliards), on lit centaines, dizaines, unités — jamais plus. Entre les classes, on dit juste « mille », « millions », « milliards ». C’est pourquoi savoir lire un nombre de 3 chiffres suffit pour lire jusqu’au milliard !
+- `P` « J’utilise le tableau et le cache. » Pour ÉCRIRE un nombre dicté, on entre les chiffres dans le tableau de DROITE à GAUCHE (le chiffre des unités entre le premier) — c’est ainsi qu’on évite l’erreur des classes incomplètes. Pour LIRE, on part de la gauche, et le cache (une fenêtre découpée dans un carton) ne découvre qu’une classe à la fois : aucune confusion possible entre les chiffres des différentes classes.
+- `P` Astuce bonus : « trois mille » → la classe des mille commence par 3 ; complète ensuite chaque classe avec les zéros qu’il faut. « Trois mille sept » = 3 007, jamais 37 ni 3 700 !
+- `P` FICHE 3 — BIEN POSER LES QUATRE OPÉRATIONS
+- `P` Une opération bien posée est à moitié calculée. Une opération mal posée est perdue d’avance — même si l’on connaît toutes ses tables.
+- `P` Règle 1 — Unités de même espèce. On n’additionne JAMAIS des mètres avec des kilomètres, ni des francs avec des ariary : 12 m + 4 km est interdit ! On convertit d’abord tout dans la même unité (4 km = 4 000 m), puis on calcule.
+- `P` Règle 2 — Les virgules s’alignent. Pour additionner ou soustraire des décimaux, chaque virgule se place l’une sous l’autre ; on peut compléter avec des zéros (3,5 = 3,50). Chaque chiffre reste dans sa colonne : unités sous unités, dixièmes sous dixièmes.
+- `P` Règle 3 — Attention aux zéros. Dans 13,01 × 40,1, chaque zéro compte : aucun ne se perd, aucun ne s’invente. Les zéros « qui gardent la place » sont les gardiens du tableau de numération.
+- `P` Règle 4 — Estime AVANT, vérifie APRÈS. Avant de calculer, un ordre de grandeur de tête (13 × 40 ≈ 520) ; après, la preuve (opération inverse, ou croix de la fiche 4). Le candidat qui rend sa copie sans vérifier laisse ses fautes de retenue se promener en liberté.
+- `P` FICHE 4 — LA PREUVE PAR 9 : LE SCHÉMA MAGIQUE
+- `P` La preuve par neuf contrôle une multiplication ou une division en quelques secondes. Elle se lit dans un dessin à quatre directions.
+- `P` Étape 1 — RÉDUIS chaque nombre à un seul chiffre : additionne ses chiffres, et recommence jusqu’à un seul. 47 → 4 + 7 = 11 → 1 + 1 = 2. Astuce des calculateurs : jette les 9 au passage !
+- `P` Étape 2 — Place les nombres sur le schéma et suis les branches : MULTIPLICATION → en HAUT et en BAS les réduits des deux facteurs, à GAUCHE le réduit du produit. DIVISION → en HAUT le réduit du diviseur, en BAS celui du quotient, à GAUCHE celui du dividende.
+- `P` Étape 3 — Calcule la DROITE : multiplication → droite = haut × bas ; division → droite = (haut × bas) + reste. Si GAUCHE = DROITE, le résultat est très probablement juste ✓
+- `P` Exemple de réduction rapide : 425 → 4 + 2 + 5 = 11 → 1 + 1 = 2. Et 945 : on jette le 9, 4 + 5 = 9 → on jette encore → 0 : les flèches du schéma font le contrôle !
+- `P` Limite du schéma : elle ne voit pas deux chiffres simplement échangés (2 13 au lieu de 213 garde le même réduit). « Très probablement juste », donc — et pas « sûrement juste ». Pour la certitude, la preuve complète reste la reine : (diviseur × quotient) + reste = dividende.
+- `P` FICHE 5 — LA DIVISION POSÉE PAS À PAS
+- `P` La division posée s’appuie entièrement sur les tables : une seule question à se répéter, colonne après colonne — « Dans… combien de fois… ? »
+- `P` Avant de commencer, encadre le quotient : 25 × 10 < 375 < 25 × 100 → le quotient de 375 ÷ 25 a 2 chiffres. Cet encadrement évite de poser un quotient trop court.
+- `P` Les quatre gestes, répétés : 1) prendre les chiffres du dividende de gauche à droite ; 2) demander à la table « combien de fois ? » ; 3) soustraire ; 4) abaisser le chiffre suivant.
+- `P` La règle d’or du reste : s’il atteint ou dépasse le diviseur, c’est qu’on pouvait encore servir une tournée — le quotient était trop petit. Et la preuve royale : dividende = (diviseur × quotient) + reste. Cette égalité est la carte d’identité de la division : au CEPE, elle vaut de l’or.
+- `P` FICHE 6 — FRACTIONS : LES QUATRE OPÉRATIONS
+- `P` Quatre règles courtes — et une image pour chacune. Le dénominateur (le bas) découpe ; le numérateur (le haut) colorie.
+- `P` Addition, soustraction — même dénominateur : on additionne (ou soustrait) les numérateurs, le bas ne change pas : 1/5 + 2/5 = 3/5.
+- `P` + = - =
+- `P` Addition, soustraction — dénominateurs différents : les flèches croisées fabriquent la fraction commune : 2/3 + 1/5 = (2 × 5 + 1 × 3)/(3 × 5) = 13/15. On multiplie « en diagonale » vers le haut, et les deux bas ensemble donnent le nouveau bas.
+- `P` - = - = + = + =
+- `P` Multiplication : haut × haut, bas × bas — et on simplifie EN CROIX avant de calculer : 2/3 × 3/4 = 1/2 (les deux 3 s’annulent).
+- `P` × =
+- `P` Division : diviser, c’est multiplier par l’INVERSE — le haut et le bas échangent leur place : 2/3 ÷ 3/4 = 2/3 × 4/3 = 8/9.
+- `P` ÷ =
+- `P` Et les entiers ? Un entier devient une fraction sur 1 : 3 = 3/1. Donc 3 − 2/5 = 15/5 − 2/5 = 13/5.
+- `P` 2=5=36=800=
+- `P` FICHE 7 — LES DURÉES : QUAND LES RETENUES VALENT 60
+- `P` Le temps est le grand rebelle du système décimal : il compte en 60 (secondes → minutes, minutes → heures) et en 24 (heures → jour). Toutes les techniques des grands nombres s’adaptent — il suffit de remplacer 10 par 60.
+- `P` Additionner : heures avec heures, minutes avec minutes. Dès que les minutes atteignent 60, on les ÉCHANGE contre 1 heure : 1 h 15 + 50 min = 1 h 65 min = 2 h 05 min.
+- `P` Soustraire : si les minutes du haut sont trop petites, on EMPRUNTE 1 heure et on la casse en 60 minutes : 2 h 30 − 1 h 40 = 1 h 90 − 1 h 40 = 50 min.
+- `P` Multiplier ou diviser : tout convertir en minutes d’abord, calculer, puis reconvertir : 4 h 20 min = 260 min ; 260 ÷ 2 = 130 min = 2 h 10 min.
+- `P` Piège d’or : 1 h 30 n’est PAS 1,30 h — c’est 1,5 h ! Les minutes ne sont pas des centièmes d’heure : on ne met jamais de virgule dans une durée.
+- `P` FICHE 8 — PIQUETS ET INTERVALLES : LE PIÈGE DES EXTRÉMITÉS
+- `P` Des piquets le long d’une clôture, des arbres autour d’un champ, des poteaux le long d’une route : le CEPE adore ce piège. La règle tient en deux dessins.
+- `P` LIGNE OUVERTE (les deux bouts ne se rejoignent pas) : nombre de piquets = nombre d’intervalles + 1. Cinq piquets plantés tous les 5 m n’occupent que 4 intervalles : 20 m de ligne, 5 piquets !
+- `P` BOUCLE FERMÉE (le tour d’un champ, un carrousel) : nombre de piquets = nombre d’intervalles. Le premier piquet et le dernier sont le même : le tour de 80 m avec un arbre tous les 4 m porte exactement 20 arbres.
+- `P` Le réflexe du champion : avant de répondre, DESSINE le schéma — quelques traits et quelques points suffisent. Le dessin ne se trompe jamais ; la formule apprise par cœur, si.
+- `P` FICHE 9 — LA CHECKLIST DU CEPE (ÉPREUVE OPÉRATION)
+- `P` Les consignes officielles de l’épreuve, transformées en huit réflexes. Coche-les dans ta tête — ou recopie-les en haut de ton brouillon à chaque examen.
+- `P` ET POUR L’ÉPREUVE DE PROBLÈMES…
+- `P` Même armure : lis deux fois, une question à la fois, cherche la question cachée (fiche 1), choisis l’opération avec les mots-indices, convertis les unités, vérifie avec le schéma par 9 (fiche 4) et la preuve royale (fiche 5) — puis réponds en phrase complète avec l’unité. Bon CEPE !
+- `P` SUJETS D’EXAMEN
+- `P` OPÉRATIONS
+- `P` 20 sujets type
+- `P` SUJET N° 1 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 348 756 + 92 784 = …
+- `P` 2. 805 420 − 276 835 = …
+- `P` 3. 693 × 94 = …
+- `P` 4. 4 687 ÷ 23 = …
+- `P` 5. 9 t − 3 500 kg = … t
+- `P` CORRIGÉ DU SUJET N° 1
+- `P` 1.
+- `P` J’aligne unités, dizaines et centaines.
+- `P` 348 756 + 92 784 = 441 540.
+- `P` 2.
+- `P` Je pose le plus grand nombre en haut et j’emprunte si nécessaire.
+- `P` 805 420 − 276 835 = 528 585.
+- `P` 3.
+- `P` Je calcule le produit des unités, puis celui des dizaines décalées.
+- `P` 693 × 94 = 65 142.
+- `P` 4.
+- `P` Je pose la division : quotient 203, reste 2.
+- `P` 4 687 = (23 × 203) + 2.
+- `P` 5.
+- `P` 1 t = 1 000 kg : je convertis puis je soustrais.
+- `P` 9 t − 3 500 kg = 5,5 t.
+- `P` SUJET N° 2 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 510,04 + 2 124,2 + 610 = …
+- `P` 2. 3 075 kg + … = 3 890 kg
+- `P` 3. 4 h 05 min × 8 = …
+- `P` 4. + = …
+- `P` 5. Un champ carré a un périmètre de 240 m. Quel est son côté ?
+- `P` CORRIGÉ DU SUJET N° 2
+- `P` 1.
+- `P` J’aligne les virgules dans la même colonne.
+- `P` 510,04 + 2 124,2 + 610 = 3 244,24.
+- `P` 2.
+- `P` Le nombre manquant est la différence : 3 890 − 3 075.
+- `P` … = 815 kg.
+- `P` 3.
+- `P` 4 h × 8 = 32 h ; 5 min × 8 = 40 min.
+- `P` 4 h 05 min × 8 = 32 h 40 min.
+- `P` 4.
+- `P` Le dénominateur reste 6 ; j’additionne les numérateurs.
+- `P` + = .
+- `P` 5.
+- `P` Un carré a 4 côtés égaux : 240 ÷ 4 = 60.
+- `P` Le côté mesure 60 m.
+- `P` SUJET N° 3 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 987,5 − 248,75 = …
+- `P` 2. … + 1 275 kg = 3 890 kg
+- `P` 3. 7 245 ÷ 32 = …
+- `P` 4. 7,548 t + 14 kg = … kg
+- `P` 5. 1 kg de viande coûte 12 000 Ar. Combien coûtent 9,5 kg ?
+- `P` CORRIGÉ DU SUJET N° 3
+- `P` 1.
+- `P` J’aligne les virgules et je soustrais colonne par colonne.
+- `P` 987,5 − 248,75 = 738,75.
+- `P` 2.
+- `P` Le nombre manquant est 3 890 − 1 275.
+- `P` … = 2 615 kg.
+- `P` 3.
+- `P` Je pose la division : quotient 226, reste 5.
+- `P` 7 245 = (32 × 226) + 5.
+- `P` 4.
+- `P` Je convertis avant de calculer.
+- `P` 7,548 t + 14 kg = 7 562 kg.
+- `P` 5.
+- `P` Prix total : 12 000 × 9,5 = 114 000.
+- `P` Les 9,5 kg coûtent 114 000 Ar.
+- `P` SUJET N° 4 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. + = …
+- `P` 2. − = …
+- `P` 3. × = …
+- `P` 4. de 1 500 Ar = …
+- `P` 5. 2 h 35 min + 1 h 45 min = …
+- `P` CORRIGÉ DU SUJET N° 4
+- `P` 1.
+- `P` Le dénominateur reste 10 ; j’additionne les numérateurs.
+- `P` + = .
+- `P` 2.
+- `P` Le dénominateur reste 9 ; je soustrais les numérateurs.
+- `P` − = .
+- `P` 3.
+- `P` Je simplifie par 3, puis je multiplie.
+- `P` × = .
+- `P` 4.
+- `P` 1 500 ÷ 5 = 300 Ar, puis × 3.
+- `P` de 1 500 Ar = 900 Ar.
+- `P` 5.
+- `P` 60 min = 1 h : je regroupe les minutes.
+- `P` 2 h 35 min + 1 h 45 min = 4 h 20 min.
+- `P` SUJET N° 5 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 475 896 + 243 907 = …
+- `P` 2. 84,5 − 27,86 = …
+- `P` 3. 40,5 hL + 2,09 m³ = … L
+- `P` 4. 7 h 20 min − 3 h 25 min 40 s = …
+- `P` 5. Un triangle a une aire de 54 m² et une base de 12 m. Calculez sa hauteur.
+- `P` CORRIGÉ DU SUJET N° 5
+- `P` 1.
+- `P` J’aligne unités, dizaines et centaines.
+- `P` 475 896 + 243 907 = 719 803.
+- `P` 2.
+- `P` J’aligne les virgules et je soustrais colonne par colonne.
+- `P` 84,5 − 27,86 = 56,64.
+- `P` 3.
+- `P` 1 hL = 100 L et 1 m³ = 1 000 L.
+- `P` 4 050 L + 2 090 L = 6 140 L.
+- `P` 4.
+- `P` J’emprunte 1 h = 60 min puis 1 min = 60 s.
+- `P` 7 h 20 min − 3 h 25 min 40 s = 3 h 54 min 20 s.
+- `P` 5.
+- `P` A = (b × h) ÷ 2, donc h = (2 × 54) ÷ 12.
+- `P` La hauteur mesure 9 m.
+- `P` SUJET N° 6 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 23,5 × 4 = …
+- `P` 2. 4 500 ÷ 100 = …
+- `P` 3. de 240 kg = …
+- `P` 4. Un rectangle mesure 28 m sur 16 m. Calculez son aire.
+- `P` 5. Un tissu coûte 15 000 Ar le mètre. Quel est le prix de 3,5 m ?
+- `P` CORRIGÉ DU SUJET N° 6
+- `P` 1.
+- `P` Je multiplie sans la virgule, puis je replace les chiffres décimaux.
+- `P` 23,5 × 4 = 94.
+- `P` 2.
+- `P` Diviser par 100 déplace la virgule de deux rangs vers la gauche.
+- `P` 4 500 ÷ 100 = 45.
+- `P` 3.
+- `P` 240 ÷ 8 = 30 kg, puis × 3.
+- `P` de 240 kg = 90 kg.
+- `P` 4.
+- `P` A = L × l = 28 × 16 = 448.
+- `P` L’aire est 448 m².
+- `P` 5.
+- `P` Prix = 15 000 × 3,5 = 52 500.
+- `P` Le tissu coûte 52 500 Ar.
+- `P` SUJET N° 7 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 125,6 + 78,45 + 9,01 = …
+- `P` 2. 900 000 − 48 765 = …
+- `P` 3. 408 × 36 = …
+- `P` 4. 9 365 ÷ 45 = …
+- `P` 5. 3 kg 250 g + 1 kg 800 g = … kg
+- `P` CORRIGÉ DU SUJET N° 7
+- `P` 1.
+- `P` J’aligne les virgules dans la même colonne.
+- `P` 125,6 + 78,45 + 9,01 = 213,06.
+- `P` 2.
+- `P` Je pose le plus grand nombre en haut et j’emprunte si nécessaire.
+- `P` 900 000 − 48 765 = 851 235.
+- `P` 3.
+- `P` Je calcule le produit des unités, puis celui des dizaines décalées.
+- `P` 408 × 36 = 14 688.
+- `P` 4.
+- `P` Je pose la division : quotient 208, reste 20.
+- `P` 9 365 = (45 × 208) + 20.
+- `P` 5.
+- `P` Je convertis avant de calculer.
+- `P` 3 250 g + 1 800 g = 5 kg 50 g.
+- `P` SUJET N° 8 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. Un carré a un périmètre de 268 m. Calculez son côté.
+- `P` 2. Un rectangle mesure 35 m sur 18 m. Calculez périmètre et aire.
+- `P` 3. 2,4 m³ + 350 L = … L
+- `P` 4. 12,5 × 8 = …
+- `P` 5. de 800 Ar = …
+- `P` CORRIGÉ DU SUJET N° 8
+- `P` 1.
+- `P` Côté = 268 ÷ 4 = 67.
+- `P` Le côté mesure 67 m.
+- `P` 2.
+- `P` P = 2 × (35 + 18) = 106 m ; A = 35 × 18 = 630 m².
+- `P` Le périmètre est 106 m et l’aire 630 m².
+- `P` 3.
+- `P` Je convertis avant de calculer.
+- `P` 2 400 L + 350 L = 2 750 L.
+- `P` 4.
+- `P` Je multiplie sans la virgule, puis je replace les chiffres décimaux.
+- `P` 12,5 × 8 = 100.
+- `P` 5.
+- `P` 800 ÷ 4 = 200 Ar, puis × 3.
+- `P` de 800 Ar = 600 Ar.
+- `P` SUJET N° 9 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 46 242 ÷ 63 = …
+- `P` 2. 7,548 t + 14 kg = … kg
+- `P` 3. 4 h 05 min × 8 = …
+- `P` 4. Un triangle a une aire de 54 m² et une base de 12 m.
+- `P` 5. 12 L de lait coûtent 30 000 Ar. Quel est le prix de 8 L ?
+- `P` CORRIGÉ DU SUJET N° 9
+- `P` 1.
+- `P` Je pose la division : quotient 734, reste 0.
+- `P` 46 242 = (63 × 734) + 0.
+- `P` 2.
+- `P` Je convertis avant de calculer.
+- `P` 7 548 kg + 14 kg = 7 562 kg.
+- `P` 3.
+- `P` 4 h × 8 = 32 h ; 5 min × 8 = 40 min.
+- `P` Résultat : 32 h 40 min.
+- `P` 4.
+- `P` h = (2 × 54) ÷ 12 = 9 m.
+- `P` La hauteur est 9 m.
+- `P` 5.
+- `P` Prix d’1 L = 30 000 ÷ 12 = 2 500 Ar.
+- `P` Prix de 8 L = 2 500 × 8 = 20 000 Ar.
+- `P` SUJET N° 10 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 510,04 + 2 124,2 + 610 = …
+- `P` 2. 3 075 kg + … = 3 890 kg
+- `P` 3. 4 h 05 min × 8 = …
+- `P` 4. 40,5 hL + 2,09 m³ = … L
+- `P` 5. de 1 500 Ar = …
+- `P` CORRIGÉ DU SUJET N° 10
+- `P` 1.
+- `P` J’aligne les virgules et je complète les zéros.
+- `P` Résultat : 3 244,24.
+- `P` 2.
+- `P` 3 890 − 3 075 = 815.
+- `P` Le nombre manquant est 815 kg.
+- `P` 3.
+- `P` 4 h 05 min × 8 = 32 h 40 min.
+- `P` 4.
+- `P` Je convertis avant de calculer.
+- `P` 4 050 L + 2 090 L = 6 140 L.
+- `P` 5.
+- `P` 1 500 ÷ 5 = 300 Ar, puis × 3.
+- `P` de 1 500 Ar = 900 Ar.
+- `P` SUJET N° 11 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. Un champ carré a un périmètre de 268 m. Calculez côté, aire et prix à 20 000 Ar/m².
+- `P` 2. 2,5 t de haricots à 3 000 Ar/kg : recette ?
+- `P` 3. de 147 000 Ar = …
+- `P` 4. 850 000 Ar placés à 5 % : intérêt annuel = …
+- `P` 5. 1 000 000 − 42 500 = …
+- `P` CORRIGÉ DU SUJET N° 11
+- `P` 1.
+- `P` Côté = 268 ÷ 4 = 67 m ; aire = 67 × 67 = 4 489 m².
+- `P` Prix = 4 489 × 20 000 = 89 780 000 Ar.
+- `P` 2.
+- `P` 2,5 t = 2 500 kg ; recette = 2 500 × 3 000.
+- `P` La recette est 7 500 000 Ar.
+- `P` 3.
+- `P` 147 000 ÷ 5 = 29 400 Ar, puis × 2.
+- `P` de 147 000 Ar = 58 800 Ar.
+- `P` 4.
+- `P` Intérêt = 850 000 × 5 ÷ 100.
+- `P` L’intérêt annuel est 42 500 Ar.
+- `P` 5.
+- `P` Je pose le plus grand nombre en haut et j’emprunte si nécessaire.
+- `P` 1 000 000 − 42 500 = 957 500.
+- `P` SUJET N° 12 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. Un marchand achète 8 kg de riz à 3 200 Ar/kg. Total ?
+- `P` 2. Il paie avec 50 000 Ar. Monnaie rendue = …
+- `P` 3. 15 450 ÷ 6 = …
+- `P` 4. + = …
+- `P` 5. 3 500 g + 2,5 kg = … kg
+- `P` CORRIGÉ DU SUJET N° 12
+- `P` 1.
+- `P` Prix total = 8 × 3 200 = 25 600 Ar.
+- `P` Il paie 25 600 Ar.
+- `P` 2.
+- `P` Monnaie = 50 000 − 25 600.
+- `P` Il reçoit 24 400 Ar.
+- `P` 3.
+- `P` Je pose la division : quotient 2575, reste 3.
+- `P` 15 450 = (6 × 2 575) + 3.
+- `P` 4.
+- `P` Le dénominateur reste 5 ; j’additionne les numérateurs.
+- `P` + = .
+- `P` 5.
+- `P` Je convertis avant de calculer.
+- `P` 3,5 kg + 2,5 kg = 6 kg.
+- `P` SUJET N° 13 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. Une rizière de 48 m sur 25 m produit 3,5 t par are. Masse récoltée ?
+- `P` 2. 6 500 ÷ 50 = …
+- `P` 3. de 6 500 kg = …
+- `P` 4. 130 × 50 = …
+- `P` 5. 1 200 × 325 = …
+- `P` CORRIGÉ DU SUJET N° 13
+- `P` 1.
+- `P` 1 200 m² = 12 ares ; masse = 12 × 3,5 = 42 t.
+- `P` La récolte pèse 42 t.
+- `P` 2.
+- `P` Je pose la division : quotient 130, reste 0.
+- `P` 6 500 = (50 × 130) + 0.
+- `P` 3.
+- `P` 6 500 ÷ 4 = 1 625 kg, puis × 1.
+- `P` de 6 500 kg = 1 625 kg.
+- `P` 4.
+- `P` Je calcule le produit des unités, puis celui des dizaines décalées.
+- `P` 130 × 50 = 6 500.
+- `P` 5.
+- `P` Je multiplie sans la virgule, puis je replace les chiffres décimaux.
+- `P` 1 200 × 325 = 390 000.
+- `P` SUJET N° 14 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 360 ÷ 12 = …
+- `P` 2. 24 × 18 = …
+- `P` 3. 24 élèves reçoivent chacun 3 cahiers à 1 500 Ar. Dépense ?
+- `P` 4. 2 h 45 min + 1 h 35 min = …
+- `P` 5. de 40 élèves = …
+- `P` CORRIGÉ DU SUJET N° 14
+- `P` 1.
+- `P` Je pose la division : quotient 30, reste 0.
+- `P` 360 = (12 × 30) + 0.
+- `P` 2.
+- `P` Je calcule le produit des unités, puis celui des dizaines décalées.
+- `P` 24 × 18 = 432.
+- `P` 3.
+- `P` Nombre de cahiers = 24 × 3 = 72.
+- `P` Dépense = 72 × 1 500 = 108 000 Ar.
+- `P` 4.
+- `P` Je convertis avant de calculer.
+- `P` 2 h 45 min + 1 h 35 min = 4 h 20 min.
+- `P` 5.
+- `P` 40 ÷ 5 = 8 élèves, puis × 3.
+- `P` de 40 élèves = 24 élèves.
+- `P` SUJET N° 15 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. Un taxi part à 7 h 30 et arrive à 9 h 30. Durée = …
+- `P` 2. Distance 100 km en 2 h : vitesse moyenne ?
+- `P` 3. 8,5 × 100 = …
+- `P` 4. 2 500 m = … km
+- `P` 5. 480 ÷ 30 = …
+- `P` CORRIGÉ DU SUJET N° 15
+- `P` 1.
+- `P` Durée = 9 h 30 − 7 h 30 = 2 h.
+- `P` Le trajet dure 2 heures.
+- `P` 2.
+- `P` Vitesse = distance ÷ durée = 100 ÷ 2.
+- `P` La vitesse moyenne est 50 km/h.
+- `P` 3.
+- `P` Je multiplie sans la virgule, puis je replace les chiffres décimaux.
+- `P` 8,5 × 100 = 850.
+- `P` 4.
+- `P` Je convertis avant de calculer.
+- `P` 2 500 m ÷ 1 000 = 2,5 km.
+- `P` 5.
+- `P` Je pose la division : quotient 16, reste 0.
+- `P` 480 = (30 × 16) + 0.
+- `P` SUJET N° 16 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. Clôturer un champ de 80 m sur 45 m avec une porte de 4 m : longueur de grillage ?
+- `P` 2. 246 m de grillage à 2 500 Ar/m : prix ?
+- `P` 3. 125 × 48 = …
+- `P` 4. 4 m³ = … L
+- `P` 5. 1 000,5 − 278,75 = …
+- `P` CORRIGÉ DU SUJET N° 16
+- `P` 1.
+- `P` P = 2 × (80 + 45) = 250 m ; grillage = 250 − 4.
+- `P` Il faut 246 m de grillage.
+- `P` 2.
+- `P` Prix = 246 × 2 500 = 615 000 Ar.
+- `P` La clôture coûte 615 000 Ar.
+- `P` 3.
+- `P` Je calcule le produit des unités, puis celui des dizaines décalées.
+- `P` 125 × 48 = 6 000.
+- `P` 4.
+- `P` Je convertis avant de calculer.
+- `P` 4 × 1 000 L = 4 000 L.
+- `P` 5.
+- `P` J’aligne les virgules et je soustrais colonne par colonne.
+- `P` 1 000,5 − 278,75 = 721,75.
+- `P` SUJET N° 17 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. 5 hL + 35 L = … L
+- `P` 2. 2,09 m³ = … L
+- `P` 3. 535 L remplissent des bidons de 5 L. Combien de bidons ?
+- `P` 4. de 240 L = …
+- `P` 5. 107 bidons vendus 2 000 Ar chacun : recette ?
+- `P` CORRIGÉ DU SUJET N° 17
+- `P` 1.
+- `P` Je convertis avant de calculer.
+- `P` 500 L + 35 L = 535 L.
+- `P` 2.
+- `P` Je convertis avant de calculer.
+- `P` 2,09 × 1 000 L = 2 090 L.
+- `P` 3.
+- `P` Nombre de bidons = 535 ÷ 5 = 107.
+- `P` On remplit 107 bidons.
+- `P` 4.
+- `P` 240 ÷ 4 = 60 L, puis × 3.
+- `P` de 240 L = 180 L.
+- `P` 5.
+- `P` Recette = 107 × 2 000 = 214 000 Ar.
+- `P` La recette est 214 000 Ar.
+- `P` SUJET N° 18 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. + = …
+- `P` 2. − = …
+- `P` 3. × = …
+- `P` 4. de 960 Ar = …
+- `P` 5. 7,25 × 12 = …
+- `P` CORRIGÉ DU SUJET N° 18
+- `P` 1.
+- `P` Le dénominateur reste 8 ; j’additionne les numérateurs.
+- `P` + = .
+- `P` 2.
+- `P` Le dénominateur reste 12 ; je soustrais les numérateurs.
+- `P` − = .
+- `P` 3.
+- `P` Je simplifie par 4, puis je multiplie.
+- `P` × = .
+- `P` 4.
+- `P` 960 ÷ 8 = 120 Ar, puis × 5.
+- `P` de 960 Ar = 600 Ar.
+- `P` 5.
+- `P` Je multiplie sans la virgule, puis je replace les chiffres décimaux.
+- `P` 7,25 × 12 = 87.
+- `P` SUJET N° 19 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. Écris en lettres : 12 078
+- `P` 2. Écris en chiffres : quatre-vingt-quatorze
+- `P` 3. Range dans l’ordre croissant : 87 ; 93 ; 78 ; 39
+- `P` 4. Compare : 10,1 … 10,099 ; 37,2 … 37,200
+- `P` 5. Calcule : 25 + 57 et 19 × 3
+- `P` CORRIGÉ DU SUJET N° 19
+- `P` 1.
+- `P` 12 078 se lit : douze mille soixante-dix-huit.
+- `P` Réponse : douze mille soixante-dix-huit.
+- `P` 2.
+- `P` « quatre-vingt-quatorze » correspond à 94.
+- `P` Réponse : 94.
+- `P` 3.
+- `P` Je compare les nombres puis je les place du plus petit au plus grand.
+- `P` 39 < 78 < 87 < 93.
+- `P` 4.
+- `P` 10,1 = 10,100 > 10,099 ; 37,2 = 37,200.
+- `P` Réponse : > ; =.
+- `P` 5.
+- `P` 25 + 57 = 82 ; 19 × 3 = 57.
+- `P` Réponses : 82 et 57.
+- `P` SUJET N° 20 — OPÉRATIONS
+- `P` Effectue les opérations suivantes en posant tes calculs. Durée conseillée : 30 minutes.
+- `P` 1. Compare : 39 L … 900 mL ; 7 hm … 700 m
+- `P` 2. 300 kg = … t
+- `P` 3. 9,2 q = … hg
+- `P` 4. Un losange a D = 16 cm et d = 9 cm. Calculez son aire.
+- `P` 5. Trace deux droites perpendiculaires.
+- `P` CORRIGÉ DU SUJET N° 20
+- `P` 1.
+- `P` 39 L = 39 000 mL, donc 39 L > 900 mL.
+- `P` 7 hm = 700 m, donc 7 hm = 700 m.
+- `P` 2.
+- `P` Je convertis avant de calculer.
+- `P` 300 kg ÷ 1 000 = 0,3 t.
+- `P` 3.
+- `P` Je convertis avant de calculer.
+- `P` 9,2 q = 920 kg = 9 200 hg = 9 200 hg.
+- `P` 4.
+- `P` A = 16 × 9 ÷ 2 = 72.
+- `P` L’aire est 72 cm².
+- `P` 5.
+- `P` Deux droites perpendiculaires forment un angle droit.
+- `P` Je vérifie avec l’équerre.
+- `P` SUJETS D’EXAMEN
+- `P` PROBLÈMES
+- `P` 20 sujets type CEPE
+- `P` SUJET N° 1 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Au marché, Soa achète 8 kapoaka de riz à 1 200 Ar le kapoaka et un savon à 3 000 Ar. Elle paie avec un billet de 20 000 Ar. Combien lui rend-on ?
+- `P` Problème 2.
+- `P` Un commerçant partage un sac de 25 kg de sucre en sachets de 400 g. Combien de sachets pleins obtient-il, et combien de grammes reste-t-il ?
+- `P` Problème 3.
+- `P` Un taxi-brousse consomme 12 L de carburant pour 100 km. Quelle quantité consomme-t-il pour parcourir 150 km ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 1
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Pour rendre la monnaie, il faut d’abord connaître le prix TOTAL des achats : le total est la question cachée.
+- `P` Mots-indices : « à … Ar le kapoaka » (prix unitaire → ×) ; « et un savon » (réunion → +) ; « combien lui rend-on » (écart → −).
+- `P` Opérations choisies : multiplication (prix du riz), puis addition (total), puis soustraction (monnaie rendue).
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Prix du riz : 8 × 1 200 = 9 600 Ar.Étape 2 — Dépense totale : 9 600 + 3 000 = 12 600 Ar.Étape 3 — Monnaie rendue : 20 000 − 12 600 = 7 400 Ar.
+- `T2C2` On lui rend 7 400 Ar.
+- `T2C3` multiplication (prix du riz), puis addition (total), puis soustraction (monnaie rendue).
+- `P` Problème 2 — démarche :
+- `P` Question cachée : On ne peut diviser que des grammes par des grammes : la conversion kg → g est la question cachée.
+- `P` Mots-indices : « partage… en sachets de » → division ; « kg » et « g » dans le même énoncé → conversion d’abord.
+- `P` Opérations choisies : conversion, puis division euclidienne : combien de paquets de … g dans … g, et que reste-t-il ?
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Conversion : 25 kg = 25 × 1 000 = 25 000 g.Étape 2 — Division : 25 000 ÷ 400 = 62, reste 200.Vérification : 400 × 62 + 200 = 25 000 ✓
+- `T2C2` Il obtient 62 sachets pleins et il reste 200 g.
+- `T2C3` conversion, puis division euclidienne : combien de paquets de … g dans … g, et que reste-t-il ?
+- `P` Problème 3 — démarche :
+- `P` Question cachée : La consommation est donnée pour 100 km, on la cherche pour un autre trajet : c’est un tableau de proportionnalité.
+- `P` Mots-indices : « … L pour 100 km… pour … km ? » → proportionnalité (produit en croix ou retour à l’unité).
+- `P` Opérations choisies : multiplication et division par le coefficient : on raisonne par paquets de 100 km.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Pour 1 km : 12 ÷ 100 = 0,12 L (ou on raisonne par paquets de 100 km).Étape 2 — Pour 150 km : 12 × 150 ÷ 100 = 18 L.C’est un tableau de proportionnalité : 100 km → 12 L ; 150 km → 18 L.
+- `T2C2` Il consomme 18 L pour 150 km.
+- `T2C3` multiplication et division par le coefficient : on raisonne par paquets de 100 km.
+- `P` SUJET N° 2 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Le champ rectangulaire de Rakoto mesure 100 m de longueur et 70 m de largeur. Il veut le clôturer avec du grillage vendu 1 500 Ar le mètre. Combien va coûter la clôture ?
+- `P` Problème 2.
+- `P` Une salle de classe rectangulaire mesure 11 m sur 8 m. On veut la carreler avec des dalles de 1 m² vendues 12 000 Ar l’unité. Combien de dalles faut-il, et pour quel prix total ?
+- `P` Problème 3.
+- `P` Rasoa récolte 200 kg de letchis. Elle en vend les au marché à 2 500 Ar le kilo et garde le reste pour sa famille. Quelle est sa recette, et combien de kilos garde-t-elle ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 2
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Le grillage suit le TOUR du champ : le périmètre est la question cachée — impossible d’acheter des mètres sans connaître le tour !
+- `P` Mots-indices : « clôturer » → le tour → périmètre ; « … Ar le mètre » → × ensuite.
+- `P` Opérations choisies : périmètre (L + l) × 2, puis multiplication par le prix du mètre.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Périmètre : P = (L + l) × 2 = (100 + 70) × 2 = 340 m.Étape 2 — Coût : 340 × 1 500 = 510 000 Ar.
+- `T2C2` La clôture coûtera 510 000 Ar.
+- `T2C3` périmètre (L + l) × 2, puis multiplication par le prix du mètre.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Une dalle couvre exactement 1 m² : le nombre de dalles est donc l’AIRE de la salle.
+- `P` Mots-indices : « carreler… dalles de 1 m² » → aire ; « pour quel prix total » → ×.
+- `P` Opérations choisies : aire L × l, puis multiplication par le prix de la dalle.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Aire de la salle : A = L × l = 11 × 8 = 88 m².Étape 2 — Nombre de dalles : 88 dalles de 1 m² (1 dalle par m²).Étape 3 — Prix total : 88 × 12 000 = 1 056 000 Ar.
+- `T2C2` Il faut 88 dalles, pour 1 056 000 Ar.
+- `T2C3` aire L × l, puis multiplication par le prix de la dalle.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Vendre les oblige à calculer D’ABORD cette quantité en kilos : c’est la question cachée.
+- `P` Mots-indices : « les de » → fraction de la récolte (÷ 4 puis × 3) ; « au kilo » → × par le prix.
+- `P` Opérations choisies : fraction de la récolte, puis multiplication pour la recette, puis soustraction pour la part gardée.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Quantité vendue : de 200 = (200 ÷ 4) × 3 = 50 × 3 = 150 kg.Étape 2 — Recette : 150 × 2 500 = 375 000 Ar.Étape 3 — Part gardée : 200 − 150 = 50 kg (c’est bien de la récolte).
+- `T2C2` Sa recette est de 375 000 Ar et elle garde 50 kg.
+- `T2C3` fraction de la récolte, puis multiplication pour la recette, puis soustraction pour la part gardée.
+- `P` SUJET N° 3 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Pour coudre des uniformes, une maman achète 4,5 m de tissu à 12 000 Ar le mètre. Elle paie avec un billet de 100 000 Ar. Quel est le prix du tissu, et combien lui rend-on ?
+- `P` Problème 2.
+- `P` Un taxi-brousse part d’Antananarivo à 9 h 15 min. Le trajet dure 3 h 50 min. À quelle heure arrive-t-il ?
+- `P` Problème 3.
+- `P` Naina épargne 2 500 Ar par semaine pour acheter un vélo à 62 500 Ar. Combien de semaines d’épargne lui faudra-t-il ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 3
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Le prix du tissu d’abord, la monnaie ensuite : on ne rend pas la monnaie sans connaître le total.
+- `P` Mots-indices : « … m à … Ar le mètre » (prix unitaire → ×) ; « combien lui rend-on » (écart → −).
+- `P` Opérations choisies : multiplication à virgules, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Prix du tissu : 4,5 × 12 000 = 54 000 Ar.Étape 2 — Monnaie rendue : 100 000 − 54 000 = 46 000 Ar.
+- `T2C2` Le tissu coûte 54 000 Ar ; on lui rend 46 000 Ar.
+- `T2C3` multiplication à virgules, puis soustraction.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : On additionne les heures avec les heures et les minutes avec les minutes — et si les minutes dépassent 60, on échange contre 1 heure.
+- `P` Mots-indices : « part à… le trajet dure… » → addition de durées (base 60).
+- `P` Opérations choisies : addition sexagésimale : colonne des heures, colonne des minutes, échange à 60.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — On additionne les heures : 9 h + 3 h = 12 h.Étape 2 — On additionne les minutes : 15 min + 50 min = 65 min = 1 h 5 min (on ne dépasse jamais 60 min !).Étape 3 — Heure d’arrivée : 13 h 05 min.
+- `T2C2` Il arrive à 13 h 05 min.
+- `T2C3` addition sexagésimale : colonne des heures, colonne des minutes, échange à 60.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Combien de « paquets » de … Ar tiennent dans le prix du vélo : l’épargne hebdomadaire est comme un paquet qu’on répète.
+- `P` Mots-indices : « combien de semaines » → combien de fois → division (groupement).
+- `P` Opérations choisies : division : on cherche combien de fois l’épargne entre dans le prix total.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — On cherche combien de fois 2 500 entre dans 62 500 : c’est une division.Étape 2 — 62 500 ÷ 2 500 = 25.Vérification : 2 500 × 25 = 62 500 ✓
+- `T2C2` Il lui faudra 25 semaines.
+- `T2C3` division : on cherche combien de fois l’épargne entre dans le prix total.
+- `P` SUJET N° 4 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Pour la fête de l’école, 198 élèves sont rangés en rangées de 18. Combien y a-t-il de rangées ? Ensuite, ces élèves et 10 enseignants partent en excursion dans des bus de 30 places. Combien de bus faut-il ?
+- `P` Problème 2.
+- `P` Un champ carré de côté 54 m est vendu 15 000 Ar le m². Calculez son périmètre, son aire puis son prix.
+- `P` Problème 3.
+- `P` Une famille récolte 141 sacs de riz de 60 kg. Elle garde de la récolte et vend le reste à 1 800 Ar le kilo. Quelle masse vend-elle et quelle recette obtient-elle ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 4
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Deux questions bien séparées : d’abord les rangées (division), puis les bus (division avec reste — et il faut l’interpréter !).
+- `P` Mots-indices : « en rangées de » → ÷ ; « et … enseignants » → + ; « bus de 30 places » → ÷ avec reste.
+- `P` Opérations choisies : division, addition, puis division avec interprétation du reste : le reste impose un bus DE PLUS.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Nombre de rangées : 198 ÷ 18 = 11 rangées.Étape 2 — Personnes à transporter : 198 + 10 = 208.Étape 3 — 208 ÷ 30 = 6, reste 28 : il faut un bus de plus pour les 28 personnes restantes.
+- `T2C2` Il y a 11 rangées et il faut 7 bus.
+- `T2C3` division, addition, puis division avec interprétation du reste : le reste impose un bus DE PLUS.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Le côté permet d’abord de trouver le tour, puis la surface et enfin le prix.
+- `P` Mots-indices : « carré », « côté », « m² », « prix du m² » → périmètre, aire, multiplication.
+- `P` Opérations choisies : P = 4 × côté ; A = côté × côté ; prix = aire × prix du m².
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` P = 4 × 54 = 216 m.A = 54 × 54 = 2 916 m².Prix = 2 916 × 15 000 = 43 740 000 Ar.
+- `T2C2` P = 216 m ; A = 2 916 m² ; prix = 43 740 000 Ar.
+- `T2C3` P = 4 × côté ; A = côté × côté ; prix = aire × prix du m².
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Il faut trouver la masse totale, puis distinguer la part gardée de la part vendue.
+- `P` Mots-indices : « sacs de…kg » → × ; « garde… » → fraction ; « au kilo » → ×.
+- `P` Opérations choisies : multiplication, fraction, soustraction, puis multiplication par le prix au kilo.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Masse totale : 141 × 60 = 8 460 kg.Masse gardée : de 8 460 = 5 076 kg ; masse vendue = 8 460 − 5 076 = 3 384 kg.Recette : 3 384 × 1 800 = 6 091 200 Ar.
+- `T2C2` La famille vend 3 384 kg et reçoit 6 091 200 Ar.
+- `T2C3` multiplication, fraction, soustraction, puis multiplication par le prix au kilo.
+- `P` SUJET N° 5 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Un taxi-brousse roule pendant 1 h 30 min à 40 km/h. Quelle distance parcourt-il ?
+- `P` Problème 2.
+- `P` Pour construire une maison, un maçon achète 22 sacs de ciment à 22 000 Ar chacun. Le transport coûte 65 000 Ar. Il paie avec 1 000 000 Ar. Quelle dépense totale et quelle monnaie reçoit-il ?
+- `P` Problème 3.
+- `P` 5 citernes contiennent chacune 250 L d’eau. On remplit des bidons de 25 L. Combien de bidons pleins obtient-on et combien de litres restent-ils ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 5
+- `P` Problème 1 — démarche :
+- `P` Question cachée : La durée doit être exprimée dans la même unité que la vitesse : les heures.
+- `P` Mots-indices : « vitesse… pendant… » → distance = vitesse × durée.
+- `P` Opérations choisies : conversion des minutes, puis multiplication vitesse × durée.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Durée en heures : 1 h 30 min = 1,5 h.Distance = vitesse × durée = 40 × 1,5 = 60 km.
+- `T2C2` Le taxi-brousse parcourt 60 km.
+- `T2C3` conversion des minutes, puis multiplication vitesse × durée.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Le transport s’ajoute au prix des sacs avant de calculer la monnaie.
+- `P` Mots-indices : « chacun » → × ; « transport » → + ; « paie avec » → −.
+- `P` Opérations choisies : multiplication, addition, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Ciment : 22 × 22 000 = 484 000 Ar.Dépense totale : 484 000 + 65 000 = 549 000 Ar.Monnaie : 1 000 000 − 549 000 = 451 000 Ar.
+- `T2C2` La dépense est 549 000 Ar et la monnaie est 451 000 Ar.
+- `T2C3` multiplication, addition, puis soustraction.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Les citernes doivent être réunies avant le partage en bidons.
+- `P` Mots-indices : « chacune » → × ; « bidons de » → division euclidienne ; « restent » → reste.
+- `P` Opérations choisies : multiplication, puis division avec interprétation du reste.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Quantité totale : 5 × 250 = 1 250 L.Partage : 1 250 ÷ 25 = 50, reste 0 L.Vérification : 25 × 50 + 0 = 1 250 L.
+- `T2C2` On obtient 50 bidons pleins et il reste 0 L.
+- `T2C3` multiplication, puis division avec interprétation du reste.
+- `P` SUJET N° 6 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Une école offre 5 cahiers à chacun de ses 28 élèves. Un cahier coûte 1 800 Ar. Le budget est de 200 000 Ar. Combien dépense-t-elle et combien reste-t-il ?
+- `P` Problème 2.
+- `P` Un éleveur possède 28 poules. Il en vend 5 à 18 000 Ar chacune et dépense 100 000 Ar pour les nourrir. Quelle recette et quel bénéfice lui reste-t-il ?
+- `P` Problème 3.
+- `P` Un commerçant partage 34 kg de sucre en sachets de 750 g. Combien de sachets pleins prépare-t-il et quelle masse reste-t-il ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 6
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Il faut d’abord compter tous les cahiers, puis leur prix total.
+- `P` Mots-indices : « chacun » → × ; « coûte » → × ; « reste » → −.
+- `P` Opérations choisies : double multiplication, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Cahiers : 28 × 5 = 140.Dépense : 140 × 1 800 = 252 000 Ar.Reste : 200 000 − 252 000 = -52 000 Ar.
+- `T2C2` L’école dépense 252 000 Ar et il reste -52 000 Ar.
+- `T2C3` double multiplication, puis soustraction.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Le bénéfice est ce qui reste après avoir retiré la dépense de la recette.
+- `P` Mots-indices : « chacune » → × ; « bénéfice » → recette − dépense.
+- `P` Opérations choisies : multiplication, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Poules vendues : 5 (donnée de l’énoncé).Recette : 5 × 18 000 = 414 000 Ar.Bénéfice : 414 000 − 100 000 = 314 000 Ar.
+- `T2C2` La recette est 414 000 Ar et le bénéfice est 314 000 Ar.
+- `T2C3` multiplication, puis soustraction.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : On ne divise pas des kilogrammes par des grammes avant la conversion.
+- `P` Mots-indices : « kg » et « g » → conversion ; « sachets de » → division.
+- `P` Opérations choisies : conversion, puis division euclidienne.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Conversion : 34 kg = 34 000 g.Division : 34 000 ÷ 750 = 45, reste 250 g.Vérification : 750 × 45 + 250 = 34 000 g.
+- `T2C2` Il prépare 45 sachets et il reste 250 g.
+- `T2C3` conversion, puis division euclidienne.
+- `P` SUJET N° 7 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Un mur triangulaire a une base de 18 m et une hauteur de 6 m. Un litre de peinture couvre 6 m² et coûte 12 000 Ar. Combien de litres faut-il et quel prix payer ?
+- `P` Problème 2.
+- `P` Au marché, une famille achète 5 kapoaka de riz à 1 200 Ar et 4 savons à 2 500 Ar. Elle paie avec 50 000 Ar. Combien dépense-t-elle et quelle monnaie reçoit-elle ?
+- `P` Problème 3.
+- `P` Au marché, Soa achète 6 kapoaka de riz à 1 000 Ar le kapoaka et un savon à 3 000 Ar. Elle paie avec un billet de 20 000 Ar. Combien lui rend-on ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 7
+- `P` Problème 1 — démarche :
+- `P` Question cachée : On calcule la surface avant de chercher la quantité de peinture.
+- `P` Mots-indices : « triangulaire » → aire ; « couvre…m² » → division ; « coûte » → ×.
+- `P` Opérations choisies : aire du triangle, division avec arrondi au litre supérieur, multiplication.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Aire : (18 × 6) ÷ 2 = 54 m².Peinture : 54 ÷ 6 = 9 L ; il faut 9 L entiers.Prix : 9 × 12 000 = 108 000 Ar.
+- `T2C2` Il faut 9 L de peinture et payer 108 000 Ar.
+- `T2C3` aire du triangle, division avec arrondi au litre supérieur, multiplication.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Les deux achats sont calculés séparément avant l’addition.
+- `P` Mots-indices : « à … Ar » → × pour chaque article ; « dépense totale » → + ; « monnaie » → −.
+- `P` Opérations choisies : deux multiplications, addition, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Riz : 5 × 1 200 = 6 000 Ar ; savons : 4 × 2 500 = 10 000 Ar.Dépense : 6 000 + 10 000 = 16 000 Ar.Monnaie : 50 000 − 16 000 = 34 000 Ar.
+- `T2C2` La dépense est 16 000 Ar et la monnaie est 34 000 Ar.
+- `T2C3` deux multiplications, addition, puis soustraction.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Pour rendre la monnaie, il faut d’abord connaître le prix TOTAL des achats : le total est la question cachée.
+- `P` Mots-indices : « à … Ar le kapoaka » (prix unitaire → ×) ; « et un savon » (réunion → +) ; « combien lui rend-on » (écart → −).
+- `P` Opérations choisies : multiplication (prix du riz), puis addition (total), puis soustraction (monnaie rendue).
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Prix du riz : 6 × 1 000 = 6 000 Ar.Étape 2 — Dépense totale : 6 000 + 3 000 = 9 000 Ar.Étape 3 — Monnaie rendue : 20 000 − 9 000 = 11 000 Ar.
+- `T2C2` On lui rend 11 000 Ar.
+- `T2C3` multiplication (prix du riz), puis addition (total), puis soustraction (monnaie rendue).
+- `P` SUJET N° 8 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Un commerçant partage un sac de 50 kg de sucre en sachets de 500 g. Combien de sachets pleins obtient-il, et combien de grammes reste-t-il ?
+- `P` Problème 2.
+- `P` Un taxi-brousse consomme 12 L de carburant pour 100 km. Quelle quantité consomme-t-il pour parcourir 250 km ?
+- `P` Problème 3.
+- `P` Le champ rectangulaire de Rakoto mesure 90 m de longueur et 30 m de largeur. Il veut le clôturer avec du grillage vendu 2 500 Ar le mètre. Combien va coûter la clôture ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 8
+- `P` Problème 1 — démarche :
+- `P` Question cachée : On ne peut diviser que des grammes par des grammes : la conversion kg → g est la question cachée.
+- `P` Mots-indices : « partage… en sachets de » → division ; « kg » et « g » dans le même énoncé → conversion d’abord.
+- `P` Opérations choisies : conversion, puis division euclidienne : combien de paquets de … g dans … g, et que reste-t-il ?
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Conversion : 50 kg = 50 × 1 000 = 50 000 g.Étape 2 — Division : 50 000 ÷ 500 = 100 exactement.Vérification : 500 × 100 = 50 000 ✓
+- `T2C2` Il obtient 100 sachets pleins et il ne reste rien.
+- `T2C3` conversion, puis division euclidienne : combien de paquets de … g dans … g, et que reste-t-il ?
+- `P` Problème 2 — démarche :
+- `P` Question cachée : La consommation est donnée pour 100 km, on la cherche pour un autre trajet : c’est un tableau de proportionnalité.
+- `P` Mots-indices : « … L pour 100 km… pour … km ? » → proportionnalité (produit en croix ou retour à l’unité).
+- `P` Opérations choisies : multiplication et division par le coefficient : on raisonne par paquets de 100 km.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Pour 1 km : 12 ÷ 100 = 0,12 L (ou on raisonne par paquets de 100 km).Étape 2 — Pour 250 km : 12 × 250 ÷ 100 = 30 L.C’est un tableau de proportionnalité : 100 km → 12 L ; 250 km → 30 L.
+- `T2C2` Il consomme 30 L pour 250 km.
+- `T2C3` multiplication et division par le coefficient : on raisonne par paquets de 100 km.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Le grillage suit le TOUR du champ : le périmètre est la question cachée — impossible d’acheter des mètres sans connaître le tour !
+- `P` Mots-indices : « clôturer » → le tour → périmètre ; « … Ar le mètre » → × ensuite.
+- `P` Opérations choisies : périmètre (L + l) × 2, puis multiplication par le prix du mètre.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Périmètre : P = (L + l) × 2 = (90 + 30) × 2 = 240 m.Étape 2 — Coût : 240 × 2 500 = 600 000 Ar.
+- `T2C2` La clôture coûtera 600 000 Ar.
+- `T2C3` périmètre (L + l) × 2, puis multiplication par le prix du mètre.
+- `P` SUJET N° 9 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Une salle de classe rectangulaire mesure 12 m sur 6 m. On veut la carreler avec des dalles de 1 m² vendues 10 000 Ar l’unité. Combien de dalles faut-il, et pour quel prix total ?
+- `P` Problème 2.
+- `P` Rasoa récolte 120 kg de letchis. Elle en vend les au marché à 2 000 Ar le kilo et garde le reste pour sa famille. Quelle est sa recette, et combien de kilos garde-t-elle ?
+- `P` Problème 3.
+- `P` Pour coudre des uniformes, une maman achète 2,5 m de tissu à 12 000 Ar le mètre. Elle paie avec un billet de 100 000 Ar. Quel est le prix du tissu, et combien lui rend-on ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 9
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Une dalle couvre exactement 1 m² : le nombre de dalles est donc l’AIRE de la salle.
+- `P` Mots-indices : « carreler… dalles de 1 m² » → aire ; « pour quel prix total » → ×.
+- `P` Opérations choisies : aire L × l, puis multiplication par le prix de la dalle.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Aire de la salle : A = L × l = 12 × 6 = 72 m².Étape 2 — Nombre de dalles : 72 dalles de 1 m² (1 dalle par m²).Étape 3 — Prix total : 72 × 10 000 = 720 000 Ar.
+- `T2C2` Il faut 72 dalles, pour 720 000 Ar.
+- `T2C3` aire L × l, puis multiplication par le prix de la dalle.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Vendre les oblige à calculer D’ABORD cette quantité en kilos : c’est la question cachée.
+- `P` Mots-indices : « les de » → fraction de la récolte (÷ 4 puis × 3) ; « au kilo » → × par le prix.
+- `P` Opérations choisies : fraction de la récolte, puis multiplication pour la recette, puis soustraction pour la part gardée.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Quantité vendue : de 120 = (120 ÷ 4) × 3 = 30 × 3 = 90 kg.Étape 2 — Recette : 90 × 2 000 = 180 000 Ar.Étape 3 — Part gardée : 120 − 90 = 30 kg (c’est bien de la récolte).
+- `T2C2` Sa recette est de 180 000 Ar et elle garde 30 kg.
+- `T2C3` fraction de la récolte, puis multiplication pour la recette, puis soustraction pour la part gardée.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Le prix du tissu d’abord, la monnaie ensuite : on ne rend pas la monnaie sans connaître le total.
+- `P` Mots-indices : « … m à … Ar le mètre » (prix unitaire → ×) ; « combien lui rend-on » (écart → −).
+- `P` Opérations choisies : multiplication à virgules, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Prix du tissu : 2,5 × 12 000 = 30 000 Ar.Étape 2 — Monnaie rendue : 100 000 − 30 000 = 70 000 Ar.
+- `T2C2` Le tissu coûte 30 000 Ar ; on lui rend 70 000 Ar.
+- `T2C3` multiplication à virgules, puis soustraction.
+- `P` SUJET N° 10 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Un taxi-brousse part d’Antananarivo à 9 h 45 min. Le trajet dure 2 h 20 min. À quelle heure arrive-t-il ?
+- `P` Problème 2.
+- `P` Naina épargne 5 000 Ar par semaine pour acheter un vélo à 95 000 Ar. Combien de semaines d’épargne lui faudra-t-il ?
+- `P` Problème 3.
+- `P` Pour la fête de l’école, 168 élèves sont rangés en rangées de 12. Combien y a-t-il de rangées ? Ensuite, ces élèves et 25 enseignants partent en excursion dans des bus de 30 places. Combien de bus faut-il ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 10
+- `P` Problème 1 — démarche :
+- `P` Question cachée : On additionne les heures avec les heures et les minutes avec les minutes — et si les minutes dépassent 60, on échange contre 1 heure.
+- `P` Mots-indices : « part à… le trajet dure… » → addition de durées (base 60).
+- `P` Opérations choisies : addition sexagésimale : colonne des heures, colonne des minutes, échange à 60.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — On additionne les heures : 9 h + 2 h = 11 h.Étape 2 — On additionne les minutes : 45 min + 20 min = 65 min = 1 h 5 min (on ne dépasse jamais 60 min !).Étape 3 — Heure d’arrivée : 12 h 05 min.
+- `T2C2` Il arrive à 12 h 05 min.
+- `T2C3` addition sexagésimale : colonne des heures, colonne des minutes, échange à 60.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Combien de « paquets » de … Ar tiennent dans le prix du vélo : l’épargne hebdomadaire est comme un paquet qu’on répète.
+- `P` Mots-indices : « combien de semaines » → combien de fois → division (groupement).
+- `P` Opérations choisies : division : on cherche combien de fois l’épargne entre dans le prix total.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — On cherche combien de fois 5 000 entre dans 95 000 : c’est une division.Étape 2 — 95 000 ÷ 5 000 = 19.Vérification : 5 000 × 19 = 95 000 ✓
+- `T2C2` Il lui faudra 19 semaines.
+- `T2C3` division : on cherche combien de fois l’épargne entre dans le prix total.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Deux questions bien séparées : d’abord les rangées (division), puis les bus (division avec reste — et il faut l’interpréter !).
+- `P` Mots-indices : « en rangées de » → ÷ ; « et … enseignants » → + ; « bus de 30 places » → ÷ avec reste.
+- `P` Opérations choisies : division, addition, puis division avec interprétation du reste : le reste impose un bus DE PLUS.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Nombre de rangées : 168 ÷ 12 = 14 rangées.Étape 2 — Personnes à transporter : 168 + 25 = 193.Étape 3 — 193 ÷ 30 = 6, reste 13 : il faut un bus de plus pour les 13 personnes restantes.
+- `T2C2` Il y a 14 rangées et il faut 7 bus.
+- `T2C3` division, addition, puis division avec interprétation du reste : le reste impose un bus DE PLUS.
+- `P` SUJET N° 11 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Un champ carré de côté 59 m est vendu 15 000 Ar le m². Calculez son périmètre, son aire puis son prix.
+- `P` Problème 2.
+- `P` Une famille récolte 137 sacs de riz de 60 kg. Elle garde de la récolte et vend le reste à 1 800 Ar le kilo. Quelle masse vend-elle et quelle recette obtient-elle ?
+- `P` Problème 3.
+- `P` Un taxi-brousse roule pendant 3 h 30 min à 35 km/h. Quelle distance parcourt-il ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 11
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Le côté permet d’abord de trouver le tour, puis la surface et enfin le prix.
+- `P` Mots-indices : « carré », « côté », « m² », « prix du m² » → périmètre, aire, multiplication.
+- `P` Opérations choisies : P = 4 × côté ; A = côté × côté ; prix = aire × prix du m².
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` P = 4 × 59 = 236 m.A = 59 × 59 = 3 481 m².Prix = 3 481 × 15 000 = 52 215 000 Ar.
+- `T2C2` P = 236 m ; A = 3 481 m² ; prix = 52 215 000 Ar.
+- `T2C3` P = 4 × côté ; A = côté × côté ; prix = aire × prix du m².
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Il faut trouver la masse totale, puis distinguer la part gardée de la part vendue.
+- `P` Mots-indices : « sacs de…kg » → × ; « garde… » → fraction ; « au kilo » → ×.
+- `P` Opérations choisies : multiplication, fraction, soustraction, puis multiplication par le prix au kilo.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Masse totale : 137 × 60 = 8 220 kg.Masse gardée : de 8 220 = 2 740 kg ; masse vendue = 8 220 − 2 740 = 5 480 kg.Recette : 5 480 × 1 800 = 9 864 000 Ar.
+- `T2C2` La famille vend 5 480 kg et reçoit 9 864 000 Ar.
+- `T2C3` multiplication, fraction, soustraction, puis multiplication par le prix au kilo.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : La durée doit être exprimée dans la même unité que la vitesse : les heures.
+- `P` Mots-indices : « vitesse… pendant… » → distance = vitesse × durée.
+- `P` Opérations choisies : conversion des minutes, puis multiplication vitesse × durée.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Durée en heures : 3 h 30 min = 3,5 h.Distance = vitesse × durée = 35 × 3,5 = 122,5 km.
+- `T2C2` Le taxi-brousse parcourt 122,5 km.
+- `T2C3` conversion des minutes, puis multiplication vitesse × durée.
+- `P` SUJET N° 12 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Pour construire une maison, un maçon achète 20 sacs de ciment à 22 000 Ar chacun. Le transport coûte 50 000 Ar. Il paie avec 500 000 Ar. Quelle dépense totale et quelle monnaie reçoit-il ?
+- `P` Problème 2.
+- `P` 2 citernes contiennent chacune 500 L d’eau. On remplit des bidons de 50 L. Combien de bidons pleins obtient-on et combien de litres restent-ils ?
+- `P` Problème 3.
+- `P` Une école offre 4 cahiers à chacun de ses 35 élèves. Un cahier coûte 1 500 Ar. Le budget est de 250 000 Ar. Combien dépense-t-elle et combien reste-t-il ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 12
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Le transport s’ajoute au prix des sacs avant de calculer la monnaie.
+- `P` Mots-indices : « chacun » → × ; « transport » → + ; « paie avec » → −.
+- `P` Opérations choisies : multiplication, addition, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Ciment : 20 × 22 000 = 440 000 Ar.Dépense totale : 440 000 + 50 000 = 490 000 Ar.Monnaie : 500 000 − 490 000 = 10 000 Ar.
+- `T2C2` La dépense est 490 000 Ar et la monnaie est 10 000 Ar.
+- `T2C3` multiplication, addition, puis soustraction.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Les citernes doivent être réunies avant le partage en bidons.
+- `P` Mots-indices : « chacune » → × ; « bidons de » → division euclidienne ; « restent » → reste.
+- `P` Opérations choisies : multiplication, puis division avec interprétation du reste.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Quantité totale : 2 × 500 = 1 000 L.Partage : 1 000 ÷ 50 = 20, reste 0 L.Vérification : 50 × 20 + 0 = 1 000 L.
+- `T2C2` On obtient 20 bidons pleins et il reste 0 L.
+- `T2C3` multiplication, puis division avec interprétation du reste.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Il faut d’abord compter tous les cahiers, puis leur prix total.
+- `P` Mots-indices : « chacun » → × ; « coûte » → × ; « reste » → −.
+- `P` Opérations choisies : double multiplication, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Cahiers : 35 × 4 = 140.Dépense : 140 × 1 500 = 210 000 Ar.Reste : 250 000 − 210 000 = 40 000 Ar.
+- `T2C2` L’école dépense 210 000 Ar et il reste 40 000 Ar.
+- `T2C3` double multiplication, puis soustraction.
+- `P` SUJET N° 13 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Un éleveur possède 24 poules. Il en vend 6 à 22 000 Ar chacune et dépense 50 000 Ar pour les nourrir. Quelle recette et quel bénéfice lui reste-t-il ?
+- `P` Problème 2.
+- `P` Un commerçant partage 35 kg de sucre en sachets de 500 g. Combien de sachets pleins prépare-t-il et quelle masse reste-t-il ?
+- `P` Problème 3.
+- `P` Un mur triangulaire a une base de 9 m et une hauteur de 5 m. Un litre de peinture couvre 5 m² et coûte 15 000 Ar. Combien de litres faut-il et quel prix payer ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 13
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Le bénéfice est ce qui reste après avoir retiré la dépense de la recette.
+- `P` Mots-indices : « chacune » → × ; « bénéfice » → recette − dépense.
+- `P` Opérations choisies : multiplication, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Poules vendues : 6 (donnée de l’énoncé).Recette : 6 × 22 000 = 396 000 Ar.Bénéfice : 396 000 − 50 000 = 346 000 Ar.
+- `T2C2` La recette est 396 000 Ar et le bénéfice est 346 000 Ar.
+- `T2C3` multiplication, puis soustraction.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : On ne divise pas des kilogrammes par des grammes avant la conversion.
+- `P` Mots-indices : « kg » et « g » → conversion ; « sachets de » → division.
+- `P` Opérations choisies : conversion, puis division euclidienne.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Conversion : 35 kg = 35 000 g.Division : 35 000 ÷ 500 = 70, reste 0 g.Vérification : 500 × 70 + 0 = 35 000 g.
+- `T2C2` Il prépare 70 sachets et il reste 0 g.
+- `T2C3` conversion, puis division euclidienne.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : On calcule la surface avant de chercher la quantité de peinture.
+- `P` Mots-indices : « triangulaire » → aire ; « couvre…m² » → division ; « coûte » → ×.
+- `P` Opérations choisies : aire du triangle, division avec arrondi au litre supérieur, multiplication.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Aire : (9 × 5) ÷ 2 = 22,5 m².Peinture : 22,5 ÷ 5 = 4,5 L ; il faut 5 L entiers.Prix : 5 × 15 000 = 75 000 Ar.
+- `T2C2` Il faut 5 L de peinture et payer 75 000 Ar.
+- `T2C3` aire du triangle, division avec arrondi au litre supérieur, multiplication.
+- `P` SUJET N° 14 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Au marché, une famille achète 5 kapoaka de riz à 1 800 Ar et 4 savons à 2 500 Ar. Elle paie avec 20 000 Ar. Combien dépense-t-elle et quelle monnaie reçoit-elle ?
+- `P` Problème 2.
+- `P` Au marché, Soa achète 7 kapoaka de riz à 1 500 Ar le kapoaka et un savon à 3 500 Ar. Elle paie avec un billet de 20 000 Ar. Combien lui rend-on ?
+- `P` Problème 3.
+- `P` Un commerçant partage un sac de 50 kg de sucre en sachets de 250 g. Combien de sachets pleins obtient-il, et combien de grammes reste-t-il ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 14
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Les deux achats sont calculés séparément avant l’addition.
+- `P` Mots-indices : « à … Ar » → × pour chaque article ; « dépense totale » → + ; « monnaie » → −.
+- `P` Opérations choisies : deux multiplications, addition, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Riz : 5 × 1 800 = 9 000 Ar ; savons : 4 × 2 500 = 10 000 Ar.Dépense : 9 000 + 10 000 = 19 000 Ar.Monnaie : 20 000 − 19 000 = 1 000 Ar.
+- `T2C2` La dépense est 19 000 Ar et la monnaie est 1 000 Ar.
+- `T2C3` deux multiplications, addition, puis soustraction.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Pour rendre la monnaie, il faut d’abord connaître le prix TOTAL des achats : le total est la question cachée.
+- `P` Mots-indices : « à … Ar le kapoaka » (prix unitaire → ×) ; « et un savon » (réunion → +) ; « combien lui rend-on » (écart → −).
+- `P` Opérations choisies : multiplication (prix du riz), puis addition (total), puis soustraction (monnaie rendue).
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Prix du riz : 7 × 1 500 = 10 500 Ar.Étape 2 — Dépense totale : 10 500 + 3 500 = 14 000 Ar.Étape 3 — Monnaie rendue : 20 000 − 14 000 = 6 000 Ar.
+- `T2C2` On lui rend 6 000 Ar.
+- `T2C3` multiplication (prix du riz), puis addition (total), puis soustraction (monnaie rendue).
+- `P` Problème 3 — démarche :
+- `P` Question cachée : On ne peut diviser que des grammes par des grammes : la conversion kg → g est la question cachée.
+- `P` Mots-indices : « partage… en sachets de » → division ; « kg » et « g » dans le même énoncé → conversion d’abord.
+- `P` Opérations choisies : conversion, puis division euclidienne : combien de paquets de … g dans … g, et que reste-t-il ?
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Conversion : 50 kg = 50 × 1 000 = 50 000 g.Étape 2 — Division : 50 000 ÷ 250 = 200 exactement.Vérification : 250 × 200 = 50 000 ✓
+- `T2C2` Il obtient 200 sachets pleins et il ne reste rien.
+- `T2C3` conversion, puis division euclidienne : combien de paquets de … g dans … g, et que reste-t-il ?
+- `P` SUJET N° 15 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Un taxi-brousse consomme 12 L de carburant pour 100 km. Quelle quantité consomme-t-il pour parcourir 250 km ?
+- `P` Problème 2.
+- `P` Le champ rectangulaire de Rakoto mesure 120 m de longueur et 50 m de largeur. Il veut le clôturer avec du grillage vendu 1 500 Ar le mètre. Combien va coûter la clôture ?
+- `P` Problème 3.
+- `P` Une salle de classe rectangulaire mesure 10 m sur 6 m. On veut la carreler avec des dalles de 1 m² vendues 12 000 Ar l’unité. Combien de dalles faut-il, et pour quel prix total ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 15
+- `P` Problème 1 — démarche :
+- `P` Question cachée : La consommation est donnée pour 100 km, on la cherche pour un autre trajet : c’est un tableau de proportionnalité.
+- `P` Mots-indices : « … L pour 100 km… pour … km ? » → proportionnalité (produit en croix ou retour à l’unité).
+- `P` Opérations choisies : multiplication et division par le coefficient : on raisonne par paquets de 100 km.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Pour 1 km : 12 ÷ 100 = 0,12 L (ou on raisonne par paquets de 100 km).Étape 2 — Pour 250 km : 12 × 250 ÷ 100 = 30 L.C’est un tableau de proportionnalité : 100 km → 12 L ; 250 km → 30 L.
+- `T2C2` Il consomme 30 L pour 250 km.
+- `T2C3` multiplication et division par le coefficient : on raisonne par paquets de 100 km.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Le grillage suit le TOUR du champ : le périmètre est la question cachée — impossible d’acheter des mètres sans connaître le tour !
+- `P` Mots-indices : « clôturer » → le tour → périmètre ; « … Ar le mètre » → × ensuite.
+- `P` Opérations choisies : périmètre (L + l) × 2, puis multiplication par le prix du mètre.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Périmètre : P = (L + l) × 2 = (120 + 50) × 2 = 340 m.Étape 2 — Coût : 340 × 1 500 = 510 000 Ar.
+- `T2C2` La clôture coûtera 510 000 Ar.
+- `T2C3` périmètre (L + l) × 2, puis multiplication par le prix du mètre.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Une dalle couvre exactement 1 m² : le nombre de dalles est donc l’AIRE de la salle.
+- `P` Mots-indices : « carreler… dalles de 1 m² » → aire ; « pour quel prix total » → ×.
+- `P` Opérations choisies : aire L × l, puis multiplication par le prix de la dalle.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Aire de la salle : A = L × l = 10 × 6 = 60 m².Étape 2 — Nombre de dalles : 60 dalles de 1 m² (1 dalle par m²).Étape 3 — Prix total : 60 × 12 000 = 720 000 Ar.
+- `T2C2` Il faut 60 dalles, pour 720 000 Ar.
+- `T2C3` aire L × l, puis multiplication par le prix de la dalle.
+- `P` SUJET N° 16 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Rasoa récolte 160 kg de letchis. Elle en vend les au marché à 2 000 Ar le kilo et garde le reste pour sa famille. Quelle est sa recette, et combien de kilos garde-t-elle ?
+- `P` Problème 2.
+- `P` Pour coudre des uniformes, une maman achète 4,5 m de tissu à 18 000 Ar le mètre. Elle paie avec un billet de 100 000 Ar. Quel est le prix du tissu, et combien lui rend-on ?
+- `P` Problème 3.
+- `P` Un taxi-brousse part d’Antananarivo à 6 h 45 min. Le trajet dure 3 h 35 min. À quelle heure arrive-t-il ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 16
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Vendre les oblige à calculer D’ABORD cette quantité en kilos : c’est la question cachée.
+- `P` Mots-indices : « les de » → fraction de la récolte (÷ 4 puis × 3) ; « au kilo » → × par le prix.
+- `P` Opérations choisies : fraction de la récolte, puis multiplication pour la recette, puis soustraction pour la part gardée.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Quantité vendue : de 160 = (160 ÷ 4) × 3 = 40 × 3 = 120 kg.Étape 2 — Recette : 120 × 2 000 = 240 000 Ar.Étape 3 — Part gardée : 160 − 120 = 40 kg (c’est bien de la récolte).
+- `T2C2` Sa recette est de 240 000 Ar et elle garde 40 kg.
+- `T2C3` fraction de la récolte, puis multiplication pour la recette, puis soustraction pour la part gardée.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Le prix du tissu d’abord, la monnaie ensuite : on ne rend pas la monnaie sans connaître le total.
+- `P` Mots-indices : « … m à … Ar le mètre » (prix unitaire → ×) ; « combien lui rend-on » (écart → −).
+- `P` Opérations choisies : multiplication à virgules, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Prix du tissu : 4,5 × 18 000 = 81 000 Ar.Étape 2 — Monnaie rendue : 100 000 − 81 000 = 19 000 Ar.
+- `T2C2` Le tissu coûte 81 000 Ar ; on lui rend 19 000 Ar.
+- `T2C3` multiplication à virgules, puis soustraction.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : On additionne les heures avec les heures et les minutes avec les minutes — et si les minutes dépassent 60, on échange contre 1 heure.
+- `P` Mots-indices : « part à… le trajet dure… » → addition de durées (base 60).
+- `P` Opérations choisies : addition sexagésimale : colonne des heures, colonne des minutes, échange à 60.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — On additionne les heures : 6 h + 3 h = 9 h.Étape 2 — On additionne les minutes : 45 min + 35 min = 80 min = 1 h 20 min (on ne dépasse jamais 60 min !).Étape 3 — Heure d’arrivée : 10 h 20 min.
+- `T2C2` Il arrive à 10 h 20 min.
+- `T2C3` addition sexagésimale : colonne des heures, colonne des minutes, échange à 60.
+- `P` SUJET N° 17 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Naina épargne 2 500 Ar par semaine pour acheter un vélo à 60 000 Ar. Combien de semaines d’épargne lui faudra-t-il ?
+- `P` Problème 2.
+- `P` Pour la fête de l’école, 180 élèves sont rangés en rangées de 18. Combien y a-t-il de rangées ? Ensuite, ces élèves et 21 enseignants partent en excursion dans des bus de 30 places. Combien de bus faut-il ?
+- `P` Problème 3.
+- `P` Un champ carré de côté 45 m est vendu 20 000 Ar le m². Calculez son périmètre, son aire puis son prix.
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 17
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Combien de « paquets » de … Ar tiennent dans le prix du vélo : l’épargne hebdomadaire est comme un paquet qu’on répète.
+- `P` Mots-indices : « combien de semaines » → combien de fois → division (groupement).
+- `P` Opérations choisies : division : on cherche combien de fois l’épargne entre dans le prix total.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — On cherche combien de fois 2 500 entre dans 60 000 : c’est une division.Étape 2 — 60 000 ÷ 2 500 = 24.Vérification : 2 500 × 24 = 60 000 ✓
+- `T2C2` Il lui faudra 24 semaines.
+- `T2C3` division : on cherche combien de fois l’épargne entre dans le prix total.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Deux questions bien séparées : d’abord les rangées (division), puis les bus (division avec reste — et il faut l’interpréter !).
+- `P` Mots-indices : « en rangées de » → ÷ ; « et … enseignants » → + ; « bus de 30 places » → ÷ avec reste.
+- `P` Opérations choisies : division, addition, puis division avec interprétation du reste : le reste impose un bus DE PLUS.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Étape 1 — Nombre de rangées : 180 ÷ 18 = 10 rangées.Étape 2 — Personnes à transporter : 180 + 21 = 201.Étape 3 — 201 ÷ 30 = 6, reste 21 : il faut un bus de plus pour les 21 personnes restantes.
+- `T2C2` Il y a 10 rangées et il faut 7 bus.
+- `T2C3` division, addition, puis division avec interprétation du reste : le reste impose un bus DE PLUS.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Le côté permet d’abord de trouver le tour, puis la surface et enfin le prix.
+- `P` Mots-indices : « carré », « côté », « m² », « prix du m² » → périmètre, aire, multiplication.
+- `P` Opérations choisies : P = 4 × côté ; A = côté × côté ; prix = aire × prix du m².
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` P = 4 × 45 = 180 m.A = 45 × 45 = 2 025 m².Prix = 2 025 × 20 000 = 40 500 000 Ar.
+- `T2C2` P = 180 m ; A = 2 025 m² ; prix = 40 500 000 Ar.
+- `T2C3` P = 4 × côté ; A = côté × côté ; prix = aire × prix du m².
+- `P` SUJET N° 18 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Une famille récolte 136 sacs de riz de 50 kg. Elle garde de la récolte et vend le reste à 2 500 Ar le kilo. Quelle masse vend-elle et quelle recette obtient-elle ?
+- `P` Problème 2.
+- `P` Un taxi-brousse roule pendant 2 h 20 min à 50 km/h. Quelle distance parcourt-il ?
+- `P` Problème 3.
+- `P` Pour construire une maison, un maçon achète 12 sacs de ciment à 22 000 Ar chacun. Le transport coûte 50 000 Ar. Il paie avec 500 000 Ar. Quelle dépense totale et quelle monnaie reçoit-il ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 18
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Il faut trouver la masse totale, puis distinguer la part gardée de la part vendue.
+- `P` Mots-indices : « sacs de…kg » → × ; « garde… » → fraction ; « au kilo » → ×.
+- `P` Opérations choisies : multiplication, fraction, soustraction, puis multiplication par le prix au kilo.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Masse totale : 136 × 50 = 6 800 kg.Masse gardée : de 6 800 = 2 720 kg ; masse vendue = 6 800 − 2 720 = 4 080 kg.Recette : 4 080 × 2 500 = 10 200 000 Ar.
+- `T2C2` La famille vend 4 080 kg et reçoit 10 200 000 Ar.
+- `T2C3` multiplication, fraction, soustraction, puis multiplication par le prix au kilo.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : La durée doit être exprimée dans la même unité que la vitesse : les heures.
+- `P` Mots-indices : « vitesse… pendant… » → distance = vitesse × durée.
+- `P` Opérations choisies : conversion des minutes, puis multiplication vitesse × durée.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Durée en heures : 2 h 20 min = 2,33 h.Distance = vitesse × durée = 50 × 2,33 = 116,67 km.
+- `T2C2` Le taxi-brousse parcourt 116,67 km.
+- `T2C3` conversion des minutes, puis multiplication vitesse × durée.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Le transport s’ajoute au prix des sacs avant de calculer la monnaie.
+- `P` Mots-indices : « chacun » → × ; « transport » → + ; « paie avec » → −.
+- `P` Opérations choisies : multiplication, addition, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Ciment : 12 × 22 000 = 264 000 Ar.Dépense totale : 264 000 + 50 000 = 314 000 Ar.Monnaie : 500 000 − 314 000 = 186 000 Ar.
+- `T2C2` La dépense est 314 000 Ar et la monnaie est 186 000 Ar.
+- `T2C3` multiplication, addition, puis soustraction.
+- `P` SUJET N° 19 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` 5 citernes contiennent chacune 500 L d’eau. On remplit des bidons de 25 L. Combien de bidons pleins obtient-on et combien de litres restent-ils ?
+- `P` Problème 2.
+- `P` Une école offre 3 cahiers à chacun de ses 31 élèves. Un cahier coûte 1 200 Ar. Le budget est de 250 000 Ar. Combien dépense-t-elle et combien reste-t-il ?
+- `P` Problème 3.
+- `P` Un éleveur possède 27 poules. Il en vend 5 à 18 000 Ar chacune et dépense 50 000 Ar pour les nourrir. Quelle recette et quel bénéfice lui reste-t-il ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 19
+- `P` Problème 1 — démarche :
+- `P` Question cachée : Les citernes doivent être réunies avant le partage en bidons.
+- `P` Mots-indices : « chacune » → × ; « bidons de » → division euclidienne ; « restent » → reste.
+- `P` Opérations choisies : multiplication, puis division avec interprétation du reste.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Quantité totale : 5 × 500 = 2 500 L.Partage : 2 500 ÷ 25 = 100, reste 0 L.Vérification : 25 × 100 + 0 = 2 500 L.
+- `T2C2` On obtient 100 bidons pleins et il reste 0 L.
+- `T2C3` multiplication, puis division avec interprétation du reste.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : Il faut d’abord compter tous les cahiers, puis leur prix total.
+- `P` Mots-indices : « chacun » → × ; « coûte » → × ; « reste » → −.
+- `P` Opérations choisies : double multiplication, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Cahiers : 31 × 3 = 93.Dépense : 93 × 1 200 = 111 600 Ar.Reste : 250 000 − 111 600 = 138 400 Ar.
+- `T2C2` L’école dépense 111 600 Ar et il reste 138 400 Ar.
+- `T2C3` double multiplication, puis soustraction.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Le bénéfice est ce qui reste après avoir retiré la dépense de la recette.
+- `P` Mots-indices : « chacune » → × ; « bénéfice » → recette − dépense.
+- `P` Opérations choisies : multiplication, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Poules vendues : 5 (donnée de l’énoncé).Recette : 5 × 18 000 = 396 000 Ar.Bénéfice : 396 000 − 50 000 = 346 000 Ar.
+- `T2C2` La recette est 396 000 Ar et le bénéfice est 346 000 Ar.
+- `T2C3` multiplication, puis soustraction.
+- `P` SUJET N° 20 — PROBLÈMES
+- `P` Résous chaque problème comme au CEPE : écris la Solution, le Résultat avec son unité, puis l’Opération utilisée. Montre toutes les étapes. Durée conseillée : 40 minutes.
+- `P` Problème 1.
+- `P` Un commerçant partage 24 kg de sucre en sachets de 500 g. Combien de sachets pleins prépare-t-il et quelle masse reste-t-il ?
+- `P` Problème 2.
+- `P` Un mur triangulaire a une base de 9 m et une hauteur de 9 m. Un litre de peinture couvre 6 m² et coûte 15 000 Ar. Combien de litres faut-il et quel prix payer ?
+- `P` Problème 3.
+- `P` Au marché, une famille achète 8 kapoaka de riz à 1 200 Ar et 4 savons à 2 500 Ar. Elle paie avec 50 000 Ar. Combien dépense-t-elle et quelle monnaie reçoit-elle ?
+- `P` Présente tes réponses dans le tableau, comme dans un sujet de problème du CEPE.
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Problème 1
+- `T3C1` Problème 2
+- `T4C1` Problème 3
+- `P` CORRIGÉ DU SUJET N° 20
+- `P` Problème 1 — démarche :
+- `P` Question cachée : On ne divise pas des kilogrammes par des grammes avant la conversion.
+- `P` Mots-indices : « kg » et « g » → conversion ; « sachets de » → division.
+- `P` Opérations choisies : conversion, puis division euclidienne.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Conversion : 24 kg = 24 000 g.Division : 24 000 ÷ 500 = 48, reste 0 g.Vérification : 500 × 48 + 0 = 24 000 g.
+- `T2C2` Il prépare 48 sachets et il reste 0 g.
+- `T2C3` conversion, puis division euclidienne.
+- `P` Problème 2 — démarche :
+- `P` Question cachée : On calcule la surface avant de chercher la quantité de peinture.
+- `P` Mots-indices : « triangulaire » → aire ; « couvre…m² » → division ; « coûte » → ×.
+- `P` Opérations choisies : aire du triangle, division avec arrondi au litre supérieur, multiplication.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Aire : (9 × 9) ÷ 2 = 40,5 m².Peinture : 40,5 ÷ 6 = 6,75 L ; il faut 7 L entiers.Prix : 7 × 15 000 = 105 000 Ar.
+- `T2C2` Il faut 7 L de peinture et payer 105 000 Ar.
+- `T2C3` aire du triangle, division avec arrondi au litre supérieur, multiplication.
+- `P` Problème 3 — démarche :
+- `P` Question cachée : Les deux achats sont calculés séparément avant l’addition.
+- `P` Mots-indices : « à … Ar » → × pour chaque article ; « dépense totale » → + ; « monnaie » → −.
+- `P` Opérations choisies : deux multiplications, addition, puis soustraction.
+- `P` Présentation attendue : Solution \| Résultat \| Opération
+- `T1C1` Solution
+- `T1C2` Résultat
+- `T1C3` Opération
+- `T2C1` Riz : 8 × 1 200 = 9 600 Ar ; savons : 4 × 2 500 = 10 000 Ar.Dépense : 9 600 + 10 000 = 19 600 Ar.Monnaie : 50 000 − 19 600 = 30 400 Ar.
+- `T2C2` La dépense est 19 600 Ar et la monnaie est 30 400 Ar.
+- `T2C3` deux multiplications, addition, puis soustraction.
+- `P` ANNEXES — MATHÉMATIQUES T5
+- `P` Synthèse des notions étudiées dans les six unités, en préparation de l’examen du CEPE.
+- `P` ANNEXE 1 — GLOSSAIRE
+- `P` Aire : mesure, en unités carrées, de la surface d’une figure plane fermée.
+- `P` Angle aigu : angle plus petit que l’angle droit.
+- `P` Angle droit : angle formé par deux lignes perpendiculaires, comme le coin d’un cahier.
+- `P` Angle obtus : angle plus grand que l’angle droit mais plus petit que l’angle plat.
+- `P` Capacité : quantité de liquide qu’un récipient peut contenir ; unité principale : le litre.
+- `P` Chiffre : signe qui sert à écrire les nombres : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+- `P` Diagramme en barres : représentation des données par des barres dont la hauteur indique l’effectif.
+- `P` Dividende : nombre que l’on partage dans une division.
+- `P` Diviseur : nombre par lequel on divise.
+- `P` Dixième : une des dix parts égales de l’unité ; premier chiffre après la virgule.
+- `P` Centième : une des cent parts égales de l’unité ; deuxième chiffre après la virgule.
+- `P` Effectif : nombre de fois qu’une donnée se présente dans une enquête.
+- `P` Enquête : collecte de données auprès de personnes pour répondre à une question.
+- `P` Équation : énoncé mathématique qui comporte une inconnue et le signe d’égalité.
+- `P` Essais systématiques : méthode qui consiste à essayer des valeurs l’une après l’autre puis à vérifier.
+- `P` Fraction : écriture qui représente une ou plusieurs parts égales de l’unité : numérateur sur dénominateur.
+- `P` Fraction décimale : fraction dont le dénominateur est 10 ou 100.
+- `P` Fraction impropre : fraction dont le numérateur est plus grand que le dénominateur.
+- `P` Fractions équivalentes : fractions qui représentent la même quantité, comme 1/2 et 2/4.
+- `P` Masse : ce que pèse un objet ; unité principale : le gramme et ses multiples.
+- `P` Motif : ensemble des éléments qui se répètent dans une suite ; il peut être répété ou croissant.
+- `P` Multiplicande : nombre que l’on multiplie.
+- `P` Multiplicateur : nombre de fois que l’on prend le multiplicande.
+- `P` Nombre décimal : nombre qui comporte une partie entière et une partie décimale séparées par une virgule.
+- `P` Nombre fractionnaire : nombre formé d’un entier et d’une fraction, comme 1 et 1/2.
+- `P` Périmètre : longueur du tour complet d’une figure plane.
+- `P` Pictogramme : représentation des données par de petits dessins qui valent chacun une quantité.
+- `P` Polygone : figure plane fermée dont les côtés sont des segments de droite.
+- `P` Polygone régulier : polygone dont tous les côtés et tous les angles sont égaux, comme le carré.
+- `P` Probabilité d’un événement : rapport du nombre de résultats favorables au nombre de résultats possibles.
+- `P` Quadrilatère : polygone à quatre côtés.
+- `P` Quotient : résultat de la division.
+- `P` Reste : ce qui reste après une division quand le partage ne tombe pas juste.
+- `P` Règle de trois : méthode pour trouver une quatrième valeur quand trois valeurs proportionnelles sont connues.
+- `P` Suite : liste d’éléments arrangés dans un ordre déterminé.
+- `P` Tableau des effectifs : tableau utilisé pour dénombrer les données et noter combien de fois chacune se présente.
+- `P` Taux unitaire : valeur d’une seule unité, par exemple le prix d’un kilo de riz.
+- `P` Terme : chacun des éléments d’une suite, d’une somme ou d’une différence.
+- `P` Triangle équilatéral : triangle dont les trois côtés ont la même longueur.
+- `P` Triangle isocèle : triangle qui a deux côtés de même longueur.
+- `P` Triangle rectangle : triangle qui possède un angle droit.
+- `P` Triangle scalène : triangle dont les trois côtés ont des longueurs toutes différentes.
+- `P` Valeur de position : valeur d’un chiffre selon sa place dans le nombre : unités, dizaines, centaines….
+- `P` Volume : place qu’occupe un objet dans l’espace, mesurée en unités cubes (cm³).
+- `P` FORMULES ET PROPRIÉTÉS
+- `P` ANNEXE 2 — FORMULES ET PROPRIÉTÉS
+- `P` Chaque carte présente une figure repérée, les grandeurs utiles, la formule directement dessous, les unités et un exemple. Les lettres utilisées : c = côté, L = longueur, l = largeur, b = petite base, B = grande base, h = hauteur, r = rayon, d = diamètre, n = nombre de côtés.
+- `P` PÉRIMÈTRES ET AIRES
+- `P` On mesure le contour en unités de longueur et la surface en unités carrées. Les dimensions doivent être dans la même unité.
+- `T1C1` CarréLes quatre côtés ont la même longueur.Formule : P = 4 × c ; A = c × c c = P ÷ 4Grandeurs et unité : c en cm ou m ; P en cm ou m ; A en cm² ou m².Exemple : Si c = 5 cm : P = 20 cm ; A = 25 cm². Si P = 20 cm : c = 20 ÷ 4 = 5 cm.Le côté c se retrouve avec le périmètre : c = P ÷ 4.
+- `T1C1` RectangleDeux longueurs L et deux largeurs l.Formule : P = 2 × (L + l) ; A = L × l L = A ÷ l ; l = A ÷ L L = P ÷ 2 − l ; l = P ÷ 2 − LGrandeurs et unité : L et l en cm ou m ; P en cm ou m ; A en cm² ou m².Exemple : Si L = 8 cm et l = 3 cm : P = 22 cm ; A = 24 cm². Si A = 24 cm² et l = 3 cm : L = 8 cm.Les deux formules inverses du périmètre sont à connaître : L = P ÷ 2 − l et l = P ÷ 2 − L.
+- `T1C1` TriangleTrois côtés a, b et c ; une base b et sa hauteur h.Formule : P = a + b + c ; A = (b × h) ÷ 2Grandeurs et unité : P en cm ou m ; A en cm² ou m² ; h perpendiculaire à b.Exemple : Si a = 5 cm, b = 6 cm, c = 7 cm : P = 18 cm. Si h = 4 cm : A = 12 cm².La somme des angles d’un triangle est 180°.
+- `T1C1` Polygone régulier et demi-périmètreUn polygone régulier possède n côtés égaux de longueur c.Formule : P = n × c ; DP = P ÷ 2Grandeurs et unité : P et DP en cm ou m ; n est sans unité.Exemple : Un hexagone de côté 4 cm : P = 6 × 4 = 24 cm ; DP = 12 cm.Pour un polygone quelconque, on additionne tous les côtés.
+- `P` CERCLE ET FIGURES À BASES PARALLÈLES
+- `P` Pour le cercle, on utilise π ≈ 3,14. Le diamètre traverse le centre ; le rayon va du centre au bord.
+- `T1C1` Cercle et disqueRayon r, diamètre d, circonférence C et aire du disque A.Formule : d = 2r ; r = d ÷ 2 ; C = πd = 2πr ; A = πr²Grandeurs et unité : r et d en cm ou m ; C en cm ou m ; A en cm² ou m².Exemple : Si r = 3 cm : d = 6 cm ; C ≈ 18,84 cm ; A ≈ 28,26 cm².Ne pas confondre la circonférence C, qui est une longueur, et l’aire A, qui est une surface.
+- `T1C1` TrapèzeGrande base B, petite base b et hauteur h.Formule : A = (B + b) × h ÷ 2Grandeurs et unité : B, b et h en cm ou m ; A en cm² ou m².Exemple : Si B = 10 cm, b = 6 cm et h = 4 cm : A = 32 cm².Formules inverses : h = (2A) ÷ (B + b) ; B = (2A ÷ h) − b.
+- `T1C1` ParallélogrammeBase b et hauteur h perpendiculaire à cette base.Formule : A = b × hGrandeurs et unité : b et h en cm ou m ; A en cm² ou m².Exemple : Si b = 7 cm et h = 3 cm : A = 21 cm².Formules inverses : b = A ÷ h ; h = A ÷ b.
+- `P` SOLIDES ET VOLUMES
+- `P` Le volume mesure l’espace occupé. L’aire latérale couvre les faces autour du solide ; l’aire totale comprend aussi les bases.
+- `T1C1` CubeLes trois dimensions sont égales à l’arête a.Formule : A_latérale = 4 × a² ; A_totale = 6 × a² V = a × a × a = a³Grandeurs et unité : a en cm ou m ; aires en cm² ou m² ; V en cm³ ou m³.Exemple : Si a = 4 cm : A_latérale = 64 cm² ; A_totale = 96 cm² ; V = 64 cm³.Un cube est un pavé droit particulier.
+- `T1C1` Pavé droitLongueur L, largeur l et hauteur h.Formule : A_latérale = 2 × (L + l) × h A_totale = 2 × (L × l + L × h + l × h) V = L × l × hGrandeurs et unité : L, l et h en cm ou m ; aires en cm² ou m² ; V en cm³ ou m³.Exemple : Si L = 8 cm, l = 3 cm et h = 2 cm : A_latérale = 44 cm² ; A_totale = 92 cm² ; V = 48 cm³.La base est le rectangle L × l ; l’aire latérale entoure cette base.
+- `T1C1` Prisme droitAire et périmètre de la base, puis hauteur du prisme.Formule : A_latérale = P_base × h A_totale = A_latérale + 2 × A_base V = A_base × hGrandeurs et unité : P_base en cm ou m ; A_base, A_latérale et A_totale en cm² ou m² ; V en cm³ ou m³.Exemple : Si P_base = 14 cm, A_base = 12 cm² et h = 5 cm : A_latérale = 70 cm² ; A_totale = 94 cm² ; V = 60 cm³.La base peut être un triangle, un rectangle ou un autre polygone.
+- `T1C1` CylindreRayon r de la base et hauteur h.Formule : A_latérale = 2 × π × r × h A_totale = A_latérale + 2 × π × r² V = π × r² × hGrandeurs et unité : r et h en cm ou m ; aires en cm² ou m² ; V en cm³ ou m³.Exemple : Si r = 2 cm et h = 5 cm : A_latérale ≈ 62,8 cm² ; A_totale ≈ 87,92 cm² ; V ≈ 62,8 cm³.La base du cylindre est un disque : A_base = πr².
+- `P` PROPRIÉTÉS ET UNITÉS À RETENIR
+- `P` Ces repères permettent de vérifier si une formule et une unité conviennent au problème.
+- `T1C1` Angles des polygones étudiésLes angles intérieurs se lisent sur la figure.Formule : Triangle : 180° ; quadrilatère : 360°Grandeurs et unité : Un angle se mesure en degrés (°).Exemple : Dans un triangle, si deux angles mesurent 60° et 70°, le troisième mesure 50°.Carré et rectangle : quatre angles droits.
+- `T1C1` Choisir la bonne unitéLa grandeur demandée indique l’unité du résultat.Formule : Longueur / périmètre : cm ou m ; aire : cm² ou m² ; volume : cm³ ou m³Grandeurs et unité : Capacité : mL, cL, dL, L ; 1 dm³ = 1 L ; 1 cm³ = 1 mL.Exemple : Une longueur de 8 cm ne peut pas donner une aire de 8 cm : il faut appliquer la formule et écrire cm².Toujours convertir les mesures dans la même unité avant de calculer.
+- `P` ANNEXE 3 — RÉSUMÉ DES MÉTHODES
+- `P` Lire un grand nombre — Séparer les classes par tranches de trois chiffres en partant de la droite, puis lire classe des mille puis classe des unités.
+- `P` Comparer deux nombres — Compter les chiffres : le plus long gagne ; à longueur égale, comparer chiffre par chiffre depuis la gauche.
+- `P` Trouver une fraction équivalente — Multiplier ou diviser le haut et le bas par le même nombre, et vérifier avec les bandes de fractions.
+- `P` Poser une addition ou une soustraction — Aligner les unités sous les unités, les dizaines sous les dizaines ; ne pas oublier la retenue ; vérifier par l’opération inverse.
+- `P` Poser une multiplication — Multiplier par les unités, puis par les dizaines en décalant d’un rang, et additionner les produits partiels.
+- `P` Poser une division — Prendre les chiffres du dividende un à un, chercher combien de fois le diviseur entre, écrire le reste ; contrôler : diviseur × quotient + reste = dividende.
+- `P` Respecter la priorité des opérations — Calculer d’abord dans les parenthèses, ensuite les × et ÷ de gauche à droite, enfin les + et −.
+- `P` Calculer mentalement — Décomposer les nombres, utiliser les doubles et les moitiés, compenser (ajouter d’un côté, retirer de l’autre).
+- `P` Continuer une suite — Observer la régularité (ce qui se répète ou ce qui augmente), décrire le motif, puis prolonger et vérifier.
+- `P` Utiliser la règle de trois — Trouver d’abord ce que valent les quantités connues, multiplier puis diviser : (9 × 700) ÷ 3 pour 9 stylos.
+- `P` Trouver une valeur inconnue — Essayer des valeurs l’une après l’autre (essais systématiques), puis vérifier l’égalité en remplaçant l’inconnue.
+- `P` Reconnaître un triangle — Mesurer les côtés (équilatéral, isocèle, scalène) et observer les angles (rectangle, aigu, obtus).
+- `P` Reproduire une figure — Repérer les sommets sur le quadrillage, compter les carreaux, tracer à la règle et vérifier avec l’équerre.
+- `P` Convertir une unité — Placer le nombre dans le tableau de conversion, un chiffre par colonne, puis déplacer la virgule vers la nouvelle unité.
+- `P` Calculer un périmètre ou une aire — Choisir la bonne formule, remplacer par les mesures dans la même unité, calculer, écrire l’unité du résultat (cm ou cm²).
+- `P` Résoudre un problème — Lire deux fois l’énoncé, repérer la question et les données, choisir les opérations, calculer, puis vérifier que la réponse a du sens.
+- `P` Mener une enquête — Poser une bonne question, recueillir les réponses, les compter dans un tableau des effectifs, puis les représenter en diagramme.
+- `P` Estimer une probabilité — Répéter l’expérience plusieurs fois, compter les résultats dans un tableau, puis former le rapport des cas favorables au total.
+- `P` ANNEXE 4 — AUTO-ÉVALUATION
+- `T1C1` Compétence
+- `T1C2` Acquis
+- `T1C3` En cours
+- `T1C4` À revoir
+- `T2C1` Lire, écrire et comparer les nombres jusqu’à 1 000 000
+- `T2C2` ☐
+- `T2C3` ☐
+- `T2C4` ☐
+- `T3C1` Décomposer et composer les grands nombres
+- `T3C2` ☐
+- `T3C3` ☐
+- `T3C4` ☐
+- `T4C1` Fractions : représentation, équivalences, comparaison
+- `T4C2` ☐
+- `T4C3` ☐
+- `T4C4` ☐
+- `T5C1` Fraction impropre et nombre fractionnaire
+- `T5C2` ☐
+- `T5C3` ☐
+- `T5C4` ☐
+- `T6C1` Nombres décimaux jusqu’aux centièmes
+- `T6C2` ☐
+- `T6C3` ☐
+- `T6C4` ☐
+- `T7C1` Fractions décimales et nombres décimaux
+- `T7C2` ☐
+- `T7C3` ☐
+- `T7C4` ☐
+- `T8C1` Addition et soustraction jusqu’à 1 000 000
+- `T8C2` ☐
+- `T8C3` ☐
+- `T8C4` ☐
+- `T9C1` Multiplication (3 chiffres × 2 chiffres)
+- `T9C2` ☐
+- `T9C3` ☐
+- `T9C4` ☐
+- `T10C1` Division avec quotient et reste
+- `T10C2` ☐
+- `T10C3` ☐
+- `T10C4` ☐
+- `T11C1` Multiplication et division de fractions
+- `T11C2` ☐
+- `T11C3` ☐
+- `T11C4` ☐
+- `T12C1` Opérations sur les nombres décimaux
+- `T12C2` ☐
+- `T12C3` ☐
+- `T12C4` ☐
+- `T13C1` Priorité des opérations
+- `T13C2` ☐
+- `T13C3` ☐
+- `T13C4` ☐
+- `T14C1` Calcul mental : ×10, ×100, ×1 000, doubles, moitiés
+- `T14C2` ☐
+- `T14C3` ☐
+- `T14C4` ☐
+- `T15C1` Suites, régularités, rang et terme
+- `T15C2` ☐
+- `T15C3` ☐
+- `T15C4` ☐
+- `T16C1` Proportionnalité intuitive et règle de trois
+- `T16C2` ☐
+- `T16C3` ☐
+- `T16C4` ☐
+- `T17C1` Égalités et valeurs inconnues
+- `T17C2` ☐
+- `T17C3` ☐
+- `T17C4` ☐
+- `T18C1` Angles et classification des triangles
+- `T18C2` ☐
+- `T18C3` ☐
+- `T18C4` ☐
+- `T19C1` Figures planes et outils de géométrie
+- `T19C2` ☐
+- `T19C3` ☐
+- `T19C4` ☐
+- `T20C1` Composition et décomposition de polygones
+- `T20C2` ☐
+- `T20C3` ☐
+- `T20C4` ☐
+- `T21C1` Longueur, masse, capacité : conversions
+- `T21C2` ☐
+- `T21C3` ☐
+- `T21C4` ☐
+- `T22C1` Mesure du temps : conversions et opérations
+- `T22C2` ☐
+- `T22C3` ☐
+- `T22C4` ☐
+- `T23C1` Périmètres, aires et volume intuitif
+- `T23C2` ☐
+- `T23C3` ☐
+- `T23C4` ☐
+- `T24C1` Enquête, tableaux et diagrammes
+- `T24C2` ☐
+- `T24C3` ☐
+- `T24C4` ☐
+- `T25C1` Probabilité expérimentale
+- `T25C2` ☐
+- `T25C3` ☐
+- `T25C4` ☐
+- `P` ANNEXE 5 — INDEX
+- `P` Aire, Angle aigu, Angle droit, Angle obtus, Capacité, Centième, Chiffre, Diagramme en barres, Dividende, Diviseur, Dixième, Effectif, Enquête, Essais systématiques, Fraction, Fraction décimale, Fraction impropre, Fractions équivalentes, Masse, Motif, Multiplicande, Multiplicateur, Nombre décimal, Nombre fractionnaire, Pictogramme, Polygone, Polygone régulier, Probabilité d’un événement, Périmètre, Quadrilatère, Quotient, Reste, Règle de trois, Suite, Tableau des effectifs, Taux unitaire, Terme, Triangle isocèle, Triangle rectangle, Triangle scalène, Triangle équilatéral, Valeur de position, Volume, Équation.
+- `P` ANNEXE 6 — ÉVALUATIONS FORMAT CEPE
+- `P` Six sujets d’examen sur 20 points figurent à la fin des unités Nombre, Opération, Algèbre, Géométrie, Mesure et Traitement de données. Chaque sujet comporte cinq exercices avec corrigé détaillé et barème, dans l’esprit des épreuves de calcul du CEPE : opérations posées, conversions et problème de la vie courante.
+- `P` BIBLIOGRAPHIE ET WEBOGRAPHIE
+- `P` Ministère de l’Éducation Nationale de Madagascar, Programme d’études — Classe de T5, section Mathématiques (PE T5).
+- `P` Collection J-Learn, Manuels de Mathématiques T6, T7, T8 et T9, J-Lab Madagascar, édition 2026.
+- `P` Collection J-Learn, charte de conception des manuels scolaires, version 18.
+
