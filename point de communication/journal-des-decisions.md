@@ -52,6 +52,20 @@ L'utilisateur insiste sur le fait que la discipline Arts est nouvelle pour beauc
 
 La leçon élève peut exister, mais comme **résumé court** après le guide enseignant.
 
+#### Décision complémentaire — guide enseignant
+
+- L'utilisateur veut un manuel centré sur l'enseignant débutant.
+- Niveau de détail choisi : **étapes + phrases clés**, pas un script mot à mot complet.
+- Prochaine étape validée : produire un **prototype de la séance 1** en version guide enseignant.
+- Le prototype doit montrer :
+  - ce que l'enseignant doit comprendre ;
+  - ce qu'il faut préparer ;
+  - le déroulement pas à pas avec phrases clés ;
+  - les erreurs fréquentes seulement si utiles ;
+  - l'évaluation par observation ;
+  - une courte trace élève ;
+  - les ressources média : image scène scolaire, audio, QR code / lien.
+
 #### Questions ouvertes
 
 - Répartition exacte des 33 séances :
