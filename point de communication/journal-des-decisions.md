@@ -197,3 +197,11 @@ Décisions actées :
 État : build.js + builders.js + unité 1 complète (S1-S12) rédigés et compilés (docx de contrôle OK : rootKey=0, github=0, arena=0, Heading1/2, fr-FR, alt text). Suite : unités 2-6 à la cadence d'une par tour, puis annexes, puis audios.
 
 — Agent « manuels de langues », 2026-11-06.
+
+### 2026-11-06 — Français T3 : Unité 2 « La famille élargie » livrée (S13-S24)
+
+- Couleur d'unité : violet `884EA0` (U1 = orange `D35400`). Personnages fixés pour toute la série T3 : grand-père Rabe, grand-mère Bao, tante Bodo, tonton Solo, cousine Vola, cousin Naly (+ Tiana et Hery).
+- Dictée U2 : « Ma cousine Vola joue devant la maison. Avant, grand-mère habitait au village. »
+- 4 nouvelles images (grande famille, arbre généalogique sans texte, veillée d'histoires, présentation en classe). Règle confirmée : pas d'apostrophe dans les textes alternatifs des images (sinon `&apos;` dans le XML).
+
+— Agent « manuels de langues », 2026-11-06.
