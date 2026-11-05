@@ -119,7 +119,7 @@ class FBArchiveImporter:
         with self._lock:
             self._state.update(kwargs)
 
-    def start_import_from_folder(self) -> bool:
+    def start_import_from_folder(self, delete_zips_after: bool = False) -> bool:
         with self._lock:
             if self._state["running"]:
                 return False
@@ -136,11 +136,15 @@ class FBArchiveImporter:
                     "finished_at": 0,
                 }
             )
-        self._thread = threading.Thread(target=self._worker_import_all, daemon=True)
+        self._thread = threading.Thread(
+            target=self._worker_import_all,
+            args=(delete_zips_after,),
+            daemon=True,
+        )
         self._thread.start()
         return True
 
-    def _worker_import_all(self) -> None:
+    def _worker_import_all(self, delete_zips_after: bool = False) -> None:
         try:
             imports_dir = self.db.imports_dir
             zips = sorted(p for p in imports_dir.glob("*.zip") if p.is_file())
@@ -155,7 +159,14 @@ class FBArchiveImporter:
                 )
                 return
 
-            res = self.import_sources(zips + subfolders)
+            res = self.import_sources(zips + subfolders, delete_zips_after=delete_zips_after)
+            warn_suffix = ""
+            if res.get("corrupt_files"):
+                bad_list = ", ".join(res["corrupt_files"])
+                warn_suffix = f" ⚠️ Attention : {len(res['corrupt_files'])} archive(s) incomplète(s)/corrompue(s) à retélécharger ({bad_list})."
+            freed_suffix = ""
+            if res.get("zips_deleted", 0) > 0:
+                freed_suffix = f" ({res['zips_deleted']} fichier(s) .zip nettoyé(s) de imports/ pour libérer l'espace disque.)"
             self._update(
                 running=False,
                 phase="done",
@@ -164,9 +175,10 @@ class FBArchiveImporter:
                 posts_updated=res["posts_updated"],
                 media_extracted=res["media_extracted"],
                 message=(
-                    f"Import terminé avec succès : {res['posts_added']} nouvelle(s) publication(s), "
+                    f"Import terminé : {res['posts_added']} nouvelle(s) publication(s), "
                     f"{res['posts_updated']} enrichie(s)/déjà présente(s), "
-                    f"{res['media_extracted']} photo(s)/vidéo(s) copiées hors-ligne."
+                    f"{res['media_extracted']} photo(s)/vidéo(s) prêtes hors-ligne."
+                    f"{freed_suffix}{warn_suffix}"
                 ),
                 finished_at=int(time.time()),
             )
@@ -178,18 +190,32 @@ class FBArchiveImporter:
                 finished_at=int(time.time()),
             )
 
-    def import_sources(self, sources: List[Path]) -> Dict[str, int]:
-        """Importe une liste de fichiers `.zip` et/ou dossiers extraits en gérant les archives multi-parties."""
+    def import_sources(self, sources: List[Path], delete_zips_after: bool = False) -> Dict[str, Any]:
+        """Importe une liste de fichiers `.zip` (ex: 20 x 1 Go) et/ou dossiers extraits en toute sécurité."""
         media_lookup: Dict[str, str] = {}  # suffixe normalisé -> rel_path dans medias/
         media_sizes: Dict[str, int] = {}
         extracted_count = 0
+        extracted_bytes = 0
+        corrupt_set: Set[str] = set()
+        total_src = len(sources)
 
-        # Passe 1 : Extraction de tous les fichiers médias (photos & vidéos) de toutes les parties .zip / dossiers
-        for src in sources:
-            self._update(phase="extract_media", message=f"Extraction des photos et vidéos depuis « {src.name} »…")
+        # Passe 1 : Extraction en flux (256 Ko RAM) de tous les médias de toutes les parties .zip / dossiers
+        for idx, src in enumerate(sources, start=1):
+            prefix = f"[Archive {idx}/{total_src}]"
+            self._update(
+                phase="extract_media",
+                archives_processed=idx - 1,
+                media_extracted=extracted_count,
+                message=f"{prefix} Extraction des photos et vidéos depuis « {src.name} »…",
+            )
             if src.is_file() and src.suffix.lower() == ".zip":
-                c = self._extract_media_from_zip(src, media_lookup, media_sizes)
+                c, b_added, had_err = self._extract_media_from_zip(
+                    src, media_lookup, media_sizes, prefix=prefix, base_count=extracted_count, base_bytes=extracted_bytes
+                )
                 extracted_count += c
+                extracted_bytes += b_added
+                if had_err:
+                    corrupt_set.add(src.name)
             elif src.is_dir():
                 c = self._extract_media_from_dir(src, media_lookup, media_sizes)
                 extracted_count += c
@@ -205,13 +231,19 @@ class FBArchiveImporter:
         parsed_posts: List[Dict[str, Any]] = []
         detected_page_name = ""
 
-        for src in sources:
-            self._update(phase="parse_posts", message=f"Analyse des publications et commentaires dans « {src.name} »…")
+        for idx, src in enumerate(sources, start=1):
+            self._update(
+                phase="parse_posts",
+                message=f"[Archive {idx}/{total_src}] Lecture des publications JSON/HTML dans « {src.name} »…",
+            )
             if src.is_file() and src.suffix.lower() == ".zip":
-                p_name, items = self._parse_posts_from_zip(src)
-                if p_name and not detected_page_name:
-                    detected_page_name = p_name
-                parsed_posts.extend(items)
+                try:
+                    p_name, items = self._parse_posts_from_zip(src)
+                    if p_name and not detected_page_name:
+                        detected_page_name = p_name
+                    parsed_posts.extend(items)
+                except (zipfile.BadZipFile, EOFError, OSError):
+                    corrupt_set.add(src.name)
             elif src.is_dir():
                 p_name, items = self._parse_posts_from_dir(src)
                 if p_name and not detected_page_name:
@@ -299,11 +331,23 @@ class FBArchiveImporter:
             self.db.set_meta("page_name", detected_page_name)
         self.db.set_meta("last_import", datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
 
+        zips_deleted = 0
+        if delete_zips_after:
+            for src in sources:
+                if src.is_file() and src.suffix.lower() == ".zip" and src.name not in corrupt_set:
+                    try:
+                        src.unlink()
+                        zips_deleted += 1
+                    except OSError:
+                        pass
+
         return {
             "sources": len(sources),
             "posts_added": added,
             "posts_updated": updated,
             "media_extracted": extracted_count,
+            "corrupt_files": sorted(corrupt_set),
+            "zips_deleted": zips_deleted,
         }
 
     @staticmethod
@@ -341,33 +385,57 @@ class FBArchiveImporter:
         zip_path: Path,
         media_lookup: Dict[str, str],
         media_sizes: Dict[str, int],
-    ) -> int:
+        *,
+        prefix: str = "",
+        base_count: int = 0,
+        base_bytes: int = 0,
+    ) -> Tuple[int, int, bool]:
         count = 0
-        with zipfile.ZipFile(zip_path, "r") as zf:
-            for info in zf.infolist():
-                if info.is_dir():
-                    continue
-                clean_rel = self._strip_archive_wrapper(info.filename)
-                low = clean_rel.lower()
-                # Ignore les icônes décoratives internes des exports HTML Facebook
-                if "/images/icons/" in low or low.startswith("style/") or "favicon" in low:
-                    continue
-                mtype = _classify_media_ext(clean_rel)
-                if not mtype:
-                    continue
-                # Conserve une arborescence propre dans medias/
-                safe_parts = [re.sub(r'[<>:"|?*\x00-\x1f]+', "_", p) for p in clean_rel.split("/") if p and p != ".."]
-                rel_dst = "/".join(safe_parts)
-                abs_dst = self.db.medias_dir / rel_dst
-                abs_dst.parent.mkdir(parents=True, exist_ok=True)
-                if not abs_dst.is_file() or abs_dst.stat().st_size != info.file_size:
-                    with zf.open(info, "r") as src_f, open(abs_dst, "wb") as out_f:
-                        shutil.copyfileobj(src_f, out_f, length=262144)
-                    count += 1
-                media_lookup[clean_rel] = rel_dst
-                media_lookup[_normalize_zip_rel_uri(info.filename)] = rel_dst
-                media_sizes[rel_dst] = abs_dst.stat().st_size
-        return count
+        bytes_added = 0
+        had_error = False
+        try:
+            with zipfile.ZipFile(zip_path, "r") as zf:
+                for info in zf.infolist():
+                    if info.is_dir():
+                        continue
+                    clean_rel = self._strip_archive_wrapper(info.filename)
+                    low = clean_rel.lower()
+                    # Ignore les icônes décoratives internes des exports HTML Facebook
+                    if "/images/icons/" in low or low.startswith("style/") or "favicon" in low:
+                        continue
+                    mtype = _classify_media_ext(clean_rel)
+                    if not mtype:
+                        continue
+                    # Conserve une arborescence propre dans medias/
+                    safe_parts = [re.sub(r'[<>:"|?*\x00-\x1f]+', "_", p) for p in clean_rel.split("/") if p and p != ".."]
+                    rel_dst = "/".join(safe_parts)
+                    abs_dst = self.db.medias_dir / rel_dst
+                    abs_dst.parent.mkdir(parents=True, exist_ok=True)
+                    try:
+                        if not abs_dst.is_file() or abs_dst.stat().st_size != info.file_size:
+                            with zf.open(info, "r") as src_f, open(abs_dst, "wb") as out_f:
+                                shutil.copyfileobj(src_f, out_f, length=524288)
+                            count += 1
+                            bytes_added += info.file_size
+                            if count == 1 or count % 15 == 0 or info.file_size >= 25_000_000:
+                                gb_done = (base_bytes + bytes_added) / (1024 ** 3)
+                                self._update(
+                                    media_extracted=base_count + count,
+                                    message=f"{prefix} « {zip_path.name} » — {base_count + count} médias extraits ({gb_done:.2f} Go)…",
+                                )
+                        media_lookup[clean_rel] = rel_dst
+                        media_lookup[_normalize_zip_rel_uri(info.filename)] = rel_dst
+                        media_sizes[rel_dst] = abs_dst.stat().st_size
+                    except (zipfile.BadZipFile, EOFError, OSError, RuntimeError):
+                        had_error = True
+                        if abs_dst.is_file() and abs_dst.stat().st_size != info.file_size:
+                            try:
+                                abs_dst.unlink()
+                            except OSError:
+                                pass
+        except (zipfile.BadZipFile, EOFError, OSError):
+            had_error = True
+        return count, bytes_added, had_error
 
     def _extract_media_from_dir(
         self,

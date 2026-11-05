@@ -344,8 +344,9 @@
     el("btnCancelImport").addEventListener("click", () => el("importModal").classList.add("hidden"));
 
     el("btnScanFolder").addEventListener("click", async () => {
+      const delAfter = Boolean(el("chkDeleteZipsAfter") && el("chkDeleteZipsAfter").checked);
       el("importModal").classList.add("hidden");
-      await apiPost("/api/import/scan");
+      await apiPost("/api/import/scan", { delete_zips_after: delAfter });
       await loadStats();
       startImportPolling();
     });

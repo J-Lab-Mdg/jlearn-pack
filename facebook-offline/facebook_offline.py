@@ -245,7 +245,9 @@ class FBRequestHandler(BaseHTTPRequestHandler):
             return
 
         if path == "/api/import/scan":
-            started = self.ctx.importer.start_import_from_folder()
+            body = self._read_json_body()
+            delete_after = bool(body.get("delete_zips_after", False))
+            started = self.ctx.importer.start_import_from_folder(delete_zips_after=delete_after)
             self._send_json({"started": started, "status": self.ctx.importer.get_status()})
             return
 

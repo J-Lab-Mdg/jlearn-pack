@@ -16,7 +16,8 @@ $ParentDir = Split-Path -Parent $AppDir
 $SiblingDirs = @(
     (Join-Path $ParentDir "malagasyword-offline\runtime\python"),
     (Join-Path $ParentDir "pass-education-offline\runtime\python"),
-    (Join-Path $ParentDir "jw-malagasy-offline\runtime\python")
+    (Join-Path $ParentDir "jw-malagasy-offline\runtime\python"),
+    (Join-Path $ParentDir "akademia-malagasy-offline\runtime\python")
 )
 foreach ($Sib in $SiblingDirs) {
     $SibExe = Join-Path $Sib "python.exe"
