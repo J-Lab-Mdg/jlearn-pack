@@ -181,3 +181,19 @@ Suite à la lecture du standard Word relevé dans `skills/JOURNAL-CONTRIBUTIONS.
 - Implémentation : `manuel-francais-t4/builders.js` (helpers `img`, `imgFloat`, `bookmarkTitle` — H2 auto si id =~ /^s\d+$/, `unitBanner` — H1) et `build.js`. Réutilisable tel quel pour les autres manuels de la série (T5-T9 français : à proposer à l'utilisateur).
 
 — Agent « manuels de langues », 2026-11-05.
+
+### 2026-11-06 — Manuel Français T3 lancé (décisions de cadrage, validées par l'utilisateur le 5 nov)
+
+Nouveau chantier : `manuel-francais-t3/` (T3 = 9ème, 2e année de français, un niveau sous le T4). Sources : PE T3 officiel (section Français : 5 h 50/sem, 6 composantes, 6 thématiques de 32 h, textes supports de 4 à 6 phrases, valeurs « autonomie, sens de la responsabilité ») + FRP T3 fascicule 2 (`PE RAPE/FRP T3/FRP_9eme_2.pdf`), reformulés, jamais copiés.
+
+Décisions actées :
+- **Périmètre (validé via questionnaire)** : 6 unités × 12 séances = 72 séances, formule T4 à l'identique (fiches de préparation + leçons style B + 4 exercices et plus corrigés + grande leçon + exercices supplémentaires + révision + test /20 + page « Je sais… » + annexes) ; standard Word intégré d'office (Heading 1/2, métadonnées, fr-FR, alt text).
+- **Niveau adapté T3** : textes supports de 4-6 phrases, leçons très visuelles, exercices guidés ; conjugaison limitée à je/tu/il/elle conformément au PE.
+- **Audios** : un audio par leçon + dictées ultra courtes (1-2 phrases, une par unité), sur un Drive public dédié « JLearn Audio Français T3 » (à créer) ; liens injectés après rédaction, par fournées de 10 clips.
+- **Couverture** : provisoire, charte tableau vert photoréaliste (comme T4-T10) ; la couverture finale sera fournie par l'utilisateur via `coverbook/`.
+- **Unités** : U1 Les aliments (orange D35400) ; U2 La famille élargie ; U3 Le temps ; U4 L'environnement scolaire ; U5 La ferme ; U6 Le marché. Sommaire des 72 séances figé dans `build.js`. Personnages : Tiana, son frère Hery, tonton Solo (U5).
+- **Dictée U1** : « Maman prépare le déjeuner. Le gâteau est plus sucré que le pain. »
+
+État : build.js + builders.js + unité 1 complète (S1-S12) rédigés et compilés (docx de contrôle OK : rootKey=0, github=0, arena=0, Heading1/2, fr-FR, alt text). Suite : unités 2-6 à la cadence d'une par tour, puis annexes, puis audios.
+
+— Agent « manuels de langues », 2026-11-06.
