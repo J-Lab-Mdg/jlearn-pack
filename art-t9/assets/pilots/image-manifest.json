@@ -1,0 +1,232 @@
+{
+  "peinture_scene_scolaire_1100.jpg": {
+    "width": 1100,
+    "height": 733,
+    "role": "scène scolaire"
+  },
+  "sculpture_scene_scolaire_1100.jpg": {
+    "width": 1100,
+    "height": 733,
+    "role": "scène scolaire"
+  },
+  "musique_scene_scolaire_1100.jpg": {
+    "width": 1100,
+    "height": 733,
+    "role": "scène scolaire"
+  },
+  "danse_scene_scolaire_1100.jpg": {
+    "width": 1100,
+    "height": 733,
+    "role": "scène scolaire"
+  },
+  "dramatique_scene_scolaire_1100.jpg": {
+    "width": 1100,
+    "height": 733,
+    "role": "scène scolaire"
+  },
+  "peinture_observation_annotee.png": {
+    "width": 1200,
+    "height": 900,
+    "role": "peinture_observation_annotee"
+  },
+  "peinture_nuancier_a_remplir.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "peinture_nuancier_a_remplir"
+  },
+  "peinture_etape_a_esquisse.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "peinture_etape_a_esquisse"
+  },
+  "peinture_etape_b_grandes_zones.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "peinture_etape_b_grandes_zones"
+  },
+  "peinture_etape_c_valeurs_couleurs.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "peinture_etape_c_valeurs_couleurs"
+  },
+  "peinture_etape_d_motifs_finitions.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "peinture_etape_d_motifs_finitions"
+  },
+  "peinture_pratique_autre_paysage.png": {
+    "width": 1200,
+    "height": 900,
+    "role": "peinture_pratique_autre_paysage"
+  },
+  "sculpture_observation_annotee.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "sculpture_observation_annotee"
+  },
+  "sculpture_plan_a_completer.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "sculpture_plan_a_completer"
+  },
+  "sculpture_etape_a_corps_reperes.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "sculpture_etape_a_corps_reperes"
+  },
+  "sculpture_etape_b_membrane.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "sculpture_etape_b_membrane"
+  },
+  "sculpture_etape_c_ligature_tension.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "sculpture_etape_c_ligature_tension"
+  },
+  "sculpture_etape_d_decor_test.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "sculpture_etape_d_decor_test"
+  },
+  "sculpture_pratique_maracas.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "sculpture_pratique_maracas"
+  },
+  "musique_observation_ecoute.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "musique_observation_ecoute"
+  },
+  "musique_rythme_a_completer.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "musique_rythme_a_completer"
+  },
+  "musique_etape_a_ecouter_identifier.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "musique_etape_a_ecouter_identifier"
+  },
+  "musique_etape_b_paroles_en_rythme.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "musique_etape_b_paroles_en_rythme"
+  },
+  "musique_etape_c_chanter_phrases.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "musique_etape_c_chanter_phrases"
+  },
+  "musique_etape_d_accompagner_nuances.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "musique_etape_d_accompagner_nuances"
+  },
+  "musique_pratique_autre_couplet.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "musique_pratique_autre_couplet"
+  },
+  "danse_observation_trajectoires.png": {
+    "width": 1200,
+    "height": 860,
+    "role": "danse_observation_trajectoires"
+  },
+  "danse_echauffement_comptage.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "danse_echauffement_comptage"
+  },
+  "danse_etape_a_posture_appuis.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "danse_etape_a_posture_appuis"
+  },
+  "danse_etape_b_pas_base.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "danse_etape_b_pas_base"
+  },
+  "danse_etape_c_trajectoires.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "danse_etape_c_trajectoires"
+  },
+  "danse_etape_d_enchainer.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "danse_etape_d_enchainer"
+  },
+  "danse_pratique_autre_sequence.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "danse_pratique_autre_sequence"
+  },
+  "dramatique_observation_annotee.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "dramatique_observation_annotee"
+  },
+  "dramatique_fiche_personnage.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "dramatique_fiche_personnage"
+  },
+  "dramatique_etape_a_comprendre.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "dramatique_etape_a_comprendre"
+  },
+  "dramatique_etape_b_moyens_corporels.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "dramatique_etape_b_moyens_corporels"
+  },
+  "dramatique_etape_c_repeter.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "dramatique_etape_c_repeter"
+  },
+  "dramatique_etape_d_jouer_ajuster.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "dramatique_etape_d_jouer_ajuster"
+  },
+  "dramatique_pratique_autre_situation.png": {
+    "width": 1200,
+    "height": 820,
+    "role": "dramatique_pratique_autre_situation"
+  },
+  "icone_video.png": {
+    "width": 160,
+    "height": 112,
+    "role": "icone_video"
+  },
+  "qr_audio_peinture.png": {
+    "width": 360,
+    "height": 360,
+    "role": "QR audio"
+  },
+  "qr_audio_sculpture.png": {
+    "width": 360,
+    "height": 360,
+    "role": "QR audio"
+  },
+  "qr_audio_musique.png": {
+    "width": 360,
+    "height": 360,
+    "role": "QR audio"
+  },
+  "qr_audio_danse.png": {
+    "width": 360,
+    "height": 360,
+    "role": "QR audio"
+  },
+  "qr_audio_dramatique.png": {
+    "width": 360,
+    "height": 360,
+    "role": "QR audio"
+  }
+}

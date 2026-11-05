@@ -85,6 +85,24 @@ L'utilisateur a corrigé le prototype précédent :
 - La pratique donne **un autre objet à dessiner** et des **liens vidéo YouTube** de tutoriel.
 - Terme pédagogique retenu : **modelé** pour l'impression de volume ; la feuille reste en 2D, les valeurs suggèrent la 3D.
 
+#### Décision complémentaire — prototypes pilotes par sous-discipline
+
+L'utilisateur a validé la méthode proposée :
+
+- Ne pas généraliser immédiatement les 33 séances.
+- Garder la structure commune : **fiche A-E → leçon illustrée → pratique de transfert**.
+- Adapter le cœur technique à chaque sous-discipline.
+- Produire des prototypes pilotes :
+  - peinture ;
+  - sculpture, séance 6 conservée ;
+  - musique/chant ;
+  - danse ;
+  - art dramatique.
+- Les prototypes pilotes sont dans `art-t9/output/pilots/`.
+- Les assets et audios des pilotes sont dans `art-t9/assets/pilots/`.
+- Les générateurs sont `art-t9/src/pilots_assets.js` et `art-t9/src/build_prototypes_pilots.js`.
+- Pour la musique, l'audio généré est une **consigne parlée**, pas un modèle chanté ou instrumental réaliste.
+
 #### Questions ouvertes
 
 - Répartition exacte des 33 séances :

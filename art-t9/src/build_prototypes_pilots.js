@@ -1,0 +1,510 @@
+// Prototypes pilotes Arts T9 : peinture, sculpture S6, musique/chant, danse, art dramatique.
+// Structure commune validée : FICHE A-E -> LEÇON illustrée -> PRATIQUE de transfert + vidéos.
+const fs = require('fs');
+const path = require('path');
+const {
+  Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType,
+  Table, TableRow, TableCell, WidthType, BorderStyle, ImageRun,
+  ExternalHyperlink, PageBreak, ShadingType, VerticalAlign,
+} = require('docx');
+
+const ROOT = path.resolve(__dirname, '..');
+const A = f => path.join(ROOT, 'assets', 'pilots', f);
+const OUTDIR = path.join(ROOT, 'output', 'pilots');
+fs.mkdirSync(OUTDIR, { recursive: true });
+const MAN = JSON.parse(fs.readFileSync(A('image-manifest.json'), 'utf8'));
+const C = { red: 'C00000', green: '1E7B34', blue: '1F4E79', rose: 'C2185B', grey: '595959', black: '000000' };
+const FONT = 'Times New Roman';
+const BRANCH = 'arena/3f402b0e-jlearn-pack';
+const RAW = `https://raw.githubusercontent.com/J-Lab-Mdg/jlearn-pack/${BRANCH}/art-t9/assets/pilots/`;
+const W = [1300, 3100, 3000, 1100, 1100, 600];
+
+function run(text, o = {}) { return new TextRun({ text, font: FONT, size: o.size ?? 22, bold: o.bold, italics: o.italics, color: o.color ?? C.black, underline: o.underline }); }
+function p(text, o = {}) { return new Paragraph({ alignment: o.align, spacing: { after: o.after ?? 100, before: o.before ?? 0, line: o.line ?? 260 }, children: [run(text, o)] }); }
+function pRuns(children, o = {}) { return new Paragraph({ alignment: o.align, spacing: { after: o.after ?? 100, before: o.before ?? 0 }, children }); }
+function h1(text) { return new Paragraph({ heading: HeadingLevel.HEADING_1, spacing: { before: 240, after: 120 }, children: [run(text, { bold: true, color: C.blue, size: 30 })] }); }
+function h2(text) { return new Paragraph({ heading: HeadingLevel.HEADING_2, spacing: { before: 200, after: 100 }, children: [run(text, { bold: true, color: C.green, size: 26 })] }); }
+function h3(text) { return new Paragraph({ spacing: { before: 160, after: 80 }, children: [run(text, { bold: true, size: 23 })] }); }
+function bullet(text, o = {}) { return new Paragraph({ bullet: { level: 0 }, spacing: { after: 60 }, children: [run(text, { size: o.size ?? 22 })] }); }
+function pageBreak() { return new Paragraph({ children: [new PageBreak()] }); }
+function noBorders() { const n = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' }; return { top: n, bottom: n, left: n, right: n, insideHorizontal: n, insideVertical: n }; }
+function thinBorders() { const b = { style: BorderStyle.SINGLE, size: 4, color: '999999' }; return { top: b, bottom: b, left: b, right: b, insideHorizontal: b, insideVertical: b }; }
+function cell(children, o = {}) { return new TableCell({ columnSpan: o.colSpan, rowSpan: o.rowSpan, verticalAlign: o.vAlign ?? VerticalAlign.TOP, width: o.width ? { size: o.width, type: WidthType.DXA } : undefined, shading: o.fill ? { type: ShadingType.CLEAR, fill: o.fill } : undefined, margins: { top: 60, bottom: 60, left: 90, right: 90 }, children }); }
+function img(file, w, caption) {
+  const d = MAN[file]; if (!d) throw new Error('Missing manifest ' + file);
+  const h = Math.round(w * d.height / d.width);
+  const type = file.toLowerCase().endsWith('.jpg') ? 'jpg' : 'png';
+  const out = [new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 100, after: caption ? 40 : 120 }, children: [new ImageRun({ type, data: fs.readFileSync(A(file)), transformation: { width: w, height: h }, altText: { title: caption || file, description: caption || file, name: file } })] })];
+  if (caption) out.push(p(caption, { align: AlignmentType.CENTER, italics: true, size: 18, color: C.grey, after: 140 }));
+  return out;
+}
+function phrase(text) { return new Paragraph({ shading: { type: ShadingType.CLEAR, fill: 'EAF3EA' }, spacing: { before: 80, after: 80 }, indent: { left: 180, right: 180 }, children: [run('Phrase clé : ', { bold: true, color: C.green }), run('« ' + text + ' »', { italics: true })] }); }
+function linkPara(url, label, o = {}) { return new Paragraph({ spacing: { after: o.after ?? 60 }, children: [new ExternalHyperlink({ link: url, children: [run(label, { color: C.blue, underline: {}, size: o.size ?? 22 })] })] }); }
+function videoPara(v) { return new Paragraph({ spacing: { before: 80, after: 40 }, children: [new ImageRun({ type: 'png', data: fs.readFileSync(A('icone_video.png')), transformation: { width: 26, height: 18 }, altText: { title: 'Vidéo', description: 'Icône vidéo', name: 'video' } }), run('  ', {}), new ExternalHyperlink({ link: v.url, children: [run(v.title, { color: C.blue, underline: {}, size: 22, bold: true })] })] }); }
+function cp(arr, size = 18) { return arr.map(t => typeof t === 'string' ? p(t, { size, after: 50, line: 220 }) : t); }
+function tc(arr, w, fill) { return cell(cp(arr), { width: w, fill }); }
+function headCell(text, o = {}) { return cell([p(text, { bold: true, size: 18, align: AlignmentType.CENTER, after: 0 })], { width: o.width, colSpan: o.colSpan, rowSpan: o.rowSpan, fill: 'DDEEFF', vAlign: VerticalAlign.CENTER }); }
+function deroulementHeader() {
+  return [
+    new TableRow({ tableHeader: true, children: [headCell('Étapes et Durée', { width: W[0], rowSpan: 2 }), headCell('Déroulement de la leçon', { colSpan: 2 }), headCell('Technique et Stratégie', { width: W[3], rowSpan: 2 }), headCell('Support et Matériel', { width: W[4], rowSpan: 2 }), headCell('Observation', { width: W[5], rowSpan: 2 })] }),
+    new TableRow({ tableHeader: true, children: [cell([p('Enseignant', { bold: true, size: 18, align: AlignmentType.CENTER, after: 0 })], { width: W[1], fill: 'F5F5F5', vAlign: VerticalAlign.CENTER }), cell([p('Apprenants', { bold: true, size: 18, align: AlignmentType.CENTER, after: 0 })], { width: W[2], fill: 'F5F5F5', vAlign: VerticalAlign.CENTER })] }),
+  ];
+}
+function sectionRow(text) { return new TableRow({ children: [cell([p(text, { bold: true, size: 18, color: C.red, align: AlignmentType.CENTER, after: 0 })], { colSpan: 6, fill: 'FDE9E9' })] }); }
+function stepRow(label, ens, app, tech, supp) { return new TableRow({ children: [tc(label.split('\n'), W[0], 'F2F2F2'), tc(ens, W[1]), tc(app, W[2]), tc(tech, W[3]), tc(supp, W[4]), tc([''], W[5])] }); }
+function ra(text) { return pRuns([run('R.A. : ', { bold: true, size: 18, color: C.rose }), run(text, { size: 18 })], { after: 50 }); }
+function simpleTable(widths, rows, headerFill = 'D9E2F3') {
+  return new Table({ borders: thinBorders(), width: { size: widths.reduce((a, b) => a + b, 0), type: WidthType.DXA }, columnWidths: widths, rows: rows.map((r, i) => new TableRow({ children: r.map((t, j) => cell([p(t, { size: 19, bold: i === 0, after: 0 })], { width: widths[j], fill: i === 0 ? headerFill : undefined })) })) });
+}
+function symbolCell(text, w) {
+  const good = text.startsWith('✔️');
+  const sym = good ? '✔️' : '✗';
+  const rest = text.replace(/^✔️\s*|^✗\s*/, '');
+  return cell([pRuns([run(sym + ' ', { bold: true, color: good ? C.green : C.red, size: 19 }), run(rest, { size: 19 })], { after: 0 })], { width: w });
+}
+function errorTable(rows) {
+  const widths = [3000, 3300, 3900];
+  const header = new TableRow({ children: ['Erreur fréquente', 'Attendu', 'Aide simple pour l’enseignant'].map((t, j) => cell([p(t, { size: 19, bold: true, after: 0 })], { width: widths[j], fill: 'D9E2F3' })) });
+  const body = rows.map(r => new TableRow({ children: [symbolCell(r[0], widths[0]), symbolCell(r[1], widths[1]), cell([p(r[2], { size: 19, after: 0 })], { width: widths[2] })] }));
+  return new Table({ borders: thinBorders(), width: { size: 10200, type: WidthType.DXA }, columnWidths: widths, rows: [header, ...body] });
+}
+
+function metaTable(d) {
+  const L = (label, val) => pRuns([run(label + ' ', { bold: true, size: 20 }), run(val, { size: 20 })], { after: 50 });
+  const left = [
+    L('Discipline :', 'Arts'), L('Sous discipline :', d.sous),
+    L('Thème :', d.theme), L('Titre :', d.titre),
+    L('Objectif spécifique :', d.objectif),
+    L('Documentation :', d.doc),
+    L('Support et matériel :', d.materiel),
+  ];
+  const right = [L('Date :', '_______'), L('Classe :', 'T9'), L('Séance n° :', d.seance), L('Durée :', '120 min')];
+  return new Table({ borders: noBorders(), width: { size: 10200, type: WidthType.DXA }, columnWidths: [7000, 3200], rows: [new TableRow({ children: [cell(left, { width: 7000 }), cell(right, { width: 3200 })] })] });
+}
+function ficheTable(d) {
+  const rows = [...deroulementHeader()];
+  rows.push(stepRow('I. Révision\n(10 min)', d.revision.ens, d.revision.app, d.revision.tech, d.revision.supp));
+  rows.push(sectionRow('II. NOUVELLE LEÇON (95 min)'));
+  for (const s of d.steps) rows.push(stepRow(s.label, s.ens, s.app, s.tech, s.supp));
+  rows.push(stepRow('III. Évaluation\n(15 min)', d.eval.ens, d.eval.app, d.eval.tech, d.eval.supp));
+  return new Table({ borders: thinBorders(), width: { size: 10200, type: WidthType.DXA }, columnWidths: W, rows });
+}
+function fiche(d) {
+  return [
+    p('FICHE DE PRÉPARATION', { bold: true, align: AlignmentType.CENTER, size: 28, after: 120 }),
+    metaTable(d),
+    h2('A. Ce que l’enseignant doit comprendre'), ...d.comprendre.map(t => bullet(t)),
+    h2('B. Ce qu’il faut préparer'), ...d.preparer.map(t => bullet(t)),
+    h2('C. Déroulement de la leçon'), ficheTable(d),
+    h2('D. Erreurs fréquentes et aides immédiates'), errorTable(d.erreurs),
+    h2('E. Évaluation de la production'),
+    simpleTable([2600, 5000, 2600], [['Critère', 'Ce que l’enseignant observe', 'Niveau'], ...d.criteres.map(c => [c[0], c[1], 'Acquis / En cours / À revoir'])]),
+    p('Pas de note chiffrée dans la fiche. L’évaluation sert à observer, encourager et faire ajuster.', { italics: true, size: 20 }),
+  ];
+}
+function lecon(d) {
+  const out = [pageBreak(), h1('LEÇON'), p(d.titre, { bold: true, color: C.red, size: 28, after: 160 })];
+  out.push(...img(d.scene, 620, d.sceneCaption));
+  for (const t of d.intro) out.push(p(t));
+  out.push(p('Audio de consigne : écouter avant de commencer, ou pendant que les élèves préparent le matériel.', { bold: true }));
+  out.push(linkPara(RAW + d.audio, 'Écouter / télécharger l’audio MP3 de la séance'));
+  out.push(...img(d.qr, 120, 'QR code vers l’audio.'));
+  out.push(h2(d.obsTitle));
+  out.push(...img(d.obsImg, 640, d.obsCaption));
+  out.push(phrase(d.obsPhrase));
+  for (const t of d.obsBullets) out.push(bullet(t));
+  out.push(h2(d.prepTitle));
+  out.push(...img(d.prepImg, 640, d.prepCaption));
+  out.push(phrase(d.prepPhrase));
+  for (const t of d.prepText) out.push(p(t));
+  out.push(h2(d.prodTitle));
+  for (const s of d.prod) {
+    out.push(h3(s.title));
+    out.push(...img(s.img, s.w || 420, s.caption));
+    out.push(p(s.text));
+    if (s.phrase) out.push(phrase(s.phrase));
+  }
+  return out;
+}
+function pratique(d) {
+  const out = [pageBreak(), h1('PRATIQUE'), p(d.pratiqueTitre, { bold: true, color: C.red, size: 26 })];
+  out.push(...img(d.pratiqueImg, 580, d.pratiqueCaption));
+  out.push(p(d.pratiqueConsigne));
+  for (const t of d.pratiqueBullets) out.push(bullet(t));
+  out.push(p(d.typeSujet, { italics: true }));
+  out.push(h2('Tutoriels vidéo YouTube'));
+  out.push(p('À visionner avant la classe pour préparer la démonstration, ou à montrer par courts extraits pendant la séance. Les vidéos ne remplacent pas la démonstration de l’enseignant.'));
+  for (const v of d.videos) { out.push(videoPara(v)); out.push(p(v.use, { size: 20, color: C.grey, after: 100 })); out.push(linkPara(v.url, v.url, { size: 18, after: 120 })); }
+  out.push(h2('Courte trace élève'));
+  out.push(p(d.trace));
+  return out;
+}
+
+const PILOTS = [
+  {
+    id: 'peinture', file: 'Art_T9_J-Learn_PROTOTYPE_PEINTURE.docx', seance: 'Pilote peinture',
+    sous: 'Arts visuels — Peinture', theme: 'Couleurs, plans et motifs dans un paysage', titre: 'Du nuancier de couleurs au paysage peint',
+    objectif: 'À partir d’un paysage modèle, identifier et mélanger des couleurs primaires/secondaires, puis réaliser un tableau paysage avec des zones lisibles, des valeurs et des motifs organisés.',
+    doc: 'PE T9.pdf, Arts visuels / Peinture, p. imprimée 234-235 ; FRP_3eme_ARTS.pdf, p. 19-20 ; tutoriels vidéo en fin de pratique.',
+    materiel: 'Paysage modèle ou œuvre couleur, dessins non colorés, papier, gouache, pinceaux, pots d’eau, chiffon, palette ou soucoupe, nuancier à remplir.',
+    scene: 'peinture_scene_scolaire_1100.jpg', sceneCaption: 'En classe : observer les couleurs et les plans avant de peindre.',
+    audio: 'audio_art_t9_pilote_peinture_consigne.mp3', qr: 'qr_audio_peinture.png',
+    comprendre: [
+      'La peinture commence par l’observation : couleurs, plans, lumière, motifs. On ne peint pas détail par détail sans organisation.',
+      'Les couleurs primaires servent de base aux mélanges ; les secondaires s’obtiennent en mélangeant deux primaires. Il faut tester les mélanges avant de peindre.',
+      'Un paysage se construit par plans : arrière-plan, premier plan, horizon. Les valeurs claires/foncées et les motifs répétés, alternés ou inversés organisent l’espace.',
+    ],
+    preparer: [
+      'Un paysage modèle simple ou une œuvre en couleurs, assez grande pour être vue par la classe.',
+      'Gouache : jaune, rouge, bleu, blanc, noir si possible ; pinceaux, eau, chiffon, palette ou soucoupe.',
+      'Papier ou grand format ; dessin non coloré de paysage pour les élèves qui ont besoin d’un support.',
+      'Nuancier à remplir et images d’étapes ; tester les mélanges avant la classe.',
+    ],
+    revision: { ens: ['Quelles couleurs connais-tu ?', 'Que voit-on dans un paysage : ciel, collines, rivière, arbres ?'], app: [ra('Jaune, rouge, bleu, vert, orange…'), ra('Des plans, des couleurs, des formes.')], tech: ['Questions orales'], supp: ['Paysage modèle'] },
+    steps: [
+      { label: '1. Mise en situation', ens: ['Montrer un paysage modèle et un dessin non coloré.', '« Comment passer de ce dessin à un tableau peint ? »'], app: [ra('Il faut choisir et mélanger les couleurs, organiser les plans.')], tech: ['Problème visuel'], supp: ['Paysage, dessin'] },
+      { label: '2. Présentation', ens: ['« Aujourd’hui : Du nuancier de couleurs au paysage peint. Vous allez observer, mélanger, puis peindre par étapes. »'], app: ['Les élèves écoutent.'], tech: ['Annonce orale'], supp: ['Tableau noir'] },
+      { label: '3. Observation', ens: ['« Observez l’horizon, l’arrière-plan, le premier plan, les couleurs chaudes et froides, les motifs répétés. »', 'Montrer l’image annotée.'], app: ['Les élèves observent et nomment les éléments.'], tech: ['Observation dirigée', 'Démarche d’appréciation'], supp: ['Image annotée'] },
+      { label: '4. Analyse / démonstration', ens: ['Faire remplir le nuancier : primaires, secondaires, chaud/froid, clair/foncé.', 'Démontrer : esquisse légère, grandes zones, valeurs, motifs, finitions.'], app: [ra('Jaune + rouge = orange ; rouge + bleu = violet ; bleu + jaune = vert.'), 'Les élèves reproduisent les gestes.'], tech: ['Questions / réponses', 'Démonstration', 'Démarche de création'], supp: ['Nuancier, gouache, images d’étapes'] },
+      { label: '5. Synthèse', ens: ['« Donc : observer, mélanger, esquisser, peindre les grandes zones, ajuster les valeurs, organiser les motifs, présenter. »'], app: ['Les élèves écoutent.'], tech: ['Synthèse orale'], supp: ['Tableau noir'] },
+      { label: '6. Application — Pratique', ens: ['Consigne : remplis le nuancier ; peins le paysage modèle par étapes ; puis transfère la méthode sur un autre paysage.'], app: ['Production attendue : tableau avec couleurs mélangées, plans lisibles, motifs organisés.'], tech: ['Travail individuel ou binôme'], supp: ['Papier, gouache, pinceaux, autre paysage'] },
+    ],
+    eval: { ens: ['« Présente ton tableau. Cite les couleurs utilisées et montre un motif répété ou alterné. Explique une amélioration. »', 'Observer avec la grille E.'], app: [ra('L’élève cite les couleurs et montre les plans / motifs.')], tech: ['Production pratique', 'Appréciation orale'], supp: ['Tableau, grille E'] },
+    erreurs: [
+      ['✗ Mélanger toutes les couleurs sans tester', '✔️ Essayer les mélanges dans le nuancier', 'Faire peindre une petite case test avant de remplir une grande zone.'],
+      ['✗ Peindre les détails avant les grandes zones', '✔️ Ciel, collines, premier plan, puis détails', 'Demander : « Quelle est la plus grande zone ? » puis la peindre d’abord.'],
+      ['✗ Paysage sans plans lisibles', '✔️ Horizon, arrière-plan, premier plan', 'Faire tracer une ligne d’horizon légère et nommer les plans.'],
+      ['✗ Motifs placés au hasard', '✔️ Répétition, alternance ou inversion', 'Montrer une rangée d’arbres : même forme, écart régulier, couleurs alternées.'],
+    ],
+    criteres: [
+      ['Couleurs', 'Les primaires sont identifiées ; au moins une secondaire est obtenue par mélange.'],
+      ['Nuancier', 'Le nuancier est rempli et sert de référence pendant la peinture.'],
+      ['Plans', 'Horizon, arrière-plan et premier plan sont lisibles.'],
+      ['Valeurs', 'Des zones claires et foncées ou chaudes/froides sont visibles.'],
+      ['Motifs', 'Une répétition, alternance ou inversion est appliquée.'],
+      ['Présentation', 'L’élève cite les couleurs et explique une amélioration.'],
+    ],
+    intro: ['La peinture ne consiste pas seulement à colorier. Il faut observer les couleurs, les mélanger, organiser les plans et choisir des motifs. Cette séance montre comment passer d’un nuancier à un paysage peint.'],
+    obsTitle: '1. Observation du paysage', obsImg: 'peinture_observation_annotee.png', obsCaption: 'Les flèches montrent les plans, les couleurs et les motifs à remarquer.',
+    obsPhrase: 'Regardez l’horizon, l’arrière-plan, le premier plan, puis les couleurs chaudes et froides.',
+    obsBullets: ['Horizon : il sépare le ciel et la terre.', 'Arrière-plan : souvent plus froid, plus pâle, moins détaillé.', 'Premier plan : plus net, plus contrasté, plus détaillé.', 'Couleurs chaudes : jaune, orange, rouge ; couleurs froides : bleu, vert, violet.', 'Motifs : arbres ou formes répétés, alternés ou inversés.'],
+    prepTitle: '2. Le nuancier de couleurs : essayer avant de peindre', prepImg: 'peinture_nuancier_a_remplir.png', prepCaption: 'Nuancier à remplir : primaires, secondaires, chaud/froid, clair/foncé.',
+    prepPhrase: 'Mélange deux primaires, observe le résultat, puis colorie la case correspondante.',
+    prepText: ['Consigne élève : remplis d’abord les cases du nuancier. Teste les mélanges sur une petite zone avant de peindre le tableau.', 'Vocabulaire : primaire, secondaire, chaude, froide, claire, foncée. Le nuancier sert de référence pendant toute la séance.'],
+    prodTitle: '3. Le tableau peinture paysage',
+    prod: [
+      { title: 'a. Esquisse légère : horizon, plans, éléments principaux', img: 'peinture_etape_a_esquisse.png', caption: 'Tracer légèrement l’horizon et les grandes formes.', text: 'On place d’abord l’horizon, les collines, la rivière, les arbres. Les traits restent légers pour pouvoir être corrigés.', phrase: 'Trace doucement les grandes formes avant de peindre.' },
+      { title: 'b. Les grandes zones : ciel, collines, premier plan, rivière', img: 'peinture_etape_b_grandes_zones.png', caption: 'Peindre les grandes zones avant les détails.', text: 'On peint les surfaces principales : ciel, arrière-plan, premier plan, rivière. On évite de commencer par les petits détails.', phrase: 'Peins d’abord les grandes zones, pas les détails.' },
+      { title: 'c. Valeurs et couleurs : chaud/froid, clair/foncé', img: 'peinture_etape_c_valeurs_couleurs.png', caption: 'Ajuster les valeurs et les températures de couleur.', text: 'On éclaircit ou on fonce certaines zones. On peut rendre l’arrière-plan plus froid et le premier plan plus contrasté.', phrase: 'Une couleur peut être claire ou foncée, chaude ou froide.' },
+      { title: 'd. Motifs et finitions : répétition, alternance, inversion', img: 'peinture_etape_d_motifs_finitions.png', caption: 'Organiser les motifs et présenter le tableau.', text: 'On ajoute des motifs organisés : arbres répétés, couleurs alternées, formes inversées. On vérifie la propreté, puis on présente le tableau en citant les couleurs.', phrase: 'Un motif répété ou alterné organise le paysage.' },
+    ],
+    pratiqueTitre: 'Peindre ceci : un autre paysage', pratiqueImg: 'peinture_pratique_autre_paysage.png', pratiqueCaption: 'Nouveau paysage : rizière ou bord de rivière.',
+    pratiqueConsigne: 'Consigne : choisis un autre paysage que le modèle. Remplis ou réutilise ton nuancier, fais une esquisse légère, peins les grandes zones, ajuste les valeurs, ajoute un motif organisé, puis présente ton tableau.',
+    pratiqueBullets: ['Couleurs : utilise au moins une couleur secondaire obtenue par mélange.', 'Plans : horizon, arrière-plan, premier plan.', 'Motifs : répétition, alternance ou inversion.', 'Présentation : cite les couleurs et explique une amélioration.'],
+    typeSujet: 'Type de sujet d’examen : sujet pratique de production graphique. L’écrit sert seulement à nommer les couleurs et expliquer les choix.',
+    videos: [
+      { title: 'Couleurs primaires, secondaires et tertiaires : réussir les mélanges', url: 'https://www.youtube.com/watch?v=6sPU4Kk1Jx4', use: 'Voir comment obtenir des couleurs secondaires à partir des primaires.' },
+      { title: 'Comment mélanger les couleurs ? Comment foncer ou éclaircir la peinture ?', url: 'https://www.youtube.com/watch?v=SDs5WE0-u-I', use: 'Revoir les mélanges, l’éclaircissement et le foncement.' },
+    ],
+    trace: 'Pour peindre un paysage, j’observe les plans et les couleurs. Je remplis un nuancier. Je fais une esquisse légère. Je peins les grandes zones. J’ajuste les valeurs. J’organise des motifs. Je présente mon tableau et je cite les couleurs utilisées.',
+  },
+  {
+    id: 'sculpture', file: 'Art_T9_J-Learn_PROTOTYPE_S6_SCULPTURE.docx', seance: '6 — prototype',
+    sous: 'Arts visuels — Sculpture / fabrication', theme: 'Instrument de percussion recyclable', titre: 'Fabriquer un amponga recyclable et le faire sonner',
+    objectif: 'Fabriquer un instrument de musique à percussion à partir d’objets recyclables, en tenant compte des formes, dimensions, assemblage, décor et qualité du son.',
+    doc: 'PE T9.pdf, Arts visuels / Sculpture, p. imprimée 236-237 ; FRP_3eme_ARTS.pdf, p. 20-23 ; tutoriels vidéo en fin de pratique.',
+    materiel: 'Objets recyclables propres : boîte, gobelet, carton ; sachet ou tissu ; ruban, élastique, ficelle ; bâton arrondi ; ciseaux à bouts ronds, colle, crayon, couleur.',
+    scene: 'sculpture_scene_scolaire_1100.jpg', sceneCaption: 'En classe : fabriquer un instrument de percussion avec des objets recyclables.',
+    audio: 'audio_art_t9_pilote_sculpture_consigne.mp3', qr: 'qr_audio_sculpture.png',
+    comprendre: [
+      'Un instrument à percussion doit produire un son : une membrane tendue vibre, un corps résonne, un objet est frappé ou secoué.',
+      'La séance 6 reste conforme au PE : fabrication d’un instrument de percussion recyclable. L’exemple malgache « amponga » peut être adapté avec les matériaux disponibles.',
+      'La sécurité passe avant le décor : pas de bord coupant, pas d’outil dangereux sans adulte, objets propres.',
+    ],
+    preparer: [
+      'Objets recyclables propres : boîte de conserve sans bord coupant, gobelet solide, carton, bouteille plastique.',
+      'Membrane : sachet plastique, tissu, morceau de ballon ou plastique souple ; ligature : ruban, élastique, ficelle.',
+      'Baguette : bâton arrondi, crayon non pointu ; ciseaux à bouts ronds, colle, ruban adhésif.',
+      'Images d’étapes, plan de fabrication à compléter, critères d’évaluation ; prévoir un espace de test sonore.',
+    ],
+    revision: { ens: ['Quels objets recyclables peuvent produire un son ?', 'Que faut-il vérifier avant de les utiliser ?'], app: [ra('Boîte, bouteille, gobelet, capsule.'), ra('Propreté, absence de bord coupant, solidité.')], tech: ['Questions orales'], supp: ['Objets recyclables'] },
+    steps: [
+      { label: '1. Mise en situation', ens: ['Montrer un instrument à percussion simple ou son image.', '« Comment fabriquer un instrument qui sonne avec des objets recyclés ? »'], app: [ra('Il faut un corps, une membrane ou des éléments qui s’entrechoquent, et un assemblage solide.')], tech: ['Problème de fabrication'], supp: ['Instrument ou image'] },
+      { label: '2. Présentation', ens: ['« Aujourd’hui : Fabriquer un amponga recyclable et le faire sonner. Vous allez choisir, assembler, décorer, tester. »'], app: ['Les élèves écoutent.'], tech: ['Annonce orale'], supp: ['Tableau noir'] },
+      { label: '3. Observation', ens: ['« Observez la membrane, le corps, la ligature, le décor, la baguette. »', 'Montrer l’image annotée.'], app: ['Les élèves nomment les parties.'], tech: ['Observation dirigée', 'Démarche d’appréciation'], supp: ['Image annotée'] },
+      { label: '4. Analyse / démonstration', ens: ['Faire compléter le plan de fabrication.', 'Démontrer : corps et repères, membrane, ligature/tension, décor et test sonore.'], app: [ra('La membrane doit être tendue ; la ligature doit être régulière ; le décor ne doit pas gêner le son.'), 'Les élèves reproduisent les gestes.'], tech: ['Démonstration', 'Démarche de création'], supp: ['Plan, objets recyclables, images d’étapes'] },
+      { label: '5. Synthèse', ens: ['« Donc : choisir des objets sûrs, tracer, assembler, tendre, décorer, tester, ajuster, jouer. »'], app: ['Les élèves écoutent.'], tech: ['Synthèse orale'], supp: ['Tableau noir'] },
+      { label: '6. Application — Pratique', ens: ['Consigne : fabrique l’instrument démontré ; puis transfère la méthode sur un shaker ou des maracas.'], app: ['Production attendue : instrument solide, décoré, qui produit un son ; courte séquence jouée.'], tech: ['Travail en binôme ou groupe'], supp: ['Objets recyclables, colle, ruban, baguette'] },
+    ],
+    eval: { ens: ['« Présente ton instrument. Joue une courte séquence. Explique comment tu as obtenu le son et une amélioration. »', 'Observer avec la grille E.'], app: [ra('L’instrument sonne ; l’élève explique le rôle de la membrane ou des éléments secoués.')], tech: ['Production pratique', 'Appréciation orale'], supp: ['Instrument, grille E'] },
+    erreurs: [
+      ['✗ Membrane détendue', '✔️ Membrane tendue et ligaturée', 'Faire tirer doucement la membrane puis fixer par petits segments opposés.'],
+      ['✗ Objet sale ou coupant', '✔️ Objet propre et sécurisé', 'Vérifier les bords avant la classe ; remplacer tout objet dangereux.'],
+      ['✗ Décor qui gêne la vibration', '✔️ Décor léger et bien placé', 'Montrer que trop de colle ou de papier épais peut étouffer le son.'],
+      ['✗ Instrument non testé', '✔️ Test sonore et ajustement', 'Faire jouer une pulsation simple : fort/doux, long/court.'],
+    ],
+    criteres: [
+      ['Matériaux', 'Les objets sont propres, sûrs et adaptés.'],
+      ['Assemblage', 'Le corps, la membrane et la ligature tiennent ensemble.'],
+      ['Tension / son', 'La membrane est tendue ou les éléments produisent un son net.'],
+      ['Décor', 'Un motif répété, alterné ou inversé est visible sans gêner le son.'],
+      ['Jeu', 'L’élève joue une courte séquence rythmique.'],
+      ['Présentation', 'L’élève explique une réussite et une amélioration.'],
+    ],
+    intro: ['La sculpture peut produire un objet utile : un instrument de musique. Ici, l’objet doit être solide, décoré et sonore. La séance montre comment passer d’objets recyclables à un instrument à percussion.'],
+    obsTitle: '1. Observation de l’instrument', obsImg: 'sculpture_observation_annotee.png', obsCaption: 'Les flèches montrent les parties de l’instrument à percussion.',
+    obsPhrase: 'Montrez la membrane, le corps, la ligature, le décor et la baguette.',
+    obsBullets: ['Membrane : elle vibre quand elle est frappée.', 'Corps : il porte la membrane et peut résonner.', 'Ligature : elle maintient la membrane tendue.', 'Décor : il organise des motifs sans étouffer le son.', 'Baguette : elle frappe avec un geste contrôlé.'],
+    prepTitle: '2. Le plan de fabrication : choisir et sécuriser', prepImg: 'sculpture_plan_a_completer.png', prepCaption: 'Plan à compléter avant de fabriquer.',
+    prepPhrase: 'Avant de coller ou de tendre, choisis tes matériaux et vérifie la sécurité.',
+    prepText: ['Consigne élève : complète le plan : corps, membrane, ligature, outils, sécurité. Un binôme peut répartir les rôles : un élève tient, un élève fixe.', 'Vocabulaire : membrane, corps, ligature, percussion, membranophone, idiophone. Un shaker est un idiophone : ce sont les éléments intérieurs qui s’entrechoquent.'],
+    prodTitle: '3. La fabrication de l’instrument',
+    prod: [
+      { title: 'a. Choisir le corps et tracer les repères', img: 'sculpture_etape_a_corps_reperes.png', caption: 'Corps propre, repères de placement.', text: 'On choisit un objet solide et propre. On trace des repères pour placer la membrane et le décor. On vérifie les bords.', phrase: 'Un objet sûr et propre avant de décorer.' },
+      { title: 'b. Poser la membrane', img: 'sculpture_etape_b_membrane.png', caption: 'Membrane posée sans déchirure.', text: 'On pose le sachet, le tissu ou le plastique souple sur l’ouverture. On évite les plis trop forts et les déchirures.', phrase: 'Pose la membrane doucement, sans la déchirer.' },
+      { title: 'c. Tendre et ligaturer', img: 'sculpture_etape_c_ligature_tension.png', caption: 'Ligature régulière : la membrane est tendue.', text: 'On fixe la membrane avec ruban, élastique ou ficelle. On tire doucement et on fixe par petits segments opposés pour garder une tension régulière.', phrase: 'Tends un peu, fixe, vérifie, recommence.' },
+      { title: 'd. Décorer, tester le son, ajuster', img: 'sculpture_etape_d_decor_test.png', caption: 'Décor et test sonore.', text: 'On décore avec répétition ou alternance. On teste avec une baguette arrondie. Si le son est mou, on tend davantage ; si le son est étouffé, on allège le décor.', phrase: 'Un instrument doit être vu et entendu : teste le son.' },
+    ],
+    pratiqueTitre: 'Fabriquer ceci : un shaker / maracas', pratiqueImg: 'sculpture_pratique_maracas.png', pratiqueCaption: 'Nouvel instrument : bouteille propre + graines ou capsules.',
+    pratiqueConsigne: 'Consigne : fabrique un shaker ou des maracas avec une bouteille propre, des graines ou capsules, et une fermeture solide. Décore avec un motif organisé, puis joue une courte séquence rythmique.',
+    pratiqueBullets: ['Sécurité : bouteille propre, fermeture solide, pas de petit élément accessible aux plus jeunes.', 'Son : secouer doucement puis plus fort ; écouter la différence.', 'Décor : répétition, alternance ou inversion.', 'Présentation : joue une séquence et explique une amélioration.'],
+    typeSujet: 'Type de sujet d’examen : sujet pratique de fabrication d’objet. L’écrit sert seulement à expliquer les matériaux et le mode de réalisation.',
+    videos: [
+      { title: 'Comment fabriquer des maracas avec de la récup — Atelier Récup’zical', url: 'https://www.youtube.com/watch?v=uyrpxv5pKTg', use: 'Voir une fabrication de maracas avec des matériaux recyclés.' },
+      { title: 'Fabrication de maracas avec des bouteilles en plastique', url: 'https://www.youtube.com/watch?v=QzEvr008LYk', use: 'Revoir le principe bouteille + éléments sonores + fermeture.' },
+    ],
+    trace: 'Pour fabriquer un instrument à percussion, je choisis des objets recyclables propres et sûrs. Je trace, j’assemble, je tends ou je ferme solidement. Je décore avec des motifs. Je teste le son. J’ajuste. Je joue une courte séquence.',
+  },
+  {
+    id: 'musique', file: 'Art_T9_J-Learn_PROTOTYPE_MUSIQUE_CHANT.docx', seance: 'Pilote musique/chant',
+    sous: 'Musique — chant et percussion', theme: 'Écouter, chanter, accompagner', titre: 'Chanter un chant régional avec pulsation et nuances',
+    objectif: 'Écouter un extrait ou un chant, identifier tempo, rythme, durée et intensité, puis chanter et accompagner avec des percussions simples en respectant les éléments de base musicale.',
+    doc: 'PE T9.pdf, Musique, p. imprimée 237-239 ; FRP_3eme_ARTS.pdf, composante Musique ; tutoriels vidéo en fin de pratique.',
+    materiel: 'Chant régional ou extrait choisi, support sonore ou voix de l’enseignant, percussions simples ou objets sonores, espace pour chanter ensemble, fiche d’écoute.',
+    scene: 'musique_scene_scolaire_1100.jpg', sceneCaption: 'En classe : chanter ensemble et accompagner avec des percussions simples.',
+    audio: 'audio_art_t9_pilote_musique_consigne.mp3', qr: 'qr_audio_musique.png',
+    comprendre: [
+      'L’audio de cette séance est une consigne parlée, pas un modèle chanté. Le modèle musical doit être fourni par l’enseignant, un élève compétent ou un support sonore.',
+      'On apprend d’abord par écoute : tempo, rythme, durée des sons, silences, intensité. Ensuite on reproduit par petites phrases.',
+      'La pulsation aide à chanter ensemble. Les nuances fort/doux et long/court donnent de la vie à l’interprétation.',
+    ],
+    preparer: [
+      'Un chant traditionnel malagasy ou un extrait adapté à la classe, choisi selon la région.',
+      'Support sonore, téléphone/haut-parleur si disponible, ou voix de l’enseignant.',
+      'Percussions simples : tambour, triangle, caisse, objets sonores, percussions corporelles.',
+      'Fiche d’écoute : tempo, rythme, durée, intensité, nuance ; espace pour chanter debout ou assis.',
+    ],
+    revision: { ens: ['Qu’est-ce qu’un tempo lent ou rapide ?', 'Comment garder une pulsation ensemble ?'], app: [ra('Lent : moins de pulsations par minute ; rapide : plus.'), ra('En comptant ou en frappant régulièrement.')], tech: ['Questions orales'], supp: ['—'] },
+    steps: [
+      { label: '1. Mise en situation', ens: ['Faire écouter un court extrait ou chanter une phrase.', '« Qu’avez-vous entendu : tempo, rythme, sons longs/courts, fort/doux ? »'], app: [ra('Un tempo, un rythme, des sons longs ou courts, des silences, une intensité.')], tech: ['Écoute active'], supp: ['Support sonore ou voix'] },
+      { label: '2. Présentation', ens: ['« Aujourd’hui : Chanter un chant régional avec pulsation et nuances. Vous allez écouter, compter, dire les paroles en rythme, chanter, accompagner. »'], app: ['Les élèves écoutent.'], tech: ['Annonce orale'], supp: ['Tableau noir'] },
+      { label: '3. Observation / écoute', ens: ['« Écoutez sans chanter. Identifiez le tempo, le rythme, la durée, l’intensité. »', 'Montrer la carte d’écoute.'], app: ['Les élèves écoutent et répondent.'], tech: ['Observation auditive', 'Démarche d’appréciation'], supp: ['Carte d’écoute'] },
+      { label: '4. Analyse / démonstration', ens: ['Faire frapper la pulsation : binaire 1-2, ternaire 1-2-3.', 'Dire les paroles en rythme, puis chanter phrase par phrase.', 'Ajouter une percussion et des nuances.'], app: [ra('Binaire : 1-2 ; ternaire : 1-2-3.'), 'Les élèves répètent, mémorisent, ajustent.'], tech: ['Démonstration', 'Démarche d’interprétation'], supp: ['Percussions, fiche rythme'] },
+      { label: '5. Synthèse', ens: ['« Donc : écouter, compter, dire en rythme, chanter par phrases, accompagner, respecter les nuances, présenter. »'], app: ['Les élèves écoutent.'], tech: ['Synthèse orale'], supp: ['Tableau noir'] },
+      { label: '6. Application — Pratique', ens: ['Consigne : chante le chant appris avec pulsation ; puis transfère la méthode sur un autre couplet ou un autre rythme.'], app: ['Production attendue : chant collectif ou solo court, pulsation stable, nuances respectées.'], tech: ['Travail collectif puis binôme'], supp: ['Percussions, support sonore'] },
+    ],
+    eval: { ens: ['« Chante une phrase ou joue la pulsation. Dis si le tempo était lent ou rapide, si les sons étaient longs ou courts. »', 'Observer avec la grille E.'], app: [ra('L’élève garde la pulsation et respecte une nuance.')], tech: ['Production pratique', 'Appréciation orale'], supp: ['Chant, percussion, grille E'] },
+    erreurs: [
+      ['✗ Chanter sans écouter le modèle', '✔️ Écouter puis répéter', 'Faire écouter une phrase courte avant de la faire répéter.'],
+      ['✗ Accélérer ou ralentir sans contrôle', '✔️ Pulsation stable', 'Faire compter ou frapper la pulsation par un petit groupe.'],
+      ['✗ Crier au lieu de chanter fort', '✔️ Intensité forte mais contrôlée', 'Comparer fort/doux avec la main : lever/baisser sans crier.'],
+      ['✗ Ignorer les silences', '✔️ Silence = arrêt volontaire', 'Faire un geste d’arrêt pour marquer le silence.'],
+    ],
+    criteres: [
+      ['Écoute', 'L’élève identifie au moins deux éléments : tempo, rythme, durée, intensité.'],
+      ['Pulsation', 'La pulsation est régulière pendant le chant ou l’accompagnement.'],
+      ['Paroles / mélodie', 'Les paroles sont dites en rythme ; la phrase chantée est mémorisée.'],
+      ['Nuances', 'Une opposition fort/doux ou long/court est respectée.'],
+      ['Ensemble', 'L’élève écoute les autres et ajuste son départ / sa fin.'],
+      ['Présentation', 'L’élève explique une réussite et une amélioration.'],
+    ],
+    intro: ['La musique s’apprend d’abord par l’écoute. On repère le tempo, le rythme, les sons longs et courts, les silences, l’intensité. Ensuite on chante phrase par phrase et on accompagne avec des percussions simples.'],
+    obsTitle: '1. Écoute active : que faut-il remarquer ?', obsImg: 'musique_observation_ecoute.png', obsCaption: 'Carte d’écoute : tempo, rythme, durée, intensité, nuance.',
+    obsPhrase: 'Écoutez sans chanter : le tempo est-il lent ou rapide ? Les sons sont-ils longs ou courts ?',
+    obsBullets: ['Tempo : lent, rapide, saccadé.', 'Rythme : binaire, ternaire, 12/8, mixte.', 'Durée : son long, son court, silence.', 'Intensité : fort, doux.', 'Nuance : montant ou descendant.'],
+    prepTitle: '2. Préparer le rythme : compter, frapper, écouter', prepImg: 'musique_rythme_a_completer.png', prepCaption: 'Cases à compléter / frapper : binaire et ternaire.',
+    prepPhrase: 'Frappe la pulsation : un, deux ; puis un, deux, trois.',
+    prepText: ['Consigne élève : colorie les cases fortes, puis frappe le rythme avec les mains ou un objet sonore. Garde une pulsation régulière.', 'Vocabulaire : pulsation, tempo, rythme binaire, rythme ternaire, silence, intensité. L’enseignant ou le support sonore fournit le modèle chanté/joué.'],
+    prodTitle: '3. Le chant et l’accompagnement',
+    prod: [
+      { title: 'a. Écouter le modèle et identifier les éléments', img: 'musique_etape_a_ecouter_identifier.png', caption: 'Écouter et nommer les éléments de base musicale.', text: 'On écoute une première fois sans chanter. On nomme le tempo, le rythme, les sons longs/courts, l’intensité. On réécoute pour vérifier.', phrase: 'Écoute d’abord, chante ensuite.' },
+      { title: 'b. Dire les paroles en rythme', img: 'musique_etape_b_paroles_en_rythme.png', caption: 'Paroles dites sur la pulsation.', text: 'On dit les paroles en rythme avant de chanter. Cela aide à placer les syllabes et à mémoriser le départ et la fin.', phrase: 'Dis les paroles en rythme avant de les chanter.' },
+      { title: 'c. Chanter phrase par phrase', img: 'musique_etape_c_chanter_phrases.png', caption: 'Écouter, répéter, mémoriser, ajuster.', text: 'L’enseignant chante une phrase, les élèves répètent. On assemble deux phrases, puis le couplet. On corrige sans se moquer.', phrase: 'Une phrase à la fois, puis ensemble.' },
+      { title: 'd. Accompagner avec percussion et nuances', img: 'musique_etape_d_accompagner_nuances.png', caption: 'Percussion simple, fort/doux, ensemble.', text: 'Un groupe garde la pulsation avec percussion ou frappes. Un autre chante. On essaie fort/doux, long/court, puis on présente.', phrase: 'Accompagne sans couvrir le chant.' },
+    ],
+    pratiqueTitre: 'Pratiquer ceci : un autre couplet ou un autre rythme', pratiqueImg: 'musique_pratique_autre_couplet.png', pratiqueCaption: 'Transfert : autre couplet, autre rythme, même méthode.',
+    pratiqueConsigne: 'Consigne : choisis un autre couplet du chant régional ou un nouveau rythme. Garde la même pulsation, change une nuance, puis présente ta production à un pair.',
+    pratiqueBullets: ['Écoute : identifie tempo, rythme, durée, intensité.', 'Pulsation : compte ou frappe régulièrement.', 'Chant / jeu : phrase par phrase, puis ensemble.', 'Présentation : explique une réussite et une amélioration.'],
+    typeSujet: 'Type de sujet d’examen : sujet pratique d’interprétation musicale. L’écrit sert seulement à nommer les éléments entendus.',
+    videos: [
+      { title: 'Comprendre les rythmes binaires et ternaires', url: 'https://www.youtube.com/watch?v=IaVNharOE9I', use: 'Revoir la différence entre pulsation binaire et ternaire.' },
+      { title: 'Tuto solfège — ternaire et binaire', url: 'https://www.youtube.com/watch?v=CDdCcS3S1zA', use: 'Voir une explication simple pour élèves débutants.' },
+    ],
+    trace: 'Pour chanter et accompagner, j’écoute le modèle. Je repère tempo, rythme, durée, intensité. Je frappe la pulsation. Je dis les paroles en rythme. Je chante phrase par phrase. J’accompagne sans couvrir. Je respecte les nuances. Je présente et j’ajuste.',
+  },
+  {
+    id: 'danse', file: 'Art_T9_J-Learn_PROTOTYPE_DANSE.docx', seance: 'Pilote danse',
+    sous: 'Danse — danses de salon et trajectoires', theme: 'Pas de base, pulsation, trajectoires', titre: 'Danser une courte séquence de valse et varier les trajectoires',
+    objectif: 'Observer une danse de salon, reproduire un pas de base en tenant compte de la pulsation, de l’espace et des trajectoires, puis présenter et ajuster une courte séquence.',
+    doc: 'PE T9.pdf, Danse, p. imprimée 240 ; FRP_3eme_ARTS.pdf, composante Danse ; tutoriels vidéo en fin de pratique.',
+    materiel: 'Espace dégagé, support sonore ou comptage, chaussures adaptées, repères au sol si possible, images de trajectoires, distance de sécurité.',
+    scene: 'danse_scene_scolaire_1100.jpg', sceneCaption: 'En classe ou dans la cour : pratiquer une séquence dansée avec espace et sécurité.',
+    audio: 'audio_art_t9_pilote_danse_consigne.mp3', qr: 'qr_audio_danse.png',
+    comprendre: [
+      'La danse s’apprend par observation du mouvement, puis par décomposition : appuis, direction, rythme, trajectoire.',
+      'La sécurité est prioritaire : espace dégagé, distance entre élèves, échauffement doux, pas de mouvement dangereux.',
+      'La pulsation organise le mouvement. Les trajectoires — ligne droite, sinueuse, circulaire, zigzag — donnent une forme à la séquence.',
+    ],
+    preparer: [
+      'Espace dégagé : salle vide, cour couverte ou préau ; vérifier le sol.',
+      'Support sonore de valse ou comptage de l’enseignant ; tempo lent au début.',
+      'Repères au sol si possible : ligne, cercle, zigzag ; images de trajectoires.',
+      'Consignes de sécurité : distance, échauffement, arrêt au signal.',
+    ],
+    revision: { ens: ['Quelles trajectoires connais-tu ?', 'Pourquoi faut-il garder de l’espace en danse ?'], app: [ra('Ligne droite, cercle, zigzag, ligne sinueuse.'), ra('Pour éviter les collisions et bouger librement.')], tech: ['Questions orales'], supp: ['Images de trajectoires'] },
+    steps: [
+      { label: '1. Mise en situation', ens: ['Montrer une courte séquence de valse ou une vidéo.', '« Quels appuis, directions et trajectoires voyez-vous ? »'], app: [ra('Les danseurs avancent, tournent, suivent une trajectoire.')], tech: ['Observation visuelle'], supp: ['Vidéo ou démonstration'] },
+      { label: '2. Présentation', ens: ['« Aujourd’hui : Danser une courte séquence de valse et varier les trajectoires. Vous allez regarder, compter, décomposer, enchaîner. »'], app: ['Les élèves écoutent.'], tech: ['Annonce orale'], supp: ['Tableau noir'] },
+      { label: '3. Observation', ens: ['« Regardez les appuis, la posture, la direction, la trajectoire. »', 'Montrer l’image des trajectoires.'], app: ['Les élèves observent et nomment.'], tech: ['Observation dirigée', 'Démarche d’appréciation'], supp: ['Image trajectoires'] },
+      { label: '4. Analyse / démonstration', ens: ['Échauffement doux et comptage.', 'Démontrer : posture/appuis, pas de base 1-2-3, trajectoire, enchaînement.'], app: [ra('Pas de base : 1-2-3 ; trajectoire : ligne, cercle, zigzag.'), 'Les élèves répètent par séquences.'], tech: ['Démonstration', 'Démarche d’interprétation'], supp: ['Espace, comptage, images'] },
+      { label: '5. Synthèse', ens: ['« Donc : regarder, échauffer, compter, décomposer, ajouter une trajectoire, enchaîner, présenter, ajuster. »'], app: ['Les élèves écoutent.'], tech: ['Synthèse orale'], supp: ['Tableau noir'] },
+      { label: '6. Application — Pratique', ens: ['Consigne : reproduit la séquence apprise ; puis crée une autre courte séquence avec une trajectoire différente.'], app: ['Production attendue : séquence courte avec départ, pas, trajectoire, fin.'], tech: ['Travail individuel ou binôme'], supp: ['Espace, support sonore'] },
+    ],
+    eval: { ens: ['« Présente ta séquence. Montre le pas de base et la trajectoire. Explique une amélioration. »', 'Observer avec la grille E.'], app: [ra('L’élève garde la pulsation et suit une trajectoire lisible.')], tech: ['Production pratique', 'Appréciation orale'], supp: ['Séquence, grille E'] },
+    erreurs: [
+      ['✗ Pas sans pulsation', '✔️ Mouvement compté', 'Faire compter 1-2-3 avant de danser.'],
+      ['✗ Trajectoire confuse', '✔️ Trajectoire choisie et visible', 'Tracer ou montrer la trajectoire au sol avant de bouger.'],
+      ['✗ Élèves trop proches', '✔️ Distance de sécurité', 'Définir un espace personnel : bras écartés sans toucher.'],
+      ['✗ Regarder seulement les pieds', '✔️ Posture et regard directionnel', 'Rappeler : dos droit, regard vers la direction du déplacement.'],
+    ],
+    criteres: [
+      ['Sécurité', 'L’élève respecte l’espace et l’échauffement.'],
+      ['Posture / appuis', 'Le corps est équilibré ; les appuis sont lisibles.'],
+      ['Pas de base', 'Le pas 1-2-3 est reproduit.'],
+      ['Pulsation', 'Le mouvement suit le comptage ou la musique.'],
+      ['Trajectoire', 'Une trajectoire est choisie et suivie.'],
+      ['Présentation', 'L’élève explique une réussite et une amélioration.'],
+    ],
+    intro: ['La danse organise le corps dans l’espace et dans le temps. On observe un modèle, on décompose les appuis, on compte la pulsation, puis on ajoute une trajectoire. Cette séance utilise une courte séquence de valse comme exemple.'],
+    obsTitle: '1. Regarder : appuis, directions, trajectoires', obsImg: 'danse_observation_trajectoires.png', obsCaption: 'Trajectoires : ligne droite, sinueuse, circulaire, zigzag.',
+    obsPhrase: 'Regardez la direction du mouvement et la trajectoire suivie par le danseur.',
+    obsBullets: ['Appuis : pied gauche, pied droit, transfert du poids.', 'Direction : avancer, reculer, tourner, aller de côté.', 'Trajectoire : ligne droite, sinueuse, circulaire, zigzag.', 'Pulsation : le mouvement se place sur un comptage.', 'Espace : distance de sécurité entre les danseurs.'],
+    prepTitle: '2. Préparer le corps et compter', prepImg: 'danse_echauffement_comptage.png', prepCaption: 'Échauffement doux et repères de comptage.',
+    prepPhrase: 'Échauffe-toi doucement, puis compte : un, deux, trois.',
+    prepText: ['Consigne élève : échauffe les chevilles, genoux, hanches, épaules, bras. Garde une distance de sécurité. Compte la pulsation avant de danser.', 'Vocabulaire : appui, posture, pulsation, trajectoire, séquence. La valse se compte souvent en trois temps.'],
+    prodTitle: '3. La séquence dansée',
+    prod: [
+      { title: 'a. Posture et appuis', img: 'danse_etape_a_posture_appuis.png', caption: 'Dos droit, genoux souples, poids réparti.', text: 'On place le corps : dos droit, genoux souples, poids réparti. On transfère le poids d’un pied à l’autre sans sauter.', phrase: 'Un appui stable avant de se déplacer.' },
+      { title: 'b. Pas de base : 1 - 2 - 3', img: 'danse_etape_b_pas_base.png', caption: 'Pas de base compté : 1, 2, 3.', text: 'On avance ou on place un pas sur le temps 1, on ajuste sur le temps 2, on rassemble ou on clôture sur le temps 3. On répète lentement.', phrase: 'Compte d’abord, danse ensuite.' },
+      { title: 'c. Ajouter une trajectoire', img: 'danse_etape_c_trajectoires.png', caption: 'Le pas suit une trajectoire choisie.', text: 'On choisit une trajectoire : ligne droite, cercle, zigzag ou ligne sinueuse. Le pas de base se déplace selon cette forme.', phrase: 'Choisis une trajectoire et suis-la.' },
+      { title: 'd. Enchaîner, présenter, ajuster', img: 'danse_etape_d_enchainer.png', caption: 'Départ, pas, trajectoire, fin.', text: 'On assemble : départ, pas de base, trajectoire, fin. Un pair observe : une réussite, une amélioration. On ajuste puis on présente.', phrase: 'Une séquence a un début, un développement et une fin.' },
+    ],
+    pratiqueTitre: 'Danser ceci : une autre courte séquence', pratiqueImg: 'danse_pratique_autre_sequence.png', pratiqueCaption: 'Transfert : autre trajectoire ou autre pas de danse de salon.',
+    pratiqueConsigne: 'Consigne : crée une autre courte séquence de danse de salon. Choisis une trajectoire différente, garde la pulsation, puis présente ta séquence à un pair.',
+    pratiqueBullets: ['Sécurité : espace dégagé, distance, échauffement.', 'Pas : un pas de base compté.', 'Trajectoire : cercle, zigzag, ligne droite ou sinueuse.', 'Présentation : explique une réussite et une amélioration.'],
+    typeSujet: 'Type de sujet d’examen : sujet pratique de production chorégraphique. L’écrit sert seulement à nommer la trajectoire et les éléments de base musicale.',
+    videos: [
+      { title: 'Comment danser la valse tout simplement — bases en solo pour débutant', url: 'https://www.youtube.com/watch?v=Z7_X_9jO3fc', use: 'Voir une entrée simple dans la valse pour débutants.' },
+      { title: 'Tuto pas de base de valse lente', url: 'https://www.youtube.com/watch?v=fwPysx2qAkg', use: 'Revoir le pas de base à décomposer en classe.' },
+    ],
+    trace: 'Pour danser, je regarde le modèle. Je m’échauffe et je garde de l’espace. Je compte la pulsation. Je place mes appuis. Je fais le pas de base. Je choisis une trajectoire. J’enchaîne départ, pas, trajectoire, fin. Je présente et j’ajuste.',
+  },
+  {
+    id: 'dramatique', file: 'Art_T9_J-Learn_PROTOTYPE_ART_DRAMATIQUE.docx', seance: 'Pilote art dramatique',
+    sous: 'Arts dramatiques — jeu, voix, espace', theme: 'Moyens corporels et courte scène', titre: 'Jouer une courte scène de conte avec le corps, la voix et l’espace',
+    objectif: 'Identifier les moyens corporels, l’espace, les outils et objets requis dans un conte ou une courte pièce, puis jouer une courte scène en utilisant attitude, geste, mimique, voix et déplacement.',
+    doc: 'PE T9.pdf, Art dramatique, p. imprimée 241 ; FRP_3eme_ARTS.pdf, composante Arts dramatiques ; tutoriels vidéo en fin de pratique.',
+    materiel: 'Conte, nouvelle ou courte pièce disponible dans la région, fiche personnage, objets simples : tissu, panier, bâton, espace de jeu dégagé.',
+    scene: 'dramatique_scene_scolaire_1100.jpg', sceneCaption: 'En classe : jouer une courte scène et observer les moyens corporels.',
+    audio: 'audio_art_t9_pilote_dramatique_consigne.mp3', qr: 'qr_audio_dramatique.png',
+    comprendre: [
+      'Jouer n’est pas seulement lire un texte : c’est utiliser le corps, la voix, l’espace et les objets pour faire comprendre une situation.',
+      'Les moyens corporels du PE sont : attitude, geste, mimique, mouvement, rythme, voix. Ils doivent servir l’intention du personnage.',
+      'L’appréciation par les pairs aide à ajuster : voix audible, geste clair, émotion lisible, espace utilisé.',
+    ],
+    preparer: [
+      'Un conte, une nouvelle ou une courte scène adaptée à la classe, disponible dans la région.',
+      'Fiche personnage à compléter : qui, veut quoi, émotion, voix, geste, objet / lieu.',
+      'Objets simples : tissu, panier, bâton, chaise ; espace de jeu dégagé.',
+      'Critères d’observation pour les pairs : voix, geste, émotion, espace, ajustement.',
+    ],
+    revision: { ens: ['Quels moyens le corps utilise-t-il pour montrer une émotion ?', 'Pourquoi la voix doit-elle être audible ?'], app: [ra('Geste, mimique, posture, mouvement, voix.'), ra('Pour que le public comprenne la scène.')], tech: ['Questions orales'], supp: ['—'] },
+    steps: [
+      { label: '1. Mise en situation', ens: ['Lire ou raconter un court extrait de conte.', '« Qui parle ? Que veut le personnage ? Quelle émotion voyez-vous ? »'], app: [ra('Un personnage, un objectif, une émotion, un lieu.')], tech: ['Lecture / écoute'], supp: ['Conte ou extrait'] },
+      { label: '2. Présentation', ens: ['« Aujourd’hui : Jouer une courte scène de conte avec le corps, la voix et l’espace. Vous allez comprendre, choisir, répéter, jouer, ajuster. »'], app: ['Les élèves écoutent.'], tech: ['Annonce orale'], supp: ['Tableau noir'] },
+      { label: '3. Observation', ens: ['« Observez le regard, le geste, la voix, la posture, l’espace. »', 'Montrer l’image annotée.'], app: ['Les élèves nomment les moyens corporels.'], tech: ['Observation dirigée', 'Démarche d’appréciation'], supp: ['Image annotée'] },
+      { label: '4. Analyse / démonstration', ens: ['Faire compléter la fiche personnage.', 'Démontrer : comprendre la situation, choisir les moyens corporels, répéter voix/espace, jouer et ajuster.'], app: [ra('Le personnage a un objectif, une émotion, une voix, des gestes, un lieu.'), 'Les élèves répètent et jouent.'], tech: ['Démonstration', 'Binôme / groupe'], supp: ['Fiche personnage, objets'] },
+      { label: '5. Synthèse', ens: ['« Donc : comprendre, choisir les moyens corporels, répéter, utiliser l’espace, jouer, observer, ajuster. »'], app: ['Les élèves écoutent.'], tech: ['Synthèse orale'], supp: ['Tableau noir'] },
+      { label: '6. Application — Pratique', ens: ['Consigne : joue la scène étudiée ; puis transfère la méthode sur une autre courte situation.'], app: ['Production attendue : courte scène jouée avec voix audible, gestes clairs, émotion lisible.'], tech: ['Travail en groupe'], supp: ['Objets, espace de jeu'] },
+    ],
+    eval: { ens: ['« Joue la scène. Dis quel personnage tu joues, ce qu’il veut, et montre une amélioration après observation. »', 'Observer avec la grille E.'], app: [ra('L’élève joue avec intention, voix audible et geste clair.')], tech: ['Production pratique', 'Appréciation orale'], supp: ['Scène, grille E'] },
+    erreurs: [
+      ['✗ Lire le texte sans jouer', '✔️ Jouer avec intention et geste', 'Demander : « Que veut ton personnage ? » puis ajouter un geste utile.'],
+      ['✗ Voix inaudible', '✔️ Voix projetée et articulée', 'Faire répéter une phrase en visant le fond de la salle.'],
+      ['✗ Gestes parasites', '✔️ Gestes qui servent l’action', 'Supprimer un geste inutile et garder celui qui montre l’intention.'],
+      ['✗ Dos tourné au public sans raison', '✔️ Corps orienté pour être vu', 'Placer les élèves en légère ouverture vers le public.'],
+    ],
+    criteres: [
+      ['Compréhension', 'L’élève identifie personnage, objectif, lieu et émotion.'],
+      ['Voix', 'La voix est audible, articulée, adaptée à l’émotion.'],
+      ['Geste / posture', 'Les gestes et la posture servent l’action.'],
+      ['Espace', 'L’élève utilise entrée, déplacement, sortie.'],
+      ['Objets', 'Les objets sont utilisés avec sens.'],
+      ['Ajustement', 'L’élève explique une réussite et une amélioration.'],
+    ],
+    intro: ['L’art dramatique fait vivre une histoire avec le corps, la voix et l’espace. On ne récite pas seulement : on joue une intention. Cette séance montre comment passer d’un conte à une courte scène jouée.'],
+    obsTitle: '1. Observer les moyens corporels et l’espace', obsImg: 'dramatique_observation_annotee.png', obsCaption: 'Les flèches montrent regard, geste, voix, posture, espace.',
+    obsPhrase: 'Montrez le regard, le geste, la voix, la posture et l’espace de jeu.',
+    obsBullets: ['Regard : il indique une direction, une intention.', 'Geste : il montre une action ou une émotion.', 'Voix : volume, ton, rythme, articulation.', 'Posture : elle rend l’émotion lisible.', 'Espace : entrée, déplacement, sortie, relation au public.'],
+    prepTitle: '2. La fiche personnage : comprendre avant de jouer', prepImg: 'dramatique_fiche_personnage.png', prepCaption: 'Fiche à compléter : qui, veut quoi, émotion, voix, geste, objet / lieu.',
+    prepPhrase: 'Avant de jouer, dis qui est ton personnage et ce qu’il veut.',
+    prepText: ['Consigne élève : complète la fiche personnage. Choisis une émotion, une voix, un geste, un objet et un lieu. Un binôme peut s’entraider.', 'Vocabulaire : attitude, geste, mimique, mouvement, rythme, voix, mise en scène. La mise en scène organise l’espace pour rendre l’histoire visible.'],
+    prodTitle: '3. La courte scène jouée',
+    prod: [
+      { title: 'a. Lire et comprendre la situation', img: 'dramatique_etape_a_comprendre.png', caption: 'Qui ? Où ? Quand ? Que se passe-t-il ?', text: 'On lit ou écoute l’extrait. On identifie les personnages, le lieu, le temps, l’action et l’émotion. On choisit un conte, une nouvelle ou une courte scène.', phrase: 'Comprends l’histoire avant de la jouer.' },
+      { title: 'b. Choisir les moyens corporels', img: 'dramatique_etape_b_moyens_corporels.png', caption: 'Joie, colère, attente : le corps change.', text: 'On choisit une attitude, des gestes, une mimique, un rythme et une voix. Chaque choix doit servir l’émotion et l’objectif du personnage.', phrase: 'Ton corps doit montrer ce que ton personnage ressent.' },
+      { title: 'c. Répéter la voix et l’espace', img: 'dramatique_etape_c_repeter.png', caption: 'Voix audible ; espace organisé.', text: 'On répète lentement, puis avec une voix projetée. On place les entrées, sorties et déplacements. On articule sans crier.', phrase: 'Répète lentement, puis joue clairement.' },
+      { title: 'd. Jouer, observer, ajuster', img: 'dramatique_etape_d_jouer_ajuster.png', caption: 'Jouer devant un pair observateur.', text: 'Un groupe joue, un pair observe : geste clair, voix audible, émotion lisible. Après le jeu, on dit une réussite et une amélioration, puis on ajuste.', phrase: 'Observe, dis une réussite, propose une amélioration.' },
+    ],
+    pratiqueTitre: 'Jouer ceci : une autre courte situation', pratiqueImg: 'dramatique_pratique_autre_situation.png', pratiqueCaption: 'Transfert : au marché, un personnage cherche un objet perdu.',
+    pratiqueConsigne: 'Consigne : choisis une autre courte situation, par exemple au marché un personnage cherche un objet perdu. Comprends la situation, complète la fiche personnage, répète, joue, puis ajuste après observation.',
+    pratiqueBullets: ['Personnage : qui, veut quoi, émotion.', 'Voix : audible, articulée, ton adapté.', 'Geste : attitude, mimique, mouvement utile.', 'Espace : entrée, déplacement, sortie.', 'Présentation : explique une réussite et une amélioration.'],
+    typeSujet: 'Type de sujet d’examen : sujet pratique de jeu dramatique. L’écrit sert seulement à identifier les personnages, les émotions et les moyens corporels.',
+    videos: [
+      { title: 'Comment exprimer ses émotions ? Corps et voix sur scène', url: 'https://www.youtube.com/watch?v=urbobKTMcoI', use: 'Voir comment le corps et la voix peuvent exprimer une émotion.' },
+      { title: 'Exercice de théâtre n°3 : le corps-texte', url: 'https://www.youtube.com/watch?v=iqyq9MRQnRo', use: 'Revoir le lien entre le corps, le texte et l’intention de jeu.' },
+    ],
+    trace: 'Pour jouer une scène, je comprends l’histoire. Je remplis la fiche personnage. Je choisis voix, geste, posture, émotion. Je répète. J’utilise l’espace. Je joue. J’observe une réussite et une amélioration. J’ajuste.',
+  },
+];
+
+async function buildOne(d) {
+  const children = [...fiche(d), ...lecon(d), ...pratique(d)];
+  const doc = new Document({
+    creator: 'J-Learn', title: 'Arts T9 — ' + d.titre, description: 'Prototype pilote : fiche de préparation complète, leçon illustrée, pratique de transfert et tutoriels vidéo.',
+    styles: { default: { document: { run: { font: FONT, size: 22 } } } },
+    sections: [{ properties: { page: { margin: { top: 850, bottom: 850, left: 850, right: 850 }, size: { width: 11906, height: 16838 } } }, children }],
+  });
+  const buf = await Packer.toBuffer(doc);
+  const out = path.join(OUTDIR, d.file);
+  fs.writeFileSync(out, buf);
+  console.log('Écrit:', out, buf.length, 'octets');
+}
+async function buildCombined() {
+  const children = [];
+  PILOTS.forEach((d, i) => {
+    if (i > 0) children.push(pageBreak());
+    children.push(p('PROTOTYPE PILOTE — ' + d.sous.toUpperCase(), { bold: true, align: AlignmentType.CENTER, color: C.blue, size: 24, after: 120 }));
+    children.push(...fiche(d), ...lecon(d), ...pratique(d));
+  });
+  const doc = new Document({
+    creator: 'J-Learn', title: 'Arts T9 — Prototypes pilotes par sous-discipline', description: 'Cinq prototypes pilotes : peinture, sculpture S6, musique/chant, danse, art dramatique. Structure commune : fiche A-E, leçon illustrée, pratique de transfert.',
+    styles: { default: { document: { run: { font: FONT, size: 22 } } } },
+    sections: [{ properties: { page: { margin: { top: 850, bottom: 850, left: 850, right: 850 }, size: { width: 11906, height: 16838 } } }, children }],
+  });
+  const buf = await Packer.toBuffer(doc);
+  const out = path.join(OUTDIR, 'Art_T9_J-Learn_PROTOTYPES_PILOTES.docx');
+  fs.writeFileSync(out, buf);
+  console.log('Écrit:', out, buf.length, 'octets');
+}
+(async () => { for (const d of PILOTS) await buildOne(d); await buildCombined(); })().catch(e => { console.error(e); process.exit(1); });
