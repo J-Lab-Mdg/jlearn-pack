@@ -1080,6 +1080,7 @@ function revision() {
     pAns("R.A. : je salue, je décris les villes, j'annonce demain, je conseille.", ["je conseille"]),
     p("", { after: 40 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1M9SODsGvAT6Ahi2gy-ASdtwXNyoqG5mK/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Pendant la saison des pluies, il pleut presque chaque après-midi. Quelle chaleur au mois de janvier ! Demain, il va faire plus froid qu'aujourd'hui. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "),
         run("pendant", { bold: true, color: C.SALMON, hl: true }), run(" [adverbe de temps], "),

@@ -1070,6 +1070,7 @@ function revision() {
     pAns("R.A. : le respect mutuel (personne ne se moque) et l'altruisme (maman donne des bananes aux voisins).", ["altruisme"]),
     p("", { after: 40 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1saByeeXZ1qDOg_p6dYcY7-1UU9MgH0LO/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Le dimanche, j'adore le vélo. Je le range près de la porte. Tiana préfère cette musique douce parce que sa maman joue de la valiha. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "),
         run("je le range", { bold: true, color: C.SALMON, hl: true }), run(" [le pronom avant le verbe], "),

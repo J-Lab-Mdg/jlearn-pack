@@ -1076,6 +1076,7 @@ function revision() {
     pAns("R.A. : mets (« Mets ton pull ! »), n'oublie pas (« N'oublie pas ton parapluie ! »).", ["conseil"]),
     p("", { after: 40 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1zkyiYfLmH72Q_pSz8ygKFeTtjlCwgEny/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Ce matin, il fait froid à Antsirabe. Mamy ne porte pas de sandales. Il met son pull bleu, un bonnet rouge et des chaussettes blanches. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "),
         run("ne porte pas de", { bold: true, color: C.SALMON, hl: true }), run(" [la négation : des → de], "),

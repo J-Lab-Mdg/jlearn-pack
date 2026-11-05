@@ -1101,6 +1101,7 @@ function revision() {
     pAns("R.A. : le lieu et la date, la formule d'appel, le corps, la formule finale, la signature.", ["signature"]),
     p("", { after: 40 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1tlh8FqWAIZjDn6vZQiBzdn97r-HI0QTH/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Mon village est plus calme que la ville. Près de l'école, il y a une belle fontaine. Les maisons rouges dorment sous le grand manguier. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "),
         run("plus calme que", { bold: true, color: C.SALMON, hl: true }), run(" [la comparaison], "),

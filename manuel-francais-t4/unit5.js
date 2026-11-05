@@ -1080,6 +1080,7 @@ function revision() {
     pAns("R.A. : le début, les actions dans l'ordre, la fin (avec un sentiment).", ["le début"]),
     p("", { after: 40 }),
     p([run("Dictée préparée (étudiée la veille, dictée en classe) :", { bold: true, color: COLOR })], { after: 60 }),
+    pr([run("🎧 Audio de la dictée : ", { bold: true, size: 24 }), run("https://drive.google.com/file/d/1B6Q115slbPobArrdwWu0hTY1Tj3fY7yh/view", { color: "1F618D", size: 22 })], { after: 120 }),
     pr([run("« Hier, j'allais au marché avec maman. D'abord, nous avons acheté notre pain. Ensuite, j'ai dit merci au boulanger. »", { italic: true })], { after: 60 }),
     pr([run("Je prépare ma dictée : ", { bold: true }), run("j'étudie les mots "),
         run("j'allais", { bold: true, color: C.SALMON, hl: true }), run(" [imparfait : terminaison -ais], "),
