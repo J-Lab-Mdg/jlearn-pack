@@ -1,0 +1,986 @@
+{
+  "manual/diagrams/s02_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s02_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s02_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s02_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s02_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s02_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s02_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s03_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s03_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s03_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s03_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s03_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s03_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s03_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s04_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s04_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s04_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s04_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s04_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s04_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s04_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s05_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s05_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s05_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s05_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s05_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s05_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s05_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06a_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06a_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06a_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06a_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06a_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06a_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06a_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06b_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06b_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06b_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06b_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06b_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06b_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s06b_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s08_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s08_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s08_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s08_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s08_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s08_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s08_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s09_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s09_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s09_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s09_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s09_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s09_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s09_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s10_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s10_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s10_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s10_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s10_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s10_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s10_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s11_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s11_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s11_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s11_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s11_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s11_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s11_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s12_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s12_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s12_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s12_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s12_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s12_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s12_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s13_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s13_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s13_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s13_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s13_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s13_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s13_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s14_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s14_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s14_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s14_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s14_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s14_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s14_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s15_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s15_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s15_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s15_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s15_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s15_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s15_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17a_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17a_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17a_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17a_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17a_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17a_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17a_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17b_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17b_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17b_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17b_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17b_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17b_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s17b_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s18_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s18_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s18_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s18_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s18_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s18_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s18_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s19_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s19_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s19_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s19_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s19_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s19_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s19_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s20_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s20_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s20_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s20_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s20_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s20_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s20_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s21_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s21_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s21_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s21_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s21_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s21_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s21_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s24_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s24_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s24_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s24_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s24_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s24_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s24_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s25_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s25_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s25_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s25_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s25_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s25_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s25_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s26_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s26_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s26_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s26_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s26_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s26_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s26_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s27_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s27_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s27_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s27_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s27_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s27_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s27_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28a_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28a_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28a_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28a_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28a_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28a_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28a_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28b_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28b_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28b_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28b_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28b_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28b_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s28b_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s30_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s30_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s30_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s30_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s30_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s30_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s30_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s31_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s31_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s31_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s31_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s31_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s31_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s31_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s32_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s32_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s32_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s32_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s32_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s32_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s32_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s33_observe.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s33_practice.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s33_prepare.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s33_step_a.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s33_step_b.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s33_step_c.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/diagrams/s33_step_d.png": {
+    "width": 1200,
+    "height": 780
+  },
+  "manual/qr/s01_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s02_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s03_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s04_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s05_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s06a_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s06b_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s07_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s08_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s09_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s10_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s11_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s12_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s13_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s14_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s15_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s16_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s17a_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s17b_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s18_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s19_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s20_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s21_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s22_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s23_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s24_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s25_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s26_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s27_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s28a_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s28b_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s29_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s30_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s31_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s32_audio.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/s33_audio.png": {
+    "width": 360,
+    "height": 360
+  }
+}

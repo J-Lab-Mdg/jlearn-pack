@@ -122,3 +122,11 @@ Ne pas disperser A-E après la fiche. Ne pas remplacer la pratique artistique pa
 - Ne pas supprimer une séance du PE parce qu'elle est mal comprise ; d'abord l'expliquer.
 - Ne pas mélanger les durées du `.docx` et du PDF sans signaler l'écart.
 - Ne pas réutiliser une structure uniforme pour arts visuels, musique, danse et art dramatique.
+
+## 8. Manuel complet Arts T9
+
+- L'utilisateur a validé les pilotes et donné le feu vert pour le manuel complet.
+- Police cible : **13-16 pt**. Choix appliqué : **14 pt** pour le corps et les tableaux, **16 pt** pour les sous-titres, titres principaux plus grands, légendes au minimum 13 pt.
+- Répartition finale : **33 séances de 2 h / 66 h**, **36 parties**, trois séances charnières S6/S17/S28.
+- Ne pas revenir à l'ancien format 25 séances / 50 h.
+- Ne pas remettre de note chiffrée obligatoire dans les fiches Arts ; utiliser Acquis / En cours / À revoir.

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "s02",
+    "batch": "consignes_batch_01",
+    "start": 0,
+    "end": 19.47,
+    "duration": 19.47,
+    "expected": 19.1,
+    "ratio": 1.02
+  },
+  {
+    "id": "s03",
+    "batch": "consignes_batch_01",
+    "start": 19.47,
+    "end": 39.59,
+    "duration": 20.12,
+    "expected": 20.52,
+    "ratio": 0.98
+  },
+  {
+    "id": "s04",
+    "batch": "consignes_batch_01",
+    "start": 39.59,
+    "end": 60.77,
+    "duration": 21.18,
+    "expected": 20.87,
+    "ratio": 1.01
+  },
+  {
+    "id": "s05",
+    "batch": "consignes_batch_02",
+    "start": 0,
+    "end": 17.04,
+    "duration": 17.04,
+    "expected": 17.11,
+    "ratio": 1
+  },
+  {
+    "id": "s06a",
+    "batch": "consignes_batch_02",
+    "start": 17.04,
+    "end": 33.91,
+    "duration": 16.86,
+    "expected": 17.18,
+    "ratio": 0.98
+  },
+  {
+    "id": "s06b",
+    "batch": "consignes_batch_02",
+    "start": 33.91,
+    "end": 54.09,
+    "duration": 20.18,
+    "expected": 19.54,
+    "ratio": 1.03
+  },
+  {
+    "id": "s08",
+    "batch": "consignes_batch_03",
+    "start": 0,
+    "end": 22.54,
+    "duration": 22.54,
+    "expected": 22.92,
+    "ratio": 0.98
+  },
+  {
+    "id": "s09",
+    "batch": "consignes_batch_03",
+    "start": 22.54,
+    "end": 41.04,
+    "duration": 18.5,
+    "expected": 17.69,
+    "ratio": 1.05
+  },
+  {
+    "id": "s10",
+    "batch": "consignes_batch_03",
+    "start": 41.04,
+    "end": 59.15,
+    "duration": 18.11,
+    "expected": 18.25,
+    "ratio": 0.99
+  },
+  {
+    "id": "s11",
+    "batch": "consignes_batch_04",
+    "start": 0,
+    "end": 19.23,
+    "duration": 19.23,
+    "expected": 18.28,
+    "ratio": 1.05
+  },
+  {
+    "id": "s12",
+    "batch": "consignes_batch_04",
+    "start": 19.23,
+    "end": 40.41,
+    "duration": 21.18,
+    "expected": 21.98,
+    "ratio": 0.96
+  },
+  {
+    "id": "s13",
+    "batch": "consignes_batch_04",
+    "start": 40.41,
+    "end": 59.84,
+    "duration": 19.43,
+    "expected": 19.29,
+    "ratio": 1.01
+  },
+  {
+    "id": "s14",
+    "batch": "consignes_batch_05",
+    "start": 0,
+    "end": 19.96,
+    "duration": 19.96,
+    "expected": 20.29,
+    "ratio": 0.98
+  },
+  {
+    "id": "s15",
+    "batch": "consignes_batch_05",
+    "start": 19.96,
+    "end": 41.81,
+    "duration": 21.85,
+    "expected": 21.68,
+    "ratio": 1.01
+  },
+  {
+    "id": "s17a",
+    "batch": "consignes_batch_05",
+    "start": 41.81,
+    "end": 63.18,
+    "duration": 21.37,
+    "expected": 20.91,
+    "ratio": 1.02
+  },
+  {
+    "id": "s17b",
+    "batch": "consignes_batch_06",
+    "start": 0,
+    "end": 23.71,
+    "duration": 23.71,
+    "expected": 21.48,
+    "ratio": 1.1
+  },
+  {
+    "id": "s18",
+    "batch": "consignes_batch_06",
+    "start": 23.71,
+    "end": 43.34,
+    "duration": 19.63,
+    "expected": 20.42,
+    "ratio": 0.96
+  },
+  {
+    "id": "s19",
+    "batch": "consignes_batch_06",
+    "start": 43.34,
+    "end": 61.95,
+    "duration": 18.6,
+    "expected": 19.75,
+    "ratio": 0.94
+  },
+  {
+    "id": "s20",
+    "batch": "consignes_batch_07",
+    "start": 0,
+    "end": 19.84,
+    "duration": 19.84,
+    "expected": 19.41,
+    "ratio": 1.02
+  },
+  {
+    "id": "s21",
+    "batch": "consignes_batch_07",
+    "start": 19.84,
+    "end": 42.95,
+    "duration": 23.1,
+    "expected": 21.01,
+    "ratio": 1.1
+  },
+  {
+    "id": "s24",
+    "batch": "consignes_batch_07",
+    "start": 42.95,
+    "end": 61.51,
+    "duration": 18.56,
+    "expected": 20.78,
+    "ratio": 0.89
+  },
+  {
+    "id": "s25",
+    "batch": "consignes_batch_08",
+    "start": 0,
+    "end": 18.23,
+    "duration": 18.23,
+    "expected": 18.25,
+    "ratio": 1
+  },
+  {
+    "id": "s26",
+    "batch": "consignes_batch_08",
+    "start": 18.23,
+    "end": 40.48,
+    "duration": 22.24,
+    "expected": 21.61,
+    "ratio": 1.03
+  },
+  {
+    "id": "s27",
+    "batch": "consignes_batch_08",
+    "start": 40.48,
+    "end": 61.17,
+    "duration": 20.69,
+    "expected": 21.01,
+    "ratio": 0.98
+  },
+  {
+    "id": "s28a",
+    "batch": "consignes_batch_09",
+    "start": 0,
+    "end": 21.48,
+    "duration": 21.48,
+    "expected": 22.31,
+    "ratio": 0.96
+  },
+  {
+    "id": "s28b",
+    "batch": "consignes_batch_09",
+    "start": 21.48,
+    "end": 48.18,
+    "duration": 26.7,
+    "expected": 25.26,
+    "ratio": 1.06
+  },
+  {
+    "id": "s30",
+    "batch": "consignes_batch_09",
+    "start": 48.18,
+    "end": 71.97,
+    "duration": 23.79,
+    "expected": 24.05,
+    "ratio": 0.99
+  },
+  {
+    "id": "s31",
+    "batch": "consignes_batch_10",
+    "start": 0,
+    "end": 20.12,
+    "duration": 20.12,
+    "expected": 22.27,
+    "ratio": 0.9
+  },
+  {
+    "id": "s32",
+    "batch": "consignes_batch_10",
+    "start": 20.12,
+    "end": 47.42,
+    "duration": 27.29,
+    "expected": 24.13,
+    "ratio": 1.13
+  },
+  {
+    "id": "s33",
+    "batch": "consignes_batch_10",
+    "start": 47.42,
+    "end": 70.68,
+    "duration": 23.26,
+    "expected": 23.97,
+    "ratio": 0.97
+  }
+]

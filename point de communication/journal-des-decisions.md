@@ -129,3 +129,21 @@ L'utilisateur a validé la méthode proposée :
 - Ne pas remplacer une séance du PE sans validation explicite.
 - Ne pas proposer des options de visuels sans les relier aux attentes du PE.
 - Ne pas refaire une V1 uniforme avec exercices écrits systématiques.
+
+## Manuel complet validé — 33 séances / 66 h
+
+- Feu vert utilisateur reçu après validation des pilotes : généraliser à tout le manuel.
+- Police agrandie : corps et tableaux **14 pt**, sous-titres **16 pt**, titres principaux plus grands ; légendes/labels au minimum **13 pt**.
+- Répartition exacte corrigée : **3 séances charnières** (S6, S17, S28), pas six. Cela donne **36 parties de leçon** pour 33 séances.
+  - Dessin : S1-S5 + S6a = 11 h.
+  - Sculpture : S6b + S7-S11 = 11 h.
+  - Peinture : S12-S16 + S17a = 11 h.
+  - Musique : S17b + S18-S22 = 11 h.
+  - Danse : S23-S27 + S28a = 11 h.
+  - Art dramatique : S28b + S29-S33 = 11 h.
+- S6 conserve le projet instrument de percussion recyclable : S6a bilan dessin, S6b lancement sculpture/instrument, S7 fabrication.
+- Livrable final : `art-t9/output/Art_T9_J-Learn.docx`.
+- Générateurs : `art-t9/src/manual_v2/` (curriculum, données par sous-discipline, assets, audio, build, validation).
+- Médias : scènes scolaires réutilisées par familles, 210 nouveaux diagrammes techniques, 36 QR audio, 36 liens audio MP3. Les 6 audios pilotes/S1 sont réutilisés ; 30 nouvelles consignes sont produites par 10 clips parlés puis découpées aux silences.
+- Musique : les audios du manuel restent des **consignes parlées**, pas des modèles chantés ou instrumentaux réalistes.
+- Validation XML : 1 `sectPr`, police Times New Roman, taille minimale 13 pt, 33 signets séances, 36 leçons, 36 pratiques, 36 tables 6 colonnes, 36 liens audio, sommaire interactif par signets, absence de champ TOC natif, absence « OK/PAS OK ».
