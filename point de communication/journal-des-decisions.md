@@ -147,3 +147,11 @@ L'utilisateur a validé la méthode proposée :
 - Médias : scènes scolaires réutilisées par familles, 210 nouveaux diagrammes techniques, 36 QR audio, 36 liens audio MP3. Les 6 audios pilotes/S1 sont réutilisés ; 30 nouvelles consignes sont produites par 10 clips parlés puis découpées aux silences.
 - Musique : les audios du manuel restent des **consignes parlées**, pas des modèles chantés ou instrumentaux réalistes.
 - Validation XML : 1 `sectPr`, police Times New Roman, taille minimale 13 pt, 33 signets séances, 36 leçons, 36 pratiques, 36 tables 6 colonnes, 36 liens audio, sommaire interactif par signets, absence de champ TOC natif, absence « OK/PAS OK ».
+
+## Correctif tableau de déroulement (retour capture utilisateur)
+
+- Défaut constaté : cellules en débordement à droite du tableau + en-têtes « Observation / Technique » écrasés caractère par caractère.
+- Cause : `docx` insère AUTOMATIQUEMENT les cellules de continuation (`vMerge continue`) pour les `rowSpan: 2` de la ligne 1 ; le builder en ajoutait aussi manuellement → ligne 2 à 10 cellules pour une grille de 6.
+- Correctif : la ligne 2 ne contient plus que « Enseignant » et « Apprenants » ; les 4 continuations sont laissées à la bibliothèque.
+- Largeurs rééquilibrées (total 10200 twips) : [1100, 2475, 2475, 1400, 1150, 1600] pour que chaque en-tête tienne sans césure verticale à 13 pt.
+- Validateur renforcé : chaque ligne de chaque tableau doit couvrir exactement sa grille ; en-tête déroulement ligne 2 = 6 cellules.

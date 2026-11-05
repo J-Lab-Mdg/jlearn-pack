@@ -29,7 +29,7 @@ function pageBreak(){ return new Paragraph({children:[new PageBreak()]}); }
 function phrase(text){ return new Paragraph({shading:{type:ShadingType.CLEAR,fill:C.light},spacing:{before:90,after:90,line:300},indent:{left:180,right:180},children:[run('Phrase clé : ',{bold:true,color:C.green}),run('« '+text+' »',{italics:true})]}); }
 function noBorders(){ const n={style:BorderStyle.NONE,size:0,color:'FFFFFF'}; return {top:n,bottom:n,left:n,right:n,insideHorizontal:n,insideVertical:n}; }
 function thinBorders(){ const b={style:BorderStyle.SINGLE,size:4,color:'999999'}; return {top:b,bottom:b,left:b,right:b,insideHorizontal:b,insideVertical:b}; }
-function cell(children,o={}){ return new TableCell({columnSpan:o.colSpan,rowSpan:o.rowSpan,verticalAlign:o.vAlign??VerticalAlign.TOP,width:o.width?{size:o.width,type:WidthType.DXA}:undefined,shading:o.fill?{type:ShadingType.CLEAR,fill:o.fill}:undefined,margins:{top:70,bottom:70,left:100,right:100},children}); }
+function cell(children,o={}){ return new TableCell({columnSpan:o.colSpan,rowSpan:o.rowSpan,verticalAlign:o.vAlign??VerticalAlign.TOP,width:o.width?{size:o.width,type:WidthType.DXA}:undefined,shading:o.fill?{type:ShadingType.CLEAR,fill:o.fill}:undefined,margins:{top:70,bottom:70,left:80,right:80},children}); }
 function table(widths,rows,borders=thinBorders()){ return new Table({borders,width:{size:widths.reduce((a,b)=>a+b,0),type:WidthType.DXA},columnWidths:widths,layout:TableLayoutType.FIXED,rows}); }
 function img(file,width=600,caption){ const d=dims.get(file); if(!d) throw new Error('Image sans dims '+file); const height=Math.round(width*d.h/d.w); const ext=path.extname(file).toLowerCase(); const type=ext==='.jpg'||ext==='.jpeg'?'jpg':'png'; const out=[new Paragraph({alignment:AlignmentType.CENTER,spacing:{before:100,after:60},children:[new ImageRun({type,data:fs.readFileSync(ap(file)),transformation:{width,height},altText:{title:caption||file,description:caption||file,name:path.basename(file)}})]})]; if(caption) out.push(p(caption,{align:AlignmentType.CENTER,italics:true,size:S.small,color:C.grey,after:140})); return out; }
 function linkPara(url,label,o={}){ return new Paragraph({spacing:{after:o.after??80,line:300},children:[new ExternalHyperlink({link:url,children:[run(label,{color:C.blue,underline:{},size:o.size??S.body,bold:o.bold})]})]}); }
@@ -45,10 +45,14 @@ function metaTable(ps){ const left=[]; const L=(label,val)=>left.push(pRuns([run
   const right=[pRuns([run('Date : ',{bold:true,size:S.table}),run('_______',{size:S.table})],{after:60}),pRuns([run('Classe : ',{bold:true,size:S.table}),run('T9',{size:S.table})],{after:60}),pRuns([run('Séance n° : ',{bold:true,size:S.table}),run(String(ps[0].session),{size:S.table})],{after:60}),pRuns([run('Durée : ',{bold:true,size:S.table}),run(ps.reduce((s,x)=>s+x.minutes,0)+' min',{size:S.table})],{after:60})];
   return table([7000,3200],[new TableRow({children:[cell(left,{width:7000}),cell(right,{width:3200})]})],noBorders());
 }
-const W=[1500,3000,3000,1200,1100,400];
+// Largeurs en twips : total 10200 = largeur utile A4 avec marges 850.
+// Chaque en-tête doit tenir sans césure caractère par caractère à 13 pt.
+const W=[1100,2475,2475,1400,1150,1600];
 function deroulementHeader(){ return [
  new TableRow({tableHeader:true,children:[headCell('Étapes et Durée',{width:W[0],rowSpan:2}),headCell('Déroulement de la leçon',{colSpan:2}),headCell('Technique et Stratégie',{width:W[3],rowSpan:2}),headCell('Support et Matériel',{width:W[4],rowSpan:2}),headCell('Observation',{width:W[5],rowSpan:2})]}),
- new TableRow({tableHeader:true,children:[cell([p('',{after:0})],{width:W[0],fill:'F5F5F5'}),headCell('Enseignant',{width:W[1]}),headCell('Apprenants',{width:W[2]}),cell([p('',{after:0})],{width:W[3],fill:'F5F5F5'}),cell([p('',{after:0})],{width:W[4],fill:'F5F5F5'}),cell([p('',{after:0})],{width:W[5],fill:'F5F5F5'})]}) ]; }
+ // docx insère AUTOMATIQUEMENT les cellules de continuation des rowSpan ci-dessus :
+ // ne fournir ici que les deux cellules réellement nouvelles (Enseignant / Apprenants).
+ new TableRow({tableHeader:true,children:[cell([p('Enseignant',{bold:true,size:S.small,align:AlignmentType.CENTER,after:0})],{width:W[1],fill:'F5F5F5',vAlign:VerticalAlign.CENTER}),cell([p('Apprenants',{bold:true,size:S.small,align:AlignmentType.CENTER,after:0})],{width:W[2],fill:'F5F5F5',vAlign:VerticalAlign.CENTER})]}) ]; }
 function sectionRow(text){ return new TableRow({children:[cell([p(text,{bold:true,size:S.table,color:C.red,align:AlignmentType.CENTER,after:0})],{colSpan:6,fill:C.err})]}); }
 function row6(stage,ens,app,tech,support){ return new TableRow({children:[cell(String(stage).split('\n').map((l,i)=>p(l,{bold:true,size:S.table,after:i===0?40:0})),{width:W[0]}),cell(Array.isArray(ens)?ens:[p(ens,{size:S.table,after:0})],{width:W[1]}),cell(Array.isArray(app)?app:[p(app,{size:S.table,after:0})],{width:W[2]}),cell([p(tech,{size:S.table,after:0})],{width:W[3]}),cell([p(support,{size:S.table,after:0})],{width:W[4]}),cell([p('',{after:0})],{width:W[5]})]}); }
 function synthese(p){ return 'Donc, '+p.understand[0]+' Mots clés à réutiliser : '+p.keywords.join(', ')+'.'; }

@@ -39,6 +39,26 @@ if root.xpath('//w:fldSimple[contains(@w:instr,"TOC")]',namespaces=NS): errors.a
 grids=root.xpath('//w:tblGrid',namespaces=NS)
 six=sum(1 for g in grids if len(g.findall('w:gridCol',NS))==6)
 if six<36: errors.append(f'tables 6 colonnes={six}')
+# chaque ligne de chaque tableau doit couvrir exactement sa grille (pas de cellules en trop -> débordement)
+W='{%s}'%NS['w']
+overflow=0
+for ti,t in enumerate(root.xpath('//w:tbl',namespaces=NS)):
+    grid=len(t.findall('w:tblGrid/w:gridCol',NS))
+    for ri,tr in enumerate(t.findall('w:tr',NS)):
+        span=0
+        for tc in tr.findall('w:tc',NS):
+            gs=tc.find('w:tcPr/w:gridSpan',NS)
+            span+=int(gs.get(W+'val')) if gs is not None else 1
+        if span!=grid:
+            overflow+=1
+            if overflow<4: errors.append(f'table {ti} ligne {ri}: span={span} grille={grid}')
+if overflow: errors.append(f'lignes en débordement={overflow}')
+# en-tête du déroulement : ligne 2 = 6 cellules (2 réelles + 4 continuations auto), pas 10
+for t in root.xpath('//w:tbl',namespaces=NS):
+    if len(t.findall('w:tblGrid/w:gridCol',NS))!=6: continue
+    trs=t.findall('w:tr',NS)
+    if len(trs)>1 and len(trs[1].findall('w:tc',NS))!=6:
+        errors.append('en-tête déroulement ligne 2 != 6 cellules'); break
 report={'file':str(DOC),'bytes':DOC.stat().st_size,'sectPr':len(sect),'min_half_points':min(sizes) if sizes else None,'fonts':sorted(fonts),'bookmarks':len(bookmarks),'internal_links':len(anchors),'lecons':len(lecons),'pratiques':len(pratiques),'seances':len(seances),'media':len(media),'audio_links':len(audio),'youtube_links':len(yt),'tables_6col':six,'errors':errors}
 print(json.dumps(report,ensure_ascii=False,indent=2))
 if errors: sys.exit(1)
