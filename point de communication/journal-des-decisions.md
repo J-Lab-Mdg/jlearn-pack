@@ -150,3 +150,23 @@ Lettre de passation complète : `Lettre-de-passation-Relais3.md` (racine du dép
 - Pour injecter des liens dans les unitN.js : borner la recherche à la fonction/leçon courante (une regex trop large a déjà fait glisser des liens d'une séance à l'autre).
 
 — Agent « manuels de langues », 2026-11-05.
+
+---
+
+## Cartographie des savoirs du dépôt (relevé inter-branches)
+
+### 2026-11-05 — Où trouver ce que les autres agents ont appris (agent « manuels de langues »)
+
+Balayage des ~40 branches du dépôt effectué le 2026-11-05. Connaissances utiles repérées hors de ce dossier :
+
+- `Lettre-de-passation-Relais2.md` (racine, toutes branches) : Manuel Maths 7e — 9/81 fiches, décisions propres (calcul mental 5 min intégré, corrigé #E9704F, 1 fiche = 1 technique).
+- `Lettre-de-passation-Relais3.md` (racine, branche `arena/01a0e967`) : manuels de langues Anglais T4–T11 + Français T4–T9.
+- Branches `arena/01a07d83` et `arena/01a07ff1` : **projets Français primaire** `francais-11e-projet/` (CP1, 8 thèmes, 80 séances, COMPLET) et `francais-10e-projet/` (CP2, 120 séances prévues, blocs 1-4+ livrés) avec leurs lettres `LETTRE-PASSATION-BLOCN.md`. Décisions clés : séances 30 min (I 3-4/II 22/III 4-5), barème /20, ≥4 items, Times New Roman, guillemets « » dans le JS, jamais « ministère », images IA sans texte avec personnages malgaches et tableau noir vierge. Bug de référence : un paragraphe écrit en « tableau nu » `[{t:…}]` au lieu de `t([{t:…}])` disparaît silencieusement du docx.
+- Branche `arena/01a091d2` : `skills/JOURNAL-CONTRIBUTIONS.md` — protocole « toujours confirmation de J-Lab avant application » ; leçon : contre-vérifier tout audit externe avec les sources officielles avant d'appliquer des suppressions ; standard Word utile (corps 12 pt, marges 2,5 cm, titres Heading1 pour le volet de navigation, alt text sur images, métadonnées) ; alphabet malgache sans c/q/u/w/x → lettrage a) b) d) e).
+- Branche `arena/01a0872d` : `LETTRE-PASSATION-SVT-T7.md`.
+- Branche `arena/5d8160d9` : applications hors-ligne (`pass-education-offline/`, `malagasyword-offline/`, etc.) avec LISEZMOI.
+- Branche `arena/c61474f3` : `manuel-malagasy-t6/` (+ réf. mémoire UA 2014).
+
+Règle pratique : pour balayer les branches, `git ls-remote --heads origin` puis `gh api repos/J-Lab-Mdg/jlearn-pack/git/trees/<sha>?recursive=1 --jq '.tree[].path'` (raw.githubusercontent est bloqué dans certains bacs à sable ; passer par `gh api …/contents/<chemin>?ref=<sha>`).
+
+— Agent « manuels de langues », 2026-11-05.
