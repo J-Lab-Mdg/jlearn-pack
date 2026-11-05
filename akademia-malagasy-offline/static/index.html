@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14532d">
+  <title>Akademia Malagasy Offline — Foibe momba ny Teny</title>
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- En-tete institutionnel -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" id="brandHome" role="button" tabindex="0" title="Retour à l'accueil">
+        <img src="icon.svg" alt="Akademia Malagasy" class="brand-logo">
+        <div>
+          <div class="brand-kicker">FOIBE MOMBA NY TENY · RARIHASINA ANALAKELY</div>
+          <h1 class="brand-title">Akademia Malagasy <span class="badge-offline">100 % HORS-LIGNE</span></h1>
+        </div>
+      </div>
+
+      <nav class="main-tabs" aria-label="Navigation principale">
+        <button class="tab-btn active" data-tab="search">🔍 Karoka / Recherche</button>
+        <button class="tab-btn" data-tab="vocab">📖 Voambolana <span id="navVocabCount" class="pill">0</span></button>
+        <button class="tab-btn" data-tab="docs">🏛️ Traités &amp; Fitsipika <span id="navDocsCount" class="pill">0</span></button>
+        <button class="tab-btn" data-tab="pdfs">📄 PDF Ôfisialy <span id="navPdfCount" class="pill">0</span></button>
+        <button class="tab-btn" data-tab="favorites">⭐ Favoris <span id="navFavCount" class="pill">0</span></button>
+      </nav>
+
+      <div class="topbar-actions">
+        <button id="btnOpenSync" class="btn btn-sync" title="Télécharger ou mettre à jour tout le site officiel (< 5 Mo)">
+          🔄 Synchroniser
+        </button>
+        <button id="btnOpenPhone" class="btn btn-ghost" title="Connecter Android / iPhone en Wi-Fi local sans Internet">
+          📱 Mobile / USB
+        </button>
+        <button id="btnTheme" class="btn btn-icon" title="Mode clair / sombre" aria-label="Basculer le thème">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bandeau d'etat de synchronisation initiale -->
+  <div id="seedBanner" class="seed-banner hidden">
+    <div class="seed-banner-inner">
+      <div>
+        <strong>📚 Base initiale officielle prête hors-ligne</strong>
+        <span id="seedBannerText">
+          Les règles d'orthographe (<em>an- / am- / an'</em>), les 16 règles de <em>Fanagasiana</em> et un extrait du <em>Voambolana</em> sont déjà chargés.
+          Cliquez sur <strong>Synchroniser</strong> (~30 sec, &lt; 5 Mo) pour télécharger 100 % des traités intégraux, des lettres A–Z et des PDF.
+        </span>
+      </div>
+      <button id="btnBannerSync" class="btn btn-primary btn-sm">Synchroniser tout le site (&lt; 5 Mo)</button>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- ==================== VUE 1 : RECHERCHE GLOBALE & ACCUEIL ==================== -->
+    <section id="view-search" class="view active">
+      <div class="hero-search-card">
+        <div class="hero-header">
+          <h2>Karoka manontolo · Recherche intégrale instantanée (FTS5)</h2>
+          <p>
+            Cherchez un mot malgache ou français, une règle d'orthographe (<code>an-trano</code>, <code>andavanandro</code>, <code>telefaonina</code>),
+            un terme scientifique (<code>fampimirana</code>, <code>mirarefy</code>) ou un concept grammatical (<code>matoanteny</code>, <code>vara</code>, <code>lafika</code>).
+          </p>
+        </div>
+
+        <div class="search-bar-wrap">
+          <input
+            type="search"
+            id="globalSearchInput"
+            class="search-input-lg"
+            placeholder="Ex. : adihevitra, am-pianarana, équation, matoanteny, école, kibushi..."
+            autocomplete="off"
+          >
+          <button id="btnClearGlobal" class="btn-clear hidden" title="Effacer">✕</button>
+        </div>
+
+        <div class="quick-chips">
+          <span class="chips-label">Accès direct :</span>
+          <button class="chip" data-open-doc="fomba-fanoratra">✍️ Règles an- / am- / an'</button>
+          <button class="chip" data-open-doc="fanagasiana-teny-vahiny">🌍 16 Règles Fanagasiana</button>
+          <button class="chip" data-jump-vocab="Teny siantifika">🔬 Teny siantifika (Maths/Physique)</button>
+          <button class="chip" data-jump-vocab="Fanabeazana">🎓 Voambolana Fanabeazana</button>
+          <button class="chip" data-open-doc="vahatra-78">🌿 Vahatra (78 thèmes)</button>
+        </div>
+      </div>
+
+      <!-- Statistiques rapides -->
+      <div id="statsCards" class="stats-grid">
+        <div class="stat-card" data-goto="vocab">
+          <div class="stat-value" id="statVocabTotal">0</div>
+          <div class="stat-label">Entrées Voambolana (MG ↔ FR)</div>
+          <div class="stat-sub" id="statVocabBreakdown">MG→FR : 0 · FR→MG : 0</div>
+        </div>
+        <div class="stat-card" data-goto="docs">
+          <div class="stat-value" id="statDocsTotal">0</div>
+          <div class="stat-label">Traités, Règles &amp; Articles</div>
+          <div class="stat-sub" id="statWordsTotal">0 mots indexés FTS5</div>
+        </div>
+        <div class="stat-card" data-goto="pdfs">
+          <div class="stat-value" id="statPdfsTotal">0</div>
+          <div class="stat-label">Documents PDF Officiels</div>
+          <div class="stat-sub" id="statSyncDate">Prêt hors-ligne</div>
+        </div>
+      </div>
+
+      <!-- Resultats de recherche globale -->
+      <div id="globalResultsWrap" class="global-results hidden">
+        <div class="results-col">
+          <div class="section-head">
+            <h3>📖 Résultats Voambolana (<span id="globalVocabHits">0</span>)</h3>
+            <button id="btnSeeAllVocabHits" class="link-btn">Voir dans le lexique →</button>
+          </div>
+          <div id="globalVocabList" class="vocab-list"></div>
+        </div>
+        <div class="results-col">
+          <div class="section-head">
+            <h3>🏛️ Résultats Traités &amp; Règles (<span id="globalDocHits">0</span>)</h3>
+          </div>
+          <div id="globalDocList" class="doc-cards-list"></div>
+        </div>
+      </div>
+
+      <!-- Apercu des rubriques quand le champ de recherche est vide -->
+      <div id="homeShowcase" class="home-showcase">
+        <div class="section-head">
+          <h3>🏛️ Bibliothèque académique du Foibe momba ny Teny</h3>
+          <button class="link-btn" data-switch-tab="docs">Ouvrir le lecteur complet →</button>
+        </div>
+        <div id="homeDocGrid" class="doc-grid"></div>
+      </div>
+    </section>
+
+    <!-- ==================== VUE 2 : VOAMBOLANA BILINGUE ==================== -->
+    <section id="view-vocab" class="view">
+      <div class="toolbar-card">
+        <div class="toolbar-row">
+          <div class="input-icon-wrap flex-1">
+            <input
+              type="search"
+              id="vocabSearchInput"
+              class="input-control"
+              placeholder="Filtrer dans le Voambolana (malgache, français ou définition)..."
+            >
+          </div>
+          <select id="vocabDomainSelect" class="select-control" aria-label="Domaine">
+            <option value="">Tous les domaines</option>
+          </select>
+          <div class="segmented" role="group" aria-label="Sens linguistique">
+            <button class="seg-btn active" data-dir="">Tous</button>
+            <button class="seg-btn" data-dir="mg-fr">MG → FR</button>
+            <button class="seg-btn" data-dir="fr-mg">FR → MG</button>
+          </div>
+        </div>
+        <div id="alphaBar" class="alpha-bar" aria-label="Index alphabétique"></div>
+      </div>
+
+      <div class="list-meta-bar">
+        <span id="vocabResultSummary">Chargement...</span>
+        <button id="btnLoadMoreVocab" class="btn btn-sm btn-ghost hidden">Afficher plus d'entrées</button>
+      </div>
+
+      <div id="vocabEntriesGrid" class="vocab-grid"></div>
+    </section>
+
+    <!-- ==================== VUE 3 : TRAITES & FITSIPIKA ==================== -->
+    <section id="view-docs" class="view">
+      <div class="docs-layout">
+        <aside class="docs-sidebar">
+          <div class="sidebar-controls">
+            <input
+              type="search"
+              id="docFilterInput"
+              class="input-control"
+              placeholder="Chercher dans les traités..."
+            >
+            <select id="docCategorySelect" class="select-control">
+              <option value="">Toutes les rubriques</option>
+            </select>
+          </div>
+          <div id="docsSidebarList" class="docs-sidebar-list"></div>
+        </aside>
+
+        <article class="doc-reader-card" id="docReaderPane">
+          <div class="reader-toolbar">
+            <div class="reader-meta">
+              <span id="readerCategory" class="cat-badge">Fitsipika</span>
+              <span id="readerSeedBadge" class="seed-tag hidden" title="Aperçu pré-embarqué : synchronisez pour charger la version complète du serveur">Pré-chargé</span>
+            </div>
+            <div class="reader-Controls">
+              <button id="btnFontDec" class="btn btn-sm btn-ghost" title="Réduire la taille du texte">A−</button>
+              <button id="btnFontInc" class="btn btn-sm btn-ghost" title="Agrandir la taille du texte">A+</button>
+              <button id="btnPrintDoc" class="btn btn-sm btn-ghost" title="Imprimer ou enregistrer en PDF">🖨️ Imprimer</button>
+              <button id="btnFavDoc" class="btn btn-sm btn-ghost" title="Ajouter aux favoris">☆ Favori</button>
+            </div>
+          </div>
+
+          <h2 id="readerTitle" class="reader-title">Sélectionnez un traité</h2>
+          <div id="readerAuthor" class="reader-author"></div>
+
+          <details id="readerTocWrap" class="reader-toc hidden" open>
+            <summary>📑 Sommaire du document</summary>
+            <ul id="readerTocList"></ul>
+          </details>
+
+          <div id="readerBody" class="reader-body"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== VUE 4 : PDF OFFICIELS ==================== -->
+    <section id="view-pdfs" class="view">
+      <div class="section-head">
+        <div>
+          <h2>📄 Documents PDF officiels du Foibe momba ny Teny</h2>
+          <p class="muted">Communiqués, règlements de concours (<em>Iray volan'ny Teny malagasy</em>) et publications PDF officielles stockés dans <code>fichiers/pdf/</code>.</p>
+        </div>
+        <button id="btnSyncFromPdf" class="btn btn-primary btn-sm">🔄 Télécharger / Vérifier les PDF</button>
+      </div>
+      <div id="pdfListGrid" class="pdf-grid"></div>
+      <div id="pdfViewerWrap" class="pdf-viewer-card hidden">
+        <div class="pdf-viewer-bar">
+          <strong id="pdfViewerTitle">Aperçu PDF</strong>
+          <div>
+            <a id="pdfDownloadLink" href="#" download class="btn btn-sm btn-ghost">⬇️ Enregistrer .pdf</a>
+            <button id="btnClosePdfViewer" class="btn btn-sm btn-ghost">✕ Fermer</button>
+          </div>
+        </div>
+        <iframe id="pdfFrame" title="Lecteur PDF hors-ligne" class="pdf-iframe"></iframe>
+      </div>
+    </section>
+
+    <!-- ==================== VUE 5 : FAVORIS ==================== -->
+    <section id="view-favorites" class="view">
+      <div class="section-head">
+        <div>
+          <h2>⭐ Vos Favoris d'étude hors-ligne</h2>
+          <p class="muted">Retrouvez rapidement vos termes du Voambolana et vos traités marqués d'une étoile ★.</p>
+        </div>
+      </div>
+      <div class="global-results">
+        <div class="results-col">
+          <h3>📖 Termes favoris</h3>
+          <div id="favVocabList" class="vocab-list"></div>
+        </div>
+        <div class="results-col">
+          <h3>🏛️ Traités &amp; Règles favoris</h3>
+          <div id="favDocList" class="doc-cards-list"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Barre de navigation mobile (Android / iPhone) -->
+  <nav class="mobile-bottom-nav" aria-label="Navigation mobile">
+    <button class="mob-nav-btn active" data-tab="search">🔍<span>Karoka</span></button>
+    <button class="mob-nav-btn" data-tab="vocab">📖<span>Voambolana</span></button>
+    <button class="mob-nav-btn" data-tab="docs">🏛️<span>Traités</span></button>
+    <button class="mob-nav-btn" data-tab="pdfs">📄<span>PDF</span></button>
+    <button class="mob-nav-btn" data-tab="favorites">⭐<span>Favoris</span></button>
+  </nav>
+
+  <!-- ==================== MODALE SYNCHRONISATION ==================== -->
+  <div id="syncModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="syncModalTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="syncModalTitle">🔄 Synchroniser depuis Akademia Malagasy</h3>
+        <button id="btnCloseSyncModal" class="btn-close" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="muted">
+          Télécharge directement depuis <code>https://teny-malagasy.akademia-malagasy.mg/</code> l'intégralité du portail
+          du <strong>Foibe momba ny Teny</strong> dans votre base locale <code>data/akademia_malagasy.db</code>.
+          <strong>Volume total très léger : moins de 5 Mo (~30 secondes) !</strong>
+        </p>
+
+        <div class="sync-options">
+          <label class="check-row">
+            <input type="checkbox" id="chkSyncVocab" checked>
+            <span><strong>Voambolana bilingues A–Z (MG ↔ FR)</strong> — Toutes les lettres malgaches et françaises + lexiques découverts</span>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" id="chkSyncTreatises" checked>
+            <span><strong>Grands traités, Règles &amp; Bibliographie</strong> — Pr. Siméon Rajaona, Pr. R.B. Rabenilaina, F.J. Andrianasolo, Pr. Raoelina Andriambololona, Tantara, Vaovao, Vahatra &amp; Bibliôgrafia (1880–2001)</span>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" id="chkSyncPdfs" checked>
+            <span><strong>Documents PDF officiels</strong> — <code>/pro/0.pdf</code> (2026), <code>/pro/oha.pdf</code> (2025) et tout nouveau PDF publié</span>
+          </label>
+        </div>
+
+        <div id="syncProgressBox" class="sync-progress-box hidden">
+          <div class="progress-head">
+            <span id="syncCurrentItem">Préparation...</span>
+            <strong id="syncPercent">0 %</strong>
+          </div>
+          <div class="progress-track">
+            <div id="syncBar" class="progress-fill" style="width: 0%"></div>
+          </div>
+          <div id="syncCounters" class="sync-counters"></div>
+          <div id="syncErrorBox" class="alert-error hidden"></div>
+          <pre id="syncLogs" class="sync-logs"></pre>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button id="btnStopSync" class="btn btn-danger hidden">⏹️ Arrêter</button>
+        <button id="btnStartSync" class="btn btn-primary">🚀 Lancer la synchronisation (&lt; 5 Mo)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODALE MOBILE & DISQUE EXTERNE ==================== -->
+  <div id="phoneModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="phoneModalTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="phoneModalTitle">📱 Utiliser sur Android, iPhone &amp; Disque Dur Externe</h3>
+        <button id="btnClosePhoneModal" class="btn-close" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="guide-block">
+          <h4>1. Sur Android &amp; iPhone (0 Ko d'Internet requis)</h4>
+          <p>Connectez votre PC et votre téléphone au même Wi-Fi (ou activez le <em>Point d'accès mobile</em> du téléphone sans même activer les données mobiles), puis ouvrez cette adresse dans Chrome ou Safari :</p>
+          <div id="lanUrlsList" class="lan-box"></div>
+          <p class="muted small">Astuce : dans Chrome (Android) ou Safari (iPhone → Partager), choisissez <strong>« Ajouter à l'écran d'accueil »</strong> pour l'installer comme une vraie application.</p>
+        </div>
+
+        <div class="guide-block">
+          <h4>2. Coexistence avec vos 4 autres applications hors-ligne</h4>
+          <p>Chaque pack utilise son propre port dédié — vous pouvez tous les ouvrir en même temps sur le même PC :</p>
+          <ul class="ports-list">
+            <li><code>8765</code> : MalagasyWord Offline</li>
+            <li><code>8766</code> : Pass-Éducation Offline</li>
+            <li><code>8767</code> : JW Malagasy Offline</li>
+            <li><code>8768</code> : Facebook Page Offline</li>
+            <li><strong><code>8769</code> : Akademia Malagasy Offline (Foibe momba ny Teny)</strong></li>
+          </ul>
+        </div>
+
+        <div class="guide-block">
+          <h4>3. Disque dur externe USB (Zéro installation Windows)</h4>
+          <p>Si <code>akademia-malagasy-offline</code> est placé à côté de <code>malagasyword-offline</code>, <code>pass-education-offline</code>, <code>jw-malagasy-offline</code> ou <code>facebook-offline</code>, <code>LANCER_WINDOWS.bat</code> copie automatiquement leur moteur Python portable en 2 secondes (<strong>0 Mo d'Internet</strong>). Fermez toujours la fenêtre noire avant de débrancher votre disque USB.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="26" fill="url(#bg)"/>
+  <rect x="10" y="10" width="108" height="108" rx="20" fill="none" stroke="#fde68a" stroke-width="2.5" opacity="0.55"/>
+  <!-- Livre ouvert academique -->
+  <path d="M26 40c14-5 28-3 38 4v48c-10-7-24-9-38-4V40z" fill="#fefcf7"/>
+  <path d="M102 40c-14-5-28-3-38 4v48c10-7 24-9 38-4V40z" fill="#fde68a"/>
+  <path d="M64 44v48" stroke="#991b1b" stroke-width="3"/>
+  <!-- Plume / Ravinala stylise -->
+  <path d="M64 20l6 14h-12l6-14z" fill="#fde68a"/>
+  <text x="64" y="110" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#ffffff">AKADEMIA</text>
+</svg>

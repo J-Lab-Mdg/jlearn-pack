@@ -1,0 +1,9 @@
+data/
+fichiers/
+runtime/
+__pycache__/
+*.pyc
+*.pyo
+*.db
+*.db-wal
+*.db-shm
