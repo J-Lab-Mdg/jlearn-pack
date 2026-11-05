@@ -66,6 +66,25 @@ La leçon élève peut exister, mais comme **résumé court** après le guide en
   - une courte trace élève ;
   - les ressources média : image scène scolaire, audio, QR code / lien.
 
+#### Décision complémentaire — ordre fiche / leçon / pratique
+
+L'utilisateur a corrigé le prototype précédent :
+
+- Les blocs **A à E** doivent être **dans la fiche de préparation**, jusqu'à l'évaluation, comme dans les autres matières.
+- Après la fiche, il y a la **leçon expliquée et illustrée**.
+- La leçon commence par **l'image de scène scolaire**, puis quelques phrases d'explication.
+- Ensuite :
+  1. **Observation de l'objet** avec image et flèches montrant les éléments à remarquer ;
+  2. **Les nuances** : trois gris, avec un nuancier que les élèves remplissent d'abord au crayon ;
+  3. **Le dessin de l'objet** :
+     - a. esquisse expliquée et illustrée geste par geste ;
+     - b. modelé / impression de volume expliqué et illustré geste par geste ;
+     - c. ombre portée et finitions ;
+     - d. comparaison / ajustement.
+- Le champ après la leçon s'appelle **PRATIQUE**, pas « Exercices ».
+- La pratique donne **un autre objet à dessiner** et des **liens vidéo YouTube** de tutoriel.
+- Terme pédagogique retenu : **modelé** pour l'impression de volume ; la feuille reste en 2D, les valeurs suggèrent la 3D.
+
 #### Questions ouvertes
 
 - Répartition exacte des 33 séances :

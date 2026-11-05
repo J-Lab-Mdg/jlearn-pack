@@ -89,7 +89,32 @@ Toujours vérifier le PE avant de proposer une répartition ou une démarche.
 - Médias : image scène scolaire + audio + lien vidéo quand pertinent.
 - Chaque sous-discipline doit avoir sa personnalité pédagogique.
 
-## 6. Ce qu'il ne faut pas faire
+## 6. Structure Arts T9 corrigée par l'utilisateur
+
+Pour une séance d'arts visuels / dessin :
+
+1. **Fiche de préparation complète d'abord** :
+   - A. ce que l'enseignant doit comprendre ;
+   - B. ce qu'il faut préparer ;
+   - C. déroulement dans le tableau à 6 colonnes ;
+   - D. erreurs fréquentes et aides ;
+   - E. évaluation de la production.
+2. **Leçon illustrée ensuite** :
+   - image de scène scolaire en premier ;
+   - courte explication ;
+   - observation de l'objet avec flèches ;
+   - nuances avec nuancier à remplir ;
+   - dessin de l'objet : esquisse, modelé, ombre portée, ajustement ;
+   - une image pour chaque geste important.
+3. **Pratique ensuite**, à la place de « Exercices » :
+   - autre objet à dessiner ;
+   - transfert de méthode ;
+   - liens vidéo YouTube ;
+   - courte trace élève possible.
+
+Ne pas disperser A-E après la fiche. Ne pas remplacer la pratique artistique par des exercices écrits par défaut.
+
+## 7. Ce qu'il ne faut pas faire
 
 - Ne pas produire un manuel uniquement « élève » si l'utilisateur demande un guide enseignant.
 - Ne pas mettre des exercices textuels partout en Arts.

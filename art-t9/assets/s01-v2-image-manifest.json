@@ -1,0 +1,72 @@
+{
+  "s01_v2_observation_annotee.png": {
+    "width": 1400,
+    "height": 945,
+    "role": "s01_v2_observation_annotee"
+  },
+  "s01_v2_nuances_a_remplir.png": {
+    "width": 1200,
+    "height": 710,
+    "role": "s01_v2_nuances_a_remplir"
+  },
+  "s01_v2_esquisse_1_reperes.png": {
+    "width": 1100,
+    "height": 880,
+    "role": "s01_v2_esquisse_1_reperes"
+  },
+  "s01_v2_esquisse_2_ouverture.png": {
+    "width": 1100,
+    "height": 880,
+    "role": "s01_v2_esquisse_2_ouverture"
+  },
+  "s01_v2_esquisse_3_cotes_base.png": {
+    "width": 1100,
+    "height": 880,
+    "role": "s01_v2_esquisse_3_cotes_base"
+  },
+  "s01_v2_esquisse_4_controle.png": {
+    "width": 1100,
+    "height": 880,
+    "role": "s01_v2_esquisse_4_controle"
+  },
+  "s01_v2_modele_1_zones.png": {
+    "width": 1100,
+    "height": 880,
+    "role": "s01_v2_modele_1_zones"
+  },
+  "s01_v2_modele_2_premieres_valeurs.png": {
+    "width": 1100,
+    "height": 880,
+    "role": "s01_v2_modele_2_premieres_valeurs"
+  },
+  "s01_v2_modele_3_degrade.png": {
+    "width": 1100,
+    "height": 880,
+    "role": "s01_v2_modele_3_degrade"
+  },
+  "s01_v2_ombre_portee_finitions.png": {
+    "width": 1100,
+    "height": 880,
+    "role": "s01_v2_ombre_portee_finitions"
+  },
+  "s01_v2_icone_video.png": {
+    "width": 160,
+    "height": 112,
+    "role": "s01_v2_icone_video"
+  },
+  "s01_v2_pratique_boite_1100.jpg": {
+    "width": 1100,
+    "height": 733,
+    "role": "nouvel objet à dessiner"
+  },
+  "qr_audio_art_t9_s01.png": {
+    "width": 360,
+    "height": 360,
+    "role": "QR audio"
+  },
+  "img_art_t9_s01_scene_scolaire_1100.jpg": {
+    "width": 1100,
+    "height": 733,
+    "role": "scène scolaire"
+  }
+}
