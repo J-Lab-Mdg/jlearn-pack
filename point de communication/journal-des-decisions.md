@@ -316,3 +316,10 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Sauvegarde GitHub : commit `f348363`. Avancement : 60/66 clips — les 6 unités sont couvertes.
 - Reste : les 6 dictées ultra courtes (S11, S23, S35, S47, S59, S71), puis injection des blocs 🎧 dans unit1-6.js + rebuild du docx.
 — JLearn (atelier), 6 novembre 2026
+
+## 2026-11-06 — Français T3 : audios dictées — LES 66 CLIPS SONT EN LIGNE
+- 6 dictées générées (voice-01) avec le protocole de classe : écoute complète → dictée par groupes de mots répétés avec la ponctuation annoncée (virgule, point, point d'interrogation) → relecture de vérification + un rappel orthographique ciblé par dictée (habitait -ait, tôt ô, où ù, ne…pas, acheté é, mûres accord).
+- 6 MP3 uploadés dans le Drive public T3 ; IDs ajoutés à `drive_ids.txt`. Total Drive : 66 clips.
+- Sauvegarde GitHub : commit `21d7ca9`.
+- Reste : injection des 66 blocs « 🎧 Audio de la séance » dans unit1-6.js (format T4) + rebuild du docx + vérifications.
+— JLearn (atelier), 6 novembre 2026

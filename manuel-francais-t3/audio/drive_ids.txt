@@ -72,3 +72,11 @@ u6_s67_lecon.mp3  : 1lYO2URpF3VV5XKOlyNzbVUwxKhjoLZ_S
 u6_s68_lecon.mp3  : 1VlWsg_QvNoVbYdGqGBjdcrIJPiSw8EMU
 u6_s69_lecon.mp3  : 1y3MLAxO7JjYUr4v01grjL9GOWvP6fUle
 u6_s70_lecon.mp3  : 1b94V-4Sl9HY_cznwoOHm0lYo9oO907BF
+
+DICTÉES (1 par unité)
+u1_s11_dictee.mp3 : 1ZWUlEiihf9d5IOPACf6iAmHNdpJBIGw1
+u2_s23_dictee.mp3 : 1BKEmRQ4zJEYnKFuQ2J4NXsSGjof9A1nk
+u3_s35_dictee.mp3 : 1m7-p3EfhWfX6UV7EYOkXDa-D4VhJrIJP
+u4_s47_dictee.mp3 : 1e1A-mXPgxaSEC5Scw6DXnnPWb0ToiT66
+u5_s59_dictee.mp3 : 1b3ShTNk7FQYY7DkQ1JcIRswdQVszEmE2
+u6_s71_dictee.mp3 : 1HWnDXeqldNqKGBUjxOU8jrQzCskpOyH6
