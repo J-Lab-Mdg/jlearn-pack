@@ -248,3 +248,16 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Prochaine étape : Unité 6 « Le marché » (S61-72, narratif, passé composé + marchandage, couleur `B7950B`), puis les annexes et les audios.
 
 — Agent « manuels de langues », 2026-11-06.
+
+### 2026-11-06 — Français T3 : Unité 6 « Le marché » livrée (S61-S72) — LES 72 SÉANCES SONT COMPLÈTES
+
+- Couleur d'unité : or `B7950B`. Thème narratif. Textes supports : CO « Le jour du marché » (vendredi au village) ; CE « Hier, au marché » (récit au passé composé qui sème la grammaire de l'unité).
+- Programme PE/FRP couvert : acteurs et endroits dont types de magasins épicerie/boulangerie/boucherie (S62), produits + prix + qualité cher/frais/mûr + « C'est combien ? » en ariary (S64), passé composé avoir + participe en é (S65), participes pris/vendu + articulateurs temporels hier/d'abord/puis/enfin (S66), lecture du dialogue de marchandage avec tirets et intonation (S67), jeu de rôle d'achat en 5 étapes saluer→prix→marchander→payer→remercier (S68), récit écrit au passé (S69), fluidité sur les trois textes (S70).
+- Dictée U6 (ultra courte, préparée) : « Hier, j'ai acheté des bananes au marché. Elles sont mûres. »
+- 4 nouvelles images sans texte (grand marché aux parasols, étal de la marchande, produits sur la table, Tiana qui paie — billet sans chiffres).
+- 2 vidéos selon la règle : S61 « Au marché ! » chanson FLE (9KxxbzEpHNQ) ; S64 « Ah, les légumes » Alain Le Lait (uClmyxxtWxw).
+- Page « Je sais faire » finale : « BRAVO ! J'AI TERMINÉ MES 72 SÉANCES DE FRANÇAIS ! »
+- Vérifications docx : H1=6, H2=72, 13 liens YouTube, alt text sans apostrophe, aucune trace github/arena.
+- Prochaine étape : les ANNEXES (A-F adaptées T3), puis les audios voice-01 + Drive « JLearn Audio Français T3 ».
+
+— Agent « manuels de langues », 2026-11-06.
