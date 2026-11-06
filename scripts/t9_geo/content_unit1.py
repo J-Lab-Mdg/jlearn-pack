@@ -36,6 +36,9 @@ LESSONS = [
     # ---------------- Séance 1 ----------------
     {
         'titre': "L'économie malgache : notions générales et indicateurs",
+        'video_titre': "Madagascar : la pauvreté en milieu rural",
+        'video_url': "https://www.youtube.com/watch?v=pDpoRbnpEyg",
+        'titre_court': "L'ÉCONOMIE",
         'objectif': "définir l'économie et ses indicateurs essentiels (PIB, PNB, population active) et situer les secteurs d'activité à Madagascar",
         'documentation': "Programme d'études officiel T9 — Géographie ; FRP T9, Thématique I ; données INSTAT et Banque mondiale.",
         'eleve': "Fara",
@@ -69,6 +72,9 @@ LESSONS = [
     # ---------------- Séance 2 ----------------
     {
         'titre': "Une économie sous-développée",
+        'video_titre': "Madagascar, les causes d'un échec",
+        'video_url': "https://www.youtube.com/watch?v=86IDAI1oFTU",
+        'titre_court': "LE SOUS-DÉVELOPPEMENT",
         'objectif': "expliquer les caractères d'une économie sous-développée et les illustrer par le cas de Madagascar",
         'documentation': "FRP T9, RES 1-b (Les caractéristiques de l'économie de Madagascar) ; données Banque mondiale.",
         'eleve': "Kanto",
@@ -101,6 +107,9 @@ LESSONS = [
     # ---------------- Séance 3 ----------------
     {
         'titre': "Une économie dépendante et extravertie",
+        'video_titre': "Madagascar, aide supplémentaire de 171,9 millions de dollars du FMI",
+        'video_url': "https://www.youtube.com/watch?v=YbfOOl4YGbM",
+        'titre_court': "LA DÉPENDANCE ÉCONOMIQUE",
         'objectif': "expliquer les formes de dépendance de l'économie malgache et le caractère extraverti de ses échanges",
         'documentation': "FRP T9, RES 1-b ; Organisation mondiale du commerce (OMC) ; Banque mondiale.",
         'eleve': "Tiana",
@@ -133,6 +142,9 @@ LESSONS = [
     # ---------------- Séance 4 ----------------
     {
         'titre': "La structure de l'économie malgache et le secteur informel",
+        'video_titre': "Secteur informel : les businessmen d'Analakely",
+        'video_url': "https://www.youtube.com/watch?v=j-egK4sNNSg",
+        'titre_court': "LE SECTEUR INFORMEL",
         'objectif': "distinguer les secteurs formel et informel de l'économie malgache et expliquer les causes du secteur informel",
         'documentation': "FRP T9, RES 1-c/1-d (Structure de l'économie malgache).",
         'eleve': "Hery",
@@ -165,6 +177,9 @@ LESSONS = [
     # ---------------- Séance 5 ----------------
     {
         'titre': "Les politiques économiques malgaches",
+        'video_titre': "Madagascar, conclusion d'un accord de principe avec le FMI",
+        'video_url': "https://www.youtube.com/watch?v=_40Io9zGTU0",
+        'titre_court': "LES POLITIQUES ÉCONOMIQUES",
         'objectif': "présenter les principales politiques économiques appliquées à Madagascar : le PAS, le MAP et l'IEM",
         'documentation': "FRP T9, RES 1-d (Les différentes politiques économiques malgaches).",
         'eleve': "Voahangi",
@@ -195,6 +210,9 @@ LESSONS = [
     # ---------------- Séance 6 ----------------
     {
         'titre': "Secteur primaire — l'agriculture : les types de cultures",
+        'video_titre': "Rizispiciculture à Madagascar",
+        'video_url': "https://www.youtube.com/watch?v=np3-g7IpwNM",
+        'titre_court': "LES TYPES DE CULTURES",
         'objectif': "distinguer les cultures vivrières, industrielles et d'exportation et localiser les grandes régions productrices",
         'documentation': "FRP T9, RES 1-f (Secteur primaire : l'agriculture à Madagascar).",
         'eleve': "Rivo",
@@ -225,6 +243,9 @@ LESSONS = [
     # ---------------- Séance 7 ----------------
     {
         'titre': "Secteur primaire — l'agriculture : modes de culture, problèmes et solutions",
+        'video_titre': "Madagascar : 50 % des récoltes de riz perdues en raison de l'absence des pluies",
+        'video_url': "https://www.youtube.com/watch?v=IOW5wSqfrZE",
+        'titre_court': "LES MODES DE CULTURE",
         'objectif': "décrire les modes de culture pratiques à Madagascar et proposer des solutions aux problèmes agricoles",
         'documentation': "FRP T9, RES 1-f/1-h (Modes de cultures variées).",
         'eleve': "Zo",
@@ -256,6 +277,9 @@ LESSONS = [
     # ---------------- Séance 8 ----------------
     {
         'titre': "Secteur primaire — l'élevage : zones et espèces",
+        'video_titre': "Le zébu, l'une des plus grandes richesses à Madagascar",
+        'video_url': "https://www.youtube.com/watch?v=VStdOmBchjI",
+        'titre_court': "LES ZONES D'ÉLEVAGE",
         'objectif': "localiser les grandes zones d'élevage de Madagascar et distinguer les principales espèces élevées",
         'documentation': "FRP T9, RES 1-k (Secteur primaire : élevage).",
         'eleve': "Mialy",
@@ -287,6 +311,9 @@ LESSONS = [
     # ---------------- Séance 9 ----------------
     {
         'titre': "Secteur primaire — l'élevage : types, modes et problèmes",
+        'video_titre': "À Madagascar, sur les sentiers de la guerre du zébu",
+        'video_url': "https://www.youtube.com/watch?v=W655BpGL-sw",
+        'titre_court': "L'ÉLEVAGE TRADITIONNEL",
         'objectif': "distinguer l'élevage traditionnel de l'élevage moderne et analyser les problèmes de l'élevage à Madagascar",
         'documentation': "FRP T9, RES 1-k (suite) : types, modes et problèmes de l'élevage.",
         'eleve': "Naina",
@@ -317,6 +344,9 @@ LESSONS = [
     # ---------------- Séance 10 ----------------
     {
         'titre': "Secteur primaire — la pêche",
+        'video_titre': "Pêche artisanale à Madagascar en pirogue à balancier",
+        'video_url': "https://www.youtube.com/watch?v=mb9btKPAVEs",
+        'titre_court': "LA PÊCHE",
         'objectif': "distinguer la pêche traditionnelle de la pêche industrielle et expliquer leur place dans l'économie malgache",
         'documentation': "FRP T9, RES 1-m/1-ô (La pêche à Madagascar).",
         'eleve': "Lova",
@@ -348,6 +378,9 @@ LESSONS = [
     # ---------------- Séance 11 ----------------
     {
         'titre': "Secteur primaire — l'exploitation de la forêt",
+        'video_titre': "Madagascar : la lutte contre la déforestation",
+        'video_url': "https://www.youtube.com/watch?v=MbIZ_Sw7Kxk",
+        'titre_court': "LA FORÊT",
         'objectif': "localiser les types de forêts malgaches, décrire leurs produits et proposer des solutions à la déforestation",
         'documentation': "FRP T9, RES 1-r (L'exploitation de la forêt à Madagascar).",
         'eleve': "Ndriana",
@@ -378,6 +411,9 @@ LESSONS = [
     # ---------------- Séance 12 ----------------
     {
         'titre': "Secteur secondaire — définition et types d'industries",
+        'video_titre': "À Madagascar, les petites mains (mal payées) de la mode française",
+        'video_url': "https://www.youtube.com/watch?v=1hvUdl9IkKA",
+        'titre_court': "L'INDUSTRIE",
         'objectif': "définir l'industrie, expliquer la sous-industrialisation de Madagascar et distinguer les types d'industries",
         'documentation': "FRP T9, RES 1-s (Secteur secondaire).",
         'eleve': "Fenitra",
@@ -408,6 +444,9 @@ LESSONS = [
     # ---------------- Séance 13 ----------------
     {
         'titre': "Secteur secondaire — répartition spatiale, structure des industries et artisanat",
+        'video_titre': "Madagascar : film Artisanat Antananarivo",
+        'video_url': "https://www.youtube.com/watch?v=-ZT810PD6qQ",
+        'titre_court': "LA RÉPARTITION INDUSTRIELLE",
         'objectif': "expliquer les facteurs de localisation des industries, leur structure et le rôle de l'artisanat",
         'documentation': "FRP T9, RES 1-s/1-v (Répartition spatiale et artisanat).",
         'eleve': "Ravo",
@@ -437,6 +476,9 @@ LESSONS = [
     # ---------------- Séance 14 ----------------
     {
         'titre': "Secteur secondaire — problèmes et solutions, l'opportunité des énergies renouvelables",
+        'video_titre': "Madagascar : l'arrivée de l'électricité a transformé mon village",
+        'video_url': "https://www.youtube.com/watch?v=dU6EHYYBPK0",
+        'titre_court': "LES ÉNERGIES RENOUVELABLES",
         'objectif': "analyser les problèmes du secteur secondaire malgache et proposer des solutions, dont les énergies renouvelables",
         'documentation': "FRP T9, RES 1-s (Problèmes et solutions du secteur secondaire).",
         'eleve': "Tahina",
@@ -466,6 +508,9 @@ LESSONS = [
     # ---------------- Séance 15 ----------------
     {
         'titre': "Secteur tertiaire — le commerce intérieur et extérieur",
+        'video_titre': "Madagascar — faire du port de Toamasina un poste commercial régional",
+        'video_url': "https://www.youtube.com/watch?v=3Ii-Q7cbiro",
+        'titre_court': "LE COMMERCE",
         'objectif': "distinguer le commerce intérieur du commerce extérieur et analyser leurs problèmes et solutions",
         'documentation': "FRP T9, RES 1-w/1-x (Commerce extérieur).",
         'eleve': "Soa",
@@ -497,6 +542,9 @@ LESSONS = [
     # ---------------- Séance 16 ----------------
     {
         'titre': "Secteur tertiaire — le tourisme et la télécommunication",
+        'video_titre': "Madagascar : le tourisme reprend son souffle après une année de turbulences",
+        'video_url': "https://www.youtube.com/watch?v=oHyjebxD07w",
+        'titre_court': "LE TOURISME",
         'objectif': "présenter les ressources touristiques de Madagascar et décrire le développement de la télécommunication",
         'documentation': "FRP T9, RES 1-x (Tourisme, télécommunication).",
         'eleve': "Miora",
@@ -528,6 +576,9 @@ LESSONS = [
     # ---------------- Séance 17 ----------------
     {
         'titre': "Secteur tertiaire — les réseaux et moyens de transport",
+        'video_titre': "Madagascar, train Manakara-Fianarantsoa",
+        'video_url': "https://www.youtube.com/watch?v=KfA4HO-72hg",
+        'titre_court': "LES TRANSPORTS",
         'objectif': "décrire les réseaux routier, ferroviaire, aérien et maritime de Madagascar et leur rôle dans l'économie",
         'documentation': "FRP T9, RES 1-x (Réseaux et moyens de transport).",
         'eleve': "Dera",
@@ -559,6 +610,9 @@ LESSONS = [
     # ---------------- Séance 18 ----------------
     {
         'titre': "Bilan — l'interdépendance des trois secteurs de l'économie malgache",
+        'video_titre': "La vanille de Madagascar en danger, une économie locale chamboulée !",
+        'video_url': "https://www.youtube.com/watch?v=ijYNRESYPJo",
+        'titre_court': "L'INTERDÉPENDANCE ÉCONOMIQUE",
         'objectif': "synthétiser les liens entre les secteurs primaire, secondaire et tertiaire de l'économie malgache",
         'documentation': "Synthèse de l'unité 1, à partir du PE et du FRP T9, Thématique I.",
         'eleve': "Tsiry",

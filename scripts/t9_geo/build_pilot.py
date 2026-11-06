@@ -14,6 +14,7 @@ import sys
 import docx
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from lxml import etree
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -54,7 +55,7 @@ unit_header_tpl = {role: clone(body_src[144 + i]) for i, role in enumerate(UNIT_
 # Seance (lecon complete) : indices 147-202 (56 elements), roles par offset
 LESSON_ROLE_BY_OFFSET = {
     0: 'seance_marker', 1: 'title_big', 2: 'fiche_label', 3: 'meta_table',
-    4: 'blank', 5: 'deroulement_table', 6: 'blank', 7: 'lesson_title',
+    4: 'blank', 5: 'deroulement_table', 6: 'blank_pagebreak', 7: 'lesson_title',
     8: 'blank', 9: 'schema_line', 10: 'blank', 11: 'observation_line',
     12: 'subtitle', 13: 'body_kw', 14: 'body_plain',
     23: 'exercices_header', 24: 'exercise_header', 25: 'instruction_italic',
@@ -187,6 +188,48 @@ def set_table_cell_text(table_el, row_idx, col_idx, lines):
         p.getparent().remove(p)
 
 
+def mk_video_paragraph(doc, label_text, url):
+    """Construit un paragraphe avec un lien hypertexte cliquable vers une
+    video (ex. YouTube), style identique a un hyperlien Word standard
+    (bleu, souligne), en reprenant la police/taille du corps de texte
+    (body_plain, Times New Roman) pour s'integrer visuellement a la leçon."""
+    r_id = doc.part.relate_to(url, RT.HYPERLINK, is_external=True)
+
+    p = clone(lesson_tpl['body_plain'])
+    runs = p.findall(Wr)
+    base_run = runs[0]
+    # retirer les runs additionnels eventuels (garder seulement le 1er comme gabarit)
+    for r in runs[1:]:
+        p.remove(r)
+    p.remove(base_run)
+
+    run = clone(base_run)
+    rpr = run.find(qn('w:rPr'))
+    if rpr is None:
+        rpr = OxmlElement('w:rPr')
+        run.insert(0, rpr)
+    color = rpr.find(qn('w:color'))
+    if color is None:
+        color = OxmlElement('w:color')
+        rpr.append(color)
+    color.set(qn('w:val'), '0563C1')
+    u = rpr.find(qn('w:u'))
+    if u is None:
+        u = OxmlElement('w:u')
+        rpr.append(u)
+    u.set(qn('w:val'), 'single')
+
+    t = run.find(qn('w:t'))
+    t.text = f"🎥 Pour aller plus loin : {label_text}"
+    t.set(qn('xml:space'), 'preserve')
+
+    hyperlink = OxmlElement('w:hyperlink')
+    hyperlink.set(qn('r:id'), r_id)
+    hyperlink.append(run)
+    p.append(hyperlink)
+    return p
+
+
 print("Fonctions utilitaires pretes")
 
 
@@ -230,7 +273,7 @@ def build_corrige_block(num, points, answers):
     return elems
 
 
-def build_seance_elements(idx, total, lesson):
+def build_seance_elements(idx, total, lesson, doc=None):
     """idx : numero de seance (1..18). Retourne la liste d'elements XML."""
     out = []
 
@@ -342,11 +385,11 @@ def build_seance_elements(idx, total, lesson):
         [""] + ["Corrigé de l'exercice 4 :"] + ex4_corr)
 
     out.append(der)
-    out.append(mk(lesson_tpl, 'blank'))
+    out.append(mk(lesson_tpl, 'blank_pagebreak'))
 
-    # --- corps de la lecon ---
+    # --- corps de la lecon (nouvelle page, comme dans le T8) ---
     lesson_title = mk(lesson_tpl, 'lesson_title')
-    set_single_run_text(lesson_title, lesson['titre'])
+    set_single_run_text(lesson_title, lesson['titre_court'])
     out.append(lesson_title)
     out.append(mk(lesson_tpl, 'blank'))
 
@@ -358,6 +401,10 @@ def build_seance_elements(idx, total, lesson):
     observation = mk(lesson_tpl, 'observation_line')
     set_single_run_text(observation, f"Document d'observation : {lesson['obs_title']}")
     out.append(observation)
+
+    if doc is not None and lesson.get('video_url'):
+        out.append(mk(lesson_tpl, 'blank'))
+        out.append(mk_video_paragraph(doc, lesson['video_titre'], lesson['video_url']))
 
     for sec_title, paragraphs in lesson['sections']:
         sub = mk(lesson_tpl, 'subtitle')
@@ -646,7 +693,7 @@ def main():
 
     # -- 18 seances de lecon --
     for i, lesson in enumerate(LESSONS, start=1):
-        for el in build_seance_elements(i, TOTAL, lesson):
+        for el in build_seance_elements(i, TOTAL, lesson, doc=doc):
             body.append(el)
 
     # -- revision (seance 19) --
