@@ -188,46 +188,92 @@ def set_table_cell_text(table_el, row_idx, col_idx, lines):
         p.getparent().remove(p)
 
 
-def mk_video_paragraph(doc, label_text, url):
-    """Construit un paragraphe avec un lien hypertexte cliquable vers une
-    video (ex. YouTube), style identique a un hyperlien Word standard
-    (bleu, souligne), en reprenant la police/taille du corps de texte
-    (body_plain, Times New Roman) pour s'integrer visuellement a la leçon."""
-    r_id = doc.part.relate_to(url, RT.HYPERLINK, is_external=True)
+class FootnoteContext:
+    """Encapsule l'etat necessaire pour ajouter des notes de bas de page
+    (word/footnotes.xml est un 'Part' generique en python-docx : il faut le
+    parser/reconstruire nous-memes, car il n'existe pas d'API haut niveau
+    pour les notes de bas de page)."""
 
-    p = clone(lesson_tpl['body_plain'])
-    runs = p.findall(Wr)
-    base_run = runs[0]
-    # retirer les runs additionnels eventuels (garder seulement le 1er comme gabarit)
-    for r in runs[1:]:
-        p.remove(r)
-    p.remove(base_run)
+    def __init__(self, doc):
+        self.part = doc.part.part_related_by(RT.FOOTNOTES)
+        self.root = etree.fromstring(self.part.blob)
+        existing_ids = [int(fn.get(qn('w:id'))) for fn in self.root.findall(qn('w:footnote'))]
+        self.next_id = max(existing_ids, default=0) + 1
 
-    run = clone(base_run)
-    rpr = run.find(qn('w:rPr'))
-    if rpr is None:
-        rpr = OxmlElement('w:rPr')
-        run.insert(0, rpr)
-    color = rpr.find(qn('w:color'))
-    if color is None:
-        color = OxmlElement('w:color')
-        rpr.append(color)
-    color.set(qn('w:val'), '0563C1')
-    u = rpr.find(qn('w:u'))
-    if u is None:
-        u = OxmlElement('w:u')
-        rpr.append(u)
-    u.set(qn('w:val'), 'single')
+    def add_video_footnote(self, label_text, url):
+        """Cree une nouvelle note de bas de page contenant un lien hypertexte
+        vers la video, et renvoie son w:id (a referencer depuis le corps)."""
+        fid = self.next_id
+        self.next_id += 1
+        r_id = self.part.relate_to(url, RT.HYPERLINK, is_external=True)
 
-    t = run.find(qn('w:t'))
-    t.text = f"🎥 Pour aller plus loin : {label_text}"
-    t.set(qn('xml:space'), 'preserve')
+        footnote = OxmlElement('w:footnote')
+        footnote.set(qn('w:id'), str(fid))
+        p = OxmlElement('w:p')
+        ppr = OxmlElement('w:pPr')
+        pstyle = OxmlElement('w:pStyle')
+        pstyle.set(qn('w:val'), 'FootnoteText')
+        ppr.append(pstyle)
+        p.append(ppr)
 
-    hyperlink = OxmlElement('w:hyperlink')
-    hyperlink.set(qn('r:id'), r_id)
-    hyperlink.append(run)
-    p.append(hyperlink)
-    return p
+        ref_run = OxmlElement('w:r')
+        ref_rpr = OxmlElement('w:rPr')
+        ref_style = OxmlElement('w:rStyle')
+        ref_style.set(qn('w:val'), 'FootnoteReference')
+        ref_rpr.append(ref_style)
+        ref_run.append(ref_rpr)
+        ref_run.append(OxmlElement('w:footnoteRef'))
+        p.append(ref_run)
+
+        sep_run = OxmlElement('w:r')
+        sep_t = OxmlElement('w:t')
+        sep_t.text = ' '
+        sep_t.set(qn('xml:space'), 'preserve')
+        sep_run.append(sep_t)
+        p.append(sep_run)
+
+        hyperlink = OxmlElement('w:hyperlink')
+        hyperlink.set(qn('r:id'), r_id)
+        link_run = OxmlElement('w:r')
+        link_rpr = OxmlElement('w:rPr')
+        link_style = OxmlElement('w:rStyle')
+        link_style.set(qn('w:val'), 'Hyperlink')
+        link_rpr.append(link_style)
+        link_run.append(link_rpr)
+        link_t = OxmlElement('w:t')
+        link_t.text = f"🎥 Pour aller plus loin : {label_text}"
+        link_t.set(qn('xml:space'), 'preserve')
+        link_run.append(link_t)
+        hyperlink.append(link_run)
+        p.append(hyperlink)
+
+        footnote.append(p)
+        self.root.append(footnote)
+        return fid
+
+    def save(self):
+        self.part._blob = etree.tostring(
+            self.root, xml_declaration=True, encoding='UTF-8', standalone=True)
+
+
+def append_footnote_marker(title_p_el, footnote_id):
+    """Ajoute, a la fin d'un paragraphe de titre (ex. le titre rouge de la
+    leçon), un appel de note en exposant (meme couleur/gras que le titre)."""
+    run = OxmlElement('w:r')
+    rpr = OxmlElement('w:rPr')
+    rstyle = OxmlElement('w:rStyle')
+    rstyle.set(qn('w:val'), 'FootnoteReference')
+    rpr.append(rstyle)
+    color = OxmlElement('w:color')
+    color.set(qn('w:val'), 'C00000')
+    rpr.append(color)
+    b = OxmlElement('w:b')
+    rpr.append(b)
+    run.append(rpr)
+    ref = OxmlElement('w:footnoteReference')
+    ref.set(qn('w:id'), str(footnote_id))
+    run.append(ref)
+    title_p_el.append(run)
 
 
 print("Fonctions utilitaires pretes")
@@ -273,7 +319,7 @@ def build_corrige_block(num, points, answers):
     return elems
 
 
-def build_seance_elements(idx, total, lesson, doc=None):
+def build_seance_elements(idx, total, lesson, footnotes=None):
     """idx : numero de seance (1..18). Retourne la liste d'elements XML."""
     out = []
 
@@ -390,6 +436,9 @@ def build_seance_elements(idx, total, lesson, doc=None):
     # --- corps de la lecon (nouvelle page, comme dans le T8) ---
     lesson_title = mk(lesson_tpl, 'lesson_title')
     set_single_run_text(lesson_title, lesson['titre_court'])
+    if footnotes is not None and lesson.get('video_url'):
+        fid = footnotes.add_video_footnote(lesson['video_titre'], lesson['video_url'])
+        append_footnote_marker(lesson_title, fid)
     out.append(lesson_title)
     out.append(mk(lesson_tpl, 'blank'))
 
@@ -401,10 +450,6 @@ def build_seance_elements(idx, total, lesson, doc=None):
     observation = mk(lesson_tpl, 'observation_line')
     set_single_run_text(observation, f"Document d'observation : {lesson['obs_title']}")
     out.append(observation)
-
-    if doc is not None and lesson.get('video_url'):
-        out.append(mk(lesson_tpl, 'blank'))
-        out.append(mk_video_paragraph(doc, lesson['video_titre'], lesson['video_url']))
 
     for sec_title, paragraphs in lesson['sections']:
         sub = mk(lesson_tpl, 'subtitle')
@@ -646,6 +691,7 @@ def build_exam_elements(idx, total, unit, lessons):
 def main():
     doc = docx.Document(SRC)
     body = doc.element.body
+    footnotes = FootnoteContext(doc)
 
     # Repartir d'un document propre : on garde uniquement sectPr (fin de
     # document) et on retire tout le contenu de l'ancien manuel T8.
@@ -693,7 +739,7 @@ def main():
 
     # -- 18 seances de lecon --
     for i, lesson in enumerate(LESSONS, start=1):
-        for el in build_seance_elements(i, TOTAL, lesson, doc=doc):
+        for el in build_seance_elements(i, TOTAL, lesson, footnotes=footnotes):
             body.append(el)
 
     # -- revision (seance 19) --
@@ -708,6 +754,7 @@ def main():
     if sect_pr is not None:
         body.append(sect_pr)
 
+    footnotes.save()
     doc.save(OUT)
     print("Document enregistré :", OUT)
     strip_unused_media(str(OUT))
