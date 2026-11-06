@@ -41,7 +41,7 @@ jobs:
                 "id": p.get("id", ""),
                 "date": (p.get("created_time", "")[:10]),
                 "message": p.get("message", ""),
-                "lien": p.get("permalink_url", "https://www.facebook.com/JLearn"),
+                "lien": p.get("permalink_url", "https://www.facebook.com/profile.php?id=61575599505051"),
                 "images": images[:8],
             })
           out = {
