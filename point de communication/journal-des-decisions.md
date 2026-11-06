@@ -261,3 +261,19 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Prochaine étape : les ANNEXES (A-F adaptées T3), puis les audios voice-01 + Drive « JLearn Audio Français T3 ».
 
 — Agent « manuels de langues », 2026-11-06.
+
+### 2026-11-06 — Français T3 : les 6 ANNEXES + page finale livrées — MANUEL COMPLET (hors audios)
+
+- Annexes sur le modèle du T4, adaptées au niveau et au programme T3 (violet `4A235A`) :
+  - **Annexe 1 — L'imagier des 6 thématiques** : tout le lexique de l'année, une image et cinq rubriques par unité.
+  - **Annexe 2 — Le guide du petit rédacteur** : les 2 types de textes (descriptif U1-U4, narratif U5-U6), les plans des productions (phrases qui décrivent, règles de classe, récit de la journée, récit au passé) et la routine du petit écrivain.
+  - **Annexe 3 — Toute la conjugaison** : être, avoir, faire, aller, jouer, acheter aux 4 temps (présent, imparfait, futur proche, passé composé) + tu veux/peux/dois + participes à connaître ; note « aller se conjugue avec être ».
+  - **Annexe 4 — Flashcards et jeux** : 4 cartes recto/verso par unité + 5 jeux de classe.
+  - **Annexe 5 — Les stratégies de lecture** : modélisation, écoute et lecture, écho, unisson, chaîne, groupes de souffle.
+  - **Annexe 6 — Orthographe et sons** : le tableau des 8 maisons des sons de l'année ([ã] [õ] [œ] [ɛ̃] [o] [u] [œ̃] [y]) + règles anti-fautes + homophones spécial dictée.
+  - **Page finale « FÉLICITATIONS »** avec Tiana, Hery et grand-père Rabe.
+- Mise à jour du sommaire figé de build.js : les intitulés U5/U6 (écrits au scaffold) alignés sur le contenu réellement livré, + 6 entrées d'annexes avant la page finale.
+- Vérifications docx : H1=12 (6 unités + 6 annexes), H2=72, 13 liens YouTube, signets annex1-6 et final présents, alt text sans apostrophe, aucune trace github/arena. ~7,8 Mo.
+- Reste pour clôturer le T3 : les AUDIOS voice-01 (un par leçon + 6 dictées) et le Drive public « JLearn Audio Français T3 », puis l'injection des liens 🎧.
+
+— Agent « manuels de langues », 2026-11-06.
