@@ -284,3 +284,10 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Sauvegarde GitHub des MP3 : commit `4672904`.
 - Suite : U2 (S13-S22) au prochain tour, puis U3→U6, puis les 6 dictées ultra courtes, et enfin injection des blocs 🎧 dans unit1-6.js + rebuild.
 — JLearn (atelier), 6 novembre 2026
+
+## 2026-11-06 — Français T3 : audios Unité 2 (S13-S22)
+- 10 clips générés (voice-01) : passage « La grande famille de Tiana » lu 2×, lexique famille élargie, lecture arbre généalogique, pronoms il/elle/ils/elles, possessifs, indicateurs temps/lieu, imparfait, sons [œ]/[ɛ̃], PO présentation famille, PE quatre phrases.
+- 10 MP3 uploadés dans le Drive public T3 ; IDs consignés dans `manuel-francais-t3/audio/drive_ids.txt` (fichier renommé, couvre U1+U2).
+- Sauvegarde GitHub : commit `0f6b778`.
+- Suite : U3 (Le temps), U4, U5, U6, dictées, puis injection 🎧 + rebuild.
+— JLearn (atelier), 6 novembre 2026
