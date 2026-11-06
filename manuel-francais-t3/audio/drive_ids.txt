@@ -24,3 +24,15 @@ u2_s19_lecon.mp3  : 1T4qYVUi41yqNXiLIBLsFjpIuk5zBjMUl
 u2_s20_lecon.mp3  : 1wgSA_3g3TA4wuhK92XmWpu7HQMyt1PP0
 u2_s21_lecon.mp3  : 17RCKHTwEZt5HV4cJ7acYGvuR7v4iFHfr
 u2_s22_lecon.mp3  : 1QJMjbCut9GX7yDk5JnozQhPv1ID4nyGr
+
+UNITÉ 3 — LE TEMPS
+u3_s25_ecoute.mp3 : 1VjCl3DhjKyFtq20XxupvRW4d0jSg24zw
+u3_s26_lecon.mp3  : 13lQJ7qLkMV8JqNdLmpKWH4Y8uQzGuyzs
+u3_s27_lecon.mp3  : 1BktAsz9b1a26C3jN8-2_nkDiDGasGL2V
+u3_s28_lecon.mp3  : 13vQAt0N9VX84P8aKDD7bRd5hkKt1K3ug
+u3_s29_lecon.mp3  : 1e-Vq-vrxeVW4NfFgLfl0NW_a8dOAX5jL
+u3_s30_lecon.mp3  : 1FZu46btQfMD8_EhTotpipNYkIYT8G1l-
+u3_s31_lecon.mp3  : 19g2bxPRbXdj2Tgd1WR0rQ9l_HuGoss3m
+u3_s32_lecon.mp3  : 1Y4sTBvmoqkeIDGbQS9DwaWK5tRBnwtr9
+u3_s33_lecon.mp3  : 1FDbCpvzrAOSPmT4s5N0LvbF6zRIwYTr9
+u3_s34_lecon.mp3  : 1qtp2LmDYH8NCxX0DodrYCu7bdRrtcbEV

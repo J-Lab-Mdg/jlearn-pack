@@ -291,3 +291,9 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Sauvegarde GitHub : commit `0f6b778`.
 - Suite : U3 (Le temps), U4, U5, U6, dictées, puis injection 🎧 + rebuild.
 — JLearn (atelier), 6 novembre 2026
+
+## 2026-11-06 — Français T3 : audios Unité 3 (S25-S34)
+- 10 clips générés (voice-01) : « La journée de Hery » lu 2×, lexique moments/activités, lecture « Du matin au soir », genre féminin/masculin, ordre des mots (petit train), tu veux/peux/dois + pluriel -er, sons [o]/[u], PO raconter sa journée, PE plan 4 marches, fluidité mots pièges.
+- 10 MP3 uploadés dans le Drive public T3 ; IDs ajoutés à `drive_ids.txt`.
+- Sauvegarde GitHub : commit `83794be`. Avancement : 30/66 clips.
+— JLearn (atelier), 6 novembre 2026
