@@ -839,6 +839,18 @@
     "width": 1400,
     "height": 920
   },
+  "manual/qr/audio_folder.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/audio_zip.png": {
+    "width": 360,
+    "height": 360
+  },
+  "manual/qr/official_jlearn.png": {
+    "width": 360,
+    "height": 360
+  },
   "manual/qr/s01_audio.png": {
     "width": 360,
     "height": 360

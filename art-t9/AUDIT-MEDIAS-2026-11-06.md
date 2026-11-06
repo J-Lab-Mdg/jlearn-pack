@@ -143,3 +143,15 @@ Contrôles clés :
 - 20 URLs YouTube distinctes / 22 insertions.
 - 1 `sectPr`, Times New Roman, taille minimale 13 pt, 36 tables 6 colonnes, signets / liens internes cohérents.
 - Absence des IDs YouTube explicitement rejetés.
+
+
+## 6. Lot V3 accepté — exécution du 2026-11-06
+
+- **Audio Drive** : 36/36 MP3 publics dans le dossier J-Learn ; ZIP en un clic. Les 36 QR audio + QR ZIP/dossier/officiel ont été régénérés puis **décodés réellement** (`validate_qr.js`, 39/39). Aucun lien audio GitHub raw restant.
+- **Sans smartphone** : 30 transcriptions issues du texte source des clips ; 6 versions texte équivalentes pour les consignes pilotes/S1. Note explicite pour s11 (décalage audio signalé/accepté).
+- **Pédagogie** : 36 grilles avec observable unique par critère ; 33 jeux de variantes ; différenciation/remédiation ; timing I/II/III + sous-étapes II ; checklist matériel/sécurité ; trace élève ; tâche courte de transfert ; ancrage local ; progression par compétences.
+- **Navigation / front matter** : authenticité et droits, avant-propos, mode d’emploi, sommaire interactif par signets, index des évaluations, glossaire, sources, contrôle terrain, footer avec pagination. Pas de champ TOC natif.
+- **Vidéos** : 20 URLs retenues. Repères honnêtes : 2 bornes de chapitre vérifiées (AVdNEXSqRE4 02:05–05:05 ; Z7_X_9jO3fc début 01:42), 8 vidéos courtes complètes, 10 repères de contenu à sélectionner par l’enseignant. Vignette de liaison + question + repli hors ligne ; pas de lecteur vidéo embarqué dans le .docx.
+- **Visuels** : S02/S09/S10 harmonisés (tenue enseignante bleue/verte, sans blouse blanche) ; pastilles S1 corrigées a/b/c/d ; alt-textes descriptifs (348 attributs descr).
+- **Validation technique** : `Art_T9_J-Learn.docx` = 15787029 octets ; `validate_docx.py` PASS (1 sectPr, min 13 pt, Times New Roman, 36 leçons/pratiques, 33 séances/grilles, 36 liens audio Drive, 0 GitHub raw, 36 tables 6 colonnes, signets/ancres cohérents) ; `validate_qr.js` PASS.
+- **Limites** : pas de rendu Word/PDF/LibreOffice dans l’environnement ; pagination, césures et impression restent à vérifier sur le poste enseignant (annexe « Contrôle terrain »). Aucun visionnage intégral des vidéos revendiqué.

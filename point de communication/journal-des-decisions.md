@@ -186,3 +186,10 @@ L'utilisateur a validé la méthode proposée :
 - Audit des remarques « Claude » : majorité confirmée sur le docx courant (coquilles, gabarits, notes internes, S1/S20, sommaire charnières, alt-textes, liens GitHub). Certaines remarques design sont partielles ou non vérifiables ici (rendu LibreOffice/Word, pagination exacte) ; la répétition de scènes est déjà corrigée (36 scènes uniques).
 - Drive commencé : dossier `J-Learn — Audios Arts T9` créé et public ; ZIP `Art_T9_Audios_J-Learn.zip` uploadé et public ; 32/36 MP3 uploadés. Limite d’upload atteinte : restent s30, s31, s32, s33 à uploader après pause (≥ 15 s) au prochain tour.
 - Correctifs sources appliqués sans rebuild final : coquille S7/S18, titres « ceci : », synthèses « Donc, » + minuscule, retrait note police/type d’examen, gabarit « voir les six sous-étapes », support générique, double libellés I/II/III, sommaire charnières, S20 écoute silencieuse + question son long + synthèse élargie.
+
+
+### 2026-11-06 — Exécution du lot d’améliorations accepté (V3)
+- Arbitrage utilisateur appliqué : OUI aux points 2–13, 17, 19 ; NON au document élève séparé (15) et aux bilats/portfolio (18) ; MODIFIÉ : audios sur Drive (1), ZIP un clic (16), convention crédits des manuels de géographie (14).
+- Livrable régénéré : `art-t9/output/Art_T9_J-Learn.docx`. Audios Drive 36/36 + ZIP public ; QR décodés 39/39 ; validateur docx PASS.
+- Ajouts : grille observable unique, timing réel, checklist, différenciation, trace, variantes, ancrage local, progression, glossaire, sources, navigation/signets, footer pages, alt-textes, transcription/version texte audio.
+- Honnêteté : vidéos = liens/repères, pas lecteur embarqué ; 10 repères restent à sélectionner par l’enseignant ; pas de rendu Word complet possible ici ; pas de revendication « toutes scènes IA » ni « vidéos intégralement visionnées ».

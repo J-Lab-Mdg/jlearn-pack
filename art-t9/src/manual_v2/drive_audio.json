@@ -36,9 +36,11 @@
     "s28a": "1NxlgBb98mWlzuiF_fMEy6MvbWIq8EZzu",
     "s28b": "1kjBC_A4DUpZVeYKQQfZsAucglgBJvWG_",
     "s29": "199tDIhmoeCswzjJSKi0AyMBXisNJlCa-",
-    "s30": null,
-    "s31": null,
-    "s32": null,
-    "s33": null
-  }
+    "s30": "1WpVFzMVTcs_Cf_kZtHBbeOxN32bUWRB-",
+    "s31": "1w8Uqk7ngLN_S0QcK3Oh6kknG5c3Wjy8f",
+    "s32": "1iESiDlz7kjGg54qrdfccRt7to7CznJUm",
+    "s33": "14SZpMSuKOSM99c_nW0Km4hqwZkS8zr8b"
+  },
+  "public": true,
+  "individual_url_template": "https://drive.google.com/file/d/{id}/view?usp=sharing"
 }

@@ -1,11 +1,13 @@
 // Schémas pédagogiques déterministes v3 : consigne complète, dessins annotés, étapes distinctes.
 const fs=require('fs'), path=require('path'), sharp=require('sharp'), QR=require('qrcode');
 const {parts}=require('./curriculum');
+const drive=require('./drive_audio.json');
+const {note:videoNote}=require('./video_notes');
 const A=path.join(__dirname,'../../assets');
-const D=path.join(A,'manual/diagrams'), Q=path.join(A,'manual/qr');
-fs.mkdirSync(D,{recursive:true}); fs.mkdirSync(Q,{recursive:true});
-const BRANCH='arena/3f402b0e-jlearn-pack';
-const RAW=`https://raw.githubusercontent.com/J-Lab-Mdg/jlearn-pack/${BRANCH}/art-t9/assets/`;
+const D=path.join(A,'manual/diagrams'), Q=path.join(A,'manual/qr'), V=path.join(A,'manual/video_cards');
+fs.mkdirSync(D,{recursive:true}); fs.mkdirSync(Q,{recursive:true}); fs.mkdirSync(V,{recursive:true});
+const audioUrlFor=id=>drive.individual_url_template.replace('{id}',drive.files[id]);
+const OFFICIAL_URL='https://web.facebook.com/profile.php?id=61575599505051';
 const C={blue:'#1F4E79',green:'#2E7D32',red:'#C0392B',grey:'#555',light:'#F4F8FB',yellow:'#F1C40F',orange:'#E67E22',purple:'#8E44AD',cyan:'#16A085',brown:'#8B5A2B'};
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 function wrap(s,max=40){const words=String(s).split(/\s+/);const lines=[];let line='';for(const w of words){if((line+' '+w).trim().length>max){if(line)lines.push(line);line=w;}else line=(line+' '+w).trim();}if(line)lines.push(line);return lines;}
@@ -135,6 +137,15 @@ async function png(name,title,sub,phrase,body,color){const svg=frame(title,sub,p
  p.steps.forEach((s,i)=>{if(!s.img)jobs.push([`${p.id}_step_${'abcd'[i]}`,`${'abcd'[i]}. ${s.title}`,s.phrase,'abcd'[i]]);});
  if(!p.practice.img)jobs.push([`${p.id}_practice`,p.practice.title,p.practice.consigne,'practice']);
  for(const [name,title,phrase,stage] of jobs){await png(name,title,sub,phrase,draw(p,stage),color);count++;}
- const audioUrl=RAW+(p.audio.startsWith('manual/')?p.audio:p.audio.startsWith('pilots/')?p.audio:p.audio);
- await QR.toFile(path.join(Q,`${p.id}_audio.png`),audioUrl,{width:360,margin:1});}
- const manifest={};for(const f of fs.readdirSync(D).filter(f=>f.endsWith('.png'))){const m=await sharp(path.join(D,f)).metadata();manifest['manual/diagrams/'+f]={width:m.width,height:m.height};}for(const f of fs.readdirSync(Q).filter(f=>f.endsWith('.png')))manifest['manual/qr/'+f]={width:360,height:360};fs.writeFileSync(path.join(D,'manifest.json'),JSON.stringify(manifest,null,2));console.log('Schémas v3 PNG :',count,'; QR audio :',parts.length);})();
+ await QR.toFile(path.join(Q,`${p.id}_audio.png`),audioUrlFor(p.id),{width:360,margin:1});}
+ await QR.toFile(path.join(Q,'audio_zip.png'),drive.zip_url,{width:360,margin:1});
+ await QR.toFile(path.join(Q,'audio_folder.png'),drive.folder_url,{width:360,margin:1});
+ await QR.toFile(path.join(Q,'official_jlearn.png'),OFFICIAL_URL,{width:360,margin:1});
+ const videoIds=[...new Set(parts.flatMap(p=>(p.videos||[]).map(v=>v.url.split('v=')[1])))];
+ for(const id of videoIds){const n=videoNote(id);if(!n)continue;
+   const title=wrap(n.title,30).slice(0,3).map((l,i)=>`<text x="36" y="${86+i*40}" font-family="DejaVu Sans, Arial" font-size="32" font-weight="700" fill="#fff">${esc(l)}</text>`).join('');
+   const rep=wrap(n.rep,52).slice(0,2).map((l,i)=>`<text x="36" y="${236+i*32}" font-family="DejaVu Sans, Arial" font-size="23" fill="#FFF9E6">${esc(l)}</text>`).join('');
+   const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360"><rect width="640" height="360" rx="18" fill="#1F4E79"/><text x="36" y="40" font-family="DejaVu Sans, Arial" font-size="20" font-weight="700" fill="#BDD7EE">VIDÉO — LIEN / REPÈRE</text>${title}<text x="36" y="196" font-family="DejaVu Sans, Arial" font-size="21" fill="#BDD7EE">${esc(n.channel||'Chaîne YouTube')}</text>${rep}<circle cx="560" cy="86" r="42" fill="#E67E22"/><path d="M548 64 L584 86 L548 108 Z" fill="#fff"/><text x="36" y="326" font-family="DejaVu Sans, Arial" font-size="20" fill="#EAF2F8">Ouvrir le lien dans le manuel · sélectionner l’extrait avant la classe</text></svg>`;
+   fs.writeFileSync(path.join(V,id+'.svg'),svg);await sharp(Buffer.from(svg)).png({palette:true,quality:92,effort:10,compressionLevel:9}).toFile(path.join(V,id+'.png'));
+ }
+ const manifest={};for(const f of fs.readdirSync(D).filter(f=>f.endsWith('.png'))){const m=await sharp(path.join(D,f)).metadata();manifest['manual/diagrams/'+f]={width:m.width,height:m.height};}for(const f of fs.readdirSync(Q).filter(f=>f.endsWith('.png')))manifest['manual/qr/'+f]={width:360,height:360};fs.writeFileSync(path.join(D,'manifest.json'),JSON.stringify(manifest,null,2));console.log('Schémas v3 PNG :',count,'; QR audio Drive :',parts.length,'; QR zip/dossier/officiel : 3 ; vignettes vidéo :',videoIds.length);})();
