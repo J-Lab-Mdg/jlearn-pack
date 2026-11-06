@@ -1,0 +1,63 @@
+# Synchronise les publications de la page Facebook J-Learn vers site/data/posts.json
+# Page : https://www.facebook.com/profile.php?id=61575599505051  →  FB_PAGE_ID = 61575599505051
+# Nécessite 2 secrets dans le dépôt : FB_PAGE_ID et FB_PAGE_TOKEN (jamais en clair dans le code)
+name: Sync publications Facebook
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # toutes les heures
+  workflow_dispatch:      # lancement manuel
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Récupérer les publications Facebook (Graph API)
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: |
+          curl -s "https://graph.facebook.com/v21.0/${FB_PAGE_ID}/posts?fields=message,created_time,permalink_url,attachments{media{image{src}},subattachments{media{image{src}}}}&limit=25&access_token=${FB_PAGE_TOKEN}" -o /tmp/fb.json
+          python3 - <<'PY'
+          import json, datetime
+          raw = json.load(open('/tmp/fb.json'))
+          posts = []
+          for p in raw.get('data', []):
+            images = []
+            atts = p.get('attachments', {}).get('data', [])
+            for a in atts:
+                img = (a.get('media') or {}).get('image') or {}
+                if img.get('src'): images.append(img['src'])
+                for sub in (a.get('subattachments') or {}).get('data', []):
+                    simg = (sub.get('media') or {}).get('image') or {}
+                    if simg.get('src'): images.append(simg['src'])
+            posts.append({
+                "id": p.get("id", ""),
+                "date": (p.get("created_time", "")[:10]),
+                "message": p.get("message", ""),
+                "lien": p.get("permalink_url", "https://www.facebook.com/JLearn"),
+                "images": images[:8],
+            })
+          out = {
+            "genere_le": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+            "source": "Page Facebook J-Learn (synchronisation automatique via GitHub Actions)",
+            "posts": posts,
+          }
+          with open('site/data/posts.json', 'w', encoding='utf-8') as f:
+              json.dump(out, f, ensure_ascii=False, indent=1)
+          print(f"{len(posts)} publications synchronisées")
+          PY
+
+      - name: Commit si changement
+        run: |
+          git config user.name "jlearn-sync-bot"
+          git config user.email "bot@j-lab.mdg"
+          git add site/data/posts.json
+          git diff --cached --quiet || git commit -m "chore: synchro publications Facebook [skip ci]"
+          git push
