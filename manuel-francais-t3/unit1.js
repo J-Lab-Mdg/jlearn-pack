@@ -184,7 +184,7 @@ function lessonS1() {
     p("", { after: 40 }),
     pr([run("\ud83c\udfac POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
         run("je regarde la chanson \u00ab Au petit déjeuner \u00bb (Alain Le Lait) : ", { italic: true }),
-        run("https://www.youtube.com/watch?v=Ixl8hRHIdzg", { color: "1F618D", size: 22 })], { after: 60 }),
+        run("https://www.youtube.com/watch?v=d5U4kDDBCVA", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 

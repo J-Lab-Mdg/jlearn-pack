@@ -330,3 +330,9 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Vérifications : apos=0, rootKey=0, github=0, arena=0, H1=12, H2=72, youtube=13, drive=66, 🎧=66, descr=80. Échantillons contrôlés (S1/S10/S70/dictée U1) : chaque lien est dans la bonne leçon.
 - Le manuel Français T3 est COMPLET : 72 séances, 6 annexes, 13 vidéos, 66 audios Drive public (« JLearn Audio Français T3 »), standard Word intégré.
 — JLearn (atelier), 6 novembre 2026
+
+## 2026-11-06 — Français T3 : vérification des 13 liens vidéo YouTube (signalement utilisateur)
+- Contrôle un par un via oEmbed : 12/13 corrects (titres conformes aux intitulés du manuel).
+- 1 lien FAUX : U1 S1 « Au petit déjeuner » pointait vers une chanson d'Halloween (Lingobox). Corrigé → `d5U4kDDBCVA` « Au petit déjeuner - Alain Le Lait (Breakfast) » (tialela99, 1,8 M de vues), vérifié par oEmbed.
+- Rebuild docx + vérifs : youtube=13, drive=66, halloween=0, rootKey=0, github=0, arena=0, H1=12, H2=72.
+— JLearn (atelier), 6 novembre 2026
