@@ -309,3 +309,10 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - 10 MP3 uploadés dans le Drive public T3 ; IDs ajoutés à `drive_ids.txt`.
 - Sauvegarde GitHub : commit `0e13855`. Avancement : 50/66 clips.
 — JLearn (atelier), 6 novembre 2026
+
+## 2026-11-06 — Français T3 : audios Unité 6 (S61-S70)
+- 10 clips générés (voice-01) : « Le jour du marché » lu 2×, acteurs/endroits (marchand-client, étal, épicerie…), lecture « Hier, au marché », produits/prix/qualité (C'est combien ? frais, mûre), passé composé avoir+é, verbes du marché au passé (+ pris/vendu), dialogue du marchandage (mille→huit cents ariary) avec le ton, jeu de rôle 5 étapes de l'achat, PE récit au passé, fluidité relecture des textes.
+- 10 MP3 uploadés dans le Drive public T3 ; IDs ajoutés à `drive_ids.txt`.
+- Sauvegarde GitHub : commit `f348363`. Avancement : 60/66 clips — les 6 unités sont couvertes.
+- Reste : les 6 dictées ultra courtes (S11, S23, S35, S47, S59, S71), puis injection des blocs 🎧 dans unit1-6.js + rebuild du docx.
+— JLearn (atelier), 6 novembre 2026

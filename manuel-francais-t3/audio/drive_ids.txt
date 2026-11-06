@@ -60,3 +60,15 @@ u5_s55_lecon.mp3  : 1J7zbh9lg-jlAB7iZnGlZGCXyO0LWgQqU
 u5_s56_lecon.mp3  : 1H06C6a6lqLJCh2dna7P-ZH2izdN5TjHI
 u5_s57_lecon.mp3  : 1bfHKLTvlnZrEKgIOPNul8YEVOC6yETNa
 u5_s58_lecon.mp3  : 1jy0CmktRno-vozdjyUZqxQ97wf_ju8FO
+
+UNITÉ 6 — LE MARCHÉ
+u6_s61_ecoute.mp3 : 1wPFsO_E8vDDZlvTFX6cgraGfO489805j
+u6_s62_lecon.mp3  : 1gz6c_snr-Rpqnh_UbbTJiA0WLEquvkjY
+u6_s63_lecon.mp3  : 1x-ztutorhyEXATbtkYRXQEeyDlOZJoGe
+u6_s64_lecon.mp3  : 17qIupNXGT_CTPm9YVjMWgC241DRDugf0
+u6_s65_lecon.mp3  : 1GobuEQDoep4C1Ap26EP19tIqJK8Z5Y11
+u6_s66_lecon.mp3  : 1aDlw-TEZCcLQSODS1SCJB_Ig-ijsjZkN
+u6_s67_lecon.mp3  : 1lYO2URpF3VV5XKOlyNzbVUwxKhjoLZ_S
+u6_s68_lecon.mp3  : 1VlWsg_QvNoVbYdGqGBjdcrIJPiSw8EMU
+u6_s69_lecon.mp3  : 1y3MLAxO7JjYUr4v01grjL9GOWvP6fUle
+u6_s70_lecon.mp3  : 1b94V-4Sl9HY_cznwoOHm0lYo9oO907BF
