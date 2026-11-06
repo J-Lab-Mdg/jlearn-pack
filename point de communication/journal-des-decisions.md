@@ -193,3 +193,9 @@ L'utilisateur a validé la méthode proposée :
 - Livrable régénéré : `art-t9/output/Art_T9_J-Learn.docx`. Audios Drive 36/36 + ZIP public ; QR décodés 39/39 ; validateur docx PASS.
 - Ajouts : grille observable unique, timing réel, checklist, différenciation, trace, variantes, ancrage local, progression, glossaire, sources, navigation/signets, footer pages, alt-textes, transcription/version texte audio.
 - Honnêteté : vidéos = liens/repères, pas lecteur embarqué ; 10 repères restent à sélectionner par l’enseignant ; pas de rendu Word complet possible ici ; pas de revendication « toutes scènes IA » ni « vidéos intégralement visionnées ».
+
+### 2026-11-06 — Lot simplification / refonte (V4 partiel)
+- Demandes appliquées : titres brefs MAJ, bloc vidéo compact numéroté avec icône YouTube + URL, audio simplifié en pied de page (Audio 10 pt + QR + Texte + vidéos), transcriptions regroupées en annexe, 71 sections Word pour pieds de page par partie.
+- Scènes : 10 vectorielles remplacées par des scènes réalistes avec personnes. Limite de génération d’images atteinte (10/tour) : S19/S20/S21 restent vectorielles provisoires, à régénérer au prochain tour. Ne pas revendiquer « toutes les scènes réalistes/IA ».
+- Vidéos danse : ajout S25/S26/S27/S28a (WgVKfTkwU1U, E7MFKBj4E3o, FThZeqfIMBo). Vidéos en anglais, reformulation enseignant ; E7MFKBj4E3o avec réserve transcript. Bilan : 23 URLs / 26 insertions / 12 parties sans vidéo.
+- Livrable rebuildé : `art-t9/output/Art_T9_J-Learn.docx` (17 042 097 o), validateur docx PASS, QR 39/39. Rapport : `art-t9/AUDIT-MEDIAS-2026-11-06.md` section 7.

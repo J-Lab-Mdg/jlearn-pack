@@ -12,7 +12,8 @@ text=''.join(root.xpath('//w:t/text()',namespaces=NS))
 drive=json.loads(DRIVE.read_text())
 errors=[]
 sect=root.xpath('//w:sectPr',namespaces=NS)
-if len(sect)!=1: errors.append(f'sectPr={len(sect)}')
+# 1 ouverture + 33 fiches + 36 parties (pied de page ressources) + 1 annexes = 71 sections.
+if len(sect)!=71: errors.append(f'sectPr={len(sect)} attendu=71')
 sizes=[int(x) for x in root.xpath('//w:sz/@w:val',namespaces=NS)]
 if sizes and min(sizes)<26: errors.append(f'taille min <13pt: {min(sizes)}')
 fonts=set(root.xpath('//w:rFonts/@w:ascii',namespaces=NS))
@@ -25,8 +26,12 @@ for required in ['AUTHENTICITÉ ET DROITS','AVANT-PROPOS','MODE D’EMPLOI','GLO
     if required not in text: errors.append('élément attendu absent: '+required)
 if text.count('Variantes selon la classe')<33: errors.append('variantes séances <33')
 if text.count('Différenciation et remédiation')<33: errors.append('différenciation fiches <33')
+xml_parts=[n for n in z.namelist() if re.fullmatch(r'word/(document|footer\d+|header\d+)\.xml',n)]
 bookmarks=set(root.xpath('//w:bookmarkStart/@w:name',namespaces=NS))
-anchors=set(root.xpath('//w:hyperlink/@w:anchor',namespaces=NS))
+anchors=set()
+for n in xml_parts:
+    xr=etree.fromstring(z.read(n))
+    anchors.update(xr.xpath('//w:hyperlink/@w:anchor',namespaces=NS))
 missing=anchors-bookmarks
 if missing: errors.append(f'ancres sans signet: {sorted(missing)[:10]}')
 lecons=[b for b in bookmarks if b.startswith('bm_lecon_')]
@@ -38,8 +43,11 @@ if len(pratiques)!=36: errors.append(f'pratiques={len(pratiques)}')
 if len(seances)!=33: errors.append(f'séances={len(seances)}')
 if len(evals)!=33: errors.append(f'grilles évaluation={len(evals)}')
 media=[n for n in z.namelist() if n.startswith('word/media/')]
-rels=etree.fromstring(z.read('word/_rels/document.xml.rels'))
-hyper=[r.get('Target') for r in rels if r.get('Type','').endswith('/hyperlink')]
+hyper=[]
+for n in z.namelist():
+    if re.fullmatch(r'word/_rels/(document|footer\d+|header\d+)\.xml\.rels',n):
+        rels=etree.fromstring(z.read(n))
+        hyper.extend(r.get('Target') for r in rels if r.get('Type','').endswith('/hyperlink'))
 audio=[u for u in hyper if u and 'drive.google.com/file/d/' in u]
 zip_links=[u for u in hyper if u and drive['zip_id'] in u]
 yt=[u for u in hyper if u and 'youtube' in u]
@@ -60,7 +68,10 @@ for n in z.namelist():
         fr=etree.fromstring(z.read(n)); footer_instr+=' '+' '.join(fr.xpath('//w:instrText/text()',namespaces=NS))
 if 'PAGE' not in instr and 'PAGE' not in footer_instr: errors.append('pagination footer absente')
 # alt-textes descriptifs
-alt=[x for x in root.xpath('//wp:docPr/@descr',namespaces=NS) if x]
+alt=[]
+for n in xml_parts:
+    xr=etree.fromstring(z.read(n))
+    alt.extend(x for x in xr.xpath('//wp:docPr/@descr',namespaces=NS) if x)
 bad_alt=[a for a in alt if a.endswith('.png') or a.endswith('.jpg')]
 if len(alt)<250: errors.append(f'alt-textes={len(alt)}')
 if bad_alt: errors.append(f'alt-textes nom de fichier={len(bad_alt)}')
