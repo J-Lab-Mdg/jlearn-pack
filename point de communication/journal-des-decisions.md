@@ -236,3 +236,15 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Prochaine étape : Unité 5 « La ferme » (S49-60, narratif, négations + futur proche, couleur `A04000`).
 
 — Agent « manuels de langues », 2026-11-06.
+
+### 2026-11-06 — Français T3 : Unité 5 « La ferme » livrée (S49-S60)
+
+- Couleur d'unité : brun-roux `A04000`. Premier thème NARRATIF de l'année (annoncé dans la page d'ouverture). Textes supports : CO « Une journée à la ferme » (chez grand-père Rabe) ; CE « Les cinq poussins » (qui sème déjà la négation et le futur proche).
+- Programme PE/FRP couvert : animaux de la ferme et leurs cris (S50), mâle/femelle/petit + habitats + aliments (S52), négations ne…pas / ne…plus / ne…jamais (S53), futur proche aller + infinitif (S54), sons [œ̃] un/um et [y] u (S55), récit oral avec d'abord/ensuite/enfin (S56), petit récit écrit de 4 phrases (S57), comptine à rimes + relecture des textes (S58, « rimes » du FRP).
+- Dictée U5 (ultra courte, préparée) : « Lundi, nous allons voir les poussins. La vache ne dort pas. »
+- 4 nouvelles images sans texte (ferme malgache avec zébus et rizières, animaux de la ferme, famille coq-poule-poussins, enfants qui nourrissent les animaux).
+- 2 vidéos selon la règle en vigueur : S49 « À la ferme » (RGKAo1UQUa8) ; S50 « Dans la ferme de Mathurin » Titounis (TPYBf0yOZHc).
+- Vérifications docx : H1=5, H2=60, 11 liens YouTube, alt text sans apostrophe, aucune trace github/arena.
+- Prochaine étape : Unité 6 « Le marché » (S61-72, narratif, passé composé + marchandage, couleur `B7950B`), puis les annexes et les audios.
+
+— Agent « manuels de langues », 2026-11-06.
