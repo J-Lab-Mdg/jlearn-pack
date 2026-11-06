@@ -4,14 +4,15 @@ const fs=require('fs'), path=require('path'), sharp=require('sharp');
 const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, ImageRun,
   HeadingLevel, AlignmentType, BorderStyle, WidthType, ShadingType, VerticalAlign,
-  ExternalHyperlink, InternalHyperlink, Bookmark, PageBreak, TableLayoutType,
+  ExternalHyperlink, InternalHyperlink, Bookmark, PageBreak, TableLayoutType, SectionType,
   Header, Footer, PageNumber,
 } = require('docx');
 const {parts,domains,sessions,validate}=require('./curriculum');
 const drive=require('./drive_audio.json');
 const ped=require('./pedagogy');
 const {transcript}=require('./audio_transcripts');
-const {alt:sceneAlt,kind:sceneKind}=require('./scene_alt');
+const {alt:sceneAlt}=require('./scene_alt');
+const {sceneOverrides}=require('./media_corrections');
 const {note:videoNote,fmt}=require('./video_notes');
 const {shortTitles}=require('./titles_short');
 const ROOT=path.join(__dirname,'../../..');
@@ -87,16 +88,21 @@ function fiche(ps,opts={}){ const pivot=ps.length>1; const s=ps[0].session; cons
   out.push(nav([['Sommaire','bm_sommaire'],['Répartition','bm_repartition'],['Index évaluations','bm_index']]));
   return out; }
 function resolveImgs(p){ return { observe:p.observe.img||`manual/diagrams/${p.id}_observe.png`, prep:p.prep.img||`manual/diagrams/${p.id}_prepare.png`, steps:p.steps.map((s,i)=>s.img||`manual/diagrams/${p.id}_step_${'abcd'[i]}.png`), practice:p.practice.img||`manual/diagrams/${p.id}_practice.png`, qr:`manual/qr/${p.id}_audio.png` }; }
-function audioBlock(p0){ const tr=transcript(p0.id); const out=[h3('Audio sans smartphone')]; out.push(linkPara(audioUrlFor(p0.id),'▶ Écouter la consigne audio (Google Drive)',{bold:true})); out.push(...img(`manual/qr/${p0.id}_audio.png`,120,'QR code vers l’audio Drive de cette partie.','QR code vers la consigne audio Google Drive de la partie '+p0.id)); if(tr){ out.push(p(tr.kind+' :',{bold:true,size:S.small,color:C.grey,after:40})); out.push(p(tr.text,{size:S.body})); if(tr.note) out.push(p(tr.note,{italics:true,size:S.small,color:C.grey})); } if(p0.domain==='Musique') out.push(p('Audio du manuel : consigne parlée. Le modèle chanté ou instrumental est fourni par l’enseignant, un élève compétent ou un support sonore.',{italics:true,size:S.small,color:C.grey})); return out; }
 function videoSection(d){ if(!d.videos.length) return []; const out=[hr(),p('Vidéos d’appoint',{bold:true,size:S.body,after:80})];
   d.videos.forEach((v,i)=>{ const n=videoNote(videoId(v))||{title:v.title,url:v.url}; const label=n.title+(n.start!=null&&n.start>0?' — démarrer à '+fmt(n.start):'');
     out.push(pRuns([run((i+1)+'. ',{bold:true}),inlineImg('manual/icons/youtube.png',20,'Icône YouTube'),run(' '),new ExternalHyperlink({link:n.url,children:[run(label,{bold:true,color:C.blue,underline:{}})]})],{after:40}));
     out.push(linkPara(n.url,n.url,{size:S.small,after:100})); });
   return out; }
-function partFooter(p0){ const children=[inlineImg('manual/icons/audio.png',14,'Icône audio'),run(' '),new ExternalHyperlink({link:audioUrlFor(p0.id),children:[run('Audio',{size:20,color:C.blue,underline:{}})]}),run('  '),inlineImg(`manual/qr/${p0.id}_audio.png`,60,'QR audio '+p0.id),run('  '),new InternalHyperlink({anchor:'bm_tr_'+p0.id,children:[run('Texte',{size:20,color:C.blue,underline:{}})]})];
-  if(p0.videos.length){ children.push(run('  '),inlineImg('manual/icons/youtube.png',20,'Icône YouTube'),run(' ')); p0.videos.forEach((v,i)=>{ if(i) children.push(run(' · ',{size:20,color:C.grey})); const n=videoNote(videoId(v))||{url:v.url}; children.push(new ExternalHyperlink({link:n.url,children:[run('Vidéo '+(i+1),{size:20,color:C.blue,underline:{}})]})); }); }
-  children.push(run(' · p. ',{size:20,color:C.grey}),new TextRun({children:[PageNumber.CURRENT],font:FONT,size:20,color:C.grey}));
-  return new Footer({children:[pRuns(children,{align:AlignmentType.CENTER,after:0,line:240})]}); }
+function partFooter(p0){
+  // Exception typographique demandée : seul le lien Audio est en 10 pt (20 demi-points).
+  const lines=[pRuns([inlineImg('manual/icons/audio.png',14,'Icône audio'),run(' '),new ExternalHyperlink({link:audioUrlFor(p0.id),children:[run('Audio',{size:20,color:C.blue,underline:{}})]}),run(' · ',{size:S.small,color:C.grey}),new InternalHyperlink({anchor:'bm_tr_'+p0.id,children:[run('Texte',{size:S.small,color:C.blue,underline:{}})]})],{after:30,line:260})];
+  if(p0.videos.length){ const vr=[inlineImg('manual/icons/youtube.png',20,'Icône YouTube'),run(' ')]; p0.videos.forEach((v,i)=>{ if(i) vr.push(run(' · ',{size:S.small,color:C.grey})); const n=videoNote(videoId(v))||{url:v.url}; vr.push(new ExternalHyperlink({link:n.url,children:[run('Vidéo '+(i+1),{size:S.small,color:C.blue,underline:{}})]})); }); lines.push(pRuns(vr,{after:30,line:260})); }
+  lines.push(pRuns([run('© 2026 J-Learn — Tous droits réservés · Page ',{size:S.small,color:C.grey}),new TextRun({children:[PageNumber.CURRENT],font:FONT,size:S.small,color:C.grey})],{after:0,line:260}));
+  const fc=(children,width)=>new TableCell({width:{size:width,type:WidthType.DXA},verticalAlign:VerticalAlign.CENTER,margins:{top:0,bottom:0,left:0,right:80},children});
+  // QR à 80 px : les 36 codes restent décodables après réduction numérique (validate_qr.js).
+  const qr=new Paragraph({alignment:AlignmentType.CENTER,spacing:{before:0,after:0},children:[inlineImg(`manual/qr/${p0.id}_audio.png`,80,'QR code vers la consigne audio Google Drive de la partie '+p0.id)]});
+  return new Footer({children:[table([8400,1800],[new TableRow({children:[fc(lines,8400),fc([qr],1800)]})],noBorders())]});
+}
 function transcriptionsAnnex(){ const out=[pageBreak(),h1('TRANSCRIPTIONS AUDIO','bm_transcripts'),p('Version texte des consignes audio pour préparer ou conduire la séance sans smartphone.',{size:S.body})];
   for(const p0 of parts){ const tr=transcript(p0.id); out.push(pRuns([new Bookmark({id:'bm_tr_'+p0.id,children:[run(shortTitles[p0.id]||p0.title,{bold:true,size:S.h3})]})],{before:120,after:40})); if(tr){ out.push(p(tr.kind+' :',{bold:true,size:S.small,color:C.grey,after:40})); out.push(p(tr.text,{size:S.body})); if(tr.note) out.push(p(tr.note,{italics:true,size:S.small,color:C.grey})); } }
   return out; }
@@ -124,7 +130,7 @@ function modeEmploi(){ const out=[pageBreak(),h1('MODE D’EMPLOI','bm_modeemplo
   'Préparer la séance avec la fiche : matériel, sécurité, ancrage local, variantes, timing I/II/III et différenciation.',
   'Conduire la leçon : observer, préparer, essayer les étapes a–d, puis réaliser la pratique de transfert.',
   'Évaluer sans note chiffrée obligatoire : cocher Acquis / En cours / À revoir à partir de l’observable unique de la grille.',
-  'Utiliser le pied de page de séance : Audio, QR, Texte et liens vidéo ; télécharger le ZIP audio en un clic pour préparer hors ligne.',
+  'Utiliser le pied de page de chaque partie : Audio, QR, Texte et liens vidéo ; télécharger le ZIP audio en un clic pour préparer hors ligne.',
   'Utiliser les vidéos comme appoint : titres cliquables et URL, sans bloc descriptif long.',
   'Vérifier sur le poste enseignant : ouverture Word, impression, QR, liens Drive/vidéo et pagination avant duplication.'
 ]) out.push(bullet(t)); return out; }
@@ -140,14 +146,14 @@ function glossaireAnnex(){ const out=[pageBreak(),h1('GLOSSAIRE','bm_glossaire')
 function sourcesAnnex(){ const out=[pageBreak(),h1('SOURCES ET RESSOURCES','bm_sources')]; out.push(h2('Programmes et documents de référence')); out.push(bullet('PE T9, Arts : dessin p. 232–233 ; peinture p. 234–235 ; sculpture p. 236–237 ; musique p. 237–239 ; danse p. 240 ; arts dramatiques p. 241–242 ; démarches p. 243.')); out.push(bullet('FRP_3eme_ARTS.pdf : répertoires et instruments locaux cités (hira gasy / vako-drazana, valiha, jejy voatavo, sodina, angaroha, anjomara, atranatrana, lamako, amponga).'));
   out.push(h2('Ressources vidéo externes')); const ids=[...new Set(parts.flatMap(p=>p.videos.map(videoId)))]; for(const id of ids){ const n=videoNote(id); if(!n) continue; out.push(pRuns([run(n.title+' — '+(n.channel||'YouTube')+'. ',{bold:true,size:S.body}),new ExternalHyperlink({link:n.url,children:[run('Lien',{color:C.blue,underline:{},size:S.body})]})],{after:40})); out.push(p(n.rep+' Repli : '+n.offline,{size:S.small,color:C.grey,after:100})); }
   out.push(h2('Audio J-Learn')); out.push(linkPara(drive.folder_url,'Dossier Drive des 36 consignes audio')); out.push(linkPara(drive.zip_url,'ZIP audio en un clic'));
-  out.push(h2('Crédits visuels')); out.push(p('36 scènes distinctes : 27 illustrations de scène réalistes générées par IA relues/corrigées, 6 scènes pilotes validées, et 3 scènes musique provisoirement vectorielles (S19–S21) en attente de remplacement réaliste. Les scènes S02, S09 et S10 ont été harmonisées (tenue enseignante bleue/verte, sans blouse blanche). 210 schémas explicatifs déterministes. Aucune revendication « toutes les scènes IA ».',{size:S.body})); out.push(p('Les vidéos restent des ressources d’appoint ; disponibilité vérifiée par oEmbed le 06/11/2026, chapitres/transcripts quand accessibles. Aucun visionnage intégral revendiqué.',{size:S.small,color:C.grey})); return out; }
+  out.push(h2('Crédits visuels')); const aiCount=parts.filter(x=>sceneOverrides[x.id]).length; const pilotCount=parts.length-aiCount; /* s01 est une ancre pilote stockée à la racine des assets. */ out.push(p(`${parts.length} scènes distinctes : ${aiCount} illustrations de scène générées par IA et ${pilotCount} scènes pilotes conservées. Les illustrations IA ne sont pas des photographies documentaires. Les scènes S19–S21 suivent le style naturaliste de S25. Les 210 schémas explicatifs déterministes sont des supports séparés des scènes d’ouverture.`,{size:S.body})); out.push(p('Les vidéos restent des ressources d’appoint ; disponibilité vérifiée par oEmbed le 06/11/2026, chapitres/transcripts quand accessibles. Aucun visionnage intégral revendiqué.',{size:S.small,color:C.grey})); return out; }
 function indexAnnex(){ const out=[pageBreak(),h1('INDEX DES ÉVALUATIONS','bm_index'),p('Accès direct aux grilles observables Acquis / En cours / À revoir par séance.',{size:S.body})]; for(const s of sessions) out.push(internal('Séance '+s.session+' — '+s.parts.map(p=>p.domain).join(' / '),'bm_eval_s'+s.session)); return out; }
-function terrainAnnex(){ const out=[pageBreak(),h1('CONTRÔLE TERRAIN À RÉALISER','bm_terrain'),p('À vérifier sur le poste enseignant avant duplication ; l’environnement de génération ne dispose pas d’un rendu Word complet.',{italics:true,size:S.body})]; for(const t of ['☐ Ouvrir le .docx dans Word desktop et vérifier le sommaire interactif.','☐ Imprimer deux pages type : fiche + leçon ; contrôler tableaux, images et césures.','☐ Scanner trois QR audio et le QR ZIP avec un téléphone.','☐ Télécharger le ZIP audio en un clic et lire un MP3 hors ligne.','☐ Ouvrir deux liens vidéo et vérifier le repère / timecode.','☐ Contrôler la pagination finale et les veuves/orphelines dans Word.','☐ Vérifier que les audios Drive sont accessibles en lecture seule par lien.']) out.push(bullet(t)); return out; }
+function terrainAnnex(){ const out=[pageBreak(),h1('CONTRÔLE TERRAIN À RÉALISER','bm_terrain'),p('À vérifier sur le poste enseignant avant duplication ; l’environnement de génération ne dispose pas d’un rendu Word complet.',{italics:true,size:S.body})]; for(const t of ['☐ Ouvrir le .docx dans Word desktop et vérifier le sommaire interactif.','☐ Imprimer deux pages type : fiche + leçon ; contrôler tableaux, images et césures.','☐ Scanner trois QR audio réduits en pied de page et le QR ZIP avec un téléphone ; contrôler la lisibilité des pieds de page.','☐ Télécharger le ZIP audio en un clic et lire un MP3 hors ligne.','☐ Ouvrir deux liens vidéo et vérifier le repère / timecode.','☐ Contrôler la pagination finale et les veuves/orphelines dans Word.','☐ Vérifier que les audios Drive sont accessibles en lecture seule par lien.']) out.push(bullet(t)); return out; }
 async function main(){ const v=validate(); console.log('Curriculum OK',v); console.log('Pédagogie OK',ped.validatePedagogy(parts));
   const files=['manual/qr/official_jlearn.png','manual/qr/audio_zip.png','manual/qr/audio_folder.png','manual/icons/audio.png','manual/icons/youtube.png']; for(const p of parts){ const im=resolveImgs(p); files.push(p.scene,im.observe,im.prep,im.practice,im.qr,...im.steps); } await loadDims(files);
   const header=new Header({children:[p('ARTS T9 — J-Learn · Manuel enseignant',{align:AlignmentType.CENTER,size:S.small,color:C.grey,after:0})]});
   const globalFooter=new Footer({children:[pRuns([run('© 2026 J-Learn — Tous droits réservés · Page ',{size:S.small,color:C.grey}),new TextRun({children:[PageNumber.CURRENT],font:FONT,size:S.small,color:C.grey})],{align:AlignmentType.CENTER,after:0})]});
-  const pageProps={page:{margin:{top:850,bottom:1000,left:850,right:850},size:{width:11906,height:16838}}};
+  const pageProps={type:SectionType.NEXT_PAGE,page:{margin:{top:850,bottom:1800,left:850,right:850,header:360,footer:360},size:{width:11906,height:16838}}};
   const sections=[];
   sections.push({properties:pageProps,headers:{default:header},footers:{default:globalFooter},children:[...cover(),...rights(),...avantPropos(),...modeEmploi(),...sommaire(),...repartition(),...audioDrive()]});
   for(const s of sessions){ sections.push({properties:pageProps,headers:{default:header},footers:{default:globalFooter},children:fiche(s.parts,{noBreak:true})}); for(const p of s.parts){ sections.push({properties:pageProps,headers:{default:header},footers:{default:partFooter(p)},children:[...lecon(p,{noBreak:true}),...pratique(p)]}); } }

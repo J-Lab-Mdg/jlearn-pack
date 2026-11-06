@@ -4,7 +4,9 @@ Date : 2026-11-06
 Branche : `arena/3f402b0e-jlearn-pack`  
 Livrable : `art-t9/output/Art_T9_J-Learn.docx`
 
-## 1. Images de scène : état final du correctif
+> **État courant : voir §8.** Les sections 1 à 7 conservent l’historique des lots ; ne pas relancer `scene_vectors.js` sur les scènes actives.
+
+## 1. Images de scène : correctif V2 (historique)
 
 ### Cause de la répétition
 La première génération du manuel complet utilisait **12 images de scène pour 36 parties de leçon**. Les scènes étaient affectées par familles de sous-discipline, ce qui produisait des répétitions visibles d’une séance à l’autre et parfois une image d’ouverture peu cohérente avec l’activité précise.
@@ -129,9 +131,9 @@ Limite : pas de rendu PDF/Word complet dans l’environnement ; contrôle par XM
 Commandes :
 ```bash
 node art-t9/src/manual_v2/manual_assets.js
-node art-t9/src/manual_v2/scene_vectors.js
 node art-t9/src/manual_v2/build.js
 /home/user/.venv/bin/python art-t9/src/manual_v2/validate_docx.py
+node art-t9/src/manual_v2/validate_qr.js
 ```
 
 Résultat attendu : `VALIDATION DOCX : OK`.
@@ -140,8 +142,9 @@ Contrôles clés :
 - 36 parties, 33 séances, 66 h, pivots S6 / S17 / S28.
 - 36 scènes uniques.
 - 210 schémas, 36 QR, 36 liens audio.
-- 20 URLs YouTube distinctes / 22 insertions.
-- 1 `sectPr`, Times New Roman, taille minimale 13 pt, 36 tables 6 colonnes, signets / liens internes cohérents.
+- 23 URLs YouTube distinctes / 26 insertions.
+- 71 `sectPr`, Times New Roman, corps minimal 13 pt ; seule exception : lien Audio en 10 pt dans les 36 pieds de page ressources.
+- 36 tables 6 colonnes, signets / liens internes cohérents, QR sources 39/39 et QR pieds de page réduits 36/36.
 - Absence des IDs YouTube explicitement rejetés.
 
 
@@ -167,3 +170,11 @@ Contrôles clés :
 - **Bilan vidéos** : 23 URLs distinctes / 26 insertions / 12 parties sans vidéo (S04, S05, S06a, S10, S11, S15, S16, S17a, S18, S22, S28b, S33).
 - **Validation** : `Art_T9_J-Learn.docx` = 17 042 097 octets ; `validate_docx.py` PASS (71 sectPr, corps min 13 pt, Times New Roman, 186 signets/liens internes, 36 leçons/pratiques, 33 séances/grilles, 36 liens audio Drive, 0 GitHub raw, 36 tables 6 colonnes) ; `validate_qr.js` PASS 39/39.
 - **Limites** : pas de rendu Word/PDF complet dans l’environnement ; pieds de page, QR en petit format et césures à vérifier sur le poste enseignant. Trois scènes musique restent à remplacer ; aucune revendication « toutes les scènes IA » ni « vidéos intégralement visionnées ».
+
+## 8. Finalisation du lot de simplification — 2026-11-06
+
+- **Scènes d’ouverture** : les 3 dernières scènes musicales S19/S20/S21 sont régénérées dans le style naturaliste de S25, avec élèves et enseignante. Bilan : **13/13 anciennes scènes vectorielles d’ouverture remplacées** ; **30 illustrations IA + 6 scènes pilotes conservées**, 36 fichiers/hashs distincts. Les SVG historiques sont archivés hors de `scenes_v3` et le générateur vectoriel est désactivé par défaut pour éviter toute régression. S14 et S28b ont aussi été reprises pour cohérence T9 / chaussures fermées. Les illustrations IA ne sont pas des photographies documentaires ; les 6 pilotes ne sont pas revendiqués comme IA.
+- **Pieds de page ressources** : mise en page deux colonnes, QR audio à **80 px** (les 60 px précédents ne décodent plus), marge basse réservée. Le lien **Audio** est seul en **10 pt** ; Texte, vidéos, copyright et pagination restent à 13 pt. Chaque pied de page est contrôlé par section : bon audio Drive, bon QR, bon lien Texte, mêmes vidéos que le corps, pagination présente.
+- **Contrôles** : `validate_docx.py` PASS ; `validate_qr.js` PASS **75/75** (39 QR sources + 36 QR réduits à 80 px). Le scan physique après impression reste dans le contrôle terrain. Pas de rendu Word/PDF complet dans l’environnement.
+- **Vidéos** : bilan inchangé depuis le lot précédent, 23 URLs distinctes / 26 insertions / 12 parties sans vidéo ; ajouts danse S25/S26/S27/S28a conservés. Aucun visionnage intégral revendiqué.
+- **Livrable** : `art-t9/output/Art_T9_J-Learn.docx` rebuildé ; structure 36 parties / 33 séances / 66 h, charnières S6/S17/S28 inchangées.

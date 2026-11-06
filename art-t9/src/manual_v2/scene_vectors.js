@@ -1,6 +1,8 @@
-// Scènes scolaires vectorielles déterministes : mélanges, rythmes et jeu, sans répétition d'une séance à l'autre.
+// ARCHIVE HISTORIQUE — ne plus écraser les scènes d’ouverture réalistes du manuel.
+// Génération désactivée par défaut ; --legacy-vector-archive écrit uniquement hors de scenes_v3.
 const fs=require('fs'),path=require('path'),sharp=require('sharp');
-const OUT=path.join(__dirname,'../../assets/manual/scenes_v3');
+if(!process.argv.includes('--legacy-vector-archive')){ console.error('Générateur historique désactivé : les scènes d’ouverture du manuel ne sont plus vectorielles. Utiliser --legacy-vector-archive uniquement pour une archive séparée.'); process.exit(1); }
+const OUT=path.join(__dirname,'../../assets/manual/scenes_vectors_archive');
 fs.mkdirSync(OUT,{recursive:true});
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const C={wall:'#F6E7C8',wall2:'#EFD9AE',floor:'#D8B38A',floor2:'#C9A276',board:'#2F4F4F',wood:'#A9744F',wood2:'#8B5A2B',ink:'#263238',blue:'#1F4E79',green:'#2E7D32',red:'#C0392B',orange:'#E67E22',purple:'#8E44AD',cyan:'#16A085',yellow:'#F1C40F'};

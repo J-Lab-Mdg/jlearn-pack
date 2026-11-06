@@ -199,3 +199,9 @@ L'utilisateur a validé la méthode proposée :
 - Scènes : 10 vectorielles remplacées par des scènes réalistes avec personnes. Limite de génération d’images atteinte (10/tour) : S19/S20/S21 restent vectorielles provisoires, à régénérer au prochain tour. Ne pas revendiquer « toutes les scènes réalistes/IA ».
 - Vidéos danse : ajout S25/S26/S27/S28a (WgVKfTkwU1U, E7MFKBj4E3o, FThZeqfIMBo). Vidéos en anglais, reformulation enseignant ; E7MFKBj4E3o avec réserve transcript. Bilan : 23 URLs / 26 insertions / 12 parties sans vidéo.
 - Livrable rebuildé : `art-t9/output/Art_T9_J-Learn.docx` (17 042 097 o), validateur docx PASS, QR 39/39. Rapport : `art-t9/AUDIT-MEDIAS-2026-11-06.md` section 7.
+
+### 2026-11-06 — Finalisation V4 : scènes musique et pieds de page
+- S19/S20/S21 régénérées en scènes naturalistes avec personnes, style S25. Les 13 anciennes scènes vectorielles d’ouverture sont toutes remplacées : 30 IA + 6 pilotes, 36 scènes distinctes. Ne pas revendiquer « toutes les scènes IA » ni des photographies documentaires.
+- QA visuelle : S14 reprise pour âge T9, S28b reprise pour âge T9 et chaussures fermées. SVG vectoriels historiques archivés ; générateur vectoriel désactivé par défaut.
+- Pieds de page corrigés : QR 80 px décodable, Audio seul en 10 pt, autres textes 13 pt, marge basse réservée, mapping section→footer vérifié (audio/QR/Texte/vidéos/page).
+- Validateurs : docx PASS ; QR 75/75 (39 sources + 36 réduits). Scan physique et rendu Word restent à vérifier sur le poste enseignant.

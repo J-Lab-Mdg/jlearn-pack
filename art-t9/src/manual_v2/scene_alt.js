@@ -19,10 +19,10 @@ const alt = {
   s16: 'Élèves peignant un paysage local à partir d’un nuancier : horizon, plans, couleurs secondaires et motifs.',
   s17a: 'Élèves présentant un paysage peint, citant les couleurs, montrant un motif et expliquant un choix devant la classe.',
   s17b: 'Élèves classant des instruments et objets sonores selon la source du son : corde, air, membrane ou matière frappée.',
-  s18: 'Élèves écoutant et comparant des genres musicaux, instruments posés sur les tables et gestes de pulsation.',
-  s19: 'Schéma vectoriel de pulsation : cases binaires et ternaires, tempo lent/rapide, accents réguliers.',
-  s20: 'Schéma vectoriel 12/8 : douze cases regroupées en quatre pulsations de trois, sons longs/courts et silence.',
-  s21: 'Schéma vectoriel de nuances : fort/doux, silence, progression et équilibre du groupe.',
+  s18: 'Élèves et enseignante comparent des instruments et des genres musicaux illustrés au tableau ; certains essaient un instrument à volume modéré.',
+  s19: 'Des élèves suivent le geste régulier de l’enseignante : un groupe frappe doucement des mains, un autre marque la pulsation du bout des doigts sur une table solide ; métronome facultatif et hochet posés à proximité.',
+  s20: 'Un élève secoue un hochet fermé, deux élèves préparent une réponse brève des mains et un autre lève les mains pour marquer le silence ; l’enseignante accompagne le geste. La durée des sons et le regroupement 12/8 sont expliqués dans le texte et les schémas de la leçon.',
+  s21: 'Un groupe d’élèves joue du petit tambour, du hochet et des percussions corporelles avec des gestes contrôlés ; l’enseignante garde les mains basses pour demander une intensité douce et les élèves s’écoutent.',
   s22: 'Groupe chantant un chant régional avec pulsation frappée ; écoute phrase par phrase puis ensemble.',
   s23: 'Élèves dansant une courte séquence de valse en solo, espace dégagé, trajectoires et distance de sécurité.',
   s24: 'Scène de danse comparant cha-cha-cha et samba : appuis marqués, triple pas, rebond souple et énergie.',
@@ -37,6 +37,6 @@ const alt = {
   s32: 'Élèves organisant la scène : personnages, objet utile, déplacements, visibilité et relation au public.',
   s33: 'Élèves créant et jouant une courte scène : situation claire, corps/voix/espace, objets organisés et appréciation par critères.',
 };
-const vectorIds = new Set(['s19','s20','s21']); // provisoire : quota images atteint, remplacement réaliste au prochain tour
-function kind(p){ if(String(p.scene).startsWith('pilots/')) return 'Scène pilote validée'; if(vectorIds.has(p.id)) return 'Scène vectorielle pédagogique'; return 'Illustration de scène générée par IA, relue et corrigée'; }
-module.exports={alt,kind};
+// Les 36 scènes d’ouverture sont distinctes : 30 illustrations IA et 6 ancres pilotes.
+// Les schémas explicatifs des leçons sont des supports séparés, pas des scènes d’ouverture.
+module.exports={alt};
