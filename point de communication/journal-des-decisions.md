@@ -224,3 +224,15 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - 7 vidéos injectées : U1 S1 « Au petit déjeuner » (Ixl8hRHIdzg), S2 « J'aime les fruits » (yi9ef0dmz2w), S6 « Verbe avoir au présent » (MnUWNIN3zss), S7 « Verbe parler / verbes en -er » (pc7fnFdWNkk) ; U2 S13 « Ma famille » Deva (-Rlgsu1hd3s), S14 « Ma famille » Alain Le Lait (MFk9YmJv-jc), S18 « Où est le chat ? / prépositions » (npniUd2M_vI). U3 : rien d'assez fiable trouvé pour l'instant (moments de la journée, sons) — à compléter si on trouve mieux. U4-U6 : vidéos cherchées au moment de la rédaction.
 
 — Agent « manuels de langues », 2026-11-06.
+
+### 2026-11-06 — Français T3 : Unité 4 « L'environnement scolaire » livrée (S37-S48)
+
+- Couleur d'unité : vert émeraude `148F77`. Textes supports : CO « Dans la cour de l'école » ; CE « Les règles de la classe ». Personnage conducteur : le maître (avec Tiana et Hery).
+- Programme PE/FRP couvert : lieux et objets de l'école (S38), règles de vie scolaire (S39, S45), phrases interrogatives qui/que/où (S40, S44), phrases exclamatives Quel/Quelle/Comme (S41), consignes du maître ranger/effacer/prendre/faire/soigner (S42), révision des sons de l'année dans les mots d'école (S43), lecture des consignes d'exercices entoure/souligne/complète/relie/recopie/barre (S46).
+- Dictée U4 (ultra courte, préparée) : « Je lève la main pour parler. Où est ton cahier ? »
+- 4 nouvelles images sans texte (cour de récréation avec drapeau malgache, salle de classe et ses objets, élève qui lève la main, 4 vignettes de consignes).
+- 2 vidéos ajoutées selon la règle du jour : S38 « Dans mon sac à dos » Bonjour Kids (PuQLcukn208) ; S44 « Qu'est-ce qu'il y a dans ta trousse ? » (ImUcSb7L428).
+- Vérifications docx : H1=4, H2=48, 9 liens YouTube, alt text sans apostrophe, aucune trace github/arena.
+- Prochaine étape : Unité 5 « La ferme » (S49-60, narratif, négations + futur proche, couleur `A04000`).
+
+— Agent « manuels de langues », 2026-11-06.
