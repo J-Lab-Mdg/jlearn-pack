@@ -36,3 +36,15 @@ u3_s31_lecon.mp3  : 19g2bxPRbXdj2Tgd1WR0rQ9l_HuGoss3m
 u3_s32_lecon.mp3  : 1Y4sTBvmoqkeIDGbQS9DwaWK5tRBnwtr9
 u3_s33_lecon.mp3  : 1FDbCpvzrAOSPmT4s5N0LvbF6zRIwYTr9
 u3_s34_lecon.mp3  : 1qtp2LmDYH8NCxX0DodrYCu7bdRrtcbEV
+
+UNITÉ 4 — L'ENVIRONNEMENT SCOLAIRE
+u4_s37_ecoute.mp3 : 1Zp_APiuBOCVsFJRXtDfq_AaF_uRSBNwO
+u4_s38_lecon.mp3  : 1ca5UMntAhlSQ8La5nnpThM1rYBgTWyhq
+u4_s39_lecon.mp3  : 1nFfLH1e8ySrzCE0mrpCUIugXh1TDatsm
+u4_s40_lecon.mp3  : 1coMCBm55lP6jJom0m_7PuVNftEbf6s3D
+u4_s41_lecon.mp3  : 1dDazBeJj1FE-9n8tRL3iws5_UVLRcTcx
+u4_s42_lecon.mp3  : 1BK3sx6Sr8Wk-mYB2zo5GHS5hw3SgysQQ
+u4_s43_lecon.mp3  : 1hdktVZSuQ8bJR7bq2SMbxQf0S0813vqD
+u4_s44_lecon.mp3  : 1s15qPCCt88dqKuRZCYFmtw2dTAn4imBv
+u4_s45_lecon.mp3  : 1RlEOl49KqQJ217HCBPQlBiaUrzrU5oeY
+u4_s46_lecon.mp3  : 1jLNi0yMVnbpYIq0-qzlav4D5RCqnuw3s

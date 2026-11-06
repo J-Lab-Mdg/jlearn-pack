@@ -297,3 +297,9 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - 10 MP3 uploadés dans le Drive public T3 ; IDs ajoutés à `drive_ids.txt`.
 - Sauvegarde GitHub : commit `83794be`. Avancement : 30/66 clips.
 — JLearn (atelier), 6 novembre 2026
+
+## 2026-11-06 — Français T3 : audios Unité 4 (S37-S46)
+- 10 clips générés (voice-01) : « Dans la cour de l'école » lu 2×, lexique lieux/objets de l'école, lecture « Les règles de la classe », interrogatives Qui/Que/Où (voix qui monte), exclamatives Quel/Quelle/Comme, consignes du maître, 4 maisons de sons version école, PO questions de journaliste, PE règles de classe, fluidité consignes d'exercices.
+- 10 MP3 uploadés dans le Drive public T3 ; IDs ajoutés à `drive_ids.txt`.
+- Sauvegarde GitHub : commit `fb4eeab`. Avancement : 40/66 clips.
+— JLearn (atelier), 6 novembre 2026
