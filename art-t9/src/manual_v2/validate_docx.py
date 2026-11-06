@@ -27,6 +27,28 @@ for required in ['AUTHENTICITÉ ET DROITS','AVANT-PROPOS','MODE D’EMPLOI','GLO
 if text.count('Variantes selon la classe')<33: errors.append('variantes séances <33')
 if text.count('Différenciation et remédiation')<33: errors.append('différenciation fiches <33')
 xml_parts=[n for n in z.namelist() if re.fullmatch(r'word/(document|footer\d+|header\d+)\.xml',n)]
+# Compatibilité Word : les conteneurs OOXML « element-only » ne doivent contenir aucun texte brut.
+# Un texte directement dans w:tc/w:p/etc. passe souvent lxml/python-docx mais peut être refusé par Word.
+ELEMENT_ONLY={'body','tbl','tr','tc','p','r','hyperlink','sectPr','pPr','rPr','tblPr','trPr','tcPr','hdr','ftr'}
+docpr_ids=[]
+for n in xml_parts:
+    xr=etree.fromstring(z.read(n))
+    for el in xr.iter():
+        if etree.QName(el).localname in ELEMENT_ONLY:
+            if (el.text or '').strip() or any((c.tail or '').strip() for c in el):
+                errors.append(f'texte brut dans conteneur {etree.QName(el).localname}: {n}')
+                break
+    if xr.xpath('//w:p//w:tbl',namespaces=NS):
+        errors.append(f'tableau imbriqué dans un paragraphe: {n}')
+    if n.startswith('word/footer'):
+        if len(xr)==0 or etree.QName(xr[-1]).localname!='p':
+            errors.append(f'pied de page sans paragraphe terminal: {n}')
+    for tc in xr.xpath('//w:tc',namespaces=NS):
+        if len(tc)==0 or etree.QName(tc[-1]).localname!='p':
+            errors.append(f'cellule sans paragraphe terminal: {n}')
+    docpr_ids.extend(xr.xpath('//wp:docPr/@id',namespaces=NS))
+if len(docpr_ids)!=len(set(docpr_ids)):
+    errors.append('ids wp:docPr dupliqués entre corps/en-tête/pieds de page')
 bookmarks=set(root.xpath('//w:bookmarkStart/@w:name',namespaces=NS))
 anchors=set()
 for n in xml_parts:

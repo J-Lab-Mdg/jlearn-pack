@@ -5,7 +5,7 @@ const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, ImageRun,
   HeadingLevel, AlignmentType, BorderStyle, WidthType, ShadingType, VerticalAlign,
   ExternalHyperlink, InternalHyperlink, Bookmark, PageBreak, TableLayoutType, SectionType,
-  Header, Footer, PageNumber,
+  Header, Footer, PageNumber, LineRuleType,
 } = require('docx');
 const {parts,domains,sessions,validate}=require('./curriculum');
 const drive=require('./drive_audio.json');
@@ -66,7 +66,7 @@ function timingTable(p0){ const widths=[3000,1000,6200]; const I=p0.minutes===60
   for(const f of ped.flow(p0)) rows.push(new TableRow({children:[cell([p('II. '+f.label,{size:S.table,after:0})],{width:widths[0]}),cell([p(String(f.minutes),{size:S.table,after:0})],{width:widths[1]}),cell([p(f.detail,{size:S.table,after:0})],{width:widths[2]})]}));
   rows.push(new TableRow({children:[cell([p('III. Évaluation',{bold:true,size:S.table,after:0})],{width:widths[0]}),cell([p(String(III),{size:S.table,after:0})],{width:widths[1]}),cell([p('Rotation de 4–6 élèves/binômes ; les autres font la tâche courte et s’auto-vérifient.',{size:S.table,after:0})],{width:widths[2]})]}));
   return table(widths,rows); }
-function deroulementTable(d){ const I=d.minutes===60?5:10, III=d.minutes===60?10:15; const obs=ped.checks[d.id]; const rows=[...deroulementHeader(),sectionRow('I. Révision — '+I+' min'),row6('I. Révision\n'+I+' min',d.review,'Les élèves répondent à l’oral ; un élève reformule.','Question orale','Tableau noir'),sectionRow('II. Nouvelle leçon — '+(d.minutes===60?45:95)+' min')];
+function deroulementTable(d){ const I=d.minutes===60?5:10, III=d.minutes===60?10:15; const obs=ped.checks[d.id]; const rows=[...deroulementHeader(),sectionRow('I. Révision — '+I+' min'),row6('I. Révision\n'+I+' min',d.review.flatMap(([q,a])=>[p(q,{bold:true,size:S.table,after:30}),ra(a)]),'Les élèves répondent à l’oral ; un élève reformule.','Question orale','Tableau noir'),sectionRow('II. Nouvelle leçon — '+(d.minutes===60?45:95)+' min')];
   const f=ped.flow(d);
   rows.push(row6('1. Mise en situation\n'+f[0].minutes+' min',d.situation,[p('Les élèves écoutent et répondent à l’oral.',{size:S.table,after:40}),ra(d.situationAnswer)],'Brainstorming',d.observe.support||'Support de séance'));
   rows.push(row6('2. Objectif\n'+f[1].minutes+' min','Aujourd’hui nous allons apprendre : « '+d.title+' ». Après cette séance vous serez capables de : '+d.objective,'Les élèves écoutent et nomment la tâche.','Annonce claire','Tableau noir, cahier'));
@@ -101,7 +101,9 @@ function partFooter(p0){
   const fc=(children,width)=>new TableCell({width:{size:width,type:WidthType.DXA},verticalAlign:VerticalAlign.CENTER,margins:{top:0,bottom:0,left:0,right:80},children});
   // QR à 80 px : les 36 codes restent décodables après réduction numérique (validate_qr.js).
   const qr=new Paragraph({alignment:AlignmentType.CENTER,spacing:{before:0,after:0},children:[inlineImg(`manual/qr/${p0.id}_audio.png`,80,'QR code vers la consigne audio Google Drive de la partie '+p0.id)]});
-  return new Footer({children:[table([8400,1800],[new TableRow({children:[fc(lines,8400),fc([qr],1800)]})],noBorders())]});
+  // Paragraphe terminal explicite après le tableau : certains moteurs Word refusent un pied de page qui se termine par w:tbl.
+  const tail=new Paragraph({spacing:{before:0,after:0,line:20,lineRule:LineRuleType.EXACT},children:[]});
+  return new Footer({children:[table([8400,1800],[new TableRow({children:[fc(lines,8400),fc([qr],1800)]})],noBorders()),tail]});
 }
 function transcriptionsAnnex(){ const out=[pageBreak(),h1('TRANSCRIPTIONS AUDIO','bm_transcripts'),p('Version texte des consignes audio pour préparer ou conduire la séance sans smartphone.',{size:S.body})];
   for(const p0 of parts){ const tr=transcript(p0.id); out.push(pRuns([new Bookmark({id:'bm_tr_'+p0.id,children:[run(shortTitles[p0.id]||p0.title,{bold:true,size:S.h3})]})],{before:120,after:40})); if(tr){ out.push(p(tr.kind+' :',{bold:true,size:S.small,color:C.grey,after:40})); out.push(p(tr.text,{size:S.body})); if(tr.note) out.push(p(tr.note,{italics:true,size:S.small,color:C.grey})); } }

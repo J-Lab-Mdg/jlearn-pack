@@ -178,3 +178,15 @@ Contrôles clés :
 - **Contrôles** : `validate_docx.py` PASS ; `validate_qr.js` PASS **75/75** (39 QR sources + 36 QR réduits à 80 px). Le scan physique après impression reste dans le contrôle terrain. Pas de rendu Word/PDF complet dans l’environnement.
 - **Vidéos** : bilan inchangé depuis le lot précédent, 23 URLs distinctes / 26 insertions / 12 parties sans vidéo ; ajouts danse S25/S26/S27/S28a conservés. Aucun visionnage intégral revendiqué.
 - **Livrable** : `art-t9/output/Art_T9_J-Learn.docx` rebuildé ; structure 36 parties / 33 séances / 66 h, charnières S6/S17/S28 inchangées.
+
+## 9. Correctif compatibilité Word — 2026-11-06
+
+- **Symptôme utilisateur** : le fichier V4 final ne s’ouvre pas dans Word.
+- **Cause racine identifiée par validation XSD OOXML** : 36 cellules `w:tc` du tableau de déroulement (ligne « I. Révision ») contenaient du **texte brut** directement dans la cellule, au lieu de paragraphes `w:p`. Cela venait de `d.review` (tableau de paires question/réponse) passé tel quel à `row6`/`cell`. `lxml` et `python-docx` toléraient, mais le schéma WordprocessingML est violé (`w:tc` est element-only) et Word peut refuser le fichier.
+- **Correctifs build.js** :
+  - `cell()` normalise désormais les enfants : aplatissement, conversion des chaînes en paragraphes, refus explicite des enfants invalides.
+  - La ligne « I. Révision » transforme chaque paire question/réponse en paragraphes séparés (question en gras + `R.A. : …`).
+  - Chaque pied de page ressources se termine par un paragraphe explicite après le tableau (mesure de prudence Word, hauteur 1 pt).
+- **Validateur renforcé** : `validate_docx.py` refuse désormais tout texte brut dans les conteneurs element-only (`w:tc`, `w:p`, `w:r`, `w:tbl`, etc.), tout tableau dans un paragraphe, tout pied de page ou cellule sans paragraphe terminal, et les ids `wp:docPr` dupliqués entre corps/en-tête/pieds.
+- **Contrôles après rebuild** : validation XSD WordprocessingML **0 erreur** sur document, 71 pieds de page, en-tête, styles, settings, numbering, fontTable ; `validate_docx.py` PASS ; `validate_qr.js` PASS **75/75**. Fichier : **17 553 934 octets**.
+- **Limite honnête** : pas de moteur Word/LibreOffice dans l’environnement ; la preuve disponible est la conformité XSD + structurelle + QR, pas un ouverture rendue dans Word. Si Word affiche encore une erreur, récupérer le message exact et la version de Word.

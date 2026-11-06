@@ -205,3 +205,8 @@ L'utilisateur a validé la méthode proposée :
 - QA visuelle : S14 reprise pour âge T9, S28b reprise pour âge T9 et chaussures fermées. SVG vectoriels historiques archivés ; générateur vectoriel désactivé par défaut.
 - Pieds de page corrigés : QR 80 px décodable, Audio seul en 10 pt, autres textes 13 pt, marge basse réservée, mapping section→footer vérifié (audio/QR/Texte/vidéos/page).
 - Validateurs : docx PASS ; QR 75/75 (39 sources + 36 réduits). Scan physique et rendu Word restent à vérifier sur le poste enseignant.
+
+### 2026-11-06 — Correctif « ne s’ouvre pas dans Word »
+- Diagnostic : le docx V4 violait le schéma OOXML sur 36 cellules (texte brut dans `w:tc` au lieu de `w:p`), via les paires question/réponse de la ligne « I. Révision ». Les validateurs XML bien formé + QR ne suffisaient pas.
+- Correctif : normalisation des enfants de cellules, révision transformée en paragraphes, paragraphe terminal explicite dans les pieds de page tableau, validateur docx renforcé (conteneurs element-only, pieds/cellules terminés par `w:p`, ids `wp:docPr` uniques).
+- Rebuild + validation XSD WordprocessingML 0 erreur, validateur docx PASS, QR 75/75. Ne pas rediffuser l’ancien lien `3c3ca1f` ; utiliser le nouveau commit. Pas de rendu Word disponible ici : demander le message exact si le problème persiste.
