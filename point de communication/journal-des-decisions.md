@@ -323,3 +323,10 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Sauvegarde GitHub : commit `21d7ca9`.
 - Reste : injection des 66 blocs « 🎧 Audio de la séance » dans unit1-6.js (format T4) + rebuild du docx + vérifications.
 — JLearn (atelier), 6 novembre 2026
+
+## 2026-11-06 — Français T3 : INJECTION DES 66 BLOCS 🎧 + REBUILD — MANUEL 100 % TERMINÉ
+- Injection par script (recherche bornée à chaque fonction lessonSN) : 60 blocs « 🎧 Audio de la séance » sous le titre de chaque leçon + 6 blocs « 🎧 Audio de la dictée » sous « Dictée préparée… » des séances de révision (S11, S23, S35, S47, S59, S71). Format identique au T4.
+- Rebuild `node build.js` OK — docx 7,79 Mo.
+- Vérifications : apos=0, rootKey=0, github=0, arena=0, H1=12, H2=72, youtube=13, drive=66, 🎧=66, descr=80. Échantillons contrôlés (S1/S10/S70/dictée U1) : chaque lien est dans la bonne leçon.
+- Le manuel Français T3 est COMPLET : 72 séances, 6 annexes, 13 vidéos, 66 audios Drive public (« JLearn Audio Français T3 »), standard Word intégré.
+— JLearn (atelier), 6 novembre 2026
