@@ -1,4 +1,4 @@
-LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V6
+LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V7
 
 1. ÉTAT D’AVANCEMENT
    - Le modèle correct a été identifié dans `Nos manuels/Math_T5_JLearn.docx`, explicitement intitulé Math T5.
@@ -6,7 +6,7 @@ LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V6
    - Il contient 218 tableaux et 231 illustrations intégrées.
    - Le fichier original Math T5 est inchangé.
    - Une lecture exhaustive des 68 sections réelles est disponible dans `audits/AUDIT_MATH_T5_68_SEANCES_LIGNE_PAR_LIGNE.md`.
-   - Le prototype recommandé est maintenant `manuel-mathematiques-t10/prototypes/Manuel_Mathematiques_T10_JLearn_V6.docx`. V1, V2, V3, V4 et V5 sont conservés comme versions historiques.
+   - Le prototype recommandé est maintenant `manuel-mathematiques-t10/prototypes/Manuel_Mathematiques_T10_JLearn_V7.docx`. V1, V2, V3, V4, V5 et V6 sont conservés comme versions historiques.
 
 2. POINT DE COMMUNICATION DU DÉPÔT
    - `Lettre-de-passation-Relais2.md` est la lettre de communication historique du projet Math 7e/ancien relais ; elle n’est pas écrasée.
@@ -22,7 +22,7 @@ LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V6
    - `skills/jlearn-manuel-scolaire-v18/mathematiques.md` : règles propres aux mathématiques.
    - `skills/jlearn-manuel-scolaire-v18/design-fiche.md` : design de la fiche.
 
-4. STRUCTURE T5 REPRISE DANS LE V6
+4. STRUCTURE T5 REPRISE DANS LE V7
    - Six unités T10 : Logique et algorithmique ; Nombres réels et encadrements ; Trinôme/systèmes/polynômes ; Équations et fonctions ; Vecteurs/droites/cercles ; Statistiques et trigonométrie.
    - Chaque unité comporte deux leçons, une révision et un sujet d’examen prototype.
    - L’unité commence sur sa page ; chaque fiche commence sur une nouvelle page.
@@ -32,7 +32,7 @@ LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V6
    - Méta-table à deux cellules : informations pédagogiques à gauche, date/classe/séance/durée à droite, sans bordure.
    - Fiche de déroulement à 6 colonnes et 11 lignes.
    - `II. NOUVELLE LEÇON` est une grande étape fusionnée, suivie de six sous-étapes.
-   - Une boîte `EXPLICATION FACILE` suit le titre ; la leçon formelle est placée dans une boîte `RÉSUMÉ DE LA LEÇON`.
+   - Une partie développée `DÉCOUVERTE DE LA NOTION` suit le titre, avec exemples, attention, tableaux et questions ; la leçon formelle reste dans une boîte `RÉSUMÉ DE LA LEÇON`.
    - Progression explicite : leçons → révision de l’unité → sujet d’examen → corrigé séparé.
    - Code couleur : titres rouges, sous-titres verts, repères bleus, corrections roses.
 
@@ -44,7 +44,7 @@ LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V6
    - Le Math T5 original reste inchangé.
    - La couverture n’est pas encore adaptée ; utiliser le coverbook fourni ultérieurement et ne modifier que la matière et la classe.
 
-6. VÉRIFICATIONS DU V6
+6. VÉRIFICATIONS DU V7
    - Archive DOCX valide (`testzip()` positif).
    - Une seule section Word.
    - Six unités visibles dans le tableau de bord et dans le sommaire.
@@ -52,18 +52,18 @@ LETTRE DE PASSATION — Manuel Mathématiques T10 — Prototype V6
    - 6 révisions et 6 sujets d’examen format T10.
    - Méta-tables à deux cellules et sans bordures.
    - Fiches à six colonnes et 11 lignes.
-   - 12 boîtes `EXPLICATION FACILE` et 12 cadres `RÉSUMÉ DE LA LEÇON`.
+   - 12 parties `DÉCOUVERTE DE LA NOTION` et 12 cadres `RÉSUMÉ DE LA LEÇON`.
    - 12 signets de séance et 12 liens internes du sommaire conservés.
    - Les formules OMML des leçons existantes sont conservées ; les nouvelles synthèses et évaluations utilisent aussi les symboles mathématiques Unicode.
 
 7. À FAIRE EN PRIORITÉ
-   - Ouvrir le V6 dans Word PC et contrôler les pages, tableaux, cadres, liens et équations.
+   - Ouvrir le V7 dans Word PC et contrôler les pages, tableaux, cadres, liens et équations.
    - Vérifier tous les corrigés par calcul réel.
-   - Comparer le découpage proposé avec le volume horaire officiel T10 ; le V6 reste un prototype de structure, pas encore le manuel annuel complet.
+   - Comparer le découpage proposé avec le volume horaire officiel T10 ; le V7 reste un prototype de structure, pas encore le manuel annuel complet.
    - Développer les deux leçons de chaque unité en séances supplémentaires si le programme T10 l’exige.
    - Adapter ensuite la couverture selon les règles utilisateur.
 
 8. QUESTIONS EN SUSPENS
    - Nombre exact de séances T10 à produire dans la version complète.
    - Découpage définitif des grands thèmes en séances quotidiennes.
-   - Validation Word PC du V6.
+   - Validation Word PC du V7.
