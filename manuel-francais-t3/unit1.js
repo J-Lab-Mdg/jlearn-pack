@@ -180,6 +180,10 @@ function lessonS1() {
     corrige("le petit déjeuner → le matin ; le déjeuner → à midi ; le goûter → à quatre heures ; le dîner → le soir."),
     exo("4. Je redis.", "En une phrase : pourquoi faut-il manger des fruits et des légumes ?"),
     corrige("Exemple : Les fruits et les légumes donnent une bonne santé."),
+    p("", { after: 40 }),
+    pr([run("\ud83c\udfac POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson \u00ab Au petit déjeuner \u00bb (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=Ixl8hRHIdzg", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 
@@ -271,6 +275,10 @@ function lessonS2() {
     corrige("la banane → sucré ; le poisson séché → salé ; le citron → aigre ; le café → amer."),
     exo("4. Je parle.", "Dis une phrase : un aliment + son goût."),
     corrige("Exemple : La mangue est sucrée. / Le citron est aigre."),
+    p("", { after: 40 }),
+    pr([run("\ud83c\udfac POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson \u00ab J\'aime les fruits \u00bb (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=yi9ef0dmz2w", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 
@@ -608,6 +616,10 @@ function lessonS6() {
     relier(["Je", "Tu", "Elle"],
            ["as une mangue.", "suis content.", "fait le dîner."]),
     corrige("Je → suis content. Tu → as une mangue. Elle → fait le dîner."),
+    p("", { after: 40 }),
+    pr([run("\ud83c\udfac POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson \u00ab Le verbe avoir au présent \u00bb (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=MnUWNIN3zss", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 
@@ -691,6 +703,10 @@ function lessonS7() {
     corrige("a) Tu aimes le pain. b) Je mange du riz."),
     exo("4. J'écris.", "Une phrase avec « j'aime » et une phrase avec « je mange »."),
     corrige("Exemple : J'aime les fruits. Je mange une papaye."),
+    p("", { after: 40 }),
+    pr([run("\ud83c\udfac POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson \u00ab Le verbe parler — les verbes en -er au présent \u00bb (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=pc7fnFdWNkk", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 

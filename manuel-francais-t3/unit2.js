@@ -179,6 +179,10 @@ function lessonS13() {
     corrige("Tiana → joue dans la cour ; Tante Bodo → porte le bébé ; Tonton Solo → parle avec papa ; Grand-mère Bao → raconte une histoire."),
     exo("4. Je redis.", "En une phrase : que fait la famille dimanche ?"),
     corrige("Exemple : Dimanche, toute la famille est réunie chez grand-père Rabe."),
+    p("", { after: 40 }),
+    pr([run("\ud83c\udfac POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson \u00ab Ma famille — chanson avec gestes \u00bb (Deva) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=-Rlgsu1hd3s", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 
@@ -269,6 +273,10 @@ function lessonS14() {
     corrige("a) la grand-mère — b) le cousin — c) son neveu."),
     exo("4. J'écris.", "Deux phrases sur ta famille avec deux mots de la leçon."),
     corrige("Exemple : Mon oncle habite à Antsirabe. Ma cousine joue avec moi."),
+    p("", { after: 40 }),
+    pr([run("\ud83c\udfac POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson \u00ab Ma famille — le vocabulaire de la famille \u00bb (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=MFk9YmJv-jc", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 
@@ -615,6 +623,10 @@ function lessonS18() {
     corrige("a) dans — b) devant — c) à droite."),
     exo("4. Je raconte.", "Mon dimanche en trois phrases avec d'abord, ensuite, enfin."),
     corrige("Exemple : D'abord, je vais chez ma grand-mère. Ensuite, je joue avec mes cousins. Enfin, nous mangeons ensemble."),
+    p("", { after: 40 }),
+    pr([run("\ud83c\udfac POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson \u00ab Où est le chat ? — les prépositions de lieu \u00bb (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=npniUd2M_vI", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 

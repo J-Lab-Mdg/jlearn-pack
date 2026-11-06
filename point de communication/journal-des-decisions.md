@@ -214,3 +214,13 @@ Décisions actées :
 - 4 nouvelles images (réveil au chant du coq, bande des 4 moments de la journée, devoirs du soir à la lampe, déjeuner sous le manguier), toutes sans texte.
 
 — Agent « manuels de langues », 2026-11-06.
+
+### 2026-11-06 — Français T3 : vidéos YouTube en fin de leçon (décision utilisateur)
+
+Nouvelle règle validée par J-Lab (questionnaire du jour) :
+- **Périmètre** : T3 d'abord ; les autres manuels « on verra après ».
+- **Placement** : en FIN de leçon, rubrique « 🎬 POUR ALLER PLUS LOIN — je regarde la chanson « … » (auteur) : lien ». Même convention visuelle que les liens audio (lien bleu 1F618D, taille 22).
+- **Règle de prudence** : une vidéo SEULEMENT quand une vidéo fiable et bien connue colle à la leçon (répertoire FLE reconnu : Alain Le Lait, Deva, Titounis…). Sinon, pas de vidéo. Liens vérifiés par recherche croisée (titre + URL confirmés par plusieurs sources).
+- 7 vidéos injectées : U1 S1 « Au petit déjeuner » (Ixl8hRHIdzg), S2 « J'aime les fruits » (yi9ef0dmz2w), S6 « Verbe avoir au présent » (MnUWNIN3zss), S7 « Verbe parler / verbes en -er » (pc7fnFdWNkk) ; U2 S13 « Ma famille » Deva (-Rlgsu1hd3s), S14 « Ma famille » Alain Le Lait (MFk9YmJv-jc), S18 « Où est le chat ? / prépositions » (npniUd2M_vI). U3 : rien d'assez fiable trouvé pour l'instant (moments de la journée, sons) — à compléter si on trouve mieux. U4-U6 : vidéos cherchées au moment de la rédaction.
+
+— Agent « manuels de langues », 2026-11-06.
