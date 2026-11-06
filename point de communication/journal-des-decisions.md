@@ -165,3 +165,14 @@ L'utilisateur a validé la méthode proposée :
 - Schémas : `manual_assets.js` v3, 210 PNG/SVG régénérés, consignes wrappées, S2/S4/S5 et 12/8 repris en priorité.
 - Vidéos : audit oEmbed + description/chapitres/transcript quand accessibles ; lien mort remplacé ; liens trop longs, genrés, peu sûrs ou hors sujet retirés. Corrections centralisées dans `media_corrections.js`.
 - Validation docx PASS ; ne pas revendiquer « toutes les scènes uniques » ni « vidéos intégralement visionnées ».
+
+## Correctif médias finalisé — 2026-11-06
+
+- Suite du correctif partiel : les 20 scènes restantes sont intégrées. Bilan scènes : **36 parties = 36 fichiers distincts** ; 30 renouvelées (17 IA retenues + 13 vectorielles), 6 ancres pilotes conservées.
+- Trois candidates IA rejetées (S26 saut/pieds nus, S28b échauffement hors cœur, S33 livre ≠ conte) remplacées par vectoriel ; ne pas les réutiliser.
+- S15 : schéma d’aplats remplacé par motifs de paysage ; vidéo d’aplats retirée. S17a : tutoriel peinture retiré. S28b/S33 : échauffement retiré.
+- Vidéos final : **20 URLs distinctes / 22 insertions / 16 parties sans vidéo** ; oEmbed positif le 06/11/2026 ; aucun visionnage intégral revendiqué.
+- Schémas : 210 PNG/SVG v3, PNG optimisés palette ; S2/S4/S5/S15/12/8 contrôlés visuellement.
+- Validateur renforcé : scène réutilisée = erreur ; IDs `WvEeYiklvH0` et `V8-5R5CsIWA` ajoutés aux interdits.
+- Livrable rebuildé : `art-t9/output/Art_T9_J-Learn.docx`, validation XML PASS. Rapport : `art-t9/AUDIT-MEDIAS-2026-11-06.md`.
+- Limites assumées : pas de rendu PDF/Word complet ; toutes les scènes ne sont pas IA ; quelques vestes/blouses blanches IA restent à harmoniser plus tard si besoin.
