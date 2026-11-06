@@ -277,3 +277,10 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Reste pour clôturer le T3 : les AUDIOS voice-01 (un par leçon + 6 dictées) et le Drive public « JLearn Audio Français T3 », puis l'injection des liens 🎧.
 
 — Agent « manuels de langues », 2026-11-06.
+
+## 2026-11-06 — Français T3 : audios Unité 1 (S1-S10)
+- 10 clips générés (voice-01, convention T4 : `u1_sN_ecoute/lecon.mp3`) : passage d'écoute lu 2×, lexique+goûts, texte de lecture, adjectifs, comparatifs, être/avoir/faire, verbes en -er, sons [ã]/[õ], boîte à phrases PO, plan + modèle PE.
+- Dossier Drive public dédié créé : « JLearn Audio Français T3 » (`19OTOu6ppUJW31C6dyAhxSqu-Yp7GdOmI`), lecture seule, 10 MP3 uploadés ; IDs consignés dans `manuel-francais-t3/audio/drive_ids_u1.txt`.
+- Sauvegarde GitHub des MP3 : commit `4672904`.
+- Suite : U2 (S13-S22) au prochain tour, puis U3→U6, puis les 6 dictées ultra courtes, et enfin injection des blocs 🎧 dans unit1-6.js + rebuild.
+— JLearn (atelier), 6 novembre 2026
