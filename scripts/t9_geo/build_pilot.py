@@ -25,6 +25,7 @@ sys.path.insert(0, HERE)
 MEDIA_DIR = os.path.join(HERE, "charts_sample")
 
 from content_unit1 import UNIT1, LESSONS  # noqa: E402
+from content_unit2 import UNIT2, LESSONS2, EXAM2  # noqa: E402
 
 SRC = os.path.join(ROOT, "Nos manuels", "Manuel_Geographie_T8_JLearn.docx")
 OUT = os.path.join(ROOT, "Nos manuels", "Manuel_Geographie_T9_V1_PILOTE.docx")
@@ -372,8 +373,8 @@ def build_corrige_block(num, points, answers):
     return elems
 
 
-def build_seance_elements(idx, total, lesson, footnotes=None, doc=None):
-    """idx : numero de seance (1..18). Retourne la liste d'elements XML."""
+def build_seance_elements(idx, total, lesson, unit, footnotes=None, doc=None):
+    """idx : numero de seance global (1..76). Retourne la liste d'elements XML."""
     out = []
 
     marker = mk(lesson_tpl, 'seance_marker')
@@ -390,7 +391,7 @@ def build_seance_elements(idx, total, lesson, footnotes=None, doc=None):
     # --- meta-table ---
     meta = mk(lesson_tpl, 'meta_table')
     set_table_cell_text(meta, 0, 1, ["Géographie"])
-    set_table_cell_text(meta, 1, 1, [UNIT1["theme"]])
+    set_table_cell_text(meta, 1, 1, [unit["theme"]])
     set_table_cell_text(meta, 1, 3, ["T9"])
     set_table_cell_text(meta, 2, 1, [lesson['titre']])
     set_table_cell_text(meta, 2, 3, [f"{idx} / {total}"])
@@ -677,7 +678,7 @@ def build_revision_elements(idx, total, unit, lessons):
 # ---------------------------------------------------------------------
 # 5. Construction du sujet d'examen (seance 20)
 # ---------------------------------------------------------------------
-def build_exam_elements(idx, total, unit, lessons):
+def build_exam_elements_u1(idx, total, unit, lessons):
     out = []
     marker = mk(exam_tpl, 'seance_marker')
     set_single_run_text(marker, f"SÉANCE {idx} / {total}")
@@ -754,6 +755,61 @@ def build_exam_elements(idx, total, unit, lessons):
     return out
 
 
+def build_exam_elements_from_spec(idx, total, unit, exam_spec):
+    """Construit un sujet d'examen generique a partir d'une spec statique
+    (exam_spec['exercises'] = liste de {points, instruction, questions,
+    answers}), pour les unites dont le contenu d'examen est redige directement
+    dans le fichier content_unitN.py plutot que derive dynamiquement des
+    lecons (cas de l'unite 1)."""
+    out = []
+    marker = mk(exam_tpl, 'seance_marker')
+    set_single_run_text(marker, f"SÉANCE {idx} / {total}")
+    out.append(marker)
+
+    title = mk(exam_tpl, 'exam_title')
+    title_suffix = exam_spec.get('title_suffix', unit['theme'].upper())
+    set_single_run_text(title, f"Sujet d'examen T9 — Unité {unit['num']} — {title_suffix}")
+    out.append(title)
+
+    db = mk(exam_tpl, 'duree_bareme')
+    set_single_run_text(db, "Durée : 60 minutes — Barème : 20 points")
+    out.append(db)
+
+    instr = mk(exam_tpl, 'instruction_exam')
+    set_single_run_text(instr, "Lis attentivement chaque consigne et rédige des réponses précises.")
+    out.append(instr)
+
+    exercises = exam_spec['exercises']
+    for i, ex in enumerate(exercises, start=1):
+        out.extend(build_exercise_block(i, ex['points'], ex['instruction'], ex['questions']))
+
+    total_p = mk(exam_tpl, 'total_line_exam')
+    set_single_run_text(total_p, "Total : 20 points")
+    out.append(total_p)
+
+    out.append(mk(exam_tpl, 'corrige_bareme_header'))
+
+    def exam_corrige_block(num, points, answers):
+        elems = []
+        h = mk(lesson_tpl, 'exercise_header')
+        set_single_run_text(h, f"Exercice {num} ({points} points)")
+        elems.append(h)
+        for a in answers:
+            p = mk(lesson_tpl, 'corrige_line')
+            set_single_run_text(p, a)
+            elems.append(p)
+        return elems
+
+    for i, ex in enumerate(exercises, start=1):
+        out.extend(exam_corrige_block(i, ex['points'], ex['answers']))
+
+    total_p2 = mk(exam_tpl, 'total_line_exam')
+    set_single_run_text(total_p2, "Total : 20 points")
+    out.append(total_p2)
+
+    return out
+
+
 # ---------------------------------------------------------------------
 # 6. Assemblage final du document
 # ---------------------------------------------------------------------
@@ -768,7 +824,7 @@ def main():
     for child in list(body.iterchildren()):
         body.remove(child)
 
-    TOTAL = UNIT1['total_seances']
+    TOTAL = 76  # numerotation globale des seances du manuel T9 complet
 
     # -- page de garde minimale --
     cover_p = OxmlElement('w:p')
@@ -789,15 +845,17 @@ def main():
     i_el = OxmlElement('w:i'); rpr2.append(i_el)
     run2.append(rpr2)
     t2 = OxmlElement('w:t')
-    t2.text = ("Version pilote — Unité 1 : La structure économique de Madagascar "
-               "(18 heures, séances 1 à 20 sur 76). Document de validation du format "
-               "avant la production complète des 6 unités du manuel.")
+    t2.text = ("Version pilote — Unités 1 et 2 : La structure économique de Madagascar ; "
+               "la méthodologie de traitement de devoir (22 heures, séances 1 à 26 sur 76). "
+               "Document de validation du format avant la production complète des 6 unités du manuel.")
     run2.append(t2)
     sub_p.append(run2)
     body.append(sub_p)
     body.append(clone(lesson_tpl['blank']))
 
-    # -- entete d'unite --
+    # ------------------------------------------------------------------
+    # Unite 1 : La structure economique de Madagascar (seances 1-20)
+    # ------------------------------------------------------------------
     unit_title = mk(unit_header_tpl, 'unit_title')
     set_single_run_text(unit_title, UNIT1['toc_title'])
     body.append(unit_title)
@@ -808,7 +866,7 @@ def main():
 
     # -- 18 seances de lecon --
     for i, lesson in enumerate(LESSONS, start=1):
-        for el in build_seance_elements(i, TOTAL, lesson, footnotes=footnotes, doc=doc):
+        for el in build_seance_elements(i, TOTAL, lesson, UNIT1, footnotes=footnotes, doc=doc):
             body.append(el)
 
     # -- revision (seance 19) --
@@ -816,7 +874,32 @@ def main():
         body.append(el)
 
     # -- examen (seance 20) --
-    for el in build_exam_elements(20, TOTAL, UNIT1, LESSONS):
+    for el in build_exam_elements_u1(20, TOTAL, UNIT1, LESSONS):
+        body.append(el)
+
+    # ------------------------------------------------------------------
+    # Unite 2 : La methodologie de traitement de devoir (seances 21-26)
+    # ------------------------------------------------------------------
+    body.append(clone(lesson_tpl['blank']))
+    unit2_title = mk(unit_header_tpl, 'unit_title')
+    set_single_run_text(unit2_title, UNIT2['toc_title'])
+    body.append(unit2_title)
+    unit2_them = mk(unit_header_tpl, 'unit_thematique')
+    set_single_run_text(unit2_them, UNIT2['thematique_officielle'])
+    body.append(unit2_them)
+    body.append(mk(unit_header_tpl, 'blank'))
+
+    # -- 4 seances de lecon (21-24) --
+    for i, lesson in enumerate(LESSONS2, start=21):
+        for el in build_seance_elements(i, TOTAL, lesson, UNIT2, footnotes=footnotes, doc=doc):
+            body.append(el)
+
+    # -- revision (seance 25) --
+    for el in build_revision_elements(25, TOTAL, UNIT2, LESSONS2):
+        body.append(el)
+
+    # -- examen (seance 26) --
+    for el in build_exam_elements_from_spec(26, TOTAL, UNIT2, EXAM2):
         body.append(el)
 
     # -- restaurer sectPr a la fin du document --
