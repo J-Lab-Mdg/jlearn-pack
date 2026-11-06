@@ -176,3 +176,13 @@ L'utilisateur a validé la méthode proposée :
 - Validateur renforcé : scène réutilisée = erreur ; IDs `WvEeYiklvH0` et `V8-5R5CsIWA` ajoutés aux interdits.
 - Livrable rebuildé : `art-t9/output/Art_T9_J-Learn.docx`, validation XML PASS. Rapport : `art-t9/AUDIT-MEDIAS-2026-11-06.md`.
 - Limites assumées : pas de rendu PDF/Word complet ; toutes les scènes ne sont pas IA ; quelques vestes/blouses blanches IA restent à harmoniser plus tard si besoin.
+
+## Arbitrage utilisateur — améliorations Arts T9 — 2026-11-06
+
+- Audios : ne plus les héberger sur GitHub ; les mettre sur Google Drive. ZIP audio téléchargeable en un clic demandé.
+- Acceptés : grille observable, vidéos/extraits si possible, différenciation, checklist matériel/sécurité, timing, trace élève, validation terrain, harmonisation visuelle, audio sans smartphone, navigation, ancrage local, accessibilité, progression par compétences, variantes.
+- Refusés : version élève séparée (trop lourd, pas d’autre doc pour le moment) ; portfolio/bilats.
+- Crédits/licence/traceabilité : reprendre la convention déjà présente dans les manuels de géographie identifiés : `Geographie_T6_JLearn.docx` (Authenticité et droits, © J-Learn, avant-propos, mode d’emploi, glossaire, sources), `Manuel_Geographie_3e_VF_V1.docx`, `Manuel_Geographie_1ereACD_V1_FINAL.docx`.
+- Audit des remarques « Claude » : majorité confirmée sur le docx courant (coquilles, gabarits, notes internes, S1/S20, sommaire charnières, alt-textes, liens GitHub). Certaines remarques design sont partielles ou non vérifiables ici (rendu LibreOffice/Word, pagination exacte) ; la répétition de scènes est déjà corrigée (36 scènes uniques).
+- Drive commencé : dossier `J-Learn — Audios Arts T9` créé et public ; ZIP `Art_T9_Audios_J-Learn.zip` uploadé et public ; 32/36 MP3 uploadés. Limite d’upload atteinte : restent s30, s31, s32, s33 à uploader après pause (≥ 15 s) au prochain tour.
+- Correctifs sources appliqués sans rebuild final : coquille S7/S18, titres « ceci : », synthèses « Donc, » + minuscule, retrait note police/type d’examen, gabarit « voir les six sous-étapes », support générique, double libellés I/II/III, sommaire charnières, S20 écoute silencieuse + question son long + synthèse élargie.

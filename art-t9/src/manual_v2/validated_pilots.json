@@ -266,7 +266,7 @@
         "phrase": "Un motif répété ou alterné organise le paysage."
       }
     ],
-    "pratiqueTitre": "Peindre ceci : un autre paysage",
+    "pratiqueTitre": "Peindre un autre paysage",
     "pratiqueImg": "peinture_pratique_autre_paysage.png",
     "pratiqueCaption": "Nouveau paysage : rizière ou bord de rivière.",
     "pratiqueConsigne": "Consigne : choisis un autre paysage que le modèle. Remplis ou réutilise ton nuancier, fais une esquisse légère, peins les grandes zones, ajuste les valeurs, ajoute un motif organisé, puis présente ton tableau.",
@@ -307,7 +307,7 @@
     "qr": "qr_audio_sculpture.png",
     "comprendre": [
       "Un instrument à percussion doit produire un son : une membrane tendue vibre, un corps résonne, un objet est frappé ou secoué.",
-      "La séance 6 reste conforme au PE : fabrication d’un instrument de percussion recyclable. L’exemple malgache « amponga » peut être adapté avec les matériaux disponibles.",
+      "La séance 7 reste conforme au PE : fabrication d’un instrument de percussion recyclable. L’exemple malgache « amponga » peut être adapté avec les matériaux disponibles.",
       "La sécurité passe avant le décor : pas de bord coupant, pas d’outil dangereux sans adulte, objets propres."
     ],
     "preparer": [
@@ -557,7 +557,7 @@
         "phrase": "Un instrument doit être vu et entendu : teste le son."
       }
     ],
-    "pratiqueTitre": "Fabriquer ceci : un shaker / maracas",
+    "pratiqueTitre": "Fabriquer un shaker / maracas",
     "pratiqueImg": "sculpture_pratique_maracas.png",
     "pratiqueCaption": "Nouvel instrument : bouteille propre + graines ou capsules.",
     "pratiqueConsigne": "Consigne : fabrique un shaker ou des maracas avec une bouteille propre, des graines ou capsules, et une fermeture solide. Décore avec un motif organisé, puis joue une courte séquence rythmique.",
@@ -849,7 +849,7 @@
         "phrase": "Accompagne sans couvrir le chant."
       }
     ],
-    "pratiqueTitre": "Pratiquer ceci : un autre couplet ou un autre rythme",
+    "pratiqueTitre": "Pratiquer un autre couplet ou un autre rythme",
     "pratiqueImg": "musique_pratique_autre_couplet.png",
     "pratiqueCaption": "Transfert : autre couplet, autre rythme, même méthode.",
     "pratiqueConsigne": "Consigne : choisis un autre couplet du chant régional ou un nouveau rythme. Garde la même pulsation, change une nuance, puis présente ta production à un pair.",
@@ -1140,7 +1140,7 @@
         "phrase": "Une séquence a un début, un développement et une fin."
       }
     ],
-    "pratiqueTitre": "Danser ceci : une autre courte séquence",
+    "pratiqueTitre": "Danser une autre courte séquence",
     "pratiqueImg": "danse_pratique_autre_sequence.png",
     "pratiqueCaption": "Transfert : autre trajectoire ou autre pas de danse de salon.",
     "pratiqueConsigne": "Consigne : crée une autre courte séquence de danse de salon. Choisis une trajectoire différente, garde la pulsation, puis présente ta séquence à un pair.",
@@ -1431,7 +1431,7 @@
         "phrase": "Observe, dis une réussite, propose une amélioration."
       }
     ],
-    "pratiqueTitre": "Jouer ceci : une autre courte situation",
+    "pratiqueTitre": "Jouer une autre courte situation",
     "pratiqueImg": "dramatique_pratique_autre_situation.png",
     "pratiqueCaption": "Transfert : au marché, un personnage cherche un objet perdu.",
     "pratiqueConsigne": "Consigne : choisis une autre courte situation, par exemple au marché un personnage cherche un objet perdu. Comprends la situation, complète la fiche personnage, répète, joue, puis ajuste après observation.",
