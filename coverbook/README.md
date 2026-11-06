@@ -26,3 +26,4 @@ Les fichiers existants restent à leur emplacement d’origine et ne seront ni d
 | `FRANCAIS T1 coverbook.png` à `FRANCAIS T12 coverbook.png` | Français T1 à T12 | Série littéraire ; femme d’Anglais T10 sur les tomes impairs et homme de SVT T9 sur les tomes pairs |
 | `GEOGRAPHIE T4 coverbook.png` à `GEOGRAPHIE T12 coverbook.png` | Géographie T4 à T12 | Série cartographique avec carte de Madagascar, globe et atlas ; alternance des deux personnes de référence |
 | `HISTOIRE T8 coverbook.png` | Histoire T8 | Couverture historique avec carte de Madagascar, chronologie et homme de référence SVT T9 |
+| `ARTS T1 coverbook.png` à `ARTS T10 coverbook.png` | Arts T1 à T10 | Atelier artistique général ; homme sur les tomes impairs et femme sur les tomes pairs |
