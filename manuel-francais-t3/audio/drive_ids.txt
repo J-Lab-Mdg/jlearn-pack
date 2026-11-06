@@ -48,3 +48,15 @@ u4_s43_lecon.mp3  : 1hdktVZSuQ8bJR7bq2SMbxQf0S0813vqD
 u4_s44_lecon.mp3  : 1s15qPCCt88dqKuRZCYFmtw2dTAn4imBv
 u4_s45_lecon.mp3  : 1RlEOl49KqQJ217HCBPQlBiaUrzrU5oeY
 u4_s46_lecon.mp3  : 1jLNi0yMVnbpYIq0-qzlav4D5RCqnuw3s
+
+UNITÉ 5 — LA FERME
+u5_s49_ecoute.mp3 : 1g3-oS_dqs86JwUvcWSn_lbgX5Hy9e9U9
+u5_s50_lecon.mp3  : 1IRdUMYLSkn2t7DS7P9YYLEDHuuh08of_
+u5_s51_lecon.mp3  : 1Mn84SLRsinY2sdtruKFoSYGmuHkRVU5s
+u5_s52_lecon.mp3  : 1FcS2qskSHSnmOxtLCDP9a3REQjyxXMn0
+u5_s53_lecon.mp3  : 1ivxHMlQmMZNS2irN1hbT5jpU-9WUnnfB
+u5_s54_lecon.mp3  : 1rBLw7kiVgHhRESpW2NJBpxa5LWH_sG2t
+u5_s55_lecon.mp3  : 1J7zbh9lg-jlAB7iZnGlZGCXyO0LWgQqU
+u5_s56_lecon.mp3  : 1H06C6a6lqLJCh2dna7P-ZH2izdN5TjHI
+u5_s57_lecon.mp3  : 1bfHKLTvlnZrEKgIOPNul8YEVOC6yETNa
+u5_s58_lecon.mp3  : 1jy0CmktRno-vozdjyUZqxQ97wf_ju8FO

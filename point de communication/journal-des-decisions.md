@@ -303,3 +303,9 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - 10 MP3 uploadés dans le Drive public T3 ; IDs ajoutés à `drive_ids.txt`.
 - Sauvegarde GitHub : commit `fb4eeab`. Avancement : 40/66 clips.
 — JLearn (atelier), 6 novembre 2026
+
+## 2026-11-06 — Français T3 : audios Unité 5 (S49-S58)
+- 10 clips générés (voice-01) : « Une journée à la ferme » lu 2×, animaux et cris, lecture « Les cinq poussins », mâle/femelle/petit + habitats, négations ne…pas/plus/jamais (les deux gardiens), futur proche aller+infinitif, sons [œ̃]/[y] + grande phrase, PO récit d'abord/ensuite/enfin, PE gabarit 4 phrases, comptine de la ferme (rimes).
+- 10 MP3 uploadés dans le Drive public T3 ; IDs ajoutés à `drive_ids.txt`.
+- Sauvegarde GitHub : commit `0e13855`. Avancement : 50/66 clips.
+— JLearn (atelier), 6 novembre 2026
