@@ -15,11 +15,14 @@ import docx
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 from docx.opc.constants import RELATIONSHIP_TYPE as RT
+from docx.shared import Inches
+from docx.enum.text import WD_ALIGN_PARAGRAPH
 from lxml import etree
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, HERE)
+MEDIA_DIR = os.path.join(HERE, "charts_sample")
 
 from content_unit1 import UNIT1, LESSONS  # noqa: E402
 
@@ -276,6 +279,56 @@ def append_footnote_marker(title_p_el, footnote_id):
     title_p_el.append(run)
 
 
+def _optimized_image_stream(path, max_width_px=1400, jpeg_quality=82):
+    """Recompresse une image (PNG IA souvent lourd, 2-4 Mo) en JPEG de taille
+    raisonnable avant insertion, pour eviter un .docx de plusieurs dizaines
+    de Mo. Renvoie un BytesIO pret a etre passe a run.add_picture."""
+    from io import BytesIO
+    from PIL import Image
+    im = Image.open(path)
+    if im.mode in ('RGBA', 'P'):
+        bg = Image.new('RGB', im.size, (255, 255, 255))
+        bg.paste(im.convert('RGBA'), mask=im.convert('RGBA').split()[-1])
+        im = bg
+    else:
+        im = im.convert('RGB')
+    if im.width > max_width_px:
+        ratio = max_width_px / im.width
+        im = im.resize((max_width_px, int(im.height * ratio)), Image.LANCZOS)
+    buf = BytesIO()
+    im.save(buf, format='JPEG', quality=jpeg_quality, optimize=True)
+    buf.seek(0)
+    return buf
+
+
+def mk_image_paragraph(doc, filename, width_inches=5.8):
+    """Insere une image centree (gabarit : fichier de MEDIA_DIR), recompressee
+    en JPEG pour limiter la taille du document. Si le fichier n'existe pas
+    encore (lot d'images en cours de generation), renvoie None sans faire
+    echouer la construction du manuel."""
+    if not filename:
+        return None
+    path = os.path.join(MEDIA_DIR, filename)
+    if not os.path.isfile(path):
+        return None
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = p.add_run()
+    stream = _optimized_image_stream(path)
+    run.add_picture(stream, width=Inches(width_inches))
+    p_el = p._p
+    p_el.getparent().remove(p_el)
+    return p_el
+
+
+def mk_caption_paragraph(role, text):
+    """Construit une legende (italique, meme style que 'schema_line' /
+    'observation_line') pour une image de graphique inseree sous un sous-titre."""
+    p = mk(lesson_tpl, role)
+    set_single_run_text(p, text)
+    return p
+
+
 print("Fonctions utilitaires pretes")
 
 
@@ -319,7 +372,7 @@ def build_corrige_block(num, points, answers):
     return elems
 
 
-def build_seance_elements(idx, total, lesson, footnotes=None):
+def build_seance_elements(idx, total, lesson, footnotes=None, doc=None):
     """idx : numero de seance (1..18). Retourne la liste d'elements XML."""
     out = []
 
@@ -445,13 +498,21 @@ def build_seance_elements(idx, total, lesson, footnotes=None):
     schema = mk(lesson_tpl, 'schema_line')
     set_single_run_text(schema, f"Schéma pédagogique : {lesson['fig_title']}.")
     out.append(schema)
+    if doc is not None:
+        img = mk_image_paragraph(doc, lesson.get('schema_img'))
+        if img is not None:
+            out.append(img)
     out.append(mk(lesson_tpl, 'blank'))
 
     observation = mk(lesson_tpl, 'observation_line')
     set_single_run_text(observation, f"Document d'observation : {lesson['obs_title']}")
     out.append(observation)
+    if doc is not None:
+        img = mk_image_paragraph(doc, lesson.get('obs_img'))
+        if img is not None:
+            out.append(img)
 
-    for sec_title, paragraphs in lesson['sections']:
+    for sec_idx, (sec_title, paragraphs) in enumerate(lesson['sections']):
         sub = mk(lesson_tpl, 'subtitle')
         set_single_run_text(sub, sec_title)
         out.append(sub)
@@ -463,6 +524,14 @@ def build_seance_elements(idx, total, lesson, footnotes=None):
                 p = mk(lesson_tpl, 'body_plain')
                 set_single_run_text(p, para)
             out.append(p)
+        chart = lesson.get('chart')
+        if chart is not None and chart.get('after_section') == sec_idx and doc is not None:
+            out.append(mk(lesson_tpl, 'blank'))
+            cap = mk_caption_paragraph('schema_line', f"Graphique : {chart['caption']}")
+            out.append(cap)
+            img = mk_image_paragraph(doc, chart.get('image'))
+            if img is not None:
+                out.append(img)
 
     regle_p = mk(lesson_tpl, 'body_kw')
     set_keyword_para(regle_p, lesson['regle'])
@@ -739,7 +808,7 @@ def main():
 
     # -- 18 seances de lecon --
     for i, lesson in enumerate(LESSONS, start=1):
-        for el in build_seance_elements(i, TOTAL, lesson, footnotes=footnotes):
+        for el in build_seance_elements(i, TOTAL, lesson, footnotes=footnotes, doc=doc):
             body.append(el)
 
     # -- revision (seance 19) --
