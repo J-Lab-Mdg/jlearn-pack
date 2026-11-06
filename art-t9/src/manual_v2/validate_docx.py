@@ -34,6 +34,9 @@ audio=[u for u in hyper if u and u.endswith('.mp3')]
 yt=[u for u in hyper if u and 'youtube' in u]
 if len(audio)!=36: errors.append(f'liens audio={len(audio)}')
 if len(yt)<20: errors.append(f'liens YouTube={len(yt)}')
+forbidden=['n-XXUXO4BOU','uyrpxv5pKTg','SDs5WE0-u-I','IaVNharOE9I','qds0LEujwGs','oABX77s9x00']
+for fid in forbidden:
+    if any(fid in (u or '') for u in yt): errors.append('vidéo retirée encore présente: '+fid)
 if root.xpath('//w:fldSimple[contains(@w:instr,"TOC")]',namespaces=NS): errors.append('champ TOC natif présent')
 # tables 6 colonnes
 grids=root.xpath('//w:tblGrid',namespaces=NS)

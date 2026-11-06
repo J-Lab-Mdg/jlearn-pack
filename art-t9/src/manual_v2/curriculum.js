@@ -1,7 +1,8 @@
+const {sceneOverrides,videoOverrides}=require('./media_corrections');
 const parts = [
   ...require('./data_dessin'), ...require('./data_sculpture'), ...require('./data_peinture'),
   ...require('./data_musique'), ...require('./data_danse'), ...require('./data_dramatique'),
-].map(x => ({ ...x, audio: x.audio || `manual/audio/${x.id}.mp3` }))
+].map(x => ({ ...x, audio: x.audio || `manual/audio/${x.id}.mp3`, scene: sceneOverrides[x.id] || x.scene, videos: videoOverrides[x.id] ?? x.videos }))
  .sort((a,b)=>a.session-b.session || String(a.part||'').localeCompare(String(b.part||'')));
 const domains = ['Dessin','Sculpture','Peinture','Musique','Danse','Art dramatique'];
 const sessions = [];

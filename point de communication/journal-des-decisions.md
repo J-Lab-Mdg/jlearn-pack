@@ -155,3 +155,13 @@ L'utilisateur a validé la méthode proposée :
 - Correctif : la ligne 2 ne contient plus que « Enseignant » et « Apprenants » ; les 4 continuations sont laissées à la bibliothèque.
 - Largeurs rééquilibrées (total 10200 twips) : [1100, 2475, 2475, 1400, 1150, 1600] pour que chaque en-tête tienne sans césure verticale à 13 pt.
 - Validateur renforcé : chaque ligne de chaque tableau doit couvrir exactement sa grille ; en-tête déroulement ligne 2 = 6 cellules.
+
+
+## Correctif médias partiel — 2026-11-06
+
+- Retour utilisateur : scènes répétées, schémas incompréhensibles (S2/S4/S5 cités), image d’ouverture incohérente, vidéos à vérifier.
+- Cause scènes : mapping initial 12 fichiers pour 36 parties, réutilisation par domaine.
+- 10 nouvelles scènes intégrées (S2-S5, S6a/b, S8-S11). Limite de génération atteinte : 20 scènes restent à renouveler, listées dans `art-t9/AUDIT-MEDIAS-2026-11-06.md`.
+- Schémas : `manual_assets.js` v3, 210 PNG/SVG régénérés, consignes wrappées, S2/S4/S5 et 12/8 repris en priorité.
+- Vidéos : audit oEmbed + description/chapitres/transcript quand accessibles ; lien mort remplacé ; liens trop longs, genrés, peu sûrs ou hors sujet retirés. Corrections centralisées dans `media_corrections.js`.
+- Validation docx PASS ; ne pas revendiquer « toutes les scènes uniques » ni « vidéos intégralement visionnées ».

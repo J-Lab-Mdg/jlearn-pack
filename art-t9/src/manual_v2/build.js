@@ -90,7 +90,7 @@ function lecon(d){ const im=resolveImgs(d); const out=[pageBreak(),h1('LEÇON','
 function pratique(d){ const im=resolveImgs(d); const out=[pageBreak(),h1('PRATIQUE','bm_pratique_'+d.id),p(d.practice.title,{bold:true,color:C.red,size:S.h2,after:140}),p(d.practice.consigne,{size:S.body}),...img(im.practice,600,'Production de transfert : '+d.practice.title)];
   out.push(h2('Critères de réussite')); for(const c of d.practice.criteria) out.push(bullet('✔️ '+c,{color:C.green}));
   out.push(h2('Évaluation courte')); out.push(p(d.eval)); out.push(p('Type d’exercice : production pratique avec présentation orale. Type de sujet d’examen : réaliser une production à partir d’un modèle, d’un objet ou d’une situation, puis expliquer un choix et une amélioration.',{size:S.body,italics:true}));
-  if(d.videos.length){ out.push(h2('Vidéos utiles')); for(const v of d.videos){ out.push(videoPara(v)); out.push(p(v.use,{size:S.body,color:C.grey,after:60})); out.push(linkPara(v.url,v.url,{size:S.small,after:120})); } out.push(p('Liens proposés comme ressources ; l’enseignant les teste avant la classe et peut les remplacer par une démonstration locale.',{italics:true,size:S.small,color:C.grey})); }
+  if(d.videos.length){ out.push(h2('Vidéos utiles')); for(const v of d.videos){ out.push(videoPara(v)); out.push(p(v.use,{size:S.body,color:C.grey,after:60})); out.push(linkPara(v.url,v.url,{size:S.small,after:120})); } out.push(p('Liens vérifiés en disponibilité le 06/11/2026. L’enseignant visionne l’extrait choisi avant la classe et peut le remplacer par une démonstration locale.',{italics:true,size:S.small,color:C.grey})); }
   out.push(h2('Courte trace élève')); out.push(p(d.practice.trace,{size:S.body}));
   return out;
 }
