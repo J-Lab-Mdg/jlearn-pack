@@ -336,3 +336,12 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - 1 lien FAUX : U1 S1 « Au petit déjeuner » pointait vers une chanson d'Halloween (Lingobox). Corrigé → `d5U4kDDBCVA` « Au petit déjeuner - Alain Le Lait (Breakfast) » (tialela99, 1,8 M de vues), vérifié par oEmbed.
 - Rebuild docx + vérifs : youtube=13, drive=66, halloween=0, rootKey=0, github=0, arena=0, H1=12, H2=72.
 — JLearn (atelier), 6 novembre 2026
+
+## 2026-11-07 — LANCEMENT DU MANUEL FRANÇAIS T2 (10ème)
+- Périmètre validé par l'utilisateur (4 réponses) : formule T3 à l'identique (6 unités × 12 séances = 72, fiches de préparation + leçons style B + 4 exercices et plus corrigés + révision/test par unité + 6 annexes, standard Word d'office) ; niveau très débutant assumé (T2 = 1ère année de français écrit : textes de 2 à 4 phrases, alphabet + syllabes en fil rouge, écrit minimal copier/compléter/relier, oral dominant, beaucoup d'images) ; 1 audio par leçon sur un Drive public dédié « JLearn Audio Français T2 » + dictées comme T3 (2 phrases très courtes, 1 par unité) ; vidéos YouTube « Pour aller plus loin » vérifiées une par une via oEmbed, sinon sans vidéo.
+- Source : Programme d'Études T2 officiel (section FRANÇAIS), reformulé — pas de FRP 10ème disponible dans la bibliothèque numérique.
+- Les 6 unités (thématiques officielles de 32 h) : 1. Les formules de politesse — 2. La présentation de la famille — 3. La famille restreinte — 4. Les habitudes quotidiennes — 5. La maison — 6. Les objets de la salle de classe.
+- Design : mêmes gabarits que T3 (builders.js copié) ; couleurs d'unités D35400 / 884EA0 / 2471A3 / 148F77 / A04000 / B7950B ; personnages Tiana et Hery ; couverture provisoire charte tableau vert en attendant coverbook/.
+- Unité 1 « LES FORMULES DE POLITESSE » écrite et validée (require OK) : 12 séances (CO, lexique des 5 mots magiques, CE, FdL je veux/je peux et je fais/je dois, alphabet, syllabes, sons [ɛ̃]/[u], PO saluer-se présenter, PE copier-compléter, révision avec dictée « Bonjour, madame ! Merci, Tiana. », test sur 20 points corrigé) + grande leçon + 8 exercices supplémentaires + page « Je sais… ».
+- Feuille de route : U2→U6 (1 unité par tour) → annexes → images → audios (≈7 tours) → vidéos vérifiées → injection 🎧 + build final.
+— JLearn (atelier), 7 novembre 2026
