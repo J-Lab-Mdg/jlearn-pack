@@ -1,0 +1,82 @@
+DOSSIER DRIVE PUBLIC "JLearn Audio Français T3" : 19OTOu6ppUJW31C6dyAhxSqu-Yp7GdOmI
+https://drive.google.com/drive/folders/19OTOu6ppUJW31C6dyAhxSqu-Yp7GdOmI
+
+UNITÉ 1 — LES ALIMENTS
+u1_s1_ecoute.mp3  : 1yRlbvvWu8wK66izqcxTuvBFe-crwgdtv
+u1_s2_lecon.mp3   : 1NzLs_-4IF68wEV0Ee0fNgioRQJ2gHZIo
+u1_s3_lecon.mp3   : 1bKv518ReSy1KPiP8ttehzijMNVcKpAbR
+u1_s4_lecon.mp3   : 1w6TbJ3MWMCvXppqXmsUbtnkamCegGmJ7
+u1_s5_lecon.mp3   : 1_Tr5yWnVv5PskxoY7kEYRfm7BM-PGeDW
+u1_s6_lecon.mp3   : 1k6odj-lkcIgAAEDi_df4d3c5ewS5hHVB
+u1_s7_lecon.mp3   : 1_c4FrULPmv22nlx8MGkdlG3bseWHSJeg
+u1_s8_lecon.mp3   : 1r3XHIyPSBoTG-qLVf0uWJL8XRWbEDoYx
+u1_s9_lecon.mp3   : 1gi7eKthCaYeFWy1EcLiYpENvLh2Y3FHP
+u1_s10_lecon.mp3  : 1xUx-AfZVU51h7PySbGlovl6h5zjNdJP5
+
+UNITÉ 2 — LA FAMILLE ÉLARGIE
+u2_s13_ecoute.mp3 : 1M2HkbtrIp51wjaB4n-3F6p3efDHh0XKc
+u2_s14_lecon.mp3  : 1A6L1fU5IvRVXuZR8hcOj7jK4eM1ca4WZ
+u2_s15_lecon.mp3  : 1-HRW85YWnAuBBNje960vd_7jhX5MqR6K
+u2_s16_lecon.mp3  : 1CK-f-g5SOqGMF7OqCLmgg58XvFvtp__R
+u2_s17_lecon.mp3  : 16vSSbQ_kNsjYg4zHum9wIQjjiXReF53_
+u2_s18_lecon.mp3  : 1C357hEzEQUJVo3ewwicckHb_7043Czmj
+u2_s19_lecon.mp3  : 1T4qYVUi41yqNXiLIBLsFjpIuk5zBjMUl
+u2_s20_lecon.mp3  : 1wgSA_3g3TA4wuhK92XmWpu7HQMyt1PP0
+u2_s21_lecon.mp3  : 17RCKHTwEZt5HV4cJ7acYGvuR7v4iFHfr
+u2_s22_lecon.mp3  : 1QJMjbCut9GX7yDk5JnozQhPv1ID4nyGr
+
+UNITÉ 3 — LE TEMPS
+u3_s25_ecoute.mp3 : 1VjCl3DhjKyFtq20XxupvRW4d0jSg24zw
+u3_s26_lecon.mp3  : 13lQJ7qLkMV8JqNdLmpKWH4Y8uQzGuyzs
+u3_s27_lecon.mp3  : 1BktAsz9b1a26C3jN8-2_nkDiDGasGL2V
+u3_s28_lecon.mp3  : 13vQAt0N9VX84P8aKDD7bRd5hkKt1K3ug
+u3_s29_lecon.mp3  : 1e-Vq-vrxeVW4NfFgLfl0NW_a8dOAX5jL
+u3_s30_lecon.mp3  : 1FZu46btQfMD8_EhTotpipNYkIYT8G1l-
+u3_s31_lecon.mp3  : 19g2bxPRbXdj2Tgd1WR0rQ9l_HuGoss3m
+u3_s32_lecon.mp3  : 1Y4sTBvmoqkeIDGbQS9DwaWK5tRBnwtr9
+u3_s33_lecon.mp3  : 1FDbCpvzrAOSPmT4s5N0LvbF6zRIwYTr9
+u3_s34_lecon.mp3  : 1qtp2LmDYH8NCxX0DodrYCu7bdRrtcbEV
+
+UNITÉ 4 — L'ENVIRONNEMENT SCOLAIRE
+u4_s37_ecoute.mp3 : 1Zp_APiuBOCVsFJRXtDfq_AaF_uRSBNwO
+u4_s38_lecon.mp3  : 1ca5UMntAhlSQ8La5nnpThM1rYBgTWyhq
+u4_s39_lecon.mp3  : 1nFfLH1e8ySrzCE0mrpCUIugXh1TDatsm
+u4_s40_lecon.mp3  : 1coMCBm55lP6jJom0m_7PuVNftEbf6s3D
+u4_s41_lecon.mp3  : 1dDazBeJj1FE-9n8tRL3iws5_UVLRcTcx
+u4_s42_lecon.mp3  : 1BK3sx6Sr8Wk-mYB2zo5GHS5hw3SgysQQ
+u4_s43_lecon.mp3  : 1hdktVZSuQ8bJR7bq2SMbxQf0S0813vqD
+u4_s44_lecon.mp3  : 1s15qPCCt88dqKuRZCYFmtw2dTAn4imBv
+u4_s45_lecon.mp3  : 1RlEOl49KqQJ217HCBPQlBiaUrzrU5oeY
+u4_s46_lecon.mp3  : 1jLNi0yMVnbpYIq0-qzlav4D5RCqnuw3s
+
+UNITÉ 5 — LA FERME
+u5_s49_ecoute.mp3 : 1g3-oS_dqs86JwUvcWSn_lbgX5Hy9e9U9
+u5_s50_lecon.mp3  : 1IRdUMYLSkn2t7DS7P9YYLEDHuuh08of_
+u5_s51_lecon.mp3  : 1Mn84SLRsinY2sdtruKFoSYGmuHkRVU5s
+u5_s52_lecon.mp3  : 1FcS2qskSHSnmOxtLCDP9a3REQjyxXMn0
+u5_s53_lecon.mp3  : 1ivxHMlQmMZNS2irN1hbT5jpU-9WUnnfB
+u5_s54_lecon.mp3  : 1rBLw7kiVgHhRESpW2NJBpxa5LWH_sG2t
+u5_s55_lecon.mp3  : 1J7zbh9lg-jlAB7iZnGlZGCXyO0LWgQqU
+u5_s56_lecon.mp3  : 1H06C6a6lqLJCh2dna7P-ZH2izdN5TjHI
+u5_s57_lecon.mp3  : 1bfHKLTvlnZrEKgIOPNul8YEVOC6yETNa
+u5_s58_lecon.mp3  : 1jy0CmktRno-vozdjyUZqxQ97wf_ju8FO
+
+UNITÉ 6 — LE MARCHÉ
+u6_s61_ecoute.mp3 : 1wPFsO_E8vDDZlvTFX6cgraGfO489805j
+u6_s62_lecon.mp3  : 1gz6c_snr-Rpqnh_UbbTJiA0WLEquvkjY
+u6_s63_lecon.mp3  : 1x-ztutorhyEXATbtkYRXQEeyDlOZJoGe
+u6_s64_lecon.mp3  : 17qIupNXGT_CTPm9YVjMWgC241DRDugf0
+u6_s65_lecon.mp3  : 1GobuEQDoep4C1Ap26EP19tIqJK8Z5Y11
+u6_s66_lecon.mp3  : 1aDlw-TEZCcLQSODS1SCJB_Ig-ijsjZkN
+u6_s67_lecon.mp3  : 1lYO2URpF3VV5XKOlyNzbVUwxKhjoLZ_S
+u6_s68_lecon.mp3  : 1VlWsg_QvNoVbYdGqGBjdcrIJPiSw8EMU
+u6_s69_lecon.mp3  : 1y3MLAxO7JjYUr4v01grjL9GOWvP6fUle
+u6_s70_lecon.mp3  : 1b94V-4Sl9HY_cznwoOHm0lYo9oO907BF
+
+DICTÉES (1 par unité)
+u1_s11_dictee.mp3 : 1ZWUlEiihf9d5IOPACf6iAmHNdpJBIGw1
+u2_s23_dictee.mp3 : 1BKEmRQ4zJEYnKFuQ2J4NXsSGjof9A1nk
+u3_s35_dictee.mp3 : 1m7-p3EfhWfX6UV7EYOkXDa-D4VhJrIJP
+u4_s47_dictee.mp3 : 1e1A-mXPgxaSEC5Scw6DXnnPWb0ToiT66
+u5_s59_dictee.mp3 : 1b3ShTNk7FQYY7DkQ1JcIRswdQVszEmE2
+u6_s71_dictee.mp3 : 1HWnDXeqldNqKGBUjxOU8jrQzCskpOyH6
