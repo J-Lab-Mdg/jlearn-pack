@@ -345,3 +345,25 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Unité 1 « LES FORMULES DE POLITESSE » écrite et validée (require OK) : 12 séances (CO, lexique des 5 mots magiques, CE, FdL je veux/je peux et je fais/je dois, alphabet, syllabes, sons [ɛ̃]/[u], PO saluer-se présenter, PE copier-compléter, révision avec dictée « Bonjour, madame ! Merci, Tiana. », test sur 20 points corrigé) + grande leçon + 8 exercices supplémentaires + page « Je sais… ».
 - Feuille de route : U2→U6 (1 unité par tour) → annexes → images → audios (≈7 tours) → vidéos vérifiées → injection 🎧 + build final.
 — JLearn (atelier), 7 novembre 2026
+
+## 2026-11-08 — Français T2 : LES 6 UNITÉS + ANNEXES + PREMIER DOCX COMPLET
+- Unités 2 à 6 écrites et validées (require OK) au rythme d'une par tour : U2 Présentation de la famille (S13-S24), U3 Famille restreinte (S25-S36, être/avoir/aller), U4 Habitudes quotidiennes (S37-S48, verbes -er et finir, sons [wa]/[k]), U5 La maison (S49-S60, genre/pluriel/indicateurs spatiaux, sons [k] c / [g]), U6 Objets de la salle de classe (S61-S72, articles/adjectifs/accord, h muet, son [j]). 72/72 séances.
+- Dictées fixées (2 phrases très courtes par unité), personnages Tiana/Hery/Naly/Lalao + famille de Vola, page finale « BRAVO ! J'AI TERMINÉ MES 72 SÉANCES DE FRANÇAIS ! ».
+- Annexes 1-6 écrites (imagier, guide du petit écrivain, conjugaison de l'année, flashcards et jeux, stratégies de lecture, orthographe et sons + les 6 dictées) + build.js (couverture, avant-propos T2, mode d'emploi, sommaire cliquable 72 séances, année en un coup d'œil).
+- Premier docx complet assemblé ; standard Word intégré d'office ; vérifications : rootKey=0, github=0, arena=0, H1=12, H2=72, 84 signets, alt text sans apostrophe.
+— JLearn (atelier), 8 novembre 2026
+
+## 2026-11-08 — Français T2 : 25 IMAGES RÉELLES + COUVERTURE PROVISOIRE
+- Couverture provisoire charte tableau vert (FRANÇAIS T2 — COLLECTION J-LEARN, craie, 768×1376) en attendant la couverture finale via coverbook/.
+- 24 illustrations générées en 3 fournées (style album jeunesse, scènes malgaches, aucun texte parasite — contrôle visuel image par image), recadrées 900×502, palette optimisée. Scènes pédagogiquement exactes : 5 gestes polis, alphabet ABC, parents/enfants séparés, 4 moments de la journée en un seul paysage, maison en coupe, 5 chatons sur/sous/dans/devant/derrière, fournitures alignées.
+- Docx reconstruit avec les 25 médias (6,98 Mo).
+— JLearn (atelier), 8 novembre 2026
+
+## 2026-11-08 — Français T2 : 66 AUDIOS DRIVE + 8 VIDÉOS VÉRIFIÉES — MANUEL 100 % TERMINÉ
+- Dossier Drive public créé : « JLearn Audio Français T2 » (1EwVArbMPaTVopKA4fYM7y4gL9Hsk9Wae), lecture seule par lien.
+- 66 MP3 générés (voix française choisie par l'utilisateur) en 7 fournées : 6 écoutes lues deux fois + questions, 54 leçons guidées « écoute et répète », 6 dictées avec protocole de classe (écoute complète → dictée lente avec ponctuation annoncée → relecture + rappel orthographique ciblé). 2 refus aléatoires du filtre (S4, S28) repassés avec succès après reformulation. Sauvegarde GitHub de tous les MP3 + IDs dans drive_ids.txt.
+- Injection par script (recherche bornée à chaque fonction) : 60 blocs « 🎧 Audio de la séance » sous les titres + 6 blocs « 🎧 Audio de la dictée » dans les révisions. Vérification : 66 liens, 66 IDs uniques, S1 contrôlée.
+- 8 vidéos YouTube « 🎬 POUR ALLER PLUS LOIN » vérifiées UNE PAR UNE via oEmbed avant injection (titres conformes) : alphabet (S6), salutations (S9), Ma famille (S14), Verbe être (S28), Verbe avoir (S29), Dans ma chambre (S50), Où est le chat ?/prépositions (S54), Arc en ciel/couleurs (S65). Leçons sans vidéo fiable : laissées sans vidéo, conformément à la règle.
+- Build final : 🎧=66, drive=66, 🎬=8, youtube=8, rootKey=0, github=0, arena=0, H1=12, H2=72, 25 images.
+- Le manuel Français T2 est COMPLET : 72 séances, 6 annexes, 25 images, 66 audios, 8 vidéos, standard Word. Reste en attente : couverture finale fournie via coverbook/.
+— JLearn (atelier), 8 novembre 2026
