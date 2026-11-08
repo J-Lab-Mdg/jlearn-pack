@@ -50,7 +50,19 @@ Wtr = qn('w:tr')
 
 
 def clone(el):
-    return copy.deepcopy(el)
+    """Copie profonde d'un element XML. On retire au passage tout signet
+    Word (w:bookmarkStart / w:bookmarkEnd) herite du gabarit source (T8) :
+    ces gabarits sont reutilises des dizaines de fois (une seance, un
+    titre d'unite...) et conserver leurs signets d'origine produirait des
+    noms de signet dupliques dans le nouveau document, ce qui casserait
+    la navigation du sommaire interactif ajoute par add_bookmark()."""
+    new_el = copy.deepcopy(el)
+    for tag in (qn('w:bookmarkStart'), qn('w:bookmarkEnd')):
+        for b in new_el.findall('.//' + tag):
+            parent = b.getparent()
+            if parent is not None:
+                parent.remove(b)
+    return new_el
 
 
 def ptext(el):
@@ -431,6 +443,7 @@ def build_seance_elements(idx, total, lesson, unit, footnotes=None, doc=None):
 
     marker = mk(lesson_tpl, 'seance_marker')
     set_single_run_text(marker, f"SÉANCE {idx} / {total}")
+    add_bookmark(marker, f"seance{idx}")
     out.append(marker)
 
     title_big = mk(lesson_tpl, 'title_big')
@@ -622,6 +635,7 @@ def build_revision_elements(idx, total, unit, lessons):
     out = []
     marker = mk(rev_tpl, 'seance_marker')
     set_single_run_text(marker, f"SÉANCE {idx} / {total}")
+    add_bookmark(marker, f"seance{idx}")
     out.append(marker)
 
     title = mk(rev_tpl, 'rev_title')
@@ -741,6 +755,7 @@ def build_exam_elements_u1(idx, total, unit, lessons):
     out = []
     marker = mk(exam_tpl, 'seance_marker')
     set_single_run_text(marker, f"SÉANCE {idx} / {total}")
+    add_bookmark(marker, f"seance{idx}")
     out.append(marker)
 
     title = mk(exam_tpl, 'exam_title')
@@ -823,6 +838,7 @@ def build_exam_elements_from_spec(idx, total, unit, exam_spec):
     out = []
     marker = mk(exam_tpl, 'seance_marker')
     set_single_run_text(marker, f"SÉANCE {idx} / {total}")
+    add_bookmark(marker, f"seance{idx}")
     out.append(marker)
 
     title = mk(exam_tpl, 'exam_title')
@@ -907,6 +923,79 @@ def _plain_run_para(text, bold=False, italic=False, size=24, color=None, align=N
     return p
 
 
+_BOOKMARK_COUNTER = [1000]
+
+
+def next_bookmark_id():
+    _BOOKMARK_COUNTER[0] += 1
+    return _BOOKMARK_COUNTER[0]
+
+
+def add_bookmark(p_el, name):
+    """Entoure le contenu du paragraphe p_el d'un signet Word (bookmarkStart
+    / bookmarkEnd) nomme 'name', cible d'un lien interne de la table des
+    matieres (sommaire interactif)."""
+    bid = next_bookmark_id()
+    start = OxmlElement('w:bookmarkStart')
+    start.set(qn('w:id'), str(bid))
+    start.set(qn('w:name'), name)
+    end = OxmlElement('w:bookmarkEnd')
+    end.set(qn('w:id'), str(bid))
+    # w:pPr (s'il existe) doit rester le tout premier enfant de w:p ; le
+    # signet doit etre insere juste apres, avant le contenu (runs).
+    ppr = p_el.find(qn('w:pPr'))
+    insert_at = 1 if ppr is not None else 0
+    p_el.insert(insert_at, start)
+    p_el.append(end)
+    return p_el
+
+
+def _hyperlink_run_para(text, anchor, bold=False, size=24, align=None):
+    """Construit un paragraphe contenant un lien interne (w:hyperlink avec
+    w:anchor) vers un signet du document : ligne cliquable de la table des
+    matieres (sommaire interactif), avec le style visuel 'Hyperlink'
+    herite des manuels T8/T9 sources (bleu souligne)."""
+    p = OxmlElement('w:p')
+    if align:
+        ppr = OxmlElement('w:pPr')
+        jc = OxmlElement('w:jc')
+        jc.set(qn('w:val'), align)
+        ppr.append(jc)
+        p.append(ppr)
+    hyperlink = OxmlElement('w:hyperlink')
+    hyperlink.set(qn('w:anchor'), anchor)
+    hyperlink.set(qn('w:history'), '1')
+    run = OxmlElement('w:r')
+    rpr = OxmlElement('w:rPr')
+    rstyle = OxmlElement('w:rStyle')
+    rstyle.set(qn('w:val'), 'Hyperlink')
+    rpr.append(rstyle)
+    rfonts = OxmlElement('w:rFonts')
+    for attr in ('w:ascii', 'w:hAnsi', 'w:cs', 'w:eastAsia'):
+        rfonts.set(qn(attr), 'Times New Roman')
+    rpr.append(rfonts)
+    if bold:
+        rpr.append(OxmlElement('w:b'))
+        rpr.append(OxmlElement('w:bCs'))
+    else:
+        b = OxmlElement('w:b'); b.set(qn('w:val'), '0'); rpr.append(b)
+        bcs = OxmlElement('w:bCs'); bcs.set(qn('w:val'), '0'); rpr.append(bcs)
+    sz_el = OxmlElement('w:sz')
+    sz_el.set(qn('w:val'), str(size))
+    rpr.append(sz_el)
+    szcs_el = OxmlElement('w:szCs')
+    szcs_el.set(qn('w:val'), str(size))
+    rpr.append(szcs_el)
+    run.append(rpr)
+    t = OxmlElement('w:t')
+    t.text = text
+    t.set(qn('xml:space'), 'preserve')
+    run.append(t)
+    hyperlink.append(run)
+    p.append(hyperlink)
+    return p
+
+
 # ---------------------------------------------------------------------
 # 6. Pages liminaires : authenticite, avant-propos, mode d'emploi,
 #    table des matieres, tableau de bord general.
@@ -944,6 +1033,7 @@ def build_avant_propos():
     out = []
     title = mk(front_tpl, 'section_title')
     set_single_run_text(title, "Avant-propos")
+    add_bookmark(title, "avant_propos")
     out.append(title)
     for line in cfb.AVANT_PROPOS:
         p = mk(front_tpl, 'body_plain_front')
@@ -958,6 +1048,7 @@ def build_mode_emploi():
     out = []
     title = mk(front_tpl, 'section_title')
     set_single_run_text(title, "Mode d'emploi du manuel")
+    add_bookmark(title, "mode_emploi")
     out.append(title)
     for line in cfb.MODE_EMPLOI:
         p = mk(front_tpl, 'body_plain_front')
@@ -968,13 +1059,18 @@ def build_mode_emploi():
 
 
 def build_table_des_matieres():
+    """Sommaire interactif : chaque ligne est un lien interne (Ctrl+clic
+    dans Word) qui renvoie au signet correspondant (section, unite ou
+    seance) place plus loin dans le document."""
     import content_front_back as cfb
     out = []
     title = mk(front_tpl, 'section_title')
     set_single_run_text(title, "Table des matières")
     out.append(title)
-    for label in ("Avant-propos", "Mode d'emploi du manuel", "Tableau de bord général"):
-        out.append(_plain_run_para(label, bold=True, size=24))
+    for label, anchor in (("Avant-propos", "avant_propos"),
+                          ("Mode d'emploi du manuel", "mode_emploi"),
+                          ("Tableau de bord général", "tableau_de_bord")):
+        out.append(_hyperlink_run_para(label, anchor, bold=True, size=24))
     out.append(_plain_run_para(''))
 
     current_unit = None
@@ -982,17 +1078,20 @@ def build_table_des_matieres():
         if unit is not current_unit:
             if current_unit is not None:
                 out.append(_plain_run_para(''))
-            out.append(_plain_run_para(unit['toc_title'], bold=True, size=26))
+            out.append(_hyperlink_run_para(unit['toc_title'], f"unite{unit['num']}", bold=True, size=26))
             current_unit = unit
         label = cfb._seance_title(num, titre_court, {'Leçon': 'lecon', 'Révision': 'revision',
                                                       "Sujet d'examen": 'examen'}[kind], unit)
-        out.append(_plain_run_para(label, size=24))
+        out.append(_hyperlink_run_para(label, f"seance{num}", size=24))
 
     out.append(_plain_run_para(''))
-    out.append(_plain_run_para("Annexes", bold=True, size=26))
-    for label in ("Glossaire", "Cartes et schémas d'activités", "Auto-évaluation",
-                  "Table des illustrations", "Sources"):
-        out.append(_plain_run_para(label, size=24))
+    out.append(_hyperlink_run_para("Annexes", "annexes", bold=True, size=26))
+    for label, anchor in (("Glossaire", "annexe_glossaire"),
+                          ("Cartes et schémas d'activités", "annexe_cartes"),
+                          ("Auto-évaluation", "annexe_autoeval"),
+                          ("Table des illustrations", "annexe_illustrations"),
+                          ("Sources", "annexe_sources")):
+        out.append(_hyperlink_run_para(label, anchor, size=24))
     out.append(clone(lesson_tpl['blank']))
     return out
 
@@ -1002,6 +1101,7 @@ def build_tableau_de_bord():
     out = []
     title = mk(front_tpl, 'section_title')
     set_single_run_text(title, "Tableau de bord général")
+    add_bookmark(title, "tableau_de_bord")
     out.append(title)
     intro = mk(front_tpl, 'body_plain_front')
     set_single_run_text(intro, cfb.TABLEAU_DE_BORD_INTRO)
@@ -1056,6 +1156,7 @@ def build_annexes(doc):
 
     title = mk(annex_tpl, 'section_title_caps')
     set_single_run_text(title, "ANNEXES")
+    add_bookmark(title, "annexes")
     out.append(title)
     intro = mk(annex_tpl, 'body_plain_front')
     set_single_run_text(intro, cfb.ANNEXES_INTRO)
@@ -1065,6 +1166,7 @@ def build_annexes(doc):
     # -- Glossaire --
     gt = mk(annex_tpl, 'subsection_title')
     set_single_run_text(gt, "Glossaire")
+    add_bookmark(gt, "annexe_glossaire")
     out.append(gt)
     gi = mk(annex_tpl, 'body_plain_front')
     set_single_run_text(gi, cfb.GLOSSAIRE_INTRO)
@@ -1090,6 +1192,7 @@ def build_annexes(doc):
     # -- Cartes et schemas d'activites --
     ct = mk(annex_tpl, 'subsection_title')
     set_single_run_text(ct, "Cartes et schémas d'activités")
+    add_bookmark(ct, "annexe_cartes")
     out.append(ct)
     ci = mk(annex_tpl, 'body_plain_front')
     set_single_run_text(ci, cfb.CARTES_INTRO)
@@ -1112,6 +1215,7 @@ def build_annexes(doc):
     # -- Auto-evaluation --
     at = mk(annex_tpl, 'subsection_title')
     set_single_run_text(at, "Auto-évaluation")
+    add_bookmark(at, "annexe_autoeval")
     out.append(at)
     ai = mk(annex_tpl, 'body_plain_front')
     set_single_run_text(ai, cfb.AUTOEVAL_INTRO)
@@ -1143,6 +1247,7 @@ def build_annexes(doc):
     # -- Table des illustrations --
     it_title = mk(annex_tpl, 'subsection_title')
     set_single_run_text(it_title, "Table des illustrations")
+    add_bookmark(it_title, "annexe_illustrations")
     out.append(it_title)
 
     illus_table = clone(illustrations_table_tpl)
@@ -1166,6 +1271,7 @@ def build_annexes(doc):
     # -- Sources --
     st = mk(annex_tpl, 'subsection_title')
     set_single_run_text(st, "Sources")
+    add_bookmark(st, "annexe_sources")
     out.append(st)
     for src in cfb.SOURCES:
         b = mk(annex_tpl, 'source_bullet')
@@ -1242,6 +1348,7 @@ def main():
     # ------------------------------------------------------------------
     unit_title = mk(unit_header_tpl, 'unit_title')
     set_single_run_text(unit_title, UNIT1['toc_title'])
+    add_bookmark(unit_title, "unite1")
     body.append(unit_title)
     unit_them = mk(unit_header_tpl, 'unit_thematique')
     set_single_run_text(unit_them, UNIT1['thematique_officielle'])
@@ -1267,6 +1374,7 @@ def main():
     body.append(clone(lesson_tpl['blank']))
     unit2_title = mk(unit_header_tpl, 'unit_title')
     set_single_run_text(unit2_title, UNIT2['toc_title'])
+    add_bookmark(unit2_title, "unite2")
     body.append(unit2_title)
     unit2_them = mk(unit_header_tpl, 'unit_thematique')
     set_single_run_text(unit2_them, UNIT2['thematique_officielle'])
@@ -1292,6 +1400,7 @@ def main():
     body.append(clone(lesson_tpl['blank']))
     unit3_title = mk(unit_header_tpl, 'unit_title')
     set_single_run_text(unit3_title, UNIT3['toc_title'])
+    add_bookmark(unit3_title, "unite3")
     body.append(unit3_title)
     unit3_them = mk(unit_header_tpl, 'unit_thematique')
     set_single_run_text(unit3_them, UNIT3['thematique_officielle'])
@@ -1317,6 +1426,7 @@ def main():
     body.append(clone(lesson_tpl['blank']))
     unit4_title = mk(unit_header_tpl, 'unit_title')
     set_single_run_text(unit4_title, UNIT4['toc_title'])
+    add_bookmark(unit4_title, "unite4")
     body.append(unit4_title)
     unit4_them = mk(unit_header_tpl, 'unit_thematique')
     set_single_run_text(unit4_them, UNIT4['thematique_officielle'])
@@ -1342,6 +1452,7 @@ def main():
     body.append(clone(lesson_tpl['blank']))
     unit5_title = mk(unit_header_tpl, 'unit_title')
     set_single_run_text(unit5_title, UNIT5['toc_title'])
+    add_bookmark(unit5_title, "unite5")
     body.append(unit5_title)
     unit5_them = mk(unit_header_tpl, 'unit_thematique')
     set_single_run_text(unit5_them, UNIT5['thematique_officielle'])
@@ -1367,6 +1478,7 @@ def main():
     body.append(clone(lesson_tpl['blank']))
     unit6_title = mk(unit_header_tpl, 'unit_title')
     set_single_run_text(unit6_title, UNIT6['toc_title'])
+    add_bookmark(unit6_title, "unite6")
     body.append(unit6_title)
     unit6_them = mk(unit_header_tpl, 'unit_thematique')
     set_single_run_text(unit6_them, UNIT6['thematique_officielle'])
