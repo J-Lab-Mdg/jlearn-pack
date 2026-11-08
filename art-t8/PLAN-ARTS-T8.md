@@ -128,18 +128,17 @@ Partie retenue : **s01 — DESSIN : DE LA FORME À L'IMAGINATION**, séance 1, 1
 RAS du PE T8 (p. 216–217) : *« Réaliser l'imagination à l'aide des formes, en utilisant les nuances »*.
 L'exemple donné par le PE — **cercle → ballon** — devient la tâche de transfert de la pratique.
 
+Le document a été réordonné après retour de lecture : après la couverture, la leçon et la pratique commencent immédiatement. La fiche, le curriculum et les annexes viennent ensuite.
+
 Le document contient :
 
-1. Couverture, authenticité et droits (convention des manuels de géographie du dépôt).
-2. **Cadrage du lot** : divergence de source, architecture, conventions reprises, écarts assumés, checklist de validation.
-3. **Répartition officielle** + détail des trois séances charnières.
-4. **Sommaire interactif** par signets : 36 entrées de curriculum + 13 entrées d'ouverture et d'annexes.
-5. **Curriculum des 36 parties** : pour chacune, durée, titre long, RAS, contenus du PE, objectif, démarche, source paginée, statut des médias.
-6. **Fiche séance 1 complète, format A–E** : ce que l'enseignant doit comprendre, préparation, déroulement I/II/III avec timing et tableau à six colonnes, différenciation, erreurs fréquentes, grille d'évaluation.
-7. **Leçon s01** illustrée : scène + observation + préparation + quatre étapes a–d, chacune avec phrase clé et schéma.
-8. **Pratique s01** : consigne de transfert, critères, évaluation courte, bloc « Vidéos d'appoint » compact, courte trace élève.
-9. **Consigne à lire — version texte** (en attendant l'audio T8).
-10. Annexes : réutilisation des médias, progression par compétences, glossaire, sources, contrôle terrain.
+1. Couverture J-Learn.
+2. **Leçon s01** : scène, observation, préparation et quatre étapes a–d, avec consignes concises et schémas.
+3. **Pratique s01** : séquence élève en phrases courtes, critères et bloc « Vidéos d’appoint » compact.
+4. **Fiche séance 1, format A–E** : repères, matériel et sécurité, déroulement en un seul tableau, différenciation, erreurs et grille Acquis / En cours / À revoir.
+5. Annexes après le contenu : droits, cadrage, répartition, sommaire interactif, curriculum des 36 parties, médias, progression, glossaire, sources et contrôle terrain.
+
+Le pilote comporte quatre sections Word. Le sommaire interactif par signets est placé dans les annexes, pas avant la leçon.
 
 ---
 
@@ -169,26 +168,20 @@ sans duplication sur disque.
   Style naturaliste aligné sur la séance 25 du T9. Ce n'est pas une photographie documentaire.
 - **7 schémas explicatifs déterministes** (`assets/diagrams/s01_*.png` + `.svg`, 1400 × 920) :
   observation, préparation, étapes a–d, pratique. Gabarit T9 : bandeau titre, deux panneaux,
-  cartouche « Consigne / phrase clé ». Produits par script, donc reproductibles.
+  cartouche explicatif. Produits par script, donc reproductibles.
 
 Ce sont des schémas explicatifs, pas des scènes vectorielles : la scène d'ouverture reste une
 illustration réaliste avec personnes, conformément à la demande.
 
-### Point à trancher à la validation
+### Réutilisation des scènes
 
-Plusieurs parties T8 pointent la même scène T9 (s06b, s07 et s09 autour de l'atelier couleur ;
-s29 et s30 autour du conte). Le manuel T9 garantissait **une scène distincte par partie**.
-Deux options : générer les scènes supplémentaires pour conserver cette règle, ou assumer la
-réutilisation. Le choix n'est pas fait tant qu'il n'est pas validé.
+Choix confirmé par l'utilisateur : **réutiliser une scène lorsqu'elle correspond au contenu**, même si une scène peut servir à plusieurs parties. Les scènes propres à des contenus non couverts restent à créer.
 
 ---
 
 ## 6. Écarts assumés dans ce lot
 
-- **Pas d'audio T8.** Les consignes du T8 diffèrent de celles du T9 : un audio T9 ne peut pas être
-  réutilisé tel quel. Le pied de page du pilote affiche donc le renvoi **Texte** et les liens vidéo,
-  sans lien Audio ni QR. Le gabarit **Audio 10 pt + QR 80 px** est prêt et sera activé au lot médias,
-  avec dossier Google Drive et ZIP en un clic.
+- **Audio absent du pilote, prévu au manuel complet** : un enregistrement par partie, liens et QR codes, hébergés sur Google Drive avec ZIP en un clic. Les audios T9 ne seront pas réutilisés pour les consignes T8.
 - **Une seule partie entièrement rédigée.** Les 35 autres sont au stade curriculum ; c'est l'objet
   même de la validation demandée.
 - **Pas de version élève séparée, pas de portfolio** : décisions T9 reconduites.
@@ -203,7 +196,7 @@ réutilisation. Le choix n'est pas fait tant qu'il n'est pas validé.
 | `ped.validatePedagogy([s01])` | descripteurs = critères, flow 95 min, variantes présentes |
 | `media.validate(parts)` | 30 réutilisées / 6 à créer, cohérence des tables |
 | Existence des fichiers médias | tous présents (T8 neufs + T9 référencés) |
-| `python src/validate_docx.py` | **PASS** — 5 sections, 10 médias, 52 signets, 50 ancres résolues, taille min 13 pt, Times New Roman unique |
+| `python src/validate_docx.py` | **PASS** — 4 sections, 10 médias, 50 signets, 48 ancres résolues, taille min 13 pt, Times New Roman unique |
 | `python src/validate_xsd.py` | **0 erreur XSD** sur document, styles, en-têtes, pieds de page, notes, numérotation |
 | `node src/validate_qr.js` | **PASS** — QR officiel lisible à 130 et 110 px ; seuil 80 px revérifié sur 6 QR T9 |
 | python-docx | ouverture sans erreur |

@@ -82,12 +82,12 @@ const differentiation = {
   remediation: 'Reprendre un essai de cinq minutes sur le critère bloquant, avec un pair ou l’enseignant, puis refaire la tâche courte.',
 };
 const progression = [
-  { domain: 'Dessin', pe: 'PE T8, Arts visuels / Dessin, p. 216–218', rag: 'Réaliser l’imagination à l’aide des formes avec les nuances ; utiliser les nuances pour rendre plus réel l’image.', sessions: 'S1–S5 ; S6a', evidence: 'Forme transformée en objet, trois valeurs, gestion de l’espace, portrait sur repères, analyse d’œuvre.' },
-  { domain: 'Peinture', pe: 'PE T8, Arts visuels / Peinture, p. 218–220', rag: 'Créer différentes couleurs ; connaître les couleurs à mélanger ; utiliser les peintures pour rendre réel l’image.', sessions: 'S6b ; S7–S11', evidence: 'Formules de mélanges, ambiances, coloriage à imiter, peinture sur thème, présentation et réajustement.' },
-  { domain: 'Sculpture', pe: 'PE T8, Arts visuels / Sculpture, p. 221–222', rag: 'Identifier les instruments réalisables avec des objets recyclables ; créer des instruments musicaux.', sessions: 'S12–S16 ; S17a', evidence: 'Objets associés aux instruments, plan coté, assemblage, bas-relief, séquence jouée, présentation.' },
-  { domain: 'Musique', pe: 'PE T8, Musique, p. 223–225', rag: 'Classer les instruments par familles ; se familiariser avec monophonie et polyphonie ; chanter avec un instrument à vent.', sessions: 'S17b ; S18–S22', evidence: 'Classement par famille et par son, instruments malagasy, tempo/rythme, durées et nuances, chant en groupe.' },
-  { domain: 'Danse', pe: 'PE T8, Danse, p. 225–226', rag: 'Créer des mouvements en tenant compte de l’espace et des éléments de base musicale.', sessions: 'S23–S27 ; S28a', evidence: 'Séquence sur pulsation, mobilité, quatre trajectoires, danse urbaine, chorégraphie créée et appréciée.' },
-  { domain: 'Art dramatique', pe: 'PE T8, Art dramatique, p. 226–228', rag: 'Jouer un rôle ; préparer la mise en scène ; présenter sur scène une pièce théâtrale.', sessions: 'S28b ; S29–S33', evidence: 'Moyens corporels, personnage de conte, voix et émotion, lieux et objets, répétition, présentation appréciée.' },
+  { domain: 'Dessin', pe: 'Programme d’Arts, dessin, p. 216–218', rag: 'Réaliser l’imagination à l’aide des formes avec les nuances ; utiliser les nuances pour rendre plus réel l’image.', sessions: 'S1–S5 ; S6a', evidence: 'Forme transformée en objet, trois valeurs, gestion de l’espace, portrait sur repères, analyse d’œuvre.' },
+  { domain: 'Peinture', pe: 'Programme d’Arts, peinture, p. 218–220', rag: 'Créer différentes couleurs ; connaître les couleurs à mélanger ; utiliser les peintures pour rendre réel l’image.', sessions: 'S6b ; S7–S11', evidence: 'Formules de mélanges, ambiances, coloriage à imiter, peinture sur thème, présentation et réajustement.' },
+  { domain: 'Sculpture', pe: 'Programme d’Arts, sculpture, p. 221–222', rag: 'Identifier les instruments réalisables avec des objets recyclables ; créer des instruments musicaux.', sessions: 'S12–S16 ; S17a', evidence: 'Objets associés aux instruments, plan coté, assemblage, bas-relief, séquence jouée, présentation.' },
+  { domain: 'Musique', pe: 'Programme d’Arts, musique, p. 223–225', rag: 'Classer les instruments par familles ; se familiariser avec monophonie et polyphonie ; chanter avec un instrument à vent.', sessions: 'S17b ; S18–S22', evidence: 'Classement par famille et par son, instruments malagasy, tempo/rythme, durées et nuances, chant en groupe.' },
+  { domain: 'Danse', pe: 'Programme d’Arts, danse, p. 225–226', rag: 'Créer des mouvements en tenant compte de l’espace et des éléments de base musicale.', sessions: 'S23–S27 ; S28a', evidence: 'Séquence sur pulsation, mobilité, quatre trajectoires, danse urbaine, chorégraphie créée et appréciée.' },
+  { domain: 'Art dramatique', pe: 'Programme d’Arts, art dramatique, p. 226–228', rag: 'Jouer un rôle ; préparer la mise en scène ; présenter sur scène une pièce théâtrale.', sessions: 'S28b ; S29–S33', evidence: 'Moyens corporels, personnage de conte, voix et émotion, lieux et objets, répétition, présentation appréciée.' },
 ];
 const glossary = [
   ['Forme arrondie', 'Forme organique tracée avec des courbes : cercle, ovale, contour libre.'],
@@ -100,7 +100,7 @@ const glossary = [
   ['Monophonie', 'Instrument qui ne produit qu’un son à la fois : flûte, clarinette, trompette.'],
   ['Polyphonie', 'Instrument qui peut produire plusieurs sons à la fois : piano, guitare, orgue.'],
   ['Sodina', 'Flûte traditionnelle malagasy, instrument à vent ; le FRP T8 cite Rakoto Frah.'],
-  ['Farara', 'Harmonica, instrument à vent cité par le PE T8.'],
+  ['Farara', 'Harmonica, instrument à vent.' ],
   ['Antsiva', 'Conque malgache percée d’un trou latéral, aérophone ; référent culturel du FRP T8. Antsiva lahy : plus petit et plus aigu ; antsiva vavy : plus grand et plus grave.'],
   ['Trajectoire', 'Chemin suivi par le corps dans l’espace : droite, sinueuse, circulaire, zigzag.'],
   ['Moyens corporels', 'Attitude, geste, mimique, mouvement, rythme et voix utilisés pour jouer un rôle.'],

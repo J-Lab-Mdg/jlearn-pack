@@ -110,7 +110,7 @@ const parts = [
     objective: 'Décrire les couleurs d’une œuvre, supposer les mélanges nécessaires, les vérifier, puis colorier un dessin en respectant le modèle.',
     contents: ['Coloriage à imiter', 'Identifier les couleurs à mélanger', 'Vérifier la supposition', 'Améliorer selon les remarques'],
     demarche: 'Analyse d’une œuvre ; démarche de création',
-    media: 'new', mediaNote: 'Coloriage à imiter est explicite en T8 : schéma « modèle / essai / coloriage » à créer.' }),
+    media: 'new', mediaNote: 'Le coloriage à imiter demande un modèle comparatif : modèle / essai / coloriage.' }),
 
   P({ id: 's10', session: 10, domain: 'Peinture', title: 'Peinture à partir d’un thème : dessiner puis peindre',
     short: 'PEINTURE : UN THÈME EN COULEURS',
@@ -252,7 +252,7 @@ const parts = [
     objective: 'Réaliser ou réparer un petit instrument à vent, reproduire un extrait court, puis chanter en groupe en respectant les éléments de base musicale.',
     contents: ['Instrument à vent : flûte (sodina), harmonica (farara)', 'Reproduire un extrait', 'Chanter en groupe', 'Genre musical traditionnel malagasy', 'Musiciens malagasy reconnus'],
     demarche: 'Observation des instruments à vent ; démarche d’interprétation',
-    media: 'new', mediaNote: 'Sodina / farara explicites en T8 : scène d’atelier vent à créer ; scène de chant T9 s22 réemployée en second visuel.' }),
+    media: 'new', mediaNote: 'Scène d’atelier autour de la sodina et du farara ; une scène de chant existante complète le sujet.' }),
 
   // ---------------- DANSE — 11 h — PE T8 p. 225–226 ----------------
   P({ id: 's23', session: 23, domain: 'Danse', title: 'Bouger sur la pulsation : tempo, durée, intensité',

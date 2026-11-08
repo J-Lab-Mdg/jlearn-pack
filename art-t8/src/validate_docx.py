@@ -21,10 +21,10 @@ if bad:
 root = etree.fromstring(z.read('word/document.xml'))
 text = ''.join(root.xpath('//w:t/text()', namespaces=NS))
 
-# 1. Architecture : ouverture + curriculum + fiche + leçon/pratique + annexes = 5 sections.
+# 1. Architecture : couverture, leçon/pratique, fiche, annexes = 4 sections.
 sect = root.xpath('//w:sectPr', namespaces=NS)
-if len(sect) != 5:
-    errors.append(f'sectPr={len(sect)} attendu=5')
+if len(sect) != 4:
+    errors.append(f'sectPr={len(sect)} attendu=4')
 
 # 2. Typographie imposée.
 sizes = [int(x) for x in root.xpath('//w:sz/@w:val', namespaces=NS)]
@@ -43,14 +43,18 @@ for token in ['Acquis', 'En cours', 'À revoir']:
 
 # 4. Éléments attendus du lot pilote.
 required = ['AUTHENTICITÉ ET DROITS', 'CADRAGE DU LOT', 'RÉPARTITION OFFICIELLE',
-            'SOMMAIRE INTERACTIF', 'CURRICULUM DES 36 PARTIES', 'FICHE DE PRÉPARATION',
+            'SOMMAIRE INTERACTIF', 'CURRICULUM DES 36 PARTIES', 'FICHE SÉANCE 1',
             'RÉUTILISATION DES MÉDIAS', 'PROGRESSION PAR COMPÉTENCES', 'GLOSSAIRE',
-            'SOURCES ET RESSOURCES', 'CONTRÔLE TERRAIN', 'CONSIGNE À LIRE',
-            'ATTENTION REVENTES', 'Variantes selon la classe', 'Différenciation et remédiation',
-            'Vidéos d’appoint', 'PE T8.pdf', '11 heures', '66 h', '36 parties']
+            'SOURCES ET RESSOURCES', 'CONTRÔLE TERRAIN', 'ATTENTION REVENTES',
+            'VARIANTES SELON LA CLASSE', 'DIFFÉRENCIATION', 'VIDÉOS D’APPOINT',
+            'PROGRAMME OFFICIEL D’ARTS', '11 HEURES', '66 H', '36 PARTIES']
+upper_text = text.upper()
 for r in required:
-    if r not in text:
+    if r.upper() not in upper_text:
         errors.append('élément attendu absent: ' + r)
+for forbidden_text in ['CONSIGNE À LIRE', 'COURTE TRACE ÉLÈVE', 'VERSION TEXTE ÉQUIVALENTE', 'EN ATTENDANT LA PRODUCTION DES AUDIOS']:
+    if forbidden_text in upper_text:
+        errors.append('texte supprimé encore présent: ' + forbidden_text)
 forbidden = ['Scène vectorielle pédagogique', 'provisoirement vectorielles', 'T9 —', 'Classe : T9']
 for f in forbidden:
     if f in text:

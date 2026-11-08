@@ -3,7 +3,7 @@
 ## Documents disponibles dans le dépôt
 - `PE RAPE/PE T8.pdf` — Programme d'études T8, 257 pages. Arts : pages imprimées 213–228 (index PDF 218–233).
 - `PE_T8.docx` — autre version du PE T8 (2122 paragraphes, 349 tableaux), section ARTS.
-- `FRP_4eme_ARTS.pdf` — fascicule de ressources « TAONA FAHAVALO / T8 », 63 pages (équivalent 4e/T8).
+- `PE RAPE/FRP T8/FRP_T8_ARTS.pdf` — fascicule d’Arts T8, 39 pages (fichier partagé par l’utilisateur ; vérifié sur `origin/main`).
 - `PE RAPE/FRP_8eme*.pdf` — fascicules T8 généralistes.
 
 ## ⚠ Divergence entre les deux versions du PE T8
@@ -99,20 +99,19 @@ Ordre des tableaux détaillés du PDF : DESSIN → PEINTURE → SCULPTURE → MU
 **Trajectoires DANSE T8 — liste complète : ligne droite, sinueuse, circulaire, zigzag.**
 « - Zig zag » est rejeté en tête de la page imprimée 226 (index 231) : ne pas s'arrêter à la page 225.
 
-### FRP T8 (`FRP_4eme_ARTS.pdf`, 63 pages) — ancrage culturel propre au T8
+### FRP T8 (`PE RAPE/FRP T8/FRP_T8_ARTS.pdf`, 39 pages) — repères culturels
 Le FRP T8 **ne reprend pas** la liste d'instruments du FRP T9 (hira gasy, vako-drazana, valiha,
 jejy voatavo, anjomara, angaroha, atranatrana, lamako, amponga : **aucune occurrence**).
 Références réellement présentes :
-- p. 35–36 : « LES INSTRUMENTS DE MUSIQUE MALAGASY », référent culturel **la conque malgache antsiva**,
+- p. 19 : « LES INSTRUMENTS DE MUSIQUE MALAGASY », référent culturel **la conque malgache antsiva**,
   aussi appelée bankora, angaroa, antsiva-be, anjombe, maromogny, beabobo ou maromena ; aérophone,
   conque percée d'un trou latéral ; **antsiva lahy** (mâle, plus petit, plus aigu) / **antsiva vavy**
   (femelle, plus grave).
-- p. 36 : **Rakoto Frah (sodina)** cité comme musicien.
-- p. 38–39 : supports de cours INSTRUMENT MONOPHONIE / POLYPHONIE.
-- p. 44 et suiv. : GENRE MUSICAL — DANSES URBAINES : hip-hop, dance hall.
+- p. 18 : sodina dans la présentation des instruments malagasy ; p. 19 : **Rakoto Frah (sodina)** cité comme musicien.
+- p. 21 : support de cours INSTRUMENT MONOPHONIE ; p. 22 : INSTRUMENT POLYPHONIE.
+- p. 24–25 : danse hip-hop et ressource documentaire sur le dancehall.
 
 Le manuel T8 s'ancre donc sur **antsiva / sodina / Rakoto Frah**, pas sur la liste du T9.
 
 ### Piège de nommage
-`FRP_4eme_ARTS.pdf` est bien le fascicule **T8** (couverture « TAONA FAHAVALO T8 »).
-Le dossier `PE RAPE/FRP T8/` est vide (`txt.txt` à 0 octet).
+Le fascicule fourni sous `PE RAPE/FRP T8/FRP_T8_ARTS.pdf` est bien le document de référence Arts T8. La copie locale de travail ne contenait que `txt.txt` (vide), donc les pages et citations ont été vérifiées directement sur le fichier de la branche `main`.

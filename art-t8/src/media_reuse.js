@@ -8,7 +8,7 @@ const T9 = path.join(__dirname, '../../art-t9/assets');
 
 // Table de correspondance pédagogique T8 <- T9 (justification courte, exigée pour toute réutilisation).
 const reuse = {
-  s02:  { from: 's01',  why: 'Modelé en trois valeurs : contenu « Valeurs : tons de gris » identique en T8 et T9.' },
+  s02:  { from: 's01',  why: 'Modelé en trois valeurs : les deux parties travaillent les tons de gris.' },
   s03:  { from: 's02',  why: 'Repères de placement et espace entre les objets : « Gestion de l’espace » T8.' },
   s04:  { from: 's01',  why: 'Lumière, valeurs, ombre portée : « Qualité des couleurs / lumière ombre » T8.' },
   s06a: { from: 's06a', why: 'Apprécier une production et retoucher selon un critère : démarche d’appréciation T8.' },
@@ -46,7 +46,7 @@ const toCreate = {
   s05: 'Portrait d’après un modèle : RAS 2 du dessin T8, absent du T9.',
   s09: 'Coloriage à imiter : RAS 2 de la peinture T8, absent du T9.',
   s19: 'Monophonie / polyphonie : notion propre au T8.',
-  s22: 'Instrument à vent sodina / farara : explicite en T8 seulement.',
+  s22: 'Instrument à vent : sodina et farara.',
   s26: 'Danses urbaines (hip-hop, afro dance, dance hall) : le T9 traitait valse / cha-cha / samba.',
 };
 

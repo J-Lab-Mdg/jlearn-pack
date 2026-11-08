@@ -1,6 +1,6 @@
 // Pilote T8 — partie s01 complète (leçon + pratique), alignée PE T8 p. imprimées 216–217.
 // RAS : « Réaliser l’imagination à l’aide des formes, en utilisant les nuances ».
-// Exemple imposé par le PE : cercle → ballon. Cet exemple devient la tâche de transfert.
+// Exemple de départ : cercle → ballon.
 module.exports = {
   id: 's01', session: 1, domain: 'Dessin', minutes: 120,
   title: 'Dessin à partir de l’imagination : de la forme à l’objet imaginé',
@@ -8,7 +8,7 @@ module.exports = {
   pe: 'PE T8, Arts visuels / Dessin, p. imprimées 216–217 (PDF « PE T8.pdf »).',
   objective: 'Partir d’une forme simple choisie, la transformer en un objet imaginé reconnaissable, puis donner du volume avec trois tons de gris.',
   understand: [
-    'En T8, le dessin ne part pas d’un objet posé sur la table : il part d’une forme tracée de mémoire, que l’imagination transforme en objet. Le PE donne l’exemple « cercle : ballon ».',
+    'Le dessin part d’une forme simple tracée de mémoire, que l’imagination transforme en objet. Un cercle peut devenir un ballon.',
     'Une forme arrondie (organique) se trace avec des courbes ; une forme anguleuse (géométrique) se trace avec des droites et des angles. Le choix de la forme oriente déjà l’objet imaginé.',
     'Les nuances noir, blanc et tons de gris donnent du volume à chaque partie de la forme. Trois gris suffisent pour commencer : clair, moyen, foncé.',
   ],
@@ -21,7 +21,7 @@ module.exports = {
   situation: 'Faly trace un cercle sur sa feuille et dit : « Ce n’est qu’un rond, je ne sais pas quoi dessiner. » Sa voisine ajoute deux courbes et un peu de gris : le rond devient un ballon. Qu’a-t-elle ajouté pour que l’on reconnaisse un ballon ?',
   situationAnswer: 'Elle a ajouté les lignes qui appartiennent au ballon (les coutures), puis des nuances : un côté clair, un côté plus foncé, et une ombre sous le ballon.',
   observe: {
-    title: 'Observer : deux familles de formes, plusieurs objets possibles',
+    title: 'Formes et objets imaginés',
     phrase: 'Regardez les deux familles de formes. Pour chaque forme, dites à voix haute un objet qu’elle pourrait devenir.',
     bullets: [
       'Formes arrondies (organiques) : cercle, ovale, courbe libre — ballon, orange, pot, roue.',
@@ -32,7 +32,7 @@ module.exports = {
     support: 'Formes tracées au tableau et objet rond local',
   },
   prep: {
-    title: 'Préparer : choisir sa forme et essayer trois gris',
+    title: 'Essai des trois gris',
     phrase: 'Sur le brouillon, trace la forme que tu as choisie, puis remplis trois cases : pression légère, moyenne, puis traits serrés.',
     text: 'L’élève choisit une seule forme de départ et la trace en traits légers. Il colorie ensuite son nuancier : le gris clair n’est pas le blanc du papier, le gris foncé n’est pas un aplat noir total. Ce nuancier servira de repère pendant toute la production.',
   },
@@ -43,10 +43,10 @@ module.exports = {
     ['Où se place l’ombre portée ?', 'Sur le support, du côté opposé à la lumière.'],
   ],
   steps: [
-    { title: 'Tracer la forme de départ, légèrement', text: 'Choisir une forme arrondie ou anguleuse. La placer dans la feuille avec une marge autour, en traits légers. Vérifier la régularité : un cercle se construit dans un carré de repère, une forme anguleuse se trace à la règle.', phrase: 'Trace doucement : ta forme doit pouvoir être corrigée sans laisser de marque.' },
-    { title: 'Transformer la forme en objet imaginé', text: 'Ajouter seulement les lignes qui rendent l’objet reconnaissable. Pour le cercle devenu ballon : les coutures courbes. Pour un carré devenu maison : le toit, la porte, la fenêtre. S’arrêter avant de surcharger.', phrase: 'Demande-toi : sans le titre, est-ce qu’un camarade reconnaît mon objet ?' },
-    { title: 'Poser les trois tons de gris', text: 'Décider d’où vient la lumière. Garder clair le côté éclairé, poser le gris moyen, renforcer le côté opposé avec le gris foncé, puis adoucir les passages pour obtenir un dégradé.', phrase: 'Commence léger : il est plus facile d’ajouter du foncé que de l’enlever.' },
-    { title: 'Ombre portée, nettoyage et amélioration', text: 'Poser l’ombre sur le support, du côté opposé à la lumière. Effacer les traits de construction. Échanger avec un camarade : recevoir une remarque, puis appliquer une amélioration visible.', phrase: 'Montre la lumière sur ton dessin, puis dis ce que tu as amélioré.' },
+    { title: 'Forme de départ', text: 'Choisir une forme arrondie ou anguleuse. La placer dans la feuille avec une marge autour, en traits légers. Vérifier la régularité : un cercle se construit dans un carré de repère, une forme anguleuse se trace à la règle.', phrase: 'Trace doucement : ta forme doit pouvoir être corrigée sans laisser de marque.' },
+    { title: 'Transformation en objet', text: 'Ajouter seulement les lignes qui rendent l’objet reconnaissable. Pour le cercle devenu ballon : les coutures courbes. Pour un carré devenu maison : le toit, la porte, la fenêtre. S’arrêter avant de surcharger.', phrase: 'Demande-toi : sans le titre, est-ce qu’un camarade reconnaît mon objet ?' },
+    { title: 'Nuances de gris', text: 'Décider d’où vient la lumière. Garder clair le côté éclairé, poser le gris moyen, renforcer le côté opposé avec le gris foncé, puis adoucir les passages pour obtenir un dégradé.', phrase: 'Commence léger : il est plus facile d’ajouter du foncé que de l’enlever.' },
+    { title: 'Ombre et finition', text: 'Poser l’ombre sur le support, du côté opposé à la lumière. Effacer les traits de construction. Échanger avec un camarade : recevoir une remarque, puis appliquer une amélioration visible.', phrase: 'Montre la lumière sur ton dessin, puis dis ce que tu as amélioré.' },
   ],
   practice: {
     title: 'Une autre forme, un autre objet',
