@@ -14,7 +14,7 @@ UNIT5 = {
     'num': 5,
     'roman': 'V',
     'theme': "La protection de l'environnement",
-    'toc_title': "UNITÉ 5 — LA PROTECTION DE L’ENVIRONNEMENT",
+    'toc_title': "UNITÉ 5 — LA PROTECTION DE L'ENVIRONNEMENT",
     'thematique_officielle': (
         "Thématique officielle : La protection de l'environnement. "
         "Valeurs à véhiculer : sens des responsabilités, esprit civique et écologique. "
@@ -318,7 +318,7 @@ LESSONS5 = [
 assert len(LESSONS5) == 8
 
 EXAM5 = {
-    'title_suffix': "LA PROTECTION DE L’ENVIRONNEMENT",
+    'title_suffix': "LA PROTECTION DE L'ENVIRONNEMENT",
     'exercises': [
         {
             'points': 5,
