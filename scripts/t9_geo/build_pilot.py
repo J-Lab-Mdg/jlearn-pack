@@ -36,6 +36,7 @@ from content_unit2 import UNIT2, LESSONS2, EXAM2  # noqa: E402
 from content_unit3 import UNIT3, LESSONS3, EXAM3  # noqa: E402
 from content_unit4 import UNIT4, LESSONS4, EXAM4  # noqa: E402
 from content_unit5 import UNIT5, LESSONS5, EXAM5  # noqa: E402
+from content_unit6 import UNIT6, LESSONS6, EXAM6  # noqa: E402
 
 SRC = os.path.join(ROOT, "Nos manuels", "Manuel_Geographie_T8_JLearn.docx")
 OUT = os.path.join(ROOT, "Nos manuels", "Manuel_Geographie_T9_V1_PILOTE.docx")
@@ -862,11 +863,11 @@ def main():
     i_el = OxmlElement('w:i'); rpr2.append(i_el)
     run2.append(rpr2)
     t2 = OxmlElement('w:t')
-    t2.text = ("Version pilote — Unités 1 à 5 : La structure économique de Madagascar ; "
+    t2.text = ("Version complète — Unités 1 à 6 : La structure économique de Madagascar ; "
                "la méthodologie de traitement de devoir ; les potentialités naturelles de Madagascar ; "
-               "les potentialités démographiques de Madagascar ; la protection de l'environnement "
-               "(58 heures, séances 1 à 68 sur 76). Document de validation du format avant la "
-               "production complète des 6 unités du manuel.")
+               "les potentialités démographiques de Madagascar ; la protection de l'environnement ; "
+               "la lutte contre la pauvreté à Madagascar (64 heures, séances 1 à 76 sur 76). "
+               "Premier manuscrit complet du manuel, soumis à relecture et validation pédagogique.")
     run2.append(t2)
     sub_p.append(run2)
     body.append(sub_p)
@@ -994,6 +995,31 @@ def main():
 
     # -- examen (seance 68) --
     for el in build_exam_elements_from_spec(68, TOTAL, UNIT5, EXAM5):
+        body.append(el)
+
+    # ------------------------------------------------------------------
+    # Unite 6 : La lutte contre la pauvrete a Madagascar (seances 69-76)
+    # ------------------------------------------------------------------
+    body.append(clone(lesson_tpl['blank']))
+    unit6_title = mk(unit_header_tpl, 'unit_title')
+    set_single_run_text(unit6_title, UNIT6['toc_title'])
+    body.append(unit6_title)
+    unit6_them = mk(unit_header_tpl, 'unit_thematique')
+    set_single_run_text(unit6_them, UNIT6['thematique_officielle'])
+    body.append(unit6_them)
+    body.append(mk(unit_header_tpl, 'blank'))
+
+    # -- 6 seances de lecon (69-74) --
+    for i, lesson in enumerate(LESSONS6, start=69):
+        for el in build_seance_elements(i, TOTAL, lesson, UNIT6, footnotes=footnotes, doc=doc):
+            body.append(el)
+
+    # -- revision (seance 75) --
+    for el in build_revision_elements(75, TOTAL, UNIT6, LESSONS6):
+        body.append(el)
+
+    # -- examen (seance 76) --
+    for el in build_exam_elements_from_spec(76, TOTAL, UNIT6, EXAM6):
         body.append(el)
 
     # -- restaurer sectPr a la fin du document --
