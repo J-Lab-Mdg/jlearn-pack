@@ -103,7 +103,48 @@ for off, role in EXAM_ROLE_BY_OFFSET.items():
     if role not in exam_tpl:
         exam_tpl[role] = clone(body_src[752 + off])
 
-print("Gabarits extraits :", list(lesson_tpl.keys()), list(rev_tpl.keys()), list(exam_tpl.keys()))
+# Pages liminaires (page de garde, authenticite, avant-propos, mode
+# d'emploi, table des matieres, tableau de bord general) : indices 0-143
+# du manuel T8 source (gabarits non lies a un hyperlien).
+FRONT_ROLE_BY_INDEX = {
+    2: 'authent_title', 3: 'authent_warning', 4: 'authent_text',
+    8: 'qr_caption', 9: 'copyright',
+    11: 'section_title', 12: 'body_plain_front',
+}
+front_tpl = {}
+for idx, role in FRONT_ROLE_BY_INDEX.items():
+    if role not in front_tpl:
+        front_tpl[role] = clone(body_src[idx])
+
+# Tableaux de bord (gabarits de tableaux, lignes clonables) : table0 =
+# vue d'ensemble (8 lignes, reutilisee telle quelle), table1 = modele de
+# ligne pour les tableaux de bord par unite (3 colonnes).
+dashboard_table0_tpl = clone(body_src[123])
+dashboard_table_unit_tpl = clone(body_src[126])
+
+# Annexes (glossaire, cartes et schemas d'activites, auto-evaluation,
+# table des illustrations, sources) : indices 3823-3881 du manuel T8
+# source.
+ANNEX_ROLE_BY_INDEX = {
+    3823: 'section_title_caps', 3824: 'body_plain_front',
+    3826: 'subsection_title', 3830: 'subsection_title',
+    3832: 'carte_item_title', 3833: 'carte_item_consigne',
+    3835: 'carte_item_caption',
+    3865: 'subsection_title', 3869: 'subsection_title',
+    3872: 'subsection_title',
+    3873: 'source_bullet', 3874: 'source_explain',
+}
+annex_tpl = {}
+for idx, role in ANNEX_ROLE_BY_INDEX.items():
+    if role not in annex_tpl:
+        annex_tpl[role] = clone(body_src[idx])
+
+glossaire_table_tpl = clone(body_src[3828])
+autoeval_table_tpl = clone(body_src[3867])
+illustrations_table_tpl = clone(body_src[3870])
+
+print("Gabarits extraits :", list(lesson_tpl.keys()), list(rev_tpl.keys()), list(exam_tpl.keys()),
+      list(front_tpl.keys()), list(annex_tpl.keys()))
 
 
 # ---------------------------------------------------------------------
@@ -828,8 +869,319 @@ def build_exam_elements_from_spec(idx, total, unit, exam_spec):
     return out
 
 
+def _plain_run_para(text, bold=False, italic=False, size=24, color=None, align=None):
+    """Construit un paragraphe autonome (non clone d'un gabarit), utilise
+    pour les lignes de table des matieres et de tableau de bord par unite
+    (textes initialement portes par un hyperlien interne dans le gabarit
+    T8, non reproduit ici : simples lignes de texte stylees)."""
+    p = OxmlElement('w:p')
+    if align:
+        ppr = OxmlElement('w:pPr')
+        jc = OxmlElement('w:jc')
+        jc.set(qn('w:val'), align)
+        ppr.append(jc)
+        p.append(ppr)
+    run = OxmlElement('w:r')
+    rpr = OxmlElement('w:rPr')
+    rfonts = OxmlElement('w:rFonts')
+    for attr in ('w:ascii', 'w:hAnsi', 'w:cs', 'w:eastAsia'):
+        rfonts.set(qn(attr), 'Times New Roman')
+    rpr.append(rfonts)
+    if bold:
+        rpr.append(OxmlElement('w:b'))
+    if italic:
+        rpr.append(OxmlElement('w:i'))
+    sz_el = OxmlElement('w:sz')
+    sz_el.set(qn('w:val'), str(size))
+    rpr.append(sz_el)
+    if color:
+        color_el = OxmlElement('w:color')
+        color_el.set(qn('w:val'), color)
+        rpr.append(color_el)
+    run.append(rpr)
+    t = OxmlElement('w:t')
+    t.text = text
+    t.set(qn('xml:space'), 'preserve')
+    run.append(t)
+    p.append(run)
+    return p
+
+
 # ---------------------------------------------------------------------
-# 6. Assemblage final du document
+# 6. Pages liminaires : authenticite, avant-propos, mode d'emploi,
+#    table des matieres, tableau de bord general.
+# ---------------------------------------------------------------------
+def build_authenticite(doc):
+    import content_front_back as cfb
+    out = []
+    t = mk(front_tpl, 'authent_title')
+    set_single_run_text(t, cfb.AUTHENTICITE['title'])
+    out.append(t)
+    w = mk(front_tpl, 'authent_warning')
+    set_single_run_text(w, cfb.AUTHENTICITE['warning'])
+    out.append(w)
+    for line in cfb.AUTHENTICITE['text']:
+        p = mk(front_tpl, 'authent_text')
+        set_single_run_text(p, line)
+        out.append(p)
+    url_p = _plain_run_para(cfb.AUTHENTICITE['facebook_url'], italic=True, size=22, color='1F4E79')
+    out.append(url_p)
+    qr_img = mk_image_paragraph(doc, 'qr_facebook.png', width_inches=1.6)
+    if qr_img is not None:
+        out.append(qr_img)
+    qrc = mk(front_tpl, 'qr_caption')
+    set_single_run_text(qrc, cfb.AUTHENTICITE['qr_caption'])
+    out.append(qrc)
+    cpy = mk(front_tpl, 'copyright')
+    set_single_run_text(cpy, cfb.AUTHENTICITE['copyright'])
+    out.append(cpy)
+    out.append(clone(lesson_tpl['blank']))
+    return out
+
+
+def build_avant_propos():
+    import content_front_back as cfb
+    out = []
+    title = mk(front_tpl, 'section_title')
+    set_single_run_text(title, "Avant-propos")
+    out.append(title)
+    for line in cfb.AVANT_PROPOS:
+        p = mk(front_tpl, 'body_plain_front')
+        set_single_run_text(p, line)
+        out.append(p)
+    out.append(clone(lesson_tpl['blank']))
+    return out
+
+
+def build_mode_emploi():
+    import content_front_back as cfb
+    out = []
+    title = mk(front_tpl, 'section_title')
+    set_single_run_text(title, "Mode d'emploi du manuel")
+    out.append(title)
+    for line in cfb.MODE_EMPLOI:
+        p = mk(front_tpl, 'body_plain_front')
+        set_single_run_text(p, line)
+        out.append(p)
+    out.append(clone(lesson_tpl['blank']))
+    return out
+
+
+def build_table_des_matieres():
+    import content_front_back as cfb
+    out = []
+    title = mk(front_tpl, 'section_title')
+    set_single_run_text(title, "Table des matières")
+    out.append(title)
+    for label in ("Avant-propos", "Mode d'emploi du manuel", "Tableau de bord général"):
+        out.append(_plain_run_para(label, bold=True, size=24))
+    out.append(_plain_run_para(''))
+
+    current_unit = None
+    for num, titre_court, kind, unit in cfb.SEANCE_INDEX:
+        if unit is not current_unit:
+            if current_unit is not None:
+                out.append(_plain_run_para(''))
+            out.append(_plain_run_para(unit['toc_title'], bold=True, size=26))
+            current_unit = unit
+        label = cfb._seance_title(num, titre_court, {'Leçon': 'lecon', 'Révision': 'revision',
+                                                      "Sujet d'examen": 'examen'}[kind], unit)
+        out.append(_plain_run_para(label, size=24))
+
+    out.append(_plain_run_para(''))
+    out.append(_plain_run_para("Annexes", bold=True, size=26))
+    for label in ("Glossaire", "Cartes et schémas d'activités", "Auto-évaluation",
+                  "Table des illustrations", "Sources"):
+        out.append(_plain_run_para(label, size=24))
+    out.append(clone(lesson_tpl['blank']))
+    return out
+
+
+def build_tableau_de_bord():
+    import content_front_back as cfb
+    out = []
+    title = mk(front_tpl, 'section_title')
+    set_single_run_text(title, "Tableau de bord général")
+    out.append(title)
+    intro = mk(front_tpl, 'body_plain_front')
+    set_single_run_text(intro, cfb.TABLEAU_DE_BORD_INTRO)
+    out.append(intro)
+
+    table0 = clone(dashboard_table0_tpl)
+    for i, row_vals in enumerate(cfb.overview_rows(), start=1):
+        for col, val in enumerate(row_vals):
+            set_table_cell_text(table0, i, col, [val])
+    out.append(table0)
+    out.append(clone(lesson_tpl['blank']))
+
+    for unit, lessons, start, end in cfb.UNITS:
+        dtitle = _plain_run_para(
+            f"Tableau de bord — Unité {unit['num']} — {unit['theme'].lower()}",
+            bold=True, italic=True, size=28, color='1E7B34')
+        out.append(dtitle)
+
+        table_u = clone(dashboard_table_unit_tpl)
+        data_row_tpl = clone_table_row(table_u, 1)
+        existing_rows = table_u.findall(Wtr)
+        for extra_row in existing_rows[2:]:
+            table_u.remove(extra_row)
+        num = start
+        entries = [(num_i, lesson['titre'], 'Leçon') for num_i, lesson in
+                   zip(range(start, start + len(lessons)), lessons)]
+        entries.append((start + len(lessons), f"Révision — Unité {unit['num']} — {unit['theme'].upper()}", 'Révision'))
+        entries.append((end, f"Sujet d'examen T9 — Unité {unit['num']} — {unit['theme'].upper()}", "Sujet d'examen"))
+        for i, (n, titre, typ) in enumerate(entries):
+            if i == 0:
+                row = table_u.findall(Wtr)[1]
+            else:
+                row = clone(data_row_tpl)
+                table_u.append(row)
+            cells = row.findall(Wtc)
+            set_multiline_single_run(cells[0].findall(Wp)[0], [str(n)])
+            set_multiline_single_run(cells[1].findall(Wp)[0], [titre])
+            set_multiline_single_run(cells[2].findall(Wp)[0], [typ])
+        out.append(table_u)
+        out.append(clone(lesson_tpl['blank']))
+    return out
+
+
+# ---------------------------------------------------------------------
+# 7. Annexes : glossaire, cartes et schemas, auto-evaluation, table des
+#    illustrations, sources.
+# ---------------------------------------------------------------------
+def build_annexes(doc):
+    import content_front_back as cfb
+    out = []
+    out.append(clone(lesson_tpl['blank']))
+
+    title = mk(annex_tpl, 'section_title_caps')
+    set_single_run_text(title, "ANNEXES")
+    out.append(title)
+    intro = mk(annex_tpl, 'body_plain_front')
+    set_single_run_text(intro, cfb.ANNEXES_INTRO)
+    out.append(intro)
+    out.append(clone(lesson_tpl['blank']))
+
+    # -- Glossaire --
+    gt = mk(annex_tpl, 'subsection_title')
+    set_single_run_text(gt, "Glossaire")
+    out.append(gt)
+    gi = mk(annex_tpl, 'body_plain_front')
+    set_single_run_text(gi, cfb.GLOSSAIRE_INTRO)
+    out.append(gi)
+
+    gloss_table = clone(glossaire_table_tpl)
+    data_row_tpl = clone_table_row(gloss_table, 1)
+    existing_rows = gloss_table.findall(Wtr)
+    for extra_row in existing_rows[2:]:
+        gloss_table.remove(extra_row)
+    for i, (term, definition) in enumerate(cfb.GLOSSAIRE):
+        if i == 0:
+            row = gloss_table.findall(Wtr)[1]
+        else:
+            row = clone(data_row_tpl)
+            gloss_table.append(row)
+        cells = row.findall(Wtc)
+        set_multiline_single_run(cells[0].findall(Wp)[0], [term])
+        set_multiline_single_run(cells[1].findall(Wp)[0], [flat_text(definition)])
+    out.append(gloss_table)
+    out.append(clone(lesson_tpl['blank']))
+
+    # -- Cartes et schemas d'activites --
+    ct = mk(annex_tpl, 'subsection_title')
+    set_single_run_text(ct, "Cartes et schémas d'activités")
+    out.append(ct)
+    ci = mk(annex_tpl, 'body_plain_front')
+    set_single_run_text(ci, cfb.CARTES_INTRO)
+    out.append(ci)
+    for item in cfb.CARTES_SCHEMAS:
+        it = mk(annex_tpl, 'carte_item_title')
+        set_single_run_text(it, item['title'])
+        out.append(it)
+        ic = mk(annex_tpl, 'carte_item_consigne')
+        set_single_run_text(ic, item['consigne'])
+        out.append(ic)
+        img = mk_image_paragraph(doc, item['image'], width_inches=5.5)
+        if img is not None:
+            out.append(img)
+        cap = mk(annex_tpl, 'carte_item_caption')
+        set_single_run_text(cap, item['caption'])
+        out.append(cap)
+    out.append(clone(lesson_tpl['blank']))
+
+    # -- Auto-evaluation --
+    at = mk(annex_tpl, 'subsection_title')
+    set_single_run_text(at, "Auto-évaluation")
+    out.append(at)
+    ai = mk(annex_tpl, 'body_plain_front')
+    set_single_run_text(ai, cfb.AUTOEVAL_INTRO)
+    out.append(ai)
+
+    autoeval_table = clone(autoeval_table_tpl)
+    unit_row_tpl = clone_table_row(autoeval_table, 1)
+    skill_row_tpl = clone_table_row(autoeval_table, 2)
+    existing_rows = autoeval_table.findall(Wtr)
+    for extra_row in existing_rows[1:]:
+        autoeval_table.remove(extra_row)
+    for unit_label, skills in cfb.AUTO_EVAL:
+        urow = clone(unit_row_tpl)
+        autoeval_table.append(urow)
+        ucells = urow.findall(Wtc)
+        set_multiline_single_run(ucells[0].findall(Wp)[0], [unit_label])
+        for col in (1, 2, 3):
+            set_multiline_single_run(ucells[col].findall(Wp)[0], [''])
+        for skill in skills:
+            srow = clone(skill_row_tpl)
+            autoeval_table.append(srow)
+            scells = srow.findall(Wtc)
+            set_multiline_single_run(scells[0].findall(Wp)[0], [skill])
+            for col in (1, 2, 3):
+                set_multiline_single_run(scells[col].findall(Wp)[0], [''])
+    out.append(autoeval_table)
+    out.append(clone(lesson_tpl['blank']))
+
+    # -- Table des illustrations --
+    it_title = mk(annex_tpl, 'subsection_title')
+    set_single_run_text(it_title, "Table des illustrations")
+    out.append(it_title)
+
+    illus_table = clone(illustrations_table_tpl)
+    data_row_tpl = clone_table_row(illus_table, 1)
+    existing_rows = illus_table.findall(Wtr)
+    for extra_row in existing_rows[2:]:
+        illus_table.remove(extra_row)
+    for i, (num, titre, illus) in enumerate(cfb.TABLE_ILLUSTRATIONS):
+        if i == 0:
+            row = illus_table.findall(Wtr)[1]
+        else:
+            row = clone(data_row_tpl)
+            illus_table.append(row)
+        cells = row.findall(Wtc)
+        set_multiline_single_run(cells[0].findall(Wp)[0], [num])
+        set_multiline_single_run(cells[1].findall(Wp)[0], [titre])
+        set_multiline_single_run(cells[2].findall(Wp)[0], illus.split('\n'))
+    out.append(illus_table)
+    out.append(clone(lesson_tpl['blank']))
+
+    # -- Sources --
+    st = mk(annex_tpl, 'subsection_title')
+    set_single_run_text(st, "Sources")
+    out.append(st)
+    for src in cfb.SOURCES:
+        b = mk(annex_tpl, 'source_bullet')
+        set_single_run_text(b, src['bullet'])
+        out.append(b)
+        e = mk(annex_tpl, 'source_explain')
+        set_single_run_text(e, src['explain'])
+        out.append(e)
+    closing = mk(annex_tpl, 'source_explain')
+    set_single_run_text(closing, cfb.SOURCES_CLOSING)
+    out.append(closing)
+    return out
+
+
+# ---------------------------------------------------------------------
+# 8. Assemblage final du document
 # ---------------------------------------------------------------------
 def main():
     doc = docx.Document(SRC)
@@ -866,12 +1218,24 @@ def main():
     t2.text = ("Version complète — Unités 1 à 6 : La structure économique de Madagascar ; "
                "la méthodologie de traitement de devoir ; les potentialités naturelles de Madagascar ; "
                "les potentialités démographiques de Madagascar ; la protection de l'environnement ; "
-               "la lutte contre la pauvreté à Madagascar (64 heures, séances 1 à 76 sur 76). "
-               "Premier manuscrit complet du manuel, soumis à relecture et validation pédagogique.")
+               "la lutte contre la pauvreté à Madagascar (64 heures, séances 1 à 76 sur 76).")
     run2.append(t2)
     sub_p.append(run2)
     body.append(sub_p)
     body.append(clone(lesson_tpl['blank']))
+
+    # -- pages liminaires : authenticite, avant-propos, mode d'emploi,
+    #    table des matieres, tableau de bord general --
+    for el in build_authenticite(doc):
+        body.append(el)
+    for el in build_avant_propos():
+        body.append(el)
+    for el in build_mode_emploi():
+        body.append(el)
+    for el in build_table_des_matieres():
+        body.append(el)
+    for el in build_tableau_de_bord():
+        body.append(el)
 
     # ------------------------------------------------------------------
     # Unite 1 : La structure economique de Madagascar (seances 1-20)
@@ -1020,6 +1384,11 @@ def main():
 
     # -- examen (seance 76) --
     for el in build_exam_elements_from_spec(76, TOTAL, UNIT6, EXAM6):
+        body.append(el)
+
+    # -- annexes : glossaire, cartes et schemas, auto-evaluation, table
+    #    des illustrations, sources --
+    for el in build_annexes(doc):
         body.append(el)
 
     # -- restaurer sectPr a la fin du document --
