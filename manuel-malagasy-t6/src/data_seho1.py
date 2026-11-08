@@ -41,44 +41,13 @@ GRILLE = [
     ['Tombana', "Avy amin'ny teny roa inona ny hoe tanindrazana ?", 'Mamaly an-tsoratra.\nV.A. : Tany ; razana.', 'Asa tsirairay', 'Kahie', ''],
 ]
 
-# ny fizarana 1→5 an'ny boky, teny-teny (h2 = voalamina 1..5 ; bul = ny lisitry)
-SESO_TANANA = [
-    ['p', 'Ny tanindrazana'],
-    ['h2', 'Famaritana'],
-    ['p', 'a. Ny tanindrazana'],
-    ['p', "- Ara-piforonan-teny : tany ; razana. Tanin-drazana, tanin'ny razana"],
-    ['p', "- Ara-kevitra : Ny tanindrazana, amin'ny kolontsaina malagasy, dia tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara, mety ho toerana nahalatsahan'ny tavony, teorana misy fasan-drazana, tanàna na faritra na koa firenena izay niavin'ny loharano nipoirana na ny razana niharana."],
-    ['p', 'b. Ny firenena'],
-    ['p', '- Ara-piforonan-teny : fi+reny+ana ; fi-ren(y)-a(e)na'],
-    ['p', "- Ara-kevitra : Ny teny hoe firenena dia vondron'olona iray monina amim-pitiavana sy firaisan-kina ao anatin'ny faritra iray, mitovy fiteny, manaraka kolontsaina na fomban-drazana iraisana, ary matetika mifamatotra amin'ny fanjakana na fitondram-panjakana tokana."],
-    ['p', "Araka ny Rakibolana : « Vahoaka iray tany, teny sy fomba, ka miray monina amin'ny fanjakana iray »."],
-    ['h2', 'Fomba hamantarana ny mpiray tanindrazana'],
-    ['p', "Ny foko dia vondron'olona mihevitra ny tenany ho iray razana, iray tantara sy fedrà, iray kolontsaina, iray fiteny na fitenim-paritra, iray fomba fiainana."],
-    ['h2', "Adidy tanterahin'ny olona tia tanindrazana"],
-    ['p', "Toetra tokony hananan'ny tia tanindrazana :"],
-    ['bul', ['Ny fanajana ny fitsipika sy ny lalàna mifehy ;', 'Ny fifankatiavana sy ny firaisankina ;', 'Ny fiarovana ny tany sy ny fikarakarana azy (ny tsy fivarotana tanindrazana ) ;', "Ny fahasahiana mitolona ho an'ny tanindrazana."]],
-    ['p', "Araka ny fandaharam-pibeazana : fikarakarana ny lova navelan'ny razana ; fandraisana andraikitra sy adidy ; fanajana ny satam-pirenena."],
-    ['h2', 'Maha firenena ny firenena'],
-    ['bul', ['Ny tenim-pirenena ;', 'Ny hiram-pirenena ;.', 'Ny fanevam-pirenana ;', 'Ny filoham-pirenena na ny mpitondra ;', 'Ny kolontsaina ;', 'Ny mponina ;', 'Ny tany,', 'Ny hasin’ny tany na fady.']],
-    ['h2', 'Ohabolana mahakasika ny tanindrazana'],
-    ['tononkalo', [['“Izay mandoro tanety, mandoro tanindrazana.”', "“Aleo mahantra an-tanindrazana, toy izay malahelo any an-tanin' olona.”", "“Ny fitiavan-tanindrazana no lova soan' ny taranaka.”", '“Tsy misy hariana, fa ny iray hetra, ary ny iray tanindrazana.”']]],
-]
+# ny lesona dia AN'NY MPAMPIANATRA : tsy averina, tsy ovana, tsy ampidirina ao amin'ity
+# rakitra ity akory. `LESONA_REF` ihany no milaza azy (lohateny + SEHO n/21), ka ny takela-
+# panomanan-desona sy ny fanazaran-tena/valiny no atanako.
+LESONA = []
+ANAKO = []
 
-# ny « Fanampiana » : an'ny manuela J-Learn, voamarika ho azy
-ANAKO = [
-    ['p', "Ny singa azo andimbana hoe *ara-piforonan-teny* dia voalaza amin'ny hoe : « *hilaza ny azo hamaritana ny tanindrazana miainga amin'ny fandravonana ny teny sy* *fandravonana ny hevitra* »."],
-    ['p', "Ohatra avy amin'ny FRP : ny adidin'ny taranaka"],
-    ['ohatra', ['« *Raha toa ka tsapanao ny jaly sy tomany* »', "« *Niainan-drazantsika tamin'ny fanjanahantany* »", '« *Dia ataovy an-tsaina tsara ny jaly farahidy* »', "« *Tratran'ny tsy fidiny fony tamin'izany.* »"]],
-    ['note', "Ireo zana-dahatsoratra ireo dia voasoratra ao amin'ny FRP T6, LFK 6i, teo ambany lohateny hoe « NY ZO SY ADIDY ARY ANDRAIKITRA / Ny adidin'ny taranaka amin'ny tanindrazana ». Miverina indroa ao aminy ny teny hoe *jaly*."],
-    ['p', "Ny PE dia manoro ny mpianatra : « *handrasa ny teny « firenena »* », « *hamaritra ny atao hoe « firenena » araka ny fahafantarany azy sy araka ny teny* *niaviany* », ary « *hitrandraka tahirin-kevitra hahafahana mamantatra ny tantaran'ny* *firenena, ny fanevany, ny teny ampiasaina ao amin'ny fireneny, ny hirany ary ny* *harenany* »."],
-    ['ohatra', ['« *Mijoroa ianao fa tia tanindrazana* »', '« *Zo anao mantsy ny hifidy malalaka* »']],
-    ['note', "Famaranana ny « Ny fitondran-tena mifandraika amin'ny fifidianana » an'ny FRP T6 : ireo teny roa ireo no teny farany amin'ireo andininy (tak. 33). Mampiseho ny *satam-pirenena* — izay anisan'ny adidy — ireo andalana ireo."],
-    ['bul', ['*Tosa-kevitra* · *Famakiana lahatsoratra* · *Fijerena sary* · *Fifanakalozan-kevitra* · *Adihevitra*']],
-]
-
-LESONA = SESO_TANANA + [
-    ['p', "Fanampiana : ny singa tandrefina an'ny PE sy ny ohatra an'ny FRP — tsy ampahany amin'ny lesona 1→5 io."],
-] + ANAKO
+LESONA_REF = "Lesona : « Ny tanindrazana sy ny firenena » — boky natao an-tanana, SEHO 1 (n° 1/21). Io lesona io no foto-kevitra : tsy averina ao amin'ity rakitra ity izy, fa ny takela-panomanan-desona sy ny fanazaran-tena no ataoko."
 
 # FANAZARAN-TENA : baiko 3 an'ny boky (teny-teny) + fanontaniana vaovao 1
 EXOS = [
@@ -93,7 +62,7 @@ FANITSIANA = [
     {'banga': ['a) tany', 'b) tany', 'd) firaisan-kina']},
     {'tsilo': (['1. tanindrazana', '2. firenena'], ["a. vondron'olona iray monina amim-pitiavana sy firaisan-kina ao anatin'ny faritra iray", "b. tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara"])},
     {'banga': ['a) Ny fifankatiavana sy ny firaisankina', 'b) Ny fiarovana ny tany sy ny fikarakarana azy']},
-    {'banga': ["a) Ny tanindrazana, amin'ny kolontsaina malagasy, dia tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara, mety ho toerana nahalatsahan'ny tavony, teorana misy fasan-drazana, tanàna na faritra na koa firenena izay niavin'ny loharano nipoirana na ny razana niharana.", "b) Ny fanajana ny fitsipika sy ny lalàna mifehy ; Ny fifankatiavana sy ny firaisankina ; Ny fiarovana ny tany sy ny fikarakarana azy (ny tsy fivarotana tanindrazana ) ; Ny fahasahiana mitolona ho an'ny tanindrazana.", "c) Ao anatin'ny faritra iray, amim-pitiavana sy firaisan-kina."]},
+    {'banga': ["a) Dia tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara.", "b) Ny fanajana ny fitsipika sy ny lalàna mifehy ; Ny fifankatiavana sy ny firaisankina ; Ny fiarovana ny tany sy ny fikarakarana azy (ny tsy fivarotana tanindrazana ) ; Ny fahasahiana mitolona ho an'ny tanindrazana.", "c) Ao anatin'ny faritra iray, amim-pitiavana sy firaisan-kina."]},
 ]
 
 # LOHARANON-KEVITRA

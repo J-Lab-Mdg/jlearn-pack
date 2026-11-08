@@ -78,13 +78,19 @@ def verbatim(chemin):
     return lisitra, hafa
 
 
+def _tsy_be(data):
+    return None
+
+
 def tanana(data, tesy_tanana):
     """isaky ny atiny an'ny boky natao an-tanana : teny-teny ve ?"""
     corpus = norm(tesy_tanana)
     ena, halavita = [], []
-    for blk in data.SESO_TANANA:                       # ny LESONA : 1→5
-        for l in fikitika(blk[1]):
-            ena.append(("LESONA/%s" % blk[0], l))
+    # ny `LESONA_REF` : ahy izany, ka ny atao hoe : mila manonona ny lesona sy ny SEHO n/21
+    ref = data.LESONA_REF
+    if data.LT not in ref or ("SEHO" not in ref) or ("1/21" not in ref):
+        raise SystemExit("SORO-TANANA TSY METY : tsy manonona ny lesona na ny SEHO n/21 : %r"
+                         % ref[:80])
     def andy(e):
         ts = e.get("tsilo") or ((), ())
         return list(e.get("banga", [])) + list(ts[0]) + list(ts[1])
@@ -109,6 +115,31 @@ def tanana(data, tesy_tanana):
     return len(ena), halavita
 
 
+def tsy_misy_soratra_lesona(chemin, ref):
+    """ho an'ny firaketana `rafitra == \"tanana\"` ihany : soro-tanana moneny no tina
+
+    Ny lesona dia an'ny mpampianatra : tsy averina, tsy ovana, tsy ampidirina ao amin'ny
+    rakitra ataoko. Angavana eto : eo miverina ny « LESONA: », dia ny soro-tanana (`ref`)
+    manaraka azy no tokony ho tarika farany talahan'ny « FANAZARAN-TENA ».
+    """
+    lignes = soratra_docx(chemin)
+    ref = ref.strip()
+    fijerena = 0
+    diso = []
+    for k, l in enumerate(lignes):
+        if not l.startswith(ref):
+            continue
+        fijerena += 1
+        manaraka = [x for x in lignes[k + 1:k + 4] if x.strip()]
+        if not (manaraka and manaraka[0].startswith("FANAZARAN-TENA")):
+            diso.append(manaraka[0][:80] if manaraka else "(farany)")
+    print("tsy_misy_soratra_lesona : %d seho « tanana » · %d misy soratra lesona aorian'ny "
+          "soro-tanana" % (fijerena, len(diso)))
+    for d in diso:
+        print("   SORATRA LESONA NIANTSOA :", d)
+    return len(diso)
+
+
 def main():
     chemin = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
         DOS, "output", "Malagasy_T6_J-Learn.docx")
@@ -126,7 +157,13 @@ def main():
     if not n:
         print("MANQUANT : tsy nisy atiny novokarina")
         return 1
-    print("TSY MISY DIKA amin'ny SEHO 1 : teny-teny rehetra ny atiny avy amin'ny boky")
+    print("tanana : teny-teny rehetra ny takela sy ny fanazaran-tena avy amin'ny boky")
+    # ny atiny an'ny boky ihany no ijery (LESONA_REF + GRILLE + EXOS + FANITSIANA)
+    tsy = tsy_misy_soratra_lesona(chemin, data_seho1.LESONA_REF)
+    if tsy:
+        print("MANQUANT : nampidirina soratra lesona ao amin'ny seho « tanana »")
+        return 1
+    print("TSY MISY DIKA amin'ny SEHO 1")
     return 0
 
 

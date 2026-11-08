@@ -534,6 +534,7 @@ FICHES = [
                     "ora 20",
                     data_seho1.FANOVOZAN_KEVITRA + " · FRP T6 éd. Okt. 2026, LFK 6i"
                     " · RAPE T6 sept. 2026, herinandro 1-2"),
+   "lesona_ref": data_seho1.LESONA_REF,  # ny lesona an'ny mpampianatra : soro-tanana ihany
    "grille": data_seho1.GRILLE,          # ny dingana 6 + Famerenana + Tombana : teny-teny
    "lesona": data_seho1.LESONA, "exos": data_seho1.EXOS,
    "fanitsiana": data_seho1.FANITSIANA, "loharano": data_seho1.LOHARANO,

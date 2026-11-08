@@ -130,30 +130,38 @@ votoaty eo amin'ny LESONA amin'io seho io, ary ny valiny rehetra dia hita ao ami
 - Ny atiny ôfisialy dia mbola mijanona : `refs/FRP_6eme_MLG.txt` (marina p.4 = lohatenin'ny
   fascicule), `refs/10_PE_T6_ZANATARANJA.txt`, `refs/PE_T6.txt`.
 
-## 7 · Vokatra : **Dingana A + B natao tamin'ny SEHO 1** (03/11)
+## 7 · Fifanarahana vonin'ny mpampianatra (03/11) — ny lalàna mifehy ny fanovana
 
-Rakitra vaovao ao amin'ny `src/` :
-- `data_seho1.py` — ny SEHO 1 voarindra (noaovan'ny `gen_seho1.py`, tsy soratana an-tanana) ;
-- `gen_seho1.py` — ny mpamokatra : mamaky ny `word/document.xml` an'ny boky ary **mampiasa ny
-  taranja anaty (index)**, ka tsy misy oaky mety ka tavela amin'ny fifindràna an-tanana ;
-- `sento_tanana.py` — ny boky → `refs/14` (miaraka amin'ny tabilao, satria ao amin'ny sela no
-  onenan'ny boky ny dingana 6 sy ny valin'ny « Ampifandraiso ») ;
-- `fikajy_citation.py` — mpijinja roa : `verbatim` (ny `« … »` rehetra ao amin'ny docx
-  ⇄ ny raki-drakitra) sy `tanana` (ny atiny avy amin'ny boky dia teny-teny ve ?).
-Builder : `rafitra == "tanana"` → lohateny « SEHO 1 — … », « n° 1/21 », `Seho n° : 1`,
-`Isan'ny seho : 21` ; ny 23 firaketana hafa dia tsy niovana akory.
+> « **tu ne dois surtout pas toucher les lecons mais seulement les fiche de preparations et
+> les exercices corrige aligne avec les lecon que j'ai redige** »
 
-Vokatra : 107 singa **teny-teny** · 0 tsy mifanaraka amin'ny boky · 4 baiko (3 tenany + 1
-karazana fanontaniana mivantana : `Inona no … ?`, `Inona avy ny … ?`, `Taiza no … ?`) ·
-4 valiny 1:1 ao amin'ny FANITSIANA · 5 fizarana amin'ny LESONA (1→5 araka ny boky) + ny
-« Fanampiana » voamarika fa an'ny manuela · `verbatim : 217 voakopi / 172 hita` (+1 : ny
-« Vahoaka iray tany, teny sy fomba… » an'ny Rakibolana, izay novoritako teo aloha) ·
-`controles : TUATUA` · LISTE-ROUGE 31 / 0.
+→ **ny lesona : an'ny mpampianatra, tsy azo tsikeina.** Tsy averina ao amin'ny rakitra ataoko,
+tsy ovana, tsy ampiana ao Zavatra (toy ny « Fanampiana » natao teo aloha — **voafafa**, satria
+niditra tao anaty lesona izany). Ny ataoko dia roa ihany :
+1. ny **takela-panomanan-desona** (en-tête, Famerenana, dingana 6, Tombana) ;
+2. ny **fanazaran-tena sy ny valiny** (FANAZARAN-TENA + FANITSIANA) — mifanaraka teny-teny
+   amin'ny lesona voasoron'ny mpampianatra, ka angatao amin'ny lesona io ny valiny rehetra.
+Ny « LESONA: » ao amin'ny boky ataoko dia **soro-tanana** ihany : lohatenin'ny lesona +
+« SEHO n/21 » + ny antsipiriany momba ny boky natao an-tanana.
 
-### Zava-boahary 2 hafa any amin'ny rakitra faobe — voatazona araka izany, tsy nOVANA
+### Vokatra : SEHO 1 (03/11)
+- `src/data_seho1.py` — noaovan'ny `src/gen_seho1.py` : `LESONA = []` (tsy misy soratra lesona),
+  `LESONA_REF` (soro-tanana), `GRILLE` 11 andalana teny-teny, `EXOS` 4 baiko (3 tenany +
+  1 fanontaniana mivantana : `Inona no … ?`, `Inona avy ny … ?`, `Taiza no … ?`), `FANITSIANA`
+  4 valiny 1:1 ;
+- rakitra : `output/Seho_1_T6_J-Learn.docx` (43 543 o · 51 paragrafo · 4 tabilao · 5 759 karakterina) sy ny boky feno
+  (`Malagasy_T6_J-Learn.docx`, 1 649 paragrafo · 171 406 karakterina, -2 985 noho ny lesona
+  nalaina) ;
+- mpijinja `src/fikajy_citation.py` : `tanana : 75 singa · 0 tsy hita` (teny-teny avy amin'ny
+  boky ny takela sy ny baiko/valiny rehetra) · `tsy_misy_soratra_lesona : 1 seho · 0` ·
+  `verbatim : 208 voakopi · 163 hita ao amin'ny loharano` · `controles : TUATUA` ·
+  LISTE-ROUGE 31 / 0 ;
+- ny baiko 4 sy ny valiny azy ihany no fanampiko ; ny « Fanampiana » (PE/FRP) dia nalaina
+  tanteraka, satria tao anaty lesona izy.
+
+### Zava-boahary roa any amin'ny rakitra faobe — voatazona araka izany, tsy nOVANA
 1. ny taran-teny **c)** tsy misy akory (a 62 · b 56 · c **0** · d 28 · e 10) ;
-2. **`Ny fanevam-pirenana ;`** (SEHO 1, fizarana 4) — araka ny endrika « pirenena »
-   (« firenena »), dia lazaina hoe `fanevam-pirenena` ; **tazonina araka ny boky** aho,
-   fa ao amin'ny rakitra ananany ihany no fanovana mety (amin'ny boky ihany koa
-   ny « Ny hiram-pirenena ;. », ny « ny tsy fivarotana tanindrazana ) », ny « any an-tanin' olona »,
-   ny « lova soan' ny taranaka », ny « Taiza » : 14 voamarika amin'ny boky → **tsy misy nOVANA**).
+2. **`Ny fanevam-pirenana ;`** (SEHO 1, fizarana 4) araka ny endrika « firenena » — «
+   fanevam-pirenena » no iambina ; **tsy nOVANA**, fa ao amin'ny rakitrany ihany no fanovana
+   mety (toy koa ny « Ny hiram-pirenena ;. », « ny tsy fivarotana tanindrazana ) »,
+   « any an-tanin' olona », « lova soan' ny taranaka », ny « Taiza »).

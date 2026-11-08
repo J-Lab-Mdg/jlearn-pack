@@ -167,6 +167,10 @@ except Exception:
              and b[1] not in ("Ny tanindrazana", "Ny firenena")]  # mihoatra amin'ny lesona 1→5
     loharano_anako = list(sokajy_anako(DT, "LOHARANO_A"))
 
+LESONA_REF = ("Lesona : « %s » — boky natao an-tanana, SEHO 1 (n° 1/21). Io lesona io no "
+              "foto-kevitra : tsy averina ao amin'ity rakitra ity izy, fa ny takela-"
+              "panomanan-desona sy ny fanazaran-tena no ataoko." % LT)
+
 # ---------------------------------------------------------------- FANAZARAN-TENA
 exo = []
 for kd, v in bloc[k_fz + 1:k_fan]:
@@ -206,6 +210,11 @@ for i, lignes in enumerate(bloc_valiny):
         FANITSIANA.append({"banga": lignes})
 ara_kevitra = iray("Ara-kevitra", "tanindrazana")
 ara_kevitra = ara_kevitra[ara_kevitra.find(":") + 1:].strip()
+# fohy toy ny fombany ny valiny : ny ampahany mitanisa ny tanindrazana ihany (teny-teny, tsy
+# mihoatra noho izay ao amin'ny lesona)
+_m = re.search(r"(dia tany nipetrahan.*?aty afara)", ara_kevitra)
+if _m:
+    ara_kevitra = "Dia " + _m.group(1)[4:] + "."
 ko = lesona.index(iray("Toetra tokony"))
 toetra = " ".join([l for l in lesona[ko + 1:] if not l.startswith("Araka ")][:4])
 FANITSIANA.append({"banga": ["a) " + ara_kevitra,
@@ -247,16 +256,10 @@ for k, anarana_ in (("zana", "ZANA_TARANJA"), ("loha", "LOHAHEVITRA"), ("vpm", "
 o.write("\n# ny dingana 6 + Famerenana + Tombana : teny-teny avy amin'ny tabilao 13r\nGRILLE = [\n")
 for row in GRILLE:
     o.write("    %r,\n" % (list(row),))
-o.write("]\n\n# ny fizarana 1→5 an'ny boky, teny-teny (h2 = voalamina 1..5 ; bul = ny lisitry)\n")
-o.write("SESO_TANANA = [\n")
-for blk in LESONA:
-    o.write("    %r,\n" % (blk,))
-o.write("]\n\n# ny « Fanampiana » : an'ny manuela J-Learn, voamarika ho azy\nANAKO = [\n")
-for blk in anako:
-    o.write("    %r,\n" % (blk,))
-o.write("]\n\nLESONA = SESO_TANANA + [\n    %r,\n] + ANAKO\n\n" % [
-    "p", "Fanampiana : ny singa tandrefina an'ny PE sy ny ohatra an'ny FRP — tsy ampahany "
-         "amin'ny lesona 1→5 io."])
+o.write("]\n\n# ny lesona dia AN'NY MPAMPIANATRA : tsy averina, tsy ovana, tsy ampidirina "
+        "ao amin'ity\n# rakitra ity akory. `LESONA_REF` ihany no milaza azy (lohateny + "
+        "SEHO n/21), ka ny takela-\n# panomanan-desona sy ny fanazaran-tena/valiny no "
+        "atanako.\nLESONA = []\nANAKO = []\n\nLESONA_REF = %r\n\n" % LESONA_REF)
 o.write("# FANAZARAN-TENA : baiko 3 an'ny boky (teny-teny) + fanontaniana vaovao 1\nEXOS = [\n")
 for e in EXOS:
     o.write("    %r,\n" % (e,))

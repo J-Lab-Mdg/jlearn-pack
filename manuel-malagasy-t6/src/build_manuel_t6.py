@@ -177,7 +177,12 @@ def fiche(doc, f, numero, total, listes, notes):
                                      " ".join(f["lt"].split())), 2, taille=15, loko=BF.C_LECON,
                 centre=True, space_after=10)
     BF.takela(doc, f, notes)
-    BF.lesona(doc, f, listes, notes)
+    if tanana:
+        # ny lesona : an'ny mpampianatra, tsy averina eto — soro-tanana ihany
+        BF.p(doc, "LESONA:", under=True, size=13, space_after=2)
+        BF.p(doc, f.get("lesona_ref", ""), italic=True, color="595959", space_after=4)
+    else:
+        BF.lesona(doc, f, listes, notes)
     BF.exercices(doc, f, listes)
     BF.fanitsiana(doc, f, listes)
     BF.loharano(doc, f)
