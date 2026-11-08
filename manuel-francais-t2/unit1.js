@@ -564,6 +564,10 @@ function lessonS6() {
     corrige("a) C — b) M — c) U."),
     exo("4. J'écris sur mon ardoise.", "La majuscule et la minuscule : T, h, M, b."),
     corrige("T-t, H-h, M-m, B-b."),
+    p("", { after: 40 }),
+    pr([run("🎬 POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson « La chanson de l'alphabet » (comptine) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=YkFXGlHCn_o", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 
@@ -803,6 +807,10 @@ function lessonS9() {
     corrige("Exemple : — Bonjour ! Je m'appelle Hery. — Bonjour, Hery ! Voici un stylo. — Merci ! Au revoir !"),
     exo("4. Le tour de la classe.", "Chacun se présente : « Bonjour ! Je m'appelle… »"),
     corrige("Chaque apprenant dit sa phrase, la classe répond : « Bonjour, + prénom ! »"),
+    p("", { after: 40 }),
+    pr([run("🎬 POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson « Bonjour ! Salut ! » (salutations en français) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=KnvAjx3uTUA", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 

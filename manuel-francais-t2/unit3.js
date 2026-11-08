@@ -426,6 +426,10 @@ function lessonS28() {
     corrige("a) Je suis une fille. — b) Elle est la maman."),
     exo("4. Je dis trois phrases vraies.", "Avec je suis, il est, elle est et ma famille."),
     corrige("Exemple : Je suis le fils de Marcel. Il est mon père. Elle est ma mère."),
+    p("", { after: 40 }),
+    pr([run("🎬 POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson « Verbe être - Présent » (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=GKq7Pl39rPA", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 
@@ -509,6 +513,10 @@ function lessonS29() {
     corrige("a) suis — b) ai."),
     exo("4. Je dis ma phrase.", "Je dis combien de frères et de sœurs j'ai : « J'ai… »"),
     corrige("Exemple : J'ai un frère et deux sœurs. / Je n'ai pas de frère."),
+    p("", { after: 40 }),
+    pr([run("🎬 POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson « Verbe avoir au présent » (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=MnUWNIN3zss", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 

@@ -268,6 +268,10 @@ function lessonS14() {
     corrige("a) fils — b) fille."),
     exo("4. Je dis ma comptine.", "Avec les gestes : je montre papa, maman, mon frère, puis moi."),
     corrige("« Papa, maman, mon frère et moi : voilà ma famille, tu la vois ! »"),
+    p("", { after: 40 }),
+    pr([run("🎬 POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson « Ma famille » (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=MFk9YmJv-jc", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 

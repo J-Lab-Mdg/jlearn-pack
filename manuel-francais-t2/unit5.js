@@ -273,6 +273,10 @@ function lessonS50() {
     corrige("a) chambre — b) cuisine — c) toit."),
     exo("4. Je dis ma comptine.", "Avec les gestes : je dessine la porte, la fenêtre, le mur et le toit dans l'air."),
     corrige("« Porte et fenêtre, mur et toit : ma petite maison, c'est chez moi ! »"),
+    p("", { after: 40 }),
+    pr([run("🎬 POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson « Dans ma chambre » (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=CUAsT_mI5TY", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 
@@ -615,6 +619,10 @@ function lessonS54() {
     corrige("a) devant — b) derrière."),
     exo("4. Le jeu de la gomme.", "Je cache ma gomme, mon voisin dit où elle est avec un petit mot du lieu."),
     corrige("Exemple : La gomme est sous la trousse !"),
+    p("", { after: 40 }),
+    pr([run("🎬 POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson « Où est le chat ? » (Alain Le Lait, les prépositions) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=npniUd2M_vI", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 

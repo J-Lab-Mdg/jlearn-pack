@@ -514,6 +514,10 @@ function lessonS65() {
     corrige("a) le tableau — b) le crayon."),
     exo("4. Je décris mes affaires.", "Deux phrases : « Mon … est … . Ma … est … . »"),
     corrige("Exemple : Mon cartable est grand. Ma règle est jaune."),
+    p("", { after: 40 }),
+    pr([run("🎬 POUR ALLER PLUS LOIN — ", { bold: true, color: COLOR }),
+        run("je regarde la chanson « Arc en ciel - les couleurs » (Alain Le Lait) : ", { italic: true }),
+        run("https://www.youtube.com/watch?v=-4kNeFGBAcw", { color: "1F618D", size: 22 })], { after: 60 }),
   ];
 }
 
