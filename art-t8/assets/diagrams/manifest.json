@@ -1,0 +1,77 @@
+{
+  "level": "T8",
+  "lot": "pilote",
+  "generated": "2026-11-08",
+  "items": [
+    {
+      "id": "s01",
+      "stage": "observe",
+      "file": "s01_observe.png",
+      "width": 1400,
+      "height": 920,
+      "title": "Deux familles de formes",
+      "phrase": "Regardez les deux familles de formes. Pour chaque forme, dites à voix haute un objet qu’elle pourrait devenir.",
+      "generator": "manual_assets.js (déterministe)"
+    },
+    {
+      "id": "s01",
+      "stage": "prepare",
+      "file": "s01_prepare.png",
+      "width": 1400,
+      "height": 920,
+      "title": "Choisir sa forme, essayer trois gris",
+      "phrase": "Sur le brouillon, trace la forme que tu as choisie, puis remplis trois cases : pression légère, moyenne, puis traits serrés.",
+      "generator": "manual_assets.js (déterministe)"
+    },
+    {
+      "id": "s01",
+      "stage": "step_a",
+      "file": "s01_step_a.png",
+      "width": 1400,
+      "height": 920,
+      "title": "Tracer la forme de départ, légèrement",
+      "phrase": "Trace doucement : ta forme doit pouvoir être corrigée sans laisser de marque.",
+      "generator": "manual_assets.js (déterministe)"
+    },
+    {
+      "id": "s01",
+      "stage": "step_b",
+      "file": "s01_step_b.png",
+      "width": 1400,
+      "height": 920,
+      "title": "Transformer la forme en objet imaginé",
+      "phrase": "Demande-toi : sans le titre, est-ce qu’un camarade reconnaît mon objet ?",
+      "generator": "manual_assets.js (déterministe)"
+    },
+    {
+      "id": "s01",
+      "stage": "step_c",
+      "file": "s01_step_c.png",
+      "width": 1400,
+      "height": 920,
+      "title": "Poser les trois tons de gris",
+      "phrase": "Commence léger : il est plus facile d’ajouter du foncé que de l’enlever.",
+      "generator": "manual_assets.js (déterministe)"
+    },
+    {
+      "id": "s01",
+      "stage": "step_d",
+      "file": "s01_step_d.png",
+      "width": 1400,
+      "height": 920,
+      "title": "Ombre portée et finitions",
+      "phrase": "Montre la lumière sur ton dessin, puis dis ce que tu as amélioré.",
+      "generator": "manual_assets.js (déterministe)"
+    },
+    {
+      "id": "s01",
+      "stage": "practice",
+      "file": "s01_practice.png",
+      "width": 1400,
+      "height": 920,
+      "title": "Une autre forme, un autre objet",
+      "phrase": "Choisis une forme différente de celle de la leçon. Transforme-la en un objet imaginé de ton choix. Ajoute les lignes qui le rendent reconnaissable, pose trois tons de gris et une ombre portée, puis présente ton dessin.",
+      "generator": "manual_assets.js (déterministe)"
+    }
+  ]
+}
