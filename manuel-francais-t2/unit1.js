@@ -225,7 +225,7 @@ function lessonS2() {
     discBadge("LEXIQUE", COLOR),
     p("", { after: 40 }),
     p([run("LES CINQ MOTS MAGIQUES", { bold: true, size: SZ.TITLE, color: COLOR })], { center: true, after: 140 }),
-    img("u1_magiques.png", 440, 502 / 900, "Cinq images de politesse : saluer, remercier, demander, s'excuser, partir"),
+    img("u1_magiques.png", 440, 502 / 900, "Cinq images de politesse : saluer, remercier, demander, pardon, partir"),
     sub("Vocabulaire — mes mots magiques :"),
     mot("Bonjour !", "quand j'arrive. (Le soir, je dis : Bonsoir !)"),
     mot("Merci !", "quand on me donne quelque chose."),
