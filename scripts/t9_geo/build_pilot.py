@@ -24,6 +24,13 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, HERE)
 MEDIA_DIR = os.path.join(HERE, "charts_sample")
 
+NUM_FR = {
+    1: "une", 2: "deux", 3: "trois", 4: "quatre", 5: "cinq", 6: "six",
+    7: "sept", 8: "huit", 9: "neuf", 10: "dix", 11: "onze", 12: "douze",
+    13: "treize", 14: "quatorze", 15: "quinze", 16: "seize", 17: "dix-sept",
+    18: "dix-huit", 19: "dix-neuf", 20: "vingt",
+}
+
 from content_unit1 import UNIT1, LESSONS  # noqa: E402
 from content_unit2 import UNIT2, LESSONS2, EXAM2  # noqa: E402
 from content_unit3 import UNIT3, LESSONS3, EXAM3  # noqa: E402
@@ -609,13 +616,20 @@ def build_revision_elements(idx, total, unit, lessons):
     set_table_cell_text(der, 6, 1, ["Regardez et observez bien le tableau récapitulatif des notions de l'unité."])
     set_table_cell_text(der, 6, 2, ["Les élèves observent silencieusement."])
 
+    nb_lessons = len(lessons)
+    nb_lessons_fr = NUM_FR.get(nb_lessons, str(nb_lessons))
+    recap_q2 = unit.get(
+        'revision_recap_question',
+        "Citez une notion étudiée dans chacune des grandes parties de cette unité.")
+    recap_a2 = unit.get(
+        'revision_recap_answer',
+        "R.A. : Les élèves citent, pour chaque partie du tableau récapitulatif, une notion clé et sa définition.")
     set_table_cell_text(der, 7, 1, [
-        "Reprenons ensemble les notions des dix-huit séances à l'aide du tableau récapitulatif ci-dessous.",
-        "Quelles sont les notions du secteur primaire, du secteur secondaire et du secteur tertiaire ?"])
+        f"Reprenons ensemble les notions des {nb_lessons_fr} séances à l'aide du tableau récapitulatif ci-dessous.",
+        recap_q2])
     set_table_cell_text(der, 7, 2, [
         "R.A. : Les élèves relisent chaque ligne du tableau récapitulatif et rappellent la définition de chaque notion.",
-        "R.A. : Secteur primaire : agriculture, élevage, pêche, forêt. Secteur secondaire : industrie, artisanat. "
-        "Secteur tertiaire : commerce, tourisme, télécommunication, transport."])
+        recap_a2])
 
     set_table_cell_text(der, 8, 1, [
         "Donc, prenons le temps de relire ensemble le tableau récapitulatif : chaque notion est une clé "

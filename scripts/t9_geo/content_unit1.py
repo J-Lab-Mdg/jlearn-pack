@@ -17,6 +17,9 @@ UNIT1 = {
         "1 séance de révision et 1 sujet d'examen."
     ),
     'total_seances': 20,
+    'revision_recap_question': "Quelles sont les notions du secteur primaire, du secteur secondaire et du secteur tertiaire ?",
+    'revision_recap_answer': ("R.A. : Secteur primaire : agriculture, élevage, pêche, forêt. Secteur secondaire : industrie, artisanat. "
+                               "Secteur tertiaire : commerce, tourisme, télécommunication, transport."),
 }
 
 # Chaque séance :
