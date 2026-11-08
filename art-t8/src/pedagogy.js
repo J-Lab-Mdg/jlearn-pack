@@ -1,21 +1,34 @@
-// Compléments pédagogiques T8 — lot pilote.
-// Seule la partie s01 est instanciée dans ce lot ; les structures communes (kits, sécurité,
-// profils de déroulement, différenciation) sont posées pour les 36 parties et seront
-// complétées lot par lot. validatePedagogy() ne contrôle que les parties réellement fournies.
-const checks = {
-  s01: [
+// Repères pédagogiques dérivés des 36 fiches : critères, transfert, ancrage et variantes.
+const lessons = require('./data_all');
+const checks = Object.fromEntries(lessons.map((d) => [d.id,
+  d.id === 's01' ? [
     'je nomme ma forme de départ et je la trace légèrement',
     'j’ajoute les lignes qui font reconnaître mon objet',
     'je pose trois gris : clair, moyen, foncé',
     'je place l’ombre portée du côté opposé à la lumière',
-  ],
+  ] : d.practice.criteria.map((x) => x.charAt(0).toLowerCase() + x.slice(1)),
+]));
+const transfer = Object.fromEntries(lessons.map((d) => [d.id,
+  d.practice.trace || d.practice.consigne,
+]));
+const localText = {
+  Dessin: 'Objets familiers : ballon, orange, pot, roue, panier, maison et paysages du quartier ; faire observer avant de représenter.',
+  Peinture: 'Couleurs observées dans les fruits, tissus, maisons, marchés et paysages proches ; les mélanges se vérifient sur un essai.',
+  Sculpture: 'Matériaux propres et sûrs récupérés au quotidien : carton, gobelet, boîte, tissu et ficelle ; aucun bord coupant.',
+  Musique: 'Instruments malagasy documentés : antsiva et sodina ; écouter, décrire les matériaux et respecter les règles d’hygiène des instruments à bouche.',
+  Danse: 'Mouvements et musiques connus du groupe ; utiliser un espace dégagé et proposer une version assise ou de faible amplitude si besoin.',
+  'Art dramatique': 'Contes, métiers, lieux et situations de la vie quotidienne ; adapter les rôles sans caricaturer une personne ou une communauté.',
 };
-const transfer = {
-  s01: 'En cinq minutes, transformer un triangle en un objet du quotidien et poser deux valeurs.',
+const local = Object.fromEntries(lessons.map((d) => [d.id, localText[d.domain]]));
+const variantText = {
+  Dessin: ['Matériel limité : un seul modèle au tableau et travail au crayon sur brouillon.', 'Grand effectif : démonstration courte, puis travail par îlots avec un rapporteur.', 'Défi : changer le modèle ou imposer une contrainte de composition.'],
+  Peinture: ['Matériel limité : remplacer la peinture par des crayons et un nuancier papier.', 'Grand effectif : postes de quatre, godets étiquetés et séchage par rangée.', 'Défi : obtenir une même couleur avec deux proportions différentes et comparer.'],
+  Sculpture: ['Peu de matériaux : concevoir d’abord au dessin et utiliser des emballages propres.', 'Grand effectif : un responsable matériel par binôme ; outils distribués par l’enseignant.', 'Défi : modifier un élément puis comparer stabilité, qualité sonore et sécurité.'],
+  Musique: ['Sans instrument : écouter un extrait ou utiliser voix, mains et objets sonores sûrs.', 'Grand effectif : faire écouter un groupe pendant que l’autre observe avec un critère.', 'Défi : garder la pulsation en changeant une seule nuance ou un seul paramètre.'],
+  Danse: ['Mobilité réduite : réaliser les directions et niveaux avec les bras ou le haut du corps.', 'Grand effectif : demi-classe en mouvement, demi-classe observatrice, puis inversion.', 'Défi : changer de trajectoire ou de niveau sans perdre la pulsation.'],
+  'Art dramatique': ['Participation orale difficile : proposer un rôle de narrateur, régisseur ou observateur.', 'Grand effectif : scènes de trente secondes en groupes et retours à partir d’un seul critère.', 'Défi : jouer la même intention avec un autre geste, rythme ou placement.'],
 };
-const local = {
-  s01: 'Objets ronds du quotidien malagasy : ballon, orange, pot en terre, roue de charrette ; objets anguleux : caisse de marché, cahier, toiture. Faire nommer l’objet en français et, si possible, en malgache.',
-};
+const variants = Object.fromEntries(lessons.map((d) => [d.session, variantText[d.domain]]));
 
 // Profils de déroulement « II. Nouvelle leçon » : 95 min (séance de 2 h) ou 45 min (charnière d’1 h).
 // Ordre : mise en situation, objectif, observation/écoute, analyse/essai guidé, synthèse, application/transfert.
@@ -67,13 +80,6 @@ const safety = {
   Musique: 'Volume raisonnable ; instrument à vent personnel, embouchure nettoyée, pas d’échange d’instrument à bouche.',
   Danse: 'Échauffement bref, distance, sol dégagé, genoux souples ; « chuter » = descente contrôlée, jamais de chute réelle ni de porté.',
   'Art dramatique': 'Espace dégagé, accessoires souples, pas de contact imposé, voix sans cri forcé, droit de jouer en binôme ou en retrait.',
-};
-const variants = {
-  1: [
-    'Peu de matériel : un seul gabarit circulaire pour la classe, formes tracées à main levée, crayon ordinaire.',
-    'Grand effectif : démonstration au tableau puis travail par îlots de six ; un rapporteur lit les critères à voix haute.',
-    'Aller plus loin : imposer une forme anguleuse et deux objets possibles, puis justifier l’objet retenu.',
-  ],
 };
 const differentiation = {
   soutien: 'Forme agrandie ou geste montré une fois ; une exigence prioritaire ; essai guidé avant la tâche complète.',

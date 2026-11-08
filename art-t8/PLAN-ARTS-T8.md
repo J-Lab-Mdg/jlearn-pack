@@ -1,8 +1,9 @@
-# Arts T8 — plan du manuel et lot 1 (fiches pilotes)
+# Arts T8 — plan du manuel complet
 
-**Statut : en attente de validation.** Aucun autre lot n'est produit tant que ce plan n'est pas validé.
+**Statut : manuel complet généré et validé automatiquement.** Le pilote révisé reste un livrable distinct ; le manuel complet est disponible ci-dessous. L’ouverture et le rendu Word doivent encore être contrôlés sur un poste Word desktop.
 
-Livrable du lot 1 : [`output/Art_T8_Pilote.docx`](output/Art_T8_Pilote.docx)
+Pilote validé : [`output/Art_T8_Pilote.docx`](output/Art_T8_Pilote.docx).
+Manuel complet à produire : [`output/Art_T8_Manuel_Complet.docx`](output/Art_T8_Manuel_Complet.docx).
 
 ---
 
@@ -213,12 +214,16 @@ ne dispose pas de moteur de rendu Word ; la checklist figure en annexe « Contr�
 ## 8. Reproduire
 
 ```bash
-node art-t8/src/curriculum.js          # valide la répartition
-node art-t8/src/manual_assets.js       # régénère les 7 schémas déterministes
-node art-t8/src/build_pilot.js         # reconstruit le docx
-python art-t8/src/validate_docx.py     # contrôles structurels et éditoriaux
-python art-t8/src/validate_xsd.py      # validation XSD (schémas à cloner, voir docstring)
-node art-t8/src/validate_qr.js         # QR du lot et seuil du gabarit audio
+node art-t8/src/curriculum.js
+node art-t8/src/manual_assets.js
+node art-t8/src/manual_assets_extra.js
+python art-t8/src/package_audio.py
+node art-t8/src/finalize_drive_manifest.js
+node art-t8/src/generate_audio_qr.js
+node art-t8/src/build_full.js          # après manifeste Drive et QR complets
+python art-t8/src/validate_full_docx.py art-t8/output/Art_T8_Manuel_Complet.docx
+python art-t8/src/validate_xsd.py art-t8/output/Art_T8_Manuel_Complet.docx --xsd /tmp/docx4j/xsd
+node art-t8/src/validate_audio_qr.js
 ```
 
 ## 9. Fichiers
@@ -235,3 +240,14 @@ node art-t8/src/validate_qr.js         # QR du lot et seuil du gabarit audio
 | `src/validate_docx.py`, `src/validate_xsd.py`, `src/validate_qr.js` | contrôles |
 | `sources/NOTES-SOURCE.md` | dépouillement du PE T8 et du FRP T8, divergence, index des pages |
 | `assets/scenes/`, `assets/diagrams/` | médias produits pour le lot |
+
+## 10. Production du manuel complet — état au 2026-11-02
+
+- Feu vert utilisateur reçu pour produire les 35 parties restantes et aller jusqu'à la livraison complète. Répartition inchangée : 36 parties, 33 séances, 66 h ; charnières S6/S17/S28.
+- `src/data_all.js` contient les 36 séquences détaillées ; `src/pedagogy.js` fournit les critères, variantes et ancrages ; `src/build_full.js` assemble 36 leçons/pratiques, 33 fiches et les annexes.
+- Cinq scènes neuves s05/s09/s19/s22/s26 ont été générées. s01 existait déjà. Les schémas explicatifs déterministes pour ces cinq séquences ont été produits séparément des scènes réalistes.
+- Manuel complet final : [`output/Art_T8_Manuel_Complet.docx`](output/Art_T8_Manuel_Complet.docx), 16,9 MB, 72 sections : 36 leçons/pratiques, 33 fiches et annexes.
+- Audios : 36/36 consignes françaises générées avec `voice-01` et téléversées. Dossier Drive public : https://drive.google.com/drive/folders/1gyh40sf0C_FNyM6Gt1LGvtmei6HHhHVu. ZIP audio public (36 MP3 + LISEZ-MOI) : https://drive.google.com/uc?export=download&id=1Fdh0Lh8dtVxYgGUp9iU4QGO9vZdA6qU0.
+- QR : 36/36 QR individuels décodés à 80 px ; QR ZIP décodé à 130 px. Le DOCX contient 36 liens Audio + renvois texte et le lien ZIP.
+- Validations finales : curriculum (36/33/66 h, charnières `[6,17,28]`), pédagogie, validateur structurel (72 sections, Times New Roman, minimum 13 pt hors liens audio compacts à 10 pt), liens Drive, QR, XSD WordprocessingML (0 erreur), `git diff --check` — PASS.
+- Pas de rendu réel Word/LibreOffice disponible : la checklist terrain reste à exécuter sur poste enseignant. Le validateur confirme la structure OOXML et les liens, pas la pagination imprimée réelle.
