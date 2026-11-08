@@ -48,6 +48,11 @@ def grille(etapes, famerenana, tombana):
 
 
 # ============================================================================= ZT I — 1
+# Ny firaketana 1 dia **miankina amin'ny `data_seho1.py`** : voarindra araka ny boky natao
+# an-tanana (« SEHO 1 », n° 1/21). Ny definition mba ampiasain'ny mpanao `gen_seho1.py`
+# (fifangonana ny « Fanampiana ») dia voatazona eo ambany, fa tsy ampiasaina intsony.
+import data_seho1  # noqa: E402
+
 LT_A = "Ny tanindrazana sy ny firenena"
 LESONA_A = [
     ("h2", "Ny tanindrazana"),
@@ -522,31 +527,16 @@ FICHES = [
   {
    "zt": "Kolontsaina", "zt_color": "7B3F00", "sary_tsilo": False, "pages": [],
    "zt_note": None, "faritana": "", "faritana_sous": "", "heri": "",
-   "lt": LT_A, "lfk": "PE ZT I · FRP LFK 6i",
-   "fields": fields(LT_A, "Kolontsaina · Fiarahamonina",
-                    "ZANA-TARANJA I · Malagasy, kolontsaina ary fiarahamonina",
-                    "PE ZT I · FRP LFK 6i",
-                    "Manazava ny mampiavaka ny tanindrazana amin'ny firenena ny mpianatra",
-                    "Tahirin-kevitra · Sarin-tanin'i Madagasikara · Sary · Hiram-pirenena malagasy",
-                    "ora 20", "PE T6 (sept. 2026), ZT I · FRP T6 éd. Okt. 2026, LFK 6i"),
-   "grille": grille([
-      ("Inona no atao hoe *fokontany* ? Lazao ny olona rehetra miara-miaina aminao.", "Mamaly",
-       "Asan-tarika", "Solaitrabe", "Mampifandray ny fiarahamonina amin'ny *tanindrazana*."),
-      ("Vakio amin'ny solaitrabe ny tabilao « Singa tandrefina ».", "Mihaino sy manonona",
-       "Asa iombonana", "Solaitrabe", "Verbatim : ny votoatiny an'ny PE ihany no ampiasaina."),
-      ("Inona no singa hamantarana ny mpiray tanindrazana ?", "Mamaly", "Asa mifampiha", "Tabilao",
-       "*Teny* · *Fomba* · *Tantara*."),
-      ("Fenoy an-tsoratra ny adidin'ny olona tia tanindrazana.", "Mamaly", "Asa samirery", "Kahie",
-       "Adidy telo voalaza amin'ny tabilao."),
-      ("Inona no maha firenena ny firenena ?", "Mamaly amin'ny tabilao", "Asa iombonana",
-       "Solaitrabe", "Singa efatra : *Teny ifandraisana* · *Faneva* · *Hiram-pirenena* · *Tany*."),
-      ("Lazao ny ohabolana na ohapitenenana nangoninao mivoy fitiavan-tanindrazana.", "Mamorona",
-       "Asa samirery", "Kahie", "PE : *hanangona ireo ohabolana sy ohapitenenana*."),
-     ], ("Inona no mampiavaka ny lahateny sy ny fehezanteny ?", "Asan-tarika",
-         "Miverina amin'ny lesona momba ny sokajin-teny."),
-         ("Inona no mampiavaka ny tanindrazana amin'ny firenena ?", "Asa samirery",
-         "Tombana ara-PE, ZT I (lazaina am-bava).")),
-   "lesona": LESONA_A, "exos": EXOS_A, "fanitsiana": FANITSIANA_A, "loharano": LOHARANO_A,
+   "lt": data_seho1.LT, "lfk": "PE ZT I · FRP LFK 6i",
+   "rafitra": "tanana", "isan": data_seho1.ISAN, "takela_note": data_seho1.TAKELO_NOTE,
+   "fields": fields(data_seho1.LT, data_seho1.ZANA_TARANJA, data_seho1.LOHAHEVITRA,
+                    "PE ZT I · FRP LFK 6i", data_seho1.VPM, data_seho1.FITAOVANA,
+                    "ora 20",
+                    data_seho1.FANOVOZAN_KEVITRA + " · FRP T6 éd. Okt. 2026, LFK 6i"
+                    " · RAPE T6 sept. 2026, herinandro 1-2"),
+   "grille": data_seho1.GRILLE,          # ny dingana 6 + Famerenana + Tombana : teny-teny
+   "lesona": data_seho1.LESONA, "exos": data_seho1.EXOS,
+   "fanitsiana": data_seho1.FANITSIANA, "loharano": data_seho1.LOHARANO,
   },
   {
    "zt": "Kolontsaina", "zt_color": "7B3F00", "sary_tsilo": False, "pages": [],

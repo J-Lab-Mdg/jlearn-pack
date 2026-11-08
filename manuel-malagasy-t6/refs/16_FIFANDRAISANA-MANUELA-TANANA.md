@@ -2,8 +2,8 @@
 
 **Ataho rehetra avy amin'ity taritry ny fitentin'ity : ny boky natao an-tananan'ny mpampianatra,
 tsy ny fahirako.** Ny loharano = `origin/main` ⟶ `Nos manuels/Manuel de Malagasy - Classe de T6 (1).docx`
-(**219 651 o**) ; ny sisiny natao halina : `refs/14_MANUELA-T6-TANANA.txt` (1 102 tarika,
-62 tabilao, 21 SEHO). Ny kantoa : `refs/15_EXEMPLE-MALAGASY.docx` (85 blocs) = ohatra iray
+(**219 651 o**) ; ny sisiny natao halina : `refs/14_MANUELA-T6-TANANA.txt` (1 488 tarika,
+62 tabilao voasento ao anatiny, 21 SEHO — `src/sento_tanana.py` no mpanao azy). Ny kantoa : `refs/15_EXEMPLE-MALAGASY.docx` (85 blocs) = ohatra iray
 lahana mampiseho ny gabarita (Tsipelina · « SAMIHAFA SA SAMY HAFA ») — dia teny izay
 voatambatra ao amin'ny « Fandinihana » an'ny boky teto.
 
@@ -129,3 +129,31 @@ votoaty eo amin'ny LESONA amin'io seho io, ary ny valiny rehetra dia hita ao ami
   aminy raha tsy manamarina izy.
 - Ny atiny ôfisialy dia mbola mijanona : `refs/FRP_6eme_MLG.txt` (marina p.4 = lohatenin'ny
   fascicule), `refs/10_PE_T6_ZANATARANJA.txt`, `refs/PE_T6.txt`.
+
+## 7 · Vokatra : **Dingana A + B natao tamin'ny SEHO 1** (03/11)
+
+Rakitra vaovao ao amin'ny `src/` :
+- `data_seho1.py` — ny SEHO 1 voarindra (noaovan'ny `gen_seho1.py`, tsy soratana an-tanana) ;
+- `gen_seho1.py` — ny mpamokatra : mamaky ny `word/document.xml` an'ny boky ary **mampiasa ny
+  taranja anaty (index)**, ka tsy misy oaky mety ka tavela amin'ny fifindràna an-tanana ;
+- `sento_tanana.py` — ny boky → `refs/14` (miaraka amin'ny tabilao, satria ao amin'ny sela no
+  onenan'ny boky ny dingana 6 sy ny valin'ny « Ampifandraiso ») ;
+- `fikajy_citation.py` — mpijinja roa : `verbatim` (ny `« … »` rehetra ao amin'ny docx
+  ⇄ ny raki-drakitra) sy `tanana` (ny atiny avy amin'ny boky dia teny-teny ve ?).
+Builder : `rafitra == "tanana"` → lohateny « SEHO 1 — … », « n° 1/21 », `Seho n° : 1`,
+`Isan'ny seho : 21` ; ny 23 firaketana hafa dia tsy niovana akory.
+
+Vokatra : 107 singa **teny-teny** · 0 tsy mifanaraka amin'ny boky · 4 baiko (3 tenany + 1
+karazana fanontaniana mivantana : `Inona no … ?`, `Inona avy ny … ?`, `Taiza no … ?`) ·
+4 valiny 1:1 ao amin'ny FANITSIANA · 5 fizarana amin'ny LESONA (1→5 araka ny boky) + ny
+« Fanampiana » voamarika fa an'ny manuela · `verbatim : 217 voakopi / 172 hita` (+1 : ny
+« Vahoaka iray tany, teny sy fomba… » an'ny Rakibolana, izay novoritako teo aloha) ·
+`controles : TUATUA` · LISTE-ROUGE 31 / 0.
+
+### Zava-boahary 2 hafa any amin'ny rakitra faobe — voatazona araka izany, tsy nOVANA
+1. ny taran-teny **c)** tsy misy akory (a 62 · b 56 · c **0** · d 28 · e 10) ;
+2. **`Ny fanevam-pirenana ;`** (SEHO 1, fizarana 4) — araka ny endrika « pirenena »
+   (« firenena »), dia lazaina hoe `fanevam-pirenena` ; **tazonina araka ny boky** aho,
+   fa ao amin'ny rakitra ananany ihany no fanovana mety (amin'ny boky ihany koa
+   ny « Ny hiram-pirenena ;. », ny « ny tsy fivarotana tanindrazana ) », ny « any an-tanin' olona »,
+   ny « lova soan' ny taranaka », ny « Taiza » : 14 voamarika amin'ny boky → **tsy misy nOVANA**).

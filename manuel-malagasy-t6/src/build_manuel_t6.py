@@ -163,15 +163,18 @@ def fiche(doc, f, numero, total, listes, notes):
     BF.saut(doc)
     par = BF.p(doc, "", centre=True, space_after=0)
     SO.marika(par, "bm_fiche%d" % numero)
-    f["fields"]["Seho n°"] = "%d / %d" % (numero, total)
+    tanana = f.get("rafitra") == "tanana"        # alalan'ny boky natao an-tanana : SEHO n + n/21
+    f["fields"]["Seho n°"] = str(numero) if tanana else "%d / %d" % (numero, total)
+    if tanana:
+        f["fields"]["Isan'ny seho"] = str(f.get("isan") or total)
     BF.p(doc, f["faritana"], color=(f.get("zt_color") or BF.C_TITRE_ZT.get(f["zt"], "E36C0A")),
          size=30, bold=True,
          centre=True, space_after=3)
     if f.get("faritana_sous"):
         BF.p(doc, f["faritana_sous"], size=11, centre=True, italic=True, color="595959",
              space_after=8)
-    tonon_titre(doc, "LESONA %d — %s" % (numero, " ".join(f["lt"].split())), 2, taille=15,
-                loko=BF.C_LECON,
+    tonon_titre(doc, "%s %d — %s" % ("SEHO" if tanana else "LESONA", numero,
+                                     " ".join(f["lt"].split())), 2, taille=15, loko=BF.C_LECON,
                 centre=True, space_after=10)
     BF.takela(doc, f, notes)
     BF.lesona(doc, f, listes, notes)

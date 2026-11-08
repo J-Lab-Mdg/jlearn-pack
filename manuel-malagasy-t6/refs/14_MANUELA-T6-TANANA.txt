@@ -40,15 +40,32 @@ ZANA-TARANJA I
 KOLONTSAINA
 Voka-pianarana ankapobeny
 Manome lanja ny endriky ny kolontsaina malagasy mandritra ny fotoana lehibe lalovana eo amin'ny fahavelomana sy aorian'ny fahafatesana.
-«TAB 3r»
+[TABILAO 1]
+  | Seho | Lohateny
+  | 1 | Ny tanindrazana sy ny firenena
+  | 2 | Ny olombelona sy ny tontolo iainana
 Votoatiny
 • Ny tanindrazana sy ny firenena
 • Ny olombelona sy ny tontolo iainana
 SEHO 1 — Ny tanindrazana sy ny firenena
 TAKELA-PANOMANAN-DESONA
 n° 1/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 2]
+  | Taranja : Malagasy ⏎ Zana-taranja : Kolontsaina ⏎ Lohahevitra : ⏎ Lohateny : Ny tanindrazana sy ny firenena ⏎ V. P. M : Maneho ny maha Malagasy ⏎ Fitaovana : Sarin-tanin'i Madagasikara, sainam-pirenena ⏎ Fanovozan-kevitra : PE T6 : Ny tanindrazana sy ny firenena | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 1 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 3]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Taiza ianao no teraka ? | V.A. : Samy hafa ny valiny arakaraka ny mpianatra. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Asehoy ny sarin-tanin'i Madagasikara sy ny sainam-pirenena. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Ny tanindrazana sy ny firenena”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny tanindrazana sy ny firenena isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ Sarin-tanin'i Madagasikara ⏎ Sainam-pirenena malagasy | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no hitanareo eo amin'ny sary voalohany ? ⏎ 2. Inona ny loko hita eo amin'ny sainam-pirenena ? ⏎ 3. Taiza no nipetrahan'ny razanareo taloha ? | V.A. : ⏎ 1. Sarin-tanin'i Madagasikara. ⏎ 2. Mena, fotsy, maitso. ⏎ 3. Samy hafa ny valiny arakaraka ny mpianatra. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Ny tanindrazana dia tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara. ⏎ Ny firenena dia vondron'olona iray monina amim-pitiavana sy firaisan-kina ao anatin'ny faritra iray, mitovy fiteny, manaraka kolontsaina na fomban-drazana iraisana. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Ny tanindrazana dia ____ nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara. ⏎ 2. Ny firenena dia vondron'olona iray monina amim-pitiavana sy ____ ao anatin'ny faritra iray. | Miasa isan-dabilio. ⏎ V.A. : 1. tany ; 2. firaisan-kina | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Avy amin'ny teny roa inona ny hoe tanindrazana ? | Mamaly an-tsoratra. ⏎ V.A. : Tany ; razana. | Asa tsirairay | Kahie | 
 LESONA :
 NY TANINDRAZANA SY NY FIRENENA
 Ny tanindrazana
@@ -89,7 +106,9 @@ a) Ny tanindrazana dia ____ nipetrahan'ny razana niandohana ka lovain'ny taranak
 b) Ara-piforonan-teny, ny tanindrazana dia avy amin'ny teny ____ sy razana.
 d) Ny firenena dia vondron'olona iray monina amim-pitiavana sy ____ ao anatin'ny faritra iray.
 2. Ampifandraiso
-«TAB 2r»
+[TABILAO 4]
+  | 1. tanindrazana | a. vondron'olona iray monina amim-pitiavana sy firaisan-kina ao anatin'ny faritra iray
+  | 2. firenena | b. tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara
 3. Soraty toetra roa tokony hananan'ny tia tanindrazana
 a) Toetra 1
 b) Toetra 2
@@ -106,8 +125,22 @@ b) Ny fiarovana ny tany sy ny fikarakarana azy
 SEHO 2 — Ny olombelona sy ny tontolo iainana
 TAKELA-PANOMANAN-DESONA
 n° 2/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 5]
+  | Taranja : Malagasy ⏎ Zana-taranja : Kolontsaina ⏎ Lohahevitra : ⏎ Lohateny : Ny olombelona sy ny tontolo iainana ⏎ V. P. M : Maneho ny heviny mikasika ny fifandraisan'ny olombelona sy ny tontolo iainana ⏎ Fitaovana : Sary maneho ny tontolo iainana ⏎ Fanovozan-kevitra : PE T6 : Ny olombelona sy ny tontolo iainana | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 2 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 6]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona ny singa maha tanindrazana ny tanindrazana ? | V.A. : Hiram-pirenena sy fanevam-pirenana, teny sy fiteny, mpitondra, kolontsaina, mponina, tany. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Asehoy ny sary maneho ny tontolo iainana sy ny fahasimbany. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Ny olombelona sy ny tontolo iainana”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny olombelona sy ny tontolo iainana isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ Sary maneho ny tontolo iainana (ala, rano, tany) ⏎ Sary maneho ny fahasimban'ny tontolo iainana | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no hitanareo eo amin'ny sary ? ⏎ 2. Inona no antony mety nahatonga ny fahasimbana ? ⏎ 3. Inona no azo atao hisorohana izany ? | V.A. : ⏎ 1. Valiny arakaraka ny sary. ⏎ 2. Ara-boajanahary na avy amin'ny olombelona. ⏎ 3. Valiny arakaraka ny mpianatra. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Ny tontolo iainana dia ny zavamananaina sy ny zavara tsy manana aina rehetra miseho ara-bojanahary. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Ny tontolo iainana dia ny zavamananaina sy ny zavatra tsy manana ____ rehetra miseho ara-bojanahary. ⏎ 2. Ny antony ____ ary avy amin'ny olombelona no mahasimba ny tontolo iainana. | Miasa isan-dabilio. ⏎ V.A. : 1. aina ; 2. ara-boajanahary | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Inona no atao hoe tontolo iainana ? | Mamaly an-tsoratra. ⏎ V.A. : Ny zavamananaina sy ny zavara tsy manana aina rehetra miseho ara-bojanahary. | Asa tsirairay | Kahie | 
 LESONA :
 NY OLOMBELONA SY NY TONTOLO IAINANA
 1. Famaritana
@@ -175,7 +208,9 @@ FANAZARAN-TENA
 a) Ny tontolo iainana dia ny zavamananaina sy ny zavara tsy manana ____ rehetra miseho ara-bojanahary.
 b) Ny antony mahasimba ny tontolo iainana dia ara-____ na avy amin'ny olombelona.
 2. Ampifandraiso
-«TAB 2r»
+[TABILAO 7]
+  | 1. Ny fiovan'ny toetrandro | a. Antony mahasimba ny tontolo iainana
+  | 2. Ara-boajanahary, avy amin'ny olombelona | b. Endrika isehon'ny fahasimban'ny tontolo iainana
 3. Soraty vahaolana roa hisorohana ny fahasimban'ny tontolo iainana
 a) Vahaolana 1
 b) Vahaolana 2
@@ -192,7 +227,14 @@ ZANA-TARANJA II
 LITERATIORA
 Voka-pianarana ankapobeny
 Manombana ireo hevitra ampitaina ao anaty karazana lahatsoratra.
-«TAB 7r»
+[TABILAO 8]
+  | Seho | Lohateny
+  | 3 | Ny literatiora amin'ny ankapobeny
+  | 4 | Ny tononkalo : famaritana sy firafitra
+  | 5 | Ny ngadona sy ny rima
+  | 6 | Ny sarin-teny tamberim-peo
+  | 7 | Ny mpanoratra : Jean NARIVONY
+  | 8 | Ny mpanoratra : RAKOTOMALALA Eric Fredy Jaofera
 Votoatiny
 • Literatiora amin'ny ankapobeny
 • Tononkalo
@@ -201,8 +243,22 @@ Votoatiny
 SEHO 3 — Ny literatiora amin'ny ankapobeny
 TAKELA-PANOMANAN-DESONA
 n° 3/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 9]
+  | Taranja : Malagasy ⏎ Zana-taranja : Literatiora ⏎ Lohahevitra : ⏎ Lohateny : Ny literatiora amin'ny ankapobeny ⏎ V. P. M : Manasongadina ny fiforonan'ny literatiora ⏎ Fitaovana : Horonam-peo, tononkalo, solaitrabe ⏎ Fanovozan-kevitra : PE T6 : Literatiora amin'ny ankapobeny | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 3 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 10]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona ny antony mahasimba ny tontolo iainana ? | V.A. : Ara-boajanahary ; avy amin'ny olombelona. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Henoy ny horonam-peo : https://vetso.serasera.org/tononkalo/henoy/2498.mp3 | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Ny literatiora amin'ny ankapobeny”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny literatiora isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ FOMBAKOFombako ny mitadyny sangisangintsikarehefa mafy ny adytsy hay omena bika.Fombako ny mihira'reny fahatsiarovanarehefa be ny viraviramila hahatorovana…. ⏎ Lohateny : FOMBAKO_Mpanoratra : Fredy JAOFERA | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no henoinareo ? ⏎ 2. Iza no mpanoratra azy ? ⏎ 3. Inona no lohatenin'ny tononkalo ? | V.A. : ⏎ 1. Tononkalo. ⏎ 2. Fredy JAOFERA. ⏎ 3. Fombako. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Ny literatiora dia ahitana ny famaritana sy ny loharano nipoirany : mpamorona ny literatiora ; tontolo manodidina. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Ny mpamorona ny literatiora sy ny ____ manodidina no loharano nipoiran'ny literatiora. | Miasa isan-dabilio. ⏎ V.A. : 1. tontolo | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Inona ny loharano nipoiran'ny literatiora ? | Mamaly an-tsoratra. ⏎ V.A. : Mpamorona ny literatiora ; tontolo manodidina. | Asa tsirairay | Kahie | 
 LESONA :
 NY LITERATIORA AMIN'NY ANKAPOBENY
 Famaritana
@@ -229,8 +285,22 @@ a) Fredy JAOFERA
 SEHO 4 — Ny tononkalo : famaritana sy firafitra
 TAKELA-PANOMANAN-DESONA
 n° 4/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 11]
+  | Taranja : Malagasy ⏎ Zana-taranja : Literatiora ⏎ Lohahevitra : ⏎ Lohateny : Ny tononkalo : famaritana sy firafitra ⏎ V. P. M : Maneho ny hakanton'ny tononkalo ⏎ Fitaovana : Tononkalo, solaitrabe ⏎ Fanovozan-kevitra : PE T6 : Tononkalo | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 4 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 12]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona ny loharano nipoiran'ny literatiora ? | V.A. : Mpamorona ny literatiora ; tontolo manodidina. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ny tononkalo. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Ny tononkalo : famaritana sy firafitra”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny tononkalo isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ Lohateny : FOMBAKO ⏎ Mpanoratra : Fredy JAOFERA | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no hitanareo eo amin'ny solaitrabe ? ⏎ 2. Inona no mampiavaka azy amin'ny lahatsoratra mahazatra antsika ? ⏎ 3. Firy ny ampahany ao amin'ny tononkalo ? ⏎ 4. Firy ny andalana isaky ny ampahany ? | V.A. : ⏎ 1. Soratra, lahatsoratra. ⏎ 2. Fohy kokoa sady toa mitokatokana mitovitovy ny isany isaky ny ampahany. ⏎ 3. Efatra. ⏎ 4. Efatra. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Ny tononkalo dia ahitana andininy sy andalana. ⏎ Singa manavaka ny tononkalo : ngadona, rima. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy araka ny tononkalo « Fombako » : ⏎ 1. Ny isan'ny andininy dia ____. ⏎ 2. Ny isan'ny andalana isaky ny andininy dia ____. | Miasa isan-dabilio. ⏎ V.A. : 1. efatra ; 2. efatra | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Inona ny firafitry ny tononkalo ? | Mamaly an-tsoratra. ⏎ V.A. : Andininy, andalana. | Asa tsirairay | Kahie | 
 LESONA :
 NY TONONKALO : FAMARITANA SY FIRAFITRA
 Famaritana
@@ -270,8 +340,22 @@ b) Efatra
 SEHO 5 — Ny ngadona sy ny rima
 TAKELA-PANOMANAN-DESONA
 n° 5/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 13]
+  | Taranja : Malagasy ⏎ Zana-taranja : Literatiora ⏎ Lohahevitra : ⏎ Lohateny : Ny ngadona sy ny rima ⏎ V. P. M : Maneho ny hakanton'ny tononkalo ⏎ Fitaovana : Tononkalo, solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 2d | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 5 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 14]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona ny firafitry ny tononkalo ? | V.A. : Andininy, andalana. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ny tononkalo. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Ny ngadona sy ny rima”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny ngadona sy ny rima isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ [Tononkalo : apetraho eto] ⏎ Lohateny : FOMBAKO ⏎ Mpanoratra : Fredy JAOFERA ⏎ Rohy : https://vetso.serasera.org/tononkalo/fredy-jaofera/fombako | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Mitovy ve ny feo any amin'ny faran'ny andalana voalohany sy fahatelo ? ⏎ 2. Mitovy ve ny feo any amin'ny faran'ny andalana faharoa sy fahefatra ? ⏎ 3. Ahoana ny laharan'ny feo mitovy ? | V.A. : ⏎ 1. Eny. ⏎ 2. Eny. ⏎ 3. a-b-a-b. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Ny fitovian'ny feo isan'andalana manomboka eo amin'ny ngadona farany ny atao hoe: Rima ⏎ Rima mifanjohy : aa bb ; Rima mifaningotra : ab ab ; Rima mifampisakambina : a bb a | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Soraty ny karazan'ny rima araka ny laharam-pisehoany : ⏎ 1. aa bb ⏎ 2. ab ab ⏎ 3. a bb a | Miasa isan-dabilio. ⏎ V.A. : 1. rima mifanjohy ; 2. rima mifaningotra ; 3. rima mifampisakambina | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Inona ny karazan'ny rima ao amin'ny « Fombako » ? | Mamaly an-tsoratra. ⏎ V.A. : Rima mifaningotra (ab ab). | Asa tsirairay | Kahie | 
 LESONA :
 NY NGADONA SY NY RIMA
 Ny ngadona:
@@ -330,9 +414,15 @@ FANAZARAN-TENA
 a) Zana-peo mitondra ny tsindrim-peo no atao hoe ____.
 b) Ny zana-peo tsy mitondra ny tsindry dia antsoina hoe ____.
 2. Ampifandraiso
-«TAB 3r»
+[TABILAO 15]
+  | 1. tanteraka / niteraka | a. Rima feno
+  | 2. tomandavana / mavamavana | b. Rima zara fa feno
+  | 3. aloa / loha | d. Rima feno mihoatra
 3. Ampifandraiso
-«TAB 3r»
+[TABILAO 16]
+  | 1. aa bb | a. Rima mifaningotra
+  | 2. ab ab | b. Rima mifampisakambina
+  | 3. a bb a | d. Rima mifanjohy
 FANITSIANA
 1.
 a) ngadona
@@ -344,8 +434,22 @@ b) tsaikona
 SEHO 6 — Ny sarin-teny tamberim-peo
 TAKELA-PANOMANAN-DESONA
 n° 6/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 17]
+  | Taranja : Malagasy ⏎ Zana-taranja : Literatiora ⏎ Lohahevitra : ⏎ Lohateny : Ny sarin-teny tamberim-peo ⏎ V. P. M : Mamorona asa soratra kanto miorina amin'ny sarin-teny « tamberim-peo » ⏎ Fitaovana : Tononkalo, solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6 (Torovolana) | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 6 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 18]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona ny karazan'ny rima ao amin'ny « Fombako » ? | V.A. : Rima mifaningotra. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ny tononkalo. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Ny sarin-teny tamberim-peo”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny sarin-teny tamberim-peo isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ [Tononkalo : apetraho eto] ⏎ Lohateny : FOMBAKO ⏎ Mpanoratra : Fredy JAOFERA ⏎ Rohy : https://vetso.serasera.org/tononkalo/fredy-jaofera/fombako | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Ao amin'ny andininy faharoa, inona no renifeo miverimberina ? ⏎ 2. Inona no antsoina hoe tamberin-drenifeo ? | V.A. : ⏎ 1. « r ». ⏎ 2. Renifeo iray no miverimberina na renifeo mifanakaiky fanonana. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Allitération : tamberin-drenifeo, renifeo iray no miverimberina na renifeo mifanakaiky fanonana ⏎ Assonance : tamberin-janapeo, zanapeo iray no miverimberina na zanapeo mifanakaiky fanonana | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Allitération = tamberin-____. ⏎ 2. Assonance = tamberin-____. | Miasa isan-dabilio. ⏎ V.A. : 1. drenifeo ; 2. janapeo | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Inona ny anaran'ny sarin-teny miorina amin'ny renifeo miverimberina ? | Mamaly an-tsoratra. ⏎ V.A. : Tamberin-drenifeo (allitération). | Asa tsirairay | Kahie | 
 LESONA :
 NY SARIN-TENY TAMBERIM-PEO
 Famaritana
@@ -362,7 +466,9 @@ Rehefa miverimberina na mifanakaiky fanonana ny zanapeo (a, o, i, e,y) ao amin�
 Ohatra : Manana vata lavalava Rafara.
 FANAZARAN-TENA
 1. Ampifandraiso
-«TAB 2r»
+[TABILAO 19]
+  | 1. Allitération | a. Tamberin-janapeo
+  | 2. Assonance | b. Tamberin-drenifeo
 2. Fenoy
 a) Renifeo iray no miverimberina : tamberin-____.
 b) Zanapeo iray no miverimberina : tamberin-____.
@@ -375,8 +481,22 @@ b) janapeo
 SEHO 7 — Ny mpanoratra : Jean NARIVONY
 TAKELA-PANOMANAN-DESONA
 n° 7/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 20]
+  | Taranja : Malagasy ⏎ Zana-taranja : Literatiora ⏎ Lohahevitra : ⏎ Lohateny : Ny mpanoratra : Jean NARIVONY ⏎ V. P. M : Maneho ny heviny momba ny mpanoratra sy ny asa sorany ⏎ Fitaovana : Tahirin-kevitra, tononkalo ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 2a-2b | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 7 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 21]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona no atao hoe tamberin-drenifeo ? | V.A. : Renifeo iray no miverimberina na renifeo mifanakaiky fanonana. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ny tononkalo. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Ny mpanoratra : Jean NARIVONY”. ⏎ Lazao ny tanjona : “Androany dia hianatra Jean Narivony sy ny asa sorany isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ [Tononkalo : apetraho eto] ⏎ Lohateny : Iny Ankaratra iny ⏎ Mpanoratra : Jean NARIVONY ⏎ Rohy : FRP T6, LFK 2b | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no lohatenin'ny tononkalo ? ⏎ 2. Iza no mpanoratra azy ? ⏎ 3. Inona no anarany marina ? | V.A. : ⏎ 1. Iny Ankaratra iny. ⏎ 2. Jean NARIVONY. ⏎ 3. Rajaonarivony. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Rajaonarivony no tena anaran'ny Poeta antsoina hoe JEAN NARIVONY. ⏎ Teraka tao Andrefandrova Antananarivo izy tamin'ny 17 septambra 1898 ary maty tamin'ny 15 jona 1980. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Jean Narivony dia teraka tamin'ny ____. ⏎ 2. Ny anarany marina dia ____. | Miasa isan-dabilio. ⏎ V.A. : 1. 17 septambra 1898 ; 2. Rajaonarivony | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Oviana no teraka i Jean Narivony ? | Mamaly an-tsoratra. ⏎ V.A. : 17 septambra 1898. | Asa tsirairay | Kahie | 
 LESONA :
 NY MPANORATRA : JEAN NARIVONY
 Rajaonarivony no tena anaran'ny poety antsoina hoe JEAN NARIVONY. Teraka tao Andrefandrova Antananarivo izy tamin'ny 17 septambra 1898 ary maty tamin'ny 15 jona 1980.
@@ -422,7 +542,10 @@ FANAZARAN-TENA
 a) Ny anaran'ny Poeta JEAN NARIVONY dia Rajaonarivony ____.
 b) Teraka tao ____ Antananarivo izy.
 2. Ampifandraiso ny tononkalo amin'ny tara-kevitra
-«TAB 3r»
+[TABILAO 22]
+  | 1. Ato no mandry | a. Ny fomba amam-panao
+  | 2. Rajakom-bazaha | b. Ny tenindrazana
+  | 3. Ny tenindrazako | d. Alahelo noho ny fahabangana toy ny fahafatesana
 FANITSIANA
 1.
 a) Jean
@@ -432,8 +555,22 @@ b) Andrefandrova
 SEHO 8 — Ny mpanoratra : RAKOTOMALALA Eric Fredy Jaofera
 TAKELA-PANOMANAN-DESONA
 n° 8/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 23]
+  | Taranja : Malagasy ⏎ Zana-taranja : Literatiora ⏎ Lohahevitra : ⏎ Lohateny : Ny mpanoratra : RAKOTOMALALA Eric Fredy Jaofera ⏎ V. P. M : Maneho ny heviny momba ny mpanoratra sy ny asa sorany ⏎ Fitaovana : Tahirin-kevitra, tononkalo ⏎ Fanovozan-kevitra : PE T6 : Mpanoratra | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 8 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 24]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Oviana no teraka i Jean Narivony ? | V.A. : 17 septambra 1898. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ny tononkalo. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Ny mpanoratra : RAKOTOMALALA Eric Fredy Jaofera”. ⏎ Lazao ny tanjona : “Androany dia hianatra Fredy Jaofera sy ny asa sorany isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ [Tononkalo : apetraho eto] ⏎ Lohateny : NY VARAVARANA MISOKATRA ⏎ Mpanoratra : Fredy JAOFERA ⏎ Rohy : https://vetso.serasera.org/tononkalo/fredy-jaofera/ny-varavarana-misokatra | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no lohatenin'ny tononkalo ? ⏎ 2. Iza no mpanoratra azy ? ⏎ 3. Firy ny andalana ao amin'ny tononkalo ? | V.A. : ⏎ 1. Ny varavarana misokatra. ⏎ 2. Fredy JAOFERA. ⏎ 3. Enina. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Mpanoratra RAKOTOMALALA Eric Fredy Jaofera : tantaram-piainany ; fiainany ny maha mpanoratra azy ; tara-kevitra voizin'ny asa sorany. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Ny anaran'ny mpanoratra dia RAKOTOMALALA Eric Fredy ____. | Miasa isan-dabilio. ⏎ V.A. : 1. Jaofera | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Iza no mpanoratra ny tononkalo « Ny varavarana misokatra » ? | Mamaly an-tsoratra. ⏎ V.A. : Fredy JAOFERA. | Asa tsirairay | Kahie | 
 LESONA :
 NY MPANORATRA : RAKOTOMALALA ERIC FREDY JAOFERA
 Tantaram-piainany
@@ -486,14 +623,33 @@ ZANA-TARANJA III
 FIASAN'NY TENY — TSIPELINA
 Voka-pianarana ankapobeny
 Manatanteraka fanehoan-kevitra am-bava sy an-tsoratra amin'ny fahalalana feno ny fitsipika.
-«TAB 5r»
+[TABILAO 25]
+  | Seho | Lohateny
+  | 9 | Teny mitovy fanonona fa samy hafa hevitra
+  | 10 | Teny roa avahan'ny tendro
+  | 11 | Teny verindroa : lanjan'ny fampiasana azy
+  | 12 | Fanakambanan-teny
 Votoatiny
 • Tsipelina : teny verindroa, fanakambanan-teny
 SEHO 9 — Teny mitovy fanonona fa samy hafa hevitra
 TAKELA-PANOMANAN-DESONA
 n° 9/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 26]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Tsipelina ⏎ Lohahevitra : ⏎ Lohateny : Teny mitovy fanonona fa samy hafa hevitra ⏎ V. P. M : Mifehy ny fitsipi-panoratana ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 1a | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 9 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 27]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona ny karazan'ny rima araka ny hafenoany ? | V.A. : Rima feno mihoatra, rima feno, rima zara fa feno. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto fehezanteny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Teny mitovy fanonona fa samy hafa hevitra”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny teny mitovy fanonona fa samy hafa hevitra isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ 1. Lasa niantsena izy mianaka. ⏎ 2. Vaky ny paompy dia nihanaka eran'ny tokontany ny rano. ⏎ 3. Aza mandalo tana-misy havana. ⏎ 4. Rehefa hitsahatra ny orana dia misy avana miseho eny amin'ny lanitra. ⏎ 5. Manantitra ny arahaba Tompoko. ⏎ 6. Tonga nanatitra vary teo ry Rabe. ⏎ 7. Manantona ny lamba amin'ny tady i Neny. ⏎ 8. Haingana ianao fa efa manatona ny fahavalo. | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no litera miavaka eo amin'ny mianaka sy mihanaka ? ⏎ 2. Inona no litera miavaka eo amin'ny havana sy avana ? ⏎ 3. Inona no litera miavaka eo amin'ny manantitra sy manatitra ? ⏎ 4. Inona no litera miavaka eo amin'ny manantona sy manatona ? ⏎ 5. Mitovy ve ny hevitry ireo teny roa-roa ireo ? | V.A. : ⏎ 1. h. ⏎ 2. h. ⏎ 3. n. ⏎ 4. n. ⏎ 5. Tsia. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ mianaka / mihanaka ; havana / avana ; manantitra / manatitra ; manantona / manatona | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Lasa niantsena izy ____. (mianaka / mihanaka) ⏎ 2. Aza mandalo tana-misy ____. (havana / avana) ⏎ 3. Tonga ____ vary teo ry Rabe. (manantitra / manatitra) | Miasa isan-dabilio. ⏎ V.A. : 1. mianaka ; 2. havana ; 3. nanatitra | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Fenoy : ____ ny lamba amin'ny tady i Neny. (manantona / manatona) | Mamaly an-tsoratra. ⏎ V.A. : Manantona. | Asa tsirairay | Kahie | 
 LESONA :
 TENY MITOVY FANONONA FA SAMY HAFA HEVITRA
 Ny teny mitovy fanonona fa samy hafa hevitra (antsoina hoe homophone amin'ny teny frantsay) dia teny izay mitovy na mitovitovy ny fomba fanonona azy, saingy hafa mihitsy ny heviny, ary indraindray aza tsy mitovy ny fanoratra azy.1. Mianaka / mihanaka
@@ -555,8 +711,22 @@ d) nanatitra
 SEHO 10 — Teny roa avahan'ny tendro
 TAKELA-PANOMANAN-DESONA
 n° 10/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 28]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Tsipelina ⏎ Lohahevitra : ⏎ Lohateny : Teny roa avahan'ny tendro ⏎ V. P. M : Mifehy ny fitsipi-panoratana ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 1b | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 10 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 29]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona no litera miavaka eo amin'ny manantona sy manatona ? | V.A. : n. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto fehezanteny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Teny roa avahan'ny tendro”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny teny roa avahan'ny tendro isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ 1. Ianao àry tsy handeha akory ! ⏎ 2. Mividy vary sy laoka ary mofomamy i Neny. ⏎ 3. Mazana be ilay niaka-piakarana. ⏎ 4. Mandalo mazàna eto amintsika iny mpivarotra iny. | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no hitanareo eo ambonin'ny a ao amin'ny àry ? ⏎ 2. Misy tendro ve ny ary ao amin'ny fehezanteny faharoa ? ⏎ 3. Mitovy ve ny hevitry ny àry sy ny ary ? ⏎ 4. Inona no antsoina hoe tendro ? | V.A. : ⏎ 1. Marika (tendro). ⏎ 2. Tsia. ⏎ 3. Tsia. ⏎ 4. Marika eo ambonin'ny litera (à). | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ àry : kianteny mamehy hevitra ⏎ ary : mpampitohy ⏎ mazana : mafy ⏎ mazàna : matetika | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Ianao ____ tsy handeha akory ! (àry / ary) ⏎ 2. Mandalo ____ eto amintsika iny mpivarotra iny. (mazana / mazàna) | Miasa isan-dabilio. ⏎ V.A. : 1. àry ; 2. mazàna | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Fenoy : Mividy vary sy laoka ____ mofomamy i Neny. (àry / ary) | Mamaly an-tsoratra. ⏎ V.A. : ary. | Asa tsirairay | Kahie | 
 LESONA :
 TENY ROA AVAHAN'NY TENDRO
 Àry / ary
@@ -576,7 +746,11 @@ Midika hoe matetika izy io.
 Mivily izy rehefa mandala eto mazàna.
 FANAZARAN-TENA
 1. Ampifandraiso
-«TAB 4r»
+[TABILAO 30]
+  | 1. àry | a. mpampitohy
+  | 2. ary | b. mafy
+  | 3. mazana | d. matetika
+  | 4. mazàna | e. kianteny mamehy hevitra
 2. Fenoy
 a) Ianao ____ tsy handeha akory !
 b) Mividy vary sy laoka ____ mofomamy i Neny.
@@ -593,8 +767,22 @@ e) mazàna
 SEHO 11 — Teny verindroa : lanjan'ny fampiasana azy
 TAKELA-PANOMANAN-DESONA
 n° 11/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 31]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Tsipelina ⏎ Lohahevitra : ⏎ Lohateny : Teny verindroa : lanjan'ny fampiasana azy ⏎ V. P. M : Mifehy ny fitsipi-panoratana ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 1d | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 11 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 32]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona ny hevitry ny àry ? | V.A. : Kianteny mamehy hevitra. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto fehezanteny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Teny verindroa : lanjan'ny fampiasana azy”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny lanjan'ny fampiasana ny teny verindroa isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ 1. Mihantahanta indray i Lita kely marina a ! ⏎ 2. Fepero ihany ny ankizy amin'ity tia mihaninkanika ity. | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no teny miverina amin'ny fehezanteny voalohany ? ⏎ 2. Inona no teny miverina amin'ny fehezanteny faharoa ? ⏎ 3. Mitovy ve ny hevitry ny fehezanteny roa ? | V.A. : ⏎ 1. Mihantahanta. ⏎ 2. Mihaninkanika. ⏎ 3. Tsia. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Tanjon'ny fampiasana teny verindroa : manalefaka hevitra ; manamafy hevitra | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Soraty ny teny verindroa : ⏎ 1. Mihantahanta indray i Lita kely marina a ! ⏎ 2. Fepero ihany ny ankizy amin'ity tia mihaninkanika ity. | Miasa isan-dabilio. ⏎ V.A. : 1. mihantahanta ; 2. mihaninkanika | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Inona ny tanjon'ny fampiasana teny verindroa ? | Mamaly an-tsoratra. ⏎ V.A. : Manalefaka hevitra ; manamafy hevitra. | Asa tsirairay | Kahie | 
 LESONA :
 NY TENY VERINDROA
 Famaritana
@@ -627,10 +815,33 @@ Sakana : Sakantsakana, (miafara amin'ny -na), Sory= sorisory
 Vavaka: vavabavaka (v miova b satria miafara amin'ny -ka ilay teny), vita=vitavita
 Zavatra= zavajavatra, zoto= zotozoto (na samy manomboka amin’ny z azan y fototeny, dia tsy miova ny zoto satria tsy miafara amin’ny -ka, -tra, -na)
 Teny verindroa isaky ny abidy
-«TAB 21r»
+[TABILAO 33]
+  | Abidy | Tsy misy fiovana ny teny faharoa (tsy miafara amin’ny -ka, -tra, -na) | Misy fiovana ny teny faharoa
+  | A | Avoavo | -----
+  | B | Boribory | -----
+  | D | Dingadingana | ------
+  | E | Efitrefitra | -----
+  | F | Falifaly | Fepetra (f miova p)
+  | G | Gagagaga | ----
+  | H | Hafahafa | Havankavana (h lasa k)
+  | I | Ivaiva | -----
+  | J | Jerijery | -----
+  | K | Kelikely | ------
+  | L | Lavalava | Lavadavaka (l lasa d)
+  | M | Matomatotra | -----
+  | N | Namanamana | -----
+  | O | Olioly | ----
+  | P | Pipika | ----
+  | R | Ravoravo | Reradreraka (r lasa dr)
+  | S | Sahisahy | Sambatsambatra (s lasa ts)
+  | T | Taitaitra | -----
+  | V | Vitavita | Vovobovoka (v lasa b)
+  | Z | Zarizary | Zavajavatra (z lasa j)
 FANAZARAN-TENA
 1. Ampifandraiso
-«TAB 2r»
+[TABILAO 34]
+  | 1. Mihantahanta indray i Lita kely marina a ! | a. Manamafy hevitra
+  | 2. Fepero ihany ny ankizy amin'ity tia mihaninkanika ity. | b. Manalefaka hevitra
 2. Soraty ny teny verindroa
 a) Mihantahanta indray i Lita kely marina a !
 b) Fepero ihany ny ankizy amin'ity tia mihaninkanika ity.
@@ -643,8 +854,22 @@ b) mihaninkanika
 SEHO 12 — Fanakambanan-teny
 TAKELA-PANOMANAN-DESONA
 n° 12/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 35]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Tsipelina ⏎ Lohahevitra : ⏎ Lohateny : Fanakambanan-teny ⏎ V. P. M : Mifehy ny fitsipi-panoratana ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 1e | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 12 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 36]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona ny tanjon'ny fampiasana teny verindroa ? | V.A. : Manalefaka hevitra ; manamafy hevitra. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto teny roa nakambana ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Fanakambanan-teny”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny fanakambanan-teny isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ 1. rano + maso = ranomaso ⏎ 2. satroka + vehivavy = satro-behivavy ⏎ 3. lambana + akoho = lamban'akoho ⏎ 4. lambana + zaza = lamban-jaza | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no niova teo amin'ny teny voalohany tao amin'ny satroka + vehivavy ? ⏎ 2. Inona no niova teo amin'ny teny faharoa ? ⏎ 3. Inona no apetraka eo anelanelan'ny teny roa ao amin'ny lambana + zaza ? ⏎ 4. Inona no apetraka eo anelanelan'ny teny roa ao amin'ny lambana + akoho ? | V.A. : ⏎ 1. Very ny -ka. ⏎ 2. v → b. ⏎ 3. Tsipi-panohizana (-). ⏎ 4. Faingo mihantona ('). | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Raha tsy miafara amin'ny -ka -tra -na ny teny voalohany : atambatra fotsiny. ⏎ Raha miafara amin'ny -ka -tra -na ny teny voalohany ary manomboka amin'ny zana-peo (a, o, i, e) ny teny faharoa : faingo mihantona ('). ⏎ Raha manomboka amin'ny renifeo ny teny faharoa : tsipi-panohizana (-). | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Atambaro : ⏎ 1. rano + maso ⏎ 2. lavaka + rano ⏎ 3. lambana + akoho | Miasa isan-dabilio. ⏎ V.A. : 1. ranomaso ; 2. lava-drano ; 3. lamban'akoho | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Atambaro : lambana + zaza. | Mamaly an-tsoratra. ⏎ V.A. : lamban-jaza. | Asa tsirairay | Kahie | 
 LESONA :
 FANAKAMBANAN-TENY
 1. Teny voalohany tsy miafara amin'ny -ka -tra -na
@@ -729,14 +954,37 @@ ZANA-TARANJA IV
 FIASAN'NY TENY — FITSIPIKY NY TENY
 Voka-pianarana ankapobeny
 Manatanteraka fanehoan-kevitra am-bava sy an-tsoratra amin'ny fahalalana feno ny fitsipika.
-«TAB 9r»
+[TABILAO 37]
+  | Seho | Lohateny
+  | 13 | Tsirinteny
+  | 14 | Mpanoritra
+  | 15 | Mpamari-toetra
+  | 16 | Mpamaritr'isa
+  | 17 | Fandrasan-teny sy anaran'ny tsirinteny
+  | 18 | Matoanteny
+  | 19 | Anjara asa fototra ao amin'ny fehezanteny : EM sy L
+  | 20 | Filaza mandidy
 Votoatiny
 • Fitsipiky ny teny : tsirinteny, sokajin-teny, anjara asa fototra ao amin'ny fehezanteny
 SEHO 13 — Tsirinteny
 TAKELA-PANOMANAN-DESONA
 n° 13/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 38]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Fitsipiky ny teny ⏎ Lohahevitra : ⏎ Lohateny : Tsirinteny ⏎ V. P. M : Mifehy ny fitsipiky ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 2a | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 13 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 39]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Atambaro : lambana + zaza. | V.A. : lamban-jaza. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto teny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Tsirinteny”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny tsirinteny isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ milalao, nilalao, hilalao ⏎ atao, halalina ⏎ ilalaovana, filalaovana ⏎ madio, voloina, talesaka | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no teny miverina ao amin'ny milalao, nilalao, hilalao ? ⏎ 2. Inona no miova eo anoloan'ny lalao ? ⏎ 3. Inona no hitanareo aorian'ny lalao ao amin'ny ilalaovana ? | V.A. : ⏎ 1. lalao. ⏎ 2. m, n, h. ⏎ 3. -v-ana. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Tsirinteny : tovona mivaky (m-ø, m-i, m-a, m-an, m-aha, m-anka), tovona tsy mivaky (a-, voa-, tafa-), tovona famoronana anarana (f-, mp-, ki-, ha-) ⏎ Tovana ⏎ Tsirinteny sara-droa ⏎ Tsofoka : fanatevenana fototeny ; fanatevenana tovona mivaky | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Asaraho : ⏎ 1. milalao ⏎ 2. atao ⏎ 3. filalaovana | Miasa isan-dabilio. ⏎ V.A. : 1. m-i-lalao ; 2. Φ-a-tao ; 3. f-i-lalao-v-ana | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Asaraho : halalina. | Mamaly an-tsoratra. ⏎ V.A. : ha-lalina. | Asa tsirairay | Kahie | 
 LESONA :
 TSIRINTENY
 Tsirinteny
@@ -798,7 +1046,11 @@ b) atao
 d) halalina
 e) filalaovana
 2. Ampifandraiso
-«TAB 4r»
+[TABILAO 40]
+  | 1. talesaka | a. volo-ina
+  | 2. voloina | b. ki-tratra-ina
+  | 3. kitratraina | d. ma-dio
+  | 4. madio | e. t-al-esaka
 FANITSIANA
 1.
 a) m-i-lalao
@@ -810,8 +1062,22 @@ e) f-i-lalao-v-ana
 SEHO 14 — Mpanoritra
 TAKELA-PANOMANAN-DESONA
 n° 14/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 41]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Fitsipiky ny teny ⏎ Lohahevitra : ⏎ Lohateny : Mpanoritra ⏎ V. P. M : Mifehy ny fitsipiky ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 2b | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 14 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 42]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Asaraho : filalaovana. | V.A. : f-i-lalao-v-ana. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto fehezanteny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Mpanoritra”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny mpanoritra isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ 1. Moa efa tonga teo ilay mpandrafitra ? ⏎ 2. Vao nandatsaka Ikalamara dia tsy hita izay nandehanany. ⏎ 3. Tonga i Naivo. ⏎ 4. Misaotra betsaka anao Ranaotra. ⏎ 5. Ho avy ry Rabe mianakavy. | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no teny miseho alohan'ny anarana ao amin'ny fehezanteny 1 ? ⏎ 2. Fehezanteny 2 : inona no teny miseho alohan'ny anarana ? ⏎ 3. Fehezanteny 3, 4, 5 : inona ireo teny miseho alohan'ny anarana ? | V.A. : ⏎ 1. ilay. ⏎ 2. Ikala. ⏎ 3. i ; Ra- ; ry. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Mpanoritra : i, ny, ilay, ry, Ra-/Re, Ikala | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Tonga ____ Naivo. ⏎ 2. Ho avy ____ Rabe mianakavy. | Miasa isan-dabilio. ⏎ V.A. : 1. i ; 2. ry | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Lazao telo amin'ny mpanoritra. | Mamaly an-tsoratra. ⏎ V.A. : i, ny, ilay, ry, Ra-/Re, Ikala. | Asa tsirairay | Kahie | 
 LESONA :
 MPANORITRA
 Ny mpanoritra (i, ny, ilay, ry, Ra-/Re, Ikala ….) dia teny mikambana amin' ny anarana mba ho azo ampiasaina anaty fehezanteny. Iray ihany ny mpanoritra ampiasaina ho an’ny anarana iray amin’ny ankapobeny. (Ikala Soa fa tsy ny ilay Ikala Rasoa.)
@@ -825,7 +1091,11 @@ Ilay : ilay mpampianatra
 Tandremo : Tsy izay Ra- rehetra amin’ny anarana akory dia mpanoritra avokoa. Ohatra: Rado: Milalao Ravo. = diso, tsy misy anaran’olona “vo” ary tsy misy heviny; efa teny tokana mihitsy ny hoe Ravo. Milalao i Ravo. Marina.
 FANAZARAN-TENA
 1. Ampifandraiso
-«TAB 4r»
+[TABILAO 43]
+  | 1. i | a. mitambatra amin'ny anaran'olona mandrakariva
+  | 2. Ra- | b. fanao amin'ny anaran'olona maro miaraka
+  | 3. ry | d. fanao amin'ny anaram-bosotra olona na biby vavy
+  | 4. Ikala | e. fanao amin'ny anaran'olona tsy misy Ra-
 2. Fenoy
 a) Tonga ____ Naivo.
 b) Ho avy ____ Rabe mianakavy.
@@ -840,8 +1110,22 @@ d) ilay
 SEHO 15 — Mpamari-toetra
 TAKELA-PANOMANAN-DESONA
 n° 15/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 44]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Fitsipiky ny teny ⏎ Lohahevitra : ⏎ Lohateny : Mpamari-toetra ⏎ V. P. M : Mifehy ny fitsipiky ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 2b | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 15 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 45]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Lazao telo amin'ny mpanoritra. | V.A. : i, ny, ilay, ry, Ra-/Re, Ikala. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto teny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Mpamari-toetra”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny mpamari-toetra isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ kely, faly, fohy ⏎ lavalava, menamena, lavidavitra ⏎ madio, voloina, talesaka, kitratraina | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no hitanareo eo amin'ny lavalava, menamena ? ⏎ 2. Inona no miseho aloha ao amin'ny madio ? ⏎ 3. Inona no miseho aorian'ny fototeny ao amin'ny voloina ? | V.A. : ⏎ 1. Verindroa ny teny. ⏎ 2. ma-. ⏎ 3. -ina. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Ny atao hoe mpamari-toetra dia teny milaza endrika amam-bika, fihetsika, toetran'olona na biby na zavatra ka afaka mitana anjara asa fototra (EM, L) sy fameno no sady tsy afa-miaraka amin'ny mpisolo tena tampisaka. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Ny hoe kely dia mpamari-toetra ____. ⏎ 2. Ny hoe madio dia mpamari-toetra aman-____. | Miasa isan-dabilio. ⏎ V.A. : 1. foto-teny ; 2. tovona | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Lazao mpamari-toetra roa. | Mamaly an-tsoratra. ⏎ V.A. : Ohatra : kely, faly. | Asa tsirairay | Kahie | 
 LESONA :
 MPAMARI-TOETRA
 Ny atao hoe mpamari-toetra dia teny milaza endrika amam-bika, fihetsika, toetran'olona na biby na zavatra ka afaka mitana anjara asa fototra (EM, L) sy fameno no sady tsy afa-miaraka amin'ny mpisolo tena tampisaka.
@@ -859,7 +1143,11 @@ Mpamari-toetra aman-tsofoka : talesaka (t-al-esaka) ; bilitika (b-il-itika) ; so
 Mpamari-toetra aman-tsirinteny sara-droa : kitratraina (ki-tratra-ina) ; kaozatina (ka-ozatr(a)-ina) ; karakaina (ka-(ha)raka-ina)
 FANAZARAN-TENA
 1. Ampifandraiso
-«TAB 4r»
+[TABILAO 46]
+  | 1. kely | a. Mpamari-toetra aman-tovona
+  | 2. madio | b. Mpamari-toetra aman-tovana
+  | 3. voloina | d. Mpamari-toetra aman-tsofoka
+  | 4. talesaka | e. Mpamari-toetra foto-teny
 2. Asaraho
 a) madio
 b) voloina
@@ -874,8 +1162,22 @@ d) ki-tratra-ina
 SEHO 16 — Mpamaritr'isa
 TAKELA-PANOMANAN-DESONA
 n° 16/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 47]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Fitsipiky ny teny ⏎ Lohahevitra : ⏎ Lohateny : Mpamaritr'isa ⏎ V. P. M : Mifehy ny fitsipiky ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6 | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 16 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 48]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Lazao mpamari-toetra roa. | V.A. : Ohatra : kely, faly. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto teny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Mpamaritr'isa”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny mpamaritr'isa isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ iray, roa, telo ⏎ faharoa, fahatelo, fahefatra ⏎ ampahatelony, ampahafolony ⏎ indroa, intelo, impolo, imbalo ⏎ hateloana, hadimiana ⏎ fanindroany, fanintelony | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no miseho alohan'ny isa ao amin'ny faharoa, fahatelo ? ⏎ 2. Inona no miseho alohan'ny isa ao amin'ny indroa, intelo ? ⏎ 3. Inona no miseho eo anoloan'ny isa sy aorian'izany ao amin'ny hateloana ? | V.A. : ⏎ 1. faha-. ⏎ 2. in-. ⏎ 3. ha- ; -ana. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Ny atao hoe mpamaritra isa dia teny entina ilazana isan-javatra na laharan-javatra ka sady afaka mitana anjara asa fototra sy fameno. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Fenoy : ⏎ 1. Ny faharoa dia mpamaritra isa milaza ____. ⏎ 2. Ny indroa dia mpamaritra isa manambara ____. | Miasa isan-dabilio. ⏎ V.A. : 1. laharana ; 2. fampitomboana | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Soraty ny karazan'ny hoe « ampahatelony ». | Mamaly an-tsoratra. ⏎ V.A. : Mpamaritra isa milaza ampahany. | Asa tsirairay | Kahie | 
 LESONA :
 MPAMARITR'ISA
 Ny atao hoe mpamaritra isa dia teny entina ilazana isan-javatra na laharan-javatra ka sady afaka mitana anjara asa fototra sy fameno. Tsy azo atao verindroa raha tsy asiana « tsi- » na « ki- » eo alohany.
@@ -890,7 +1192,11 @@ Mpamaritra isa manambara ny laharan'ny fampitomboana : fanindroany, fanindiminy,
 Fanamarihana : Ny mpamaritra isa milaza laharana sy ampahany dia atambatra fa tsy asiana tsipi-panohizana ny fanoratana azy. Ny mpamaritra isa manambara fampitomboana dia tovonana « in- » eo alohany ka raha miantomboka amin'ny « f » na « v » ilay isa dia miova ho « m » ny « n ».
 FANAZARAN-TENA
 1. Ampifandraiso
-«TAB 4r»
+[TABILAO 49]
+  | 1. fahatelo | a. Mpamaritra isa milaza ampahany
+  | 2. ampahafolony | b. Mpamaritra isa manambara fampitomboana
+  | 3. impolo | d. Mpamaritra isa milaza fe-potoana
+  | 4. hadimiana | e. Mpamaritra isa milaza laharana
 2. Fenoy
 a) Ny faharoa dia mpamaritra isa milaza ____.
 b) Ny fanindroany dia mpamaritra isa manambara ny ____ ny fampitomboana.
@@ -903,8 +1209,22 @@ b) laharana
 SEHO 17 — Fandrasan-teny sy anaran'ny tsirinteny
 TAKELA-PANOMANAN-DESONA
 n° 17/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 50]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Fitsipiky ny teny ⏎ Lohahevitra : ⏎ Lohateny : Fandrasan-teny sy anaran'ny tsirinteny ⏎ V. P. M : Mifehy ny fitsipiky ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 2d-2e | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 17 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 51]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Soraty ny karazan'ny hoe « ampahatelony ». | V.A. : Mpamaritra isa milaza ampahany. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto teny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Fandrasan-teny sy anaran'ny tsirinteny”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny fandrasan-teny isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ Nilalao &lt; n-i-lalao ⏎ Hilalao &lt; h-i-lalao ⏎ Milalao &lt; m-i-lalao ⏎ Atao &lt; Φ-a-tao ⏎ Filalaovana &lt; f-i-lalao-v-ana | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no marika apetraka eo anelanelan'ny teny sy ny fandrasana azy ? ⏎ 2. Inona no miova eo anoloan'ny i-lalao ao amin'ny nilalao, hilalao, milalao ? ⏎ 3. Inona no hitanareo eo anelanelan'ny lalao sy ana ao amin'ny filalaovana ? | V.A. : ⏎ 1. &lt; ⏎ 2. n, h, m. ⏎ 3. -v-. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Marika famantarana fa handrasa teny : &lt; ⏎ Misy karazany efatra ny tsirinteny : tovona ; tovana ; tsirinteny sara-droa ; tsofoka | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Rasao : ⏎ 1. nilalao ⏎ 2. hilalao ⏎ 3. atao | Miasa isan-dabilio. ⏎ V.A. : 1. n-i-lalao ; 2. h-i-lalao ; 3. Φ-a-tao | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Rasao : filalaovana. | Mamaly an-tsoratra. ⏎ V.A. : f-i-lalao-v-ana. | Asa tsirairay | Kahie | 
 LESONA :
 FANDRASAN-TENY SY ANARAN'NY TSIRINTENY
 Fomba fandrasana teny
@@ -929,7 +1249,11 @@ b) hilalao
 d) ilalaovana
 e) filalaovana
 2. Ampifandraiso
-«TAB 4r»
+[TABILAO 52]
+  | 1. n(o)- | a. filazam-potoana ho avy
+  | 2. h(o)- | b. filazam-potoana ankehitriny
+  | 3. Φ- | d. fanatsaram-peo
+  | 4. -v- | e. filazam-potoana lasa
 FANITSIANA
 1.
 a) n-i-lalao
@@ -941,8 +1265,22 @@ e) f-i-lalao-v-ana
 SEHO 18 — Matoanteny
 TAKELA-PANOMANAN-DESONA
 n° 18/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 53]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Fitsipiky ny teny ⏎ Lohahevitra : ⏎ Lohateny : Matoanteny ⏎ V. P. M : Mifehy ny fitsipiky ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 2d | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 18 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 54]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Rasao : nilalao. | V.A. : n-i-lalao. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto matoanteny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Matoanteny”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny matoanteny isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ nilalao, milalao, hilalao ⏎ atao ⏎ tonga | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no hitanareo eo anoloan'ny lalao ao amin'ny nilalao, milalao, hilalao ? ⏎ 2. Misy tsirinteny ve ny tonga ? | V.A. : ⏎ 1. n, m, h. ⏎ 2. Tsia. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Matoanteny : fototeny ; sampan-teny | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Soraty ny filazam-potoana : ⏎ 1. nilalao ⏎ 2. milalao ⏎ 3. hilalao | Miasa isan-dabilio. ⏎ V.A. : 1. lasa ; 2. ankehitriny ; 3. ho avy | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Soraty ny filazam-potoana : hilalao. | Mamaly an-tsoratra. ⏎ V.A. : Ho avy. | Asa tsirairay | Kahie | 
 LESONA :
 MATOANTENY
 Matoanteny
@@ -972,7 +1310,10 @@ Voajery= mijery
 Tafatsangana= mitsangana
 FANAZARAN-TENA
 1. Ampifandraiso
-«TAB 3r»
+[TABILAO 55]
+  | 1. nilalao | a. ankehitriny
+  | 2. milalao | b. ho avy
+  | 3. hilalao | d. lasa
 2. Fenoy
 a) Ny n(o)- dia filazam-potoana ____.
 b) Ny h(o)- dia filazam-potoana ____.
@@ -985,8 +1326,22 @@ b) ho avy
 SEHO 19 — Anjara asa fototra ao amin'ny fehezanteny : EM sy L
 TAKELA-PANOMANAN-DESONA
 n° 19/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 56]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Fitsipiky ny teny ⏎ Lohahevitra : ⏎ Lohateny : Anjara asa fototra ao amin'ny fehezanteny : EM sy L ⏎ V. P. M : Mifehy ny fitsipiky ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 2f | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 19 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 57]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Inona no filazam-potoana ho avy ? | V.A. : H(o)-. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto fehezanteny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Anjara asa fototra ao amin'ny fehezanteny : EM sy L”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny anjara asa ao amin'ny fehezanteny isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ 1. Milalao baolina i Lita. ⏎ 2. Lalaovin'i Lita ny baolina. ⏎ 3. Baolina no lalaovin'i Lita. | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no teny mipetraka aloha ao amin'ny fehezanteny 3 ? ⏎ 2. Inona no teny nampiana eo aorian'ny baolina ? ⏎ 3. Inona no niova teo amin'ny matoanteny milalao ? | V.A. : ⏎ 1. Baolina. ⏎ 2. no. ⏎ 3. Lasa lalaovina. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Ny fehezanteny dia ahitana anjara asa. Anisan'izany ny EM sy L. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Ovay ho mivadi-drafitra (ohatra : Milalao baolina i Lita → Baolina no lalaovin'i Lita) : ⏎ 1. Mamaky boky i Soa. ⏎ 2. Mividy vary i Rova. | Miasa isan-dabilio. ⏎ V.A. : 1. Boky no vakin'i Soa. ; 2. Vary no vidin'i Rova. | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Ovay ho mivadi-drafitra : Mamaky boky i Soa. | Mamaly an-tsoratra. ⏎ V.A. : Boky no vakin'i Soa. | Asa tsirairay | Kahie | 
 LESONA :
 ANJARA ASA FOTOTRA AO AMIN'NY FEHEZANTENY : EM SY L
 Ny EM
@@ -1023,8 +1378,22 @@ a) Baolina
 SEHO 20 — Filaza mandidy
 TAKELA-PANOMANAN-DESONA
 n° 20/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 58]
+  | Taranja : Malagasy ⏎ Zana-taranja : Fiasan'ny teny — Fitsipiky ny teny ⏎ Lohahevitra : ⏎ Lohateny : Filaza mandidy ⏎ V. P. M : Mifehy ny fitsipiky ny teny malagasy ⏎ Fitaovana : Fehezanteny eo amin'ny solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 2g | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 20 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 59]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Ovay ho mivadi-drafitra : Mamaky boky i Soa. | V.A. : Boky no vakin'i Soa. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ireto fehezanteny ireto. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Filaza mandidy”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny filaza mandidy isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ 1. Sokafany ny varavarana. ⏎ 2. Sokafy ny varavarana. ⏎ 3. Manoratra any amin'ilay vazaha vavy. ⏎ 4. Valio ihany ny taratasin'ny vadin'ise ! | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Iza no manao ny asa ao amin'ny fehezanteny 1 ? ⏎ 2. Hita ve ny olona itenenana ao amin'ny fehezanteny 2 ? ⏎ 3. Inona no niova teo amin'ny teny hoe sokafany ? | V.A. : ⏎ 1. Izy. ⏎ 2. Tsia. ⏎ 3. Lasa sokafy. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Ny filaza mandidy dia fanambarana baiko, baiko omena ny olona itenenana mba hanaovany zavatra. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Ovay ho filaza mandidy : ⏎ 1. vakina ⏎ 2. soa | Miasa isan-dabilio. ⏎ V.A. : 1. vakio ; 2. soava | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Ovay ho filaza mandidy : Sokafany ny varavarana. | Mamaly an-tsoratra. ⏎ V.A. : Sokafy ny varavarana. | Asa tsirairay | Kahie | 
 LESONA :
 FILAZA MANDIDY
 Ny filaza mandidy dia endriky ny teny (ny matoanteny indrindra) izay atao hilazana baiko.
@@ -1057,14 +1426,30 @@ ZANA-TARANJA V
 ASA AN-TSORATRA
 Voka-pianarana ankapobeny
 Mamokatra karazana lahatsoratra ahitana ireo hevitra manasongadina ny fiiziana ara-kolontsaina.
-«TAB 2r»
+[TABILAO 60]
+  | Seho | Lohateny
+  | 21 | Famoronana lahatsoratra manoritsoritra
 Votoatiny
 • Lahatsoratra manoritsoritra
 SEHO 21 — Famoronana lahatsoratra manoritsoritra
 TAKELA-PANOMANAN-DESONA
 n° 21/21
-«TAB 1r»
-«TAB 13r»
+[TABILAO 61]
+  | Taranja : Malagasy ⏎ Zana-taranja : Asa an-tsoratra ⏎ Lohahevitra : ⏎ Lohateny : Famoronana lahatsoratra manoritsoritra ⏎ V. P. M : Mamorona lahatsoratra manoritsoritra ⏎ Fitaovana : Lahatsoratra, solaitrabe ⏎ Fanovozan-kevitra : PE T6 ; FRP T6, LFK 1a | Daty : ... ⏎ Kilasy : T6 ⏎ Seho n° : 21 ⏎ Isan'ny seho : 21 ⏎ Faharetany :
+[TABILAO 62]
+  | Dingana sy Faharetany | Fizotry ny Lesona | Tetika Amam-paika | Fitaovana | Fanamarihana
+  |  | Mpampianatra | Mpianatra |  |  | 
+  | I. FAMERENANA
+  | Famerenana | Ovay ho filaza mandidy : Sokafany ny varavarana. | V.A. : Sokafy ny varavarana. | Fanontaniana sy Valiny (F/V) | Solaitrabe | ----
+  | II. LESONA VAOVAO
+  | 1. Fitarihan-tsaina | Soraty eo amin'ny solaitrabe ity lahatsoratra ity. | Mijery, mihaino. | Brainstorming / Tosa-kevitra |  | 
+  | 2. Fanolorana | Soraty eo amin'ny solaitrabe ny lohateny : “Famoronana lahatsoratra manoritsoritra”. ⏎ Lazao ny tanjona : “Androany dia hianatra ny lahatsoratra manoritsoritra isika.” | Mihaino, mandika ny lohateny ao amin'ny kahie. | Asa iombonana | Solaitrabe | 
+  | 3. Fandinihana | Soraty eo amin'ny solaitrabe : ⏎ Ny kianjan'ny sekoly ⏎ Lehibe ny kianjan'ny sekoly. Misy hazo maitso eo afovoany. Mangatsiaka ny rivotra. Madio ny tany. | Mamaky mangina, avy eo mamaky mafy. | Asa tsirairay, avy eo asa iombonana | Lahatsoratra / fehezanteny eo amin'ny solaitrabe | 
+  | 4. Famakafakana | 1. Inona no soritsoritana ao amin'ny lahatsoratra ? ⏎ 2. Inona ny teny milaza ny toetrany ? ⏎ 3. Fohy ve na lava ny fehezanteny ? | V.A. : ⏎ 1. Ny kianjan'ny sekoly. ⏎ 2. Lehibe, maitso, mangatsiaka, madio. ⏎ 3. Fohy. | Fanontaniana sy Valiny (F/V), asa an-tarika |  | 
+  | 5. Fandravonana | Soraty eo amin'ny solaitrabe : ⏎ Lahatsoratra mandoko zavatra iray ka manasongadina ny toetrany, ny endriny, ny fihetsiny, ny bikany, ary ny zavatra hita eo aminy ny lahatsoratra manoritsoritra. | Mandika ny fehin-kevitra ao amin'ny kahie. | Asa iombonana | Solaitrabe, kahie | 
+  | 6. Fampiharana | Soraty ny teny milaza toetra : ⏎ 1. Lehibe ny kianjan'ny sekoly. ⏎ 2. Mangatsiaka ny rivotra. | Miasa isan-dabilio. ⏎ V.A. : 1. lehibe ; 2. mangatsiaka | Isan-dabilio / Isan-tarika | Kahie, solaitrabe | 
+  | III. TOMBANA
+  | Tombana | Lazao ny mari-pamantarana roa amin'ny lahatsoratra manoritsoritra. | Mamaly an-tsoratra. ⏎ V.A. : Ohatra : mpamari-toetra, fehezanteny fohy. | Asa tsirairay | Kahie | 
 LESONA :
 FAMORONANA LAHATSORATRA MANORITSORITRA
 1. Famaritana

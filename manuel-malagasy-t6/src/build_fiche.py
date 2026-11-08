@@ -597,7 +597,14 @@ def _saha(c, spec):
 
 
 def takela(doc, d, notes=None):
-    p(doc, "TAKELA-PANOMANAN-DESONA", bold=True, color=C_NOIR, centre=True, space_after=6)
+    """TAKELA-PANOMANAN-DESONA : méta-table + grille I/II/III (la préparation du maître).
+
+    `d["takela_note"]` : le gabarit écrit à la main porte un « n° 1/21 » sous le titre ; affiché
+    ici quand la fiche est alignée sur le boky natao an-tanana (`rafitra == "tanana"`)."""
+    p(doc, "TAKELA-PANOMANAN-DESONA", bold=True, color=C_NOIR, centre=True, space_after=2)
+    if d.get("takela_note"):
+        p(doc, d["takela_note"], size=9.5, italic=True, color="595959", centre=True,
+          space_after=6)
     c = d["fields"]
     rangs = c.get("rangs")
     if not rangs:
@@ -884,8 +891,22 @@ def controles(chemin, attendu):
     apres = txt.split("FANAZARAN-TENA", 1)[1] if "FANAZARAN-TENA" in txt else ""
     apres = apres.split("FANITSIANA")[0]
     reprise = []
+    # tolerance : quand le doublon vient du boky natao an-tanana (refs/14), c'est l'auteur qui
+    # repete ny tenany (oh. dingana « 6. Fampiharana » = baiko 1) — tsy fanakaiko izany.
+    tanana = ""
+    try:
+        import io as _io
+        tanana = _io.open(os.path.join(RACINE, "refs", "14_MANUELA-T6-TANANA.txt"),
+                          encoding="utf-8").read()
+    except OSError:
+        pass
+
+    def _ao_anaty_boky(txt):
+        b = re.sub(r"[^0-9a-z\u00e0\u00e8\u00ea\u00f4]", "", txt.lower())
+        return bool(b) and b in re.sub(r"[^0-9a-z\u00e0\u00e8\u00ea\u00f4]", "", tanana.lower())
+
     for ligne in re.findall(r"[A-Z\u00c9\u00c8][^.\n]{18,}\.", corps):
-        if ligne.strip() in apres:
+        if ligne.strip() in apres and not _ao_anaty_boky(ligne):
             reprise.append(ligne.strip()[:60])
     for a in AVIS:
         print("  !", a)
