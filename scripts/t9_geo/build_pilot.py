@@ -34,6 +34,7 @@ NUM_FR = {
 from content_unit1 import UNIT1, LESSONS  # noqa: E402
 from content_unit2 import UNIT2, LESSONS2, EXAM2  # noqa: E402
 from content_unit3 import UNIT3, LESSONS3, EXAM3  # noqa: E402
+from content_unit4 import UNIT4, LESSONS4, EXAM4  # noqa: E402
 
 SRC = os.path.join(ROOT, "Nos manuels", "Manuel_Geographie_T8_JLearn.docx")
 OUT = os.path.join(ROOT, "Nos manuels", "Manuel_Geographie_T9_V1_PILOTE.docx")
@@ -860,10 +861,10 @@ def main():
     i_el = OxmlElement('w:i'); rpr2.append(i_el)
     run2.append(rpr2)
     t2 = OxmlElement('w:t')
-    t2.text = ("Version pilote — Unités 1 à 3 : La structure économique de Madagascar ; "
-               "la méthodologie de traitement de devoir ; les potentialités naturelles de Madagascar "
-               "(40 heures, séances 1 à 46 sur 76). Document de validation du format avant la "
-               "production complète des 6 unités du manuel.")
+    t2.text = ("Version pilote — Unités 1 à 4 : La structure économique de Madagascar ; "
+               "la méthodologie de traitement de devoir ; les potentialités naturelles de Madagascar ; "
+               "les potentialités démographiques de Madagascar (50 heures, séances 1 à 58 sur 76). "
+               "Document de validation du format avant la production complète des 6 unités du manuel.")
     run2.append(t2)
     sub_p.append(run2)
     body.append(sub_p)
@@ -941,6 +942,31 @@ def main():
 
     # -- examen (seance 46) --
     for el in build_exam_elements_from_spec(46, TOTAL, UNIT3, EXAM3):
+        body.append(el)
+
+    # ------------------------------------------------------------------
+    # Unite 4 : Les potentialites demographiques de Madagascar (seances 47-58)
+    # ------------------------------------------------------------------
+    body.append(clone(lesson_tpl['blank']))
+    unit4_title = mk(unit_header_tpl, 'unit_title')
+    set_single_run_text(unit4_title, UNIT4['toc_title'])
+    body.append(unit4_title)
+    unit4_them = mk(unit_header_tpl, 'unit_thematique')
+    set_single_run_text(unit4_them, UNIT4['thematique_officielle'])
+    body.append(unit4_them)
+    body.append(mk(unit_header_tpl, 'blank'))
+
+    # -- 10 seances de lecon (47-56) --
+    for i, lesson in enumerate(LESSONS4, start=47):
+        for el in build_seance_elements(i, TOTAL, lesson, UNIT4, footnotes=footnotes, doc=doc):
+            body.append(el)
+
+    # -- revision (seance 57) --
+    for el in build_revision_elements(57, TOTAL, UNIT4, LESSONS4):
+        body.append(el)
+
+    # -- examen (seance 58) --
+    for el in build_exam_elements_from_spec(58, TOTAL, UNIT4, EXAM4):
         body.append(el)
 
     # -- restaurer sectPr a la fin du document --
