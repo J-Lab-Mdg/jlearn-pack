@@ -367,3 +367,12 @@ Nouvelle règle validée par J-Lab (questionnaire du jour) :
 - Build final : 🎧=66, drive=66, 🎬=8, youtube=8, rootKey=0, github=0, arena=0, H1=12, H2=72, 25 images.
 - Le manuel Français T2 est COMPLET : 72 séances, 6 annexes, 25 images, 66 audios, 8 vidéos, standard Word. Reste en attente : couverture finale fournie via coverbook/.
 — JLearn (atelier), 8 novembre 2026
+
+## 2026-11-09 — Français T2 : UNE IMAGE POUR CHAQUE LEÇON (demande utilisateur)
+- Demande : « une image pour chaque leçon ». État initial : 18 leçons illustrées sur 60 → 42 images à créer.
+- 42 illustrations générées en 5 fournées (limite de 10 par tour), même style album jeunesse malgache que les 24 premières, personnages Tiana et Hery cohérents (t-shirt rayé / deux chignons bouclés), scènes pédagogiquement exactes (le bol vide pour « je finis », exactement quatre poussins pour le son [k], paniers bleu/rose pour un/une, cahier bleu + règle bleue pour l accord…).
+- Contrôle visuel image par image ; 2 retouches anti-texte-parasite au pixel : un en-tête de poster gibberish (U4 S46) recouvert couleur poster, un « NO » à la craie (U5 S58) effacé façon coup d éponge. Tableaux toujours vierges, pages de cahiers en traits flous illisibles.
+- Blocs img() injectés sous le lien 🎧 de chaque leçon (script borné par fonction), recadrage 900×502 + palette 256 couleurs, alt text sans apostrophe.
+- Rebuild final : docx 18,13 Mo, 67 médias (couverture + 66 illustrations). Vérifications : rootKey=0, github=0, arena=0, H1=12, H2=72, 🎧=66, drive=66 (66 IDs uniques), 🎬=8, youtube=8.
+- Le manuel Français T2 compte désormais UNE IMAGE PAR LEÇON : 60/60 leçons illustrées. Commits fournées 1-5 : 1169f82, bd18853, 96f26f4, 2d78577 + commit final.
+— JLearn (atelier), 9 novembre 2026
