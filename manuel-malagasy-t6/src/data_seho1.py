@@ -49,21 +49,38 @@ ANAKO = []
 
 LESONA_REF = "Lesona : « Ny tanindrazana sy ny firenena » — boky natao an-tanana, SEHO 1 (n° 1/21). Io lesona io no foto-kevitra : tsy averina ao amin'ity rakitra ity izy, fa ny takela-panomanan-desona sy ny fanazaran-tena no ataoko."
 
-# FANAZARAN-TENA : baiko 3 an'ny boky (teny-teny) + fanontaniana vaovao 1
-EXOS = [
+# FANAZARAN-TENA : baiko 3 an'ny boky (teny-teny) + 4 vaovao (karazana 1 . 3 . 5 . 4)
+EXOS_TANANA = [
     {'consigne': 'Fenoy', 'banga': ["a) Ny tanindrazana dia ____ nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara.", "b) Ara-piforonan-teny, ny tanindrazana dia avy amin'ny teny ____ sy razana.", "d) Ny firenena dia vondron'olona iray monina amim-pitiavana sy ____ ao anatin'ny faritra iray."]},
     {'consigne': 'Ampifandraiso', 'tsilo': (['1. tanindrazana', '2. firenena'], ["a. vondron'olona iray monina amim-pitiavana sy firaisan-kina ao anatin'ny faritra iray", "b. tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara"])},
     {'consigne': "Soraty toetra roa tokony hananan'ny tia tanindrazana", 'banga': ['a) Toetra 1', 'b) Toetra 2']},
-    {'consigne': 'Mamaly araka ny lesona ny fanontaniana manaraka :', 'banga': ['a) Inona no atao hoe tanindrazana ara-kevitra ?', "b) Inona avy ny toetra tokony hananan'ny olona tia tanindrazana ?", "c) Taiza no monina ny vondron'olona mampisy firenena ?"]},
 ]
 
-# FANITSIANA : ny valiny, 1:1 amin'ny baiko (araka ny boky)
-FANITSIANA = [
+EXOS_ANAKO = [
+    {'consigne': 'Mamaly araka ny lesona ny fanontaniana manaraka :', 'banga': ['a) Inona no atao hoe tanindrazana ara-kevitra ?', "b) Inona avy ny toetra tokony hananan'ny olona tia tanindrazana ?", "c) Taiza no monina ny vondron'olona mampisy firenena ?", "d) Ahoana no ifandraisan'ny firenena sy ny fanjakana ?"]},
+    {'consigne': "Fenoy ny fafana ao amin'ny tabilao araka ny lesona :", 'fafana': (['Ny voalaza', 'Ny singa maha firenena ny firenena'], [["Ny fitenin'ny firenena dia ____.", ''], ["Ny hiran'ny firenena dia ____.", ''], ['Ny marika (sary) famantarana ny firenena dia ____.', ''], ["Ny olona monina ao amin'ny firenena dia ____.", ''], ['Ny singa telo hafa mbola voalaza : ____.', '']])},
+    {'consigne': "Manomeza teny ahitana ireto ampahany teny ireto ao amin'ny lesona :", 'banga': ['a) razana', 'b) pirenena', 'c) kolontsaina']},
+    {'consigne': "Mamorona fehezanteny ahitana an'ireto teny ireto, araka ny lesona :", 'banga': ['a) firaisan-kina', 'b) fedrà', "c) lovain'ny taranaka", 'd) fady']},
+]
+
+EXOS = EXOS_TANANA + EXOS_ANAKO
+ISAN_TANANA = len(EXOS_TANANA)
+
+# FANITSIANA : ny valiny, 1:1 amin'ny baiko
+FANITSIANA_TANANA = [
     {'banga': ['a) tany', 'b) tany', 'd) firaisan-kina']},
     {'tsilo': (['1. tanindrazana', '2. firenena'], ["a. vondron'olona iray monina amim-pitiavana sy firaisan-kina ao anatin'ny faritra iray", "b. tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara"])},
     {'banga': ['a) Ny fifankatiavana sy ny firaisankina', 'b) Ny fiarovana ny tany sy ny fikarakarana azy']},
-    {'banga': ["a) Dia tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara.", "b) Ny fanajana ny fitsipika sy ny lalàna mifehy ; Ny fifankatiavana sy ny firaisankina ; Ny fiarovana ny tany sy ny fikarakarana azy (ny tsy fivarotana tanindrazana ) ; Ny fahasahiana mitolona ho an'ny tanindrazana.", "c) Ao anatin'ny faritra iray, amim-pitiavana sy firaisan-kina."]},
 ]
+
+FANITSIANA_ANAKO = [
+    {'banga': ["a) Dia tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara.", "b) Ny fanajana ny fitsipika sy ny lalàna mifehy ; Ny fifankatiavana sy ny firaisankina ; Ny fiarovana ny tany sy ny fikarakarana azy (ny tsy fivarotana tanindrazana ) ; Ny fahasahiana mitolona ho an'ny tanindrazana.", "c) Ao anatin'ny faritra iray.", "d) Matetika mifamatotra amin'ny fanjakana na fitondram-panjakana tokana."]},
+    {'fafana': (['Ny voalaza', 'Ny singa maha firenena ny firenena'], [["Ny fitenin'ny firenena dia ____.", '**tenim-pirenena**'], ["Ny hiran'ny firenena dia ____.", '**hiram-pirenena**'], ['Ny marika (sary) famantarana ny firenena dia ____.', '**fanevam-pirenana**'], ["Ny olona monina ao amin'ny firenena dia ____.", '**ny mponina**'], ['Ny singa telo hafa mbola voalaza : ____.', '**ny filoham-pirenena na ny mpitondra** · **ny kolontsaina** · **ny tany** · **ny hasin’ny tany na fady**']])},
+    {'banga': ["a) tanindrazana · tanin-drazana · tanin'ny razana · fasan-drazana · razana niandohana", 'b) tenim-pirenena · hiram-pirenena · fanevam-pirenana · sainam-pirenena (sainam-pirenena malagasy)', 'c) kolontsaina malagasy · iray kolontsaina · manaraka kolontsaina na fomban-drazana iraisana']},
+    {'banga': ["Valiny ohatra (miova araka ny mpianatra, ny teny ao amin'ny lesona ihany no ampiasaina) :", "a) Ny firenena dia vondron'olona iray monina amim-pitiavana sy firaisan-kina ao anatin'ny faritra iray.", "b) Ny foko dia vondron'olona mihevitra ny tenany ho iray tantara sy fedrà.", "c) Ny tanindrazana dia tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara.", 'd) Ny hasin’ny tany na fady dia tokony ho voaaro.']},
+]
+
+FANITSIANA = FANITSIANA_TANANA + FANITSIANA_ANAKO
 
 # LOHARANON-KEVITRA
 LOHARANO_TANANAO = [
@@ -73,5 +90,5 @@ LOHARANO_TANANAO = [
 ]
 
 LOHARANO = [
-    "Boky natao an-tanana : « Manuel de Malagasy - Classe de T6 », SEHO 1 — Ny tanindrazana sy ny firenena (n° 1/21). Ny famaritana, ny adidy, ny maha firenena, ny ohabolana, ny dingana 6 an'ny takela, ny baiko fanazaran-tena sy ny valiny amin'ity lesona ity dia voakopi teny-teny avy amin'io boky io (sisiny voasento : refs/14_MANUELA-T6-TANANA.txt) ; ny « Fanampiana » aorian'ny fizarana 5 ihany no an'ny manuela J-Learn.",
+    "Boky natao an-tanana : « Manuel de Malagasy - Classe de T6 », SEHO 1 — Ny tanindrazana sy ny firenena (n° 1/21). Tsy averina ao amin'ity rakitra ity ny soratra an'ny lesona : ny takela-panomanan-desona (Famerenana, dingana 6, Tombana), ny baiko fanazaran-tena ary ny valiny amin'ireo ihany no voarindra teny-teny araka ny boky (sisiny voasento : refs/14_MANUELA-T6-TANANA.txt). Ny baiko 4 sy ny valiny azy, izay nampiana mba hatanteraka ny karazana baiko rehefa 6 ampiasaina amin'ny boky, dia an'ny manuela J-Learn — fa ny teny sy ny hevitra ao amin'ny lesona ihany no nilohanana azy.",
 ] + LOHARANO_TANANAO

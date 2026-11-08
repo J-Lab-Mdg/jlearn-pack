@@ -5,7 +5,7 @@ Ataon-drehetra ny tabilao (tsy « TAB 13r » fotsiny toy ny `dump_docx.py`), sat
 sela no onenan'ny boky ny dingana 6 sy ny valin'ny « Ampifandraiso » — ka tsy ho hita
 amin'ny mpijinja teny-teny (`fikajy_citation.py`) ny teny anaty tabilao raha tsy eto.
 
-    git show "origin/main:Nos manuels/Manuel de Malagasy - Classe de T6 (1).docx" > /tmp/t6_main.docx
+    mkdir -p ~/.tanana && git show "origin/main:Nos manuels/Manuel de Malagasy - Classe de T6 (1).docx" > ~/.tanana/t6_main.docx
     ./run.sh src/sento_tanana.py /tmp/t6_main.docx refs/14_MANUELA-T6-TANANA.txt
 """
 import io
@@ -46,7 +46,7 @@ def sento(chemin):
 
 
 def main():
-    src = sys.argv[1] if len(sys.argv) > 1 else "/tmp/t6_main.docx"
+    src = sys.argv[1] if len(sys.argv) > 1 else "/home/user/.tanana/t6_main.docx"
     dst = sys.argv[2] if len(sys.argv) > 2 else os.path.join(DOS, "refs",
                                                                  "14_MANUELA-T6-TANANA.txt")
     if not os.path.exists(src):

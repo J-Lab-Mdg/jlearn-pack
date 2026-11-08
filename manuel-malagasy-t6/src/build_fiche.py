@@ -528,6 +528,26 @@ def _ordre_tblPr(tblPr):
         tblPr.append(c)
 
 
+def _tabalo_fafana(doc, tete, lignes, feno=False):
+    """Tabilao « Fenoy ny fafana » : sela banga (`""`) ho an'ny mpianatra, na feno ho an'ny
+    FANITSIANA (`feno=True`)."""
+    habe = [3288, 3289, 3289] if len(tete) == 3 else ([4933, 4933] if len(tete) == 2 else [9866])
+    t = doc.add_table(rows=1 + len(lignes), cols=len(tete))
+    style_table(t, STYLE_GRILLE)
+    t.alignment = WD_TABLE_ALIGNMENT.CENTER
+    largeur(t, habe, total=sum(habe))
+    for j, txt in enumerate(tete):
+        cellule(t.cell(0, j), txt, bold=True, fond=BANDE)
+    for i, row in enumerate(lignes, start=1):
+        for j, val in enumerate(row):
+            if not val and not feno:
+                cellule(t.cell(i, j), " ", space=0)          # banga : hadian'ny mpianatra
+            else:
+                cellule(t.cell(i, j), val, color=(C_REP if feno and not row[j - 1] else C_NOIR),
+                        space=0)
+    return t
+
+
 def _tabalo_tsilo(doc, gauche, droite, exact=True):
     """Tabilao fampifandraisana (Ampifandraiso amin'ny alalan'ny tsilo) : 3 kolona
     4400 | 567 | 4899 = 9866 twips, ny habe azon'ny pejy (A4 − 2 × 1020), ary rangee
@@ -779,6 +799,10 @@ def exercices(doc, d, listes):
             ex["_mele"], ex["_rezo"] = mele, rezo
             t = _tabalo_tsilo(doc, list(gauche[:n]), mele, exact=False)
             p(doc, "", space_after=2)
+        elif "fafana" in ex:
+            tete, lignes = ex["fafana"]
+            _tabalo_fafana(doc, tete, lignes)
+            p(doc, "", space_after=2)
         elif "banga" in ex:
             lignes = ex["banga"]
             if isinstance(lignes, str):
@@ -824,6 +848,10 @@ def fanitsiana(doc, d, listes):
                 for i in range(len(gauche)):
                     if i in rezo:
                         fleche(t.cell(i, 1).paragraphs[0], i, rezo[i], doc)
+        elif "fafana" in rep:
+            tete, lignes = rep["fafana"]
+            _tabalo_fafana(doc, tete, lignes, feno=True)
+            p(doc, "", space_after=2)
         elif "banga" in rep:
             lignes = rep["banga"]
             if isinstance(lignes, str):

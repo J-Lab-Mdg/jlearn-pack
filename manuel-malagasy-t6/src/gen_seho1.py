@@ -7,7 +7,7 @@ laharana anaty** (index) avy amin'ny `word/document.xml` n'ny
 fefy soratako : raha misy tsipelina tsy mety ao amin'ny boky (oh. « fanevam-pirenana ») dia
 tazonina araka izany, fa tsy haverina amin'izay heverako.
 
-    git show "origin/main:Nos manuels/Manuel de Malagasy - Classe de T6 (1).docx" > /tmp/t6_main.docx
+    mkdir -p ~/.tanana && git show "origin/main:Nos manuels/Manuel de Malagasy - Classe de T6 (1).docx" > ~/.tanana/t6_main.docx
     ./run.sh src/gen_seho1.py
 
 Ny « Fanampiana » aorian'ny fizarana 5 dia an'ny manuela J-Learn : alaina amin'ny
@@ -22,7 +22,7 @@ import sys
 import zipfile
 
 DOS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCX = os.environ.get("JLEARN_TANANA", "/tmp/t6_main.docx")
+DOCX = os.environ.get("JLEARN_TANANA", "/home/user/.tanana/t6_main.docx")
 sys.path.insert(0, os.path.join(DOS, "src"))
 
 BAND = {"I": "I. Famerenana (5 min)", "II": "II. LESONA VAOVAO (20 min)",
@@ -171,6 +171,62 @@ LESONA_REF = ("Lesona : « %s » — boky natao an-tanana, SEHO 1 (n° 1/21). Io
               "foto-kevitra : tsy averina ao amin'ity rakitra ity izy, fa ny takela-"
               "panomanan-desona sy ny fanazaran-tena no ataoko." % LT)
 
+
+ko = lesona.index(iray("Toetra tokony"))
+toetra = " ".join([l for l in lesona[ko + 1:] if not l.startswith("Araka ")][:4])
+
+# ---------------------------------------------------------------- ny baiko fanampiko (ako)
+# Karazana rehetra ilainy : 1 fanontaniana mivantana · 3 fenoy ny fafana [tabilao] ·
+# 5 manomeza teny ahitana · 4 mamorona fehezanteny — ary ny valiny rehetra dia azo
+# hamarinina ao amin'ny lesona (teny-teny na ampahany mety).
+BAIKO_ANAKO = [
+    {"consigne": "Mamaly araka ny lesona ny fanontaniana manaraka :",
+     "banga": ["a) Inona no atao hoe tanindrazana ara-kevitra ?",
+               "b) Inona avy ny toetra tokony hananan'ny olona tia tanindrazana ?",
+               "c) Taiza no monina ny vondron'olona mampisy firenena ?",
+               "d) Ahoana no ifandraisan'ny firenena sy ny fanjakana ?"]},
+    {"consigne": "Fenoy ny fafana ao amin'ny tabilao araka ny lesona :",
+     "fafana": (["Ny voalaza", "Ny singa maha firenena ny firenena"],
+                [["Ny fitenin'ny firenena dia ____.", ""],
+                 ["Ny hiran'ny firenena dia ____.", ""],
+                 ["Ny marika (sary) famantarana ny firenena dia ____.", ""],
+                 ["Ny olona monina ao amin'ny firenena dia ____.", ""],
+                 ["Ny singa telo hafa mbola voalaza : ____.", ""]])},
+    {"consigne": "Manomeza teny ahitana ireto ampahany teny ireto ao amin'ny lesona :",
+     "banga": ["a) razana", "b) pirenena", "c) kolontsaina"]},
+    {"consigne": "Mamorona fehezanteny ahitana an'ireto teny ireto, araka ny lesona :",
+     "banga": ["a) firaisan-kina", "b) fedrà", "c) lovain'ny taranaka", "d) fady"]},
+]
+
+VALINY_ANAKO = [
+    {"banga": ["a) Dia tany nipetrahan'ny razana niandohana ka lovain'ny taranaka aty afara.",
+               "b) " + toetra,
+               "c) Ao anatin'ny faritra iray.",
+               "d) Matetika mifamatotra amin'ny fanjakana na fitondram-panjakana tokana."]},
+    {"fafana": (["Ny voalaza", "Ny singa maha firenena ny firenena"],
+                [["Ny fitenin'ny firenena dia ____.", "**tenim-pirenena**"],
+                 ["Ny hiran'ny firenena dia ____.", "**hiram-pirenena**"],
+                 ["Ny marika (sary) famantarana ny firenena dia ____.", "**fanevam-pirenana**"],
+                 ["Ny olona monina ao amin'ny firenena dia ____.", "**ny mponina**"],
+                 ["Ny singa telo hafa mbola voalaza : ____.",
+                  "**ny filoham-pirenena na ny mpitondra** · **ny kolontsaina** · "
+                  "**ny tany** · **ny hasin\u2019ny tany na fady**"]])},
+    {"banga": ["a) tanindrazana · tanin-drazana · tanin'ny razana · fasan-drazana · "
+               "razana niandohana",
+               "b) tenim-pirenena · hiram-pirenena · fanevam-pirenana · sainam-pirenena "
+               "(sainam-pirenena malagasy)",
+               "c) kolontsaina malagasy · iray kolontsaina · manaraka kolontsaina na "
+               "fomban-drazana iraisana"]},
+    {"banga": ["Valiny ohatra (miova araka ny mpianatra, ny teny ao amin'ny lesona ihany no" 
+                  " ampiasaina) :",
+               "a) Ny firenena dia vondron'olona iray monina amim-pitiavana sy firaisan-kina "
+               "ao anatin'ny faritra iray.",
+               "b) Ny foko dia vondron'olona mihevitra ny tenany ho iray tantara sy fedrà.",
+               "c) Ny tanindrazana dia tany nipetrahan'ny razana niandohana ka lovain'ny "
+               "taranaka aty afara.",
+               "d) Ny hasin\u2019ny tany na fady dia tokony ho voaaro."]},
+]
+
 # ---------------------------------------------------------------- FANAZARAN-TENA
 exo = []
 for kd, v in bloc[k_fz + 1:k_fan]:
@@ -189,10 +245,8 @@ for e in exo:
     else:
         EXOS.append({"consigne": e["consigne"], "banga": e["banga"]})
 # ny vaovao : karazana « fanontaniana mivantana » (tsy misy intsony : 0 amin'ny boky)
-EXOS.append({"consigne": "Mamaly araka ny lesona ny fanontaniana manaraka :",
-             "banga": ["a) Inona no atao hoe tanindrazana ara-kevitra ?",
-                       "b) Inona avy ny toetra tokony hananan'ny olona tia tanindrazana ?",
-                       "c) Taiza no monina ny vondron'olona mampisy firenena ?"]})
+EXOS_TANANA = EXOS                      # ny 3 baiko soratan'ny mpampianatra
+EXOS = EXOS_TANANA + BAIKO_ANAKO          # + ny 4 vaovao (karazana 1 · 3 · 5 · 4)
 
 # ---------------------------------------------------------------- FANITSIANA (valiny 1:1)
 bloc_valiny = []
@@ -208,29 +262,24 @@ for i, lignes in enumerate(bloc_valiny):
         FANITSIANA.append({"tsilo": EXOS[i]["tsilo"]})
     else:
         FANITSIANA.append({"banga": lignes})
-ara_kevitra = iray("Ara-kevitra", "tanindrazana")
-ara_kevitra = ara_kevitra[ara_kevitra.find(":") + 1:].strip()
-# fohy toy ny fombany ny valiny : ny ampahany mitanisa ny tanindrazana ihany (teny-teny, tsy
-# mihoatra noho izay ao amin'ny lesona)
-_m = re.search(r"(dia tany nipetrahan.*?aty afara)", ara_kevitra)
-if _m:
-    ara_kevitra = "Dia " + _m.group(1)[4:] + "."
-ko = lesona.index(iray("Toetra tokony"))
-toetra = " ".join([l for l in lesona[ko + 1:] if not l.startswith("Araka ")][:4])
-FANITSIANA.append({"banga": ["a) " + ara_kevitra,
-                            "b) " + toetra,
-                            "c) Ao anatin'ny faritra iray, amim-pitiavana sy firaisan-kina."]})
+FANITSIANA_TANANA = FANITSIANA             # ny 3 valiny an'ny boky
+FANITSIANA = FANITSIANA_TANANA + VALINY_ANAKO
 if len(FANITSIANA) != len(EXOS):
     raise SystemExit("TSY 1:1 ny valiny : %d baiko / %d valiny" % (len(EXOS), len(FANITSIANA)))
 
 # ---------------------------------------------------------------- LOHARANON-KEVITRA
 LOHARANO_TANANAO = loharano_anako
-LOHARANO = ["Boky natao an-tanana : « Manuel de Malagasy - Classe de T6 », SEHO 1 — Ny "
-            "tanindrazana sy ny firenena (n° 1/21). Ny famaritana, ny adidy, ny maha firenena, "
-            "ny ohabolana, ny dingana 6 an'ny takela, ny baiko fanazaran-tena sy ny valiny "
-            "amin'ity lesona ity dia voakopi teny-teny avy amin'io boky io (sisiny voasento : "
-            "refs/14_MANUELA-T6-TANANA.txt) ; ny « Fanampiana » aorian'ny fizarana 5 ihany no "
-            "an'ny manuela J-Learn."] + LOHARANO_TANANAO
+LOHARANO = [
+            "Boky natao an-tanana : « Manuel de Malagasy - Classe de T6 », SEHO 1 — "
+            "Ny tanindrazana sy ny firenena (n° 1/21). Tsy averina ao amin'ity "
+            "rakitra ity ny soratra an'ny lesona : ny takela-panomanan-desona "
+            "(Famerenana, dingana 6, Tombana), ny baiko fanazaran-tena ary ny valiny "
+            "amin'ireo ihany no voarindra teny-teny araka ny boky (sisiny voasento : "
+            "refs/14_MANUELA-T6-TANANA.txt). Ny baiko 4 sy ny valiny azy, izay "
+            "nampiana mba hatanteraka ny karazana baiko rehefa 6 ampiasaina amin'ny "
+            "boky, dia an'ny manuela J-Learn — fa ny teny sy ny hevitra ao amin'ny "
+            "lesona ihany no nilohanana azy."
+            ] + LOHARANO_TANANAO
 
 # ---------------------------------------------------------------- ny soratana
 o = io.StringIO()
@@ -260,13 +309,23 @@ o.write("]\n\n# ny lesona dia AN'NY MPAMPIANATRA : tsy averina, tsy ovana, tsy a
         "ao amin'ity\n# rakitra ity akory. `LESONA_REF` ihany no milaza azy (lohateny + "
         "SEHO n/21), ka ny takela-\n# panomanan-desona sy ny fanazaran-tena/valiny no "
         "atanako.\nLESONA = []\nANAKO = []\n\nLESONA_REF = %r\n\n" % LESONA_REF)
-o.write("# FANAZARAN-TENA : baiko 3 an'ny boky (teny-teny) + fanontaniana vaovao 1\nEXOS = [\n")
-for e in EXOS:
+o.write("# FANAZARAN-TENA : baiko 3 an'ny boky (teny-teny) + 4 vaovao (karazana 1 . 3 . 5 . 4)\n"
+"EXOS_TANANA = [\n")
+for e in EXOS_TANANA:
     o.write("    %r,\n" % (e,))
-o.write("]\n\n# FANITSIANA : ny valiny, 1:1 amin'ny baiko (araka ny boky)\nFANITSIANA = [\n")
-for e in FANITSIANA:
+o.write("]\n\nEXOS_ANAKO = [\n")
+for e in BAIKO_ANAKO:
     o.write("    %r,\n" % (e,))
-o.write("]\n\n# LOHARANON-KEVITRA\nLOHARANO_TANANAO = [\n")
+o.write("]\n\nEXOS = EXOS_TANANA + EXOS_ANAKO\n"
+"ISAN_TANANA = len(EXOS_TANANA)\n\n# FANITSIANA : ny valiny, 1:1 amin'ny baiko\n"
+"FANITSIANA_TANANA = [\n")
+for e in FANITSIANA_TANANA:
+    o.write("    %r,\n" % (e,))
+o.write("]\n\nFANITSIANA_ANAKO = [\n")
+for e in VALINY_ANAKO:
+    o.write("    %r,\n" % (e,))
+o.write("]\n\nFANITSIANA = FANITSIANA_TANANA + FANITSIANA_ANAKO\n\n")
+o.write("# LOHARANON-KEVITRA\nLOHARANO_TANANAO = [\n")
 for l in LOHARANO_TANANAO:
     o.write("    %r,\n" % (l,))
 o.write("]\n\nLOHARANO = [\n    %r,\n] + LOHARANO_TANANAO\n" % LOHARANO[0])

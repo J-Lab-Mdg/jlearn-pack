@@ -144,20 +144,40 @@ niditra tao anaty lesona izany). Ny ataoko dia roa ihany :
 Ny « LESONA: » ao amin'ny boky ataoko dia **soro-tanana** ihany : lohatenin'ny lesona +
 « SEHO n/21 » + ny antsipiriany momba ny boky natao an-tanana.
 
-### Vokatra : SEHO 1 (03/11)
-- `src/data_seho1.py` — noaovan'ny `src/gen_seho1.py` : `LESONA = []` (tsy misy soratra lesona),
-  `LESONA_REF` (soro-tanana), `GRILLE` 11 andalana teny-teny, `EXOS` 4 baiko (3 tenany +
-  1 fanontaniana mivantana : `Inona no … ?`, `Inona avy ny … ?`, `Taiza no … ?`), `FANITSIANA`
-  4 valiny 1:1 ;
-- rakitra : `output/Seho_1_T6_J-Learn.docx` (43 543 o · 51 paragrafo · 4 tabilao · 5 759 karakterina) sy ny boky feno
-  (`Malagasy_T6_J-Learn.docx`, 1 649 paragrafo · 171 406 karakterina, -2 985 noho ny lesona
-  nalaina) ;
-- mpijinja `src/fikajy_citation.py` : `tanana : 75 singa · 0 tsy hita` (teny-teny avy amin'ny
-  boky ny takela sy ny baiko/valiny rehetra) · `tsy_misy_soratra_lesona : 1 seho · 0` ·
-  `verbatim : 208 voakopi · 163 hita ao amin'ny loharano` · `controles : TUATUA` ·
-  LISTE-ROUGE 31 / 0 ;
-- ny baiko 4 sy ny valiny azy ihany no fanampiko ; ny « Fanampiana » (PE/FRP) dia nalaina
-  tanteraka, satria tao anaty lesona izy.
+**Fanamafisana (03/11, after‑pause 2)** — « **j'ai déjà donné la leçon (toutes ces infos) ; ce
+que j'attends de toi n'est que d'utiliser ces informations pour les intégrer dans les fiches
+(alignement) et enrichir (améliorer) les exercices avec** ». → **roa lahy ny lalàna** : (a) tsy
+averina ny lesona ; (b) **tsy miala amin'ny lesona koa** — ny midesidra ao aminy dia **matière**
+hatao amin'ny firaketana (takela, ZANA-TARANJA, VPM, fitaovana, lohahevitra, adidy — **1:1**) sy
+**ampiasaina hanatsara ny baiko** (hanatanteraka ny karazana baiko rehefa 6 any amin'ny boky,
+mamorona baiko vaovao mipetraka amin'ny soratra sy ny mari-pahaizana navelan'ny lesona). Ny
+fiche tsy misy fampiharana ny lesona dia **tsy feno**, ary ny lesona naverina indray dia
+**tsy azon'ny alalana** : eo anelanelan'ireo roa ireo no toerana amboariko.
+
+### Vokatra : SEHO 1 — **fiche + baiko ihany, mifanaraka amin'ny lesona**
+- `src/data_seho1.py` — noaovan'ny `src/gen_seho1.py` : `LESONA = []` (tsy misy soratra lesona
+  akory), `LESONA_REF` (soro-tanana manondro ny boky), `GRILLE` 11 andalana **teny-teny**
+  (Famerenana, dingana 6, Tombana + `n° 1/21`, `Isan'ny seho : 21`) ;
+- **`EXOS` 7 baiko** = `ISAN_TANANA = 3` an'ny boky (**teny-teny** : *Fenoy* a/b/d,
+  *Ampifandraiso* tabilao, *Soraty toetra roa…*) + **4 natao hanatanteraka ny karazana baiko
+  rehefa 6 ampiasaina amin'ny boky**, ka ny **lesony ihany no loharano** : *Mamaly araka ny
+  lesona ny fanontaniana manaraka* (`Inona no atao hoe…`, `Inona avy ny…`, `Taiza no monina…`,
+  `Ahoana no ifandraisan'ny…`) · **`Fenoy ny fafana`** an-tabilao (singa 8 maha-firenena :
+  tenim-pirenena, hiram-pirenena, fanevam-pirenena, ny mponina, ny filoham-pirenena, ny
+  kolontsaina, ny tany, ny hasin'ny tany na fady) · *Manomeza teny ahitana* (`razana`,
+  `pirenena`, `kolontsaina`) · *Mamorona fehezanteny ahitana* (`firaisan-kina`, `fedrà`,
+  `lovain'ny taranaka`, `fady`). Tsy nampiana ohabolana (tsy misy amin'ity lesona ity) ;
+- **`FANITSIANA` 7 valiny, 1:1** amin'ny baiko : an-tabilao ny « Ampifandraiso » sy ny
+  « fafana », fragment mifanaraka amin'ny lesona ny fanontaniana misokatra (marika
+  `Valiny ohatra (miova araka ny mpianatra, ny teny ao amin'ny lesona ihany no ampiasaina)`),
+  **tsy misy intsony** ny « tsy misy valiny ao amin'ny boky » ;
+- rakitra : `output/Seho_1_T6_J-Learn.docx` (**44 349 o · 81 paragrafo · 6 tabilao · 7 842
+  karakterina**) sy ny boky feno (`Malagasy_T6_J-Learn.docx`, **1 318 298 o · 1 679 paragrafo ·
+  99 tabilao · 173 489 karakterina**) ;
+- mpijinja `src/fikajy_citation.py` : `tanana : 75 singa · 0 tsy hita` (ny takela sy ny baiko
+  an'ny boky ihany no ijery, fa ny anako dia voamarika) · `tsy_misy_soratra_lesona : 1 seho ·
+  0` · `verbatim : 208 · 163 hita · 45 mila jerena` (ireo farany = lohatenin'ny modulo anako) ·
+  `controles : TUATUA` · LISTE-ROUGE 31 / 0.
 
 ### Zava-boahary roa any amin'ny rakitra faobe — voatazona araka izany, tsy nOVANA
 1. ny taran-teny **c)** tsy misy akory (a 62 · b 56 · c **0** · d 28 · e 10) ;

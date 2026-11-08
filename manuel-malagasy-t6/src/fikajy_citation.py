@@ -95,7 +95,8 @@ def tanana(data, tesy_tanana):
         ts = e.get("tsilo") or ((), ())
         return list(e.get("banga", [])) + list(ts[0]) + list(ts[1])
 
-    for e in data.EXOS[:len(data.FANITSIANA) - 1]:     # ny baiko 3 ananany
+    n = getattr(data, "ISAN_TANANA", len(data.EXOS))
+    for e in data.EXOS[:n]:                             # ny baiko soratan'ny boky ihany
         ena.append(("BAIKO", e["consigne"]))
         for l in andy(e):
             ena.append(("BAIKO/andy", l))
@@ -103,7 +104,7 @@ def tanana(data, tesy_tanana):
         for c in r[1:]:
             for l in c.split("\n"):
                 ena.append(("TAKELA", l))
-    for e in data.FANITSIANA[:3]:                      # ny valiny voalaza ao aminy
+    for e in data.FANITSIANA[:n]:                      # ny valiny voalaza ao aminy
         for l in andy(e):
             ena.append(("VALINY", l))
     for karazana, l in ena:
