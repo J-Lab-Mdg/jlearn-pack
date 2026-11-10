@@ -169,3 +169,11 @@ lesona) · rakitra : **4 171 827 o**. Mbola 23 : s09_3 … s21_2.
 `hatevina`) · `s14_1` (fototany : tarehy tsy misy endrika, lamba iombonana fotsiny — **tsy
 misy** akanjo manokvan'ny foko). Rakitra : **5 230 779 o** · `--fikajy` **TUATUA** · mbola 13 :
 `s15_1 … s21_2`.
+
+**Dingana 4 (30/43 → 40/43)** : `s15_1, s15_2` (kely/lehibe, madio/maloto — ampahany roa
+mifanitsy) · `s16_1, s16_2` (vato 1–4 **tsy misy isa** amin'ny teny, voazaraka ampahany) ·
+`s17_1` (sihy telo : lasa / ankehitriny / ho avy) · `s18_1, s18_2` (fatorana ny omby,
+velarana tsihy ny vahiny) · `s19_1, s19_2` (Miasa ny olona, Milalao baolina i Lita) ·
+`s20_1` (Atero ilay vola). Rakitra : **6 235 567 o** · `--fikajy` **TUATUA** · **mbola 3** :
+`s20_2, s21_1, s21_2`. Nampiana `src/sary_jpeg.py` (PNG → JPEG 1 200 px + fanadiovana
+`sary_src/`).
