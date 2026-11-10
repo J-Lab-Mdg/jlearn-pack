@@ -162,3 +162,10 @@ akany ») · `s08_1, s08_2` (« Akanga saraky ny ala », « Kintan'ny mamatonali
 `s09_1, s09_2` (mianaka, mihanaka) — **20 sary ampiasaina**, `--fikajy` : **TUATUA**
 (tarika 1 008 voatazona, fanampiny = légende 20 ihany, tabilao 55 TSY NIOVA, sary 20 ao anaty
 lesona) · rakitra : **4 171 827 o**. Mbola 23 : s09_3 … s21_2.
+
+**Dingana 3 (20/43 → 30/43)** : `s09_3` (avana) · `s10_1` (tady mifatotra = mpampitohy) ·
+`s11_1, s11_2` (verindroa : echo + manalefaka) · `s12_1, s12_2, s12_3` (`ranomaso`,
+`tsaramaso`, `solomaso` — ny ohatra ao amin'ny lesona) · `s13_1, s13_2` (`mibaby`,
+`hatevina`) · `s14_1` (fototany : tarehy tsy misy endrika, lamba iombonana fotsiny — **tsy
+misy** akanjo manokvan'ny foko). Rakitra : **5 230 779 o** · `--fikajy` **TUATUA** · mbola 13 :
+`s15_1 … s21_2`.
