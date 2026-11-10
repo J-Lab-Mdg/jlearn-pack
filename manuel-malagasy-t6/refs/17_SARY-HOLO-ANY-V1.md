@@ -177,3 +177,19 @@ velarana tsihy ny vahiny) · `s19_1, s19_2` (Miasa ny olona, Milalao baolina i L
 `s20_1` (Atero ilay vola). Rakitra : **6 235 567 o** · `--fikajy` **TUATUA** · **mbola 3** :
 `s20_2, s21_1, s21_2`. Nampiana `src/sary_jpeg.py` (PNG → JPEG 1 200 px + fanadiovana
 `sary_src/`).
+
+**Vita : 43 / 43.** `s20_2` (« Mianara tsara ary miasà mafy », jiro sy kahie) · `s21_1` (seho ho
+dirijina : tanimbary, omby, tanàna, ony, zava-manga maro hamakafakana) · `s21_2` (zaza misoratra
+sy « sary an-tsaina» eo ambony lohaliny).
+
+| Fanamarinana farany (`--fikajy` + fanilava) | |
+|---|---|
+| tarika tamin'ny V1 | **1 008 voatazona, filaharana ihany** |
+| fanampiny | **43 légende ihany** (`Sary : …`) · **0** zavatra hafa |
+| sary ao anaty tabilao | **0** (takela-panomanan-desona sy fanazaran-tena: **tsy misy** sary) |
+| sary ao anaty `LESONA :` | **43 / 43** |
+| tabilao | 55 → **55** · soratra anatiny **51 172 karakterina TSY NIOVA** |
+| `media` | 3 → **46** (+43, tsy nisy nafesina) · 6 310 Ko |
+| sommaire | **1** champs `TOC \o "1-3" \h \z \u` · **24** `PAGEREF` · **24** bookmark `_Toc` → **tsy niova** ; `<w:updateFields w:val="true"/>` → havaozina ho azy ny isan'ny pejy (na `Ctrl+A` → `F9`) |
+| rakitra | `output/Malagasy_T6_V1_SARY_J-Learn.docx` — **6 631 667 o** · 43 JPEG 1 200 px = 4 609 Ko |
+| tsy nOHANA | `Nos manuels/Malagasy T6 V1.docx` (ny lahataonao) — rakitra **vaovao** no natao |
