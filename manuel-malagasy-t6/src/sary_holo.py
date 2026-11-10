@@ -236,6 +236,41 @@ SARY = [
 
 assert len(SARY) == 43, "ny sary dia 43 : %d" % len(SARY)
 
+SARY += [
+ (5, r"^Ny rima fisaka$", "Vary ao anaty aisika : ny teny fototra « vary » (fary, kary, "
+     "atavy, …)", "s05_vary",
+     "A winnowing basket (aisika) full of white rice grains on a woven mat, a wooden rice "
+     "paddle resting on the rim, a few grains scattered on the mat, plain simple background, no "
+     "people."),
+ (9, r"^Manantona akanjo i Samy", "Manantona akanjo : ny lamba mianjady eo ambony tady",
+     "s09_manantona",
+     "Washed clothes and a lamba hanging on a clothesline strung between two wooden posts in a "
+     "village yard, water dripping onto the packed earth, a basin below, late morning sun, no "
+     "people."),
+ (12, r"^solo \+ maso = solomaso$", "Solo + maso = solomaso : lunettes (fitaovana ho "
+     "solon'ny maso)", "s12_solomaso",
+     "A pair of simple round eyeglasses with thin frames held in one hand above an open book, "
+     "and a schoolchild seen from behind wearing them while reading, soft daylight through a "
+     "window, blank pages with only faint ruled lines."),
+]
+
+# 2) ny 21 sary izay esorina (ifandraisana malefaka) — jereo refs/19 §2
+ESORINA = {"s01_1", "s04_2", "s05_1", "s05_2", "s06_1", "s06_2", "s10_1", "s11_1", "s12_3",
+           "s13_2", "s14_1", "s15_1", "s15_2", "s16_2", "s17_1", "s08_2", "s19_1", "s19_2",
+           "s20_1", "s20_2", "s21_2"}
+
+
+def safidy():
+    """Ny lisitra mihaino : **25** (izay misy ifandraisana mivantana), na ny isa nodokiana
+    amin'ny `JLEARN_SAFIDY` (oh. `JLEARN_SAFIDY=1,3,4`)."""
+    lisitra = [r for r in SARY if r[3] not in ESORINA]
+    ny_isa = os.environ.get("JLEARN_SAFIDY", "").strip()
+    if not ny_isa:
+        return lisitra
+    asa = {int(x) for x in re.split(r"[,\s]+", ny_isa) if x.strip()}
+    return [r for i, r in enumerate(lisitra, 1) if i in asa]
+
+
 
 # ---------------------------------------------------------------- ny fitandremana
 def seho_pipar(d):
@@ -260,7 +295,7 @@ def mponina(d):
     """manamora ireo mpanolo-tsaina : {seho: [(anchor_idx, [row, …]), …]}"""
     win = seho_pipar(d)
     renke = {}
-    for row in SARY:
+    for row in safidy():
         n = row[0]
         if n not in win:
             raise SystemExit("TSY HITATAO ny SEHO %d" % n)
@@ -275,7 +310,7 @@ def mponina(d):
 
 # ---------------------------------------------------------------- ny fanoratana
 def fanampy_sary(P, anchor, row, d, hatelina=11.5):
-    _, _, legende, anarana, _ = row
+    _, _, _legende, anarana, _ = row
     sarina = os.path.join(FODY, anarana + ".jpg")
     p_img = d.add_paragraph()
     p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -283,16 +318,10 @@ def fanampy_sary(P, anchor, row, d, hatelina=11.5):
     p_img.paragraph_format.space_after = Pt(0)
     r = p_img.add_run()
     r.add_picture(sarina, width=Cm(hatelina))
-    p_cap = d.add_paragraph()
-    p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_cap.paragraph_format.space_before = Pt(2)
-    p_cap.paragraph_format.space_after = Pt(8)
-    rc = p_cap.add_run("Sary : %s" % legende)
-    rc.italic = True
-    rc.font.size = Pt(9)
-    rc.font.color.rgb = RGBColor(0x44, 0x44, 0x44)
-    anchor._p.addnext(p_cap._p)                       # addnext = manaraka → ampiasaro
-    anchor._p.addnext(p_img._p)                        # ny faharoa vao ny voalohana
+    # **TSY MISY LÉGEND** : lalàn'ny mpampianatra — « tu ne dois jamais mettre des legendes ».
+    # Ny sary ihany no ampiana, tsy misy tarika soratra fanampiny akory.
+    p_img.paragraph_format.space_after = Pt(6)
+    anchor._p.addnext(p_img._p)
 
 
 def atao_sary(d):
@@ -327,7 +356,8 @@ def andrera():
     win = seho_pipar(d)
     P = d.paragraphs
     ok = 0
-    for row in SARY:
+    isa = safidy()
+    for row in isa:
         n, reg = row[0], row[1]
         a, b = win[n][1], win[n][2]
         hit = [j for j in range(a, b) if re.search(reg, P[j].text.strip())]
@@ -336,13 +366,14 @@ def andrera():
         misy = "sary ✓" if os.path.exists(os.path.join(FODY, row[3] + ".jpg")) else "sy mbola"
         print("SEHO %2d %-8s %-8s %s   ← %s" % (n, row[3], misy, mark, reg[:34]))
         ok += bool(hit)
-    print("\nankre hita : %d / %d   |   sary efa misy : %d / %d"
-          % (ok, len(SARY), len([r for r in SARY if os.path.exists(
-              os.path.join(FODY, r[3] + ".jpg"))]), len(SARY)))
+    print("\nankre hita : %d / %d   |   sary efa misy : %d / %d   |   safidy : %s"
+          % (ok, len(isa), len([r for r in isa if os.path.exists(
+              os.path.join(FODY, r[3] + ".jpg"))]), len(isa),
+             os.environ.get("JLEARN_SAFIDY") or "25 rehetra (refs/19)"))
 
 
 def prompts():
-    for row in SARY:
+    for row in safidy():
         chemin = os.path.join(FODY, row[3] + ".jpg")
         if os.path.exists(chemin):
             continue
@@ -365,7 +396,7 @@ def fikajy():
             raise SystemExit("DIKA : very tao amin'ny rakitra vaovao : %r" % ligne[:70])
         i += 1
     fanampiny += nouveau[i:]
-    tsy_azo_ekena = [x for x in fanampiny if not x.startswith("Sary : ")]
+    tsy_azo_ekena = list(fanampiny)                    # **0** tarika no ekena (tsy misy légende)
     win = seho_pipar(d)
     P = d.paragraphs
     anaty_lesona = 0
@@ -376,12 +407,11 @@ def fikajy():
     with zipfile.ZipFile(RAKITRA_VAOVAO) as z:
         media = [x for x in z.namelist() if x.startswith("word/media/")]
         seto = z.read("word/settings.xml").decode("utf-8")
+    _expected = len([r for r in safidy() if os.path.exists(os.path.join(FODY, r[3] + ".jpg"))])
     print("tarika amin'ny V1 : %d · voatazona rehetra, filaharana ihany ✓" % len(ancien))
-    print("fanampiny : %d (légende %d + sary) · zavatra hafa : %d"
-          % (len(fanampiny), len([x for x in fanampiny if x.startswith("Sary : ")]),
-             len(tsy_azo_ekena)))
-    print("sary anaty lesona ihany : %d · tabilao : %d (V1 : 55) · media : %d · "
-          "updateFields : %s" % (anaty_lesona, len(d.tables), len(media),
+    print("tarika fanampiny : %d (mila 0 — tsy misy légende)" % len(tsy_azo_ekena))
+    print("sary anaty lesona ihany : %d (mila %d) · tabilao : %d (V1 : 55) · media : %d · "
+          "updateFields : %s" % (anaty_lesona, _expected, len(d.tables), len(media),
                                  "updateFields" in seto))
     aloha = "\n".join(fanaka(c.text) for t in docx.Document(atao_misy()).tables for r in t.rows
                       for c in r.cells)
@@ -391,9 +421,9 @@ def fikajy():
     if aloha != ao_reto:
         raise SystemExit("DIKA : nisy tabilao novaina")
     if tsy_azo_ekena:
-        raise SystemExit("DIKA : nisy nadika : %r" % tsy_azo_ekena[:3])
-    if anaty_lesona != len([x for x in fanampiny if x.startswith("Sary : ")]):
-        raise SystemExit("DIKA : isa tsy mitovy (sary / légende)")
+        raise SystemExit("DIKA : nisy tarika nadika : %r" % tsy_azo_ekena[:3])
+    if anaty_lesona != _expected:
+        raise SystemExit("DIKA : sary %d no hita, fa %d no tokony ho" % (anaty_lesona, _expected))
     print("TUATUA")
 
 
@@ -404,8 +434,8 @@ def builder():
     d.save(RAKITRA_VAOVAO)
     for l in resaka:
         print(l)
-    print("\necrit : %s  (%d sary ampiasaina / %d soasoa, %d mbola tokony hojerena)"
-          % (RAKITRA_VAOVAO, voky, len(SARY), len(resaka)))
+    print("\necrit : %s  (%d sary ampiasaina / %d voafidy, %d mbola ho foronina)"
+          % (RAKITRA_VAOVAO, voky, len(safidy()), len(resaka)))
     with zipfile.ZipFile(RAKITRA_VAOVAO) as z:
         s = z.read("word/settings.xml").decode("utf-8")
     print("updateFields : %s · taille : %d o" % ("updateFields" in s,
