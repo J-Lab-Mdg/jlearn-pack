@@ -72,3 +72,21 @@ mampitafa ny filazam-potoana amin'ny rindrina), `s08_2` (kintana: lohatenin'boky
    manaraka.
 3. `--fikajy` : 1 008 tarika V1 voatazona · **tarika fanampiny 0** · tabilao 55 → 55
    (51 172 karakterina TSY NIOVA) · media = 3 + isa voafidy.
+
+## 4 · Ny namaly fanazavanao (06/11) — **23 sisa**
+
+Nalaiko tanteraka araka ny teninao :
+- **isa 17** (`s11_2`) : « tanana mitehitra eo ambonin'ny kiakia malefaka … » — *Somary
+  mararirary kely ilay tsindromina* → **voafafa**, satria tsy mampiseho ny toetran'ny teny
+  verindroa fa mampifangaro amin'ny hatsaram-tena ;
+- **isa 21** (`s13_1`) : « vehivavy mitondra zaza ampiasan-damosina » — *mibaby* →
+  **voafafa**, satria sary mampianatra teny ihany no miverina, tsy mampiseho ny
+  tovona *m-* na ny firafitry ny teny.
+
+**Sisa : 23 sary** (`ISA` − `FAFANA` ao amin'ny `src/sary_holo.py`), tsy misy légende, ao
+anaty `LESONA :` ihany · rakitra **4 847 195 o** · `--fikajy` **TUATUA**
+(1 008 tarika V1 voatazona · 0 tarika fanampiny · tabilao 55 → 55, 51 172 karakterina TSY NIOVA).
+
+Ny **isa maharitra** dia voatazona ao amin'ny `ISA` : azo lazaina ihany ny isa taloha
+(oh. `13, 14, 15`) na dia nisy voafafa aza. Raha tianao esorina hafa: `JLEARN_SAFIDY=…`
+na lazao fotsiny ny isa.

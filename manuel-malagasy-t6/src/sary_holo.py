@@ -260,15 +260,29 @@ ESORINA = {"s01_1", "s04_2", "s05_1", "s05_2", "s06_1", "s06_2", "s10_1", "s11_1
            "s20_1", "s20_2", "s21_2"}
 
 
+# ---------------------------------------------------------------- ny isa maharitra (refs/19 §1)
+# n° refetsika : miankina amin'ny lisitra napetraka ho an'ny mpampianatra — **tsy miova**
+# na dia esorina aza ny sasany (mbola azo lazaina ny isa taloha).
+ISA = {1: "s01_2", 2: "s01_3", 3: "s02_1", 4: "s02_2", 5: "s02_3", 6: "s03_1", 7: "s03_2",
+       8: "s04_1", 9: "s05_vary", 10: "s07_1", 11: "s07_2", 12: "s08_1", 13: "s09_1",
+       14: "s09_2", 15: "s09_3", 16: "s09_manantona", 17: "s11_2", 18: "s12_1",
+       19: "s12_2", 20: "s12_solomaso", 21: "s13_1", 22: "s16_1", 23: "s18_1",
+       24: "s18_2", 25: "s21_1"}
+
+# voafafa araka ny tenin'ny mpampianatra (06/11) : **17** (somary mararirary) sy
+# **21** (mibaby) — tsy misy ifandraisana ampy amin'ny votoatiny.
+FAFANA = {17, 21}
+
 def safidy():
     """Ny lisitra mihaino : **25** (izay misy ifandraisana mivantana), na ny isa nodokiana
     amin'ny `JLEARN_SAFIDY` (oh. `JLEARN_SAFIDY=1,3,4`)."""
-    lisitra = [r for r in SARY if r[3] not in ESORINA]
+    ehetra = {ISA[n] for n in ISA if n not in FAFANA}
     ny_isa = os.environ.get("JLEARN_SAFIDY", "").strip()
-    if not ny_isa:
-        return lisitra
-    asa = {int(x) for x in re.split(r"[,\s]+", ny_isa) if x.strip()}
-    return [r for i, r in enumerate(lisitra, 1) if i in asa]
+    if ny_isa:
+        asa = {int(x) for x in re.split(r"[,\s]+", ny_isa) if x.strip()}
+        ehetra = {ISA[n] for n in asa if n in ISA}
+    ehetra -= {ISA[n] for n in FAFANA if n in ISA}                 # ny voafafa maharitra
+    return [r for r in SARY if r[3] in ehetra]
 
 
 
@@ -369,7 +383,7 @@ def andrera():
     print("\nankre hita : %d / %d   |   sary efa misy : %d / %d   |   safidy : %s"
           % (ok, len(isa), len([r for r in isa if os.path.exists(
               os.path.join(FODY, r[3] + ".jpg"))]), len(isa),
-             os.environ.get("JLEARN_SAFIDY") or "25 rehetra (refs/19)"))
+             os.environ.get("JLEARN_SAFIDY") or "rehetra voafidy : %d (refs/19)" % len(ISA)))
 
 
 def prompts():
