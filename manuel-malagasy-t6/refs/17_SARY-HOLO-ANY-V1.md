@@ -123,3 +123,35 @@ misy, aoriana `LESONA :` + lohateny).
    fifanoherana ny andalana rehetra) ; (b) isa : paragrafo +86, tabilao 55 → **tsy miova**,
    sary 3 → **46** ; (c) `controles`/`--rouge` (liste rouge) **0** ; (d) haba : **JPEG ≈ 1 200 px** (sary iray ≈ 200–300 Ko), ka ny rakitra manontolo dia tsy ho mihoatra ny **15–18 Mo**.
    ny 4 cm hatelina amin'ny pejy (tsy mamoaka sary 40 Ko, JPEG, 1 200 px ≈ 12 cm).
+
+---
+
+## 7 · Vokatra — **dingana 1 : 10 / 43**
+
+Valin'ny fanamafisana nataonao : **sary 43, ao anaty `LESONA :` ihany** (tsy ao amin'ny
+takela-panomanan-desona, tsy ao amin'ny `FANAZARAN-TENA` na `FANITSIANA`) · **endrika**
+« illustration couleurs douces à plat » · **tsy misy soratra na litera na isa** ao anaty sary
+(`rien`) · **tsy misy tarehy azo fantarina** na aiza na aiza, anisan'izany i NARIVONY sy
+RAKOTOMALALA (sary mampitahiry : sekoly taloha, voronkely anaty akany, kintan'ny
+mamatonalina) · **tsy misy** sainam-pirenena na fanevam-pirenena voamboatra.
+
+| | |
+|---|---|
+| Fifamrefana | `src/sary_holo.py` — tabilao **43 andalana** : seho · ankre (regex ao anaty `LESONA :` … `FANAZARAN-TENA` ihany) · légende · anaran'ny rakitra · prompt. **43/43 ankre hita** (`--andrera`) |
+| Rakitra | `sary/s01_1.jpg … s21_2.jpg` — **JPEG 1 200 px ≈ 117 Ko** isaky ny sary |
+| Build | `output/Malagasy_T6_V1_SARY_J-Learn.docx` — **3 114 939 o** (V1 : 1 970 697 o) |
+| Fikajy (`--fikajy`) | tarika tamin'ny V1 **1 008 voatazona, filaharana ihany** · fanampiny = **légende 10 ihany, 0 zavatra hafa** · **sary 10 ao anaty lesona** · tabilao **55 → 55**, soratra anaty tabilao **51 172 karakterina TSY NIOVA** · `media 3 → 13` · `updateFields : True` · **TUATUA** |
+| Sompaire | `TOC \o "1-3" \h \z \u` + 24 `PAGEREF` **tsy niovana** : `word/settings.xml` no nampiana `<w:updateFields w:val="true"/>` → havaozina **ho azy** ny isan'ny pejy rehefa sokafana (na `Ctrl+A` → `F9`) |
+
+**Famatorana iray natao : SEHO 1.** Nangataka `Sarin-tanin'i Madagasikara` ny `Fitaovana`, nefa
+**tsy namerina sarin-tany aho** : mety diso ny endriky ny nosy na ny faritra ao ambaratonga
+sarin-tany nataon'ny mpijmbara — tsy azo atao loharano ny sary voaforon'ny rindrambaiko.
+Natao **seho eny an-tany afovoany** (tanimbary sy tanàna) fa ny sarin-tany tena izy dia
+mbola atao an-tanana eo an-dakilasy araka ny soratrao.
+
+**Mbola 33.** Ipakafoanana **10 sary isaky ny dingana** (fepetra amin'ny vatasampanana) :
+dingana 2 → SEHO 5→9 (s05_1, s05_2, s06_1, s06_2, s07_1, s07_2, s08_1, s08_2, s09_1, s09_2),
+dingana 3 → s09_3 … s14_1, dingana 4 → s15_1 … s18_2, dingana 5 → s19_1 … s21_2. Avereno
+`./run.sh src/sary_holo.py` isaky ny dingana (miova ho azy ny isa : 20/43, 30/43, 40/43, 43/43)
+ary `--fikajy` mandra-pahazoana **TUATUA**. Ny teny fanazavana (prompt) ambiko dia voatazona ao
+amin'ny tabilao : azo averenina amin'ny `./run.sh src/sary_holo.py --prompts`.
