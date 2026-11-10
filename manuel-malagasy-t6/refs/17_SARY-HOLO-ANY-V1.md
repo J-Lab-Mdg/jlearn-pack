@@ -155,3 +155,10 @@ dingana 3 → s09_3 … s14_1, dingana 4 → s15_1 … s18_2, dingana 5 → s19_
 `./run.sh src/sary_holo.py` isaky ny dingana (miova ho azy ny isa : 20/43, 30/43, 40/43, 43/43)
 ary `--fikajy` mandra-pahazoana **TUATUA**. Ny teny fanazavana (prompt) ambiko dia voatazona ao
 amin'ny tabilao : azo averenina amin'ny `./run.sh src/sary_holo.py --prompts`.
+
+**Dingana 2 (10/43 → 20/43)** : `s05_1, s05_2` (ngadona, rima mifanjohy) · `s06_1, s06_2`
+(tamberin-drenifeo, tamberin-janapeo) · `s07_1, s07_2` (sekoly taloha, « Voronkely anaty
+akany ») · `s08_1, s08_2` (« Akanga saraky ny ala », « Kintan'ny mamatonalina ») ·
+`s09_1, s09_2` (mianaka, mihanaka) — **20 sary ampiasaina**, `--fikajy` : **TUATUA**
+(tarika 1 008 voatazona, fanampiny = légende 20 ihany, tabilao 55 TSY NIOVA, sary 20 ao anaty
+lesona) · rakitra : **4 171 827 o**. Mbola 23 : s09_3 … s21_2.
