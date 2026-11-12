@@ -7,6 +7,7 @@ le même modèle que les manuels Géographie T4 à T9 de la collection J-Learn.
 """
 import sys
 import os
+import unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -170,8 +171,17 @@ def build_glossary():
         for lesson in lessons:
             raw.append((lesson['notion'], lesson['notion_def']))
     cleaned = [(_clean_term(t), d) for t, d in raw]
-    cleaned.sort(key=lambda x: x[0].lower())
+    cleaned.sort(key=lambda x: _alpha_key(x[0]))
     return cleaned
+
+
+def _alpha_key(s):
+    """Cle de tri alphabetique 'a la francaise' : les lettres accentuees
+    sont triees comme leur lettre de base (e.g. 'e'=='e'/'e'), au lieu de
+    l'ordre brut des points de code Unicode (qui rejette 'e'/'E' apres 'z'
+    et perturbe l'ordre, ex. 'Dividende' avant 'Deforestation')."""
+    nfkd = unicodedata.normalize('NFKD', s.lower())
+    return ''.join(c for c in nfkd if not unicodedata.combining(c))
 
 
 GLOSSAIRE = build_glossary()
@@ -251,21 +261,13 @@ def build_auto_eval():
                         break
                 idxs = sorted(set(idxs))
             picks = [lessons[i] for i in idxs[:4]]
-        skills = [f"Définir {notion_label_lower(l['notion'])} et l'appliquer à une situation géographique." for l in picks]
+        # lesson['notion'] contient deja le bon determinant ("l'economie",
+        # "le secteur informel", "une economie dependante"...) : on le
+        # reutilise tel quel pour que la phrase reste grammaticale
+        # ("Definir l'economie", pas "Definir economie").
+        skills = [f"Définir {l['notion'].strip()} et l'appliquer à une situation géographique." for l in picks]
         blocks.append((f"Unité {unit['num']} — {unit['theme'].upper()}", skills))
     return blocks
-
-
-def notion_label_lower(notion):
-    n = notion.strip()
-    low = n.lower()
-    for art in ("l'", "l’"):
-        if low.startswith(art):
-            return n[len(art):]
-    for art in ("les ", "la ", "le ", "une ", "un "):
-        if low.startswith(art):
-            return n[len(art):]
-    return n
 
 
 AUTO_EVAL = build_auto_eval()

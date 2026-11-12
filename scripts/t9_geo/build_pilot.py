@@ -408,6 +408,30 @@ def notion_label(notion):
     return n[0].upper() + n[1:]
 
 
+def contract_de(phrase):
+    """Contracte correctement 'de' + phrase a determinant : 'de le X' -> 'du
+    X', 'de les X' -> 'des X', 'de un X' -> "d'un X", 'de une X' -> "d'une
+    X" ; laisse 'de la X' / "de l'X" inchange (deja correct). lesson['notion']
+    est stocke avec son determinant complet (ex. 'le secteur informel',
+    'une economie dependante'), donc un simple 'de {notion}' produirait des
+    tournures fautives comme 'il s'agit de le secteur informel'."""
+    p = phrase.strip()
+    low = p.lower()
+    if low.startswith("le "):
+        return "du " + p[3:]
+    if low.startswith("les "):
+        return "des " + p[4:]
+    if low.startswith("un "):
+        return "d'un " + p[3:]
+    if low.startswith("une "):
+        return "d'une " + p[4:]
+    if low.startswith("l'") or low.startswith("l’"):
+        return "de " + p
+    if low.startswith("la "):
+        return "de " + p
+    return "de " + p
+
+
 def build_exercise_block(num, points, instruction, questions):
     """Construit (header, instruction, [question_lines...]) pour un exercice
     de type 'phrase' (identique au style Geographie T8)."""
@@ -523,11 +547,12 @@ def build_seance_elements(idx, total, lesson, unit, footnotes=None, doc=None):
     kw3 = lesson['idea3'][1] if isinstance(lesson['idea3'], tuple) else lesson['notion']
     ex2_q = [f"1. {kw2}", f"2. {kw3}", "3. Écris la relation entre ces deux idées."]
     ex2_corr = [f"1. {idea2_txt} (2 points)", f"2. {idea3_txt} (2 points)",
-                f"3. Ces idées sont liées dans l'étude de {lesson['notion']}. (1 point)"]
+                f"3. Ces deux idées se complètent pour expliquer {contract_de(lesson['notion'])}. "
+                f"(1 point)"]
 
     ex3_q = [lesson['mise_situation'], "1. Nomme la notion étudiée.",
-             "2. Donne l'indice qui permet de la reconnaître."]
-    ex3_corr = [f"1. Il s'agit de {lesson['notion']}. (2 points)",
+             "2. Explique, à l'aide d'un élément de la situation, pourquoi il s'agit de cette notion."]
+    ex3_corr = [f"1. Il s'agit {contract_de(lesson['notion'])}. (2 points)",
                 f"2. {lesson['mise_ra_extra']} (3 points)"]
 
     ex4_q = [f"Présente {lesson['notion']}, une idée essentielle et la règle pratique à retenir."]
@@ -536,7 +561,7 @@ def build_seance_elements(idx, total, lesson, unit, footnotes=None, doc=None):
     # Row 9 : 6. Application (exercices 1 et 2)
     set_table_cell_text(der, 9, 1,
         ["Exercice 1 : Réponds par des phrases complètes."] + ex1_q +
-        [""] + ["Exercice 2 : Associe chaque idée à son explication puis justifie ton choix."] + ex2_q)
+        [""] + ["Exercice 2 : Explique chacune des deux idées suivantes, puis précise le lien entre elles."] + ex2_q)
     set_table_cell_text(der, 9, 2,
         ["Corrigé de l'exercice 1 :"] + ex1_corr +
         [""] + ["Corrigé de l'exercice 2 :"] + ex2_corr)
@@ -606,7 +631,7 @@ def build_seance_elements(idx, total, lesson, unit, footnotes=None, doc=None):
     # --- EXERCICES ---
     out.append(mk(lesson_tpl, 'exercices_header'))
     out.extend(build_exercise_block(1, 5, "Réponds par des phrases complètes.", ex1_q))
-    out.extend(build_exercise_block(2, 5, "Associe chaque idée à son explication puis justifie ton choix.", ex2_q))
+    out.extend(build_exercise_block(2, 5, "Explique chacune des deux idées suivantes, puis précise le lien entre elles.", ex2_q))
     out.extend(build_exercise_block(3, 5, "Explique ce que montre la situation.", ex3_q))
     out.extend(build_exercise_block(4, 5, "Rédige une courte réponse organisée.", ex4_q))
     total_p = mk(lesson_tpl, 'total_line')
@@ -1264,7 +1289,15 @@ def build_annexes(doc):
         cells = row.findall(Wtc)
         set_multiline_single_run(cells[0].findall(Wp)[0], [num])
         set_multiline_single_run(cells[1].findall(Wp)[0], [titre])
-        set_multiline_single_run(cells[2].findall(Wp)[0], illus.split('\n'))
+        # La cellule "Illustrations" du gabarit T8 contient DEUX paragraphes
+        # (titre de schema + phrase d'observation). On ecrit tout le texte
+        # dans le premier paragraphe puis on supprime les paragraphes en
+        # trop du gabarit, sinon leur texte d'origine (ex. "Fara classe des
+        # cartes...") reste visible sous le contenu reecrit.
+        illus_paras = cells[2].findall(Wp)
+        set_multiline_single_run(illus_paras[0], illus.split('\n'))
+        for extra_p in illus_paras[1:]:
+            extra_p.getparent().remove(extra_p)
     out.append(illus_table)
     out.append(clone(lesson_tpl['blank']))
 
